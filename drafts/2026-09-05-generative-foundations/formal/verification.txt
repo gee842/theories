@@ -1,0 +1,32 @@
+Generative foundations — structural proof verification
+Checked at: 2026-09-05T08:59:42.710890+00:00
+Toolchain: Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)
+Source SHA256: 118b8d64c564e573ef49eb7ceed3c834f5436fe949c4764fdf2ddc0d2d0e9dc5
+Compile return code: 0
+Theorem declarations: 20
+Missing axiom reports: []
+Result: PASS
+
+'GenerativeCore.viable_safe' does not depend on any axioms
+'GenerativeCore.viable_invariant' does not depend on any axioms
+'GenerativeCore.invariant_subset_viable' does not depend on any axioms
+'GenerativeCore.viable_predecessor' does not depend on any axioms
+'GenerativeCore.viable_iff_safe_step' does not depend on any axioms
+'GenerativeCore.outside_no_guaranteed_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GenerativeCore.invariant_run_safe' does not depend on any axioms
+'GenerativeCore.tighten_shrinks_viability' does not depend on any axioms
+'GenerativeCore.public_viability_protects_each' does not depend on any axioms
+'GenerativeCore.constraint_reindexing' does not depend on any axioms
+'GenerativeCore.finite_penalty_can_be_outbid' depends on axioms: [propext, Quot.sound]
+'GenerativeCore.racing_strictly_dominates' does not depend on any axioms
+'GenerativeCore.obedient_racing_worse_for_both' does not depend on any axioms
+'GenerativeCore.good_viable' does not depend on any axioms
+'GenerativeCore.gamble_not_viable' does not depend on any axioms
+'GenerativeCore.outside_can_reach_inside' does not depend on any axioms
+'GenerativeCore.deterministic_cycle_viable' does not depend on any axioms
+'GenerativeCore.dominates_irrefl' depends on axioms: [propext, Quot.sound]
+'GenerativeCore.dominates_trans' depends on axioms: [propext, Quot.sound]
+'GenerativeCore.dominates_asymm' depends on axioms: [propext, Quot.sound]
+
+Scope: structural statements in the declared mathematical models.
+This check does not prove moral premises or empirical adequacy.

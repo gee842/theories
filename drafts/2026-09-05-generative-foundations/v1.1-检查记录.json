@@ -1,0 +1,93 @@
+{
+  "checked_at_utc": "2026-09-05T17:28:16.013342+00:00",
+  "stats": {
+    "WHITEPAPER-v1.1.md": {
+      "characters": 84894,
+      "han_characters": 49814,
+      "lines": 2176,
+      "sha256": "e4d82f563b3d2ea144ecf1330daa5a9a98ad2f28c0abc73e5311b2c0989647b8"
+    },
+    "宣言-v1.1.md": {
+      "characters": 1940,
+      "han_characters": 1628,
+      "lines": 83,
+      "sha256": "ec858632fdbc05a9d26dbbdc934ecad1ada9537c9a36d722caf5ae1921e391b8"
+    }
+  },
+  "checks": [
+    "PASS | WHITEPAPER-v1.1.md math delimiters",
+    "PASS | WHITEPAPER-v1.1.md fenced blocks",
+    "PASS | WHITEPAPER-v1.1.md no control characters",
+    "PASS | WHITEPAPER-v1.1.md no editorial placeholders",
+    "PASS | WHITEPAPER-v1.1.md local links and anchors | []",
+    "PASS | WHITEPAPER-v1.1.md table widths | []",
+    "PASS | 宣言-v1.1.md math delimiters",
+    "PASS | 宣言-v1.1.md fenced blocks",
+    "PASS | 宣言-v1.1.md no control characters",
+    "PASS | 宣言-v1.1.md no editorial placeholders",
+    "PASS | 宣言-v1.1.md local links and anchors | []",
+    "PASS | 宣言-v1.1.md table widths | []",
+    "PASS | Twelve consecutive chapters",
+    "PASS | Consecutive subsection numbering",
+    "PASS | Section reference destinations | []",
+    "PASS | Three appendices",
+    "PASS | 29 source principle mappings",
+    "PASS | 28 named theorem index entries",
+    "PASS | All recorded earlier files unchanged | 39 files; changed=[]",
+    "PASS | GenerativeCore hash matches existing successful verification",
+    "PASS | GenerativeCore expected theorem count",
+    "PASS | GenerativeCore no sorry or user axiom declarations",
+    "PASS | OpenFuture hash matches existing successful verification",
+    "PASS | OpenFuture expected theorem count",
+    "PASS | OpenFuture no sorry or user axiom declarations",
+    "PASS | ExistenceConditions hash matches existing successful verification",
+    "PASS | ExistenceConditions expected theorem count",
+    "PASS | ExistenceConditions no sorry or user axiom declarations",
+    "PASS | H1 exact example values",
+    "PASS | Reviewed mathematical qualifications retained",
+    "PASS | v1.0 and all 68 pre-revision local files preserved | []",
+    "PASS | Under 50000 Han characters including appendices",
+    "PASS | No Downloads links in whitepaper",
+    "PASS | Restored concepts and scope present",
+    "PASS | Three stewardship rules present",
+    "PASS | P1 P2 P4 classified as definitional corollaries",
+    "PASS | P3 retains monotonicity proof",
+    "PASS | Nine objections retained",
+    "PASS | Normative premise status explicit",
+    "PASS | Updated formal version locator exists",
+    "PASS | Ell typo and editorial phrase fixed",
+    "PASS | Research precedent names present",
+    "PASS | Previously unused references cited in body",
+    "PASS | Manifesto original plus exactly two inserted paragraphs",
+    "PASS | Manifesto published-status notes moved to README",
+    "PASS | Three archived source hashes",
+    "PASS | Regeneration exact boundary witness and prior-payment feasibility",
+    "PASS | Resource-capacity accounting identity exact samples",
+    "PASS | Regeneration model cashflow, supply and budget premises"
+  ],
+  "errors": [],
+  "style_counts": {
+    "before": {
+      "不能": 256,
+      "不要求": 28,
+      "不等于": 24,
+      "并不": 30,
+      "不意味着": 12,
+      "不声称": 5,
+      "没有证明": 5,
+      "不证明": 9
+    },
+    "after": {
+      "不能": 50,
+      "不要求": 4,
+      "不等于": 7,
+      "并不": 6,
+      "不意味着": 0,
+      "不声称": 1,
+      "没有证明": 1,
+      "不证明": 1
+    }
+  },
+  "lean_rerun": false,
+  "notes": "Existing Lean logs were matched by source hash; no new machine proof or empirical study is claimed."
+}

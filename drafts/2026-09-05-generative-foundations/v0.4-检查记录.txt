@@ -1,0 +1,20 @@
+v0.4 audit UTC: 2026-09-05T11:02:15.808037+00:00
+
+PASS: all 7 recorded prior files retain their original SHA256.
+PASS: WHITEPAPER-v0.4.md: 61039 characters; 1527 lines; math/fences and local links valid.
+PASS: 系统存续公理_论证篇.md: 18231 characters; 470 lines; math/fences and local links valid.
+PASS: 系统存续与Meta-Attractor_联合诊断表.md: 2097 characters; 88 lines; math/fences and local links valid.
+PASS: v0.4-整合与证明说明.md: 3254 characters; 66 lines; math/fences and local links valid.
+PASS: formal/ExistenceConditions-说明.md: 1531 characters; 27 lines; math/fences and local links valid.
+PASS: 29 local link occurrences resolve.
+PASS: 17 main chapters; chapter 8 contains 16 sequential main subsections.
+PASS: standalone argument and integrated chapter 8 match after heading/reference renumbering.
+PASS: five new theorem declarations, no custom axioms or skipped proofs; successful Lean record matches current source hash.
+
+New artifact SHA256:
+d763604ed98be70259eb2a70c7e778978439471b0a07d40ebb73313b231afb64  WHITEPAPER-v0.4.md
+a5464433ae509402776d6489c313630332124752f9b1f8af1fb4f0e5c6541d49  系统存续公理_论证篇.md
+cbbe26b2dce1c39cdf6f19b77aed687cfef2e57e2d2da3be7ca4c84c3a96a046  系统存续与Meta-Attractor_联合诊断表.md
+84a570c65a7e40a06b8dd858c5ae5d9aeec4683c65914a709dd246a9ec1dfc86  v0.4-整合与证明说明.md
+3b6f7799990813b79bb5d56ec9f392cf8fe1343a5891890441d42444a57ccebb  formal/ExistenceConditions-说明.md
+16751729c6f4dda725ac6ef45a64109670cf68ca30d9e2d46758b8bada5811eb  formal/ExistenceConditions.lean

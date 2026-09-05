@@ -1,0 +1,304 @@
+{
+  "chapters": [
+    "01-生成基础.md",
+    "02-系统条件.md",
+    "03-认识与现实.md",
+    "04-公共善恶.md",
+    "05-形式核心.md",
+    "06-认知选择.md",
+    "07-演化与修复.md",
+    "08-情境决策.md",
+    "09-智能向善.md",
+    "10-共同未来.md",
+    "11-组织与研究.md",
+    "12-检验与结论.md"
+  ],
+  "theorems": [
+    {
+      "module": "GenerativeCore",
+      "name": "viable_safe",
+      "meaning": "可延续状态满足保护要求",
+      "location": "§5.2"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "viable_invariant",
+      "meaning": "保持集合之并仍可保持",
+      "location": "§5.2"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "invariant_subset_viable",
+      "meaning": "每个保持集合包含于 V",
+      "location": "§5.1"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "viable_predecessor",
+      "meaning": "当前安全且能保持 V，则当前属于 V",
+      "location": "§5.2"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "viable_iff_safe_step",
+      "meaning": "F1 的双向等价",
+      "location": "§5.2"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "outside_no_guaranteed_return",
+      "meaning": "稳健区域外的后继量词",
+      "location": "§5.3"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "invariant_run_safe",
+      "meaning": "实际转移服从 T 且行动保持，则路径安全",
+      "location": "§5.2"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "tighten_shrinks_viability",
+      "meaning": "收紧保护要求不扩大 V",
+      "location": "§5.4"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "public_viability_protects_each",
+      "meaning": "公共合取中的各项要求成立",
+      "location": "§8.1"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "constraint_reindexing",
+      "meaning": "按满射重编号保留要求合取",
+      "location": "§8.1"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "finite_penalty_can_be_outbid",
+      "meaning": "任何自然数惩罚之上存在更大收益数",
+      "location": "§5.9"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "racing_strictly_dominates",
+      "meaning": "指定矩阵中竞赛严格占优",
+      "location": "§9.1"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "obedient_racing_worse_for_both",
+      "meaning": "该矩阵中共同竞赛差于共同克制",
+      "location": "§9.1"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "good_viable",
+      "meaning": "三状态反例中的安全状态可延续",
+      "location": "§5.3"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "gamble_not_viable",
+      "meaning": "赌局状态不能保证避开失效",
+      "location": "§5.3"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "outside_can_reach_inside",
+      "meaning": "稳健区域外仍可能幸运返回",
+      "location": "§5.3"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "deterministic_cycle_viable",
+      "meaning": "确定性循环可以满足保持要求",
+      "location": "§5.4"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "dominates_irrefl",
+      "meaning": "整数表示的严格改进不可自反",
+      "location": "§8.2"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "dominates_trans",
+      "meaning": "该严格改进可传递",
+      "location": "§8.2"
+    },
+    {
+      "module": "GenerativeCore",
+      "name": "dominates_asymm",
+      "meaning": "该严格改进不可能双向成立",
+      "location": "§8.2"
+    },
+    {
+      "module": "OpenFuture",
+      "name": "observation_limit",
+      "meaning": "相同观察不能同时区分不同判断",
+      "location": "§3.5、§5.6"
+    },
+    {
+      "module": "OpenFuture",
+      "name": "local_maximum_violates_protection",
+      "meaning": "两行动局部收益模型的保护反例",
+      "location": "§4.11"
+    },
+    {
+      "module": "OpenFuture",
+      "name": "zero_sum_without_closure",
+      "meaning": "零和分数与开放背景可以并存",
+      "location": "§9.4"
+    },
+    {
+      "module": "ExistenceConditions",
+      "name": "cumulative_deficit",
+      "meaning": "自然数缓冲的累积亏损界",
+      "location": "§2.4"
+    },
+    {
+      "module": "ExistenceConditions",
+      "name": "no_persistent_deficit",
+      "meaning": "非负缓冲不能承受永久固定正亏损",
+      "location": "§2.4"
+    },
+    {
+      "module": "ExistenceConditions",
+      "name": "observation_control_obstruction",
+      "meaning": "同观察且无共同安全行动时不能保证控制",
+      "location": "§2.5"
+    },
+    {
+      "module": "ExistenceConditions",
+      "name": "product_invariant",
+      "meaning": "独立转移和行动的保持组合",
+      "location": "§2.12"
+    },
+    {
+      "module": "ExistenceConditions",
+      "name": "abstraction_refinement",
+      "meaning": "较强实现前提下的抽象保持转移",
+      "location": "§2.12"
+    }
+  ],
+  "principles": {
+    "1": [
+      "§1.1、§2.2—§2.4",
+      "实际依赖及更新条件"
+    ],
+    "2": [
+      "§2.9、§12.3",
+      "相关扰动、替代与共享失效"
+    ],
+    "3": [
+      "§3.5—§3.6、§5.5",
+      "表征限制与模型修订"
+    ],
+    "4": [
+      "§6.6、§12.3",
+      "明确模型稳定边界与反证"
+    ],
+    "5": [
+      "§1.5、§1.9、§2.13",
+      "过程接续与载体改变"
+    ],
+    "6": [
+      "§2.6、§10.2",
+      "协调功能及治理的适用条件"
+    ],
+    "7": [
+      "§6.1—§6.6",
+      "优势、认知选择与规则反馈"
+    ],
+    "8": [
+      "§6.5、§9.1",
+      "比较实际反馈，不按制度名称判定"
+    ],
+    "9": [
+      "§9.1、§10.7",
+      "区分预期协调与偏离激励"
+    ],
+    "10": [
+      "§4.11、§6.9—§6.10",
+      "局部优化与共同条件的冲突"
+    ],
+    "11": [
+      "§7.8、§9.8—§9.9",
+      "损害、响应期限与实际修正能力"
+    ],
+    "12": [
+      "§9.1—§9.3",
+      "个体忠诚不保证共同结果"
+    ],
+    "13": [
+      "§1.5—§1.9、§4.9",
+      "由生成与公共理由形成方向"
+    ],
+    "14": [
+      "§2.9—§2.11",
+      "响应、补充及维持维持者"
+    ],
+    "15": [
+      "§4.4、§10.8、§11.5",
+      "真实反馈、退出与纠正"
+    ],
+    "16": [
+      "§4.2、§4.7、§11.6",
+      "照护与不能自持者的基本地位"
+    ],
+    "17": [
+      "§4.10、§8.2—§8.4",
+      "多维价值与不完备比较"
+    ],
+    "18": [
+      "§6.15、§10.9",
+      "认知、欲望与满足条件共同可塑"
+    ],
+    "19": [
+      "§6.16、§10.8—§10.11",
+      "改变参与、资源与规则条件"
+    ],
+    "20": [
+      "§3.2—§3.4、§4.7、§9.6",
+      "共同感知与新参与者的证据边界"
+    ],
+    "21": [
+      "§1.8—§1.9、§5.10",
+      "有理由的限制、终结与开放未来"
+    ],
+    "22": [
+      "§4.10—§4.13、§6.5",
+      "按实际关系及后果评价"
+    ],
+    "23": [
+      "§2.1、§5.5、§8.7—§8.11",
+      "边界、模型、证据与诊断责任"
+    ],
+    "24": [
+      "§2.9、§9.8、§11.5、§12.2",
+      "恢复、防御与权限退出"
+    ],
+    "25": [
+      "§10.10—§10.11、§11.8",
+      "危机前建设与检验替代条件"
+    ],
+    "26": [
+      "§6.15、§11.5、§12.2",
+      "可塑机制与极端防御的未解边界"
+    ],
+    "27": [
+      "§10.7、§10.11、§11.8",
+      "承诺与转型的实际实现"
+    ],
+    "28": [
+      "§10.8、§11.7",
+      "供给、获得权、资源控制与真实退出"
+    ],
+    "29": [
+      "§11.9、§12.3",
+      "可推翻的判断及修订记录"
+    ]
+  }
+}

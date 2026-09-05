@@ -1,0 +1,12 @@
+Checked UTC: 2026-09-05T11:00:09.430413+00:00
+Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)
+Source: ExistenceConditions.lean
+SHA256: 16751729c6f4dda725ac6ef45a64109670cf68ca30d9e2d46758b8bada5811eb
+Command: lean ExistenceConditions.lean
+Exit code: 0
+
+'ExistenceConditions.cumulative_deficit' depends on axioms: [propext, Quot.sound]
+'ExistenceConditions.no_persistent_deficit' depends on axioms: [propext, Quot.sound]
+'ExistenceConditions.observation_control_obstruction' does not depend on any axioms
+'ExistenceConditions.product_invariant' does not depend on any axioms
+'ExistenceConditions.abstraction_refinement' does not depend on any axioms

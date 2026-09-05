@@ -1,0 +1,14 @@
+v0.5 audit UTC: 2026-09-05T12:46:53.558605+00:00
+
+PASS: all 5 recorded prior files match hashes from the completed v0.4 audit.
+PASS: WHITEPAPER-v0.5.md: 68941 characters, 1737 lines; display math, fences and local links checked.
+PASS: 善恶的客观性与向善演化_论证补篇.md: 7202 characters, 207 lines; display math, fences and local links checked.
+PASS: v0.5-整合说明.md: 2424 characters, 36 lines; display math, fences and local links checked.
+PASS: intended passage corrected; 17 main chapters; chapter 8 has 24 sequential main subsections.
+PASS: supplement matches integrated sections 8.17–8.24 after renumbering.
+PASS: 24 local link occurrences resolve. No Lean files changed; no build run.
+
+SHA256:
+767c87fc4b8042ba3a03db2e1496511103531fdd884b10c038319738113fa1e2  WHITEPAPER-v0.5.md
+b5cadc272337c3af3ad5dc04cce16701b725998fd5b37a319f4b67abb404364c  善恶的客观性与向善演化_论证补篇.md
+7d0325b270ff72d3127e055da14a17d86dfd6d41b6cf38b364f4a12fbedbaf8e  v0.5-整合说明.md

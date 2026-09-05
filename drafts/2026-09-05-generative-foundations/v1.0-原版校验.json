@@ -1,0 +1,163 @@
+{
+  "created": "2026-09-05",
+  "files": [
+    {
+      "path": "v0.5-整合说明.md",
+      "sha256": "7d0325b270ff72d3127e055da14a17d86dfd6d41b6cf38b364f4a12fbedbaf8e"
+    },
+    {
+      "path": "v0.6-原版校验.json",
+      "sha256": "3c149f0e4805e84c5419e6ac0c6c1764d22866024f02d0be8174e629532ee70a"
+    },
+    {
+      "path": "WHITEPAPER-v0.3.md",
+      "sha256": "cd9e98532ed862ce71d6b1e51d701e833d154000c9053bb977d85670e241c431"
+    },
+    {
+      "path": "v0.6-检查记录.txt",
+      "sha256": "8b2e753c967c5b0646444a0265ee7fb3e9116f0838cb985bb55242cc8b2761e7"
+    },
+    {
+      "path": "v0.6-完整性与形式化审计.md",
+      "sha256": "b19569f79cbc454b1e378f0f936b0e8bcf2679f8dfc69a1a6d63290ebe1e835e"
+    },
+    {
+      "path": "系统存续公理_论证篇.md",
+      "sha256": "a5464433ae509402776d6489c313630332124752f9b1f8af1fb4f0e5c6541d49"
+    },
+    {
+      "path": "WHITEPAPER-v0.6.md",
+      "sha256": "014d37ca6fc2ccdffef0becf5e6da60aa56d78bee1fcb1f20ecec8dc632545a4"
+    },
+    {
+      "path": "WHITEPAPER-v0.2.md",
+      "sha256": "b9e05592003aebd0930405e9c9f92f8dd8e8dbc8558f9093f3eb789fa247dc2d"
+    },
+    {
+      "path": "v0.6-整合说明.md",
+      "sha256": "0143a8ad5b6ce6bce7af00706ee1c592d3084dc9d7a12d4b031771928c596812"
+    },
+    {
+      "path": "三层现实与认知反馈_论证补篇.md",
+      "sha256": "d696c83a19dc677fb327ea6aad3d286297b4d533514323290f0b2d01889cf6c8"
+    },
+    {
+      "path": "善恶的客观性与向善演化_论证补篇.md",
+      "sha256": "b5cadc272337c3af3ad5dc04cce16701b725998fd5b37a319f4b67abb404364c"
+    },
+    {
+      "path": "物理生成与内在规范性_论证补篇.md",
+      "sha256": "6db1097411e5bd14a025e733899ddd638465b14cb8595c049b1b31c6177c5a6e"
+    },
+    {
+      "path": "v0.4-整合与证明说明.md",
+      "sha256": "84a570c65a7e40a06b8dd858c5ae5d9aeec4683c65914a709dd246a9ec1dfc86"
+    },
+    {
+      "path": "v0.4-原版校验.json",
+      "sha256": "bbe49618545aa874fbaeb1ac056a296062606c800e89e8d462f9bca76f547b61"
+    },
+    {
+      "path": "系统存续与Meta-Attractor_联合诊断表.md",
+      "sha256": "cbbe26b2dce1c39cdf6f19b77aed687cfef2e57e2d2da3be7ca4c84c3a96a046"
+    },
+    {
+      "path": "v0.4-检查记录.txt",
+      "sha256": "9e25c3a6624a50d73d6853bf1ac6c3b5ad1576910ab8a93a543c9e21acb45a66"
+    },
+    {
+      "path": "v0.5-检查记录.txt",
+      "sha256": "4dbd4d1784b78221f28793b74387b9cb425a48a7d6dcbe48a670331e3edc4eed"
+    },
+    {
+      "path": "Meta-Attractor-诊断工作表.md",
+      "sha256": "7505c0689d41518d516e030e95409320408f2cce69f1902672120bea5851e1c5"
+    },
+    {
+      "path": "v0.2-修订说明.md",
+      "sha256": "d81524957ff9439f520bbbaf2d63c2626c3e18e07646244d920696ac2a33db57"
+    },
+    {
+      "path": "v0.5-原版校验.json",
+      "sha256": "50ca3c18fde05b281bd39725709561972ddf689b30b42879b254cf3dc8320cfb"
+    },
+    {
+      "path": "WHITEPAPER-v0.5.md",
+      "sha256": "767c87fc4b8042ba3a03db2e1496511103531fdd884b10c038319738113fa1e2"
+    },
+    {
+      "path": "从差异到生生_认知与生成的递归推导.md",
+      "sha256": "52ce277dcb5f38533ce7558c111b03c87f36b697ae0762ce37939c626698701c"
+    },
+    {
+      "path": "论证与来源.md",
+      "sha256": "6f4677d027aae607cfbe39d8e39e93433d9cafe364919e26dafdcfb3bbffd344"
+    },
+    {
+      "path": "v0.3-整合与来源.md",
+      "sha256": "040689b2e4009cad2713d7150138a2981a14196d4234635e92d8a797f779093c"
+    },
+    {
+      "path": "WHITEPAPER-v0.4.md",
+      "sha256": "d763604ed98be70259eb2a70c7e778978439471b0a07d40ebb73313b231afb64"
+    },
+    {
+      "path": "WHITEPAPER.md",
+      "sha256": "92712649f256c2ffa51dc6701cb5e11dbcdb07e7d194f54b233637234035faa0"
+    },
+    {
+      "path": "formal/OpenFuture-verification.txt",
+      "sha256": "45f7a4431bcb9501222219e7488ae7a16bf4a6969f18886711754aeccb121f20"
+    },
+    {
+      "path": "formal/ExistenceConditions-verification.txt",
+      "sha256": "a513616bafc64a0555c3364355dfbda7a39535ee866540e48835a79c9ab96906"
+    },
+    {
+      "path": "formal/GenerativeCore.lean",
+      "sha256": "118b8d64c564e573ef49eb7ceed3c834f5436fe949c4764fdf2ddc0d2d0e9dc5"
+    },
+    {
+      "path": "formal/verification.txt",
+      "sha256": "9f62b64a8cf50aef7e81867bebe9fe54dd5f5d0d028065f880ca10d4c2d9a6c1"
+    },
+    {
+      "path": "formal/lean-toolchain",
+      "sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2"
+    },
+    {
+      "path": "formal/README.md",
+      "sha256": "be355f9ea2dd670b5ed4bf80ae86334bbea243f9a3eb695fa5a8e18bd8de8deb"
+    },
+    {
+      "path": "formal/ExistenceConditions.lean",
+      "sha256": "16751729c6f4dda725ac6ef45a64109670cf68ca30d9e2d46758b8bada5811eb"
+    },
+    {
+      "path": "formal/ExistenceConditions-说明.md",
+      "sha256": "3b6f7799990813b79bb5d56ec9f392cf8fe1343a5891890441d42444a57ccebb"
+    },
+    {
+      "path": "formal/OpenFuture.lean",
+      "sha256": "08cdf5d38073150f4daf62a94cd75bd4500d06d543b054d924137b025aa45068"
+    },
+    {
+      "path": "formal/OpenFuture-说明.md",
+      "sha256": "f624e66b442f0213078c8bb2cdf0e1f74372c10f461c2532503f0ab38751f984"
+    },
+    {
+      "path": "formal/verify.py",
+      "sha256": "11d3bb27e1b4f5657ea8c370b27f9b80e6b29581044c7e6d78feb27267a0bb11"
+    },
+    {
+      "path": "2026-09-05-zhishan-foundation/理论主线与组织立场.md",
+      "base": "drafts",
+      "sha256": "6e83d8935642b91fbc1cb1f4ac103f2e510e538c8f28dfc279e3ac634a76753b"
+    },
+    {
+      "path": "2026-09-05-zhishan-foundation/宣言工作稿.md",
+      "base": "drafts",
+      "sha256": "c0a8938189282da6041c972fdc96ce1ae30d73217b563a2e063a8d6ae8bd323e"
+    }
+  ]
+}

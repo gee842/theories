@@ -1,0 +1,39 @@
+{
+  "schema": "manifest-preservation-edit-record/v1",
+  "verified_at_utc": "2026-09-05T17:20:43.253535+00:00",
+  "base": {
+    "path": "/Users/ren/Downloads/智能向善，天下生生.md",
+    "sha256": "3d90d093b011f850f54ca31db824bb7476b53a845d6e35815ce514fe7b8d2f78",
+    "bytes": 4833
+  },
+  "output": {
+    "path": "/Users/ren/theories/drafts/2026-09-05-generative-foundations/宣言-v1.1.md",
+    "sha256": "ec858632fdbc05a9d26dbbdc934ecad1ada9537c9a36d722caf5ae1921e391b8",
+    "bytes": 5578,
+    "han_characters": 1628
+  },
+  "edits": [
+    {
+      "operation": "insert_after_unique_anchor",
+      "anchor": "真正的智能向善，是让智能不再成为争夺、剥削、操控与支配的放大器，而成为解除匮乏、增进理解、促进合作、守护自由、扩展共同可能性的力量。",
+      "inserted_text": "\n\n当智能进入生产、认知与公共决定，向善便成为具体责任：让受影响者能够理解它的用途与重要后果，保有表达、拒绝和要求纠正的实际能力；使收益与代价进入共同判断，使能力的发展伴随观察、理解与修复。人的生活、自由与公共地位，应当在技术改变劳动和权力的过程中获得实质保障。",
+      "paragraph": "当智能进入生产、认知与公共决定，向善便成为具体责任：让受影响者能够理解它的用途与重要后果，保有表达、拒绝和要求纠正的实际能力；使收益与代价进入共同判断，使能力的发展伴随观察、理解与修复。人的生活、自由与公共地位，应当在技术改变劳动和权力的过程中获得实质保障。"
+    },
+    {
+      "operation": "insert_after_unique_anchor",
+      "anchor": "不以局部之胜关闭天下之可能。",
+      "inserted_text": "\n\n这项共同工作也首先接受自己的原则。研究应当向事实开放，决定应当说明理由，异议应当能够改变行动；成员的生活需要受到珍重，资源与权力需要接受问责。以共同未来为名作出的限制，应当让受影响者看见它、能够追问它，并保有修正、重开和接续的实际道路。",
+      "paragraph": "这项共同工作也首先接受自己的原则。研究应当向事实开放，决定应当说明理由，异议应当能够改变行动；成员的生活需要受到珍重，资源与权力需要接受问责。以共同未来为名作出的限制，应当让受影响者看见它、能够追问它，并保有修正、重开和接续的实际道路。"
+    }
+  ],
+  "algorithm": "Decode exact UTF-8 bytes without newline normalization; apply each insertion after its unique anchor in order; compare rebuilt UTF-8 bytes to output; reverse insertions in reverse order; compare restored bytes to original.",
+  "checks": {
+    "only_two_paragraph_insertions": true,
+    "forward_byte_identity": true,
+    "reverse_byte_identity": true,
+    "original_title_retained": true,
+    "original_final_line_retained": true,
+    "required_original_phrases_retained": true
+  },
+  "status": "Unpublished editorial version. Additions are AI-assisted wording for Ren to review; no organization or signatory status is asserted."
+}

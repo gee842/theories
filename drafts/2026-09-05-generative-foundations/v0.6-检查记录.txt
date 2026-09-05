@@ -1,0 +1,15 @@
+v0.6 audit UTC: 2026-09-05T13:17:07.551052+00:00
+
+PASS: all 5 recorded prior files retain their original SHA256.
+PASS: WHITEPAPER-v0.6.md: 77049 characters; 1976 lines; local links, display math and fences valid.
+PASS: 三层现实与认知反馈_论证补篇.md: 7558 characters; 228 lines; local links, display math and fences valid.
+PASS: v0.6-整合说明.md: 2223 characters; 40 lines; local links, display math and fences valid.
+PASS: 17 main chapters; all changed main subsection sequences are complete.
+PASS: all 8 standalone sections match the integrated text; H1 occurs once.
+PASS: H1 demonstration rows verified with exact fractions; h first reaches the stated threshold at t=5.
+PASS: 24 local link occurrences resolve. No Lean source changed; no build run.
+
+SHA256:
+014d37ca6fc2ccdffef0becf5e6da60aa56d78bee1fcb1f20ecec8dc632545a4  WHITEPAPER-v0.6.md
+d696c83a19dc677fb327ea6aad3d286297b4d533514323290f0b2d01889cf6c8  三层现实与认知反馈_论证补篇.md
+0143a8ad5b6ce6bce7af00706ee1c592d3084dc9d7a12d4b031771928c596812  v0.6-整合说明.md

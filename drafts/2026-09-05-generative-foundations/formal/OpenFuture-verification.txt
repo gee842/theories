@@ -1,0 +1,11 @@
+Open future — additional structural results
+Checked at: 2026-09-05T09:30:24.301097+00:00
+Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)
+Source SHA256: 08cdf5d38073150f4daf62a94cd75bd4500d06d543b054d924137b025aa45068
+Result: PASS
+
+'OpenFuture.observation_limit' does not depend on any axioms
+'OpenFuture.local_maximum_violates_protection' depends on axioms: [propext]
+'OpenFuture.zero_sum_without_closure' depends on axioms: [propext]
+
+Scope: observation limits and specified finite countermodels.

@@ -1,0 +1,7 @@
+{
+  "WHITEPAPER-v0.4.md": "d763604ed98be70259eb2a70c7e778978439471b0a07d40ebb73313b231afb64",
+  "系统存续公理_论证篇.md": "a5464433ae509402776d6489c313630332124752f9b1f8af1fb4f0e5c6541d49",
+  "formal/GenerativeCore.lean": "118b8d64c564e573ef49eb7ceed3c834f5436fe949c4764fdf2ddc0d2d0e9dc5",
+  "formal/OpenFuture.lean": "08cdf5d38073150f4daf62a94cd75bd4500d06d543b054d924137b025aa45068",
+  "formal/ExistenceConditions.lean": "16751729c6f4dda725ac6ef45a64109670cf68ca30d9e2d46758b8bada5811eb"
+}
