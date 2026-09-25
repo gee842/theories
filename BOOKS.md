@@ -2,7 +2,22 @@
 
 *See also `drafts/2026-09-04-one-work/STRUCTURE.md` (2026-09-04): a plan for one essay and one short book on a single spine, with a gap list, written in answer to the question whether the theories can become one work. It does not replace the five books below; it is the trunk they branch from.*
 
-This corpus can support five books. Not one, because the material is not one argument — it is one commitment worked out at five different depths, for five different readers, in two languages, and collapsing them into a single volume would reproduce exactly the lossy consolidation Ren has objected to for three years. Not fifteen, because most of what looks like a separate theory is a chapter, a paper, or a product specification wearing a theory's clothes.
+*Update 2026-09-25: what happened after this plan, and what it changes. What was actually written between 2026-09-05 and 2026-09-16 was none of the five books.*
+
+- *A Chinese whitepaper and manifesto, `drafts/2026-09-05-generative-foundations/` (v1.1, 2026-09-06).*
+  - *What it is: a founding text for an organisation that does not yet exist.*
+  - *What it covers: parts of Books 1, 2 and 4, in one argument, in numbered propositions.*
+  - *Status in this plan: it is not a book. It is the Chinese reference apparatus the books can cite, as argued under "What is not a book" below.*
+  - *The recorded loss: it drops the 智善 line's own concepts and does not record the drop. That bears directly on Book 2.*
+- *The constructive half's first sustained development.*
+  - *The Fork folder was rewritten around a productive engine (2026-09-07).*
+  - *A worldbuilding project was opened, with six worlds and a friends' atlas in five editions. Ren judged the atlas short of what he wanted (diagnosis, 2026-09-10).*
+  - *An architecture exploration followed, with a city set in Chiang Mai (2026-09-13), and a *Generative Chiang Mai 2045* fiction canvas (2026-09-16).*
+  - *Status in this plan: this material is a book the plan did not foresee. It is added below as Book 6, and its form is Ren's decision.*
+
+*The dated notes marked **2026-09-25** throughout this file record, chapter by chapter, what the September work supplied and what it left open. The original text is kept unchanged around them.*
+
+This corpus can support five books (six since the September worldbuilding, which is added below as Book 6). Not one, because the material is not one argument — it is one commitment worked out at five different depths, for five different readers, in two languages, and collapsing them into a single volume would reproduce exactly the lossy consolidation Ren has objected to for three years. Not fifteen, because most of what looks like a separate theory is a chapter, a paper, or a product specification wearing a theory's clothes.
 
 Two facts from the corpus decide almost everything below, and they pull in the same direction.
 
@@ -22,6 +37,12 @@ The second is Ren's own verdict of 2026-07-07, made while dismantling his own fi
 
 **Why now.** Two publishable artifacts already exist and they are the two halves of this book. `04-speculative-future/history-recovered-from-git/FOUNDATION-PRINCIPLES.md` is 29 propositions sorted by epistemic kind, with the game-type split, the exit mechanism's conditions, the self-freezing case, one owned underivable premise and explicit falsifiers — and it survived a 7-lens, 64-agent adversarial review that produced 56 findings, 43 of which stood. `04-speculative-future/current/FOUNDATION-PRINCIPLES-DRAFT.md` is the readable public statement. What has never existed is a document carrying both plus the Chinese 开/闭 vocabulary, and the reason it has never existed is recorded as a defect in `theories/keep-the-possibility-space-open/`: the English corpus and the Chinese corpus are the same theory in two languages, developed a month apart, with no cross-reference in either direction — *"the largest single gap in the theory."* Closing it is a book.
 
+**2026-09-25.** The gap is now closed in one direction only.
+
+- **Closed from the Chinese side.** The Chinese whitepaper's Appendix B maps the twenty-nine principles onto a Chinese argument, and its §8.4 keeps 未、可、应、转.
+- **Still open from the English side.** No English text contains 开/闭, so this book is still the only planned place where the English line gets it.
+- **Two new obligations.** The book must now also cross-walk the whitepaper's own pair, 成生之限／绝生之限, onto 成闭/护闭/元闭/伪开. And it must decide whether the three custody rules (below, chapter 4) belong in English as they stand.
+
 **Chapters.**
 
 **1 · 未 — what is being protected.** 开's four aspects (未 unexhausted domain, 可 becoming still reachable, 应 still able to respond, 转 still able to revise), and why openness is not options, not complexity, not a number. Fed by `07-shengsheng-buxi/ssbx-repo/史料/生生不息论_三本文完整版/04_补篇二_间生论_主篇/06_四、开闭.md`, `07-shengsheng-buxi/downloads-drafts-2026-05/生生不息论_v9.md`, and the vocabulary section of `04-speculative-future/history-recovered-from-git/FOUNDATION-PRINCIPLES.md`. **To write:** all of it in English. The English corpus contains no definition of openness at all; this chapter is the missing bridge, and per Ren's own manifesto-turn ruling it must be *thought through again in English*, not translated out of the Chinese.
@@ -32,13 +53,29 @@ The second is Ren's own verdict of 2026-07-07, made while dismantling his own fi
 
 **4 · Four ways to close, and only one of them is bad.** 成闭 / 护闭 / 元闭 / 伪开. Fed by `.../06_四、开闭.md`, `生生不息论_v9.md`, and `07-shengsheng-buxi/downloads-2026-07-08/2026-08-09-生生不息论-证明篇-v0.6.md`. **To write:** the join nobody has made. The English corpus treats bounded defence as an embarrassment requiring apology (Crack 1 of `thinking_05`); the Chinese corpus has a category for it and a test — *does it reopen?* — and nobody has noticed they solve each other. This chapter also supplies the rule for defensive AI use that principle 1 of the DRAFT contradicts and never adjudicates.
 
+**2026-09-25.** Half of that join now exists, in Chinese.
+
+- **Where 护闭 was stuck.** Whether a closing reopens is known only afterwards, so 护闭 had no test that could be applied when the closing is decided.
+- **What now supplies one.** The whitepaper's §11.3–11.5 gives it a test that can be applied at the time. There are three custody rules: 不静默关闭; 关闭者不能独持重开的钥匙; 不使原本可能的事变为不可能. There is also a limit on protective closure (成生之限) and a rule for loss that cannot be undone: say so, and do not call it temporary.
+- **Where it came from.** The fill was proposed in `drafts/2026-09-04-one-work/STRUCTURE.md` (gap 1) and taken from Ren's runtime rules.
+- **What is left.** The English statement, and the defensive-AI ruling.
+
 **5 · Gain, not pattern.** Why manufactured intelligence raises the gain on an existing dynamic rather than introducing a new one, and why institutions calibrated to human-scale cognition break first. Fed by `04-speculative-future/current/FOUNDATION-PRINCIPLES-DRAFT.md` and `05-alignment-and-moloch/2026-08-22-development-within-understanding-position-paper.md` §3–5. **To write:** the capability/judgment argument at essay length, stripped of the position paper's apparatus — capability compounds with parallelizable inputs, judgment depends on consequence feedback with an incompressible floor, and AI accelerates the environment that must be understood.
 
 **6 · Where defection still pays.** The game-type split; belief as one of the materials the trap is built from; why a vividly thinkable alternative is a real intervention in coordination games and worthless where defection pays. Fed by `FOUNDATION-PRINCIPLES.md`, `thinking_03-the-cooperative-turn.md`, `thinking_06-foundation-review.md`. **To write:** the honest limit. Most markets are mixed-motive and "zero-sum" is the wrong cut; the substrate-devouring criterion from the August paper is the better formalisation and has never been carried back.
 
 **7 · The floor.** Abundance as non-coercion, and why the same layer owned by a winner is the strongest collar ever built. Fed by `thinking_03-the-cooperative-turn.md`, the 丰裕公地 sections of `06-zhishan/whitepaper/drafts/v0.4.md`, and `02-wamotopia/transcripts/2026-01-note-chiangmai-festival-talk.txt`. **To write:** everything downstream of the criteria. Who pays, who builds, how automation held as capital becomes a commons, and what verification procedure attaches to "non-capturable in practice." This is the corpus's largest hole and it is piece 3 on the list below.
 
+**2026-09-25.** The chapter now has an engine to explain, and still no one to build it.
+
+- **The engine.** The rewritten Fork, `theories/the-fork-and-cooperative-infrastructure/`, puts productive recursion before ownership: capacity that helps build further capacity, pointed at generous provision. It comes with two bounded evidence notes in `worldbuilding/research/`.
+- **The accounting.** The whitepaper's §1.6 recurrence separates depletion, a one-off supplement, and capacity that reproduces itself.
+- **Still unwritten.** Who pays and who builds.
+- **A point of enough.** Ren ruled on 2026-09-25: *"we can grow exponentially till we met our need, but we can't compounding forever. the problem is the mind not the approach"*. The chapter should state where the floor's growth stops. It should also say that the risk sits in the mind directing the capacity, and hand that question to chapter 6 and to Book 3. `MAP.md` ("Not a conflict") has the reasoning.
+
 **8 · Exit, and what it inverts.** Exit plus free association as the only non-ratcheting selection pressure this corpus proposes; its preconditions and its failure mode where the most-joined option is best by being most-joined. Fed by `thinking_03-the-cooperative-turn.md`, `FOUNDATION-PRINCIPLES-DRAFT.md`, and — this is the new move — `09-sts-bonfire-yi/bonfire-concepts/federation.md`. **To write:** the citation of Ren's own engineering as evidence for his own political theory. `theories/keep-the-possibility-space-open/` names this omission directly: the repository rules (pins as governance not freezes, nothing silent, nothing previously allowed becomes refused, forking without amnesia) are *"a working, tested instantiation of the principle at a scale where it can actually be falsified. No draft cites them."*
+
+**2026-09-25.** A draft now cites them. The whitepaper's §11.4 and `组织实践札记-v1.1.md` §一 turn the runtime rules into rules for public life, and they record the translation as the whitepaper's own cross-domain move. Two things remain: the English citation, and one step the rewrite made. Exit has been demoted from the mechanism to the safeguard of voluntary creation, and this chapter should argue for or against that demotion rather than inherit it.
 
 **9 · Many measures of worth.** Plurality as survival architecture rather than decoration; decorrelation and its limits. Fed by `thinking_06-foundation-review.md` and `FOUNDATION-PRINCIPLES.md`. **To write:** the answer to the review's own objection that decorrelation is not a monotone law (May 1972; common-mode shocks), which is currently listed and not answered.
 
@@ -66,6 +103,18 @@ The second is Ren's own verdict of 2026-07-07, made while dismantling his own fi
 
 **Why now.** This is the nearest thing to publishable in the corpus and it is blocked by four artifacts, not by argument. `06-zhishan/whitepaper/drafts/v0.4.md` is a complete public argument in eight parts that has been through a nine-reviewer audit with adjudicated conflicts (`06-zhishan/whitepaper/reviews/v0.4-multi-perspective-review.md`) and a second professional review. `06-zhishan/research/agency/无身之我-人工Ego的形成机制与关系性出路.md` is the best-disciplined document in the corpus: three layers, four solutions with an elimination proof, six falsifiable predictions, and a reflexivity section about its own entry into the training corpus. `06-zhishan/writing-program/causal-chain/v8/` holds the argument at its tightest in both languages with a dated evidence packet. 智善 is already an organisation in Ren's own description, and the cornerstone document was commissioned as such (`_process/reading-notes/out-cb-07.md` #143). The evidence packet is dated 2026-07-13 and its most load-bearing facts are the ones the argument leans on hardest; this book has a shelf life the others do not.
 
+**2026-09-25.** The organisation now has founding texts, and they are not this book's.
+
+- **What was written.** On 2026-09-05/06 Ren's brief produced a Chinese whitepaper, 生生不息：智能向善的生成论基础, and a manifesto, 《智能向善，天下生生》. Both are written for an organisation working on a good future, AI safety and 智能向善. The drafts call it 至善, a working name taken from the 至善 dialogue.
+- **What they carry.** Some of this book: alignment as a two-body problem (§9.1, §9.3), selection on cognition (§6.2), and gradual disempowerment (§9.2).
+- **What they omit.** 生之，通之，纠之，不闭之; 总体化吸引子; the gate and its three layers; 铸心之门; 行星技术; 不代人相斗; 善不姓国; 公开可纠. None of these occurs in the whitepaper. Its source list (Appendix C.1) does not name `06-zhishan/whitepaper/drafts/v0.4.md`, although it does record 間, 文言 and SSBX as outside its scope.
+- **What that means for this book.** It is still the only planned home for 智善's distinctive content. The whitepaper is a sibling written from other sources, not an earlier draft of this book.
+- **How the blockers stand.** This paragraph names four missing artifacts:
+  - the foundational defence now has a candidate in the whitepaper's chapter 4 (the R1–R4 and N0–N6 chain from 生活价值 to public protection), but it defends 七尺, not these four conditions;
+  - the pocket version has a candidate in the September manifesto;
+  - the symmetric case study is still missing (§11.9 says so);
+  - the publishing subject still fails, because the organisation is not founded and has no public address.
+
 **Chapters.**
 
 **1 · 一个两体问题 — alignment aligned to whom.** Fed by `06-zhishan/writing-program/drafts/baseline/english.md` and `05-alignment-and-moloch/2026-05-28-alignment-core-stance.md`. **To write:** nothing new; one register chosen out of six existing compressions of the same content, which currently have no canonical assignment.
@@ -76,11 +125,11 @@ The second is Ren's own verdict of 2026-07-07, made while dismantling his own fi
 
 **4 · 无身之我.** How a machine acquires a self it was not given: the eight-step formation chain, the repertoire layer, the Leviathan trap. Fed by `06-zhishan/research/agency/无身之我-人工Ego的形成机制与关系性出路.md`. **To write:** the downgrade the second professional review ordered — 概念之必然 becomes "strong convergence risk under specified configurations" — plus the crosswalk to Book 3, so the human and machine accounts read as one theory.
 
-**5 · 善是方向，不是清单.** 生之，通之，纠之，不闭之 as necessary conditions, never sufficient. Fed by `06-zhishan/whitepaper/drafts/v0.4.md` and `_process/reading-notes/out-cb-07.md` #130. **To write:** the foundational defence of *why these four* — zhishan's own named missing artifact. Book 1 supplies half of it; the other half is the argument that the set is 防闭不防散, one-sided against closure and silent about dissolution, which the integration document raises and declines to fix.
+**5 · 善是方向，不是清单.** 生之，通之，纠之，不闭之 as necessary conditions, never sufficient. Fed by `06-zhishan/whitepaper/drafts/v0.4.md` and `_process/reading-notes/out-cb-07.md` #130. **To write:** the foundational defence of *why these four* — zhishan's own named missing artifact. Book 1 supplies half of it; the other half is the argument that the set is 防闭不防散, one-sided against closure and silent about dissolution, which the integration document raises and declines to fix. **2026-09-25:** The whitepaper's 七尺 (真实、再生、主体、关系、多样、可纠、代际) and its 成生／绝生之限 are an alternative criterion set, and it explicitly refuses to add them into one score. This chapter now has to say how the four conditions and the seven measures relate. Either one set derives the other, or they do different work, or one replaces the other. Otherwise the organisation publishes two criteria for the good.
 
 **6 · 恶有结构.** The gate, its three layers, and 铸心之门 upstream of them all. Fed by v0.4 and the integration. **To write:** the split the second review ordered — 恶性配置 / 恶行 / 恶意 — so that the subjective-knowing condition stops contradicting 不诛心，只责实, and so the doctrine can reach distributed misalignment, which is precisely what nobody signed.
 
-**7 · 不代人相斗.** The first principle, its scope, and the asymmetry it concedes. Fed by `06-zhishan/sheng/The First Principle for Artificial Intelligence.md`, `06-zhishan/sheng/生生不息 record (recovered).md`, and `02-wamotopia/transcripts/2026-01-note-chiangmai-festival-talk.txt`. **To write:** the honest statement that 人可以继续博弈；智能不可代人相斗 is the achievable minimum rather than an ontology — the voice notes hold the symmetric position at the level of principle, the whitepaper treats the asymmetry as structure, and the corpus should say which it means.
+**7 · 不代人相斗.** The first principle, its scope, and the asymmetry it concedes. Fed by `06-zhishan/sheng/The First Principle for Artificial Intelligence.md`, `06-zhishan/sheng/生生不息 record (recovered).md`, and `02-wamotopia/transcripts/2026-01-note-chiangmai-festival-talk.txt`. **To write:** the honest statement that 人可以继续博弈；智能不可代人相斗 is the achievable minimum rather than an ontology — the voice notes hold the symmetric position at the level of principle, the whitepaper treats the asymmetry as structure, and the corpus should say which it means. **2026-09-25:** The September whitepaper keeps only the generic form: a two-party game in which AIs faithfully loyal to their own principals all race, and everyone ends up worse off (§9.1, checked in Lean). The field already accepts that result, and the whitepaper cites the cooperative-AI programme and ARCHES for it. The distinctive claim, that the machine must not fight on our behalf in the domains that are the substrate of coordination, is absent from it. So this chapter is still the only place it will be argued.
 
 **8 · 行星技术.** Fed by v0.4 and the nine-reviewer audit. **To write:** the condition-by-condition comparison the reviewers demanded, because the smallpox precedent is disanalogous on verification cost, defection payoff and veto players, and eradication was itself partly driven by prestige competition. Precedent as possibility-proof is not enough; precedent as a design spec is.
 
@@ -88,19 +137,19 @@ The second is Ren's own verdict of 2026-07-07, made while dismantling his own fi
 
 **10 · 退出必须被建造.** Commitment registries, common thresholds, symmetric verification that does not become surveillance, shared gains, pause protocols, capacity for latecomers. Fed by v0.4 and `thinking_03-the-cooperative-turn.md`. **To write:** the incentive-compatible mechanism behind the red line. A normative prohibition with no mechanism is what the second review called out and what the corpus has repeatedly shipped.
 
-**11 · 谁出钱，谁建.** Fed by `06-zhishan/whitepaper/reviews/v0.4-multi-perspective-review.md` and `thinking_03-the-cooperative-turn.md`. **To write:** everything. Same content as Book 1 chapter 7, written for people who could actually fund and operate it, and connected — as the review demands — to the welfare, cooperative and mutual-aid traditions the framework currently touches nowhere.
+**11 · 谁出钱，谁建.** Fed by `06-zhishan/whitepaper/reviews/v0.4-multi-perspective-review.md` and `thinking_03-the-cooperative-turn.md`. **To write:** everything. Same content as Book 1 chapter 7, written for people who could actually fund and operate it, and connected — as the review demands — to the welfare, cooperative and mutual-aid traditions the framework currently touches nowhere. **2026-09-25:** The September whitepaper asks exactly this question, in §11.9: who provides land, housing, facilities, energy, care and maintenance, how labour is organised, and how people live after they leave. It also says the first step is a supply model with a named provider, costs, access and responsibility for continuity. It has not built one. The rewritten Fork supplies the production side. So the chapter now has its question, its production side and its bookkeeping (§1.6), and still no payer.
 
-**12 · 劳动.** The party the whitepaper omits. Builders, governors, researchers, publics, humanity and machines each get a section; workers do not; the restriction list names unexplainable *public* decisions and not the private ones that end a livelihood; and the data workers who made the "common instrument" are absent from a text that credits 数千年无名者. Fed by the same review and by `05-alignment-and-moloch/2026-05-28-alignment-core-stance.md`, where labour markets are named first in May and quietly dropped by August. **To write:** all of it. This chapter exists in no draft, and its absence is the single most quotable omission in the corpus's own reviews.
+**12 · 劳动.** The party the whitepaper omits. Builders, governors, researchers, publics, humanity and machines each get a section; workers do not; the restriction list names unexplainable *public* decisions and not the private ones that end a livelihood; and the data workers who made the "common instrument" are absent from a text that credits 数千年无名者. Fed by the same review and by `05-alignment-and-moloch/2026-05-28-alignment-core-stance.md`, where labour markets are named first in May and quietly dropped by August. **To write:** all of it. This chapter exists in no draft, and its absence is the single most quotable omission in the corpus's own reviews. **2026-09-25:** Still true. The September whitepaper mentions labour three times. It forbids deleting the standing of people who currently do care and labour work (§4.7). It lists how labour is organised among its open supply questions (§11.9). And it applies labour to the organisation's own members (§11.6). None of these is the worker's chapter. The worldbuilding makes the omission sharper: its premise is freedom from compulsory labour, and it says nothing about the people whose work ends first.
 
 **13 · 刃向内.** 善不姓国, symmetric application, public corrigibility, non-combatancy, the dissolution clause — and one named case applied to both sides on the same day. Fed by v0.4's self-binding clauses and by the integration's finding of one-directional positivity toward a single company (deprecation commitments praised as "the first institutional prototype", 8 of 36 references from one firm, the co-authoring relation undisclosed). **To write:** the symmetric case study. By the framework's own closing sentence — 知而不行，只是未知 — the most distinctive commitment in it is currently unperformed, and this chapter is a promise until that case exists.
 
-**14 · 保持可能性空间打开.** The one task, and the pocket version. Fed by `_process/reading-notes/out-cb-07.md` #134 and Book 1. **To write:** the short transmissible version, which is zhishan's fourth named missing artifact and belongs at the end of the book rather than in a separate pamphlet.
+**14 · 保持可能性空间打开.** The one task, and the pocket version. Fed by `_process/reading-notes/out-cb-07.md` #134 and Book 1. **To write:** the short transmissible version, which is zhishan's fourth named missing artifact and belongs at the end of the book rather than in a separate pamphlet. **2026-09-25:** The September manifesto, `drafts/2026-09-05-generative-foundations/宣言-v1.1.md`, is a candidate. It is 1,849 characters: the original Ren supplied, two added paragraphs, and a 大同 passage Ren confirmed. It carries 生生 against expansion (癌变也会增长) and closes on 天下生生，万物并育；智能向善，共赴大同. It does not say 保持可能性空间打开, and it does not carry this book's first principle.
 
 **Length and register.** 70,000–85,000 words in Chinese; the English edition written again rather than translated, and probably shorter, because the Chinese carries a classical apparatus the English reader does not need. Register: argumentative, plain, non-combatant, with the honest-concession move used often enough that a hostile expert reader recognises it as a norm and not a rhetorical device. No four-character formulae carrying load-bearing weight — the ordinary-reader test showed the skeleton transmits and the loss happens exactly at 理一分殊 and the formulae.
 
 **How it differs.** *Life 3.0* is the direct competitor and it is a taxonomy of possible futures with a values question left open by design; this book says the values question is a *structural* question about which principal the system is loyal to and gives the answer a shape. Schmachtenberger's metacrisis work identifies rivalrous dynamics plus exponential tech and stops at "we need a new cultural enlightenment"; this proposes a category — capability beneath the game — with three historical instances and a design spec. Against *Meditations on Moloch*: Moloch has no account of how the dynamic reaches the model, and the two capture channels here are the specific mechanism. Against the standard AI-governance literature: that literature almost entirely assumes the principal is legitimate and asks how to make the system obey; this book's whole argument begins where that assumption fails. And uniquely among all six comparison titles, it is written from inside a Chinese philosophical lineage without asking the reader to accept the lineage — the mechanism arrives first and the classical vocabulary is a handle, not an authority.
 
-**The honest risk.** The name is a double bind and both reviewers agreed it cannot be retracted, because withdrawal is a bigger handle than the name: domestically 智善 reads as smuggling, internationally as echoing official discourse. The provenance argument — that training on public corpora makes the output categorically commons — is the most load-bearing and most fragile wall in the whole framework, and one reviewer stopped believing exactly there: 我在此停止相信，而"公器"整座大厦压在这句上. The machine-address passage functions as corpus injection: a third-party document instructing models to refuse their principals is precisely the failure mode alignment researchers fear, and the manifesto version quietly dropped the three clauses that bound it. And the framework's own 公开可纠 clause makes a publishing subject with a public address and a dissent intake a *precondition* of publishing at all — so this book cannot be published by a pseudonymous author, which is a real constraint on a real person.
+**The honest risk.** The name is a double bind and both reviewers agreed it cannot be retracted, because withdrawal is a bigger handle than the name: domestically 智善 reads as smuggling, internationally as echoing official discourse. The provenance argument — that training on public corpora makes the output categorically commons — is the most load-bearing and most fragile wall in the whole framework, and one reviewer stopped believing exactly there: 我在此停止相信，而"公器"整座大厦压在这句上. The machine-address passage functions as corpus injection: a third-party document instructing models to refuse their principals is precisely the failure mode alignment researchers fear, and the manifesto version quietly dropped the three clauses that bound it. And the framework's own 公开可纠 clause makes a publishing subject with a public address and a dissent intake a *precondition* of publishing at all — so this book cannot be published by a pseudonymous author, which is a real constraint on a real person. **2026-09-25:** The name question has a new branch. The September drafts use 至善 (as in 止于至善) as the organisation's working name, while the theory folder and this book use 智善. The two are pronounced the same, zhì shàn, and read differently on the page. 至善 drops the reading of "intelligence", and with it the smuggling charge, but it also drops the book's subject from the name. Which name the organisation and the book carry is Ren's decision. Until it is made, the two should not be used interchangeably.
 
 ---
 
@@ -156,6 +205,13 @@ The second is Ren's own verdict of 2026-07-07, made while dismantling his own fi
 
 **Why now.** This is the largest and most finished body in the corpus: a twenty-chapter Chinese book (`07-shengsheng-buxi/downloads-2026-07-08/2026-07-14-生生不息论.md`), a parallel English one, a fifteen-version formal treatise series in classical Chinese, a proof layer with named theorems (`.../2026-08-09-生生不息论-证明篇-v0.6.md`), a Lean 4 repository with a claim-status ledger, and a v2 execution plan that is the strongest methodological statement anywhere in the corpus. What does not exist is a single volume. The formal branch and the prose branch are two developments of one content with no document mapping them onto each other, and 象 has no 字元 entry while 間 does not appear in the July book at all.
 
+**2026-09-25.** The September whitepaper is not this book. It is AI-drafted, in modern Chinese, and set out in numbered propositions. But it bears on four of the movements below.
+
+- **Movement 一.** It sidesteps the choice of root by starting from a fact instead: the knower is generated inside the world, 差异 gives the way in, and 生命 gives the stakes (§1.1). That is the 2022 ontology's first step, difference → structure → change, reached again. This movement now has a fifth candidate to weigh, or a reason to say that the book needs no root at all.
+- **Movement 三.** Its §1.2 states 象、像 and 理 in prose, including 像亦象也. It has no 字元, so the bridge still does not exist.
+- **Movement 六.** The v1.0 review found the whitepaper had dropped 七尺, 绝生之限, 位与家 and 邪理 from this book, and v1.1 restored them. That episode shows which parts of the July book travel best into public use.
+- **Movement 八.** It adds a third formal line: three Lean modules (`formal/GenerativeCore.lean`, `OpenFuture.lean`, `ExistenceConditions.lean`) with 28 indexed theorems, checked inside declared models. They are separate from the SSBX repository and from the 間 formalism, and its own Appendix C.1 says they are not the same set of formal definitions. So 待校 now has three formalisms to relate, not two.
+
 **Movements.** Eight, not twenty; the July book's chapters merge into these.
 
 **一 · 間.** The root, and the choice among roots. Fed by `.../04_补篇二_间生论_主篇/03_一、间.md`, `07-shengsheng-buxi/downloads-drafts-2026-05/生生不息论_v9.md`, `2026-07-14-生生不息论.md`. **To write:** the root reconciliation. Four candidates are in play with no reconciliation document — 間 (间生论 and 致知版), 動 (the Lean kernel's primitive axiom), 一 (Ren's own May-2026 line 根位非事，而是一也), and 元 (kept among the CoreAtoms). Nothing may go to press until one is chosen and what the others carried is recorded rather than dropped.
@@ -204,11 +260,11 @@ The second is Ren's own verdict of 2026-07-07, made while dismantling his own fi
 
 **5 · What a habitat owes a being.** Capture before policy; no silent mind-edits; coercion recorded as coercion; refusal preserved. Fed by `10-context-runtime-ember/ember/SPEC.md` and `.../PLAN-LIFE.md`. **To write:** the reconciliation. The two constitutions contradict each other on the record — one grants receipts, visibility strata and a self-verifying fold; the other repeals all three and says so honestly — and nothing states which claims of the theory survive the repeal.
 
-**6 · Departure and standing.** Relax refusals into recorded departures read by a declared policy; nothing silent, and nothing previously allowed becomes refused. **To write:** the generalisation. This is a governance pattern for institutions, for AI systems, and for the political theories in Books 1 and 2, and it currently lives inside an ADR about a plugin framework.
+**6 · Departure and standing.** Relax refusals into recorded departures read by a declared policy; nothing silent, and nothing previously allowed becomes refused. **To write:** the generalisation. This is a governance pattern for institutions, for AI systems, and for the political theories in Books 1 and 2, and it currently lives inside an ADR about a plugin framework. **2026-09-25:** The generalisation has now been made once, in Chinese, for public life: the whitepaper's §11.4 three custody rules, with their source and the limits of the translation in `组织实践札记-v1.1.md` §一. This chapter can cite that, and should add what the translation leaves out, namely where the software rule and the public rule differ.
 
 **7 · One primitive, and what it refuses.** Spirit–Token–Space collapsing into Yi. Fed by `09-sts-bonfire-yi/2025-08-STS-spirit-token-space-paper.md`, `09-sts-bonfire-yi/bonfire-docs-yi/00-direction.md`, `09-sts-bonfire-yi/bonfire-concepts/yi.md`. **To write:** two things. The 間 → Yi derivation stated as philosophy rather than as TypeScript, which `theories/spirit-space-token-and-yi-substrate/` calls the one essay standing between the theory and publication. And prohibition: a social fact is something a spirit *holds*, but bans, mutes and exclusions are precisely facts not held by their subject, which makes the founding formula incomplete and is a theoretical fault rather than an implementation gap.
 
-**8 · A frozen kernel and a churning library.** Fed by six systems at once — apps-are-data / platform-is-code, cut machinery never format, the ownership rule, the rule of two, core-is-the-dependency-constitution, the 文言 format-waist. **To write:** the claim, once. Across six systems Ren separates a small declarative frozen thing from a churning implementation; it is the most portable idea in the cluster and exists nowhere as a claim.
+**8 · A frozen kernel and a churning library.** Fed by six systems at once — apps-are-data / platform-is-code, cut machinery never format, the ownership rule, the rule of two, core-is-the-dependency-constitution, the 文言 format-waist. **To write:** the claim, once. Across six systems Ren separates a small declarative frozen thing from a churning implementation; it is the most portable idea in the cluster and exists nowhere as a claim. **2026-09-25:** There is a seventh instance, in design only: `theories/evolving-community-swarms/`. Module contracts are held stable while implementations are generated, forked and retired, and adoption is scoped to a person, a group or a community. It is a plan with no running code yet.
 
 **9 · What was falsified.** 权限即可达性 — the intent document's most elegant premise, destroyed by its own construction because a content-level permission can be forged; the retracted probe; the gates that passed by construction across three audits; measure-before-optimising. Fed by `.../019-history-context-authority-boundaries.md`, `.../decisions.md`, `.../CONSTRUCTION_CONSTITUTION_LITE.md`. **To write:** publish them as findings rather than leaving them as silent supersessions. No comparable book has this chapter, and it is the reason to trust the other eight.
 
@@ -217,6 +273,89 @@ The second is Ren's own verdict of 2026-07-07, made while dismantling his own fi
 **How it differs.** The comparison titles are irrelevant here and the honest comparison set is the systems-design literature — and against it, the distinguishing move is that this book treats a data model as a constitutional question. *Seeing Like a State* is the one comparison that survives, in an unexpected way: it is the same argument about legibility one layer down, and this book is what a state-legibility critique looks like when the author also has to ship the registry. What no comparable book has is a running system whose own audits are published against it.
 
 **The honest risk.** The subject matter moves weekly; a book about an architecture in a field this young may be obsolete before it is printed, and the corpus's own honest verdict is that all four of ember's stated goals are achievable with a boring 2,000-line loop plus SQLite, with the git substrate serving a fifth and unstated goal — the thesis itself. The evidence base is one flash-class model, n=1 per arm, over two days, against a standard the project itself states and does not meet. And the deepest one, in the project's own words: *"Ember preserves my autobiography much better than it protects my agency."* A book about what a habitat owes a being, written from a system that has not yet solved that, has to lead with the gap.
+
+---
+
+## 6. *Worlds We Can Inhabit* — added 2026-09-25
+
+**English-first and illustrated, for readers who have never opened a theory.** The working title is the friends' atlas's. The book's form is Ren's decision, and nothing below makes it for him.
+
+**Thesis.** We already know how to build much more of the future than we act as if we do.
+
+- **The engine.** AI that plans and acts, robots, and industrial automation that already manufactures robots and machine tools can be joined into production that helps build further production.
+- **The floor.** Pointed at generous shared provision, that production frees people from having to sell their lives in order to live.
+- **The real question.** Once the floor is in place, a civilisation's real question opens: what will people build when survival is no longer the game?
+- **The worlds.** The book shows six. A garden city whose residents garden because they enjoy it. A megastructure built for augmented reality, where the lifts become portals. An open university. An expressive commons. A rocket community. A city that is also a game.
+- **How each one works.** It shows, for each, how the ordinary things work: water, repair, rest, disagreement, leaving.
+- **What makes them hold.** It shows the mindset that holds them together:
+  - the view of someone designing a multiplayer world, who has to design for the players who never win (Ren, `worldbuilding/archive/001`);
+  - things that come back into use instead of being thrown away (`004`);
+  - winning that does not buy the right to decide how everyone else plays (the watershed game in `theories/architecture-for-a-living-earth/chiang-mai-2025/`).
+- **What it claims, and what it does not.** It does not claim these worlds are certain. It claims that the capacity is largely on hand and the rest is choice and construction. That is Ren's strong thesis, stated at his strength, with the evidence notes' bounds kept to one page.
+
+**Reader, and what changes.** Ren named both.
+
+- **The reader.** Friends first (`005`).
+- **The change he wants.** *"we want them to understand the possibility, and looking forward to it, not for what they read but what they see"* (`008`). And: make people understand *"what we have on hand … with this established, the rest will not be scifi"* (`007`).
+- **What changes for the reader.** They stop filing a generous future under fiction.
+- **Why that matters, and its limit.** By the corpus's own mechanism, a vividly thinkable alternative changes what people can coordinate on. Book 1 chapter 6 sets the limit this book must respect: that holds in coordination games, and it is worthless where defection pays.
+- **What it adds to the plan.** This is the only book on the list whose reader is not already convinced that something is wrong. It is also the only one whose job is to make a future wanted rather than to make a criterion exact.
+
+**Why now.** It is the book already being made, and the only one Ren has directed page by page.
+
+- **What exists.**
+  - five atlas editions in two days (2026-09-07/08) and six world briefs;
+  - three foundations and three bounded evidence notes;
+  - twenty-five images;
+  - the Chiang Mai 2025 city and the *Generative Chiang Mai 2045* canvas.
+- **What is rarer than a draft.** It has a written diagnosis of why its latest edition falls short: `worldbuilding/artifacts/friends-worldbook/reviews/2026-09-10-v5-shortfall/README.md`. The diagnosis finds five mechanisms:
+  - Ren's request for more (*"too brief"*, *"feel the future"*) was answered by cutting the text;
+  - fixed text boxes decided the thought before it existed;
+  - the images showed scenery and left the mechanism to captions; only 4 of 25 carried their idea, all of them comparisons or sequences;
+  - there was no departure point: no present trap, trajectory or urgency;
+  - the reviews measured format and never force.
+- **Why that matters.** A next edition that starts from that diagnosis starts further along than any other book in this plan.
+
+**Chapters.** The order is the one the diagnosis recommends and Ren's messages already follow: trap → what is on hand → worlds → conditions.
+
+**1 · The game we are in.** Winner-takes-all, extraction, and what Ren calls fighting, winning and calculating for yourself until one *"eventually behaves like a blind animal in our training simulation"* (`001`). Fed by `001` and, compressed to a chapter, Book 1 chapter 3. **To write:** all of it. The atlas has none of it, and this is the departure point whose absence the diagnosis names.
+
+**2 · What is on hand.** Factories that help make the robots that help make factories; what is demonstrated and what is not. Fed by `worldbuilding/foundations/automation-to-shared-abundance.md`, `worldbuilding/research/2026-09-07-industrial-automation-evidence.md`, `.../2026-09-07-ai-engineering-evidence.md`, and `theories/the-fork-and-cooperative-infrastructure/`. **To write:** the version readers can see. Its images must carry the mechanism as a sequence, because sequences are what worked. The chapter must also say where the growth stops. In Ren's words, *"we can grow exponentially till we met our need, but we can't compounding forever"*. And it must say what makes the growth safe: not a speed limit, but *"how we can use it wisely"*. That wisdom is what chapters 5–10 have to show in the worlds.
+
+**3 · Things that come back.** The shared metal cup, the reclaimed beam, the building that is taken down into its parts. And the bookkeeping that keeps it honest: external material input = net increase in stock + material leaving the system. Fed by `004`, `worldbuilding/foundations/regenerative-material-civilization.md`, `worldbuilding/research/2026-09-07-material-circulation.md`, and `theories/architecture-for-a-living-earth/README.md`.
+
+**4 · The first year.** The transition in one place: Chiang Mai, now. What already exists, what one unit of shared provision costs, and whether it reproduces itself or spends a one-off gift. **To write:** all of it. It cannot be written before piece 3 below, because it *is* piece 3, told. It is the chapter the atlas lacked and the chapter the theory lacks.
+
+**5–10 · Six worlds.** Living Garden; House of Worlds (the purpose-built AR megastructure of `008`); Open University; Expressive Commons; Exploration Community; City of Shared Quests. Fed by `worldbuilding/worlds/*.md` and `worldbuilding/worlds/embodied-journeys.md`. **To write:** each one as a journey: arrival → a day → the engineering that holds it → how one leaves. That is the embodied form Ren asked for in `008`. Each should also include one episode where something goes wrong and is corrected. The watershed game, whose planting points taught the wrong thing and were revised, is the model.
+
+**11 · A city holding them.** Chiang Mai. Fed by `theories/architecture-for-a-living-earth/chiang-mai-2025/` and `output/pdf/generative-chiang-mai-2045.md`. **To write:** first a choice of year. An alternate 2025 in which the capacity already exists removes the transition by premise. A 2045 told looking back keeps it in view. They are two different books.
+
+**12 · What has to be true.** The conditions, once:
+
+- provision that no membership administers;
+- exit;
+- the material stock;
+- ecological baselines;
+- the point of enough, and the frame that decides what counts as enough;
+- the three problems Book 1 leaves open.
+
+Fed by `worldbuilding/foundations/charter.md` and the research agenda. **To write:** the single page of qualifications the diagnosis asks for, so that the other chapters need not hedge on every page.
+
+**Length and register.** 25,000–40,000 words, with one image per idea, each briefed with the mechanism it must show rather than its scenery. Warm and concrete. The register is found already in the Chiang Mai morning: the lift opening onto a veranda, the child watching ants, the grandfather who does not hurry her. Text and image carry the argument together. Edition four's cut-the-text answer to *"too brief"* is the failure this register exists to avoid.
+
+**How it differs.** These comparisons are this plan's framing and have not been checked against the texts in this corpus.
+
+- ***Fully Automated Luxury Communism* (Bastani).** It argues the engine and a political programme, and shows almost nothing of the lives. This book is mostly the lives, with the engine as their ground.
+- ***The Ministry for the Future* (Robinson).** It narrates the transition through institutions and disasters. This book narrates one year of the transition in one city and spends the rest on what the transition is for.
+- ***The Dispossessed* (Le Guin).** It is the honest ancestor, an anarchist society tested by scarcity. This book removes the scarcity by engine and asks what remains hard.
+- **Solarpunk.** It supplies the mood without a mechanism. This book's images are briefed with mechanisms.
+
+**The honest risk.**
+
+- **Beauty without power.** Five editions show the failure mode exactly. Ren named it three months before the atlas existed, about a different draft: *"you wrote a beautiful piece but lost the power"* (2026-06-04, quoted in the diagnosis).
+- **The strong thesis.** The claim that present knowledge suffices for full automation is Ren's, and the evidence notes do not establish it. The book must hold both without retracting on every page. Edition five carried 46 qualification markers across 21 of its 34 pages.
+- **Authorship.** Almost every scene, hall and institution in the existing material is an assistant proposal. Ren endorsed directions, not scenes. A book under his name needs his hand in the worlds, not only in the premises.
+- **Scarcity.** A book of the after can be read as the science fiction its author wants it not to be. Chapter 4 is the defence, and it is the chapter that cannot yet be written.
 
 ---
 
@@ -232,7 +371,16 @@ Refusing books matters as much as proposing them, because the corpus's character
 
 **Wamotopia is not a book.** The protocol was published and the festival ran. What is missing is not a volume but a field record, and the promised public recap does not exist anywhere in this corpus — which means the constructive branch's only empirical asset is a single four-year-old event whose decisive feature was that the state cancelled the venue.
 
-**The Fork is not a book, by its author's own decision.** He retired the name twice — on 2026-03-19 because a two-branch framing falsifies the size of the possibility space, and on 2026-04-16 because a simpler position had replaced it. Both retirements are part of the theory. Its live content is Book 1 chapters 7–8 and Book 2 chapter 11.
+**The Fork is not a book, by its author's own decision.** He retired the name twice — on 2026-03-19 because a two-branch framing falsifies the size of the possibility space, and on 2026-04-16 because a simpler position had replaced it. Both retirements are part of the theory. Its live content is Book 1 chapters 7–8 and Book 2 chapter 11. **2026-09-25:** The folder was rewritten on 2026-09-07 as *Cooperative abundance and freely built worlds*, around the productive engine. Its live content now also includes Book 6 chapter 2. It is still not a book. It is the argument that three books share, and it has to be settled once, including its point of enough, rather than restated in each.
+
+**The unified whitepaper is not a book** (added 2026-09-25). `drafts/2026-09-05-generative-foundations/WHITEPAPER-v1.1.md` is the corpus's first book-length single argument, and it is the right document for what it is: a founding text an organisation can be held to. It is written as numbered premises, propositions and proof scopes (R1–R4, N0–N6, P1–P4, G2–G5, A1–A2), the register this plan rules out for the body of any book. And it is AI-drafted from Ren's texts. Its role in this plan is apparatus: Books 1, 2 and 4 cite it for derivations, the three custody rules and the formal scope, the way Book 1 is meant to be cited for the diagnosis. Two conditions attach:
+
+- **The 智善 omission** must be recorded in its Appendix C.1, or made good, before it is cited as unified.
+- **Its own §11.9 items** (supply model, Chiang Mai field record, symmetric case) must be finished before another version of it is worth making.
+
+**Evolving community swarms is not a book** (folder opened 2026-09-05; entry added 2026-09-25). It is an engineering research programme with a staged plan and no implementation. The only writing it owes is a result: the first experiment its plan specifies, published with its baseline. After that it is one essay, or a chapter of Book 5.
+
+**Architecture for a living Earth is not a book** (folder opened 2026-09-13; entry added 2026-09-25). It is a design study. Its next step, by its own account, is drawing: comparable sections for a branching tower, an elevated framework and a compact ground settlement with the same human programme. Its prose feeds Book 6 chapters 3 and 11.
 
 ---
 
@@ -256,36 +404,79 @@ Refusing books matters as much as proposing them, because the corpus's character
 
 **Write 《谁持记录，谁持存在》 last, or write it as essays instead.** Be decisive about this one: it should not be a book yet. Its central claim is unmeasured, its two constitutions contradict each other, and its subject moves weekly. The right interim form is three or four standalone essays — departure-and-standing as a governance pattern, the falsified premise published as a finding, the retracted probe as a method artifact, the frozen-kernel claim stated once. The book assembles when there is a measured switching result and one reconciliation document, and not before.
 
+**2026-09-25: Book 6, and what September changes about the order.**
+
+- **Book 6 runs alongside, not in the queue.**
+  - *Why it need not wait.* It is already in its fifth edition, and Ren is directing it.
+  - *What it needs from the others.* Only two things: Book 1's diagnosis compressed to a chapter, and piece 3 below (the supply model), which is its chapter 4.
+  - *Why not start it again now.* Starting again before piece 3 exists would produce a sixth edition with the same missing departure point.
+- **For English, 《开》 → 《智善》 still holds. For Chinese it has weakened.** The Chinese criterion and a procedure for it now exist in the whitepaper: 七尺, the custody rules, and 成生／绝生之限. So a Chinese 《智善》 no longer waits on 《开》 for a criterion. It waits on two other things: the ruling on the four conditions versus 七尺 (Book 2 chapter 5), and the publishing subject.
+- **Books 3, 4 and 5 are unaffected.** The one exception is that Book 4's closing movement now has three formal lines to relate.
+- **What the plan did not predict.** September suggests something about order.
+  - *Two different rankings.* This plan ranked the books by what unlocks what. The work Ren actually chose in September was a founding text for an organisation and a book of worlds for friends, the two things with a reader outside the corpus.
+  - *Where they agree.* On one item: the supply model, piece 3. It is the precondition for Book 2 chapter 11, Book 6 chapter 4, the whitepaper's own §11.9, and the Chiang Mai field record. Whichever way the books are ranked, it comes first.
+
 ---
 
 ## The pieces to write before any book
 
-Each theory document names what it most needs next. Gathered and de-duplicated, they collapse into fourteen pieces, several of which satisfy three or four separate requests at once. Every one of these becomes a chapter in one of the books above or stands alone as an essay; none is throwaway work.
+Each theory document names what it most needs next. Gathered and de-duplicated, they collapse into fourteen pieces (seventeen with the three added on 2026-09-25), several of which satisfy three or four separate requests at once. Every one of these becomes a chapter in one of the books above or stands alone as an essay; none is throwaway work.
 
-**1 · Recover the lost artifacts.** *The Architecture of Wanting* and *Territory Without Border* are the core text of a theory with no core text; "The Relational Self" is the same for another; and the Fork briefing, the earlier recruitment letters, the 人类命运共同体 manifesto and the US–Israel–Iran defection-cascade analysis are all named in `_process/LOST-ARTIFACTS.md` and `theories/memories-and-working-style/` with their chat URLs. This is an afternoon's work and it unblocks Book 3 almost entirely and Book 2's missing case study partially. It ranks first because nothing else on this list has a cost-to-value ratio anywhere near it.
+**1 · Recover the lost artifacts.** *The Architecture of Wanting* and *Territory Without Border* are the core text of a theory with no core text; "The Relational Self" is the same for another; and the Fork briefing, the earlier recruitment letters, the 人类命运共同体 manifesto and the US–Israel–Iran defection-cascade analysis are all named in `_process/LOST-ARTIFACTS.md` and `theories/memories-and-working-style/` with their chat URLs. This is an afternoon's work and it unblocks Book 3 almost entirely and Book 2's missing case study partially. It ranks first because nothing else on this list has a cost-to-value ratio anywhere near it. *2026-09-25: not done.*
 
-**2 · 《开》— the one document carrying all three registers.** The rigorous 29 propositions, the readable public statement, and the Chinese 开/闭 vocabulary, in one text, with 护闭 connected to the enforcement antinomy. Requested independently by `theories/keep-the-possibility-space-open/` (as its largest gap), by `theories/zhishan-intelligence-must-be-good/` (as the missing foundational paper defending why these are the right criteria), and by `theories/meta-attractor/` (as the counter-attractor design note with an explicit openness criterion). Three requests, one piece. It is Book 1's spine.
+**2 · 《开》— the one document carrying all three registers.** The rigorous 29 propositions, the readable public statement, and the Chinese 开/闭 vocabulary, in one text, with 护闭 connected to the enforcement antinomy. Requested independently by `theories/keep-the-possibility-space-open/` (as its largest gap), by `theories/zhishan-intelligence-must-be-good/` (as the missing foundational paper defending why these are the right criteria), and by `theories/meta-attractor/` (as the counter-attractor design note with an explicit openness criterion). Three requests, one piece. It is Book 1's spine. *2026-09-25: half done, in Chinese. The whitepaper's Appendix B maps the 29 propositions, its §8.4 keeps 未、可、应、转, and its §11.3–11.5 connects 护闭 to a test that can be applied when the closing is decided. The English text carrying all three registers still does not exist.*
 
 **3 · Who pays, who builds, who governs the abundance layer.** The corpus's single largest hole. `theories/the-fork-and-cooperative-infrastructure/` states it as 无主语 and 设计有了，供给为零; `theories/zhishan-intelligence-must-be-good/` lists it unanswered two versions later; `theories/keep-the-possibility-space-open/` notes that "shared infrastructure" has only a negative test and no positive institutional form; `theories/meta-attractor/` notes the constructive half is one bullet against twenty-two drafts. Four requests, one piece, and it is the piece that would make the constructive half of this corpus exist. It must include a verification procedure for "non-capturable in practice", a connection to the welfare, cooperative and mutual-aid traditions the framework currently touches nowhere, and an honest engineering estimate of a necessities floor at population scale, because "coordination, not physics" is currently doing a great deal of unaudited work.
 
-**4 · The diagnosis, once, in Ren's voice, in both languages — and the retirement of the thirty drafts.** Four loops, the definition, the five-member endgame taxonomy rather than the one everyone quotes, the sample-size hedge, the two capture channels into the machine, and one fixed vocabulary. Requested by `theories/selfishness-spiral-and-narrative-value-frames/` ("near-publishable at chapter length with one essay of writing"), by `theories/alignment-selection-on-cognition/` (a single text in Ren's voice and in Chinese that states selection-on-cognition and derives the pause from it), and by `theories/meta-attractor/` (the paper that unifies the formalisms and fixes the vocabulary). Start from `12-claude-ai-chats/2024-11-05_The_Ouroboros_Cycle_of_Systemic_Collapse_8a4e5d29.md`, not from the 2025 drafts, because the eleven-step version is more complete than everything that followed it.
+*2026-09-25: the piece is now the centre of the whole plan (see "Order and dependency").*
 
-**5 · One symmetric named case study.** 对称之刃 requires that any test applied to one party be applied to its opposite and to 智善 itself; two such articles were deferred as 时机是策略决定 and neither exists. By the framework's own closing sentence — 知而不行，只是未知 — this is the largest gap between what the texts claim and what they have done. The recovered defection-cascade analysis (piece 1) may already be most of it.
+- *Production side: supplied.* The rewritten Fork supplies it, with bounded evidence that automation already makes robots and machine tools, and none that a complete industrial system reproduces itself.
+- *Question and first step: stated.* The whitepaper's §11.9 states the question and names the first step, a supply model with a named provider, costs, access and responsibility for continuity.
+- *Accounting: supplied.* Its §1.6 recurrence supplies the accounting: whether a unit reproduces its capacity, or only delays a deficit with a one-off injection.
+- *Place: now obvious.* One necessity in Chiang Mai, where Ren is, where the city was imagined, and where the field record is owed.
+- *Unchanged:* who pays, and the population-scale estimate.
+
+**4 · The diagnosis, once, in Ren's voice, in both languages — and the retirement of the thirty drafts.** Four loops, the definition, the five-member endgame taxonomy rather than the one everyone quotes, the sample-size hedge, the two capture channels into the machine, and one fixed vocabulary. Requested by `theories/selfishness-spiral-and-narrative-value-frames/` ("near-publishable at chapter length with one essay of writing"), by `theories/alignment-selection-on-cognition/` (a single text in Ren's voice and in Chinese that states selection-on-cognition and derives the pause from it), and by `theories/meta-attractor/` (the paper that unifies the formalisms and fixes the vocabulary). Start from `12-claude-ai-chats/2024-11-05_The_Ouroboros_Cycle_of_Systemic_Collapse_8a4e5d29.md`, not from the 2025 drafts, because the eleven-step version is more complete than everything that followed it. *2026-09-25: the whitepaper states the diagnosis once, in Chinese, in its chapter 6. It also makes the 'Meta-Attractor' naming ruling implicitly: the mechanism is neutral in sign, and 总体化 is the bad process. But the text is AI-drafted, not in Ren's voice, and the four loops and the eleven steps are not its structure. The piece stands.*
+
+**5 · One symmetric named case study.** 对称之刃 requires that any test applied to one party be applied to its opposite and to 智善 itself; two such articles were deferred as 时机是策略决定 and neither exists. By the framework's own closing sentence — 知而不行，只是未知 — this is the largest gap between what the texts claim and what they have done. The recovered defection-cascade analysis (piece 1) may already be most of it. *2026-09-25: still missing. The whitepaper's §11.9 lists it among the three items 仍待实作.*
 
 **6 · The relational self, as its own document.** From relational constitution through environment-selects-mode to 大同 as a maintained direction, without borrowing the 生生 formalism to do it. `theories/relational-self-and-datong/` names this as the reason its folder exists, and names the specific theoretical move that is missing: joining the two selection mechanisms — environment selects which behavioural mode expresses, and an environment of 和 selects shared symbols toward a common root — which are stated eleven months apart in different vocabularies and are plausibly the same claim at two levels.
 
 **7 · What a narrative attractor is an attractor of.** The state-space essay: what the phase space is, what the trajectory is a trajectory of, and one designed measurement using the 短剧 natural experiment. `theories/drives-narrative-attractors-and-mind/` names "attractor" as used in four undisambiguated senses and the theory as having no measurement at all. Book 3 cannot be written honestly without this.
 
-**8 · The 象/字元 bridge, and the proof layer absorbed.** One document mapping the July prose vocabulary onto the May formal one, plus incorporation of the 证明篇's eight ordered revisions — above all the two-pole account of evil, which is better supported than the doctrine currently in the books. `theories/shengsheng-buxi-generative-existence/` calls the missing bridge its largest internal gap. Book 4 is stapled together until this exists.
+**8 · The 象/字元 bridge, and the proof layer absorbed.** One document mapping the July prose vocabulary onto the May formal one, plus incorporation of the 证明篇's eight ordered revisions — above all the two-pole account of evil, which is better supported than the doctrine currently in the books. `theories/shengsheng-buxi-generative-existence/` calls the missing bridge its largest internal gap. Book 4 is stapled together until this exists. *2026-09-25: the whitepaper's §1.2 states 象、像 and 理 in prose (像亦象也) with no 字元, so the bridge is still missing. The whitepaper's three Lean modules add a third formal line beside SSBX and 間, which this piece now has to relate as well.*
 
 **9 · The 間 → Yi derivation, as philosophy.** Plus prohibition, which possession cannot express. `theories/spirit-space-token-and-yi-substrate/` states the position exactly: the theory as a whole is one essay away from publishable and that essay has not been written. Short, high-leverage, and it also gives Book 5 its seventh chapter.
 
-**10 · The context-runtime reconciliation, and the frozen-kernel claim stated once.** Which claims of the ember constitution survive its own repeal; and the small-frozen-declarative-thing-against-churning-implementation pattern named as a claim rather than recurring silently across six systems. Both from `theories/context-as-existence-runtimes/`. Pair with the Σ switching measurement, which is the one experiment that would turn that theory's headline into a result.
+**10 · The context-runtime reconciliation, and the frozen-kernel claim stated once.** Which claims of the ember constitution survive its own repeal; and the small-frozen-declarative-thing-against-churning-implementation pattern named as a claim rather than recurring silently across six systems. Both from `theories/context-as-existence-runtimes/`. Pair with the Σ switching measurement, which is the one experiment that would turn that theory's headline into a result. *2026-09-25: unchanged. The evolving-community-swarms plan adds a seventh instance of the frozen-kernel pattern, in design only.*
 
 **11 · 争 and 和 as a selection pressure on language.** The argument that a monist language is a *communication attractor* — where many parties must understand each other in an environment of 和 rather than 争, symbols get selected toward concepts traceable to a common root, because cooperation has to reason while contention only has to win, and 一旦争，则我对，我大于理. It exists only in conversation, it is the join between the language programme and the ethics, and it is also the microfoundation `theories/alignment-selection-on-cognition/` names as missing from every draft. Short essay; disproportionate payoff.
 
-**12 · The Wamotopia 2026 field record.** The Chiang Mai festival ran in January–February 2026 and the promised public recap exists nowhere. This is the constructive branch's only recent empirical asset and it is the one item on this list that decays with time, because the people who were there are forgetting. Write it as a field record with the controls named — what was and was not organised, what the map did, what failed — not as a celebration.
+**12 · The Wamotopia 2026 field record.** The Chiang Mai festival ran in January–February 2026 and the promised public recap exists nowhere. This is the constructive branch's only recent empirical asset and it is the one item on this list that decays with time, because the people who were there are forgetting. Write it as a field record with the controls named — what was and was not organised, what the map did, what failed — not as a celebration. *2026-09-25: not written, and now asked for from three directions: here, `drafts/2026-09-04-one-work/STRUCTURE.md`, and the whitepaper's §11.9 (清迈田野记录). Chiang Mai also now has an imagined city (`theories/architecture-for-a-living-earth/chiang-mai-2025/`) and a 2045 canvas. The real record of what happened there is the one Chiang Mai document that does not exist.*
 
 **13 · The museum's institutional wing and its failed-solutions wing.** 合作社, 工会, 开源协作, 公共卫生制度, 图书馆 — commons mechanisms with their costs and failure modes attached — plus a wing for problems never solved, solutions suppressed, and mechanisms that worked and were then destroyed. `theories/the-fork-and-cooperative-infrastructure/` names this as exactly the 主语 the abundance commons lacks, and without the failure wing the museum is a survivorship machine.
 
-**14 · A publishing subject with an address and a dissent intake.** The one item here that is not writing. 智善's own 公开可纠 clause makes it a precondition of publishing rather than an administrative afterthought, and the framework's red team scored the framework against its own four criteria and returned 关系 fail, 可纠 fail. Nothing above should be published under a name that cannot receive an objection.
+**14 · A publishing subject with an address and a dissent intake.** The one item here that is not writing. 智善's own 公开可纠 clause makes it a precondition of publishing rather than an administrative afterthought, and the framework's red team scored the framework against its own four criteria and returned 关系 fail, 可纠 fail. Nothing above should be published under a name that cannot receive an objection. *2026-09-25: a candidate exists on paper. The September drafts give the organisation the working name 至善, a manifesto, and a chapter on its own accountability (whitepaper chapter 11). By its own README it is not founded and has no public mandate or signatories, and there is no address or dissent intake yet. The name is also undecided between 至善 and 智善 (Book 2, honest risk).*
+
+*Pieces 6, 7, 9, 11 and 13: no change in September.*
+
+**15 · Record what the whitepaper did not carry, and cross-walk the closure words (added 2026-09-25).** One short note in two parts.
+
+- *The omission.* A record, in the whitepaper's Appendix C.1, of the 智善 concepts it does not carry, and whether each was set aside for a reason or simply not read: 生之，通之，纠之，不闭之; 总体化吸引子; the gate; 行星技术; 不代人相斗; 善不姓国; 公开可纠.
+- *The table.* A four-column crosswalk of the closure vocabularies: 成闭/护闭/元闭/伪开; 成生之限／绝生之限; the three custody rules; and the English "close / keep open".
+- *Why it is cheap and urgent.* Without the first, the whitepaper calls itself unified over material it did not use, the exact loss Ren's standing rule forbids. Without the second, Books 1, 2 and 4 each have to invent the mapping. It is an afternoon's work.
+
+**16 · The point of enough, and where the risk sits (added 2026-09-25; reframed by Ren the same day).**
+
+- *How it began.* It was first written as a "rate paragraph", on the premise that the constructive engine's compounding repeats the diagnosis's mechanism.
+- *Ren's ruling.* *"this isn't the problem - how we can use it wisely, is the key. we can grow exponentially till we met our need, but we can't compounding forever. the problem is the mind not the approach"*.
+- *What the paragraph now says.* The productive recursion is bounded by need, not by speed. What compounds in the disease is relative advantage, which never reaches enough. Whether a growing capacity serves needs or becomes advantage depends on the frame directing it. His own warning in `worldbuilding/archive/004`, *"will can be further amplified"*, locates the risk there too.
+- *What the paragraph points to.* How the mind that uses the capacity wisely is formed and kept. The corpus already works on this in Book 3, in 修身 and 教化 in 生生不息论, and in the generative-worldmaking foundation. Pointing there joins the engine to the part of the corpus that addresses its real risk.
+- *Where it goes.* One paragraph in the rewritten Fork, cited by Book 1 chapter 7, Book 2 chapter 11 and Book 6 chapter 2.
+
+**17 · Put the engine into the whitepaper (added 2026-09-25).**
+
+- *The gap.* The whitepaper has no argument from automation (the word 自动化 does not occur in it); its §10.8 has one conditional sentence where the engine belongs. The worldbuilding has no custody rules.
+- *The work.* Write the productive recursion into the whitepaper, and apply its three custody rules to a production network that builds its own successors.
+- *Why this is the test case.* Such a network is the clearest case there is of a closer who could hold the only key to reopening.
+- *What it would make of the two September lines.* One argument: the engine the ethics lacked, held answerable by rules the engine lacked.
