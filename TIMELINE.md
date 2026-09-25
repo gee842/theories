@@ -1,10 +1,12 @@
 # Timeline
 
-How the thinking developed, from the Dali field notes of May 2021 to the last engineering message of September 2026, and where the words changed.
+How the thinking developed, from the Dali field notes of May 2021 to Ren's ruling of 2026-09-25 on growth and the mind, and where the words changed.
 
 This is a narrative, not an index. It is built from three kinds of evidence, and they do not cover the same ground. `_process/timeline-raw.tsv` dates 1,640 of the files in `sources/` and gives the shape of the output — what was produced, when, and in what volume. The Genealogy section of each `theories/<slug>/README.md` gives the internal history of each idea, reconstructed from the documents themselves. And the claude.ai conversation record — 719 conversations running from 2024-03-18 to 2026-05-05, of which 381 were read, in Ren's turns only — gives what he was actually asking and reading week by week, which the finished drafts never show. From late April 2026 the Claude Code transcripts appear — 731 long messages, 272 of them read — and from June they are the dense stream; the two records barely overlap.
 
 Three dating caveats, because they change what the record appears to say. First, the claude.ai export stops on 2026-05-05; the silence after that date is the edge of the export, not a change in Ren's behaviour. Second, a handful of file dates in `14-claude-code-prompts/` and `13-claude-memories/` (2023-04-17, 2023-09-13, 2023-11-02) are extraction-time modification stamps; the real message dates sit in the file headers and are all 2026-08. Third, the mtimes recorded in `sources/SOURCES.md` for `04-speculative-future/history-recovered-from-git/` are git-checkout artefacts scattered across 2023–2026; `timeline-raw.tsv` carries the true commit dates, all of them June 2026. Where the two disagree, trust the TSV — except for the 2023–2024 Wamotopia repository, where the file mtimes are all later checkout stamps and the commit-by-commit history reconstructed in `theories/wamotopia-and-the-wamo-protocol/` is the more precise record.
+
+The last section, 2026-09-04 → 2026-09-25, was added on 2026-09-25 from different evidence: file timestamps in `drafts/` and `worldbuilding/`, Ren's messages archived verbatim in `worldbuilding/archive/`, `sources/15-*/` and `sources/16-claude-code-directions/`, and the drafts' own revision notes. Most September directions were given in Codex and Claude Code sessions, and they survive only where a folder archived them.
 
 ---
 
@@ -204,7 +206,48 @@ The same principles show up as ordinary defaults everywhere Ren is building. `da
 
 One document interrupts the engineering. `05-alignment-and-moloch/2026-08-22-development-within-understanding-position-paper.md` reframes the entire alignment argument from Moloch and cognition to signal dynamics and rate of change — the benchmark gap, signal stock/flow/floor, the two ratios, burden inversion, and pause converted from a moral appeal into a measurable ratio with a falsifiable meta-signal. It is the most defensible statement of the prescription in the corpus, and it drops the diagnosis entirely: no Moloch vocabulary, no selection-on-cognition, no 5000-year timescale, no internet lesson. It also reverses the May stance on operationability, which May had treated as a symptom of capture and August treats as the point.
 
-The corpus itself was assembled on 2026-09-03 and 09-04, which is where the record stops.
+The corpus itself was assembled on 2026-09-03 and 09-04.
+
+## 2026-09-04 → 2026-09-25 — One argument, an engine, and a city
+
+The consolidation's first reader was Ren. His first question, on 09-04, was whether the theories could become one essay or a short book. The answer, `drafts/2026-09-04-one-work/`, drafted the essay (开路，还是据门, about 7,200 words, in English). It also listed seven gaps the corpus had not named. Among them: 护闭's test can only be applied after the fact, there is no word for a good ending, and the middle scale between a person and a civilisation is missing.
+
+On the afternoon of 09-05 Ren named three texts and explained the purpose of an organisation: a good future, AI safety, 智能向善. Codex drafted a theory line and a working manifesto at 16:07 (`drafts/2026-09-05-zhishan-foundation/`). The three texts were older than their intake record suggests. The 至善 dialogue is byte-identical to a file already in the corpus, dated 2026-07-23. The manifesto, 《智能向善，天下生生》, is the 智善 cluster's `06-zhishan/sheng/智能向善.md` of 2026-07-15, from the night of public texts. The 生生不息论 was the July book.
+
+What followed ran through the night, by file time: whitepaper v0.1 at 16:57, v0.2 at 17:39, v0.3 at 18:14, v0.4 at 19:00, v0.5 at 20:46, v0.6 at 21:17, v1.0 at 00:21, a full review at 00:52, and v1.1 at 02:33 on 09-06. Before v0.3 Ren supplied a Chinese Meta-Attractor essay, and v0.4 added a four-postulate account of what systems need to persist. Ren's interventions are recorded only in the drafter's paraphrase, and each changed the argument rather than its surface:
+
+- **At v0.2** he asked for a derivation of why the environment and other people must enter judgement, with normative verdicts on severe externalisation, on closing off futures, and on treating one model as the end of the whole world.
+- **At v0.5** he corrected "all beings necessarily accept one ethic". The point is that acts within one system can be evaluated whether or not the actor accepts the evaluation.
+- **At v0.6** he added that subjective experience and models, shared understanding and material outcomes shape one another, and that pursuing a goal changes how winners and everyone else think. This became 三层现实.
+
+The v1.0 review found two problems. The manifesto had been replaced by a summary of the whitepaper. And 七尺, 绝生之限, 位与家 and 邪理 had been dropped from the July book. v1.1 restored all of them, took the three custody rules from the 09-04 gap list, and cut the text by a quarter. After a baseline commit, Ren confirmed a new 大同 passage for the manifesto. The result, 生生不息：智能向善的生成论基础, is the corpus's first book-length single argument. It does not carry the 智善 whitepaper's own concepts, and it closes by listing three things as undone: the supply model, the Chiang Mai field record, and the symmetric case.
+
+The same 09-05 opened two other lines.
+
+- **Evolving community swarms.** In a Codex session Ren asked how thousands of agents should write code, and ended at a community forum that grows, at its members' request, until "this becomes their "os" and a part of the culture". It was kept as evolving community swarms. On 09-07 he asked whether the idea was solid and how it compared with existing systems, and set the goal: "our goal is not just learn from the but surpass".
+- **Worldbuilding.** He opened a worldbuilding project with a long spoken message. It rests on two premises. One is robots that build factories that produce more robots. The other is a world-designer's view taken from multiplayer games: "you think about individuals not as themselves, but as a small part of a bigger whole. That how can we make the culture good? How can we make it engaging for not just the one that wins, but for everyone?" He raised the transition and set it aside: "We just think about the future after we get out."
+
+09-07 is the densest day of the month.
+
+- **The material side.** Ren added it himself: metal cups and steel that "reincarnate", and *"true freedom is not to waste but to be able to transform dynamically without loosing resources"*. He added a caution about people rather than machines: *"this comes with its own risks as will can be further amplified"*.
+- **Three corrections.** He asked for an artifact for friends and corrected it three times.
+  - Restore the meta level and the missing worlds: rocket communities, lived MMORPGs, AR portals.
+  - Restore "the whole reason we had about why this is possible", with the sentence that set the month's constructive task: *"we want to make people understand what we have on hand, both knowledge and technology, what is already possible and can be done, with this established, the rest will not be scifi"*.
+  - Make the worlds embodied: *"we need to feel the future, to actually see"*.
+- **Five editions.** Between 16:57 on 09-07 and 00:22 on 09-08 the atlas went through five editions.
+- **The Fork rewritten.** At 18:04–18:06, at his request, the Fork folder was rewritten around productive recursion and retitled *Cooperative abundance and freely built worlds*, with the previous text kept byte for byte.
+
+On 09-10 Ren judged edition five short of what he expected. The diagnosis written that night found three things:
+
+- the answer to "too brief" had been to cut text;
+- the images carried scenery rather than the mechanism;
+- the atlas had no departure point.
+
+It also quoted his June verdict on an earlier draft: "you wrote a beautiful piece but lost the power." Ren stopped a multi-agent check of the diagnosis because of token cost.
+
+On 09-13 he opened architecture for a living Earth: settlement lifted off living ground, robots that assemble and later dismantle it, components that circulate. The same afternoon he placed it where he is: "I am in Chiang Mai, and I think this is a good place to think about what our future life will be". He set it in an alternate 2025 with fusion power and autonomous construction, forests left standing, roads underground, children playing in the forest, and a world where "we do good things because that's where meaning comes". On 09-16 it became an English fiction canvas, *Generative Chiang Mai 2045*, told from 2045 looking back. His clarification that productivity and automation have solved, or are solving, climate change survives only in the canvas's revision note.
+
+On 09-25 Ren read a summary of the updated `MAP.md`. It listed a new conflict: the constructive engine compounds, just as the diagnosis's mechanism does. He ruled it out: **"this isn't the problem - how we can use it wisely, is the key. we can grow exponentially till we met our need, but we can't compounding forever. the problem is the mind not the approach"** (`16-claude-code-directions/2026-09-25-the-mind-not-the-approach.md`). It is the month's clearest single statement. It also returns the constructive half to the corpus's oldest claim: what compounds in the disease is advantage, which is never enough; production for need has a point where it stops; and which of the two a capacity becomes is decided in the mind.
 
 ---
 
@@ -226,6 +269,11 @@ Every rename in this corpus is a change of claim, not of packaging, and each one
 | 开 / 闭 | 2026-05-02 | "expanding the possibility space" | *Expansion* sounds measurable and therefore maximisable; 开 does not, and it absorbs the whole virtue vocabulary |
 | selection-on-cognition | 2026-05-28 | structural Moloch | Marks the claim that distinguishes it from vanilla Moloch: the capture reaches the way we see |
 | 智善 | 2026-07-15 | — | The position becomes an organisation with a cornerstone document |
+| 至善 (as the organisation's working name) | 2026-09-05 | 智善, in the September drafts | Taken from the 至善 dialogue of 2026-07-23; pronounced the same as 智善, it drops "intelligence" from the name. Which name the organisation carries is undecided |
+| 三条托管规则 (three custody rules) | 2026-09-06 | 护闭's after-the-fact test (归开) | A closing can be checked when it happens: nothing silent, no one who closes holds the only key to reopening, nothing possible made impossible. Lifted from Ren's runtime rules through the 09-04 gap list |
+| Meta-Attractor (sign-neutral, as analysis) | 2026-09-06 | meta-attractor as the pathology | The whitepaper names the mechanism and its analysis without a sign; 总体化 carries the harm, and "counter-attractor" the remedy |
+| Cooperative abundance and freely built worlds | 2026-09-07 | The Fork (as the folder's title) | Production comes first, as capacity building capacity; exit is demoted from the mechanism to the safeguard |
+| grow till needs are met (Ren's ruling; "point of enough" is an assistant label) | 2026-09-25 | the assistant's "rate" framing | Growth is bounded by need, not speed; "the problem is the mind not the approach" |
 
 ---
 
@@ -235,7 +283,7 @@ Every rename in this corpus is a change of claim, not of packaging, and each one
 
 **What recurred.** Four things, at every scale, across all five years.
 
-The first is a mechanism: a system rewards winners with more capacity to win, the winners acquire the standing to write the rules, they write them through their own way of seeing, and the way of seeing then reproduces itself. It is stated in 2024-07 as the law by which societies select power-holders, in 2024-11 as the Ouroboros cycle, in 2025-02 as the selfishness spiral, in 2025-05 as the meta-attractor, in 2026-05 as selection-on-cognition, in 2026-07 as 总体化吸引子, and in 2026-08 as an intervention inside his own agent fleet. The scale changes; the shape does not.
+The first is a mechanism: a system rewards winners with more capacity to win, the winners acquire the standing to write the rules, they write them through their own way of seeing, and the way of seeing then reproduces itself. It is stated in 2024-07 as the law by which societies select power-holders, in 2024-11 as the Ouroboros cycle, in 2025-02 as the selfishness spiral, in 2025-05 as the meta-attractor, in 2026-05 as selection-on-cognition, in 2026-07 as 总体化吸引子, in 2026-08 as an intervention inside his own agent fleet, and in 2026-09 as the sixth chapter of a unified whitepaper. The scale changes; the shape does not.
 
 The second is a refusal of the terminal state. From "the goal is… to ensure the game itself can continue" (2025-03) through "what I'm asking for is not to get into a particular state… but to keep a open loop" (2026-03) to the reduction of an entire framework to one job — 把keep possibilities space open说清楚就行 (2026-07) — the constructive commitment is always to the openness of the space rather than to any point in it. This is also why he keeps retiring his own binaries: the Fork twice, the five principles once, and "expanding the possibility space" in favour of 开 precisely because expansion could be maximised.
 
@@ -248,6 +296,8 @@ The fourth is a method. He builds a mechanism, states it, immediately attacks it
 Web3 and blockchain were the frontier in December 2023 and were deleted from the manifesto three weeks later; the token idea survived without them and reappeared, transformed, as the Token primitive of Spirit–Token–Space in 2025 and as an object-capability model in Bonfire in 2026. The 2022 process ontology of *World of Possibilities* was dormant for four years and returned as the metaphysical floor of both 生生不息论 and the context-runtime specification, which independently re-derives existence as pattern-maintained-through-change. The 2024-11 Ouroboros text was entirely dropped from the 2025 written drafts and had to be recovered from the chat record for this corpus, where it turns out to be more complete than what replaced it. The 2024 enumeration of *many* possible futures was narrowed by the 2026 two-scenario Fork and then restored by Ren's own hand when he caught the narrowing. "Meta-attractor" was coined, formalised, and then found to be used with opposite valence in the same month, and replaced. The Fork was named and retired twice. And the corpus's own most important recovery is still outstanding: two finished artifacts from March and April 2026 — *The Architecture of Wanting* and *Territory Without Border* — exist only on claude.ai, and `_process/LOST-ARTIFACTS.md` says how to get them back.
 
 What was not recovered is the constructive branch's supply side. The diagnosis has twenty-two drafts, a mathematical formalism, a Lean repository and two books. The construction has principles, a protocol, a festival and a set of running systems at personal scale — and one review, commissioned by Ren himself, that lands the sharpest sentence in the whole record: 丰裕公地无主语. The abundance commons has no subject. 设计有了，供给为零 — the design exists, the supply is zero. That gap is the shape of the arc as of September 2026, and it is where the next period would have to start.
+
+Late September changed the shape of that gap without closing it. The constructive half now has an engine: capacity that helps build further capacity, bounded by need. It has an ethics of closing that can be applied at the time. It has six worlds and a city. The two were written in the same days and have not been joined. None of them yet says who builds the first unit of shared provision, or how the passage from here begins. Ren's last ruling of the month puts the remaining weight where his first diagnosis did: on the mind that will direct the capacity.
 
 ---
 

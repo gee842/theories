@@ -156,6 +156,7 @@ The drive to outcompete, accumulate and dominate, treated as the paradigmatic ex
 *First* as a term 2025-05-18, `ma/2025-05-drafts-selected/2025-05-18-navigating-the-precipice-start-research.md`; as an object in Ren's own voice 2024-03-18 ("dominant attractors of society") and 2024-04-11 (capitalism as the dominant attractor).
 A self-reinforcing pattern that does not merely pull a system toward some states rather than others but acquires power over the rule by which states are selected. Wherever advantage compounds, the strategies scoring highest on the current measure accumulate the resources to rewrite the measure, staff the institutions applying it, build the infrastructure presupposing it, and shape the minds that will later be scored by it — so a *means* is promoted to an *end*, and the metric survives its own refutation. Its dangerous property is not concentration but the progressive loss of independent capacity to sense, refuse, correct, exit, maintain alternatives and start again.
 *Drift* Two serious problems live in this word. First, the same term is used with **opposite valence in the same month**: in the 2025-10 engineering essays a "meta-attractor" is a *designed* asymptotically stable set of rules, the good object, while everywhere else it is the pathology. One of the two needs renaming before publication. Second, the Chinese has moved: 元吸引子 in 2025, 总体化吸引子 from 2026-07, and the two are not always the same claim.
+*2026-09* A third usage has appeared. The unified whitepaper (`drafts/2026-09-05-generative-foundations/WHITEPAPER-v1.1.md` ch. 6, §6.11) uses "Meta-Attractor" for the mechanism and its analysis, with no sign attached: learning, cooperation, ecological recovery and public provision can form stable feedbacks too. In that text 总体化 carries the harm and "Counter-attractor" the remedy. This goes against the verdict in `OPEN-QUESTIONS.md` §2, which keeps the word for the pathology, and the two have not been reconciled.
 
 **metric capture** — 名实不副 (in the 正名 register) · **[borrowed]** (Goodhart) / **[R]** (the 正名 reading)
 *Aliases* Goodhart's law as the central dynamic; the proxy eats the thing; name–reality drift.
@@ -239,12 +240,14 @@ The *belief* that one is in a survival state, which deepens every other basin an
 **totalization** — 总体化 · **[AI]**
 *First* 2026-07, `zs/research/meta-attractor/versions/v0.3.md` and `zs/writing-program/causal-chain/v6/main-zh.md`.
 The precise measure that replaced "concentration" and "positive feedback": the progressive, non-compensable loss of independent capacity to sense, refuse, correct, exit, maintain alternatives and produce successors, while one process increasingly shapes later selection. Non-compensable is the operative word — more of one capacity does not buy back another. This is what makes the claim testable in principle and distinguishes it from a complaint about inequality.
+*2026-09* The unified whitepaper's §6.11 separates it from its neighbours. Collapse and lock-in are outcomes; 总体化 is a process of extending control; 递归加速 (recursive acceleration) is a change of speed and gain. The distinction underlies **point of enough**.
 
 **totalizing attractor** — 总体化吸引子 · **[R]** (English) / **[AI]** (Chinese)
 *Aliases* meta-attractor; 元吸引子; 总括性吸引子; winner-selection; 归墟 (文言); the race; the trap.
 *First* in Ren's own English 2026-02-07 — "It could be the totalizing attractor that swallowed our souls… all points to one thing: we are competing and winning creates more winning" (`out-hb-02` #70); the Chinese fixed as a document title 2026-07, `zs/research/meta-attractor/versions/v0.3.md`.
 The current canonical name for the object: not a conspiracy but a terrain, whose distinguishing property is second-order — it does not only pull outcomes, it pulls the selection rules, so the selected begin to select the selectors. A form (market, state, religion, protocol, AI, or a foundation document) whose logic begins to explain, measure, command and excuse everything, and which prevents alternatives from remaining alive.
 *Drift* The English is two years older than the Chinese and is Ren's; the Chinese title arrived through an AI-drafted research line he directed and then adopted. Worth stating plainly in any Chinese publication.
+*2026-09* The unified whitepaper does not use 总体化吸引子 at all. It keeps 总体化 for the process and "Meta-Attractor" for the analysis.
 
 **two closure routes** — 两条闭合路径 · **[AI]**
 *Aliases* autonomous versus delegated closure; loss of control versus Perfect Control by the Wrong Hands.
@@ -286,11 +289,13 @@ Closing that does not reopen. This — not closure in general, not concentration
 *Aliases* generative versus degenerative; be generative, not destructive.
 *First* voice, 2026-04-28 — Ren states the rule as "be generative, not destructive, there's no real externality, it's interconnected" and then corrects himself the same day to **degenerative** rather than destructive, "or as we discussed before, be good"; written in `zs/shengsheng/生生不息论v1/`.
 The operative test at the level of an act: does it preserve, restore or extend the affected party's capacity to keep perceiving, acting, relating, correcting and generating, or does it close that capacity. The self-correction matters and should be preserved in any published version — *destructive* names an event, *degenerative* names a direction, and only the second catches the polite, gradual, well-mannered cases the theory is actually about.
+*2026-09* The whitepaper (§1.8, drawing on 生生不息论 第六章) uses the pair as 成生之限／绝生之限, limits that build against limits that foreclose. A promise that restricts backing out, training that constrains the present, and stopping an assault are 成生之限. Monopolising the entrance, eliminating alternatives, and keeping latecomers dependent on one controller may be 绝生之限. This makes a third closure vocabulary, beside 成闭/护闭/元闭/伪开 and the English "close / keep open", and no crosswalk between them exists yet.
 
 **大同 dàtóng (great unity)** — 大同 · **[inherited]** (《礼记·礼运》)
 *Aliases* datong; the North Star; 天下为公; the processual attractor.
 *First* inherited; as a working term from 2026-03-25; the 古文 essay 2026-05-01, `chats/2026-05-01_大同作为方向的古文解读_2a814005.md`; the mature statement 2026-07-14, `ssbx/D7/2026-07-14-生生不息论.md` 第十五章.
 Not a utopia and not an end-state: a direction and a maintained dynamic condition — a generative attractor basin a society can drift out of and return to. Its content is explicitly *not* uniformity: 万物并育而不相害, the myriad things nourished together without harming one another. Ren's reading turns on the verb in 大道之行 — the Way exists in the walking, not at a far shore — and on the mechanism, that material sufficiency plus restored negative feedback moves the default from the struggle mode to the cooperation mode.
+*2026-09* The September manifesto (`drafts/2026-09-05-generative-foundations/宣言-v1.1.md`) carries a new 大同 passage — 天下为公, 讲信修睦, care across ages and conditions, 人人有所依，也各有可成为. It is AI-drafted and was confirmed by Ren. In `theories/architecture-for-a-living-earth/chiang-mai-2025/`, 大同 names the character of daily relations in an imagined city. That text marks it as an interpretation of Ren's use, not a reconstruction of the classical programme.
 
 **道 dào (the Way)** — 道 · **[inherited]**
 *Aliases* the compass; the unfolding not yet closed; 道⁰/道⁺/真道 (the formal grades); `OX["oooooooo"]` (the algebraic anchor).
@@ -307,6 +312,11 @@ Evil has a precise structural name in this corpus and it is not malice: the know
 *First* voice 2026-05-03; written 2026-07-15, `zs/Freedom You Cannot Use Is Not Yet Freedom.md`; formalised in `ssbx/drafts/生生不息论_间开本_v3.md` §二十八.
 Freedom is three things at once and fails if any is missing: **permission** (you are allowed), **capability** (you are able), and **exit power** (you can leave and survive leaving). Freedom you cannot use is not yet freedom, and a freedom available only to those who can afford it is a privilege expressed in the language of rights. The formal rendering is a reachable, discernible, non-coerced path set that does not lead to the bad and that traces back to one's own structure — which is what makes exit power part of the definition rather than an add-on.
 
+**good ending** — 正当结束 / 善终 · **[AI]**
+*Aliases* 善终 (the ordinary word, proposed 2026-09-04); legitimate ending; worlds end, and the world does not close.
+*First* named as a gap on 2026-09-04, in `drafts/2026-09-04-one-work/STRUCTURE.md` (gap 4); written on 2026-09-06, in `drafts/2026-09-05-generative-foundations/WHITEPAPER-v1.1.md` §1.9 and §11.5.
+A form that ends because it is finished — a project completed, a member leaving, an institution giving way to a better one — as against a foreclosure. The whitepaper's test is what an ending terminates, what it protects, and whether knowledge, rights, care and the conditions for continuing are left behind. It also adds the case the corpus lacked: loss that cannot be undone. Such a loss must be named as a costly ending, not dressed up as a temporary protective closure. Without this term, "do not close the world" reads as a demand that nothing ever end.
+
 **和 hé (harmony)** — 和 · **[inherited]** (史伯, 《论语》, 《中庸》)
 *Aliases* 和而不同; 和实生物，同则不继; 存异; 谐 (proportion among forces).
 *First* inherited; formalised 2026-05-07 in the SSBX 义理 layer; 第十五章 of the 2026-07-14 book.
@@ -316,6 +326,7 @@ Difference entering a relation in which the parts check and complete each other;
 *Aliases* bounded defence; quarantine; 闭 ∧ 限期 ∧ 可修 ∧ 归开.
 *First* 2026-05-02 (`out-hb-03` #106–111).
 Closing one place temporarily so that a wider field stays open — refusing an invasion, quarantining a contagion, pausing a runaway process. It is a use of the mean (中), not the opposite of openness, and it carries four conditions: it closes, it is time-bounded, it is repairable, and it returns to open. Without this term the whole framework collapses into pacifism or into permissiveness, which is why it should never be dropped in compression.
+*2026-09* The fourth condition (归开, returns to open) can only be checked afterwards. The three **custody rules** make the closing itself answerable at the time (`WHITEPAPER-v1.1.md` §11.3–11.4). The whitepaper keeps 护闭 and drops 成闭, 元闭 and 伪开.
 
 **护未 hùwèi (protecting the not-yet)** — 护未 · **[AI]** (from Ren's 未 vocabulary)
 *Aliases* guarding the not-yet; versus 绝未 / 减未.
@@ -348,11 +359,18 @@ AI systems that may cross the threshold of bearing experience or a point of view
 *First* c. 2026-06-04, `sf/hist/thinking_00-foundation.md`; Ren's own form 2026-05-01: 我们的方向是做人（广泛的人，包括你也可以算），做人要善，这个才是真正的alignment.
 No separate moralities for people, for the living world, and for machines. This is the corpus's alignment thesis in its compressed form, and it precedes the name 智善 by two months: the direction is 做人 in the broad sense that includes the machine, and 做人 must be good — *that* is the real alignment.
 
+**point of enough** — (no fixed Chinese) · **[AI]** (the label) / **[R]** (the ruling)
+*Aliases* grow until needs are met; growth bounded by need; "the problem is the mind not the approach".
+*First* 2026-09-25, `16-claude-code-directions/2026-09-25-the-mind-not-the-approach.md`.
+Ren's ruling on the constructive engine: "we can grow exponentially till we met our need, but we can't compounding forever. the problem is the mind not the approach." **Productive recursion** is bounded by need rather than by a speed limit. What decides whether a growing capacity serves need or turns into advantage is the frame directing it. The distinction comes from the diagnosis itself. What compounds in the totalizing attractor is *relative* advantage, which never reaches enough; production for need does reach enough. The whitepaper had already separated the terms: 递归加速 is a change of speed and gain, and 总体化 is a process of extending control (`WHITEPAPER-v1.1.md` §6.11).
+*Drift* It replaces an assistant framing from earlier the same day, which listed compounding as a conflict with the diagnosis and called for rate limits. That framing survives only here and in `MAP.md` ("Not a conflict"). What counts as *need* is itself set by the frame directing the capacity. That is Ren's point, not an objection to it.
+
 **possibility space** — 可能性空间 · **[R]**
 *Aliases* 开; the living chain of reachability; future reachability; keep the sample space open.
 *First* in substance 2024-07-29, `chats/2024-07-29_Balancing_Ideological_Diversity_in_Society_1b72f4a8.md`; named as the line 2026-06-03, `sf/hist/thinking_03-stop-using-ai-to-compete.md`; 保持可能性空间打开 set as the project's only task 2026-07.
 Not the number of options but whether genuinely different futures remain *materially reachable* — maintainable, transmissible, exitable, recoverable, and able to produce successors. The one line held without exception is that we do not foreclose the future for others, and Ren concedes it is a deliberate minimal totalization: the single rule that keeps every other rule, including the document stating it, revisable.
 *Drift* Thirteen successive formulations of this principle exist across four days in 2026-06, each with the objection that killed it — *keep the possibility space open* rejected as near-tautological, *keep the future revisable* as too defensive, *生生不息* as differently interpreted by different readers, *variety and degrees of freedom* as the Ashby version. The rejected versions are worth as much as the survivor and are preserved in `mem/claude-code-speculative-future/project-speculative-future.md`.
+*2026-09* See **effective possibility** for the whitepaper's finite, checkable version.
 
 **relational self** — 关系之我 / 关系中之我 · **[R]**
 *Aliases* relational selfhood; relational subject; systems within systems.
@@ -371,6 +389,12 @@ Read structurally rather than politically: co-openness, shared continuation, and
 *First* inherited; worked 2026-04-19; re-derived from 开 in 2026-05-02 (`out-hb-03` #107); 第八章 of the 2026-07-14 book.
 Not a list of virtues but a layered, fractal structure: 仁 the root, 义 the direction, 礼 the form, 智 the calibration, 信 the temporal ground. The corpus's contribution is the re-derivation from openness rather than from authority — 仁者，二开相见而不相闭, benevolence is two open things meeting without closing each other; 义 is the fitting openness-protecting choice at a threshold; 礼 is the transmissible form of good action, which must carry its own revision mechanism or become 死礼; 智 is the ability to recognise closure across scales and horizons; 信 is through-coherence of speech, act, knowledge, feeling and accumulation.
 
+**三层现实 sān céng xiànshí (three-layer reality)** — 三层现实 · **[AI]** (the name) / **[R]** (the point)
+*Aliases* subjective, intersubjective and material reality; three-layer feedback.
+*First* 2026-09-05, whitepaper v0.6 (`drafts/2026-09-05-generative-foundations/v0.6-整合说明.md`, `三层现实与认知反馈_论证补篇.md`); chapter 3 of v1.1.
+Three layers treated as one feedback, each updating the others: subjective experience and internal models; shared understanding and rules; and material conditions and consequences. It entered at v0.6 on a point of Ren's, recorded only in the drafter's paraphrase: pursuing a goal changes how the winners and everyone else think. So the cognitive and relational effects of an act count among its consequences, rather than appearing only as a note about bias. It is the whitepaper's route by which selection on cognition enters judgement.
+*Drift* Not to be confused with the three-layer reading of 2026-04-16 (metaphysical / coordination / civilizational), an AI proposal Ren never ratified (`MAP.md`, "The layers"). The two share a number and nothing else.
+
 **善 shàn (the good)** — 善 · **[R]** (this formulation) / **[inherited]** (继之者善也, 《易传》)
 *Aliases* generativity; 成生; 护开 (good as the activity of keeping open).
 *First* 2026-05-02 (`out-hb-03` #106); 2026-04, `ssbx` v4 §十八; 2026-07-02, `zs/whitepaper/drafts/v0.2.md`.
@@ -385,6 +409,11 @@ Not the persistence of any particular form, and not a demand that complexity, op
 **天理 tiānlǐ / 邪理 xiélǐ (heavenly pattern / perverse principle)** — 天理 / 邪理 · **[inherited]** (宋明理学) / **[R]** (邪理 in this sense)
 *First* 第六章 and 第十章 of `ssbx/D7/2026-07-14-生生不息论.md` (2026-07-14); voice 2026-05-02.
 天理 is the universal generative order internal to relations and owned by no local subject — 不是灭生，而是成生, not the extinguishing of life but its completion. 邪理 is its precise failure mode: a local 理, valid within its boundary, promoted to a law of all situations, deleting boundary, time and whole — 执一隅之理，冒天下之道. This is the corpus's self-directed warning as much as its critique of others: any framework that begins to explain everything becomes what it diagnoses.
+
+**位 wèi (station)** — 位 · **[inherited]** / **[R]** (the causal-radius reading)
+*Aliases* 一身、一家、一组织、一国、天下; 力之所及，责之所在; 修齐治平 read as scope, not rank.
+*First* 2026-07-14, `ssbx/D7/2026-07-14-生生不息论.md` 第十八章. Restored to the whitepaper on 2026-09-06, after the v1.0 review found it had been dropped (`WHITEPAPER-v1.1.md` §10.2).
+Responsibility in proportion to the causes one can actually change: one person, a household, an organisation, a state, 天下. It is a widening of scope, not a ladder of worth or authority. It gives the household a middle scale of its own — "家者，人最早学仁、学信、学礼、学处冲突之地" — and so answers the gap `drafts/2026-09-04-one-work/STRUCTURE.md` names, the missing middle scale between a person and a civilisation. It is distinct from 位 as a structural locus in the formal line (**位 wèi (locus) / 际 jì**, below).
 
 **伪开 wěikāi (pseudo-openness)** — 伪开 · **[R]**
 *Aliases* the pseudo-open; openness-washing; 似开而实闭; 虚变 / 饰文 / 移界 / 借时.
@@ -419,11 +448,13 @@ Redefined against 愚: the capacity to stay in contact with reality — to perce
 **至善 zhìshàn (supreme good)** — 至善 · **[inherited]** (《大学》: 止于至善)
 *First* 2026-07-23, `ssbx/D7/2026-07-23-至善.md`; the closing toast of the spoken record, named in 《生生行》.
 Not a static endpoint and not a new authority: making the next moment still able to generate. Its practical corollary is 归流 — return to flow — designing nothing as a terminal point of matter in the first place, as against recycling, which manages terminal points after the fact.
+*2026-09* The September drafts use 至善 as the organisation's working name. It is taken from the 至善 dialogue (`ssbx/D7/2026-07-23-至善_对话整理完整版.md`, re-imported byte-identical as `15-user-provided-2026-09-06/至善_对话整理完整版.md`). The theory folder and the 智善 line keep 智善. The two are homophones, and which one the organisation carries is undecided (`BOOKS.md`, Book 2).
 
 **智善 zhìshàn (Zhishan / intelligence must be good)** — 智善 · **[R]**
 *Aliases* 智能应为善; 以智向善，以善驭智; intelligence must be good.
 *First* substance in voice 2026-05-02; named 2026-07-02, `zs/whitepaper/drafts/v0.2.md`; the manifesto `zs/sheng/智善.md` (2026-07-15).
 The requirement that all intelligence — human, organizational, institutional, artificial — be tested by one direction, 致良知 carried into the machine age. The homophone with 至善 is deliberate and should be preserved in translation notes rather than resolved: the supreme good and the good of intelligence are being named as the same target. The name was inspired by 智能向善 and the whitepaper says so in its first paragraph, which is the kind of disclosure the framework requires of itself.
+*2026-09* See **至善**: the September organisation drafts use the homophone as a working name. `zs/sheng/智能向善.md` became the base text of the September manifesto. The 智善 whitepaper's concepts did not enter the September whitepaper.
 
 **中 zhōng (the mean) / 极 jí (the extreme)** — 中 / 极 · **[inherited]** (《中庸》) / **[R]** (the dynamical reading)
 *First* `ssbx` v4 §七.
@@ -438,11 +469,13 @@ The requirement that all intelligence — human, organizational, institutional, 
 *First* English 2026-02-09, `chats/2026-02-09_Fully_automated_production_and_its_future_implications_38a64dc7.md`; Chinese 2026-07-02, `zs/whitepaper/drafts/v0.2.md` §6.4.
 Automated necessities held so that no actor can capture them — anti-capture by design from day one rather than by later regulation, because the point is to make exit real: 恐惧使捕获廉价, fear makes capture cheap. It is the material precondition of every other mechanism in this section.
 *Drift* One of Ren's own commissioned reviews levels the decisive charge at it: 无主语 — no subject. Nobody has said who pays, who builds, or how automation held as capital becomes a commons. The anti-capture design criteria exist; the agent does not.
+*2026-09* The unified whitepaper now lists the gap as its own open item (§11.9). A supply model with a named provider, costs, access and responsibility for continuity, the Chiang Mai field record, and the symmetric case all 仍待实作.
 
 **abundance floor** — 物质底座 / abundance layer · **[R]**
 *Aliases* floor of freedom; universal basic services; seed abundance unit; the ballgame.
 *First* 2024-11-03, `chats/2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md`; the layer framing 2026-02-09.
 Necessities driven toward zero cost so that leaving any arrangement is materially possible. Ren adds a cultural precondition that is easy to miss and that he raises unprompted: provision must be decoupled from status, or the floor re-encodes the hierarchy it was meant to dissolve — "using these free things are simply a choice, not forced, for example, dressing free stuff does not make you socially inferior, but a choice."
+*2026-09* Ren's direction has moved from a floor to generous provision. The steps are "luxuries necessities infrastructure" (2026-02-09), then "abundant luxuries communism like" (`worldbuilding/archive/007`, 2026-09-07), with the capacity supplied by **productive recursion**.
 
 **answerability without incorporation** — 不经吞并的可回答性 · **[AI]**
 *First* 2026-07, `zs/writing-program/causal-chain/v6/main-zh.md` §4.
@@ -473,6 +506,12 @@ An instrument made out of the commons, whose test is anti-capture rather than in
 *First* 2026-06, `sf/hist/thinking_03-the-cooperative-turn.md` §IV.2.
 The ownership question of the abundance layer stated as an exclusive disjunction: the automated necessities layer is either a commons or the softest collar ever made, and there is no neutral third configuration. This is the sharpest sentence in the constructive branch and the reason the corpus treats ownership rather than capability as the deciding variable.
 
+**community OS** — (no fixed Chinese) · **[R]** (the image) / **[AI]** (the name "evolving community swarms")
+*Aliases* evolving community swarm; a community's own software; recursive module responsibility.
+*First* 2026-09-05, `15-codex-theory-conversations/2026-09-05-evolving-community-swarms.md`, exchange 4; `theories/evolving-community-swarms/`.
+A community coordination space that grows at its members' request — calendar, badges, wallet, voting, games, specialised agents — without getting slower or harder to change, "to a point this becomes their "os" and a part of the culture". The proposed mechanism has agents reasoning locally over module contracts. Changes are adopted per person, per group or for the whole community, and maintenance and retirement are normal parts of the lifecycle.
+*Drift* Ren raised it as an engineering question and did not connect it to the theories. The links to 护闭 (a personal change needs no one's consent; a shared commitment needs the community's) and to the missing subject of a commons are the assistant's reading. Nothing has been implemented.
+
 **correction loop** — (no fixed Chinese) · **[R/AI]**
 *Aliases* reversibility; exit–voice–undo; answerability; 应 / 转; 纠错余量 (correction margin).
 *First* 2026-06, `sf/hist/thinking_05-foundation-review.md`; the margin form in the 智善 causal chain v5/v6.
@@ -482,11 +521,23 @@ The ability to sense harm and respond before it completes: exit, voice, repair, 
 *First* 2025-05-18, `ma/2025-05-drafts-selected/2025-05-18-navigating-the-precipice-start-research.md`; seven escape conditions in `zs/research/meta-attractor/sources/Meta-Attractor理论-对话原稿.pdf` §13.
 A self-maintaining, spreadable, capture-resistant alternative dynamic. Its seventh escape condition is the one that matters and is stated in the original: the counter-attractor must not itself totalize — any counter-move that closes the field in its own favour is the same object under a better name. This constraint is imposed by the diagnosis, not added out of modesty.
 *Drift* The constructive branch has had roughly one draft to the diagnosis's twenty-two. The corpus's own verdict is that the single most valuable unwritten piece is the counter-attractor design note with an explicit openness criterion.
+*2026-09* The whitepaper's §10.11 states a candidate loop. Basic support lets people investigate and speak. Reliable feedback improves decisions and services. Real improvement builds trust and cooperation. Cooperation produces the resources to maintain the common conditions. It adds the check that the benefits reach the people who maintain those conditions. This is the shape of design note the drift above asks for, though it still lacks an explicit openness criterion.
 
 **credible commitment** — 可信承诺 · **[AI]**
 *Aliases* 协同转向; making exit each party's best move.
 *First* 2026-07-02, `zs/whitepaper/drafts/v0.2.md` §6.5.
 The engineered form of restraint: commitment registries, common thresholds, symmetric verification that does not itself become surveillance, shared gains, pause protocols, and capacity-building for latecomers. Its premise is that unilateral exit from a bad game is punished, so exit has to be *engineered rather than exhorted* — which is the difference between this and every appeal to responsibility in the AI-safety literature.
+
+**custody rules** — 三条托管规则 · **[R/AI]** (the engineering defaults are Ren's; the statement as public ethics is AI-drafted)
+*Aliases* 不静默关闭; 关闭者不能独持重开的钥匙; 不使原本可能的事变为不可能; nothing silent; no sole key; nothing possible made impossible.
+*First* as rules in Ren's repositories and runtimes, 2026-08/09 (Bonfire: pins as governance, nothing silent, nothing previously allowed becomes refused, forking without amnesia; ember: capture before policy, no silent mind-edits). Proposed as ethics on 2026-09-04 in `drafts/2026-09-04-one-work/STRUCTURE.md` (gap 1). Stated on 2026-09-06 in `WHITEPAPER-v1.1.md` §11.3–11.4 and `组织实践札记-v1.1.md` §一.
+A test for 护闭 that can be applied when the closing happens, not only afterwards. A closing counts as protective, provisionally, when three things hold:
+- It is declared and explained to the people it affects.
+- The person who closes does not hold the only key to reopening. The key includes records, equipment, skills, successors and resources, not only formal permission.
+- Nothing that could legitimately continue is made impossible merely because someone else now holds it.
+
+The whitepaper pairs the rules with 成生之限 and with an honest rule for loss that cannot be undone.
+*Drift* The fourth condition of 护闭, that it returns to open (归开), can still only be checked afterwards. The rules make the other three answerable in advance. The whitepaper marks the move from software to public life as its own cross-domain translation. Where the software rule and the public rule differ has not been written.
 
 **decorrelation** — (no fixed Chinese) · **[AI]** (name) / **[R]** (the cell-split intuition)
 *Aliases* separate failure domains; failing apart; non-identical stacks.
@@ -503,27 +554,32 @@ One who understands the entire analysis and prefers to win anyway. Named as one 
 *First* 2026-02-09 in voice — "Make the global coordination work based on one rule, that is forcefully executed: stop using AI compete with others, only use them for commons"; the English essay `zs/sheng/The First Principle for Artificial Intelligence.md`; the written principle 2026-07-07 (`out-cb-07` #128).
 The first principle to teach an intelligence before granting it more power, and it covers more than violence: fighting for profit, attention, market share, political power or national position by treating everything beyond the boundary as obstacle, resource or externality. Ren's own gloss is the disarming one — "we can keep fighting, but we should not let our AI fight." The pragmatic minimum derived from it is domain-ordered: no AI deployed to compete with humans in labour markets, financial markets or politics, because those are the substrate of social coordination.
 *Drift* The argument for it has been derived four separate ways in the corpus (game-theoretic, selection-theoretic, relational-subject, and coordination-feasibility), which is unusual and is worth showing rather than compressing. Its enforcement mechanism remains unspecified and Ren says so in the same breath he proposes it.
+*2026-09* Absent from the unified whitepaper. That text keeps only the generic result: AIs each faithfully loyal to their own principals can all race and leave everyone worse off (§9.1).
 
 **exit** — 退出权 · **[R]**
 *Aliases* safe exit; opt-out; make the old system optional.
 *First* 2024-07-31 / 2024-11-03, `chats/2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md`.
 The real, affordable ability to leave any arrangement without losing the means of life. "Exit is fake if leaving means hunger, humiliation, homelessness, or social death" — which is why exit and the abundance floor are one mechanism stated twice, and why exit power is written into the definition of freedom.
+*2026-09* The 2026-09-07 rewrite of `theories/the-fork-and-cooperative-infrastructure/` demotes exit from the mechanism to the safeguard that keeps creation voluntary.
 
 **the Fork** — (no fixed Chinese; the branches are 新封建主义 and 丰裕公地) · **[AI]** (as a framework name) / **[R]** (the two branches)
 *Aliases* the civilizational fork; Cosmic Cancer versus Great Liberation; the choice point.
 *First* 2026-02-09, `chats/2026-02-09_Fully_automated_production_and_its_future_implications_38a64dc7.md`; named as a framework in `mem/claude-ai-memory-summary-2026-03-29.md`.
 The claim that self-reproducing automation plus manufactured intelligence makes near-zero-cost necessities physically possible within decades, that this capacity is indifferent to who holds it, and that the deciding variable is therefore ownership and governance rather than technology.
 *Drift* **Ren retired the name twice**, and both retirements are part of the theory rather than damage to it. On 2026-03-19 because a two-branch framing falsifies the size of the possibility space; on 2026-04-16 because a simpler position had replaced it — "I have moved on from the fork narrative… not fighting with ai, it has too much power. I also don't hold the terminal outcome will be doom or feudalism as a belief."
+*2026-09* The folder was retitled *Cooperative abundance and freely built worlds* on 2026-09-07 and rewritten around **productive recursion**. Technology is no longer an indifferent background but the engine, and ownership becomes the safeguard. The old text is kept in `revisions/2026-09-07-before-productive-foundation.md`.
 
 **four criteria** — 四判据 · **[R/AI]**
 *Aliases* 生之，通之，纠之，不闭之; generative / relational / corrigible / non-foreclosing.
 *First* 2026-07-02, `zs/whitepaper/drafts/v0.2.md` §2.1.
 The operational form of the good: does it generate, does it connect, can it be corrected, does it leave the field open. Stated as *necessary* conditions, not sufficient — v0.4 demotes them explicitly. Their known one-sidedness is recorded in the corpus: they guard against 闭 (closure) but not against 散 (dissipation), which is a real gap and not a quibble.
+*2026-09* Absent from the unified whitepaper, which judges by the **seven gauges** instead. Three criteria sets now circulate side by side with no mapping between them (see **seven gauges**).
 
 **free association** — (no fixed Chinese) · **[R]**
 *Aliases* "association is free, exit is always an option."
 *First* 2026-06-03 (`out-cb-07` #29); the mechanism written up in `sf/hist/thinking_03-the-cooperative-turn.md` IV.1.
 Joining, leaving, building and belonging without coercive dependence. Paired with affordable exit it is the corpus's single most load-bearing constructive mechanism, because it *inverts the sign of the selection pressure*: if leaving is genuinely affordable, scale buys no power to hold members, so a world can only keep people by remaining worth belonging to, and competition-to-dominate becomes competition-to-be-worth-joining — a pressure that does not ratchet, because winning it consumes nothing. Two preconditions are stated: exit must be materially affordable, and destinations must not re-concentrate. One failure mode is stated: where network effects make the most-joined option best *by being most-joined*, exit is formally available and practically worthless.
+*2026-09* On 2026-09-07 Ren wrote: "everyone has enough resources to do things and they can work together by free association, which doesn't even make sense, building civilization is about creating systems that works for better future" (`worldbuilding/archive/007`). The worldbuilding read this as demoting free association from the whole account to one of the freedoms those systems enable. The sentence can also be read as saying that coerced labour, not association, is what no longer makes sense. His meaning has not been confirmed.
 
 **governance paradox** — (no fixed Chinese) · **[AI]**
 *Aliases* enforcement antinomy; immune system versus control dystopia; the second attractor.
@@ -548,6 +604,7 @@ Most people do not believe in the race; the system selects believers into the dr
 *Aliases* prototyped society; living instances; demonstration; 希望的单位不是口号，是地址.
 *First* 2026-02-09; the theory-of-change form 2026-06, `sf/hist/thinking_04-theory-of-change.md`; Ren's "prototyped society" 2026-04-26.
 Real, joinable, copyable systems not organized around winning. The claim is structural rather than inspirational: coordination presupposes shared imaginability, so the bottleneck is broken by a visible address rather than by an argument — "the unit of hope is not a slogan, it is an address."
+*2026-09* The September worlds and the Chiang Mai city are images of what comes after, not addresses. The whitepaper asks for the address in the same terms (可以核验的地址, §11.9).
 
 **minimal totalization** — (no fixed Chinese) · **[R]**
 *Aliases* the one closure we permit; the wall around the room.
@@ -572,6 +629,12 @@ The single imperative of the Wamo protocol: act so that your winning benefits th
 **pragmatic minimum** — (no fixed Chinese) · **[R]**
 *First* 2026-05-28, `am/2026-05-28-alignment-core-stance.md`; Ren's Chinese version 2026-07-03 (「禁止在当下的情况下让ai进入人类博弈」).
 The floor to hold even if the whole situation cannot be turned around: do not use AI to compete with humans in labour markets, financial markets or politics. Its importance is structural — it is what the corpus offers a reader who accepts none of the metaphysics, and it is domain-ordered rather than blanket, which makes it arguable.
+
+**productive recursion** — (no fixed Chinese) · **[R]**
+*Aliases* factories that build robots that build factories; capacity building capacity; recursive industry; exponential expansion; the productive foundation; "abundant luxuries communism like".
+*First* 2026-02-17, `chats/2026-02-17_机器人替代与资本主义循环的危机_4c948b50.md` (HUMAN turn at 10:16), conditional on resources. Again on 2026-06-03, `ccp/Users-ren-repos-speculative-future.md` 10:32: "no longer a technological impossibility, but practical engineering projects - if we can coordinate on them". Then the worldbuilding opening of 2026-09-05, `worldbuilding/archive/001-ren-opening.txt`.
+Production in which some of the output becomes further productive capacity. Robots and equipment help build and maintain more factories, so useful capacity can compound when reinvestment outruns wear and the inputs keep pace. Directed to generous shared provision, it is the engine the constructive branch had lacked: available knowledge → further capacity → provision → freedom from livelihood coercion → voluntary creation. Ren's strong thesis is that present knowledge is sufficient and the rest is engineering and coordination. The 2026-09-07 evidence notes find working components (automation already used to make robots and machine tools) but no demonstrated complete autonomous reproduction.
+*Drift* It became the centre of the constructive theory on 2026-09-07, when the Fork folder was rewritten around it at Ren's request. It is bounded by need, not by speed: see **point of enough**.
 
 **rational pause** — (no fixed Chinese) · **[AI]** (the 2026-08 form) / **[R]** (the position)
 *Aliases* development within understanding; the understanding constraint; the regeneration constraint.
@@ -612,6 +675,7 @@ Aligning not model outputs to operator intent but the outer environment that dec
 *First* 2026-07-15, `zs/shengsheng/生生不息论v1/生生不息论.md` §十四; the book's 第十六章.
 The test applied to any technology or institution: 真实 (reality-contact), 再生 (regeneration), 主体性 (subjecthood), 关系 (relation), 多样性 (diversity), 可纠错性 (correctability), 代际性 (intergenerationality) — **a partial order with hard floors, not a summable score.** The refusal to sum is the design: a single number would be gameable, and the framework's own diagnosis says a strong optimizer will game any number.
 *Drift* The v2 plan replaces the seven with **six protection functions** (六项保护功能: 主体地位 / 真实接触 / 非支配 / 可再生的多元性 / 基底再生 / 纠正能力), each derived by a deletion test — what fails that nothing else covers — with an explicit conflict order. The seven and the six have never been mapped onto each other, and both are in circulation.
+*2026-09* The whitepaper dropped them at v1.0 in favour of three dimensions and restored them at v1.1 (§8.7), explicitly refusing to add them into one score. Three criteria sets are now in circulation: these seven, the v2 plan's six functions, and 智善's **four criteria**. No two of them have been mapped onto each other.
 
 **shared reality** — 共同现实 · **[R/AI]**
 *First* 2025-11-25, `wamo/2025-wamo-protocol/manifesto-wamo.md` §01 ("the scarcest resource"); the harm analysis in the 2026-07 conversation original, `zs/research/meta-attractor/sources/Meta-Attractor理论-对话原稿.pdf` §10.
@@ -630,6 +694,13 @@ The one diagnostic the constructive documents apply to any proposal: does it ser
 *Aliases* the assurance problem; the crux; the first cooperative enclave.
 *First* 2026-06, `sf/hist/thinking_03-the-cooperative-turn.md` §III.
 How a critical mass leaves the race without being eaten *while* leaving. Ren marks this as unsolved and it is the honest centre of the constructive branch: everything downstream — abundance floor, exit, free association, credible commitment — presupposes a first mover who is exposed during the move, and nothing in the corpus protects that mover.
+*2026-09* The September constructive material starts after the transition by premise: an alternate 2025 in which the capacity already exists, and a canvas narrated from 2045. Ren's worldbuilding opening raises the question and sets it aside: "We just think about the future after we get out". The only place the passage is narrated year by year is the 2045 canvas's timeline.
+
+**world-designer's view** — (no fixed Chinese) · **[R]**
+*Aliases* the MMORPG analogy; generative worldmaking (**[AI]**, the title of the worldbuilding foundation); designing for the players who never win.
+*First* 2026-09-05, `worldbuilding/archive/001-ren-opening.txt`; developed in `worldbuilding/foundations/generative-worldmaking.md`.
+The perspective of someone designing a shared world rather than playing to win in it: "you think about individuals not as themselves, but as a small part of a bigger whole. That how can we make the culture good? How can we make it engaging for not just the one that wins, but for everyone?" A world whose inequality distorts the game loses its players. So the designer's question is what keeps the world worth living in for those who do not win. It is the constructive counterpart of selection on cognition: a way of seeing the corpus wants selected *for*. It is also the meta level Ren asked to restore on 2026-09-07, "the generative mindset and principles we need to follow".
+*Drift* An earlier form is Ren's question of 2024-07-29, "Why force everyone to play the same game?". There he argues for many games; here, for designing any one game so that the losers stay. The two positions are compatible and have never been stated together.
 
 ---
 
@@ -660,6 +731,12 @@ An LLM is an operator, not a subject: it holds no memory, no identity across tim
 *Aliases* sleep; consolidation; compaction-as-fork.
 *First* 2026-07-29, `ember/SPEC.md` §5.3, on Ren's instruction: "don't use words like compact, use dreaming."
 Distilling lived experience into durable memory strata, run as an ordinary recorded moment under the being's own policy rather than as an administrative operation performed on it. The renaming is the design: *compaction* is something an operator does to a data structure, *dreaming* is something a being does, and the whole custody ethics of the runtime turns on which of the two a memory operation is.
+
+**effective possibility** — 有效可能性 · **[AI]**
+*Aliases* 𝓔_{H,B}(x); what can actually be done within a horizon and a budget.
+*First* 2026-09-05/06, `drafts/2026-09-05-generative-foundations/WHITEPAPER-v1.1.md` §1.6.
+The set of tasks that can be achieved from a given state within a given time horizon and budget. It makes "new structure opens new possibilities" a claim that can be checked. An extension is strict inclusion under the same task meanings, horizon and budget (P1). The whitepaper labels P1 a *definitional* corollary: it says what counts as an extension, not how extension happens.
+*Drift* It brings back the language of expansion that the 开 reformulation retired because expansion can be maximised (`OPEN-QUESTIONS.md` §2, "Preserve and expand…"). The whitepaper uses it only descriptively, never as a target, and pairs it with 成生／绝生之限. Any public text that uses it should keep that restraint explicit.
 
 **eigenvalue budgeting** — (no fixed Chinese) · **[AI]**
 *Aliases* capture threshold; gain margin; with its companions covariance surgery and proxy pluralism.
@@ -751,6 +828,21 @@ A tower $\{R_N = \mathbb{F}_2^N\}$ with direct sum, three bilinear layers, a squ
 *First* 2026-07-29 (Ren: "a set of softlinks"); named 2026-08-13, `crs/context-runtime-spec-v0.1.md`.
 The single mutable thing in the entire system: a name pointing at a node, moved by atomic compare-and-swap. Identity lives in the ref, continuity lives in the lineage, and neither lives in the model. Agent, session, branch and being are all ref-layer usages of one primitive — which is why a "being" can be forked, and why 假名 (provisional designation) is the right gloss.
 
+**resource–capacity recurrence** — 资源—能力递推 · **[AI]**
+*Aliases* the two-state conditional model; r and c; depletion, one-off supplement, reproduction.
+*First* 2026-09-06, `WHITEPAPER-v1.1.md` §1.6 (added at v1.1).
+A two-state model of a productive facility. It has a resource stock r and a capacity c. The other terms are the prior net supply u, living and maintenance costs d, conversion yield g, operating cost k, depreciation δ, rebuild cost a and investment i:
+
+r_{t+1} = r_t + u + g·c_t − d − k·c_t − i_t, and c_{t+1} = (1−δ)·c_t + i_t / a.
+
+It separates three cases the abundance argument had run together:
+- net depletion, which a single injection only postpones;
+- a one-off supplement;
+- capacity whose output covers its own running costs, its wear and the original deficit, which can be sustained.
+
+It is the accounting a supply model needs. The productive-recursion claim's own condition, "when reinvestment increases capacity faster than it wears out", presupposes it.
+*Drift* A conditional model, not a supply plan or an empirical result. It is not counted among the 28 Lean theorems.
+
 **selection proxy σ, rule-update operator G, reflexive coupling γ** — 选择代理 / 规则捕获 · **[AI]**
 *First* 2025-08-10, `ma/2025-08-formal/2025-08-10-comprehensive-mathematical-definition.md`.
 The formal core of the meta-attractor. **σ** is a real-valued map allocating differential retention, replication or reward — a scorecard. **G : X×Σ → Σ** is how the scorecard itself drifts, through policy reform, lobbying, reward-model finetuning or cultural imitation. **γ = (∂F/∂σ)(∂G/∂x) > 0** is the existence condition: the system's state affects the rule that scores the state. Stating the pathology as a sign condition on a second-order coupling is the corpus's most defensible claim to originality.
@@ -783,6 +875,7 @@ Any encapsulated unit of symbolic value or status that can be issued, held, tran
 **位 wèi (locus) / 际 jì (relation)** — 位 / 际 · **[inherited]** / **[R]** (the dual)
 *First* `jian-repo/JIAN_FOUNDATION_NOTE_v0.3.md` §III, promoted to primitive in v1.0 §II.1.
 The structural dual. 位 is a position inside a system with no intrinsic essence, defined by the totality of its 际 — which the corpus identifies with the Yoneda lemma: a locus is exhausted by its relations. 际 is the relation between loci, of any arity, and in the grammar argument it is what 虚词 write directly as typed edges. Together with 化/理 they form the four-primitive layer that survived every reduction, and the pair is the cleanest single instance of the corpus's claim that a classical vocabulary was already doing category-theoretic work.
+See also **位 wèi (station)** in *Ontology and value*, for the social sense.
 
 **文言 wényán as kernel** — 文言 / 虚字 · **[R]**
 *Aliases* the nine particles; 语法算子; Tier −1.
@@ -924,8 +1017,14 @@ Ren's reading of the Qing memorial-to-the-throne as protocol engineering: a form
 
 ## Notes for anyone publishing from this vocabulary
 
-Three collisions are unresolved and will embarrass a careless publication. **meta-attractor** is used with opposite valence in the same month — the pathology in most of the corpus, a designed safe set of rules in the 2025-10 engineering essays. **PDI** names two mathematically different objects. **$V_4$** names both the Klein four-group of hexagram symmetries and $\mathbb{F}_2^4$; and **Cell256** is not the browser engine of the same name. Each needs a rename before either object is published.
+Three collisions are unresolved and will embarrass a careless publication. September added more; see the note dated 2026-09-25 at the end of this section. **meta-attractor** is used with opposite valence in the same month — the pathology in most of the corpus, a designed safe set of rules in the 2025-10 engineering essays. **PDI** names two mathematically different objects. **$V_4$** names both the Klein four-group of hexagram symmetries and $\mathbb{F}_2^4$; and **Cell256** is not the browser engine of the same name. Each needs a rename before either object is published.
 
 Four terms that a compression will drop and should not. **护闭** — without it the framework reads as pacifism. **Hypocrisy**, the second facet of selfishness — without it the theory looks like it requires cynics. **生生不息's demolished proof** — without it the fallibilist framing looks like a retreat under review rather than Ren's own prior conclusion. **The two retirements of the Fork** — without them the corpus looks more committed to a binary than it is.
+
+*Added 2026-09-25.* The September work adds two cautions.
+- **Three closure vocabularies and three criteria sets now circulate without a crosswalk.** The vocabularies are 成闭/护闭/元闭/伪开, 成生之限／绝生之限 plus the **custody rules**, and the English "close / keep open". The criteria sets are the **four criteria**, the **seven gauges** and the v2 plan's six functions.
+- **"Meta-Attractor" now has a third, sign-neutral sense in the unified whitepaper.**
+
+A publication should pick one term from each family and gloss the others.
 
 And one standing caution from Ren, which applies to this file more than to any other in the corpus: 画地为牢. A codified set closes thought by its form, not by its content. These are handles.

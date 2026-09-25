@@ -8,7 +8,7 @@
   - *What it is: a founding text for an organisation that does not yet exist.*
   - *What it covers: parts of Books 1, 2 and 4, in one argument, in numbered propositions.*
   - *Status in this plan: it is not a book. It is the Chinese reference apparatus the books can cite, as argued under "What is not a book" below.*
-  - *The recorded loss: it drops the 智善 line's own concepts and does not record the drop. That bears directly on Book 2.*
+  - *The unrecorded loss: it drops the concepts of the 智善 whitepaper and research line and does not record the drop, although its manifesto is the 智善 cluster's own July text. That bears directly on Book 2.*
 - *The constructive half's first sustained development.*
   - *The Fork folder was rewritten around a productive engine (2026-09-07).*
   - *A worldbuilding project was opened, with six worlds and a friends' atlas in five editions. Ren judged the atlas short of what he wanted (diagnosis, 2026-09-10).*

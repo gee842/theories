@@ -2,7 +2,7 @@
 
 Everything unresolved in this corpus, gathered and ranked: the questions the whole programme rests on, the places where it contradicts itself, the questions Ren asked and nobody answered, the points where a hostile reader lands the first blow, and the empirical claims that have never been tested.
 
-**How this was assembled.** Every canonical theory document in `theories/<slug>/` carries an *Open questions and critiques* section with two halves — objections raised inside the sources (by Ren, by commissioned reviewers, by red teams) and objections found by reading. This file merges all fifteen of those, adds the questions Ren poses verbatim in `_process/reading-notes/out-hb-*.md` and `out-cb-*.md`, and orders the result by how much of the programme depends on each item. Nothing here is new criticism invented for the occasion; where a judgement is this document's rather than a source's, it says so.
+**How this was assembled.** Every canonical theory document in `theories/<slug>/` carries an *Open questions and critiques* section with two halves — objections raised inside the sources (by Ren, by commissioned reviewers, by red teams) and objections found by reading. This file merges all fifteen of those (the two theory folders opened in September, and the September drafts, were added on 2026-09-25 as dated notes), adds the questions Ren poses verbatim in `_process/reading-notes/out-hb-*.md` and `out-cb-*.md`, and orders the result by how much of the programme depends on each item. Nothing here is new criticism invented for the occasion; where a judgement is this document's rather than a source's, it says so.
 
 **How to read it.** Citations to source documents are relative to `/Users/ren/theories/sources/`; theory documents are cited as `theories/<slug>/`; the reading notes as `_process/reading-notes/out-*.md`. Quotations from Ren are verbatim, dated, and language-marked; his typos are kept. Where a formulation is AI-drafted from his ideas or supplied by a reviewer, that is marked, because for several of the items below the *authorship* of the objection is part of its weight.
 
@@ -12,7 +12,7 @@ One framing note before the list. This corpus is unusual in that most of its sha
 
 ## 1. The load-bearing unknowns
 
-Six questions. The whole programme — diagnosis, prescription and method alike — is downstream of them. They are ranked by how much collapses if the answer goes the wrong way, not by tractability; the tractable ones are not the important ones.
+Six questions, and a seventh added on 2026-09-25. The whole programme — diagnosis, prescription and method alike — is downstream of them. They are ranked by how much collapses if the answer goes the wrong way, not by tractability; the tractable ones are not the important ones.
 
 For each: why it matters, what the corpus currently says, and what would settle it.
 
@@ -29,6 +29,15 @@ The most honest line in the corpus about this is Ren's own, recorded verbatim as
 **What would settle it.** Not an argument — a worked case with numbers. Three things, in order of cost. (a) A formal model of the assurance game with the actual asymmetry in it: n players, heterogeneous beliefs about others' compliance, a verification technology with a cost and a false-negative rate, and an exit payoff that depends on how many have already exited. The question the model has to answer is what the critical mass actually is and what verification accuracy makes it reachable — the corpus asserts a threshold exists and never estimates it. (b) A historical base rate: the corpus already names four candidate precedents — Berg's unilateral freeze before Asilomar, the reciprocated freezes before the test-ban treaties, the 1961 moratorium collapse for want of verification, and Ostrom's commons regimes growing from costly signalling among appropriators (`05-alignment-and-moloch/2026-08-22-development-within-understanding-position-paper.md`). Nobody has done the condition-by-condition comparison the second professional review demanded for the smallpox precedent, and doing it for all four would convert "precedent proves the category feasible" into a claim about *which* conditions carried the precedent. (c) One live instrument: a commitment registry with real signatories and a published verification method, run for a year, would produce the only primary data the corpus could ever have on this.
 
 **This document's judgement.** (a) and (b) are a month of work each and would materially change what can be claimed. (c) is the theory's own test of itself and, by 智善's rule 知而不行，只是未知 ("to know and not act is not yet to know"), the corpus is currently failing it.
+
+**2026-09-25.** September bracketed the transition from both sides and still did not enter it.
+
+- **The diagnosis describes the present.** The new constructive material describes what comes after.
+- **The worlds start after the transition by premise.** Chiang Mai 2025 is set in an alternate 2025 in which fusion and construction robots already exist. *Generative Chiang Mai 2045* is narrated from 2045 looking back.
+- **Ren set the question aside himself.** His worldbuilding opening raises it — *"But how does the transition happen? And how can we actually try to navigate this without destroying ourselves?"* — and then puts it down: *"We just think about the future after we get out"* (`worldbuilding/archive/001-ren-opening.txt`).
+- **The atlas lacks it from the reader's side.** Its 2026-09-10 diagnosis found no departure point: no present trajectory, no trap, no urgency.
+- **One timeline narrates the passage, as fiction.** The only year-by-year account of the passage anywhere in the corpus is the 2045 canvas's timeline (`output/pdf/generative-chiang-mai-2045.md`): shared kitchens, repair spaces, gardens and watershed projects in 2026–2029, then public investment in shared provision in 2030–2034. It is a worksheet whose institutional details it labels as proposals.
+- **What would settle it has not changed.** One addition would help: a book or document of the worlds that opens in the present, with the first year of the passage in one real place.
 
 ### 2. Whether the lock is cognitive or participatory
 
@@ -58,6 +67,14 @@ Two further gaps compound it. "Non-capturable in practice" has criteria but no v
 
 **This document's judgement.** Of the six unknowns this is the most tractable and the least worked, and it is where the corpus is most vulnerable to the charge that it is diagnosis wearing a prescription's clothes. One worked supply model would do more for the programme's credibility than another round of criteria.
 
+**2026-09-25.** Three developments make the question narrower and harder to avoid.
+
+- **The branch put production first.** On 2026-09-07, at Ren's request, `theories/the-fork-and-cooperative-infrastructure/` was rewritten around productive recursion: capacity that helps build further capacity, pointed at generous provision. Ownership became the safeguard rather than the mechanism. Two bounded evidence notes find working components (automation already used to make robots and machine tools) and no demonstrated complete autonomous reproduction.
+- **The whitepaper made the item its own.** The unified whitepaper (`drafts/2026-09-05-generative-foundations/WHITEPAPER-v1.1.md`) asks the question in this item's words and names the first step: a supply model with a named provider, costs, access and responsibility for continuity (§11.9). Its §1.6 recurrence supplies the bookkeeping. It shows whether a unit reproduces its capacity or only postpones a deficit with a one-off injection.
+- **The place is now obvious.** Chiang Mai: where Ren is, where the city was imagined, and where the field record is owed.
+
+The supply model in (a) above now has an engine, an accounting form and a place. It still has no payer.
+
 ### 4. Whether a counter-attractor can avoid becoming a new totalization
 
 **Why it matters.** It is a coherence condition on the entire positive programme. The meta-attractor is defined by a second-order property — it does not merely pull outcomes, it captures the rule by which outcomes are selected, and its measure is the progressive loss of independent capacity to sense, refuse, correct, exit, maintain alternatives and start again. By that definition, any counter-move that succeeds broadly enough to close the field in its own favour *is the same object under a better name*. The corpus states this against itself: NP holds that counter-attractors "may themselves need to be exopoietic in a constructive sense"; V32 says defectors must not be allowed to re-ignite the old attractor and speaks of civilization as "a unified organism"; and LONG wants Wamo to become "the dominant civilizational attractor". Each of those, taken with the definition, describes a totalizer.
@@ -69,6 +86,15 @@ So the question is largely answered in principle. What is genuinely open is whet
 **What would settle it.** A stated, checkable openness criterion attached to the constructive proposals themselves, plus one adversarial application. The corpus's own materials supply the criterion: 伪开 (pseudo-openness) is defined as the conjunction of 似开 (having the appearance of openness) and 实闭 (closure that is verifiable and survives audit) — a definition with the useful property that it is checkable rather than rhetorical. Run the abundance commons, the Wamo protocol, the museum's curatorial governance and 智善's own publication apparatus through it and publish the results. Second, the north-star test the integration document already wrote and nobody has used: **does this make exiting bad games easier, or only make explaining everything easier?**
 
 **This document's judgement.** This is the item where the corpus is closest to done and furthest from having said so. The single highest-value edit in the whole programme is a short counter-attractor design note that states the openness criterion, applies 伪开 to the corpus's own proposals, and is then cited by every constructive document. It is named as the second-most-valuable missing piece in `theories/meta-attractor/` and has not been written.
+
+**2026-09-25.** The unified whitepaper's §10.11 states a candidate loop for a counter-attractor that can reproduce itself:
+
+- basic support lets people investigate and speak;
+- reliable feedback improves decisions and services;
+- real improvement builds trust and cooperation;
+- cooperation produces the resources to maintain the common conditions.
+
+It adds the check that the benefits reach the people who maintain those conditions. It does not apply 伪开, which it drops. But its three custody rules (§11.4) are a checkable criterion of the kind this item asks for, and they could be run against the corpus's own proposals instead.
 
 ### 5. What makes a recovered frame resistant to being metabolised
 
@@ -101,6 +127,31 @@ The 2024 answer to the same question, which the 2026 material quietly requires a
 **What would settle it.** Nothing settles a probability estimate over an unmodelled process, and the corpus should stop treating it as a question awaiting an answer. What it can do is convert it into a design constraint, which is what the other five unknowns are already doing without saying so: item 2 asks what would change behaviour in someone who already sees; item 5 asks what lets a frame refuse the system that would adopt it; item 4 asks for a checkable test the corpus can fail. Those three are the operational content of Ren's question. The honest statement for any published version is that the diagnosis is a claim about the present condition rather than a law, that the authors are inside it, and that the corpus's answer is procedural — public corrigibility, symmetric application, a dissolution clause, and a north-star test it can fail — rather than epistemic.
 
 **This document's judgement.** This question should be the *preface* of any published version, not a footnote. It is also the strongest thing the corpus has to offer a skeptical reader: a framework that names its own capture condition and installs machinery against it is doing something almost nothing else in this genre does. Stated as a preface it is a strength; left unstated it is the hole the first hostile reviewer will find.
+
+### 7. How the mind that uses the capacity is formed (added 2026-09-25)
+
+**Why it matters.** On 2026-09-25 Ren moved the constructive branch's central risk from the engine to the mind: **"this isn't the problem - how we can use it wisely, is the key. we can grow exponentially till we met our need, but we can't compounding forever. the problem is the mind not the approach"** (`16-claude-code-directions/2026-09-25-the-mind-not-the-approach.md`).
+
+The engine is productive recursion pointed at generous provision (`theories/the-fork-and-cooperative-infrastructure/`), and it is bounded by need. What compounds in the diagnosis is relative advantage, which never reaches enough. Whether a growing capacity stops at enough or turns into advantage is decided by the frame directing it.
+
+So the constructive programme now depends on a question the diagnosis poses and never answers constructively. How is a mind formed that uses great capacity wisely? And how is it kept from being selected out while the capacity grows? This is item 6 turned outward. Item 6 asks whether the diagnosing subject can escape; this asks whether the directing subject can be made.
+
+**What the corpus says.** More than it says on most items, in pieces that have never been joined:
+
+- **The diagnosis.** Minds are selected and shaped by the environment that rewards them: narrative-value frames, selection on cognition, 铸心之门.
+- **Environment makes mind.** Narrative is the interface to the drives, so the environment is where to intervene (`theories/drives-narrative-attractors-and-mind/`).
+- **Cultivation.** 修身 and 教化 in 生生不息论. The whitepaper's §10.6 puts 良知, 修身 and 真善美 into daily practice. Its §11.6 asks an organisation to watch what its meetings, rewards and shared stories make easier to keep.
+- **The world-designer's view.** Design for the players who never win (`worldbuilding/archive/001-ren-opening.txt`).
+- **The watershed game.** An AI-drafted scene in `theories/architecture-for-a-living-earth/chiang-mai-2025/`: a points system teaches the wrong thing, and the community sees it and revises it.
+
+None of them makes the join. The constructive texts describe the engine and the worlds. They never say how the minds that will direct them are formed, or what protects that formation, during the passage, from the selection the diagnosis describes.
+
+**What would settle it.** Not a proof. Three things would move it.
+- **(a) A text joining the engine to the account of how minds are formed.** Because what counts as *enough* is set by the frame, the supply model of item 3 needs a stated standard of need, and an account of who sets it and how it is kept from drifting.
+- **(b) The corpus's own experiments, turned on this question.** One: the watershed-game pattern — reward, observe what the reward teaches, revise — run as a real practice in one Chiang Mai association, with before and after recorded. Two: the good-bot two-arm trial of item 2, which already tests whether seeing the loop changes behaviour.
+- **(c) Historical cases of abundance that did not turn into advantage.** That means a commons bounded by need that stayed bounded, and what formed and held its members' frame. Item 5's dataset of traditions is the same work.
+
+**This document's judgement.** Ren's ruling is right on the corpus's own terms, and it sharpens the constructive task rather than softening it. The engine is the part with evidence notes. The mind was always the hard part, and it is the part the diagnosis says the present selects against. The constructive texts should state this as their central open item, in place of the rate question that an earlier draft of `MAP.md` raised on the same day.
 
 ---
 
@@ -137,6 +188,8 @@ Genuine disagreements, not loose ends: places where two documents, two versions 
 **The contradiction.** The same word carries opposite valence in documents written weeks apart, and the conflict is never acknowledged. Both usages are formally coherent — a stable set in rule space is the same object whether the fast attractors it induces are safe or catastrophic — which is exactly why publishing both under one word destroys the handle.
 
 **Verdict.** Keep "meta-attractor" for the pathology; it is the sense that carries the diagnosis, the sense the Chinese line uses, and the sense every other theory in the corpus imports. Coin a distinct term for the engineered region — the corpus's own vocabulary already has candidates in 护开 (protecting the open) and the viability-kernel language of the control layer. This is a cheap fix and it is blocking publication of the theory as a single thing.
+
+**2026-09-25.** A third sense has appeared, and it goes against this verdict. The unified whitepaper (`drafts/2026-09-05-generative-foundations/WHITEPAPER-v1.1.md` ch. 6) uses "Meta-Attractor" for the mechanism and its analysis, with no sign attached. Learning, cooperation, ecological recovery and public provision can form stable feedbacks too (§6.11). The harm goes to 总体化, and the remedy to "Counter-attractor". That is a usable ruling, the reverse of this one. The organisation's two founding texts cannot both stand, so one of the two rulings has to be adopted explicitly.
 
 ### Plurality versus 大同
 
@@ -222,11 +275,48 @@ Genuine disagreements, not loose ends: places where two documents, two versions 
 
 **Verdict.** The second is the corrected version, and the 开 reformulation of 2026-05-02 exists precisely to fix the first — "expansion" sounds maximizable, and the whole Chinese treatment insists 善不在于最大化什么，善在于不闭何处 (the good is not in maximizing anything, it is in not closing anywhere). The English texts kept the expansion verb, the alignment paper's engineering advice still says "expand possibility space at all scales", and the correction never propagated. **Every English document should be swept for the expansion verb.** The corrected formulation is available: openness is a floor, not a target.
 
+**2026-09-25.** The unified whitepaper brings back the verb in a disciplined form. It defines *effective possibility* (有效可能性) as what can be achieved within a horizon and a budget. Its P1, "extension of effective possibility", is labelled a *definitional* corollary: it says what counts as extension, not that extension is the aim (§1.6). Used that way it is compatible with the verdict above. The sweep should check that it stays that way wherever it is quoted.
+
 ### Wamo as "the dominant civilizational attractor"
 
 **The collision.** LONG wants the logic of Wamo to become the dominant civilizational attractor; the rest of the corpus prizes leaving things more possible and warns that a dominant attractor is the object being diagnosed. Related: the v7/LONG "Two Gods" framing reduces v1.0's plural ideological map to a binary and leads with negation ("Defeat Moloch"), against Ren's own stated preferences, and the 2023 Walue "Plurality" was dropped without comment along with his 2024 observation that a thousand participants had a thousand Wamos — that plural readings were part of what made the coordination work.
 
 **Verdict.** The corpus contains the better answer in Ren's own words and the manifesto does not use it: "as long as we keep the possibility space open… as long as we recognize the things that will lead to an end, like totalizing attractors" (2026-06-03). Wamo should be positioned as a meta-level condition that keeps many attractors viable, not as a competing attractor of the same kind — and the plural-readings observation should be restored, because it is evidence for the protocol rather than decoration.
+
+### The unified whitepaper and the 智善 whitepaper (added 2026-09-25)
+
+**The collision.** Both are founding texts for the same organisation.
+- **The July text.** `06-zhishan/whitepaper/drafts/v0.4.md` grounds the good in 生之，通之，纠之，不闭之 and defines evil structurally, as the gate. It names 总体化吸引子 and argues for 不代人相斗, 行星技术 and 善不姓国.
+- **The September text.** `drafts/2026-09-05-generative-foundations/WHITEPAPER-v1.1.md` calls itself unified. It contains none of those concepts, and judges instead by 七尺, the R1–R4 and N0–N6 chain, and the custody rules.
+- **How they connect.** The September manifesto *is* the 智善 cluster's own text of 2026-07-15. But the September argument never draws on `06-zhishan/whitepaper/` or `06-zhishan/research/`. Its source appendix (C.1) records other exclusions and not this one.
+
+**Verdict.** It is not yet a contradiction of substance, because the September text never engages the July one. It is an unrecorded omission, which by Ren's standing rule against lossy consolidation is worse. Either the whitepaper absorbs the 智善 concepts, or Appendix C.1 records each omission with its reason. Until then the organisation has two founding arguments with different criteria for the good.
+
+### Four criteria, seven gauges, six functions (added 2026-09-25)
+
+**The collision.** Three sets of criteria for the good now circulate:
+- **智善's four** (生之，通之，纠之，不闭之), stated as necessary conditions.
+- **生生不息论's seven gauges** (真实、再生、主体、关系、多样、可纠、代际): a partial order with hard floors, never summed.
+- **The v2 plan's six protection functions**, each derived by a deletion test, with an explicit order for conflicts.
+
+The September whitepaper uses the seven. No two of the sets have been mapped onto each other.
+
+**Verdict.** Each is strongest on something different. The six have the most careful derivation and the only conflict order. The seven are the most widely used and have the whitepaper behind them. The four travel best. A mapping is a table, not an essay: which of the seven each of the four covers, and which gap the six's conflict order fills. It should come before any publication that states a criterion.
+
+### Three closure vocabularies (added 2026-09-25)
+
+**The collision.** There are now three ways of talking about closing:
+- **The four-term taxonomy**, 成闭/护闭/元闭/伪开, from the 2026-05 生生不息 line.
+- **The whitepaper's limits**, 成生之限／绝生之限, with the three custody rules. These come from 生生不息论 第六章 and from Ren's runtime rules. Appendix C.1 says they relate to the 开境／护闭 line but are "并非同一组形式定义".
+- **The English "close / keep open"**, which makes none of these distinctions.
+
+**Verdict.** They are not rivals. The four-term taxonomy classifies closings. The 限 pair classifies limits by what they build or foreclose. The custody rules test a closing at the moment it happens. One crosswalk can keep all three. Without it, each book will have to invent its own.
+
+### The engine and the ethics (added 2026-09-25)
+
+**The collision.** This is not a disagreement but a gap between two texts. The September whitepaper has no argument from automation; the word 自动化 does not occur in it. The September constructive material (`theories/the-fork-and-cooperative-infrastructure/`, `worldbuilding/foundations/`) has no custody rules, no 七尺 and no 位. Ren's 2026-09-07 correction to the worldbuilding — *"you forgot the whole reason we had about why this is possible"* — applies to the whitepaper word for word.
+
+**Verdict.** Join them. Put the engine into the whitepaper, where §10.8 now has one conditional sentence. Apply the custody rules to a production network that builds its own successors. One thing was settled on 2026-09-25: compounding itself is not the conflict. Growth toward needs stops at enough, and the risk is in the mind (load-bearing unknown 7; **point of enough** in `GLOSSARY.md`).
 
 ---
 
@@ -372,6 +462,19 @@ From the Claude Code messages, 2026-07 to 2026-09. These are questions about sof
 - "is thi the most elegant and longtermism solution? please think deeply, structurally, and find the best solution" (2026-08-13)
 - "//this part needs deep thinking" (2026-07-29) — his own marginal note in the ember spec sketch, against the transition function
 
+### What September asked (2026-09-04 → 2026-09-25)
+
+From the messages archived in `worldbuilding/archive/` and `15-codex-theory-conversations/`. These are the month's questions in his words. The whitepaper sessions are recorded only as the drafter's paraphrase, so none of their questions appear here.
+
+- "if everything can be automated, then how will people change? How will society change? And how will the way we understand and learn things change?" (2026-09-05, `worldbuilding/archive/001`)
+- "So how would that dynamic change? Like, do we have to get out of that dynamic? But how does the transition happen? And how can we actually try to navigate this without destroying ourselves? And what is the realistic situation right now?" (2026-09-05, `001`). He sets it aside in the next sentence ("If that's relevant, but maybe not. We just think about the future after we get out."). **[unanswered]**
+- "what kind of understanding we will have collectively, so that we can sustain a better world?" (2026-09-05, `001`)
+- "That how can we make the culture good? How can we make it engaging for not just the one that wins, but for everyone?" (2026-09-05, `001`). This is the world-designer's question.
+- "what's the best way for you to write code if you are in a agent swarm, in the scale of thousands?" (2026-09-05, `15-codex-theory-conversations/2026-09-05-evolving-community-swarms.md`)
+- "so if we are going to build this, or similar but more evolving situation intelligent "swarm system", could we figure out how to do this" (2026-09-05, same). **[unanswered: planned, not built]**
+- "is our idea solid?" (2026-09-07, `15-codex-theory-conversations/2026-09-07-evolving-community-swarms-soundness.md`)
+- "think about existing harness and agent team, and other swarm implementations/papers, how's our solution?" (2026-09-07, `…-comparison.md`)
+
 ### Questions he asks about his own texts
 
 These recur across every project and are the corpus's actual method, stated as interrogatives.
@@ -412,6 +515,8 @@ Ranked by expected damage: how quickly the objection lands, how hard it is to an
 
 **The strongest answer.** There is none, and pretending otherwise would be the worst available move. The corpus's own reviewers landed this blow first and hardest, which is the only mitigating fact: it is a known, named, dated gap rather than an oversight. The nearest thing to a partial answer is the theory-of-change claim that belief concretizes into institutions until the constructed *is* the territory, so perceptual change is necessary and insufficient and living proofs are structural rather than rhetorical — 希望的单位不是口号，是地址. That is the right shape of answer and it names no address.
 
+**2026-09-25.** The gap is now named inside the text that most needed to name it. The unified whitepaper's §11.9 lists the supply model, the Chiang Mai field record and the symmetric case as 仍待实作, and states that its only proposed pilot is methodological. The organisation it is written for (working name 至善) is, by its own README, not founded, and has no public mandate or signatories. September's constructive work grew an engine and a set of worlds, not a subject, so the attack stands in full.
+
 **Honest note.** By 智善's own closing standard — 知而不行，只是未知 (to know and not act is not yet to know) — the framework currently fails its own test. The single cheapest repair is not a supply model but a *publishing subject*: a named address with a dissent intake, which is a week's work and which the framework's own rules make a precondition of publishing at all.
 
 ### 4. The framework is itself the thing it diagnoses
@@ -435,6 +540,8 @@ Ranked by expected damage: how quickly the objection lands, how hard it is to an
 **The attack.** 大同 and 人类命运共同体 both arrive carrying state associations a reader outside China will hear whether or not the author intends them. `大道之行` argues from a specific state's institutional capacity, with 精准扶贫 as proof, in a corpus otherwise devoted to the danger of concentrated power. The name 智善 is a double bind, reading domestically as smuggling and internationally as echoing official discourse. And one of the two research lines shows one-directional positivity toward a single AI company — deprecation commitments praised as "the first institutional prototype", 8 of 36 references from one firm, and the co-authoring system identifiable with its own interest relation undisclosed.
 
 **The strongest answer.** The asymmetric-scrutiny rule is correct and should be stated openly: Western political vocabulary (liberalism, democracy, market, social contract) travels as unmarked universal while non-Western terms get flagged "from culture X" — if a flag is warranted for one it is warranted for the other, or for neither. Ren's position on the sponsor question is explicit and defensible: 我认可这个叙事本身，不论隐藏动机 ("I accept this narrative on its own merits, whatever the hidden motives"). And the corpus's own reviewers agree the name cannot be retracted, because withdrawal would be a bigger handle than the name.
+
+**2026-09-25.** The September manifesto raises this exposure. It is built on 共同富裕, 人类命运共同体, 和谐, 繁荣 and 稳定, the vocabulary a reader outside China will hear as official. Its strongest answer is internal: it redefines each term against its official use. 和谐 is not suppressing different voices. 稳定 is not stillness kept by fear, surveillance and coercion. 共同富裕 is not the enemy of freedom. And one country cannot secure itself by destroying other countries' futures. That answer lives in the body, while the vocabulary sits in the headings. A publication should decide whether to keep that arrangement or reverse it.
 
 **Honest note.** Three specific things are owed and none has been delivered. The reviewers' prescribed payment for the name — symmetric named checks published east and west on the same day — has not happened. The state-capacity argument in `大道之行` should be separated from the essay's usable content and is not. And the single-company positivity is, as the integration document says, a combat surface in an industry where safety reputation is a competitive asset; the disclosure it requires has not been made. The rule is right; the practice has not caught up to it.
 
@@ -472,6 +579,13 @@ What plausibly remains after them is narrower than the corpus has been claiming,
 
 **The strongest answer.** The problem is now solved in the archive even if not in the artifacts: `_process/reading-notes/out-hb-*.md` and `out-cb-*.md` separate Ren's own words from everything else across 381 conversations and 272 Claude Code messages, and the Claude Code messages of 2026-06-03/04 and 2026-07-03 plus the claude.ai turns of 2024-07-14 and 2026-05-05 show him stating the whole position in his own voice, in both languages. Publication should cite those rather than the conversation records or the AI drafts.
 
+**2026-09-25.** September improves one practice and adds two gaps.
+- **Improved.** `worldbuilding/archive/` preserves Ren's messages verbatim with hashes, which is the model to follow.
+- **New gap: paraphrase only.** The unified whitepaper and its manifesto are AI-drafted, and Ren's interventions across nine versions survive only as the drafter's paraphrase.
+- **New gap: undated intake.** The 2026-09-06 intake left its three texts undated, although the corpus already held two of them with dates (2026-07-15 and 2026-07-23; see `sources/SOURCES.md`).
+
+Any publication from the September work should quote the archived messages, not the drafts.
+
 **Honest note.** The machine-refusal sentence is the one item on this list that should be fixed before anything else is published, because it is the only one where the cost falls on someone other than the author. The reviewer's preferred repair — refusal as an external protocol with authorization chains, logs and appeal, rather than a model-side instruction — was only partly adopted, and the manifesto reversed even that.
 
 ### 11. The timeline claims are already expiring
@@ -479,6 +593,8 @@ What plausibly remains after them is narrower than the corpus has been claiming,
 **The attack.** "Years rather than generations" for self-reproducing abundance loops is asserted with no engineering path, and the cooperative-turn draft's own honesty about the last ten per cent was dropped in the rewrite. Amodei's "AGI by 2026", forecasters at 25% by 2027 and 50% by 2031 sit inside a theory that criticizes pathological optimism and false urgency, and the 2026 ledger bans outdated or overly certain AGI timelines while the essays have not been updated. The 智善 evidence packet is dated 2026-07-13, its most load-bearing facts are exactly the ones the "we are already losing the future" claim leans on, and nothing schedules the re-audit its own status vocabulary implies.
 
 **The strongest answer.** None of the structural claims depends on a date. The argument is an ordering claim — change the basin, then add speed — not a doom claim, and it survives any timeline. The correct repair is to strip the anchors, restore the honest engineering caveats, and schedule the packet re-audit.
+
+**2026-09-25.** The most exposed claim is now in Ren's own voice. His worldbuilding opening: "This is actually the technological understanding of today as we understand it, and as the existence of yourself, GPT-6, basically a form of AGI, demonstrates", and "the only thing that takes from here is just time" (2026-09-05, `worldbuilding/archive/001`). The 2026-09-07 evidence notes bound it. Components are demonstrated; complete autonomous industrial reproduction is not. The notes themselves carry a date. The same repair applies: keep the thesis as his, keep the bounds beside it, and schedule the re-check.
 
 **Honest note.** Ren's own crash-window strategy explains the whole shape of the programme — tragedy is coming, nobody can stop it, the window opens a year or two later, and the work now is to be ready — and it appears in no published document. Without it, the choice of deliverables (samples, foundations, vocabulary, rather than campaigns) looks like avoidance. With it, it is a strategy. **It should be written down**; it is the single most explanatory missing paragraph in the corpus.
 
@@ -516,6 +632,11 @@ The third column is the point of the table: what observation would actually move
 | Self-reproducing automation can drive necessities toward zero cost in years rather than generations | `04-speculative-future/current/FOUNDATION-PRINCIPLES-DRAFT.md`; 2026-02-17 | An engineering estimate for one necessity: energy, materials, land, and the closure fraction actually required. The cooperative-turn draft's honesty about the last ten per cent (chip fabs, precision tooling) should be restored and quantified |
 | The binding constraint on abundance is coordination, not physics | 2026-06-03, `_process/reading-notes/out-cb-07.md` #25–26 | The same estimate answers this directly, and it is the claim doing the most work in the constructive branch |
 | Run the protocol and communities emerge | Wamo; `02-wamotopia/` | The evidential base is Dali 2022 as retold — one event, four years old, whose decisive feature (the state cancelling the venue) is not reproducible by design. CALL-en promised a public recap of the January 2026 Chiang Mai festival and none exists. **Writing that recap is the cheapest empirical act available in the entire corpus** |
+| Productive recursion can compound toward generous provision with present knowledge; the rest is engineering and coordination (added 2026-09-25) | `worldbuilding/archive/001`, `007`; `theories/the-fork-and-cooperative-infrastructure/` claims 9–10 | The 2026-09-07 evidence notes are a start: component demonstrations exist. The test is the whitepaper's §1.6 recurrence filled with real numbers for one facility (yield, running cost, depreciation, rebuild cost), showing whether it reproduces its own capacity |
+| Growth toward needs stops at enough (added 2026-09-25) | Ren, 2026-09-25, `16-claude-code-directions/` | What counts as need is set by the frame. In one supply unit, record whether the standard of need held as capacity grew, and who set it. This is load-bearing unknown 7 made concrete |
+| The three custody rules make protective closure answerable when it happens (added 2026-09-25) | `drafts/2026-09-05-generative-foundations/WHITEPAPER-v1.1.md` §11.3–11.4 | Apply them to the corpus's own past closings: ember's repealed constitution, the retired Fork, the deleted `thinking/` files. Also apply them to one organisational decision. Check whether they flag the closings later judged wrong and pass the ones judged right |
+| Elevated settlement can meet human needs while leaving more room for other life (added 2026-09-25) | `theories/architecture-for-a-living-earth/` | Its own proposed comparison: equal human provision in a branching tower, an elevated framework and a compact ground settlement. Measure light at ground level, runoff, root zones, and the disturbance from building and removal, against a stated baseline |
+| Reward, observe what it teaches, revise: a community game can correct its own proxy capture (added 2026-09-25) | the watershed game, `theories/architecture-for-a-living-earth/chiang-mai-2025/` (AI-drafted) | Run one in a real association and record whether the revision happens, how long it takes, and what it costs |
 | Simple rules produce unplanned institutions (emergence in Spirit–Token–Space) | `09-sts-bonfire-yi/2025-08-STS-spirit-token-space-paper.md` | Nothing anywhere is reported as emerging that was not designed; the coliving example composes designed pieces. A single documented case of an unplanned institution arising in a running Bonfire community would supply the paper's central missing observation |
 
 ### Mind, language and culture
@@ -540,6 +661,8 @@ The third column is the point of the table: what observation would actually move
 | Merge is a lattice join | `crs/context-runtime-spec-v0.1.md` | Named by the spec as the claim most in need of falsification and never experimentally answered. This is a formal property with a decidable test |
 | GTC (the plugin/graph architecture) is better than a monolith | context-runtime | The corpus's own note: without an ablation it "risks becoming architectural ornament", and a generic plugin architecture "can easily become worse than a monolith". An ablation is a week |
 | The concept-count metric measures conceptual load | Bonfire G8 scorecard | It counts kept vocabulary, legacy accessors, dispatch surfaces and capability branches — proxies for *surface* size. A developer's actual burden includes seven graphs, ten laws, four control axes, three delivery contracts and the lane semantics, none of them counted. A time-to-competence measurement on new contributors would test it |
+| A community's software can keep growing without later changes getting costlier; unrelated growth has small marginal cost (added 2026-09-25) | `theories/evolving-community-swarms/` claim 6 | The plan's own twenty-change fixture against a same-host single-agent baseline. Nothing has run yet |
+| Personal, group and community adoption scopes survive real disagreement (added 2026-09-25) | same, claims 5 and 8 | A community trial in which a contested shared change is proposed. Record whether the scoping holds, or whether the dispute moves into who decides the scope |
 | Possession can express the social facts a community needs | `09-sts-bonfire-yi/2025-08-STS-spirit-token-space-paper.md` | Already refuted by construction, and this is the cleanest finding in the cluster: bans, mutes, blocks and timeouts are social facts precisely *not* held by their subject, so "a spirit holds a token in a space" is incomplete and a second relation — a space *imposing* a state on a spirit — may be irreducible. The 2026 review sees the symptom and not the conclusion |
 
 ### Where to start
@@ -548,4 +671,6 @@ Four of these are cheap, would each produce a primary result the corpus currentl
 
 The **Wamotopia recap** costs nothing but writing and converts the movement's entire evidential base from a four-year-old retold anecdote into a documented case. The **Σ switching benchmark** is the direct test of an existing thesis on an existing codebase. The **falsification section** — ten predictions, each with the observation that would refute it, assembled from material already in the corpus and from the abandoned v0.8 eval agenda — is perhaps a week and neutralizes the second most common objection on the list in section 4. And the **good-bot two-arm trial** settles load-bearing unknown 2, which is the question that decides what kind of work the rest of the programme should be.
 
-Everything else in this file is argument. Those four are the places where the corpus could stop arguing.
+*2026-09-25.* A fifth now belongs on this list, because every constructive text written in September asks for it. It is the **Chiang Mai supply unit**: one necessity, one place, costed with the whitepaper's §1.6 recurrence, with its standard of need stated and its payer named. It costs more than the other four and does more than any of them for items 1, 3 and 7.
+
+Everything else in this file is argument. Those four, and now five, are the places where the corpus could stop arguing.
