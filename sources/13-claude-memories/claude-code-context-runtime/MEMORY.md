@@ -1,0 +1,7 @@
+- [Freeze is liftable pre-launch](freeze-liftable-pre-launch.md) — Ren prefers breaking changes over compat layers; representational constraints may be rewritten, correctness invariants may not.
+- [ADR-030 assurance model](adr-030-assurance-model.md) — the standing lattice is being replaced by Custody + an Examination Ledger; why the enum was wrong.
+- [Worktree node_modules trap](worktree-node-modules-trap.md) — worktrees have no node_modules; bare imports silently read the main checkout's live sources.
+- [Session schemas are generated](session-schema-artifacts-are-generated.md) — packages/session/schemas/*.json come from ENCOUNTER_JSON_SCHEMAS; regenerate with REGEN_FIXTURES=1.
+- [R0 + R1 reset progress](r0-reset-progress.md) — both resets are done; why the scanners became false under plugin composition, and what replaced them.
+- [ADR-030 program progress](adr-030-program-progress.md) — wave structure, what landed, worktree/DB conventions for parallel agents.
+- [Lineage tab client bundle](lineage-tab-client-bundle.md) — dsh-product-client layout/view/registration; rebuild lib via pnpm bundle; display ids by their tail, lanes by displayTitle.

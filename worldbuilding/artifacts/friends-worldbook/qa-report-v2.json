@@ -1,0 +1,200 @@
+{
+  "edition": "02",
+  "date": "2026-09-07",
+  "pdf": "output/pdf/worlds-we-can-inhabit-v2.pdf",
+  "sha256": "c183219c1e788d57f4de2cf7098738503c6b44b9b3eb6b62882b60f9e88d9a81",
+  "bytes": 5677303,
+  "pages": 15,
+  "bookmarks": 15,
+  "external_reference_links": [
+    "https://www.lifecycleinitiative.org/wp-content/uploads/2021/03/UNEP-D002-Beverage-Cups-Report_lowres.pdf",
+    "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC144410/JRC144410_01.pdf",
+    "https://iea.blob.core.windows.net/assets/eb0c8ec1-3665-4959-97d0-187ceca189a8/Iron_and_Steel_Technology_Roadmap.pdf"
+  ],
+  "fonts_used_for_text": {
+    "/AAAAAA+NotoSans-Regular": true,
+    "/AAAAAA+NotoSans-Bold": true,
+    "/AAAAAA+NotoSerif-Regular": true,
+    "/AAAAAA+NotoSerif-Italic": true,
+    "/AAAAAA+ArialUnicodeMS": true
+  },
+  "copy_checks": [
+    {
+      "page": 1,
+      "id": "cover",
+      "copy_complete": true,
+      "selectable_characters": 247
+    },
+    {
+      "page": 2,
+      "id": "meta",
+      "copy_complete": true,
+      "selectable_characters": 1364
+    },
+    {
+      "page": 3,
+      "id": "feedback",
+      "copy_complete": true,
+      "selectable_characters": 1158
+    },
+    {
+      "page": 4,
+      "id": "principles",
+      "copy_complete": true,
+      "selectable_characters": 1611
+    },
+    {
+      "page": 5,
+      "id": "capacity",
+      "copy_complete": true,
+      "selectable_characters": 1250
+    },
+    {
+      "page": 6,
+      "id": "garden",
+      "copy_complete": true,
+      "selectable_characters": 780
+    },
+    {
+      "page": 7,
+      "id": "university",
+      "copy_complete": true,
+      "selectable_characters": 826
+    },
+    {
+      "page": 8,
+      "id": "exploration",
+      "copy_complete": true,
+      "selectable_characters": 867
+    },
+    {
+      "page": 9,
+      "id": "quests",
+      "copy_complete": true,
+      "selectable_characters": 853
+    },
+    {
+      "page": 10,
+      "id": "portal",
+      "copy_complete": true,
+      "selectable_characters": 698
+    },
+    {
+      "page": 11,
+      "id": "materials",
+      "copy_complete": true,
+      "selectable_characters": 839
+    },
+    {
+      "page": 12,
+      "id": "transformation",
+      "copy_complete": true,
+      "selectable_characters": 1231
+    },
+    {
+      "page": 13,
+      "id": "coexistence",
+      "copy_complete": true,
+      "selectable_characters": 1353
+    },
+    {
+      "page": 14,
+      "id": "invitation",
+      "copy_complete": true,
+      "selectable_characters": 1031
+    },
+    {
+      "page": 15,
+      "id": "sources",
+      "copy_complete": true,
+      "selectable_characters": 1714
+    }
+  ],
+  "image_source_manifest": "image-placements-v2.json",
+  "actual_pdf_image_draws": [
+    {
+      "page": 1,
+      "sha256": "017330eca9f31bd8206a16e8c2ba0d3ac044960a4250e566ed5491cc1b5e7b3d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 6,
+      "sha256": "6fb183fac2633d07ebbe905642763859aec437c0bec4c7dbd7cfd308452530a5",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 7,
+      "sha256": "b809a0e0385f33f08b0cbd9ac09d9e63bb3cf8890cc1b9933761bab42039376f",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 8,
+      "sha256": "53d9dab985f3234fedbe50307e0dc0fdf46a57f646a5d75be4cea695d278826e",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 9,
+      "sha256": "3298c50fdc6a0a1cc84d43273a9bea5cd0021edadd5f61b43982dc3779ddbf60",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 10,
+      "sha256": "8ac3db3302d71917b224f3824a38d38bda8274f14804a372162cd27ea6c9096d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 11,
+      "sha256": "f910f65dbde767d1797a34a70fb5f11ee31a7f3f977a4c906b58ef54acd21174",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "unique_source_images": 7,
+  "unique_pdf_images": 7,
+  "repeated_image_placements": 0,
+  "render_dpi": 120,
+  "render_sha256": {
+    "page-01.png": "25727d66ab8188ba002f298aa11df3259faeb1d09ab1d02b50955277b0a8b22f",
+    "page-02.png": "ec0f4554c156d09d076eb74896bf4a7ce7ab95916fd6030e69e0ef974f11e882",
+    "page-03.png": "960d89d81fa9ca19740ba9b2de530cd5b04b7cadef723b8d665ea68fdf21cedf",
+    "page-04.png": "f0b01cec40b17d6ec5fa4d85a21a132772dff783db3df89c359c1de0637c17a1",
+    "page-05.png": "86f15d849ef06acabe786ef95a3509886cdfe693ad2b3204bed8b6c8a932672b",
+    "page-06.png": "c5bdb73b3885af9e7de42984dcd37ae548f518ceb24f87b891d143ca5d95a90d",
+    "page-07.png": "8c44e628fd3cf5e7cec23e593bb067ee31ee85e8fb0aef9626f692c95dfdbb3a",
+    "page-08.png": "bfff9fed3e83f70ddec9744ac4a5c4bd5a103e8b533ba4b9d117d6c929a5afeb",
+    "page-09.png": "7d4a87d7ca52f6d16558e3817033b91807a5822004402d452ccc95ee2680362e",
+    "page-10.png": "672d4979e17e7d169d9b6922b7ec08fde69aaec37aad4c565d37ab2defaf6a0f",
+    "page-11.png": "f5999d0ed14661ee2144fec74ea8f6477a1f2a8938c6c7c4fbd96355f11e0b6e",
+    "page-12.png": "7fd2580c94ec8d4df5def8cd3e6246224b07e4e61cb0edd20945042c36513845",
+    "page-13.png": "86a5be42f030b206439a0715a3fbcbba872cbcaa6db82fd4ce10285bd00d9b2b",
+    "page-14.png": "afa9f4cde7b5dde9c49be1ef3a6465ea4e0715d72e167f5d36b0814dd7b130cd",
+    "page-15.png": "2b89b43cf41f30b121b54e8c3cbe92fc5efbaeb9d910a85fd1320e794db61d55"
+  },
+  "visual_review": {
+    "pages_01_to_07": "Root inspected each page individually; page05 spacing improved, rerendered and rechecked.",
+    "pages_08_to_15": "Independent reviewer inspected each page individually; all passed.",
+    "final_render_continuity": "14 pages match the reviewed rendering byte-for-byte; only page05 changed and was inspected again.",
+    "observed_issues": "None remaining in clipping, legibility, framing, diagrams, CJK glyphs or footer separation."
+  },
+  "content_review": {
+    "status": "Passed independent review against current request, new foundation and primary human passages.",
+    "coverage": [
+      "Meta-level: reciprocal formation of people, culture and environment",
+      "Generativity as conditions enabling further generation",
+      "Plural life and shared world authorship",
+      "Rocket-building exploration community",
+      "Inhabited MMORPG culture",
+      "AR elevator as experiential portal",
+      "Material circulation, useful stock and constraints",
+      "Generative principles across intelligence and amplified will"
+    ],
+    "provenance": "Direct Ren April30 quotation/date and June3/June4 source claims independently checked."
+  },
+  "limits": "Concept images and scenario premises do not establish engineering feasibility or current broad industrial autonomy."
+}

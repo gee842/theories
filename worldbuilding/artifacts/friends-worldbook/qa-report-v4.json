@@ -1,0 +1,368 @@
+{
+  "edition": "04",
+  "date": "2026-09-07",
+  "pdf": "output/pdf/worlds-we-can-inhabit-v4.pdf",
+  "sha256": "a3ee0256afb361ace5175a5484e455081dc20b1ed6a8cc09f64d585bfa0deb8e",
+  "bytes": 15513855,
+  "pages": 25,
+  "bookmarks": 25,
+  "link_annotations": 17,
+  "unique_source_links": [
+    "https://arxiv.org/html/2510.03342v3",
+    "https://iea.blob.core.windows.net/assets/eb0c8ec1-3665-4959-97d0-187ceca189a8/Iron_and_Steel_Technology_Roadmap.pdf",
+    "https://new.abb.com/news/detail/97670/abb-opens-state-of-the-art-robotics-mega-factory-in-shanghai",
+    "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC144410/JRC144410_01.pdf",
+    "https://www.bmwgroup.com/en/news/general/2026/humanoid-robot-in-leipzig.html",
+    "https://www.fanuc.co.jp/en/profile/production/",
+    "https://www.lifecycleinitiative.org/wp-content/uploads/2021/03/UNEP-D002-Beverage-Cups-Report_lowres.pdf",
+    "https://www.pi.website/blog/partner",
+    "https://www.pi.website/blog/pi05",
+    "https://www.riotinto.com/operations/anz/western-australia"
+  ],
+  "fonts_used_for_text": {
+    "/AAAAAA+NotoSans-Regular": true,
+    "/AAAAAA+NotoSans-Bold": true,
+    "/AAAAAA+NotoSerif-Regular": true,
+    "/AAAAAA+NotoSerif-Italic": true,
+    "/AAAAAA+ArialUnicodeMS": true
+  },
+  "copy_checks": [
+    {
+      "page": 1,
+      "id": "cover",
+      "copy_complete": true,
+      "selectable_characters": 343
+    },
+    {
+      "page": 2,
+      "id": "production",
+      "copy_complete": true,
+      "selectable_characters": 452
+    },
+    {
+      "page": 3,
+      "id": "engine",
+      "copy_complete": true,
+      "selectable_characters": 1305
+    },
+    {
+      "page": 4,
+      "id": "garden-arrival",
+      "copy_complete": true,
+      "selectable_characters": 442
+    },
+    {
+      "page": 5,
+      "id": "garden-walk",
+      "copy_complete": true,
+      "selectable_characters": 444
+    },
+    {
+      "page": 6,
+      "id": "garden-section",
+      "copy_complete": true,
+      "selectable_characters": 480
+    },
+    {
+      "page": 7,
+      "id": "university-arrival",
+      "copy_complete": true,
+      "selectable_characters": 454
+    },
+    {
+      "page": 8,
+      "id": "university-cosmos",
+      "copy_complete": true,
+      "selectable_characters": 497
+    },
+    {
+      "page": 9,
+      "id": "university-workshop",
+      "copy_complete": true,
+      "selectable_characters": 488
+    },
+    {
+      "page": 10,
+      "id": "exploration-arrival",
+      "copy_complete": true,
+      "selectable_characters": 475
+    },
+    {
+      "page": 11,
+      "id": "exploration-launch",
+      "copy_complete": true,
+      "selectable_characters": 504
+    },
+    {
+      "page": 12,
+      "id": "exploration-section",
+      "copy_complete": true,
+      "selectable_characters": 471
+    },
+    {
+      "page": 13,
+      "id": "quest-arrival",
+      "copy_complete": true,
+      "selectable_characters": 465
+    },
+    {
+      "page": 14,
+      "id": "quest-bridge",
+      "copy_complete": true,
+      "selectable_characters": 477
+    },
+    {
+      "page": 15,
+      "id": "quest-backstage",
+      "copy_complete": true,
+      "selectable_characters": 456
+    },
+    {
+      "page": 16,
+      "id": "ar-megastructure",
+      "copy_complete": true,
+      "selectable_characters": 488
+    },
+    {
+      "page": 17,
+      "id": "ar-portal",
+      "copy_complete": true,
+      "selectable_characters": 454
+    },
+    {
+      "page": 18,
+      "id": "ar-worldhall",
+      "copy_complete": true,
+      "selectable_characters": 450
+    },
+    {
+      "page": 19,
+      "id": "ar-reality-pair",
+      "copy_complete": true,
+      "selectable_characters": 456
+    },
+    {
+      "page": 20,
+      "id": "ar-section",
+      "copy_complete": true,
+      "selectable_characters": 512
+    },
+    {
+      "page": 21,
+      "id": "materials",
+      "copy_complete": true,
+      "selectable_characters": 504
+    },
+    {
+      "page": 22,
+      "id": "principles",
+      "copy_complete": true,
+      "selectable_characters": 1261
+    },
+    {
+      "page": 23,
+      "id": "invitation",
+      "copy_complete": true,
+      "selectable_characters": 832
+    },
+    {
+      "page": 24,
+      "id": "evidence",
+      "copy_complete": true,
+      "selectable_characters": 1374
+    },
+    {
+      "page": 25,
+      "id": "provenance",
+      "copy_complete": true,
+      "selectable_characters": 1851
+    }
+  ],
+  "image_source_manifest": "image-placements-v4.json",
+  "actual_pdf_image_draws": [
+    {
+      "page": 1,
+      "sha256": "017330eca9f31bd8206a16e8c2ba0d3ac044960a4250e566ed5491cc1b5e7b3d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 2,
+      "sha256": "f630ffb46381e6e87b54594d0f9ab5752fae105b0c8234cb65b1281be68c561c",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 4,
+      "sha256": "6fb183fac2633d07ebbe905642763859aec437c0bec4c7dbd7cfd308452530a5",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 5,
+      "sha256": "a88eedda42c0ebed145bc9fdd2747994b44773a288cbbb9bfdaa9f097ceb0858",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 6,
+      "sha256": "7d3f50f4b7df1496cfeb8bdf89fa791920abef088203b0003071011b3dbf81fe",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 7,
+      "sha256": "b809a0e0385f33f08b0cbd9ac09d9e63bb3cf8890cc1b9933761bab42039376f",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 8,
+      "sha256": "61c2cc517ec602e57f1764c2763eb5c902c79c4b0cdfd09dc2575da2a577f948",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 9,
+      "sha256": "dcd0917a1d85518fd0a61413d599c2b5bc9e5c3d20d3ecb812dd7222402a2306",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 10,
+      "sha256": "53d9dab985f3234fedbe50307e0dc0fdf46a57f646a5d75be4cea695d278826e",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 11,
+      "sha256": "5c03960b2d7e13c768dfe6748cb0b81cc7f789922822fae816e811f903e5e544",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 12,
+      "sha256": "6cfe9968b84c0f69aa982815711076b7932f2439b8a3519b4e9e7288995f1837",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 13,
+      "sha256": "3298c50fdc6a0a1cc84d43273a9bea5cd0021edadd5f61b43982dc3779ddbf60",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 14,
+      "sha256": "f9136a5f921acfb48867f227f48894a568b5d2f5a2eb7ad136835f04ddb29849",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 15,
+      "sha256": "4d9285bbeb6a30efdcbf6ffb30df72b0abf009dddce6ffef2dd120b75c4fbdc7",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 16,
+      "sha256": "37ec97c907f208bfe37f1339bd3949ed80eaccdc286d48c94518bdecaaed78d0",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 17,
+      "sha256": "8ac3db3302d71917b224f3824a38d38bda8274f14804a372162cd27ea6c9096d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 18,
+      "sha256": "27466b74c4d566538cfb4a54933891d0b7e0f4b26b9632879a1fdc4f54e0f5c0",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 19,
+      "sha256": "6c1c8effc1bc833679504147740a88741f4a319080430f6406f100f5feeafb38",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 20,
+      "sha256": "ce4b16340e7c87da2b9ac51de99e8152ecf167b764c7a7e849df8a01e26134e1",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 21,
+      "sha256": "f910f65dbde767d1797a34a70fb5f11ee31a7f3f977a4c906b58ef54acd21174",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "unique_source_images": 20,
+  "unique_pdf_images": 20,
+  "repeated_image_placements": 0,
+  "new_source_images": 12,
+  "uncropped_images": 20,
+  "render_dpi": 100,
+  "render_sha256": {
+    "page-01.png": "c5e6a14e2e22f809a638fedee4f44ffb069a4fc5620740d7938cb0aba7d08dbb",
+    "page-02.png": "2cbd12cf589c79f607f5fb18e0f8c8b8ade3057ac56c99fabfdd4f8e6c4ac253",
+    "page-03.png": "93caa032c9e210c7729e0b187156bdbec434c8bec09a37e76001c61c873a8345",
+    "page-04.png": "6f5b8b136e1134d1a68671754acde37f891720823b3b4c926c940ab19fc99c58",
+    "page-05.png": "f55f981c91c34db443a0b4d4d2d9a0843b1084c471210bd089268bdbdcdc5937",
+    "page-06.png": "d11c50f80b37bde90bf6d9f92b5ea5a2312e9327be216701839834ab405ce4db",
+    "page-07.png": "1b5c38c2d254f38472e77b265a4ffda4d938dbe01e9ab68d2e8ed86e41eb2a4a",
+    "page-08.png": "38c03b3479e68edb219ddd6166602325f2dc64c6c64dbd0a7d7959c635f0de45",
+    "page-09.png": "147a28eee52d852d076911d77132e2059a254ac64f1759f8b7c1f1143e2f372c",
+    "page-10.png": "6cbf810a3cfccf46c881f41fb189c72b8cf79e1781c8cb3d2fa87b1dad9e1af1",
+    "page-11.png": "8ab8e35bd8ebb00503b76cdeb3b6d2de08e369a8c69a9ab4b7a78a0f520d988d",
+    "page-12.png": "d206e4f3ccd98667ad4788b5f02e25e44e46e15cb1c2d7978b2119e1e026be5c",
+    "page-13.png": "8f9ca8eeaeb0c1499db03c8d25ba7a516ffb0df9eb179b90097f511329aae77f",
+    "page-14.png": "e43dd48370b321d5dc81a1e244c53a5dbc970fe4be6af3dc12334619007a0b75",
+    "page-15.png": "ae1d675934202befd0789b3a6dcdabb82bdef5c32cac578f021e81c677288f9c",
+    "page-16.png": "7a51281238eec49ad30fc279b99e06e3e82b2b5dd81125eb7a7ba822c5c6cb06",
+    "page-17.png": "b88acd55f1c5e654b5d6716eb807fd95f0c96cfb9e07cea79d694ceea12a1310",
+    "page-18.png": "1fc0401026392ba4b4796c77e6cdde86293268fc0f20e8f1a534cbaa3aca0c65",
+    "page-19.png": "7a2d6760d0929390c015c5b45d16302cfcd0a23b49b2e7bd8114486fec7c000d",
+    "page-20.png": "c5afb783a0076c29b61d6044ca31036bc5f715f21f5b8583d18a99ffa29f0218",
+    "page-21.png": "4a4695f1a59f7d8f314afb143bf32491c61942c4de2fb006f38b299a5c1e3170",
+    "page-22.png": "a8f56e9e293d20dda549c151b46b0f517cdace2ee3b7eea2d603a93bb72d1972",
+    "page-23.png": "2ef9b7d8cc8c912bdc6a38dc607a67b86af1e813e0197ff8bf15060fb0109f9b",
+    "page-24.png": "74e32c1da38b416f134a558f689e8b0c4ec4aeb05d84257f21a05df61f334e5f",
+    "page-25.png": "d778c43b8413513ad510551cecb1afba3ee960f9257a69b6bac188269eb3c055"
+  },
+  "previous_edition_03_hash_preserved": "b318ceca23382ac6be76426b08842e13e36e977015e836a8a58b3ef57a11339f",
+  "reviewed_pdf_sha256": "a3ee0256afb361ace5175a5484e455081dc20b1ed6a8cc09f64d585bfa0deb8e",
+  "visual_review": {
+    "pages_01_to_12": "Root inspected every rendered page individually; all passed.",
+    "pages_13_to_25": "Independent reviewer inspected every rendered page individually; all passed.",
+    "observed_issues": "No remaining clipping, overlap, footer collisions, or missing image framing detected.",
+    "specific_checks": [
+      "Full uncropped concept frames",
+      "Garden approach and section share terraced steel, water, and service vocabulary",
+      "University bodily learning and guarded instrument workshop",
+      "Community launch separated by broad water, mission campus reveals assembly and logistics",
+      "Quest bridge connects tangible contact to shared AR and a maintained material backstage",
+      "Purpose-built AR megastructure: stacked halls, lift cores and technical floors",
+      "AR physical/experienced pair aligns walkway, people, rail and bench",
+      "Full experiential elevator diptych",
+      "Feedback arrows, Chinese quotation context, and source table legible"
+    ],
+    "scope": "Concept sequences share architectural vocabulary but are not projections of one resolved 3D model. Tiny incidental monitor-bezel mark retained in university workshop; no legible brand identification."
+  },
+  "content_review": {
+    "status": "Passed independent review against archive008, current W02, embodied journey guide and foundational argument.",
+    "coverage": [
+      "17 embodied world-journey captions",
+      "Environment and concrete supporting engineering",
+      "Purpose-built AR megastructure",
+      "Current industrial/AI components, capacity expansion, shared access and freedom from compulsory labor",
+      "Environmental generativity and reciprocal people/world feedback",
+      "Material continuity and ecological renewal"
+    ],
+    "limits": "Complete autonomous industrial reproduction is the construction thesis; concept sections do not establish engineering feasibility."
+  }
+}

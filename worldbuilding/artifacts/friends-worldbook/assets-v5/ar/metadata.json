@@ -1,0 +1,43 @@
+{
+  "edition": "05",
+  "date": "2026-09-07",
+  "method": "Built-in image_gen; one call per image or targeted correction; no CLI/API runner, no programmatic image editing.",
+  "requested_size": [
+    1536,
+    1024
+  ],
+  "finals": [
+    {
+      "file": "ar-exterior.png",
+      "bytes": 2661868,
+      "sha256": "4d771490304f5ccf88d22e6b8a4425d994fa98f5e83ba2b0d02b48ac7a3fa26b",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "reviewed": true,
+      "review": "Exterior has exactly three major stacked hall volumes above podium, pale rectangular shell, left dark passenger core, right dark service core and continuous amber technical bands. Glazing shows physical interiors; blue diagram effects were removed. Public approach has benches, physical model, ordinary people and mobility chair."
+    },
+    {
+      "file": "ar-harbor-gathering.png",
+      "bytes": 2847514,
+      "sha256": "67bd194675adbd6a38aaba4b9fd03400d9f24b4025ebc80dfe7ea8b793caa517",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "reviewed": true,
+      "review": "Specific continuing five-person music ritual uses tangible drum and keyboard on oval table. Ochre curved bench, continuous mineral floor, wood-topped rail and dark left portal anchor scene. Opaque-front proposed visors appear on all five. One wheelchair listener and one quiet standing observer participate. Imagined sail-vessel approaches in cloud harbor."
+    },
+    {
+      "file": "ar-physical-pair.png",
+      "bytes": 2774513,
+      "sha256": "a6413e81a4bf808bb6d109a7149fab66edf2deeecf4fbff8bc4750871903e031",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "reviewed": true,
+      "review": "Two equal side-by-side panels match the social group, table, drum, keyboard, wheelchair, bench, rail, floor and left doorway in relative position, with small illustration-level pose/framing variation. Physical left shows broad clear hall, real far ramp, perimeter wall and distant right service access. Experienced right replaces the distant envelope with cloud harbor. Near canopy and part of overhead truss remain visible in both."
+    }
+  ],
+  "scope": "Concept illustrations with coordinated architectural anchors, not model-derived views or validated geometry, structural spans, visual performance or operational design. Exterior three-hall massing corresponds to canonical section; pair inhabits a corner of a broad hall. The optical path is a proposed occlusive/passthrough display. Do not describe ordinary transparent glasses or unaided holography as delivering the replacement.",
+  "sources_preserved": "All earlier edition image files remain unchanged."
+}

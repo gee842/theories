@@ -1,0 +1,6 @@
+- [History Core program](history-core-program.md) — current main track; phases 0–9 complete and ACCEPTED (final review 2026-08-21: 0 P0/P1, 7 P2; ADR-019/029 accepted); next: ADR-030 (proposed) on Ren's go; stages 0–11 complete
+- [Phase gates stay narrow](phase-gates-stay-narrow.md) — Phase 0 harness overbuilt via target drift; verification is instrumental, extend gates only for real needs
+- [Ren prefers lean process](ren-prefers-lean-process.md) — cut ceremony from working docs; rationale lives in archives
+- [GTC & composable context systems](gtc-composable-context-seed.md) — mind-layer charter (ADR-012/013), mind-1..3 landed; dormant during History Core
+- [E2E runs and machine sleep](e2e-runs-and-machine-sleep.md) — wrap e2e in `caffeinate -dimsu`; a suite duration far above ~1.1m means it slept and the failure is void
+- [package-boundaries needs dist](package-boundaries-needs-dist.md) — in a fresh worktree run `pnpm install` + `pnpm typecheck` before `package-boundaries.ts --write`, else a ~26k-line bogus inventory diff

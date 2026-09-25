@@ -28,9 +28,16 @@ Chinese and English material is interleaved throughout; no group is single-langu
 
 The original inventory and totals above are retained as recorded. These later snapshots are additional to that inventory.
 
+Added 2026-09-13: [15-codex-theory-conversations/2026-09-13-chiang-mai-2025.md](15-codex-theory-conversations/2026-09-13-chiang-mai-2025.md). One complete user message, preserved verbatim with an assistant-authored provenance header, naming the alternate-2025 Chiang Mai setting and asking to integrate shared abundance, architecture, ecology, 大同, and generative worldmaking. Developed in the [Chiang Mai 2025 case](../theories/architecture-for-a-living-earth/chiang-mai-2025/README.md); not a full task export.
+
+Added 2026-09-13: [15-codex-theory-conversations/2026-09-13-architecture-for-a-living-earth.md](15-codex-theory-conversations/2026-09-13-architecture-for-a-living-earth.md), 1 file, 4,647 bytes. Ren’s complete opening message requesting a new exploration of future architecture, living ecosystems, automated construction, and circulating materials; preserved verbatim with an assistant-authored provenance header. Single-message record, not a full task export. Developed in [Architecture for a living Earth](../theories/architecture-for-a-living-earth/README.md).
+
 | added | group / source | files | bytes | origin |
 |---|---|---:|---:|---|
 | 2026-09-05 | [15-codex-theory-conversations/2026-09-05-evolving-community-swarms.md](15-codex-theory-conversations/2026-09-05-evolving-community-swarms.md) | 1 | 31,949 | Direct export of the five founding user messages and visible assistant replies from Codex task `01a07146-7e6d-7093-86bf-f948610c370a`. Ren requested preserving this as a new exploration and explicitly aligned with the direction. Authorship is marked. The [theory folder](../theories/evolving-community-swarms/README.md) includes an identical local conversation snapshot. |
+| 2026-09-07 | [15-codex-theory-conversations/2026-09-07-evolving-community-swarms-soundness.md](15-codex-theory-conversations/2026-09-07-evolving-community-swarms-soundness.md) | 1 | 8,673 | Ren’s exact soundness question and the assistant’s prepared substantive response, with evidence and interpretation notes. This is an authored assessment record, not a full task export; the proposed refinements are not yet user-endorsed. Identical copy retained in the theory folder. |
+| 2026-09-07 | [15-codex-theory-conversations/2026-09-07-evolving-community-swarms-comparison.md](15-codex-theory-conversations/2026-09-07-evolving-community-swarms-comparison.md) | 1 | 15,638 | Ren’s exact comparison request and the assistant’s prepared substantive response, with primary-source evidence notes and proposed research refinements. Authored comparison record, not a full task export or experimental result. Identical copy retained in the theory folder. |
+| 2026-09-07 | [15-codex-theory-conversations/2026-09-07-evolving-community-swarms-next-vision.md](15-codex-theory-conversations/2026-09-07-evolving-community-swarms-next-vision.md) | 1 | 58,610 | Ren’s exact direction to surpass existing systems, the assistant’s prepared substantive response, and exact snapshots of seven planning artifacts with their hashes. User-directed ambition; assistant-authored mechanisms and provisional gates. Identical record retained in the theory folder. |
 
 ---
 

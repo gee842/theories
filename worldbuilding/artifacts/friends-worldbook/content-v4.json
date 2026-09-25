@@ -1,0 +1,372 @@
+{
+  "title": "Worlds we can inhabit",
+  "edition": "Edition 04 / An atlas of lived futures",
+  "credit": "A worldbuilding project by Ren, developed with AI",
+  "evidence": [
+    {
+      "id": "E1",
+      "title": "ABB / Robot manufacturing / 2022",
+      "detail": "Robot assembly and material handling in the Shanghai factory; an operating industrial starting point.",
+      "url": "https://new.abb.com/news/detail/97670/abb-opens-state-of-the-art-robotics-mega-factory-in-shanghai"
+    },
+    {
+      "id": "E2",
+      "title": "FANUC / Factories / accessed 7 September 2026",
+      "detail": "Automated production of robots, machine tools, motors and controllers; external dependencies unquantified.",
+      "url": "https://www.fanuc.co.jp/en/profile/production/"
+    },
+    {
+      "id": "E3",
+      "title": "Rio Tinto / Western Australia / accessed 7 September 2026",
+      "detail": "Autonomous haulage, drilling and heavy-haul rail within a supervised operating network.",
+      "url": "https://www.riotinto.com/operations/anz/western-australia"
+    },
+    {
+      "id": "E4",
+      "title": "BMW / Figure 02 factory pilot / March 2026",
+      "detail": "A component-positioning task supported vehicle production over ten months in 2025; a bounded pilot.",
+      "url": "https://www.bmwgroup.com/en/news/general/2026/humanoid-robot-in-leipzig.html"
+    },
+    {
+      "id": "E5",
+      "title": "Gemini Robotics 1.5 / Technical report / 2025",
+      "detail": "Embodied reasoning, tools and action models; bounded experiments include task transfer and recovery.",
+      "url": "https://arxiv.org/html/2510.03342v3"
+    },
+    {
+      "id": "E6",
+      "title": "Physical Intelligence / π0.5 / April 2025",
+      "detail": "Transfer of household skills to unseen homes; generalization within a tested task repertoire.",
+      "url": "https://www.pi.website/blog/pi05"
+    },
+    {
+      "id": "E7",
+      "title": "Physical Intelligence / Partner deployments / February 2026",
+      "detail": "Customer laundry and order-packing work with learning from interventions; human assistance remains.",
+      "url": "https://www.pi.website/blog/partner"
+    }
+  ],
+  "pages": [
+    {
+      "id": "cover",
+      "layout": "cover",
+      "image": "assets-v2/worldmakers-forum.png",
+      "kicker": "Edition 04 / An atlas of lived futures",
+      "title": "Worlds we\ncan inhabit",
+      "caption": "Walk into five possible ways of living. Follow the paths, join the experiences, and look inside the architecture that sustains them. These are worlds people could choose to build together."
+    },
+    {
+      "id": "production",
+      "layout": "photo",
+      "image": "assets-v3/production-commons.png",
+      "kicker": "THE MEANS TO BEGIN / PRODUCTIVE CAPACITY",
+      "title": "Imagination\nacquires machinery",
+      "caption": "Robots, tools, materials, and shared knowledge give an idea a route into the world. Existing automated factories already manufacture robots and industrial equipment. [E1] [E2] This scene imagines that capacity organized for common provision and further construction, so the freedom to make worlds rests on a working material foundation.",
+      "pins": []
+    },
+    {
+      "id": "engine",
+      "layout": "engine",
+      "kicker": "WHY THESE WORLDS ARE DIRECTIONS FOR CONSTRUCTION",
+      "title": "The means can grow.\nThe future can be made.",
+      "intro": "We begin with working capabilities, then ask how to connect and extend them into systems that sustain generous lives.",
+      "cards": [
+        [
+          "Machinery makes machinery",
+          "Automation already helps manufacture robots, motors, controllers, and production equipment. [E1] [E2]"
+        ],
+        [
+          "Intelligence connects action",
+          "Learned perception, planning, tool use, and robot control extend what machines can do and adapt. [E5] [E6] [E7]"
+        ],
+        [
+          "Capacity expands capacity",
+          "Some output equips new productive cells and services. Expansion can compound while inputs, maintenance, and commissioning keep pace."
+        ]
+      ],
+      "chain": [
+        "Useful production",
+        "Further productive capacity",
+        "Abundant shared means",
+        "Freely created worlds"
+      ],
+      "body": "The purpose is a rich material life and the tools to pursue it together. Shared access can remove the need to sell labor merely to survive. People can build communities, instruments, gardens, and worlds from a foundation that keeps serving them.",
+      "note": "Full autonomous industrial reproduction remains the construction thesis. The checked evidence establishes useful pieces and a practical development path; it does not establish universal current-AI competence or a complete autonomous supply network. No doubling time is assumed."
+    },
+    {
+      "id": "garden-arrival",
+      "layout": "photo",
+      "kicker": "THE LIVING GARDEN / ARRIVAL",
+      "title": "Your city,\nyour garden",
+      "image": "assets/garden-district.png",
+      "caption": "You arrive while breakfast is still happening. Voices travel across the water; someone waves from a table under the trees. Your home is close enough that joining can be an impulse. Shared kitchens, maintained paths, water systems, and quiet service routes support this ease. The garden is a place you can live, with room for an ordinary afternoon.",
+      "pins": []
+    },
+    {
+      "id": "garden-walk",
+      "layout": "photo",
+      "kicker": "THE LIVING GARDEN / INHABITATION",
+      "title": "Follow the\ncooler path",
+      "image": "assets-v4/garden-university/garden-walk.png",
+      "caption": "You follow the cooler edge of the garden, where leaves move above the path. A friend stops to show you something small growing beside the water. You can linger without blocking the way. Planting, shade, seating, and accessible routes are composed together; automated care supports the landscape while people develop their own attachments to it.",
+      "pins": []
+    },
+    {
+      "id": "garden-section",
+      "layout": "photo",
+      "kicker": "THE LIVING GARDEN / WORKING SECTION",
+      "title": "Under the\nliving landscape",
+      "image": "assets-v4/garden-university/garden-section.png",
+      "caption": "You can trace the garden down through its roots. Terraces and rooms sit above water storage, utility routes, returned materials, and places to repair the machines that care for them. Inhabitation and maintenance have distinct paths within one structure. The landscape feels effortless because the systems beneath it have places to work, be reached, and become useful again.",
+      "pins": []
+    },
+    {
+      "id": "university-arrival",
+      "layout": "photo",
+      "kicker": "THE OPEN UNIVERSITY / ARRIVAL",
+      "title": "A life gathered\naround curiosity",
+      "image": "assets/open-university.png",
+      "caption": "You hear a conversation before you know its subject. A table has gathered around a question, and there is space beside someone who is learning too. Across the courtyard are books, instruments, and places to make an idea tangible. Public knowledge and shared equipment give curiosity somewhere to go. You can stay an afternoon or begin a life here.",
+      "pins": []
+    },
+    {
+      "id": "university-cosmos",
+      "layout": "photo",
+      "kicker": "THE OPEN UNIVERSITY / SHARED INQUIRY",
+      "title": "Step inside\na question",
+      "image": "assets-v4/garden-university/university-cosmos.png",
+      "caption": "You stand beside friends inside a model of something too vast to encounter directly. A gesture changes the scale; a familiar point becomes a landscape of relationships. Someone asks what the model leaves out. Shared visualization, scientific instruments, and AI guidance bring difficult ideas into reach. Understanding grows through moving, questioning, and comparing what each of you notices.",
+      "pins": []
+    },
+    {
+      "id": "university-workshop",
+      "layout": "photo",
+      "kicker": "THE OPEN UNIVERSITY / MAKING KNOWLEDGE",
+      "title": "An idea becomes\nan instrument",
+      "image": "assets-v4/garden-university/university-workshop.png",
+      "caption": "You turn a part in your hands while a more experienced visitor shows you how it connects. Nearby, a machine prepares the next piece. The question from yesterday is becoming something you can test. Shared fabrication, repair benches, and public design records let discoveries travel beyond this room. You learn enough to change the design, then leave that knowledge available.",
+      "pins": []
+    },
+    {
+      "id": "exploration-arrival",
+      "layout": "photo",
+      "kicker": "THE EXPLORATION COMMUNITY / ARRIVAL",
+      "title": "A dream with\na place to grow",
+      "image": "assets-v2/exploration-community.png",
+      "caption": "You enter the spacecraft hall and instinctively lower your voice. Above the gathering, a vessel is taking shape; someone beside you recognizes a component they helped imagine. Robots and specialized tools carry out the heavy assembly. This community gives a shared dream a physical home, where learning, making, and the patient life between missions belong together.",
+      "pins": []
+    },
+    {
+      "id": "exploration-launch",
+      "layout": "photo",
+      "kicker": "THE EXPLORATION COMMUNITY / A SHARED MOMENT",
+      "title": "The horizon\nopens",
+      "image": "assets-v4/exploration-quest/exploration-launch.png",
+      "caption": "You wait with people who have followed this mission through years of questions and revisions. The distant launch lights the horizon; conversation gives way to watching. Transport, launch infrastructure, automated preparation, and a continuing flow of knowledge connect this moment to the settlement. Tomorrow, the same community will make breakfast, study what happened, and begin thinking further.",
+      "pins": []
+    },
+    {
+      "id": "exploration-section",
+      "layout": "photo",
+      "kicker": "THE EXPLORATION COMMUNITY / WORKING SECTION",
+      "title": "The life behind\na mission",
+      "image": "assets-v4/exploration-quest/exploration-section.png",
+      "caption": "A mission has a home long before it has a launch date. You move between a public listening hall, places to learn, and views into instrument assembly. Clean work, heavy handling, and service transport have their own spaces. An observatory connects the campus to the sky. Shared knowledge and maintained equipment let the next generation continue the journey.",
+      "pins": []
+    },
+    {
+      "id": "quest-arrival",
+      "layout": "photo",
+      "kicker": "THE CITY OF SHARED QUESTS / ARRIVAL",
+      "title": "The story\nis inhabited",
+      "image": "assets-v2/shared-quest-city.png",
+      "caption": "You arrive as lanterns appear along the canal. A friend greets you in a costume they have been making all week; supper is waiting nearby. Through shared AR, the city carries creatures, histories, and invitations its residents have composed. The story continues between quests, held in real homes, workshops, friendships, and the places where people keep meeting.",
+      "pins": []
+    },
+    {
+      "id": "quest-bridge",
+      "layout": "photo",
+      "kicker": "THE CITY OF SHARED QUESTS / INHABITATION",
+      "title": "You are inside\nthe adventure",
+      "image": "assets-v4/exploration-quest/quest-bridge.png",
+      "caption": "You cross the bridge with someone who knows a different version of the tale. Above the roofs, the shared world answers a choice your group has made. The bridge remains solid beneath your hand. Spatially anchored AR gives many people one unfolding encounter; the physical city supplies distance, weather, companions, and somewhere to sit when the adventure pauses.",
+      "pins": []
+    },
+    {
+      "id": "quest-backstage",
+      "layout": "photo",
+      "kicker": "THE CITY OF SHARED QUESTS / MAKING A WORLD",
+      "title": "The workshop\nbehind the magic",
+      "image": "assets-v4/exploration-quest/quest-backstage.png",
+      "caption": "You come looking for a costume piece and stay to invent a creature. Above the service level are homes, guild workshops, and the street where the story unfolds. Below, props return, robots help repair them, and lighting and digital systems are maintained. The realm has an ongoing material life; its inhabitants can become its next authors.",
+      "pins": []
+    },
+    {
+      "id": "ar-megastructure",
+      "layout": "photo",
+      "kicker": "THE HOUSE OF WORLDS / A PURPOSE-BUILT AR MEGASTRUCTURE",
+      "title": "A building\nmade for worlds",
+      "image": "assets-v4/ar/ar-megastructure.png",
+      "caption": "You approach a megastructure conceived for shared AR worlds from its first beam. Enormous stacked halls provide real distances to walk; dark lift cores connect them. Between halls, thick technical floors carry the machinery of changing environments. You are entering an architecture whose purpose is to let whole worlds become places people can inhabit together.",
+      "pins": []
+    },
+    {
+      "id": "ar-portal",
+      "layout": "photo",
+      "kicker": "THE HOUSE OF WORLDS / PASSAGE",
+      "title": "The door opens\nsomewhere else",
+      "image": "assets-v2/elevator-as-portal.png",
+      "caption": "You enter the cabin with a friend. The doors close; the atmosphere changes. When they open, the next world seems to have been waiting on the other side. The lift has carried your body to another floor. Coordinated sound, shared AR, and an arrival designed around the doorway turn that ordinary movement into the felt experience of crossing realities.",
+      "pins": []
+    },
+    {
+      "id": "ar-worldhall",
+      "layout": "photo",
+      "kicker": "THE HOUSE OF WORLDS / INHABITATION",
+      "title": "Stay in the\ncloud harbor",
+      "image": "assets-v4/ar/ar-worldhall.png",
+      "caption": "You step into the cloud harbor and feel the scale of it before you speak. Friends wait beside a railing; their voices belong to the same space as yours. A vast physical hall gives the realm room to breathe. Walkways, touchable surfaces, spatial sound, and shared AR let an imagined place become somewhere people can gather and develop traditions.",
+      "pins": []
+    },
+    {
+      "id": "ar-reality-pair",
+      "layout": "photo",
+      "kicker": "THE HOUSE OF WORLDS / PHYSICAL AND EXPERIENCED SPACE",
+      "title": "One body.\nTwo ways of seeing.",
+      "image": "assets-v4/ar/ar-reality-pair.png",
+      "caption": "Look at the bare hall, then the cloud harbor: the walkway bends in the same place, your companions stand on the same floor, and your hand meets the same rail. Structure and tactile surfaces stay aligned. The proposed display system supplies visual replacement and shared spatial cues; the building supplies the body of the world.",
+      "pins": []
+    },
+    {
+      "id": "ar-section",
+      "layout": "photo",
+      "kicker": "THE HOUSE OF WORLDS / WORKING SECTION",
+      "title": "The architecture\nof many realities",
+      "image": "assets-v4/ar/ar-section.png",
+      "caption": "World halls rest above layers that make their transformations possible: climate and sound systems, tracking, freight, prop storage, and repair. Passenger lifts bring you into a realm; service routes bring its next physical setting. Stable terrain decks and tactile anchors support changing perceptions. This is an architectural proposal for an inhabited medium, built expressly around shared AR.",
+      "pins": []
+    },
+    {
+      "id": "materials",
+      "layout": "photo",
+      "image": "assets/material-lives.png",
+      "kicker": "THE MATERIAL INHERITANCE / WHAT A WORLD LEAVES AVAILABLE",
+      "title": "A building’s\nnext beginning",
+      "caption": "A beam waits for another building. Panels, fittings, and tools return with information about their condition and use. Public designs and compatible connections make them available to new makers. Recovery still needs energy, inspection, storage, and care. Freedom to transform grows from keeping materials useful, while living ecosystems need their own conditions for renewal.",
+      "pins": []
+    },
+    {
+      "id": "principles",
+      "layout": "principles",
+      "kicker": "THE GENERATIVE UNDERSTANDING / WHAT THESE WORLDS ARE FOR",
+      "title": "Keep the conditions\nof becoming alive",
+      "quote": "It’s not about being generative yourself, it’s about ensuring your environment is",
+      "attribution": "Ren / 30 April 2026",
+      "intro": "The world we build shapes what people learn, desire, and create. Their lives reshape that world in turn.",
+      "loop": [
+        "Shared understandings",
+        "Choices and institutions",
+        "Lived environments",
+        "Further lives and beginnings"
+      ],
+      "principles": [
+        [
+          "Care beyond yourself",
+          "Sustain the people, knowledge, materials, and living systems your life depends on."
+        ],
+        [
+          "Enable further beginnings",
+          "Leave tools and conditions others can continue from. Rest and continuity belong here too."
+        ],
+        [
+          "Let many lives flourish",
+          "Study, play, expression, exploration, care, and quiet lives need no common ranking."
+        ],
+        [
+          "Keep rivalry within bounds",
+          "A game’s prizes should not give winners control over another person’s necessities."
+        ],
+        [
+          "Build for future transformation",
+          "Keep knowledge available and material useful. Preserve the ability to change a world again."
+        ],
+        [
+          "Learn from consequences",
+          "Let neighbors, experience, and unexpected lives change the project and its principles."
+        ]
+      ],
+      "note": "生生不息 is developed here as generation enabling further generation. It does not mean maximizing output, complexity, or the number of possibilities."
+    },
+    {
+      "id": "invitation",
+      "layout": "invitation",
+      "kicker": "AN INVITATION / TURNING A WORLD INTO A PLACE",
+      "title": "Where would\nyou begin?",
+      "intro": "Choose a place that draws you in. Then follow a body through it and a dependency beneath it.",
+      "steps": [
+        [
+          "Arrive",
+          "Draw the first thing you see, hear, touch, and want to move toward."
+        ],
+        [
+          "Inhabit",
+          "Let someone meet a friend, pursue a purpose, or enjoy doing very little."
+        ],
+        [
+          "Look beneath",
+          "Trace the structure, energy, materials, knowledge, and maintenance that support the experience."
+        ],
+        [
+          "Build and learn",
+          "Make a useful part. Let what happens change both the place and the principles."
+        ]
+      ],
+      "closing": "A spacecraft hall, a city of quests, a garden, a university, or a megastructure of shared realities can each be the beginning of a different way to live. Our task is to build the conditions in which those lives can flourish, and further worlds can emerge."
+    },
+    {
+      "id": "evidence",
+      "layout": "evidence",
+      "kicker": "TECHNICAL ROOTS / SOURCES THAT SUPPORT THE STARTING POINT",
+      "title": "Existing capabilities,\nwith their scope visible",
+      "intro": "Primary reports checked on 7 September 2026. These establish different operating capabilities and demonstrations; their combination into the proposed future is a construction program."
+    },
+    {
+      "id": "provenance",
+      "layout": "provenance",
+      "kicker": "ABOUT THIS ATLAS / EDITION 04 / 07 SEPTEMBER 2026",
+      "title": "Seeing a possibility\nis the beginning",
+      "blocks": [
+        [
+          "The vision and this edition",
+          "Ren’s dialogue joins autonomous productive capacity, shared abundance, freedom from compulsory labor, generative culture, and plural ways of living. This visual edition answers his request for embodied experiences and a megabuilding designed expressly for AR. Scenes, architectural forms, sensory details, and layouts are AI-developed proposals."
+        ],
+        [
+          "What the images show",
+          "Twenty distinct concept illustrations, each placed once. Twelve are new: embodied experiences, architectural sections, and the purpose-built AR megastructure. They share a design vocabulary within each case; they are not views derived from one geometrically resolved 3D model. Cutaways make spatial ideas visible without establishing structural or engineering feasibility."
+        ],
+        [
+          "How to read the AR worlds",
+          "Bodies move through real floors, paths, lifts, and tactile settings. Perceptual environments are aligned to that space. Large visual replacement requires a proposed occlusive display or passthrough system; ordinary transparent glasses alone are not assumed to erase the building. Immense apparent skies and distances are experienced, not literal additional floor area."
+        ],
+        [
+          "The argument remains available",
+          "The atlas retains the technical, generative, and material foundations in compact form. Edition 03 and the project’s linked foundations retain the fuller argument, evidence notes, and original source passages. Ren’s April 30 quotation and 生生不息 anchor the generative orientation."
+        ]
+      ],
+      "references": [
+        [
+          "UNEP / 2021 / Beverage cups: life-cycle comparisons",
+          "https://www.lifecycleinitiative.org/wp-content/uploads/2021/03/UNEP-D002-Beverage-Cups-Report_lowres.pdf"
+        ],
+        [
+          "European Commission JRC / 2025 / Reclaimed structural steel",
+          "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC144410/JRC144410_01.pdf"
+        ],
+        [
+          "IEA / 2020 / Iron and Steel Technology Roadmap",
+          "https://iea.blob.core.windows.net/assets/eb0c8ec1-3665-4959-97d0-187ceca189a8/Iron_and_Steel_Technology_Roadmap.pdf"
+        ]
+      ]
+    }
+  ]
+}

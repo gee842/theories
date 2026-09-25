@@ -1,0 +1,117 @@
+# Bonfire memory index
+
+## Governing rules and active workflows
+
+- [Plan53 execution state 2026-09-03](plan53_execution_state_2026-09-03.md) — Plan 53 is being executed uncommitted on the shared checkout; orchestrator notes path, fresh test DB bonfire_plan53_test, pending protocol-bump wire changes
+- [[verification-regime-2026-08-14]] — OWNER RULE — Bonfire's gate budget, behavior-not-bytes law, consumed-evidence rule, and unit/integration split
+- [Feedback owner manages commits](feedback_owner_manages_commits.md) — The owner commits this repo themselves; a general "agree" to recommendations never authorizes a commit
+- [Shared repo concurrent sessions](shared_repo_concurrent_sessions.md) — OWNER RULE: multiple sessions share this checkout; never reset, stash, checkout --, clean, or stage broadly. Stage explicit owned paths only.
+- [Feedback no backwards compat](feedback_no_backwards_compat.md) — Bonfire is pre-production; do NOT add backwards-compat layers, alias shims, or deprecated-but-kept code paths. Elegance > legacy.
+- [Feedback no word pinning](feedback_no_word_pinning.md) — OWNER RULE — pin observable behavior, never wording, source bytes, or provenance; renames are in scope by default
+- [Feedback verification economics](feedback_verification_economics.md) — Workflow policy — implementation agents verify their own units; batch semantic review and integration at meaningful boundaries
+- [Feedback no clarifying questions](feedback_no_clarifying_questions.md) — Work without stopping for clarifying questions when a safe, reasonable assumption can preserve momentum.
+- [Feedback thinking partner](feedback_thinking_partner.md) — While the idea evolves, help think and sharpen; don't jump to code or scaffolding unsolicited
+- [Feedback owner docs readable](feedback_owner_docs_readable.md) — Owner-facing docs must be plain-language decision narratives; implementation detail belongs only where an executor needs it
+- [Feedback sdk is a kit](feedback_sdk_is_a_kit.md) — Don't bake anti-pattern preventions into the Bonfire SDK kernel — build what we want, leave the rest open
+- [Feedback model tiering workflows](feedback_model_tiering_workflows.md) — Keep subagent fan-out economical, independent, and safe in the shared Bonfire checkout
+- [User role](user_role.md) — User is Bonfire's founder/designer and wants an implementation-capable thinking partner
+- [Worktree typecheck tests setup](worktree_typecheck_tests_setup.md) — Run verification in the checkout containing the edits; current source mappings remove the old stale-dist workaround
+- [Local run setup](local_run_setup.md) — Current local server/web startup — use a migration-compatible database and build before launching the web profile alone
+- [Pg test suite lock](pg_test_suite_lock.md) — Unit/integration split and the machine-wide advisory lock for PG-backed test invocations
+- [Examples test leg masked by build bail](examples_test_leg_masked_by_build_bail.md) — check:release runs example build before example tests; a build failure prevents the runtime leg from starting
+- [E2 two commit law mechanism](e2_two_commit_law_mechanism.md) — Operational core of check:kind-legacy-root-transition: watched-path dirtiness selects HEAD or HEAD^1 and clean-tree debt self-heals after one later commit
+- [Phase6 family landing recipe](phase6_family_landing_recipe.md) — Current Phase-6 family landing mechanics: checker-consumed unit records, destination roots, bridge debt, and exact structural claims
+- [Phase6 unit deletion recipe](phase6_unit_deletion_recipe.md) — Current Phase-6 dead-unit rule: prove it unused, remove live scope claims atomically, then let the derived ledger drop it
+- [Reusable journal writer](reusable_journal_writer.md) — Use the phase-neutral architecture journal writer only when a structure-map claim changes
+- [SDK elegance Core resolution 2026-09](sdk_elegance_core_resolution_2026-09.md) — Plan 53 (docs/yi/53-lean-core-and-elegant-sdk) is the active work order; Plans 49–52 done; two-owner World product and weak certificate evaluator findings
+- [Structural arc design 2026 07 12](structural_arc_design_2026-07-12.md) — Historical Plan 49 pickup and structural cautions (Plans 49–52 complete as of 2026-09-02)
+- [Plan49 completion review 2026-08-29](plan49_completion_review_2026-08-29.md) — Verdict on the "Plan 49 complete" claim: structure holds, the public event-time Yi read does not
+- [Event-time Yi fold coverage gap](event_time_yi_fold_coverage_gap.md) — Event-time reads broken at the Plan 49 HEAD, fixed by the uncommitted 2026-08-29 wave; durable fold laws and known limits
+- [PG COLLATE C index matching](pg_collate_c_index_matching.md) — C-collated indexes match only when the query names COLLATE "C"; plain equality scans the whole domain
+- [Main checkout phase6 census blocked](main_checkout_phase6_census_blocked.md) — Shared-checkout rule for applying phase-6 structure-map transitions without overwriting another session's live journal state
+- [Occasion pg representation is a stub](occasion_pg_representation_is_a_stub.md) — Superseded: the Occasion commit spine is live; production writes commit through it
+- [Pin ossification audit](pin_ossification_audit.md) — Durable audit conclusion: verification describes defects and consumers; it must not freeze the architecture or supervise itself
+
+## Other surviving memories
+
+- [App record race fix](app_record_race_fix.md) — Current app-record concurrency model: immutable child rows and best-effort one-per-member dedupe
+- [Architecture c complete](architecture_c_complete.md) — Architecture C current truth: the materialized Yi row is canonical; events are audit and best-effort replay
+- [Atproto lessons plan2](atproto_lessons_plan2.md) — Current AT Protocol comparison lessons that remain implemented in Bonfire
+- [Automation reaction holding face bridge](automation_reaction_holding_face_bridge.md) — Current Automation Reaction V1 installation bridge and exact-owner dimension-read rule
+- [Bonfirex database direction](bonfirex_database_direction.md) — Exploratory authority-aware database direction for partially trusted humans, apps, and agents
+- [Bundle3 ws decomposition](bundle3_ws_decomposition.md) — Current WebSocket transport decomposition and verification commands
+- [Cert native storage design](cert_native_storage_design.md) — Current certificate-at-rest model and the legacy lowering that still remains
+- [Chat branching shipped](chat_branching_shipped.md) — Current chat DAG, streamed-turn identity, branching UI, and stop/showcase seams
+- [Class route kind projection](class_route_kind_projection.md) — Canonical spirit origin projection and ordered kind-port precedence
+- [Computation service wall](computation_service_wall.md) — Current Computation service boundary and the remaining engine/handlers transition
+- [Consolidation execution 2026 06](consolidation_execution_2026-06.md) — Shared-checkout safety and current verification commands; the 2026 consolidation diary is obsolete
+- [Container primitive gap](container_primitive_gap.md) — Current membered-container traits and compiled marker/edge membership representations
+- [Core naming review 2026 07 11](core_naming_review_2026-07-11.md) — Current Core vocabulary authority and the surviving route-name invariants
+- [Ctx atomic real transaction](ctx_atomic_real_transaction.md) — PortHandlerContext.atomic uses one real transaction; use the tx mirror and expect joined nesting
+- [Ctx transfer verbs shipped](ctx_transfer_verbs_shipped.md) — Current handler custody verbs and Kind authoring feature surface
+- [Data model review 2026 06 11](data_model_review_2026-06-11.md) — Current Yi row, structural-write, schema, and PostgreSQL event invariants
+- [Doorway welcome migration](doorway_welcome_migration.md) — Doorway and Sage use referent-indexed child rows for newcomers and introductions; there are no shared roster arrays
+- [Edge bond capability arc](edge_bond_capability_arc.md) — Current bond, fusion, transient-kind, authority-narrowing, and containment-cycle invariants
+- [Event payload snapshot invariant](event_payload_snapshot_invariant.md) — Memory events snapshot payloads on append for PostgreSQL parity; memory event reads intentionally remain live
+- [Extension model tier a](extension_model_tier_a.md) — Shipped Tier-A loader for trusted, operator-selected in-process handler modules
+- [Goal exec 2026 06 30](goal_exec_2026-06-30.md) — Current runtime boundaries retained from the 2026-06-30 remediation
+- [Grab bag dissolution finished](grab_bag_dissolution_finished.md) — Current handler and test-fixture boundaries after the grab-bag dissolution
+- [Grab bag dissolution shipped](grab_bag_dissolution_shipped.md) — Current package boundary for agent/social vocabulary and core boot kinds
+- [Hardening p1 p7 2026 06 07](hardening_p1_p7_2026-06-07.md) — Verified runtime and Sigil hardening facts that remain current
+- [Hardening to 9 2026 06 14](hardening_to_9_2026-06-14.md) — Current replay and wire-lifecycle facts retained from the hardening pass
+- [Hero as principal](hero_as_principal.md) — Current auth stance: human account bearers act as their subject; delegation is explicit
+- [Holding authority phase1](holding_authority_phase1.md) — Current holding lifecycle authority decision boundary
+- [Horizontal scaling plan3](horizontal_scaling_plan3.md) — Current multi-process deployment architecture
+- [Ideal yi architecture](ideal_yi_architecture.md) — Current Yi architecture rule: unify declaration, keep execution split by timing, residency, failure, authority, and storage shape
+- [Kernel decoupling design 2026 06 16](kernel_decoupling_design_2026-06-16.md) — Current boundary: Core owns substrate mechanisms; std/server own agent and product vocabulary
+- [Kernel uid is not an ambient reader](kernel_uid_is_not_an_ambient_reader.md) — kernel.uid is the opaque root principal, not the system read caller; use the principal that owns the surface
+- [Keypair accounts shipped](keypair_accounts_shipped.md) — Native ed25519 keypair signup/login is on main; current routes, credential split, starvation marker, recovery, and PoW
+- [Kit index race fix](kit_index_race_fix.md) — Community kit collections avoid lost updates with single-writer referent children; locks remain only for true single-winner transitions
+- [Linearization memo is inert on purpose](linearization_memo_is_inert_on_purpose.md) — Identity's cross-owner linearization cache port is intentionally inert; do not confuse it with the live legacy Engine cache
+- [Listener reactor design](listener_reactor_design.md) — The old Listener/pending-action branch is not current; use AutomationReaction V1 and hand-roll approval state where needed
+- [Live fanout scalability](live_fanout_scalability.md) — Current live-delivery architecture: post-commit DeliveryPump, one server dispatcher, visibility floor, and coalesced cursors
+- [Merge drop audit 2026 06 11](merge_drop_audit_2026-06-11.md) — June 2026 merge-drop verdict plus a reusable merge-tree diagnostic; current auth coverage lives in integration suites
+- [Messages as event substrate](messages_as_event_substrate.md) — Current content-block message contract, agent bridge, and message-row/event-log dispatch boundary
+- [Messaging reactivity agent vocab deepdive](messaging_reactivity_agent_vocab_deepdive.md) — Current split between core agent traits, the std agent kit, dedicated message rows, and generic reactions
+- [Named spirit storage shape drift](named_spirit_storage_shape_drift.md) — Resolved named-spirit storage drift — current readers use referent-linked Yi children and owned-Kind dimensions
+- [Phase2 governance closure landed](phase2_governance_closure_landed.md) — The surviving Phase-2 fact: E2 final resolution and physical move/delete are a two-commit operation
+- [Plan39 review verdict](plan39_review_verdict.md) — Operation-owned addressability shipped; current seams and the archived plan-39 record
+- [Platform design converged](platform_design_converged.md) — Owner-approved community-OS direction, with current address and implementation pointers
+- [Port gate grant design](port_gate_grant_design.md) — Bonfire verb-layer model, reduced to its current Port/Gate/certificate implementation seams
+- [Presence typing ephemeral signals](presence_typing_ephemeral_signals.md) — Cross-process presence and typing use the ephemeral Redis signal lane, separate from durable events
+- [Project sdk redesign objective](project_sdk_redesign_objective.md) — Core objective — keep upgrading the SDK toward a developer-praised world-building flow
+- [Review 2026 06 30 parallel fixes](review_2026-06-30_parallel_fixes.md) — Two durable fixes from the 2026-06-30 review: marker counts and live connection state
+- [Review arch 2026 06 30](review_arch_2026-06-30.md) — Historical architecture review and its closed remediation record; current seams only
+- [Review architecture sdk 2026 06 05](review_architecture_sdk_2026-06-05.md) — Historical architecture-review snapshot; retain only the subtractive-unification heuristic
+- [Review architecture sdk 2026 06 07](review_architecture_sdk_2026-06-07.md) — Historical SDK review, rewritten with the verified current package status
+- [Review full 2026 06 10](review_full_2026-06-10.md) — Historical June 10 review; current durable handoff is typed authoring, runtime schema enforcement, and click-gated/read-only sigils
+- [Review full 2026 06 13](review_full_2026-06-13.md) — Historical June 13 review; current durable handoff is storage-backed edge uniqueness and its limits
+- [Review full 2026 07 23](review_full_2026-07-23.md) — Historical full-review snapshot; retain only shared-checkout safety and the current-use caveat
+- [Review sdk arch 2026 06 13](review_sdk_arch_2026-06-13.md) — Historical SDK architecture review; retain only its review-discipline lesson and current-use caveat
+- [Review sdk design 2026 06 11](review_sdk_design_2026-06-11.md) — Current SDK review invariants: unified Yi authoring, wire/in-process port parity, and executable consumer checks
+- [Review unification authz gaps](review_unification_authz_gaps.md) — Current authorization invariants that supersede the resolved June 2026 unification-gap inventory
+- [Round2 sdk review fixes](round2_sdk_review_fixes.md) — Current SDK/runtime invariants retained from the June review: typed port handlers, enforced row schemas, mutate-gated kind updates, liveness, and membership-gated DAG reads.
+- [Rpc write surface unified](rpc_write_surface_unified.md) — Current RPC registry: typed schema + exhaustive method tuple, yi substrate writes, product write facades, kit deployment, and unified Yi persistence.
+- [Sdk separability review 2026 06 16](sdk_separability_review_2026-06-16.md) — Current package boundary retained from the June SDK review; point-in-time product-readiness scores and gap inventories are superseded.
+- [Security hardening sweep 2026 06 24](security_hardening_sweep_2026-06-24.md) — Current security invariants retained from the June sweep; old branch, count, ledger, and verification-ceremony claims removed.
+- [Seed scripts unified surface](seed_scripts_unified_surface.md) — Current seed/demo entry points and their database requirements; all four seed scripts exist on the unified kind/port surface.
+- [Session architecture](session_architecture.md) — A session is one spirit-shaped Yi composing core:membered + core:streamed; core:chat, anchored groups, channels/posts, and DMs share that substrate without a class hierarchy.
+- [Session face kinds persisted](session_face_kinds_persisted.md) — Session identity is persisted as core:spirit + core:membered + core:streamed; there is no session face discriminator, and Yi projection remains faithful to stored kinds.
+- [Sigil package](sigil_package.md) — Current sandboxed miniapp runtime, React adapter, and Bonfire bridge
+- [Single writer children shipped](single_writer_children_shipped.md) — Container collections use single-writer child rows aggregated at read
+- [Spirit lifecycle events arc](spirit_lifecycle_events_arc.md) — Current web lifecycle invalidation and invoke dispatch distinction
+- [Structure remediation 2026 06 11](structure_remediation_2026-06-11.md) — Durable module-separation facts after later structural work
+- [Unification finish progress](unification_finish_progress.md) — Yi storage unification is complete; current verified seams
+- [Unified mental frame direction](unified_mental_frame_direction.md) — Canonical Yi mental frame and its current source documents
+- [Unify manifest engine 2026 06 07](unify_manifest_engine_2026-06-07.md) — Current manifest routing across spirit, holding, and atomic seed writes.
+- [Unique edge backstop](unique_edge_backstop.md) — The core:unique-edge marker family is retired; Relation policy plus a reservations table enforces multiplicity
+- [Vocabulary sweep executed](vocabulary_sweep_executed.md) — CLAUDE.md Naming and docs/VOCABULARY.md are the current vocabulary law
+- [Worlds review 2026 07 06](worlds_review_2026-07-06.md) — Archived July 2026 SDK/worlds review; corrected source paths and current-use warning
+- [Ws reconnect herd perf](ws_reconnect_herd_perf.md) — Current WS replay herd controls: bounded FIFO replay, fresh-at-head cursors, request-scoped visibility caching
+- [Yi25 structural unification execution](yi25_structural_unification_execution.md) — Archived doc 25 execution record; current source locations for the surviving unifications
+- [Yi45 capability plan review](yi45_capability_plan_review.md) — Archived doc 45 review; current capability, presentation, and touch source map
+- [Yi45 implementation progress](yi45_implementation_progress.md) — Archived docs 45–47 implementation record; live source map, not a current remaining-work queue
+- [Yi execution built](yi_execution_built.md) — Superseded Yi completion diary; current owner documents and archive boundary
+- [Yi kind is a marker](yi_kind_is_a_marker.md) — Current Yi kind-marker model: ordered additive kinds, separate originKind, marker-derived views
+- [Yi message renamed to stream](yi_message_renamed_to_stream.md) — Current Stream storage naming and source locations after the yi_message rename
+- [Yi plan declaration sovereign](yi_plan_declaration_sovereign.md) — Archived doc 32 declaration-sovereignty plan; corrected paths and current-authority boundary

@@ -1,0 +1,58 @@
+[
+  {
+    "page": 1,
+    "path": "assets-v2/worldmakers-forum.png",
+    "sha256": "7cc71b7060c18e49147cfbd4a260c94e36c84576aae639581c0bd74e03ee8b15",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "page": 3,
+    "path": "assets-v3/production-commons.png",
+    "sha256": "b7012c7d069b4ec317fac3dadf5b3abce1bdf3b691a331d0c30c0457658e06ac",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "page": 11,
+    "path": "assets/garden-district.png",
+    "sha256": "4d6a43f672d393458c36231ffdc62cb90a8aa7b7796e43b857d57c24eb0956cc",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "page": 12,
+    "path": "assets/open-university.png",
+    "sha256": "57bccccdc387c40b8052ae923a992c7c96470e2a2618ff2eec67d5772ce5f919",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "page": 13,
+    "path": "assets-v2/exploration-community.png",
+    "sha256": "adea88e8da997acf111c354de714bbac2ddeb126b1073ec28459ff8ff2f3a490",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "page": 14,
+    "path": "assets-v2/shared-quest-city.png",
+    "sha256": "c5d433262ee8535fcceaed136cd50596f430c27336da6ecfce603a4aae9c44eb",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "page": 15,
+    "path": "assets-v2/elevator-as-portal.png",
+    "sha256": "fb7bb6e7ca1559d4052fc20420ab416be0136eb9fd90633474d5aadcfba8a20b",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "page": 16,
+    "path": "assets/material-lives.png",
+    "sha256": "2ef7b298d6a7e36a837748320a999f86b60bbfebf16e01663d65743e2f514277",
+    "width": 1536,
+    "height": 1024
+  }
+]

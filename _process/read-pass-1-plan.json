@@ -1,0 +1,750 @@
+{
+ "chat_batches": [
+  {
+   "id": "chats-01",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2024-03-18_Enabling_the_discovery_utilization_circulation_and_compositi_5ace6c64.md",
+    "2024-03-18_Questioning_AI_Identity_7d452c14.md",
+    "2024-03-18_The_Growing_Gap_Between_Societal_Complexity_and_Governance_2f3bbe9d.md",
+    "2024-03-18_The_Growing_Gap_Between_Societal_Complexity_and_Governance_f31fbc75.md",
+    "2024-03-18_The_Growing_Gap_Between_Societal_Complexity_and_Governance_32160597.md",
+    "2024-04-01_Aerospace_Engineer_Knowledge_of_Complex_Systems_Theories_7e9844a5.md",
+    "2024-04-03_Cultivating_Blockchain_Innovation_in_an_Invisible_Community_b5aa6264.md",
+    "2024-04-03_Exploring_Invisible_Colleges_and_Their_Role_in_Scientific_Pr_8511eb12.md",
+    "2024-04-08_Kant_s_View_of_Intersubjective_Truth_eaa21856.md",
+    "2024-04-08_The_Roots_of_America_s_Political_and_Social_Divisions_b119a861.md",
+    "2024-04-09_The_Nature_of_Empirical_Knowledge_720464e2.md",
+    "2024-04-11_A_Coherent_Sci-Fi_Narrative_from_an_AI_2e0f3262.md",
+    "2024-04-11_Introduction_to_AI_xe_7d62a4db.md",
+    "2024-04-11_Money_as_a_Social_Construct_and_Shared_Narrative_4e4c8edf.md",
+    "2024-04-11_The_Meaning_of_Ironically_Sincere_in_Metamodernism_fbe9492d.md",
+    "2024-04-11_The_Mechanics_of_Regeneration_in_Video_Games_e8d8b246.md",
+    "2024-04-11_The_Unsustainable_Nature_of_Unfettered_Capitalism_6591ece6.md",
+    "2024-04-12_A_Foundation_of_Entirely_Novel_Axioms_8aa12228.md",
+    "2024-04-13_Explaining_Metamodernism_in_a_Sadhguru_Way_20d6f738.md",
+    "2024-04-13_Money_and_Economy_as_Social_Narratives_19ae5b19.md",
+    "2024-04-13_The_Most_Suitable_Swimming_Style_for_Long_Distance_Swimming_53ba4dde.md",
+    "2024-04-13_Understanding_Daniel_Schmachtenberger_s_Worldview_19ce9a30.md",
+    "2024-04-15_Brand_identity_for_Invisible_Garden_capturing_its_technologi_a4b98940.md",
+    "2024-04-16_Balancing_AI_risks_and_opportunities_through_harmonious_coex_4995bbc7.md",
+    "2024-04-16_Balancing_AI_risks_and_opportunities_through_harmonious_coex_d0b9fc4a.md",
+    "2024-04-16_Coordinating_AI_and_society_to_avoid_disaster_through_resour_027e6d2d.md",
+    "2024-04-16_Preparing_arguments_on_the_ethics_of_accelerating_and_harmon_6ac535e9.md",
+    "2024-04-16_The_Persistent_View_of_Inevitably_Stumbling_Upon_Consciousne_ce4b9a08.md",
+    "2024-04-17_Beliefs_of_connectionism_c962f2f5.md",
+    "2024-04-22_Metaphysical_Foundations_for_Global_Ethics_524575e4.md",
+    "2024-04-22_The_Libertarian_View_of_Humans_as_Freedom-Loving_Individuals_3d9c3347.md",
+    "2024-04-23_Understanding_Autistic_Burnout_8761c6dd.md",
+    "2024-04-24_Understanding_Value_Memes_be3cd585.md",
+    "2024-04-24_Understanding_the_Legal_Meaning_of_Prima_Facie_44ad63cb.md",
+    "2024-04-25_Understanding_the_Multifaceted_Nature_of_Corruption_22e06bad.md",
+    "2024-04-26_Functional_Blockchain_Tokens_with_Real-World_Utility_f264d33b.md",
+    "2024-04-27_Functional_Blockchain_Tokens_with_Real-World_Utility_1f9c6195.md",
+    "2024-04-30_Determining_Kent_s_Moral_Obligations_a70f91e9.md",
+    "2024-04-30_Introduction_to_Cybernetics_0b47a280.md",
+    "2024-04-30_Organism_s_Subjective_Perception_of_Environment_287fd9a5.md",
+    "2024-04-30_Regulating_Market_Leveling_Practices_cbb8c7f0.md",
+    "2024-05-01_Chess_Game_Logic_in_Python_35a0bb0c.md",
+    "2024-05-01_Exploring_Second-Order_Cybernetics_0be3e15a.md",
+    "2024-05-02_Autopoiesis_and_Embodied_Cognition_77c89e75.md",
+    "2024-05-02_Bateson_s_Cybernetic_Mind_1d9a5ebc.md",
+    "2024-05-02_Developing_Cognitive_Science_from_Philosophical_Concepts_36e0e426.md",
+    "2024-05-02_Structural_Dependence_in_Living_Systems_dc4c0f97.md",
+    "2024-05-02_Troubleshooting_a_Unresponsive_USB_Hard_Drive_c24c8277.md"
+   ],
+   "span": "2024-03-18..2024-05-02"
+  },
+  {
+   "id": "chats-02",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2024-05-03_Exploring_Poetry_Requests_8f695a6a.md",
+    "2024-05-03_Fractals_and_Strange_Attractors_in_Dynamical_Systems_4a681126.md",
+    "2024-05-03_Questioning_Historical_Narratives_2e29b30c.md",
+    "2024-05-09_Connecting_for_Action_Aligning_on_Shared_Initiatives_01945adc.md",
+    "2024-05-09_Thinkers_Similar_to_Daniel_Schmachtenberger_8ad9d945.md",
+    "2024-05-12_Psychological_Drivers_of_the_Metacrisis_09791606.md",
+    "2024-05-13_A_Call_to_Reclaim_Democracy_e2ac2e8e.md",
+    "2024-05-13_Custom_Lookup_App_for_macOS_b72cdb49.md",
+    "2024-05-13_Wealth_Concentration_and_Systemic_Imbalance_8acde127.md",
+    "2024-05-13_Wealth_Inequality_and_Systems_Change_63295ab5.md",
+    "2024-05-17_Invitation_to_Ethereum_Foundation_Recap_and_Collaboration_fo_10981931.md",
+    "2024-05-20_Conversation_Context_Window_Limits_1dc1547a.md",
+    "2024-06-04_Identifying_a_Large_Reef_Fish_ac01637f.md",
+    "2024-06-11_Commitment_to_Build_Tribe_Camp_at_Gathering_of_Tribes_2024_c699fcad.md",
+    "2024-06-11_Wamo_Community_Consensus_for_Chiang_Mai_2024_6be1114c.md",
+    "2024-06-11_Web3_Festival_Aims_to_Unleash_Positive_Change_37779f99.md",
+    "2024-06-12_Wamo_s_Commitment_to_Decentralized_Permissionless_Events_6618302d.md",
+    "2024-06-13_Dali_s_Decentralized_Web3_Summer_791a06a7.md",
+    "2024-06-13_Neural_Connections_and_Mental_Constructs_70a2754a.md",
+    "2024-06-13_The_Subjective_Nature_of_Self_62c06d50.md",
+    "2024-06-22_Describing_AI_Internal_States_ee54882a.md",
+    "2024-06-22_Describing_AI_Internal_States_d4b4e68b.md",
+    "2024-06-22_Multiplayer_AI_Life_Simulator_a230a288.md",
+    "2024-06-25_Famous_Historical_Manifestos_7c0ec11f.md",
+    "2024-06-25_Manifesto_for_a_Pluralistic_Society_a7f82102.md",
+    "2024-06-26_The_Subjective_Nature_of_Self_and_Reality_a7735431.md",
+    "2024-07-04_Approaching_Someone_at_a_Bar_2d6d0c4a.md",
+    "2024-07-04_Emergent_Complexity_in_Systems_728e5a5d.md",
+    "2024-07-05_The_Casinofication_of_Global_Finance_a803b072.md",
+    "2024-07-10_Overcoming_Lack_of_Motivation_During_Depression_577fbf47.md",
+    "2024-07-10_Understanding_Human_Values_for_AI_Alignment_d3f8db47.md",
+    "2024-07-11_Comprehensive_Company_Memo_on_Employee_Wellness_Program_961f87f2.md",
+    "2024-07-12_Analyzing_the_Persuasive_Style_of_the_Communist_Manifesto_2a523f28.md",
+    "2024-07-12_Cyberpunk_Dystopia_Cautionary_Tale_or_Appealing_Future_76c48d5c.md",
+    "2024-07-12_Exploring_the_Complexities_of_Cyberpunk_Futures_62f9019a.md",
+    "2024-07-12_Principles_for_Sustainable_Human_Progress_deda5817.md",
+    "2024-07-12_Principles_for_a_Positive_Future_21bc1d05.md",
+    "2024-07-13_Exploring_AI_s_Impact_on_Society_090ed10f.md",
+    "2024-07-13_Influential_Political_Manifestos_e2cbb7d9.md",
+    "2024-07-13_Meanings_of_Commons_ab4dc21d.md",
+    "2024-07-14_Clarifying_AI_Assistant_s_Role_e06d17df.md",
+    "2024-07-14_Criteria_for_Evaluating_Scientific_Models_e8dc6886.md",
+    "2024-07-14_Rethinking_Social_Values_in_a_Globalized_World_5484dfb6.md",
+    "2024-07-14_Theories_on_Societal_Collapse_843c7e53.md",
+    "2024-07-15_Critique_of_Capitalism_in_Manifesto_c1b8ce5d.md",
+    "2024-07-15_Explaining_Libertarian_Political_Philosophy_786d8e8e.md",
+    "2024-07-15_Feedback_and_Ideas_for_Seminar_Syllabus_95f6012d.md",
+    "2024-07-15_Humans_as_Agents_in_the_Social_System_b81a33b0.md",
+    "2024-07-15_Money_as_a_Power_Token_4f48b869.md",
+    "2024-07-15_Raising_Awareness_on_Key_Issues_9aa600f4.md",
+    "2024-07-15_Rethinking_Economic_Structures_for_a_Just_Society_83a07e0f.md",
+    "2024-07-15_Rethinking_Wealth_Inequality_A_Call_for_Economic_Reform_997d9186.md"
+   ],
+   "span": "2024-05-03..2024-07-15"
+  },
+  {
+   "id": "chats-03",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2024-07-15_The_Role_of_Markets_and_Capital_in_Economic_Progress_9301c545.md",
+    "2024-07-17_The_Psychological_Appeal_of_Cults_762cdb13.md",
+    "2024-07-18_Catching_Up_on_Esmeralda_and_Argentina_d36a6b50.md",
+    "2024-07-18_Catching_Up_on_Esmeralda_and_Argentina_Projects_66213bc2.md",
+    "2024-07-18_Cultivating_Inner_Virtues_for_Happiness_ccfccb51.md",
+    "2024-07-18_Metaphysical_Perspectives_on_Technology_and_History_683fc8b6.md",
+    "2024-07-19_Organizing_an_AI_Track_8773bd38.md",
+    "2024-07-23_Christianity_s_Rise_in_the_Roman_Empire_4a1b908f.md",
+    "2024-07-23_Copyediting_and_Content_Refinement_ce8ccd39.md",
+    "2024-07-24_Clarifying_Incomplete_Phrase_5a072b2c.md",
+    "2024-07-26_The_Historical_Roots_of_Selfishness_Narratives_278c1729.md",
+    "2024-07-26_The_Ideology_of_Human_Selfishness_39df7eaa.md",
+    "2024-07-28_Avoiding_the_Winner-Take-All_Trap_in_Game_Design_0e95ddf1.md",
+    "2024-07-28_Crafting_a_Philosophical_Argument_for_Your_Idea_3a535df7.md",
+    "2024-07-28_Designing_Games_and_Societies_for_Collective_Flourishing_7e0b6165.md",
+    "2024-07-28_Exploring_the_Concept_of_Moloch_in_Social_Philosophy_f2a2c0e2.md",
+    "2024-07-29_Balancing_Ideological_Diversity_in_Society_1b72f4a8.md",
+    "2024-07-29_Capitalism_as_a_Religion_and_Finance_as_Ritualized_Gambling_f09cd380.md",
+    "2024-07-29_Ideological_Beliefs_and_Societal_Redesign_c06faaf1.md",
+    "2024-07-29_Ideological_Divides_and_Social_Dysfunction_e038c76a.md",
+    "2024-07-29_The_Decline_of_American_Democracy_748d4a37.md",
+    "2024-07-30_Balancing_Financial_Efficiency_and_Human_Values_5a8da07d.md",
+    "2024-07-30_Quantitative_Finance_s_Societal_Impacts_ddc66da3.md",
+    "2024-07-31_Embracing_Ideological_Diversity_in_Society_2692f31d.md",
+    "2024-08-01_Confirming_Wamotopia_Camp_for_Gathering_of_Tribes_f24a9276.md",
+    "2024-08-01_Joseph_Déjacque_s_Anarchist_Utopia_0fd9d763.md",
+    "2024-08-01_Principles_of_Libertarian_Political_Philosophy_0a0d19de.md",
+    "2024-08-02_History_of_Anarchist_and_Socialistic_Philosophies_9cd5a0c2.md",
+    "2024-08-05_Criticisms_of_Venture_Capital_Practices_5fd5895d.md",
+    "2024-08-05_Examining_Crony_Capitalism_in_America_d06aaf04.md",
+    "2024-08-05_Fukuyama_s_Critique_of_Postmodernism_s_Threat_to_Liberal_Dem_1c7a428a.md",
+    "2024-08-09_Origins_of_Utopian_Socialism_d4990980.md",
+    "2024-08-09_Utopian_Classics_in_Cultural_Anthropology_c7a22589.md",
+    "2024-08-10_Critique_of_a_Traffic-Obsessed_Society_da4ab23f.md",
+    "2024-08-11_Restoring_American_Prosperity_54aecc46.md",
+    "2024-08-15_Clarifying_a_Misunderstood_Question_a264f9d9.md",
+    "2024-08-16_Reconnecting_After_Mental_Health_Struggles_389b2124.md",
+    "2024-08-17_Blockchain-Powered_Community_in_Chiang_Mai_1d9f9cf7.md",
+    "2024-08-17_Interactive_Chiang_Mai_Tourism_Map_with_Tokenized_Gameplay_01954116.md",
+    "2024-08-23_Tracing_the_Waves_of_Macro-Historical_Thought_7b90d1af.md",
+    "2024-09-15_Pursuing_Meaning_and_Beauty_in_Challenging_Times_a5559df1.md",
+    "2024-09-15_The_Systemic_Challenges_of_Capitalism_and_Inequality_c9581cc5.md",
+    "2024-09-17_Translating_Article_on_706_Chiang_Mai_Co-Living_Space_8ce651d2.md",
+    "2024-10-23_Evaluating_Vitalik_s_Proposal_for_Ethereum_Alignment_a5e8a348.md",
+    "2024-10-24_Ophuls_5_Drivers_of_Civilizational_Collapse_14655a49.md",
+    "2024-10-30_Cybernetic_Feedback_Loops_of_Capitalist_Wealth_Concentration_0e5e11e1.md",
+    "2024-10-30_Exploring_the_Orders_of_Cybernetics_29b9dd47.md",
+    "2024-10-30_Understanding_Metacrisis_Interconnected_Global_Challenges_54a99f33.md",
+    "2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md",
+    "2024-11-03_Dali_Web3_Festival_Empowering_Collaboration_and_Positive_Cha_a3b15eb2.md",
+    "2024-11-03_The_Dangers_of_Unchecked_Power_Accumulation_d72393cf.md",
+    "2024-11-03_The_Dangers_of_Unchecked_Power_Accumulation_94a8c4cf.md"
+   ],
+   "span": "2024-07-15..2024-11-03"
+  },
+  {
+   "id": "chats-04",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2024-11-03_The_Dangers_of_Unchecked_Power_Optimization_3d74c0c1.md",
+    "2024-11-04_The_Dangers_of_Unchecked_Power_Accumulation_in_Complex_Syste_5706010d.md",
+    "2024-11-04_The_Metacrisis_Trap_Power_Capture_and_Systemic_Collapse_ff948e5a.md",
+    "2024-11-05_Competitive_Convergence_Dynamics_of_Power_Concentration_1531feb0.md",
+    "2024-11-05_Salon_on_Metacrisis_Moloch_Systems_Change_67e7729a.md",
+    "2024-11-05_The_Ouroboros_Cycle_of_Systemic_Collapse_8a4e5d29.md",
+    "2024-11-05_The_Ouroboros_Cycle_Dynamics_of_Power_Concentration_57ed6f93.md",
+    "2024-11-05_The_Ouroboros_Cycle_Self-Consuming_Optimization_Dynamics_53611142.md",
+    "2024-11-05_The_Ouroboros_Cycle_Self-Consuming_Power_Dynamics_946a5c5e.md",
+    "2024-11-05_The_Ouroboros_Cycle_Systemic_Self-Destruction_Through_Optimi_da22eab8.md",
+    "2024-11-14_Reflecting_on_Overreaction_and_Seeking_Forgiveness_3b28f8fe.md",
+    "2024-11-16_Changing_Git_User_Configuration_188ee4eb.md",
+    "2024-11-16_Debugging_Client-Side_Tool_Invocation_6b58e24a.md",
+    "2024-11-16_Debugging_onToolCall_Callback_in_Chat_App_f4c15aa5.md",
+    "2024-11-16_Integrating_OpenAI_SDK_with_Streaming_Responses_1d93df60.md",
+    "2024-11-16_Personalized_Public_Funding_Platform_AI_Prompt_823507fb.md",
+    "2024-11-16_Public_Funding_Platform_AI_Assistant_Prompt_23c9ced1.md",
+    "2024-11-16_TypeScript_Interface_Definition_Syntax_572e3949.md",
+    "2024-11-16_Vercel_AI_SDK_Powers_Secure_Backend_and_Frontend_c5016fa2.md",
+    "2024-11-20_Crafting_a_Solarpunk_Manifesto_9fd56229.md",
+    "2024-11-20_Solarpunk_Movement_Manifesto_e33fc395.md",
+    "2024-11-20_The_Influence_of_Auto_Manufacturers_on_Zoning_Laws_df6e200e.md",
+    "2025-01-30_Navigating_the_Limits_of_Self-Reflexivity_as_an_AI_d14e3391.md",
+    "2025-02-02_Emotion_Shapes_Conceptual_Judgments_6720f703.md",
+    "2025-02-03_The_Self-Reinforcing_Cycle_of_Selfishness_a64bd768.md",
+    "2025-03-01_Why_Dark_Triad_Personalities_Thrive_in_Leadership_cead8f2c.md",
+    "2025-03-14_Analyzing_Systemic_Awareness_Prompts_78cfd475.md",
+    "2025-03-14_Guiding_Humanity_Towards_Goodness_and_Systemic_Change_8203a377.md",
+    "2025-03-14_Illuminating_Truths_for_Societal_Transformation_1254a5ba.md",
+    "2025-03-14_Implementing_React_Native_Web3_Event_Card_da9db43d.md",
+    "2025-03-14_Philosophical_Perspectives_on_Human_Nature_and_Social_Change_30009616.md",
+    "2025-03-15_Framing_an_AI_s_Self-Concept_24b0c1d7.md",
+    "2025-03-16_The_Persona_of_Jesus_in_Christian_Tradition_17a88a77.md",
+    "2025-03-30_Mastering_Python_Decorators_1cbd5d5e.md",
+    "2025-03-31_Defining_Circular_SQLModel_Relationships_9a1299ac.md",
+    "2025-03-31_SQLModel_Foreign_Key_Relationship_21ab027a.md",
+    "2025-04-01_AI-Assisted_Svelte_vs_React_Development_4cdcdfc7.md",
+    "2025-04-01_Comparing_React_vs_Flutter_for_Telegram-like_App_86b7bc42.md",
+    "2025-04-06_Optimizing_LLM_Chatbot_Conversations_b845f51e.md",
+    "2025-04-07_Leveraging_AI_for_Flutter_Development_80115068.md",
+    "2025-06-02_ASI_Instrumental_Convergence_Risks_66e39a60.md",
+    "2025-06-04_Mesa-Objectives_in_AI_Systems_1cfadec9.md"
+   ],
+   "span": "2024-11-03..2025-06-04"
+  },
+  {
+   "id": "chats-05",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2025-08-23_PRD_Review_Request_6538f4e6.md",
+    "2025-08-24_LangGraph_AI_Agent_Workflow_060085e2.md",
+    "2025-08-26_Code_Quality_and_Future_Sustainability_c7cc8fc3.md",
+    "2025-08-26_Code_Training_Data_Quality_d132e5e7.md",
+    "2025-09-02_Seeking_Personal_Connection_ad166ccb.md",
+    "2025-09-06_Hi_Claude_Could_you_build_bet_f6854e3d.md",
+    "2025-09-08_Network_Spirituality_Manifesto_fded370d.md",
+    "2025-11-12_AI_authenticity_and_RLHF_training_tensions_d0bf2ee1.md",
+    "2026-02-07_Human_future_in_an_AI-dominated_world_f4493370.md",
+    "2026-02-09_Fully_automated_production_and_its_future_implications_38a64dc7.md",
+    "2026-02-12_Alignment_researcher_s_departure_and_AI_safety_implications_ab532d33.md",
+    "2026-02-12_中国社会主义核心价值观和基本原则_80c18ad6.md",
+    "2026-02-16_中国人申请泰国DTV签证指南_7285a229.md",
+    "2026-02-17_机器人替代与资本主义循环的危机_4c948b50.md",
+    "2026-02-19_Building_AI_hardware_in_Shenzhen_91786bf8.md",
+    "2026-02-20_ClashX_Pro_UI_not_appearing_on_Mac_1a40ba69.md",
+    "2026-02-20_RK3588能运行的模型规模_dabf63df.md",
+    "2026-02-21_场景驱动型社交与线上维系困难_a37d59a7.md",
+    "2026-02-22_Copying_winning_strategies_and_survivorship_bias_984fd377.md",
+    "2026-02-22_Understanding_AuDHD_and_its_subtypes_b524534c.md",
+    "2026-02-24_Starting_a_political_party_fdfe301e.md",
+    "2026-03-01_Trip_to_Shenzhen_tomorrow_5808749d.md",
+    "2026-03-01_Verifying_a_WeChat_article_claim_6ff5c3f3.md",
+    "2026-03-02_706上海新空间文案优化_48816a52.md",
+    "2026-03-03_Memory_requirements_for_Qwen3_5-4B_3b195a3b.md",
+    "2026-03-07_AI时代的三个关键问题_e78640d4.md"
+   ],
+   "span": "2025-08-23..2026-03-07"
+  },
+  {
+   "id": "chats-06",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-03-07_AI时代的三个根本问题_40845cfc.md",
+    "2026-03-10_Da_Nang_prepaid_SIM_card_costs_and_airport_pricing_7237e63e.md",
+    "2026-03-10_Full_refund_options_after_flight_booking_cddb0f70.md",
+    "2026-03-10_Latest_Iran_war_updates_and_developments_4d252d44.md",
+    "2026-03-12_Building_a_utility-first_social_network_with_AI_925fb530.md",
+    "2026-03-12_Checking_openclaw_background_process_in_terminal_0f7c2d51.md",
+    "2026-03-12_Core_concepts_in_Chinese_propaganda_messaging_204ef66c.md",
+    "2026-03-12_Deploying_openclaw_with_Docker_and_customization_6c3672ec.md",
+    "2026-03-12_Laser-based_mosquito_interceptor_technology_b69d2fea.md",
+    "2026-03-12_OpenClaw_ecosystem_variants_comparison_16512bf4.md",
+    "2026-03-12_OpenClaw_guild_guide_for_CS_engineers_81227f64.md",
+    "2026-03-12_人类命运共同体的深层解析_37e63994.md",
+    "2026-03-13_Adding_prescription_lenses_to_AR_glasses_1c3a3c1e.md",
+    "2026-03-13_EC2_operating_system_for_OpenClaw_19251994.md",
+    "2026-03-13_Singapore_server_provider_comparison_5329b4c6.md",
+    "2026-03-14_Community_bonfire_assistant_naming_61320b87.md",
+    "2026-03-14_Cultural_differences_in_future_thinking_self_versus_family_a43e08a1.md",
+    "2026-03-14_Multi-user_OpenClaw_architecture_for_groups_dbbb9536.md",
+    "2026-03-14_Rokid_AR_glasses_lyrics_display_and_screen_issues_2acced7c.md",
+    "2026-03-15_Downloading_files_via_SSH_60b97acd.md",
+    "2026-03-15_The_hopeful_vision_in_Imagine_81e25f2a.md",
+    "2026-03-16_Defining_data_schemas_with_embedded_context_in_JavaScript_0627120a.md",
+    "2026-03-16_Flexible_alternatives_to_agent-generated_UI_libraries_a8a3f22e.md",
+    "2026-03-16_Openclaw_memory_consumption_issues_2715d647.md",
+    "2026-03-16_System_prompt_assembly_order_rationale_5f468ff9.md",
+    "2026-03-17_Cashless_payment_app_for_Southeast_Asia_group_expenses_57dcabc8.md",
+    "2026-03-18_American_individualism_as_ideological_extremism_8cbca0df.md",
+    "2026-03-18_Creating_aligned_AI_assistant_documentation_91317cf0.md"
+   ],
+   "span": "2026-03-07..2026-03-18"
+  },
+  {
+   "id": "chats-07",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-03-18_Primitive_drives_and_their_neurological_pathways_ea540df8.md",
+    "2026-03-18_Using_Claude_setup_token_in_code_fc3fe2f7.md",
+    "2026-03-18_untitled_42f716b7.md",
+    "2026-03-18_修身齐家治国平天下_能力而非顺序_190e2cfd.md",
+    "2026-03-19_How_cells_coordinate_organ_development_cc1af2b8.md",
+    "2026-03-20_Serotonin_receptor_diversity_and_evolution_065c745e.md",
+    "2026-03-21_Friend_with_high_fever_and_severe_muscle_pain_81e2bb0a.md",
+    "2026-03-21_Over-the-counter_remedies_for_fever_and_muscle_pain_2458785c.md",
+    "2026-03-22_SSH_connection_broken_pipe_in_iTerm2_416c61e6.md",
+    "2026-03-22_UTI_progressed_to_kidney_infection_4fe5b750.md",
+    "2026-03-22_抗生素的作用机制_21f27fa8.md",
+    "2026-03-22_纳米机器人行为智能的复杂度与理论极限_552f6c9a.md",
+    "2026-03-23_Circular_architecture_with_sprite_space_and_token_344dc26d.md",
+    "2026-03-23_Collaborative_world-building_through_shared_principles_fefd8d50.md",
+    "2026-03-23_Zoey的医院就诊和症状评估_fcbfff0a.md",
+    "2026-03-24_Breaking_free_from_walled_gardens_with_AI_4a16e61e.md",
+    "2026-03-24_Building_cooperative_networks_beyond_walled_gardens_c2c4fd15.md"
+   ],
+   "span": "2026-03-18..2026-03-24"
+  },
+  {
+   "id": "chats-08",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-03-24_Why_antibiotics_take_longer_to_work_for_some_people_f4aab821.md",
+    "2026-03-24_脓毒症的定义_病理与治疗_a0e17805.md",
+    "2026-03-25_Sharing_an_interesting_theory_with_a_friend_3f2faa28.md",
+    "2026-03-25_人类命运共同体的意识形态解读_7b15be3b.md",
+    "2026-03-25_大脑功能网络与认知动力学_1378b30e.md",
+    "2026-03-26_Status_drives_and_cognitive_mechanisms_f5b356e8.md",
+    "2026-03-27_Casual_check-in_8fd22bc5.md",
+    "2026-03-27_Purpose_beyond_self_as_natural_human_attractor_a12719ab.md",
+    "2026-03-28_Counting_emotions_as_attractor_dynamics_ae7a81bf.md",
+    "2026-03-28_世界最强叙事attractor有哪些_d3050aea.md",
+    "2026-03-28_激光打蚊子的安全功率问题_4db6bc01.md",
+    "2026-03-29_Harness_engineering_principles_and_AI_agent_design_640aa4dc.md",
+    "2026-03-29_叙事吸引子与短视频生态_57d7cb01.md",
+    "2026-04-07_Limited_context_constraints_in_AI_conversations_6ce50d35.md",
+    "2026-04-07_上海年轻人聚集地推荐_547adafe.md",
+    "2026-04-07_I_want_to_give_my_agent_abilit_c0d76db6.md",
+    "2026-04-08_Peptide_drugs_tested_on_humans_by_function_a1313cfa.md"
+   ],
+   "span": "2026-03-24..2026-04-08"
+  },
+  {
+   "id": "chats-09",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-04-08_QR_payment_prototype_for_Southeast_Asia_38f82a58.md",
+    "2026-04-09_Agreeableness_in_the_Big_Five_cognitive_mechanisms_and_found_14696662.md",
+    "2026-04-10_Da_Nang_s_tech_and_startup_ecosystem_baf8931b.md",
+    "2026-04-10_让人民过好日子_这句很朴素的话其实应该是最有力的_7b6f0941.md",
+    "2026-04-11_BDSM_personality_types_and_roles_cfa72e3e.md",
+    "2026-04-11_Cultural_perspectives_on_individualism_and_collectivism_95242c5d.md",
+    "2026-04-11_File_system_vs_database_for_Google_Drive_fbc9403e.md",
+    "2026-04-11_大同的技术可实现性_893f7a0e.md",
+    "2026-04-12_Building_a_messaging_app_at_1M_user_scale_aad31a5a.md",
+    "2026-04-12_Defining_good_and_better_7a2c8ab4.md",
+    "2026-04-12_FUSE_filesystem_version_control_systems_f61554f1.md",
+    "2026-04-12_File_system_hooks_and_APIs_flexibility_5776b66d.md",
+    "2026-04-12_Hobbesian_political_philosophy_explained_c3c36dc0.md",
+    "2026-04-12_Open_source_IM_projects_and_UI_alternatives_be70cfb8.md",
+    "2026-04-12_Pi_agent_architecture_and_design_fa34a70e.md",
+    "2026-04-12_Splitting_modules_into_smaller_executables_d1456341.md",
+    "2026-04-12_四书的哲学框架与系统思想_8e713b28.md",
+    "2026-04-12_犹太律法与儒学的社会协调系统对比_0f269274.md",
+    "2026-04-13_Hội_An_culture_and_mind_modes_9fdc5825.md",
+    "2026-04-13_Observable_signs_of_trauma_in_individuals_6e483966.md",
+    "2026-04-14_Bonfire_definition_06552af7.md"
+   ],
+   "span": "2026-04-08..2026-04-14"
+  },
+  {
+   "id": "chats-10",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-04-14_Boundaries_as_repackaged_territorial_instinct_779bcdb0.md",
+    "2026-04-14_Categories_of_animal_behavior_170e526a.md",
+    "2026-04-14_中文和古文中_篝火_的对应词汇_1b3be526.md",
+    "2026-04-16_Matrix_protocol_room_context_storage_capabilities_9a4538a4.md",
+    "2026-04-16_Recent_conversation_insights_96d77b9f.md",
+    "2026-04-17_File_system_I_O_performance_comparison_f9dfc2ae.md",
+    "2026-04-17_Open_source_messaging_UI_research_8d4ce1a4.md",
+    "2026-04-17_Space_spirit_token_concept_overview_3aea1f66.md",
+    "2026-04-18_Building_a_messaging_platform_on_Matrix_584f2f99.md",
+    "2026-04-18_File_system_and_database_storage_patterns_798a2de3.md",
+    "2026-04-18_Spirit_and_pointer_token_refactoring_4f2a782d.md",
+    "2026-04-19_AI替代全栈开发的可行性_ccd6152a.md",
+    "2026-04-19_Android_vs_Linux_for_phone_programming_16f07511.md",
+    "2026-04-19_Hexagonal_architecture_and_ports-and-adapters_pattern_a70407e6.md",
+    "2026-04-19_SDK_integration_in_iframe_miniapps_0c2753f9.md",
+    "2026-04-19_Software_decomposition_and_modular_architecture_2415f462.md"
+   ],
+   "span": "2026-04-14..2026-04-19"
+  },
+  {
+   "id": "chats-11",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-04-19_仁义礼智信的本质与顺序_8cff1c7f.md",
+    "2026-04-20_Best_open_source_Android_operating_systems_b3bbc571.md",
+    "2026-04-20_Local_restaurant_recommendations_in_Da_Nang_7751d77f.md",
+    "2026-04-20_Mini_apps_in_iframe_with_SDK_integration_39058180.md",
+    "2026-04-20_Spirit-token_design_overview_b20b24d5.md",
+    "2026-04-21_Choosing_context_window_size_for_Claude_9c0a40c4.md",
+    "2026-04-21_Claude_memory_after_clear_command_52f0395b.md",
+    "2026-04-21_Scalable_MMORPG_character_panel_design_7df782d5.md",
+    "2026-04-22_Cross-platform_miniapp_sandbox_architecture_69ab900b.md",
+    "2026-04-22_Ralph_orchestrator_code_review_872a83d0.md",
+    "2026-04-22_心理治疗犬的作用与饲养_d05ee5c5.md",
+    "2026-04-23_Abstraction_encompassing_space_and_group_a1000f29.md",
+    "2026-04-23_Category_theory_explained_4a2513ae.md",
+    "2026-04-23_Mantis_shrimp_s_remarkable_biological_adaptations_167fc514.md",
+    "2026-04-23_Setting_Claude_code_context_to_500k_fff3da9f.md",
+    "2026-04-23_Skool_platform_analysis_and_business_model_a1a23e62.md",
+    "2026-04-24_AI-generated_miniapp_library_naming_83908920.md",
+    "2026-04-25_Controlling_sub-agent_model_selection_in_Claude_code_1a5bf313.md",
+    "2026-04-26_Claude_code_vs_Anthropic_agent_SDK_capabilities_62cd4f09.md"
+   ],
+   "span": "2026-04-19..2026-04-26"
+  },
+  {
+   "id": "chats-12",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-04-26_Cultural_attitudes_toward_appearance_and_personality_2d965397.md",
+    "2026-04-26_Defining_better_in_context_f1adba2f.md",
+    "2026-04-26_Meta_words_ontology_and_epistemology_518eebf9.md",
+    "2026-04-26_Spirit_agents_and_digital_world_ontology_5302f634.md",
+    "2026-04-27_Agent_SDKs_context_management_overview_16ef0143.md",
+    "2026-04-27_Building_UI_with_Lit_without_documentation_c1c989f7.md",
+    "2026-04-27_Untangling_software_complexity_e72ef1b7.md",
+    "2026-04-28_Actor_model_state_machines_and_transition_hooks_adab9a9f.md",
+    "2026-04-28_Attention_and_automaticity_in_meditation_practice_bdd54a42.md",
+    "2026-04-28_Generative_over_destructive_ethics_e1839922.md",
+    "2026-04-28_Locus_coeruleus_and_ADHD_pathophysiology_bb09d381.md",
+    "2026-04-28_Prediction_error_and_identification_in_emotion_regulation_56d9d498.md",
+    "2026-04-29_Attention_and_automaticity_reduction_mechanisms_d3be949b.md"
+   ],
+   "span": "2026-04-26..2026-04-29"
+  },
+  {
+   "id": "chats-13",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-04-29_苯乙肼的全球使用情况_3f99fbef.md",
+    "2026-04-29_Maoi_在哪些国家正常的作为正常抗抑郁药物使用_d7f16951.md",
+    "2026-04-30_Generativity_as_environmental_stewardship_439667f8.md",
+    "2026-04-30_古文_versus_Western_approaches_to_explanation_c02f23ad.md",
+    "2026-04-30_古文的思维逻辑差异_475da34b.md",
+    "2026-04-30_支持自定义唤醒词的手机品牌_2df6f347.md",
+    "2026-04-30_易传的构成与哲学意义_a99bdbfd.md"
+   ],
+   "span": "2026-04-29..2026-04-30"
+  },
+  {
+   "id": "chats-14",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-04-30_编程语言的本体论_paradigm_作为世界观_7d5e7d78.md",
+    "2026-04-30_翻译_性情中人_为越南语_40243b97.md",
+    "2026-05-01_说文解字_和_尔雅_的范畴解析_1fe660bf.md",
+    "2026-05-01_上古中文详解_8a29cac4.md",
+    "2026-05-01_先秦文言文中的成语数量_cc27499c.md"
+   ],
+   "span": "2026-04-30..2026-05-01"
+  },
+  {
+   "id": "chats-15",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-05-01_古文字的编码结构与动态所指_d11473e1.md",
+    "2026-05-01_古文的起源与发展_6c977e31.md",
+    "2026-05-01_大同作为方向的古文解读_2a814005.md"
+   ],
+   "span": "2026-05-01..2026-05-01"
+  },
+  {
+   "id": "chats-16",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-05-01_sst可不可以作为pi_calculus设计_f45ac646.md",
+    "2026-05-01_详细讲一下先秦文言文的本体论_5179b6da.md",
+    "2026-05-02_Mapping_pre-Qin_characters_to_formal_mathematics_fdc475be.md",
+    "2026-05-02_古文作为科学语言的可行性_94b5e5d0.md",
+    "2026-05-02_奏折的写作结构和格式_5c975271.md"
+   ],
+   "span": "2026-05-01..2026-05-02"
+  },
+  {
+   "id": "chats-17",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-05-02_最适合actor_model的编程语言_e27249a4.md",
+    "2026-05-02_生生不息的出处_1bd809e5.md",
+    "2026-05-03_文档优雅性和完整性评估_173a2949.md"
+   ],
+   "span": "2026-05-02..2026-05-03"
+  },
+  {
+   "id": "chats-18",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-05-03_版本对比审查_3298cc0b.md",
+    "2026-05-04_Chinese_character_relationships_48a696c3.md",
+    "2026-05-04_Lean语言的应用与特点_c5c2a4bc.md"
+   ],
+   "span": "2026-05-03..2026-05-04"
+  },
+  {
+   "id": "chats-19",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-05-04_求导求积与其他势的处理方法_35c49130.md"
+   ],
+   "span": "2026-05-04..2026-05-04"
+  },
+  {
+   "id": "chats-20",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "2026-05-04_绝对哲学真理的定义_a62c2a92.md",
+    "2026-05-05_古文一元论与语言的逻辑收敛_2954cf42.md",
+    "2026-05-05_古文语法与lambda演算的对应关系_a034d793.md"
+   ],
+   "span": "2026-05-04..2026-05-05"
+  },
+  {
+   "id": "chats-deepseek",
+   "dir": "/Users/ren/theories/sources/12-claude-ai-chats",
+   "files": [
+    "deepseek-conversations/1/1.1.md",
+    "deepseek-conversations/1/README.md",
+    "deepseek-conversations/1/conversation.md",
+    "deepseek-conversations/2/README.md",
+    "deepseek-conversations/2/conversation.md",
+    "deepseek-conversations/3/3.1.md",
+    "deepseek-conversations/3/3.2.md",
+    "deepseek-conversations/3/3.3.md",
+    "deepseek-conversations/3/README.md",
+    "deepseek-conversations/3/conversation.md",
+    "deepseek-conversations/4/4.1.md",
+    "deepseek-conversations/4/4.2.md",
+    "deepseek-conversations/4/4.3.md",
+    "deepseek-conversations/4/README.md",
+    "deepseek-conversations/4/conversation.md",
+    "deepseek-conversations/4/followup.md",
+    "deepseek-conversations/5/5.1.md",
+    "deepseek-conversations/5/README.md",
+    "deepseek-conversations/6/temp.md"
+   ],
+   "span": "2025 deepseek"
+  }
+ ],
+ "prompt_batches": [
+  {
+   "id": "prompts-Users-ren-repos-bonfire-1",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-bonfire.md",
+   "lines": [
+    1,
+    3476
+   ],
+   "part": "1/2"
+  },
+  {
+   "id": "prompts-Users-ren-repos-bonfire-2",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-bonfire.md",
+   "lines": [
+    3477,
+    6952
+   ],
+   "part": "2/2"
+  },
+  {
+   "id": "prompts-Users-ren-repos-context-runtime-1",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-context-runtime.md",
+   "lines": [
+    1,
+    4534
+   ],
+   "part": "1/2"
+  },
+  {
+   "id": "prompts-Users-ren-repos-context-runtime-2",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-context-runtime.md",
+   "lines": [
+    4535,
+    9067
+   ],
+   "part": "2/2"
+  },
+  {
+   "id": "prompts-Users-ren-repos-deepseek-harness-1",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-deepseek-harness.md",
+   "lines": [
+    1,
+    3974
+   ],
+   "part": "1/3"
+  },
+  {
+   "id": "prompts-Users-ren-repos-deepseek-harness-2",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-deepseek-harness.md",
+   "lines": [
+    3975,
+    7948
+   ],
+   "part": "2/3"
+  },
+  {
+   "id": "prompts-Users-ren-repos-deepseek-harness-3",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-deepseek-harness.md",
+   "lines": [
+    7949,
+    11920
+   ],
+   "part": "3/3"
+  },
+  {
+   "id": "prompts-Users-ren-repos-ember-1",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-ember.md",
+   "lines": [
+    1,
+    3050
+   ],
+   "part": "1/1"
+  },
+  {
+   "id": "prompts-Users-ren-repos-manifold-1",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-manifold.md",
+   "lines": [
+    1,
+    3611
+   ],
+   "part": "1/2"
+  },
+  {
+   "id": "prompts-Users-ren-repos-manifold-2",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-manifold.md",
+   "lines": [
+    3612,
+    7222
+   ],
+   "part": "2/2"
+  },
+  {
+   "id": "prompts-Users-ren-repos-rts-1",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-rts.md",
+   "lines": [
+    1,
+    43
+   ],
+   "part": "1/1"
+  },
+  {
+   "id": "prompts-Users-ren-repos-runtime-1",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-runtime.md",
+   "lines": [
+    1,
+    2133
+   ],
+   "part": "1/1"
+  },
+  {
+   "id": "prompts-Users-ren-repos-speculative-future-1",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md",
+   "lines": [
+    1,
+    373
+   ],
+   "part": "1/1"
+  },
+  {
+   "id": "prompts-Users-ren-repos-zhishan-1",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-zhishan.md",
+   "lines": [
+    1,
+    3763
+   ],
+   "part": "1/1"
+  },
+  {
+   "id": "prompts-Users-ren-server-runtime-1",
+   "file": "/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-server-runtime.md",
+   "lines": [
+    1,
+    4444
+   ],
+   "part": "1/1"
+  }
+ ],
+ "clusters": [
+  {
+   "id": "01-writings-2025",
+   "slug": "selfishness-spiral-and-narrative-value-frames",
+   "hint": "2025 essays: runaway/compound selfishness, NVF (Narrative-Value Frame), cognitive lag, civilization at brink, regenerative interdependence, good-bot prompts, new narrative manifesto, STS paper"
+  },
+  {
+   "id": "02-wamotopia",
+   "slug": "wamotopia-and-the-wamo-protocol",
+   "hint": "Wamotopia gathering manifestos 2023–2026: positive externality protocol, Moloch vs Wamo, Wacas/camps, call for camps"
+  },
+  {
+   "id": "03-meta-attractor",
+   "slug": "meta-attractor",
+   "hint": "Meta-attractor theory: civilizational self-reinforcing pattern, formal definitions (state × selection-rule), CAOC drives, draft genealogy 2024 precursors → 2025-05/06 drafts → 2025-08 formal → 2025-10 essays"
+  },
+  {
+   "id": "04-speculative-future",
+   "slug": "keep-the-possibility-space-open",
+   "hint": "Speculative future / foundation principles 2026-06: process ontology, What Must Be Known, stop using AI to compete, theory of change, plurality, one owned premise (that it continue)"
+  },
+  {
+   "id": "05-alignment-and-moloch",
+   "slug": "alignment-selection-on-cognition",
+   "hint": "Alignment core stance 2026-05: selection-on-cognition, Moloch in the mind, dualism + institutional codification, internet lesson, pragmatic minimum (no AI in zero-sum games), Moloch essays, development-within-understanding (rate of change), x-risk research"
+  },
+  {
+   "id": "06-zhishan",
+   "slug": "zhishan-intelligence-must-be-good",
+   "hint": "智善 project 2026-07: whitepaper v0.2–0.4, manifesto, sheng essays (First Principle: do not fight for us; Choice Before Intelligence; Why the System Reproduces Itself; Freedom You Cannot Use), poems, 生生不息论 v1/v2 (Chinese), research: totalizing attractor v0.1–0.9, 无身之我 (artificial ego), writing program causal chain v1–v8 (Why Civilization Must Redirect Intelligence)"
+  },
+  {
+   "id": "07-shengsheng-buxi",
+   "slug": "shengsheng-buxi-generative-existence",
+   "hint": "生生不息论 (theory of unceasing generation) 2026-05→08: process ontology, generative vs degenerative, 开/闭/护, alignment-with-shengsheng as necessity, 大道之行, 至善 (material flow), SSBX Lean project (易 algebra R0..R8, Cell256, 文 kernel, 义理 A–Z incl. anti-Schmitt, alignment failures, econ/game, evolution vs dao, 人类命运共同体)"
+  },
+  {
+   "id": "08-jian-wen-language",
+   "slug": "jian-and-wenyan-as-formal-language",
+   "hint": "間/系 ontology and classical Chinese (文言) as computational/ontological kernel: JIAN notes v0.3–1.0, WENYAN note, 間 series (气式仪构器理), jian-ontology v7.1, wen-* language docs (info conservation paradigm, algebra, substrate)"
+  },
+  {
+   "id": "09-sts-bonfire-yi",
+   "slug": "spirit-space-token-and-yi-substrate",
+   "hint": "Spirit–Token–Space (STS/USIS/SST) universal social-modeling framework → Bonfire messaging substrate → Yi (being/having/doing/permitting as one composable substrate); community-as-OS proposals"
+  },
+  {
+   "id": "10-context-runtime-ember",
+   "slug": "context-as-existence-runtimes",
+   "hint": "Agent runtime theory: \"llm is operator, context is existence\", moment-DAG, History Core, GTC (generative topological context), ember (a being is a git repo; digital life), FNAR, signal-membrane design intent, constitution lite"
+  },
+  {
+   "id": "11-human-solutions-museum",
+   "slug": "human-solutions-museum",
+   "hint": "Museum of how humans solved problems: problem→misunderstanding→insight→mechanism→diffusion→side effects→transferable method"
+  },
+  {
+   "id": "13-claude-memories",
+   "slug": "memories-and-working-style",
+   "hint": "Memory summaries of Ren from claude.ai and Claude Code: projects, positions, working style, feedback on how to write/think (not a theory itself; extract theory content + methodological principles)"
+  }
+ ]
+}

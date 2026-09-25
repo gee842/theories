@@ -1,0 +1,84 @@
+[
+  {
+    "name": "garden-walk",
+    "mode": "built-in image_gen",
+    "source": "/Users/ren/.codex/generated_images/01a07c37-b9a8-7fe2-88a2-41dc5ddaf2d9/exec-9e9fbd02-4815-4d80-acb0-b1fd761187ad.png",
+    "output": "/Users/ren/theories/worldbuilding/artifacts/friends-worldbook/assets-v4/garden-university/garden-walk.png",
+    "requested_dimensions": [
+      1536,
+      1024
+    ],
+    "actual_dimensions": [
+      1536,
+      1024
+    ],
+    "visual_review": "Inspected at generated native-resolution display.",
+    "sha256": "f3dfd14b9402be4cd0c2e06094ec946717d60520b4664be2fc132127802cfffb"
+  },
+  {
+    "name": "garden-section",
+    "mode": "built-in image_gen",
+    "source": "/Users/ren/.codex/generated_images/01a07c37-b9a8-7fe2-88a2-41dc5ddaf2d9/exec-0fe7d301-cf1a-46ec-87da-24d455d26531.png",
+    "output": "/Users/ren/theories/worldbuilding/artifacts/friends-worldbook/assets-v4/garden-university/garden-section.png",
+    "requested_dimensions": [
+      1536,
+      1024
+    ],
+    "actual_dimensions": [
+      1536,
+      1024
+    ],
+    "visual_review": "Inspected at generated native-resolution display.",
+    "sha256": "7ed767b0a700c6108d91397ed9d50d50439669237d07e601f19497d8bdea27ef"
+  },
+  {
+    "name": "university-cosmos",
+    "mode": "built-in image_gen",
+    "source": "/Users/ren/.codex/generated_images/01a07c37-b9a8-7fe2-88a2-41dc5ddaf2d9/exec-78c02fbf-8f87-4db7-a420-c7904f661a85.png",
+    "output": "/Users/ren/theories/worldbuilding/artifacts/friends-worldbook/assets-v4/garden-university/university-cosmos.png",
+    "requested_dimensions": [
+      1536,
+      1024
+    ],
+    "attempts": 2,
+    "first_attempt_result": "Connection failed before image returned.",
+    "actual_dimensions": [
+      1536,
+      1024
+    ],
+    "visual_review": "Inspected at generated native-resolution display.",
+    "sha256": "08272d5ee04ac91429eaf783df5a75440d44bfb342562b7909180aeabe2eaee5"
+  },
+  {
+    "name": "university-workshop",
+    "mode": "built-in image_gen",
+    "source": "/Users/ren/.codex/generated_images/01a07c37-b9a8-7fe2-88a2-41dc5ddaf2d9/exec-c8086484-9da6-4508-a971-557324165510.png",
+    "output": "/Users/ren/theories/worldbuilding/artifacts/friends-worldbook/assets-v4/garden-university/university-workshop.png",
+    "requested_dimensions": [
+      1536,
+      1024
+    ],
+    "attempts": 2,
+    "first_attempt_result": "Connection failed before image returned.",
+    "actual_dimensions": [
+      1536,
+      1024
+    ],
+    "visual_review": "Inspected at generated native-resolution display.",
+    "cleanup_attempts": [
+      {
+        "prompt": "Use case: precise-object-edit. In this image remove the very small light-colored brand-like lettering/mark on the bottom black bezel of the large computer monitor at the right. Replace only that tiny bezel mark with the same plain unmarked dark bezel surface. Preserve every other image pixel/detail as closely as possible: composition, people, robot, tools, screen's exploded instrument diagram, architecture, color, framing, lighting and 1536x1024 dimensions. Do not add any new text, logos or symbols anywhere. This is a tiny cleanup, not a redesign.",
+        "output_hint": "Generated images are saved to /Users/ren/.codex/generated_images/01a07c37-b9a8-7fe2-88a2-41dc5ddaf2d9 as /Users/ren/.codex/generated_images/01a07c37-b9a8-7fe2-88a2-41dc5ddaf2d9/exec-e7400769-5eab-4b7e-997e-707db3026a0c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "selected": false,
+        "reason": "Small bezel mark still present; retain original composition."
+      },
+      {
+        "prompt": "Use case: precise-object-edit. Mandatory single local change: on the large monitor at right, REPLACE THE ENTIRE LOWER BLACK MONITOR BEZEL with a continuous smooth uniform matte charcoal surface. The lower bezel currently has a tiny silver rectangular BRAND PATCH around image coordinate x=1203, y=562: remove the entire silver rectangular patch, including all lettering, by making that area exactly plain matte charcoal like the adjacent bezel. No contrasting patch, white strokes, badge or manufacturer's mark should remain on the lower bezel. Keep the monitor's glass screen and exploded instrument diagram unchanged. Preserve all other composition, faces, hands, architecture, robot machinery and lighting. No logos or text anywhere. 1536x1024 landscape. This is a product de-branding cleanup only.",
+        "output_hint": "Generated images are saved to /Users/ren/.codex/generated_images/01a07c37-b9a8-7fe2-88a2-41dc5ddaf2d9 as /Users/ren/.codex/generated_images/01a07c37-b9a8-7fe2-88a2-41dc5ddaf2d9/exec-a323173e-4b2e-48bc-9bd5-2938add655d5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "selected": false,
+        "reason": "Small bezel mark still present; retain original composition."
+      }
+    ],
+    "sha256": "402e0f66cf741178084d0c9f1e8a25b7b543967277f8a00fa99c7b71017e719d"
+  }
+]

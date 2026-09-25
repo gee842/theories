@@ -1,0 +1,14 @@
+{
+  "package": "output/share/friends-worldbook-v5.zip",
+  "bytes": 15565678,
+  "sha256": "114f0c13169fbe56ad2b347ca73189fef14d0275a77b1378e42eac030ab5c734",
+  "members": {
+    "worlds-we-can-inhabit-v5.pdf": "cd6a625d629269400f21e48f757fdc64aa48638775a1b20edb3f3a69396caefc",
+    "reader-v5.html": "cd8b554257a50358401333eb3192f8a33d93c6bd1b23400cb8869bcf6d841436",
+    "reader-v5.md": "079f6d23c24a5c39c0b54d864cd665136fe500301aad980773512d53de2bcbd5",
+    "START-HERE.html": "3c4b850f4fe3506fd21ffff0a221ad2b19d4eeb96022367517d55e920c72e80a",
+    "README.txt": "d7f9c66042a6c7eddf3bdebb3dc1b6bf7323599bed8a613a3ca859237f200793"
+  },
+  "archive_integrity": true,
+  "start_page_links_resolve_inside_package": true
+}

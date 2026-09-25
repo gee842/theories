@@ -1,0 +1,259 @@
+{
+  "edition": "03",
+  "date": "2026-09-07",
+  "pdf": "output/pdf/worlds-we-can-inhabit-v3.pdf",
+  "sha256": "b318ceca23382ac6be76426b08842e13e36e977015e836a8a58b3ef57a11339f",
+  "bytes": 6477597,
+  "pages": 21,
+  "bookmarks": 21,
+  "link_annotations": 24,
+  "unique_source_links": [
+    "https://arxiv.org/html/2510.03342v3",
+    "https://iea.blob.core.windows.net/assets/eb0c8ec1-3665-4959-97d0-187ceca189a8/Iron_and_Steel_Technology_Roadmap.pdf",
+    "https://new.abb.com/news/detail/97670/abb-opens-state-of-the-art-robotics-mega-factory-in-shanghai",
+    "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC144410/JRC144410_01.pdf",
+    "https://www.bmwgroup.com/en/news/general/2026/humanoid-robot-in-leipzig.html",
+    "https://www.fanuc.co.jp/en/profile/production/",
+    "https://www.lifecycleinitiative.org/wp-content/uploads/2021/03/UNEP-D002-Beverage-Cups-Report_lowres.pdf",
+    "https://www.pi.website/blog/partner",
+    "https://www.pi.website/blog/pi05",
+    "https://www.riotinto.com/operations/anz/western-australia"
+  ],
+  "fonts_used_for_text": {
+    "/AAAAAA+NotoSans-Regular": true,
+    "/AAAAAA+NotoSans-Bold": true,
+    "/AAAAAA+NotoSerif-Regular": true,
+    "/AAAAAA+NotoSerif-Italic": true,
+    "/AAAAAA+ArialUnicodeMS": true
+  },
+  "copy_checks": [
+    {
+      "page": 1,
+      "id": "cover",
+      "copy_complete": true,
+      "selectable_characters": 272
+    },
+    {
+      "page": 2,
+      "id": "startingpoint",
+      "copy_complete": true,
+      "selectable_characters": 1455
+    },
+    {
+      "page": 3,
+      "id": "production",
+      "copy_complete": true,
+      "selectable_characters": 899
+    },
+    {
+      "page": 4,
+      "id": "ai",
+      "copy_complete": true,
+      "selectable_characters": 1138
+    },
+    {
+      "page": 5,
+      "id": "growth",
+      "copy_complete": true,
+      "selectable_characters": 1356
+    },
+    {
+      "page": 6,
+      "id": "program",
+      "copy_complete": true,
+      "selectable_characters": 1321
+    },
+    {
+      "page": 7,
+      "id": "abundance",
+      "copy_complete": true,
+      "selectable_characters": 1275
+    },
+    {
+      "page": 8,
+      "id": "meta",
+      "copy_complete": true,
+      "selectable_characters": 1364
+    },
+    {
+      "page": 9,
+      "id": "feedback",
+      "copy_complete": true,
+      "selectable_characters": 1158
+    },
+    {
+      "page": 10,
+      "id": "principles",
+      "copy_complete": true,
+      "selectable_characters": 1611
+    },
+    {
+      "page": 11,
+      "id": "garden",
+      "copy_complete": true,
+      "selectable_characters": 780
+    },
+    {
+      "page": 12,
+      "id": "university",
+      "copy_complete": true,
+      "selectable_characters": 826
+    },
+    {
+      "page": 13,
+      "id": "exploration",
+      "copy_complete": true,
+      "selectable_characters": 867
+    },
+    {
+      "page": 14,
+      "id": "quests",
+      "copy_complete": true,
+      "selectable_characters": 853
+    },
+    {
+      "page": 15,
+      "id": "portal",
+      "copy_complete": true,
+      "selectable_characters": 698
+    },
+    {
+      "page": 16,
+      "id": "materials",
+      "copy_complete": true,
+      "selectable_characters": 839
+    },
+    {
+      "page": 17,
+      "id": "transformation",
+      "copy_complete": true,
+      "selectable_characters": 1231
+    },
+    {
+      "page": 18,
+      "id": "coexistence",
+      "copy_complete": true,
+      "selectable_characters": 1353
+    },
+    {
+      "page": 19,
+      "id": "invitation",
+      "copy_complete": true,
+      "selectable_characters": 1046
+    },
+    {
+      "page": 20,
+      "id": "evidence",
+      "copy_complete": true,
+      "selectable_characters": 1331
+    },
+    {
+      "page": 21,
+      "id": "sources",
+      "copy_complete": true,
+      "selectable_characters": 1713
+    }
+  ],
+  "image_source_manifest": "image-placements-v3.json",
+  "actual_pdf_image_draws": [
+    {
+      "page": 1,
+      "sha256": "017330eca9f31bd8206a16e8c2ba0d3ac044960a4250e566ed5491cc1b5e7b3d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 3,
+      "sha256": "f630ffb46381e6e87b54594d0f9ab5752fae105b0c8234cb65b1281be68c561c",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 11,
+      "sha256": "6fb183fac2633d07ebbe905642763859aec437c0bec4c7dbd7cfd308452530a5",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 12,
+      "sha256": "b809a0e0385f33f08b0cbd9ac09d9e63bb3cf8890cc1b9933761bab42039376f",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 13,
+      "sha256": "53d9dab985f3234fedbe50307e0dc0fdf46a57f646a5d75be4cea695d278826e",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 14,
+      "sha256": "3298c50fdc6a0a1cc84d43273a9bea5cd0021edadd5f61b43982dc3779ddbf60",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 15,
+      "sha256": "8ac3db3302d71917b224f3824a38d38bda8274f14804a372162cd27ea6c9096d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 16,
+      "sha256": "f910f65dbde767d1797a34a70fb5f11ee31a7f3f977a4c906b58ef54acd21174",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "unique_source_images": 8,
+  "unique_pdf_images": 8,
+  "repeated_image_placements": 0,
+  "render_dpi": 120,
+  "render_sha256": {
+    "page-01.png": "78e972e6c2a4d4fa9fbeb11330f761f6a16fdc71956f199f4fe0a1d6273c76cd",
+    "page-02.png": "49b22de4eb2a612461a29b49aeac1f5a8ec12eec03825748d568c789a0da979b",
+    "page-03.png": "a58aa21fcdb9b0e19746cc1dc311aad97965cbe522057abb0250e9719a3346c2",
+    "page-04.png": "67997929160b2a4a14a0b75ff92cf25dc5627413f611c208ce6b66d8b3943f0e",
+    "page-05.png": "87c9cf8a6cde612059f8e1d4c02f90145feca6b947286319a14317dd43011657",
+    "page-06.png": "216bd3e0eb9fde8aec8d8ca11d17e00f3801c2337d2ab3a3d8ec8aa266d361db",
+    "page-07.png": "b867909495581a9c5c6b5024c15447e71b06c9c3c6d2eb4d0a8fcbd79da6e72b",
+    "page-08.png": "71a10fe42696587e44044cbab3d7fa5acec663e86aa201edcee9c0c883149156",
+    "page-09.png": "cd974d361039156b685e6e4f570bfa0aecf6f9bc408a245f4280ab54a9aa0c3b",
+    "page-10.png": "f3715d3afb99a26186f0fa5db24e50abf86ba4c46c5c69156abf976afdac38d0",
+    "page-11.png": "e7ca34e72858ec6d3de685d922fa5840a989cbc07a48e1a4f5d3d003473ce952",
+    "page-12.png": "2d5a28a4638137f1752ccc1ea9064b9839185fb709dafe1b5bbd3d44f3f9ad57",
+    "page-13.png": "89f46184209721e1e58de1b0caf98eda125db1311190f1c228f093853a37599b",
+    "page-14.png": "ff64bc7d4bc74677bd974feec3ff96f4d2afa5533742bc2371502db092ddd674",
+    "page-15.png": "b6f9c188589cf156e856186184b6461a94e67ce29c36bc5a3ea32a0aa20554bb",
+    "page-16.png": "a76bc291f671dcc09d750ae561657893c213a25669ad2aa04712a87de9fdd7f6",
+    "page-17.png": "5388fd73cdeb2168eab78e50cebf7139dfcc485ab2e9c49006cce10892221515",
+    "page-18.png": "a8fd921cfb885190350f379b809a9d23b87e1d3c5620aea35fd51492e4fab700",
+    "page-19.png": "263feb7533a8483450666d6eefadbefc3fb2d820d56d387ef7a0c702b5437fe6",
+    "page-20.png": "223dbfdabafd3a468f7abd5630ca4edeb59275d0d372cf60e34c8eabe6d098e8",
+    "page-21.png": "de4d6704e0441de2bfb9cc765b61ff1345e7b2919e8c5812a11abe0addd49372"
+  },
+  "visual_review": {
+    "pages_01_to_10": "Root inspected individually; all passed.",
+    "pages_11_to_21": "Independent reviewer inspected individually; all passed, including full portal diptych, evidence table, Greek and Chinese glyphs.",
+    "observed_issues": "No remaining clipping, overlap, legibility, framing, diagram, or footer defects detected."
+  },
+  "content_review": {
+    "status": "Passed independent review against latest user correction, technical foundation and primary evidence notes.",
+    "coverage": [
+      "Existing machinery and AI capabilities",
+      "Productive-capacity reinvestment and conditional compounding",
+      "Practical development path and whole-network dependencies",
+      "Generous shared provision and creative means",
+      "Freedom from compulsory labor and livelihood exploitation",
+      "Free association as an enabled capability, civilization as generative systems",
+      "Meta-level and regenerative materials retained",
+      "Rocket, MMORPG, AR portal and other worlds retained"
+    ],
+    "evidence_labels": "Seven primary-source cases cited in the book; eleven cases across the two project research notes.",
+    "limits": "Current-AI sufficiency for all labor and complete autonomous industrial reproduction are not established by the evidence."
+  },
+  "previous_editions_preserved": [
+    "output/pdf/worlds-we-can-inhabit.pdf",
+    "output/pdf/worlds-we-can-inhabit-v2.pdf"
+  ]
+}

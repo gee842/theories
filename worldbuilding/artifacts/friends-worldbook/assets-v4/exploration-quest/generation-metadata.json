@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-07",
+  "status": "AI-generated speculative architectural illustrations; not engineered or constructed facilities.",
+  "images": {
+    "exploration-launch.png": {
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "intent": "generate",
+      "prompt_file": "prompts.json",
+      "source": "/Users/ren/.codex/generated_images/01a07c38-2e5f-7ed3-95e9-9e33e2eeac5b/exec-bc818038-c21e-4420-bb07-6b98f6868e13.png",
+      "visual_review": "Inspected inline at full generated resolution; accepted.",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "sha256": "b8dd9bdad6f6b518bb82d3439feabbfd6d7c36af966591cefdd30d7dabaef65f",
+      "bytes": 2528986
+    },
+    "exploration-section.png": {
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "intent": "generate",
+      "prompt_file": "prompts.json",
+      "source": "/Users/ren/.codex/generated_images/01a07c38-2e5f-7ed3-95e9-9e33e2eeac5b/exec-ba77ca6e-4c2e-4d3b-bbec-be03027dc229.png",
+      "visual_review": "Inspected inline at full generated resolution; accepted.",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "sha256": "d9bf9ec01c2379883e120bd39e2cc4160ba5ef3e37e6f6a35bef0aae84009108",
+      "bytes": 3056849
+    },
+    "quest-bridge.png": {
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "intent": "generate",
+      "prompt_file": "prompts.json",
+      "source": "/Users/ren/.codex/generated_images/01a07c38-2e5f-7ed3-95e9-9e33e2eeac5b/exec-d5207302-1143-46d7-a38a-746529b2c428.png",
+      "visual_review": "Inspected inline at full generated resolution; accepted.",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "sha256": "f884dbfa2e8ea40160a4b1f329445281b8278b0688455db90e975509f72b7a2c",
+      "bytes": 2887645
+    },
+    "quest-backstage.png": {
+      "tool": "image_gen.imagegen",
+      "mode": "built-in",
+      "intent": "generate",
+      "prompt_file": "prompts.json",
+      "source": "/Users/ren/.codex/generated_images/01a07c38-2e5f-7ed3-95e9-9e33e2eeac5b/exec-1d9aed12-fea9-4863-80a2-7a2bf780065d.png",
+      "visual_review": "Inspected inline at full generated resolution; accepted.",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "sha256": "eb6125c2adf7f1b23249228d8cdd13b301f8960a9f30635fa4d1c42db3a3020a",
+      "bytes": 3128618
+    }
+  }
+}

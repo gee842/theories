@@ -1,0 +1,38 @@
+{
+  "generation_date": "2026-09-07",
+  "prompt_file": "prompts.json",
+  "assets": [
+    {
+      "file": "beam-lives.png",
+      "original_path": "/Users/ren/.codex/generated_images/01a07c93-c169-7f33-954e-16c9050bf2d6/exec-0c97d4b4-8ede-4909-93c9-1a02f05940cc.png",
+      "method": "built-in image_gen.imagegen",
+      "intent": "generate",
+      "source_images": [],
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2944151,
+      "sha256": "3114f7d4c3ca666f97de29de38997179323de7bcda9ef8b9a21189f924f02012",
+      "source_preserved": true,
+      "workspace_copy_identical": true,
+      "visual_inspection": "accepted",
+      "concept_status": "Illustrative proposed worldbuilding episode, not documentary evidence or engineering validation."
+    },
+    {
+      "file": "garden-choice.png",
+      "original_path": "/Users/ren/.codex/generated_images/01a07c93-c169-7f33-954e-16c9050bf2d6/exec-d89c2bf0-8b11-46da-b6c4-641423568755.png",
+      "method": "built-in image_gen.imagegen",
+      "intent": "generate",
+      "source_images": [],
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 3248201,
+      "sha256": "4c61a46772b0a1af13c0fef54d3a19dcfe4b795d728e45b68d7d5fc0f431deab",
+      "source_preserved": true,
+      "workspace_copy_identical": true,
+      "visual_inspection": "accepted",
+      "concept_status": "Illustrative proposed worldbuilding episode, not documentary evidence or engineering validation."
+    }
+  ]
+}

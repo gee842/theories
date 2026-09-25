@@ -1,0 +1,45 @@
+# 范围
+
+> 状态：v3 (2026-05-11) — 与 main @ 1c76a55（Phase A–G + Phase C R-aliases）对齐；路径口径校准 2026-05-21。旧 192-cell carrier 已删，Cell256 (V₄ Shi) 与 R₀..R₈ strict (Z/2)ⁿ uniform 是当前唯一的形式 spine。Phase γ 之后 `Foundation/Bagua/` 已删，内容迁至 `Foundation/Atlas/Yi/`。形式现状口径以 [`claim-status-ledger.md`](../10_formal_形式/claim-status-ledger.md) v0.8（2026-05-21）为准。
+
+`docs-next/` 的当前目标是生成一套可整体替换旧文档入口的候选文档集，但本阶段不执行替换。
+
+## 包含
+
+- 形式层入口与信任边界（在 Cell256 + R₀..R₈ 新 spine 上重新组织）。
+- 义理旧文的分类重索引。
+- Lean、claim、registry、operator、diagram、Markdown 的生成索引。
+- 史料 frozen archive 的去向指针。
+- 后续替换根 README 和 web 索引所需的维护说明。
+- v2.1 doctrine（[yi-RO-hierarchy.md](../10_formal_形式/yi-RO-hierarchy.md)）所确立的 R₀..R₈ + V₄ Shi + 道作为 origin 的形式 anchor。
+
+## 不包含
+
+- 不删除或移动旧 `义理/`、`史料/`、`formal/SSBX/notes/`。
+- 不把 `史料/` 改写成当前规范。
+- 不把 web 前端切到 `docs-next`。
+- 当前口径是 full build warning-free；若新增 warning，应在维护页说明原因或清理。
+
+## Phase A–G 里程碑（影响范围口径的关键事件）
+
+下列 milestones 已在 main 落地，docs-next 在它们之后必须保持一致：
+
+| 阶段 | 关键事件 | commit |
+|---|---|---|
+| Phase A | Cell128 / Cell256 加 Add/Zero/Neg/Sub + SMul + Cayley ι/ε；印 / 投 改写为 XOR mask；origin = (qian, dao) = V₄ identity | 7de5064 |
+| Phase B/D/E | Foundation/Hierarchy/{R5_Wuyao, LiftProject, Operators/{Atomic,V4}}.lean（原 `V4Outer.lean` 已拆入 `V4/` 子目录）；Foundation/Notation/OXNotation.lean (`OX["xxxxxxxx"]` 8-char 字面) | 7de5064 |
+| Phase F.1–F.5 | Shi 自 3-元 {ji,jin,wei} 升 4-元 V₄ Klein {dao,ji,jin,wei}；shiNext 由 cyclic-3 改为 V₄ Shi.cuo involution；~50 下游文件由旧 192-cell carrier 迁至 Cell256 | 7de5064 |
+| Phase F.x.5 | Modern/* cascades 完成 legacy operator-cell grid 的 Cell256 迁移；该 grid 现按 audit inventory 读，不作 root ontology | 0003224 |
+| Phase F.6 / G / B.1 | 删除旧 192-cell Lean 文件；doc sync 到 R₀..R₈；YinBit dedup（canonical 在 Cell128.lean） | 8e4406e |
+| Phase C | Foundation/Hierarchy/R{0..8}_*.lean 9 个 alias 文件 + RHierarchy.lean umbrella | 1c76a55 |
+| Phase γ (post-1c76a55) | `Foundation/Bagua/` 整体删除；内容迁至 `Foundation/Atlas/Yi/`（Cell256 / Cell128 / BenZheng 等） | 详 [phase-status.md](phase-status.md) |
+
+`lake build SSBX` 在 1c76a55 上历史口径为 3656 / 3656 jobs。R8_complete 仍只依赖 propext + native_decide。
+
+> **形式现状（2026-05-21）**：仓库整体并非 0 sorry — 当前约 150-170 处 sorry，并有 3 处工程 axiom（`Foundation/Doctrine/Instance/Quantum.lean` / `Foundation/Order/FrmMonoidal.lean` / `Foundation/Atlas/Yi/Classical/Diagonal/GodelLi.lean`）。"0 项目自定义 axiom"仅适用于 R-Family / R8_complete 这一支，不适用整个仓库。job 数随后续 commit 持续变化，详见 [phase-status.md](phase-status.md) 与 [claim-status-ledger.md](../10_formal_形式/claim-status-ledger.md) v0.8。
+
+## 形式锚
+
+- [`formal/SSBX/Foundation/Hierarchy/RHierarchy.lean`](../../formal/SSBX/Foundation/Hierarchy/RHierarchy.lean) — R₀..R₈ umbrella import
+- [`formal/SSBX/Foundation/Atlas/Yi/Cell256.lean`](../../formal/SSBX/Foundation/Atlas/Yi/Cell256.lean) — R₈ + Shi V₄（旧 `Bagua/Cell256.lean` 已迁此处）
+- [`formal/SSBX/Foundation/Atlas/Yi/Cell256Stratify.lean`](../../formal/SSBX/Foundation/Atlas/Yi/Cell256Stratify.lean) — R8_complete bundle（旧 `Bagua/Cell256Stratify.lean` 已迁此处）

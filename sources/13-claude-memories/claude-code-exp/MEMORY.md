@@ -1,0 +1,1 @@
+- [Essay writing style](feedback_essay_style.md) — for humanities/social-science essays, use developed prose; skip Claude Code terseness defaults

@@ -1,0 +1,2279 @@
+{
+  "schema_version": "1.0",
+  "title": "Worldbuilding possibility map",
+  "updated": "2026-09-07",
+  "authorship": "AI synthesis of the archived conversation, selected earlier project sources, and dated evidence notes. All node descriptions, classifications, links, and inferences are AI-written proposals, not verbatim quotations from Ren. Source records distinguish founder theses, assistant interpretation, and bounded reviews of primary operational evidence.",
+  "purpose": "A revisable typed network connecting a concrete engineering program for expanding productive capacity to generous shared provision, freedom from compulsory employment, and generative worldmaking. It links principles, scenario premises, mechanisms, conditional expectations, worlds, tensions, and open technical questions. It is not an inevitability tree or a dated forecast.",
+  "evidence_policy": "Sources S1–S8 and S12 establish conversational or historical provenance; S13 records authorization to prepare the next edition and update the project, not new philosophical claims or acceptance of particular designs; S9 is an assistant-authored source-reading record. S10–S11 are dated, bounded assistant reviews of linked primary operational and research reports, with their reported scopes and limitations. Evidence for a component, local deployment, or useful feedback link does not establish full autonomous industrial reproduction, current-model sufficiency for every required task, an expansion timetable, or a guaranteed institutional outcome. Preserve Ren’s strong engineering thesis explicitly and test it at the declared network scale; do not silently promote the thesis or a scenario premise to a demonstrated fact.",
+  "path_base": "All source paths and artifact paths are relative to this JSON file.",
+  "sources": {
+    "S1": {
+      "path": "../archive/001-ren-opening.txt",
+      "author": "Ren",
+      "role": "Original worldbuilding vision and technological framing; preserved separately as user speech."
+    },
+    "S2": {
+      "path": "../archive/002-assistant-development.md",
+      "author": "Assistant",
+      "role": "Initial AI development, including institutional conditions, plural worlds, and everyday tensions."
+    },
+    "S3": {
+      "path": "../archive/003-ren-project-brief.txt",
+      "author": "Ren",
+      "role": "Request for full preservation, a robust possibility representation, and practical architectures and 3D worlds."
+    },
+    "S4": {
+      "path": "../archive/004-ren-regenerative-materials.txt",
+      "author": "Ren",
+      "role": "Material and cultural extension: long-horizon stewardship, knowledge as public goods, shared durable objects, reuse and recycling, reconfigurable architecture, and amplified capacity and risk."
+    },
+    "S5": {
+      "path": "../archive/006-ren-meta-level-and-worlds.txt",
+      "author": "Ren",
+      "role": "Current correction: restore the meta-level and generative principles from the surrounding theories, develop and render exploration, lived MMORPG worlds, and AR elevators experienced as portals."
+    },
+    "S6": {
+      "path": "../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md",
+      "author": "Ren; compiled archive of earlier project user prompts",
+      "role": "Earlier project provenance, not empirical evidence. This revision relies on the directly inspected first-person sections dated 2026-06-03T10:32 and 19:12, 2026-06-04T14:53 and 19:48, and 2026-06-05T09:24 and 09:40. These develop world examples, frames that shape choices, generative emergence, plurality, pace of learning, and interdependence. The file also contains pasted or mixed-provenance text; the map does not attribute every embedded passage to Ren or adopt its strongest forecasts as established."
+    },
+    "S7": {
+      "path": "../../sources/12-claude-ai-chats/2026-04-30_Generativity_as_environmental_stewardship_439667f8.md",
+      "author": "Ren and Assistant; selected HUMAN turns used here",
+      "role": "Directly inspected Ren’s HUMAN turns at 2026-04-30T09:03 and 09:04, distinguishing a generative environment from a demand to be personally productive and naming 生生不息. Assistant elaborations in the same file remain separately attributed and are not adopted as source statements by Ren."
+    },
+    "S8": {
+      "path": "../archive/007-ren-technical-foundation-and-next-version.txt",
+      "author": "Ren",
+      "role": "Current correction: restore why existing AI, robotics, and industrial knowledge make full automation and resource-bounded recursive productive expansion a practical engineering thesis; connect it to generous common means, freedom from exploited labor, and building systems for better futures."
+    },
+    "S9": {
+      "path": "../research/2026-09-07-abundance-source-reading.md",
+      "author": "Assistant",
+      "role": "Dated provenance review of selected earlier human passages and attributed syntheses on autonomous infrastructure, recursive industry, abundant necessities, free association, and voluntary worldmaking. A reading record and editorial analysis, not independent capability evidence."
+    },
+    "S10": {
+      "path": "../research/2026-09-07-industrial-automation-evidence.md",
+      "author": "Assistant, reviewing linked primary reports",
+      "role": "Bounded 2026-09-07 review of ABB, FANUC, BMW, Rio Tinto, Amazon Robotics, and ETH Zurich reports. Operating automation and demonstrations offer concrete industrial starting points; company-reported outcomes and limited experimental scope remain identified. No complete autonomous supply-chain reproduction, model sufficiency, or doubling time is established."
+    },
+    "S11": {
+      "path": "../research/2026-09-07-ai-engineering-evidence.md",
+      "author": "Assistant, reviewing linked primary technical reports and deployment accounts",
+      "role": "Bounded 2026-09-07 review of Gemini Robotics 1.5, Physical Intelligence policies and deployments, DextrAH-RGB, and AlphaEvolve. Connects demonstrated planning, action, learning, transfer, and infrastructure-improvement methods to a construction program; preserves task scope, human intervention, reporting-party limits, and uncertainty about the sufficiency of current AI for all required work."
+    },
+    "S12": {
+      "path": "../archive/008-ren-embodied-worlds-and-ar-megastructure.txt",
+      "author": "Ren",
+      "role": "Current direction: develop fuller embodied visual journeys so readers can see the future’s environments, technology, and engineering; the AR setting is a megabuilding constructed specifically for AR purposes. Purpose-built AR is user-directed; detailed hall arrangements, structures, service systems, and render compositions are proposed interpretations."
+    },
+    "S13": {
+      "path": "../archive/009-ren-edition-five-upgrade.txt",
+      "author": "Ren",
+      "role": "Authorization to fix and upgrade the next edition and update Markdown files where needed, following the edition-four review. This is a work instruction, not a new philosophical claim, evidence of engineering capability, or acceptance of the particular scenes and institutions proposed in response."
+    }
+  },
+  "node_types": {
+    "principle": "A normative commitment: what this civilization should protect or pursue.",
+    "assumption": "A scenario premise requiring evidence before it can support a claim about the actual world.",
+    "mechanism": "A proposed institutional or design arrangement with effects to examine.",
+    "expectation": "A conditional hypothesis about behavior or social outcomes, open to failure.",
+    "world": "A concrete speculative setting or explicitly unexpanded seed.",
+    "tension": "A risk, limit, conflict, or tradeoff that must remain visible.",
+    "question": "An unresolved inquiry that can generate research or design work."
+  },
+  "relation_semantics": {
+    "requires": "Source is conditional on target within this scenario. The target is not claimed to be sufficient; this is not universal logical necessity.",
+    "supports": "Source offers a reason, enabling condition, or proposed contribution toward target. It does not establish target or guarantee its outcome.",
+    "constrains": "Source sets a design boundary, feasibility limit, or countervailing pressure on target. Normative constraints must be institutionally implemented.",
+    "tests": "Source world supplies a fictional design test of target. A scene or simulation can expose incoherence but is not empirical validation.",
+    "risks": "Source creates or encounters exposure to target failure mode. Neither a probability nor inevitability is asserted.",
+    "mitigates": "Source proposes a way to reduce target risk. Effectiveness and secondary effects remain to be examined.",
+    "asks_about": "Source question directs inquiry toward target."
+  },
+  "conventions": [
+    "IDs remain stable when prose is refined. Do not renumber surviving nodes; record replacement IDs if a node is split or retired.",
+    "An arrow follows source to target and means only its named relation; read the relation before following a path.",
+    "No transitive inference is licensed automatically. Supports plus supports does not establish an outcome.",
+    "Values do not manufacture technical capability. Principle-to-mechanism links concern design intent, not engineering proof.",
+    "Cycles may represent mutual support or revision. The map is not restricted to a tree or a directed acyclic graph.",
+    "Missing edges do not establish independence. The map is intentionally selective, and scope should be expanded where a scenario needs it.",
+    "No probabilities, universal growth rates, calendar predictions, or final institutional settlement are assigned."
+  ],
+  "nodes": [
+    {
+      "id": "P01",
+      "type": "principle",
+      "title": "Unconditional belonging",
+      "description": "A person’s material security and standing do not depend on employment, competitive success, prestige, or being judged sufficiently generative.",
+      "status": "working_principle",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "P02",
+      "type": "principle",
+      "title": "Care for the shared substrate",
+      "description": "Communities share ecological and material conditions. Their projects must account for effects on other people, other living systems, and future inhabitants.",
+      "status": "working_principle",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "P03",
+      "type": "principle",
+      "title": "Plural ways of being",
+      "description": "A shared civilization can hold scholarly, expressive, exploratory, quiet, and mixed lives. Belonging does not require one account of a good life.",
+      "status": "working_principle",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "P04",
+      "type": "principle",
+      "title": "Generative ambition without compulsory productivity",
+      "description": "Culture can encourage creating possibilities beyond oneself while protecting rest, ordinary affection, unremarkable lives, and the freedom to stop.",
+      "status": "working_principle",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "P05",
+      "type": "principle",
+      "title": "Consent, refusal, and exit",
+      "description": "People can refuse personalization, criticize institutions, leave communities, and retain material security. Others’ attention, affection, and agreement remain voluntary.",
+      "status": "working_principle",
+      "source_refs": [
+        "S2"
+      ]
+    },
+    {
+      "id": "P06",
+      "type": "principle",
+      "title": "Competition with bounded consequences",
+      "description": "Games and rivalry can be intense, but winning must not determine access to essentials or transfer authority over shared life-support systems.",
+      "status": "working_principle",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "P07",
+      "type": "principle",
+      "title": "Learning as a way of inhabiting reality",
+      "description": "Understanding, embodied practice, expression, and exploration can be valued for how they change experience, beyond their usefulness for employment.",
+      "status": "working_principle",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "P08",
+      "type": "principle",
+      "title": "Revisable shared governance",
+      "description": "Institutions must be open to criticism and repair, with intelligible decisions and ways to challenge or replace administrators. No single vision is beyond revision.",
+      "status": "working_principle",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "A01",
+      "type": "assumption",
+      "title": "Reliable autonomy across required tasks",
+      "description": "Ren’s engineering thesis is that present AI methods and industrial knowledge can be developed into full automation. The strong scenario grants adequate reliability and recoverability across the cognitive and physical tasks required for infrastructure and everyday provision. Bounded operating capabilities make this a concrete program to pursue, but do not establish that today’s available models are sufficient for every required task.",
+      "status": "unverified_scenario_premise",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S8",
+        "S10",
+        "S11"
+      ],
+      "validation_needed": [
+        "Specify required tasks and operating conditions.",
+        "Assess failures, repair needs, supervision, and dependence on scarce human expertise."
+      ],
+      "evidence_context": "The two dated evidence notes report useful operating pieces and development methods. Q09 asks whether the actual required task network can be completed with current systems; A01 remains unverified at universal scope.",
+      "artifact": "automation-to-shared-abundance.md"
+    },
+    {
+      "id": "A02",
+      "type": "assumption",
+      "title": "Industrial reproduction with supply-chain closure",
+      "description": "The strong scenario grants a productive network able to construct, commission, maintain, and reproduce its required equipment, including upstream tools and critical components within a declared boundary. A robot factory alone does not establish this closure. Useful recursive expansion within an externally supplied network is a less demanding route, represented separately by M14.",
+      "status": "unverified_scenario_premise",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S8",
+        "S10"
+      ],
+      "validation_needed": [
+        "Trace energy, extraction, refining, chips, machine tools, transport, construction, maintenance, and waste streams.",
+        "Identify dependencies the proposed system cannot itself replenish."
+      ],
+      "artifact": "automation-to-shared-abundance.md"
+    },
+    {
+      "id": "A03",
+      "type": "assumption",
+      "title": "Resource and energy access",
+      "description": "Material inputs, usable energy, suitable sites, logistics, and lawful access are available at the scale required by the selected scenario. These are finite and spatially uneven.",
+      "status": "unverified_scenario_premise",
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "validation_needed": [
+        "Build material and energy budgets for a chosen scale.",
+        "Identify lead times, contested access, and capacity constraints."
+      ]
+    },
+    {
+      "id": "A04",
+      "type": "assumption",
+      "title": "Growth through reinvested productive capacity",
+      "description": "In the strong industrial-closure scenario, output reinvested in further useful capacity may accelerate expansion while complementary inputs, system closure, repairs, and commissioning keep pace. Positive net addition proportional to operating capacity would yield an exponential phase under those model conditions; this is not a measured industrial rate, universal doubling time, or indefinite planetary trajectory. M14 also explores recursive expansion with declared outside dependencies.",
+      "status": "unverified_scenario_premise",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S8",
+        "S9",
+        "S10"
+      ],
+      "validation_needed": [
+        "Define what grows: robot count, useful output, or complete productive capacity.",
+        "Model construction and commissioning delays, depreciation, reinvestment, and the slowest required input."
+      ],
+      "artifact": "automation-to-shared-abundance.md"
+    },
+    {
+      "id": "A05",
+      "type": "assumption",
+      "title": "Provision within ecological limits",
+      "description": "The chosen level of provision and construction can operate inside explicitly chosen ecological budgets, including material throughput, land use, waste, habitat effects, and energy infrastructure.",
+      "status": "unverified_scenario_premise",
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "validation_needed": [
+        "Define the budgets and how breaches are detected.",
+        "Compare maintenance, reuse, and restoration with new construction."
+      ]
+    },
+    {
+      "id": "M01",
+      "type": "mechanism",
+      "title": "Durable provision and creation entitlement",
+      "description": "Establish an enforceable, portable claim to dependable provision and an accessible share of tools or productive capacity. Essentials are a necessary guarantee within a larger aim of generous common means and creative freedom; the delivery and allocation model remains open, and access does not depend on selling labor.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "id": "M02",
+      "type": "mechanism",
+      "title": "Accountable stewardship of automated infrastructure",
+      "description": "Choose ownership, operating mandates, audits, maintenance duties, and succession arrangements that preserve the provision guarantee and prevent operators from making residents dependent on their favor. No single ownership form is assumed to suffice.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "M03",
+      "type": "mechanism",
+      "title": "Participatory allocation and appeal",
+      "description": "Make decisions over shared space and rival resources through understandable procedures with representation, appeals, and protection for dissenting or less influential inhabitants.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "M04",
+      "type": "mechanism",
+      "title": "Reversible trials and collective repair",
+      "description": "Prototype changes where feasible, keep rollback and repair capacity, include affected people, and evaluate consequences before committing to larger transformations. Some ecological and social changes cannot be fully reversed.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S2"
+      ]
+    },
+    {
+      "id": "M05",
+      "type": "mechanism",
+      "title": "Responsive environments under resident control",
+      "description": "Buildings, gardens, mobility, and mixed-reality spaces can adapt to inhabitants, with intelligible controls, consent, physical accessibility, privacy, manual alternatives, and protected unpersonalized spaces.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "M06",
+      "type": "mechanism",
+      "title": "Lifelong learning and practice commons",
+      "description": "Make equipment, mentorship, spaces, knowledge, and time accessible across ages; support embodied and expressive practices alongside formal inquiry, and make leaving or returning ordinary.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "E01",
+      "type": "expectation",
+      "title": "Livelihood can separate from paid employment",
+      "description": "If dependable provision requires much less human effort, remaining necessary work has acceptable arrangements, and people have durable common access, livelihood can separate from compulsory paid employment. The aim includes a generous life and usable means of creation. Reducing a task’s labor requirement alone does not grant its former workers access to the output, and one group’s freedom cannot hide another group’s coerced labor.",
+      "status": "conditional_hypothesis",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S8",
+        "S9"
+      ],
+      "observation": "Can inhabitants lose paid work or leave a community without losing housing, food, care, mobility, or access to tools?",
+      "challenge": "Exclusion, administrator discretion, supply interruption, or unaffordable essentials continue to make livelihood conditional on labor or allegiance.",
+      "artifact": "automation-to-shared-abundance.md"
+    },
+    {
+      "id": "E02",
+      "type": "expectation",
+      "title": "Lives may organize around diverse pursuits",
+      "description": "With secure belonging and voluntary associations, more people may organize life around relationships, gardening, expression, inquiry, exploration, play, or rest. This is neither a prediction that everyone becomes a builder nor an obligation to do so.",
+      "status": "conditional_hypothesis",
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "observation": "Do varied ways of life remain accessible, including changing interests and lives with little visible output?",
+      "challenge": "Prestige hierarchies, exclusion, cultural pressure, or concentrated control make one approved way of life practically compulsory."
+    },
+    {
+      "id": "E03",
+      "type": "expectation",
+      "title": "Physical speed can coexist with civic patience",
+      "description": "If construction becomes faster, communities may choose to spend more time understanding consequences, relationships, memory, and consent before changing a place. Faster capability need not dictate faster collective decisions.",
+      "status": "conditional_hypothesis",
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "observation": "Can residents delay, revise, or refuse a technically ready project without losing standing?",
+      "challenge": "Output targets or operator power make consent ceremonial and erase places faster than inhabitants can respond."
+    },
+    {
+      "id": "E04",
+      "type": "expectation",
+      "title": "Learning may become less credential-driven",
+      "description": "When livelihoods are secure and learning resources are accessible, learning can increasingly follow curiosity, relationships, practice, and long commitments. Credentials may remain useful for responsibility and trusted expertise.",
+      "status": "conditional_hypothesis",
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "observation": "Can someone study, stop, change fields, or practice privately without losing essentials or belonging?",
+      "challenge": "Status competition recreates credential races, or access to respected mentors and equipment remains restricted."
+    },
+    {
+      "id": "W01",
+      "type": "world",
+      "title": "Living garden",
+      "description": "A neighborhood shaped around habitat, food, seasons, shared space, and ecological stewardship. A proposed resident changes from garden planning to astronomy while retaining ordinary provision and creative means; an affected group revises a building footprint to keep a mature tree. These scenes examine durable access, remaining human work, ecological continuity, and whose preferred landscape becomes real.",
+      "status": "scenario_sketch",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S4",
+        "S8"
+      ],
+      "artifact": "../worlds/01-living-garden.md"
+    },
+    {
+      "id": "W02",
+      "type": "world",
+      "title": "House of worlds",
+      "description": "A megastructure purpose-built for shared embodied AR, where world halls, portal lifts, touchable routes, and service levels support persistent collectively authored realities. The current concept uses three broad stacked halls, a left passenger core, a right service core, and a cloud-harbor music gathering called the First Arrival. Dedicated AR purpose is Ren’s direction; this geometry, culture, and display approach remain proposals. Shared physics, accessible exits, and support spaces remain real.",
+      "status": "scenario_sketch",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S5",
+        "S6",
+        "S12"
+      ],
+      "artifact": "../worlds/02-house-of-worlds.md",
+      "user_direction": "A mega building built for AR purposes, as clarified in S12. Earlier treatment as an ordinary mixed-use building with added experiences is superseded.",
+      "prior_artifact": "../worlds/02-house-of-worlds-edition-04.md",
+      "earlier_artifact": "../worlds/02-house-of-worlds-edition-03.md"
+    },
+    {
+      "id": "W03",
+      "type": "world",
+      "title": "Open university",
+      "description": "An inhabited learning commons that welcomes lifelong inquiry, making, teaching, departure, and return. It must make room for varied abilities and nonacademic lives without treating membership as a rank.",
+      "status": "scenario_sketch",
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "artifact": "../worlds/03-open-university.md"
+    },
+    {
+      "id": "W04",
+      "type": "world",
+      "title": "Expressive commons",
+      "description": "A community organized around movement, music, feeling, performance, and embodied exploration, with quiet rooms, privacy, and ordinary rest as complete ways to belong. Its proposed culture lets participants revise invitations and performance space without making participation, talent, or emotional disclosure a condition of security. A music room also explores the assessed reuse of a former garden pavilion’s structural bay.",
+      "status": "scenario_sketch",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "artifact": "../worlds/04-expressive-commons.md"
+    },
+    {
+      "id": "W05",
+      "type": "world",
+      "title": "Exploration community",
+      "description": "A community that makes exploration a shared way of life: robotic fabrication, rocket and spacecraft work, observatories, long missions, and public learning support projects that outlast participants. The scenario separates workshops and public life from hazardous launch operations. Specific vehicles, destinations, and mission claims require their own feasibility cases.",
+      "status": "scenario_sketch",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S5",
+        "S6"
+      ],
+      "artifact": "../worlds/05-exploration-community.md"
+    },
+    {
+      "id": "T01",
+      "type": "tension",
+      "title": "Ownership and operator capture",
+      "description": "High productive capacity may coexist with dependence if a few actors can deny access, set conditions, or monopolize infrastructure. Abundance and widely shared security are separate claims.",
+      "status": "failure_mode_to_explore",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "T02",
+      "type": "tension",
+      "title": "Ecological overshoot and displaced harm",
+      "description": "Cheap or rapid construction may increase total material use, occupy habitats, move pollution elsewhere, or consume resources needed by other communities and future inhabitants.",
+      "status": "failure_mode_to_explore",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "T03",
+      "type": "tension",
+      "title": "Incomplete closure and scaling bottlenecks",
+      "description": "A missing upstream capability, limited energy, scarce components, long lead times, maintenance burden, or repair failure can stop expansion or reduce provision. Scaling may be local, uneven, or stalled.",
+      "status": "failure_mode_to_explore",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "T04",
+      "type": "tension",
+      "title": "Scarce attention, place, and prestige",
+      "description": "Affection, trust, recognition, unique places, and some opportunities remain rival or voluntary. Informal rankings can become coercive and unequal influence can survive material abundance.",
+      "status": "failure_mode_to_explore",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "T05",
+      "type": "tension",
+      "title": "Paternalistic or manipulative environments",
+      "description": "A responsive system or institution may shape inhabitants toward its preferred behavior, make choices illegible, normalize surveillance, or penalize refusal while claiming to help.",
+      "status": "failure_mode_to_explore",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "T06",
+      "type": "tension",
+      "title": "Inherited habits and disrupted identity",
+      "description": "People may experience guilt about rest, loss of identity, distrust of security, or pressure to prove usefulness. Different generations and cultures may inhabit the change differently.",
+      "status": "failure_mode_to_explore",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "Q01",
+      "type": "question",
+      "title": "How are rival goods allocated?",
+      "description": "How should communities allocate unique places, scarce equipment time, ecological capacity, and opportunities without converting prestige or administrative favor into a right to dominate?",
+      "status": "open_inquiry",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "Q02",
+      "type": "question",
+      "title": "How do different worlds coexist?",
+      "description": "How can communities with incompatible rhythms, landscapes, experiences, or projects share infrastructure and ecological budgets while preserving criticism, exit, and minority ways of life?",
+      "status": "open_inquiry",
+      "source_refs": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "Q03",
+      "type": "question",
+      "title": "What makes a productive system dependable?",
+      "description": "What operating evidence would justify granting autonomy and industrial closure at a particular scale, and what fallback provision remains available through failures, repair periods, or stalled expansion?",
+      "status": "open_inquiry",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "Q04",
+      "type": "question",
+      "title": "How do guarantees survive institutional failure?",
+      "description": "Who enforces provision and access when owners, operators, communities, or governing bodies fail, and how can people replace them without interrupting essential services?",
+      "status": "open_inquiry",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "P09",
+      "type": "principle",
+      "title": "Long-horizon regenerative stewardship",
+      "description": "Treat materials, ecosystems, and productive infrastructure as inheritances to care for across generations. Favor durable service, repair, recoverable transformation, and ecological restoration over repeated extraction and disposal; circulating objects alone does not establish regeneration.",
+      "status": "working_principle",
+      "source_refs": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "P10",
+      "type": "principle",
+      "title": "Knowledge as a shared foundation",
+      "description": "Develop knowledge, repair documentation, design records, and understandable standards as accessible public goods so people can learn, inspect, adapt, and build together. Public information does not by itself confer physical access or establish the performance of a manufactured object.",
+      "status": "working_principle",
+      "source_refs": [
+        "S4"
+      ]
+    },
+    {
+      "id": "A06",
+      "type": "assumption",
+      "title": "Recoverable material flows with usable energy and access",
+      "description": "For the selected objects and places, collection, cleaning, inspection, sorting, repair, remanufacture, and recycling recover enough usable material to sustain the intended service, with accessible facilities, logistics, reserves, and energy. Recovery is specified by material and application; neither lossless cycles nor energy without environmental cost is assumed.",
+      "status": "unverified_scenario_premise",
+      "source_refs": [
+        "S4"
+      ],
+      "validation_needed": [
+        "Specify the service, material grades, stock in use, return rate, retention of quality, processing losses, and unavoidable replacement inputs.",
+        "Account for cleaning, collection distances, storage, inspection, repair, manufacturing energy, water, residues, and access to facilities.",
+        "Test whether reserve stock and recovery throughput maintain provision through demand changes, outages, and delayed returns."
+      ]
+    },
+    {
+      "id": "M07",
+      "type": "mechanism",
+      "title": "Shared durable services and return loops",
+      "description": "Provide functions through durable objects and convenient return, cleaning, repair, and redistribution systems where a whole-system comparison supports them. A shared metal cup is a starting design case; personal use and long possession remain possible, and the loop must work for different bodies, preferences, and daily rhythms.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "id": "M08",
+      "type": "mechanism",
+      "title": "Compatible repairable parts and open standards",
+      "description": "Develop interoperable interfaces, replaceable parts, identified material grades, repair instructions, and revisable open standards. Choose fabrication methods for the application, including 3D printing where suitable; a shared design file does not establish material quality, dimensional accuracy, or structural fitness.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S4"
+      ]
+    },
+    {
+      "id": "M09",
+      "type": "mechanism",
+      "title": "Architecture designed for disassembly and reuse",
+      "description": "Design structures and fit-outs with accessible reversible connections, identifiable components, documented histories, and safe disassembly routes. Robots may assemble and recover steel members or other suitable parts; each reuse requires condition assessment and a design-specific performance case. Material reversibility does not reverse every ecological or social consequence.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "id": "M10",
+      "type": "mechanism",
+      "title": "Material inventory and recovery reserves",
+      "description": "Maintain an intelligible record of material quantities, grades, condition, location, commitments, and routes for return, alongside reserves for repair and interrupted processing. Use this information to match available parts to new purposes and expose losses and bottlenecks without making personal tracking a condition of access.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "id": "E05",
+      "type": "expectation",
+      "title": "Freedom through recoverable reconfiguration",
+      "description": "With usable recovery systems, compatible parts, accessible knowledge, and legitimate decisions, people may gain freedom to revise their surroundings while retaining more of the material capacity for later uses. A finite circulating stock can support repeated reconfiguration within quality and throughput limits; expanding simultaneous buildings or factories still requires stock, energy, space, and capacity.",
+      "status": "conditional_hypothesis",
+      "source_refs": [
+        "S4"
+      ],
+      "observation": "Can a community change a useful space, recover and redeploy its components, and retain dependable provision while recording losses, energy, elapsed time, and affected residents’ choices?",
+      "challenge": "Frequent redesign consumes the recovery margin, compatible parts become inaccessible, or the ability to change places faster erodes continuity and consent."
+    },
+    {
+      "id": "T07",
+      "type": "tension",
+      "title": "Material quality, losses, and recovery bottlenecks",
+      "description": "Collection failures, dispersed materials, incompatible mixtures, wear, contamination, processing losses, stock tied up in long-lived objects, and limited recovery capacity can interrupt the intended loops. A high recycling claim by itself does not specify how much suitable material returns, when it becomes available, or what new inputs are still required.",
+      "status": "failure_mode_to_explore",
+      "source_refs": [
+        "S4"
+      ]
+    },
+    {
+      "id": "T08",
+      "type": "tension",
+      "title": "Amplified harmful will and unnecessary churn",
+      "description": "Powerful fabrication and rapid reconfiguration can amplify destructive intentions, unilateral redesign, status-driven novelty, and avoidable replacement. Even recoverable construction can consume energy, disrupt lives or habitats, and overwhelm repair and deliberation. The ability to act does not establish a right to impose the result.",
+      "status": "failure_mode_to_explore",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "id": "Q05",
+      "type": "question",
+      "title": "How does finite circulating stock relate to growth?",
+      "description": "For a chosen region and service level, distinguish more simultaneous productive capacity from more varied uses of existing stock. What additional stock, energy, throughput, replacement inputs, and ecological capacity does each require, and when should reinvested expansion slow, stop, or shift toward maintenance and reconfiguration?",
+      "status": "open_inquiry",
+      "source_refs": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "Q06",
+      "type": "question",
+      "title": "When does collective provision improve the whole system?",
+      "description": "Compared with durable personal provision, when does a shared service reduce total burdens while preserving convenience, autonomy, reliability, and access? Test actual use frequency, cleaning, travel, returns, reserves, loss, and user preferences rather than treating collective provision as automatically superior.",
+      "status": "open_inquiry",
+      "source_refs": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "id": "P11",
+      "type": "principle",
+      "title": "Sustain the conditions of continuing becoming",
+      "description": "Cultivate a living environment in which relationships, practices, knowledge, and forms of life can emerge and develop while sustaining their shared foundations. Generativity concerns the capacity for further life and creation; it is neither a command to maximize a count of options nor a demand for constant novelty. Particular forms can mature, end, or be mourned.",
+      "status": "working_principle",
+      "source_refs": [
+        "S1",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "artifact": "generative-worldmaking.md"
+    },
+    {
+      "id": "P12",
+      "type": "principle",
+      "title": "Participate as a coauthor of shared conditions",
+      "description": "Understand oneself as an interdependent participant whose choices help shape other lives and the world that shapes oneself. Take responsibility for the conditions a project creates beyond its owner, and make room for affected people to help author them. Interdependence does not erase personal boundaries or by itself settle what anyone ought to do.",
+      "status": "working_principle",
+      "source_refs": [
+        "S1",
+        "S5",
+        "S6"
+      ],
+      "artifact": "generative-worldmaking.md"
+    },
+    {
+      "id": "P13",
+      "type": "principle",
+      "title": "Keep understanding revisable and give learning time",
+      "description": "Treat models, principles, and narratives as useful but partial guides. Cultivate curiosity, embodied attention, comparison, criticism, and time to notice consequences as capabilities and environments change. Even this orientation can be questioned; it supplies neither a final doctrine nor a numerical law relating technological speed to human understanding.",
+      "status": "working_principle",
+      "source_refs": [
+        "S1",
+        "S5",
+        "S6"
+      ],
+      "artifact": "generative-worldmaking.md"
+    },
+    {
+      "id": "M11",
+      "type": "mechanism",
+      "title": "Practices of reciprocal worldmaking",
+      "description": "Develop shared meals, mentorship, care, artistic rituals, expeditions, and resident-authored projects through which people learn to notice dependencies, contribute to something beyond themselves, and welcome others into it. These practices make the culture tangible while leaving belonging independent of contribution and allowing communities to develop different traditions.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S5",
+        "S6"
+      ],
+      "artifact": "generative-worldmaking.md"
+    },
+    {
+      "id": "M12",
+      "type": "mechanism",
+      "title": "Shared imagination, lived trials, and cultural revision",
+      "description": "Let inhabitants propose worlds and rituals, build inspectable representations, try changes at a suitable scale, and compare lived consequences with intentions. Use stories, discussion, observation, and accessible records to revise both arrangements and the ideas guiding them. Participants can dispute interpretations and choose continuity; permanent changes need their own judgment rather than a blanket reversibility test.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "artifact": "generative-worldmaking.md"
+    },
+    {
+      "id": "E06",
+      "type": "expectation",
+      "title": "People and their environments may reshape one another",
+      "description": "In a setting with participatory worldmaking, shared understandings may shape habits and expectations; these may shape choices, institutions, and material and social environments; experienced consequences may then revise or reinforce the original understandings. People can interpret the same world differently and change it in turn. This reciprocal formation is a working causal hypothesis with variable effects, not proof that one designed environment produces a particular kind of person.",
+      "status": "conditional_hypothesis",
+      "source_refs": [
+        "S1",
+        "S5",
+        "S6"
+      ],
+      "observation": "Across several projects, what do inhabitants notice, desire, reward, imitate, and imagine differently after living with their consequences? Include dissenting and unchanged experiences.",
+      "challenge": "Effects are weak, imposed, uneven, or better explained by prior selection; the official story of cultural change differs from residents’ experience.",
+      "artifact": "generative-worldmaking.md"
+    },
+    {
+      "id": "E07",
+      "type": "expectation",
+      "title": "Shared projects may support meaning beyond personal victory",
+      "description": "When people can freely join sustained, welcoming pursuits, some may find meaning in caring for a world, exploring together, or contributing to work that outlasts them. Relationships and ordinary life can carry the same depth. The scenario does not predict universal harmony, identical desires, or the disappearance of rivalry.",
+      "status": "conditional_hypothesis",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S5",
+        "S6"
+      ],
+      "observation": "Do people describe belonging, curiosity, care, play, or a shared future as reasons to remain, and can they change their involvement without loss of dignity?",
+      "challenge": "Shared purpose becomes a loyalty test, labor obligation, prestige contest, or story used to conceal exploitation.",
+      "artifact": "generative-worldmaking.md"
+    },
+    {
+      "id": "T09",
+      "type": "tension",
+      "title": "Compounding rewards can capture the rules of shared life",
+      "description": "Where winning yields durable advantages that buy further victories or control over rules and necessities, feedback may concentrate power and teach people to organize increasingly around that contest. Powerful automation may amplify the mechanism. This is conditional on institutions, returns, and constraints; it is not a theorem that every competition converges to domination or that cooperation automatically avoids capture.",
+      "status": "failure_mode_to_explore",
+      "source_refs": [
+        "S1",
+        "S5",
+        "S6"
+      ],
+      "artifact": "generative-worldmaking.md"
+    },
+    {
+      "id": "Q07",
+      "type": "question",
+      "title": "What ways of being do our worlds cultivate?",
+      "description": "How do narratives, attention, habits, institutions, and physical experiences interact to shape what people can imagine and become? Examine what a shared project makes inviting, who helps author it, how it changes its authors, and whether its success sustains further life or increasingly channels everyone toward one form of winning.",
+      "status": "open_inquiry",
+      "source_refs": [
+        "S1",
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "artifact": "generative-worldmaking.md"
+    },
+    {
+      "id": "W06",
+      "type": "world",
+      "title": "City of shared quests",
+      "description": "A lived world inspired by MMORPGs and LARP, with resident-authored districts, roles, quests, festivals, and persistent shared stories. A proposed guild observes that its success-based rule excludes newcomers from authorship, revises access, and examines what changes. This concerns creative participation, never a loss of necessities: the ordinary city and secure belonging remain available to residents who decline the fiction.",
+      "status": "scenario_sketch",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S5",
+        "S6"
+      ],
+      "artifact": "../worlds/06-city-of-shared-quests.md"
+    },
+    {
+      "id": "M13",
+      "type": "mechanism",
+      "title": "Connect available capabilities into dependable services",
+      "description": "Compose learned perception, planning, tools, feedback, conventional controls, and suitable robots into repeatable useful services. Connect those services through explicit input and output requirements, maintenance, energy, logistics, and human support. Existing deployments provide starting components; measure reliability of the connected network rather than treating a set of demonstrations as a complete autonomous system.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S1",
+        "S8",
+        "S10",
+        "S11"
+      ],
+      "evidence_context": "The dated industrial and AI notes distinguish operating services, research demonstrations, reporting parties, and intervention limits. They support beginning integration and research, not certification of the entire network.",
+      "artifact": "automation-to-shared-abundance.md"
+    },
+    {
+      "id": "M14",
+      "type": "mechanism",
+      "title": "Reinvest output in complementary productive capacity",
+      "description": "Direct part of useful output toward additional builders, production cells, power, tooling, logistics, and other processes that limit the next round of provision. Count commissioned additions and retirements, preserve maintenance capacity, and expose outside inputs. Additional builders can help create further builders before full supply-chain closure; whether net growth compounds depends on the whole chosen network.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S1",
+        "S4",
+        "S8",
+        "S9",
+        "S10"
+      ],
+      "artifact": "automation-to-shared-abundance.md"
+    },
+    {
+      "id": "M15",
+      "type": "mechanism",
+      "title": "Spread validated knowledge and learn from operation",
+      "description": "Make design records, process improvements, failure lessons, and reusable robot skills available for adaptation across installations. Shared knowledge can reduce repeated discovery and improve existing equipment alongside hardware expansion. Preserve testing, local fit, consent for data use, and reliable records; copying a policy or drawing does not guarantee useful performance at another site.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S4",
+        "S8",
+        "S10",
+        "S11"
+      ],
+      "artifact": "automation-to-shared-abundance.md"
+    },
+    {
+      "id": "M16",
+      "type": "mechanism",
+      "title": "Generous common provision and creative means",
+      "description": "Build common services for good food, comfortable homes, care, hygiene, mobility, culture, and usable access to fabrication, instruments, materials, knowledge, and spaces for ambitious shared projects. Join dependable access to actual supply, maintenance, allocation, and coordination. The aspiration is a rich life and capacity to create beyond a subsistence floor, without promising unlimited quantities, one institutional form, or compulsory participation.",
+      "status": "design_proposal",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S4",
+        "S8",
+        "S9"
+      ],
+      "artifact": "automation-to-shared-abundance.md"
+    },
+    {
+      "id": "E08",
+      "type": "expectation",
+      "title": "Provision may expand with less required human effort",
+      "description": "If connected productive systems repeatedly complete useful services with less human effort per service, provision and further capacity may grow without a proportional increase in required human labor. Pairing this technical gain with dependable common access and acceptable arrangements for remaining work can support freedom from compulsory employment. Autonomous equipment counts alone do not measure the gain.",
+      "status": "conditional_hypothesis",
+      "source_refs": [
+        "S1",
+        "S8",
+        "S10",
+        "S11"
+      ],
+      "observation": "Track complete useful service, quality, availability, human interventions, maintenance, upstream human effort, and newly commissioned capacity across several operating and replication cycles.",
+      "challenge": "Human effort is shifted upstream, hidden in remote support, consumed by repair and commissioning, or grows as fast as service; access remains conditional on wages despite labor savings.",
+      "artifact": "automation-to-shared-abundance.md"
+    },
+    {
+      "id": "E09",
+      "type": "expectation",
+      "title": "Abundant shared means can make voluntary worldmaking practicable",
+      "description": "When generous provision, usable creative capacity, knowledge, stewardship, and coordination are available together, people may gather around rockets, gardens, scholarship, embodied worlds, or other long projects without needing those projects to earn their livelihoods. Free association can then lead to systems people can actually build and sustain. It remains a possible social outcome, not a guarantee from abundant machinery or an obligation to join a grand purpose.",
+      "status": "conditional_hypothesis",
+      "source_refs": [
+        "S1",
+        "S2",
+        "S4",
+        "S8",
+        "S9"
+      ],
+      "observation": "Can a new or unprestigious group obtain usable tools, materials, knowledge, and support for a viable noncommercial project, sustain it, share what it learns, and change its membership without jeopardizing anybody’s ordinary provision?",
+      "challenge": "The common system supplies nominal entitlements without capacity, allocates creative means through prestige or allegiance, or leaves voluntary groups without maintenance and coordination.",
+      "artifact": "automation-to-shared-abundance.md"
+    },
+    {
+      "id": "Q08",
+      "type": "question",
+      "title": "What is the actual net growth of useful capacity?",
+      "description": "For a specified network, how much output becomes additional commissioned capacity after maintenance, retirements, lead times, losses, and essential provision? Which complementary process limits the next cycle, which inputs remain external, and does useful capacity actually make subsequent additions faster? Establish the interval and stopping conditions of any compounding phase rather than inferring a doubling time from robot production alone.",
+      "status": "open_inquiry",
+      "source_refs": [
+        "S1",
+        "S4",
+        "S8",
+        "S10"
+      ],
+      "artifact": "automation-to-shared-abundance.md"
+    },
+    {
+      "id": "Q09",
+      "type": "question",
+      "title": "Are current AI systems sufficient for the declared automation scope?",
+      "description": "For a declared service and productive network, can available AI, conventional automation, and robots complete every required task under relevant conditions with adequate reliability, recovery, and acceptable human support? Separate integration work, environmental redesign, and improvements possible with existing methods from unresolved capability research. Test Ren’s strong current-knowledge thesis directly instead of asserting it proved or replacing it with a premise that ignores the construction program.",
+      "status": "open_inquiry",
+      "source_refs": [
+        "S1",
+        "S8",
+        "S10",
+        "S11"
+      ],
+      "artifact": "automation-to-shared-abundance.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "A02",
+      "target": "A01",
+      "relation": "requires",
+      "rationale": "Industrial closure assumes dependable autonomy in all tasks included in the closure boundary."
+    },
+    {
+      "source": "A04",
+      "target": "A02",
+      "relation": "requires",
+      "rationale": "Within A04’s strongest closure scenario, complete productive systems must replenish upstream and maintenance dependencies as they grow. This does not claim that every useful local expansion requires full closure; M14 represents recursive capacity-building with declared outside inputs."
+    },
+    {
+      "source": "A04",
+      "target": "A03",
+      "relation": "requires",
+      "rationale": "Expansion requires timely access to inputs, sites, energy, and logistics."
+    },
+    {
+      "source": "A04",
+      "target": "T03",
+      "relation": "risks",
+      "rationale": "Any slow or missing dependency can cap growth, with no promised doubling time."
+    },
+    {
+      "source": "A04",
+      "target": "T02",
+      "relation": "risks",
+      "rationale": "Reinvestment can amplify material throughput and land use as well as output."
+    },
+    {
+      "source": "A05",
+      "target": "A04",
+      "relation": "constrains",
+      "rationale": "Expansion must remain within the scenario’s ecological budgets; this is a normative scenario boundary, not a claim that ecosystems automatically enforce a safe stopping point."
+    },
+    {
+      "source": "P02",
+      "target": "M02",
+      "relation": "constrains",
+      "rationale": "Stewardship must account for wider and intergenerational consequences."
+    },
+    {
+      "source": "P01",
+      "target": "M01",
+      "relation": "supports",
+      "rationale": "The entitlement is a proposed institutional expression of unconditional belonging, not a technical consequence of it."
+    },
+    {
+      "source": "P05",
+      "target": "M01",
+      "relation": "constrains",
+      "rationale": "Material claims must be portable and survive dissent, refusal, and exit."
+    },
+    {
+      "source": "P08",
+      "target": "M02",
+      "relation": "constrains",
+      "rationale": "Infrastructure control must be challengeable and revisable."
+    },
+    {
+      "source": "P06",
+      "target": "M02",
+      "relation": "constrains",
+      "rationale": "Winning contests or acquiring prestige must not grant control over provision."
+    },
+    {
+      "source": "M02",
+      "target": "M01",
+      "relation": "supports",
+      "rationale": "Ownership and operating arrangements can make the guarantee durable; their existence alone does not ensure enforcement."
+    },
+    {
+      "source": "M01",
+      "target": "E01",
+      "relation": "supports",
+      "rationale": "A dependable entitlement is necessary to translate capacity into freedom from wage dependence."
+    },
+    {
+      "source": "E01",
+      "target": "A01",
+      "relation": "requires",
+      "rationale": "The fully automated version of this expectation presumes reliable task performance."
+    },
+    {
+      "source": "E01",
+      "target": "A02",
+      "relation": "requires",
+      "rationale": "This dependency records the original strongest autonomous-provision scenario, which grants reproducible productive capacity. It is not a universal necessity for freedom from paid employment: M13–M16 and E08 explore useful provision with explicit outside supplies and remaining voluntary human work."
+    },
+    {
+      "source": "E01",
+      "target": "A03",
+      "relation": "requires",
+      "rationale": "Provision depends on resource and energy access even without wages."
+    },
+    {
+      "source": "E01",
+      "target": "M01",
+      "relation": "requires",
+      "rationale": "People need access to output; production totals alone do not confer security."
+    },
+    {
+      "source": "E01",
+      "target": "M02",
+      "relation": "requires",
+      "rationale": "The entitlement needs durable implementation and accountable operation."
+    },
+    {
+      "source": "T01",
+      "target": "E01",
+      "relation": "constrains",
+      "rationale": "Concentrated discretionary access can defeat livelihood independence despite high output."
+    },
+    {
+      "source": "T03",
+      "target": "E01",
+      "relation": "constrains",
+      "rationale": "Interrupted provision can make security fragile even with formal rights."
+    },
+    {
+      "source": "M02",
+      "target": "T01",
+      "relation": "mitigates",
+      "rationale": "Audits, enforceable duties, and replacement procedures may reduce capture but must themselves be evaluated."
+    },
+    {
+      "source": "P03",
+      "target": "E02",
+      "relation": "supports",
+      "rationale": "Pluralism gives diverse pursuits legitimacy; actual freedom also needs access and security."
+    },
+    {
+      "source": "P04",
+      "target": "E02",
+      "relation": "constrains",
+      "rationale": "The imagined change must preserve rest and lives without visible achievements."
+    },
+    {
+      "source": "E02",
+      "target": "E01",
+      "relation": "requires",
+      "rationale": "The strong version of this scenario presumes livelihoods are secure without employment."
+    },
+    {
+      "source": "E01",
+      "target": "E02",
+      "relation": "supports",
+      "rationale": "Secure provision may expand time and freedom to choose or change pursuits."
+    },
+    {
+      "source": "T04",
+      "target": "E02",
+      "relation": "constrains",
+      "rationale": "Status and access hierarchies can restrict choice despite material provision."
+    },
+    {
+      "source": "T06",
+      "target": "E02",
+      "relation": "constrains",
+      "rationale": "Inherited habits can delay or complicate the ability to inhabit new freedoms."
+    },
+    {
+      "source": "P07",
+      "target": "M06",
+      "relation": "supports",
+      "rationale": "The commons gives learning beyond employment a practical home."
+    },
+    {
+      "source": "M06",
+      "target": "E04",
+      "relation": "supports",
+      "rationale": "Resources, spaces, and mentorship can enable curiosity and practice across life."
+    },
+    {
+      "source": "E04",
+      "target": "E01",
+      "relation": "requires",
+      "rationale": "The scenario of livelihood-independent learning requires material security."
+    },
+    {
+      "source": "T04",
+      "target": "E04",
+      "relation": "constrains",
+      "rationale": "Credentials and mentor access may remain sites of prestige competition."
+    },
+    {
+      "source": "P08",
+      "target": "M03",
+      "relation": "supports",
+      "rationale": "Participation and appeal are proposed ways to make decisions revisable."
+    },
+    {
+      "source": "P05",
+      "target": "M03",
+      "relation": "constrains",
+      "rationale": "Participation must protect refusal, dissent, and exit rather than presume unanimous preference."
+    },
+    {
+      "source": "M03",
+      "target": "M04",
+      "relation": "supports",
+      "rationale": "Affected people help define the trial, its evaluation, and whether it continues."
+    },
+    {
+      "source": "M04",
+      "target": "E03",
+      "relation": "supports",
+      "rationale": "Trials and rollback capacity make deliberate pacing practically possible."
+    },
+    {
+      "source": "M03",
+      "target": "E03",
+      "relation": "supports",
+      "rationale": "Authority to revise and refuse can prevent construction speed from dictating civic speed."
+    },
+    {
+      "source": "A01",
+      "target": "M05",
+      "relation": "supports",
+      "rationale": "Autonomy enables responsive environments in the scenario, subject to reliability and controls."
+    },
+    {
+      "source": "P05",
+      "target": "M05",
+      "relation": "constrains",
+      "rationale": "Adaptation requires consent and meaningful ways to refuse or use alternatives."
+    },
+    {
+      "source": "M05",
+      "target": "T05",
+      "relation": "risks",
+      "rationale": "Personalization and sensing can make manipulation or surveillance easier."
+    },
+    {
+      "source": "M03",
+      "target": "T05",
+      "relation": "mitigates",
+      "rationale": "Appeal and shared authority may help contest environmental steering."
+    },
+    {
+      "source": "M04",
+      "target": "T02",
+      "relation": "mitigates",
+      "rationale": "Small trials and repair can reveal harm before expansion, while recognizing irreversible effects."
+    },
+    {
+      "source": "M04",
+      "target": "T05",
+      "relation": "mitigates",
+      "rationale": "Reversible deployments can reveal coercion before systems become unavoidable."
+    },
+    {
+      "source": "M06",
+      "target": "T06",
+      "relation": "mitigates",
+      "rationale": "Companionship, learning, and voluntary practice may support new identities without compulsory retraining."
+    },
+    {
+      "source": "W01",
+      "target": "M03",
+      "relation": "tests",
+      "rationale": "Conflicts over water, paths, habitat, and memory make allocation procedures concrete."
+    },
+    {
+      "source": "W01",
+      "target": "A05",
+      "relation": "tests",
+      "rationale": "A garden must account for actual land, water, material, energy, and maintenance demands."
+    },
+    {
+      "source": "W01",
+      "target": "E03",
+      "relation": "tests",
+      "rationale": "A ready construction system encounters residents who need time or want continuity."
+    },
+    {
+      "source": "W01",
+      "target": "T02",
+      "relation": "risks",
+      "rationale": "An attractive local garden could displace water use or ecological burdens elsewhere."
+    },
+    {
+      "source": "W02",
+      "target": "M05",
+      "relation": "tests",
+      "rationale": "A purpose-built AR megastructure tests how world halls, portal lifts, sensory systems, and shared physical circulation support responsive experiences under participant control."
+    },
+    {
+      "source": "W02",
+      "target": "P05",
+      "relation": "tests",
+      "rationale": "A resident’s refusal of augmented reality or sensing must be livable."
+    },
+    {
+      "source": "W02",
+      "target": "M03",
+      "relation": "tests",
+      "rationale": "Multiple authored worlds compete for the same rooms, lifts, quiet, and maintenance."
+    },
+    {
+      "source": "W02",
+      "target": "T05",
+      "relation": "risks",
+      "rationale": "The building could invisibly steer residents or make opting out socially costly."
+    },
+    {
+      "source": "W03",
+      "target": "M06",
+      "relation": "tests",
+      "rationale": "An inhabited commons exposes who can access spaces, tools, guidance, and recognition."
+    },
+    {
+      "source": "W03",
+      "target": "E04",
+      "relation": "tests",
+      "rationale": "Scenes can examine whether people really can change fields, stop, return, or practice privately."
+    },
+    {
+      "source": "W03",
+      "target": "T04",
+      "relation": "risks",
+      "rationale": "Respected mentors and desirable equipment may become prestige-controlled gateways."
+    },
+    {
+      "source": "W04",
+      "target": "P03",
+      "relation": "tests",
+      "rationale": "The Expressive Commons asks whether feeling, embodied flow, solitude, and nonacademic lives retain equal standing alongside scholarly and exploratory worlds."
+    },
+    {
+      "source": "W04",
+      "target": "P05",
+      "relation": "tests",
+      "rationale": "Movement, sound, touch, privacy, and the choice to listen or leave give consent and accessible refusal concrete spatial tests."
+    },
+    {
+      "source": "W05",
+      "target": "A03",
+      "relation": "tests",
+      "rationale": "A specific exploration program must account for its own inputs, sites, energy, and logistics."
+    },
+    {
+      "source": "W05",
+      "target": "M03",
+      "relation": "tests",
+      "rationale": "Long projects require legitimate allocation and ways to join, leave, or dissent."
+    },
+    {
+      "source": "W05",
+      "target": "T02",
+      "relation": "risks",
+      "rationale": "Expansionary aspiration may displace resources or harm shared environments."
+    },
+    {
+      "source": "Q01",
+      "target": "M03",
+      "relation": "asks_about",
+      "rationale": "Allocation needs concrete procedures and scenarios of contested outcomes."
+    },
+    {
+      "source": "Q01",
+      "target": "T04",
+      "relation": "asks_about",
+      "rationale": "Social and place-based scarcity do not disappear with automated production."
+    },
+    {
+      "source": "Q02",
+      "target": "P03",
+      "relation": "asks_about",
+      "rationale": "Plural ways of life need practical arrangements for coexistence."
+    },
+    {
+      "source": "Q02",
+      "target": "A05",
+      "relation": "asks_about",
+      "rationale": "Separate communities still share ecological constraints."
+    },
+    {
+      "source": "Q03",
+      "target": "A01",
+      "relation": "asks_about",
+      "rationale": "Autonomy must be specified by task, conditions, and recovery behavior."
+    },
+    {
+      "source": "Q03",
+      "target": "A02",
+      "relation": "asks_about",
+      "rationale": "Closure needs an explicit supply-chain boundary and dependency audit."
+    },
+    {
+      "source": "Q03",
+      "target": "T03",
+      "relation": "asks_about",
+      "rationale": "Dependability includes interruption and fallback cases, not only successful output."
+    },
+    {
+      "source": "Q04",
+      "target": "M01",
+      "relation": "asks_about",
+      "rationale": "An entitlement needs continuity when providers or institutions fail."
+    },
+    {
+      "source": "Q04",
+      "target": "M02",
+      "relation": "asks_about",
+      "rationale": "Stewardship needs replacement and enforcement arrangements that do not interrupt provision."
+    },
+    {
+      "source": "Q04",
+      "target": "T01",
+      "relation": "asks_about",
+      "rationale": "Capture can target the authority meant to prevent it."
+    },
+    {
+      "source": "P02",
+      "target": "P09",
+      "relation": "supports",
+      "rationale": "Care for the common substrate motivates extending stewardship across material cycles and future generations."
+    },
+    {
+      "source": "P09",
+      "target": "M07",
+      "relation": "supports",
+      "rationale": "Durable service and return loops are proposed expressions of stewardship when their total burdens justify them."
+    },
+    {
+      "source": "P09",
+      "target": "A05",
+      "relation": "supports",
+      "rationale": "Intergenerational care motivates explicit ecological budgets and restoration aims; it does not establish that a chosen design meets them."
+    },
+    {
+      "source": "P10",
+      "target": "M08",
+      "relation": "supports",
+      "rationale": "Public design and repair knowledge can make compatible parts understandable and adaptable beyond their original producer."
+    },
+    {
+      "source": "P10",
+      "target": "M06",
+      "relation": "supports",
+      "rationale": "An accessible body of knowledge gives the learning commons more material to study, inspect, and improve."
+    },
+    {
+      "source": "M07",
+      "target": "A06",
+      "relation": "requires",
+      "rationale": "The durable shared service depends on an operating return, cleaning, repair, and recovery network rather than merely recyclable objects."
+    },
+    {
+      "source": "M07",
+      "target": "M10",
+      "relation": "supports",
+      "rationale": "Returns and repair encounters can supply condition and availability information for the material inventory."
+    },
+    {
+      "source": "M10",
+      "target": "M07",
+      "relation": "supports",
+      "rationale": "A usable inventory and reserves can help keep the shared service available while objects are being cleaned, repaired, or replaced."
+    },
+    {
+      "source": "M08",
+      "target": "M07",
+      "relation": "supports",
+      "rationale": "Replaceable parts and compatible interfaces may simplify repair and redistribution across a shared service."
+    },
+    {
+      "source": "M08",
+      "target": "M09",
+      "relation": "supports",
+      "rationale": "Known interfaces and documented material properties can make future disassembly and reuse easier to plan."
+    },
+    {
+      "source": "M08",
+      "target": "T07",
+      "relation": "mitigates",
+      "rationale": "Identified materials, replaceable parts, and compatible connections may reduce avoidable mixing and repair barriers, without eliminating degradation or losses."
+    },
+    {
+      "source": "M09",
+      "target": "A06",
+      "relation": "requires",
+      "rationale": "Recoverable architecture needs actual access to inspection, lifting, storage, transport, and subsequent uses for its components."
+    },
+    {
+      "source": "M09",
+      "target": "M05",
+      "relation": "supports",
+      "rationale": "Designed disassembly gives responsive environments a possible route to physical adaptation beyond changes in their digital presentation."
+    },
+    {
+      "source": "M09",
+      "target": "M04",
+      "relation": "supports",
+      "rationale": "Accessible reversible connections can preserve more material options when a trial is revised or removed."
+    },
+    {
+      "source": "M09",
+      "target": "E05",
+      "relation": "supports",
+      "rationale": "Components designed for safe recovery can preserve capacity for later spatial arrangements."
+    },
+    {
+      "source": "M10",
+      "target": "E05",
+      "relation": "supports",
+      "rationale": "Knowing available quantities, grades, and commitments helps distinguish a possible reconfiguration from a promise that lacks suitable material."
+    },
+    {
+      "source": "M10",
+      "target": "T07",
+      "relation": "mitigates",
+      "rationale": "Condition records, measured flows, and reserves can expose quality deficits and supply interruptions earlier."
+    },
+    {
+      "source": "A06",
+      "target": "A03",
+      "relation": "requires",
+      "rationale": "Recovery facilities still require usable energy, water where needed, sites, logistics, and practical access."
+    },
+    {
+      "source": "A06",
+      "target": "A05",
+      "relation": "requires",
+      "rationale": "The intended regenerative scenario requires recovery and replacement processes to fit its ecological budgets."
+    },
+    {
+      "source": "E05",
+      "target": "A06",
+      "relation": "requires",
+      "rationale": "Repeated recoverable transformation depends on sufficient material recovery at the required quality and pace."
+    },
+    {
+      "source": "E05",
+      "target": "M08",
+      "relation": "requires",
+      "rationale": "The proposed version relies on interfaces and parts that preserve practical options for repair and later adaptation."
+    },
+    {
+      "source": "E05",
+      "target": "M03",
+      "relation": "requires",
+      "rationale": "Shared physical changes require legitimate allocation and appeal, since material availability alone does not settle who may change a place."
+    },
+    {
+      "source": "P05",
+      "target": "M07",
+      "relation": "constrains",
+      "rationale": "Collective provision must preserve meaningful personal choices, accessible alternatives, and freedom from intrusive monitoring."
+    },
+    {
+      "source": "P05",
+      "target": "M10",
+      "relation": "constrains",
+      "rationale": "Tracking material condition and commitments must not silently become a right to monitor residents."
+    },
+    {
+      "source": "A05",
+      "target": "E05",
+      "relation": "constrains",
+      "rationale": "Reconfiguration remains bounded by total throughput, energy infrastructure, waste, habitat effects, and other chosen ecological budgets."
+    },
+    {
+      "source": "T07",
+      "target": "E05",
+      "relation": "constrains",
+      "rationale": "Suitable recoverable stock may be too limited, degraded, delayed, or costly to process for a desired change."
+    },
+    {
+      "source": "T07",
+      "target": "A04",
+      "relation": "constrains",
+      "rationale": "Material tied up in existing systems and losses from recovery can limit the stock available for additional productive capacity."
+    },
+    {
+      "source": "A04",
+      "target": "T08",
+      "relation": "risks",
+      "rationale": "More productive capacity can amplify harmful projects and make unnecessary turnover easier as well as supporting useful provision."
+    },
+    {
+      "source": "E05",
+      "target": "T08",
+      "relation": "risks",
+      "rationale": "Easier transformation may encourage frequent or unilateral changes whose costs fall on other inhabitants or ecosystems."
+    },
+    {
+      "source": "P09",
+      "target": "T08",
+      "relation": "mitigates",
+      "rationale": "A culture of stewardship can make continuity, care, and restoration valued uses of capacity; its influence must be tested rather than presumed."
+    },
+    {
+      "source": "M03",
+      "target": "T08",
+      "relation": "mitigates",
+      "rationale": "Allocation, representation, and appeal offer ways to contest harmful uses of shared productive capacity."
+    },
+    {
+      "source": "M04",
+      "target": "T08",
+      "relation": "mitigates",
+      "rationale": "Bounded trials and repair capacity can reduce exposure before transformations become widespread, while some harms remain irreversible."
+    },
+    {
+      "source": "W01",
+      "target": "M07",
+      "relation": "tests",
+      "rationale": "Shared cups, tools, and furniture let garden scenes examine return routes, washing, personal attachment, and dependable access."
+    },
+    {
+      "source": "W01",
+      "target": "P09",
+      "relation": "tests",
+      "rationale": "A garden asks whether material reuse accompanies habitat restoration and care for future inhabitants."
+    },
+    {
+      "source": "W02",
+      "target": "M09",
+      "relation": "tests",
+      "rationale": "The house can compare physical layouts that recover components with layouts that make later adaptation destructive or inaccessible."
+    },
+    {
+      "source": "W02",
+      "target": "E05",
+      "relation": "tests",
+      "rationale": "Residents can attempt a change of use while retaining essential services, memory, and an explicit account of material losses."
+    },
+    {
+      "source": "W02",
+      "target": "T08",
+      "relation": "risks",
+      "rationale": "Rapidly reconfigurable rooms may subject residents to unwanted novelty or repeated construction at another group’s preferred pace."
+    },
+    {
+      "source": "W03",
+      "target": "P10",
+      "relation": "tests",
+      "rationale": "The university asks who can actually read, adapt, challenge, and contribute to its knowledge and design records."
+    },
+    {
+      "source": "W03",
+      "target": "M08",
+      "relation": "tests",
+      "rationale": "A making commons can reveal whether open designs and interfaces lead to maintainable objects under specified fabrication and inspection conditions."
+    },
+    {
+      "source": "Q05",
+      "target": "A04",
+      "relation": "asks_about",
+      "rationale": "The growth claim needs a boundary between reinvestment in additional simultaneous capacity and rearrangement of existing capacity."
+    },
+    {
+      "source": "Q05",
+      "target": "A06",
+      "relation": "asks_about",
+      "rationale": "A material balance must distinguish recoverable stock, continuing losses, replacement inputs, and recovery throughput."
+    },
+    {
+      "source": "Q05",
+      "target": "E05",
+      "relation": "asks_about",
+      "rationale": "The inquiry asks how much freedom of reconfiguration a finite stock can support without promising unlimited physical expansion."
+    },
+    {
+      "source": "Q05",
+      "target": "T07",
+      "relation": "asks_about",
+      "rationale": "A circulation model needs quality, stock availability, and timing limits as well as aggregate mass."
+    },
+    {
+      "source": "Q06",
+      "target": "M07",
+      "relation": "asks_about",
+      "rationale": "The shared service proposal requires comparison with durable personal alternatives and the conditions under which each works better."
+    },
+    {
+      "source": "Q06",
+      "target": "A06",
+      "relation": "asks_about",
+      "rationale": "Return, cleaning, repair, and recovery burdens must be counted at the scale of the whole service."
+    },
+    {
+      "source": "Q06",
+      "target": "P05",
+      "relation": "asks_about",
+      "rationale": "Material efficiency should be evaluated alongside consent, convenience, privacy, and meaningful alternatives."
+    },
+    {
+      "source": "P11",
+      "target": "P04",
+      "relation": "supports",
+      "rationale": "Sustaining further life and creation gives generative ambition a positive direction without making each person prove productivity."
+    },
+    {
+      "source": "P11",
+      "target": "P09",
+      "relation": "supports",
+      "rationale": "Further becoming needs continued care of the ecological and material conditions on which new forms depend."
+    },
+    {
+      "source": "P03",
+      "target": "P11",
+      "relation": "supports",
+      "rationale": "Different forms of life can contribute experiences, practices, and relationships through which further forms emerge; no claim of automatically lower correlated risk follows."
+    },
+    {
+      "source": "P11",
+      "target": "M11",
+      "relation": "supports",
+      "rationale": "Reciprocal practices are proposed ways to cultivate a generative environment in everyday life."
+    },
+    {
+      "source": "P12",
+      "target": "M11",
+      "relation": "supports",
+      "rationale": "Coauthorship becomes a lived practice through shared projects, care, and encounters rather than an identity assigned to everyone."
+    },
+    {
+      "source": "P12",
+      "target": "M03",
+      "relation": "supports",
+      "rationale": "Treating affected people as participants motivates an intelligible role in decisions over their shared conditions."
+    },
+    {
+      "source": "P13",
+      "target": "M12",
+      "relation": "supports",
+      "rationale": "Partial, revisable understanding calls for comparing imagined futures with lived consequences and revising the guiding model."
+    },
+    {
+      "source": "P08",
+      "target": "M12",
+      "relation": "supports",
+      "rationale": "Revisable governance offers a route for lessons and criticism to change actual arrangements."
+    },
+    {
+      "source": "P10",
+      "target": "M12",
+      "relation": "supports",
+      "rationale": "Accessible design knowledge and records can let more inhabitants understand, try, and amend proposals."
+    },
+    {
+      "source": "P01",
+      "target": "M11",
+      "relation": "constrains",
+      "rationale": "Participation and contribution must not become conditions for secure belonging."
+    },
+    {
+      "source": "P05",
+      "target": "M11",
+      "relation": "constrains",
+      "rationale": "Shared traditions must leave room for personal boundaries, refusal, and departure."
+    },
+    {
+      "source": "E01",
+      "target": "M11",
+      "relation": "supports",
+      "rationale": "Security beyond paid employment may make sustained voluntary practices easier to inhabit; it does not ensure they arise."
+    },
+    {
+      "source": "M06",
+      "target": "M11",
+      "relation": "supports",
+      "rationale": "Learning spaces and mentorship can help people develop and share practices over long periods."
+    },
+    {
+      "source": "M11",
+      "target": "E06",
+      "relation": "supports",
+      "rationale": "Repeated participation provides one proposed route by which shared arrangements influence habits and relationships."
+    },
+    {
+      "source": "M12",
+      "target": "E06",
+      "relation": "supports",
+      "rationale": "Inhabiting trials and discussing their consequences may reshape what participants attend to and imagine."
+    },
+    {
+      "source": "E06",
+      "target": "M12",
+      "relation": "supports",
+      "rationale": "If lived arrangements alter participants’ perspectives, those new perspectives can inform the next round of imagination and revision."
+    },
+    {
+      "source": "M12",
+      "target": "M11",
+      "relation": "supports",
+      "rationale": "Experience from trials can improve or replace reciprocal practices and invite different forms of participation."
+    },
+    {
+      "source": "M11",
+      "target": "E07",
+      "relation": "supports",
+      "rationale": "Sustained, voluntary practices may offer experiences of care, belonging, and participation in a future beyond individual victory."
+    },
+    {
+      "source": "M05",
+      "target": "M12",
+      "relation": "supports",
+      "rationale": "Adaptable, understandable environments provide one medium for residents to author and try different ways of living."
+    },
+    {
+      "source": "M11",
+      "target": "T09",
+      "relation": "risks",
+      "rationale": "A successful association can accumulate prestige and authority if its rewards are allowed to become power over others."
+    },
+    {
+      "source": "T04",
+      "target": "T09",
+      "relation": "risks",
+      "rationale": "Scarce prestige or attention can feed rule capture when admiration is convertible into durable governing advantages."
+    },
+    {
+      "source": "T09",
+      "target": "T01",
+      "relation": "risks",
+      "rationale": "Compounding advantages can include control over infrastructure and the ability to condition access."
+    },
+    {
+      "source": "T09",
+      "target": "E07",
+      "relation": "constrains",
+      "rationale": "When shared projects become vehicles for accumulating authority, they may displace freely chosen meaning with pressure to win."
+    },
+    {
+      "source": "T09",
+      "target": "T08",
+      "relation": "risks",
+      "rationale": "If advantage buys stronger fabrication or unilateral decision power, the capacity to impose harmful transformations may grow."
+    },
+    {
+      "source": "P06",
+      "target": "T09",
+      "relation": "mitigates",
+      "rationale": "Bounding what a victory can purchase is a proposed response to the route from winning into control over shared life."
+    },
+    {
+      "source": "M03",
+      "target": "T09",
+      "relation": "mitigates",
+      "rationale": "Representation and appeal may challenge the conversion of prestige into rule-setting authority; their effectiveness requires examination."
+    },
+    {
+      "source": "M02",
+      "target": "T09",
+      "relation": "mitigates",
+      "rationale": "Accountable infrastructure stewardship may limit the conversion of local success into power over necessities."
+    },
+    {
+      "source": "M12",
+      "target": "T05",
+      "relation": "mitigates",
+      "rationale": "Comparing official intentions with participants’ experiences may expose manipulation and support revision, provided criticism has practical consequences."
+    },
+    {
+      "source": "Q07",
+      "target": "E06",
+      "relation": "asks_about",
+      "rationale": "Investigate how environments and the people inhabiting them affect one another rather than assuming a designed culture succeeds."
+    },
+    {
+      "source": "Q07",
+      "target": "E07",
+      "relation": "asks_about",
+      "rationale": "Ask how shared meaning emerges and whether it welcomes ordinary, changing, or nonparticipating lives."
+    },
+    {
+      "source": "Q07",
+      "target": "T09",
+      "relation": "asks_about",
+      "rationale": "Inspect whether a project’s rewards increasingly purchase control of the conditions everyone shares."
+    },
+    {
+      "source": "Q07",
+      "target": "M12",
+      "relation": "asks_about",
+      "rationale": "Examine who can imagine, test, interpret, and revise a world, and whose experience the process misses."
+    },
+    {
+      "source": "W01",
+      "target": "M11",
+      "relation": "tests",
+      "rationale": "A garden makes shared care, seasonal ritual, rest, and divergent attachments concrete."
+    },
+    {
+      "source": "W02",
+      "target": "M12",
+      "relation": "tests",
+      "rationale": "The First Arrival gathering, its rehearsal studio, and revised seasonal passages let a scene examine who can author and sustain a shared realm beyond the moment of arrival."
+    },
+    {
+      "source": "W02",
+      "target": "E06",
+      "relation": "tests",
+      "rationale": "Repeated embodied life in purpose-built AR realms can expose questions about how their routes, rituals, and sensory worlds affect participants and are changed by them."
+    },
+    {
+      "source": "W03",
+      "target": "P13",
+      "relation": "tests",
+      "rationale": "An inhabited university can explore curiosity, humility, and revision as an ordinary way of life."
+    },
+    {
+      "source": "W05",
+      "target": "E07",
+      "relation": "tests",
+      "rationale": "A long mission offers a concrete case of shared purpose that outlasts any one participant and need not depend on an individual winning."
+    },
+    {
+      "source": "W05",
+      "target": "M11",
+      "relation": "tests",
+      "rationale": "Workshops, observation nights, and mission traditions let a scene examine how exploration becomes a culture people can join or leave."
+    },
+    {
+      "source": "W05",
+      "target": "P11",
+      "relation": "tests",
+      "rationale": "An exploration community can ask what kinds of life, knowledge, and future projects its chosen mission makes possible and what conditions it consumes."
+    },
+    {
+      "source": "W06",
+      "target": "M11",
+      "relation": "tests",
+      "rationale": "Shared quests and rituals make reciprocal worldmaking tangible as a voluntary way to inhabit daily life."
+    },
+    {
+      "source": "W06",
+      "target": "M12",
+      "relation": "tests",
+      "rationale": "A guild observes newcomer exclusion from authorship, changes its access rule, and examines a later shared work; the fictional sequence tests revision of the conditions of participation, beyond changes to scenery."
+    },
+    {
+      "source": "W06",
+      "target": "P06",
+      "relation": "tests",
+      "rationale": "A lived game must make concrete which rewards remain inside play and cannot become authority over housing or other necessities."
+    },
+    {
+      "source": "W06",
+      "target": "P01",
+      "relation": "tests",
+      "rationale": "A resident who never accepts a quest must remain securely at home in the same city."
+    },
+    {
+      "source": "W06",
+      "target": "T09",
+      "relation": "tests",
+      "rationale": "A celebrated guild’s past success buys further authorship access in the proposed failure episode; revising that rule tests whether this feedback can be changed. The episode never conditions necessities on rank."
+    },
+    {
+      "source": "W06",
+      "target": "E07",
+      "relation": "tests",
+      "rationale": "Long-running stories and collective adventures can examine meaning through shared experience without guaranteeing that everyone wants it."
+    },
+    {
+      "source": "A01",
+      "target": "M13",
+      "relation": "supports",
+      "rationale": "The strong autonomy thesis motivates a practical program that composes and evaluates available cognitive and physical capabilities; the thesis does not certify the composition."
+    },
+    {
+      "source": "M13",
+      "target": "M14",
+      "relation": "supports",
+      "rationale": "Dependable services can contribute machinery, preparation, logistics, or commissioning toward further productive installations."
+    },
+    {
+      "source": "M14",
+      "target": "M13",
+      "relation": "supports",
+      "rationale": "Commissioned complementary equipment can supply missing tools and services for a more useful connected network, creating a proposed capacity-building feedback loop."
+    },
+    {
+      "source": "M14",
+      "target": "A04",
+      "relation": "supports",
+      "rationale": "Reinvesting useful output provides the proposed mechanism behind the stronger compounding-growth scenario; its success and conditions remain to be measured."
+    },
+    {
+      "source": "M14",
+      "target": "A03",
+      "relation": "requires",
+      "rationale": "Both local expansion and a closed productive network need timely access to material, energy, sites, and other required inputs."
+    },
+    {
+      "source": "M14",
+      "target": "T03",
+      "relation": "risks",
+      "rationale": "Reinvestment can leave equipment uncommissioned or downstream output constrained if upstream supply and maintenance cannot keep pace."
+    },
+    {
+      "source": "M14",
+      "target": "T02",
+      "relation": "risks",
+      "rationale": "Capacity growth can increase total material use and ecological burdens even when each individual machine is more efficient."
+    },
+    {
+      "source": "A05",
+      "target": "M14",
+      "relation": "constrains",
+      "rationale": "The intended expansion must fit the selected ecological budgets rather than treating every physically possible addition as desirable."
+    },
+    {
+      "source": "P11",
+      "target": "M14",
+      "relation": "constrains",
+      "rationale": "Generative judgment gives capacity growth a purpose and stopping conditions: further life and creation, not maximizing machine count or activity."
+    },
+    {
+      "source": "P09",
+      "target": "M14",
+      "relation": "supports",
+      "rationale": "Stewardship motivates using repairable and recoverable assets while distinguishing growth of simultaneous stock from repeated reuse."
+    },
+    {
+      "source": "P10",
+      "target": "M15",
+      "relation": "supports",
+      "rationale": "A knowledge commons motivates making useful processes and operational lessons accessible beyond the installation that developed them."
+    },
+    {
+      "source": "M08",
+      "target": "M15",
+      "relation": "supports",
+      "rationale": "Compatible interfaces and documentation can make validated process knowledge easier to adapt across equipment and sites."
+    },
+    {
+      "source": "M15",
+      "target": "M13",
+      "relation": "supports",
+      "rationale": "Transferred and locally tested skills, designs, and failure lessons may improve the connected service network."
+    },
+    {
+      "source": "M13",
+      "target": "M15",
+      "relation": "supports",
+      "rationale": "Operating a real service produces outcomes, failures, and adaptations from which useful knowledge can be developed and shared."
+    },
+    {
+      "source": "M15",
+      "target": "M14",
+      "relation": "supports",
+      "rationale": "Repeatable process knowledge and replication lessons can help equip further sites without every site rediscovering the same methods."
+    },
+    {
+      "source": "M13",
+      "target": "E08",
+      "relation": "supports",
+      "rationale": "Useful automation can reduce human effort in a service if integration, repair, and upstream work do not offset the gain."
+    },
+    {
+      "source": "M14",
+      "target": "E08",
+      "relation": "supports",
+      "rationale": "If new capacity itself contributes to later additions, output may increase without recruiting a proportionally larger human construction workforce."
+    },
+    {
+      "source": "M15",
+      "target": "E08",
+      "relation": "supports",
+      "rationale": "Operational learning may reduce repeated intervention and replication effort, while remaining human dependencies stay in the account."
+    },
+    {
+      "source": "E08",
+      "target": "E01",
+      "relation": "supports",
+      "rationale": "Reduced human effort needed for provision can help remove compulsory employment when it is joined to durable access and acceptable remaining work."
+    },
+    {
+      "source": "M01",
+      "target": "M16",
+      "relation": "supports",
+      "rationale": "A durable entitlement makes generous shared services and creative means something inhabitants can depend on rather than a discretionary gift."
+    },
+    {
+      "source": "M02",
+      "target": "M16",
+      "relation": "supports",
+      "rationale": "Accountable stewardship can sustain common provision through changes in operators and political or social disagreement."
+    },
+    {
+      "source": "M13",
+      "target": "M16",
+      "relation": "supports",
+      "rationale": "Dependable connected services provide part of the productive substance behind generous common access."
+    },
+    {
+      "source": "M14",
+      "target": "M16",
+      "relation": "supports",
+      "rationale": "Reinvested capacity can extend the reach and quality of common services when output is deliberately directed toward that end."
+    },
+    {
+      "source": "M15",
+      "target": "M16",
+      "relation": "supports",
+      "rationale": "Accessible process knowledge and skill transfer can help people use and maintain shared creative tools."
+    },
+    {
+      "source": "M07",
+      "target": "M16",
+      "relation": "supports",
+      "rationale": "Durable services and convenient returns are one proposed way to supply generous everyday use while retaining useful material."
+    },
+    {
+      "source": "M10",
+      "target": "M16",
+      "relation": "supports",
+      "rationale": "Material records and reserves can expose what creative capacity is actually available and sustain provision during interrupted recovery."
+    },
+    {
+      "source": "M16",
+      "target": "E01",
+      "relation": "supports",
+      "rationale": "Materially adequate and dependable common access can let people leave paid employment without losing a good life or the means to participate."
+    },
+    {
+      "source": "M16",
+      "target": "E09",
+      "relation": "supports",
+      "rationale": "Usable shared means give voluntary groups a material route from an imagined purpose to a viable project."
+    },
+    {
+      "source": "E01",
+      "target": "E09",
+      "relation": "supports",
+      "rationale": "Freedom from livelihood coercion can make long, noncommercial, or changing commitments possible."
+    },
+    {
+      "source": "M11",
+      "target": "E09",
+      "relation": "supports",
+      "rationale": "Reciprocal practices can help groups form relationships and sustain shared undertakings once creative means are available."
+    },
+    {
+      "source": "E09",
+      "target": "M12",
+      "relation": "supports",
+      "rationale": "Viable voluntary projects supply real settings in which collective imagination can be tried and revised through lived consequences."
+    },
+    {
+      "source": "M12",
+      "target": "M15",
+      "relation": "supports",
+      "rationale": "Projects that compare intentions with outcomes can return useful design knowledge and lessons to the shared technical base."
+    },
+    {
+      "source": "P01",
+      "target": "M16",
+      "relation": "constrains",
+      "rationale": "Generous common access must include people who do not join projects, display talent, or contribute to production."
+    },
+    {
+      "source": "P03",
+      "target": "M16",
+      "relation": "constrains",
+      "rationale": "Common interfaces and services must leave room for varied cultures and tastes rather than enforcing one model of abundance."
+    },
+    {
+      "source": "T01",
+      "target": "E09",
+      "relation": "constrains",
+      "rationale": "Control of creative means by a small group can turn nominal free association into permission-dependent activity."
+    },
+    {
+      "source": "Q08",
+      "target": "M14",
+      "relation": "asks_about",
+      "rationale": "Measure whether reinvestment produces useful, commissioned additions and what limits the next round."
+    },
+    {
+      "source": "Q08",
+      "target": "A04",
+      "relation": "asks_about",
+      "rationale": "Identify conditions under which proportional net growth is a warranted model and when that phase ends."
+    },
+    {
+      "source": "Q08",
+      "target": "E08",
+      "relation": "asks_about",
+      "rationale": "Check whether growth in useful output also reduces or holds down required human effort rather than hiding it elsewhere."
+    },
+    {
+      "source": "Q09",
+      "target": "A01",
+      "relation": "asks_about",
+      "rationale": "Directly evaluate the strong current-knowledge thesis against a stated required task set and operating conditions."
+    },
+    {
+      "source": "Q09",
+      "target": "A02",
+      "relation": "asks_about",
+      "rationale": "Network sufficiency includes construction, commissioning, upstream replenishment, maintenance, and failure recovery, not only final assembly."
+    },
+    {
+      "source": "Q09",
+      "target": "M13",
+      "relation": "asks_about",
+      "rationale": "Separate capabilities ready to integrate from tasks requiring new training, redesigned environments, or unsolved research."
+    },
+    {
+      "source": "W01",
+      "target": "M16",
+      "relation": "tests",
+      "rationale": "Mira’s proposed change from garden planning to astronomy lets a scene examine whether food, home, care, and creative means remain dependably available when a commitment ends; it does not establish that the access arrangement works."
+    },
+    {
+      "source": "W02",
+      "target": "E09",
+      "relation": "tests",
+      "rationale": "A dedicated AR megastructure exposes whether participants actually have the halls, sensory equipment, physical fabrication, maintenance, and coordination needed to realize an inhabitable collective world."
+    },
+    {
+      "source": "W03",
+      "target": "M15",
+      "relation": "tests",
+      "rationale": "An inhabited university can show how learning and experimentation return usable knowledge to the productive commons."
+    },
+    {
+      "source": "W05",
+      "target": "E09",
+      "relation": "tests",
+      "rationale": "A rocket community makes ambitious voluntary worldmaking concrete while revealing its instruments, fabrication, coordination, and maintenance needs."
+    },
+    {
+      "source": "W06",
+      "target": "M16",
+      "relation": "tests",
+      "rationale": "A lived quest city depends on the ordinary provision and shared creative tools that sustain participants and residents who decline the game."
+    },
+    {
+      "source": "T09",
+      "target": "M16",
+      "relation": "constrains",
+      "rationale": "Accumulated rule-setting power can capture common provision and creative allocation; the arrangement needs concrete means to prevent that route from success to dependency."
+    },
+    {
+      "source": "W04",
+      "target": "P01",
+      "relation": "tests",
+      "rationale": "Security and ordinary belonging in the Expressive Commons must remain available to someone who never performs, discloses feelings, or joins an activity."
+    },
+    {
+      "source": "W04",
+      "target": "P04",
+      "relation": "tests",
+      "rationale": "The quiet room and a resident’s decision to rest give a fictional test of whether generative ambition permits a complete life without continual output."
+    },
+    {
+      "source": "W04",
+      "target": "P07",
+      "relation": "tests",
+      "rationale": "Movement, rhythm, and listening examine embodied understanding as a way of living rather than a credential or employment skill."
+    },
+    {
+      "source": "W04",
+      "target": "M12",
+      "relation": "tests",
+      "rationale": "Participants revising an invitation or the use of performance space make shared reflection and authorship visible in an expressive culture."
+    },
+    {
+      "source": "W04",
+      "target": "M16",
+      "relation": "tests",
+      "rationale": "Access to rehearsal rooms, instruments, care, and ordinary provision tests whether expressive and noncommercial lives have dependable material means."
+    },
+    {
+      "source": "W04",
+      "target": "E05",
+      "relation": "tests",
+      "rationale": "The proposed music room follows an identifiable pavilion bay through inspection into another useful form, exposing qualification, loss, and added-material requirements."
+    },
+    {
+      "source": "W01",
+      "target": "P05",
+      "relation": "tests",
+      "rationale": "A resident who leaves garden planning while retaining her home, services, and tool access gives a concrete fictional test of exit without livelihood penalties."
+    },
+    {
+      "source": "W01",
+      "target": "T08",
+      "relation": "tests",
+      "rationale": "A proposed new room would occupy the ground around a mature tree; the changed footprint examines whether amplified building power preserves affected people’s attachments and living conditions."
+    },
+    {
+      "source": "W01",
+      "target": "M04",
+      "relation": "tests",
+      "rationale": "A model of alternative building footprints lets affected inhabitants revise the proposal before construction while keeping the need for ecological and technical assessment visible."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+# 形式层总览
+
+本节说明 Lean 形式化目前已经承担什么、仍把什么留在信任边界之外。源代码入口为 `formal/SSBX.lean` 与 `formal/SSBX/`，机器索引优先看 `../_generated/` 下的导出表；若索引尚未生成，以 Lean 源文件与 `formal/SSBX/notes/` 为准。
+
+## 当前 Doctrine 入口
+
+- [`wen-substrate/00-README.md`](./wen-substrate/00-README.md)：R-Family / Claim Z / GUT 当前 doctrine 的阅读地图。
+- [`wen-substrate/08-obligations.md`](./wen-substrate/08-obligations.md)：T0、D1-D6、T1-T8、版本史与证明义务。
+- [`claim-status-ledger.md`](./claim-status-ledger.md)：人工 claim 状态账本，区分 closed / scoped / schema / placeholder / open。
+- [`code-promise-gap.md`](./code-promise-gap.md)：文档承诺与 Lean 支撑之间的透明边界。
+
+`wen-algebra.md` v0.6、`v4-foundation.md`、`r4.md`、`r8.md` 保留为历史 foundation layer；涉及最新主张时不要再把它们当作唯一 canonical 入口。
+
+## 形式层承担的内容
+
+- `Foundation/Wen/Kernel.lean` 给出「一」的封装见证，并投影出 `Field`、`dong`、`origin`、`origin_alive`。
+- `Foundation/Core/` 承担单根、构造主干、价值递归、注意、人对齐等核心结构。
+- `Foundation/Bagua/` 承担八卦、Cell256 / R₀..R₈ strict spine、BaguaTuring、Kleene/Rice/GodelLi 边界。
+- `Text/` 承担字、legacy operator catalogue、义位与覆盖性账本；目录层只作 inventory / audit input，不作 root ontology。
+- `Truth/` 与 `Model/` 承担 claim ledger、语义、充足模型原则与体系内真理口径。
+
+## 机器口径
+
+当前形式层按以下口径阅读：
+
+- 已修复构建后，不允许存在 live `sorry`、`admit`、`unsafe`。
+- 显式公理只有一个：`kleene_recursion_axiom`。
+- 不透明封装只有一个：`opaque theOne`。
+- 顶层 `partial def` 边界只有一个：`YiState.run`。
+- 文档、图、名册、互证表是同步与审计对象；它们不自动等同于 Lean theorem。
+
+## 读者路径
+
+1. 先读 [trust-boundaries.md](./trust-boundaries.md)，确认可依赖内容与信任边界。
+2. 再读 [claim-status-ledger.md](./claim-status-ledger.md)，确认 R-Family / Claim Z / GUT 的证明强度。
+3. 再读 [build-and-verify.md](./build-and-verify.md)，理解构建、警告与审计口径。
+4. 读 [module-map.md](./module-map.md)，按模块簇进入代码。
+5. 再读 [concepts.md](./concepts.md)，理解单根、构造 DAG、概念 DAG 的区别。
+6. 对图和互证关系，读 [../30_crosswalk_互证/diagrams.md](../30_crosswalk_互证/diagrams.md)。
+7. 对维护流程，读 [../50_maintenance/README.md](../50_maintenance/README.md)。
+
+## 分页索引
+
+- [core.md](./core.md)：`Foundation/Core` 与顶层核心结构。
+- [text.md](./text.md)：字、义位、算子与文本完备账本。
+- [truth-model.md](./truth-model.md)：truth、claim ledger 与 model adequacy。
+- [claim-status-ledger.md](./claim-status-ledger.md)：当前 R-Family / Claim Z / GUT 证明强度账本。
+- [wen-substrate/00-README.md](./wen-substrate/00-README.md)：当前 foundational document set。
+- [r-scope-information-flow.md](./r-scope-information-flow.md)：R tower 原生的 scope、projection、kernel/fiber、信息丢失、scope-relative truth 与 chart/focus loss 理论草案。
+- [foundation-core.md](./foundation-core.md)：核心 foundation 各文件的读法。
+- [root-layer-map.md](./root-layer-map.md)：底层 root 几层的生成线、名册线、内容线、关系与算子总图。
+- [r4-r8-character-ladder.md](./r4-r8-character-ladder.md)：R4..R8 的面/內/重/因/果结构字梯、reader grammar、备选字与形式逻辑读法。
+- [r8-root-language-tree.md](./r8-root-language-tree.md)：R₀..R₈ root language tree、1021/1022/1023 口径、root-rule roadmap。
+- [root-native-operators.md](./root-native-operators.md)：root-native operator 四类来源与 legacy catalogue quarantine 形式锚。
+- [v4-foundation.md](./v4-foundation.md)：V4 作为 Wen 的 two-axis Klein-four kernel、跨域读法与 preservation atlas。
+- [v4-kernel-interpreter-architecture.md](./v4-kernel-interpreter-architecture.md)：V4-native interpreter kernel 与后续 R-space backend contract。
+- [wenscript-syntax-spec.md](./wenscript-syntax-spec.md)：`wen-lisp prove` 使用的受控古文 WenScript 句法、AST bucket 与证书边界。
+- [wenyan-native-syntax-spec.md](./wenyan-native-syntax-spec.md)：纯文言 algorithm parser 的 native lowering 语法规范；quicksort 已实现，`list-basics.wen` 为下一目标。
+- [r4x-r4-256-table.md](./r4x-r4-256-table.md)：`R4_high × R4_low` 的 16 x 16 `o/x` projection sheet；R1..R6 已填，R7/R8 留空。
+- [r4x-r4-256-table-zi.md](./r4x-r4-256-table-zi.md)：同一张 256 projection sheet 的字版；R1..R7 用现有字，R5 保持组合读法，R8 留空。
+- [root-language-tree/README.md](./root-language-tree/README.md)：1023-entry 文言 / 中文 / English / formal logic 审阅包。
+- [wen.md](./wen.md)：`Foundation/Wen`、文言微核、自释与 quine 路线。
+- [jian.md](./jian.md)：`Foundation/Jian` 的间、本体与 STLC 桥。
+- [yi-bagua.md](./yi-bagua.md)：易、八卦、Cell256、BaguaTuring 与不完备边界。
+- [eight.md](./eight.md)：八衍模块与现代专题之间的中层接口。
+- [modern.md](./modern.md)：现代数学、概率、逻辑、物理与神经接口。
+- [pending.md](./pending.md)：pending interface 的经验边界。
+
+## 与生成索引的关系
+
+建议由生成流程维护 `../_generated/` 下的索引，例如模块清单、声明清单、图节点清单、信任边界统计。本文只描述阅读口径；数量统计应以生成索引或最新 `lake build` 后的审计输出为准。

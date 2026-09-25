@@ -1,0 +1,2531 @@
+[
+  {
+    "page": 1,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 1,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "01 / 21"
+  },
+  {
+    "page": 1,
+    "kind": "text",
+    "x": 38,
+    "top": 31,
+    "width": 464,
+    "height": 11.3,
+    "label": "EDITION 03 / FROM EXISTING CAPABILITIES TO SHARED FUTURES"
+  },
+  {
+    "page": 1,
+    "kind": "text",
+    "x": 38,
+    "top": 66,
+    "width": 464,
+    "height": 105.8,
+    "label": "Worlds we\ncan inhabit"
+  },
+  {
+    "page": 1,
+    "kind": "text",
+    "x": 38,
+    "top": 189,
+    "width": 442,
+    "height": 38,
+    "label": "The knowledge and machinery to begin, the systems that can grow, and the lives we could make possible together."
+  },
+  {
+    "page": 1,
+    "kind": "text",
+    "x": 38,
+    "top": 261,
+    "width": 464,
+    "height": 14,
+    "label": "A worldbuilding project by Ren, developed with AI"
+  },
+  {
+    "page": 1,
+    "kind": "image",
+    "x": 0,
+    "top": 306,
+    "width": 540,
+    "height": 360,
+    "label": "assets-v2/worldmakers-forum.png"
+  },
+  {
+    "page": 2,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 2,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "02 / 21"
+  },
+  {
+    "page": 2,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "THE TECHNICAL FOUNDATION / WHY THIS FUTURE IS ACTIONABLE"
+  },
+  {
+    "page": 2,
+    "kind": "text",
+    "x": 38,
+    "top": 69,
+    "width": 464,
+    "height": 73.6,
+    "label": "What is already\nin our hands"
+  },
+  {
+    "page": 2,
+    "kind": "text",
+    "x": 38,
+    "top": 165.6,
+    "width": 464,
+    "height": 58.5,
+    "label": "We already use automation to manufacture the equipment of automation. AI adds ways for machines to interpret situations, plan useful actions, and learn from their results."
+  },
+  {
+    "page": 2,
+    "kind": "text",
+    "x": 38,
+    "top": 263.1,
+    "width": 464,
+    "height": 70.0,
+    "label": "The central possibility is productive capacity that helps build more productive capacity. A factory supplies robots and equipment; those machines can help extend the network of manufacturing, transport, construction, and maintenance. Part of what the system produces becomes the means to produce more."
+  },
+  {
+    "page": 2,
+    "kind": "text",
+    "x": 38,
+    "top": 344.1,
+    "width": 464,
+    "height": 87.5,
+    "label": "Ren’s strong thesis is that our present knowledge and AI make full automation an engineering undertaking. The evidence in this edition establishes important working pieces and a practical development path. It does not yet establish that today’s models can perform every required task or that a complete autonomous supply network already reproduces itself."
+  },
+  {
+    "page": 2,
+    "kind": "text",
+    "x": 38,
+    "top": 442.6,
+    "width": 464,
+    "height": 52.5,
+    "label": "That distinction gives us work to do. We can connect existing capabilities, test whole services, improve reliability, and expand the network. These imagined worlds have a route into reality that can be pursued and measured."
+  },
+  {
+    "page": 2,
+    "kind": "text",
+    "x": 38,
+    "top": 506.1,
+    "width": 464,
+    "height": 52.5,
+    "label": "The social aim is equally concrete: turn that capacity into abundant shared provision and tools for creation. People can then build their lives and communities without having to sell their labor simply to survive."
+  },
+  {
+    "page": 2,
+    "kind": "text",
+    "x": 38,
+    "top": 632,
+    "width": 464,
+    "height": 20.5,
+    "label": "Build the means of a better future, then let those means keep growing."
+  },
+  {
+    "page": 3,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 3,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "03 / 21"
+  },
+  {
+    "page": 3,
+    "kind": "image",
+    "x": 0,
+    "top": 0,
+    "width": 540,
+    "height": 309,
+    "label": "assets-v3/production-commons.png"
+  },
+  {
+    "page": 3,
+    "kind": "text",
+    "x": 38,
+    "top": 331,
+    "width": 464,
+    "height": 11.3,
+    "label": "AN EXISTING INDUSTRIAL FOUNDATION / A PROPOSED PRODUCTION COMMONS"
+  },
+  {
+    "page": 3,
+    "kind": "text",
+    "x": 38,
+    "top": 352,
+    "width": 464,
+    "height": 67.85,
+    "label": "Machines already\nmake machines"
+  },
+  {
+    "page": 3,
+    "kind": "text",
+    "x": 38,
+    "top": 437.85,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "ABB uses robotic assembly and material handling in its robot factory. FANUC automates production of robots, machine tools, motors, and controllers. Automation already helps produce the means of further automation. [E1] [E2]"
+  },
+  {
+    "page": 3,
+    "kind": "text",
+    "x": 38,
+    "top": 495.40000000000003,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "Other parts of the network also exist: autonomous mine haulage and rail at Rio Tinto, and a BMW humanoid pilot that moved more than 90,000 components over ten months. These are useful operations with defined scopes. [E3] [E4]"
+  },
+  {
+    "page": 3,
+    "kind": "text",
+    "x": 38,
+    "top": 552.95,
+    "width": 464,
+    "height": 65.4,
+    "label": "The scene above imagines these capacities organized as a shared production commons. Extending such a network means connecting its outputs, inputs, maintenance, and commissioning so that new equipment becomes dependable additional capacity."
+  },
+  {
+    "page": 3,
+    "kind": "text",
+    "x": 38,
+    "top": 636,
+    "width": 464,
+    "height": 39.0,
+    "label": "The industrial starting point is real. This illustration proposes its future use."
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "04 / 21"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "WHAT AI CONTRIBUTES / ADAPTABLE ACTION"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 38,
+    "top": 66,
+    "width": 464,
+    "height": 82.8,
+    "label": "Intelligence joins\nthe machinery"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 38,
+    "top": 169.8,
+    "width": 464,
+    "height": 36.4,
+    "label": "A machine can do more when it can understand the situation in front of it, choose an action, and check what actually happened."
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 38,
+    "top": 243.20000000000002,
+    "width": 35,
+    "height": 18,
+    "label": "01"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 84,
+    "top": 242.20000000000002,
+    "width": 418,
+    "height": 16.4,
+    "label": "Perception, planning, and action"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 84,
+    "top": 264.6,
+    "width": 418,
+    "height": 48.300000000000004,
+    "label": "Gemini Robotics 1.5 connects embodied reasoning and tool use to a robot action model. Its experiments include multi-step tasks, transfer between robot bodies, and recovery from errors. [E5]"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 38,
+    "top": 344.90000000000003,
+    "width": 35,
+    "height": 18,
+    "label": "02"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 84,
+    "top": 343.90000000000003,
+    "width": 418,
+    "height": 16.4,
+    "label": "Skills that can travel"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 84,
+    "top": 366.3,
+    "width": 418,
+    "height": 48.300000000000004,
+    "label": "Physical Intelligence’s π0.5 transfers household skills into previously unseen homes. Training across environments can make a capability reusable beyond the room where it was learned. [E6]"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 38,
+    "top": 446.6,
+    "width": 35,
+    "height": 18,
+    "label": "03"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 84,
+    "top": 445.6,
+    "width": 418,
+    "height": 16.4,
+    "label": "Deployment that teaches the system"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 84,
+    "top": 468.0,
+    "width": 418,
+    "height": 48.300000000000004,
+    "label": "Physical Intelligence and partners report customer laundry and order-packing work. Human interventions still help complete tasks and supply learning data. Useful operation and further improvement can proceed together. [E7]"
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 38,
+    "top": 600,
+    "width": 464,
+    "height": 40.6,
+    "label": "Shared knowledge can improve many installations; physical equipment can multiply their reach."
+  },
+  {
+    "page": 4,
+    "kind": "text",
+    "x": 38,
+    "top": 650,
+    "width": 464,
+    "height": 10.5,
+    "label": "Embodied AI combines learned policies with conventional controls, task-specific training, and measured feedback."
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "05 / 21"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "THE FEEDBACK THAT CHANGES THE PACE OF CONSTRUCTION"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 38,
+    "top": 66,
+    "width": 464,
+    "height": 80.5,
+    "label": "When production\nbuilds more producers"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 38,
+    "top": 166.5,
+    "width": 464,
+    "height": 36,
+    "label": "If new capacity helps build the next round of capacity, the rate of building can rise with the system already operating."
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 38,
+    "top": 226,
+    "width": 464,
+    "height": 12,
+    "label": "ENERGY  /  MATERIALS  /  COMPONENTS  /  KNOWLEDGE"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 48,
+    "top": 270,
+    "width": 120,
+    "height": 14,
+    "label": "Productive network"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 48,
+    "top": 292,
+    "width": 120,
+    "height": 26,
+    "label": "Machines, software, services"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 210,
+    "top": 270,
+    "width": 120,
+    "height": 14,
+    "label": "Usable output"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 210,
+    "top": 292,
+    "width": 120,
+    "height": 13,
+    "label": "Goods and new equipment"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 372,
+    "top": 270,
+    "width": 120,
+    "height": 14,
+    "label": "Shared provision"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 372,
+    "top": 292,
+    "width": 120,
+    "height": 26,
+    "label": "A rich life and creative means"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 127,
+    "top": 374,
+    "width": 284,
+    "height": 14,
+    "label": "Equipment + construction + commissioning"
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 38,
+    "top": 417,
+    "width": 464,
+    "height": 13,
+    "label": "Some output expands the network that will produce the next round."
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 38,
+    "top": 449,
+    "width": 464,
+    "height": 48.300000000000004,
+    "label": "For a period, expansion can be exponential if net additions remain proportional to existing usable capacity. Adding builders can increase the rate at which further builders arrive. This is a conditional growth mechanism, not an assigned doubling time."
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 38,
+    "top": 507.3,
+    "width": 464,
+    "height": 48.300000000000004,
+    "label": "The expanding unit is a productive network. Power, components, material processing, sites, logistics, and maintenance must support its growth. A new robot waiting for a missing controller or an unpowered factory is not yet useful capacity."
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 38,
+    "top": 565.6,
+    "width": 464,
+    "height": 48.300000000000004,
+    "label": "We can pursue rapid expansion by reinvesting in the processes that limit the next round. The goal is sufficient shared capacity and freedom to transform; endless material expansion is neither required nor possible on a finite planet."
+  },
+  {
+    "page": 5,
+    "kind": "text",
+    "x": 38,
+    "top": 651,
+    "width": 464,
+    "height": 11.6,
+    "label": "Follow commissioned productive capacity and useful service, as well as the number of machines delivered."
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "06 / 21"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "AN ENGINEERING PROGRAM / FROM WORKING PARTS TO WORKING SYSTEMS"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 38,
+    "top": 66,
+    "width": 464,
+    "height": 80.5,
+    "label": "A direction we\ncan start building"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 38,
+    "top": 167.5,
+    "width": 464,
+    "height": 35.2,
+    "label": "Connect available machinery and AI into complete services. Measure results, improve reliability, and extend the network one working system at a time."
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 38,
+    "top": 238.7,
+    "width": 33,
+    "height": 16,
+    "label": "01"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 80,
+    "top": 236.7,
+    "width": 422,
+    "height": 16.2,
+    "label": "Make one useful service dependable"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 80,
+    "top": 257.9,
+    "width": 422,
+    "height": 46.8,
+    "label": "Choose a real need. Connect perception, controls, robots, tools, and the physical environment. Measure completed service, quality, energy, and human interventions."
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 38,
+    "top": 329.7,
+    "width": 33,
+    "height": 16,
+    "label": "02"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 80,
+    "top": 327.7,
+    "width": 422,
+    "height": 16.2,
+    "label": "Map what it still depends on"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 80,
+    "top": 348.9,
+    "width": 422,
+    "height": 46.8,
+    "label": "Trace materials, chips, power, repair, transport, and remaining human work. An outside supplier can support early expansion while the next bottleneck is improved."
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 38,
+    "top": 420.7,
+    "width": 33,
+    "height": 16,
+    "label": "03"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 80,
+    "top": 418.7,
+    "width": 422,
+    "height": 16.2,
+    "label": "Use capacity to extend capacity"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 80,
+    "top": 439.9,
+    "width": 422,
+    "height": 46.8,
+    "label": "Standardize interfaces and document processes. Equip another cell or site, or expand a limiting upstream service. Count commissioned output, rather than equipment waiting to work."
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 38,
+    "top": 511.7,
+    "width": 33,
+    "height": 16,
+    "label": "04"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 80,
+    "top": 509.7,
+    "width": 422,
+    "height": 16.2,
+    "label": "Build common access alongside production"
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 80,
+    "top": 530.9,
+    "width": 422,
+    "height": 46.8,
+    "label": "Make provision and creative tools dependable for their users. Return knowledge to the network and components to future use. Let wider consequences guide the next change."
+  },
+  {
+    "page": 6,
+    "kind": "text",
+    "x": 38,
+    "top": 612,
+    "width": 464,
+    "height": 46.8,
+    "label": "Full automation is the construction thesis. The work includes unresolved capability research, reliability, and integration. “Engineering” names a practical program; it does not mean every remaining problem is routine."
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "07 / 21"
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "THE PURPOSE OF PRODUCTIVE POWER / ABUNDANT SHARED MEANS"
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 38,
+    "top": 66,
+    "width": 464,
+    "height": 82.8,
+    "label": "Freedom from\ncompulsory labor"
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 38,
+    "top": 169.8,
+    "width": 464,
+    "height": 36.4,
+    "label": "The ambition is a rich material life and the means to create: good homes, food, care, mobility, learning, tools, materials, and places to make things together."
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 38,
+    "top": 243.20000000000002,
+    "width": 35,
+    "height": 18,
+    "label": "01"
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 84,
+    "top": 242.20000000000002,
+    "width": 418,
+    "height": 16.4,
+    "label": "Provision becomes a durable foundation"
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 84,
+    "top": 264.6,
+    "width": 418,
+    "height": 48.300000000000004,
+    "label": "As dependable automation reduces necessary human toil, shared access can remove the need to submit to an employer merely to live. Remaining human tasks must be accounted for without hiding another group’s exploitation."
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 38,
+    "top": 344.90000000000003,
+    "width": 35,
+    "height": 18,
+    "label": "02"
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 84,
+    "top": 343.90000000000003,
+    "width": 418,
+    "height": 16.4,
+    "label": "People gain the means to pursue a purpose"
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 84,
+    "top": 366.3,
+    "width": 418,
+    "height": 48.300000000000004,
+    "label": "A group can build an observatory, a garden, a spacecraft project, or an inhabited game world. Free association becomes practical when people have time, tools, resources, and a secure place to stand."
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 38,
+    "top": 446.6,
+    "width": 35,
+    "height": 18,
+    "label": "03"
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 84,
+    "top": 445.6,
+    "width": 418,
+    "height": 16.4,
+    "label": "Civilization keeps creating better systems"
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 84,
+    "top": 468.0,
+    "width": 418,
+    "height": 48.300000000000004,
+    "label": "Association alone does not operate a city. People still build provision, coordination, maintenance, shared knowledge, and ways to learn from consequences. Their projects can leave more capacity for others to begin."
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 38,
+    "top": 600,
+    "width": 464,
+    "height": 20.3,
+    "label": "A good life can be abundant, and its possibilities can be shared."
+  },
+  {
+    "page": 7,
+    "kind": "text",
+    "x": 38,
+    "top": 650,
+    "width": 464,
+    "height": 21.0,
+    "label": "Ren calls the aspiration “abundant luxuries communism like.” Here that means shared material freedom and creative means, with institutional forms open to development."
+  },
+  {
+    "page": 8,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 8,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "08 / 21"
+  },
+  {
+    "page": 8,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "THE META-LEVEL / WHAT WE UNDERSTAND OURSELVES TO BE DOING"
+  },
+  {
+    "page": 8,
+    "kind": "text",
+    "x": 38,
+    "top": 69,
+    "width": 464,
+    "height": 73.6,
+    "label": "A civilization that knows\nit is making a world"
+  },
+  {
+    "page": 8,
+    "kind": "text",
+    "x": 38,
+    "top": 165.6,
+    "width": 464,
+    "height": 39.0,
+    "label": "Imagine growing up with a different question: what kind of world can our lives make possible together?"
+  },
+  {
+    "page": 8,
+    "kind": "text",
+    "x": 38,
+    "top": 243.6,
+    "width": 464,
+    "height": 52.5,
+    "label": "Every civilization teaches people what a life is for. Its stories direct attention. Its institutions reward particular actions. Those actions shape the surroundings in which the next generation learns to desire, to judge, and to relate to other people."
+  },
+  {
+    "page": 8,
+    "kind": "text",
+    "x": 38,
+    "top": 307.1,
+    "width": 464,
+    "height": 70.0,
+    "label": "Here, that whole process becomes something people can understand and take responsibility for. They can recognize a contest that rewards extraction, see how its winners come to shape the rules, and build conditions under which care, curiosity, and shared creation have room to flourish."
+  },
+  {
+    "page": 8,
+    "kind": "text",
+    "x": 38,
+    "top": 388.1,
+    "width": 464,
+    "height": 52.5,
+    "label": "The ambition is a civilization capable of bringing forth futures its founders cannot yet imagine. People belong to that larger undertaking through very different lives: friendship, science, play, solitude, exploration, or tending a small garden."
+  },
+  {
+    "page": 8,
+    "kind": "text",
+    "x": 38,
+    "top": 451.6,
+    "width": 464,
+    "height": 70.0,
+    "label": "Like the makers of an inhabited game world, they think about the experience of everyone who lives there, including people who never win. In a real society, that authorship belongs among its inhabitants. Each new life may discover something the original design could not see."
+  },
+  {
+    "page": 8,
+    "kind": "text",
+    "x": 38,
+    "top": 632,
+    "width": 464,
+    "height": 20.5,
+    "label": "Our lives shape a world. That world shapes the lives that follow."
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "09 / 21"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "LEARNING TO SEE THE LOOPS"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 38,
+    "top": 67,
+    "width": 464,
+    "height": 75.89999999999999,
+    "label": "People make worlds.\nWorlds make people."
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 38,
+    "top": 161.89999999999998,
+    "width": 464,
+    "height": 35.2,
+    "label": "A working lens for this future: understand how a way of thinking becomes a lived environment, then returns as common sense."
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 49,
+    "top": 256,
+    "width": 118,
+    "height": 14,
+    "label": "Shared stories"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 49,
+    "top": 278,
+    "width": 118,
+    "height": 13,
+    "label": "What a life is for"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 211,
+    "top": 256,
+    "width": 118,
+    "height": 14,
+    "label": "Attention + desire"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 211,
+    "top": 278,
+    "width": 118,
+    "height": 13,
+    "label": "What feels worth pursuing"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 373,
+    "top": 256,
+    "width": 118,
+    "height": 14,
+    "label": "Choices + rewards"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 373,
+    "top": 278,
+    "width": 118,
+    "height": 13,
+    "label": "What gains support"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 49,
+    "top": 356,
+    "width": 118,
+    "height": 14,
+    "label": "People formed"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 49,
+    "top": 378,
+    "width": 118,
+    "height": 26,
+    "label": "What the next generation learns"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 211,
+    "top": 356,
+    "width": 118,
+    "height": 14,
+    "label": "Lived conditions"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 211,
+    "top": 378,
+    "width": 118,
+    "height": 13,
+    "label": "What becomes ordinary"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 373,
+    "top": 356,
+    "width": 118,
+    "height": 14,
+    "label": "Institutions + tools"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 373,
+    "top": 378,
+    "width": 118,
+    "height": 13,
+    "label": "What can actually happen"
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 38,
+    "top": 441,
+    "width": 464,
+    "height": 49.5,
+    "label": "A reinforcing trap: winning brings resources; resources buy authority over future rules; those rules favor the same way of winning. A local game can spread until it governs the conditions of everyone else's life."
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 38,
+    "top": 500.5,
+    "width": 464,
+    "height": 49.5,
+    "label": "A generative loop: shared tools invite experiments; discoveries become public knowledge; other communities adapt them; their work enriches the common capacity. One group's achievement helps others begin."
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 38,
+    "top": 560.0,
+    "width": 464,
+    "height": 49.5,
+    "label": "Neither pattern is inevitable. People have different drives and can resist their surroundings. Seeing the loop helps a community change its incentives, tools, stories, and habits together."
+  },
+  {
+    "page": 9,
+    "kind": "text",
+    "x": 38,
+    "top": 647,
+    "width": 464,
+    "height": 12.6,
+    "label": "A proposed social mechanism to investigate, rather than a law or numerical forecast."
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "10 / 21"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "GENERATIVE UNDERSTANDING / PRINCIPLES TO PRACTICE"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 38,
+    "top": 65,
+    "width": 464,
+    "height": 75.89999999999999,
+    "label": "Keep the conditions\nof becoming alive"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 53,
+    "top": 174,
+    "width": 434,
+    "height": 40,
+    "label": "“It’s not about being generative yourself, it’s about ensuring your environment is”"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 53,
+    "top": 221,
+    "width": 464,
+    "height": 12,
+    "label": "Ren / 30 April 2026"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 38,
+    "top": 272,
+    "width": 220,
+    "height": 14.5,
+    "label": "01 / Care beyond the self"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 38,
+    "top": 298,
+    "width": 220,
+    "height": 59.2,
+    "label": "See the relationships, knowledge, materials, and living systems that make your life possible. Let your choices sustain others' room to live and the lives that come after."
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 282,
+    "top": 272,
+    "width": 220,
+    "height": 14.5,
+    "label": "02 / Enable further beginnings"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 282,
+    "top": 298,
+    "width": 220,
+    "height": 59.2,
+    "label": "Make tools, knowledge, and spaces others can continue from. Generativity includes a stable home, patient care, and rest; it requires no personal output score."
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 38,
+    "top": 391,
+    "width": 220,
+    "height": 14.5,
+    "label": "03 / Let many lives flourish"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 38,
+    "top": 417,
+    "width": 220,
+    "height": 74.0,
+    "label": "Protect different forms of meaning. A civilization can support an observatory, a dance culture, an inhabited fantasy, and a quiet garden without ranking them on one scale."
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 282,
+    "top": 391,
+    "width": 220,
+    "height": 14.5,
+    "label": "04 / Keep rivalry within bounds"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 282,
+    "top": 417,
+    "width": 220,
+    "height": 59.2,
+    "label": "Enjoy games and excellence while keeping necessities and civic power outside their prizes. Everyone should retain a place in the shared world after losing a contest."
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 38,
+    "top": 510,
+    "width": 220,
+    "height": 14.5,
+    "label": "05 / Build for future transformation"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 38,
+    "top": 536,
+    "width": 220,
+    "height": 74.0,
+    "label": "Keep materials useful and knowledge available. Repair, reuse, and adaptable construction make room for future imagination; living ecosystems also need conditions in which to renew."
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 282,
+    "top": 510,
+    "width": 220,
+    "height": 14.5,
+    "label": "06 / Learn from consequences"
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 282,
+    "top": 536,
+    "width": 220,
+    "height": 74.0,
+    "label": "Look beyond your project's own story. Notice what it does to neighbors and its foundations, hear disagreement, and revise the principles themselves when experience reveals a mistake."
+  },
+  {
+    "page": 10,
+    "kind": "text",
+    "x": 38,
+    "top": 634,
+    "width": 464,
+    "height": 27.6,
+    "label": "Ren names the orientation 生生不息. Here we develop it as generation enabling further generation, without treating growth, complexity, or possibility as quantities to maximize."
+  },
+  {
+    "page": 11,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 11,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "11 / 21"
+  },
+  {
+    "page": 11,
+    "kind": "image",
+    "x": 0,
+    "top": 0,
+    "width": 540,
+    "height": 309,
+    "label": "assets/garden-district.png"
+  },
+  {
+    "page": 11,
+    "kind": "text",
+    "x": 38,
+    "top": 331,
+    "width": 464,
+    "height": 11.3,
+    "label": "ONE WORLD / THE LIVING GARDEN"
+  },
+  {
+    "page": 11,
+    "kind": "text",
+    "x": 38,
+    "top": 352,
+    "width": 464,
+    "height": 33.925,
+    "label": "A city that can be tended"
+  },
+  {
+    "page": 11,
+    "kind": "text",
+    "x": 38,
+    "top": 403.925,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "Breakfast stretches into the morning beside a pond. Someone repairs a cup's handle; a child watches a service robot clear a path. Upstairs, a dance rehearsal has begun. The person tending the courtyard knows which plants survived last season's heat."
+  },
+  {
+    "page": 11,
+    "kind": "text",
+    "x": 38,
+    "top": 461.475,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "Care becomes a way of knowing this place. The garden teaches that an action travels: shade changes water use; a new path changes who meets; a healthy pond depends on what happens beyond its edge."
+  },
+  {
+    "page": 11,
+    "kind": "text",
+    "x": 38,
+    "top": 519.0250000000001,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "People can help, learn, linger, or close their doors. They inherit a neighborhood worth inhabiting, with room to change it. A pleasant afternoon is one of the things the whole civilization makes possible."
+  },
+  {
+    "page": 11,
+    "kind": "text",
+    "x": 38,
+    "top": 636,
+    "width": 464,
+    "height": 19.5,
+    "label": "Belonging has no productivity requirement."
+  },
+  {
+    "page": 12,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 12,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "12 / 21"
+  },
+  {
+    "page": 12,
+    "kind": "image",
+    "x": 0,
+    "top": 0,
+    "width": 540,
+    "height": 309,
+    "label": "assets/open-university.png"
+  },
+  {
+    "page": 12,
+    "kind": "text",
+    "x": 38,
+    "top": 331,
+    "width": 464,
+    "height": 11.3,
+    "label": "ANOTHER WORLD / THE OPEN UNIVERSITY"
+  },
+  {
+    "page": 12,
+    "kind": "text",
+    "x": 38,
+    "top": 352,
+    "width": 464,
+    "height": 67.85,
+    "label": "Understanding as\na way of life"
+  },
+  {
+    "page": 12,
+    "kind": "text",
+    "x": 38,
+    "top": 437.85,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "At dusk, an observatory opens its roof. Downstairs, someone learning optics for the first time sits beside a person who has studied light for forty years. Tomorrow's workshop begins with a question nobody in the room knows how to answer."
+  },
+  {
+    "page": 12,
+    "kind": "text",
+    "x": 38,
+    "top": 495.40000000000003,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "AI can supply explanations and help operate instruments. Learning still changes what a person can notice, question, and understand. Discoveries enter a public library of methods and designs, where another community can take them further."
+  },
+  {
+    "page": 12,
+    "kind": "text",
+    "x": 38,
+    "top": 552.95,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "Some people stay for decades; others arrive for an afternoon. Across the courtyard, a group investigates rhythm through movement. Thought, craft, and embodied expression each give people a way to encounter the world."
+  },
+  {
+    "page": 12,
+    "kind": "text",
+    "x": 38,
+    "top": 636,
+    "width": 464,
+    "height": 19.5,
+    "label": "A life can gather around curiosity."
+  },
+  {
+    "page": 13,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 13,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "13 / 21"
+  },
+  {
+    "page": 13,
+    "kind": "image",
+    "x": 0,
+    "top": 0,
+    "width": 540,
+    "height": 309,
+    "label": "assets-v2/exploration-community.png"
+  },
+  {
+    "page": 13,
+    "kind": "text",
+    "x": 38,
+    "top": 331,
+    "width": 464,
+    "height": 11.3,
+    "label": "BEYOND EARTH / THE EXPLORATION COMMUNITY"
+  },
+  {
+    "page": 13,
+    "kind": "text",
+    "x": 38,
+    "top": 352,
+    "width": 464,
+    "height": 67.85,
+    "label": "A community that\nbuilds rockets"
+  },
+  {
+    "page": 13,
+    "kind": "text",
+    "x": 38,
+    "top": 437.85,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "A transmission arrives from a probe whose journey began before some listeners were born. The public hall goes quiet. Someone who once helped shape its instrument now sits beside a child seeing that distant landscape for the first time."
+  },
+  {
+    "page": 13,
+    "kind": "text",
+    "x": 38,
+    "top": 495.40000000000003,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "Nearby, robots assemble spacecraft in a great civic workshop. Engineers, artists, learners, and AI systems contribute to missions people choose together. The launch grounds lie apart from the settlement; the shared purpose runs through everyday life."
+  },
+  {
+    "page": 13,
+    "kind": "text",
+    "x": 38,
+    "top": 552.95,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "Here, exploration can organize a culture across generations. Knowledge returns to everyone. The community treats Earth as the living foundation of its journeys, and weighs each mission's materials and effects as part of the adventure."
+  },
+  {
+    "page": 13,
+    "kind": "text",
+    "x": 38,
+    "top": 636,
+    "width": 464,
+    "height": 19.5,
+    "label": "A grand dream can be a place people live."
+  },
+  {
+    "page": 14,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 14,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "14 / 21"
+  },
+  {
+    "page": 14,
+    "kind": "image",
+    "x": 0,
+    "top": 0,
+    "width": 540,
+    "height": 309,
+    "label": "assets-v2/shared-quest-city.png"
+  },
+  {
+    "page": 14,
+    "kind": "text",
+    "x": 38,
+    "top": 331,
+    "width": 464,
+    "height": 11.3,
+    "label": "AN INHABITED MMORPG / THE CITY OF SHARED QUESTS"
+  },
+  {
+    "page": 14,
+    "kind": "text",
+    "x": 38,
+    "top": 352,
+    "width": 464,
+    "height": 67.85,
+    "label": "Life inside a\nworld we author"
+  },
+  {
+    "page": 14,
+    "kind": "text",
+    "x": 38,
+    "top": 437.85,
+    "width": 464,
+    "height": 65.4,
+    "label": "Tonight the canal carries a procession of lanterns. A guild has spent weeks composing a story that newcomers will discover by walking the city. Through AR glasses, a creature made of constellations moves above the roofs. Downstairs, neighbors share supper."
+  },
+  {
+    "page": 14,
+    "kind": "text",
+    "x": 38,
+    "top": 511.75,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "This world persists between adventures. People form friendships, invent roles, make costumes, practice crafts, and add chapters to a common history. Quests can be pure play or become real projects: a garden, a performance, an observatory."
+  },
+  {
+    "page": 14,
+    "kind": "text",
+    "x": 38,
+    "top": 569.3,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "Inhabitants help shape the rules and lore. Rivalries have their arena; food, housing, and civic voice belong to everyone. A person can put down a role and remain at home among people who know them."
+  },
+  {
+    "page": 14,
+    "kind": "text",
+    "x": 38,
+    "top": 636,
+    "width": 464,
+    "height": 19.5,
+    "label": "A living culture grows beyond its original script."
+  },
+  {
+    "page": 15,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 15,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "15 / 21"
+  },
+  {
+    "page": 15,
+    "kind": "text",
+    "x": 38,
+    "top": 27,
+    "width": 464,
+    "height": 11.3,
+    "label": "THE HOUSE OF WORLDS / EMBODIED AUGMENTED REALITY"
+  },
+  {
+    "page": 15,
+    "kind": "text",
+    "x": 38,
+    "top": 50,
+    "width": 464,
+    "height": 73.6,
+    "label": "The elevator becomes\na portal"
+  },
+  {
+    "page": 15,
+    "kind": "image",
+    "x": 0,
+    "top": 139,
+    "width": 540,
+    "height": 360,
+    "label": "assets-v2/elevator-as-portal.png"
+  },
+  {
+    "page": 15,
+    "kind": "text",
+    "x": 38,
+    "top": 508,
+    "width": 464,
+    "height": 24,
+    "label": "Same cabin and travelers; two experienced thresholds. Concept illustration of perceptual continuity, not physical teleportation."
+  },
+  {
+    "page": 15,
+    "kind": "text",
+    "x": 38,
+    "top": 546,
+    "width": 464,
+    "height": 46.2,
+    "label": "You leave a garden, enter the familiar cabin, and arrive at a harbor suspended among clouds. The building's movement becomes a passage between realities, experienced together through spatial sound, shared AR, and carefully composed rooms."
+  },
+  {
+    "page": 15,
+    "kind": "text",
+    "x": 38,
+    "top": 600.2,
+    "width": 464,
+    "height": 46.2,
+    "label": "The lift still moves between physical floors. Each realm has real paths and thresholds beneath the experience. Residents author new worlds, while ordinary navigation remains available to anyone who takes off the glasses."
+  },
+  {
+    "page": 16,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 16,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "16 / 21"
+  },
+  {
+    "page": 16,
+    "kind": "image",
+    "x": 0,
+    "top": 0,
+    "width": 540,
+    "height": 309,
+    "label": "assets/material-lives.png"
+  },
+  {
+    "page": 16,
+    "kind": "text",
+    "x": 38,
+    "top": 331,
+    "width": 464,
+    "height": 11.3,
+    "label": "A REGENERATIVE CIVILIZATION / MATERIAL INHERITANCE"
+  },
+  {
+    "page": 16,
+    "kind": "text",
+    "x": 38,
+    "top": 352,
+    "width": 464,
+    "height": 33.925,
+    "label": "Matter with a future"
+  },
+  {
+    "page": 16,
+    "kind": "text",
+    "x": 38,
+    "top": 403.925,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "In the material library, a beam waits for its next building. Its dimensions, history, and inspection record travel with it. Nearby, robots sort parts from a dismantled hall. What used to be a finished object has become available for another beginning."
+  },
+  {
+    "page": 16,
+    "kind": "text",
+    "x": 38,
+    "top": 461.475,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "Cups can circulate through use, return, cleaning, and inspection. Parts can be repaired and reused. Public designs and compatible connections let architecture come apart with its components still useful."
+  },
+  {
+    "page": 16,
+    "kind": "text",
+    "x": 38,
+    "top": 519.0250000000001,
+    "width": 464,
+    "height": 49.050000000000004,
+    "label": "Energy helps materials take new forms. Recovery also needs collection, separation, quality checks, and storage; some material is lost or degraded. This culture cares for that whole process because future freedom depends on what remains available."
+  },
+  {
+    "page": 16,
+    "kind": "text",
+    "x": 38,
+    "top": 636,
+    "width": 464,
+    "height": 19.5,
+    "label": "Build the next use into this one."
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "17 / 21"
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "FREEDOM THROUGH RECOVERABLE TRANSFORMATION"
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 38,
+    "top": 66,
+    "width": 464,
+    "height": 80.5,
+    "label": "A world we can\nkeep remaking"
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 38,
+    "top": 166.5,
+    "width": 464,
+    "height": 37.0,
+    "label": "A generation can inherit useful materials and shared knowledge, then compose a very different world from them."
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 50,
+    "top": 277,
+    "width": 114,
+    "height": 15.5,
+    "label": "Use + care"
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 213,
+    "top": 277,
+    "width": 114,
+    "height": 31.0,
+    "label": "Recover +\nassess"
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 376,
+    "top": 277,
+    "width": 114,
+    "height": 31.0,
+    "label": "Adapt +\nuse again"
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 38,
+    "top": 360,
+    "width": 464,
+    "height": 13,
+    "label": "Energy and process inputs enter; losses and residues need destinations."
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 38,
+    "top": 395,
+    "width": 464,
+    "height": 49.5,
+    "label": "A workshop becomes a theater. Standard structural parts enter an unfamiliar architecture. A public design becomes the starting point for another community's invention. Material standards can support a diversity of forms."
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 38,
+    "top": 454.5,
+    "width": 464,
+    "height": 49.5,
+    "label": "Useful stock circulates through care, reuse, and transformation. Greater fluidity means knowing where a component is, who can use it, what condition it is in, and how to move it into its next life."
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 38,
+    "top": 514.0,
+    "width": 464,
+    "height": 49.5,
+    "label": "Building more robots and factories at the same time requires additional material stock, energy, space, and productive capacity. Recursive production can accelerate while those conditions hold; circulation does not make physical growth unlimited."
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 38,
+    "top": 573.5,
+    "width": 464,
+    "height": 33.0,
+    "label": "Ecological regeneration has its own rhythms. A recovered beam and a renewing forest are different forms of inheritance, and a civilization must learn to sustain both."
+  },
+  {
+    "page": 17,
+    "kind": "text",
+    "x": 38,
+    "top": 642,
+    "width": 464,
+    "height": 19.5,
+    "label": "Today's transformation should preserve the capacity for tomorrow's."
+  },
+  {
+    "page": 18,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 18,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "18 / 21"
+  },
+  {
+    "page": 18,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "MANY WORLDS / ONE SHARED FOUNDATION"
+  },
+  {
+    "page": 18,
+    "kind": "text",
+    "x": 38,
+    "top": 69,
+    "width": 464,
+    "height": 73.6,
+    "label": "Living with the power\nto make things real"
+  },
+  {
+    "page": 18,
+    "kind": "text",
+    "x": 38,
+    "top": 165.6,
+    "width": 464,
+    "height": 39.0,
+    "label": "As intelligence makes intention more powerful, understanding the consequences of intention becomes part of common culture."
+  },
+  {
+    "page": 18,
+    "kind": "text",
+    "x": 38,
+    "top": 243.6,
+    "width": 464,
+    "height": 70.0,
+    "label": "An exploration community wants a new assembly hall. A neighboring garden protects an old wetland. Both value a flourishing future, and they disagree about what this place should become. Robots could build quickly; the decision still belongs among those affected."
+  },
+  {
+    "page": 18,
+    "kind": "text",
+    "x": 38,
+    "top": 324.6,
+    "width": 464,
+    "height": 70.0,
+    "label": "They can examine material needs and effects, imagine alternatives, and try changes that leave room to respond. Some limits protect shared life: winning a game cannot buy another person's home, and a realm's popularity cannot grant control of the infrastructure outside it."
+  },
+  {
+    "page": 18,
+    "kind": "text",
+    "x": 38,
+    "top": 405.6,
+    "width": 464,
+    "height": 52.5,
+    "label": "The principles apply to every agent changing the world. People and AI systems need to consider what a successful local action makes possible or impossible elsewhere. A well-executed instruction can still have damaging consequences."
+  },
+  {
+    "page": 18,
+    "kind": "text",
+    "x": 38,
+    "top": 469.1,
+    "width": 464,
+    "height": 70.0,
+    "label": "This understanding is learned through life: caring for a watershed, changing a guild's rules, preserving why a mission was revised, and listening when another community sees something yours cannot. These worlds share a practice of cohabitation while remaining free to become different."
+  },
+  {
+    "page": 18,
+    "kind": "text",
+    "x": 38,
+    "top": 632,
+    "width": 464,
+    "height": 41.0,
+    "label": "Power becomes more hopeful when understanding grows with its reach."
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "19 / 21"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "AN INVITATION / THIS WORLD IS STILL BECOMING"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 38,
+    "top": 70,
+    "width": 464,
+    "height": 85.1,
+    "label": "What would you\nhelp make possible?"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 38,
+    "top": 176.1,
+    "width": 464,
+    "height": 36.6,
+    "label": "Imagine a place you would want to inhabit, and then imagine the conditions that let other lives flourish around it."
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 38,
+    "top": 253.7,
+    "width": 33,
+    "height": 16,
+    "label": "01"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 80,
+    "top": 249.7,
+    "width": 422,
+    "height": 20,
+    "label": "A life"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 80,
+    "top": 274.7,
+    "width": 422,
+    "height": 32.8,
+    "label": "What would draw your attention if earning a living no longer organized your days? What would a friend, a child, or a stranger find meaningful here?"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 38,
+    "top": 338.5,
+    "width": 33,
+    "height": 16,
+    "label": "02"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 80,
+    "top": 334.5,
+    "width": 422,
+    "height": 20,
+    "label": "A culture"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 80,
+    "top": 359.5,
+    "width": 422,
+    "height": 32.8,
+    "label": "What stories, rituals, and rewards would shape this place? What kinds of people might those conditions encourage us to become?"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 38,
+    "top": 423.3,
+    "width": 33,
+    "height": 16,
+    "label": "03"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 80,
+    "top": 419.3,
+    "width": 422,
+    "height": 20,
+    "label": "A shared foundation"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 80,
+    "top": 444.3,
+    "width": 422,
+    "height": 32.8,
+    "label": "What knowledge, materials, relationships, and living systems would it depend on? What would it return to them?"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 38,
+    "top": 508.1,
+    "width": 33,
+    "height": 16,
+    "label": "04"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 80,
+    "top": 504.1,
+    "width": 422,
+    "height": 20,
+    "label": "A further beginning"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 80,
+    "top": 529.1,
+    "width": 422,
+    "height": 32.8,
+    "label": "How could someone grow beyond the life you imagined for them, question the rules, or create a world you could not foresee?"
+  },
+  {
+    "page": 19,
+    "kind": "text",
+    "x": 38,
+    "top": 600,
+    "width": 464,
+    "height": 53.400000000000006,
+    "label": "We can begin with a productive cell, a courtyard, a spacecraft hall, a shared quest, or an elevator passage. Draw it and trace what sustains it. Build a useful part, learn from its results, and let that discovery change the wider system too."
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "20 / 21"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "EVIDENCE / OPERATING CAPABILITIES AND TESTED DEVELOPMENT"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 38,
+    "top": 66,
+    "width": 464,
+    "height": 75.89999999999999,
+    "label": "The starting point,\nwith sources"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 38,
+    "top": 161.89999999999998,
+    "width": 464,
+    "height": 31.2,
+    "label": "Primary reports checked on 7 September 2026. Company accounts and research demonstrations have different scopes; the links below retain those distinctions."
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 38,
+    "top": 223.09999999999997,
+    "width": 34,
+    "height": 14,
+    "label": "[E1]"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 222.09999999999997,
+    "width": 421,
+    "height": 13.5,
+    "label": "ABB / Robot manufacturing / 2022"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 239.59999999999997,
+    "width": 421,
+    "height": 27.0,
+    "label": "Robot assembly and material handling in the Shanghai factory; an operating industrial starting point."
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 38,
+    "top": 287.59999999999997,
+    "width": 34,
+    "height": 14,
+    "label": "[E2]"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 286.59999999999997,
+    "width": 421,
+    "height": 13.5,
+    "label": "FANUC / Factories / accessed 7 September 2026"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 304.09999999999997,
+    "width": 421,
+    "height": 27.0,
+    "label": "Automated production of robots, machine tools, motors and controllers; external dependencies unquantified."
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 38,
+    "top": 352.09999999999997,
+    "width": 34,
+    "height": 14,
+    "label": "[E3]"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 351.09999999999997,
+    "width": 421,
+    "height": 13.5,
+    "label": "Rio Tinto / Western Australia / accessed 7 September 2026"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 368.59999999999997,
+    "width": 421,
+    "height": 13.5,
+    "label": "Autonomous haulage, drilling and heavy-haul rail within a supervised operating network."
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 38,
+    "top": 403.09999999999997,
+    "width": 34,
+    "height": 14,
+    "label": "[E4]"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 402.09999999999997,
+    "width": 421,
+    "height": 13.5,
+    "label": "BMW / Figure 02 factory pilot / March 2026"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 419.59999999999997,
+    "width": 421,
+    "height": 27.0,
+    "label": "A component-positioning task supported vehicle production over ten months in 2025; a bounded pilot."
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 38,
+    "top": 467.59999999999997,
+    "width": 34,
+    "height": 14,
+    "label": "[E5]"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 466.59999999999997,
+    "width": 421,
+    "height": 13.5,
+    "label": "Gemini Robotics 1.5 / Technical report / 2025"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 484.09999999999997,
+    "width": 421,
+    "height": 27.0,
+    "label": "Embodied reasoning, tools and action models; bounded experiments include task transfer and recovery."
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 38,
+    "top": 532.0999999999999,
+    "width": 34,
+    "height": 14,
+    "label": "[E6]"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 531.0999999999999,
+    "width": 421,
+    "height": 13.5,
+    "label": "Physical Intelligence / π0.5 / April 2025"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 548.5999999999999,
+    "width": 421,
+    "height": 13.5,
+    "label": "Transfer of household skills to unseen homes; generalization within a tested task repertoire."
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 38,
+    "top": 583.0999999999999,
+    "width": 34,
+    "height": 14,
+    "label": "[E7]"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 582.0999999999999,
+    "width": 421,
+    "height": 13.5,
+    "label": "Physical Intelligence / Partner deployments / February 2026"
+  },
+  {
+    "page": 20,
+    "kind": "text",
+    "x": 81,
+    "top": 599.5999999999999,
+    "width": 421,
+    "height": 27.0,
+    "label": "Customer laundry and order-packing work with learning from interventions; human assistance remains."
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 690,
+    "width": 464,
+    "height": 10,
+    "label": "WORLDS WE CAN INHABIT"
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 454,
+    "top": 690,
+    "width": 48,
+    "height": 10,
+    "label": "21 / 21"
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 34,
+    "width": 464,
+    "height": 11.3,
+    "label": "ABOUT THIS EDITION / 07 SEPTEMBER 2026"
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 64,
+    "width": 464,
+    "height": 75.89999999999999,
+    "label": "A vision, with\nits roots visible"
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 163.89999999999998,
+    "width": 464,
+    "height": 15.6,
+    "label": "The source of the vision"
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 183.49999999999997,
+    "width": 464,
+    "height": 60.8,
+    "label": "Ren’s opening dialogue and additions on materials, the meta-level, and the technical foundation are preserved in the project archive. This edition develops those ideas with AI. Its names, scenes, prose, and layouts are proposals, rather than quotations or settled institutions."
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 261.29999999999995,
+    "width": 464,
+    "height": 15.6,
+    "label": "Earlier words, checked directly"
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 280.9,
+    "width": 464,
+    "height": 60.8,
+    "label": "Ren’s February 17 and June 3, 2026 notes connect recursive industry to abundant provision, freedom from exploitation, and freely chosen worlds. His April 30 conversation supplies the quotation on page 10 and 生生不息. His June 4 correction rejects optimizing possibility itself. The source-reading records distinguish human passages from AI syntheses."
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 358.7,
+    "width": 464,
+    "height": 15.6,
+    "label": "What the images represent"
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 378.3,
+    "width": 464,
+    "height": 60.8,
+    "label": "Eight distinct generated concept illustrations, each placed once. The new production-commons scene joins the garden, university, rocket community, shared quest city, portal passage, material library, and worldmaking cover. They explore possible uses of capability; they are not evidence that these complete systems already operate."
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 456.1,
+    "width": 464,
+    "height": 15.6,
+    "label": "The scope of the speculation"
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 475.70000000000005,
+    "width": 464,
+    "height": 60.8,
+    "label": "The preceding evidence page grounds the industrial starting point and developing AI capabilities. Full autonomous industrial reproduction remains a construction thesis. Cultural feedback is a working lens. Material sources below support distinctions about repeated use, structural reuse, and growing stock; they do not validate the whole future."
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 594,
+    "width": 464,
+    "height": 11.3,
+    "label": "MATERIAL REFERENCES / CLICK TO READ"
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 616,
+    "width": 464,
+    "height": 13.1,
+    "label": "UNEP / 2021 / Beverage cups: life-cycle comparisons"
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 634.1,
+    "width": 464,
+    "height": 13.1,
+    "label": "European Commission JRC / 2025 / Reclaimed structural steel"
+  },
+  {
+    "page": 21,
+    "kind": "text",
+    "x": 38,
+    "top": 652.2,
+    "width": 464,
+    "height": 13.1,
+    "label": "IEA / 2020 / Iron and Steel Technology Roadmap"
+  }
+]

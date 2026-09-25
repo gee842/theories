@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-07",
+  "output": "output/pdf/worlds-we-can-inhabit.pdf",
+  "bytes": 3213764,
+  "sha256": "f9e396f0d26989e9a2128a2fd2e1f33197413caa72f541d193e3fa98fdedadfe",
+  "pages": 10,
+  "page_size_points": [
+    540,
+    720
+  ],
+  "bookmarks": 10,
+  "embedded_font_programs": [
+    "/AAAAAA+NotoSans-Bold",
+    "/AAAAAA+NotoSans-Regular",
+    "/AAAAAA+NotoSerif-Italic",
+    "/AAAAAA+NotoSerif-Regular"
+  ],
+  "external_links": [
+    "https://www.lifecycleinitiative.org/wp-content/uploads/2021/03/UNEP-D002-Beverage-Cups-Report_lowres.pdf",
+    "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC144410/JRC144410_01.pdf",
+    "https://iea.blob.core.windows.net/assets/eb0c8ec1-3665-4959-97d0-187ceca189a8/Iron_and_Steel_Technology_Roadmap.pdf"
+  ],
+  "visual_review": {
+    "pages_1_to_5": "Root inspected every rendered page at readable scale.",
+    "pages_6_to_10": "Independent reviewer inspected every rendered page at readable scale; no actionable defects.",
+    "final_export": "Text-only pages 3,6,8,9,10 rendered byte-identically to reviewed versions; root reinspected final illustrated pages 1,2,4,5,7.",
+    "result": "No detected clipping, overlaps, footer collisions, unreadable text, or broken diagram labels."
+  },
+  "scope": "Document and concept-image review, not engineering or general automation validation."
+}

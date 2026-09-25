@@ -1,0 +1,18 @@
+%% Mermaid diagram: AI readiness gating and sequence
+flowchart TD
+  R[Recognize] --> S[Slow/Cap]
+  S --> A[Align]
+  A --> C[Coordinate]
+  C --> T[Transform]
+
+  subgraph Gates
+    G1[Compute tiers ← safety evidence]
+    G2[Tripwires: eval fail → pause]
+    G3[Oversight: polycentric + sortition]
+    G4[Diagnostics floors: PWC≥0, SC≥min, PDI↓, CR↓, DE↑]
+  end
+
+  S --> G1
+  A --> G2
+  C --> G3
+  A --> G4

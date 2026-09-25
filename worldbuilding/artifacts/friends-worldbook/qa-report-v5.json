@@ -1,0 +1,524 @@
+{
+  "edition": "05",
+  "date": "2026-09-07",
+  "pdf": "output/pdf/worlds-we-can-inhabit-v5.pdf",
+  "sha256": "cd6a625d629269400f21e48f757fdc64aa48638775a1b20edb3f3a69396caefc",
+  "bytes": 19112528,
+  "pages": 34,
+  "bookmarks": 34,
+  "link_annotations": 19,
+  "unique_source_links": [
+    "https://arxiv.org/html/2510.03342v3",
+    "https://iea.blob.core.windows.net/assets/eb0c8ec1-3665-4959-97d0-187ceca189a8/Iron_and_Steel_Technology_Roadmap.pdf",
+    "https://new.abb.com/news/detail/97670/abb-opens-state-of-the-art-robotics-mega-factory-in-shanghai",
+    "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC144410/JRC144410_01.pdf",
+    "https://www.bmwgroup.com/en/news/general/2026/humanoid-robot-in-leipzig.html",
+    "https://www.fanuc.co.jp/en/profile/production/",
+    "https://www.lifecycleinitiative.org/wp-content/uploads/2021/03/UNEP-D002-Beverage-Cups-Report_lowres.pdf",
+    "https://www.pi.website/blog/partner",
+    "https://www.pi.website/blog/pi05",
+    "https://www.riotinto.com/operations/anz/western-australia"
+  ],
+  "fonts_used_for_text": {
+    "/AAAAAA+NotoSans-Regular": true,
+    "/AAAAAA+NotoSans-Bold": true,
+    "/AAAAAA+NotoSerif-Regular": true,
+    "/AAAAAA+NotoSerif-Italic": true,
+    "/AAAAAA+ArialUnicodeMS": true
+  },
+  "copy_checks": [
+    {
+      "page": 1,
+      "id": "cover",
+      "copy_complete": true,
+      "selectable_characters": 545
+    },
+    {
+      "page": 2,
+      "id": "production",
+      "copy_complete": true,
+      "selectable_characters": 550
+    },
+    {
+      "page": 3,
+      "id": "recursion",
+      "copy_complete": true,
+      "selectable_characters": 1347
+    },
+    {
+      "page": 4,
+      "id": "construction",
+      "copy_complete": true,
+      "selectable_characters": 1403
+    },
+    {
+      "page": 5,
+      "id": "freedom-day",
+      "copy_complete": true,
+      "selectable_characters": 698
+    },
+    {
+      "page": 6,
+      "id": "provision",
+      "copy_complete": true,
+      "selectable_characters": 1599
+    },
+    {
+      "page": 7,
+      "id": "principles",
+      "copy_complete": true,
+      "selectable_characters": 1261
+    },
+    {
+      "page": 8,
+      "id": "garden-arrival",
+      "copy_complete": true,
+      "selectable_characters": 442
+    },
+    {
+      "page": 9,
+      "id": "garden-walk",
+      "copy_complete": true,
+      "selectable_characters": 444
+    },
+    {
+      "page": 10,
+      "id": "garden-section",
+      "copy_complete": true,
+      "selectable_characters": 572
+    },
+    {
+      "page": 11,
+      "id": "university-arrival",
+      "copy_complete": true,
+      "selectable_characters": 454
+    },
+    {
+      "page": 12,
+      "id": "university-cosmos",
+      "copy_complete": true,
+      "selectable_characters": 497
+    },
+    {
+      "page": 13,
+      "id": "university-workshop",
+      "copy_complete": true,
+      "selectable_characters": 488
+    },
+    {
+      "page": 14,
+      "id": "exploration-arrival",
+      "copy_complete": true,
+      "selectable_characters": 475
+    },
+    {
+      "page": 15,
+      "id": "exploration-launch",
+      "copy_complete": true,
+      "selectable_characters": 504
+    },
+    {
+      "page": 16,
+      "id": "exploration-section",
+      "copy_complete": true,
+      "selectable_characters": 572
+    },
+    {
+      "page": 17,
+      "id": "quest-arrival",
+      "copy_complete": true,
+      "selectable_characters": 465
+    },
+    {
+      "page": 18,
+      "id": "quest-bridge",
+      "copy_complete": true,
+      "selectable_characters": 477
+    },
+    {
+      "page": 19,
+      "id": "quest-backstage",
+      "copy_complete": true,
+      "selectable_characters": 554
+    },
+    {
+      "page": 20,
+      "id": "changing-rules",
+      "copy_complete": true,
+      "selectable_characters": 799
+    },
+    {
+      "page": 21,
+      "id": "expressive",
+      "copy_complete": true,
+      "selectable_characters": 542
+    },
+    {
+      "page": 22,
+      "id": "ar-megastructure",
+      "copy_complete": true,
+      "selectable_characters": 550
+    },
+    {
+      "page": 23,
+      "id": "ar-portal",
+      "copy_complete": true,
+      "selectable_characters": 510
+    },
+    {
+      "page": 24,
+      "id": "ar-worldhall",
+      "copy_complete": true,
+      "selectable_characters": 530
+    },
+    {
+      "page": 25,
+      "id": "ar-reality-pair",
+      "copy_complete": true,
+      "selectable_characters": 585
+    },
+    {
+      "page": 26,
+      "id": "ar-section",
+      "copy_complete": true,
+      "selectable_characters": 592
+    },
+    {
+      "page": 27,
+      "id": "ar-routes",
+      "copy_complete": true,
+      "selectable_characters": 1028
+    },
+    {
+      "page": 28,
+      "id": "materials",
+      "copy_complete": true,
+      "selectable_characters": 507
+    },
+    {
+      "page": 29,
+      "id": "beam-lives",
+      "copy_complete": true,
+      "selectable_characters": 777
+    },
+    {
+      "page": 30,
+      "id": "circulation",
+      "copy_complete": true,
+      "selectable_characters": 1507
+    },
+    {
+      "page": 31,
+      "id": "garden-choice",
+      "copy_complete": true,
+      "selectable_characters": 578
+    },
+    {
+      "page": 32,
+      "id": "invitation",
+      "copy_complete": true,
+      "selectable_characters": 892
+    },
+    {
+      "page": 33,
+      "id": "evidence",
+      "copy_complete": true,
+      "selectable_characters": 1374
+    },
+    {
+      "page": 34,
+      "id": "provenance",
+      "copy_complete": true,
+      "selectable_characters": 1727
+    }
+  ],
+  "image_source_manifest": "image-placements-v5.json",
+  "actual_pdf_image_draws": [
+    {
+      "page": 1,
+      "sha256": "017330eca9f31bd8206a16e8c2ba0d3ac044960a4250e566ed5491cc1b5e7b3d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 2,
+      "sha256": "f630ffb46381e6e87b54594d0f9ab5752fae105b0c8234cb65b1281be68c561c",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 5,
+      "sha256": "f628e9e7ced18a482847ceb017959ffc84d2cfc5b1e623184da5e37be0d9e64b",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 8,
+      "sha256": "6fb183fac2633d07ebbe905642763859aec437c0bec4c7dbd7cfd308452530a5",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 9,
+      "sha256": "a88eedda42c0ebed145bc9fdd2747994b44773a288cbbb9bfdaa9f097ceb0858",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 10,
+      "sha256": "7d3f50f4b7df1496cfeb8bdf89fa791920abef088203b0003071011b3dbf81fe",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 11,
+      "sha256": "b809a0e0385f33f08b0cbd9ac09d9e63bb3cf8890cc1b9933761bab42039376f",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 12,
+      "sha256": "61c2cc517ec602e57f1764c2763eb5c902c79c4b0cdfd09dc2575da2a577f948",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 13,
+      "sha256": "dcd0917a1d85518fd0a61413d599c2b5bc9e5c3d20d3ecb812dd7222402a2306",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 14,
+      "sha256": "53d9dab985f3234fedbe50307e0dc0fdf46a57f646a5d75be4cea695d278826e",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 15,
+      "sha256": "5c03960b2d7e13c768dfe6748cb0b81cc7f789922822fae816e811f903e5e544",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 16,
+      "sha256": "6cfe9968b84c0f69aa982815711076b7932f2439b8a3519b4e9e7288995f1837",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 17,
+      "sha256": "3298c50fdc6a0a1cc84d43273a9bea5cd0021edadd5f61b43982dc3779ddbf60",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 18,
+      "sha256": "f9136a5f921acfb48867f227f48894a568b5d2f5a2eb7ad136835f04ddb29849",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 19,
+      "sha256": "4d9285bbeb6a30efdcbf6ffb30df72b0abf009dddce6ffef2dd120b75c4fbdc7",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 20,
+      "sha256": "1b7c7ef7d393acfd44f0d8a02641278bb4ace18ed2af80fe420739d883c91e11",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 21,
+      "sha256": "bb720015f3a329aeb37ab13b6245b7bfb138e852c2b1e1e84188e5985a1caa70",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 22,
+      "sha256": "8201be46c2752966bb487b5202c6c51cd7a7ba471653da58a57f87837b92126b",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 23,
+      "sha256": "8ac3db3302d71917b224f3824a38d38bda8274f14804a372162cd27ea6c9096d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 24,
+      "sha256": "52da0b6b69726621c8a0642256b34acf4641b2417c8e0bc07b69c7f13cd1e0c1",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 25,
+      "sha256": "35b2f6af0341cbe2c28fdd0186feb9de356af1ecb66df56ef72185f903188182",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 26,
+      "sha256": "ce4b16340e7c87da2b9ac51de99e8152ecf167b764c7a7e849df8a01e26134e1",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 28,
+      "sha256": "f910f65dbde767d1797a34a70fb5f11ee31a7f3f977a4c906b58ef54acd21174",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 29,
+      "sha256": "85b40b05c59373132b30b65b7320b0c2fca9ba8a7868671ea2ec7f2720dc7413",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "page": 31,
+      "sha256": "b33e609e057325bc0e2ed11dcc52d28d30207c45a232a37edf31aad8d5383e2b",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "unique_source_images": 25,
+  "unique_pdf_images": 25,
+  "repeated_image_placements": 0,
+  "new_source_images": 8,
+  "uncropped_images": 25,
+  "render_long_edge_pixels": 1200,
+  "render_sha256": {
+    "page-01.png": "70ea8d66fd817f6105c6dc3a33d7371a65549a03af96cce07cb39957f42a0447",
+    "page-02.png": "56522de1094546a827a2a3aa07de988a93fc38bfc8246a9601058d37cde7ddd6",
+    "page-03.png": "a1e24eeb88c19ab6c90298aee0c4b860a3d21c55b75cb597979b597feae04b1c",
+    "page-04.png": "d6099a553a428a2710b641a1c96cf2218a8fa6771d85190a6175e50eac245173",
+    "page-05.png": "c49360b38aa471dc86877b264140078edff7fe580046fcc1d7b8bf5ea394b11c",
+    "page-06.png": "cb16aee0f11a5edfc0598aa276e780dcbebe6b39752e4820624cdaa76b2340ce",
+    "page-07.png": "da5270474c23bd26faf6594412f83dc63597be295eca0c1dab81a716cac514d4",
+    "page-08.png": "fd78fe249759a4c3e49b87fd8717f6611f0af281bb3f25ace090f2ee1c2f7275",
+    "page-09.png": "5a66219f24adecd280d06ece347133795815dc588c396376a60599e1e04887cd",
+    "page-10.png": "aa5d930205b21aaeaeba33bea3577396b5efb587fa92742dd09053926f21f6c2",
+    "page-11.png": "2bec692bae27cdb10729002f8f598a4c21ced8244f9cb7ae81380dc9cf37f530",
+    "page-12.png": "b1251f66fda573e1734a3f74f0af0959e28c42764c6da43b2c18004bc699cc05",
+    "page-13.png": "d2aa4ce4e126f4d6c078c01c3c2d655e24070138394427730f0c8ed3e0d2b6d0",
+    "page-14.png": "278105618001afd320fc0ee3f0f290a2e4e156f300293a372a4ff67560a85b89",
+    "page-15.png": "1450ab9f2036dfc187248801ca5cbfbd26694c8fd4c0c08d0eb3a64e3efb29f5",
+    "page-16.png": "35dc7c5224010fdf496cdf19dbc108e415b5f32b0173cbfb3db268c68d6c304c",
+    "page-17.png": "db7c58c7cfe73a1e39b6096a0ea1d655305db04f2fb61f195e47b508d56bafd9",
+    "page-18.png": "0bd7ee9afab40a24424e82067ea6b42cec3315b8325c0a0e2135d72815876ad8",
+    "page-19.png": "eb85bdac00a8e50695dbf527026ce61c6dd29772bad1c10f6f3329698d235d11",
+    "page-20.png": "d0a3b1ce4111972151a6c086c58880c4af1b3949f10fb2ae2c6748b563e61b27",
+    "page-21.png": "2cbf594714f19bf59022d31e8f79e5501902dc5ff18ccf197a1c492c1dd33a8c",
+    "page-22.png": "7a8975a6f6f1b455604bcd7ab25ea6e6fa09b045644f32dd7746df5ed5f4dbd9",
+    "page-23.png": "6a4deb8ca7c74291935ff2fce4261a1ca6b594f3b2bb4b7a116b306ad1f0b4b6",
+    "page-24.png": "3d520d0351afac7f36c285936484208649a6b68c5aa8bc86fdc734d751851bc9",
+    "page-25.png": "35ece86877a1a5a07d4ee6dbb70af6877702dd5daac685c8b6e092d34fb131a6",
+    "page-26.png": "fdb9e006580fb3de771d5c7fd3ad108f80b82a63a936bd8be4049cb92d7d309b",
+    "page-27.png": "a73d4cc633901c7a225fcca9dd46a33ce6727d1599fb6e8c564017ce21b1ba26",
+    "page-28.png": "868842605e16e4c8b784dd7abc81b2b6a90af57025ddf15386c4280c4ad359af",
+    "page-29.png": "ff1f08cfb5207c53f16521d07f0c44133384c547ec18addf60437b763d3fd1ef",
+    "page-30.png": "554744a008ae4bf1113f7007eaa0d9c5c44933f8babdb9a5525ed7ca563a8ef1",
+    "page-31.png": "c41cb108d1b4d7eeda830ce9cf2bd7c49b6d799ac09c2b912542929debe76810",
+    "page-32.png": "4753fbfd9a0aba630ebc57cf5613d48097c0bfc835688b9d437bcdfc173cd3a2",
+    "page-33.png": "f0b079da67669aae8d004b1ff8d227f11740aaab3510b85e85187c3ec7e508e7",
+    "page-34.png": "2bec98b60066d997245aeb0364fdf54fc9205597abcd64cce67fa20843980fd7"
+  },
+  "previous_edition_04_hash_preserved": "a3ee0256afb361ace5175a5484e455081dc20b1ed6a8cc09f64d585bfa0deb8e",
+  "reviewed_pdf_sha256": "cd6a625d629269400f21e48f757fdc64aa48638775a1b20edb3f3a69396caefc",
+  "all_pages_visually_reviewed": true,
+  "visual_review_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "method": "Lead inspected complete page sequence and enlarged new story/diagram pages. Two contextless reviewers inspected all34pages independently by role. All six pages changed after second assembled draft were individually rechecked in final renders; other28renderhashesmatch.",
+  "second_draft_sha256": "9ef9b7625e3d95fab64dbb9ca54d912a000bd0e0652d6969a88ab122c8acbea7",
+  "final_changed_pages_reinspected": [
+    2,
+    3,
+    6,
+    20,
+    24,
+    27
+  ],
+  "unchanged_page_render_hashes": {
+    "page-01.png": "70ea8d66fd817f6105c6dc3a33d7371a65549a03af96cce07cb39957f42a0447",
+    "page-04.png": "d6099a553a428a2710b641a1c96cf2218a8fa6771d85190a6175e50eac245173",
+    "page-05.png": "c49360b38aa471dc86877b264140078edff7fe580046fcc1d7b8bf5ea394b11c",
+    "page-07.png": "da5270474c23bd26faf6594412f83dc63597be295eca0c1dab81a716cac514d4",
+    "page-08.png": "fd78fe249759a4c3e49b87fd8717f6611f0af281bb3f25ace090f2ee1c2f7275",
+    "page-09.png": "5a66219f24adecd280d06ece347133795815dc588c396376a60599e1e04887cd",
+    "page-10.png": "aa5d930205b21aaeaeba33bea3577396b5efb587fa92742dd09053926f21f6c2",
+    "page-11.png": "2bec692bae27cdb10729002f8f598a4c21ced8244f9cb7ae81380dc9cf37f530",
+    "page-12.png": "b1251f66fda573e1734a3f74f0af0959e28c42764c6da43b2c18004bc699cc05",
+    "page-13.png": "d2aa4ce4e126f4d6c078c01c3c2d655e24070138394427730f0c8ed3e0d2b6d0",
+    "page-14.png": "278105618001afd320fc0ee3f0f290a2e4e156f300293a372a4ff67560a85b89",
+    "page-15.png": "1450ab9f2036dfc187248801ca5cbfbd26694c8fd4c0c08d0eb3a64e3efb29f5",
+    "page-16.png": "35dc7c5224010fdf496cdf19dbc108e415b5f32b0173cbfb3db268c68d6c304c",
+    "page-17.png": "db7c58c7cfe73a1e39b6096a0ea1d655305db04f2fb61f195e47b508d56bafd9",
+    "page-18.png": "0bd7ee9afab40a24424e82067ea6b42cec3315b8325c0a0e2135d72815876ad8",
+    "page-19.png": "eb85bdac00a8e50695dbf527026ce61c6dd29772bad1c10f6f3329698d235d11",
+    "page-21.png": "2cbf594714f19bf59022d31e8f79e5501902dc5ff18ccf197a1c492c1dd33a8c",
+    "page-22.png": "7a8975a6f6f1b455604bcd7ab25ea6e6fa09b045644f32dd7746df5ed5f4dbd9",
+    "page-23.png": "6a4deb8ca7c74291935ff2fce4261a1ca6b594f3b2bb4b7a116b306ad1f0b4b6",
+    "page-25.png": "35ece86877a1a5a07d4ee6dbb70af6877702dd5daac685c8b6e092d34fb131a6",
+    "page-26.png": "fdb9e006580fb3de771d5c7fd3ad108f80b82a63a936bd8be4049cb92d7d309b",
+    "page-28.png": "868842605e16e4c8b784dd7abc81b2b6a90af57025ddf15386c4280c4ad359af",
+    "page-29.png": "ff1f08cfb5207c53f16521d07f0c44133384c547ec18addf60437b763d3fd1ef",
+    "page-30.png": "554744a008ae4bf1113f7007eaa0d9c5c44933f8babdb9a5525ed7ca563a8ef1",
+    "page-31.png": "c41cb108d1b4d7eeda830ce9cf2bd7c49b6d799ac09c2b912542929debe76810",
+    "page-32.png": "4753fbfd9a0aba630ebc57cf5613d48097c0bfc835688b9d437bcdfc173cd3a2",
+    "page-33.png": "f0b079da67669aae8d004b1ff8d227f11740aaab3510b85e85187c3ec7e508e7",
+    "page-34.png": "2bec98b60066d997245aeb0364fdf54fc9205597abcd64cce67fa20843980fd7"
+  },
+  "substantive_review": "Final source fidelity pass within declared concept atlas scope; all required reader/diagram/caption corrections resolved.",
+  "review_report": "reviews/2026-09-07-v5/README.md",
+  "remaining_limits": [
+    "No engineering validation or measured autonomous-network growth rate.",
+    "PDF is not tagged; separate semantic HTML and Markdown readers supplied.",
+    "Expressive Commons has a full brief and one atlas vignette, not a full multi-view architectural sequence."
+  ],
+  "reader_checks": {
+    "complete_source_copy": true,
+    "illustration_descriptions": 25,
+    "diagram_descriptions": 9,
+    "html_internal_links_valid": true,
+    "html_external_assets": 0,
+    "responsive_layout_inspected": true
+  }
+}

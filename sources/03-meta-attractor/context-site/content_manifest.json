@@ -1,0 +1,32 @@
+{
+  "site_copy": "meta_attractor_context/site_copy.md",
+  "outline": "meta_attractor_context/site_outline.md",
+  "hero": "meta_attractor_context/hero.md",
+  "glossary": "meta_attractor_context/glossary.md",
+  "claims": "meta_attractor_context/claims.md",
+  "knowledge_map": "meta_attractor_context/knowledge_map.mmd",
+  "diagnostics": "meta_attractor_context/diagnostics.md",
+  "ai_readiness_core": "meta_attractor_context/ai_agi_asi_readiness.md",
+  "ai_readiness_variants": "meta_attractor_context/ai_readiness_variants.md",
+  "ai_gating_diagram": "meta_attractor_context/ai_gating.mmd",
+  "governance_blueprint": "meta_attractor_context/governance_blueprint.md",
+  "policy_one_pager": "meta_attractor_context/policy_one_pager.md",
+  "audience_layers": "meta_attractor_context/audience_layers.md",
+  "crosswalk": "meta_attractor_context/crosswalk.md",
+  "quotes": "meta_attractor_context/quotes_and_anchors.md",
+  "case_studies": [
+    "meta_attractor_context/case_studies/attention_economy.md",
+    "meta_attractor_context/case_studies/growth_finance.md"
+  ],
+  "case_study_data": [
+    "meta_attractor_context/case_studies/data_notes.md",
+    "meta_attractor_context/data/attention_pwc.csv",
+    "meta_attractor_context/data/attention_pdi_weights.csv",
+    "meta_attractor_context/data/attention_sc_inputs.csv",
+    "meta_attractor_context/data/finance_pwc.csv",
+    "meta_attractor_context/data/finance_pdi_weights.csv",
+    "meta_attractor_context/data/finance_sc_inputs.csv"
+  ],
+  "metrics_visuals": "meta_attractor_context/metrics_visuals.mmd",
+  "section_ids": "meta_attractor_context/section_ids.json"
+}

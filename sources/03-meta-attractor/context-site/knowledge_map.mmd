@@ -1,0 +1,78 @@
+%% Mermaid knowledge map of the Meta‑Attractor
+graph TD
+  A[Meta‑Attractor]
+  M[Minds]
+  I[Institutions]
+  C[Culture/Media]
+  T[Material/Tech]
+
+  A --- M
+  A --- I
+  A --- C
+  A --- T
+
+  subgraph Dynamics
+    D1[Proxy/KPI]
+    D2[Goodhart: Metric Collapse]
+    D3[Instrumental Convergence]
+    D4[Capture & Rule‑Rewriting]
+    D5[Lock‑in & Basin Depth]
+    D6[Present‑Bias & Acceleration]
+    D7[Ontological Capture]
+    D8[Legibility Bias]
+  end
+
+  M --> D1
+  I --> D4
+  C --> D1
+  T --> D6
+  D8 --> D7
+  D1 --> D7
+  D1 --> D2 --> D4 --> D5
+  D3 --> D4
+  D6 --> D5
+  D5 -.shrinks alternatives.-> A
+
+  subgraph Today’s Loops
+    L1[Growth–Finance]
+    L2[Attention Economy]
+    L3[Political Money]
+    L4[Credential–Status]
+    L5[Carbon Lock‑in]
+    L6[Security Dilemma]
+    L7[AI Objective Proxy]
+  end
+  A -.examples.-> L1
+  A -.examples.-> L2
+  A -.examples.-> L3
+  A -.examples.-> L4
+  A -.examples.-> L5
+  A -.examples.-> L6
+  A -.examples.-> L7
+
+  subgraph Anti‑Attractor Patterns
+    P1[Multi‑Objective Gates]
+    P2[Tripwires & Kill‑Switches]
+    P3[Buffers & Slack]
+    P4[Polycentric Oversight + Sortition]
+    P5[Provenance & Transparency]
+  end
+  P1 -->|resists| D2
+  P2 -->|halts| D6
+  P3 -->|dampens| D5
+  P4 -->|limits| D4
+  P5 -->|counters| C
+  P1 -->|restores| D8
+
+  subgraph Sequence
+    S1[Recognize]
+    S2[Slow/Cap]
+    S3[Align]
+    S4[Coordinate]
+    S5[Transform]
+  end
+  S1 --> S2 --> S3 --> S4 --> S5
+  S3 --> P1
+  S2 --> P2
+  S4 --> P4
+  S5 --> P3

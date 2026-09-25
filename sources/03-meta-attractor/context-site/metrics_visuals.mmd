@@ -1,0 +1,50 @@
+%% Mermaid mini-visuals for diagnostics
+
+%% Proxy–Welfare Coupling (PWC) concept
+flowchart LR
+  F[Proxy f] -->|optimize| O[Operations]
+  O -->|outcomes| W[Welfare W]
+  style W fill:#e6f7ff,stroke:#39f
+  style F fill:#fff7e6,stroke:#f90
+  note1{{"As intensity ↑, correlation ρ(W,f) can ↓ and turn negative"}}
+  O --- note1
+
+%% Proxy Dominance Index (PDI) concept
+flowchart LR
+  M[Managers] -->|weights| D[Decisions]
+  F2[Proxy weight wf] --> D
+  N[Non-proxy weight wnp] --> D
+  note2{{"High wf with low/negative PWC ⇒ high PDI (risk)"}}
+  D --- note2
+
+%% Slack Coefficient (SC) components
+flowchart TD
+  K[Capacity K] --> S1[Resource Slack (K-L)/K]
+  L[Load L] --> S1
+  VAR[Variability σ_L] --> S2[Variability Penalty exp(-σ_L/(L+ε))]
+  TOPT[T_opt] --> S3[Time Scale Safety T_opt/(T_opt+τ_dec)]
+  TAU[Decision Latency τ_dec] --> S3
+  S1 --> SC[(SC)]
+  S2 --> SC
+  S3 --> SC
+  note3{{"Range (0,1]; gate scaling on SC≥threshold"}}
+  SC --- note3
+
+%% PDI pie (illustrative weights)
+pie title PDI Weights
+  "Proxy weight (wf)" : 80
+  "Non-proxy weight (wnp)" : 20
+
+%% PWC vs PDI quadrant
+quadrantChart
+  title PWC vs PDI Risk Zones
+  x-axis Low PDI --> High PDI
+  y-axis Negative PWC --> Positive PWC
+  quadrant-1 Safe-ish
+  quadrant-2 Watch (overweighted proxy)
+  quadrant-3 Danger (proxy tyranny)
+  quadrant-4 Mixed
+  point 1: (0.2, 0.6)
+  point 2: (0.8, 0.7)
+  point 3: (0.85, -0.2)
+  point 4: (0.4, -0.1)

@@ -1,0 +1,2 @@
+- [生生不息 / 道理 project framing](project_ssbx_framing.md) — wenyan-as-computation kernel; 名实合一 default; 证 = manifest, not derive
+- [生生不息 corpus file map](reference_ssbx_corpus.md) — paths to v11/v12 distill, yesterday's kernel layers, formal/SSBX Lean modules
