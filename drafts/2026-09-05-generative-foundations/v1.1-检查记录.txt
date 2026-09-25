@@ -1,5 +1,5 @@
 Unified version v1.1 verification
-2026-09-05T17:28:16.013342+00:00
+2026-09-05T18:34:16.202478+00:00
 
 PASS | WHITEPAPER-v1.1.md math delimiters
 PASS | WHITEPAPER-v1.1.md fenced blocks
@@ -44,7 +44,7 @@ PASS | Updated formal version locator exists
 PASS | Ell typo and editorial phrase fixed
 PASS | Research precedent names present
 PASS | Previously unused references cited in body
-PASS | Manifesto original plus exactly two inserted paragraphs
+PASS | Manifesto two insertions and approved Datong replacement are reversible
 PASS | Manifesto published-status notes moved to README
 PASS | Three archived source hashes
 PASS | Regeneration exact boundary witness and prior-payment feasibility
@@ -59,9 +59,9 @@ PASS | Regeneration model cashflow, supply and budget premises
     "sha256": "e4d82f563b3d2ea144ecf1330daa5a9a98ad2f28c0abc73e5311b2c0989647b8"
   },
   "宣言-v1.1.md": {
-    "characters": 1940,
-    "han_characters": 1628,
-    "lines": 83,
-    "sha256": "ec858632fdbc05a9d26dbbdc934ecad1ada9537c9a36d722caf5ae1921e391b8"
+    "characters": 2192,
+    "han_characters": 1849,
+    "lines": 85,
+    "sha256": "a5b70a7cf389752a488b9de747f32c6da69e659a48a986f780ee96456537d8fe"
   }
 }

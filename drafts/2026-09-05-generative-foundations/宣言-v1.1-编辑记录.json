@@ -1,6 +1,6 @@
 {
-  "schema": "manifest-preservation-edit-record/v1",
-  "verified_at_utc": "2026-09-05T17:20:43.253535+00:00",
+  "schema": "manifest-preservation-edit-record/v2",
+  "verified_at_utc": "2026-09-05T18:33:45.447359+00:00",
   "base": {
     "path": "/Users/ren/Downloads/智能向善，天下生生.md",
     "sha256": "3d90d093b011f850f54ca31db824bb7476b53a845d6e35815ce514fe7b8d2f78",
@@ -8,9 +8,9 @@
   },
   "output": {
     "path": "/Users/ren/theories/drafts/2026-09-05-generative-foundations/宣言-v1.1.md",
-    "sha256": "ec858632fdbc05a9d26dbbdc934ecad1ada9537c9a36d722caf5ae1921e391b8",
-    "bytes": 5578,
-    "han_characters": 1628
+    "sha256": "a5b70a7cf389752a488b9de747f32c6da69e659a48a986f780ee96456537d8fe",
+    "bytes": 6322,
+    "han_characters": 1849
   },
   "edits": [
     {
@@ -24,16 +24,31 @@
       "anchor": "不以局部之胜关闭天下之可能。",
       "inserted_text": "\n\n这项共同工作也首先接受自己的原则。研究应当向事实开放，决定应当说明理由，异议应当能够改变行动；成员的生活需要受到珍重，资源与权力需要接受问责。以共同未来为名作出的限制，应当让受影响者看见它、能够追问它，并保有修正、重开和接续的实际道路。",
       "paragraph": "这项共同工作也首先接受自己的原则。研究应当向事实开放，决定应当说明理由，异议应当能够改变行动；成员的生活需要受到珍重，资源与权力需要接受问责。以共同未来为名作出的限制，应当让受影响者看见它、能够追问它，并保有修正、重开和接续的实际道路。"
+    },
+    {
+      "operation": "replace_exact_block",
+      "old_text": "真正理性的秩序，必须使每一个局部的发展，不以破坏整体的延续为代价。\n\n这便通向古老而又全新的理想：**大同世界**。\n\n大同不是所有人思想一致，也不是由一个中心控制所有生活。大同意味着，天下虽有差异，却不以差异为敌；人们虽有竞争，却不以毁灭他人的生活基础为胜利；群体虽有自身利益，却能够共同守护一个高于局部争夺的公共世界。\n\n大同之中，可以有无数不同的道路。\n\n有人探索宇宙，有人恢复森林；有人创造机器，有人照料生命；有人追求卓越，有人安静生活；有人建立严谨而勤奋的共同体，有人创造自由、艺术与游戏的世界。\n\n大同不是取消差异，而是使差异不必通过征服彼此才能存在。\n\n",
+      "new_text": "每个人的生活都值得珍重，而每个人的发展，也依赖我们共同生活的世界。我们应当使共同条件支持个体的自由与繁荣，也使个体的创造、参与与彼此照料，不断丰富共同生活。\n\n当不同需要发生冲突，我们需要理解彼此的处境，寻找尽可能相互成就的安排。知识、智能与合作，还使我们能够改变这些冲突赖以形成的条件，让今天难以兼得的好事，成为明天共同拥有的可能。\n\n**古老的大同理想，正为这样的共同生活提供了深远的方向。**\n\n“天下为公”，使我们将共同世界放在视野之中；“讲信修睦”，使人与人的关系建立在可信的承诺与彼此关照之上；对不同年龄、处境和能力者的照料，则让天下的繁荣落实为每个人真实的生活。\n\n在智能时代，我们愿沿着这一方向继续创造：使文明积累的知识与生产能力，成为人人可以获得的生活条件；使人拥有发展自身、参与共同生活的时间与自由；使需要照护的人得到照护，愿意探索的人能够探索，不同的天性与志趣都有展开的空间。\n\n有人探索宇宙，有人恢复森林；有人创造机器，有人照料生命；有人共同求知，有人经营花园、艺术与游戏。各自的人生可以不同，彼此的创造却能够丰富共同世界。\n\n**我们所追求的大同，就在这样的生活中不断展开：人人有所依，也各有可成为；彼此能够相成，共同世界也因而生生不息。**\n\n",
+      "authorization": "Ren confirmed the proposed individual–shared world–Datong passage and requested committing first, then editing.",
+      "source_note": "当代展开的经典依据见《礼记·礼运》：https://zh.wikisource.org/zh-hans/禮運"
     }
   ],
-  "algorithm": "Decode exact UTF-8 bytes without newline normalization; apply each insertion after its unique anchor in order; compare rebuilt UTF-8 bytes to output; reverse insertions in reverse order; compare restored bytes to original.",
+  "algorithm": "Decode exact UTF-8 bytes; apply two unique-anchor insertions, then one exact block replacement; reverse all operations in reverse order to recover the original source bytes.",
   "checks": {
-    "only_two_paragraph_insertions": true,
+    "two_insertions_and_one_authorized_block_replacement": true,
     "forward_byte_identity": true,
     "reverse_byte_identity": true,
+    "outside_replaced_block_matches_pre_revision_commit": true,
     "original_title_retained": true,
     "original_final_line_retained": true,
-    "required_original_phrases_retained": true
+    "harmony_prosperity_stability_unchanged": true,
+    "exploration_example_occurs_once": true
   },
-  "status": "Unpublished editorial version. Additions are AI-assisted wording for Ren to review; no organization or signatory status is asserted."
+  "status": "Unpublished editorial version. Additions are AI-assisted wording for Ren to review; no organization or signatory status is asserted.",
+  "pre_datong_revision": {
+    "commit": "d3c0ef89aa9b1f1c8eb4d620f350a6da083cfa72",
+    "sha256": "ec858632fdbc05a9d26dbbdc934ecad1ada9537c9a36d722caf5ae1921e391b8",
+    "bytes": 5578,
+    "description": "User requested a baseline commit before applying the approved Datong passage."
+  }
 }

@@ -100,12 +100,27 @@ rec=json.loads((BASE/'宣言-v1.1-编辑记录.json').read_text())
 archive=BASE/'../../sources/15-user-provided-2026-09-06/智能向善，天下生生.md'
 original=archive.read_bytes();rebuilt=original.decode('utf-8')
 for e in rec['edits']:
-    assert rebuilt.count(e['anchor'])==1
-    rebuilt=rebuilt.replace(e['anchor'],e['anchor']+e['inserted_text'],1)
+    if e['operation']=='insert_after_unique_anchor':
+        assert rebuilt.count(e['anchor'])==1
+        rebuilt=rebuilt.replace(e['anchor'],e['anchor']+e['inserted_text'],1)
+    elif e['operation']=='replace_exact_block':
+        assert rebuilt.count(e['old_text'])==1
+        rebuilt=rebuilt.replace(e['old_text'],e['new_text'],1)
+    else:
+        raise ValueError('Unknown manifesto edit operation')
 manifest=(BASE/'宣言-v1.1.md').read_bytes()
 restored=manifest.decode('utf-8')
-for e in reversed(rec['edits']): restored=restored.replace(e['anchor']+e['inserted_text'],e['anchor'],1)
-check('Manifesto original plus exactly two inserted paragraphs',len(rec['edits'])==2 and rebuilt.encode('utf-8')==manifest and restored.encode('utf-8')==original)
+for e in reversed(rec['edits']):
+    if e['operation']=='replace_exact_block':
+        assert restored.count(e['new_text'])==1
+        restored=restored.replace(e['new_text'],e['old_text'],1)
+    else:
+        assert restored.count(e['anchor']+e['inserted_text'])==1
+        restored=restored.replace(e['anchor']+e['inserted_text'],e['anchor'],1)
+ops=[e['operation'] for e in rec['edits']]
+check('Manifesto two insertions and approved Datong replacement are reversible',
+      ops==['insert_after_unique_anchor','insert_after_unique_anchor','replace_exact_block']
+      and rebuilt.encode('utf-8')==manifest and restored.encode('utf-8')==original)
 check('Manifesto published-status notes moved to README',all(x not in manifest.decode('utf-8') for x in ['拟议名称','不代表任何组织','未对外发布','AI 协助']))
 
 archive_records=json.loads((BASE/'../../sources/15-user-provided-2026-09-06/入库记录.json').read_text())
