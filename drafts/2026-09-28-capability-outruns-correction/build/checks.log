@@ -1,0 +1,21 @@
+R_cap = 2.5; S = (0.4, 0.4)
+separatrix x_sep(r): [(0, 0.6814), (0.2, 0.5442), (0.4, 0.4), (0.6, 0.2689), (1.0, 0.0942), (1.5, 0.0176)]
+  quadrant check (0.39,0.39) -> L
+  quadrant check (0.1,0.05) -> L
+  quadrant check (0.41,0.41) -> H
+  quadrant check (0.9,1.5) -> H
+lever c: reform at t=0.965, min V = 0.501, floor crossed: False
+lever a: reform at t=0.965, min V = 0.421, floor crossed: False
+lever d: reform at t=0.965, min V = 0.339, floor crossed: False
+lever b: reform at t=0.965, min V = 0.268, floor crossed: True
+  latency lower bound d: ln(a r0/c)/(eps d_eff) = 0.357
+  latency lower bound b: ln(a r0/c)/(eps d_eff) = 1.114
+lever c: largest delay keeping V >= V_min: 2.0; largest masking: 0.75
+lever a: largest delay keeping V >= V_min: 1.8; largest masking: 0.7000000000000001
+lever d: largest delay keeping V >= V_min: 0.6000000000000001; largest masking: 0.45
+lever b: largest delay keeping V >= V_min: none; largest masking: none
+coalition (x0=0.95): restraint alone s*(r0=1.0) = 0.856; ordinary pause 0.550; insulated pause 0.269
+  pause x_p=0.3, r0=1.2, T=40, b_pause=1.0: before H, after L
+  pause x_p=0.6, r0=0.1, T=40, b_pause=1.0: before L, after H
+  pause x_p=0.6, r0=0.1, T=40, b_pause=0.0: before L, after L
+  pause x_p=0.649, r0=1.0, T=40, b_pause=0.0: before H, after L
