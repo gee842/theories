@@ -1,0 +1,161 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,enumitem,microtype,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\title{When Capability Outruns Correction:\\Recursive Capture, Epistemic Lag, and the Case for a Conditional Pause in Frontier AI}
+\author{Yongxu Ren\\Independent Researcher}
+\date{Draft for author review --- 28 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The argument for slowing frontier artificial intelligence is often presented as a prediction of imminent catastrophe. Such a prediction is neither necessary nor, at present, established. A different argument begins with the institutional ability to detect mistakes, revise objectives, and withdraw dangerous systems before irreversible effects. I develop a conditional account of \emph{recursive capture}: a practice succeeds under current selection rules, its success changes those rules in its own favor, and the resulting feedback can persist even as the common conditions supporting participants deteriorate. An elementary dynamical model distinguishes capture from harm, demonstrates path dependence, and shows why convergence to a desirable eventual state does not guarantee a safe transition. A second model shows how exponential growth in relevant capability can outpace the growth of independent assurance, with a finite crossing time even when both improve. These are possibility and conditional results, not estimates of today's catastrophe probability. Their governance implication is a reversible, jointly monitored pause on specified frontier training and deployment transitions whenever credible evidence cannot bound severe risks within the time available to detect and correct failure. The proposal preserves lower-risk applications, defensive research, and independent evaluation. It identifies observations that would weaken the case for restraint and specifies conditions for resumption. The central question is whether institutions retain an effective right to change the direction of optimization after optimization becomes successful.
+\end{abstract}
+
+\noindent\textbf{Keywords:} AI governance; arms races; dynamical systems; adaptive selection; epistemic uncertainty; frontier evaluations; precaution; institutional control.
+
+\section{Introduction: a proposition addressed to both skeptics and advocates}
+
+There are real potential benefits from increasingly capable AI, including scientific assistance, accessibility, and improved public services. There are also substantial uncertainties about the ability to anticipate its behavior, prevent harmful misuse, and govern deployment at scale. The \emph{International AI Safety Report 2026} surveys both capabilities and emerging risks without converting the evidence into a single uncontested timeline or probability of catastrophe \cite{iasr2026}. It would be a mistake to infer from uncertainty that catastrophe is certain. It would also be a mistake to infer that an activity should continue at any speed until catastrophe is proven.
+
+The relevant question is not whether intelligence is good in the abstract. It is whether the institutions choosing, evaluating, and deploying increasingly powerful systems can still detect important failure modes and change course before the consequences of a wrong decision become irreversible. The case for slowing is strongest when three conditions coincide: (i) the marginal capability and reach of systems are increasing faster than independent assurance and response; (ii) competitive rewards favor taking that gap; and (iii) some plausible consequences cannot be repaired after they are detected. These conditions are empirical, contestable, and potentially reversible.
+
+This paper makes four contributions. First, it separates the reproduction of a selection logic from the welfare of those selected. Second, it gives a small model in which success alters future success conditions, without attributing malice to the participants. Third, it formalizes a limited sense in which exponential capability improvement can overtake a slower correction process. Fourth, it turns these results into a governance rule with explicit scope, evidence requirements, and exit conditions. The resulting recommendation is a \emph{conditional pause} on particular frontier transitions, not a ban on ordinary AI research or a claim that every frontier system is unsafe.
+
+The mathematical models establish what can happen under their assumptions. They do not establish that any named developer, government, or model currently satisfies those assumptions. The argument for collective action additionally depends on normative premises: severe irreversible harm deserves special weight; independent scrutiny is valuable; and people affected by an optimization process should retain a meaningful capacity to contest its direction. Those premises are stated rather than smuggled into the equations.
+
+\section{Prior work and the narrower contribution}
+
+Evolutionary games with environmental feedback already analyze coupled changes in strategies and their environments \cite{tilman2020}. Economic accounts of increasing returns and path dependence predate this paper \cite{arthur1989}. Models of AI development races show how competition can reduce safety investment and how incentives can modify that result, while also warning that blunt regulation can suppress beneficial innovation \cite{han2021,cimpeanu2022}. Hendrycks argues that selection across AI systems and organizations can reward undesirable traits under some conditions \cite{hendrycks2023}. None of these insights should be claimed as newly discovered here.
+
+The proposed addition is an explicit chain connecting success-induced changes in selection conditions, institutional memory, deterioration of a common substrate, loss of observability, and the practical time required for correction. In particular, \emph{capture} and \emph{damage} have different thresholds. A system can lock in a practice without being destructive; it can also be headed toward a better equilibrium while crossing a dangerous threshold on the way. The analysis applies to organizations and deployment pipelines even when AI models do not autonomously replicate and even when the models' terminal objectives remain diverse.
+
+\section{Recursive capture in a minimal system}
+
+Let $x\in[0,1]$ denote the share of a practice $E$, and let $r\geq 0$ represent institutional or technical support that disproportionately favors it. A comparison practice $C$ has relative advantage when $r$ is sufficiently small. Consider
+\begin{equation}\label{eq:core}
+\dot x=\kappa x(1-x)(ar-c),\qquad
+\dot r=\varepsilon(bx-dr),
+\end{equation}
+where $a,b,c,d,\kappa,\varepsilon>0$. The first equation represents selection on relative performance. The second represents the conversion of adoption into supportive rules, defaults, infrastructure, or assessment conventions, subject to decay or correction. This conversion need not be deliberate manipulation: trained staff, standard interfaces, dependencies, and ordinary procurement can preserve it.
+
+\begin{definition}
+An instance of \emph{recursive capture} has the causal sequence: present success increases the practice's influence on future selection conditions, which increases the relative future success of similar practices. The use of \emph{attractor} is justified for a particular system only after an attracting region or equivalent persistence has been established; repetition alone is insufficient.
+\end{definition}
+
+Put $R_{\mathrm{cap}}=ab/(cd)$. When $R_{\mathrm{cap}}<1$, every trajectory starting at $0<x(0)<1$ and $r(0)\geq0$ converges to $(0,0)$. When $R_{\mathrm{cap}}>1$, both $L=(0,0)$ and $H=(1,b/d)$ are locally asymptotically stable and an interior saddle $S=(cd/(ab),c/a)$ separates their basins. The case $R_{\mathrm{cap}}=1$ is a nonhyperbolic boundary case and is not used for the bistability claim. These are standard feedback dynamics, not a novel theorem about real AI.
+
+For completeness, $r(t)\leq r(0)e^{-\varepsilon dt}+(b/d)(1-e^{-\varepsilon dt})$. If $R_{\mathrm{cap}}<1$, eventually $ar-c<0$ by a fixed margin, and $d\log[x/(1-x)]/dt=\kappa(ar-c)$ implies $x\to0$. For $R_{\mathrm{cap}}>1$, local stability follows from the Jacobian; the interior determinant is negative. Moreover,
+\begin{equation}\label{eq:potential}
+\Phi(x,r)=axr-cx-\frac{ad}{2b}r^2,qquad
+\dot\Phi=\kappa x(1-x)(ar-c)^2+\varepsilon\frac{a}{b}(bx-dr)^2\geq0.
+\end{equation}
+Boundedness and the invariance principle rule out a nontrivial recurrent attractor in this particular two-dimensional system; the saddle's stable manifold divides the two basins. Notice that $\Phi$ is a mathematical potential for selection dynamics, \emph{not} aggregate welfare.
+
+In the instantaneous-rule approximation $r=bx/d$, the unstable threshold is $x_*=1/R_{\mathrm{cap}}$. In the full system, the current share $x$ is not enough to predict the future: two systems with the same present participants but different inherited $r$ can have different destinations. Replacing leaders or models therefore need not replace the selection environment that promoted them.
+
+\section{Why a successful system can undermine its substrate}
+
+Let $V>0$ measure a specified common maintenance condition, such as integrity of a critical service, resource renewal, or effective independent correction. These are distinct empirical variables in real studies and should not casually be collapsed into one welfare index. For the thought experiment, set
+\begin{equation}\label{eq:substrate}
+\dot V=V\left[\rho\left(1-\frac{V}{K}\right)-hx\right],\qquad \rho,K,h>0.
+\end{equation}
+Here $h$ represents a harmful externality that must be established separately; competition alone does not imply $h>0$. If both practices share an absolute payoff term $g(V)$, then $\pi_C=g(V)$ and $\pi_E=g(V)+ar-c$ still give $\pi_E-\pi_C=ar-c$. Absolute conditions can deteriorate while the same relative practice remains selected.
+
+If $(x,r)\to H$, the scalar comparison principle gives $V\to0$ for $h\geq\rho$ (exponential decay for $h>\rho$, slower boundary decay for $h=\rho$). For $0<h<\rho$, $V\to K(1-h/\rho)>0$; if $x\to0$, $V\to K$. Thus $R_{\mathrm{cap}}>1$ is a threshold for the \emph{possibility} of sustained capture, while $H_{\mathrm{loss}}=h/\rho$ governs eventual depletion \emph{conditional on} high capture. The mathematical possibility
+\begin{equation}
+\dot\Phi\geq0\quad\text{while}\quad V\to0
+\end{equation}
+does not imply that every locked-in innovation is harmful. It demonstrates that local improvement according to endogenous selection criteria does not guarantee protection of the conditions on which that selection depends.
+
+For a functional floor $0<V_{\min}<K$, a sufficient forward-invariance condition is $V(0)\geq V_{\min}$ and
+\begin{equation}\label{eq:viability}
+x(t)\leq\bar x\leq\frac{\rho(1-V_{\min}/K)}{h}\quad\text{for all }t\geq0.
+\end{equation}
+At the boundary $V=V_{\min}$ this makes $\dot V\geq0$. Such a bound is restrictive and illustrative; absence of the bound does not prove that failure occurs. Crucially, a reform can eventually lower $x$ yet do so only after $V$ has fallen below the functional floor. Policies must be assessed over their \emph{transition paths}, not only by their predicted final equilibria. If substrate failure changes the dynamics, the equations should be stopped at the first functional crossing rather than extrapolated beyond their valid regime.
+
+\section{Cross-domain reinforcement, observability, and epistemic lag}
+
+The feedback need not live within one market. A developer's commercial success can fund evaluation infrastructure; evaluation standards can influence procurement; procurement can fund the next generation of development. To illustrate the possibility without treating mere resemblance as causal evidence, let $z\geq0$ record small deviations in the activity of several such channels, and linearize near a low-capture configuration as $\dot z=(B-D)z+O(\|z\|^2)$, with nonnegative cross-channel reinforcement matrix $B$ and positive diagonal decay matrix $D$. Under the usual irreducibility conditions for a positive system, the origin is locally stable if the spectral radius $\rho_{\rm sp}(D^{-1}B)<1$ and has a growing direction if it exceeds one. In the symmetric two-channel example with decay one and mutual coupling $g$, the eigenvalues are $-1+g$ and $-1-g$. Each isolated channel decays, yet the connected system grows for $g>1$. This is a standard local threshold, not evidence that every real interconnection amplifies danger: boundedness, inhibitory links, and institutional responses can stop global spread. The empirical burden is to identify actual channels by which one domain's success changes another's selection rules.
+
+For a decision to be correctable, consequences must first be representable and observable. Let the underlying state be $\omega$ and the entire information available at a decision point be $y=\mathcal O_m(\omega)$, where $m$ is an institutional measurement and reporting structure. If $\mathcal O_m(\omega_1)=\mathcal O_m(\omega_2)$ but the one-step safe action sets are disjoint, then no decision rule using only $y$ can guarantee safety in both states. A randomized rule does not help: its support would have to lie in the empty intersection. Additional independent observations, reversible probing, or a common safe action would defeat this impossibility claim. More powerful optimization on the \emph{same} insufficient observations does not.
+
+This distinguishes two mechanisms. \emph{Practical closure} raises the cost of keeping alternatives alive. \emph{Epistemic closure} prevents harms and alternatives from reaching decision makers in a usable form. Faster model-assisted evaluation can improve the second mechanism if it supplies genuinely independent evidence. It can worsen it if benchmark design, auditing, deployment, and appeals become dependent on the same models or incentives. An ``independent'' evaluator must be independent with respect to the relevant failure mode, funding incentives, test data, access, and power to trigger corrective action; an organizational label alone is inadequate.
+
+Now define $C(t)>0$ as a \emph{normalized challenge index}: the scope of behaviors, autonomy, access, and diffusion that an assurance process must cover. Define $A(t)>0$ in the same units as the challenge for which independent evidence and interventions are adequate. These are conceptual indices, not a proposal that intelligence and safety are each one measurable scalar. Suppose, as a stylized local approximation, $C=C_0 e^{gt}$ and $A=A_0 e^{\alpha t}$, with $g,\alpha\geq0$, and acceptability requires $C/A\leq q_{\max}$. Then
+\begin{equation}\label{eq:crossing}
+q(t)=\frac{C_0}{A_0}e^{(g-\alpha)t},\qquad
+t_*=\frac{\log(q_{\max}A_0/C_0)}{g-\alpha}
+\end{equation}
+if $g>\alpha$ and the system begins inside the acceptable region. Although assurance improves in absolute terms, the ratio crosses its limit in finite time. This is arithmetic conditional on the chosen indices, not evidence that $g>\alpha$ in the real world.
+
+A second constraint is latency. Let $\tau_{\rm eval}$ be the time needed to obtain informative independent evidence, $\tau_{\rm decide}$ the time needed to act on it, and $\tau_{\rm reverse}$ the time needed to withdraw effective exposure. If $T_{\rm irreversible}$ is the earliest credible time at which the relevant harm can no longer be prevented, corrective control requires at least
+\begin{equation}\label{eq:latency}
+\tau_{\rm eval}+\tau_{\rm decide}+\tau_{\rm reverse}<T_{\rm irreversible}.
+\end{equation}
+The times are often uncertain intervals. A release schedule shorter than the evaluation process systematically substitutes absence of observed failures for evidence of their absence. Conversely, if tests and interventions scale sufficiently fast and remain independent, acceleration need not create this lag. A uniform multiplication of \emph{all} dynamical rates merely rescales time; risk arises from changed relative rates, thresholds, reach, and reversibility.
+
+Evidence of rapid improvement in specific agent tasks is relevant to the question but does not settle it. METR has measured an approximately exponential increase in task-completion horizons on its benchmark distribution, while emphasizing that these are primarily clean software, machine-learning, and cybersecurity tasks, are not a measure of general real-world autonomy, and become unreliable above the available task range \cite{metr2025,metr2026}. The claim here is therefore about the \emph{potential for a rate mismatch}, which has to be measured separately for each risk domain. Extrapolating a benchmark curve into a universal catastrophe forecast would exceed the evidence.
+
+\section{Why rivalry can make individually prudent actors move too fast}
+
+Suppose a developer's speed choice creates a private advantage while some costs of error fall on others. The private incentive can favor speed even when collective expected value favors additional assurance. This familiar social dilemma is more difficult when a successful deployment increases resources and influence over the next evaluation standard. Equation~\eqref{eq:core} is a minimal representation of this second step: success does not merely win under fixed rules; it partly makes the subsequent rules.
+
+The pressure need not be a literal contest to build a single artificial general intelligence. It can arise from product market share, state security fears, talent and capital flows, access to compute, and the desire to avoid dependence on a rival. Nor does it prove that every competitor neglects safety. Research on stylized AI races shows heterogeneous outcomes and different effects of sanctions and rewards, including the possibility of excessive restriction \cite{han2021,cimpeanu2022}. The relevant empirical question is whether \emph{current} advantage is converted into weaker future scrutiny and less effective alternatives.
+
+An appeal for one actor to slow down while all others race is strategically weak. The proposal must change the relative rewards and supply credible information about the others' behavior. A limited, reciprocal pause creates time to increase $A$, decrease evaluation latency, and establish verification. It is valuable only to the extent that it does those things; elapsed calendar time has no intrinsic safety benefit. Verification research has identified multiple possible approaches to detecting unauthorized large-scale training, but also emphasizes incomplete coverage, invasiveness, and technical immaturity \cite{wasil2024,verification2025}. ``We can verify a treaty today'' is therefore too strong a claim.
+
+\section{From uncertainty to a decision rule}
+
+A demand for absolute proof of danger before any restraint is especially demanding when the evidence may arrive only after an irreversible event. Yet uncertainty alone never implies ``stop everything.'' Consider a simplified decision: an additional frontier step has incremental expected benefit $B\geq0$ relative to delaying it, while an irreversible outcome would impose incremental loss $L>0$ with probability $p$ during the period at issue. If there is a defensible probability set $p\in[p_-,p_+]$, a worst-case expected-value decision prefers delay when $p_+L>B$, \emph{assuming} delaying avoids that risk and incurs no other cost already omitted from $B$. This is a statement about a specified conservative decision rule, not a measurement of $p$, an endorsement of every upper bound, or a universal moral theorem. Correlated hazards, risks of delay, and option value of further information must be included when relevant.
+
+For high-stakes systems, I propose a stronger procedural rule: before a step substantially expands capability \emph{and} exposure, the proponent should provide an auditable safety case matching the foreseeable risk classes, with independent challenge and a feasible withdrawal path. If decision-relevant states cannot be distinguished, risk bounds cannot be defended, or inequality~\eqref{eq:latency} is credibly violated, pause that specific transition while improving the evidence or reducing its reach. In this formulation, \emph{beyond understanding} means failure to support decisions with reliable observations, calibrated tests, and timely intervention; it does not mean a human must narrate every internal representation of a neural network.
+
+\section{A conditional frontier pause that could actually be implemented}
+
+The object of restraint should be an \emph{exposure-creating transition}, specified in operational terms: for example, a training run plausibly crossing a jointly agreed capability or risk trigger; broad release of a system whose dangerous affordances are unresolved; or granting autonomous access to high-impact infrastructure, replication channels, or critical decision processes. Training compute alone is an incomplete proxy: algorithmic improvements, fine-tuning, inference-time compute, scaffold design, and deployment access can change effective capability. Rules need periodic revision and safeguards against threshold gaming.
+
+An initial agreement can begin among willing major developers and jurisdictions, with an expandable verification perimeter and explicit treatment of nonparticipants. Within it:
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Declare the trigger and preserve evidence.} Register covered training and deployment transitions, record safety-relevant capability changes, and protect data needed for independent assessment. Public summaries can coexist with restricted handling of sensitive details.
+\item \textbf{Pause covered escalation while permitting safety progress.} Continue interpretability, evaluations, model security, defensive applications, lower-risk services, and institution building under controlled access. Distinguish narrow laboratory investigation from irreversible or broad deployment.
+\item \textbf{Give independent evaluators access and standing.} Predefine adversarial tests, incident reporting, the authority to require mitigation, and a path for external complaints. Measure actual correction after identified failures, not merely the number of evaluations performed.
+\item \textbf{Set an exit test rather than a date alone.} Resume a covered step when independent evidence bounds specified harms to an agreed standard, tests remain informative under distribution shift, intervention can beat the relevant harm horizon, and monitoring and rollback have been exercised. Publish the reasons for either release or continued restraint.
+\item \textbf{Make the agreement reciprocal and reviewable.} Use proportionate inspection, confidentiality protection, anti-monopoly provisions, due process, periodic review, and measures against unilateral advantage. A pause that entrenches incumbent developers would reproduce the capture it aims to prevent.
+\end{enumerate}
+
+Different hazards need different evidence standards. A biosecurity misuse assessment, a cyber escalation assessment, and an autonomy or control assessment cannot be compressed into one benchmark score. A general pause triggered by a single scalar ``safety index'' risks concealing the failures it is meant to catch. Institutions must also examine the risks of restraint: concentration of power, lost health or scientific benefits, geopolitical instability, reduced defensive capability, and relocation to less accountable actors. These are real costs in the decision, not rhetorical exceptions.
+
+\section{Discriminating tests and possible refutation}
+
+The recursive-capture explanation should lose force if well-designed studies find that successful deployments do not shift evaluation, procurement, or access rules in their favor after controlling for confounders. A multi-actor sandbox can independently toggle (i) the reward for current performance and (ii) the channel from performance to future rule setting. If toggling (ii) has no mediated effect on persistence, the distinctive capture mechanism adds little. Matching systems on present deployment while varying documented rule histories can test whether institutional memory predicts divergence, although hidden resources and fixed switching costs must also be checked.
+
+The case for a particular slowdown should weaken if independent assurance reliably keeps pace with the relevant capability and exposure measures, severe harms are reversible before their functional threshold, competitors maintain effective scrutiny without common restraint, or delay creates larger plausible irreversible harms. Conversely, evidence that independent tests repeatedly lag release, that discovered hazards fail to affect deployment, or that evaluation and remedy cannot observe the relevant states strengthens the case. These statements specify observations that can change the conclusion. Dismissing contrary evidence as proof that critics have been ``captured'' would itself be an epistemic failure.
+
+Several data streams would make the framework usable: release-to-evaluation delay, time from incident detection to effective mitigation, task-specific capability and reach, rates of deployment despite unresolved findings, evaluator independence and access, alternative providers' ability to survive, and how prior success changes future oversight. Confidential incident data may require trusted access rather than indiscriminate publication. The mathematical parameters in this paper have not been calibrated with these data; numerical thresholds for a real pause cannot be inferred from the equations alone.
+
+\section{Limits and conclusion}
+
+These models are intentionally small. Real AI development includes beneficial feedback, innovation in assurance, multiple competing practices, strategic concealment, state rivalry, unforeseen applications, and public demands for progress. The substrate variable is a device to expose a logical separation, not a quantified prediction of civilization's viability. There is no proof here that current frontier development has already crossed an irreversible boundary, that one policy fits every jurisdiction, or that indefinite cessation is justified.
+
+There is, however, a defensible reason to reject \emph{unconditional} exponential acceleration: the capacity to build and distribute powerful systems and the capacity to understand, challenge, and withdraw them are different processes. When the former outstrips the latter, a race can select for behavior that makes subsequent correction harder. The appropriate response is to slow the particular expansion that creates unbounded exposure, build independent assurance and reciprocal institutions, and resume only when evidence and response capacity have caught up. That position requires neither hostility to AI nor a confident prediction of disaster. It asks that the ability to change our collective course remain real while the stakes and the speed rise.
+
+\section*{Author note on assistance and verification}
+This draft was developed with substantive text-generation assistance from an AI language tool at the author's request. The named human author must independently review and take responsibility for every claim, equation, citation, and policy recommendation before submission. No empirical study or new simulation is claimed in this manuscript. The examples are analytical and conditional.
+
+\begin{thebibliography}{20}\setlength{\itemsep}{1pt}
+\bibitem{arthur1989} W. B. Arthur. Competing technologies, increasing returns, and lock-in by historical events. \emph{The Economic Journal}, 99(394):116--131, 1989. \url{https://doi.org/10.2307/2234208}.
+\bibitem{tilman2020} A. R. Tilman, J. B. Plotkin, and E. Ak\c{c}ay. Evolutionary games with environmental feedbacks. \emph{Nature Communications}, 11:915, 2020. \url{https://doi.org/10.1038/s41467-020-14531-6}.
+\bibitem{han2021} T. A. Han, L. M. Pereira, T. Lenaerts, and F. C. Santos. Mediating artificial intelligence developments through negative and positive incentives. \emph{PLOS ONE}, 16(1):e0244592, 2021. \url{https://doi.org/10.1371/journal.pone.0244592}.
+\bibitem{cimpeanu2022} T. Cimpeanu, F. C. Santos, L. M. Pereira, T. Lenaerts, and T. A. Han. Artificial intelligence development races in heterogeneous settings. \emph{Scientific Reports}, 12, 2022. \url{https://doi.org/10.1038/s41598-022-05729-3}.
+\bibitem{hendrycks2023} D. Hendrycks. Natural selection favors AIs over humans. \emph{arXiv:2303.16200}, 2023. \url{https://arxiv.org/abs/2303.16200}.
+\bibitem{iasr2026} Y. Bengio et al. \emph{International AI Safety Report 2026}. \emph{arXiv:2602.21012}, 2026. \url{https://arxiv.org/abs/2602.21012}.
+\bibitem{metr2025} T. Kwa, B. West, J. Becker, et al. Measuring AI ability to complete long software tasks. METR, 2025. \url{https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/}.
+\bibitem{metr2026} METR. Task-completion time horizons of frontier AI models, updated May 2026. \url{https://metr.org/time-horizons/}.
+\bibitem{wasil2024} A. R. Wasil, T. Reed, J. W. Miller, and P. Barnett. Verification methods for international AI agreements. \emph{arXiv:2408.16074}, 2024. \url{https://arxiv.org/abs/2408.16074}.
+\bibitem{verification2025} M. Baker, G. Kulp, O. Marks, M. Brundage, and L. Heim. Verifying international agreements on AI: Six layers of verification for rules on large-scale AI development and deployment. \emph{arXiv:2507.15916}, 2025. \url{https://arxiv.org/abs/2507.15916}.
+\end{thebibliography}
+\end{document}

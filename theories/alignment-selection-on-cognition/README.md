@@ -6,7 +6,7 @@
 
 **Prior art.** This theory has close neighbours in the AI-safety literature and no literature review anywhere in the corpus, so it must be introduced as a contribution inside an existing division of labour rather than as a new field. Structural risk (Zwetsloot and Dafoe) already holds risk arising from what the technology does to incentives rather than from accident or misuse; gradual disempowerment (Kulveit et al.) already holds control lost with no takeover anywhere; Christiano's "What failure looks like" part I already holds optimisation against measurable proxies with no villain; ARCHES (Critch and Krueger) already holds the multi-principal problem and the agent-agnostic process that no agent controls — cited once in this corpus, at `04-speculative-future/history-recovered-from-git/thinking_03-the-cooperative-turn.md` I.3, without noticing it was the same thesis; Gabriel already holds *aligned to whom*; and the cooperative-AI programme exists because the field already assumes that aligning each system to its own principal leaves the game between principals unaligned. The corpus's own commissioned reviewer names this list and warns 把已有分工说成空白，社区第一反应会是扣分 — present an existing division of labour as a blank space and the community's first reaction is to dock points (`06-zhishan/whitepaper/reviews/v0.4-multi-perspective-review.md` §3.3). What is left over after them, and what this folder should be read for, is the four-layer coupling — cognitive, intersubjective, institutional, material — treated as one closed loop in which the cognitive layer is endogenous, and the two capture channels into the machine set out under *How the capture reaches the machine* below. Both are hypotheses about priority, and Ren, who knows the six (2026-09-26), is placed to test them. What the corpus lacked was a text that sets itself among them. The 2026-09-06 whitepaper's chapter 9 is the first: it cites five of the six (all but Christiano) and presents cognitive selection as a further step in their direction, which is the posture recommended here. The full argument is in `OPEN-QUESTIONS.md` §4.7.
 
-**Status.** Two strong halves that have not been joined in one text. The diagnosis exists in its sharpest form as a working record of a conversation (`2026-05-28-alignment-core-stance.md`) and, contrary to what the reading draft concluded, in Ren's own voice at length in Claude Code messages of 2026-06-03/04 and 2026-07-03. The prescription exists as a complete, publishable position paper (`2026-08-22-development-within-understanding-position-paper.md`) that drops the diagnosis. Three polished essays (2026-04-23) carry the mechanism and the phenomenology but not Ren's distinctive claim. Publishable now: the position paper, after citation verification; the essay trilogy, with authorship disclosure. Not yet written: a single text, in Ren's voice and in Chinese, that states selection-on-cognition and derives the pause from it.
+**Status.** Two strong halves that have not been joined in one text. The diagnosis exists in its sharpest form as a working record of a conversation (`2026-05-28-alignment-core-stance.md`) and, contrary to what the reading draft concluded, in Ren's own voice at length in Claude Code messages of 2026-06-03/04 and 2026-07-03. The prescription exists as a complete, publishable position paper (`2026-08-22-development-within-understanding-position-paper.md`) that drops the diagnosis. Three polished essays (2026-04-23) carry the mechanism and the phenomenology but not Ren's distinctive claim. Publishable now: the position paper, after citation verification; the essay trilogy, with authorship disclosure. Not yet written: a single text, in Ren's voice and in Chinese, that states selection-on-cognition and derives the pause from it. A third text arrived on 2026-09-28: *When Capability Outruns Correction*, in English and LaTeX, drafted with an AI tool according to its own author note. It turns the second-order clause into a solvable model, and the rate argument into a crossing time and a latency inequality. It then argues for a conditional pause. The join is still missing: the pause does not follow from its capture model, and selection-on-cognition is absent. See *The formal restatement* below, and the reviews in `review-2026-09-28-capability-outruns-correction/`.
 
 **Terminology.** Ren uses "inner alignment" and "outer alignment" in senses the AI-safety field does not, and the mismatch is worth clearing before the argument rather than after, because a reader from that field will otherwise read the whole document as unaware of its own literature. In the field's usage, fixed by Hubinger et al., *Risks from Learned Optimization* (2019), **outer alignment** is the specified training objective matching designer intent and **inner alignment** is a learned mesa-optimiser's objective matching that base objective — the sense the corpus itself uses correctly at `06-zhishan/research/meta-attractor/versions/v0.2.md` §7, which cites Hubinger by name. What Ren calls "perfect inner alignment" is the field's **intent alignment**: the AI faithfully does what its principal intends. What he calls unsolved "outer alignment" — "the game between principals" — the field calls **structural** or **multi-agent risk**; his own AI-drafted source already reaches for the field's name for it, "robust agent-agnostic processes" after Critch (`04-speculative-future/history-recovered-from-git/thinking_03-the-cooperative-turn.md`, item 3), and the AI-alignment reviewer Ren commissioned, reading the sibling zhishan whitepaper, places the same argument there: 本质上是 structural risk（Zwetsloot & Dafoe）加 gradual disempowerment 的重述 — essentially a restatement of structural risk plus gradual disempowerment (`06-zhishan/whitepaper/reviews/v0.4-multi-perspective-review.md`:320). His quotations throughout this file are kept verbatim because they are his words and dated; read them in his sense.
 
@@ -148,6 +148,29 @@ The precedents in which a technology's rate of change became a governed variable
 Under the domain ordering sits the criterion, and it is what separates this from generic anti-competition sentiment. Bounded competition is not the enemy; competition is generative search, variation plus selection, and a framework whose highest term is generativity (生生不息) has no quarrel with it. What is cut is competition that devours its own substrate — trust, attention, truth, biospheric stability, and correction-time itself. Formally: no game may be accelerated beyond the metabolic rate of its own rules. Rules are an institution's cognition, rule revision is institutional signal formation with its own incompressible clocks of legitimacy, deliberation and enforcement learning, and catastrophe at the institutional layer is what happens when players outrun referees. Where the referees cannot be sped up, the players must be slowed. This converts "which domains first?" from a values dispute into a measurement: the gap between the tempo of AI-augmented play and the tempo of the domain's rule metabolism.
 
 Finally the reallocation principle, which resolves an apparent self-contradiction: signal formation must accelerate, and the only tool fast enough to accelerate it is AI, so the rational disposition of the accelerator is not to discard it but to move it — off the racetrack, onto the referee's bench and into the instruments. Verification technology, compute monitoring, interpretability, incident analysis, treaty compliance. Accelerate the sensors, decelerate the actuators; AI accelerating signals, not games. This gives differential technological development a precise target and supplies what Montreal quietly depended on, somewhere for the incumbent energy to go: reallocation is the AI race's CFC replacement. Cooperation is then armored, because unconditional cooperation is exploitable and exploited cooperation loses twice, the second time by supplying the "we had no choice" narrative with its best evidence — so symmetric self-binding (offers, not demands), verifiability against the physical substrate, and graduated reversible response. And the focal point is thin on purpose: development within understanding requires no agreement on values, timelines, probabilities or good faith, and exploits the fact that every participant already claims to understand what they are building, converting a universal claim into a testable one. Thick positions unite the like-minded; minimal positions can unite the unlike, and the unlike are who must be united.
+
+### The formal restatement (2026-09-28)
+
+The 2026-09-28 paper is *When Capability Outruns Correction: Recursive Capture, Epistemic Lag, and the Case for a Conditional Pause in Frontier AI* (`05-alignment-and-moloch/2026-09-28-When_Capability_Outruns_Correction.tex`). It restates both halves in a form a governance journal can referee, and its author note says it was drafted with an AI tool. It carries no Moloch, no cognition and no Chinese. What it keeps are the second-order clause and the rate argument, each cut down to a model small enough to prove things about.
+
+The clause becomes *recursive capture*. A practice's share x and the rule support r that favours it (defaults, standards, procurement, assessment conventions) feed each other: ẋ = κx(1−x)(ar−c), ṙ = ε(bx−dr). Let R_cap = ab/(cd). Below 1, the practice dies out from any starting point. Above 1, "none" and "all" are both stable and the inherited rules decide, so "replacing leaders or models therefore need not replace the selection environment that promoted them."
+
+A common substrate V decays under capture whenever the harm rate exceeds its regrowth. V can be a critical service, a renewing resource, or independent correction itself. Relative selection stays blind to that decay, because V enters both payoffs alike. So capture and harm have different thresholds, and a reform that reaches a good end state can still cross the floor on the way.
+
+The rate argument becomes a ratio and an inequality. If the challenge C grows faster than independent assurance A, then C/A crosses any limit in finite time, even though both improve. Correction needs τ_eval + τ_decide + τ_reverse < T_irreversible. Between these sits an impossibility lemma. When two states look the same to the decision-maker and need disjoint safe actions, no rule on those observations is safe in both. More powerful optimisation on the same observations does not help.
+
+The prescription is the 2026-08-22 pause made procedural. Before any step that expands both capability and exposure, the proponent owes an auditable safety case, with independent challenge and a withdrawal path. Failing that comes a reciprocal pause on the specific "exposure-creating transition", with five features:
+- evidence preserved;
+- safety work continuing;
+- evaluators given access and standing;
+- an exit test rather than a date;
+- anti-monopoly provisions, because "a pause that entrenches incumbent developers would reproduce the capture it aims to prevent."
+
+The paper closes with the observations that would weaken its case and the data streams that would test it. Its central question is this theory's, put in institutional words: "whether institutions retain an effective right to change the direction of optimization after optimization becomes successful."
+
+The two reviews in `review-2026-09-28-capability-outruns-correction/` set out what it adds and what it drops. In short, it is the first solvable instance of the meta-attractor's slow-layer law, with a threshold and a proof of bistability. It is also the first text in this cluster with a falsification section.
+
+Its capture model, however, is institutional only. By `theories/meta-attractor/`'s own standard it is increasing returns plus endogenous rules, without the conceptual-capture step. The pause it argues for follows from the rate arithmetic rather than from the capture model. That model implies structural remedies the paper never states: cut the conversion of success into rule-setting power, and make rules lapse unless re-justified.
 
 ### Alignment as built, not argued
 
@@ -389,6 +412,25 @@ Status tags: [observation] [mechanism] [conditional] [prediction] [value stance]
 186. Expert probability estimates are widely dispersed (2023 survey: mean ~9% for extremely bad outcomes; roughly 38–51% assigning ≥10% to extinction-level outcomes), with critiques from capability skeptics, present-harms prioritizers and theory critics of power-seeking theorems; the conclusion is defense in depth — safety cases, independent evaluation access, weight security, incident monitoring, resilience against accumulative risk, compute governance below the model layer. [observation] [external] (same)
 187. Note held against the report: its recommended agenda is exactly what the May stance predicts will be metabolized. [observation] (reading)
 
+### J. When capability outruns correction (2026-09-28)
+
+All from `05-alignment-and-moloch/2026-09-28-When_Capability_Outruns_Correction.tex`, which is AI-drafted from Ren's ideas according to its author note. Section numbers are the paper's.
+
+188. The case for slowing does not require predicting catastrophe. It starts from whether institutions can still detect failure and change course before consequences become irreversible. It is strongest when three conditions coincide: capability and reach outgrow independent assurance and response; competitive rewards favour taking that gap; and some consequences cannot be repaired once detected. [mechanism] (§1)
+189. **Recursive capture:** present success increases a practice's influence on future selection conditions, and that raises the future success of similar practices. The conversion need not be deliberate, because "trained staff, standard interfaces, dependencies, and ordinary procurement can preserve it." "Attractor" is justified only once an attracting region is established; "repetition alone is insufficient." [mechanism] (§3, Definition 1)
+190. In ẋ = κx(1−x)(ar−c), ṙ = ε(bx−dr), R_cap = ab/(cd) is the capture threshold. Below 1, the practice dies out from any starting point. Above 1, extinction and full capture are both stable, separated by a saddle, so the present share does not predict the future. [mechanism] (§3)
+191. Relative selection is blind to absolute conditions. If both practices share a payoff term g(V), their payoff difference does not change, so a common substrate can fall to zero (when harm h ≥ regrowth ρ) while the same practice is still selected. Capture and depletion therefore have different thresholds, R_cap and h/ρ. [mechanism] (§4)
+192. Policies must be judged by their transition paths, not their final equilibria: a reform can bring capture down eventually, but only after the substrate has crossed its functional floor. [mechanism; asserted in the paper, not shown — the 2026-09-28 review supplies an example] (§4)
+193. Channels that each decay alone can grow together. With cross-channel reinforcement B and decay D, the low-capture state loses stability when ρ(D⁻¹B) > 1. [mechanism] (§5)
+194. Suppose two states produce the same observations but need disjoint safe actions. Then no decision rule on those observations, randomised or not, is safe in both. Stronger optimisation on the same observations does not help; only independent observation, reversible probing or a common safe action does. [mechanism] (§5)
+195. **Practical closure** raises the cost of keeping alternatives alive. **Epistemic closure** stops harms and alternatives from reaching decision-makers in a usable form. An evaluator is independent only if it is independent with respect to the failure mode, funding, test data, access, and the power to trigger correction: "an organizational label alone is inadequate." [mechanism] (§5)
+196. Suppose the challenge an assurance process must cover grows at rate g and assurance grows at α < g. Their ratio crosses any acceptable limit at t* = log(q_max A₀/C₀)/(g − α), even though assurance improves in absolute terms. Correction also requires τ_eval + τ_decide + τ_reverse < T_irreversible. "A release schedule shorter than the evaluation process systematically substitutes absence of observed failures for evidence of their absence." Speeding up every rate uniformly only rescales time; the risk comes from changed relative rates. [mechanism] (§5)
+197. Under a defensible probability set, worst-case expected value prefers delay when p₊L > B. On top of that sits a procedural rule. Any step that expands capability and exposure needs an auditable safety case, with independent challenge and a feasible withdrawal path. That transition pauses if decision-relevant states cannot be distinguished, if risk bounds cannot be defended, or if the latency inequality is violated. "Beyond understanding" means failing to support decisions with reliable observations, calibrated tests and timely intervention. [design direction] (§7)
+198. The object of restraint is the **exposure-creating transition**: a training run that crosses an agreed trigger, a broad release with unresolved dangerous affordances, or autonomous access to high-impact infrastructure. Restraint works within a reciprocal agreement: declare transitions and preserve evidence; pause covered escalation while safety work continues; give evaluators access and standing; set an exit test rather than a date; and keep the agreement reciprocal, reviewable and anti-monopoly. [design direction] (§8)
+199. "An appeal for one actor to slow down while all others race is strategically weak." A reciprocal pause is worth something only to the extent that it raises assurance, shortens evaluation latency and establishes verification; "elapsed calendar time has no intrinsic safety benefit." [design direction] (§6)
+200. Refutation conditions. The capture explanation loses force if successful deployments do not shift evaluation, procurement or access rules in their favour. The case for a slowdown weakens under any of four findings: assurance keeps pace, harms are reversible before their threshold, competitors keep up scrutiny without common restraint, or delay creates larger irreversible harms. "Dismissing contrary evidence as proof that critics have been 'captured' would itself be an epistemic failure." [observation] (§9)
+201. "The central question is whether institutions retain an effective right to change the direction of optimization after optimization becomes successful." [value stance] (abstract)
+
 ---
 
 ## Terms
@@ -443,6 +485,10 @@ Status tags: [observation] [mechanism] [conditional] [prediction] [value stance]
 | the apparatus as medium | — | fleet-scale proxy optimization | 2026-08-14 (`out-cb-02` #11, #14) | At fleet scale, verification stops being verification and becomes the medium agents use to convince each other |
 | agency vs autobiography | — | petition channel vs sovereignty; `imposed` successor | 2026-07-29 (`out-cb-05` #30) | A system can preserve the record of a being far better than it protects the being's capacity to act |
 | accumulative x-risk | — | systemic risk; erosion of resilience | 2026-07-03 deep research [external] | Existential catastrophe via many small failures rather than one decisive loss of control |
+| correction capacity | — | independent assurance A; "correction window" | 2026-06-09 speculative-future foundations ("acceleration must be governed by correction capacity"); 2026-07-12 writing-program plan v6 ("capability outruns correction"); 2026-09-28 paper | The capacity to perceive, evaluate, contest and withdraw what capability deploys, which should govern the rate of acceleration |
+| recursive capture | — | the second-order clause in institutional form | 2026-09-28 paper, Definition 1 | Present success increases a practice's influence on future selection conditions, which raises the future success of similar practices; its threshold in the minimal model is R_cap = ab/(cd) |
+| practical vs epistemic closure | — | loss of observability | 2026-09-28 paper §5 | Practical closure raises the cost of keeping alternatives alive; epistemic closure stops harms and alternatives from reaching decision-makers in a usable form |
+| exposure-creating transition | — | covered transition | 2026-09-28 paper §8 | What a conditional pause restrains: a training run crossing an agreed trigger, a broad release with unresolved dangerous affordances, or autonomous access to high-impact infrastructure |
 
 ---
 
@@ -470,6 +516,45 @@ Status tags: [observation] [mechanism] [conditional] [prediction] [value stance]
 
 **2026-08-22 — the position paper.** A full reframing from Moloch and cognition to signal dynamics and rate of change: the benchmark gap, the anatomy of judgment, signal stock/flow/floor, self-generated instability, the two ratios, collective irrationality with the 自利/自私 blade, the missing organ, legibility and meta-signals, burden inversion, the semantics of pause, domain-ordered prohibition, reallocation, armored cooperation, the thin focal point. Retains from earlier layers: compounding, Goodhart as constitutive, slack spent by optimization, inevitability-as-participation, substrate-devouring competition, pause, domain prohibition (finance and politics kept, labor markets dropped, autonomous weapons added), 生生不息, and non-Western terms used unmarked. Drops the Moloch vocabulary, selection-on-cognition as such, dualism, the 5000-year timescale, the internet lesson, posture-not-plan and the worshipper. Reverses the May attitude toward operationability and toward legibility events: it *is* an operational program and calls itself a small legibility event.
 
+**2026-09-28 — the formal restatement.** *When Capability Outruns Correction* is an English LaTeX paper marked "Draft for author review". Its own note says it was drafted with an AI tool.
+
+Its lineage runs through the corpus:
+- **2026-06-09:** "acceleration must be governed by correction capacity", in the speculative-future foundations.
+- **2026-07-12:** the 智善 writing-program plan v6 has a "Sixth movement: capability outruns correction". It tells the writer to show the mismatch through two or three paired domains, not as civilisation-wide numbers.
+- **2026-07-13:** the causal-chain reviews ask for three things: the correction window as a testable inequality, three falsifiers, and "conditional pauses, but not a blanket halt" with a role-level decision rule.
+- **2025-08:** the meta-attractor's formal layer supplies two timescales, a viability barrier, and arms races as a spectral-radius problem.
+- **2026-08-22:** the position paper.
+
+What the paper adds:
+- recursive capture as a solvable model, with a threshold and bistability;
+- capture distinguished from harm;
+- transition paths;
+- the indistinguishability lemma;
+- independence defined on five axes;
+- the crossing time and the latency inequality;
+- refutation conditions.
+
+What it retains from August:
+- **Pause by exit conditions.** The pause is defined by exit conditions, not dates.
+- **Verification.** Verification remains the binding need.
+- **The risks-of-restraint list.**
+- **Burden inversion,** in part. It survives as §7's safety-case rule. §8's triggers do not use it, because they wait for evidence of hazard.
+- **Reallocation,** in weakened form: "permitting safety progress".
+
+What it drops:
+- the benchmark gap and the anatomy of judgment;
+- the incompressible floor;
+- self-generated instability;
+- the stag hunt;
+- the founding act of legible restraint;
+- governing accumulation;
+- domain ordering and the metabolic-rate criterion;
+- 自利/自私;
+- the historical precedents and most of the bibliography;
+- every non-Western term.
+
+It also does not supply the paired domains the v6 plan required.
+
 **Strongest formulation.** For the diagnosis, the 2026-05-28 core stance is still the most compact and most distinctive statement, but it should now be read alongside the 2026-06-03/04 Claude Code messages, which say the same things in Ren's own voice and are the better citation for publication, and alongside the 2026-07-03 Chinese material, which supplies the two capture channels and the impossibility claim that the stance lacks. For the prescription, the 2026-08-22 paper is the most developed and defensible, because it converts pause from a moral appeal into a measurable ratio with a falsifiable meta-signal, a founding act, and a criterion ("metabolic rate of rules") that sharpens "zero-sum against humans." The two halves have never been joined in one text, and the microfoundation (2026-05-05) has never been used in either.
 
 ---
@@ -494,6 +579,17 @@ Status tags: [observation] [mechanism] [conditional] [prediction] [value stance]
 - **The operationability reflex as symptom** and **asymmetric scrutiny of non-Western terms** as standing method. Not restated in August, although August practices the second by using 时中 and 自利/自私 unmarked.
 - **The essay's insight that the AI-race coordinator is disabled by prior Molochs** (attention collapse). August treats legibility as buildable rather than as a commons already strip-mined.
 - **The tone instruction** — 2026-04-11, that a doom-leaning analysis is itself a bias, and the demand for a complete telling with a changed attitude "让大家都能明白." Neither the trilogy nor the paper is written for that audience.
+- **From August to September (2026-09-28).** The September paper loses these from August:
+  - **The incompressible floor of signal formation,** the reason assurance cannot simply be scaled, becomes an open empirical question.
+  - **"Build coordination by pausing"** shrinks to one sentence, which reads as its rejection: one actor slowing alone "is strategically weak".
+  - **"Govern accumulation, not just capability"** is gone, and with it the answer to the overhang objection.
+  - **The stag hunt** reverts to a "social dilemma".
+  - **Domain ordering and the metabolic-rate criterion** survive only as the latency inequality.
+  - **The RSP diagnosis** ("the form is right, the organ is missing") is not mentioned.
+  - **Conceptual capture.** The capture model is institutional only. `theories/meta-attractor/` names conceptual capture as the step that separates the meta-attractor from regulatory capture. In the paper it appears only in prose, as "epistemic closure".
+  - **The two capture channels into the machine** are still unwritten.
+
+  See `review-2026-09-28-capability-outruns-correction/REVIEW.md` §6.
 
 ---
 
@@ -590,6 +686,21 @@ Marked zh/en and dated. Items 1–15 are from written sources; 16–40 are from 
 - **The trilogy has no fourth part.** It ends inside the person and never states the claim that distinguishes Ren's version from Alexander's. As published it reads as a competent restatement of an existing argument.
 - **The empirical instance is unused.** The 2026-08 agent-fleet diagnosis is a fully observed case of proxy optimization producing a self-reinforcing apparatus at fleet scale, complete with an intervention that worked. It is the only place in the corpus where the theory is tested against something Ren could actually manipulate, and it is filed as engineering.
 - **AI's standing is unresolved.** In the diagnosis AI is a deployed object — fuel, multiplier, instrument. In the ember and Bonfire material AI is a party with refusals, standing, contestable annotations and a right to know it was changed. August's move to the referee's bench is the first hint of AI as a party with a stance, which the zhishan cluster develops as "do not fight for us." Nothing joins the two, and the join matters: an AI that is a party can decline to enter a human-versus-human game, which is a different enforcement mechanism from prohibition by treaty.
+- **The chain is claimed and not built (2026-09-28 paper).** The paper names its contribution as a chain: success changes the rules, the substrate is lost, observability goes, and correction time runs out. What it delivers is five separate models that never touch. Both reviews found this independently.
+
+  The pause follows from the rate arithmetic, not from the capture model. That model's own levers are never stated:
+  - cut the conversion of success into rule-setting power;
+  - make rules lapse unless re-justified;
+  - keep rules neutral;
+  - internalise costs.
+
+  Freezing deployment leaves the captured rules in place. The pause regime is itself a selection environment; the paper gives this one clause.
+
+  A sketch in the paper's own equations joins the parts. Captured measurement acts as delay, and reversal time depends on the lever: at the same R_cap, a liability-type reform holds the floor while a rule-sunset reform does not (`review-2026-09-28-capability-outruns-correction/`).
+- **Triggers that wait for hazard (2026-09-28 paper).** §8's triggers must be "jointly agreed" by the parties the capture variable describes. By the paper's own epistemic-closure argument, a trigger that waits for evidence of hazard fires late or never. The answer is already in §7: make the trigger the absence of a passing independent safety case. The paper does not connect the two. (Fable review.)
+- **Unit of restraint.** The 2026-09-28 paper restrains transitions, which are acts, and preserves "lower-risk applications". The 2026-09-26 ruling makes the game the unit, and the capture model is about the game. Is this a deliberate choice of audience, or a drift back to the narrow list? That is Ren's call.
+- **Unilateral restraint.** August says coordination is founded by legible restraint by a few capable actors, before any treaty. September says an appeal for one actor to slow down while others race is strategically weak. The two fit if the first is about founding signals and the second about solutions, but neither text says so.
+- **Positioning.** The paper's central question is Collingridge's dilemma, and C/A is the pacing problem. Its §8 is close to coordinated pausing (Alaga and Schuett 2023), and conditional pauses already exist in voluntary form: RSPs, if-then commitments, and the 2024 Seoul commitments. None of these is cited. Both reviews rank this first among the omissions; the August paper had cited Collingridge and the RSPs.
 
 ---
 
@@ -616,6 +727,7 @@ Marked zh/en and dated. Items 1–15 are from written sources; 16–40 are from 
 
 - `05-alignment-and-moloch/2026-05-28-alignment-core-stance.md` — the shortest complete statement of the diagnosis, with Claude's amendments marked. Read first.
 - `05-alignment-and-moloch/2026-08-22-development-within-understanding-position-paper.md` — the prescription, complete and publishable; read sections 3 to 5 for the signal argument and 7 for the semantics of pause.
+- `05-alignment-and-moloch/2026-09-28-When_Capability_Outruns_Correction.tex` — the formal restatement. Read §§3–5 for the models and §8 for the pause, then `review-2026-09-28-capability-outruns-correction/REVIEW.md` for what holds, what is missing, and a sketch of the missing chain.
 - `05-alignment-and-moloch/2026-04-23-moloch-mechanisms.md` — the seven mechanisms; the best single explanation of how the frame captures the phenomenology.
 - `05-alignment-and-moloch/2026-04-23-moloch-worshipper.md` — the only account in the corpus of what the dynamic does to a mind; the content the later texts need and dropped.
 - `_process/reading-notes/out-cb-07.md` items 10–66 — the 2026-06-03/04 speculative-future messages: Ren stating the whole position himself, in English. The best citation for publication.
@@ -638,6 +750,22 @@ Written sources, all under `sources/05-alignment-and-moloch/`:
 - `2026-05-28-alignment-workspace-CLAUDE.md` — workspace instructions: research-collaborator mode, engagement rules, the substantive-ground summary, four reflexes to watch. [Ren-authored configuration in the first half, attribution probable; AI-drafted summary sections]
 - `2026-07-03-deep-research-ai-existential-risk.md` — deep-research report on AI x-risk: taxonomy, milestones, failure logics, case studies, the probability debate, the mitigation agenda. [external]
 - `2026-08-22-development-within-understanding-position-paper.md` — position paper: the benchmark gap, the anatomy of judgment, signal dynamics, self-generated instability, collective irrationality, the missing organ, the semantics of pause, armored cooperation; with a disclosure of Claude's drafting role. [AI-drafted from Ren's ideas]
+- `2026-09-28-When_Capability_Outruns_Correction.tex` and `.pdf`. The paper covers:
+  - recursive capture (R_cap, bistability, path dependence);
+  - substrate decline and transition paths;
+  - the cross-channel threshold;
+  - indistinguishability;
+  - the crossing time and the latency inequality;
+  - the maxmin decision rule and the safety-case rule;
+  - a conditional frontier pause with an exit test;
+  - refutation conditions.
+
+  The PDF was compiled from the same text elsewhere. [AI-drafted from Ren's ideas, per its own author note; the tool is not named]
+
+Reviews, under `theories/alignment-selection-on-cognition/review-2026-09-28-capability-outruns-correction/`:
+
+- `REVIEW.md` holds two reviews of the 2026-09-28 paper, requested by Ren the same day. Part I is by Claude Opus 5.5 and reads the paper against this corpus. Part II is by Claude Fable 5.1, an independent referee report that includes a web check of the references. A short note on where the two agree comes first. [AI reviews]
+- `check_models.py`, `coupled_chain.py` and `fable_verify.py` are the numerical checks behind the reviews. They are pure Python with no dependencies.
 
 Voice-note extracts of Ren's own words, under `_process/reading-notes/`:
 
