@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=2 by 1, horizontal sep=0.55cm, y descriptions at=edge left}, width=0.565\columnwidth, height=3.6cm,
+  xmin=0, xmax=1.5, ymin=-0.3, ymax=5.6, xtick={0,0.5,1,1.5}, ytick={0,1,2,3,4,5},
+  xlabel={hub coupling $\theta$}, tick label style={font=\scriptsize}, label style={font=\scriptsize}, title style={font=\scriptsize, yshift=-1ex}]
+\nextgroupplot[title={(a) $\varphi=0.1$}, ylabel={domains captured}]
+\addplot[gray, thin, dotted] coordinates {(1,-0.3) (1,5.6)};
+\addplot[gray, thin, dotted] coordinates {(0.30,-0.3) (0.30,5.6)};
+\addplot[cD, thick, mark=*, mark size=0.9pt] coordinates {(0.0,0) (0.05,0) (0.1,0) (0.15,0) (0.2,0) (0.25,0) (0.3,0) (0.35,0) (0.4,0) (0.45,0) (0.5,0) (0.55,0) (0.6,0) (0.65,0) (0.7,0) (0.75,0) (0.8,0) (0.85,0) (0.9,0) (0.95,0) (1.0,0) (1.05,5) (1.1,5) (1.15,5) (1.2,5) (1.25,5) (1.3,5) (1.35,5) (1.4,5) (1.45,5) (1.5,5)};
+\label{pl:up}
+\addplot[cH, thick, densely dashed, mark=o, mark size=1.1pt] coordinates {(0.0,0) (0.05,0) (0.1,0) (0.15,0) (0.2,0) (0.25,0) (0.3,5) (0.35,5) (0.4,5) (0.45,5) (0.5,5) (0.55,5) (0.6,5) (0.65,5) (0.7,5) (0.75,5) (0.8,5) (0.85,5) (0.9,5) (0.95,5) (1.0,5) (1.05,5) (1.1,5) (1.15,5) (1.2,5) (1.25,5) (1.3,5) (1.35,5) (1.4,5) (1.45,5) (1.5,5)};
+\label{pl:down}
+\nextgroupplot[title={(b) $\varphi=0.2$}]
+\addplot[gray, thin, dotted] coordinates {(1,-0.3) (1,5.6)};
+\addplot[cD, thick, mark=*, mark size=0.9pt] coordinates {(0.0,0) (0.05,0) (0.1,0) (0.15,0) (0.2,0) (0.25,0) (0.3,0) (0.35,0) (0.4,0) (0.45,0) (0.5,0) (0.55,0) (0.6,0) (0.65,0) (0.7,0) (0.75,0) (0.8,0) (0.85,0) (0.9,0) (0.95,0) (1.0,0) (1.05,5) (1.1,5) (1.15,5) (1.2,5) (1.25,5) (1.3,5) (1.35,5) (1.4,5) (1.45,5) (1.5,5)};
+\addplot[cH, thick, densely dashed, mark=o, mark size=1.1pt] coordinates {(0.0,5) (0.05,5) (0.1,5) (0.15,5) (0.2,5) (0.25,5) (0.3,5) (0.35,5) (0.4,5) (0.45,5) (0.5,5) (0.55,5) (0.6,5) (0.65,5) (0.7,5) (0.75,5) (0.8,5) (0.85,5) (0.9,5) (0.95,5) (1.0,5) (1.05,5) (1.1,5) (1.15,5) (1.2,5) (1.25,5) (1.3,5) (1.35,5) (1.4,5) (1.45,5) (1.5,5)};
+\end{groupplot}
+\end{tikzpicture}
