@@ -1423,3 +1423,5 @@ Noted 2026-09-25: two of the three files imported on 2026-09-06 were already in 
 | Meta-Attractor 理论：竞争性文明如何被自我强化的二阶动力学捕获.md | [副本](15-user-provided-2026-09-06/Meta-Attractor 理论：竞争性文明如何被自我强化的二阶动力学捕获.md) | 用户提供的 Downloads 文件 |
 
 《生生不息论》与既存 [2026-07-14 归档版本](07-shengsheng-buxi/downloads-2026-07-08/2026-07-14-生生不息论.md) 逐字节一致，本次复用该副本。
+
+Added 2026-10-02: [16-claude-code-directions/2026-10-02-paper-v3-spine-direction.md](16-claude-code-directions/2026-10-02-paper-v3-spine-direction.md). Ren's direction for v3 of the IASEAI paper: the theory of why, not only control and correction; show, in a form intellectuals cannot simply refute, the invariant constraints of a system within a bigger system and why the current trajectory of winning digs our own graves. Verbatim, with an assistant-authored note and gloss.

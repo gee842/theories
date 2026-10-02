@@ -1,0 +1,395 @@
+\documentclass[letterpaper]{article} % DO NOT CHANGE THIS
+\usepackage[submission]{aaai2027}  % DO NOT CHANGE THIS
+\usepackage[hyphens]{url}  % DO NOT CHANGE THIS
+\usepackage{graphicx} % DO NOT CHANGE THIS
+\urlstyle{rm} % DO NOT CHANGE THIS
+\def\UrlFont{\rm}  % DO NOT CHANGE THIS
+\usepackage{natbib}  % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\usepackage{caption} % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\frenchspacing  % DO NOT CHANGE THIS
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{arrows.meta,positioning,calc}
+
+\pdfinfo{
+/TemplateVersion (2027.1)
+}
+
+\setcounter{secnumdepth}{2}
+
+\definecolor{cD}{HTML}{0072B2}
+\definecolor{cE}{HTML}{D55E00}
+\definecolor{cS}{HTML}{009E73}
+\definecolor{cP}{HTML}{56B4E9}
+\definecolor{cF}{HTML}{CC79A7}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\newcommand{\hull}{\operatorname{hull}}
+\newcommand{\core}{\operatorname{core}}
+\newcommand{\dD}{\mathsf{D}}
+\newcommand{\dE}{\mathsf{E}}
+\newcommand{\dS}{\mathsf{S}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\Valarm}{V_{\mathrm{alarm}}}
+\newcommand{\Vmin}{V_{\min}}
+\newcommand{\mfl}{m_{\mathrm{fl}}}
+
+\title{No Viable Winner: Competitive Selection, Captured Correction,\\ and the Necessity of Cooperation in AI Development}
+\author{Anonymous Submission}
+\affiliations{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Frontier AI is developed in a race whose participants depend on shared conditions, such as functioning institutions, a reliable information environment and the capacity to detect and correct error, and whose winners help build the evaluations and rules that judge the next round. We ask what this arrangement selects for, and show under explicit, testable conditions that it cannot correct itself. Selection on relative performance does not register conditions that all participants share, so restraint that sustains them is displaced whatever the participants value; the more weight the contest places on winning, the sooner this holds. The obvious remedy, a corrector that makes costs return to those who cause them, is itself part of the selection environment: control over it is selected in the largest participants, and investment in correcting it is selected against. As AI lowers the cost of control, the independent correction needed to keep evaluation uncaptured rises, and correction that grows at less than half that rate is overtaken; after that, harm can cross a critical floor before any alarm. Each remedy now relied on leaves a necessary condition unmet. The conditions of any viable trajectory can be established only jointly, and they leave every participant better off. In this model, cooperation is not an ideal but a necessity.
+\end{abstract}
+
+\section{Introduction}
+
+``But who will guard the guardians?'' \citep{hurwicz2008}. Every serious proposal for making advanced AI safe adds a guardian: independent evaluators, standards and certification, safety institutes, AI systems that judge other AI systems, liability and regulation. Each assumes that the guardian stays independent of what it guards. Meanwhile frontier development is organized and financed as a contest, and leading governments describe it as ``a race to achieve global dominance'' \citep{whitehouse2025} or as international competition in which first-mover advantage is to be seized \citep{statecouncil2017}. This paper asks what such a race does to the conditions its participants share, and to the guardians meant to protect them.
+
+Our answer has three parts. \emph{First order:} competition selects on relative performance, and a condition that every participant shares cancels from every comparison; restraint that sustains it is therefore displaced whatever the participants value, and the more a contest rewards winning, the sooner (Section~\ref{sec:first}). \emph{Second order:} the remedy is a corrector that makes costs return to whoever causes them, but the corrector is itself a selection environment into which success converts; control over it is selected in the largest participants, and investment in correcting it is selected against (Section~\ref{sec:second}). \emph{Rate and evidence:} AI lowers the cost of control, so the independent correction required to keep evaluation uncaptured rises; once it is outpaced, captured evaluation can let harm cross a critical floor before any alarm fires (Sections~\ref{sec:second}--\ref{sec:silent}). Together these show why the trajectory of winning fails (Theorem~\ref{thm:fail}), why each remedy now relied on fails with it (Table~\ref{tab:remedies}), and what any viable trajectory requires (Theorem~\ref{thm:invariants}). The requirements bind every participant at once and raise every participant's absolute payoff, so cooperation follows as a necessity rather than a hope (Corollary~\ref{cor:coop}).
+
+\paragraph{Method.} Every claim is a conditional statement proved with standard tools: replicator and payoff-monotone dynamics, the Price equation, linear public-goods games and comparison theorems for monotone systems. Nothing depends on attributing motives. A reader who rejects a conclusion must therefore reject a condition. We state each condition as something observable and pair it with present evidence and with the observations that would refute it (Section~\ref{sec:evidence}). The analysis is not a forecast of catastrophe. It sorts trajectories into viable and non-viable ones.
+
+\paragraph{Contributions.} (1) A first-order result connecting relative selection, the weight a contest places on winning, and the viability of a shared host. (2) Second-order results in one model: selection for control over correctors, with a size threshold; correction as a selected-against public good; and the minimum rate of independent correction, which must grow at least half as fast as AI lowers the cost of control. (3) Conditions under which captured evaluation lets harm cross a floor unseen. (4) A theorem that the trajectory of winning fails, with the failure mode of seven current remedies, and a theorem stating invariants that are indispensable and jointly sufficient in the model, from which the necessity of cooperation follows.
+
+\paragraph{Statement of Contributions.} The results are new in this setting and are obtained with standard tools, which we cite; the first-order mechanism is classical, and our contribution lies in connecting it to the selection of correctors, to the rate at which AI changes the cost of control, and to the conditions for viable trajectories. Some conceptual antecedents appeared in informal, non-peer-reviewed essays. All formal content is new and unpublished.
+
+\section{Related Work}\label{sec:related}
+
+\paragraph{Races and cooperation in AI.} Competitive pressure can erode safety investment \citep{armstrong2016,askell2019,dafoe2020}; AI can cause harm by changing incentives \citep{zwetsloot2019}, gradually displacing human influence \citep{christiano2019,kulveit2025}, or through multi-principal dynamics that per-system alignment leaves untouched \citep{critch2020,critch2021,hendrycks2023,hammond2025}. We add the selection of correctors and a rate condition.
+
+\paragraph{Relative selection.} Selection rewards relative, not absolute, performance \citep{alchian1950}; in finite populations evolutionary stability maximizes relative payoff \citep{schaffer1988}, and imitation leads to relative-payoff-maximizing behavior \citep{vegaredondo1997}. Positional concern undermines shared goods \citep{hirsch1976,frank1985}. The commons and its governance \citep{hardin1968,olson1965,ostrom1990}, the second-order free-rider problem of sanctioning \citep{oliver1980,yamagishi1986,heckathorn1989}, which reputation can stabilize under some conditions \citep{panchanathan2004}, and environmental feedback in evolutionary games \citep{weitz2016,tilman2020} supply our first-order and correction results; viability theory supplies the language of floors \citep{aubin1991,rockstrom2009}.
+
+\paragraph{Guardians, capture and certification.} Regulators can be captured \citep{stigler1971,laffont1991,dalbo2006,carpenter2013}, including without intent \citep{kwak2014}; a monopoly certifier may reveal little \citep{lizzeri1999}, and raters paid by those they rate face conflicts that inflate ratings \citep{bolton2012}; rankings reshape what they measure \citep{espeland2007,campbell1979,manheim2018}. Niche construction is selected when its benefits are appropriable \citep{krakauer2009,lehmann2008,gerlee2015,teece1986}, and rules that select future rules have been studied as stable constitutions and co-evolving institutions \citep{barbera2004,acemoglu2012,bowles2003,campbell1974}. Our field model uses threshold cascades and $k$-cores \citep{granovetter1978,morris2000,kempe2003,seidman1983} and monotone systems \citep{hirsch1985,smith1995}.
+
+\paragraph{AI evaluation.} Evaluators depend on developer access \citep{longpre2024}; leaderboards can favor providers who test many private variants \citep{singh2025}; model judges favor their own outputs \citep{panickssery2024} and share errors \citep{kim2025,goel2025}; and oversight proposals place AI in the evaluator's seat \citep{irving2018,christiano2018,leike2018,bai2022,burns2024,greenblatt2024}.
+
+\section{A Field Inside a Host}\label{sec:model}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[font=\scriptsize, box/.style={draw, rounded corners=2pt, align=center, inner sep=3pt}]
+\node[box, minimum width=7.9cm, minimum height=0.55cm, fill=black!4] (host) at (0,2.25) {Host: shared conditions $V$, viable only above a floor $\Vmin$};
+\node[box, fill=cD!10, text width=2.9cm] (field) at (-2.15,0.55) {Field: developers selected on relative performance};
+\node[box, fill=cE!10, text width=2.9cm] (corr) at (2.15,0.55) {Correctors: evaluation $\dE$, rules and liability $\dS$};
+\node[box, dashed, text width=2.9cm] (ind) at (2.15,-0.85) {independent correction $d$, outside the field};
+\draw[-{Stealth[length=4pt]}] ([xshift=-6pt]field.north) -- node[left, align=right]{depletion $he$,\\ not priced} ([xshift=-6pt]field.north |- host.south);
+\draw[-{Stealth[length=4pt]}] ([xshift=10pt]field.north |- host.south) -- node[right, align=left]{$G(V)$: common,\\ cancels} ([xshift=10pt]field.north);
+\draw[-{Stealth[length=4pt]}] ([xshift=6pt]host.south -| corr.north) -- node[right, align=left]{reports $\tilde V$,\\ masked by $m$} ([xshift=6pt]corr.north);
+\draw[-{Stealth[length=4pt]}, cE, thick] ([yshift=5pt]field.east) -- node[above]{rule support} ([yshift=5pt]corr.west);
+\draw[-{Stealth[length=4pt]}] ([yshift=-5pt]corr.west) -- node[below]{liability $\tau$} ([yshift=-5pt]field.east);
+\draw[-{Stealth[length=4pt]}] (ind.north) -- (corr.south);
+\end{tikzpicture}
+\caption{The model. Developers deplete a host they all depend on; selection compares them on relative performance, from which the host cancels (Section~\ref{sec:first}). Correctors can make costs return through liability, but success converts into rule support in the correctors, and reports of the host are masked by captured evaluation (Sections~\ref{sec:second}--\ref{sec:silent}).}
+\label{fig:schematic}
+\end{figure}
+
+\paragraph{Host.} A condition $V\in[0,K]$ is shared by every participant: the integrity of critical services, a reliable information environment, institutional and scientific capacity for independent correction. It regenerates logistically and is depleted by the field's activity $E$:
+\begin{equation}\label{eq:V}
+\dot V=V\big[\rho(1-V/K)-hE\big],\qquad \rho,h,K>0.
+\end{equation}
+For constant $E$ with $hE<\rho$, $V\to V^\ast=K(1-hE/\rho)$; for $hE\ge\rho$, $V\to0$. The host functions only above a floor $\Vmin\in(0,K)$.
+
+\begin{definition}[Viability]\label{def:viable}
+A trajectory of the field is \emph{viable} if $V(t)\ge\Vmin$ for all $t\ge0$.
+\end{definition}
+
+Every participant persists only while the host does, so viability is a constraint on every trajectory of the field, not one payoff to be traded against others. This is the sense in which the field is a subsystem of a larger system \citep{aubin1991,rockstrom2009,wced1987}, and the question of this paper is which trajectories of competitive AI development are viable.
+
+\paragraph{Field.} Carriers $k=1,\dots,n$ (developers or, more generally, reproducible ways of succeeding carried by organizations and their successors) hold shares $p_k$ of the field's activity: compute, capital, users, talent. Carrier $k$ runs a fraction $e_k\in[0,\bar e]$ of its activity in ways that externalize load onto the host: deploying ahead of evaluation, omitting safeguards, entering contests in which capability converts directly into advantage. Each unit brings a private advantage $\nu>0$, so restraint costs $\nu$ per unit. The field's load is $E=\sum_kp_ke_k$. Carrier $k$'s absolute payoff is
+\begin{equation}\label{eq:pi}
+\pi_k=\phi_k+\nu e_k-\tau e_k+G(V),
+\end{equation}
+where $\phi_k$ collects everything else, $G$ is nondecreasing, and $\tau\ge0$ is a liability imposed by correctors. With $\tau=0$ we call $\hat e=\bar e$ the \emph{race strategy}.
+
+\begin{definition}[Relative selection]\label{def:relsel}
+A selection rule $\dot p=F(p,\pi)$ is \emph{relative} if $F(p,\pi+\kappa\mathbf 1)=F(p,\pi)$ for all $\kappa\in\mathbb R$, and \emph{payoff-monotone} if, for carriers $k,l$ present, $\dot p_k/p_k-\dot p_l/p_l$ has the sign of $\pi_k-\pi_l$.
+\end{definition}
+
+Replicator dynamics, pairwise imitation \citep{schlag1998}, logit choice on payoff differences and market-share competition driven by relative profitability \citep{alchian1950} are relative and payoff-monotone. Capital, users, talent and compute flow toward the developers that are ahead: this is what ``winning'' means.
+
+\paragraph{Correctors.} Correction makes costs return: an evaluator reports the host's condition, and rule-makers impose a liability $\tau$, either in advance or when a reported condition $\tilde V$ falls to an alarm level $\Valarm\in(\Vmin,K)$. Correctors are not outside the field. Developers fund evaluators, supply their access and tools, author benchmarks and standards, and increasingly supply the models that judge. We represent this by a field of selection domains, in which de facto power over rules is explicit \citep{acemoglu2008}: in each domain $i$ (development $\dD$, evaluation $\dE$, rules and liability $\dS$, and others) a share $x_i$ of consequential decisions follows the dominant practice, and success converts into rule support $r_i$ that favors it:
+\begin{align}
+\dot x_i&=\kappa_ix_i(1-x_i)(a_ir_i-c_i),\label{eq:x}\\
+\dot r_i&=\varepsilon_i\Big(\textstyle\sum_jb_{ij}x_j-d_ir_i\Big).\label{eq:r}
+\end{align}
+Under baseline rules ($r_i=0$) the practice carries a relative cost $c_i>0$ in domain $i$, which rule support offsets at rate $a_i$; $b_{ij}\ge0$ converts success in $j$ into rule support in $i$ (funding, personnel, authorship, data and infrastructure dependence, access terms); and $d_i$ is the rate at which that support is corrected or decays. The normalized conversion $R_{ij}=a_ib_{ij}/(c_id_i)$ and, for a set $\cC$ of domains, the inbound conversion $s_i(\cC)=\sum_{j\in\cC}R_{ij}$ decide capture: a domain whose row sum $\sum_jR_{ij}$ is below one cannot be captured whatever happens elsewhere, and a domain with $s_i(\cC)>1$ is captured once $\cC$ is captured and it has been seeded ($x_i>0$). Appendix~\ref{app:field} gives these and the other field results. In the corrector domains, capture means $x_\dS$ of rule-making exempts or accommodates the practice, so the effective liability is $\tau(1-x_\dS)$, and $x_\dE$ of evaluation is conducted within the practice's lineage of funding, tooling, data and models.
+
+\section{First Order: Selection Does Not See the Host}\label{sec:first}
+
+\begin{lemma}[Blindness]\label{lem:blind}
+Under a relative rule, the trajectory of shares is unchanged by any term common to all payoffs, in particular by $G(V(t))$, whatever the path of $V$. Under a payoff-monotone rule, a common term never changes which of two carriers grows relative to the other.
+\end{lemma}
+
+The lemma has a one-line proof, and its force lies in its generality: it holds for every relative rule, whatever the carriers believe, and for every path of the host.
+
+\begin{proposition}[Selection drives the field toward the floor]\label{prop:first}
+Let $\tau=0$, let selection be payoff-monotone, and let carriers differ only in their load ($\phi_k$ equal). (i) If $e_k>e_l$, then $p_k/p_l$ increases for as long as both are present, along every path of $V$, including paths on which $V$ falls below $\Vmin$. (ii) Under replicator dynamics, if a carrier using the race strategy is present, $E(t)\to\bar e$ and $\limsup_tV(t)\le K(1-h\bar e/\rho)^+$. (iii) Hence if
+\begin{equation}\label{eq:C0}
+h\bar e>\rho\,(1-\Vmin/K),
+\end{equation}
+$V$ eventually falls below the floor. None of this depends on how much any carrier values $V$.
+\end{proposition}
+
+What carriers value decides which strategies they try, not which ones grow. A developer that restrains itself because it values the shared condition is displaced by one that does not, and the composition of the field comes to reflect the race strategy. Intentions persist in what developers believe and say; what grows is decided by what they do.
+
+Selection is the limit of a contest in which only winning counts. Suppose $n$ symmetric developers choose $e_k$ to maximize $u_k=\pi_k+\lambda(\pi_k-\bar\pi)$, where $\bar\pi$ is the mean payoff and $\lambda\ge0$ is the \emph{weight on winning}: rank-based prizes, first-mover advantages, network effects, and strategic rivalry in which falling behind is costly. Let $G(V)=\omega V$ and $h\bar e<\rho$, and define $\theta=\omega Kh/(\rho\nu)$, the value to the whole field of a unit of restraint relative to its private cost.
+
+\begin{proposition}[The weight on winning]\label{prop:game}
+(i) $G$ cancels from the relative term, and restraint is a dominant strategy if $1+\lambda(n-1)/n<\theta/n$ and depletion if the inequality is reversed. (ii) If $\theta>1$, joint payoff is maximized by full restraint; the equilibrium is full depletion whenever $\lambda>\bar\lambda=(\theta-n)/(n-1)$, at every $\lambda\ge0$ when $n\ge\theta$. (iii) In that equilibrium every developer, the eventual winner included, has a lower absolute payoff than under joint restraint, by $\nu\bar e(\theta-1)$. (iv) If $h\bar e>\rho(1-\Vmin/K)$, the equilibrium host lies below the floor although no developer chose it.
+\end{proposition}
+
+The result is the commons \citep{hardin1968,olson1965} with an explicit weight on winning, and its message is in the comparative statics: the threshold $\bar\lambda$ falls with the number of contenders and the equilibrium tips as the weight on winning rises. Under selection (Proposition~\ref{prop:first}) only differences count, which corresponds to $\lambda\to\infty$; this is the classical finding that selection maximizes relative, not absolute, payoff \citep{schaffer1988,vegaredondo1997}. Nothing in the result accuses anyone: the developer that wins is worse off, in absolute terms, than it would have been under joint restraint.
+
+\paragraph{When the first order fails.} Lemma~\ref{lem:blind} needs the host to enter payoffs in common. If depletion returns to the carrier that caused it, through liability or through unequal exposure, $V$ enters payoff differences and selection can favor restraint, as in game--environment feedback \citep{weitz2016,tilman2020}. Making consequences return to their source is exactly the corrector's task. The question is whether correctors survive the selection they correct.
+
+\section{Second Order: The Corrector Is Selected}\label{sec:second}
+
+\paragraph{Control over correctors.} Rule support can be incidental, as when benchmarks are built from deployed systems, or cultivated. Carriers differ in \emph{conversion capacity} $q\ge0$: investment in drafting standards, building evaluation tooling, authoring benchmarks, funding evaluators and securing integrations. A unit of capacity adds conversion $\hat b_{ij}$, and a fraction $\chi\in[0,1]$ of the resulting support, the \emph{appropriability}, is keyed to the carrier that produced it (standards referencing its interfaces, evaluations run on its tooling). Let a carrier have share $s$ of decisions, distributed by a profile $\bar y$ ($y=s\bar y$), and capacity cost $C(q)=fq+\gamma q^2/2$. Its payoff relative to an otherwise identical carrier with $q=0$, averaged over a selection horizon, is
+\begin{equation}\label{eq:W}
+W(q)=\chi q\,y^\top My-C(q),\qquad M_{ij}=c_iL_i\hat R_{ij},
+\end{equation}
+where $\hat R_{ij}=a_i\hat b_{ij}/(c_id_i)$ and $L_i\in[0,1)$ is the share of the steady-state return realized within the horizon, decreasing in $d_i$ (Appendix~\ref{app:proofs}).
+
+\begin{proposition}[Control is selected in the largest carriers]\label{prop:control}
+(i) The local selection gradient is $W'(q)=\chi s^2\,\bar y^\top M\bar y-f-\gamma q$. Under faithful transmission with variation, mean capacity rises when $W$ is increasing on the trait support. (ii) Capacity pays only above the size threshold $s^\ast=\sqrt{f/(\chi\,\bar y^\top M\bar y)}$; the selected capacity is $q^\ast=(\chi s^2\bar y^\top M\bar y-f)^+/\gamma$. A carrier with $s<s^\ast$ that carries capacity is selected against, so capacity cannot invade from rarity. (iii) The return rises with $\chi$ and with every $\hat b_{ij}$, and falls with every correction rate $d_i$; it vanishes if $\chi=0$. (iv) With share $s$ in each domain of a set $\cS$, $\hat R$ equal to $\hat\eta$ on and $\hat\varphi$ off the diagonal and $c_iL_i=cL$, the return is $\chi cL\,s^2|\cS|(\hat\eta+(|\cS|-1)\hat\varphi)$, superlinear in $|\cS|$ at fixed $s$ when $\hat\varphi>0$; at fixed total size $Y=s|\cS|$ it equals $\chi cL\,Y^2(\hat\varphi+(\hat\eta-\hat\varphi)/|\cS|)$, which rises with scope only if $\hat\varphi>\hat\eta$.
+\end{proposition}
+
+Control over correctors amplifies dominance rather than creating it: it is selected in carriers that are already large, and in proportion to the square of their size. The condition has the form of Hamilton's rule with appropriability in the role of relatedness \citep{hamilton1964,price1970}, and is closest to appropriability conditions for niche construction \citep{krakauer2009,lehmann2008,gerlee2015}.
+
+\paragraph{Correction of correctors.} Let carriers also differ in an investment $u\ge0$, at private cost $C_u(u)$ increasing, that raises the correction rate $d$ of rule support in the corrector domains, restoring baseline rules for everyone.
+
+\begin{proposition}[Correction is not supplied from inside]\label{prop:correction}
+(i) Among carriers of the same practice, those investing more in correction are selected against under any payoff-monotone rule, whatever the effect of correction on the field. (ii) For a carrier that holds rule support, correction lowers its own absolute payoff as well, so incumbents oppose it. (iii) In absolute terms a challenger invests only if its own share of the benefit exceeds the marginal cost, so dispersed challengers free-ride. (iv) Correction whose benefit is keyed to the corrector, because it installs the corrector's own rule support, is control in the sense of Proposition~\ref{prop:control}: it is selected above the size threshold, and it replaces one captured configuration with another.
+\end{proposition}
+
+Correction can rise transiently by riding on the success of the practice it favors, the between-group term of the Price equation. Once that practice dominates, it is the incumbent, and part (ii) applies. Independent correction, which restores baseline rules and is keyed to no one, is a second-order public good \citep{oliver1980,yamagishi1986,heckathorn1989}. Selection inside the field does not sustain it; it must be supplied from outside.
+
+\paragraph{How much independent correction, and how fast.} Let a set $\cC$ of domains be captured by a dominant carrier with success profile $y$, let independent correction act at a uniform rate $d$ in the corrector domains, take the long-horizon limit ($L_i=1$) and quadratic cost ($f=0$), and let capacity adjust to $q^\ast=\chi\hat Y/(\gamma d)$ with $\hat Y=\sum_{ij}y_ia_i\hat b_{ij}y_j$. Write $A=a_\dE\sum_{j\in\cC}b^0_{\dE j}$ and $Z=a_\dE\chi\hat Y\sum_{j\in\cC}\hat b_{\dE j}/\gamma$ for the incidental and cultivated conversion into evaluation.
+
+\begin{proposition}[Required independent correction, and its rate]\label{prop:rate}
+(i) Evaluation is certified uncaptured, $s_\dE(\cC)<1$, if and only if $d>d^\ast=\big(A+\sqrt{A^2+4c_\dE Z}\big)/(2c_\dE)$. (ii) $d^\ast\ge A/c_\dE$, the requirement computed without second-order selection, with equality only if $\chi\hat Y=0$; $d^\ast$ rises with appropriability, with the dominant carrier's size and scope, and as the cost of control $\gamma$ falls. (iii) If AI assistance lowers the cost of control as $\gamma(t)=\gamma_0e^{-gt}$ and independent correction grows no faster than $d(t)=d_0e^{\alpha t}$ with $\alpha<g/2$, the certificate fails for all $t>t^\ast=\max\{0,2\ln(d_0/S)/(g-2\alpha)\}$, where $S=\sqrt{Z_0/c_\dE}$; under quasi-static adjustment a seeded evaluation domain is then captured. (iv) Conversely, if $\alpha\ge g/2$ and $d_0>A/c_\dE+S$, the certificate holds for all $t$. The same holds for $\dS$.
+\end{proposition}
+
+With a fixed marginal cost $f>0$ of the first unit of capacity, $A$ is replaced by $A-a_\dE f\sum_{j\in\cC}\hat b_{\dE j}/\gamma$ and the same argument applies above the size threshold. Independent correction does double duty: it shortens the life of rule support and it shrinks the capacity that selection cultivates, which is why it needs to grow only half as fast as the cost of control falls. Splitting a dominant carrier into $k$ equal parts divides cultivated conversion by $k$, because the return is quadratic in own share.
+
+\paragraph{What AI changes.} AI moves each quantity above. It lowers the cost of what control consists of: models already write evaluation datasets \citep{perez2023}, and machine-written public comments and letters to legislators pass as human \citep{weiss2019,kreps2024}. So $\gamma$ falls and $d^\ast$ rises; an assistant faithfully serving its principal lowers exactly this cost, so alignment to operators raises the correction the field needs, unless the same capability raises independent correction at least half as fast. General-purpose providers are present in many domains, which raises the return to control (Proposition~\ref{prop:control}iv). Model judges put the evaluated lineage in the selector's seat, and models trained on the same outputs carry shared biases into evaluators of every lineage (Section~\ref{sec:silent}).
+
+\section{Silent Descent}\label{sec:silent}
+
+Reports average over evaluators. A fraction $x_\dE$ shares the evaluated lineage and reports the condition a fraction $\beta_{\mathrm{in}}$ of the way toward full health; the rest are formed on shared material and are biased by $\beta_{\mathrm{out}}\le\beta_{\mathrm{in}}$:
+\begin{equation}\label{eq:mask}
+\tilde V=V+m(K-V),\qquad m=x_\dE\beta_{\mathrm{in}}+(1-x_\dE)\beta_{\mathrm{out}}.
+\end{equation}
+The alarm fires at the first $t$ with $\tilde V(t)\le\Valarm$. Let $\mfl=(\Valarm-\Vmin)/(K-\Vmin)$.
+
+\begin{proposition}[Detection]\label{prop:detect}
+(i) The alarm fires only once $V\le(\Valarm-mK)/(1-m)$, a level that falls as $m$ rises. (ii) \emph{Silent crossing.} If $m(t)>\mfl$ whenever $\Vmin\le V(t)\le\Valarm$, the alarm does not fire before $V$ falls below the floor. (iii) \emph{Permanent silence of moderate harm.} If $V$ decreases to $V^\ast\in(0,\Valarm)$ and $m(t)\ge\bar m>(\Valarm-V^\ast)/(K-V^\ast)$ for all $t$, the alarm never fires; the masking required vanishes as $V^\ast\uparrow\Valarm$. (iv) If $V\to0$ and eventually $m\le m_1<\Valarm/K$, the alarm fires. (v) If $V$ reaches $\Valarm$ at $t_A$ and then declines as $\dot V=-\ell V$ with $m$ constant, the alarm is delayed by $\ell^{-1}\ln\big[(1-m)\Valarm/(\Valarm-mK)\big]$, which diverges as $m\uparrow\Valarm/K$.
+\end{proposition}
+
+Diverse panels reduce some error: with equicorrelated errors of variance $\sigma^2$ and correlation $r$, averaging $n$ evaluators leaves variance $\sigma^2[r+(1-r)/n]$. But diversity of family alone does not bound shared systematic masking $\beta_{\mathrm{out}}$, and a report that mixes lineages of unknown composition cannot be recalibrated without an independent channel (Remark~\ref{rem:indist}, Appendix~\ref{app:proofs}). Detection is not correction: once the alarm fires, deciding takes $\tau_d$ and reversing takes $\tau_r$, and both must elapse before the floor is crossed.
+
+\begin{figure}[t]
+\centering
+\input{fig-rate.tex}
+\caption{(a) Required independent correction $d^\ast(t)$ (\ref{pl:dstar}) as AI lowers the cost of control ($g=0.2$), against supplied correction growing at $\alpha=0.05<g/2$ (\ref{pl:dlow}), which is overtaken at $t^\ast\approx6.8$, and at $\alpha=0.12>g/2$ (\ref{pl:dhigh}), which is not. (b) The host $V$ (\ref{pl:Vtrue}) under a spreading race strategy, and reported conditions when evaluation is captured before the harm appears, with $\beta_{\mathrm{in}}=0.5>\mfl$ (\ref{pl:V5}) and $\beta_{\mathrm{in}}=0.3$ (\ref{pl:V3}). Arrows: alarms with independent evaluation ($t\approx37$), at $\beta_{\mathrm{in}}=0.3$ ($t\approx45$), and at $\beta_{\mathrm{in}}=0.5$ ($t\approx63$), after the floor (dotted) is crossed at $t\approx53$ (tick). Parameters in Appendix~\ref{app:numerics}.}
+\label{fig:rate}
+\end{figure}
+
+Figure~\ref{fig:rate}b shows the three regimes. Independent evaluation raises the alarm sixteen time units before the floor. Masking below $\mfl$ halves that window. Masking above it raises the alarm ten time units after the floor is crossed. When evaluation is captured only after the harm appears, the alarm fires almost on time: the order of capture and evidence decides the outcome.
+
+\section{Why the Trajectory of Winning Fails}\label{sec:fail}
+
+\begin{theorem}[No viable winner]\label{thm:fail}
+Assume (C0) the race strategy can push the host below its floor, Eq.~(\ref{eq:C0}); (C1) relative selection with $\tau=0$ unless an alarm fires; (C2) appropriable control, $\chi>0$, held by a carrier above the size threshold; (C3) correctors inside the field, with independent correction growing at $\alpha<g/2$ while AI lowers the cost of control at rate $g$; and (C4) captured evaluation masks with $\beta_{\mathrm{in}}>\mfl$. If the corrector domains are captured before the host reaches the alarm level, the host crosses its floor before any alarm, and every carrier ends with a lower absolute payoff than under joint restraint whenever $\theta>1$. If instead $\beta_{\mathrm{in}}\le\mfl$, the alarm is delayed by Proposition~\ref{prop:detect}(v), and the floor is crossed unless $\tau_d+\tau_r$ fits the remaining window and the captured rule-making domain does not re-absorb the liability (Proposition~\ref{prop:reform}).
+\end{theorem}
+
+The order of events is not left to chance. Proposition~\ref{prop:rate} makes the capture of correctors arrive within a time $t^\ast$ that shrinks as AI lowers the cost of control faster. Nothing in the host's dynamics brings the evidence forward. Acceleration therefore favors capture before evidence.
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{4.7cm}>{\raggedright\arraybackslash}p{6.6cm}>{\raggedright\arraybackslash}p{2.2cm}@{}}
+\toprule
+Remedy now relied on & What it changes & Condition it leaves in place, and the consequence & Result \\
+\midrule
+Align each system to its operator & Systems do what their principals intend & C1--C3 untouched; faithful assistance lowers the cost of control $\gamma$, raising $d^\ast$ and bringing capture forward & Prop.~\ref{prop:rate} \\
+Voluntary self-governance & Developers restrain themselves and fund oversight & C1: restraint is displaced; C3: correction supplied from inside is selected against, and incumbents oppose it & Props.~\ref{prop:first}, \ref{prop:correction} \\
+Evaluation dependent on developers, model judges & More evaluation, faster & C3, C4: evaluation funded, accessed or formed within the field converts success into masking; harm is reported late or never & Props.~\ref{prop:rate}, \ref{prop:detect} \\
+Open release, fragmentation & Lowers concentration & Lowers $d^\ast$ (the return to control is quadratic in size) but raises the number of contenders, which lowers the weight on winning at which depletion dominates; correction is still not supplied & Props.~\ref{prop:game}, \ref{prop:correction}, \ref{prop:rate} \\
+Win first, then govern & A single winner internalizes more & C1 holds throughout the race; the winner is the carrier selected for control; after winning its correctors are inside, and reforms that leave inbound conversion above one are re-absorbed & Props.~\ref{prop:first}--\ref{prop:control}, \ref{prop:reform} \\
+Regulate once harm is evident & Correction triggered by evidence & C4: evidence is delayed or silenced, and moderate harm is hidden by small bias; decision and reversal times must still fit the window & Prop.~\ref{prop:detect} \\
+Pause that freezes shares & Halts the race & Rule-making continues to convert frozen shares into support; above a threshold share the pause completes capture unless rule-making is insulated & Prop.~\ref{prop:pause} \\
+\bottomrule
+\end{tabular}
+\caption{Why current remedies fail. Each leaves at least one condition of Theorem~\ref{thm:fail} in place. None is useless; each is insufficient alone, and some make a condition worse.}
+\label{tab:remedies}
+\end{table*}
+
+\section{What Has to Change}\label{sec:change}
+
+The conditions of Theorem~\ref{thm:fail} can be negated one by one. Their negations are the invariants a viable trajectory must respect.
+
+\begin{theorem}[Invariants of a viable trajectory]\label{thm:invariants}
+Consider: (I1) \emph{consequences return}: a liability $\tau>\nu$ on depletion is enacted, in advance for anticipated harms and upon the alarm for unanticipated ones; (I2) \emph{independent correctors}: in $\dE$ and $\dS$, $d(t)>d^\ast(t)$, which under AI-driven decline of $\gamma$ at rate $g$ requires independent correction to grow at least at rate $g/2$; (I3) \emph{independent evidence}: $m(t)<\mfl$, which requires $\beta_{\mathrm{out}}<\mfl$ as well as an uncaptured $\dE$, with decision and reversal inside the window; (I4) \emph{before capture}: (I1)--(I3) are in force before the corrector domains are captured. (a) \emph{Sufficiency.} Under (I1)--(I4) the effective liability $\tau(1-x_\dS)$ exceeds $\nu$ after a finite time, depletion is selected against, $E(t)\to\min_ke_k$, and the host stays above its floor: from the start for anticipated harms, and after an alarm that fires above the floor for unanticipated ones. (b) \emph{Indispensability.} For each of (I1)--(I3) there are parameters satisfying (C0) and the other two under which the host crosses its floor; and there are parameters under which (I1)--(I3) all come into force, but only after the corrector domains are captured, and the host crosses its floor.
+\end{theorem}
+
+\begin{corollary}[Cooperation is necessary]\label{cor:coop}
+No carrier can establish (I1)--(I4) by its own choices: its unilateral restraint is selected against (Proposition~\ref{prop:first}); its unilateral investment in correction is selected against and, if it funds the corrector, is itself conversion from the field into the corrector; and an evaluator it funds or forms belongs to its lineage. Each invariant is a property of the selection environment shared by all carriers. It can be established only by an arrangement that binds all of them, including the states in which they operate, and places correction outside their competition. When $\theta>1$ the arrangement raises every carrier's absolute payoff (Proposition~\ref{prop:game}iii), and once (I1) is in force restraint becomes each carrier's best response, so the arrangement is self-enforcing for as long as (I2)--(I4) keep the corrector independent.
+\end{corollary}
+
+The corollary applies at every level at which a contest rewards relative standing. Between firms, the weight on winning comes from market structure; between states, from strategic rivalry, and Proposition~\ref{prop:game} applies with states as players. The invariants translate into instruments, each tied to a result:
+\begin{itemize}
+\item \emph{Make consequences return in advance.} Liability, conditions on deployment and internalized costs act at once on the margin of selection (I1); evidence-triggered regulation arrives too late where evidence is masked (Proposition~\ref{prop:detect}).
+\item \emph{Fund correction outside the competition and let it grow with capability.} Pooled funding at arm's length, mandated access and safe harbors for evaluators \citep{longpre2024}, and evaluators that are neither funded nor formed by those they evaluate keep the corrector's row sum below one (I2, I3). The required growth rate is half the rate at which AI lowers the cost of control (Proposition~\ref{prop:rate}).
+\item \emph{Make rule-making non-appropriable.} Interface-neutral standards, rotating held-out benchmarks, and conflict-of-interest rules for drafters set $\chi\to0$, which removes cultivated conversion and reduces $d^\ast$ to the requirement without second-order selection (Proposition~\ref{prop:control}).
+\item \emph{Fix the rules before capture.} Thresholds, triggers and the authority to act must be agreed while the evidence that would justify them can still be seen (I4); a pause must insulate rule-making while it lasts (Proposition~\ref{prop:pause}).
+\item \emph{Change the game, not the players.} Replacing leaders or developers leaves selected traits in place; only the selection environment, which no participant controls alone, changes what is selected.
+\end{itemize}
+
+\paragraph{What cooperation does and does not require.} It does not end competition. Once consequences return (I1), competition in products, science and service is compatible with viability; what ends is the race to be first at the host's expense. It does not require trust, because the corrector placed outside the competition verifies. It does not require agreement on values beyond the floor and the invariants that protect it. It does require two things that no party can supply alone: an arrangement binding all parties, and timing, since it must precede capture. The strongest form takes frontier development out of relative selection altogether. Under joint development, in which the frontier's returns are shared, the field acts as a single carrier that internalizes the host ($n=1$ in Proposition~\ref{prop:game}, so restraint is chosen whenever $\theta>1$), and correctors outside it are needed only for harms to those not party to it.
+
+Rivals have kept shared conditions above a floor before: the protection of the ozone layer and the eradication of smallpox each bound all parties to an arrangement whose assessment or monitoring no single party controlled, and each served every party \citep{barrett2003,barrett2007}. The arrangements that worked changed what was in each party's interest rather than asking parties to act against it \citep{barrett2003}, which is what invariant (I1) does once the corrector is independent. For AI, the leading rival states signed a common declaration on frontier AI safety \citep{bletchley2023}, and each has led a General Assembly resolution on AI that the other joined in adopting \citep{unga2024,unga2024capacity}.
+
+\section{Do the Conditions Hold Now?}\label{sec:evidence}
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{4.2cm}>{\raggedright\arraybackslash}p{5.6cm}>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+Condition & Indicator & Present evidence & Observation that would refute it \\
+\midrule
+C0 capacity to cross a floor & Load on shared conditions per unit of capability deployed & Contested and class-specific; policymakers face an ``evidence dilemma'' \citep{bengio2025report}. The least established condition; silent descent of moderate harm (Prop.~\ref{prop:detect}iii) does not need it & Shared conditions improve as deployment scales, independently measured \\
+C1 relative selection & Whether capital, compute and talent follow relative standing; framing of development & Framed as a race for dominance \citep{whitehouse2025} and as competition for first-mover advantage \citep{statecouncil2017} & Restraint gains share; funding follows safety independent of capability rank \\
+C2 appropriable control & Developer roles in evaluation, benchmarks, standards; access terms & Evaluators depend on revocable access \citep{longpre2024}, often on developer-set timing \citep{metr2025o3}; a frontier benchmark commissioned and owned by a developer \citep{besiroglu2025frontiermath}; private variant testing shapes leaderboards \citep{singh2025} & Evaluation and standards funded and staffed independently of evaluated firms \\
+C3 correction outpaced & Growth of independent evaluation capacity against the falling cost of control activities & Task horizons doubling about every seven months \citep{kwa2025}; model-written evaluations and comments \citep{perez2023,weiss2019}; evaluation struggling to keep pace \citep{bengio2025report}; safeguard robustness barely correlated with capability \citep{aisi2025trends} & Independent correction capacity grows faster than half the rate at which control becomes cheaper \\
+C4 masking & Same-lineage and shared bias of judges, measured against ground truth & Self-preference of model judges \citep{panickssery2024,chen2025selfpref}, though partly legitimate in strong models \citep{chen2025reason}; correlated errors across providers \citep{kim2025,goel2025}; models increasingly tell tests from deployment \citep{bengio2026report} & Cross-lineage judges show no shared systematic bias at relevant harm levels \\
+\bottomrule
+\end{tabular}
+\caption{The conditions of Theorem~\ref{thm:fail}, their indicators, present evidence and falsifiers. The entries indicate where to measure; they are not estimates of the model's parameters.}
+\label{tab:evidence}
+\end{table*}
+
+The conditions are observable, and none is a premise about motives. Table~\ref{tab:evidence} lists indicators, present evidence and what would refute each. Two points deserve emphasis. First, C0 is the least established condition, and the theorem's other conclusions (selection of control, starvation of correction, permanent silence of moderate harm) do not depend on it. Second, the pairing is deliberate. Because captured evaluation delays the very evidence that would establish the conditions (Proposition~\ref{prop:detect}), waiting for certainty is itself a choice of trajectory. Measurement of the indicators must therefore be independent of the field (I3), or it inherits the masking it is meant to detect.
+
+The conversion parameters can be identified. Integrating Eq.~(\ref{eq:r}) gives $\tfrac{d}{dt}\operatorname{logit}x_i=\kappa_ic_i[\sum_jR_{ij}(k_i*x_j)(t)-1]$ plus a decaying transient, with $k_i(s)=\varepsilon_id_ie^{-\varepsilon_id_is}$, so $R_{ij}$ is the ratio of a distributed-lag coefficient to the intercept in a regression of logit velocity on lagged shares. This is structural recoverability, not causal identification; reforms that change single margins, such as a new conflict-of-interest rule for standard drafters, offer natural experiments.
+
+\section{Objections, Limitations and Conclusion}\label{sec:conclusion}
+
+\paragraph{``Developers care about absolute payoffs.''} Many do. Proposition~\ref{prop:first} concerns what grows, not what anyone wants, and Proposition~\ref{prop:game} shows that even absolute concern fails once there are enough contenders or enough weight on winning.
+
+\paragraph{``Competition produces safety innovation.''} It does, wherever safety is privately rewarded. That is invariant (I1); the analysis asks what keeps it in force.
+
+\paragraph{``This is the tragedy of the commons.''} The first order is, and we cite it as such. The contribution is the second order: the institutions that solve the commons are selected by the field they govern, at a rate that AI changes, so the solution must be placed outside the competition and must grow with capability.
+
+\paragraph{``Rivals cannot cooperate.''} Precedents exist (Section~\ref{sec:change}). Moreover the arrangement does not ask any party to sacrifice for another: it raises every party's absolute payoff, and once in force it is enforced by the payoffs it creates.
+
+\paragraph{``Capture is not inevitable.''} Agreed. Each condition can fail, and Theorem~\ref{thm:invariants} says which failures make the trajectory viable. The account applies to every institution, including any that adopts it: a corrector whose success acquires immunity from challenge becomes a dominant practice in its own right, and the invariants apply to it.
+
+\paragraph{Limitations.} The models are minimal: one practice and its alternative per domain, linear conversion and payoffs, quasi-static adjustment in Proposition~\ref{prop:rate}, no strategic concealment, and uncalibrated parameters; the numbers illustrate the propositions and estimate nothing. Unequal exposure to the host, endogenous domains and strategic masking remain open. Acting on the results rests on normative premises: that the host's floor matters, that those affected by an optimization process should keep a meaningful capacity to contest its direction, and that severe irreversible harm deserves special weight.
+
+\paragraph{Conclusion.} The developers of advanced AI share one host. Selection on who is ahead cannot see it, the guardians meant to protect it are selected by the race they guard, and AI makes guarding harder faster than it makes it easier unless independent correction keeps pace. No winner of that race has a viable trajectory that the host does not also have. The conditions of a viable trajectory bind every participant and benefit every participant, which is why they can only be met together. In this precise sense the future of AI development is a common future \citep{wced1987}, and cooperation on its conditions, not on its spoils, is the one course the analysis leaves open.
+
+\bibliography{references}
+
+\appendix
+
+\section{Proofs}\label{app:proofs}
+
+\begin{proof}[Proof of Lemma~\ref{lem:blind}]
+A relative rule satisfies $F(p,\pi+G\mathbf 1)=F(p,\pi)$ at every instant, so the shares solve the same differential equation whatever $G(V(t))$ is. A common term leaves every difference $\pi_k-\pi_l$ unchanged, so its sign, and with it the sign of $\dot p_k/p_k-\dot p_l/p_l$ under a payoff-monotone rule, is unchanged.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:first}]
+(i) By Eq.~(\ref{eq:pi}) with $\tau=0$ and $\phi_k=\phi_l$, $\pi_k-\pi_l=\nu(e_k-e_l)>0$, and $G(V)$ cancels (Lemma~\ref{lem:blind}). (ii) Under replicator dynamics $\frac{d}{dt}\ln(p_k/p_l)=\pi_k-\pi_l$; for a race-strategy carrier $k$ and any $l$ with $e_l<\bar e$ this is a positive constant, so $p_k/p_l\to\infty$, the shares of all carriers with $e_l<\bar e$ tend to zero, and $E(t)\to\bar e$. For $\epsilon>0$ there is $T$ with $E(t)\ge\bar e-\epsilon$ for $t\ge T$, so $\dot V\le V[\rho(1-V/K)-h(\bar e-\epsilon)]$ and, by comparison with the logistic equation, $\limsup V\le K(1-h(\bar e-\epsilon)/\rho)^+$; let $\epsilon\to0$. (iii) Eq.~(\ref{eq:C0}) gives $K(1-h\bar e/\rho)^+<\Vmin$.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:game}]
+With $\bar\pi=\frac1n\sum_j\pi_j$, $\pi_k-\bar\pi=(1-\frac1n)\pi_k-\frac1n\sum_{j\neq k}\pi_j$, in which $G(V)$ appears with weight $(1-\frac1n)-\frac{n-1}{n}=0$. Hence $u_k=w\nu e_k-\frac\lambda n\nu\sum_{j\ne k}e_j+\omega K(1-hE/\rho)+\text{const}$ with $w=1+\lambda(n-1)/n$ and $E=\frac1n\sum_je_j$, and $\partial u_k/\partial e_k=w\nu-\omega Kh/(n\rho)$, which does not depend on others' choices: (i). Joint payoff $n[\nu e+\omega K(1-he/\rho)]$ at a common $e$ has slope $n\nu(1-\theta)$, negative when $\theta>1$; the equilibrium is full depletion when $w>\theta/n$, i.e.\ $\lambda>(\theta-n)/(n-1)$: (ii). At full depletion each payoff is $\nu\bar e+\omega K(1-h\bar e/\rho)$, against $\omega K$ under joint restraint; the difference is $\nu\bar e(\theta-1)$: (iii). (iv) is Eq.~(\ref{eq:C0}) at $E=\bar e$. Brute-force best responses agree with these thresholds (Appendix~\ref{app:numerics}).
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:control}]
+Appropriable support keyed to the carrier obeys $\dot\zeta_i=\varepsilon_i(\chi q\sum_j\hat b_{ij}y_j-d_i\zeta_i)$ from $\zeta_i(0)=0$, so $\zeta_i(t)=\zeta^\ast_i(1-e^{-\varepsilon_id_it})$ with $\zeta^\ast_i=\chi q\sum_j\hat b_{ij}y_j/d_i$, whose average over a horizon $T$ is $\zeta^\ast_iL_i$, $L_i=1-(1-e^{-\varepsilon_id_iT})/(\varepsilon_id_iT)$. The per-decision advantage $a_i\zeta_i$, weighted by the carrier's decisions $y_i$ and summed, gives $\chi q\,y^\top My$; shared support benefits carriers with and without capacity alike and cancels. With $y=s\bar y$, $y^\top My=s^2\bar y^\top M\bar y$. (i) Differentiate; the mean obeys $\dot{\bar q}=\kappa\operatorname{Cov}(q,W(q))$ under replicator dynamics with faithful transmission \citep{price1970}, positive when $W$ is strictly increasing on the support. (ii) $W'(0)>0$ iff $s>s^\ast$; for $s<s^\ast$, $W(q)=q(\chi s^2\bar y^\top M\bar y-f)-\gamma q^2/2<0$ for every $q>0$; $q^\ast$ is the first-order condition. (iii) Every term is nonnegative and linear in $\chi$ and $\hat b_{ij}$; $c_iL_i\hat R_{ij}=a_i\hat b_{ij}\varepsilon_iT\,\ell(\varepsilon_id_iT)$ with $\ell(v)=[1-(1-e^{-v})/v]/v$ decreasing, since $\ell'(v)=\mu(v)/v^3$ with $\mu(v)=2-2e^{-v}-v-ve^{-v}$, $\mu(0)=0$ and $\mu'(v)=e^{-v}(1+v)-1<0$. (iv) $\sum_{i,j\in\cS}\hat R_{ij}=|\cS|\hat\eta+|\cS|(|\cS|-1)\hat\varphi$; substitute $s=Y/|\cS|$.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:correction}]
+(i) Two carriers of the same practice that differ only in $u$ are affected identically by the resulting change in $d$, which acts on all rule support of the practice; their payoff difference is $C_u(u_l)-C_u(u_k)<0$ for $u_k>u_l$, and the claim follows from payoff monotonicity. (ii) A carrier's appropriable and shared support decline in $d$ (proof of Proposition~\ref{prop:control}(iii)), so its absolute payoff falls. (iii) If a challenger's absolute payoff rises at rate $G_k'(d)$ with $d$ and its investment raises $d$ by $\delta p_ku_k$, it invests only if $\delta p_kG_k'(d)>C_u'(0)$, which fails for small $p_k$. (iv) If a fraction $\chi_u$ of the correction installs support keyed to the corrector, its return has the form of Eq.~(\ref{eq:W}) with $\chi_u$ in place of $\chi$, and Proposition~\ref{prop:control} applies.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:rate}]
+With $L_i=1$ and uniform $d$, $M=\hat A/d$ with $\hat A_{ij}=a_i\hat b_{ij}$, so $q^\ast=\chi\hat Y/(\gamma d)$. The inbound conversion into $\dE$ from $\cC$ is $s_\dE=a_\dE(B^0+q^\ast\hat B)/(c_\dE d)$ with $B^0=\sum_{j\in\cC}b^0_{\dE j}$ and $\hat B=\sum_{j\in\cC}\hat b_{\dE j}$, and $s_\dE<1$ iff $c_\dE d^2-Ad-Z>0$, i.e.\ $d>d^\ast$: (i). (ii) follows from the formula. (iii) With $Z(t)=Z_0e^{gt}$, $d^\ast(t)\ge\sqrt{Z(t)/c_\dE}=Se^{gt/2}$, and $d_0e^{\alpha t}<Se^{gt/2}$ for $t>t^\ast$. Then $s_\dE(\cC)>1$; with $\cC$ captured and $x_\dE>0$, Proposition~\ref{prop:reform}(i), applied with rule support tracking its quasi-static target, gives $x_\dE\to1$. (iv) Using $\sqrt{a+b}\le\sqrt a+\sqrt b$, $d^\ast(t)\le A/c_\dE+Se^{gt/2}\le(A/c_\dE+S)e^{\alpha t}<d_0e^{\alpha t}$ when $\alpha\ge g/2$. Fragmentation: $k$ parts of share $s/k$ give total return $k(s/k)^2=s^2/k$ times the per-unit factor.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:detect}]
+(i) For fixed $m<1$, $\tilde V$ increases in $V$ and equals $\Valarm$ at $V=(\Valarm-mK)/(1-m)$. (ii) For $\Vmin\le V\le\Valarm$ and $m>\mfl$, $\tilde V=V(1-m)+mK\ge\Vmin+m(K-\Vmin)>\Valarm$; for $V>\Valarm$, $\tilde V\ge V>\Valarm$. (iii) $V(t)\ge V^\ast$ for all $t$, so $\tilde V\ge V^\ast+\bar m(K-V^\ast)>\Valarm$. (iv) $\tilde V\le m_1K+V$ eventually, and $m_1K<\Valarm$ while $V\to0$. (v) $V$ must fall from $\Valarm$ to $(\Valarm-mK)/(1-m)$, which takes the stated time under $\dot V=-\ell V$.
+\end{proof}
+
+\begin{remark}[Why the alarm cannot be recalibrated]\label{rem:indist}
+If the panel's composition is unknown, a report $\tilde V$ is consistent with every true condition in $[\max\{0,(\tilde V-\beta_{\mathrm{in}}K)/(1-\beta_{\mathrm{in}})\},\tilde V]$. Two states with the same report but disjoint safe actions cannot both be handled safely by any rule acting on the report alone, however much computation it uses. Recalibration requires a channel independent of the field.
+\end{remark}
+
+\begin{proof}[Proof of Theorem~\ref{thm:fail}]
+By Proposition~\ref{prop:first}, under C1 and C0 the load tends to $\bar e$ and $V$ declines toward a limit below $\Vmin$ unless liability acts. By Propositions~\ref{prop:control} and \ref{prop:correction}, under C2 the dominant carrier carries capacity and correction is not supplied by the field, so by C3 and Proposition~\ref{prop:rate}(iii) the corrector domains, once seeded, are captured after $t^\ast$. If this happens before $V$ reaches $\Valarm$, then from then on $x_\dE\to1$, so $m\to\beta_{\mathrm{in}}>\mfl$, and by Proposition~\ref{prop:detect}(ii) no alarm fires before $V<\Vmin$; with $x_\dS\to1$ the effective liability $\tau(1-x_\dS)$ tends to zero in any case. The payoff comparison is Proposition~\ref{prop:game}(iii). If $\beta_{\mathrm{in}}\le\mfl$, the alarm is delayed by Proposition~\ref{prop:detect}(v); a liability enacted against a captured $\dS$ whose inbound conversion from the captured set exceeds one resets $x_\dS$ without lowering that conversion and is re-absorbed (Proposition~\ref{prop:reform}(iii)).
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:invariants}]
+(a) (I2) in $\dS$ gives $\sum_jR_{\dS j}<1$, so $x_\dS\to0$ (Proposition~\ref{prop:cert}(b)) and, once (I1) is enacted, $\tau(1-x_\dS)>\nu$ after a finite time. The private payoff of depletion is then negative, and payoff-monotone selection favors the carriers with the least load, so $E(t)\to\min_ke_k$; with $\min_ke_k=0$, $V\to K$. For unanticipated harms, (I2) in $\dE$ gives $x_\dE\to0$, so $m\to\beta_{\mathrm{out}}<\mfl$ by (I3), and the alarm fires while $V>\Vmin$ (Proposition~\ref{prop:detect}(i)); (I3) places decision and reversal inside the window. (b) \emph{(I1).} With $\tau=0$, Proposition~\ref{prop:first} applies under C0. \emph{(I2).} With $d<d^\ast$ in $\dS$ and $\dS$ seeded and in the hull of the captured set, $x_\dS\to1$ (Proposition~\ref{prop:rate}(iii)), the effective liability tends to zero although $\tau>\nu$ is enacted, and Proposition~\ref{prop:first} applies. \emph{(I3).} For an unanticipated harm with $\dE$ uncaptured but $\beta_{\mathrm{out}}>\mfl$, Proposition~\ref{prop:detect}(ii) gives a silent crossing. \emph{(I4).} Let $\dS$ be captured with rule support $r_\dS(t_1)$ when (I1)--(I3) come into force at $t_1$, independent correction then raising its rate to $d'$. Since $\dot r_\dS\ge-\varepsilon_\dS d'r_\dS$, $a_\dS r_\dS>c_\dS$ and $x_\dS$ keeps rising for at least $\ln(a_\dS r_\dS(t_1)/c_\dS)/(\varepsilon_\dS d')$, during which the effective liability stays near zero; if $V(t_1)$ is close enough to $\Vmin$, or $\varepsilon_\dS$ small enough, the floor is crossed in that interval. A liability enacted without raising $d$ is re-absorbed outright (Proposition~\ref{prop:reform}(iii)).
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:coop}]
+A carrier acting alone can change only its own $e_k$, $q_k$ and $u_k$ and what it funds. By Proposition~\ref{prop:first} its restraint lowers its relative standing; by Proposition~\ref{prop:correction}(i) its investment in correction does too; and funding of a corrector by a carrier is conversion $b_{ij}>0$ from the field into that corrector, which raises the corrector's inbound conversion instead of lowering it. Each invariant concerns $\tau$, $d$, $\chi$ or $m$, parameters of the environment common to all carriers. Under (I1) the private payoff of depletion is $\nu-\tau(1-x_\dS)<0$, so restraint is a best response; the payoff comparison is Proposition~\ref{prop:game}(iii).
+\end{proof}
+
+\section{Field Results}\label{app:field}
+
+For the field of Eqs.~(\ref{eq:x})--(\ref{eq:r}) with positive rates, $b_{ij}\ge0$ and $c_i>0$, let $Z_\cC$ be the state with $x_i=1$ on $\cC$, $x_i=0$ elsewhere and $r_i=\sum_{j\in\cC}b_{ij}/d_i$; $\cC$ is \emph{internally sustaining} if $s_i(\cC)>1$ for all $i\in\cC$ and \emph{uninvadable} if $s_i(\cC)<1$ for all $i\notin\cC$. The cascade hull of a seed is $\hull(\cS_0)=\bigcup_k\cS_k$ with $\cS_{k+1}=\cS_k\cup\{i:x_i(0)>0,\ s_i(\cS_k)>1\}$; $\core(\cC)$ prunes from $\cC$ every domain whose inbound conversion from the remainder is below one \citep{kempe2003,morris2000,seidman1983}.
+
+\begin{lemma}\label{lem:basic}
+$X=[0,1]^D\times[0,\infty)^D$ is forward invariant, $\limsup_tr_i(t)\le\sum_jb_{ij}/d_i$, and the system is cooperative, so the flow preserves the componentwise order.
+\end{lemma}
+\begin{proof}
+The faces $x_i\in\{0,1\}$ are invariant and $\dot r_i\ge-\varepsilon_id_ir_i$; the bound follows from $\dot r_i\le\varepsilon_i(\sum_jb_{ij}-d_ir_i)$. Off-diagonal Jacobian entries are $\partial\dot x_i/\partial r_i=\kappa_ia_ix_i(1-x_i)\ge0$ and $\partial\dot r_i/\partial x_j=\varepsilon_ib_{ij}\ge0$, so the Kamke condition holds \citep{smith1995}.
+\end{proof}
+
+\begin{proposition}[Configurations and certificates]\label{prop:cert}
+(a) Each $Z_\cC$ is an equilibrium, hyperbolic iff $s_i(\cC)\neq1$ for all $i$, and a hyperbolic $Z_\cC$ is asymptotically stable iff $\cC$ is internally sustaining and uninvadable. (b) If $\sum_jR_{ij}<1$, then $x_i\to0$ from every state with $x_i(0)<1$, whatever happens elsewhere. (c) Isolated tests cannot certify: for any $D\ge2$ and diagonal values $R_{ii}<1$ there are conversions under which full capture is stable and is the only stable configuration containing a given domain. (d) If $\core(\cD)=\emptyset$, no capture attracts every state with all shares below one; otherwise, barring ties, $Z_{\core(\cD)}$ is stable and contains every stable configuration.
+\end{proposition}
+
+\begin{proposition}[Cascades, reforms and pauses]\label{prop:reform}
+(i) If $x_j\to1$ for all $j$ in a seed $\cS_0$, then $x_i\to1$ for every $i\in\hull(\cS_0)$. (ii) Starting in the basin of a stable $Z_\cC$ with every share in $(0,1)$, a sustained reform that drives $x_i\to0$ on $\cQ\subseteq\cC$, or a margin reform making the reformed $s_i(\cC)<1$, sends to zero every domain outside $\core(\cC\setminus\cQ)$; a margin reform leaving the reformed $s_i(\cC)>1$ is re-absorbed from states near $Z_\cC$. (iii) A reform that resets a domain's share, rule support or own conversion without lowering its inbound conversion from the domains still captured is re-absorbed once the domain is re-seeded, whenever that inbound conversion exceeds one.
+\end{proposition}
+
+\begin{proposition}[A pause that freezes shares]\label{prop:pause}
+Let $D=1$ and $R>1$, and freeze the share at $x_p\in(0,1)$ for a long time while rule support follows $\dot r=\varepsilon(b_px_p-dr)$. With ordinary rule-making ($b_p=b$), after release the state converges to full capture if $x_p>1/R$ and to absence if $x_p<1/R$. With rule-making insulated from shares ($b_p=0$), it converges to absence whenever $x_p<\sigma(0)$, where $\sigma(0)>1/R$ is the share at which the separatrix meets $r=0$.
+\end{proposition}
+
+\begin{proof}[Proofs]
+Proposition~\ref{prop:cert}: (a) at $Z_\cC$ the Jacobian is block lower-triangular with diagonal entries $\mp\kappa_ic_i(s_i(\cC)-1)$ and $-\varepsilon_id_i$. (b) By Lemma~\ref{lem:basic}, eventually $a_ir_i-c_i\le c_i(\sum_jR_{ij}-1)/2<0$, so $\operatorname{logit}x_i\to-\infty$. (c) Take $R_{i1}>1$ for $i\neq1$, $R_{12}>1$, all other off-diagonal entries zero: every row sum exceeds one, so $Z_\cD$ is stable; a set $\cC\ni1$, $\cC\neq\cD$, is invaded by some $i$ with $R_{i1}>1$, and a nonempty $\cC\not\ni1$ is not internally sustaining. (d) Pruning: if $x_j\to0$ off $\cC_m$, every pruned $k$ has $\limsup(a_kr_k-c_k)\le c_k(s_k(\cC_m)-1)<0$; the core is internally sustaining by construction and uninvadable since pruned domains have $s_k<1$, and an internally sustaining set is never pruned. Proposition~\ref{prop:reform}: (i) for $i$ with $s_i(\cS_k)>1$ and $x_i(0)>0$, fix $\nu'\in(0,1)$ with $(1-\nu')s_i(\cS_k)>1$; eventually $\liminf r_i\ge(1-\nu')\sum_{j\in\cS_k}b_{ij}/d_i$ and $\frac{d}{dt}\operatorname{logit}x_i$ is bounded below by a positive constant; induct. (ii) Reformed trajectories stay below unreformed ones (Lemma~\ref{lem:basic}); for a margin reform $\limsup(a'_ir_i-c'_i)\le c'_i(s'_i(\cC)-1)<0$; then prune from $\cC\setminus\cQ$. If $s'_i(\cC)>1$, $Z_\cC$ remains stable under the reformed parameters. (iii) is (i) with the domains still captured as seed. Proposition~\ref{prop:pause}: the frozen share drives $r\to b_px_p/d$. For $D=1$ and $R>1$ the equilibria are $(0,0)$, $(1,b/d)$ and the saddle $(1/R,c/a)$; the function $\Phi=axr-cx-\frac{ad}{2b}r^2$ is nondecreasing along trajectories, so every solution converges to an equilibrium, and the stable manifold of the saddle is the graph of a nonincreasing function separating the basins \citep{hirsch1985,smith1995}. The point $(x_p,bx_p/d)$ lies on the nullcline $r=bx/d$, which passes through the saddle, above and to the right of it when $x_p>1/R$ and below and to the left when $x_p<1/R$; $(x_p,0)$ lies in the absence basin iff $x_p<\sigma(0)$, and $\sigma(0)>1/R$ because the separatrix is nonincreasing and passes through $(1/R,c/a)$ with $c/a>0$.
+\end{proof}
+
+\section{Numerical Methods}\label{app:numerics}
+
+All figures and checks are produced by a pure-Python script, provided as supplementary material, which also writes a log of every number quoted. Proposition~\ref{prop:game}: brute-force best responses on a grid of $e$ agree with the dominant-strategy thresholds for $n\in\{2,3,5\}$ and $\lambda\in\{0,0.5,2,6\}$. Figure~\ref{fig:rate}a: $a_\dE=c_\dE=1$, incidental inbound conversion $0.3$, cultivated conversion $0.5$ per unit of capacity, $\chi=0.8$, $\hat Y=1$, $\gamma_0=1$, $g=0.2$, $d_0=1$; then $d^\ast(0)=0.8$, the certificate fails at $t\approx6.8$ for $\alpha=0.05$ (bound $9.2$) and at $t\approx21.5$ for $\alpha=0.08$ (bound $22.9$), and holds for $\alpha\ge0.1$, where $d_0>A/c_\dE+S\approx0.93$. Figure~\ref{fig:rate}b: Eq.~(\ref{eq:V}) with $\rho=0.05$, $h=0.08$, $K=1$, $V(0)=1$, $\Valarm=0.6$, $\Vmin=0.3$ (so $\mfl\approx0.43$), Euler steps of $0.01$; the share of depleting activity follows a logistic curve with rate $0.15$ and midpoint $30$, the share of in-lineage evaluation a logistic curve with rate $0.25$ and midpoint $20$, and $\beta_{\mathrm{out}}=0.05$ when $\beta_{\mathrm{in}}>0$. If evaluation is instead captured with midpoint $45$, after the host reaches the alarm level ($t\approx37$), the alarm fires at $t\approx39$ for $\beta_{\mathrm{in}}=0.3$ and $t\approx40$ for $\beta_{\mathrm{in}}=0.5$.
+
+\end{document}

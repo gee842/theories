@@ -1,0 +1,52 @@
+Prop 2 checks (theta = omega K h/(rho nu)):
+  theta=3.0 n=2: lambda_bar=1.000; lam=0:restrain, lam=1:restrain, lam=3:deplete, lam=10:deplete
+  theta=3.0 n=4: lambda_bar=-0.333; lam=0:deplete, lam=1:deplete, lam=3:deplete, lam=10:deplete
+  theta=3.0 n=10: lambda_bar=-0.778; lam=0:deplete, lam=1:deplete, lam=3:deplete, lam=10:deplete
+  theta=8.0 n=2: lambda_bar=6.000; lam=0:restrain, lam=1:restrain, lam=3:restrain, lam=10:deplete
+  theta=8.0 n=4: lambda_bar=1.333; lam=0:restrain, lam=1:restrain, lam=3:deplete, lam=10:deplete
+  theta=8.0 n=10: lambda_bar=-0.222; lam=0:deplete, lam=1:deplete, lam=3:deplete, lam=10:deplete
+  brute-force best responses match the dominant-strategy formula: True
+Prop 5: d*(0)=0.8000, naive requirement A/cE=0.3000
+  s_E at d=0.7992: 1.00163
+  s_E at d=0.8008: 0.99838
+  alpha=0.05: certificate fails at t=6.755; bound t*=9.163
+  alpha=0.08: certificate fails at t=21.531; bound t*=22.907
+  alpha=0.1: certificate fails at t=None; bound t*=None; sufficient condition d(0)>=A/cE+S=0.9325: True
+  alpha=0.12: certificate fails at t=None; bound t*=None; sufficient condition d(0)>=A/cE+S=0.9325: True
+  fragmentation k=1: cultivated conversion proportional to 0.3600
+  fragmentation k=2: cultivated conversion proportional to 0.1800
+  fragmentation k=4: cultivated conversion proportional to 0.0900
+Prop 6: m_floor=(Valarm-Vmin)/(K-Vmin)=0.4286
+  capture at t=20, beta_in=0.0: V reaches alarm level at t=37.1; alarm fires at t=37.1; floor crossed at t=53.2
+  capture at t=20, beta_in=0.3: V reaches alarm level at t=37.1; alarm fires at t=45.0; floor crossed at t=53.2
+  capture at t=20, beta_in=0.5: V reaches alarm level at t=37.1; alarm fires at t=63.1; floor crossed at t=53.2
+  capture at t=45 (after the alarm level), beta_in=0.3: alarm fires at t=38.9; floor crossed at t=53.2
+  capture at t=45 (after the alarm level), beta_in=0.5: alarm fires at t=40.3; floor crossed at t=53.2
+figure: t*=6.76; independent alarm t=37.1; beta_in=0.3 alarm t=45.0; beta_in=0.5 alarm 63.1; floor t=53.2
+
+--- v3.1 checks ---
+Prop 2 brute force over theta in (0.5,3,8): 180 cases, 0 mismatches
+Repeated game theta=3 n=4 lambda=0: delta*=0.111
+Repeated game theta=3 n=4 lambda=2: delta*=0.467
+Repeated game theta=3 n=4 lambda=50: delta*=0.950
+  direct one-shot deviation cutoff (ud-uc)/(ud-uN)=0.467 vs formula 0.467
+  eta=0.5 long  horizon: asymptotic growth of d* = 0.1333, predicted 0.1333
+  eta=0.5 short horizon: asymptotic growth of d* = 0.4000, predicted 0.4000
+  eta=1.0 long  horizon: asymptotic growth of d* = 0.1000, predicted 0.1000
+  eta=1.0 short horizon: asymptotic growth of d* = 0.2000, predicted 0.2000
+  eta=2.0 long  horizon: asymptotic growth of d* = 0.0664, predicted 0.0667
+  eta=2.0 short horizon: asymptotic growth of d* = 0.0999, predicted 0.1000
+  eta=3.0 long  horizon: asymptotic growth of d* = 0.0494, predicted 0.0500
+  eta=3.0 short horizon: asymptotic growth of d* = 0.0662, predicted 0.0667
+  eta=1.0: alpha=g/(1+eta), d0=1.02 d*(0): max s_E over t in [0,400) = 0.9684 (<1 expected)
+  eta=2.0: alpha=g/(1+eta), d0=1.02 d*(0): max s_E over t in [0,400) = 0.9744 (<1 expected)
+  fixed cost f=0.0: required d at t=0,20,50,100,200: [0.8, 4.83, 94.01, 13930.91, 306845411.94]
+  fixed cost f=0.1: required d at t=0,20,50,100,200: [0.77, 3.61, 7.94, 8.0, 8.0]
+  two rates (eta=1): g=0.2, g_c=0.2, b=0 -> alpha=0.2 >= g/2=0.1: correction keeps pace
+T_A bound (ebar=0.5): formula 18.23, simulated with E=ebar 18.23
+fragmentation k=1: cultivated conversion factor 1.0000 (=1/k^2)
+fragmentation k=2: cultivated conversion factor 0.2500 (=1/k^2)
+fragmentation k=4: cultivated conversion factor 0.0625 (=1/k^2)
+liability tau=2nu from t=0, race share 0.99: min V = 0.140 (floor 0.3), final V = 1.000
+liability tau=2nu from t=0, race share 0.5: min V = 0.731 (floor 0.3), final V = 1.000
+liability tau=2nu from t=0, race share 0.1: min V = 0.953 (floor 0.3), final V = 1.000
