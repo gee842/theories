@@ -49,6 +49,34 @@ Added 2026-10-02: [03-meta-attractor/2026-10-02-meta-attractor-context-and-revie
 
 Added 2026-10-02: [16-claude-code-directions/2026-10-02-reviews-and-gpt-handoff.md](16-claude-code-directions/2026-10-02-reviews-and-gpt-handoff.md). Ren's four messages after the IASEAI draft was committed: the request for peer reviewers, the request for a corpus survey, his endorsement of the GPT 6 ASTRA review ("我非常认同"), and the handoff above. Verbatim, with an assistant-authored note. The reviews themselves are in `drafts/2026-10-02-iaseai-selecting-the-selectors/reviews/`.
 
+Added 2026-10-02: [03-meta-attractor/2026-09-28-meta_attractors_v0.1_zh.md](03-meta-attractor/2026-09-28-meta_attractors_v0.1_zh.md), 50,298 bytes, SHA-256 `1035033b505f7195c0e927e69bd40f39858737b87852d5a2936ad9f37558110d`, a byte copy of `~/Downloads/meta_attractors_v0.1_zh.md`, which Ren supplied as a 补充文档 the same day. It is 《元吸引子：当选择开始改写选择——递归捕获、跨域收敛与系统性退化的动力学》, "Yongxu Ren, 研究草稿 v0.1 · 2026-09-28" (English working title *Meta-Attractors: When Selection Rewrites Selection*), the Chinese paper behind the 2026-09-28 English paper and the file the 2026-10-02 essay cites as "meta_attractors_v0.1_zh". Fourteen sections and five appendices:
+- a neutral mechanism definition (再生, 自我稳定, 外向重构, 跨域扩张), with degeneracy as a separate criterion and totalization kept apart from concentration;
+- an explicit prior-art section, which notes that the minimal model is a special case of Tilman et al.'s decaying-environment games and that Klüver (2002) used "meta attractor" before;
+- Theorem 1 (threshold and bistability with a potential function) and Theorem 2 (capture and degradation have different thresholds);
+- persistent switching μ(1−2x), which preserves bistability;
+- the spectral cross-domain threshold;
+- a cognitive-expectation variable m, with stability condition ab/d + η > c;
+- the observation-indistinguishability proposition;
+- numerics integrated in logit coordinates;
+- AI sections;
+- design conditions, including a uniform-bound certificate for time-varying parameters;
+- a literature and originality check record.
+
+Probably drafted with an AI assistant from Ren's direction, like its English counterpart. Its sentences are not his verbatim.
+
+Added 2026-10-02: [17-user-provided-2026-10-02/Philosophy_Adversarial_Benchmark_v0.6.md](17-user-provided-2026-10-02/Philosophy_Adversarial_Benchmark_v0.6.md), 84,614 bytes, SHA-256 `4ad4ddc7c5c447abab62cc00ad9bb57adf108814a5167000cc36918b3943a494`, a byte copy of `~/Downloads/Philosophy_Adversarial_Benchmark_v0.6.md`, supplied by Ren the same day. 《Philosophy Adversarial Benchmark v0.6：从纠错架构到哲学重建》, dated 2026-09-07, follows v0.2–v0.5, none of which are in this corpus. Material relevant to the meta-attractor line:
+- six correction functions ⟨D,P,A,T,Ω,Λ⟩ and five ecological protections, inherited from v0.4/v0.5;
+- §12, the two loops: epistemic correction against action correction;
+- §13, time and irreversibility ("可达≠及时可达") and three correction capacities;
+- §14, the epistemic min-cut revised from edge counts to control domains with a deadline;
+- §§17–18, four ethical bridge premises E1–E4 and the norms they support;
+- Appendix A, three bounded results; A2 is "belief revisability does not imply world-state recoverability";
+- Appendix B, a min-cut enumeration check.
+
+Read in full except §§4–11 and 21–25 (realism, truth, meaning, understanding, the integrated case), which were skimmed. Likely drafted with an AI assistant.
+
+Noted 2026-10-02: `~/Downloads/When_Capability_Outruns_Correction (1).pdf`, supplied with the two files above, is byte-identical (SHA-256 `ddbbea3551aeecf09306325d8f51ba3a368a882f94b7b75ea382fc7a1dbb6f59`) to `05-alignment-and-moloch/2026-09-28-When_Capability_Outruns_Correction.pdf`, already here, so no copy was made.
+
 Noted 2026-09-25: two of the three files imported on 2026-09-06 were already in this inventory. `15-user-provided-2026-09-06/至善_对话整理完整版.md` is byte-identical to `07-shengsheng-buxi/downloads-2026-07-08/2026-07-23-至善_对话整理完整版.md` (dated 2026-07-23). `15-user-provided-2026-09-06/智能向善，天下生生.md` differs from `06-zhishan/sheng/智能向善.md` (dated 2026-07-15) only by a final newline. Their intake record leaves the authored dates open; these earlier copies date them. The Meta-Attractor essay has no identical earlier copy in the corpus.
 
 | added | group / source | files | bytes | origin |

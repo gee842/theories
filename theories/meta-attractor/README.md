@@ -902,6 +902,15 @@ Quoted inside AI-drafted files as the author's own claims, so attribution is one
     - Ren's 2025-06 line, as the handoff reports it: "我们看到社会的轨迹，不去修正它，而是在其上博弈；因为博弈产生影响力，而修正需要影响力". If it is verbatim, this is the reform dilemma in his own words: the path to the influence that correction needs runs through the game that selects against correction. It is not yet verified against an original.
 
     The remedy is a ChatGPT data export from Ren, followed by an intake like the claude.ai one. Until then, treat the handoff's account of these documents as second-hand.
+
+    *Partly resolved the same day.* Ren supplied two of the missing documents. `03-meta-attractor/2026-09-28-meta_attractors_v0.1_zh.md` is the Chinese v0.1 paper. Beyond the handoff's account, it carries:
+    - the cognitive-expectation variable m (stability ab/d + η > c);
+    - the uniform-bound certificate for time-varying parameters;
+    - persistent switching μ(1−2x), which keeps bistability;
+    - integration in logit coordinates;
+    - two prior-art concessions: the model is a special case of Tilman et al., and Klüver (2002) used "meta attractor" first.
+
+    `17-user-provided-2026-10-02/Philosophy_Adversarial_Benchmark_v0.6.md` is v0.6 of the benchmark, not v0.5. Its §14 revises the min-cut to control domains with a deadline, and explicitly withdraws the suggestion that the min-cut measures epistemic robustness as a whole. Its Appendix A2 proves that belief revisability does not imply recoverability of the world state. Still missing: benchmark v0.2–v0.5, the Mycelium and Civilizational AI documents, an original for the 2025-06 line, and the rest of the ChatGPT history.
 40. **Second-order selection is conditional, not inevitable.** The sentence Ren endorsed is true only under conditions: heritable variation, retention, real influence over selection, appropriable returns, and returns that arrive in time to beat their cost. This session's check shows the sign flips when rule support is shared. The handoff makes the same point. Public texts should state the conditional version. It is also the stronger version, because each condition is a place to intervene.
 
 ---
