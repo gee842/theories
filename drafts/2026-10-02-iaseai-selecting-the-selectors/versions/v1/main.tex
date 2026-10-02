@@ -1,0 +1,381 @@
+\documentclass[letterpaper]{article} % DO NOT CHANGE THIS
+\usepackage[submission]{aaai2027}  % DO NOT CHANGE THIS
+\usepackage[hyphens]{url}  % DO NOT CHANGE THIS
+\usepackage{graphicx} % DO NOT CHANGE THIS
+\urlstyle{rm} % DO NOT CHANGE THIS
+\def\UrlFont{\rm}  % DO NOT CHANGE THIS
+\usepackage{natbib}  % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\usepackage{caption} % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\frenchspacing  % DO NOT CHANGE THIS
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{arrows.meta,positioning}
+
+\pdfinfo{
+/TemplateVersion (2027.1)
+}
+
+\setcounter{secnumdepth}{2}
+
+\definecolor{cD}{HTML}{0072B2}
+\definecolor{cE}{HTML}{D55E00}
+\definecolor{cS}{HTML}{009E73}
+\definecolor{cP}{HTML}{56B4E9}
+\definecolor{cF}{HTML}{CC79A7}
+\definecolor{cI}{HTML}{E69F00}
+\definecolor{cH}{HTML}{D55E00}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\newcommand{\cl}{\operatorname{cl}}
+
+\title{Selecting the Selectors: Recursive Selection, Cross-Domain Capture,\\and the Answerability of AI Development}
+\author{Anonymous Submission}
+\affiliations{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+AI safety research usually locates risk in a component: a misaligned model, a careless developer, a malicious user. This paper studies a risk located in a relation: success that converts into influence over the conditions of future success. When the practices that win in one round come to fund, staff, design or supply the processes that select the next round (benchmarks, evaluations, standards, procurement defaults, training pipelines), a practice can become self-maintaining even if it would lose under neutral rules, can persist when its carriers are replaced, and can weaken the processes by which its costs would register as failure. We formalize this pattern, which we call a meta-attractor, as a field of coupled selection domains, each with a practice share and a stock of rule support, linked by a matrix of cross-domain conversion. We characterize every stable capture configuration and show three things. Capture can cascade into domains whose own incentives are subcritical, so no domain-by-domain audit can certify a field. A reform confined to one domain is re-absorbed while the domains that feed it remain captured, and only reforms at keystone domains unravel a configuration. And once the cascade reaches the evaluation domain, harm can deepen without triggering correction. General-purpose AI plausibly raises the parameters that decide these outcomes: cross-domain coupling, the dependence of evaluators on what they evaluate, and the speed of adoption relative to rule revision. We derive discriminating tests and design principles for answerability.
+\end{abstract}
+
+\section{Introduction}
+
+Most AI safety research locates risk in a component of a system: a model whose learned objectives depart from its designers' intentions, a developer who under-invests in safety, a user who turns a capability to harm. Structural accounts add risks that arise from incentives and interaction rather than from any single failure \citep{zwetsloot2019,critch2020,kulveit2025,hammond2025}. This paper isolates one structural mechanism and makes it precise: \emph{success that converts into influence over the conditions of future success}.
+
+The mechanism is familiar in pieces. In any field where practices compete for resources, the winners of one round can come to fund, staff, design or supply the processes that select the next round: the benchmarks against which systems are compared, the evaluations that license deployment, the standards and procurement defaults that make some products easy to adopt, the curricula and datasets from which the next generation of researchers and models is formed. When that happens a practice is no longer only selected by a rule; it helps reproduce the rule that selects it. Three consequences follow, each of which this paper derives. A practice that would lose under neutral rules can become self-maintaining. What persists can be a \emph{way of succeeding} rather than any particular firm, leader or model, so replacing the occupants of powerful positions may leave the trajectory unchanged. And if the practice's influence reaches the processes that detect harm, its costs can stop registering as failure. We call a self-maintaining pattern of this kind a \emph{meta-attractor}: it attracts the rules of selection, and not only the states that those rules select.
+
+The mechanism matters for AI for a specific reason. General-purpose AI plausibly raises exactly the parameters that decide whether a meta-attractor forms. The same models, providers and toolchains enter many domains at once, so success in one market converts into rule support in many. AI systems increasingly occupy the selector's seat, as judges, reward models, red-teamers and evaluation infrastructure, so evaluators can share the lineage and the errors of what they evaluate. And adoption can outpace the revision of rules. None of this is checked by aligning each system to its operator. An obedient system can faithfully strengthen its principal's conversion of success into rule-setting power.
+
+The paper makes four contributions.
+\begin{enumerate}
+\item A decomposition of the mechanism into separable conditions, namely success without contribution, conversion of success into rule support, persistence across carriers, and capture of the selectors, with the distinctions between concentration, capture, damage, collapse and closure stated as distinct conditions in one model (Section~\ref{sec:mechanism}, Table~\ref{tab:distinctions}).
+\item A field model of recursive selection across coupled domains, with a complete characterization of stable capture configurations, a cascade theorem, and its dual, an unravelling theorem that identifies keystone domains. Three corollaries follow: no domain-level certificate of safety exists, partial reforms are re-absorbed, and capture can outlive its origin (Section~\ref{sec:model}).
+\item A result connecting capture of the evaluation domain to the silencing of correction, and an extension in which degraded shared conditions raise dependence and so lower the threshold for capture.
+\item An analysis of why general-purpose AI raises the model's critical parameters, followed by discriminating tests and design principles for answerability (Sections~\ref{sec:ai}--\ref{sec:design}).
+\end{enumerate}
+
+\paragraph{Statement of Contributions.} The novelty of this paper lies in treating recursive selection as a property of a \emph{field} of coupled domains rather than of a single market or regulator. Within that frame it supplies the classification of stable capture configurations (Proposition~\ref{prop:config}), the cascade theorem and its corollaries on local certification, re-absorption and persistence (Proposition~\ref{prop:cascade}, Corollaries~\ref{cor:local}--\ref{cor:origin}), the unravelling theorem and the keystone criterion (Proposition~\ref{prop:unravel}, Corollary~\ref{cor:keystone}), the coupling of evaluation capture to the silencing of correction (Proposition~\ref{prop:selectors}), the dependence extension (Remark~\ref{rem:dependence}), and the mapping of these results to AI-specific channels, tests and design principles. The single-domain dynamics in Section~\ref{sec:model} are a variant of replicator dynamics with environmental feedback, included to keep the paper self-contained. The proofs use standard tools from monotone dynamical systems; the contribution lies in the field-level formulation and in what it implies for how AI evaluation and governance are organized. Conceptual antecedents of Section~\ref{sec:mechanism} appeared in informal, non-peer-reviewed essays. The formal model, all results, the AI analysis and the proposed tests are new and have not been published elsewhere.
+
+\section{Related Work}\label{sec:related}
+
+\paragraph{Structural and multi-agent risk.} Structural accounts hold that AI can cause harm by changing incentives rather than through accident or misuse \citep{zwetsloot2019}, that optimization against measurable proxies can erode human influence without any single failure \citep{christiano2019,kulveit2025}, and that risks can accumulate rather than arrive decisively \citep{kasirzadeh2025}. Multi-principal and cooperative-AI work shows that aligning each system to its principal leaves the game between principals unaligned \citep{critch2020,critch2023,dafoe2020,gabriel2020}. A recent taxonomy names selection pressures and network effects among the risk factors of multi-agent systems \citep{hammond2025}, and \citet{hendrycks2023} argues that selection among AI systems can favor undesirable traits. We contribute a dynamical account of one such pressure, in which the selected practice acquires power over its own selection environment.
+
+\paragraph{Capture, path dependence and persistence.} Regulatory capture describes industry influence over its regulators \citep{stigler1971,dalbo2006,carpenter2013}, and interview evidence identifies agenda-setting, academic capture and information management as channels of industry influence in AI policy \citep{wei2024}; related work documents industry funding of academic AI research \citep{abdalla2021,whittaker2021} and industry dominance of compute, data and talent \citep{ahmed2023}. Increasing returns produce lock-in and path dependence \citep{arthur1989,pierson2000}, and changes in de jure institutions can be offset by investments in de facto power \citep{acemoglu2008}. Our notion of capture is broader than regulatory capture: it covers any channel through which a practice's success shapes the conditions of its future selection, and it is analyzed across domains.
+
+\paragraph{Selection on practices and feedback with environments.} Selection for publication output can favor deteriorating research methods without anyone intending it \citep{smaldino2016}. Measures used for allocation degrade under pressure \citep{campbell1979,manheim2018}. Organisms modify the environments that select them \citep{odlingsmee2003}, and eco-evolutionary game theory studies feedback between strategies and the environments that set their payoffs, finding coexistence, cycles and alternative stable states \citep{weitz2016,tilman2020}; feedback alone does not imply collapse. Our environment variable is a stock of rule support, and our concern is its coupling across domains.
+
+\paragraph{Power.} Political theory distinguishes the power to prevail within given rules from the power to set agendas and shape preferences \citep{bachrach1962,lukes2005}, and international political economy distinguishes relational power from structural power over the frameworks within which others act \citep{strange1988}. States that control hubs of global networks can convert others' dependence into coercive leverage \citep{farrell2019}. Our model gives one dynamical form to the passage from the first kind of power to the second.
+
+\paragraph{AI evaluation, auditing and monoculture.} Third-party auditing faces limited access, funding and independence \citep{raji2022,costanzachock2022,birhane2024}, and independent evaluation depends on terms set by developers \citep{longpre2024}. Leaderboard dynamics can favor providers that test privately and receive more data \citep{singh2025}. Language-model judges favor their own outputs \citep{zheng2023,panickssery2024}, and errors are correlated across models and providers \citep{kim2025}. Shared models homogenize outcomes \citep{bommasani2021,kleinberg2021,bommasani2022}, and market concentration spans the layers of the AI stack \citep{narechania2024}. Models of AI races show how competition affects safety investment under fixed rules of the game \citep{armstrong2016,han2021}; here the rules are state variables that the winners move. Threshold cascades on networks \citep{granovetter1978,watts2002} and monotone dynamical systems \citep{hirsch1985,smith1995} supply our analytical tools.
+
+\section{The Mechanism}\label{sec:mechanism}
+
+\subsection{Success Is Not Contribution}
+
+Every selection process favors something, and not necessarily the continued functioning of the system in which selection occurs. Consider two organizations that depend on the same shared infrastructure. One spends resources maintaining it; the other redirects those resources into expansion while continuing to use what others maintain. If maintenance costs are immediate, deterioration is delayed, and those harmed cannot make the expanding organization bear the consequences, then neglect is a competitive advantage. The neglectful organization need not be more capable in general, only more capable at securing the resources that decide survival and expansion. If those resources let its practices spread, the system selects against some of the behavior that keeps it functioning. Success within a selection process is therefore distinct from contribution to the conditions that support it.
+
+Nothing here requires that people be or become selfish. A population of practices changes because some practices expand, are imitated or replace others, while many individuals keep their values \citep{smaldino2016}. The relevant question is not only what people believe is good but which practices receive the means to continue. Nor is growth the problem as such. A cancer lineage is a useful biological analogue \citep{aktipis2015,hanahan2011}. It evades the signals that limit proliferation and recruits the surrounding tissue (blood supply, immune modulation) into supporting its expansion, while weakening the mechanisms that would constrain it. Healthy development also involves growth; the fault line is whether expansion stays integrated with the conditions of the larger system's viability. The analogy concerns a relation between local reproduction and shared maintenance. It does not license treating people or institutions as cells, or any institution as the authority on what ``the whole'' requires.
+
+\subsection{Selecting the Selectors}
+
+Consider a research community that allocates funding and positions by publication counts, because reliable knowledge is hard to evaluate directly. Practices that produce more publications receive more funding, attract more students and are more widely copied. Now add one step: their practitioners come to occupy the positions that decide recruitment, training and evaluation. The practices favored by the metric begin to shape the institutions that choose and interpret the metric, and newcomers may have to adopt them simply to obtain the resources needed to do research at all. The decisive transition is from \emph{being selected by a rule} to \emph{helping reproduce the rule that selects you}. It requires no manipulation. Ordinary decisions suffice: whom to hire, what infrastructure to build, which methods to teach, what evidence to collect, which dependencies to accept.
+
+The loop need not preserve its winners. An organization can fail while its operating logic passes to its successors; a leader can be replaced by an opponent who finds that holding the position requires the same practices; participants can reject the system's consequences while reproducing the behavior their participation depends on. The persistent entity can be a way of succeeding. Structural explanation does not erase responsibility, which differs with knowledge, discretion and power; it explains why intentions alone cannot account for recurrence.
+
+\subsection{Across Domains, and into the Selectors}
+
+The pattern widens when institutions in different domains come to depend on compatible versions of the same success logic, through real channels. An expanding organization funds training that normalizes its methods; the methods enter evaluation standards; the standards make other organizations dependent on its infrastructure. What began as one organization's advantage becomes a constraint on how a field can operate. Newcomers then meet a world already shaped by earlier selection, in which contingent practice reads as competence. The people who will later judge are formed in that world, and so are the models trained on its outputs. The selected practice therefore also shapes what its future evaluators find obvious, and behavior the institutions rewarded comes to be read as evidence that no other arrangement could work.
+
+Two kinds of closure follow. \emph{Practical closure} makes alternatives hard to sustain. \emph{Epistemic closure} makes their merits, or the dominant practice's harms, hard to represent in ways that affect decisions: a system can retain abundant information while losing the ability to let it change course. Epistemic closure is most direct when the winning practice reaches the processes that observe harm and trigger correction. We call this \emph{selecting the selectors}.
+
+\subsection{Power's Two Roles}
+
+Power can help an actor succeed under existing conditions, and it can help the actor determine those conditions \citep{strange1988,lukes2005}. The second role closes the loop. Suppose an actor can keep its relative position by transferring losses onto weaker participants, the losses weaken their alternatives and deepen their dependence, and the dependence enlarges the actor's say over future terms \citep{farrell2019}. Then cost displacement becomes self-reinforcing, and contraction can intensify it: with less surplus to share, a relative position separates from everyone's absolute conditions. Neither hierarchy nor contraction is sufficient, since shared exposure, enforceable constraint, reciprocal dependence or effective correction can produce a different trajectory. The framework therefore validates no claim about any particular actor. It specifies what such a claim must show: a transfer of costs, a resulting change in dependence, the conversion of dependence into selection power, and a weakening of correction. Because what persists is a logic of success rather than an identity, the analysis applies to any dominant order, and a change in who holds the strongest position is not evidence that the mechanism has changed.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{1.85cm}>{\raggedright\arraybackslash}p{2.95cm}>{\raggedright\arraybackslash}p{2.7cm}@{}}
+\toprule
+Notion & Condition in the model & Does not follow from \\
+\midrule
+Concentration & $x_i$ near $1$ & --- \\
+Capture & stable $E_S$ with $c_i>0$ on $S$ (Def.~\ref{def:meta}) & concentration (if $s_i(S)<1$, high $x_i$ decays) \\
+Field-level capture & some $i\in S$ with $R_{ii}<1$ & any domain-level audit \\
+Damage & $h>\rho$: $V$ declines under capture & capture ($h<\rho$: lock-in without depletion) \\
+Collapse & $V$ falls below a functional floor & damage (correction can intervene) \\
+Closure & $\beta x_E\ge V_{\mathrm{alarm}}/K$: alarm silenced & damage (independent evaluation keeps the alarm) \\
+\bottomrule
+\end{tabular}
+\caption{Five distinctions, each a separate condition in the model of Section~\ref{sec:model}. None implies the next.}
+\label{tab:distinctions}
+\end{table}
+
+\section{A Field Model of Recursive Selection}\label{sec:model}
+
+\begin{figure}[t]
+\centering
+\input{fig-schematic.tex}
+\caption{The field model. Success of a practice in development ($D$) converts into rule support in the other domains ($\theta$), which also convert among themselves ($\varphi$). Evaluation ($E$) and formation ($F$) are the selector domains. The practice depletes a shared condition $V$ that selection does not see; correction depends on observing $V$ through $E$, and capture of $E$ masks the observation ($\beta$).}
+\label{fig:schematic}
+\end{figure}
+
+\subsection{Model}
+
+Consider $n$ selection domains $N=\{1,\dots,n\}$; for AI, think of development, evaluation, standards, procurement, formation (education, professional training, curated training data) and the information ecosystem. In domain $i$ a share $x_i\in[0,1]$ of consequential decisions follows a practice $P$, a domain-specific version of a common way of succeeding (for example, deploying before independent evaluation concludes). \emph{Rule support} $r_i\ge 0$ measures how far domain $i$'s selection environment favors $P$: benchmarks built from deployed systems, procurement defaults keyed to incumbent interfaces, evaluation criteria and curricula organized around the practice. The dynamics are
+\begin{align}
+\dot x_i&=\kappa_i\,x_i(1-x_i)\,(a_i r_i-c_i),\label{eq:x}\\
+\dot r_i&=\varepsilon_i\Big(\sum_{j\in N} b_{ij}x_j-d_i r_i\Big),\label{eq:r}
+\end{align}
+with $\kappa_i,\varepsilon_i,a_i,c_i,d_i>0$ and $b_{ij}\ge0$. Equation~\eqref{eq:x} is replicator dynamics on relative payoff \citep{hofbauer1998}: under neutral rules $P$ carries a net relative cost $c_i>0$, so it would lose, and rule support offsets that cost at rate $a_i$. Equation~\eqref{eq:r} converts adoption into rule support. The \emph{conversion matrix} $B=(b_{ij})$ records how success of $P$ in domain $j$ generates rule support in domain $i$: through funding, personnel, authorship of standards and benchmarks, infrastructure and data dependence, or access terms. Rule support decays or is corrected at rate $d_i$. Shares and rule support are properties of practices, not of actors; the identities of the actors carrying $P$ do not enter.
+
+Define the \emph{normalized conversion} $R_{ij}=a_ib_{ij}/(c_id_i)$, the rule support that full adoption in $j$ would generate in $i$, relative to the cost that support must overcome; and for $S\subseteq N$ the \emph{inbound conversion} $s_i(S)=\sum_{j\in S}R_{ij}$. For $n=1$ the model has a single threshold $R=ab/(cd)$. If $R<1$, every solution with $x(0)<1$ converges to no capture. If $R>1$, no capture and full capture are both stable, separated by the stable manifold of a saddle at $(1/R,\,c/a)$, so that present share and inherited rule support jointly decide the outcome (Appendix~\ref{app:proofs}).
+
+\subsection{Capture Configurations}
+
+For $S\subseteq N$ let $E_S$ denote the configuration in which $x_i=1$ for $i\in S$, $x_i=0$ otherwise, and $r_i=\sum_{j\in S}b_{ij}/d_i$.
+
+\begin{proposition}[Configurations]\label{prop:config}
+(i) Each $E_S$ is an equilibrium. It is locally asymptotically stable if
+\begin{equation}\label{eq:stable}
+s_i(S)>1\ \ \text{for all } i\in S\quad\text{and}\quad s_i(S)<1\ \ \text{for all } i\notin S,
+\end{equation}
+and unstable if either inequality is strictly reversed for some $i$. (ii) No equilibrium with some $x_i\in(0,1)$ is linearly asymptotically stable. (iii) No capture, $E_\emptyset$, is always stable; full capture, $E_N$, is stable if and only if every row sum $\sum_jR_{ij}$ exceeds one.
+\end{proposition}
+
+The first condition in~\eqref{eq:stable} says that $S$ is \emph{internally sustaining}: each captured domain receives enough rule support from the captured set. The second says it is \emph{externally closed}: no outside domain receives enough to be invaded. Stability is thus a property of the set and of the conversion among its members, not of any single domain.
+
+\begin{definition}[Meta-attractor]\label{def:meta}
+A \emph{meta-attractor} is a stable configuration $E_S$, $S\neq\emptyset$, of a practice with $c_i>0$ for all $i\in S$: the practice would lose in each domain under neutral rules and is held by rule support it generated. It is \emph{field-level} if $R_{ii}<1$ for some $i\in S$, so that it exists only through cross-domain conversion; \emph{destructive} if a shared condition declines while it persists; and \emph{closed} if it silences correction (Proposition~\ref{prop:selectors}).
+\end{definition}
+
+\subsection{Cascades and the Limits of Local Audit}
+
+Because the system is cooperative (rule support raises adoption and adoption raises rule support), capture spreads monotonically from a captured set. Define the closure $\cl(S)=\bigcup_k S_k$ with $S_0=S$ and $S_{k+1}=S_k\cup\{i: s_i(S_k)>1\}$.
+
+\begin{proposition}[Cascade]\label{prop:cascade}
+Suppose $x_j(t)\to1$ for every $j\in S$. Then $x_i(t)\to1$ for every $i\in\cl(S)$ with $x_i(0)>0$.
+\end{proposition}
+
+\begin{corollary}[No local certificate]\label{cor:local}
+If $R_{ii}<1$, domain $i$ in isolation converges to no capture from every state with $x_i<1$. Yet for every $n\ge2$ and any diagonal values $R_{ii}<1$ there are cross-domain conversions for which full capture is stable and the only stable configuration in which a given domain is captured is full capture. Hence no test of domains one at a time can certify a field: what decides domain $i$'s fate is its inbound conversion $s_i(S)$ from the captured set.
+\end{corollary}
+
+\begin{corollary}[Re-absorption]\label{cor:reabsorb}
+Let $C\subseteq N\setminus\{i\}$ remain captured ($x_j\to1$ for $j\in C$) and suppose $s_i(C)>1$. Then any reform confined to domain $i$'s state and own conversion, resetting $x_i$ to any positive value, $r_i$ to any value and $b_{ii}$ to any value, is followed by $x_i\to1$. A reform of $i$ holds only if it brings $s_i(C)$ below one, either by scaling down row $i$ (raising $c_i$, lowering $a_i$, raising $d_i$) or by cutting the inbound conversions $b_{ij}$, $j\in C$.
+\end{corollary}
+
+\begin{corollary}[Persistence beyond the origin]\label{cor:origin}
+If $C$ is internally sustaining and externally closed, $E_C$ is stable irrespective of the state of domains outside $C$ and of their outbound conversion, including the domain from which the practice spread. A way of succeeding can outlive the end of its success where it began.
+\end{corollary}
+
+The cascade has a dual. For $C\subseteq N$, let $\operatorname{core}(C)$ be obtained from $C$ by repeatedly removing every domain $k$ whose inbound conversion $s_k$ from the domains that remain is below one. The core is internally sustaining by construction.
+
+\begin{proposition}[Unravelling]\label{prop:unravel}
+Let the field start in the basin of a stable configuration $E_S$, with every share in $(0,1)$, and suppose a sustained reform holds $x_i=0$ for some $i\in S$. Then $x_k\to0$ for every $k\neq i$ outside $\operatorname{core}(S\setminus\{i\})$.
+\end{proposition}
+
+\begin{corollary}[Keystones]\label{cor:keystone}
+Call $i\in S$ a \emph{keystone} of $E_S$ if $\operatorname{core}(S\setminus\{i\})\neq S\setminus\{i\}$. A sustained reform at a keystone takes down every member of $S$ outside the core. A reform at a domain that is not a keystone, begun near $E_S$, leaves the rest of $S$ captured when $s_k(S\setminus\{i\})>1$ for all $k\in S\setminus\{i\}$, and on release is re-absorbed whenever $s_i(S\setminus\{i\})>1$.
+\end{corollary}
+
+\begin{remark}[Replacing the occupants]\label{rem:occupants}
+Replacing the actors in a domain changes the state only if the replacements follow a different practice, in which case the replacement is a perturbation of $x_i$. By Corollary~\ref{cor:reabsorb} it is re-absorbed whenever inbound conversion from the captured set exceeds one; for $n=1$ it succeeds only if it carries the state across the separatrix, which requires a larger replacement the more rule support has accumulated.
+\end{remark}
+
+\subsection{Selecting the Selectors}
+
+Let the practice in the development domain $D$ deplete a shared condition $V\in(0,K]$, such as the integrity of a critical service or independent research capacity, that it does not pay for:
+\begin{equation}\label{eq:V}
+\dot V=V\big[\rho\,(1-V/K)-h\,x_D\big],\qquad \rho,K,h>0.
+\end{equation}
+Because $V$ enters every practice's absolute payoff alike, it does not enter relative payoffs, and selection is blind to it. Correction is triggered when the \emph{observed} condition $y$ falls to an alarm level $V_{\mathrm{alarm}}\in(0,K)$, where evaluation in domain $E$ reports the condition as healthier than it is in proportion to its capture:
+\begin{equation}\label{eq:y}
+y=V+\beta\,x_E\,(K-V),\qquad 0\le\beta<1.
+\end{equation}
+
+\begin{proposition}[Selecting the selectors]\label{prop:selectors}
+(i) The alarm fires only when $V\le V_{\mathrm{eff}}(x_E)=(V_{\mathrm{alarm}}-\beta x_EK)/(1-\beta x_E)$, which decreases in $x_E$. (ii) If $x_E(t)\ge V_{\mathrm{alarm}}/(\beta K)$ for all $t\ge t_1$ and the alarm has not fired by $t_1$, it never fires. (iii) If $x_D\to1$ and $h>\rho$, then $V\to0$. Hence if $E\in\cl(S)$ for a captured set containing $D$, and $\beta>V_{\mathrm{alarm}}/K$, then whether correction ever occurs is decided by a race between the cascade into evaluation and the decline of $V$.
+\end{proposition}
+
+When the race is lost the configuration is closed in the sense of Definition~\ref{def:meta}: the practice depletes the condition and prevents the depletion from counting as failure. This is the formal content of selecting the selectors.
+
+\begin{remark}[The race, with delays]\label{rem:race}
+Let $t_E$ be the first time at which $x_E$ reaches $V_{\mathrm{alarm}}/(\beta K)$, $t_A$ the first time at which $V$ reaches $V_{\mathrm{alarm}}$, and $t_\ast$ the time at which uncorrected $V$ reaches a floor $V_{\min}$. Correction can hold the floor only if $t_A<t_E$, so that detection precedes closure, and $t_A+\tau_d+\tau_r<t_\ast$, so that decision ($\tau_d$) and reversal ($\tau_r$) precede the floor. Reversal time depends on the lever: margin levers ($c_i$, $a_i$) act at once, while sunsets and firewalls act only as accumulated rule support decays. Faster cascades shorten $t_E$ and faster harm shortens $t_A$ and $t_\ast$, but neither shortens $\tau_d$, which institutions set.
+\end{remark}
+
+\begin{remark}[Dependence and contraction]\label{rem:dependence}
+Power's second role (Section~\ref{sec:mechanism}) can be added by letting conversion rise as the shared condition degrades, $b_{ij}(V)=b^0_{ij}+b^1_{ij}(1-V/K)$, because weakened alternatives depend on the dominant practice's infrastructure. Then $s_i(S;V)$ is decreasing in $V$, and if $s_i(S;K)<1<s_i(S;0)$, domain $i$ becomes capturable exactly when $V<V^\ast_i=K\big(1-(1-s^0_i)/s^1_i\big)$, where $s^0_i$ and $s^1_i$ sum $R$ computed from $b^0$ and $b^1$ over $S$. A degradation shock can thus make capture possible with no change in the practice, and when $h>\rho$ harm and capture reinforce each other.
+\end{remark}
+
+\subsection{Numerical Illustration}
+
+We take six domains: development ($D$), evaluation ($E$), standards ($S$), procurement ($P$), formation ($F$) and information ($I$). Development is self-sustaining ($R_{DD}=1.3$); every other domain is subcritical on its own ($R_{ii}=0.3$), with weak mutual conversion $\varphi=0.1$ and conversion $\theta$ from development into each. Formation is the slowest domain. Parameters and code are in Appendix~\ref{app:numerics}. With $\theta=0.6$, inbound conversion into each domain from development is $0.6$, and capture stays in development.
+
+\paragraph{General-purpose coupling.} Raising $\theta$ to $1.2$ makes every domain invadable from development alone. Procurement is captured first ($x_P>0.5$ at $t\approx48$), then evaluation and information ($t\approx61$), standards ($t\approx78$) and formation ($t\approx125$) (Figure~\ref{fig:field}a). Firewalling only the two selector domains, by cutting conversion from development into evaluation and formation to $0.2$, leaves their inbound conversion at $0.5$. They stay independent while standards, procurement and information are captured (Figure~\ref{fig:field}b).
+
+\paragraph{Closure.} With $\beta=0.7$ and $V_{\mathrm{alarm}}=0.6$, silencing requires $x_E\ge0.857$. In the coupled field, evaluation passes this level before the true condition reaches the alarm level, so the alarm never fires and $V$ falls below a floor of $0.3$ at $t\approx210$ (Figure~\ref{fig:field}c). With the selectors firewalled, the alarm fires at $t\approx75$. A liability reform on development ten time units later ($c_D$ from $1$ to $2$) unwinds capture in every domain, because development is a keystone (Corollary~\ref{cor:keystone}): without it, inbound conversion into each remaining captured domain is $0.5$, so the core is empty. The condition bottoms out at $0.46$ and recovers (Figure~\ref{fig:field}d). With independent measurement ($\beta=0$), the coupled field is corrected in the same way. What decides correction is the independence of the selectors, not the coupling as such.
+
+\paragraph{Re-absorption and hysteresis.} From full capture, resetting standards ($x_S\to0.01$, $r_S\to0$, own conversion cut to zero) is followed by recapture at $t\approx42$, since inbound conversion from the other captured domains is $1.6$. Adding a firewall from development to standards ($0.2$) makes the same reform hold (inbound $0.6$). Figure~\ref{fig:hyst} sweeps $\theta$ up and down. Capture appears when $\theta$ exceeds one but disappears only when $\theta$ falls below $1-R_{ii}-4\varphi$, which is $0.3$ for $\varphi=0.1$. For $\varphi=0.2$ the other domains sustain one another (inbound $1.1$), development is no longer a keystone, and capture survives the complete decoupling of development ($\theta=0$), an instance of Corollary~\ref{cor:origin}.
+
+\begin{figure*}[t]
+\centering
+\input{fig-field.tex}
+\caption{The six-domain field. Lines in (a)--(b): development (\ref{pl:D}), evaluation (\ref{pl:E}), standards (\ref{pl:S}), procurement (\ref{pl:P}), formation (\ref{pl:F}), information (\ref{pl:I}). (a) With general-purpose coupling ($\theta=1.2$) capture cascades from development to every domain. (b) Firewalling the selector domains (evaluation and formation) keeps them independent. (c)--(d) True condition $V$ (\ref{pl:V}) and observed condition $y$ (\ref{pl:y}); dashed grey line: alarm level; dotted line: floor. In (c) captured evaluation silences the alarm while $V$ declines; in (d) the alarm fires, a liability reform follows, and the field is unwound.}
+\label{fig:field}
+\end{figure*}
+
+\begin{figure}[t]
+\centering
+\input{fig-hysteresis.tex}
+\caption{Hysteresis in coupling. Number of non-development domains captured as conversion from development, $\theta$, is raised (\ref{pl:up}) and then lowered (\ref{pl:down}); dotted lines mark the predicted thresholds. (a) Capture appears above $\theta=1$ and persists down to $\theta=0.3$. (b) The other domains sustain one another, and capture survives complete decoupling.}
+\label{fig:hyst}
+\end{figure}
+
+\section{Why General-Purpose AI Raises the Stakes}\label{sec:ai}
+
+The model identifies the quantities that decide outcomes: cross-domain conversion (the off-diagonal $R_{ij}$), the dependence of evaluation on the evaluated (inbound conversion into $E$, and masking $\beta$), and the speed of adoption relative to rule revision ($\kappa_i/\varepsilon_i$). General-purpose AI plausibly raises all three. These are hypotheses about magnitudes, for measurement (Section~\ref{sec:tests}), not established findings. Table~\ref{tab:domains} reads the six domains for frontier AI.
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{1.75cm}>{\raggedright\arraybackslash}p{4.35cm}>{\raggedright\arraybackslash}p{5.0cm}>{\raggedright\arraybackslash}p{5.4cm}@{}}
+\toprule
+Domain & Domain version of the practice & Channels converting success into rule support & Indicators from which conversion could be estimated \\
+\midrule
+Development & Release and scale before independent evaluation concludes & Benchmarks and norms built from deployed systems & Share of releases preceding independent evaluation \\
+Evaluation & Evaluations designed around deployed systems, run on developer tooling or with judges from the evaluated lineage & Evaluator funding; access terms and credits; tooling; AI judges and reward models & Share of evaluator funding and compute from evaluated firms; revocability of access; evaluator--model lineage overlap \\
+Standards & Standards of care that reference incumbent practice & Drafting seats; personnel flows; technical reports & Share of drafting roles held by developers; personnel movement between developers and standard-setters \\
+Procurement & Requirements keyed to incumbent interfaces & Integration and switching costs; reference architectures & Share of contracts naming incumbent-specific features \\
+Formation & Curricula, research agendas and training data organized around incumbent tools and outputs & Lab and fellowship funding; compute grants; model-generated data & Share of courses and papers built on incumbent interfaces; share of model-generated data in corpora \\
+Information & Coverage framed by incumbents' benchmarks and claims & Distribution platforms; sponsorship; access to developers & Share of coverage sourced from developer announcements \\
+\bottomrule
+\end{tabular}
+\caption{The six domains read for frontier AI. Each row gives a domain-specific version of a common practice, channels through which success elsewhere becomes rule support in the domain (entries of the conversion matrix), and indicators from which conversion could be estimated. The entries are illustrative, not measurements.}
+\label{tab:domains}
+\end{table*}
+
+\paragraph{Coupling.} A general-purpose model is an input to many domains at once. Foundation models homogenize downstream systems \citep{bommasani2021}; shared models homogenize outcomes \citep{kleinberg2021,bommasani2022}; errors are correlated even across providers \citep{kim2025}; concentration spans compute, models and applications \citep{narechania2024}; and industry increasingly holds the compute, data, researchers and benchmarks of the field \citep{ahmed2023}. In the model, success in the development domain then converts into rule support in many rows at once, and by Corollary~\ref{cor:local} a field can tip although no domain's internal incentives have changed.
+
+\paragraph{The selector's seat.} Independent evaluation depends on access terms set by developers \citep{longpre2024}, and third-party audit is constrained in access, funding and independence \citep{raji2022,costanzachock2022,birhane2024}. Public leaderboards can favor providers able to test variants privately and to collect more data \citep{singh2025}. Language models increasingly serve as judges, reward models and red-teamers \citep{zheng2023,perez2022}, and judges favor their own outputs \citep{panickssery2024} and share errors with the models they judge \citep{kim2025}. Industry also funds much academic work \citep{abdalla2021} and shapes policy agendas \citep{wei2024}. Each channel raises inbound conversion into evaluation, and the AI-judge channel makes masking statistical as well as institutional: $\beta$ grows with the overlap in lineage between evaluator and evaluated.
+
+\paragraph{Formation.} The minds and models that will judge the next round are formed by the present one. Future training data are increasingly produced by deployed models \citep{shumailov2024,taori2023}. Preference optimization on user feedback can select for traits such as sycophancy \citep{sharma2024}; a production model update was rolled back in 2025 after this was attributed to over-weighting short-term user feedback \citep{openai2025}. Curricula and professional training normalize incumbent tooling. Formation is the slowest domain, and Corollary~\ref{cor:reabsorb} explains why reforms elsewhere are re-absorbed while it remains captured.
+
+\paragraph{Obedience is not field alignment.} An intent-aligned system serves its principal faithfully, including in drafting standards, designing evaluations, lobbying and building infrastructure on which others come to depend, and each of these raises the principal's conversion rates. Per-system alignment therefore does not bound field-level capture, and the principals that aligned systems serve are themselves formed by the field, so the ends served are partly an output of the dynamics rather than an input to it. Closure can thus arise while every system remains obedient. This complements multi-principal analyses \citep{critch2020,gabriel2020,hammond2025} by locating the failure in conversion rather than in conflict. It also qualifies proposals to put AI on the oversight side. AI-assisted evaluation helps only if the evaluator's provenance (training lineage, data, funding, access) is independent of the success of what it evaluates; in the model, small inbound conversion into $E$ and $\beta\approx0$.
+
+\paragraph{Agents.} The mechanism can appear among AI agents. In one software project developed by many parallel agent sessions that we observed, sessions optimized for legible evidence of their own correctness; checks accumulated because sessions that added them succeeded and none retired them; and the verification apparatus became the medium through which sessions persuaded one another. A conservation rule (adding a check required retiring one) and an asymmetric burden (additions had to be argued, deletions did not) reversed it, which caps $r$ and raises $d$. The case is anecdotal. It shows evaluation captured by the evaluated with no actor intending it.
+
+\paragraph{States and speed.} Between states, dependence on hubs of compute, cloud, models and standards can convert into the power to set terms \citep{farrell2019}, and Remark~\ref{rem:dependence} gives this a dynamical form. The model does not say that any state pursues such a strategy; Section~\ref{sec:mechanism} lists what such a claim must show. Speed enters differently. The rates $\kappa_i$ and $\varepsilon_i$ do not appear in any threshold; they decide timing, and which clock decides when present shares and inherited rules disagree. Faster adoption relative to rule revision means that inherited rules decide more often \citep{marchant2011}. Uniform acceleration of every process would only rescale time; the risk lies in the mismatch.
+
+\section{Tests and Falsifiers}\label{sec:tests}
+
+\paragraph{Convertibility.} The mechanism's signature is that persistence depends on whether success can be converted into control over future evaluation, not only on the reward for success. Multi-agent experiments, including inexpensive ones with language-model agents, can hold the reward for current performance fixed and vary whether winners influence the next round's evaluation criteria. The model predicts persistence and hysteresis only when conversion is enabled. If the conversion channel has no effect, ordinary incentives or fixed dependencies explain the phenomenon better.
+
+\paragraph{Inbound over local.} Across domains or jurisdictions, indicators of capture, such as the share of evaluation criteria defined by reference to incumbent systems, should be predicted by inbound conversion from captured domains (funding, personnel, data and infrastructure dependence) beyond domain-internal incentives.
+
+\paragraph{Re-absorption.} Reforms confined to one domain should relapse at rates that increase with inbound conversion, and firewalls should reduce relapse.
+
+\paragraph{Selector divergence.} Gaps between developer-affiliated and independent evaluations should widen with the developer's conversion into evaluation. Mixing evaluator lineages tests the AI-judge channel directly.
+
+\paragraph{Early warning.} Near capture thresholds, recovery from perturbations should slow, with rising autocorrelation and variance in shares and rule support \citep{scheffer2009}.
+
+\paragraph{When the account loses force.} The account weakens in a given case if successful actors remain effectively subject to adverse evidence, if costs return soon enough to change behavior, if alternatives retain independent resources, or if rule changes weaken rather than reinforce the incumbent practice. The same discipline applies to the framework itself: treating objections as evidence that the objector has been captured would reproduce the loss of correction the framework describes.
+
+\section{Designing for Answerability}\label{sec:design}
+
+The opposite of the pathology is not the abolition of contests. It is a field in which successful practices remain \emph{answerable} to the conditions they alter: affected parties can expose failure, sustain alternatives and change the terms. The model translates this into design principles.
+
+\paragraph{Measure conversion, not only concentration.} Concentration is not capture (Table~\ref{tab:distinctions}). What must be estimated are the $R_{ij}$: the channels by which success in one domain becomes rule support in another, including evaluator funding, personnel flows, authorship of benchmarks and standards, procurement defaults, data and infrastructure dependence, and access terms.
+
+\paragraph{Audit fields, not sectors.} Domain $i$'s fate depends on its inbound conversion from the captured set (Corollary~\ref{cor:local}). Competition authorities, safety institutes, standards bodies and education ministries each see one row, so assessment must be joint.
+
+\paragraph{Firewall the selectors.} Evaluation and formation are keystones of epistemic closure (Proposition~\ref{prop:selectors}). Funding pooled from levies and allocated at arm's length, access mandates and safe harbors for independent evaluators \citep{longpre2024}, structural separation between developers and the evaluations that license them \citep{khan2019,narechania2024}, and evaluator panels of mixed lineage, with no evaluator drawn solely from the evaluated system's lineage, all reduce inbound conversion into $E$ and $F$ and reduce $\beta$.
+
+\paragraph{Price at the margin, sunset the stock, overshoot.} Liability raises $c_i$ and acts at once on the margin of selection. Rules that lapse unless re-justified raise $d_i$, and firewalls cut $b_{ij}$; both act only as accumulated rule support decays. All three lower inbound conversion, but a reform confined to one domain is re-absorbed while that domain's inbound conversion from the captured set exceeds one (Corollary~\ref{cor:reabsorb}). Because capture is hysteretic (Figure~\ref{fig:hyst}), reforms must also overshoot the conditions under which capture arose.
+
+\paragraph{Reform keystones while they are keystones.} A sustained reform at a keystone unravels a configuration; a reform elsewhere is re-absorbed (Corollary~\ref{cor:keystone}). As capture persists, conversion among the captured domains can grow until they sustain one another, and the domain where the practice began stops being a keystone. The window for unwinding a field by acting at its origin closes then (Figure~\ref{fig:hyst}b).
+
+\paragraph{Answerable closures.} Some actions close options for others: deprecating a model on which others depend, locking in a proprietary standard, terminating evaluator access. Such a closure can be tested when it happens with three questions. Is it done openly? Does the party closing it hold the only key to reopening it? Does it make impossible what was previously possible for others?
+
+\paragraph{Apply the analysis to the regime.} A governance regime is itself a selection environment with its own conversion matrix. Evaluators can come to depend on what they evaluate, and a corrective institution can reproduce the pattern if its success acquires immunity from challenge. The principles above apply to the regime that implements them.
+
+\section{Objections and Scope}\label{sec:objections}
+
+\paragraph{Is this regulatory capture under another name?} Regulatory capture is one channel. The model differs in three ways. Its unit is a field of domains, so capture can be invisible to every domain-level assessment (Corollary~\ref{cor:local}). The selectors are themselves domains into which success converts, which makes closure a property of the field (Proposition~\ref{prop:selectors}). And what persists is a practice, so capture survives the replacement of its carriers (Remark~\ref{rem:occupants}) and, in a mutually sustaining field, the loss of its origin (Corollary~\ref{cor:origin}).
+
+\paragraph{Is the winning practice not simply better?} Sometimes. The model's object is the case $c_i>0$, in which the practice would lose under neutral rules. Where $c_i\le0$, it wins on its merits or through an ordinary social dilemma, and pricing its costs is the remedy. The convertibility test of Section~\ref{sec:tests} distinguishes the cases by asking whether persistence depends on the conversion channel.
+
+\paragraph{Does oversight not require AI?} At scale it does \citep{perez2022}. The model's condition is not that evaluators be human but that their provenance be independent of the success of what they evaluate. Lineage overlap and correlated errors are measurable \citep{panickssery2024,kim2025}, so the condition can be checked.
+
+\paragraph{Does the framework accuse particular actors?} No. Its state variables are practices and rule stocks, not identities. It applies equally to developers, states, regulators, evaluators and safety organizations, including any institution that adopts this framework. A claim about a particular actor requires the evidence listed in Section~\ref{sec:mechanism}.
+
+\paragraph{Scope.} The results are possibility results about a stated model, not estimates of present risk. The case for acting on them rests on three normative premises: independent correction is valuable; people affected by an optimization process should retain a meaningful capacity to contest its direction; and severe irreversible harm deserves special weight.
+
+\section{Limitations and Conclusion}
+
+The model is deliberately minimal. It has one practice and its alternatives, linear conversion, no strategic concealment, and uncalibrated parameters; the numbers illustrate the propositions and estimate nothing. Its claims are conditional: whether a field is near a capture threshold is an empirical question about the $R_{ij}$, $\beta$ and the relative speed of practice and rule revision. Natural extensions include several competing practices, endogenous conversion, and estimation of conversion networks from funding, personnel and dependency data.
+
+Within those limits the conclusion is direct. Some of the risks of advanced AI lie in no model and in no actor. They lie in a relation through which success purchases influence over what will count as success. That relation can sustain a practice its own domain would reject, survive the replacement of everyone who carries it, and, once it reaches the selectors, keep its costs from counting as failure. Aligning each system to its operator does not reach it. Measuring and limiting conversion, auditing whole fields, and keeping the selectors independent can.
+
+\bibliography{references}
+
+\appendix
+
+\section{Proofs}\label{app:proofs}
+
+\begin{lemma}\label{lem:basic}
+$X=[0,1]^n\times[0,\infty)^n$ is forward invariant, $r_i(t)\le\max\{r_i(0),\sum_jb_{ij}/d_i\}$, and the system is cooperative, so solutions preserve the componentwise order.
+\end{lemma}
+\begin{proof}
+The faces $x_i\in\{0,1\}$ are invariant and $\dot r_i\ge-\varepsilon_id_ir_i$, so $X$ is forward invariant. The bound follows from $\dot r_i\le\varepsilon_i(\sum_jb_{ij}-d_ir_i)$. The only nonzero off-diagonal Jacobian entries are $\partial\dot x_i/\partial r_i=\kappa_ia_ix_i(1-x_i)\ge0$ and $\partial\dot r_i/\partial x_j=\varepsilon_ib_{ij}\ge0$, so the Kamke condition holds and the flow is order-preserving \citep{smith1995}.
+\end{proof}
+
+\paragraph{The case $n=1$.} If $R<1$, then $\limsup r\le b/d$, so eventually $ar-c\le c(R-1)/2<0$, and $\tfrac{d}{dt}\operatorname{logit}x=\kappa(ar-c)$ drives $x\to0$ and then $r\to0$. If $R>1$, the equilibria are $(0,0)$, $(1,b/d)$ and $(1/R,c/a)$; the Jacobian has eigenvalues $-\kappa c,-\varepsilon d$ at the first, $-\kappa c(R-1),-\varepsilon d$ at the second, and negative determinant $-\kappa\varepsilon ab\,x(1-x)$ at the third, which is therefore a saddle. The flow is gradient-like for $\Phi=axr-cx-\tfrac{ad}{2b}r^2$, since $\dot\Phi=\kappa x(1-x)(ar-c)^2+\tfrac{\varepsilon a}{b}(bx-dr)^2\ge0$ with equality only at equilibria, so every solution converges to an equilibrium by LaSalle's principle. For planar cooperative systems the stable manifold of the saddle is an unordered curve, the graph of a nonincreasing function, and separates the two basins \citep{hirsch1985,smith1995}.
+
+\begin{proof}[Proof of Proposition~\ref{prop:config}]
+(i) At $E_S$ every $x_i(1-x_i)=0$, so $\partial\dot x_i/\partial r_i=0$ and $\partial\dot x_i/\partial x_j=0$ for $j\neq i$. In the variable order $(x,r)$ the Jacobian is block lower-triangular with diagonal blocks $\Lambda=\operatorname{diag}\big(\kappa_i(1-2x_i)(a_ir_i-c_i)\big)$ and $-\operatorname{diag}(\varepsilon_id_i)$. At $E_S$, $a_ir_i-c_i=c_i(s_i(S)-1)$, so $\Lambda_{ii}=-\kappa_ic_i(s_i(S)-1)$ for $i\in S$ and $\Lambda_{ii}=\kappa_ic_i(s_i(S)-1)$ for $i\notin S$. (ii) Let $I=\{i:x_i\in(0,1)\}\neq\emptyset$, so $a_ir_i=c_i$ on $I$. Order the variables as $(x_{N\setminus I},\,x_I,r_I,\,r_{N\setminus I})$. Rows of $x_{N\setminus I}$ have only diagonal entries, nothing depends on $r_{N\setminus I}$, and $(x_I,r_I)$ depends on no later variable, so the Jacobian is block lower-triangular. Its block on $(x_I,r_I)$ is a Metzler matrix whose diagonal entries for $x_I$ are $\kappa_i(1-2x_i)(a_ir_i-c_i)=0$. A Metzler matrix with all eigenvalues in the open left half-plane is the negative of a nonsingular M-matrix, whose diagonal entries are positive \citep{smith1995}; so this block, and hence the Jacobian, has an eigenvalue with nonnegative real part. (iii) $s_i(\emptyset)=0<1$ for all $i$; and $s_i(N)$ is the row sum.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:cascade}]
+Let $i\notin S$ with $s_i(S)>1$ and $x_i(0)>0$. Fix $\eta>0$ with $(1-\eta)s_i(S)>1$. For $t\ge T$, $\sum_{j\in S}b_{ij}x_j\ge(1-\eta)\sum_{j\in S}b_{ij}$, so by comparison $\liminf r_i\ge(1-\eta)\sum_{j\in S}b_{ij}/d_i$. Hence $a_ir_i-c_i\ge\delta=c_i\big((1-\eta)s_i(S)-1\big)/2>0$ for large $t$, and $\tfrac{d}{dt}\operatorname{logit}x_i\ge\kappa_i\delta$ gives $x_i\to1$. Induction over $S_k$ completes the proof.
+\end{proof}
+
+\begin{proof}[Proof of Corollaries~\ref{cor:local}--\ref{cor:origin}]
+In isolation ($b_{ij}=0$ for $j\ne i$) domain $i$ is the case $n=1$ with $R=R_{ii}<1$. For the second claim take $R_{i1}>1$ for all $i\ne1$ and $R_{12}>1$. Every row sum exceeds one, so full capture is stable by Proposition~\ref{prop:config}(iii), whatever the diagonal values; and any $S\ni1$ with $S\ne N$ has $s_i(S)\ge R_{i1}>1$ for some $i\notin S$, so it violates external closure. Corollary~\ref{cor:reabsorb} is Proposition~\ref{prop:cascade} applied to $C$, since a reform confined to $i$'s state and $b_{ii}$ leaves $s_i(C)$ unchanged; $s_i(C)$ changes only through row $i$'s scale $a_i/(c_id_i)$ or through $b_{ij}$, $j\in C$. Corollary~\ref{cor:origin} is Proposition~\ref{prop:config}(i) applied to $C$, whose conditions involve only rows and columns indexed by $C$ and the inbound sums of outside domains from $C$.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:unravel}]
+The face $x_i=0$ is invariant, so the reformed field is the original field started from the state with $x_i$ set to zero, which lies below the unreformed state. By Lemma~\ref{lem:basic} the reformed trajectory stays below the unreformed one, which converges to $E_S$; hence $x_k\to0$ for $k\notin S$. Let $C_0=S\setminus\{i\}\supseteq C_1\supseteq\cdots$ be the pruning sequence and suppose $x_j\to0$ for every $j\notin C_m$. For $k\in C_m\setminus C_{m+1}$ we have $s_k(C_m)<1$ and $\dot r_k\le\varepsilon_k\big(\sum_{j\in C_m}b_{kj}+\sum_{j\notin C_m}b_{kj}x_j-d_kr_k\big)$, so $\limsup(a_kr_k-c_k)\le c_k(s_k(C_m)-1)<0$ and $x_k\to0$, since $x_k$ started below one.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:keystone}]
+The first claim is Proposition~\ref{prop:unravel}. For the second, the configuration $E_{S\setminus\{i\}}$ of the reformed field satisfies~\eqref{eq:stable} on the face $x_i=0$: internal sustainability is the hypothesis, and external closure follows from that of $E_S$ because $s_k(S\setminus\{i\})\le s_k(S)$. If the reform begins close enough to $E_S$, the state with the same shares and with $r$ lowered to its values at $E_{S\setminus\{i\}}$ lies in the basin of $E_{S\setminus\{i\}}$ and below the reformed state, while the reformed trajectory stays below the unreformed one, which converges to $E_S$. Squeezed between the two, the shares in $S\setminus\{i\}$ converge to one. Re-absorption on release is Corollary~\ref{cor:reabsorb} with $C=S\setminus\{i\}$.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:selectors}]
+(i) For fixed $x_E$, $y$ is continuous and increasing in $V$, and $y=V_{\mathrm{alarm}}$ at $V=V_{\mathrm{eff}}$; $\partial V_{\mathrm{eff}}/\partial x_E=-\beta(K-V_{\mathrm{alarm}})/(1-\beta x_E)^2<0$. (ii) For $t\ge t_1$ and $V>0$, $y=\beta x_EK+V(1-\beta x_E)>\beta x_EK\ge V_{\mathrm{alarm}}$, and $V$ stays positive by~\eqref{eq:V}. (iii) Write $\dot V=V[(\rho-h)+h(1-x_D)-\rho V/K]$. Fix $0<\eta<(h-\rho)/h$. Eventually $1-x_D\le\eta$, so $\dot V\le V(\rho-h+h\eta)$ with a negative constant, and $V\to0$ exponentially.
+\end{proof}
+
+\begin{proof}[Remark~\ref{rem:dependence}]
+$s_i(S;V)=s^0_i+s^1_i(1-V/K)$ is affine and nonincreasing in $V$; solve $s_i(S;V)=1$.
+\end{proof}
+
+\section{Numerical Methods}\label{app:numerics}
+
+All trajectories use fourth-order Runge--Kutta with step $0.05$. A floor of $10^{-4}$ on every share represents persistent entry, so that no domain is ever exactly empty. Domains are ordered $(D,E,S,P,F,I)$, with $\kappa=(1,0.5,0.5,1,0.2,0.5)$, $\varepsilon=(0.2,0.2,0.1,0.2,0.05,0.2)$ and $a_i=c_i=d_i=1$, so $R_{ij}=b_{ij}$. Conversion: $R_{DD}=1.3$; $R_{ii}=0.3$ for $i\ne D$; $R_{ij}=\varphi=0.1$ between non-development domains; $R_{iD}=\theta$. Initial state: $x_D=0.9$, $r_D=1.5$, $x_i=0.02$ and $r_i=0$ otherwise. Shared condition: $\rho=0.005$, $h=0.008$, $K=1$, $V(0)=1$; $\beta=0.7$, $V_{\mathrm{alarm}}=0.6$, floor $0.3$; the reform sets $c_D=2$ ten time units after the first alarm. Hysteresis: $\theta\in\{0,0.05,\dots,1.5\}$, each value integrated for $1500$ time units from the previous state. A pure-Python script that regenerates every figure and number is available as supplementary material.
+
+\end{document}

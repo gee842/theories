@@ -212,6 +212,14 @@ The same day the conference paper went to four AI peer reviewers (`drafts/2026-1
 - formation given a mechanism, through the costs it lowers, or not claimed at all;
 - a distinction between a practice–rule subsystem that is attracting and a host that is not viable.
 
+**What the revised paper derived (v2, later the same day).** v2 of the paper (`drafts/2026-10-02-iaseai-selecting-the-selectors/`, see its `NOTES.md`) makes the conditional result its centre and proves it in the field model's own terms. Claude drafted it; Ren has not reviewed it.
+- **The gradient.** A carrier with capacity q and success profile y earns W(q) = χ q yᵀMy − C(q), relative to an otherwise identical carrier with q = 0. Here M_ij = c_i L_i R̂_ij: conversion per unit capacity, weighted by the share L_i of the steady-state return realized within the selection horizon. Mean capacity rises exactly when W′ > 0 on the trait support.
+- **Scope.** The return is a quadratic form in success across domains, so it grows superlinearly with the number of domains a carrier occupies. This is the formal reason general-purpose presence matters.
+- **Assistance.** Capable assistance that cuts the marginal cost of conversion multiplies the selected capacity. "Obedience is not field alignment" now comes with its conditions.
+- **The ratchet.** With conversion B⁰ + q̄B̂, capture configurations, cores and cascade hulls grow with mean capacity q̄, and the return to capacity grows with the captured set. In the paper's six-domain illustration the cascade from development had stalled. Selection on capacity alone carries that field into full capture when χ = 0.8 or 0.3, and fails when χ = 0.1.
+- **Two findings that stayed out of the paper.** First, if appropriable support scales with a lineage's own size, capacity pays only for lineages that are already large: it evolves in dominant lineages and works as an entry barrier. Second, persistent entry shifts every capture threshold by order √μ, through saddle-node bifurcations.
+
+The governance lever that follows from χ is to lower the appropriability of rule-making.
 
 ---
 
@@ -526,6 +534,20 @@ All from `03-meta-attractor/2026-10-02-the-meta-attractor-of-power.md`, an essay
 266. The dividing line is answerability: whether successful practices remain answerable to the conditions they alter, including the ability of affected people to expose failure, sustain alternatives and change the terms. It is not individual against collective, competition against cooperation, or decentralisation against hierarchy, and the corrective mechanism belongs inside the analysis. [value stance; design direction] (§9)
 267. The deepest danger is that winning gives a strategy increasing power to prevent its destructiveness from counting as failure. [mechanism] (§9)
 
+### M. Selection for control capacity (2026-10-02, the v2 paper)
+
+These are derived in v2 of the IASEAI paper (`drafts/2026-10-02-iaseai-selecting-the-selectors/`). Claude drafted them after Ren endorsed GPT 6 ASTRA's second-order sentence; the proofs are in the paper's Appendix A, the numbers are in `build/checks.log`, and no one else has checked either.
+
+268. Selection favours conversion capacity exactly when its appropriable, persistence-weighted return exceeds its marginal cost: W′(q) = χ yᵀMy − C′(q), and mean capacity rises when W′ > 0 on the trait support. [derived; conditional] (v2 Prop. 2)
+269. Shared rule support blocks it: carriers that invest are displaced by free riders, even though the practice as a whole gains. Late returns, fast correction, no influence over rules, sanctions and failed transmission block it too. [derived; counterexamples] (v2 Cor. 1)
+270. The return to capacity is superlinear in the number of domains a carrier occupies when cross-domain conversion is positive. [derived] (v2 Cor. 2)
+271. Assistance that divides the marginal cost of conversion by 1 + α multiplies the selected capacity by 1 + α. If the assistance also speeds correction, the two effects oppose. [derived; conditional] (v2 Cor. 3)
+272. Capacity and capture ratchet. Capture configurations, cores and cascade hulls are nondecreasing in mean capacity, and the return to capacity is nondecreasing in the captured set, so selection on capacity alone can carry a field across its capture threshold. [derived; shown numerically] (v2 Prop. 3, Fig. 2)
+273. Captured evaluation delays detection by an amount that diverges as βx_E → V_alarm/K, and strict silencing needs β ≥ V_alarm/K. At measured levels, single-lineage masking means delay. Silence needs a bias that every lineage shares, which formation supplies. [derived; calibration] (v2 Prop. 6)
+274. Each domain's own inbound row certifies that domain conservatively, and the core certifies the field exactly. Isolated, diagonal tests cannot certify. [derived] (v2 Prop. 4)
+275. A keystone can re-absorb its own reform: a margin reform unravels a configuration only if the reformed inbound conversion falls below one against what stays captured. [derived] (v2 Prop. 5)
+276. If appropriable support scales with a lineage's own size, capacity pays only for lineages that are already large, and capacity becomes an entry barrier. [modelling finding, not in the paper] (v2 NOTES)
+
 ---
 
 ## Terms
@@ -624,7 +646,7 @@ All from `03-meta-attractor/2026-10-02-the-meta-attractor-of-power.md`, an essay
 - the four distinctions;
 - answerability as the dividing line.
 
-What it drops is listed under *What was lost along the way*. The same day Claude merged it with the formal layer, the 2026-09-28 model and selection on cognition into a conference paper for IASEAI'27 (`drafts/2026-10-02-iaseai-selecting-the-selectors/`); see *The field formalization (2026-10-02)*.
+What it drops is listed under *What was lost along the way*. The same day Claude merged it with the formal layer, the 2026-09-28 model and selection on cognition into a conference paper for IASEAI'27 (`drafts/2026-10-02-iaseai-selecting-the-selectors/`); see *The field formalization (2026-10-02)*. Later that day, after five reviews and the GPT handoff, v2 of the paper recentred it on selection for control capacity; see *Selection for control over selection*.
 
 **Which formulation is strongest, and for what.** Four answers that should be kept separate rather than merged.
 
@@ -911,7 +933,7 @@ Quoted inside AI-drafted files as the author's own claims, so attribution is one
     - two prior-art concessions: the model is a special case of Tilman et al., and Klüver (2002) used "meta attractor" first.
 
     `17-user-provided-2026-10-02/Philosophy_Adversarial_Benchmark_v0.6.md` is v0.6 of the benchmark, not v0.5. Its §14 revises the min-cut to control domains with a deadline, and explicitly withdraws the suggestion that the min-cut measures epistemic robustness as a whole. Its Appendix A2 proves that belief revisability does not imply recoverability of the world state. Still missing: benchmark v0.2–v0.5, the Mycelium and Civilizational AI documents, an original for the 2025-06 line, and the rest of the ChatGPT history.
-40. **Second-order selection is conditional, not inevitable.** The sentence Ren endorsed is true only under conditions: heritable variation, retention, real influence over selection, appropriable returns, and returns that arrive in time to beat their cost. This session's check shows the sign flips when rule support is shared. The handoff makes the same point. Public texts should state the conditional version. It is also the stronger version, because each condition is a place to intervene.
+40. **Second-order selection is conditional, not inevitable.** The sentence Ren endorsed is true only under conditions: heritable variation, retention, real influence over selection, appropriable returns, and returns that arrive in time to beat their cost. This session's check shows the sign flips when rule support is shared. The handoff makes the same point. Public texts should state the conditional version. It is also the stronger version, because each condition is a place to intervene. v2 of the IASEAI paper proves this conditional version inside the field model (claims 268–272), in Claude's drafting, not yet checked by anyone else.
 
 ---
 
@@ -938,7 +960,7 @@ Quoted inside AI-drafted files as the author's own claims, so attribution is one
 
 - **`06-zhishan/writing-program/context/meta-attractor-foundational-context.md`** — start here. The strongest statement of the theory as a whole: the complete conceptual object, the four coupled domains as a recursion, the full causal path with every transition kept distinct, the comparison to neighbouring concepts, the AI selection ecology, the positive recursion, and two explicit ledgers of what to preserve and what not to inherit. It is also the only document that audits the theory's own overclaims.
 - **`03-meta-attractor/2026-10-02-the-meta-attractor-of-power.md`** — for an academic reader in English, read this first. It holds the second-order clause as "selecting the selectors", the first separation, the way of succeeding, power's two roles, a test design, the four distinctions and answerability, all stated conditionally. Then go to the 2025-08 formal file and the 2026-09-28 paper for the mathematics it leaves out.
-- **`drafts/2026-10-02-iaseai-selecting-the-selectors/`** — the field formalization: the power essay merged with the formal layer and the 2026-09-28 model into a conference paper for IASEAI'27. Read the model section and Appendix A first, then `NOTES.md` for what the merge produced and what it leaves out. AI-drafted, not yet reviewed by Ren.
+- **`drafts/2026-10-02-iaseai-selecting-the-selectors/`** — the field formalization, a conference paper for IASEAI'27. v1 merged the power essay with the formal layer and the 2026-09-28 model; it is kept in `versions/v1/`. v2, written after five reviews and the GPT handoff, is centred on selection for control capacity (claims 268–276). Read Section 4 and Appendix A first, then `NOTES.md` for what changed, the claim–assumption–evidence table, and what stays open. AI-drafted, not yet reviewed by Ren.
 - **`03-meta-attractor/2026-10-02-meta-attractor-context-and-review-gpt.md`** — GPT's handoff (Chinese). It holds the lineage from 2025-02 to 2026-10, the corrections to the draft, the conditional model of second-order selection, the restored breadth, and the work order for the next version. The most complete map so far of what the paper still has to do, though written by GPT and partly second-hand.
 - **`03-meta-attractor/2025-08-formal/2025-08-10-comprehensive-mathematical-definition.md`** — the formal core, and the corpus's most defensible claim to originality: the F/G lifted dynamics, ẇ = λCw, PDI, eigenvalue budgeting (in its corrected form), the non-totality treatment, the named empirical cases, and the two-route AI analysis.
 - **`03-meta-attractor/2025-08-formal/2025-08-10-metaa-prompt-with-user-context.md`** — read for provenance rather than content. Ren's system prompt plus his interstitial narration of each successive demand: this is the one place in the meta-attractor corpus where you can see which turns of thought are his.

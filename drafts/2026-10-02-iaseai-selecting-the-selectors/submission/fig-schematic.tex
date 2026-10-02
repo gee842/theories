@@ -1,29 +1,36 @@
 \begin{tikzpicture}[
-  dom/.style={circle, draw=black!70, thick, minimum size=0.62cm, inner sep=0pt, font=\scriptsize},
+  dom/.style={circle, draw=black!70, thick, minimum size=0.6cm, inner sep=0pt, font=\scriptsize, fill=white},
   sel/.style={dom, fill=cE!18, draw=cE!80!black},
   lab/.style={font=\tiny, text=black!75},
   conv/.style={-{Stealth[length=1.6mm]}, thick, cD},
-  ring/.style={black!35, thin},
+  box/.style={draw=black!70, thick, rounded corners=2pt, font=\scriptsize, align=center, inner sep=2pt, fill=white},
   >=Stealth]
-  \def\rr{1.75}
-  \node[dom, fill=cD!20] (D) at (0,0) {$D$};
-  \node[sel] (E) at (90:\rr) {$E$};
-  \node[dom] (I) at (18:\rr) {$I$};
-  \node[sel] (F) at (306:\rr) {$F$};
-  \node[dom] (P) at (234:\rr) {$P$};
-  \node[dom] (S) at (162:\rr) {$S$};
-  \node[lab, above=0.4mm of E] {evaluation};
-  \node[lab, right=0.4mm of I] {information};
-  \node[lab, below=0.4mm of F] {formation};
-  \node[lab, below=0.4mm of P] {procurement};
-  \node[lab, left=0.4mm of S] {standards};
-  \node[lab] at (0,-0.9) {development};
-  \foreach \a/\b in {E/I, I/F, F/P, P/S, S/E} {\draw[ring] (\a) -- (\b);}
-  \node[lab] at (126:1.98) {$\varphi$};
+  \def\rr{1.45}
+  \draw[black!30, thin, densely dashed] (0,0) circle (\rr);
+  \node[dom, fill=cD!20] (D) at (0,0) {$\dD$};
+  \node[sel] (E) at (90:\rr) {$\dE$};
+  \node[dom] (I) at (18:\rr) {$\dI$};
+  \node[sel] (F) at (306:\rr) {$\dF$};
+  \node[dom] (P) at (234:\rr) {$\dP$};
+  \node[dom] (S) at (162:\rr) {$\dS$};
+  \node[lab, above=0.3mm of E] {evaluation};
+  \node[lab, right=0.3mm of I] {information};
+  \node[lab, below=0.3mm of F] {formation};
+  \node[lab, below=0.3mm of P] {procurement};
+  \node[lab, left=0.3mm of S] {standards};
+  \node[lab] at (-0.47,0.53) {development};
   \foreach \n in {E, I, F, P, S} {\draw[conv] (D) -- (\n);}
-  \node[lab, text=cD] at (74:0.9) {$\theta$};
-  \draw[->, black!60, thick] (E.south west) to[out=225, in=135] node[lab, left, pos=0.5] {alarm} (D.north west);
-  \node[draw=black!70, thick, rounded corners=2pt, font=\scriptsize, align=center, inner sep=2pt] (V) at (3.35,-1.15) {shared\\condition $V$};
-  \draw[->, cH, thick, densely dashed] (D) to[bend right=10] node[lab, text=cH, below, pos=0.72] {harm $h$} (V.west);
-  \draw[->, black!60, densely dotted, thick] (V.north) |- node[lab, right, pos=0.25, align=left] {observed\\through $E$\\(masking $\beta$)} (E.east);
+  \node[lab, text=cD] at (0.62,0.39) {$\theta$};
+  \node[lab, align=center] at (0,-1.08) {$\varphi$, all pairs};
+  % correction
+  \draw[->, black!60, thick] (E.south east) to[out=-60, in=60] (D.north east);
+  \node[lab, align=left] at (0.66,0.98) {alarm,\\reform};
+  % capacity loop
+  \node[box, draw=cD!80!black, fill=cD!6] (Q) at (-2.6,-0.45) {capacity $q$\\[-1pt]{\tiny selected if}\\[-2pt]{\tiny $\chi\,y^{\top}\!My>C'(q)$}};
+  \draw[->, cD!80!black, thick] (Q.east) -- node[lab, text=cD!80!black, above, sloped, pos=0.45] {adds $\bar q\hat B$} (198:0.31);
+  \draw[->, black!55, thick, densely dashed] (213:\rr) to[out=215, in=-25] node[lab, below, pos=0.45] {return} (Q.south);
+  % shared condition and observation
+  \node[box] (V) at (3.0,-1.25) {shared\\condition $V$};
+  \draw[->, cH, thick, densely dashed] (D) to[out=-10, in=160] node[lab, text=cH, above, pos=0.62] {harm $h$} (V.west);
+  \draw[->, black!60, densely dotted, thick] (V.north) |- node[lab, right, pos=0.25, align=left] {reported\\through $\dE$\\(masking $\beta$)} (E.east);
 \end{tikzpicture}

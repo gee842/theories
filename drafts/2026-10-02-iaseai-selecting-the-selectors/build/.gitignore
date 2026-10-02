@@ -1,3 +1,6 @@
 out/
+__pycache__/
+fig-capacity.tex
 fig-field.tex
 fig-hysteresis.tex
+tab-robust.tex

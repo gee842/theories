@@ -1,33 +1,76 @@
-== Field parameters ==
-kappa=[1.0, 0.5, 0.5, 1.0, 0.2, 0.5] eps=[0.2, 0.2, 0.1, 0.2, 0.05, 0.2]; a=c=d=1 so R_ij=b_ij
-R_DD=1.3, R_ii=0.3 (i!=D), phi=0.1, theta pre=0.6, GPAI=1.2, firewall=0.2
+== Parameters ==
+kappa=[1.0, 0.5, 0.5, 1.0, 0.2, 0.5] eps=[0.2, 0.2, 0.1, 0.2, 0.05, 0.2]; a=c=d=1 so R=b; entry mu=0.0001; RK4 step 0.05 in logit coordinates
+R_DD=1.3, R_ii=0.3, phi=0.11, theta pre=0.6, general-purpose=1.2, firewall=0.2
+V: rho=0.005, h=0.008, K=1.0; V_alarm=0.6, floor=0.3; reform c_D=2.0 10.0 after detection
 
-== Configurations (Prop. 1) ==
-GPAI field, full capture row sums: D=1.30, E=1.90, S=1.90, P=1.90, F=1.90, I=1.90
-Pre-GPAI field, inbound to non-hubs from {D}: E=0.60, S=0.60, P=0.60, F=0.60, I=0.60
-Pre-GPAI field, full-capture row sums: D=1.30, E=1.30, S=1.30, P=1.30, F=1.30, I=1.30
+== Configurations and certificates (Props. 1 and 4) ==
+theta=0.6: 23 strictly stable configurations, 0 ties, smallest margin 0.010; row sums [1.3, 1.34, 1.34, 1.34, 1.34, 1.34]; core(N)=DESPFI; cl(D)=D
+   stable: none, D, DES, DEP, DSP, DESP, DEF, DSF, DESF, DPF, DEPF, DSPF, DEI, DSI, DESI, DPI, DEPI, DSPI, DFI, DEFI, DSFI, DPFI, DESPFI
+   stable with both selectors captured and not full: 4; with every margin >= 0.05: 13 stable, 3 of them with both selectors and not full (DESF, DEPF, DEFI)
+theta=1.2: 2 strictly stable configurations, 0 ties, smallest margin 0.200; row sums [1.3, 1.94, 1.94, 1.94, 1.94, 1.94]; core(N)=DESPFI; cl(D)=DESPFI
+   stable: none, DESPFI
+   stable with both selectors captured and not full: 0; with every margin >= 0.05: 2 stable, 0 of them with both selectors and not full ()
+Firewalled field: rows E=0.94, F=0.94 (robust firewall: row < 1); inbound to E from captured D,S,P,I = 0.53
+theta=1.2: keystones of full capture: ['D']; without D, inbound to each other domain = 0.74
+theta=0, phi=0.22: inbound within E..I = 1.18; keystones of E..I: ['E', 'S', 'P', 'F', 'I']; with one removed, inbound = 0.88
+theta=1.2, phi=0.22: single keystones of full capture: []; keystone pairs: ['DE', 'DS', 'DP', 'DF', 'DI'] ...
+Row-sum certificate: 12 random fields with every row sum < 1, started at x=0.999, r=5, mu=0: largest share at t=600 = 1.17e-29
 
-== Cascade (Prop. 2), y0: x_D=0.9, r_D=1.5, x_i=0.02, r_i=0 ==
-pre       final x: D=1.000 E=0.000 S=0.000 P=0.000 F=0.000 I=0.000
-          x_i>0.5 at t: D=0 E=never S=never P=never F=never I=never
-gpai      final x: D=1.000 E=1.000 S=1.000 P=1.000 F=1.000 I=1.000
-          x_i>0.5 at t: D=0 E=61 S=78 P=48 F=125 I=61
-firewall  final x: D=1.000 E=0.000 S=1.000 P=1.000 F=0.000 I=1.000
-          x_i>0.5 at t: D=0 E=never S=81 P=49 F=never I=62
-Firewall field, inbound from captured {D,S,P,I}: E=0.50 F=0.50; S=1.70 P=1.70 I=1.70
+== Cascade (Prop. 5i), seed x_D=0.9, r_D=1.5, x_i=0.02 ==
+theta=0.6  final x: D=1.000 E=0.001 S=0.001 P=0.000 F=0.001 I=0.001
+           x>0.5 at t: E=never S=never P=never F=never I=never
+theta=1.2  final x: D=1.000 E=1.000 S=1.000 P=1.000 F=0.999 I=1.000
+           x>0.5 at t: E=56 S=67 P=43 F=106 I=56
+firewalled final x: D=1.000 E=0.000 S=1.000 P=1.000 F=0.001 I=1.000
+           x>0.5 at t: E=never S=69 P=43 F=never I=57
 
-== Re-absorption (Cor. 2) ==
-full-capture state x: 1.000 1.000 1.000 1.000 1.000 1.000
-Standards reform (x_S->0.01, r_S->0, own conversion cut to 0): x_S(300)=1.000; re-captured (x_S>0.5) at t=42.0; inbound from others=1.60
-Standards reform + firewall D->S (0.2): x_S(300)=0.0001; inbound from others=0.60
+== Re-absorption and firewalls (Prop. 5iii) ==
+Standards reset (x_S=0.01, r_S=0, own conversion 0): recaptured (x_S>0.5) at t=38.0; inbound from the others = 1.64
+Same reset plus firewall D->S=0.2: x_S(300)=0.0006; inbound = 0.64
 
-== Hysteresis in hub coupling theta ==
-phi=0.1: up-sweep first capture at theta=1.05; down-sweep first loss at theta=0.25; theory: up at theta>1, down below theta=1-0.3-4*0.1=0.30
-phi=0.2: up-sweep first capture at theta=1.05; down-sweep first loss at theta=None; theory: up at theta>1, down below theta=1-0.3-4*0.2=-0.10
+== Masking and detection (Prop. 6): reform on D after detection ==
+beta | coupled: t_det  delay(predicted)  min V  floor  captured at end | firewalled: t_det  min V
+0.00 | 74.7  0.0(0.0)  0.535  held  none | 74.7  0.535
+0.10 | 87.7  13.0(13.1)  0.498  held  none | 74.7  0.535
+0.20 | 106.4  31.7(31.8)  0.451  held  none | 74.7  0.535
+0.30 | 135.5  60.8(60.8)  0.389  held  none | 74.7  0.535
+0.40 | 186.9  112.2(112.2)  0.306  held  none | 74.7  0.535
+0.50 | 305.7  231.0(231.0)  0.186  breached  none | 74.7  0.535
+0.55 | 462.1  387.4(387.7)  0.104  breached  none | 74.7  0.535
+0.60 | never  never(never)  0.069  breached  DESPFI | 74.7  0.535
+0.70 | never  never(never)  0.069  breached  DESPFI | 74.7  0.535
+strict silencing needs beta*x_E >= V_alarm/K = 0.60
 
-== Selecting the selectors (Prop. 3) ==
-rho=0.005, h=0.008, K=1.0, beta=0.7, V_alarm=0.6, V_min=0.3; silencing needs beta*x_E >= 0.857
-GPAI: alarm at t=never; V(400)=0.139; V<V_min at t=210; x_E(75)=0.984
-Firewall: alarm at t=74.7; reform at t=84.7; min V=0.458; V(400)=0.769
-Firewall, final x after correction: D=0.000 E=0.000 S=0.000 P=0.000 F=0.000 I=0.000
-GPAI with independent measurement (beta=0): alarm at t=74.6; V(400)=0.769; final x: D=0.000 E=0.000 S=0.000 P=0.000 F=0.000 I=0.000
+== Feedback into development psi (keystone reform), beta=0 ==
+psi=0.00: reformed s_D over the captured set = 0.650; min V = 0.535; captured at t=800: none
+psi=0.05: reformed s_D over the captured set = 0.775; min V = 0.524; captured at t=800: none
+psi=0.10: reformed s_D over the captured set = 0.900; min V = 0.500; captured at t=800: none
+psi=0.13: reformed s_D over the captured set = 0.975; min V = 0.461; captured at t=800: none
+psi=0.15: reformed s_D over the captured set = 1.025; min V = 0.037; captured at t=800: DESPFI
+psi=0.20: reformed s_D over the captured set = 1.150; min V = 0.036; captured at t=800: DESPFI
+analytic: the reform holds iff (1.3 + 5 psi)/2 < 1, i.e. psi < 0.14
+
+== Entry rate mu: capture times and unwinding after the keystone reform (beta=0) ==
+mu=1e-03: x>0.5 at E=43 S=52 P=33 F=81 I=43; alarm 74.9; min V 0.546; x<0.5 after reform at +D=8 E=45 S=52 P=35 F=70 I=45
+mu=1e-04: x>0.5 at E=56 S=67 P=43 F=never I=56; alarm 74.7; min V 0.535; x<0.5 after reform at +D=11 E=56 S=63 P=42 F=0 I=56
+mu=1e-06: x>0.5 at E=60 S=76 P=48 F=never I=60; alarm 74.6; min V 0.516; x<0.5 after reform at +D=17 E=83 S=88 P=60 F=0 I=83
+mu=1e-08: x>0.5 at E=60 S=77 P=48 F=never I=60; alarm 74.6; min V 0.498; x<0.5 after reform at +D=24 E=113 S=113 P=81 F=0 I=113
+
+== Hysteresis in theta ==
+phi=0.11: capture appears at theta=1.025 (theory: theta>1); first loss on the way down at theta=0.225 (theory: below 0.26)
+phi=0.22: capture appears at theta=1.025 (theory: theta>1); first loss on the way down at theta=None (theory: below -0.18)
+
+== Selection for conversion capacity (Props. 2-3) ==
+incidental conversion = theta 0.6 field; capacity adds per unit: 0.5 from D into each domain, 0.2 D->D, 0.1 into D from each domain, 0.05 among and within the others; types q=[0.0, 1.0]; cost gamma*q, gamma=0.05
+chi=0.8: advantage in D at t=0 = +0.102, at t=500 = +0.510; mean q > 0.9 at t=28; every domain captured at t=184; final mean q = 1.000; captured at end: DESPFI
+chi=0.3: advantage in D at t=0 = +0.007, at t=500 = +0.160; mean q > 0.9 at t=248; every domain captured at t=388; final mean q = 0.999; captured at end: DESPFI
+chi=0.1: advantage in D at t=0 = -0.031, at t=500 = -0.030; mean q > 0.9 at t=never; every domain captured at t=never; final mean q = 0.003; captured at end: D
+chi threshold in D with only D captured: gamma / sum_j bh_Dj x_j = 0.25
+counterfactual, capacity frozen at mean 0.5 (conversion b0 + 0.5 bh, cost +0.025): captured at t=500: D; inbound from D = 0.85
+cascade needs (theta_pre + 0.5 q) / (1 + gamma q) > 1, i.e. mean q > 0.89
+
+== Discrete-time capacity model (Appendix D): Gamma_T = (chi a b / delta) L_T ==
+T= 5 delta=0.2 chi=0.5: Gamma_T=0.8192 (direct 0.8192); disfavoured at marginal cost 0.9
+T=20 delta=0.2 chi=0.5: Gamma_T=1.8822 (direct 1.8822); favoured at marginal cost 0.9
+T=20 delta=0.8 chi=0.5: Gamma_T=0.5859 (direct 0.5859); disfavoured at marginal cost 0.9
+T=20 delta=0.2 chi=0.1: Gamma_T=0.3764 (direct 0.3764); disfavoured at marginal cost 0.9
