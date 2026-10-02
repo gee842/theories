@@ -1,0 +1,16 @@
+Parameters: {'a': 1.0, 'b': 0.01, 'chi': 0.8, 'delta': 0.05, 'gamma': 0.016, 'kappa': 1.0, 'sigma_theta': 0.02, 'M': 20000, 'p_entry': 0.05, 's_entry': 0.002, 'mut': 0.5, 'T': 600, 'extinct': 0.0001}
+Analytic size threshold s* = gamma delta/(a b chi) = 0.100; seeds = 20
+FIXED        mean capacity 0.500 -> 0.471 +/- 0.139 (rose in 8/20 runs); HHI at T 0.833 +/- 0.089
+REPLAY       mean capacity 0.500 -> 0.531 +/- 0.138 (rose in 9/20 runs); HHI at T 0.910 +/- 0.072
+CLOSED       mean capacity 0.500 -> 0.675 +/- 0.133 (rose in 13/20 runs); HHI at T 0.997 +/- 0.001
+PUBLIC       mean capacity 0.500 -> 0.417 +/- 0.157 (rose in 8/20 runs); HHI at T 0.838 +/- 0.105
+FAST         mean capacity 0.500 -> 0.503 +/- 0.171 (rose in 9/20 runs); HHI at T 0.923 +/- 0.071
+FRAGMENTED   mean capacity 0.500 -> 0.488 +/- 0.103 (rose in 6/20 runs); HHI at T 0.998 +/- 0.001
+RARE         mean capacity 0.010 -> 0.128 +/- 0.135 (rose in 5/20 runs); HHI at T 0.834 +/- 0.092
+LARGE        mean capacity 0.250 -> 0.614 +/- 0.214 (rose in 12/20 runs); HHI at T 0.946 +/- 0.049
+RARE  focal q=1 lineage: share 0.01 -> mean 0.100; took over (>0.5) in 2/20 runs; extinct in 18
+LARGE focal q=1 lineage: share 0.25 -> mean 0.550; took over (>0.5) in 11/20 runs
+True quality at T, CLOSED minus FIXED (paired by seed): -0.0179 +/- 0.0062; lower in 17/20
+Highest-quality initial lineage leads at T: FIXED 13/20, CLOSED 5/20
+Capacity of the leading lineage at T in CLOSED: mean 0.68
+Verdicts: P1 FAILS; P2 holds; P3 holds; P4 holds
