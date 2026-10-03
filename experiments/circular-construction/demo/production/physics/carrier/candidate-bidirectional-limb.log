@@ -1,0 +1,199 @@
+{
+  "maxTiltRad": 0.03743092268601946,
+  "maxChassisDriftM": 0.04891029816564249,
+  "maxPenetrationM": 0.0033099846168442785,
+  "maxNonGripCollisionN": 14773.589638853777,
+  "maxContactForceN": 14773.589638853777,
+  "maxJawNormalSumN": 8897.855736173413,
+  "minRetainedUpwardSupports": 1,
+  "maxTorqueNm": {
+    "hip_yaw": 340.5184707826107,
+    "shoulder": 1407.0228763464045,
+    "elbow": 1669.0202670152837,
+    "wrist_yaw": 150.0,
+    "wrist": 400.0,
+    "wrist_roll": 150.0
+  },
+  "maxSolverIterations": 52,
+  "maxJointLimitViolation": 0.0014023424864340987,
+  "maxHingeLimitViolationRad": 0.0,
+  "maxJawLimitViolationM": 0.0014023424864340987,
+  "minRetainedJawSideNormalN": 0.0,
+  "maxRetainedGripErrorM": 0.08226104299051878,
+  "maxFrictionUtilization": 1.0,
+  "maxDynamicForceResidualN": 18174.620486033942,
+  "minSignedVerticalReactionN": -2772.7920526594257,
+  "worstPenetration": {
+    "time": 5.0240000000000125,
+    "geoms": [
+      "rail_right",
+      "rr_pad_b"
+    ],
+    "forceN": 0.0
+  },
+  "retentionGate": "Both jaws >1000 N normal per retained grip, position error <30mm; signed vertical reactions allowed. Positive-reaction count is diagnostic only.",
+  "contactQualityAccepted": false,
+  "finalSpeedMps": 0.009593823451112241,
+  "sequenceComplete": false,
+  "complete": false,
+  "abortReason": "Retained jaw normal-contact gate failed",
+  "mode": "limb",
+  "durationSeconds": 7.808000000000942,
+  "payloadMassKg": 92.928,
+  "totalMassKg": 432.928,
+  "lastLoadAllocation": {
+    "success": true,
+    "peakPlannedTorqueFraction": 0.7674319158273054,
+    "plannedForcesN": [
+      [
+        2869.183556866147,
+        -107.50627653582268,
+        -598.3119947705285
+      ],
+      [
+        -27.636971340907575,
+        -397.6422295939732,
+        2284.4211429582083
+      ],
+      [
+        -2965.4394102052374,
+        510.4721992058684,
+        2401.09552857209
+      ]
+    ]
+  },
+  "controllerRevision": "signed-reactions-measured-unloading-six-axis",
+  "finalLimbAdvanceM": {
+    "fl": 0.0009053292767788879,
+    "fr": 0.005741376831736034,
+    "rl": -0.015671595655123216,
+    "rr": -0.06495081613796161
+  },
+  "chassisAdvanceM": 0.01362672718299418,
+  "bodyShiftTargetXM": 0.16,
+  "frictionCoefficient": 0.65,
+  "jawClosingForceEachN": 4000,
+  "solverSettings": {
+    "cone": "elliptic",
+    "impratio": 20,
+    "normalSolref": [
+      0.002,
+      1
+    ],
+    "normalSolimp": [
+      0.999,
+      0.9999,
+      0.0002
+    ],
+    "noSlipIterations": 0
+  },
+  "candidateDesign": {
+    "dryMassKg": 340,
+    "extraMassKg": 20,
+    "hipYawTorqueNm": 400,
+    "wristRollYawTorqueNm": 150,
+    "sharedAssetsUpdated": false
+  },
+  "controllerSpecs": {
+    "wristTorqueNm": 400,
+    "jawForceBoundN": 8000,
+    "jawPositionKpNPerM": 200000,
+    "jawVelocityDampingNsPerM": 900
+  },
+  "finalPositionSourceM": [
+    0.1690515594654055,
+    -0.001264144202281885,
+    1.4536267271829941
+  ],
+  "finalContactForcesSourceN": {
+    "fl": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "fr": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rl": [
+      -18.974284119496474,
+      3739.39291612454,
+      2236.9810257785766
+    ],
+    "rr": [
+      -268.62214047409003,
+      522.9613733247197,
+      2010.276645884128
+    ]
+  },
+  "finalJawNormalSumN": {
+    "fl": 0.0,
+    "fr": 0.0,
+    "rl": 3739.39291612454,
+    "rr": 8001.951536655376
+  },
+  "events": [
+    {
+      "time": 2.0009999999998906,
+      "event": "four-contact-hold-accepted"
+    },
+    {
+      "time": 2.0009999999998906,
+      "event": "body-shift-command",
+      "targetX": 0.16
+    },
+    {
+      "time": 5.001000000000005,
+      "event": "unload-command",
+      "limb": "fl"
+    },
+    {
+      "time": 6.00400000000034,
+      "event": "measured-load-transfer",
+      "limb": "fl",
+      "remainingUpwardN": {
+        "fr": -629.8752304942257,
+        "rl": 2633.530489542186,
+        "rr": 2576.2809150525504
+      },
+      "releasedLoadN": 161.34802010361395
+    },
+    {
+      "time": 7.504000000000841,
+      "event": "jaw-open-confirmed",
+      "limb": "fl"
+    },
+    {
+      "time": 7.808000000000942,
+      "event": "supported-stop-request",
+      "limb": "fl"
+    }
+  ],
+  "equalityConstraintCount": 0,
+  "mocapBodyCount": 0,
+  "liveQposEdits": false,
+  "appliedBodyForces": false,
+  "modelSha256": "b542cbf65c3c35ae4b590a3f294e4c8e7912ea369ed832ac8a085e7d5b64966c",
+  "contractSha256": "27e82745dd641ecdb08e3e64adcf415cbea4ada497576ecd5ec0525b614a2a30",
+  "mujocoVersion": "3.14.0",
+  "warnings": {
+    "mjtWarning.mjWARN_INERTIA": 0,
+    "mjtWarning.mjWARN_CONTACTFULL": 0,
+    "mjtWarning.mjWARN_CNSTRFULL": 0,
+    "mjtWarning.mjWARN_BADQPOS": 0,
+    "mjtWarning.mjWARN_BADQVEL": 0,
+    "mjtWarning.mjWARN_BADQACC": 0,
+    "mjtWarning.mjWARN_BADCTRL": 0
+  },
+  "limitations": [
+    "Rigid prelocked payload/cradle; restraint closure not solved.",
+    "Coulomb pad/steel friction is an assumed coefficient, not measured hardware data.",
+    "Rigid fixed column and rails; structural compliance omitted.",
+    "Robot-to-environment collisions enabled; robot self-collision omitted, including bearing adjacency.",
+    "Simplified collision primitives approximate manufactured housings.",
+    "400 Nm wrist and 8 kN jaw motor bounds are proposed specs, not qualified hardware.",
+    "Friction impedance ratio20 and stiff normal contact reduce regularization creep; sensitivity is required.",
+    "Initial condition already attached; arrival and transition from ground are not simulated here."
+  ]
+}

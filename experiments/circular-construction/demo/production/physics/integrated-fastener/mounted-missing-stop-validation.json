@@ -1,0 +1,107 @@
+{
+  "scenario": "missing-stop",
+  "mujocoVersion": "3.14.0",
+  "timestepSeconds": 0.0005,
+  "durationSeconds": 30.5,
+  "beamMassKg": 640.7431900555108,
+  "robotMassKg": 139.3,
+  "events": [
+    {
+      "time": 5.5,
+      "event": "front-left rail grip released; three locks retain chassis"
+    },
+    {
+      "time": 9.5,
+      "event": "front-left lock reacquired within 18 mm capture envelope",
+      "errorM": 0.012483798249139698
+    },
+    {
+      "time": 15.828,
+      "event": "two physical seat contacts stable; hoist slings released",
+      "seatNormalN": 6174.166350038724
+    }
+  ],
+  "hoistReleased": true,
+  "frontLeftRegripped": true,
+  "finalSeatLoadsN": {
+    "seat_left": 3055.3354992571094,
+    "seat_right": 3230.355195171439
+  },
+  "finalBeamPositionZUp": [
+    9.168391641919497,
+    -11.983413984638705,
+    43.424997823007736
+  ],
+  "robotRaiseM": 0.21068359945902415,
+  "maxContactPenetrationM": 0.0006846648691979038,
+  "maxBeamSpeedMps": 0.3508650686025262,
+  "maxLimbActuatorTorqueNm": 315.5077264132605,
+  "maxSolverIterations": 9,
+  "warnings": {
+    "mjtWarning.mjWARN_INERTIA": 0,
+    "mjtWarning.mjWARN_CONTACTFULL": 0,
+    "mjtWarning.mjWARN_CNSTRFULL": 0,
+    "mjtWarning.mjWARN_BADQPOS": 0,
+    "mjtWarning.mjWARN_BADQVEL": 0,
+    "mjtWarning.mjWARN_BADQACC": 0,
+    "mjtWarning.mjWARN_BADCTRL": 0
+  },
+  "finiteState": true,
+  "abortReason": null,
+  "completeFastenedCycle": false,
+  "meanFinalRetainingAxialN": {
+    "dogBeam": 0.0,
+    "headBracket": 7.609520904487093,
+    "toolPin": 19.900075677081507,
+    "receivingStop": 0.0
+  },
+  "seatFriction": 0,
+  "pinDofs": 6,
+  "fasteningEqualityCount": 0,
+  "totalEqualityCount": 4,
+  "completeRobotFasteningCycle": false,
+  "dogCleared": false,
+  "eventsFastener": [],
+  "maxAllContactPenetrationM": 0.0006846648691979038,
+  "maxPenetrationEvent": {
+    "time": 14.995500000006835,
+    "geomA": "seat_right_contact",
+    "geomB": "beam_bottom_flange",
+    "penetrationM": 0.0006846648691979038
+  },
+  "peakFastenerContactN": 402.1942969598685,
+  "peakFastenerContactEvent": {
+    "time": 0.05450000000000004,
+    "geomA": "magazine_floor",
+    "geomB": "pin_head",
+    "normalN": 402.1942969598685,
+    "penetrationM": 4.422236459525017e-06
+  },
+  "motorWorkJ": [
+    -6.905071551486406,
+    44.93470834783467,
+    -2.8056166011247536,
+    49.33791327943275,
+    -2.805187714132416,
+    49.33845366709122,
+    -2.8054011565692387,
+    49.338612771515805,
+    2.086963575724391,
+    -0.0014021012645209982,
+    -0.0010476114668244213,
+    -0.010388449152152479,
+    3.1710613635333216,
+    0.0
+  ],
+  "finalPinPositionM": [
+    6.204823893521696,
+    -11.914244764974677,
+    43.52991264910863
+  ],
+  "finalBeamAxialDisplacementM": 0.16839164191949685,
+  "finalDogExtensionM": [
+    2.2602680112892124e-09,
+    1.7522222177841082e-09
+  ],
+  "notice": "Retractable receiving stop supports insertion and is withdrawn before proof. Isolated proposed tool geometry, ideal rail clamps; inspect contact proof and negative control before accepting."
+}

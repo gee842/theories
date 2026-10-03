@@ -1,0 +1,166 @@
+{
+  "minActiveSupports": 3,
+  "minLoadedSupports": 3,
+  "maxTorqueNm": 2000.0,
+  "maxReactionN": 4197.704292357721,
+  "maxCaptureErrorM": 0.0007189519445843395,
+  "maxCaptureSpeedMps": 0.009569284229958524,
+  "maxSupportErrorM": 0.0006636665337039548,
+  "maxJointLimitViolationRad": 0.0,
+  "maxChassisTiltRad": 0.045308503504339966,
+  "maxSolverIterations": 1,
+  "maxConstraintResidual": 4.292421703904891e-07,
+  "minUpwardSupports": 3,
+  "minSupportVerticalN": 458.1391883617167,
+  "maxChassisSpeedMps": 0.23183466530905866,
+  "scenario": "missed-grip",
+  "mujocoVersion": "3.14.0",
+  "complete": false,
+  "cyclesCompleted": 0,
+  "durationSeconds": 13.502000000001178,
+  "chassisAdvanceM": -1.030709094873572e-05,
+  "settledAdvanceM": 9.526028917905549e-05,
+  "finalChassisPosition": [
+    1.602506075928301e-05,
+    -3.4627651267443324e-06,
+    1.2799896929090513
+  ],
+  "finalRungs": {
+    "fl": 0,
+    "fr": 0,
+    "rl": 0,
+    "rr": 0
+  },
+  "finalReactionN": {
+    "fl": [
+      1712.6724623452692,
+      0.014375754683785998,
+      1012.9005556982041
+    ],
+    "fr": [
+      1712.9526133386787,
+      0.014143650161507898,
+      1012.8136460341259
+    ],
+    "rl": [
+      -1712.9982801099077,
+      0.053369194236864995,
+      1012.4087953872086
+    ],
+    "rr": [
+      -1712.7181156722452,
+      0.0531401477847954,
+      1012.3218960636553
+    ]
+  },
+  "massKg": 412.928,
+  "weightN": 4050.82368,
+  "captureCount": 0,
+  "releaseCount": 1,
+  "rejectedCaptureErrorM": 0.08000548745742807,
+  "recovered": true,
+  "abortReason": "Missed receiver: position/speed capture gate failed; no next release authorized.",
+  "finiteState": true,
+  "fixedAnchorsUnchanged": true,
+  "motorMechanicalWorkJ": 4.960236458794295,
+  "railConstraintWorkJ": -1.523136526971754,
+  "potentialEnergyRiseJ": -0.08184471300046425,
+  "warnings": {
+    "mjtWarning.mjWARN_INERTIA": 0,
+    "mjtWarning.mjWARN_CONTACTFULL": 0,
+    "mjtWarning.mjWARN_CNSTRFULL": 0,
+    "mjtWarning.mjWARN_BADQPOS": 0,
+    "mjtWarning.mjWARN_BADQVEL": 0,
+    "mjtWarning.mjWARN_BADQACC": 0,
+    "mjtWarning.mjWARN_BADCTRL": 0
+  },
+  "events": [
+    {
+      "time": 1.500000000000001,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 0,
+      "toRung": 1
+    },
+    {
+      "time": 8.501999999999509,
+      "event": "capture-rejected",
+      "limb": "fl",
+      "rung": 1,
+      "errorM": 0.08000548745742807,
+      "speedMps": 0.00040839985788966164
+    },
+    {
+      "time": 12.502000000000844,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 0,
+      "errorM": 0.0007189519445843395,
+      "speedMps": 0.009569284229958524,
+      "recovery": true
+    }
+  ],
+  "geometry": {
+    "coordinates": "MuJoCo Z-up; browser p=(x,z,-y)",
+    "linkLengthM": 0.65,
+    "hipOffsets": {
+      "fl": [
+        0,
+        -0.32,
+        0.48
+      ],
+      "fr": [
+        0,
+        0.32,
+        0.48
+      ],
+      "rl": [
+        0,
+        -0.32,
+        -0.48
+      ],
+      "rr": [
+        0,
+        0.32,
+        -0.48
+      ]
+    },
+    "railReachM": 0.75,
+    "railSpacingM": 0.64,
+    "receiverPitchM": 0.32,
+    "storeyHeightM": 3.2,
+    "chassisMassKg": 160,
+    "upperMassKg": 12,
+    "lowerMassKg": 10,
+    "gripMassKg": 8,
+    "cradleMassKg": 40,
+    "dryMassKg": 320,
+    "cradleCentreM": [
+      -0.61,
+      0,
+      0
+    ],
+    "shoulderTorqueLimitNm": 3000,
+    "elbowTorqueLimitNm": 2000,
+    "status": "Specified conceptual hardware, not hardware-qualified capacities"
+  },
+  "contractRevision": "carrier-construction-v1",
+  "contractSha256": "aedf0235a2845be0996a57bed540a46eb1fb35757101da450820a1acfc60e76c",
+  "payloadMassKg": 92.928,
+  "dryMassKg": 320,
+  "scope": "Loaded vertical rail locomotion; captive rigid payload and ideal point grips",
+  "controllerSourceSha256": "76e307bbf95a442d55f2569452bb154733ffebdcc8450486dcff4abcad300dec",
+  "modelSha256": "83aa1f7116d3e8f2cbe6a9e56d1abb9d1655b4ed28768f5410d8be7d11922c56",
+  "evidenceClass": "local-dynamics-with-idealized-restraints",
+  "gripDemandWithinSpecifiedLimit": true,
+  "controllerGains": {
+    "kp": 22000.0,
+    "kd": 1800.0
+  },
+  "actionSeconds": {
+    "swing": 4.0,
+    "load": 1.0,
+    "raise": 5.0,
+    "settle": 2.0
+  }
+}

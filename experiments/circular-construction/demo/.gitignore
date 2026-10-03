@@ -1,0 +1,7 @@
+node_modules/
+dist/
+numerical/.venv/
+runs/
+*.pyc
+__pycache__/
+*.blend1

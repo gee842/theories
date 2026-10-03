@@ -1,0 +1,211 @@
+{
+  "maxTiltRad": 0.03785264079160678,
+  "maxChassisDriftM": 0.044439058204757305,
+  "maxPenetrationM": 0.0007670915453858075,
+  "maxNonGripCollisionN": 0.0,
+  "maxContactForceN": 5226.392598512087,
+  "maxJawNormalSumN": 8148.00054483357,
+  "minRetainedUpwardSupports": 2,
+  "maxTorqueNm": {
+    "hip_yaw": 322.8034945401751,
+    "shoulder": 1340.0470386042066,
+    "elbow": 1614.124545446935,
+    "wrist_yaw": 100.44531033264393,
+    "wrist": 340.3065511964063,
+    "wrist_roll": 140.47655252041446
+  },
+  "maxSolverIterations": 24,
+  "maxJointLimitViolation": 1.6562853120849486e-05,
+  "maxHingeLimitViolationRad": 0.0,
+  "maxJawLimitViolationM": 1.6562853120849486e-05,
+  "minRetainedJawSideNormalN": 0.0,
+  "maxRetainedGripErrorM": 0.03757143554457018,
+  "maxFrictionUtilization": 0.9999999999997141,
+  "maxDynamicForceResidualN": 0.48657260921653306,
+  "minSignedVerticalReactionN": -877.8686687794021,
+  "worstPenetration": {
+    "time": 6.0927500000017005,
+    "geoms": [
+      "rail_right",
+      "rr_pad_b"
+    ],
+    "forceN": 1522.4214317301364
+  },
+  "retentionGate": "Both jaws >1000 N normal per retained grip, position error <30mm; signed vertical reactions allowed. Positive-reaction count is diagnostic only.",
+  "contactQualityAccepted": false,
+  "finalSpeedMps": 0.0067990869457890644,
+  "sequenceComplete": false,
+  "complete": false,
+  "abortReason": "Retained jaw normal-contact gate failed",
+  "mode": "limb",
+  "durationSeconds": 7.847250000003845,
+  "payloadMassKg": 92.928,
+  "totalMassKg": 432.928,
+  "lastLoadAllocation": {
+    "success": true,
+    "peakPlannedTorqueFraction": 0.7522471731823215,
+    "plannedForcesN": [
+      [
+        2815.76095847205,
+        -63.26638366245652,
+        -626.2065124491719
+      ],
+      [
+        120.32859015077398,
+        -594.6401325895336,
+        2181.068686316482
+      ],
+      [
+        -3040.878678611862,
+        522.9374106331585,
+        2508.9787953157456
+      ]
+    ]
+  },
+  "controllerRevision": "six-axis-narrow-casing-self-collision-clearance-ramped-proofload",
+  "finalLimbAdvanceM": {
+    "fl": -5.7785724002723526e-05,
+    "fr": 4.202622938298539e-05,
+    "rl": -0.00022807679276926063,
+    "rr": -0.0351971908055525
+  },
+  "chassisAdvanceM": 0.011361196528941075,
+  "bodyShiftTargetXM": 0.16,
+  "frictionCoefficient": 0.65,
+  "jawClosingForceEachN": 4000,
+  "solverSettings": {
+    "cone": "elliptic",
+    "impratio": 20,
+    "normalSolref": [
+      0.002,
+      1
+    ],
+    "normalSolimp": [
+      0.999,
+      0.9999,
+      0.0002
+    ],
+    "noSlipIterations": 0
+  },
+  "candidateDesign": {
+    "dryMassKg": 340,
+    "extraMassKg": 20,
+    "hipYawTorqueNm": 400,
+    "wristRollYawTorqueNm": 150,
+    "sharedAssetsUpdated": false,
+    "chassisDimensionsSourceM": [
+      0.66,
+      0.44,
+      1.0
+    ],
+    "chassisAndGroundGearMassKg": 160,
+    "centralChassisMassKg": 128,
+    "groundGearMassEachKg": 8,
+    "suspensionUnloadedDroopM": 0.12,
+    "wheelCentreClimbZM": -0.75,
+    "swingRetreatM": 0.055,
+    "robotSelfCollision": "enabled except connected bearings and jaw guides"
+  },
+  "controllerSpecs": {
+    "wristTorqueNm": 400,
+    "jawForceBoundN": 8000,
+    "jawPositionKpNPerM": 200000,
+    "jawVelocityDampingNsPerM": 900
+  },
+  "finalPositionSourceM": [
+    0.1660844155979576,
+    0.006625573301762569,
+    1.451361196528941
+  ],
+  "finalContactForcesSourceN": {
+    "fl": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "fr": [
+      2800.478003984583,
+      -50.031731749370124,
+      -608.1909277483895
+    ],
+    "rl": [
+      102.03939355374902,
+      -695.5203526085423,
+      2219.150747276595
+    ],
+    "rr": [
+      -1772.404903665804,
+      -3737.6729965583036,
+      1655.4089670463636
+    ]
+  },
+  "finalJawNormalSumN": {
+    "fl": 0.0,
+    "fr": 7999.263503814176,
+    "rl": 7999.2886784880275,
+    "rr": 3737.6729965583036
+  },
+  "events": [
+    {
+      "time": 2.0000000000002514,
+      "event": "four-contact-hold-accepted"
+    },
+    {
+      "time": 2.0000000000002514,
+      "event": "body-shift-command",
+      "targetX": 0.16
+    },
+    {
+      "time": 5.000000000000365,
+      "event": "unload-command",
+      "limb": "fl"
+    },
+    {
+      "time": 6.000000000001587,
+      "event": "measured-load-transfer",
+      "limb": "fl",
+      "remainingUpwardN": {
+        "fr": -585.9463001047272,
+        "rl": 2306.7220787704728,
+        "rr": 1142.8884832143553
+      },
+      "releasedLoadN": 21.105913442430317
+    },
+    {
+      "time": 7.50000000000342,
+      "event": "jaw-open-confirmed",
+      "limb": "fl"
+    },
+    {
+      "time": 7.847250000003845,
+      "event": "supported-stop-request",
+      "limb": "fl"
+    }
+  ],
+  "equalityConstraintCount": 0,
+  "mocapBodyCount": 0,
+  "liveQposEdits": false,
+  "appliedBodyForces": false,
+  "modelSha256": "953e86bb20561d84c89c36aed7da32547cd8c7234f8603754b3fbc1936aac4e6",
+  "contractSha256": "27e82745dd641ecdb08e3e64adcf415cbea4ada497576ecd5ec0525b614a2a30",
+  "mujocoVersion": "3.14.0",
+  "warnings": {
+    "mjtWarning.mjWARN_INERTIA": 0,
+    "mjtWarning.mjWARN_CONTACTFULL": 0,
+    "mjtWarning.mjWARN_CNSTRFULL": 0,
+    "mjtWarning.mjWARN_BADQPOS": 0,
+    "mjtWarning.mjWARN_BADQVEL": 0,
+    "mjtWarning.mjWARN_BADQACC": 0,
+    "mjtWarning.mjWARN_BADCTRL": 0
+  },
+  "limitations": [
+    "Rigid prelocked payload/cradle; restraint closure not solved.",
+    "Coulomb pad/steel friction is an assumed coefficient, not measured hardware data.",
+    "Rigid fixed column and rails; structural compliance omitted.",
+    "Robot-to-environment and distinct robot-assembly self-collision enabled; connected bearing and jaw-guide primitive overlaps excluded.",
+    "Simplified collision primitives approximate manufactured housings.",
+    "400 Nm wrist and 8 kN jaw motor bounds are proposed specs, not qualified hardware.",
+    "Friction impedance ratio20 and stiff normal contact reduce regularization creep; sensitivity is required.",
+    "Initial condition already attached; wheels are in120mm unloaded droop pose. Arrival, suspension transition and ground travel dynamics are not simulated."
+  ]
+}

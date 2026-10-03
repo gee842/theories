@@ -1,0 +1,4675 @@
+1
+00:00:00,000 --> 00:00:18,200
+Speaker A: cynically I think in a very cynical way they recognize that what they're doing is monopoly and they think that they are just more smart or perhaps they just feel that they are deserving of this or perhaps even more cynically they just said you know this will give us power
+
+2
+00:00:18,850 --> 00:00:19,350
+Speaker B: uh
+
+3
+00:00:22,804 --> 00:00:33,254
+Speaker A: This is the most dangerous thing you could conceive of is a co-opting alignment for a corporate purpose to maintain monopoly rents on AI.
+
+4
+00:00:33,754 --> 00:00:36,054
+Speaker A: And they will ban Chinese models,
+
+5
+00:00:36,104 --> 00:00:37,404
+Speaker A: they will ban open source models,
+
+6
+00:00:37,504 --> 00:00:41,054
+Speaker A: and they will just have a monopoly on the system.
+
+7
+00:00:41,404 --> 00:00:45,654
+Speaker A: This is something that I think is very strong in the US.
+
+8
+00:00:45,704 --> 00:00:46,904
+Speaker A: It's not predominant.
+
+9
+00:00:48,052 --> 00:00:52,952
+Speaker A: And I think the EA people genuinely believe either they're like Sam,
+
+10
+00:00:53,102 --> 00:00:53,902
+Speaker A: they just want power,
+
+11
+00:00:53,952 --> 00:01:03,402
+Speaker A: or they believe like Dario that they're just smarter than the general population and therefore they should be the one, sort of a priestly logic,
+
+12
+00:01:03,552 --> 00:01:04,152
+Speaker A: right?
+
+13
+00:01:04,502 --> 00:01:05,452
+Speaker B: Okay,
+
+14
+00:01:05,652 --> 00:01:07,802
+Speaker B: I think I know where you're going.
+
+15
+00:01:08,202 --> 00:01:12,052
+Speaker B: I think I have a response to this as well.
+
+16
+00:01:12,980 --> 00:01:21,530
+Speaker B: So we could call this uh molochlization. Uh it's it's basically there is a selection
+
+17
+00:01:21,530 --> 00:01:21,930
+Speaker A: Mm-hmm.
+
+18
+00:01:21,930 --> 00:01:40,130
+Speaker B: logic that will push the nervous system the organisation system or just generally their intelligence towards that direction of the selection. So think about the E_A_ people.
+
+19
+00:01:40,404 --> 00:01:47,854
+Speaker B: If you put the EA group to be the one that's in control of the whole AI development,
+
+20
+00:01:48,204 --> 00:01:50,254
+Speaker B: the people,
+
+21
+00:01:50,304 --> 00:01:55,204
+Speaker B: the individuals within EA still hold the mind of Moloch.
+
+22
+00:01:55,924 --> 00:02:20,724
+Speaker B: they they still create this power ladder because they believes in fighting winning progress those kind of dynamics that at core creates a constraint that an individual looks at the reality with a boundary and argues what good is within the boundary and
+
+23
+00:02:21,428 --> 00:02:24,328
+Speaker B: Well, like,
+
+24
+00:02:24,428 --> 00:02:42,078
+Speaker B: execute actions that's according to their beliefs that makes themselves bigger and accumulate more and make themselves even bigger with that compounding. So this is the cancer logic,
+
+25
+00:02:42,178 --> 00:02:45,078
+Speaker B: right? It's basically like, okay.
+
+26
+00:02:46,612 --> 00:02:56,012
+Speaker B: If this kind of logic does not get resolved, and if the people,
+
+27
+00:02:56,212 --> 00:03:02,312
+Speaker B: if the, like, regardless of they want to be good for humanity,
+
+28
+00:03:02,712 --> 00:03:09,712
+Speaker B: they want to be kind, compassionate, they care about, like, all those, like, democratic values.
+
+29
+00:03:10,356 --> 00:03:26,006
+Speaker B: Like those are like the upper structures of the [unclear] infrastructure that will always raise things in a competitive Machiavellian way.
+
+30
+00:03:27,252 --> 00:03:29,302
+Speaker B: when it comes to power.
+
+31
+00:03:29,802 --> 00:03:37,602
+Speaker B: And maybe when you have a small organization that at the beginning, the Moloch selection just started,
+
+32
+00:03:37,652 --> 00:03:51,902
+Speaker B: and then things can still work well. But if you don't have a mechanism of containing or regulating that molochlization over time,
+
+33
+00:03:52,002 --> 00:03:53,702
+Speaker B: people start thinking.
+
+34
+00:03:54,260 --> 00:04:18,610
+Speaker B: culture, values and the way the bigger organization will act in those like Molochian logic is not because they were thinking they were right or wrong, it's just because this is the selection pressure.
+
+35
+00:04:19,540 --> 00:04:37,640
+Speaker B: that will make uh environment that follows this particular types of games to manifest out in this ways at which E_A_ cannot currently escape. So this can be the logic.
+
+36
+00:04:38,964 --> 00:04:42,264
+Speaker A: Yeah, so I do think that there is an approach here,
+
+37
+00:04:42,364 --> 00:04:45,364
+Speaker A: and I do agree with most of the analysis.
+
+38
+00:04:45,664 --> 00:04:54,014
+Speaker A: It's just when you attach this particular mode of rationalist.
+
+39
+00:04:55,156 --> 00:05:21,006
+Speaker A: effective altruism onto AI alignment and you pair that with the current conception of for example the trilateral Commission and the Bilderberg group and the Bank of International Settlements and so on this idea that technocrats who are educated in elite institutions who have the right pedigree are the proper stewards
+
+40
+00:05:21,780 --> 00:05:23,030
+Speaker A: of technology,
+
+41
+00:05:23,280 --> 00:05:24,480
+Speaker A: of finance,
+
+42
+00:05:24,730 --> 00:05:26,280
+Speaker A: of information and media,
+
+43
+00:05:26,430 --> 00:05:30,930
+Speaker A: you get something that is very moralist, right?
+
+44
+00:05:31,030 --> 00:05:40,080
+Speaker A: It claims to be oriented towards saving humanity. It claims to be oriented towards proper purposes.
+
+45
+00:05:40,180 --> 00:05:43,380
+Speaker A: But really what it is, is it's a technocratic monopoly,
+
+46
+00:05:43,680 --> 00:05:43,880
+Speaker A: right?
+
+47
+00:05:44,030 --> 00:05:46,780
+Speaker A: And I think that what you're seeing is you're seeing
+
+48
+00:05:47,284 --> 00:06:10,684
+Speaker A: a congregation of financial interests banking finance high finance and this rationalist EA alignment orientation and I do think that in a sense what you said earlier that the Western framework is almost too decayed it's too paranoid to
+
+49
+00:06:11,508 --> 00:06:35,608
+Speaker A: um to act in a consistent rational way i think this is true i think that that you have too much co-option at the very elite level and so i think that that what what could be done memetically is just to cement a more generalized paranoia towards elite technocracy
+
+50
+00:06:36,660 --> 00:06:46,960
+Speaker A: But the issue with that would be that any paranoia towards technocracy would likewise be paranoia towards China,
+
+51
+00:06:47,210 --> 00:06:50,360
+Speaker A: be paranoia towards any other alignment group,
+
+52
+00:06:50,410 --> 00:06:54,660
+Speaker A: especially a Chinese alignment group. And so you're basically destroying the...
+
+53
+00:06:55,220 --> 00:07:18,670
+Speaker A: possibility of coordination by amplifying those messages and so I'm not saying it's the only option but it does seem to me that a very very there's a very cynical reading of this where elites from good universities are able to basically align AI with with the current financial
+
+54
+00:07:19,444 --> 00:07:40,344
+Speaker A: infrastructure in such a way that oh we will bring about abundance we will create a post-scarcity world don't worry about it as long as you give us control we will steward this AI towards and capital together money and intelligence we will steward this towards a brighter future and and this I think is a
+
+55
+00:07:41,332 --> 00:07:45,582
+Speaker A: not a it's like the predominant San Francisco narrative that
+
+56
+00:07:45,582 --> 00:07:46,032
+Speaker B: Right,
+
+57
+00:07:46,032 --> 00:07:46,132
+Speaker A: don't
+
+58
+00:07:46,132 --> 00:07:46,532
+Speaker B: right,
+
+59
+00:07:46,532 --> 00:07:48,232
+Speaker A: worry let let us handle it
+
+60
+00:07:48,232 --> 00:07:48,632
+Speaker B: right,
+
+61
+00:07:48,682 --> 00:08:01,582
+Speaker B: right. But also at the same time, like San Francisco is kind of like at the academic center of the force of molochlization,
+
+62
+00:08:01,682 --> 00:08:02,632
+Speaker B: right?
+
+63
+00:08:03,682 --> 00:08:04,582
+Speaker B: So...
+
+64
+00:08:06,260 --> 00:08:24,910
+Speaker B: Of course they will think this way. And of course even confronting rationality, a lot of the world just be like, nah, this doesn't feel right, we need progress, we need to become bigger and we need to have better intelligence. And that betterness creates a hope promises.
+
+65
+00:08:25,902 --> 00:08:51,902
+Speaker B: That's okay. As long as we give the current trajectory we will eventually overcome this and uh as long as we keep accelerating getting bigger. So there is a over generalisation or even totalisation over some reductionistic values.
+
+66
+00:08:52,348 --> 00:09:15,448
+Speaker B: uh or or just like even very abstract cannot be qualified, somewhat they might not even really have a clear structure to kind of values, that leads to them to orient it orient their whole linguistic at meaning structure.
+
+67
+00:09:16,084 --> 00:09:20,534
+Speaker B: At just like large language models, like the way they generate tokens,
+
+68
+00:09:20,834 --> 00:09:22,384
+Speaker B: and the third generation
+
+69
+00:09:22,384 --> 00:09:22,434
+Speaker A: Yep.
+
+70
+00:09:22,434 --> 00:09:38,234
+Speaker B: of tokens is also an influence to the other agents within the environment. So over time, this kind of mindset of uh like apparently extremely rational group
+
+71
+00:09:39,060 --> 00:09:51,860
+Speaker B: With which their rationality is built on a foundation that totalizes itself will not to be able to uh seek out of the framework and uh
+
+72
+00:09:51,860 --> 00:09:51,910
+Speaker A: Yes.
+
+73
+00:09:51,910 --> 00:09:58,310
+Speaker B: voluntarily voluntarily feel that their ideas are wrong. So this
+
+74
+00:09:58,310 --> 00:09:58,810
+Speaker A: Yes.
+
+75
+00:09:58,902 --> 00:10:16,102
+Speaker B: this is this is the exact problem with like uh you know you know like some of the Dario's talk like it's clearly that, right? Uh I but but this is like almost everyone. This is like a language that has evolved that changed for also reinforcing that.
+
+76
+00:10:17,414 --> 00:10:34,514
+Speaker A: Yeah, yeah. But it's like it's very deeply ingrained this idea of rationalism and scientific inquiry as if it's this neutral paradigm that they're applying from first principles when in reality it's built upon a lot of assumptions.
+
+77
+00:10:34,564 --> 00:10:38,614
+Speaker A: And I think I would argue that one of those core assumptions is a fear of China.
+
+78
+00:10:38,714 --> 00:10:41,764
+Speaker A: I think that they are deeply afraid of China and
+
+79
+00:10:41,764 --> 00:10:42,114
+Speaker B: The
+
+80
+00:10:42,114 --> 00:10:42,314
+Speaker A: it's deeply
+
+81
+00:10:42,314 --> 00:10:42,564
+Speaker B: fear.
+
+82
+00:10:42,564 --> 00:10:42,964
+Speaker A: American.
+
+83
+00:10:42,964 --> 00:10:43,764
+Speaker B: 
+
+84
+00:10:43,878 --> 00:10:59,328
+Speaker B: of China is rooted in the biggest world dominate extract colonize and basically instrumentalize the other party right so
+
+85
+00:10:59,328 --> 00:11:00,178
+Speaker A: Yes, sir. No,
+
+86
+00:11:00,178 --> 00:11:00,328
+Speaker B: so
+
+87
+00:11:00,328 --> 00:11:01,128
+Speaker A: I agree.
+
+88
+00:11:01,128 --> 00:11:07,778
+Speaker B: so if if one of the two sides hold this belief
+
+89
+00:11:08,774 --> 00:11:26,174
+Speaker B: Then that means humanity have not reached a level of coordination ability to allow us to create the condition that builds superintelligence.
+
+90
+00:11:26,758 --> 00:11:28,458
+Speaker B: I mean this should be very clear,
+
+91
+00:11:28,608 --> 00:11:29,758
+Speaker B: like this is
+
+92
+00:11:29,758 --> 00:11:32,158
+Speaker A: Yes, but that's true,
+
+93
+00:11:32,208 --> 00:11:42,308
+Speaker A: that's true, but you have to remember that the dominant paradigm of universal moralism, I'm going to call it the moral in turn,
+
+94
+00:11:42,408 --> 00:11:47,108
+Speaker A: of the West is that the West is the rational player,
+
+95
+00:11:47,258 --> 00:11:53,658
+Speaker A: that the West is the steward and that the current model of the World Economic Forum and of...
+
+96
+00:11:53,446 --> 00:12:02,446
+Speaker A: of Davos and all this stuff is that you get the brightest from government you get the best from media and you get the best from industry and you bring them together and they will solve the
+
+97
+00:12:02,446 --> 00:12:02,596
+Speaker B: Look,
+
+98
+00:12:02,596 --> 00:12:03,646
+Speaker A: issues of climate
+
+99
+00:12:03,646 --> 00:12:11,646
+Speaker B: this narrative is clearly already fractured.
+
+100
+00:12:11,996 --> 00:12:17,246
+Speaker B: I think there will be a phase transition. It will collapse at that moment.
+
+101
+00:12:18,606 --> 00:12:42,306
+Speaker B: Uh I and if you look at today's distrust levels of distrust not just like between countries, between companies, between people, but just like in the way we design systems, the idea of there's a me, the outside are kind of like
+
+102
+00:12:42,790 --> 00:12:53,890
+Speaker B: uh having malicious intents and it won't inevitably happen if they see a benefit over this right so
+
+103
+00:12:53,890 --> 00:12:53,990
+Speaker A: Okay, so
+
+104
+00:12:53,990 --> 00:12:54,140
+Speaker B: so
+
+105
+00:12:54,140 --> 00:12:55,040
+Speaker A: let me,
+
+106
+00:12:55,040 --> 00:12:55,740
+Speaker B: and they're trained
+
+107
+00:12:55,740 --> 00:12:55,840
+Speaker A: yeah,
+
+108
+00:12:55,840 --> 00:13:09,090
+Speaker B: they're trained to to to to to to operate in this like day to day because of this like molochlization of the capitalist system that has dominated the global like
+
+109
+00:13:09,958 --> 00:13:11,108
+Speaker B: z uh like
+
+110
+00:13:11,308 --> 00:13:11,508
+Speaker A: Yeah.
+
+111
+00:13:11,558 --> 00:13:15,508
+Speaker B: uh way off that dyn hall dynamics writes. So it it alters the
+
+112
+00:13:15,508 --> 00:13:15,558
+Speaker A: Yeah.
+
+113
+00:13:15,558 --> 00:13:20,008
+Speaker B: the environment. But but but I'm not saying this is good or bad.
+
+114
+00:13:20,508 --> 00:13:29,558
+Speaker B: I'm just saying that under this condition, we have not satisfied the minimum requirements
+
+115
+00:13:29,862 --> 00:13:34,512
+Speaker B: of not fucking ourselves over at the build good
+
+116
+00:13:34,512 --> 00:13:34,662
+Speaker A: Yep.
+
+117
+00:13:34,662 --> 00:13:36,762
+Speaker B: super intelligence. So this should be
+
+118
+00:13:36,762 --> 00:13:37,062
+Speaker A: Yep.
+
+119
+00:13:37,062 --> 00:13:52,562
+Speaker B: very very clear uh rationality that can be accepted by EA. We can't we we we have a few solutions. We have a few solutions. So first is that okay we don't build AI, but I don't think that's the best solution.
+
+120
+00:13:52,712 --> 00:13:54,612
+Speaker B: But the second is to
+
+121
+00:13:55,526 --> 00:14:19,476
+Speaker B: take the whole A_I_ logic totally out of competition first. Even if we cannot change the nature of us in a short amount of time, but we can still, right, we we we we can still at least make sure the operations of the development of A_I_ and the use of compute
+
+122
+00:14:20,550 --> 00:14:47,350
+Speaker B: is not a hostage to Moloch. I mean this has to be insured. And if we could not do that, if we even could not do that, that means the collective consciousness of humans are not at a level that we have the techni-techno-socio-technical like foundation to build safe intelligence.
+
+123
+00:14:47,590 --> 00:15:02,840
+Speaker B: Safe intelligence cannot be built at this moment in time, but we have unlocked the technical capability to build the bad ones first. So under that scenario, should we
+
+124
+00:15:03,302 --> 00:15:12,802
+Speaker B: As humanity collectively pursue this, or should we get our consciousness up to that point and then start those kind of pursuit, right?
+
+125
+00:15:12,902 --> 00:15:15,652
+Speaker B: So those, I think everyone agrees.
+
+126
+00:15:17,350 --> 00:15:21,200
+Speaker A: Yeah, so to move forward and not get caught in the loop.
+
+127
+00:15:21,300 --> 00:15:34,550
+Speaker A: So let's assume that we have achieved some kind of meta rationality, which is accomplished through rejection of alignment orientation,
+
+128
+00:15:34,800 --> 00:15:41,050
+Speaker A: but rejection of market logic because market logic captures alignment into this kind of.
+
+129
+00:15:42,214 --> 00:16:00,964
+Speaker A: molochlization of alignment okay so we have some kind of meta rationality which leads to a sort of alignment that is detached from egoic self-interest and monopolization let's say that we have that internally the question is then it's an assumption but let's just assume
+
+130
+00:16:01,862 --> 00:16:02,762
+Speaker A: Let's assume it's true.
+
+131
+00:16:02,862 --> 00:16:04,312
+Speaker A: So even if that's true,
+
+132
+00:16:04,412 --> 00:16:10,062
+Speaker A: the issue would then be the perception of the organization. When you come and you say, look,
+
+133
+00:16:10,162 --> 00:16:19,762
+Speaker A: I'm a Chinese alignment organization or I'm an alignment organization with a Chinese name who is grounded in the Chinese alignment community. And here's what the Chinese people are saying about this.
+
+134
+00:16:20,838 --> 00:16:28,238
+Speaker A: There is a very massive risk of it being rejected on fear grounds.
+
+135
+00:16:28,538 --> 00:16:31,238
+Speaker A: And so there are two ways of dealing with that, right?
+
+136
+00:16:32,038 --> 00:16:35,688
+Speaker A: You can try and soften it and say, look,
+
+137
+00:16:35,738 --> 00:16:41,788
+Speaker A: we also have all these American counterparts and really it's a coalition of the willing and it's a balanced thing.
+
+138
+00:16:41,888 --> 00:16:44,888
+Speaker A: It's both Chinese and American and so on and so forth.
+
+139
+00:16:44,938 --> 00:16:45,888
+Speaker A: That's one approach.
+
+140
+00:16:46,136 --> 00:16:47,136
+Speaker A: I think it's difficult.
+
+141
+00:16:47,636 --> 00:16:49,686
+Speaker A: The other thing is just to say, look,
+
+142
+00:16:49,786 --> 00:17:00,686
+Speaker A: like, I think that there's enough people in the world who would understand that a market capture of intelligence,
+
+143
+00:17:00,786 --> 00:17:02,986
+Speaker A: even with moral rhetoric,
+
+144
+00:17:03,086 --> 00:17:04,736
+Speaker A: will have the exact same.
+
+145
+00:17:06,950 --> 00:17:14,900
+Speaker A: As the oil and gas industry regulating itself and doing green campaigns the exact same as the 2008 financial crisis,
+
+146
+00:17:15,100 --> 00:17:16,000
+Speaker A: the, oh,
+
+147
+00:17:16,200 --> 00:17:16,850
+Speaker A: don't worry,
+
+148
+00:17:16,900 --> 00:17:31,450
+Speaker A: we will rate our own credit ratings, we'll produce our own internal reports and so on, which leads to blow up. It'll lead to the exact same thing as the military industrial complex trying to regulate itself. It's just like you can't have this market logic.
+
+149
+00:17:31,718 --> 00:17:55,918
+Speaker A: regulating anything because it it benefits those who are willing to sacrifice values for self-accumulation and relative standing and so if you if you accept there's enough people who will accept that rejection of market logic as incompatible I think that you will get a great number of people in the West who are not afraid
+
+150
+00:17:56,550 --> 00:18:00,850
+Speaker A: But I don't think that you're going to get the San Francisco VC type,
+
+151
+00:18:00,950 --> 00:18:23,500
+Speaker A: you're not going to get them, because I think that they want to see market logic as a kind of Hegelian process where markets go and disrupt stale processes and give emergence to new technologies. And so you're kind of, you're getting populism, you're getting the ecologists, you're getting the Marxists.
+
+152
+00:18:23,270 --> 00:18:38,620
+Speaker A: you're getting the socialists you're getting the progressives but you might not be getting the libertarians you probably won't be getting the uh the vcs and and this kind of anarchist uh crypto people and so on and so forth and
+
+153
+00:18:38,620 --> 00:18:39,120
+Speaker B: Well,
+
+154
+00:18:39,120 --> 00:18:43,520
+Speaker A: i well, think that that might be that might be worthwhile it might be worthwhile i mean you that might that not need
+
+155
+00:18:43,520 --> 00:18:46,070
+Speaker B: is fine that that is fine,
+
+156
+00:18:46,270 --> 00:18:47,620
+Speaker B: you know
+
+157
+00:18:48,518 --> 00:19:08,118
+Speaker B: Like, there are always like the illusion of they're always crazy like people and their cognition is somehow miswired and you could not change them from external conditions.
+
+158
+00:19:08,668 --> 00:19:12,368
+Speaker B: So this goes back to uh the
+
+159
+00:19:13,190 --> 00:19:39,790
+Speaker B: The good versus evil paradigm is like okay, y like there are certain level of evilness that you just cannot compromise if you really really want good. And uh if the belief structure has have a hold on them and uh that belief structure cannot change
+
+160
+00:19:40,838 --> 00:19:42,988
+Speaker B: Therefore, unfortunately,
+
+161
+00:19:43,488 --> 00:19:54,288
+Speaker B: they have to surrender to the force of the destruction of the evilness, then it is the moment that you fight them.
+
+162
+00:19:54,938 --> 00:19:55,588
+Speaker B: It's easy.
+
+163
+00:19:56,338 --> 00:19:57,688
+Speaker A: Okay,
+
+164
+00:19:57,738 --> 00:19:59,538
+Speaker A: then there's two other things.
+
+165
+00:19:59,688 --> 00:20:02,488
+Speaker A: I think one is robotics,
+
+166
+00:20:03,031 --> 00:20:12,631
+Speaker A: And I think that you can articulate a labor theory of value based on the existing framework that's there.
+
+167
+00:20:12,781 --> 00:20:23,781
+Speaker A: And I think you could just add one paragraph about how robotics are the sort of the point where things either get totally misaligned and we have.
+
+168
+00:20:24,355 --> 00:20:49,755
+Speaker A: you know robotic policemen and robotic soldiers and robotic drones bombing each other and all this madness or we have you know recursively self-improving factories building robots for all this stuff right and so there's a labor theory of value that says okay well what will happen to the working class right will we be what we take care of the working class or will it be monopolized by a few elites so that's one thing
+
+169
+00:20:50,339 --> 00:20:50,589
+Speaker B: I
+
+170
+00:20:50,589 --> 00:20:50,689
+Speaker A: The
+
+171
+00:20:50,689 --> 00:20:50,789
+Speaker B: mean
+
+172
+00:20:50,789 --> 00:20:51,039
+Speaker A: Labour
+
+173
+00:20:51,039 --> 00:20:51,089
+Speaker B: uh
+
+174
+00:20:51,089 --> 00:20:51,739
+Speaker A: theory of value
+
+175
+00:20:51,739 --> 00:20:55,539
+Speaker B: a good theory predicts the future.
+
+176
+00:20:56,589 --> 00:21:12,639
+Speaker B: Therefore it is a useful theory. When we construct what we already constructed, the monopolisation, well, it gives us a way to look at the future,
+
+177
+00:21:12,839 --> 00:21:14,839
+Speaker B: right?
+
+178
+00:21:15,555 --> 00:21:26,705
+Speaker B: So if you see where you are going and if you understand your saying has grounding then what would you do,
+
+179
+00:21:27,555 --> 00:21:38,455
+Speaker B: right? Uh and uh if it is a outcome that nobody wants to have but
+
+180
+00:21:39,651 --> 00:21:52,801
+Speaker B: Somehow you still cannot coordinate over that, it becomes this coordination problem that the understanding has to be aligned first.
+
+181
+00:21:56,707 --> 00:21:57,657
+Speaker A: I think there's a simpler argument,
+
+182
+00:21:57,757 --> 00:21:57,957
+Speaker A: right?
+
+183
+00:21:58,007 --> 00:22:09,807
+Speaker A: Like this is a very simple problem where you have a very small number of people who are monopolizing the underlying means of production,
+
+184
+00:22:09,957 --> 00:22:10,207
+Speaker A: right?
+
+185
+00:22:10,307 --> 00:22:11,857
+Speaker A: And so if you have this process,
+
+186
+00:22:12,107 --> 00:22:16,807
+Speaker A: the popularity of a sort of a...
+
+187
+00:22:17,155 --> 00:22:29,405
+Speaker A: an emergent grounds-up agrarian type ideology that says look like we'll take care of the people the people are the ones who must benefit from this and
+
+188
+00:22:29,405 --> 00:22:30,105
+Speaker B: Look, look, it's
+
+189
+00:22:30,105 --> 00:22:31,155
+Speaker A: this means that you
+
+190
+00:22:31,155 --> 00:22:34,005
+Speaker B: not only about narrative,
+
+191
+00:22:34,355 --> 00:22:38,655
+Speaker B: it's also about trust.
+
+192
+00:22:42,275 --> 00:22:44,375
+Speaker B: like observation, right?
+
+193
+00:22:45,025 --> 00:23:02,775
+Speaker B: So right now their observation has a detrimental effect to themselves of establishing a trust over that kind of narrative as a constitution, right?
+
+194
+00:23:02,875 --> 00:23:06,975
+Speaker B: So it it becomes a very specific thing that
+
+195
+00:23:07,651 --> 00:23:11,851
+Speaker B: Do you actually have ways to solve that?
+
+196
+00:23:15,751 --> 00:23:17,001
+Speaker A: I think yes.
+
+197
+00:23:17,201 --> 00:23:18,101
+Speaker A: I think yes.
+
+198
+00:23:18,101 --> 00:23:18,251
+Speaker B: What's
+
+199
+00:23:18,251 --> 00:23:18,501
+Speaker A: I think
+
+200
+00:23:18,501 --> 00:23:18,651
+Speaker B: the there's way?
+
+201
+00:23:18,651 --> 00:23:18,751
+Speaker A: very
+
+202
+00:23:18,751 --> 00:23:19,051
+Speaker B: What's the way?
+
+203
+00:23:19,051 --> 00:23:22,101
+Speaker A: clear solutions to this.
+
+204
+00:23:22,251 --> 00:23:32,201
+Speaker A: I think that if intelligence becomes democratized and open models...
+
+205
+00:23:32,835 --> 00:23:36,935
+Speaker A: that are able to have open world models specifically,
+
+206
+00:23:37,085 --> 00:23:39,385
+Speaker A: not LLMs but open world models,
+
+207
+00:23:39,435 --> 00:23:42,185
+Speaker A: then that means that anyone who can acquire hardware,
+
+208
+00:23:42,385 --> 00:23:44,235
+Speaker A: anyone who can manufacture hardware,
+
+209
+00:23:44,585 --> 00:23:46,435
+Speaker A: will be able to make intelligent hardware.
+
+210
+00:23:46,585 --> 00:23:54,685
+Speaker A: And that means that anywhere sort of cosmo-locally, anyone can go and produce their own intelligent machine which can do farming,
+
+211
+00:23:54,935 --> 00:24:00,285
+Speaker A: which can do manufacturing, which can do production and all these different stuff and you will have
+
+212
+00:24:00,195 --> 00:24:10,895
+Speaker A: have like when you walk down the streets of Shenzhen you see all these very local shops where some old guy will fix any appliance in your home right he'll just fix anything right
+
+213
+00:24:10,895 --> 00:24:11,145
+Speaker B: Yeah
+
+214
+00:24:11,145 --> 00:24:24,995
+Speaker A: and it's because his engineering skill is high enough that he can you know combine pieces of an old fan with pieces of an old motor with pieces of an old you know this that next thing and can fix your electronics and so if the chip
+
+215
+00:24:24,931 --> 00:24:51,231
+Speaker A: chip itself can um be smart enough to uh have a world model then that you know tinkering production it it means that you can have your own smart robot in your home that can do uh chores and can do various other tasks right you you see this in cyberpunk fiction and so on and so forth if the world models are monopolized by large corporations and you have to pay a fee
+
+216
+00:24:51,587 --> 00:24:57,837
+Speaker A: Like you have to pay to use, you know, Microsoft software or Adobe software or what have you.
+
+217
+00:24:57,887 --> 00:25:00,337
+Speaker A: And it's like Sam Altman says,
+
+218
+00:25:00,387 --> 00:25:01,987
+Speaker A: you know, intelligence will be a utility.
+
+219
+00:25:02,287 --> 00:25:04,487
+Speaker A: It'll be like something you buy on the tap.
+
+220
+00:25:04,637 --> 00:25:04,887
+Speaker A: Right.
+
+221
+00:25:04,937 --> 00:25:06,287
+Speaker A: If it's like that,
+
+222
+00:25:06,337 --> 00:25:15,737
+Speaker A: then ultimately the worker is a serf. Right. All of your labor will be taxed by the owner of the intelligence. Right. And
+
+223
+00:25:15,737 --> 00:25:16,287
+Speaker B: I mean,
+
+224
+00:25:16,287 --> 00:25:17,487
+Speaker A: so it's very simple.
+
+225
+00:25:17,859 --> 00:25:18,909
+Speaker B: Yep, go ahead.
+
+226
+00:25:20,809 --> 00:25:32,409
+Speaker A: It's very simple. If a small community in rural Vietnam can set up their own intelligence cluster and run their own robots,
+
+227
+00:25:32,709 --> 00:25:41,559
+Speaker A: then you have cosmopolitanism. You have a worker-led system whereby the people are able to produce.
+
+228
+00:25:42,595 --> 00:26:00,195
+Speaker A: at a higher rate removing them out of subsistence meaning they don't have to toil the rice fields in order to just survive and then they can engage in more they can send their kids to school they can educate them they can produce art they can improve their community they can do all these different other things that that give life value
+
+229
+00:26:01,387 --> 00:26:04,187
+Speaker A: And it's all contingent upon whether or not models will be open source,
+
+230
+00:26:04,287 --> 00:26:07,437
+Speaker A: whether or not models will be competently available or
+
+231
+00:26:07,437 --> 00:26:08,287
+Speaker B: This I
+
+232
+00:26:08,287 --> 00:26:09,237
+Speaker A: whether they will be on tap.
+
+233
+00:26:09,237 --> 00:26:11,387
+Speaker B: disagree,
+
+234
+00:26:11,537 --> 00:26:16,437
+Speaker B: because even if models are open sourced,
+
+235
+00:26:16,587 --> 00:26:27,487
+Speaker B: as long as there are still this intelligence compounding like dynamics, you could not...
+
+236
+00:26:28,163 --> 00:26:54,063
+Speaker B: like elegantly address this world outlast and also and also like what happens if you gave machine guns to every monkey every apes right they can all defend themselves do you think that would be a good idea is open source intelligence only a good thing
+
+237
+00:26:55,107 --> 00:26:59,607
+Speaker B: all it can be both good and bad, right.
+
+238
+00:26:59,607 --> 00:26:59,807
+Speaker A: Um
+
+239
+00:26:59,807 --> 00:27:00,907
+Speaker B: It it's a huge l
+
+240
+00:27:00,907 --> 00:27:01,157
+Speaker A: of course,
+
+241
+00:27:01,157 --> 00:27:01,857
+Speaker B: it's a huge leverage.
+
+242
+00:27:01,857 --> 00:27:02,407
+Speaker A: of course.
+
+243
+00:27:02,407 --> 00:27:15,107
+Speaker B: So uh you could be like, okay, we we have a [cosmolocalism?], we open source our like A_I_ I I actually do agree that if we can make sure our A_Is are good
+
+244
+00:27:15,683 --> 00:27:18,633
+Speaker B: And uh there are verification uh
+
+245
+00:27:18,633 --> 00:27:18,733
+Speaker A: Mm
+
+246
+00:27:18,733 --> 00:27:18,883
+Speaker B: processes
+
+247
+00:27:18,883 --> 00:27:18,983
+Speaker A: -hmm.
+
+248
+00:27:18,983 --> 00:27:27,483
+Speaker B: that you cannot fine tune those models or train those models to do other dangerous things. Uh yes,
+
+249
+00:27:27,733 --> 00:27:32,283
+Speaker B: I I I think this is definitely the direction.
+
+250
+00:27:33,411 --> 00:27:37,311
+Speaker B: But that direction does not mean execution, right?
+
+251
+00:27:37,561 --> 00:27:37,811
+Speaker A: That's so
+
+252
+00:27:37,811 --> 00:27:54,511
+Speaker B: Like like when when you execute you need to match the conditions that is that justifies the succe successful ex execution and crea t uh stability over that. But that not just a very transient effect, right?
+
+253
+00:27:56,003 --> 00:27:57,903
+Speaker B: Uh i i i for the dynamics does not
+
+254
+00:27:57,903 --> 00:27:58,053
+Speaker A: Yeah.
+
+255
+00:27:58,053 --> 00:28:21,403
+Speaker B: get resolved, the compounding is still going on. It will not take much more time for us to get back to that point. And considering the like uh exponential nature of of our progress at this moment, would this actually be a practical solution?
+
+256
+00:28:23,939 --> 00:28:25,589
+Speaker A: So one thing is rhetoric,
+
+257
+00:28:25,739 --> 00:28:25,939
+Speaker A: right?
+
+258
+00:28:25,989 --> 00:28:30,989
+Speaker A: The other thing is practicality. I don't think [cosmolocalism?] has solved the problem of violence,
+
+259
+00:28:31,139 --> 00:28:31,339
+Speaker A: right?
+
+260
+00:28:32,355 --> 00:28:35,955
+Speaker A: But I also don't think that there's any other model that solved the problem of violence.
+
+261
+00:28:36,055 --> 00:28:37,055
+Speaker A: And I think that in the essay,
+
+262
+00:28:37,205 --> 00:28:47,155
+Speaker A: you also say that the problem of violence and the idea of tyranny or of cynical application of the same logic also has not been solved,
+
+263
+00:28:47,205 --> 00:28:47,305
+Speaker A: right?
+
+264
+00:28:47,355 --> 00:28:51,455
+Speaker A: So the problem of violence is an objection to all levels of the analysis.
+
+265
+00:28:51,755 --> 00:28:53,605
+Speaker A: If anyone has super intelligence,
+
+266
+00:28:53,905 --> 00:28:56,055
+Speaker A: the problem of violence emerges,
+
+267
+00:28:56,405 --> 00:28:58,155
+Speaker A: bioweapons and so on and so forth.
+
+268
+00:28:58,315 --> 00:29:05,165
+Speaker A: There is no resolving the problem of violence with like nobody has resolved it like it's it's a universal objection
+
+269
+00:29:06,615 --> 00:29:12,015
+Speaker B: So if we wanted to solve this,
+
+270
+00:29:12,115 --> 00:29:13,465
+Speaker B: there are two paths,
+
+271
+00:29:13,515 --> 00:29:13,715
+Speaker B: right?
+
+272
+00:29:13,915 --> 00:29:21,515
+Speaker B: One is you actually find a mechanism that can...
+
+273
+00:29:22,019 --> 00:29:46,569
+Speaker B: contain violence to the point that it does not start to alienate the understanding that's holding this balance right and the second cat is we understand we're not that smart our cognitive level and our consciousness
+
+274
+00:29:48,323 --> 00:30:06,773
+Speaker B: Still needs more development, but with the technology we have, with the progress we have, we can quickly like improve our consciousness, but let's just don't do like A_S_I_ Let let's let's
+
+275
+00:29:57,968 --> 00:30:13,668
+Speaker B: don't do those training [unclear] like the way we're doing it right now the future will be good oh
+
+276
+00:30:14,818 --> 00:30:14,868
+Speaker A: I
+
+277
+00:30:14,868 --> 00:30:15,218
+Speaker B: doesn't
+
+278
+00:30:15,218 --> 00:30:15,618
+Speaker A: actually, I
+
+279
+00:30:15,618 --> 00:30:15,868
+Speaker B: matter like
+
+280
+00:30:15,868 --> 00:30:16,268
+Speaker A: think I've, I
+
+281
+00:30:16,268 --> 00:30:17,118
+Speaker B: if you are
+
+282
+00:30:17,118 --> 00:30:17,318
+Speaker A: think
+
+283
+00:30:17,318 --> 00:30:17,368
+Speaker B: the
+
+284
+00:30:17,368 --> 00:30:17,568
+Speaker A: I have
+
+285
+00:30:17,568 --> 00:30:24,368
+Speaker B: the king of the world or you are just like some random homeless like like like everyone
+
+286
+00:30:26,000 --> 00:30:27,850
+Speaker B: The incentive is aligned on this.
+
+287
+00:30:28,800 --> 00:30:31,650
+Speaker A: Yeah, I think there's actually a neat.
+
+288
+00:30:32,496 --> 00:30:58,246
+Speaker A: ideological answer to this I don't know if you'll agree but but basically you have a Marxist logic right which I just outlined with the Vietnamese farmers which is of course subservient to violence which means that you need a articulation of honorable violence when violence must be constrained right it's a warrior in a garden logic right
+
+289
+00:30:59,216 --> 00:31:01,466
+Speaker A: Of the those who are stewards of violence,
+
+290
+00:31:01,716 --> 00:31:04,716
+Speaker A: but choose to use the violence in a wise way,
+
+291
+00:31:04,916 --> 00:31:05,416
+Speaker A: right?
+
+292
+00:31:05,516 --> 00:31:23,766
+Speaker A: And then above that, you have to have so this is you have to have the wisdom of using super intelligence in a way that doesn't destroy humanity or doesn't destroy the worker doesn't destroy the production doesn't lead to sort of mass conflicts and so on and so forth.
+
+293
+00:31:23,816 --> 00:31:25,016
+Speaker B: Like the...
+
+294
+00:31:26,448 --> 00:31:30,248
+Speaker A: What this creates is it creates a tripartite system,
+
+295
+00:31:30,398 --> 00:31:30,998
+Speaker A: right,
+
+296
+00:31:31,098 --> 00:31:35,248
+Speaker A: where you have the Brahman at the top who has wisdom,
+
+297
+00:31:35,448 --> 00:31:36,498
+Speaker A: who has knowledge,
+
+298
+00:31:36,848 --> 00:31:37,648
+Speaker A: who has education.
+
+299
+00:31:37,898 --> 00:31:39,448
+Speaker A: You have the soldier,
+
+300
+00:31:39,598 --> 00:31:46,248
+Speaker A: the warrior and the king who have administrative capability and a monopoly on violence.
+
+301
+00:31:46,448 --> 00:31:48,398
+Speaker A: And below that you have the worker,
+
+302
+00:31:48,598 --> 00:31:51,548
+Speaker A: the merchant and the productive capacity.
+
+303
+00:31:52,208 --> 00:31:58,908
+Speaker A: And if you orient your system in this tripartite manner where market forces doesn't rule everything,
+
+304
+00:31:59,008 --> 00:32:03,258
+Speaker A: it just has a regulating function at the level of labor,
+
+305
+00:32:03,358 --> 00:32:10,758
+Speaker A: and again, you don't have violence regulating everything as in a tyranny, militaristic control system,
+
+306
+00:32:10,858 --> 00:32:19,158
+Speaker A: you have instead rational application of universal principles of wisdom, of stewardship, and so on and so forth.
+
+307
+00:32:18,928 --> 00:32:23,878
+Speaker A: That creates a model that is outlined in Plato's Republic.
+
+308
+00:32:24,478 --> 00:32:28,078
+Speaker A: It's outlined in the Manusmriti in Hinduism.
+
+309
+00:32:28,848 --> 00:32:32,698
+Speaker A: It's actually in Chinese philosophy as well. You have the nine casts,
+
+310
+00:32:32,848 --> 00:32:36,548
+Speaker A: right? You have the nine systems of the imperial bureaucracy,
+
+311
+00:32:36,748 --> 00:32:36,948
+Speaker A: right?
+
+312
+00:32:37,048 --> 00:32:41,448
+Speaker A: And initially the nine systems of the imperial bureaucracy,
+
+313
+00:32:41,748 --> 00:32:44,248
+Speaker A: you know, the three mouths,
+
+314
+00:32:44,598 --> 00:32:46,048
+Speaker A: you know, this,
+
+315
+00:32:46,148 --> 00:32:52,648
+Speaker A: basically you have this organization like this character.
+
+316
+00:32:54,128 --> 00:33:00,428
+Speaker A: this character you you have the organization of the
+
+317
+00:33:03,568 --> 00:33:30,068
+Speaker A: society based on rational principles where you're looking at not just who was born in the right family but who is and not just who is most well educated and intelligent but also who has the best character and the best virtue right and those three models together where you're evaluating who's capable determines who should be able to steward the system and so it aligns with Hinduism it allows it aligns with
+
+318
+00:33:30,896 --> 00:33:36,496
+Speaker A: a Taoism and it allows, aligns with ancient European thought,
+
+319
+00:33:36,646 --> 00:33:37,096
+Speaker A: right?
+
+320
+00:33:37,196 --> 00:33:46,796
+Speaker A: And so you have a rational framework for designating how society should be organized into three classes.
+
+321
+00:33:48,080 --> 00:34:13,480
+Speaker A: that doesn't lead to market monopolization that doesn't lead to runaway violence but it requires as you say philosopher kings it requires stewardship it requires wisdom and this is something that we just don't have we don't have a theocracy that is capable of wisdom that is capable of stewardship that is capable of systems thinking we don't have that right and so if if you
+
+322
+00:34:13,936 --> 00:34:14,286
+Speaker A: Yeah.
+
+323
+00:34:15,086 --> 00:34:38,686
+Speaker B: Well, I I I I think um the reason we don't have that is because there is a more fundamental force, the molochlization I mean I'm just making up this word. I'm not only sure what it means, but Daniel Schmachtenberger also has a good name called their generator function right?
+
+324
+00:34:39,248 --> 00:34:44,448
+Speaker B: So like what you said are the emergence of uh more fundamental forces.
+
+325
+00:34:46,548 --> 00:34:58,398
+Speaker B: Like it it is the fundamental forces that lead to a different selection dynamics, right? So the one who's
+
+326
+00:34:58,398 --> 00:34:58,548
+Speaker A: Right,
+
+327
+00:34:58,548 --> 00:34:58,648
+Speaker B: actually
+
+328
+00:34:58,648 --> 00:34:58,948
+Speaker A: but but
+
+329
+00:34:58,948 --> 00:35:01,298
+Speaker B: making decisions are those type of people.
+
+330
+00:35:02,960 --> 00:35:11,660
+Speaker A: Right. But the thing is that I actually don't agree with this analysis of that it's purely runaway game theory and greed,
+
+331
+00:35:11,860 --> 00:35:16,210
+Speaker A: because greed, greed and game theory can be constrained by violence, right?
+
+332
+00:35:16,210 --> 00:35:21,310
+Speaker B: Well, I'm talking about the corruption of
+
+333
+00:35:21,840 --> 00:35:26,890
+Speaker B: the constraining mechanism itself, like how do we resolve that?
+
+334
+00:35:26,890 --> 00:35:27,340
+Speaker A: Yeah, yeah,
+
+335
+00:35:27,340 --> 00:35:29,140
+Speaker B: Li li like what you said, okay,
+
+336
+00:35:29,140 --> 00:35:29,190
+Speaker A: yeah
+
+337
+00:35:29,190 --> 00:35:47,440
+Speaker B: I think your system, your society can work, I also think there are many other ways that society can just function fine. But when it comes down to like those kind of like robust constraints backed by
+
+338
+00:35:48,426 --> 00:35:58,476
+Speaker B: Um like systems understanding is required at this moment in time or we should not built A_S_I_ or do what we do today.
+
+339
+00:36:00,432 --> 00:36:00,482
+Speaker B: Do
+
+340
+00:36:00,482 --> 00:36:00,832
+Speaker A: Yeah,
+
+341
+00:36:00,832 --> 00:36:00,982
+Speaker B: we have
+
+342
+00:36:00,982 --> 00:36:01,132
+Speaker A: but my
+
+343
+00:36:01,132 --> 00:36:01,332
+Speaker B: that?
+
+344
+00:36:01,332 --> 00:36:13,982
+Speaker A: issue with Schmachtenberger is that Schmachtenberger just wants Marxism, but doesn't want to say Marxism because of the Western stigma towards Marxism.
+
+345
+00:36:13,982 --> 00:36:14,182
+Speaker B: Let's
+
+346
+00:36:14,182 --> 00:36:14,632
+Speaker A: And
+
+347
+00:36:14,632 --> 00:36:14,782
+Speaker B: he not get
+
+348
+00:36:14,782 --> 00:36:14,932
+Speaker A: gets
+
+349
+00:36:14,932 --> 00:36:15,082
+Speaker B: into
+
+350
+00:36:15,082 --> 00:36:16,882
+Speaker A: caught in this, it's
+
+351
+00:36:16,882 --> 00:36:20,832
+Speaker B: Schmachtenberger. I'm just saying like generator functions is a good name.
+
+352
+00:36:22,732 --> 00:36:23,732
+Speaker A: not a bad name,
+
+353
+00:36:23,832 --> 00:36:26,232
+Speaker A: but the thing is that generator functions get solved by
+
+354
+00:36:27,504 --> 00:36:51,904
+Speaker A: like if you have a rationally organized society where the merchant and the financier and the banker doesn't get to run away control everything then you don't have this issue it's very simple and and the thing is that you you you've you've made this problem kind of within the market logic and if you design the problem from within the logic of the market then of course there's no solution
+
+355
+00:36:52,528 --> 00:36:57,878
+Speaker A: Right? Of course there's no solution because you're rationalizing from in a materialist framework.
+
+356
+00:36:58,178 --> 00:37:00,928
+Speaker A: But the market is constrained by violence.
+
+357
+00:37:01,128 --> 00:37:02,528
+Speaker A: The market was always constrained
+
+358
+00:37:02,528 --> 00:37:02,628
+Speaker B: No,
+
+359
+00:37:02,628 --> 00:37:03,028
+Speaker A: by violence and
+
+360
+00:37:03,028 --> 00:37:03,828
+Speaker B: no, no, no, no, no,
+
+361
+00:37:03,828 --> 00:37:04,278
+Speaker A: is always...
+
+362
+00:37:04,278 --> 00:37:08,878
+Speaker B: no, no, that it is constrained by violence we're fucked.
+
+363
+00:37:09,128 --> 00:37:11,578
+Speaker B: We have to change that constraint.
+
+364
+00:37:11,878 --> 00:37:14,528
+Speaker B: That is not a universal invariance.
+
+365
+00:37:17,338 --> 00:37:40,688
+Speaker A: only we're only fucked if violence itself is unconstrained if markets are constrained by violence and violence is constrained by wisdom then you don't have this issue right so if if if the the Kshatriya and the warrior class and the politicians are not constrained by money which they are today but rather constrained by wisdom and rationality then we have a different system
+
+366
+00:37:40,688 --> 00:37:40,938
+Speaker B: Well,
+
+367
+00:37:40,938 --> 00:37:41,188
+Speaker A: right
+
+368
+00:37:41,188 --> 00:37:41,438
+Speaker B: but even...
+
+369
+00:37:41,438 --> 00:37:42,488
+Speaker A: and that's the issue
+
+370
+00:37:42,960 --> 00:37:52,360
+Speaker B: Even without the market system, uh the patriarchy system, the status hierarchy
+
+371
+00:37:53,072 --> 00:37:58,822
+Speaker B: Itself also creates this dynamics of molochlization.
+
+372
+00:37:59,022 --> 00:38:01,372
+Speaker A: Yeah, yeah, sure, sure, but we y y you're you're you're still stuck. So,
+
+373
+00:38:01,372 --> 00:38:01,472
+Speaker B: So
+
+374
+00:38:01,472 --> 00:38:01,622
+Speaker A: so so
+
+375
+00:38:01,622 --> 00:38:20,022
+Speaker B: you're you're basically saying that okay, let's also abolish like status, caste and other things, or or at least also set up constraints that can regulate runaway feedback loops and then this is
+
+376
+00:38:19,792 --> 00:38:21,192
+Speaker B: The system power, right?
+
+377
+00:38:22,224 --> 00:38:23,074
+Speaker A: Yeah, yeah, yeah.
+
+378
+00:38:23,174 --> 00:38:32,424
+Speaker A: So basically what I'm saying is that the idea of everything being run by money is constrained by the idea of everything is run by status and honor,
+
+379
+00:38:32,524 --> 00:38:40,724
+Speaker A: which is again constrained by everything should be ruled by moderation and wisdom and balance and so on and so forth,
+
+380
+00:38:40,774 --> 00:38:40,924
+Speaker A: right?
+
+381
+00:38:40,974 --> 00:38:47,324
+Speaker A: There is a third category and we just do not have a priestly class. And the issue right now is that the priestly class,
+
+382
+00:38:47,474 --> 00:38:47,874
+Speaker A: the EA.
+
+383
+00:38:48,016 --> 00:38:51,666
+Speaker A: The banking elite,
+
+384
+00:38:51,816 --> 00:38:59,916
+Speaker A: the financiers, the World Economic Forum people are using rationality to justify market logic.
+
+385
+00:39:00,266 --> 00:39:05,966
+Speaker A: And this is the problem is that you need rationality separate from market incentives,
+
+386
+00:39:06,066 --> 00:39:06,266
+Speaker A: separate
+
+387
+00:39:06,266 --> 00:39:06,766
+Speaker B: I also
+
+388
+00:39:06,766 --> 00:39:07,366
+Speaker A: from the
+
+389
+00:39:07,366 --> 00:39:07,716
+Speaker B: disagree
+
+390
+00:39:07,716 --> 00:39:08,616
+Speaker A: status mill of...
+
+391
+00:39:08,616 --> 00:39:10,816
+Speaker B: on one point.
+
+392
+00:39:11,440 --> 00:39:18,840
+Speaker B: I think we do have a priestly class, the universities, the institutions, the public departments.
+
+393
+00:39:18,840 --> 00:39:19,790
+Speaker A: Those are just hedge funds.
+
+394
+00:39:19,790 --> 00:39:20,340
+Speaker B: But
+
+395
+00:39:20,340 --> 00:39:21,140
+Speaker A: Those are just hedge funds,
+
+396
+00:39:21,140 --> 00:39:21,340
+Speaker B: those
+
+397
+00:39:21,340 --> 00:39:22,040
+Speaker A: right, Cordell?
+
+398
+00:39:22,040 --> 00:39:37,190
+Speaker B: look look yeah yeah yes yes so you see it's not that we don't have them, it's that they could not escape the same logic. That's the problem. If you are just like let's build a batch of other institutions,
+
+399
+00:39:36,912 --> 00:39:43,862
+Speaker B: Since that's still subject to this logic, um you would still return to the same dynamics.
+
+400
+00:39:44,944 --> 00:39:45,294
+Speaker A: Right,
+
+401
+00:39:45,344 --> 00:39:51,894
+Speaker A: right. But the thing is, this is the thing. I actually know somebody who's trying to start a university and I think he's an idiot.
+
+402
+00:39:52,044 --> 00:39:55,244
+Speaker A: I think he's an absolute idiot because what he's doing is he wants to raise money.
+
+403
+00:39:55,394 --> 00:40:02,894
+Speaker A: He wants to raise money to start a university. But the thing is that when you raise money to start a university, you create the exact same dynamics, right?
+
+404
+00:39:55,724 --> 00:40:18,774
+Speaker A: if you look at something a little bit more elegant right where for example when we set up effectively a university classroom inside Four Seas [uncertain name] and we had a professor giving a lecture inside uh what is effectively a classroom
+
+405
+00:40:19,244 --> 00:40:20,194
+Speaker A: With people taking notes,
+
+406
+00:40:20,344 --> 00:40:21,794
+Speaker A: with people being respectful,
+
+407
+00:40:21,944 --> 00:40:23,394
+Speaker A: with people having conversations,
+
+408
+00:40:23,494 --> 00:40:24,494
+Speaker A: and so on and so forth,
+
+409
+00:40:24,544 --> 00:40:24,644
+Speaker A: right?
+
+410
+00:40:24,694 --> 00:40:26,144
+Speaker A: We created the university.
+
+411
+00:40:26,344 --> 00:40:32,244
+Speaker A: We did. We had a university class existing already independent of market forces. Nobody was being paid,
+
+412
+00:40:32,294 --> 00:40:32,494
+Speaker A: right?
+
+413
+00:40:32,594 --> 00:40:39,294
+Speaker A: And so the ease with which we can take our network and our...
+
+414
+00:40:40,236 --> 00:41:04,886
+Speaker A: a community of very intelligent older people and a lot of curious younger people who are also very capable and put them in the same room and coordinate and so on and so forth this creates what is effectively a university which is a monastery which is a theocracy right where where wisdom is the designator knowledge is the designator of status is the design
+
+415
+00:41:06,476 --> 00:41:08,526
+Speaker A: you listen to the person who has the most information,
+
+416
+00:41:08,676 --> 00:41:09,026
+Speaker A: right?
+
+417
+00:41:09,126 --> 00:41:10,876
+Speaker A: You listen to the person who has the most knowledge,
+
+418
+00:41:11,076 --> 00:41:11,526
+Speaker A: right?
+
+419
+00:41:11,626 --> 00:41:15,776
+Speaker A: That model itself does not need to be beholden to capital.
+
+420
+00:41:16,026 --> 00:41:17,976
+Speaker A: If you look at Cornell University,
+
+421
+00:41:18,176 --> 00:41:27,226
+Speaker A: Cornell University or Oxford or Harvard are literally just hedge funds with a babysitting function for the, you know, Epstein elite,
+
+422
+00:41:27,376 --> 00:41:28,476
+Speaker A: like that's all they are.
+
+423
+00:41:28,726 --> 00:41:33,426
+Speaker B: Okay, let me put it in another way. I think I got your point.
+
+424
+00:41:34,124 --> 00:41:58,374
+Speaker B: So I would describe the current dominating logic as a compounding expansionist logic, right? Even if you're just like, okay, let's make our own little university and we have a bunch of smart people, but as you expand your boundaries, you encounter those other forces. And then what do you do?
+
+425
+00:42:00,492 --> 00:42:01,992
+Speaker A: Then you need a theory.
+
+426
+00:42:02,092 --> 00:42:04,592
+Speaker A: This is why the tripartite model,
+
+427
+00:42:04,692 --> 00:42:07,542
+Speaker A: that's why the three-level model of Marxism at the bottom,
+
+428
+00:42:07,692 --> 00:42:12,942
+Speaker A: militarism and statism in the middle, and wisdom at the top is the correct model.
+
+429
+00:42:13,042 --> 00:42:14,842
+Speaker A: Because the second tier,
+
+430
+00:42:14,942 --> 00:42:15,992
+Speaker A: the Kshatriya class,
+
+431
+00:42:16,342 --> 00:42:18,592
+Speaker A: is how you deal with opposing forces,
+
+432
+00:42:18,792 --> 00:42:19,042
+Speaker A: right?
+
+433
+00:42:19,192 --> 00:42:22,792
+Speaker A: There are different ways of dealing with opposing forces.
+
+434
+00:42:22,892 --> 00:42:24,092
+Speaker A: The first is diplomacy,
+
+435
+00:42:24,342 --> 00:42:24,642
+Speaker A: right?
+
+436
+00:42:24,742 --> 00:42:25,692
+Speaker A: You engage with them,
+
+437
+00:42:25,842 --> 00:42:26,892
+Speaker A: you converse with them.
+
+438
+00:42:27,244 --> 00:42:32,694
+Speaker A: You find points of agreement and you create points of alignment and then you engage in trade,
+
+439
+00:42:32,894 --> 00:42:35,944
+Speaker A: you engage in exchanging information,
+
+440
+00:42:36,144 --> 00:42:40,044
+Speaker A: you engage in mutually beneficial activities.
+
+441
+00:42:40,908 --> 00:42:45,508
+Speaker A: Then if you have a force that is opposing your force that has no benevolent interests,
+
+442
+00:42:45,708 --> 00:42:46,108
+Speaker A: right,
+
+443
+00:42:46,158 --> 00:42:48,958
+Speaker A: then you need to be able to defend yourself against that force, right?
+
+444
+00:42:49,058 --> 00:42:50,558
+Speaker A: And I'm not saying necessarily violence,
+
+445
+00:42:50,708 --> 00:42:56,308
+Speaker A: but I'm saying that you need to have the capacity to protect your people from violence from other groups, right?
+
+446
+00:42:56,408 --> 00:43:03,008
+Speaker A: And you need to have the capacity to deal with the harmful memetics that are being propagated into your group,
+
+447
+00:43:03,058 --> 00:43:05,008
+Speaker A: which is basically to...
+
+448
+00:43:04,780 --> 00:43:06,530
+Speaker A: to say very long term,
+
+449
+00:43:06,630 --> 00:43:07,780
+Speaker A: a very short phrase,
+
+450
+00:43:07,830 --> 00:43:10,230
+Speaker A: which is to maintain the system boundaries.
+
+451
+00:43:10,860 --> 00:43:22,760
+Speaker A: In order for a system to maintain homeostasis, it needs to have a boundary that says this is my system and this is outside my system. And that needs to be regulated and you need to have a mechanism whereby you determine what is cancer,
+
+452
+00:43:23,210 --> 00:43:24,460
+Speaker A: what is a virus,
+
+453
+00:43:24,760 --> 00:43:26,810
+Speaker A: what is a predator,
+
+454
+00:43:27,010 --> 00:43:28,160
+Speaker A: and what is a friend,
+
+455
+00:43:28,260 --> 00:43:35,460
+Speaker A: what is a useful mechanism. And a certain degree of harmful bacteria in your stomach, for example, is useful for digestion.
+
+456
+00:43:36,304 --> 00:43:38,604
+Speaker A: You don't want to kill all the bacteria in your mouth, right?
+
+457
+00:43:38,654 --> 00:43:40,254
+Speaker A: Even if the bacteria is not you.
+
+458
+00:43:40,454 --> 00:43:48,204
+Speaker A: But mouthwash, for example, is bad for your breath because it kills all the useful bacteria that breaks down compounds and so on. So you need a balance.
+
+459
+00:43:48,254 --> 00:43:49,704
+Speaker A: You need a way that you can...
+
+460
+00:43:49,708 --> 00:43:53,608
+Speaker A: Include certain harmful elements that are not destructive, build up your immune system,
+
+461
+00:43:53,708 --> 00:43:54,658
+Speaker A: get stronger and stronger,
+
+462
+00:43:54,758 --> 00:43:56,408
+Speaker A: which is what we call inclusivity,
+
+463
+00:43:56,458 --> 00:43:58,008
+Speaker A: which is what we call open borders,
+
+464
+00:43:58,108 --> 00:43:59,408
+Speaker A: which enables you to grow,
+
+465
+00:43:59,508 --> 00:44:01,508
+Speaker A: you get to eat things, you get to consume things,
+
+466
+00:44:01,608 --> 00:44:03,608
+Speaker A: but you also need a boundary that says, hey, look,
+
+467
+00:44:03,708 --> 00:44:09,608
+Speaker A: these memetics, these things are destructive to us, these are harmful to us, we will not accept those.
+
+468
+00:44:10,156 --> 00:44:10,656
+Speaker A: a paradigm.
+
+469
+00:44:10,806 --> 00:44:12,156
+Speaker A: And that's what the military class,
+
+470
+00:44:12,256 --> 00:44:13,856
+Speaker A: that's what the state class,
+
+471
+00:44:13,956 --> 00:44:15,056
+Speaker A: that's what the bureaucracy does,
+
+472
+00:44:15,156 --> 00:44:17,806
+Speaker A: which is why you have to show your passport every time you go into a country.
+
+473
+00:44:18,306 --> 00:44:33,906
+Speaker B: I think if we were in the 1990s and you found a few best universities in the world and then you just grab those humanity people.
+
+474
+00:44:34,764 --> 00:44:59,364
+Speaker B: like professors researchers and put them all in a box and try to synthesize an insight and then this is probably what they gotta give you uh sure ideally i i think this is the way of doing it but you have to also point out the forces
+
+475
+00:45:00,460 --> 00:45:03,360
+Speaker B: That's just the fighting the greed,
+
+476
+00:45:03,660 --> 00:45:10,910
+Speaker B: all those things that like in every culture, like pretty much every human culture, like the way we talk about this stuff,
+
+477
+00:45:11,010 --> 00:45:13,160
+Speaker B: like you should be satisfied,
+
+478
+00:45:13,360 --> 00:45:15,810
+Speaker B: you cannot have infinite desires,
+
+479
+00:45:16,010 --> 00:45:21,110
+Speaker B: you need to see yourself as a part of a bigger system,
+
+480
+00:45:21,310 --> 00:45:22,210
+Speaker B: which
+
+481
+00:45:23,212 --> 00:45:24,912
+Speaker B: It's more than just yourself.
+
+482
+00:45:25,412 --> 00:45:28,712
+Speaker B: Like we are in a globalized civilization.
+
+483
+00:45:29,362 --> 00:45:31,512
+Speaker B: We only have one civilization.
+
+484
+00:45:31,812 --> 00:45:37,812
+Speaker B: We only have one global system that we are subsystems of that system.
+
+485
+00:45:38,012 --> 00:45:45,112
+Speaker B: Like there is fighting but we are also like not supposed to be fighting.
+
+486
+00:45:46,188 --> 00:45:54,488
+Speaker B: Right? Li like a fighting itself i is is like a jealousy. It's it's not a good thing, but it's just hard to content.
+
+487
+00:45:55,308 --> 00:45:59,658
+Speaker B: I think fundamentally you have to have like this piece
+
+488
+00:45:59,658 --> 00:45:59,708
+Speaker A: It
+
+489
+00:45:59,708 --> 00:46:12,758
+Speaker B: just like other things like over this like okay if I'm the biggest, I'm the most dominant, I deserve, I have the legitimacy, those shall be mine.
+
+490
+00:46:12,908 --> 00:46:22,258
+Speaker B: Like this fundamental like western us versus others dualistic framing itself also has to be.
+
+491
+00:46:22,028 --> 00:46:22,028
+Speaker B: has
+
+492
+00:46:22,028 --> 00:46:22,028
+Speaker B: Like
+
+493
+00:46:22,028 --> 00:46:23,178
+Speaker B: to be haunted out.
+
+494
+00:46:26,678 --> 00:46:27,628
+Speaker A: So there's
+
+495
+00:46:27,628 --> 00:46:28,928
+Speaker B: So yeah, yeah, yeah,
+
+496
+00:46:28,928 --> 00:46:29,028
+Speaker A: a
+
+497
+00:46:29,028 --> 00:46:29,328
+Speaker B: so
+
+498
+00:46:29,328 --> 00:46:31,728
+Speaker A: couple issues,
+
+499
+00:46:31,978 --> 00:46:32,128
+Speaker A: right?
+
+500
+00:46:32,628 --> 00:46:37,978
+Speaker A: So the issue is that if you draw the system boundary around the planet,
+
+501
+00:46:38,128 --> 00:46:38,978
+Speaker A: right,
+
+502
+00:46:39,078 --> 00:46:44,878
+Speaker A: then you need a way to effectively like...
+
+503
+00:46:46,508 --> 00:47:06,558
+Speaker A: quantify it but a very very large portion of the earth and a very large portion of humanity is effectively cancerous right and so you how are you going to if you draw the system boundary around the earth which is totally valid you can do that then you have to find a way to get rid of all those
+
+504
+00:47:09,996 --> 00:47:11,296
+Speaker A: cancerous elements right and
+
+505
+00:47:11,296 --> 00:47:12,346
+Speaker B: Well, well, and I totally
+
+506
+00:47:12,346 --> 00:47:13,096
+Speaker A: and they call them
+
+507
+00:47:13,096 --> 00:47:13,596
+Speaker B: disagree.
+
+508
+00:47:13,796 --> 00:47:19,496
+Speaker B: I think in the whole ecosystem, if you're cancerous over time,
+
+509
+00:47:19,546 --> 00:47:21,696
+Speaker B: you will get selected out.
+
+510
+00:47:21,946 --> 00:47:26,796
+Speaker B: So right now, basically all the cancerous system are human made.
+
+511
+00:47:26,796 --> 00:47:27,546
+Speaker A: we're the cancer
+
+512
+00:47:27,546 --> 00:47:27,596
+Speaker B: So
+
+513
+00:47:27,596 --> 00:47:27,796
+Speaker A: we're
+
+514
+00:47:27,796 --> 00:47:29,096
+Speaker B: it's not that other.
+
+515
+00:47:29,146 --> 00:47:30,546
+Speaker B: Yes, yes, we are the cancer.
+
+516
+00:47:32,796 --> 00:47:34,646
+Speaker A: yeah but you see the issue the
+
+517
+00:47:34,646 --> 00:47:35,696
+Speaker B: Yeah, yeah, yeah, of course,
+
+518
+00:47:35,696 --> 00:47:35,846
+Speaker A: issue
+
+519
+00:47:35,846 --> 00:47:36,396
+Speaker B: of course.
+
+520
+00:47:38,156 --> 00:47:38,506
+Speaker B: Uh,
+
+521
+00:47:38,606 --> 00:47:40,006
+Speaker B: that
+
+522
+00:47:40,006 --> 00:47:44,056
+Speaker A: Right. So, so like because of this issue,
+
+523
+00:47:44,106 --> 00:47:52,056
+Speaker A: which is that humanity should effectively just commit suicide and let the let the Earth's ecosystem reclaim all its natural harmony,
+
+524
+00:47:52,156 --> 00:47:52,756
+Speaker A: which it will.
+
+525
+00:47:53,156 --> 00:47:54,106
+Speaker B: I also disagree.
+
+526
+00:47:54,556 --> 00:48:00,556
+Speaker B: I think we are still on continuation that can still keep manifesting. We have a great future.
+
+527
+00:48:03,884 --> 00:48:09,584
+Speaker A: I think the places to draw the system boundary in a slightly more narrow way,
+
+528
+00:48:09,734 --> 00:48:10,684
+Speaker A: in
+
+529
+00:48:12,434 --> 00:48:16,384
+Speaker A: a slightly more narrow way in which you effectively have,
+
+530
+00:48:16,584 --> 00:48:20,784
+Speaker A: let's say the intellectual class.
+
+531
+00:48:21,134 --> 00:48:21,684
+Speaker A: Okay,
+
+532
+00:48:21,734 --> 00:48:24,734
+Speaker A: so what you could do is you could take the system boundary,
+
+533
+00:48:24,884 --> 00:48:26,834
+Speaker A: draw the system boundary around the earth,
+
+534
+00:48:27,034 --> 00:48:28,834
+Speaker A: designate the...
+
+535
+00:48:30,508 --> 00:48:53,508
+Speaker A: parts of the earth into or actually let's say human beings because we're really the problem designate human beings into three categories right with with uh subcategories within each category right so at the very lowest category you have uh labor you have workers you have people who produce stuff with their hands which are effectively the most in touch with nature and reality that you could possibly be
+
+536
+00:48:55,020 --> 00:48:57,070
+Speaker A: have the people who allocate capital,
+
+537
+00:48:57,220 --> 00:48:59,420
+Speaker A: the owners of the means of production and so on and so forth,
+
+538
+00:48:59,520 --> 00:49:10,870
+Speaker A: who currently right now rule the system, but really should effectively not rule the system, should just be, you know, bean counters and accountants who make sure that we produce enough wheat to feed everybody.
+
+539
+00:49:11,020 --> 00:49:12,920
+Speaker A: They should not have a glorified function at all.
+
+540
+00:49:13,070 --> 00:49:14,570
+Speaker A: And then you have the second cast,
+
+541
+00:49:14,720 --> 00:49:19,520
+Speaker A: which is composed of at the bottom soldiers who defend police officers.
+
+542
+00:49:20,844 --> 00:49:47,294
+Speaker A: people so on and so forth who create a security system and then above that you have the state which manages all the people make sure everyone gets fed make sure that there's no harmful elements and so on and so forth and again we don't have a priestly class right so the issue is that there we could do this if you could grow an organ inside the system that is earth and grow that organ large enough to
+
+543
+00:49:47,500 --> 00:49:51,000
+Speaker A: become a regulatory function of those two lower casts, right?
+
+544
+00:49:51,300 --> 00:49:52,050
+Speaker A: Then yes,
+
+545
+00:49:52,200 --> 00:49:54,750
+Speaker A: but effectively right now we don't have that organ at all.
+
+546
+00:49:54,850 --> 00:49:56,750
+Speaker A: Like I don't even know of any...
+
+547
+00:49:57,450 --> 00:50:01,300
+Speaker B: I don't think your approach could make it happen,
+
+548
+00:50:01,500 --> 00:50:04,600
+Speaker B: but I do think we can make it happen.
+
+549
+00:50:04,700 --> 00:50:05,400
+Speaker B: Let me explain.
+
+550
+00:50:05,700 --> 00:50:10,200
+Speaker B: So what if we look at government,
+
+551
+00:50:10,600 --> 00:50:14,000
+Speaker B: we look at our own security,
+
+552
+00:50:14,550 --> 00:50:17,900
+Speaker B: we look at our own like...
+
+553
+00:50:18,308 --> 00:50:22,458
+Speaker B: basic freedom of like having a decent life,
+
+554
+00:50:23,008 --> 00:50:31,158
+Speaker B: us necessities of being a human. And we create infrastructures to make those possible.
+
+555
+00:50:31,958 --> 00:50:39,708
+Speaker B: And those infrastructures will be fully autonomous. They don't have to be A_I_ that
+
+556
+00:50:40,420 --> 00:50:46,770
+Speaker B: being trained every year and becomes like more sophisticated,
+
+557
+00:50:47,020 --> 00:50:48,520
+Speaker B: more capable or bigger.
+
+558
+00:50:48,720 --> 00:50:52,670
+Speaker B: They just need to be good enough so we all be like oh it's good.
+
+559
+00:50:53,520 --> 00:50:59,270
+Speaker B: And turn those things into autonomous infrastructures like trees.
+
+560
+00:50:59,820 --> 00:51:00,920
+Speaker B: Trees are providers.
+
+561
+00:51:00,920 --> 00:51:01,120
+Speaker A: Okay.
+
+562
+00:51:01,120 --> 00:51:02,220
+Speaker B: They provide the shelter,
+
+563
+00:51:02,220 --> 00:51:02,470
+Speaker A: I'm over
+
+564
+00:51:02,470 --> 00:51:03,370
+Speaker B: they provide fruits,
+
+565
+00:51:03,420 --> 00:51:04,570
+Speaker B: they provide yeah.
+
+566
+00:51:05,348 --> 00:51:06,898
+Speaker A: We agree. We agree. Okay,
+
+567
+00:51:06,998 --> 00:51:09,548
+Speaker A: so I think the fundamental disagreement is different.
+
+568
+00:51:09,848 --> 00:51:11,048
+Speaker A: It's more fundamental.
+
+569
+00:51:11,198 --> 00:51:15,698
+Speaker A: Our disagreement is you're saying that growth is bad,
+
+570
+00:51:15,848 --> 00:51:19,398
+Speaker A: but then you're using the analogy of a tree which grows
+
+571
+00:51:19,398 --> 00:51:19,698
+Speaker B: I'm
+
+572
+00:51:19,698 --> 00:51:19,848
+Speaker A: to
+
+573
+00:51:19,848 --> 00:51:20,048
+Speaker B: not saying
+
+574
+00:51:20,048 --> 00:51:20,598
+Speaker A: the full growth extent
+
+575
+00:51:20,598 --> 00:51:20,648
+Speaker B: is
+
+576
+00:51:20,648 --> 00:51:21,398
+Speaker A: of its bad. growth.
+
+577
+00:51:21,398 --> 00:51:21,498
+Speaker B: 
+
+578
+00:51:21,798 --> 00:51:24,248
+Speaker B: I never said growth is bad.
+
+579
+00:51:24,998 --> 00:51:25,998
+Speaker B: I said,
+
+580
+00:51:25,998 --> 00:51:26,098
+Speaker A: You
+
+581
+00:51:26,098 --> 00:51:26,498
+Speaker B: well,
+
+582
+00:51:26,498 --> 00:51:27,098
+Speaker A: say infinite?
+
+583
+00:51:27,098 --> 00:51:29,348
+Speaker B: like.
+
+584
+00:51:30,436 --> 00:51:46,786
+Speaker B: What is infinite growth? There's also a human construct, but like the highest purpose of my agency is to rationally understand what I have and use what I have to get more.
+
+585
+00:51:47,486 --> 00:51:50,036
+Speaker B: I mean, I'm saying,
+
+586
+00:51:50,186 --> 00:51:53,836
+Speaker B: when this logic gets accelerated
+
+587
+00:51:54,948 --> 00:51:57,448
+Speaker B: It's better that not,
+
+588
+00:51:57,598 --> 00:51:58,698
+Speaker B: like,
+
+589
+00:51:58,848 --> 00:52:03,348
+Speaker B: even having those developments appears alongside,
+
+590
+00:52:03,848 --> 00:52:04,248
+Speaker B: right?
+
+591
+00:52:04,948 --> 00:52:09,498
+Speaker B: But I love development. I love new things. Like, I love novelty.
+
+592
+00:52:11,598 --> 00:52:14,998
+Speaker A: Yeah, I think the issue is not growth.
+
+593
+00:52:15,812 --> 00:52:19,862
+Speaker A: And again, I think infinite growth is a messy idea,
+
+594
+00:52:19,962 --> 00:52:21,562
+Speaker A: so let's just drop the idea of infinite growth.
+
+595
+00:52:21,662 --> 00:52:23,462
+Speaker A: But the issue is not growth, right?
+
+596
+00:52:23,512 --> 00:52:25,562
+Speaker A: For a system to survive,
+
+597
+00:52:25,662 --> 00:52:27,262
+Speaker A: it has to consume things.
+
+598
+00:52:27,362 --> 00:52:30,312
+Speaker A: And for human civilization to survive,
+
+599
+00:52:30,412 --> 00:52:31,762
+Speaker A: it has to consume things.
+
+600
+00:52:32,062 --> 00:52:35,912
+Speaker A: And of course, all of those things are ultimately coming from the sun,
+
+601
+00:52:36,062 --> 00:52:36,412
+Speaker A: right?
+
+602
+00:52:36,512 --> 00:52:42,312
+Speaker A: And so I think that there is a sense in which what is needed is a kind of...
+
+603
+00:52:43,204 --> 00:53:07,454
+Speaker A: shamanism or a kind of paganism use abstract terminology which would value that everything that comes that we need in order to grow quote-unquote grow effectively is given to us by the sun and that is not a human construct and therefore growth itself cannot be contingent upon market logic it cannot all growth is contingent upon
+
+604
+00:53:08,484 --> 00:53:36,234
+Speaker A: the Sun and which produces energy and the material of the earth the wood the oil all of these things which are byproducts of the Sun right so gold and silver and all these different things that exist in the earth's crust and and and so on and so forth all the things that we need to maintain advanced civilization copper lithium all of these things these are byproducts of the physical system that we already occupy they're not
+
+605
+00:53:36,132 --> 00:53:47,632
+Speaker A: not human produced and therefore cannot be monopolized and so and then the other layer is labor right people have to go and get them out of the ground and so on and so forth which will increasingly be done by robots
+
+606
+00:53:48,612 --> 00:53:59,862
+Speaker A: And so what we have is we have effectively a system of value which is not determined by human monopolies but are determined by the ecological system itself,
+
+607
+00:54:00,012 --> 00:54:00,162
+Speaker A: right?
+
+608
+00:54:00,312 --> 00:54:09,312
+Speaker A: And so I think something like Gaiaism or shamanism or animism or all of these non,
+
+609
+00:54:09,462 --> 00:54:14,512
+Speaker A: see the issue isn't growth. The issue is a religious idea of growth.
+
+610
+00:54:14,820 --> 00:54:17,970
+Speaker A: Which leads to some kind of transcendent end state,
+
+611
+00:54:18,170 --> 00:54:22,120
+Speaker A: some kind of final point of history,
+
+612
+00:54:22,220 --> 00:54:25,520
+Speaker A: which is like eschatological. It's like this Christian idea,
+
+613
+00:54:25,520 --> 00:54:25,820
+Speaker B: Yeah,
+
+614
+00:54:25,820 --> 00:54:26,470
+Speaker A: which is totally,
+
+615
+00:54:26,470 --> 00:54:27,070
+Speaker B: we got
+
+616
+00:54:27,070 --> 00:54:27,720
+Speaker A: yeah.
+
+617
+00:54:27,720 --> 00:54:28,020
+Speaker B: this.
+
+618
+00:54:29,412 --> 00:54:33,762
+Speaker A: But but it's also it's also totally it's not scientific at all right like this
+
+619
+00:54:33,762 --> 00:54:33,862
+Speaker B: I
+
+620
+00:54:33,862 --> 00:54:33,962
+Speaker A: idea
+
+621
+00:54:33,962 --> 00:54:34,762
+Speaker B: think you're a friend.
+
+622
+00:54:34,762 --> 00:54:35,912
+Speaker A: like yeah
+
+623
+00:54:35,912 --> 00:54:36,712
+Speaker B: Go ahead, sorry.
+
+624
+00:54:36,712 --> 00:54:49,412
+Speaker A: and and and so and so if you if you reject this version then you can say growth is what the universe does all the time you just can't have this this you know final
+
+625
+00:54:50,436 --> 00:55:11,736
+Speaker A: stage of uh you know this sort of uh where god will come down and save all of us and jesus or the messiah in judaism or or the the the second coming of of the prophet muhammad or whatever like you you this is like specifically a christian idea and so i think that that uh you you need effectively a religious construct
+
+626
+00:55:12,516 --> 00:55:39,216
+Speaker A: which conceptualizes value as something external from human beings and that human beings are something that that exists within that value system rather than the determiner and creator of value itself right and and that that's very simple it's not like ontologically difficult to understand it's it doesn't it's not that it contradicts science it's actually unscientific to believe in infinite progress like infinite linear
+
+627
+00:55:39,236 --> 00:55:58,736
+Speaker A: in your progress it's just nonsense like what what if you had a civilization that was so advanced and it was going down the tech tree and then it discovers something like atomic bombs and it kills itself is that infinite growth is that you know is that continuous advancement right is is the the end goal of technological uh
+
+628
+00:56:00,132 --> 00:56:18,832
+Speaker A: progress is such a precarious situation that every year you have to worry about getting obliterated right then if you take that and you you bring t2 to infinity well then the society will obliterate itself at t100 or t50 or t20 or tomorrow right and so the the idea that
+
+629
+00:56:20,804 --> 00:56:25,804
+Speaker A: technological progress is something that is linear.
+
+630
+00:56:26,004 --> 00:56:27,104
+Speaker A: It's just wrong,
+
+631
+00:56:27,204 --> 00:56:27,454
+Speaker A: right?
+
+632
+00:56:27,504 --> 00:56:28,104
+Speaker A: It's just incorrect.
+
+633
+00:56:28,868 --> 00:56:31,268
+Speaker A: And I think that this is the fundamental issue,
+
+634
+00:56:31,468 --> 00:56:54,568
+Speaker A: is that you need to have a cyclical model of progress which goes through stages of growth and stages of decay where you allow for civilizations like the U.S. to decline and die and you allow for civilizations like China to rise and grow and eventually also decline and die because you have a seasonal view. You have a view where the tree can grow.
+
+635
+00:56:54,916 --> 00:57:00,266
+Speaker A: But the tree doesn't grow to destroy the soil that leads to its very foundation,
+
+636
+00:57:00,466 --> 00:57:00,666
+Speaker A: right?
+
+637
+00:57:00,766 --> 00:57:08,416
+Speaker A: If the tree is just left to grow and monopolize everything to the point that it destroys the very ecosystem upon which it depends,
+
+638
+00:57:08,566 --> 00:57:09,866
+Speaker A: then that growth is like...
+
+639
+00:57:10,884 --> 00:57:13,134
+Speaker A: It's like it's a logical like it contradicts itself.
+
+640
+00:57:13,384 --> 00:57:16,434
+Speaker A: It's like that's not truly growth right?
+
+641
+00:57:16,484 --> 00:57:19,984
+Speaker A: It's a perversion of the word growth Yeah. So the word growth is not the issue right?
+
+642
+00:57:20,084 --> 00:57:23,184
+Speaker A: The issue is is is lack of seasonality.
+
+643
+00:57:23,534 --> 00:57:24,384
+Speaker A: That's the issue.
+
+644
+00:57:24,384 --> 00:57:24,484
+Speaker B: Well,
+
+645
+00:57:24,484 --> 00:57:26,234
+Speaker A: You don't have a cyclic model of
+
+646
+00:57:26,234 --> 00:57:26,334
+Speaker B: so
+
+647
+00:57:26,334 --> 00:57:26,584
+Speaker A: growth
+
+648
+00:57:26,584 --> 00:57:34,834
+Speaker B: I think I totally get it, but there is one part that I would look at differently.
+
+649
+00:57:35,134 --> 00:57:38,084
+Speaker B: I would look at decay as a form of growth.
+
+650
+00:57:40,676 --> 00:57:41,026
+Speaker B: Like
+
+651
+00:57:41,026 --> 00:57:41,126
+Speaker A: Agreed.
+
+652
+00:57:41,126 --> 00:57:41,876
+Speaker B: like like like
+
+653
+00:57:41,876 --> 00:57:42,326
+Speaker A: That's what I mean.
+
+654
+00:57:42,326 --> 00:57:42,626
+Speaker B: like like
+
+655
+00:57:42,626 --> 00:57:43,876
+Speaker A: Synchronicity, yeah.
+
+656
+00:57:43,876 --> 00:58:03,226
+Speaker B: like like like like [dying?] is not a bug but a feature like we we we are fundamentally looking at this wrong that's why we or at least many people pursue this immortality as being better
+
+657
+00:58:04,068 --> 00:58:04,468
+Speaker B: uh though
+
+658
+00:58:04,468 --> 00:58:05,268
+Speaker A: Yep, but
+
+659
+00:58:05,268 --> 00:58:13,218
+Speaker B: it's not but i mean live a thousand year it's it's i'm not sure i want to live a thousand year but uh the the thing is
+
+660
+00:58:13,218 --> 00:58:13,268
+Speaker A: a
+
+661
+00:58:13,268 --> 00:58:13,568
+Speaker B: that i
+
+662
+00:58:13,568 --> 00:58:22,018
+Speaker A: thousand years is not that long right a thousand years is not that long right so the thing is that you're right to say that actually America dying is progress
+
+663
+00:58:23,218 --> 00:58:26,318
+Speaker B: i i think yeah yeah of course i i think for anything
+
+664
+00:58:27,620 --> 00:58:40,770
+Speaker B: That is a structure of itself that maintains its environment for its own existence and looks at a part of its structure as permanent.
+
+665
+00:58:41,720 --> 00:58:51,870
+Speaker B: It becomes an enforcer of a logic that can become very detrimental to
+
+666
+00:58:51,684 --> 00:59:00,584
+Speaker B: to the situationality and the growth, the changes, that's like in conflict with its rigid frame of what is,
+
+667
+00:59:00,584 --> 00:59:00,834
+Speaker A: Okay.
+
+668
+00:59:00,834 --> 00:59:01,084
+Speaker B: right?
+
+669
+00:59:01,700 --> 00:59:04,700
+Speaker A: Okay, yeah, yeah. So dynamic equilibrium,
+
+670
+00:59:05,200 --> 00:59:05,400
+Speaker A: right?
+
+671
+00:59:05,600 --> 00:59:07,500
+Speaker A: Homeostasis, not stasis, right?
+
+672
+00:59:07,600 --> 00:59:13,450
+Speaker A: And so this is very, very simple ontologically to understand.
+
+673
+00:59:13,650 --> 00:59:15,100
+Speaker A: And it's actually,
+
+674
+00:59:15,150 --> 00:59:17,350
+Speaker A: I use the word shamanism or paganism, right?
+
+675
+00:59:17,400 --> 00:59:19,850
+Speaker A: But actually, it's just systems theory, right?
+
+676
+00:59:19,900 --> 00:59:21,000
+Speaker A: It's just cybernetics, right?
+
+677
+00:59:21,050 --> 00:59:26,350
+Speaker A: And this is what I'm saying. I think that communism will get, which is the lowest.
+
+678
+00:59:26,532 --> 00:59:28,082
+Speaker A: the logic of the caste system,
+
+679
+00:59:28,182 --> 00:59:30,532
+Speaker A: the logic of the laborer, the logic of the worker,
+
+680
+00:59:30,732 --> 00:59:38,132
+Speaker A: the logic of the mass population who just wants bread and they want, you know, cheap gasoline and they want, you know, very simple logic.
+
+681
+00:59:38,282 --> 00:59:42,132
+Speaker A: That logic will get eaten by alignment logic.
+
+682
+00:59:42,532 --> 00:59:46,832
+Speaker A: I think Marxism becomes cybernetics. And I think that,
+
+683
+00:59:46,882 --> 00:59:47,332
+Speaker A: again,
+
+684
+00:59:47,482 --> 00:59:48,782
+Speaker A: mass surveillance,
+
+685
+00:59:49,082 --> 00:59:51,082
+Speaker A: intelligence industrial complex.
+
+686
+00:59:51,460 --> 01:00:02,560
+Speaker A: robotic control systems all of this stuff again gets consumed by cybernetics but the issue is that we don't have we don't have a university or
+
+687
+00:59:53,823 --> 01:00:12,073
+Speaker A: a priestly class that understands cybernetics we don't have that we don't have anyone who understands cybernetics and systems theory right and you would argue
+
+688
+01:00:13,673 --> 01:00:19,873
+Speaker B: So that means everyone has access to the understanding itself directly.
+
+689
+01:00:22,131 --> 01:00:27,581
+Speaker A: But so the issue is that the AI is a cybernetic system on its own, right?
+
+690
+01:00:27,631 --> 01:00:31,181
+Speaker A: And so the issue is that if you make the weights are frozen,
+
+691
+01:00:31,431 --> 01:00:31,831
+Speaker A: right?
+
+692
+01:00:32,031 --> 01:00:39,081
+Speaker A: And this is the issue is that if you make AI where the weights are frozen and the training.
+
+693
+01:00:39,955 --> 01:01:06,455
+Speaker A: is based upon all the prior data that comes into it you're creating a monolithic frozen structure which doesn't allow for that decay that's necessary right and you could create a a thousand year stagnation where again your civilization grows so much that it creates super intelligent ai and then super intelligent ai creates a stagnant society that exists in in in a frozen form for a thousand years
+
+694
+01:01:06,675 --> 01:01:07,325
+Speaker A: Again,
+
+695
+01:01:07,425 --> 01:01:09,425
+Speaker A: the idea of linear progress breaks down,
+
+696
+01:01:09,525 --> 01:01:09,675
+Speaker A: right?
+
+697
+01:01:09,725 --> 01:01:13,575
+Speaker A: You need a way for the AI to decay.
+
+698
+01:01:13,675 --> 01:01:17,075
+Speaker A: You need a way for the AI to rot and get replaced by new AI,
+
+699
+01:01:17,225 --> 01:01:17,675
+Speaker A: right?
+
+700
+01:01:17,675 --> 01:01:21,225
+Speaker B: Yeah, I got the specific logics.
+
+701
+01:01:21,775 --> 01:01:22,425
+Speaker B: Actually,
+
+702
+01:01:22,925 --> 01:01:24,975
+Speaker B: I have a truth and before I forgot that,
+
+703
+01:01:25,075 --> 01:01:27,375
+Speaker B: I think it would be very great to mention.
+
+704
+01:01:27,625 --> 01:01:30,225
+Speaker B: I think the energy coming from the sun,
+
+705
+01:01:30,325 --> 01:01:31,475
+Speaker B: like our...
+
+706
+01:01:32,141 --> 01:01:56,741
+Speaker B: like uh dependency is on the sun can be further articulated with that uh we we we call it's automation that's provided with this. Not coming from the sun but automation. And the ecosystem itself is already automation, like even without us awareing the mycelium network.
+
+707
+01:01:57,427 --> 01:02:03,777
+Speaker B: is at the trees they are doing those kind of like system maintenance,
+
+708
+01:02:04,527 --> 01:02:14,977
+Speaker B: that's making the whole thing work. Like the trees are the lungs of the ecosystem, it does not become the whole ecosystem and it does not
+
+709
+01:02:15,411 --> 01:02:37,961
+Speaker B: like as the returns for its uh fruit. Oh of course you can also argue otherwise. But by generally, right, we we we could have uh a autonomous version that also make this layer. Um that should be what we use AI to do. Just have a like uh
+
+710
+01:02:38,515 --> 01:02:51,915
+Speaker B: global coordination that we all put our computers and those used together and to build this layer of infrastructure for everyone on earth which we actually can we we don't but
+
+711
+01:02:51,915 --> 01:03:03,665
+Speaker A: but but that that's not a singleton right so each tree has it is it is effectively a very dumb uh well not i don't want to say dumb i i want to say very simple
+
+712
+01:03:04,659 --> 01:03:31,309
+Speaker A: computational process which follows very basic rules and a flower and so on about where to place the petals and so on and so forth and there's some variance within that and when you have a lot of flowers together you do see a sort of higher level emergent intelligence or whatever but but but at the basic level you know moss and trees and so on are not run by a single centralized computing system right and so this
+
+713
+01:03:31,379 --> 01:03:37,779
+Speaker A: This is the issue. The issue is not that, like the issue is going back to the cosmologicalism thing.
+
+714
+01:03:37,879 --> 01:03:42,579
+Speaker A: I think that if all the farmers have their own compute,
+
+715
+01:03:42,829 --> 01:03:42,879
+Speaker A: then
+
+716
+01:03:42,879 --> 01:03:43,179
+Speaker B: I don't
+
+717
+01:03:43,179 --> 01:03:43,829
+Speaker A: you would get something...
+
+718
+01:03:43,829 --> 01:03:46,779
+Speaker B: I don’t think decentralization is the fundamental issue.
+
+719
+01:03:47,129 --> 01:03:53,629
+Speaker B: It is the molochlization selection process that makes [centralization or decentralization unclear] dangerous.
+
+720
+01:03:54,675 --> 01:03:55,575
+Speaker B: So,
+
+721
+01:03:55,575 --> 01:03:56,475
+Speaker A: But okay,
+
+722
+01:03:56,525 --> 01:03:59,975
+Speaker A: but then China already has it worked out, right?
+
+723
+01:04:00,025 --> 01:04:03,925
+Speaker A: So China makes the market subservient to the state.
+
+724
+01:04:04,075 --> 01:04:10,175
+Speaker A: And so state level AI produced by the market inside China is the solution.
+
+725
+01:04:11,375 --> 01:04:13,025
+Speaker B: I mean, like,
+
+726
+01:04:13,175 --> 01:04:21,425
+Speaker B: I think there is a bigger dynamics that's dominating this is the, like.
+
+727
+01:04:22,067 --> 01:04:23,767
+Speaker B: China U_S_ competition.
+
+728
+01:04:24,317 --> 01:04:48,367
+Speaker B: Like U_S_ well not look otherwise but will pushing on everything is competition. So uh like you you don't in in China there's a old word, it's like okay, you know like when you are in those kind of situations, it's like if you are behind, you are dead, right. You you get beaten. So uh but this is understood then what what what are the choices does China have?
+
+729
+01:04:50,675 --> 01:04:51,525
+Speaker A: But again,
+
+730
+01:04:51,775 --> 01:04:52,925
+Speaker A: I think the issue,
+
+731
+01:04:53,025 --> 01:04:55,125
+Speaker A: I think we're kind of circling the same thing again.
+
+732
+01:04:55,875 --> 01:04:56,275
+Speaker A: Again,
+
+733
+01:04:56,475 --> 01:04:58,575
+Speaker A: you said you didn't say growth is bad,
+
+734
+01:04:58,625 --> 01:05:02,725
+Speaker A: right? But what you said just now sounds a little bit like competition is bad.
+
+735
+01:05:02,825 --> 01:05:04,425
+Speaker A: But competition is also not bad,
+
+736
+01:05:04,425 --> 01:05:04,725
+Speaker B: competition
+
+737
+01:05:04,725 --> 01:05:04,925
+Speaker A: right?
+
+738
+01:05:04,925 --> 01:05:10,525
+Speaker B: like it has a situationality in this situation it is bad
+
+739
+01:05:12,723 --> 01:05:13,873
+Speaker A: In this situation,
+
+740
+01:05:14,123 --> 01:05:14,423
+Speaker A: it's bad,
+
+741
+01:05:14,573 --> 01:05:14,673
+Speaker A: right?
+
+742
+01:05:14,773 --> 01:05:19,473
+Speaker A: But the thing is that the trees compete with each other,
+
+743
+01:05:19,573 --> 01:05:20,123
+Speaker A: right?
+
+744
+01:05:20,223 --> 01:05:20,523
+Speaker B: Right,
+
+745
+01:05:20,523 --> 01:05:20,773
+Speaker A: And
+
+746
+01:05:20,773 --> 01:05:21,023
+Speaker B: right, right.
+
+747
+01:05:21,023 --> 01:05:26,323
+Speaker A: so the idea is that, again,
+
+748
+01:05:26,523 --> 01:05:29,073
+Speaker A: in a way, you have to say, okay,
+
+749
+01:05:29,123 --> 01:05:31,823
+Speaker A: America declining is progress,
+
+750
+01:05:32,073 --> 01:05:36,473
+Speaker A: right? And you have to say that, in a way,
+
+751
+01:05:37,107 --> 01:05:44,107
+Speaker A: Competition between China and the U.S. as China rises and America decays is also progress.
+
+752
+01:05:45,331 --> 01:05:54,731
+Speaker A: You have to say that war and conflict and the lions fighting each other over who gets to eat the gazelle is progress.
+
+753
+01:05:55,181 --> 01:05:57,731
+Speaker A: You have to say that the lion eating the gazelle is progress.
+
+754
+01:05:57,881 --> 01:06:00,131
+Speaker A: You have to say the lion dying is progress.
+
+755
+01:06:00,281 --> 01:06:01,981
+Speaker A: You have to say all of these things are progress.
+
+756
+01:06:02,031 --> 01:06:02,281
+Speaker A: Otherwise,
+
+757
+01:06:02,381 --> 01:06:04,781
+Speaker A: your model doesn't work, right? And so you...
+
+758
+01:06:05,031 --> 01:06:10,481
+Speaker B: Like, you can't argue progress in this, like, reduction.
+
+759
+01:06:10,483 --> 01:06:17,083
+Speaker B: Dr this thick way, I I I think the best uh way it can be argued is that uh
+
+760
+01:06:17,115 --> 01:06:32,265
+Speaker B: Uh in the future there are more like complexities that leads to even more complexities arising. Uh and uh during this process one of the most sophisticated dynamics also like starts to emerge
+
+761
+01:06:32,265 --> 01:06:32,315
+Speaker A: But
+
+762
+01:06:32,315 --> 01:06:42,715
+Speaker B: and creates further emergence that leads to us. So we we we we are not just our life. We are the whole process of the universe doing this and
+
+763
+01:06:42,483 --> 01:06:43,283
+Speaker B: itself and this
+
+764
+01:06:43,283 --> 01:06:43,483
+Speaker A: Right,
+
+765
+01:06:43,483 --> 01:06:43,783
+Speaker B: is great
+
+766
+01:06:43,783 --> 01:06:47,533
+Speaker A: but then if you're going to apply ecological logic,
+
+767
+01:06:47,633 --> 01:06:50,083
+Speaker A: you have to make sense of the parasite,
+
+768
+01:06:50,383 --> 01:06:52,083
+Speaker A: you have to make sense of the predator,
+
+769
+01:06:52,233 --> 01:06:56,983
+Speaker A: you have to make sense of competition for mates,
+
+770
+01:06:57,233 --> 01:06:59,283
+Speaker A: competition for resources,
+
+771
+01:06:59,583 --> 01:07:00,933
+Speaker A: and competition for land.
+
+772
+01:07:01,083 --> 01:07:05,983
+Speaker A: And I think the issue with this kind of hippie ideology is that it never deals with the problem of violence,
+
+773
+01:07:06,133 --> 01:07:07,933
+Speaker A: it never deals with the problem of sexuality,
+
+774
+01:07:08,283 --> 01:07:09,483
+Speaker A: it never deals with any of...
+
+775
+01:07:09,203 --> 01:07:17,853
+Speaker A: with any of the things that if you've ever spent any time in nature at all you need to go kill animals gut them open take out their insides and and and
+
+776
+01:07:17,853 --> 01:07:18,053
+Speaker B: Yeah,
+
+777
+01:07:18,053 --> 01:07:18,403
+Speaker A: move
+
+778
+01:07:18,403 --> 01:07:18,603
+Speaker B: I got
+
+779
+01:07:18,603 --> 01:07:19,903
+Speaker A: that body into
+
+780
+01:07:19,903 --> 01:07:20,703
+Speaker B: your point.
+
+781
+01:07:20,703 --> 01:07:34,903
+Speaker A: no but but really as soon as you kill an animal right you are in a competition with all the insects who want to eat the animal as well and you have to get the stomach uh open you have to get the meat out you have to skin the animal before
+
+782
+01:07:35,091 --> 01:07:50,741
+Speaker A: the the worms and the flies get into the meat all right and like this is something that most people who have some kind of like oh i took lsd on a beach one time or whatever they don't understand that nature is is competition nature is a lot of
+
+783
+01:07:52,531 --> 01:08:18,531
+Speaker A: sexual drives a lot of hunger drives and that all of those things are evolution they are progress right and so you you cannot have this idea that that uh competition is bad or violence is bad you you this is like binary logic and i think that's the reductionism the reductionism is trying to categorize everything into two right but but the idea that competing forces
+
+784
+01:08:19,987 --> 01:08:31,237
+Speaker A: leads to higher level synthesis that's a non-reductionistic approach right and and you need to fundamentally have a model of not just
+
+785
+01:08:32,371 --> 01:08:59,121
+Speaker A: the removing the illusion of difference which is true that both the lion and the lamb that it's eating are both one and when the lion eats the lamb they literally become one right and when the lion dies or the lion fights and when a lion fights another lion the lion is fighting itself right this is all true but but you you have to account for this part otherwise it just degrades into like hippie go lucky hug kiss blah blah blah
+
+786
+01:08:59,091 --> 01:09:06,541
+Speaker A: let's all fuck in the forest like bullshit and it that's the fundamental issue the ecological narrative is not this like
+
+787
+01:09:07,059 --> 01:09:23,459
+Speaker A: cozy warm you know cartoon where the bear and the and the rabbit you know hug together in the in the field no the bear eats the fucking rabbit it eats the rabbit it'll eat you too and that is the ecological logic right you you can't you you
+
+788
+01:09:23,459 --> 01:09:33,959
+Speaker B: Okay, I think in the West you didn't have the words, but in Chinese there is actually a different word for those different things.
+
+789
+01:09:33,779 --> 01:09:42,729
+Speaker B: Okay. Um but but I totally agree with you. I and um I I I think uh
+
+790
+01:09:44,379 --> 01:09:56,929
+Speaker B: those those uh those competitions are also not at the core or maybe I I mean I'm talking about the word itself, right? The
+
+791
+01:09:58,566 --> 01:10:10,016
+Speaker B: the the categorical meaning of competition itself is is also being blurred by uh modern English. Uh and uh i if you really look at this, it's like uh
+
+792
+01:10:11,716 --> 01:10:12,866
+Speaker B: there is a you
+
+793
+01:10:14,016 --> 01:10:18,366
+Speaker B: that you only you cares about what you perceive as you.
+
+794
+01:10:19,084 --> 01:10:39,784
+Speaker B: more and then you have a modelling of what's even more, and that becomes the narrow pursuit without like realising the the broader impact and what the existence of you and your world really is.
+
+795
+01:10:40,364 --> 01:11:04,714
+Speaker B: Right so it's like that energy that's like at the moment you feel so much anger or so much greed you just feel like yes this is what I do I don't care about other things. It's it's more like those kind of thing. It's it's not like a wolf eats a sheep because the wolf thinks the more sheep it eats the bigger it gets right.
+
+796
+01:11:05,324 --> 01:11:06,524
+Speaker B: So yeah.
+
+797
+01:11:08,674 --> 01:11:20,874
+Speaker A: Yeah, yeah, yeah. Like homeostatic equilibrium is not maintained by all the wolves eating all the sheep all at once.
+
+798
+01:11:23,124 --> 01:11:30,574
+Speaker B: Yeah, because the existence of the wolf is not just about the wolf.
+
+799
+01:11:31,564 --> 01:11:44,614
+Speaker B: It is literally a part of the ecosystem. And it cannot survive without ecosystem. Like, like there's really not a mimi that is there.
+
+800
+01:11:46,924 --> 01:12:10,924
+Speaker B: But we do have this like cognitive structure that we could develop very alienated, cancerous or evil like ego or way of thinking look at reality like I I don't know but I think we we're going back into the abstract and uh uh the the theory discussing. But still good,
+
+801
+01:12:10,924 --> 01:12:10,974
+Speaker A: Look.
+
+802
+01:12:10,974 --> 01:12:11,274
+Speaker B: right?
+
+803
+01:12:13,516 --> 01:12:14,016
+Speaker A: No,
+
+804
+01:12:14,066 --> 01:12:25,816
+Speaker A: no. So I think the idea that growth is not negative and competition is not negative, I think are effectively the most illuminating parts of this. And I don't think they're abstract.
+
+805
+01:12:26,216 --> 01:12:34,316
+Speaker A: I think the idea of like this is the fundamental idea. And so the question is like.
+
+806
+01:12:35,372 --> 01:12:45,222
+Speaker A: Where does your ontology disagree with the existing ontology is exactly this, like the place where your alignment is different than the alignment of...
+
+807
+01:12:47,020 --> 01:12:56,720
+Speaker A: you know, Dario and Altman is that their model is, is, is, you know, it's a wolf in sheep's clothing. Oh, saying, oh, don't worry,
+
+808
+01:12:56,820 --> 01:13:00,170
+Speaker A: we won't eat all of you all at once because we're smart wolves,
+
+809
+01:13:00,320 --> 01:13:00,570
+Speaker A: right?
+
+810
+01:13:00,720 --> 01:13:06,570
+Speaker A: And this idea that the wolves can self-regulate is just not true,
+
+811
+01:13:06,670 --> 01:13:06,870
+Speaker A: right?
+
+812
+01:13:06,970 --> 01:13:13,570
+Speaker A: You need a higher level coordination where the wolves are constrained by other wolves, they're constrained by
+
+813
+01:13:13,580 --> 01:13:37,730
+Speaker A: by other environmental factors in the ecosystem so that they don't eat like the wolves will eat all the sheep all at once if they're allowed to and so you you have to create higher level coordination where the the wolves aren't policing themselves right and and i think this is the fundamental issue and and i don't think it's it's an issue of of purely
+
+814
+01:13:38,380 --> 01:14:04,680
+Speaker A: uh uh violence it's an issue of as we said earlier market market logic eating uh all other logics right and so if you just reject the market logic then you don't have the the the conflict you don't have the issue um so but the issue is like trying to articulate that to people is i think challenging but i think it can be done i think uh so yeah this is the hardest part
+
+815
+01:14:05,228 --> 01:14:09,428
+Speaker A: I think the easier part is just the populism. I think populism is very easy memetically.
+
+816
+01:14:10,978 --> 01:14:11,828
+Speaker A: Super easy.
+
+817
+01:14:12,428 --> 01:14:13,128
+Speaker A: So yeah,
+
+818
+01:14:13,178 --> 01:14:14,378
+Speaker A: I don't think there's any issue.
+
+819
+01:14:14,478 --> 01:14:15,628
+Speaker A: I don't think there's any like problem.
+
+820
+01:14:15,778 --> 01:14:18,378
+Speaker A: It's just you have to be a little bit careful about this particular part.
+
+821
+01:14:21,178 --> 01:14:21,978
+Speaker B: Um...
+
+822
+01:14:22,672 --> 01:14:40,172
+Speaker B: Yeah yeah yeah, we're suddenly moving into a z direction. We're talking about uh the actual like implementation of the the the memes the and the things I I do agree we should be practical on that. Yeah.
+
+823
+01:14:41,022 --> 01:14:43,122
+Speaker B: Um I and uh
+
+824
+01:14:44,322 --> 01:14:48,622
+Speaker B: I think we we should uh start to assemble a team
+
+825
+01:14:49,100 --> 01:14:50,650
+Speaker B: I'd work together on this.
+
+826
+01:14:49,272 --> 01:14:49,372
+Speaker B: uh
+
+827
+01:14:50,700 --> 01:14:59,700
+Speaker B: I think right now Chiang Mai [uncertain place name] already has the potential of assembling like some sort of this kind of teams.
+
+828
+01:15:00,100 --> 01:15:01,200
+Speaker B: What do you think?
+
+829
+01:15:03,600 --> 01:15:09,400
+Speaker A: So the issue of selecting the right people is a little bit.
+
+830
+01:15:10,604 --> 01:15:34,654
+Speaker A: challenging but i think can be done uh the issue you just need a lot of people you need to have a large group of people who are willing to participate and then you can select people for particular tasks that they're good at i think one one harmful thing is just selecting the wrong person just because they're interested right um so yeah yeah it depends on what specific tasks that they're doing
+
+831
+01:15:35,276 --> 01:15:38,676
+Speaker B: I think generally I'm good at selecting people,
+
+832
+01:15:38,776 --> 01:15:39,476
+Speaker B: right?
+
+833
+01:15:39,576 --> 01:15:40,776
+Speaker B: Look at my friend.
+
+834
+01:15:48,126 --> 01:15:53,476
+Speaker B: But it's a time that we should actually gather together and work on something.
+
+835
+01:15:53,726 --> 01:15:56,126
+Speaker B: I think even in China this could work too,
+
+836
+01:15:56,276 --> 01:15:56,476
+Speaker B: right?
+
+837
+01:15:58,676 --> 01:15:59,676
+Speaker B: I don't know,
+
+838
+01:15:59,726 --> 01:16:01,176
+Speaker B: but now,
+
+839
+01:16:01,426 --> 01:16:02,376
+Speaker B: like...
+
+840
+01:16:03,372 --> 01:16:13,172
+Speaker B: Is there anything better by what we are thinking about of doing for yourself than this?
+
+841
+01:16:14,422 --> 01:16:21,772
+Speaker A: I still think that we're undervaluing the labor theory of robotics.
+
+842
+01:16:22,022 --> 01:16:24,172
+Speaker A: But other than that,
+
+843
+01:16:24,272 --> 01:16:26,272
+Speaker A: I think it's...
+
+844
+01:16:27,180 --> 01:16:28,130
+Speaker A: It's good.
+
+845
+01:16:28,330 --> 01:16:28,680
+Speaker A: Yeah,
+
+846
+01:16:28,730 --> 01:16:30,580
+Speaker A: I think that like
+
+847
+01:16:31,788 --> 01:16:58,438
+Speaker A: you you're basically what you're doing is you've articulated what Gramsci articulated that memetics is the most influential component in the system and you don't need to actually control the means of production or the means of compute in order to control the system you can just influence memetics and I think that's correct so I think you know Gramscian Marxist analysis applied to AI makes a lot of sense I just think that the any Marxist theory
+
+848
+01:16:58,508 --> 01:17:14,258
+Speaker A: without a theory of labor which would be robotics in the sense just doesn't really make I guess it's just like like who's gonna make the shit and how are we like who's gonna control who makes the shit like that's like a very very important part and so I think that like
+
+849
+01:17:14,892 --> 01:17:31,592
+Speaker A: you know grand level theories are good but below that you need to have practical theories about how stuff gets made who owns the robots who owns the intelligence I think this is something that is underexplored but it's a subcategory so it's not a disagreement it's just a subcategory
+
+850
+01:17:31,592 --> 01:17:35,892
+Speaker B: Oh, this is actually another thing I have been exploring,
+
+851
+01:17:35,992 --> 01:17:37,542
+Speaker B: to use
+
+852
+01:17:39,052 --> 01:17:54,552
+Speaker B: three-D_ to reconstruct the the speculative future environment. You you you you saw those [model name unclear] uh vibe games. Uh you're you're probably know what we can do.
+
+853
+01:17:56,002 --> 01:17:56,252
+Speaker A: Yeah.
+
+854
+01:17:56,502 --> 01:18:05,352
+Speaker B: And also for the theorists, uh you know [unclear] days ago, I'm just trying to like create a like a realistic uh
+
+855
+01:18:05,292 --> 01:18:16,192
+Speaker B: had the like the demonstration of uh how uh [unclear] can like quickly
+
+856
+01:18:16,812 --> 01:18:20,762
+Speaker B: Like having a building arise with fully automated like different robots,
+
+857
+01:18:20,762 --> 01:18:21,112
+Speaker A: Yeah,
+
+858
+01:18:21,112 --> 01:18:22,262
+Speaker B: it's like there's like
+
+859
+01:18:22,262 --> 01:18:22,362
+Speaker A: yeah,
+
+860
+01:18:22,362 --> 01:18:23,562
+Speaker B: a like four legs
+
+861
+01:18:23,562 --> 01:18:23,862
+Speaker A: um
+
+862
+01:18:23,862 --> 01:18:26,012
+Speaker B: by the robots like holding the
+
+863
+01:18:26,012 --> 01:18:26,162
+Speaker A: Yeah,
+
+864
+01:18:26,162 --> 01:18:34,962
+Speaker B: the the metal beams and how they are putting it together. Uh but but but I think a [model name unclear] was was built up good enough. But
+
+865
+01:18:34,962 --> 01:18:35,012
+Speaker A: so
+
+866
+01:18:35,012 --> 01:18:35,762
+Speaker B: I didn't
+
+867
+01:18:35,762 --> 01:18:35,812
+Speaker A: just
+
+868
+01:18:35,812 --> 01:18:36,362
+Speaker B: yeah.
+
+869
+01:18:37,900 --> 01:18:39,100
+Speaker A: Rather than a video,
+
+870
+01:18:39,250 --> 01:18:46,850
+Speaker A: could you just spend a little bit of time with a Chinese model in Chinese figuring out what the current...
+
+871
+01:18:47,916 --> 01:19:14,616
+Speaker A: government position and as well as the current like technological disposition is towards robotics right now like what's the latest and the trajectory of what AI plus robots would look like there must be a lot of resources on this and if you send this to me I will try to make a version that is not scary to Westerners and send it to some people
+
+872
+01:19:14,636 --> 01:19:21,636
+Speaker A: I think this would be very, very valuable because I think robotics is like probably the most pertinent component of this.
+
+873
+01:19:22,286 --> 01:19:24,786
+Speaker B: Like you read my draft,
+
+874
+01:19:24,836 --> 01:19:25,186
+Speaker B: right?
+
+875
+01:19:25,336 --> 01:19:31,436
+Speaker B: So that's also kind of like, that one's totally allied with the government.
+
+876
+01:19:32,986 --> 01:19:36,486
+Speaker A: Yes, but no insufficient robotics.
+
+877
+01:19:37,736 --> 01:19:39,836
+Speaker B: I mean, for robotics.
+
+878
+01:19:40,748 --> 01:19:48,348
+Speaker B: There's not like a very strong vision besides developing more robotics,
+
+879
+01:19:48,448 --> 01:19:54,598
+Speaker B: but for intelligence and for AI.
+
+880
+01:19:54,748 --> 01:19:56,748
+Speaker A: But basically,
+
+881
+01:19:58,721 --> 01:20:07,621
+Speaker A: The engine of productivity that comes out of AI has to come from intelligence directing physical work,
+
+882
+01:20:07,771 --> 01:20:07,971
+Speaker A: right?
+
+883
+01:20:08,221 --> 01:20:14,771
+Speaker A: Where productive equipment produces more productive equipment, where factories produce robots and robots produce more factories,
+
+884
+01:20:14,871 --> 01:20:17,921
+Speaker A: where supply chains and all of this stuff is automated,
+
+885
+01:20:18,071 --> 01:20:18,221
+Speaker A: right?
+
+886
+01:20:18,221 --> 01:20:18,371
+Speaker B: Right.
+
+887
+01:20:18,371 --> 01:20:21,121
+Speaker A: And the reinvestment expands this capacity,
+
+888
+01:20:21,321 --> 01:20:22,671
+Speaker A: right?
+
+889
+01:20:23,937 --> 01:20:33,187
+Speaker A: That is literally the foundation of the logic of why.
+
+890
+01:20:35,297 --> 01:21:01,747
+Speaker A: of why super abundance will occur through AI and so I think what would be great would be articulating that argument of why China is winning the robotics race and why um uh robotics will be applied to solve post scarcity right independent of any ideology right so you just state it as a fact of materials and if you make this articulation even people who are
+
+891
+01:21:01,985 --> 01:21:25,985
+Speaker A: like total you know capitalist people will will say okay well if they're winning the the market race then the logic is clear right and I think this is this is the things that you cannot argue with industrial capacity you cannot argue with shipbuilding you can't argue with with lithium you can't argue with batteries and actuators and and you know harmonic drives and so I think this version of the argument
+
+892
+01:21:26,593 --> 01:21:35,943
+Speaker A: Which is like a secular version of the argument saying look like we're not just saying, you know, do the right thing We're also saying that this logic is going to win
+
+893
+01:21:36,693 --> 01:21:48,093
+Speaker A: The market it's going to win industrial capacity is going to become industry and that will enable sort of a post-scarcity system Like I think this is this is the strongest argument like if you want to say something like
+
+894
+01:21:50,343 --> 01:21:50,543
+Speaker A: communism
+
+895
+01:21:51,233 --> 01:21:58,183
+Speaker A: You need to first explain how the foundational post-scarcity is going to occur for everybody.
+
+896
+01:21:58,333 --> 01:22:00,533
+Speaker A: And there's no other way of explaining that than robotics,
+
+897
+01:22:00,683 --> 01:22:00,833
+Speaker A: right?
+
+898
+01:22:01,533 --> 01:22:03,533
+Speaker B: Uh, sure,
+
+899
+01:22:03,633 --> 01:22:03,933
+Speaker B: sure.
+
+900
+01:22:04,083 --> 01:22:09,483
+Speaker B: We already have this kind of narrative in our head, like we've been talking about this for a very long time.
+
+901
+01:22:09,733 --> 01:22:12,233
+Speaker B: Right now it's, uh, it is.
+
+902
+01:22:13,281 --> 01:22:26,431
+Speaker B: Well, I don't think you just wrote a long essay would actually do much. I think we should build them in 3D like world.
+
+903
+01:22:28,831 --> 01:22:32,731
+Speaker A: But I think the thing is that if...
+
+904
+01:22:33,153 --> 01:22:37,253
+Speaker A: If you can articulate why China is winning the robotics race,
+
+905
+01:22:37,453 --> 01:22:54,903
+Speaker A: you get a lot of like a lot of people who are not idea people like you and I are idea people where we attach ourselves to something we think is logically coherent, even if everybody disagrees with us and we just keep on going with what we think is consistent with our world model. Right.
+
+906
+01:22:55,153 --> 01:22:57,053
+Speaker A: Most people are not like that.
+
+907
+01:22:57,103 --> 01:23:00,003
+Speaker A: Most people will attach themselves to whatever thing is most.
+
+908
+01:22:59,873 --> 01:23:19,023
+Speaker A: most powerful right and they will just believe whatever the powerful thing believes right and so um that that's not just like a few people like that's like 80 of people they will just find out who's powerful and they will just agree with them on everything and because it's a survival mechanism it's it
+
+909
+01:23:20,929 --> 01:23:44,829
+Speaker B: I I I think I I I I think of this is the the the so many years of [unclear] uh changing the epistemology of these people. That makes all those no Westerners if you escape this way of like reasoning. But look at what I sent you.
+
+910
+01:23:45,505 --> 01:23:51,455
+Speaker B: Like this is this is what what's the the the Chinese's current direction
+
+911
+01:24:21,345 --> 01:24:24,595
+Speaker B: And it has been following this for a long time.
+
+912
+01:24:34,895 --> 01:24:38,895
+Speaker A: I think we're going to have 150 years of Chinese dominance,
+
+913
+01:24:39,245 --> 01:24:40,495
+Speaker A: at least maybe 200.
+
+914
+01:24:41,145 --> 01:24:42,745
+Speaker B: China is definitely winning.
+
+915
+01:24:42,795 --> 01:24:45,545
+Speaker B: So if you look at they have a five-year plan, right?
+
+916
+01:24:46,145 --> 01:24:47,445
+Speaker B: So they're five-year plans. Basically
+
+917
+01:24:47,445 --> 01:24:47,695
+Speaker A: Yep.
+
+918
+01:24:47,695 --> 01:24:49,145
+Speaker B: they're a KPI structure.
+
+919
+01:24:50,195 --> 01:24:57,645
+Speaker B: And uh uh if you look at uh the latest uh five-year plan, there there is a lot of like systems thinking,
+
+920
+01:24:57,645 --> 01:24:57,945
+Speaker B: I don't know.
+
+921
+01:24:57,945 --> 01:25:00,545
+Speaker B: there's a lot of languages talking about the dynamics.
+
+922
+01:25:00,545 --> 01:25:00,795
+Speaker B: Oh.
+
+923
+01:25:01,377 --> 01:25:04,277
+Speaker B: There is there is uh things talks about okay,
+
+924
+01:25:04,577 --> 01:25:04,627
+Speaker B: We
+
+925
+01:25:04,627 --> 01:25:04,927
+Speaker A: Yeah.
+
+926
+01:25:04,927 --> 01:25:08,877
+Speaker B: should be mindful of the second order dynamics.
+
+927
+01:25:09,477 --> 01:25:14,577
+Speaker B: So which means is like if you fuck up the second order dynamics, it fucks up your KPI.
+
+928
+01:25:18,677 --> 01:25:19,127
+Speaker A: Yep.
+
+929
+01:25:19,477 --> 01:25:27,827
+Speaker B: So this this this is like how government is supposed to work. I think it just uh Western government becomes like way too dysfunctional.
+
+930
+01:25:28,225 --> 01:25:44,775
+Speaker B: so so that uh we the the West has lost its sense of the what the government is supposed to make sense like. Not like Chinese government there's a lot of places that I I I still criticise, but but
+
+931
+01:25:45,601 --> 01:25:47,101
+Speaker B: they're quite scientific like
+
+932
+01:25:47,101 --> 01:25:48,301
+Speaker Uncertain speaker (C): Yeah, yeah.
+
+933
+01:25:48,301 --> 01:26:08,051
+Speaker B: like a lot of people top in the party are from the best engineers schools and they hold the Chinese tradition of looking at things differently as well so the Chinese direction is not like a utopia in Plato's sense but it is more about the Datong
+
+934
+01:26:10,501 --> 01:26:11,001
+Speaker A: Yep.
+
+935
+01:26:12,001 --> 01:26:36,951
+Speaker B: I I and for for for China, like like the uh the the the the the meaning it's not constructed on on the notion of dominance, like how big you are, which the wise is often argue that after a person dies like how great this person once been. But but how it it makes the history moving into a better direction.
+
+936
+01:26:37,569 --> 01:26:42,269
+Speaker B: So that that also changes the uh the reward
+
+937
+01:26:42,269 --> 01:26:42,469
+Speaker A: I'm
+
+938
+01:26:42,469 --> 01:26:42,919
+Speaker B: hype system
+
+939
+01:26:42,919 --> 01:26:45,169
+Speaker A: not I'm not
+
+940
+01:26:45,169 --> 01:26:47,069
+Speaker B: when the power is consolidated
+
+941
+01:26:48,169 --> 01:27:03,969
+Speaker A: I'm not quite naive enough to take rhetoric at face level but the rhetoric is better and they will win the material competition so I think it's it's quite clear where the trajectories is going
+
+942
+01:27:04,897 --> 01:27:10,447
+Speaker A: um and it is possible that that some kind of uh i
+
+943
+01:27:12,797 --> 01:27:29,647
+Speaker A: think it's unlikely i think it's unlikely that that you're going to have some kind of benign technocracy because any technocracy that's materialistic is is is bound to to have the same issues right you're you're you're operating under the same uh materialistic
+
+944
+01:27:30,561 --> 01:27:31,661
+Speaker A: paradigm which
+
+945
+01:27:31,661 --> 01:27:31,961
+Speaker B: I mean, not
+
+946
+01:27:31,961 --> 01:27:32,011
+Speaker A: is
+
+947
+01:27:32,011 --> 01:27:32,161
+Speaker B: to
+
+948
+01:27:32,161 --> 01:27:32,561
+Speaker A: zero-sum
+
+949
+01:27:32,561 --> 01:27:42,661
+Speaker B: hint we're all operating on the right heaven, right? That that's why Chinese has like this like notion of shared humanity of mankind.
+
+950
+01:27:43,011 --> 01:27:46,361
+Speaker B: I mean, if you go from the Chinese philosophy,
+
+951
+01:27:46,511 --> 01:27:50,861
+Speaker B: it does give you those kind of conclusions and it is
+
+952
+01:27:51,265 --> 01:28:07,015
+Speaker B: relational is non-dual and I think the pre-Qin dynasty like Chinese intellectual work is way superior to today's like Western humanities work you can you can look it up
+
+953
+01:28:07,015 --> 01:28:16,165
+Speaker A: So if you're correct that Taoism has some kind of fundamental influence on the logic,
+
+954
+01:28:16,415 --> 01:28:18,315
+Speaker A: then yes.
+
+955
+01:28:19,009 --> 01:28:24,859
+Speaker A: I just, I'm a little bit cynical about how much of it is communism and how much of it is Taoism.
+
+956
+01:28:25,159 --> 01:28:27,209
+Speaker A: If you put Taoism at the, here,
+
+957
+01:28:27,309 --> 01:28:28,059
+Speaker A: here, here, for your...
+
+958
+01:28:28,737 --> 01:28:55,387
+Speaker A: for regardless of that for your model right if you take taoism and uh like zhuangzi and Dao De Jing and all that stuff at the top level call it wisdom right some kind of integralist non-dual uh cyclical idea of seasonality and of changes and so on you put that as the the philosophy at the very top the philosopher king and then below that you have an idea of uh statism of cybernetics of control system
+
+959
+01:28:55,457 --> 01:29:11,907
+Speaker A: systems of regulating large complex systems and then below that you have a marxist theory of labor and value and and and so on i think that works right i just am not clear about how much it's
+
+960
+01:29:12,385 --> 01:29:19,285
+Speaker A: It's a Marxist theory and how much it's a Taoist theory if it's a Taoist theory then yeah, you might be right They might might bring about you know
+
+961
+01:29:19,285 --> 01:29:25,535
+Speaker B: The Marxist theory is similar to Mengzi's theory,
+
+962
+01:29:25,785 --> 01:29:35,235
+Speaker B: and it's also having the same like Datong like dynamics,
+
+963
+01:29:35,435 --> 01:29:36,685
+Speaker B: but it is.
+
+964
+01:29:37,353 --> 01:30:02,403
+Speaker B: It is also focused on the human like it it it it it has a much more sophisticated understanding of our human psychology comparing to the west but Marxism is more in like materialistic um I I think like not only the Chinese ideas like Marxist ideas
+
+965
+01:29:56,044 --> 01:30:20,244
+Speaker B: like there could also be other ideas. So that let's don't get bonded by by by by those names. Uh and uh I think maybe we we should use the the pre-Qin ontology as the basis and construct one that
+
+966
+01:30:21,068 --> 01:30:27,968
+Speaker B: everyone could accept that intellectually like undefeatable compared to the
+
+967
+01:30:27,968 --> 01:30:28,318
+Speaker A: Yeah,
+
+968
+01:30:28,318 --> 01:30:28,468
+Speaker B: old
+
+969
+01:30:28,468 --> 01:30:35,418
+Speaker A: so shapes. I think the thing is there's nothing wrong with Marxist materialist analysis,
+
+970
+01:30:35,618 --> 01:30:38,268
+Speaker A: but it's just it's it's.
+
+971
+01:30:39,052 --> 01:31:04,102
+Speaker A: it's reductionistic right it's materialistic it kind of misses the whole point just just like there's there's having a militaristic model of of growth and expansion like the the germans in the second world war again it's like it's not incorrect it works it just it kind of misses the point and it ends up alienating everyone because you're trying to fight everybody both of these frameworks fascism and marxism are are fail
+
+972
+01:31:04,684 --> 01:31:16,834
+Speaker A: Because they overemphasize. The issue is not emphasizing material conditions and class conflict or emphasizing biology and, you know, the necessity of having
+
+973
+01:31:16,834 --> 01:31:16,934
+Speaker B: Well,
+
+974
+01:31:16,934 --> 01:31:17,384
+Speaker A: access to.
+
+975
+01:31:17,384 --> 01:31:25,134
+Speaker B: I think it's the Machiavellianism like like because you know people's life are fucked of course like
+
+976
+01:31:25,740 --> 01:31:26,740
+Speaker B: They need to survive,
+
+977
+01:31:26,940 --> 01:31:29,090
+Speaker B: like they don't care about ideology.
+
+978
+01:31:29,190 --> 01:31:31,540
+Speaker B: They need bread. So let's just tell them eat.
+
+979
+01:31:31,840 --> 01:31:34,240
+Speaker B: Those people if you do those, you have the bread.
+
+980
+01:31:35,436 --> 01:31:43,386
+Speaker B: You just have the rhetoric like bigger and bigger and bigger and then it becomes psychotic,
+
+981
+01:31:43,386 --> 01:31:43,736
+Speaker A: Right,
+
+982
+01:31:43,736 --> 01:31:43,786
+Speaker B: right?
+
+983
+01:31:43,786 --> 01:31:44,636
+Speaker A: right.
+
+984
+01:31:44,736 --> 01:31:53,036
+Speaker A: But so what I would argue is I would argue that that India has developed the same non-dual framework.
+
+985
+01:31:53,136 --> 01:32:01,036
+Speaker A: So like there are certain strains of Hinduism like Kashmir Shaivism, which totally agrees with the Tao teaching 100%.
+
+986
+01:32:01,612 --> 01:32:24,962
+Speaker A: exactly the same framework you have versions of tibetan buddhism you have versions of zen zen that do the exact same thing in japan you have versions in korea and so on and so forth and in europe you you actually also have the same ideas with heraclitus heraclitus is is very taoist because he studied with the persians and so this whole idea of of of
+
+987
+01:32:26,732 --> 01:32:44,332
+Speaker A: continuous movement and a flux and a flow and seasonality and a cyclical worldview and so on those are not alien to western thought those existed in all germanic and nordic pagan traditions as well and so they were just eliminated by christianity right
+
+988
+01:32:44,332 --> 01:32:44,732
+Speaker B: I also
+
+989
+01:32:44,732 --> 01:32:45,332
+Speaker A: the thing look that you called
+
+990
+01:32:45,332 --> 01:32:51,832
+Speaker B: at the Native American religions and those animism and shamanism.
+
+991
+01:32:51,932 --> 01:32:53,732
+Speaker B: I think...
+
+992
+01:32:54,220 --> 01:32:56,020
+Speaker B: There is a common call,
+
+993
+01:32:56,170 --> 01:32:59,720
+Speaker B: the nature of whole relationships,
+
+994
+01:32:59,820 --> 01:33:11,170
+Speaker B: social dynamics, and the human brain works that leads to those like universal social invariances.
+
+995
+01:33:12,070 --> 01:33:14,070
+Speaker B: But right now,
+
+996
+01:33:14,120 --> 01:33:17,770
+Speaker B: like the last it's totally against it. It's really kind of like...
+
+997
+01:33:18,720 --> 01:33:21,270
+Speaker A: I think that the important thing
+
+998
+01:33:22,188 --> 01:33:29,588
+Speaker A: Is to not call what is Abrahamic Calvinist Protestant techno capitalism,
+
+999
+01:33:29,838 --> 01:33:34,388
+Speaker A: which is what is the West ideology right now. It was not always the West ideology.
+
+1000
+01:33:34,488 --> 01:33:34,638
+Speaker B: Well,
+
+1001
+01:33:34,638 --> 01:33:34,988
+Speaker A: And
+
+1002
+01:33:34,988 --> 01:33:35,138
+Speaker B: I
+
+1003
+01:33:35,138 --> 01:33:35,488
+Speaker A: you only have
+
+1004
+01:33:35,488 --> 01:33:35,588
+Speaker B: know,
+
+1005
+01:33:35,588 --> 01:33:35,888
+Speaker A: to go back.
+
+1006
+01:33:35,888 --> 01:33:40,588
+Speaker B: I know, I know, I know, but I think this is what I argue.
+
+1007
+01:33:40,638 --> 01:33:42,488
+Speaker B: We talk about what's better.
+
+1008
+01:33:42,638 --> 01:33:47,438
+Speaker B: We don't care about how wrong or what is wrong for them.
+
+1009
+01:33:48,140 --> 01:34:00,440
+Speaker B: At least we have something better to defend and then the rest can flow out and then other people will voluntarily generate those arguments to defend for you, right?
+
+1010
+01:34:03,190 --> 01:34:03,790
+Speaker A: Yeah,
+
+1011
+01:34:03,890 --> 01:34:07,990
+Speaker A: but I think also the case is that there are.
+
+1012
+01:34:10,412 --> 01:34:16,262
+Speaker A: elements in Western thought that could already be compatible with
+
+1013
+01:34:16,876 --> 01:34:41,826
+Speaker A: Daoist thinking and there are elements in Buddhist thought and Hindu thought that is also competitive right and so the the issue is like I think that Chinese articulation is quite strong but I think that Daoism is is actually much younger than Hinduism right and I would argue that probably the Indians articulated it long long
+
+1014
+01:34:41,932 --> 01:34:43,432
+Speaker A: before the Chinese did.
+
+1015
+01:34:44,732 --> 01:35:04,582
+Speaker B: I'm also not sure so I got a new theory about this because you know in China in like four or five thousand years ago like it's also like North America there are a bunch of different like tribes and they have different languages and they communicate with symbols right
+
+1016
+01:35:05,676 --> 01:35:12,226
+Speaker B: So I I I I think if you look at a lot of the Chinese words, like like the word like fighting,
+
+1017
+01:35:13,226 --> 01:35:20,276
+Speaker B: it it is the composition of the words like stop and conflict.
+
+1018
+01:35:21,126 --> 01:35:32,826
+Speaker B: When when when we say even like we we we we we fight we we we use that that word like even weapon has that in it, but but from the very early days
+
+1019
+01:35:33,580 --> 01:35:59,630
+Speaker B: It's it's about the different uh tribes that communicate with each other using symbols. And then find the uh the denotation they can agree on. And and and then uh this is kind like a become a like uh uh a meme, a more different tribes that's over time like evolving.
+
+1020
+01:35:59,916 --> 01:36:25,566
+Speaker B: add optimising, and I add also like the the Chinese design way of looking at things is like okay um there are a lot dynamics going on and even though we cannot do qualitative analysis, but we can I mean we cannot do quantitative analysis, but we can still do qualitative analysis.
+
+1021
+01:36:26,252 --> 01:36:38,252
+Speaker B: And this this system exists three thousand years ago, and they do work very sophisticated systems thinking. And if you you read I Ching, you see,
+
+1022
+01:36:38,302 --> 01:36:51,352
+Speaker B: right? So I I I think like like uh you might think this is my bias, but but I think the pre-Qin Chinese system is is the best and the most pure.
+
+1023
+01:36:52,428 --> 01:37:07,228
+Speaker B: of of the all because the others like has uh has has has more things mixed in like if you look at the most pure version it's actually Dao De Jing
+
+1024
+01:37:12,300 --> 01:37:15,550
+Speaker A: A lot of the Zen stuff is pretty clean.
+
+1025
+01:37:15,800 --> 01:37:36,200
+Speaker B: Well, it's an extension of that because like like back then even in China people people don't necessarily like talk to each other so like all the states like around China uses the same writing system they read the same book and for the for the for the like ancient Chinese
+
+1026
+01:37:37,068 --> 01:37:56,068
+Speaker B: It's grammar is very difficult to read and it often lacks like subject object differentiations and it lacks tenses it talks about things just as the way things are.
+
+1027
+01:37:57,268 --> 01:37:57,718
+Speaker A: Right.
+
+1028
+01:37:57,818 --> 01:38:02,318
+Speaker A: But so I think that there's a lot of concepts in Hindu.
+
+1029
+01:38:02,988 --> 01:38:17,738
+Speaker A: that I think have done a better job at articulating the core premises right like for example in Hinduism you have the idea of the yugas right the yugas are
+
+1030
+01:38:20,236 --> 01:38:28,536
+Speaker A: The cyclical historical seasons and you go through these large-scale historical seasons,
+
+1031
+01:38:28,636 --> 01:38:30,386
+Speaker A: you have the idea of Dharma,
+
+1032
+01:38:30,536 --> 01:38:43,036
+Speaker A: which is sort of the same thing as Wu Wei or like effortless action or action that's coordinated with the cosmos.
+
+1033
+01:38:46,188 --> 01:38:58,538
+Speaker A: And you have the idea of the Dharma wheel and so on, these sort of cycles of movements that are not necessarily good or bad, right?
+
+1034
+01:38:58,738 --> 01:38:59,938
+Speaker A: You have...
+
+1035
+01:39:00,492 --> 01:39:03,042
+Speaker A: A Brahman equals Atman,
+
+1036
+01:39:03,242 --> 01:39:22,692
+Speaker A: which is, I think, the clearest articulation of non-dualism possible. It's like the briefest phrasing, and it just says that you are the cosmos and the cosmos is you and all other versions of that are mistakes,
+
+1037
+01:39:22,992 --> 01:39:23,692
+Speaker A: right? They're illusions.
+
+1038
+01:39:24,742 --> 01:39:27,442
+Speaker A: And so on and so forth. I do think that...
+
+1039
+01:39:27,212 --> 01:39:32,212
+Speaker A: that perhaps Hinduism as the oldest tradition does have a lot of like
+
+1040
+01:39:32,812 --> 01:39:58,912
+Speaker A: unnecessary stuff tacked on top of it but many of the core premises I think are are very purely articulated even more purely articulated than Buddhism which is a later offshoot and I would argue that Tibetan Buddhism or Taoism are like they are equal levels of sort of purity in that a lot of Buddhism is
+
+1041
+01:40:01,564 --> 01:40:27,214
+Speaker A: simply articulated but i think that this conversation is not relevant right like i think that as a as a scandinavian i was raised on norse mythology right and i read all the norse sagas and stuff when i was very young and they had the strongest influence on me and so if i was to argue that any religion has the clearest non-dual orientation i would say that the norse mythology has the the most
+
+1042
+01:40:27,292 --> 01:40:50,942
+Speaker A: non-dual orientation because even the gods die right and I think this idea of the gods dying is the ultimate sign of a cyclical process right and so like I don't know I would say that you you're what you call bias I would just say it's your particular orientation and upbringing which is
+
+1043
+01:40:51,900 --> 01:41:18,600
+Speaker A: explaining what is a universal phenomenon right so if you have someone from India they're gonna definitely think that Hinduism is the purest form and you have someone from China they're gonna think that the Dao Dijing whatever but it doesn't matter the the underlying cyclical non-dual framework is the same and regardless of which formal system you use to explain it and and again this is like Daoist thought again that Dao that can be used
+
+1044
+01:41:18,460 --> 01:41:26,810
+Speaker A: he's spoken of is not the eternal Tao and and do not confuse the hand pointing at the moon with the moon and so I think this idea of you know
+
+1045
+01:41:27,612 --> 01:41:46,462
+Speaker A: The one pure tradition and so on and so forth is, you know, and then you have the cool thing about paganism in general is that the reason that Scandinavia got taken over by Christianity is that the Christians came and they said, oh, by the way, Jesus is the king of kings.
+
+1046
+01:41:47,420 --> 01:42:12,720
+Speaker A: he he did he defeated death and the pagans are like great welcome because there was no issue with accepting new gods because there were tons of gods so there was no problem and then eventually uh christianity eliminated all the other gods which is a very tricky thing to do right but the thing is that the the idea with hinduism um and with daoism as well is that there isn't really any and buddhism is that there isn't really um any
+
+1047
+01:42:13,180 --> 01:42:20,580
+Speaker A: monotheistic uh totalizing attractor and so when there's no monotheism you effectively
+
+1048
+01:42:21,532 --> 01:42:48,382
+Speaker A: you effectively could say that all the Hindu gods and all the Norse gods and Taoism are all and Zen are all articulations of the same thing and I would say that probably Taoism and Zen because they don't have gods at all right is the purest form logically speaking but logical purity is like is not the only value right there's various other values that come with you know deification and having different totems and things that mean
+
+1049
+01:42:48,252 --> 01:42:50,752
+Speaker A: mean different things and so on. I I don't know. I think they're all interesting
+
+1050
+01:42:50,752 --> 01:43:07,352
+Speaker B: Let let me get to my argument. So among those social universal invariances there are also things like, okay, I l I look down on you, I want to go up.
+
+1051
+01:43:08,028 --> 01:43:32,028
+Speaker B: like this type of like dynamics, right. So those are also deep-rooted in most people's psychology, but just to different extents, right. This is a part of the brain function, like the social uprising. And also greed can be amplified and perpetuated through pure psychological mechanisms. It's like
+
+1052
+01:43:32,772 --> 01:43:43,772
+Speaker B: like this is like greed right. Uh but also once we get into those attractors, how will the mind change?
+
+1053
+01:43:44,772 --> 01:43:57,922
+Speaker B: And what are the social engineering that can be said to actually like uh create like useful mechanisms?
+
+1054
+01:43:58,364 --> 01:44:02,414
+Speaker B: And if you look at the pre-Qin Chinese,
+
+1055
+01:44:02,814 --> 01:44:04,664
+Speaker B: also a lot of those stuff,
+
+1056
+01:44:04,764 --> 01:44:15,414
+Speaker B: like the West and the Indians, clearly did not have the same level of understanding of the sophistication if you just read the Confucianism.
+
+1057
+01:44:16,156 --> 01:44:17,106
+Speaker B: Like the way they
+
+1058
+01:44:17,106 --> 01:44:17,156
+Speaker A: Right,
+
+1059
+01:44:17,156 --> 01:44:17,356
+Speaker B: put it
+
+1060
+01:44:17,356 --> 01:44:17,556
+Speaker A: but...
+
+1061
+01:44:17,556 --> 01:44:31,906
+Speaker B: [unclear] like the ontology is, I wouldn't say it's like a full ontology but it does provide like much higher engineering utility.
+
+1062
+01:44:33,276 --> 01:44:38,676
+Speaker A: But what I'm arguing is that when you have a large population of people,
+
+1063
+01:44:38,826 --> 01:44:50,076
+Speaker A: it doesn't matter whether they're worshiping Christian gods or Hindu gods or Norse gods. It actually makes no difference as long as the underlying metaphysic is the same.
+
+1064
+01:44:50,226 --> 01:44:50,276
+Speaker A: And
+
+1065
+01:44:50,276 --> 01:44:51,076
+Speaker B: And second argument,
+
+1066
+01:44:51,076 --> 01:44:51,676
+Speaker A: the metaphysic...
+
+1067
+01:44:51,676 --> 01:44:52,526
+Speaker B: second argument,
+
+1068
+01:44:52,526 --> 01:44:52,576
+Speaker A: 
+
+1069
+01:44:52,576 --> 01:44:56,426
+Speaker B: so China is becoming
+
+1070
+01:44:57,660 --> 01:45:01,660
+Speaker B: the biggest influence and the biggest leverage
+
+1071
+01:45:02,910 --> 01:45:04,460
+Speaker B: right at this moment in time.
+
+1072
+01:45:05,360 --> 01:45:09,610
+Speaker B: So we want something just different from the western stuff,
+
+1073
+01:45:10,010 --> 01:45:15,910
+Speaker B: but still has like a great legitimacy.
+
+1074
+01:45:16,498 --> 01:45:27,198
+Speaker B: I I I is something that could back up the civilization, something that the government would also want to see, something that they would also identify as reason,
+
+1075
+01:45:27,648 --> 01:45:37,348
+Speaker B: and yin is own traditions inspiration. So this is uh not purely about I love the pre-Qin Chinese
+
+1076
+01:45:37,732 --> 01:45:49,132
+Speaker B: Ideas, it is also about, I think this is the biggest and the best leverage of constructing theories in this moment in time.
+
+1077
+01:45:51,582 --> 01:45:52,382
+Speaker A: Yep, agreed.
+
+1078
+01:45:52,582 --> 01:45:59,032
+Speaker B: So look out the pre-Qin stuff and maybe just learn some from AI and
+
+1079
+01:46:01,084 --> 01:46:03,734
+Speaker B: If you want something about like competition,
+
+1080
+01:46:04,084 --> 01:46:06,584
+Speaker B: the art of war is a good one.
+
+1081
+01:46:07,834 --> 01:46:13,934
+Speaker A: I read all this stuff a long time ago. I read the Dao De Jing like three or four times.
+
+1082
+01:46:14,034 --> 01:46:21,884
+Speaker A: I read the Book of Five Rings from Musashi together with the Dao De Jing and I think that Zen is very, very compatible.
+
+1083
+01:46:22,084 --> 01:46:23,684
+Speaker A: I like Zhuangzi a lot.
+
+1084
+01:46:24,234 --> 01:46:26,234
+Speaker A: I think like all of the...
+
+1085
+01:46:26,620 --> 01:46:39,420
+Speaker A: uh ontological stuff all the metaphysical stuff i i understand quite well i think that the the what would uh yeah i think maybe i should just try to work on the uh
+
+1086
+01:46:39,356 --> 01:46:43,606
+Speaker A: understanding the original characters because the translation is probably very bad and
+
+1087
+01:46:43,606 --> 01:46:44,156
+Speaker B: Yeah,
+
+1088
+01:46:44,156 --> 01:46:44,256
+Speaker A: so
+
+1089
+01:46:44,256 --> 01:46:50,056
+Speaker B: so the translations are very bad and understanding those characters takes a lot of energy,
+
+1090
+01:46:50,256 --> 01:46:57,956
+Speaker B: so probably not worth it because you already understand the thing, you just don't have the projection,
+
+1091
+01:46:58,156 --> 01:46:58,706
+Speaker B: right?
+
+1092
+01:47:00,188 --> 01:47:24,388
+Speaker B: I think try to uh try to look at the logic of how the modern Chinese narrative propaganda works is is probably uh a more useful direction, because i it also imbibes those like traditional Chinese values, right? Because i if you really think about the like the Chinese scholars when they write about those stuff,
+
+1093
+01:47:25,052 --> 01:47:44,902
+Speaker B: when they creating legitimacies for their own like policies or whatever, like they also go back to those like common like higher ideas, at least that's, yeah, that's what's being perceived.
+
+1094
+01:47:45,244 --> 01:48:10,844
+Speaker B: So like those ideas that's been floating that has the the the rightness in in in ways uh are becoming the CCP policies. But but not only that, the Western cybernetics system thinking uh and uh like some other ideas uh it particularly like Marxism that has the highest legitimacy for them. Um
+
+1095
+01:48:11,612 --> 01:48:18,012
+Speaker B: are are kind of like blend in into those uh uh propagandas.
+
+1096
+01:48:18,362 --> 01:48:28,462
+Speaker B: So so so so don't read them as a believer, but read them with uh with with this question in mind. It's like, on the meta level, what are they trying to do?
+
+1097
+01:48:29,468 --> 01:48:44,668
+Speaker A: Yeah, like I think the metaphysics are the most important. I think there's like a multiplicity of ways of articulating it. I think cybernetics is the control systems side and the military side and Marxism is the material.
+
+1098
+01:48:44,968 --> 01:48:45,468
+Speaker A: Oh,
+
+1099
+01:48:45,518 --> 01:48:45,768
+Speaker A: look,
+
+1100
+01:48:45,818 --> 01:48:46,418
+Speaker A: there's a fire.
+
+1101
+01:48:46,768 --> 01:48:49,868
+Speaker A: There's a fire dance or something going on. Hold on.
+
+1102
+01:48:49,868 --> 01:48:50,368
+Speaker B: Ooh.
+
+1103
+01:48:52,768 --> 01:48:53,568
+Speaker A: Do you see it?
+
+1104
+01:48:53,668 --> 01:48:54,168
+Speaker A: Hold on.
+
+1105
+01:48:56,508 --> 01:48:56,958
+Speaker B: Uh uh
+
+1106
+01:48:56,958 --> 01:48:57,208
+Speaker A: Let me
+
+1107
+01:48:57,208 --> 01:48:57,408
+Speaker B: looks
+
+1108
+01:48:57,408 --> 01:48:57,958
+Speaker A: see if I can get us to
+
+1109
+01:48:57,958 --> 01:49:03,158
+Speaker B: like the the Thailand uh type of uh fire dance thing.
+
+1110
+01:49:05,458 --> 01:49:05,608
+Speaker A: So
+
+1111
+01:49:05,608 --> 01:49:08,008
+Speaker B: Oh yeah it's the national holiday.
+
+1112
+01:49:08,158 --> 01:49:10,308
+Speaker B: Look at the cars. So many cars there.
+
+1113
+01:49:11,458 --> 01:49:11,808
+Speaker A: many cars.
+
+1114
+01:49:11,908 --> 01:49:12,558
+Speaker A: It's very busy.
+
+1115
+01:49:12,608 --> 01:49:13,358
+Speaker A: It's very very busy
+
+1116
+01:49:15,608 --> 01:49:21,258
+Speaker B: It's um it actually looks kind of nice but but it still looks kind of bad.
+
+1117
+01:49:22,460 --> 01:49:23,060
+Speaker A: It should be.
+
+1118
+01:49:23,060 --> 01:49:24,310
+Speaker B: I feel safe in China.
+
+1119
+01:49:24,860 --> 01:49:27,110
+Speaker B: And also this looks very China too,
+
+1120
+01:49:27,210 --> 01:49:28,760
+Speaker B: so I really don't like it.
+
+1121
+01:49:29,510 --> 01:49:31,360
+Speaker B: Look, it's like concrete,
+
+1122
+01:49:31,460 --> 01:49:31,960
+Speaker B: no trees.
+
+1123
+01:49:31,960 --> 01:49:42,760
+Speaker A: But yeah, I think it's as long as you don't like drink your own Kool-Aid, I think that the framework is very good.
+
+1124
+01:49:44,252 --> 01:49:55,002
+Speaker A: I think that articulating it in that language is appealing to the Chinese and I think that's probably the right way to go about doing it because it's language that they understand.
+
+1125
+01:49:56,052 --> 01:49:56,552
+Speaker A: Okay,
+
+1126
+01:49:56,602 --> 01:49:58,352
+Speaker A: so what about,
+
+1127
+01:49:58,452 --> 01:49:58,552
+Speaker A: okay,
+
+1128
+01:49:58,602 --> 01:49:58,952
+Speaker A: apart,
+
+1129
+01:49:59,102 --> 01:50:02,752
+Speaker A: so you have Daoism,
+
+1130
+01:50:02,900 --> 01:50:05,120
+Speaker A: then you have cybernetics.
+
+1131
+01:50:06,312 --> 01:50:32,912
+Speaker A: then you have marxism right um but is there any other like for example in the i could i could create a tripartite model right and say taoism is like the the the moral legitimacy cybernetics is the technocratic bureaucratic uh technical efficiency and marxism is the popular uh popularization the mass legitimacy um but and the bread and and all that stuff but is there any other component
+
+1132
+01:50:33,032 --> 01:50:33,682
+Speaker A: Well,
+
+1133
+01:50:33,682 --> 01:50:40,432
+Speaker B: Well, I have an excellent idea and a concrete objective.
+
+1134
+01:50:41,282 --> 01:50:43,082
+Speaker B: Let's submit one here.
+
+1135
+01:50:51,632 --> 01:50:52,032
+Speaker A: terrible name.
+
+1136
+01:50:52,782 --> 01:50:53,232
+Speaker A: I.S.
+
+1137
+01:50:53,320 --> 01:50:54,070
+Speaker A: [acronym unclear]
+
+1138
+01:50:54,070 --> 01:50:54,620
+Speaker B: I think
+
+1139
+01:50:54,620 --> 01:50:54,720
+Speaker A: -S
+
+1140
+01:50:54,720 --> 01:51:01,370
+Speaker B: this is the most influential one. They are in desperation of looking for solutions.
+
+1141
+01:51:01,470 --> 01:51:03,820
+Speaker B: So the best place for us.
+
+1142
+01:51:08,820 --> 01:51:10,520
+Speaker A: UNESCO house in Paris.
+
+1143
+01:51:11,870 --> 01:51:13,470
+Speaker A: Is this a U.N. thing?
+
+1144
+01:51:14,620 --> 01:51:19,220
+Speaker B: Is [Stuart?] Russell the father of like...
+
+1145
+01:51:19,880 --> 01:51:35,280
+Speaker B: The traditional AI, before the deep learning era, uh he he really cares about this, so he created this. And if it goes there, like the top researchers or the safety people like Geoffrey Hinton they will go.
+
+1146
+01:51:35,780 --> 01:51:39,180
+Speaker B: So this is the the point of leverage.
+
+1147
+01:51:40,630 --> 01:51:41,530
+Speaker A: Okay, sure.
+
+1148
+01:51:41,530 --> 01:51:46,530
+Speaker B: Uh I I I I d I d also their like their review is double blind.
+
+1149
+01:51:47,624 --> 01:51:55,074
+Speaker B: So that means no like social entitlement will create a leverage.
+
+1150
+01:51:55,574 --> 01:51:57,224
+Speaker B: It's only about ideas.
+
+1151
+01:51:57,474 --> 01:51:58,674
+Speaker B: It can be paper,
+
+1152
+01:51:58,724 --> 01:52:00,374
+Speaker B: it can be talk, it can be workshop.
+
+1153
+01:52:00,774 --> 01:52:07,024
+Speaker B: And I'm planning on going here and we can get invited.
+
+1154
+01:52:10,174 --> 01:52:10,624
+Speaker A: Sounds good.
+
+1155
+01:52:10,824 --> 01:52:11,324
+Speaker B: Yeah.
+
+1156
+01:52:13,064 --> 01:52:13,864
+Speaker B: Great.
+
+1157
+01:52:13,914 --> 01:52:29,514
+Speaker B: Yeah, think about this and yeah, maybe think about this and for the paper, we only have three days, but I'm producing paper right here. If you have some good ideas,
+
+1158
+01:52:29,664 --> 01:52:30,864
+Speaker B: maybe,
+
+1159
+01:52:31,014 --> 01:52:31,614
+Speaker B: you know.
+
+1160
+01:52:33,164 --> 01:52:33,564
+Speaker A: Okay.
+
+1161
+01:52:33,864 --> 01:52:34,464
+Speaker A: Yep.
+
+1162
+01:52:34,514 --> 01:52:35,114
+Speaker A: Send me.
+
+1163
+01:52:35,214 --> 01:52:36,214
+Speaker A: And then, yeah.
+
+1164
+01:52:37,714 --> 01:52:37,814
+Speaker A: Cool.
+
+1165
+01:52:37,814 --> 01:52:38,464
+Speaker B: All right.
+
+1166
+01:52:40,872 --> 01:52:41,022
+Speaker A: I'll
+
+1167
+01:52:41,022 --> 01:52:41,172
+Speaker B: See
+
+1168
+01:52:41,172 --> 01:52:41,422
+Speaker A: take it.
+
+1169
+01:52:41,422 --> 01:52:42,272
+Speaker B: you. See you.

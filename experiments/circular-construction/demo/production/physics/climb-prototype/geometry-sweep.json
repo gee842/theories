@@ -1,0 +1,80 @@
+[
+  {
+    "linkLengthM": 0.32,
+    "complete": false,
+    "settledAdvanceM": -9.641067415255833e-05,
+    "minUpwardSupports": 3,
+    "maxReactionN": 1895.70997797969,
+    "maxTorqueNm": 450.0,
+    "maxJointLimitViolationRad": 0.0,
+    "abortReason": "Recovery capture failed; remaining three supports retained.",
+    "rejectedCaptureErrorM": 0.010794119479055548,
+    "rejectedCapture": [
+      {
+        "time": 6.001999999999561,
+        "event": "capture-rejected",
+        "limb": "fl",
+        "rung": 1,
+        "errorM": 0.010794119479055548,
+        "speedMps": 0.2373493030669412
+      }
+    ]
+  },
+  {
+    "linkLengthM": 0.34,
+    "complete": false,
+    "settledAdvanceM": -2.5353859012255953e-09,
+    "minUpwardSupports": 3,
+    "maxReactionN": 1662.5203046457004,
+    "maxTorqueNm": 450.0,
+    "maxJointLimitViolationRad": 0.0,
+    "abortReason": "Missed receiver: position/speed capture gate failed; no next release authorized.",
+    "rejectedCaptureErrorM": 0.004130827645457653,
+    "rejectedCapture": [
+      {
+        "time": 6.001999999999561,
+        "event": "capture-rejected",
+        "limb": "fl",
+        "rung": 1,
+        "errorM": 0.004130827645457653,
+        "speedMps": 0.2649599852802639
+      }
+    ]
+  },
+  {
+    "linkLengthM": 0.36,
+    "complete": true,
+    "settledAdvanceM": 0.29999999988110027,
+    "minUpwardSupports": 3,
+    "maxReactionN": 971.8069707696884,
+    "maxTorqueNm": 440.57620965154535,
+    "maxJointLimitViolationRad": 0.0,
+    "abortReason": null,
+    "rejectedCaptureErrorM": null,
+    "rejectedCapture": []
+  },
+  {
+    "linkLengthM": 0.4,
+    "complete": true,
+    "settledAdvanceM": 0.3000000008745929,
+    "minUpwardSupports": 3,
+    "maxReactionN": 984.2316541617872,
+    "maxTorqueNm": 446.92388026379655,
+    "maxJointLimitViolationRad": 0.0,
+    "abortReason": null,
+    "rejectedCaptureErrorM": null,
+    "rejectedCapture": []
+  },
+  {
+    "linkLengthM": 0.45,
+    "complete": true,
+    "settledAdvanceM": 0.29999999443440983,
+    "minUpwardSupports": 3,
+    "maxReactionN": 994.5445529402252,
+    "maxTorqueNm": 450.0,
+    "maxJointLimitViolationRad": 0.0,
+    "abortReason": null,
+    "rejectedCaptureErrorM": null,
+    "rejectedCapture": []
+  }
+]

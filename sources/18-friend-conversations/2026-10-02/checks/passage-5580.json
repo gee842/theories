@@ -1,0 +1,16 @@
+{
+  "text": "social dynamics and the human brain works, that leads to those universal social invariances. Right now, the West is totally against it. I think the important thing is to not call what is Abrahamic, Calvinist, Protestant techno-capitalism, which is what is the West ideology right now. It was not always the West ideology. And you only have to go back... I know, I know. I think this is what I argue. We talk about what's better. We don't care about what's wrong for them. At least we have something better to defend. And then the rest can flow out. And there are people who will voluntarily generate those arguments to defend.",
+  "logprobs": null,
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 737,
+    "input_tokens": 600,
+    "input_token_details": {
+      "text_tokens": 0,
+      "audio_tokens": 600
+    },
+    "output_tokens": 137
+  },
+  "audio_start": 5580,
+  "audio_end": 5640
+}

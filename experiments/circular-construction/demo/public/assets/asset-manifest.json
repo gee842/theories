@@ -1,0 +1,126 @@
+{
+  "climber-robot.glb": {
+    "bytes": 732660,
+    "nodes": 104,
+    "meshes": 68,
+    "materials": 7,
+    "animationNodes": [
+      "limb_fl_grip",
+      "limb_fl_lower",
+      "limb_fl_upper",
+      "limb_fr_grip",
+      "limb_fr_lower",
+      "limb_fr_upper",
+      "limb_rl_grip",
+      "limb_rl_lower",
+      "limb_rl_upper",
+      "limb_rr_grip",
+      "limb_rr_lower",
+      "limb_rr_upper",
+      "robot_tool",
+      "robot_chassis"
+    ]
+  },
+  "climber-robot-climb.glb": {
+    "bytes": 723964,
+    "nodes": 104,
+    "meshes": 68,
+    "materials": 7,
+    "animationNodes": [
+      "limb_fl_grip",
+      "limb_fl_lower",
+      "limb_fl_upper",
+      "limb_fr_grip",
+      "limb_fr_lower",
+      "limb_fr_upper",
+      "limb_rl_grip",
+      "limb_rl_lower",
+      "limb_rl_upper",
+      "limb_rr_grip",
+      "limb_rr_lower",
+      "limb_rr_upper",
+      "robot_tool",
+      "robot_chassis"
+    ]
+  },
+  "tower-site.glb": {
+    "bytes": 16567736,
+    "nodes": 349,
+    "meshes": 252,
+    "materials": 23,
+    "animationNodes": [
+      "ActiveHoist",
+      "ConcreteCore",
+      "lifted_beam",
+      "RobotGripRails",
+      "TemporaryYBraces"
+    ],
+    "architecturalFinish": {
+      "storeys": 8,
+      "addedVisualBoxes": 619,
+      "addedVisualTubes": 115,
+      "materials": [
+        "PaleStone",
+        "WarmSoffit",
+        "BronzeTrim",
+        "Planting",
+        "LeafLight",
+        "Paving"
+      ],
+      "scope": "Concept finish primitives excluded from existing engineering/planning inventory; no structural or physics credit.",
+      "countBasis": "Authored Geo.box and Geo.tube calls; plant tube calls generate rounded foliage crowns.",
+      "gardenRoomLevels": [
+        3,
+        4
+      ]
+    }
+  },
+  "climb-rail-fixture.glb": {
+    "bytes": 252244,
+    "nodes": 161,
+    "meshes": 107,
+    "materials": 5,
+    "animationNodes": [
+      "ClimbRailFixture"
+    ]
+  },
+  "planned-architecture.glb": {
+    "bytes": 18564684,
+    "nodes": 481,
+    "meshes": 356,
+    "materials": 16,
+    "animationNodes": [],
+    "architecturalFinish": {
+      "storeys": 20,
+      "addedVisualBoxes": 1495,
+      "addedVisualTubes": 231,
+      "materials": [
+        "PaleStone",
+        "WarmSoffit",
+        "BronzeTrim",
+        "Planting",
+        "LeafLight",
+        "Paving"
+      ],
+      "scope": "Concept finish primitives excluded from existing engineering/planning inventory; no structural or physics credit.",
+      "countBasis": "Authored Geo.box and Geo.tube calls; plant tube calls generate rounded foliage crowns.",
+      "gardenRoomLevels": [
+        3,
+        4,
+        10,
+        11,
+        17,
+        18
+      ]
+    },
+    "status": "Future architectural design study; not simulated construction or occupancy.",
+    "plannedInventory": {
+      "steelBeamColumnPrimitives": 1860,
+      "floorCassettes": 480,
+      "glazingModules": 1200,
+      "coreStoreys": 20,
+      "finishModules": 20,
+      "note": "Planned steel closes the active beam bay; 20 facade/core/floor/finish storeys. Additional finish pieces are visual components, not validated individual construction lifts."
+    }
+  }
+}

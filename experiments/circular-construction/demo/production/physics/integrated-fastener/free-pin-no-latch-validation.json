@@ -1,0 +1,31 @@
+{
+  "scenario": "no-latch",
+  "test": "Pre-inserted free-body pin retention; insertion NOT demonstrated",
+  "pinDofs": 6,
+  "equalityCount": 0,
+  "timestepSeconds": 0.0005,
+  "seatGateSeconds": 0.4000000000000003,
+  "finalBeamAxialDisplacementM": 18.734778237636828,
+  "finalPinPositionM": [
+    -0.0031830461116591647,
+    0.08513636177419134,
+    0.32024618857331116
+  ],
+  "meanFinalAxialReactionsN": {
+    "dogBeam": 0.0,
+    "headBracket": 2.4403389461512917,
+    "slotBeam": 0.0
+  },
+  "finalDogExtensionM": [
+    -1.1171657198828443e-07,
+    1.2267661540192124e-05
+  ],
+  "motorWorkJ": [
+    -0.002488718647706138,
+    -0.006303184663776084
+  ],
+  "maxPenetrationM": 0.0006089926378930279,
+  "warnings": 0,
+  "finite": true,
+  "completeRobotFasteningCycle": false
+}

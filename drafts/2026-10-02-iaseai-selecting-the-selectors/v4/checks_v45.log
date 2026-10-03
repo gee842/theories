@@ -1,0 +1,152 @@
+== Z2: two zeros (delegation game in survival terms, lock priced in) ==
+  n=3 s=1e6 psi0=0.0 psi1=0.5 p=1.0: delegators in pure equilibria -> qL=0.0: {3}; qL=0.3: {3}; qL=0.6: {0, 3}; qL=0.9: {0, 3}; qL=1.0: {0}
+  n=3 s=1e6 psi0=0.01 psi1=0.05 p=0.5: delegators in pure equilibria -> qL=0.0: {3}; qL=0.3: {2}; qL=0.6: {0}; qL=0.9: {0}; qL=1.0: {0}
+  n=3 s=1e6 psi0=0.01 psi1=0.05 p=1.0: delegators in pure equilibria -> qL=0.0: {3}; qL=0.3: {3}; qL=0.6: {3}; qL=0.9: {0, 3}; qL=1.0: {0}
+  n=3 s=1e6 psi0=0.0 psi1=0.5 p=0.5: delegators in pure equilibria -> qL=0.0: {0}; qL=0.3: {0}; qL=0.6: {0}; qL=0.9: {0}; qL=1.0: {0}
+  n=3 s=1e6 psi0=0.01 psi1=0.2 p=1.0: delegators in pure equilibria -> qL=0.0: {3}; qL=0.3: {3}; qL=0.6: {0, 3}; qL=0.9: {0, 3}; qL=1.0: {0}
+ the two zeros (p=1, qL=1): Phi of not delegating when k others delegate, as s grows
+  k=0 others delegate: s=1: 0.3234, s=10: 0.3234, s=100: 0.3234, s=10000: 0.3234, s=1e+06: 0.3234   (delegating gives 0 for every s)
+  k=1 others delegate: s=1: 0.2328, s=10: 0.0716, s=100: 0.0090, s=10000: 0.0001, s=1e+06: 0.0000   (delegating gives 0 for every s)
+  k=2 others delegate: s=1: 0.1787, s=10: 0.0388, s=100: 0.0044, s=10000: 0.0000, s=1e+06: 0.0000   (delegating gives 0 for every s)
+
+== HO: risk homeostasis ==
+  n=2, s=100, Le=1, Lc=100, psi0=0.01:
+    dpsi=0.19: delta=0.003 added hazard n*dpsi*delta=0.0013 (closed form 0.0013)
+    dpsi=0.05: delta=0.041 added hazard n*dpsi*delta=0.0041 (closed form 0.0041)
+    dpsi=0.02: delta=0.117 added hazard n*dpsi*delta=0.0047 (closed form 0.0047)
+    dpsi=0.01: delta=0.243 added hazard n*dpsi*delta=0.0049 (closed form 0.0049)
+    dpsi=0.005: delta=0.496 added hazard n*dpsi*delta=0.0050 (closed form 0.0050)
+    dpsi=0.003: delta=0.834 added hazard n*dpsi*delta=0.0050 (closed form 0.0050)
+    dpsi=0.001: delta=1.000 added hazard n*dpsi*delta=0.0020 (closed form 0.0050, corner)
+  n=3, s=100, Le=1, Lc=100, psi0=0.01:
+    dpsi=0.19: delta=0.002 added hazard n*dpsi*delta=0.0011 (closed form 0.0011)
+    dpsi=0.05: delta=0.036 added hazard n*dpsi*delta=0.0053 (closed form 0.0053)
+    dpsi=0.02: delta=0.104 added hazard n*dpsi*delta=0.0062 (closed form 0.0062)
+    dpsi=0.01: delta=0.218 added hazard n*dpsi*delta=0.0065 (closed form 0.0065)
+    dpsi=0.005: delta=0.446 added hazard n*dpsi*delta=0.0067 (closed form 0.0067)
+    dpsi=0.003: delta=0.749 added hazard n*dpsi*delta=0.0067 (closed form 0.0067)
+    dpsi=0.001: delta=1.000 added hazard n*dpsi*delta=0.0030 (closed form 0.0068, corner)
+  n=5, s=100, Le=1, Lc=100, psi0=0.01:
+    dpsi=0.19: delta=0.000 added hazard n*dpsi*delta=0.0000 (closed form -0.0012)
+    dpsi=0.05: delta=0.023 added hazard n*dpsi*delta=0.0059 (closed form 0.0059)
+    dpsi=0.02: delta=0.074 added hazard n*dpsi*delta=0.0074 (closed form 0.0074)
+    dpsi=0.01: delta=0.158 added hazard n*dpsi*delta=0.0079 (closed form 0.0079)
+    dpsi=0.005: delta=0.325 added hazard n*dpsi*delta=0.0081 (closed form 0.0081)
+    dpsi=0.003: delta=0.549 added hazard n*dpsi*delta=0.0082 (closed form 0.0082)
+    dpsi=0.001: delta=1.000 added hazard n*dpsi*delta=0.0050 (closed form 0.0083, corner)
+ ratio Le/Lc drives the added hazard (n=3, s=100, dpsi=0.01):
+   Le/Lc=0.005: added hazard 0.0031
+   Le/Lc=0.010: added hazard 0.0065
+   Le/Lc=0.020: added hazard 0.0134
+ discrete delegation, n=3, s=100, Le=1, Lc=100, psi0=0.01 (Proposition 6's model): the saw-tooth
+   0.19: k=[0] hazard=[0.0297]; 0.007: k=[0] hazard=[0.0297]; 0.0066: k=[1] hazard=[0.0362]; 0.006: k=[1] hazard=[0.0356]; 0.005: k=[2] hazard=[0.0395]; 0.004: k=[2] hazard=[0.0375]; 0.0034: k=[2] hazard=[0.0364]; 0.003: k=[3] hazard=[0.0385]; 0.002: k=[3] hazard=[0.0356]; 0.001: k=[3] hazard=[0.0326]  (baseline 0.0297)
+ general form (S-N9): any equilibrium with k>=1 delegators has realized hazard above the baseline for every dpsi>0:
+   checked k=1..3, dpsi in {1e-4,1e-3,0.01,0.1}: True
+
+== CI: the catch-up index; a frozen lead against rivals holding E3 ==
+  kappa=1.5: t0=0: 0.945 (exp(-Hc at the date of victory)=0.967); t0=20: 0.894 (exp(-Hc at the date of victory)=0.906); t0=60: 0.758 (exp(-Hc at the date of victory)=0.768); t0=200: 0.423 (exp(-Hc at the date of victory)=0.429)
+  kappa=2.0: t0=0: 0.840 (exp(-Hc at the date of victory)=0.888); t0=20: 0.707 (exp(-Hc at the date of victory)=0.734); t0=60: 0.432 (exp(-Hc at the date of victory)=0.447); t0=200: 0.075 (exp(-Hc at the date of victory)=0.078)
+  kappa=4.0: t0=0: 0.414 (exp(-Hc at the date of victory)=0.486); t0=20: 0.190 (exp(-Hc at the date of victory)=0.215); t0=60: 0.021 (exp(-Hc at the date of victory)=0.023); t0=200: 0.000 (exp(-Hc at the date of victory)=0.000)
+ exponential understanding with g_U=0.2: psi(kappa)=ln kappa - 1 + 1/kappa, survival kappa=2: 0.953, kappa=4: 0.853
+ the frozen lead: rivals at the tempo of understanding U(t); winner frozen at kappa times their level at victory
+  kappa=2.0 t0=20: understanding catches up at t=47.4; the winner's edge over E3 rivals then is 1.000
+  kappa=4.0 t0=60: understanding catches up at t=265.6; the winner's edge over E3 rivals then is 1.000
+
+== MF: Lemma M' (freeze against roll back) ==
+  sprint to tau=10: X(tau)=20, time for understanding to catch up 28, survival to tau 0.860, freeze then wait 0.531; roll back at tau 0.860
+  sprint to tau=15: X(tau)=90, time for understanding to catch up 163, survival to tau 0.694, freeze then wait 0.0167; roll back at tau 0.694
+  sprint to tau=20: X(tau)=403, time for understanding to catch up 785, survival to tau 0.544, freeze then wait 2.09e-09; roll back at tau 0.544
+
+== SU: summability ==
+  X = 2U (same tempo, half uncovered): survival to 1000 = 9.85e-12
+  X = 2+t, U = 1+t (same speed, gap closes like 1/t, not summable): t=100: 0.81, t=1000: 0.72, t=10000: 0.64, t=100000: 0.57
+  X = 2+sqrt(t), U = 1+t (understanding catches up): survival to 10^5 = 0.953
+ the initial gap (continuous, hphi=0.05, U = 1 + 0.5 t):
+  k0=1.25: grow at the tempo of understanding from the gap: survival to 100 = 0.368, to 400 = 0.018; pause until understanding catches up, then E3: 0.998 for every horizon
+  k0=2.0: grow at the tempo of understanding from the gap: survival to 100 = 0.082, to 400 = 0.000; pause until understanding catches up, then E3: 0.975 for every horizon
+
+== HR: hazard-rate comparison ==
+  residual hazard under the arrangement 0.005: H=20: race 0.544, arrangement 0.900, ratio 0.604, bound exp(-(hphi-hbar)H) 0.407; H=40: race 0.196, arrangement 0.814, ratio 0.240, bound exp(-(hphi-hbar)H) 0.165; H=60: race 0.070, arrangement 0.737, ratio 0.095, bound exp(-(hphi-hbar)H) 0.067; H=100: race 0.009, arrangement 0.603, ratio 0.015, bound exp(-(hphi-hbar)H) 0.011
+  residual hazard under the arrangement 0.02: H=20: race 0.544, arrangement 0.654, ratio 0.831, bound exp(-(hphi-hbar)H) 0.549; H=40: race 0.196, arrangement 0.437, ratio 0.448, bound exp(-(hphi-hbar)H) 0.301; H=60: race 0.070, arrangement 0.292, ratio 0.241, bound exp(-(hphi-hbar)H) 0.165; H=100: race 0.009, arrangement 0.130, ratio 0.069, bound exp(-(hphi-hbar)H) 0.050
+
+== LO: layered oversight ==
+  per-layer fidelity f=0.95, amplification m=10, X/B = 10 e^(0.3t): t=0: k=1.0, fidelity 0.950; t=5: k=1.7, fidelity 0.919; t=10: k=2.3, fidelity 0.889; t=20: k=3.6, fidelity 0.831; t=40: k=6.2, fidelity 0.727
+  per-layer fidelity f=0.9, amplification m=10, X/B = 10 e^(0.3t): t=0: k=1.0, fidelity 0.900; t=5: k=1.7, fidelity 0.840; t=10: k=2.3, fidelity 0.785; t=20: k=3.6, fidelity 0.684; t=40: k=6.2, fidelity 0.520
+  per-layer fidelity f=0.8, amplification m=10, X/B = 10 e^(0.3t): t=0: k=1.0, fidelity 0.800; t=5: k=1.7, fidelity 0.692; t=10: k=2.3, fidelity 0.598; t=20: k=3.6, fidelity 0.447; t=40: k=6.2, fidelity 0.250
+ per-layer error needed to hold chain fidelity at 0.5 (m=10): t=0: 1-f <= 0.5000, t=10: 1-f <= 0.2599, t=20: 1-f <= 0.1749, t=40: 1-f <= 0.1056, t=80: 1-f <= 0.0589
+
+== PH: predictability horizon (logistic map at r=4, Lyapunov exponent ln 2) ==
+  initial error 0.001: mean steps until error > 0.1 = 7.5  (ln(0.1/d0)/ln2 = 6.6)
+  initial error 1e-06: mean steps until error > 0.1 = 17.5  (ln(0.1/d0)/ln2 = 16.6)
+  initial error 1e-09: mean steps until error > 0.1 = 27.5  (ln(0.1/d0)/ln2 = 26.6)
+  initial error 1e-12: mean steps until error > 0.1 = 37.5  (ln(0.1/d0)/ln2 = 36.5)
+
+== LP: prevention under the individual criterion ==
+  one strike, success sigma=0.7, escalation e=0.2: Phi_prev=0.536; prevention beats staying out or joining unless e > 0.791
+  one strike, success sigma=0.3, escalation e=0.2: Phi_prev=0.291; prevention beats staying out or joining unless e > 0.615
+ escalation needed to deter prevention along the Prop 24 path (sigma=0.7, Phi_R=0.9):
+  eps=0.1: e* = 0.9149
+  eps=0.01: e* = 0.9920
+  eps=0.001: e* = 0.9992
+ sustained prevention: the target rebuilds with prob b per period, each strike escalates with prob e:
+  b=0.2 e=0.05: Phi_prev(H) = H=50: 0.605, H=200: 0.134, H=1000: 0.000
+  b=0.1 e=0.02: Phi_prev(H) = H=50: 0.905, H=200: 0.670, H=1000: 0.135
+
+== CC: conversion of standing into survival ==
+  Q=0.9: c_conv = Q p = p=0.5: 0.45, p=0.9: 0.81, p=1.0: 0.90
+  Q=0.5: c_conv = Q p = p=0.5: 0.25, p=0.9: 0.45, p=1.0: 0.50
+  Q=0.1: c_conv = Q p = p=0.5: 0.05, p=0.9: 0.09, p=1.0: 0.10
+ along the Prop 24 path, staying out against joining: eps=0.1: Phi_S/Phi_P=0.182, eps=0.01: Phi_S/Phi_P=0.020  (the region shrinks on this path)
+
+== BC: degree of belief c in (X), (U), (phi') ==
+  c=0.0: survival trust threshold 0.1548
+  c=0.5: survival trust threshold 0.0227
+  c=0.9: survival trust threshold 0.0029
+  c=0.99: survival trust threshold 0.0003
+
+== P24: E1 kept alone, with its own decisive probability ==
+  eps=0.1: Phi_P=0.0550; E1 alone with p^H=p_dec: 0.1000 (better); with p^H=1-eps^2: 0.0100 (worse)
+  eps=0.01: Phi_P=0.0050; E1 alone with p^H=p_dec: 0.0100 (better); with p^H=1-eps^2: 0.0001 (worse)
+
+== N22: Proposition 22 with Nash-verified racer subgames ==
+ SEP n=4 r=1.3 (two-stage): k=0: Coop -0.610 Race +0.116  k=1: Coop -1.056 Race -0.876  k=2: Coop -1.331 Race -1.197  k=3: Coop -1.422 Race -1.325
+     equilibria [4]; per-rival trust needed none suffices; aggregate threshold None, risk-dominant None
+ CF  n=4 r=1.3 (two-stage): k=0: Coop +0.140 Race +0.002  k=1: Coop -0.885 Race -0.886  k=2: Coop -1.291 Race -1.197  k=3: Coop -1.422 Race -1.325
+     equilibria [0, 4]; per-rival trust needed 0.611; aggregate threshold 0.413, risk-dominant True
+ CF n=4 r=1.3 (simultaneous: a deviator best-responds to fixed intensities): Race(2)=-0.670 against Coop(1)=-0.885; per-rival trust needed 0.823
+ CF: does all-cooperate hold (R >= T) as r varies?
+  n=2: r=0.5: yes (R=0.420, T=0.061); r=0.8: yes (R=0.420, T=0.231); r=1.0: yes (R=0.420, T=0.329); r=1.2: yes (R=0.420, T=0.410); r=1.25: no (R=0.420, T=0.428); r=1.3: no (R=0.420, T=0.445)
+  n=3: r=0.5: yes (R=0.238, T=-0.118); r=0.8: yes (R=0.238, T=-0.003); r=1.0: yes (R=0.238, T=0.080); r=1.2: yes (R=0.238, T=0.158); r=1.25: yes (R=0.238, T=0.176); r=1.3: yes (R=0.238, T=0.193)
+  n=4: r=0.5: yes (R=0.140, T=-0.233); r=0.8: yes (R=0.140, T=-0.164); r=1.0: yes (R=0.140, T=-0.099); r=1.2: yes (R=0.140, T=-0.031); r=1.25: yes (R=0.140, T=-0.015); r=1.3: yes (R=0.140, T=0.002)
+ CF variations (two-stage; Nash-verified):
+  base: equilibria [0, 4]; aggregate threshold 0.413; risk-dominant True
+  n=3: equilibria [0, 3]; aggregate threshold 0.755; risk-dominant False
+  Lb=0.5: equilibria [0, 4]; aggregate threshold 0.902; risk-dominant False
+  ec=0.03: equilibria [4]; aggregate threshold None; risk-dominant None
+  l=0: equilibria [0, 4]; aggregate threshold 0.496; risk-dominant True
+  Omc=2: equilibria [0, 4]; aggregate threshold 0.167; risk-dominant True
+  n=6, r=1.0: equilibria [0, 6]; aggregate threshold 0.166; risk-dominant True
+  n=6, r=0.8: equilibria [0, 6]; aggregate threshold 0.144; risk-dominant True
+  n=6, r=1.3: equilibria [0, 6]; aggregate threshold 0.246; risk-dominant True; racer subgames without a symmetric pure equilibrium at k=[3, 4, 5] (results there are not equilibria)
+ the lid: smallest pooled effort e* with T <= R
+  Omega=0.5: fixed Omega_c=L_b=1: e*=0.0054 (R=+0.238); scaled Omega_c=L_b=Omega: e*=0.0175 (R=+0.087)
+  Omega=1.0: fixed Omega_c=L_b=1: e*=0.0349 (R=+0.173); scaled Omega_c=L_b=Omega: e*=0.0349 (R=+0.173)
+  Omega=2.0: fixed Omega_c=L_b=1: e*=0.1406 (R=-0.059); scaled Omega_c=L_b=Omega: e*=0.0699 (R=+0.346)
+  Omega=4.0: fixed Omega_c=L_b=1: e*=0.4898 (R=-0.828); scaled Omega_c=L_b=Omega: e*=0.1397 (R=+0.693)
+
+== K7: the mechanism-design form ==
+  rho=0.1, Omega=1, L_b=0.0, S=1, all Phi=1: p_s=0.8: sum of sup 0.36 -> feasible without verification; p_s=0.5: sum of sup 0.90 -> feasible without verification; p_s=0.2: sum of sup 1.44 -> infeasible without verification; p_s=0.05: sum of sup 1.71 -> infeasible without verification
+  rho=0.1, Omega=1, L_b=0.5, S=1, all Phi=1: p_s=0.8: sum of sup -0.46 -> feasible without verification; p_s=0.5: sum of sup 0.35 -> feasible without verification; p_s=0.2: sum of sup 1.16 -> infeasible without verification; p_s=0.05: sum of sup 1.56 -> infeasible without verification
+ survival compression (p_s=0.2, L_b=0, Phi_R=0.95, B=1): equal shares feasible iff Phi_race/Phi_R <= 0.872; at Phi_race=0.85: 2.924 vs 2.850; at 0.80: 2.752 vs 2.850
+ distribution: the strong type's minimum share under full information (L_b=0.5, S=1): rho=0.05: 0.925, rho=0.2: 0.700
+
+== LD: a lead under diffusion (leader pauses fully; dDelta/dt = -delta Delta - 1) ==
+  lead 6 months, diffusion 0.05/month: exhausted after 5.2 months
+  lead 6 months, diffusion 0.1/month: exhausted after 4.7 months
+  lead 12 months, diffusion 0.1/month: exhausted after 7.9 months
+  lead 24 months, diffusion 0.1/month: exhausted after 12.2 months
+
+== DS: discounting ==
+  rho=0.05, race hazard h=0.01, race growth 0.04, paced growth 0.01: race 50.0, pace 25.0 -> race preferred (rule: race iff h < g_r - g_p = 0.03); survival to infinity: race 0, pace 1
+  rho=0.05, race hazard h=0.03, race growth 0.04, paced growth 0.01: race 25.0, pace 25.0 -> pace preferred (rule: race iff h < g_r - g_p = 0.03); survival to infinity: race 0, pace 1
+  rho=0.05, race hazard h=0.05, race growth 0.04, paced growth 0.01: race 16.7, pace 25.0 -> pace preferred (rule: race iff h < g_r - g_p = 0.03); survival to infinity: race 0, pace 1

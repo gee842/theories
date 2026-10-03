@@ -1,0 +1,773 @@
+{
+  "schemaVersion": 1,
+  "engine": "OpenSeesPy",
+  "engineVersion": "3.8.0",
+  "units": "m, N, kg, Pa",
+  "qualification": "Concept-stage elastic equilibrium and support-sensitivity study; no safety certification.",
+  "coordinateSystem": "Z-up; viewer mapping (x,y,z) -> (x,z,-y)",
+  "geometry": {
+    "footprintM": [
+      36,
+      24
+    ],
+    "gridM": 6,
+    "storeyHeightM": 3.6,
+    "activeFloor": 12
+  },
+  "material": {
+    "E": 200000000000.0,
+    "G": 76923076923.07692,
+    "poisson": 0.3,
+    "densityKgM3": 7850.0
+  },
+  "sections": {
+    "lowerColumn": {
+      "depthM": 0.4,
+      "widthM": 0.4,
+      "webM": 0.023,
+      "flangeM": 0.031,
+      "A": 0.032574000000000006,
+      "Iy": 0.0009201953380000003,
+      "Iz": 0.00033100937050000004,
+      "J": 9.315082e-06,
+      "E": 200000000000.0,
+      "G": 76923076923.07692
+    },
+    "upperColumn": {
+      "depthM": 0.34,
+      "widthM": 0.34,
+      "webM": 0.023,
+      "flangeM": 0.031,
+      "A": 0.027474000000000002,
+      "Iy": 0.0005460525180000001,
+      "Iz": 0.00020335253550000002,
+      "J": 7.880102e-06,
+      "E": 200000000000.0,
+      "G": 76923076923.07692
+    },
+    "xBeam": {
+      "depthM": 0.48,
+      "widthM": 0.23,
+      "webM": 0.014,
+      "flangeM": 0.022,
+      "A": 0.016224000000000002,
+      "Iy": 0.0006278065919999995,
+      "Iz": 4.4712032e-05,
+      "J": 2.0314879999999996e-06,
+      "E": 200000000000.0,
+      "G": 76923076923.07692
+    },
+    "yBeam": {
+      "depthM": 0.42,
+      "widthM": 0.2,
+      "webM": 0.014,
+      "flangeM": 0.022,
+      "A": 0.014064,
+      "Iy": 0.00041086067199999995,
+      "Iz": 2.9419312e-05,
+      "J": 1.763648e-06,
+      "E": 200000000000.0,
+      "G": 76923076923.07692
+    },
+    "activeBeam": {
+      "depthM": 0.45,
+      "widthM": 0.3,
+      "webM": 0.009,
+      "flangeM": 0.018,
+      "A": 0.014525999999999999,
+      "Iy": 0.0005573948579999998,
+      "Iz": 8.102515049999999e-05,
+      "J": 1.2670019999999997e-06,
+      "E": 200000000000.0,
+      "G": 76923076923.07692
+    }
+  },
+  "activeBeamMassValidation": {
+    "status": "passed",
+    "sectionDerivedMassKg": 638.56296,
+    "importedMassKg": 638.5629599999999,
+    "relativeError": 1.7803544026671393e-16,
+    "relativeTolerance": 1e-10
+  },
+  "brace": {
+    "areaM2": 0.0084948665353068,
+    "radiusM": 0.052,
+    "model": "Elastic solid circular truss; compression buckling omitted"
+  },
+  "loads": {
+    "deckDeadPa": 2250,
+    "constructionLivePa": 750,
+    "lateralProbePa": 500,
+    "activeBeamMassKg": 638.5629599999999,
+    "robotMassKg": 137.0,
+    "importedSeatLoadsN": {
+      "seat_left": 3132.151311794234,
+      "seat_right": 3132.1513258057066
+    }
+  },
+  "source": {
+    "path": "production/physics/mujoco/nominal-validation.json",
+    "sha256": "82fee331fca9b12fdef2f33602de1678c338d7abf9c2d03655ae3c5e6d6ae448"
+  },
+  "stageMethod": "Independent partial-height equilibrium models; gravity held before workcell and lateral load ramp. No stress-free activation or construction-history carryover.",
+  "assumptions": [
+    "All beam-column joints rigid; fixed foundations; no slab diaphragm constraint.",
+    "Temporary Y-plane braces are assumed additions; X braces follow visual bay locations.",
+    "Concrete core contributes no stiffness, mass or gravity; this is a steel-frame-only subsystem.",
+    "Deck and member gravity lumped to joints; frame member local gravity bending is not captured.",
+    "Active floor-12 beam is a pin-seated gravity load only, with no frame stiffness credit.",
+    "Robot weight and 0.6 m eccentricity condensed to the adjacent column; dynamic grip forces omitted.",
+    "P-Delta geometry, elastic material. No yielding, brace buckling, joint slip, wind dynamics or seismic loads.",
+    "Floor-12 openings persist; stage 20 assumes future decks above current visual deck level.",
+    "No member, connection, stability, foundation or serviceability acceptance criteria are certified."
+  ],
+  "stages": [
+    {
+      "case": "11-storey-nominal",
+      "storeys": 11,
+      "nodeCount": 420,
+      "elementCount": 1199,
+      "braceCount": 176,
+      "status": "converged",
+      "gravityReturnCode": 0,
+      "combinedReturnCode": 0,
+      "activeBeamIncluded": false,
+      "robotIncluded": false,
+      "deckLoadedAreaM2": 9504.0,
+      "appliedForceN": [
+        475200.0000000037,
+        712799.9999999965,
+        -37220133.423970275
+      ],
+      "baseReactionN": [
+        -475199.999999795,
+        -712800.0000002516,
+        37220133.42397029
+      ],
+      "forceBalanceRelative": 6.852903164461743e-15,
+      "roofMaxHorizontalM": 0.014809843675319822,
+      "maxStoreyDriftRatio": 0.0006152307074768397,
+      "braceAxialForceRangeN": [
+        -91072.02153847735,
+        25372.407620244343
+      ],
+      "floorProfiles": [
+        {
+          "floor": 1,
+          "zM": 3.6,
+          "meanDxM": 0.0006010135863200993,
+          "meanDyM": 0.0007546089045317113,
+          "maxHorizontalM": 0.0014708983165027793,
+          "minDzM": -0.000793240029901502,
+          "maxStoreyDriftRatio": 0.00040858286569521647
+        },
+        {
+          "floor": 2,
+          "zM": 7.2,
+          "meanDxM": 0.001350457835027572,
+          "meanDyM": 0.002003956740232907,
+          "maxHorizontalM": 0.0036762707876374424,
+          "minDzM": -0.0015141672471708093,
+          "maxStoreyDriftRatio": 0.0006152307074768397
+        },
+        {
+          "floor": 3,
+          "zM": 10.8,
+          "meanDxM": 0.00205537769919076,
+          "meanDyM": 0.0032685817092647216,
+          "maxHorizontalM": 0.00583745901297957,
+          "minDzM": -0.00216273327732645,
+          "maxStoreyDriftRatio": 0.0006024363313943513
+        },
+        {
+          "floor": 4,
+          "zM": 14.4,
+          "meanDxM": 0.0027014544221150593,
+          "meanDyM": 0.0044376059278564434,
+          "maxHorizontalM": 0.007790861750794807,
+          "minDzM": -0.002738952731292966,
+          "maxStoreyDriftRatio": 0.0005440294365459468
+        },
+        {
+          "floor": 5,
+          "zM": 18.0,
+          "meanDxM": 0.003286578991323116,
+          "meanDyM": 0.005484924181577696,
+          "maxHorizontalM": 0.009502655204639865,
+          "minDzM": -0.0032428468320329753,
+          "maxStoreyDriftRatio": 0.00047646327027095123
+        },
+        {
+          "floor": 6,
+          "zM": 21.6,
+          "meanDxM": 0.0038096448968819394,
+          "meanDyM": 0.006404855255432186,
+          "maxHorizontalM": 0.01096867700002764,
+          "minDzM": -0.00367444483330553,
+          "maxStoreyDriftRatio": 0.0004079118147725565
+        },
+        {
+          "floor": 7,
+          "zM": 25.2,
+          "meanDxM": 0.004269595317470773,
+          "meanDyM": 0.007196349521479959,
+          "maxHorizontalM": 0.01219164167280483,
+          "minDzM": -0.004033778833421979,
+          "maxStoreyDriftRatio": 0.00034020923717017186
+        },
+        {
+          "floor": 8,
+          "zM": 28.8,
+          "meanDxM": 0.004665461960806639,
+          "meanDyM": 0.007859536417759128,
+          "maxHorizontalM": 0.013175853144859634,
+          "minDzM": -0.004320880233261927,
+          "maxStoreyDriftRatio": 0.0002737572664044377
+        },
+        {
+          "floor": 9,
+          "zM": 32.4,
+          "meanDxM": 0.004996513034134266,
+          "meanDyM": 0.008395691363396067,
+          "maxHorizontalM": 0.013927058884782784,
+          "minDzM": -0.004535776900912223,
+          "maxStoreyDriftRatio": 0.0002089460190997789
+        },
+        {
+          "floor": 10,
+          "zM": 36.0,
+          "meanDxM": 0.005262060262187818,
+          "meanDyM": 0.008810116704653028,
+          "maxHorizontalM": 0.01445641109070227,
+          "minDzM": -0.00467851078345261,
+          "maxStoreyDriftRatio": 0.00015651555628516352
+        },
+        {
+          "floor": 11,
+          "zM": 39.6,
+          "meanDxM": 0.005483285559369406,
+          "meanDyM": 0.009121809121726417,
+          "maxHorizontalM": 0.014809843675319822,
+          "minDzM": -0.004762393493407299,
+          "maxStoreyDriftRatio": 0.00015617206118654473
+        }
+      ]
+    },
+    {
+      "case": "12-storey-nominal",
+      "storeys": 12,
+      "nodeCount": 455,
+      "elementCount": 1307,
+      "braceCount": 192,
+      "status": "converged",
+      "gravityReturnCode": 0,
+      "combinedReturnCode": 0,
+      "activeBeamIncluded": true,
+      "robotIncluded": true,
+      "deckLoadedAreaM2": 10296.0,
+      "appliedForceN": [
+        518400.0000000046,
+        777599.9999999948,
+        -40342906.90872666
+      ],
+      "baseReactionN": [
+        -518399.99999988417,
+        -777600.0000006726,
+        40342906.90872691
+      ],
+      "forceBalanceRelative": 1.6803112887524878e-14,
+      "roofMaxHorizontalM": 0.017421662798131902,
+      "maxStoreyDriftRatio": 0.0006657292055577736,
+      "braceAxialForceRangeN": [
+        -100978.02638204108,
+        28822.7098819942
+      ],
+      "floorProfiles": [
+        {
+          "floor": 1,
+          "zM": 3.6,
+          "meanDxM": 0.0006466725870392601,
+          "meanDyM": 0.0008159381727679817,
+          "maxHorizontalM": 0.0015784592032009374,
+          "minDzM": -0.0008635232439644457,
+          "maxStoreyDriftRatio": 0.00043846088977803814
+        },
+        {
+          "floor": 2,
+          "zM": 7.2,
+          "meanDxM": 0.0014612498605589264,
+          "meanDyM": 0.0021772595493872913,
+          "maxHorizontalM": 0.003965022008495875,
+          "minDzM": -0.0016547676611861763,
+          "maxStoreyDriftRatio": 0.0006657292055577736
+        },
+        {
+          "floor": 3,
+          "zM": 10.8,
+          "meanDxM": 0.0022378728580946384,
+          "meanDyM": 0.0035713972589584806,
+          "maxHorizontalM": 0.006326268860190936,
+          "minDzM": -0.002373708449380916,
+          "maxStoreyDriftRatio": 0.0006581456012278538
+        },
+        {
+          "floor": 4,
+          "zM": 14.4,
+          "meanDxM": 0.0029607414927669885,
+          "meanDyM": 0.004879191153105251,
+          "maxHorizontalM": 0.008486142591470009,
+          "minDzM": -0.0030203865357229026,
+          "maxStoreyDriftRatio": 0.0006014812263427151
+        },
+        {
+          "floor": 5,
+          "zM": 18.0,
+          "meanDxM": 0.0036271220320243775,
+          "meanDyM": 0.006072087430476731,
+          "maxHorizontalM": 0.010408073655883886,
+          "minDzM": -0.003594848877350891,
+          "maxStoreyDriftRatio": 0.0005349101185772445
+        },
+        {
+          "floor": 6,
+          "zM": 21.6,
+          "meanDxM": 0.004235375119733159,
+          "meanDyM": 0.007143467094691518,
+          "maxHorizontalM": 0.012087466841628546,
+          "minDzM": -0.004097150022105105,
+          "maxStoreyDriftRatio": 0.00046724472370641024
+        },
+        {
+          "floor": 7,
+          "zM": 25.2,
+          "meanDxM": 0.004783927379404157,
+          "meanDyM": 0.008091712211191485,
+          "maxHorizontalM": 0.013527128646512874,
+          "minDzM": -0.004527346641201948,
+          "maxStoreyDriftRatio": 0.00040046021125421497
+        },
+        {
+          "floor": 8,
+          "zM": 28.8,
+          "meanDxM": 0.005271314171127677,
+          "meanDyM": 0.008916455421453872,
+          "maxHorizontalM": 0.014731481664481192,
+          "minDzM": -0.0048854938445496215,
+          "maxStoreyDriftRatio": 0.0003349624994284416
+        },
+        {
+          "floor": 9,
+          "zM": 32.4,
+          "meanDxM": 0.005696343125330785,
+          "meanDyM": 0.009618381276458988,
+          "maxHorizontalM": 0.01570633221480072,
+          "minDzM": -0.005171643729911273,
+          "maxStoreyDriftRatio": 0.0002711223528591322
+        },
+        {
+          "floor": 10,
+          "zM": 36.0,
+          "meanDxM": 0.006057557454901611,
+          "meanDyM": 0.010201070565781277,
+          "maxHorizontalM": 0.01646079424439925,
+          "minDzM": -0.005385846647446725,
+          "maxStoreyDriftRatio": 0.00022031769974205348
+        },
+        {
+          "floor": 11,
+          "zM": 39.6,
+          "meanDxM": 0.006396692081902632,
+          "meanDyM": 0.010692059000774941,
+          "maxHorizontalM": 0.017068171187668756,
+          "minDzM": -0.005554695810774246,
+          "maxStoreyDriftRatio": 0.00019211125649277308
+        },
+        {
+          "floor": 12,
+          "zM": 43.2,
+          "meanDxM": 0.006665229972780759,
+          "meanDyM": 0.011046771020869766,
+          "maxHorizontalM": 0.017421662798131902,
+          "minDzM": -0.005638539078320354,
+          "maxStoreyDriftRatio": 0.0002028592781537861
+        }
+      ]
+    },
+    {
+      "case": "20-storey-nominal",
+      "storeys": 20,
+      "nodeCount": 735,
+      "elementCount": 2179,
+      "braceCount": 320,
+      "status": "converged",
+      "gravityReturnCode": 0,
+      "combinedReturnCode": 0,
+      "activeBeamIncluded": true,
+      "robotIncluded": true,
+      "deckLoadedAreaM2": 17208.0,
+      "appliedForceN": [
+        863999.9999999956,
+        1295999.9999999963,
+        -67052199.12906894
+      ],
+      "baseReactionN": [
+        -863999.9999999322,
+        -1295999.9999993637,
+        67052199.12906917
+      ],
+      "forceBalanceRelative": 9.4344535604249e-15,
+      "roofMaxHorizontalM": 0.046803728414864354,
+      "maxStoreyDriftRatio": 0.0010672070885937156,
+      "braceAxialForceRangeN": [
+        -189260.43717782764,
+        59460.98506246131
+      ],
+      "floorProfiles": [
+        {
+          "floor": 1,
+          "zM": 3.6,
+          "meanDxM": 0.0010035724235140048,
+          "meanDyM": 0.0012822109603455457,
+          "maxHorizontalM": 0.0023656685795965067,
+          "minDzM": -0.0014063710056029975,
+          "maxStoreyDriftRatio": 0.0006571301609990297
+        },
+        {
+          "floor": 2,
+          "zM": 7.2,
+          "meanDxM": 0.0023385639644807814,
+          "meanDyM": 0.003499770126580813,
+          "maxHorizontalM": 0.006078967472859728,
+          "minDzM": -0.0027405878531016835,
+          "maxStoreyDriftRatio": 0.0010354232797262412
+        },
+        {
+          "floor": 3,
+          "zM": 10.8,
+          "meanDxM": 0.003697475736195515,
+          "meanDyM": 0.005892306595563983,
+          "maxHorizontalM": 0.009909779141035531,
+          "minDzM": -0.004002853226995633,
+          "maxStoreyDriftRatio": 0.0010672070885937156
+        },
+        {
+          "floor": 4,
+          "zM": 14.4,
+          "meanDxM": 0.005051819268296312,
+          "meanDyM": 0.008276312889671619,
+          "maxHorizontalM": 0.013589816672597508,
+          "minDzM": -0.005193394842296034,
+          "maxStoreyDriftRatio": 0.0010242224986130707
+        },
+        {
+          "floor": 5,
+          "zM": 18.0,
+          "meanDxM": 0.006393106895596204,
+          "meanDyM": 0.010602861951387795,
+          "maxHorizontalM": 0.017060867394833767,
+          "minDzM": -0.0063124393955247046,
+          "maxStoreyDriftRatio": 0.0009654462284998499
+        },
+        {
+          "floor": 6,
+          "zM": 21.6,
+          "meanDxM": 0.007714684461380781,
+          "meanDyM": 0.01285667219714234,
+          "maxHorizontalM": 0.020313971359416375,
+          "minDzM": -0.007360209135697988,
+          "maxStoreyDriftRatio": 0.0009044602003475167
+        },
+        {
+          "floor": 7,
+          "zM": 25.2,
+          "meanDxM": 0.00901006172447091,
+          "meanDyM": 0.01503037502500578,
+          "maxHorizontalM": 0.0233517784180886,
+          "minDzM": -0.008336920203420571,
+          "maxStoreyDriftRatio": 0.0008443702660865016
+        },
+        {
+          "floor": 8,
+          "zM": 28.8,
+          "meanDxM": 0.010272960993246297,
+          "meanDyM": 0.017118654106535718,
+          "maxHorizontalM": 0.026179428916927865,
+          "minDzM": -0.009242781021940904,
+          "maxStoreyDriftRatio": 0.0007858025355498041
+        },
+        {
+          "floor": 9,
+          "zM": 32.4,
+          "meanDxM": 0.01149768945666671,
+          "meanDyM": 0.01911786458640824,
+          "maxHorizontalM": 0.028804504708595143,
+          "minDzM": -0.01007799619952668,
+          "maxStoreyDriftRatio": 0.000729406091205513
+        },
+        {
+          "floor": 10,
+          "zM": 36.0,
+          "meanDxM": 0.01267747187535598,
+          "meanDyM": 0.021026919442112824,
+          "maxHorizontalM": 0.031236593095174188,
+          "minDzM": -0.01084274746548708,
+          "maxStoreyDriftRatio": 0.0006872278483164718
+        },
+        {
+          "floor": 11,
+          "zM": 39.6,
+          "meanDxM": 0.01399806911241067,
+          "meanDyM": 0.022980908822326486,
+          "maxHorizontalM": 0.033818345293716294,
+          "minDzM": -0.01166627387770041,
+          "maxStoreyDriftRatio": 0.0007179480756114711
+        },
+        {
+          "floor": 12,
+          "zM": 43.2,
+          "meanDxM": 0.01525563022520429,
+          "meanDyM": 0.02481692385766697,
+          "maxHorizontalM": 0.036167638727726825,
+          "minDzM": -0.012406874880213987,
+          "maxStoreyDriftRatio": 0.0006568699189921852
+        },
+        {
+          "floor": 13,
+          "zM": 46.800000000000004,
+          "meanDxM": 0.016433192795570664,
+          "meanDyM": 0.026531717183161635,
+          "maxHorizontalM": 0.03829018384266876,
+          "minDzM": -0.013064720381170822,
+          "maxStoreyDriftRatio": 0.0005943532068827417
+        },
+        {
+          "floor": 14,
+          "zM": 50.4,
+          "meanDxM": 0.017533491911255975,
+          "meanDyM": 0.028121285126519544,
+          "maxHorizontalM": 0.0401859185911044,
+          "minDzM": -0.01363995974023027,
+          "maxStoreyDriftRatio": 0.0005642209321816098
+        },
+        {
+          "floor": 15,
+          "zM": 54.0,
+          "meanDxM": 0.018553483818660264,
+          "meanDyM": 0.02958239954497141,
+          "maxHorizontalM": 0.041855144328797354,
+          "minDzM": -0.01413272354975015,
+          "maxStoreyDriftRatio": 0.0005458708386492475
+        },
+        {
+          "floor": 16,
+          "zM": 57.6,
+          "meanDxM": 0.01948963491223778,
+          "meanDyM": 0.030912209222272287,
+          "maxHorizontalM": 0.04329777767290714,
+          "minDzM": -0.014543125061035212,
+          "maxStoreyDriftRatio": 0.0005274829558625754
+        },
+        {
+          "floor": 17,
+          "zM": 61.2,
+          "meanDxM": 0.020339359508940075,
+          "meanDyM": 0.03210820727140536,
+          "maxHorizontalM": 0.044513260609195145,
+          "minDzM": -0.014871259333171544,
+          "maxStoreyDriftRatio": 0.0005087856107818151
+        },
+        {
+          "floor": 18,
+          "zM": 64.8,
+          "meanDxM": 0.021100115240299713,
+          "meanDyM": 0.033168253814783256,
+          "maxHorizontalM": 0.045500761743402056,
+          "minDzM": -0.015117201240676774,
+          "maxStoreyDriftRatio": 0.0004912565204480339
+        },
+        {
+          "floor": 19,
+          "zM": 68.4,
+          "meanDxM": 0.02176975961874087,
+          "meanDyM": 0.034092361878306526,
+          "maxHorizontalM": 0.04626193191338161,
+          "minDzM": -0.015281030567459358,
+          "maxStoreyDriftRatio": 0.0004780757342757965
+        },
+        {
+          "floor": 20,
+          "zM": 72.0,
+          "meanDxM": 0.022341953854519273,
+          "meanDyM": 0.034883851628069666,
+          "maxHorizontalM": 0.046803728414864354,
+          "minDzM": -0.01536282938718235,
+          "maxStoreyDriftRatio": 0.0004836262907092852
+        }
+      ]
+    }
+  ],
+  "negativeBraceCase": {
+    "case": "12-storey-missing-east-face-braces",
+    "storeys": 12,
+    "nodeCount": 455,
+    "elementCount": 1259,
+    "braceCount": 144,
+    "status": "converged",
+    "gravityReturnCode": 0,
+    "combinedReturnCode": 0,
+    "activeBeamIncluded": true,
+    "robotIncluded": true,
+    "deckLoadedAreaM2": 10296.0,
+    "appliedForceN": [
+      518400.0000000046,
+      777599.9999999948,
+      -40123193.194396414
+    ],
+    "baseReactionN": [
+      -518399.999999947,
+      -777600.0000001012,
+      40123193.19439636
+    ],
+    "forceBalanceRelative": 2.651922633233456e-15,
+    "roofMaxHorizontalM": 0.01927694630340597,
+    "maxStoreyDriftRatio": 0.0007199964450399857,
+    "braceAxialForceRangeN": [
+      -92739.6483822818,
+      26286.00641407146
+    ],
+    "floorProfiles": [
+      {
+        "floor": 1,
+        "zM": 3.6,
+        "meanDxM": 0.0006398754114563111,
+        "meanDyM": 0.0010687357771959605,
+        "maxHorizontalM": 0.001677826260016609,
+        "minDzM": -0.0008635046896675741,
+        "maxStoreyDriftRatio": 0.0004660628500046136
+      },
+      {
+        "floor": 2,
+        "zM": 7.2,
+        "meanDxM": 0.0014428305978658918,
+        "meanDyM": 0.0028782192954571032,
+        "maxHorizontalM": 0.004259595484977558,
+        "minDzM": -0.0016547300586783986,
+        "maxStoreyDriftRatio": 0.0007199964450399857
+      },
+      {
+        "floor": 3,
+        "zM": 10.8,
+        "meanDxM": 0.002205241544637967,
+        "meanDyM": 0.00472978969768501,
+        "maxHorizontalM": 0.0068349531742509795,
+        "minDzM": -0.002373652001226616,
+        "maxStoreyDriftRatio": 0.0007178280759074814
+      },
+      {
+        "floor": 4,
+        "zM": 14.4,
+        "meanDxM": 0.0029115989215132945,
+        "meanDyM": 0.006457599948244963,
+        "maxHorizontalM": 0.009210306219509098,
+        "minDzM": -0.0030203118557400603,
+        "maxStoreyDriftRatio": 0.0006615679459380802
+      },
+      {
+        "floor": 5,
+        "zM": 18.0,
+        "meanDxM": 0.003559327452806494,
+        "meanDyM": 0.008021587567241547,
+        "maxHorizontalM": 0.0113411802817811,
+        "minDzM": -0.003594757007577573,
+        "maxStoreyDriftRatio": 0.0005932107143732003
+      },
+      {
+        "floor": 6,
+        "zM": 21.6,
+        "meanDxM": 0.004147010519913287,
+        "meanDyM": 0.009411980686184465,
+        "maxHorizontalM": 0.013218280639210059,
+        "minDzM": -0.00409704238103831,
+        "maxStoreyDriftRatio": 0.0005224397746052604
+      },
+      {
+        "floor": 7,
+        "zM": 25.2,
+        "meanDxM": 0.0046733932072981444,
+        "meanDyM": 0.010626222555844838,
+        "maxHorizontalM": 0.014840303231475347,
+        "minDzM": -0.004527224984376727,
+        "maxStoreyDriftRatio": 0.00045139405669072013
+      },
+      {
+        "floor": 8,
+        "zM": 28.8,
+        "meanDxM": 0.005137437485003973,
+        "meanDyM": 0.01166374926335564,
+        "maxHorizontalM": 0.016207822864192135,
+        "minDzM": -0.004885360226657997,
+        "maxStoreyDriftRatio": 0.00038055102605049474
+      },
+      {
+        "floor": 9,
+        "zM": 32.4,
+        "meanDxM": 0.005538485067986396,
+        "meanDyM": 0.012525597884240347,
+        "maxHorizontalM": 0.017323476694232634,
+        "minDzM": -0.00517150046185288,
+        "maxStoreyDriftRatio": 0.0003158950899457956
+      },
+      {
+        "floor": 10,
+        "zM": 36.0,
+        "meanDxM": 0.005875886931501882,
+        "meanDyM": 0.01321786242748571,
+        "maxHorizontalM": 0.01818577114269378,
+        "minDzM": -0.005385696337372112,
+        "maxStoreyDriftRatio": 0.0002623218607657255
+      },
+      {
+        "floor": 11,
+        "zM": 39.6,
+        "meanDxM": 0.00619016222167838,
+        "meanDyM": 0.013778601014419424,
+        "maxHorizontalM": 0.01889388757061258,
+        "minDzM": -0.005554540267224101,
+        "maxStoreyDriftRatio": 0.00021276791577452576
+      },
+      {
+        "floor": 12,
+        "zM": 43.2,
+        "meanDxM": 0.006436032684341592,
+        "meanDyM": 0.014146868574462632,
+        "maxHorizontalM": 0.01927694630340597,
+        "minDzM": -0.005638381673844856,
+        "maxStoreyDriftRatio": 0.000222902018924635
+      }
+    ],
+    "roofDisplacementRatioToNominal": 1.1064929063759061,
+    "topStoreyDriftRatioToNominal": 1.0988012032442245
+  },
+  "activeBeam": {
+    "case": "active-beam-two-seats",
+    "status": "converged",
+    "solverReturnCode": 0,
+    "spanM": 5.6,
+    "massKg": 638.5629599999999,
+    "seatReactionsN": [
+      3132.15131880002,
+      3132.15131880004
+    ],
+    "midspanDeflectionM": 0.00012849393769714381,
+    "closedFormDeflectionM": 0.00012849393769714322,
+    "closedFormRelativeError": 4.6407729855124915e-15
+  },
+  "negativeSeatCase": {
+    "case": "active-beam-missing-right-seat",
+    "status": "unstable-mechanism",
+    "solverReturnCode": -3,
+    "kinematicNullMode": "rotation about left-seat global Y axis",
+    "unbalancedGravityMomentNm": 17540.047385279995,
+    "displacementResultsSuppressed": true
+  }
+}

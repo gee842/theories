@@ -1,0 +1,9 @@
+{
+  "numerical_gate_passed": false,
+  "block_transfer_load": true,
+  "reasons": [
+    "stale_world_revision",
+    "structural_model_not_passed"
+  ],
+  "physical_release_authorized": false
+}

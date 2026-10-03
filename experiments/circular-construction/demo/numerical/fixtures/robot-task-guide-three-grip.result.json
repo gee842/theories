@@ -1,0 +1,288 @@
+{
+  "actuator_status": "included",
+  "actuator_torques": [
+    {
+      "id": "climber-1:limb-0:shoulder:x",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": -205.6842026484125,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-0:shoulder:y",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": -34.809768750715165,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-0:shoulder:z",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": -32.949178617741055,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-0:elbow:x",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": -159.37542843984338,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "climber-1:limb-0:elbow:y",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": 13.612580000762849,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "climber-1:limb-0:elbow:z",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": 39.41468328354465,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "climber-1:limb-1:shoulder:x",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": -51.43911703799449,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-1:shoulder:y",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": -15.03537160877765,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-1:shoulder:z",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": 0,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-1:elbow:x",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": -17.500021232014706,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "climber-1:limb-1:elbow:y",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": -64.21867570992626,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "climber-1:limb-1:elbow:z",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": 0,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "climber-1:limb-2:shoulder:x",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": 153.73996238991083,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-2:shoulder:y",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": 118.47406633915801,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-2:shoulder:z",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": 32.949178617741055,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-2:elbow:x",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": 149.60055218913755,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "climber-1:limb-2:elbow:y",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": -169.74961796618132,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "climber-1:limb-2:elbow:z",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": -39.41468328354465,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "climber-1:limb-3:shoulder:x",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": 152.23903593659452,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-3:shoulder:y",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": -102.08619615941154,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-3:shoulder:z",
+      "lower_Nm": -300.2221399786054,
+      "torque_Nm": 0,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "climber-1:limb-3:elbow:x",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": 114.44070860069957,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "climber-1:limb-3:elbow:y",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": 150.14601205174546,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "climber-1:limb-3:elbow:z",
+      "lower_Nm": -207.84609690826528,
+      "torque_Nm": 0,
+      "upper_Nm": 207.84609690826528
+    }
+  ],
+  "contact_wrenches": [
+    {
+      "force_N": [
+        0,
+        113.61785730255536,
+        0
+      ],
+      "frame_reaction_force_N": [
+        0,
+        -113.61785730255536,
+        0
+      ],
+      "frame_reaction_moment_Nm": [
+        138.5640646055102,
+        0,
+        0
+      ],
+      "id": "climber-1:rail-A-climber-1-work-0",
+      "moment_Nm": [
+        -138.5640646055102,
+        0,
+        0
+      ]
+    },
+    {
+      "force_N": [
+        0,
+        -113.61785730255536,
+        528.5649485857696
+      ],
+      "frame_reaction_force_N": [
+        0,
+        113.61785730255536,
+        -528.5649485857696
+      ],
+      "frame_reaction_moment_Nm": [
+        138.5640646055102,
+        0,
+        0
+      ],
+      "id": "climber-1:rail-A-climber-1-work-2",
+      "moment_Nm": [
+        -138.5640646055102,
+        0,
+        0
+      ]
+    },
+    {
+      "force_N": [
+        0,
+        0,
+        472.0550514142301
+      ],
+      "frame_reaction_force_N": [
+        0,
+        0,
+        -472.0550514142301
+      ],
+      "frame_reaction_moment_Nm": [
+        138.5640646055102,
+        0,
+        0
+      ],
+      "id": "climber-1:rail-A-climber-1-work-3",
+      "moment_Nm": [
+        -138.5640646055102,
+        0,
+        0
+      ]
+    }
+  ],
+  "equilibrium_residual": {
+    "force_N": [
+      0,
+      0,
+      0
+    ],
+    "max_abs": 1.1368683772161603e-13,
+    "moment_Nm": [
+      0,
+      1.1368683772161603e-13,
+      0
+    ]
+  },
+  "external_wrench": {
+    "force_N": [
+      0,
+      0,
+      -1000.6199999999997
+    ],
+    "moment_Nm": [
+      538.3994797032905,
+      -32.775740359492815,
+      0
+    ]
+  },
+  "input_fingerprint": "sha256:9d8afc750f23f182100619c48415986cf5511aaf459848e36fa69371d7a8214c",
+  "limitations": [
+    "Capacity numbers remain declared assumptions; no hardware qualification is performed.",
+    "Box bounds do not model coupled friction, clamp closure, stiffness or slip.",
+    "Actuator torques use supplied fixed-pose Jacobian rows only; absent rows are outside scope or unverified when requested.",
+    "Kinematics, collisions, frame reactions adequacy and dynamics are outside this check.",
+    "Missing limits are relaxed only to produce a required-wrench witness; they cannot produce a passed result.",
+    "Minimum normalized L1 witness uses 1 N and 1 N m scales; it is not a per-contact capacity optimum."
+  ],
+  "max_bound_violation": 0,
+  "missing_capacities": [],
+  "model_version": "contact-box-static/1.0.0",
+  "numerical_tolerance": {
+    "force_N": 1e-7,
+    "moment_Nm": 1e-7
+  },
+  "reason": "Equilibrium witness checked under declared limits.",
+  "request_id": "beam-A-guide-climber-1",
+  "request_sha256": "5f3570053a27391235c8455f4957848805cb3b9bb3d053c4abd165e68c59baff",
+  "required_aggregate_support_wrench": {
+    "force_N": [
+      0,
+      0,
+      1000.6199999999997
+    ],
+    "moment_about_origin_Nm": [
+      -538.3994797032905,
+      32.775740359492815,
+      0
+    ]
+  },
+  "schema_version": 1,
+  "scope": "quasi-static global Cartesian box contact wrench equilibrium",
+  "solver": {
+    "highs_status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "name": "scipy-highs",
+    "numpy_version": "2.3.3",
+    "scipy_version": "1.16.2",
+    "status": "feasible"
+  },
+  "status": "passed",
+  "world_revision": 10
+}

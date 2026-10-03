@@ -1,0 +1,147 @@
+{
+  "status": "analytical planning only; no whole-building simulation",
+  "source_sha256": "a3729ae31773bdfed9086e091f66d62c38c7935894f923a21aa586a415115f59",
+  "geometry_source": "production/blender/build_assets.py",
+  "actual_authored_geometry": {
+    "storeys": 20,
+    "height_m": 72,
+    "footprint_m2": 864,
+    "grid_nodes_per_floor": 35,
+    "columns": 700,
+    "horizontal_beams_installed": 1159,
+    "lifted_active_beam": 1,
+    "floor_cassettes": 286,
+    "facade_modules": 480,
+    "core_storeys": 16,
+    "core_wall_panels_including_lintel": 144,
+    "yard_beams": 36,
+    "yard_decks": 12
+  },
+  "hypothetical_completed_20_storey_catalogue": {
+    "columns": 700,
+    "horizontal_beams": 1160,
+    "braces": 320,
+    "floor_cassettes": 480,
+    "facade_modules": 1200,
+    "core_wall_panels_including_lintel": 180,
+    "stair_flights_and_landings_assumed_modules": 80
+  },
+  "assumed_individual_crane_lifts": 4120,
+  "payloads": {
+    "steel_density_assumption_kg_m3": 7850,
+    "concrete_density_assumption_kg_m3": 2400,
+    "beam_x_profile_kg": 710.6598719999998,
+    "beam_y_profile_kg": 616.0453919999999,
+    "lower_column_profile_kg": 920.5412400000001,
+    "upper_column_profile_kg": 776.4152399999988,
+    "core_panel_concrete_only_kg": [
+      9217.44,
+      9217.44,
+      9217.44,
+      9217.44,
+      10213.919999999998,
+      10213.919999999998,
+      7951.910400000001,
+      7951.910400000001,
+      649.152
+    ],
+    "deck_solid_geometry_volume_m3": 3.1222889999999994,
+    "deck_mass_at_assumed_2400kg_m3": 7493.493599999999,
+    "mass_caveat": "Profile masses exclude connectors/coatings; panels exclude frames/inserts; Deck material has no declared density or engineered layup, so its mass is a conditional solid-slab proxy."
+  },
+  "simulation_evidence": {
+    "climb_seconds_per_3_6m": 199.39600000022398,
+    "climb_mean_m_s": 0.01805418349008327,
+    "20_storey_ascent_extrapolated_minutes": 66.46533333340798,
+    "local_beam_episode_seconds": 24.0,
+    "local_episode_complete_fastened_cycle": false,
+    "all_horizontal_beam_local_episodes_serial_hours": 7.733333333333333,
+    "climb_warning": "One storey tested on ideal rail locks; twenty-storey ascent is arithmetic extrapolation, not tested."
+  },
+  "scenarios": [
+    {
+      "target_calendar_days": 1,
+      "hours_per_day": 10,
+      "productive_utilization": 0.65,
+      "available_productive_seconds": 23400.0,
+      "required_lift_takt_seconds": 5.679611650485437,
+      "parallel_crane_lower_bound_at_180s": 32,
+      "parallel_crane_lower_bound_at_300s": 53,
+      "robot_lower_bound_beam_end_work_only": 3,
+      "warning": "Robot bound omits all non-beam work, horizontal travel, battery, tool changes and safety separation."
+    },
+    {
+      "target_calendar_days": 3,
+      "hours_per_day": 10,
+      "productive_utilization": 0.65,
+      "available_productive_seconds": 70200.0,
+      "required_lift_takt_seconds": 17.038834951456312,
+      "parallel_crane_lower_bound_at_180s": 11,
+      "parallel_crane_lower_bound_at_300s": 18,
+      "robot_lower_bound_beam_end_work_only": 2,
+      "warning": "Robot bound omits all non-beam work, horizontal travel, battery, tool changes and safety separation."
+    },
+    {
+      "target_calendar_days": 7,
+      "hours_per_day": 10,
+      "productive_utilization": 0.65,
+      "available_productive_seconds": 163800.0,
+      "required_lift_takt_seconds": 39.75728155339806,
+      "parallel_crane_lower_bound_at_180s": 5,
+      "parallel_crane_lower_bound_at_300s": 8,
+      "robot_lower_bound_beam_end_work_only": 2,
+      "warning": "Robot bound omits all non-beam work, horizontal travel, battery, tool changes and safety separation."
+    },
+    {
+      "target_calendar_days": 14,
+      "hours_per_day": 10,
+      "productive_utilization": 0.65,
+      "available_productive_seconds": 327600.0,
+      "required_lift_takt_seconds": 79.51456310679612,
+      "parallel_crane_lower_bound_at_180s": 3,
+      "parallel_crane_lower_bound_at_300s": 4,
+      "robot_lower_bound_beam_end_work_only": 2,
+      "warning": "Robot bound omits all non-beam work, horizontal travel, battery, tool changes and safety separation."
+    }
+  ],
+  "single_crane_days_at_10h_and_65percent_utilization": {
+    "24": 4.225641025641026,
+    "180": 31.692307692307693,
+    "300": 52.82051282051282
+  },
+  "crane_cycle_assumptions": {
+    "180_seconds": "optimistic complete pick, travel, set, release and empty return; unvalidated",
+    "300_seconds": "sensitivity case; unvalidated",
+    "24_seconds": "invalid as complete crane cycle: local prepositioned beam simulation only"
+  },
+  "crane_geometry_constraints": {
+    "crane_center_xy_m": [
+      24,
+      -12
+    ],
+    "illustrated_max_long_jib_radius_m": 45,
+    "furthest_building_corner_radius_m": 48.373546489791295,
+    "furthest_staged_beam_endpoint_radius_m": 53.45802091361033,
+    "note": "Illustrated jib reaches x=-21 from x=24: 45m. Even if slewing is assumed, furthest building corner and beam-yard endpoint exceed this radius. No capacity chart, slew or full-site travel simulation exists."
+  },
+  "robot_climb_amortization": {
+    "beam_tasks_per_storey": 58,
+    "one_pair_one_climb_per_storey_then_58_local_episodes_seconds": 1591.396000000224,
+    "robot_lower_bound_24s_takt_one_climb_per_task": 20,
+    "note": "20 robots assumes ten pairs cycling through one climb per beam task; batching tasks per floor can reduce this overhead. Neither lateral transfer nor coordinated multi-robot construction is tested."
+  },
+  "excluded_scope": [
+    "foundation and crane erection",
+    "rail installation and horizontal robot transfer",
+    "manufacturing and inbound delivery",
+    "rigging and inspection",
+    "complete mechanical fastening",
+    "MEP, envelope sealing, roof, fire protection, fit-out",
+    "weather, clashes, permits, certification, fault recovery"
+  ],
+  "checks": {
+    "structural_beam_primitives_equal_1859": true,
+    "deck_count_equal_286": true,
+    "core_panels_per_storey_equal_9": true
+  }
+}

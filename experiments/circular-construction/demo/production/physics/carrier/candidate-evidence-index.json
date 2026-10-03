@@ -1,0 +1,13 @@
+{
+  "canonicalRunner": "finite_grip_manufactured.py",
+  "controller": "finite_grip_continuous.py",
+  "loadPlanner": "contact_load_allocator.py",
+  "nominal": "candidate-manufactured-step-92.928kg-mu0.65-sx0.16-metrics.json",
+  "nominalTrace": "candidate-manufactured-step-92.928kg-mu0.65-sx0.16-trace.json",
+  "injectedClosureFault": "candidate-continuous-fault-limb-92.928kg-mu0.65-sx0.16-metrics.json",
+  "proposal": "six-axis-proposal.json",
+  "documentation": "SIX-AXIS-CANDIDATE.md",
+  "acceptanceTest": "test_candidate_acceptance.py",
+  "productionAssetsUpdated": false,
+  "status": "Accepted local92.928kg beam step and supported injected-fault hold; remaining scope and hardware assumptions explicitly unqualified"
+}

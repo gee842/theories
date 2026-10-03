@@ -1,0 +1,991 @@
+{
+  "minActiveSupports": 3,
+  "minLoadedSupports": 3,
+  "maxTorqueNm": 440.5762096515809,
+  "maxReactionN": 971.8069707807233,
+  "maxCaptureErrorM": 5.514259366039899e-05,
+  "maxCaptureSpeedMps": 0.005668433814430329,
+  "maxSupportErrorM": 6.166452620808712e-05,
+  "maxJointLimitViolationRad": 0.0,
+  "maxChassisTiltRad": 0.00025803502647879734,
+  "maxSolverIterations": 1,
+  "maxConstraintResidual": 4.696698801236064e-07,
+  "minUpwardSupports": 3,
+  "minSupportVerticalN": 320.0165935719701,
+  "maxChassisSpeedMps": 0.15011810559947772,
+  "scenario": "nominal",
+  "mujocoVersion": "3.14.0",
+  "complete": true,
+  "cyclesCompleted": 12,
+  "durationSeconds": 199.39600000022398,
+  "chassisAdvanceM": 3.5999343828540544,
+  "settledAdvanceM": 3.5999999998814616,
+  "finalChassisPosition": [
+    5.340049279740487e-07,
+    3.350581526002291e-13,
+    4.799934382854055
+  ],
+  "finalRungs": {
+    "fl": 12,
+    "fr": 12,
+    "rl": 12,
+    "rr": 12
+  },
+  "finalReactionN": {
+    "fl": [
+      417.3116972114921,
+      -1.5541456620410288e-08,
+      336.0398786043677
+    ],
+    "fr": [
+      417.31169710314845,
+      -2.283271349035219e-08,
+      336.03987862718435
+    ],
+    "rl": [
+      -417.31169709913235,
+      -2.3960890675662267e-08,
+      335.94512147230097
+    ],
+    "rr": [
+      -417.311697193622,
+      -3.095909081549538e-08,
+      335.94512148935144
+    ]
+  },
+  "massKg": 137.0,
+  "weightN": 1343.97,
+  "captureCount": 48,
+  "releaseCount": 48,
+  "rejectedCaptureErrorM": null,
+  "recovered": false,
+  "abortReason": null,
+  "finiteState": true,
+  "fixedAnchorsUnchanged": true,
+  "motorMechanicalWorkJ": 5003.393351057787,
+  "railConstraintWorkJ": -1.3855567469772978,
+  "potentialEnergyRiseJ": 4838.220484675223,
+  "warnings": {
+    "mjtWarning.mjWARN_INERTIA": 0,
+    "mjtWarning.mjWARN_CONTACTFULL": 0,
+    "mjtWarning.mjWARN_CNSTRFULL": 0,
+    "mjtWarning.mjWARN_BADQPOS": 0,
+    "mjtWarning.mjWARN_BADQVEL": 0,
+    "mjtWarning.mjWARN_BADQACC": 0,
+    "mjtWarning.mjWARN_BADCTRL": 0
+  },
+  "events": [
+    {
+      "time": 1.500000000000001,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 0,
+      "toRung": 1
+    },
+    {
+      "time": 4.001999999999781,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 1,
+      "errorM": 4.622430706734978e-05,
+      "speedMps": 0.005099791907373855,
+      "recovery": false
+    },
+    {
+      "time": 4.603999999999715,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 0,
+      "toRung": 1
+    },
+    {
+      "time": 7.105999999999439,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 1,
+      "errorM": 4.492503693718151e-05,
+      "speedMps": 0.005096421316835108,
+      "recovery": false
+    },
+    {
+      "time": 7.707999999999373,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 0,
+      "toRung": 1
+    },
+    {
+      "time": 10.208000000000078,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 1,
+      "errorM": 5.37873491767988e-05,
+      "speedMps": 0.005667733091774873,
+      "recovery": false
+    },
+    {
+      "time": 10.808000000000279,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 0,
+      "toRung": 1
+    },
+    {
+      "time": 13.308000000001114,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 1,
+      "errorM": 5.401805255696222e-05,
+      "speedMps": 0.005664055014500701,
+      "recovery": false
+    },
+    {
+      "time": 13.908000000001314,
+      "event": "raise-start",
+      "cycle": 1
+    },
+    {
+      "time": 17.910000000000952,
+      "event": "raise-complete",
+      "cycle": 1,
+      "chassisZ": 1.4999343567295271,
+      "advanceM": 0.2999343567295272
+    },
+    {
+      "time": 17.910000000000952,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 1,
+      "toRung": 2
+    },
+    {
+      "time": 20.411999999999566,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 2,
+      "errorM": 4.622430709544761e-05,
+      "speedMps": 0.005099791909564644,
+      "recovery": false
+    },
+    {
+      "time": 21.013999999999232,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 1,
+      "toRung": 2
+    },
+    {
+      "time": 23.515999999997845,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 2,
+      "errorM": 4.492503683501632e-05,
+      "speedMps": 0.005096421398723935,
+      "recovery": false
+    },
+    {
+      "time": 24.11799999999751,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 1,
+      "toRung": 2
+    },
+    {
+      "time": 26.619999999996125,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 2,
+      "errorM": 4.4636599705838846e-05,
+      "speedMps": 0.005099087391634724,
+      "recovery": false
+    },
+    {
+      "time": 27.22199999999579,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 1,
+      "toRung": 2
+    },
+    {
+      "time": 29.723999999994405,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 2,
+      "errorM": 4.4984609372245746e-05,
+      "speedMps": 0.005095384414688472,
+      "recovery": false
+    },
+    {
+      "time": 30.32599999999407,
+      "event": "raise-start",
+      "cycle": 2
+    },
+    {
+      "time": 34.325999999995986,
+      "event": "raise-complete",
+      "cycle": 2,
+      "chassisZ": 1.7999343556787595,
+      "advanceM": 0.5999343556787595
+    },
+    {
+      "time": 34.325999999995986,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 2,
+      "toRung": 3
+    },
+    {
+      "time": 36.82599999999904,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 3,
+      "errorM": 5.514259365937621e-05,
+      "speedMps": 0.00566843381442907,
+      "recovery": false
+    },
+    {
+      "time": 37.425999999999775,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 2,
+      "toRung": 3
+    },
+    {
+      "time": 39.92600000000283,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 3,
+      "errorM": 5.400016486701077e-05,
+      "speedMps": 0.005665085376992663,
+      "recovery": false
+    },
+    {
+      "time": 40.52600000000356,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 2,
+      "toRung": 3
+    },
+    {
+      "time": 43.02600000000662,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 3,
+      "errorM": 5.378734916547842e-05,
+      "speedMps": 0.005667733091110405,
+      "recovery": false
+    },
+    {
+      "time": 43.62600000000735,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 2,
+      "toRung": 3
+    },
+    {
+      "time": 46.12600000001041,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 3,
+      "errorM": 5.401805254571933e-05,
+      "speedMps": 0.005664055013858067,
+      "recovery": false
+    },
+    {
+      "time": 46.72600000001114,
+      "event": "raise-start",
+      "cycle": 3
+    },
+    {
+      "time": 50.72600000001603,
+      "event": "raise-complete",
+      "cycle": 3,
+      "chassisZ": 2.0999343556787595,
+      "advanceM": 0.8999343556787596
+    },
+    {
+      "time": 50.72600000001603,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 3,
+      "toRung": 4
+    },
+    {
+      "time": 53.226000000019084,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 4,
+      "errorM": 5.514259366039899e-05,
+      "speedMps": 0.005668433814430329,
+      "recovery": false
+    },
+    {
+      "time": 53.82600000001982,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 3,
+      "toRung": 4
+    },
+    {
+      "time": 56.32600000002287,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 4,
+      "errorM": 5.400016476614285e-05,
+      "speedMps": 0.005665085457945,
+      "recovery": false
+    },
+    {
+      "time": 56.926000000023606,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 3,
+      "toRung": 4
+    },
+    {
+      "time": 59.42600000002666,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 4,
+      "errorM": 5.3787349164714305e-05,
+      "speedMps": 0.005667733091152067,
+      "recovery": false
+    },
+    {
+      "time": 60.026000000027395,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 3,
+      "toRung": 4
+    },
+    {
+      "time": 62.52600000003045,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 4,
+      "errorM": 5.401805254657537e-05,
+      "speedMps": 0.005664055013899824,
+      "recovery": false
+    },
+    {
+      "time": 63.12600000003118,
+      "event": "raise-start",
+      "cycle": 4
+    },
+    {
+      "time": 67.12800000002495,
+      "event": "raise-complete",
+      "cycle": 4,
+      "chassisZ": 2.3999343567295273,
+      "advanceM": 1.1999343567295273
+    },
+    {
+      "time": 67.12800000002495,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 4,
+      "toRung": 5
+    },
+    {
+      "time": 69.63000000001912,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 5,
+      "errorM": 4.6224307113190825e-05,
+      "speedMps": 0.0050997919107065234,
+      "recovery": false
+    },
+    {
+      "time": 70.23200000001772,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 4,
+      "toRung": 5
+    },
+    {
+      "time": 72.73400000001189,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 5,
+      "errorM": 4.492503695509861e-05,
+      "speedMps": 0.005096421321241139,
+      "recovery": false
+    },
+    {
+      "time": 73.33600000001049,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 4,
+      "toRung": 5
+    },
+    {
+      "time": 75.83800000000466,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 5,
+      "errorM": 4.463659972513173e-05,
+      "speedMps": 0.005099087392910114,
+      "recovery": false
+    },
+    {
+      "time": 76.44000000000325,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 4,
+      "toRung": 5
+    },
+    {
+      "time": 78.94199999999742,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 5,
+      "errorM": 4.498460938963332e-05,
+      "speedMps": 0.005095384415897786,
+      "recovery": false
+    },
+    {
+      "time": 79.54399999999602,
+      "event": "raise-start",
+      "cycle": 5
+    },
+    {
+      "time": 83.54599999998669,
+      "event": "raise-complete",
+      "cycle": 5,
+      "chassisZ": 2.6999343567295275,
+      "advanceM": 1.4999343567295276
+    },
+    {
+      "time": 83.54599999998669,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 5,
+      "toRung": 6
+    },
+    {
+      "time": 86.04799999998086,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 6,
+      "errorM": 4.6224307113150215e-05,
+      "speedMps": 0.005099791910824321,
+      "recovery": false
+    },
+    {
+      "time": 86.64999999997946,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 5,
+      "toRung": 6
+    },
+    {
+      "time": 89.15199999997363,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 6,
+      "errorM": 4.4925036905489855e-05,
+      "speedMps": 0.005096421358964643,
+      "recovery": false
+    },
+    {
+      "time": 89.75399999997222,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 5,
+      "toRung": 6
+    },
+    {
+      "time": 92.25599999996639,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 6,
+      "errorM": 4.463659972484148e-05,
+      "speedMps": 0.005099087392913725,
+      "recovery": false
+    },
+    {
+      "time": 92.85799999996499,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 5,
+      "toRung": 6
+    },
+    {
+      "time": 95.35999999995916,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 6,
+      "errorM": 4.498460939038632e-05,
+      "speedMps": 0.005095384415908398,
+      "recovery": false
+    },
+    {
+      "time": 95.96199999995775,
+      "event": "raise-start",
+      "cycle": 6
+    },
+    {
+      "time": 99.96399999994843,
+      "event": "raise-complete",
+      "cycle": 6,
+      "chassisZ": 2.999934356729527,
+      "advanceM": 1.799934356729527
+    },
+    {
+      "time": 99.96399999994843,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 6,
+      "toRung": 7
+    },
+    {
+      "time": 102.4659999999426,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 7,
+      "errorM": 4.622430711417618e-05,
+      "speedMps": 0.005099791910726873,
+      "recovery": false
+    },
+    {
+      "time": 103.0679999999412,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 6,
+      "toRung": 7
+    },
+    {
+      "time": 105.56999999993536,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 7,
+      "errorM": 4.4925036850516475e-05,
+      "speedMps": 0.005096421404031702,
+      "recovery": false
+    },
+    {
+      "time": 106.17199999993396,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 6,
+      "toRung": 7
+    },
+    {
+      "time": 108.67399999992813,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 7,
+      "errorM": 4.463659972540674e-05,
+      "speedMps": 0.005099087392908066,
+      "recovery": false
+    },
+    {
+      "time": 109.27599999992673,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 6,
+      "toRung": 7
+    },
+    {
+      "time": 111.7779999999209,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 7,
+      "errorM": 4.498460938999302e-05,
+      "speedMps": 0.005095384415880409,
+      "recovery": false
+    },
+    {
+      "time": 112.37999999991949,
+      "event": "raise-start",
+      "cycle": 7
+    },
+    {
+      "time": 116.38199999991016,
+      "event": "raise-complete",
+      "cycle": 7,
+      "chassisZ": 3.299934356729527,
+      "advanceM": 2.099934356729527
+    },
+    {
+      "time": 116.38199999991016,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 7,
+      "toRung": 8
+    },
+    {
+      "time": 118.88399999990433,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 8,
+      "errorM": 4.622430711336056e-05,
+      "speedMps": 0.005099791910745797,
+      "recovery": false
+    },
+    {
+      "time": 119.48599999990293,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 7,
+      "toRung": 8
+    },
+    {
+      "time": 121.9879999998971,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 8,
+      "errorM": 4.492503686072217e-05,
+      "speedMps": 0.005096421394651107,
+      "recovery": false
+    },
+    {
+      "time": 122.5899999998957,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 7,
+      "toRung": 8
+    },
+    {
+      "time": 125.09199999988986,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 8,
+      "errorM": 4.463659972472958e-05,
+      "speedMps": 0.005099087392917787,
+      "recovery": false
+    },
+    {
+      "time": 125.69399999988846,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 7,
+      "toRung": 8
+    },
+    {
+      "time": 128.195999999884,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 8,
+      "errorM": 4.498460938502085e-05,
+      "speedMps": 0.005095384415619288,
+      "recovery": false
+    },
+    {
+      "time": 128.79599999988687,
+      "event": "raise-start",
+      "cycle": 8
+    },
+    {
+      "time": 132.79599999990597,
+      "event": "raise-complete",
+      "cycle": 8,
+      "chassisZ": 3.5999343556787595,
+      "advanceM": 2.3999343556787593
+    },
+    {
+      "time": 132.79599999990597,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 8,
+      "toRung": 9
+    },
+    {
+      "time": 135.2959999999179,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 9,
+      "errorM": 5.514259361597683e-05,
+      "speedMps": 0.0056684338119331835,
+      "recovery": false
+    },
+    {
+      "time": 135.89599999992078,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 8,
+      "toRung": 9
+    },
+    {
+      "time": 138.3959999999327,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 9,
+      "errorM": 5.400016482684442e-05,
+      "speedMps": 0.005665085370964933,
+      "recovery": false
+    },
+    {
+      "time": 138.99599999993558,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 8,
+      "toRung": 9
+    },
+    {
+      "time": 141.49599999994751,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 9,
+      "errorM": 5.378734912191745e-05,
+      "speedMps": 0.005667733088647668,
+      "recovery": false
+    },
+    {
+      "time": 142.09599999995038,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 8,
+      "toRung": 9
+    },
+    {
+      "time": 144.59599999996232,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 9,
+      "errorM": 5.401805250380755e-05,
+      "speedMps": 0.005664055011442334,
+      "recovery": false
+    },
+    {
+      "time": 145.19599999996518,
+      "event": "raise-start",
+      "cycle": 9
+    },
+    {
+      "time": 149.19599999998428,
+      "event": "raise-complete",
+      "cycle": 9,
+      "chassisZ": 3.899934355678759,
+      "advanceM": 2.699934355678759
+    },
+    {
+      "time": 149.19599999998428,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 9,
+      "toRung": 10
+    },
+    {
+      "time": 151.69599999999622,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 10,
+      "errorM": 5.514259361696557e-05,
+      "speedMps": 0.005668433811939887,
+      "recovery": false
+    },
+    {
+      "time": 152.29599999999908,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 9,
+      "toRung": 10
+    },
+    {
+      "time": 154.79600000001102,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 10,
+      "errorM": 5.4000164827834776e-05,
+      "speedMps": 0.005665085371469364,
+      "recovery": false
+    },
+    {
+      "time": 155.39600000001388,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 9,
+      "toRung": 10
+    },
+    {
+      "time": 157.89600000002582,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 10,
+      "errorM": 5.378734912167612e-05,
+      "speedMps": 0.005667733088656194,
+      "recovery": false
+    },
+    {
+      "time": 158.4960000000287,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 9,
+      "toRung": 10
+    },
+    {
+      "time": 160.99600000004062,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 10,
+      "errorM": 5.401805250366655e-05,
+      "speedMps": 0.005664055011462733,
+      "recovery": false
+    },
+    {
+      "time": 161.5960000000435,
+      "event": "raise-start",
+      "cycle": 10
+    },
+    {
+      "time": 165.5960000000626,
+      "event": "raise-complete",
+      "cycle": 10,
+      "chassisZ": 4.199934355678761,
+      "advanceM": 2.9999343556787608
+    },
+    {
+      "time": 165.5960000000626,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 10,
+      "toRung": 11
+    },
+    {
+      "time": 168.09600000007453,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 11,
+      "errorM": 5.5142593617503475e-05,
+      "speedMps": 0.00566843381199256,
+      "recovery": false
+    },
+    {
+      "time": 168.6960000000774,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 10,
+      "toRung": 11
+    },
+    {
+      "time": 171.19600000008933,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 11,
+      "errorM": 5.4000164718958516e-05,
+      "speedMps": 0.005665085457053455,
+      "recovery": false
+    },
+    {
+      "time": 171.7960000000922,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 10,
+      "toRung": 11
+    },
+    {
+      "time": 174.29600000010413,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 11,
+      "errorM": 5.378734912236836e-05,
+      "speedMps": 0.005667733088698974,
+      "recovery": false
+    },
+    {
+      "time": 174.896000000107,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 10,
+      "toRung": 11
+    },
+    {
+      "time": 177.39600000011893,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 11,
+      "errorM": 5.401805250233781e-05,
+      "speedMps": 0.005664055011414891,
+      "recovery": false
+    },
+    {
+      "time": 177.9960000001218,
+      "event": "raise-start",
+      "cycle": 11
+    },
+    {
+      "time": 181.9960000001409,
+      "event": "raise-complete",
+      "cycle": 11,
+      "chassisZ": 4.49993435567876,
+      "advanceM": 3.2999343556787597
+    },
+    {
+      "time": 181.9960000001409,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 11,
+      "toRung": 12
+    },
+    {
+      "time": 184.49600000015283,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 12,
+      "errorM": 5.5142593618513294e-05,
+      "speedMps": 0.005668433811972159,
+      "recovery": false
+    },
+    {
+      "time": 185.0960000001557,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 11,
+      "toRung": 12
+    },
+    {
+      "time": 187.59600000016763,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 12,
+      "errorM": 5.4000164842797085e-05,
+      "speedMps": 0.005665085360419326,
+      "recovery": false
+    },
+    {
+      "time": 188.1960000001705,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 11,
+      "toRung": 12
+    },
+    {
+      "time": 190.69600000018244,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 12,
+      "errorM": 5.378734912086081e-05,
+      "speedMps": 0.005667733088729031,
+      "recovery": false
+    },
+    {
+      "time": 191.2960000001853,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 11,
+      "toRung": 12
+    },
+    {
+      "time": 193.79600000019724,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 12,
+      "errorM": 5.4018052501429104e-05,
+      "speedMps": 0.005664055011358535,
+      "recovery": false
+    },
+    {
+      "time": 194.3960000002001,
+      "event": "raise-start",
+      "cycle": 12
+    },
+    {
+      "time": 198.3960000002192,
+      "event": "raise-complete",
+      "cycle": 12,
+      "chassisZ": 4.79993435567876,
+      "advanceM": 3.5999343556787595
+    }
+  ]
+}

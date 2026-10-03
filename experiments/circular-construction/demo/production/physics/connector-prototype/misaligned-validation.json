@@ -1,0 +1,38 @@
+{
+  "scenario": "misaligned",
+  "mujocoVersion": "3.14.0",
+  "timestepSeconds": 0.0005,
+  "durationSeconds": 4.9999999999999485,
+  "beamMassKg": 640.7431900555108,
+  "equalityCount": 0,
+  "beamFreeDofs": 6,
+  "pinGuideDofs": 1,
+  "cleared": false,
+  "aborted": true,
+  "finalInsertionM": -5.38169373352012e-119,
+  "finalDogExtensionM": 0.0,
+  "finalBeamDisplacementXM": 0.01022620816543407,
+  "maxPenetrationM": 7.646819601101451e-05,
+  "peakInsertionActuatorN": 100.0,
+  "peakInsertionBeamContactN": 48.532531414856145,
+  "meanDogToBeamAxialContactN": 0.0,
+  "meanHeadToBracketAxialContactN": 0.0,
+  "finalMotorForceN": 6.2486064374370716e-117,
+  "finalDogActuatorForceN": -30.0,
+  "finalQuarterSecondMeanContactN": {
+    "bottom_flange|seat_left": 3148.1395117415445,
+    "bottom_flange|seat_right": 3137.5511827029495
+  },
+  "maxWarningCount": 0,
+  "finiteState": true,
+  "events": [
+    {
+      "time": 0.843,
+      "event": "beam interference exceeds 25 N for 30 ms; retract and inhibit latch/proof load",
+      "contactNormalN": 47.972525571111774
+    }
+  ],
+  "completeRobotFasteningCycle": false,
+  "finalDogOppositeExtensionM": 0.0,
+  "finalDogOppositeActuatorForceN": -30.0
+}

@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "status": "evaluated candidate; not production contract",
+  "sharedAssetsUpdated": false,
+  "sourceCoordinates": "SI metres; Z up; glTF=(x,z,-y)",
+  "chassisDimensionsM": [
+    0.66,
+    0.44,
+    1.0
+  ],
+  "dryMassKg": 340,
+  "massAllocationKg": {
+    "cradle": 40,
+    "upperLinks": 48,
+    "lowerLinks": 40,
+    "existingWristsAndJaws": 32,
+    "addedShoulderYaw": 12,
+    "addedWristGimbals": 8,
+    "centralChassis": 128,
+    "fourGroundGearModules": 32
+  },
+  "hipsM": {
+    "fl": [
+      0,
+      -0.32,
+      0.48
+    ],
+    "fr": [
+      0,
+      0.32,
+      0.48
+    ],
+    "rl": [
+      0,
+      -0.32,
+      -0.48
+    ],
+    "rr": [
+      0,
+      0.32,
+      -0.48
+    ]
+  },
+  "linkLengthM": 0.65,
+  "jointChain": [
+    {
+      "physics": "hip_yaw",
+      "glb": "hip_yaw",
+      "localAxis": [
+        0,
+        0,
+        1
+      ],
+      "limitRad": [
+        -0.6,
+        0.6
+      ],
+      "torqueNm": 400
+    },
+    {
+      "physics": "shoulder",
+      "glb": "hip",
+      "localAxis": [
+        0,
+        1,
+        0
+      ],
+      "limitRad": [
+        -2.4,
+        2.4
+      ],
+      "torqueNm": 3000
+    },
+    {
+      "physics": "elbow",
+      "glb": "knee",
+      "localAxis": [
+        0,
+        1,
+        0
+      ],
+      "limitRad": [
+        -2.7,
+        2.7
+      ],
+      "torqueNm": 2000
+    },
+    {
+      "physics": "wrist_yaw",
+      "glb": "wrist_yaw",
+      "localAxis": [
+        0,
+        0,
+        1
+      ],
+      "limitRad": [
+        -0.6,
+        0.6
+      ],
+      "torqueNm": 150
+    },
+    {
+      "physics": "wrist",
+      "glb": "wrist",
+      "localAxis": [
+        0,
+        1,
+        0
+      ],
+      "limitRad": [
+        -2.7,
+        2.7
+      ],
+      "torqueNm": 400
+    },
+    {
+      "physics": "wrist_roll",
+      "glb": "wrist_roll",
+      "localAxis": [
+        1,
+        0,
+        0
+      ],
+      "limitRad": [
+        -0.6,
+        0.6
+      ],
+      "torqueNm": 150
+    }
+  ],
+  "glbJointNaming": "limb_{fl|fr|rl|rr}_{glb suffix}",
+  "throatOffsetM": [
+    0.135,
+    0,
+    0
+  ],
+  "jawNominalForceEachN": 4000,
+  "jawActuatorBoundEachN": 8000,
+  "sourceFixture": {
+    "columnAxis": [
+      0.93,
+      0,
+      0
+    ],
+    "columnYawRad": 3.141592653589793,
+    "railX": 0.75,
+    "railY": [
+      -0.32,
+      0.32
+    ],
+    "pitchM": 0.32,
+    "chassisInitialZ": 1.44
+  },
+  "gait": {
+    "shiftTowardRailM": 0.16,
+    "releasedLoadBeforeOpeningMaxN": 200,
+    "withdrawM": 0.055,
+    "advanceM": 0.32,
+    "withdrawSeconds": 2,
+    "riseSeconds": 5,
+    "approachSeconds": 2,
+    "proofLoadTransferSeconds": 2,
+    "proofLoadMinResultantN": 500,
+    "unloadTransferSeconds": 2,
+    "unloadDwellSeconds": 0.5
+  },
+  "verifiedScope": "Four sequential hand0.32m advances with finite-jaw closure and measured proofload,0.32085m chassis ascent and3s hold with92.928kg prelocked beam. Wheel/fork and manufactured motor/gimbal collision envelopes enabled. Clamped support may carry signed reactions. Does not establish whole building routes or hardware safety.",
+  "nominalMetricsFile": "candidate-manufactured-step-92.928kg-mu0.65-sx0.16-metrics.json",
+  "nominalModelSha256": "066f47815dfb2a7e5a7e48594ae627cb1bbd26283a7fcb8e7d56b84e2a074d5a",
+  "assumptions": [
+    "Rigid prelocked payload/cradle; restraint closure not solved.",
+    "Coulomb pad/steel friction is an assumed coefficient, not measured hardware data.",
+    "Rigid fixed column and rails; structural compliance omitted.",
+    "Robot-to-environment and distinct robot-assembly self-collision enabled; connected bearing and jaw-guide primitive overlaps excluded.",
+    "Simplified collision primitives approximate manufactured housings.",
+    "400 Nm wrist and 8 kN jaw motor bounds are proposed specs, not qualified hardware.",
+    "Friction impedance ratio20 and stiff normal contact reduce regularization creep; sensitivity is required.",
+    "Initial condition already attached; wheels are in120mm unloaded droop pose. Arrival, suspension transition and ground travel dynamics are not simulated."
+  ],
+  "revision": "six-axis-packaged-continuous-v1",
+  "groundGear": {
+    "moduleMassEachKg": 8,
+    "radiusM": 0.17,
+    "tyreWidthM": 0.12,
+    "wheelCentresSourceXYM": [
+      [
+        -0.26,
+        -0.39
+      ],
+      [
+        0.26,
+        -0.39
+      ],
+      [
+        -0.26,
+        0.39
+      ],
+      [
+        0.26,
+        0.39
+      ]
+    ],
+    "wheelCenterSourceZTravelM": -0.63,
+    "wheelCenterSourceZClimbM": -0.75,
+    "unloadedSuspensionDroopM": 0.12,
+    "viewerBinding": "wheel_steering_* local glTF Y=-.10 in ground mode; -.22 in climb mode",
+    "transitionDynamicsVerified": false
+  },
+  "candidateAssets": {
+    "blend": "production/blender/six-axis-carrier-candidate.blend",
+    "glb": "production/blender/six-axis-carrier-candidate.glb",
+    "generator": "production/blender/build_six_axis_candidate.py",
+    "preview": "production/blender/six-axis-carrier-candidate-preview.png",
+    "wristPreview": "production/blender/six-axis-carrier-candidate-wrist.png"
+  },
+  "jawIdentities": "a is negative source Y; b is positive source Y. Translation magnitude=.045+measured outward displacement.",
+  "recoveryMetricsFile": "candidate-continuous-fault-limb-92.928kg-mu0.65-sx0.16-metrics.json",
+  "manufacturedCollisionEnvelopeRadiiM": {
+    "hipMotor": 0.116,
+    "kneeMotor": 0.086,
+    "wristGimbal": 0.105
+  }
+}

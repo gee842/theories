@@ -1,0 +1,205 @@
+{
+  "minActiveSupports": 3,
+  "minLoadedSupports": 3,
+  "maxTorqueNm": 2144.2735341369366,
+  "maxReactionN": 6643.039252320022,
+  "maxCaptureErrorM": 0.001731638109611504,
+  "maxCaptureSpeedMps": 0.009633595949823572,
+  "maxSupportErrorM": 0.0016088319929597,
+  "maxJointLimitViolationRad": 0.0,
+  "maxChassisTiltRad": 0.09464923485341448,
+  "maxSolverIterations": 1,
+  "maxConstraintResidual": 1.7603754364120141e-06,
+  "minUpwardSupports": 2,
+  "minSupportVerticalN": -117.21840277879049,
+  "maxChassisSpeedMps": 0.480934990758439,
+  "scenario": "nominal",
+  "mujocoVersion": "3.14.0",
+  "complete": true,
+  "cyclesCompleted": 1,
+  "durationSeconds": 29.51399999999452,
+  "chassisAdvanceM": 0.31987043535297177,
+  "settledAdvanceM": 0.32000007710731193,
+  "finalChassisPosition": [
+    3.369637210795628e-07,
+    -2.2416683024803851e-13,
+    1.7198704353529717
+  ],
+  "finalRungs": {
+    "fl": 1,
+    "fr": 1,
+    "rl": 1,
+    "rr": 1
+  },
+  "finalReactionN": {
+    "fl": [
+      1974.292621736652,
+      1.8209910496580864e-08,
+      1018.0571925348261
+    ],
+    "fr": [
+      1974.29262188573,
+      6.4539983361758595e-09,
+      1018.0571925353719
+    ],
+    "rl": [
+      -1974.292620899218,
+      1.335613800553421e-08,
+      1017.5178118485492
+    ],
+    "rr": [
+      -1974.292620888451,
+      1.7374230180206792e-09,
+      1017.5178118422351
+    ]
+  },
+  "massKg": 415.0,
+  "weightN": 4071.15,
+  "captureCount": 4,
+  "releaseCount": 4,
+  "rejectedCaptureErrorM": null,
+  "recovered": false,
+  "abortReason": null,
+  "finiteState": true,
+  "fixedAnchorsUnchanged": true,
+  "motorMechanicalWorkJ": 1323.49319529255,
+  "railConstraintWorkJ": -8.191513815228527,
+  "potentialEnergyRiseJ": 1302.2052035001498,
+  "warnings": {
+    "mjtWarning.mjWARN_INERTIA": 0,
+    "mjtWarning.mjWARN_CONTACTFULL": 0,
+    "mjtWarning.mjWARN_CNSTRFULL": 0,
+    "mjtWarning.mjWARN_BADQPOS": 0,
+    "mjtWarning.mjWARN_BADQVEL": 0,
+    "mjtWarning.mjWARN_BADQACC": 0,
+    "mjtWarning.mjWARN_BADCTRL": 0
+  },
+  "events": [
+    {
+      "time": 1.500000000000001,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 0,
+      "toRung": 1
+    },
+    {
+      "time": 5.501999999999616,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 1,
+      "errorM": 0.001731638109611504,
+      "speedMps": 0.009174601840655458,
+      "recovery": false
+    },
+    {
+      "time": 6.503999999999506,
+      "event": "release",
+      "limb": "fr",
+      "fromRung": 0,
+      "toRung": 1
+    },
+    {
+      "time": 10.504000000000177,
+      "event": "recapture",
+      "limb": "fr",
+      "rung": 1,
+      "errorM": 0.000725641115705556,
+      "speedMps": 0.009632885728616584,
+      "recovery": false
+    },
+    {
+      "time": 11.504000000000511,
+      "event": "release",
+      "limb": "rl",
+      "fromRung": 0,
+      "toRung": 1
+    },
+    {
+      "time": 15.504000000001847,
+      "event": "recapture",
+      "limb": "rl",
+      "rung": 1,
+      "errorM": 0.0007259377260225103,
+      "speedMps": 0.009633595949823572,
+      "recovery": false
+    },
+    {
+      "time": 16.50600000000173,
+      "event": "release",
+      "limb": "rr",
+      "fromRung": 0,
+      "toRung": 1
+    },
+    {
+      "time": 20.507999999999512,
+      "event": "recapture",
+      "limb": "rr",
+      "rung": 1,
+      "errorM": 0.0007063769199805094,
+      "speedMps": 0.009400597471480233,
+      "recovery": false
+    },
+    {
+      "time": 21.509999999998957,
+      "event": "raise-start",
+      "cycle": 1
+    },
+    {
+      "time": 28.511999999995076,
+      "event": "raise-complete",
+      "cycle": 1,
+      "chassisZ": 1.7198704576478714,
+      "advanceM": 0.3198704576478715
+    }
+  ],
+  "geometry": {
+    "coordinates": "MuJoCo Z-up; browser p=(x,z,-y)",
+    "linkLengthM": 0.65,
+    "hipOffsets": {
+      "fl": [
+        0,
+        -0.32,
+        0.42
+      ],
+      "fr": [
+        0,
+        0.32,
+        0.42
+      ],
+      "rl": [
+        0,
+        -0.32,
+        -0.42
+      ],
+      "rr": [
+        0,
+        0.32,
+        -0.42
+      ]
+    },
+    "railReachM": 0.75,
+    "railSpacingM": 0.64,
+    "receiverPitchM": 0.32,
+    "storeyHeightM": 3.2,
+    "chassisMassKg": 160,
+    "upperMassKg": 12,
+    "lowerMassKg": 10,
+    "gripMassKg": 8,
+    "cradleMassKg": 40,
+    "dryMassKg": 320,
+    "cradleCentreM": [
+      -0.61,
+      0,
+      0
+    ],
+    "shoulderTorqueLimitNm": 3000,
+    "elbowTorqueLimitNm": 2000,
+    "status": "Specified conceptual hardware, not hardware-qualified capacities"
+  },
+  "payloadMassKg": 95.0,
+  "dryMassKg": 320,
+  "scope": "Loaded vertical rail locomotion; captive rigid payload and ideal point grips",
+  "controllerSourceSha256": "76e307bbf95a442d55f2569452bb154733ffebdcc8450486dcff4abcad300dec",
+  "modelSha256": "072a43a2cbd17f5ec297c419411f4e4361622eb9f2bf348ddfb4ebb3d84f19cc",
+  "evidenceClass": "local-dynamics-with-idealized-restraints"
+}

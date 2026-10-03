@@ -1,0 +1,103 @@
+{
+  "minActiveSupports": 3,
+  "minLoadedSupports": 3,
+  "maxTorqueNm": 403.2805500288605,
+  "maxReactionN": 961.7865590747007,
+  "maxCaptureErrorM": 2.2733132823027002e-05,
+  "maxCaptureSpeedMps": 0.00508806933441992,
+  "maxSupportErrorM": 6.341337764370591e-05,
+  "maxJointLimitViolationRad": 0.0,
+  "maxChassisTiltRad": 0.00042414710509505255,
+  "maxSolverIterations": 1,
+  "maxConstraintResidual": 3.281502956388208e-07,
+  "minUpwardSupports": 3,
+  "minSupportVerticalN": 333.8378460308897,
+  "maxChassisSpeedMps": 0.0014689994885621167,
+  "scenario": "missed-grip",
+  "mujocoVersion": "3.14.0",
+  "complete": false,
+  "cyclesCompleted": 0,
+  "durationSeconds": 9.503999999999843,
+  "chassisAdvanceM": -6.815893034595177e-05,
+  "settledAdvanceM": -1.358169769982709e-07,
+  "finalChassisPosition": [
+    7.034409980910194e-07,
+    -7.864723086897697e-10,
+    1.199931841069654
+  ],
+  "finalRungs": {
+    "fl": 0,
+    "fr": 0,
+    "rl": 0,
+    "rr": 0
+  },
+  "finalReactionN": {
+    "fl": [
+      417.31963987588483,
+      -2.317463124933826e-05,
+      336.04728158516315
+    ],
+    "fr": [
+      417.3194775552925,
+      -2.318038231000962e-05,
+      336.0473236765121
+    ],
+    "rl": [
+      -417.3176281861335,
+      -4.830882873586262e-05,
+      335.9427515003098
+    ],
+    "rr": [
+      -417.31779021345824,
+      -4.831469697278536e-05,
+      335.94279357582195
+    ]
+  },
+  "massKg": 137.0,
+  "weightN": 1343.97,
+  "captureCount": 0,
+  "releaseCount": 1,
+  "rejectedCaptureErrorM": 0.08001168130543394,
+  "recovered": true,
+  "abortReason": "Missed receiver: position/speed capture gate failed; no next release authorized.",
+  "finiteState": true,
+  "fixedAnchorsUnchanged": true,
+  "motorMechanicalWorkJ": 3.0492763655039044,
+  "railConstraintWorkJ": -0.13075358425641187,
+  "potentialEnergyRiseJ": -0.0742573639870443,
+  "warnings": {
+    "mjtWarning.mjWARN_INERTIA": 0,
+    "mjtWarning.mjWARN_CONTACTFULL": 0,
+    "mjtWarning.mjWARN_CNSTRFULL": 0,
+    "mjtWarning.mjWARN_BADQPOS": 0,
+    "mjtWarning.mjWARN_BADQVEL": 0,
+    "mjtWarning.mjWARN_BADQACC": 0,
+    "mjtWarning.mjWARN_BADCTRL": 0
+  },
+  "events": [
+    {
+      "time": 1.500000000000001,
+      "event": "release",
+      "limb": "fl",
+      "fromRung": 0,
+      "toRung": 1
+    },
+    {
+      "time": 6.001999999999561,
+      "event": "capture-rejected",
+      "limb": "fl",
+      "rung": 1,
+      "errorM": 0.08001168130543394,
+      "speedMps": 2.6042166005066976e-07
+    },
+    {
+      "time": 8.50399999999951,
+      "event": "recapture",
+      "limb": "fl",
+      "rung": 0,
+      "errorM": 2.2733132823027002e-05,
+      "speedMps": 0.00508806933441992,
+      "recovery": true
+    }
+  ]
+}

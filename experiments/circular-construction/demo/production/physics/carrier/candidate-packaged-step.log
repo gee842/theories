@@ -1,0 +1,378 @@
+{
+  "maxTiltRad": 0.008874230253430947,
+  "maxChassisDriftM": 0.04443993490894379,
+  "maxPenetrationM": 0.0007750614784789683,
+  "maxNonGripCollisionN": 0.0,
+  "maxContactForceN": 5081.768045533077,
+  "maxJawNormalSumN": 8137.392009251849,
+  "minRetainedUpwardSupports": 2,
+  "maxTorqueNm": {
+    "hip_yaw": 324.3399587342439,
+    "shoulder": 1968.0903038532376,
+    "elbow": 1621.6721958308065,
+    "wrist_yaw": 112.55401670581145,
+    "wrist": 348.25464004178644,
+    "wrist_roll": 146.26365653819383
+  },
+  "maxSolverIterations": 27,
+  "maxJointLimitViolation": 8.976659972376178e-06,
+  "maxHingeLimitViolationRad": 0.0,
+  "maxJawLimitViolationM": 8.976659972376178e-06,
+  "minRetainedJawSideNormalN": 0.0,
+  "maxRetainedGripErrorM": 0.002258455839810988,
+  "maxFrictionUtilization": 0.9999999999997108,
+  "maxDynamicForceResidualN": 1.568630515940233,
+  "minSignedVerticalReactionN": -877.7469421109471,
+  "worstPenetration": {
+    "time": 56.04175000017658,
+    "geoms": [
+      "rail_left",
+      "fl_pad_a"
+    ],
+    "forceN": 1666.975691947938
+  },
+  "retentionGate": "Both jaws >1000 N normal per retained grip, position error <30mm; signed vertical reactions allowed. Positive-reaction count is diagnostic only.",
+  "contactQualityAccepted": false,
+  "finalSpeedMps": 7.19983912223052e-05,
+  "sequenceComplete": true,
+  "complete": false,
+  "abortReason": "Contact-quality gate rejected completed phase sequence",
+  "mode": "step",
+  "durationSeconds": 84.0014999997416,
+  "payloadMassKg": 92.928,
+  "totalMassKg": 432.928,
+  "lastLoadAllocation": {
+    "success": true,
+    "peakPlannedTorqueFraction": 0.5275879255729999,
+    "plannedForcesN": [
+      [
+        886.9477669370523,
+        -345.19132214478947,
+        1553.792755062169
+      ],
+      [
+        2101.4131458130005,
+        -370.7216475793832,
+        -531.0278948918088
+      ],
+      [
+        -911.8087159197087,
+        365.10970746987664,
+        1578.5262261286791
+      ],
+      [
+        -2103.93699611711,
+        358.3188400764838,
+        1575.6469198737154
+      ]
+    ]
+  },
+  "controllerRevision": "six-axis-narrow-casing-self-collision-clearance-ramped-proofload",
+  "finalLimbAdvanceM": {
+    "fl": 0.31951368487448484,
+    "fr": 0.3198848956380771,
+    "rl": 0.31831817811582974,
+    "rr": 0.3199548053164023
+  },
+  "chassisAdvanceM": 0.3246385685331785,
+  "bodyShiftTargetXM": 0.16,
+  "frictionCoefficient": 0.65,
+  "jawClosingForceEachN": 4000,
+  "solverSettings": {
+    "cone": "elliptic",
+    "impratio": 20,
+    "normalSolref": [
+      0.002,
+      1
+    ],
+    "normalSolimp": [
+      0.999,
+      0.9999,
+      0.0002
+    ],
+    "noSlipIterations": 0
+  },
+  "candidateDesign": {
+    "dryMassKg": 340,
+    "extraMassKg": 20,
+    "hipYawTorqueNm": 400,
+    "wristRollYawTorqueNm": 150,
+    "sharedAssetsUpdated": false,
+    "chassisDimensionsSourceM": [
+      0.66,
+      0.44,
+      1.0
+    ],
+    "chassisMassKg": 160,
+    "swingRetreatM": 0.055,
+    "robotSelfCollision": "enabled except connected bearings and jaw guides"
+  },
+  "controllerSpecs": {
+    "wristTorqueNm": 400,
+    "jawForceBoundN": 8000,
+    "jawPositionKpNPerM": 200000,
+    "jawVelocityDampingNsPerM": 900
+  },
+  "finalPositionSourceM": [
+    0.1618124560752908,
+    -0.0004758108297468262,
+    1.7646385685331785
+  ],
+  "finalContactForcesSourceN": {
+    "fl": [
+      890.1450084456577,
+      -344.94100788147614,
+      1561.9680352086907
+    ],
+    "fr": [
+      2102.5942973490382,
+      -370.6907623132204,
+      -527.880533280112
+    ],
+    "rl": [
+      -890.0739148971288,
+      356.9712604172187,
+      1633.8899934314009
+    ],
+    "rr": [
+      -2102.6648632641463,
+      358.6628789260708,
+      1579.0467319865866
+    ]
+  },
+  "finalJawNormalSumN": {
+    "fl": 7999.263528039001,
+    "fr": 7999.263529842778,
+    "rl": 7999.263472121433,
+    "rr": 7999.2634696238465
+  },
+  "events": [
+    {
+      "time": 2.0000000000002514,
+      "event": "four-contact-hold-accepted"
+    },
+    {
+      "time": 2.0000000000002514,
+      "event": "body-shift-command",
+      "targetX": 0.16
+    },
+    {
+      "time": 5.000000000000365,
+      "event": "unload-command",
+      "limb": "fl"
+    },
+    {
+      "time": 6.000000000001587,
+      "event": "measured-load-transfer",
+      "limb": "fl",
+      "remainingUpwardN": {
+        "fr": -576.7586796890587,
+        "rl": 2400.680568644114,
+        "rr": 2423.204380221169
+      },
+      "releasedLoadN": 1.7485829282136045
+    },
+    {
+      "time": 7.50000000000342,
+      "event": "jaw-open-confirmed",
+      "limb": "fl"
+    },
+    {
+      "time": 16.500249999987773,
+      "event": "capture-command",
+      "limb": "fl"
+    },
+    {
+      "time": 20.000250000004485,
+      "event": "finite-jaw-closure",
+      "limb": "fl",
+      "errorM": 1.0144270300042197e-06,
+      "normalEachN": {
+        "a": 3999.64234087351,
+        "b": 3999.6211873051416
+      }
+    },
+    {
+      "time": 22.000250000014034,
+      "event": "finite-contact-proofload-accepted",
+      "limb": "fl",
+      "resultantN": 1879.9377807078831,
+      "forceN": [
+        1794.3849239666538,
+        282.1982012492829,
+        484.47185592739675
+      ]
+    },
+    {
+      "time": 22.000250000014034,
+      "event": "unload-command",
+      "limb": "fr"
+    },
+    {
+      "time": 23.00025000001881,
+      "event": "measured-load-transfer",
+      "limb": "fr",
+      "remainingUpwardN": {
+        "fl": 732.4076656818337,
+        "rl": 1748.3271076659248,
+        "rr": 1766.4760770251587
+      },
+      "releasedLoadN": 0.6565733061124678
+    },
+    {
+      "time": 24.50025000002597,
+      "event": "jaw-open-confirmed",
+      "limb": "fr"
+    },
+    {
+      "time": 33.500250000068945,
+      "event": "capture-command",
+      "limb": "fr"
+    },
+    {
+      "time": 37.00025000008566,
+      "event": "finite-jaw-closure",
+      "limb": "fr",
+      "errorM": 1.1129023397372656e-06,
+      "normalEachN": {
+        "a": 3999.6404261852877,
+        "b": 3999.6231019934194
+      }
+    },
+    {
+      "time": 39.00025000009521,
+      "event": "finite-contact-proofload-accepted",
+      "limb": "fr",
+      "resultantN": 1464.9505724340643,
+      "forceN": [
+        1187.6048766128342,
+        288.1839649433248,
+        807.851990818771
+      ]
+    },
+    {
+      "time": 39.00025000009521,
+      "event": "unload-command",
+      "limb": "rl"
+    },
+    {
+      "time": 40.00025000009998,
+      "event": "measured-load-transfer",
+      "limb": "rl",
+      "remainingUpwardN": {
+        "fl": 1752.3729968284922,
+        "fr": 716.0431235470314,
+        "rr": 1778.6494995205417
+      },
+      "releasedLoadN": 0.8299648553986028
+    },
+    {
+      "time": 41.500250000107144,
+      "event": "jaw-open-confirmed",
+      "limb": "rl"
+    },
+    {
+      "time": 50.50025000015012,
+      "event": "capture-command",
+      "limb": "rl"
+    },
+    {
+      "time": 54.00025000016683,
+      "event": "finite-jaw-closure",
+      "limb": "rl",
+      "errorM": 9.068756903718042e-07,
+      "normalEachN": {
+        "a": 3999.628267720622,
+        "b": 3999.6352013773917
+      }
+    },
+    {
+      "time": 56.00025000017638,
+      "event": "finite-contact-proofload-accepted",
+      "limb": "rl",
+      "resultantN": 1348.8153327828545,
+      "forceN": [
+        -308.5219706244311,
+        -126.17553231443082,
+        1306.980003916399
+      ]
+    },
+    {
+      "time": 56.00025000017638,
+      "event": "unload-command",
+      "limb": "rr"
+    },
+    {
+      "time": 57.000250000181154,
+      "event": "measured-load-transfer",
+      "limb": "rr",
+      "remainingUpwardN": {
+        "fl": 511.2590411406686,
+        "fr": 1931.7650529056414,
+        "rl": 1786.4684988006525
+      },
+      "releasedLoadN": 20.57269683167322
+    },
+    {
+      "time": 58.500250000188316,
+      "event": "jaw-open-confirmed",
+      "limb": "rr"
+    },
+    {
+      "time": 67.5005000001318,
+      "event": "capture-command",
+      "limb": "rr"
+    },
+    {
+      "time": 71.00075000004902,
+      "event": "finite-jaw-closure",
+      "limb": "rr",
+      "errorM": 6.893392816419773e-07,
+      "normalEachN": {
+        "a": 3999.647542875413,
+        "b": 3999.615926222592
+      }
+    },
+    {
+      "time": 73.00100000000172,
+      "event": "finite-contact-proofload-accepted",
+      "limb": "rr",
+      "resultantN": 2399.313325877654,
+      "forceN": [
+        -1949.6031828062178,
+        -183.812281297887,
+        1386.3494907742497
+      ]
+    },
+    {
+      "time": 73.00100000000172,
+      "event": "raise-command"
+    }
+  ],
+  "equalityConstraintCount": 0,
+  "mocapBodyCount": 0,
+  "liveQposEdits": false,
+  "appliedBodyForces": false,
+  "modelSha256": "2b23803ae77fbbc887c915c9024f1e50b385137f5eb488b346680dcf739177c5",
+  "contractSha256": "27e82745dd641ecdb08e3e64adcf415cbea4ada497576ecd5ec0525b614a2a30",
+  "mujocoVersion": "3.14.0",
+  "warnings": {
+    "mjtWarning.mjWARN_INERTIA": 0,
+    "mjtWarning.mjWARN_CONTACTFULL": 0,
+    "mjtWarning.mjWARN_CNSTRFULL": 0,
+    "mjtWarning.mjWARN_BADQPOS": 0,
+    "mjtWarning.mjWARN_BADQVEL": 0,
+    "mjtWarning.mjWARN_BADQACC": 0,
+    "mjtWarning.mjWARN_BADCTRL": 0
+  },
+  "limitations": [
+    "Rigid prelocked payload/cradle; restraint closure not solved.",
+    "Coulomb pad/steel friction is an assumed coefficient, not measured hardware data.",
+    "Rigid fixed column and rails; structural compliance omitted.",
+    "Robot-to-environment and distinct robot-assembly self-collision enabled; connected bearing and jaw-guide primitive overlaps excluded.",
+    "Simplified collision primitives approximate manufactured housings.",
+    "400 Nm wrist and 8 kN jaw motor bounds are proposed specs, not qualified hardware.",
+    "Friction impedance ratio20 and stiff normal contact reduce regularization creep; sensitivity is required.",
+    "Initial condition already attached; arrival and transition from ground are not simulated here."
+  ]
+}

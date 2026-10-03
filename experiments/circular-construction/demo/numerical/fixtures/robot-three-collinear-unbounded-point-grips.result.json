@@ -1,0 +1,74 @@
+{
+  "actuator_status": "included",
+  "contact_wrenches": [],
+  "equilibrium_residual": null,
+  "external_wrench": {
+    "force_N": [
+      0,
+      0,
+      -1000.6199999999997
+    ],
+    "moment_Nm": [
+      486.50552279412636,
+      68.68507983733832,
+      0
+    ]
+  },
+  "input_fingerprint": "sha256:16f5f3c0e67b6e3e65ad186d8e97a6f218de1bbfed0c10e3e2f8bb44589be3bf",
+  "limitations": [
+    "Capacity numbers remain declared assumptions; no hardware qualification is performed.",
+    "Box bounds do not model coupled friction, clamp closure, stiffness or slip.",
+    "Actuator torques use supplied fixed-pose Jacobian rows only; absent rows are outside scope or unverified when requested.",
+    "Kinematics, collisions, frame reactions adequacy and dynamics are outside this check.",
+    "Missing limits are relaxed only to produce a required-wrench witness; they cannot produce a passed result.",
+    "Minimum normalized L1 witness uses 1 N and 1 N m scales; it is not a per-contact capacity optimum."
+  ],
+  "missing_capacities": [
+    "collinear-climber:point-0.force_bounds_N.lower[0]",
+    "collinear-climber:point-0.force_bounds_N.lower[1]",
+    "collinear-climber:point-0.force_bounds_N.lower[2]",
+    "collinear-climber:point-0.force_bounds_N.upper[0]",
+    "collinear-climber:point-0.force_bounds_N.upper[1]",
+    "collinear-climber:point-0.force_bounds_N.upper[2]",
+    "collinear-climber:point-2.force_bounds_N.lower[0]",
+    "collinear-climber:point-2.force_bounds_N.lower[1]",
+    "collinear-climber:point-2.force_bounds_N.lower[2]",
+    "collinear-climber:point-2.force_bounds_N.upper[0]",
+    "collinear-climber:point-2.force_bounds_N.upper[1]",
+    "collinear-climber:point-2.force_bounds_N.upper[2]",
+    "collinear-climber:point-3.force_bounds_N.lower[0]",
+    "collinear-climber:point-3.force_bounds_N.lower[1]",
+    "collinear-climber:point-3.force_bounds_N.lower[2]",
+    "collinear-climber:point-3.force_bounds_N.upper[0]",
+    "collinear-climber:point-3.force_bounds_N.upper[1]",
+    "collinear-climber:point-3.force_bounds_N.upper[2]"
+  ],
+  "model_version": "contact-box-static/1.0.0",
+  "reason": "No equilibrium exists within declared contact geometry and known bounds.",
+  "request_id": "collinear-three-grip-roll-unknown-force-capacity",
+  "request_sha256": "1be26a2b7cca9079fb44bd72731d853e892be7484d0104acb411922633c781af",
+  "required_aggregate_support_wrench": {
+    "force_N": [
+      0,
+      0,
+      1000.6199999999997
+    ],
+    "moment_about_origin_Nm": [
+      -486.50552279412636,
+      -68.68507983733832,
+      0
+    ]
+  },
+  "schema_version": 1,
+  "scope": "quasi-static global Cartesian box contact wrench equilibrium",
+  "solver": {
+    "highs_status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "name": "scipy-highs",
+    "numpy_version": "2.3.3",
+    "scipy_version": "1.16.2",
+    "status": "infeasible"
+  },
+  "status": "failed",
+  "world_revision": 0
+}

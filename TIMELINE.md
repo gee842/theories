@@ -249,6 +249,25 @@ On 09-13 he opened architecture for a living Earth: settlement lifted off living
 
 On 09-25 Ren read a summary of the updated `MAP.md`. It listed a new conflict: the constructive engine compounds, just as the diagnosis's mechanism does. He ruled it out: **"this isn't the problem - how we can use it wisely, is the key. we can grow exponentially till we met our need, but we can't compounding forever. the problem is the mind not the approach"** (`16-claude-code-directions/2026-09-25-the-mind-not-the-approach.md`). It is the month's clearest single statement. It also returns the constructive half to the corpus's oldest claim: what compounds in the disease is advantage, which is never enough; production for need has a point where it stops; and which of the two a capacity becomes is decided in the mind.
 
+## 2026-09-26 → 2026-10-02 — Papers, a civilisational stance, and the why said aloud
+
+The week's written work is recorded where it lives, and is listed here only so the timeline does not skip it:
+- the 09-26 ruling that the unit is the game, not the act (`16-claude-code-directions/2026-09-26-planetary-technology-and-the-literature.md`);
+- the community position paper, from v0.1 to 《从小康到大同》 v0.3 (`drafts/2026-09-26-community-mission/`), with Codex's parallel 使命与共识 line (`drafts/2026-09-26-ai-safety-community/`);
+- *When Capability Outruns Correction* and its v2 (`05-alignment-and-moloch/`, `drafts/2026-09-28-capability-outruns-correction/`);
+- *The Meta-Attractor of Power* and the IASEAI'27 paper *Selecting the Selectors* (`03-meta-attractor/`, `drafts/2026-10-02-iaseai-selecting-the-selectors/`);
+- the English 生生不息论 (`drafts/2026-10-02-shengsheng-en/`).
+
+On 10-02 Ren and his friend Alex talked for nearly two hours, and Ren recorded it. Ren later named the recording as the place where the "why and meaning" of his theories shows. The record is `18-friend-conversations/2026-10-02/`, with the automatic transcript in `drafts/2026-10-02-friend-conversation/`. Alex brought a rival answer: wisdom over force over markets, the tripartite order of Plato, the Manusmriti and the imperial bureaucracy. Ren's replies were spoken, not drafted. That makes them the first record of the whole argument in his voice, unprompted, against a critic:
+- He coined *molochlization* for the selection that remakes "the nervous system the organisation system or just generally their intelligence".
+- He named the question that every remedy has to answer: "the corruption of the constraining mechanism itself".
+- He said what the theory is for: "a good theory predicts the future … it becomes this coordination problem that the understanding has to be aligned first".
+- He said what it is not against: "I never said growth is bad"; competition "has a situationality"; "We have a great future".
+- He gave the proposal: take AI and compute out of competition, raise understanding before ASI, and build provision "like trees", autonomous and good enough.
+- And he said what it means: "We are the whole process of the universe doing this and itself and this is great".
+
+He also gave his two reasons for grounding the work in pre-Qin thought. One is its engineering utility for the psychology of status and greed. The other is that "this is the biggest and the best leverage of constructing theories in this moment in time". The conversation ended at the IASEAI submission, three days before its deadline. `MAP.md`'s "Why, and what it means" lists what this changed in the corpus's high-level reading.
+
 ---
 
 ## Where the vocabulary turned
@@ -274,6 +293,7 @@ Every rename in this corpus is a change of claim, not of packaging, and each one
 | Meta-Attractor (sign-neutral, as analysis) | 2026-09-06 | meta-attractor as the pathology | The whitepaper names the mechanism and its analysis without a sign; 总体化 carries the harm, and "counter-attractor" the remedy |
 | Cooperative abundance and freely built worlds | 2026-09-07 | The Fork (as the folder's title) | Production comes first, as capacity building capacity; exit is demoted from the mechanism to the safeguard |
 | grow till needs are met (Ren's ruling; "point of enough" is an assistant label) | 2026-09-25 | the assistant's "rate" framing | Growth is bounded by need, not speed; "the problem is the mind not the approach" |
+| molochlization | 2026-10-02 (spoken) | Moloch / selection on cognition | The *-ization* names a becoming: whatever stands inside the selection, its opponents and its intended guardians included, is turned toward it; "not because they were thinking they were right or wrong, it's just because this is the selection pressure" |
 
 ---
 

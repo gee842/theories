@@ -56,6 +56,11 @@ The `ember` runtime is where this is built rather than argued. It gives an artif
 
 **One last move, made once and not developed.** Pressed on the hard problem, Ren refused to bracket it and instead changed the level: *"let's look outside of the frame… the dominant pattern should be a generative field, imagine one that provides all necessities without condition. For example, oxygen doesn't require your sacrifice. And when the field runs well, any reason that is not destructive to this substrate, can be free to act, with care; when the field becomes totalizing, or collapsing, we fix it. This should be common sense, maybe was"* (2026-04-28). It is not an answer to Chalmers. It is the theory's exit condition: the point at which a description of how minds get captured turns into a claim about what a non-capturing environment would have to be — which is where this theory hands off to `keep-the-possibility-space-open` and `shengsheng-buxi-generative-existence`.
 
+
+**2026-10-02: status and greed as invariances, and the engineering question.** On 2026-10-02 Ren recorded a conversation with his friend Alex and named it as showing the why and meaning of his theories (`drafts/2026-10-02-friend-conversation/transcript.md`; automatic transcript, Ren provisionally Speaker B). Late in it he states this theory's question in its most practical form. Across cultures, he says, "There is a common call, the nature of whole relationships, social dynamics, and the human brain works that leads to those like universal social invariances" [01:32:44]. The universals cut both ways. Every culture teaches satisfaction and the limits of desire [00:44:18]. But "among those social universal invariances there are also things like, okay, I l I look down on you, I want to go up. like this type of like dynamics, right. So those are also deep-rooted in most people's psychology, but just to different extents, right. This is a part of the brain function, like the social uprising. And also greed can be amplified and perpetuated through pure psychological mechanisms … But also once we get into those attractors, how will the mind change? And what are the social engineering that can be said to actually like uh create like useful mechanisms?" [01:42:51]. He looks for the answer in pre-Qin and Confucian thought, which "does provide like much higher engineering utility" [01:44:18]. That is this theory's intervention surface, the environment, named as a craft with a tradition behind it.
+
+Two mechanisms from earlier in the conversation fill in the drive side. The first is the moment of capture, when anger or greed narrows the field: "at the moment you feel so much anger or so much greed you just feel like yes this is what I do I don't care about other things" [01:10:12]. That is a drive taking over the narrative, which then reports the narrowing as the self's choice. The second is survival pressure as the opening for rhetoric: "because you know people's life are fucked of course like They need to survive, like they don't care about ideology. They need bread. So let's just tell them eat. Those people if you do those, you have the bread. You just have the rhetoric like bigger and bigger and bigger and then it becomes psychotic" [01:31:17]. That is Ren's older "attractor of attractors", the believed survival state, given its political consequence. Alex adds the population-level version: most people, "like 80 of people", "will attach themselves to whatever thing is most. most powerful … because it's a survival mechanism" [01:22:29]. Ren attributes that disposition to environment, "so many years of [unclear] uh changing the epistemology of these people" [01:23:21]. The two together are this theory's thesis that environment makes mind, stated as a reason why the provision floor comes first. Remove the survival pressure, and both the rhetoric of bigness and the attachment to power lose their grip.
+
 ---
 
 ## Claims
@@ -160,6 +165,17 @@ The `ember` runtime is where this is built rather than argued. It gives an artif
 69. 情 (affect) is a *weighting*: 间入心而有轻重 — intervals entering the heart and acquiring salience, valence and urgency; 情之得正 is affect that stays open, neither suppressed nor extremized. `[AI-doc]` [mechanism] — `theories/shengsheng-buxi-generative-existence/synthesis-b-ssbx-canon-and-history.md` claim 52
 70. 性 (nature, character) is an **attractor, not an essence** — a stable interval-selection pattern formed by repeated action, response and correction: 性者，行之积向；修身者，改其择间之势. Cultivation, education, ritual and alignment are therefore one kind of work: attractor-shaping. `[AI-doc]` [mechanism] — same, claim 57
 71. Engineering discipline that follows: 間 may be reified, 心 may not — reifying the field's reflexivity gives a system self-awareness; refusing to reify the actor's immediacy is what prevents it being pulled out of immediacy into representation. `[AI-doc]` [design direction] — `theories/jian-and-wenyan-as-formal-language/synthesis-b-…md` claim 16
+
+### K. Status, greed and the engineering question (2026-10-02, spoken)
+
+From the conversation with Alex, `drafts/2026-10-02-friend-conversation/transcript.md` (automatic transcript; Ren provisionally Speaker B; timestamps in brackets).
+
+72. Relationships, social dynamics and how the brain works produce "universal social invariances" across cultures. [observation] [01:32:44]
+73. Among them is status-seeking ("I look down on you, I want to go up"), "a part of the brain function", present in most people to different extents. Greed can be amplified and perpetuated by purely psychological mechanisms. [mechanism] [01:42:51]
+74. The working question is how the mind changes once it enters those attractors, and which social engineering creates useful counter-mechanisms. Pre-Qin and Confucian thought has the highest engineering utility on this question. [design direction] [01:42:51–01:44:18]
+75. Anger and greed narrow what a mind attends to, until it acts without caring about anything else. [mechanism] [01:10:12]
+76. Survival pressure makes populations receptive to rhetoric of ever-greater size, and that rhetoric "becomes psychotic". [mechanism] [01:31:17]
+77. *(Alex.)* Most people, "like 80" percent, attach themselves to whatever is most powerful, as a survival mechanism. *(Ren:)* that epistemology was produced by the environment. [mechanism; Alex's claim with Ren's reply] [01:22:29–01:23:21]
 
 ---
 
@@ -363,6 +379,14 @@ The second is 「现代人的分裂」, the split in modern people, and it is an
 
 60. `zh` 2026-05-04 — "感觉如果一个人学习反思的话，心与理也可建立环，反馈 / 一个事如果被钻研透，也可以影响心和理 / 心如果变了，理和事就变了 / 这个也是一个认知强对偶" — same, item 183 *(if a person studies and reflects, 心 and 理 can form a loop with feedback; if a matter is thoroughly investigated it too affects 心 and 理; if 心 changes, 理 and 事 change — a cognitive strong duality)*
 
+61. `en` 2026-10-02, spoken — "There is a common call, the nature of whole relationships, social dynamics, and the human brain works that leads to those like universal social invariances." — `drafts/2026-10-02-friend-conversation/transcript.md` [01:32:44] (automatic transcript; Ren provisionally Speaker B)
+
+62. `en` 2026-10-02, spoken — "But also once we get into those attractors, how will the mind change? And what are the social engineering that can be said to actually like uh create like useful mechanisms?" — same, [01:42:51]
+
+63. `en` 2026-10-02, spoken — "it's like that energy that's like at the moment you feel so much anger or so much greed you just feel like yes this is what I do I don't care about other things." — same, [01:10:12]
+
+64. `en` 2026-10-02, spoken — "They need bread. So let's just tell them eat. Those people if you do those, you have the bread. You just have the rhetoric like bigger and bigger and bigger and then it becomes psychotic" — same, [01:31:17]
+
 ---
 
 ## Open questions and critiques
@@ -394,6 +418,12 @@ The second is 「现代人的分裂」, the split in modern people, and it is an
 11. **The "purpose beyond self is the default attractor" claim carries a lot of weight and has one conversation behind it.** If true it changes the strategy completely — the work is unblocking a suppressed default rather than installing a new one. It deserves the same treatment the drive taxonomy got.
 
 12. **Two finished artifacts are missing from the corpus.** *The Architecture of Wanting* (docx, 2026-03-26: five drive profiles, superposition dynamics, the stress cascade, justification narratives, totalization, self-referential attractors, eight navigational principles with practices, three North Stars, and the bridge to civilizational coordination) and *Territory Without Border* (HTML artifact, 2026-04-14: the five-layer territorial gradient, the Friston/active-inference reading, developmental and primate evidence, Terror Management Theory, 无我 as model loosening,王阳明 resonance, open questions). Between them they are most of this theory's written form. **Recovering them is the single highest-value action for this theory.**
+
+
+**Added 2026-10-02**
+
+13. **Which Confucian mechanisms, acting on which drives?** Ren names pre-Qin and Confucian thought as the tradition with "much higher engineering utility" on how attractors change minds [01:44:18]. That gives question 10 (the positive prescription is thin) a source to draw on. The corpus has no worked reading of it: what 礼, 正名, 教化 and 修身 each do to status-seeking and greed, by what mechanism, and where each one historically failed (外儒内法, 科举 → 八股). That reading is the research this claim needs before it can be published.
+14. **Selection and construction, again.** In the same conversation Ren speaks of minds being selected (molochlization "will push the nervous system … towards that direction of the selection" [00:01:22]) and of minds being constructed ("we could develop very alienated, cancerous or evil like ego" [01:11:23]). Question 8 stands. The two call for different interventions, and the spoken account uses both without separating them.
 
 ---
 

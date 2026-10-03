@@ -6,12 +6,12 @@ Everything Ren has thought, drafted and theorised from 2021 to September 2026, g
 
 | File | What it gives you |
 |---|---|
-| [MAP.md](MAP.md) | The whole corpus on one page: what the central claim is, how the theories connect, and what to do next. |
+| [MAP.md](MAP.md) | The whole corpus on one page: what the central claim is, why the theories exist and what they mean ("Why, and what it means", from Ren's recorded conversation of 2026-10-02), how they connect, and what to do next. |
 | [TIMELINE.md](TIMELINE.md) | How the thinking developed, 2021 to 2026, and where the vocabulary changed. |
 | [GLOSSARY.md](GLOSSARY.md) | The canonical terms, bilingual, with their aliases across drafts and where each was coined. |
 | [OPEN-QUESTIONS.md](OPEN-QUESTIONS.md) | What is unresolved, what contradicts what, and where a hostile reader would attack. |
 | [BOOKS.md](BOOKS.md) | The books this material can support, in the order they should be written. |
-| [drafts/](drafts/) | New writing built from the corpus. `2026-09-04-one-work/` holds the plan for one essay and one short book on a single spine, its gap list, and the first essay draft. `2026-10-02-iaseai-selecting-the-selectors/` holds a conference paper for IASEAI'27 in the anonymous AAAI format: the 2026-10-02 power essay merged with the meta-attractor formal layer, with its build scripts and notes. |
+| [drafts/](drafts/) | New writing built from the corpus. `2026-09-04-one-work/` holds the plan for one essay and one short book on a single spine, its gap list, and the first essay draft. `2026-09-26-community-mission/` holds the position paper and mission (zh, v0.1) for the Chinese AI safety community, with notes on what it draws from and what it leaves out. `2026-10-02-iaseai-selecting-the-selectors/` holds a conference paper for IASEAI'27 in the anonymous AAAI format: the 2026-10-02 power essay merged with the meta-attractor formal layer, with its build scripts and notes. `2026-10-02-shengsheng-en/` holds the English edition of 生生不息论 (about 30,000 words; PDF in `output/pdf/`), a new statement of the whole theory on the v2 plan's structure that brings in the work from August to October, with notes on what it reconciles and leaves out. `2026-10-02-friend-conversation/` holds the automatic transcript, idea inventory and summary of Ren's recorded conversation with Alex, which he named as showing the why and meaning of the theories. |
 | [Evolving community swarms](theories/evolving-community-swarms/README.md) | Exploration opened 2026-09-05: local agent reasoning and a community space that grows into its own software environment. The [updated vision and plan](theories/evolving-community-swarms/next-vision/README.md) aims to surpass existing systems through adaptive boundaries, reusable evidence and sustained learning. Includes the founding context and comparative research. |
 
 New exploration: [Architecture for a living Earth](theories/architecture-for-a-living-earth/README.md), opened 2026-09-13 — branching towers, elevated frameworks, automated construction, circulating materials, and the ecological conditions under which human settlements could support more life.
@@ -19,6 +19,8 @@ New exploration: [Architecture for a living Earth](theories/architecture-for-a-l
 ## The layers
 
 **`theories/<slug>/`** — one folder per theory. `README.md` is the canonical document: the strongest current formulation, the mechanism in prose, every claim with its citation, the genealogy, what earlier versions lost, Ren's own words, the open critiques, and what to read next. The `synthesis-*.md` files beside it are the reading drafts it was built from; they are kept because they carry detail the canonical document compresses.
+
+**`experiments/`** — applied experiments and prototypes informed by the theories. Their implementation choices, speculative assumptions and results are separate from canonical theory. The [circular construction experiment](experiments/circular-construction/README.md) explores regenerative building systems and autonomous robotic construction.
 
 **`sources/`** — a copy of every source document, grouped by origin and never edited. [SOURCES.md](sources/SOURCES.md) records what came from where, with true dates. The originals stay where they were.
 
@@ -38,7 +40,8 @@ The audit found that AI-written sentences had been credited to Ren in several pl
 
 ## Conventions
 
-- The originals are untouched; `sources/` is a snapshot taken on 2026-09-03. New material goes into `sources/` with a line in `SOURCES.md`, then into the relevant `theories/<slug>/README.md` — not into a parallel document.
+- Applied experiments belong in `experiments/`; they do not automatically become theory or source material for canonical claims.
+- The originals are untouched; `sources/` is a snapshot taken on 2026-09-03. New material for the theory corpus goes into `sources/` with a line in `SOURCES.md`, then into the relevant `theories/<slug>/README.md` — not into a parallel document.
 - Chinese and English are equally primary. Terms keep their Chinese form with a gloss on first use.
 - Every claim cites a source path. Ren's own words are quoted verbatim and marked; AI-drafted elaborations and AI reviews are labelled as such, because much of this corpus is AI-assisted writing from Ren's ideas and the distinction matters for publication.
 - Genealogy is preserved. What an earlier version had and a later one dropped is listed rather than silently merged away — a rule that comes from Ren's own standing complaint about lossy consolidation.

@@ -1,0 +1,753 @@
+{
+  "schemaVersion": 1,
+  "title": "Empty-site construction with climbing material carriers",
+  "overallStatus": "specified-not-implemented-or-simulated",
+  "executionPolicy": {
+    "humanPhysicalTasksAllowed": false,
+    "remoteDrivingCountsAsAutonomous": false,
+    "completionRequiresAllTasksAndInterfaces": true,
+    "supportedAbortCountsAsCompletion": false,
+    "custodyRelease": "Receiving restraint and full required connection/stage acceptance must be confirmed before the sender releases; delivery, fastening, verification and carrier release form an overlapping transaction.",
+    "bootstrap": "Mobile robots arrive assembled, charged and carrying secured supplies; self-unload and deploy tools, foundations, first stable frame, climbing interfaces and mobile service without pre-existing site plant or people.",
+    "initialSite": "Empty flat terrain and declared ground/environment conditions; no installed foundations, frame, plant, rails, racks or service docks.",
+    "preferredMaterialRoute": "Arriving ground carriers and payload-carrying climbing robots hand components to construction robots on the growing frame.",
+    "optionalLiftingEquipment": "If a lift, hoist or crane is selected, its delivery, support, robotic assembly, inspection, use/extension, dismantling and departure become mandatory visible tasks for that run. It must not depend on itself to erect its first support.",
+    "demonstrationPriority": "Develop the continuous empty-site-to-completed-building execution alongside physical action evidence. Isolated joint benchmarks are supporting work, not the primary deliverable."
+  },
+  "evidence": {
+    "ledger": {
+      "path": "src/material/README.md",
+      "scope": "Software custody, qualification and mass-balance logic; fixture inputs are synthetic, not physical inspection."
+    },
+    "climb": {
+      "path": "production/physics/climb-prototype/nominal-metrics.json",
+      "scope": "One unloaded local 3.6 m climb; ideal point clamps, rigid rails and disabled limb/rail collisions."
+    },
+    "climb-failure": {
+      "path": "production/physics/climb-prototype/missed-grip-metrics.json",
+      "scope": "One unreachable receiver is rejected; grip returns to its prior receiver; supported aborted climb only."
+    },
+    "placement": {
+      "path": "production/physics/mujoco/nominal-validation.json",
+      "scope": "Prescribed crane carrier with free beam, tension-only slings and measured two-seat release; no autonomous crane."
+    },
+    "placement-failure": {
+      "path": "production/physics/mujoco/missed-seat-validation.json",
+      "scope": "Missed-seat case retains crane support and inhibits approach."
+    },
+    "fastener": {
+      "path": "production/physics/integrated-fastener/mounted-test-results.json",
+      "scope": "Modified isolated mounted tool inserts free pin, withdraws and retains 2 kN axial proof load; completeConstructionFasteningCertified=false."
+    },
+    "connector": {
+      "path": "production/physics/connector-prototype/pullout-validation.json",
+      "scope": "Pin pullout challenge against deployed dogs; no robotic release or reverse assembly."
+    },
+    "structure": {
+      "path": "production/structure/opensees/results.json",
+      "scope": "Independent partial-height elastic equilibrium snapshots with fixed foundations and assumed joints/braces; no capacity acceptance."
+    },
+    "planning": {
+      "path": "production/planning/throughput-study.json",
+      "scope": "Analytical task-count/throughput arithmetic; no whole-building dynamics or autonomous scheduling execution."
+    }
+  },
+  "tasks": [
+    {
+      "id": "A01",
+      "name": "Offsite fabrication and qualification",
+      "machine": "Automated fabrication and inspection cell",
+      "prerequisites": [],
+      "loadCustody": "Fixtures retain parts until robot inspection accepts identity and geometry",
+      "failureHold": "Keep the workpiece clamped in its manufacturing fixture and quarantine its passport; do not load the delivery carrier.",
+      "acceptanceGate": "Accept asset identity, geometry, condition and traceable process evidence before delivery; reject failed qualification.",
+      "status": "software-only",
+      "statusDetail": "Planned; material ledger tests use synthetic inspection inputs",
+      "evidence": [
+        "ledger"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A02",
+      "name": "Robot fleet arrival and incoming transport",
+      "machine": "Self-propelled ground robots and driverless material carriers",
+      "prerequisites": [
+        "A01"
+      ],
+      "loadCustody": "Deck restraints remain engaged through arrival",
+      "failureHold": "Brake at a validated stopping location while deck restraints remain mechanically locked; request only an automated route/recovery action.",
+      "acceptanceGate": "Show the fleet and secured cargo entering the initially empty site; complete the declared driverless route and stopping/cargo-restraint checks.",
+      "status": "planned",
+      "statusDetail": "Planned; no complete fleet arrival or transport simulation",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A03",
+      "name": "Arrival, parking and cargo registration",
+      "machine": "Arriving robots, onboard scanner and carrier controller",
+      "prerequisites": [
+        "A02"
+      ],
+      "loadCustody": "Vehicle restraints retain cargo while robots establish parking and bootstrap work zones",
+      "failureHold": "Keep vehicle cargo restraints locked and inhibit unloading until dock and identity discrepancies resolve.",
+      "acceptanceGate": "Agree asset identities, cargo restraints and parking positions before self-unloading; no prebuilt yard or dock is assumed.",
+      "status": "software-only",
+      "statusDetail": "Planned; software passport logic is partial evidence only",
+      "evidence": [
+        "ledger"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A08",
+      "name": "Bootstrap self-unloading and subsequent cargo unloading",
+      "machine": "Self-unloading carriers and arriving mobile manipulators",
+      "prerequisites": [
+        "A03"
+      ],
+      "loadCustody": "Cargo restraint and gripper overlap until measured gripper custody",
+      "failureHold": "Keep carrier restraints locked when capture fails; after partial pickup establish carrier or independent rack support before releasing the manipulator.",
+      "acceptanceGate": "Unload the first tools and supplies using the arriving fleet itself. Establish measured gripper/support custody before releasing cargo restraints; no erected gantry or crane is a prerequisite.",
+      "status": "planned",
+      "statusDetail": "Planned; no unloading simulation",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A06",
+      "name": "Bootstrap equipment deployment",
+      "machine": "Self-deploying mobile manipulators and ground robots",
+      "prerequisites": [
+        "A08"
+      ],
+      "loadCustody": "Transport/deployment fixtures retain tools, temporary supports and equipment until deployed restraints pass",
+      "failureHold": "Retain transport or independent deployment restraints; do not use incompletely deployed equipment.",
+      "acceptanceGate": "Deploy the selected ground machines, fixtures and storage supports from incoming cargo. Any optional lifting plant requires its own visible support, assembly, inspection and eventual removal sequence.",
+      "status": "planned",
+      "statusDetail": "Planned; self-deployment and conditional lifting-equipment assembly are absent",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A04",
+      "name": "Ground survey and access preparation",
+      "machine": "Survey rover and earthmoving fleet",
+      "prerequisites": [
+        "A08"
+      ],
+      "loadCustody": "Ground equipment keeps tools and spoil in controlled zones",
+      "failureHold": "Park ground equipment with tools secured, retain supported excavations and inhibit foundations when bearing, map or survey evidence fails.",
+      "acceptanceGate": "Use visibly arrived and unloaded survey/ground equipment; confirm geometry, access, bearing assumptions and ground preparation before foundation work.",
+      "status": "planned",
+      "statusDetail": "Planned; no terrain or geotechnical model",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A05",
+      "name": "Foundations and anchors",
+      "machine": "Arriving foundation rig and mobile ground manipulator",
+      "prerequisites": [
+        "A04",
+        "A06"
+      ],
+      "loadCustody": "Rig or fixtures retain components until foundation acceptance",
+      "failureHold": "Keep foundation components supported by deployed ground equipment; retain incomplete excavation support and inhibit frame loading.",
+      "acceptanceGate": "Visibly install the selected foundation/base system and verify its stated ground/load assumptions. Its supplies and tooling must have arrived and been unloaded.",
+      "status": "planned",
+      "statusDetail": "Planned; tower analysis assumes fixed bases",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A07",
+      "name": "Charging and service infrastructure setup",
+      "machine": "Mobile service robot",
+      "prerequisites": [
+        "A06"
+      ],
+      "loadCustody": "Ground supports retain docks and supplies until connections pass",
+      "failureHold": "Keep service equipment on ground restraints, isolate supply interfaces and inhibit use of an unaccepted dock.",
+      "acceptanceGate": "Arriving machines use declared bootstrap reserves to deploy mobile service; accept restraints and supply interfaces before recurring missions exceed those reserves.",
+      "status": "planned",
+      "statusDetail": "Planned; no energy or charging model",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A09",
+      "name": "Yard storage and allocation",
+      "machine": "Yard carrier and rack robot",
+      "prerequisites": [
+        "A08",
+        "A06"
+      ],
+      "loadCustody": "Rack and manipulator overlap custody",
+      "failureHold": "Retain the accepted rack/gripper restraint and quarantine the asset on identity or stability failure; do not allocate it.",
+      "acceptanceGate": "Confirm rack stability and identity; reserve only qualified assets and prove physical retrieval.",
+      "status": "software-only",
+      "statusDetail": "Planned; allocation software does not establish physical storage",
+      "evidence": [
+        "ledger"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A10",
+      "name": "Payload attachment and carrier pickup",
+      "machine": "Ground or climbing carrier, handling robot and payload cradle",
+      "prerequisites": [
+        "A09"
+      ],
+      "loadCustody": "Rack or transport support overlaps with a mechanically engaged carrier restraint",
+      "failureHold": "Retain rack/transport support if the cradle or grip fails; inhibit climb until load restraint and payload limits pass.",
+      "acceptanceGate": "Retrieve an identified component, mechanically secure it to its carrier, verify payload and center of mass, and reserve its usable ground or climbing route. First-frame deliveries use ground routes and do not require an existing frame. If lifting rigging is selected, robots must attach and verify it visibly.",
+      "status": "planned",
+      "statusDetail": "Planned; no loaded carrier pickup or payload-restraint simulation",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A11",
+      "name": "First stable frame and progressive climbing interfaces",
+      "machine": "Ground assembly manipulators, then frame-mounted construction robots",
+      "prerequisites": [
+        "A05",
+        "A06",
+        "A10"
+      ],
+      "loadCustody": "Ground manipulators or existing accepted structure support new members, braces and climbing interfaces",
+      "failureHold": "Retain payload and temporary fixtures; prohibit mounting or extending from unaccepted structure and preserve ground or return access.",
+      "acceptanceGate": "Build the first stable bay within ground reach. Then deliver and install each additional rail/receiver or integrated interface from already accepted structure before a climber uses it.",
+      "status": "planned",
+      "statusDetail": "Planned; existing climb fixtures begin already installed",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A12",
+      "name": "Robot deployment, loaded ascent and work-position travel",
+      "machine": "Climbing material carriers, construction robots and any coupled carrier team",
+      "prerequisites": [
+        "A07",
+        "A11",
+        "A10"
+      ],
+      "loadCustody": "Accepted frame grips retain each robot; payload cradle or tool restraint retains its carried cargo",
+      "failureHold": "Retain the continuing accepted supports; reject failed capture and use an independently validated return or recovery restraint. No additional grip releases after an unresolved failure.",
+      "acceptanceGate": "Show each carrier and assembler attaching from the ground, ascending and reaching its reserved work position. Verify payload/tool-specific finite grips, actuator limits, clearance, return capacity and continuous support. Receiving assemblers must be present and ready before a delivery starts.",
+      "status": "planned",
+      "statusDetail": "Planned loaded transport; existing partial evidence is only an unloaded local 3.6 m climb with ideal clamps",
+      "evidence": [
+        "climb",
+        "climb-failure"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A13",
+      "name": "Material delivery and supported placement",
+      "machine": "Climbing carriers and frame-mounted construction robots",
+      "prerequisites": [
+        "A10",
+        "A11",
+        "A12"
+      ],
+      "loadCustody": "Carrier and receiving assembler/fixture overlap custody; carrier remains attached through fastening and verification",
+      "failureHold": "Keep the component on accepted carrier and receiving supports; wait, return or enter a supported abort on failed rendezvous, capture or seating.",
+      "acceptanceGate": "Reach a reserved delivery position with the receiving assembler already deployed and ready; establish receiving capture, orient and seat the component while retaining sending support. Do not release the carrier at the end of this task.",
+      "status": "planned",
+      "statusDetail": "Planned; earlier prescribed-hoist seating is background evidence, not loaded climbing delivery",
+      "evidence": [
+        "placement",
+        "placement-failure"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A14",
+      "name": "Structural fastening",
+      "machine": "Construction robot with reversible connection tooling",
+      "prerequisites": [
+        "A13"
+      ],
+      "loadCustody": "Carrier, assembler, seats and temporary restraints retain the member throughout fastening",
+      "failureHold": "Retain carrier/assembler and temporary restraint support if insertion, latching or connection verification fails.",
+      "acceptanceGate": "Complete the engineered connections with reachable tooling and verified engagement. Carry support forward to structural-stage acceptance; no timed custody release.",
+      "status": "partial-local-simulation",
+      "statusDetail": "Partial isolated simulation: modified mounted pusher/free pin retains a 2 kN axial proof load; complete building connection absent",
+      "evidence": [
+        "fastener"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A15",
+      "name": "Bracing and structural stage acceptance",
+      "machine": "Brace installers and inspection rover",
+      "prerequisites": [
+        "A14"
+      ],
+      "loadCustody": "Temporary bracing stays until replacement load path passes",
+      "failureHold": "Retain carrier and temporary supports; halt additional loading until brace, joint and stage acceptance passes.",
+      "acceptanceGate": "Install required bracing and accept the current structural stage including simultaneous robots and payloads before carrier release, new ascent or further loading. Bootstrap bracing is established within A11.",
+      "status": "analysis-only",
+      "statusDetail": "Analytical and software evidence only; no robotic brace installation",
+      "evidence": [
+        "structure"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A29",
+      "name": "Carrier release, return and next mission",
+      "machine": "Climbing material carrier or coupled carrier team",
+      "prerequisites": [
+        "A15"
+      ],
+      "loadCustody": "Accepted structural connection retains the installed part before carrier restraints open; frame grips retain the departing robot",
+      "failureHold": "Keep payload restraint if final transfer fails; wait on accepted grips if the return route is blocked, and reserve a supported recovery route.",
+      "acceptanceGate": "Confirm installation and stage acceptance, visibly release the carrier, traverse and descend or route to the next supply task, and return the same robot identity without teleportation.",
+      "status": "planned",
+      "statusDetail": "Planned; no loaded delivery followed by accepted installation and empty return is simulated",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "blocked return, failed release and energy-reserve failure runs"
+      ]
+    },
+    {
+      "id": "A16",
+      "name": "Floors, core, circulation and roof installation",
+      "machine": "Component-specific climbing carriers and construction robots; optional assembled lifting plant only if selected",
+      "prerequisites": [
+        "A15"
+      ],
+      "loadCustody": "Carriers, assemblers and temporary supports retain modules until all required connections pass",
+      "failureHold": "Retain payload restraint and temporary catches; return or secure failed floor, roof, core or stair modules.",
+      "acceptanceGate": "Deliver and install the specified floors, circulation/core and roof through the same pickup, carry, handoff, connection and stage-acceptance transaction. Do not assume existing heavy panels are climbable payloads.",
+      "status": "planned",
+      "statusDetail": "Planned; geometry and catalogue arithmetic do not demonstrate installation",
+      "evidence": [
+        "planning"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A17",
+      "name": "Facade, terraces and weather closure",
+      "machine": "Facade handling and seal robots",
+      "prerequisites": [
+        "A16"
+      ],
+      "loadCustody": "Mechanical grippers and temporary catches retain panels until attachments pass",
+      "failureHold": "Retain panel gripper and mechanical catches; return to an accepted storage support on attachment failure and quarantine seal failures.",
+      "acceptanceGate": "Deliver and attach facade, glazing and terrace modules with weather closures; preserve remaining material routes and robot escape access before closing each area.",
+      "status": "planned",
+      "statusDetail": "Planned; no facade manipulation, attachment or seal test",
+      "evidence": [
+        "planning"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A18",
+      "name": "Services and interior modules",
+      "machine": "Service module and connection robots",
+      "prerequisites": [
+        "A16"
+      ],
+      "loadCustody": "Fixtures retain modules until mechanical and utility acceptance",
+      "failureHold": "Keep modules supported and utilities isolated; lock out downstream commissioning on failed or conflicting connection tests.",
+      "acceptanceGate": "Accept mechanical connections, utility isolation and required pressure/electrical/fire tests before energizing services.",
+      "status": "planned",
+      "statusDetail": "Planned; electrical, fluid and fire performance unmodeled",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A19",
+      "name": "Staged inspection and commissioning",
+      "machine": "Inspection robots and test equipment",
+      "prerequisites": [
+        "A17",
+        "A18"
+      ],
+      "loadCustody": "Accepted supports retain components; unaccepted systems remain isolated and occupancy stays prohibited",
+      "failureHold": "Keep occupancy prohibited and preserve temporary supports; isolate failed utilities and quarantine incomplete acceptance records.",
+      "acceptanceGate": "Inspect the installed building inventory, including roof and specified systems; reject missing or stale acceptance. Repeat affected checks after later closures or temporary-support removal. Final closure and site-finish acceptance occur within A22 before final departure; appearance alone is not commissioning.",
+      "status": "planned",
+      "statusDetail": "Planned; prototype result files are not autonomous inspection evidence",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A20",
+      "name": "Charging and tool exchange",
+      "machine": "Docking climber and service robot",
+      "prerequisites": [
+        "A07"
+      ],
+      "loadCustody": "Independent dock restraint holds robot",
+      "failureHold": "Keep independent docking restraints engaged; retain the previous tool or catch the replacement mechanically; isolate charging and prohibit mission start on insufficient reserve.",
+      "acceptanceGate": "Establish independent dock custody, latch overlap and isolation before tool release or charging; retain mission/recovery energy reserve.",
+      "status": "planned",
+      "statusDetail": "Planned; batteries, electrical energy and tool latches absent",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A21",
+      "name": "Fault recovery",
+      "machine": "Redundant recovery robot and supervisory controller",
+      "prerequisites": [
+        "A06",
+        "A07"
+      ],
+      "loadCustody": "Backup support establishes custody before disturbing failed machine",
+      "failureHold": "Establish redundant mechanical custody before touching a failed machine; if recovery cannot pass, maintain a supported abort without continuing work.",
+      "acceptanceGate": "Inject declared faults; establish backup mechanical custody and complete automated recovery or a mechanically supported abort without human intervention.",
+      "status": "partial-local-simulation",
+      "statusDetail": "Partial local simulation only for returning one missed grip to its previous receiver",
+      "evidence": [
+        "climb-failure"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A22",
+      "name": "Temporary-work recovery, site finish and fleet departure",
+      "machine": "Descending climbers, inspection and ground recovery robots, and service carriers",
+      "prerequisites": [
+        "A19",
+        "A29"
+      ],
+      "loadCustody": "Accepted structure, docks and carriers retain every machine and removed temporary component through cleanup",
+      "failureHold": "Keep necessary supports and escape routes until all dependent machines depart; suspend equipment recovery on unresolved custody.",
+      "acceptanceGate": "Show permitted brace/rail removal, robot descent, final facade/access closure, ground finish/planting and optional lifting-equipment dismantling. Inspect those final works and changed support states before accepting completion. Then pack remaining tools, inspection/service equipment and show the final ground machine driving away.",
+      "status": "planned",
+      "statusDetail": "Planned; complete cleanup, descent and last-machine departure are absent",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A23",
+      "name": "Deconstruction survey and support setup",
+      "machine": "Inspection and temporary support robots",
+      "prerequisites": [
+        "A22"
+      ],
+      "loadCustody": "Existing structure remains until accepted shoring and removal plan",
+      "failureHold": "Keep the existing structure and utilities in their current accepted state until survey, isolation and shoring acceptance; prohibit connection release.",
+      "acceptanceGate": "Begin a later recovery mission with visibly arriving machines, condition survey, isolation and accepted shoring before releasing any existing load path. Construction departure does not itself dismantle the building.",
+      "status": "planned",
+      "statusDetail": "Planned; static stage analyses are not reverse-construction history",
+      "evidence": [
+        "structure"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A24",
+      "name": "Service disconnection and enclosure removal",
+      "machine": "Service isolation and panel removal robots",
+      "prerequisites": [
+        "A23"
+      ],
+      "loadCustody": "Verify isolation and receiving gripper custody before disconnecting",
+      "failureHold": "Keep attachment/gripper restraint overlap and utility isolation; leave a panel/module supported when isolation or receiving custody cannot be confirmed.",
+      "acceptanceGate": "Verify utilities isolated and draining/energy discharge complete; establish receiving custody before any panel/service disconnect.",
+      "status": "planned",
+      "statusDetail": "Planned; no reverse services or facade operation",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A25",
+      "name": "Reverse structural release",
+      "machine": "Connection release robots, material carriers and shoring robots",
+      "prerequisites": [
+        "A24"
+      ],
+      "loadCustody": "Carrier/assembler and shoring take the measured member load before unlatching",
+      "failureHold": "Keep original connections engaged until receiving load pickup is accepted; after partial release retain redundant support and inhibit neighboring removal.",
+      "acceptanceGate": "Establish measured receiving support, actuate reversible connections, extract and carry the member away without destabilizing the residual structure. Optional lifting equipment must already have its own accepted setup.",
+      "status": "planned",
+      "statusDetail": "Planned; pin pullout challenge does not demonstrate robotic unlatching and removal",
+      "evidence": [
+        "connector"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A26",
+      "name": "Recovery sorting and inspection",
+      "machine": "Yard handling and inspection cell",
+      "prerequisites": [
+        "A25"
+      ],
+      "loadCustody": "Identified racks keep recovered components",
+      "failureHold": "Keep parts in identified quarantine racks; issue no reuse qualification when condition, identity or lineage is uncertain.",
+      "acceptanceGate": "Identify, measure and inspect recovered parts; quarantine uncertainty before issuing a new qualification record.",
+      "status": "software-only",
+      "statusDetail": "Software evidence only; physical inspection and qualification absent",
+      "evidence": [
+        "ledger"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A27",
+      "name": "Repair reuse and recycling",
+      "machine": "Repair/refabrication cell and driverless carrier",
+      "prerequisites": [
+        "A26"
+      ],
+      "loadCustody": "Fixtures retain material through repair",
+      "failureHold": "Keep material in repair/refabrication fixtures or quarantine stock; reject reuse allocation and prevent a ledger completion on unmeasured yield or failed inspection.",
+      "acceptanceGate": "Validate real repair and inspection processes; preserve identity on direct reuse and record new lineage, mass losses and process evidence on recycling.",
+      "status": "software-only",
+      "statusDetail": "Software evidence only; yields, energy and inspection fixtures are assumed",
+      "evidence": [
+        "ledger"
+      ],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    },
+    {
+      "id": "A28",
+      "name": "Final plant and foundation recovery",
+      "machine": "Dismantling machines and mobile recovery carrier",
+      "prerequisites": [
+        "A25",
+        "A27"
+      ],
+      "loadCustody": "Last independent mobile carrier retains departing plant",
+      "failureHold": "Keep remaining anchors and deployment supports needed by plant; secure removed parts on an independent carrier and halt last-machine departure when custody is unresolved.",
+      "acceptanceGate": "Prove foundation/anchor removability, sequencing and last-machine recovery; retain supports needed by remaining equipment.",
+      "status": "planned",
+      "statusDetail": "Planned; foundation recovery method depends on engineered design",
+      "evidence": [],
+      "requiredEvidence": [
+        "physical nominal run",
+        "measured custody transfer",
+        "declared operating envelope",
+        "applicable power-loss, capture, sensing and communication failure runs"
+      ]
+    }
+  ],
+  "ongoingRequirements": [
+    "A20",
+    "A21"
+  ],
+  "repeatableStageTasks": [
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "A14",
+    "A15",
+    "A29",
+    "A16",
+    "A17",
+    "A18",
+    "A19"
+  ],
+  "notes": [
+    "Task IDs are stable identifiers, not chronological numbering. This graph is a proposed task-type dependency graph, not simulated timing.",
+    "A11 first-frame work uses ground reach. Repeated A11 instances extend interfaces from accepted prior structure; later-stage climbs depend on those specific instances and the prior A15 acceptance.",
+    "A13 delivery, A14 fastening, A15 stage acceptance and A29 release/return form one continuous custody transaction. The carrier does not release at seating alone.",
+    "A16-A18 module operations instantiate component-specific pickup, carrier delivery, fastening, acceptance and return transactions; the aggregate graph does not substitute for them.",
+    "A20 service and A21 recovery are ongoing readiness requirements, including bootstrap reserves; they are not guaranteed by graph acyclicity.",
+    "Any selected lift, hoist or crane expands A06 into explicit delivery/support/robot-assembly/inspection tasks and A22 into dismantling/removal tasks; no such equipment is mandatory by default.",
+    "Construction completion and later regenerative deconstruction have distinct scopes. A01 is qualified upstream supply at the visible arrival boundary.",
+    "No existing evidence makes the entire new route physically verified. Unloaded climb evidence does not establish payload capacity or loaded handoff.",
+    "Climb motor work is not electrical/battery energy. A single missed-grip recovery does not establish general fault tolerance.",
+    "A12 includes deployment and repositioning of receiving construction robots, not just carriers. Repeated A11 interface work requires those robots to have reached supported work positions.",
+    "A19 inspections occur by installed stage. A22 includes renewed inspection of final closures, support removals and ground finish before final acceptance and departure; earlier commissioning cannot accept parts not yet installed."
+  ],
+  "revisedAt": "2026-10-01",
+  "completionScopes": {
+    "construction": {
+      "upstreamQualifiedSupply": [
+        "A01"
+      ],
+      "requiredTaskTypes": [
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A17",
+        "A18",
+        "A19",
+        "A20",
+        "A21",
+        "A22",
+        "A29"
+      ],
+      "finalState": "Declared building complete, temporary works recovered, all robots and construction equipment departed."
+    },
+    "laterRegenerativeLifecycle": {
+      "prerequisite": "Completed construction and a new inspection/recovery mission",
+      "requiredTaskTypes": [
+        "A23",
+        "A24",
+        "A25",
+        "A26",
+        "A27",
+        "A28"
+      ],
+      "finalState": "Supported dismantling, inspection, qualified reuse or recorded processing losses, recovered plant and declared site residuals."
+    },
+    "meaning": "Each scope requires all instantiated tasks and interfaces, including any selected lifting-equipment branch. Planning completion is distinct from verified physical execution."
+  }
+}

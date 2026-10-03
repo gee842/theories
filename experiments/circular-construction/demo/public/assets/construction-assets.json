@@ -1,0 +1,39 @@
+{
+  "revision": "carrier-construction-v1",
+  "exports": [
+    {
+      "glb": "construction-kit.glb",
+      "roots": [
+        "kit_beam",
+        "kit_beam_half",
+        "kit_brace",
+        "kit_column",
+        "kit_core",
+        "kit_core_half",
+        "kit_entry",
+        "kit_facade",
+        "kit_floor",
+        "kit_foundation",
+        "kit_landing",
+        "kit_pile",
+        "kit_planter",
+        "kit_roof",
+        "kit_service",
+        "kit_stair",
+        "kit_temporary_brace",
+        "kit_terrace"
+      ],
+      "bytes": 526440
+    },
+    {
+      "glb": "construction-robots.glb",
+      "roots": [
+        "assembler",
+        "cargo_rover",
+        "carrier",
+        "ground_builder"
+      ],
+      "bytes": 5410552
+    }
+  ]
+}

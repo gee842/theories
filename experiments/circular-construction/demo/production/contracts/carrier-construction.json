@@ -1,0 +1,869 @@
+{
+  "revision": "carrier-construction-v1",
+  "status": "AUTHORED PROTOTYPE; geometric mass estimates and proposed hardware ratings, not physical qualification",
+  "units": "metres, kilograms, seconds, radians",
+  "coordinates": {
+    "canonical": "right handed SI Z-up, x/y site plan",
+    "blender": "canonical Z-up",
+    "gltf": "right handed Y-up",
+    "sourceToGltf": "(x,y,z) -> (x,z,-y)",
+    "quaternionBasis": "rotation about X by -pi/2",
+    "assetRootOrigin": "kit physical center; carrier/assembler chassis center; ground_builder/cargo_rover ground plane"
+  },
+  "building": {
+    "storeys": 20,
+    "storeyHeightM": 3.2,
+    "widthM": 18,
+    "depthM": 12,
+    "heightM": 64,
+    "bayM": 3,
+    "bays": [
+      6,
+      4
+    ],
+    "gridNodes": [
+      7,
+      5
+    ],
+    "designIntent": "pale expressed steel frame, recessed glazing, removable warm timber soffits and terraces",
+    "structuralSystem": "braced 3m steel grid; lightweight dry core partitions take no structural credit",
+    "scope": "structural shell, floor and roof, stair flights, enclosure, riser/service demonstration modules, terrace and planted modules. Occupancy/fire/acoustic/weather/MEP commissioning and foundation capacity remain unqualified.",
+    "stairBay": {
+      "boundsYUpXZ": [
+        -3,
+        0,
+        -3,
+        3
+      ],
+      "flightRiseM": 1.6,
+      "flightRunM": 3,
+      "risers": 10,
+      "riserM": 0.16,
+      "goingM": 0.3,
+      "walkingWidthM": 1.1,
+      "groundWalkingDatumM": 0.16,
+      "landingSizeM": [
+        3,
+        0.16,
+        1.5
+      ],
+      "nearLandingZ": -2.25,
+      "farLandingZ": 2.25,
+      "floorOpenings": "omit six 3x1m cassettes in x bay[-3,0], z[-3,3] at elevated levels, then install only near full-level landing",
+      "beamRemovals": "omit full-level beams across x[-3,0] at z0 and z3; add half-level landing support and full-level header",
+      "scope": "geometric circulation prototype; stair/core fire rating, guard infill, accessibility and required independent exits are unqualified"
+    }
+  },
+  "materialsDensityKgM3": {
+    "steel": 7850,
+    "aluminium": 2700,
+    "glass": 2500,
+    "timber": 500,
+    "mineral_wool": 100,
+    "cement_board": 900,
+    "soil": 1200
+  },
+  "parts": [
+    {
+      "id": "column",
+      "asset": "kit_column",
+      "dimensionsM_YUp": [
+        0.22,
+        3.2,
+        0.74
+      ],
+      "origin": "physical center",
+      "massKg": 327.858,
+      "massTermsKg": {
+        "SHS220x220x12": 250.798,
+        "two_RHS45x50x3_rails": 26.828,
+        "twenty_CHS36x2_brackets": 10.733,
+        "twenty_receiver_plates": 9.42,
+        "two_endplates": 27.079,
+        "bolt_allowance": 3
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "beam",
+      "asset": "kit_beam",
+      "dimensionsM_YUp": [
+        3,
+        0.26,
+        0.18
+      ],
+      "origin": "physical center",
+      "massKg": 92.928,
+      "massTermsKg": {
+        "RHS180x100x6": 75.737,
+        "two_endplates": 16.165,
+        "four_retaining_pins": 1.026
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "beam_half",
+      "asset": "kit_beam_half",
+      "dimensionsM_YUp": [
+        1.5,
+        0.26,
+        0.18
+      ],
+      "origin": "physical center",
+      "massKg": 55.059,
+      "massTermsKg": {
+        "RHS180x100x6": 37.868,
+        "two_endplates": 16.165,
+        "four_retaining_pins": 1.026
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "brace",
+      "asset": "kit_brace",
+      "dimensionsM_YUp": [
+        3,
+        3.2,
+        0.08
+      ],
+      "origin": "physical center",
+      "massKg": 23.396,
+      "massTermsKg": {
+        "CHS60x3": 18.498,
+        "two_eyes": 4.898
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "floor",
+      "asset": "kit_floor",
+      "dimensionsM_YUp": [
+        3,
+        0.16,
+        1
+      ],
+      "origin": "physical center",
+      "massKg": 139.542,
+      "massTermsKg": {
+        "timber_skin": 42.0,
+        "mineral_core": 21.787,
+        "timber_soffit": 23.047,
+        "two_RHS140x40x2.5_edges": 41.212,
+        "two_endplates": 5.495,
+        "connector_allowance": 6
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "roof",
+      "asset": "kit_roof",
+      "dimensionsM_YUp": [
+        3,
+        0.168,
+        1
+      ],
+      "origin": "physical center",
+      "massKg": 162.342,
+      "massTermsKg": {
+        "timber_skin": 42.0,
+        "mineral_core": 21.787,
+        "timber_soffit": 23.047,
+        "two_RHS140x40x2.5_edges": 41.212,
+        "two_endplates": 5.495,
+        "connector_allowance": 6,
+        "weather_membrane": 22.8
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "terrace",
+      "asset": "kit_terrace",
+      "dimensionsM_YUp": [
+        3,
+        1.18,
+        1
+      ],
+      "origin": "physical center",
+      "massKg": 228.762,
+      "massTermsKg": {
+        "timber_skin": 42.0,
+        "mineral_core": 21.787,
+        "timber_soffit": 23.047,
+        "two_RHS140x40x2.5_edges": 41.212,
+        "two_endplates": 5.495,
+        "connector_allowance": 6,
+        "glass_guard": 77.22,
+        "rail_allowance": 12
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "facade",
+      "asset": "kit_facade",
+      "dimensionsM_YUp": [
+        1.5,
+        3.02,
+        0.12
+      ],
+      "origin": "physical center",
+      "massKg": 254.928,
+      "massTermsKg": {
+        "glass_equivalent24mm": 224.928,
+        "aluminium_frames": 18,
+        "spandrel_and_gaskets": 12
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "core",
+      "asset": "kit_core",
+      "dimensionsM_YUp": [
+        1,
+        3.02,
+        0.12
+      ],
+      "origin": "physical center",
+      "massKg": 152.23,
+      "massTermsKg": {
+        "two_cement_boards": 97.848,
+        "mineral_core": 21.744,
+        "two_hollow_edges": 28.638,
+        "fixings": 4
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "stair",
+      "asset": "kit_stair",
+      "dimensionsM_YUp": [
+        1.1,
+        2.69,
+        3
+      ],
+      "origin": "midpoint of flight rise/run; integral guards extend above; not bounding-box center",
+      "massKg": 147.688,
+      "massTermsKg": {
+        "ten_timber_treads": 66.0,
+        "two_CHS90x4_stringers": 57.688,
+        "connections_and_guard_allowance": 24
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "landing",
+      "asset": "kit_landing",
+      "dimensionsM_YUp": [
+        3,
+        0.16,
+        1.5
+      ],
+      "origin": "physical center",
+      "massKg": 190.409,
+      "massTermsKg": {
+        "timber_skin": 63.0,
+        "mineral_core": 34.027,
+        "timber_soffit": 34.927,
+        "two_RHS140x40x2.5_edges": 41.212,
+        "two_endplates": 8.243,
+        "connector_allowance": 9
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "core_half",
+      "asset": "kit_core_half",
+      "dimensionsM_YUp": [
+        0.75,
+        3.02,
+        0.12
+      ],
+      "origin": "physical center",
+      "massKg": 122.106,
+      "massTermsKg": {
+        "two_cement_boards": 73.386,
+        "mineral_core": 16.082,
+        "two_hollow_edges": 28.638,
+        "fixings": 4
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "entry",
+      "asset": "kit_entry",
+      "dimensionsM_YUp": [
+        1.5,
+        3.02,
+        0.12
+      ],
+      "origin": "physical center",
+      "massKg": 264.672,
+      "massTermsKg": {
+        "glass_transom": 67.2,
+        "glazed_door_leaf": 173.472,
+        "frame_hinges_handles_allowance": 24
+      },
+      "handling": "single carrier; door mechanically latched shut in transport",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "service",
+      "asset": "kit_service",
+      "dimensionsM_YUp": [
+        0.6,
+        3,
+        0.16
+      ],
+      "origin": "physical center",
+      "massKg": 58.26,
+      "massTermsKg": {
+        "backplane_steel_2mm": 28.26,
+        "pipes_cables_insulation_allowance": 26,
+        "three_mounts_allowance": 4
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "pile",
+      "asset": "kit_pile",
+      "dimensionsM_YUp": [
+        0.4,
+        2,
+        0.4
+      ],
+      "origin": "physical center",
+      "massKg": 112.679,
+      "massTermsKg": {
+        "CHS168x10_shaft": 77.93,
+        "two_helix_plates14mm": 22.749,
+        "couplers_allowance": 12
+      },
+      "handling": "ground builder rotary pile tool; multiple segments/qualified ground pile",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "foundation",
+      "asset": "kit_foundation",
+      "dimensionsM_YUp": [
+        0.7,
+        0.4,
+        0.7
+      ],
+      "origin": "physical center",
+      "massKg": 150.306,
+      "massTermsKg": {
+        "two_RHS220x160x12_grillage": 93.899,
+        "baseplate": 43.407,
+        "pile_socket_allowance": 10,
+        "bolts": 3
+      },
+      "handling": "ground builder supported grip",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "planter",
+      "asset": "kit_planter",
+      "dimensionsM_YUp": [
+        1,
+        0.5,
+        0.5
+      ],
+      "origin": "physical center",
+      "massKg": 119.338,
+      "massTermsKg": {
+        "thin_container_allowance": 18,
+        "growing_medium": 89.338,
+        "plants_and_water": 12
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    },
+    {
+      "id": "temporary_brace",
+      "asset": "kit_temporary_brace",
+      "dimensionsM_YUp": [
+        3,
+        3.2,
+        0.08
+      ],
+      "origin": "physical center",
+      "massKg": 24.498,
+      "massTermsKg": {
+        "CHS60x3": 18.498,
+        "end_connection_allowance": 6
+      },
+      "handling": "single carrier",
+      "evidence": "authored design",
+      "connection": "accessible reversible bolts/pins; exact load-rated joint design remains open",
+      "custody": [
+        "delivery vehicle",
+        "stored support",
+        "carrier cradle",
+        "carrier + assembler",
+        "temporary receiver",
+        "accepted installation"
+      ],
+      "installedOrientation": "asset local axes unless explicitly rotated by part pose",
+      "storedOrientation": "horizontal supported cradle; independent stored transform is mandatory"
+    }
+  ],
+  "robot": {
+    "asset": "carrier",
+    "dryMassKg": 320,
+    "massBreakdownKg": {
+      "chassis_batteries": 160,
+      "each_upper_link": 12,
+      "each_lower_link": 10,
+      "each_wrist_grip_ground_gear": 8,
+      "payload_cradle": 40
+    },
+    "specifiedPayloadLimitKg": 350,
+    "capacityEvidence": "SPECULATIVE DESIGN TARGET; loaded physics results must reference this revision and measured payload. No validated350kg rating.",
+    "chassisDimensionsM": [
+      0.66,
+      0.7,
+      1.0
+    ],
+    "sourceForwardAxis": "+X toward frame",
+    "linkLengthM": 0.65,
+    "jointAxis": [
+      0,
+      1,
+      0
+    ],
+    "joints": {
+      "fl": {
+        "hipSourceM": [
+          0,
+          -0.32,
+          0.48
+        ],
+        "kneeRelativeSourceM": [
+          0.65,
+          0,
+          0
+        ],
+        "wristRelativeSourceM": [
+          0.65,
+          0,
+          0
+        ],
+        "gltfNames": [
+          "limb_fl_hip",
+          "limb_fl_knee",
+          "limb_fl_wrist"
+        ]
+      },
+      "fr": {
+        "hipSourceM": [
+          0,
+          0.32,
+          0.48
+        ],
+        "kneeRelativeSourceM": [
+          0.65,
+          0,
+          0
+        ],
+        "wristRelativeSourceM": [
+          0.65,
+          0,
+          0
+        ],
+        "gltfNames": [
+          "limb_fr_hip",
+          "limb_fr_knee",
+          "limb_fr_wrist"
+        ]
+      },
+      "rl": {
+        "hipSourceM": [
+          0,
+          -0.32,
+          -0.48
+        ],
+        "kneeRelativeSourceM": [
+          0.65,
+          0,
+          0
+        ],
+        "wristRelativeSourceM": [
+          0.65,
+          0,
+          0
+        ],
+        "gltfNames": [
+          "limb_rl_hip",
+          "limb_rl_knee",
+          "limb_rl_wrist"
+        ]
+      },
+      "rr": {
+        "hipSourceM": [
+          0,
+          0.32,
+          -0.48
+        ],
+        "kneeRelativeSourceM": [
+          0.65,
+          0,
+          0
+        ],
+        "wristRelativeSourceM": [
+          0.65,
+          0,
+          0
+        ],
+        "gltfNames": [
+          "limb_rr_hip",
+          "limb_rr_knee",
+          "limb_rr_wrist"
+        ]
+      }
+    },
+    "jointLimitsRad": {
+      "hip": [
+        -2.4,
+        2.4
+      ],
+      "knee": [
+        -2.7,
+        2.7
+      ]
+    },
+    "proposedActuatorTorqueNm": {
+      "hip": 3000,
+      "knee": 2000
+    },
+    "proposedGripForceLimitN": 16000,
+    "groundChassisHeightM": 0.8,
+    "cradleCOMSourceM": [
+      -0.61,
+      0,
+      0
+    ],
+    "cradlePayloadOrientation": "beam longitudinal SI Y; long columns carried horizontally then rotated under supported assembly custody",
+    "payloadMountGltfM": [
+      -0.61,
+      0,
+      0
+    ],
+    "clamp": {
+      "gripContactRelativeSourceM": [
+        0.135,
+        0,
+        0
+      ],
+      "jawOpenCenterLateralM": 0.15,
+      "jawRailCaptureCenterLateralM": 0.045,
+      "jawStrokeM": 0.105,
+      "physicsContactCaveat": "ideal wrist constraints do not model the offset jaw throat or moving contact",
+      "clearOpeningM": 0.26,
+      "jawThicknessM": 0.04,
+      "fingerLengthM": 0.13,
+      "fingerDepthM": 0.11,
+      "retainRule": "retain load until installation support acceptance; overlap carrier+assembler custody"
+    },
+    "rail": {
+      "relativeToColumnCenterSourceM": [
+        [
+          0.18,
+          -0.32,
+          0
+        ],
+        [
+          0.18,
+          0.32,
+          0
+        ]
+      ],
+      "receiverPitchM": 0.32,
+      "receiverHeightsRelativeToColumnCenterM": [
+        -1.44,
+        -1.1199999999999999,
+        -0.7999999999999999,
+        -0.48,
+        -0.15999999999999992,
+        0.16000000000000014,
+        0.48,
+        0.8000000000000003,
+        1.12,
+        1.44
+      ],
+      "railSectionM": [
+        0.045,
+        0.05,
+        0.003
+      ],
+      "includedInColumnMass": true,
+      "permanent": "integral structural maintenance interfaces; not temporary rails requiring removal"
+    },
+    "representativeClimb": {
+      "chassisStartSourceM": [
+        0,
+        0,
+        1.28
+      ],
+      "columnAxisXM": 0.93,
+      "columnYawSourceRad": 3.141592653589793,
+      "gripRailXM": 0.75,
+      "railYsM": [
+        -0.32,
+        0.32
+      ]
+    },
+    "assembler": "same articulated chassis with visible dual support/fastening head; payload support depends on temporary receiver and simultaneous carrier support",
+    "finiteGripPrototype": {
+      "status": "local finite-contact prototype, not qualified climbing",
+      "wristActuated": true,
+      "wristAxisSource": [
+        0,
+        1,
+        0
+      ],
+      "wristRangeRad": [
+        -2.7,
+        2.7
+      ],
+      "wristTorqueBoundNm": 400,
+      "jawMotorForceBoundN": 8000,
+      "nominalClosingForcePerJawN": 4000,
+      "assumedPadFriction": 0.65,
+      "initialChassisSourceM": [
+        0,
+        0,
+        1.44
+      ],
+      "captureBetweenReceiverPlates": true,
+      "wristToContactSourceM": [
+        0.135,
+        0,
+        0
+      ],
+      "fixtureColumnSourceXM": 0.93,
+      "fixtureColumnYawSourceRad": 3.141592653589793
+    }
+  },
+  "foundation": {
+    "method": "segmented removable steel screw piles and bolted steel grillage caps",
+    "assumptions": "Site surveyed, level, obstruction-free, geotechnically suitable strata at engineered depth. Pile number/depth/capacity/settlement unqualified. Visible pile installation is a planning sequence, not adequate foundation evidence.",
+    "residuals": "Ground disturbance and displaced soil remain accounted as site residual; no zero-impact soil claim."
+  },
+  "buildingCompletionClaim": "completed planned installation scope only; not certified inhabitable building",
+  "notVerified": [
+    "20-storey stability and code compliance",
+    "pile geotechnical design",
+    "joint capacities and fatigue",
+    "carrying350kg while climbing",
+    "wind and tall facade handling",
+    "fire/acoustic/thermal performance",
+    "energy duty cycle",
+    "human-safe autonomous operation"
+  ],
+  "assetFiles": {
+    "kit": "public/assets/construction-kit.glb",
+    "robots": "public/assets/construction-robots.glb",
+    "editableKit": "production/blender/construction-kit.blend",
+    "editableRobots": "production/blender/construction-robots.blend",
+    "generator": "production/blender/build_carrier_construction.py"
+  }
+}

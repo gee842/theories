@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "model": "production/physics/dual-end/nominal.xml",
+  "assetId": "placement",
+  "coordinates": "MJCF Z-up; export glTF p=(x,z,-y), quaternion xyzw",
+  "dynamicBinding": "Every named non-world MuJoCo body is exported; glTF node name must exactly match body name, geometry local to body origin. Include hoist_carrier as a dynamic body.",
+  "mirror": "Right robot, bracket, pin and magazine are the left assemblies rotated pi around world Z about (9,-12); names gain _right. Beam bore right is local half-turn about Z.",
+  "beam": {"body":"lifted_beam","lengthM":5.6,"depthM":0.45,"widthM":0.3,"flangeThicknessM":0.018,"webThicknessM":0.009,"initialPositionZUp":[9,-12,44.7],"seatCenterZUp":[9,-12,43.425]},
+  "seatOriginsZUp": [[6.2,-12,43.14],[11.8,-12,43.14]],
+  "connector": {"type":"free pin with opposed spring dogs; annular lug contact","boreRadiusM":0.024,"lugRadiusM":0.060,"beamLugThicknessM":0.030,"bracketThicknessM":0.020,"shaftRadiusM":0.012,"shaftLengthM":0.085,"dogTravelM":0.030,"leftBracketOriginZUp":[6.2,-12,43.2],"leftPinInitialOriginZUp":[5.831,-11.915,43.326606]},
+  "keyBodies": ["robot_chassis","robot_chassis_right","robot_tool","robot_tool_right","lifted_beam","hoist_carrier","pin","pin_right","retention_dog","retention_dog_right","retention_dog_opposite","retention_dog_opposite_right","magazine","magazine_right","magazine_gate","magazine_gate_right","receiving_stop","receiving_stop_right","support_bracket","support_bracket_right","seat_left","seat_right"],
+  "limitations": ["Ideal robot rail grip welds only; no fastening equality", "Prescribed crane carrier; tension-only compliant slings", "Concept tool/magazine geometry and rigid workcell; not certified hardware"]
+}

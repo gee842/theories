@@ -1,0 +1,8 @@
+00:00.196  translation      | WARNING Falling back to standard locale ("C")
+/Users/ren/theories/research/circular-construction/demo/production/blender/preview_circulation.py:37: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.65,.70,.75,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.65
+00:13.812  render           | Saved: '/Users/ren/theories/research/circular-construction/demo/public/assets/construction-circulation-preview.png'
+Info: Saved as "construction-circulation-preview.blend"
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

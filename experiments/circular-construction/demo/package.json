@@ -1,0 +1,23 @@
+{
+  "name": "circular-construction-demonstrator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "verify:production": "node scripts/verifyProduction.mjs",
+    "contact:check": "node scripts/contactBridge.mjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0",
+    "vitest": "^4.0.0"
+  }
+}

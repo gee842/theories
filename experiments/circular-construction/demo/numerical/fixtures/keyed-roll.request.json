@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "request_id": "keyed-roll",
+  "world_revision": 7,
+  "input_fingerprint": "fixture-keyed-roll-v1",
+  "gravity_m_s2": [
+    0,
+    0,
+    -10
+  ],
+  "loads": [
+    {
+      "id": "robot",
+      "mass_kg": 10,
+      "position_m": [
+        0,
+        0.2,
+        0
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "id": "-1",
+      "position_m": [
+        -1,
+        0,
+        0
+      ],
+      "kind": "keyed",
+      "force_bounds_N": {
+        "lower": [
+          -1000,
+          -1000,
+          -1000
+        ],
+        "upper": [
+          1000,
+          1000,
+          1000
+        ]
+      },
+      "moment_bounds_Nm": {
+        "lower": [
+          -10,
+          -10,
+          -10
+        ],
+        "upper": [
+          10,
+          10,
+          10
+        ]
+      }
+    },
+    {
+      "id": "0",
+      "position_m": [
+        0,
+        0,
+        0
+      ],
+      "kind": "keyed",
+      "force_bounds_N": {
+        "lower": [
+          -1000,
+          -1000,
+          -1000
+        ],
+        "upper": [
+          1000,
+          1000,
+          1000
+        ]
+      },
+      "moment_bounds_Nm": {
+        "lower": [
+          -10,
+          -10,
+          -10
+        ],
+        "upper": [
+          10,
+          10,
+          10
+        ]
+      }
+    },
+    {
+      "id": "1",
+      "position_m": [
+        1,
+        0,
+        0
+      ],
+      "kind": "keyed",
+      "force_bounds_N": {
+        "lower": [
+          -1000,
+          -1000,
+          -1000
+        ],
+        "upper": [
+          1000,
+          1000,
+          1000
+        ]
+      },
+      "moment_bounds_Nm": {
+        "lower": [
+          -10,
+          -10,
+          -10
+        ],
+        "upper": [
+          10,
+          10,
+          10
+        ]
+      }
+    }
+  ]
+}

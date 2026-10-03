@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:circular-construction:contact-request:1",
+  "title": "Contact wrench request version 1",
+  "type": "object",
+  "required": ["schema_version", "request_id", "world_revision", "input_fingerprint", "loads", "contacts"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "request_id": {"type": "string", "minLength": 1},
+    "world_revision": {"type": "integer", "minimum": 0},
+    "input_fingerprint": {"type": "string", "minLength": 1},
+    "gravity_m_s2": {"$ref": "#/$defs/vector"},
+    "loads": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["position_m"],
+        "properties": {
+          "id": {"type": "string"},
+          "position_m": {"$ref": "#/$defs/vector"},
+          "mass_kg": {"type": "number", "minimum": 0},
+          "force_N": {"$ref": "#/$defs/vector"},
+          "moment_Nm": {"$ref": "#/$defs/vector"}
+        }
+      }
+    },
+    "contacts": {
+      "type": "array", "minItems": 1, "maxItems": 32,
+      "items": {
+        "type": "object", "required": ["id", "position_m", "kind"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "position_m": {"$ref": "#/$defs/vector"},
+          "kind": {"enum": ["point", "keyed"]},
+          "force_bounds_N": {"$ref": "#/$defs/bounds"},
+          "moment_bounds_Nm": {"$ref": "#/$defs/bounds"}
+        }
+      }
+    },
+    "require_actuator_limits": {"type": "boolean"},
+    "actuator_constraints": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["id", "wrench_coefficients"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "gravity_torque_Nm": {"type": "number"},
+          "lower_Nm": {"type": ["number", "null"]},
+          "upper_Nm": {"type": ["number", "null"]},
+          "wrench_coefficients": {
+            "type": "array", "minItems": 0,
+            "items": {
+              "type": "object", "required": ["contact_id", "force_to_torque_m"],
+              "properties": {
+                "contact_id": {"type": "string", "minLength": 1},
+                "force_to_torque_m": {"$ref": "#/$defs/vector"},
+                "moment_to_torque": {"$ref": "#/$defs/vector"}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "vector": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+    "nullableVector": {"type": ["array", "null"], "minItems": 3, "maxItems": 3, "items": {"type": ["number", "null"]}},
+    "bounds": {
+      "type": ["object", "null"],
+      "properties": {"lower": {"$ref": "#/$defs/nullableVector"}, "upper": {"$ref": "#/$defs/nullableVector"}}
+    }
+  }
+}

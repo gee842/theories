@@ -1,0 +1,8 @@
+00:00.227  translation      | WARNING Falling back to standard locale ("C")
+/Users/ren/theories/research/circular-construction/demo/production/blender/preview_carrier_construction.py:21: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.66,.72,.76,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.5
+00:07.218  render           | Saved: '/Users/ren/theories/research/circular-construction/demo/public/assets/construction-carrier-preview.png'
+00:17.694  render           | Saved: '/Users/ren/theories/research/circular-construction/demo/public/assets/construction-clamp-preview.png'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

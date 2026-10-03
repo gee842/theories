@@ -1,0 +1,567 @@
+{
+  "scope": "Independent 3D beam-column linear-elastic numerical study. No visible trace event binding.",
+  "physical_release_authorized": false,
+  "cases": [
+    {
+      "id": "fixture-A-nominal",
+      "fixture": "A",
+      "status": "unverified",
+      "world_revision": 10,
+      "request_sha256": "10578d7451c1269289a0c238e0b08aac14923593d5be58de6d43ce8c8056223f",
+      "binding": "Independent numerical study, not bound to visible trace events or current world revision.",
+      "source_sha256": {
+        "src/view/site.ts": "3a3f17351e3911ffffbb7d3280e00078527edaccd1a94703614845ed2c93354c",
+        "src/connectors/bench.ts": "96d423453c0c0523ab653b957cd57cb73896bda3c2c380d212287d4235b77a34",
+        "src/scenarios/beam.ts": "fd8a818558b2732a4bb9ee6e57630695664198bccece849aeb7869e52c51df40"
+      },
+      "contact_request_sha256": "5f3570053a27391235c8455f4957848805cb3b9bb3d053c4abd165e68c59baff",
+      "contact_result_sha256": "c8182b5febc18fa72fb42d0a644dc6bc04e047b0a87bcaefa18695308f884b9c",
+      "contact_result_status": "passed",
+      "contact_actuator_status": "included",
+      "contact_actuator_row_count": 24,
+      "contact_capacity_source": "assumed",
+      "stages": [
+        {
+          "id": "temporary-capture",
+          "status": "unverified",
+          "max_nodal_translation_m": 4.2734540925114184e-05,
+          "max_member_translation_m": 0.00016114340922156845,
+          "max_member_rotation_rad": 0.00011875135913205752,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 4428.318859353325,
+            "scaled_max_eigenvalue": 7361406743056.333,
+            "scaled_condition_number": 1662347942.1559386,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 4.952916299316712e-09,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "final-joint",
+          "status": "unverified",
+          "max_nodal_translation_m": 3.205891615195439e-05,
+          "max_member_translation_m": 0.00016112347009564418,
+          "max_member_rotation_rad": 0.00011867542483821918,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.94260678103,
+            "scaled_max_eigenvalue": 7361406822632.356,
+            "scaled_condition_number": 39472208.99145017,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 1.2248641212408984e-08,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "hoist-handoff",
+          "status": "unverified",
+          "max_nodal_translation_m": 3.960767400213149e-05,
+          "max_member_translation_m": 0.00016116662417624302,
+          "max_member_rotation_rad": 0.00011883025038209716,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.94260678103,
+            "scaled_max_eigenvalue": 7361406822632.356,
+            "scaled_condition_number": 39472208.99145017,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 2.8010163077851757e-09,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "hoist-released",
+          "status": "unverified",
+          "max_nodal_translation_m": 4.7367976275269125e-05,
+          "max_member_translation_m": 0.0001612099929412299,
+          "max_member_rotation_rad": 0.00011898642972949972,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.94260678103,
+            "scaled_max_eigenvalue": 7361406822632.356,
+            "scaled_condition_number": 39472208.99145017,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 2.736442183959298e-09,
+          "failed_capacity_ids": []
+        }
+      ],
+      "transfer_gate": {
+        "numerical_gate_passed": false,
+        "block_transfer_load": true,
+        "reasons": [
+          "structural_model_not_passed"
+        ],
+        "physical_release_authorized": false
+      }
+    },
+    {
+      "id": "fixture-B-nominal",
+      "fixture": "B",
+      "status": "unverified",
+      "world_revision": 10,
+      "request_sha256": "276e22c573cfc16be2197c7436efca26f4dde990174e463ba295fe3fa8203cda",
+      "binding": "Independent numerical study, not bound to visible trace events or current world revision.",
+      "source_sha256": {
+        "src/view/site.ts": "3a3f17351e3911ffffbb7d3280e00078527edaccd1a94703614845ed2c93354c",
+        "src/connectors/bench.ts": "96d423453c0c0523ab653b957cd57cb73896bda3c2c380d212287d4235b77a34",
+        "src/scenarios/beam.ts": "fd8a818558b2732a4bb9ee6e57630695664198bccece849aeb7869e52c51df40"
+      },
+      "contact_request_sha256": "5f3570053a27391235c8455f4957848805cb3b9bb3d053c4abd165e68c59baff",
+      "contact_result_sha256": "c8182b5febc18fa72fb42d0a644dc6bc04e047b0a87bcaefa18695308f884b9c",
+      "contact_result_status": "passed",
+      "contact_actuator_status": "included",
+      "contact_actuator_row_count": 24,
+      "contact_capacity_source": "assumed",
+      "stages": [
+        {
+          "id": "temporary-capture",
+          "status": "unverified",
+          "max_nodal_translation_m": 5.253658279166046e-05,
+          "max_member_translation_m": 0.00016572092063506894,
+          "max_member_rotation_rad": 0.00012109570578559667,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 4428.318859355346,
+            "scaled_max_eigenvalue": 7361406743056.332,
+            "scaled_condition_number": 1662347942.1551797,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 2.2517269826494157e-08,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "final-joint",
+          "status": "unverified",
+          "max_nodal_translation_m": 3.9952369828985456e-05,
+          "max_member_translation_m": 0.000165811122256037,
+          "max_member_rotation_rad": 0.00012114982051108781,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.9426061518,
+            "scaled_max_eigenvalue": 7361406822632.358,
+            "scaled_condition_number": 39472208.991583355,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 1.2998270904063247e-08,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "hoist-handoff",
+          "status": "unverified",
+          "max_nodal_translation_m": 4.5928451574218683e-05,
+          "max_member_translation_m": 0.00016616149217924792,
+          "max_member_rotation_rad": 0.00012131087929419811,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.9426061518,
+            "scaled_max_eigenvalue": 7361406822632.358,
+            "scaled_condition_number": 39472208.991583355,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 1.1146617850954499e-08,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "hoist-released",
+          "status": "unverified",
+          "max_nodal_translation_m": 5.250349583211454e-05,
+          "max_member_translation_m": 0.00016652106247584618,
+          "max_member_rotation_rad": 0.00012147651938972828,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.9426061518,
+            "scaled_max_eigenvalue": 7361406822632.358,
+            "scaled_condition_number": 39472208.991583355,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 2.0432690696078506e-08,
+          "failed_capacity_ids": []
+        }
+      ],
+      "transfer_gate": {
+        "numerical_gate_passed": false,
+        "block_transfer_load": true,
+        "reasons": [
+          "structural_model_not_passed"
+        ],
+        "physical_release_authorized": false
+      }
+    },
+    {
+      "id": "fixture-A-missing-restraint",
+      "fixture": "A",
+      "status": "failed",
+      "world_revision": 10,
+      "request_sha256": "5a142b39b5e989ff487b05b25ade38e4c3e3e2b2fc477c81171dfa56ed7ad6c3",
+      "binding": "Independent numerical study, not bound to visible trace events or current world revision.",
+      "source_sha256": {
+        "src/view/site.ts": "3a3f17351e3911ffffbb7d3280e00078527edaccd1a94703614845ed2c93354c",
+        "src/connectors/bench.ts": "96d423453c0c0523ab653b957cd57cb73896bda3c2c380d212287d4235b77a34",
+        "src/scenarios/beam.ts": "fd8a818558b2732a4bb9ee6e57630695664198bccece849aeb7869e52c51df40"
+      },
+      "contact_request_sha256": "5f3570053a27391235c8455f4957848805cb3b9bb3d053c4abd165e68c59baff",
+      "contact_result_sha256": "c8182b5febc18fa72fb42d0a644dc6bc04e047b0a87bcaefa18695308f884b9c",
+      "contact_result_status": "passed",
+      "contact_actuator_status": "included",
+      "contact_actuator_row_count": 24,
+      "contact_capacity_source": "assumed",
+      "stages": [
+        {
+          "id": "temporary-capture",
+          "status": "failed",
+          "max_nodal_translation_m": null,
+          "max_member_translation_m": null,
+          "max_member_rotation_rad": null,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 10,
+            "scaled_min_eigenvalue": -0.0003116403330525133,
+            "scaled_max_eigenvalue": 7361406743059.279,
+            "scaled_condition_number": null,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": "mechanism_or_numerically_unresolved_stiffness",
+          "max_equilibrium_residual": null,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "final-joint",
+          "status": "failed",
+          "max_nodal_translation_m": null,
+          "max_member_translation_m": null,
+          "max_member_rotation_rad": null,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 6,
+            "scaled_min_eigenvalue": -0.0004951358598083342,
+            "scaled_max_eigenvalue": 7361406822635.3,
+            "scaled_condition_number": null,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": "mechanism_or_numerically_unresolved_stiffness",
+          "max_equilibrium_residual": null,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "hoist-handoff",
+          "status": "failed",
+          "max_nodal_translation_m": null,
+          "max_member_translation_m": null,
+          "max_member_rotation_rad": null,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 6,
+            "scaled_min_eigenvalue": -0.0004951358598083342,
+            "scaled_max_eigenvalue": 7361406822635.3,
+            "scaled_condition_number": null,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": "mechanism_or_numerically_unresolved_stiffness",
+          "max_equilibrium_residual": null,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "hoist-released",
+          "status": "failed",
+          "max_nodal_translation_m": null,
+          "max_member_translation_m": null,
+          "max_member_rotation_rad": null,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 6,
+            "scaled_min_eigenvalue": -0.0004951358598083342,
+            "scaled_max_eigenvalue": 7361406822635.3,
+            "scaled_condition_number": null,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": "mechanism_or_numerically_unresolved_stiffness",
+          "max_equilibrium_residual": null,
+          "failed_capacity_ids": []
+        }
+      ],
+      "transfer_gate": {
+        "numerical_gate_passed": false,
+        "block_transfer_load": true,
+        "reasons": [
+          "structural_model_not_passed"
+        ],
+        "physical_release_authorized": false
+      }
+    },
+    {
+      "id": "fixture-A-missing-capture-roll",
+      "fixture": "A",
+      "status": "failed",
+      "world_revision": 10,
+      "request_sha256": "359847b7b03dd29a4e02514da0141add951214c2b94ef30cb83437c5b6570f33",
+      "binding": "Independent numerical study, not bound to visible trace events or current world revision.",
+      "source_sha256": {
+        "src/view/site.ts": "3a3f17351e3911ffffbb7d3280e00078527edaccd1a94703614845ed2c93354c",
+        "src/connectors/bench.ts": "96d423453c0c0523ab653b957cd57cb73896bda3c2c380d212287d4235b77a34",
+        "src/scenarios/beam.ts": "fd8a818558b2732a4bb9ee6e57630695664198bccece849aeb7869e52c51df40"
+      },
+      "contact_request_sha256": "5f3570053a27391235c8455f4957848805cb3b9bb3d053c4abd165e68c59baff",
+      "contact_result_sha256": "c8182b5febc18fa72fb42d0a644dc6bc04e047b0a87bcaefa18695308f884b9c",
+      "contact_result_status": "passed",
+      "contact_actuator_status": "included",
+      "contact_actuator_row_count": 24,
+      "contact_capacity_source": "assumed",
+      "stages": [
+        {
+          "id": "temporary-capture",
+          "status": "failed",
+          "max_nodal_translation_m": null,
+          "max_member_translation_m": null,
+          "max_member_rotation_rad": null,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 1,
+            "scaled_min_eigenvalue": -8.385621170306123e-09,
+            "scaled_max_eigenvalue": 7361406743056.333,
+            "scaled_condition_number": null,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": "mechanism_or_numerically_unresolved_stiffness",
+          "max_equilibrium_residual": null,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "final-joint",
+          "status": "unverified",
+          "max_nodal_translation_m": 3.205891615195439e-05,
+          "max_member_translation_m": 0.00016112347009564418,
+          "max_member_rotation_rad": 0.00011867542483821918,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.94260678103,
+            "scaled_max_eigenvalue": 7361406822632.356,
+            "scaled_condition_number": 39472208.99145017,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 1.2248641212408984e-08,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "hoist-handoff",
+          "status": "unverified",
+          "max_nodal_translation_m": 3.960767400213149e-05,
+          "max_member_translation_m": 0.00016116662417624302,
+          "max_member_rotation_rad": 0.00011883025038209716,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.94260678103,
+            "scaled_max_eigenvalue": 7361406822632.356,
+            "scaled_condition_number": 39472208.99145017,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 2.8010163077851757e-09,
+          "failed_capacity_ids": []
+        },
+        {
+          "id": "hoist-released",
+          "status": "unverified",
+          "max_nodal_translation_m": 4.7367976275269125e-05,
+          "max_member_translation_m": 0.0001612099929412299,
+          "max_member_rotation_rad": 0.00011898642972949972,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.94260678103,
+            "scaled_max_eigenvalue": 7361406822632.356,
+            "scaled_condition_number": 39472208.99145017,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 2.736442183959298e-09,
+          "failed_capacity_ids": []
+        }
+      ],
+      "transfer_gate": {
+        "numerical_gate_passed": false,
+        "block_transfer_load": true,
+        "reasons": [
+          "structural_model_not_passed"
+        ],
+        "physical_release_authorized": false
+      }
+    },
+    {
+      "id": "fixture-A-weak-member",
+      "fixture": "A",
+      "status": "failed",
+      "world_revision": 10,
+      "request_sha256": "6a49b865a45bd5418712555df7ebc0180cae938e3da0a0101deb170fafdaf6f5",
+      "binding": "Independent numerical study, not bound to visible trace events or current world revision.",
+      "source_sha256": {
+        "src/view/site.ts": "3a3f17351e3911ffffbb7d3280e00078527edaccd1a94703614845ed2c93354c",
+        "src/connectors/bench.ts": "96d423453c0c0523ab653b957cd57cb73896bda3c2c380d212287d4235b77a34",
+        "src/scenarios/beam.ts": "fd8a818558b2732a4bb9ee6e57630695664198bccece849aeb7869e52c51df40"
+      },
+      "contact_request_sha256": "5f3570053a27391235c8455f4957848805cb3b9bb3d053c4abd165e68c59baff",
+      "contact_result_sha256": "c8182b5febc18fa72fb42d0a644dc6bc04e047b0a87bcaefa18695308f884b9c",
+      "contact_result_status": "passed",
+      "contact_actuator_status": "included",
+      "contact_actuator_row_count": 24,
+      "contact_capacity_source": "assumed",
+      "stages": [
+        {
+          "id": "temporary-capture",
+          "status": "failed",
+          "max_nodal_translation_m": 4.2734540925114184e-05,
+          "max_member_translation_m": 0.00016114340922156845,
+          "max_member_rotation_rad": 0.00011875135913205752,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 4428.318859353325,
+            "scaled_max_eigenvalue": 7361406743056.333,
+            "scaled_condition_number": 1662347942.1559386,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 4.952916299316712e-09,
+          "failed_capacity_ids": [
+            "member:beam-0-0.09",
+            "member:beam-0.09-0.5",
+            "member:beam-0.5-1",
+            "member:beam-1-1.5",
+            "member:beam-1.5-2",
+            "member:beam-2-2.5",
+            "member:beam-2.5-2.91",
+            "member:beam-2.91-3"
+          ]
+        },
+        {
+          "id": "final-joint",
+          "status": "failed",
+          "max_nodal_translation_m": 3.205891615195439e-05,
+          "max_member_translation_m": 0.00016112347009564418,
+          "max_member_rotation_rad": 0.00011867542483821918,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.94260678103,
+            "scaled_max_eigenvalue": 7361406822632.356,
+            "scaled_condition_number": 39472208.99145017,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 1.2248641212408984e-08,
+          "failed_capacity_ids": [
+            "member:beam-0-0.09",
+            "member:beam-0.09-0.5",
+            "member:beam-0.5-1",
+            "member:beam-1-1.5",
+            "member:beam-1.5-2",
+            "member:beam-2-2.5",
+            "member:beam-2.5-2.91",
+            "member:beam-2.91-3"
+          ]
+        },
+        {
+          "id": "hoist-handoff",
+          "status": "failed",
+          "max_nodal_translation_m": 3.960767400213149e-05,
+          "max_member_translation_m": 0.00016116662417624302,
+          "max_member_rotation_rad": 0.00011883025038209716,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.94260678103,
+            "scaled_max_eigenvalue": 7361406822632.356,
+            "scaled_condition_number": 39472208.99145017,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 2.8010163077851757e-09,
+          "failed_capacity_ids": [
+            "member:beam-0-0.09",
+            "member:beam-0.09-0.5",
+            "member:beam-0.5-1",
+            "member:beam-1-1.5",
+            "member:beam-1.5-2",
+            "member:beam-2-2.5",
+            "member:beam-2.5-2.91",
+            "member:beam-2.91-3"
+          ]
+        },
+        {
+          "id": "hoist-released",
+          "status": "failed",
+          "max_nodal_translation_m": 4.7367976275269125e-05,
+          "max_member_translation_m": 0.0001612099929412299,
+          "max_member_rotation_rad": 0.00011898642972949972,
+          "stability": {
+            "mechanism_or_near_mechanism_count": 0,
+            "scaled_min_eigenvalue": 186495.94260678103,
+            "scaled_max_eigenvalue": 7361406822632.356,
+            "scaled_condition_number": 39472208.99145017,
+            "characteristic_length_m": 3.0,
+            "rank_relative_tolerance": 1e-12,
+            "condition_limit": 10000000000.0
+          },
+          "reason": null,
+          "max_equilibrium_residual": 2.736442183959298e-09,
+          "failed_capacity_ids": [
+            "member:beam-0-0.09",
+            "member:beam-0.09-0.5",
+            "member:beam-0.5-1",
+            "member:beam-1-1.5",
+            "member:beam-1.5-2",
+            "member:beam-2-2.5",
+            "member:beam-2.5-2.91",
+            "member:beam-2.91-3"
+          ]
+        }
+      ],
+      "transfer_gate": {
+        "numerical_gate_passed": false,
+        "block_transfer_load": true,
+        "reasons": [
+          "structural_model_not_passed"
+        ],
+        "physical_release_authorized": false
+      }
+    }
+  ]
+}

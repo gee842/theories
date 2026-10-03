@@ -1,0 +1,82 @@
+{
+  "scenario": "missed-seat",
+  "mujocoVersion": "3.14.0",
+  "timestepSeconds": 0.002,
+  "durationSeconds": 24.0,
+  "beamMassKg": 638.5629599999999,
+  "robotMassKg": 137.0,
+  "events": [
+    {
+      "time": 5.502,
+      "event": "front-left rail grip released; three locks retain chassis"
+    },
+    {
+      "time": 9.502,
+      "event": "front-left lock reacquired within 18 mm capture envelope",
+      "errorM": 0.012209868500082464
+    }
+  ],
+  "hoistReleased": false,
+  "frontLeftRegripped": true,
+  "finalSeatLoadsN": {
+    "seat_left": 0.0,
+    "seat_right": 0.0
+  },
+  "finalBeamPositionZUp": [
+    9.0,
+    -11.2,
+    43.320594955333604
+  ],
+  "robotRaiseM": 0.2108939853269547,
+  "maxContactPenetrationM": 0.0,
+  "maxBeamSpeedMps": 0.35088115979962264,
+  "maxLimbActuatorTorqueNm": 367.7370903629034,
+  "maxSolverIterations": 2,
+  "warnings": {
+    "mjtWarning.mjWARN_INERTIA": 0,
+    "mjtWarning.mjWARN_CONTACTFULL": 0,
+    "mjtWarning.mjWARN_CNSTRFULL": 0,
+    "mjtWarning.mjWARN_BADQPOS": 0,
+    "mjtWarning.mjWARN_BADQVEL": 0,
+    "mjtWarning.mjWARN_BADQACC": 0,
+    "mjtWarning.mjWARN_BADCTRL": 0
+  },
+  "finiteState": true,
+  "abortReason": "Seat load and velocity gate not satisfied: hoist support retained.",
+  "completeFastenedCycle": false,
+  "actualIntegratedMotorWorkJ": [
+    -8.496627814362535,
+    43.51363766778081,
+    -3.540853554935075,
+    48.6508948397058,
+    -3.539985680962242,
+    48.65189827306072,
+    -3.541595735942212,
+    48.65079568590191,
+    -0.006070082661012881
+  ],
+  "toolCollisionEnabled": true,
+  "actualToolEndpointZUpM": [
+    5.767012,
+    -12.0,
+    43.5608939976
+  ],
+  "holeCenterZUpM": [
+    6.215,
+    -11.915,
+    43.5375
+  ],
+  "tipToHoleCenterM": [
+    0.4479879999999996,
+    0.08500000000000085,
+    -0.02339399759999594
+  ],
+  "tipToAccessiblePinHeadM": [
+    0.38098799999999944,
+    0.08500000000000085,
+    -0.02339399759999594
+  ],
+  "distanceTipToHeadM": 0.39105515629858195,
+  "completeRobotFasteningCycle": false,
+  "canonicalSimulatorSHA256": "1afca7c0e0ba45210d0c980a66afaa0b3b07f36d2725f10be69ded4d487d2b4a"
+}

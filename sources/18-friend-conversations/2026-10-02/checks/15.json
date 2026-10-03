@@ -1,0 +1,16 @@
+{
+  "text": "What do you think?",
+  "logprobs": null,
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 3032,
+    "input_tokens": 3025,
+    "input_token_details": {
+      "text_tokens": 25,
+      "audio_tokens": 3000
+    },
+    "output_tokens": 7
+  },
+  "audio_start": 4500,
+  "audio_end": 4800
+}

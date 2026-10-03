@@ -1,0 +1,393 @@
+{
+  "type": "object",
+  "required": [
+    "schema_version",
+    "request_id",
+    "world_revision",
+    "input_fingerprint",
+    "nodes",
+    "members",
+    "stages",
+    "displacement_limit_m",
+    "rotation_limit_rad"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "request_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "world_revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "input_fingerprint": {
+      "type": "string",
+      "minLength": 1
+    },
+    "displacement_limit_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "rotation_limit_rad": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "characteristic_length_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "required_evidence": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": [
+          "verified",
+          "assumed",
+          "unverified"
+        ]
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "position_m"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "position_m": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "members": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "a",
+          "b",
+          "section",
+          "local_y"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "a": {
+            "type": "string",
+            "minLength": 1
+          },
+          "b": {
+            "type": "string",
+            "minLength": 1
+          },
+          "section": {
+            "type": "object",
+            "required": [
+              "E_Pa",
+              "G_Pa",
+              "A_m2",
+              "Iy_m4",
+              "Iz_m4",
+              "J_m4"
+            ],
+            "properties": {
+              "E_Pa": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "G_Pa": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "A_m2": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "Iy_m4": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "Iz_m4": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "J_m4": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            }
+          },
+          "local_y": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          },
+          "uniform_load_N_m": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          },
+          "capacity": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "provenance": {
+                "enum": [
+                  "verified",
+                  "assumed",
+                  "unknown"
+                ]
+              },
+              "limits": {
+                "type": "object",
+                "additionalProperties": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "connections": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "a",
+          "b",
+          "stiffness"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "a": {
+            "type": "string",
+            "minLength": 1
+          },
+          "b": {
+            "type": "string",
+            "minLength": 1
+          },
+          "stiffness": {
+            "type": "array",
+            "minItems": 6,
+            "maxItems": 6,
+            "items": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "capacity": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "provenance": {
+                "enum": [
+                  "verified",
+                  "assumed",
+                  "unknown"
+                ]
+              },
+              "limits": {
+                "type": "object",
+                "additionalProperties": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "supports": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "node",
+          "dofs"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "node": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dofs": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "ux",
+                "uy",
+                "uz",
+                "rx",
+                "ry",
+                "rz"
+              ]
+            }
+          },
+          "capacity": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "provenance": {
+                "enum": [
+                  "verified",
+                  "assumed",
+                  "unknown"
+                ]
+              },
+              "limits": {
+                "type": "object",
+                "additionalProperties": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "stages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "loads": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "node"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "node": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "position_m": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 3,
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "force_N": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 3,
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "moment_Nm": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 3,
+                  "items": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "connection_stiffness": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "minItems": 6,
+              "maxItems": 6,
+              "items": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:circular-construction:frame-request:1",
+  "title": "Linear 3D frame request, SI and engineering Z-up"
+}

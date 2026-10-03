@@ -1,0 +1,146 @@
+BLENDER CONSTRUCTION ASSET PIPELINE
+
+Rebuild from the demo directory:
+  blender --background --python production/blender/build_assets.py
+
+Blender 5.2.1 LTS was used. There are no downloaded or generative-image assets.
+All architecture, steel sections and mechanical parts are editable mesh geometry.
+Build output includes Cycles stills, not screenshots of a browser approximation.
+
+Files
+  production/blender/tower-site.blend        editable site, lighting, presentation camera
+  production/blender/climber-robot.blend     editable articulated robot and camera
+  production/blender/assembly-preview.blend site with a pair of robot models for inspection
+  production/blender/planned-architecture.blend editable complete architectural design
+  public/assets/tower-site.glb              material-batched browser site
+  public/assets/planned-architecture.glb    complete design study, no construction animation
+  public/assets/climber-robot.glb           articulated browser robot
+  public/assets/tower-site-preview.png      1440px Cycles site render
+  public/assets/workcell-preview.png        1600 x 1000 Cycles active-floor render
+  public/assets/climber-robot-preview.png   1200 x 1000 Cycles robot render
+  public/assets/core-modules-preview.png    1200px Cycles modular-core detail
+  public/assets/planned-architecture-preview.png Cycles future-design render
+
+The generator copies assembly-preview.blend and planned-architecture.blend into
+public/assets/ as browser-downloadable sources. The planned design reuses the
+36 x 24m steel grid and closes the level-12 beam gap. It fills all 20 levels
+with floor cassettes, facade modules, core modules and concept finishes, while
+omitting the crane, yard, grip rails, robot and hoist. It is not a construction
+or occupancy simulation. The public architecture.html viewer labels that scope.
+
+SI dimensions / axes
+Blender and MuJoCo use X/Y ground plane, Z up, metres.
+glTF exporter maps world position (x,y,z) to browser (x,z,-y).
+The tower footprint is 36 x 24 m, with 6 m structural bays.
+Twenty 3.6 m storeys reach 72 m; crane mast reaches 87 m.
+The model intentionally shows the steel skeleton to level 20, floor cassettes
+through level 11 with partial deck at level 12, and facade modules through 8.
+This is a construction-stage design scenario, not an erection-sequence signoff.
+
+Stable site names
+  ConstructionSite
+  Level_01 ... Level_20             per-level layer parents
+  StructuralSteel / FloorCassettes / FacadeModules (within each level)
+  ConcreteCore / TowerCrane / SiteAndFabricationYard
+  CoreModule_01 ... CoreModule_16    demountable core storey assemblies
+  ArchitecturalFinish / FinishModule_01 ... FinishModule_08
+  LandscapedForecourt                concept finish on active-site model
+  ActiveFloorSafetyRails / ActiveConnectionSeats
+  lifted_beam                       center pivot, local beam axis X
+  ActiveHoist                       true carrier pivot (9,-12,46.45), crossbar Z=0
+  RobotGripRails                    paired rails and structural column brackets
+  TemporaryYBraces                  global transverse X-bracing, level 1 to 20
+
+Beam center starts Blender (9,-12,44.7), browser (9,44.7,12).
+Seated center is (9,-12,43.425); bearing-seat top is 43.2 m.
+Beam total length is 5.6 m, center at x9 between columns at x6 and x12.
+I-section 450 mm deep x 300 mm wide, web 9 mm, flanges 18 mm.
+Nominal physical beam mass is 638.563 kg (density 7850 kg/m3).
+Beam sling/lug centers are local (-1.6,0,.225) and (1.6,0,.225).
+Carrier sling sites are local (-1.6,0,0) and (1.6,0,0).
+The ActiveHoist GLB node contains only carrier hardware. Runtime viewer draws
+dynamic slings and vertical cable from actual moving attachment sites.
+PreviewRigging_NotExported exists only in the assembly Blender scene/stills.
+Rail centers: x6.06, y=-12 +/- .25, z43.9; dimensions .06 x .09 x 2.8 m.
+TemporaryYBraces runs X diagonals at x+/-18, in y bays [-12,-6] and [6,12],
+for every 3.6m storey from ground to level 20, in a subdued green safety finish.
+End plates include four actual cylindrical through-holes each; bolted seats,
+washers, hex heads, web, flanges and lifting lugs are separate solid features.
+GLB asset metadata is descriptive; the physics engine owns mass and inertia.
+
+Stable robot nodes / local bind coordinates (Blender axes)
+  robot_chassis                     root, geometry centered about origin
+  limb_fl_upper                     (0,-0.25,+0.32)
+  limb_fr_upper                     (0,+0.25,+0.32)
+  limb_rl_upper                     (0,-0.25,-0.32)
+  limb_rr_upper                     (0,+0.25,-0.32)
+  limb_{fl,fr,rl,rr}_lower           relative to upper: (+0.32,0,0)
+  limb_{fl,fr,rl,rr}_grip            relative to lower: (+0.32,0,0)
+  robot_tool                        (+0.25,0,-0.55), bit tip +0.12 m X
+Upper/lower links extend along local +X from the proximal joint.
+Upper bind rotation is -0.35 rad about Y; lower bind rotation is +0.35 rad.
+GLB's converted joint axis is negative browser Z.
+Paired jaws are separate named nodes and can slide along local Y.
+The viewer can replace these world poses with physics-recorded body poses.
+
+Model content
+Open I/H sections, column splices, paired fin plates, fasteners, cross-bracing,
+floor cassette underside ribs, slab joints, facade mullions/spandrels, concrete
+core panel cassettes and stair modules, crane lattice/rails/cab/counterweight, carrier crossbar/pulley housing,
+external cage hoist, staged beam stacks and cassettes, containers, barriers,
+road markings, four-limb robot housing, motors, hydraulic links, wiring,
+gripper actuators, opposed jaws, stereo sensors and a torque tool.
+
+Demountable core and recovery boundary
+ConcreteCore preserves the original 8.4 x 7.6m wall-center footprint and uses
+sixteen 3.6m assemblies reaching 57.6m. Each CoreModule_XX contains framed
+precast wall panels, separate doorway lintel, visible physical seams, accessible
+bolted splice plates, lifting sockets, stair treads/stringers and landings.
+Panels and stair modules are designed here as recoverable/reusable components
+subject to inspection of panels, inserts, frames and connections before reuse.
+This is not a claim of complete concrete recycling or proven recovery yield.
+Foundations, crane pads and other site-bound concrete remain residual site scope.
+The existing OpenSees limitation is unchanged: NO CORE STIFFNESS CREDIT is taken.
+The modular core is visual/architectural scope; its connections are not analyzed
+by the current steel-frame structural model.
+
+Architectural finish and completed design
+The active-site GLB has removable visual finish through level 8. The planned
+GLB has FinishModule_01 ... FinishModule_20 and core modules through level 20.
+The facade retains a 6m structural-bay rhythm and recessed south glazing.
+Terrace depth is 3m on most levels and 6m at levels 3-4, 10-11 and 17-18;
+warm soffits, pale fins, planters, garden-room trees and planted forecourt
+are actual authored meshes. A 72m height / 36m width ratio limits the slender
+appearance; narrowing the grid needs new engineering rather than rendering.
+These finish pieces are outside the structural analysis, robot collision
+model, individual crane-lift inventory and materials passport. Their
+attachments, loads, fabrication and recovery remain future engineering work.
+
+Limitations
+Geometry is a dimensioned design concept, not manufacturer CAD or certified
+shop drawings. The entire 20-storey skeleton is visible for site context.
+The tower GLB itself contains no animation: the viewer must load physics output.
+Robot meshes do not establish contact/friction/fastener verification by themselves.
+The assembly-preview poses are presentation poses; the runtime trace is the
+source of motion truth. Fine bolt threads, full tool-change racks, and an interior
+fit-out are outside this asset slice.
+
+Separate isolated climb assets
+Rebuild: blender --background --python production/blender/build_climb_assets.py
+This build reads production/physics/climb-prototype/geometry-contract.json and
+never overwrites the beam-receiving robot or tower assets.
+  public/assets/climber-robot-climb.glb        0.45m articulated links, same nodes
+  public/assets/climb-rail-fixture.glb         named exact rail receiver positions
+  public/assets/climb-evidence-preview.png    isolated Blender presentation render
+  production/blender/climber-robot-climb.blend editable climb variant
+  production/blender/climb-rail-fixture.blend  editable receiver fixture
+  production/blender/climb-evidence-preview.blend assembled initial climb pose
+Climb robot GLB root is at the origin; trace supplies the chassis world pose.
+Preview chassis starts at Blender (0,0,1.2). Each link is 0.45m along local +X.
+Shoulder bind angle is -0.9133327704 rad; elbow is +1.8266655408 rad about Y.
+Hips retain y+/-0.25,z+/-0.32. Fixture rails are x0.55,y+/-0.25, extending to5.7m.
+All 52 receiver positions are read individually from the contract: front and
+rear receiver grids have separate vertical offsets and each has0.3m pitch.
+The root ClimbRailFixture and receiver IDs rail_{fl,fr,rl,rr}_{0..12} are stable.
+These visible parts represent the ideal-lock fixture in the climb simulation;
+mesh detail does not imply modeled jaw engagement or certified attachment design.

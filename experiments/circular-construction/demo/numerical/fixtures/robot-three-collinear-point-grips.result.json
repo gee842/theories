@@ -1,0 +1,55 @@
+{
+  "actuator_status": "included",
+  "contact_wrenches": [],
+  "equilibrium_residual": null,
+  "external_wrench": {
+    "force_N": [
+      0,
+      0,
+      -1000.6199999999997
+    ],
+    "moment_Nm": [
+      486.50552279412636,
+      68.68507983733832,
+      0
+    ]
+  },
+  "input_fingerprint": "sha256:1f26eec11c4a3d71da4403a38b98d14ac2c110e8dd94c6c3f75b3d03b76977e8",
+  "limitations": [
+    "Capacity numbers remain declared assumptions; no hardware qualification is performed.",
+    "Box bounds do not model coupled friction, clamp closure, stiffness or slip.",
+    "Actuator torques use supplied fixed-pose Jacobian rows only; absent rows are outside scope or unverified when requested.",
+    "Kinematics, collisions, frame reactions adequacy and dynamics are outside this check.",
+    "Missing limits are relaxed only to produce a required-wrench witness; they cannot produce a passed result.",
+    "Minimum normalized L1 witness uses 1 N and 1 N m scales; it is not a per-contact capacity optimum."
+  ],
+  "missing_capacities": [],
+  "model_version": "contact-box-static/1.0.0",
+  "reason": "No equilibrium exists within declared contact geometry and known bounds.",
+  "request_id": "collinear-three-grip-roll",
+  "request_sha256": "f179108043893e2a89c41bb5a09da2fed26ecea431f0b43333a03db905f34247",
+  "required_aggregate_support_wrench": {
+    "force_N": [
+      0,
+      0,
+      1000.6199999999997
+    ],
+    "moment_about_origin_Nm": [
+      -486.50552279412636,
+      -68.68507983733832,
+      0
+    ]
+  },
+  "schema_version": 1,
+  "scope": "quasi-static global Cartesian box contact wrench equilibrium",
+  "solver": {
+    "highs_status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "name": "scipy-highs",
+    "numpy_version": "2.3.3",
+    "scipy_version": "1.16.2",
+    "status": "infeasible"
+  },
+  "status": "failed",
+  "world_revision": 0
+}

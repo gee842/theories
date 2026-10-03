@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "request_id": "unknown-capacity",
+  "world_revision": 7,
+  "input_fingerprint": "fixture-unknown-capacity-v1",
+  "gravity_m_s2": [
+    0,
+    0,
+    -10
+  ],
+  "loads": [
+    {
+      "id": "robot",
+      "mass_kg": 10,
+      "position_m": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "id": "left",
+      "position_m": [
+        -1,
+        0,
+        0
+      ],
+      "kind": "point",
+      "force_bounds_N": {
+        "lower": [
+          -1000,
+          -1000,
+          -1000
+        ],
+        "upper": [
+          1000,
+          1000,
+          null
+        ]
+      }
+    },
+    {
+      "id": "right",
+      "position_m": [
+        1,
+        0,
+        0
+      ],
+      "kind": "point",
+      "force_bounds_N": {
+        "lower": [
+          -1000,
+          -1000,
+          -1000
+        ],
+        "upper": [
+          1000,
+          1000,
+          1000
+        ]
+      }
+    }
+  ]
+}

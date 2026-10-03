@@ -1,0 +1,250 @@
+{
+  "title": "Circular construction: arithmetic sensitivity calculations",
+  "schema_version": 1,
+  "status": "NOT a simulation, structural proof, design specification or schedule forecast",
+  "provenance": {
+    "catalog_input": {
+      "section": "British Steel UB 254 x 146 x 31",
+      "mass_per_m_kg": 31.1,
+      "source_title": "British Steel Product Range, section 3.1 UK Sections",
+      "source_url": "https://www.britishsteel.co.uk/wp-content/uploads/2025/07/british-steel-product-brochure-14012025-compressed-1.pdf",
+      "verified_date": "2026-09-30",
+      "scope": "Catalog mass only; no section selection or adequacy claim."
+    },
+    "scenario_inputs": "All lengths, robot values, offsets, operation counts, cycle times, utilization, logistics capacities, mean member mass, critical-path duration, retention and event probabilities are hypothetical inputs. They are not measurements or quantities from a designed building.",
+    "constants": {
+      "rounded_gravity_m_s2": 9.81,
+      "kg_per_metric_tonne": 1000,
+      "minutes_per_hour": 60
+    }
+  },
+  "assumptions_and_limitations": [
+    "No building floor area, building height, member design, site or assembly plan is implied.",
+    "Beam examples are uniform and horizontal; self-weight only, no fittings or payloads. One-end holding assumes an ideal moment-resisting support. Two-support reactions assume supports exactly at the two endpoints; the cases are alternatives.",
+    "Anchor wrench is aggregate static external gravity demand only. No contact-force distribution, friction, force closure, actuator limits, anchor capacity, stiffness, buckling, wind, dynamics, tool loads, safety factors or partial-frame stability is tested.",
+    "Throughput treats each cell of two climbers as one placement server. A cycle completes one member including both ends; it is not a per-bolt or per-robot cycle. Logistics equipment is additional and has no assumed fleet count here.",
+    "T >= max(N*c/(60*cells*u), N/member_supply, N*mean_mass/(1000*mass_supply), critical_path). This optimistic bound assumes effective overlap, steady supply and available work fronts. Queueing, precedence-resource interactions, start-up, weather, recovery and other non-overlapping work can increase elapsed time.",
+    "Supply rates and utilization are averages over the same elapsed-time horizon. Days mean continuous 24-hour days. The 72-hour critical path is assumed, not computed.",
+    "The throughput mean mass of 100 kg is independent of the illustrative UB beam masses.",
+    "Improved supply alone leaves the 40-cell 12-minute case work-limited at 76.923 hours. Only the separate 48-cell sensitivity becomes critical-path-limited at 72 hours.",
+    "Retention compounds a fixed per-cycle fraction of original stock, with no top-up. It does not estimate actual reuse yield or ecological regeneration.",
+    "Event calculations assume independent identical per-task unresolved-event probabilities. An unresolved event is not automatically a structural failure. Correlations, recovery, duration and severity are unmodeled; probabilities are not observed reliability data."
+  ],
+  "beam_self_weight_examples": [
+    {
+      "length_m": 3,
+      "mass_per_m_kg": 31.1,
+      "mass_kg": 93.30000000000001,
+      "gravity_force_N": 915.2730000000001,
+      "one_end_fixed_hold_required_force_N": 915.2730000000001,
+      "one_end_fixed_hold_required_moment_Nm": 1372.9095000000002,
+      "two_endpoint_support_reactions_N": [
+        457.63650000000007,
+        457.63650000000007
+      ]
+    },
+    {
+      "length_m": 6,
+      "mass_per_m_kg": 31.1,
+      "mass_kg": 186.60000000000002,
+      "gravity_force_N": 1830.5460000000003,
+      "one_end_fixed_hold_required_force_N": 1830.5460000000003,
+      "one_end_fixed_hold_required_moment_Nm": 5491.638000000001,
+      "two_endpoint_support_reactions_N": [
+        915.2730000000001,
+        915.2730000000001
+      ]
+    }
+  ],
+  "robot_plus_6m_beam_aggregate_gravity_wrench": {
+    "inputs": {
+      "robot_mass_kg": 100,
+      "robot_COM_horizontal_offset_m": 0.5,
+      "beam_mass_kg": 186.60000000000002,
+      "beam_COM_horizontal_offset_m": 1
+    },
+    "external_downward_force_N": 2811.5460000000003,
+    "external_overturning_moment_Nm": 2321.0460000000003,
+    "required_aggregate_upward_reaction_N": 2811.5460000000003,
+    "required_aggregate_counter_moment_Nm": 2321.0460000000003,
+    "interpretation": "Net gravity wrench only; aggregate reactions must balance it. This does not allocate loads to anchors or test their feasibility. The 1 m beam offset is an assumed COM location relative to the anchor reference, not a claim that its COM is 1 m from a beam end."
+  },
+  "throughput_sensitivities": [
+    {
+      "id": "baseline_10_cells",
+      "inputs": {
+        "placements": 10000,
+        "cells": 10,
+        "climbers_per_cell": 2,
+        "complete_placement_cycle_min": 12,
+        "cell_utilization": 0.65,
+        "supply_members_per_h": 100,
+        "supply_metric_tonnes_per_h": 5,
+        "mean_member_mass_kg": 100,
+        "assumed_critical_path_h": 72
+      },
+      "total_climbers": 20,
+      "assumed_total_member_mass_tonnes": 1000.0,
+      "bounds_hours": {
+        "work_capacity": 307.6923076923077,
+        "member_supply": 100.0,
+        "mass_supply": 200.0,
+        "critical_path": 72
+      },
+      "lower_bound_hours": 307.6923076923077,
+      "lower_bound_continuous_24h_days": 12.82051282051282,
+      "limiting_bounds": [
+        "work_capacity"
+      ]
+    },
+    {
+      "id": "baseline_20_cells",
+      "inputs": {
+        "placements": 10000,
+        "cells": 20,
+        "climbers_per_cell": 2,
+        "complete_placement_cycle_min": 12,
+        "cell_utilization": 0.65,
+        "supply_members_per_h": 100,
+        "supply_metric_tonnes_per_h": 5,
+        "mean_member_mass_kg": 100,
+        "assumed_critical_path_h": 72
+      },
+      "total_climbers": 40,
+      "assumed_total_member_mass_tonnes": 1000.0,
+      "bounds_hours": {
+        "work_capacity": 153.84615384615384,
+        "member_supply": 100.0,
+        "mass_supply": 200.0,
+        "critical_path": 72
+      },
+      "lower_bound_hours": 200.0,
+      "lower_bound_continuous_24h_days": 8.333333333333334,
+      "limiting_bounds": [
+        "mass_supply"
+      ]
+    },
+    {
+      "id": "baseline_40_cells",
+      "inputs": {
+        "placements": 10000,
+        "cells": 40,
+        "climbers_per_cell": 2,
+        "complete_placement_cycle_min": 12,
+        "cell_utilization": 0.65,
+        "supply_members_per_h": 100,
+        "supply_metric_tonnes_per_h": 5,
+        "mean_member_mass_kg": 100,
+        "assumed_critical_path_h": 72
+      },
+      "total_climbers": 80,
+      "assumed_total_member_mass_tonnes": 1000.0,
+      "bounds_hours": {
+        "work_capacity": 76.92307692307692,
+        "member_supply": 100.0,
+        "mass_supply": 200.0,
+        "critical_path": 72
+      },
+      "lower_bound_hours": 200.0,
+      "lower_bound_continuous_24h_days": 8.333333333333334,
+      "limiting_bounds": [
+        "mass_supply"
+      ]
+    },
+    {
+      "id": "40_cells_improved_supply",
+      "inputs": {
+        "placements": 10000,
+        "cells": 40,
+        "climbers_per_cell": 2,
+        "complete_placement_cycle_min": 12,
+        "cell_utilization": 0.65,
+        "supply_members_per_h": 200,
+        "supply_metric_tonnes_per_h": 20,
+        "mean_member_mass_kg": 100,
+        "assumed_critical_path_h": 72
+      },
+      "total_climbers": 80,
+      "assumed_total_member_mass_tonnes": 1000.0,
+      "bounds_hours": {
+        "work_capacity": 76.92307692307692,
+        "member_supply": 50.0,
+        "mass_supply": 50.0,
+        "critical_path": 72
+      },
+      "lower_bound_hours": 76.92307692307692,
+      "lower_bound_continuous_24h_days": 3.205128205128205,
+      "limiting_bounds": [
+        "work_capacity"
+      ]
+    },
+    {
+      "id": "48_cells_improved_supply",
+      "additional_assumption": "Cell count increased from 40 to 48; unvalidated sensitivity only.",
+      "inputs": {
+        "placements": 10000,
+        "cells": 48,
+        "climbers_per_cell": 2,
+        "complete_placement_cycle_min": 12,
+        "cell_utilization": 0.65,
+        "supply_members_per_h": 200,
+        "supply_metric_tonnes_per_h": 20,
+        "mean_member_mass_kg": 100,
+        "assumed_critical_path_h": 72
+      },
+      "total_climbers": 96,
+      "assumed_total_member_mass_tonnes": 1000.0,
+      "bounds_hours": {
+        "work_capacity": 64.1025641025641,
+        "member_supply": 50.0,
+        "mass_supply": 50.0,
+        "critical_path": 72
+      },
+      "lower_bound_hours": 72,
+      "lower_bound_continuous_24h_days": 3.0,
+      "limiting_bounds": [
+        "critical_path"
+      ]
+    }
+  ],
+  "work_capacity_only_reference": {
+    "inputs": {
+      "operations": 3500,
+      "cells": 12,
+      "cycle_min": 10,
+      "utilization": 0.5
+    },
+    "raw_work_lower_bound_h": 97.22222222222223,
+    "scope": "Separate abstract operations example; omits supply and critical-path bounds."
+  },
+  "repeated_cycle_retention": [
+    {
+      "retained_fraction_per_cycle": 0.99,
+      "cycles": 100,
+      "fraction_of_original_stock_remaining": 0.3660323412732292,
+      "cumulative_fraction_lost": 0.6339676587267709
+    },
+    {
+      "retained_fraction_per_cycle": 0.999,
+      "cycles": 100,
+      "fraction_of_original_stock_remaining": 0.9047921471137089,
+      "cumulative_fraction_lost": 0.09520785288629108
+    }
+  ],
+  "independent_event_sensitivities": [
+    {
+      "independent_unresolved_event_probability_per_task": 0.001,
+      "tasks": 10000,
+      "expected_unresolved_events": 10.0,
+      "probability_of_no_unresolved_event": 4.517334597704865e-05,
+      "probability_of_at_least_one_unresolved_event": 0.9999548266540229
+    },
+    {
+      "independent_unresolved_event_probability_per_task": 0.0001,
+      "tasks": 10000,
+      "expected_unresolved_events": 1.0,
+      "probability_of_no_unresolved_event": 0.3678610464329299,
+      "probability_of_at_least_one_unresolved_event": 0.6321389535670701
+    }
+  ]
+}

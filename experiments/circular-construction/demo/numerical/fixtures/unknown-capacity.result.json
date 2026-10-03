@@ -1,0 +1,122 @@
+{
+  "actuator_status": "outside_scope",
+  "actuator_torques": [],
+  "contact_wrenches": [
+    {
+      "force_N": [
+        0.0,
+        0.0,
+        50.0
+      ],
+      "frame_reaction_force_N": [
+        -0.0,
+        -0.0,
+        -50.0
+      ],
+      "frame_reaction_moment_Nm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "id": "left",
+      "moment_Nm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "force_N": [
+        0.0,
+        0.0,
+        50.0
+      ],
+      "frame_reaction_force_N": [
+        -0.0,
+        -0.0,
+        -50.0
+      ],
+      "frame_reaction_moment_Nm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "id": "right",
+      "moment_Nm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "equilibrium_residual": {
+    "force_N": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_abs": 0.0,
+    "moment_Nm": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "external_wrench": {
+    "force_N": [
+      0.0,
+      0.0,
+      -100.0
+    ],
+    "moment_Nm": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "input_fingerprint": "fixture-unknown-capacity-v1",
+  "limitations": [
+    "Capacity numbers remain declared assumptions; no hardware qualification is performed.",
+    "Box bounds do not model coupled friction, clamp closure, stiffness or slip.",
+    "Actuator torques use supplied fixed-pose Jacobian rows only; absent rows are outside scope or unverified when requested.",
+    "Kinematics, collisions, frame reactions adequacy and dynamics are outside this check.",
+    "Missing limits are relaxed only to produce a required-wrench witness; they cannot produce a passed result.",
+    "Minimum normalized L1 witness uses 1 N and 1 N m scales; it is not a per-contact capacity optimum."
+  ],
+  "max_bound_violation": 0.0,
+  "missing_capacities": [
+    "left.force_bounds_N.upper[2]"
+  ],
+  "model_version": "contact-box-static/1.0.0",
+  "numerical_tolerance": {
+    "force_N": 1e-07,
+    "moment_Nm": 1e-07
+  },
+  "reason": "Equilibrium witness needs missing capacities.",
+  "request_id": "unknown-capacity",
+  "request_sha256": "985b13db3b5fafd5f3ec0abadfacf2385577b0fb05b1f803de4592c6f76b45fd",
+  "required_aggregate_support_wrench": {
+    "force_N": [
+      -0.0,
+      -0.0,
+      100.0
+    ],
+    "moment_about_origin_Nm": [
+      -0.0,
+      -0.0,
+      -0.0
+    ]
+  },
+  "schema_version": 1,
+  "scope": "quasi-static global Cartesian box contact wrench equilibrium",
+  "solver": {
+    "highs_status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "name": "scipy-highs",
+    "numpy_version": "2.3.3",
+    "scipy_version": "1.16.2",
+    "status": "feasible"
+  },
+  "status": "unverified",
+  "world_revision": 7
+}

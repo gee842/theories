@@ -1,0 +1,10 @@
+{
+  "name": "construction-toolchain-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Isolated verification of the construction modeling and dynamics toolchain",
+  "dependencies": {
+    "three": "0.180.0"
+  }
+}

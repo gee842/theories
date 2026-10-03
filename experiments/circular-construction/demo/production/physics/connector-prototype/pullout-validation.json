@@ -1,0 +1,47 @@
+{
+  "scenario": "pullout",
+  "mujocoVersion": "3.14.0",
+  "timestepSeconds": 0.0005,
+  "durationSeconds": 4.9999999999999485,
+  "beamMassKg": 640.7431900555108,
+  "equalityCount": 0,
+  "beamFreeDofs": 6,
+  "pinGuideDofs": 1,
+  "cleared": true,
+  "aborted": false,
+  "finalInsertionM": 0.08006391712763636,
+  "finalDogExtensionM": 0.029999996192207445,
+  "finalBeamDisplacementXM": -0.019883183153504458,
+  "maxPenetrationM": 0.0002285995256042922,
+  "peakInsertionActuatorN": 250.0,
+  "peakInsertionBeamContactN": 0.0,
+  "meanDogToBeamAxialContactN": 250.0026219407145,
+  "meanHeadToBracketAxialContactN": 0.0,
+  "finalMotorForceN": -250.0,
+  "finalDogActuatorForceN": 0.0,
+  "finalQuarterSecondMeanContactN": {
+    "bottom_flange|seat_left": 3137.2879550663833,
+    "bottom_flange|seat_right": 3121.4635097098967,
+    "beam_bore_7|bracket_bore_7": 33.00007743344033,
+    "beam_bore_7|bracket_bore_8": 66.03641436430551,
+    "beam_bore_8|bracket_bore_8": 33.03633663542369,
+    "beam_bore_0|dog": 63.3325889600794,
+    "beam_bore_15|dog": 63.33259463674285,
+    "beam_bore_7|dog_opposite": 61.668718270720255,
+    "beam_bore_8|dog_opposite": 61.66875353127423,
+    "beam_bore_0|bracket_bore_0": 32.181528269590224,
+    "beam_bore_0|bracket_bore_15": 81.82092344664753,
+    "beam_bore_15|bracket_bore_15": 32.20524608124165
+  },
+  "maxWarningCount": 0,
+  "finiteState": true,
+  "events": [
+    {
+      "time": 1.286,
+      "event": "dog physically clear of beam rear face; release retractor"
+    }
+  ],
+  "completeRobotFasteningCycle": false,
+  "finalDogOppositeExtensionM": 0.029803999487205236,
+  "finalDogOppositeActuatorForceN": 0.0
+}

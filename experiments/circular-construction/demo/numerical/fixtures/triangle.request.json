@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "request_id": "triangle",
+  "world_revision": 7,
+  "input_fingerprint": "fixture-triangle-v1",
+  "gravity_m_s2": [
+    0,
+    0,
+    -10
+  ],
+  "loads": [
+    {
+      "id": "robot",
+      "mass_kg": 10,
+      "position_m": [
+        0.25,
+        0.25,
+        0
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "id": "A",
+      "position_m": [
+        0,
+        0,
+        0
+      ],
+      "kind": "point",
+      "force_bounds_N": {
+        "lower": [
+          -1000,
+          -1000,
+          -1000
+        ],
+        "upper": [
+          1000,
+          1000,
+          1000
+        ]
+      }
+    },
+    {
+      "id": "B",
+      "position_m": [
+        1,
+        0,
+        0
+      ],
+      "kind": "point",
+      "force_bounds_N": {
+        "lower": [
+          -1000,
+          -1000,
+          -1000
+        ],
+        "upper": [
+          1000,
+          1000,
+          1000
+        ]
+      }
+    },
+    {
+      "id": "C",
+      "position_m": [
+        0,
+        1,
+        0
+      ],
+      "kind": "point",
+      "force_bounds_N": {
+        "lower": [
+          -1000,
+          -1000,
+          -1000
+        ],
+        "upper": [
+          1000,
+          1000,
+          1000
+        ]
+      }
+    }
+  ]
+}

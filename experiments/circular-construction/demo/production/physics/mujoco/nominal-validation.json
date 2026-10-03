@@ -1,0 +1,52 @@
+{
+  "scenario": "nominal",
+  "mujocoVersion": "3.14.0",
+  "timestepSeconds": 0.002,
+  "durationSeconds": 24.0,
+  "beamMassKg": 638.5629599999999,
+  "robotMassKg": 137.0,
+  "events": [
+    {
+      "time": 5.502,
+      "event": "front-left rail grip released; three locks retain chassis"
+    },
+    {
+      "time": 9.502,
+      "event": "front-left lock reacquired within 18 mm capture envelope",
+      "errorM": 0.012209868500082464
+    },
+    {
+      "time": 15.828,
+      "event": "two physical seat contacts stable; hoist slings released",
+      "seatNormalN": 6150.879704890456
+    }
+  ],
+  "hoistReleased": true,
+  "frontLeftRegripped": true,
+  "finalSeatLoadsN": {
+    "seat_left": 3132.151311794234,
+    "seat_right": 3132.1513258057066
+  },
+  "finalBeamPositionZUp": [
+    9.00000001199564,
+    -12.0,
+    43.42499649992266
+  ],
+  "robotRaiseM": 0.21089398605876397,
+  "maxContactPenetrationM": 0.0008676450092786294,
+  "maxBeamSpeedMps": 0.35088115979962264,
+  "maxLimbActuatorTorqueNm": 367.7370903629034,
+  "maxSolverIterations": 3,
+  "warnings": {
+    "mjtWarning.mjWARN_INERTIA": 0,
+    "mjtWarning.mjWARN_CONTACTFULL": 0,
+    "mjtWarning.mjWARN_CNSTRFULL": 0,
+    "mjtWarning.mjWARN_BADQPOS": 0,
+    "mjtWarning.mjWARN_BADQVEL": 0,
+    "mjtWarning.mjWARN_BADQACC": 0,
+    "mjtWarning.mjWARN_BADCTRL": 0
+  },
+  "finiteState": true,
+  "abortReason": null,
+  "completeFastenedCycle": false
+}

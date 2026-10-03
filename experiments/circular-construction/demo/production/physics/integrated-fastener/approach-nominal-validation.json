@@ -1,0 +1,87 @@
+{
+  "scenario": "nominal",
+  "mujocoVersion": "3.14.0",
+  "timestepSeconds": 0.002,
+  "durationSeconds": 24.0,
+  "beamMassKg": 638.5629599999999,
+  "robotMassKg": 137.0,
+  "events": [
+    {
+      "time": 5.502,
+      "event": "front-left rail grip released; three locks retain chassis"
+    },
+    {
+      "time": 9.502,
+      "event": "front-left lock reacquired within 18 mm capture envelope",
+      "errorM": 0.012209868500082464
+    },
+    {
+      "time": 15.828,
+      "event": "two physical seat contacts stable; hoist slings released",
+      "seatNormalN": 6150.879704890456
+    }
+  ],
+  "hoistReleased": true,
+  "frontLeftRegripped": true,
+  "finalSeatLoadsN": {
+    "seat_left": 3132.151311794234,
+    "seat_right": 3132.1513258057066
+  },
+  "finalBeamPositionZUp": [
+    9.00000001199564,
+    -12.0,
+    43.42499649992266
+  ],
+  "robotRaiseM": 0.2108939863950141,
+  "maxContactPenetrationM": 0.0008676450092786294,
+  "maxBeamSpeedMps": 0.35088115979962264,
+  "maxLimbActuatorTorqueNm": 367.7370903629034,
+  "maxSolverIterations": 3,
+  "warnings": {
+    "mjtWarning.mjWARN_INERTIA": 0,
+    "mjtWarning.mjWARN_CONTACTFULL": 0,
+    "mjtWarning.mjWARN_CNSTRFULL": 0,
+    "mjtWarning.mjWARN_BADQPOS": 0,
+    "mjtWarning.mjWARN_BADQVEL": 0,
+    "mjtWarning.mjWARN_BADQACC": 0,
+    "mjtWarning.mjWARN_BADCTRL": 0
+  },
+  "finiteState": true,
+  "abortReason": null,
+  "completeFastenedCycle": false,
+  "actualIntegratedMotorWorkJ": [
+    -8.496627968872557,
+    43.513638847962405,
+    -3.540853709445072,
+    48.6508960198882,
+    -3.539985723650698,
+    48.65189733919531,
+    -3.5415957786306347,
+    48.65079475203613,
+    3.570752114535121
+  ],
+  "toolCollisionEnabled": true,
+  "actualToolEndpointZUpM": [
+    6.117012,
+    -12.0,
+    43.5608939976
+  ],
+  "holeCenterZUpM": [
+    6.215,
+    -11.915,
+    43.5375
+  ],
+  "tipToHoleCenterM": [
+    0.09798799999999996,
+    0.08500000000000085,
+    -0.02339399759999594
+  ],
+  "tipToAccessiblePinHeadM": [
+    0.030987999999999793,
+    0.08500000000000085,
+    -0.02339399759999594
+  ],
+  "distanceTipToHeadM": 0.09344803511957193,
+  "completeRobotFasteningCycle": false,
+  "canonicalSimulatorSHA256": "1afca7c0e0ba45210d0c980a66afaa0b3b07f36d2725f10be69ded4d487d2b4a"
+}

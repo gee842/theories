@@ -1,0 +1,34 @@
+{
+  "scenario": "no-latch",
+  "mujocoVersion": "3.14.0",
+  "timestepSeconds": 0.0005,
+  "durationSeconds": 4.9999999999999485,
+  "beamMassKg": 640.7431900555108,
+  "equalityCount": 0,
+  "beamFreeDofs": 6,
+  "pinGuideDofs": 1,
+  "cleared": true,
+  "aborted": false,
+  "finalInsertionM": 0.11399999999999999,
+  "finalDogExtensionM": 0.0,
+  "finalBeamDisplacementXM": 5.681408858485287,
+  "maxPenetrationM": 4.174518549786446e-05,
+  "peakInsertionActuatorN": 3.9107767881719826,
+  "peakInsertionBeamContactN": 0.0,
+  "meanDogToBeamAxialContactN": 0.0,
+  "meanHeadToBracketAxialContactN": 0.0,
+  "finalMotorForceN": 0.0,
+  "finalDogActuatorForceN": -30.0,
+  "finalQuarterSecondMeanContactN": {},
+  "maxWarningCount": 0,
+  "finiteState": true,
+  "events": [
+    {
+      "time": 1.286,
+      "event": "dog physically clear of beam rear face; release retractor"
+    }
+  ],
+  "completeRobotFasteningCycle": false,
+  "finalDogOppositeExtensionM": 0.0,
+  "finalDogOppositeActuatorForceN": -30.0
+}

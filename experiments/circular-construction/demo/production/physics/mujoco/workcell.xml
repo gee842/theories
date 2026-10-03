@@ -1,0 +1,82 @@
+<mujoco model="Level 12 climbing robot and beam receiving workcell">
+    <compiler angle="radian" autolimits="true"/>
+    <option timestep=".002" gravity="0 0 -9.81" integrator="implicitfast" solver="Newton" iterations="80" tolerance="1e-9">
+      <flag energy="enable" fwdinv="enable"/>
+    </option>
+    <default><geom friction=".7 .01 .001" solref=".012 1" solimp=".95 .99 .001" rgba=".4 .5 .6 1"/><joint limited="true"/></default>
+    <worldbody>
+      <light pos="9 -15 50"/> <body name="anchor_fl" pos="6.0205992681111615 -12.25 44.32972729838574"/><body name="anchor_fr" pos="6.0205992681111615 -11.75 44.32972729838574"/><body name="anchor_rl" pos="6.0205992681111615 -12.25 43.68972729838574"/><body name="anchor_rr" pos="6.0205992681111615 -11.75 43.68972729838574"/>
+      <geom name="rail_left" type="box" pos="6.06 -12.25 43.9" size=".03 .045 1.4" contype="0" conaffinity="0"/>
+      <geom name="rail_right" type="box" pos="6.06 -11.75 43.9" size=".03 .045 1.4" contype="0" conaffinity="0"/>
+      <body name="seat_left" pos="6.2 -12 43.14"><geom name="seat_left_contact" type="box" size=".25 .32 .06"/></body>
+      <body name="seat_right" pos="11.8 -12 43.14"><geom name="seat_right_contact" type="box" size=".25 .32 .06"/></body>
+      <body name="robot_chassis" pos="5.4 -12 43.9">
+        <freejoint name="robot_free"/>
+        <geom type="box" size=".18 .24 .27" mass="65" contype="0" conaffinity="0"/>
+        <body name="limb_fl_upper" pos="0 -0.25 0.32" euler="0 -.35 0">
+          <joint name="fl_shoulder" axis="0 1 0" range="-.4 1.1" damping="12" armature=".08"/>
+          <geom type="capsule" fromto="0 0 0 .32 0 0" size=".065" mass="8"/>
+          <body name="limb_fl_lower" pos=".32 0 0" euler="0 .35 0">
+            <joint name="fl_elbow" axis="0 1 0" range="-1.1 .4" damping="10" armature=".05"/>
+            <geom type="capsule" fromto="0 0 0 .32 0 0" size=".05" mass="6"/>
+            <body name="limb_fl_grip" pos=".32 0 0">
+              <geom type="box" size=".065 .08 .075" mass="3"/>
+              <site name="grip_fl" size=".02"/>
+            </body>
+          </body>
+        </body><body name="limb_fr_upper" pos="0 0.25 0.32" euler="0 -.35 0">
+          <joint name="fr_shoulder" axis="0 1 0" range="-.4 1.1" damping="12" armature=".08"/>
+          <geom type="capsule" fromto="0 0 0 .32 0 0" size=".065" mass="8"/>
+          <body name="limb_fr_lower" pos=".32 0 0" euler="0 .35 0">
+            <joint name="fr_elbow" axis="0 1 0" range="-1.1 .4" damping="10" armature=".05"/>
+            <geom type="capsule" fromto="0 0 0 .32 0 0" size=".05" mass="6"/>
+            <body name="limb_fr_grip" pos=".32 0 0">
+              <geom type="box" size=".065 .08 .075" mass="3"/>
+              <site name="grip_fr" size=".02"/>
+            </body>
+          </body>
+        </body><body name="limb_rl_upper" pos="0 -0.25 -0.32" euler="0 -.35 0">
+          <joint name="rl_shoulder" axis="0 1 0" range="-.4 1.1" damping="12" armature=".08"/>
+          <geom type="capsule" fromto="0 0 0 .32 0 0" size=".065" mass="8"/>
+          <body name="limb_rl_lower" pos=".32 0 0" euler="0 .35 0">
+            <joint name="rl_elbow" axis="0 1 0" range="-1.1 .4" damping="10" armature=".05"/>
+            <geom type="capsule" fromto="0 0 0 .32 0 0" size=".05" mass="6"/>
+            <body name="limb_rl_grip" pos=".32 0 0">
+              <geom type="box" size=".065 .08 .075" mass="3"/>
+              <site name="grip_rl" size=".02"/>
+            </body>
+          </body>
+        </body><body name="limb_rr_upper" pos="0 0.25 -0.32" euler="0 -.35 0">
+          <joint name="rr_shoulder" axis="0 1 0" range="-.4 1.1" damping="12" armature=".08"/>
+          <geom type="capsule" fromto="0 0 0 .32 0 0" size=".065" mass="8"/>
+          <body name="limb_rr_lower" pos=".32 0 0" euler="0 .35 0">
+            <joint name="rr_elbow" axis="0 1 0" range="-1.1 .4" damping="10" armature=".05"/>
+            <geom type="capsule" fromto="0 0 0 .32 0 0" size=".05" mass="6"/>
+            <body name="limb_rr_grip" pos=".32 0 0">
+              <geom type="box" size=".065 .08 .075" mass="3"/>
+              <site name="grip_rr" size=".02"/>
+            </body>
+          </body>
+        </body>
+        <body name="robot_tool" pos=".25 0 -.55"><joint name="tool_extension" type="slide" axis="1 0 0" range="0 .35" damping="50"/><geom type="capsule" fromto="0 0 0 .12 0 0" size=".035" mass="4" contype="0" conaffinity="0"/></body>
+      </body>
+      <body name="lifted_beam" pos="9 -12 44.7">
+        <freejoint name="beam_free"/>
+        <geom name="beam_bottom_flange" type="box" pos="0 0 -.216" size="2.8 .15 .009" density="7850"/>
+        <geom name="beam_web" type="box" size="2.8 .0045 .207" density="7850"/>
+        <geom name="beam_top_flange" type="box" pos="0 0 .216" size="2.8 .15 .009" density="7850"/>
+        <site name="beam_sling_left" pos="-1.6 0 .225"/><site name="beam_sling_right" pos="1.6 0 .225"/>
+      </body>
+      <body name="hoist_carrier" mocap="true" pos="9 -12 46.45">
+        <geom type="capsule" fromto="-1.6 0 0 1.6 0 0" size=".055" contype="0" conaffinity="0"/>
+        <site name="hoist_left" pos="-1.6 0 0"/><site name="hoist_right" pos="1.6 0 0"/>
+      </body>
+    </worldbody>
+    <contact><exclude body1="robot_chassis" body2="limb_fl_upper"/><exclude body1="robot_chassis" body2="limb_fr_upper"/><exclude body1="robot_chassis" body2="limb_rl_upper"/><exclude body1="robot_chassis" body2="limb_rr_upper"/></contact>
+    <equality><weld name="lock_fl" body1="limb_fl_grip" body2="anchor_fl" solref=".004 1" solimp=".9999 .9999 .0001"/><weld name="lock_fr" body1="limb_fr_grip" body2="anchor_fr" solref=".004 1" solimp=".9999 .9999 .0001"/><weld name="lock_rl" body1="limb_rl_grip" body2="anchor_rl" solref=".004 1" solimp=".9999 .9999 .0001"/><weld name="lock_rr" body1="limb_rr_grip" body2="anchor_rr" solref=".004 1" solimp=".9999 .9999 .0001"/></equality>
+    <tendon>
+      <spatial name="sling_left" stiffness="0" damping="0" springlength="0 1.4" width=".012"><site site="hoist_left"/><site site="beam_sling_left"/></spatial>
+      <spatial name="sling_right" stiffness="0" damping="0" springlength="0 1.4" width=".012"><site site="hoist_right"/><site site="beam_sling_right"/></spatial>
+    </tendon>
+    <actuator><motor name="fl_shoulder" joint="fl_shoulder" ctrlrange="-450 450" forcerange="-450 450"/><motor name="fl_elbow" joint="fl_elbow" ctrlrange="-450 450" forcerange="-450 450"/><motor name="fr_shoulder" joint="fr_shoulder" ctrlrange="-450 450" forcerange="-450 450"/><motor name="fr_elbow" joint="fr_elbow" ctrlrange="-450 450" forcerange="-450 450"/><motor name="rl_shoulder" joint="rl_shoulder" ctrlrange="-450 450" forcerange="-450 450"/><motor name="rl_elbow" joint="rl_elbow" ctrlrange="-450 450" forcerange="-450 450"/><motor name="rr_shoulder" joint="rr_shoulder" ctrlrange="-450 450" forcerange="-450 450"/><motor name="rr_elbow" joint="rr_elbow" ctrlrange="-450 450" forcerange="-450 450"/><motor name="tool_extension" joint="tool_extension" ctrlrange="-500 500" forcerange="-500 500"/></actuator>
+    </mujoco>

@@ -1,0 +1,51 @@
+{
+  "integratedPrototypeSequencePassed": true,
+  "completeConstructionFasteningCertified": false,
+  "checks": {
+    "nominal": {
+      "realSeatGate": true,
+      "freePinNoFasteningWeld": true,
+      "dogCleared": true,
+      "proofLoadApplied": true,
+      "receiverPhysicallyWithdrawn": true,
+      "receiverContactAbsentDuringProof": true,
+      "toolContactAbsentDuringProof": true,
+      "dogCarriesProof": true,
+      "headCarriesProof": true,
+      "boundedBeamSlack": true,
+      "penetrationBelow1mm": true,
+      "contactPeakBelow10kN": true,
+      "finiteNoWarnings": true,
+      "receiverActuallySupportedInsertion": true,
+      "pusherActuallyContactedPin": true
+    },
+    "nominal-fine": {
+      "realSeatGate": true,
+      "freePinNoFasteningWeld": true,
+      "dogCleared": true,
+      "proofLoadApplied": true,
+      "receiverPhysicallyWithdrawn": true,
+      "receiverContactAbsentDuringProof": true,
+      "toolContactAbsentDuringProof": true,
+      "dogCarriesProof": true,
+      "headCarriesProof": true,
+      "boundedBeamSlack": true,
+      "penetrationBelow1mm": true,
+      "contactPeakBelow10kN": true,
+      "finiteNoWarnings": true,
+      "receiverActuallySupportedInsertion": true,
+      "pusherActuallyContactedPin": true
+    },
+    "controls": {
+      "missingLatchEscapes": true,
+      "missingStopBlocksLatch": true
+    },
+    "timestep": {
+      "beamDisplacementWithin1mm": true,
+      "dogLoadWithin20N": true
+    }
+  },
+  "timestepDisplacementDifferenceM": 2.4321623364187417e-06,
+  "coarsePeakContactN": 7666.247053071594,
+  "finePeakContactN": 9101.447069652919
+}

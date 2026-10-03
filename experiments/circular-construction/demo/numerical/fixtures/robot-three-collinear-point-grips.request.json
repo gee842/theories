@@ -1,0 +1,698 @@
+{
+  "schema_version": 1,
+  "request_id": "collinear-three-grip-roll",
+  "world_revision": 0,
+  "input_fingerprint": "sha256:1f26eec11c4a3d71da4403a38b98d14ac2c110e8dd94c6c3f75b3d03b76977e8",
+  "gravity_m_s2": [
+    0,
+    0,
+    -9.81
+  ],
+  "loads": [
+    {
+      "id": "collinear-climber:body",
+      "mass_kg": 56,
+      "position_m": [
+        0,
+        -0.68,
+        2.25
+      ]
+    },
+    {
+      "id": "collinear-climber:upper-0",
+      "mass_kg": 4.5,
+      "position_m": [
+        -0.6167525115528841,
+        -0.5462499753310726,
+        2.5575674191870097
+      ]
+    },
+    {
+      "id": "collinear-climber:fore-0",
+      "mass_kg": 3,
+      "position_m": [
+        -0.761752511552884,
+        -0.2062499753310725,
+        2.4500674191870098
+      ]
+    },
+    {
+      "id": "collinear-climber:clamp-0",
+      "mass_kg": 2.5,
+      "position_m": [
+        -0.58,
+        0,
+        2.25
+      ]
+    },
+    {
+      "id": "collinear-climber:upper-1",
+      "mass_kg": 4.5,
+      "position_m": [
+        0.6084528542400974,
+        -0.6322781594349742,
+        2.63685867903432
+      ]
+    },
+    {
+      "id": "collinear-climber:fore-1",
+      "mass_kg": 3,
+      "position_m": [
+        0.7534528542400973,
+        -0.29227815943497415,
+        2.79935867903432
+      ]
+    },
+    {
+      "id": "collinear-climber:clamp-1",
+      "mass_kg": 2.5,
+      "position_m": [
+        0.58,
+        0,
+        2.79
+      ]
+    },
+    {
+      "id": "collinear-climber:upper-2",
+      "mass_kg": 4.5,
+      "position_m": [
+        -0.44824789552669864,
+        -0.35426399379858287,
+        1.9894076999338555
+      ]
+    },
+    {
+      "id": "collinear-climber:fore-2",
+      "mass_kg": 3,
+      "position_m": [
+        -0.3032478955266986,
+        -0.014263993798582841,
+        2.0969076999338556
+      ]
+    },
+    {
+      "id": "collinear-climber:clamp-2",
+      "mass_kg": 2.5,
+      "position_m": [
+        0,
+        0,
+        2.25
+      ]
+    },
+    {
+      "id": "collinear-climber:upper-3",
+      "mass_kg": 4.5,
+      "position_m": [
+        0.6167525115528841,
+        -0.5462499753310726,
+        1.9424325808129903
+      ]
+    },
+    {
+      "id": "collinear-climber:fore-3",
+      "mass_kg": 3,
+      "position_m": [
+        0.761752511552884,
+        -0.2062499753310725,
+        2.0499325808129902
+      ]
+    },
+    {
+      "id": "collinear-climber:clamp-3",
+      "mass_kg": 2.5,
+      "position_m": [
+        0.58,
+        0,
+        2.25
+      ]
+    },
+    {
+      "id": "collinear-climber:tool",
+      "mass_kg": 6,
+      "position_m": [
+        0.58,
+        0,
+        2.79
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "id": "collinear-climber:point-0",
+      "position_m": [
+        -0.58,
+        0,
+        2.25
+      ],
+      "kind": "point",
+      "force_bounds_N": {
+        "lower": [
+          -866.0254037844387,
+          -866.0254037844387,
+          -866.0254037844387
+        ],
+        "upper": [
+          866.0254037844387,
+          866.0254037844387,
+          866.0254037844387
+        ]
+      }
+    },
+    {
+      "id": "collinear-climber:point-2",
+      "position_m": [
+        0,
+        0,
+        2.25
+      ],
+      "kind": "point",
+      "force_bounds_N": {
+        "lower": [
+          -866.0254037844387,
+          -866.0254037844387,
+          -866.0254037844387
+        ],
+        "upper": [
+          866.0254037844387,
+          866.0254037844387,
+          866.0254037844387
+        ]
+      }
+    },
+    {
+      "id": "collinear-climber:point-3",
+      "position_m": [
+        0.58,
+        0,
+        2.25
+      ],
+      "kind": "point",
+      "force_bounds_N": {
+        "lower": [
+          -866.0254037844387,
+          -866.0254037844387,
+          -866.0254037844387
+        ],
+        "upper": [
+          866.0254037844387,
+          866.0254037844387,
+          866.0254037844387
+        ]
+      }
+    }
+  ],
+  "require_actuator_limits": true,
+  "actuator_constraints": [
+    {
+      "id": "collinear-climber:limb-0:shoulder:x",
+      "gravity_torque_Nm": -36.52385806501635,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-0",
+          "force_to_torque_m": [
+            0,
+            0.21499999999999986,
+            0.68
+          ],
+          "moment_to_torque": [
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-0:shoulder:y",
+      "gravity_torque_Nm": -35.42041603750345,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-0",
+          "force_to_torque_m": [
+            -0.21499999999999986,
+            0,
+            0.29
+          ],
+          "moment_to_torque": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-0:shoulder:z",
+      "gravity_torque_Nm": 0,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-0",
+          "force_to_torque_m": [
+            -0.68,
+            -0.29,
+            0
+          ],
+          "moment_to_torque": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-0:elbow:x",
+      "gravity_torque_Nm": -16.18649806398257,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-0",
+          "force_to_torque_m": [
+            0,
+            0.40013483837401953,
+            0.412499950662145
+          ],
+          "moment_to_torque": [
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "collinear-climber:limb-0:elbow:y",
+      "gravity_torque_Nm": 14.26393710667035,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-0",
+          "force_to_torque_m": [
+            -0.40013483837401953,
+            0,
+            -0.36350502310576827
+          ],
+          "moment_to_torque": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "collinear-climber:limb-0:elbow:z",
+      "gravity_torque_Nm": 0,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-0",
+          "force_to_torque_m": [
+            -0.412499950662145,
+            0.36350502310576827,
+            0
+          ],
+          "moment_to_torque": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "collinear-climber:limb-1:shoulder:x",
+      "gravity_torque_Nm": -70.21913441957179,
+      "wrench_coefficients": [],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-1:shoulder:y",
+      "gravity_torque_Nm": 51.879168750715166,
+      "wrench_coefficients": [],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-1:shoulder:z",
+      "gravity_torque_Nm": 0,
+      "wrench_coefficients": [],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-1:elbow:x",
+      "gravity_torque_Nm": -57.34497488114193,
+      "wrench_coefficients": [],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "collinear-climber:limb-1:elbow:y",
+      "gravity_torque_Nm": -34.03145000190712,
+      "wrench_coefficients": [],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "collinear-climber:limb-1:elbow:z",
+      "gravity_torque_Nm": 0,
+      "wrench_coefficients": [],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "collinear-climber:limb-2:shoulder:x",
+      "gravity_torque_Nm": -50.64922665626928,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-2",
+          "force_to_torque_m": [
+            0,
+            -0.21499999999999986,
+            0.68
+          ],
+          "moment_to_torque": [
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-2:shoulder:y",
+      "gravity_torque_Nm": -0.263488913376853,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-2",
+          "force_to_torque_m": [
+            0.21499999999999986,
+            0,
+            -0.29
+          ],
+          "moment_to_torque": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-2:shoulder:z",
+      "gravity_torque_Nm": 0,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-2",
+          "force_to_torque_m": [
+            -0.68,
+            0.29,
+            0
+          ],
+          "moment_to_torque": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-2:elbow:x",
+      "gravity_torque_Nm": -1.1194382333127815,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-2",
+          "force_to_torque_m": [
+            0,
+            -0.3061846001322892,
+            0.028527987597165683
+          ],
+          "moment_to_torque": [
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "collinear-climber:limb-2:elbow:y",
+      "gravity_torque_Nm": 23.79889484093531,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-2",
+          "force_to_torque_m": [
+            0.3061846001322892,
+            0,
+            -0.6064957910533972
+          ],
+          "moment_to_torque": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "collinear-climber:limb-2:elbow:z",
+      "gravity_torque_Nm": 0,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-2",
+          "force_to_torque_m": [
+            -0.028527987597165683,
+            0.6064957910533972,
+            0
+          ],
+          "moment_to_torque": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "collinear-climber:limb-3:shoulder:x",
+      "gravity_torque_Nm": -36.52385806501635,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-3",
+          "force_to_torque_m": [
+            0,
+            -0.21499999999999986,
+            0.68
+          ],
+          "moment_to_torque": [
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-3:shoulder:y",
+      "gravity_torque_Nm": 35.42041603750345,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-3",
+          "force_to_torque_m": [
+            0.21499999999999986,
+            0,
+            -0.29
+          ],
+          "moment_to_torque": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-3:shoulder:z",
+      "gravity_torque_Nm": 0,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-3",
+          "force_to_torque_m": [
+            -0.68,
+            0.29,
+            0
+          ],
+          "moment_to_torque": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "lower_Nm": -300.2221399786054,
+      "upper_Nm": 300.2221399786054
+    },
+    {
+      "id": "collinear-climber:limb-3:elbow:x",
+      "gravity_torque_Nm": -16.18649806398257,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-3",
+          "force_to_torque_m": [
+            0,
+            -0.40013483837401953,
+            0.412499950662145
+          ],
+          "moment_to_torque": [
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "collinear-climber:limb-3:elbow:y",
+      "gravity_torque_Nm": -14.26393710667035,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-3",
+          "force_to_torque_m": [
+            0.40013483837401953,
+            0,
+            0.36350502310576827
+          ],
+          "moment_to_torque": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    },
+    {
+      "id": "collinear-climber:limb-3:elbow:z",
+      "gravity_torque_Nm": 0,
+      "wrench_coefficients": [
+        {
+          "contact_id": "collinear-climber:point-3",
+          "force_to_torque_m": [
+            -0.412499950662145,
+            -0.36350502310576827,
+            0
+          ],
+          "moment_to_torque": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "lower_Nm": -207.84609690826528,
+      "upper_Nm": 207.84609690826528
+    }
+  ],
+  "adapter_context": {
+    "version": "robot-fixed-pose/2",
+    "robot_id": "collinear-climber",
+    "body_position_m": [
+      0,
+      -0.68,
+      2.25
+    ],
+    "yaw_rad": 0,
+    "limbs": [
+      {
+        "index": 0,
+        "wrist_position_m": [
+          -0.58,
+          0,
+          2.25
+        ],
+        "mode": "load_verified",
+        "anchor_id": "point-0",
+        "tool": false
+      },
+      {
+        "index": 1,
+        "wrist_position_m": [
+          0.58,
+          0,
+          2.79
+        ],
+        "mode": "tooling",
+        "anchor_id": null,
+        "tool": true
+      },
+      {
+        "index": 2,
+        "wrist_position_m": [
+          0,
+          0,
+          2.25
+        ],
+        "mode": "load_verified",
+        "anchor_id": "point-2",
+        "tool": false
+      },
+      {
+        "index": 3,
+        "wrist_position_m": [
+          0.58,
+          0,
+          2.25
+        ],
+        "mode": "load_verified",
+        "anchor_id": "point-3",
+        "tool": false
+      }
+    ],
+    "contact_kind": "point",
+    "capacity_source": "assumed",
+    "declared_grip_force_limit_N": 1500,
+    "declared_grip_moment_limit_Nm": 240,
+    "declared_shoulder_torque_limit_Nm": 520,
+    "declared_elbow_torque_limit_Nm": 360,
+    "actuator_rows": "self-weight-resultant-box",
+    "external_loads_complete": true,
+    "load_scope": "Isolated robot self-weight; three collinear point grips",
+    "pose_geometry": {
+      "status": "pass",
+      "scope": "two-link IK, joint envelope, capsule self collision and supplied box obstacles",
+      "reasons": []
+    },
+    "source_geometry": null
+  }
+}

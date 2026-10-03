@@ -1,0 +1,9 @@
+00:00.168  translation      | WARNING Falling back to standard locale ("C")
+/Users/ren/theories/research/circular-construction/demo/production/blender/preview_six_axis_candidate.py:27: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes=True;scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.65,.7,.76,1);scene.world.node_tree.nodes['Background'].inputs[1].default_value=.45
+00:08.268  render           | Saved: '/Users/ren/theories/research/circular-construction/demo/production/blender/six-axis-carrier-candidate-preview.png'
+00:16.471  render           | Saved: '/Users/ren/theories/research/circular-construction/demo/production/blender/six-axis-carrier-candidate-wrist.png'
+Recorded source time 14.000249999990046 phase move
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

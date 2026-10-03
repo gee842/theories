@@ -1,0 +1,46 @@
+{
+  "limitedIncrementalChecksPassed": true,
+  "integratedFasteningPassed": false,
+  "retainingLoadPathConverged": true,
+  "loadPathDogReactionDifferenceN": 1.1888450736873892,
+  "claims": [
+    "Actual two-seat gate enables bounded maximum-stroke tool approach",
+    "Existing robot geometry cannot align or reach mating pin-head location",
+    "Pre-inserted six-DOF pin retains 2 kN with contact-only axial path",
+    "Recessed slot rails eliminate unintended slot bearing; dog/head load path agrees within 2 N across timesteps",
+    "No-latch control fails retention",
+    "No robot insertion or complete fastening is demonstrated"
+  ],
+  "fineTimestep": {
+    "scenario": "nominal",
+    "test": "Pre-inserted free-body pin retention; insertion NOT demonstrated",
+    "pinDofs": 6,
+    "equalityCount": 0,
+    "timestepSeconds": 0.00025,
+    "seatGateSeconds": 0.4002499999999836,
+    "finalBeamAxialDisplacementM": 0.014117183307099879,
+    "finalPinPositionM": [
+      0.009005895446621169,
+      0.08415811629680084,
+      0.3259088914098932
+    ],
+    "meanFinalAxialReactionsN": {
+      "dogBeam": 2000.5072342439573,
+      "headBracket": 2000.508021359039,
+      "slotBeam": 0.0
+    },
+    "finalDogExtensionM": [
+      0.02969801054718114,
+      0.030000001385459652
+    ],
+    "motorWorkJ": [
+      0.0,
+      0.0
+    ],
+    "maxPenetrationM": 0.0004923704759614238,
+    "warnings": 0,
+    "finite": true,
+    "completeRobotFasteningCycle": false
+  },
+  "coarseFineDisplacementDifferenceM": 8.766767420853583e-05
+}

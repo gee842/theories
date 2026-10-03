@@ -144,3 +144,45 @@ p_dec → 1：有人拿到决定性优势，并且赢家把支配延伸到所有
   - environment and positive feedback construct cognitive modelling, and present society is one vast instrumental convergence and reward hacking.
 - **Status of the limits.** Under real conditions, these limits can be proved further, or at least have answers rational judgment can give.
 - **Where the dynamics come from.** These are not problems of the theory. The arms race itself creates the dynamics that drive these limits to one, and the present trajectory is an arms race.
+
+## Ren — comments on the explainer doc for an alignment colleague (same day, verbatim)
+
+Context: the assistant wrote a Chinese explainer, "为什么竞赛无法安全：我们在做什么", for a friend of Ren's who works on alignment. Its last section named the premise "人能争议的理解增长慢于能力" as the one most likely to be refuted. It also asked her three questions: whether there is a third road out of the correction dilemma; whether risk compensation holds in real frontier decisions; and how to measure the exits. Ren replied to these passages:
+
+On "最可能被驳倒的是前提「人能争议的理解增长慢于能力」":
+"人学习新的理论模型的速度，共识扩散的速度，新的机制形成的速度都要跟得上指数增长，对于当下的人和由人的写作构成的社会 - 这个在生物学上显然不合理"
+
+On "纠错二难有没有第三条路？ AI 辅助、但人仍能审计的监督，能不能在能力复利增长时保持覆盖？":
+"这个理论应当可以推导出，不能"
+
+On "风险补偿在真实的前沿决策里成立吗？ 对齐和控制的进步，是否已经在被用来支持更快的部署或更多的自动化决策？":
+"复杂系统有蝴蝶效应，有strange attractor，不确定性建立在观察之上，ai作为整个文明系统的一部分，指数增长的影响系统，创造不确定性，这种支持显然无法在复利的前提下保证 - 并且增长也有不确定性和增量是否保持的问题，因此这种argument本来就站不住"
+
+### Gloss (assistant)
+- (U) is biological, not only institutional. Learning new theoretical models, diffusing consensus and forming new mechanisms would all have to keep pace with exponential growth, for present humans and for a society built of human writing.
+- The theory should derive that the "third road" fails: AI-assisted oversight that humans can still audit cannot keep coverage under compounding capability.
+- In a complex system (butterfly effect, strange attractors), uncertainty rests on observation. AI is an exponentially growing part of the civilizational system and creates uncertainty itself. So the assurance that would justify faster deployment cannot be guaranteed under compounding. Growth itself is also uncertain, and so is whether its increments persist. The argument that progress in control supports faster deployment fails at the root.
+
+## Ren — on "a lead buys a safety margin" (same day, verbatim)
+
+Ren quoted a reviewer's praise of v4.4: "主范例换对了。 '领先换安全裕度'被立为这一立场的主形式（命题 29），并点名了 Aschenbrenner、Amodei、AI 2027 slowdown 结局和 Stafford–Trager–Dafoe。" He replied:
+
+"你似乎对某些观点有bias - 领先换安全裕度显然不靠谱
+
+回归review和之前的工作，这个文档不重要"
+
+Gloss (assistant):
+- "A lead buys a safety margin" is plainly unreliable. Making it the main or strongest form of the position, with prominent authors named in the text, was a bias toward giving that camp's arguments undue standing.
+- Demote it to one instance. Answer the position by its structure.
+- The explainer doc for his colleague is not important; return to the reviews and the theory.
+
+## Ren — decisions on the second review round of v4.4 (same day, verbatim)
+
+"OpenReview 账号已有，你不用担心这个问题，
+其他的合理，disguise不太好，就是E3 改成'理解追上来'，与 E2 合并这一点，我不支持。 因为停止也是一种选择，不应该直接忽略"
+
+Gloss (assistant):
+- The synthesis's proposals are accepted: Lemma P, the collective criterion stated as a normative premise, and the rest.
+- Drop "disguise" and keep 伪解 with a precise definition.
+- Do not merge E3 into E2. Stopping is a choice of its own: E2 (stop or pause, rolling back where needed) and E3 (slow below the tempo of understanding) stay distinct exits. The catch-up condition (the uncovered fraction must be summable) becomes the success condition of each, not a reason to merge them.
+- The OpenReview account exists.

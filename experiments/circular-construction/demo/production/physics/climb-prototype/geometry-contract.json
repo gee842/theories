@@ -1,0 +1,515 @@
+{
+  "coordinates": "MuJoCo Z-up",
+  "viewerConversion": "p=(x,z,-y); orientations Rg=C Rm C^T",
+  "linkLengthM": 0.45,
+  "linkAxis": "local +X",
+  "railX": 0.55,
+  "railY": [
+    -0.25,
+    0.25
+  ],
+  "railSpacingM": 0.5,
+  "receiverPitchM": 0.3,
+  "storeyHeightM": 3.5999999999999996,
+  "startChassisPosition": [
+    0,
+    0,
+    1.2
+  ],
+  "hipOffsets": {
+    "fl": [
+      0,
+      -0.25,
+      0.32
+    ],
+    "fr": [
+      0,
+      0.25,
+      0.32
+    ],
+    "rl": [
+      0,
+      -0.25,
+      -0.32
+    ],
+    "rr": [
+      0,
+      0.25,
+      -0.32
+    ]
+  },
+  "initialShoulderAngleRad": -0.9133327704132528,
+  "initialElbowAngleRad": 1.8266655408265056,
+  "jointRangesRad": {
+    "shoulder": [
+      -1.7,
+      0.3
+    ],
+    "elbow": [
+      0.4,
+      2.5
+    ]
+  },
+  "torqueLimitNm": 450.0,
+  "upperMassKg": 8,
+  "lowerMassKg": 6,
+  "gripMassKg": 3,
+  "chassisMassKg": 69,
+  "capturePositionToleranceM": 0.004,
+  "captureSpeedToleranceMps": 0.025,
+  "railReceivers": [
+    {
+      "name": "rail_fl_0",
+      "position": [
+        0.55,
+        -0.25,
+        1.52
+      ]
+    },
+    {
+      "name": "rail_fl_1",
+      "position": [
+        0.55,
+        -0.25,
+        1.82
+      ]
+    },
+    {
+      "name": "rail_fl_2",
+      "position": [
+        0.55,
+        -0.25,
+        2.12
+      ]
+    },
+    {
+      "name": "rail_fl_3",
+      "position": [
+        0.55,
+        -0.25,
+        2.42
+      ]
+    },
+    {
+      "name": "rail_fl_4",
+      "position": [
+        0.55,
+        -0.25,
+        2.7199999999999998
+      ]
+    },
+    {
+      "name": "rail_fl_5",
+      "position": [
+        0.55,
+        -0.25,
+        3.02
+      ]
+    },
+    {
+      "name": "rail_fl_6",
+      "position": [
+        0.55,
+        -0.25,
+        3.32
+      ]
+    },
+    {
+      "name": "rail_fl_7",
+      "position": [
+        0.55,
+        -0.25,
+        3.62
+      ]
+    },
+    {
+      "name": "rail_fl_8",
+      "position": [
+        0.55,
+        -0.25,
+        3.92
+      ]
+    },
+    {
+      "name": "rail_fl_9",
+      "position": [
+        0.55,
+        -0.25,
+        4.22
+      ]
+    },
+    {
+      "name": "rail_fl_10",
+      "position": [
+        0.55,
+        -0.25,
+        4.52
+      ]
+    },
+    {
+      "name": "rail_fl_11",
+      "position": [
+        0.55,
+        -0.25,
+        4.82
+      ]
+    },
+    {
+      "name": "rail_fl_12",
+      "position": [
+        0.55,
+        -0.25,
+        5.119999999999999
+      ]
+    },
+    {
+      "name": "rail_fr_0",
+      "position": [
+        0.55,
+        0.25,
+        1.52
+      ]
+    },
+    {
+      "name": "rail_fr_1",
+      "position": [
+        0.55,
+        0.25,
+        1.82
+      ]
+    },
+    {
+      "name": "rail_fr_2",
+      "position": [
+        0.55,
+        0.25,
+        2.12
+      ]
+    },
+    {
+      "name": "rail_fr_3",
+      "position": [
+        0.55,
+        0.25,
+        2.42
+      ]
+    },
+    {
+      "name": "rail_fr_4",
+      "position": [
+        0.55,
+        0.25,
+        2.7199999999999998
+      ]
+    },
+    {
+      "name": "rail_fr_5",
+      "position": [
+        0.55,
+        0.25,
+        3.02
+      ]
+    },
+    {
+      "name": "rail_fr_6",
+      "position": [
+        0.55,
+        0.25,
+        3.32
+      ]
+    },
+    {
+      "name": "rail_fr_7",
+      "position": [
+        0.55,
+        0.25,
+        3.62
+      ]
+    },
+    {
+      "name": "rail_fr_8",
+      "position": [
+        0.55,
+        0.25,
+        3.92
+      ]
+    },
+    {
+      "name": "rail_fr_9",
+      "position": [
+        0.55,
+        0.25,
+        4.22
+      ]
+    },
+    {
+      "name": "rail_fr_10",
+      "position": [
+        0.55,
+        0.25,
+        4.52
+      ]
+    },
+    {
+      "name": "rail_fr_11",
+      "position": [
+        0.55,
+        0.25,
+        4.82
+      ]
+    },
+    {
+      "name": "rail_fr_12",
+      "position": [
+        0.55,
+        0.25,
+        5.119999999999999
+      ]
+    },
+    {
+      "name": "rail_rl_0",
+      "position": [
+        0.55,
+        -0.25,
+        0.8799999999999999
+      ]
+    },
+    {
+      "name": "rail_rl_1",
+      "position": [
+        0.55,
+        -0.25,
+        1.18
+      ]
+    },
+    {
+      "name": "rail_rl_2",
+      "position": [
+        0.55,
+        -0.25,
+        1.48
+      ]
+    },
+    {
+      "name": "rail_rl_3",
+      "position": [
+        0.55,
+        -0.25,
+        1.7799999999999998
+      ]
+    },
+    {
+      "name": "rail_rl_4",
+      "position": [
+        0.55,
+        -0.25,
+        2.08
+      ]
+    },
+    {
+      "name": "rail_rl_5",
+      "position": [
+        0.55,
+        -0.25,
+        2.38
+      ]
+    },
+    {
+      "name": "rail_rl_6",
+      "position": [
+        0.55,
+        -0.25,
+        2.6799999999999997
+      ]
+    },
+    {
+      "name": "rail_rl_7",
+      "position": [
+        0.55,
+        -0.25,
+        2.98
+      ]
+    },
+    {
+      "name": "rail_rl_8",
+      "position": [
+        0.55,
+        -0.25,
+        3.28
+      ]
+    },
+    {
+      "name": "rail_rl_9",
+      "position": [
+        0.55,
+        -0.25,
+        3.5799999999999996
+      ]
+    },
+    {
+      "name": "rail_rl_10",
+      "position": [
+        0.55,
+        -0.25,
+        3.88
+      ]
+    },
+    {
+      "name": "rail_rl_11",
+      "position": [
+        0.55,
+        -0.25,
+        4.18
+      ]
+    },
+    {
+      "name": "rail_rl_12",
+      "position": [
+        0.55,
+        -0.25,
+        4.4799999999999995
+      ]
+    },
+    {
+      "name": "rail_rr_0",
+      "position": [
+        0.55,
+        0.25,
+        0.8799999999999999
+      ]
+    },
+    {
+      "name": "rail_rr_1",
+      "position": [
+        0.55,
+        0.25,
+        1.18
+      ]
+    },
+    {
+      "name": "rail_rr_2",
+      "position": [
+        0.55,
+        0.25,
+        1.48
+      ]
+    },
+    {
+      "name": "rail_rr_3",
+      "position": [
+        0.55,
+        0.25,
+        1.7799999999999998
+      ]
+    },
+    {
+      "name": "rail_rr_4",
+      "position": [
+        0.55,
+        0.25,
+        2.08
+      ]
+    },
+    {
+      "name": "rail_rr_5",
+      "position": [
+        0.55,
+        0.25,
+        2.38
+      ]
+    },
+    {
+      "name": "rail_rr_6",
+      "position": [
+        0.55,
+        0.25,
+        2.6799999999999997
+      ]
+    },
+    {
+      "name": "rail_rr_7",
+      "position": [
+        0.55,
+        0.25,
+        2.98
+      ]
+    },
+    {
+      "name": "rail_rr_8",
+      "position": [
+        0.55,
+        0.25,
+        3.28
+      ]
+    },
+    {
+      "name": "rail_rr_9",
+      "position": [
+        0.55,
+        0.25,
+        3.5799999999999996
+      ]
+    },
+    {
+      "name": "rail_rr_10",
+      "position": [
+        0.55,
+        0.25,
+        3.88
+      ]
+    },
+    {
+      "name": "rail_rr_11",
+      "position": [
+        0.55,
+        0.25,
+        4.18
+      ]
+    },
+    {
+      "name": "rail_rr_12",
+      "position": [
+        0.55,
+        0.25,
+        4.4799999999999995
+      ]
+    }
+  ],
+  "clamp": {
+    "type": "ideal point connect",
+    "solref": [
+      0.008,
+      1
+    ],
+    "solimp": [
+      0.99,
+      0.99,
+      0.001
+    ]
+  },
+  "bodyNames": [
+    "robot_chassis",
+    "limb_fl_upper",
+    "limb_fl_lower",
+    "limb_fl_grip",
+    "limb_fr_upper",
+    "limb_fr_lower",
+    "limb_fr_grip",
+    "limb_rl_upper",
+    "limb_rl_lower",
+    "limb_rl_grip",
+    "limb_rr_upper",
+    "limb_rr_lower",
+    "limb_rr_grip"
+  ],
+  "visualGeometry": {
+    "chassisHalfExtentsM": [
+      0.18,
+      0.21,
+      0.27
+    ],
+    "upperRadiusM": 0.035,
+    "lowerRadiusM": 0.03,
+    "gripRadiusM": 0.035
+  }
+}
