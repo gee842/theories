@@ -50,7 +50,7 @@ void main(){
     else if (uMode == 4) discard;
     else if (uAtmoK > 0.0 && uThermal > 0.5) { float x2 = (dmin - uRadius) / uRadius; hc = vec3(0.3, 0.06, 0.03) * uAtmoK * (1.0 - exp(-exp(-x2 * 140.0) * 1.6)) * 0.5; }
     else if (uAtmoK > 0.0) { vec3 cp = uCamPos + rd * (-b) - uCenter; float ndc = dot(normalize(cp), uSun); float tau = exp(-x * 140.0) * 1.6; float glow = 1.0 - exp(-tau);
-      vec3 ac = mix(vec3(1.0, 0.42, 0.16), uAtmo, smoothstep(-0.1, 0.1, ndc + x * 6.0)); hc = ac * uAtmoK * glow * smoothstep(-0.28, 0.25, ndc) * 0.9; }
+      vec3 ac = mix(vec3(1.0, 0.42, 0.16), uAtmo, smoothstep(-0.1, 0.1, ndc + x * 6.0)); hc = ac * uAtmoK * glow * smoothstep(-0.28, 0.25, ndc) * 0.9 * min(uDayGain, 1.0); }
     o = vec4(hc * uOpacity, 0.0); return;
   }
   float t = -b - sqrt(h); vec3 P = uCamPos + rd * t; vec3 N = normalize(P - uCenter);
@@ -107,7 +107,7 @@ void main(){
     }
     vec3 ac = mix(vec3(1.0, 0.45, 0.18), uAtmo, smoothstep(-0.05, 0.3, ndl)); float lit = smoothstep(-0.2, 0.3, ndl);
     ac = mix(ac, vec3(0.3, 0.06, 0.03), uThermal); lit = mix(lit, 0.5, uThermal);   // in the infrared the air glows faintly warm, day and night alike
-    col += ac * uAtmoK * (pow(1.0 - view, 2.6) * 0.75 + 0.035) * lit;
+    col += ac * uAtmoK * (pow(1.0 - view, 2.6) * 0.75 + 0.035) * lit * mix(min(uDayGain, 1.0), 1.0, uThermal);   // the air is lit by the Sun: when the Sun is enclosed it goes dark
   } else if (uMode == 1) {                            // rocky worlds: Mercury, the Moon, an alien planet
     vec3 alb = toLin(texture(uDay, uv).rgb); float lum = dot(alb, vec3(0.3, 0.59, 0.11)); alb = mix(alb, vec3(lum), uDesat) * uTint;
     if (uProc > 0.5) { float m = fbm(q * 4.0), rr = ridged(q * 11.0); alb = mix(vec3(0.16, 0.075, 0.04), vec3(0.42, 0.27, 0.16), smoothstep(0.3, 0.7, m)) * (0.75 + 0.5 * rr); alb *= 0.85 + 0.3 * smoothstep(0.55, 0.8, vnoise(q * 40.0)); }
