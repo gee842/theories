@@ -795,7 +795,7 @@ function buildGalaxy() {
   const sun = [pos[sunI * 3], pos[sunI * 3 + 1], pos[sunI * 3 + 2]];
   const conv = new Float32Array(n); let dmax = 0; for (let i = 0; i < n; i++) { const d = Math.hypot(pos[i * 3] - sun[0], pos[i * 3 + 2] - sun[2]); conv[i] = d; dmax = Math.max(dmax, d); }
   for (let i = 0; i < n; i++) conv[i] = 172.5 + 21 * Math.pow(conv[i] / dmax, 1.25) + (r() - 0.5) * 1.2;
-  const ripple = new Float32Array(n); { const rad = new Float32Array(ND); for (let i = 0; i < n; i++) { const k = dom[i]; rad[k] = Math.max(rad[k], Math.hypot(pos[i * 3] - cen[k][0], pos[i * 3 + 2] - cen[k][1])); } for (let i = 0; i < n; i++) { const k = dom[i]; ripple[i] = 0.55 * Math.hypot(pos[i * 3] - cen[k][0], pos[i * 3 + 2] - cen[k][1]) / Math.max(rad[k], 1e-3); } }
+  const ripple = new Float32Array(n); { const rad = new Float32Array(ND); for (let i = 0; i < n; i++) { const k = dom[i]; rad[k] = Math.max(rad[k], Math.hypot(pos[i * 3] - cen[k][0], pos[i * 3 + 2] - cen[k][1])); } for (let i = 0; i < n; i++) { const k = dom[i]; ripple[i] = 0.55 * Math.hypot(pos[i * 3] - cen[k][0], pos[i * 3 + 2] - cen[k][1]) / Math.max(rad[k], 1e-3) + (r() - 0.5) * 1.6 * Math.exp(-seam[i] / 2.0); } }   // near a border, stars go early or late: ragged, not cut
   // the cell's star: a galaxy star near the Sun
   let cellI = sunI, cb = 1e9; for (let i = 34000; i < n; i += 2) { const d = Math.hypot(pos[i * 3] - sun[0] - 0.8, pos[i * 3 + 2] - sun[2] - 0.5); if (d < cb && i !== sunI) { cb = d; cellI = i; } }
   GAL = { n, pos, col, b, dom, seam, cen, death, volleys, src, conv, ND, sweep, sweeper: final[1], ripple, sun, cell: [pos[cellI * 3], pos[cellI * 3 + 1], pos[cellI * 3 + 2]] };
