@@ -59,6 +59,7 @@ const popAt = t => keyed(POP, yearAt(t), true);
 
 /* ================= the worlds ================= */
 // The solar system, one space (sizes exaggerated, positions consistent). Units: Earth radii, compressed distances.
+const SWARM_K = 3.6;   // the swarm sits at 3.6 solar radii, compressed like the rest of the system (a real one radiating at 12 µm would be near 1 AU)
 const SUN = [0, 0, 0], SUN_R = 12, MERC = [63, 0, -30], MERC_R = 0.42, VEN = [98, 0, 36], VEN_R = 0.95, EARTH = [150, 0, 0], MOON = add([150, 0, 0], [-3.2, 1.2, 9.3]), MOON_R = 0.27;
 const SUN_DIR_AT_EARTH = norm(sub(SUN, EARTH));
 // Earth turns under a camera fixed relative to the Sun: lon of the point under the camera = phiD + spin
@@ -677,8 +678,8 @@ const SOLAR_KEYS = () => [
   [113.8, add(VEN, VSIDE(2.8, 0.7, 1.0)), VEN, 36],
   [117.5, add(VEN, VSIDE(3.1, 0.8, 1.2)), VEN, 36],
   [119.0, add(VEN, VSIDE(14, 6, 3)), mixv(VEN, SUN, 0.8), 40],   // pull back from Venus, turning to the Sun
-  [121, [40, 70, 175], [0, -6, 0], 40],
-  [131.5, [55, 48, 120], [0, -4, 0], 36],
+  [121, [62, 104, 260], [0, -8, 0], 40],
+  [131.5, [92, 76, 200], [0, -4, 0], 36],
   [134.5, add(MOON, [2.6, 0.9, 4.6]), add(MOON, [-0.4, 0, -0.2]), 34],
   [138, add(MOON, [1.2, 0.35, 1.5]), add(MOON, [-1.5, -0.2, -1.2]), 40],
 ];
@@ -687,7 +688,7 @@ function sSolar(t) {
   if (!SKEYS) SKEYS = SOLAR_KEYS();
   let { pos, look, fov } = camPath(SKEYS, t);
   // the relay: ride alongside the beam's head from the swarm to the Moon
-  if (t > 132.2 && t < 134.6) { const src = add(SUN, scl(norm(sub(MOON, SUN)), SUN_R * 1.6)), dst = add(MOON, scl(norm(sub(SUN, MOON)), MOON_R)), bd = norm(sub(dst, src));
+  if (t > 132.2 && t < 134.6) { const src = add(SUN, scl(norm(sub(MOON, SUN)), SUN_R * SWARM_K)), dst = add(MOON, scl(norm(sub(SUN, MOON)), MOON_R)), bd = norm(sub(dst, src));
     const head = mixv(src, dst, ss(132.4, 134.6, t)), side = norm(cross(bd, [0, 1, 0])), ride = ss(132.2, 132.9, t) * (1 - ss(134.0, 134.6, t));
     const rp = add(add(head, scl(side, -20)), add(scl(bd, -25), [0, 6, 0])), rl = add(head, scl(bd, 30));
     pos = mixv(pos, rp, ease(ride)); look = mixv(look, rl, ease(ride)); fov = lerp(fov, 40, ride); }
@@ -697,17 +698,17 @@ function sSolar(t) {
   const swarmFill = ss(119, 130, t), ir = ss(127.5, 129.5, t);
   E.sphere({ mode: 2, center: SUN, radius: SUN_R, emissive: 1.6, ir: 0, atmo: [1.0, 0.72, 0.42], time: t, opacity: 1 });
   // the swarm: a shell of collectors that closes over the disc; in the infrared it is the shell that glows
-  if (swarmFill > 0) E.sphere({ mode: 4, center: SUN, radius: SUN_R * 1.35, cover: swarmFill, ir, time: t, depthWrite: false });
-  E.drawParticles(SYS.swarm, { uCenter: SUN, uT: t, uIR: ir, uR: SUN_R, uK: 0.25 }, { depth: true });
-  E.drawParticles(SYS.debris, { uT: t, uM: [len(MERC), Math.atan2(MERC[2], MERC[0]), 104, 0], uV: [len(VEN), Math.atan2(VEN[2], VEN[0]), 116, 0], uSwarmR: SUN_R }, { depth: true });
+  if (swarmFill > 0) E.sphere({ mode: 4, center: SUN, radius: SUN_R * SWARM_K, cover: swarmFill, ir, time: t, depthWrite: false });
+  E.drawParticles(SYS.swarm, { uCenter: SUN, uT: t, uIR: ir, uR: SUN_R * SWARM_K * 0.62, uK: 0.25 }, { depth: true });
+  E.drawParticles(SYS.debris, { uT: t, uM: [len(MERC), Math.atan2(MERC[2], MERC[0]), 104, 0], uV: [len(VEN), Math.atan2(VEN[2], VEN[0]), 116, 0], uSwarmR: SUN_R * SWARM_K * 0.7 }, { depth: true });
   // the Earth, wrapped and dried
   const rot = solarRot(t);
   earth(t, rot, { clouds: 0.3, dayGain: 1 - 0.92 * swarmFill });   // as the swarm closes, the Earth's day goes out
-  E.drawParticles(SYS.orbit, { uCenter: EARTH, uYear: yearAt(t), uT: t, uSunDir: SUN_DIR_AT_EARTH, uK: 1.2 * (1 - 0.94 * swarmFill) }, { depth: true });
+  E.drawParticles(SYS.orbit, { uCenter: EARTH, uYear: yearAt(t), uT: t, uSunDir: SUN_DIR_AT_EARTH, uK: 1.2 * (1 - 0.94 * swarmFill) * clamp(10 / len(sub(pos, EARTH))) }, { depth: true });   // from far off, 160,000 points would sum to a false star
   // the Moon; it blazes when the relay beam arrives
   const hit = ss(132.4, 134.6, t), blaze = ss(134.4, 136.5, t);
   E.sphere({ mode: 1, day: tex.moon, center: MOON, radius: MOON_R, sun: norm(sub(SUN, MOON)), dayGain: 1.3 * (1 - 0.9 * swarmFill) + blaze * 9, tint: [1, 0.98, 0.95], time: t });
-  if (t > 132.2) { const src = add(SUN, scl(norm(sub(MOON, SUN)), SUN_R * 1.6)), dst = add(MOON, scl(norm(sub(SUN, MOON)), MOON_R)); const head = mixv(src, dst, hit);
+  if (t > 132.2) { const src = add(SUN, scl(norm(sub(MOON, SUN)), SUN_R * SWARM_K)), dst = add(MOON, scl(norm(sub(SUN, MOON)), MOON_R)); const head = mixv(src, dst, hit);
     const tail = len(sub(head, src)) > 18 ? sub(head, scl(norm(sub(head, src)), 18)) : src;   // the stretch ahead of the riding camera
     ln(t < 134.6 ? tail : src, head, [1.0, 0.95, 0.85], 3.5 * (0.85 + 0.15 * Math.sin(t * 40)), 1.6); ln(t < 134.6 ? tail : src, head, [1.0, 0.9, 0.8], 0.3, 7); flushLns({ depth: true }); if (hit >= 1) { pt(dst, [1, 0.97, 0.9], 25 * blaze, 50); flushPts({ depth: false }); } }
   // Mercury: the scar spreads; mass drivers fling its crust prograde, and it thins into a ring along its own orbit
@@ -735,13 +736,13 @@ const FOLLOW = norm([0.45, 0.18, 1]);
 function sLaunch(t) {
   // the swarm, the probes leaving; at 147.5 the camera latches on to one probe and rides it out
   const ride = ss(147, 148.5, t), flyT = Math.max(0, t - 147);
-  const probePos = scl(FOLLOW, SUN_R * 2.2 + 60 * flyT * flyT);
-  let pos = mixv(add(SUN, [30, 22, 70]), add(probePos, add(scl(FOLLOW, -4), [0, 1.2, 0])), ease(ride)), look = mixv(SUN, add(probePos, scl(FOLLOW, 10)), ease(ride));
+  const probePos = scl(FOLLOW, SUN_R * SWARM_K * 1.05 + 60 * flyT * flyT);
+  let pos = mixv(add(SUN, [80, 58, 185]), add(probePos, add(scl(FOLLOW, -4), [0, 1.2, 0])), ease(ride)), look = mixv(SUN, add(probePos, scl(FOLLOW, 10)), ease(ride));
   camera(pos, look, 40, 0.05, 40000); drawStars(0.85);
   E.sphere({ mode: 2, center: SUN, radius: SUN_R, emissive: 2.0, ir: 0, atmo: [0.5, 0.06, 0.02], time: t });
-  E.sphere({ mode: 4, center: SUN, radius: SUN_R * 1.35, cover: 1, ir: 1, time: t, depthWrite: false });
-  E.drawParticles(SYS.swarm, { uCenter: SUN, uT: 200, uIR: 1, uR: SUN_R, uK: 0.25 }, { depth: true });
-  PROBES.forEach((pr, i) => { if (t < pr.tl || i % 2) return; const u = t - pr.tl, r0 = SUN_R * 1.6 + pr.v * 30 * u * u * (1 + u * u); const a = scl(pr.d, r0), b = scl(pr.d, r0 * 0.985); ln(b, a, [1, 0.8, 0.55], 1.1, 0.8); pt(a, [1, 0.85, 0.6], 1.2, 2); });
+  E.sphere({ mode: 4, center: SUN, radius: SUN_R * SWARM_K, cover: 1, ir: 1, time: t, depthWrite: false });
+  E.drawParticles(SYS.swarm, { uCenter: SUN, uT: 200, uIR: 1, uR: SUN_R * SWARM_K * 0.62, uK: 0.25 }, { depth: true });
+  PROBES.forEach((pr, i) => { if (t < pr.tl || i % 2) return; const u = t - pr.tl, r0 = SUN_R * SWARM_K + pr.v * 30 * u * u * (1 + u * u); const a = scl(pr.d, r0), b = scl(pr.d, r0 * 0.985); ln(b, a, [1, 0.8, 0.55], 1.1, 0.8); pt(a, [1, 0.85, 0.6], 1.2, 2); });
   pt(probePos, [1, 0.85, 0.6], t > 147 ? 8 : 0, 10); flushLns({ depth: true }); flushPts({ depth: true });
 }
 // transit: at a tenth of light speed nothing moves. The stars stand still, the target brightens ahead, and only the years race
@@ -761,7 +762,7 @@ function sCell(t) {
   camera(pos, look, 40, 0.01, 1e6); drawStars(0.9 * (1 - back));
   const sun = norm(CELL_STAR), dim = ss(166, 170, t);
   E.sphere({ mode: 2, center: CELL_STAR, radius: 1.4, emissive: 1.6, atmo: [1.0, 0.8, 0.5], time: t });
-  const shell = ss(164.5, 169, t); if (shell > 0) E.sphere({ mode: 4, center: CELL_STAR, radius: 1.4 * 1.35, cover: shell, ir: ss(169, 170.5, t), time: t, depthWrite: false });
+  const shell = ss(164.5, 169, t); if (shell > 0) E.sphere({ mode: 4, center: CELL_STAR, radius: 1.4 * 2.6, cover: shell, ir: ss(169, 170.5, t), time: t, depthWrite: false });
   const R = 1 - 0.4 * ss(163, 166, t), op = 1 - ss(165, 166.5, t);
   const rot = bodyRot(2.0, 0.25), faceW = norm([-0.33, 0.36, 0.88]), lesC = toBody(rot, faceW);
   if (op > 0) E.sphere({ mode: 1, day: tex.moon, proc: 1, radius: R, sun, desat: 0.2, tint: [1, 1, 1], dayGain: 1.6 * (1 - dim * 0.9), lesC, lesR: 2.6 * ss(158.5, 164, t), lesK: 1.3, rot, opacity: op, time: t });
@@ -776,7 +777,7 @@ function sCell(t) {
       const p = add(site, add(scl(tan, R * age * 0.9 * pl.v), scl([pl.d[0], pl.d[1] * 0.2, pl.d[2]], R * age * 0.45))); pt(p, [1, 0.75, 0.45], fling * op * (age < 0.06 ? 6 : 1.6) * (1 - age / 3), age < 0.06 ? 3 : 1.8); } }
   const ringK = ss(163, 167, t), coll = ss(165, 168, t);
   if (ringK > 0) { const r = rngOf(97); for (let i = 0; i < 14000; i++) { const a = r() * TAU, rr = 1.3 + r() * 1.2; if (r() > ringK) continue; const ang = a + t * 0.08 / rr; const local = [Math.cos(ang) * rr, gauss(r) * 0.04 + Math.sin(ang) * rr * 0.1, Math.sin(ang) * rr];
-    const toward = clamp((coll - r() * 0.5) * 2); const target = add(CELL_STAR, scl(norm([Math.cos(ang * 3 + i), (r() - 0.5) * 1.4, Math.sin(ang * 3 + i)]), 1.9 + r() * 0.6));
+    const toward = clamp((coll - r() * 0.5) * 2); const target = add(CELL_STAR, scl(norm([Math.cos(ang * 3 + i), (r() - 0.5) * 1.4, Math.sin(ang * 3 + i)]), 3.6 + r() * 0.8));
     pt(mixv(local, target, toward), toward > 0.98 ? [lerp(1, 0.7, dim), lerp(0.7, 0.1, dim), lerp(0.4, 0.04, dim)] : [1, 0.62, 0.3], (0.6 + toward * 0.4) * (1 - dim * 0.6), 1.8); } }
   flushPts({ depth: true });
   return back;
@@ -944,7 +945,7 @@ const CALL = [
   [62, 65.5, "mass drivers venting seawater", null, [1460, 300]],
   [66, 69.2, "dry sea floor", () => surf(orbitRot(68), 5, 40, 1.0)],
   [102, 105.5, "mass drivers", () => add(MERC, [0.35, 0.45, 0.3])],
-  [121.5, 125, "collector swarm", () => add(SUN, [SUN_R * 1.6, SUN_R * 1.2, 0])],
+  [121.5, 125, "collector swarm", () => add(SUN, [SUN_R * SWARM_K * 0.75, SUN_R * SWARM_K * 0.66, 0])],
   [134, 137.5, "laser relay", () => MOON],
   [145, 148, "self-replicating probes", null, [1250, 380]],
   [233.5, 237.5, "beams powered by whole stars", null, [1180, 300]],
