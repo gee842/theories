@@ -474,8 +474,9 @@ void main(){
       n = cityN; float u = abs(n.x) > 0.5 ? lq.z : lq.x; float glassy = step(0.45, id);
       if (id < -0.5) { alb = mix(vec3(0.05, 0.09, 0.035), vec3(0.08, 0.12, 0.05), n2(p.xz * 0.3)) * (0.6 + 0.6 * n2(p.xz * 1.1)); n = vec3(0.0, 1.0, 0.0); } else
       if (n.y > 0.5) { alb = id > 0.6 ? vec3(0.07, 0.11, 0.05) : vec3(0.3, 0.29, 0.28); }
-      else { float win = step(0.25, fract(p.y / 3.6)) * step(0.3, fract(u / 3.2)); alb = mix(vec3(0.5, 0.48, 0.45), vec3(0.1, 0.12, 0.14), glassy) * (1.0 - 0.35 * win); specK = glassy * 0.5;
-        float lit = step(0.6 - 0.25 * float(MD >= 2), h21(floor(vec2(u / 3.2, p.y / 3.6)) + id * 13.0)) * win;
+      else { float fp = t * 2.0 * tf / (uRes.y * 0.55) / max(abs(dot(n, -rd)), 0.2); float aa = smoothstep(0.5, 1.6, fp / 3.4);   // windows smaller than a pixel become their average
+        float win = mix(step(0.25, fract(p.y / 3.6)) * step(0.3, fract(u / 3.2)), 0.52, aa); alb = mix(vec3(0.5, 0.48, 0.45), vec3(0.1, 0.12, 0.14), glassy) * (1.0 - 0.35 * win); specK = glassy * 0.5;
+        float lp = 0.4 + 0.25 * float(MD >= 2); float lit = mix(step(1.0 - lp, h21(floor(vec2(u / 3.2, p.y / 3.6)) + id * 13.0)), lp, aa) * win;
         emit += vec3(1.0, 0.75, 0.48) * lit * (MD == 1 ? 0.04 : MD == 2 ? 0.35 : 0.5) * uDomeLight; }
     } else if (mat < 3.5) { alb = mix(vec3(0.07, 0.066, 0.062), vec3(0.12, 0.1, 0.085), step(5.0, p.x));   // two coats
     } else if (mat < 4.5) { alb = mix(vec3(0.5, 0.44, 0.36), vec3(0.62, 0.56, 0.47), fb(p.xz * 0.002)) * (0.8 + 0.3 * smoothstep(0.6, 1.0, n.y)); } else { alb = vec3(0.08); }
@@ -611,7 +612,7 @@ function sTwoSuns(t) {  // 2:18–2:24: a dim day; the Moon is the brighter sun 
   ground(2, t, { h: 1.6, x: lerp(9, 8.4, ss(138, 144, t)), pitch: 0.16, yaw: -0.08, fade: ss(138, 138.4, t) * (1 - ss(143.6, 144, t)), fov: 58, domeLight: 1 });
 }
 function sLastSky(t) {  // 3:16–3:23: the stars go out; the camera tilts up into the black
-  ground(3, t, { h: 1.7, x: 6, pitch: t < 200.6 ? 0.24 : lerp(0.24, 1.5, ease(ss(200.6, 202, t))), yaw: 0.06, stars: 1 - ss(196.2, 200.4, t), fade: ss(195, 195.5, t) * (1 - ss(201.4, 202, t)), fov: 62, domeLight: 0.35 });
+  ground(3, t, { h: 1.7, x: 6, pitch: t < 200.6 ? 0.24 : lerp(0.24, 1.5, ease(ss(200.6, 202, t))), yaw: 0.06, stars: 1 - ss(196.2, 200.4, t), fade: ss(195, 195.5, t) * (1 - ss(201.4, 202, t)), fov: 62, domeLight: 1.4 });
 }
 
 /* ================= 0:41–1:12 orbit, thermal, the oceans (one continuous orbital camera) ================= */
