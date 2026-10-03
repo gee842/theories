@@ -49,7 +49,7 @@ async function render(sr = 44100) {
     noise(t, S(a + 0.06), "lowpass", 1400, 300, 0.5, g => { g.linearRampToValueAtTime(vel * 0.35, S(a + 0.003)); g.exponentialRampToValueAtTime(0.0001, S(a + 0.06)); }, 0.3, pan); }
   // the motif: four falling notes, the game's figure; stated at every wall, lower as it goes; it breaks off when nothing is left to win
   const MOTIF = [523.25, 493.88, 440, 329.63];
-  function motif(t0, oct = 1, vel = 0.045, notes = 4, gap = 0.95) { const a = F(t0); for (let k = 0; k < notes; k++) pnote(S(a + k * gap), MOTIF[k] * oct, vel * (k === 3 ? 1.15 : 1), k === notes - 1 ? 7 : 4.5, (k - 1.5) * 0.12); }
+  function motif(t0, oct = 1, vel = 0.045, notes = 4, gap = 0.95, key = 0) { const a = F(t0), tr = Math.pow(2, key / 12); for (let k = 0; k < notes; k++) pnote(S(a + k * gap), MOTIF[k] * oct * tr, vel * (k === 3 ? 1.15 : 1), k === notes - 1 ? 7 : 4.5, (k - 1.5) * 0.12); }   // key: semitones from A minor
   const L10 = t => Math.log10(Math.max(1, Film.powerAt(t)));
   const ground = t => (t >= 33 && t < 41) || (t >= 72 && t < 84.5) || (t >= 138 && t < 144) || (t >= 195 && t < 202);
   // ---- the pad, act by act (story time)
@@ -62,7 +62,7 @@ async function render(sr = 44100) {
   prog(171, 223, [Cm, Ab, Eb, Bb, Cm, Ab], 0.013, 600);           // the galaxy taken
   chord(223, 268, [61.74, 92.5, 116.54, 130.81, 185], 0.011, 520, 4, 5);   // a cluster: the split and the war
   // the motif at each wall
-  motif(9.7); motif(27.6); motif(47.6, 1, 0.04); motif(56.8, 0.5, 0.05); motif(88.6, 0.5, 0.045); motif(129, 0.5, 0.05); motif(166.8, 0.5, 0.045); motif(190.4, 0.25, 0.06);
+  motif(9.7); motif(27.6); motif(47.6, 1, 0.04); motif(56.8, 0.5, 0.05); motif(88.6, 0.5, 0.045); motif(129, 0.5, 0.05); motif(166.8, 0.5, 0.045, 4, 0.95, 5); motif(190.4, 0.5, 0.055, 4, 1.05, 3);   // in D minor (the cell), in C minor (the galaxy)
   motif(224.2, 0.5, 0.05, 3);                                     // nothing is left to win: it does not resolve
   // ---- 1. room tone; the Earth appears
   noise(0.3, 7.2, "lowpass", 260, 260, 0.6, g => { g.linearRampToValueAtTime(0.045, 1.8); g.setValueAtTime(0.045, 5.5); g.linearRampToValueAtTime(0, 7.2); }, 0.2);

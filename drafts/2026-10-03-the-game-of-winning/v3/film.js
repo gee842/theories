@@ -101,8 +101,9 @@ function buildSystems() {
       void particle(out vec3 pos, out vec4 col, out float size){
         vec3 n = vec3(sin(a1.y) * sin(a0.x), cos(a1.y), -sin(a1.y) * cos(a0.x)); vec3 ax = normalize(cross(n, vec3(0.0, 1.0, 0.0001))), ay = cross(n, ax);   // the plane: inclination a1.y, node a0.x
         float ph = a0.y + uT * 0.5 / pow(a0.z, 1.5); vec3 rel = (ax * cos(ph) + ay * sin(ph)) * a0.z; pos = uCenter + rel;
-        float lit = dot(normalize(rel), uSunDir) > -0.12 ? 1.0 : 0.06; float on = smoothstep(a1.x, a1.x + 1.5, uYear);
-        col = vec4(1.0, 0.9, 0.76, (0.12 + pow(a0.w, 16.0) * 5.0) * lit * on * uK); size = 1.3; }`); }
+        float sd = dot(normalize(rel), uSunDir); float lit = sd > -0.38 ? 1.0 + 1.5 * smoothstep(0.0, -0.3, sd) : 0.04;   // still in sunlight well past the terminator, bright against the night side
+        float on = smoothstep(a1.x, a1.x + 1.5, uYear);
+        col = vec4(1.0, 0.9, 0.76, (0.12 + pow(a0.w, 16.0) * 5.0) * lit * on * uK); size = 1.5; }`); }
   // the collector swarm around the Sun
   { const r = rngOf(43), n = 700000, d = new Float32Array(n * 8); for (let i = 0; i < n; i++) { const k = i % 900; d.set([k * 3.17 + 0.3, r() * TAU, 1.35 + hashK(k + 11) * 0.9 + gauss(r) * 0.01, r(), 119 + 9 * Math.pow(hashK(k + 5), 0.8) + r() * 1.2, r(), 0, 0], i * 8); }
     SYS.swarm = E.particles(d, 2, `uniform float uIR, uR, uK;
@@ -640,7 +641,7 @@ function sOrbital(t) {
   camera(pos, look, fov, 0.002, 20000); drawStars(0.7);
   const year = yearAt(t), thermal = ss(50, 51.2, t) * (1 - ss(59, 60.2, t));
   earth(t, rot, { thermal, heat: clamp((year - 2055) / 45), clouds: lerp(0.55, 0.5, thermal) });
-  E.drawParticles(SYS.orbit, { uCenter: EARTH, uYear: year, uT: t, uSunDir: SUN_DIR_AT_EARTH, uK: 1 - thermal * 0.85 }, { depth: true });
+  E.drawParticles(SYS.orbit, { uCenter: EARTH, uYear: year, uT: t, uSunDir: SUN_DIR_AT_EARTH, uK: (2.6 - thermal * 2.2) * (1 - 0.4 * ss(55, 60, t)) }, { depth: true });
   // the rocket from the campus, climbing to join the shells
   if (t < 45.5) { const base = surf(rot, ABILENE[0], ABILENE[1], 1.0), up = norm(sub(base, EARTH)), side = norm(cross(up, [0, 1, 0])), u = ss(41, 45.5, t);
     const p = add(add(base, scl(up, 0.08 * Math.sin(u * Math.PI / 2))), scl(side, u * 0.35)); pt(p, [1, 0.9, 0.7], 8 * (1 - ss(44.5, 45.5, t)), 14); flushPts({ depth: true }); let prev = base; for (let i = 1; i <= 16; i++) { const v = u * i / 16, q = add(add(base, scl(up, 0.08 * Math.sin(v * Math.PI / 2))), scl(side, v * 0.35)); ln(prev, q, [1, 0.7, 0.4], 0.9 * (i / 16) * (1 - ss(44.5, 45.5, t)), 1.4); prev = q; } flushLns({ depth: true }); }   // its trail, a smooth streak
