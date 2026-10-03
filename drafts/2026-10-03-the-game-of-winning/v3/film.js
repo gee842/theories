@@ -553,8 +553,9 @@ void main(){
     vec3 lit = vec3(0.0); float od = 0.0;
     for (int j = 0; j < 40 + iZero; j++) { vec4 P = uPl[j]; if (P.w <= 0.0) break; vec3 wc = P.xyz - ro; float tq = dot(wc, rd); if (tq <= 0.0 || tq > tHit) continue;
       float dp2 = max(dot(wc, wc) - tq * tq, 0.0), w2 = P.w * P.w; if (dp2 > 6.0 * w2) continue;
-      float lobe = mix(1.0, 0.55 + 0.9 * n2(vec2(float(j) * 0.7, sqrt(dp2) / P.w * 2.5 + uTime * 0.4)), uPc[j].w > 0.0 ? 1.0 : 0.0);
-      float dens = exp(-dp2 / w2) * abs(uPc[j].w) * lobe; lit += uPc[j].rgb * dens * exp(-od); od += dens * 0.6; }
+      float dp = sqrt(dp2), rz = (dp - 0.75 * P.w) / (0.38 * P.w);
+      float prof = uPc[j].w > 0.0 ? (0.4 * exp(-dp2 / w2) + 0.6 * exp(-rz * rz)) * (0.6 + 0.8 * n2(vec2(float(j) * 0.9, dp / P.w * 3.0 + uTime * 0.3))) : exp(-dp2 / w2);   // sunlit: an expanding shell, bright at its rim
+      float dens = prof * abs(uPc[j].w); lit += uPc[j].rgb * dens * exp(-od); od += dens * 0.6; }
     col = col * exp(-od * 0.5) + lit;
     col += vec3(1.0, 0.55, 0.25) * 0.05 * smoothstep(0.0, 0.06, uLaunch) * exp(-abs(rd.y) * 30.0) * exp(-(atan(rd.x, -rd.z) - 0.127) * (atan(rd.x, -rd.z) - 0.127) * 60.0);
   }
