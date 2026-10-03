@@ -631,7 +631,7 @@ void main(){ vec2 px = vUV * uRes; vec3 col = vec3(0.0);
     float puff = 0.55 + 0.45 * sin(a * 0.045 - uTime * 7.0 + K.z * 6.28);              // the drivers fire in a slow rhythm
     float body = exp(-(c / w) * (c / w) * 1.4) * (0.3 + turb) * smoothstep(-0.02, 0.04, u) * (1.0 - smoothstep(0.45, 1.25, u));
     vec3 tint = mix(vec3(1.0, 0.95, 0.88), vec3(0.74, 0.84, 1.0), smoothstep(0.1, 0.8, u));   // steam lit warm at the base, ice blue aloft
-    float ice = step(0.992, h21(floor(px * 0.5) + floor(uTime * 6.0))) * smoothstep(0.35, 0.8, u) * exp(-(c / w) * (c / w) * 0.6);   // freezing crystals glitter
+    float ice = step(0.9985, h21(floor(px * 0.7) + floor(uTime * 5.0) * 1.7 + K.z * 31.0)) * smoothstep(0.4, 0.85, u) * exp(-(c / w) * (c / w) * 1.2);   // freezing crystals glitter
     col += (tint * body * mix(1.0, puff, smoothstep(0.0, 0.5, u)) * (1.25 - 0.55 * u) + vec3(0.9, 0.95, 1.0) * ice * 1.5) * K.y; }
   o = vec4(col, 0.0); }`;
 const JETS = (() => { const r = rngOf(29), j = []; for (let i = 0; i < 20; i++) j.push({ u: r(), h: (r() - 0.5) * 1.5, ph: r(), v: 0.7 + r() * 0.5, w: r() }); return j; })();

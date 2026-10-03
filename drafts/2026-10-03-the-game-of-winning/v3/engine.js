@@ -62,10 +62,11 @@ void main(){
   if (uMode == 0) {                                   // Earth
     vec3 day = toLin(texture(uDay, uv).rgb); vec3 night = toLin(texture(uNight, uv).rgb);
     vec4 gr = uHasGrow > 0.5 ? texture(uGrow, uv) : vec4(1.0, 0.0, 0.0, 1.0);
-    float depth = gr.g, isSea = step(0.004, depth);
+    float depth = gr.g, isSea = step(0.004, depth) * step(day.r * 1.25 + 0.001, day.b);   // sea only where the day map is blue: pale sand is not a shallow sea
     float dryYear = uSeaStart + pow(depth, 0.7) * (uSeaEnd - uSeaStart);
     float sea = isSea * (1.0 - smoothstep(dryYear - 1.5, dryYear + 1.5, uYear));
-    float gYear = 2026.0 + gr.r * 128.0 + (fbm(q * 55.0) - 0.5) * 16.0 + (vnoise(q * 240.0) - 0.5) * 5.0;
+    vec2 uvg = uv + (vec2(fbm(q * 24.0), fbm(q * 24.0 + 5.3)) - 0.5) * vec2(0.006, 0.006);   // a warped lookup, so growth fronts don't trace the map's texels
+    float gYear = 2026.0 + (uHasGrow > 0.5 ? texture(uGrow, uvg).r : 1.0) * 128.0 + (fbm(q * 55.0) - 0.5) * 16.0 + (vnoise(q * 240.0) - 0.5) * 5.0;
     if (isSea > 0.5) gYear = dryYear + 6.0 + 24.0 * fbm(q * 70.0);
     float grown = smoothstep(gYear, gYear + 4.0, uYear) * (1.0 - sea);
     // dried sea floor: salt and silt
@@ -75,12 +76,12 @@ void main(){
     float fields = smoothstep(0.35, 0.5, vnoise(q * 700.0)) * (0.7 + 0.3 * vnoise(q * 2200.0));   // irregular field patches, not a grid
     vec3 glass = vec3(0.012, 0.02, 0.04) * (0.8 + 0.5 * fields);
     float ice = smoothstep(0.55, 0.8, min(day.r, min(day.g, day.b)) / max(max(day.r, day.g), 1e-3) * dot(day, vec3(0.33)) * 2.0);
-    float glassK = grown * (1.0 - ice * 0.6) * (0.55 + 0.45 * fbm(q * 90.0));
+    float glassK = grown * (1.0 - ice * 0.6) * mix(0.55 + 0.45 * fbm(q * 90.0), 0.97, smoothstep(gYear + 8.0, gYear + 40.0, uYear));   // the gaps between fields close over the decades
     day = mix(day, glass, glassK);
     float dl = smoothstep(-0.08, 0.3, ndl);
     vec3 dcol = day * dl * uDayGain;
     vec3 hv = normalize(uSun - rd); float spec = pow(max(dot(N, hv), 0.0), 70.0);
-    dcol += vec3(1.0, 0.95, 0.85) * pow(max(dot(N, hv), 0.0), 1400.0) * sea * 0.35 * dl * uDayGain + vec3(0.9, 0.92, 1.0) * spec * sea * 0.03 * dl * uDayGain;
+    dcol += vec3(1.0, 0.95, 0.85) * pow(max(dot(N, hv), 0.0), 1400.0) * sea * 0.12 * dl * uDayGain + vec3(0.9, 0.92, 1.0) * spec * sea * 0.03 * dl * uDayGain;
     // glass glints: each field tilted a little differently, so the desert sparkles instead of mirroring one sun
     vec3 gc = floor(q * 1400.0); vec3 jn = normalize(N + (vec3(hash13(gc), hash13(gc + 3.1), hash13(gc + 7.7)) - 0.5) * 0.3);
     dcol += vec3(1.0, 0.93, 0.8) * (pow(max(dot(jn, hv), 0.0), 260.0) * 1.2 * step(0.55, hash13(gc + 1.9)) + pow(max(dot(N, hv), 0.0), 30.0) * 0.03) * glassK * dl * uDayGain;
