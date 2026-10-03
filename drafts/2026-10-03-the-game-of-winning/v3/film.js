@@ -129,7 +129,7 @@ function buildSystems() {
       void particle(out vec3 pos, out vec4 col, out float size){
         pos = a0.xyz; vec3 red = vec3(0.85, 0.12, 0.05); vec3 c = a1.xyz; float a = a0.w * 0.9 * (1.0 + 3.0 * uNear); size = 1.4 * (1.0 + 1.5 * uNear);
         if (uFrontOn > 0.5 && uT >= a1.w) { float age = uT - a1.w; if (age < 0.5) { c = vec3(1.0, 0.6, 0.2); a = 5.0 * (1.0 - age / 0.5) + 0.3; } else { c = mix(vec3(0.55, 0.14, 0.05), red, uIR); a = mix(0.32 * a0.w + 0.08, a0.w * 0.8, uIR); } }
-        if (uWar > 0.5) { vec3 tint = uPC[int(mod(a2.z, 12.0))]; c = mix(red, tint * 0.9, uSplit * 0.85); a = a0.w * 0.8; float sk = uSplit * clamp(1.0 - a2.y / 0.35, 0.0, 1.0); c = mix(c, vec3(1.0, 0.9, 0.8), sk * 0.6); a += sk * 1.2;
+        if (uWar > 0.5) { vec3 tint = uPC[int(mod(a2.z, 12.0))]; c = mix(red, tint * 1.1, uSplit * 0.9); a = a0.w * (0.8 + 0.5 * uSplit);
           float dt = uT - a2.x; if (dt > 0.7) { c = vec3(0.5, 0.08, 0.03); a = a0.w * 0.3 * exp(-(dt - 0.7) / 3.5); } else if (dt > 0.0) { c = vec3(1.0, 0.85, 0.7); a = 9.0 * (1.0 - dt / 0.7); } }   // a struck star flares, then cools to an ember
         if (uGlow > 0.0) { a *= uGlow; size = 30.0; }
         col = vec4(c, a); }`;
@@ -853,11 +853,11 @@ void main(){
       vec2 w = vec2(P.x + sin(P.z * 0.7) * 1.6, P.z + cos(P.x * 0.6) * 1.6); float bd = 1e9, bd2 = 1e9; int bi = 0, bi2 = 0;
       for (int k = 0; k < 212; k++) { vec4 cc = uDomC[k / 2]; vec2 c2 = (k % 2 == 0) ? cc.xy : cc.zw; vec2 dv = w - c2; float d = dot(dv, dv); if (d < bd) { bd2 = bd; bi2 = bi; bd = d; bi = k; } else if (d < bd2) { bd2 = d; bi2 = k; } }
       float rip1 = 0.6 * sqrt(bd) / 4.0, rip2 = 0.6 * sqrt(bd2) / 4.0;
-      float a1 = 1.0 - smoothstep(uDomD[bi / 4][bi % 4] + rip1, uDomD[bi / 4][bi % 4] + rip1 + 1.4, uT), a2 = 1.0 - smoothstep(uDomD[bi2 / 4][bi2 % 4] + rip2, uDomD[bi2 / 4][bi2 % 4] + rip2 + 1.4, uT);
+      float a1 = 1.0 - smoothstep(uDomD[bi / 4][bi % 4] + rip1, uDomD[bi / 4][bi % 4] + rip1 + 3.0, uT), a2 = 1.0 - smoothstep(uDomD[bi2 / 4][bi2 % 4] + rip2, uDomD[bi2 / 4][bi2 % 4] + rip2 + 3.0, uT);
       float wb = 0.5 + 0.5 * smoothstep(0.0, 6.0, sqrt(bd2) - sqrt(bd)) + 0.2 * (fb(P.xz * 1.1) - 0.5);
       float alive = mix(a2, a1, clamp(wb, 0.0, 1.0)); vec3 tint = mix(uPC[bi2 % 12], uPC[bi % 12], clamp(wb, 0.0, 1.0));
       float seam = (1.0 - smoothstep(0.0, 0.9, sqrt(bd2) - sqrt(bd))) * uSplit;
-      vec3 cl = mix(c, tint * dot(c, vec3(0.33)) * 2.2, uSplit * 0.42); c = mix(redOf(c) * 0.06, cl, alive) + vec3(1.0, 0.85, 0.7) * seam * 0.06 * disk * alive;   // the dead regions keep a faint ember
+      vec3 cl = mix(c, tint * dot(c, vec3(0.33)) * 2.0, uSplit * 0.55); c = mix(redOf(c) * 0.16, cl, alive) + vec3(1.0, 0.85, 0.7) * seam * 0.06 * disk * alive;   // the dead regions keep a faint ember
     }
     col += c * uK * smoothstep(0.0, 0.1, abs(rd.y));
   } }
