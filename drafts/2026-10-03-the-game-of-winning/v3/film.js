@@ -320,9 +320,17 @@ vec3 starfield(vec3 rd, float k){
     if (MD == 3) { float th2 = mix(h31(cell + 9.1), 0.35 + 0.65 * h31(cell + 9.1), band);   // nearby stars go first, the far band last
       float alive = smoothstep(th2 - 0.03, th2 + 0.01, uStars); float red = smoothstep(th2 + 0.16, th2, uStars); s *= alive; sc3 = mix(sc3, vec3(1.0, 0.2, 0.05), red); }
     c += sc3 * s; }
-  if (MD == 3) { float lane = smoothstep(0.42, 0.62, fb(vec2(atan(rd.z, rd.x) * 9.0, gb * 30.0)));
-    float glow = band * (0.45 + 0.55 * fb(rd.xz * 9.0 + rd.y * 3.0)) * (1.0 - 0.55 * lane * smoothstep(0.2, 0.0, abs(gb)));
-    c += mix(vec3(0.12, 0.04, 0.018), vec3(0.11, 0.11, 0.125), smoothstep(0.15, 0.7, uStars)) * glow * smoothstep(0.0, 0.5, uStars); }
+  if (MD == 3) {
+    // the Milky Way: a narrow bright band of grainy star clouds, a wider faint halo, and the dark rift along its middle
+    vec3 ax = normalize(cross(normalize(gn), vec3(0.0, 1.0, 0.0))); float along = atan(dot(rd, cross(normalize(gn), ax)), dot(rd, ax));
+    float core = exp(-gb * gb * 70.0), halo = exp(-gb * gb * 14.0) * 0.3;
+    float clouds = 0.35 + 0.9 * pow(fb(vec2(along * 14.0, gb * 40.0)), 1.6) + 0.35 * n2(rd.xy * 260.0 + rd.z * 90.0);
+    float rz = (gb - 0.012 * sin(along * 3.0)) / (0.012 + 0.008 * n2(vec2(along * 5.0, 2.0))); float rift = exp(-rz * rz) * smoothstep(0.3, 0.7, fb(vec2(along * 4.0, 7.0)));
+    float glow = (core * clouds + halo) * (1.0 - 0.8 * rift);
+    for (int L = 0; L < 1 + iZero; L++) { vec3 sp = rd * 720.0; vec3 cell = floor(sp); float hs = h31(cell + 31.0); vec3 cc = cell + 0.3 + 0.4 * vec3(h31(cell + 1.7), h31(cell + 3.3), h31(cell + 5.9));
+      float th2 = mix(h31(cell + 9.1), 0.35 + 0.65 * h31(cell + 9.1), band); float alive = smoothstep(th2 - 0.03, th2 + 0.01, uStars);
+      glow += step(1.0 - 0.5 * core * (1.0 - rift), hs) * smoothstep(0.14, 0.0, length(sp - cc)) * 0.9 * alive; }   // the faint dense stars that make the clouds grainy
+    c += mix(vec3(0.12, 0.035, 0.015), vec3(0.1, 0.095, 0.088), smoothstep(0.15, 0.7, uStars)) * glow * smoothstep(0.0, 0.5, uStars); }
   return c * k * smoothstep(-0.02, 0.12, rd.y);
 }
 vec3 sky(vec3 rd){
