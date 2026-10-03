@@ -1,0 +1,58 @@
+PROP28: baseline continuous equilibrium
+0.19 [{'i': 0.0019422822896, 'added_sum': 0.0011071009050720002, 'total_risk': 0.030785665175421806, 'BR_gap': np.float64(1.5987211554602254e-14), 'FOC': -7.512568345191539e-11}]
+0.05 [{'i': 0.0355099382039, 'added_sum': 0.005326490730585, 'total_risk': 0.034912136565947716, 'BR_gap': np.float64(7.105427357601002e-15), 'FOC': -4.4941828036826337e-13}]
+0.02 [{'i': 0.1038442753491, 'added_sum': 0.006230656520945999, 'total_risk': 0.03579486445810309, 'BR_gap': np.float64(1.2434497875801753e-14), 'FOC': 3.6770586575585185e-13}]
+0.01 [{'i': 0.2177348656355, 'added_sum': 0.006532045969065, 'total_risk': 0.03608898826065898, 'BR_gap': np.float64(-8.881784197001252e-16), 'FOC': -2.4313884239290928e-14}]
+0.005 [{'i': 0.4455160568564, 'added_sum': 0.006682740852846, 'total_risk': 0.03623602788503055, 'BR_gap': np.float64(1.1546319456101628e-14), 'FOC': 2.731148640577885e-14}]
+0.003 [{'i': 0.7492243151312, 'added_sum': 0.006743018836180801, 'total_risk': 0.03629483957666202, 'BR_gap': np.float64(5.329070518200751e-15), 'FOC': 2.942091015256665e-15}]
+0.001 [{'i': 1.0, 'added_sum': 0.003, 'total_risk': 0.03263833100000002, 'BR_gap': 0.0, 'FOC': 0.12220990220022002}]
+PROP28: multiplicity, both interior roots are GLOBAL best responses
+0.95 [{'i': 0.1442634223938, 'added_sum': 0.27410050254822, 'total_risk': 0.2724767261484411, 'BR_gap': np.float64(0.0), 'FOC': 2.063904602778166e-13}, {'i': 0.887841840764, 'added_sum': 1.6868994974515998, 'total_risk': 0.9785230238514688, 'BR_gap': np.float64(0.0), 'FOC': -3.5416114485542494e-14}, {'i': 1.0, 'added_sum': 1.9, 'total_risk': 0.9984, 'BR_gap': 0.0, 'FOC': 0.08576237623762373}]
+0.9 [{'i': 0.1529489671667, 'added_sum': 0.27530814090006, 'total_risk': 0.2735064163795976, 'BR_gap': np.float64(1.1102230246251565e-16), 'FOC': -1.0813572259849025e-13}, {'i': 0.9370510328333, 'added_sum': 1.68669185909994, 'total_risk': 0.9784925836204377, 'BR_gap': np.float64(2.220446049250313e-16), 'FOC': -1.8596235662471372e-14}, {'i': 1.0, 'added_sum': 1.8, 'total_risk': 0.9919, 'BR_gap': 0.0, 'FOC': 0.042762376237623786}]
+0.85 [{'i': 0.1626565499626, 'added_sum': 0.27651613493642, 'total_risk': 0.2745356803670117, 'BR_gap': np.float64(1.1102230246251565e-16), 'FOC': -2.3203661214665772e-14}, {'i': 0.9920493323903, 'added_sum': 1.68648386506351, 'total_risk': 0.978462069632986, 'BR_gap': np.float64(0.0), 'FOC': -2.8657631823136853e-14}, {'i': 1.0, 'added_sum': 1.7, 'total_risk': 0.9804, 'BR_gap': 0.0, 'FOC': 0.004762376237623753}]
+PROP28 -> M(4): falling summable risk despite accelerating strength and full delegation
+{'t': 5, 's': 32.0, 'delta': 0.03125, 'derivative_at_full': 0.18616082291009048, 'risk': 0.090850830078125, 'eq': [{'i': 1.0, 'added_sum': 0.09375, 'total_risk': 0.090850830078125, 'BR_gap': 0.0, 'FOC': 0.18616082291009048}]}
+{'t': 6, 's': 64.0, 'delta': 0.015625, 'derivative_at_full': 0.20366288535615318, 'risk': 0.046146392822265625, 'eq': [{'i': 1.0, 'added_sum': 0.046875, 'total_risk': 0.046146392822265625, 'BR_gap': 0.0, 'FOC': 0.20366288535615318}]}
+{'t': 8, 's': 256.0, 'delta': 0.00390625, 'derivative_at_full': 0.21748175228822297, 'risk': 0.011673033237457275, 'eq': [{'i': 1.0, 'added_sum': 0.01171875, 'total_risk': 0.011673033237457275, 'BR_gap': 0.0, 'FOC': 0.21748175228822297}]}
+{'t': 12, 's': 4096.0, 'delta': 0.000244140625, 'derivative_at_full': 0.22192396056198127, 'risk': 0.0007322430756175891, 'eq': [{'i': 1.0, 'added_sum': 0.000732421875, 'total_risk': 0.0007322430756175891, 'BR_gap': 0.0, 'FOC': 0.22192396056198127}]}
+{'t': 20, 's': 1048576.0, 'delta': 9.5367431640625e-07, 'derivative_at_full': 0.22222105662230104, 'risk': 2.8610202207346447e-06, 'eq': [{'i': 1.0, 'added_sum': 2.86102294921875e-06, 'total_risk': 2.8610202207346447e-06, 'BR_gap': 0.0, 'FOC': 0.22222105662230104}]}
+survival lower bound from t=5: 0.8125
+PROP22 baseline/global BR checks and two timings
+SEP [{'k': 0, 'x': 0.0, 'Coop': -0.6100000000000001, 'Race': None, 'BRgap': None}, {'k': 1, 'x': 0.32778159145457064, 'Coop': -1.0556302765308947, 'Race': 0.11577132839262835, 'BRgap': -2.220446049250313e-16}, {'k': 2, 'x': 0.4988545949334089, 'Coop': -1.3314503486088003, 'Race': -0.8760297602446994, 'BRgap': 0.0}, {'k': 3, 'x': 0.44006322362220945, 'Coop': -1.4223740936623657, 'Race': -1.197347727414739, 'BRgap': 0.0}, {'k': 4, 'x': 0.375, 'Coop': None, 'Race': -1.325, 'BRgap': 1.1102230246251565e-16}] [-0.7257713283926285, -0.17960051628619533, -0.13410262119406124, -0.09737409366236571] [] [4]
+CF [{'k': 0, 'x': 0.0, 'Coop': 0.14, 'Race': None, 'BRgap': None}, {'k': 1, 'x': 0.3645002406962964, 'Coop': -0.8847341662274697, 'Race': 0.0017258281226857908, 'BRgap': 0.0}, {'k': 2, 'x': 0.49829701943201055, 'Coop': -1.2914372923359978, 'Race': -0.8856358439733558, 'BRgap': 1.1102230246251565e-16}, {'k': 3, 'x': 0.44006322362220945, 'Coop': -1.4223740936623657, 'Race': -1.197347727414739, 'BRgap': 0.0}, {'k': 4, 'x': 0.375, 'Coop': None, 'Race': -1.325, 'BRgap': 1.1102230246251565e-16}] [0.13827417187731422, 0.0009016777458861203, -0.09408956492125875, -0.09737409366236571] [0.6106440869944] [0, 4]
+fixed-incumbent deviations ([0.13827417187731414, -0.21497662903000947, 0.005863290010000188, -0.026317192402377065], [0.8228701059])
+endpoint belief cutoff 0.4132179519308588
+actual coalition payoff C-vs-D differences, against singleton C and D: 1.337347727414739 0.44026583377253026
+PROP32 BIC nonconstant ex-post shares
+S [0.52, 0.42000000000000004] 0.5
+W [0.42000000000000004, 0.8200000000000001] 0.5
+agent2 S 0.5
+agent2 W 0.49999999999999994
+PROP32 arithmetic
+0.8 0.35999999999999993
+0.5 0.9
+0.2 1.4400000000000002
+0.05 1.71
+Lb=.5 0.2 1.1600000000000006
+Lb=.5 0.05 1.565
+survival ratio threshold 0.872093023255814
+equal shares without lower Omega/compression: Sa=2; strongest outside= 0.9249999999999998 equal share= 1.0
+PROP13 insufficient n-player sufficient condition
+each cooperates= 0.7071067811865476 all cooperate= 0.5000000000000001 claimed threshold=.5, actual advantage= -3.727922061357855
+PROP6 additive thresholds
+roots by rivals delegating: [1.1627842921497515, 1.0046897022149222, 0.8614609571788571] dominance threshold: 1.1627842921497515
+unshifted none,all: -0.6963676666666666 -1.1546666666666665
+PROP14 boundary example N=2: strict positive interval condition b<1/4 confirmed analytically.
+PROP15 two enforcement formulas and log derivative verified analytically; no numeric contradiction.
+M-prime: dangerous subset already covered, but X-based formula adds exposure
+{'X': 2.0, 'Y': 1.0, 'U0': 1.0, 'true_area': 0.0, 'X_based_area': 0.25, 'invalid_survival_upper': 0.9875778004938814}
+PROP31: lock probability below one; all-D survival does not vanish with s
+{'qL': 0.99, 'all_D_survival': 0.0045125000000000035, 'all_D_NE_speed_threshold': 206.42105263157876}
+PROP31/E: bounded-speed nondelegator, after one completed contest
+n=2,s=1,p=qL=1,psi0=0,psi1=.01 -> nondelegator survival: 0.33
+THEOREM S: exact discrete survival-rate gap
+qR=.005,qB=.05: 0.04628075256400639 small-risk approximation: 0.045000000000000005
+S5: high confidence does not preserve assurance when cooperative survival tends to zero
+{'H': 1000, 'p': 0.99, 'R': 0.006737946999085467, 'T': 0.009000000000000008, 'P': 0.0040000000000000036, 'S': 0.0010000000000000009, 'T_above_R': True, 'P_above_S': True}
+Fixed independent splitting: eta=1,g=.2,alpha=0,k=10 delay= 23.025850929940457
+Serial versus redundant oversight, f=.9,k=6: 0.531441 0.999999

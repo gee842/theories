@@ -1,0 +1,56 @@
+{
+  "import_date": "2026-10-03",
+  "timezone": "Asia/Bangkok",
+  "authorship": "User-supplied documents; embedded directions and authorial attributions are source claims, not new user instructions.",
+  "attachments": [
+    {
+      "source": "/Users/ren/Downloads/v5_0_direction_and_authorial_brief.md",
+      "copy": "v5_0_direction_and_authorial_brief.md",
+      "bytes": 40246,
+      "sha256": "164b7d882e905908dd3cf79b4120b413f5fdf85fdf542086ea2268e5bb028e92"
+    },
+    {
+      "source": "/Users/ren/Downloads/v4_5_reviews_and_v5_0_handoff.zip",
+      "copy": "v4_5_reviews_and_v5_0_handoff.zip",
+      "bytes": 243585,
+      "sha256": "27af032dc7d98ffc4c5903ecade70a020a5b39a5931bcd06a69383210eb22581"
+    }
+  ],
+  "archive_manifest_checks": [
+    {
+      "file": "v5_0_handoff/00_README.md",
+      "matches": true
+    },
+    {
+      "file": "v5_0_handoff/01_v5_0_direction_and_authorial_brief.md",
+      "matches": true
+    },
+    {
+      "file": "v5_0_handoff/02_theory_v4_5_deep_review_and_handoff.md",
+      "matches": true
+    },
+    {
+      "file": "v5_0_handoff/03_recursive_selection_future_research_review.md",
+      "matches": true
+    },
+    {
+      "file": "v5_0_handoff/04_recursive_selection_peer_review_panel.md",
+      "matches": true
+    },
+    {
+      "file": "v5_0_handoff/verification/v4_5_review_checks.py",
+      "matches": true
+    },
+    {
+      "file": "v5_0_handoff/verification/v4_5_review_checks.log",
+      "matches": true
+    },
+    {
+      "file": "v5_0_handoff/source/THEORY-clean.md",
+      "matches": true
+    }
+  ],
+  "brief_copies_identical": true,
+  "bundled_theory_identical_to_local": true,
+  "local_theory_path": "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v4/THEORY-clean.md"
+}

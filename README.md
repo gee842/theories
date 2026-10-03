@@ -16,6 +16,8 @@ Everything Ren has thought, drafted and theorised from 2021 to September 2026, g
 
 New exploration: [Architecture for a living Earth](theories/architecture-for-a-living-earth/README.md), opened 2026-09-13 — branching towers, elevated frameworks, automated construction, circulating materials, and the ecological conditions under which human settlements could support more life.
 
+Current writing plan: [v5 of the AI trajectory and cooperation theory](drafts/2026-10-02-iaseai-selecting-the-selectors/V5-PLAN.md), prepared 2026-10-03 from the local v4.5 manuscript and [Ren's supplied direction and review package](sources/19-v5-handoff-2026-10-03/README.md). It maps the existing contributions, mathematical repairs, evidence needs, and a proposed cooperative transition into the next writing sequence. The manuscript has not yet been rewritten as v5.
+
 ## The layers
 
 **`theories/<slug>/`** — one folder per theory. `README.md` is the canonical document: the strongest current formulation, the mechanism in prose, every claim with its citation, the genealogy, what earlier versions lost, Ren's own words, the open critiques, and what to read next. The `synthesis-*.md` files beside it are the reading drafts it was built from; they are kept because they carry detail the canonical document compresses.
