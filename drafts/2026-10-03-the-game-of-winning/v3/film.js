@@ -127,14 +127,14 @@ function buildSystems() {
   // the galaxy, with its whole war precomputed per star
   buildGalaxy();
   { const G = GAL, d = new Float32Array(G.n * 12); for (let i = 0; i < G.n; i++) { const k = G.dom[i]; d.set([G.pos[i * 3], G.pos[i * 3 + 1], G.pos[i * 3 + 2], G.b[i], G.col[i * 3], G.col[i * 3 + 1], G.col[i * 3 + 2], G.conv[i], G.death[k] + G.ripple[i], G.seam[i], k, 0], i * 12); }
-    SYS_GAL_BODY = `uniform float uIR, uWar, uSplit, uFrontOn, uNear, uGlow; uniform vec3 uPC[12];
+    SYS_GAL_BODY = `uniform float uIR, uWar, uSplit, uFrontOn, uNear, uGlow, uEnd; uniform vec3 uPC[12];
       void particle(out vec3 pos, out vec4 col, out float size){
         pos = a0.xyz; vec3 red = vec3(0.85, 0.12, 0.05); vec3 c = a1.xyz; float a = a0.w * 0.9 * (1.0 + 3.0 * uNear); size = 1.4 * (1.0 + 1.5 * uNear);
         if (uFrontOn > 0.5 && uT >= a1.w) { float age = uT - a1.w; if (age < 0.5) { c = vec3(1.0, 0.6, 0.2); a = 5.0 * (1.0 - age / 0.5) + 0.3; } else { c = mix(vec3(0.55, 0.14, 0.05), red, uIR); a = mix(0.32 * a0.w + 0.08, a0.w * 0.8, uIR); } }
         if (uWar > 0.5) { vec3 tint = uPC[int(mod(a2.z, 12.0))]; c = mix(red, tint * 1.1, uSplit * 0.9); a = a0.w * (0.8 + 0.5 * uSplit);
           float dt = uT - a2.x; if (dt > 0.7) { c = vec3(0.5, 0.08, 0.03); a = a0.w * 0.3 * exp(-(dt - 0.7) / 3.5); } else if (dt > 0.0) { c = vec3(1.0, 0.85, 0.7); a = 9.0 * (1.0 - dt / 0.7); } }   // a struck star flares, then cools to an ember
         if (uGlow > 0.0) { a *= uGlow; size = 30.0; }
-        col = vec4(c, a); }`;
+        col = vec4(c, a * uEnd); }`;
     SYS.galaxy = E.particles(d, 3, SYS_GAL_BODY);
     // a diffuse glow under the stars: a sparse subset drawn as large soft sprites
     const gN = 22000, gd = new Float32Array(gN * 12), rr = rngOf(91); for (let i = 0; i < gN; i++) { const j = Math.floor(rr() * G.n); gd.set(d.subarray(j * 12, j * 12 + 12), i * 12); }
@@ -901,8 +901,9 @@ function sGalaxy(t, cellBack = 1) {
   const war = t >= 223, front = t >= 170 && t < 202, ir = t >= 202 ? 1 : ss(189.5, 193.5, t);
   const gu = { uT: t, uIR: ir, uWar: war ? 1 : 0, uSplit: ss(223.5, 231, t), uFrontOn: front || t >= 202 ? 1 : 0, uSizeK: 1, uNear: t < 185 ? 1 - ss(172, 182, t) : 0 };
   gu.uPC = PCOL.flat();
-  drawGalaxyBody(t, { ir, front: gu.uFrontOn, war: gu.uWar, split: gu.uSplit, alive: war ? aliveFraction(t) : 1, k: ss(3, 26, c.pos[1]) });
-  E.drawParticles(SYS.galaxy, { ...gu, uGlow: 0, uSizeK: 0.9 }, { depth: false });
+  const endK = 1 - ss(268.9, 271.6, t);   // after the last two destroy each other, the embers cool and the galaxy goes out
+  drawGalaxyBody(t, { ir, front: gu.uFrontOn, war: gu.uWar, split: gu.uSplit, alive: war ? aliveFraction(t) : 1, k: ss(3, 26, c.pos[1]) * endK });
+  E.drawParticles(SYS.galaxy, { ...gu, uGlow: 0, uSizeK: 0.9, uEnd: endK }, { depth: false });
   if (t < 186) { pt(G.cell, [1, 0.62, 0.25], 4 * (1 - ss(176, 180, t)), 10); pt(G.sun, [1, 0.62, 0.25], 5 * (1 - ss(180, 184, t)), 12); flushPts({ depth: false }); }
   // probes leaving the rim, finding nothing
   if (t > 215 && t < 223) { const rr = rngOf(89); for (let k = 0; k < 70; k++) { const i = 34000 + Math.floor(rr() * (G.n - 34000)); const p = [G.pos[i * 3], G.pos[i * 3 + 1], G.pos[i * 3 + 2]]; if (Math.hypot(p[0], p[2]) < 30) continue;
@@ -913,6 +914,7 @@ function sGalaxy(t, cellBack = 1) {
     if (G.sweep.length && t > G.sweep[0].t - 0.6 && t < G.sweep[G.sweep.length - 1].t + 0.5) { const S = G.src[G.sweeper], ps = [G.pos[S * 3], 0.2, G.pos[S * 3 + 2]]; let i = 0; while (i < G.sweep.length - 1 && G.sweep[i + 1].t < t) i++;
       const A = G.sweep[i], B = G.sweep[Math.min(i + 1, G.sweep.length - 1)], u = B.t > A.t ? clamp((t - A.t) / (B.t - A.t)) : 0, pa = G.src[A.b], pb = G.src[B.b]; const tgt = [lerp(G.pos[pa * 3], G.pos[pb * 3], u), 0.2, lerp(G.pos[pa * 3 + 2], G.pos[pb * 3 + 2], u)];
       const k = ss(G.sweep[0].t - 0.6, G.sweep[0].t - 0.2, t) * (1 - ss(G.sweep[G.sweep.length - 1].t, G.sweep[G.sweep.length - 1].t + 0.5, t)); ln(ps, add(ps, scl(norm(sub(tgt, ps)), 70)), [1.0, 0.95, 0.9], 3.0 * k, 1.4); ln(ps, add(ps, scl(norm(sub(tgt, ps)), 70)), [1.0, 0.9, 0.8], 0.3 * k, 7); pt(ps, [1, 0.9, 0.8], 6 * k, 18); }
+    if (t > 268.4 && t < 270.5) { const k = Math.exp(-Math.max(0, t - 268.6) * 2.2) * ss(268.4, 268.6, t); for (const f of [G.volleys[G.volleys.length - 1].a, G.volleys[G.volleys.length - 1].b]) { const S = G.src[f]; pt([G.pos[S * 3], G.pos[S * 3 + 1], G.pos[S * 3 + 2]], [1, 0.95, 0.88], 30 * k, 90); } }   // the last two strike each other at once
     flushLns({ depth: false }); flushPts({ depth: false });
   }
 }
