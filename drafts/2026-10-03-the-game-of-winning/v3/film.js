@@ -491,6 +491,7 @@ void main(){
     else if (MD == 1) amb = vec3(0.27, 0.29, 0.33) * (0.6 + 0.4 * n.y) + vec3(0.4, 0.38, 0.34) * 0.18 * (1.0 - n.y);
     else if (MD == 2) amb = vec3(0.05, 0.055, 0.075) * (0.6 + 0.4 * n.y);
     else amb = vec3(0.012, 0.013, 0.017) * (0.6 + 0.4 * n.y) * (0.3 + 0.7 * uStars);
+    if (MD == 1 || MD == 2) amb += lightC * max(L.y, 0.0) * 0.75 * 0.32 * (0.5 - 0.5 * n.y);   // light bounced up from the white salt
     col = alb * (lightC * dif * sh + amb * ao) + emit;
     if (MD == 2) { float d2 = max(dot(n, RSUN), 0.0); float s2 = (d2 > 0.0 && caster && mat < 3.5) ? shadow(p + n * 0.05, RSUN, 60.0) : 1.0; col += alb * vec3(0.55, 0.1, 0.03) * 0.55 * d2 * s2; }
     if (mat > 2.5 && mat < 3.5 && MD == 2) { float rim = pow(1.0 - max(dot(n, -rd), 0.0), 3.0); col += (lightC * max(dot(n, L) + 0.35, 0.0) + vec3(0.55, 0.1, 0.03) * 0.5 * max(dot(n, RSUN) + 0.35, 0.0)) * rim * 0.35; }
