@@ -28,7 +28,7 @@ function filmT(st) { for (const [f0, f1, s0, s1] of TMAP) if (st <= s1) return s
 // Each player is a mosaic of sites across continents, not a country. Player 0 (amber) wins.
 const PCOL = [[1.0, 0.52, 0.16], [0.36, 0.82, 0.78], [1.0, 0.46, 0.56], [0.72, 0.92, 0.38], [0.66, 0.52, 1.0], [0.62, 0.8, 1.0], [1.0, 0.8, 0.32], [1.0, 0.58, 0.42], [0.48, 0.98, 0.62], [0.9, 0.52, 0.94], [0.42, 0.66, 1.0], [0.92, 0.86, 0.62]];
 // [year, absorbed, absorber]: the race consolidates until one player is left in 2097
-const ABSORB = [[2031, 11, 7], [2034, 9, 3], [2037, 5, 0], [2041, 10, 6], [2045, 8, 0], [2050, 7, 3], [2056, 4, 0], [2062, 6, 2], [2070, 3, 0], [2081, 1, 2], [2097, 2, 0]];
+const ABSORB = [[2031, 11, 7], [2034, 9, 3], [2037, 5, 0], [2041, 10, 6], [2045, 8, 0], [2050, 7, 3], [2056, 4, 0], [2062, 6, 2], [2070, 3, 0], [2078, 1, 2], [2087, 2, 0]];   // the last absorption lands just before the 2097 card says so
 function players(year) {
   const parent = [...Array(12).keys()], since = new Array(12).fill(-1e9);
   for (const [y, a, b] of ABSORB) if (year >= y) { parent[a] = b; since[a] = y; }
@@ -951,7 +951,7 @@ const CARDS = [
   [9.6, 13.4, "The race for super intelligence.", "2026 · TWELVE PLAYERS"],
   [27.4, 30.6, "Compute passes a terawatt.", "2046 · 1 TW"],
   [47.4, 50.4, "Compute uses as much energy as all of humanity did in 2026.", "2068 · 19 TW"],
-  [56.6, 59.6, "The planet can no longer shed its heat.", "2097 · WASTE HEAT 2 W/M²"],
+  [56.6, 59.6, "One player left. The planet can no longer shed its heat.", "2097 · WASTE HEAT 2 W/M²"],
   [68.2, 71.2, "The oceans become the coolant.", "2113 · 10 PW"],
   [88.4, 91.8, "The Earth is not enough.", "2132 · ALL THE SUNLIGHT THE EARTH RECEIVES"],
   [128.8, 132, "The Sun is enclosed.", "2291 · 3.8 × 10²⁶ W"],
@@ -999,10 +999,11 @@ function overlay(t) {
     lab("COMPUTE", L, y); val(fmtW(powerAt(t)), L + 168, y); y += 32;
     const pa = t < 222 ? players(yearAt(t)) : null, pn = playersAt(t);
     lab("PLAYERS", L, y); val(String(pn), L + 168, y, t > 222 ? "#ffb15a" : ink(0.96));
-    if (pa) { const yr = yearAt(t); for (let k = 0; k < 12; k++) { const r = pa.root(k), abs = ABSORB.find(e => e[1] === k); const gone = abs ? clamp((yr - abs[0]) / 2.5) : 0; const c = r === k ? PCOL[k] : mixv(PCOL[k], PCOL[r], gone); const sz = 9 * (1 - gone * 0.75);
-      ctx.globalAlpha = on * (1 - gone * 0.8); ctx.fillStyle = `rgb(${c.map(v => Math.round(v * 255)).join(",")})`; ctx.fillRect(L + 222 + k * 15 + (9 - sz) / 2, y - 12 + (9 - sz) / 2, sz, sz); } ctx.globalAlpha = on; }
     const lone = ss(LAST_ABSORB, LAST_ABSORB + 1, yearAt(t)) * (1 - ss(62, 64, t));
-    if (lone > 0 && t < 70) { ctx.globalAlpha = on * lone; ctx.font = `500 15px ${MONO}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "#ffb15a"; ctx.fillText("ONE PLAYER LEFT", L + 222, y); ctx.globalAlpha = on; }
+    if (pa) { const yr = yearAt(t); for (let k = 0; k < 12; k++) { if (k !== pa.root(k) && lone > 0) continue;   // once one is left, only its square remains beside the label
+      const r = pa.root(k), abs = ABSORB.find(e => e[1] === k); const gone = abs ? clamp((yr - abs[0]) / 2.5) : 0; const c = r === k ? PCOL[k] : mixv(PCOL[k], PCOL[r], gone); const sz = 9 * (1 - gone * 0.75);
+      ctx.globalAlpha = on * (1 - gone * 0.8); ctx.fillStyle = `rgb(${c.map(v => Math.round(v * 255)).join(",")})`; ctx.fillRect(L + 222 + k * 15 + (9 - sz) / 2, y - 12 + (9 - sz) / 2, sz, sz); } ctx.globalAlpha = on; }
+    if (lone > 0 && t < 70) { ctx.globalAlpha = on * lone; ctx.font = `500 15px ${MONO}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "#ffb15a"; ctx.fillText("ONE PLAYER LEFT", L + 246, y); ctx.globalAlpha = on; }
     y += 32;
     const popA = 1 - ss(142, 144, t); if (popA > 0) { ctx.globalAlpha = on * popA; lab("POPULATION", L, y); val(fmtPop(popAt(t)), L + 168, y); ctx.globalAlpha = on; }
     // where we are, and with what instrument
