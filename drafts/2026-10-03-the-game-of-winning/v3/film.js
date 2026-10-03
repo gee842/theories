@@ -795,7 +795,7 @@ function buildGalaxy() {
     pos.set([x, y, z], i * 3); col.set(c, i * 3); b[i] = 0.25 + Math.pow(r(), 4) * 2.5;
   }
   const ND = 212, cen = []; for (let k = 0; k < ND; k++) { const i = Math.floor(r() * n); cen.push([pos[i * 3], pos[i * 3 + 2]]); }
-  for (let i = 0; i < n; i++) { let d1 = 1e9, d2 = 1e9, k1 = 0; const x = pos[i * 3] + Math.sin(pos[i * 3 + 2] * 0.7) * 1.6 + gauss(r) * 0.5, z = pos[i * 3 + 2] + Math.cos(pos[i * 3] * 0.6) * 1.6 + gauss(r) * 0.5; for (let k = 0; k < ND; k++) { const d = (x - cen[k][0]) ** 2 + (z - cen[k][1]) ** 2; if (d < d1) { d2 = d1; d1 = d; k1 = k; } else if (d < d2) d2 = d; } dom[i] = k1; seam[i] = Math.sqrt(d2) - Math.sqrt(d1); }
+  for (let i = 0; i < n; i++) { const [wx, wz] = domWarp(pos[i * 3], pos[i * 3 + 2]), [k1, , sd] = nearest2(cen, wx, wz); dom[i] = k1; seam[i] = sd; }
   const src = cen.map(c => { let bi = 0, bd = 1e9; for (let i = 0; i < n; i += 7) { const d = (pos[i * 3] - c[0]) ** 2 + (pos[i * 3 + 2] - c[1]) ** 2; if (d < bd) { bd = d; bi = i; } } return bi; });
   const PLAYERS = [[232, 212], [248, 40], [258, 6], [262, 2]], Nat = t => keyed(PLAYERS, t, true);
   const rr = rngOf(59), order = [...Array(ND).keys()].sort(() => rr() - 0.5);
@@ -820,6 +820,21 @@ function buildGalaxy() {
   let cellI = sunI, cb = 1e9; for (let i = 34000; i < n; i += 2) { const d = Math.hypot(pos[i * 3] - sun[0] - 0.8, pos[i * 3 + 2] - sun[2] - 0.5); if (d < cb && i !== sunI) { cb = d; cellI = i; } }
   GAL = { n, pos, col, b, dom, seam, cen, death, volleys, src, conv, ND, sweep, sweeper: final[1], ripple, sun, cell: [pos[cellI * 3], pos[cellI * 3 + 1], pos[cellI * 3 + 2]] };
 }
+// territories: nearest centre after a fractal warp, so borders run like coastlines; one function for the stars and the map
+function vnJ(x, z) { const xi = Math.floor(x), zi = Math.floor(z), fx = x - xi, fz = z - zi, u = fx * fx * (3 - 2 * fx), v = fz * fz * (3 - 2 * fz);
+  const h = (a, b) => { const q = Math.sin(a * 127.1 + b * 311.7) * 43758.5453; return q - Math.floor(q); };
+  return lerp(lerp(h(xi, zi), h(xi + 1, zi), u), lerp(h(xi, zi + 1), h(xi + 1, zi + 1), u), v); }
+function fbJ(x, z) { let a = 0.5, s = 0; for (let o = 0; o < 5; o++) { s += a * vnJ(x, z); x = x * 2.03 + 7.3; z = z * 2.03 + 3.1; a *= 0.5; } return s; }
+function domWarp(x, z) { return [x + Math.sin(z * 0.7) * 1.2 + (fbJ(x * 0.3, z * 0.3) - 0.5) * 5.0 + (fbJ(x * 1.4 + 7, z * 1.4) - 0.5) * 1.6, z + Math.cos(x * 0.6) * 1.2 + (fbJ(x * 0.3 + 19, z * 0.3) - 0.5) * 5.0 + (fbJ(x * 1.4, z * 1.4 + 11) - 0.5) * 1.6]; }
+function nearest2(cen, x, z) { let d1 = 1e9, d2 = 1e9, k1 = 0, k2 = 0; for (let k = 0; k < cen.length; k++) { const d = (x - cen[k][0]) ** 2 + (z - cen[k][1]) ** 2; if (d < d1) { d2 = d1; k2 = k1; d1 = d; k1 = k; } else if (d < d2) { d2 = d; k2 = k; } } return [k1, k2, Math.sqrt(d2) - Math.sqrt(d1)]; }
+const DOMN = 640, DOMR = 56;   // the territory map: 640² texels over ±56 units
+function buildDomainMap(G) { const b = new Uint8Array(DOMN * DOMN * 4);
+  for (let j = 0; j < DOMN; j++) for (let i = 0; i < DOMN; i++) { const x = (i + 0.5) / DOMN * 2 * DOMR - DOMR, z = (j + 0.5) / DOMN * 2 * DOMR - DOMR, [wx, wz] = domWarp(x, z), [k1, k2, sd] = nearest2(G.cen, wx, wz);
+    const o = (j * DOMN + i) * 4; b[o] = k1; b[o + 1] = k2; b[o + 2] = Math.min(255, Math.round(sd * 40)); b[o + 3] = 255; }
+  const tn = E.dataTexture(DOMN, DOMN, b), tl = E.dataTexture(DOMN, DOMN, b), gl = E.gl;
+  gl.bindTexture(gl.TEXTURE_2D, tn.tex); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.bindTexture(gl.TEXTURE_2D, tl.tex); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  G.domN = tn; G.domL = tl; }
 function aliveFraction(t) { if (!GAL) return 1; let a = 0; for (let k = 0; k < GAL.ND; k++) if (GAL.death[k] > t) a++; return a / GAL.ND; }
 function playersAt(t) { if (t < 222) return players(yearAt(t)).alive.length; if (!GAL || t < 223) return 1; const split = Math.round(Math.exp(lerp(0, Math.log(212), ss(223.5, 231, t)))); if (t < 232) return split; let a = 0; for (let k = 0; k < GAL.ND; k++) if (GAL.death[k] > t) a++; return a; }
 function galFull(t) { const ang = 0.3 + t * 0.002; return { pos: [Math.cos(ang) * 50, 52, Math.sin(ang) * 50], look: [0, -3, 0] }; }
@@ -839,7 +854,7 @@ let GALBODY = null;
 const GALBODY_FS = `#version 300 es
 precision highp float; in vec2 vUV; out vec4 o; uniform vec2 uRes;
 uniform vec3 uCamPos, uCamR, uCamU, uCamF; uniform float uTanHalf, uAspect;
-uniform float uT, uIR, uFrontOn, uWar, uSplit, uDmax, uK, uAliveFrac; uniform vec3 uSun; uniform vec4 uDomC[106]; uniform vec4 uDomD[53]; uniform vec3 uPC[12];
+uniform float uT, uIR, uFrontOn, uWar, uSplit, uDmax, uK, uAliveFrac; uniform vec3 uSun; uniform vec4 uDomC[106]; uniform vec4 uDomD[53]; uniform vec3 uPC[12]; uniform sampler2D uDomN, uDomL;
 float h21(vec2 p){ p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
 float n2(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f); return mix(mix(h21(i), h21(i+vec2(1,0)), f.x), mix(h21(i+vec2(0,1)), h21(i+vec2(1,1)), f.x), f.y); }
 float fb(vec2 p){ float a = 0.5, s = 0.0; for (int i = 0; i < 5; i++) { s += a * n2(p); p = p * 2.03 + 7.3; a *= 0.5; } return s; }
@@ -870,13 +885,14 @@ void main(){
       c = mix(c, mix(c * 0.08 + redOf(c) * 0.22, redOf(c), uIR), conv) + vec3(1.0, 0.55, 0.18) * edge * disk * 1.6 * (0.4 + arms); }
     else if (uIR > 0.5) c = redOf(c);
     if (uWar > 0.5) {
-      vec2 w = vec2(P.x + sin(P.z * 0.7) * 1.6, P.z + cos(P.x * 0.6) * 1.6); float bd = 1e9, bd2 = 1e9; int bi = 0, bi2 = 0;
-      for (int k = 0; k < 212; k++) { vec4 cc = uDomC[k / 2]; vec2 c2 = (k % 2 == 0) ? cc.xy : cc.zw; vec2 dv = w - c2; float d = dot(dv, dv); if (d < bd) { bd2 = bd; bi2 = bi; bd = d; bi = k; } else if (d < bd2) { bd2 = d; bi2 = k; } }
-      float rip1 = 0.6 * sqrt(bd) / 4.0, rip2 = 0.6 * sqrt(bd2) / 4.0;
+      vec2 muv = (P.xz + 56.0) / 112.0; vec4 dn = texture(uDomN, muv); float sd = texture(uDomL, muv).b * 255.0 / 40.0;   // the territory map (film.js, buildDomainMap)
+      int bi = int(dn.r * 255.0 + 0.5), bi2 = int(dn.g * 255.0 + 0.5);
+      vec4 c1 = uDomC[bi / 2], c2v = uDomC[bi2 / 2]; vec2 cc1 = (bi % 2 == 0) ? c1.xy : c1.zw, cc2 = (bi2 % 2 == 0) ? c2v.xy : c2v.zw;
+      float rip1 = 0.6 * length(P.xz - cc1) / 4.0, rip2 = 0.6 * length(P.xz - cc2) / 4.0;
       float a1 = 1.0 - smoothstep(uDomD[bi / 4][bi % 4] + rip1, uDomD[bi / 4][bi % 4] + rip1 + 3.0, uT), a2 = 1.0 - smoothstep(uDomD[bi2 / 4][bi2 % 4] + rip2, uDomD[bi2 / 4][bi2 % 4] + rip2 + 3.0, uT);
-      float wb = 0.5 + 0.5 * smoothstep(0.0, 6.0, sqrt(bd2) - sqrt(bd)) + 0.2 * (fb(P.xz * 1.1) - 0.5);
+      float wb = 0.5 + 0.5 * smoothstep(0.0, 1.6, sd);
       float alive = mix(a2, a1, clamp(wb, 0.0, 1.0)); vec3 tint = mix(uPC[bi2 % 12], uPC[bi % 12], clamp(wb, 0.0, 1.0));
-      float seam = (1.0 - smoothstep(0.0, 0.9, sqrt(bd2) - sqrt(bd))) * uSplit;
+      float seam = (1.0 - smoothstep(0.0, 0.5, sd)) * uSplit;
       vec3 cl = mix(c, tint * dot(c, vec3(0.33)) * 2.0, uSplit * 0.55); c = mix(redOf(c) * 0.16, cl, alive) + vec3(1.0, 0.85, 0.7) * seam * 0.06 * disk * alive;   // the dead regions keep a faint ember
     }
     col += c * uK * smoothstep(0.0, 0.1, abs(rd.y));
@@ -892,7 +908,8 @@ function drawGalaxyBody(t, opt) {
   const G = GAL, c = CAMF;
   if (!G.domC) { G.domC = new Float32Array(424); G.cen.forEach((p, k) => { G.domC[k * 2] = p[0]; G.domC[k * 2 + 1] = p[1]; }); G.domD = new Float32Array(212); G.death.forEach((d, k) => { G.domD[k] = Math.min(d, 9999); });
     let dm = 0; for (let i = 0; i < G.n; i++) dm = Math.max(dm, Math.hypot(G.pos[i * 3] - G.sun[0], G.pos[i * 3 + 2] - G.sun[2])); G.dmax = dm; }
-  E.fullscreen(GALBODY, { uCamPos: c.pos, uCamR: c.r, uCamU: c.u, uCamF: c.f, uTanHalf: c.tanHalf, uAspect: c.aspect, uT: t, uIR: opt.ir, uFrontOn: opt.front, uWar: opt.war, uSplit: opt.split, uDmax: G.dmax, uK: opt.k ?? 1, uAliveFrac: opt.alive ?? 1, uSun: G.sun, uDomC: G.domC, uDomD: G.domD, uPC: PCOL.flat() });
+  if (!G.domN) buildDomainMap(G);
+  E.fullscreen(GALBODY, { uCamPos: c.pos, uCamR: c.r, uCamU: c.u, uCamF: c.f, uTanHalf: c.tanHalf, uAspect: c.aspect, uT: t, uIR: opt.ir, uFrontOn: opt.front, uWar: opt.war, uSplit: opt.split, uDmax: G.dmax, uK: opt.k ?? 1, uAliveFrac: opt.alive ?? 1, uSun: G.sun, uDomC: G.domC, uDomD: G.domD, uPC: PCOL.flat() }, { uDomN: G.domN, uDomL: G.domL });
 }
 
 function sGalaxy(t, cellBack = 1) {
@@ -1054,7 +1071,7 @@ async function init(view, onProgress = () => {}, { composite = true, glCanvas = 
   let k = 0; for (const [key, u] of Object.entries(names)) { try { tex[key] = await E.loadTexture(u); } catch (e) { if (key !== "clouds") throw e; } onProgress(++k / 7); }
   if (!new URLSearchParams(location.search).has("regrow")) { try { await loadGrowth(); } catch (e) { buildGrowth(tex.earthNight.img, tex.earthDay.img); } } else buildGrowth(tex.earthNight.img, tex.earthDay.img);
   onProgress(6 / 7);
-  buildSystems(); onProgress(1);
+  buildSystems(); buildDomainMap(GAL); onProgress(1);   // the territory map takes about a second
   ready = true;
 }
 const PX = new Uint8Array(4);
