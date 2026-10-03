@@ -657,6 +657,7 @@ const SOLAR_KEYS = () => [
   [111.2, add(MERC, MSIDE(-55, 30, 12)), mixv(MERC, SUN, 0.42), 44],
   [113.8, add(VEN, VSIDE(2.8, 0.7, 1.0)), VEN, 36],
   [117.5, add(VEN, VSIDE(3.1, 0.8, 1.2)), VEN, 36],
+  [119.0, add(VEN, VSIDE(14, 6, 3)), mixv(VEN, SUN, 0.8), 40],   // pull back from Venus, turning to the Sun
   [121, [40, 70, 175], [0, -6, 0], 40],
   [131.5, [55, 48, 120], [0, -4, 0], 36],
   [134.5, add(MOON, [2.6, 0.9, 4.6]), add(MOON, [-0.4, 0, -0.2]), 34],
@@ -705,7 +706,7 @@ function sSolar(t) {
       flushPts({ depth: true }); }
   }
   // Venus: the scar tears the clouds
-  const vR = VEN_R * (1 - 0.35 * ss(116, 118, t)), vOp = 1 - ss(117.2, 118.4, t);
+  const vR = VEN_R * (1 - 0.7 * ss(115.5, 118.8, t)), vOp = 1 - ss(118.8, 119.4, t);   // Venus thins into its ring, as Mercury did
   if (vOp > 0) E.sphere({ mode: 3, center: VEN, radius: vR, sun: norm(sub(SUN, VEN)), dayGain: 0.95, lesC: norm([-0.85, 0.3, 0.45]), lesR: 2.5 * ss(113.6, 117.4, t), lesK: 1.4, atmo: [1.0, 0.9, 0.7], atmoK: 0.6, opacity: vOp, time: t });
 }
 
