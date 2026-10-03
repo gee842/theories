@@ -868,7 +868,7 @@ function sGalaxy(t, cellBack = 1) {
   const war = t >= 223, front = t >= 170 && t < 202, ir = t >= 202 ? 1 : ss(189.5, 193.5, t);
   const gu = { uT: t, uIR: ir, uWar: war ? 1 : 0, uSplit: ss(223.5, 231, t), uFrontOn: front || t >= 202 ? 1 : 0, uSizeK: 1, uNear: t < 185 ? 1 - ss(172, 182, t) : 0 };
   gu.uPC = PCOL.flat();
-  drawGalaxyBody(t, { ir, front: gu.uFrontOn, war: gu.uWar, split: gu.uSplit, alive: war ? aliveFraction(t) : 1, k: ss(10, 40, c.pos[1]) });
+  drawGalaxyBody(t, { ir, front: gu.uFrontOn, war: gu.uWar, split: gu.uSplit, alive: war ? aliveFraction(t) : 1, k: ss(3, 26, c.pos[1]) });
   E.drawParticles(SYS.galaxy, { ...gu, uGlow: 0, uSizeK: 0.9 }, { depth: false });
   if (t < 186) { pt(G.cell, [1, 0.62, 0.25], 4 * (1 - ss(176, 180, t)), 10); pt(G.sun, [1, 0.62, 0.25], 5 * (1 - ss(180, 184, t)), 12); flushPts({ depth: false }); }
   // probes leaving the rim, finding nothing
@@ -985,8 +985,8 @@ function drawScene(t) {
   else if (t < 144) { sTwoSuns(t); bloom = 0.32; thresh = 1.5; }
   else if (t < 149) sLaunch(t);
   else if (t < 154) { sTransit(t); if (t < 149.4) fade = ss(149, 149.4, t); }
-  else if (t < 171) { sCell(t); fade = 1 - ss(170.5, 171, t); }
-  else if (t < 195) { sGalaxy(t); if (t < 171.6) fade = ss(171, 171.6, t); }
+  else if (t < 171) { sCell(t); fade = 1 - ss(170.75, 171, t); }
+  else if (t < 195) { sGalaxy(t); if (t < 171.3) fade = ss(171, 171.3, t); }
   else if (t < 202) { sLastSky(t); bloom = 0.4; thresh = 1.2; }
   else if (t < 272) { sGalaxy(t); if (t < 203.5) fade = ss(202, 203.5, t); }
   let fadeCol = [0, 0, 0];
