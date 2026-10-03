@@ -738,13 +738,14 @@ function sLaunch(t) {
   // the swarm, the probes leaving; at 147.5 the camera latches on to one probe and rides it out
   const ride = ss(147, 148.5, t), flyT = Math.max(0, t - 147);
   const probePos = scl(FOLLOW, SUN_R * SWARM_K * 1.05 + 60 * flyT * flyT);
-  let pos = mixv(add(SUN, [80, 58, 185]), add(probePos, add(scl(FOLLOW, -4), [0, 1.2, 0])), ease(ride)), look = mixv(SUN, add(probePos, scl(FOLLOW, 10)), ease(ride));
+  let pos = mixv(add(SUN, [80, 58, 185]), add(probePos, add(scl(FOLLOW, -4), [0, 1.2, 0])), ease(ride)), look = mixv(mixv(SUN, probePos, ss(146.6, 147.4, t)), add(probePos, scl(FOLLOW, 10)), ease(ss(147.9, 148.8, t)));   // eyes on the probe first, then along its path
   camera(pos, look, 40, 0.05, 40000); drawStars(0.85);
   E.sphere({ mode: 2, center: SUN, radius: SUN_R, emissive: 2.0, ir: 0, atmo: [0.5, 0.06, 0.02], time: t });
   E.sphere({ mode: 4, center: SUN, radius: SUN_R * SWARM_K, cover: 1, ir: 1, time: t, depthWrite: false });
   E.drawParticles(SYS.swarm, { uCenter: SUN, uT: 200, uIR: 1, uR: SUN_R * SWARM_K * 0.62, uK: 0.25 }, { depth: true });
   PROBES.forEach((pr, i) => { if (t < pr.tl || i % 2) return; const u = t - pr.tl, r0 = SUN_R * SWARM_K + pr.v * 30 * u * u * (1 + u * u); const a = scl(pr.d, r0), b = scl(pr.d, r0 * 0.985); ln(b, a, [1, 0.8, 0.55], 1.1, 0.8); pt(a, [1, 0.85, 0.6], 1.2, 2); });
-  pt(probePos, [1, 0.85, 0.6], t > 147 ? 8 : 0, 10); flushLns({ depth: true }); flushPts({ depth: true });
+  if (t > 146.6) { pt(probePos, [0.85, 0.92, 1.0], 14, 12); pt(probePos, [0.6, 0.75, 1.0], 1.2, 60); ln(probePos, sub(probePos, scl(FOLLOW, 2.5 + 120 * Math.max(0, t - 147) * 0.05)), [0.6, 0.75, 1.0], 1.4, 1.2); }   // the probe we follow: its drive and exhaust
+  flushLns({ depth: true }); flushPts({ depth: true });
 }
 // transit: at a tenth of light speed nothing moves. The stars stand still, the target brightens ahead, and only the years race
 function sTransit(t) {
