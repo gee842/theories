@@ -2,7 +2,7 @@
 // Every date and number on screen follows ../trajectory.py.
 "use strict";
 const Film = (() => {
-const W = 1920, H = 1080, TAU = Math.PI * 2, D2R = Math.PI / 180, DUR = 300;
+const W = 1920, H = 1080, TAU = Math.PI * 2, D2R = Math.PI / 180;
 const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
 const lerp = (a, b, t) => a + (b - a) * t;
 const ss = (a, b, x) => { const t = clamp((x - a) / (b - a)); return t * t * (3 - 2 * t); };
@@ -15,6 +15,28 @@ const mixv = (a, b, t) => [lerp(a[0], b[0], t), lerp(a[1], b[1], t), lerp(a[2], 
 const len = a => Math.hypot(a[0], a[1], a[2]);
 const ll = (lon, lat) => { const a = lon * D2R, b = lat * D2R; return [Math.cos(b) * Math.sin(a), Math.sin(b), Math.cos(b) * Math.cos(a)]; };
 const AMBER = [1.0, 0.52, 0.16];
+
+/* ================= the time map: film seconds → story seconds ================= */
+// [filmStart, filmEnd, storyStart, storyEnd]; a gap in story time is a cut (the rim drift is dropped)
+const TMAP = [[0, 6, 0, 7], [6, 29, 7, 33], [29, 35.5, 33, 41], [35.5, 62, 41, 72], [62, 72, 72, 84.5], [72, 119, 84.5, 138], [119, 124.5, 138, 144], [124.5, 128.5, 144, 149],
+  [128.5, 131.5, 149, 154], [131.5, 146, 154, 171], [146, 167, 171, 195], [167, 173.5, 195, 202], [173.5, 182, 202, 214], [182, 228, 223, 272], [228, 234, 272, 280], [234, 250, 280, 300]];
+const DUR = 250;
+function storyT(f) { for (const [f0, f1, s0, s1] of TMAP) if (f <= f1) return f <= f0 ? s0 : s0 + (f - f0) / (f1 - f0) * (s1 - s0); return 300; }
+function filmT(st) { for (const [f0, f1, s0, s1] of TMAP) if (st <= s1) return st <= s0 ? f0 : f0 + (st - s0) / (s1 - s0) * (f1 - f0); return DUR; }
+
+/* ================= the players: the race, absorption, one winner ================= */
+// Each player is a mosaic of sites across continents, not a country. Player 0 (amber) wins.
+const PCOL = [[1.0, 0.52, 0.16], [0.36, 0.82, 0.78], [1.0, 0.46, 0.56], [0.72, 0.92, 0.38], [0.66, 0.52, 1.0], [0.62, 0.8, 1.0], [1.0, 0.8, 0.32], [1.0, 0.58, 0.42], [0.48, 0.98, 0.62], [0.9, 0.52, 0.94], [0.42, 0.66, 1.0], [0.92, 0.86, 0.62]];
+// [year, absorbed, absorber]: the race consolidates until one player is left in 2097
+const ABSORB = [[2031, 11, 7], [2034, 9, 3], [2037, 5, 0], [2041, 10, 6], [2045, 8, 0], [2050, 7, 3], [2056, 4, 0], [2062, 6, 2], [2070, 3, 0], [2081, 1, 2], [2097, 2, 0]];
+function players(year) {
+  const parent = [...Array(12).keys()], since = new Array(12).fill(-1e9);
+  for (const [y, a, b] of ABSORB) if (year >= y) { parent[a] = b; since[a] = y; }
+  const root = k => { let r = k; while (parent[r] !== r) r = parent[r]; return r; };
+  const cols = new Float32Array(36); const alive = new Set();
+  for (let k = 0; k < 12; k++) { const r = root(k); alive.add(r); const u = clamp((year - since[k]) / 2.5); const own = k === r ? PCOL[k] : mixv(PCOL[k], PCOL[r], since[k] > -1e8 ? u : 1); cols.set(k === r ? PCOL[k] : own, k * 3); }
+  return { cols, alive: [...alive].sort((x, y) => x - y), root };
+}
 
 /* ================= the clock: years, power, population ================= */
 function keyed(keys, t, log) {
@@ -53,7 +75,7 @@ function camPath(keys, t) {
 }
 
 /* ================= state ================= */
-let E, ctx, tex = {}, ready = false, GROW = null;
+let E, ctx, tex = {}, ready = false, GROW = null, SEED_PLAYER = [];
 const PT = new Float32Array(8 * 200000), LN = new Float32Array(11 * 60000);
 let np = 0, nl = 0;
 function pt(p, c, a, size) { if (np >= 200000) return; const o = np * 8; PT[o] = p[0]; PT[o + 1] = p[1]; PT[o + 2] = p[2]; PT[o + 3] = c[0]; PT[o + 4] = c[1]; PT[o + 5] = c[2]; PT[o + 6] = a; PT[o + 7] = size; np++; }
@@ -97,12 +119,12 @@ function buildSystems() {
         col = vec4(1.0, 0.62, 0.3, 0.55 * (1.0 - inflow * 0.85)); size = 1.6; }`); }
   // the galaxy, with its whole war precomputed per star
   buildGalaxy();
-  { const G = GAL, d = new Float32Array(G.n * 12); for (let i = 0; i < G.n; i++) { const k = G.dom[i]; d.set([G.pos[i * 3], G.pos[i * 3 + 1], G.pos[i * 3 + 2], G.b[i], G.col[i * 3], G.col[i * 3 + 1], G.col[i * 3 + 2], G.conv[i], G.death[k] + G.ripple[i], G.seam[i], 0, 0], i * 12); }
-    SYS_GAL_BODY = `uniform float uIR, uWar, uSplit, uFrontOn, uNear, uGlow;
+  { const G = GAL, d = new Float32Array(G.n * 12); for (let i = 0; i < G.n; i++) { const k = G.dom[i]; d.set([G.pos[i * 3], G.pos[i * 3 + 1], G.pos[i * 3 + 2], G.b[i], G.col[i * 3], G.col[i * 3 + 1], G.col[i * 3 + 2], G.conv[i], G.death[k] + G.ripple[i], G.seam[i], k, 0], i * 12); }
+    SYS_GAL_BODY = `uniform float uIR, uWar, uSplit, uFrontOn, uNear, uGlow; uniform vec3 uPC[12];
       void particle(out vec3 pos, out vec4 col, out float size){
         pos = a0.xyz; vec3 red = vec3(0.85, 0.12, 0.05); vec3 c = a1.xyz; float a = a0.w * 0.9 * (1.0 + 3.0 * uNear); size = 1.4 * (1.0 + 1.5 * uNear);
         if (uFrontOn > 0.5 && uT >= a1.w) { float age = uT - a1.w; if (age < 0.5) { c = vec3(1.0, 0.6, 0.2); a = 5.0 * (1.0 - age / 0.5) + 0.3; } else { c = mix(vec3(0.55, 0.14, 0.05), red, uIR); a = mix(0.32 * a0.w + 0.08, a0.w * 0.8, uIR); } }
-        if (uWar > 0.5) { c = red; a = a0.w * 0.8; float sk = uSplit * clamp(1.0 - a2.y / 0.35, 0.0, 1.0); c = mix(c, vec3(1.0, 0.75, 0.6), sk); a += sk * 1.6;
+        if (uWar > 0.5) { vec3 tint = uPC[int(mod(a2.z, 12.0))]; c = mix(red, tint * 0.9, uSplit * 0.85); a = a0.w * 0.8; float sk = uSplit * clamp(1.0 - a2.y / 0.35, 0.0, 1.0); c = mix(c, vec3(1.0, 0.9, 0.8), sk * 0.6); a += sk * 1.2;
           float dt = uT - a2.x; if (dt > 0.7) { col = vec4(0.0); return; } if (dt > 0.0) { c = vec3(1.0, 0.85, 0.7); a = 9.0 * (1.0 - dt / 0.7); } }
         if (uGlow > 0.0) { a *= uGlow; size = 30.0; }
         col = vec4(c, a); }`;
@@ -129,23 +151,25 @@ function buildGrowth(nightImg, dayImg) {
     const isSea = b > r * 1.25 && b > g * 1.05 && r < 110; sea[i] = isSea ? clamp(1 - (b - 40) / 150) * 0.97 + 0.03 : 0;   // brighter blue = shallower
   }
   // multi-source Dijkstra over land: cheaper through lit (populated, powered) land
-  const cost = new Float32Array(N).fill(1e9), heap = [];
+  const cost = new Float32Array(N).fill(1e9), heap = [], owner = new Uint8Array(N);
   const push = (c, i) => { heap.push([c, i]); let k = heap.length - 1; while (k > 0) { const p = (k - 1) >> 1; if (heap[p][0] <= heap[k][0]) break; [heap[p], heap[k]] = [heap[k], heap[p]]; k = p; } };
   const pop = () => { const top = heap[0], last = heap.pop(); if (heap.length) { heap[0] = last; let k = 0; for (;;) { const l = 2 * k + 1, r = l + 1; let m = k; if (l < heap.length && heap[l][0] < heap[m][0]) m = l; if (r < heap.length && heap[r][0] < heap[m][0]) m = r; if (m === k) break; [heap[m], heap[k]] = [heap[k], heap[m]]; k = m; } } return top; };
-  for (const [lo, la] of DC_REGIONS) { const x = Math.floor((lo + 180) / 360 * GW), y = Math.floor((90 - la) / 180 * GH), i = y * GW + x; cost[i] = 0; push(0, i); }
+  const order = DC_REGIONS.map((s, i) => i).sort((a, b) => DC_REGIONS[a][0] - DC_REGIONS[b][0]); const seedPlayer = new Array(DC_REGIONS.length); order.forEach((s, k) => { seedPlayer[s] = k % 12; });
+  DC_REGIONS.forEach(([lo, la], si) => { const x = Math.floor((lo + 180) / 360 * GW), y = Math.floor((90 - la) / 180 * GH), i = y * GW + x; cost[i] = 0; owner[i] = seedPlayer[si]; push(0, i); });
+  SEED_PLAYER = seedPlayer;
   while (heap.length) {
     const [c, i] = pop(); if (c > cost[i]) continue; const x = i % GW, y = (i / GW) | 0, lat = (90 - (y + 0.5) / GH * 180) * D2R, cx = Math.cos(lat);
     for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
       if (!dx && !dy) continue; const ny = y + dy; if (ny < 0 || ny >= GH) continue; const nx = (x + dx + GW) % GW, j = ny * GW + nx;
       if (sea[j] > 0) continue; const step = Math.hypot(dx * cx, dy) * (1.35 - 1.1 * Math.sqrt(Math.min(1, light[j] * 3)));
-      const nc = c + step; if (nc < cost[j]) { cost[j] = nc; push(nc, j); }
+      const nc = c + step; if (nc < cost[j]) { cost[j] = nc; owner[j] = owner[i]; push(nc, j); }
     }
   }
   let maxc = 0; for (let i = 0; i < N; i++) if (sea[i] === 0 && cost[i] < 1e8) maxc = Math.max(maxc, cost[i]);
   const bytes = new Uint8Array(N * 4);
   for (let i = 0; i < N; i++) {
     const yr = sea[i] > 0 ? 2200 : cost[i] < 1e8 ? 2027 + Math.pow(cost[i] / maxc, 0.8) * 85 : 2110;   // land: 2027–2112 (Kardashev I)
-    bytes[i * 4] = clamp((yr - 2026) / 128) * 255; bytes[i * 4 + 1] = sea[i] * 255; bytes[i * 4 + 2] = light[i] * 255; bytes[i * 4 + 3] = 255;
+    bytes[i * 4] = clamp((yr - 2026) / 128) * 255; bytes[i * 4 + 1] = sea[i] * 255; bytes[i * 4 + 2] = owner[i] * 20; bytes[i * 4 + 3] = 255;
   }
   GROW = E.dataTexture(GW, GH, bytes);
 }
@@ -154,7 +178,7 @@ function buildGrowth(nightImg, dayImg) {
 function drawStars(k = 0.8) { E.drawParticles(SYS.stars, { uCenter: CAM.pos, uK: k }, { depth: true }); }
 function earth(t, rot, o = {}) {
   const year = o.year ?? yearAt(t);
-  E.sphere({ mode: 0, day: tex.earthDay, night: tex.earthNight, grow: GROW, center: EARTH, radius: 1, rot, sun: SUN_DIR_AT_EARTH, nightGain: o.nightGain ?? 1.5, dayGain: o.dayGain ?? 1.0,
+  E.sphere({ mode: 0, day: tex.earthDay, night: tex.earthNight, grow: GROW, cloud: tex.clouds || null, pCol: players(year).cols, center: EARTH, radius: 1, rot, sun: SUN_DIR_AT_EARTH, nightGain: o.nightGain ?? 1.5, dayGain: o.dayGain ?? 1.0,
     thermal: o.thermal || 0, heat: o.heat || 0, year, clouds: o.clouds ?? 0.55, atmo: [0.35, 0.6, 1.0], atmoK: 1.0, time: t, seaStart: 2100, seaEnd: 2191 });
 }
 // a point on the Earth's surface, in world space
@@ -181,8 +205,8 @@ function sToday(t) {
   camera(pos, look, fov, 0.002, 20000); drawStars(0.8);
   earth(t, rot, { clouds: 0.25 });
   // the real data-centre regions flare in 2026
-  const fl = ss(8, 9.5, t) * (1 - ss(13, 16, t));
-  if (fl > 0) { for (const [lo, la] of DC_REGIONS) { const p = surf(rot, lo, la, 1.002); pt(p, [1, 0.6, 0.25], fl * (2.2 + 1.2 * Math.sin(t * 5 + lo)), 11); } flushPts({ depth: true }); }
+  const fl = ss(8, 9.5, t) * (1 - ss(17, 21, t));
+  if (fl > 0) { DC_REGIONS.forEach(([lo, la], i) => { const p = surf(rot, lo, la, 1.002); pt(p, PCOL[SEED_PLAYER[i]], fl * (2.4 + 1.2 * Math.sin(t * 5 + lo)), 12); }); flushPts({ depth: true }); }
 }
 
 /* ================= ground scenes: one ray-marched shader, four moods ================= */
@@ -190,6 +214,7 @@ let GROUND = null;
 const GROUND_FS = `#version 300 es
 precision highp float; in vec2 vUV; out vec4 o; uniform vec2 uRes;
 uniform float uMode, uTime, uH, uPitch, uYaw, uLaunch, uStars, uFade, uHaze, uDomeLight, uFov;
+// moods: 0 campus at night · 1 the white day · 2 two suns · 3 the night the stars go out
 float h21(vec2 p){ p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
 float h31(vec3 p){ p = fract(p * 0.1031); p += dot(p, p.zyx + 31.32); return fract((p.x + p.y) * p.z); }
 float n2(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f); return mix(mix(h21(i), h21(i+vec2(1,0)), f.x), mix(h21(i+vec2(0,1)), h21(i+vec2(1,1)), f.x), f.y); }
@@ -200,50 +225,67 @@ float fb3(vec3 p){ float a = 0.5, s = 0.0; for (int i = 0; i < 4; i++) { s += a 
 vec2 vor(vec2 p){ vec2 i = floor(p), f = fract(p); float d1 = 9.0, d2 = 9.0; for (int y = -1; y <= 1; y++) for (int x = -1; x <= 1; x++) { vec2 g = vec2(x, y); vec2 c = g + vec2(h21(i + g), h21(i + g + 3.1)); float d = length(c - f); if (d < d1) { d2 = d1; d1 = d; } else if (d < d2) d2 = d; } return vec2(d1, d2); }
 float sdBox(vec3 p, vec3 b){ vec3 q = abs(p) - b; return length(max(q, 0.0)) + min(max(q.x, max(q.y, q.z)), 0.0); }
 float sdCap(vec3 p, vec3 a, vec3 b, float r){ vec3 pa = p - a, ba = b - a; float h = clamp(dot(pa, ba) / dot(ba, ba), 0.0, 1.0); return length(pa - ba * h) - r; }
+float smin(float a, float b, float k){ float h = clamp(0.5 + 0.5 * (b - a) / k, 0.0, 1.0); return mix(b, a, h) - k * h * (1.0 - h); }
 const vec3 DOME = vec3(-8.0, 0.0, -52.0); const float DOME_R = 30.0;
-// halls: rows of compute buildings receding to the horizon
+bool night(){ return uMode < 0.5 || uMode > 2.5; }
+
+// a person, standing, about 1.75 m; looking up when lean > 0
+float person(vec3 p, vec3 b, float s){
+  p = (p - b) / s; float d = sdCap(p, vec3(-0.1, 0.05, 0), vec3(-0.08, 0.86, 0), 0.075); d = min(d, sdCap(p, vec3(0.1, 0.05, 0), vec3(0.08, 0.86, 0), 0.075));
+  d = smin(d, sdCap(p, vec3(0, 0.95, 0), vec3(0.02, 1.4, 0.0), 0.17), 0.05); d = min(d, length(p - vec3(0.04, 1.63, 0.07)) - 0.11);
+  d = min(d, sdCap(p, vec3(-0.21, 1.38, 0), vec3(-0.27, 0.92, 0.03), 0.05)); d = min(d, sdCap(p, vec3(0.21, 1.38, 0), vec3(0.27, 0.92, 0.03), 0.05)); return d * s;
+}
+// compute halls: long, low, clad in vertical ribs, plant on the roof
 float halls(vec3 p, out float id){
   float zStart = uMode < 0.5 ? -45.0 : -150.0;
   vec3 q = p; q.x = mod(p.x + 48.0, 96.0) - 48.0; float cz = floor((p.z + 32.0) / 64.0); q.z = mod(p.z + 32.0, 64.0) - 32.0;
   id = h21(vec2(floor((p.x + 48.0) / 96.0), cz));
   float hgt = 4.5 + 2.0 * id; float d = sdBox(q - vec3(0.0, hgt, 0.0), vec3(38.0, hgt, 15.0));
-  vec3 r = q; r.x = mod(q.x + 4.0, 8.0) - 4.0; d = min(d, sdBox(r - vec3(0.0, 2.0 * hgt + 1.1, 0.0), vec3(2.4, 1.1, 10.0)) + step(36.0, abs(q.x)) * 100.0);
+  vec3 r = q; r.x = mod(q.x + 4.0, 8.0) - 4.0; float plant = sdBox(r - vec3(0.0, 2.0 * hgt + 1.1, 0.0), vec3(2.4, 1.1, 10.0)); plant = max(plant, abs(q.x) - 35.0);
+  d = min(d, plant);
   d = max(d, p.z - zStart);
-  if (uMode > 0.5) d = max(d, 70.0 - length(p.xz - DOME.xz));
+  if (uMode > 0.5) d = max(d, 72.0 - length(p.xz - DOME.xz));
   return d;
 }
-// the garden and its people, inside the dome
+// the garden under the dome: clustered trees, low shrubs, people
+float tree(vec3 q, float seed){
+  float hgt = 6.5 + 4.0 * fract(seed * 7.3); float d = sdCap(q, vec3(0.0), vec3(0.3 * sin(seed * 9.0), hgt * 0.7, 0.0), 0.32);
+  for (int k = 0; k < 4; k++) { float fk = float(k); vec3 c = vec3(sin(seed * 3.0 + fk * 1.9) * 1.8, hgt * (0.68 + 0.12 * fk), cos(seed * 5.0 + fk * 2.3) * 1.8);
+    d = smin(d, length(q - c) - (2.4 - 0.25 * fk) - fb3(q * 0.9 + seed) * 1.1, 0.8); }
+  return d;
+}
 float garden(vec3 p){
-  vec3 q = p - DOME; if (length(q) > DOME_R) return 1e3;
+  vec3 q = p - DOME; if (length(q) > DOME_R + 1.0) return length(q) - DOME_R;
   float d = 1e3;
-  for (int k = 0; k < 7; k++) { float fk = float(k); vec2 c = vec2(sin(fk * 2.4) * (8.0 + fk * 2.3), cos(fk * 2.4) * (6.0 + fk * 2.0)); float hgt = 7.0 + 4.0 * fract(fk * 0.37);
-    d = min(d, length((q - vec3(c.x, hgt, c.y)) * vec3(1.0, 1.25, 1.0)) - (4.0 + 1.5 * fract(fk * 0.61)) - fb3(q * 0.6) * 1.2); d = min(d, sdCap(q, vec3(c.x, 0.0, c.y), vec3(c.x, hgt, c.y), 0.45)); }
-  if (uMode > 0.5 && uMode < 1.5) for (int k = 0; k < 4; k++) { float fk = float(k); vec3 b = vec3(-7.0 + fk * 3.6, 0.0, 20.0 + fk * 1.2); d = min(d, sdCap(q, b + vec3(0, 0.45, 0), b + vec3(0, 1.45, 0), 0.24)); d = min(d, length(q - b - vec3(0, 1.75, 0)) - 0.13); }
+  for (int k = 0; k < 8; k++) { float fk = float(k); vec2 c = vec2(sin(fk * 2.4 + 0.5) * (6.0 + fk * 2.1), cos(fk * 2.4 + 0.5) * (5.0 + fk * 1.9) - 3.0); d = min(d, tree(q - vec3(c.x, 0.0, c.y), fk + 1.0)); }
+  d = min(d, q.y - 0.9 * smoothstep(1.0, 0.0, fb(q.xz * 0.35)) + 0.2);   // shrubs
+  if (uMode > 0.5 && uMode < 1.5) for (int k = 0; k < 4; k++) { float fk = float(k); d = min(d, person(q, vec3(-7.0 + fk * 3.4, 0.0, 19.0 + fk * 1.1), 1.0 - 0.05 * fk)); }
   return d;
 }
-float figures(vec3 p){ if (uMode < 1.5 || uMode > 2.5) return 1e3; float d = 1e3; for (int k = 0; k < 2; k++) { vec3 b = vec3(6.0 + float(k) * 1.15, 0.0, 18.0 - float(k) * 0.7); float s = 1.0 - float(k) * 0.08;
-    d = min(d, sdCap(p, b + vec3(-0.1, 0.05, 0), b + vec3(-0.08, 0.86, 0) * s, 0.075)); d = min(d, sdCap(p, b + vec3(0.1, 0.05, 0), b + vec3(0.08, 0.86, 0) * s, 0.075));
-    d = min(d, sdCap(p, b + vec3(0, 0.95, 0) * s, b + vec3(0.02, 1.4, 0.0) * s, 0.17)); d = min(d, length(p - b - vec3(0.05, 1.64, 0.06) * s) - 0.11 * s);
-    d = min(d, sdCap(p, b + vec3(-0.2, 1.38, 0) * s, b + vec3(-0.26, 0.92, 0.02) * s, 0.05)); d = min(d, sdCap(p, b + vec3(0.2, 1.38, 0) * s, b + vec3(0.26, 0.92, 0.02) * s, 0.05)); } return d; }
+float figures(vec3 p){ if (uMode < 1.5 || uMode > 2.5) return 1e3; return min(person(p, vec3(6.0, 0.0, 18.0), 1.0), person(p, vec3(7.15, 0.0, 17.3), 0.93)); }
 float scene(vec3 p, out float mat, out float id){
-  float hid; float dh = halls(p, hid); float dg = uMode > 0.5 ? garden(p) : 1e3; float dgr = p.y;
-  float d = dgr; mat = 0.0; id = 0.0;
+  float hid; float dh = halls(p, hid); float dg = uMode > 0.5 ? garden(p) : 1e3; float df = figures(p);
+  float d = p.y; mat = 0.0; id = 0.0;
   if (dh < d) { d = dh; mat = 1.0; id = hid; }
   if (dg < d) { d = dg; mat = 2.0; }
-  float df = figures(p); if (df < d) { d = df; mat = 3.0; }
+  if (df < d) { d = df; mat = 3.0; }
   return d;
 }
-vec3 skyCol(vec3 rd, vec3 moonDir, vec3 sunDir){
+float sceneD(vec3 p){ float m, i; return scene(p, m, i); }
+float shadow(vec3 ro, vec3 rd){ float res = 1.0, t = 0.08; for (int i = 0; i < 28; i++) { float h = sceneD(ro + rd * t); res = min(res, 10.0 * h / t); t += clamp(h, 0.08, 6.0); if (res < 0.01 || t > 160.0) break; } return clamp(res, 0.0, 1.0); }
+float occlusion(vec3 p, vec3 n){ float o = 0.0, w = 1.0; for (int i = 1; i <= 4; i++) { float h = 0.35 * float(i); o += (h - sceneD(p + n * h)) * w; w *= 0.6; } return clamp(1.0 - 1.6 * o, 0.0, 1.0); }
+
+vec3 SUN_DAY = normalize(vec3(0.35, 0.6, -1.0)), MOON = normalize(vec3(0.42, 0.62, -1.0)), SUN_RED = normalize(vec3(-0.75, 0.3, -1.0));
+vec3 skyCol(vec3 rd){
   float e = max(rd.y, 0.0); vec3 c;
-  if (uMode < 0.5) { c = mix(vec3(0.07, 0.045, 0.028), vec3(0.004, 0.006, 0.013), pow(e, 0.4)); }
-  else if (uMode < 1.5) { c = mix(vec3(0.66, 0.66, 0.64), vec3(0.42, 0.45, 0.5), pow(e, 0.6)); }
-  else if (uMode < 2.5) { c = mix(vec3(0.035, 0.038, 0.048), vec3(0.003, 0.004, 0.009), pow(e, 0.5)); float dm = acos(clamp(dot(rd, moonDir), -1.0, 1.0)); c += vec3(0.7, 0.78, 0.92) * (0.18 * exp(-dm * 14.0) + 0.04 * exp(-dm * 2.5)); c += vec3(1.0, 0.98, 0.95) * 30.0 * smoothstep(0.0105, 0.0095, dm);
-    float ds = acos(clamp(dot(rd, sunDir), -1.0, 1.0)); c = mix(c, vec3(0.62, 0.14, 0.045) * 1.4, smoothstep(0.0125, 0.0115, ds)); c += vec3(0.9, 0.3, 0.08) * 0.06 * exp(-ds * 30.0); }
+  if (uMode < 0.5) { c = mix(vec3(0.075, 0.048, 0.03), vec3(0.004, 0.006, 0.013), pow(e, 0.4)); }
+  else if (uMode < 1.5) { c = mix(vec3(0.78, 0.77, 0.73), vec3(0.47, 0.52, 0.6), pow(e, 0.55)); float ds = max(dot(rd, SUN_DAY), 0.0); c += vec3(1.0, 0.96, 0.86) * (0.45 * pow(ds, 40.0) + 0.18 * pow(ds, 6.0)) + vec3(1.0, 0.98, 0.92) * 3.0 * smoothstep(0.9993, 0.9997, ds); }
+  else if (uMode < 2.5) { c = mix(vec3(0.035, 0.038, 0.048), vec3(0.003, 0.004, 0.009), pow(e, 0.5)); float dm = acos(clamp(dot(rd, MOON), -1.0, 1.0)); c += vec3(0.7, 0.78, 0.92) * (0.18 * exp(-dm * 14.0) + 0.04 * exp(-dm * 2.5)); c += vec3(1.0, 0.98, 0.95) * 30.0 * smoothstep(0.0105, 0.0095, dm);
+    float ds = acos(clamp(dot(rd, SUN_RED), -1.0, 1.0)); c = mix(c, vec3(0.62, 0.14, 0.045) * 1.4, smoothstep(0.0125, 0.0115, ds)); c += vec3(0.9, 0.3, 0.08) * 0.06 * exp(-ds * 30.0); }
   else { c = mix(vec3(0.012, 0.014, 0.02), vec3(0.002, 0.003, 0.006), pow(e, 0.5)); }
-  // stars (night moods)
-  if ((uMode < 0.5 || uMode > 2.5) && rd.y > 0.0) { vec3 sp = rd * 260.0; vec3 cell = floor(sp); float hs = h31(cell); vec3 cc = cell + vec3(h31(cell + 1.3), h31(cell + 2.9), h31(cell + 4.7));
-    float on = uMode > 2.5 ? step(h31(cell + 9.1), uStars) : step(0.6, hs); float s = step(0.965, hs) * on * smoothstep(0.08, 0.0, length(sp - cc)); c += vec3(0.9, 0.93, 1.0) * s * (0.6 + 4.0 * pow(hs, 30.0)) * smoothstep(0.0, 0.2, rd.y); }
-  // satellite trains over the campus
+  if (night() && rd.y > 0.0) { vec3 sp = rd * 260.0; vec3 cell = floor(sp); float hs = h31(cell); vec3 cc = cell + vec3(h31(cell + 1.3), h31(cell + 2.9), h31(cell + 4.7));
+    float on = uMode > 2.5 ? step(h31(cell + 9.1), uStars) : step(0.6, hs); float s = step(0.962, hs) * on * smoothstep(0.08, 0.0, length(sp - cc)); c += vec3(0.9, 0.93, 1.0) * s * (0.6 + 4.0 * pow(hs, 30.0)) * smoothstep(0.0, 0.2, rd.y);
+    if (uMode > 2.5) { float band = exp(-pow((rd.y - 0.45 - 0.25 * rd.x) * 3.0, 2.0)) * fb(rd.xz * 6.0) * uStars; c += vec3(0.06, 0.06, 0.07) * band; } }
   if (uMode < 0.5 && rd.y > 0.05) { vec2 sk = vec2(atan(rd.x, -rd.z), rd.y);
     for (int k = 0; k < 7; k++) { float fk = float(k); vec2 a = vec2(-1.3 + h21(vec2(fk, 1.0)) * 0.7, 0.25 + h21(vec2(fk, 2.0)) * 0.5); vec2 dd = normalize(vec2(1.0, (h21(vec2(fk, 3.0)) - 0.5) * 0.4));
       vec2 head = a + dd * mod(uTime * (0.035 + 0.02 * h21(vec2(fk, 4.0))) + fk * 0.37, 2.6); vec2 rel = sk - head; float al = dot(rel, -dd), ac = dot(rel, vec2(-dd.y, dd.x));
@@ -255,65 +297,75 @@ void main(){
   vec3 ro = vec3(0.0, uH, 40.0);
   vec3 fw = normalize(vec3(sin(uYaw) * cos(uPitch), sin(uPitch), -cos(uYaw) * cos(uPitch))); vec3 rt = normalize(cross(fw, vec3(0, 1, 0))); vec3 up = cross(rt, fw);
   vec3 rd = normalize(fw + ndc.x * tf * asp * rt + ndc.y * tf * up);
-  vec3 moonDir = normalize(vec3(0.42, 0.62, -1.0)), sunDir = normalize(vec3(-0.75, 0.3, -1.0));
-  vec3 light = uMode < 0.5 ? vec3(0.0) : uMode < 1.5 ? normalize(vec3(0.3, 1.0, 0.2)) : uMode < 2.5 ? moonDir : vec3(0.0, 1.0, 0.0);
-  vec3 lightC = uMode < 0.5 ? vec3(0.0) : uMode < 1.5 ? vec3(0.95, 0.95, 0.92) : uMode < 2.5 ? vec3(0.2, 0.22, 0.28) : vec3(0.01, 0.012, 0.016);
-  vec3 ambient = uMode < 0.5 ? vec3(0.012, 0.01, 0.009) : uMode < 1.5 ? vec3(0.42, 0.43, 0.44) : uMode < 2.5 ? vec3(0.025, 0.028, 0.036) : vec3(0.004, 0.005, 0.007);
-  vec3 fogC = uMode < 0.5 ? vec3(0.05, 0.035, 0.025) : uMode < 1.5 ? vec3(0.66, 0.66, 0.64) : uMode < 2.5 ? vec3(0.03, 0.033, 0.042) : vec3(0.008, 0.01, 0.014);
-  // march the opaque world
+  vec3 L = uMode < 1.5 ? SUN_DAY : MOON;
+  vec3 lightC = uMode < 0.5 ? vec3(0.0) : uMode < 1.5 ? vec3(1.15, 1.1, 1.0) : uMode < 2.5 ? vec3(0.22, 0.25, 0.32) : vec3(0.0);
+  vec3 ambUp = uMode < 0.5 ? vec3(0.014, 0.011, 0.01) : uMode < 1.5 ? vec3(0.42, 0.45, 0.5) : uMode < 2.5 ? vec3(0.03, 0.033, 0.043) : vec3(0.003, 0.0035, 0.005);
+  vec3 fogC = uMode < 0.5 ? vec3(0.05, 0.035, 0.025) : uMode < 1.5 ? vec3(0.76, 0.75, 0.72) : uMode < 2.5 ? vec3(0.03, 0.033, 0.042) : vec3(0.008, 0.01, 0.014);
   float t = 0.0, mat = -1.0, id = 0.0; bool hit = false;
-  if (rd.y < 0.25 || uH > 30.0) for (int i = 0; i < 140; i++) { vec3 p = ro + rd * t; float m, idd; float d = scene(p, m, idd); if (d < 0.002 * t + 0.01) { hit = true; mat = m; id = idd; break; } t += d * 0.9; if (t > 6000.0) break; }
+  if (rd.y < 0.25 || uH > 30.0) for (int i = 0; i < 150; i++) { vec3 p = ro + rd * t; float m, idd; float d = scene(p, m, idd); if (d < 0.0015 * t + 0.008) { hit = true; mat = m; id = idd; break; } t += d * 0.9; if (t > 6000.0) break; }
   vec3 col;
   if (hit) {
-    vec3 p = ro + rd * t; vec2 e = vec2(0.02 * (1.0 + t * 0.002), 0.0); float m2, id2;
-    vec3 n = normalize(vec3(scene(p + e.xyy, m2, id2) - scene(p - e.xyy, m2, id2), scene(p + e.yxy, m2, id2) - scene(p - e.yxy, m2, id2), scene(p + e.yyx, m2, id2) - scene(p - e.yyx, m2, id2)));
-    vec3 alb; vec3 emit = vec3(0.0);
-    if (mat < 0.5) {   // ground
-      if (uMode < 0.5) { alb = mix(vec3(0.05, 0.05, 0.05), vec3(0.12, 0.11, 0.1), fb(p.xz * 0.05)); }
-      else { vec2 v = vor(p.xz * 0.12); float crack = smoothstep(0.05, 0.0, v.y - v.x); alb = mix(vec3(0.55, 0.52, 0.47), vec3(0.72, 0.69, 0.63), fb(p.xz * 0.03)) * (1.0 - crack * 0.55);
-        if (length(p.xz - DOME.xz) < DOME_R) alb = vec3(0.12, 0.22, 0.08) * (0.7 + 0.6 * fb(p.xz * 0.5)); }
-    } else if (mat < 1.5) {  // halls
-      alb = uMode < 0.5 ? vec3(0.07, 0.07, 0.075) : uMode < 1.5 ? vec3(0.62, 0.62, 0.64) : vec3(0.3, 0.3, 0.32);
+    vec3 p = ro + rd * t; vec2 e = vec2(0.015 * (1.0 + t * 0.002), 0.0);
+    vec3 n = normalize(vec3(sceneD(p + e.xyy) - sceneD(p - e.xyy), sceneD(p + e.yxy) - sceneD(p - e.yxy), sceneD(p + e.yyx) - sceneD(p - e.yyx)));
+    vec3 alb; vec3 emit = vec3(0.0); float rough = 1.0;
+    bool inDome = length(p.xz - DOME.xz) < DOME_R && uMode > 0.5;
+    if (mat < 0.5) {
+      if (uMode < 0.5) { alb = mix(vec3(0.05), vec3(0.11, 0.1, 0.09), fb(p.xz * 0.05)); }
+      else if (inDome) { alb = vec3(0.09, 0.18, 0.06) * (0.6 + 0.7 * fb(p.xz * 0.6)); }
+      else { vec2 v = vor(p.xz * 0.19); float edge = v.y - v.x; float crack = smoothstep(0.06, 0.0, edge); float rim = smoothstep(0.2, 0.06, edge) - crack;
+        alb = mix(vec3(0.6, 0.57, 0.51), vec3(0.8, 0.77, 0.7), fb(p.xz * 0.025)) * (1.0 - crack * 0.42) * (1.0 + rim * 0.1);
+        vec2 g = vec2(vor((p.xz + vec2(0.05, 0.0)) * 0.19).y - vor((p.xz + vec2(0.05, 0.0)) * 0.19).x, vor((p.xz + vec2(0.0, 0.05)) * 0.19).y - vor((p.xz + vec2(0.0, 0.05)) * 0.19).x) - edge;
+        n = normalize(n + vec3(g.x, 0.0, g.y) * 6.0 * smoothstep(0.25, 0.0, edge) * smoothstep(120.0, 10.0, t)); }
+    } else if (mat < 1.5) {
       vec3 lq = p; lq.x = mod(p.x + 48.0, 96.0) - 48.0; lq.z = mod(p.z + 32.0, 64.0) - 32.0;
-      float lamp = smoothstep(0.35, 0.0, length(vec2(mod(lq.x + 6.0, 12.0) - 6.0, p.y - 6.0))) * step(0.5, abs(n.z));   // wall lights every 12 m
-      float night = uMode < 0.5 || uMode > 1.5 ? 1.0 : 0.0;
-      emit += vec3(1.0, 0.72, 0.42) * lamp * 3.0 * night * (uMode > 2.5 ? 0.6 : 1.0);
+      float rib = smoothstep(0.35, 0.5, abs(fract(lq.x * 1.25) - 0.5)) * step(0.5, abs(n.z));
+      alb = (uMode < 0.5 ? vec3(0.075, 0.075, 0.08) : uMode < 1.5 ? vec3(0.7, 0.7, 0.71) : vec3(0.32, 0.32, 0.34)) * (0.85 + 0.15 * rib) * (0.92 + 0.16 * id);
+      if (n.y > 0.85) alb *= 0.75;
+      float lamp = smoothstep(0.35, 0.0, length(vec2(mod(lq.x + 6.0, 12.0) - 6.0, p.y - 5.5))) * step(0.5, abs(n.z));
+      emit += vec3(1.0, 0.72, 0.42) * lamp * 3.0 * (night() ? 1.0 : 0.0) * (uMode > 2.5 ? 0.6 : 1.0);
       float blink = step(0.55, fract(uTime * 0.6 + id * 7.0)); float corner = smoothstep(1.5, 0.0, length(vec2(abs(lq.x) - 37.0, abs(lq.z) - 14.0))) * step(0.85, n.y);
-      emit += vec3(1.0, 0.06, 0.03) * corner * blink * night * 8.0;
-    } else if (mat > 2.5) { alb = vec3(0.02); emit = vec3(0.0);
-    } else {   // garden
-      alb = vec3(0.07, 0.16, 0.05) * (0.7 + 0.6 * fb3(p * 0.5)); if (p.y < 2.2 && length(p.xz - DOME.xz) < 26.0 && uMode > 0.5 && uMode < 1.5) alb = vec3(0.06, 0.05, 0.05);
-      emit += vec3(1.0, 0.72, 0.42) * 0.05 * uDomeLight;
+      emit += vec3(1.0, 0.06, 0.03) * corner * blink * (night() ? 8.0 : 0.0);
+    } else if (mat > 2.5) { alb = vec3(0.018, 0.017, 0.016); rough = 0.6;
+    } else {
+      float trunk = step(1.3, p.y) * step(p.y, 4.2) * step(0.85, length(n.xz));
+      alb = mix(vec3(0.07, 0.19, 0.055) * (0.55 + 0.9 * fb3(p * 0.7)), vec3(0.2, 0.15, 0.1), trunk);
+      if (uMode > 0.5 && uMode < 1.5 && p.y < 2.0 && length(p.xz - DOME.xz - vec2(-1.8, 20.0)) < 7.0) alb = vec3(0.05, 0.045, 0.045);
+      emit += vec3(1.0, 0.72, 0.42) * 0.02 * uDomeLight;
     }
-    float dif = max(dot(n, light), 0.0); float sky = 0.5 + 0.5 * n.y;
-    col = alb * (lightC * dif + ambient * sky) + emit;
-    if (mat > 1.5) col += alb * vec3(1.0, 0.75, 0.45) * 0.6 * uDomeLight;
-    float fog = 1.0 - exp(-t * (uMode < 1.5 && uMode > 0.5 ? 0.0011 : 0.0007));
+    float dif = max(dot(n, L), 0.0); float sh = (uMode > 0.5 && uMode < 2.5 && dif > 0.0 && t < 400.0) ? shadow(p + n * 0.05, L) : 1.0;
+    float ao = t < 300.0 ? occlusion(p, n) : 1.0;
+    vec3 amb = ambUp * (0.55 + 0.45 * n.y) + (uMode > 0.5 && uMode < 1.5 ? vec3(0.32, 0.3, 0.27) * 0.25 * (1.0 - n.y) : vec3(0.0));
+    col = alb * (lightC * dif * sh + amb * ao) + emit;
+    if (mat > 1.5 && mat < 2.5) col += alb * vec3(1.0, 0.75, 0.45) * 0.55 * uDomeLight * ao;
+    float fog = 1.0 - exp(-t * (uMode > 0.5 && uMode < 1.5 ? 0.0009 : 0.0006));
     col = mix(col, fogC, fog);
-  } else col = skyCol(rd, moonDir, sunDir);
-  // steam columns, with volume (day and two-suns moods)
+  } else col = skyCol(rd);
+  // steam columns with volume, lit from the sun's side
   if (uMode > 0.5 && uMode < 2.5) {
     float tmax = hit ? t : 9000.0; vec3 acc = vec3(0.0); float tr = 1.0;
     for (int k = 0; k < 3; k++) { float fk = float(k); vec3 c0 = vec3(-900.0 + fk * 950.0, 0.0, -2600.0 - fk * 700.0); float rad = 55.0 + fk * 20.0;
       vec2 oc = ro.xz - c0.xz; float b = dot(oc, rd.xz), cc = dot(oc, oc) - (rad * 3.0) * (rad * 3.0), a2 = dot(rd.xz, rd.xz); float disc = b * b - a2 * cc; if (disc < 0.0) continue;
       float t0 = max((-b - sqrt(disc)) / a2, 0.0), t1 = min((-b + sqrt(disc)) / a2, tmax); if (t1 <= t0) continue;
-      for (int j = 0; j < 14; j++) { float tt = mix(t0, t1, (float(j) + 0.5) / 14.0); vec3 p = ro + rd * tt; float hgt = p.y; if (hgt < 0.0) continue; float r = rad * (1.0 + hgt / 900.0);
-        float dd = length(p.xz - c0.xz - vec2(sin(hgt * 0.002 + fk) * 120.0, 0.0)); float den = smoothstep(r, r * 0.3, dd) * smoothstep(5200.0, 600.0, hgt) * (0.5 + fb3(vec3(p.xz * 0.004, hgt * 0.003 - uTime * 0.15)));
-        float a = den * (t1 - t0) / 14.0 * 0.0045; acc += tr * a * (uMode < 1.5 ? vec3(0.92, 0.93, 0.94) : vec3(0.28, 0.3, 0.34)); tr *= 1.0 - a; } }
+      for (int j = 0; j < 16; j++) { float tt = mix(t0, t1, (float(j) + 0.5) / 16.0); vec3 p = ro + rd * tt; float hgt = p.y; if (hgt < 0.0) continue; float r = rad * (1.0 + hgt / 900.0);
+        vec2 ctr = c0.xz + vec2(sin(hgt * 0.002 + fk) * 120.0, 0.0); float dd = length(p.xz - ctr);
+        float den = smoothstep(r, r * 0.25, dd) * smoothstep(5200.0, 600.0, hgt) * (0.45 + fb3(vec3(p.xz * 0.005, hgt * 0.003 - uTime * 0.15)));
+        float side = 0.5 + 0.5 * dot(normalize(vec3(p.x - ctr.x, 0.0, p.z - ctr.y)), normalize(vec3(L.x, 0.0, L.z)));
+        float a = den * (t1 - t0) / 16.0 * 0.0045; vec3 sc = uMode < 1.5 ? mix(vec3(0.66, 0.67, 0.7), vec3(1.0, 0.98, 0.94), side) : mix(vec3(0.16, 0.17, 0.2), vec3(0.36, 0.38, 0.43), side);
+        acc += tr * a * sc; tr *= 1.0 - a; } }
     col = col * tr + acc;
   }
-  // the dome: reflection and tint over whatever lies behind the glass
+  // the dome: a geodesic frame, glass that reflects the sky
   if (uMode > 0.5) { vec3 oc = ro - DOME; float b = dot(oc, rd), c = dot(oc, oc) - DOME_R * DOME_R, h = b * b - c;
-    if (h > 0.0) { float tg = -b - sqrt(h); vec3 p = ro + rd * tg; if (tg > 0.0 && p.y > 0.0 && (!hit || tg < t)) { vec3 n = normalize(p - DOME); float fr = pow(1.0 - max(dot(-rd, n), 0.0), 4.0); vec3 refl = skyCol(reflect(rd, n), moonDir, sunDir);
-      float frame = max(smoothstep(0.02, 0.0, abs(fract(atan(n.z, n.x) / 3.14159 * 18.0) - 0.5) - 0.48), smoothstep(0.02, 0.0, abs(fract(asin(n.y) / 1.5708 * 7.0) - 0.5) - 0.48));
-      col = mix(col * vec3(0.8, 0.86, 0.9), refl, 0.18 + 0.8 * fr) + vec3(0.6, 0.62, 0.66) * frame * (uMode < 1.5 ? 0.35 : 0.08);
+    if (h > 0.0) { float tg = -b - sqrt(h); vec3 p = ro + rd * tg; if (tg > 0.0 && p.y > 0.0 && (!hit || tg < t)) { vec3 n = normalize(p - DOME); float fr = pow(1.0 - max(dot(-rd, n), 0.0), 4.0); vec3 refl = skyCol(reflect(rd, n));
+      vec2 sp = vec2(atan(n.z, n.x) * 6.0, asin(n.y) * 7.0); vec2 tri = vec2(sp.x + sp.y * 0.5, sp.y * 0.866); vec2 f1 = abs(fract(tri) - 0.5); float f2 = abs(fract(tri.x - tri.y) - 0.5);
+      float frame = max(max(smoothstep(0.47, 0.5, f1.x), smoothstep(0.47, 0.5, f1.y)), smoothstep(0.47, 0.5, f2)) * smoothstep(0.0, 0.05, n.y);
+      float spec = pow(max(dot(reflect(rd, n), L), 0.0), 200.0) * (uMode < 2.5 ? 6.0 : 0.0);
+      col = mix(col * vec3(0.82, 0.88, 0.9), refl, 0.14 + 0.8 * fr) + vec3(0.62, 0.64, 0.66) * frame * (uMode < 1.5 ? 0.35 : uMode < 2.5 ? 0.1 : 0.03) + vec3(1.0) * spec;
       if (uMode > 2.5) col += vec3(0.4) * smoothstep(0.004, 0.0, abs(fb(n.xz * 9.0) - 0.5)) * 0.03; } } }
-  // the launch over the campus: a rising flame and its trail
+  // the launch over the campus
   if (uMode < 0.5 && uLaunch > 0.0) { vec3 base = vec3(380.0, 0.0, -2300.0); vec3 rk = base + vec3(-120.0 * uLaunch, 9000.0 * pow(uLaunch, 1.6), 0.0);
-    vec3 w = rk - ro; float tc = max(dot(w, rd), 0.0); float dist = length(w - rd * tc) / max(tc, 1.0); col += vec3(1.0, 0.9, 0.7) * 22.0 * smoothstep(0.0022, 0.0, dist) * step(0.0, rk.y);
-    col += vec3(1.0, 0.7, 0.4) * 0.6 * exp(-dist * 300.0);
-    for (int j = 0; j < 28; j++) { float f = (float(j) + 0.5) / 28.0; vec3 q = mix(base, rk, f); vec3 wq = q - ro; float tq = max(dot(wq, rd), 1.0); float dq = length(wq - rd * tq) / tq;
-      col += vec3(1.0, 0.72, 0.42) * 0.11 * smoothstep(0.003, 0.0, dq) * f * f; }
+    vec3 w = rk - ro; float tc = max(dot(w, rd), 0.0); float dist = length(w - rd * tc) / max(tc, 1.0); col += vec3(1.0, 0.9, 0.7) * 22.0 * smoothstep(0.0022, 0.0, dist) * step(0.0, rk.y) + vec3(1.0, 0.7, 0.4) * 0.6 * exp(-dist * 300.0);
+    for (int j = 0; j < 28; j++) { float f = (float(j) + 0.5) / 28.0; vec3 q = mix(base, rk, f); vec3 wq = q - ro; float tq = max(dot(wq, rd), 1.0); float dq = length(wq - rd * tq) / tq; col += vec3(1.0, 0.72, 0.42) * 0.11 * smoothstep(0.003, 0.0, dq) * f * f; }
     col += vec3(0.5, 0.3, 0.15) * 0.12 * uLaunch * exp(-max(acos(clamp(dot(rd, normalize(base - ro)), -1.0, 1.0)), 0.0) * 6.0); }
   col = mix(col, uMode < 0.5 ? vec3(0.02, 0.025, 0.04) : vec3(0.75, 0.77, 0.8), uHaze);
   o = vec4(col * uFade, 0.0);
@@ -467,7 +519,7 @@ function sCell(t) {
   E.sphere({ mode: 2, center: CELL_STAR, radius: 1.4, emissive: lerp(3.0, 0.02, dim), atmo: [1.0, 0.8, 0.5], time: t });
   const R = 1 - 0.4 * ss(163, 166, t), op = 1 - ss(165, 166.5, t);
   const rot = bodyRot(2.0, 0.25), faceW = norm([-0.33, 0.36, 0.88]), lesC = toBody(rot, faceW);
-  if (op > 0) E.sphere({ mode: 1, day: tex.moon, radius: R, sun, desat: 0.2, tint: [1.15, 0.72, 0.5], dayGain: 1.6 * (1 - dim * 0.9), lesC, lesR: 2.6 * ss(158.5, 164, t), lesK: 1.3, rot, opacity: op, time: t });
+  if (op > 0) E.sphere({ mode: 1, day: tex.moon, proc: 1, radius: R, sun, desat: 0.2, tint: [1, 1, 1], dayGain: 1.6 * (1 - dim * 0.9), lesC, lesR: 2.6 * ss(158.5, 164, t), lesK: 1.3, rot, opacity: op, time: t });
   const land = scl(faceW, 1.0);
   if (t < 159) { const u = ease(ss(154, 158.5, t)); const from = [2.6, 2.2, 1.0]; const p = mixv(from, scl(land, 1.01), u);
     pt(p, [1, 0.85, 0.6], 6, 8); pt(p, [0.6, 0.75, 1.0], 1.6 * (1 - ss(157, 158.5, t)), 40); if (t > 158.5) pt(land, [1, 0.7, 0.4], 20 * (1 - ss(158.5, 159, t)), 30); }
@@ -516,7 +568,7 @@ function buildGalaxy() {
   GAL = { n, pos, col, b, dom, seam, cen, death, volleys, src, conv, ND, sweep, sweeper: final[1], ripple, sun, cell: [pos[cellI * 3], pos[cellI * 3 + 1], pos[cellI * 3 + 2]] };
 }
 function aliveFraction(t) { if (!GAL) return 1; let a = 0; for (let k = 0; k < GAL.ND; k++) if (GAL.death[k] > t) a++; return a / GAL.ND; }
-function playersAt(t) { if (!GAL || t < 223) return 1; const split = Math.round(Math.exp(lerp(0, Math.log(212), ss(223.5, 231, t)))); if (t < 232) return split; let a = 0; for (let k = 0; k < GAL.ND; k++) if (GAL.death[k] > t) a++; return a; }
+function playersAt(t) { if (t < 222) return players(yearAt(t)).alive.length; if (!GAL || t < 223) return 1; const split = Math.round(Math.exp(lerp(0, Math.log(212), ss(223.5, 231, t)))); if (t < 232) return split; let a = 0; for (let k = 0; k < GAL.ND; k++) if (GAL.death[k] > t) a++; return a; }
 function galFull(t) { const ang = 0.3 + t * 0.002; return { pos: [Math.cos(ang) * 50, 52, Math.sin(ang) * 50], look: [0, -3, 0] }; }
 function galaxyCam(t) {
   const G = GAL, full = galFull(t);
@@ -536,6 +588,7 @@ function sGalaxy(t, cellBack = 1) {
   camera(c.pos, c.look, c.fov, 0.01, 1e6); drawStars(0.35);
   const war = t >= 223, front = t >= 170 && t < 202, ir = t >= 202 ? 1 : ss(189.5, 193.5, t);
   const gu = { uT: t, uIR: ir, uWar: war ? 1 : 0, uSplit: ss(223.5, 231, t), uFrontOn: front || t >= 202 ? 1 : 0, uSizeK: 1, uNear: t < 185 ? 1 - ss(172, 182, t) : 0 };
+  gu.uPC = PCOL.flat();
   E.drawParticles(SYS.glow, { ...gu, uGlow: 0.018, uNear: 0 }, { depth: false });
   E.drawParticles(SYS.galaxy, { ...gu, uGlow: 0 }, { depth: false });
   if (t < 186) { pt(G.cell, [1, 0.62, 0.25], 4 * (1 - ss(176, 180, t)), 10); pt(G.sun, [1, 0.62, 0.25], 5 * (1 - ss(180, 184, t)), 12); flushPts({ depth: false }); }
@@ -544,7 +597,7 @@ function sGalaxy(t, cellBack = 1) {
     const d = norm([p[0], 0, p[2]]), t0 = 215.5 + rr() * 4, u = clamp((t - t0) / 3.5), fade = 1 - ss(t0 + 2.8, t0 + 4.5, t); if (u <= 0 || fade <= 0) continue; pt(add(p, scl(d, 2 + u * 40)), AMBER, 4 * fade, 6); } flushPts({ depth: false }); }
   if (war) {
     for (const v of G.volleys) { if (t < v.t0 || t > v.t1 + 0.9) continue; const A = G.src[v.a], B = G.src[v.b]; const pa = [G.pos[A * 3], G.pos[A * 3 + 1] + 0.2, G.pos[A * 3 + 2]], pb = [G.pos[B * 3], G.pos[B * 3 + 1] + 0.2, G.pos[B * 3 + 2]];
-      const u = clamp((t - v.t0) / (v.t1 - v.t0)), fade = 1 - clamp((t - v.t1) / 0.9); const head = mixv(pa, pb, u); ln(pa, head, [1.0, 0.93, 0.85], 5.5 * fade, 2.6); pt(head, [1, 1, 1], 14 * fade * (u < 1 ? 1 : 0), 16); pt(pa, [1, 0.85, 0.7], 6 * fade, 22); }
+      const u = clamp((t - v.t0) / (v.t1 - v.t0)), fade = 1 - clamp((t - v.t1) / 0.9); const head = mixv(pa, pb, u); const bc = mixv([1, 0.95, 0.88], PCOL[v.a % 12], 0.35); ln(pa, head, bc, 5.5 * fade, 2.6); pt(head, [1, 1, 1], 14 * fade * (u < 1 ? 1 : 0), 16); pt(pa, [1, 0.85, 0.7], 6 * fade, 22); }
     if (G.sweep.length && t > G.sweep[0].t - 0.6 && t < G.sweep[G.sweep.length - 1].t + 0.5) { const S = G.src[G.sweeper], ps = [G.pos[S * 3], 0.2, G.pos[S * 3 + 2]]; let i = 0; while (i < G.sweep.length - 1 && G.sweep[i + 1].t < t) i++;
       const A = G.sweep[i], B = G.sweep[Math.min(i + 1, G.sweep.length - 1)], u = B.t > A.t ? clamp((t - A.t) / (B.t - A.t)) : 0, pa = G.src[A.b], pb = G.src[B.b]; const tgt = [lerp(G.pos[pa * 3], G.pos[pb * 3], u), 0.2, lerp(G.pos[pa * 3 + 2], G.pos[pb * 3 + 2], u)];
       const k = ss(G.sweep[0].t - 0.6, G.sweep[0].t - 0.2, t) * (1 - ss(G.sweep[G.sweep.length - 1].t, G.sweep[G.sweep.length - 1].t + 0.5, t)); ln(ps, add(ps, scl(norm(sub(tgt, ps)), 70)), [1.0, 0.95, 0.9], 4.5 * k, 2.2); pt(ps, [1, 0.9, 0.8], 8 * k, 24); }
@@ -558,56 +611,84 @@ const SUP = { "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵
 function fmtW(p) { if (p <= 0) return "0 W"; if (p < 1e12) return `${(p / 1e9).toFixed(0)} GW`; if (p < 1e15) return `${(p / 1e12).toFixed(p < 1e13 ? 1 : 0)} TW`; if (p < 1e18) return `${(p / 1e15).toFixed(p < 1e16 ? 1 : 0)} PW`; const e = Math.floor(Math.log10(p)), m = p / Math.pow(10, e); return `${m.toFixed(1)} × 10${String(e).split("").map(c => SUP[c]).join("")} W`; }
 const fmtPop = p => p >= 1e9 ? `${(p / 1e9).toFixed(1)} bn` : p >= 1e6 ? `${Math.round(p / 1e6)} million` : `${Math.round(p / 1e3)} thousand`;
 const fmtYear = y => y < 10000 ? String(Math.round(y)) : Math.round(y).toLocaleString("en-US");
-const CARDS = [[28.5, 30.3, "2046", "1 TW of compute"], [48.4, 50.2, "2068", "compute uses all the energy humanity uses today"], [57.4, 59.2, "2097", "waste heat 2 W/m²"], [70.2, 72, "2113", "10 PW"], [89, 91.5, "2132", "all the sunlight the Earth receives"], [129.5, 131.5, "2291", "3.8 × 10²⁶ W · the Sun"], [167, 169, "", "a few thousand years"]];
+// story-time cues. Cards say each wall in plain words; stamps say where we are.
+const CARDS = [
+  [9.6, 13.4, "The race for super intelligence.", "2026 · TWELVE PLAYERS"],
+  [27.4, 30.6, "Compute passes a terawatt.", "2046 · 1 TW"],
+  [47.4, 50.4, "Compute uses as much energy as all of humanity did in 2026.", "2068 · 19 TW"],
+  [56.6, 59.6, "The planet can no longer shed its heat.", "2097 · WASTE HEAT 2 W/M²"],
+  [69.4, 72, "The oceans become the coolant.", "2113 · 10 PW"],
+  [88.4, 91.8, "The Earth is not enough.", "2132 · ALL THE SUNLIGHT THE EARTH RECEIVES"],
+  [128.8, 132, "The Sun is enclosed.", "2291 · 3.8 × 10²⁶ W"],
+  [149.6, 153.8, "One star is not enough.", "THE PROBES LEAVE"],
+  [166.6, 170.4, "The star goes dark.", "A FEW THOUSAND YEARS"],
+  [190.2, 194.6, "Every star in the galaxy is taken.", "TWO MILLION YEARS · 10³⁷ W"],
+  [224, 228.4, "Nothing is left to win.", ""],
+];
+const STAMPS = [[33.6, 40.7, "WEST TEXAS"], [73.4, 84.2, "THE DRY MEDITERRANEAN"], [138.3, 143.8, "THE SAME DOME"], [154.4, 162, "ANOTHER STAR"], [195.4, 201.6, "THE SAME DOME · TWO MILLION YEARS LATER"]];
 const INSTR = [[7, 33, "VIIRS DAY/NIGHT BAND"], [33, 41, "GROUND"], [41, 50, "VISIBLE"], [50, 59.6, "THERMAL INFRARED  11 µm"], [59.6, 72, "VISIBLE"], [72, 84.5, "GROUND"], [84.5, 128.5, "VISIBLE"], [128.5, 138, "MID-INFRARED  12 µm"], [138, 144, "GROUND"], [144, 170, "VISIBLE"], [170, 191.5, "VISIBLE"], [191.5, 195, "MID-INFRARED  12 µm"], [195, 202, "GROUND"], [202, 272, "MID-INFRARED  12 µm"]];
-// callouts: [t0, t1, text, world-point function (or null), screen fallback]
 const CALL = [
-  [9.5, 13, "data-centre regions, 2026", () => surf(nightShot(11).rot, 116.4, 39.9, 1.0)],
   [43, 46.5, "orbital data centres", () => add(EARTH, [0.75, 0.75, 0.45])],
   [45.5, 48.5, "solar fields", () => surf(orbitRot(47), -112, 34, 1.0)],
   [62, 65.5, "mass drivers venting seawater", null, [1460, 300]],
-  [66, 69.5, "dry sea floor", () => surf(orbitRot(68), 5, 40, 1.0)],
+  [66, 69.2, "dry sea floor", () => surf(orbitRot(68), 5, 40, 1.0)],
   [102, 105.5, "mass drivers", () => add(MERC, [0.35, 0.45, 0.3])],
   [108.5, 111, "debris ring", null, [700, 640]],
   [121.5, 125, "collector swarm", () => add(SUN, [SUN_R * 1.6, SUN_R * 1.2, 0])],
   [134, 137.5, "laser relay", () => MOON],
   [145, 148, "self-replicating probes", null, [1250, 380]],
+  [233.5, 237.5, "beams powered by whole stars", null, [1180, 300]],
 ];
+const LAST_ABSORB = ABSORB[ABSORB.length - 1][0];
 function overlay(t) {
   const on = ss(7.5, 9, t) * (t > 270 ? (Math.floor(t * 14) % 3 === 0 && t < 271.5 ? 1 : 0) : 1) * (t < 274 ? 1 : 0);
-  ctx.save(); ctx.textBaseline = "top";
+  ctx.save(); ctx.textBaseline = "alphabetic";
+  const L = 64, T = 64;
   if (on > 0) {
-    ctx.globalAlpha = on; const L = 72, R = W - 72, T = 60;
-    const label = (s, x, y, al) => { ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "3px"; ctx.fillStyle = "rgba(225,232,238,0.5)"; ctx.textAlign = al; ctx.fillText(s, x, y); };
-    const value = (s, x, y, al, c = "rgba(240,244,247,0.95)") => { ctx.font = `400 26px ${MONO}`; ctx.letterSpacing = "1px"; ctx.fillStyle = c; ctx.textAlign = al; ctx.fillText(s, x, y); };
-    label("YEAR", L, T, "left"); value(fmtYear(yearAt(t)), L, T + 22, "left");
-    ctx.font = `600 12px ${MONO}`; ctx.letterSpacing = "3px"; ctx.textAlign = "left";
-    if (t < 9.5) { ctx.fillStyle = "#ffb15a"; ctx.fillText("▸ TODAY", L + 92, T + 32); } else { ctx.globalAlpha = on * ss(9.5, 11, t) * 0.55; ctx.fillStyle = "rgba(225,232,238,1)"; ctx.fillText("PROJECTED", L + 92, T + 32); ctx.globalAlpha = on; }
-    label("POWER", R, T, "right"); value(fmtW(powerAt(t)), R, T + 22, "right");
-    const popA = 1 - ss(142, 144, t); if (popA > 0) { ctx.globalAlpha = on * popA; label("POPULATION", R, T + 72, "right"); value(fmtPop(popAt(t)), R, T + 94, "right"); ctx.globalAlpha = on; }
-    if (t > 223) { ctx.globalAlpha = on * ss(223, 224, t); label("PLAYERS", R, T + 72, "right"); value(String(playersAt(t)), R, T + 94, "right", "#ffb15a"); ctx.globalAlpha = on; }
-    // the instrument
-    for (const [a, b, s] of INSTR) if (t >= a && t < b) { const k = ss(a, a + 0.4, t) * (1 - ss(b - 0.3, b, t)); ctx.globalAlpha = on * k * 0.7; ctx.font = `500 12px ${MONO}`; ctx.letterSpacing = "3px"; ctx.fillStyle = "rgba(225,232,238,1)"; ctx.textAlign = "left"; ctx.fillText(s, L, H - 64); }
+    ctx.globalAlpha = on;
+    const lab = (s0, x, y, a = 0.48) => { ctx.font = `500 11px ${MONO}`; ctx.letterSpacing = "3px"; ctx.fillStyle = `rgba(225,232,238,${a})`; ctx.textAlign = "left"; ctx.fillText(s0, x, y); };
+    const val = (s0, x, y, c = "rgba(240,244,247,0.94)") => { ctx.font = `400 16px ${MONO}`; ctx.letterSpacing = "1px"; ctx.fillStyle = c; ctx.textAlign = "left"; ctx.fillText(s0, x, y); };
+    // the year, large
+    lab("YEAR", L, T);
+    ctx.font = `200 44px ${SANS}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "rgba(246,248,250,0.97)"; ctx.fillText(fmtYear(yearAt(t)), L - 2, T + 46);
+    const yw = ctx.measureText(fmtYear(yearAt(t))).width;
+    ctx.font = `600 11px ${MONO}`; ctx.letterSpacing = "3px";
+    if (t < 9.5) { ctx.fillStyle = "#ffb15a"; ctx.fillText("TODAY", L + yw + 14, T + 44); } else { ctx.globalAlpha = on * ss(9.5, 11, t) * 0.5; ctx.fillStyle = "#e8eef2"; ctx.fillText("PROJECTED", L + yw + 14, T + 44); ctx.globalAlpha = on; }
+    // the rows
+    let y = T + 84;
+    lab("COMPUTE", L, y); val(fmtW(powerAt(t)), L + 132, y); y += 26;
+    const pa = t < 222 ? players(yearAt(t)) : null, pn = playersAt(t);
+    lab("PLAYERS", L, y); val(String(pn), L + 132, y, t > 222 ? "#ffb15a" : "rgba(240,244,247,0.94)");
+    if (pa) { const yr = yearAt(t); for (let k = 0; k < 12; k++) { const r = pa.root(k), abs = ABSORB.find(e => e[1] === k); const gone = abs ? clamp((yr - abs[0]) / 2.5) : 0; const c = r === k ? PCOL[k] : mixv(PCOL[k], PCOL[r], gone); const sz = 7 * (1 - gone * 0.75);
+      ctx.globalAlpha = on * (1 - gone * 0.8); ctx.fillStyle = `rgb(${c.map(v => Math.round(v * 255)).join(",")})`; ctx.fillRect(L + 172 + k * 12 + (7 - sz) / 2, y - 9 + (7 - sz) / 2, sz, sz); } ctx.globalAlpha = on; }
+    const lone = ss(LAST_ABSORB, LAST_ABSORB + 1, yearAt(t)) * (1 - ss(62, 64, t));
+    if (lone > 0 && t < 70) { ctx.globalAlpha = on * lone; ctx.font = `500 12px ${MONO}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "#ffb15a"; ctx.fillText("ONE PLAYER LEFT", L + 172, y); ctx.globalAlpha = on; }
+    y += 26;
+    const popA = 1 - ss(142, 144, t); if (popA > 0) { ctx.globalAlpha = on * popA; lab("POPULATION", L, y); val(fmtPop(popAt(t)), L + 132, y); ctx.globalAlpha = on; }
+    // where we are, and with what instrument
+    for (const [a, b, s0] of STAMPS) if (t >= a && t < b) { const k = ss(a, a + 0.5, t) * (1 - ss(b - 0.4, b, t)); ctx.globalAlpha = on * k; ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(246,248,250,0.9)"; ctx.fillText(s0, L, H - 84); }
+    for (const [a, b, s0] of INSTR) if (t >= a && t < b) { const k = ss(a, a + 0.4, t) * (1 - ss(b - 0.3, b, t)); ctx.globalAlpha = on * k; lab(s0, L, H - 60, 0.55); }
     ctx.globalAlpha = on;
     // callouts
-    for (const [a, b, s, fn, fallback] of CALL) { if (t < a || t > b) continue; const k = ss(a, a + 0.4, t) * (1 - ss(b - 0.4, b, t)); let p = null;
-      if (fn) { const w = fn(); const pr = E.project(w); if (pr && pr[0] > 0 && pr[0] < W && pr[1] > 0 && pr[1] < H) p = [pr[0], pr[1]]; } else p = fallback;
-      if (!p) continue; ctx.globalAlpha = on * k; ctx.fillStyle = "#ffb15a"; ctx.beginPath(); ctx.arc(p[0], p[1], 3, 0, TAU); ctx.fill();
-      ctx.strokeStyle = "rgba(255,177,90,0.7)"; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(p[0] + 6, p[1] - 6); ctx.lineTo(p[0] + 22, p[1] - 22); ctx.stroke();
-      ctx.font = `500 14px ${MONO}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "rgba(245,247,249,0.92)"; ctx.textAlign = "left"; ctx.fillText(s, p[0] + 28, p[1] - 32); }
+    for (const [a, b, s0, fn, fallback] of CALL) { if (t < a || t > b) continue; const k = ss(a, a + 0.4, t) * (1 - ss(b - 0.4, b, t)); let p = null;
+      if (fn) { const pr = E.project(fn()); if (pr && pr[0] > 0 && pr[0] < W && pr[1] > 0 && pr[1] < H) p = [pr[0], pr[1]]; } else p = fallback;
+      if (!p) continue; ctx.globalAlpha = on * k; ctx.fillStyle = "#ffb15a"; ctx.beginPath(); ctx.arc(p[0], p[1], 2.5, 0, TAU); ctx.fill();
+      ctx.strokeStyle = "rgba(255,177,90,0.6)"; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(p[0] + 5, p[1] - 5); ctx.lineTo(p[0] + 18, p[1] - 18); ctx.stroke();
+      ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "rgba(245,247,249,0.9)"; ctx.textAlign = "left"; ctx.fillText(s0, p[0] + 24, p[1] - 22); }
     ctx.globalAlpha = 1;
   }
-  // chapter cards
-  ctx.textAlign = "center"; ctx.textBaseline = "middle";
-  for (const [a, b, yr, q] of CARDS) { const k = ss(a, a + 0.3, t) * (1 - ss(b - 0.35, b, t)); if (k <= 0) continue; ctx.globalAlpha = k;
-    if (yr) { ctx.font = `200 78px ${SANS}`; ctx.letterSpacing = "10px"; ctx.fillStyle = "rgba(245,247,249,0.96)"; ctx.fillText(yr, W / 2 + 5, H * 0.76); }
-    ctx.font = `500 17px ${MONO}`; ctx.letterSpacing = "3px"; ctx.fillStyle = "rgba(255,190,120,0.95)"; ctx.fillText(q.toUpperCase(), W / 2 + 2, yr ? H * 0.76 + 62 : H * 0.8); }
+  // cards: the wall in plain words
+  ctx.textAlign = "center";
+  for (const [a, b, line, num] of CARDS) { const k = ss(a, a + 0.45, t) * (1 - ss(b - 0.45, b, t)); if (k <= 0) continue; ctx.globalAlpha = k;
+    ctx.font = `300 36px ${SANS}`; ctx.letterSpacing = "0.5px"; ctx.fillStyle = "rgba(247,249,250,0.97)"; ctx.shadowColor = "rgba(0,0,0,0.6)"; ctx.shadowBlur = 18; ctx.fillText(line, W / 2, H * 0.83);
+    if (num) { ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(255,190,120,0.95)"; ctx.fillText(num, W / 2 + 2, H * 0.83 + 36); } ctx.shadowBlur = 0; }
   // words
-  const word = (s, k, y, size = 64, alpha = 0.97) => { if (k <= 0) return; ctx.globalAlpha = k; ctx.font = `300 ${size}px ${SANS}`; ctx.letterSpacing = "2px"; ctx.fillStyle = `rgba(246,248,250,${alpha})`; ctx.fillText(s, W / 2, y); };
-  { const k = ss(0.6, 1.4, t) * (1 - ss(5.4, 6.4, t)); if (k > 0) { ctx.globalAlpha = k; ctx.font = `500 14px ${MONO}`; ctx.letterSpacing = "3px"; ctx.fillStyle = "rgba(225,232,238,0.55)"; ctx.fillText("UNITED NATIONS GENERAL ASSEMBLY  ·  22 SEPTEMBER 2026", W / 2, H - 120); } }
+  ctx.textBaseline = "middle";
+  const word = (s0, k, y, size = 64, alpha = 0.97) => { if (k <= 0) return; ctx.globalAlpha = k; ctx.font = `300 ${size}px ${SANS}`; ctx.letterSpacing = "2px"; ctx.fillStyle = `rgba(246,248,250,${alpha})`; ctx.fillText(s0, W / 2, y); };
+  { const k = ss(0.6, 1.4, t) * (1 - ss(5.4, 6.4, t)); if (k > 0) { ctx.globalAlpha = k; ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(225,232,238,0.55)"; ctx.fillText("UNITED NATIONS GENERAL ASSEMBLY  ·  22 SEPTEMBER 2026", W / 2, H - 120); } }
   word("super intelligence", ss(1.6, 2.4, t) * (1 - ss(5.6, 6.8, t)), H / 2);
   { const k = ss(76, 77.5, t) * (1 - ss(81.5, 82.5, t)); if (k > 0) { ctx.globalAlpha = k; ctx.font = `500 22px ${MONO}`; ctx.letterSpacing = "12px"; ctx.fillStyle = "rgba(30,32,36,0.8)"; ctx.fillText("PROGRESS", W / 2 + 6, H - 150); } }
-  word("super intelligence", ss(206, 207.5, t) * (1 - ss(211.5, 213.5, t)) * 0.5, H * 0.82, 54, 0.9);
+  word("super intelligence", ss(206, 207.5, t) * (1 - ss(211.5, 213.5, t)) * 0.5, H * 0.5, 54, 0.9);
   { const k = ss(281, 283, t) * (1 - ss(296, 299, t)); if (k > 0) { ctx.globalAlpha = k; ctx.font = `200 70px ${SANS}`; ctx.letterSpacing = "22px"; ctx.fillStyle = "rgba(246,248,250,0.97)"; ctx.fillText("THE GAME OF WINNING", W / 2 + 11, H / 2); } }
   ctx.restore();
 }
@@ -635,8 +716,11 @@ function drawScene(t) {
   E.end({ bloom, thresh, exposure: 1.0, grain: 0.028, vignette: 0.4, seed: (t * 30) % 97, fade, fadeCol });
 }
 let COMPOSITE = true;
-function frame(t) {
+const SCENES = [[0, "the word"], [7, "today → 2046"], [33, "ground: West Texas"], [41, "orbit"], [50, "thermal"], [59.6, "the oceans"], [72, "ground: the dome"], [84.5, "Earth entire"], [92, "flight inward"], [98.6, "Mercury"], [111.2, "Venus"], [118, "the swarm"], [132, "the relay"], [138, "ground: two suns"], [144, "launch"], [149, "transit"], [154, "the cell"], [171, "the front"], [195, "ground: the last sky"], [202, "efficient"], [223, "the split"], [232, "the beams"], [262, "last light"], [272, "black"], [280, "title"]];
+function sceneAt(ft) { const st = storyT(ft); let n = ""; for (const [a, name] of SCENES) if (st >= a) n = name; return `${n}  (story ${st.toFixed(1)})`; }
+function frame(ft) {
   if (!ready) throw new Error("not ready");
+  const t = storyT(ft);
   drawScene(t);
   ctx.globalAlpha = 1;
   if (COMPOSITE) ctx.drawImage(E.gl.canvas, 0, 0, W, H); else ctx.clearRect(0, 0, W, H);
@@ -648,13 +732,13 @@ async function init(view, onProgress = () => {}, { composite = true, glCanvas = 
   ctx = view.getContext("2d"); COMPOSITE = composite;
   const glc = glCanvas || document.createElement("canvas"); glc.width = W; glc.height = H;
   E = Engine.create(glc, W, H);
-  const names = { earthDay: "assets/earth-day.jpg", earthNight: "assets/earth-night.jpg", mercury: "assets/mercury.jpg", moon: "assets/moon.jpg" };
-  let k = 0; for (const [key, u] of Object.entries(names)) { tex[key] = await E.loadTexture(u); onProgress(++k / 6); }
+  const names = { earthDay: "assets/earth-day.jpg", earthNight: "assets/earth-night.jpg", mercury: "assets/mercury.jpg", moon: "assets/moon.jpg", clouds: "assets/clouds.jpg" };
+  let k = 0; for (const [key, u] of Object.entries(names)) { try { tex[key] = await E.loadTexture(u); } catch (e) { if (key !== "clouds") throw e; } onProgress(++k / 7); }
   buildGrowth(tex.earthNight.img, tex.earthDay.img); onProgress(5 / 6);
   buildSystems(); onProgress(1);
   ready = true;
 }
 const PX = new Uint8Array(4);
 function timeFrame(t) { const a = performance.now(); drawScene(t); E.gl.readPixels(0, 0, 1, 1, E.gl.RGBA, E.gl.UNSIGNED_BYTE, PX); return performance.now() - a; }
-return { init, frame, timeFrame, W, H, DUR, yearAt, powerAt, galaxy: () => GAL };
+return { init, frame, timeFrame, W, H, DUR, yearAt, powerAt, storyT, filmT, sceneAt, galaxy: () => GAL };
 })();

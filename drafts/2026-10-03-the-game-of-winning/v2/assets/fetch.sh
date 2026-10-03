@@ -11,3 +11,5 @@ sips -s format jpeg -s formatOptions 92 -z 4096 8192 src-blackmarble-2016-3km.jp
 sips -s format jpeg -s formatOptions 92 -z 4096 8192 src-bluemarble-200412.jpg --out earth-day.jpg >/dev/null
 sips -s format jpeg -s formatOptions 92 src-mercury-PIA17386.jpg --out mercury.jpg >/dev/null
 sips -s format jpeg -s formatOptions 92 src-moon-lroc-2k.tif --out moon.jpg >/dev/null
+curl -fL -o src-clouds-8192.tif "https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57747/cloud_combined_8192.tif"   # Blue Marble cloud layer, 8192x4096
+sips -s format jpeg -s formatOptions 90 -z 2048 4096 src-clouds-8192.tif --out clouds.jpg >/dev/null

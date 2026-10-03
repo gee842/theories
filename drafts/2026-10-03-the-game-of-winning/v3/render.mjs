@@ -77,6 +77,14 @@ try {
       "-af", "volume=12.7dB,alimiter=limit=0.85:level=disabled", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", mp4]);
     rmSync(work, { recursive: true, force: true }); console.log(`${mp4}  (${((Date.now() - t0) / 1000).toFixed(0)}s)`);
   }
+  if (opt("--sheet") !== null) {   // --sheet from,to,step[,cols]  → out/sheet.png, one image for a fast look at a stretch of the film
+    const [a, b, st, cols = 4] = opt("--sheet").split(",").map(Number); const film = await openFilm("sheet"); const dir = join(outDir, "sheet"); mkdirSync(dir, { recursive: true });
+    const ts = []; for (let x = a; x <= b + 1e-6; x += st) ts.push(+x.toFixed(2));
+    try { for (const [i, x] of ts.entries()) writeFileSync(join(dir, `f${String(i).padStart(3, "0")}.png`), await film.frame(x)); } finally { film.close(); }
+    await run(["-y", "-loglevel", "error", "-start_number", "0", "-i", join(dir, "f%03d.png"), "-frames:v", "1", "-vf", `scale=640:-1,tile=${cols}x${Math.ceil(ts.length / cols)}:padding=4:color=0x222222`, join(outDir, "sheet.png")]);
+    for (const [i] of ts.entries()) rmSync(join(dir, `f${String(i).padStart(3, "0")}.png`));
+    console.log(join(outDir, "sheet.png"), ts.join(" "));
+  }
   if (opt("--stills") !== null) {
     const film = await openFilm("stills");
     try {

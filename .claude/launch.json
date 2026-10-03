@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "film-dev",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["drafts/2026-10-03-the-game-of-winning/v3/dev-server.mjs"],
+      "port": 5291,
+      "autoPort": true
+    }
+  ]
+}

@@ -22,8 +22,8 @@ body.render .bar, body.render .start { display: none; } body.render .frame { wid
 <button class="start" id="start" type="button" disabled><span id="startLabel">LOADING 0%</span></button>
 <div class="bar">
   <button id="play" type="button">Play</button>
-  <input id="scrub" type="range" min="0" max="300" step="0.05" value="0" aria-label="Position">
-  <span class="time" id="time">0:00 / 5:00</span>
+  <input id="scrub" type="range" min="0" max="250" step="0.05" value="0" aria-label="Position">
+  <span class="time" id="time">0:00 / 4:10</span>
   <button id="snd" type="button" aria-pressed="true">Sound on</button>
   <button id="full" type="button">Fullscreen</button>
   <div class="chapters" id="chapters"></div>
@@ -44,18 +44,19 @@ Film.init(view, p => { startLabel.textContent = `LOADING ${Math.round(p * 100)}%
   window.FILM.audio = async () => { const b = await Sound.render(); window.__wav = Sound.wav(b); return window.__wav.length; };
   window.FILM.audioChunk = (i, size) => { const s = window.__wav.subarray(i, i + size); let bin = ""; for (let j = 0; j < s.length; j += 8192) bin += String.fromCharCode.apply(null, s.subarray(j, j + 8192)); return btoa(bin); };
   if (render) { glc.remove(); return; }
-  startLabel.textContent = "PLAY · 5:00"; startBtn.disabled = false; Film.frame(0.01);
+  startLabel.textContent = "PLAY · 4:10"; startBtn.disabled = false; Film.frame(0.01);
   player();
 }).catch(e => { window.FILM.error = String(e && e.stack || e); console.error(e); startLabel.textContent = "COULD NOT START: " + String(e.message || e).slice(0, 80); });
 
 function player() {
   const DUR = Film.DUR, playB = document.getElementById("play"), scrub = document.getElementById("scrub"), timeEl = document.getElementById("time"), sndB = document.getElementById("snd"), chapEl = document.getElementById("chapters");
   const CH = [["Earth", 7], ["Ground", 33], ["Orbit", 41], ["The Sun", 84.5], ["The probe", 144], ["The galaxy", 171], ["The war", 223], ["End", 272]];
-  CH.forEach(([n, at]) => { const b = document.createElement("button"); b.type = "button"; b.textContent = n; b.onclick = () => seek(at); chapEl.appendChild(b); });
+  CH.forEach(([n, at]) => { const b = document.createElement("button"); b.type = "button"; b.textContent = n; b.onclick = () => seek(Film.filmT(at)); chapEl.appendChild(b); });
   let t = 0, playing = false, t0 = 0, p0 = 0, soundOn = true, ac = null, buf = null, src = null;
   const bytes = fetch("soundtrack.mp3").then(r => r.ok ? r.arrayBuffer() : null).catch(() => null);
   const fmt = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
   const clock = () => t0 + (performance.now() - p0) / 1000;
+  scrub.max = DUR;
   function ui() { scrub.value = t; timeEl.textContent = `${fmt(t)} / ${fmt(DUR)}`; playB.textContent = playing ? "Pause" : (t >= DUR - 0.05 ? "Replay" : "Play"); sndB.textContent = soundOn ? "Sound on" : "Sound off"; sndB.setAttribute("aria-pressed", soundOn); }
   function prepSound() { if (ac || !soundOn) return; try { ac = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { return; }
     bytes.then(b => b && new Promise((res, rej) => { const p = ac.decodeAudioData(b.slice(0), res, rej); if (p && p.then) p.then(res, rej); })).then(d => { if (d) { buf = d; if (playing) startSrc(); } }).catch(() => {}); }
@@ -66,6 +67,18 @@ function player() {
   function seek(x) { t = Math.max(0, Math.min(DUR, x)); startBtn.hidden = true; if (playing) { t0 = t; p0 = performance.now(); startSrc(); } else Film.frame(t); ui(); }
   function loop() { if (!playing) return; t = clock(); if (t >= DUR) { t = DUR; playing = false; stopSrc(); } Film.frame(t); ui(); if (playing) requestAnimationFrame(loop); }
   startBtn.onclick = play; playB.onclick = () => playing ? pause() : play(); scrub.oninput = () => seek(parseFloat(scrub.value));
+  // development: live reload resumes where you were; ?t=SECONDS starts anywhere; press D for a readout
+  const qs = new URLSearchParams(location.search); let resume = null;
+  try { resume = JSON.parse(sessionStorage.getItem("gow-resume") || "null"); sessionStorage.removeItem("gow-resume"); } catch (e) {}
+  if (qs.has("t")) resume = { t: parseFloat(qs.get("t")), playing: false };
+  if (resume) { t = resume.t; startBtn.hidden = true; Film.frame(t); ui(); if (resume.playing) play(); }
+  if (location.protocol.startsWith("http") && location.hostname.match(/^(127\.0\.0\.1|localhost)$/)) {
+    try { const es = new EventSource("/__events"); es.onmessage = () => { try { sessionStorage.setItem("gow-resume", JSON.stringify({ t: playing ? clock() : t, playing })); } catch (e) {} location.reload(); }; } catch (e) {}
+  }
+  const dev = document.createElement("div"); dev.style.cssText = "position:fixed;top:8px;left:50%;transform:translateX(-50%);font:11px Menlo,monospace;color:#ffb15a;background:rgba(0,0,0,.6);padding:4px 8px;display:none;z-index:9"; document.body.appendChild(dev);
+  let devOn = false, fr = 0, fl = performance.now(), fps = 0;
+  document.addEventListener("keydown", e => { if (e.key === "d" || e.key === "D") { devOn = !devOn; dev.style.display = devOn ? "block" : "none"; } });
+  (function tick() { fr++; const now = performance.now(); if (now - fl > 500) { fps = fr * 1000 / (now - fl); fr = 0; fl = now; } if (devOn) dev.textContent = `t ${t.toFixed(2)}  ·  ${fps.toFixed(0)} fps  ·  ${Film.sceneAt ? Film.sceneAt(t) : ""}`; requestAnimationFrame(tick); })();
   sndB.onclick = () => { soundOn = !soundOn; if (soundOn) { prepSound(); if (playing) startSrc(); } else stopSrc(); ui(); };
   document.getElementById("full").onclick = () => { const el = document.documentElement; (el.requestFullscreen || el.webkitRequestFullscreen || (() => {})).call(el); };
   document.addEventListener("keydown", e => { if (e.code === "Space") { e.preventDefault(); playing ? pause() : play(); } if (e.code === "ArrowRight") seek(t + 5); if (e.code === "ArrowLeft") seek(t - 5); });

@@ -25,9 +25,12 @@ uniform sampler2D uDay, uNight; uniform int uMode; uniform float uDayGain, uNigh
 uniform float uThermal, uHeat, uOcean, uIr, uEmissive, uTime, uDesat;
 uniform vec3 uAtmo; uniform float uAtmoK;
 uniform vec3 uLesC; uniform float uLesR, uLesK;
-uniform vec3 uTint; uniform sampler2D uGrow; uniform float uYear, uClouds, uHasGrow, uSeaStart, uSeaEnd;
+uniform vec3 uTint; uniform float uProc; uniform sampler2D uGrow, uCloud; uniform float uYear, uClouds, uHasGrow, uSeaStart, uSeaEnd, uHasCloud; uniform vec3 uPCol[12];
 ${NOISE}
 vec3 toLin(vec3 c){ return pow(c, vec3(2.2)); }
+vec3 thermalPal(float x){ x = clamp(x, 0.0, 1.0);
+  vec3 c = mix(vec3(0.01, 0.015, 0.04), vec3(0.06, 0.12, 0.28), smoothstep(0.0, 0.25, x)); c = mix(c, vec3(0.45, 0.2, 0.25), smoothstep(0.25, 0.45, x));
+  c = mix(c, vec3(0.95, 0.42, 0.12), smoothstep(0.45, 0.7, x)); return pow(mix(c, vec3(1.0, 0.9, 0.65), smoothstep(0.7, 1.0, x)), vec3(2.2)); }
 vec3 ironbow(float x){ x = clamp(x, 0.0, 1.0);
   vec3 c = mix(vec3(0.002,0.001,0.014), vec3(0.258,0.039,0.406), smoothstep(0.0,0.2,x));
   c = mix(c, vec3(0.578,0.148,0.404), smoothstep(0.2,0.4,x)); c = mix(c, vec3(0.865,0.317,0.226), smoothstep(0.4,0.6,x));
@@ -80,21 +83,22 @@ void main(){
     float nl = smoothstep(0.12, -0.15, ndl);
     float nlum = dot(night, vec3(0.3, 0.59, 0.11)); vec3 nb = mix(vec3(nlum), night, 0.55); nb = max(nb - 0.0015, 0.0) * smoothstep(0.0, 0.02, nlum);
     float grain = smoothstep(0.55, 0.9, vnoise(q * 700.0)) * 0.8 + smoothstep(0.62, 0.95, vnoise(q * 2600.0)) * 0.7;
-    vec3 amber = vec3(1.0, 0.5, 0.15);
+    int owner = int(floor(gr.b * 255.0 / 20.0 + 0.5)); vec3 amber = uPCol[clamp(owner, 0, 11)];
     vec3 ncol = nb * vec3(1.0, 0.84, 0.6) * 1.3 * (1.0 - grown * 0.5) + amber * grown * (0.006 + 0.13 * grain + nlum * 1.3);
     float cl = 0.0;
-    if (uClouds > 0.0) { vec3 cq = q * 9.0 + vec3(uTime * 0.006, 0.0, 0.0); float w = fbm(cq * 0.5); cl = smoothstep(0.6, 0.74, fbm(cq + w * 2.0) * (0.7 + 0.45 * pow(abs(sin(lat * 3.0)), 0.6))) * uClouds; }
+    if (uClouds > 0.0) { if (uHasCloud > 0.5) { vec2 cuv = uv + vec2(uTime * 0.0004, 0.0); cl = smoothstep(0.18, 0.75, texture(uCloud, cuv).r) * uClouds; } else { vec3 cq = q * 9.0 + vec3(uTime * 0.006, 0.0, 0.0); float w = fbm(cq * 0.5); cl = smoothstep(0.6, 0.74, fbm(cq + w * 2.0) * (0.7 + 0.45 * pow(abs(sin(lat * 3.0)), 0.6))) * uClouds; } }
     dcol = mix(dcol, vec3(0.88, 0.9, 0.93) * dl * uDayGain, cl * 0.75);
     ncol *= 1.0 - cl * 0.55;
     col = dcol + ncol * nl * uNightGain;
     if (uThermal > 0.0) {
       float cl2 = cos(lat);
       float heat = 0.015 + 0.07 * cl2 * cl2 + (1.0 - sea) * 0.07 + uHeat * 0.05 + grown * (0.3 + 0.4 * uHeat) * (0.55 + 0.45 * grain) + nlum * 0.9 * uHeat;
-      col = mix(col, ironbow(heat) * 1.1, uThermal);
+      col = mix(col, thermalPal(heat) * 1.3, uThermal);
     }
     col += uAtmo * uAtmoK * pow(1.0 - view, 3.0) * clamp(ndl * 1.5 + 0.35, 0.0, 1.0) * 0.6;
   } else if (uMode == 1) {                            // rocky worlds: Mercury, the Moon, an alien planet
     vec3 alb = toLin(texture(uDay, uv).rgb); float lum = dot(alb, vec3(0.3, 0.59, 0.11)); alb = mix(alb, vec3(lum), uDesat) * uTint;
+    if (uProc > 0.5) { float m = fbm(q * 4.0), rr = ridged(q * 11.0); alb = mix(vec3(0.16, 0.075, 0.04), vec3(0.42, 0.27, 0.16), smoothstep(0.3, 0.7, m)) * (0.75 + 0.5 * rr); alb *= 0.85 + 0.3 * smoothstep(0.55, 0.8, vnoise(q * 40.0)); }
     col = alb * smoothstep(-0.03, 0.2, ndl) * uDayGain + alb * 0.012;
     if (uLesR > 0.0) {
       float a = acos(clamp(dot(q, uLesC), -1.0, 1.0));
@@ -224,6 +228,7 @@ function create(canvas, W, H) {
   function setU(pr, name, v) {
     const l = pr.loc[name]; if (l == null) return;
     if (typeof v === "number") gl.uniform1f(l, v);
+    else if (/^uPC/.test(name)) gl.uniform3fv(l, v);
     else if (v.length === 2) gl.uniform2fv(l, v); else if (v.length === 3) gl.uniform3fv(l, v); else if (v.length === 4) gl.uniform4fv(l, v);
     else if (v.length === 9) gl.uniformMatrix3fv(l, false, v); else if (v.length === 16) gl.uniformMatrix4fv(l, false, v);
     else if (v.length % 4 === 0) gl.uniform4fv(l, v);
@@ -323,13 +328,15 @@ function create(canvas, W, H) {
       const pr = P.sphere; gl.useProgram(pr.p); gl.bindVertexArray(vaoEmpty);
       gl.enable(gl.BLEND); gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA); gl.enable(gl.DEPTH_TEST); gl.depthFunc(gl.LEQUAL); gl.depthMask(true);
       setU(pr, "uCamPos", cam.pos); setU(pr, "uCamR", cam.r); setU(pr, "uCamU", cam.u); setU(pr, "uCamF", cam.f); setU(pr, "uTanHalf", cam.tanHalf); setU(pr, "uAspect", cam.aspect); setU(pr, "uVP", cam.vp);
-      const d = { center: [0, 0, 0], radius: 1, rot: [1, 0, 0, 0, 1, 0, 0, 0, 1], sun: [1, 0, 0], mode: 0, dayGain: 1, nightGain: 1, opacity: 1, thermal: 0, heat: 0, ocean: 1, ir: 0, emissive: 1, time: 0, desat: 0, atmo: [0.3, 0.55, 1.0], atmoK: 0, lesC: [0, 1, 0], lesR: 0, lesK: 1, tint: [1, 1, 1], year: 2026, clouds: 0, hasGrow: 0, seaStart: 2100, seaEnd: 2191, ...o };
-      if (d.grow) d.hasGrow = 1;
-      for (const [k, v] of Object.entries(d)) if (!["mode", "day", "night", "grow"].includes(k)) setU(pr, "u" + k[0].toUpperCase() + k.slice(1), v);
+      const d = { pCol: null, cloud: null, center: [0, 0, 0], radius: 1, rot: [1, 0, 0, 0, 1, 0, 0, 0, 1], sun: [1, 0, 0], mode: 0, dayGain: 1, nightGain: 1, opacity: 1, thermal: 0, heat: 0, ocean: 1, ir: 0, emissive: 1, time: 0, desat: 0, atmo: [0.3, 0.55, 1.0], atmoK: 0, lesC: [0, 1, 0], lesR: 0, lesK: 1, tint: [1, 1, 1], year: 2026, clouds: 0, proc: 0, hasGrow: 0, seaStart: 2100, seaEnd: 2191, ...o };
+      if (d.grow) d.hasGrow = 1; d.hasCloud = d.cloud ? 1 : 0;
+      for (const [k, v] of Object.entries(d)) if (!["mode", "day", "night", "grow", "cloud", "pCol"].includes(k)) setU(pr, "u" + k[0].toUpperCase() + k.slice(1), v);
+      if (d.pCol && pr.loc.uPCol) gl.uniform3fv(pr.loc.uPCol, d.pCol);
       setI(pr, "uMode", d.mode);
       gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, d.day ? d.day.tex : null); setI(pr, "uDay", 0);
       gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, d.night ? d.night.tex : null); setI(pr, "uNight", 1);
       gl.activeTexture(gl.TEXTURE2); gl.bindTexture(gl.TEXTURE_2D, d.grow ? d.grow.tex : null); setI(pr, "uGrow", 2);
+      gl.activeTexture(gl.TEXTURE3); gl.bindTexture(gl.TEXTURE_2D, d.cloud ? d.cloud.tex : null); setI(pr, "uCloud", 3);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
     },
     // points: Float32Array of [x,y,z, r,g,b,a, size] * n
