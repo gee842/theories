@@ -243,7 +243,7 @@ vec2 vor(vec2 p){ vec2 i = floor(p), f = fract(p); float d1 = 9.0, d2 = 9.0; for
 float sdBox(vec3 p, vec3 b){ vec3 q = abs(p) - b; return length(max(q, 0.0)) + min(max(q.x, max(q.y, q.z)), 0.0); }
 float sdCap(vec3 p, vec3 a, vec3 b, float r){ vec3 pa = p - a, ba = b - a; float h = clamp(dot(pa, ba) / dot(ba, ba), 0.0, 1.0); return length(pa - ba * h) - r; }
 float smin(float a, float b, float k){ float h = clamp(0.5 + 0.5 * (b - a) / k, 0.0, 1.0); return mix(b, a, h) - k * h * (1.0 - h); }
-const vec3 DOME = vec3(-8.0, 0.0, -52.0); const float DOME_R = 30.0; const float HX = 260.0, HZ = 95.0;
+const vec3 DOME = vec3(-500.0, 0.0, -4200.0); const float DOME_R = 2500.0, DOME_H = 900.0; const float HX = 260.0, HZ = 95.0;   // the dome: a city under glass, five kilometres across
 vec3 SUN0 = vec3(-0.447, -0.03, -0.894);    // dusk: the sun just under the horizon, ahead and left
 vec3 SUN1 = vec3(0.42, 0.6, -0.68);         // noon over the basin: high, ahead and right, so the steam is lit from behind
 vec3 MOONL = vec3(0.33, 0.4, -0.855);       // the blazing Moon
@@ -254,10 +254,17 @@ vec3 ro;
 vec3 rocket(float u){ return vec3(900.0 - 1500.0 * u * u, 60000.0 * pow(u, 1.8), -7000.0 - 9000.0 * u * u); }
 
 /* ---------- geometry ---------- */
-float person(vec3 p, vec3 b, float s){
-  p = (p - b) / s; float d = sdCap(p, vec3(-0.1, 0.05, 0), vec3(-0.08, 0.86, 0), 0.075); d = min(d, sdCap(p, vec3(0.1, 0.05, 0), vec3(0.08, 0.86, 0), 0.075));
-  d = smin(d, sdCap(p, vec3(0, 0.95, 0), vec3(0.02, 1.4, -0.03), 0.165), 0.05); d = min(d, length(p - vec3(0.03, 1.62, -0.05)) - 0.105);
-  d = min(d, sdCap(p, vec3(-0.21, 1.38, 0), vec3(-0.26, 0.92, 0.03), 0.048)); d = min(d, sdCap(p, vec3(0.21, 1.38, 0), vec3(0.26, 0.92, 0.03), 0.048)); return d * s;
+// a person, about 1.75 m: legs apart, shoulders, a neck; the head tilts back by lookUp, the right arm rises toward the sky by armUp
+float person(vec3 p, vec3 b, float s, float lookUp, float armUp){
+  p = (p - b) / s; if (length(p - vec3(0.0, 1.0, 0.0)) > 1.4) return length(p - vec3(0.0, 1.0, 0.0)) * s - 1.2 * s;
+  float d = min(sdCap(p, vec3(-0.095, 0.04, 0), vec3(-0.08, 0.86, 0), 0.06), sdCap(p, vec3(0.095, 0.04, 0), vec3(0.08, 0.86, 0), 0.06));
+  d = smin(d, sdCap(p, vec3(0, 0.9, 0), vec3(0, 1.36, 0), 0.14), 0.07);
+  d = smin(d, sdCap(p, vec3(-0.18, 1.41, 0), vec3(0.18, 1.41, 0), 0.065), 0.06);
+  d = smin(d, sdCap(p, vec3(0, 1.42, 0), vec3(0, 1.5, 0.02 * lookUp), 0.045), 0.03);
+  d = min(d, length((p - vec3(0.0, 1.6, 0.05 * lookUp)) * vec3(1.0, 0.92, 1.0)) - 0.1);
+  d = min(d, sdCap(p, vec3(-0.2, 1.39, 0), vec3(-0.25, 0.95, 0.03), 0.042));
+  d = min(d, sdCap(p, vec3(0.2, 1.39, 0), mix(vec3(0.25, 0.95, 0.03), vec3(0.42, 1.95, -0.32), armUp), 0.042));
+  return d * s;
 }
 // hyperscale halls: 210 m long, 48 m deep, 14–20 m tall, a double row of chillers on the roof; the road runs between two columns
 float halls(vec3 p, out float id, out vec3 q){
@@ -271,30 +278,24 @@ float halls(vec3 p, out float id, out vec3 q){
   float ch = max(sdBox(r - vec3(0.0, 2.0 * hgt + 1.2, 0.0), vec3(3.3, 1.2, 4.2)), abs(q.x) - 99.0);
   d = min(d, ch);
   if (id > 0.55) d = min(d, sdCap(q, vec3(-112.0, 0.0, 30.0), vec3(-112.0, 52.0, 30.0), 2.6));   // turbine stacks between the halls
-  if (MD != 0) d = max(d, -(p.z + 1500.0 + 900.0 * h21(vec2(cell.x, 3.0))));   // the basin halls start far off, ragged
+  if (MD != 0) { d = max(d, -(p.z + 1500.0 + 900.0 * h21(vec2(cell.x, 3.0)))); d = max(d, DOME_R + 1500.0 - length(p.xz - DOME.xz)); }   // the basin halls start far off, ragged, and keep clear of the dome
   return max(d, p.z - z0);
 }
-// the garden: eleven trees, their canopies precomputed as spheres (film.js, TREES); a bounding sphere per tree lets most of them be skipped
-uniform vec4 uTS[55], uTA[11], uTT[11], uTB[11];
-float garden(vec3 p){
-  vec3 q = p - DOME; float bound = length(q) - DOME_R; if (bound > 1.0 || off(512)) return max(bound, 0.5);
-  float d = 1e3;
-  for (int k = 0; k < 11 + iZero; k++) { float db = length(q - uTB[k].xyz) - uTB[k].w; if (db > 1.0) { d = min(d, db); continue; }
-    float fl = uTA[k].w; float dt = sdCap(q, uTA[k].xyz, uTT[k].xyz, fl > 2.0 ? 0.2 : 0.17);
-    for (int j = 0; j < 5 + iZero; j++) { vec4 sp = uTS[k * 5 + j]; vec3 dq = q - sp.xyz; dq.y *= fl; dt = smin(dt, (length(dq) - sp.w) / fl, 0.9); }   // crowns flattened: umbrella pines
-    d = min(d, dt); }
-  if (d < 1.2) d += ((n3(q * 1.6) - 0.5) * 0.8 + (n3(q * 5.0) - 0.5) * 0.35) * smoothstep(1.8, 3.0, q.y);   // leaves on the crowns, smooth trunks
-  float sb = smoothstep(0.62, 0.3, n2(q.xz * 0.3)); d = min(d, max(max(q.y - 1.0 * sb + 0.25, 0.6 - 2.0 * sb), length(q.xz) - (DOME_R - 2.0)));   // shrubs, only where they grow
-  // people under the glass
-  if (MD == 1) for (int k = 0; k < 5 + iZero; k++) { float fk = float(k); vec3 b = vec3(-11.0 + fk * 4.3, 0.0, 22.0 - abs(fk - 2.0) * 1.6); float pb = length(q - b - vec3(0.0, 0.9, 0.0)) - 1.1;
-    d = min(d, pb > 0.5 ? pb : person(q, b, 1.0 - 0.04 * fk)); }
-  return d;
+// the city under the glass: blocks on a 90 m grid, towers toward the middle, parks and a lake between; a height field
+float cityH(vec2 xz, out float id, out vec2 lc, out vec2 hs){
+  vec2 q = xz - DOME.xz; float rr = length(q) / DOME_R; vec2 cell = floor(q / 90.0); lc = q - (cell + 0.5) * 90.0; id = h21(cell + 0.71);
+  hs = vec2(24.0 + 14.0 * h21(cell + 2.0), 24.0 + 14.0 * h21(cell + 5.0));
+  if (rr > 0.92) return 0.0;
+  if (length(q - vec2(650.0, 350.0)) < 480.0 + 160.0 * n2(q * 0.003)) return 0.0;   // the lake
+  if (n2(cell * 0.11 + 5.0) > 0.62 || abs(lc.x) > hs.x || abs(lc.y) > hs.y) { float tree = n2(xz * 0.06) * 0.6 + n2(xz * 0.17) * 0.4; id = -1.0; return tree > 0.45 ? 9.0 + 14.0 * (tree - 0.45) : 0.0; }   // parks and street trees: canopy
+  float core = 1.0 - smoothstep(0.0, 0.7, rr);
+  float h = 22.0 + 46.0 * id * id + core * core * 380.0 * pow(h21(cell + 3.3), 3.0);
+  return min(h, DOME_H * sqrt(max(1.0 - rr * rr, 0.0)) - 60.0);
 }
-float figures(vec3 p){ if (MD != 2) return 1e3; vec3 c = vec3(5.0, 0.0, 16.0); float b = length(p - c) - 4.0; if (b > 1.0) return b; return min(person(p, vec3(4.2, 0.0, 16.3), 1.0), person(p, vec3(5.4, 0.0, 15.6), 0.93)); }
+float figures(vec3 p){ if (MD != 2) return 1e3; vec3 c = vec3(5.0, 0.0, 16.0); float b = length(p - c) - 4.0; if (b > 1.0) return b; return min(person(p, vec3(4.2, 0.0, 16.3), 1.0, 1.0, 0.0), person(p, vec3(5.4, 0.0, 15.6), 0.93, 0.7, 1.0)); }   // looking up; one points at the Moon
 float scene(vec3 p, out float mat, out float id, out vec3 q){
   float d = 1e4; mat = -1.0; id = 0.0; q = vec3(0.0);
   float hid; vec3 hq; float dh = halls(p, hid, hq); if (dh < d) { d = dh; mat = 1.0; id = hid; q = hq; }
-  if (MD != 0) { float dg = garden(p); if (dg < d) { d = dg; mat = 2.0; } }
   float df = figures(p); if (df < d) { d = df; mat = 3.0; }
   if (MD == 0) { float fx = abs(p.x); vec3 fp = vec3(mod(p.x, 3.2) - 1.6, p.y, p.z + 70.0); float dp = max(sdCap(fp, vec3(0.0), vec3(0.0, 3.0, 0.0), 0.04), 18.0 - fx); if (dp < d) { d = dp; mat = 5.0; } }
   return d;
@@ -303,7 +304,7 @@ float sceneD(vec3 p){ float m, i; vec3 q; return scene(p, m, i, q); }
 float shadow(vec3 p, vec3 rd, float tmax){ float res = 1.0, t = 0.1; for (int i = 0; i < 40 + iZero; i++) { float h = sceneD(p + rd * t); res = min(res, 8.0 * h / t); t += clamp(h, 0.1, 8.0); if (res < 0.01 || t > tmax) break; } return clamp(res, 0.0, 1.0); }
 float occlusion(vec3 p, vec3 n){ float o = 0.0, w = 1.0; for (int i = 1; i <= 4; i++) { float h = 0.5 * float(i); o += (h - min(sceneD(p + n * h), p.y + n.y * h)) * w; w *= 0.6; } return clamp(1.0 - 0.9 * o, 0.0, 1.0); }
 // the old coastline: the basin floor is two kilometres below the old sea level, and the continental slope stands over it like a wall
-float hallH(vec2 xz){ if (xz.y > -1500.0) return 0.0; vec2 cell = vec2(floor(xz.x / HX), floor(xz.y / HZ)); vec2 q = vec2(mod(xz.x, HX) - HX * 0.5, mod(xz.y, HZ) - HZ * 0.5);
+float hallH(vec2 xz){ if (xz.y > -1500.0 || length(xz - DOME.xz) < DOME_R + 1500.0) return 0.0; vec2 cell = vec2(floor(xz.x / HX), floor(xz.y / HZ)); vec2 q = vec2(mod(xz.x, HX) - HX * 0.5, mod(xz.y, HZ) - HZ * 0.5);
   if (xz.y > -1500.0 - 900.0 * h21(vec2(cell.x, 3.0))) return 0.0; float id = h21(cell + 0.37); return (abs(q.x) < 105.0 && abs(q.y) < 24.0) ? (9.0 + 5.0 * id) * 4.8 + 2.4 : 0.0; }
 float escH(vec2 xz){ if (xz.y > -5200.0) return 0.0; float s = -(xz.y + 10500.0 + 0.32 * xz.x); return 1500.0 * smoothstep(-2200.0, 2600.0, s + (fb(xz * 0.00045) - 0.5) * 3800.0) * (0.7 + 0.5 * fb(xz * 0.0011 + 4.0)) - 120.0 * pow(fb(xz * 0.004), 2.0); }
 
@@ -395,13 +396,27 @@ void main(){
   int steps = 0;
   for (int i = 0; i < 200 + iZero; i++) { vec3 p = ro + rd * t; float m, idd; vec3 qq; float d = scene(p, m, idd, qq); steps = i;
     if (d < 0.0012 * t + 0.006) { hit = true; mat = m; id = idd; lq = qq; break; }
-    t += max(d * 0.8, t * 0.0015); if (t > tmax || (p.y > 30.0 && rd.y >= 0.0 && length(p - DOME) > DOME_R + 2.0)) break; }
-  if (!hit && tg < 9000.0) { hit = true; t = tg; mat = 0.0; }
-  // the escarpment, a height field far off
-  if (!off(32) && MD != 0 && rd.y < 0.16 && !hit) { float tt = 1300.0, prevD = ro.y + rd.y * tt, prevT = tt;
-    for (int i = 0; i < 150 + iZero; i++) { vec3 p = ro + rd * tt; float hh = hallH(p.xz); float dd = p.y - max(hh, escH(p.xz));
+    t += max(d * 0.8, t * 0.0015); if (t > tmax || (p.y > 30.0 && rd.y >= 0.0)) break; }
+  // the dome's span along this ray (an ellipsoid of glass)
+  float d0 = 1e9, d1 = -1e9; vec3 cityN = vec3(0.0, 1.0, 0.0); vec2 cityLc = vec2(0.0);
+  if (MD != 0) { vec3 sc = vec3(1.0, DOME_R / DOME_H, 1.0); vec3 oc = (ro - DOME) * sc, dr = rd * sc; float a = dot(dr, dr), b = dot(oc, dr), c = dot(oc, oc) - DOME_R * DOME_R, h = b * b - a * c;
+    if (h > 0.0) { d0 = (-b - sqrt(h)) / a; d1 = (-b + sqrt(h)) / a; if (d1 < 0.0) { d0 = 1e9; d1 = -1e9; } } }
+  float tGround = MD == 0 ? 9000.0 : 60000.0;
+  if (!hit && MD == 0 && tg < 9000.0) { hit = true; t = tg; mat = 0.0; }
+  if (!hit && MD != 0 && tg < 1300.0) { hit = true; t = tg; mat = 0.0; }
+  // the far field: halls and the old coastline, as one height field
+  if (!off(32) && MD != 0 && rd.y < 0.16 && !hit) { float tt = 1300.0, prevD = ro.y + rd.y * tt, prevT = tt, tEnd = min(tg, 60000.0);
+    for (int i = 0; i < 260 + iZero; i++) { vec3 p = ro + rd * tt; float hh = hallH(p.xz); float dd = p.y - max(hh, escH(p.xz));
       if (dd < 0.0) { float f = prevD / (prevD - dd + 1e-6); t = mix(prevT, tt, f); hit = true; mat = hh > 0.0 && p.y < hh + 1.0 ? 1.0 : 4.0; if (mat < 1.5) { vec3 ph = ro + rd * t; lq = vec3(mod(ph.x, HX) - HX * 0.5, ph.y, mod(ph.z, HZ) - HZ * 0.5); id = h21(vec2(floor(ph.x / HX), floor(ph.z / HZ)) + 0.37); } break; }
-      if (p.y > 1600.0 && rd.y > 0.0) break; prevD = dd; prevT = tt; tt += tt < 5500.0 ? max(9.0, tt * 0.0075) : max(60.0, tt * 0.035); if (tt > 60000.0) break; } }
+      if (p.y > 1600.0 && rd.y > 0.0) break; prevD = dd; prevT = tt; tt += tt < 5500.0 ? max(9.0, tt * 0.0075) : max(60.0, tt * 0.035); if (tt > tEnd) break; } }
+  // inside the dome: the city
+  if (MD != 0 && d1 > 0.0 && (!hit || t > d0)) { float ta = max(d0, 0.0), tb = min(d1, hit ? t : tg); float tt = ta, prevT = ta; bool above = true;
+    for (int i = 0; i < 170 + iZero; i++) { if (tt > tb) break; vec3 p = ro + rd * tt; float cid; vec2 clc, chs; float hh = cityH(p.xz, cid, clc, chs);
+      if (p.y < hh) { float lo = prevT, hi = tt; for (int k = 0; k < 5; k++) { float m = 0.5 * (lo + hi); vec3 pm = ro + rd * m; float i2; vec2 l2, h2; if (pm.y < cityH(pm.xz, i2, l2, h2)) hi = m; else lo = m; }
+        t = hi; hit = true; mat = 6.0; id = cid; vec3 ph = ro + rd * t; float i3; vec2 l3, h3; float h3h = cityH(ph.xz, i3, l3, h3); cityLc = l3; lq = vec3(l3.x, ph.y, l3.y);
+        vec3 pp = ro + rd * lo; float i4; vec2 l4, h4; cityN = (pp.y > cityH(pp.xz, i4, l4, h4) - 0.5 && ph.y > h3h - 2.0) ? vec3(0.0, 1.0, 0.0) : (abs(l3.x) / h3.x > abs(l3.y) / h3.y ? vec3(sign(l3.x), 0.0, 0.0) : vec3(0.0, 0.0, sign(l3.y))); break; }
+      if (p.y > 420.0 && rd.y >= 0.0) break; prevT = tt; tt += 20.0 + tt * 0.002; } }
+  if (!hit && tg < tGround) { hit = true; t = tg; mat = 0.0; }
 
   vec3 L = MD == 0 ? SUN0 : MD == 1 ? SUN1 : MOONL;
   vec3 col;
@@ -418,7 +433,10 @@ void main(){
         float ax = abs(p.x - uCamX * 0.0);
         if (ax < 4.2) { alb = vec3(0.035, 0.034, 0.033) * (0.8 + 0.4 * n2(p.xz * 3.0)); specK = 0.4;
           alb += vec3(0.5, 0.38, 0.1) * smoothstep(0.1, 0.06, ax) * step(fract(p.z / 12.0), 0.5) + vec3(0.45) * smoothstep(0.1, 0.05, abs(ax - 3.8)); }
-      } else if (inDome) { alb = mix(vec3(0.1, 0.11, 0.06), vec3(0.06, 0.1, 0.035), fb(p.xz * 0.5)) * (0.7 + 0.5 * n2(p.xz * 3.0));
+      } else if (inDome) { vec2 q = p.xz - DOME.xz; vec2 cell = floor(q / 90.0);
+        bool lake = length(q - vec2(650.0, 350.0)) < 480.0 + 160.0 * n2(q * 0.003), park = n2(cell * 0.11 + 5.0) > 0.62;
+        alb = park ? mix(vec3(0.06, 0.1, 0.04), vec3(0.03, 0.06, 0.025), smoothstep(0.4, 0.7, n2(p.xz * 0.08))) : vec3(0.22, 0.21, 0.2);
+        if (lake) { alb = vec3(0.02, 0.035, 0.04); specK = 0.9; n = vec3(0.0, 1.0, 0.0); }
       } else {
         // salt crust: polygon plates with raised rims, a crust that reads at every distance
         vec2 wp = p.xz + vec2(fb(p.xz * 0.15), fb(p.xz * 0.15 + 5.0)) * 2.5;   // warp, so the polygons are not tiles
@@ -449,21 +467,22 @@ void main(){
         float stackTop = smoothstep(max(1.4, t * 0.002), 0.0, length(vec3(lq.x + 112.0, p.y - 52.0, lq.z - 30.0))) * step(0.55, id);
         emit += vec3(1.0, 0.05, 0.02) * (corner + stackTop) * pulse * 30.0;
       } else if (MD >= 2) { emit += vec3(1.0, 0.6, 0.3) * 0.6 * step(0.985, h21(floor(vec2(lq.x / 6.0, p.y / 3.0)) + id)) * step(0.5, abs(n.z)) * (MD == 3 ? 0.5 : 1.0); }
-    } else if (mat < 2.5) {
-      vec3 lp = p - DOME; float clumps = n3(lp * 3.2) * 0.6 + n3(lp * 7.5) * 0.4;
-      bool crown = lp.y > 2.6 || length(n.xz) < 0.85; float pineH = smoothstep(5.5, 7.0, lp.y);
-      vec3 leaf = mix(vec3(0.075, 0.09, 0.06), vec3(0.035, 0.065, 0.03), pineH) * (0.45 + 1.1 * smoothstep(0.3, 0.75, clumps)) * (0.75 + 0.35 * n.y);
-      alb = crown ? leaf : vec3(0.1, 0.08, 0.065) * (0.7 + 0.5 * n3(lp * vec3(8.0, 1.0, 8.0)));
-      if (p.y < 2.0 && length(p.xz - DOME.xz) > 14.0 && MD == 1) alb = mix(alb, vec3(0.05, 0.045, 0.045), step(0.5, abs(n.x) + abs(n.z)) * 0.0);
-      emit += vec3(1.0, 0.72, 0.42) * 0.015 * uDomeLight;
-    } else if (mat < 3.5) { alb = vec3(0.03, 0.028, 0.027);
+    } else if (mat > 5.5) {
+      // the city: glass and pale stone, lit windows in the dim years, gardens on the roofs
+      n = cityN; float u = abs(n.x) > 0.5 ? lq.z : lq.x; float glassy = step(0.45, id);
+      if (id < -0.5) { alb = mix(vec3(0.05, 0.09, 0.035), vec3(0.08, 0.12, 0.05), n2(p.xz * 0.3)) * (0.6 + 0.6 * n2(p.xz * 1.1)); n = vec3(0.0, 1.0, 0.0); } else
+      if (n.y > 0.5) { alb = id > 0.6 ? vec3(0.07, 0.11, 0.05) : vec3(0.3, 0.29, 0.28); }
+      else { float win = step(0.25, fract(p.y / 3.6)) * step(0.3, fract(u / 3.2)); alb = mix(vec3(0.5, 0.48, 0.45), vec3(0.1, 0.12, 0.14), glassy) * (1.0 - 0.35 * win); specK = glassy * 0.5;
+        float lit = step(0.6 - 0.25 * float(MD >= 2), h21(floor(vec2(u / 3.2, p.y / 3.6)) + id * 13.0)) * win;
+        emit += vec3(1.0, 0.75, 0.48) * lit * (MD == 1 ? 0.04 : MD == 2 ? 0.35 : 0.5) * uDomeLight; }
+    } else if (mat < 3.5) { alb = mix(vec3(0.07, 0.066, 0.062), vec3(0.12, 0.1, 0.085), step(5.0, p.x));   // two coats
     } else if (mat < 4.5) { alb = mix(vec3(0.5, 0.44, 0.36), vec3(0.62, 0.56, 0.47), fb(p.xz * 0.002)) * (0.8 + 0.3 * smoothstep(0.6, 1.0, n.y)); } else { alb = vec3(0.08); }
     // light
     vec3 lightC = MD == 0 ? vec3(0.0) : MD == 1 ? vec3(1.0, 0.94, 0.82) : MD == 2 ? vec3(0.62, 0.68, 0.82) : vec3(0.0);
     float dif = max(dot(n, L), 0.0);
-    float sh = 1.0; bool caster = MD == 2 && length(p.xz - vec2(5.0, 16.0)) < 14.0; bool nearDome = length(p.xz - DOME.xz) < DOME_R + 4.0;
+    float sh = 1.0; bool caster = MD == 2 && length(p.xz - vec2(5.0, 16.0)) < 14.0;
     if (!off(128) && (MD == 1 || MD == 2) && dif > 0.0 && caster && mat < 3.5) sh = shadow(p + n * 0.05, L, 60.0);
-    float ao = (t < 250.0 && mat < 3.5 && (MD == 0 || caster || nearDome)) ? occlusion(p, n) : 1.0;
+    float ao = (t < 250.0 && mat < 3.5 && (MD == 0 || caster)) ? occlusion(p, n) : 1.0;
     vec3 amb;
     if (MD == 0) { vec2 hs = normalize(SUN0.xz); float face = max(dot(normalize(n.xz + 1e-4), hs), 0.0) * (1.0 - abs(n.y));
       amb = vec3(0.03, 0.036, 0.06) * (0.6 + 0.4 * n.y) + vec3(0.5, 0.2, 0.07) * 0.14 * face; }
@@ -472,14 +491,16 @@ void main(){
     else amb = vec3(0.012, 0.013, 0.017) * (0.6 + 0.4 * n.y) * (0.3 + 0.7 * uStars);
     col = alb * (lightC * dif * sh + amb * ao) + emit;
     if (MD == 2) { float d2 = max(dot(n, RSUN), 0.0); float s2 = (d2 > 0.0 && caster && mat < 3.5) ? shadow(p + n * 0.05, RSUN, 60.0) : 1.0; col += alb * vec3(0.55, 0.1, 0.03) * 0.55 * d2 * s2; }
+    if (mat > 2.5 && mat < 3.5 && MD == 2) { float rim = pow(1.0 - max(dot(n, -rd), 0.0), 3.0); col += (lightC * max(dot(n, L) + 0.35, 0.0) + vec3(0.55, 0.1, 0.03) * 0.5 * max(dot(n, RSUN) + 0.35, 0.0)) * rim * 0.35; }
     if (specK > 0.0 && (MD == 1 || MD == 2)) col += lightC * specK * pow(max(dot(reflect(rd, n), L), 0.0), 60.0) * sh;
-    if (mat > 1.5 && mat < 2.5) { col += alb * vec3(1.0, 0.75, 0.45) * 0.5 * uDomeLight * ao; if (MD == 1) col += vec3(0.25, 0.4, 0.08) * 0.35 * pow(max(dot(rd, L), 0.0), 3.0) * sh; }
+    if (inDome || mat > 5.5) col += alb * vec3(1.0, 0.8, 0.55) * (MD == 1 ? 0.05 : 0.12) * uDomeLight;   // the city's own light under the glass
+    if (specK > 0.5 && inDome) col = mix(col, sky(reflect(rd, n)) * 0.7, 0.6);   // the lake
     // street lights down the road into the campus: pools of sodium on the asphalt and the scrub
     if (MD == 0 && mat < 0.5) { float z0 = floor((p.z - 20.0) / 36.0) * 36.0 + 20.0;
       for (int k = 0; k < 2; k++) { float zl = z0 + float(k) * 36.0; vec3 lp = vec3(7.0, 9.0, zl); float dd = length(p - lp); col += alb * vec3(1.0, 0.55, 0.2) * 22.0 / (dd * dd + 4.0) * (0.4 + 0.6 * max(dot(n, normalize(lp - p)), 0.0)); }
       }
     // the mirage: far across the salt, the ground gives back the sky, like water that isn't there
-    if (MD == 1 && mat < 0.5 && !inDome) { float m = smoothstep(500.0, 2600.0, t); vec3 rr = reflect(rd, vec3(0.0, 1.0, 0.0)); rr.y += (n2(vec2(rd.x * 400.0, uTime * 6.0)) - 0.5) * 0.002; col = mix(col, sky(normalize(rr)) * 0.92, m * 0.8); }
+    if (MD == 1 && mat < 0.5 && !inDome) { float m = smoothstep(500.0, 2600.0, t) * smoothstep(0.03, 0.005, abs(rd.y)); vec3 rr = reflect(rd, vec3(0.0, 1.0, 0.0)); rr.y += (n2(vec2(rd.x * 400.0, uTime * 6.0)) - 0.5) * 0.002; col = mix(col, sky(normalize(rr)) * 0.92, m * 0.8); }
     float fk = fogK(); if (MD == 1 && mat > 3.5) fk *= 0.75;
     float fog = 1.0 - exp(-t * fk); col = mix(col, fogCol(rd), fog);
   } else col = off(2) ? vec3(0.1) : sky(rd);
@@ -487,7 +508,8 @@ void main(){
   // steam: columns rising from the far halls into the deck (the basin), faint and cold later
   if (MD == 1 && !off(16)) {
     float tmx = hit ? t : 30000.0; vec3 acc = vec3(0.0); float tr = 1.0;
-    for (int k = 0; k < 5 + iZero; k++) { float fk = float(k); vec3 c0 = vec3(-1500.0 + fk * 1100.0 + 300.0 * sin(fk * 3.0), 0.0, -2300.0 - 900.0 * h21(vec2(fk, 1.0)) - fk * 380.0); float rad = 150.0 + 70.0 * h21(vec2(fk, 2.0));
+    for (int k = 0; k < 5 + iZero; k++) { float fk = float(k); vec3 c0 = k == 0 ? vec3(2700.0, 0.0, -4300.0) : k == 1 ? vec3(3900.0, 0.0, -7400.0) : k == 2 ? vec3(1200.0, 0.0, -10500.0) : k == 3 ? vec3(-3400.0, 0.0, -7800.0) : vec3(-5200.0, 0.0, -4000.0);
+      float rad = 170.0 + 90.0 * h21(vec2(fk, 2.0));
       if (MD == 2 && k > 1) break;
       vec2 oc = ro.xz - c0.xz; float R3 = rad * 4.0; float b = dot(oc, rd.xz), cc = dot(oc, oc) - R3 * R3, a2 = max(dot(rd.xz, rd.xz), 1e-5); float disc = b * b - a2 * cc; if (disc < 0.0) continue;
       float t0 = max((-b - sqrt(disc)) / a2, 0.0), t1 = min((-b + sqrt(disc)) / a2, tmx); if (t1 <= t0) continue;
@@ -504,16 +526,23 @@ void main(){
         acc += tr * a * sc; tr *= 1.0 - a; if (tr < 0.02) break; } }
     col = col * tr + acc;
   }
-  // the dome: a geodesic frame, glass that gives back the sky
-  if (MD != 0 && !off(64)) { vec3 oc = ro - DOME; float b = dot(oc, rd), c = dot(oc, oc) - DOME_R * DOME_R, h = b * b - c;
-    if (h > 0.0) { float tgl = -b - sqrt(h); vec3 p = ro + rd * tgl; if (tgl > 0.0 && p.y > 0.0 && (!hit || tgl < t)) { vec3 n = normalize(p - DOME); float fr = 0.04 + 0.96 * pow(1.0 - max(dot(-rd, n), 0.0), 5.0); vec3 refl = sky(reflect(rd, n));
-      vec2 sp = vec2(atan(n.z, n.x) * 7.0, asin(n.y) * 8.0); vec2 tri = vec2(sp.x + sp.y * 0.5, sp.y * 0.866); vec2 f1 = abs(fract(tri) - 0.5); float f2 = abs(fract(tri.x - tri.y) - 0.5);
-      float w = 0.485 - 0.02 * smoothstep(60.0, 300.0, tgl); float frame = max(max(smoothstep(w, 0.5, f1.x), smoothstep(w, 0.5, f1.y)), smoothstep(w, 0.5, f2)) * smoothstep(0.0, 0.04, n.y);
-      float spec = pow(max(dot(reflect(rd, n), L), 0.0), 400.0) * (MD == 1 ? 14.0 : MD == 2 ? 8.0 : 0.0);
-      vec3 fcol = MD == 1 ? vec3(0.85, 0.85, 0.83) * (0.35 + 0.65 * max(dot(n, L), 0.0)) : MD == 2 ? vec3(0.2, 0.22, 0.27) * (0.3 + 0.7 * max(dot(n, L), 0.0)) : vec3(0.01);
-      col = mix(col * vec3(0.8, 0.86, 0.85), refl, fr * 0.9);
-      col = mix(col, fcol, frame) + vec3(1.0, 0.98, 0.95) * spec * (1.0 - frame);
-      col = mix(col, fogCol(rd), 1.0 - exp(-tgl * fogK())); } } }
+  // the dome: glass that gives back the sky, a lattice too fine to see except as a sheen, the sun's glint; the city's light in the air inside
+  if (MD != 0 && !off(64) && d1 > 0.0 && d0 > 0.0 && (!hit || d0 < t)) {
+    vec3 p = ro + rd * d0; vec3 e = (p - DOME) / vec3(DOME_R, DOME_H, DOME_R); vec3 n = normalize(e * vec3(1.0, DOME_R / DOME_H, 1.0));
+    if (p.y > 0.0) {
+      float cosv = max(dot(-rd, n), 0.0); float fr = 0.04 + 0.96 * pow(1.0 - cosv, 5.0); vec3 refl = sky(reflect(rd, n));
+      vec3 nd = normalize(e); vec2 sp = vec2(atan(nd.z, nd.x), asin(clamp(nd.y, 0.0, 1.0))) * 22.0; vec2 tri = vec2(sp.x + sp.y * 0.5, sp.y * 0.866);
+      vec3 dl = 0.5 - vec3(abs(fract(tri.x) - 0.5), abs(fract(tri.y) - 0.5), abs(fract(tri.x - tri.y) - 0.5));       // distance to each family of struts, in cells
+      float fw = (2.0 * tf / (uRes.y * 0.5)) * d0 / (DOME_R / 22.0) / max(cosv, 0.15); float lw = 0.02;
+      vec3 cov = clamp(0.5 + (lw - dl) / max(fw, 1e-4), 0.0, 1.0) * min(1.0, 2.0 * lw / max(fw, 1e-4));
+      float frame = max(cov.x, max(cov.y, cov.z)) * smoothstep(0.0, 0.03, nd.y);
+      float spec = pow(max(dot(reflect(rd, n), L), 0.0), 600.0) * (MD == 1 ? 18.0 : MD == 2 ? 10.0 : 0.0);
+      vec3 fcol = MD == 1 ? vec3(0.8, 0.8, 0.78) * (0.4 + 0.6 * max(dot(n, L), 0.0)) : MD == 2 ? vec3(0.22, 0.24, 0.3) * (0.3 + 0.7 * max(dot(n, L), 0.0)) : vec3(0.015, 0.012, 0.01);
+      float inside = min(hit ? t : d1, d1) - d0;
+      col += vec3(1.0, 0.72, 0.45) * (MD == 1 ? 0.0 : MD == 2 ? 0.00002 : 0.00004) * inside * uDomeLight;   // warm air over the city
+      col = mix(col * (MD == 1 ? vec3(0.62, 0.68, 0.68) : vec3(0.82, 0.86, 0.86)), refl, fr * (MD == 1 ? 0.55 : 0.85));   // tinted glass: the city reads through it
+      col = mix(col, fcol, frame * 0.8) + vec3(1.0, 0.98, 0.95) * spec;
+      col = mix(col, fogCol(rd), 1.0 - exp(-d0 * fogK())); } }
   // the launch: a flame climbing from beyond the campus; high up the plume reaches the sunlight and opens like a jellyfish (samples from film.js, PLUME_S)
   if (MD == 0 && uLaunch > 0.0 && !off(8)) {
     vec3 w = uRk - ro; float dist = length(w); float tc = dot(w, rd); float tHit = hit ? t : 1e9;
@@ -546,19 +575,8 @@ function ground(mode, t, cam) {
   if (!NOISE) { const nt = E.noiseTextures(); NOISE = { uN2: nt.n2, uN3: nt.n3 }; }
   if (!GROUND) GROUND = [0, 1, 2, 3].map(m => E.program(GROUND_FS.replace("precision highp float;", `precision highp float;\n#define MD ${m}\n`)));
   // each mood renders at the size its cost allows at 60 fps on a laptop GPU; the grain and bloom are added at full size
-  E.fullscreenAt(cam.scale ?? [0.85, 0.42, 0.6, 0.75][mode], GROUND[mode], { uMode: mode, uTime: cam.time ?? t, uH: cam.h, uCamX: cam.x || 0, uPitch: cam.pitch, uYaw: cam.yaw || 0, uLaunch: cam.launch || 0, uStars: cam.stars ?? 1, uFade: cam.fade ?? 1, uHaze: cam.haze || 0, uDomeLight: cam.domeLight ?? 1, uFov: (cam.fov || 50) * D2R, uDbg: cam.dbg || 0, iZero: 0, ...TREES, ...plumeTable(cam.launch || 0), uRk: rocketAt(cam.launch || 0) }, NOISE);
+  E.fullscreenAt(cam.scale ?? [0.85, 0.5, 0.55, 0.66][mode], GROUND[mode], { uMode: mode, uTime: cam.time ?? t, uH: cam.h, uCamX: cam.x || 0, uPitch: cam.pitch, uYaw: cam.yaw || 0, uLaunch: cam.launch || 0, uStars: cam.stars ?? 1, uFade: cam.fade ?? 1, uHaze: cam.haze || 0, uDomeLight: cam.domeLight ?? 1, uFov: (cam.fov || 50) * D2R, uDbg: cam.dbg || 0, iZero: 0, ...plumeTable(cam.launch || 0), uRk: rocketAt(cam.launch || 0) }, NOISE);
 }
-const TREES = (() => {   // the garden in dome-local metres: stone pines (flat crowns on bare trunks) and olives (low, round); trunk base (w: flattening), trunk top, five crown spheres, a bound
-  const fr = x => x - Math.floor(x), TS = [], TA = [], TT = [], TB = [];
-  for (let k = 0; k < 11; k++) { const seed = k + 1, pine = k % 2 === 0, bx = Math.sin(k * 2.4 + 0.5) * (4 + k * 1.8), bz = Math.cos(k * 2.4 + 0.5) * (4 + k * 1.6) - 4;
-    const hgt = pine ? 8.5 + 3 * fr(seed * 7.3) : 3.6 + 1.4 * fr(seed * 7.3), cr = pine ? 2.4 + 0.8 * fr(seed * 3.7) : 1.5 + 0.5 * fr(seed * 3.7), flat = pine ? 2.3 : 1.15;
-    TA.push(bx, 0, bz, flat); const top = [bx + (pine ? 0.6 : 0.2) * Math.sin(seed * 9), hgt * (pine ? 0.93 : 0.55), bz + (pine ? 0.5 : 0.2) * Math.cos(seed * 4)]; TT.push(...top, 0);
-    const sp = []; for (let j = 0; j < 5; j++) { const a = seed * 3 + j * 1.26, rr = j === 0 ? 0 : cr * (pine ? 1.0 : 0.6);
-      const c = [top[0] + Math.cos(a) * rr, hgt + (pine ? (j === 0 ? 0.3 : -0.1) : (j * 0.25 - 0.3)), top[2] + Math.sin(a) * rr], r = cr * (j === 0 ? 1.1 : 0.85); sp.push([c, r]); TS.push(c[0], c[1], c[2], r); }
-    const pts = [[bx, 0, bz, 0.3], ...sp.map(([c, r]) => [c[0], c[1], c[2], r])], cen = [0, 1, 2].map(i => pts.reduce((a, q) => a + q[i], 0) / pts.length);
-    const rad = Math.max(...pts.map(q => Math.hypot(q[0] - cen[0], q[1] - cen[1], q[2] - cen[2]) + q[3])) + 2.0; TB.push(cen[0], cen[1], cen[2], rad); }
-  return { uTS: TS, uTA: TA, uTT: TT, uTB: TB };
-})();
 function plumeTable(launch) {   // 40 samples along the climb: centre and width, light colour and density
   const Pl = new Float32Array(160), Pc = new Float32Array(160); if (launch <= 0) return { uPl: Pl, uPc: Pc };
   const shadowAlt = 15500, rk = rocketAt(launch);
@@ -583,7 +601,7 @@ function sCampus(t) {   // 0:33–0:41: down to the campus at dusk; a launch ris
 function sDome(t) {   // 1:12–1:24: down into the dried basin; the dome; then up into the white sky
   const d = ease(ss(72, 75, t));
   const tilt = ease(ss(82.4, 84.4, t));
-  ground(1, t, { h: lerp(700, 1.7, d), x: lerp(-8, 10, d), pitch: lerp(lerp(-1.3, 0.07, d), 1.2, tilt), yaw: lerp(-0.1, 0.02, d) + lerp(0, 0.05, ss(75, 82.4, t)), haze: (1 - ss(72, 73.3, t)) * 0.95 + ss(83.6, 84.5, t), fov: lerp(lerp(55, 40, d), 50, tilt), domeLight: 1 });
+  ground(1, t, { h: lerp(900, 1.7, d), x: lerp(-200, 10, d), pitch: lerp(lerp(-0.75, 0.06, d), 1.2, tilt), yaw: lerp(-0.2, 0.03, d) + lerp(0, 0.04, ss(75, 82.4, t)), haze: (1 - ss(72, 73.3, t)) * 0.95 + ss(83.6, 84.5, t), fov: lerp(lerp(55, 40, d), 50, tilt), domeLight: 1 });
 }
 function sTwoSuns(t) {  // 2:18–2:24: a dim day; the Moon is the brighter sun now
   ground(2, t, { h: 1.6, x: lerp(9, 8.4, ss(138, 144, t)), pitch: 0.16, yaw: -0.08, fade: ss(138, 138.4, t) * (1 - ss(143.6, 144, t)), fov: 58, domeLight: 1 });
