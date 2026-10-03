@@ -1,0 +1,18 @@
+F3: sharing only the contested prize (share beta pooled), purely relative objective theta=-1
+  beta=0.0: predicted e=0.2500; best response to it 0.2500
+  beta=0.5: predicted e=0.1250; best response to it 0.1250
+  beta=0.9: predicted e=0.0250; best response to it 0.0250
+F3: selection gap pi(hi)-pi(lo) against a field at e=0.1, prize pooled at beta
+  beta=0.0: hi(0.2)-lo(0.05) = +0.1071
+  beta=0.5: hi(0.2)-lo(0.05) = -0.0214
+  beta=0.9: hi(0.2)-lo(0.05) = -0.1243
+F1: constant stakes, fixed theta=0.4, constant r and L: survival never stays positive
+  H=100: 0.8716
+  H=1000: 0.2530
+  H=10000: 0.0000
+F1: stakes stop growing at round 50 (lever 2 as worded): still -> 0
+  survival at 5000: 8.90e-14
+F6: without scaling the shared loss, the dissipated share is constant in s
+  s=1: 1.0070
+  s=10: 1.0070
+  s=100: 1.0070

@@ -1,0 +1,120 @@
+== GM: the governing model and the self-model ==
+  Prop 1.2 (1)-(2): sum O = (1+theta) sum pi and a common shift D moves each O by (1+theta)D; max error over 2000 random games 1.4e-14
+  Prop 1.2 (3): at theta=-1 objectives sum to 2.2e-16 (zero-sum); at theta=n-1 each objective equals the total: [4.5, 4.5, 4.5, 4.5] vs 4.5
+  Prop 1.3 (1) n=4 b=1.0 c=0.3 d=0.2: eps=1: theta*=0.9375 (brute force agrees True); eps=2: theta*=1.2188 (brute force agrees True); eps=10: theta*=1.4438 (brute force agrees True); eps=1e+06: theta*=1.5000 (brute force agrees True); limit (b-d)/(b/(n-1)+d) = 1.5000 < n-1 = 3
+  Prop 1.3 (1) n=3 b=2.0 c=0.5 d=0.1: eps=1: theta*=1.2727 (brute force agrees True); eps=2: theta*=1.5000 (brute force agrees True); eps=10: theta*=1.6818 (brute force agrees True); eps=1e+06: theta*=1.7273 (brute force agrees True); limit (b-d)/(b/(n-1)+d) = 1.7273 < n-1 = 2
+  Prop 1.3 (2): closed-form symmetric intensity equals the numerical best response (n=4, r=1, l=0.3c), max error 1.2e-09
+  Prop 1.3 (3) theta=-1.0: dissipated share at power s=1,10,100,1000: 2.200, 13.000, 121.000, 1201.000; rising True; ceiling unbounded
+  Prop 1.3 (3) theta=+0.0: dissipated share at power s=1,10,100,1000: 1.269, 2.438, 2.927, 2.993; rising True; ceiling 3.000
+  Prop 1.3 (3) theta=+0.4: dissipated share at power s=1,10,100,1000: 1.007, 1.625, 1.829, 1.854; rising True; ceiling 1.857
+  Prop 1.3 (3) theta=+1.0: dissipated share at power s=1,10,100,1000: 0.688, 0.929, 0.992, 0.999; rising True; ceiling 1.000
+  Prop 1.3 (3) theta=+2.0: dissipated share at power s=1,10,100,1000: 0.289, 0.325, 0.332, 0.333; rising True; ceiling 0.333
+  Prop 1.3 (3) theta=+2.9: dissipated share at power s=1,10,100,1000: 0.025, 0.026, 0.026, 0.026; rising True; ceiling 0.026
+  Prop 1.3 (3): total stays positive at every scale iff theta >= (r(n-1)-1)/(1+r) = 1.000 (n=4, r=1)
+  check: dissipation n e (c+nl) / Omega at theta=0.4, s=1: 1.0070 vs formula 1.0070
+  Prop 1.4: q = a L E equals a r Omega L (n-1-theta)/(n(c+(1+theta)L)): 0.006866 vs 0.006866
+  Prop 1.4 stakes grow 3%/round, accurate self-model fixed (theta=0.4), L fixed 0.3: survival at H=10,50,100,200,1000,10000: 0.984, 0.852, 0.421, 1.46e-09, 0, 0
+  Prop 1.4 stakes grow 3%/round, gap closes as 2.6 g^-t t^-1.5: survival at H=10,50,100,200,1000,10000: 0.998, 0.997, 0.997, 0.997, 0.997, 0.997
+  Prop 1.4 stakes grow 3%/round, gap closes as 2.6/t (slower than stakes grow): survival at H=10,50,100,200,1000,10000: 0.996, 0.993, 0.988, 0.927, 0, 0
+  Prop 1.4 stakes grow 3%/round, theta=-1, L fixed 0.3: survival at H=10,50,100,200,1000,10000: 0.965, 0.705, 0.149, 0, 0, 0
+  Prop 1.4 stakes grow 3%/round, theta=-1, correction L = 0.3 g^-t t^-1.5: survival at H=10,50,100,200,1000,10000: 0.994, 0.993, 0.993, 0.993, 0.992, 0.992
+  Prop 1.4 stakes fixed, accurate self-model fixed, L fixed: survival at H=10,50,100,200,1000,10000: 0.986, 0.934, 0.872, 0.76, 0.253, 1.08e-06
+  Prop 1.4 stakes grow 3%/round until round 50 and then stop, accurate self-model fixed, L fixed: survival at H=10,50,100,200,1000,10000: 0.984, 0.852, 0.63, 0.345, 0.00275, 6.88e-27
+  Prop 1.5 (1): pooled objective equals a positive multiple of the objective with theta_eff; max error over 2000 random cases 5.3e-15
+  Prop 1.5 (1): theta_eff strictly rising in beta for theta0 in (-1, n-1): True; theta_eff(1-1e-9, 0, 4) = 3.0000
+  Prop 1.5 (1): theta0=-1 gives theta_eff = [-1.0, -1.0, -1.0, -1.0]
+  Prop 1.5 (1) example: isolated self (theta0=0), faithful-AI game n=4 b=1 c=0.3 d=0.2 eps=1: racing ends once beta > 0.645
+  Prop 1.5 (1) example: isolated self (theta0=0), faithful-AI game n=4 b=1 c=0.3 d=0.2 eps=10: racing ends once beta > 0.788
+  Prop 1.5 (1) example: contest n=4 r=1, the total stays positive at every scale once beta > 0.667 (theta_eff >= 1)
+  Prop 1.5 (2): with a share beta of the prize pooled, intensity = (1-beta) e(theta) for theta in (-1,0,0.4,2), beta in (0,.5,.9); max error 2.1e-09
+  Prop 1.5 (2) example: theta=-1, intensity 0.250 without sharing, 0.125 with half the prize shared
+  Prop 1.5 (2) selection: field at 0.1, carrier at 0.2 minus carrier at 0.05, prize shared beta=0.0: +0.1071
+  Prop 1.5 (2) selection: field at 0.1, carrier at 0.2 minus carrier at 0.05, prize shared beta=0.5: -0.0214
+  Prop 1.5 (2) selection: field at 0.1, carrier at 0.2 minus carrier at 0.05, prize shared beta=0.9: -0.1243
+  Prop 1.5 (2) linear selection model: nu_g=1.0, c_u=0.3: net advantage of load (1-beta)nu_g-c_u changes sign at beta = 1-c_u/nu_g = 0.70; at beta=0.6 +0.10, at beta=0.8 -0.10
+
+== AG: faithful AI in a harmful human game ==
+  n=4 b=1.0 c=0.3 d=0.2: b>c+d True; racing strictly dominant True; all race -1.100 (= -c-nd -1.100); all restrain +0.000; sum of objectives at all race -4.400
+  n=2 b=0.6 c=0.1 d=0.3: b>c+d True; racing strictly dominant True; all race -0.700 (= -c-nd -0.700); all restrain +0.000; sum of objectives at all race -1.400
+  n=10 b=2.0 c=0.5 d=0.1: b>c+d True; racing strictly dominant True; all race -1.500 (= -c-nd -1.500); all restrain +0.000; sum of objectives at all race -15.000
+
+== CR: the chain-rule lemma ==
+  h_k = 0.2/k (not summable): survival to N=10, 100, 1000, 10000: 0.5377, 0.3417, 0.2157, 0.1361
+  h_k = 0.2/k^2 (summable): survival to N=10, 100, 1000, 10000: 0.7155, 0.7034, 0.7021, 0.7020
+  h_k = 0.01 (constant): survival to N=10, 100, 1000, 10000: 0.9044, 0.3660, 0.0000, 0.0000
+  a pause of D rounds that merely delays the same sequence (h_k = 0.01 after the pause): survival to round 1000 after the pause D=0: 0.0000, D=50: 0.0000, D=500: 0.0000
+  a pause that changes the process (h_k = 0.01 before, 0.01/(k-D)^1.5 after): survival to 10000 = 0.7969
+
+== FB: the local feedback benchmark ==
+  stability iff ab < mu*delta (where the second root stays above -1): agreement in 20000 of 20000 random draws
+
+== HO: risk homeostasis as an implicit equilibrium ==
+  n=2 s=100 Le=0.5 Lc=1 psi0=0.01 dpsi=0.95: symmetric equilibria (global best responses): iota=0.144263 total risk=0.2724767; iota=0.887842 total risk=0.9785230; iota=1.000000 total risk=0.9984000
+  n=2 s=100 Le=0.5 Lc=1 psi0=0.01 dpsi=0.9: symmetric equilibria (global best responses): iota=0.152949 total risk=0.2735064; iota=0.937051 total risk=0.9784926; iota=1.000000 total risk=0.9919000
+  n=2 s=100 Le=0.5 Lc=1 psi0=0.01 dpsi=0.85: symmetric equilibria (global best responses): iota=0.162657 total risk=0.2745357; iota=0.992049 total risk=0.9784621; iota=1.000000 total risk=0.9804000
+  saturation with summable risk: n=3, Le=Lc=1, psi0=0, s_t=2^t, dpsi_t=2^-t
+    full delegation is an equilibrium at every t>=5: True; sum of realized risk from t=5: 0.1836 (<= 3/16 = 0.1875); survival from t=5 >= 0.8164
+
+== DL: delegation in survival terms ==
+  qL=1: not delegating strictly better than delegating in 20000 random (n,k,s,psi,p): violations 0
+  qL=0.99, n=2, psi0=0.01, psi1=0.05: all-delegate survival per actor (1-qL)(1-psi1)^n/n = 0.0045125 for every s; all-delegate is an equilibrium only for s >= 206.42
+  bounded speed: n=2, s=1, p=qL=1, psi0=0, psi1=0.01, one delegator: the non-delegator's one-contest survival = 0.3300
+  ratio Phi_D/Phi_N = (1-qL) a (1+s)(n+ks)/(n+(k+1)s) with a=(1-psi1)/(1-psi0): check at n=3,k=1,s=50,qL=0.5,p=1: 12.591203 vs 12.591203
+
+== MM: the coverage mismatch theorem ==
+  frozen X=2, Y=1, U(tau)=1, slope 1: exposure with Y = 0.000; the v4.5 formula with X gives 0.250
+  summable without catch-up: u_t = 1/(t+2)^2 > 0 for every t; with h=0.05 survival to 10^5 = 0.9804
+  sub-exponential U with bursts: log U(t)/t at t=10^4 = 0.0050; g_U inside bursts at t=100.5, 400.5, 2500.5 = 0.501, 0.501, 0.501 (does not tend to zero)
+  uniform-gap bound: with h=0.05, eps=0.1, survival after T is at most (1-h(1-eps))^(H-T): H=100 -> 0.0251, H=300 -> 0.000003
+  freeze with Y: build Gamma times the rivals' level, Y = phi*X; exposure is zero when phi*Gamma <= 1: phi=0.5, Gamma=2.0: 0.000, phi=0.5, Gamma=4.0: 0.500, phi=1.0, Gamma=2.0: 0.500
+
+== OV: oversight topology ==
+  f=0.9, k=6: serial chain (each link must pass the problem on) 0.531441; redundant independent checks 0.999999
+  f=0.8, k=3: serial chain (each link must pass the problem on) 0.512000; redundant independent checks 0.992000
+  redundant checks with a common cause that defeats all of them with probability rho (f=0.9, k=6): rho=0.0: 1.0000, rho=0.05: 0.9500, rho=0.2: 0.8000
+  a fallible corrector that still lowers risk: base hazard 0.1 per period; corrector blocks 99% and adds residual 2^-(t+2):
+    survival to 200 without it 7.06e-10; with it 0.6303
+
+== SR: one discrete convention for survival ratios ==
+  qR=0.005, qB=0.05: exact rate log((1-qR)/(1-qB)) = 0.04628075; small-risk approximation qB-qR = 0.045
+  mixed beliefs with cooperative survival tending to zero: H=1000, p=0.99: R=0.006738, T=0.0090, P=0.0040, S=0.0010; T>R True, P>S True -> racing dominant at this horizon
+    H=10: R=0.9512, mixed T=0.6095, R-T=+0.3418
+    H=100: R=0.6065, mixed T=0.0157, R-T=+0.5909
+    H=300: R=0.2231, mixed T=0.0090, R-T=+0.2141
+    H=600: R=0.0498, mixed T=0.0090, R-T=+0.0408
+
+== FS: the finite sprint and prevention as trade-offs ==
+  freeze and roll back after a sprint (v4.5's numbers, g=0.3, U=1+0.5t, h=0.05, Y=X): tau=10: freeze 0.531, roll back 0.860 (checks_v45.log, MF)
+  prevention compared by hazard rate: sustained prevention 0.01 per period against racing 0.05: H=10: 0.9044 vs 0.5987, H=50: 0.6050 vs 0.0769, H=200: 0.1340 vs 0.0000
+  a single strike with Phi_R=1, Phi_P,Phi_S -> 0, sigma=0.7, eps=0.2: Phi_prev = 0.56
+
+== SG: a costly signal ==
+  durable, verifiable E1: costly to mimic: k_S=-0.05, k_R=0.3, G_S=0.4, G_R=0.2 -> separating equilibrium exists: True
+  reversible E1: cheap to mimic: k_S=-0.05, k_R=0.05, G_S=0.4, G_R=0.2 -> separating equilibrium exists: False
+  E1 too costly for the survival-first type: k_S=0.1, k_R=0.3, G_S=0.05, G_R=0.2 -> separating equilibrium exists: False
+  near-indifference is not credibility: R=1, T=2eps, P=eps, S=0 with eps=0.1: a sender that will race still gains 0.1 from the receiver's cooperation
+
+== K7: interim incentive compatibility ==
+  report S: ex-post shares against S,W = 0.52, 0.42; interim expected share = 0.500
+  report W: ex-post shares against S,W = 0.42, 0.82; interim expected share = 0.500
+  equal shares without a lower value of winning: c_s/c_w=0.05, L_b=0.5, strong outside option 0.925; with S_a=2 the equal share is 1.0
+
+== N13: the n-player assurance condition ==
+  three players, cooperation minus defection by number of other defectors (1, -10, -1); each other cooperates with prob 0.7071 (all others cooperate with prob 0.5): expected advantage -3.7279
+
+== CAP: capture structure ==
+  fixed split into k=10 parts, eta=1, g=0.2, alpha=0: capture delayed by 2 ln k/(g-(1+eta)alpha) = 23.03
+  shares (1.0,): HHI 1.000; third moment sum p^3 (eta=1) 1.000
+  shares (0.5, 0.5): HHI 0.500; third moment sum p^3 (eta=1) 0.250
+  shares (0.25, 0.25, 0.25, 0.25): HHI 0.250; third moment sum p^3 (eta=1) 0.062
+  shares (0.7, 0.1, 0.1, 0.1): HHI 0.520; third moment sum p^3 (eta=1) 0.346
+  mean load versus the maximal-load share: Cov(e,phi)=0.8889, dE/dt=1.0911, d p_max/dt=-0.9889
+  control screen: w(s)=2(s-a)/(s+a), |w(j0.0)| = 2.000; w(a) = 0.0
+  control screen: w(s)=2(s-a)/(s+a), |w(j1.0)| = 2.000
+  control screen: w(s)=2(s-a)/(s+a), |w(j10.0)| = 2.000
+  control screen: w(s)=2(s-a)/(s+a), |w(j100.0)| = 2.000
+
+== CMP: two cruxes at common horizons ==
+  H=10: continuation with rising gap 0.871; continuation with summable gap 0.966; cooperation with dissolution 2%/yr x fallback 0.5 0.873; with dissolution 0.2%/yr 0.956
+  H=30: continuation with rising gap 0.567; continuation with summable gap 0.941; cooperation with dissolution 2%/yr x fallback 0.5 0.696; with dissolution 0.2%/yr 0.913
+  H=100: continuation with rising gap 0.028; continuation with summable gap 0.873; cooperation with dissolution 2%/yr x fallback 0.5 0.319; with dissolution 0.2%/yr 0.789
