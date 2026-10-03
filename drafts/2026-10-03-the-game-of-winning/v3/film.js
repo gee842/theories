@@ -802,11 +802,8 @@ function galaxyCam(t) {
     const u = ss(171, 185, t), dir = norm(sub(full.pos, G.cell)), dFull = len(sub(full.pos, G.cell)), d = 5.0 * Math.pow(dFull / 5.0, Math.pow(u, 0.75));
     return { pos: add(G.cell, scl(dir, d)), look: mixv(G.cell, full.look, ease(ss(172, 185, t))), fov: 42 };
   }
-  if (t >= 202 && t < 205) { const u = ease(ss(202, 205, t)); return { pos: add(full.pos, [0, lerp(-30, 0, u), 0]), look: full.look, fov: 42 }; }
-  if (t >= 214 && t < 224) {   // drift to the rim and back
-    const edge = { pos: [62, 7, 24], look: [24, -1, 2] }; const u = ss(214, 217, t) * (1 - ss(221, 224, t));
-    return { pos: mixv(full.pos, edge.pos, ease(u)), look: mixv(full.look, edge.look, ease(u)), fov: 42 };
-  }
+  if (t >= 202 && t < 214) { const u = ease(ss(202, 205, t)), push = ease(ss(204, 214, t)); return { pos: scl(add(full.pos, [0, lerp(-30, 0, u), 0]), lerp(1, 0.86, push)), look: full.look, fov: 42 }; }   // the efficient galaxy: a slow push in
+  if (t >= 214 && t < 234) return { pos: scl(full.pos, lerp(0.86, 1, ease(ss(223, 234, t)))), look: full.look, fov: 42 };   // the split continues from the push, easing back out (the rim drift is cut)
   return { pos: full.pos, look: full.look, fov: 42 };
 }
 
@@ -973,11 +970,11 @@ function overlay(t) {
     if (num) { ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(255,190,120,0.95)"; ctx.fillText(num, W / 2 + 2, H * 0.83 + 36); } ctx.shadowBlur = 0; }
   // words
   ctx.textBaseline = "middle";
-  const word = (s0, k, y, size = 64, alpha = 0.97) => { if (k <= 0) return; ctx.globalAlpha = k; ctx.font = `300 ${size}px ${SANS}`; ctx.letterSpacing = "2px"; ctx.fillStyle = `rgba(246,248,250,${alpha})`; ctx.fillText(s0, W / 2, y); };
+  const word = (s0, k, y, size = 64, alpha = 0.97) => { if (k <= 0) return; ctx.globalAlpha = k; ctx.font = `300 ${size}px ${SANS}`; ctx.letterSpacing = "2px"; ctx.fillStyle = `rgba(246,248,250,${alpha})`; ctx.shadowColor = "rgba(0,0,0,0.7)"; ctx.shadowBlur = 24; ctx.fillText(s0, W / 2, y); ctx.shadowBlur = 0; };
   { const k = ss(0.6, 1.4, t) * (1 - ss(5.4, 6.4, t)); if (k > 0) { ctx.globalAlpha = k; ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(225,232,238,0.55)"; ctx.fillText("UNITED NATIONS GENERAL ASSEMBLY  ·  22 SEPTEMBER 2026", W / 2, H - 120); } }
   word("super intelligence", ss(1.6, 2.4, t) * (1 - ss(5.6, 6.8, t)), H / 2);
   { const k = ss(76, 77.5, t) * (1 - ss(81.5, 82.5, t)); if (k > 0) { ctx.globalAlpha = k; ctx.font = `500 22px ${MONO}`; ctx.letterSpacing = "12px"; ctx.fillStyle = "rgba(30,32,36,0.8)"; ctx.fillText("PROGRESS", W / 2 + 6, H - 150); } }
-  word("super intelligence", ss(206, 207.5, t) * (1 - ss(211.5, 213.5, t)) * 0.5, H * 0.5, 54, 0.9);
+  word("super intelligence", ss(206, 207.5, t) * (1 - ss(211.5, 213.5, t)) * 0.85, H * 0.5, 54, 0.95);
   { const k = ss(281, 283, t) * (1 - ss(296, 299, t)); if (k > 0) { ctx.globalAlpha = k; ctx.font = `200 70px ${SANS}`; ctx.letterSpacing = "22px"; ctx.fillStyle = "rgba(246,248,250,0.97)"; ctx.fillText("THE GAME OF WINNING", W / 2 + 11, H / 2); } }
   ctx.restore();
 }
