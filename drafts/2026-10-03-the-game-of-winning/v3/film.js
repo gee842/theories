@@ -256,11 +256,14 @@ vec3 ro;
 vec3 rocket(float u){ return vec3(900.0 - 1500.0 * u * u, 60000.0 * pow(u, 1.8), -7000.0 - 9000.0 * u * u); }
 
 /* ---------- geometry ---------- */
+float sdRoundCone(vec3 p, float r1, float r2, float h){ vec2 q = vec2(length(p.xz), p.y); float b = (r1 - r2) / h, a = sqrt(1.0 - b * b), k = dot(q, vec2(-b, a));
+  if (k < 0.0) return length(q) - r1; if (k > a * h) return length(q - vec2(0.0, h)) - r2; return dot(q, vec2(a, b)) - r1; }
 // a person, about 1.75 m: legs apart, shoulders, a neck; the head tilts back by lookUp, the right arm rises toward the sky by armUp
 float person(vec3 p, vec3 b, float s, float lookUp, float armUp){
   p = (p - b) / s; if (length(p - vec3(0.0, 1.0, 0.0)) > 1.4) return length(p - vec3(0.0, 1.0, 0.0)) * s - 1.2 * s;
   float d = min(sdCap(p, vec3(-0.095, 0.04, 0), vec3(-0.08, 0.86, 0), 0.06), sdCap(p, vec3(0.095, 0.04, 0), vec3(0.08, 0.86, 0), 0.06));
   d = smin(d, sdCap(p, vec3(0, 0.9, 0), vec3(0, 1.36, 0), 0.14), 0.07);
+  d = min(d, max(sdRoundCone((p - vec3(0.0, 0.42, 0.0)) * vec3(1.0, 1.0, 1.35), 0.27, 0.17, 0.98) / 1.35, 0.42 - p.y));   // a long coat, wider at the hem
   d = smin(d, sdCap(p, vec3(-0.18, 1.41, 0), vec3(0.18, 1.41, 0), 0.065), 0.06);
   d = smin(d, sdCap(p, vec3(0, 1.42, 0), vec3(0, 1.5, 0.02 * lookUp), 0.045), 0.03);
   d = min(d, length((p - vec3(0.0, 1.6, 0.05 * lookUp)) * vec3(1.0, 0.92, 1.0)) - 0.1);
