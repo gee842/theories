@@ -747,8 +747,14 @@ function sCell(t) {
   const rot = bodyRot(2.0, 0.25), faceW = norm([-0.33, 0.36, 0.88]), lesC = toBody(rot, faceW);
   if (op > 0) E.sphere({ mode: 1, day: tex.moon, proc: 1, radius: R, sun, desat: 0.2, tint: [1, 1, 1], dayGain: 1.6 * (1 - dim * 0.9), lesC, lesR: 2.6 * ss(158.5, 164, t), lesK: 1.3, rot, opacity: op, time: t });
   const land = scl(faceW, 1.0);
-  if (t < 159) { const u = ease(ss(154, 158.5, t)); const from = [2.6, 2.2, 1.0]; const p = mixv(from, scl(land, 1.01), u);
-    pt(p, [1, 0.85, 0.6], 6, 8); pt(p, [0.6, 0.75, 1.0], 1.6 * (1 - ss(157, 158.5, t)), 40); if (t > 158.5) pt(land, [1, 0.7, 0.4], 20 * (1 - ss(158.5, 159, t)), 30); }
+  if (t < 159) { const u = ease(ss(154, 158.5, t)); const from = [1.5, 1.15, 2.4]; const p = mixv(from, scl(land, 1.01), u);
+    pt(p, [1, 0.85, 0.6], 9, 9); pt(p, [0.6, 0.75, 1.0], 2.6 * (1 - ss(157, 158.5, t)), 46);   // the seed, braking on a magnetic glow
+    for (let k = 1; k <= 24; k++) { const v = Math.max(0, u - k * 0.012); pt(mixv(from, scl(land, 1.01), v), [0.7, 0.8, 1.0], 0.5 * (1 - k / 24), 3); }   // its wake
+    if (t > 158.5) pt(land, [1, 0.7, 0.4], 20 * (1 - ss(158.5, 159, t)), 30); }
+  // the crust flung off into a ring: mass drivers over the whole scarred surface
+  const fling = ss(161.5, 163, t) * (1 - ss(165.6, 166.6, t));
+  if (fling > 0) { for (const pl of PELLETS) { const age = ((t * 0.4 * pl.v + pl.ph) % 1) * 3; const site = scl(pl.d, R), tan = norm(cross([0, 1, 0], pl.d.map((x, i) => i === 1 ? 0 : x)));
+      const p = add(site, add(scl(tan, R * age * 0.9 * pl.v), scl([pl.d[0], pl.d[1] * 0.2, pl.d[2]], R * age * 0.45))); pt(p, [1, 0.75, 0.45], fling * op * (age < 0.06 ? 6 : 1.6) * (1 - age / 3), age < 0.06 ? 3 : 1.8); } }
   const ringK = ss(163, 167, t), coll = ss(165, 168, t);
   if (ringK > 0) { const r = rngOf(97); for (let i = 0; i < 14000; i++) { const a = r() * TAU, rr = 1.3 + r() * 1.2; if (r() > ringK) continue; const ang = a + t * 0.08 / rr; const local = [Math.cos(ang) * rr, gauss(r) * 0.04 + Math.sin(ang) * rr * 0.1, Math.sin(ang) * rr];
     const toward = clamp((coll - r() * 0.5) * 2); const target = add(CELL_STAR, scl(norm([Math.cos(ang * 3 + i), (r() - 0.5) * 1.4, Math.sin(ang * 3 + i)]), 1.9 + r() * 0.6));
