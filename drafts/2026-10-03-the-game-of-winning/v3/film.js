@@ -956,38 +956,41 @@ const LAST_ABSORB = ABSORB[ABSORB.length - 1][0];
 function overlay(t) {
   const on = ss(7.5, 9, t) * (t > 270 ? (Math.floor(t * 14) % 3 === 0 && t < 271.5 ? 1 : 0) : 1) * (t < 274 ? 1 : 0);
   ctx.save(); ctx.textBaseline = "alphabetic";
-  const L = 64, T = 64;
+  const L = 72, T = 72;
+  // over the white basin the type turns to dark ink
+  const dark = t > 72 && t < 85 ? ss(72.2, 73.4, t) * (1 - ss(83.4, 84.4, t)) : 0;
+  const ink = (a, r = 240, g = 244, b = 247) => `rgba(${Math.round(lerp(r, 28, dark))},${Math.round(lerp(g, 30, dark))},${Math.round(lerp(b, 34, dark))},${a})`;
   if (on > 0) {
-    ctx.globalAlpha = on; ctx.shadowColor = "rgba(0,0,0,0.5)"; ctx.shadowBlur = 10;   // stays legible over the white basin and the clouds
-    const lab = (s0, x, y, a = 0.48) => { ctx.font = `500 11px ${MONO}`; ctx.letterSpacing = "3px"; ctx.fillStyle = `rgba(225,232,238,${a})`; ctx.textAlign = "left"; ctx.fillText(s0, x, y); };
-    const val = (s0, x, y, c = "rgba(240,244,247,0.94)") => { ctx.font = `400 16px ${MONO}`; ctx.letterSpacing = "1px"; ctx.fillStyle = c; ctx.textAlign = "left"; ctx.fillText(s0, x, y); };
+    ctx.globalAlpha = on; ctx.shadowColor = dark > 0.5 ? "rgba(255,255,255,0.35)" : "rgba(0,0,0,0.5)"; ctx.shadowBlur = 10;   // stays legible over the clouds
+    const lab = (s0, x, y, a = 0.6) => { ctx.font = `500 14px ${MONO}`; ctx.letterSpacing = "3px"; ctx.fillStyle = ink(a, 225, 232, 238); ctx.textAlign = "left"; ctx.fillText(s0, x, y); };
+    const val = (s0, x, y, c = ink(0.96)) => { ctx.font = `400 20px ${MONO}`; ctx.letterSpacing = "1px"; ctx.fillStyle = c; ctx.textAlign = "left"; ctx.fillText(s0, x, y); };
     // the year, large
     lab("YEAR", L, T);
-    ctx.font = `200 44px ${SANS}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "rgba(246,248,250,0.97)"; ctx.fillText(fmtYear(yearAt(t)), L - 2, T + 46);
+    ctx.font = `200 56px ${SANS}`; ctx.letterSpacing = "2px"; ctx.fillStyle = ink(0.97, 246, 248, 250); ctx.fillText(fmtYear(yearAt(t)), L - 3, T + 58);
     const yw = ctx.measureText(fmtYear(yearAt(t))).width;
-    ctx.font = `600 11px ${MONO}`; ctx.letterSpacing = "3px";
-    if (t < 9.5) { ctx.fillStyle = "#ffb15a"; ctx.fillText("TODAY", L + yw + 14, T + 44); } else { ctx.globalAlpha = on * ss(9.5, 11, t) * 0.5; ctx.fillStyle = "#e8eef2"; ctx.fillText("PROJECTED", L + yw + 14, T + 44); ctx.globalAlpha = on; }
+    ctx.font = `600 13px ${MONO}`; ctx.letterSpacing = "3px";
+    if (t < 9.5) { ctx.fillStyle = "#ffb15a"; ctx.fillText("TODAY", L + yw + 16, T + 55); } else { ctx.globalAlpha = on * ss(9.5, 11, t) * 0.6; ctx.fillStyle = ink(1, 232, 238, 242); ctx.fillText("PROJECTED", L + yw + 16, T + 55); ctx.globalAlpha = on; }
     // the rows
-    let y = T + 84;
-    lab("COMPUTE", L, y); val(fmtW(powerAt(t)), L + 132, y); y += 26;
+    let y = T + 102;
+    lab("COMPUTE", L, y); val(fmtW(powerAt(t)), L + 168, y); y += 32;
     const pa = t < 222 ? players(yearAt(t)) : null, pn = playersAt(t);
-    lab("PLAYERS", L, y); val(String(pn), L + 132, y, t > 222 ? "#ffb15a" : "rgba(240,244,247,0.94)");
-    if (pa) { const yr = yearAt(t); for (let k = 0; k < 12; k++) { const r = pa.root(k), abs = ABSORB.find(e => e[1] === k); const gone = abs ? clamp((yr - abs[0]) / 2.5) : 0; const c = r === k ? PCOL[k] : mixv(PCOL[k], PCOL[r], gone); const sz = 7 * (1 - gone * 0.75);
-      ctx.globalAlpha = on * (1 - gone * 0.8); ctx.fillStyle = `rgb(${c.map(v => Math.round(v * 255)).join(",")})`; ctx.fillRect(L + 172 + k * 12 + (7 - sz) / 2, y - 9 + (7 - sz) / 2, sz, sz); } ctx.globalAlpha = on; }
+    lab("PLAYERS", L, y); val(String(pn), L + 168, y, t > 222 ? "#ffb15a" : ink(0.96));
+    if (pa) { const yr = yearAt(t); for (let k = 0; k < 12; k++) { const r = pa.root(k), abs = ABSORB.find(e => e[1] === k); const gone = abs ? clamp((yr - abs[0]) / 2.5) : 0; const c = r === k ? PCOL[k] : mixv(PCOL[k], PCOL[r], gone); const sz = 9 * (1 - gone * 0.75);
+      ctx.globalAlpha = on * (1 - gone * 0.8); ctx.fillStyle = `rgb(${c.map(v => Math.round(v * 255)).join(",")})`; ctx.fillRect(L + 222 + k * 15 + (9 - sz) / 2, y - 12 + (9 - sz) / 2, sz, sz); } ctx.globalAlpha = on; }
     const lone = ss(LAST_ABSORB, LAST_ABSORB + 1, yearAt(t)) * (1 - ss(62, 64, t));
-    if (lone > 0 && t < 70) { ctx.globalAlpha = on * lone; ctx.font = `500 12px ${MONO}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "#ffb15a"; ctx.fillText("ONE PLAYER LEFT", L + 172, y); ctx.globalAlpha = on; }
-    y += 26;
-    const popA = 1 - ss(142, 144, t); if (popA > 0) { ctx.globalAlpha = on * popA; lab("POPULATION", L, y); val(fmtPop(popAt(t)), L + 132, y); ctx.globalAlpha = on; }
+    if (lone > 0 && t < 70) { ctx.globalAlpha = on * lone; ctx.font = `500 15px ${MONO}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "#ffb15a"; ctx.fillText("ONE PLAYER LEFT", L + 222, y); ctx.globalAlpha = on; }
+    y += 32;
+    const popA = 1 - ss(142, 144, t); if (popA > 0) { ctx.globalAlpha = on * popA; lab("POPULATION", L, y); val(fmtPop(popAt(t)), L + 168, y); ctx.globalAlpha = on; }
     // where we are, and with what instrument
-    for (const [a, b, s0] of STAMPS) if (t >= a && t < b) { const k = ss(a, a + 0.5, t) * (1 - ss(b - 0.4, b, t)); ctx.globalAlpha = on * k; ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(246,248,250,0.9)"; ctx.fillText(s0, L, H - 84); }
-    for (const [a, b, s0] of INSTR) if (t >= a && t < b) { const k = ss(a, a + 0.4, t) * (1 - ss(b - 0.3, b, t)); ctx.globalAlpha = on * k; lab(s0, L, H - 60, 0.55); }
+    for (const [a, b, s0] of STAMPS) if (t >= a && t < b) { const k = ss(a, a + 0.5, t) * (1 - ss(b - 0.4, b, t)); ctx.globalAlpha = on * k; ctx.font = `500 17px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = ink(0.92, 246, 248, 250); ctx.fillText(s0, L, H - 96); }
+    for (const [a, b, s0] of INSTR) if (t >= a && t < b) { const k = ss(a, a + 0.4, t) * (1 - ss(b - 0.3, b, t)); ctx.globalAlpha = on * k; lab(s0, L, H - 68, 0.62); }
     ctx.globalAlpha = on;
     // callouts
     for (const [a, b, s0, fn, fallback] of CALL) { if (t < a || t > b) continue; const k = ss(a, a + 0.4, t) * (1 - ss(b - 0.4, b, t)); let p = null;
       if (fn) { const pr = E.project(fn()); if (pr && pr[0] > 0 && pr[0] < W && pr[1] > 0 && pr[1] < H) p = [pr[0], pr[1]]; } else p = fallback;
       if (!p) continue; ctx.globalAlpha = on * k; ctx.fillStyle = "#ffb15a"; ctx.beginPath(); ctx.arc(p[0], p[1], 2.5, 0, TAU); ctx.fill();
       ctx.strokeStyle = "rgba(255,177,90,0.6)"; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(p[0] + 5, p[1] - 5); ctx.lineTo(p[0] + 18, p[1] - 18); ctx.stroke();
-      ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "rgba(245,247,249,0.9)"; ctx.textAlign = "left"; ctx.fillText(s0, p[0] + 24, p[1] - 22); }
+      ctx.font = `500 16px ${MONO}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "rgba(245,247,249,0.94)"; ctx.textAlign = "left"; ctx.fillText(s0, p[0] + 24, p[1] - 22); }
     ctx.globalAlpha = 1; ctx.shadowBlur = 0;
   }
   // cards: the wall in plain words
@@ -995,12 +998,12 @@ function overlay(t) {
   for (const [a, b, line, num] of CARDS) { const k = ss(a, a + 0.45, t) * (1 - ss(b - 0.45, b, t)); if (k <= 0) continue; ctx.globalAlpha = k;
     { const g = ctx.createRadialGradient(W / 2, H * 0.83 + 8, 10, W / 2, H * 0.83 + 8, 520); g.addColorStop(0, "rgba(0,0,0,0.42)"); g.addColorStop(1, "rgba(0,0,0,0)");   // a soft shade, so the line reads over bright ground
       ctx.save(); ctx.translate(W / 2, H * 0.83 + 8); ctx.scale(1, 0.16); ctx.translate(-W / 2, -(H * 0.83 + 8)); ctx.fillStyle = g; ctx.fillRect(W / 2 - 560, H * 0.83 + 8 - 560, 1120, 1120); ctx.restore(); }
-    ctx.font = `300 36px ${SANS}`; ctx.letterSpacing = "0.5px"; ctx.fillStyle = "rgba(247,249,250,0.97)"; ctx.shadowColor = "rgba(0,0,0,0.6)"; ctx.shadowBlur = 18; ctx.fillText(line, W / 2, H * 0.83);
-    if (num) { ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(255,190,120,0.95)"; ctx.fillText(num, W / 2 + 2, H * 0.83 + 36); } ctx.shadowBlur = 0; }
+    ctx.font = `300 44px ${SANS}`; ctx.letterSpacing = "0.5px"; ctx.fillStyle = "rgba(247,249,250,0.97)"; ctx.shadowColor = "rgba(0,0,0,0.6)"; ctx.shadowBlur = 18; ctx.fillText(line, W / 2, H * 0.83);
+    if (num) { ctx.font = `500 16px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(255,190,120,0.95)"; ctx.fillText(num, W / 2 + 2, H * 0.83 + 44); } ctx.shadowBlur = 0; }
   // words
   ctx.textBaseline = "middle";
   const word = (s0, k, y, size = 64, alpha = 0.97) => { if (k <= 0) return; ctx.globalAlpha = k; ctx.font = `300 ${size}px ${SANS}`; ctx.letterSpacing = "2px"; ctx.fillStyle = `rgba(246,248,250,${alpha})`; ctx.shadowColor = "rgba(0,0,0,0.7)"; ctx.shadowBlur = 24; ctx.fillText(s0, W / 2, y); ctx.shadowBlur = 0; };
-  { const k = ss(0.6, 1.4, t) * (1 - ss(5.4, 6.4, t)); if (k > 0) { ctx.globalAlpha = k; ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(225,232,238,0.55)"; ctx.fillText("UNITED NATIONS GENERAL ASSEMBLY  ·  22 SEPTEMBER 2026", W / 2, H - 120); } }
+  { const k = ss(0.6, 1.4, t) * (1 - ss(5.4, 6.4, t)); if (k > 0) { ctx.globalAlpha = k; ctx.font = `500 16px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(225,232,238,0.62)"; ctx.fillText("UNITED NATIONS GENERAL ASSEMBLY  ·  22 SEPTEMBER 2026", W / 2, H - 120); } }
   word("super intelligence", ss(1.6, 2.4, t) * (1 - ss(5.6, 6.8, t)), H / 2);
   { const k = ss(76, 77.5, t) * (1 - ss(81.5, 82.5, t)); if (k > 0) { ctx.globalAlpha = k; ctx.font = `500 22px ${MONO}`; ctx.letterSpacing = "12px"; ctx.fillStyle = "rgba(30,32,36,0.8)"; ctx.fillText("PROGRESS", W / 2 + 6, H - 150); } }
   word("super intelligence", ss(206, 207.5, t) * (1 - ss(211.5, 213.5, t)) * 0.85, H * 0.5, 54, 0.95);
