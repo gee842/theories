@@ -67,7 +67,13 @@ function player() {
   function play() { startBtn.hidden = true; if (t >= DUR - 0.05) t = 0; playing = true; t0 = t; p0 = performance.now(); prepSound(); startSrc(); ui(); requestAnimationFrame(loop); }
   function pause() { t = clock(); playing = false; stopSrc(); ui(); }
   function seek(x) { t = Math.max(0, Math.min(DUR, x)); startBtn.hidden = true; if (playing) { t0 = t; p0 = performance.now(); startSrc(); } else Film.frame(t); ui(); }
-  function loop() { if (!playing) return; t = clock(); if (t >= DUR) { t = DUR; playing = false; stopSrc(); } Film.frame(t); ui(); if (playing) requestAnimationFrame(loop); }
+  // dynamic resolution: every 30th frame, time the GPU (a 1-pixel read forces the frame to finish) and size the heavy scenes to fit
+  const glx = glc.getContext("webgl2"), px1 = new Uint8Array(4); let nf = 0;
+  function loop() { if (!playing) return; t = clock(); if (t >= DUR) { t = DUR; playing = false; stopSrc(); }
+    if (Film.heavyAt(t) && ++nf % 30 === 0 && glx) { const a = performance.now(); Film.frame(t); glx.readPixels(0, 0, 1, 1, glx.RGBA, glx.UNSIGNED_BYTE, px1); const ms = performance.now() - a; const q = Film.quality();
+      if (ms < 9) Film.setQuality(q * 1.12); else if (ms > 14) Film.setQuality(q * 0.85); }
+    else Film.frame(t);
+    ui(); if (playing) requestAnimationFrame(loop); }
   startBtn.onclick = play; playB.onclick = () => playing ? pause() : play(); scrub.oninput = () => seek(parseFloat(scrub.value));
   // development: live reload resumes where you were; ?t=SECONDS starts anywhere; press D for a readout
   const qs = new URLSearchParams(location.search); let resume = null;

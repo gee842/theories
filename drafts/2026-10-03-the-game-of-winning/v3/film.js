@@ -226,7 +226,7 @@ function sToday(t) {
 }
 
 /* ================= ground scenes: one ray-marched shader, four moods ================= */
-let GROUND = null, NOISE = null;
+let GROUND = null, NOISE = null, QUALITY = 1;   // QUALITY scales the heavy scenes' internal size; the player adjusts it to the GPU, exports use full size
 const GROUND_FS = `#version 300 es
 precision highp float; in vec2 vUV; out vec4 o; uniform vec2 uRes;
 uniform int iZero; uniform vec4 uPl[40], uPc[40]; uniform vec3 uRk;   // always 0: loop bounds that depend on it are not unrolled, which keeps this shader small enough to run fast
@@ -585,7 +585,7 @@ function ground(mode, t, cam) {
   if (!NOISE) { const nt = E.noiseTextures(); NOISE = { uN2: nt.n2, uN3: nt.n3 }; }
   if (!GROUND) GROUND = [0, 1, 2, 3].map(m => E.program(GROUND_FS.replace("precision highp float;", `precision highp float;\n#define MD ${m}\n`)));
   // each mood renders at the size its cost allows at 60 fps on a laptop GPU; the grain and bloom are added at full size
-  E.fullscreenAt(cam.scale ?? [0.85, 0.5, 0.55, 0.6][mode], GROUND[mode], { uMode: mode, uTime: cam.time ?? t, uH: cam.h, uCamX: cam.x || 0, uPitch: cam.pitch, uYaw: cam.yaw || 0, uLaunch: cam.launch || 0, uStars: cam.stars ?? 1, uFade: cam.fade ?? 1, uHaze: cam.haze || 0, uDomeLight: cam.domeLight ?? 1, uFov: (cam.fov || 50) * D2R, uDbg: cam.dbg || 0, iZero: 0, ...plumeTable(cam.launch || 0), uRk: rocketAt(cam.launch || 0) }, NOISE);
+  E.fullscreenAt(cam.scale ?? Math.min(1, [0.85, 0.5, 0.55, 0.6][mode] * QUALITY), GROUND[mode], { uMode: mode, uTime: cam.time ?? t, uH: cam.h, uCamX: cam.x || 0, uPitch: cam.pitch, uYaw: cam.yaw || 0, uLaunch: cam.launch || 0, uStars: cam.stars ?? 1, uFade: cam.fade ?? 1, uHaze: cam.haze || 0, uDomeLight: cam.domeLight ?? 1, uFov: (cam.fov || 50) * D2R, uDbg: cam.dbg || 0, iZero: 0, ...plumeTable(cam.launch || 0), uRk: rocketAt(cam.launch || 0) }, NOISE);
 }
 function plumeTable(launch) {   // 40 samples along the climb: centre and width, light colour and density
   const Pl = new Float32Array(160), Pc = new Float32Array(160); if (launch <= 0) return { uPl: Pl, uPc: Pc };
@@ -1082,7 +1082,7 @@ function frame(ft) {
 }
 // view: a 2D canvas for the overlay (and, when composite, the whole picture); glc: the WebGL canvas
 async function init(view, onProgress = () => {}, { composite = true, glCanvas = null } = {}) {
-  ctx = view.getContext("2d"); COMPOSITE = composite;
+  ctx = view.getContext("2d"); COMPOSITE = composite; if (composite) QUALITY = 2;
   const glc = glCanvas || document.createElement("canvas"); glc.width = W; glc.height = H;
   E = Engine.create(glc, W, H);
   const names = { earthDay: "assets/earth-day.jpg", earthNight: "assets/earth-night.jpg", mercury: "assets/mercury.jpg", moon: "assets/moon.jpg", clouds: "assets/clouds.jpg" };
@@ -1094,5 +1094,6 @@ async function init(view, onProgress = () => {}, { composite = true, glCanvas = 
 }
 const PX = new Uint8Array(4);
 function timeFrame(ft) { const a = performance.now(); drawScene(storyT(ft)); E.gl.readPixels(0, 0, 1, 1, E.gl.RGBA, E.gl.UNSIGNED_BYTE, PX); return performance.now() - a; }
-return { init, frame, timeFrame, exportGrowth, W, H, DUR, yearAt, powerAt, storyT, filmT, sceneAt, galaxy: () => GAL };
+const heavyAt = ft => { const st = storyT(ft); return (st >= 33 && st < 41) || (st >= 72 && st < 84.5) || (st >= 138 && st < 144) || (st >= 195 && st < 202); };
+return { init, frame, timeFrame, heavyAt, setQuality: q => { QUALITY = Math.max(0.6, Math.min(2, q)); }, quality: () => QUALITY, exportGrowth, W, H, DUR, yearAt, powerAt, storyT, filmT, sceneAt, galaxy: () => GAL };
 })();

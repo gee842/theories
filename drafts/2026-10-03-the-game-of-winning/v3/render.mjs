@@ -97,7 +97,7 @@ try {
     console.log(join(outDir, (opt("--out") || "sheet") + ".png"), ts.join(" "));
   }
   if (opt("--perf") !== null) {   // --perf a,b,step: GPU time per frame (ms, story seconds) — the live player needs < 16
-    const [a, b, st] = opt("--perf").split(",").map(Number); const film = await openFilm("perf"); if (opt("--js")) console.log("js →", await film.evalv(opt("--js")));
+    const [a, b, st] = opt("--perf").split(",").map(Number); const film = await openFilm("perf"); await film.evalv(`Film.setQuality(${opt("--q") || 1})`); if (opt("--js")) console.log("js →", await film.evalv(opt("--js")));
     try { for (let x = a; x <= b + 1e-6; x += st) { const ft = await film.evalv(`Film.filmT(${x})`); await film.evalv(`Film.timeFrame(${ft})`); let ms = 0; for (let k = 0; k < 3; k++) ms += await film.evalv(`Film.timeFrame(${ft})`); console.log(`story ${x.toFixed(1)}  ${(ms / 3).toFixed(1)} ms  ${await film.evalv(`Film.sceneAt(${ft})`)}`); } } finally { film.close(); }
   }
   if (opt("--stills") !== null) {
