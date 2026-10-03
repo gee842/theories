@@ -195,7 +195,7 @@ function drawStars(k = 0.8) { E.drawParticles(SYS.stars, { uCenter: CAM.pos, uK:
 function earth(t, rot, o = {}) {
   const year = o.year ?? yearAt(t);
   E.sphere({ mode: 0, day: tex.earthDay, night: tex.earthNight, grow: GROW, cloud: tex.clouds || null, pCol: players(year).cols, center: EARTH, radius: 1, rot, sun: SUN_DIR_AT_EARTH, nightGain: o.nightGain ?? 1.5, dayGain: o.dayGain ?? 1.0,
-    thermal: o.thermal || 0, heat: o.heat || 0, year, clouds: o.clouds ?? 0.55, atmo: [0.35, 0.6, 1.0], atmoK: 1.0, time: t, seaStart: 2100, seaEnd: 2191 });
+    thermal: o.thermal || 0, heat: o.heat || 0, year, clouds: o.clouds ?? 0.55, atmo: [0.35, 0.6, 1.0], atmoK: 1.0, time: t, seaStart: 2104, seaEnd: 2140 });
 }
 // a point on the Earth's surface, in world space
 const surf = (rot, lon, lat, h = 1) => add(EARTH, scl(toWorld(rot, ll(lon, lat)), h));
@@ -650,7 +650,7 @@ function sOrbital(t) {
   if (t < 45.5) { const base = surf(rot, ABILENE[0], ABILENE[1], 1.0), up = norm(sub(base, EARTH)), side = norm(cross([0, 1, 0], up)), u = ss(41, 45.5, t);   // eastward, as launches go
     const p = add(add(base, scl(up, 0.08 * Math.sin(u * Math.PI / 2))), scl(side, u * 0.35)); pt(p, [1, 0.9, 0.7], 8 * (1 - ss(44.5, 45.5, t)), 14); flushPts({ depth: true }); let prev = base; for (let i = 1; i <= 16; i++) { const v = u * i / 16, q = add(add(base, scl(up, 0.08 * Math.sin(v * Math.PI / 2))), scl(side, v * 0.35)); ln(prev, q, [1, 0.7, 0.4], 0.9 * (i / 16) * (1 - ss(44.5, 45.5, t)), 1.4); prev = q; } flushLns({ depth: true }); }   // its trail, a smooth streak
   // seawater vented to space, seen in profile along the limb
-  const on = ss(60, 62, t) * (1 - ss(71.5, 72, t));
+  const on = ss(60, 62, t) * (1 - ss(70.0, 70.8, t));   // gone before the dive
   if (on > 0) {
     if (!PLUME) PLUME = E.program(PLUME_FS);
     const cd = norm(sub(pos, EARTH)), ex = norm(cross([0, 1, 0], cd)), ey = cross(cd, ex), J = [], K = [];
@@ -952,7 +952,7 @@ const CARDS = [
   [27.4, 30.6, "Compute passes a terawatt.", "2046 · 1 TW"],
   [47.4, 50.4, "Compute uses as much energy as all of humanity did in 2026.", "2068 · 19 TW"],
   [56.6, 59.6, "The planet can no longer shed its heat.", "2097 · WASTE HEAT 2 W/M²"],
-  [69.4, 72, "The oceans become the coolant.", "2113 · 10 PW"],
+  [68.2, 71.2, "The oceans become the coolant.", "2113 · 10 PW"],
   [88.4, 91.8, "The Earth is not enough.", "2132 · ALL THE SUNLIGHT THE EARTH RECEIVES"],
   [128.8, 132, "The Sun is enclosed.", "2291 · 3.8 × 10²⁶ W"],
   [149.6, 153.8, "One star is not enough.", "THE PROBES LEAVE"],
@@ -1019,7 +1019,7 @@ function overlay(t) {
   // cards: the wall in plain words
   ctx.textAlign = "center";
   for (const [a, b, line, num] of CARDS) { const k = ss(a, a + 0.45, t) * (1 - ss(b - 0.45, b, t)); if (k <= 0) continue; ctx.globalAlpha = k;
-    { const g = ctx.createRadialGradient(W / 2, H * 0.83 + 8, 10, W / 2, H * 0.83 + 8, 520); g.addColorStop(0, "rgba(0,0,0,0.42)"); g.addColorStop(1, "rgba(0,0,0,0)");   // a soft shade, so the line reads over bright ground
+    { const g = ctx.createRadialGradient(W / 2, H * 0.83 + 8, 10, W / 2, H * 0.83 + 8, 520); g.addColorStop(0, `rgba(0,0,0,${0.42 * (1 - dark)})`); g.addColorStop(1, "rgba(0,0,0,0)");   // a soft shade, so the line reads over bright ground
       ctx.save(); ctx.translate(W / 2, H * 0.83 + 8); ctx.scale(1, 0.16); ctx.translate(-W / 2, -(H * 0.83 + 8)); ctx.fillStyle = g; ctx.fillRect(W / 2 - 560, H * 0.83 + 8 - 560, 1120, 1120); ctx.restore(); }
     ctx.font = `300 44px ${SANS}`; ctx.letterSpacing = "0.5px"; ctx.fillStyle = "rgba(247,249,250,0.97)"; ctx.shadowColor = "rgba(0,0,0,0.6)"; ctx.shadowBlur = 18; ctx.fillText(line, W / 2, H * 0.83);
     if (num) { ctx.font = `500 16px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(255,190,120,0.95)"; ctx.fillText(num, W / 2 + 2, H * 0.83 + 44); } ctx.shadowBlur = 0; }

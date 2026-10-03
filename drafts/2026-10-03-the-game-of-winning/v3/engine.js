@@ -63,14 +63,14 @@ void main(){
     vec3 day = toLin(texture(uDay, uv).rgb); vec3 night = toLin(texture(uNight, uv).rgb);
     vec4 gr = uHasGrow > 0.5 ? texture(uGrow, uv) : vec4(1.0, 0.0, 0.0, 1.0);
     float depth = gr.g, isSea = step(0.004, depth) * step(day.r * 1.25 + 0.001, day.b);   // sea only where the day map is blue: pale sand is not a shallow sea
-    float dryYear = uSeaStart + pow(depth, 0.7) * (uSeaEnd - uSeaStart);
+    float dryYear = uSeaStart + pow(depth, 3.0) * (uSeaEnd - uSeaStart);   // most of the ocean is deep (median 0.93): the cube spreads the retreat across the years
     float sea = isSea * (1.0 - smoothstep(dryYear - 1.5, dryYear + 1.5, uYear));
     vec2 uvg = uv + (vec2(fbm(q * 24.0), fbm(q * 24.0 + 5.3)) - 0.5) * vec2(0.006, 0.006);   // a warped lookup, so growth fronts don't trace the map's texels
     float gYear = 2026.0 + (uHasGrow > 0.5 ? texture(uGrow, uvg).r : 1.0) * 128.0 + (fbm(q * 55.0) - 0.5) * 16.0 + (vnoise(q * 240.0) - 0.5) * 5.0;
     if (isSea > 0.5) gYear = dryYear + 6.0 + 24.0 * fbm(q * 70.0);
     float grown = smoothstep(gYear, gYear + 4.0, uYear) * (1.0 - sea);
     // dried sea floor: salt and silt
-    vec3 salt = mix(vec3(0.42, 0.39, 0.34), vec3(0.62, 0.59, 0.53), fbm(q * 40.0)) * (0.8 + 0.4 * depth);
+    vec3 salt = mix(vec3(0.075, 0.07, 0.062), vec3(0.2, 0.185, 0.16), fbm(q * 40.0) * 0.7 + 0.3 * vnoise(q * 300.0)) * (1.35 - 0.75 * depth);   // pale salt on the old shelves, dark silt in the basins
     day = mix(day, salt, isSea * (1.0 - sea));
     // solar glass over grown land: dark, gridded, glinting
     float fields = smoothstep(0.35, 0.5, vnoise(q * 700.0)) * (0.7 + 0.3 * vnoise(q * 2200.0));   // irregular field patches, not a grid
