@@ -29,7 +29,7 @@ uniform vec3 uTint; uniform float uProc; uniform sampler2D uGrow, uCloud; unifor
 ${NOISE}
 vec3 toLin(vec3 c){ return pow(c, vec3(2.2)); }
 vec3 thermalPal(float x){ x = clamp(x, 0.0, 1.0);
-  vec3 c = mix(vec3(0.01, 0.015, 0.04), vec3(0.06, 0.12, 0.28), smoothstep(0.0, 0.25, x)); c = mix(c, vec3(0.45, 0.2, 0.25), smoothstep(0.25, 0.45, x));
+  vec3 c = mix(vec3(0.01, 0.015, 0.04), vec3(0.05, 0.1, 0.24), smoothstep(0.0, 0.25, x)); c = mix(c, vec3(0.5, 0.14, 0.07), smoothstep(0.25, 0.45, x));
   c = mix(c, vec3(0.95, 0.42, 0.12), smoothstep(0.45, 0.7, x)); return pow(mix(c, vec3(1.0, 0.9, 0.65), smoothstep(0.7, 1.0, x)), vec3(2.2)); }
 vec3 ironbow(float x){ x = clamp(x, 0.0, 1.0);
   vec3 c = mix(vec3(0.002,0.001,0.014), vec3(0.258,0.039,0.406), smoothstep(0.0,0.2,x));
@@ -47,7 +47,8 @@ void main(){
     float x = (dmin - uRadius) / uRadius;
     vec3 hc = vec3(0.0);
     if (uMode == 2) hc = uAtmo * uEmissive * (0.5 * exp(-x * 9.0) + 0.12 * exp(-x * 1.6));
-    else if (uAtmoK > 0.0) { vec3 cp = uCamPos + rd * (-b) - uCenter; float lit = clamp(dot(normalize(cp), uSun) * 1.4 + 0.4, 0.0, 1.0); hc = uAtmo * uAtmoK * exp(-x * 55.0) * lit; }
+    else if (uAtmoK > 0.0) { vec3 cp = uCamPos + rd * (-b) - uCenter; float ndc = dot(normalize(cp), uSun); float tau = exp(-x * 140.0) * 1.6; float glow = 1.0 - exp(-tau);
+      vec3 ac = mix(vec3(1.0, 0.42, 0.16), uAtmo, smoothstep(-0.1, 0.1, ndc + x * 6.0)); hc = ac * uAtmoK * glow * smoothstep(-0.28, 0.25, ndc) * 0.9; }
     o = vec4(hc * uOpacity, 0.0); return;
   }
   float t = -b - sqrt(h); vec3 P = uCamPos + rd * t; vec3 N = normalize(P - uCenter);
@@ -63,28 +64,33 @@ void main(){
     float dryYear = uSeaStart + pow(depth, 0.7) * (uSeaEnd - uSeaStart);
     float sea = isSea * (1.0 - smoothstep(dryYear - 1.5, dryYear + 1.5, uYear));
     float gYear = 2026.0 + gr.r * 128.0 + (fbm(q * 55.0) - 0.5) * 16.0 + (vnoise(q * 240.0) - 0.5) * 5.0;
-    if (isSea > 0.5) gYear = dryYear + 6.0 + 20.0 * hash13(floor(q * 300.0));
+    if (isSea > 0.5) gYear = dryYear + 6.0 + 24.0 * fbm(q * 70.0);
     float grown = smoothstep(gYear, gYear + 4.0, uYear) * (1.0 - sea);
     // dried sea floor: salt and silt
     vec3 salt = mix(vec3(0.42, 0.39, 0.34), vec3(0.62, 0.59, 0.53), fbm(q * 40.0)) * (0.8 + 0.4 * depth);
     day = mix(day, salt, isSea * (1.0 - sea));
     // solar glass over grown land: dark, gridded, glinting
     float grid = max(pow(abs(sin(lon * 900.0)), 30.0), pow(abs(sin(lat * 900.0)), 30.0));
-    vec3 glass = vec3(0.018, 0.024, 0.04) * (1.0 + 0.6 * grid);
+    vec3 glass = vec3(0.012, 0.02, 0.04) * (1.0 + 0.8 * grid);
     float ice = smoothstep(0.55, 0.8, min(day.r, min(day.g, day.b)) / max(max(day.r, day.g), 1e-3) * dot(day, vec3(0.33)) * 2.0);
     float glassK = grown * (1.0 - ice * 0.6) * (0.55 + 0.45 * fbm(q * 90.0));
     day = mix(day, glass, glassK);
     float dl = smoothstep(-0.08, 0.3, ndl);
     vec3 dcol = day * dl * uDayGain;
     vec3 hv = normalize(uSun - rd); float spec = pow(max(dot(N, hv), 0.0), 70.0);
-    dcol += vec3(1.0, 0.95, 0.85) * pow(max(dot(N, hv), 0.0), 600.0) * sea * 0.9 * dl * uDayGain + vec3(0.9, 0.92, 1.0) * spec * sea * 0.04 * dl * uDayGain;
-    dcol += vec3(1.0, 0.93, 0.8) * pow(max(dot(N, hv), 0.0), 260.0) * glassK * 3.0 * dl * uDayGain;
+    dcol += vec3(1.0, 0.95, 0.85) * pow(max(dot(N, hv), 0.0), 1400.0) * sea * 0.35 * dl * uDayGain + vec3(0.9, 0.92, 1.0) * spec * sea * 0.03 * dl * uDayGain;
+    // glass glints: each field tilted a little differently, so the desert sparkles instead of mirroring one sun
+    vec3 gc = floor(q * 1400.0); vec3 jn = normalize(N + (vec3(hash13(gc), hash13(gc + 3.1), hash13(gc + 7.7)) - 0.5) * 0.3);
+    dcol += vec3(1.0, 0.93, 0.8) * (pow(max(dot(jn, hv), 0.0), 260.0) * 1.2 * step(0.55, hash13(gc + 1.9)) + pow(max(dot(N, hv), 0.0), 30.0) * 0.03) * glassK * dl * uDayGain;
     // night: city lights, then industrial amber in settlement-scale grain
     float nl = smoothstep(0.12, -0.15, ndl);
     float nlum = dot(night, vec3(0.3, 0.59, 0.11)); vec3 nb = mix(vec3(nlum), night, 0.55); nb = max(nb - 0.0015, 0.0) * smoothstep(0.0, 0.02, nlum);
     float grain = smoothstep(0.55, 0.9, vnoise(q * 700.0)) * 0.8 + smoothstep(0.62, 0.95, vnoise(q * 2600.0)) * 0.7;
-    int owner = int(floor(gr.b * 255.0 / 20.0 + 0.5)); vec3 amber = uPCol[clamp(owner, 0, 11)];
-    vec3 ncol = nb * vec3(1.0, 0.84, 0.6) * 1.3 * (1.0 - grown * 0.5) + amber * grown * (0.006 + 0.13 * grain + nlum * 1.3);
+    int owner = int(floor(gr.b * 255.0 / 20.0 + 0.5)); vec3 amber = mix(vec3(1.0, 0.72, 0.42), uPCol[clamp(owner, 0, 11)], 0.85);
+    vec2 px = vec2(1.0 / 2048.0, 1.0 / 1024.0) * 1.5; float oA = texture(uGrow, uv + vec2(px.x, 0.0)).b, oB = texture(uGrow, uv + vec2(0.0, px.y)).b;
+    vec3 cA = uPCol[clamp(int(floor(oA * 255.0 / 20.0 + 0.5)), 0, 11)], cB = uPCol[clamp(int(floor(oB * 255.0 / 20.0 + 0.5)), 0, 11)], cS = uPCol[clamp(owner, 0, 11)];
+    float border = step(0.02, length(cA - cS) + length(cB - cS));
+    vec3 ncol = nb * vec3(1.0, 0.84, 0.6) * 1.3 * (1.0 - grown * 0.5) + amber * grown * (0.012 + 0.16 * grain + nlum * 1.3) * (1.0 - 0.8 * border);
     float cl = 0.0;
     if (uClouds > 0.0) { if (uHasCloud > 0.5) { vec2 cuv = uv + vec2(uTime * 0.0004, 0.0); cl = smoothstep(0.18, 0.75, texture(uCloud, cuv).r) * uClouds; } else { vec3 cq = q * 9.0 + vec3(uTime * 0.006, 0.0, 0.0); float w = fbm(cq * 0.5); cl = smoothstep(0.6, 0.74, fbm(cq + w * 2.0) * (0.7 + 0.45 * pow(abs(sin(lat * 3.0)), 0.6))) * uClouds; } }
     dcol = mix(dcol, vec3(0.88, 0.9, 0.93) * dl * uDayGain, cl * 0.75);
@@ -95,7 +101,8 @@ void main(){
       float heat = 0.015 + 0.07 * cl2 * cl2 + (1.0 - sea) * 0.07 + uHeat * 0.05 + grown * (0.3 + 0.4 * uHeat) * (0.55 + 0.45 * grain) + nlum * 0.9 * uHeat;
       col = mix(col, thermalPal(heat) * 1.3, uThermal);
     }
-    col += uAtmo * uAtmoK * pow(1.0 - view, 3.0) * clamp(ndl * 1.5 + 0.35, 0.0, 1.0) * 0.6;
+    vec3 ac = mix(vec3(1.0, 0.45, 0.18), uAtmo, smoothstep(-0.05, 0.3, ndl)); float lit = smoothstep(-0.2, 0.3, ndl);
+    col += ac * uAtmoK * (pow(1.0 - view, 2.6) * 0.75 + 0.035) * lit;
   } else if (uMode == 1) {                            // rocky worlds: Mercury, the Moon, an alien planet
     vec3 alb = toLin(texture(uDay, uv).rgb); float lum = dot(alb, vec3(0.3, 0.59, 0.11)); alb = mix(alb, vec3(lum), uDesat) * uTint;
     if (uProc > 0.5) { float m = fbm(q * 4.0), rr = ridged(q * 11.0); alb = mix(vec3(0.16, 0.075, 0.04), vec3(0.42, 0.27, 0.16), smoothstep(0.3, 0.7, m)) * (0.75 + 0.5 * rr); alb *= 0.85 + 0.3 * smoothstep(0.55, 0.8, vnoise(q * 40.0)); }
@@ -244,7 +251,19 @@ function create(canvas, W, H) {
     return { tex, fb, w, h };
   }
 
+  // upsampling a pass rendered at reduced size: Catmull-Rom in nine bilinear taps (keeps edges and stars crisper than bilinear)
+  const UPS_FS = `#version 300 es
+precision highp float; in vec2 vUV; out vec4 o; uniform sampler2D uSrc; uniform vec2 uSize;
+void main(){ vec2 sp = vUV * uSize; vec2 t1 = floor(sp - 0.5) + 0.5; vec2 f = sp - t1;
+  vec2 w0 = f * (-0.5 + f * (1.0 - 0.5 * f)), w1 = 1.0 + f * f * (-2.5 + 1.5 * f), w2 = f * (0.5 + f * (2.0 - 1.5 * f)), w3 = f * f * (-0.5 + 0.5 * f);
+  vec2 w12 = w1 + w2, t0 = (t1 - 1.0) / uSize, t3 = (t1 + 2.0) / uSize, t12 = (t1 + w2 / w12) / uSize;
+  vec3 r = texture(uSrc, vec2(t0.x, t0.y)).rgb * w0.x * w0.y + texture(uSrc, vec2(t12.x, t0.y)).rgb * w12.x * w0.y + texture(uSrc, vec2(t3.x, t0.y)).rgb * w3.x * w0.y
+         + texture(uSrc, vec2(t0.x, t12.y)).rgb * w0.x * w12.y + texture(uSrc, vec2(t12.x, t12.y)).rgb * w12.x * w12.y + texture(uSrc, vec2(t3.x, t12.y)).rgb * w3.x * w12.y
+         + texture(uSrc, vec2(t0.x, t3.y)).rgb * w0.x * w3.y + texture(uSrc, vec2(t12.x, t3.y)).rgb * w12.x * w3.y + texture(uSrc, vec2(t3.x, t3.y)).rgb * w3.x * w3.y;
+  o = vec4(max(r, 0.0), 0.0); }`;
+  const lowT = {};
   const P = {
+    ups: prog(FULL_VS, UPS_FS),
     sphere: prog(FULL_VS, SPHERE_FS), points: prog(POINTS_VS, POINTS_FS), lines: prog(LINES_VS, LINES_FS),
     down: prog(FULL_VS, DOWN_FS), up: prog(FULL_VS, UP_FS), comp: prog(FULL_VS, COMP_FS),
   };
@@ -295,6 +314,18 @@ function create(canvas, W, H) {
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
       return { tex: t };
+    },
+    // value noise as textures: one lookup instead of eight hashes. 2D 256², 3D 64³, tileable
+    noiseTextures() {
+      let sd = 12345; const r = () => (sd = (Math.imul(sd, 1664525) + 1013904223) >>> 0) / 4294967296;
+      const a2 = new Uint8Array(256 * 256).map(() => r() * 255), a3 = new Uint8Array(64 * 64 * 64).map(() => r() * 255);
+      gl.pixelStorei(gl.UNPACK_ALIGNMENT, 1);
+      const t2 = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, t2); gl.texImage2D(gl.TEXTURE_2D, 0, gl.R8, 256, 256, 0, gl.RED, gl.UNSIGNED_BYTE, a2);
+      for (const [k, v] of [[gl.TEXTURE_MIN_FILTER, gl.LINEAR], [gl.TEXTURE_MAG_FILTER, gl.LINEAR], [gl.TEXTURE_WRAP_S, gl.REPEAT], [gl.TEXTURE_WRAP_T, gl.REPEAT]]) gl.texParameteri(gl.TEXTURE_2D, k, v);
+      const t3 = gl.createTexture(); gl.bindTexture(gl.TEXTURE_3D, t3); gl.texImage3D(gl.TEXTURE_3D, 0, gl.R8, 64, 64, 64, 0, gl.RED, gl.UNSIGNED_BYTE, a3);
+      for (const [k, v] of [[gl.TEXTURE_MIN_FILTER, gl.LINEAR], [gl.TEXTURE_MAG_FILTER, gl.LINEAR], [gl.TEXTURE_WRAP_S, gl.REPEAT], [gl.TEXTURE_WRAP_T, gl.REPEAT], [gl.TEXTURE_WRAP_R, gl.REPEAT]]) gl.texParameteri(gl.TEXTURE_3D, k, v);
+      gl.pixelStorei(gl.UNPACK_ALIGNMENT, 4);
+      return { n2: { tex: t2 }, n3: { tex: t3, is3D: true } };
     },
     resize(w, h) { /* the film renders at a fixed internal size; the player scales the canvas */ },
     loadTexture(url) {
@@ -364,8 +395,19 @@ function create(canvas, W, H) {
     fullscreen(pr, uniforms = {}, textures = {}, blend = "add") {
       gl.useProgram(pr.p); gl.bindVertexArray(vaoEmpty); gl.disable(gl.DEPTH_TEST); gl.depthMask(false);
       gl.enable(gl.BLEND); if (blend === "add") gl.blendFunc(gl.ONE, gl.ONE); else gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
-      let unit = 0; for (const [k, t] of Object.entries(textures)) { gl.activeTexture(gl.TEXTURE0 + unit); gl.bindTexture(gl.TEXTURE_2D, t.tex); setI(pr, k, unit); unit++; }
+      let unit = 0; for (const [k, t] of Object.entries(textures)) { gl.activeTexture(gl.TEXTURE0 + unit); gl.bindTexture(t.is3D ? gl.TEXTURE_3D : gl.TEXTURE_2D, t.tex); setI(pr, k, unit); unit++; }
       setU(pr, "uRes", [W, H]); for (const [k, v] of Object.entries(uniforms)) (Number.isInteger(v) && k.startsWith("i")) ? setI(pr, k, v) : setU(pr, k, v);
+      gl.drawArrays(gl.TRIANGLES, 0, 3);
+    },
+    // a fullscreen pass rendered at a fraction of the frame size, then upsampled into it (the heavy ground scenes)
+    fullscreenAt(scale, pr, uniforms = {}, textures = {}) {
+      if (scale >= 0.999) return this.fullscreen(pr, uniforms, textures);
+      const w = Math.round(W * scale), h = Math.round(H * scale), key = w + "x" + h, lo = lowT[key] || (lowT[key] = target(w, h, false));
+      gl.bindFramebuffer(gl.FRAMEBUFFER, lo.fb); gl.viewport(0, 0, w, h); gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT);
+      this.fullscreen(pr, uniforms, textures);
+      gl.bindFramebuffer(gl.FRAMEBUFFER, hdr.fb); gl.viewport(0, 0, W, H);
+      gl.useProgram(P.ups.p); gl.bindVertexArray(vaoEmpty); gl.disable(gl.DEPTH_TEST); gl.depthMask(false); gl.enable(gl.BLEND); gl.blendFunc(gl.ONE, gl.ONE);
+      gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, lo.tex); setI(P.ups, "uSrc", 0); setU(P.ups, "uSize", [w, h]);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
     },
     end({ bloom = 0.9, exposure = 1, grain = 0.035, vignette = 0.35, fade = 1, seed = 0, thresh = 0.9, fadeCol = [0, 0, 0] } = {}) {

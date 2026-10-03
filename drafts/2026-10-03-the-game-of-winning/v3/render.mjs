@@ -23,7 +23,7 @@ const server = createServer((req, res) => {
 await new Promise(r => server.listen(0, "127.0.0.1", r));
 const origin = `http://127.0.0.1:${server.address().port}`;
 
-async function openFilm(tag) {
+async function openFilm(tag, extra = "") {
   const profile = join(process.env.TMPDIR || tmpdir(), `gow2-${process.pid}-${tag}`);
   const p = spawn(CHROME, ["--headless=new", "--use-angle=metal", "--enable-gpu-rasterization", "--ignore-gpu-blocklist", "--hide-scrollbars", "--mute-audio", "--no-first-run",
     `--user-data-dir=${profile}`, "--remote-debugging-port=0", "--window-size=1920,1080", "about:blank"], { stdio: ["ignore", "ignore", "pipe"] });
@@ -36,7 +36,7 @@ async function openFilm(tag) {
   const { sessionId } = await send("Target.attachToTarget", { targetId, flatten: true });
   const S = (m, q) => send(m, q, sessionId);
   await S("Runtime.enable");
-  await S("Page.navigate", { url: `${origin}/index.html?render=1` });
+  await S("Page.navigate", { url: `${origin}/index.html?render=1${extra ? "&" + extra : ""}` });
   const evalv = async (expr) => { const r = await S("Runtime.evaluate", { expression: expr, returnByValue: true, awaitPromise: true }); if (r.exceptionDetails) throw new Error(JSON.stringify(r.exceptionDetails.exception?.description || r.exceptionDetails)); return r.result.value; };
   for (let i = 0; i < 600; i++) {
     let st = null; try { st = await evalv("window.FILM && ({ ready: FILM.ready, error: FILM.error })"); } catch {}
@@ -77,16 +77,28 @@ try {
       "-af", "volume=12.7dB,alimiter=limit=0.85:level=disabled", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", mp4]);
     rmSync(work, { recursive: true, force: true }); console.log(`${mp4}  (${((Date.now() - t0) / 1000).toFixed(0)}s)`);
   }
+  if (args.includes("--growth")) {   // compute the growth map once (index.html?regrow) and save it as growth.png
+    const film = await openFilm("growth", "regrow"); const url = await film.evalv("Film.exportGrowth()"); film.close();
+    writeFileSync(join(here, "growth.png"), Buffer.from(url.split(",")[1], "base64")); console.log(join(here, "growth.png"));
+  }
   if (opt("--sheet") !== null) {   // --sheet from,to,step[,cols]  → out/sheet.png, one image for a fast look at a stretch of the film
-    const [a, b, st, cols = 4] = opt("--sheet").split(",").map(Number); const film = await openFilm("sheet"); const dir = join(outDir, "sheet"); mkdirSync(dir, { recursive: true });
-    const ts = []; for (let x = a; x <= b + 1e-6; x += st) ts.push(+x.toFixed(2));
+    // or --sheet @t1:t2:t3…[,cols] for chosen moments; --out NAME writes out/NAME.png
+    const spec = opt("--sheet"), list = spec.startsWith("@"); const parts = spec.replace("@", "").split(",");
+    const ts = [], cols = +(list ? parts[1] : parts[3]) || 4; const film = await openFilm("sheet"); const dir = join(outDir, "sheet"); mkdirSync(dir, { recursive: true });
+    if (list) ts.push(...parts[0].split(":").map(Number)); else { const [a, b, st] = parts.map(Number); for (let x = a; x <= b + 1e-6; x += st) ts.push(+x.toFixed(2)); }
+    // --story: the times are story seconds (the screenplay's clock), mapped to film seconds through the time map
+    if (args.includes("--story")) for (let i = 0; i < ts.length; i++) ts[i] = +(await film.evalv(`Film.filmT(${ts[i]})`)).toFixed(3);
     try { for (const [i, x] of ts.entries()) writeFileSync(join(dir, `f${String(i).padStart(3, "0")}.png`), await film.frame(x)); } finally { film.close(); }
-    await run(["-y", "-loglevel", "error", "-start_number", "0", "-i", join(dir, "f%03d.png"), "-frames:v", "1", "-vf", `scale=640:-1,tile=${cols}x${Math.ceil(ts.length / cols)}:padding=4:color=0x222222`, join(outDir, "sheet.png")]);
+    await run(["-y", "-loglevel", "error", "-start_number", "0", "-i", join(dir, "f%03d.png"), "-frames:v", "1", "-vf", `scale=640:-1,tile=${cols}x${Math.ceil(ts.length / cols)}:padding=4:color=0x222222`, join(outDir, (opt("--out") || "sheet") + ".png")]);
     for (const [i] of ts.entries()) rmSync(join(dir, `f${String(i).padStart(3, "0")}.png`));
-    console.log(join(outDir, "sheet.png"), ts.join(" "));
+    console.log(join(outDir, (opt("--out") || "sheet") + ".png"), ts.join(" "));
+  }
+  if (opt("--perf") !== null) {   // --perf a,b,step: GPU time per frame (ms, story seconds) — the live player needs < 16
+    const [a, b, st] = opt("--perf").split(",").map(Number); const film = await openFilm("perf"); if (opt("--js")) console.log("js →", await film.evalv(opt("--js")));
+    try { for (let x = a; x <= b + 1e-6; x += st) { const ft = await film.evalv(`Film.filmT(${x})`); await film.evalv(`Film.timeFrame(${ft})`); let ms = 0; for (let k = 0; k < 3; k++) ms += await film.evalv(`Film.timeFrame(${ft})`); console.log(`story ${x.toFixed(1)}  ${(ms / 3).toFixed(1)} ms  ${await film.evalv(`Film.sceneAt(${ft})`)}`); } } finally { film.close(); }
   }
   if (opt("--stills") !== null) {
-    const film = await openFilm("stills");
+    const film = await openFilm("stills"); if (opt("--js")) console.log("js →", await film.evalv(opt("--js")));
     try {
       const dir = join(outDir, "stills"); mkdirSync(dir, { recursive: true });
       for (const s of opt("--stills").split(",").map(Number)) { const t0 = Date.now(); const f = join(dir, `t${s.toFixed(1).padStart(5, "0")}.png`); writeFileSync(f, await film.frame(s)); console.log(f, `${Date.now() - t0}ms`); }

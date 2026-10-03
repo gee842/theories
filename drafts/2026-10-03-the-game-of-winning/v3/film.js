@@ -83,7 +83,8 @@ function ln(a, b, c, alpha, w) { if (nl >= 60000) return; const o = nl * 11; LN.
 const flushPts = opt => { E.points(PT, np, opt); np = 0; };
 const flushLns = opt => { E.lines(LN, nl, opt); nl = 0; };
 let CAM = null;   // current camera, for labels
-function camera(pos, look, fov = 40, near = 0.01, far = 20000) { CAM = { pos, look }; return E.camera(pos, look, [0, 1, 0], fov, near, far); }
+let CAMF = null;
+function camera(pos, look, fov = 40, near = 0.01, far = 20000) { CAM = { pos, look }; CAMF = E.camera(pos, look, [0, 1, 0], fov, near, far); return CAMF; }
 
 /* ================= GPU particle systems ================= */
 let SYS = {}, SYS_GAL_BODY = '';
@@ -140,8 +141,8 @@ const DC_REGIONS = [[-77.49, 39.04], [-97.0, 32.9], [-112.0, 33.4], [-99.73, 32.
   [-6.26, 53.35], [-0.1, 51.5], [4.9, 52.37], [8.68, 50.1], [2.35, 48.86], [22.15, 65.58], [-3.7, 40.4], [9.19, 45.46], [21.0, 52.23], [139.7, 35.68], [135.5, 34.7], [126.98, 37.56],
   [114.9, 40.8], [121.5, 31.2], [106.6, 26.6], [113.1, 41.0], [114.2, 22.3], [103.8, 1.35], [106.8, -6.2], [72.88, 19.07], [80.27, 13.08], [151.2, -33.87], [144.96, -37.8],
   [-46.63, -23.55], [-100.4, 20.6], [28.05, -26.2], [54.38, 24.45], [46.7, 24.7], [34.78, 32.08]];
-function buildGrowth(nightImg, dayImg) {
-  const GW = 1024, GH = 512, cv = document.createElement("canvas"); cv.width = GW; cv.height = GH; const c2 = cv.getContext("2d", { willReadFrequently: true });
+function buildGrowth(nightImg, dayImg, GW = 2048, GH = 1024) {
+  const cv = document.createElement("canvas"); cv.width = GW; cv.height = GH; const c2 = cv.getContext("2d", { willReadFrequently: true });
   c2.drawImage(nightImg, 0, 0, GW, GH); const night = c2.getImageData(0, 0, GW, GH).data;
   c2.drawImage(dayImg, 0, 0, GW, GH); const day = c2.getImageData(0, 0, GW, GH).data;
   const N = GW * GH, light = new Float32Array(N), sea = new Float32Array(N);
@@ -171,7 +172,16 @@ function buildGrowth(nightImg, dayImg) {
     const yr = sea[i] > 0 ? 2200 : cost[i] < 1e8 ? 2027 + Math.pow(cost[i] / maxc, 0.8) * 85 : 2110;   // land: 2027–2112 (Kardashev I)
     bytes[i * 4] = clamp((yr - 2026) / 128) * 255; bytes[i * 4 + 1] = sea[i] * 255; bytes[i * 4 + 2] = owner[i] * 20; bytes[i * 4 + 3] = 255;
   }
-  GROW = E.dataTexture(GW, GH, bytes);
+  GROW = E.dataTexture(GW, GH, bytes); GROW_BYTES = { GW, GH, bytes };
+}
+let GROW_BYTES = null;
+function exportGrowth() { const { GW, GH, bytes } = GROW_BYTES; const cv = document.createElement("canvas"); cv.width = GW; cv.height = GH; const c2 = cv.getContext("2d"); const id = c2.createImageData(GW, GH); id.data.set(bytes); c2.putImageData(id, 0, 0); return cv.toDataURL("image/png"); }
+async function loadGrowth() {
+  const img = await new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = "growth.png"; });
+  const cv = document.createElement("canvas"); cv.width = img.width; cv.height = img.height; const c2 = cv.getContext("2d", { willReadFrequently: true }); c2.drawImage(img, 0, 0);
+  const bytes = new Uint8Array(c2.getImageData(0, 0, img.width, img.height).data.buffer); GROW = E.dataTexture(img.width, img.height, bytes);
+  // seeds' players must match the map: recompute the deal
+  const order = DC_REGIONS.map((s0, i) => i).sort((a, b) => DC_REGIONS[a][0] - DC_REGIONS[b][0]); SEED_PLAYER = new Array(DC_REGIONS.length); order.forEach((s0, k) => { SEED_PLAYER[s0] = k % 12; });
 }
 
 /* ================= Earth helpers ================= */
@@ -210,184 +220,361 @@ function sToday(t) {
 }
 
 /* ================= ground scenes: one ray-marched shader, four moods ================= */
-let GROUND = null;
+let GROUND = null, NOISE = null;
 const GROUND_FS = `#version 300 es
 precision highp float; in vec2 vUV; out vec4 o; uniform vec2 uRes;
-uniform float uMode, uTime, uH, uPitch, uYaw, uLaunch, uStars, uFade, uHaze, uDomeLight, uFov;
-// moods: 0 campus at night · 1 the white day · 2 two suns · 3 the night the stars go out
+uniform int iZero; uniform vec4 uPl[40], uPc[40]; uniform vec3 uRk;   // always 0: loop bounds that depend on it are not unrolled, which keeps this shader small enough to run fast
+uniform float uMode, uTime, uH, uPitch, uYaw, uLaunch, uStars, uFade, uHaze, uDomeLight, uFov, uCamX, uDbg;
+bool off(int b){ return (int(uDbg) & b) != 0; }   // development: switch parts off to time them
+// four moods: 0 West Texas at dusk · 1 the dry Mediterranean at noon · 2 two suns, a dim day · 3 the night the stars go out
+// MD is defined per program (one compiled shader per mood, so each carries only its own work)
 float h21(vec2 p){ p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
 float h31(vec3 p){ p = fract(p * 0.1031); p += dot(p, p.zyx + 31.32); return fract((p.x + p.y) * p.z); }
-float n2(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f); return mix(mix(h21(i), h21(i+vec2(1,0)), f.x), mix(h21(i+vec2(0,1)), h21(i+vec2(1,1)), f.x), f.y); }
-float n3(vec3 p){ vec3 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f);
-  return mix(mix(mix(h31(i), h31(i+vec3(1,0,0)), f.x), mix(h31(i+vec3(0,1,0)), h31(i+vec3(1,1,0)), f.x), f.y), mix(mix(h31(i+vec3(0,0,1)), h31(i+vec3(1,0,1)), f.x), mix(h31(i+vec3(0,1,1)), h31(i+vec3(1,1,1)), f.x), f.y), f.z); }
-float fb(vec2 p){ float a = 0.5, s = 0.0; for (int i = 0; i < 5; i++) { s += a * n2(p); p = p * 2.02 + 7.3; a *= 0.5; } return s; }
-float fb3(vec3 p){ float a = 0.5, s = 0.0; for (int i = 0; i < 4; i++) { s += a * n3(p); p = p * 2.03 + 7.3; a *= 0.5; } return s; }
+precision highp sampler3D; uniform sampler2D uN2; uniform sampler3D uN3;
+float n2(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f); return texture(uN2, (i + f + 0.5) / 256.0).r; }
+float n3(vec3 p){ vec3 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f); return texture(uN3, (i + f + 0.5) / 64.0).r; }
+float fb(vec2 p){ float a = 0.5, s = 0.0; for (int i = 0; i < 5 + iZero; i++) { s += a * n2(p); p = p * 2.02 + 7.3; a *= 0.5; } return s; }
+float fb3(vec3 p){ float a = 0.5, s = 0.0; for (int i = 0; i < 4 + iZero; i++) { s += a * n3(p); p = p * 2.03 + 7.3; a *= 0.5; } return s; }
 vec2 vor(vec2 p){ vec2 i = floor(p), f = fract(p); float d1 = 9.0, d2 = 9.0; for (int y = -1; y <= 1; y++) for (int x = -1; x <= 1; x++) { vec2 g = vec2(x, y); vec2 c = g + vec2(h21(i + g), h21(i + g + 3.1)); float d = length(c - f); if (d < d1) { d2 = d1; d1 = d; } else if (d < d2) d2 = d; } return vec2(d1, d2); }
 float sdBox(vec3 p, vec3 b){ vec3 q = abs(p) - b; return length(max(q, 0.0)) + min(max(q.x, max(q.y, q.z)), 0.0); }
 float sdCap(vec3 p, vec3 a, vec3 b, float r){ vec3 pa = p - a, ba = b - a; float h = clamp(dot(pa, ba) / dot(ba, ba), 0.0, 1.0); return length(pa - ba * h) - r; }
 float smin(float a, float b, float k){ float h = clamp(0.5 + 0.5 * (b - a) / k, 0.0, 1.0); return mix(b, a, h) - k * h * (1.0 - h); }
-const vec3 DOME = vec3(-8.0, 0.0, -52.0); const float DOME_R = 30.0;
-bool night(){ return uMode < 0.5 || uMode > 2.5; }
+const vec3 DOME = vec3(-8.0, 0.0, -52.0); const float DOME_R = 30.0; const float HX = 260.0, HZ = 95.0;
+vec3 SUN0 = vec3(-0.447, -0.03, -0.894);    // dusk: the sun just under the horizon, ahead and left
+vec3 SUN1 = vec3(0.42, 0.6, -0.68);         // noon over the basin: high, ahead and right, so the steam is lit from behind
+vec3 MOONL = vec3(0.33, 0.4, -0.855);       // the blazing Moon
+vec3 RSUN = vec3(-0.55, 0.15, -0.8);        // the enclosed Sun, low and red
+vec3 ro;
 
-// a person, standing, about 1.75 m; looking up when lean > 0
+// the rocket, 7 km away; u runs 0 → 1 over the shot (the same path is in film.js)
+vec3 rocket(float u){ return vec3(900.0 - 1500.0 * u * u, 60000.0 * pow(u, 1.8), -7000.0 - 9000.0 * u * u); }
+
+/* ---------- geometry ---------- */
 float person(vec3 p, vec3 b, float s){
   p = (p - b) / s; float d = sdCap(p, vec3(-0.1, 0.05, 0), vec3(-0.08, 0.86, 0), 0.075); d = min(d, sdCap(p, vec3(0.1, 0.05, 0), vec3(0.08, 0.86, 0), 0.075));
-  d = smin(d, sdCap(p, vec3(0, 0.95, 0), vec3(0.02, 1.4, 0.0), 0.17), 0.05); d = min(d, length(p - vec3(0.04, 1.63, 0.07)) - 0.11);
-  d = min(d, sdCap(p, vec3(-0.21, 1.38, 0), vec3(-0.27, 0.92, 0.03), 0.05)); d = min(d, sdCap(p, vec3(0.21, 1.38, 0), vec3(0.27, 0.92, 0.03), 0.05)); return d * s;
+  d = smin(d, sdCap(p, vec3(0, 0.95, 0), vec3(0.02, 1.4, -0.03), 0.165), 0.05); d = min(d, length(p - vec3(0.03, 1.62, -0.05)) - 0.105);
+  d = min(d, sdCap(p, vec3(-0.21, 1.38, 0), vec3(-0.26, 0.92, 0.03), 0.048)); d = min(d, sdCap(p, vec3(0.21, 1.38, 0), vec3(0.26, 0.92, 0.03), 0.048)); return d * s;
 }
-// compute halls: long, low, clad in vertical ribs, plant on the roof
-float halls(vec3 p, out float id){
-  float zStart = uMode < 0.5 ? -45.0 : -150.0;
-  vec3 q = p; q.x = mod(p.x + 48.0, 96.0) - 48.0; float cz = floor((p.z + 32.0) / 64.0); q.z = mod(p.z + 32.0, 64.0) - 32.0;
-  id = h21(vec2(floor((p.x + 48.0) / 96.0), cz));
-  float hgt = 4.5 + 2.0 * id; float d = sdBox(q - vec3(0.0, hgt, 0.0), vec3(38.0, hgt, 15.0));
-  vec3 r = q; r.x = mod(q.x + 4.0, 8.0) - 4.0; float plant = sdBox(r - vec3(0.0, 2.0 * hgt + 1.1, 0.0), vec3(2.4, 1.1, 10.0)); plant = max(plant, abs(q.x) - 35.0);
-  d = min(d, plant);
-  d = max(d, p.z - zStart);
-  if (uMode > 0.5) d = max(d, 72.0 - length(p.xz - DOME.xz));
-  return d;
+// hyperscale halls: 210 m long, 48 m deep, 14–20 m tall, a double row of chillers on the roof; the road runs between two columns
+float halls(vec3 p, out float id, out vec3 q){
+  float z0 = MD == 0 ? -110.0 : -1500.0;
+  vec2 cell = vec2(floor(p.x / HX), floor(p.z / HZ));
+  q = vec3(mod(p.x, HX) - HX * 0.5, p.y, mod(p.z, HZ) - HZ * 0.5);
+  id = h21(cell + 0.37);
+  float hgt = (9.0 + 5.0 * id) * (MD == 0 ? 1.0 : 2.4);
+  float d = sdBox(q - vec3(0.0, hgt, 0.0), vec3(105.0, hgt, 24.0));
+  vec3 r = q; r.x = mod(q.x + 4.5, 9.0) - 4.5; r.z = abs(q.z) - 11.0;
+  float ch = max(sdBox(r - vec3(0.0, 2.0 * hgt + 1.2, 0.0), vec3(3.3, 1.2, 4.2)), abs(q.x) - 99.0);
+  d = min(d, ch);
+  if (id > 0.55) d = min(d, sdCap(q, vec3(-112.0, 0.0, 30.0), vec3(-112.0, 52.0, 30.0), 2.6));   // turbine stacks between the halls
+  if (MD != 0) d = max(d, -(p.z + 1500.0 + 900.0 * h21(vec2(cell.x, 3.0))));   // the basin halls start far off, ragged
+  return max(d, p.z - z0);
 }
-// the garden under the dome: clustered trees, low shrubs, people
-float tree(vec3 q, float seed){
-  float hgt = 6.5 + 4.0 * fract(seed * 7.3); float d = sdCap(q, vec3(0.0), vec3(0.3 * sin(seed * 9.0), hgt * 0.7, 0.0), 0.32);
-  for (int k = 0; k < 4; k++) { float fk = float(k); vec3 c = vec3(sin(seed * 3.0 + fk * 1.9) * 1.8, hgt * (0.68 + 0.12 * fk), cos(seed * 5.0 + fk * 2.3) * 1.8);
-    d = smin(d, length(q - c) - (2.4 - 0.25 * fk) - fb3(q * 0.9 + seed) * 1.1, 0.8); }
-  return d;
-}
+// the garden: eleven trees, their canopies precomputed as spheres (film.js, TREES); a bounding sphere per tree lets most of them be skipped
+uniform vec4 uTS[55], uTA[11], uTT[11], uTB[11];
 float garden(vec3 p){
-  vec3 q = p - DOME; if (length(q) > DOME_R + 1.0) return length(q) - DOME_R;
+  vec3 q = p - DOME; float bound = length(q) - DOME_R; if (bound > 1.0 || off(512)) return max(bound, 0.5);
   float d = 1e3;
-  for (int k = 0; k < 8; k++) { float fk = float(k); vec2 c = vec2(sin(fk * 2.4 + 0.5) * (6.0 + fk * 2.1), cos(fk * 2.4 + 0.5) * (5.0 + fk * 1.9) - 3.0); d = min(d, tree(q - vec3(c.x, 0.0, c.y), fk + 1.0)); }
-  d = min(d, q.y - 0.9 * smoothstep(1.0, 0.0, fb(q.xz * 0.35)) + 0.2);   // shrubs
-  if (uMode > 0.5 && uMode < 1.5) for (int k = 0; k < 4; k++) { float fk = float(k); d = min(d, person(q, vec3(-7.0 + fk * 3.4, 0.0, 19.0 + fk * 1.1), 1.0 - 0.05 * fk)); }
+  for (int k = 0; k < 11 + iZero; k++) { float db = length(q - uTB[k].xyz) - uTB[k].w; if (db > 1.0) { d = min(d, db); continue; }
+    float dt = sdCap(q, uTA[k].xyz, uTT[k].xyz, 0.26);
+    for (int j = 0; j < 5 + iZero; j++) { vec4 sp = uTS[k * 5 + j]; dt = smin(dt, length(q - sp.xyz) - sp.w, 1.3); }
+    d = min(d, dt); }
+  if (d < 1.5) d += (n3(q * 1.4) - 0.5) * 1.1 + (n3(q * 4.2) - 0.5) * 0.3;
+  float sb = smoothstep(0.62, 0.3, n2(q.xz * 0.3)); d = min(d, max(max(q.y - 1.0 * sb + 0.25, 0.6 - 2.0 * sb), length(q.xz) - (DOME_R - 2.0)));   // shrubs, only where they grow
+  // people under the glass
+  if (MD == 1) for (int k = 0; k < 5 + iZero; k++) { float fk = float(k); vec3 b = vec3(-11.0 + fk * 4.3, 0.0, 22.0 - abs(fk - 2.0) * 1.6); float pb = length(q - b - vec3(0.0, 0.9, 0.0)) - 1.1;
+    d = min(d, pb > 0.5 ? pb : person(q, b, 1.0 - 0.04 * fk)); }
   return d;
 }
-float figures(vec3 p){ if (uMode < 1.5 || uMode > 2.5) return 1e3; return min(person(p, vec3(6.0, 0.0, 18.0), 1.0), person(p, vec3(7.15, 0.0, 17.3), 0.93)); }
-float scene(vec3 p, out float mat, out float id){
-  float hid; float dh = halls(p, hid); float dg = uMode > 0.5 ? garden(p) : 1e3; float df = figures(p);
-  float d = p.y; mat = 0.0; id = 0.0;
-  if (dh < d) { d = dh; mat = 1.0; id = hid; }
-  if (dg < d) { d = dg; mat = 2.0; }
-  if (df < d) { d = df; mat = 3.0; }
+float figures(vec3 p){ if (MD != 2) return 1e3; vec3 c = vec3(5.0, 0.0, 16.0); float b = length(p - c) - 4.0; if (b > 1.0) return b; return min(person(p, vec3(4.2, 0.0, 16.3), 1.0), person(p, vec3(5.4, 0.0, 15.6), 0.93)); }
+float scene(vec3 p, out float mat, out float id, out vec3 q){
+  float d = 1e4; mat = -1.0; id = 0.0; q = vec3(0.0);
+  float hid; vec3 hq; float dh = halls(p, hid, hq); if (dh < d) { d = dh; mat = 1.0; id = hid; q = hq; }
+  if (MD != 0) { float dg = garden(p); if (dg < d) { d = dg; mat = 2.0; } }
+  float df = figures(p); if (df < d) { d = df; mat = 3.0; }
+  if (MD == 0) { float fx = abs(p.x); vec3 fp = vec3(mod(p.x, 3.2) - 1.6, p.y, p.z + 70.0); float dp = max(sdCap(fp, vec3(0.0), vec3(0.0, 3.0, 0.0), 0.04), 18.0 - fx); if (dp < d) { d = dp; mat = 5.0; } }
   return d;
 }
-float sceneD(vec3 p){ float m, i; return scene(p, m, i); }
-float shadow(vec3 ro, vec3 rd){ float res = 1.0, t = 0.08; for (int i = 0; i < 28; i++) { float h = sceneD(ro + rd * t); res = min(res, 10.0 * h / t); t += clamp(h, 0.08, 6.0); if (res < 0.01 || t > 160.0) break; } return clamp(res, 0.0, 1.0); }
-float occlusion(vec3 p, vec3 n){ float o = 0.0, w = 1.0; for (int i = 1; i <= 4; i++) { float h = 0.35 * float(i); o += (h - sceneD(p + n * h)) * w; w *= 0.6; } return clamp(1.0 - 1.6 * o, 0.0, 1.0); }
+float sceneD(vec3 p){ float m, i; vec3 q; return scene(p, m, i, q); }
+float shadow(vec3 p, vec3 rd, float tmax){ float res = 1.0, t = 0.1; for (int i = 0; i < 40 + iZero; i++) { float h = sceneD(p + rd * t); res = min(res, 8.0 * h / t); t += clamp(h, 0.1, 8.0); if (res < 0.01 || t > tmax) break; } return clamp(res, 0.0, 1.0); }
+float occlusion(vec3 p, vec3 n){ float o = 0.0, w = 1.0; for (int i = 1; i <= 4; i++) { float h = 0.5 * float(i); o += (h - min(sceneD(p + n * h), p.y + n.y * h)) * w; w *= 0.6; } return clamp(1.0 - 0.9 * o, 0.0, 1.0); }
+// the old coastline: the basin floor is two kilometres below the old sea level, and the continental slope stands over it like a wall
+float hallH(vec2 xz){ if (xz.y > -1500.0) return 0.0; vec2 cell = vec2(floor(xz.x / HX), floor(xz.y / HZ)); vec2 q = vec2(mod(xz.x, HX) - HX * 0.5, mod(xz.y, HZ) - HZ * 0.5);
+  if (xz.y > -1500.0 - 900.0 * h21(vec2(cell.x, 3.0))) return 0.0; float id = h21(cell + 0.37); return (abs(q.x) < 105.0 && abs(q.y) < 24.0) ? (9.0 + 5.0 * id) * 4.8 + 2.4 : 0.0; }
+float escH(vec2 xz){ if (xz.y > -5200.0) return 0.0; float s = -(xz.y + 10500.0 + 0.32 * xz.x); return 1500.0 * smoothstep(-2200.0, 2600.0, s + (fb(xz * 0.00045) - 0.5) * 3800.0) * (0.7 + 0.5 * fb(xz * 0.0011 + 4.0)) - 120.0 * pow(fb(xz * 0.004), 2.0); }
 
-vec3 SUN_DAY = normalize(vec3(0.35, 0.6, -1.0)), MOON = normalize(vec3(0.42, 0.62, -1.0)), SUN_RED = normalize(vec3(-0.75, 0.3, -1.0));
-vec3 skyCol(vec3 rd){
+/* ---------- sky ---------- */
+vec3 starfield(vec3 rd, float k){
+  if (rd.y < -0.02 || k <= 0.0) return vec3(0.0);
+  vec3 gn = MD == 3 ? vec3(0.6, -0.71, -0.36) : vec3(0.34, 0.5, 0.8); float gb = dot(rd, normalize(gn)), band = exp(-gb * gb * 22.0);   // the Milky Way, a great circle
+  vec3 c = vec3(0.0);
+  for (int L = 0; L < 2; L++) { float sc = L == 0 ? 170.0 : 380.0; vec3 sp = rd * sc; vec3 cell = floor(sp); float hs = h31(cell + float(L) * 17.0);
+    vec3 cc = cell + 0.25 + 0.5 * vec3(h31(cell + 1.3), h31(cell + 2.9), h31(cell + 4.7));
+    float th = L == 0 ? 0.955 : mix(0.992, (MD == 3 ? 0.84 : 0.97), band);
+    float s = step(th, hs) * smoothstep(0.11, 0.0, length(sp - cc)) * (L == 0 ? 0.7 + 5.0 * pow(hs, 40.0) : 0.35);
+    vec3 sc3 = mix(vec3(1.0, 0.82, 0.62), vec3(0.75, 0.85, 1.0), h31(cell + 5.5));
+    if (MD == 3) { float th2 = mix(h31(cell + 9.1), 0.35 + 0.65 * h31(cell + 9.1), band);   // nearby stars go first, the far band last
+      float alive = smoothstep(th2 - 0.03, th2 + 0.01, uStars); float red = smoothstep(th2 + 0.16, th2, uStars); s *= alive; sc3 = mix(sc3, vec3(1.0, 0.2, 0.05), red); }
+    c += sc3 * s; }
+  if (MD == 3) { float lane = smoothstep(0.42, 0.62, fb(vec2(atan(rd.z, rd.x) * 9.0, gb * 30.0)));
+    float glow = band * (0.45 + 0.55 * fb(rd.xz * 9.0 + rd.y * 3.0)) * (1.0 - 0.55 * lane * smoothstep(0.2, 0.0, abs(gb)));
+    c += mix(vec3(0.12, 0.04, 0.018), vec3(0.11, 0.11, 0.125), smoothstep(0.15, 0.7, uStars)) * glow * smoothstep(0.0, 0.5, uStars); }
+  return c * k * smoothstep(-0.02, 0.12, rd.y);
+}
+vec3 sky(vec3 rd){
   float e = max(rd.y, 0.0); vec3 c;
-  if (uMode < 0.5) { c = mix(vec3(0.075, 0.048, 0.03), vec3(0.004, 0.006, 0.013), pow(e, 0.4)); }
-  else if (uMode < 1.5) { c = mix(vec3(0.78, 0.77, 0.73), vec3(0.47, 0.52, 0.6), pow(e, 0.55)); float ds = max(dot(rd, SUN_DAY), 0.0); c += vec3(1.0, 0.96, 0.86) * (0.45 * pow(ds, 40.0) + 0.18 * pow(ds, 6.0)) + vec3(1.0, 0.98, 0.92) * 3.0 * smoothstep(0.9993, 0.9997, ds); }
-  else if (uMode < 2.5) { c = mix(vec3(0.035, 0.038, 0.048), vec3(0.003, 0.004, 0.009), pow(e, 0.5)); float dm = acos(clamp(dot(rd, MOON), -1.0, 1.0)); c += vec3(0.7, 0.78, 0.92) * (0.18 * exp(-dm * 14.0) + 0.04 * exp(-dm * 2.5)); c += vec3(1.0, 0.98, 0.95) * 30.0 * smoothstep(0.0105, 0.0095, dm);
-    float ds = acos(clamp(dot(rd, SUN_RED), -1.0, 1.0)); c = mix(c, vec3(0.62, 0.14, 0.045) * 1.4, smoothstep(0.0125, 0.0115, ds)); c += vec3(0.9, 0.3, 0.08) * 0.06 * exp(-ds * 30.0); }
-  else { c = mix(vec3(0.012, 0.014, 0.02), vec3(0.002, 0.003, 0.006), pow(e, 0.5)); }
-  if (night() && rd.y > 0.0) { vec3 sp = rd * 260.0; vec3 cell = floor(sp); float hs = h31(cell); vec3 cc = cell + vec3(h31(cell + 1.3), h31(cell + 2.9), h31(cell + 4.7));
-    float on = uMode > 2.5 ? step(h31(cell + 9.1), uStars) : step(0.6, hs); float s = step(0.962, hs) * on * smoothstep(0.08, 0.0, length(sp - cc)); c += vec3(0.9, 0.93, 1.0) * s * (0.6 + 4.0 * pow(hs, 30.0)) * smoothstep(0.0, 0.2, rd.y);
-    if (uMode > 2.5) { float band = exp(-pow((rd.y - 0.45 - 0.25 * rd.x) * 3.0, 2.0)) * fb(rd.xz * 6.0) * uStars; c += vec3(0.06, 0.06, 0.07) * band; } }
-  if (uMode < 0.5 && rd.y > 0.05) { vec2 sk = vec2(atan(rd.x, -rd.z), rd.y);
-    for (int k = 0; k < 7; k++) { float fk = float(k); vec2 a = vec2(-1.3 + h21(vec2(fk, 1.0)) * 0.7, 0.25 + h21(vec2(fk, 2.0)) * 0.5); vec2 dd = normalize(vec2(1.0, (h21(vec2(fk, 3.0)) - 0.5) * 0.4));
-      vec2 head = a + dd * mod(uTime * (0.035 + 0.02 * h21(vec2(fk, 4.0))) + fk * 0.37, 2.6); vec2 rel = sk - head; float al = dot(rel, -dd), ac = dot(rel, vec2(-dd.y, dd.x));
-      float idx = clamp(floor(al / 0.009 + 0.5), 0.0, 26.0); c += vec3(0.95, 0.97, 1.0) * smoothstep(0.0016, 0.0, length(vec2(al - idx * 0.009, ac))) * step(-0.004, al) * 1.3; } }
+  if (MD == 0) {
+    vec2 hs = normalize(SUN0.xz); float az = max(dot(normalize(rd.xz + 1e-5), hs), 0.0);
+    vec3 hor = mix(vec3(0.2, 0.085, 0.04), vec3(0.95, 0.38, 0.11), pow(az, 5.0));
+    c = mix(hor, vec3(0.045, 0.06, 0.12), smoothstep(0.0, 0.2, e));
+    c = mix(c, vec3(0.006, 0.009, 0.022), smoothstep(0.18, 0.85, e));
+    c += vec3(1.0, 0.5, 0.15) * 0.7 * pow(az, 30.0) * exp(-e * 25.0);
+    if (rd.y > 0.012) { vec2 cp = rd.xz / rd.y * 0.32; float cd = smoothstep(0.52, 0.82, fb(cp * vec2(0.8, 3.2) + vec2(3.0, 0.0) + uTime * 0.004)) * smoothstep(0.012, 0.1, rd.y) * smoothstep(0.85, 0.25, rd.y);
+      vec3 cc = mix(vec3(0.05, 0.035, 0.045), vec3(1.0, 0.36, 0.2), pow(az, 2.5) * smoothstep(0.55, 0.04, e)); c = mix(c, cc, cd * 0.9); }
+    c += starfield(rd, 0.55 * smoothstep(0.2, 0.6, e));
+    // satellites still in sunlight, crossing; one train
+    vec2 sk = vec2(atan(rd.x, -rd.z), rd.y);
+    for (int k = 0; k < 9 + iZero; k++) { float fk = float(k); vec2 a = vec2(-1.2 + 2.4 * h21(vec2(fk, 1.0)), 0.35 + 0.5 * h21(vec2(fk, 2.0))); vec2 dd = normalize(vec2(1.0, (h21(vec2(fk, 3.0)) - 0.5) * 1.2)) * (h21(vec2(fk, 7.0)) > 0.5 ? 1.0 : -1.0);
+      vec2 pos = a + dd * (uTime - 33.0) * (0.02 + 0.015 * h21(vec2(fk, 4.0))); c += vec3(0.9, 0.95, 1.0) * 0.9 * smoothstep(0.0022, 0.0, length(sk - pos)); }
+    { vec2 dd = normalize(vec2(1.0, -0.22)); vec2 head = vec2(-0.9, 0.62) + dd * (uTime - 33.0) * 0.045;
+      for (int k = 0; k < 14 + iZero; k++) { float fk = float(k); vec2 pos = head - dd * (fk * 0.011 + 0.004 * h21(vec2(fk, 9.0))); c += vec3(0.9, 0.95, 1.0) * 0.7 * smoothstep(0.002, 0.0, length(sk - pos)); } }
+  } else if (MD == 1) {
+    c = mix(vec3(0.72, 0.7, 0.66), vec3(0.4, 0.46, 0.55), pow(e, 0.5));
+    float ds = max(dot(rd, SUN1), 0.0);
+    c += vec3(1.0, 0.95, 0.85) * (0.3 * pow(ds, 10.0) + 0.5 * pow(ds, 150.0)) + vec3(1.0, 0.99, 0.96) * 6.0 * smoothstep(0.99985, 0.99994, ds);
+    if (rd.y > 0.0) { vec2 cp = rd.xz / (rd.y + 0.05) * 0.5; float cd = smoothstep(0.38, 0.78, fb(cp + vec2(0.0, uTime * 0.01)));
+      c = mix(c, vec3(0.8, 0.8, 0.79) + vec3(0.2, 0.15, 0.08) * pow(ds, 3.0), cd * (0.45 + 0.4 * smoothstep(0.55, 0.0, e))); }
+  } else if (MD == 2) {
+    // a dim day: the light comes from the Moon now
+    c = mix(vec3(0.13, 0.14, 0.17), vec3(0.025, 0.035, 0.07), pow(e, 0.5));
+    float dm = acos(clamp(dot(rd, MOONL), -1.0, 1.0));
+    c += vec3(0.8, 0.86, 1.0) * (0.5 * exp(-dm * 16.0) + 0.1 * exp(-dm * 2.5));
+    c += vec3(1.0, 0.99, 0.97) * 60.0 * smoothstep(0.0066, 0.0058, dm);
+    float ds = acos(clamp(dot(rd, RSUN), -1.0, 1.0));
+    vec3 red = vec3(0.6, 0.11, 0.03) * (0.85 + 0.3 * fb(vec2(atan(rd.x, rd.z), rd.y) * 900.0));
+    c = mix(c, red * (1.5 - 0.5 * smoothstep(0.0, 0.0105, ds)), smoothstep(0.0108, 0.0101, ds));
+    c += vec3(0.85, 0.22, 0.06) * (0.12 * exp(-ds * 22.0) + 0.05 * exp(-ds * 3.5)) * smoothstep(-0.02, 0.06, rd.y);
+    c += starfield(rd, 0.25 * smoothstep(0.3, 0.8, e));
+  } else {
+    c = mix(vec3(0.01, 0.011, 0.016), vec3(0.0015, 0.002, 0.004), pow(e, 0.5));
+    c += starfield(rd, 1.0);
+  }
   return c;
 }
+vec3 fogCol(vec3 rd){ return sky(normalize(vec3(rd.x, 0.012, rd.z))) * (0.3 + 0.7 * exp(-max(-rd.y, 0.0) * 9.0)); }   // haze seen from above is dimmer than the horizon
+float fogK(){ return MD == 0 ? 0.00022 : MD == 1 ? 0.00009 : MD == 2 ? 0.00016 : 0.0002; }
+
+/* ---------- main ---------- */
 void main(){
+  SUN0 = normalize(SUN0); SUN1 = normalize(SUN1); MOONL = normalize(MOONL); RSUN = normalize(RSUN);
   vec2 ndc = vUV * 2.0 - 1.0; float asp = uRes.x / uRes.y; float tf = tan(uFov * 0.5);
-  vec3 ro = vec3(0.0, uH, 40.0);
+  ro = vec3(uCamX, uH, 40.0);
   vec3 fw = normalize(vec3(sin(uYaw) * cos(uPitch), sin(uPitch), -cos(uYaw) * cos(uPitch))); vec3 rt = normalize(cross(fw, vec3(0, 1, 0))); vec3 up = cross(rt, fw);
   vec3 rd = normalize(fw + ndc.x * tf * asp * rt + ndc.y * tf * up);
-  vec3 L = uMode < 1.5 ? SUN_DAY : MOON;
-  vec3 lightC = uMode < 0.5 ? vec3(0.0) : uMode < 1.5 ? vec3(1.15, 1.1, 1.0) : uMode < 2.5 ? vec3(0.22, 0.25, 0.32) : vec3(0.0);
-  vec3 ambUp = uMode < 0.5 ? vec3(0.014, 0.011, 0.01) : uMode < 1.5 ? vec3(0.42, 0.45, 0.5) : uMode < 2.5 ? vec3(0.03, 0.033, 0.043) : vec3(0.003, 0.0035, 0.005);
-  vec3 fogC = uMode < 0.5 ? vec3(0.05, 0.035, 0.025) : uMode < 1.5 ? vec3(0.76, 0.75, 0.72) : uMode < 2.5 ? vec3(0.03, 0.033, 0.042) : vec3(0.008, 0.01, 0.014);
-  float t = 0.0, mat = -1.0, id = 0.0; bool hit = false;
-  if (rd.y < 0.25 || uH > 30.0) for (int i = 0; i < 150; i++) { vec3 p = ro + rd * t; float m, idd; float d = scene(p, m, idd); if (d < 0.0015 * t + 0.008) { hit = true; mat = m; id = idd; break; } t += d * 0.9; if (t > 6000.0) break; }
+  if (MD == 1) rd.y += (n2(vec2(rd.x * 260.0, uTime * 4.0)) - 0.5) * 0.0005 * smoothstep(0.03, 0.0, abs(rd.y));   // heat shimmer over the salt
+  rd = normalize(rd);
+  // march the structures; the ground is a plane, found exactly
+  float tg = rd.y < 0.0 ? -ro.y / rd.y : 1e9;
+  float t = 0.0, mat = -1.0, id = 0.0; vec3 lq = vec3(0.0); bool hit = false;
+  float tmax = min(tg, MD == 0 ? 9000.0 : 1300.0);
+  float ceil_ = MD == 0 ? 56.0 : 140.0;   // nothing stands taller than this (the stacks; the basin halls)
+  if (ro.y > ceil_) { if (rd.y < 0.0) t = (ro.y - ceil_) / -rd.y; else t = 1e9; }
+  if (off(1)) t = 1e9;
+  int steps = 0;
+  for (int i = 0; i < 200 + iZero; i++) { vec3 p = ro + rd * t; float m, idd; vec3 qq; float d = scene(p, m, idd, qq); steps = i;
+    if (d < 0.0012 * t + 0.006) { hit = true; mat = m; id = idd; lq = qq; break; }
+    t += max(d * 0.8, t * 0.0015); if (t > tmax || (p.y > 30.0 && rd.y >= 0.0 && length(p - DOME) > DOME_R + 2.0)) break; }
+  if (!hit && tg < 9000.0) { hit = true; t = tg; mat = 0.0; }
+  // the escarpment, a height field far off
+  if (!off(32) && MD != 0 && rd.y < 0.16 && !hit) { float tt = 1300.0, prevD = ro.y + rd.y * tt, prevT = tt;
+    for (int i = 0; i < 150 + iZero; i++) { vec3 p = ro + rd * tt; float hh = hallH(p.xz); float dd = p.y - max(hh, escH(p.xz));
+      if (dd < 0.0) { float f = prevD / (prevD - dd + 1e-6); t = mix(prevT, tt, f); hit = true; mat = hh > 0.0 && p.y < hh + 1.0 ? 1.0 : 4.0; if (mat < 1.5) { vec3 ph = ro + rd * t; lq = vec3(mod(ph.x, HX) - HX * 0.5, ph.y, mod(ph.z, HZ) - HZ * 0.5); id = h21(vec2(floor(ph.x / HX), floor(ph.z / HZ)) + 0.37); } break; }
+      if (p.y > 1600.0 && rd.y > 0.0) break; prevD = dd; prevT = tt; tt += tt < 5500.0 ? max(9.0, tt * 0.0075) : max(60.0, tt * 0.035); if (tt > 60000.0) break; } }
+
+  vec3 L = MD == 0 ? SUN0 : MD == 1 ? SUN1 : MOONL;
   vec3 col;
+  if (hit && off(1024)) { col = vec3(0.3); hit = false; t = 1e9; } else
   if (hit) {
-    vec3 p = ro + rd * t; vec2 e = vec2(0.015 * (1.0 + t * 0.002), 0.0);
-    vec3 n = normalize(vec3(sceneD(p + e.xyy) - sceneD(p - e.xyy), sceneD(p + e.yxy) - sceneD(p - e.yxy), sceneD(p + e.yyx) - sceneD(p - e.yyx)));
-    vec3 alb; vec3 emit = vec3(0.0); float rough = 1.0;
-    bool inDome = length(p.xz - DOME.xz) < DOME_R && uMode > 0.5;
+    vec3 p = ro + rd * t; vec3 n = vec3(0.0, 1.0, 0.0);
+    if (mat > 0.5 && (mat < 3.5 || mat > 4.5)) { vec2 e = vec2(0.01 * (1.0 + t * 0.002), 0.0); vec3 g = vec3(sceneD(p + e.xyy) - sceneD(p - e.xyy), sceneD(p + e.yxy) - sceneD(p - e.yxy), sceneD(p + e.yyx) - sceneD(p - e.yyx)); n = dot(g, g) > 1e-12 ? normalize(g) : vec3(0.0, 1.0, 0.0); }
+    if (mat > 3.5) { float e = 25.0; n = normalize(vec3(escH(p.xz - vec2(e, 0.0)) - escH(p.xz + vec2(e, 0.0)), 2.0 * e, escH(p.xz - vec2(0.0, e)) - escH(p.xz + vec2(0.0, e)))); }
+    vec3 alb = vec3(0.1); vec3 emit = vec3(0.0); float specK = 0.0;
+    bool inDome = MD != 0 && length(p.xz - DOME.xz) < DOME_R;
     if (mat < 0.5) {
-      if (uMode < 0.5) { alb = mix(vec3(0.05), vec3(0.11, 0.1, 0.09), fb(p.xz * 0.05)); }
-      else if (inDome) { alb = vec3(0.09, 0.18, 0.06) * (0.6 + 0.7 * fb(p.xz * 0.6)); }
-      else { vec2 v = vor(p.xz * 0.19); float edge = v.y - v.x; float crack = smoothstep(0.06, 0.0, edge); float rim = smoothstep(0.2, 0.06, edge) - crack;
-        alb = mix(vec3(0.6, 0.57, 0.51), vec3(0.8, 0.77, 0.7), fb(p.xz * 0.025)) * (1.0 - crack * 0.42) * (1.0 + rim * 0.1);
-        vec2 g = vec2(vor((p.xz + vec2(0.05, 0.0)) * 0.19).y - vor((p.xz + vec2(0.05, 0.0)) * 0.19).x, vor((p.xz + vec2(0.0, 0.05)) * 0.19).y - vor((p.xz + vec2(0.0, 0.05)) * 0.19).x) - edge;
-        n = normalize(n + vec3(g.x, 0.0, g.y) * 6.0 * smoothstep(0.25, 0.0, edge) * smoothstep(120.0, 10.0, t)); }
+      if (MD == 0) {
+        alb = mix(vec3(0.1, 0.085, 0.068), vec3(0.15, 0.125, 0.1), fb(p.xz * 0.04)) * (1.0 - 0.45 * smoothstep(0.62, 0.78, n2(p.xz * 0.9)) * smoothstep(300.0, 20.0, t)) * (0.85 + 0.3 * n2(p.xz * 7.0));
+        float ax = abs(p.x - uCamX * 0.0);
+        if (ax < 4.2) { alb = vec3(0.035, 0.034, 0.033) * (0.8 + 0.4 * n2(p.xz * 3.0)); specK = 0.4;
+          alb += vec3(0.5, 0.38, 0.1) * smoothstep(0.1, 0.06, ax) * step(fract(p.z / 12.0), 0.5) + vec3(0.45) * smoothstep(0.1, 0.05, abs(ax - 3.8)); }
+      } else if (inDome) { alb = vec3(0.06, 0.13, 0.04) * (0.6 + 0.7 * fb(p.xz * 0.6));
+      } else {
+        // salt crust: polygon plates with raised rims, a crust that reads at every distance
+        vec2 wp = p.xz + vec2(fb(p.xz * 0.15), fb(p.xz * 0.15 + 5.0)) * 2.5;   // warp, so the polygons are not tiles
+        vec2 v = vor(wp * 0.32); float edge = v.y - v.x; float near = smoothstep(220.0, 15.0, t);
+        float ridge = smoothstep(0.16, 0.0, edge) * near;
+        float big = fb(p.xz * 0.012), fine = n2(p.xz * 5.0);
+        alb = mix(vec3(0.6, 0.57, 0.52), vec3(0.8, 0.78, 0.73), big) * (0.9 + 0.14 * fine);
+        alb = mix(alb, vec3(0.93, 0.92, 0.89), ridge * 0.8);
+        alb = mix(alb, vec3(0.44, 0.4, 0.34), smoothstep(0.6, 0.8, fb(p.xz * 0.004 + 9.0)) * 0.55);
+        vec2 eps = vec2(0.06, 0.0);
+        vec2 g = vec2(vor((wp + eps.xy) * 0.32).y - vor((wp + eps.xy) * 0.32).x, vor((wp + eps.yx) * 0.32).y - vor((wp + eps.yx) * 0.32).x) - edge;
+        n = normalize(n - vec3(g.x, 0.0, g.y) * 4.0 * smoothstep(0.2, 0.0, edge) * near);
+        specK = 0.05;
+      }
     } else if (mat < 1.5) {
-      vec3 lq = p; lq.x = mod(p.x + 48.0, 96.0) - 48.0; lq.z = mod(p.z + 32.0, 64.0) - 32.0;
-      float rib = smoothstep(0.35, 0.5, abs(fract(lq.x * 1.25) - 0.5)) * step(0.5, abs(n.z));
-      alb = (uMode < 0.5 ? vec3(0.075, 0.075, 0.08) : uMode < 1.5 ? vec3(0.7, 0.7, 0.71) : vec3(0.32, 0.32, 0.34)) * (0.85 + 0.15 * rib) * (0.92 + 0.16 * id);
-      if (n.y > 0.85) alb *= 0.75;
-      float lamp = smoothstep(0.35, 0.0, length(vec2(mod(lq.x + 6.0, 12.0) - 6.0, p.y - 5.5))) * step(0.5, abs(n.z));
-      emit += vec3(1.0, 0.72, 0.42) * lamp * 3.0 * (night() ? 1.0 : 0.0) * (uMode > 2.5 ? 0.6 : 1.0);
-      float blink = step(0.55, fract(uTime * 0.6 + id * 7.0)); float corner = smoothstep(1.5, 0.0, length(vec2(abs(lq.x) - 37.0, abs(lq.z) - 14.0))) * step(0.85, n.y);
-      emit += vec3(1.0, 0.06, 0.03) * corner * blink * (night() ? 8.0 : 0.0);
-    } else if (mat > 2.5) { alb = vec3(0.018, 0.017, 0.016); rough = 0.6;
-    } else {
-      float trunk = step(1.3, p.y) * step(p.y, 4.2) * step(0.85, length(n.xz));
-      alb = mix(vec3(0.07, 0.19, 0.055) * (0.55 + 0.9 * fb3(p * 0.7)), vec3(0.2, 0.15, 0.1), trunk);
-      if (uMode > 0.5 && uMode < 1.5 && p.y < 2.0 && length(p.xz - DOME.xz - vec2(-1.8, 20.0)) < 7.0) alb = vec3(0.05, 0.045, 0.045);
-      emit += vec3(1.0, 0.72, 0.42) * 0.02 * uDomeLight;
-    }
-    float dif = max(dot(n, L), 0.0); float sh = (uMode > 0.5 && uMode < 2.5 && dif > 0.0 && t < 400.0) ? shadow(p + n * 0.05, L) : 1.0;
-    float ao = t < 300.0 ? occlusion(p, n) : 1.0;
-    vec3 amb = ambUp * (0.55 + 0.45 * n.y) + (uMode > 0.5 && uMode < 1.5 ? vec3(0.32, 0.3, 0.27) * 0.25 * (1.0 - n.y) : vec3(0.0));
+      float rib = smoothstep(0.32, 0.5, abs(fract(lq.x * 1.1) - 0.5)) * step(0.5, abs(n.z));
+      float top = step(0.85, n.y), hgt = (9.0 + 5.0 * id) * (MD == 0 ? 1.0 : 2.4);
+      alb = (MD == 0 ? vec3(0.085, 0.087, 0.092) : MD == 1 ? vec3(0.07, 0.072, 0.078) : vec3(0.05, 0.05, 0.055)) * (0.85 + 0.25 * rib) * (0.9 + 0.2 * id);
+      if (top > 0.5 && p.y > 2.0 * hgt + 0.5) { vec2 fan = fract(vec2(lq.x / 2.2, lq.z / 2.1)) - 0.5; alb = vec3(0.16, 0.16, 0.165) * (0.6 + 0.4 * smoothstep(0.32, 0.38, length(fan))); }
+      if (MD == 0) {
+        // dock lights along the walls, warm; a lit band of louvres near the top
+        float wall = step(0.5, abs(n.z)) + step(0.5, abs(n.x)); float u = abs(n.z) > 0.5 ? lq.x : lq.z;
+        float lamp = smoothstep(0.45, 0.0, length(vec2(mod(u + 7.0, 14.0) - 7.0, p.y - 4.2))) * wall;
+        emit += vec3(1.0, 0.68, 0.36) * lamp * 4.0;
+        emit += vec3(1.0, 0.6, 0.3) * 0.03 * wall * smoothstep(0.6, 0.0, abs(p.y - (2.0 * hgt - 2.0))) * (0.6 + 0.4 * n2(vec2(u * 0.4, id * 9.0)));
+        float pulse = pow(max(sin(uTime * 3.1416 * 1.0), 0.0), 3.0);   // aviation lights blink together across the whole field
+        float r = max(0.9, t * 0.0016); float corner = smoothstep(r, 0.0, length(vec2(abs(lq.x) - 104.0, abs(lq.z) - 23.0))) * step(2.0 * hgt - 0.3, p.y);
+        float stackTop = smoothstep(max(1.4, t * 0.002), 0.0, length(vec3(lq.x + 112.0, p.y - 52.0, lq.z - 30.0))) * step(0.55, id);
+        emit += vec3(1.0, 0.05, 0.02) * (corner + stackTop) * pulse * 30.0;
+      } else if (MD >= 2) { emit += vec3(1.0, 0.6, 0.3) * 0.6 * step(0.985, h21(floor(vec2(lq.x / 6.0, p.y / 3.0)) + id)) * step(0.5, abs(n.z)) * (MD == 3 ? 0.5 : 1.0); }
+    } else if (mat < 2.5) {
+      float trunk = step(p.y, 4.0) * step(0.9, length(n.xz)) * step(fb3(p * 0.7), 0.6);
+      alb = mix(vec3(0.05, 0.11, 0.03) * (0.5 + 1.0 * fb3(p * 0.8)), vec3(0.12, 0.09, 0.06), trunk);
+      if (p.y < 2.0 && length(p.xz - DOME.xz) > 14.0 && MD == 1) alb = mix(alb, vec3(0.05, 0.045, 0.045), step(0.5, abs(n.x) + abs(n.z)) * 0.0);
+      emit += vec3(1.0, 0.72, 0.42) * 0.015 * uDomeLight;
+    } else if (mat < 3.5) { alb = vec3(0.03, 0.028, 0.027);
+    } else if (mat < 4.5) { alb = mix(vec3(0.5, 0.44, 0.36), vec3(0.62, 0.56, 0.47), fb(p.xz * 0.002)) * (0.8 + 0.3 * smoothstep(0.6, 1.0, n.y)); } else { alb = vec3(0.08); }
+    // light
+    vec3 lightC = MD == 0 ? vec3(0.0) : MD == 1 ? vec3(1.0, 0.94, 0.82) : MD == 2 ? vec3(0.62, 0.68, 0.82) : vec3(0.0);
+    float dif = max(dot(n, L), 0.0);
+    float sh = 1.0; bool caster = MD == 2 && length(p.xz - vec2(5.0, 16.0)) < 14.0; bool nearDome = length(p.xz - DOME.xz) < DOME_R + 4.0;
+    if (!off(128) && (MD == 1 || MD == 2) && dif > 0.0 && caster && mat < 3.5) sh = shadow(p + n * 0.05, L, 60.0);
+    float ao = (t < 250.0 && mat < 3.5 && (MD == 0 || caster || nearDome)) ? occlusion(p, n) : 1.0;
+    vec3 amb;
+    if (MD == 0) { vec2 hs = normalize(SUN0.xz); float face = max(dot(normalize(n.xz + 1e-4), hs), 0.0) * (1.0 - abs(n.y));
+      amb = vec3(0.03, 0.036, 0.06) * (0.6 + 0.4 * n.y) + vec3(0.5, 0.2, 0.07) * 0.14 * face; }
+    else if (MD == 1) amb = vec3(0.27, 0.29, 0.33) * (0.6 + 0.4 * n.y) + vec3(0.4, 0.38, 0.34) * 0.18 * (1.0 - n.y);
+    else if (MD == 2) amb = vec3(0.05, 0.055, 0.075) * (0.6 + 0.4 * n.y);
+    else amb = vec3(0.012, 0.013, 0.017) * (0.6 + 0.4 * n.y) * (0.3 + 0.7 * uStars);
     col = alb * (lightC * dif * sh + amb * ao) + emit;
-    if (mat > 1.5 && mat < 2.5) col += alb * vec3(1.0, 0.75, 0.45) * 0.55 * uDomeLight * ao;
-    float fog = 1.0 - exp(-t * (uMode > 0.5 && uMode < 1.5 ? 0.0009 : 0.0006));
-    col = mix(col, fogC, fog);
-  } else col = skyCol(rd);
-  // steam columns with volume, lit from the sun's side
-  if (uMode > 0.5 && uMode < 2.5) {
-    float tmax = hit ? t : 9000.0; vec3 acc = vec3(0.0); float tr = 1.0;
-    for (int k = 0; k < 3; k++) { float fk = float(k); vec3 c0 = vec3(-900.0 + fk * 950.0, 0.0, -2600.0 - fk * 700.0); float rad = 55.0 + fk * 20.0;
-      vec2 oc = ro.xz - c0.xz; float b = dot(oc, rd.xz), cc = dot(oc, oc) - (rad * 3.0) * (rad * 3.0), a2 = dot(rd.xz, rd.xz); float disc = b * b - a2 * cc; if (disc < 0.0) continue;
-      float t0 = max((-b - sqrt(disc)) / a2, 0.0), t1 = min((-b + sqrt(disc)) / a2, tmax); if (t1 <= t0) continue;
-      for (int j = 0; j < 16; j++) { float tt = mix(t0, t1, (float(j) + 0.5) / 16.0); vec3 p = ro + rd * tt; float hgt = p.y; if (hgt < 0.0) continue; float r = rad * (1.0 + hgt / 900.0);
-        vec2 ctr = c0.xz + vec2(sin(hgt * 0.002 + fk) * 120.0, 0.0); float dd = length(p.xz - ctr);
-        float den = smoothstep(r, r * 0.25, dd) * smoothstep(5200.0, 600.0, hgt) * (0.45 + fb3(vec3(p.xz * 0.005, hgt * 0.003 - uTime * 0.15)));
-        float side = 0.5 + 0.5 * dot(normalize(vec3(p.x - ctr.x, 0.0, p.z - ctr.y)), normalize(vec3(L.x, 0.0, L.z)));
-        float a = den * (t1 - t0) / 16.0 * 0.0045; vec3 sc = uMode < 1.5 ? mix(vec3(0.66, 0.67, 0.7), vec3(1.0, 0.98, 0.94), side) : mix(vec3(0.16, 0.17, 0.2), vec3(0.36, 0.38, 0.43), side);
-        acc += tr * a * sc; tr *= 1.0 - a; } }
+    if (MD == 2) { float d2 = max(dot(n, RSUN), 0.0); float s2 = (d2 > 0.0 && caster && mat < 3.5) ? shadow(p + n * 0.05, RSUN, 60.0) : 1.0; col += alb * vec3(0.55, 0.1, 0.03) * 0.55 * d2 * s2; }
+    if (specK > 0.0 && (MD == 1 || MD == 2)) col += lightC * specK * pow(max(dot(reflect(rd, n), L), 0.0), 60.0) * sh;
+    if (mat > 1.5 && mat < 2.5) { col += alb * vec3(1.0, 0.75, 0.45) * 0.5 * uDomeLight * ao; if (MD == 1) col += vec3(0.25, 0.4, 0.08) * 0.35 * pow(max(dot(rd, L), 0.0), 3.0) * sh; }
+    // street lights down the road into the campus: pools of sodium on the asphalt and the scrub
+    if (MD == 0 && mat < 0.5) { float z0 = floor((p.z - 20.0) / 36.0) * 36.0 + 20.0;
+      for (int k = 0; k < 2; k++) { float zl = z0 + float(k) * 36.0; vec3 lp = vec3(7.0, 9.0, zl); float dd = length(p - lp); col += alb * vec3(1.0, 0.55, 0.2) * 22.0 / (dd * dd + 4.0) * (0.4 + 0.6 * max(dot(n, normalize(lp - p)), 0.0)); }
+      }
+    // the mirage: far across the salt, the ground gives back the sky, like water that isn't there
+    if (MD == 1 && mat < 0.5 && !inDome) { float m = smoothstep(500.0, 2600.0, t); vec3 rr = reflect(rd, vec3(0.0, 1.0, 0.0)); rr.y += (n2(vec2(rd.x * 400.0, uTime * 6.0)) - 0.5) * 0.002; col = mix(col, sky(normalize(rr)) * 0.92, m * 0.8); }
+    float fk = fogK(); if (MD == 1 && mat > 3.5) fk *= 0.75;
+    float fog = 1.0 - exp(-t * fk); col = mix(col, fogCol(rd), fog);
+  } else col = off(2) ? vec3(0.1) : sky(rd);
+
+  // steam: columns rising from the far halls into the deck (the basin), faint and cold later
+  if (MD == 1 && !off(16)) {
+    float tmx = hit ? t : 30000.0; vec3 acc = vec3(0.0); float tr = 1.0;
+    for (int k = 0; k < 5 + iZero; k++) { float fk = float(k); vec3 c0 = vec3(-1500.0 + fk * 1100.0 + 300.0 * sin(fk * 3.0), 0.0, -2300.0 - 900.0 * h21(vec2(fk, 1.0)) - fk * 380.0); float rad = 150.0 + 70.0 * h21(vec2(fk, 2.0));
+      if (MD == 2 && k > 1) break;
+      vec2 oc = ro.xz - c0.xz; float R3 = rad * 4.0; float b = dot(oc, rd.xz), cc = dot(oc, oc) - R3 * R3, a2 = max(dot(rd.xz, rd.xz), 1e-5); float disc = b * b - a2 * cc; if (disc < 0.0) continue;
+      float t0 = max((-b - sqrt(disc)) / a2, 0.0), t1 = min((-b + sqrt(disc)) / a2, tmx); if (t1 <= t0) continue;
+      for (int j = 0; j < 12 + iZero; j++) { float tt = mix(t0, t1, (float(j) + 0.5 + 0.5 * h21(gl_FragCoord.xy + float(j))) / 12.0); vec3 p = ro + rd * tt; float hgt = p.y; if (hgt < 0.0 || hgt > 4200.0) continue;
+        float r = rad * (1.0 + hgt / 700.0); vec2 ctr = c0.xz + vec2(sin(hgt * 0.0015 + fk) * 160.0 + hgt * 0.12, 0.0); float dd = length(p.xz - ctr);
+        if (dd > r * 1.25) continue;
+        vec3 sp = vec3(p.xz * 0.004, hgt * 0.0025 - uTime * 0.12); float bl = 0.5 * n3(sp) + 0.25 * n3(sp * 2.03 + 7.3) + 0.125 * n3(sp * 4.1 + 3.1) + 0.0625;
+        float den = smoothstep(r, r * 0.7, dd + (bl - 0.5) * r * 1.1) * smoothstep(4200.0, 1800.0, hgt);
+        vec3 nn = normalize(vec3(p.x - ctr.x, 0.0, p.z - ctr.y)); float side = 0.5 + 0.5 * dot(nn, normalize(vec3(L.x, 0.0, L.z)));
+        float a = clamp(den * (t1 - t0) / 12.0 * 0.012, 0.0, 1.0);
+        float lump = 0.55 + 0.9 * n3(vec3(p.xz * 0.011, hgt * 0.009 - uTime * 0.25)) * bl;   // cauliflower billows, lit and shadowed
+        vec3 sc = MD == 1 ? mix(vec3(0.46, 0.48, 0.53), vec3(1.2, 1.14, 1.02), side) : mix(vec3(0.07, 0.075, 0.09), vec3(0.3, 0.32, 0.38), side);
+        sc *= lump * mix(0.7, 1.0, smoothstep(0.0, 1200.0, hgt)); sc = mix(sc, fogCol(rd), 1.0 - exp(-tt * fogK() * 0.8));
+        acc += tr * a * sc; tr *= 1.0 - a; if (tr < 0.02) break; } }
     col = col * tr + acc;
   }
-  // the dome: a geodesic frame, glass that reflects the sky
-  if (uMode > 0.5) { vec3 oc = ro - DOME; float b = dot(oc, rd), c = dot(oc, oc) - DOME_R * DOME_R, h = b * b - c;
-    if (h > 0.0) { float tg = -b - sqrt(h); vec3 p = ro + rd * tg; if (tg > 0.0 && p.y > 0.0 && (!hit || tg < t)) { vec3 n = normalize(p - DOME); float fr = pow(1.0 - max(dot(-rd, n), 0.0), 4.0); vec3 refl = skyCol(reflect(rd, n));
-      vec2 sp = vec2(atan(n.z, n.x) * 6.0, asin(n.y) * 7.0); vec2 tri = vec2(sp.x + sp.y * 0.5, sp.y * 0.866); vec2 f1 = abs(fract(tri) - 0.5); float f2 = abs(fract(tri.x - tri.y) - 0.5);
-      float frame = max(max(smoothstep(0.47, 0.5, f1.x), smoothstep(0.47, 0.5, f1.y)), smoothstep(0.47, 0.5, f2)) * smoothstep(0.0, 0.05, n.y);
-      float spec = pow(max(dot(reflect(rd, n), L), 0.0), 200.0) * (uMode < 2.5 ? 6.0 : 0.0);
-      col = mix(col * vec3(0.82, 0.88, 0.9), refl, 0.14 + 0.8 * fr) + vec3(0.62, 0.64, 0.66) * frame * (uMode < 1.5 ? 0.35 : uMode < 2.5 ? 0.1 : 0.03) + vec3(1.0) * spec;
-      if (uMode > 2.5) col += vec3(0.4) * smoothstep(0.004, 0.0, abs(fb(n.xz * 9.0) - 0.5)) * 0.03; } } }
-  // the launch over the campus
-  if (uMode < 0.5 && uLaunch > 0.0) { vec3 base = vec3(380.0, 0.0, -2300.0); vec3 rk = base + vec3(-120.0 * uLaunch, 9000.0 * pow(uLaunch, 1.6), 0.0);
-    vec3 w = rk - ro; float tc = max(dot(w, rd), 0.0); float dist = length(w - rd * tc) / max(tc, 1.0); col += vec3(1.0, 0.9, 0.7) * 22.0 * smoothstep(0.0022, 0.0, dist) * step(0.0, rk.y) + vec3(1.0, 0.7, 0.4) * 0.6 * exp(-dist * 300.0);
-    for (int j = 0; j < 28; j++) { float f = (float(j) + 0.5) / 28.0; vec3 q = mix(base, rk, f); vec3 wq = q - ro; float tq = max(dot(wq, rd), 1.0); float dq = length(wq - rd * tq) / tq; col += vec3(1.0, 0.72, 0.42) * 0.11 * smoothstep(0.003, 0.0, dq) * f * f; }
-    col += vec3(0.5, 0.3, 0.15) * 0.12 * uLaunch * exp(-max(acos(clamp(dot(rd, normalize(base - ro)), -1.0, 1.0)), 0.0) * 6.0); }
-  col = mix(col, uMode < 0.5 ? vec3(0.02, 0.025, 0.04) : vec3(0.75, 0.77, 0.8), uHaze);
+  // the dome: a geodesic frame, glass that gives back the sky
+  if (MD != 0 && !off(64)) { vec3 oc = ro - DOME; float b = dot(oc, rd), c = dot(oc, oc) - DOME_R * DOME_R, h = b * b - c;
+    if (h > 0.0) { float tgl = -b - sqrt(h); vec3 p = ro + rd * tgl; if (tgl > 0.0 && p.y > 0.0 && (!hit || tgl < t)) { vec3 n = normalize(p - DOME); float fr = 0.04 + 0.96 * pow(1.0 - max(dot(-rd, n), 0.0), 5.0); vec3 refl = sky(reflect(rd, n));
+      vec2 sp = vec2(atan(n.z, n.x) * 7.0, asin(n.y) * 8.0); vec2 tri = vec2(sp.x + sp.y * 0.5, sp.y * 0.866); vec2 f1 = abs(fract(tri) - 0.5); float f2 = abs(fract(tri.x - tri.y) - 0.5);
+      float w = 0.485 - 0.02 * smoothstep(60.0, 300.0, tgl); float frame = max(max(smoothstep(w, 0.5, f1.x), smoothstep(w, 0.5, f1.y)), smoothstep(w, 0.5, f2)) * smoothstep(0.0, 0.04, n.y);
+      float spec = pow(max(dot(reflect(rd, n), L), 0.0), 400.0) * (MD == 1 ? 14.0 : MD == 2 ? 8.0 : 0.0);
+      vec3 fcol = MD == 1 ? vec3(0.85, 0.85, 0.83) * (0.35 + 0.65 * max(dot(n, L), 0.0)) : MD == 2 ? vec3(0.2, 0.22, 0.27) * (0.3 + 0.7 * max(dot(n, L), 0.0)) : vec3(0.01);
+      col = mix(col * vec3(0.8, 0.86, 0.85), refl, fr * 0.9);
+      col = mix(col, fcol, frame) + vec3(1.0, 0.98, 0.95) * spec * (1.0 - frame);
+      col = mix(col, fogCol(rd), 1.0 - exp(-tgl * fogK())); } } }
+  // the launch: a flame climbing from beyond the campus; high up the plume reaches the sunlight and opens like a jellyfish (samples from film.js, PLUME_S)
+  if (MD == 0 && uLaunch > 0.0 && !off(8)) {
+    vec3 w = uRk - ro; float dist = length(w); float tc = dot(w, rd); float tHit = hit ? t : 1e9;
+    if (tc > 0.0 && dist < tHit + 20.0) { float ang = length(w - rd * tc) / dist; col += vec3(1.0, 0.86, 0.62) * (30.0 * exp(-pow(ang / 0.0011, 2.0)) + 1.2 * exp(-ang / 0.006)) * smoothstep(0.0, 0.03, uLaunch); }
+    vec3 lit = vec3(0.0); float od = 0.0;
+    for (int j = 0; j < 40 + iZero; j++) { vec4 P = uPl[j]; if (P.w <= 0.0) break; vec3 wc = P.xyz - ro; float tq = dot(wc, rd); if (tq <= 0.0 || tq > tHit) continue;
+      float dp2 = max(dot(wc, wc) - tq * tq, 0.0), w2 = P.w * P.w; if (dp2 > 6.0 * w2) continue;
+      float lobe = mix(1.0, 0.55 + 0.9 * n2(vec2(float(j) * 0.7, sqrt(dp2) / P.w * 2.5 + uTime * 0.4)), uPc[j].w > 0.0 ? 1.0 : 0.0);
+      float dens = exp(-dp2 / w2) * abs(uPc[j].w) * lobe; lit += uPc[j].rgb * dens * exp(-od); od += dens * 0.6; }
+    col = col * exp(-od * 0.5) + lit;
+    col += vec3(1.0, 0.55, 0.25) * 0.05 * smoothstep(0.0, 0.06, uLaunch) * exp(-abs(rd.y) * 30.0) * exp(-(atan(rd.x, -rd.z) - 0.127) * (atan(rd.x, -rd.z) - 0.127) * 60.0);
+  }
+  // the perimeter fence: chain link reads as a veil at this distance
+  if (MD == 0 && rd.z < 0.0) { float tf = (-70.0 - ro.z) / rd.z; vec3 fp = ro + rd * tf; if (tf > 0.0 && (!hit || tf < t) && abs(fp.x) > 18.0 && fp.y > 0.0 && fp.y < 3.0) {
+    col = mix(col, vec3(0.03, 0.03, 0.035), 0.22 + 0.1 * smoothstep(0.35, 0.5, abs(fract(fp.y * 3.0 + fp.x * 3.0) - 0.5))); }
+    if (tf > 0.0 && (!hit || tf < t) && abs(fp.x) > 18.0 && abs(fp.y - 3.0) < max(0.02, tf * 0.0006)) col = mix(col, vec3(0.25, 0.18, 0.14), 0.6); }
+  // street lights as lamps, receding down the road
+  vec3 la = vec3(7.0, 9.0, 20.0) - ro, lu = vec3(0.0, 0.0, -1.0); vec3 lc_ = cross(rd, lu); float lineAng = abs(dot(la, normalize(lc_ + 1e-6))) / max(length(la - lu * dot(la, lu)), 1.0);
+  if (MD == 0 && !off(4) && lineAng < 0.02) { float tHit = hit ? t : 1e9;
+    for (int k = 0; k < 40 + iZero; k++) { vec3 lp = vec3(7.0, 9.0, 20.0 - 36.0 * float(k)); vec3 w = lp - ro; float tc = dot(w, rd); if (tc <= 0.0) continue; float dist = length(w); if (dist > tHit + 1.0) continue;
+      float ang = length(w - rd * tc) / dist; float px = 0.0006 + 0.25 / dist * 0.002; col += vec3(1.0, 0.62, 0.28) * (5.0 * exp(-pow(ang / px, 2.0)) + 0.025 * exp(-ang / (px * 5.0))) * exp(-dist * 0.0004); } }
+  col = mix(col, MD == 1 ? vec3(0.93, 0.93, 0.91) : MD == 0 ? vec3(0.03, 0.03, 0.05) : vec3(0.05, 0.055, 0.07), uHaze);
+  if (isnan(col.r + col.g + col.b) || isinf(col.r + col.g + col.b)) col = vec3(0.0);
+  if (off(256)) col = vec3(float(steps) / 200.0, float(steps) / 400.0, 0.0) * 0.6;
   o = vec4(col * uFade, 0.0);
 }`;
 function ground(mode, t, cam) {
+  if (window.GDBG) Object.assign(cam, window.GDBG);   // development: override the ground camera from the console
   E.camera([0, 0, 0], [0, 0, -1], [0, 1, 0], 40);
-  if (!GROUND) GROUND = E.program(GROUND_FS);
-  E.fullscreen(GROUND, { uMode: mode, uTime: t, uH: cam.h, uPitch: cam.pitch, uYaw: cam.yaw || 0, uLaunch: cam.launch || 0, uStars: cam.stars ?? 1, uFade: cam.fade ?? 1, uHaze: cam.haze || 0, uDomeLight: cam.domeLight ?? 1, uFov: (cam.fov || 50) * D2R });
+  if (!NOISE) { const nt = E.noiseTextures(); NOISE = { uN2: nt.n2, uN3: nt.n3 }; }
+  if (!GROUND) GROUND = [0, 1, 2, 3].map(m => E.program(GROUND_FS.replace("precision highp float;", `precision highp float;\n#define MD ${m}\n`)));
+  // each mood renders at the size its cost allows at 60 fps on a laptop GPU; the grain and bloom are added at full size
+  E.fullscreenAt(cam.scale ?? [0.85, 0.45, 0.6, 0.75][mode], GROUND[mode], { uMode: mode, uTime: cam.time ?? t, uH: cam.h, uCamX: cam.x || 0, uPitch: cam.pitch, uYaw: cam.yaw || 0, uLaunch: cam.launch || 0, uStars: cam.stars ?? 1, uFade: cam.fade ?? 1, uHaze: cam.haze || 0, uDomeLight: cam.domeLight ?? 1, uFov: (cam.fov || 50) * D2R, uDbg: cam.dbg || 0, iZero: 0, ...TREES, ...plumeTable(cam.launch || 0), uRk: rocketAt(cam.launch || 0) }, NOISE);
 }
-function sCampus(t) {   // 0:33–0:41: descend to the campus, a launch rises, the camera follows it up
-  const d = ss(33, 35, t), launch = ss(35.2, 41, t);
-  ground(0, t, { h: lerp(420, 1.8, ease(d)), pitch: d < 1 ? lerp(-1.1, 0.04, ease(d)) : lerp(0.04, 1.1, ease(ss(36.5, 40.8, t))), yaw: 0.12, launch, haze: (1 - ss(33, 34.2, t)) * 0.9 + ss(40.6, 41, t) * 0.9, fov: 52 });
+const TREES = (() => {   // the garden's trees in dome-local metres: trunk base, trunk top, five canopy spheres, a bounding sphere
+  const fr = x => x - Math.floor(x), TS = [], TA = [], TT = [], TB = [];
+  for (let k = 0; k < 11; k++) { const seed = k + 1, hgt = 6 + 4 * fr(seed * 7.3), cr = 2.3 + 1.1 * fr(seed * 3.7);
+    const bx = Math.sin(k * 2.4 + 0.5) * (4 + k * 1.8), bz = Math.cos(k * 2.4 + 0.5) * (4 + k * 1.6) - 4;
+    TA.push(bx, 0, bz, 0); TT.push(bx + 0.4 * Math.sin(seed * 9), hgt * 0.62, bz + 0.3 * Math.cos(seed * 4), 0);
+    const sp = []; for (let j = 0; j < 5; j++) { const c = [bx + Math.sin(seed * 3 + j * 1.9) * cr * 0.75, hgt * (0.6 + 0.1 * j), bz + Math.cos(seed * 5 + j * 2.3) * cr * 0.75], r = cr * (1 - 0.13 * j); sp.push([c, r]); TS.push(c[0], c[1], c[2], r); }
+    const pts = [[bx, 0, bz, 0.3], ...sp.map(([c, r]) => [c[0], c[1], c[2], r])], cen = [0, 1, 2].map(i => pts.reduce((a, q) => a + q[i], 0) / pts.length);
+    const rad = Math.max(...pts.map(q => Math.hypot(q[0] - cen[0], q[1] - cen[1], q[2] - cen[2]) + q[3])) + 2.0; TB.push(cen[0], cen[1], cen[2], rad); }
+  return { uTS: TS, uTA: TA, uTT: TT, uTB: TB };
+})();
+function plumeTable(launch) {   // 40 samples along the climb: centre and width, light colour and density
+  const Pl = new Float32Array(160), Pc = new Float32Array(160); if (launch <= 0) return { uPl: Pl, uPc: Pc };
+  const shadowAlt = 15500, rk = rocketAt(launch);
+  for (let j = 0; j < 40; j++) { const uj = (j + 0.5) / 40 * launch, c = rocketAt(uj), age = (launch - uj) * 5.8;
+    const c0 = rocketAt(launch * j / 40), c1 = rocketAt(launch * (j + 1) / 40), step = Math.hypot(c1[0] - c0[0], c1[1] - c0[1], c1[2] - c0[2]);
+    const sun = ss(shadowAlt - 1500, shadowAlt + 1500, c[1]), wd = Math.max(30 + 0.006 * c[1] + age * lerp(50, 420, sun), step * 0.9);
+    const dens = step / wd * lerp(0.1, 0.1, sun) / (1 + age * 0.2), glow = 3.0 * Math.exp(-Math.hypot(c[0] - rk[0], c[1] - rk[1], c[2] - rk[2]) / 1200);
+    const lc = mixv([glow + 0.07, glow * 0.55 + 0.06, glow * 0.25 + 0.07], [0.68, 0.88, 1.1], sun);
+    Pl.set([c[0], c[1], c[2], wd], j * 4); Pc.set([lc[0], lc[1], lc[2], sun > 0.5 ? dens : -dens], j * 4); }
+  return { uPl: Pl, uPc: Pc };
 }
-function sDome(t) {   // 1:12–1:24: descend into the dried basin; the dome; tilt up into the white sky
-  const d = ss(72, 74.6, t);
-  ground(1, t, { h: lerp(650, 1.8, ease(d)), pitch: t < 82.5 ? lerp(-1.2, 0.07, ease(d)) : lerp(0.07, 1.35, ease(ss(82.5, 84.4, t))), yaw: lerp(0.05, -0.04, ss(74, 82, t)), haze: (1 - ss(72, 73.3, t)) * 0.95 + ss(83.8, 84.5, t), fov: 50, domeLight: 1 });
+const rocketAt = u => [900 - 1500 * u * u, 60000 * Math.pow(u, 1.8), -7000 - 9000 * u * u];
+function sCampus(t) {   // 0:33–0:41: down to the campus at dusk; a launch rises beyond it and the camera follows it up
+  const d = ease(ss(33, 35.4, t)), launch = ss(35.6, 41, t);
+  const h = lerp(520, 1.8, d), x = lerp(-60, -9, d);
+  let pitch = lerp(-1.25, 0.045, d), yaw = lerp(0.35, 0.03, d), fov = lerp(55, 40, d);
+  const follow = ease(ss(36.4, 39.5, t));
+  if (follow > 0) { const rk = rocketAt(launch), w = sub(rk, [x, h, 40]); const ty = Math.atan2(w[0], -w[2]), tp = Math.atan2(w[1], Math.hypot(w[0], w[2]));
+    yaw = lerp(yaw, ty, follow); pitch = lerp(pitch, tp - 0.12 * (1 - ss(39.5, 41, t)), follow); fov = lerp(fov, 44, follow); }
+  ground(0, t, { h, x, pitch, yaw, launch, haze: (1 - ss(33, 34.2, t)) * 0.9, fov });
 }
-function sTwoSuns(t) {  // 2:18–2:24
-  ground(2, t, { h: 1.7, pitch: 0.2, yaw: 0.1, fade: ss(138, 138.4, t) * (1 - ss(143.6, 144, t)), fov: 56, domeLight: 1 });
+function sDome(t) {   // 1:12–1:24: down into the dried basin; the dome; then up into the white sky
+  const d = ease(ss(72, 75, t));
+  const tilt = ease(ss(82.4, 84.4, t));
+  ground(1, t, { h: lerp(700, 1.7, d), x: lerp(-8, 10, d), pitch: lerp(lerp(-1.3, 0.07, d), 1.2, tilt), yaw: lerp(-0.1, 0.02, d) + lerp(0, 0.05, ss(75, 82.4, t)), haze: (1 - ss(72, 73.3, t)) * 0.95 + ss(83.6, 84.5, t), fov: lerp(lerp(55, 40, d), 50, tilt), domeLight: 1 });
+}
+function sTwoSuns(t) {  // 2:18–2:24: a dim day; the Moon is the brighter sun now
+  ground(2, t, { h: 1.6, x: lerp(9, 8.4, ss(138, 144, t)), pitch: 0.16, yaw: -0.08, fade: ss(138, 138.4, t) * (1 - ss(143.6, 144, t)), fov: 58, domeLight: 1 });
 }
 function sLastSky(t) {  // 3:16–3:23: the stars go out; the camera tilts up into the black
-  ground(3, t, { h: 1.7, pitch: t < 200.6 ? 0.22 : lerp(0.22, 1.5, ease(ss(200.6, 202, t))), yaw: 0.0, stars: 1 - ss(196.2, 200.4, t), fade: ss(195, 195.5, t) * (1 - ss(201.4, 202, t)), fov: 60, domeLight: 0 });
+  ground(3, t, { h: 1.7, x: 6, pitch: t < 200.6 ? 0.24 : lerp(0.24, 1.5, ease(ss(200.6, 202, t))), yaw: 0.06, stars: 1 - ss(196.2, 200.4, t), fade: ss(195, 195.5, t) * (1 - ss(201.4, 202, t)), fov: 62, domeLight: 0.35 });
 }
 
 /* ================= 0:41–1:12 orbit, thermal, the oceans (one continuous orbital camera) ================= */
@@ -583,14 +770,69 @@ function galaxyCam(t) {
   }
   return { pos: full.pos, look: full.look, fov: 42 };
 }
+
+/* the galaxy's body: arms, dust lanes, star-forming knots, the core; the front; dead domains going dark */
+let GALBODY = null;
+const GALBODY_FS = `#version 300 es
+precision highp float; in vec2 vUV; out vec4 o; uniform vec2 uRes;
+uniform vec3 uCamPos, uCamR, uCamU, uCamF; uniform float uTanHalf, uAspect;
+uniform float uT, uIR, uFrontOn, uWar, uSplit, uDmax, uK, uAliveFrac; uniform vec3 uSun; uniform vec4 uDomC[106]; uniform vec4 uDomD[53]; uniform vec3 uPC[12];
+float h21(vec2 p){ p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
+float n2(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f); return mix(mix(h21(i), h21(i+vec2(1,0)), f.x), mix(h21(i+vec2(0,1)), h21(i+vec2(1,1)), f.x), f.y); }
+float fb(vec2 p){ float a = 0.5, s = 0.0; for (int i = 0; i < 5; i++) { s += a * n2(p); p = p * 2.03 + 7.3; a *= 0.5; } return s; }
+float spiral(float r, float th, float off, float sig){ float ph = th - log(max(r, 0.5) / 3.0) / tan(0.2269) - off; float d = 0.0;
+  for (int k = 0; k < 2; k++) { float x = mod(ph - float(k) * 3.14159 + 3.14159, 6.28318) - 3.14159; d += exp(-x * x / (2.0 * sig * sig)); } return d; }
+vec3 redOf(vec3 c){ return vec3(0.85, 0.12, 0.05) * dot(c, vec3(0.33)) * 2.4; }
+void main(){
+  vec2 ndc = vUV * 2.0 - 1.0; vec3 rd = normalize(uCamF + ndc.x * uTanHalf * uAspect * uCamR + ndc.y * uTanHalf * uCamU); vec3 ro = uCamPos;
+  vec3 col = vec3(0.0);
+  if (abs(rd.y) > 1e-4) { float tp = -ro.y / rd.y; if (tp > 0.0) {
+    vec3 P = ro + rd * tp; float r = length(P.xz), th = atan(P.z, P.x);
+    float disk = exp(-r / 11.0) * smoothstep(50.0, 30.0, r);
+    float arms = spiral(r, th, 0.0, 0.32), clump = 0.5 + 0.95 * fb(P.xz * 0.33);
+    float dust = spiral(r, th, -0.34, 0.13) * (0.55 + 0.65 * fb(P.xz * 0.6)) * smoothstep(2.5, 8.0, r);
+    float knot = pow(clamp(fb(P.xz * 0.95 + 3.0) * 1.25, 0.0, 1.0), 5.0) * arms;
+    vec3 c = mix(vec3(1.0, 0.8, 0.56), vec3(0.7, 0.8, 1.0), smoothstep(5.0, 16.0, r)) * disk * (0.3 + 1.7 * arms * clump);
+    c += vec3(1.0, 0.42, 0.58) * knot * disk * 2.2;
+    c *= 1.0 - 0.8 * dust;
+    if (uFrontOn > 0.5) { float dS = length(P.xz - uSun.xz) * (1.0 + 0.32 * (fb(P.xz * 0.2) - 0.5)); float tc = 172.5 + 21.0 * pow(dS / uDmax, 1.25);
+      float conv = smoothstep(tc, tc + 0.7, uT); float edge = exp(-((uT - tc) / 0.45) * ((uT - tc) / 0.45));
+      c = mix(c, mix(c * 0.08 + redOf(c) * 0.22, redOf(c), uIR), conv) + vec3(1.0, 0.55, 0.18) * edge * disk * 1.6 * (0.4 + arms); }
+    else if (uIR > 0.5) c = redOf(c);
+    if (uWar > 0.5) {
+      vec2 w = vec2(P.x + sin(P.z * 0.7) * 1.6, P.z + cos(P.x * 0.6) * 1.6); float bd = 1e9, bd2 = 1e9; int bi = 0, bi2 = 0;
+      for (int k = 0; k < 212; k++) { vec4 cc = uDomC[k / 2]; vec2 c2 = (k % 2 == 0) ? cc.xy : cc.zw; vec2 dv = w - c2; float d = dot(dv, dv); if (d < bd) { bd2 = bd; bi2 = bi; bd = d; bi = k; } else if (d < bd2) { bd2 = d; bi2 = k; } }
+      float rip1 = 0.6 * sqrt(bd) / 4.0, rip2 = 0.6 * sqrt(bd2) / 4.0;
+      float a1 = 1.0 - smoothstep(uDomD[bi / 4][bi % 4] + rip1, uDomD[bi / 4][bi % 4] + rip1 + 1.4, uT), a2 = 1.0 - smoothstep(uDomD[bi2 / 4][bi2 % 4] + rip2, uDomD[bi2 / 4][bi2 % 4] + rip2 + 1.4, uT);
+      float wb = 0.5 + 0.5 * smoothstep(0.0, 6.0, sqrt(bd2) - sqrt(bd)) + 0.2 * (fb(P.xz * 1.1) - 0.5);
+      float alive = mix(a2, a1, clamp(wb, 0.0, 1.0)); vec3 tint = mix(uPC[bi2 % 12], uPC[bi % 12], clamp(wb, 0.0, 1.0));
+      float seam = (1.0 - smoothstep(0.0, 0.9, sqrt(bd2) - sqrt(bd))) * uSplit;
+      c = mix(c, tint * dot(c, vec3(0.33)) * 2.2, uSplit * 0.42) * alive + vec3(1.0, 0.85, 0.7) * seam * 0.06 * disk * alive;
+    }
+    col += c * uK * smoothstep(0.0, 0.1, abs(rd.y));
+  } }
+  // the core, integrated through its volume
+  vec3 sc = vec3(1.0 / 4.2, 1.0 / 1.6, 1.0 / 3.6); vec3 o2 = ro * sc, d2 = rd * sc; float a = dot(d2, d2), b = dot(o2, d2), cc = dot(o2, o2) - 9.0, disc = b * b - a * cc;
+  if (disc > 0.0) { float t0 = max((-b - sqrt(disc)) / a, 0.0), t1 = (-b + sqrt(disc)) / a; if (t1 > t0) { float acc = 0.0; for (int i = 0; i < 16; i++) { float tt = mix(t0, t1, (float(i) + 0.5) / 16.0); vec3 q = (ro + rd * tt) * sc; acc += exp(-0.5 * dot(q, q)); }
+    acc *= (t1 - t0) / 16.0; vec3 bc = vec3(1.0, 0.82, 0.58) * min(acc * 0.05, 0.6); if (uIR > 0.5 || (uFrontOn > 0.5 && uT > 175.0)) bc = mix(bc, redOf(bc), uFrontOn > 0.5 ? smoothstep(175.0, 180.0, uT) : 1.0); col += bc * uK * uAliveFrac; } }
+  o = vec4(col, 0.0);
+}`;
+function drawGalaxyBody(t, opt) {
+  if (!GALBODY) GALBODY = E.program(GALBODY_FS);
+  const G = GAL, c = CAMF;
+  if (!G.domC) { G.domC = new Float32Array(424); G.cen.forEach((p, k) => { G.domC[k * 2] = p[0]; G.domC[k * 2 + 1] = p[1]; }); G.domD = new Float32Array(212); G.death.forEach((d, k) => { G.domD[k] = Math.min(d, 9999); });
+    let dm = 0; for (let i = 0; i < G.n; i++) dm = Math.max(dm, Math.hypot(G.pos[i * 3] - G.sun[0], G.pos[i * 3 + 2] - G.sun[2])); G.dmax = dm; }
+  E.fullscreen(GALBODY, { uCamPos: c.pos, uCamR: c.r, uCamU: c.u, uCamF: c.f, uTanHalf: c.tanHalf, uAspect: c.aspect, uT: t, uIR: opt.ir, uFrontOn: opt.front, uWar: opt.war, uSplit: opt.split, uDmax: G.dmax, uK: opt.k ?? 1, uAliveFrac: opt.alive ?? 1, uSun: G.sun, uDomC: G.domC, uDomD: G.domD, uPC: PCOL.flat() });
+}
+
 function sGalaxy(t, cellBack = 1) {
   const G = GAL, c = galaxyCam(t);
   camera(c.pos, c.look, c.fov, 0.01, 1e6); drawStars(0.35);
   const war = t >= 223, front = t >= 170 && t < 202, ir = t >= 202 ? 1 : ss(189.5, 193.5, t);
   const gu = { uT: t, uIR: ir, uWar: war ? 1 : 0, uSplit: ss(223.5, 231, t), uFrontOn: front || t >= 202 ? 1 : 0, uSizeK: 1, uNear: t < 185 ? 1 - ss(172, 182, t) : 0 };
   gu.uPC = PCOL.flat();
-  E.drawParticles(SYS.glow, { ...gu, uGlow: 0.018, uNear: 0 }, { depth: false });
-  E.drawParticles(SYS.galaxy, { ...gu, uGlow: 0 }, { depth: false });
+  drawGalaxyBody(t, { ir, front: gu.uFrontOn, war: gu.uWar, split: gu.uSplit, alive: war ? aliveFraction(t) : 1, k: ss(10, 40, c.pos[1]) });
+  E.drawParticles(SYS.galaxy, { ...gu, uGlow: 0, uSizeK: 0.9 }, { depth: false });
   if (t < 186) { pt(G.cell, [1, 0.62, 0.25], 4 * (1 - ss(176, 180, t)), 10); pt(G.sun, [1, 0.62, 0.25], 5 * (1 - ss(180, 184, t)), 12); flushPts({ depth: false }); }
   // probes leaving the rim, finding nothing
   if (t > 215 && t < 223) { const rr = rngOf(89); for (let k = 0; k < 70; k++) { const i = 34000 + Math.floor(rr() * (G.n - 34000)); const p = [G.pos[i * 3], G.pos[i * 3 + 1], G.pos[i * 3 + 2]]; if (Math.hypot(p[0], p[2]) < 30) continue;
@@ -628,7 +870,7 @@ const CARDS = [
 const STAMPS = [[33.6, 40.7, "WEST TEXAS"], [73.4, 84.2, "THE DRY MEDITERRANEAN"], [138.3, 143.8, "THE SAME DOME"], [154.4, 162, "ANOTHER STAR"], [195.4, 201.6, "THE SAME DOME · TWO MILLION YEARS LATER"]];
 const INSTR = [[7, 33, "VIIRS DAY/NIGHT BAND"], [33, 41, "GROUND"], [41, 50, "VISIBLE"], [50, 59.6, "THERMAL INFRARED  11 µm"], [59.6, 72, "VISIBLE"], [72, 84.5, "GROUND"], [84.5, 128.5, "VISIBLE"], [128.5, 138, "MID-INFRARED  12 µm"], [138, 144, "GROUND"], [144, 170, "VISIBLE"], [170, 191.5, "VISIBLE"], [191.5, 195, "MID-INFRARED  12 µm"], [195, 202, "GROUND"], [202, 272, "MID-INFRARED  12 µm"]];
 const CALL = [
-  [43, 46.5, "orbital data centres", () => add(EARTH, [0.75, 0.75, 0.45])],
+  [43, 46.5, "orbital data centres", () => add(EARTH, [0.2, 0.95, 0.75])],
   [45.5, 48.5, "solar fields", () => surf(orbitRot(47), -112, 34, 1.0)],
   [62, 65.5, "mass drivers venting seawater", null, [1460, 300]],
   [66, 69.2, "dry sea floor", () => surf(orbitRot(68), 5, 40, 1.0)],
@@ -645,7 +887,7 @@ function overlay(t) {
   ctx.save(); ctx.textBaseline = "alphabetic";
   const L = 64, T = 64;
   if (on > 0) {
-    ctx.globalAlpha = on;
+    ctx.globalAlpha = on; ctx.shadowColor = "rgba(0,0,0,0.5)"; ctx.shadowBlur = 10;   // stays legible over the white basin and the clouds
     const lab = (s0, x, y, a = 0.48) => { ctx.font = `500 11px ${MONO}`; ctx.letterSpacing = "3px"; ctx.fillStyle = `rgba(225,232,238,${a})`; ctx.textAlign = "left"; ctx.fillText(s0, x, y); };
     const val = (s0, x, y, c = "rgba(240,244,247,0.94)") => { ctx.font = `400 16px ${MONO}`; ctx.letterSpacing = "1px"; ctx.fillStyle = c; ctx.textAlign = "left"; ctx.fillText(s0, x, y); };
     // the year, large
@@ -675,7 +917,7 @@ function overlay(t) {
       if (!p) continue; ctx.globalAlpha = on * k; ctx.fillStyle = "#ffb15a"; ctx.beginPath(); ctx.arc(p[0], p[1], 2.5, 0, TAU); ctx.fill();
       ctx.strokeStyle = "rgba(255,177,90,0.6)"; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(p[0] + 5, p[1] - 5); ctx.lineTo(p[0] + 18, p[1] - 18); ctx.stroke();
       ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "2px"; ctx.fillStyle = "rgba(245,247,249,0.9)"; ctx.textAlign = "left"; ctx.fillText(s0, p[0] + 24, p[1] - 22); }
-    ctx.globalAlpha = 1;
+    ctx.globalAlpha = 1; ctx.shadowBlur = 0;
   }
   // cards: the wall in plain words
   ctx.textAlign = "center";
@@ -734,11 +976,12 @@ async function init(view, onProgress = () => {}, { composite = true, glCanvas = 
   E = Engine.create(glc, W, H);
   const names = { earthDay: "assets/earth-day.jpg", earthNight: "assets/earth-night.jpg", mercury: "assets/mercury.jpg", moon: "assets/moon.jpg", clouds: "assets/clouds.jpg" };
   let k = 0; for (const [key, u] of Object.entries(names)) { try { tex[key] = await E.loadTexture(u); } catch (e) { if (key !== "clouds") throw e; } onProgress(++k / 7); }
-  buildGrowth(tex.earthNight.img, tex.earthDay.img); onProgress(5 / 6);
+  if (!new URLSearchParams(location.search).has("regrow")) { try { await loadGrowth(); } catch (e) { buildGrowth(tex.earthNight.img, tex.earthDay.img); } } else buildGrowth(tex.earthNight.img, tex.earthDay.img);
+  onProgress(6 / 7);
   buildSystems(); onProgress(1);
   ready = true;
 }
 const PX = new Uint8Array(4);
-function timeFrame(t) { const a = performance.now(); drawScene(t); E.gl.readPixels(0, 0, 1, 1, E.gl.RGBA, E.gl.UNSIGNED_BYTE, PX); return performance.now() - a; }
-return { init, frame, timeFrame, W, H, DUR, yearAt, powerAt, storyT, filmT, sceneAt, galaxy: () => GAL };
+function timeFrame(ft) { const a = performance.now(); drawScene(storyT(ft)); E.gl.readPixels(0, 0, 1, 1, E.gl.RGBA, E.gl.UNSIGNED_BYTE, PX); return performance.now() - a; }
+return { init, frame, timeFrame, exportGrowth, W, H, DUR, yearAt, powerAt, storyT, filmT, sceneAt, galaxy: () => GAL };
 })();
