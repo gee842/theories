@@ -794,8 +794,8 @@ function buildGalaxy() {
   for (let i = 0; i < n; i++) {
     let x, y, z, c;
     if (i < 34000) { const bx = gauss(r) * (i % 3 ? 4.6 : 3.0), bz = gauss(r) * (i % 3 ? 1.5 : 3.0); x = Math.cos(0.45) * bx - Math.sin(0.45) * bz; z = Math.sin(0.45) * bx + Math.cos(0.45) * bz; y = gauss(r) * 1.3; c = [1.0, 0.86, 0.62]; }   // the bar and bulge
-    else { let arm = i % 4; if (arm % 2 && r() < 0.45) arm -= 1; const rr = 3.5 + -Math.log(1 - r() * 0.985) * 12;   // two major arms, two minor
-      const th = arm * Math.PI / 2 - 0.35 * Math.sin(rr * 0.33 + arm * 1.3) + Math.log(rr / 4) / Math.tan(17.5 * D2R) + gauss(r) * (arm % 2 ? 0.3 : 0.22); x = rr * Math.cos(th) + gauss(r) * 1.1; z = rr * Math.sin(th) + gauss(r) * 1.1; y = gauss(r) * 0.35; const hot = r(); c = hot < 0.2 ? [0.7, 0.8, 1.0] : hot < 0.75 ? [1.0, 0.95, 0.88] : [1.0, 0.8, 0.6]; }
+    else { let arm = i % 4; if (arm % 2 && r() < 0.6) arm -= 1; const rr = 3.5 + -Math.log(1 - r() * 0.985) * 12;   // two major arms, two minor
+      const th = arm * Math.PI / 2 - 0.35 * Math.sin(rr * 0.33 + arm * 1.3) + Math.log(rr / 4) / Math.tan(22 * D2R) + gauss(r) * (arm % 2 ? 0.3 : 0.22); x = rr * Math.cos(th) + gauss(r) * 1.1; z = rr * Math.sin(th) + gauss(r) * 1.1; y = gauss(r) * 0.35; const hot = r(); c = hot < 0.2 ? [0.7, 0.8, 1.0] : hot < 0.75 ? [1.0, 0.95, 0.88] : [1.0, 0.8, 0.6]; }
     pos.set([x, y, z], i * 3); col.set(c, i * 3); b[i] = 0.25 + Math.pow(r(), 4) * 2.5;
   }
   const ND = 212, cen = []; for (let k = 0; k < ND; k++) { const i = Math.floor(r() * n); cen.push([pos[i * 3], pos[i * 3 + 2]]); }
@@ -863,9 +863,9 @@ float h21(vec2 p){ p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); 
 float n2(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f); return mix(mix(h21(i), h21(i+vec2(1,0)), f.x), mix(h21(i+vec2(0,1)), h21(i+vec2(1,1)), f.x), f.y); }
 float fb(vec2 p){ float a = 0.5, s = 0.0; for (int i = 0; i < 5; i++) { s += a * n2(p); p = p * 2.03 + 7.3; a *= 0.5; } return s; }
 // two major arms and two minor ones, each wandering a little (the same warp is in buildGalaxy)
-float spiral(float r, float th, float off, float sig, float wob){ float ph = th - log(max(r, 0.5) / 4.0) / tan(0.3054) - off + wob; float d = 0.0;
+float spiral(float r, float th, float off, float sig, float wob){ float ph = th - log(max(r, 0.5) / 4.0) / tan(0.384) - off + wob; float d = 0.0;
   for (int k = 0; k < 4; k++) { float fk = float(k); float x = mod(ph - fk * 1.5708 + 0.35 * sin(r * 0.33 + fk * 1.3) + 3.14159, 6.28318) - 3.14159;
-    d += (k % 2 == 0 ? 1.0 : 0.42) * exp(-x * x / (2.0 * sig * sig * (k % 2 == 0 ? 1.0 : 0.7))); } return d; }
+    d += (k % 2 == 0 ? 1.0 : 0.32 * smoothstep(9.0, 16.0, r)) * exp(-x * x / (2.0 * sig * sig * (k % 2 == 0 ? 1.0 : 0.7))); } return d; }
 vec3 redOf(vec3 c){ return vec3(0.85, 0.12, 0.05) * dot(c, vec3(0.33)) * 2.4; }
 void main(){
   vec2 ndc = vUV * 2.0 - 1.0; vec3 rd = normalize(uCamF + ndc.x * uTanHalf * uAspect * uCamR + ndc.y * uTanHalf * uCamU); vec3 ro = uCamPos;
