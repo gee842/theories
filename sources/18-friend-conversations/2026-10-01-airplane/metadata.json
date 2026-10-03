@@ -1,0 +1,64 @@
+{
+  "recorded": "2026-10-01, on a flight (the talk mentions arriving in Bangkok)",
+  "copied": "2026-10-03",
+  "texts": [
+    {
+      "file": "飞机对话复原稿_含时间标记.txt",
+      "bytes": 14486,
+      "sha256": "9214d8a6fe9afe0ca330ba0a7297cf4ab83a0e84ad778700667ef666de215fa5",
+      "role": "recovered transcript with time marks, produced in ChatGPT from the four recordings",
+      "origin": "~/Downloads, downloaded from https://chatgpt.com/ 2026-10-03 17:57 +07",
+      "edited": false
+    },
+    {
+      "file": "飞机上的未来设想与创作讨论.md",
+      "bytes": 14776,
+      "sha256": "eb967f3dfb2535e5fa891de86918f0a2642625a41c4133467b9278304fc7415b",
+      "role": "reorganised discussion summary, produced in ChatGPT from the same recordings",
+      "origin": "~/Downloads, downloaded from https://chatgpt.com/ 2026-10-03 17:57 +07",
+      "edited": false
+    }
+  ],
+  "audio": [
+    {
+      "file": "audio/story1.m4a",
+      "bytes": 3276787,
+      "sha256": "eda3359c6e9957211cde88ab46e4c3859703d6c2660c59ab04edc45bfb6481e8",
+      "duration_seconds": 372.54,
+      "embedded_creation_time_utc": "2026-10-01T06:18:19.000000Z",
+      "origin": "~/Downloads (filesystem date 2026-10-01 16:07 +07)",
+      "in_git": false
+    },
+    {
+      "file": "audio/生态文明气泡大气圈层.m4a",
+      "bytes": 2518475,
+      "sha256": "8b9d2f3cb04d055b95f0c7b672a4de81bbebd8ce803c5a2b95ac963013b5e017",
+      "duration_seconds": 289.69,
+      "embedded_creation_time_utc": "2026-10-01T09:07:39.000000Z",
+      "origin": "~/Downloads (filesystem date 2026-10-01 16:07 +07)",
+      "in_git": false
+    },
+    {
+      "file": "audio/生物控制论皮卡丘.m4a",
+      "bytes": 1799865,
+      "sha256": "8f1e0db34bea4c51062a7b76e6e440442baede55bf84b2bd7321180cc40796a0",
+      "duration_seconds": 209.39,
+      "embedded_creation_time_utc": "2026-10-01T09:07:19.000000Z",
+      "origin": "~/Downloads (filesystem date 2026-10-01 16:07 +07)",
+      "in_git": false
+    },
+    {
+      "file": "audio/质能转换的生物装置.m4a",
+      "bytes": 264342,
+      "sha256": "e416c813be786f944d87fcc2b8fab608d13ad176e982ea88e89e8bb9ca684baa",
+      "duration_seconds": 30.27,
+      "embedded_creation_time_utc": "2026-10-01T09:07:02.000000Z",
+      "origin": "~/Downloads (filesystem date 2026-10-01 16:07 +07)",
+      "in_git": false
+    }
+  ],
+  "notes": [
+    "story1.m4a's embedded creation time (06:18 UTC, 13:18 +07) differs from its file date; the other three carry 09:07 UTC, the minute their files were written, so it is probably an export time, not a recording time.",
+    "Neither text separates speakers. Nothing in them is attributed to Ren individually unless he confirms it."
+  ]
+}

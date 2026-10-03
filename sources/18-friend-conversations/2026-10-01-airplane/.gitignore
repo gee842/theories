@@ -1,0 +1,2 @@
+# Original audio is kept locally and excluded from Git, as in ../2026-10-02/.
+audio/*.m4a

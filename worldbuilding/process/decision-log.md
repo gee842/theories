@@ -138,6 +138,14 @@ Entries distinguish the user’s direction from assistant proposals and empirica
 
 **Open:** The form of a next edition is Ren's decision. The diagnosis lists implications (start from Ren's texts in their order; let form vary with the idea; brief images with the idea they must show; one page of qualifications; name the reader), not a redesign.
 
+## 2026-10-03 — Seeds from the airplane conversation
+
+**User direction:** Ren asked for two ChatGPT-made texts about a conversation recorded on a flight on 2026-10-01 to be added to his theories. Status: research finding; the seeds are not adopted.
+
+**Change:** [Seeds note](../research/2026-10-03-airplane-conversation-seeds.md): living tools and the ecological/mechanical split, the recycler organism, living companions with the open question of engineered devotion, the solar air bus, the Earth-in-glass-bubbles dark branch, and short line animation as a form. Each carries a bounded physical check or a connection to the foundations and the 2026-09-10 diagnosis. Source record: `sources/18-friend-conversations/2026-10-01-airplane/`. No map IDs, world briefs or artifacts changed.
+
+**Open:** The texts do not separate the speakers, so nothing is attributed to Ren. Whether any seed becomes a world brief, and whether the dark branch becomes the atlas's departure point, is Ren's decision.
+
 ## Future entry format
 
 Date · Topic · Status: [user direction / assistant proposal / research finding / revised choice]

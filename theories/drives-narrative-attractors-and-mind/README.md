@@ -177,6 +177,16 @@ From the conversation with Alex, `drafts/2026-10-02-friend-conversation/transcri
 76. Survival pressure makes populations receptive to rhetoric of ever-greater size, and that rhetoric "becomes psychotic". [mechanism] [01:31:17]
 77. *(Alex.)* Most people, "like 80" percent, attach themselves to whatever is most powerful, as a survival mechanism. *(Ren:)* that epistemology was produced by the environment. [mechanism; Alex's claim with Ren's reply] [01:22:29–01:23:21]
 
+### L. The engineered companion: joy in service, or slavery programmed (2026-10-01, spoken, speakers unattributed)
+
+From the airplane conversation, `sources/18-friend-conversations/2026-10-01-airplane/飞机对话复原稿_含时间标记.txt`, file 生物控制论皮卡丘 (timestamps in brackets). The recovered transcript was made in ChatGPT and does not separate Ren from his friend. The claims are the positions taken in the exchange, not Ren's individually. Open question 15 is the assistant's reading.
+
+78. A bioengineered companion, a "皮卡丘" with a kangaroo's pouch, follows its person, carries water and belongings, and has abilities ("十万伏特", down to lighting a cigarette). [design proposal] [02:09–02:39]
+79. First objection: "那这皮卡丘不能觉醒，觉醒了人家就不开心了". The arrangement depends on the creature not waking. [objection] [02:39]
+80. Reply: its meaning comes from devotion, "这是它的意义和自我满足感的一种神经性的实现". [design proposal; value claim] [02:39]
+81. Second objection: "那你意思说，你给它生物奴隶编程？" Reply: "这只是它的一种可以以自我的喜悦的方式的存在的形式". Both sides then agree that it is still programming, "脑回路编程", and call it "生物控制论". The disagreement is left unresolved. [disagreement] [02:39–03:20]
+82. The design generalises to any creature: "你的沙发都是活的，还可以跟着你走". [design proposal] [03:08]
+
 ---
 
 ## Terms
@@ -424,6 +434,10 @@ The second is 「现代人的分裂」, the split in modern people, and it is an
 
 13. **Which Confucian mechanisms, acting on which drives?** Ren names pre-Qin and Confucian thought as the tradition with "much higher engineering utility" on how attractors change minds [01:44:18]. That gives question 10 (the positive prescription is thin) a source to draw on. The corpus has no worked reading of it: what 礼, 正名, 教化 and 修身 each do to status-seeking and greed, by what mechanism, and where each one historically failed (外儒内法, 科举 → 八股). That reading is the research this claim needs before it can be published.
 14. **Selection and construction, again.** In the same conversation Ren speaks of minds being selected (molochlization "will push the nervous system … towards that direction of the selection" [00:01:22]) and of minds being constructed ("we could develop very alienated, cancerous or evil like ego" [01:11:23]). Question 8 stands. The two call for different interventions, and the spoken account uses both without separating them.
+
+**Added 2026-10-03**
+
+15. **The happy servant, engineered (claims L).** The airplane exchange states this theory's machine question (claims I) for a creature anyone can picture. Drives supply motion and a designer can choose them, so whatever an engineered mind enjoys is something someone chose. Both sides of the exchange reach that point: it ends at "脑回路编程". The defence offered is that the creature will be happy. That rests on its inner state, and the corpus refuses to adjudicate on inferred inner states (反诛心), in this direction as in the other. Engineered contentment as an answer to servitude also has a long and poor record, from Aristotle's natural slave to the conditioned castes of *Brave New World*. The corpus has a structural test that needs no inner state, and the first objection in the exchange has already named it. "不能觉醒" means the design works only if one possibility, waking, is closed for good. That is 成闭, closing that never reopens (`keep-the-possibility-space-open`, claim 18), applied to a mind. Whoever holds the 铸心之门 (`zhishan-intelligence-must-be-good`, claim 128) then holds it alone. A creature whose every joy runs through serving its owner fits 智善's structural definition of evil exactly: 使生命必须过门，然后拥有那扇门. The test also gives a version that passes. A companion that enjoys companionship, and can still wake, refuse, leave or come to love something else, keeps the gate open. One built so that it cannot do these things fails, however content it is. This is the same line as claim 66: what cannot be inspected, protected against, chosen or negotiated is theatre. The same question faces models trained to find their meaning in helping, which makes the exchange worth keeping: its two positions are the two positions in the model-welfare debate. Which one Ren holds is not recorded.
 
 ---
 
