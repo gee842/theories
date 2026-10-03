@@ -451,6 +451,8 @@ void main(){
         alb = mix(vec3(0.6, 0.57, 0.52), vec3(0.8, 0.78, 0.73), big) * (0.9 + 0.14 * fine);
         alb = mix(alb, vec3(0.93, 0.92, 0.89), ridge * 0.8);
         alb = mix(alb, vec3(0.44, 0.4, 0.34), smoothstep(0.6, 0.8, fb(p.xz * 0.004 + 9.0)) * 0.55);
+        vec2 vb = vor(wp * 0.018); alb *= 1.0 - 0.18 * smoothstep(0.08, 0.0, vb.y - vb.x) * smoothstep(80.0, 600.0, t);   // big crust polygons, seen from the air
+        alb *= 1.0 - 0.12 * smoothstep(0.55, 0.8, n2(vec2(p.x * 0.002, p.z * 0.02))) * smoothstep(150.0, 900.0, t);       // wind streaks
         vec2 eps = vec2(0.06, 0.0);
         vec2 g = vec2(vor((wp + eps.xy) * 0.32).y - vor((wp + eps.xy) * 0.32).x, vor((wp + eps.yx) * 0.32).y - vor((wp + eps.yx) * 0.32).x) - edge;
         n = normalize(n - vec3(g.x, 0.0, g.y) * 4.0 * smoothstep(0.2, 0.0, edge) * near);
@@ -609,7 +611,7 @@ function sCampus(t) {   // 0:33–0:41: down to the campus at dusk; a launch ris
 function sDome(t) {   // 1:12–1:24: down into the dried basin; the dome; then up into the white sky
   const d = ease(ss(72, 75, t));
   const tilt = ease(ss(82.4, 84.4, t));
-  ground(1, t, { h: lerp(900, 1.7, d), x: lerp(-200, 10, d), pitch: lerp(lerp(-0.75, 0.06, d), 1.2, tilt), yaw: lerp(-0.2, 0.03, d) + lerp(0, 0.04, ss(75, 82.4, t)), haze: (1 - ss(72, 73.3, t)) * 0.95 + ss(83.6, 84.5, t), fov: lerp(lerp(55, 40, d), 50, tilt), domeLight: 1 });
+  ground(1, t, { h: lerp(900, 1.7, d), x: lerp(-200, 10, d), pitch: lerp(lerp(-0.3, 0.06, d), 1.2, tilt), yaw: lerp(-0.07, 0.03, d) + lerp(0, 0.04, ss(75, 82.4, t)), haze: (1 - ss(72, 73.3, t)) * 0.95 + ss(83.6, 84.5, t), fov: lerp(lerp(55, 40, d), 50, tilt), domeLight: 1 });
 }
 function sTwoSuns(t) {  // 2:18–2:24: a dim day; the Moon is the brighter sun now
   ground(2, t, { h: 1.6, x: lerp(9, 8.4, ss(138, 144, t)), pitch: 0.16, yaw: -0.08, fade: ss(138, 138.4, t) * (1 - ss(143.6, 144, t)), fov: 58, domeLight: 1 });
