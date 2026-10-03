@@ -579,7 +579,7 @@ function ground(mode, t, cam) {
   if (!NOISE) { const nt = E.noiseTextures(); NOISE = { uN2: nt.n2, uN3: nt.n3 }; }
   if (!GROUND) GROUND = [0, 1, 2, 3].map(m => E.program(GROUND_FS.replace("precision highp float;", `precision highp float;\n#define MD ${m}\n`)));
   // each mood renders at the size its cost allows at 60 fps on a laptop GPU; the grain and bloom are added at full size
-  E.fullscreenAt(cam.scale ?? [0.85, 0.5, 0.55, 0.66][mode], GROUND[mode], { uMode: mode, uTime: cam.time ?? t, uH: cam.h, uCamX: cam.x || 0, uPitch: cam.pitch, uYaw: cam.yaw || 0, uLaunch: cam.launch || 0, uStars: cam.stars ?? 1, uFade: cam.fade ?? 1, uHaze: cam.haze || 0, uDomeLight: cam.domeLight ?? 1, uFov: (cam.fov || 50) * D2R, uDbg: cam.dbg || 0, iZero: 0, ...plumeTable(cam.launch || 0), uRk: rocketAt(cam.launch || 0) }, NOISE);
+  E.fullscreenAt(cam.scale ?? [0.85, 0.5, 0.55, 0.6][mode], GROUND[mode], { uMode: mode, uTime: cam.time ?? t, uH: cam.h, uCamX: cam.x || 0, uPitch: cam.pitch, uYaw: cam.yaw || 0, uLaunch: cam.launch || 0, uStars: cam.stars ?? 1, uFade: cam.fade ?? 1, uHaze: cam.haze || 0, uDomeLight: cam.domeLight ?? 1, uFov: (cam.fov || 50) * D2R, uDbg: cam.dbg || 0, iZero: 0, ...plumeTable(cam.launch || 0), uRk: rocketAt(cam.launch || 0) }, NOISE);
 }
 function plumeTable(launch) {   // 40 samples along the climb: centre and width, light colour and density
   const Pl = new Float32Array(160), Pc = new Float32Array(160); if (launch <= 0) return { uPl: Pl, uPc: Pc };
