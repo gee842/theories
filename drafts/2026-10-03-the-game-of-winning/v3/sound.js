@@ -62,7 +62,7 @@ async function render(sr = 44100) {
   prog(171, 223, [Cm, Ab, Eb, Bb, Cm, Ab], 0.013, 600);           // the galaxy taken
   chord(223, 268, [61.74, 92.5, 116.54, 130.81, 185], 0.011, 520, 4, 5);   // a cluster: the split and the war
   // the motif at each wall
-  motif(9.7); motif(27.6); motif(47.6, 1, 0.04); motif(56.8, 0.5, 0.05); motif(88.6, 0.5, 0.045); motif(129, 0.5, 0.05); motif(166.8, 0.5, 0.045, 4, 0.95, 5); motif(190.4, 0.5, 0.055, 4, 1.05, 3);   // in D minor (the cell), in C minor (the galaxy)
+  motif(9.7); motif(27.6); motif(47.6, 1, 0.04); motif(56.8, 0.5, 0.05); motif(88.6, 0.5, 0.045); motif(129, 0.5, 0.085); motif(166.8, 0.5, 0.045, 4, 0.95, 5); motif(190.4, 0.5, 0.055, 4, 1.05, 3);   // in D minor (the cell), in C minor (the galaxy)
   motif(224.2, 0.5, 0.05, 3);                                     // nothing is left to win: it does not resolve
   // ---- 1. room tone; the Earth appears
   noise(0.3, 7.2, "lowpass", 260, 260, 0.6, g => { g.linearRampToValueAtTime(0.045, 1.8); g.setValueAtTime(0.045, 5.5); g.linearRampToValueAtTime(0, 7.2); }, 0.2);
