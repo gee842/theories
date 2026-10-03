@@ -92,7 +92,8 @@ void main(){
     vec2 px = vec2(1.0 / 2048.0, 1.0 / 1024.0) * 1.5; float oA = texture(uGrow, uv + vec2(px.x, 0.0)).b, oB = texture(uGrow, uv + vec2(0.0, px.y)).b;
     vec3 cA = uPCol[clamp(int(floor(oA * 255.0 / 20.0 + 0.5)), 0, 11)], cB = uPCol[clamp(int(floor(oB * 255.0 / 20.0 + 0.5)), 0, 11)], cS = uPCol[clamp(owner, 0, 11)];
     float border = step(0.02, length(cA - cS) + length(cB - cS));
-    vec3 ncol = nb * vec3(1.0, 0.84, 0.6) * 1.3 * (1.0 - grown * 0.5) + amber * grown * (0.012 + 0.16 * grain + nlum * 1.3) * (1.0 - 0.8 * border);
+    float fill = smoothstep(gYear, gYear + 24.0, uYear);   // new land starts as scattered sites and fills in over two decades
+    vec3 ncol = nb * vec3(1.0, 0.84, 0.6) * 1.3 * (1.0 - grown * 0.5) + amber * grown * (0.012 * fill + 0.16 * grain * smoothstep(1.0 - fill, 1.0, vnoise(q * 160.0) * 0.6 + 0.4 * fill) + nlum * 1.3) * (1.0 - 0.8 * border);
     float cl = 0.0;
     if (uClouds > 0.0) { if (uHasCloud > 0.5) { vec2 cuv = uv + vec2(uTime * 0.0004, 0.0); cl = smoothstep(0.18, 0.75, texture(uCloud, cuv).r) * uClouds; } else { vec3 cq = q * 9.0 + vec3(uTime * 0.006, 0.0, 0.0); float w = fbm(cq * 0.5); cl = smoothstep(0.6, 0.74, fbm(cq + w * 2.0) * (0.7 + 0.45 * pow(abs(sin(lat * 3.0)), 0.6))) * uClouds; } }
     dcol = mix(dcol, vec3(0.88, 0.9, 0.93) * dl * uDayGain, cl * 0.75);
