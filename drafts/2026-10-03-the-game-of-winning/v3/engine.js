@@ -72,8 +72,8 @@ void main(){
     vec3 salt = mix(vec3(0.42, 0.39, 0.34), vec3(0.62, 0.59, 0.53), fbm(q * 40.0)) * (0.8 + 0.4 * depth);
     day = mix(day, salt, isSea * (1.0 - sea));
     // solar glass over grown land: dark, gridded, glinting
-    float grid = max(pow(abs(sin(lon * 900.0)), 30.0), pow(abs(sin(lat * 900.0)), 30.0));
-    vec3 glass = vec3(0.012, 0.02, 0.04) * (1.0 + 0.8 * grid);
+    float fields = smoothstep(0.35, 0.5, vnoise(q * 700.0)) * (0.7 + 0.3 * vnoise(q * 2200.0));   // irregular field patches, not a grid
+    vec3 glass = vec3(0.012, 0.02, 0.04) * (0.8 + 0.5 * fields);
     float ice = smoothstep(0.55, 0.8, min(day.r, min(day.g, day.b)) / max(max(day.r, day.g), 1e-3) * dot(day, vec3(0.33)) * 2.0);
     float glassK = grown * (1.0 - ice * 0.6) * (0.55 + 0.45 * fbm(q * 90.0));
     day = mix(day, glass, glassK);
@@ -95,7 +95,7 @@ void main(){
     float fill = smoothstep(gYear, gYear + 24.0, uYear);   // new land starts as scattered sites and fills in over two decades
     vec3 ncol = nb * vec3(1.0, 0.84, 0.6) * 1.3 * (1.0 - grown * 0.5) + amber * grown * (0.012 * fill + 0.16 * grain * smoothstep(1.0 - fill, 1.0, vnoise(q * 160.0) * 0.6 + 0.4 * fill) + nlum * 1.3) * (1.0 - 0.8 * border);
     float cl = 0.0;
-    if (uClouds > 0.0) { if (uHasCloud > 0.5) { vec2 cuv = uv + vec2(uTime * 0.0004, 0.0); cl = smoothstep(0.18, 0.75, texture(uCloud, cuv).r) * uClouds; } else { vec3 cq = q * 9.0 + vec3(uTime * 0.006, 0.0, 0.0); float w = fbm(cq * 0.5); cl = smoothstep(0.6, 0.74, fbm(cq + w * 2.0) * (0.7 + 0.45 * pow(abs(sin(lat * 3.0)), 0.6))) * uClouds; } }
+    if (uClouds > 0.0) { if (uHasCloud > 0.5) { vec2 cuv = uv + vec2(uTime * 0.0004, 0.0); float cv = texture(uCloud, cuv).r, cm = textureLod(uCloud, cuv, 3.5).r; cv *= smoothstep(0.07, 0.38, cm); cl = smoothstep(0.22, 0.85, cv + (vnoise(q * 420.0) - 0.5) * 0.55 * smoothstep(0.05, 0.5, cv) + (vnoise(q * 1300.0) - 0.5) * 0.2) * uClouds; /* lone puffs fade, and fine noise ragged the edges of the magnified map */ } else { vec3 cq = q * 9.0 + vec3(uTime * 0.006, 0.0, 0.0); float w = fbm(cq * 0.5); cl = smoothstep(0.6, 0.74, fbm(cq + w * 2.0) * (0.7 + 0.45 * pow(abs(sin(lat * 3.0)), 0.6))) * uClouds; } }
     dcol = mix(dcol, vec3(0.88, 0.9, 0.93) * dl * uDayGain, cl * 0.75);
     ncol *= 1.0 - cl * 0.55;
     col = dcol + ncol * nl * uNightGain;

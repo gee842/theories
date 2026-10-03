@@ -647,7 +647,7 @@ function sOrbital(t) {
   earth(t, rot, { thermal, heat: clamp((year - 2055) / 45), clouds: lerp(0.55, 0.5, thermal) });
   E.drawParticles(SYS.orbit, { uCenter: EARTH, uYear: year, uT: t, uSunDir: SUN_DIR_AT_EARTH, uK: (2.6 - thermal * 2.2) * (1 - 0.4 * ss(55, 60, t)) }, { depth: true });
   // the rocket from the campus, climbing to join the shells
-  if (t < 45.5) { const base = surf(rot, ABILENE[0], ABILENE[1], 1.0), up = norm(sub(base, EARTH)), side = norm(cross(up, [0, 1, 0])), u = ss(41, 45.5, t);
+  if (t < 45.5) { const base = surf(rot, ABILENE[0], ABILENE[1], 1.0), up = norm(sub(base, EARTH)), side = norm(cross([0, 1, 0], up)), u = ss(41, 45.5, t);   // eastward, as launches go
     const p = add(add(base, scl(up, 0.08 * Math.sin(u * Math.PI / 2))), scl(side, u * 0.35)); pt(p, [1, 0.9, 0.7], 8 * (1 - ss(44.5, 45.5, t)), 14); flushPts({ depth: true }); let prev = base; for (let i = 1; i <= 16; i++) { const v = u * i / 16, q = add(add(base, scl(up, 0.08 * Math.sin(v * Math.PI / 2))), scl(side, v * 0.35)); ln(prev, q, [1, 0.7, 0.4], 0.9 * (i / 16) * (1 - ss(44.5, 45.5, t)), 1.4); prev = q; } flushLns({ depth: true }); }   // its trail, a smooth streak
   // seawater vented to space, seen in profile along the limb
   const on = ss(60, 62, t) * (1 - ss(71.5, 72, t));
@@ -963,7 +963,7 @@ const CARDS = [
 const STAMPS = [[33.6, 40.7, "WEST TEXAS"], [73.4, 84.2, "THE DRY MEDITERRANEAN"], [138.3, 143.8, "THE SAME DOME"], [154.4, 162, "ANOTHER STAR"], [195.4, 201.6, "THE SAME DOME · TWO MILLION YEARS LATER"]];
 const INSTR = [[7, 33, "VIIRS DAY/NIGHT BAND"], [33, 41, "GROUND"], [41, 50, "VISIBLE"], [50, 59.6, "THERMAL INFRARED  11 µm"], [59.6, 72, "VISIBLE"], [72, 84.5, "GROUND"], [84.5, 128.5, "VISIBLE"], [128.5, 138, "MID-INFRARED  12 µm"], [138, 144, "GROUND"], [144, 149, "MID-INFRARED  12 µm"], [149, 170, "VISIBLE"], [170, 191.5, "VISIBLE"], [191.5, 195, "MID-INFRARED  12 µm"], [195, 202, "GROUND"], [202, 272, "MID-INFRARED  12 µm"]];
 const CALL = [
-  [43, 46.5, "orbital data centres", () => add(EARTH, [0.2, 0.95, 0.75])],
+  [43, 46.5, "orbital data centres", null, [1590, 250]],   // the shells at the limb
   [45.5, 48.5, "solar fields", () => surf(orbitRot(47), -112, 34, 1.0)],
   [62, 65.5, "mass drivers venting seawater", null, [1460, 300]],
   [66, 69.2, "dry sea floor", () => surf(orbitRot(68), 5, 40, 1.0)],
