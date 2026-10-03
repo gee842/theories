@@ -397,9 +397,10 @@ void main(){
   float tmax = min(tg, MD == 0 ? 9000.0 : 1300.0);
   float ceil_ = MD == 0 ? 56.0 : 140.0;   // nothing stands taller than this (the stacks; the basin halls)
   if (ro.y > ceil_) { if (rd.y < 0.0) t = (ro.y - ceil_) / -rd.y; else t = 1e9; }
-  if (off(1)) t = 1e9;
+  if (off(1) || MD == 1 || MD == 3) t = 1e9;   // in the basin nothing stands within 1.3 km: the ground is analytic
+  if (MD == 2) tmax = min(tmax, 60.0);          // only the two figures are near
   int steps = 0;
-  for (int i = 0; i < 200 + iZero; i++) { vec3 p = ro + rd * t; float m, idd; vec3 qq; float d = scene(p, m, idd, qq); steps = i;
+  for (int i = 0; i < 200 + iZero; i++) { if (t > tmax) break; vec3 p = ro + rd * t; float m, idd; vec3 qq; float d = scene(p, m, idd, qq); steps = i;
     if (d < 0.0012 * t + 0.006) { hit = true; mat = m; id = idd; lq = qq; break; }
     t += max(d * 0.8, t * 0.0015); if (t > tmax || (p.y > 30.0 && rd.y >= 0.0)) break; }
   // the dome's span along this ray (an ellipsoid of glass)
@@ -413,14 +414,17 @@ void main(){
   if (!off(32) && MD != 0 && rd.y < 0.16 && !hit) { float tt = 1300.0, prevD = ro.y + rd.y * tt, prevT = tt, tEnd = min(tg, 60000.0);
     for (int i = 0; i < 260 + iZero; i++) { vec3 p = ro + rd * tt; float hh = hallH(p.xz); float dd = p.y - max(hh, escH(p.xz));
       if (dd < 0.0) { float f = prevD / (prevD - dd + 1e-6); t = mix(prevT, tt, f); hit = true; mat = hh > 0.0 && p.y < hh + 1.0 ? 1.0 : 4.0; if (mat < 1.5) { vec3 ph = ro + rd * t; lq = vec3(mod(ph.x, HX) - HX * 0.5, ph.y, mod(ph.z, HZ) - HZ * 0.5); id = h21(vec2(floor(ph.x / HX), floor(ph.z / HZ)) + 0.37); } break; }
-      if (p.y > 1600.0 && rd.y > 0.0) break; prevD = dd; prevT = tt; tt += tt < 5500.0 ? max(9.0, tt * 0.0075) : max(60.0, tt * 0.035); if (tt > tEnd) break; } }
+      if (p.y > 1600.0 && rd.y > 0.0) break; prevD = dd; prevT = tt;
+      float stepF = tt < 5500.0 ? max(10.0, tt * 0.011) : max(60.0, tt * 0.035);
+      if (p.z > -5200.0 && p.y > 90.0 && rd.z < 0.0) stepF = max(stepF, min((p.y - 85.0) / max(-rd.y, 1e-4), (p.z + 5200.0) / -rd.z));   // above every hall: jump toward the old coast
+      tt += stepF; if (tt > tEnd) break; } }
   // inside the dome: the city
-  if (MD != 0 && d1 > 0.0 && (!hit || t > d0)) { float ta = max(d0, 0.0), tb = min(d1, hit ? t : tg); float tt = ta, prevT = ta; bool above = true;
+  if (MD != 0 && !off(8192) && d1 > 0.0 && (!hit || t > d0)) { float ta = max(d0, 0.0), tb = min(d1, hit ? t : tg); if (ro.y > 430.0 && rd.y < 0.0) ta = max(ta, (ro.y - 430.0) / -rd.y); if (rd.y > 0.0) tb = min(tb, (430.0 - ro.y) / rd.y); float tt = ta, prevT = ta; bool above = true;
     for (int i = 0; i < 170 + iZero; i++) { if (tt > tb) break; vec3 p = ro + rd * tt; float cid; vec2 clc, chs; float hh = cityH(p.xz, cid, clc, chs);
       if (p.y < hh) { float lo = prevT, hi = tt; for (int k = 0; k < 5; k++) { float m = 0.5 * (lo + hi); vec3 pm = ro + rd * m; float i2; vec2 l2, h2; if (pm.y < cityH(pm.xz, i2, l2, h2)) hi = m; else lo = m; }
         t = hi; hit = true; mat = 6.0; id = cid; vec3 ph = ro + rd * t; float i3; vec2 l3, h3; float h3h = cityH(ph.xz, i3, l3, h3); cityLc = l3; lq = vec3(l3.x, ph.y, l3.y);
         vec3 pp = ro + rd * lo; float i4; vec2 l4, h4; cityN = (pp.y > cityH(pp.xz, i4, l4, h4) - 0.5 && ph.y > h3h - 2.0) ? vec3(0.0, 1.0, 0.0) : (abs(l3.x) / h3.x > abs(l3.y) / h3.y ? vec3(sign(l3.x), 0.0, 0.0) : vec3(0.0, 0.0, sign(l3.y))); break; }
-      if (p.y > 420.0 && rd.y >= 0.0) break; prevT = tt; tt += 20.0 + tt * 0.002; } }
+      if (p.y > 420.0 && rd.y >= 0.0) break; prevT = tt; tt += 28.0 + tt * 0.0045; } }
   if (!hit && tg < tGround) { hit = true; t = tg; mat = 0.0; }
 
   vec3 L = MD == 0 ? SUN0 : MD == 1 ? SUN1 : MOONL;
