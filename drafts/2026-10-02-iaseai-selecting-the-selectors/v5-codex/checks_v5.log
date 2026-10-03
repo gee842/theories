@@ -1,0 +1,14 @@
+PASS M1: mean-load counterexample dE=1.091111111, dp_max=-0.988888889; common-term cancellation; integrable liability margin preserves positive mixed shares
+PASS M2: all 16 action profiles: dominant racing implements collective loss despite perfect principal fidelity
+PASS M3: investment optimum/entry cutoff p*=0.316227766; faithful-transmission covariance positive on increasing support
+PASS M4: rate boundary and AI-assisted correction; persistent cost floor; eta=1 moment=0.25, HHI=0.5, ten-way delay=23.025850930
+PASS M5: full inbound certificate; diagonal-only false certificate; seed/reseed boundary; same paused share .55 captures with support 1.1 and clears with support 0
+PASS M6: serial=0.531441, independent redundant=0.999999; fallible-corrector residual total <=.11 and survival >=.89
+PASS M7: Y-covered/X-uncovered exposure is zero; linear/exponential freeze integrals; history-dependent hazard bound; summable incomplete coverage does not ensure survival with added background risk
+PASS M8: qL=1 strict dominance across 264 own-profile comparisons; qL=.99 all-D positive survival .0045125, speed threshold=206.421052632; bounded-speed survivor=.33
+PASS M9: exact log-hazard gap=0.04628075256; at H=1000 mixture T=0.009000>R=0.006738; endpoint-only multiplayer condition fails by -3.727922061
+PASS M10: nonconstant ex-post BIC allocation with interim .5; constrained vs signed-share feasibility; equality is weak IR; cooperative-surplus lever; type-dependent survival must remain inside expectation
+PASS M11: safe load cap=0.8000000000000002; conservative transition lower bound=0.707965075; eventual restoration alone fails transient viability
+PASS boundary regressions: P28 multiplicity roots=[0.15294896716667228, 0.9370510328333277]; accelerating full delegation can have summable risk and survival lower bound .8125
+PASS boundary regressions: single-point weighted-control test w(a)=0 does not establish a full-frequency robust certificate
+All targeted checks passed. Numerical ODE trajectories are illustrations; formal claims rely on FORMAL.md proofs. No empirical or exhaustive certification claimed.
