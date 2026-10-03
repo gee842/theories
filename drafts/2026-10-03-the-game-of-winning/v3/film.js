@@ -280,10 +280,10 @@ float garden(vec3 p){
   vec3 q = p - DOME; float bound = length(q) - DOME_R; if (bound > 1.0 || off(512)) return max(bound, 0.5);
   float d = 1e3;
   for (int k = 0; k < 11 + iZero; k++) { float db = length(q - uTB[k].xyz) - uTB[k].w; if (db > 1.0) { d = min(d, db); continue; }
-    float dt = sdCap(q, uTA[k].xyz, uTT[k].xyz, 0.26);
-    for (int j = 0; j < 5 + iZero; j++) { vec4 sp = uTS[k * 5 + j]; dt = smin(dt, length(q - sp.xyz) - sp.w, 1.3); }
+    float fl = uTA[k].w; float dt = sdCap(q, uTA[k].xyz, uTT[k].xyz, fl > 2.0 ? 0.2 : 0.17);
+    for (int j = 0; j < 5 + iZero; j++) { vec4 sp = uTS[k * 5 + j]; vec3 dq = q - sp.xyz; dq.y *= fl; dt = smin(dt, (length(dq) - sp.w) / fl, 0.9); }   // crowns flattened: umbrella pines
     d = min(d, dt); }
-  if (d < 1.5) d += (n3(q * 1.4) - 0.5) * 1.1 + (n3(q * 4.2) - 0.5) * 0.3;
+  if (d < 1.2) d += ((n3(q * 1.6) - 0.5) * 0.8 + (n3(q * 5.0) - 0.5) * 0.35) * smoothstep(1.8, 3.0, q.y);   // leaves on the crowns, smooth trunks
   float sb = smoothstep(0.62, 0.3, n2(q.xz * 0.3)); d = min(d, max(max(q.y - 1.0 * sb + 0.25, 0.6 - 2.0 * sb), length(q.xz) - (DOME_R - 2.0)));   // shrubs, only where they grow
   // people under the glass
   if (MD == 1) for (int k = 0; k < 5 + iZero; k++) { float fk = float(k); vec3 b = vec3(-11.0 + fk * 4.3, 0.0, 22.0 - abs(fk - 2.0) * 1.6); float pb = length(q - b - vec3(0.0, 0.9, 0.0)) - 1.1;
@@ -418,7 +418,7 @@ void main(){
         float ax = abs(p.x - uCamX * 0.0);
         if (ax < 4.2) { alb = vec3(0.035, 0.034, 0.033) * (0.8 + 0.4 * n2(p.xz * 3.0)); specK = 0.4;
           alb += vec3(0.5, 0.38, 0.1) * smoothstep(0.1, 0.06, ax) * step(fract(p.z / 12.0), 0.5) + vec3(0.45) * smoothstep(0.1, 0.05, abs(ax - 3.8)); }
-      } else if (inDome) { alb = vec3(0.06, 0.13, 0.04) * (0.6 + 0.7 * fb(p.xz * 0.6));
+      } else if (inDome) { alb = mix(vec3(0.1, 0.11, 0.06), vec3(0.06, 0.1, 0.035), fb(p.xz * 0.5)) * (0.7 + 0.5 * n2(p.xz * 3.0));
       } else {
         // salt crust: polygon plates with raised rims, a crust that reads at every distance
         vec2 wp = p.xz + vec2(fb(p.xz * 0.15), fb(p.xz * 0.15 + 5.0)) * 2.5;   // warp, so the polygons are not tiles
@@ -450,8 +450,10 @@ void main(){
         emit += vec3(1.0, 0.05, 0.02) * (corner + stackTop) * pulse * 30.0;
       } else if (MD >= 2) { emit += vec3(1.0, 0.6, 0.3) * 0.6 * step(0.985, h21(floor(vec2(lq.x / 6.0, p.y / 3.0)) + id)) * step(0.5, abs(n.z)) * (MD == 3 ? 0.5 : 1.0); }
     } else if (mat < 2.5) {
-      float trunk = step(p.y, 4.0) * step(0.9, length(n.xz)) * step(fb3(p * 0.7), 0.6);
-      alb = mix(vec3(0.05, 0.11, 0.03) * (0.5 + 1.0 * fb3(p * 0.8)), vec3(0.12, 0.09, 0.06), trunk);
+      vec3 lp = p - DOME; float clumps = n3(lp * 3.2) * 0.6 + n3(lp * 7.5) * 0.4;
+      bool crown = lp.y > 2.6 || length(n.xz) < 0.85; float pineH = smoothstep(5.5, 7.0, lp.y);
+      vec3 leaf = mix(vec3(0.075, 0.09, 0.06), vec3(0.035, 0.065, 0.03), pineH) * (0.45 + 1.1 * smoothstep(0.3, 0.75, clumps)) * (0.75 + 0.35 * n.y);
+      alb = crown ? leaf : vec3(0.1, 0.08, 0.065) * (0.7 + 0.5 * n3(lp * vec3(8.0, 1.0, 8.0)));
       if (p.y < 2.0 && length(p.xz - DOME.xz) > 14.0 && MD == 1) alb = mix(alb, vec3(0.05, 0.045, 0.045), step(0.5, abs(n.x) + abs(n.z)) * 0.0);
       emit += vec3(1.0, 0.72, 0.42) * 0.015 * uDomeLight;
     } else if (mat < 3.5) { alb = vec3(0.03, 0.028, 0.027);
@@ -544,14 +546,15 @@ function ground(mode, t, cam) {
   if (!NOISE) { const nt = E.noiseTextures(); NOISE = { uN2: nt.n2, uN3: nt.n3 }; }
   if (!GROUND) GROUND = [0, 1, 2, 3].map(m => E.program(GROUND_FS.replace("precision highp float;", `precision highp float;\n#define MD ${m}\n`)));
   // each mood renders at the size its cost allows at 60 fps on a laptop GPU; the grain and bloom are added at full size
-  E.fullscreenAt(cam.scale ?? [0.85, 0.45, 0.6, 0.75][mode], GROUND[mode], { uMode: mode, uTime: cam.time ?? t, uH: cam.h, uCamX: cam.x || 0, uPitch: cam.pitch, uYaw: cam.yaw || 0, uLaunch: cam.launch || 0, uStars: cam.stars ?? 1, uFade: cam.fade ?? 1, uHaze: cam.haze || 0, uDomeLight: cam.domeLight ?? 1, uFov: (cam.fov || 50) * D2R, uDbg: cam.dbg || 0, iZero: 0, ...TREES, ...plumeTable(cam.launch || 0), uRk: rocketAt(cam.launch || 0) }, NOISE);
+  E.fullscreenAt(cam.scale ?? [0.85, 0.42, 0.6, 0.75][mode], GROUND[mode], { uMode: mode, uTime: cam.time ?? t, uH: cam.h, uCamX: cam.x || 0, uPitch: cam.pitch, uYaw: cam.yaw || 0, uLaunch: cam.launch || 0, uStars: cam.stars ?? 1, uFade: cam.fade ?? 1, uHaze: cam.haze || 0, uDomeLight: cam.domeLight ?? 1, uFov: (cam.fov || 50) * D2R, uDbg: cam.dbg || 0, iZero: 0, ...TREES, ...plumeTable(cam.launch || 0), uRk: rocketAt(cam.launch || 0) }, NOISE);
 }
-const TREES = (() => {   // the garden's trees in dome-local metres: trunk base, trunk top, five canopy spheres, a bounding sphere
+const TREES = (() => {   // the garden in dome-local metres: stone pines (flat crowns on bare trunks) and olives (low, round); trunk base (w: flattening), trunk top, five crown spheres, a bound
   const fr = x => x - Math.floor(x), TS = [], TA = [], TT = [], TB = [];
-  for (let k = 0; k < 11; k++) { const seed = k + 1, hgt = 6 + 4 * fr(seed * 7.3), cr = 2.3 + 1.1 * fr(seed * 3.7);
-    const bx = Math.sin(k * 2.4 + 0.5) * (4 + k * 1.8), bz = Math.cos(k * 2.4 + 0.5) * (4 + k * 1.6) - 4;
-    TA.push(bx, 0, bz, 0); TT.push(bx + 0.4 * Math.sin(seed * 9), hgt * 0.62, bz + 0.3 * Math.cos(seed * 4), 0);
-    const sp = []; for (let j = 0; j < 5; j++) { const c = [bx + Math.sin(seed * 3 + j * 1.9) * cr * 0.75, hgt * (0.6 + 0.1 * j), bz + Math.cos(seed * 5 + j * 2.3) * cr * 0.75], r = cr * (1 - 0.13 * j); sp.push([c, r]); TS.push(c[0], c[1], c[2], r); }
+  for (let k = 0; k < 11; k++) { const seed = k + 1, pine = k % 2 === 0, bx = Math.sin(k * 2.4 + 0.5) * (4 + k * 1.8), bz = Math.cos(k * 2.4 + 0.5) * (4 + k * 1.6) - 4;
+    const hgt = pine ? 8.5 + 3 * fr(seed * 7.3) : 3.6 + 1.4 * fr(seed * 7.3), cr = pine ? 2.4 + 0.8 * fr(seed * 3.7) : 1.5 + 0.5 * fr(seed * 3.7), flat = pine ? 2.3 : 1.15;
+    TA.push(bx, 0, bz, flat); const top = [bx + (pine ? 0.6 : 0.2) * Math.sin(seed * 9), hgt * (pine ? 0.93 : 0.55), bz + (pine ? 0.5 : 0.2) * Math.cos(seed * 4)]; TT.push(...top, 0);
+    const sp = []; for (let j = 0; j < 5; j++) { const a = seed * 3 + j * 1.26, rr = j === 0 ? 0 : cr * (pine ? 1.0 : 0.6);
+      const c = [top[0] + Math.cos(a) * rr, hgt + (pine ? (j === 0 ? 0.3 : -0.1) : (j * 0.25 - 0.3)), top[2] + Math.sin(a) * rr], r = cr * (j === 0 ? 1.1 : 0.85); sp.push([c, r]); TS.push(c[0], c[1], c[2], r); }
     const pts = [[bx, 0, bz, 0.3], ...sp.map(([c, r]) => [c[0], c[1], c[2], r])], cen = [0, 1, 2].map(i => pts.reduce((a, q) => a + q[i], 0) / pts.length);
     const rad = Math.max(...pts.map(q => Math.hypot(q[0] - cen[0], q[1] - cen[1], q[2] - cen[2]) + q[3])) + 2.0; TB.push(cen[0], cen[1], cen[2], rad); }
   return { uTS: TS, uTA: TA, uTT: TT, uTB: TB };
