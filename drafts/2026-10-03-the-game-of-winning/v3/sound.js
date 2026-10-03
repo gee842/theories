@@ -36,18 +36,34 @@ async function render(sr = 44100) {
     const a = F(t0), b = F(t1); const f = ac.createBiquadFilter(); f.type = "lowpass"; f.frequency.value = cutoff; f.Q.value = 0.5;
     const g = ac.createGain(); g.gain.setValueAtTime(0, a); g.gain.linearRampToValueAtTime(peak, a + fadeIn); g.gain.setValueAtTime(peak, Math.max(a + fadeIn, b - fadeOut)); g.gain.linearRampToValueAtTime(0, b);
     const lfo = ac.createOscillator(); lfo.frequency.value = 0.07; const lg = ac.createGain(); lg.gain.value = cutoff * 0.25; lfo.connect(lg); lg.connect(f.frequency); lfo.start(a); lfo.stop(b + 0.1);
-    for (const [i, fr] of freqs.entries()) for (const det of [-4, 4]) { const o = ac.createOscillator(); o.type = i === 0 ? "sine" : "triangle"; o.frequency.value = fr; o.detune.value = det; o.connect(f); o.start(a); o.stop(b + 0.1); }
+    for (const [i, fr] of freqs.entries()) for (const det of [-7, 0, 7]) { const o = ac.createOscillator(); o.type = i === 0 ? "sine" : "sawtooth"; o.frequency.value = fr; o.detune.value = det; const og = ac.createGain(); og.gain.value = i === 0 ? 1 : 0.32; o.connect(og); og.connect(f); o.start(a); o.stop(b + 0.1); }
     f.connect(g); out(g, 0.8, 0);
   }
+  // a progression: the span is shared among the chords, each crossfading into the next
+  function prog(t0, t1, chords, peak, cutoff, fade = 2.5) { const n = chords.length, len = (t1 - t0) / n;
+    chords.forEach((c, i) => chord(t0 + i * len - (i ? fade / 2 : 0), t0 + (i + 1) * len + (i < n - 1 ? fade / 2 : 0), c, peak, cutoff, i ? fade : 4, i < n - 1 ? fade : 4)); }
+  // a felt-piano note: a few partials with their own decays, a soft hammer
+  function pnote(t, fr, vel = 0.05, dur = 5, pan = 0) { const a = F(t);
+    for (const [m, amp, dec] of [[1, 1, 1], [2, 0.38, 0.65], [3, 0.14, 0.45], [4.03, 0.06, 0.3], [5.12, 0.03, 0.22]]) { const o = ac.createOscillator(); o.frequency.value = fr * m; const g = ac.createGain();
+      g.gain.setValueAtTime(0.0001, a); g.gain.exponentialRampToValueAtTime(vel * amp, a + 0.006); g.gain.exponentialRampToValueAtTime(0.0001, a + dur * dec); o.connect(g); out(g, 0.75, pan); o.start(a); o.stop(a + dur * dec + 0.05); }
+    noise(t, S(a + 0.06), "lowpass", 1400, 300, 0.5, g => { g.linearRampToValueAtTime(vel * 0.35, S(a + 0.003)); g.exponentialRampToValueAtTime(0.0001, S(a + 0.06)); }, 0.3, pan); }
+  // the motif: four falling notes, the game's figure; stated at every wall, lower as it goes; it breaks off when nothing is left to win
+  const MOTIF = [523.25, 493.88, 440, 329.63];
+  function motif(t0, oct = 1, vel = 0.045, notes = 4, gap = 0.95) { const a = F(t0); for (let k = 0; k < notes; k++) pnote(S(a + k * gap), MOTIF[k] * oct, vel * (k === 3 ? 1.15 : 1), k === notes - 1 ? 7 : 4.5, (k - 1.5) * 0.12); }
   const L10 = t => Math.log10(Math.max(1, Film.powerAt(t)));
   const ground = t => (t >= 33 && t < 41) || (t >= 72 && t < 84.5) || (t >= 138 && t < 144) || (t >= 195 && t < 202);
   // ---- the pad, act by act (story time)
-  chord(0.5, 33, [110, 164.81, 220, 277.18, 329.63], 0.016, 700, 4, 2);        // A, warm: today
-  chord(33, 84.5, [98, 146.83, 196, 246.94, 293.66], 0.016, 800, 3, 3);         // G: the race and the Earth
-  chord(84.5, 138, [87.31, 130.81, 174.61, 220, 261.63], 0.018, 900, 3, 3);     // F: the Sun
-  chord(138, 171, [73.42, 110, 146.83, 174.61, 220], 0.017, 700, 3, 3);         // D minor: the probes, the cell
-  chord(171, 223, [65.41, 98, 130.81, 155.56, 196], 0.016, 600, 3, 4);          // C minor: the galaxy taken
-  chord(223, 268, [61.74, 92.5, 116.54, 130.81, 185], 0.014, 520, 4, 5);        // a cluster: the split and the war
+  const Am = [110, 164.81, 220, 261.63, 329.63], F_ = [87.31, 130.81, 174.61, 220, 261.63], C = [65.41, 130.81, 196, 261.63, 329.63], G_ = [98, 146.83, 196, 246.94, 293.66],
+    Dm = [73.42, 110, 146.83, 174.61, 220], E_ = [82.41, 123.47, 164.81, 207.65, 246.94], Cm = [65.41, 98, 130.81, 155.56, 196], Ab = [51.91, 103.83, 155.56, 207.65, 261.63], Eb = [77.78, 116.54, 155.56, 196, 233.08], Bb = [58.27, 116.54, 174.61, 233.08, 293.66];
+  prog(0.5, 33, [Am, F_, C, G_], 0.012, 650);                    // today and the race: i VI III VII
+  prog(33, 84.5, [Am, F_, C, G_, Am, F_, Dm, E_], 0.013, 750);    // the Earth: the same turn, then darker
+  prog(84.5, 138, [F_, C, Dm, Am, F_, E_], 0.014, 850);           // the Sun
+  prog(138, 171, [Dm, Am, Dm, E_], 0.013, 700);                   // the probes, the cell
+  prog(171, 223, [Cm, Ab, Eb, Bb, Cm, Ab], 0.013, 600);           // the galaxy taken
+  chord(223, 268, [61.74, 92.5, 116.54, 130.81, 185], 0.011, 520, 4, 5);   // a cluster: the split and the war
+  // the motif at each wall
+  motif(9.7); motif(27.6); motif(47.6, 1, 0.04); motif(56.8, 0.5, 0.05); motif(88.6, 0.5, 0.045); motif(129, 0.5, 0.05); motif(166.8, 0.5, 0.045); motif(190.4, 0.25, 0.06);
+  motif(224.2, 0.5, 0.05, 3);                                     // nothing is left to win: it does not resolve
   // ---- 1. room tone; the Earth appears
   noise(0.3, 7.2, "lowpass", 260, 260, 0.6, g => { g.linearRampToValueAtTime(0.045, 1.8); g.setValueAtTime(0.045, 5.5); g.linearRampToValueAtTime(0, 7.2); }, 0.2);
   // ---- the compounding clock: one tick per doubling of compute; quieter on the ground
@@ -61,7 +77,7 @@ async function render(sr = 44100) {
     f.frequency.setValueCurveAtTime(Float32Array.from(fc), fa, fb - fa);
     for (const [t, v] of [[7, 0], [14, 0.025], [33, 0.04], [33.3, 0.01], [40.7, 0.01], [41.2, 0.05], [72, 0.065], [72.3, 0.016], [84.3, 0.016], [84.8, 0.075], [132, 0.1], [138, 0.05], [138.3, 0.012], [143.7, 0.012], [144.2, 0.04], [148, 0]]) g.gain.linearRampToValueAtTime(v, F(t));
     for (const [k, type, det] of [[0, "sawtooth", 1], [1, "sawtooth", 1.005], [2, "sine", 0.5]]) { const o = ac.createOscillator(); o.type = type; o.frequency.setValueCurveAtTime(Float32Array.from(pitch.map(p => p * det)), fa, fb - fa); const og = ac.createGain(); og.gain.value = k === 2 ? 0.9 : 0.35; o.connect(og); og.connect(f); o.start(fa); o.stop(fb + 0.1); }
-    f.connect(g); out(g, 0.4);
+    const dg = ac.createGain(); dg.gain.value = 0.7; f.connect(g); g.connect(dg); out(dg, 0.4);
   }
   // ---- scene events
   noise(30.5, 33.2, "bandpass", 300, 1800, 0.5, g => { g.linearRampToValueAtTime(0.08, 32.6); g.linearRampToValueAtTime(0, 33.2); });                 // the dive
@@ -97,6 +113,7 @@ async function render(sr = 44100) {
   tone(268.6, 272.5, 48, 22, 0.42, "sine", 0.008, 0.9); noise(268.6, 272.5, "lowpass", 320, 50, 0.7, g => { g.linearRampToValueAtTime(0.32, 268.7); g.exponentialRampToValueAtTime(0.0001, 272.5); }, 0.9);
   // ---- the title: one low A, then nothing
   for (const [k, fr] of [55, 110, 164.81].entries()) tone(281.2, 292, fr, fr, 0.09 / (k + 1), "sine", 0.03, 0.9);
+  motif(281.6, 0.5, 0.05, 4, 1.4);                                 // and once more, slowly, under the title
   return ac.startRendering();
 }
 function wav(buf) {

@@ -19,8 +19,8 @@ const AMBER = [1.0, 0.52, 0.16];
 /* ================= the time map: film seconds → story seconds ================= */
 // [filmStart, filmEnd, storyStart, storyEnd]; a gap in story time is a cut (the rim drift is dropped)
 const TMAP = [[0, 6, 0, 7], [6, 29, 7, 33], [29, 35.5, 33, 41], [35.5, 62, 41, 72], [62, 72, 72, 84.5], [72, 119, 84.5, 138], [119, 124.5, 138, 144], [124.5, 128.5, 144, 149],
-  [128.5, 131.5, 149, 154], [131.5, 146, 154, 171], [146, 167, 171, 195], [167, 173.5, 195, 202], [173.5, 180, 202, 214], [180, 226, 223, 272], [226, 232, 272, 280], [232, 248, 280, 300]];
-const DUR = 248;
+  [128.5, 131.5, 149, 154], [131.5, 146, 154, 171], [146, 167, 171, 195], [167, 173.5, 195, 202], [173.5, 180, 202, 214], [180, 226, 223, 272], [226, 231, 272, 280], [231, 240, 280, 300]];
+const DUR = 240;
 function storyT(f) { for (const [f0, f1, s0, s1] of TMAP) if (f <= f1) return f <= f0 ? s0 : s0 + (f - f0) / (f1 - f0) * (s1 - s0); return 300; }
 function filmT(st) { for (const [f0, f1, s0, s1] of TMAP) if (st <= s1) return st <= s0 ? f0 : f0 + (st - s0) / (s1 - s0) * (f1 - f0); return DUR; }
 
@@ -93,13 +93,16 @@ function buildSystems() {
   { const r = rngOf(3), n = 12000, d = new Float32Array(n * 8); for (let i = 0; i < n; i++) { const z = r() * 2 - 1, a = r() * TAU, q = Math.sqrt(1 - z * z), m = Math.pow(r(), 6); d.set([q * Math.cos(a), z, q * Math.sin(a), 0.05 + m * 2.2, r(), 1 + m * 2.5, 0, 0], i * 8); }
     SYS.stars = E.particles(d, 2, `uniform float uK; void particle(out vec3 pos, out vec4 col, out float size){ pos = uCenter + a0.xyz * 6000.0; col = vec4(0.75 + 0.25 * a1.x, 0.82, 1.0 - 0.2 * a1.x, a0.w * uK); size = a1.y; }`); }
   // orbital compute around the Earth, by year
-  { const r = rngOf(67), n = 160000, d = new Float32Array(n * 8); for (let i = 0; i < n; i++) { const k = i % 4000; d.set([k * 7.31 + 0.5, r() * TAU, 1.04 + Math.pow(hashK(k), 2) * 0.25, r(), 2034 + Math.pow(i / n, 0.55) * 85, r(), 0, 0], i * 8); }
+  // four shells at set altitudes and inclinations, like the constellations already flying; planes fill in decade by decade
+  { const r = rngOf(67), SH = [[1.055, 53, 2034, 2075], [1.085, 70, 2044, 2090], [1.12, 43, 2055, 2105], [1.17, 97, 2066, 2118]], P = 80, M = 500, n = SH.length * P * M, d = new Float32Array(n * 8); let i = 0;
+    for (const [alt, inc, y0, y1] of SH) for (let p = 0; p < P; p++) { const raan = p / P * TAU + (r() - 0.5) * 0.02, on = lerp(y0, y1, Math.pow(hashK(p * 13 + alt * 100), 0.8));
+      for (let m = 0; m < M; m++, i++) d.set([raan, (m + (r() - 0.5) * 0.6) / M * TAU + p * 0.37, alt + gauss(r) * 0.0015, r(), on + r() * 2, inc * D2R, 0, 0], i * 8); }
     SYS.orbit = E.particles(d, 2, `uniform vec3 uSunDir; uniform float uK;
       void particle(out vec3 pos, out vec4 col, out float size){
-        vec3 n = normalize(hash31(a0.x) * 2.0 - 1.0); vec3 ax = normalize(cross(n, vec3(0.2, 0.3, 1.0))), ay = cross(n, ax);
+        vec3 n = vec3(sin(a1.y) * sin(a0.x), cos(a1.y), -sin(a1.y) * cos(a0.x)); vec3 ax = normalize(cross(n, vec3(0.0, 1.0, 0.0001))), ay = cross(n, ax);   // the plane: inclination a1.y, node a0.x
         float ph = a0.y + uT * 0.5 / pow(a0.z, 1.5); vec3 rel = (ax * cos(ph) + ay * sin(ph)) * a0.z; pos = uCenter + rel;
-        float lit = dot(normalize(rel), uSunDir) > -0.12 ? 1.0 : 0.08; float on = smoothstep(a1.x, a1.x + 1.5, uYear);
-        col = vec4(1.0, 0.9, 0.76, (0.3 + pow(a0.w, 14.0) * 6.0) * lit * on * uK); size = 1.5; }`); }
+        float lit = dot(normalize(rel), uSunDir) > -0.12 ? 1.0 : 0.06; float on = smoothstep(a1.x, a1.x + 1.5, uYear);
+        col = vec4(1.0, 0.9, 0.76, (0.12 + pow(a0.w, 16.0) * 5.0) * lit * on * uK); size = 1.3; }`); }
   // the collector swarm around the Sun
   { const r = rngOf(43), n = 700000, d = new Float32Array(n * 8); for (let i = 0; i < n; i++) { const k = i % 900; d.set([k * 3.17 + 0.3, r() * TAU, 1.35 + hashK(k + 11) * 0.9 + gauss(r) * 0.01, r(), 119 + 9 * Math.pow(hashK(k + 5), 0.8) + r() * 1.2, r(), 0, 0], i * 8); }
     SYS.swarm = E.particles(d, 2, `uniform float uIR, uR, uK;
@@ -127,7 +130,7 @@ function buildSystems() {
         pos = a0.xyz; vec3 red = vec3(0.85, 0.12, 0.05); vec3 c = a1.xyz; float a = a0.w * 0.9 * (1.0 + 3.0 * uNear); size = 1.4 * (1.0 + 1.5 * uNear);
         if (uFrontOn > 0.5 && uT >= a1.w) { float age = uT - a1.w; if (age < 0.5) { c = vec3(1.0, 0.6, 0.2); a = 5.0 * (1.0 - age / 0.5) + 0.3; } else { c = mix(vec3(0.55, 0.14, 0.05), red, uIR); a = mix(0.32 * a0.w + 0.08, a0.w * 0.8, uIR); } }
         if (uWar > 0.5) { vec3 tint = uPC[int(mod(a2.z, 12.0))]; c = mix(red, tint * 0.9, uSplit * 0.85); a = a0.w * 0.8; float sk = uSplit * clamp(1.0 - a2.y / 0.35, 0.0, 1.0); c = mix(c, vec3(1.0, 0.9, 0.8), sk * 0.6); a += sk * 1.2;
-          float dt = uT - a2.x; if (dt > 0.7) { col = vec4(0.0); return; } if (dt > 0.0) { c = vec3(1.0, 0.85, 0.7); a = 9.0 * (1.0 - dt / 0.7); } }
+          float dt = uT - a2.x; if (dt > 0.7) { c = vec3(0.5, 0.08, 0.03); a = a0.w * 0.3 * exp(-(dt - 0.7) / 3.5); } else if (dt > 0.0) { c = vec3(1.0, 0.85, 0.7); a = 9.0 * (1.0 - dt / 0.7); } }   // a struck star flares, then cools to an ember
         if (uGlow > 0.0) { a *= uGlow; size = 30.0; }
         col = vec4(c, a); }`;
     SYS.galaxy = E.particles(d, 3, SYS_GAL_BODY);
@@ -589,8 +592,13 @@ float fb(vec2 p){ float a = 0.5, s = 0.0; for (int i = 0; i < 5; i++) { s += a *
 void main(){ vec2 px = vUV * uRes; vec3 col = vec3(0.0);
   for (int i = 0; i < 24; i++) { if (float(i) >= uN) break; vec4 J = uJ[i], K = uK[i]; if (J.w < 1.0) continue;
     vec2 d = vec2(cos(J.z), sin(J.z)); vec2 rel = px - J.xy; float a = dot(rel, d); float c = dot(rel, vec2(-d.y, d.x)); if (a < -10.0 || a > J.w * 1.25) continue;
-    float u = a / J.w; float w = K.x * (0.3 + 2.2 * u); float turb = fb(vec2(a * 0.018 - uTime * 2.2 + K.z * 13.0, c * 0.03 / (0.3 + u) + K.z * 7.0));
-    col += vec3(0.86, 0.91, 1.0) * exp(-pow(c / w, 2.0) * 1.3) * (0.35 + turb) * smoothstep(-0.02, 0.05, u) * (1.0 - smoothstep(0.5, 1.2, u)) * (1.0 - 0.4 * u) * K.y; }
+    float u = a / J.w; float w = K.x * (0.12 + 1.1 * u + 2.4 * u * u);   // a narrow jet at the base that fans out into a plume
+    float turb = fb(vec2(a * 0.02 - uTime * 2.6 + K.z * 13.0, c * 0.035 / (0.2 + u) + K.z * 7.0));
+    float puff = 0.55 + 0.45 * sin(a * 0.045 - uTime * 7.0 + K.z * 6.28);              // the drivers fire in a slow rhythm
+    float body = exp(-(c / w) * (c / w) * 1.4) * (0.3 + turb) * smoothstep(-0.02, 0.04, u) * (1.0 - smoothstep(0.45, 1.25, u));
+    vec3 tint = mix(vec3(1.0, 0.95, 0.88), vec3(0.74, 0.84, 1.0), smoothstep(0.1, 0.8, u));   // steam lit warm at the base, ice blue aloft
+    float ice = step(0.992, h21(floor(px * 0.5) + floor(uTime * 6.0))) * smoothstep(0.35, 0.8, u) * exp(-(c / w) * (c / w) * 0.6);   // freezing crystals glitter
+    col += (tint * body * mix(1.0, puff, smoothstep(0.0, 0.5, u)) * (1.25 - 0.55 * u) + vec3(0.9, 0.95, 1.0) * ice * 1.5) * K.y; }
   o = vec4(col, 0.0); }`;
 const JETS = (() => { const r = rngOf(29), j = []; for (let i = 0; i < 20; i++) j.push({ u: r(), h: (r() - 0.5) * 1.5, ph: r(), v: 0.7 + r() * 0.5, w: r() }); return j; })();
 const MEDIT = [18, 35];
@@ -828,7 +836,7 @@ void main(){
       float wb = 0.5 + 0.5 * smoothstep(0.0, 6.0, sqrt(bd2) - sqrt(bd)) + 0.2 * (fb(P.xz * 1.1) - 0.5);
       float alive = mix(a2, a1, clamp(wb, 0.0, 1.0)); vec3 tint = mix(uPC[bi2 % 12], uPC[bi % 12], clamp(wb, 0.0, 1.0));
       float seam = (1.0 - smoothstep(0.0, 0.9, sqrt(bd2) - sqrt(bd))) * uSplit;
-      c = mix(c, tint * dot(c, vec3(0.33)) * 2.2, uSplit * 0.42) * alive + vec3(1.0, 0.85, 0.7) * seam * 0.06 * disk * alive;
+      vec3 cl = mix(c, tint * dot(c, vec3(0.33)) * 2.2, uSplit * 0.42); c = mix(redOf(c) * 0.06, cl, alive) + vec3(1.0, 0.85, 0.7) * seam * 0.06 * disk * alive;   // the dead regions keep a faint ember
     }
     col += c * uK * smoothstep(0.0, 0.1, abs(rd.y));
   } }
