@@ -1,0 +1,78 @@
+<title>The Game of Winning</title>
+<style>
+:root { --bg: #000; --fg: #e8eef2; --dim: #8a959e; --amber: #ffb15a; --mono: Menlo, "SF Mono", Consolas, monospace; color-scheme: dark; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font-family: var(--mono); }
+.stage { position: fixed; inset: 0; display: grid; place-items: center; }
+.frame { position: relative; width: min(100vw, calc(100vh * 16 / 9)); aspect-ratio: 16 / 9; }
+.frame canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.bar { position: fixed; left: 0; right: 0; bottom: 0; padding: 14px 18px calc(14px + env(safe-area-inset-bottom, 0px)); display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
+  background: linear-gradient(transparent, rgba(0,0,0,0.75)); transition: opacity 0.4s; font-size: 12px; letter-spacing: 0.08em; }
+body.idle .bar { opacity: 0; }
+button { font: inherit; color: var(--fg); background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.18); padding: 6px 12px; cursor: pointer; }
+button:hover { border-color: rgba(255,255,255,0.4); } button:focus-visible, input:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+#scrub { flex: 1 1 240px; min-width: 0; accent-color: var(--amber); }
+.time { color: var(--dim); font-variant-numeric: tabular-nums; min-width: 11ch; }
+.chapters { display: flex; gap: 6px; flex-wrap: wrap; } .chapters button { color: var(--dim); padding: 4px 8px; }
+.start { position: fixed; inset: 0; display: grid; place-items: center; background: rgba(0,0,0,0.55); border: 0; color: var(--fg); font: inherit; letter-spacing: 0.3em; cursor: pointer; }
+.start span { border: 1px solid rgba(255,255,255,0.5); padding: 14px 28px; font-size: 13px; }
+.start[disabled] span { border-color: rgba(255,255,255,0.15); color: var(--dim); }
+body.render .bar, body.render .start { display: none; } body.render .frame { width: 1920px; height: 1080px; aspect-ratio: auto; }
+</style>
+<div class="stage"><div class="frame"><canvas id="gl" width="1920" height="1080"></canvas><canvas id="view" width="1920" height="1080"></canvas></div></div>
+<button class="start" id="start" type="button" disabled><span id="startLabel">LOADING 0%</span></button>
+<div class="bar">
+  <button id="play" type="button">Play</button>
+  <input id="scrub" type="range" min="0" max="300" step="0.05" value="0" aria-label="Position">
+  <span class="time" id="time">0:00 / 5:00</span>
+  <button id="snd" type="button" aria-pressed="true">Sound on</button>
+  <button id="full" type="button">Fullscreen</button>
+  <div class="chapters" id="chapters"></div>
+</div>
+<script src="engine.js"></script>
+<script src="film.js"></script>
+<script src="sound.js"></script>
+<script>
+(() => {
+const render = /[?&]render\b/.test(location.search);
+if (render) document.body.classList.add("render");
+const view = document.getElementById("view"), glc = document.getElementById("gl");
+window.FILM = { ready: false, error: null };
+const startBtn = document.getElementById("start"), startLabel = document.getElementById("startLabel");
+Film.init(view, p => { startLabel.textContent = `LOADING ${Math.round(p * 100)}%`; }, { composite: render, glCanvas: render ? null : glc }).then(() => {
+  window.FILM.ready = true;
+  window.FILM.frame = t => Film.frame(t).toDataURL("image/png");
+  window.FILM.audio = async () => { const b = await Sound.render(); window.__wav = Sound.wav(b); return window.__wav.length; };
+  window.FILM.audioChunk = (i, size) => { const s = window.__wav.subarray(i, i + size); let bin = ""; for (let j = 0; j < s.length; j += 8192) bin += String.fromCharCode.apply(null, s.subarray(j, j + 8192)); return btoa(bin); };
+  if (render) { glc.remove(); return; }
+  startLabel.textContent = "PLAY · 5:00"; startBtn.disabled = false; Film.frame(0.01);
+  player();
+}).catch(e => { window.FILM.error = String(e && e.stack || e); console.error(e); startLabel.textContent = "COULD NOT START: " + String(e.message || e).slice(0, 80); });
+
+function player() {
+  const DUR = Film.DUR, playB = document.getElementById("play"), scrub = document.getElementById("scrub"), timeEl = document.getElementById("time"), sndB = document.getElementById("snd"), chapEl = document.getElementById("chapters");
+  const CH = [["Earth", 7], ["Ground", 33], ["Orbit", 41], ["The Sun", 84.5], ["The probe", 144], ["The galaxy", 171], ["The war", 223], ["End", 272]];
+  CH.forEach(([n, at]) => { const b = document.createElement("button"); b.type = "button"; b.textContent = n; b.onclick = () => seek(at); chapEl.appendChild(b); });
+  let t = 0, playing = false, t0 = 0, p0 = 0, soundOn = true, ac = null, buf = null, src = null;
+  const bytes = fetch("soundtrack.mp3").then(r => r.ok ? r.arrayBuffer() : null).catch(() => null);
+  const fmt = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+  const clock = () => t0 + (performance.now() - p0) / 1000;
+  function ui() { scrub.value = t; timeEl.textContent = `${fmt(t)} / ${fmt(DUR)}`; playB.textContent = playing ? "Pause" : (t >= DUR - 0.05 ? "Replay" : "Play"); sndB.textContent = soundOn ? "Sound on" : "Sound off"; sndB.setAttribute("aria-pressed", soundOn); }
+  function prepSound() { if (ac || !soundOn) return; try { ac = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { return; }
+    bytes.then(b => b && new Promise((res, rej) => { const p = ac.decodeAudioData(b.slice(0), res, rej); if (p && p.then) p.then(res, rej); })).then(d => { if (d) { buf = d; if (playing) startSrc(); } }).catch(() => {}); }
+  function startSrc() { stopSrc(); if (!soundOn || !buf || !ac) return; if (ac.state === "suspended") ac.resume().catch(() => {}); const at = clock(); if (at >= buf.duration) return; src = ac.createBufferSource(); src.buffer = buf; src.connect(ac.destination); src.start(0, at); }
+  function stopSrc() { if (src) { try { src.stop(); } catch (e) {} src.disconnect(); src = null; } }
+  function play() { startBtn.hidden = true; if (t >= DUR - 0.05) t = 0; playing = true; t0 = t; p0 = performance.now(); prepSound(); startSrc(); ui(); requestAnimationFrame(loop); }
+  function pause() { t = clock(); playing = false; stopSrc(); ui(); }
+  function seek(x) { t = Math.max(0, Math.min(DUR, x)); startBtn.hidden = true; if (playing) { t0 = t; p0 = performance.now(); startSrc(); } else Film.frame(t); ui(); }
+  function loop() { if (!playing) return; t = clock(); if (t >= DUR) { t = DUR; playing = false; stopSrc(); } Film.frame(t); ui(); if (playing) requestAnimationFrame(loop); }
+  startBtn.onclick = play; playB.onclick = () => playing ? pause() : play(); scrub.oninput = () => seek(parseFloat(scrub.value));
+  sndB.onclick = () => { soundOn = !soundOn; if (soundOn) { prepSound(); if (playing) startSrc(); } else stopSrc(); ui(); };
+  document.getElementById("full").onclick = () => { const el = document.documentElement; (el.requestFullscreen || el.webkitRequestFullscreen || (() => {})).call(el); };
+  document.addEventListener("keydown", e => { if (e.code === "Space") { e.preventDefault(); playing ? pause() : play(); } if (e.code === "ArrowRight") seek(t + 5); if (e.code === "ArrowLeft") seek(t - 5); });
+  let idle; const wake = () => { document.body.classList.remove("idle"); clearTimeout(idle); idle = setTimeout(() => playing && document.body.classList.add("idle"), 2500); };
+  document.addEventListener("mousemove", wake); document.addEventListener("touchstart", wake); wake(); ui();
+  window.FILM.player = { seek, state: () => ({ t, playing, sound: !!buf }) };
+}
+})();
+</script>
+
