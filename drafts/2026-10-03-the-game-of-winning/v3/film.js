@@ -19,8 +19,8 @@ const AMBER = [1.0, 0.52, 0.16];
 /* ================= the time map: film seconds → story seconds ================= */
 // [filmStart, filmEnd, storyStart, storyEnd]; a gap in story time is a cut (the rim drift is dropped)
 const TMAP = [[0, 6, 0, 7], [6, 29, 7, 33], [29, 35.5, 33, 41], [35.5, 62, 41, 72], [62, 72, 72, 84.5], [72, 119, 84.5, 138], [119, 124.5, 138, 144], [124.5, 128.5, 144, 149],
-  [128.5, 131.5, 149, 154], [131.5, 146, 154, 171], [146, 167, 171, 195], [167, 173.5, 195, 202], [173.5, 182, 202, 214], [182, 228, 223, 272], [228, 234, 272, 280], [234, 250, 280, 300]];
-const DUR = 250;
+  [128.5, 131.5, 149, 154], [131.5, 146, 154, 171], [146, 167, 171, 195], [167, 173.5, 195, 202], [173.5, 180, 202, 214], [180, 226, 223, 272], [226, 232, 272, 280], [232, 248, 280, 300]];
+const DUR = 248;
 function storyT(f) { for (const [f0, f1, s0, s1] of TMAP) if (f <= f1) return f <= f0 ? s0 : s0 + (f - f0) / (f1 - f0) * (s1 - s0); return 300; }
 function filmT(st) { for (const [f0, f1, s0, s1] of TMAP) if (st <= s1) return st <= s0 ? f0 : f0 + (st - s0) / (s1 - s0) * (f1 - f0); return DUR; }
 
@@ -107,7 +107,7 @@ function buildSystems() {
         vec3 n = normalize(hash31(a0.x) * 2.0 - 1.0); vec3 ax = normalize(cross(n, vec3(0.3, 0.1, 1.0))), ay = cross(n, ax);
         float rr = a0.z * uR; float ph = a0.y + uT * 0.25 / pow(a0.z, 1.5); pos = uCenter + (ax * cos(ph) + ay * sin(ph)) * rr;
         float on = smoothstep(a1.x, a1.x + 0.8, uT); float glint = pow(a0.w, 18.0) * 6.0 + 0.07;
-        col = vec4(mix(vec3(1.0, 0.88, 0.7), vec3(0.75, 0.1, 0.035), uIR), mix(glint, 0.42, uIR) * on * uK); size = 1.5; }`); }
+        col = vec4(mix(vec3(1.0, 0.88, 0.7), vec3(0.75, 0.1, 0.035), uIR), mix(glint - 0.07, 0.03, uIR) * on * uK); size = 1.5; }`); }   // sparkle only: the shell (engine mode 4) carries the body
   // debris rings of Mercury and Venus; later the material streams inward to the swarm
   { const r = rngOf(61), n = 120000, d = new Float32Array(n * 8); for (let i = 0; i < n; i++) { const venus = i % 2; d.set([r() - 0.5, gauss(r) * 0.5, gauss(r) * 0.15, venus, r(), 0.3 + r() * 0.7, 0, 0], i * 8); }
     SYS.debris = E.particles(d, 2, `uniform vec4 uM, uV; uniform float uSwarmR;   // uM: (orbitR, startAngle, t0, -) for Mercury; uV for Venus
@@ -116,8 +116,9 @@ function buildSystems() {
         float spread = 6.2831853 * smoothstep(0.0, 9.0, age); float ang = P.y + a0.x * spread + age * 0.03;
         float inflow = smoothstep(120.0 + a1.x * 6.0, 126.0 + a1.x * 6.0, uT);
         float rr = mix(P.x + a0.y * mix(0.3, 2.5, smoothstep(0.0, 9.0, age)), uSwarmR * (1.4 + a1.y * 0.6), inflow);
-        pos = vec3(cos(ang) * rr, a0.z + sin(ang) * rr * 0.02, sin(ang) * rr);
-        col = vec4(1.0, 0.62, 0.3, 0.55 * (1.0 - inflow * 0.85)); size = 1.6; }`); }
+        float lift = inflow * (a1.y - 0.5) * 2.4;   // drawn up out of the ring plane onto the shell, and used up
+        pos = vec3(cos(ang) * rr * cos(lift), a0.z + sin(lift) * rr + sin(ang) * rr * 0.02, sin(ang) * rr * cos(lift));
+        col = vec4(1.0, 0.62, 0.3, 0.55 * (1.0 - inflow)); size = 1.6; }`); }
   // the galaxy, with its whole war precomputed per star
   buildGalaxy();
   { const G = GAL, d = new Float32Array(G.n * 12); for (let i = 0; i < G.n; i++) { const k = G.dom[i]; d.set([G.pos[i * 3], G.pos[i * 3 + 1], G.pos[i * 3 + 2], G.b[i], G.col[i * 3], G.col[i * 3 + 1], G.col[i * 3 + 2], G.conv[i], G.death[k] + G.ripple[i], G.seam[i], k, 0], i * 12); }
@@ -210,7 +211,7 @@ function sToday(t) {
   let pos = add(EARTH, scl(D, lerp(2.7, 2.35, ss(7, 30, t)))), look = EARTH, fov = 36;
   if (t > 30) {   // the dive toward the campus
     const target = surf(rot, ABILENE[0], ABILENE[1]), u = ease(ss(30, 33, t));
-    pos = mixv(pos, add(target, scl(norm(sub(target, EARTH)), 0.04)), u); look = mixv(EARTH, target, Math.min(1, u * 1.6)); fov = lerp(36, 50, u);
+    pos = mixv(pos, add(target, scl(norm(sub(target, EARTH)), 0.42)), u); look = mixv(EARTH, target, Math.min(1, u * 1.6)); fov = lerp(36, 30, u);   // the night map holds to about 2,500 km; the haze takes us the rest of the way
   }
   camera(pos, look, fov, 0.002, 20000); drawStars(0.8);
   earth(t, rot, { clouds: 0.25 });
@@ -601,11 +602,11 @@ function sOrbital(t) {
   if (t > 70) { const target = surf(rot, MEDIT[0], MEDIT[1]), u = ease(ss(70, 72, t)); pos = mixv(pos, add(target, scl(norm(sub(target, EARTH)), 0.03)), u); look = mixv(look, target, Math.min(1, u * 1.5)); fov = lerp(fov, 50, u); }
   camera(pos, look, fov, 0.002, 20000); drawStars(0.7);
   const year = yearAt(t), thermal = ss(50, 51.2, t) * (1 - ss(59, 60.2, t));
-  earth(t, rot, { thermal, heat: clamp((year - 2050) / 55), clouds: lerp(0.55, 0.25, thermal) });
+  earth(t, rot, { thermal, heat: clamp((year - 2055) / 45), clouds: lerp(0.55, 0.5, thermal) });
   E.drawParticles(SYS.orbit, { uCenter: EARTH, uYear: year, uT: t, uSunDir: SUN_DIR_AT_EARTH, uK: 1 - thermal * 0.85 }, { depth: true });
   // the rocket from the campus, climbing to join the shells
   if (t < 45.5) { const base = surf(rot, ABILENE[0], ABILENE[1], 1.0), up = norm(sub(base, EARTH)), side = norm(cross(up, [0, 1, 0])), u = ss(41, 45.5, t);
-    const p = add(add(base, scl(up, 0.08 * Math.sin(u * Math.PI / 2))), scl(side, u * 0.35)); pt(p, [1, 0.9, 0.7], 8 * (1 - ss(44.5, 45.5, t)), 14); for (let i = 1; i < 30; i++) { const v = u * (1 - i / 30); pt(add(add(base, scl(up, 0.08 * Math.sin(v * Math.PI / 2))), scl(side, v * 0.35)), [1, 0.7, 0.4], 0.5 * (1 - i / 30), 5); } flushPts({ depth: true }); }
+    const p = add(add(base, scl(up, 0.08 * Math.sin(u * Math.PI / 2))), scl(side, u * 0.35)); pt(p, [1, 0.9, 0.7], 8 * (1 - ss(44.5, 45.5, t)), 14); flushPts({ depth: true }); let prev = base; for (let i = 1; i <= 16; i++) { const v = u * i / 16, q = add(add(base, scl(up, 0.08 * Math.sin(v * Math.PI / 2))), scl(side, v * 0.35)); ln(prev, q, [1, 0.7, 0.4], 0.9 * (i / 16) * (1 - ss(44.5, 45.5, t)), 1.4); prev = q; } flushLns({ depth: true }); }   // its trail, a smooth streak
   // seawater vented to space, seen in profile along the limb
   const on = ss(60, 62, t) * (1 - ss(71.5, 72, t));
   if (on > 0) {
@@ -621,15 +622,22 @@ function sOrbital(t) {
 
 /* ================= 1:24–2:18 Earth entire, then one flight through the solar system ================= */
 function solarRot(t) { return earthRot(norm([0.2, 0.6, 1]), lerp(10, 40, ss(84, 98, t))); }
+// beside a planet, at right angles to the sunlight (so it shows a phase), a little above, a little toward the Sun
+const sideOf = P => (k, up, toSun) => { const s = norm(sub(SUN, P)), side = norm(cross([0, 1, 0], s)); return add(add(scl(side, -k), [0, up, 0]), scl(s, toSun)); };
+const MSIDE = sideOf(MERC), VSIDE = sideOf(VEN);
+// mass-driver pellets: launched prograde from the scar, they spread along the orbit into the ring
+const PELLETS = (() => { const r = rngOf(83), a = []; for (let i = 0; i < 2600; i++) { const z = r() * 2 - 1, th = r() * TAU, q = Math.sqrt(1 - z * z); a.push({ d: [q * Math.cos(th), z, q * Math.sin(th)], ph: r(), v: 0.7 + r() * 0.6, sp: [gauss(r), gauss(r), gauss(r)] }); } return a; })();
 const SOLAR_KEYS = () => [
   [84.5, add(EARTH, [0.25, 1.3, 0.4]), EARTH, 44],
   [92, add(EARTH, [1.4, 2.2, 4.0]), EARTH, 36],
   [94.5, add(EARTH, [-5, 2.0, 6]), add(EARTH, [-30, 0, 2]), 40],
-  [96.6, add(VEN, [6, 1.4, 4]), VEN, 40],
-  [98.6, add(MERC, [-1.3, 0.45, 1.3]), MERC, 36],
-  [111.2, add(MERC, [-1.75, 0.55, 0.9]), MERC, 36],
-  [113.6, add(VEN, [-2.6, 0.7, 1.5]), VEN, 36],
-  [117.5, add(VEN, [-2.9, 0.8, 1.1]), VEN, 36],
+  [96.6, add(VEN, [6, 1.4, 4]), mixv(VEN, MERC, 0.6), 40],
+  [98.6, add(MERC, MSIDE(-1.9, 0.35, 0.25)), add(MERC, [-0.25, 0, 0.1]), 34],
+  [105.5, add(MERC, MSIDE(-2.3, 0.45, 0.3)), add(MERC, [-0.3, 0, 0.1]), 34],
+  [109.0, add(MERC, MSIDE(-9, 3.2, 1.2)), mixv(MERC, SUN, 0.04), 40],
+  [111.2, add(MERC, MSIDE(-55, 30, 12)), mixv(MERC, SUN, 0.42), 44],
+  [113.8, add(VEN, VSIDE(2.8, 0.7, 1.0)), VEN, 36],
+  [117.5, add(VEN, VSIDE(3.1, 0.8, 1.2)), VEN, 36],
   [121, [40, 70, 175], [0, -6, 0], 40],
   [131.5, [55, 48, 120], [0, -4, 0], 36],
   [134.5, add(MOON, [8, 3, 14]), MOON, 34],
@@ -643,9 +651,11 @@ function sSolar(t) {
   camera(pos, look, fov, near, 30000); drawStars(0.85);
   // the Sun and its swarm
   const swarmFill = ss(119, 130, t), ir = ss(127.5, 129.5, t);
-  E.sphere({ mode: 2, center: SUN, radius: SUN_R, emissive: lerp(lerp(3.0, 0.7, swarmFill), 0.55, ir), ir, atmo: ir < 0.5 ? [1.0, 0.72, 0.42] : [0.7, 0.08, 0.03], time: t });
-  E.drawParticles(SYS.swarm, { uCenter: SUN, uT: t, uIR: ir, uR: SUN_R, uK: 1 }, { depth: true });
-  E.drawParticles(SYS.debris, { uT: t, uM: [len(MERC), Math.atan2(MERC[2], MERC[0]), 108.5, 0], uV: [len(VEN), Math.atan2(VEN[2], VEN[0]), 116, 0], uSwarmR: SUN_R }, { depth: true });
+  E.sphere({ mode: 2, center: SUN, radius: SUN_R, emissive: 1.6, ir: 0, atmo: [1.0, 0.72, 0.42], time: t, opacity: 1 });
+  // the swarm: a shell of collectors that closes over the disc; in the infrared it is the shell that glows
+  if (swarmFill > 0) E.sphere({ mode: 4, center: SUN, radius: SUN_R * 1.35, cover: swarmFill, ir, time: t, depthWrite: false });
+  E.drawParticles(SYS.swarm, { uCenter: SUN, uT: t, uIR: ir, uR: SUN_R, uK: 0.25 }, { depth: true });
+  E.drawParticles(SYS.debris, { uT: t, uM: [len(MERC), Math.atan2(MERC[2], MERC[0]), 104, 0], uV: [len(VEN), Math.atan2(VEN[2], VEN[0]), 116, 0], uSwarmR: SUN_R }, { depth: true });
   // the Earth, wrapped and dried
   const rot = solarRot(t);
   earth(t, rot, { clouds: 0.3 });
@@ -655,15 +665,18 @@ function sSolar(t) {
   E.sphere({ mode: 1, day: tex.moon, center: MOON, radius: MOON_R, sun: norm(sub(SUN, MOON)), dayGain: 1.3 + blaze * 9, tint: [1, 0.98, 0.95], time: t });
   if (t > 132.2) { const src = add(SUN, scl(norm(sub(MOON, SUN)), SUN_R * 1.6)), dst = add(MOON, scl(norm(sub(SUN, MOON)), MOON_R)); const head = mixv(src, dst, hit);
     ln(src, head, [1.0, 0.95, 0.85], 5.5 * (0.85 + 0.15 * Math.sin(t * 40)), 2.2); flushLns({ depth: true }); if (hit >= 1) { pt(dst, [1, 0.97, 0.9], 25 * blaze, 50); flushPts({ depth: false }); } }
-  // Mercury: the scar, the mass drivers, the unravelling
-  const mR = MERC_R * (1 - 0.4 * ss(107.5, 110.5, t)), mOp = 1 - ss(109.5, 111, t);
+  // Mercury: the scar spreads; mass drivers fling its crust prograde, and it thins into a ring along its own orbit
+  const mR = MERC_R * (1 - 0.7 * ss(105.5, 111, t)), mOp = 1 - ss(113, 114, t);
   if (mOp > 0) {
-    const lesC = norm([-0.75, 0.35, 0.55]);
-    E.sphere({ mode: 1, day: tex.mercury, center: MERC, radius: mR, sun: norm(sub(SUN, MERC)), desat: 0.82, tint: [1.0, 0.97, 0.92], dayGain: 1.5, lesC, lesR: 2.4 * ss(100, 108, t), lesK: 1.2, opacity: mOp, time: t });
-    const lesR = 2.4 * ss(100, 108, t);
-    if (lesR > 0.15) { const ax = norm(cross(lesC, [0, 1, 0])), ay = cross(ax, lesC);
-      for (let m = 0; m < 34; m++) { const a = m * 2.39996, ang = Math.min(lesR * 0.92, 2.2), dir = add(scl(ax, Math.cos(a)), scl(ay, Math.sin(a))); const p = norm(add(scl(lesC, Math.cos(ang)), scl(dir, Math.sin(ang)))); const tang = norm(sub(scl(p, dot(lesC, p)), lesC));
-        const s0 = add(MERC, scl(p, mR * 1.003)); for (let k = 0; k < 22; k++) { const age = ((t * 0.5 * (0.6 + (m % 5) * 0.12) + m * 0.137 + k / 22) % 1); pt(add(add(s0, scl(tang, mR * (0.3 + age * 3.5))), scl(p, mR * age * age * 2)), [1, 0.7, 0.4], (1.6 * (1 - age) + 0.2) * mOp, 3); } }
+    const lesC = norm([-0.75, 0.35, 0.55]), lesR = 2.4 * ss(100, 107, t);
+    E.sphere({ mode: 1, day: tex.mercury, center: MERC, radius: mR, sun: norm(sub(SUN, MERC)), desat: 0.82, tint: [1.0, 0.97, 0.92], dayGain: 1.5, lesC, lesR, lesK: 1.2, opacity: mOp, time: t });
+    const fire = ss(102, 104, t) * (1 - ss(110.5, 112, t));
+    if (fire > 0) { const ang = Math.atan2(MERC[2], MERC[0]), pro = norm([-Math.sin(ang), 0, Math.cos(ang)]), out = norm(MERC);
+      for (const pl of PELLETS) { if (dot(pl.d, lesC) < Math.cos(Math.min(lesR, 2.6))) continue;   // only from the scar
+        const age = ((t * 0.35 * pl.v + pl.ph) % 1) * 3.2; const site = add(MERC, scl(pl.d, mR));
+        const vel = norm(add(add(scl(pro, 1.0), scl(out, 0.25)), scl(pl.sp, 0.12)));
+        const p = add(site, add(scl(vel, mR * age * 2.2 * pl.v), scl(pro, mR * age * age * 0.6)));
+        pt(p, [1, 0.78, 0.5], fire * mOp * (age < 0.08 ? 7 : 2.4) * (1 - age / 3.2), age < 0.08 ? 3.5 : 2.2); }
       flushPts({ depth: true }); }
   }
   // Venus: the scar tears the clouds
@@ -680,19 +693,18 @@ function sLaunch(t) {
   const probePos = scl(FOLLOW, SUN_R * 2.2 + 60 * flyT * flyT);
   let pos = mixv(add(SUN, [30, 22, 70]), add(probePos, add(scl(FOLLOW, -4), [0, 1.2, 0])), ease(ride)), look = mixv(SUN, add(probePos, scl(FOLLOW, 10)), ease(ride));
   camera(pos, look, 40, 0.05, 40000); drawStars(0.85);
-  E.sphere({ mode: 2, center: SUN, radius: SUN_R, emissive: 0.55, ir: 1, atmo: [0.7, 0.08, 0.03], time: t });
-  E.drawParticles(SYS.swarm, { uCenter: SUN, uT: 200, uIR: 1, uR: SUN_R, uK: 1 }, { depth: true });
-  for (const pr of PROBES) { if (t < pr.tl) continue; const u = t - pr.tl, r0 = SUN_R * 2 + pr.v * 30 * u * u * (1 + u * u); const a = scl(pr.d, r0), b = scl(pr.d, r0 * 0.94); ln(b, a, AMBER, 2.0, 1.0); }
+  E.sphere({ mode: 2, center: SUN, radius: SUN_R, emissive: 2.0, ir: 0, atmo: [0.5, 0.06, 0.02], time: t });
+  E.sphere({ mode: 4, center: SUN, radius: SUN_R * 1.35, cover: 1, ir: 1, time: t, depthWrite: false });
+  E.drawParticles(SYS.swarm, { uCenter: SUN, uT: 200, uIR: 1, uR: SUN_R, uK: 0.25 }, { depth: true });
+  PROBES.forEach((pr, i) => { if (t < pr.tl || i % 2) return; const u = t - pr.tl, r0 = SUN_R * 1.6 + pr.v * 30 * u * u * (1 + u * u); const a = scl(pr.d, r0), b = scl(pr.d, r0 * 0.985); ln(b, a, [1, 0.8, 0.55], 1.1, 0.8); pt(a, [1, 0.85, 0.6], 1.2, 2); });
   pt(probePos, [1, 0.85, 0.6], t > 147 ? 8 : 0, 10); flushLns({ depth: true }); flushPts({ depth: true });
 }
-// transit: riding the probe between the stars
-const NEAR = (() => { const r = rngOf(79), n = 6000, d = new Float32Array(n * 8); for (let i = 0; i < n; i++) d.set([(r() - 0.5) * 400, (r() - 0.5) * 200, r() * 4000, 0.4 + Math.pow(r(), 4) * 3, r(), 0, 0, 0], i * 8); return d; })();
+// transit: at a tenth of light speed nothing moves. The stars stand still, the target brightens ahead, and only the years race
 function sTransit(t) {
-  camera([0, 0, 0], [0, 0, 1], 40, 0.05, 40000); drawStars(0.6);
-  const u = ss(149, 154.5, t), z0 = 3800 * u; const speed = Math.sin(u * Math.PI);
-  for (let i = 0; i < 6000; i++) { const x = NEAR[i * 8], y = NEAR[i * 8 + 1], z = NEAR[i * 8 + 2] - z0; if (z < 2 || z > 3000) continue; const tail = 40 * speed + 1; ln([x, y, z + tail], [x, y, z], [0.85, 0.9, 1.0], NEAR[i * 8 + 3] * 0.5, 1.2); }
-  flushLns({ depth: false });
-  pt([0.6, -0.35, 4], [1, 0.85, 0.6], 6, 9); flushPts({ depth: false });
+  const u = ss(149, 154.5, t);
+  camera([0.3 * Math.sin(t * 0.2), 0.12, -3], [0, 0, 40], 38, 0.05, 40000); drawStars(0.75);
+  pt([0, 0.25, 4000], [1, 0.9, 0.75], lerp(0.6, 9, Math.pow(u, 3)), lerp(4, 16, Math.pow(u, 3))); flushPts({ depth: false });   // the target star
+  pt([0.55, -0.32, 2.2], [1, 0.86, 0.62], 5, 7); pt([0.55, -0.32, 2.2], [1, 0.6, 0.3], 0.5, 40); flushPts({ depth: false });     // the probe's drive
 }
 const CELL_STAR = [-12, 5, 5.5];
 function sCell(t) {
@@ -703,7 +715,8 @@ function sCell(t) {
   if (back > 0) { const dir = norm(sub(pos, CELL_STAR)); const d0 = len(sub(pos, CELL_STAR)); pos = add(CELL_STAR, scl(dir, d0 * Math.pow(400, ease(back)))); look = CELL_STAR; }
   camera(pos, look, 40, 0.01, 1e6); drawStars(0.9 * (1 - back));
   const sun = norm(CELL_STAR), dim = ss(166, 170, t);
-  E.sphere({ mode: 2, center: CELL_STAR, radius: 1.4, emissive: lerp(3.0, 0.02, dim), atmo: [1.0, 0.8, 0.5], time: t });
+  E.sphere({ mode: 2, center: CELL_STAR, radius: 1.4, emissive: 1.6, atmo: [1.0, 0.8, 0.5], time: t });
+  const shell = ss(164.5, 169, t); if (shell > 0) E.sphere({ mode: 4, center: CELL_STAR, radius: 1.4 * 1.35, cover: shell, ir: ss(169, 170.5, t), time: t, depthWrite: false });
   const R = 1 - 0.4 * ss(163, 166, t), op = 1 - ss(165, 166.5, t);
   const rot = bodyRot(2.0, 0.25), faceW = norm([-0.33, 0.36, 0.88]), lesC = toBody(rot, faceW);
   if (op > 0) E.sphere({ mode: 1, day: tex.moon, proc: 1, radius: R, sun, desat: 0.2, tint: [1, 1, 1], dayGain: 1.6 * (1 - dim * 0.9), lesC, lesR: 2.6 * ss(158.5, 164, t), lesK: 1.3, rot, opacity: op, time: t });
@@ -724,8 +737,9 @@ function buildGalaxy() {
   const r = rngOf(53), n = 190000, pos = new Float32Array(n * 3), col = new Float32Array(n * 3), b = new Float32Array(n), dom = new Uint16Array(n), seam = new Float32Array(n);
   for (let i = 0; i < n; i++) {
     let x, y, z, c;
-    if (i < 34000) { x = gauss(r) * 4.2; z = gauss(r) * 3.6; y = gauss(r) * 1.5; c = [1.0, 0.86, 0.62]; }
-    else { const arm = i % 2, rr = 3 + -Math.log(1 - r() * 0.985) * 12; const th = arm * Math.PI + Math.log(rr / 3) / Math.tan(13 * D2R) + gauss(r) * 0.22; x = rr * Math.cos(th) + gauss(r) * 1.1; z = rr * Math.sin(th) + gauss(r) * 1.1; y = gauss(r) * 0.35; const hot = r(); c = hot < 0.2 ? [0.7, 0.8, 1.0] : hot < 0.75 ? [1.0, 0.95, 0.88] : [1.0, 0.8, 0.6]; }
+    if (i < 34000) { const bx = gauss(r) * (i % 3 ? 4.6 : 3.0), bz = gauss(r) * (i % 3 ? 1.5 : 3.0); x = Math.cos(0.45) * bx - Math.sin(0.45) * bz; z = Math.sin(0.45) * bx + Math.cos(0.45) * bz; y = gauss(r) * 1.3; c = [1.0, 0.86, 0.62]; }   // the bar and bulge
+    else { let arm = i % 4; if (arm % 2 && r() < 0.45) arm -= 1; const rr = 3.5 + -Math.log(1 - r() * 0.985) * 12;   // two major arms, two minor
+      const th = arm * Math.PI / 2 - 0.35 * Math.sin(rr * 0.33 + arm * 1.3) + Math.log(rr / 4) / Math.tan(17.5 * D2R) + gauss(r) * (arm % 2 ? 0.3 : 0.22); x = rr * Math.cos(th) + gauss(r) * 1.1; z = rr * Math.sin(th) + gauss(r) * 1.1; y = gauss(r) * 0.35; const hot = r(); c = hot < 0.2 ? [0.7, 0.8, 1.0] : hot < 0.75 ? [1.0, 0.95, 0.88] : [1.0, 0.8, 0.6]; }
     pos.set([x, y, z], i * 3); col.set(c, i * 3); b[i] = 0.25 + Math.pow(r(), 4) * 2.5;
   }
   const ND = 212, cen = []; for (let k = 0; k < ND; k++) { const i = Math.floor(r() * n); cen.push([pos[i * 3], pos[i * 3 + 2]]); }
@@ -780,8 +794,10 @@ uniform float uT, uIR, uFrontOn, uWar, uSplit, uDmax, uK, uAliveFrac; uniform ve
 float h21(vec2 p){ p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
 float n2(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f); return mix(mix(h21(i), h21(i+vec2(1,0)), f.x), mix(h21(i+vec2(0,1)), h21(i+vec2(1,1)), f.x), f.y); }
 float fb(vec2 p){ float a = 0.5, s = 0.0; for (int i = 0; i < 5; i++) { s += a * n2(p); p = p * 2.03 + 7.3; a *= 0.5; } return s; }
-float spiral(float r, float th, float off, float sig){ float ph = th - log(max(r, 0.5) / 3.0) / tan(0.2269) - off; float d = 0.0;
-  for (int k = 0; k < 2; k++) { float x = mod(ph - float(k) * 3.14159 + 3.14159, 6.28318) - 3.14159; d += exp(-x * x / (2.0 * sig * sig)); } return d; }
+// two major arms and two minor ones, each wandering a little (the same warp is in buildGalaxy)
+float spiral(float r, float th, float off, float sig, float wob){ float ph = th - log(max(r, 0.5) / 4.0) / tan(0.3054) - off + wob; float d = 0.0;
+  for (int k = 0; k < 4; k++) { float fk = float(k); float x = mod(ph - fk * 1.5708 + 0.35 * sin(r * 0.33 + fk * 1.3) + 3.14159, 6.28318) - 3.14159;
+    d += (k % 2 == 0 ? 1.0 : 0.42) * exp(-x * x / (2.0 * sig * sig * (k % 2 == 0 ? 1.0 : 0.7))); } return d; }
 vec3 redOf(vec3 c){ return vec3(0.85, 0.12, 0.05) * dot(c, vec3(0.33)) * 2.4; }
 void main(){
   vec2 ndc = vUV * 2.0 - 1.0; vec3 rd = normalize(uCamF + ndc.x * uTanHalf * uAspect * uCamR + ndc.y * uTanHalf * uCamU); vec3 ro = uCamPos;
@@ -789,12 +805,17 @@ void main(){
   if (abs(rd.y) > 1e-4) { float tp = -ro.y / rd.y; if (tp > 0.0) {
     vec3 P = ro + rd * tp; float r = length(P.xz), th = atan(P.z, P.x);
     float disk = exp(-r / 11.0) * smoothstep(50.0, 30.0, r);
-    float arms = spiral(r, th, 0.0, 0.32), clump = 0.5 + 0.95 * fb(P.xz * 0.33);
-    float dust = spiral(r, th, -0.34, 0.13) * (0.55 + 0.65 * fb(P.xz * 0.6)) * smoothstep(2.5, 8.0, r);
-    float knot = pow(clamp(fb(P.xz * 0.95 + 3.0) * 1.25, 0.0, 1.0), 5.0) * arms;
-    vec3 c = mix(vec3(1.0, 0.8, 0.56), vec3(0.7, 0.8, 1.0), smoothstep(5.0, 16.0, r)) * disk * (0.3 + 1.7 * arms * clump);
-    c += vec3(1.0, 0.42, 0.58) * knot * disk * 2.2;
-    c *= 1.0 - 0.8 * dust;
+    float wob = (fb(P.xz * 0.11) - 0.5) * 0.9;
+    float arms = spiral(r, th, 0.0, 0.3, wob) * smoothstep(2.5, 5.0, r);
+    float clump = 0.35 + 0.8 * fb(P.xz * 0.33) + 0.5 * pow(fb(P.xz * 1.4 + 9.0), 2.0);
+    float spurs = pow(fb(P.xz * 0.45 + vec2(wob * 3.0)), 3.0) * 1.2 * smoothstep(5.0, 12.0, r);   // feathers between the arms
+    float dust = spiral(r, th, -0.3, 0.11, wob) * (0.5 + 0.7 * fb(P.xz * 0.7)) * smoothstep(3.0, 8.0, r);
+    float knot = pow(clamp(fb(P.xz * 1.7 + 3.0) * 1.3, 0.0, 1.0), 6.0) * arms;
+    vec2 bq = vec2(cos(0.45) * P.x + sin(0.45) * P.z, -sin(0.45) * P.x + cos(0.45) * P.z); float bar = exp(-(bq.x * bq.x / 30.0 + bq.y * bq.y / 3.2));
+    vec3 c = mix(vec3(1.0, 0.8, 0.56), vec3(0.7, 0.8, 1.0), smoothstep(5.0, 16.0, r)) * disk * (0.22 + 1.6 * arms * clump + 0.35 * spurs * clump);
+    c += vec3(1.0, 0.78, 0.5) * bar * 0.5;
+    c += vec3(1.0, 0.42, 0.58) * knot * disk * 2.4;
+    c *= 1.0 - 0.82 * clamp(dust, 0.0, 1.0);
     if (uFrontOn > 0.5) { float dS = length(P.xz - uSun.xz) * (1.0 + 0.32 * (fb(P.xz * 0.2) - 0.5)); float tc = 172.5 + 21.0 * pow(dS / uDmax, 1.25);
       float conv = smoothstep(tc, tc + 0.7, uT); float edge = exp(-((uT - tc) / 0.45) * ((uT - tc) / 0.45));
       c = mix(c, mix(c * 0.08 + redOf(c) * 0.22, redOf(c), uIR), conv) + vec3(1.0, 0.55, 0.18) * edge * disk * 1.6 * (0.4 + arms); }
@@ -839,10 +860,10 @@ function sGalaxy(t, cellBack = 1) {
     const d = norm([p[0], 0, p[2]]), t0 = 215.5 + rr() * 4, u = clamp((t - t0) / 3.5), fade = 1 - ss(t0 + 2.8, t0 + 4.5, t); if (u <= 0 || fade <= 0) continue; pt(add(p, scl(d, 2 + u * 40)), AMBER, 4 * fade, 6); } flushPts({ depth: false }); }
   if (war) {
     for (const v of G.volleys) { if (t < v.t0 || t > v.t1 + 0.9) continue; const A = G.src[v.a], B = G.src[v.b]; const pa = [G.pos[A * 3], G.pos[A * 3 + 1] + 0.2, G.pos[A * 3 + 2]], pb = [G.pos[B * 3], G.pos[B * 3 + 1] + 0.2, G.pos[B * 3 + 2]];
-      const u = clamp((t - v.t0) / (v.t1 - v.t0)), fade = 1 - clamp((t - v.t1) / 0.9); const head = mixv(pa, pb, u); const bc = mixv([1, 0.95, 0.88], PCOL[v.a % 12], 0.35); ln(pa, head, bc, 5.5 * fade, 2.6); pt(head, [1, 1, 1], 14 * fade * (u < 1 ? 1 : 0), 16); pt(pa, [1, 0.85, 0.7], 6 * fade, 22); }
+      const u = clamp((t - v.t0) / (v.t1 - v.t0)), fade = 1 - clamp((t - v.t1) / 0.9); const head = mixv(pa, pb, u), last = v.t1 > 262; const bc = mixv([1, 0.95, 0.88], PCOL[v.a % 12], 0.35); ln(pa, head, bc, (last ? 4.5 : 2.6) * fade, last ? 2.0 : 1.2); ln(pa, head, bc, 0.35 * fade, last ? 9 : 5); pt(head, [1, 1, 1], 9 * fade * (u < 1 ? 1 : 0), 12); pt(pa, [1, 0.85, 0.7], 4 * fade, 16); if (u >= 1) pt(pb, [1, 0.9, 0.75], 6 * fade, 26); }
     if (G.sweep.length && t > G.sweep[0].t - 0.6 && t < G.sweep[G.sweep.length - 1].t + 0.5) { const S = G.src[G.sweeper], ps = [G.pos[S * 3], 0.2, G.pos[S * 3 + 2]]; let i = 0; while (i < G.sweep.length - 1 && G.sweep[i + 1].t < t) i++;
       const A = G.sweep[i], B = G.sweep[Math.min(i + 1, G.sweep.length - 1)], u = B.t > A.t ? clamp((t - A.t) / (B.t - A.t)) : 0, pa = G.src[A.b], pb = G.src[B.b]; const tgt = [lerp(G.pos[pa * 3], G.pos[pb * 3], u), 0.2, lerp(G.pos[pa * 3 + 2], G.pos[pb * 3 + 2], u)];
-      const k = ss(G.sweep[0].t - 0.6, G.sweep[0].t - 0.2, t) * (1 - ss(G.sweep[G.sweep.length - 1].t, G.sweep[G.sweep.length - 1].t + 0.5, t)); ln(ps, add(ps, scl(norm(sub(tgt, ps)), 70)), [1.0, 0.95, 0.9], 4.5 * k, 2.2); pt(ps, [1, 0.9, 0.8], 8 * k, 24); }
+      const k = ss(G.sweep[0].t - 0.6, G.sweep[0].t - 0.2, t) * (1 - ss(G.sweep[G.sweep.length - 1].t, G.sweep[G.sweep.length - 1].t + 0.5, t)); ln(ps, add(ps, scl(norm(sub(tgt, ps)), 70)), [1.0, 0.95, 0.9], 3.0 * k, 1.4); ln(ps, add(ps, scl(norm(sub(tgt, ps)), 70)), [1.0, 0.9, 0.8], 0.3 * k, 7); pt(ps, [1, 0.9, 0.8], 6 * k, 18); }
     flushLns({ depth: false }); flushPts({ depth: false });
   }
 }
@@ -868,14 +889,13 @@ const CARDS = [
   [224, 228.4, "Nothing is left to win.", ""],
 ];
 const STAMPS = [[33.6, 40.7, "WEST TEXAS"], [73.4, 84.2, "THE DRY MEDITERRANEAN"], [138.3, 143.8, "THE SAME DOME"], [154.4, 162, "ANOTHER STAR"], [195.4, 201.6, "THE SAME DOME · TWO MILLION YEARS LATER"]];
-const INSTR = [[7, 33, "VIIRS DAY/NIGHT BAND"], [33, 41, "GROUND"], [41, 50, "VISIBLE"], [50, 59.6, "THERMAL INFRARED  11 µm"], [59.6, 72, "VISIBLE"], [72, 84.5, "GROUND"], [84.5, 128.5, "VISIBLE"], [128.5, 138, "MID-INFRARED  12 µm"], [138, 144, "GROUND"], [144, 170, "VISIBLE"], [170, 191.5, "VISIBLE"], [191.5, 195, "MID-INFRARED  12 µm"], [195, 202, "GROUND"], [202, 272, "MID-INFRARED  12 µm"]];
+const INSTR = [[7, 33, "VIIRS DAY/NIGHT BAND"], [33, 41, "GROUND"], [41, 50, "VISIBLE"], [50, 59.6, "THERMAL INFRARED  11 µm"], [59.6, 72, "VISIBLE"], [72, 84.5, "GROUND"], [84.5, 128.5, "VISIBLE"], [128.5, 138, "MID-INFRARED  12 µm"], [138, 144, "GROUND"], [144, 149, "MID-INFRARED  12 µm"], [149, 170, "VISIBLE"], [170, 191.5, "VISIBLE"], [191.5, 195, "MID-INFRARED  12 µm"], [195, 202, "GROUND"], [202, 272, "MID-INFRARED  12 µm"]];
 const CALL = [
   [43, 46.5, "orbital data centres", () => add(EARTH, [0.2, 0.95, 0.75])],
   [45.5, 48.5, "solar fields", () => surf(orbitRot(47), -112, 34, 1.0)],
   [62, 65.5, "mass drivers venting seawater", null, [1460, 300]],
   [66, 69.2, "dry sea floor", () => surf(orbitRot(68), 5, 40, 1.0)],
   [102, 105.5, "mass drivers", () => add(MERC, [0.35, 0.45, 0.3])],
-  [108.5, 111, "debris ring", null, [700, 640]],
   [121.5, 125, "collector swarm", () => add(SUN, [SUN_R * 1.6, SUN_R * 1.2, 0])],
   [134, 137.5, "laser relay", () => MOON],
   [145, 148, "self-replicating probes", null, [1250, 380]],
@@ -922,6 +942,8 @@ function overlay(t) {
   // cards: the wall in plain words
   ctx.textAlign = "center";
   for (const [a, b, line, num] of CARDS) { const k = ss(a, a + 0.45, t) * (1 - ss(b - 0.45, b, t)); if (k <= 0) continue; ctx.globalAlpha = k;
+    { const g = ctx.createRadialGradient(W / 2, H * 0.83 + 8, 10, W / 2, H * 0.83 + 8, 520); g.addColorStop(0, "rgba(0,0,0,0.42)"); g.addColorStop(1, "rgba(0,0,0,0)");   // a soft shade, so the line reads over bright ground
+      ctx.save(); ctx.translate(W / 2, H * 0.83 + 8); ctx.scale(1, 0.16); ctx.translate(-W / 2, -(H * 0.83 + 8)); ctx.fillStyle = g; ctx.fillRect(W / 2 - 560, H * 0.83 + 8 - 560, 1120, 1120); ctx.restore(); }
     ctx.font = `300 36px ${SANS}`; ctx.letterSpacing = "0.5px"; ctx.fillStyle = "rgba(247,249,250,0.97)"; ctx.shadowColor = "rgba(0,0,0,0.6)"; ctx.shadowBlur = 18; ctx.fillText(line, W / 2, H * 0.83);
     if (num) { ctx.font = `500 13px ${MONO}`; ctx.letterSpacing = "4px"; ctx.fillStyle = "rgba(255,190,120,0.95)"; ctx.fillText(num, W / 2 + 2, H * 0.83 + 36); } ctx.shadowBlur = 0; }
   // words
@@ -943,7 +965,7 @@ function drawScene(t) {
   else if (t < 41) { sCampus(t); bloom = 0.5; thresh = 1.2; }
   else if (t < 72) { sOrbital(t); if (t < 41.6) fade = ss(41, 41.6, t); }
   else if (t < 84.5) { sDome(t); bloom = 0.3; thresh = 1.5; }
-  else if (t < 138) { sSolar(t); if (t < 85.2) fade = ss(84.5, 85.2, t); }
+  else if (t < 138) { sSolar(t); bloom = 0.55; thresh = 1.25; if (t < 85.2) fade = ss(84.5, 85.2, t); }
   else if (t < 144) { sTwoSuns(t); bloom = 0.32; thresh = 1.5; }
   else if (t < 149) sLaunch(t);
   else if (t < 154) { sTransit(t); if (t < 149.4) fade = ss(149, 149.4, t); }
@@ -952,7 +974,7 @@ function drawScene(t) {
   else if (t < 202) { sLastSky(t); bloom = 0.4; thresh = 1.2; }
   else if (t < 272) { sGalaxy(t); if (t < 203.5) fade = ss(202, 203.5, t); }
   let fadeCol = [0, 0, 0];
-  if (t > 32.3 && t < 33) { fade = 1 - ss(32.3, 33, t); fadeCol = [0.02, 0.025, 0.04]; }
+  if (t > 31.9 && t < 33) { fade = 1 - ss(31.9, 33, t); fadeCol = [0.03, 0.03, 0.05]; }
   if (t > 71.3 && t < 72) { fade = 1 - ss(71.3, 72, t); fadeCol = [0.75, 0.77, 0.8]; }
   if (t >= 84.5 && t < 85.2) { fadeCol = [0.75, 0.77, 0.8]; }
   E.end({ bloom, thresh, exposure: 1.0, grain: 0.028, vignette: 0.4, seed: (t * 30) % 97, fade, fadeCol });

@@ -61,6 +61,9 @@ try {
     const film = await openFilm("audio"); const len = await film.evalv("FILM.audio()"); const parts = []; const CH = 1 << 20;
     for (let i = 0; i < len; i += CH) parts.push(Buffer.from(await film.evalv(`FILM.audioChunk(${i}, ${CH})`), "base64")); film.close();
     writeFileSync(join(outDir, "sound.wav"), Buffer.concat(parts)); console.log(join(outDir, "sound.wav"));
+    // the player's soundtrack: static gain and a limiter (no loudness normalisation, which pumps)
+    await run(["-y", "-loglevel", "error", "-i", join(outDir, "sound.wav"), "-af", "volume=12.7dB,alimiter=limit=0.85:level=disabled", "-ar", "44100", "-c:a", "libmp3lame", "-b:a", "160k", join(here, "soundtrack.mp3")]);
+    console.log(join(here, "soundtrack.mp3"));
   }
   if (args.includes("--video")) {
     const fps = Number(opt("--fps") || 30), jobs = Number(opt("--jobs") || 5), dur = Number(opt("--dur") || 300), n = Math.round(dur * fps);

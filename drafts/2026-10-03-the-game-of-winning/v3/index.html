@@ -24,8 +24,8 @@ body.render .bar, body.render .start { display: none; } body.render .frame { wid
 <button class="start" id="start" type="button" disabled><span id="startLabel">LOADING 0%</span></button>
 <div class="bar">
   <button id="play" type="button">Play</button>
-  <input id="scrub" type="range" min="0" max="250" step="0.05" value="0" aria-label="Position">
-  <span class="time" id="time">0:00 / 4:10</span>
+  <input id="scrub" type="range" min="0" max="248" step="0.05" value="0" aria-label="Position">
+  <span class="time" id="time">0:00</span>
   <button id="snd" type="button" aria-pressed="true">Sound on</button>
   <button id="full" type="button">Fullscreen</button>
   <div class="chapters" id="chapters"></div>
@@ -46,7 +46,7 @@ Film.init(view, p => { startLabel.textContent = `LOADING ${Math.round(p * 100)}%
   window.FILM.audio = async () => { const b = await Sound.render(); window.__wav = Sound.wav(b); return window.__wav.length; };
   window.FILM.audioChunk = (i, size) => { const s = window.__wav.subarray(i, i + size); let bin = ""; for (let j = 0; j < s.length; j += 8192) bin += String.fromCharCode.apply(null, s.subarray(j, j + 8192)); return btoa(bin); };
   if (render) { glc.remove(); return; }
-  startLabel.textContent = "PLAY · 4:10"; startBtn.disabled = false; Film.frame(0.01);
+  startLabel.textContent = `PLAY · ${Math.floor(Film.DUR / 60)}:${String(Math.round(Film.DUR % 60)).padStart(2, "0")}`; startBtn.disabled = false; Film.frame(0.01);
   player();
 }).catch(e => { window.FILM.error = String(e && e.stack || e); console.error(e); startLabel.textContent = "COULD NOT START: " + String(e.message || e).slice(0, 80); });
 

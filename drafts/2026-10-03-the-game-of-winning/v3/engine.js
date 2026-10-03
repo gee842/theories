@@ -25,7 +25,7 @@ uniform sampler2D uDay, uNight; uniform int uMode; uniform float uDayGain, uNigh
 uniform float uThermal, uHeat, uOcean, uIr, uEmissive, uTime, uDesat;
 uniform vec3 uAtmo; uniform float uAtmoK;
 uniform vec3 uLesC; uniform float uLesR, uLesK;
-uniform vec3 uTint; uniform float uProc; uniform sampler2D uGrow, uCloud; uniform float uYear, uClouds, uHasGrow, uSeaStart, uSeaEnd, uHasCloud; uniform vec3 uPCol[12];
+uniform vec3 uTint; uniform float uProc; uniform float uCover; uniform sampler2D uGrow, uCloud; uniform float uYear, uClouds, uHasGrow, uSeaStart, uSeaEnd, uHasCloud; uniform vec3 uPCol[12];
 ${NOISE}
 vec3 toLin(vec3 c){ return pow(c, vec3(2.2)); }
 vec3 thermalPal(float x){ x = clamp(x, 0.0, 1.0);
@@ -46,7 +46,9 @@ void main(){
     gl_FragDepth = 1.0;
     float x = (dmin - uRadius) / uRadius;
     vec3 hc = vec3(0.0);
-    if (uMode == 2) hc = uAtmo * uEmissive * (0.5 * exp(-x * 9.0) + 0.12 * exp(-x * 1.6));
+    if (uMode == 2) hc = uAtmo * uEmissive * (0.22 * exp(-x * 14.0) + 0.035 * exp(-x * 2.2));
+    else if (uMode == 4) discard;
+    else if (uAtmoK > 0.0 && uThermal > 0.5) { float x2 = (dmin - uRadius) / uRadius; hc = vec3(0.3, 0.06, 0.03) * uAtmoK * (1.0 - exp(-exp(-x2 * 140.0) * 1.6)) * 0.5; }
     else if (uAtmoK > 0.0) { vec3 cp = uCamPos + rd * (-b) - uCenter; float ndc = dot(normalize(cp), uSun); float tau = exp(-x * 140.0) * 1.6; float glow = 1.0 - exp(-tau);
       vec3 ac = mix(vec3(1.0, 0.42, 0.16), uAtmo, smoothstep(-0.1, 0.1, ndc + x * 6.0)); hc = ac * uAtmoK * glow * smoothstep(-0.28, 0.25, ndc) * 0.9; }
     o = vec4(hc * uOpacity, 0.0); return;
@@ -98,10 +100,13 @@ void main(){
     col = dcol + ncol * nl * uNightGain;
     if (uThermal > 0.0) {
       float cl2 = cos(lat);
-      float heat = 0.015 + 0.07 * cl2 * cl2 + (1.0 - sea) * 0.07 + uHeat * 0.05 + grown * (0.3 + 0.4 * uHeat) * (0.55 + 0.45 * grain) + nlum * 0.9 * uHeat;
+      // oceans cool, land warmer, the compute fields hotter every decade, the cities hottest; cloud tops cold
+      float heat = 0.02 + 0.06 * cl2 * cl2 + uHeat * 0.08 * cl2 + (1.0 - sea) * (0.2 + 0.3 * uHeat) + grown * (0.06 + 0.16 * uHeat) * (0.7 + 0.3 * grain) + nlum * (0.6 + 1.1 * uHeat);
+      heat -= cl * (0.22 + 0.08 * uHeat);
       col = mix(col, thermalPal(heat) * 1.3, uThermal);
     }
     vec3 ac = mix(vec3(1.0, 0.45, 0.18), uAtmo, smoothstep(-0.05, 0.3, ndl)); float lit = smoothstep(-0.2, 0.3, ndl);
+    ac = mix(ac, vec3(0.3, 0.06, 0.03), uThermal); lit = mix(lit, 0.5, uThermal);   // in the infrared the air glows faintly warm, day and night alike
     col += ac * uAtmoK * (pow(1.0 - view, 2.6) * 0.75 + 0.035) * lit;
   } else if (uMode == 1) {                            // rocky worlds: Mercury, the Moon, an alien planet
     vec3 alb = toLin(texture(uDay, uv).rgb); float lum = dot(alb, vec3(0.3, 0.59, 0.11)); alb = mix(alb, vec3(lum), uDesat) * uTint;
@@ -120,12 +125,33 @@ void main(){
       col += vec3(1.0, 0.52, 0.14) * (edge * 2.2 + veins * 1.8);
     }
     col += uAtmo * uAtmoK * pow(1.0 - view, 4.0);
-  } else if (uMode == 2) {                            // the Sun
-    float g = fbm(q * 40.0 + uTime * 0.05) * 0.6 + fbm(q * 9.0 - uTime * 0.02) * 0.4;
-    float limb = pow(view, 0.45);
-    vec3 vis = vec3(1.0, 0.86, 0.62) * (0.75 + 0.5 * g) * limb;
-    vec3 ir = vec3(0.6, 0.06, 0.02) * (0.7 + 0.6 * g) * limb;
+  } else if (uMode == 2) {                            // the Sun: limb darkening, granulation, a few spots
+    float mu = view; float limb = 1.0 - 0.62 * (1.0 - mu) - 0.18 * (1.0 - mu) * (1.0 - mu);
+    float gran = vnoise(q * 170.0 + uTime * 0.25) * 0.55 + vnoise(q * 380.0 - uTime * 0.2) * 0.45;
+    float spots = smoothstep(0.74, 0.8, fbm(q * 6.0 + 3.0)) * smoothstep(0.55, 0.25, abs(q.y));
+    float fac = smoothstep(0.62, 0.78, fbm(q * 9.0 + 11.0)) * (1.0 - mu);                       // bright faculae near the limb
+    vec3 vis = mix(vec3(1.0, 0.55, 0.26), vec3(1.0, 0.86, 0.66), mu) * limb * (0.86 + 0.28 * gran) * (1.0 - 0.75 * spots) * (1.0 + 0.5 * fac);
+    vec3 ir = vec3(0.6, 0.06, 0.02) * (0.8 + 0.3 * gran) * limb;
     col = mix(vis, ir, uIr) * uEmissive;
+  } else if (uMode == 4) {                            // the collector swarm, seen as a shell around the Sun
+    // collectors on inclined orbits (bands that cross the disc), a mottled cloud between them, and as the shell closes, everywhere
+    float cv = 0.0;
+    for (int k = 0; k < 14; k++) { float fk = float(k); float on = smoothstep(fk / 14.0 * 0.55, fk / 14.0 * 0.55 + 0.08, uCover); if (on <= 0.0) break;
+      vec3 nk = normalize(vec3(sin(fk * 2.4 + 0.3), cos(fk * 1.7) * 0.9, sin(fk * 3.1 + 1.0)));
+      vec3 u = normalize(cross(nk, vec3(0.3, 1.0, 0.1))), v = cross(nk, u); float ang = atan(dot(q, v), dot(q, u)) + uTime * 0.04 * (1.0 + fk * 0.13);
+      float d = abs(dot(q, nk)); float w = 0.025 + 0.05 * uCover;
+      float specks = smoothstep(0.35, 0.95, vnoise(vec3(ang * 140.0, d * 300.0, fk * 7.0)));
+      cv = max(cv, on * smoothstep(w, 0.0, d) * (0.35 + 0.65 * specks)); }
+    float cloud = smoothstep(0.3, 0.9, fbm(q * 5.0 + vec3(0.0, uTime * 0.01, 0.0)) + uCover * 0.55) * smoothstep(0.25, 0.75, uCover);
+    float fine = step(1.0 - smoothstep(0.2, 1.0, uCover), hash13(floor(q * 520.0)));
+    cv = clamp(max(cv, max(cloud, fine * 0.9)) * (0.9 + 0.1 * uCover), 0.0, 1.0);
+    cv = 1.0 - pow(1.0 - cv, 1.0 / max(view, 0.25));        // more collectors along the line of sight at the edge
+    cv = max(cv, smoothstep(0.82, 1.0, uCover));            // and at the end, closed
+    vec3 back = vec3(0.004, 0.0035, 0.003);
+    float glint = (1.0 - view) * (1.0 - view) * step(0.985, hash13(floor(q * 700.0 + floor(uTime * 8.0)))) * (1.0 - uIr);   // far-side collectors catching the light through the gaps
+    vec3 heat = vec3(0.55, 0.11, 0.035) * (0.65 + 0.35 * fbm(q * 7.0)) * (0.75 + 0.25 * view);
+    col = mix(back * cv + vec3(1.0, 0.85, 0.6) * glint * 1.5 * uCover, heat * cv, uIr);
+    o = vec4(col * uOpacity, cv * uOpacity); return;
   } else if (uMode == 3) {                            // Venus under its clouds
     float bands = fbm(vec3(q.x * 3.0, q.y * 14.0, q.z * 3.0) + uTime * 0.01) * 0.65 + fbm(q * 18.0 + vec3(0.0, uTime * 0.02, 0.0)) * 0.35;
     vec3 alb = mix(vec3(0.78, 0.66, 0.46), vec3(0.97, 0.92, 0.8), smoothstep(0.25, 0.75, bands));
@@ -357,11 +383,11 @@ void main(){ vec2 sp = vUV * uSize; vec2 t1 = floor(sp - 0.5) + 0.5; vec2 f = sp
     },
     sphere(o) {
       const pr = P.sphere; gl.useProgram(pr.p); gl.bindVertexArray(vaoEmpty);
-      gl.enable(gl.BLEND); gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA); gl.enable(gl.DEPTH_TEST); gl.depthFunc(gl.LEQUAL); gl.depthMask(true);
+      gl.enable(gl.BLEND); gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA); gl.enable(gl.DEPTH_TEST); gl.depthFunc(gl.LEQUAL); gl.depthMask(o.depthWrite !== false);
       setU(pr, "uCamPos", cam.pos); setU(pr, "uCamR", cam.r); setU(pr, "uCamU", cam.u); setU(pr, "uCamF", cam.f); setU(pr, "uTanHalf", cam.tanHalf); setU(pr, "uAspect", cam.aspect); setU(pr, "uVP", cam.vp);
-      const d = { pCol: null, cloud: null, center: [0, 0, 0], radius: 1, rot: [1, 0, 0, 0, 1, 0, 0, 0, 1], sun: [1, 0, 0], mode: 0, dayGain: 1, nightGain: 1, opacity: 1, thermal: 0, heat: 0, ocean: 1, ir: 0, emissive: 1, time: 0, desat: 0, atmo: [0.3, 0.55, 1.0], atmoK: 0, lesC: [0, 1, 0], lesR: 0, lesK: 1, tint: [1, 1, 1], year: 2026, clouds: 0, proc: 0, hasGrow: 0, seaStart: 2100, seaEnd: 2191, ...o };
+      const d = { pCol: null, cloud: null, center: [0, 0, 0], radius: 1, rot: [1, 0, 0, 0, 1, 0, 0, 0, 1], sun: [1, 0, 0], mode: 0, dayGain: 1, nightGain: 1, opacity: 1, thermal: 0, heat: 0, ocean: 1, ir: 0, emissive: 1, time: 0, cover: 0, desat: 0, atmo: [0.3, 0.55, 1.0], atmoK: 0, lesC: [0, 1, 0], lesR: 0, lesK: 1, tint: [1, 1, 1], year: 2026, clouds: 0, proc: 0, hasGrow: 0, seaStart: 2100, seaEnd: 2191, ...o };
       if (d.grow) d.hasGrow = 1; d.hasCloud = d.cloud ? 1 : 0;
-      for (const [k, v] of Object.entries(d)) if (!["mode", "day", "night", "grow", "cloud", "pCol"].includes(k)) setU(pr, "u" + k[0].toUpperCase() + k.slice(1), v);
+      for (const [k, v] of Object.entries(d)) if (!["mode", "day", "night", "grow", "cloud", "pCol", "depthWrite"].includes(k)) setU(pr, "u" + k[0].toUpperCase() + k.slice(1), v);
       if (d.pCol && pr.loc.uPCol) gl.uniform3fv(pr.loc.uPCol, d.pCol);
       setI(pr, "uMode", d.mode);
       gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, d.day ? d.day.tex : null); setI(pr, "uDay", 0);
