@@ -415,7 +415,7 @@ void main(){
     for (int i = 0; i < 260 + iZero; i++) { vec3 p = ro + rd * tt; float hh = hallH(p.xz); float dd = p.y - max(hh, escH(p.xz));
       if (dd < 0.0) { float f = prevD / (prevD - dd + 1e-6); t = mix(prevT, tt, f); hit = true; mat = hh > 0.0 && p.y < hh + 1.0 ? 1.0 : 4.0; if (mat < 1.5) { vec3 ph = ro + rd * t; lq = vec3(mod(ph.x, HX) - HX * 0.5, ph.y, mod(ph.z, HZ) - HZ * 0.5); id = h21(vec2(floor(ph.x / HX), floor(ph.z / HZ)) + 0.37); } break; }
       if (p.y > 1600.0 && rd.y > 0.0) break; prevD = dd; prevT = tt;
-      float stepF = tt < 5500.0 ? max(10.0, tt * 0.011) : max(60.0, tt * 0.035);
+      float stepF = tt < 5500.0 ? max(12.0, tt * 0.016) : max(70.0, tt * 0.04);
       if (p.z > -5200.0 && p.y > 90.0 && rd.z < 0.0) stepF = max(stepF, min((p.y - 85.0) / max(-rd.y, 1e-4), (p.z + 5200.0) / -rd.z));   // above every hall: jump toward the old coast
       tt += stepF; if (tt > tEnd) break; } }
   // inside the dome: the city
