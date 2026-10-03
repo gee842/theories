@@ -840,7 +840,7 @@ function buildDomainMap(G) { const b = new Uint8Array(DOMN * DOMN * 4);
   gl.bindTexture(gl.TEXTURE_2D, tl.tex); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
   G.domN = tn; G.domL = tl; }
 function aliveFraction(t) { if (!GAL) return 1; let a = 0; for (let k = 0; k < GAL.ND; k++) if (GAL.death[k] > t) a++; return a / GAL.ND; }
-function playersAt(t) { if (t < 222) return players(yearAt(t)).alive.length; if (!GAL || t < 223) return 1; const split = Math.round(Math.exp(lerp(0, Math.log(212), ss(223.5, 231, t)))); if (t < 232) return split; let a = 0; for (let k = 0; k < GAL.ND; k++) if (GAL.death[k] > t) a++; return a; }
+function playersAt(t) { if (t < 222) return players(yearAt(t)).alive.length; if (!GAL || t < 223) return 1; const split = Math.round(Math.exp(lerp(0, Math.log(212), ss(228.3, 232.2, t)))); if (t < 232) return split; let a = 0; for (let k = 0; k < GAL.ND; k++) if (GAL.death[k] > t) a++; return a; }
 function galFull(t) { const ang = 0.3 + t * 0.002; return { pos: [Math.cos(ang) * 50, 52, Math.sin(ang) * 50], look: [0, -3, 0] }; }
 function galaxyCam(t) {
   const G = GAL, full = galFull(t);
@@ -920,7 +920,7 @@ function sGalaxy(t, cellBack = 1) {
   const G = GAL, c = galaxyCam(t);
   camera(c.pos, c.look, c.fov, 0.01, 1e6); drawStars(0.35);
   const war = t >= 223, front = t >= 170 && t < 202, ir = t >= 202 ? 1 : ss(189.5, 193.5, t);
-  const gu = { uT: t, uIR: ir, uWar: war ? 1 : 0, uSplit: ss(223.5, 231, t), uFrontOn: front || t >= 202 ? 1 : 0, uSizeK: 1, uNear: t < 185 ? 1 - ss(172, 182, t) : 0 };
+  const gu = { uT: t, uIR: ir, uWar: war ? 1 : 0, uSplit: ss(228.3, 232.2, t), uFrontOn: front || t >= 202 ? 1 : 0, uSizeK: 1, uNear: t < 185 ? 1 - ss(172, 182, t) : 0 };
   gu.uPC = PCOL.flat();
   const endK = 1 - ss(268.9, 271.6, t);   // after the last two destroy each other, the embers cool and the galaxy goes out
   drawGalaxyBody(t, { ir, front: gu.uFrontOn, war: gu.uWar, split: gu.uSplit, alive: war ? aliveFraction(t) : 1, k: ss(3, 26, c.pos[1]) * endK });
@@ -958,7 +958,8 @@ const CARDS = [
   [149.6, 153.8, "One star is not enough.", "THE PROBES LEAVE"],
   [166.6, 170.4, "The star goes dark.", "A FEW THOUSAND YEARS"],
   [190.2, 194.6, "Every star in the galaxy is taken.", "TWO MILLION YEARS · 10³⁷ W"],
-  [224, 228.4, "Nothing is left to win.", ""],
+  [224, 228.2, "Nothing is left to win.", ""],
+  [228.6, 232.6, "Light-years apart, its copies become rivals.", "212 PLAYERS"],
 ];
 const STAMPS = [[33.6, 40.7, "WEST TEXAS"], [73.4, 84.2, "THE DRY MEDITERRANEAN"], [138.3, 143.8, "THE SAME DOME"], [154.4, 162, "ANOTHER STAR"], [195.4, 201.6, "THE SAME DOME · TWO MILLION YEARS LATER"]];
 const INSTR = [[7, 33, "VIIRS DAY/NIGHT BAND"], [33, 41, "GROUND"], [41, 50, "VISIBLE"], [50, 59.6, "THERMAL INFRARED  11 µm"], [59.6, 72, "VISIBLE"], [72, 84.5, "GROUND"], [84.5, 128.5, "VISIBLE"], [128.5, 138, "MID-INFRARED  12 µm"], [138, 144, "GROUND"], [144, 149, "MID-INFRARED  12 µm"], [149, 170, "VISIBLE"], [170, 191.5, "VISIBLE"], [191.5, 195, "MID-INFRARED  12 µm"], [195, 202, "GROUND"], [202, 272, "MID-INFRARED  12 µm"]];

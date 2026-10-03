@@ -104,6 +104,8 @@ async function render(sr = 44100) {
   noise(163, 166.7, "lowpass", 160, 70, 0.8, g => { g.linearRampToValueAtTime(0.2, 164.5); g.linearRampToValueAtTime(0, 166.7); }, 0.6);
   tone(166, 171, 65.4, 65.4, 0.05, "sine", 1.5, 0.8);                                                                                                   // the star goes dark
   noise(171, 195, "highpass", 3500, 6500, 0.5, g => { g.linearRampToValueAtTime(0.03, 190); g.linearRampToValueAtTime(0, 195); }, 0.7);               // the front
+  // ---- the split: one tone becomes many, drifting out of tune with each other
+  for (const [k, fr] of [220, 277.18, 329.63, 440].entries()) for (const dir of [1, -1]) tone(228.3, 233.4, fr, fr * Math.pow(2, dir * (0.6 + k * 0.25) / 12), 0.012, "sine", 0.8, 0.8, dir * 0.5);
   // ---- the war: beams leave; impacts arrive late
   const G = Film.galaxy(); let n = 0, lastBoom = 0;
   for (const v of G.volleys.slice().sort((a, b) => a.t0 - b.t0)) { if (n++ > 360) break; if (v.t0 < 262) tone(v.t0, v.t0 + 0.25, 2000 + r() * 500, 260, 0.016, "sine", 0.004, 0.5, (r() - 0.5) * 1.2); if (v.t1 < 262 && v.t1 - lastBoom > 0.09) { lastBoom = v.t1; tone(v.t1, v.t1 + 0.8, 70, 32, 0.075, "sine", 0.006, 0.5, (r() - 0.5) * 1.2); } }
