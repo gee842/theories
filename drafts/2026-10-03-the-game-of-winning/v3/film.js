@@ -757,7 +757,12 @@ function sTransit(t) {
   const u = ss(149, 154.5, t);
   camera([0.3 * Math.sin(t * 0.2), 0.12, -3], [0, 0, 40], 38, 0.05, 40000); drawStars(0.75);
   pt([0, 0.25, 4000], [1, 0.9, 0.75], lerp(0.6, 9, Math.pow(u, 3)), lerp(4, 16, Math.pow(u, 3))); flushPts({ depth: false });   // the target star
-  pt([0.55, -0.32, 2.2], [1, 0.86, 0.62], 5, 7); pt([0.55, -0.32, 2.2], [1, 0.6, 0.3], 0.5, 40); flushPts({ depth: false });     // the probe's drive
+  pt([0.55, -0.32, 2.2], [1, 0.86, 0.62], 5, 7); pt([0.55, -0.32, 2.2], [1, 0.6, 0.3], 0.5, 40);     // the probe's drive
+  // the rest of the fleet, all launched together, slowly drawing apart across the sky
+  const rr = rngOf(131), sp = v => 1 + 1.6 * v; for (let k = 0; k < 40; k++) { const a = rr() * TAU, d = 0.15 + Math.pow(rr(), 0.6) * 0.6, z = 6 + rr() * 30, flick = 0.8 + 0.2 * Math.sin(t * 3 + k);
+    const at = v => [Math.cos(a) * d * sp(v) * z * 0.45, Math.sin(a) * d * sp(v) * z * 0.28, z], p = at(u), q = at(Math.max(0, u - 0.12)), k2 = (1 - 0.4 * u) / Math.sqrt(z);
+    pt(p, [0.7, 0.82, 1.0], 5 * k2 * flick, 3); pt(p, [0.45, 0.6, 1.0], 0.9 * k2, 22); }   // drive glows, no streaks
+  flushPts({ depth: false });
 }
 const CELL_STAR = [-12, 5, 5.5];
 function sCell(t) {
