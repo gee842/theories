@@ -969,6 +969,8 @@ const CALL = [
   [121.5, 125, "collector swarm", () => add(SUN, [SUN_R * SWARM_K * 0.75, SUN_R * SWARM_K * 0.66, 0])],
   [134, 137.5, "laser relay", () => MOON],
   [145, 148, "self-replicating probes", null, [1250, 380]],
+  [172.2, 176.8, "the Sun", () => GAL.sun],
+  [172.6, 176.8, "another star", () => GAL.cell],
   [233.5, 237.5, "beams powered by whole stars", null, [1180, 300]],
 ];
 const LAST_ABSORB = ABSORB[ABSORB.length - 1][0];
