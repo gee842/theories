@@ -967,7 +967,7 @@ const CALL = [
   [45.5, 48.5, "solar fields", () => surf(orbitRot(47), -112, 34, 1.0)],
   [62, 65.5, "mass drivers venting seawater", null, [1460, 300]],
   [66, 69.2, "dry sea floor", () => surf(orbitRot(68), 5, 40, 1.0)],
-  [102, 105.5, "mass drivers", () => add(MERC, [0.35, 0.45, 0.3])],
+  [104.2, 107.5, "mass drivers", null, [1150, 900]],   // on the stream below the planet
   [121.5, 125, "collector swarm", () => add(SUN, [SUN_R * SWARM_K * 0.75, SUN_R * SWARM_K * 0.66, 0])],
   [134, 137.5, "laser relay", () => MOON],
   [145, 148, "self-replicating probes", null, [1250, 380]],
