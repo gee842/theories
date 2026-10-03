@@ -81,8 +81,8 @@ The player count on the panel agrees with every card.
 
 ## What still keeps it short of 9.5
 
-- **The sound has not been heard.** It is checked only as images and numbers, and it is still synthesis. A listen is the most valuable next check.
-- **The heavy ground scenes render at 50–66% of full size** and are slightly soft next to the rest.
+- **The sound:** Ren listened on 2026-10-04 and said the soundtrack is great.
+- **The heavy ground scenes** now size themselves to the GPU (dynamic resolution). On an M2 Max the dome and two suns still play a little below full size.
 - **The figures and the city are simple geometry:** convincing as silhouettes and from a distance, not up close.
 - **The war's beams are straight lines.** They read clearly but plainly.
 - **Taste calls I made without Ren:**
