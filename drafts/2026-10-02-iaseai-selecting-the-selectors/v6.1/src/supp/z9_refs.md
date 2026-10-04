@@ -1,0 +1,58 @@
+## References
+
+Marks: ‡ works whose existence and identifier were checked on 3 October 2026; † works not yet independently verified; unmarked works carried from the verified bibliography of v3.1. Sources of observations are listed with dates and links in EVIDENCE.md.
+
+- Acemoglu, D., Egorov, G. and Sonin, K. 2012. Dynamics and stability of constitutions, coalitions, and clubs. *American Economic Review* 102(4). ‡ (abstract)
+- Alger, I. and Weibull, J. W. 2013. Homo moralis: preference evolution under incomplete information and assortative matching. *Econometrica* 81(6).
+- Alger, I., Weibull, J. W. and Lehmann, L. 2020. Evolution of preferences in structured populations. *Journal of Economic Theory* 185:104951. †
+- Aumann, R. 1990. Nash equilibria are not self-enforcing. In Gabszewicz, J., Richard, J.-F. and Wolsey, L. (eds), *Economic Decision-Making*. †
+- Barrett, S. 2013. Climate treaties and approaching catastrophes. *Journal of Environmental Economics and Management* 66(2).
+- Barrett, S. and Dannenberg, A. 2012. Climate negotiations under scientific uncertainty. *PNAS* 109(43).
+- Baye, M., Kovenock, D. and de Vries, C. 1996. The all-pay auction with complete information. *Economic Theory* 8(2). †
+- Bloom, N., Jones, C. I., Van Reenen, J. and Webb, M. 2020. Are ideas getting harder to find? *American Economic Review* 110(4). †
+- Bombardini, M. 2008. Firm heterogeneity and lobby participation. *Journal of International Economics* 75(2).
+- Bueno de Mesquita, E., Dziuda, W. and Polborn, M. 2026. The AGI race and existential risk. NBER Working Paper 35276. ‡
+- Carlsson, H. and van Damme, E. 1993. Global games and equilibrium selection. *Econometrica* 61(5). †
+- Clymer, J., Gabrieli, N., Krueger, D. and Larsen, T. 2024. Safety cases: how to justify the safety of advanced AI systems. arXiv:2403.10462. †
+- Coe, A. and Vaynman, J. 2020. Why arms control is so rare. *American Political Science Review* 114(2). †
+- Debs, A. and Monteiro, N. 2014. Known unknowns: power shifts, uncertainty, and war. *International Organization* 68(1). †
+- Dekel, E., Ely, J. and Yilankaya, O. 2007. Evolution of preferences. *Review of Economic Studies* 74(3). †
+- Dixit, A. 1987. Strategic behavior in contests. *American Economic Review* 77(5). †
+- Duersch, P., Oechssler, J. and Schipper, B. C. 2012. Unbeatable imitation. *Games and Economic Behavior* 76(1). ‡
+- Ewerhart, C. 2015. Mixed equilibria in Tullock contests. *Economic Theory* 60(1). †
+- Fearon, J. 1995. Rationalist explanations for war. *International Organization* 49(3). †
+- Fershtman, C. and Judd, K. 1987. Equilibrium incentives in oligopoly. *American Economic Review* 77(5). †
+- Gilboa, I. and Schmeidler, D. 1989. Maxmin expected utility with non-unique prior. *Journal of Mathematical Economics* 18(2). †
+- Green, E. and Porter, R. 1984. Noncooperative collusion under imperfect price information. *Econometrica* 52(1).
+- Greenblatt, R., Shlegeris, B., Sachan, K. and Roger, F. 2024. AI control: improving safety despite intentional subversion. *ICML*. ‡
+- Güth, W. and Yaari, M. 1992. Explaining reciprocal behavior in simple strategic games: an evolutionary approach. †
+- Hayes, N. 1950. Roots of the transcendental equation associated with a certain difference-differential equation. *Journal of the London Mathematical Society* 25. †
+- Heifetz, A., Shannon, C. and Spiegel, Y. 2007. What to maximize if you must. *Journal of Economic Theory* 133(1). †
+- Hillman, A. and Riley, J. 1989. Politically contestable rents and transfers. *Economics and Politics* 1(1). †
+- Hirsch, M. 1985. Systems of differential equations that are competitive or cooperative II. *SIAM Journal on Mathematical Analysis* 16(3).
+- Hirshleifer, J. 1991. The paradox of power. *Economics and Politics* 3(3). †
+- Jones, C. I. 1995. R&D-based models of economic growth. *Journal of Political Economy* 103(4). †
+- Jones, C. I. 2024. The AI dilemma: growth versus existential risk. *American Economic Review: Insights* 6(4). ‡
+- Kandori, M., Mailath, G. and Rob, R. 1993. Learning, mutation, and long run equilibria in games. *Econometrica* 61(1). †
+- Kempe, D., Kleinberg, J. and Tardos, É. 2003. Maximizing the spread of influence through a social network. *KDD*.
+- Krakauer, D., Page, K. and Erwin, D. 2009. Diversity, dilemmas, and monopolies of niche construction. *American Naturalist* 173(1). ‡ (full text)
+- Mearsheimer, J. 2001. *The Tragedy of Great Power Politics*. †
+- Morris, S. 2000. Contagion. *Review of Economic Studies* 67(1).
+- Ok, E. and Vega-Redondo, F. 2001. On the evolution of individualistic preferences. *Journal of Economic Theory* 97(2). †
+- Panchanathan, K. and Boyd, R. 2004. Indirect reciprocity can stabilize cooperation without the second-order free rider problem. *Nature* 432.
+- Peltzman, S. 1975. The effects of automobile safety regulation. *Journal of Political Economy* 83(4).
+- Posen, B. 1991. *Inadvertent Escalation*. †
+- Powell, R. 2006. War as a commitment problem. *International Organization* 60(1). †
+- Price, G. 1970. Selection and covariance. *Nature* 227.
+- Pérez-Castrillo, D. and Verdier, T. 1992. A general analysis of rent-seeking games. *Public Choice* 73(3). †
+- Schaffer, M. 1988. Evolutionarily stable strategies for a finite population and a variable contest size. *Journal of Theoretical Biology* 132(4).
+- Scharre, P. 2018. *Army of None*. †
+- Schelling, T. 1960. *The Strategy of Conflict*; 1966. *Arms and Influence*. †
+- Schelling, T. 1966. *Arms and Influence*. Yale University Press. †
+- Sigmund, K. et al. 2010. Social learning promotes institutions for governing the commons. *Nature* 466.
+- Skaperdas, S. 1992. Cooperation, conflict, and power in the absence of property rights. *American Economic Review* 82(4). †
+- Smith, H. 1995. *Monotone Dynamical Systems*.
+- Stafford, E., Trager, R. and Dafoe, A. 2022. Safety not guaranteed: international strategic dynamics of risky technology races. Working paper. ‡
+- Van Evera, S. 1999. *Causes of War*. †
+- Wilde, G. 1982. The theory of risk homeostasis. *Risk Analysis* 2(4). †
+- Young, H. P. 1993. The evolution of conventions. *Econometrica* 61(1). †

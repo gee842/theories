@@ -7,3 +7,4 @@ Each experiment owns its assumptions, implementation choices, evidence and limit
 | Experiment | Purpose |
 |---|---|
 | [Circular construction](circular-construction/README.md) | A speculative, regenerative construction system demonstrated with Blender, robotics dynamics, structural analysis and an interactive 3D construction sequence. |
+| [Evaluator succession](evaluator-succession/README.md) | A conditional authority model and a reproducible synthetic benchmark testing success-dependent control of evaluation, beneficial revision, and effective correction. Includes contradicted predictions and preserved raw results. |

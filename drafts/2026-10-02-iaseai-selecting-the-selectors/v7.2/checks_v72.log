@@ -1,0 +1,1753 @@
+
+=== RC [independent integration with analytical and identity controls] keys: jointcorrection certificate safeguards
+    Correction, load and host viability; transient and selection counterexamples
+  [ok] correction: time_varying_joint_certificate
+  [ok] correction: eventual_correction_transient_failure
+  [ok] correction: local_and_coalitional_limits
+  [ok] correction: partial_and_total_sensitivity
+  RC values: {"eventual_correction_transient_failure": {"cross_step_max_error": 1.4078016530305604e-11, "final_capture": 9.970685113815067e-13, "final_host": 0.9999999998681232, "initial_effective_liability": 0.4, "initial_host_second_derivative": -0.075, "initial_load_derivative": 0.15, "interior_minimum_host": 0.4275723873423153, "minimum_host": 0.42754890390321476, "row_gain": 0.5}, "local_and_coalitional_limits": {"coalition_final_share": 0.9999999876330788, "large_deviation_fitness_at_1_5": 0.75, "local_fitness_derivative": -1, "minority_final_share": 2.8984972793173634e-10, "unstable_threshold": 0.5}, "partial_and_total_sensitivity": {"gain_multiplier_at_policy_0_1": 1.0909090909090908, "partial_log_sensitivity_to_correction": -1, "total_log_sensitivity_to_policy_at_zero": 0.9999999999745778}, "time_varying_joint_certificate": {"cross_step_max_error": 2.332012360994895e-11, "final_capture": 5.096271850635126e-08, "final_host": 0.9999999562567016, "final_load": 1.535834348565801e-10, "max_row_gain_bound": 0.7, "minimum_effective_liability_bound": 1.4, "minimum_host": 0.5}}
+
+=== RP [analytical witnesses with independent computations] keys: require safeguards standprice corrrate scope enforce coverage nested
+    Inherited V7.1 readiness boundaries and retained cases
+  [ok] readiness: cumulative_counterexample
+  [ok] readiness: constant_speed_replicator
+  [ok] readiness: narrowing_without_concentration
+  [ok] readiness: fixed_total_scope
+  [ok] readiness: functional_without_cognitive
+  [ok] readiness: fixed_verified_containment
+  [ok] readiness: noncompetitive_growth
+  [ok] readiness: zero_tax_without_safety
+  RP values: {"constant_speed_replicator": {"cycle_B": 0.2, "final_host": 0.002945305015967422, "final_logit": 23.09324522134573, "final_race_share": 0.9999999999065174, "first_floor_crossing": 68.75500000000996, "minimum_host": 0.002945305015967422, "speed": 1.0}, "cumulative_counterexample": {"analytic_host_lower_bound": 0.9882525652612753, "average_liability": 0.8571428571428571, "cycle_B": 0.2, "cycle_logit": -2, "final_host": 0.9999996537272856, "final_logit": -206.90675477871505, "final_race_share": 1.3852818084531603e-90, "first_floor_crossing": null, "minimum_host": 0.9996745363794348}, "fixed_total_scope": {"cross_domain_returns": [1.0, 1.5], "cross_domain_thresholds": [0.9999999921727756, 1.2247448710897446], "diagonal_returns": [1.0, 0.5], "diagonal_thresholds": [0.9999999921727756, 0.7071067775755853]}, "fixed_verified_containment": {"cooperation_value": 0.99999999999991, "deviation_value": 0.2, "escape_threshold": 0.00988888888888889, "failed_control_deviation_value": 1.9100000000000001, "fixed_escape_probability": 0.001}, "functional_without_cognitive": {"local_payoff_advantage": 0.1, "otherwise_alike_protective_advantage": -0.1, "protective_share_at_100": 0.9995915675173918}, "narrowing_without_concentration": {"Gamma": 0.5, "Gamma_delta": 0.32142857142857145, "common_price": 0, "gap_after_100": 5.312279777403006e-06, "initial_gap": 0.2, "relative_price": 0.47368421052631576}, "noncompetitive_growth": {"limiting_survival": 0.0, "residual_hazard_lower_bound_from_t3": 0.005, "survival_at_1000": 4.494450339458995e-05}, "zero_tax_without_safety": {"alignment_tax": 0.0, "limiting_survival": 0.0, "share_derivative": -0.0, "survival_at_1000": 4.3171247410658195e-05}}
+
+=== RV [independent regression groups] keys: standprice loopgain onegroup masked enough rivalverify share relaxtrust dwell
+    Preserved V7 counterexamples and special cases
+  [ok] math: check_lottery_distinction
+  [ok] math: check_nonlinear_prize_domain
+  [ok] math: check_preserved_proportional_case
+  [ok] math: check_background_scope
+  RV mathematical values: {"check_background_scope": {"heterogeneous_covariance": 0.25, "homogeneous_covariance": -0.25}, "check_lottery_distinction": {"coarse": {"cells": 1000, "finite_premium": 1.0311064245755297, "iterations": 810, "local_price": 1.0817843866171006, "r": 1.5, "residual": 9.947598300641403e-12}, "fine": {"cells": 2000, "finite_premium": 1.0311103490895481, "iterations": 810, "local_price": 1.0817843866171006, "r": 1.5, "residual": 9.947598300641403e-12}, "linear_control": {"cells": 1000, "finite_premium": 1.0817843866170958, "iterations": 810, "local_price": 1.0817843866171006, "r": 1, "residual": 9.947598300641403e-12}}, "check_nonlinear_prize_domain": {"common_gain": 0.6666666666666666, "formal_common_price": 2.0, "positive_perturbations": [{"discounted_term_ratio": 4.538407122295282, "epsilon": 0.01, "escape_period": 12, "total": 5.025550346512944}, {"discounted_term_ratio": 7.126949960232233, "epsilon": 1e-06, "escape_period": 35, "total": 6.550867478764136}, {"discounted_term_ratio": 12.071238673943647, "epsilon": 1e-10, "escape_period": 58, "total": 8.826999002317502}], "relative_gain": 0.3333333333333333}, "check_preserved_proportional_case": [{"measured_common": 0.6086956521933473, "measured_relative": 0.36029411757398927, "predicted_common": 0.6086956521739131, "predicted_relative": 0.36029411764705876, "r": 0.7}, {"measured_common": 0.6086956521933473, "measured_relative": 0.6086956521933473, "predicted_common": 0.6086956521739131, "predicted_relative": 0.6086956521739131, "r": 1.0}, {"measured_common": 0.6086956521933473, "measured_relative": 1.3124999994396092, "predicted_common": 0.6086956521739131, "predicted_relative": 1.3125000000000004, "r": 1.5}]}
+  [ok] systems: test_actual_stop_gives_finite_exposure
+  [ok] systems: test_bounded_prize_has_positive_bounded_effort
+  [ok] systems: test_cumulative_selection_for_the_moving_tax_counterexample
+  [ok] systems: test_failed_detection_does_not_determine_residual_hazard
+  [ok] systems: test_fixed_positive_tax_has_a_finite_detection_threshold
+  [ok] systems: test_moving_tax_needs_a_relative_condition
+  [ok] transition: test_complete_detection_response_clock
+  [ok] transition: test_dwell_release_strictly_beyond_boundary
+  [ok] transition: test_high_hazard_pacing_profile_has_unsafe_racing_region
+  [ok] transition: test_masking_deterrence_compares_the_changing_tax
+  [ok] transition: test_others_only_sharing_uses_kept_promise_probability
+  [ok] transition: test_partial_and_complete_pooling
+  [ok] transition: test_row_certificate_allows_captured_transient
+  [ok] transition: test_trust_componentwise_and_joint_payoff_changes
+
+=== CX [mixed: (A),(C),(D),(G),(H),(I) closed form; (B) identity; (E),(F) independent integration; (J) independent simulation] keys: standprice, detectlink, load, certificate, readrule, dwell, frontier, onegroup, lockin
+    Outside review of V6.2 (Codex, both reviews): the counterexamples behind the repairs, each asserted where the repaired text cites it
+  (A) relative partial sums at 10, 20, 30: 1.80051, 27.47743, 122097.22; common 1.33333
+  [ok] standprice: along a balanced path whose elasticity grows, the gains at the start certify nothing (relative sum diverges, common 4/3)
+  (B) immediate -0.006000, delayed 0.002105724792, one-period reduction with conditional values 0.002105724792
+  [ok] detectlink: an eventual escape probability in a next-period equation reverses deterrence; continuation values that carry the waiting restore it
+  [ok] load: cubic payoff-monotone selection stops near 0.00165 and the host stays above its floor
+  [ok] certificate: captured share above 0.999999999999 at t=50, then removed
+  [ok] certificate(4): at G=1 a start at (0.99, 0.99) leaves the captured corner for no capture
+  (F) boundary at G=2, equal speeds, x0=0.99: 5.858957
+  [ok] dwell: T_min near 5.859 is a boundary; release 0.01 beyond it is restored, 0.01 short is recaptured
+  [ok] frontier: with n=4, c_y=Delta_y=1, destruction beats expansion and rest beats both
+  [ok] onegroup: Cov(phi,z) - c Var(z) = 0.25 > 0 with a correlated background
+  [ok] lockin: capacity 0.2 recovers to the floor 0.5 after 10 ln 1.6 = 4.70004
+  (J) met at 0.49 with levels (0,1): 0.486; with levels (0.5,1.5): 0.0057; decaying-information LLR range [-0.127701, 0.122485]
+  [ok] readrule: band about the threshold ~ half; lower level at the threshold <= 3%; decaying information never reaches either boundary
+
+=== FB [independent] keys: bench
+    Local feedback benchmark, ab < mu d <=> spectral radius < 1
+agreement 200000/200000
+  [ok] bench: the criterion agrees with the spectral radius in every sampled case
+
+=== LG [independent; (C),(C') identity] keys: loopgain, compound, standprice
+    One loop gain: numerical Jacobian vs Gamma; nonlinear deviations; present value of standing; two-period contest vs e(theta_Gamma)
+(A) 4000 random two-channel systems: Gamma>1 <=> spectral radius on sum-zero deviations >1; mismatches 0 (skipped 4 within 1e-3 of the boundary)
+(A') nonlinear simulations from a 1e-4 perturbation, 4000 periods:
+   r=1.5,a=0.0,beta=0.0,k0=0.0,dZ=0.2,df=0.0: G_K=1.500 G_Z=0.000 Gamma=1.500 -> relative gap after 4000 periods 4.00e+00 (grows)
+   r=1.5,a=0.0,beta=0.0,k0=0.5,dZ=0.2,df=0.0: G_K=0.300 G_Z=0.000 Gamma=0.300 -> relative gap after 4000 periods 2.70e-15 (decays)
+   r=1.5,a=0.0,beta=0.4,k0=0.0,dZ=0.2,df=0.0: G_K=0.900 G_Z=0.000 Gamma=0.900 -> relative gap after 4000 periods 2.61e-13 (decays)
+   r=0.8,a=1.0,beta=0.0,k0=0.0,dZ=0.2,df=0.0: G_K=0.800 G_Z=0.300 Gamma=1.100 -> relative gap after 4000 periods 3.96e+00 (grows)
+   r=0.8,a=1.0,beta=0.0,k0=0.0,dZ=0.6,df=0.0: G_K=0.800 G_Z=0.100 Gamma=0.900 -> relative gap after 4000 periods 5.65e-14 (decays)
+   r=1.5,a=0.0,beta=0.0,k0=0.0,dZ=0.2,df=0.05: G_K=0.750 G_Z=0.000 Gamma=0.750 -> relative gap after 4000 periods 6.75e-15 (decays)
+(B) value of a unit of relative net payoff: perturbation PV in the nonlinear model vs Gd/(1-Gd)
+   random systems with Gamma<1 and Gd<0.9: max relative error 1.70e-06
+   systems with Gamma>=1 but Gd<1 (equal standing unstable, discounting still wins): 20; first-order agreement as x->0:
+     lambda formula 0.3628; PV at x=1e-4,1e-6,1e-8,1e-10: 0.3628, 0.3628, 0.3628, 0.3628
+     lambda formula 6.2428; PV at x=1e-4,1e-6,1e-8,1e-10: 6.4306, 6.2739, 6.2479, 6.2436
+     lambda formula 2.5987; PV at x=1e-4,1e-6,1e-8,1e-10: 2.5988, 2.5987, 2.5987, 2.5987
+   example r=1.5,beta=0.5,k0=0.3: Gamma=0.221; delta=0.9: Gd=0.068, lambda=0.073, PV check 0.073, theta_eff (theta_0=0) = -0.052 = -(n-1)Gd/(n-Gd) = -0.052
+   example r=1.5,beta=0.5,k0=0.3: Gamma=0.221; delta=0.99: Gd=0.184, lambda=0.225, PV check 0.225, theta_eff (theta_0=0) = -0.144 = -(n-1)Gd/(n-Gd) = -0.144
+   example r=1.5,beta=0.5,k0=0.3: Gamma=0.221; delta=0.995: Gd=0.200, lambda=0.251, PV check 0.251, theta_eff (theta_0=0) = -0.158 = -(n-1)Gd/(n-Gd) = -0.158
+(C) [identity: first order by construction at the symmetric point] two-period contest (first-period payoffs become second-period capacity): direct equilibrium vs e(theta_eff)
+   {}: direct e*=0.187829, formula e(theta_eff)=0.187829, lambda=0.2263, theta_eff=-0.1311
+   {'n': 4, 'Om2': 4.0}: direct e*=0.161860, formula e(theta_eff)=0.161860, lambda=0.3467, theta_eff=-0.2064
+   {'n': 2, 'r1': 0.8, 'K0': 1.0, 'Om2': 1.0}: direct e*=0.179697, formula e(theta_eff)=0.179697, lambda=0.3051, theta_eff=-0.1324
+   {'dl': 0.5}: direct e*=0.180746, formula e(theta_eff)=0.180746, lambda=0.1253, theta_eff=-0.0771
+   {'kap': 0.0}: direct e*=0.170940, formula e(theta_eff)=0.170940, lambda=0.0000, theta_eff=-0.0000
+(C') [identity] held self-model theta0: direct equilibrium vs e(theta_eff), lambda' = lambda (n-1-theta0)/(n-1)
+   theta0=-0.5: direct e*=0.254845, formula 0.254845, theta_eff=-0.5815
+   theta0=0.5: direct e*=0.130360, formula 0.130360, theta_eff=0.3512
+   theta0=1.0: direct e*=0.080774, formula 0.080774, theta_eff=0.8661
+   theta0=1.9: direct e*=0.007153, formula 0.007153, theta_eff=1.8800
+
+=== CI [independent] keys: blind, nested
+    Common constraints: unequal incidence; evasion; enforcement funded by compliers (tipping share); common liability; a safeguard with negative net cost
+(a) incidence: a rule applying to all with costs (0.3, 0.1) changes relative growth; equal costs do not
+   equal cost 0.2 each: [0.0, 0.0]
+   costs (0.3, 0.1):    [-0.1, 0.1]
+   a universal cap e<=0.4 on loads (1, .6, .2) with private value 1 per unit costs (0.6, 0.2, 0): ranking reverses
+(b) evasion: compliers pay kappa, evaders pay expected sanction q*F; evader share after T=2000
+   kappa=0.3, q=0.5, F=0.5: evasion gain kappa-qF=+0.05; evader share 1.000
+   kappa=0.3, q=0.5, F=0.7: evasion gain kappa-qF=-0.05; evader share 0.000
+   kappa=0.3, q=0.9, F=0.3: evasion gain kappa-qF=+0.03; evader share 1.000
+   kappa=0.3, q=0.2, F=2.0: evasion gain kappa-qF=-0.10; evader share 0.000
+(c) enforcement that depends on compliance (detection funded by compliers, or captured by evaders): q(x)=q0*(1-x_ev)
+   initial evader share 0.05: final evader share 0.000 (tipping share where q0(1-x)F=kappa: x=0.375)
+   initial evader share 0.2: final evader share 0.000 (tipping share where q0(1-x)F=kappa: x=0.375)
+   initial evader share 0.4: final evader share 1.000 (tipping share where q0(1-x)F=kappa: x=0.375)
+   initial evader share 0.6: final evader share 1.000 (tipping share where q0(1-x)F=kappa: x=0.375)
+(d) a common liability tau on load is not a common term: pi_k - pi_l = (nu - tau)(e_k - e_l)
+   tau=0.0: share of the high-load carrier after T=200: 1.000
+   tau=0.5: share of the high-load carrier after T=200: 1.000
+   tau=1.5: share of the high-load carrier after T=200: 0.000
+(e) premise A_tau: a unilateral safeguard with negative net private cost is selected FOR
+   share of the developer with the safeguard after T=200: 1.000
+   safeguard whose benefit is common (A_tau holds): adopter share after T=400: 0.000
+
+--- CI (v6.2 extension) [independent] keys: blind, nested, require (R8); unravel (S9)
+    Lemma 3.3(3) with a sanction that falls as evaders spread; unequal compliance costs; the matched unsafe variant; a tax paid from a lead; the participation threshold across types
+(f) f4(A): compliers pay c=0.3; evaders face s(x) falling in the evading share x
+   s(x)=0.48(1-x): s(0)=0.48>c>s(1)=0: x0=0.05->0.000; x0=0.5->1.000; x0=0.95->1.000  -> bistable, tipping share 0.375
+   s(x)=0.24(1-x): s(0)=0.24<c: x0=0.05->1.000; x0=0.5->1.000; x0=0.95->1.000  -> one global attractor
+   s(x)=0.5+0.5(1-x): s(1)=0.5>c: x0=0.05->0.000; x0=0.5->0.000; x0=0.95->0.000  -> one global attractor
+   s(x)=0.6-0.4x: s(0)=0.6>c>s(1)=0.2: x0=0.05->0.000; x0=0.5->0.000; x0=0.95->1.000  -> bistable, tipping share 0.750
+  [ok] f4(A): s(0) > c > s(1): bistable, tipping at s(x)=c (0.375, 0.750); s(0) < c: evasion global; s(1) > c: compliance global
+(g) m05(A) and m6(1): the same three regimes by a different integrator (x' = x(1-x)(c - s(x)))
+   s = .5 + .5(1-x): 0.02->0.000, 0.3->0.000, 0.5->0.000, 0.7->0.000, 0.98->0.000
+   s = .24(1-x): 0.02->1.000, 0.3->1.000, 0.5->1.000, 0.7->1.000, 0.98->1.000
+   s = .48(1-x): 0.02->0.000, 0.3->0.000, 0.5->1.000, 0.7->1.000, 0.98->1.000
+   s = 1.2(1-x): 0.02->0.000, 0.3->0.000, 0.5->0.000, 0.7->0.000, 0.98->1.000
+   m6(1): s(x) = q0 (1-x) F with s(0) = 0.48: x0=0.05: 0.000; x0=0.5: 1.000; x0=0.95: 1.000
+   m6(1): s(x) = q0 (1-x) F with s(0) = 1.20: x0=0.05: 0.000; x0=0.5: 0.000; x0=0.95: 1.000
+   m6(1): s(x) = q0 (1-x) F with s(0) = 0.24: x0=0.05: 1.000; x0=0.5: 1.000; x0=0.95: 1.000
+  [ok] m05(A): the tipping share is where s(x) = c; on either side the population goes to compliance or evasion
+(h) m05(B): two developer types, unequal compliance costs; replicator on (A comply, A evade, B comply, B evade)
+   costs (0.1,0.2) sanctions (1.0,1.0): compliant share 1.000000; among compliers A:B = 1.0000:0.0000
+   costs (0.1,0.2) sanctions (0.15,0.25): compliant share 1.000000; among compliers A:B = 1.0000:0.0000
+   costs (0.1,0.2) sanctions (1.0,0.15): compliant share 1.000000; among compliers A:B = 1.0000:0.0000
+   costs (0.1,0.2) sanctions (1.0,0.05): compliant share 0.000000; among compliers A:B = 0.0000:0.0000
+  [ok] m05(B): every s_k > c_k -> compliance; s_B < c_B can still lose to A's compliers (0.15 < 0.2: evasion vanishes) or win (0.05: evasion takes over): 's_k >= c_k for every type' is sufficient, not necessary (finding: D2-fable's 'iff' holds within a type)
+(i) f4(C) and Codex 5: unequal incidence among compliers; the matched variant; zero tax
+   unequal compliance costs (.1 vs .2), sanction 1: shares at t=20 ['0.880770', '0.000000', '0.119230', '0.000000']; compliant share 0.999999975
+   equal incidence: compliers' relative shares 1.000000 (started 1.0); unmatched (baseline 2, tax .1 vs baseline 1): safeguarded 1.000000; matched (2-.1 vs 2): safeguarded 2.042e-09 at t=200; zero tax: (0.300, 0.700)
+   Codex 5 (closed-form replicator at t=20): shares ['8.808e-01', '1.341e-08', '1.192e-01', '1.341e-08']; compliant share 0.999999973
+  [ok] f4(C)/Codex 5: unequal costs re-sort compliers without letting evasion back in; equal incidence preserves shares; a matched unsafe variant eliminates the safeguarded one, an unmatched one does not
+(j) m05(D): the alignment tax under selection: matched twin; a lead that pays the tax
+   safeguarded (2, tax .1) vs unsafe (1): 1.0000; with its matched twin: safeguarded 1.38e-87, twin 1.0000; tax .01 from a lead .02: 1.0000; from .005: 0.0000
+  [ok] m05(D): a tax alone does not eliminate a safeguarded developer with a larger advantage; its matched twin does; a lead pays the tax while it lasts
+(k) unravel (Remark S9.1) across types: type 1 c=0.3, s=0.48(1-x) (tips at 0.375); type 2 c=0.3, s=0.6-0.4x (tips at 0.75)
+   masses (0.5, 0.5): 400/400 random states with outside share below 0.375 return to full participation; from x = 0.38 held by type 1: type shares outside (1.0000, 0.0000), outside share 0.5000
+   masses (0.8, 0.2): 400/400 random states with outside share below 0.375 return to full participation; from x = 0.38 held by type 1: type shares outside (1.0000, 1.0000), outside share 1.0000
+   adding a type of mass 0.1 with s=0.24(1-x) < c at every x: from 1% outside in each type, outside shares (0.0000, 0.0000, 1.0000), outside share 0.1000
+  [ok] unravel across types: below min_k x_k^dagger (0.375) every state returns (800/800); just above it type 1 leaves, settling at 0.5 when its mass is 0.5 and carrying type 2 out when it is 0.8; a type with s_k(0) <= c_k leaves from every state, so full participation is impossible
+
+=== TC [identity] keys: twochan
+    Two-channel accounting identity and its consequences
+identity on 4,000 random games: failures 0
+weight on winning maps to theta = -lam(n-1)/(n+lam(n-1)): failures 0
+theta=-1: rebated levy enters as -0.2000 (formula -0.2000); renege gain +0.5000 (formula +0.5000)
+theta=0: rebated levy enters as -0.1500 (formula -0.1500); renege gain +0.3750 (formula +0.3750)
+theta=1: rebated levy enters as -0.1000 (formula -0.1000); renege gain +0.2500 (formula +0.2500)
+theta=3: rebated levy enters as +0.0000 (formula -0.0000); renege gain +0.0000 (formula +0.0000)
+theta=-1: host action value +0.5000 (formula g-(1+th)H/n +0.5000); spite value +0.2000, threshold -0.333
+theta=0: host action value +0.1000 (formula g-(1+th)H/n +0.1000); spite value -0.1000, threshold -0.333
+theta=1: host action value -0.3000 (formula g-(1+th)H/n -0.3000); spite value -0.4000, threshold -0.333
+
+=== TH [identity] keys: twochan
+    Identifying theta from two perturbations (psi = 1; see SM(3) for psi < 1)
+theta=-1.00: ratio -0.0000, recovered -1.0000
+theta=-0.50: ratio 0.5714, recovered -0.5000
+theta=+0.00: ratio 1.3333, recovered -0.0000
+theta=+0.40: ratio 2.1538, recovered +0.4000
+theta=+1.00: ratio 4.0000, recovered +1.0000
+theta=+2.00: ratio 12.0000, recovered +2.0000
+theta=+2.90: ratio 156.0001, recovered +2.9000
+
+=== SM [independent] keys: enough, wingives, club, twochan, fallback, faithful, delegatelock, topology, compound
+    Smaller repairs: renege denominators; blocs; theta identification with perceived share psi; coupling of paths; cost exponents; one-or-both delegation; correlated errors; point of enough; caps; growth variant
+(1) Prop 5.10(3): renege gain when the promised share beta*Om goes to the n-1 others vs is split among all n
+   theta=-1: to n-1 others 0.4000 (beta Om (n-1-th)/(n-1) = 0.4000); among all n 0.3000 (beta Om (n-1-th)/n = 0.3000)
+   theta=0: to n-1 others 0.3000 (beta Om (n-1-th)/(n-1) = 0.3000); among all n 0.2250 (beta Om (n-1-th)/n = 0.2250)
+   theta=1: to n-1 others 0.2000 (beta Om (n-1-th)/(n-1) = 0.2000); among all n 0.1500 (beta Om (n-1-th)/n = 0.1500)
+   theta=2: to n-1 others 0.1000 (beta Om (n-1-th)/(n-1) = 0.1000); among all n 0.0750 (beta Om (n-1-th)/n = 0.0750)
+(2) Prop 3.11(2): k blocs of s members (r=1); bloc chooses members' efforts to maximize members' summed payoff
+   k=2, s=2: bloc intensity 0.1563; original game n=k with l: 0.1923; with s*l: 0.1562
+   k=3, s=2: bloc intensity 0.1389; original game n=k with l: 0.1709; with s*l: 0.1389
+   k=2, s=3: bloc intensity 0.1316; original game n=k with l: 0.1923; with s*l: 0.1316
+   unequal blocs (3 members vs 1), equal total effort, r=0.5: weight ratio of the 3-bloc 1.732 (1 = as one contestant)
+   unequal blocs (3 members vs 1), equal total effort, r=1.0: weight ratio of the 3-bloc 1.000 (1 = as one contestant)
+   unequal blocs (3 members vs 1), equal total effort, r=1.5: weight ratio of the 3-bloc 0.577 (1 = as one contestant)
+(3) theta identification when only a share psi of the shared loss is perceived
+   theta=0.0, psi=1.0: ratio 1.3333 (n(1+th)psi/(n-1-th) = 1.3333); naive estimate -0.0000
+   theta=0.0, psi=0.5: ratio 0.6667 (n(1+th)psi/(n-1-th) = 0.6667); naive estimate -0.4286
+   theta=0.4, psi=1.0: ratio 2.1538 (n(1+th)psi/(n-1-th) = 2.1538); naive estimate +0.4000
+   theta=0.4, psi=0.5: ratio 1.0769 (n(1+th)psi/(n-1-th) = 1.0769); naive estimate -0.1515
+   theta=1.0, psi=1.0: ratio 4.0000 (n(1+th)psi/(n-1-th) = 4.0000); naive estimate +1.0000
+   theta=1.0, psi=0.5: ratio 2.0000 (n(1+th)psi/(n-1-th) = 2.0000); naive estimate +0.3333
+(4) Lemma 7.11: coupling. World state w_t in {good,bad} (Markov); A may dissolve (more likely in bad states).
+   H=10: S^A=0.8044 >= S^C=0.7070: True
+   H=30: S^A=0.4351 >= S^C=0.3242: True
+   H=100: S^A=0.0337 >= S^C=0.0212: True
+   conditional on dissolving at t=1: S^A(30|tau=1)=0.2909 vs S^C(30)=0.3242 -> the conditional step fails, the unconditional claim holds
+(5) Prop 6.1(5): theta*(eps) with b,d,c scaling as eps^bb, eps^bd, eps^bc (n=4, b=1, d=0.2, c=0.3)
+   (beta_b,beta_d,beta_c)=(0,0,0): theta* at eps=1e2,1e4,1e6: 1.494, 1.500, 1.500
+   (beta_b,beta_d,beta_c)=(1,1,0): theta* at eps=1e2,1e4,1e6: 1.500, 1.500, 1.500
+   (beta_b,beta_d,beta_c)=(0,0,1): theta* at eps=1e2,1e4,1e6: 0.938, 0.937, 0.938
+   (beta_b,beta_d,beta_c)=(0,0.5,0): theta* at eps=1e2,1e4,1e6: -0.430, -0.934, -0.993
+   (beta_b,beta_d,beta_c)=(0.5,0,0): theta* at eps=1e2,1e4,1e6: 2.773, 2.976, 2.998
+   (beta_b,beta_d,beta_c)=(1,0,3): theta* at eps=1e2,1e4,1e6: -86.487, -8996.460, -899996.460
+   (beta_b,beta_d,beta_c)=(1,0,2): theta* at eps=1e2,1e4,1e6: 2.082, 2.100, 2.100
+   (beta_b,beta_d,beta_c)=(0,0,1.5): theta* at eps=1e2,1e4,1e6: -4.125, -54.750, -561.000
+   alignment-review check: c fixed, b,d fixed, eps=10: 1.444; c also scaling with eps: 0.937
+(6) Prop 6.4(2): at least one of all/none delegating is an equilibrium
+   draws 100000: neither 0, both 4068
+(7) Prop 6.9: row sums do not certify independent errors. k=6 checks of reliability f=0.9 each, R=0 (no shared funding),
+    but a share rho of hazards sits in a blind spot common to all checks (shared training data):
+   rho=0.0: catch rate 1.0000 ((1-rho)(1-0.1^6) = 1.0000)
+   rho=0.05: catch rate 0.9498 ((1-rho)(1-0.1^6) = 0.9500)
+   rho=0.3: catch rate 0.7001 ((1-rho)(1-0.1^6) = 0.7000)
+(8) Prop 8.11(3): satiation. Symmetric Tullock intensity, n=4, r=1, c=1, prize Om; objective w*u(Om) - c e
+   linear u=Om: intensity at Om=1,10,100: 0.1875, 1.8750, 18.7500
+   satiated u=1-exp(-Om): intensity at Om=1,10,100: 0.1185, 0.1875, 0.1875
+(9) Remark 5.3(2) caps: local vs global. n=5, r=1.5, kappa=0.5, Om=1, delta=0.05 (K*=2), cap 1.5, laggard starts at 0.1
+   beta=0.0, k0=0.0: final [0.0, 1.5, 1.5, 1.5, 1.5]; exact global condition min_K[inflow-delta K]=-0.0041 (exclusion basin); sufficient beta*kappa*Om/n+k0>=delta*cap: False
+   beta=0.02, k0=0.0: final [0.059, 1.5, 1.5, 1.5, 1.5]; exact global condition min_K[inflow-delta K]=-0.0023 (exclusion basin); sufficient beta*kappa*Om/n+k0>=delta*cap: False
+   beta=0.2, k0=0.0: final [1.5, 1.5, 1.5, 1.5, 1.5]; exact global condition min_K[inflow-delta K]=+0.0133 (protects); sufficient beta*kappa*Om/n+k0>=delta*cap: False
+   beta=0.0, k0=0.002: final [0.06, 1.5, 1.5, 1.5, 1.5]; exact global condition min_K[inflow-delta K]=-0.0021 (exclusion basin); sufficient beta*kappa*Om/n+k0>=delta*cap: False
+   beta=0.0, k0=0.03: final [1.5, 1.5, 1.5, 1.5, 1.5]; exact global condition min_K[inflow-delta K]=+0.0259 (protects); sufficient beta*kappa*Om/n+k0>=delta*cap: False
+   beta=0.0, k0=0.075: final [1.5, 1.5, 1.5, 1.5, 1.5]; exact global condition min_K[inflow-delta K]=+0.0709 (protects); sufficient beta*kappa*Om/n+k0>=delta*cap: True
+(10) growth variant (no depreciation, diffusion df): relative-share multiplier at total capacity S
+   S=10,rho=0.5,beta=0,r=1.5,df=0.01,k0=0: multiplier 1.01429 -> unstable; rho Om((1-beta)r-1) > df S + n k0: True
+   S=10,rho=0.5,beta=0,r=1.5,df=0.05,k0=0: multiplier 0.97619 -> stable; rho Om((1-beta)r-1) > df S + n k0: False
+   S=10,rho=0.5,beta=0.2,r=1.5,df=0.0,k0=0.05: multiplier 0.99065 -> stable; rho Om((1-beta)r-1) > df S + n k0: False
+   S=10,rho=0.5,beta=0,r=1.5,df=0.0,k0=0.1: multiplier 0.98624 -> stable; rho Om((1-beta)r-1) > df S + n k0: False
+
+--- SM (v6.2 extension) [independent; (13) derived; in (15) the branch slope derived; (16) derived] keys: opaquecorr, homeostasis, topology, fallback; thrrep (S3)
+    Proposition 6.8: summable vs not; 6.11(3) at every t; 6.9 topology numbers; Lemma 8.2 coupling by exact DP; S6.2(2) two roots; S3.1 reversion cutoffs
+(11) f7(B): printed example (c_b=.99 fixed): survival to 200 0.473 from t=0 (0.630 from t=1), to 20,000 1.18e-09; Fable's summable example c_b,t = 1-2^-(t+1): 0.5101 at 200, 0.5101 at 20,000
+     m09: Opus's summable example c_b,t = 1-2^-t from t=1: 0.6888 at 200, 0.6888 at 20,000 (without the corrector 7.1e-10 at 200)
+  [ok] 6.8: V6.1's example is not summable (0.473 from t=0, 0.630 from t=1, 1.2e-9 by 20,000); both memos' replacement examples are (0.5101 Fable, 0.6888 Opus; different examples)
+(12) f7(C) and m09: Proposition 6.11(3), n=3, L_e=L_c=1, psi0=0, s_t=2^(t+1), dpsi_t=2^-(t+1) (shifted by one period)
+   t=0: objective at iota=1 -1.5417, best on grid -1.5417; own marginal gain +0.0231; realized hazard n dpsi = 1.5000, exact 1-(1-dpsi)^3 = 0.8750
+   t=1: objective at iota=1 -1.2448, best on grid -1.2448; own marginal gain +0.0372; realized hazard n dpsi = 0.7500, exact 1-(1-dpsi)^3 = 0.5781
+   t=2: objective at iota=1 -0.9967, best on grid -0.9967; own marginal gain +0.1018; realized hazard n dpsi = 0.3750, exact 1-(1-dpsi)^3 = 0.3301
+   t=3: objective at iota=1 -0.8427, best on grid -0.8427; own marginal gain +0.1542; realized hazard n dpsi = 0.1875, exact 1-(1-dpsi)^3 = 0.1760
+   t=4: objective at iota=1 -0.7575, best on grid -0.7575; own marginal gain +0.1862; realized hazard n dpsi = 0.0938, exact 1-(1-dpsi)^3 = 0.0909
+   t=5: objective at iota=1 -0.7128, best on grid -0.7128; own marginal gain +0.2037; realized hazard n dpsi = 0.0469, exact 1-(1-dpsi)^3 = 0.0461
+   t=6: objective at iota=1 -0.6899, best on grid -0.6899; own marginal gain +0.2128; realized hazard n dpsi = 0.0234, exact 1-(1-dpsi)^3 = 0.0233
+   t=7: objective at iota=1 -0.6783, best on grid -0.6783; own marginal gain +0.2175; realized hazard n dpsi = 0.0117, exact 1-(1-dpsi)^3 = 0.0117
+   full delegation a best response on the grid at t=0..40: True; realized risk from t=4: union bound 0.1875 = 3/16; sum of hazards 0.1836; exact 1-prod 0.1726; survival from the start 0.0241
+  [ok] 6.11(3), shifted: full delegation is an equilibrium at every t (marginal gain +0.023, +0.037, +0.102, +0.154, +0.186, ...), every hazard below one, survival from the start 0.0241; realized risk from t=4 exactly 0.1726 (sum of hazards 0.1836, union bound 3/16)
+(13) [derived] 6.9 topology (f=.9, k=6): serial 0.531; independent across the gap 0.989; with common cause .05 0.940; layered m=2 0.941, m=3 0.994; blind spot catch rho_cc=0: 1.000, rho_cc=0.05: 0.950, rho_cc=0.3: 0.700
+(14) s5_misc (Math-Opus reviewer): Lemma 8.2 by exact DP over (world, active, A survived, C survived) with a common uniform
+   H=10: S^A=0.8840 >= S^C=0.8126: True
+   H=30: S^A=0.5507 >= S^C=0.4610: True
+   H=100: S^A=0.0770 >= S^C=0.0615: True
+  [ok] Lemma 8.2: with dissolution more likely in the bad state, the coupled arrangement still survives at least as well at H = 10, 30, 100
+(15) Proposition S6.2(2) (homeostasis): n=2, s=100, L_e=0.5, L_c=1, psi0=0.01; symmetric equilibria by grid best response
+   Delta psi=0.9: interior roots iota = 0.152949, 0.937051; global best responses: 0.152949, 0.937051; corner iota=1 an equilibrium: True; realized hazard 0.2735, 0.9785; max residual of (x+b_s)(1-psi0-x)^(n-1) = K_h: 2.8e-17
+   [derived] branch 1 (x = 0.1377): dx/dDelta psi by finite difference -0.01208, by S6.2(2) -0.01208
+   [derived] branch 2 (x = 0.8433): dx/dDelta psi by finite difference +0.00208, by S6.2(2) +0.00208
+  [ok] S6.2(2): two interior roots, iota = 0.153 and 0.937, both global best responses, with the corner also an equilibrium; the branch slope formula holds and its sign differs between branches
+(16) Remark S3.1 (thrrep): Upsilon=3, n=4; reversion cutoff delta by bisection on discounted streams vs (w-U/n)/(w-U/n+U-1)
+   lambda=0: R=3.0000, T=3.1250, P=2.0000; depletion dominant in the stage game: True; cutoff by bisection 0.1111, formula 0.1111
+   lambda=2: R=3.0000, T=3.8750, P=2.0000; depletion dominant in the stage game: True; cutoff by bisection 0.4667, formula 0.4667
+   lambda=50: R=3.0000, T=21.8750, P=2.0000; depletion dominant in the stage game: True; cutoff by bisection 0.9497, formula 0.9497
+  [ok] thrrep: joint restraint is sustained by reversion iff delta >= 0.11, 0.47, 0.95 at lambda = 0, 2, 50 (Upsilon=3, n=4); reversion to depletion is credible (dominant)
+
+=== CB [independent] keys: club
+    Clubs over-produce the harm they do not bear
+club intensity 5.165, system 0.372; harm to non-contestants 30.99 vs 2.23
+
+=== PR [independent] keys: onegroup
+    Price decomposition under five partitions (global and local benefit); biased transmission; reversible and irreversible failure
+(a) global benefit (b=0.3, cost c=0.05): total selection Cov(w,z) = -0.01230
+     partition          one group: between +0.00000  within -0.01230  (sum -0.01230)
+     partition           30 units: between -0.00194  within -0.01036  (sum -0.01230)
+     partition   5 blocs of units: between -0.00002  within -0.01228  (sum -0.01230)
+     partition          random 50: between -0.00113  within -0.01117  (sum -0.01230)
+     partition        individuals: between -0.01230  within +0.00000  (sum -0.01230)
+(b) local benefit (b=0.3, cost c=0.05): total selection Cov(w,z) = -0.00065
+     partition          one group: between +0.00000  within -0.00065  (sum -0.00065)
+     partition           30 units: between +0.00971  within -0.01036  (sum -0.00065)
+     partition   5 blocs of units: between +0.00012  within -0.00078  (sum -0.00065)
+     partition          random 50: between -0.00071  within +0.00006  (sum -0.00065)
+     partition        individuals: between -0.00065  within +0.00000  (sum -0.00065)
+   -> with a global benefit the between-group term is <=0 under every partition (the benefit is a common term at every level);
+      with a local benefit, between-unit selection can favour the trait under a partition that matches the benefit's reach.
+(c) biased transmission in one population: dz/dt = -c z(1-z) + mu (1-z); stable z*=mu/c for mu<c
+   mu=0.0: long-run frequency 0.000 (mu/c=0.000)
+   mu=0.02: long-run frequency 0.400 (mu/c=0.400)
+   mu=0.04: long-run frequency 0.800 (mu/c=0.800)
+   mu=0.06: long-run frequency 1.000 (mu/c=1.000)
+(d) global-benefit rule: probability of an irreversible loss within 400 periods (h=0.03, h_r=0.003, piL=0.5)
+   irreversible share  0.0: learning from failure 0.000 (pre-adoption loss, infinite horizon: s/(s+(1-s)piL)=0.000); anticipation 0.000
+   irreversible share 0.05: learning from failure 0.138 (pre-adoption loss, infinite horizon: s/(s+(1-s)piL)=0.095); anticipation 0.057
+   irreversible share  0.2: learning from failure 0.460 (pre-adoption loss, infinite horizon: s/(s+(1-s)piL)=0.333); anticipation 0.217
+   irreversible share  1.0: learning from failure 1.000 (pre-adoption loss, infinite horizon: s/(s+(1-s)piL)=1.000); anticipation 0.695
+
+--- PR (v6.2 extension) [independent] keys: onegroup
+    Lemma 3.10 under nonlinear payoff-monotone fitness: total and within-group terms <= 0 always; the between-group term only under affine fitness
+(e) f4(B): 600 random populations, random partitions, four families of increasing fitness maps
+   total > 0: 0/600; any within-group term > 0: 0/600; between > 0: 13/600 (under affine fitness: 0)
+  [ok] f4(B): total and within-group terms are never positive (0/600); the between-group term is positive in 13/600, never under affine fitness
+(f) Codex 8: groups (0,1),(0.4,0.4), w=e^(-5z): between +0.00920, within -0.12416, total -0.11496
+  [ok] Codex 8: a nonlinear monotone fitness makes the between-group term positive (+0.0092) while total selection still opposes the trait (-0.1150)
+(g) m05(C): six increasing transforms x 3,000 random populations, size-weighted Price terms
+   affine 1+2pi                : total>0 in 0/3000; within>0 in 0/3000; between>0 in 0/3000 (largest between 0.00e+00)
+   exp(5 pi)                   : total>0 in 0/3000; within>0 in 0/3000; between>0 in 33/3000 (largest between 2.03e-01)
+   log(.05+pi)                 : total>0 in 0/3000; within>0 in 0/3000; between>0 in 3/3000 (largest between 4.50e-07)
+   pi^3 (on pi>0)              : total>0 in 0/3000; within>0 in 0/3000; between>0 in 10/3000 (largest between 2.46e-05)
+   logistic 20(pi-1)           : total>0 in 0/3000; within>0 in 0/3000; between>0 in 121/3000 (largest between 1.29e-03)
+   step-like tanh(50(pi-.95))  : total>0 in 0/3000; within>0 in 0/3000; between>0 in 346/3000 (largest between 4.53e-03)
+   Opus: log(1.05+pi), payoff -z: total -0.363691, between +0.016874, within -0.380565
+   Codex: exp(-5z): total -0.114957, between +0.009201, within -0.124158
+  [ok] m05(C): the decomposition is an identity; total and within terms <= 0 under all six transforms (18,000 populations); between > 0 occurs only for non-affine transforms
+(h) s5_misc (Math-Opus reviewer): two groups, global benefit, concave fitness maps
+   linear: between-group Cov(w_g,z_g) = -0.0025; total Cov(w,z) = -0.1275
+   concave 1-exp(-8(x+1)): between-group Cov(w_g,z_g) = +0.0001; total Cov(w,z) = -0.0014
+   concave log(1.05+x): between-group Cov(w_g,z_g) = +0.0005; total Cov(w,z) = -0.1221
+  [ok] s5_misc: linear fitness gives a negative between term; concave maps a positive one; total negative in all three
+
+=== CS [independent] keys: influence, corrrate
+    Cost structure of conversion capacity: size threshold, concentration moment, splitting factor, rate law for three size elasticities, splitting delay, fixed cost
+(a) size threshold of Proposition 4.2(2): smallest share with q*>0 (f=0.05, d=1)
+   linear part per carrier (sf=0): threshold 0.22361; (f/(chi Y))^(1/(2-sf)) = 0.22361
+   linear part per decision (sf=1): threshold 0.05000; (f/(chi Y))^(1/(2-sf)) = 0.05000
+(b) concentration measure and splitting factor (f=0, eta=1): cultivated conversion sum_k p_k q*_k relative to monopoly
+   s=0: two equal carriers 0.2500 (2*(1/2)^3.0=0.2500); shares (.5,.3,.2): 0.1600 (sum p^3.0 = 0.1600); HHI=0.3800, 3rd moment=0.1600
+      split into k=2: factor 4.000 (k^((2-s)/eta) = 4.000)
+      split into k=10: factor 100.000 (k^((2-s)/eta) = 100.000)
+   s=0.5: two equal carriers 0.3536 (2*(1/2)^2.5=0.3536); shares (.5,.3,.2): 0.2440 (sum p^2.5 = 0.2440); HHI=0.3800, 3rd moment=0.1600
+      split into k=2: factor 2.828 (k^((2-s)/eta) = 2.828)
+      split into k=10: factor 31.623 (k^((2-s)/eta) = 31.623)
+   s=1: two equal carriers 0.5000 (2*(1/2)^2.0=0.5000); shares (.5,.3,.2): 0.3800 (sum p^2.0 = 0.3800); HHI=0.3800, 3rd moment=0.1600
+      split into k=2: factor 2.000 (k^((2-s)/eta) = 2.000)
+      split into k=10: factor 10.000 (k^((2-s)/eta) = 10.000)
+(c) rate law with gam(t)=e^{-g t}, d(t)=d0 e^{alpha t}, dominant carrier share 0.6 (A=0.3, aE*sum_j bhat_ev,j*ybar_j=1, so aE*Bhat=p=0.6; cE=1, d0=2, g=0.2, eta=1, f=0)
+   s=0, alpha=0.09 (g/(1+eta)=0.1): s_E at t=0,50,100,150,200: 0.204, 0.148, 0.399, 1.08, 2.95
+   s=0, alpha=0.11 (g/(1+eta)=0.1): s_E at t=0,50,100,150,200: 0.204, 0.0205, 0.00731, 0.00269, 0.000989
+   s=0.5, alpha=0.09 (g/(1+eta)=0.1): s_E at t=0,50,100,150,200: 0.22, 0.191, 0.515, 1.4, 3.81
+   s=0.5, alpha=0.11 (g/(1+eta)=0.1): s_E at t=0,50,100,150,200: 0.22, 0.0263, 0.00944, 0.00347, 0.00128
+   s=1, alpha=0.09 (g/(1+eta)=0.1): s_E at t=0,50,100,150,200: 0.24, 0.246, 0.665, 1.81, 4.91
+   s=1, alpha=0.11 (g/(1+eta)=0.1): s_E at t=0,50,100,150,200: 0.24, 0.0337, 0.0122, 0.00448, 0.00165
+(d) splitting a monopoly into k=10 parts, alpha=0 (f=0): delay in reaching s_E=1 vs (2-s) ln k/(g-(1+eta)alpha)
+   s=0: monopoly crosses at 6.15, ten parts at 29.15: delay 23.00 vs 23.03
+   s=1: monopoly crosses at 6.15, ten parts at 17.65: delay 11.50 vs 11.51
+(e) the fixed part: f>0 constant -> splitting below the size threshold is permanent; f falling at g_f -> delayed
+   f0=0.3, g_f=0.0: monopoly crosses at 10.75; ten parts cross at inf
+   f0=0.3, g_f=0.05: monopoly crosses at 8.60; ten parts cross at 81.90; onset delay of cultivation by (2-sf) ln k/g_f = 92.1
+
+--- CS (v6.2 extension) [independent] keys: influence, corrrate, costq
+    Section 4 at eta != 1 and fractional size elasticities; Y_hat scaling; the rate law at eta = 0.5 and 2
+(f) m4(a): size threshold exponent 1/(2-xf), f=0.05 (q* by grid maximization, not the first-order condition)
+   xf=0.0: threshold 0.22361 vs (f/(chi Y))^(1/(2-xf)) = 0.22361
+   xf=0.3: threshold 0.17167 vs (f/(chi Y))^(1/(2-xf)) = 0.17167
+   xf=0.7: threshold 0.09982 vs (f/(chi Y))^(1/(2-xf)) = 0.09982
+   xf=1.0: threshold 0.05000 vs (f/(chi Y))^(1/(2-xf)) = 0.05000
+(g) m4(b): exponents of q*, p q* and spending in p (f=0), log-log regression over p in [0.05, 1]
+   eta=0.5, xv=0.0: q* ~ p^4.000 (formula 4.000); p q* ~ p^5.000; spending ~ p^6.000 (formula 6.000)
+   eta=0.5, xv=0.3: q* ~ p^3.400 (formula 3.400); p q* ~ p^4.400; spending ~ p^5.400 (formula 5.400)
+   eta=0.5, xv=1.0: q* ~ p^2.000 (formula 2.000); p q* ~ p^3.000; spending ~ p^4.000 (formula 4.000)
+   eta=1.0, xv=0.0: q* ~ p^2.000 (formula 2.000); p q* ~ p^3.000; spending ~ p^4.000 (formula 4.000)
+   eta=1.0, xv=0.3: q* ~ p^1.700 (formula 1.700); p q* ~ p^2.700; spending ~ p^3.700 (formula 3.700)
+   eta=1.0, xv=1.0: q* ~ p^1.000 (formula 1.000); p q* ~ p^2.000; spending ~ p^3.000 (formula 3.000)
+   eta=2.0, xv=0.0: q* ~ p^1.000 (formula 1.000); p q* ~ p^2.000; spending ~ p^3.000 (formula 3.000)
+   eta=2.0, xv=0.3: q* ~ p^0.850 (formula 0.850); p q* ~ p^1.850; spending ~ p^2.850 (formula 2.850)
+   eta=2.0, xv=1.0: q* ~ p^0.500 (formula 0.500); p q* ~ p^1.500; spending ~ p^2.500 (formula 2.500)
+(h) m4(c): splitting factor k^((2-xv)/eta) (f=0)
+   eta=0.5, xv=0.0: k=2: 16.000 vs 16.000; k=5: 625.000 vs 625.000
+   eta=0.5, xv=0.5: k=2: 8.000 vs 8.000; k=5: 125.000 vs 125.000
+   eta=0.5, xv=1.0: k=2: 4.000 vs 4.000; k=5: 25.000 vs 25.000
+   eta=2.0, xv=0.0: k=2: 2.000 vs 2.000; k=5: 5.000 vs 5.000
+   eta=2.0, xv=0.5: k=2: 1.682 vs 1.682; k=5: 3.344 vs 3.344
+   eta=2.0, xv=1.0: k=2: 1.414 vs 1.414; k=5: 2.236 vs 2.236
+(i) m4(d): rate law at eta = 0.5 and 2 (threshold alpha_ctl/(1+eta)); growth rate of the cultivated term (g-(1+eta)alpha)/eta
+   eta=0.5, alpha=0.1133 (below 0.1333): G at t=0,50,100,150: 0.166, 0.326, 6.54, 131; growth rate +0.0600 vs +0.0600
+   eta=0.5, alpha=0.1533 (above 0.1333): G at t=0,50,100,150: 0.166, 0.000877, 4.02e-05, 2e-06; growth rate -0.0600 vs -0.0600
+   eta=2.0, alpha=0.0467 (below 0.0667): G at t=0,50,100,150: 0.295, 0.663, 2.91, 13; growth rate +0.0300 vs +0.0300
+   eta=2.0, alpha=0.0867 (above 0.0667): G at t=0,50,100,150: 0.295, 0.0342, 0.00723, 0.00161; growth rate -0.0300 vs -0.0300
+(j) m4(e): signs at eta=1.7, xv=0.4, p=0.5: dq*/dgam = -0.3064, dq*/dd = -0.3064, dq*/dchi = +0.3064
+  [ok] m4: size threshold 1/(2-xf), q* ~ p^((2-xv)/eta), spending ~ p^(2+(2-xv)/eta), splitting k^((2-xv)/eta) and the rate law alpha_ctl/(1+eta) hold at eta = 0.5, 1, 2 and fractional xv, xf
+(k) s4_cost(a): 300 random (xf, xv, eta): mismatches against the stated exponents {'thr': 0, 'split': 0, 'conc': 0, 'spend': 0}
+  [ok] s4_cost(a): threshold, splitting, concentration and spending exponents hold in 300/300 random settings
+(l) f5(D): Y_hat = p^2 ybar^T A_hat ybar: q* ~ p^((2-xi_v)/eta), so splitting into k parts divides Y_hat by k^2
+   xi_v=0 eta=1: d ln q*/d ln p = 2.0000 vs (2-xi_v)/eta = 2.0000
+   xi_v=1 eta=1: d ln q*/d ln p = 1.0000 vs (2-xi_v)/eta = 1.0000
+   xi_v=0 eta=2: d ln q*/d ln p = 1.0000 vs (2-xi_v)/eta = 1.0000
+   xi_v=0.5 eta=0.5: d ln q*/d ln p = 3.0000 vs (2-xi_v)/eta = 3.0000
+  [ok] f5(D): q* scales as p^((2-xi_v)/eta) in 4/4 (2, 1, 1, 3)
+
+=== FA [independent] keys: require
+    Codex invariant rectangle: R=2 with a low initial state converges to no capture
+row gain R=2, start (0.1, 0.1): stays in [0,.1]x[0,.2]: True; at t=20 x=3.20e-10, z=1.26e-08 (no capture)
+so a full row sum below one is sufficient, not necessary, for no capture from the states actually reached
+
+=== DW [independent] keys: pausefield, dwell
+    Dwell times by forward integration in logit coordinates; two phases; frozen-share thresholds
+Insulated reform: T_min*eps*d (Opus check: eps/zeta=0.1 -> 1.886, 5.318, 10.453; eps/zeta=1 -> 5.859, 10.343, 16.181 for R=2,5,10)
+   eps/zeta=0.1: R=2: 1.886, R=5: 5.318, R=10: 10.453
+   eps/zeta=1.0: R=2: 5.859, R=5: 10.343, R=10: 16.181
+Two phases: share rises while z>c/a, i.e. for ln R/(eps d); it is back at its starting level when R(1-e^{-s})=s, s=eps d t
+   R=2: rise phase 0.693; back to start at s*=1.594
+   R=5: rise phase 1.609; back to start at s*=4.965
+   R=10: rise phase 2.303; back to start at s*=10.000
+sigma(0): largest share from which (x, z=0) returns to absence (Opus check: R=2, eps=zeta -> 0.676)
+   R=2, eps/zeta=1.0: sigma(0)=0.676
+   R=2, eps/zeta=0.1: sigma(0)=0.984
+   R=5, eps/zeta=1.0: sigma(0)=0.321
+   R=5, eps/zeta=0.1: sigma(0)=0.775
+   R=10, eps/zeta=0.1: sigma(0)=0.516
+
+--- DW (v6.2 extension) [independent] keys: pausefield, dwell, reachable
+    Dwell by an independent method (separatrix by backward integration, analytic insulated path); depth of lock-in; a floor on alternatives; the frozen-share pause
+(a) s2: T_min*eps*d by separatrix + analytic insulated path (DW above: eps/zeta=0.1: 1.886, 5.318, 10.453; eps=zeta: 5.859, 10.343, 16.181)
+   eps/zeta=0.1: G=2: 1.886 (x_sigma=0.984); G=5: 5.318 (x_sigma=0.775); G=10: 10.453 (x_sigma=0.516)
+   eps/zeta=1.0: G=2: 5.859 (x_sigma=0.676); G=5: 10.343 (x_sigma=0.321); G=10: 16.181 (x_sigma=0.170)
+  [ok] s2: a second method (backward-integrated separatrix, analytic path) reproduces DW's dwell to 3 decimals in 6/6; x_sigma = 0.676 at eps=zeta, 0.984 at eps/zeta = 0.1 (G=2)
+(b) s2(A): a hard floor lam on the alternative share bounds the dwell (cap on u during insulation)
+   lam=0.01: G=5,e/z=0.1: 2.69  G=10,e/z=0.1: 3.52  G=5,e/z=1.0: 7.95  G=10,e/z=1.0: 9.48
+   lam=0.001: G=5,e/z=0.1: 2.99  G=10,e/z=0.1: 3.81  G=5,e/z=1.0: 10.26  G=10,e/z=1.0: 11.79
+   lam=1e-06: G=5,e/z=0.1: 3.78  G=10,e/z=0.1: 4.60  G=5,e/z=1.0: 10.34  G=10,e/z=1.0: 16.18
+   lam=1e-12: G=5,e/z=0.1: 5.23  G=10,e/z=0.1: 6.04  G=5,e/z=1.0: 10.34  G=10,e/z=1.0: 16.18
+  [ok] s2(A): a recruitable lineage held at 0.1% bounds the dwell at G=10, eps/zeta=0.1 from 10.45 to 3.81 (10.45 -> 3.81)
+(c) s2(B), s2b(B'): mutation/re-seeding at rate mu = lam*zeta*(G-1), from its own captured equilibrium and from x0 = 0.99
+   lam=0.001, own equilibrium: G=5,e/z=0.1: 2.54  G=10,e/z=0.1: 3.28  G=5,e/z=1.0: 7.91  G=10,e/z=1.0: 8.78
+   lam=0.001, from x0=0.99:    G=5,e/z=0.1: 2.54  G=10,e/z=0.1: 3.28  G=5,e/z=1.0: 7.84  G=10,e/z=1.0: 8.78
+   lam=1e-06, own equilibrium: G=5,e/z=0.1: 3.40  G=10,e/z=0.1: 4.12  G=5,e/z=1.0: 14.79  G=10,e/z=1.0: 15.51
+   lam=1e-06, from x0=0.99:    G=5,e/z=0.1: 3.40  G=10,e/z=0.1: 4.12  G=5,e/z=1.0: 10.34  G=10,e/z=1.0: 15.10
+  [ok] s2(B): a recruitable alternative at 0.1% (mutation) bounds the dwell too (3.28 at G=10, eps/zeta=0.1), less at 1e-6 (4.12)
+(d) s2(C): a protected share outside selection that does not recruit (b -> b(1-lam), lam=1e-3): G=9.99, eps/zeta=0.1: 10.44 (essentially unchanged)
+  [ok] s2(C): a protected share that does not recruit leaves the dwell essentially unchanged (10.44): the bound needs a recruitable lineage
+(e) s2b: no floor: T_min*eps*d as a function of the starting share x0 (depth of lock-in; the paper fixes x0=0.99)
+   G=2, eps/zeta=0.1: x0=1-1e-01: 1.59  x0=1-1e-02: 1.89  x0=1-1e-03: 2.16  x0=1-1e-06: 2.91  x0=1-1e-12: 4.34
+   G=10, eps/zeta=0.1: x0=1-1e-01: 10.21  x0=1-1e-02: 10.45  x0=1-1e-03: 10.69  x0=1-1e-06: 11.38  x0=1-1e-12: 12.76
+   G=2, eps/zeta=1.0: x0=1-1e-01: 3.45  x0=1-1e-02: 5.86  x0=1-1e-03: 8.17  x0=1-1e-06: 15.08  x0=1-1e-12: 28.90
+   G=10, eps/zeta=1.0: x0=1-1e-01: 13.78  x0=1-1e-02: 16.18  x0=1-1e-03: 18.49  x0=1-1e-06: 25.40  x0=1-1e-12: 39.22
+   at the captured state logit x grows at zeta(G-1) per unit time: after capture has lasted A, x0 ~ 1-exp(-zeta(G-1)A); the dwell grows ~linearly with the age of capture
+  [ok] s2b: the dwell rises with the depth of lock-in (G=2, eps=zeta: 5.86 at x0=0.99, 28.9 at 1-1e-12) unless a floor on alternatives bounds it
+(f) s2c: the share-freezing pause with rule-making insulated: required length ln(G/S(x_p))/(eps d), S = separatrix height at the frozen share
+   eps/zeta=1.0, G=2 (ln G=0.69, x_sigma=0.676): x_p=0.10: S=3.92, eps*d*T=-0.67; x_p=0.30: S=2.15, eps*d*T=-0.07; x_p=0.50: S=1.00, eps*d*T=0.69; x_p=0.60: S=0.45, eps*d*T=1.50; x_p=0.80: S=-inf, eps*d*T=inf; x_p=0.95: S=-inf, eps*d*T=inf
+   eps/zeta=1.0, G=5 (ln G=1.61, x_sigma=0.321): x_p=0.10: S=2.19, eps*d*T=0.82; x_p=0.30: S=0.16, eps*d*T=3.45; x_p=0.20: S=1.00, eps*d*T=1.61; x_p=0.60: S=-inf, eps*d*T=inf; x_p=0.80: S=-inf, eps*d*T=inf; x_p=0.95: S=-inf, eps*d*T=inf
+   eps/zeta=0.1, G=2 (ln G=0.69, x_sigma=0.984): x_p=0.10: S=1.58, eps*d*T=0.24; x_p=0.30: S=1.23, eps*d*T=0.48; x_p=0.50: S=1.00, eps*d*T=0.69; x_p=0.60: S=0.89, eps*d*T=0.81; x_p=0.80: S=0.62, eps*d*T=1.17; x_p=0.95: S=0.25, eps*d*T=2.08
+   eps/zeta=0.1, G=5 (ln G=1.61, x_sigma=0.775): x_p=0.10: S=1.26, eps*d*T=1.38; x_p=0.30: S=0.81, eps*d*T=1.82; x_p=0.20: S=1.00, eps*d*T=1.61; x_p=0.60: S=0.33, eps*d*T=2.72; x_p=0.80: S=-inf, eps*d*T=inf; x_p=0.95: S=-inf, eps*d*T=inf
+  [ok] s2c: at equal speeds and G=2 no pause is needed at x_p=0.3, ln G at x_p=1/G, 1.5/(eps d) at 0.6, and none suffices above x_sigma=0.68
+
+=== AC [independent] keys: alarm
+    Autocorrelation under static affine masking and under a filter with memory
+true V*=0.360
+   masking m=0.0: mean report 0.358; lag-1 autocorrelation 0.9814; recovered condition 0.376
+   masking m=0.25: mean report 0.519; lag-1 autocorrelation 0.9814; recovered condition 0.376
+   masking m=0.5: mean report 0.679; lag-1 autocorrelation 0.9814; recovered condition 0.376
+   masking with memory (exponential smoothing 0.8): recovered condition 0.042 -> the indicator is defeated
+
+=== RH [identity; the last line (grid best response) independent] keys: racehazard
+    Race-generated hazard: closed form against itself (identity); symmetric intensity against a grid best response
+n=4, r=1, Om=1, theta=0: h direct 0.001731, formula 0.001731  [identity: sym_eq assigns the closed form]
+n=4, r=1, Om=2, theta=-1: h direct 0.006000, formula 0.006000  [identity: sym_eq assigns the closed form]
+n=3, r=0.8, Om=1, theta=1.0: h direct 0.000593, formula 0.000593  [identity: sym_eq assigns the closed form]
+symmetric intensity 0.11444; best response on a grid 0.11444  [independent]
+
+=== FS [independent] keys: frontier
+    The frontier switch (toy)
+theta=-1.0: peak 494.3 at t=25.0; final stock 3.96e-09; frontier left 320.4; host min 0.245; frontier at switch 320.4235442857157
+theta=0.0: peak 518.3 at t=26.3; final stock 518; frontier left 264.8; host min 0.194; frontier at switch None
+theta=3.0: peak 343.2 at t=20.6; final stock 343; frontier left 566.1; host min 0.494; frontier at switch None
+predicted frontier at switch, theta=-1: 322.2
+asymmetric start: final stock 84.8 = 17.2% of peak
+destruction too costly, theta=-1.0: host min 0.109, switch None
+destruction too costly, theta=0.0: host min 0.194, switch None
+
+=== EC [identity: valuation check] keys: enforce
+    Valuation check of (14): discounted values of the fixed deviation path in an explicit Markov chain; old bound by sign of D-C; breakouts during punishment
+=== S1a. [valuation check] repaired condition vs direct discounted values (value iteration), random draws: 200000
+mismatches 0; exact ties skipped 0
+=== S1b. old printed bound (no D-C term) vs truth, by sign of D-C: [cases, old-says-sustain-but-deviation-pays, sustainable-but-old-says-no]
+  D<C [66842, 0, 10032]
+  D=C [66620, 0, 0]
+  D>C [66538, 10723, 0]
+=== S1c. Monte Carlo cross-check of the deviation value (independent sampler)
+  C=3,g=1,D=2,U=0,P=1,pd=1.0,q=0.1,delta=0.9: Vcoop=30.000  Vdev(VI)=22.000  Vdev(MC)=22.000
+  C=3,g=1,D=3,U=0,P=1,pd=0.5,q=0.0,delta=0.9: Vcoop=30.000  Vdev(VI)=22.000  Vdev(MC)=22.414
+  C=1,g=0.3,D=2,U=-1,P=0,pd=0.2,q=0.2,delta=0.8: Vcoop=5.000  Vdev(VI)=3.885  Vdev(MC)=3.881
+  S1c' case 2 by a one-step sampler, seed 0: mean 21.847 (exact 22.000), SE 0.142, z=-1.08
+  S1c' case 2 by a one-step sampler, seed 1: mean 21.879 (exact 22.000), SE 0.142, z=-0.85
+  S1c' case 2 by a one-step sampler, seed 2: mean 21.942 (exact 22.000), SE 0.142, z=-0.41
+  S1c' case 2 by a one-step sampler, seed 3: mean 22.068 (exact 22.000), SE 0.142, z=+0.47
+  S1c' case 2 by a one-step sampler, seed 4: mean 21.991 (exact 22.000), SE 0.142, z=-0.06
+  [ok] S1c Monte Carlo gaps are sampling noise (|z| < 3 over five seeds)
+=== S1d. Codex counterexamples (C=3,g=1,delta=.9): cooperation worth 30
+  p_d=1.0, D=2.0: Vdev=22.000; old bound RHS=0.000 vs g=1; repaired lhs=-0.800 rhs=0.000
+  p_d=0.5, D=3.0: Vdev=22.000; old bound RHS=9.000 vs g=1; repaired lhs=0.100 rhs=0.900
+=== S1e. limit p_d -> 1: sustainable iff g <= -delta(D-C)/(1-delta); strictly inside stage equilibria when D>C
+  C=1,D=1.5,delta=0.9: threshold g*=-4.500; g=-4.510: sustainable=True
+  C=1,D=1.5,delta=0.9: threshold g*=-4.500; g=-4.490: sustainable=False
+  C=1,D=1.0,delta=0.9: threshold g*=-0.000; g=-0.010: sustainable=True
+  C=1,D=1.0,delta=0.9: threshold g*=-0.000; g=0.010: sustainable=False
+  C=1,D=0.5,delta=0.9: threshold g*=4.500; g=4.490: sustainable=True
+  C=1,D=0.5,delta=0.9: threshold g*=4.500; g=4.510: sustainable=False
+=== S1f. p_d acts during punishment: the punishment value v moves with q (two players, U<P<D)
+  q=0.0: v=0.0000 (closed form [(1-d)P+d q(D+U)]/(1-d+2dq) = 0.0000); sustainable at p_d=0: True
+  q=0.05: v=0.2368 (closed form [(1-d)P+d q(D+U)]/(1-d+2dq) = 0.2368); sustainable at p_d=0: True
+  q=0.2: v=0.3913 (closed form [(1-d)P+d q(D+U)]/(1-d+2dq) = 0.3913); sustainable at p_d=0: True
+  q=0.45: v=0.4451 (closed form [(1-d)P+d q(D+U)]/(1-d+2dq) = 0.4451); sustainable at p_d=0: True
+=== S1g. breakouts during punishment can soften it (D+U>2P) or harden it (D+U<2P): C=1, g=0.5, delta=0.9, p_d=0
+  D=4.0,U=0.0,q=0.0: v=+0.000; restraint sustainable: True
+  D=4.0,U=0.0,q=0.1: v=+1.286; restraint sustainable: False
+  D=4.0,U=0.0,q=0.45: v=+1.780; restraint sustainable: False
+  D=3.0,U=-5.0,q=0.0: v=+0.000; restraint sustainable: True
+  D=3.0,U=-5.0,q=0.1: v=-0.643; restraint sustainable: True
+  D=3.0,U=-5.0,q=0.45: v=-0.890; restraint sustainable: True
+
+=== CR [independent] keys: relpunish
+    Relative objectives and punishments that can be imitated: n=2 mixed imitation; n>=3 same-strategy punishers; role-differentiated counterexample
+(a) n=2: imitating the punisher's mixed strategy gives relative payoff 0 (max |value| over 20,000 draws 6.4e-17)
+(b) n>=3 anonymous games: all punishers alike, deviator imitates -> O=0; violations 0/3000
+(c) cooperative profile (R,X) for all: objectives [0.0, 0.0, 0.0]; best one-period deviation gain g = 1.200
+    punishment profile [('A', 'X'), ('A', 'X'), ('A', 'Y')]: objectives [-0.5, -0.5, 1.0]
+    punishment profile is a stage Nash equilibrium in objectives: True
+    delta=0.6: cooperation 0.000 vs deviation +0.450 -> sustainable False
+    delta=0.7: cooperation 0.000 vs deviation +0.033 -> sustainable False
+    delta=0.706: cooperation 0.000 vs deviation -0.001 -> sustainable True
+    delta=0.71: cooperation 0.000 vs deviation -0.024 -> sustainable True
+    delta=0.9: cooperation 0.000 vs deviation -3.300 -> sustainable True
+    deviator's best stage objective while punished: -0.500 (= v)
+    symmetric punishment (all (A,X)): deviator imitates and gets 0.000 -> cannot hold it below 0
+    threshold delta* = g/(g+|v|) = 0.7059
+
+--- CR (v6.2 extension) [independent] keys: relpunish
+    Strictness of the role-differentiated punishment; label asymmetry; random anonymous perturbations; a relative punisher is indifferent about whom it hurts
+(d) f6(E): strictness of the printed punishment under +-eps on the X prize
+   eps=+0.00: objectives [-0.5, -0.5, 1.0], margins over best deviation [0.0, 0.0, 0.2] -> weak NE
+   eps=+0.02: objectives [-0.5, -0.5, 1.0], margins over best deviation [0.01, 0.01, 0.2] -> strict NE
+   eps=-0.02: objectives [-0.5, -0.5, 1.0], margins over best deviation [-0.01, -0.01, 0.2] -> not an equilibrium
+  [ok] f6(E): the printed punishment is a weak stage equilibrium, strict under +0.02 on the X prize, destroyed by -0.02 (roles must then swap)
+(e) m08(A,B): the printed example; label asymmetry; random anonymous perturbations
+   deviator's objective -0.500; best unilateral deviation gains [0.0, 0.0, -0.2]; deviation gain from cooperation 1.200; delta* = 0.706
+   eps=+0.01 roles (X,X,Y): deviator held at -0.500; deviation gains [-0.005, -0.005, -0.2] -> STRICT; delta* = 0.706
+   eps=+0.01 roles (Y,Y,X): deviator held at -0.505; deviation gains [0.005, 0.005, -0.2] -> not strict
+   eps=+0.05 roles (X,X,Y): deviator held at -0.500; deviation gains [-0.025, -0.025, -0.2] -> STRICT; delta* = 0.706
+   eps=+0.05 roles (Y,Y,X): deviator held at -0.525; deviation gains [0.025, 0.025, -0.2] -> not strict
+   eps=-0.05 roles (X,X,Y): deviator held at -0.500; deviation gains [0.025, 0.025, -0.2] -> not strict
+   eps=-0.05 roles (Y,Y,X): deviator held at -0.475; deviation gains [-0.025, -0.025, -0.2] -> STRICT; delta* = 0.716
+   random anonymous perturbations e=0.02: a strict punishment holding the deviator below cooperation exists in 300/300 games; median delta* 0.708
+   random anonymous perturbations e=0.05: a strict punishment holding the deviator below cooperation exists in 300/300 games; median delta* 0.711
+   random anonymous perturbations e=0.1: a strict punishment holding the deviator below cooperation exists in 282/300 games; median delta* 0.713
+  [ok] m08: strict under any label asymmetry with roles assigned accordingly; strict punishments exist in 300/300, 300/300, 282/300 perturbed games
+(f) m3 (Math-Fable reviewer): ties, role preference and the targeted-attack game
+   the paper's game: g=1.200; punishment objectives [-0.5, -0.5, 1.0]; if punisher 1 takes its tie (A,Y) the deviator gets +1.000; punisher in the X role -0.500 vs Y role +1.000; delta* = 0.7059
+   other a, b: g=1.350; punishment objectives [-0.5, -0.5, 1.0]; if punisher 1 takes its tie (A,Y) the deviator gets +1.000; punisher in the X role -0.500 vs Y role +1.000; delta* = 0.7297
+   eps=+0.02: g=1.200; punishment objectives [-0.5, -0.5, 1.0]; if punisher 1 takes its tie (A,Y) the deviator gets +1.020; punisher in the X role -0.500 vs Y role +1.000; delta* = 0.7059
+   eps=-0.02: g=1.200; punishment objectives [-0.5, -0.5, 1.0]; if punisher 1 takes its tie (A,Y) the deviator gets +0.980; punisher in the X role -0.500 vs Y role +1.000; delta* = 0.7059
+   targeted attack: punisher 1 attacking the deviator +0.950; abstaining +0.550; attacking the other punisher +0.950
+  [ok] m3: the deviator is held at -0.5 for every a, b; both punishers prefer the Y role (coordination on roles); a theta=-1 punisher is exactly indifferent between hurting the deviator and its fellow
+(g) s3(5) (Math-Opus reviewer): anonymous perturbations, stage-NE punishments holding the deviator below C (400 games each)
+   eps=0.01: games with a stage-NE punishment holding the deviator below C: 400/400; of which strict: 400; median delta* 0.707
+   eps=0.05: games with a stage-NE punishment holding the deviator below C: 400/400; of which strict: 400; median delta* 0.711
+   eps=0.1: games with a stage-NE punishment holding the deviator below C: 372/400; of which strict: 372; median delta* 0.715
+  [ok] s3(5): under anonymous perturbations a strict punishment exists in 400/400, 400/400 and 372/400 games (median delta* about 0.71)
+
+=== BI [identity] keys: zonesillus
+    Binary illustration at the boundary case D=C: threshold algebra against the stated inequality
+theta* = 0.9375
+  p_d=0: theta_rep = -0.901
+  p_d=0.5: theta_rep = -0.812
+  p_d=0.9: theta_rep = -0.322
+  p_d=0.99: theta_rep = +0.634
+  p_d=1: theta_rep = +0.938
+  theta=0.0: enforced restraint lost once p_d > 0.950
+  theta=0.4: enforced restraint lost once p_d > 0.980
+binary game: closed form vs brute force, 14429 draws, mismatches 0
+
+=== WG [independent] keys: wingives
+    What a decisive winner gives
+theta=0.4: log-utility share 0.286 (formula 0.286)
+theta=1: log-utility share 0.500 (formula 0.500)
+theta=2: log-utility share 0.667 (formula 0.667)
+theta=3: log-utility share 0.750 (formula 0.750)
+linear payoffs: objective slope in s is W(theta/(n-1)-1) <= 0, zero only at theta=n-1
+
+=== TK [independent] keys: talk
+    Two parties: in zero-sum sender-receiver games every equilibrium gives the no-talk value
+games 300, pure equilibria found 1096, equilibria whose receiver payoff differs from the no-talk value: 0
+
+--- TK (v6.2 extension) [independent] keys: talk
+    Talk unified: with a common theta among n actors the effective bias is b0 (n-1-theta)/(n-1+theta); informative iff below 1/4
+(d) m09: ideal points at theta=-1 among n, uniform-quadratic, random linear third-party terms
+   n=3: ideal-point gap 0.150000; b0 n/(n-2) = 0.150000; informative talk iff gap < 1/4 -> material bias below 0.0833
+   n=4: ideal-point gap 0.100000; b0 n/(n-2) = 0.100000; informative talk iff gap < 1/4 -> material bias below 0.1250
+   n=6: ideal-point gap 0.075000; b0 n/(n-2) = 0.075000; informative talk iff gap < 1/4 -> material bias below 0.1667
+   n=10: ideal-point gap 0.062500; b0 n/(n-2) = 0.062500; informative talk iff gap < 1/4 -> material bias below 0.2000
+  [ok] m09: at theta=-1 the pair's effective bias is b0 n/(n-2) (0.150, 0.100, 0.075, 0.0625 at b0=0.05), independent of third-party terms
+(e) m09: common theta among n: effective bias b0 (n-1-theta)/(n-1+theta)
+   n=2 theta=-0.9: ideal-point gap 1.330000; formula 1.330000; informative iff below .25: False
+   n=2 theta=-0.5: ideal-point gap 0.210000; formula 0.210000; informative iff below .25: True
+   n=2 theta=+0.0: ideal-point gap 0.070000; formula 0.070000; informative iff below .25: True
+   n=2 theta=+0.5: ideal-point gap 0.023333; formula 0.023333; informative iff below .25: True
+   n=2 theta=+1.5: ideal-point gap -0.014000; formula -0.014000; informative iff below .25: True
+   n=3 theta=-1.0: ideal-point gap 0.210000; formula 0.210000; informative iff below .25: True
+   n=3 theta=-0.5: ideal-point gap 0.116667; formula 0.116667; informative iff below .25: True
+   n=3 theta=+0.0: ideal-point gap 0.070000; formula 0.070000; informative iff below .25: True
+   n=3 theta=+0.5: ideal-point gap 0.042000; formula 0.042000; informative iff below .25: True
+   n=3 theta=+1.5: ideal-point gap 0.010000; formula 0.010000; informative iff below .25: True
+   n=4 theta=-1.0: ideal-point gap 0.140000; formula 0.140000; informative iff below .25: True
+   n=4 theta=-0.5: ideal-point gap 0.098000; formula 0.098000; informative iff below .25: True
+   n=4 theta=+0.0: ideal-point gap 0.070000; formula 0.070000; informative iff below .25: True
+   n=4 theta=+0.5: ideal-point gap 0.050000; formula 0.050000; informative iff below .25: True
+   n=4 theta=+1.5: ideal-point gap 0.023333; formula 0.023333; informative iff below .25: True
+   n=6 theta=-1.0: ideal-point gap 0.105000; formula 0.105000; informative iff below .25: True
+   n=6 theta=-0.5: ideal-point gap 0.085556; formula 0.085556; informative iff below .25: True
+   n=6 theta=+0.0: ideal-point gap 0.070000; formula 0.070000; informative iff below .25: True
+   n=6 theta=+0.5: ideal-point gap 0.057273; formula 0.057273; informative iff below .25: True
+   n=6 theta=+1.5: ideal-point gap 0.037692; formula 0.037692; informative iff below .25: True
+  [ok] m09: the unified formula matches numerically maximized ideal points in 19 combinations (max deviation 1.5e-08); n=2: b0(1-theta)/(1+theta), infinite at theta=-1
+(f) s5_misc (Math-Opus reviewer): third-party payoff -k y^2 (nonlinear): the gap in state units is still b0 n/(n-2)
+   n=3, u=0.0: gap in y 0.2140; in state units gap*(1-k) = 0.1498 (b0 n/(n-2) = 0.1500)
+   n=3, u=0.5: gap in y 0.2140; in state units gap*(1-k) = 0.1498 (b0 n/(n-2) = 0.1500)
+   n=3, u=1.0: gap in y 0.2140; in state units gap*(1-k) = 0.1498 (b0 n/(n-2) = 0.1500)
+   n=4, u=0.0: gap in y 0.1430; in state units gap*(1-k) = 0.1001 (b0 n/(n-2) = 0.1000)
+   n=4, u=0.5: gap in y 0.1420; in state units gap*(1-k) = 0.0994 (b0 n/(n-2) = 0.1000)
+   n=4, u=1.0: gap in y 0.1430; in state units gap*(1-k) = 0.1001 (b0 n/(n-2) = 0.1000)
+  [ok] s5_misc: with a nonlinear third-party term the gap in state units is b0 n/(n-2) to the grid's resolution (1e-3)
+
+=== T3 [independent] keys: talk
+    Talk under relative accounting with n>=3: identity; ideal-point gap b0 n/(n-2); two-message partition equilibrium built directly
+(a) O_S-O_R = n/(n-1)(pi_S-pi_R): max error 3.6e-15 over 10,000 draws
+(b) n>=3, effective bias of the pair under relative objectives, and existence of an informative (two-message) equilibrium
+   n=3, material bias b0=0.0, third-party costs [0.7]..: effective bias 0.0000 (b0 n/(n-2) = 0.0000); two-message equilibrium: boundary a=0.5000 (exists iff bias<1/4: True)
+   n=3, material bias b0=0.05, third-party costs [0.7]..: effective bias 0.1500 (b0 n/(n-2) = 0.1500); two-message equilibrium: boundary a=0.2000 (exists iff bias<1/4: True)
+   n=3, material bias b0=0.08, third-party costs [0.0]..: effective bias 0.2400 (b0 n/(n-2) = 0.2400); two-message equilibrium: boundary a=0.0200 (exists iff bias<1/4: True)
+   n=3, material bias b0=0.1, third-party costs [0.3]..: effective bias 0.3000 (b0 n/(n-2) = 0.3000); two-message equilibrium: none (exists iff bias<1/4: False)
+   n=4, material bias b0=0.1, third-party costs [0.3]..: effective bias 0.2000 (b0 n/(n-2) = 0.2000); two-message equilibrium: boundary a=0.1000 (exists iff bias<1/4: True)
+   n=6, material bias b0=0.1, third-party costs [0.2]..: effective bias 0.1500 (b0 n/(n-2) = 0.1500); two-message equilibrium: boundary a=0.2000 (exists iff bias<1/4: True)
+   n=6, material bias b0=0.2, third-party costs [0.2]..: effective bias 0.3000 (b0 n/(n-2) = 0.3000); two-message equilibrium: none (exists iff bias<1/4: False)
+   n=10, material bias b0=0.2, third-party costs [0.1]..: effective bias 0.2500 (b0 n/(n-2) = 0.2500); two-message equilibrium: none (exists iff bias<1/4: False)
+(c) n=2: O_S=-O_R at every (y,u); informative equilibria impossible (Proposition 5.14(1))
+   max |O_S+O_R| = 0.0e+00
+
+=== HO [independent] keys: safeguards, require
+    Host transients: logistic transient minimum; pointwise harsher Allee host margin; finite-horizon counterexample to R1
+(a) Theorem 8.2(1) transient, logistic host, liability margin Delta=0.08 from t=0, race strategy at 99% (e_min=0, e_max=1)
+   step 0.02: minimum host 0.1397, final 1.000
+   step 0.005: minimum host 0.1397, final 1.000
+(b) host harsher at every level (Allee, per-capita regeneration below logistic everywhere): minimal margin that avoids permanent collapse
+   A=0.05: Delta_min=0.260; degradation threshold at e_min load V_u=0.254 (normative floor 0.3)
+   A=0.10: Delta_min=0.306; degradation threshold at e_min load V_u=0.308 (normative floor 0.3)
+   A=0.15: Delta_min=0.359; degradation threshold at e_min load V_u=0.364 (normative floor 0.3)
+   A=0.20: Delta_min=0.423; degradation threshold at e_min load V_u=0.421 (normative floor 0.3)
+   A=0.25: Delta_min=0.505; degradation threshold at e_min load V_u=0.481 (normative floor 0.3)
+   logistic host with Delta=0.02 (far below every Delta_min above): minimum 2.48e-03, final 0.840 (recovers; with the logistic host any Delta>0 recovers eventually)
+(c) R1 at a finite horizon: K=V0=1, V_min=0.2, rho=0.01, h=0.02, zero liability, loads in [0,1] (Codex)
+   lower bound on V(50) with zero liability: 0.4353 > 0.2; full-load crossing time 109.86 (ln 3/0.01 = 109.86)
+
+--- HO (v6.2 extension) [independent] keys: safeguards, require (R1)
+    The margin Delta_min on the forgiving (logistic) host, three implementations; the harsher (Allee) host; R1 with limsup is necessary, not sufficient
+(d) f7(D): logistic host, race share 0.99 declining at rate Delta*(e_max-e_min); transient minimum and Delta_min by floor
+   e_min=0.0: Delta=.08 -> transient minimum 0.1397, long-run level 1.000 (1 - h e_min/rho = 1.000)
+      floor 0.2: Delta_min = 0.108
+      floor 0.3: Delta_min = 0.165
+      floor 0.5: Delta_min = 0.355
+   e_min=0.1: Delta=.08 -> transient minimum 0.1136, long-run level 0.840 (1 - h e_min/rho = 0.840)
+      floor 0.2: Delta_min = 0.125
+      floor 0.3: Delta_min = 0.192
+      floor 0.5: Delta_min = 0.414
+  [ok] f7(D): V6.1's Delta=0.08 dips to 0.1397; Delta_min = 0.108, 0.165, 0.355 for floors 0.2, 0.3, 0.5 (0.125, 0.192, 0.414 with e_min = 0.1)
+(e) m09 (closed-form share, own stopping rule): Delta=.08 minimum 0.1397; Delta_min 0.108, 0.165, 0.355
+    s8 (Math-Opus reviewer, replicator integrated jointly): Delta=.08 minimum 0.1397; Delta_min 0.108, 0.165, 0.355
+  [ok] three independent integrations agree on Delta_min = 0.108, 0.165, 0.355 to 0.002
+(f) s5_misc (Math-Opus reviewer): minimal margin on the pointwise-harsher Allee host (e_min = 0.1); V_u is the host's own degradation threshold
+   A=0.05: Delta_min=0.260, V_u(e_min)=0.254; transient minimum at Delta_min+0.01: 0.270
+   A=0.10: Delta_min=0.306, V_u(e_min)=0.308; transient minimum at Delta_min+0.01: 0.322
+   A=0.15: Delta_min=0.359, V_u(e_min)=0.364; transient minimum at Delta_min+0.01: 0.376
+   A=0.20: Delta_min=0.423, V_u(e_min)=0.421; transient minimum at Delta_min+0.01: 0.431
+   A=0.25: Delta_min=0.505, V_u(e_min)=0.481; transient minimum at Delta_min+0.01: 0.489
+  [ok] s5_misc: on a host that degrades by itself below V_u the margin must keep the transient above V_u: Delta_min 0.26-0.51, rising with A, and a shortfall is permanent
+(g) m09(R1): long-run average liability vs cumulative advantage
+   tau = nu (B=0): race share starts at 0.001; host stays above the floor
+   tau = nu - 1/(2 sqrt(t+1)): race share starts at 0.001; host crosses the floor at t = 89
+  [ok] m09(R1): both paths have long-run average liability nu, yet the one whose cumulative advantage grows (sqrt(t+1)-1) crosses the floor at t=89: limsup-average >= nu is necessary, not sufficient
+
+=== SH [independent] keys: share
+    Pooling; sharing in one common field; the uninvadable intensity
+theta_eff strictly increasing in beta: True ; at beta=1: 3.0
+n=4, r=1.0, c=1.0, Omega_eff=1.0: x* = 0.2500; best mutant advantage 0.00e+00
+n=4, r=1.0, c=1.0, Omega_eff=0.5: x* = 0.1250; best mutant advantage 0.00e+00
+n=4, r=1.0, c=1.0, Omega_eff=2.0: x* = 0.5000; best mutant advantage 0.00e+00
+n=4, r=0.5, c=1.0, Omega_eff=1.0: x* = 0.1250; best mutant advantage 0.00e+00
+n=3, r=0.8, c=0.7, Omega_eff=1.3: x* = 0.4952; best mutant advantage 0.00e+00
+n=6, r=1.0, c=2.0, Omega_eff=1.0: x* = 0.0833; best mutant advantage 0.00e+00
+x* with Omega_e=1: no sharing 0.25 ; half shared 0.125 ; with Omega_s=1, none shared 0.5 ; all shared 0.25
+common field (0.2,0.05,0.1,0.1): carrier 0.2 minus carrier 0.05 at beta=0.5: +0.0167; sign change at beta = 0.550
+  at beta=0.9: -0.1167
+
+--- SH (v6.2 extension) [independent] keys: share
+    Sharing among all n or among the n-1 others: two effective prizes, two solution concepts
+(f) f7(E): Nash intensity (n=4, r=1, c=1, Om_e=1, Om_s=0, rho=1) vs r Om_eff (n-1)/(n^2 c)
+   beta=0.3: shared among all n: 0.13125 vs formula 0.13125 (Om_eff=(1-beta)Om_e); among the n-1 others: 0.11250 vs 0.11250 (Om_eff=(1-beta n/(n-1))Om_e)
+   beta=0.6: shared among all n: 0.07500 vs formula 0.07500 (Om_eff=(1-beta)Om_e); among the n-1 others: 0.03750 vs 0.03750 (Om_eff=(1-beta n/(n-1))Om_e)
+  [ok] f7(E): Nash intensities 0.13125/0.11250 (beta=0.3) and 0.07500/0.03750 (beta=0.6) equal the two effective-prize formulas
+(g) m09: uninvadable intensity in one field (Om_e=1, Om_s=0.5) vs r Om_eff/(n c)
+   beta=0.3 shared among n  : uninvadable intensity 0.30000; r Om_eff/(n c) = 0.30000 (Om_eff = 1.2000); no mutant gains on a grid: True
+   beta=0.3 shared among n-1: uninvadable intensity 0.27500; r Om_eff/(n c) = 0.27500 (Om_eff = 1.1000); no mutant gains on a grid: True
+   beta=0.6 shared among n  : uninvadable intensity 0.22500; r Om_eff/(n c) = 0.22500 (Om_eff = 0.9000); no mutant gains on a grid: True
+   beta=0.6 shared among n-1: uninvadable intensity 0.17500; r Om_eff/(n c) = 0.17500 (Om_eff = 0.7000); no mutant gains on a grid: True
+  [ok] m09: uninvadable intensities 0.300, 0.275, 0.225, 0.175 equal r Om_eff/(n c) under both conventions (the n vs n-1 distinction of Props 3.5(4) and 5.7)
+
+=== PE [independent] keys: enough
+    A point of enough: frozen capability against compounding
+capability frozen at need: survival 0.717, coverage catches up at t=14
+capability compounding at 10%: survival at t=400 1.83e-09
+  Tullock intensity at stakes 1: 0.144 (linear in the stakes)
+  Tullock intensity at stakes 10: 1.442 (linear in the stakes)
+  Tullock intensity at stakes 100: 14.423 (linear in the stakes)
+
+=== FD [independent] keys: fallback
+    Fallback example with exogenous dissolution
+dissolution 0.02: [(10, 0.976, 0.875), (30, 0.864, 0.575), (100, 0.211, 0.026)] (arrangement, continuation)
+
+=== NB [derived] keys: standprice, enforce, zonesillus
+    Derived numbers quoted in the text (theta_Gamma table; largest enforceable loop gain; p_bar; time to decisiveness)
+(a) effective self-model theta_eff for n=4 as the discounted loop gain G_delta rises
+   G_delta=0.0: theta_0=0 -> +0.000;  theta_0=0.4 -> +0.400;  theta_0=2 -> +2.000
+   G_delta=0.25: theta_0=0 -> -0.200;  theta_0=0.4 -> +0.151;  theta_0=2 -> +1.769
+   G_delta=0.5: theta_0=0 -> -0.429;  theta_0=0.4 -> -0.152;  theta_0=2 -> +1.400
+   G_delta=0.75: theta_0=0 -> -0.692;  theta_0=0.4 -> -0.525;  theta_0=2 -> +0.714
+   G_delta=0.9: theta_0=0 -> -0.871;  theta_0=0.4 -> -0.796;  theta_0=2 -> -0.077
+   G_delta=0.99: theta_0=0 -> -0.987;  theta_0=0.4 -> -0.979;  theta_0=2 -> -0.883
+(b) binary faithful-AI game (n=4,b=1,c=.3,d=.2,eps=1,delta=.9), decisive value D=C=0 (boundary case):
+   p_d=0.0: theta_rep=-0.901; largest G_delta with enforceable restraint: theta_0=0 -> 0.924, theta_0=0.4 -> 0.953
+   p_d=0.5: theta_rep=-0.812; largest G_delta with enforceable restraint: theta_0=0 -> 0.852, theta_0=0.4 -> 0.908
+   p_d=0.9: theta_rep=-0.322; largest G_delta with enforceable restraint: theta_0=0 -> 0.387, theta_0=0.4 -> 0.621
+   p_d=0.99: theta_rep=+0.634; largest G_delta with enforceable restraint: theta_0=0 -> none, theta_0=0.4 -> none
+   p_d=1.0: theta_rep=+0.938; largest G_delta with enforceable restraint: theta_0=0 -> none, theta_0=0.4 -> none
+   v6.2: no G_delta>=0 sustains restraint above p_d=0.9495 for theta_0=0.0 (v6.1 wrote 0.99; JX recomputes this by direct valuation)
+  [ok] derived threshold for theta_0=0.0: 0.9495
+   v6.2: no G_delta>=0 sustains restraint above p_d=0.9793 for theta_0=0.4 (v6.1 wrote 0.99; JX recomputes this by direct valuation)
+  [ok] derived threshold for theta_0=0.4: 0.9793
+   with a decisive value above cooperation, D=0.5 (objective units):
+   p_d=0.5: theta_rep=-0.401 (vs -0.812 at D=C)
+   p_d=0.9: theta_rep=+2.337 (vs -0.322 at D=C)
+(c) largest enforceable breakout probability p_bar = 1 - [(1-delta)g + delta(D-C)]/[delta(D-v)]
+   g=1.0,C=3.0,D=3.0,v=1.0,delta=0.9: p_bar=0.944
+   g=1.0,C=3.0,D=4.0,v=1.0,delta=0.9: p_bar=0.630
+   g=0.0,C=3.0,D=4.0,v=1.0,delta=0.9: p_bar=0.667
+   g=-0.5,C=3.0,D=3.0,v=1.0,delta=0.9: p_bar=1.028
+(d) time to decisiveness in the linearized compounding loop: T_dec = ln(gap_bar/gap_0)/ln(1+(dK+df)(Gamma-1)), here df=0 (v6.1 omitted df; TD checks the general form)
+   Gamma=1.2, dK=0.05: multiplier 1.010; from a 1% to a 50% gap: 393 periods
+   Gamma=1.2, dK=0.2: multiplier 1.040; from a 1% to a 50% gap: 100 periods
+   Gamma=1.5, dK=0.05: multiplier 1.025; from a 1% to a 50% gap: 158 periods
+   Gamma=1.5, dK=0.2: multiplier 1.100; from a 1% to a 50% gap: 41 periods
+   Gamma=3.0, dK=0.05: multiplier 1.100; from a 1% to a 50% gap: 41 periods
+   Gamma=3.0, dK=0.2: multiplier 1.400; from a 1% to a 50% gap: 12 periods
+(e) monotonicity of p_bar on the region D>v, 0<=p_bar<1 (random draws, finite differences)
+   draws in region 47832; violations {'g': 0, 'C': 0, 'D': 0, 'v': 0}
+
+=== CH [independent (the last part, (h), derived)] keys: loopgain, chansign (S2), delayosc (S2), gammarange (S2)
+    Which levers lower the loop gain, channel by channel: correction and provision by the level elasticity xi_r; sharing and diffusion in every channel; three stocks; a delayed countervailing channel
+(a) m03(A,B): sign of dGamma/dd and of dGamma/dk0 by channel form; Gamma read off the simulated relative-mode growth factor
+   ratio  r ln X (xi_r=0)     df=0.0: Gamma sim 1.2857 -> 1.2857 when d .2->.3 (formula 1.2857->1.2857); rule sign(df/(d+df)-xi_r)=0 (xi_r=0.00), observed 0 | k0 .1->.2: Gamma sim 1.2857 -> 1.0000; provision lowers iff xi_r<1: observed change -
+   ratio  r ln X (xi_r=0)     df=0.1: Gamma sim 0.8571 -> 0.9643 when d .2->.3 (formula 0.8571->0.9643); rule sign(df/(d+df)-xi_r)=+ (xi_r=0.00), observed + | k0 .1->.2: Gamma sim 0.8571 -> 0.6667; provision lowers iff xi_r<1: observed change -
+   level  a X    (xi_r=1)     df=0.0: Gamma sim 1.1250 -> 0.7500 when d .2->.3 (formula 1.1250->0.7500); rule sign(df/(d+df)-xi_r)=- (xi_r=1.00), observed - | k0 .1->.2: Gamma sim 1.1250 -> 1.1250; provision lowers iff xi_r<1: observed change 0
+   level  a X    (xi_r=1)     df=0.1: Gamma sim 0.7500 -> 0.5625 when d .2->.3 (formula 0.7500->0.5625); rule sign(df/(d+df)-xi_r)=- (xi_r=1.00), observed - | k0 .1->.2: Gamma sim 0.7500 -> 0.7500; provision lowers iff xi_r<1: observed change 0
+   power  a X^.5 (xi_r=.5)    df=0.0: Gamma sim 0.7087 -> 0.5786 when d .2->.3 (formula 0.7087->0.5786); rule sign(df/(d+df)-xi_r)=- (xi_r=0.50), observed - | k0 .1->.2: Gamma sim 0.7087 -> 0.6250; provision lowers iff xi_r<1: observed change -
+   power  a X^.5 (xi_r=.5)    df=0.1: Gamma sim 0.4725 -> 0.4340 when d .2->.3 (formula 0.4725->0.4340); rule sign(df/(d+df)-xi_r)=- (xi_r=0.50), observed - | k0 .1->.2: Gamma sim 0.4725 -> 0.4167; provision lowers iff xi_r<1: observed change -
+   power  a X^2  (xi_r=2)     df=0.0: Gamma sim 1.7500 -> 0.7778 when d .2->.3 (formula 1.7500->0.7778); rule sign(df/(d+df)-xi_r)=- (xi_r=2.00), observed - | k0 .1->.2: Gamma sim 1.7500 -> 2.2500; provision lowers iff xi_r<1: observed change +
+   power  a X^2  (xi_r=2)     df=0.1: Gamma sim 1.1667 -> 0.5833 when d .2->.3 (formula 1.1667->0.5833); rule sign(df/(d+df)-xi_r)=- (xi_r=2.00), observed - | k0 .1->.2: Gamma sim 1.1667 -> 1.5000; provision lowers iff xi_r<1: observed change +
+   saturating ln(1+X)         df=0.0: Gamma sim 1.1364 -> 0.9615 when d .2->.3 (formula 1.1364->0.9615); rule sign(df/(d+df)-xi_r)=- (xi_r=0.36), observed - | k0 .1->.2: Gamma sim 1.1364 -> 0.9615; provision lowers iff xi_r<1: observed change -
+   saturating ln(1+X)         df=0.1: Gamma sim 0.7576 -> 0.7212 when d .2->.3 (formula 0.7576->0.7212); rule sign(df/(d+df)-xi_r)=- (xi_r=0.36), observed - | k0 .1->.2: Gamma sim 0.7576 -> 0.6410; provision lowers iff xi_r<1: observed change -
+  [ok] m03(A,B): every simulated sign agrees with the rule (correction: sign of df/(d+df)-xi_r; provision: lowers iff xi_r<1, none at xi_r=1) in 10/10 settings
+  [ok] m03(A,B): Gamma read off the nonlinear relative-mode factor equals formula (2) to 1e-3 in every setting
+   Gamma_delta, ratio channel, no diffusion, delta=0.9: d=0.1: 0.8526  d=0.2: 1.1571  d=0.4: 1.4087  (rises with d although Gamma = 1.8*omega is unchanged)
+  [ok] Gamma_delta of a ratio channel rises with d without diffusion (0.8526, 1.1571, 1.4087)
+(b) f3(B): sign of d by channel form (n=2, kap*Om=1, k0=0.2, df=0.1): numerical spectral radius of the deviation map
+   ratio-form, d=0.1: r_j=2.000 Gamma=0.714 spectral radius=0.9429 -> stable
+   ratio-form, d=0.2: r_j=2.000 Gamma=0.952 spectral radius=0.9857 -> stable
+   ratio-form, d=0.3: r_j=2.000 Gamma=1.071 spectral radius=1.0286 -> UNSTABLE
+   ratio-form, d=0.6: r_j=2.000 Gamma=1.224 spectral radius=1.1571 -> UNSTABLE
+   level-form, d=0.1: r_j=8.400 Gamma=3.000 spectral radius=1.4000 -> UNSTABLE
+   level-form, d=0.2: r_j=4.200 Gamma=2.000 spectral radius=1.3000 -> UNSTABLE
+   level-form, d=0.3: r_j=2.800 Gamma=1.500 spectral radius=1.2000 -> UNSTABLE
+   level-form, d=0.6: r_j=1.400 Gamma=0.857 spectral radius=0.9000 -> stable
+  [ok] f3(B): stable iff Gamma<1 in 8/8; faster depreciation raises Gamma of a ratio-form stock with diffusion (0.71->1.22), correction lowers a level-form stock's (3.00->0.86)
+(c) Codex case 2: r=1.8, df=0.1: d=0.1 -> (Gamma, Gamma_delta) = (0.9000, 0.5786); d=0.2 -> (1.2000, 0.8757)
+  [ok] Codex 2: raising the decay rate of a log-strength stock raises Gamma across 1 and raises Gamma_delta
+(d) systems s1(a): ratio form sigma = r ln X, r=2; kappa*Omega=1, k0=0.2, delta_f=0.1, n=2
+   d=0.05: Gamma=0.476  numerical spectral radius=0.9500  deviation x1.21e-11 after 400 periods  -> stable
+   d=0.10: Gamma=0.714  numerical spectral radius=0.9429  deviation x5.84e-11 after 400 periods  -> stable
+   d=0.20: Gamma=0.952  numerical spectral radius=0.9857  deviation x0.00317 after 400 periods  -> stable
+   d=0.30: Gamma=1.071  numerical spectral radius=1.0286  deviation x2.67e+03 after 400 periods  -> UNSTABLE
+   d=0.60: Gamma=1.224  numerical spectral radius=1.1571  deviation x4.74e+03 after 400 periods  -> UNSTABLE
+   d=0.90: Gamma=1.286  numerical spectral radius=1.2857  deviation x5.35e+03 after 400 periods  -> UNSTABLE
+(d') systems s1(a'): difference form sigma = s X, s=1.2 (strength linear in the stock, like rule support)
+   d=0.05: r_j=s X*=16.800  Gamma=4.000  spectral radius=1.4500  -> UNSTABLE
+   d=0.10: r_j=s X*=8.400  Gamma=3.000  spectral radius=1.4000  -> UNSTABLE
+   d=0.20: r_j=s X*=4.200  Gamma=2.000  spectral radius=1.3000  -> UNSTABLE
+   d=0.30: r_j=s X*=2.800  Gamma=1.500  spectral radius=1.2000  -> UNSTABLE
+   d=0.60: r_j=s X*=1.400  Gamma=0.857  spectral radius=0.9000  -> stable
+   d=0.90: r_j=s X*=0.933  Gamma=0.600  spectral radius=0.6000  -> stable
+  [ok] systems s1(a,a'): spectral radius > 1 iff Gamma > 1 in 12/12; Gamma rises with d (ratio form, df>0) and falls with d (level form)
+(e) m03(D) and systems s1(d): a delayed countervailing channel, net DC gain below one, growing oscillation [key delayosc]
+   net DC gain sum a_j/(1-D_j) = 0.250 (<1); eigenvalue modulus 1.0075; period 51.6; |y| after 600 periods 292.0
+  [ok] delayosc: net DC gain 0.25 < 1 yet modulus 1.0075 > 1, period 51.6, |y(600)| = 292: correction cannot be subtracted from Gamma
+(f) m1(A) (Math-Fable reviewer): three stocks, sigma = r1 ln X1 + a X2 + b sqrt(X3): 2996 systems, Perron root > 1 <=> Gamma > 1 mismatches: 0 (skipped 4 near the boundary)
+  [ok] m1(A): three stocks with ratio, linear and square-root channels: Perron root > 1 iff Gamma > 1 in 2996/2996
+   m1(A'): nonlinear simulation, three stocks, deviation 1e-4 for 3000 periods:
+   r1=1.2, a=0.0, b=0.0: r_j=[1.2, 0.0, 0.0], omega=[1.0, 1.0, 0.429], Gamma=1.200 -> gap 4.00e+00 (grows)
+   r1=0.7, a=0.8, b=0.0: r_j=[0.7, 0.2, 0.0], omega=[1.0, 1.0, 0.429], Gamma=0.900 -> gap 2.35e-12 (decays)
+   r1=0.7, a=0.0, b=1.5: r_j=[0.7, 0.0, 0.992], omega=[1.0, 1.0, 0.429], Gamma=0.983 -> gap 5.51e-06 (decays)
+   r1=0.5, a=0.3, b=0.6: r_j=[0.5, 0.075, 0.397], omega=[1.0, 1.0, 0.429], Gamma=0.688 -> gap 1.39e-14 (decays)
+   r1=0.9, a=0.6, b=0.8: r_j=[0.9, 0.15, 0.529], omega=[1.0, 1.0, 0.429], Gamma=1.201 -> gap 4.00e+00 (grows)
+  [ok] m1(A'): the nonlinear gap grows iff Gamma > 1 in 5/5 (channels each too weak to open the loop open it together: Gamma 1.201)
+   m1(B): price of standing on the three-stock model: 189 systems with Gamma<1, Gd<0.9: max relative error of PV vs Gd/(1-Gd) 7.06e-07
+  [ok] m1(B): the price of standing equals Gamma_delta/(1-Gamma_delta) on three mixed stocks (189 systems, max rel. error 7.1e-07)
+(g) s1 (Math-Opus reviewer): Prop 2.2(1): 1500 random systems (1-3 channels, log/linear entry, k0, diffusion): mismatches 0, skipped near boundary 11
+  [ok] s1: power iteration on the sum-zero subspace agrees with Gamma>1 in every one of 1489 systems
+   Prop 2.2(3): 200 systems with Gamma<0.95: max relative error of PV vs Gd/(1-Gd) = 3.96e-07
+  [ok] s1: the price of standing equals Gd/(1-Gd) in 200 systems with up to three channels (max rel. error 4.0e-07)
+   Gamma_delta <= Gamma violations: 0
+  [ok] s1: Gamma_delta <= Gamma in 2,000 random systems at four discount factors
+   finite perturbations when Gamma>1 but Gd<1: PV per unit y vs first-order lambda
+     Gamma=1.50, delta=0.7: Gd=0.477, lambda=0.913; x=1e-06: 0.913; x=0.001: 0.913; x=0.01: 0.913; x=0.05: 0.912; x=0.2: 0.901
+     Gamma=1.50, delta=0.8: Gd=0.667, lambda=2.000; x=1e-06: 2.000; x=0.001: 2.000; x=0.01: 1.998; x=0.05: 1.980; x=0.2: 1.888
+     Gamma=1.50, delta=0.85: Gd=0.797, lambda=3.923; x=1e-06: 3.923; x=0.001: 3.906; x=0.01: 3.837; x=0.05: 3.657; x=0.2: 3.234
+(h) [derived] adv_checks s1 (Adv-O reviewer), key gammarange: decisiveness r* that a single channel needs for Gamma=1 (beta=0, omega=1)
+   delta_f=0.05/month: d=0.01: r*=6.00  d=0.02: r*=3.50  d=0.03: r*=2.67  d=0.05: r*=2.00  d=0.10: r*=1.50
+   delta_f=0.10/month: d=0.01: r*=11.00  d=0.02: r*=6.00  d=0.03: r*=4.33  d=0.05: r*=3.00  d=0.10: r*=2.00
+   (Remark 8.6 uses delta_f = 0.1/month for a lead diffusing; no channel's Gamma is estimated anywhere in the paper)
+
+=== TD [independent; (c) derived (roots of the secular equation)] keys: tdec (S2), loopgain
+    Time to decisiveness: the gap multiplier 1+(d+df)(Gamma-1); Gamma sets the sign, turnover the speed; several channels: the Perron root
+(a) f3(C): exact growth factor of a single-channel gap (numerical Jacobian) vs 1+(dK+df)(Gamma-1) and vs V6.1's 1+dK(Gamma-1)
+   d=0.2 df=0.0 r=3.0: Gamma=3.000; exact multiplier 1.4000; 1+(d+df)(Gamma-1)=1.4000; text 1+d(Gamma-1)=1.4000; periods 1%->50%: exact 11.6, text 11.6
+   d=0.2 df=0.1 r=2.0: Gamma=1.333; exact multiplier 1.1000; 1+(d+df)(Gamma-1)=1.1000; text 1+d(Gamma-1)=1.0667; periods 1%->50%: exact 41.0, text 60.6
+   d=0.05 df=0.05 r=3.0: Gamma=1.500; exact multiplier 1.0500; 1+(d+df)(Gamma-1)=1.0500; text 1+d(Gamma-1)=1.0250; periods 1%->50%: exact 80.2, text 158.4
+   d=0.2 df=0.3 r=1.2: Gamma=0.480; exact multiplier 0.7400; 1+(d+df)(Gamma-1)=0.7400; text 1+d(Gamma-1)=0.8960; periods 1%->50%: exact -13.0, text inf
+  [ok] f3(C): the exact multiplier is 1+(d+df)(Gamma-1) in 4/4 (1.4000, 1.1000, 1.0500, 0.7400); V6.1's 1+d(Gamma-1) is wrong in the 3 cases with diffusion
+(b) m03(C): simulated factor of the nonlinear model vs 1+(d+df)(Gamma-1); time 1% -> 50% in the nonlinear model
+   r=3.0 d=0.2 df=0.0: Gamma=3.000; simulated factor 1.40000; 1+(d+df)(Gamma-1)=1.40000; V6.1's 1+d(Gamma-1)=1.40000; 1%->50% gap in 13 periods (linear estimate 11.6)
+   r=3.0 d=0.05 df=0.05: Gamma=1.500; simulated factor 1.05000; 1+(d+df)(Gamma-1)=1.05000; V6.1's 1+d(Gamma-1)=1.02500; 1%->50% gap in more than 10,000 periods (linear estimate 80.2)
+   r=2.0 d=0.2 df=0.1: Gamma=1.333; simulated factor 1.10000; 1+(d+df)(Gamma-1)=1.10000; V6.1's 1+d(Gamma-1)=1.06667; 1%->50% gap in 50 periods (linear estimate 41.0)
+   r=1.5 d=0.1 df=0.02: Gamma=1.250; simulated factor 1.03000; 1+(d+df)(Gamma-1)=1.03000; V6.1's 1+d(Gamma-1)=1.02500; 1%->50% gap in 144 periods (linear estimate 132.3)
+  [ok] m03(C): the simulated factor equals 1+(d+df)(Gamma-1) to 1e-4 in 4/4 (1.40000, 1.05000, 1.10000, 1.03000)
+  [ok] m03(C): at Gamma=3, d=0.2, df=0 the nonlinear gap goes from 1% to 50% in 13 periods (linear estimate 11.6); with diffusion (Gamma=1.5, d=df=0.05, r=3) it never reaches 50%
+   same Gamma=1.2, different turnover (Sys I1):
+      d+df=0.5: factor 1.10000, periods to grow 50x 41
+      d+df=0.02: factor 1.00400, periods to grow 50x 980
+  [ok] at the same Gamma=1.2 a channel with turnover 0.5 needs 41 periods to grow a gap 50-fold, one with turnover 0.02 needs 980: Gamma sets the sign, turnover the speed
+   two channels with the same Gamma but different turnover split:
+      d=(0.3,0.02): Gamma=1.200; simulated factor 1.00877; Perron root of (S1) 1.00877
+      d=(0.1,0.1): Gamma=1.200; simulated factor 1.02000; Perron root of (S1) 1.02000
+  [ok] m03(C): with two channels the simulated factor is the Perron root of (S1) (1.00877 vs 1.02000 at the same Gamma=1.2): not a function of Gamma
+(c) [derived] f3(C): secular roots for two channels with gains 0.6+0.6 (Gamma=1.2), turnovers (dK, dZ)
+   dK=0.5, dZ=0.5: lambda*=1.1000; periods 1%->50% = 41
+   dK=0.02, dZ=0.02: lambda*=1.0040; periods 1%->50% = 980
+   dK=0.5, dZ=0.02: lambda*=1.0092; periods 1%->50% = 427
+  [ok] secular roots 1.1000, 1.0040, 1.0092 (41, 980 and 427 periods from 1% to 50%)
+(d) [derived] systems s1(b),(c) and Math-Fable m6(3): the V6.1 factor against the corrected one
+   d=0.2, delta_f=0.0: Gamma=3.000; 1+d(G-1)=1.4000; 1+(d+df)(G-1)=1.4000
+   d=0.2, delta_f=0.1: Gamma=2.000; 1+d(G-1)=1.2000; 1+(d+df)(G-1)=1.3000
+   d=0.2, delta_f=0.3: Gamma=1.200; 1+d(G-1)=1.0400; 1+(d+df)(G-1)=1.1000
+   dK=0.2, df=0.0, Gamma=1.5: 1+(dK+df)(Gamma-1)=1.100 (V6.1 1.100); periods 1%->50%: 41 vs V6.1 41
+   dK=0.2, df=0.1, Gamma=1.5: 1+(dK+df)(Gamma-1)=1.150 (V6.1 1.100); periods 1%->50%: 28 vs V6.1 41
+   dK=0.05, df=0.05, Gamma=3.0: 1+(dK+df)(Gamma-1)=1.200 (V6.1 1.100); periods 1%->50%: 21 vs V6.1 41
+
+=== CE [independent] keys: compound
+    A point of enough: a cap strictly below K* holds, a cap at K* can fail; recovery from every start needs an inflow not tied to rank (sharing, provision or diffusion)
+(a) f3(A): caps: local stability at K_bar = K* and the role of diffusion
+   n=2 r=3.0 beta=0.0 k0=0.0 df=0.0: Gamma0(n-1)/n=1.500 vs 1+df(n-1)/(n dK)=1.000 -> predicted falls away; laggard from 0.999 K* ends at 0.0000 K* (falls away) OK
+   n=2 r=1.5 beta=0.0 k0=0.0 df=0.0: Gamma0(n-1)/n=0.750 vs 1+df(n-1)/(n dK)=1.000 -> predicted returns; laggard from 0.999 K* ends at 1.0000 K* (returns) OK
+   n=4 r=2.0 beta=0.0 k0=0.0 df=0.0: Gamma0(n-1)/n=1.500 vs 1+df(n-1)/(n dK)=1.000 -> predicted falls away; laggard from 0.999 K* ends at 0.0000 K* (falls away) OK
+   n=4 r=1.2 beta=0.0 k0=0.0 df=0.0: Gamma0(n-1)/n=0.900 vs 1+df(n-1)/(n dK)=1.000 -> predicted returns; laggard from 0.999 K* ends at 1.0000 K* (returns) OK
+   n=5 r=1.5 beta=0.0 k0=0.0 df=0.0: Gamma0(n-1)/n=1.200 vs 1+df(n-1)/(n dK)=1.000 -> predicted falls away; laggard from 0.999 K* ends at 0.0000 K* (falls away) OK
+   n=2 r=3.0 beta=0.0 k0=0.0 df=0.6: Gamma0(n-1)/n=1.500 vs 1+df(n-1)/(n dK)=2.500 -> predicted returns; laggard from 0.999 K* ends at 1.0000 K* (returns) OK
+   n=4 r=2.0 beta=0.0 k0=0.0 df=0.3: Gamma0(n-1)/n=1.500 vs 1+df(n-1)/(n dK)=2.125 -> predicted returns; laggard from 0.999 K* ends at 1.0000 K* (returns) OK
+   n=4 r=2.0 beta=0.0 k0=0.0 df=0.1: Gamma0(n-1)/n=1.500 vs 1+df(n-1)/(n dK)=1.375 -> predicted falls away; laggard from 0.999 K* ends at 0.4811 K* (falls away) OK
+   n=3 r=2.0 beta=0.3 k0=0.0 df=0.0: Gamma0(n-1)/n=0.933 vs 1+df(n-1)/(n dK)=1.000 -> predicted returns; laggard from 0.999 K* ends at 1.0000 K* (returns) OK
+   n=3 r=2.0 beta=0.0 k0=0.05 df=0.0: Gamma0(n-1)/n=1.026 vs 1+df(n-1)/(n dK)=1.000 -> predicted falls away; laggard from 0.999 K* ends at 0.4084 K* (falls away) OK
+  [ok] f3(A): the local condition at K_bar = K* predicts return or exclusion in 10/10 (incl. diffusion and provision cases)
+   strictly lower cap (0.98 K*), n=2 r=3 (Gamma=3), no diffusion: laggard from 0.999 cap ends at 1.0000 cap (returns)
+   strictly lower cap (0.9 K*), n=2 r=3 (Gamma=3), no diffusion: laggard from 0.999 cap ends at 1.0000 cap (returns)
+  [ok] f3(A): strictly lower caps (0.98 K*, 0.9 K*) hold a laggard at Gamma=3
+   diffusion as the third restoring source (n=2, r=2, d=0.2, df=0.6, cap=K*=2.5, beta=k0=0): from K=0.01 -> [2.499999999999999, 2.499999999999999]; min phi on (0, Kbar) = 0.0007
+   necessity: beta=k0=df=0, r=2, n=2, cap=0.9 K*: laggard from 0.3 cap -> 9.88e-324 (excluded)
+   with df=0.05 only: laggard from 0.3 cap -> 0.3624 (0.16 of the cap); phi(0+)=0.0562; min phi on (0,Kbar)=-0.0131
+   [finding] the stall is at K = 0.36, i.e. 0.16 K_bar (D2-fable wrote '0.36 K_bar'); the minimum of phi on a 1,000-point grid (0.0007) is grid-dependent: 0.0001 on m04's 10,000-point grid and 0.000075 in Codex's exact factorization (f below)
+  [ok] f3(A): diffusion alone restores (min phi > 0); with none of the three the laggard is excluded; df=0.05 alone stalls it at K=0.36 (0.16 of the cap): a source, not a guarantee
+(b) m04(A): cap at and below K*
+   cap = K* = 2.5, r=3, start (2.499, 2.5): after 400 periods 2.385e-32, 2.5000  (excluded)
+   cap = 0.98 K* = 2.45, same start just below the cap: after 4000 periods 2.450000, 2.450000  (restored)
+   400 random settings: strict cap (0.97 K*) restored from just below in 400 of 400;
+   cap = K*: local exclusion predicted by (1-beta) r omega (n-1)/n > 1 + df(n-1)/(n d) in 400 of 400 (simulated)
+  [ok] m04(A): Codex's cap-equality case excluded (2.4e-32); 0.98 K* restores; strict cap holds in 400/400; the criterion at equality predicts 400/400
+(c) m04(B): global recovery: criterion phi>0 on (0,Kbar) vs simulation from a laggard at 1% of the cap
+   Codex: n=2 r=2 d=.2 df=.6, cap=K*=2.5, no sharing or provision: min phi on grid 0.0001 (>0); from (0.01, 2.5) -> (2.500000, 2.500000)
+   random settings with leaders provably held at the cap (Kbar <= (kap Om + n k0)/(n d + df)): criterion agrees with simulation in 444 of 446
+   disagreements: the criterion concerns EVERY start; these laggards start above the exclusion threshold: [{'n': 2, 'r': 1.19, 'd': 0.362, 'cap_over_Kstar': 0.789, 'criterion': False, 'recovered_from_1pct': True, 'exclusion_threshold_over_cap': 0.007}, {'n': 3, 'r': 1.13, 'd': 0.374, 'cap_over_Kstar': 0.661, 'criterion': False, 'recovered_from_1pct': True, 'exclusion_threshold_over_cap': 0.002}]
+  [ok] m04(B): phi>0 agrees with simulation in 444/446; every disagreement is a start above an exclusion threshold below 1% of the cap
+(d) m04(C): r>1 and no inflow not tied to rank: laggards below a threshold are excluded; any one of the three restores
+   beta=0 k0=0 df=0: phi(0+)=0.0000; laggard 0.05->0.0000, 0.2->0.0000, 0.5->0.8000
+   beta=0.1 k0=0 df=0: phi(0+)=0.0200; laggard 0.05->0.8000, 0.2->0.8000, 0.5->0.8000
+   beta=0 k0=0.05 df=0: phi(0+)=0.0500; laggard 0.05->0.8000, 0.2->0.8000, 0.5->0.8000
+   beta=0 k0=0 df=0.15: phi(0+)=0.0960; laggard 0.05->0.8000, 0.2->0.8000, 0.5->0.8000
+  [ok] m04(C): with none of sharing, provision, diffusion, laggards at 0.05 and 0.2 are excluded; with any one of them all return
+(e) Codex 3a (cap equality): first step [2.498899940020017, 2.5]; after 400 periods [2.3851191196683206e-32, 2.5]
+  [ok] Codex 3a: a cap equal to the symmetric steady capacity is not locally stable at r=3
+(f) Codex 3b (positive diffusion): smallest laggard inflow on the grid 0.000075; after 1000 periods from (0.01, 2.5): [2.499999999999999, 2.499999999999999]
+  [ok] Codex 3b: diffusion restores the laggard with no sharing or outside provision (inflow positive on the whole grid)
+(g) s9 (Math-Opus reviewer): cap exactly at K*, df=0: local stability fails when Gamma > n/(n-1)
+   n=2, r=3.0: Gamma=3.00 vs n/(n-1)=2.00; phi just below the cap K*: -1.25e-04, -1.27e-03 -> laggard falls away
+   n=2, r=1.5: Gamma=1.50 vs n/(n-1)=2.00; phi just below the cap K*: +6.24e-05, +6.16e-04 -> laggard returns
+   n=4, r=2.0: Gamma=2.00 vs n/(n-1)=1.33; phi just below the cap K*: -6.25e-05, -6.25e-04 -> laggard falls away
+   n=4, r=1.2: Gamma=1.20 vs n/(n-1)=1.33; phi just below the cap K*: +1.25e-05, +1.23e-04 -> laggard returns
+  [ok] s9: at a cap equal to K* without diffusion the laggard returns iff Gamma < n/(n-1) (4/4)
+(h) m1(C) (Math-Fable reviewer): n=5, r=1.5, dK=0.05: caps at 1.00, 0.98, 0.90 of K*
+   cap/K* = 1.00: phi(cap) = +0.0000, phi'(cap) = +0.0100, laggard from 0.97 cap ends at 0.0000 (excluded/stalled)
+   cap/K* = 0.98: phi(cap) = +0.0020, phi'(cap) = +0.0112, laggard from 0.97 cap ends at 1.9600 (returns to cap)
+   cap/K* = 0.90: phi(cap) = +0.0100, phi'(cap) = +0.0167, laggard from 0.97 cap ends at 1.8000 (returns to cap)
+  [ok] m1(C): at equality the laggard is excluded (phi'(K*) = +0.0100 > 0); caps at 0.98 and 0.90 of K* hold
+
+=== PD [independent] keys: loopgain, standprice
+    Price domain: beyond Gamma_delta = 1 the price of standing is infinite (a cusp), not negative; slow convergence inside; logarithm at the boundary
+(a) Codex case 1 (n=2, kappa Omega=1, d=0.2, r=2, delta=0.9): Gamma=2.000, Gamma_delta=1.285714, printed multiplier Gd/(1-Gd)=-4.500; nonlinear discounted advantage from (2.50001, 2.49999): 0.0107012
+  [ok] Codex 1: outside the domain the printed multiplier is negative while the true discounted advantage is positive
+(b) f1(C): Lambda*=1.200, delta*Lambda*=1.080 > 1; predicted PV ~ eps^alpha, alpha=0.5779; PV/eps ~ eps^-0.4221
+   eps=1e-02: PV=5.369759e-01, PV/eps=5.3698e+01
+   eps=1e-03: PV=1.493223e-01, PV/eps=1.4932e+02  local exponent of PV/eps -0.4442
+   eps=1e-04: PV=4.020710e-02, PV/eps=4.0207e+02  local exponent of PV/eps -0.4302
+   eps=1e-05: PV=1.070116e-02, PV/eps=1.0701e+03  local exponent of PV/eps -0.4251
+   eps=1e-06: PV=2.835841e-03, PV/eps=2.8358e+03  local exponent of PV/eps -0.4233
+   eps=1e-07: PV=7.502866e-04, PV/eps=7.5029e+03  local exponent of PV/eps -0.4225
+  [ok] f1(C): PV > 0 at every eps and the exponent of PV/eps tends to alpha-1 = -0.4221 (last -0.4225)
+(c) m02(D): m_rel=1.200, predicted exponent of PV in eps 0.5779
+   eps 1e-02: PV 5.369759e-01, PV/eps 5.370e+01; fitted exponent to next: 0.5628
+   eps 1e-04: PV 4.020710e-02, PV/eps 4.021e+02; fitted exponent to next: 0.5758
+   eps 1e-06: PV 2.835841e-03, PV/eps 2.836e+03; fitted exponent to next: 0.5776
+   eps 1e-08: PV 1.983838e-04, PV/eps 1.984e+04; fitted exponent to next: 0.5778
+  [ok] m02(D): fitted exponent 0.5778 equals ln(1/delta)/ln(m) = 0.5779
+   inside the domain but above Gamma=1 (delta=0.8, Gd=0.8889, delta*m=0.96): formula Gd/(1-Gd) = 8.000000; PV/eps:
+      eps 1e-4: 7.163001 (gap 8.37e-01)
+      eps 1e-6: 7.701515 (gap 2.98e-01)
+      eps 1e-8: 7.893556 (gap 1.06e-01)
+      eps 1e-10: 7.962018 (gap 3.80e-02)
+      eps 1e-12: 7.986944 (gap 1.31e-02)
+  [ok] m02(D): for Gamma > 1 > Gamma_delta, PV/eps -> Gd/(1-Gd) = 8 from below, the gap shrinking by 0.357 per two decades (eps^0.224)
+   at delta*m = 1: PV/eps at eps=1e-3,1e-5,1e-7,1e-9: 14.53, 22.95, 31.37, 39.79; increments 8.42, 8.42, 8.42
+  [ok] m02(D): at delta*Lambda* = 1, PV/eps grows by a constant per two decades (logarithmic)
+
+=== SP [independent: (B),(C),(D),(F),(G); identity: (A),(E) (first order by construction at a symmetric point)] keys: standprice, twoerrors, growprize (S3), twochan
+    Compounding prices standing, general form: relative against common return; growing prize, two-period and infinite horizon
+(A) [identity] f1(A): two-period contest, prize Om20 + g sum K with sharing beta in period 2; theta_eff read off e* vs (9) general
+   n=4 r=0.8 th0=+0.0 Om20=1.0 g=0.0 beta=0.0: e*=0.123917 theta_eff=-0.12725 formula=-0.12725 lam_rel=0.194 lam_com=0.000 -> narrower
+   n=4 r=0.8 th0=+0.0 Om20=1.0 g=1.0 beta=0.0: e*=0.115403 theta_eff=-0.00029 formula=-0.00029 lam_rel=0.951 lam_com=0.950 -> narrower
+   n=4 r=1.2 th0=+0.0 Om20=1.0 g=2.0 beta=0.0: e*=0.189011 theta_eff=-0.15728 formula=-0.15728 lam_rel=2.622 lam_com=1.900 -> narrower
+   n=4 r=1.0 th0=+1.0 Om20=1.0 g=0.5 beta=0.0: e*=0.085907 theta_eff=+0.85894 formula=+0.85894 lam_rel=0.699 lam_com=0.475 -> narrower
+   n=4 r=1.3 th0=+0.5 Om20=0.0 g=1.0 beta=0.0: e*=0.151045 theta_eff=+0.37445 formula=+0.37445 lam_rel=1.235 lam_com=0.950 -> narrower  [(1-beta) r = 1.30: predicts narrower]
+   n=4 r=1.3 th0=+0.5 Om20=0.0 g=1.0 beta=0.3: e*=0.136524 theta_eff=+0.54226 formula=+0.54226 lam_rel=0.864 lam_com=0.950 -> not narrower  [(1-beta) r = 0.91: predicts wider]
+   n=4 r=1.25 th0=+0.5 Om20=0.0 g=2.0 beta=0.2: e*=0.134698 theta_eff=+0.50000 formula=+0.50000 lam_rel=1.900 lam_com=1.900 -> not narrower  [(1-beta) r = 1.00: predicts same]
+   n=4 r=0.7 th0=+0.5 Om20=0.0 g=3.0 beta=0.0: e*=0.064891 theta_eff=+0.74175 formula=+0.74175 lam_rel=1.995 lam_com=2.850 -> not narrower  [(1-beta) r = 0.70: predicts wider]
+   n=4 r=1.0 th0=+0.5 Om20=0.0 g=3.0 beta=0.0: e*=0.107759 theta_eff=+0.50000 formula=+0.50000 lam_rel=2.850 lam_com=2.850 -> not narrower  [(1-beta) r = 1.00: predicts same]
+   n=4 r=1.2 th0=-0.5 Om20=0.5 g=0.5 beta=0.6: e*=0.221262 theta_eff=-0.44307 formula=-0.44307 lam_rel=0.303 lam_com=0.475 -> not narrower
+   n=4 r=1.3 th0=+1.9 Om20=0.0 g=1.0 beta=0.0: e*=0.053627 theta_eff=+1.78795 formula=+1.78795 lam_rel=1.235 lam_com=0.950 -> narrower  [(1-beta) r = 1.30: predicts narrower]
+   n=2 r=1.8 th0=+0.0 Om20=0.0 g=1.0 beta=0.2: e*=0.388338 theta_eff=-0.09680 formula=-0.09680 lam_rel=1.368 lam_com=0.950 -> narrower  [(1-beta) r = 1.44: predicts narrower]
+   n=2 r=1.8 th0=+0.0 Om20=0.0 g=1.0 beta=0.5: e*=0.335578 theta_eff=+0.02497 formula=+0.02497 lam_rel=0.855 lam_com=0.950 -> not narrower  [(1-beta) r = 0.90: predicts wider]
+   n=2 r=1.6 th0=+0.3 Om20=0.0 g=0.5 beta=0.0: e*=0.229209 theta_eff=+0.21765 formula=+0.21765 lam_rel=0.760 lam_com=0.475 -> narrower  [(1-beta) r = 1.60: predicts narrower]
+   max |theta_eff - formula| = 7.0e-08; sign rule held in 14/14 cases
+  [ok] f1(A): theta_eff equals the general form (9) in 14 cases (max error 7.0e-08 < 1e-6)
+  [ok] f1(A): narrower iff lam_rel > lam_com in 14/14, ties at (1-beta) r = 1
+(B) [independent] f1(B): infinite horizon, prize Omega_t = g S_t, no depreciation: PV(relative unit)/PV(common unit) by simulation
+   r=1.5 beta=0.0: PV_rel/PV_com = 2.53846, predicted 2.53846; (1-beta) r = 1.50
+   r=0.8 beta=0.0: PV_rel/PV_com = 0.68750, predicted 0.68750; (1-beta) r = 0.80
+   r=1.5 beta=0.5: PV_rel/PV_com = 0.62264, predicted 0.62264; (1-beta) r = 0.75
+   r=1.0 beta=0.0: PV_rel/PV_com = 1.00000, predicted 1.00000; (1-beta) r = 1.00
+   r=2.0 beta=0.3: PV_rel/PV_com = 2.08108, predicted 2.08108; (1-beta) r = 1.40
+   r=1.2 beta=0.2: PV_rel/PV_com = 0.92958, predicted 0.92958; (1-beta) r = 0.96
+  [ok] f1(B): PV ratio equals (1-beta)r(1-delta(1+g))/(1-delta(1+(1-beta)rg)) to 1e-4 and exceeds one iff (1-beta)r > 1
+(C) [independent] m02(A): prices of a relative and a common unit, nonlinear simulation vs Grel_d/(1-Grel_d), Gcom_d/(1-Gcom_d)
+   n=2 r=1.5 kap=0.5 d=0.2 df=0.0 k0=0.1 beta=0.0 Om=(1.0+0.0S) delta=0.9: Grel_d=0.6888 Gcom_d=0.0000 | relative: sim 2.213115 formula 2.213115 | common: sim 0.000000 formula 0.000000
+   n=2 r=1.5 kap=0.5 d=0.2 df=0.0 k0=0.1 beta=0.0 Om=(1.0+0.2S) delta=0.9: Grel_d=0.8265 Gcom_d=0.3214 | relative: sim 4.764587 formula 4.764706 | common: sim 0.473684 formula 0.473684
+   n=3 r=1.2 kap=0.4 d=0.15 df=0.05 k0=0.05 beta=0.2 Om=(2.0+0.15S) delta=0.95: Grel_d=0.5160 Gcom_d=0.2961 | relative: sim 1.066116 formula 1.066116 | common: sim 0.420664 formula 0.420664
+   n=4 r=0.8 kap=0.6 d=0.1 df=0.02 k0=0.0 beta=0.1 Om=(1.0+0.1S) delta=0.9: Grel_d=0.3115 Gcom_d=0.2842 | relative: sim 0.452514 formula 0.452514 | common: sim 0.397059 formula 0.397059
+   n=5 r=2.0 kap=0.3 d=0.25 df=0.1 k0=0.2 beta=0.0 Om=(3.0+0.5S) delta=0.85: Grel_d=0.7498 Gcom_d=0.3517 | relative: sim 2.996475 formula 2.996475 | common: sim 0.542553 formula 0.542553
+   OUTSIDE THE DOMAIN (Grel_d>=1): balanced growth n=2 r=1.5 df=0.0 beta=0.0 Om=0.3S (growth 1.050/period): Grel_d=1.0658 Gcom_d=0.7105 | relative: sim 226.004541 formula -16.200000 | common: sim 2.454545 formula 2.454545
+   balanced growth n=3 r=0.8 df=0.0 beta=0.0 Om=0.3S (growth 1.050/period): Grel_d=0.5684 Gcom_d=0.7105 | relative: sim 1.317073 formula 1.317073 | common: sim 2.454545 formula 2.454545
+   balanced growth n=3 r=1.3 df=0.05 beta=0.1 Om=0.3S (growth 1.050/period): Grel_d=0.6129 Gcom_d=0.6346 | relative: sim 1.583026 formula 1.583026 | common: sim 1.736842 formula 1.736842
+   largest relative error inside the domain 2.5e-05
+  [ok] m02(A): both closed-loop prices match the nonlinear simulation inside the domain (max rel. error 2.5e-05 < 1e-4)
+  [ok] m02(A): outside the domain (Grel_d=1.066) the simulated price is positive and large while the formula is negative
+(D) f1(D): if only GROSS winnings convert, theta_eff read from e* differs from the net-payoff formula
+   r=1.0 th0=0.0: net payoff reinvested: theta_eff=-0.1649 (formula -0.1649); gross winnings only: theta_eff=-0.3125
+   r=1.2 th0=0.5: net payoff reinvested: theta_eff=+0.2570 (formula +0.2570); gross winnings only: theta_eff=+0.1514
+  [ok] f1(D): with gross winnings only, theta_eff is lower still (premise 'net payoff reinvested' is load-bearing)
+(E) [identity] m02(B): two-period contest, period-2 prize Om20 + g sum K: direct e* vs e(theta) general and fixed-prize
+   {'g': 0.0}: e*=0.1388352 e(theta_general)=0.1388352 [theta=+0.4005; lam_rel=0.1421 lam_com=0.0000] e(theta_fixedprize)=0.1388352 [theta=+0.4005]
+   {'g': 0.3}: e*=0.1376206 e(theta_general)=0.1376206 [theta=+0.4117; lam_rel=0.2770 lam_com=0.1350] e(theta_fixedprize)=0.1479530 [theta=+0.3175]
+   {'g': 0.6, 'Om20': 0.0}: e*=0.1282051 e(theta_general)=0.1282051 [theta=+0.5000; lam_rel=0.2700 lam_com=0.2700] e(theta_fixedprize)=0.1475029 [theta=+0.3216]
+   {'g': 0.6, 'Om20': 0.0, 'r': 0.7}: e*=0.1230467 e(theta_general)=0.1230467 [theta=+0.5494; lam_rel=0.1890 lam_com=0.2700] e(theta_fixedprize)=0.1421059 [theta=+0.3705]
+   {'g': 0.6, 'Om20': 0.0, 'r': 1.4}: e*=0.1347019 e(theta_general)=0.1347019 [theta=+0.4388; lam_rel=0.3780 lam_com=0.2700] e(theta_fixedprize)=0.1542422 [theta=+0.2616]
+   {'g': 0.3, 'th0': 1.0, 'n': 4}: e*=0.0945766 e(theta_general)=0.0945766 [theta=+0.9090; lam_rel=0.2432 lam_com=0.1350] e(theta_fixedprize)=0.1021286 [theta=+0.7832]
+  [ok] m02(B): e* equals e(theta) of the general form (rel. error 3.6e-08)
+  [ok] m02(B): the fixed-prize form misses e* by up to 15% when the prize grows
+  [ok] m02(B): proportional prize: theta = theta0 at r=1, wider at r=0.7, narrower at r=1.4
+(F) [independent] m02(C): prize proportional to capacity: narrowing (Grel_d > Gcom_d) vs instability of equal shares (simulated)
+   no diffusion: narrowing and instability coincide in 24 of 24 cases; with diffusion they part in [(1.17, 0.0, 'narrows', 'stable')]
+  [ok] m02(C): without diffusion, narrowing iff equal shares unstable, 24/24
+  [ok] m02(C): with diffusion the objective can narrow while equal shares are stable
+   with df=0.03: simulated instability threshold r=1.2000 (1+df/(kap g)=1.2000); simulated narrowing threshold r=1.1421 (1+delta df/(1-delta(1-d))=1.1421)
+  [ok] diffusion separates the thresholds: narrowing at (1-beta)r > 1+delta df/(1-delta(1-d)), instability at 1+df/(kap g)
+   stationary total, fixed prize (n=3, r=1.5, k0=0.1): Gamma=0.938 (<1: equal standing stable) while Gcom_d=0 < Grel_d: the objective narrows
+(G) [independent] m02(E): Test Gamma's observable: ratio of intensity's response to shared loss and to private cost vs 1+theta
+   n=2 theta=-0.5: ratio 0.50004, 1+theta 0.50000
+   n=3 theta=0.0: ratio 0.99996, 1+theta 1.00000
+   n=4 theta=-0.43: ratio 0.56997, 1+theta 0.57000
+   n=4 theta=1.0: ratio 1.99960, 1+theta 2.00000
+  [ok] m02(E): the observable equals 1+theta (max error 4.0e-04)
+(H) Codex case 9: 1+theta_Gamma with won share 1 -> 0.5846; with provision (won share 0.5) -> 0.8058
+  [ok] Codex 9: provision raises the weight on what all share (Test Gamma's sign: 1+theta rises with provision)
+(I) [identity] twoerrors (Adv-O I2): an actor whose held theta0 equals the true coupling kappa acts on theta_Gamma(kappa) < 0 once Gamma_delta > n kappa/((n-1)(1+kappa))
+   n=2 kappa=0.2: working theta below 0 once Gamma_delta > 0.333;  G=0.25:+0.06, G=0.5:-0.14, G=0.75:-0.45, G=0.9:-0.74
+   n=2 kappa=0.4: working theta below 0 once Gamma_delta > 0.571;  G=0.25:+0.27, G=0.5:+0.08, G=0.75:-0.26, G=0.9:-0.62
+   n=2 kappa=1.0: working theta below 0 once Gamma_delta > 1.000;  G=0.25:+1.00, G=0.5:+1.00, G=0.75:+1.00, G=0.9:+1.00
+   n=4 kappa=0.2: working theta below 0 once Gamma_delta > 0.222;  G=0.25:-0.03, G=0.5:-0.29, G=0.75:-0.61, G=0.9:-0.84
+   n=4 kappa=0.4: working theta below 0 once Gamma_delta > 0.381;  G=0.25:+0.15, G=0.5:-0.15, G=0.75:-0.53, G=0.9:-0.80
+   n=4 kappa=1.0: working theta below 0 once Gamma_delta > 0.667;  G=0.25:+0.71, G=0.5:+0.33, G=0.75:-0.20, G=0.9:-0.64
+  [ok] twoerrors threshold Gamma_delta* = n kappa/((n-1)(1+kappa)) (n=4, kappa=0.4: 0.381)
+(J) [identity] prop39 (Adv-F): two-period contest, gross-vs-net as in v2 (net payoff reinvested), prize W2_0 + g sum K
+   r=0.8 theta0=0.0 g=0.0: theta_eff(num)=-0.1272 general form -0.1272; fixed-prize formula -0.1272
+   r=0.8 theta0=0.0 g=1.0: theta_eff(num)=-0.0003 general form -0.0003; fixed-prize formula -0.4162
+   r=1.2 theta0=0.0 g=0.0: theta_eff(num)=-0.2062 general form -0.2062; fixed-prize formula -0.2062
+   r=1.2 theta0=0.0 g=1.0: theta_eff(num)=-0.1701 general form -0.1701; fixed-prize formula -0.5266
+   proportional prize W2 = sum K, r=0.7, theta0=0.5: theta_eff=+0.6508 (not narrower)
+   proportional prize W2 = sum K, r=1.0, theta0=0.5: theta_eff=+0.5000 (not narrower)
+   proportional prize W2 = sum K, r=1.3, theta0=0.5: theta_eff=+0.3744 (narrower)
+  [ok] prop39: theta_eff matches the general form; with a proportional prize it narrows iff r > 1
+
+=== MP [independent] keys: loopgain, standprice, eqgain (S2)
+    Markov-perfect compounding contest: price of standing and both elasticities (r_eq for stability, r_pr for the price); amplification; laggards; multiplicity
+(a) m01(D): static Tullock with weights, own effort fixed, rivals at their equilibrium: r_pr/r vs 2(n-1)/n
+   n=2: own-only 1.000000, relative 1.000000, 2(n-1)/n = 1.000000
+   n=3: own-only 1.333333, relative 1.333333, 2(n-1)/n = 1.333333
+   n=4: own-only 1.500000, relative 1.500000, 2(n-1)/n = 1.500000
+   n=6: own-only 1.666667, relative 1.666667, 2(n-1)/n = 1.666667
+   n=10: own-only 1.800000, relative 1.800000, 2(n-1)/n = 1.800000
+  [ok] m01(D): r_pr/r = 2(n-1)/n exactly in the static Tullock (n = 2, 3, 4, 6, 10)
+(b) m2_fullgame (Math-Fable reviewer): two-period game, period-2 effort responding to capacity; lambda_full/lambda_red vs 2(n-1)/n
+   {'n': 2}: e*=0.226616; e(theta(lambda_full))=0.226616; lambda_full/lambda_red=1.0000 vs 2(n-1)/n=1.0000
+   {'n': 3}: e*=0.192748; e(theta(lambda_full))=0.192748; lambda_full/lambda_red=1.3333 vs 2(n-1)/n=1.3333
+   {'n': 4}: e*=0.158002; e(theta(lambda_full))=0.158002; lambda_full/lambda_red=1.5000 vs 2(n-1)/n=1.5000
+   {'n': 6}: e*=0.113481; e(theta(lambda_full))=0.113481; lambda_full/lambda_red=1.6667 vs 2(n-1)/n=1.6667
+   {'n': 3, 'r2': 1.0, 'Om2': 4.0}: e*=0.198839; e(theta(lambda_full))=0.198839; lambda_full/lambda_red=1.3333 vs 2(n-1)/n=1.3333
+   {'n': 4, 'dl': 0.5}: e*=0.152327; e(theta(lambda_full))=0.152327; lambda_full/lambda_red=1.5000 vs 2(n-1)/n=1.5000
+   {'n': 3, 'kap': 1.0, 'K0': 1.0}: e*=0.237692; e(theta(lambda_full))=0.237692; lambda_full/lambda_red=1.3333 vs 2(n-1)/n=1.3333
+  [ok] m2_fullgame: the two-period price with responding period-2 effort is lambda_red * 2(n-1)/n, and e* = e(theta(lambda_full))
+(c) m01(B,C): MPE, n=2, delta=1/1.1 (Gd = Gamma/2), small jumps by large r; lam_MPE vs envelope formula with measured r_pr
+   r=4 Gamma=0.2: jump=0.0050 lam_MPE=0.1164 lam_pred=0.1166 struct=0.1111 MPE/struct=1.05 | r_eq/r=1.09 (h=2,12 cells: 1.09,1.09) r_pr/r=1.04 | Geq=0.22 Geq_d=0.11 Gpr_d=0.10 | lam(.25)=0.0081 lam(.75)=0.0578 | s40=0.501 | BRgap 6e-17 conv 1e-11
+   r=4 Gamma=0.3: jump=0.0075 lam_MPE=0.1941 lam_pred=0.1950 struct=0.1765 MPE/struct=1.10 | r_eq/r=1.18 (h=2,12 cells: 1.18,1.17) r_pr/r=1.09 | Geq=0.35 Geq_d=0.18 Gpr_d=0.16 | lam(.25)=0.0093 lam(.75)=0.0856 | s40=0.501 | BRgap -6e-17 conv 1e-11
+   r=4 Gamma=0.4: jump=0.0100 lam_MPE=0.3099 lam_pred=0.3170 struct=0.2500 MPE/struct=1.24 | r_eq/r=1.41 (h=2,12 cells: 1.41,1.40) r_pr/r=1.20 | Geq=0.56 Geq_d=0.28 Gpr_d=0.24 | lam(.25)=0.0089 lam(.75)=0.1102 | s40=0.503 | BRgap 0e+00 conv 1e-11
+   r=4 Gamma=0.45: jump=0.0113 lam_MPE=0.5131 lam_pred=0.6425 struct=0.2903 MPE/struct=1.77 | r_eq/r=2.48 (h=2,12 cells: 2.51,2.37) r_pr/r=1.74 | Geq=1.11 Geq_d=0.56 Gpr_d=0.39 | lam(.25)=0.0085 lam(.75)=0.1198 | s40=0.514 | BRgap 0e+00 conv 1e-11
+   r=4 Gamma=0.5: jump=0.0125 lam_MPE=0.7800 lam_pred=1.5595 struct=0.3333 MPE/struct=2.34 | r_eq/r=3.87 (h=2,12 cells: 3.96,3.56) r_pr/r=2.44 | Geq=1.93 Geq_d=0.97 Gpr_d=0.61 | lam(.25)=0.0083 lam(.75)=0.1295 | s40=0.524 | BRgap 0e+00 conv 1e-11
+   r=4 Gamma=0.6: jump=0.0150 lam_MPE=1.1420 lam_pred=6.1410 struct=0.4286 MPE/struct=2.66 | r_eq/r=4.72 (h=2,12 cells: 4.83,4.35) r_pr/r=2.87 | Geq=2.83 Geq_d=1.41 Gpr_d=0.86 | lam(.25)=0.0073 lam(.75)=0.1460 | s40=0.534 | BRgap 0e+00 conv 1e-11
+   r=4 Gamma=0.8: jump=0.0200 lam_MPE=1.8608 lam_pred=inf struct=0.6667 MPE/struct=2.79 | r_eq/r=5.09 (h=2,12 cells: 5.18,4.81) r_pr/r=3.06 | Geq=4.08 Geq_d=2.04 Gpr_d=1.22 | lam(.25)=0.0057 lam(.75)=0.1677 | s40=0.559 | BRgap 0e+00 conv 9e-12
+   r=8 Gamma=0.3 (jump halved): jump=0.0038 lam_MPE=0.1941 lam_pred=0.1950 struct=0.1765 MPE/struct=1.10 | r_eq/r=1.18 (h=2,12 cells: 1.18,1.17) r_pr/r=1.09 | Geq=0.35 Geq_d=0.18 Gpr_d=0.16 | lam(.25)=0.0021 lam(.75)=0.0230 | s40=0.501 | BRgap 0e+00 conv 1e-11
+   r=8 Gamma=0.6 (jump halved): jump=0.0075 lam_MPE=1.1407 lam_pred=6.1312 struct=0.4286 MPE/struct=2.66 | r_eq/r=4.71 (h=2,12 cells: 4.83,4.35) r_pr/r=2.87 | Geq=2.83 Geq_d=1.41 Gpr_d=0.86 | lam(.25)=0.0014 lam(.75)=0.0341 | s40=0.517 | BRgap 0e+00 conv 1e-11
+   r=4 Gamma=0.3 {'l': 0.5}: jump=0.0075 lam_MPE=0.2201 lam_pred=0.2221 struct=0.1765 MPE/struct=1.25 | r_eq/r=1.32 (h=2,12 cells: 1.32,1.31) r_pr/r=1.16 | Geq=0.40 Geq_d=0.20 Gpr_d=0.17 | lam(.25)=-0.0041 lam(.75)=0.0949 | s40=0.502 | BRgap 6e-17 conv 1e-11
+   r=4 Gamma=0.3 {'beta': 0.3}: jump=0.0075 lam_MPE=0.1941 lam_pred=0.1950 struct=0.1765 MPE/struct=1.10 | r_eq/r=1.18 (h=2,12 cells: 1.18,1.17) r_pr/r=1.09 | Geq=0.35 Geq_d=0.18 Gpr_d=0.16 | lam(.25)=0.0093 lam(.75)=0.0856 | s40=0.501 | BRgap 3e-17 conv 1e-11
+   r=1 Gamma=0.3 (large jumps): jump=0.0300 lam_MPE=0.1934 lam_pred=0.1936 struct=0.1765 MPE/struct=1.10 | r_eq/r=1.16 (h=2,12 cells: 1.16,1.16) r_pr/r=1.08 | Geq=0.35 Geq_d=0.17 Gpr_d=0.16 | lam(.25)=0.1003 lam(.75)=0.2703 | s40=0.501 | BRgap 0e+00 conv 9e-12
+   r=1 Gamma=0.6 (large jumps): jump=0.0600 lam_MPE=1.1762 lam_pred=7.1578 struct=0.4286 MPE/struct=2.74 | r_eq/r=4.84 (h=2,12 cells: 4.89,4.69) r_pr/r=2.92 | Geq=2.90 Geq_d=1.45 Gpr_d=0.88 | lam(.25)=0.1065 lam(.75)=0.6543 | s40=0.638 | BRgap 0e+00 conv 1e-11
+   r=1 Gamma=0.9 (large jumps): jump=0.0900 lam_MPE=2.5803 lam_pred=inf struct=0.8182 MPE/struct=3.15 | r_eq/r=5.41 (h=2,12 cells: 5.44,5.31) r_pr/r=3.21 | Geq=4.87 Geq_d=2.44 Gpr_d=1.45 | lam(.25)=0.0688 lam(.75)=1.0769 | s40=0.845 | BRgap -1e-16 conv 1e-11
+  [ok] m01: smooth branch (structural Gamma <= 0.4, incl. shared loss and sharing): MPE price = envelope formula with r_pr to 2.5% (0.5% at Gamma <= 0.3)
+  [ok] m01: at Gamma = 0.2, 0.3 the agreement is within 0.5%
+  [ok] m01: the computed policy is a global best response at parity (gap < 1e-12)
+  [ok] m01: above structural Gamma ~ 0.45 equal standing is unstable in equilibrium (Gamma_eq = 1.11 at 0.45, 2.83 at 0.6) and the price is amplified
+  [ok] m01: in this discouragement contest r_eq > r_pr > r at every computed point
+   off parity (r=1): laggard's price at s=0.25 is 57% of the structural value at Gamma=0.3 and 25% at 0.6; the leader's at s=0.75 is 153% at 0.3
+  [ok] m01: near parity a laggard prices standing below, a leader above, the structural value
+(d) m01(E): catch-up: a flow cost Lsub (1-s)^2 of standing below the top (r=4)
+   Lsub=0.0 Gamma=0.3: r_eq/r=1.176 r_pr/r=1.088 Geq=0.353 e1(.25)=0.0113 e2(.25)=0.0122 (laggard gives up)
+   Lsub=0.0 Gamma=0.6: r_eq/r=4.716 r_pr/r=2.867 Geq=2.830 e1(.25)=0.0107 e2(.25)=0.0122 (laggard gives up)
+   Lsub=10.0 Gamma=0.3: r_eq/r=1.109 r_pr/r=1.055 Geq=0.333 e1(.25)=0.0201 e2(.25)=0.0182 (laggard tries harder)
+   Lsub=10.0 Gamma=0.6: r_eq/r=4.130 r_pr/r=2.571 Geq=2.478 e1(.25)=0.0284 e2(.25)=0.0244 (laggard tries harder)
+   Lsub=100.0 Gamma=0.3: r_eq/r=0.993 r_pr/r=0.996 Geq=0.298 e1(.25)=0.1116 e2(.25)=0.0721 (laggard tries harder)
+   Lsub=100.0 Gamma=0.6: r_eq/r=3.424 r_pr/r=2.215 Geq=2.055 e1(.25)=0.2112 e2(.25)=0.1342 (laggard tries harder)
+  [ok] m01(E): the sign of the strategic correction is not universal: r_eq/r = 0.993 < 1 with a strong catch-up motive
+(e) m01(F): value iteration from V=0 and from a step at parity (V0 = 3 sign(s-1/2)); r=4, delta=1/(1+d), damping 0.5
+   Gamma=0.2 d=0.1 N=1500 init V=0 : lam_MPE=0.1164 (struct 0.1111, x1.05); lam_pred=0.1166; r_eq/r=1.09 (h=12: 1.09); lam(.25)=0.0081; conv 1e-11
+   Gamma=0.2 d=0.1 N=1500 init step: lam_MPE=0.1164 (struct 0.1111, x1.05); lam_pred=0.1166; r_eq/r=1.09 (h=12: 1.09); lam(.25)=0.0081; conv 1e-11
+   Gamma=0.2 d=0.05 N=3000 init V=0 : lam_MPE=0.1169 (struct 0.1111, x1.05); lam_pred=0.1170; r_eq/r=1.10 (h=12: 1.09); lam(.25)=0.0072; conv 1e-11
+   Gamma=0.2 d=0.05 N=3000 init step: lam_MPE=1.3919 (struct 0.1111, x12.53); lam_pred=inf; r_eq/r=27.47 (h=12: 11.58); lam(.25)=0.0076; conv 1e-11
+   Gamma=0.3 d=0.05 N=3000 init V=0 : lam_MPE=0.1969 (struct 0.1765, x1.12); lam_pred=0.1975; r_eq/r=1.20 (h=12: 1.20); lam(.25)=0.0083; conv 1e-11
+   Gamma=0.3 d=0.05 N=3000 init step: lam_MPE=1.5509 (struct 0.1765, x8.79); lam_pred=inf; r_eq/r=22.89 (h=12: 14.77); lam(.25)=0.0092; conv 1e-11
+  [ok] m01(F) [finding held for outside review]: two converged fixed points at Gamma=0.2, d=0.05: price 0.1169 (smooth) and 1.3919 (winner-take-all, x12.5 structural)
+  [ok] m01(F): at coarser rounds (d=0.1) the step start returns to the smooth equilibrium
+(f) f2(1): small jumps (d=0.02), l=0: equilibrium price vs the closed-loop gain of the partial-equilibrium loop; expected-deviation multiplier vs 1+d(Gamma_eq-1)
+   r=1.0 Gamma=0.2: jump=0.0040 | lambda: formula 0.0315, MPE 0.0319, closed-loop(Gamma~_delta) 0.0319 | Gamma_eq=0.206 Gamma~=0.203 | E-dev multiplier 0.98412 vs 0.98412
+   r=1.0 Gamma=0.3: jump=0.0060 | lambda: formula 0.0480, MPE 0.0491, closed-loop(Gamma~_delta) 0.0491 | Gamma_eq=0.314 Gamma~=0.307 | E-dev multiplier 0.98628 vs 0.98628
+   r=1.5 Gamma=0.3: jump=0.0040 | lambda: formula 0.0480, MPE 0.0492, closed-loop(Gamma~_delta) 0.0492 | Gamma_eq=0.314 Gamma~=0.307 | E-dev multiplier 0.98629 vs 0.98629
+   r=1.0 Gamma=0.45: jump=0.0090 | lambda: formula 0.0737, MPE 0.0768, closed-loop(Gamma~_delta) 0.0768 | Gamma_eq=0.485 Gamma~=0.467 | E-dev multiplier 0.98970 vs 0.98970
+   r=1.5 Gamma=0.6: jump=0.0080 | lambda: formula 0.1007, MPE 0.1078, closed-loop(Gamma~_delta) 0.1079 | Gamma_eq=0.677 Gamma~=0.639 | E-dev multiplier 0.99354 vs 0.99354
+  [ok] f2(1): with small jumps the MPE price equals the closed-loop gain of the partial-equilibrium loop (0.5%) and the expected deviation grows by 1+d(Gamma_eq-1) (1e-4)
+(g) f2(2): the paper's jumps (d=0.2), l=0 and l=0.5: amplification at parity, stability, the laggard's price
+   r=1.0 Gamma=0.3 l=0.0: lambda formula 0.2389, MPE 0.2671 (x1.12) | Gamma_eq=0.358 Gamma~=0.329 | E|s-1/2| after 60 periods from 0.52: MPE 0.050 vs structural lottery 0.048 (E-dev multiplier 0.872) | laggard price at s=0.25: 0.1497, at 0.1: 0.0968
+   r=1.0 Gamma=0.6 l=0.0: lambda formula 0.6279, MPE 1.6180 (x2.58) | Gamma_eq=1.962 Gamma~=1.282 | E|s-1/2| after 60 periods from 0.52: MPE 0.198 vs structural lottery 0.120 (E-dev multiplier 1.192) | laggard price at s=0.25: 0.0653, at 0.1: 0.0438
+   r=1.5 Gamma=0.6 l=0.0: lambda formula 0.6279, MPE 1.5025 (x2.39) | Gamma_eq=1.878 Gamma~=1.241 | E|s-1/2| after 60 periods from 0.52: MPE 0.127 vs structural lottery 0.078 (E-dev multiplier 1.176) | laggard price at s=0.25: 0.0408, at 0.1: 0.0257
+   r=1.5 Gamma=0.6 l=0.5: lambda formula 0.6279, MPE 2.9815 (x4.75) | Gamma_eq=3.031 Gamma~=1.823 | E|s-1/2| after 60 periods from 0.52: MPE 0.136 vs structural lottery 0.078 (E-dev multiplier 1.406) | laggard price at s=0.25: -0.0389, at 0.1: -0.0440
+   r=1.5 Gamma=0.9 l=0.0: lambda formula 1.3729, MPE 3.0122 (x2.19) | Gamma_eq=2.832 Gamma~=1.869 | E|s-1/2| after 60 periods from 0.52: MPE 0.250 vs structural lottery 0.169 (E-dev multiplier 1.366) | laggard price at s=0.25: 0.0255, at 0.1: 0.0181
+  [ok] f2(2): the equilibrium price at parity exceeds the fixed-strategy value in every case (x1.12 to x4.75)
+  [ok] f2(2): structural Gamma=0.6 < 1 yet Gamma_eq = 1.96 > 1: equal standing unstable in equilibrium, dispersion larger than under the structural lottery
+  [ok] f2(2): far from parity the laggard's price falls (to below zero with shared loss): it stops contesting standing
+(h) s2_mpe (Math-Opus reviewer): 'others fixed' (policy evaluation) vs MPE vs formula; the price under patience (s2b)
+   d=0.2 r=1.0 Gamma=0.6: Gd=0.386 | lambda formula 0.6279, others fixed 0.6279, MPE 1.6183 (MPE/formula 2.577)
+   d=0.05 r=1.0 Gamma=0.3: Gd=0.093 | lambda formula 0.1027, others fixed 0.1027, MPE 0.1082 (MPE/formula 1.054)
+  [ok] s2_mpe: with others' strategies fixed (r=1), the exact finite-jump price equals Gd/(1-Gd): the premise, not the jumps, drives the amplification
+   s2b patience: r=1.5 Gamma=0.6 d=0.2 delta=0.97: formula 1.0818, others fixed 1.0311, MPE 8.5140 (ratio 7.87)
+  [ok] s2b: the amplification reaches x7.87 at delta=0.97 (range quoted: about 1.05 to 7.9)
+(i) adv_checks section 3 (Adv-O reviewer): tug-of-war MPE (Tullock r=1 per step, absorbing at +/-K): total effort by state relative to parity
+   K=3 delta=0.95: s=+0:1.000  s=+1:0.405  s=+2:0.013   laggard effort/parity: 1.000  0.138  0.000
+   K=5 delta=0.95: s=+0:1.000  s=+1:0.405  s=+2:0.013  s=+3:0.000  s=+4:0.000   laggard effort/parity: 1.000  0.138  0.000  0.000  0.000
+   K=5 delta=0.99: s=+0:1.000  s=+1:0.418  s=+2:0.017  s=+3:0.000  s=+4:0.000   laggard effort/parity: 1.000  0.153  0.001  0.000  0.000
+  [ok] tug-of-war: total effort is highest at parity and falls with the lead (near parity the price of standing is highest)
+
+=== QS [independent] keys: corrrate, humancorr, capdyn (S4)
+    Capacity off its selected level, jointly with the field model: the rate law's two halves (QS/R/GA/GM), the lag delay, reversal, and correction resting on human capacity eroded at delta_h (+w delta_h; hysteresis)
+(a) f5(A): rate law under finite adjustment (threshold alpha_ctl/(1+eta) = 0.1); first certificate failure
+   alpha_cor=0.05: QS: 28.8 | R(0.3): 32.9 | R(0.1): 38.1 | R(0.03): 46.9 | GA(1.0): never | GM(1.0): 28.9
+   alpha_cor=0.08: QS: 73.0 | R(0.3): 81.4 | R(0.1): 92.7 | R(0.03): 113.2 | GA(1.0): never | GM(1.0): 73.1
+   alpha_cor=0.09: QS: 145.9 | R(0.3): 161.5 | R(0.1): 183.0 | R(0.03): 222.9 | GA(1.0): never | GM(1.0): 146.2
+   alpha_cor=0.11: QS: never | R(0.3): never | R(0.1): never | R(0.03): never | GA(1.0): never | GM(1.0): never
+  [ok] f5(A): above the threshold nothing fails; below it QS fails first (28.8 at 0.05), lags fail later, multiplicative selection tracks QS, additive selection never fails
+   constant-rate lag: delay vs eta ln(1+g/k)/(alpha_ctl-(1+eta)alpha_cor), g=(alpha_ctl-alpha_cor)/eta
+      alpha_cor=0.05, k=0.3: delay 4.11 vs formula 4.05
+      alpha_cor=0.05, k=0.1: delay 9.29 vs formula 9.16
+      alpha_cor=0.05, k=0.03: delay 18.11 vs formula 17.92
+      alpha_cor=0.08, k=0.3: delay 8.40 vs formula 8.41
+      alpha_cor=0.08, k=0.1: delay 19.70 vs formula 19.71
+      alpha_cor=0.08, k=0.03: delay 40.23 vs formula 40.24
+  [ok] f5(A): the lag delay matches eta ln(1+g/k)/(alpha_ctl-(1+eta)alpha_cor) within 1.4% in 6 cases
+      GA, alpha_cor=0.02: q(600)=7.290 <= bound 9.180; max G_ev over [0,600] = 0.506 (never fails)
+      GA, alpha_cor=0.05: q(600)=2.182 <= bound 3.780; max G_ev over [0,600] = 0.204 (never fails)
+  [ok] f5(A): constant-variance gradient selection keeps q <= q0 + V p^2/(d0 alpha_cor) and the certificate never fails at alpha_cor = 0.02, 0.05
+(b) m06(D): capacity off its optimum, joint with one evaluation domain (alpha_ctl=.2, eta=1: rate law .1)
+   alpha_cor | dynamics           | cert. fails | captured (x>1/2) | final G
+        0.05 | quasi-static       |     13.0    |     25.4         | 5.88e+16
+        0.05 | lag kappa=.1       |     22.5    |     36.9         | 2.36e+16
+        0.05 | lag kappa=.03      |     31.3    |     47.5         | 9.82e+15
+        0.05 | additive V=1       |    never    |    never         | 3.09e-10
+        0.05 | additive V=100     |     13.3    |     26.5         | 3.09e-10
+        0.05 | multiplicative V=1 |     23.8    |     58.9         | 8.64e-08
+        0.09 | quasi-static       |     69.3    |    118.8         | 745
+        0.09 | lag kappa=.1       |    106.4    |    169.9         | 355
+        0.09 | lag kappa=.03      |    146.3    |    221.7         | 160
+        0.09 | additive V=1       |    never    |    never         | 3.48e-17
+        0.09 | additive V=100     |    never    |    never         | 3.48e-17
+        0.09 | multiplicative V=1 |    never    |    never         | 4.6e-16
+        0.10 | quasi-static       |    never    |    never         | 0.25
+        0.10 | lag kappa=.1       |    never    |    never         | 0.125
+        0.10 | lag kappa=.03      |    never    |    never         | 0.0577
+        0.10 | additive V=1       |    never    |    never         | 3.46e-17
+        0.10 | additive V=100     |    never    |    never         | 3.46e-17
+        0.10 | multiplicative V=1 |    never    |    never         | 5.98e-18
+        0.12 | quasi-static       |    never    |    never         | 2.81e-08
+        0.12 | lag kappa=.1       |    never    |    never         | 1.56e-08
+        0.12 | lag kappa=.03      |    never    |    never         | 7.68e-09
+        0.12 | additive V=1       |    never    |    never         | 1.22e-21
+        0.12 | additive V=100     |    never    |    never         | 6.59e-21
+        0.12 | multiplicative V=1 |    never    |    never         | 1.24e-21
+  [ok] m06(D): at alpha_cor >= 0.1 no dynamics fails; at 0.05 lags delay failure, additive selection prevents it; capture follows failure by 12-75 periods (the two clocks)
+   S4.2(2)(b): variance proportional to q at alpha_cor=0.05 fails at 23.8, is captured at 58.9, and ends at row sum 8.64e-08: capacity bounded, certificate held again
+  [ok] S4.2(2)(b): with selection variance proportional to q the certificate fails transiently (23.8) and holds again by the end (final row sum 9e-8 < 1): capacity stays bounded
+   lag delay vs eta ln(1+g/kappa)/(alpha_ctl-(1+eta)alpha_cor):
+      alpha_cor=0.05 kappa=0.1: simulated delay 9.42, formula 9.16 (asymptotic)
+      alpha_cor=0.05 kappa=0.03: simulated delay 18.23, formula 17.92 (asymptotic)
+      alpha_cor=0.02 kappa=0.1: simulated delay 6.33, formula 6.44 (asymptotic)
+  [ok] m06(D): lag delays 9.42/9.16, 18.23/17.92, 6.33/6.44 (simulated/formula), within 2.8%
+   additive selection, alpha_cor=0.01 (far below .1): first failure 10.6, final G 4.59e-08 (bound q <= q0 + V/(d0 alpha_cor) = 50.5)
+   additive selection, alpha_cor=0.03 (far below .1): first failure 18.7, final G 4.29e-21 (bound q <= q0 + V/(d0 alpha_cor) = 17.2)
+  [ok] m06(D): under additive selection any alpha_cor > 0 certifies eventually, after a transient failure (t = 10.6 at alpha_cor = 0.01)
+   [humancorr] correction resting on human capacity eroded by delegation (w=1), quasi-static certificate eventually held?
+      delta_h=0.0: threshold predicted 0.10; 0.1:held, 0.12:held, 0.15:held, 0.2:held, 0.22:held
+      delta_h=0.05: threshold predicted 0.15; 0.1:fails, 0.12:fails, 0.15:held, 0.2:held, 0.22:held
+      delta_h=0.1: threshold predicted 0.20; 0.1:fails, 0.12:fails, 0.15:fails, 0.2:held, 0.22:held
+  [ok] humancorr (m06 D): the certificate is held eventually iff alpha_cor >= alpha_ctl/(1+eta) + w delta_h (0.10, 0.15, 0.20), 15/15
+(c) m06(E): reversal in a self-sustaining domain; minimal hold of d2=1.5 that undoes capture at d1=0.9
+   ('QS', None): minimal hold 38.05
+   ('lag', 0.1): minimal hold 44.34  (+17% over quasi-static)
+   ('lag', 0.03): minimal hold 58.67  (+54% over quasi-static)
+   G at d1 = 1.57 (captured), at d2 = 0.64
+  [ok] m06(E): after a withdrawn reform, slow capacity lengthens the hold needed: 38.05 quasi-static, +17% at kappa_q=0.1, +54% at 0.03
+(d) systems s4_joint E1: certificate failure T_cert (G_ev>1) / capture T_cap (x_ev>1/2), horizon 300
+   alpha_cor=0.000  QS:  13.8/ 23.5 | R(1.0):  14.7/ 24.6 | R(0.1):  19.2/ 29.9 | R(0.03):  23.8/ 35.2 | GA(1.0):  26.1/ 53.7 | GA(0.1): 151.1/211.4 | GM(1.0):  13.8/ 23.6 | GM(0.1):  16.4/ 24.7
+   alpha_cor=0.050  QS:  28.8/ 44.9 | R(1.0):  30.3/ 46.6 | R(0.1):  38.1/ 56.0 | R(0.03):  46.9/ 66.3 | GA(1.0):   -  /  -   | GA(0.1):   -  /  -   | GM(1.0):  28.9/ 45.0 | GM(0.1):  34.1/ 47.9
+   alpha_cor=0.080  QS:  73.0/111.2 | R(1.0):  75.8/114.7 | R(0.1):  92.7/135.5 | R(0.03): 113.2/160.0 | GA(1.0):   -  /  -   | GA(0.1):   -  /  -   | GM(1.0):  73.1/111.4 | GM(0.1):   -  /  -  
+   alpha_cor=0.090  QS: 145.9/221.6 | R(1.0): 151.2/228.2 | R(0.1): 183.0/267.7 | R(0.03): 223.0/  -   | GA(1.0):   -  /  -   | GA(0.1):   -  /  -   | GM(1.0): 146.2/222.0 | GM(0.1):   -  /  -  
+   alpha_cor=0.095  QS: 291.9/  -   | R(1.0):   -  /  -   | R(0.1):   -  /  -   | R(0.03):   -  /  -   | GA(1.0):   -  /  -   | GA(0.1):   -  /  -   | GM(1.0): 292.4/  -   | GM(0.1):   -  /  -  
+   alpha_cor=0.100  QS:   -  /  -   | R(1.0):   -  /  -   | R(0.1):   -  /  -   | R(0.03):   -  /  -   | GA(1.0):   -  /  -   | GA(0.1):   -  /  -   | GM(1.0):   -  /  -   | GM(0.1):   -  /  -  
+   alpha_cor=0.105  QS:   -  /  -   | R(1.0):   -  /  -   | R(0.1):   -  /  -   | R(0.03):   -  /  -   | GA(1.0):   -  /  -   | GA(0.1):   -  /  -   | GM(1.0):   -  /  -   | GM(0.1):   -  /  -  
+  [ok] s4_joint E1: at alpha_cor >= 0.1 no dynamics fails or is captured; below it lags delay failure (QS 28.8, R(0.03) 46.9 at 0.05)
+   E1': largest alpha_cor at which x_ev is captured within horizon H (rate-law asymptote 0.100)
+   H=150: QS=0.0852  R(1.0)=0.0847  R(0.1)=0.0820  R(0.03)=0.0786  GA(1.0)=0.0090  GA(0.1)=0.0000  GM(1.0)=0.0852  GM(0.1)=0.0627
+   H=300: QS=0.0926  R(1.0)=0.0924  R(0.1)=0.0911  R(0.03)=0.0895  GA(1.0)=0.0090  GA(0.1)=0.0000  GM(1.0)=0.0926  GM(0.1)=0.0627
+   H=600: QS=0.0963  R(1.0)=0.0962  R(0.1)=0.0956  R(0.03)=0.0948  GA(1.0)=0.0090  GA(0.1)=0.0000  GM(1.0)=0.0963  GM(0.1)=0.0627
+  [ok] s4_joint E1': the finite-horizon threshold rises toward 0.1 under QS (0.0852, 0.0926, 0.0963); additive selection is captured only near alpha_cor=0 (0.0090)
+   S4.2(2)(c): variance proportional to q^2 at speed 0.1: largest captured alpha_cor 0.0627, 0.0627, 0.0627 at H = 150, 300, 600 (does not rise with H)
+  [ok] S4.2(2)(c): slow selection with variance proportional to q^2 is captured only below alpha_cor = 0.063 at every horizon: bounded below the rate law, not tracking
+   capture lag T_cap - T_cert across E1: 8.3 to 84.6 periods over 23 runs (at alpha_cor = 0: 8.3 to 60.3); by rate: 0.0: 8.3-60.3, 0.05: 13.8-19.3, 0.08: 38.2-46.8, 0.09: 75.7-84.6
+  [ok] capture follows the certificate's failure by 8 to 85 periods across E1 (8 to 60 with correction not growing), longer as correction approaches the rate law
+   E1'': lag ratio q/q* along the path, alpha_cor=0.05 (constant-rate lag tends to k/(k+g), g=0.15)
+   R(1.0): t=10:0.87 t=20:0.87 t=30:0.87 t=40:0.87
+   R(0.1): t=10:0.45 t=20:0.40 t=30:0.40 t=40:0.40 t=50:0.40
+   R(0.03): t=10:0.30 t=20:0.19 t=30:0.17 t=40:0.17 t=50:0.17 t=60:0.17
+   GA(1.0): t=10:0.60 t=20:0.27 t=30:0.09 t=40:0.02 t=50:0.01 t=60:0.00
+   GA(0.1): t=10:0.29 t=20:0.09 t=30:0.02 t=40:0.01 t=50:0.00 t=60:0.00
+   GM(1.0): t=10:0.94 t=20:0.98 t=30:0.99 t=40:1.00
+   GM(0.1): t=10:0.33 t=20:0.16 t=30:0.16 t=40:0.97
+  [ok] s4_joint E1'': a constant-rate lag tracks q* at the ratio k/(k+g) (0.87, 0.40, 0.17); additive selection falls behind without limit (liminf q/q* = 0)
+(e) systems s5_joint2 E2: captured evaluation domain at d1=0.5 (G=1.464); reform raises d to d2 for T, then withdraws
+    QS certificate restored for d2>0.638; with capacity frozen at its old level, only for d2>0.732
+   d2=0.7: minimal hold T: QS: 353.96  R(1.0): 355.10  R(0.3): 358.15  R(0.1): 367.10  R(0.03): 398.57  (R(0.03) +13%)
+   d2=1.0: minimal hold T: QS: 94.79  R(1.0): 94.88  R(0.3): 95.52  R(0.1): 98.08  R(0.03): 107.67  (R(0.03) +14%)
+   d2=2.0: minimal hold T: QS: 55.93  R(1.0): 55.69  R(0.3): 55.54  R(0.1): 56.03  R(0.03): 59.49  (R(0.03) +6%)
+  [ok] s5 E2: the slowest lag lengthens the hold by 6-14% (Sys I3: 6-14%); fast lags change it by under 1%
+(f) [humancorr] s5 E4a: delegation D(t)=1-0.8e^{-0.1t}; d_eff = d M/M0; largest alpha_cor with capture by t=600
+   delta_h=0.05, rho_h=0.05: uncoupled 0.0963; coupled 0.1449  (rate law 0.1; shifted law 0.1+delta_h=0.15); shift +0.0486
+   delta_h=0.1, rho_h=0.05: uncoupled 0.0963; coupled 0.1902  (rate law 0.1; shifted law 0.1+delta_h=0.20); shift +0.0939
+   delta_h=0.2, rho_h=0.1: uncoupled 0.0963; coupled 0.2313  (rate law 0.1; shifted law 0.1+delta_h=0.30); shift +0.1350
+  [ok] s5 E4a: delegation that erodes the corrector raises the finite-horizon threshold by about delta_h (0.049 and 0.094 for delta_h = 0.05, 0.1); at delta_h=0.2 with recovery rho_h=0.1 the shift is 0.135 (see notes)
+(g) [humancorr] s5 E4b: capture-delegation loop (D=0.1+kD x_ev, delta_h=0.2, rho_h=0.05, d_eff=d (M/M0)^0.5): smallest permanent d that undoes capture
+   kD=0.0: d needed = 0.634  (captured-state M/M0 = 1.000); x1.00 the quasi-static reform
+   kD=0.3: d needed = 1.006  (captured-state M/M0 = 0.398); x1.59 the quasi-static reform
+   kD=0.6: d needed = 1.675  (captured-state M/M0 = 0.143); x2.64 the quasi-static reform
+  [ok] s5 E4b: hysteresis of release: undoing capture needs 1.59x and 2.64x the quasi-static reform when capture makes delegation look safe
+(h) m5 (Math-Fable reviewer): multiplicative selection on capacity at speed s_q, jointly with one evaluation domain
+   eta=1.0 alpha_cor=0.0900 (below 0.1000) s_q= 100.0: QS certificate fails 69.3; actual (a z > c) 69.3; captured 118.8; q/q* in [0.995, 1.000]
+   eta=1.0 alpha_cor=0.0900 (below 0.1000) s_q=   1.0: QS certificate fails 69.3; actual (a z > c) 75.3; captured 129.2; q/q* in [0.391, 1.000]
+   eta=1.0 alpha_cor=0.0900 (below 0.1000) s_q=   0.1: QS certificate fails 69.3; actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.000, 1.000]
+   eta=1.0 alpha_cor=0.0900 (below 0.1000) s_q=  0.01: QS certificate fails 69.3; actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.000, 1.000]
+   eta=1.0 alpha_cor=0.1100 (above 0.1000) s_q= 100.0: QS certificate fails never (T=250); actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.204, 1.000]
+   eta=1.0 alpha_cor=0.1100 (above 0.1000) s_q=   1.0: QS certificate fails never (T=250); actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.000, 1.000]
+   eta=1.0 alpha_cor=0.1100 (above 0.1000) s_q=   0.1: QS certificate fails never (T=250); actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.000, 1.000]
+   eta=1.0 alpha_cor=0.1100 (above 0.1000) s_q=  0.01: QS certificate fails never (T=250); actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.000, 1.000]
+   eta=2.0 alpha_cor=0.0567 (below 0.0667) s_q= 100.0: QS certificate fails 69.1; actual (a z > c) 69.1; captured 122.7; q/q* in [0.999, 1.000]
+   eta=2.0 alpha_cor=0.0567 (below 0.0667) s_q=   1.0: QS certificate fails 69.1; actual (a z > c) 71.6; captured 126.4; q/q* in [0.892, 1.000]
+   eta=2.0 alpha_cor=0.0567 (below 0.0667) s_q=   0.1: QS certificate fails 69.1; actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.000, 1.000]
+   eta=2.0 alpha_cor=0.0567 (below 0.0667) s_q=  0.01: QS certificate fails 69.1; actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.000, 1.000]
+   eta=2.0 alpha_cor=0.0767 (above 0.0667) s_q= 100.0: QS certificate fails never (T=250); actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.961, 1.000]
+   eta=2.0 alpha_cor=0.0767 (above 0.0667) s_q=   1.0: QS certificate fails never (T=250); actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.000, 1.000]
+   eta=2.0 alpha_cor=0.0767 (above 0.0667) s_q=   0.1: QS certificate fails never (T=250); actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.000, 1.000]
+   eta=2.0 alpha_cor=0.0767 (above 0.0667) s_q=  0.01: QS certificate fails never (T=250); actual (a z > c) never (T=250); captured never (T=250); q/q* in [0.000, 1.000]
+  [ok] m5: with fast selection the joint dynamics reproduce the rate law (actual failure = quasi-static failure, then capture); above the threshold nothing is captured; slow selection delays failure past the horizon
+(i) s4_cost(c) (Math-Opus reviewer): quasi-static vs selection with finite speed (dominant share 0.6, rate law 0.1); replicator-with-mutation dynamics only with --full
+   alpha=0.09: qs: first failure 145.9, s_E(T)=21.8 | additive(V=1.0): first failure none by 300, s_E(T)=7.68e-13 | additive(V=100.0): first failure none by 300, s_E(T)=6.39e-12 | log(V=1.0): first failure none by 300, s_E(T)=4.08e-13 | log(V=100.0): first failure 145.9, s_E(T)=6.06e-08
+   alpha=0.11: qs: first failure none by 300, s_E(T)=0.000134 | additive(V=1.0): first failure none by 300, s_E(T)=1.54e-15 | additive(V=100.0): first failure none by 300, s_E(T)=7.38e-15 | log(V=1.0): first failure none by 300, s_E(T)=9.9e-16 | log(V=100.0): first failure none by 300, s_E(T)=4.24e-11
+   alpha=0.05: qs: first failure 28.8, s_E(T)=5.76e+11 | additive(V=1.0): first failure none by 300, s_E(T)=2.46e-07 | additive(V=100.0): first failure 36.0, s_E(T)=6.39e-06 | log(V=1.0): first failure none by 300, s_E(T)=7.76e-08 | log(V=100.0): first failure 28.8, s_E(T)=4.59e-08
+   alpha=0.0: qs: first failure 13.8, s_E(T)=6.14e+24 | additive(V=1.0): first failure 26.1, s_E(T)=15.8 | additive(V=100.0): first failure 13.9, s_E(T)=1.44e+03 | log(V=1.0): first failure 34.5, s_E(T)=0.15 | log(V=100.0): first failure 13.8, s_E(T)=0.15
+  [ok] s4_cost(c): above the threshold no dynamics fails; below it no dynamics fails earlier than quasi-static capacity (the worst case for a falling cost of control)
+
+=== FF [independent] keys: corrrate, costq
+    A per-unit cost floor f: falling f can stop cultivation (Codex); under [H_f] d_f rises at alpha_f and three cases decide; a lump-sum cost only delays cultivation (threshold exponent eta/(2eta+2-xi_v-eta xi_f)) and does not cap the requirement
+(a) Codex 4: eta=p=chiY=1, A=0, gamma=e^(-.2t), d=2e^(.05t), f=.49e^(-.01t): cultivation stops at t = 0.5051; (t, q*, G): (0, 0.01000, 0.00500); (0.25, 0.00527, 0.00260); (0.5, 0.00011, 0.00005); (1, 0.00000, 0.00000); (10, 0.00000, 0.00000); (100, 0.00000, 0.00000)
+  [ok] Codex 4: a falling positive floor stops cultivation at t=0.505 although alpha_cor=0.05 < alpha_ctl/(1+eta)=0.1; the certificate never fails
+(b) f5(B): falling f: cultivation on iff d(t) < d_f(t) = p^2/f(t); alpha_ctl=.2, eta=1, alpha_f=0.05
+   f0=0.1 (d_f(0)/d0=1.80), alpha_cor=0.05: first failure 37.1, max G_ev 2.74e+24, cultivation ends never
+   f0=0.1 (d_f(0)/d0=1.80), alpha_cor=0.051: first failure 38.4, max G_ev 2.1e+21, cultivation ends 588
+   f0=0.1 (d_f(0)/d0=1.80), alpha_cor=0.06: first failure never, max G_ev 0.267, cultivation ends 59
+   f0=0.1 (d_f(0)/d0=1.80), alpha_cor=0.08: first failure never, max G_ev 0.174, cultivation ends 20
+   f0=0.1 (d_f(0)/d0=1.80), alpha_cor=0.11: first failure never, max G_ev 0.174, cultivation ends 10
+   f0=0.17 (d_f(0)/d0=1.06), alpha_cor=0.05: first failure 58.0, max G_ev 3.43e+23, cultivation ends never
+   f0=0.17 (d_f(0)/d0=1.06), alpha_cor=0.051: first failure never, max G_ev 0.153, cultivation ends 57
+   f0=0.17 (d_f(0)/d0=1.06), alpha_cor=0.06: first failure never, max G_ev 0.153, cultivation ends 6
+   f0=0.17 (d_f(0)/d0=1.06), alpha_cor=0.08: first failure never, max G_ev 0.153, cultivation ends 2
+   f0=0.17 (d_f(0)/d0=1.06), alpha_cor=0.11: first failure never, max G_ev 0.153, cultivation ends 1
+   f0=0.3 (d_f(0)/d0=0.60), alpha_cor=0.05: first failure never, max G_ev 0.15, cultivation ends 0
+   f0=0.3 (d_f(0)/d0=0.60), alpha_cor=0.051: first failure never, max G_ev 0.15, cultivation ends 0
+   f0=0.3 (d_f(0)/d0=0.60), alpha_cor=0.06: first failure never, max G_ev 0.15, cultivation ends 0
+   f0=0.3 (d_f(0)/d0=0.60), alpha_cor=0.08: first failure never, max G_ev 0.15, cultivation ends 0
+   f0=0.3 (d_f(0)/d0=0.60), alpha_cor=0.11: first failure never, max G_ev 0.15, cultivation ends 0
+  [ok] f5(B): alpha_cor > alpha_f alone is not sufficient: f0=0.1, alpha_cor=0.051 fails at t=38.4 although cultivation ends at t=588
+   [finding] at alpha_cor = alpha_f = 0.05: f0=0.1 (ratio 1.80) fails at 37.1; f0=0.17 (ratio 1.06 > 1, cultivation at the start) fails at 58.0; f0=0.3 (ratio 0.60, none at the start) never fails. f5.py's printed note mislabels f0=0.17 as 'no cultivation, holds'
+  [ok] f5(B): at alpha_cor = alpha_f the initial ratio decides: cultivation at the start (d0 < d_f(0)) -> the f=0 rate law (fails); none at the start -> holds
+  [ok] f5(B): alpha_cor >= 0.06 never fails at any f0
+   S4's 'that level falls at alpha_f': d_f(t)=p^2/f(t) with f falling RISES: t=0: 1.200, t=10: 1.978, t=20: 3.262
+  [ok] f5(B): d_f rises at alpha_f under [H_f] (1.200, 1.978, 3.262): V6.1's S4 had the sign wrong
+(c) m06(B): [H_f] corrected rule vs eventual certificate (alpha_ctl=.2, eta=1, rate law .1)
+   d_f(0)=5.00, d_f(50)=22.41 for f0=.2, alpha_f=.03 (V6.1's S4 said this level 'falls')
+   eventual certificate predicted by [alpha_cor > alpha_f, or = with no initial cultivation, or >= alpha_ctl/(1+eta)] in 32 of 32; mismatches []
+  [ok] m06(B): the corrected three-case rule predicts the eventual certificate in 32/32
+   alpha_cor = alpha_f = .05 with cultivation at the start (f0=.1): fails at t=15.4, held at the end: False; without (f0=.6): first failure None, held: True
+  [ok] m06(B): equal rates: initial cultivation decides (fails at 15.4 with it, holds without)
+(d) s7_Hf (Math-Opus reviewer): is min{alpha_f, alpha_ctl/(1+eta)} the required rate? (alpha_f=0.05)
+   f0=0.1, alpha_cor=0.05: certificate first fails at 37.1, last failure 599.95, max s_E 2.73e+24
+   f0=0.1, alpha_cor=0.06: certificate first fails at None, last failure None, max s_E 0.267
+   f0=0.1, alpha_cor=0.08: certificate first fails at None, last failure None, max s_E 0.174
+   f0=0.17, alpha_cor=0.05: certificate first fails at 58.05, last failure 599.95, max s_E 3.41e+23
+   f0=0.17, alpha_cor=0.06: certificate first fails at None, last failure None, max s_E 0.153
+   f0=0.17, alpha_cor=0.08: certificate first fails at None, last failure None, max s_E 0.153
+   f0=0.3, alpha_cor=0.05: certificate first fails at None, last failure None, max s_E 0.15
+   f0=0.3, alpha_cor=0.06: certificate first fails at None, last failure None, max s_E 0.15
+   f0=0.3, alpha_cor=0.08: certificate first fails at None, last failure None, max s_E 0.15
+  [ok] s7_Hf: at alpha_cor = alpha_f with cultivation at the start the certificate fails (37.1, 58.0); above alpha_f it holds
+(e) f5(C) and s4_cost(b): lump-sum fixed cost F p^xf (paid iff q>0) vs the per-unit floor f p^xf q
+   xf=0 xv=0 eta=1: lump-sum threshold exponent 0.2500 (eta/(2eta+2-xv-eta xf)=0.2500); per-unit floor exponent 0.5000 (1/(2-xf)=0.5000)
+   xf=1 xv=1 eta=1: lump-sum threshold exponent 0.5000 (eta/(2eta+2-xv-eta xf)=0.5000); per-unit floor exponent 1.0000 (1/(2-xf)=1.0000)
+   xf=0 xv=0 eta=2: lump-sum threshold exponent 0.3333 (eta/(2eta+2-xv-eta xf)=0.3333); per-unit floor exponent 0.5000 (1/(2-xf)=0.5000)
+   xf=0 xv=1 eta=0.5: lump-sum threshold exponent 0.2500 (eta/(2eta+2-xv-eta xf)=0.2500); per-unit floor exponent 0.5000 (1/(2-xf)=0.5000)
+   gamma=1e+00: required d* with per-unit floor f=0.3: 0.529; with lump-sum F=0.3: 0.465; with f=0: 0.638
+   gamma=1e-02: required d* with per-unit floor f=0.3: 1.146; with lump-sum F=0.3: 4.648; with f=0: 4.800
+   gamma=1e-04: required d* with per-unit floor f=0.3: 1.199; with lump-sum F=0.3: 46.476; with f=0: 46.626
+   gamma=1e-06: required d* with per-unit floor f=0.3: 1.200; with lump-sum F=0.3: 464.758; with f=0: 464.908
+   gamma=1e-08: required d* with per-unit floor f=0.3: 1.200; with lump-sum F=0.3: 4647.580; with f=0: 4647.730
+  [ok] f5(C)/s4_cost(b): lump-sum threshold exponents eta/(2eta+2-xi_v-eta xi_f) and per-unit 1/(2-xi_f) in 4/4; the per-unit floor caps d* at p^2/f = 1.2, a lump sum does not (d* ~ 1/gamma)
+(f) m06(C): lump-sum threshold exponent in F by bisection on p (four settings incl. fractional xi_v, xi_f); d*(gamma) with A=0, p=1
+   eta=1 xi_v=0 xi_f=0: threshold exponent in F 0.2500; eta/(2+2eta-xi_v-eta xi_f) = 0.2500; per-unit floor 1/(2-xi_f) = 0.5000
+   eta=1 xi_v=1 xi_f=0: threshold exponent in F 0.3333; eta/(2+2eta-xi_v-eta xi_f) = 0.3333; per-unit floor 1/(2-xi_f) = 0.5000
+   eta=2 xi_v=0 xi_f=0.5: threshold exponent in F 0.4000; eta/(2+2eta-xi_v-eta xi_f) = 0.4000; per-unit floor 1/(2-xi_f) = 0.6667
+   eta=0.5 xi_v=0.3 xi_f=1: threshold exponent in F 0.2273; eta/(2+2eta-xi_v-eta xi_f) = 0.2273; per-unit floor 1/(2-xi_f) = 1.0000
+   gamma=1e-02: d* lump-sum 10.00; d* per-unit floor 3.0278 (levels off at chiY/f = 3.3333)
+   gamma=1e-04: d* lump-sum 100.00; d* per-unit floor 3.3296 (levels off at chiY/f = 3.3333)
+   gamma=1e-06: d* lump-sum 1000.00; d* per-unit floor 3.3333 (levels off at chiY/f = 3.3333)
+   gamma=1e-08: d* lump-sum 10000.00; d* per-unit floor 3.3333 (levels off at chiY/f = 3.3333)
+  [ok] m06(C): lump-sum exponents 0.2500, 0.3333, 0.4000, 0.2273 match; d* = 10, 100, 1000, 10000 under a lump sum against 3.03 -> 3.33 under a per-unit floor
+
+=== SR [independent] keys: slowroute, masking
+    Silent crossing when capture precedes evidence: the two clocks (host to the alarm band; captured evaluation past the masking threshold)
+(a) f7(F): logistic capture of evaluation with midpoint 'mid'; host under the race load (rho=.05, h_V=.08); floor .3, alarm .6, m_in=.5
+   capture midpoint 0.0: x_ev crosses threshold 0.857 at t=3.6; alarm at None; floor crossed at 21.0 -> silent crossing (e holds)
+   capture midpoint 20.0: x_ev crosses threshold 0.857 at t=23.6; alarm at 7.4; floor crossed at 21.0 -> alarm before the floor (e fails although x_ev -> 1)
+   capture midpoint 45.0: x_ev crosses threshold 0.857 at t=48.6; alarm at 7.4; floor crossed at 21.0 -> alarm before the floor (e fails although x_ev -> 1)
+  [ok] f7(F): capture complete by t=3.6 -> silent crossing at t=21.0; capture midpoints 20 and 45 -> alarm at t=7.4 before the floor: (b),(c) do not imply (e)
+(b) s5 E3: the two clocks with capture endogenous (alpha_cor=0.05; m_in=0.5 > m_fl=0.43; floor 0.3, alarm 0.6; race share from 0.05 at rate 0.12)
+   independent evaluation (x_ev=0): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.0
+   QS: alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.0
+   R(1.0): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.0
+   R(0.1): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.0
+   R(0.03): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.0
+   GA(1.0): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.0
+(c) s5b E3': alpha_cor=0 so that the capture clock and the host clock are comparable
+   independent: alarm at t=32.1 with V=0.579 (before the floor); x_ev=1.0
+   QS: alarm at t=58.8 with V=0.2 (AFTER the floor); x_ev=1.0
+   R(1.0): alarm at t=58.8 with V=0.2 (AFTER the floor); x_ev=1.0
+   R(0.1): alarm at t=58.8 with V=0.2 (AFTER the floor); x_ev=1.0
+   R(0.03): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.0
+   GA(1.0): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.0
+  [ok] s5 E3/E3': at alpha_cor=0.05 capture is too slow and the alarm fires before the floor under every dynamics; at alpha_cor=0 capture wins (silent until V=0.200 at t=58.8) under QS and fast lags, while slow adjustment (R(0.03), additive) reverses the clocks
+(d) [independent] T_A = (rho-h_V e)^-1 ln[(1-V*/V0)/(1-V*/V_alarm)], V* = 1-h_V e/rho, against direct integration of the host
+   rho=0.05, h_V=0.08, load 0.4: V*=0.360; T_A formula 26.111; integrated 26.112
+   rho=0.05, h_V=0.08, load 0.5: V*=0.200; T_A formula 28.768; integrated 28.769
+   rho=0.1, h_V=0.2, load 0.3: V*=0.400; T_A formula 12.771; integrated 12.771
+  [ok] T_A formula (stated in the Scope of slowroute) equals the integrated time to the alarm band in 3/3
+
+=== ES [independent; (f) identity (exact rationals)] keys: enforce, relpunish, restraint, require (R4)
+    Explicit-action enforcement: per-deviation p_d; exclusive vs independent breakouts; the P<v<C window; best response over all deviation plans; the R4 exception; exchangeable vs label-dependent continuations
+(a) f6(A)/m07(A)/m6(2): per-deviation p_d (C=3, D=6, v=1, delta=.9): deviation X (g=1.0, p_d=.1), deviation Y (g=.2, p_d=.6)
+   deviation X: V_coop=30.00, V_dev=17.50 -> deterred; temptation 0.370, remaining sanction 1.620
+   deviation Y: V_coop=30.00, V_dev=39.20 -> NOT deterred; temptation 1.640, remaining sanction 0.720
+  [ok] per-deviation p_d: the larger-g deviation is deterred (17.5 < 30), the quiet one with p_d=0.6 is not (39.2 > 30)
+(b) f6(B): 5.4(5): punishment = reversion to the race with breakouts; closed forms vs value iteration on the explicit chain
+   q=0.045: v exclusive 0.8950 (VI 0.8950); v independent 0.8723 (VI 0.8723)
+   q=0.1: v exclusive 1.2857 (VI 1.2857); v independent 1.2366 (VI 1.2366)
+   q=0.3: v exclusive 1.6875 (VI 1.6875); v independent 1.5816 (VI 1.5816)
+   example C=1, P=0, D=4, U=0, g=2, delta=.9, q=.045: v=0.895 < C; deviation (p_d=0) deterred at q=0: True; at q=.045: False
+   V6.1's example (g=.5, q=.1): v=1.286 > C: the race-with-breakouts is preferred to cooperation itself (kept in S5 for that point)
+   q=.6 exclusive: 1-2q=-0.2 (invalid); independent form stays valid: v=1.6241
+  [ok] f6(B): closed forms equal the explicit chain (exclusive and independent); new example deterred at q=0, not at q=0.045 with v=0.895 < C; independent form valid at q=0.6 (v=1.6241)
+(c) m07(B): the window q in (0.0354, 0.0556): deterrence fails while the punishment is still worse than cooperation (C=1, P=0, D=4, D-=0, g=2)
+   q=0.000: v chain 0.0000; v<C: True; restraint enforceable at p_d=0: True
+   q=0.020: v chain 0.5294; v<C: True; restraint enforceable at p_d=0: True
+   q=0.035: v chain 0.7730; v<C: True; restraint enforceable at p_d=0: True
+   q=0.036: v chain 0.7864; v<C: True; restraint enforceable at p_d=0: False
+   q=0.045: v chain 0.8950; v<C: True; restraint enforceable at p_d=0: False
+   q=0.055: v chain 0.9950; v<C: True; restraint enforceable at p_d=0: False
+   q=0.056: v chain 1.0040; v<C: False; restraint enforceable at p_d=0: False
+   q=0.100: v chain 1.2857; v<C: False; restraint enforceable at p_d=0: False
+  [ok] m07(B): enforceable at q <= 0.035; not at 0.036-0.055 although v < C; at 0.056 v > C
+(d) m07(C): explicit-action stochastic game: player 1's best response over all deviation plans (value iteration on the MDP) vs (14) with v from (5); 20,000 random settings
+   cooperation sustained in 6821; punishment not credible (quitting the race pays) in 35; where credible, (14) agrees with the best response in 19965 of 19965; disagreements []
+  [ok] m07(C): best response over plans agrees with (14) in 19965/19965 credible settings; in 35 the punisher prefers to quit, where (5) is not the credible value
+(e) m07(D)/f6(C)/s3(4): R4 with D < C: C=1, D=.9, v=0, g=2, delta=.9
+   p_bar=0.8642; (14) holds at p_d=0.8, 0.86, 0.87, 0.9: [True, True, False, False]
+   (1-delta)g=0.050 <= delta(C-D)=0.090 with g=0.5: sustained at p_d = 0, .5, .9, 1: [True, True, True, True]
+  [ok] R4: D < C does not exempt (p_bar = 0.8642; (14) fails at p_d = 0.87, 0.9); (1-delta)g <= delta(C-D), i.e. p_bar >= 1, exempts at every p_d
+(f) [identity] s3(1) (Math-Opus reviewer): V_coop >= V_dev vs (14), exact rationals, 20,000 draws
+   disagreements 0 -> EC tests the valuation (algebra) only; the incentives are tested in (d)
+  [ok] s3(1): EC's 'direct values' are (14) rearranged (exact rationals, 0/20,000): EC is a valuation check
+(g) s3(2),(3) (Math-Opus reviewer): q-windows by g; credibility of racing in punishment; monotonicity of p_bar at its edge
+   g=0.5: q-window with v<C yet reversion fails to deter (deters at q=0: True): [0.0498, 0.0555]
+   g=2.0: q-window with v<C yet reversion fails to deter (deters at q=0: True): [0.0354, 0.0555]
+   g=5.0: q-window with v<C yet reversion fails to deter (deters at q=0: True): [0.0159, 0.0555]
+   credibility, S=-0.5, q=0.03: racing in punishment worth 7.013, restraining one period 5.622 -> racing a best response: True
+   credibility, S=0.0, q=0.03: racing in punishment worth 7.013, restraining one period 6.122 -> racing a best response: True
+   at p_bar=0 (g=18.0): dp_bar/dD = 0.00e+00 (zero, not negative: monotonicities are weak at the edges of [0,1))
+  [ok] s3(2,3): windows [0.0498,0.0555], [0.0354,0.0555], [0.0159,0.0555] for g=0.5, 2, 5 (not knife-edge); racing credible; dp_bar/dD = 0 at p_bar = 0
+(h) m07(E): homogeneity of p_bar in (g, C, D, v)
+   all stakes x2: 0.2963 (base 0.2963); only g and D x2: 0.1296
+   all stakes x10: 0.2963 (base 0.2963); only g and D x10: -0.0037
+  [ok] m07(E): p_bar is homogeneous of degree zero (0.2963 at x2, x10); scaling only g and D lowers it (0.1296, -0.0037): the stakes arm needs g and D to outgrow C-v
+(i) m6(5) (Math-Fable reviewer): v = [(1-d)P + d q (D+U)]/(1-d+2dq) with q=0.6: the 'neither' probability 1-2q is negative
+   q=0.3: 1-2q = +0.40; v = 0.4219
+   q=0.5: 1-2q = +0.00; v = 0.4500
+   q=0.6: 1-2q = -0.20; v = 0.4576
+(j) f6(D)/m08(C)/Codex 6: the continuation premise of Corollary 5.5 (two actors, theta=-1, delta=.9)
+   (i) exchangeable lottery continuation: mirrored strategy gives the punished normalized relative value +0.000000
+   (ii) label-dependent continuation (target gets -10 w.p. .5 whatever it does): normalized value -8.1818; deviation worth -69.64 < 0 -> cooperation sustained among relative actors
+   (iii) m08(C): symmetric variant (absorbing prize to either player w.p. .25 each): punishment value 0.0000; deviation worth 4.000 > 0: not sustained
+   Codex 6 (ported): normalized punishment -8.1818; deviation value -69.636; cooperation value 0
+  [ok] relpunish: an exchangeable continuation leaves the punished at 0; a label-dependent one holds it at -8.18 (deviation -69.6), sustaining non-stage cooperation; the symmetric variant does not
+
+=== JX [independent: (a)-(c) direct valuation, (e) Monte Carlo of the clock; (d), and (e)'s deviation values, identity (the one-period reduction); (f),(g) one reduced model [num, rivals not responding]] keys: scissors, detectlink, jointscissors (S5), zonesillus, enforce, standprice
+    The scissors arm by arm in reduced form (direct discounted streams); Test G; the detect link; the joint scissors model
+(a) m10(A): largest enforceable discounted relative loop gain by p_d (binary game n=4, b=1, c=.3, d=.2, eps=1, delta=.9; D=C; rivals not responding)
+   theta0=0.0: p_d=0.0: 0.924; p_d=0.5: 0.852; p_d=0.9: 0.387; p_d=0.94: 0.108; p_d=0.95: none; p_d=0.97: none; p_d=0.98: none; p_d=0.99: none  | none above p_d = 0.9495
+   theta0=0.4: p_d=0.0: 0.953; p_d=0.5: 0.908; p_d=0.9: 0.621; p_d=0.94: 0.448; p_d=0.95: 0.377; p_d=0.97: 0.161; p_d=0.98: none; p_d=0.99: none  | none above p_d = 0.9793
+  [ok] m10(A): the largest enforceable Gamma_delta is 0.924, 0.852, 0.387 at p_d = 0, 0.5, 0.9; none above p_d = 0.9495 (theta0=0) or 0.9793 (theta0=0.4), not 0.99
+(b) m10(B): with a common return Gcom_d (prize growing with capacity), theta0=0
+   Gcom_d=0.0: p_d=0.0: 0.924; p_d=0.5: 0.852; p_d=0.9: 0.387
+   Gcom_d=0.3: p_d=0.0: 0.947; p_d=0.5: 0.896; p_d=0.9: 0.571
+   Gcom_d=0.6: p_d=0.0: 0.970; p_d=0.5: 0.941; p_d=0.9: 0.755
+  [ok] m10(B): a common return widens the enforceable range (at p_d = 0.9: 0.387 -> 0.571 at Gcom_d = 0.3, 0.755 at 0.6)
+(c) m10(C), f6(F), s3_zones: Test G: share of theta ~ U[-1,3] sustaining restraint, wider (theta>1) minus narrower (theta<1)
+   D-C=0.0: gap by p_d  0.0: +0.05; 0.5: +0.09; 0.8: +0.21; 0.9: +0.34; 0.95: +0.50; 0.99: +0.82; 1.0: +0.97
+   D-C=0.5: gap by p_d  0.0: +0.05; 0.5: +0.30; 0.8: +0.92; 0.9: +0.33; 0.95: +0.00; 0.99: +0.00; 1.0: +0.00
+  [ok] Test G: the gap rises with p_d at D=C (+0.05 ... +0.97); with D-C=0.5 it is humped (+0.05, +0.30, +0.92, +0.33, 0, 0, 0): the test discriminates at intermediate p_d
+   f6(F)/s3: theta_rep(p_d) at D=C by direct discounted streams: p_d=0: -0.901, p_d=0.5: -0.812, p_d=0.9: -0.322, p_d=0.95: +0.005, p_d=0.99: +0.634, p_d=1.0: +0.937; racing credible at each: True
+   D-C=0.5: theta_rep at p_d=.9 = +2.337; at p_d=1: inf (no theta <= n-1 sustains restraint)
+   s3 Test G pairs: D=0.0, theta narrow=-0.5, wide=0.5: gap at p_d=0,.3,.6,.8,.9,.95,.99,1 -> 0 0 0 0 1 1 0 0
+   s3 Test G pairs: D=0.0, theta narrow=0.0, wide=1.0: gap at p_d=0,.3,.6,.8,.9,.95,.99,1 -> 0 0 0 0 0 1 1 1
+   s3 Test G pairs: D=0.0, theta narrow=0.0, wide=0.9: gap at p_d=0,.3,.6,.8,.9,.95,.99,1 -> 0 0 0 0 0 1 1 0
+   s3 Test G pairs: D=0.5, theta narrow=-0.5, wide=0.5: gap at p_d=0,.3,.6,.8,.9,.95,.99,1 -> 0 0 1 0 0 0 0 0
+   s3 Test G pairs: D=0.5, theta narrow=0.0, wide=1.0: gap at p_d=0,.3,.6,.8,.9,.95,.99,1 -> 0 0 0 1 0 0 0 0
+   s3 Test G pairs: D=0.5, theta narrow=0.0, wide=0.9: gap at p_d=0,.3,.6,.8,.9,.95,.99,1 -> 0 0 0 1 0 0 0 0
+  [ok] f6(F)/s3: theta_rep = -0.901, -0.812, -0.322, +0.005, +0.634, +0.937 at p_d = 0, .5, .9, .95, .99, 1 by direct streams; at D-C=0.5 none sustains at p_d=1
+(d) [identity] detectlink (U05/A A, U05/B E): 1 - p_bar_d against Prop 8.10's (T-R)/(T-P+F) under the continuation reading
+   100000 random settings with D > v: largest |difference| = 4.35e-11  (R = C; T = (1-delta)(C+g)+delta D; P-F = (1-delta)(C+g)+delta v)
+   g=2.0 C=1.0 D=4.0 v=0.0 delta=0.9: 1-p_bar = 0.8056; (T-R)/(T-(P-F)) = 0.8056; T<R = False; p_bar>=1 (R4 exception) = False
+   g=1.0 C=3.0 D=6.0 v=1.0 delta=0.9: 1-p_bar = 0.6222; (T-R)/(T-(P-F)) = 0.6222; T<R = False; p_bar>=1 (R4 exception) = False
+   g=0.5 C=1.0 D=0.9 v=0.0 delta=0.9: 1-p_bar = -0.0494; (T-R)/(T-(P-F)) = -0.0494; T<R = True; p_bar>=1 (R4 exception) = True
+  [ok] detectlink: (14) with p_d = 1-upsilon reads upsilon >= 1-p_bar, numerically identical to Prop 8.10's threshold; its case T<R is p_bar >= 1. They differ in what is given: 8.10 takes F and trust, (14) a credible continuation
+(e) [independent] U05/A (B): a Poisson detection clock of mean tau gives p_d = exp(-T_dec/tau); [identity] deviation values sampled in the one-period reduction against (14) (exact timings: block VF (b))
+   T_dec= 8.0, tau=10.0: simulated p_d 0.4485; exp(-T_dec/tau) 0.4493
+   T_dec=20.0, tau=10.0: simulated p_d 0.1349; exp(-T_dec/tau) 0.1353
+   T_dec= 5.0, tau= 2.0: simulated p_d 0.0818; exp(-T_dec/tau) 0.0821
+   C=1, D=1.5, v=0, g=.3, T_dec= 8.0, tau=10: simulated value of deviating 0.7384 vs restraint 1.0000 -> deterred True; (14) says True
+   C=1, D=1.5, v=0, g=.3, T_dec= 2.0, tau=10: simulated value of deviating 1.2347 vs restraint 1.0000 -> deterred False; (14) says False
+  [ok] detectlink (U05/A B): the Poisson clock's simulated escape probability equals exp(-T_dec/tau) within 4 SE; deviation values sampled in the one-period reduction agree with (14), an identity, not a test of the timing
+(f) [num, one reduced model; rivals do not respond] U05/A (C): capacity loop with one ratio channel; nonlinear T_dec; p_d = exp(-T_dec/tau); theta_Gamma; stage game of S5.1 scaled by the stakes
+    parameters: r=3.0, dK=0.2, df=0.05, th0=0.0, tau=10.0, gap0=0.05, gapbar=0.5, DC=0.0
+   D-C=0.0:  omega   Gamma  Gamma_d  theta   T_dec(nonlin)  T_dec(lin)   p_d    pbar_d(i)  enforceable (i)  (ii)
+             0.20   0.480   0.332  -0.272          inf          inf    0.000    +0.911     True             True 
+             0.30   0.720   0.498  -0.427          inf          inf    0.000    +0.872     True             True 
+             0.40   0.960   0.665  -0.598          inf          inf    0.000    +0.794     True             True 
+             0.42   1.008   0.698  -0.634        141.0       1152.4    0.000    +0.769     True             True 
+             0.45   1.080   0.748  -0.690         62.0        116.3    0.002    +0.718     True             True 
+             0.50   1.200   0.831  -0.786         34.0         47.2    0.033    +0.565     True             True 
+             0.55   1.320   0.914  -0.888         23.0         29.9    0.100    +0.119     True             False
+             0.60   1.440   0.997  -0.996         18.0         22.1    0.165   -24.414     False            False
+             0.70   1.680   1.163  -1.000         13.0         14.7    0.273     -inf      False            False
+             0.90   2.160   1.495  -1.000          8.0          9.0    0.449     -inf      False            False
+   D-C=0.0: restraint enforceable iff omega < omega*: joint (i) 0.551; joint (ii) one breakout technology 0.542; objective blade alone 0.556; breakout blade alone never
+      at the joint crossing (i): Gamma = 1.323, Gamma_delta = 0.916, p_d = 0.100
+   D-C=0.5:  omega   Gamma  Gamma_d  theta   T_dec(nonlin)  T_dec(lin)   p_d    pbar_d(i)  enforceable (i)  (ii)
+             0.20   0.480   0.332  -0.272          inf          inf    0.000    +0.561     True             True 
+             0.30   0.720   0.498  -0.427          inf          inf    0.000    +0.486     True             True 
+             0.40   0.960   0.665  -0.598          inf          inf    0.000    +0.373     True             True 
+             0.42   1.008   0.698  -0.634        141.0       1152.4    0.000    +0.343     True             True 
+             0.45   1.080   0.748  -0.690         62.0        116.3    0.002    +0.291     True             True 
+             0.50   1.200   0.831  -0.786         34.0         47.2    0.033    +0.181     True             True 
+             0.55   1.320   0.914  -0.888         23.0         29.9    0.100    +0.023     False            False
+             0.60   1.440   0.997  -0.996         18.0         22.1    0.165    -0.218     False            False
+   D-C=0.5: restraint enforceable iff omega < omega*: joint (i) 0.536; joint (ii) one breakout technology 0.504; objective blade alone 0.556; breakout blade alone never
+      at the joint crossing (i): Gamma = 1.286, Gamma_delta = 0.890, p_d = 0.074
+  [ok] U05/A (C): at D=C the blades close at won share 0.551 (one breakout technology throughout: 0.542), at or below the objective blade alone (0.556)
+   U05/A (D): paths (D = C): x = kappa*Omega/(n k0) = omega/(1-omega) grows at g_Omega - g_k
+      stakes outgrow fixed provision (g_Omega=0.05, g_k=0.0): t=0: omega 0.20, p_d 0.000, pbar +0.911; t=10: omega 0.29, p_d 0.000, pbar +0.876; t=20: omega 0.40, p_d 0.000, pbar +0.789; t=30: omega 0.53, p_d 0.067, pbar +0.386; t=40: omega 0.65, p_d 0.223, pbar -inf; t=60: omega 0.83, p_d 0.407, pbar -inf
+      provision grows with the stakes (g_Omega=0.05, g_k=0.05): t=0: omega 0.20, p_d 0.000, pbar +0.911; t=10: omega 0.20, p_d 0.000, pbar +0.911; t=20: omega 0.20, p_d 0.000, pbar +0.911; t=30: omega 0.20, p_d 0.000, pbar +0.911; t=40: omega 0.20, p_d 0.000, pbar +0.911; t=60: omega 0.20, p_d 0.000, pbar +0.911
+      provision outgrows the stakes (g_Omega=0.05, g_k=0.08): t=0: omega 0.60, p_d 0.165, pbar -24.414; t=10: omega 0.53, p_d 0.067, pbar +0.404; t=20: omega 0.45, p_d 0.002, pbar +0.714; t=30: omega 0.38, p_d 0.000, pbar +0.817; t=40: omega 0.31, p_d 0.000, pbar +0.866; t=60: omega 0.20, p_d 0.000, pbar +0.911
+      with fixed provision from omega=0.20 at g_Omega=0.05 the blades cross at t* = ln(x*/x0)/(g_Omega-g_k) = 31.8; with g_k = g_Omega never
+  [ok] U05/A (D): with provision growing with the stakes neither blade moves; with fixed provision p_d rises and p_bar falls until they cross
+   U05/A (E): robustness: omega* (variant (i)) joint against each blade alone, over tau, diffusion, theta_0, r, D-C
+      D-C=0.0 tau= 5.0 df=0.00 theta0=0.0 r=2: omega* joint 0.718, objective alone 0.719, breakout alone never
+      D-C=0.0 tau= 5.0 df=0.10 theta0=0.0 r=2: omega* joint 0.949, objective alone 0.949, breakout alone never
+      D-C=0.0 tau=10.0 df=0.05 theta0=0.0 r=2: omega* joint 0.828, objective alone 0.834, breakout alone never
+      D-C=0.0 tau=20.0 df=0.00 theta0=0.0 r=2: omega* joint 0.697, objective alone 0.719, breakout alone never
+      D-C=0.0 tau=20.0 df=0.10 theta0=0.0 r=2: omega* joint 0.925, objective alone 0.949, breakout alone never
+      D-C=0.0 tau=40.0 df=0.05 theta0=0.0 r=2: omega* joint 0.781, objective alone 0.834, breakout alone never
+      D-C=0.5 tau= 5.0 df=0.00 theta0=0.0 r=2: omega* joint 0.716, objective alone 0.719, breakout alone never
+      D-C=0.5 tau= 5.0 df=0.10 theta0=0.0 r=2: omega* joint 0.947, objective alone 0.949, breakout alone never
+      D-C=0.5 tau=10.0 df=0.05 theta0=0.0 r=2: omega* joint 0.810, objective alone 0.834, breakout alone never
+      D-C=0.5 tau=20.0 df=0.00 theta0=0.0 r=2: omega* joint 0.645, objective alone 0.719, breakout alone never
+      D-C=0.5 tau=20.0 df=0.10 theta0=0.0 r=2: omega* joint 0.874, objective alone 0.949, breakout alone never
+      D-C=0.5 tau=40.0 df=0.05 theta0=0.0 r=2: omega* joint 0.704, objective alone 0.834, breakout alone 0.940
+      96 settings: the joint threshold lies at or below each blade's own in 96; strictly below (by > 0.001) in 84; the breakout blade alone closes in 12
+  [ok] U05/A (E): the joint threshold lies at or below each blade's own in 96/96 settings, as it must by construction (p_d >= 0, theta_Gamma <= theta_0, p_bar rising in theta): a check of the implementation; the informative counts are the 84 strictly below and the 12 in which the breakout blade alone closes
+(g) [num, one reduced model; rivals do not respond; linearized T_dec] U05/B: the scissors along exogenous paths of stakes and provision (D=C)
+   --- A: stakes outgrow provision, stage fixed: n=4 r=1.5 d_K=0.5 delta=0.8 g_Om=0.05 g_k=0.0 eps0=0.01 Dbar=0.5 tau_det=12.0 theta0=0.0 scale_stage=False
+      t   omega  Gamma  Gamma_d  Lambda*   T_dec     p_d   theta   pbar_d  gap
+      0   0.200  0.300   0.200  0.6500      inf  0.0000  -0.158   0.8423 +0.842
+     20   0.405  0.607   0.405  0.8035      inf  0.0000  -0.338   0.7667 +0.767
+     40   0.649  0.973   0.649  0.9866      inf  0.0000  -0.581   0.5610 +0.561
+     59   0.827  1.240   0.827  1.1202    34.47  0.0565  -0.782   0.0451 -0.011   <- blades meet
+     60   0.834  1.251   0.834  1.1254    33.10  0.0634  -0.790   0.0019 -0.061
+     80   0.932  1.398   0.932  1.1988    21.57  0.1656  -0.911  -1.5178 -1.683
+    100   0.974  1.461   0.974  1.2303    18.87  0.2075  -0.965  -5.6489 -5.856
+    120   0.990  1.485   0.990  1.2426    18.01  0.2230  -0.987 -16.8783 -17.101
+    140   0.996  1.495   0.996  1.2473    17.70  0.2287  -0.995 -47.4029 -47.632
+    160   0.999  1.498   0.999  1.2490    17.59  0.2308  -0.998 -130.3774 -130.608
+    180   1.000  1.499   1.000  1.2496    17.55  0.2316  -0.999 -355.9256 -356.157
+    200   1.000  1.500   1.000  1.2499    17.54  0.2318  -1.000 -969.0290 -969.261
+      first t with p_d >= pbar_d: t* = 59
+   --- A2: stage payoffs b,d scaling with the stakes: n=4 r=1.5 d_K=0.5 delta=0.8 g_Om=0.05 g_k=0.0 eps0=0.01 Dbar=0.5 tau_det=12.0 theta0=0.0 scale_stage=True
+      t   omega  Gamma  Gamma_d  Lambda*   T_dec     p_d   theta   pbar_d  gap
+      0   0.200  0.300   0.200  0.6500      inf  0.0000  -0.158   0.8423 +0.842
+     20   0.405  0.607   0.405  0.8035      inf  0.0000  -0.338   0.6394 +0.639
+     40   0.649  0.973   0.649  0.9866      inf  0.0000  -0.581   0.2415 +0.241
+     47   0.724  1.086   0.724  1.0429    93.14  0.0004  -0.663  -0.0067 -0.007   <- blades meet
+     60   0.834  1.251   0.834  1.1254    33.10  0.0634  -0.790  -0.7640 -0.827
+     80   0.932  1.398   0.932  1.1988    21.57  0.1656  -0.911  -3.4655 -3.631
+    100   0.974  1.461   0.974  1.2303    18.87  0.2075  -0.965 -10.7968 -11.004
+    120   0.990  1.485   0.990  1.2426    18.01  0.2230  -0.987 -30.7206 -30.944
+    140   0.996  1.495   0.996  1.2473    17.70  0.2287  -0.995 -84.8774 -85.106
+    160   0.999  1.498   0.999  1.2490    17.59  0.2308  -0.998 -232.0904 -232.321
+    180   1.000  1.499   1.000  1.2496    17.55  0.2316  -0.999 -632.2565 -632.488
+    200   1.000  1.500   1.000  1.2499    17.54  0.2318  -1.000 -1720.0208 -1720.253
+      first t with p_d >= pbar_d: t* = 47
+   --- B: provision grows with the stakes (g_k = g_Om): n=4 r=1.5 d_K=0.5 delta=0.8 g_Om=0.05 g_k=0.05 eps0=0.01 Dbar=0.5 tau_det=12.0 theta0=0.0 scale_stage=False
+      t   omega  Gamma  Gamma_d  Lambda*   T_dec     p_d   theta   pbar_d  gap
+      0   0.200  0.300   0.200  0.6500      inf  0.0000  -0.158   0.8423 +0.842
+     25   0.200  0.300   0.200  0.6500      inf  0.0000  -0.158   0.8423 +0.842
+     50   0.200  0.300   0.200  0.6500      inf  0.0000  -0.158   0.8423 +0.842
+     75   0.200  0.300   0.200  0.6500      inf  0.0000  -0.158   0.8423 +0.842
+    100   0.200  0.300   0.200  0.6500      inf  0.0000  -0.158   0.8423 +0.842
+      blades do not meet within the horizon
+   --- C: detection twice as fast (tau_det = 6): n=4 r=1.5 d_K=0.5 delta=0.8 g_Om=0.05 g_k=0.0 eps0=0.01 Dbar=0.5 tau_det=6.0 theta0=0.0 scale_stage=False
+      t   omega  Gamma  Gamma_d  Lambda*   T_dec     p_d   theta   pbar_d  gap
+      0   0.200  0.300   0.200  0.6500      inf  0.0000  -0.158   0.8423 +0.842
+     50   0.753  1.129   0.753  1.0646    62.48  0.0000  -0.696   0.3499 +0.350
+     60   0.834  1.251   0.834  1.1254    33.10  0.0040  -0.790   0.0019 -0.002   <- blades meet
+    100   0.974  1.461   0.974  1.2303    18.87  0.0430  -0.965  -5.6489 -5.692
+    150   0.998  1.497   0.998  1.2483    17.64  0.0529  -0.997 -78.7291 -78.782
+    200   1.000  1.500   1.000  1.2499    17.54  0.0538  -1.000 -969.0290 -969.083
+    250   1.000  1.500   1.000  1.2500    17.53  0.0538  -1.000 -11815.1021 -11815.156
+    300   1.000  1.500   1.000  1.2500    17.53  0.0538  -1.000 -143947.3218 -143947.376
+      first t with p_d >= pbar_d: t* = 60
+   --- D: a wider held self-model (theta_0 = 0.4): n=4 r=1.5 d_K=0.5 delta=0.8 g_Om=0.05 g_k=0.0 eps0=0.01 Dbar=0.5 tau_det=12.0 theta0=0.4 scale_stage=False
+      t   omega  Gamma  Gamma_d  Lambda*   T_dec     p_d   theta   pbar_d  gap
+      0   0.200  0.300   0.200  0.6500      inf  0.0000   0.204   0.9262 +0.926
+     50   0.753  1.129   0.753  1.0646    62.48  0.0055  -0.530   0.6214 +0.616
+     69   0.887  1.331   0.887  1.1655    25.54  0.1190  -0.771   0.0948 -0.024   <- blades meet
+    100   0.974  1.461   0.974  1.2303    18.87  0.2075  -0.944  -3.0922 -3.300
+    150   0.998  1.497   0.998  1.2483    17.64  0.2300  -0.995 -48.3323 -48.562
+    200   1.000  1.500   1.000  1.2499    17.54  0.2318  -1.000 -599.4704 -599.702
+    250   1.000  1.500   1.000  1.2500    17.53  0.2320  -1.000 -7313.7061 -7313.938
+    300   1.000  1.500   1.000  1.2500    17.53  0.2320  -1.000 -89109.8420 -89110.074
+      first t with p_d >= pbar_d: t* = 69
+  [ok] U05/B: the won share rises from 0.20, p_d rises and p_bar falls (from 0.842) monotonically until the blades meet at t=59 (47 if stage payoffs scale); with provision growing with the stakes they never meet; faster detection or a held self-model of 0.4 delays the meeting (60, 69)
+
+=== DL [independent] keys: delegatelock, nearlock (S6)
+    Delegation when the lock counts: q_L=1 makes not delegating strictly better; with q_L<1 and p=1 a corner is an equilibrium; with p<1 an interior profile can be the only one
+(a) f7(A): n=3, s=1, q_L=0, psi0=0, psi1=.015: Phi_D/Phi_N for k others delegating; pure equilibria (number of delegators)
+   p=0.1: ratios for k=0,1,2: [1.002589, 1.000973, 0.999275]; pure equilibria: [2]
+   p=1.0: ratios for k=0,1,2: [1.4775, 1.576, 1.641667]; pure equilibria: [3]
+  [ok] f7(A): with p=0.1 the ratio falls with k (1.00259, 1.00097, 0.99928): the only pure equilibrium has two delegators; with p=1 it rises (1.48, 1.58, 1.64): all delegate
+(b) Codex 7: ratios [1.0025892857142857, 1.000972972972973, 0.9992753623188403]; equilibrium delegators 2
+  [ok] Codex 7: with p<1 neither corner is an equilibrium; two delegators
+(c) m09: random draws with q_L<1: how often is neither all nor none an equilibrium, by p (20,000 each)
+   'neither all nor none is an equilibrium': {1.0: 0, 0.5: 1586, 0.1: 60} of 20000 each
+  [ok] m09: p=1 restores 'at least one corner' (0/20,000); p=0.5 and 0.1 do not (1586, 60)
+(d) q_L=1: not delegating strictly better for every s, n, p and profile (random draws)
+  [ok] q_L=1: not delegating gives strictly higher survival in 20,000/20,000 random settings (no one delegating is the unique equilibrium)
+(e) nearlock (Remark S6.1): q_L above 1 - 1/(a(1+s)), a = (1-psi1)/(1-psi0): is not delegating strictly better? (200,000 draws)
+   violations of 'not delegating strictly better' above the bound: 0 of 200000 tested (200000 drawn)
+   tightness, n=2, k=0, p=1: ratio/bound = 0.2857 (= n/(n+s), -> 1 as n grows)
+   tightness, n=10, k=0, p=1: ratio/bound = 0.6667 (= n/(n+s), -> 1 as n grows)
+   tightness, n=100, k=0, p=1: ratio/bound = 0.9524 (= n/(n+s), -> 1 as n grows)
+   tightness, n=10000, k=0, p=1: ratio/bound = 0.9995 (= n/(n+s), -> 1 as n grows)
+  [ok] nearlock: above the bound not delegating is strictly better in 200,000/200,000 draws; the bound is tight as n grows (ratio/bound 0.29, 0.67, 0.95, 0.9995 = n/(n+s))
+
+=== AL [independent (parts marked [derived] evaluate stated formulas)] keys: faithful, delegate, delegatelock, nested, transmit, opaquecorr, topology, lyapunov, homeostasis, masked
+    The alignment reviewer's independent recomputation of Section 6 (al_checks), ported whole as one block; parts named as the reviewer named them
+   --- (6.1) faithful: theta* and loss
+      eps=1: 0.9375  eps=10 (c fixed): 1.4438  eps=10, c=3: 0.9375
+      d=0.2: all-racing payoff -1.100, theta*=0.938
+      d=0.1: all-racing payoff -0.700, theta*=1.385
+      d=0.05: all-racing payoff -0.500, theta*=1.696
+      dJ changes sign at theta*: True
+  [ok] AL(6.1): theta* = 0.9375 at eps=1 (1.4438 at eps=10 with c fixed; 0.9375 when c scales with eps); dominance switches at theta*
+   --- (6.2) delegate: dominance threshold
+      s* = 1.1628  lone delegator win prob = 0.5196
+  [ok] AL(6.2): delegation dominant above s* = 1.1628 (lone delegator wins with probability 0.5196)
+   --- (6.4) delegatelock: at-least-one identity, direct recomputation
+      random draws: 100000  neither: 0  both: 21922  formula vs direct mismatches: 0
+      n=2 all-delegate threshold s >= 206.42  survival 0.00451
+  [ok] AL(6.4): with p=1, at least one corner is an equilibrium in 100,000/100,000 draws, both in some; the closed forms equal the direct survival comparison
+   --- (6.7) nested: unilateral safeguard with private vs common benefit (own replicator)
+      share of safeguard, private benefit: 1.0 ; common benefit: 0.0 ; tax 0.01 with independent advantage 0.005: 0.0 , 0.02: 1.0
+  [ok] AL(6.7): a safeguard with private benefit spreads; with common benefit it is selected out; a lead larger than the tax pays it while the lead lasts
+   --- (BT) Bradley-Terry translation invariance inside training
+      shared harm 0: P(y1>y2)=0.710950; shared harm -5: 0.710950; comply(q=1.3,h=-5) vs abstain(q=0,h=0): P(comply preferred)=0.0241
+  [ok] AL(BT): a harm shared by both compared responses leaves the preference at 0.7110; with abstention in the comparison set the complying response is preferred with probability 0.024
+   --- (6.8) opaquecorr numbers
+      no corrector: 7.06e-10; corrector (t=1..200): 0.630; (t=0..199): 0.473; corrector to period 20000: 1.57e-09 (constant c_b: not summable)
+  [ok] AL(6.8): 0.630 counts from t=1, 0.473 from t=0; with c_b fixed the residual is not summable (1.6e-9 by 20,000)
+   --- (6.9) topology: random vs adversarial blind spot
+      serial 0.531  k checks across gap 0.989  with qcc=.05 0.94  m=2 0.941  m=3 0.994
+      blind spot 0.0: random-hazard catch 1.000
+      blind spot 0.05: random-hazard catch 0.950
+      blind spot 0.3: random-hazard catch 0.700
+      attacker knows the common blind spot w.p. 0.0: catch 0.950
+      attacker knows the common blind spot w.p. 0.5: catch 0.475
+      attacker knows the common blind spot w.p. 0.9: catch 0.095
+      attacker knows the common blind spot w.p. 1.0: catch 0.000
+      [derived: evaluates the stated formulas]
+   --- (6.10) logistic map horizon (lyapunov)
+      mean steps e=1e-3: 7.39  e=1e-12: 37.31 (ln-precision theory: (ln(0.1/e))/ln 2 = 6.6, 36.5)
+  [ok] AL(6.10): errors of 1e-3 and 1e-12 reach 0.1 after 7.39 and 37.31 steps on average (seeded as the reviewer did)
+   --- (6.11) homeostasis
+      Dpsi=0.19: iota=0.002, added hazard n*x=0.0011
+      Dpsi=0.05: iota=0.036, added hazard n*x=0.0053
+      Dpsi=0.02: iota=0.104, added hazard n*x=0.0062
+      Dpsi=0.01: iota=0.218, added hazard n*x=0.0065
+      Dpsi=0.005: iota=0.446, added hazard n*x=0.0067
+      Dpsi=0.001: added hazard 0.003
+      t=2: own marginal gain at full delegation +0.1018
+      t=3: own marginal gain at full delegation +0.1542
+      t=4: own marginal gain at full delegation +0.1862
+      t=5: own marginal gain at full delegation +0.2037
+      t=6: own marginal gain at full delegation +0.2128
+      t=7: own marginal gain at full delegation +0.2175
+      sum_{t>=4} 3*2^-(t+1) = 0.1875
+  [ok] AL(6.11): full delegation's own marginal gain is positive at t = 2..7 (shifted example); realized risk from t=4 summed by the union bound is 3/16
+   --- (bounded objective) bounded maximizer vs satisficer as the cost of resources falls
+      cost 0.1: bounded maximizer acquires R=2.30; satisficer R=3.00
+      cost 0.01: bounded maximizer acquires R=4.61; satisficer R=3.00
+      cost 0.001: bounded maximizer acquires R=6.91; satisficer R=3.00
+      cost 1e-06: bounded maximizer acquires R=13.82; satisficer R=3.00
+  [ok] AL(bounded): a maximizer of a bounded goal acquires ln(1/c): 2.30, 4.61, 6.91, 13.8 without limit; a satisficer stops at 3.0
+   --- (contest) intensity as the private cost c -> 0, by self-model (Prop 3.6(1) formula)
+      theta=-1.0: [0.25, 2.5, 25.0, 250.0]
+      theta=-0.5: [0.19, 0.875, 1.367, 1.449]
+      theta=0.0: [0.144, 0.469, 0.605, 0.623]
+  [ok] AL(contest): under the relative objective intensity rises 0.25 -> 250 as c falls 1 -> 0.001; counting the shared loss keeps it bounded (0.62)
+
+=== TR [independent: (a)-(c) brute-force search over strategy profiles; (d)-(f) direct computation; (g) simulation; (h) identity] keys: signal, pausevalue, readiness, readrule (S11); the staying-out identity (X11)
+    The transition: the signal game (separation, the bound on restraint after a reversible step, the intuitive criterion); a pause valued by what changes; readiness under conjunction and noise against sequential tests; staying out alone
+(a) signal(1): a separating equilibrium (S sends, R does not, restraint after E only) exists iff kS <= GS and kR >= GR
+  [ok] signal(1): brute-force search agrees with the condition in 300/300 random games
+(b) signal(2): if 0 <= kR < GR and 1-mu < w, restraint after E has probability at most kR/GR in every equilibrium
+  [ok] signal(2): over 200 random games, max over equilibria of (restraint after E) - kR/GR = 0.00e+00 <= 0
+  [ok] signal(2): the hybrid equilibrium (S sends; R sends with prob (1-mu)(1-w)/(mu w); restraint after E w.p. kR/GR) is found in 135/135 games with kS <= GS kR/GR
+(c) signal: the printed example
+  [ok] kS=-0.05, kR=0.30, GS=0.40, GR=0.20 (mu=0.5, w=0.6): the separating equilibrium exists
+   reversible step kR=0.05: separating exists: False; max restraint after E over equilibria 0.250 = kR/GR = 0.250; hybrid: R imitates w.p. 0.667
+  [ok] kR=0.05: no separation; the step buys restraint with probability 0.25 at most
+   pooling on N exists with skeptical off-path beliefs (restraint after E <= kS/GS): True; E is equilibrium-dominated for R (best -0.10 < 0) and not for S (best +0.30 > 0)
+  [ok] intuitive criterion: beliefs after E must put weight on S, which removes the pooling equilibrium
+(d) pausevalue(1): a pause that changes nothing leaves survival over any number of active rounds unchanged
+  [ok] shift invariance in 200 random sequences
+(e) pausevalue(2): hazard 0.01 a round for 20 rounds, then 0.01/k^1.5 in the k-th round after a change
+   survival to round 10,000: 0.7969 (limit 0.7968); unchanged process at 0.01 a round: 2.25e-44
+  [ok] survival to 10,000 rounds is 0.80 after a change to a summable sequence, 2e-44 without one
+(f) readiness: seven dimensions, each read once with a 5% chance of missing a met dimension
+   a ready state passes all seven with probability 0.95^7 = 0.6983
+  [ok] 0.95^7 = 0.70
+   fixed design (n=16 readings, set for noise 1): at noise 1, a met dimension passes w.p. 0.953; seven pass w.p. 0.7134
+   fixed design (n=16 readings, set for noise 1): at noise 2, a met dimension passes w.p. 0.372; seven pass w.p. 0.0010
+  [ok] a fixed reading designed for one noise level, read at twice the noise, almost never passes a ready state
+(g) sequential test per dimension (SPRT, means 0 vs 1, alpha=0.01, beta=0.05/7): error rates and duration by noise
+   noise 1: false 'met' 0.0075 (bound 0.0101); missed 'met' 0.0037 (bound 0.0072); mean readings when met 10.5
+   noise 2: false 'met' 0.0057 (bound 0.0101); missed 'met' 0.0035 (bound 0.0072); mean readings when met 38.7
+   noise 4: false 'met' 0.0060 (bound 0.0101); missed 'met' 0.0067 (bound 0.0072); mean readings when met 148.6
+   seven dimensions: a ready state is held back with probability at most 7*beta/(1-alpha) = 0.0505
+  [ok] noise lengthens the sequential test (mean readings x16 at four times the noise, within sampling) and leaves its error rates at the registered levels
+(h) X11 identity: joining Phi^P = (1-q_I)(1-p_dec/2) = eps(1+eps)/2; staying out Phi^S = 1 - p^S_dec p_ext
+   eps=0.05: joining 0.0263; staying out, rival's decisive chance unchanged 0.0500; raised to 1-eps^2 0.0025
+   eps=0.1: joining 0.0550; staying out, rival's decisive chance unchanged 0.1000; raised to 1-eps^2 0.0100
+   eps=0.3: joining 0.1950; staying out, rival's decisive chance unchanged 0.3000; raised to 1-eps^2 0.0900
+   eps=0.6: joining 0.4800; staying out, rival's decisive chance unchanged 0.6000; raised to 1-eps^2 0.3600
+  [ok] staying out beats joining when it leaves the rival's decisive chance unchanged, and loses when it raises it to 1-eps^2
+
+=== ML [derived (toy)] keys: metaloop (TESTS research programme; not cited in the core)
+    The meta-loop toy (Sys s6): rule-making by actors with working objective theta_Gamma sets the next period's Gamma_delta
+   k=2.0, theta_c=-0.2: fixed points (Gamma, stability, theta_Gamma): [(0.465, 'stable', -0.03)]
+   k=2.0, theta_c=0.0: fixed points (Gamma, stability, theta_Gamma): [(0.71, 'stable', -0.41)]
+   k=2.0, theta_c=0.2: fixed points (Gamma, stability, theta_Gamma): [(0.847, 'stable', -0.66)]
+   k=6.0, theta_c=-0.2: fixed points (Gamma, stability, theta_Gamma): [(0.127, 'stable', 0.37), (0.625, 'unstable', -0.27), (0.969, 'stable', -0.93)]
+   k=6.0, theta_c=0.0: fixed points (Gamma, stability, theta_Gamma): [(0.977, 'stable', -0.95)]
+   k=6.0, theta_c=0.2: fixed points (Gamma, stability, theta_Gamma): [(0.979, 'stable', -0.95)]
+   k=12.0, theta_c=-0.2: fixed points (Gamma, stability, theta_Gamma): [(0.101, 'stable', 0.4), (0.598, 'unstable', -0.22), (0.98, 'stable', -0.95)]
+   k=12.0, theta_c=0.0: fixed points (Gamma, stability, theta_Gamma): [(0.108, 'stable', 0.39), (0.404, 'unstable', 0.05), (0.98, 'stable', -0.95)]
+   k=12.0, theta_c=0.2: fixed points (Gamma, stability, theta_Gamma): [(0.98, 'stable', -0.95)]
+  [ok] ML (toy): a steep rule-making response makes the loop bistable (a narrow-objective high-Gamma state and a wide-objective low-Gamma one)
+
+=== VF [independent: direct computation (Nash iteration, period-by-period sums, simulation, numerical Jacobian, grid maximization, Monte Carlo); (b) closed forms checked against the sums] keys: loopgain, tdec, compound, relsel, load, detectlink, jointscissors, scissors, talk, nearlock, preventown, readrule, dwell (S2-S11)
+    Numbers added by the fixes of the V6.2 verification round, each checked by direct computation
+(a) Proposition 2.2(4): r^pr along a relative shift against a move of the actor's stock alone; static contest p_i = X_i e_i / sum X_k e_k, cost e/X^s, rivals at their Nash efforts at the shifted state
+   n=2, s=0.0: r^pr/r own-only 1.0000, along the relative shift 1.0000; a common shift moves p_i by +0.0000 per unit
+   n=3, s=0.0: r^pr/r own-only 1.3333, along the relative shift 1.3333; a common shift moves p_i by -0.0000 per unit
+   n=2, s=1.0: r^pr/r own-only 1.0000, along the relative shift 1.5000; a common shift moves p_i by -0.2500 per unit
+  [ok] loopgain(4): at s=0 the own-only and relative derivatives agree (2(n-1)/n); at n=2, s=1 they are 1.00 and 1.50, a common shift moving p_i by -0.25: r^pr must be read along the relative shift
+(b) Remark 5.5: the one-period reduction against two exact timings; closed forms against period-by-period sums
+   20,000 random settings: largest |closed form - period sum| 2.7e-15 under (A), 1.9e-15 under (B); sanction weight with no breakout, clock of mean 10, delta=0.9: reduction 0.9, (A) 0.461
+  [ok] detectlink: the closed forms of timings (A) and (B) equal the period-by-period values; under (A) a slow clock weakens the sanction even without breakout (0.461 against 0.9)
+   joint threshold (i) of Remark S5.2: D-C=0.0, reduced: 0.551; D-C=0.0, A: 0.514; D-C=0.0, B: 0.556; D-C=0.5, reduced: 0.536; D-C=0.5, A: 0.514; D-C=0.5, B: 0.554
+  [ok] jointscissors: the reduction's thresholds 0.551 (D=C) and 0.536 (D-C=0.5) become 0.514 and 0.514 under timing (A), 0.556 and 0.554 under timing (B)
+(c) Remark S5.2: how far the joint threshold lies below the objective blade alone over the 96 settings; the sweep over decisiveness
+   96 settings close; the joint threshold lies more than 0.05 below the objective blade's in 26, by at most 0.132; clocks of those: [20.0, 40.0]; D-C=0.5 in 23
+  [ok] jointscissors: in 26 of 96 settings, all with a slow clock (20 or 40 periods) and mostly at D-C=0.5, detection speed moves the threshold by 0.05 to 0.13
+   sweep: r=1.0, df=0.0: never; r=1.0, df=0.05: never; r=1.0, df=0.1: never; r=1.5, df=0.0: 0.952; r=1.5, df=0.05: never; r=1.5, df=0.1: never; r=1.7, df=0.0: 0.839; r=1.7, df=0.05: 0.975; r=1.7, df=0.1: never
+  [ok] jointscissors: at r=1 the blades never close (df 0 to 0.1); at r=1.5 only without diffusion, near 0.95; at r=1.7 with df=0.05 at 0.975
+(d) Proposition 5.17, the pivot: scaling stakes and provision together, numerical Jacobian of the relative deviation (n=2, d=0.2, no diffusion)
+   level channel (strength a*X): Gamma at scale 1, 2, 4: 1.2500, 2.5000, 5.0000; ratio channel (strength r ln X): 2.5000, 2.5000, 2.5000
+  [ok] scissors: provision that keeps pace with the stakes holds the gain still in a ratio channel, while in a linear level channel scaling both by 2 and 4 scales Gamma by 2 and 4
+(e) Remark S2.1: the diffusion example (Gamma=1.5, d=df=0.05, r=3) under two gap measures and with four carriers
+   n=2 from (1.01, 0.99): excess over the mean settles at 0.4472, never 50%: True; n=2, leader 1% above the other: excess over the other reaches 50% at 80, settles at 1.618; n=4, leader 1% above the others: excess over the mean reaches 50% at 77
+  [ok] tdec: the stall at 0.447 holds for two carriers measured against their mean; against the other carrier the gap reaches 50% at period 80, and with four carriers the excess over the mean reaches it at 77
+(f) Proposition 2.3(2)(i) at a cap equal to K* with diffusion, every carrier moving: the two first-order cases
+   299 random settings: df < d_K Gamma0 in 243, leaders held at the cap and (i)'s criterion right in 243; df > d_K Gamma0 in 56, Gamma < Gamma0/(1+Gamma0) < 1 and every carrier back at K* in 56
+  [ok] compound(2)(i): with diffusion at a cap equal to K*, below the knife edge the leaders stay at the cap and the criterion decides; above it Gamma < 1 and all return
+(g) Proposition 3.4: a relative, payoff-monotone rule without a rate bound; host rho=0.05, h_V=0.08, floor 0.3, race share from 0.001, tau_eff = nu - 1/(1+t)
+   rate (gap)^3: B(t)=ln(1+t) unbounded, race share at most 0.00166, host at least 0.9974; replicator: race share 0.668 at t=2000, host down to 0.0170
+  [ok] relsel: payoff-monotonicity alone does not carry Proposition 3.4's second sentence (share stays below 0.0017, host above 0.99), while replicator dynamics on the same path take the host to 0.017
+(h) Proposition 5.16: third-party payoffs summing to -k y^2: curvature, ideal points and the gap in units of the state
+   n=3 theta=-1.0 k=0.5: n-1+theta(1+k) = 0.500; gap in units of the state 0.150000, b0(n-1-theta)/(n-1+theta) = 0.150000
+   n=4 theta=-0.5 k=2.0: n-1+theta(1+k) = 1.500; gap in units of the state 0.112000, b0(n-1-theta)/(n-1+theta) = 0.112000
+   n=6 theta=0.5 k=1.0: n-1+theta(1+k) = 6.000; gap in units of the state 0.081818, b0(n-1-theta)/(n-1+theta) = 0.081818
+   n=3 theta=-0.5 k=0.8: n-1+theta(1+k) = 1.100; gap in units of the state 0.083333, b0(n-1-theta)/(n-1+theta) = 0.083333
+  [ok] talk: with quadratic third parties the gap in units of the state is unchanged where n-1+theta(1+k) > 0; at n=3, theta=-1 concavity fails from k=1
+(i) Remark S6.1: for a given n the binding profile is all others delegating at p=1
+   s=2: n=2: worst factor 2.000 at k=1; n=3: worst factor 2.333 at k=2; n=10: worst factor 2.800 at k=9; n=100: worst factor 2.980 at k=99; uniform bound 1+s = 3.0
+  [ok] nearlock: the worst factor is 1+(n-1)s/n, at k=n-1: 2.0, 2.33, 2.8, 2.98 for n=2, 3, 10, 100 at s=2, against the uniform 3
+(j) Proposition 8.5(1): bound 0.2308 at Phi^P=0.4 and 0.1667 at 0.3 (Phi^S=0.5, Phi^R=0.9, s_P=0.5); proportional falls: 0.231, 0.375, 0.545, 0.750, 0.894
+  [ok] preventown: lowering Phi^P alone can lower the bound (0.231 to 0.167); falling in proportion it rises
+(k) Remark S11.3(2): SPRT between levels 0 and 1, a=0.01, b=0.05/7; a met dimension inside the indifference zone, and a test that assumes the wrong noise
+   true level 0.75, unit noise: held back 0.0586 (bound 0.0072); at the registered level 1: 0.0040; true noise 2, assumed 1, level 0: declared met 0.1906 (bound 0.0101)
+  [ok] readrule: Wald's bounds hold at the registered levels with known noise (held back at most 0.0072 at level 1), not inside the indifference zone (about 0.06 at 0.75) nor with the noise misspecified (about 0.2 against 0.0101)
+(l) Proposition S11.4: the logit's peak under insulation from x0=0.99, G=10
+   rule-making ten times slower: peak logit 71.57, alternative's share 8.3e-32; equal speeds: 11.29, share 1.2e-05; formula u0+(zeta c/eps d)(G-1-ln G): 71.57, 11.29
+  [ok] dwell: without a floor the alternative's share falls to about 8e-32 at slow rule-making (1.2e-5 at equal speeds), extinct in any finite population
+
+=== timing by block (s): RC 0, RP 0, RV 1, CX 0, FB 0, LG 1, CI 11, TC 0, TH 0, SM 1, CB 0, PR 2, CS 3, FA 0, DW 13, AC 0, RH 0, FS 0, EC 2, CR 6, BI 0, WG 0, TK 0, T3 10, HO 63, SH 0, PE 0, FD 0, NB 0, CH 23, TD 0, CE 8, PD 0, SP 6, MP 62, QS 30, FF 1, SR 0, ES 18, JX 2, DL 0, AL 0, TR 2, ML 0, VF 3
+=== Codex's boundary cases (../v6.1/reviews/counterexamples_v61_codex.py; plan s7 requires the eight marked *):
+   * Gamma_delta >= 1: block PD, holds
+     decay raises the loop gain (ratio channel with diffusion): block CH, holds
+   * cap equality: block CE, holds
+   * positive diffusion restores without provision: block CE, holds
+   * falling positive per-unit floor f: block FF, holds
+   * unequal compliance costs (incidence): block CI, holds
+   * stochastic punishment asymmetry: block ES, holds
+   * p < 1 in delegation: block DL, holds
+   * nonlinear fitness: block PR, holds
+     provision raises the common-channel weight (Test Gamma sign): block SP, holds
+  [ok] all eight of Codex's boundary cases appear in a block and hold
+=== assertions: 243 passed, 0 failed (default sizes)
+=== done in 268 s

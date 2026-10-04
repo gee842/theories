@@ -1,0 +1,131 @@
+{
+  "participation": [
+    {
+      "initial_total": 0.41000000000000003,
+      "initial_total_derivative": -0.028955999999999992,
+      "time_below_first_threshold": 1.18,
+      "final_types": [
+        3.623145454819296e-39,
+        1.6509252359637628e-65
+      ],
+      "final_total": 3.6231454548192963e-40,
+      "h": 0.02,
+      "T": 500
+    },
+    {
+      "initial_total": 0.41000000000000003,
+      "initial_total_derivative": -0.028955999999999992,
+      "time_below_first_threshold": 1.17,
+      "final_types": [
+        3.623145454588475e-39,
+        1.6509252361272396e-65
+      ],
+      "final_total": 3.6231454545884755e-40,
+      "h": 0.01,
+      "T": 500
+    }
+  ],
+  "field_equality": {
+    "gain": 1,
+    "core_nonempty": true,
+    "initial": [
+      0.99,
+      0.99
+    ],
+    "final_share": 0.0,
+    "final_support": 1.43e-322,
+    "T": 3000
+  },
+  "liability_margin": {
+    "constant": [
+      {
+        "initial_margin": 0.08,
+        "minimum_host": 0.13973203905964393,
+        "minimum_time": 55.56,
+        "final_host": 0.9999999963335849,
+        "floor": 0.3,
+        "h": 0.02
+      },
+      {
+        "initial_margin": 0.08,
+        "minimum_host": 0.1397320324995242,
+        "minimum_time": 55.550000000000004,
+        "final_host": 0.9999999963335835,
+        "floor": 0.3,
+        "h": 0.01
+      }
+    ],
+    "growing": [
+      {
+        "initial_margin": 0.08,
+        "minimum_host": 0.7012165389878857,
+        "minimum_time": 6.98,
+        "final_host": 0.9999999999911217,
+        "floor": 0.3,
+        "h": 0.02
+      },
+      {
+        "initial_margin": 0.08,
+        "minimum_host": 0.7012164873312392,
+        "minimum_time": 6.99,
+        "final_host": 0.9999999999911215,
+        "floor": 0.3,
+        "h": 0.01
+      }
+    ]
+  },
+  "readiness_simple_vs_threshold": [
+    {
+      "mean": 0,
+      "probability_declared_met": 0.00555,
+      "mean_observations": 11.19565,
+      "runs": 20000,
+      "false_met_bound_at_H0": 0.010071942446043165,
+      "false_unmet_bound_at_H1": 0.007215007215007216
+    },
+    {
+      "mean": 0.49,
+      "probability_declared_met": 0.49395,
+      "mean_observations": 28.99425,
+      "runs": 20000,
+      "false_met_bound_at_H0": 0.010071942446043165,
+      "false_unmet_bound_at_H1": 0.007215007215007216
+    },
+    {
+      "mean": 0.51,
+      "probability_declared_met": 0.54665,
+      "mean_observations": 28.79255,
+      "runs": 20000,
+      "false_met_bound_at_H0": 0.010071942446043165,
+      "false_unmet_bound_at_H1": 0.007215007215007216
+    },
+    {
+      "mean": 1,
+      "probability_declared_met": 0.99595,
+      "mean_observations": 10.5438,
+      "runs": 20000,
+      "false_met_bound_at_H0": 0.010071942446043165,
+      "false_unmet_bound_at_H1": 0.007215007215007216
+    }
+  ],
+  "closed_form": {
+    "test_B": {
+      "own_absolute_change": -1.0,
+      "rival_absolute_change": -2.0,
+      "own_relative_change": 1.0
+    },
+    "detection_vs_removal": {
+      "safe_net_payoff": -0.3,
+      "unsafe_net_payoff": -0.0,
+      "safe_after_auditable_intervention_subsidy": 0.10000000000000003
+    },
+    "oversight": {
+      "p_each": 0.9,
+      "layers": 6,
+      "iid_serial": 0.531441,
+      "perfectly_correlated_serial": 0.9,
+      "disjoint_failure_events_serial": 0.4
+    }
+  }
+}
+All independent boundary assertions passed.

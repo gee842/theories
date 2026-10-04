@@ -1,0 +1,60 @@
+{
+ "files_written": [
+  "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U05/A/core/50_s5.md",
+  "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U05/A/supp/05_S5.md",
+  "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U05/A/SUMMARY.json",
+  "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U05/A/checks/jx_joint_scissors.py (from the interrupted earlier attempt; unchanged, already ported into checks_v62.py as JX(d)-(f))",
+  "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U05/A/checks/jx_joint_scissors.log (same)"
+ ],
+ "items_addressed": [
+  "Claim box: conditions as antecedents; scissors as pivot on the won share [thm by arm; num jointly]; talk unified; conjectured part named last (C0); no hedges",
+  "join: inline core declaration kept; statement now owns its conditions (n-player caveat; independence; iff sum diverges)",
+  "dissipate: kept; ceilings and 1.27/1.007 moved to S5 with [num: legacy v5]",
+  "frontier: Remark reduced to two sentences + 'peace of abundance' + Ren's v6.0 sentence (anaesthetic ... self-replicating economy carries the same switch); conditions (1)-(3), proof and toy [num: FS] in S5; corpus pointer to meta-attractor 2026-10-01/10-04",
+  "enforce (D2-fable s11): per-deviation g_i(a), p_d(a) in (1)-(2); quiet deviation can bind; (5) exclusive breakouts q_b<=1/2 or independent (q_b(1-q_b)); new P<v<C example (window 0.0354-0.0556, v=0.895 at 0.045) [num: ES]; Scope cites the least-value (Abreu-type) punishment assertion flagged for outside review; '200,000' reworded as valuation check [identity: EC]; ES best response 19,965/19,965; old v>C example kept in S5 as 'a different point'",
+  "detectlink (new Remark 5.5): p_d = 1-upsilon(T_dec); (14) as upsilon >= 1-pbar_d; Poisson clock p_d = exp(-T_dec/tau_det); Prop 8.10's threshold equals 1-pbar_d under the continuation reading and T<R iff pbar>1 [identity: JX(d); num: JX(e)]; Scope and S5 state where the two differ (8.10 takes F and trust; (14) requires credible v in the same game)",
+  "relpunish (D2-fable s12/D2-opus s12): exchangeable punishment phase in the statement; Scope: label-dependent continuation escapes (ES j), role-differentiated punishment weak as printed, strict under small asymmetries and in nearly all perturbed games (CR d,e,g), role assignment = equilibrium selection, relative punisher indifferent whom it hurts (CR f); 'only as blocs' -> 'only by role-differentiated punishment' [thm] with blocs [conj]",
+  "restraint: '(a) changing the premise itself'; R4 exception made exact (survives every p_d iff (14) at both ends; (1-delta)g<=delta(C-D) where D>=v); D<C alone does not exempt [num: ES e]",
+  "wingives: kept; added kappa_W/(1+kappa_W) for an accurate winner (boundary(2)), the crux = winner's dependence on the governed after victory, AI lowers it, C13; pointer to Section 8.3; S5 adds n vs n-1 promise conventions [num: SM(1)] and positional kappa_s<=0",
+  "preventattack: one sentence kept with the spread-out-shift clause; 'compounding is what makes the shift arrive'; S5 legacy labels v4.2/v4.4",
+  "racehazard, nonsum, tempo: kept (racehazard as a full statement; nonsum inline); S5 numbers labelled legacy v5/v4.2",
+  "coverage (Theorem): premises reduced to (coverage lags) and (residual floor); (variety grows) stated as the motivation the theorem does not use, with D4 B4 evidence wording (longest-horizon series at its task suite's limit) [obs: EV5]; 'AI-assisted correction can keep pace'",
+  "E2/E3: definitions kept at home in 5.3 ('They are different arrangements'; stopping is not slowing); forward pointer to masked as their strongest alignment reason",
+  "enough: kept; sharpened rule after the result (D1-opus 5.1 row / Adv-O m5): the mind decides whether growth stops where need is met; hazardous variety above coverage dangerous under any mind, so pace binds even a generative order; Ren ruling 'growth is not the danger; the mind is' quoted after the mechanism; book line 癌亦增长，而其长竭母体之生 [corpus: shengsheng, 2026-07-14 l.113, provenance found]; PE number updated to 1.8e-9",
+  "talk (D2-opus s13): one effective bias b0(n-1-theta)/(n-1+theta), informative iff < 1/4, third parties affected linearly; (2) cases n>=3 at theta=-1 (b0 n/(n-2)) and n=2 (zero-sum, no talk); 'compare Crawford and Sobel'; blocs [conj]; Snidal 1991; quadratic third parties [num: TK]; full unified proof in S5 [num: TK, T3]",
+  "5.4: 讲理/讲赢 rekeyed to [corpus: alignment-selection; jian-and-wenyan, 2026-05-05] and quoted after the mechanism; Kuran 1995 (preference falsification) added with the race-doctrine reading [conj]; MacKenzie left to 11.2 per plan",
+  "scissors (new Proposition 5.17, closes the section): four arms with conditions (breakout arm linearized with Lambda* = 1+(1-beta)r omega d_K - d_K - delta_f; objective arm derived generally via (7) for symmetric games; sanction arm; stakes arm: homogeneous of degree zero, falls iff (1-delta)g and D-C outgrow C-v); one pivot omega; Scope: TD caveat, C0/Test E, reduced form 0.924->0.387, none above 0.9495 [JX a], joint model omega*=0.551 (0.542 with one breakout technology throughout), crossing at t=31.8, objective blade does most of the closing, breakout blade alone 12/96 [JX f]; Test G hump [JX c]; closing: means of restraint weaken as the thing restrained grows, where stakes outgrow provision",
+  "S5 jointscissors (new Remark S5.2): full model and results of JX(f), with JX(g) mentioned qualitatively; zonesillus updated (Lambda_p, 0.9495/0.9793, Test G hump, D-C=0.5 -> +2.34)",
+  "Notation per D1-opus 7.4: q -> q_b, U_i -> V^sub_i, S5.1's Lambda -> Lambda_p, detection mean tau -> tau_det; equation references via {{eq:enforceeq}}",
+  "D4 items: B4 (variety grows wording), M1 (compare Crawford and Sobel), M5 (Duersch 'to be checked' deleted), M9 (Snidal, blocs conj), M10 (Kuran in 5.4; MacKenzie to 11.2)",
+  "Hand-off: 'Each erosion runs faster with a more powerful instrument; Section 6 asks what AI does to the game, and what the game does to AI.'",
+  "Test assembly in scratch (/private/tmp/claude-501/U05A-refs/v6.2): only expected unknown keys (thresholds from s2, masked from this unit); xref 'must stay in the core' 32/32"
+ ],
+ "moved_or_dropped": [
+  "V6.1 box sentence 'Each consequence then acts as a mechanism of the others' dropped from the 5 box: the chain lives in 1.2/12.4 and the four loops in 7.1 (one home per point)",
+  "V6.1 box sentence 'Growth moves temptation up and restraint down at once' moved to the 5.5 closing, made conditional ('where the stakes outgrow provision beneath the game')",
+  "V6.1 5.5 'In the corpus: change the basin, then add speed' dropped here; its homes are Remark pathgen (2.3, already carries it) and 12.4",
+  "frontier remark's long statement and toy sentence ('turns from consuming the host to consuming one another with a third of the frontier left; copies with theta=0 stop at a point of enough') moved to S5 (Remark in full + Toy)",
+  "dissipate's [num: ceilings 3, 1.86, 1, 0.33] moved from the core proof line to S5, with the legacy v5 label",
+  "enforce's monotonicity check '100,000 random draws, no violation' replaced by the analytic sign argument plus [num: NB(e) 47,832 in-region draws; ES(g)]",
+  "relpunish's specific numbers (-69.6; 300/300; -0.5) moved from the core Scope to S5; core keeps the qualitative facts with [num: ES; CR]",
+  "V6.1 S5 'A slow breakout enters with p_d = Pr(T_dec < tau)' replaced by p_d = 1 - upsilon(T_dec) (detectlink), the same quantity",
+  "V6.1 5.5 number 'none above p_d = 0.99' corrected to 0.9495 (theta_0=0) / 0.9793 (theta_0=0.4); the correction note itself belongs in CHANGELOG, not in S5",
+  "frontier toy: 'total stock then falls to about 10^-9' corrected to about 4x10^-9 (FS log 3.96e-9)",
+  "PE: '2x10^-9' restated as 1.8x10^-9 (PE log 1.83e-9)",
+  "S5 citation of the v4 scripts by path replaced by [num: legacy v4.2 / v4.4 / v4.5 / v5] labels (same sources, run by checks_v62 --legacy)",
+  "Duersch et al. parenthesis '(the wording of that citation is to be checked against the source)' deleted per D4 M5 (verified)"
+ ],
+ "open_issues": [
+  "Expected unknown key in test assembly: masked (U06's new key, used as a forward pointer in 5.3). thresholds (from s2) also unknown; not referenced by this unit",
+  "Bibliography: Snidal 1991 needs a THEORY entry (D4 (b): Snidal, D. 1991. Relative gains and the pattern of international cooperation. APSR 85(3):701-726); refs_v62 resolves Kuran 1995 from existing data. Abreu is named without a year (as in V6.1); add Abreu 1988 to SUPPLEMENT if a year is wanted",
+  "Corpus keys: X1's key table needs 'jian-and-wenyan' (used with alignment-selection for 合作才讲理，斗则讲赢) and a key for Ren's 2026-09-25 ruling (tagged here as [corpus: ruling of 2026-09-25]; verbatim in MAP.md and sources/16-claude-code-directions/2026-09-25-the-mind-not-the-approach.md); shengsheng 2026-07-14 l.113 is the book line's location",
+  "Fidelity: the frontier 'anaesthetic ... self-replicating economy carries the same switch' sentence is v6.0 §5.1 wording that Ren adopted (D1-fable 5.1); English glosses of 癌亦增长... and 合作才讲理，斗则讲赢 are the drafter's: mark D in CLAIMS until Ren confirms",
+  "Downstream edits for other units/registers: S13 row 'Loop gain and breakout probability' should read p_d = 1 - upsilon(T_dec) ({{detectlink}}); S14 row for enforce(5) ('raises the punishment value above cooperation') should cite the new P<v<C example or be labelled as the 'different point'; 8.3(g)/Prop 8.10 should refer back to detectlink rather than restate; TESTS Test G wording (hump at D>C; discriminates at intermediate p_d); CLAIMS L4 (arms thm, conjunction C0, joint num); CHANGELOG: 0.99->0.9495, new Remark 5.5 shifts 5.5-5.15 to 5.6-5.16 and adds Proposition 5.17, symbol renames q_b, V^sub_i, Lambda_p, tau_det; R4 text in 9.1 can cite restraint's exact exemption",
+  "Math to verify (my derivations, not in the memos): the general objective-arm conditions via (7) (symmetric game, deviation raises deviator above a falling mean, symmetric punishment; D-C not falling) and the sign analysis of pbar=(c-alpha)/(b+c); the Perron-root monotonicity sentence for several channels",
+  "Checks: the dissipation ceilings, nonsum, tempo, freeze and preventattack numbers come from legacy suites (v4, v5) rerun by checks_v62 --legacy; porting them into a v6.2 block would make every core-adjacent number independent of legacy scripts",
+  "Length: core 5 is 5,102 words by the assembler's count (V6.1: 3,184), mostly detectlink, the scissors proposition and conditions written back into statements; racehazard was kept as a full statement rather than moved to S5 (D1-opus suggested brief), since its four levers carry the race channel",
+  "JX(g) (the other drafter's linearized model) is cited only qualitatively in Remark S5.2, as checks-notes item 9 requires (meeting times of the two models are not mixed)"
+ ],
+ "word_counts": "core 50_s5.md: 5,102 words (assembler count; V6.1 3,184); supplement S5: 5,126 words (same counter); test assembly: 104 core and 14 supplement declarations, only expected unknown keys (thresholds, masked)"
+}

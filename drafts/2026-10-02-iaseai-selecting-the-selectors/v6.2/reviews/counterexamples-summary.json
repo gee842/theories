@@ -1,0 +1,34 @@
+{
+  "formal": {
+    "exit_code": 0,
+    "script": "formal-audit/independent_audit.py"
+  },
+  "systems": {
+    "exit_code": 0,
+    "script": "systems-audit/audit_systems.py"
+  },
+  "falling_nonsummable_hazard": {
+    "hazard": "h_t = 1/(2(t+1)), t >= 0",
+    "proof": "sum h_t diverges and log(1-h_t) <= -h_t, so survival tends to zero",
+    "finite_examples": [
+      {
+        "periods": 100,
+        "survival": 0.05634847900925642
+      },
+      {
+        "periods": 10000,
+        "survival": 0.005641825312220419
+      },
+      {
+        "periods": 100000,
+        "survival": 0.0017841218859990199
+      }
+    ]
+  },
+  "failure_reporting": {
+    "injected_agreements": 0,
+    "comparisons": 200000,
+    "exit_code": 0,
+    "interpretation": "FB is diagnostic only; its displayed disagreement does not fail the runner"
+  }
+}

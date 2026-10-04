@@ -8,6 +8,8 @@
 
 ## The argument
 
+**Research development, 2026-10-04.** [Selection and the renewal of generative conditions](../../sources/15-codex-theory-conversations/2026-10-04-selection-and-generative-conditions.md) is an AI-generated foundation draft prepared at Ren's request. It couples reproduction and selection to maintained support, recovery, succession, and changing selection conditions; separates descriptive dynamics from protected capacities; and derives an illustrative case in which maintenance spreads while depleted systems still collapse. Three research memoranda, proof review, and numerical checks accompany it. The draft is a proposed operational bridge to 生生, not a complete formalization, empirical validation, or established originality claim. Existing formulations and their unresolved differences are preserved.
+
 ### Why an ontology was needed at all
 
 The theory does not begin as metaphysics. It begins from a question about alignment, and it arrives at metaphysics because the alignment question will not close without one. Ren's own statement of the move, on 2026-05-02: 理 — the grain of how things hold — has to be 万物之理 rather than 人之理, *because humans are no longer the only subject*; and among the candidate roots for a 理 that has to cover minds we did not make, only 生生不息 can carry that universality (`_process/reading-notes/out-hb-03.md` #88). That is the load-bearing motive. Everything formal downstream is an attempt to make that root precise enough to be argued with, and everything political downstream is an attempt to make it act.
@@ -307,6 +309,8 @@ The v2 reset puts mechanism first and declares the commitment afterwards. What i
 **Not growth, and not competition as such.** "I never said growth is bad … I love development. I love new things. Like, I love novelty" [00:51:21–00:51:27]. Competition "has a situationality" [01:05:05], and Chinese "actually [has] a different word for those different things" [01:09:23], which he does not name in the recording. The target is a self that "only you cares about what you perceive as you" and pursues "even more" without seeing "what the existence of you and your world really is" [01:10:12]. The wolf's "existence … is not just about the wolf" [01:11:23]. In this theory's words, that is the part that takes its continuation as separable from the field's, 以彼闭为己开.
 
 **Why this ontology, and why in Chinese.** Ren says the work should "use the the pre-Qin ontology as the basis and construct one that everyone could accept that intellectually like undefeatable" [01:29:19–01:30:21], without being "bonded by … those names" [01:29:19]. Chinese thought, as he reads it, is "relational is non-dual" [01:27:33]. Classical Chinese "lacks like subject object differentiations and it lacks tenses it talks about things just as the way things are" [01:37:16]. Its value is also practical: on how status and greed reshape minds it "does provide like much higher engineering utility" [01:44:18]. And he adds a reason of timing: China is now "the biggest leverage", so a theory built on its own tradition carries legitimacy [01:44:52]. Alex's reply is that the same non-dual, cyclical insight is found in Kashmir Shaivism, Zen, Heraclitus and the Norse gods who die, and that each person finds their own tradition the purest [01:31:44; 01:40:02]. Ren's next turn grants the universals ("There is a common call … that leads to those like universal social invariances" [01:32:44]) and keeps the claim about engineering utility. That is the empirical-convergence pillar (claim 203), on the convergence of wisdom traditions, met by its strongest critic and given its most specific defence.
+
+**2026-10-04: 逍遥 as fit, and the affirmation as a life.** From the recording "Soi Si Lom 5 2", which Ren supplied on 2026-10-04 to be added to his theories (`sources/18-friend-conversations/2026-10-04-soi-si-lom-5-2/`): a 51-minute monologue, one voice throughout, supplied by Ren as his own and not confirmed by ear. Quotations in 「」 are from the Chinese translation (`drafts/2026-10-04-soi-si-lom-5-2/translation-zh.md`), not verbatim; the glosses are the assistant's. Most of what the talk says that touches this theory is already one of its claims: 止戈为武 (claim 277), 己所不欲 (claim 333), braking (claim 329), 向善 and 普惠 (claim 343). Two things are new here. 第十九章 reads 逍遥 as not being wholly defined by any identity, name, fear, victory or others' gaze (claim 296). The talk gives the same word a condition: 「如果你当下的认知模型与现实相契合，那就更接近一种“逍遥”的状态」 [05:26] (if your present cognitive model fits reality, you are nearer to 逍遥), and in that state there is no independent self, 「只有不同的力、不同的能量在流动，形成动态的作用」 [05:26] (only different forces, different energies flowing and acting). If the two are one state, fit is the mechanism and the freedom its symptom (open question 51; the readings are set out in `relational-self-and-datong` and `drives-narrative-attractors-and-mind`, 2026-10-04). The talk's last minute refuses dropping out of the structural problems, 「不能直接退出、不管了」 [51:08] (one cannot simply drop out and stop caring). It does not speak of 逍遥 there, but the refusal is consistent with 第十九章's reading that 逍遥 is not withdrawal; the link is the assistant's. And the affirmation of 2026-10-02 returns as a description of a life rather than of the universe: 「我们也可以去探索、创造、发现，去玩，去创造社会游戏，去拥有一个像大同那样的社会。这才应该是我们想要的」 [30:56] (we can also explore, create, discover, play, create social games, and have a society like 大同; that is what we should want). The being that does this is directional: 「我的心和我的理，跟这个世界一样，都在朝着某个方向流动；它是有方向性的」 [04:09] (my heart and my reason, like the world, flow in some direction; it is directional).
 
 ---
 
@@ -810,6 +814,14 @@ From the conversation with Alex, `drafts/2026-10-02-friend-conversation/transcri
 445. **Competition is situational**, ordinary ecological competition is not the target, and Chinese distinguishes kinds of competition that English blurs. [observation] [01:05:05; 01:09:23]
 446. **The pre-Qin ontology as the basis** of a theory "everyone could accept", relational and non-dual, without being bound to the names Confucian, Daoist or Marxist. [design direction] [01:27:33; 01:29:19–01:30:21]
 
+### Q. 逍遥 as fit, and the affirmation as a life (2026-10-04, spoken)
+
+From the recording "Soi Si Lom 5 2" (`sources/18-friend-conversations/2026-10-04-soi-si-lom-5-2/`; one voice, supplied by Ren as his own and not confirmed by ear; quoted from the Chinese translation `drafts/2026-10-04-soi-si-lom-5-2/translation-zh.md`, not verbatim; timestamps in brackets).
+
+447. **逍遥 as fit**: when one's cognitive model fits reality, mind and body, self and environment are one dynamic; there is no independent self, only forces in flow. Compatible with claim 296, and gives it a condition. [definition; mechanism] [05:26]
+448. **The affirmation as a life**: to explore, create, discover, play, create social games, and have a society like 大同 is what we should want. [value stance] [30:56]
+449. **Being is directional**: 心, 理 and the world flow toward something. [value stance] [04:09]
+
 ---
 
 ## Terms
@@ -1108,6 +1120,12 @@ Spoken; automatic transcript, Ren provisionally Speaker B (`drafts/2026-10-02-fr
 96. [en · Ren, spoken] "And turn those things into autonomous infrastructures like trees. Trees are providers." — [00:50:01]
 97. [en · Ren, spoken] "I never said growth is bad." … "But I love development. I love new things. Like, I love novelty." — [00:51:21–00:51:27]
 
+**Said in a recorded monologue, "Soi Si Lom 5 2" (2026-10-04)** — one voice, supplied by Ren as his own, not confirmed by ear; from the Chinese translation of mixed speech, not verbatim (`drafts/2026-10-04-soi-si-lom-5-2/translation-zh.md`)
+
+98. [zh · Ren, spoken, translated] 「如果你当下的认知模型与现实相契合，那就更接近一种“逍遥”的状态。」 — [05:26] *(If your present cognitive model fits reality, you are nearer to a state of 逍遥.)*
+99. [zh · Ren, spoken, translated] 「我们也可以去探索、创造、发现，去玩，去创造社会游戏，去拥有一个像大同那样的社会。这才应该是我们想要的。」 — [30:56] *(We can also explore, create, discover, play, create social games, and have a society like 大同. That is what we should want.)*
+100. [zh · Ren, spoken, translated] 「这种存在本身，也是世界自身的存在。」 — [08:53] *(This existence is itself the world's own existence.)* The 2026-10-02 line "We are the whole process of the universe doing this and itself" (claim 439; own words 91) in Chinese.
+
 ---
 
 ## Open questions and critiques
@@ -1168,6 +1186,8 @@ Spoken; automatic transcript, Ren provisionally Speaker B (`drafts/2026-10-02-fr
 48. **"More complexities" against 善不在于最大化什么 (added 2026-10-02).** Ren's spoken definition of progress, complexities "that leads to even more complexities arising", names a quantity, and v9's guard forbids making any quantity the good. Two readings reconcile them. The sentence describes what the process does, not a target for anyone to push, and "decay as a form of growth" shows the description is not monotone. The theory's own 繁简非开闭之标 already says scale is not the measure. The English edition and any public text that quotes him should keep the description and the guard side by side.
 49. **Seasons and direction (added 2026-10-02).** Alex holds a cyclical model: civilisations rise and die, and no stage is final. Ren accepts the cycle, but his account of progress has a direction, complexity making further complexity, and 大同 is read in this corpus as a direction. The theory has not said how the two fit together. One candidate is that forms cycle while the generative capacity of the field accumulates, but it is not stated anywhere. It decides whether "America dying is progress" (Alex [00:58:14]) is something this theory affirms or refuses.
 50. **"You will get selected out" against 避免须安装，不可待淘汰 (added 2026-10-02).** Ren said aloud that in an ecosystem "if you're cancerous over time, you will get selected out" [00:47:13]. The theory's own later ruling (critique 8 under *Raised inside the corpus*) is that totalizers do not reliably self-destruct, and that petrification can be rigid without dying. Alex's frozen-weights scenario, "a thousand year stagnation" [01:00:22], is a case of exactly that. The spoken line can be read consistently with the ruling, since "over time" can mean after the damage is done, and that is a reason to install avoidance rather than wait. But a public text that quotes it should carry the ruling beside it.
+
+51. **逍遥 by its condition and by its freedom (added 2026-10-04).** 第十九章 gives 逍遥 as not being defined by identity, name, fear or victory (claim 296); the 2026-10-04 talk gives it as the fit of the cognitive model to reality, with no independent self left [05:26]. If these are one state, fit is the mechanism and the freedom its symptom, and the theory should say so. Fit is an inner condition, and the corpus judges by form, so the only test is what the fitted conduct does over time.
 
 ---
 

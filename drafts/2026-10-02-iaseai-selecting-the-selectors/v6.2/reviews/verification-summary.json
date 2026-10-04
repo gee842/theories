@@ -1,0 +1,18 @@
+{
+  "unchanged_inputs": true,
+  "input_files": 61,
+  "theory_sha256": "f50fb6a1b0f71ce33374946ab77da607a9631998d390e619296e6549e6822872",
+  "numerical_summary": [
+    "=== assertions: 188 passed, 0 failed (default sizes)",
+    "=== done in 315 s"
+  ],
+  "runtime": "3.14.3",
+  "parent_bibliography_sha256": "df44516ced03c7504c79c7cd06a104ae813ca94e0b7f5875a51d12f28e218483",
+  "final_inputs_unchanged": true,
+  "combined_report_words": 21376,
+  "combined_report_bytes": 157296,
+  "local_links_checked": 38,
+  "missing_local_links": [],
+  "invalid_line_links": [],
+  "independent_counterexamples_exit": 0
+}

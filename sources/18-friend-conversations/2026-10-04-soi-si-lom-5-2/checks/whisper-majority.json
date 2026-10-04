@@ -1,0 +1,11 @@
+{
+  "text": "当然大多数人不管你在世界哪里都会认可这套逻辑的 但是目前不幸的是这个权力系统它确实在",
+  "logprobs": null,
+  "usage": {
+    "type": "duration",
+    "seconds": 16
+  },
+  "audio_start": 2158,
+  "audio_end": 2174,
+  "model": "whisper-1"
+}

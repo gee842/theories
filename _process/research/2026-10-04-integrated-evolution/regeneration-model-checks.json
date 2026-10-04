@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "scope": "illustrative analytic model; not empirical validation",
+  "parameters": {
+    "a": 5.0,
+    "m": 0.8,
+    "c": 0.2,
+    "gamma": 1.0,
+    "rho": 1.0,
+    "delta": 1.0,
+    "K": 1.0
+  },
+  "positive_equilibrium_threshold": 4.0,
+  "a_times_K": 5.0,
+  "equilibria": [
+    {
+      "N": 0.3819660112501051,
+      "E": 0.276393202250021,
+      "eigenvalues": [
+        -2.1594502621315415,
+        0.3955182396313314,
+        -0.2
+      ],
+      "residual": 5.551115123125783e-17
+    },
+    {
+      "N": 2.618033988749895,
+      "E": 0.7236067977499789,
+      "eigenvalues": [
+        -5.084765792720608,
+        -1.151302184779182,
+        -0.2
+      ],
+      "residual": 4.359902420342057e-16
+    }
+  ],
+  "cases": [
+    {
+      "case": "Maintenance loses; stocked start",
+      "theta": 0.1,
+      "initial": [
+        0.9,
+        2.5,
+        0.7
+      ],
+      "final_t120": [
+        5.5294853490056905e-05,
+        2.7029025337997217e-33,
+        1.4950702214985833e-36
+      ],
+      "tolerance_refinement_error": 3.238311840902952e-10
+    },
+    {
+      "case": "Maintenance spreads; stocked start",
+      "theta": 0.4,
+      "initial": [
+        0.9,
+        2.5,
+        0.7
+      ],
+      "final_t120": [
+        0.9999999999958054,
+        2.61803398874296,
+        0.7236067977485302
+      ],
+      "tolerance_refinement_error": 5.198823593843827e-10
+    },
+    {
+      "case": "Maintenance spreads; depleted start",
+      "theta": 0.4,
+      "initial": [
+        0.9,
+        0.05,
+        0.05
+      ],
+      "final_t120": [
+        0.9999999999958054,
+        6.71914554681367e-54,
+        7.989181222759556e-52
+      ],
+      "tolerance_refinement_error": 8.015850483378273e-11
+    }
+  ],
+  "depleted_trapping_box": {
+    "N_upper": 0.05,
+    "E_upper": 0.05,
+    "per_capita_growth_upper": -0.55,
+    "support_upper_boundary_derivative_bound": -0.0025000000000000022,
+    "conclusion": "forward invariant; N decays exponentially and E tends to zero"
+  }
+}

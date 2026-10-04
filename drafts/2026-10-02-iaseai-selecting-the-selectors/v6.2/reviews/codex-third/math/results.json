@@ -1,0 +1,79 @@
+{
+  "nonlinear_prize": {
+    "gamma_rel": 0.3333333333333333,
+    "gamma_com": 0.6666666666666666,
+    "formal_relative_price": 0.49999999999999994,
+    "formal_common_price": 1.9999999999999998,
+    "exits": [
+      {
+        "epsilon": 0.01,
+        "periods_to_total_4": 12,
+        "total": 5.025550346512944,
+        "discounted_term_ratio": 4.538407122295282
+      },
+      {
+        "epsilon": 1e-06,
+        "periods_to_total_4": 35,
+        "total": 6.550867478764136,
+        "discounted_term_ratio": 7.126949960232234
+      },
+      {
+        "epsilon": 1e-10,
+        "periods_to_total_4": 58,
+        "total": 8.826999002317502,
+        "discounted_term_ratio": 12.07123867394365
+      }
+    ],
+    "actual_positive_common_return": "infinite for every positive epsilon"
+  },
+  "fixed_background": {
+    "trait": [
+      1.0,
+      0.0
+    ],
+    "fixed_other_payoff": [
+      2.0,
+      0.0
+    ],
+    "fitness": [
+      2.5,
+      1.5
+    ],
+    "total_price_selection": 0.25
+  },
+  "passive_lottery": [
+    {
+      "r": 1.5,
+      "gamma": 0.6,
+      "decay": 0.2,
+      "discount": 0.97,
+      "cells": 1000,
+      "passive_price": 1.0311064245755297,
+      "formula": 1.0817843866171006,
+      "iterations": 809,
+      "error": 9.947598300641403e-12
+    },
+    {
+      "r": 1.5,
+      "gamma": 0.6,
+      "decay": 0.2,
+      "discount": 0.97,
+      "cells": 2000,
+      "passive_price": 1.0311103490895481,
+      "formula": 1.0817843866171006,
+      "iterations": 809,
+      "error": 9.947598300641403e-12
+    },
+    {
+      "r": 1,
+      "gamma": 0.6,
+      "decay": 0.2,
+      "discount": 0.97,
+      "cells": 1000,
+      "passive_price": 1.0817843866170958,
+      "formula": 1.0817843866171006,
+      "iterations": 809,
+      "error": 9.947598300641403e-12
+    }
+  ]
+}

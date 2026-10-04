@@ -1,0 +1,21 @@
+E2. Captured evaluation domain at d1=0.5 (G=1.464); reform raises d to d2 for T, then withdraws.
+    QS certificate restored for d2>0.638; with capacity frozen at its old level, only for d2>0.732
+   d2=0.7: minimal hold T (time units): QS: 353.96  R(1.0): 355.10  R(0.3): 358.15  R(0.1): 367.10  R(0.03): 398.57
+   d2=1.0: minimal hold T (time units): QS: 94.79  R(1.0): 94.88  R(0.3): 95.52  R(0.1): 98.08  R(0.03): 107.67
+   d2=2.0: minimal hold T (time units): QS: 55.93  R(1.0): 55.69  R(0.3): 55.54  R(0.1): 56.03  R(0.03): 59.49
+E4a. Delegation D(t)=1-0.8 e^{-0.1t}; correction needs human capacity, d_eff=d*M/M0; largest alpha_cor with capture by t=600
+   delta_h=0.05, rho_h=0.05: uncoupled 0.0963; coupled 0.1449  (rate law 0.1; shifted law 0.1+delta_h=0.15)
+   delta_h=0.1, rho_h=0.05: uncoupled 0.0963; coupled 0.1902  (rate law 0.1; shifted law 0.1+delta_h=0.20)
+   delta_h=0.2, rho_h=0.1: uncoupled 0.0963; coupled 0.2313  (rate law 0.1; shifted law 0.1+delta_h=0.30)
+E4b. Capture-delegation loop (D=0.1+kD*x_ev, delta_h=0.2, rho_h=0.05, d_eff=d*(M/M0)^0.5), constant gamma; one-domain field
+     Smallest permanent d that undoes capture from the captured state (QS certificate without M: G<1 at d>0.638)
+   kD=0.0: d needed = 0.634  (captured-state M/M0 = 1.000)
+   kD=0.3: d needed = 1.006  (captured-state M/M0 = 0.398)
+   kD=0.6: d needed = 1.675  (captured-state M/M0 = 0.143)
+E3. Theorem 4.12's two clocks with capture endogenous (alpha_cor=0.05; m_in=0.5>m_fl=0.43; floor 0.3, alarm 0.6)
+   independent evaluation (x_ev=0): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.00
+   QS: alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.00
+   R(1.0): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.00
+   R(0.1): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.00
+   R(0.03): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.00
+   GA(1.0): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.00

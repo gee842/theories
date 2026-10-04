@@ -1,0 +1,70 @@
+m09  Smaller items: delegation (6.4), correction beyond understanding (6.8), saturation (6.11(3)), topology (6.9),
+
+(6.4) delegation when the lock counts. Phi_i = (1 - q_L i_i) Q [w_i + (1-w_i)(1-p)], Q = prod (1-psi_j), r=1, strength 1+s i_i
+   Codex p=.1: delegate/not ratios for k=0,1,2 others delegating [1.0025893, 1.000973, 0.9992754] -> equilibrium numbers of delegators [2] (neither 0 nor 3)
+   random draws with q_L<1: 'neither all nor none is an equilibrium' in {1.0: 0, 0.5: 1586, 0.1: 60} of 20000 each (p=1 restores 'at least one')
+
+(6.8) correction people cannot understand: residual q0(1-c_b)+q_c
+   V6.1's example (c_b = .99 fixed, q_c = 2^-(t+2)): survival to 200 = 0.630 counting from t=1, 0.473 from t=0; to 20,000 = 1.57e-09 (not summable: tends to zero)
+   blocking that tends to complete, c_b,t = 1-2^-t: survival to 200 = 0.6888, to 20,000 = 0.6888 (summable residual; without the corrector: 7.1e-10 at 200)
+
+(6.11(3)) n=3, L_e=L_c=1, psi0=0, s_t=2^t, dpsi_t=2^-t: own marginal gain at full delegation, 2s/(9(1+s)) - dpsi(1-dpsi)^2
+   t=0: +0.1111; realized hazard 1-(1-dpsi)^3 = 1.0000
+   t=1: +0.0231; realized hazard 1-(1-dpsi)^3 = 0.8750
+   t=2: +0.0372; realized hazard 1-(1-dpsi)^3 = 0.5781
+   t=3: +0.1018; realized hazard 1-(1-dpsi)^3 = 0.3301
+   t=4: +0.1542; realized hazard 1-(1-dpsi)^3 = 0.1760
+   t=5: +0.1862; realized hazard 1-(1-dpsi)^3 = 0.0909
+   t=6: +0.2037; realized hazard 1-(1-dpsi)^3 = 0.0461
+   full delegation is an equilibrium at EVERY t (the gain is positive from t=0; at t=0 the realized hazard is 1); from t=5 the realized risk sums to 0.1836 <= 3/16 = 0.1875
+
+(6.9) topology, f=.9, k=6
+   serial 0.531; independent across the gap 0.989; with common cause .05 0.940; layered m=2 0.941, m=3 0.994
+
+(10.3(2)) sharing a fraction beta of the divisible prize among all n, or among the n-1 losers: uninvadable intensity in one field
+   beta=0.3 shared among n  : uninvadable intensity 0.30000; r Omega_eff/(n c) = 0.30000 with Omega_eff = 1.2000
+   beta=0.3 shared among n-1: uninvadable intensity 0.27500; r Omega_eff/(n c) = 0.27500 with Omega_eff = 1.1000
+   beta=0.6 shared among n  : uninvadable intensity 0.22500; r Omega_eff/(n c) = 0.22500 with Omega_eff = 0.9000
+   beta=0.6 shared among n-1: uninvadable intensity 0.17500; r Omega_eff/(n c) = 0.17500 with Omega_eff = 0.7000
+
+(10.5(1)) the forgiving (logistic) host: margin Delta needed to stay above the floor through the transient
+   V6.1's transient: Delta=.08, 99% race: minimum 0.1397
+   floor 0.2: Delta_min = 0.108
+   floor 0.3: Delta_min = 0.165
+   floor 0.5: Delta_min = 0.355
+   (without the margin the logistic host dips below the floor and recovers: crossing is recoverable here, permanent on a threshold host)
+
+(R1) long-run average liability vs cumulative advantage: tau(t) = nu - 1/(2 sqrt(t+1)) has average -> nu yet B(t) = sqrt(t+1)-1 -> infinity
+   tau = nu (B=0): race share starts at 0.001; host stays above the floor
+   tau = nu - 1/(2 sqrt(t+1)): race share starts at 0.001; host crosses the floor at t = 89
+   both have long-run average liability nu: 'average at least nu' (with limsup) is necessary, not sufficient; the sharp necessary condition is that the cumulative advantage does not tend to infinity
+
+(5.15(2)) ideal points of sender and receiver at theta=-1 among n, uniform-quadratic, random linear third-party terms
+   n=3: ideal-point gap 0.150000; b0 n/(n-2) = 0.150000; informative talk iff gap < 1/4 -> material bias below 0.0833
+   n=4: ideal-point gap 0.100000; b0 n/(n-2) = 0.100000; informative talk iff gap < 1/4 -> material bias below 0.1250
+   n=6: ideal-point gap 0.075000; b0 n/(n-2) = 0.075000; informative talk iff gap < 1/4 -> material bias below 0.1667
+   n=10: ideal-point gap 0.062500; b0 n/(n-2) = 0.062500; informative talk iff gap < 1/4 -> material bias below 0.2000
+
+(5.15 unified) common theta among n: J_k = pi_k + theta*mean(others); effective bias b0 (n-1-theta)/(n-1+theta)
+   n=2 theta=-0.9: ideal-point gap 1.330000; b0(n-1-theta)/(n-1+theta) = 1.330000; informative iff below .25: False
+   n=2 theta=-0.5: ideal-point gap 0.210000; b0(n-1-theta)/(n-1+theta) = 0.210000; informative iff below .25: True
+   n=2 theta=+0.0: ideal-point gap 0.070000; b0(n-1-theta)/(n-1+theta) = 0.070000; informative iff below .25: True
+   n=2 theta=+0.5: ideal-point gap 0.023333; b0(n-1-theta)/(n-1+theta) = 0.023333; informative iff below .25: True
+   n=2 theta=+1.5: ideal-point gap -0.014000; b0(n-1-theta)/(n-1+theta) = -0.014000; informative iff below .25: True
+   n=3 theta=-1.0: ideal-point gap 0.210000; b0(n-1-theta)/(n-1+theta) = 0.210000; informative iff below .25: True
+   n=3 theta=-0.5: ideal-point gap 0.116667; b0(n-1-theta)/(n-1+theta) = 0.116667; informative iff below .25: True
+   n=3 theta=+0.0: ideal-point gap 0.070000; b0(n-1-theta)/(n-1+theta) = 0.070000; informative iff below .25: True
+   n=3 theta=+0.5: ideal-point gap 0.042000; b0(n-1-theta)/(n-1+theta) = 0.042000; informative iff below .25: True
+   n=3 theta=+1.5: ideal-point gap 0.010000; b0(n-1-theta)/(n-1+theta) = 0.010000; informative iff below .25: True
+   n=4 theta=-1.0: ideal-point gap 0.140000; b0(n-1-theta)/(n-1+theta) = 0.140000; informative iff below .25: True
+   n=4 theta=-0.5: ideal-point gap 0.098000; b0(n-1-theta)/(n-1+theta) = 0.098000; informative iff below .25: True
+   n=4 theta=+0.0: ideal-point gap 0.070000; b0(n-1-theta)/(n-1+theta) = 0.070000; informative iff below .25: True
+   n=4 theta=+0.5: ideal-point gap 0.050000; b0(n-1-theta)/(n-1+theta) = 0.050000; informative iff below .25: True
+   n=4 theta=+1.5: ideal-point gap 0.023333; b0(n-1-theta)/(n-1+theta) = 0.023333; informative iff below .25: True
+   n=6 theta=-1.0: ideal-point gap 0.105000; b0(n-1-theta)/(n-1+theta) = 0.105000; informative iff below .25: True
+   n=6 theta=-0.5: ideal-point gap 0.085556; b0(n-1-theta)/(n-1+theta) = 0.085556; informative iff below .25: True
+   n=6 theta=+0.0: ideal-point gap 0.070000; b0(n-1-theta)/(n-1+theta) = 0.070000; informative iff below .25: True
+   n=6 theta=+0.5: ideal-point gap 0.057273; b0(n-1-theta)/(n-1+theta) = 0.057273; informative iff below .25: True
+   n=6 theta=+1.5: ideal-point gap 0.037692; b0(n-1-theta)/(n-1+theta) = 0.037692; informative iff below .25: True
+   largest deviation 1.5e-08  (n=2: b0(1-theta)/(1+theta), infinite at theta=-1: Prop 5.15(1); theta=-1, n>=3: b0 n/(n-2): Prop 5.15(2))
+

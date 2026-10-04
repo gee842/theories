@@ -1,0 +1,27 @@
+== S1a: separatrix at z=0, sigma(0), vs time-scale ratio eps/zeta (R=2, saddle x=1/R=0.5)
+  eps/zeta= 10.00  sigma(0)=0.524
+  eps/zeta=  3.00  sigma(0)=0.572
+  eps/zeta=  1.00  sigma(0)=0.676
+  eps/zeta=  0.30  sigma(0)=0.861
+  eps/zeta=  0.10  sigma(0)=0.984
+  eps/zeta=  0.03  sigma(0)=1.000
+== S1b: insulated pause (b_p=0) of length Tp, share frozen at x_p, z starts at captured level b/d
+   minimal Tp for release to go to absence, in units of 1/(eps d)
+  eps=1.00 x_p=0.60: Tp_min=    1.50  =  1.50/(eps d)
+  eps=1.0 x_p=0.8: not undone even after 50
+  eps=1.0 x_p=0.95: not undone even after 50
+  eps=0.10 x_p=0.60: Tp_min=    8.13  =  0.81/(eps d)
+  eps=0.10 x_p=0.80: Tp_min=   11.66  =  1.17/(eps d)
+  eps=0.10 x_p=0.95: Tp_min=   20.79  =  2.08/(eps d)
+== S1c: ordinary pause (b_p=b): share frozen at x_p, release -> capture iff x_p>1/R
+  x_p=0.45: fate=absence
+  x_p=0.55: fate=capture
+== S1d: local eigenvalues. At absence (0,0): -zeta c and -eps d, independent of R.
+   At capture (1,b/d): -zeta c (R-1) and -eps d; slowing down as R->1 from above.
+  R=3.00: absence eig_x=-1.000; capture eig_x=-2.000; saddle x=1/R=0.333
+  R=2.00: absence eig_x=-1.000; capture eig_x=-1.000; saddle x=1/R=0.500
+  R=1.50: absence eig_x=-1.000; capture eig_x=-0.500; saddle x=1/R=0.667
+  R=1.20: absence eig_x=-1.000; capture eig_x=-0.200; saddle x=1/R=0.833
+  R=1.05: absence eig_x=-1.000; capture eig_x=-0.050; saddle x=1/R=0.952
+== S1e: Remark 3.2 check: if ab<mu*delta with mu,delta in (0,1], is the smaller root > -1 automatically?
+  draws=200000, violations=0

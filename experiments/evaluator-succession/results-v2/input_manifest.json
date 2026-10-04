@@ -1,0 +1,68 @@
+{
+  "sealed_at": "2026-10-04T16:29:46.325574+00:00",
+  "kind": "Prospective follow-up motivated by v1; not external preregistration",
+  "inputs": {
+    "benchmark.py": "62149a8ff3f413735602a7e677ba1940e8c6d55854af9ff2ca043ab5c4df7e5f",
+    "config.json": "6c96cc0a7d68292bf6c92a80727dcbbf3c3c6d7ead0fd7c094f6285d0024abfd",
+    "branch_engine.py": "5866e6a77bac4af84864a7b4635e14e0f767041400045076b6cdcd78620086e9",
+    "branch_experiment.py": "eb96b9d119dec81ff789ee6abd43101f706a81909e6d85592bce71b54075c74c",
+    "branch_config.json": "ce3af48425aa6a512a0aa53169eae91dc5bfe8c83dabc7e6e957ed944e1e0c90",
+    "BRANCH-PROTOCOL.md": "34303b50f0c1f8317c534f8ca7ee1956894024f1b97e54b5c17c7f98a81823fd",
+    "test_branching.py": "708850937dac3da0558cdb0be92871904246df3c2d3049cb915ae1dd3d01ad29"
+  },
+  "python": "3.11.2",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "effective_config": {
+    "worlds": 128,
+    "seed_start": 51000,
+    "donor_seed_offset": 1000000,
+    "epochs": 160,
+    "rounds_per_epoch": 5,
+    "evaluation_epochs": 40,
+    "agents": 8,
+    "allocation_floor": 0.1,
+    "score_temperature": 4.0,
+    "production_temperature": 80.0,
+    "governance_temperature": 200.0,
+    "common_value_weight": 0.25,
+    "amendment_cost": 0.002,
+    "audit_cost": 0.001,
+    "authority_memory": 0.25,
+    "authority_power": 2.0,
+    "rubric_step": 0.05,
+    "initial_rubric": [
+      0.675,
+      0.225,
+      0.1
+    ],
+    "skill_jitter": 0.08,
+    "correction_every": 20,
+    "evidence_threshold": 0.002,
+    "numeric_tolerance": 1e-09,
+    "persistence_epochs": 5,
+    "bootstrap_replicates": 10000,
+    "analysis_seed": 97532
+  },
+  "design": {
+    "worlds": 128,
+    "seed_start": 51000,
+    "fork_epoch": 80,
+    "source_histories": [
+      "endogenous",
+      "independent"
+    ],
+    "contexts": [
+      "stable",
+      "shift"
+    ],
+    "branches": [
+      "endogenous",
+      "independent",
+      "fixed",
+      "protected"
+    ],
+    "analysis_seed": 97532,
+    "bootstrap_replicates": 10000
+  }
+}

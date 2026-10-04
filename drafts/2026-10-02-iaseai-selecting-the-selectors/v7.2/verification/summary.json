@@ -1,0 +1,41 @@
+{
+  "edition": "V7.2",
+  "v71_files_checked": 91,
+  "changed_v71_files": [],
+  "inherited_declarations": 128,
+  "inherited_identity_changes": [],
+  "new_declarations": [
+    "jointcorrection"
+  ],
+  "total_declarations": 129,
+  "historical_claims_8_to_10_source_preserved": true,
+  "historical_claims_8_to_10_output_preserved": true,
+  "assembly_exit_code": 0,
+  "assembly_reproducible": true,
+  "missing_local_document_links": [],
+  "cross_reference_checks_pass": true,
+  "numerical": {
+    "passed": 243,
+    "failed": 0
+  },
+  "default_blocks": 45,
+  "numerical_run_complete": true,
+  "institutional_test_N_run": false,
+  "general_institutional_preservation_proved": false,
+  "verified_input_files": 62,
+  "changed_source_files": 33,
+  "document_sha256": {
+    "CHANGELOG.md": "6f3f24b594b14a8410273d3eeecb32b3517842ac707462d8d9e42509904711d7",
+    "CLAIMS.md": "037b5b3a78753d85cd90399b1c6988823968a778db64595fba0aa4d83ec2f029",
+    "DISCUSSION.md": "45eea7d28626b41dfd6b939a64defb85226233b770b399b18abe8792079e94eb",
+    "EVIDENCE.md": "e3605260ecbbf4efbc9be3a187da691b0cf758b49f1e70b36c3364ed89899016",
+    "LEDGER.md": "593aa9ffef117b0c24c97fa81accd060882dd3aab8f2e5004dad21dbb053c046",
+    "README.md": "4c9626c4177d19bb3c62b6e66fd49b053a172ac5edf6c5f28243a9e0fb4e3bf7",
+    "RELEASE-REVIEW.md": "e2ac8f9a747e69283ae0990de39d275b374fe32bbfc015e33e9b1fabb9292dc2",
+    "START-HERE.md": "0390ae594d214b05150b183329b689d02c99e9398ae8d6dd239cb7778749d8b2",
+    "SUPPLEMENT.md": "7a168154452c3cd679a7a95744387fe92a6d0b41b7f683b21ed777e1490182b1",
+    "TESTS.md": "79b31ed4a4d4cc6b39f2cc69f601344362db228c4624ad87d8aa5920949acfe3",
+    "THEORY.md": "f76fc56044760cc727233b2fdad61ceb9c2ac693a8a1d681ea990f075f546055"
+  },
+  "audit_pass": true
+}

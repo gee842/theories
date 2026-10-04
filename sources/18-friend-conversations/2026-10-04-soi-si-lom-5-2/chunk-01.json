@@ -1,0 +1,249 @@
+{
+  "text": "和谐 一种 flow 一种 我的心 和我的理 它跟这个世界一样 它都是在向 它的那个方向 它在流动 它 是一种 directional 的\nIf your cognitive model uh at the moment aligns with the reality, then it's more like a state of uh Xiao Yao. But in that state, because\nThe mind and the body is one, the self and the environment is one, then there's also no self. It is just different forces, different energies moving.\nthe creating dynamics forces that we can um understand at the model, but at the same time, situationally, we can also tr\ntrend or make our feeling into that alignment and this also extends from the self to the relationship with others to the nation states and to the whole world\n儒家裡面的 家國天下 以及孟 子的這種OK 我們先天 就有好的這面 但是 它它它需要塑造\n所以说 对于从 关系的角度来思 考东西 你首先就是会 想OK 当下 我和我的环境周围 的关系是什么样的 我的constraint 是什么 然后 在这样的情境之中我 可以做什么\n而不是 围绕着 一个一个价值, okay, 我们去优化那个目标. 啊这也是 为什么中国人非常擅长 于像工程这样的问题, 并且他们做事情 approach会 非常的 pragmatic. Um并且\n延伸 这套逻辑指导 我们是 这个天下的一部分 我们本身 就在这个世界之 中 也是一种 流动一种变化 然后 这 种道\n然后这一 种存在 它本身也是 世界的自身存在 如果我们要引入这种 我这种主客的概 念的话 但但是如果我们 去\n脚 这种它不是一种现象 性 它就是 okay 这些东西是这样 因为这样它是 由于它们的关系 uh 那我们就说 okay 我们 看到的东西它它 是一个什么",
+  "logprobs": null,
+  "task": "transcribe",
+  "duration": 312.0,
+  "segments": [
+    {
+      "type": "transcript.text.segment",
+      "text": "和谐 一种 flow 一种我的心和我的理",
+      "speaker": "A",
+      "start": 1.268,
+      "end": 10.068000000000001,
+      "id": "seg_0"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "它跟这个世界一样它都是在向它的那个方向它在流动 它是一种 directional 的",
+      "speaker": "A",
+      "start": 12.918000000000001,
+      "end": 25.968000000000004,
+      "id": "seg_1"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " If your cognitive model uh at the moment aligns with the reality,",
+      "speaker": "A",
+      "start": 32.276,
+      "end": 42.07600000000001,
+      "id": "seg_2"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " then",
+      "speaker": "A",
+      "start": 43.226000000000006,
+      "end": 44.276,
+      "id": "seg_3"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " it's more like a state of uh Xiao Yao.",
+      "speaker": "A",
+      "start": 46.276,
+      "end": 49.77600000000001,
+      "id": "seg_4"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " But in that state, because",
+      "speaker": "A",
+      "start": 53.27600000000001,
+      "end": 54.77600000000001,
+      "id": "seg_5"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " The mind and the body is one, the self and the environment is one, then there's also no self.",
+      "speaker": "A",
+      "start": 55.828,
+      "end": 66.22800000000001,
+      "id": "seg_6"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " It is just different forces,",
+      "speaker": "A",
+      "start": 69.178,
+      "end": 73.378,
+      "id": "seg_7"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " different energies moving.",
+      "speaker": "A",
+      "start": 73.47800000000001,
+      "end": 76.928,
+      "id": "seg_8"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " the creating dynamics forces that",
+      "speaker": "A",
+      "start": 81.268,
+      "end": 89.118,
+      "id": "seg_9"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " we can",
+      "speaker": "A",
+      "start": 91.168,
+      "end": 92.918,
+      "id": "seg_10"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " um understand at the model,",
+      "speaker": "A",
+      "start": 94.568,
+      "end": 98.568,
+      "id": "seg_11"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " but at the same time, situationally, we can also tr",
+      "speaker": "A",
+      "start": 99.368,
+      "end": 104.668,
+      "id": "seg_12"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " trend or make our feeling into that alignment and",
+      "speaker": "A",
+      "start": 105.012,
+      "end": 115.312,
+      "id": "seg_13"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " this also extends from the self to the relationship with others to the nation states and to the whole world",
+      "speaker": "A",
+      "start": 117.412,
+      "end": 131.212,
+      "id": "seg_14"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 儒家裡面的家國天下以及孟子的這種OK 我們先天就有好的這面 但是它它它需要塑造",
+      "speaker": "A",
+      "start": 132.5,
+      "end": 146.15,
+      "id": "seg_15"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 所以说对于从关系的角度来思考东西",
+      "speaker": "A",
+      "start": 185.492,
+      "end": 191.292,
+      "id": "seg_16"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "你首先就是会想OK 当下我和我的环境周围的关系是什么样的 我的constraint是什么 然后在这样的情境之中我可以做什么",
+      "speaker": "A",
+      "start": 192.59199999999998,
+      "end": 210.142,
+      "id": "seg_17"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 而不是围绕着一个一个价值, okay, 我们去优化那个目标.",
+      "speaker": "A",
+      "start": 211.53,
+      "end": 217.78,
+      "id": "seg_18"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 啊这也是为什么中国人非常擅长于像工程这样的问题,",
+      "speaker": "A",
+      "start": 219.03,
+      "end": 225.57999999999998,
+      "id": "seg_19"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "并且他们做事情 approach会非常的 pragmatic.",
+      "speaker": "A",
+      "start": 226.48,
+      "end": 232.57999999999998,
+      "id": "seg_20"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " Um并且",
+      "speaker": "A",
+      "start": 236.28,
+      "end": 237.53,
+      "id": "seg_21"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 延伸这套逻辑指导我们是这个天下的一部分 我们本身就在这个世界之中 也是一种流动一种变化 然后这种道",
+      "speaker": "A",
+      "start": 238.676,
+      "end": 260.976,
+      "id": "seg_22"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 然后这一种存在它本身也是世界的自身存在 如果我们要引入这种我这种主客的概念的话",
+      "speaker": "A",
+      "start": 265.94,
+      "end": 278.49,
+      "id": "seg_23"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "但但是如果我们去",
+      "speaker": "A",
+      "start": 283.94,
+      "end": 288.89,
+      "id": "seg_24"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 脚",
+      "speaker": "A",
+      "start": 290.1,
+      "end": 290.5,
+      "id": "seg_25"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 这种它不是一种现象性 它就是 okay 这些东西是这样 因为这样它是由于它们的关系",
+      "speaker": "A",
+      "start": 291.90000000000003,
+      "end": 300.6,
+      "id": "seg_26"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " uh 那我们就说 okay 我们看到的东西它它 是一个什么",
+      "speaker": "A",
+      "start": 301.85,
+      "end": 307.75,
+      "id": "seg_27"
+    }
+  ],
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 10652,
+    "input_tokens": 3588,
+    "input_token_details": {
+      "text_tokens": 120,
+      "audio_tokens": 3468
+    },
+    "output_tokens": 7064
+  },
+  "chunk_metadata": {
+    "index": 1,
+    "core_start": 300,
+    "core_end": 600,
+    "audio_start": 294,
+    "audio_end": 606
+  }
+}

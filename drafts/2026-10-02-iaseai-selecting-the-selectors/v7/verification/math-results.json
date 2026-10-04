@@ -1,0 +1,80 @@
+{
+  "lottery": {
+    "coarse": {
+      "r": 1.5,
+      "cells": 1000,
+      "finite_premium": 1.0311064245755297,
+      "local_price": 1.0817843866171006,
+      "residual": 9.947598300641403e-12,
+      "iterations": 810
+    },
+    "fine": {
+      "r": 1.5,
+      "cells": 2000,
+      "finite_premium": 1.0311103490895481,
+      "local_price": 1.0817843866171006,
+      "residual": 9.947598300641403e-12,
+      "iterations": 810
+    },
+    "linear_control": {
+      "r": 1,
+      "cells": 1000,
+      "finite_premium": 1.0817843866170958,
+      "local_price": 1.0817843866171006,
+      "residual": 9.947598300641403e-12,
+      "iterations": 810
+    }
+  },
+  "nonlinear_prize": {
+    "relative_gain": 0.3333333333333333,
+    "common_gain": 0.6666666666666666,
+    "formal_common_price": 2.0,
+    "positive_perturbations": [
+      {
+        "epsilon": 0.01,
+        "escape_period": 12,
+        "total": 5.025550346512944,
+        "discounted_term_ratio": 4.538407122295282
+      },
+      {
+        "epsilon": 1e-06,
+        "escape_period": 35,
+        "total": 6.550867478764136,
+        "discounted_term_ratio": 7.126949960232233
+      },
+      {
+        "epsilon": 1e-10,
+        "escape_period": 58,
+        "total": 8.826999002317502,
+        "discounted_term_ratio": 12.071238673943647
+      }
+    ]
+  },
+  "proportional_case": [
+    {
+      "r": 0.7,
+      "measured_relative": 0.36029411757398927,
+      "predicted_relative": 0.36029411764705876,
+      "measured_common": 0.6086956521933473,
+      "predicted_common": 0.6086956521739131
+    },
+    {
+      "r": 1.0,
+      "measured_relative": 0.6086956521933473,
+      "predicted_relative": 0.6086956521739131,
+      "measured_common": 0.6086956521933473,
+      "predicted_common": 0.6086956521739131
+    },
+    {
+      "r": 1.5,
+      "measured_relative": 1.3124999994396092,
+      "predicted_relative": 1.3125000000000004,
+      "measured_common": 0.6086956521933473,
+      "predicted_common": 0.6086956521739131
+    }
+  ],
+  "background_scope": {
+    "homogeneous_covariance": -0.25,
+    "heterogeneous_covariance": 0.25
+  }
+}

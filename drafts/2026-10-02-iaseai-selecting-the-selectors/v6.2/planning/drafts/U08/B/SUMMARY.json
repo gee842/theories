@@ -1,0 +1,61 @@
+{
+  "unit": "U08 (core §8, SUPPLEMENT S8, DISCUSSION X8), drafter B",
+  "files_written": [
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U08/B/core/80_s8.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U08/B/supp/08_S8.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U08/B/disc/08_X8.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U08/B/SUMMARY.json"
+  ],
+  "items_addressed": [
+    "Part III lead: one sentence naming the level of claim (D1-opus §7.5).",
+    "Claim box rewritten as Claim/Why with conditions as antecedents, one tag per sentence: standard [val]; profile by thresholds of Table 7.1 [def]; fallback [thm]; every alternative that leaves what winning confers keeps some threshold dangerous [thm∣prem]; erosion prediction [conj] (Adv-O I9 tag inconsistency resolved).",
+    "Jones fix (Evi I1; D4 A1–A4, verified wording): §8.1 curvature reading with EV11 figures [obs]; h<g_r−g_p stated as this paper's derivation under linear utility (S8 'The discounting comparison', new); §8.4 and X8 'with utility linear in consumption'.",
+    "kernel 8.1: Cardaliaguet 1996 added (D4 M4); 未/可/应/转 kept; sentence that no kernel is computed and §10.3's boundary is for one strategy (D2-fable §21).",
+    "fallback 8.2: kept; named conditions; tied to durability tests D1/D2; [num: SM(4), SM(14), FD]; uniform draw renamed 𝗎_t (D2-opus §19).",
+    "survassure 8.3: compressed to an inline core declaration whose prose carries Φ^R,Φ^T,Φ^P,Φ^S, the classification and the long-horizon reversal (number unchanged); full statement in S8 with every example parameter restored (V6.1 printed thresholds 0.16/0.42/0.11 without parameters) and recomputed.",
+    "Θ: cooperative-path failure modes widened (service interruption, collusion among checks) and tied to X8 (Codex 'judgment needs one more symmetric comparison').",
+    "§8.1 end: both worst cases fail the tolerance, so the comparison is at the standard's third step; §12.1 ranks there over X8's failure modes (Adv-O I3; Codex).",
+    "profile 8.4: thresholds of Table 7.1 written into the definition; export controls answered by mechanism (blocked diffusion raises Γ via the gamma equation; D1-opus §2.2).",
+    "G1–G7 canonical in §8.2, D1-opus wording and order, each mapped to the rows of Table 7.1 it reverses [thm, by row]; G2 refers to the author's game-design rule at §2.2 (one home); 'Section 3.7 asks' link.",
+    "durability 8.5: one evidence standard stated for every path, the design included (Adv-O m6); pseudo-solution and registered prediction [conj] kept.",
+    "8.3(a): tax driven to zero or below class by class (Ali I3), the time tax, masked divergences (Ali I1), lineage in independence; Greenblatt key with second author.",
+    "8.3(b): EV2 wording per verified D4 E3 (77%, twelve pairs of consecutive versions); Shavell 1986 (Adv-O I7); pacing equilibrium's two conditions mapped to G1/G6 and their erosion (twochan, enforce, masking, masked); doubled kind name fixed with {{>nounilateral}}.",
+    "8.3(c): Bueno de Mesquita, Dziuda and Polborn read correctly (D4 F1/F2, EV11); discouragement cited to Harris–Vickers and Konrad–Kovenock; spent lead returns to parity where standing is priced highest (§7.2).",
+    "8.3(d): 'It persuades by promising both security and benefits; both rest on the winner's restraint after the fact' (Fid minor 4; Ren 10-03); κ_W/(1+κ_W) and C13 referenced to §5.2, not restated (Adv-F F4).",
+    "8.3(e): answered by mechanism (Adv-O I6): objections typed (exposure, maintenance, mechanism); the freeze as the most unequal incidence (Lemma 3.3(2),(3)) held by the largest conversion target (Prop 4.3); stop vs E2/custody separated by incidence and holder; D4/D5 side-by-side table in X8.",
+    "8.3(f): preventown statement now contains its exact condition; three objections typed; deterrence's red lines pointer; insurance sentence 'accepts the frame of the contest, hedging against losing instead of declining the game' restored in the core (Fid I4c) and tied to §3.8's ruling [corpus: possibility-space]; provision-beneath-the-game vs insurance distinguished; hard case keeps both priors and points coercion to §12.1 tier 3 (single home).",
+    "8.3(g): payoffs defined; assure with T−P+F>0; Avenhaus, von Stengel and Zamir 2002 for the textbook threshold (Adv-O I7); detectlink referenced, not re-derived; verify numbered (1)–(3) so S8's proof cites by part (D2-opus §18); last clause split [def] identity + [conj] (plan Tags); overhang declared inline in verify's Scope (8.12 kept); answer to the position, not the plan (Ren 10-03).",
+    "8.4: table gains 'Thresholds of Table 7.1 it leaves on the danger side'; rows for sprint, benign winner, design updated; cruxes C9, C12, C13 added; paragraph points to X8's failure-mode table as what §12.1 compares; hand-off to §9 and §12.",
+    "X8: Fudenberg–Koh paragraph (pacing = E3 reached as equilibrium where it holds; its two conditions are G1 and G6; no delegation channel) (Adv-F F11); Abecassis moved to What remains (D4 G1, Evi minor 2); benign winner 'in its authors' terms', κ_W, Kulveit, C13, victors' institutions answered via X11; sprint objections by type and custody comparison table; Plan A figures per EV10 (about 48%); durability table under one evidence standard with a sprint row and a base-rate note (EVIDENCE gap 7); failure-mode table for every path with reversibility and a support column distinguishing derived from 'by design' (base of tier 3, Codex/Adv-O I3); 'Where the criteria disagree' with Jones fix (D4 A3).",
+    "S8: Remark lead with corrected citations and EV10 0.32; Remark sprint by mechanism; preventown full with condition; insure with the ruling; assure ϖ* defined and correspondence with detectlink; overhang symbols X,X_stay → V^exit,V^stay; verify proof aligned to the new parts; instance per EV10; crux illustration kept [num: legacy v5, CMP].",
+    "Test assembly: scratch copy of v6.2 with these files, assembler patched only in scratch to accept the Table kind: 'no problems'; all twelve §8 keys keep their numbers 8.1–8.12; xref name check: none in core."
+  ],
+  "moved_or_dropped": [
+    "survassure: full statement moved from core to S8 (inline declaration and its conditions stay in core §8.1; number 8.3 unchanged).",
+    "V6.1 §8.3(c) 'a leader committed to slowing can lead rivals to slow where the shared hazard is significant (Bueno de Mesquita et al.)': dropped as a misreading, replaced by the verified reading (D4 F1).",
+    "V6.1 'a discounted criterion can favour a race ... (Jones 2024)': dropped as a misattribution; replaced by Jones's curvature result [obs: EV11] and this paper's linear-utility derivation (S8).",
+    "V6.1 §8.2 four marks of the generative direction: superseded by G1–G7, which contain all four (G1, G3, G4, G6).",
+    "V6.1 Profile lines of (a) and (e): shortened; their content is in §8.4's table columns and X8 'What it changes'.",
+    "V6.1 (d) and X8 'Its force comes from the combination of stick and carrot': replaced by the tone sentence; both faces of the strategy remain in its description and EV1 keeps the verbatim quotation.",
+    "V6.1 X8 'proposed in explicitly humanitarian and defensive terms' and 'a real challenge to a path that assumes…': reworded ('in its authors' terms'; 'the record a transition among rivals near parity has to answer (X11)').",
+    "V6.1 X8 Abecassis 2025: moved from deterrence Best case to What remains.",
+    "V6.1 X8 hard case 'does not endorse it': now 'settles nothing about it there' with the pointer to §12.1 tier 3, where coercion's three conditions live.",
+    "V6.1 X8 durability, design row: D2 'Unknown; crux C4' → 'No estimate in its documents; drivers named (C4)' under the one evidence standard; D5 'The hard case remains' kept with its mechanism.",
+    "V6.1 S8 'cumulatively near half' → 'about 48%' (EV10).",
+    "V6.1 S8 proof of Theorem verify (1)–(4) → (1)–(3) plus 'The Scope collects…', matching the renumbered statement.",
+    "Symbol renames: U_t → 𝗎_t (S8 proof of fallback); X, X_stay → V^exit, V^stay (overhang)."
+  ],
+  "open_issues": [
+    "Bibliography entries needed (verified entries in D4 (b)): THEORY — Avenhaus, von Stengel and Zamir 2002; Cardaliaguet 1996; Harris and Vickers 1987; Konrad and Kovenock 2009; Shavell 1986. SUPPLEMENT — Avenhaus et al. 2002; Harris and Vickers 1987; Konrad and Kovenock 2009. DISCUSSION — Avenhaus et al. 2002; Shavell 1986. xref in the scratch build lists exactly these as missing from my unit.",
+    "Check blocks: S8's numbers rest on legacy blocks not ported into checks_v62.py (v5 SR, FS, N13, CMP; v4 LD). The survassure example numbers (0.90/0.22/0.13/0.28; 0.16; 0.42/0.11) were in no log at all; I recomputed them from the closed forms with the v5 parameters and they hold. Recommend a block (e.g. SA) porting these.",
+    "Symbol table: add 𝗎_t (S8), V^exit/V^stay (S8), and Φ^R,Φ^T,Φ^P,Φ^S, now defined in core §8.1.",
+    "CLAIMS: the English insurance sentence is the paper's wording of Ren's 2026-10-03 ruling, not a quotation; mark it D until Ren confirms. CLAIMS L7 (alternatives that succeed move the shared parameters) should carry [conj], as the §8 box now does.",
+    "Coherence for other units: merged §3.7(3) lists generative marks in its own words; the plan requires G1–G7 wording or a citation there and in §12.4. §12.1 tier 3 should cite X8's failure-mode table and is the single home of coercion's three conditions, to which §8.3 and X8 point.",
+    "EVIDENCE gap 7 should name the analogue base rate (survival and capture of international bodies with verification or custody mandates) as the next measurement; X8 now says no row is given one until the register holds it.",
+    "Fudenberg and Koh is read from the abstract only (EV11); X8's correspondence (pacing as E3; its conditions as G1 and G6; no delegation channel) should be checked against the full paper in outside review.",
+    "The kernel sentence presumes U10 states §10.3's safeguards result as a viable boundary for one strategy (D2-fable §21).",
+    "Length: core §8 is about 5,000 words (V6.1 3,122; D1-opus target 2,850), in line with the merged §5–§7. The growth is the Jones correction, G1–G7 with their mapping, the mechanism answers in (d)–(f), the assure/verify restatement and the 8.4 column. Further cuts would move conditions out of statements.",
+    "No unknown keys arose: the other units' new keys (thresholds, detectlink, scissors, masked, humancorr, twoerrors) are already in v6.2/src. The only assembler change needed is the Table kind, which the plan is adding."
+  ],
+  "word_counts": "Assembler count: core §8 5,002 words (V6.1 3,122); SUPPLEMENT S8 2,726 (V6.1 about 1,809); DISCUSSION X8 5,335 (V6.1 about 2,584). Scratch build reports no problems."
+}

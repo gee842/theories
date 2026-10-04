@@ -1,0 +1,21 @@
+{
+  "text": "和谐 一种flow 一种我的心和我的理它跟这个世界一样它都是在像它的那个方向它在流动它是一种directional的But if your cognitive model at the moment aligns with the realityThen it's more like a state of逍遥But in that stateBecause the mind and the bodyIs one, the self and the environment is oneThen there's also no selfIt is just different forces, different energiesMoving and creating dynamics forcesThat we can understand at the modelBut at the same time, situationallyWe can also turn or make our feeling into that alignmentAnd this also extends from the selfTo the relationship with othersTo the nation states and to the whole world儒家里面的家国天下以及孟子的这种我们先天就有好的这面但是它需要塑造所以所以说对于从关系的角度来思考东西你首先就是会想OK当下我和我的环境周围的关系是什么样的我的constraint是什么然后在这样的情景之中我可以做什么而不是围绕着一个价值OK我们去优化那个目标这也是为什么中国人非常擅长于像工程这样的问题并且他们做事情的approach会非常的pragmatic并且延伸这套逻辑指导我们是这个天下的一部分我们本身就在这个世界之中也是一种流动一种变化然后这种道然后这种存在它本身也是世界的自身存在如果我们要引入这种我这种主客的概念的话但但是如果我们去讲这种它不是一种现象它就是OK这些东西是这样的因为这样它是由于它们的关系那我们就说OK我们看到的东西它是一个什么",
+  "logprobs": null,
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 3506,
+    "input_tokens": 3150,
+    "input_token_details": {
+      "text_tokens": 30,
+      "audio_tokens": 3120
+    },
+    "output_tokens": 356
+  },
+  "chunk_metadata": {
+    "index": 1,
+    "core_start": 300,
+    "core_end": 600,
+    "audio_start": 294,
+    "audio_end": 606
+  }
+}

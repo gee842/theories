@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-04",
+  "reviewed_version": "V7",
+  "reviewers": [
+    "fresh-context mathematical review",
+    "fresh-context systems/governance review",
+    "fresh-context evidence/literature review",
+    "coordinating editorial review"
+  ],
+  "reviewer_independence_limit": "Separate Codex subagent contexts in the same model family; not independent human certification.",
+  "review_start_files_checked": 76,
+  "changed_or_missing_manuscript_files": [],
+  "fresh_example_reproduction": [
+    {
+      "role": "math",
+      "exit_code": 0,
+      "results_reproduced": true,
+      "stderr": ""
+    },
+    {
+      "role": "systems",
+      "exit_code": 0,
+      "results_reproduced": true,
+      "stderr": ""
+    }
+  ],
+  "missing_local_report_links": [],
+  "existing_suite": {
+    "passed": 231,
+    "failed": 0,
+    "rerun_during_readiness_review": false
+  },
+  "verdict": {
+    "private_specialist_circulation": "ready with findings attached",
+    "public_working_paper": "targeted revision first",
+    "finished_publication_ready_theory": "not ready"
+  },
+  "manuscript_modified_by_review": false,
+  "final_build_input_files_checked": 50,
+  "changed_or_missing_final_build_inputs": []
+}

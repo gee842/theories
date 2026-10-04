@@ -1,0 +1,1412 @@
+
+[[p1]]
+AI Research Considerations for Human
+Existential Safety
+(ARCHES)
+Andrew Critch
+Center for Human-Compatible AI
+UC Berkeley
+David Krueger
+MILA
+Université de Montréal
+June 11, 2020
+Abstract
+Framed in positive terms, this report examines how technical AI
+research might be steered in a manner that is more attentive to hu-
+manity’s long-term prospects for survival as a species. In negative
+terms, we ask what existential risks humanity might face from AI
+development in the next century, and by what principles contempo-
+rary technical research might be directed to address those risks.
+A key property of hypothetical AI technologies is introduced,
+called prepotence, which is useful for delineating a variety of poten-
+tial existential risks from artiﬁcial intelligence, even as AI paradigms
+might shift. A set of twenty-nine contemporary research directions
+are then examined for their potential beneﬁt to existential safety.
+Each research direction is explained with a scenario-driven motiva-
+tion, and examples of existing work from which to build. The research
+directions present their own risks and beneﬁts to society that could
+occur at various scales of impact, and in particular are not guaran-
+teed to beneﬁt existential safety if major developments in them are
+deployed without adequate forethought and oversight. As such, each
+direction is accompanied by a consideration of potentially negative
+side eﬀects.
+Taken more broadly, the twenty-nine explanations of the research
+directions also illustrate a highly rudimentary methodology for dis-
+cussing and assessing potential risks and beneﬁts of research direc-
+tions, in terms of their impact on global catastrophic risks. This
+impact assessment methodology is very far from maturity, but seems
+valuable to highlight and improve upon as AI capabilities expand.
+1
+arXiv:2006.04948v1  [cs.CY]  30 May 2020
+[[p2]]
+Preface
+At the time of writing, the prospect of artiﬁcial intelligence (AI) posing an
+existential risk to humanity is not a topic explicitly discussed at length in
+any technical research agenda known to the present authors. Given that
+existential risk from artiﬁcial intelligence seems physically possible, and
+potentiallyveryimportant,therearenumberofhistoricalfactorsthatmight
+have led to the current paucity of technical-level writing about it:
+1) Existential safety involves many present and future stakeholders
+(Bostrom, 2013), and is therefore a diﬃcult objective for any single
+researcher to pursue.
+2) The ﬁeld of computer science, with AI and machine learning as sub-
+ﬁelds, has not had a culture of evaluating, in written publications, the
+potential negative impacts of new technologies (Hecht et al., 2018).
+3) Most work potentially relevant to existential safety is also relevant to
+smaller-scale safety and ethics problems (Amodei et al., 2016; Cave
+and ÓhÉigeartaigh, 2019), and is therefore more likely to be explained
+with reference to those applications for the sake of concreteness.
+4) The idea of existential risk from artiﬁcial intelligence was ﬁrst popu-
+larized as a science-ﬁction trope rather than a topic of serious inquiry
+(Rees, 2013; Bohannon, 2015), and recent media reports have leaned
+heavily on these sensationalist ﬁctional depictions, a deterrent for
+some academics.
+We hope to address (1) not by successfully unilaterally forecasting the fu-
+ture of technology as it pertains to existential safety, but by inviting others
+to join in the discussion. Counter to (2), we are upfront in our examina-
+tion of risks. Point (3) is a feature, not a bug: many principles relevant to
+existential safety have concrete, present-day analogues in safety and ethics
+with potential to yield fruitful collaborations. Finally, (4) is best treated by
+simply moving past such shallow examinations of the future, toward more
+deliberate and analytical methods.
+Our primary intended audience is that of AI researchers (of all levels)
+with some preexisting level of intellectual or practical interest in existential
+safety, who wish to begin thinking about some of the technical challenges it
+might raise. For researchers already intimately familiar with the large vol-
+ume of contemporary thinking on existential risk from artiﬁcial intelligence
+(much of it still informally written, non-technical, or not explicitly framed
+in terms of existential risk), we hope that some use may be found in our
+categorization of problem areas and the research directions themselves.
+Our primary goal isnot to make the case for existential risk from artiﬁ-
+cial intelligence as a likely eventuality, or existential safety as an overriding
+ethical priority, nor do we argue for any particular prioritization among
+the research directions presented here. Rather, our goal is to illustrate how
+researchers already concerned about existential safety might begin thinking
+about the topic from a number of diﬀerent technical perspectives. In doing
+this, we also neglect many non-existential safety and social issues surround-
+ing AI systems. The absence of such discussions in this document is in no
+way intended as an appraisal of their importance, but simply a result of
+our eﬀort to keep this report relatively focused in its objective, yet varied
+in its technical perspective.
+2
+[[p3]]
+The arches of the Acueducto de Segovia, thought to have been
+constructed circa the ﬁrst century AD (De Feo et al., 2013).
+3
+[[p4]]
+0 Contents
+0 Contents 4
+1 Introduction 6
+1.1 Motivation . . . . . . . . . . . . . . . . . . . . . . . . . 6
+1.2 Safety versus existential safety . . . . . . . . . . . . . . 8
+1.3 Inclusion criteria for research directions . . . . . . . . . 9
+1.4 Consideration of side eﬀects . . . . . . . . . . . . . . . 10
+1.5 Overview . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2 Key concepts and arguments 12
+2.1 AI systems: tools, agents, and more . . . . . . . . . . . 12
+2.2 Prepotence and prepotent AI . . . . . . . . . . . . . . . 12
+2.3 Misalignment and MPAI . . . . . . . . . . . . . . . . . 15
+2.4 Deployment events . . . . . . . . . . . . . . . . . . . . 16
+2.5 Human fragility . . . . . . . . . . . . . . . . . . . . . . 17
+2.6 Delegation . . . . . . . . . . . . . . . . . . . . . . . . . 19
+2.7 Comprehension, instruction, and control . . . . . . . . 20
+2.8 Multiplicity of stakeholders and systems . . . . . . . . 21
+2.8.1 Questioning the adequacy of single/single delegation 22
+2.9 Omitted debates . . . . . . . . . . . . . . . . . . . . . . 23
+3 Risk-inducing scenarios 25
+3.1 Tier 1: MPAI deployment events . . . . . . . . . . . . . 25
+3.1.1 Type 1a: Uncoordinated MPAI development . . . . . 26
+3.1.2 Type 1b: Unrecognized prepotence . . . . . . . . . . 26
+3.1.3 Type 1c: Unrecognized misalignment . . . . . . . . . 27
+3.1.4 Type 1d: Involuntary MPAI deployment . . . . . . . 28
+3.1.5 Type 1e: Voluntary MPAI deployment . . . . . . . . 29
+3.2 Tier 2: Hazardous social conditions . . . . . . . . . . . 30
+3.2.1 Type 2a: Unsafe development races . . . . . . . . . . 30
+3.2.2 Type 2b: Economic displacement of humans . . . . . 30
+3.2.3 Type 2c: Human enfeeblement . . . . . . . . . . . . 31
+3.2.4 Type 2d: ESAI discourse impairment . . . . . . . . . 32
+3.3 Omitted risks . . . . . . . . . . . . . . . . . . . . . . . 33
+4 Flow-through eﬀects and agenda structure 33
+4.1 From single/single to multi/multi delegation . . . . . . 33
+4.2 From comprehension to instruction to control . . . . . 34
+4.3 Overall ﬂow-through structure . . . . . . . . . . . . . . 34
+4.4 Research beneﬁts vs deployment beneﬁts . . . . . . . . 35
+4.5 Analogy, motivation, actionability, and side eﬀects . . . 36
+5 Single/single delegation research 37
+5.1 Single/single comprehension. . . . . . . . . . . . . 38
+5.1.1 Direction 1: Transparency and explainability . . . . 39
+5.1.2 Direction 2: Calibrated conﬁdence reports . . . . . . 41
+5.1.3 Direction 3: Formal veriﬁcation for machine learning
+systems . . . . . . . . . . . . . . . . . . . . . . . . . 43
+5.1.4 Direction 4: AI-assisted deliberation . . . . . . . . . 45
+5.1.5 Direction 5: Predictive models of bounded rationality 47
+5.2 Single/single instruction . . . . . . . . . . . . . . . 50
+5.2.1 Direction 6: Preference learning . . . . . . . . . . . . 50
+4
+[[p5]]
+5.2.2 Direction 7: Human belief inference . . . . . . . . . . 52
+5.2.3 Direction 8: Human cognitive models . . . . . . . . . 54
+5.3 Single/single control . . . . . . . . . . . . . . . . . . 56
+5.3.1 Direction 9: Generalizable shutdown and handoﬀ
+methods . . . . . . . . . . . . . . . . . . . . . . . . . 56
+5.3.2 Direction 10: Corrigibility . . . . . . . . . . . . . . . 58
+5.3.3 Direction 11: Deference to humans . . . . . . . . . . 59
+5.3.4 Direction 12: Generative models of open-source equi-
+libria . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+6 Single/multi delegation research 62
+6.1 Single/multi comprehension . . . . . . . . . . . . . 63
+6.1.1 Direction 13: Rigorous coordination models . . . . . 63
+6.1.2 Direction 14: Interpretable machine language . . . . 65
+6.1.3 Direction 15: Relationship taxonomy and detection . 67
+6.1.4 Direction 16: Interpretable hierarchical reporting . . 69
+6.2 Single/multi instruction. . . . . . . . . . . . . . . . 71
+6.2.1 Direction 17: Hierarchical human-in-the-loop learn-
+ing (HHL) . . . . . . . . . . . . . . . . . . . . . . . . 71
+6.2.2 Direction 18: Purpose inheritance . . . . . . . . . . . 73
+6.2.3 Direction 19: Human-compatible ethics learning . . . 75
+6.2.4 Direction 20: Self-indication uncertainty . . . . . . . 77
+6.3 Single/multi control . . . . . . . . . . . . . . . . . . 79
+7 Relevant multistakeholder objectives 80
+7.1 Facilitating collaborative governance . . . . . . . . . . 81
+7.2 Avoiding races by sharing control . . . . . . . . . . . . 84
+7.3 Reducing idiosyncratic risk-taking . . . . . . . . . . . . 85
+7.4 Existential safety systems . . . . . . . . . . . . . . . . . 85
+8 Multi/single delegation research 87
+8.1 Multi/single comprehension . . . . . . . . . . . . . 87
+8.1.1 Direction 21: Privacy for operating committees . . . 87
+8.2 Multi/single instruction. . . . . . . . . . . . . . . . 89
+8.2.1 Direction 22: Modeling human committee deliberation 89
+8.2.2 Direction 23: Moderating human belief disagreements 91
+8.2.3 Direction 24: Resolving planning disagreements . . . 92
+8.3 Multi/single control . . . . . . . . . . . . . . . . . . 94
+8.3.1 Direction 25: Shareable execution control . . . . . . 94
+9 Multi/multi delegation research 95
+9.1 Multi/multi comprehension . . . . . . . . . . . . . 96
+9.1.1 Direction 26: Capacity oversight criteria . . . . . . . 96
+9.2 Multi/multi instruction . . . . . . . . . . . . . . . . 98
+9.2.1 Direction 27: Social contract learning . . . . . . . . . 98
+9.3 Multi/multi control . . . . . . . . . . . . . . . . . . 100
+9.3.1 Direction 28: Reimplementation security . . . . . . . 100
+9.3.2 Direction 29: Human-compatible equilibria . . . . . 101
+10 Further reading 103
+10.1 Related research agendas . . . . . . . . . . . . . . . . . 104
+11 Acknowledgements 106
+12 References 106
+5
+[[p6]]
+1 Introduction
+AI technology has the potential to alleviate poverty, automate medical re-
+search, accelerate clean energy development, and enhance human cognitive
+abilities.Suchdevelopmentswouldhavebeendiﬃculttoimagineinconcrete
+terms 100 years ago, but are not inconceivable now. If the worldwide AI
+research and development community is vigilant in distributing the beneﬁts
+of these technologies fairly and equitably to all of humanity, global human
+welfare could be drastically and permanently improved.
+Unfortunately,anyhumanextinctioneventwouldmeanhumanityceases
+or fails to ever enjoy these marvelous beneﬁts. The purpose of this report is
+to consider research directions in terms of their potential to steer away from
+human extinction risks, toward globally safer outcomes for humanity. While
+it is very diﬃcult toforecast whether any particular research direction will
+lead to an increase in risk to society, it may still be possible for researchers
+tosteer research in safer and more beneﬁcial directions, if we are collectively
+attentive and mindful of the potential for both risks and beneﬁts as new
+capabilities are developed. Since it is common for researchers to discuss the
+potential beneﬁts of their work, this report is focussed almost entirely on
+risk.
+Why focus on human extinction risk, and not global catastrophic risks
+more broadly? For two reasons: relative concreteness, and agreeability.
+Many principles for mitigating existential risks also apply to mitigating
+global catastrophic risks in general. However, thinking about the potential
+for future global catastrophic risks from artiﬁcial intelligence, while morally
+compelling, involves a great deal of speculation.
+Discussions in computer science can be more focused if there is a con-
+crete and agreeably important outcome in mind, and the survival of the hu-
+man species is one such an outcome that is relatively concrete and broadly
+agreeably important in the landscape of global catastrophic risks.
+1.1 Motivation
+Taking a positive view of artiﬁcial intelligence, the aim of this report is
+to examine how technical AI research might be steered in manner that is
+moresensitivetohumanity’slong-termprospectsforsurvivalinco-existence
+with AI technology. In negative terms, the aim is to consider how human
+extinction could occur if artiﬁcial intelligence plays a signiﬁcant role in that
+event, and what principles might help us to avoid such an event.
+If human extinction were to occur within the next century, it seems
+exceedingly likely that human activities would have precipitated the ex-
+tinction event. The reason is simple: nature has not changed much in the
+past 10,000 years, and given that nature on its own has not yielded a hu-
+man extinction event for the past 100 centuries, it is not a priori likely for
+a natural human extinction event to occur in the next century. (Indeed, a
+naive application of Laplace’s law of succession would yield a probability
+estimate of at most around 1%.) By contrast, within this century, human
+extinction could occur through a variety of anthropogenic pathways, includ-
+ing bio-terrorism, climate change, nuclear winter, or catastrophic artiﬁcial
+intelligence developments (Matheny, 2007; Bostrom, 2013). This report is
+focused on the latter.
+Unfortunately, there are numerous pitfalls of human reasoning and co-
+ordination that mean human extinctionin particular is not a problem we
+should expect to avoid by default:
+6
+[[p7]]
+“We may be poorly equipped to recognize or plan for extinction
+risks (Yudkowsky, 2008b). We may not be good at grasping the
+signiﬁcance of very large numbers (catastrophic outcomes) or
+very small numbers (probabilities) over large time frames. We
+struggle with estimating the probabilities of rare or unprece-
+dented events (Kunreuther et al., 2001). Policymakers may not
+plan far beyond current political administrations and rarely do
+risk assessments value the existence of future generations [For
+an exception, see Kent (2004).] We may unjustiﬁably discount
+the value of future lives. Finally, extinction risks are market fail-
+ures where an individual enjoys no perceptible beneﬁt from his
+or her investment in risk reduction. Human survival may thus
+be a good requiring deliberate policies to protect.” –Matheny
+(2007), Reducing the risk of human extinction.
+In an eﬀort to avoid some of these shortfalls of reasoning and coordina-
+tion, this document examines how the development of artiﬁcial intelligence
+(AI) speciﬁcally could lead to human extinction, and outlines how various
+directions of technical research could conceivably be steered to reduce that
+risk.
+Aside from wishing to avert existential risks in general, there are several
+reasons to take seriously the objective of reducing existential risk from
+artiﬁcial intelligence speciﬁcally:
+1. A variety of advanced AI capabilities could be suﬃcient to pose ex-
+istential risks. A central theme of this report, argued further in
+Section 2, will be that artiﬁcial intelligence does not need to meet
+the conditions of “human-level AI” (Nilsson, 2005), “artiﬁcial general
+intelligence” (Goertzel and Pennachin, 2007), or “superintelligence”
+(Bostrom, 1998) to become a source of existential risk to humanity.
+It is conceivable that increasingly capable AI systems could lead to
+human extinction without ever achieving human-level intelligence or
+fully general reasoning capabilities.
+2. The AI development timeline is unknown.AI development has en-
+tered a period of high activity and abundant funding. In the past, AI
+research has cycled through periods of excitement and stagnation. “AI
+winter” is a term used for a period of reduced funding and interest
+in AI. It was previously believed that the current period of activity
+might terminate with an AI winter sometime in the 2010s (Hendler,
+2008), but this does not seem to have occurred. Others believe that
+another AI winter could be yet to come. Grace et al. (2018) conducted
+a 2016 survey of the 1634 researchers who published in NIPS 2015,
+and found great variation among the respondents, but a majority
+of respondents believing “High-level machine intelligence” would be
+achieved within a century:
+Our survey used the following deﬁnition:
+‘High-levelmachineintelligence’(HLMI)isachieved
+when unaided machines can accomplish every task
+better and more cheaply than human workers.
+Each individual respondent estimated the probability of
+HLMI arriving in future years. Taking the mean over each
+individual, the aggregate forecast gave a 50% chance of
+7
+[[p8]]
+HLMI occurring within 45 years and a 10% chance of it
+occurring within 9 years. [...] There is large inter-subject
+variation: [...] Asian respondents expect HLMI in 30 years,
+whereas North Americans expect it in 74 years. [...] Respon-
+dents were asked whether HLMI would have a positive or
+negative impact on humanity over the long run. They as-
+signed probabilities to outcomes on a ﬁve-point scale. The
+median probability was 25% for a “good” outcome and 20%
+for an “extremelygood” outcome. Bycontrast, theprobabil-
+ity was 10% for a bad outcome and 5% for an outcome de-
+scribed as “Extremely Bad (e.g., human extinction).” Forty-
+eight percent of respondents think that research on mini-
+mizing the risks of AI should be prioritized by society more
+than the status quo (with only 12% wishing for less).
+Given this variation in opinion, combined with the consensus that
+HLMI will most likely be developed in this century, it seems pru-
+dent to direct some immediate research attention at managing the
+concomitant risks.
+3. Safe and powerful AI systems could reduce existential risk.If safe and
+robust AI technologies continue to be developed, AI technology could
+in principle be used to automate a wide range of preventive measures
+for averting other catastrophes, thus serving toreduceexistential risk
+(Yudkowsky, 2008a).
+1.2 Safety versus existential safety
+This report is about existential safety. What is the relationship between
+existential safety and safety for present-day AI systems? The answer can
+be summarized as follows:
+1) Deployments of present-day AI technologies do not present existential
+risks. Today’s AI systems are too limited in both their capabilities
+and their scope of application for their deployment to present risks at
+an existential scale.
+2) Present-day AI deployments present safety issues which, if solved,
+could be relevant to existential safety.For instance, the deployment
+of present-day autonomous vehicles present risks to individual human
+lives. Solutions to such safety problems that generalize well to more
+powerful AI capabilities could be used to improve existential safety
+for future AI technologies. On the other hand, safety techniques that
+work for present-day AI technologies but fail to generalize for more
+powerful AI systems could yield a false sense of security and lead
+to existential safety problems later. Questioning which safety tech-
+niques and methodologies will generalize well is an important source
+of research problems.
+3) Present-day AI deployments present non-safety issues which could
+later become relevant to existential safety. For instance, consider
+present-day AI ethics problems such as fairness, accountability, and
+transparency for AI systems.
+Many such problems do not present immediate and direct risks to
+the physical safety of humans or even their physical property, and are
+8
+[[p9]]
+thus not often considered AI safety problems. However, if AI capa-
+bilities improve to become much more impactful on a global scale,
+ethical issues in the governance of those capabilities could eventually
+become matters of existential safety, just as present-day human in-
+stitutions can present risks to public safety if not governed ethically
+and judiciously.
+Points (1)-(3) above can be summarized in the diagram of Figure 1:
+Figure 1: Relationship between AI safety, ethics, and existential safety.
+A brief review of and comparison of related AI safety research agendas
+is provided in Section 10.1, including:
+• Aligning Superintelligence with Human Interests(Soares and Fallen-
+stein, 2014),
+• Research Priorities for Robust and Beneﬁcial Artiﬁcial Intelligence
+(Russell et al., 2015),
+• Concrete Problems in AI Safety(Amodei et al., 2016),
+• Alignment for Advanced Machine Learning Systems(Taylor et al.,
+2016), and
+• Scalable Agent Alignment via Reward Modeling: a research direction
+(Leike et al., 2018).
+1.3 Inclusion criteria for research directions
+Each research direction in this report has been chosen for its potential to
+be used in some way to improve human existential safety. The directions
+have been somewhat intentionally sampled from conceptually diverse areas
+9
+[[p10]]
+of AI research, so as to avoid neglecting important considerations for how
+the technology could develop.
+Research directionshave notbeen ﬁltered foronly being relevant to AI
+safety or ethics. In particular, many of the selected research directions seem
+likely be pursued for reasons entirely unrelated to existential safety, at least
+in some form.
+Inaddition,theresearchdirectionshave have notbeenﬁlteredforhaving
+no potentially negative side eﬀects; otherwise, the result would have been a
+very empty document. Instead, reasoning is provided for how each research
+direction could potentially be pursued in service of existential safety, to
+enable further deliberation and discussion of that potential.
+Importantly, the reasoning included with each research directionis not
+intended to argue or predict that the catastrophic scenarios discussed in
+this report will occur, nor to claim that humanity will or will not take
+adequate precautions to prevent catastrophes arising from AI development.
+Rather, this report simply aims to form a small part of those precautions.
+In particular, this document is by no means a reasonable representation of
+the immense number and variety of potential beneﬁcial applications of AI
+research.
+1.4 Consideration of side eﬀects
+None of the research directions in this report are guaranteed to be helpful to
+existential safety, especially if they are deployed carelessly or prematurely.
+As such, each direction is exposited with a mini-section entitled “Consider-
+ation of Side Eﬀects”, intended to encourage researchers to remain mindful
+of the potential misapplications of their work.
+Unfortunately, it is not yet the norm in computer science research to
+write about the potentially negative impact of one’s work in the course of
+producing the work. This story has already been well told by the ACM
+Future of Computing Academy:
+“The current status quo in the computing community is to frame
+our research by extolling its anticipated beneﬁts to society. In other
+words, rose-colored glasses are the normal lenses through which we
+tend to view our work. [...] However, one glance at the news these
+days reveals that focusing exclusively on the positive impacts of a
+new computing technology involves considering only one side of a
+very important story. [...]
+We believe that this gap represents a serious and embarrassing in-
+tellectual lapse. The scale of this lapse is truly tremendous: it is
+analogous to the medical community only writing about the beneﬁts
+of a given treatment and completely ignoring the side eﬀects, no mat-
+ter how serious they are. [...] What’s more, the public has deﬁnitely
+caught on to our community-wide blind spot and is understandably
+suspicious of it. [...] After several months of discussion, an idea for
+acting on this imperative began to emerge: we can leverage the gate-
+keeping functionality of the peer review process. [...] At a high level,
+our recommended change to the peer review process in computing
+is straightforward: Peer reviewers should require that papers and
+proposals rigorously consider all reasonable broader impacts, both
+positive and negative.”
+– Hecht, B., Wilcox, L., Bigham, J.P., Schöning, J., Hoque, E.,
+Ernst, J., Bisk, Y., De Russis, L., Yarosh, L., Anjum, B., Con-
+tractor, D. and Wu, C. “It’s Time to Do Something: Mitigating
+10
+[[p11]]
+the Negative Impacts of Computing Through a Change to the
+Peer Review Process.” (2018) ACM Future of Computing Blog.
+https://acm-fca.org/2018/03/29/negativeimpacts/.
+In light of this phenomenon, perhaps this report can participate in an
+academia-wide shift toward the active consideration of potentially negative
+side eﬀects of research outputs, including outputs of the research directions
+exposited here.
+As readers examine these potential side eﬀects, it is important to re-
+member that these are not intended to communicate a forecast of what
+will happen, only whatmight happen and ought to be avoided.
+1.5 Overview
+The logical thrust of this report can be summarized as follows. This sum-
+mary is not meant to stand on its own, and thus contains links to the
+relevant sections expanding on each point. Please refer to those sections for
+supporting arguments.
+Existential risks arising from advancements in artiﬁcial intelligence are
+physically possible, very important if they occur, and plausible within this
+century (Section 1.1). Since existential safety applications of AI research are
+somewhat diﬀerent from smaller-scale safety applications (Section 1.2), it
+makes sense to begin some manner of explicit discussions of how AI research
+could be steered in directions that will avoid existential risks. This report
+aims to embody such a discussion (Preface, Section 1.3, and Section 1.4).
+For present-day thinking about existential safety to be robustly valuable
+for the many potential pathways along which AI technology could develop,
+concepts and arguments are needed that will be relevant in a broad variety
+of potential futures. Section 2 will attempt to organize together a few such
+key ideas. For instance, the potential for humanity tolose control of the
+Earth to powerful AI systems is a key consideration, so Section 2.2 will
+deﬁneprepotent AI as, roughly speaking, AI technology that would (hy-
+pothetically) bring about unstoppable globally signiﬁcant changes to the
+Earth. If prepotent AI technology is ever developed, there are many po-
+tential pathways through which the eﬀects of that technology could render
+the Earth unsurvivable to humans (Section 2.5). Hence, the potential de-
+velopment of prepotent AI technology presents a source of existential risk.
+Importantly, a hypothetical existential catastrophe arising from AI technol-
+ogy need not be attributable to a single, indecomposable AI system (Sec-
+tion 2.8); catastrophes could also arise from the aggregate behavior of many
+AI systems interacting with each other and/or humans (Section 2.8.1).
+How might a catastrophe come about? In general, supposing AI tech-
+nology were to someday precipitate an existential catastrophe, there are
+a variety of societal errors that might have led up to that event. Such
+errors could include coordination failures between AI development teams
+(Section 3.1.1), failure to recognize the prepotence of an AI technology be-
+fore its deployment (Section 3.1.2), unrecognized misalignment of an AI
+system’s speciﬁcations with the long-term preservation of human existence
+(Section 3.1.3), or the involuntary or voluntary deployment of a technology
+known to be dangerous (Sections 3.1.4 and 3.1.5).
+What do these errors have in common? Abstractly, an existential catas-
+trophe arising from AI technology could be viewed as an instance of AI
+systems failing to “do what humans want.” After all, humans usually do
+not wish for humanity to become extinct. Thus, research aiming at exis-
+tential safety for future AI systems might begin by studying and improving
+11
+[[p12]]
+the interactions between a single AI system and a single human (Section 5)
+to ensure that the AI system behaves in a manner desirable to the human.
+This could involve methods to help the human comprehend the AI system
+(Section 5.1), deliver instructions to the system (Section 5.2), and control
+the system if it begins to malfunction (Section 5.3).
+However, as soon as any new capability is developed that enables a
+single human to delegate to a single AI system for some sort of task, that
+capabilityislikelytobereplicatedmanytimesover,leadingtoamultiplicity
+of AI systems with similar functionalities (Section 2.8). Thus, any research
+anticipatingthepotentiallyglobalimpactsofAItechnologyshouldtakeinto
+account the numerous potential side eﬀects of many AI systems interacting
+(Section 6).
+Moreover, diverse stakeholders can be expected to seek involvement in
+the governance of any AI technology that could be suﬃciently impactful
+as to present an existential risk (Section 2.8). Therefore, existential safety
+solutions involving only single-stakeholder oversight are not likely to be
+satisfying on their own (Section 2.8.1). For this and many other reasons,
+it makes more sense for AI technology to be developed in a manner that
+is well-prepared for oversight by ideologically, politically, and ethnically
+diverse people and institutions (Section 7).
+In particular, facilitating collaboration in the oversight of AI systems by
+diverse stakeholders (Section 7.1) could reduce incentives for research teams
+to enter unsafe development races (Section 7.2), mitigate idiosyncratic risk-
+taking among the stakeholders (Section 7.3), and increase the likelihood
+that systems will someday be developed with existential safety as their
+primary purpose (Section 7.4). Sections 8 and 9 therefore adopt a focus on
+research directions relevant to one or more AI systems to serve multiple
+stakeholders at once. Taken together, the research directions in Sections 5,
+6, 8, and 9 constitute an incomplete but conceptually diverse portfolio of
+technical topics with potential relevance to existential safety.
+2 Key concepts and arguments
+There are many potential pathways along which AI technology could de-
+velop. This section introduces a few concepts and arguments for addressing
+a broad range of hypothetical futures in which existential risks from artiﬁ-
+cial intelligence could arise.
+2.1 AI systems: tools, agents, and more
+By “AI system”, we refer to any collection of one or more automated
+decision-making units. The units are not assumed to be cooperating or
+competing, and are not assumed to have been created by cooperating or
+competing stakeholders. Hence, the term “system” is intentionally gen-
+eral and agent-agnostic, and is meant to encompass simple and complex
+artifacts of engineering that could variously be called “decision-making
+tools”, “agents”, “multi-agent systems”, “societies of machines”, or none of
+the above.
+2.2 Prepotence and prepotent AI
+We say that an AI system or technology isprepotent/"prE-p@-t@nt/ (relative
+to humanity) if its deployment would transform the state of humanity’s
+12
+[[p13]]
+habitat—currently the Earth—in a manner that isat least as impactful as
+humanity and unstoppable to humanity, as follows:
+• at least as impactful as humanity: By this we mean that if the AI
+system or technology is deployed, then its resulting transformative
+eﬀects on the world would be at least as signiﬁcant as humanity’s
+transformation of the Earth thus far, including past events like the
+agricultural and industrial revolutions.
+• unstoppable to humanity: By this we mean that if the AI system or
+technology is deployed, then no concurrently existing collective of
+humans would have the ability to reverse or stop the transformative
+impact of the technology (even if every human in the collective were
+suddenly in unanimous agreement that the transformation should be
+reversed or stopped). Merely altering the nature of the transformative
+impact does not count as stopping it.
+InEnglish,theterm“prepotent” means“Verypowerful;superiorinforce,
+inﬂuence, or authority; predominant”. On analogy with the terms ‘intelli-
+gent/intelligence’ and ‘omnipotent/omnipotence’, we favor the termprepo-
+tence /"prE-p@-t@n(t)s/overthemorestandardusage“prepotency” /"pr¯ e-­p¯ o-
+t@n(t)-s¯ e/. In a number of Latin-descended languages, direct translations of
+“prepotent”, such as “prepotente” and “prépotent”, mean “arrogant”, “over-
+bearing”, “high-handed”, “despotic” or “possessing excessive or abusive au-
+thority”. These connotations are not typically carried in English, and while
+they do not contradict our usage, they are more speciﬁc than we intend.
+Before considering what level and types of risks prepotent AI technolo-
+gies could pose to humanity, let us ﬁrst consider brieﬂy whether a prepotent
+AI system is physically possible to build in principle. In short, the answer is
+probably yes. Why should human beings—a product of random evolution
+and natural selection—be physically unsurpassable in our ability to con-
+trol our physical environment? Indeed, there are at least several classes of
+capabilities that might enable an AI technology to be prepotent, including:
+• Technological autonomy.Consider an AI system capable of out-
+performing the collective eﬀorts of the world’s top human scientists,
+engineers and industry professionals in endeavors of novel and inde-
+pendent scientiﬁc research and engineering. Let us call such a system
+technologically autonomous. Technologically autonomous AI might be
+able to build other AI systems that are prepotent, if so directed by
+whatever decision process determines its priorities.
+As well, technologically autonomous AI itself could constitute prepo-
+tent AI if it expands its scientiﬁc activities in the physical world in a
+manner that humans cannot contend with. For comparison, consider
+how non-human animals are unable to contend with the industrial
+expansion of humans.
+• Replication speed. The capability of AI systems to self-replicate
+and consume the Earth’s physical resources too quickly for human
+civilization to intervene would constitute prepotence. To illustrate the
+in-principle possibility of such a scenario, consider the destruction of a
+large organism by a potent biological virus as a side eﬀect of the virus
+rapidly disassembling the organism’s cells to obtain resources for the
+virus producing copies of itself. The virus need not be “generally more
+intelligent” than the host organism in any natural sense in order to
+13
+[[p14]]
+end up destroying the host as a side eﬀect of the virus’s replication
+process. The virus needs only to overwhelm or circumvent the host’s
+immune system, a domain-speciﬁc problem.
+• Social acumen. The capability to socially manipulate human na-
+tions to suddenly or gradually cede control of their resources could
+enable prepotence. To see the possibility of such a scenario in princi-
+ple, consider that the holocaust of World War II was an event precip-
+itated in large part by the highly inﬂuential natural language outputs
+of a particular human agent during a time of geopolitical unrest.
+Because of the potential for such capabilities to cause humanity to lose
+control of the future, to develop any of them would mean facing a consid-
+erable and highly objectionable risk.
+Historical note. The possibility that advanced AI systems could be dif-
+ﬁcult to control was considered by thinkers as early as visionary computer
+scientist Alan Turing:
+“Let us now assume, for the sake of argument, that these ma-
+chines are a genuine possibility, and look at the consequences of
+constructing them. [...] [I]t seems probable that once the ma-
+chine thinking method had started, it would not take long to
+outstrip our feeble powers. There would be no question of the
+machines dying, and they would be able to converse with each
+other to sharpen their wits. At some stage therefore we should
+have to expect the machines to take control [... ] – Alan Turing
+[1951], “Intelligent Machinery, A Heretical Theory”.
+Mathematician and philosopher Norbert Wiener, widely regarded as
+the originator of the cybernetics, also remarked at the potential dangers of
+powerful “mechanical agencies" with which we “cannot interfere’:
+[...] if a bottle factory is programmed on the basis of maximum
+productivity,theownermaybemadebankruptbytheenormous
+inventory of unsalable bottles manufactured before he learns he
+should have stopped production six months earlier. [...]
+Disastrous results are to be expected not merely in the world
+of fairy tales but in the real world wherever two agencies es-
+sentially foreign to each other are coupled in the attempt to
+achieve a common purpose. If the communication between these
+two agencies as to the nature of this purpose is incomplete, it
+must only be expected that the results of this cooperation will
+be unsatisfactory.
+If we use, to achieve our purposes, a mechanical agency with
+whose operation we cannot eﬃciently interfere once we have
+started it, because the action is so fast and irrevocable that we
+have not the data to intervene before the action is complete,
+then we had better be quite sure that the purpose put into the
+machine is the purpose which we really desire and not merely a
+colorful imitation of it.” (Wiener, 1960)
+Prepotent AI vs “transformative AI”.The concept of prepotent AI
+may be viewed as deﬁning a subset of what the Open Philanthropy Project
+14
+[[p15]]
+has calledtransformative AI(Karnovsky, 2016), which roughly corresponds
+to clause 1 of the deﬁnition of prepotent AI. Speciﬁcally, prepotent AI sys-
+tems/technologies are transformative AI systems/technologies that are also
+unstoppable to humanity after their deployment (clause 2 of the prepotence
+deﬁnition).
+Prepotence vs “superintelligence”.This report explicitly avoids de-
+pendence on the notion of “superintelligence” (Bostrom, 2014) as a con-
+ceptual starting point. Bostrom has deﬁned the termsuperintelligence to
+refer to “an intellect that is much smarter than the best human brains
+in practically every ﬁeld, including scientiﬁc creativity, general wisdom and
+social skills” (Bostrom, 1998). This notion of superintelligence helps to sim-
+plify certain arguments about the in-principle possibility of existential risk
+from artiﬁcial intelligence, because superintelligence seems both physically
+possible to build in principle, and plausibly suﬃcient for threatening our
+existential safety. However, not all of the competencies stipulated in the
+deﬁnition of superintelligence are necessary for an AI technology to pose
+a signiﬁcant existential risk. Although Bostrom (2014) argues that super-
+intelligence would likely be unstoppable to humanity (i.e., prepotent), his
+arguments for this claim (e.g., the “instrumental convergence thesis”) seem
+predicated on AI systems approximating some form of rational agency, and
+this report aims to deemphasize such unnecessary assumptions. It seems
+more prudent not to use the notion of superintelligence as a starting point
+for concern, and to instead focus on more speciﬁc sets of capabilities that
+present “minimum viable existential risks”, such as technological autonomy,
+high replication speed, or social acumen.
+2.3 Misalignment and MPAI
+In considering any prepotent or even near-prepotent AI technology, one
+immediately wonders whether its transformative impact on the world would
+be good or bad for humanity.AI alignmentrefers to the problem of ensuring
+that an AI system will behave well in accordance with the values of another
+entity, such as a human, an institution, or humanity as a whole (Soares and
+Fallenstein, 2014; Taylor et al., 2016; Leike et al., 2018).
+What should qualify as a misaligned prepotent AI (MPAI)? Setting
+aside the diﬃculty of deﬁning alignment with a multi-stakeholder system
+such as humanity, where might one draw the threshold between “not very
+well aligned” and “misaligned” for a prepotent AI system? For the purpose
+of this report, we draw the line at humanity’s ability to survive:
+MPAI. We say that a prepotent AI system is amisaligned if it is
+unsurvivable (to humanity), i.e., its deployment would bring about
+conditions under which the human species is unable to survive.1
+Since any unsurvivable AI system is automatically prepotent,mis-
+aligned prepotent AI(MPAI) technology andunsurvivable AI tech-
+nology are equivalent categories as deﬁned here.
+1It is interesting to ask what it means for a particular AI system to “bring about”
+unsurvivable conditions, if such conditions occur. This is a question involving account-
+ability for AI systems (Barocas and Hardt, 2014), which may become more diﬃcult to
+deﬁne for more capable systems. If System A builds System B, and System B brings
+about unsurvivable conditions, did System A bring about unsurvivable conditions? Any
+scientiﬁc claim that a system will not “bring about” unsurvivable conditions will have
+to settle on a deﬁnition in order to be meaningful. For the purposes of this report, the
+precise technical deﬁnition of “bring about” is left as an open question.
+15
+[[p16]]
+Figure 2: Venn diagram relating “transformative AI”, “prepotent AI”, and “unsurvivable AI”
+(“MPAI” in this report). In other contexts less focussed on human survival, it might make
+sense to use a diﬀerent threshold to deﬁnemisalignment for prepotent AI, in which case the
+term unsurvivable AI could be reserved for what is called MPAI in this report.
+Extinctive versus unsurvivable. It may worth noting that humanity
+can become extinct in a manner where our habitat is at no point unsurviv-
+able, if the extinction is somehow willful. This means there is a category
+of extinctive AI that lies strictly between prepotent AI and MPAI, which
+includes AI systems that would somehow lead humanity to extinction along
+a pathway where humanity has the ability to prevent its extinction at every
+point along the way, but somehow fails to exercise this ability, right to the
+very end. This may be a very important consideration for humanity, how-
+ever, it will not be a key focus of the present document. In fact, Section 2.5
+will raise some considerations suggesting that prepotent AI systems may
+be unsurvivable by default in a certain sense, in which case intermediate
+categories between prepotent AI and MPAI may not be particularly useful
+distinctions. In any case, attentive readers wishing to draw this distinction
+may often need to treat “human extinction” as a shorthand for “involuntary
+human extinction” at some places in this report.
+2.4 Deployment events
+What counts as the deployment of a prepotent AI system? If an AI system
+becomes prepotent after it is already in deployment, shall we consider that
+moment “the deployment of a prepotent AI system“? In this report, the
+short answer is yes, because the resulting loss of control for humanity from
+that point forward may be similar to the result of deploying an AI system
+that is already prepotent.
+To be more precise, throughout this report,
+• a transformative AI deploymentevent refers to either a transforma-
+tive AI technology becoming deployed, or a deployed AI technology
+becoming transformative.
+• a prepotent AI deploymentevent refers to either a prepotent AI tech-
+nology becoming deployed, or a deployed AI technology becoming
+prepotent;
+• an MPAI deploymentevent refers to either an MPAI technology be-
+coming deployed, or a deployed AI technology becoming MPAI.
+As deﬁned above, these deployment events have the following implications
+for what is possible for humanity:
+16
+[[p17]]
+→ At the deployment of a transformative AI technology, it follows that
+a highly signiﬁcant global transformation of humanity’s habitat will
+occur, but that transformation might be reversible or stoppable by
+humanity after it occurs.
+→ At the deployment of a prepotent AI technology, it follows that hu-
+manity has no further ability to reverse or stop the transformative
+impact of the system, but might still have some ability to channel or
+direct the impact in some way.
+→ At the deployment of an MPAI technology, it follows that humanity
+has no further ability prevent human extinction from occurring.
+Since these deployment events correspond to successively smaller cate-
+gories of AI systems having been in active deployment, if they occur they
+must occur in a sequence, as in Figure 3.
+Figure 3: timeline of hypothetical deployment events
+Note in particular thatTtrans can be less thanTprep in a scenario where
+a transformative AI system becomes prepotent only after the system is in
+active deployment, andTprep can be less thanTMPAI in a scenario where a
+prepotent AI system becomes misaligned only after the system is in active
+deployment.
+2.5 Human fragility
+There are numerous pathways through which the deployment of a prepotent
+AI system could be unsurvivable to humanity. In short, the reason is that
+many possible transformations of the Earth would render it unsurvivable
+to humans, and prepotent AI technology by deﬁnition would globally and
+unstoppably transform the Earth.
+To see this, ﬁrst observe that the physical conditions necessary for hu-
+mans to survive are highly speciﬁc, relative to the breadth of environments
+inwhichmachinescanoperate.Forinstance,considertheavailabilityofoxy-
+gen in the atmosphere, availability of liquid water, absence of many other
+compounds that would be noxious to breathe or drink, radiation levels,
+air pressure, temperature, and the availability of highly complex digestible
+food sources. Each of these is a physical feature of humanity’s surroundings
+which, if transformed signiﬁcantly, would be unsurvivable. By contrast, ma-
+chines can already be designed to operate under the ocean, in space, and
+on Mars. Humans can also visit these places, but only with the help of
+machines to maintain safe conditions for the human body.
+Next, recall that the deployment of a prepotent AI technology by def-
+inition brings about changes to the Earth at a global scale, in a manner
+that humans cannot reverse or stop. At ﬁrst such changes might not result
+in inevitable human extinction. However, many vectors of change would, if
+compounded over time, end up violating one of the many physical, chemi-
+cal, and biological prerequisites needed for human survival. Over the past
+century it has become clear that human-driven changes to the Earth have
+17
+[[p18]]
+the potential to destroy the human species as a side eﬀect. The variety of
+possible AI-driven changes expands and accelerates this potential. While
+any particular pathway to unsurvivability is unlikely, the likelihood that
+some such pathway could obtain is much higher, because of the many con-
+ditions which, if violated, would end human existence. This conclusion has
+been argued by numerous others, including Yudkowsky (2008a), Shulman
+(2010), Shanahan (2015), and Bostrom (2018).
+Of course, it is not logically impossible for humans to survive the de-
+ployment of a prepotent AI technology. Preserving conditions necessary for
+human survival means operating within certain limits, and if the creators of
+the technology were collectively mindful of human extinction as a potential
+side eﬀect, perhaps great care and coordination may have been undertaken
+toensurethoselimitswouldbepermanentlyenforced.Onemighteventhink
+the conditions for human survival are relatively easy to maintain, because
+they have been maintained for at least as long as humanity has existed.
+However, it is reasonable to expect that the deployment of anarbitrarily
+generated prepotent AI system would most likely be unsurvivable to hu-
+mans if deployed, just as the conditions of an arbitrarily generated planet
+would be unsurvivable to humans.
+This raises a key question regarding the danger of prepotence: how dif-
+ﬁcult is it to ensure that the deployment of prepotent AI technology would
+be survivable to humans? Certainly we humans could all agree to never cre-
+ate or allow the development of prepotent AI technology in the ﬁrst place,
+but this is not an answer to the question at hand: conditional on the de-
+ployment of a prepotent AI technology, what is the chance that humanity
+would be unable to survive? In statistical terms, this is a question about
+the distribution from which the prepotent AI technology would be drawn,
+and that distribution itself is a function of the eﬀort humanity collectively
+puts into constraining AI development through coordinated safety eﬀorts.
+For instance, if the AI research community as a whole became deeply en-
+gaged in the technical challenge of preserving human existence, perhaps
+that would be enough to eventually relinquish control of the Earth to pre-
+potent AI technology while maintaining survivable conditions for humans.
+Would a lesser degree of care suﬃce?
+An answer to this question is beyond the scope of this report. It would
+be a claim relating the fragility of human existence with the coordinated
+aptitude of the worldwide AI research and development community.
+On one hand, Perrow’s theory ofNormal Accidents (Perrow, 1984)
+would imply that if AI technology turns the world as a whole into a “tightly
+coupled complex system”, then catastrophic failures should be expected by
+default. On the other hand, the literature onhighly reliable organizations
+(LaPorte, 1996; Roberts and Bea, 2001a) is suggestive that well-managed
+hazardous systems can operate for periods of decades without incident.
+Could humans ever succeed in developing prepotent AI technology that
+would operate as safely as a highly reliable human organization, over the
+indeﬁnite future?
+Attempting this would seem an unnecessary risk from many perspec-
+tives; why not build highly beneﬁcial non-prepotent AI instead?
+In any case, perhaps reﬂecting on the fragility of human beings could
+do some good toward motivating the right kinds of work. To that end, we
+encapsulate the above discussion in the following thesis:
+18
+[[p19]]
+The Human Fragility Argument.Most potential future states
+of the Earth are unsurvivable to humanity. Therefore, deploying a
+prepotent AI system absent any eﬀort to render it safe to humanity
+is likely to realize a future state which is unsurvivable. Increasing
+theamount andqualityofcoordinatedeﬀort torendersucha system
+safe would decrease the risk of unsurvivability. However, absent a
+rigorous theory of global human safety, it is diﬃcult to ascertain the
+level of risk presented by any particular system, or how much risk
+could be eliminated with additional safety eﬀorts.
+With this argument in mind, we next consider the added complexity intro-
+duced by a multiplicity of human stakeholders delegating to a multiplicity
+of AI systems.
+2.6 Delegation
+Throughout this report, the relationship between humans and AI systems is
+viewed as one ofdelegation: when some humans want something done, those
+humans can delegate responsibility for the task to one or more AI systems.
+From the perspective of the AI systems, the relationship would be one of
+assistance directed toward the humans. However, to avoid dependence of
+our arguments upon viewing AI systems as having a “perspective”, we treat
+humans as the primary seat of agency, and view the humans as engaged in
+delegation.
+Human/AI delegation becomes more complex as the number of humans
+or AI systems increases. We therefore adopt the following terminology for
+indicating the number of human stakeholders and AI systems in a hu-
+man/AI delegation scenario. The number of humans is always indicated
+ﬁrst; as a mnemonic, remember that humans come before AI: in history,
+and in importance!
+• Single(–human)/single(–AI system) delegationmeans delega-
+tion from asingle human stakeholderto asingle AI system(to pursue
+one or more objectives).
+• Single/multi delegation means delegation from a single human
+stakeholder to multiple AI systems.
+• Multi/single delegation means delegation from multiple human
+stakeholders to asingle AI system.
+• Multi/multi delegation means delegation from multiple human
+stakeholders to multiple AI systems.
+In this taxonomy, the notion of asingle human stakeholder refers to
+either a single natural human person, or a single human institution that is
+suﬃciently internally aligned and organized that, from the perspective of
+an AI system, the institution can be modeled as a single human. It remains
+an open research question to determine when and how a human institution
+should be treated as a single human stakeholder.
+What should be viewed as a collection of distinct interacting AI systems,
+versus a single composite AI system? In some situations, both views may
+be useful. This consideration is deferred to the beginning of Section 6.
+19
+[[p20]]
+2.7 Comprehension, instruction, and control
+Throughout this report, three human capabilities are viewed as integral to
+successfulhuman/AIdelegation: comprehension,instruction,and control,as
+deﬁned below. This focus on maintaining human capabilities serves to avoid
+real and apparent dependencies of arguments upon viewing AI systems as
+“agents”,andalsodrawsattentiontohumansasresponsibleandaccountable
+for the systems to which they delegate tasks and responsibilities.
+Comprehension: Human/AI comprehension refers to the human
+ability to understand how an AI system works and what it will do.
+Debuggers, static analysis, and neural net visualization tools are among
+present-day methods for improving human/AI comprehension. Comprehen-
+sion helps us reason about how an AI system will respond to an instruction
+before deploying it with that instruction, a key capability for reducing risks.
+Instruction: Human/AI instruction refers to the human ability to
+convey instructions to an AI system regarding what it should do.
+For a human to derive useful work from an AI system, there must be
+some conveyance of information or knowledge from the human about what
+the human would ﬁnd useful, in a manner that steers the behavior of the AI
+system toward that work. This conveyance, or “instruction”, could take any
+number of forms, e.g., code written by the system’s creators, recorded data
+about human history, real-time interactions with humans during training
+or deployment, keyboard input from a human user, or a direct neurological
+link with the user. Some of these channels of human/AI instruction may be
+used to control and modulate the others. Eﬀective instruction involves not
+only ensuring a ﬂow of information from the human to the AI system, but
+also knowing what information to put into which channels, and ensuring
+the information aﬀects the AI system’s behavior as needed.
+Just as some programming languages are more diﬃcult to write than
+others, there will always be some available forms of human/AI instruction
+that are more eﬀective than others. For example, methods that are highly
+tolerant of errors in human judgement or transcription will be easier to
+use than methods highly sensitive to human error. In any case, human/AI
+instructions are bound to fail from time to time.
+Control: Human/AI control refers to the human ability to retain
+or regain control of a situation involving an AI system, especially in
+cases where the human is unable to successfully comprehend or in-
+struct the AI system via the normal means intended by the system’s
+designers.
+Shuttingdown,repairing,ordismantlinganAIsystemarewaysinwhich
+humans can retain control of an AI system’s operation even when the com-
+munication abstractions of comprehension and instruction are not working
+well.
+Of course, few present-day machines could not be safely shut down or
+destroyed by their owners if so desired. However, some machines have no
+owner, such as the internet, and are not so easy to shut down by legiti-
+mate means. If real-world AI capabilities ever approach the potential for
+prepotence, it may become very important for humans to retain safe and
+legitimate means to carry out such interventions on AI systems.
+20
+[[p21]]
+Instruction versus control. Where should one draw the distinction
+between “instruction” and “control”? For instance, one could argue that an
+action like «unplug the power» is an “instruction” for turning a machine oﬀ,
+and that the laws of physics are the “interpreter” ensuring the instruction is
+followed. However, in this framing, the “communication channel” comprised
+by the «unplug» mechanism is certainly of a diﬀerent design and purpose
+than the usual mouse, keyboard, and voice instruction channels. In par-
+ticular, the «unplug» channel has the power to override any instructions
+from the other channels. So, even if one wishes to view control as a kind of
+instruction, it should be treated as a fairly special case, with the purpose
+and capacity to override other instructions.
+2.8 Multiplicity of stakeholders and systems
+When ﬁrst beginning to analyze existential risk from AI development, it
+may be tempting—and perhaps conceptually simpler—to focus on sin-
+gle/single delegation. Indeed, if AI technology brings about a human ex-
+tinction event, one might easily argue that the system “did not do what
+humans would have wanted”, and the task of making an AI system do what
+even a single human wants is still a diﬃcult challenge in many domains.
+Perhaps for this reason, much of the technical research to date that is for-
+mally or informally cited as relevant to catastrophic risks from AI—under
+such labels as “AI safety”, “AGI safety” or “long-term AI safety”—has been
+focussed primarily on single/single delegation. (Section 10.1 will give a more
+detailed overview of the literature.)
+Focusing entirely on single/single delegation can be misleading, how-
+ever. There are powerful social and economic forces that can transform
+a single/single delegation scenario into a multi/multi delegation scenario.
+First, note that there are numerous pathways through which a single/single
+delegation scenario with any powerful AI system (such as a prepotent or
+near-prepotent AI system) can become a multi/single scenario:
+a) Outside stakeholders will have a strong motivation to seek to own
+and/or share control of the system, because of its potential for impact.
+b) The creators of the system might encounter any number of disagree-
+ments regarding how best to use the system. These disagreements
+might not have been considered in advance, especially if the creators
+were not conﬁdent they would succeed in developing the system, or
+did not have a clear understanding of how the system would end up
+working when they began their partnership. Facing the heightened
+stakes of this increased potential for impact could lead to a splin-
+tering of opinions about what to do next. So where previously the
+creators might have acted as single uniﬁed stakeholder, this might
+not remain the case.
+These pathways lead from single/single to multi/single delegation scenarios.
+Next, consider how a multiplicity of AI systems can result:
+c) The creators of any powerful AI system have economic incentives to
+duplicate and sell instances of the system to outside buyers.
+d) Contemporary research groups, upon observing the capabilities of a
+powerful AI system, may also have strong intellectual and economic
+incentives to replicate its capabilities.
+21
+[[p22]]
+These pathways lead from single/single and multi/single to multi/multi
+delegation scenarios. In summary:
+The multiplicity thesis.Soon after the development of methods
+enabling a single human stakeholder to eﬀectively delegate to a sin-
+gle powerful AI system, incentives will likely exist for additional
+stakeholders to acquire and share control of the system (yielding
+a multiplicity of engaging human stakeholders) and/or for the sys-
+tem’s creators or other institutions to replicate the system’s capa-
+bilities (yielding a multiplicity of AI systems).
+2.8.1 Questioning the adequacy of single/single delegation
+Themultiplicitythesispresentsasourceofaddedcomplexityinmaintaining
+existential safety, which might not be well addressed by safety research
+focussed on single/single delegation.
+How important is it to prepare for this complexity before it arises?
+That is to say, how important is it to begin work today on single/multi,
+multi/single, and multi/multi delegation solutions, from an existential
+safety perspective?
+An optimistic view. One view is that, given the development of near-
+prepotent AI systems for single/single delegation, future humans and hu-
+man institutions would be able to use non-technical means to coordinate
+their use of those systems to ensure that either prepotent AI systems are
+never developed, or that the systems will maintain existential safety if they
+are developed.
+In this view, there is no pressing existential need to develop multi/multi
+delegation solutions prior to the development of near-prepotent AI systems.
+As evidence for this view, one can point to any number of past suc-
+cesses of human coordination in the use and governance of technology. For
+instance, there is the Montreal Protocol banning the production of CFCs,
+which was fully signed in 1987, only 14 years after the scientiﬁc discovery
+in 1973 that CFSs are damaging to the ozone layer (Murdoch and Sandler,
+1997;AndersenandSarma,2012).Foranexampleofinternationalcoordina-
+tion in computer science speciﬁcally, consider the creation and governance
+of internet protocols such as TCP/IP by the Internet Engineering Task
+Force—a community with no formal organizational hierarchy—by “rough
+consensus and running code” (Russell, 2006; Resnick, 2014).
+A pessimistic view. Alternatively, it might be that future humans
+would struggle to coordinate on the globally safe use of powerful sin-
+gle/single AI systems, absent additional eﬀorts in advance to prepare
+technical multi/multi delegation solutions.
+For a historical analogy supporting this view, consider the stock market
+“ﬂash crash” of 6 May 2010, viewed as one of the most dramatic events
+in the history of ﬁnancial markets (Madhavan, 2012). The ﬂash crash was
+a consequence of the use algorithmic stock trading systems by competing
+stakeholders (Easley et al., 2011; Kirilenko et al., 2017). If AI technology
+signiﬁcantly broadens the scope of action and interaction between algo-
+rithms, the impact of unexpected interaction eﬀects could be much greater,
+and might be diﬃcult to anticipate in detail. World War I is a particularly
+horriﬁc example where technology seemed to outpace the strategic think-
+ing of human beings (speciﬁcally, military and state leaders) regarding how
+22
+[[p23]]
+to use it (Gray, 2013, Chapter 5: The nineteenth century, II: technology,
+warfare and international order). Military tactics lagged behind military
+technology, such as the machine gun and mustard gas, that had been de-
+veloped over the preceding century, leading to an unprecedented number of
+casualties at war.
+As a motivating thought experiment involving rapid and broadly scoped
+multi-agent interaction, imagine that 10 years from today, 50% of all hu-
+mans will be able to think one thousand times faster than they can today.
+Such a sudden change in human capabilities might be incredibly pos-
+itive, dramatically accelerating progress in science, technology, diplomacy,
+and perhaps even multi/multi delegation research. But the result could also
+be disastrous. First, if the areas of the international economy most accel-
+erated by intelligence enhancement turned out to involve the production
+of pollution or similar side eﬀects, a rapid physical destruction of the en-
+vironment could result. Second, perhaps the rapidly changing social and
+geopolitical landscape could lead to a proliferation of attempts to seize po-
+litical or economic power via socially or physically destructive tactics or
+warfare.
+The proliferation of powerful single/single AI delegation solutions could
+conceivably have a similar destabilizing eﬀect upon society and the environ-
+ment. Indeed, some have argued that artiﬁcial intelligence and computing
+technology more broadly has already outpaced our collective ability to make
+good decisions about how it is used (Hecht et al., 2018).
+A precautionary view. Of course, only one future will obtain in real-
+ity. Which of the above views—optimism or pessimism—will be closer to
+the truth? This question obscures the role of pessimism in preparedness:
+we all can exercise some agency in determining the future, and the most
+useful form of pessimism is one that renders its own predictions invalid by
+preventing them.
+In any case, it is well beyond the scope of this report to determine
+for certain whether future humans and human institutions will succeed
+or fail in the judicious use of powerful single/single delegation solutions.
+And, maintaining a diversity of views will enable planning for a diversity of
+contingencies. Thus, in place of a prediction, we instead posit the following
+value judgement:
+Multi/multi preparedness. From the perspective of existential
+safety in particular and societal stability in general, it is wise to
+think in technical detail about the challenges that multi/multi AI
+delegation might eventually present for human society, and what
+solutions might exist for those challenges,before the world would
+enter a socially or geopolitically unstable state in need of those
+solutions.
+We will return to this discussion in Section 7.
+2.9 Omitted debates
+To maintain a suﬃciently clear conceptual focus throughout, a number of
+debates have been intentionally avoided in this document:
+• What about global catastrophes that would not result in human ex-
+tinction? For concreteness, and to avoid digressions on what would
+or would not constitute a global catastrophe, this report is focussed on
+23
+[[p24]]
+the simpler-to-agree-upon concept of human survival. Nonetheless, it
+does seems likely that many present-day approaches relevant to avert-
+ing extinction risk should also be applicable to averting other events
+that would broadly be considered global catastrophes. The reader is
+therefore invited to use their own judgement to determine where ar-
+guments or methods in this report can be generalized from human
+extinction prevention to global catastrophic risk prevention.
+• What constitutes a human? Even the concept of human survival is
+subject to some debate regarding its meaning, because of potential
+future ambiguity in what constitutes a human being. For instance,
+Moravec (1988, “Transmigration”, Chapter 4) describes a future in
+which humans can replace themselves by digital emulations their own
+minds, and Hanson (2016) envisions a future economy where most
+work is carried out by human-like emulations that have been modi-
+ﬁedandselectedforperformingvaluablework.Ifnobiologicalhumans
+remain, but human emulations continue to operate, should humanity
+be considered extinct? This report does not delve into that question,
+because the authors suspect that most present-day approaches to ex-
+istential safety will are not greatly aﬀected by the answer, although
+it could still become important in the future.
+• What about other negative side eﬀects of AI development?Many ideas
+and arguments considered in this report could be applied to averting
+safety and ethical failures that would by no means be considered
+global catastrophes. The reader is invited to use their own judgement
+to consider what other negative side eﬀects of AI development can
+be avoided and are worth the cost of avoidance. As discussed in the
+Preface, omissions of other safety and ethical issues from this report
+is not intended by the authors as an appraisal of their importance or
+relevance to society.
+• What constitutes “beneﬁcial” AI?A closely related topic to reducing
+existential risk from artiﬁcial intelligence—and which does not en-
+tirely ﬁt within the scope of this report—is that of developingprov-
+ably beneﬁcialAI systems, i.e., AI systems which provably beneﬁt the
+whole of human society. At a technical level, provable beneﬁcence and
+existential safety are tightly intertwined:
+1. For any broadly agreeable deﬁnition of “beneﬁt”, an AI system
+that provably beneﬁts all of humanity should, by most deﬁni-
+tions, preserve humanity’s ability to avoid extinction.
+2. Conversely, preventing existential risk requires attending to
+global-scale problems and solutions, which might yield math-
+ematical and algorithmic techniques for ensuring other global
+beneﬁts as well as reducing other global risks.
+Despite these relationships, provable beneﬁcence is a more general
+problem than existential safety. To address provable beneﬁcence, one
+would need to address or dissolve what it really means to beneﬁt hu-
+manity, given that individual human preferences are ill-deﬁned, plas-
+tic, and not in universal agreement. By contrast, it might be easier
+to reach agreement on what scenarios constitute human extinction
+events, or at least to agree upon the general goal of avoiding all such
+scenarios. So, this this report explicitly avoids delving into any debate
+regarding the meaning of “provable beneﬁcence”.
+24
+[[p25]]
+3 Risk-inducing scenarios
+How could human society make the mistake of deploying AI technology
+that is unsurvivable to humanity? There are many hypothetical scenario
+types to consider, each of which might call for diﬀerent forms of preventive
+measures. In this report, scenarios are organized intorisk typesthat will be
+outlined in this section. The risk types are related via the causal diagram
+in Figure 4.
+• “Tier 1” refers to risks that are 1 degree of causal separation from
+unsurvivability in the diagram, whereas
+• “Tier 2” refers to risks that would generate Tier 1 risks, and are hence
+2 degrees of causal separation from unsurvivability.
+Figure 4: Relationship between risk types considered in this report; each risk type is described
+as its own subsection.
+3.1 Tier 1: MPAI deployment events
+This section outlines speciﬁc scenarios wherein an MPAI deployment event
+could occur.2 Because this report is targeted at AI developers, the MPAI
+deployment events considered here have been classiﬁed according to the fol-
+lowing exhaustive decision tree centered on the hypothetical AI developers
+involved in building the MPAI:
+a. Type 1a risk (uncoordinated MPAI development).Was there
+no single AI development team who was primarily responsible for
+developing the MPAI technology? If so, classify the MPAI deployment
+event as arising fromuncoordinated MPAI development.
+Otherwise, in the remaining risk types one can assume the developers
+of the MPAI constitute a single team, and further subdivide scenarios
+based on the relationship of that team to the MPAI deployment event:
+b. Type 1b risk (unrecognized prepotence).Prior to the technol-
+ogy being deployed and prepotent, did the development team fail to
+recognize that the technology would be or become prepotent? If so,
+classify as anunrecognized prepotenceevent; otherwise consider:
+2Such scenarios have been considered extensively by philosopher Nick Bostrom
+(Bostrom, 2014) under more speciﬁc assumptions deﬁning “superintelligent” AI systems.
+25
+[[p26]]
+c. Type 1c risk (unrecognized misalignment).Prior to the technol-
+ogy being deployed and misaligned, did the development team fail to
+recognize that the technology would be or become misaligned? If so,
+classify as anunrecognized misalignmentevent; otherwise consider:
+d. Type 1d risk (involuntary MPAI deployment).Did the MPAI
+deployment event occur without the voluntary permission of the de-
+velopment team responsible for creating it? If so, classify as aninvol-
+untary MPAI deploymentevent; otherwise classify as:
+e. Type 1e risk (voluntary MPAI deployment).The MPAI de-
+ployment was voluntarily permitted by its developers.
+The remainder of Section 3.1 examines these risk types in more detail.
+3.1.1 Type 1a: Uncoordinated MPAI development
+This risk type comprises MPAI deployment events that arise fromuncoor-
+dinated MPAI developmentin the sense that no one research team is solely
+responsible for having developed the MPAI.
+As an example of uncoordinated MPAI development, suppose Group
+A deploys a powerful AI system for managing an online machine learning
+development system, which is not prepotent because it lacks some key cog-
+nitive ability. Then, suppose that around the same time, Group B releases
+an open source algorithm that Group A’s system learns about and uses to
+acquire the key cognitive ability, thereby becoming prepotent.
+In this situation, because no coordinated eﬀort has been made to align
+the resulting prepotent AI system with human survival, it is relatively likely
+to be misaligned, by the Human Fragility Argument (Section 2.5). And,
+one could argue that neither Group A nor Group B was solely responsible
+for having developed the MPAI; rather, they failed to coordinate on the
+combined impact of their development and deployment decisions. Even if
+some members of each group were aware that the result of their actions
+might result in MPAI development, perhaps the local incentives of each
+group were to continue working on their products nonetheless. A similar
+dynamic can be seen in the way separate countries tend to follow local
+economic incentives to continue producing carbon emissions, despite the
+potentially dangerous combined impact of those emissions.
+Avoiding this risk type calls for well-deliberated and respected assess-
+ments of the capabilities of publicly available algorithms and hardware, ac-
+counting for whether those capabilities have the potential to be combined
+to yield MPAI technology. Otherwise, the world could essentially accrue “AI
+pollution” that might eventually precipitate or constitute MPAI.
+The remaining four Tier 1 risk types will focus on the knowledge and
+intentions of “the developers” of a hypothetical MPAI technology, such as
+whether the prepotence or misalignment of the technology was known or
+intended in advance. By contrast, for an MPAI deployment scenario where
+the developers of the technology are too poorly coordinated to have a clear
+consensus on whether it will be prepotent or misaligned, the present risk
+type—uncoordinated MPAI deployment—may be a better descriptor.
+3.1.2 Type 1b: Unrecognized prepotence
+This risk type comprises MPAI deployment scenarios where the prepotence
+of the relevant AI technology was unrecognized prior to it being deployed
+and prepotent.
+26
+[[p27]]
+Examples of this risk type can be divided into two natural sub-cases:
+• deployment, then prepotence:The AI technology in question is
+not prepotent at the time of its initial deployment, but later becomes
+prepotent in a manner that surprises its developers. For instance,
+this could happen if the developers are insuﬃciently informed of the
+system’s relationship with the world after its initial deployment, if
+they are informed but insuﬃciently attentive to the information, or if
+they are informed and attentive but unable to deduce that the system
+will become prepotent.
+• prepotence, then deployment:The AI technology in question is
+prepotent prior to its deployment, but the developers fail to recognize
+this at deployment time. For instance, this could happen if the devel-
+opers did not attempt to assess the prepotence of the technology, or
+somehow failed to complete an accurate assessment.
+These sub-cases share an important feature in common: an AI technology
+with unrecognized prepotence is relatively likely to turn out to be MPAI.
+For, suppose an AI development team deploys an AI technology that turns
+out to be or become prepotent in some way that they did not expect.
+Because of their faulty understanding of the system’s capacity for impact,
+their safety eﬀorts would have been undertaken under invalid assumptions.
+From there, by Section 2.5 there are numerous pathways through which the
+system’s unstoppable transformative impact might be unsurvivable. Hence,
+unrecognizedprepotencecomeswithanincreasedlikelihoodofunrecognized
+misalignment.
+Avoiding this risk type calls for a rigorous scientiﬁc theory to understand
+and recognize when an AI system might be or become prepotent. An impor-
+tant way in which the prepotence of an AI technology could go unrecognized
+is if the system exhibitsbehavior likely to obfuscate the full breadth of its
+capabilities, thereby prompting developers to mistakenly deploy it as a non-
+prepotent system. Such behavior could result from a selection process that
+favors AI systems that somehow obfuscate capabilities that humans would
+consider dangerous. Capability obfuscation could also arise from a system
+with social reasoning and planning capabilities that learns, in pursuit of
+real-world attainment of its assigned objective, to “work around" human
+measures to prevent the deployment of prepotent systems. The latter case
+could be viewed as an instance of “intentional deception” by the system,
+although attribution of intention is not necessary to describe this general
+class of phenomena. In any case, an adequate theory for understanding and
+recognizing prepotence must account for the possibility of such systems
+systematically obfuscating their prepotence.
+3.1.3 Type 1c: Unrecognized misalignment
+This risk type comprises MPAI deployment scenarios where the misalign-
+ment of the relevant AI technology is unrecognized by its developers prior
+to it being deployed and misaligned. Like unrecognized prepotence, unrec-
+ognized misalignment can occur whether the misalignment occurs before or
+after the technology is initially deployed.
+For example, suppose some team of AI developers build a prepotent
+AI system that they realize or suspect is prepotent, with the intention of
+using it for some positive and permanently transformative impact on the
+world.Thereissomeriskthatthedevelopersmightmistakenlyoverestimate
+the system’s alignment, and hence fail to recognize that it is or will become
+27
+[[p28]]
+MPAI. And, just as with prepotence, an important way misalignment could
+go unrecognized is if the system itself deceives humans into thinking it is
+aligned.
+Avoidingthisrisktypecallsforarigorousscientiﬁcdisciplineforaligning
+powerfulAIsystemswithhumaninterestsandexistence,andforrecognizing
+potential misalignment in deployed systems, including systems that may be
+able to systematically deceive humans regarding their misalignment.
+3.1.4 Type 1d: Involuntary MPAI deployment
+This risk type comprises MPAI deployment events that areinvoluntary on
+the part of the technology’s developers, i.e., occurring against the direct
+intentions of the team who developed the relevant AI technology.
+For example scenarios, let us focus on cases where the developers rec-
+ognize that the MPAI deployment event is forthcoming before it happens
+(since Types 1b and 1c risk already cover MPAI deployment events involv-
+ing unrecognized prepotence and unrecognized misalignment). These sce-
+narios can be further organized according to whether an MPAI technology
+becomes deployed (“release” events) or an already-deployed AI technology
+becomes MPAI (“conversion” events):
+1. MPAI release events (involuntary):An existing MPAI technol-
+ogy somehow becomes deployed without the voluntary consent of its
+developers. For instance, consider a well-meaning team of developers
+who have created an AI technology that they suspect is both pre-
+potent and misaligned, and are now conducting experiments on the
+technology to learn more about the risks it could present. In such a
+scenario, at least some security measures would likely be in place to
+prevent the technology from being deployed against the intentions of
+the developers, but those measures could fail in some manner. The
+failure could involve:
+(a) Accidental release:An existing MPAI technology is released
+accidentally by its development team, enabling others to de-
+ploy it without the developers’ consent. No one on the devel-
+opment team intentionally causes the release of the technology;
+it is merely a haphazard mistake on the part of the developers.
+This sort of event could be analogized to a nuclear power-plant
+meltdown: someone is responsible for the accident, but no one
+did it on purpose.
+(b) Unauthorized release: An existing MPAI technology is ob-
+tained by someone other than its developers, against the devel-
+opers wishes. For instance:
+i. Hackers obtain access to the technology’s code base and de-
+ploy it, perhaps without knowledge of its misalignment or
+prepotence.
+ii. Physical force is used to obtain access to the technology’s
+code base, such as by a military or terrorist group, who then
+go on to deploy the technology, perhaps without knowledge
+of its misalignment or prepotence.
+iii. A running instance of the AI technology acquires its own
+deployment as a goal, and ﬁnds a way to achieve deployment
+without its developers’ permission.
+28
+[[p29]]
+2. MPAI conversion events (involuntary):An AI technology is de-
+ployed and is later converted into MPAI by certain post-deployment
+events that were not intended by the technology’s developers.
+The conversion could be caused by interactions with the relevant AI
+system(s), or by failures entirely external to the system(s):
+(a) Conversion by uncontrolled interactions:The developers
+did not establish adequate controls for post-deployment inter-
+actions with the technology, and those interactions convert the
+technology into MPAI.
+(b) Conversion by external failures:Humanity’s collective ca-
+pacity to control or otherwise survive the impact of the technol-
+ogy somehow decreases after its deployment (say, due to a con-
+ﬂict between humans that destroys resources or coordination),
+and systems using the technology do not adjust their behavior
+accordingly, becoming MPAI by virtue of humanity’s increased
+vulnerability rather than by changes internal to the technology
+itself.
+Avoiding this risk type calls for measures enabling well-meaning AI de-
+velopers to recognize and prevent the use of their inventions in ways that
+might harm society.
+3.1.5 Type 1e: Voluntary MPAI deployment
+This risk type comprises scenarios where an MPAI deployment event is
+triggered voluntarily by the developers of the MPAI technology. Even if the
+majority of the AI research and development community develops methods
+that make it easy to align powerful AI systems with human interests and
+existence, and existing powerful AI systems are protected from falling into
+the wrong hands, it may be possible for some misguided persons to develop
+and deploy MPAI technology on their own for some reason. For example,
+1. Indiﬀerence:Persons unconcerned with the preservation of the hu-
+man species develop and deploy a powerful AI system in pursuit of
+values that will yield human extinction as an inevitable side eﬀect.
+2. Malice: A military or terrorist organization develops MPAI technol-
+ogy with the misguided hope of controlling it to threaten particular
+adversaries.
+3. Confusion: One or more AI developers that would not normally
+ignore or threaten human welfare becomes convinced to deploy an
+MPAI technology by morally confusing arguments. Perhaps the ar-
+guments are produced by other indiﬀerent or malicious persons, or
+perhaps by an AI system.
+Avoiding this risk type calls for measures to prevent powerful AI tech-
+nologies from being developed and deployed by misguided persons. Some of
+thesepreventivemeasurescouldalsoguardagainstinstancesofType1drisk
+(involuntary MPAI deployment) that would arise speciﬁcally from unautho-
+rized access to near-prepotent systems or code bases.
+29
+[[p30]]
+3.2 Tier 2: Hazardous social conditions
+This section examines types of social conditions that exacerbate the like-
+lihood of Tier 1 risks. Unlike the typology of Tier 1 risks, the following
+typology is non-exhaustive.
+3.2.1 Type 2a: Unsafe development races
+This risk type comprises scenarios wherein two teams are in competition to
+develop powerful AI systems with the hope that the more successful of the
+teams might achieve wealth or power from the deployment of their system,
+and where each team is motivated by their competitive incentives to take
+risks that would be considered irresponsible from a societal perspective.
+Even if each competing team knows about the challenges of aligning their
+systems with human existence, they might be tempted to divert resources
+away from safety measures in order to best the competition with superior
+capabilities.
+This sort of development race exacerbates the probability of Tier 1 risks
+(MPAI deployment events), speciﬁcally Type 1a, 1b, and 1c risks (uncoor-
+dinated MPAI development, unrecognized prepotence, and unrecognized
+misalignment). This conclusion has also been argued by Bostrom (2014)
+and Armstrong et al. (2016). Moreover, Type 1d risk (involuntary MPAI
+deployment) is increased because security measures against unauthorized
+or accidental deployments are more diﬃcult to implement in a hurry, to re-
+duce the chances of hazardous post-deployment interactions with the sys-
+tem. Finally, if one of the development groups is a military or terrorist
+organization, they might decide to deploy their technology in a desperate
+attempt to overthrow their competitors by force. This would constitute a
+Type 1e risk (voluntary MPAI deployment).
+Avoiding this risk type calls for measures to reduce incentives for com-
+peting AI development teams to take socially unacceptable safety risks in
+the course of developing and deploying their technology.
+3.2.2 Type 2b: Economic displacement of humans
+This risk type comprises scenarios wherein most human persons have no
+power to bid for the continued preservation of the human species, because
+humans have mostly been economically displaced by AI systems.
+The possibility of an unemployment crisis arising from automation has
+been discussed by numerous authors, e.g., Joy (2011), Ford (2013), Bryn-
+jolfsson and McAfee (2014), Brynjolfsson et al. (2014),
+Russell et al. (2015), Chace (2016), and Frey and Osborne (2017). A
+gradual replacement of human workers by AI systems could lead to an
+economy wherein most trade and consumption is carried out by non-human
+entities. This is a bleak future from the point of view of many, but not yet
+a global threat to human survival.
+To see how this trend would constitute an existential risk if taken far
+enough, consider a scenario where human institutions have all been out-
+competed and replaced by autonomous corporations. Such autonomous cor-
+porations could be deployed by idealistic individuals looking to increase
+transparency or eﬃciency in certain industries, such as ﬁnance, supply
+chain management, or manufacturing. Perhaps autonomous corporations
+could eventually also engage in primary resource industries such as mining,
+oil drilling, or forestry, which could supply raw materials to corporations
+in other industries. If some combination of corporations turned out to be
+30

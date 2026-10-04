@@ -1,0 +1,36 @@
+{
+  "verified_containment": {
+    "delta": 0.9,
+    "gain": 0.1,
+    "cooperation": 1.0,
+    "decisive_value": 100.0,
+    "punishment": 0.0,
+    "breakout_probability": 0.001,
+    "temptation": 0.09910000000000001,
+    "available_sanction": 0.8991,
+    "enforceable_breakout_bound": 0.009888888888888725,
+    "interpretation": "All quantities may remain fixed indefinitely; unchanged D and relative positions do not force enforcement failure. This is an incentive witness, not a claim of empirically feasible verification."
+  },
+  "noncompetitive_growth_channel": {
+    "10": {
+      "uncovered_share": 0.9892578125,
+      "survival": 0.931994690619119
+    },
+    "50": {
+      "uncovered_share": 0.9999999999999547,
+      "survival": 0.6235580827617635
+    },
+    "100": {
+      "uncovered_share": 1.0,
+      "survival": 0.37725642328351716
+    },
+    "500": {
+      "uncovered_share": 1.0,
+      "survival": 0.006771961524503751
+    },
+    "1000": {
+      "uncovered_share": 1.0,
+      "survival": 4.449505836063602e-05
+    }
+  }
+}

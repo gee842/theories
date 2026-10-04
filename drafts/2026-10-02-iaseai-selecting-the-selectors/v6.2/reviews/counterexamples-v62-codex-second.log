@@ -1,0 +1,25 @@
+private elasticity: {'rpr': 0.24999999999053554, 'claimed_relative': 0.12499999999526777, 'actual_relative': 0.1874999999956772, 'net_relative': 0.18749999999290165, 'common': -0.06250000000040945}
+balanced relative derivative partial sum 5 0.77837132009757
+balanced relative derivative partial sum 10 1.8005124736916662
+balanced relative derivative partial sum 20 27.477426951496803
+balanced relative derivative partial sum 30 122097.22131210277
+balanced relative derivative partial sum 40 1170473098869.5261
+claimed relative and correct common price: 1.3333333333333348
+nonlinear relative value / epsilon 0.001 472.93672575456213
+nonlinear relative value / epsilon 1e-06 193927.49340597616
+nonlinear relative value / epsilon 1e-09 103731811.53747179
+nonlinear relative value / epsilon 1e-12 62564288237.67167
+theta endpoint: -1.0
+delayed_detection {'printed': -0.006, 'actual': 0.002105724792, 'printed_bound': 0.6444444444444445, 'actual_bound': 0.63625155603352}
+repaired_falling_floor [0.0050000000000000044, 0.0026019514751995164, 5.326968672294746e-05, 0.0, 0.0, 0.0]
+cheap_talk_ideal_gap exact identity confirmed
+cubic selection: {'initial_share': 0.001, 'limit_share': 0.0016476524035392314, 'host_lower_bound_from_V0_1': 0.9973637561543373, 'raw_advantage_at_1e12': 27.63102111592955}
+certified yet currently captured: {'row_sum': 0.5, 'x0': 0.9, 'x50': 0.9999999999999998, 'z50': 1.4097959895689502, 'log_odds50': 36.21762562044121, 'x1000': 8.875979744071778e-152}
+zero tax / equal sanction: 50% unsafe stays 50% unsafe under replicator selection
+gain-one surviving core: {'x0': 0.99, 'z0': 0.99, 'x1000': 0.0, 'z1000': 5.73e-322}
+human capacity recovery: {'duration': 4.700036292457356, 'recovered': 0.5}
+signal mixing: {'imitation': 0.6666666666666667, 'receiver': 0.25, 'posterior': 0.6}
+dwell infima for shares .9,.99,.999: [3.4459302574396133, 5.858956053853035, 8.171929344534874]
+informative independent SPRT that never stops: {'lower_boundary': -4.931592086755803, 'all_paths_lower': -0.12770144917616608, 'all_paths_upper': 0.1224849575797974, 'upper_boundary': 4.5980016965094785}
+summable hazard boundary: one hazard=1 makes survival zero
+All independent second-review assertions passed.

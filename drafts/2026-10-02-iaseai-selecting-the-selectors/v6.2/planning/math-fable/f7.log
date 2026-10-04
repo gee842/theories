@@ -1,0 +1,36 @@
+(A) delegatelock: n=3, s=1, q_L=0, psi0=0, psi1=.015
+   p=0.1: Phi_D/Phi_N for k=0,1,2 others delegating: [1.002589, 1.000973, 0.999275]; pure equilibria (number of delegators): [2]
+   p=1.0: Phi_D/Phi_N for k=0,1,2 others delegating: [1.4775, 1.576, 1.641667]; pure equilibria (number of delegators): [3]
+   -> with p<1 the ratio falls with k (substitutes): the only equilibrium has two delegators; with p=1 it rises (complements): corners
+(B) Proposition 6.8
+   printed example (c_b=.99 fixed, q_c=2^-(t+2)): residual -> 0.001 per period, not summable; survival to 200: 0.473, to 20000: 1.18e-09
+   summable example (c_b,t = 1 - 2^-(t+1), q_c = 2^-(t+2)): survival to 200: 0.5101, to 20000: 0.5101 (bounded away from zero)
+   the quoted 0.63 needs the sum to start at t=1: from t=1 0.630; from t=0 0.473
+(C) Proposition 6.11(3): n=3, L_e=L_c=1, psi0=0, s_t=2^t, Delta psi_t=2^-t
+   t=0: objective at iota=1 -1.6667, best on grid -1.6667 -> full delegation is a best response; realized hazard n*Delta psi = 3.0000
+   t=1: objective at iota=1 -1.5417, best on grid -1.5417 -> full delegation is a best response; realized hazard n*Delta psi = 1.5000
+   t=2: objective at iota=1 -1.2448, best on grid -1.2448 -> full delegation is a best response; realized hazard n*Delta psi = 0.7500
+   t=3: objective at iota=1 -0.9967, best on grid -0.9967 -> full delegation is a best response; realized hazard n*Delta psi = 0.3750
+   t=4: objective at iota=1 -0.8427, best on grid -0.8427 -> full delegation is a best response; realized hazard n*Delta psi = 0.1875
+   t=5: objective at iota=1 -0.7575, best on grid -0.7575 -> full delegation is a best response; realized hazard n*Delta psi = 0.0938
+   t=6: objective at iota=1 -0.7128, best on grid -0.7128 -> full delegation is a best response; realized hazard n*Delta psi = 0.0469
+   t=7: objective at iota=1 -0.6899, best on grid -0.6899 -> full delegation is a best response; realized hazard n*Delta psi = 0.0234
+   realized risk summed from t=5: 0.1875 = 3/16; from t=0 it is 6.0 (the t=0 hazard alone is 1)
+(D) Theorem 10.5(1): logistic host rho=.05, h_V=.08, race share x0=.99 declining by replicator at rate Delta*(e_max-e_min), V0=1 (HO's model: e_min=0, e_max=1)
+   e_min=0.0: Delta=.08 -> transient minimum 0.1397 (text 0.14 for e_min=0), long-run level 1.000 = 1 - h e_min/rho
+      floor 0.2: Delta_min = 0.108 (viable iff Delta >= Delta_min; below it the logistic host dips under the floor and recovers)
+      floor 0.3: Delta_min = 0.165 (viable iff Delta >= Delta_min; below it the logistic host dips under the floor and recovers)
+      floor 0.5: Delta_min = 0.355 (viable iff Delta >= Delta_min; below it the logistic host dips under the floor and recovers)
+   e_min=0.1: Delta=.08 -> transient minimum 0.1136 (text 0.14 for e_min=0), long-run level 0.840 = 1 - h e_min/rho
+      floor 0.2: Delta_min = 0.125 (viable iff Delta >= Delta_min; below it the logistic host dips under the floor and recovers)
+      floor 0.3: Delta_min = 0.192 (viable iff Delta >= Delta_min; below it the logistic host dips under the floor and recovers)
+      floor 0.5: Delta_min = 0.414 (viable iff Delta >= Delta_min; below it the logistic host dips under the floor and recovers)
+   -> the viability clause of 10.5(1) is a margin condition on every host; on the logistic host the shortfall is recoverable, on a threshold host permanent
+(E) Proposition 10.3(2): sharing divided among all n vs the n-1 others; numerical symmetric equilibrium (n=4, r=1, c=1, Om_e=1, Om_s=0, rho=1)
+   beta=0.3: Nash intensity, shared among all n: 0.13125 vs r Om_eff (n-1)/(n^2 c) with Om_eff=(1-beta)Om_e: 0.13125; among the n-1 others: 0.11250 vs Om_eff=(1-beta n/(n-1))Om_e: 0.11250
+   beta=0.6: Nash intensity, shared among all n: 0.07500 vs r Om_eff (n-1)/(n^2 c) with Om_eff=(1-beta)Om_e: 0.07500; among the n-1 others: 0.03750 vs Om_eff=(1-beta n/(n-1))Om_e: 0.03750
+(F) Theorem 4.12: (b),(c) hold (certificate fails, x_ev -> 1) yet (e) fails: capture arrives after the host passes the alarm band
+   capture midpoint 0.0: x_ev crosses threshold 0.857 at t=3.6; alarm at None; floor crossed at 21.0 -> silent crossing (e holds)
+   capture midpoint 20.0: x_ev crosses threshold 0.857 at t=23.6; alarm at 7.4; floor crossed at 21.0 -> alarm before the floor (e fails although x_ev -> 1)
+   capture midpoint 45.0: x_ev crosses threshold 0.857 at t=48.6; alarm at 7.4; floor crossed at 21.0 -> alarm before the floor (e fails although x_ev -> 1)
+(G) Proposition 6.9: six checks f=.9, common blind spot rho_cc: catch rate (1-rho_cc)(1-.1^6): rho_cc=0: 1.000, rho_cc=0.05: 0.950, rho_cc=0.3: 0.700 -> row sums (capture) and error correlation are separate quantities

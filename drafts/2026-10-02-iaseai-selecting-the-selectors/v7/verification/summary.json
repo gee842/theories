@@ -1,0 +1,44 @@
+{
+  "version": "V7",
+  "date": "2026-10-04",
+  "structure": "passed",
+  "full_default_suite": {
+    "exit_code": 0,
+    "passed": 231,
+    "failed": 0,
+    "blocks": 43,
+    "new_RV_groups": 18,
+    "duration_seconds": 314,
+    "log": "checks_v7.log",
+    "sha256": "22eb086a84e457a13c5a3632eac2ce914012b032aa787f2eec29084cdde21197"
+  },
+  "preservation": {
+    "v62_manifest_files": 412,
+    "changed_v62_files": [],
+    "stable_declarations": 128,
+    "numbered_results_and_tables": 112,
+    "equations": 16,
+    "keys_kinds_numbers_files_unchanged": true,
+    "ren_claims_sections_8_9_verbatim": true,
+    "core_sentences_checked": 1803,
+    "low_containment_items_reviewed": 13
+  },
+  "assembly_reproducible": true,
+  "document_sha256": {
+    "CHANGELOG.md": "2a9686e4d955eb487c5a9c68e53ff32aacb04737dc6f031085a7ec7a50a7e09f",
+    "CLAIMS.md": "b4ada2160650e8e5510e9917aff9f99414da17c4edd382e757b9c59054b54975",
+    "DISCUSSION.md": "dab8e9df17422f42b834eaca913312e03029b928ffe5450d499d90eddecca082",
+    "EVIDENCE.md": "66171dbf0d1db49405e795b54063fced4bdfff2832216c1adb10c3f9374280f7",
+    "LEDGER.md": "ee701190453d5c9ff80933f1c4695036b88838fad7370e7a67bde2429c585424",
+    "README.md": "e6011a82a916fab158af737bfd0b08ef7f8bdbd24a04e3758937c6bd6762f9d2",
+    "START-HERE.md": "3603eb63a568c89700b31c05554bc680c51932f1bbda9c030a9e723b6556bb88",
+    "SUPPLEMENT.md": "35450edc8dc04fd3c174539b1fa75bde8ffcf52aec16e77e7197e4a86e61d901",
+    "TESTS.md": "726ccd898f384bdf2e321d12a4f4813fa85665fd7f843f45bf178cf7ed8905c0",
+    "THEORY.md": "a52592f6f16e96d2830461cd9ae69ba658e3be75382a0fe8b954e14c87afb1cf"
+  },
+  "limits": [
+    "Model computations and structure checks, not certification of every proof.",
+    "Empirical interfaces and institutional performance remain unverified.",
+    "No independent human review of V7."
+  ]
+}

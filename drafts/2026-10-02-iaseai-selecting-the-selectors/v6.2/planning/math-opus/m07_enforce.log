@@ -1,0 +1,35 @@
+m07  The enforcement condition with explicit actions (Prop 5.4 key `enforce`; R4 in Prop 9.1 key `require`).
+
+(A) per-deviation breakout (Fable): C=3, D=6, v=1, delta=.9
+   deviation A: g=1,  p_d=.1: temptation 0.370, remaining sanction 1.620 -> deterred
+   deviation B: g=.2, p_d=.6: temptation 1.640, remaining sanction 0.720 -> NOT deterred
+   the larger-g deviation is deterred, the quiet one is not: (14) must hold deviation by deviation
+
+(B) part (5): race reversion with breakouts; closed form vs explicit chain; the P<v<C example
+   q=0.000: v chain 0.0000, formula 0.0000; v<C: True; restraint enforceable at p_d=0: True
+   q=0.020: v chain 0.5294, formula 0.5294; v<C: True; restraint enforceable at p_d=0: True
+   q=0.035: v chain 0.7730, formula 0.7730; v<C: True; restraint enforceable at p_d=0: True
+   q=0.036: v chain 0.7864, formula 0.7864; v<C: True; restraint enforceable at p_d=0: False
+   q=0.045: v chain 0.8950, formula 0.8950; v<C: True; restraint enforceable at p_d=0: False
+   q=0.055: v chain 0.9950, formula 0.9950; v<C: True; restraint enforceable at p_d=0: False
+   q=0.056: v chain 1.0040, formula 1.0040; v<C: False; restraint enforceable at p_d=0: False
+   q=0.100: v chain 1.2857, formula 1.2857; v<C: False; restraint enforceable at p_d=0: False
+   predicted window: q in (0.0354, 0.0556) - deterrence fails while the punishment is still worse than cooperation
+   with 2q>1 the 'neither breaks out' probability 1-2q is negative: the closed form needs at most one breakout per period
+
+(C) explicit-action stochastic game: player 1's best response over all deviation plans (value iteration on the MDP)
+    vs condition (14) evaluated with v from (5)
+   20,000 random settings: cooperation sustained in 6821; punishment not credible (quitting the race pays) in 35
+   where the punishment is credible, (14) agrees with the best-response computation in 19965 of 19965; disagreements []
+   where it is not credible, (14) must use the value of the credible punishment (the theorem's premise), not (5)
+
+(D) R4 with D < C (Opus): C=1, D=.9, v=0, g=2, delta=.9
+   p_d=0.8: (14) holds: True   (p_d-bar = 0.8642)
+   p_d=0.86: (14) holds: True   (p_d-bar = 0.8642)
+   p_d=0.87: (14) holds: False   (p_d-bar = 0.8642)
+   p_d=0.9: (14) holds: False   (p_d-bar = 0.8642)
+   (1-delta)g = 0.20 > delta(C-D) = 0.09: the bound binds although D<C; the right exception is (1-delta)g <= delta(C-D), i.e. p_d-bar >= 1
+
+(E) homogeneity of p_d-bar in (g, C, D, v)
+   all stakes x2: 0.2963 (base 0.2963); only g and D x2: 0.1296
+   all stakes x10: 0.2963 (base 0.2963); only g and D x10: -0.0037

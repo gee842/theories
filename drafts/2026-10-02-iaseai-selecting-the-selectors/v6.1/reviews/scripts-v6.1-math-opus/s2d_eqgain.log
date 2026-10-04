@@ -1,0 +1,8 @@
+r=1.0 Gamma=0.6 delta=0.9: dp/ds at parity, MPE = 3.271 vs r = 1.0; equilibrium loop gain Gamma*(dp/ds)/r = 1.963
+r=1.0 Gamma=0.6 delta=0.97: dp/ds at parity, MPE = 5.202 vs r = 1.0; equilibrium loop gain Gamma*(dp/ds)/r = 3.121
+r=1.5 Gamma=0.6 delta=0.9: dp/ds at parity, MPE = 4.702 vs r = 1.5; equilibrium loop gain Gamma*(dp/ds)/r = 1.881
+r=1.5 Gamma=0.6 delta=0.97: dp/ds at parity, MPE = 7.727 vs r = 1.5; equilibrium loop gain Gamma*(dp/ds)/r = 3.091
+r=1.5 Gamma=0.9 delta=0.9: dp/ds at parity, MPE = 4.721 vs r = 1.5; equilibrium loop gain Gamma*(dp/ds)/r = 2.833
+r=1.5 Gamma=0.9 delta=0.97: dp/ds at parity, MPE = 5.787 vs r = 1.5; equilibrium loop gain Gamma*(dp/ds)/r = 3.472
+r=1.0 Gamma=0.9 delta=0.9: dp/ds at parity, MPE = 3.280 vs r = 1.0; equilibrium loop gain Gamma*(dp/ds)/r = 2.952
+r=1.0 Gamma=0.9 delta=0.97: dp/ds at parity, MPE = 3.905 vs r = 1.0; equilibrium loop gain Gamma*(dp/ds)/r = 3.514

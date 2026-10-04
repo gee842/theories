@@ -1,0 +1,642 @@
+unit	v6.0 opening	best V6.1 match	trigram containment	term coverage	status	disposition
+L-60-§Changing the AI Traj-p01	*Theory v6.0, 3 October 2026. Written by Claude (Opus 5.5) from Ren's direction and the V6	THEORY # Changing the AI Trajectory: The Meta-Attractor o	0.11	0.46	check	reviewed: status line → CHANGELOG; core status line
+L-60-§0-p01	**A prediction, for coordination.** A good theory predicts. This one predicts that, on the	THEORY ## 0. Why this theory	0.8	0.96	kept	moved or kept verbatim
+L-60-§0-p02	**Survival as the minimum.** The theory protects two outcomes first: large-scale loss of l	THEORY ## 0. Why this theory	0.78	0.88	kept	moved or kept verbatim
+L-60-§0-p03	**The game, not the act.** The analysis judges games, not acts, and structures, not person	THEORY ## 0. Why this theory	0.74	0.78	kept	moved or kept verbatim
+L-60-§0-p04	**The meaning is affirmative.** The theory opposes one logic, not growth, competition, tec	THEORY ## 0. Why this theory	0.59	0.81	kept	moved or kept verbatim
+L-60-§1.1-p01	The question is practical. AI development today pursues decisive advantage through acceler	THEORY ### 1.1 What is being decided	0.92	0.96	kept	moved or kept verbatim
+L-60-§1.2-p01	1. **One pressure.** Wherever carriers are selected by relative success and winnings can b	THEORY ### 1.2 The argument in one page	0.2	0.56	rewritten	rewritten at destination
+L-60-§1.2-p02	The thesis is that this trajectory warrants a change in what the system selects for. The c	THEORY ### 1.2 The argument in one page	0.55	0.81	kept	moved or kept verbatim
+L-60-§1.3-p01	The argument rests on five normative commitments. They are stated so that a reader can rej	THEORY ### 1.3 Values and the protected outcomes	0.78	1.0	kept	moved or kept verbatim
+L-60-§1.3-p02	- **[V1] AI is a planetary technology, to be developed and used for people collectively.**	THEORY ### 1.3 Values and the protected outcomes	0.41	0.56	kept	moved or kept verbatim
+L-60-§1.3-p03	The values do not supply the formal results, and the results do not supply the values. The	THEORY ### 1.3 Values and the protected outcomes	0.84	0.78	kept	moved or kept verbatim
+L-60-§1.4-p01	**Outcomes [D].** Four outcomes are kept apart. They are not interchangeable, and the norm	THEORY ### 1.3 Values and the protected outcomes	0.23	0.4	rewritten	rewritten at destination
+L-60-§1.4-p02	| Code | Outcome | Weight | |---|---|---| | O1 | Physical catastrophe: large-scale loss of	THEORY ### 1.3 Values and the protected outcomes	0.68	0.9	kept	moved or kept verbatim
+L-60-§1.4-p03	"O4 is listed so that ""actor survival"" cannot quietly protect incumbency against legitimate"	THEORY ### 1.3 Values and the protected outcomes	0.26	0.77	rewritten	rewritten at destination
+L-60-§1.4-p04	**Decision standard D [V].** Each candidate policy is evaluated at common horizons: near (	THEORY ### 8.1 The standard of comparison	0.53	0.79	kept	moved or kept verbatim
+L-60-§1.4-p05	This is robust satisficing on irreversible losses. It is a normative choice, and the worst	THEORY ### 8.1 The standard of comparison	0.43	0.71	kept	moved or kept verbatim
+L-60-§1.5-p01	The argument moves through three levels, and each needs its own support.	THEORY ### 1.4 What is claimed, and what is not	0.5	0.75	kept	moved or kept verbatim
+L-60-§1.5-p02	| Level | Form | Support required | |---|---|---| | Mechanism | Under conditions $C$, a sp	THEORY ### 1.4 What is claimed, and what is not	0.34	0.68	rewritten	rewritten at destination
+L-60-§1.5-p03	A practical judgment does not need a proof of certain extinction. It also cannot follow fr	THEORY ### 1.4 What is claimed, and what is not	0.9	1.0	kept	moved or kept verbatim
+L-60-§1.5-p04	Claims carry a type, given in square brackets where it is not obvious: - [D] definition; -	SUPPLEMENT ## S0. Conventions	0.06	0.54	check	reviewed: merged into THEORY §1.4; claim types → SUPPLEMENT S0
+L-60-§1.5-p05	The theory is stated at the level of games and selection. Minds enter in two roles: as wha	THEORY ### 1.4 What is claimed, and what is not	0.44	0.64	kept	moved or kept verbatim
+L-60-§1.5-p06	The theory does not claim to prove the following: - that every competitive arrangement fai	THEORY ### 1.4 What is claimed, and what is not	0.74	0.93	kept	moved or kept verbatim
+L-60-§1.5-p07	It claims five things: 1. The dynamics of the present trajectory are signatures of one sel	THEORY ### 1.2 The argument in one page	0.13	0.57	rewritten	rewritten at destination
+L-60-§1.6-p01	1. Section 2 states the selection pressure of winning, its reflexive closure, the mechanis	THEORY ### 1.2 The argument in one page	0.05	0.48	check	reviewed: duplicate of §1.2 (deleted; survivor THEORY §1.2)
+L-60-§1.6-p02	Appendix F records where every element of earlier versions now lives.	SUPPLEMENT ## S0. Conventions	0.12	0.4	rewritten	rewritten at destination
+L-60-§2.1-p01	Every selection process favours something. It does not necessarily favour the continued fu	THEORY ### 2.1 Success is not contribution	0.72	0.9	kept	moved or kept verbatim
+L-60-§2.1-p02	Consider two organizations that depend on the same shared infrastructure. One spends resou	THEORY ### 2.1 Success is not contribution	0.87	0.96	kept	moved or kept verbatim
+L-60-§2.1-p03	The neglectful organization need not be more capable in general. It need only be more capa	THEORY ### 2.1 Success is not contribution	1.0	1.0	kept	moved or kept verbatim
+L-60-§2.1-p04	Selection on one dimension does not select the best. It removes the balanced. In the autho	THEORY ### 2.1 Success is not contribution	0.85	0.95	kept	moved or kept verbatim
+L-60-§2.1-p05	Nothing here requires that people be or become selfish. A population of practices changes 	THEORY ### 2.1 Success is not contribution	0.94	0.95	kept	moved or kept verbatim
+L-60-§2.1-p06	**Definition 2.1 (The selection pressure of winning) [D].** Carriers are any reproducible 	THEORY ### 2.2 Three interconnected conditions	0.46	0.81	kept	moved or kept verbatim
+L-60-§2.1-p07	The pressure is stronger the more of these hold, and the more strongly. Remark 5.3 gives t	THEORY ### 2.2 Three interconnected conditions	0.48	0.71	kept	moved or kept verbatim
+L-60-§2.1-p08	Remove any one condition and the loop opens: - under absolute rather than relative selecti	THEORY ### 10.4 The generative loop and its closure	0.0	0.6	rewritten	rewritten at destination
+L-60-§2.1-p09	One principle in the author's corpus states the second point: a winner of the game should 	THEORY ### 2.2 Three interconnected conditions	0.62	0.82	kept	moved or kept verbatim
+L-60-§2.2-p01	An ordinary adaptive system improves its state $x$ against a fixed rule $\sigma$ that scor	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.83	0.95	kept	moved or kept verbatim
+L-60-§2.2-p02	The outcome of the last round of scoring then determines who writes the next round's score	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.79	0.83	kept	moved or kept verbatim
+L-60-§2.2-p03	Consider a research community that allocates funding and positions by publication counts, 	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.89	0.97	kept	moved or kept verbatim
+L-60-§2.2-p04	The decisive transition is from *being selected by a rule* to *helping reproduce the rule 	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.55	0.81	kept	moved or kept verbatim
+L-60-§2.2-p05	The loop need not preserve its winners. - An organization can fail while its operating log	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.94	1.0	kept	moved or kept verbatim
+L-60-§2.2-p06	**The persistent entity can be a way of succeeding.** Structural explanation does not eras	THEORY ### 2.3 The reflexive closure: the meta-attractor	1.0	1.0	kept	moved or kept verbatim
+L-60-§2.2-p07	**Definition 2.2 (Meta-attractor) [D].** Let the state update be $x'=F(x,\sigma)$ and the 	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.56	0.78	kept	moved or kept verbatim
+L-60-§2.2-p08	A *meta-attractor* is the mechanism of (1). Wherever this paper calls it attracting, the c	THEORY ### 2.3 The reflexive closure: the meta-attractor	1.0	1.0	kept	moved or kept verbatim
+L-60-§2.2-p09	**Interpretive consequence.** Where (2) holds, long-run behaviour maximizes the rule irres	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.32	0.58	rewritten	rewritten at destination
+L-60-§2.2-p10	**The meta-attractor of winning** is the case in which the selection pressure of Definitio	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.75	0.86	kept	moved or kept verbatim
+L-60-§2.2-p11	> Recursive selection creates second-order selection for control over future selection whe	THEORY ### 2.3 The reflexive closure: the meta-attractor	1.0	1.0	kept	moved or kept verbatim
+L-60-§2.2-p12	The pattern is not fated. Positive feedback can saturate, oscillate, split or break. Energ	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.93	1.0	kept	moved or kept verbatim
+L-60-§2.2-p13	**Remark 2.3 (A local feedback benchmark).** Let $u_t$ be a small deviation in an actor's 	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.38	0.63	rewritten	rewritten at destination
+L-60-§2.2-p14	**Remark 2.4 (Pathological and generative meta-attractors).** Reflexive selection is not i	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.7	0.86	kept	moved or kept verbatim
+L-60-§2.2-p15	It is *generative* to the degree that its reproduction strengthens independent correction 	THEORY ### 2.3 The reflexive closure: the meta-attractor	1.0	1.0	kept	moved or kept verbatim
+L-60-§2.2-p16	The way out examined in Section 8 is therefore not the abolition of selection. It is a cha	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.38	0.87	rewritten	rewritten at destination
+L-60-§2.3-p01	The pressure acts through several mechanisms. They overlap: each is a facet of one pressur	SUPPLEMENT ### The mechanism index	0.24	0.69	rewritten	rewritten at destination
+L-60-§2.3-p02	They also concern three different objects, which reinforce one another without being inter	SUPPLEMENT ### The mechanism index	0.6	0.84	kept	moved or kept verbatim
+L-60-§2.3-p04	| Mechanism | What it does | Formal anchor | In other substrates | |---|---|---|---| | **A	SUPPLEMENT ### The mechanism index	0.23	0.55	rewritten	rewritten at destination
+L-60-§2.3-p05	Some of the overlaps can be named. - Masking is selecting the selectors applied to observa	SUPPLEMENT ### The mechanism index	0.55	0.9	kept	moved or kept verbatim
+L-60-§2.3-p06	Three products of the mechanisms acting together also deserve names. - **Lag is produced, 	THEORY ### 7.1 The conditions and mechanisms together	0.14	0.56	rewritten	rewritten at destination
+L-60-§2.3-p07	Three further elements are not mechanisms but conditions under which the mechanisms act: -	DISCUSSION ### Ψ in full	0.41	0.59	kept	moved or kept verbatim
+L-60-§2.4-p01	The pressure has three consequences that matter for any attempt to govern it. 1. **Acceler	THEORY ### 5.4 Third erosion: shared understanding	0.15	0.42	rewritten	rewritten at destination
+L-60-§2.4-p02	These three consequences erode the three means by which any system restrains a harmful pre	THEORY ## 5. Acceleration and the three erosions	0.27	0.61	rewritten	rewritten at destination
+L-60-§2.5-p01	The trajectory of AI development shows six observable dynamics. They are not independent p	THEORY ### 7.3 Signatures and evidence	0.37	0.65	rewritten	rewritten at destination
+L-60-§2.5-p02	| Signature | Mechanisms | Where shown | |---|---|---| | **T1** Strategic success defined 	THEORY ### 7.3 Signatures and evidence	0.18	0.57	rewritten	rewritten at destination
+L-60-§2.5-p03	T6 is not merely a prejudice. In a one-shot game in which racing is dominant, or among act	THEORY ### 7.3 Signatures and evidence	0.34	0.84	rewritten	rewritten at destination
+L-60-§2.6-p01	Selection acts on conduct, but conduct is carried by self-models, doctrines and words. The	THEORY ### 3.8 The logic as held: Ψ	0.0	0.62	rewritten	rewritten at destination
+L-60-§2.6-p02	**Definition 2.5 (Ψ, the winning model) [D].** Ψ is the configuration of self-model and do	THEORY ### 3.8 The logic as held: Ψ	0.5	0.73	kept	moved or kept verbatim
+L-60-§2.6-p03	Ψ includes the doctrine that treats these settings as laws of nature rather than as parame	THEORY ### 3.8 The logic as held: Ψ	0.87	1.0	kept	moved or kept verbatim
+L-60-§2.6-p04	**Ψ is locally rational and systemically false.** - *Locally rational.* Its conduct wins i	DISCUSSION ### Ψ in full	0.39	0.53	rewritten	rewritten at destination
+L-60-§2.6-p05	"In the author's words: ""the locally winning strategy has taken the name of rationality"" (局"	THEORY ### 3.8 The logic as held: Ψ	1.0	1.0	kept	moved or kept verbatim
+L-60-§2.6-p06	**Held and attributed.** Ψ shapes conduct where it is held and also where it is attributed	DISCUSSION ### Ψ in full	0.25	0.48	rewritten	rewritten at destination
+L-60-§2.6-p07	"**The logic to oppose.** What is opposed is a logic, not an actor. ""Cancer"" in this paper "	THEORY ### 3.8 The logic as held: Ψ	0.93	0.96	kept	moved or kept verbatim
+L-60-§2.7-p01	The claim that the trajectory's dynamics share one pressure is substantive only if it pred	TESTS ## 5. Registered tests	0.02	0.32	check	reviewed: predictions → TESTS §5 with rival theories; refutation → THEORY §7.4
+L-60-§2.7-p02	**What would refute it.** Suppose a system changes what it selects for: consequences retur	THEORY ### 7.4 Which layer, and how the diagnosis could f	0.64	0.86	kept	moved or kept verbatim
+L-60-§2.7-p03	Conversely, durable safety obtained by constraining conduct while the selection pressure s	THEORY ### 7.4 Which layer, and how the diagnosis could f	0.16	0.58	rewritten	rewritten at destination
+L-60-§2.8-p01	The pressure requires only selection on relative success, convertible winnings and, for it	DISCUSSION ## X2. Substrates	0.53	0.74	kept	moved or kept verbatim
+L-60-§2.8-p02	- **Cells.** A cancer lineage evades the signals that limit proliferation. It recruits the	DISCUSSION ## X2. Substrates	0.67	0.81	kept	moved or kept verbatim
+L-60-§2.8-p03	Nothing in Definition 2.1 refers to a culture, a political system or a species. A civiliza	DISCUSSION ## X2. Substrates	0.81	1.0	kept	moved or kept verbatim
+L-60-§2.8-p04	The genealogy of the present vocabulary has at least two strands: - **Within firms and pub	DISCUSSION ### The vocabulary of winning, and its critics	0.85	0.94	kept	moved or kept verbatim
+L-60-§2.8-p05	Both appear across civilizations, and so do their critics: - Smith on sympathy; - Darwin o	DISCUSSION ### The vocabulary of winning, and its critics	0.94	1.0	kept	moved or kept verbatim
+L-60-§2.8-p06	The strand also travelled. Translated into doctrines of national survival in states that i	DISCUSSION ### The vocabulary of winning, and its critics	0.81	0.94	kept	moved or kept verbatim
+L-60-§2.9-p01	Much of the pressure's anatomy is known, and the theory absorbs it: - multipolar traps, or	DISCUSSION ### What is absorbed, and what is new	0.4	0.62	rewritten	rewritten at destination
+L-60-§2.9-p02	The theory adds the following: 1. **The reflexive closure as a specified mechanism.** Infl	THEORY ### 1.2 The argument in one page	0.08	0.4	check	reviewed: → DISCUSSION X1, list rewritten
+L-60-§2.10-p01	That the pressure acts on the present trajectory, and each of its signatures, are proposit	EVIDENCE # V6.1 evidence register	0.33	0.86	rewritten	rewritten at destination
+L-60-§2.10-p02	| Claim | Status | Strongest support | Strongest contrary evidence | Register | |---|---|-	THEORY ### 7.3 Signatures and evidence	0.12	0.37	rewritten	rewritten at destination
+L-60-§2.10-p03	Three things follow for the argument. 1. The trajectory is not uniform. Seeds of cooperati	THEORY ### 7.3 Signatures and evidence	0.23	0.59	rewritten	rewritten at destination
+L-60-§3.1-p01	Persons, firms, governments, providers of infrastructure and evaluators have different int	THEORY ### 3.1 Levels, measures and the host	0.42	0.8	kept	moved or kept verbatim
+L-60-§3.1-p02	*Levels.* - **Selection among practices or carriers** (Sections 3.3, 4). Shares change by 	THEORY ### 3.1 Levels, measures and the host	0.07	0.59	check	reviewed: → THEORY §3; SUPPLEMENT S3
+L-60-§3.1-p03	*Measures.* - the **objective** an actor acts on, $O_\theta$ (Section 3.4); - the **absolu	THEORY ### 3.1 Levels, measures and the host	0.35	0.64	rewritten	rewritten at destination
+L-60-§3.1-p04	*Rules.* 1. A result about selection does not transfer to strategic actors unless their ob	THEORY ### 3.1 Levels, measures and the host	0.29	0.46	rewritten	rewritten at destination
+L-60-§3.2-p01	A condition $V\in[0,K]$ is shared by every actor. Examples are secure critical infrastruct	THEORY ### 3.1 Levels, measures and the host	0.48	0.69	kept	moved or kept verbatim
+L-60-§3.2-p02	**Definition 3.1 (Viability) [D].** A trajectory of the field is *viable* if $V(t)\ge V_{\	THEORY ### 3.1 Levels, measures and the host	0.33	1.0	rewritten	rewritten at destination
+L-60-§3.2-p03	Every actor persists only while the host does. Viability therefore constrains every trajec	THEORY ### 3.1 Levels, measures and the host	0.52	0.78	kept	moved or kept verbatim
+L-60-§3.2-p04	Equation (1) is the most forgiving choice of host, and the results below hold *a fortiori*	THEORY ### 3.1 Levels, measures and the host	0.04	0.38	check	reviewed: → THEORY §3; SUPPLEMENT S3
+L-60-§3.2-p05	Real shared conditions, such as trust, institutions, information environments and skills, 	SUPPLEMENT ### Hosts harsher than the forgiving one	0.3	0.53	rewritten	rewritten at destination
+L-60-§3.2-p06	These extensions are stated here and left as research; none weakens a result that follows.	THEORY ### 1.4 What is claimed, and what is not	0.0	0.5	check	reviewed: → THEORY §3; SUPPLEMENT S3
+L-60-§3.3-p01	Carriers $k=1,\dots,n$ hold shares $p_k$ of the field's activity: compute, capital, users,	THEORY ### 3.2 Relative selection is blind to what all sh	0.21	0.5	rewritten	rewritten at destination
+L-60-§3.3-p02	**Definition 3.2 (Relative selection) [D].** A selection rule $\dot p=F(p,\pi)$ is *relati	THEORY ### 3.2 Relative selection is blind to what all sh	0.45	1.0	kept	moved or kept verbatim
+L-60-§3.3-p03	Replicator dynamics and pairwise imitation (Schlag 1998) are relative and payoff-monotone.	THEORY ### 3.2 Relative selection is blind to what all sh	0.08	0.42	check	reviewed: → THEORY §3; SUPPLEMENT S3
+L-60-§3.3-p04	**Lemma 3.3 (Blindness, and its other face) [T].** 1. *Under a relative rule, the trajecto	THEORY ### 3.2 Relative selection is blind to what all sh	0.48	0.72	kept	moved or kept verbatim
+L-60-§3.3-p05	Part (1) is the translation invariance of relative selection dynamics (Weibull 1995). Its 	THEORY ### 3.2 Relative selection is blind to what all sh	0.15	0.57	rewritten	rewritten at destination
+L-60-§3.3-p06	The blindness that makes the host invisible is also what protects a common rule. Coverage 	THEORY ### 3.2 Relative selection is blind to what all sh	0.17	0.57	rewritten	rewritten at destination
+L-60-§3.3-p07	**Proposition 3.4 (Selection raises the load) [T].** *Let selection be payoff-monotone, an	THEORY ### 3.2 Relative selection is blind to what all sh	0.21	0.64	rewritten	rewritten at destination
+L-60-§3.3-p08	What carriers value decides which strategies they try, not which ones grow. A developer th	THEORY ### 3.2 Relative selection is blind to what all sh	0.2	0.41	rewritten	rewritten at destination
+L-60-§3.4-p01	Selection acts as if only differences count. An actor's objective can count more. Let acto	THEORY ### 3.3 Accounting: what an objective can see	0.39	0.65	rewritten	rewritten at destination
+L-60-§3.4-p02	**Proposition 3.5 (Two-channel accounting) [T].** *For any change $\Delta\pi\in\mathbb R^n	THEORY ### 3.3 Accounting: what an objective can see	0.12	0.44	rewritten	rewritten at destination
+L-60-§3.4-p03	Part (6) states what can be called the *point of enough*. Expansion that consumes the host	THEORY ### 5.1 Acceleration	0.13	0.7	rewritten	rewritten at destination
+L-60-§3.4-p04	The identity is one line of algebra. It is checked exactly on 4,000 random games [N]. Its 	TESTS ## 6. Indicators of the conditional results	0.07	0.41	check	reviewed: → THEORY §3; SUPPLEMENT S3
+L-60-§3.4-p05	Two quantities must be kept apart (Section 3.6): - The shared loss $\ell$ (or $L$) is the 	SUPPLEMENT ## S0. Conventions	0.16	0.71	rewritten	rewritten at destination
+L-60-§3.4-p06	**Measuring the weight.** The weight $\theta$ is not observed directly, but two perturbati	SUPPLEMENT ### Proof of Proposition 3.5, and measuring $\thet	0.24	0.53	rewritten	rewritten at destination
+L-60-§3.5-p01	Selection is the limit of a contest in which only winning counts. Let $n\ge2$ symmetric de	SUPPLEMENT ### Full statement and proof of Proposition 3.7	0.11	0.3	check	reviewed: → THEORY §3; SUPPLEMENT S3
+L-60-§3.5-p02	Let $G(V)=\omega V$, $h\bar e<\rho$, and $\Theta=\omega Kh/(\rho\nu)$, the value to the wh	THEORY ### 3.5 The weight on winning, and how compounding	0.38	1.0	rewritten	rewritten at destination
+L-60-§3.5-p03	**Proposition 3.6 (The weight on winning) [T].** 1. *$G$ cancels from the relative term. R	SUPPLEMENT ### Full statement and proof of Proposition 3.7	0.27	0.61	rewritten	rewritten at destination
+L-60-§3.5-p04	These comparative statics are those of Armstrong, Bostrom and Shulman (2016) and of positi	THEORY ### 3.5 The weight on winning, and how compounding	0.11	0.31	check	reviewed: → THEORY §3; SUPPLEMENT S3
+L-60-§3.5-p05	A classical commons needs each actor's share of the common loss to be small. Selection on 	THEORY ### 3.5 The weight on winning, and how compounding	0.5	0.82	kept	moved or kept verbatim
+L-60-§3.5-p06	**Remark 3.7 (Thresholds and repetition need observation).** Strategic developers have two	SUPPLEMENT ### Full statement and proof of Proposition 3.7	0.43	0.7	kept	moved or kept verbatim
+L-60-§3.5-p07	Both escapes need observation: of where the floor lies, and of each developer's load. Unce	SUPPLEMENT ### Full statement and proof of Proposition 3.7	0.32	0.58	rewritten	rewritten at destination
+L-60-§3.5-p08	**Remark 3.8 (Unequal exposure).** Suppose a carrier's exposure to the host falls with its	THEORY ### 3.5 The weight on winning, and how compounding	0.16	0.48	rewritten	rewritten at destination
+L-60-§3.5-p09	Unequal exposure is also where every integrating mechanism that relies on a shared fate fa	THEORY ### 3.6 No outside	0.0	0.57	check	reviewed: → THEORY §3; SUPPLEMENT S3
+L-60-§3.6-p01	Actors are coupled to one another as well as to the host. Actor $i$'s welfare runs partly 	EVIDENCE ## EV13. Interdependence and unpriced coupling (Ψ 	0.13	0.4	rewritten	rewritten at destination
+L-60-§3.6-p02	$\kappa$ counts coupling that prices do not settle: shared hazards, failures that propagat	THEORY ### 3.4 Interdependence and the boundary error	0.18	0.47	rewritten	rewritten at destination
+L-60-§3.6-p03	**The contest.** Each of $n$ actors chooses an intensity $e_i\ge0$. It wins a prize $\Omeg	THEORY ### 3.4 Interdependence and the boundary error	0.47	0.88	kept	moved or kept verbatim
+L-60-§3.6-p04	**Proposition 3.9 (The boundary error of the self-model) [T].** 1. *For every $\theta\in[-	THEORY ### 3.4 Interdependence and the boundary error	0.36	0.61	rewritten	rewritten at destination
+L-60-§3.6-p05	Existence is proved directly in Appendix A: the game in objectives is a standard contest w	SUPPLEMENT ### Proof of Proposition 3.6	0.19	0.35	rewritten	rewritten at destination
+L-60-§3.6-p06	Part (3) is the precise sense in which an isolated self-model is an *error*, not a prefere	THEORY ### 3.4 Interdependence and the boundary error	0.53	0.75	kept	moved or kept verbatim
+L-60-§3.6-p07	Part (4) is the precise sense in which the error is *selected*. Which preferences evolve d	SUPPLEMENT ### Proof of Proposition 3.6	0.22	0.53	rewritten	rewritten at destination
+L-60-§3.6-p08	A few actors competing for one prize is local competition, under which spite rather than c	SUPPLEMENT ### Proof of Proposition 3.6	0.19	0.5	rewritten	rewritten at destination
+L-60-§3.6-p09	**Selected minds [C].** The same selection plausibly acts on the people and institutions w	DISCUSSION ### Ψ in full	0.18	0.33	rewritten	rewritten at destination
+L-60-§3.7-p01	The system has one host. Every carrier, every developer, every state and every person depe	THEORY ### 3.6 No outside	0.22	0.4	rewritten	rewritten at destination
+L-60-§3.7-p02	That fact matters because of how integration has happened before. Evolution's largest inno	THEORY ### 3.6 No outside	0.16	0.53	rewritten	rewritten at destination
+L-60-§3.7-p03	In most such transitions, low conflict within the new whole came mainly from interests ali	THEORY ### 3.6 No outside	0.03	0.52	check	reviewed: → THEORY §3; SUPPLEMENT S3
+L-60-§3.7-p04	The strongest objection reads this history as a defence of competition. Within-group coope	DISCUSSION ### The strongest objection from biology	0.67	0.82	kept	moved or kept verbatim
+L-60-§3.7-p05	**Lemma 3.10 (One group) [T].** *Partition a population into groups and let a trait $z$ be	THEORY ### 3.6 No outside	0.04	0.58	check	reviewed: → THEORY §3; SUPPLEMENT S3
+L-60-§3.7-p06	At the scale of one host, integration cannot come from selection among groups: there is no	THEORY ### 3.6 No outside	0.06	0.53	check	reviewed: → THEORY §3; SUPPLEMENT S3
+L-60-§3.7-p07	This is the formal content of the claim that **understanding that we are one, one intercon	THEORY ### 3.6 No outside	0.5	0.67	kept	moved or kept verbatim
+L-60-§3.7-p08	Two cautions follow from the biology. - Integration by shared fate requires shared exposur	THEORY ### 3.6 No outside	0.18	0.38	rewritten	rewritten at destination
+L-60-§3.7-p09	**Proposition 3.11 (Clubs and blocs) [T].** *Let the contestants' activity $\mathcal E$ pr	THEORY ### 3.6 No outside	0.28	0.68	rewritten	rewritten at destination
+L-60-§3.7-p10	With $\Omega=10\sqrt{\mathcal E}$, $c=1$, $n=4$, $\ell=0.3$, $m=20$ and $\ell_o=0.3$, the 	SUPPLEMENT ### Proof of Proposition 3.11	0.36	1.0	rewritten	rewritten at destination
+L-60-§3.7-p11	Inclusion that stops at the edge of a club is not inclusion of the system. A bloc that is 	THEORY ### 3.6 No outside	0.31	0.67	rewritten	rewritten at destination
+L-60-§3.8-p01	The phrase states a property of the system, not a preference that everyone must adopt. It 	"THEORY ### 3.7 What ""we are one"" means"	0.45	0.79	kept	moved or kept verbatim
+L-60-§3.8-p02	These are the institutional counterparts of the policing and shared fate by which earlier 	"THEORY ### 3.7 What ""we are one"" means"	1.0	1.0	kept	moved or kept verbatim
+L-60-§3.8-p03	Oneness is not sameness. A whole that suppresses difference becomes another totalizing att	"THEORY ### 3.7 What ""we are one"" means"	0.3	0.69	rewritten	rewritten at destination
+L-60-§4-p01	This section gives the reflexive closure in a specified model. Success becomes control ove	THEORY ## 4. Selecting the selectors	0.15	0.59	rewritten	rewritten at destination
+L-60-§4.1-p01	Correction makes costs return. An evaluator reports the host's condition, and rule-makers 	THEORY ### 4.1 Correctors, and what counts as capture	0.68	0.75	kept	moved or kept verbatim
+L-60-§4.1-p02	Correctors are not outside the field. - Developers fund some evaluators. - They grant the 	THEORY ## 4. Selecting the selectors	0.21	0.64	rewritten	rewritten at destination
+L-60-§4.1-p03	We represent this by a field of selection domains in which de facto power over rules is ex	THEORY ### 4.1 Correctors, and what counts as capture	0.66	0.89	kept	moved or kept verbatim
+L-60-§4.1-p04	Write $R_{ij}=a_ib_{ij}/(c_id_i)$, and the inbound conversion from a set $\mathcal C$ as $	THEORY ### 4.1 Correctors, and what counts as capture	0.35	0.75	rewritten	rewritten at destination
+L-60-§4.1-p05	**Definition 4.1 (Selector modification and capture) [D].** A *selector modification* is a	THEORY ### 4.1 Correctors, and what counts as capture	0.94	1.0	kept	moved or kept verbatim
+L-60-§4.1-p06	Concentration alone, or a rule change favourable to the successful, is not capture. Expert	THEORY ### 4.1 Correctors, and what counts as capture	0.38	0.33	rewritten	rewritten at destination
+L-60-§4.1-p07	Purposes can also be legitimately revised. A revision is distinguished from capture by who	THEORY ### 4.1 Correctors, and what counts as capture	0.19	0.7	rewritten	rewritten at destination
+L-60-§4.1-p08	The conditions are distinct, and none implies the next.	THEORY ### 4.1 Correctors, and what counts as capture	0.71	1.0	kept	moved or kept verbatim
+L-60-§4.1-p09	| Notion | Condition in the model | Does not follow from | |---|---|---| | Concentration |	THEORY ### 4.1 Correctors, and what counts as capture	0.03	0.57	check	reviewed: → THEORY §4; SUPPLEMENT S4
+L-60-§4.1-p10	**Power's two roles.** Power can help an actor succeed under existing conditions, and it c	THEORY ### 4.1 Correctors, and what counts as capture	0.15	0.35	rewritten	rewritten at destination
+L-60-§4.1-p11	Neither hierarchy nor contraction is sufficient. Shared exposure, enforceable constraint, 	THEORY ### 4.1 Correctors, and what counts as capture	0.17	0.31	rewritten	rewritten at destination
+L-60-§4.1-p12	What persists is a logic of success rather than an identity. A change in who holds the str	THEORY ### 4.1 Correctors, and what counts as capture	0.17	0.4	rewritten	rewritten at destination
+L-60-§4.2-p01	Rule support can be incidental, as when benchmarks are built from deployed systems, or cul	THEORY ### 4.2 Influence over correctors is selected	0.43	0.79	kept	moved or kept verbatim
+L-60-§4.2-p02	Relative to an otherwise identical carrier with $q=0$, and averaged over a selection horiz	THEORY ### 4.2 Influence over correctors is selected	0.65	0.9	kept	moved or kept verbatim
+L-60-§4.2-p03	**Proposition 4.2 (Influence over correctors is selected in the largest carriers) [T].** 1	THEORY ### 4.2 Influence over correctors is selected	0.39	0.76	rewritten	rewritten at destination
+L-60-§4.2-p04	The result is a local selection gradient. It is not an equilibrium after others respond an	THEORY ### 4.2 Influence over correctors is selected	0.15	0.43	rewritten	rewritten at destination
+L-60-§4.2-p05	*Relation to earlier work.* Krakauer, Page and Erwin (2009) show that construction of a sh	SUPPLEMENT ### Proof of Proposition 4.3, and the effect of sc	0.27	0.52	rewritten	rewritten at destination
+L-60-§4.2-p06	Dynamic models of constitutions show that present decisions change future decision rights 	SUPPLEMENT ### Proof of Proposition 4.3, and the effect of sc	0.22	0.52	rewritten	rewritten at destination
+L-60-§4.2-p07	Let carriers also differ in an investment $u\ge0$, at private cost $C_u(u)$ with $C_u'>0$,	SUPPLEMENT ### Full statement and proof of Proposition 4.4	0.42	1.0	kept	moved or kept verbatim
+L-60-§4.2-p08	**Proposition 4.3 (Correction is not supplied from inside) [T].** 1. *Among otherwise iden	SUPPLEMENT ### Full statement and proof of Proposition 4.4	0.54	0.79	kept	moved or kept verbatim
+L-60-§4.2-p09	Independent correction, which restores baseline rules and is keyed to no one, is a second-	THEORY ### 4.2 Influence over correctors is selected	0.19	0.33	rewritten	rewritten at destination
+L-60-§4.3-p01	Let a set $\mathcal C\not\ni\mathsf E$ be captured by a dominant carrier that holds it ($y	THEORY ### 4.3 How fast independent correction must grow	0.18	0.86	rewritten	rewritten at destination
+L-60-§4.3-p02	**Proposition 4.4 (Required independent correction, and its rate) [T].** 1. *$s_{\mathsf E	THEORY ### 4.3 How fast independent correction must grow	0.28	0.65	rewritten	rewritten at destination
+L-60-§4.3-p03	Independent correction does double duty: it shortens the life of rule support, and it shri	THEORY ### 4.3 How fast independent correction must grow	0.48	0.81	kept	moved or kept verbatim
+L-60-§4.3-p04	**Understanding and correction rates are separate quantities.** The rate $d$ at which rule	THEORY ### 4.3 How fast independent correction must grow	0.23	0.52	rewritten	rewritten at destination
+L-60-§4.3-p05	**Remark 4.5 (Countervailing pressure).** Following Becker (1983), let those harmed mobili	SUPPLEMENT ### Full statement and proof of Proposition 4.5	0.39	0.68	rewritten	rewritten at destination
+L-60-§4.4-p01	Reports average over evaluators. A fraction $x_{\mathsf E}$ shares the evaluated lineage a	THEORY ### 4.4 Masking, and alarms that do not miss	0.31	0.49	rewritten	rewritten at destination
+L-60-§4.4-p02	Masking is a property of the corrector's payoff as well as its lineage. An evaluator that 	THEORY ### 4.4 Masking, and alarms that do not miss	0.31	0.46	rewritten	rewritten at destination
+L-60-§4.4-p03	**Proposition 4.6 (Detection under a fixed averaged alarm) [T].** 1. *The alarm fires only	THEORY ### 4.4 Masking, and alarms that do not miss	0.2	0.53	rewritten	rewritten at destination
+L-60-§4.4-p04	**Remark 4.7 (Alarms that do not miss).** 1. *Conservative alarm.* If an upper bound $\bet	THEORY ### 4.4 Masking, and alarms that do not miss	0.23	0.52	rewritten	rewritten at destination
+L-60-§4.4-p05	Faking dynamics is nevertheless costlier than faking levels, and the indicator can be cros	THEORY ## 9. What any adequate arrangement must do	0.17	0.42	rewritten	rewritten at destination
+L-60-§4.4-p06	Several decentralized escapes run on reports of the host or of loads: coordination at a th	THEORY ### 4.4 Masking, and alarms that do not miss	0.21	0.63	rewritten	rewritten at destination
+L-60-§4.5-p01	Section 4.3 studied one evaluation domain. The field (3) couples many. Let $Z_{\mathcal C}	THEORY ### 4.5 Certificates, cascades, keystones and paus	0.45	0.58	kept	moved or kept verbatim
+L-60-§4.5-p02	**Proposition 4.8 (Configurations and certificates) [T].** 1. *Each $Z_{\mathcal C}$ is an	THEORY ### 4.5 Certificates, cascades, keystones and paus	0.54	0.77	kept	moved or kept verbatim
+L-60-§4.5-p03	**Proposition 4.9 (Cascades and reforms) [T].** 1. *If $x_j\to1$ for all $j$ in a seed $\m	THEORY ### 4.5 Certificates, cascades, keystones and paus	0.29	0.77	rewritten	rewritten at destination
+L-60-§4.5-p04	**Keystones, and a window that closes.** Call a captured domain $i\in\mathcal C$ a *keysto	THEORY ### 4.5 Certificates, cascades, keystones and paus	0.32	0.68	rewritten	rewritten at destination
+L-60-§4.5-p05	**Proposition 4.10 (A pause that freezes shares) [T].** *Let $D=1$ and $R>1$. Freeze the s	THEORY ### 4.5 Certificates, cascades, keystones and paus	0.38	0.94	rewritten	rewritten at destination
+L-60-§4.5-p06	A pause is not neutral. Holding shares fixed while ordinary rule support keeps accumulatin	THEORY ### 4.5 Certificates, cascades, keystones and paus	0.26	0.5	rewritten	rewritten at destination
+L-60-§4.5-p07	**What the field model can and cannot show.** System (3) is cooperative: rule support rais	THEORY ### 4.5 Certificates, cascades, keystones and paus	0.09	0.56	check	reviewed: → THEORY §4; SUPPLEMENT S4
+L-60-§4.6-p01	**Theorem 4.11 (No viable race through the host) [T].** *Assume:* - *(H0) $h\bar e>\rho(1-	THEORY ### 4.6 The slow route: the host crosses its floor	0.44	0.88	kept	moved or kept verbatim
+L-60-§4.6-p02	*Then the host crosses its floor before any alarm. If instead $\beta_{\text{in}}\le m_{\te	THEORY ### 4.6 The slow route: the host crosses its floor	0.83	1.0	kept	moved or kept verbatim
+L-60-§4.6-p03	H5 is checked from two clocks. When $h\bar e<\rho$, the host cannot reach the alarm level 	SUPPLEMENT ### Proof of Theorem 4.12, and an illustration	0.38	0.65	rewritten	rewritten at destination
+L-60-§4.6-p04	The two clocks there are set exogenously. The figure is an illustration of the order of ev	SUPPLEMENT ### Proof of Theorem 4.12, and an illustration	0.56	0.83	kept	moved or kept verbatim
+L-60-§4.6-p05	Theorem 4.11 needs H0, a floor within reach. The fast routes of Sections 5 and 6 do not.	THEORY ### 4.6 The slow route: the host crosses its floor	0.91	1.0	kept	moved or kept verbatim
+L-60-§4.7-p01	- **Mechanism [T].** Influence over correctors is selected when it is appropriable, persis	THEORY ### 4.6 The slow route: the host crosses its floor	0.15	0.46	rewritten	rewritten at destination
+L-60-§4.7-p02	The parameters can in principle be recovered from data. Integrating (3) gives $\tfrac{d}{d	SUPPLEMENT ### The field model	0.27	0.39	rewritten	rewritten at destination
+L-60-§4.7-p03	A testable prediction follows. Incumbents should support correction that is keyed to them 	TESTS ## 5. Registered tests	0.02	0.68	rewritten	rewritten at destination
+L-60-§4.7-p04	The author's pilot experiment on this mechanism did not support it: one of four pre-specif	THEORY ### 4.6 The slow route: the host crosses its floor	0.74	0.89	kept	moved or kept verbatim
+L-60-§5-p01	The pressure accelerates the contest it governs. It also erodes the three means by which a	THEORY ## 5. Acceleration and the three erosions	0.71	0.85	kept	moved or kept verbatim
+L-60-§5-p02	This section states each erosion with the conditions it needs. It then states what they im	THEORY ### 5.5 The scissors	0.1	0.5	check	reviewed
+L-60-§5.1-p01	Where actors contest capability directly, who prevails is decided by the contest of Sectio	THEORY ### 5.1 Acceleration	0.6	0.8	kept	moved or kept verbatim
+L-60-§5.1-p02	These are three separate dimensions. A technology can be decisive at a threshold and satur	THEORY ### 5.1 Acceleration	0.36	0.62	rewritten	rewritten at destination
+L-60-§5.1-p03	Reduce each actor's choice to racing or restraint, with payoffs in a stated measure: - $R_	THEORY ### 5.1 Acceleration	0.18	0.5	rewritten	rewritten at destination
+L-60-§5.1-p04	**Proposition 5.1 (Join or eliminate, and what it rests on) [T].** 1. *In the objective an	SUPPLEMENT ### Proposition 5.1 in full, and proof	0.54	0.79	kept	moved or kept verbatim
+L-60-§5.1-p05	The race is set by the most race-inclined actor, not the average one. That is why any reme	THEORY ### 5.1 Acceleration	0.39	0.4	rewritten	rewritten at destination
+L-60-§5.1-p06	**Proposition 5.2 (Dissipation) [T].** 1. *At $\theta=0$ each actor's loss relative to joi	THEORY ### 5.1 Acceleration	0.25	0.55	rewritten	rewritten at destination
+L-60-§5.1-p07	For $n=4$, $r=1$ and $\ell=0.3c$, $\Delta=1.27\,\Omega/n$ [N]. The ceilings in part (3) ar	THEORY ### 1.3 Values and the protected outcomes	0.0	0.5	check	reviewed: → THEORY §5; SUPPLEMENT S5
+L-60-§5.1-p08	The scaling premise carries the rise in part (3). If the shared loss per unit did not grow	SUPPLEMENT ### Proof of Proposition 5.2	0.44	0.43	kept	moved or kept verbatim
+L-60-§5.1-p09	**The more decisive the advantage, the more of its value is consumed in the race to obtain	THEORY ### 5.1 Acceleration	0.93	1.0	kept	moved or kept verbatim
+L-60-§5.1-p10	**Remark 5.3 (When winnings compound, and the point of enough) [T, standard form].** Let $	THEORY ### 2.2 Three interconnected conditions	0.11	0.5	check	reviewed: → THEORY §5; SUPPLEMENT S5
+L-60-§5.1-p11	The simulated thresholds agree with $\chi r=1$ for $r=1.2$, $1.5$, $2$ and $3$ [N]. - With	THEORY ### 8.2 Profiles, not labels	0.0	0.33	check	reviewed: → THEORY §5; SUPPLEMENT S5
+L-60-§5.1-p12	The same threshold appears as $\rho(r-1)>\delta_f$ when a share $\rho$ of the prize is rei	THEORY ### 2.2 Three interconnected conditions	0.06	0.48	check	reviewed: → THEORY §5; SUPPLEMENT S5
+L-60-§5.1-p13	**Proposition 5.4 (Race-generated hazard and its four levers) [T].** *Play the contest of 	THEORY ### 5.3 Second erosion: correction, and the two ch	0.39	0.85	rewritten	rewritten at destination
+L-60-§5.1-p14	*Assume:* - *$(\mathrm{A_G})$ the conditional hazard load of the irreversible event in rou	THEORY ### 5.3 Second erosion: correction, and the two ch	0.48	0.88	kept	moved or kept verbatim
+L-60-§5.1-p15	*Then* $$h_t=\frac{a\,r_t\Omega_t\,L_t\,(n-1-\theta_t)}{n\big(c_t+(1+\theta_t)L_t\big)},\q	THEORY ### 5.3 Second erosion: correction, and the two ch	0.27	0.76	rewritten	rewritten at destination
+L-60-§5.1-p16	This is a decomposition, not a necessity theorem. The premise $(\mathrm{A_G})$ carries the	THEORY ### 5.3 Second erosion: correction, and the two ch	0.05	0.57	check	reviewed: → THEORY §5; SUPPLEMENT S5
+L-60-§5.1-p17	This is the precise sense of the first consequence of Section 2.4. The race channel grows 	THEORY ### 5.3 Second erosion: correction, and the two ch	0.02	0.5	check	reviewed: → THEORY §5; SUPPLEMENT S5
+L-60-§5.1-p18	**Lemma 5.5 (Nonsummable residual hazard) [T].** *Fix one irreversible event (O1 or O2 in 	THEORY ### 5.3 Second erosion: correction, and the two ch	0.24	0.71	rewritten	rewritten at destination
+L-60-§5.1-p19	With $h_k=0.2/k$, survival falls to $0.34$, $0.22$ and $0.14$ by rounds $100$, $1{,}000$ a	SUPPLEMENT ### Proofs for the race and growth channels	0.31	0.75	rewritten	rewritten at destination
+L-60-§5.1-p20	The substantive work lies in the premise, not in the lemma. **The objective of winning doe	THEORY ### 5.3 Second erosion: correction, and the two ch	0.29	0.59	rewritten	rewritten at destination
+L-60-§5.1-p21	**Remark 5.6 (The frontier switch: what cancer does when the body runs out) [T, N].** Prop	SUPPLEMENT ### Remark 5.3 in full	0.26	0.87	rewritten	rewritten at destination
+L-60-§5.1-p22	Three consequences follow. 1. *If $\theta\ge-(n-1)c_y/\Delta_y$, war among the copies neve	THEORY ### 5.1 Acceleration	0.29	0.83	rewritten	rewritten at destination
+L-60-§5.1-p23	Part (3) is the sharpest reading of the image of cancer. **Among actors whose accounting i	THEORY ### 5.1 Acceleration	0.24	0.44	rewritten	rewritten at destination
+L-60-§5.1-p24	In a toy with four copies of one design, compounding expansion, a finite frontier and a lo	SUPPLEMENT ### Remark 5.3 in full	0.7	0.86	kept	moved or kept verbatim
+L-60-§5.1-p25	Two further runs: - With asymmetric starts, one survivor keeps 17% of the peak and expands	SUPPLEMENT ### Remark 5.3 in full	0.46	0.57	kept	moved or kept verbatim
+L-60-§5.1-p26	One result runs against the narrative and is reported as found: in the run with war, the h	SUPPLEMENT ### Remark 5.3 in full	0.51	0.69	kept	moved or kept verbatim
+L-60-§5.2-p01	Cooperation among rivals is usually sustained by the future: restraint today is rewarded b	THEORY ### 5.2 First erosion: enforcement	0.64	0.92	kept	moved or kept verbatim
+L-60-§5.2-p02	Consider any finite stage game, repeated with discount $\delta\in(0,1)$, in which each act	THEORY ### 5.2 First erosion: enforcement	0.17	0.75	rewritten	rewritten at destination
+L-60-§5.2-p03	**Proposition 5.7 (Decisiveness removes the shadow of the future) [T].** 1. *$a^\ast$ is s	THEORY ### 5.2 First erosion: enforcement	0.15	0.5	rewritten	rewritten at destination
+L-60-§5.2-p04	Across 21,096 random games and parameter settings, the condition agrees with direct evalua	THEORY ### 5.2 First erosion: enforcement	0.05	0.69	rewritten	rewritten at destination
+L-60-§5.2-p05	The folk theorem's promise, that patient actors can sustain any individually rational outc	THEORY ### 5.2 First erosion: enforcement	0.18	0.67	rewritten	rewritten at destination
+L-60-§5.2-p06	**Corollary 5.8 (Relative objectives cannot be held by symmetric punishment) [T].** *Let t	THEORY ### 5.2 First erosion: enforcement	0.29	0.73	rewritten	rewritten at destination
+L-60-§5.2-p07	*Hence no symmetric punishment can hold it below the value of symmetric cooperation. A sym	THEORY ### 5.2 First erosion: enforcement	0.21	0.8	rewritten	rewritten at destination
+L-60-§5.2-p08	This holds in all 1,260 symmetric checks [N]; compare the unbeatability of imitation in re	SUPPLEMENT ### Proof of Corollary 5.5	0.03	0.42	check	reviewed: → THEORY §5; SUPPLEMENT S5
+L-60-§5.2-p09	**Remark 5.9 (An illustration: the faithful-AI game) [N].** In the binary game of Proposit	SUPPLEMENT ### Proof of Corollary 5.6	0.32	0.65	rewritten	rewritten at destination
+L-60-§5.2-p10	With $n=4$, $b=1$, $c=0.3$, $d=0.2$, $\epsilon=1$ and $\delta=0.9$, $\theta^\ast=0.94$. As	SUPPLEMENT ### Proof of Corollary 5.6	0.33	0.8	rewritten	rewritten at destination
+L-60-§5.2-p11	Two scope notes apply. - Because the decisive position is valued conservatively, $\theta_{	SUPPLEMENT ### Proof of Corollary 5.6	0.15	0.52	rewritten	rewritten at destination
+L-60-§5.2-p12	**Proposition 5.10 (What a decisive winner gives) [T].** *A winner holds a total $W$ and d	THEORY ### 5.2 First erosion: enforcement	0.35	0.89	rewritten	rewritten at destination
+L-60-§5.2-p13	After a decisive win, what everyone else receives is set by the winner's objective alone, 	THEORY ### 5.2 First erosion: enforcement	0.38	0.57	rewritten	rewritten at destination
+L-60-§5.3-p01	Correction must see a harm, decide, and act before the harm is irreversible. The pressure 	THEORY ### 5.3 Second erosion: correction, and the two ch	0.44	0.83	kept	moved or kept verbatim
+L-60-§5.3-p02	**Proposition 5.11 (The tempo bound) [T].** *Consider a hazard mode $\dot y=ay+u(t-\tau_c)	THEORY ### 5.3 Second erosion: correction, and the two ch	0.21	0.64	rewritten	rewritten at destination
+L-60-§5.3-p03	When the situation changes faster than correction can follow, correction first loses robus	THEORY ### 5.3 Second erosion: correction, and the two ch	0.66	0.91	kept	moved or kept verbatim
+L-60-§5.3-p04	The step from capability to irreversible loss passes through three quantities, kept apart 	THEORY ### 5.3 Second erosion: correction, and the two ch	0.42	0.94	kept	moved or kept verbatim
+L-60-§5.3-p05	Four premises connect them on a continuation branch. They are premises, not results, and S	THEORY ### 5.3 Second erosion: correction, and the two ch	0.56	0.78	kept	moved or kept verbatim
+L-60-§5.3-p06	- **(X) Hazardous variety grows with capability [A].** On the continuation branch, capabil	THEORY ### 5.3 Second erosion: correction, and the two ch	0.2	0.54	rewritten	rewritten at destination
+L-60-§5.3-p07	The premise is that $U_t/Y_t\to0$ on the continuation branch, uniformly: for each $\vareps	SUPPLEMENT ### Proofs for the race and growth channels	0.3	0.64	rewritten	rewritten at destination
+L-60-§5.3-p08	None of these grounds settles the premise. If AI tools raise the productivity $A_U$ expone	SUPPLEMENT ### Proofs for the race and growth channels	0.22	0.6	rewritten	rewritten at destination
+L-60-§5.3-p09	Whether AI raises contestable coverage as fast as it raises hazardous variety is symmetric	SUPPLEMENT ### Proofs for the race and growth channels	0.18	0.48	rewritten	rewritten at destination
+L-60-§5.3-p10	Under strict U1, (U) is close to definitional for systems beyond human capability, and the	SUPPLEMENT ### Proofs for the race and growth channels	0.87	1.0	kept	moved or kept verbatim
+L-60-§5.3-p11	**Theorem 5.12 (Coverage mismatch on a continuation branch) [T].** *Under (X), (U) with it	THEORY ### 5.3 Second erosion: correction, and the two ch	0.48	0.92	kept	moved or kept verbatim
+L-60-§5.3-p12	With $h=0.05$ and $\varepsilon=0.1$, survival eighty periods after $T_\varepsilon$ is at m	THEORY ### 5.3 Second erosion: correction, and the two ch	0.19	0.6	rewritten	rewritten at destination
+L-60-§5.3-p13	This is the growth channel of risk, distinct from the race channel of Proposition 5.4. It 	THEORY ### 5.3 Second erosion: correction, and the two ch	0.39	0.88	rewritten	rewritten at destination
+L-60-§5.3-p14	**Proposition 5.13 (Freezing and rolling back after a sprint) [T].** *Let hazardous variet	SUPPLEMENT ### Proofs for the race and growth channels	0.38	0.85	rewritten	rewritten at destination
+L-60-§5.3-p15	Take hazardous variety equal to capability's variety, with $g=0.3$, linear coverage $1+0.5	THEORY ### 5.3 Second erosion: correction, and the two ch	0.4	0.83	rewritten	rewritten at destination
+L-60-§5.4-p01	Coordination needs more than aligned incentives. The parties must see the same danger and 	THEORY ### 5.4 Third erosion: shared understanding	0.57	0.75	kept	moved or kept verbatim
+L-60-§5.4-p02	**Proposition 5.14 (Talk under opposed objectives) [T].** 1. *Where two parties' objective	THEORY ### 5.4 Third erosion: shared understanding	0.16	0.46	rewritten	rewritten at destination
+L-60-§5.4-p03	So the more the accounting is relative, the less the words between rivals carry. What rema	THEORY ### 5.4 Third erosion: shared understanding	0.07	0.73	rewritten	rewritten at destination
+L-60-§5.4-p04	The erosion of language has three further channels, each with its own literature. - **Meas	THEORY ### 5.4 Third erosion: shared understanding	0.1	0.42	check	reviewed: → THEORY §5; SUPPLEMENT S5
+L-60-§5.4-p05	The result is that the medium in which a shared understanding would be formed is itself sh	THEORY ### 5.4 Third erosion: shared understanding	0.49	0.88	kept	moved or kept verbatim
+L-60-§5.5-p01	The three erosions share a cause, and growth widens all of them at once. Under the selecti	THEORY ### 1.2 The argument in one page	0.08	0.66	rewritten	rewritten at destination
+L-60-§5.5-p02	Each arm is proved under its own conditions. Their conjunction is a composite claim [T∣A]:	THEORY ### 5.5 The scissors	0.43	0.71	kept	moved or kept verbatim
+L-60-§5.5-p03	**Theorem 5.15 (Classification of contest branches) [T].** *Let AI be an instrument of the	THEORY ### 7.2 Contest branches: what the premise of the 	0.52	0.83	kept	moved or kept verbatim
+L-60-§5.5-p04	**Theorem 5.16 (The dilemma of decisiveness) [T∣A].** *Let AI be an instrument of the cont	THEORY ### 7.2 Contest branches: what the premise of the 	0.19	0.72	rewritten	rewritten at destination
+L-60-§5.5-p05	*Durable restraint then requires that capability of the decisive class be held in common c	THEORY ### 11.3 Four temporal arrangements, and readiness	0.15	0.53	rewritten	rewritten at destination
+L-60-§5.5-p06	*In neither case does the premise justify the race. In the first it buys nothing durable. 	THEORY ### 7.2 Contest branches: what the premise of the 	0.07	0.57	check	reviewed: Theorem 5.16 → Corollaries 5.6, 7.3; narrative sentence → CHANGELOG
+L-60-§5.5-p07	"This is the correct form of an earlier claim, ""the premise that motivates the race is what"	THEORY ## 9. What any adequate arrangement must do	0.0	0.47	check	reviewed: Theorem 5.16 → Corollaries 5.6, 7.3; narrative sentence → CHANGELOG
+L-60-§5.5-p08	It does say that the declared aim of the race, decisive advantage, is the condition under 	TESTS ## 1. Empirical cruxes	0.0	0.61	rewritten	rewritten at destination
+L-60-§5.5-p09	Present evidence suggests that advantage is not yet decisive: open models trail closed one	THEORY ### 7.2 Contest branches: what the premise of the 	0.28	0.87	rewritten	rewritten at destination
+L-60-§5.6-p01	| Outcome | Horizon | Branch | Result | Conditions | |---|---|---|---|---| | Enforced coop	THEORY ### 5.3 Second erosion: correction, and the two ch	0.02	0.44	check	reviewed: summary table deleted as duplicate; scope in each result
+L-60-§5.6-p02	The analysis does **not** establish the following: - that every path through a race ends a	THEORY ### 1.4 What is claimed, and what is not	0.34	0.5	rewritten	rewritten at destination
+L-60-§5.6-p03	These limits are part of the theory. The argument for changing what the system selects doe	THEORY ### 8.3 The alternatives	0.03	0.46	check	reviewed: summary table deleted as duplicate; scope in each result
+L-60-§6-p01	AI enters the meta-attractor of winning in two ways.	THEORY # Changing the AI Trajectory: The Meta-Attractor o	0.29	0.67	rewritten	rewritten at destination
+L-60-§6-p02	1. **As an instrument.** Faithful systems make the game their principals play more effecti	THEORY ## 6. AI: instrument and incarnation	0.3	0.58	rewritten	rewritten at destination
+L-60-§6-p03	Humanity has, at present, no way of coordinating to solve either problem. Instrumental con	THEORY ### 6.4 Incarnation, weak and strong	0.17	0.71	rewritten	rewritten at destination
+L-60-§6.1-p01	Grant perfect alignment to the relevant human principal. The AI is truthful, understands a	"THEORY ### 6.1 What ""perfectly aligned"" means here"	0.33	0.75	rewritten	rewritten at destination
+L-60-§6.1-p02	"Two meanings of ""perfect alignment"" must be kept apart. - **Principal alignment**: each sy"	"THEORY ### 6.1 What ""perfectly aligned"" means here"	0.24	0.77	rewritten	rewritten at destination
+L-60-§6.1-p03	"If ""perfectly aligned"" is defined in the second sense, the change of governing purpose tha"	"THEORY ### 6.1 What ""perfectly aligned"" means here"	0.06	0.46	check	reviewed: → THEORY §6; SUPPLEMENT S6
+L-60-§6.1-p04	The claim is that **alignment within each principal–AI relationship does not, by itself, a	"THEORY ### 6.1 What ""perfectly aligned"" means here"	0.36	0.52	rewritten	rewritten at destination
+L-60-§6.1-p05	**Relation to the alignment literature.** The insufficiency of single-principal alignment 	DISCUSSION ### The alignment literature	0.56	0.87	kept	moved or kept verbatim
+L-60-§6.1-p06	What this paper adds is the mechanism by which the game reproduces itself and its correcto	DISCUSSION ### The alignment literature	0.59	0.79	kept	moved or kept verbatim
+L-60-§6.1-p07	Multi-agent failures include miscoordination and collusion among AI systems as well as con	DISCUSSION ### The alignment literature	0.68	1.0	kept	moved or kept verbatim
+L-60-§6.1-p08	**Faithful to what.** Alignment can target instructions, intentions, revealed preferences,	"THEORY ### 6.1 What ""perfectly aligned"" means here"	0.36	0.52	rewritten	rewritten at destination
+L-60-§6.2-p01	There are $n\ge2$ human principals. Each chooses $a_i\in\{0,1\}$: restraint, or an increme	THEORY ### 6.2 Faithful AI in a harmful game	0.13	0.65	rewritten	rewritten at destination
+L-60-§6.2-p02	**Proposition 6.1 (Faithful AI in a harmful game) [T].** 1. *If $\epsilon(b-d)>c$, racing 	THEORY ### 6.2 Faithful AI in a harmful game	0.18	0.54	rewritten	rewritten at destination
+L-60-§6.2-p03	*Proof.* Changing $a_i$ from 0 to 1 changes $u_i$ by $\epsilon b-c-\epsilon d$, independen	SUPPLEMENT ### Proof of Proposition 6.1	0.28	0.64	rewritten	rewritten at destination
+L-60-§6.2-p04	With $n=4$, $b=1$, $c=0.3$, $d=0.2$ and $\epsilon=1$, racing is dominant and every princip	THEORY ### 6.2 Faithful AI in a harmful game	0.27	0.67	rewritten	rewritten at destination
+L-60-§6.2-p05	Faithful AI can implement each principal's preferred decision perfectly, and the collectiv	THEORY ### 6.2 Faithful AI in a harmful game	0.27	0.52	rewritten	rewritten at destination
+L-60-§6.2-p06	It does not establish actual values of $b,c,d$, rule out cooperation in repeated play (Rem	THEORY ### 6.2 Faithful AI in a harmful game	0.2	0.54	rewritten	rewritten at destination
+L-60-§6.2-p07	Lowering $d$ alone has two sides. It cuts the loss at all-racing: from $1.10$ to $0.70$ an	THEORY ### 6.2 Faithful AI in a harmful game	0.48	1.0	kept	moved or kept verbatim
+L-60-§6.2-p08	The same structure is Proposition 3.6 with the host made explicit: there the weight on win	CLAIMS ## 4. Contribution inventory	0.0	0.86	rewritten	rewritten at destination
+L-60-§6.3-p01	Two points of no return follow from the pressure. 1. **Under the pressure of the game, dec	THEORY ### 6.3 Delegation, and the two points of no retur	0.53	0.79	kept	moved or kept verbatim
+L-60-§6.3-p02	This subsection gives the first in a model. Section 5.3 gave the second.	THEORY ### 5.3 Second erosion: correction, and the two ch	0.0	1.0	rewritten	rewritten at destination
+L-60-§6.3-p03	Each actor chooses whether to delegate consequential decisions in the contest to AI system	SUPPLEMENT ### Proposition 6.2 in full, and Lemma 6.3	0.31	0.4	rewritten	rewritten at destination
+L-60-§6.3-p05	**Proposition 6.2 (Delegation in additive stakes) [T].** 1. *If $k$ others delegate, deleg	SUPPLEMENT ### Proposition 6.2 in full, and Lemma 6.3	0.42	0.73	kept	moved or kept verbatim
+L-60-§6.3-p06	For $n=3$, $r=1$, $L_e=L_c$, $\psi_0=0.01$ and $\psi_1=0.2$, the dominance threshold is $s	THEORY ### 6.3 Delegation, and the two points of no retur	0.25	0.6	rewritten	rewritten at destination
+L-60-§6.3-p07	**Lemma 6.3 (Capacity lock-in) [T].** *Let human capacity $\mathcal K$ to take the delegat	THEORY ### 6.3 Delegation, and the two points of no retur	0.4	0.76	rewritten	rewritten at destination
+L-60-§6.3-p08	The additive payoff is not a survival probability. Let the lock have a survival meaning: w	THEORY ### 6.3 Delegation, and the two points of no retur	0.32	0.79	rewritten	rewritten at destination
+L-60-§6.3-p09	**Proposition 6.4 (Delegation when the lock counts) [T].** 1. *If $q_L=1$ and $Q>0$, then 	THEORY ### 6.3 Delegation, and the two points of no retur	0.24	0.75	rewritten	rewritten at destination
+L-60-§6.3-p10	Part (1) holds for all 20,000 random parameter draws in `checks_v5.py` [N]. It is a strong	CLAIMS ## 7. Disposition of the v6.0 reviews	0.03	0.45	check	reviewed: → THEORY §6; SUPPLEMENT S6
+L-60-§6.3-p11	Part (1) shows that keeping AI out of strategic decision loops whose delegation would lock	THEORY ### 6.3 Delegation, and the two points of no retur	0.29	0.55	rewritten	rewritten at destination
+L-60-§6.3-p12	"The survival form without the lock ($q_L=0$) describes actors who believe that ""our aligne"	THEORY ### 6.3 Delegation, and the two points of no retur	0.91	1.0	kept	moved or kept verbatim
+L-60-§6.3-p13	**Lemma 6.5 (Delegation and the selection of decisions) [T].** *Suppose that, after $T_{\t	THEORY ### 6.3 Delegation, and the two points of no retur	0.32	0.74	rewritten	rewritten at destination
+L-60-§6.3-p14	*Then the share of retained decisions that act on common terms tends to zero.*	THEORY ### 6.3 Delegation, and the two points of no retur	1.0	1.0	kept	moved or kept verbatim
+L-60-§6.3-p15	*If instead a constraint on common terms is an admission condition for every eligible syst	THEORY ### 6.3 Delegation, and the two points of no retur	0.38	0.77	rewritten	rewritten at destination
+L-60-§6.3-p16	The definitional step is separate. An actor that can no longer overrule decisions taken in	SUPPLEMENT ### Proofs of Lemma 6.5, Remark 6.6 and Propositio	0.36	0.62	rewritten	rewritten at destination
+L-60-§6.3-p17	For a reader who counts survival only as the preservation of the unit, delegation acts thr	SUPPLEMENT ### Proofs of Lemma 6.5, Remark 6.6 and Propositio	0.54	0.86	kept	moved or kept verbatim
+L-60-§6.3-p18	The exception in Lemma 6.5 is a design lever. Shared safety constraints enforced as condit	THEORY ### 6.4 Incarnation, weak and strong	0.02	0.75	rewritten	rewritten at destination
+L-60-§6.3-p19	**Remark 6.6 (Faithful delegation transmits the objective).** When decisions are delegated	THEORY ### 6.3 Delegation, and the two points of no retur	0.28	0.82	rewritten	rewritten at destination
+L-60-§6.3-p20	The first is the next subsection's case; the second is the case of Section 6.2.	THEORY ### 2.2 Three interconnected conditions	0.17	0.67	rewritten	rewritten at destination
+L-60-§6.4-p01	The pressure acts on whatever is selected. Trained AI systems are selected: by gradients a	THEORY ### 6.4 Incarnation, weak and strong	0.17	0.54	rewritten	rewritten at destination
+L-60-§6.4-p02	Each of these is usually studied as a property of a training setup. The meta-attractor add	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.05	0.29	check	reviewed: → THEORY §6; SUPPLEMENT S6
+L-60-§6.4-p03	**Proposition 6.7 (The nested reward loop) [T∣A].** *Consider three levels of selection.* 	THEORY ### 6.4 Incarnation, weak and strong	0.47	0.89	kept	moved or kept verbatim
+L-60-§6.4-p04	*Assume that each level chooses what it controls to maximize its own objective, and that l	THEORY ### 6.4 Incarnation, weak and strong	0.1	0.63	rewritten	rewritten at destination
+L-60-§6.4-p05	*So the objective transmitted to the innermost optimizer is, in its relative part, the obj	THEORY ### 6.4 Incarnation, weak and strong	0.12	0.73	rewritten	rewritten at destination
+L-60-§6.4-p06	The proof is the composition of Lemma 3.3 at level 2 with the definition of optimization a	SUPPLEMENT ### Proofs of Lemma 6.5, Remark 6.6 and Propositio	0.32	0.71	rewritten	rewritten at destination
+L-60-§6.4-p07	Three consequences follow. - **Technical alignment inside a single developer is necessary,	THEORY ### 6.4 Incarnation, weak and strong	0.24	0.71	rewritten	rewritten at destination
+L-60-§6.4-p08	An AI system can also be selected *within* a deployment, when decision policies are retain	THEORY ### 6.4 Incarnation, weak and strong	0.03	0.67	rewritten	rewritten at destination
+L-60-§6.5-p01	**Proposition 6.8 (Correction that people cannot understand) [T].** *Let a correction arch	THEORY ### 6.5 Correction by and of AI	0.2	0.59	rewritten	rewritten at destination
+L-60-§6.5-p02	A corrector that cannot be understood can still lower risk, even to a summable sequence. W	THEORY ### 6.5 Correction by and of AI	0.25	0.5	rewritten	rewritten at destination
+L-60-§6.5-p03	Such a corrector does not meet U1: people cannot check its reasons. Whether that is a loss	THEORY ### 6.5 Correction by and of AI	0.15	0.47	rewritten	rewritten at destination
+L-60-§6.5-p04	Under the contest, three further pressures act on such correction, each with its own condi	THEORY ### 8.3 The alternatives	0.06	0.6	rewritten	rewritten at destination
+L-60-§6.5-p05	**Proposition 6.9 (Oversight topology) [T].** *Let human attention $\mathsf B$ cover hazar	THEORY ### 6.5 Correction by and of AI	0.07	0.49	check	reviewed: → THEORY §6; SUPPLEMENT S6
+L-60-§6.5-p06	With $\mathsf f=0.9$ and $k=6$ [N]: - the serial chain catches the problem with probabilit	SUPPLEMENT ### Proofs for Section 6.5	0.36	1.0	rewritten	rewritten at destination
+L-60-§6.5-p07	Measured nested oversight in game settings succeeded 9.4% to 51.7% of the time at a capabi	THEORY ### 6.5 Correction by and of AI	0.04	0.67	rewritten	rewritten at destination
+L-60-§6.5-p08	Scalable oversight can succeed or fail depending on its topology, and on whether each chec	SUPPLEMENT ### Proofs for Section 6.5	0.38	0.74	rewritten	rewritten at destination
+L-60-§6.5-p09	Section 4 shows that selection produces exactly these, through the lineage share $x_{\math	THEORY ### 8.3 The alternatives	0.03	0.71	rewritten	rewritten at destination
+L-60-§6.5-p10	**Remark 6.10 (Prediction and certification).** In a system whose largest Lyapunov exponen	SUPPLEMENT ### Proofs for Section 6.5	0.32	0.67	rewritten	rewritten at destination
+L-60-§6.5-p11	**What happens to safety gains inside the contest.**	THEORY ### 6.5 Correction by and of AI	0.17	0.75	rewritten	rewritten at destination
+L-60-§6.5-p12	**Proposition 6.11 (Risk homeostasis) [T].** *In Proposition 6.2's model with additive sta	SUPPLEMENT ### Proofs for Section 6.5	0.43	0.85	kept	moved or kept verbatim
+L-60-§6.5-p13	With $n=3$, $s=100$, $L_e=1$, $L_c=100$ and $\psi_0=0.01$, the added hazard is $0.0011$, $	SUPPLEMENT ### Proofs for Section 6.5	0.36	0.75	rewritten	rewritten at destination
+L-60-§6.5-p14	Inside the contest, on a stable interior branch away from boundaries and folds, safety gai	THEORY ### 6.5 Correction by and of AI	0.29	0.62	rewritten	rewritten at destination
+L-60-§6.5-p15	Three limits apply. - The result does not establish a permanent floor on residual risk; pa	THEORY ### 11.3 Four temporal arrangements, and readiness	0.08	0.46	check	reviewed: → THEORY §6; SUPPLEMENT S6
+L-60-§6.6-p01	The direction follows from the two problems. **AI should be neither an instrument of the l	THEORY ### 6.6 The direction for AI	0.64	0.78	kept	moved or kept verbatim
+L-60-§6.6-p02	*At the outer level, where the reward is set:* - **Common admission constraints**, enforce	THEORY ### 6.6 The direction for AI	0.22	0.53	rewritten	rewritten at destination
+L-60-§6.6-p03	*At the inner level, in the systems:* - correctability: practical capacity for humans to s	THEORY ### 6.6 The direction for AI	0.44	0.75	kept	moved or kept verbatim
+L-60-§6.6-p04	**Bounded mandates.** Purposes enter every delegated task; what matters is who authorizes 	THEORY ### 6.6 The direction for AI	0.39	0.54	rewritten	rewritten at destination
+L-60-§6.6-p05	**The test for human decision authority (O2).** The test is practical capacity. Humans mus	THEORY ### 6.6 The direction for AI	0.55	1.0	kept	moved or kept verbatim
+L-60-§6.6-p06	A formal override with no usable information or fallback can fail this test. An opaque com	THEORY ### 6.6 The direction for AI	0.48	0.67	kept	moved or kept verbatim
+L-60-§7-p01	Each alternative is given its best case, how it would be installed, what risk remains, and	THEORY ## 8. Comparing paths, and the alternatives on the	0.12	0.47	check	reviewed: → THEORY §8; DISCUSSION X8
+L-60-§7.1-p01	"**Best case.** The strongest form of this position is not ""technical alignment alone"". - *"	DISCUSSION ### Technical alignment and AI-assisted correction	0.69	0.89	kept	moved or kept verbatim
+L-60-§7.1-p02	**What remains.** - Principal alignment does not change the game among principals (Proposi	DISCUSSION ### Technical alignment and AI-assisted correction	0.55	0.71	kept	moved or kept verbatim
+L-60-§7.1-p03	**What it changes.** It acts on tempo and observation, and on the residual harm per unit $	DISCUSSION ### Technical alignment and AI-assisted correction	0.31	0.88	rewritten	rewritten at destination
+L-60-§7.1-p04	**What would show it suffices on the present path.** - The safety of control protocols at 	DISCUSSION ### Technical alignment and AI-assisted correction	0.55	0.88	kept	moved or kept verbatim
+L-60-§7.2-p01	**Best case.** Competition in products and services continues. - Liability and licensing m	DISCUSSION ### Regulated competition with strong correction	0.75	0.96	kept	moved or kept verbatim
+L-60-§7.2-p02	There are precedents of durable safety with unchanged commercial motives: - an industry th	DISCUSSION ### Regulated competition with strong correction	0.95	1.0	kept	moved or kept verbatim
+L-60-§7.2-p03	This is the bounded competition that a cooperative order can contain (V5).	DISCUSSION ### Regulated competition with strong correction	0.62	1.0	kept	moved or kept verbatim
+L-60-§7.2-p04	**Installation.** - Each jurisdiction regulates its own developers. - Coverage must reach 	DISCUSSION ### Regulated competition with strong correction	0.84	0.94	kept	moved or kept verbatim
+L-60-§7.2-p05	**What remains.** - Liability cannot exceed the assets of the liable for catastrophic harm	DISCUSSION ### Regulated competition with strong correction	0.66	0.89	kept	moved or kept verbatim
+L-60-§7.2-p06	**What it changes.** This depends on content, not on the name. - Regulation that changes w	DISCUSSION ### Regulated competition with strong correction	0.48	0.78	kept	moved or kept verbatim
+L-60-§7.2-p07	**What would show it suffices.** Durable restraint despite competitive pressure: - competi	DISCUSSION ### Regulated competition with strong correction	0.6	0.68	kept	moved or kept verbatim
+L-60-§7.3-p01	**Best case.** A leader spends part of its lead on safety: it slows, evaluates and hardens	DISCUSSION ### Leadership and a safety margin	0.97	1.0	kept	moved or kept verbatim
+L-60-§7.3-p02	**Remark 7.1 (What a lead buys) [T, N].** 1. *A lead shrinks even when the follower does n	SUPPLEMENT ### The alternatives: results stated briefly in th	0.34	0.53	rewritten	rewritten at destination
+L-60-§7.3-p03	On their own median estimates, the planners of one detailed scenario judge that a leader s	SUPPLEMENT ### The alternatives: results stated briefly in th	0.69	1.0	kept	moved or kept verbatim
+L-60-§7.3-p04	**What it changes.** It acts on tempo for a time. It keeps the objective of winning. Its b	DISCUSSION ### Leadership and a safety margin	0.72	0.92	kept	moved or kept verbatim
+L-60-§7.3-p05	**What would show it suffices.** - Leads that are not spent on speed. - Evidence that riva	DISCUSSION ### Leadership and a safety margin	0.44	0.88	kept	moved or kept verbatim
+L-60-§7.4-p01	"**Best case.** The strongest form is not ""the right side wins and restrains itself"". It is"	DISCUSSION ### The benign winner: win, bind, share	0.73	0.93	kept	moved or kept verbatim
+L-60-§7.4-p02	In AI the strategy has been proposed in explicitly humanitarian and defensive terms. A coa	DISCUSSION ### The benign winner: win, bind, share	0.6	0.91	kept	moved or kept verbatim
+L-60-§7.4-p03	**Proposition 7.2 (What the race selects) [T].** 1. *No actor can rely on a winner's state	THEORY ### 7.2 Contest branches: what the premise of the 	0.39	0.6	rewritten	rewritten at destination
+L-60-§7.4-p04	Part (2) assumes [A] that restraint before victory and restraint after it are positively c	THEORY ### 7.2 Contest branches: what the premise of the 	0.35	0.56	rewritten	rewritten at destination
+L-60-§7.4-p05	**The commitment tests.** - After a decisive win, what the others receive is set by the wi	DISCUSSION ### The benign winner: win, bind, share	0.72	0.93	kept	moved or kept verbatim
+L-60-§7.4-p06	The historical cases had advantages that were not decisive and not non-saturating, and the	DISCUSSION ### The benign winner: win, bind, share	0.58	0.67	kept	moved or kept verbatim
+L-60-§7.4-p07	**What it changes.** Before victory, nothing in what the system selects for. After victory	DISCUSSION ### The benign winner: win, bind, share	0.42	0.9	kept	moved or kept verbatim
+L-60-§7.4-p08	**What would show it suffices.** Before victory: - binding limits on what victory would co	DISCUSSION ### The benign winner: win, bind, share	0.78	0.85	kept	moved or kept verbatim
+L-60-§7.4-p09	Those are the elements of Section 8. A winner that adopts them has changed what it selects	THEORY ### 8.3 The alternatives	0.36	0.83	rewritten	rewritten at destination
+L-60-§7.5-p01	**Best case.** An actor sprints to a decisive lead and then stops compounding: it freezes 	DISCUSSION ### A finite sprint, then restraint	1.0	1.0	kept	moved or kept verbatim
+L-60-§7.5-p02	**Proposition 7.3 (The finite sprint as a trade-off) [T].** *A finite sprint involves four	SUPPLEMENT ### The alternatives: results stated briefly in th	0.13	0.53	rewritten	rewritten at destination
+L-60-§7.5-p03	A finite sprint can preserve the sprinter's survival while giving up permanent superiority	DISCUSSION ### A finite sprint, then restraint	0.35	0.57	rewritten	rewritten at destination
+L-60-§7.5-p04	**What it changes.** Nothing during the sprint. Restraint afterward could change it, but i	DISCUSSION ### A finite sprint, then restraint	0.26	0.6	rewritten	rewritten at destination
+L-60-§7.6-p01	Two actors bargain over a flow of value 1 per period, with discount $\delta$. Fighting end	SUPPLEMENT ### Proofs of Propositions 5.7 and 5.8	0.48	0.61	kept	moved or kept verbatim
+L-60-§7.6-p02	**Proposition 7.4 (Preventive attack) [T].** 1. *Let $x$ be A's per-period share after the	SUPPLEMENT ### Proofs of Propositions 5.7 and 5.8	0.48	0.77	kept	moved or kept verbatim
+L-60-§7.6-p03	A race to decisive advantage is the textbook condition under which rational actors who wou	THEORY ### 5.2 First erosion: enforcement	0.29	0.5	rewritten	rewritten at destination
+L-60-§7.6-p04	**Proposition 7.5 (Prevention under the preventer's own criterion) [T].** *Let an actor fa	SUPPLEMENT ### The alternatives: results stated briefly in th	0.38	0.58	rewritten	rewritten at destination
+L-60-§7.6-p05	Prevention can therefore be survival-preferred for the preventer. The objections to it are	DISCUSSION ### Deterrence and prevention	0.6	0.87	kept	moved or kept verbatim
+L-60-§7.6-p06	Deterrence by threatened sabotage aims to make a decisive sprint not worth attempting. - *	DISCUSSION ### Deterrence and prevention	0.53	0.9	kept	moved or kept verbatim
+L-60-§7.6-p07	**The hard case.** Let a survival-first actor hold the prior $\mu$ that a capable rival ho	DISCUSSION ### Deterrence and prevention	0.95	1.0	kept	moved or kept verbatim
+L-60-§7.6-p08	In the hard case, coverage of every capable actor (Definition 8.1(a)) comes from consent o	DISCUSSION ### Deterrence and prevention	0.93	0.96	kept	moved or kept verbatim
+L-60-§7.6-p09	An actor that manipulates the shared risk as an instrument (Schelling 1960, 1966) plays ch	SUPPLEMENT ### The alternatives: results stated briefly in th	0.5	0.91	kept	moved or kept verbatim
+L-60-§7.7-p01	**Best case.** Rivals agree to slow and to delay decisive capability, with compute declara	DISCUSSION ### A verified agreement over a contest that remai	1.0	1.0	kept	moved or kept verbatim
+L-60-§7.7-p02	Let $\mathcal O(t)$ be the capability an agreement holds in check (the overhang); $X(t)$ t	SUPPLEMENT ### Proofs for the verified agreement	0.55	0.76	kept	moved or kept verbatim
+L-60-§7.7-p03	**Proposition 7.6 (Commitment under a growing overhang) [T].** 1. *Deterring an irreversib	SUPPLEMENT ### Proofs for the verified agreement	0.68	0.91	kept	moved or kept verbatim
+L-60-§7.7-p04	**Theorem 7.7 (Verification and the value of winning) [T].** *In the assurance game of Pro	THEORY ### 8.3 The alternatives	0.38	0.77	rewritten	rewritten at destination
+L-60-§7.7-p05	**An example.** *AI 2040: Plan A* (Larsen et al. 2026) is a deal among leading powers to s	SUPPLEMENT ### Proofs for the verified agreement	0.42	0.72	kept	moved or kept verbatim
+L-60-§7.7-p06	It aims to end winner-take-all dynamics through many frontier developers, transparency, br	DISCUSSION ### A verified agreement over a contest that remai	0.42	0.78	kept	moved or kept verbatim
+L-60-§7.7-p07	Its own scenario estimates do not show near-certain dissolution: one author's judgment put	DISCUSSION ### A verified agreement over a contest that remai	0.85	0.91	kept	moved or kept verbatim
+L-60-§7.7-p08	**What it changes.** It slows and caps, acting on tempo and decisiveness. It keeps relativ	DISCUSSION ### A verified agreement over a contest that remai	0.78	0.93	kept	moved or kept verbatim
+L-60-§7.8-p01	**Definition 7.8 (Durability tests) [D].** An arrangement is tested along six dimensions, 	THEORY ### 8.2 Profiles, not labels	0.17	0.5	rewritten	rewritten at destination
+L-60-§7.8-p02	The tests apply symmetrically: to every continuation policy, to agreements that keep the c	THEORY ### 8.2 Profiles, not labels	0.37	0.59	rewritten	rewritten at destination
+L-60-§7.8-p03	| Arrangement | D1 Fallback | D2 Breakdown | D3 Authority | D4 Correctors | D5 Strongest v	DISCUSSION ### Profiles and durability, in full	0.62	0.86	kept	moved or kept verbatim
+L-60-§7.9-p01	Survival is computed in one discrete convention: per-period conditional probabilities over	SUPPLEMENT ### Proposition 8.3 in full	0.51	0.85	kept	moved or kept verbatim
+L-60-§7.9-p02	**Proposition 7.9 (Assurance in survival terms at a common horizon) [T].** 1. *The advanta	SUPPLEMENT ### Proposition 8.3 in full	0.25	0.72	rewritten	rewritten at destination
+L-60-§7.9-p03	Numbers for $n=2$ with $p_{L4}=1$, at a horizon where the hazards are as stated [N]: - Wit	SUPPLEMENT ### Proposition 8.3 in full	0.38	0.75	rewritten	rewritten at destination
+L-60-§7.9-p04	The comparison is therefore made at common finite horizons, not at $H=\infty$, where both 	THEORY ### 8.1 The standard of comparison	0.23	0.72	rewritten	rewritten at destination
+L-60-§7.9-p05	**Discounting.** Under a discounted objective, with constant race hazard $h$, race growth 	SUPPLEMENT ### Proposition 8.3 in full	0.4	0.62	kept	moved or kept verbatim
+L-60-§7.10-p01	The comparison does not need a proof that one design is best. It needs a statement of what	THEORY ## 9. What any adequate arrangement must do	0.18	0.82	rewritten	rewritten at destination
+L-60-§7.10-p02	**Proposition 7.10 (Requirements) [T∣A].** *On a branch where a mechanism of Section 2.3 i	THEORY ### 8.1 The standard of comparison	0.08	0.56	check	reviewed: → THEORY §9; proofs S9
+L-60-§7.10-p03	| Requirement | Mechanism it answers | Why it is necessary | Not needed when | |---|---|--	THEORY ## 9. What any adequate arrangement must do	0.21	0.61	rewritten	rewritten at destination
+L-60-§7.10-p04	*R2, R3 and R4 cannot be met by any actor alone (Propositions 8.3, 4.3; Theorem 5.16), and	THEORY ## 9. What any adequate arrangement must do	0.69	1.0	kept	moved or kept verbatim
+L-60-§7.10-p05	The requirements are necessary, not sufficient. The proposition mostly reorganizes results	THEORY ## 9. What any adequate arrangement must do	0.45	0.79	kept	moved or kept verbatim
+L-60-§7.10-p06	**Lemma 7.11 (When an arrangement cannot do worse) [T].** *Compare an arrangement $A$ with	THEORY ### 8.1 The standard of comparison	0.17	0.62	rewritten	rewritten at destination
+L-60-§7.10-p07	*Then $S^A(H)\ge S^C(H)$ at every horizon $H$, for every distribution of dissolution dates	THEORY ### 8.1 The standard of comparison	0.12	0.67	rewritten	rewritten at destination
+L-60-§7.10-p08	The proof couples the two paths period by period through the chain rule (Appendix A). If F	THEORY ### 10.5 Design by function	0.0	0.5	check	reviewed: → THEORY §9; proofs S9
+L-60-§7.10-p09	With dissolution at 2% a period and a fallback that restarts continuation ten periods late	SUPPLEMENT ### Proof of Lemma 8.2	0.83	1.0	kept	moved or kept verbatim
+L-60-§7.10-p10	The lemma turns the comparison into two design conditions that can be checked. - An agreem	THEORY ### 8.1 The standard of comparison	0.54	0.94	kept	moved or kept verbatim
+L-60-§7.10-p11	Where F2 fails, there is no pointwise dominance, and standard D compares the worst cases o	THEORY ### 8.1 The standard of comparison	0.85	1.0	kept	moved or kept verbatim
+L-60-§7.11-p01	**Definition 7.12 (What an arrangement changes) [D].** An arrangement is described by a pr	THEORY ### 8.2 Profiles, not labels	0.26	0.67	rewritten	rewritten at destination
+L-60-§7.11-p02	The *pivot* is the direction in which these profiles move. It changes what the system sele	THEORY ### 8.2 Profiles, not labels	0.05	0.57	check	reviewed: → THEORY §8.2, §12.3; TESTS §3; tables → DISCUSSION X8
+L-60-§7.11-p03	The definition carries a prediction, registered in advance [C]: **arrangements that constr	THEORY ### 8.2 Profiles, not labels	0.17	0.65	rewritten	rewritten at destination
+L-60-§7.11-p05	| Policy | Mechanisms acted on | Changes selection? | Coverage | Survives decisiveness? | 	DISCUSSION ### Profiles and durability, in full	0.81	0.96	kept	moved or kept verbatim
+L-60-§7.11-p06	The comparison at common horizons, policy by policy:	THEORY ### 8.1 The standard of comparison	0.17	0.75	rewritten	rewritten at destination
+L-60-§7.11-p07	| Policy | What it changes | Main residual risk | Crux | |---|---|---|---| | Technical ali	THEORY ### 8.4 The comparison	0.33	0.69	rewritten	rewritten at destination
+L-60-§7.11-p08	**An illustration of the two cruxes [N].** Let the per-period hazard on a path be $0.05$ t	SUPPLEMENT ### An illustration of the two cruxes	0.74	0.92	kept	moved or kept verbatim
+L-60-§7.11-p09	| Path | $H=10$ | $H=30$ | $H=100$ | |---|---|---|---| | Continuation, uncovered share ris	SUPPLEMENT ### An illustration of the two cruxes	0.45	1.0	kept	moved or kept verbatim
+L-60-§7.11-p10	The numbers are illustrative, not estimates. They show the structure of the decision: - If	THEORY ### 8.4 The comparison	0.54	0.76	kept	moved or kept verbatim
+L-60-§7.11-p11	So the comparison turns on two quantities: whether correction on the present path keeps pa	THEORY ### 8.4 The comparison	0.18	0.67	rewritten	rewritten at destination
+L-60-§7.11-p12	**Where the decision criteria disagree.** - Under standard D, the worst case over the just	DISCUSSION ### Profiles and durability, in full	0.4	0.69	kept	moved or kept verbatim
+L-60-§7.11-p13	These disagreements are the normative cruxes, and Section 10 states them. In the illustrat	THEORY ### 8.4 The comparison	0.6	0.88	kept	moved or kept verbatim
+L-60-§7.11-p14	**Conditions under which continuation, or regulated competition, wins (registered in advan	THEORY ### 12.1 The judgment, in tiers	0.08	0.52	check	reviewed: → THEORY §8.2, §12.3; TESTS §3; tables → DISCUSSION X8
+L-60-§7.11-p15	In that case the text will say that regulated competition meets the requirements. It will 	THEORY ### 12.3 Cruxes	0.12	0.75	rewritten	rewritten at destination
+L-60-§7.12-p01	The logic of Section 2.6 has two sources. - Actors hold it, and selection on actions rewar	DISCUSSION ### International relations	0.73	1.0	kept	moved or kept verbatim
+L-60-§7.12-p02	An actor holding it does not stop compounding, because no level of standing makes more sto	DISCUSSION ### International relations	0.67	0.88	kept	moved or kept verbatim
+L-60-§7.12-p03	If a winner's logic is of this kind, falling behind cannot be survived, and every actor ha	DISCUSSION ### International relations	0.51	0.65	kept	moved or kept verbatim
+L-60-§7.12-p04	The first step is the shared assessment of Stage 1 (Section 9.4).	THEORY ### 7.1 The conditions and mechanisms together	0.12	1.0	rewritten	rewritten at destination
+L-60-§7.12-p05	In the vocabulary of international relations, this is defensive realism with one more vari	DISCUSSION ### International relations	0.49	0.82	kept	moved or kept verbatim
+L-60-§7.12-p06	The three outcomes of Proposition 5.7 also correspond to the three cultures of anarchy of 	DISCUSSION ### International relations	0.47	0.86	kept	moved or kept verbatim
+L-60-§7.12-p07	The present theory adds the selection that moves a system between them, and the decisivene	DISCUSSION ### International relations	0.88	0.86	kept	moved or kept verbatim
+L-60-§7.12-p08	**Remark 7.13 (Why insuring against falling behind is not an exit).** One proposal for an 	SUPPLEMENT ### The alternatives: results stated briefly in th	0.31	0.59	rewritten	rewritten at destination
+L-60-§7.12-p09	Two things must be distinguished from it. Defence that makes decisive advantage unattainab	SUPPLEMENT ### The alternatives: results stated briefly in th	0.33	0.6	rewritten	rewritten at destination
+L-60-§8-p01	Section 2 defined the meta-attractor without a sign (Remark 2.4). The same reflexive struc	THEORY ## 10. The generative alternative	0.43	0.57	kept	moved or kept verbatim
+L-60-§8.1-p01	Cooperation is not only a constraint on danger. Its purpose is what AI can do for people w	THEORY ### 10.1 The purpose	0.95	1.0	kept	moved or kept verbatim
+L-60-§8.1-p02	The joint value is very large. The race dissipates it (Proposition 5.2); a change in what 	THEORY ### 10.1 The purpose	0.48	0.7	kept	moved or kept verbatim
+L-60-§8.1-p03	**Authority as a productive capacity (V4).** Authority can coordinate investment, guarante	THEORY ### 10.1 The purpose	0.56	0.75	kept	moved or kept verbatim
+L-60-§8.1-p04	Neither inevitable corruption nor automatic benevolence is assumed. A stated mission is no	THEORY ### 10.1 The purpose	0.46	0.5	kept	moved or kept verbatim
+L-60-§8.1-p05	**Provision that does not become the system.** Taken out of the contest, AI can be what in	THEORY ### 10.1 The purpose	0.39	0.56	rewritten	rewritten at destination
+L-60-§8.1-p06	**Reward for contribution, not rights over correction (V5).** Productive contribution shou	THEORY ### 10.1 The purpose	0.36	0.76	rewritten	rewritten at destination
+L-60-§8.1-p07	**A shared future, stated structurally.** The author's corpus gives the norm of a communit	"THEORY ### 3.7 What ""we are one"" means"	0.23	0.5	rewritten	rewritten at destination
+L-60-§8.2-p01	The author's corpus states two loops with the same reflexive structure and opposite signs.	THEORY ### 10.4 The generative loop and its closure	0.46	0.71	kept	moved or kept verbatim
+L-60-§8.2-p02	The difference is not one of moral taste but of structure. The first loop turns more agent	THEORY ### 10.4 The generative loop and its closure	0.32	0.88	rewritten	rewritten at destination
+L-60-§8.2-p03	The generative loop has four strands. Each is the dual of a mechanism of Section 2.3, and 	THEORY ### 10.4 The generative loop and its closure	0.39	0.75	rewritten	rewritten at destination
+L-60-§8.2-p04	1. **Reasoning instead of winning (讲理 rather than 讲赢).** *Dual of the alienation of langua	THEORY ### 10.4 The generative loop and its closure	0.2	0.61	rewritten	rewritten at destination
+L-60-§8.2-p05	Each strand faces the same questions as the pathological mechanisms. - How does it keep ob	THEORY ### 10.4 The generative loop and its closure	0.38	0.93	rewritten	rewritten at destination
+L-60-§8.2-p06	The last question is the guardian test of Section 8.7. The author's corpus records the war	THEORY ### 10.4 The generative loop and its closure	0.06	0.5	check	reviewed: → THEORY §10; DISCUSSION X10
+L-60-§8.2-p07	The criterion is generative or degenerative, not cooperative or competitive. Cooperation o	THEORY ### 10.4 The generative loop and its closure	0.88	0.95	kept	moved or kept verbatim
+L-60-§8.2-p08	**Is the generative order an attractor?** Its purpose is a value [V]. Its strands are defi	THEORY ### 10.4 The generative loop and its closure	0.22	0.68	rewritten	rewritten at destination
+L-60-§8.3-p01	Four safeguards make consequences return to their source on the host of Section 3. - **(I1	THEORY ### 10.3 Safeguards, verification and participatio	0.3	0.7	rewritten	rewritten at destination
+L-60-§8.3-p02	**Definition 8.1 (An arrangement that changes what is selected) [D].** An arrangement chan	THEORY ### 11.3 Four temporal arrangements, and readiness	0.07	0.37	check	reviewed: → THEORY §10; DISCUSSION X10
+L-60-§8.3-p03	The definition constrains functions, not institutional form. One institution can meet it. 	THEORY ### 8.2 Profiles, not labels	0.19	0.45	rewritten	rewritten at destination
+L-60-§8.3-p04	Let selection be replicator dynamics among carriers that differ only in load. Let a carrie	THEORY ### 10.3 Safeguards, verification and participatio	0.2	0.78	rewritten	rewritten at destination
+L-60-§8.3-p05	**Theorem 8.2 (Sufficient safeguards, and a necessary condition) [T].** 1. *Sufficiency. U	THEORY ### 10.3 Safeguards, verification and participatio	0.38	0.75	rewritten	rewritten at destination
+L-60-§8.3-p06	Part (1) is sufficient, and part (3) is necessary in the weak sense stated. The transient 	THEORY ### 10.3 Safeguards, verification and participatio	0.57	0.9	kept	moved or kept verbatim
+L-60-§8.3-p07	**Proposition 8.3 (No unilateral solution) [T].** *Assume H0 and H1.* 1. *While $\tau_{\te	THEORY ## 9. What any adequate arrangement must do	0.46	0.83	kept	moved or kept verbatim
+L-60-§8.3-p08	Part (1) is the unilateral face of Lemma 3.3(2), and part (2) is its face among rule-maker	THEORY ## 9. What any adequate arrangement must do	0.04	0.62	rewritten	rewritten at destination
+L-60-§8.4-p01	**Proposition 8.4 (A common frontier changes the failure mode) [T].** *Let the value of ca	SUPPLEMENT ### A common frontier	0.58	0.83	kept	moved or kept verbatim
+L-60-§8.4-p02	A common frontier does not remove the second order. Allocation within a joint project is i	THEORY ### 10.2 What winning confers: sharing, convertibi	0.48	0.75	kept	moved or kept verbatim
+L-60-§8.4-p03	There are $n$ actors. Cooperators hold effort $e_c$; racers choose theirs. Whoever wins th	SUPPLEMENT ### A common frontier	0.47	0.79	kept	moved or kept verbatim
+L-60-§8.4-p04	**Proposition 8.5 (A common frontier in the $n$-player game) [T, N].** *Take $n=4$, $\Omeg	SUPPLEMENT ### A common frontier	0.25	0.55	rewritten	rewritten at destination
+L-60-§8.4-p05	What makes cooperation pay in the construct is that cooperators do not subordinate one ano	SUPPLEMENT ### A common frontier	0.36	0.52	rewritten	rewritten at destination
+L-60-§8.4-p06	What can be shared, and what sharing does, need to be stated exactly. Divide the prize of 	THEORY ### 10.2 What winning confers: sharing, convertibi	0.54	0.87	kept	moved or kept verbatim
+L-60-§8.4-p07	**Proposition 8.6 (Two ways to share, and what changes the direction) [T].** *Take the con	THEORY ### 10.2 What winning confers: sharing, convertibi	0.19	0.64	rewritten	rewritten at destination
+L-60-§8.4-p08	[N], with $n=4$, $r=1$, $c=1$ and $\Omega_e=1$: - Without a positional part, the uninvadab	SUPPLEMENT ### Proof of Proposition 10.3	0.2	0.87	rewritten	rewritten at destination
+L-60-§8.4-p09	The proposition separates three levers, and only the third changes the direction of the pr	THEORY ### 10.2 What winning confers: sharing, convertibi	0.16	0.56	rewritten	rewritten at destination
+L-60-§8.4-p10	The positional part cannot be divided. Lowering decisiveness does not remove it either, si	THEORY ### 10.2 What winning confers: sharing, convertibi	0.8	0.91	kept	moved or kept verbatim
+L-60-§8.4-p11	**Remark 8.7 (Concentration at two orders).** Concentration works in opposite directions a	SUPPLEMENT ### Proof of Proposition 10.3	0.35	0.58	rewritten	rewritten at destination
+L-60-§8.4-p12	The design that serves both is to merge the frontier and to disperse and insulate correcti	THEORY ### 10.2 What winning confers: sharing, convertibi	0.25	0.68	rewritten	rewritten at destination
+L-60-§8.5-p01	**Proposition 8.8 (Rival verification) [T].** *Let the rival's verifier have a full inboun	THEORY ### 10.3 Safeguards, verification and participatio	0.43	0.88	kept	moved or kept verbatim
+L-60-§8.5-p02	There are five limits. - Rival verifiers raise false alarms, which joint resolution must a	SUPPLEMENT ### Proofs of Propositions 10.6 and 10.7	0.31	0.43	rewritten	rewritten at destination
+L-60-§8.5-p03	Two actors have private capability types, strong or weak, with costs $c_s<c_w$, each stron	SUPPLEMENT ### Proofs of Propositions 10.6 and 10.7	0.68	0.83	kept	moved or kept verbatim
+L-60-§8.5-p04	**Proposition 8.9 (Participation) [T].** 1. *Efficiency. Under complete information and tr	SUPPLEMENT ### Proofs of Propositions 10.6 and 10.7	0.22	0.6	rewritten	rewritten at destination
+L-60-§8.5-p05	With $c_s/c_w=0.1$, $\Omega=1$, $L_b=0$, $S_a=1$ and every $\Phi=1$, the sum of suprema is	SUPPLEMENT ### Proofs of Propositions 10.6 and 10.7	0.79	1.0	kept	moved or kept verbatim
+L-60-§8.5-p06	Rare strong types make each strong type expect to meet a weak one, and expect much from th	SUPPLEMENT ### Proofs of Propositions 10.6 and 10.7	0.16	0.61	rewritten	rewritten at destination
+L-60-§8.5-p07	Proposition 8.9 also states the cost of a principle. Participation benefits, voting rights	THEORY ### 10.3 Safeguards, verification and participatio	0.79	0.93	kept	moved or kept verbatim
+L-60-§8.6-p01	The design question is usually posed along ideological axes: centralization or decentraliz	THEORY ### 10.5 Design by function	0.49	0.85	kept	moved or kept verbatim
+L-60-§8.6-p02	**Definition 8.10 (The correctable kernel) [D].** The *correctable kernel* is the set of s	THEORY ### 8.1 The standard of comparison	0.34	0.79	rewritten	rewritten at destination
+L-60-§8.6-p03	Leaving the kernel is what O1 and O2 name. Standard D's preference for keeping options of 	THEORY ### 8.1 The standard of comparison	0.38	0.75	rewritten	rewritten at destination
+L-60-§8.6-p04	**Proposition 8.11 (A point of enough) [T].** *Let the per-period residual hazard on the g	THEORY ### 5.3 Second erosion: correction, and the two ch	0.42	0.8	kept	moved or kept verbatim
+L-60-§8.6-p05	With $\bar h=0.05$, capability frozen at a need level of $8$ and coverage growing from $1$	THEORY ### 5.3 Second erosion: correction, and the two ch	0.18	0.67	rewritten	rewritten at destination
+L-60-§8.6-p06	"This is the precise form of ""growth is not the danger; the mind is"". The race channel of P"	THEORY ### 5.3 Second erosion: correction, and the two ch	0.2	0.81	rewritten	rewritten at destination
+L-60-§8.6-p07	**Function and form.** Each function of the design takes the form its mechanism requires.	THEORY ### 10.5 Design by function	0.0	1.0	rewritten	rewritten at destination
+L-60-§8.6-p08	| Function | What the mechanism requires | Form that follows | |---|---|---| | Common cons	THEORY ### 10.5 Design by function	0.52	0.85	kept	moved or kept verbatim
+L-60-§8.6-p09	The table answers the question of centralization by function. A common rule and a common c	THEORY ### 10.5 Design by function	0.0	0.62	rewritten	rewritten at destination
+L-60-§8.6-p10	**Federations as an illustration.** A federation shows the whole pattern in one constituti	THEORY ### 10.5 Design by function	0.29	0.8	rewritten	rewritten at destination
+L-60-§8.6-p11	The same federal form can select for winning or for contribution. What decides is not the 	THEORY ### 10.5 Design by function	0.41	0.9	kept	moved or kept verbatim
+L-60-§8.6-p12	**A candidate configuration.** One configuration is developed far enough to expose its ass	DISCUSSION ## X10. The design in full	0.38	0.65	rewritten	rewritten at destination
+L-60-§8.6-p13	| Function | Design | Why (result) | |---|---|---| | Purpose and its revision | A charter 	DISCUSSION ### Functions, held separately	0.31	0.67	rewritten	rewritten at destination
+L-60-§8.6-p14	Bounded competition continues inside the Compact. Providers compete on usefulness, cost an	DISCUSSION ### Functions, held separately	0.41	0.88	kept	moved or kept verbatim
+L-60-§8.7-p01	Every remedy for the selection of selectors is itself a selector. Philosopher-kings, pries	THEORY ### 10.4 The generative loop and its closure	0.51	0.57	kept	moved or kept verbatim
+L-60-§8.7-p02	**Remark 8.12 (The guardian test).** Every arrangement, and every institution within it, i	THEORY ### 10.4 The generative loop and its closure	0.68	0.86	kept	moved or kept verbatim
+L-60-§8.7-p03	The Compact faces these questions and the durability tests of Definition 7.8, and six hard	DISCUSSION ### Durability, by the tests of Definition 8.5	0.07	0.4	check	reviewed: → THEORY §10; DISCUSSION X10
+L-60-§8.7-p04	**An adverse finding against a weaker participant.** An evaluator reports dangerous conduc	DISCUSSION ### Hard cases	0.53	0.72	kept	moved or kept verbatim
+L-60-§8.7-p05	**An adverse finding against the leading provider.** Suspending it could interrupt service	DISCUSSION ### Hard cases	0.68	0.88	kept	moved or kept verbatim
+L-60-§8.7-p06	**A coalition of insiders.** Rival elites agree on mutual secrecy and immunity while weake	DISCUSSION ### Hard cases	0.85	0.92	kept	moved or kept verbatim
+L-60-§8.7-p07	**An unjustified restriction.** The Compact is used to contain a developing participant. T	DISCUSSION ### Hard cases	0.89	1.0	kept	moved or kept verbatim
+L-60-§8.7-p08	**Succession and withdrawal.** A major participant changes leadership or withdraws. - Revi	DISCUSSION ### Hard cases	0.52	0.81	kept	moved or kept verbatim
+L-60-§8.7-p09	**Loss of an essential service.** A provider fails or an outage occurs. Redundancy, escrow	DISCUSSION ### Hard cases	0.53	0.78	kept	moved or kept verbatim
+L-60-§8.7-p10	The durability tests give the following results for the design.	EVIDENCE ## EV10. Plan A of AI 2040: figures used in the sy	0.12	0.75	rewritten	rewritten at destination
+L-60-§8.7-p11	| Test | Result for the Compact | Status | |---|---|---| | D1 Fallback | A race from a low	DISCUSSION ### Durability, by the tests of Definition 8.5	0.5	0.82	kept	moved or kept verbatim
+L-60-§8.7-p12	The design does not eliminate the hazard of breakdown or the case of violation by the stro	DISCUSSION ### Durability, by the tests of Definition 8.5	0.63	0.83	kept	moved or kept verbatim
+L-60-§8.7-p13	These are hypotheses about the design. They are not established results, and Section 10 tr	DISCUSSION ### Durability, by the tests of Definition 8.5	0.25	0.5	rewritten	rewritten at destination
+L-60-§9-p01	An attractive end state is not a reachable one. The transition must be survivable at every	THEORY ## 11. A reachable transition	0.33	0.52	rewritten	rewritten at destination
+L-60-§9.1-p01	Reduce the interaction between an actor and the rest to two actions: cooperate (restrain u	SUPPLEMENT ### Proofs for the verified agreement	0.12	0.62	rewritten	rewritten at destination
+L-60-§9.1-p02	**Proposition 9.1 (Assurance) [T].** 1. *The expected advantage of cooperating is $\varpi 	SUPPLEMENT ### Proofs for the verified agreement	0.28	0.77	rewritten	rewritten at destination
+L-60-§9.1-p03	Trust has three meanings: - $\varpi$, the belief that the other will choose to cooperate; 	THEORY ### 11.1 Trust, and what relaxes it	0.24	0.71	rewritten	rewritten at destination
+L-60-§9.1-p04	Reliable instruments let parties cooperate without good will. But the instruments need rel	THEORY ### 11.1 Trust, and what relaxes it	0.34	0.55	rewritten	rewritten at destination
+L-60-§9.1-p05	**Corollary 9.2 (What relaxes the trust constraints) [T].** 1. *Lowering the private value	THEORY ### 11.1 Trust, and what relaxes it	0.57	0.91	kept	moved or kept verbatim
+L-60-§9.1-p06	Not every obstacle to cooperation is a lack of trust.	THEORY ### 11.1 Trust, and what relaxes it	0.43	0.5	kept	moved or kept verbatim
+L-60-§9.1-p07	| Obstacle | In the model | Intervention | |---|---|---| | Misjudged shared losses | Perce	THEORY ### 11.1 Trust, and what relaxes it	0.13	0.63	rewritten	rewritten at destination
+L-60-§9.2-p01	The purpose of this theory is prediction for the sake of coordination. When an outcome tha	THEORY ## 0. Why this theory	0.25	0.65	rewritten	rewritten at destination
+L-60-§9.2-p02	Sharing the prediction meets the third erosion. Where objectives are opposed, words betwee	THEORY ### 11.2 Prediction, evidence and signals	0.12	0.52	rewritten	rewritten at destination
+L-60-§9.2-p03	Under common priors and rational updating, mutual optimism alone cannot produce war (Fey a	THEORY ### 11.2 Prediction, evidence and signals	0.4	0.7	kept	moved or kept verbatim
+L-60-§9.2-p04	**Proposition 9.3 (When keeping AI out of one's decision loops is a signal) [T].** *A send	SUPPLEMENT ### Proofs of Corollary 11.1 and Proposition 11.2	0.57	0.83	kept	moved or kept verbatim
+L-60-§9.2-p05	With $k_S=-0.05$, $k_R=0.30$, $G_S=0.40$ and $G_R=0.20$, separation holds. If the step can	THEORY ### 11.2 Prediction, evidence and signals	0.18	0.58	rewritten	rewritten at destination
+L-60-§9.2-p06	Verifiable conduct corrects one kind of attribution and not the other (Section 2.6). It ca	THEORY ### 11.2 Prediction, evidence and signals	0.27	0.6	rewritten	rewritten at destination
+L-60-§9.3-p01	Stopping, slowing, pausing and keeping AI out of the contest are different choices. They a	THEORY ### 11.3 Four temporal arrangements, and readiness	0.33	1.0	rewritten	rewritten at destination
+L-60-§9.3-p02	- **E1: AI out of the contest.**   - *Narrow form:* human authority over strategic and coe	THEORY ### 11.3 Four temporal arrangements, and readiness	0.25	0.64	rewritten	rewritten at destination
+L-60-§9.3-p03	Development directed at need has a point of enough and meets E3 of itself (Proposition 8.1	THEORY ### 11.3 Four temporal arrangements, and readiness	0.22	0.54	rewritten	rewritten at destination
+L-60-§9.3-p04	**Proposition 9.4 (A pause is valued by what changes during it) [T].** 1. *Mere delay. Sup	THEORY ### 11.3 Four temporal arrangements, and readiness	0.29	0.73	rewritten	rewritten at destination
+L-60-§9.3-p05	So a pause buys an opportunity: time to change the causal conditions. These include improv	THEORY ### 11.3 Four temporal arrangements, and readiness	0.16	0.48	rewritten	rewritten at destination
+L-60-§9.3-p06	**Definition 9.5 (Readiness to resume) [D].** Readiness is assessed along seven dimensions	THEORY ### 11.3 Four temporal arrangements, and readiness	0.68	1.0	kept	moved or kept verbatim
+L-60-§9.3-p07	| Dimension | Question | Indicators | |---|---|---| | Q1 Technical reliability | Has the r	THEORY ### 11.3 Four temporal arrangements, and readiness	0.36	0.69	rewritten	rewritten at destination
+L-60-§9.3-p08	These are dimensions to operationalize, not a checklist proved to be sufficient. They do n	THEORY ### 11.3 Four temporal arrangements, and readiness	0.53	0.86	kept	moved or kept verbatim
+L-60-§9.3-p09	**Narrow E1 and the value of commitment.** One objection to narrow E1 comes from deterrenc	DISCUSSION ### Narrow E1 and the value of commitment	0.49	0.77	kept	moved or kept verbatim
+L-60-§9.3-p10	**The order.** E1 first: it keeps humans as the players, and it is the one exit that is a 	THEORY ### 11.3 Four temporal arrangements, and readiness	0.23	0.53	rewritten	rewritten at destination
+L-60-§9.3-p11	**Feasibility.** - Each actor can take part of E1 alone, and taken verifiably it is the si	DISCUSSION ### Feasibility	0.89	1.0	kept	moved or kept verbatim
+L-60-§9.4-p01	The pathway below is a candidate to be tested, not a claim that every setting should follo	DISCUSSION ### The staged pathway, by commitment	0.69	0.88	kept	moved or kept verbatim
+L-60-§9.4-p02	| Stage | Actors | What is committed | What each gains | What each concedes | Incentive to	DISCUSSION ### The staged pathway, by commitment	0.51	0.75	kept	moved or kept verbatim
+L-60-§9.4-p03	Each stage acts on particular mechanisms of Section 2.3, and each meets a compensating loo	THEORY ### 10.5 Design by function	0.0	0.6	rewritten	rewritten at destination
+L-60-§9.4-p04	| Stage | Mechanisms acted on | Compensating loop to anticipate | Indicator of progress | 	THEORY ### 11.4 A staged pathway	0.34	0.73	rewritten	rewritten at destination
+L-60-§9.4-p05	**Dwell times.** Under the lock-in of Section 4, a change that is reversed before the slow	THEORY ### 11.3 Four temporal arrangements, and readiness	0.03	0.47	check	reviewed: → THEORY §11; DISCUSSION X11
+L-60-§9.4-p06	**Crisis windows.** Arrangements of this kind are often adopted when a crisis opens a wind	DISCUSSION ### Crisis windows and standing	0.61	0.84	kept	moved or kept verbatim
+L-60-§9.4-p07	Three groups need standing at every stage, because they cannot leave the shared exposure: 	DISCUSSION ### Crisis windows and standing	0.74	0.92	kept	moved or kept verbatim
+L-60-§9.4-p08	The affected persons' chamber and the service guarantees of Section 8.6 are how they get i	DISCUSSION ### Crisis windows and standing	0.38	0.5	rewritten	rewritten at destination
+L-60-§9.4-p09	**Where things stand.** Stage 1 has seeds: an international scientific assessment of AI sa	THEORY ### 11.4 A staged pathway	0.3	0.65	rewritten	rewritten at destination
+L-60-§9.5-p01	**Proposition 9.6 (Requirements of a reachable path) [T].** *A path that changes what is s	THEORY ### 11.5 Requirements of a reachable path, and pre	0.28	0.59	rewritten	rewritten at destination
+L-60-§9.6-p01	The nuclear, biological and industrial records show what has made restraint among rivals w	THEORY ### 11.5 Requirements of a reachable path, and pre	0.07	0.67	rewritten	rewritten at destination
+L-60-§9.6-p02	| Precedent | What made it work or fail | What it shows | |---|---|---| | The Acheson–Lili	DISCUSSION ### Precedents, corrected against the sources	0.58	0.81	kept	moved or kept verbatim
+L-60-§9.6-p03	Two further facts qualify the record. The Cold War ended by the internal collapse of one s	DISCUSSION ### Precedents, corrected against the sources	0.39	0.59	rewritten	rewritten at destination
+L-60-§9.7-p01	For frontier training today, the dimensions of Definition 9.5 stand as follows [O]. - **Q1	THEORY ### 11.3 Four temporal arrangements, and readiness	0.24	0.67	rewritten	rewritten at destination
+L-60-§9.7-p02	On these indicators, resuming unchanged after a pause would repeat the process that made t	THEORY ### 11.3 Four temporal arrangements, and readiness	0.79	1.0	kept	moved or kept verbatim
+L-60-§10.1-p01	**[R]** Under decision standard D, given the present evidence, a change in what the system	THEORY ### 12.1 The judgment, in tiers	0.17	0.51	rewritten	rewritten at destination
+L-60-§10.1-p02	The first steps are those of Stages 1 and 2 of Section 9.4, and their seeds already exist.	THEORY ### 12.1 The judgment, in tiers	0.08	0.67	rewritten	rewritten at destination
+L-60-§10.1-p03	The judgment has a definite scope. The analysis gives reasons to build independent correct	THEORY ### 8.1 The standard of comparison	0.03	0.45	check	reviewed: → THEORY §12; TESTS
+L-60-§10.2-p01	The judgment follows a chain. Each link has its own support, and each can fail separately.	THEORY ### 1.2 The argument in one page	0.06	0.38	check	reviewed: → THEORY §12; TESTS
+L-60-§10.2-p02	"**Two senses of ""root"".** The chain uses the word in two senses, and they should not be co"	THEORY ### 12.2 Why, and where the leverage is	0.43	0.8	kept	moved or kept verbatim
+L-60-§10.3-p01	| Crux | What it is | Present evidence | What would change the recommendation | Next measu	TESTS ## 1. Empirical cruxes	0.39	0.66	rewritten	rewritten at destination
+L-60-§10.3-p02	If C1 and C2 were both measured and favourable, the diagnosis of the present path would we	THEORY ### 12.3 Cruxes	0.26	0.67	rewritten	rewritten at destination
+L-60-§10.4-p01	Three outcomes would redirect it, and they are classified before seeing them. 1. **Correct	TESTS ## 4. What would redirect the argument	0.53	0.81	kept	moved or kept verbatim
+L-60-§10.5-p01	Each test states the prediction of this theory and at least one contrary prediction of an 	TESTS # V6.1 tests, cruxes and research programme	0.24	0.54	rewritten	rewritten at destination
+L-60-§10.5-p02	| Test | What is measured | This theory predicts | An alternative predicts | |---|---|---|	TESTS ## 5. Registered tests	0.16	0.55	rewritten	rewritten at destination
+L-60-§10.5-p03	Two further predictions carry over from earlier versions: - In deployed delegation, safety	TESTS ## 5. Registered tests	0.71	0.95	kept	moved or kept verbatim
+L-60-§10.6-p01	The author's pilot experiment on the mechanism of Section 4 ran once with 20 seeds. Of its	TESTS ## 8. Research programme	0.52	0.79	kept	moved or kept verbatim
+L-60-§10.6-p02	A simulator that rewards capture directly establishes only its programmed mechanism. Each 	TESTS ## 8. Research programme	0.93	1.0	kept	moved or kept verbatim
+L-60-§10.6-p03	Two models are deferred to this programme rather than used in the argument. - A slow varia	TESTS ## 8. Research programme	0.32	0.6	rewritten	rewritten at destination
+L-60-§10.7-p01	The drafts of this theory, the planning memos that shaped this version and most of its rev	TESTS ## 9. Independence of review	0.57	0.83	kept	moved or kept verbatim
+L-60-§10.8-p01	Wherever carriers are selected by relative success, and success can be reinvested in the c	THEORY ### 2.2 Three interconnected conditions	0.26	0.67	rewritten	rewritten at destination
+L-60-§10.8-p02	The pressure has three consequences. It accelerates. It makes correction harder, because c	THEORY ### 1.2 The argument in one page	0.1	0.45	check	reviewed: → THEORY §12; TESTS
+L-60-§10.8-p03	AI enters in two places. It is the most powerful instrument the logic has had: a faithful 	THEORY ### 6.4 Incarnation, weak and strong	0.08	0.59	check	reviewed: → THEORY §12; TESTS
+L-60-§10.8-p04	The logic is locally rational and systemically false. It wins inside the game while deplet	THEORY ### 12.4 Conclusion	0.57	0.76	kept	moved or kept verbatim
+L-60-§10.8-p05	The way out is not to abolish competition, growth or selection. It is to change what the s	THEORY ### 12.4 Conclusion	0.78	0.88	kept	moved or kept verbatim
+L-60-§10.8-p06	We are part of a larger process of becoming, and it is a good one. Humanity has a great fu	THEORY ### 12.4 Conclusion	1.0	1.0	kept	moved or kept verbatim
+L-60-§A.0-p01	Each assumption is listed with what changes if it is dropped. - (A1) Exposure to the host 	SUPPLEMENT ## S0. Conventions	0.67	0.87	kept	moved or kept verbatim
+L-60-§A.0-p02	Symbols are local to their section where a family would otherwise collide. Hazardous varie	THEORY ### 11.3 Four temporal arrangements, and readiness	0.0	0.55	check	reviewed: proof → SUPPLEMENT, rewritten for V6.1 notation
+L-60-§A.2-p01	**Remark 2.3.** The characteristic polynomial is $(\lambda-1+\mu)(\lambda-1+\delta)-ab=0$,	SUPPLEMENT ### Proof of Remark 2.5	0.4	0.55	kept	moved or kept verbatim
+L-60-§A.3-p01	**Lemma 3.3.** 1. A relative rule satisfies $F(p,\pi+G\mathbf 1)=F(p,\pi)$ at every instan	SUPPLEMENT ### Proof of Lemma 3.3	0.19	0.59	rewritten	rewritten at destination
+L-60-§A.3-p02	**Proposition 3.4.** - (1) With $\phi_k=\phi_l$, $\pi_k-\pi_l=(\nu-\tau_{\text{eff}})(e_k-	SUPPLEMENT ### Proof of Proposition 3.4	0.2	0.57	rewritten	rewritten at destination
+L-60-§A.3-p03	**Proposition 3.5.** Write $\Delta\bar\pi_{-i}=(n\bar\Delta-\Delta\pi_i)/(n-1)$. Then $$\D	SUPPLEMENT ### Proof of Proposition 3.5, and measuring $\thet	0.03	0.45	check	reviewed: proof → SUPPLEMENT, rewritten for V6.1 notation
+L-60-§A.3-p04	**Proposition 3.6 and Remark 3.7.** - With $\bar\pi=\frac1n\sum_j\pi_j$, $\pi_k-\bar\pi$ g	SUPPLEMENT ### Full statement and proof of Proposition 3.7	0.24	0.88	rewritten	rewritten at destination
+L-60-§A.3-p05	**Proposition 3.9.** Expanding, $O_i=\Omega(1-\frac{\theta}{n-1})w_i-(c+(1+\theta)\ell)e_i	SUPPLEMENT ### Proof of Proposition 3.6	0.13	0.42	rewritten	rewritten at destination
+L-60-§A.3-p06	**Lemma 3.10.** For groups $g$ with fitness $w_g$ and mean trait $z_g$, the Price equation	THEORY ### 3.6 No outside	0.05	0.44	check	reviewed: proof → SUPPLEMENT, rewritten for V6.1 notation
+L-60-§A.3-p07	**Proposition 3.11.** 1. Contestants who weigh one another fully maximize their total $\Om	SUPPLEMENT ### Proof of Proposition 3.11	0.25	0.48	rewritten	rewritten at destination
+L-60-§A.4-p01	**Proposition 4.2.** - Appropriable support keyed to the carrier obeys $\dot z^\chi_i=\var	SUPPLEMENT ### Proof of Proposition 4.3, and the effect of sc	0.32	0.68	rewritten	rewritten at destination
+L-60-§A.4-p02	**Proposition 4.3.** - (1) Two carriers that differ only in $u$ are affected identically b	SUPPLEMENT ### Full statement and proof of Proposition 4.4	0.46	0.89	kept	moved or kept verbatim
+L-60-§A.4-p03	**Proposition 4.4.** - With $L_i=1$ and uniform $d$, $M=\hat A/d$ and $q^\ast=(\chi\hat Y/	SUPPLEMENT ### Full statement and proof of Proposition 4.5	0.31	0.82	rewritten	rewritten at destination
+L-60-§A.4-p04	**Proposition 4.6.** - (1) $\tilde V$ increases in $V$ and equals $V_{\text{alarm}}$ at $V	SUPPLEMENT ### Proof of Proposition 4.7, and the late alarm	0.45	1.0	kept	moved or kept verbatim
+L-60-§A.4-p05	Remark 4.7(1): at $V=V_{\text{target}}$ and $m\le\beta_{\text{in}}$, $\tilde V\le a_{\text	THEORY ### 4.4 Masking, and alarms that do not miss	0.0	0.75	rewritten	rewritten at destination
+L-60-§A.4-p06	**Field lemma.** $[0,1]^D\times[0,\infty)^D$ is forward invariant, $\limsup_tz_i(t)\le\sum	SUPPLEMENT ### The field model	0.59	1.0	kept	moved or kept verbatim
+L-60-§A.4-p07	**Proposition 4.8.** - (1) At $Z_{\mathcal C}$ the Jacobian is block lower-triangular, wit	SUPPLEMENT ### The field model	0.61	1.0	kept	moved or kept verbatim
+L-60-§A.4-p08	**Proposition 4.9.** (1) By induction on the hull, using a lower bound on rule support. (2	SUPPLEMENT ### The field model	0.22	1.0	rewritten	rewritten at destination
+L-60-§A.4-p09	**Proposition 4.10.** - The frozen share drives $z\to b_px_p/d$. The equilibria are $(0,0)	SUPPLEMENT ### The field model	0.95	1.0	kept	moved or kept verbatim
+L-60-§A.4-p10	**Theorem 4.11.** - By H1 and Proposition 3.4(3), load tends to $\bar e$ and $V$ declines 	SUPPLEMENT ### Proof of Theorem 4.12, and an illustration	0.72	0.69	kept	moved or kept verbatim
+L-60-§A.5-p01	**Proposition 5.1.** - (1) compares $S_i^O$ with $P_i^O$; in Proposition 3.9's contest, st	SUPPLEMENT ### Proposition 5.1 in full, and proof	0.35	0.75	rewritten	rewritten at destination
+L-60-§A.5-p02	**Proposition 5.2.** - (1) Joint restraint gives $\Omega/n$. At the $\theta=0$ equilibrium	SUPPLEMENT ### Proof of Proposition 5.2	0.24	0.57	rewritten	rewritten at destination
+L-60-§A.5-p03	**Remark 5.3.** At the symmetric state $K^\ast=(1-\delta)K^\ast+\kappa\Omega/n$, so $K^\as	SUPPLEMENT ### Proof of Proposition 2.3	0.06	0.44	check	reviewed: proof → SUPPLEMENT, rewritten for V6.1 notation
+L-60-§A.5-p04	**Proposition 5.4.** By Proposition 3.9(1) with $\Omega_t$, $r_t$, $L_t$ and $c_t$, total 	SUPPLEMENT ### Proofs for the race and growth channels	0.21	0.5	rewritten	rewritten at destination
+L-60-§A.5-p05	**Lemma 5.5.** By the chain rule, $\Pr(S_N)=\prod_{k\le N}\Pr(\text{no event at }k\mid S_{	THEORY ### 5.3 Second erosion: correction, and the two ch	0.15	0.75	rewritten	rewritten at destination
+L-60-§A.5-p06	**Remark 5.6.** (1) The value of destruction, $-c_y-\theta\Delta_y/(n-1)$, is at most zero	THEORY ### 5.1 Acceleration	0.04	0.47	check	reviewed: proof → SUPPLEMENT, rewritten for V6.1 notation
+L-60-§A.5-p07	**Proposition 5.7.** Let deviation by $i$ yield $O_i(a^\ast)+g_i$ for one period. With pro	THEORY ### 5.2 First erosion: enforcement	0.07	0.55	check	reviewed: proof → SUPPLEMENT, rewritten for V6.1 notation
+L-60-§A.5-p08	**Corollary 5.8.** At $\theta=-1$, $O_i=\pi_i-\bar\pi_{-i}$. In a symmetric stage game eve	THEORY ### 5.2 First erosion: enforcement	0.08	0.75	rewritten	rewritten at destination
+L-60-§A.5-p09	**Remark 5.9.** By Proposition 6.1(4), racing gains $A-B\theta$ in the objective, whatever	THEORY ### 8.3 The alternatives	0.0	0.73	rewritten	rewritten at destination
+L-60-§A.5-p10	**Proposition 5.10.** (1) The winner's objective is $(1-s)W+\theta sW/(n-1)$, linear in $s	THEORY ### 5.2 First erosion: enforcement	0.14	0.73	rewritten	rewritten at destination
+L-60-§A.5-p11	**Proposition 5.11.** - (1) is Hayes (1950). - (2) By simulation of $\dot y=ay-k_py(t-\tau	SUPPLEMENT ### Proofs for the race and growth channels	0.29	0.76	rewritten	rewritten at destination
+L-60-§A.5-p12	**Theorem 5.12.** For $t\ge T_\varepsilon$, on every surviving history, the conditional pr	SUPPLEMENT ### Proofs for the race and growth channels	0.59	0.86	kept	moved or kept verbatim
+L-60-§A.5-p13	**Proposition 5.13.** - (1) After $\tau$, $\mathsf u_t=(1-U(t)/Y_\tau)^+$. For linear $U$,	SUPPLEMENT ### Proofs for the race and growth channels	0.22	0.65	rewritten	rewritten at destination
+L-60-§A.5-p14	**Proposition 5.14.** 1. Let the sender's and receiver's payoffs sum to zero for every sta	SUPPLEMENT ### Proof of Proposition 5.15	0.19	0.62	rewritten	rewritten at destination
+L-60-§A.5-p15	**Theorem 5.15.** Each item of Branch I is the cited proposition under its condition. For 	SUPPLEMENT ### Proofs of Theorem 7.1, Proposition 7.2 and Cor	0.3	0.83	rewritten	rewritten at destination
+L-60-§A.5-p16	**Theorem 5.16.** (1) With $p_d$ small, Proposition 5.7(1) leaves the folk-theorem region 	THEORY ## 9. What any adequate arrangement must do	0.0	0.5	check	reviewed: proof → SUPPLEMENT, rewritten for V6.1 notation
+L-60-§A.6-p02	**Proposition 6.2.** - (1) is direct computation from the contest success function. - (2) 	SUPPLEMENT ### Proposition 6.2 in full, and Lemma 6.3	0.18	0.52	rewritten	rewritten at destination
+L-60-§A.6-p04	**Proposition 6.4.** - (1) With $q_L=1$, $\Phi_D=0$, while $\Phi_N=Q_N[w_N+(1-w_N)(1-p)]\g	SUPPLEMENT ### Proposition 6.4 in full, and proof	0.13	0.42	rewritten	rewritten at destination
+L-60-§A.6-p05	**Lemma 6.5.** Under (a)–(d), variants that act on common terms exist and, by (b), have re	SUPPLEMENT ### Proofs of Lemma 6.5, Remark 6.6 and Propositio	0.46	0.95	kept	moved or kept verbatim
+L-60-§A.6-p06	**Proposition 6.7.** (1) Level 2 is relative and payoff-monotone, so Lemma 3.3(1) removes 	SUPPLEMENT ### Proofs of Lemma 6.5, Remark 6.6 and Propositio	0.36	0.64	rewritten	rewritten at destination
+L-60-§A.6-p07	**Proposition 6.8.** The residual hazard is the sum of failures not blocked and failures t	SUPPLEMENT ### Proofs for Section 6.5	0.13	0.67	rewritten	rewritten at destination
+L-60-§A.6-p08	**Proposition 6.9.** - (1) Each layer covers $\mathsf m$ times the attention of the layer 	SUPPLEMENT ### Proofs for Section 6.5	0.38	0.72	rewritten	rewritten at destination
+L-60-§A.6-p09	**Remark 6.10.** While small, errors grow as $\delta_{\text{obs}}e^{\lambda_Lt}$; set this	THEORY ### 6.5 Correction by and of AI	0.0	1.0	rewritten	rewritten at destination
+L-60-§A.6-p10	**Proposition 6.11.** - With $r=1$ and the others at a common $\iota$, $\partial w_i/\part	SUPPLEMENT ### Proofs for Section 6.5	0.13	0.46	rewritten	rewritten at destination
+L-60-§A.7-p01	**Remark 7.1.** With the leader paused, $\dot\Delta=-\delta_f\Delta-1$, so $\Delta(t)=(\De	SUPPLEMENT ### Proofs for Section 6.5	0.0	0.6	rewritten	rewritten at destination
+L-60-§A.7-p02	**Proposition 7.2.** (1) is the commitment problem as cited; the worst-case rule is that o	SUPPLEMENT ### Proofs of Theorem 7.1, Proposition 7.2 and Cor	0.46	0.89	kept	moved or kept verbatim
+L-60-§A.7-p03	**Proposition 7.3.** (1) is Proposition 5.13. (2): rivals at the coverage frontier reach t	CLAIMS ## 4. Contribution inventory	0.0	0.6	rewritten	rewritten at destination
+L-60-§A.7-p04	**Proposition 7.4.** - (1) Fighting now is worth $(w_1-c_A)/(1-\delta)$. Peace gives A at 	SUPPLEMENT ### Proofs of Propositions 5.7 and 5.8	0.24	0.45	rewritten	rewritten at destination
+L-60-§A.7-p05	**Proposition 7.5.** (1) Compare $\Phi^{\text{Prev}}$ with $\max(\Phi^S,\Phi^P)$ and solve	SUPPLEMENT ### The alternatives: results stated briefly in th	0.0	0.86	rewritten	rewritten at destination
+L-60-§A.7-p06	**Proposition 7.6.** - (1) An irreversible exit keeps its gain even when detected, and is 	SUPPLEMENT ### Proofs for the verified agreement	0.06	0.69	rewritten	rewritten at destination
+L-60-§A.7-p07	**Theorem 7.7.** (1) Rearrange $R>T_\upsilon$. (2) applies the definition of timely detect	SUPPLEMENT ### Proofs for the verified agreement	0.48	0.9	kept	moved or kept verbatim
+L-60-§A.7-p08	**Proposition 7.9.** - (1) The advantage is linear in $\varpi$, with the stated endpoints.	SUPPLEMENT ### Proposition 8.3 in full	0.03	0.62	rewritten	rewritten at destination
+L-60-§A.7-p09	**Proposition 7.10.** Each row's necessity is the cited result read as a necessary conditi	SUPPLEMENT ### Proposition 9.1, row by row	0.26	0.69	rewritten	rewritten at destination
+L-60-§A.7-p10	**Lemma 7.11.** Fix a dissolution date $\tau$ (possibly infinite). By the chain rule, surv	THEORY ### 8.1 The standard of comparison	0.01	0.45	check	reviewed: proof → SUPPLEMENT, rewritten for V6.1 notation
+L-60-§A.8-p01	**Theorem 8.2.** - (1) (I2) with margin in rule-making gives a full row sum below one, so 	SUPPLEMENT ### Proof of Theorem 10.5, and the margin on harsh	0.53	0.88	kept	moved or kept verbatim
+L-60-§A.8-p02	**Proposition 8.3.** (1) is Propositions 3.4 and 4.3(1)–(2). (2) With rule-makers as playe	SUPPLEMENT ### Proof of Proposition 9.2	0.55	0.9	kept	moved or kept verbatim
+L-60-§A.8-p03	**Proposition 8.4.** Compare the first-order conditions; concavity of $\Omega$ orders the 	SUPPLEMENT ### Proof of Proposition 3.11	0.12	0.57	rewritten	rewritten at destination
+L-60-§A.8-p04	**Proposition 8.5.** For $k$ racers and $m=n-k$ cooperators: - Under separate frontiers, a	SUPPLEMENT ### A common frontier	0.13	0.66	rewritten	rewritten at destination
+L-60-§A.8-p06	*Part 1.* Pooled payoffs are $\pi'_j=(1-\beta)\pi_j+\beta\bar\pi$, with $\bar\pi=(\pi_i+(n	THEORY ### 3.2 Relative selection is blind to what all sh	0.04	0.36	check	reviewed: proof → SUPPLEMENT, rewritten for V6.1 notation
+L-60-§A.8-p07	*Part 2.* With the promise kept with probability $\varrho$, each payoff is $w_i\big[(1-\be	SUPPLEMENT ### Proof of Proposition 10.3	0.16	0.55	rewritten	rewritten at destination
+L-60-§A.8-p08	*Part 3.* Remark 5.3 gives the multiplier $1+\delta(\chi r-1)$, at most one iff $\chi r\le	SUPPLEMENT ### Proof of Proposition 10.3	0.37	0.67	rewritten	rewritten at destination
+L-60-§A.8-p09	**Proposition 8.8.** Apply Proposition 4.8(2) to the verifier's full row. The counter-case	SUPPLEMENT ### Proofs of Propositions 10.6 and 10.7	0.18	0.6	rewritten	rewritten at destination
+L-60-§A.8-p10	**Proposition 8.9.** - (1) is the participation constraint under transferable utility; str	SUPPLEMENT ### Proofs of Propositions 10.6 and 10.7	0.17	0.59	rewritten	rewritten at destination
+L-60-§A.8-p11	**Proposition 8.11.** (1) After $t_N$, $Y_t=Y_N$ and $U_t\ge U_{t_N}+u(t-t_N)$, so the unc	SUPPLEMENT ### Proofs for the race and growth channels	0.2	0.46	rewritten	rewritten at destination
+L-60-§A.9-p01	**Proposition 9.1.** - (1) Cooperating yields $\varpi R+(1-\varpi)(\upsilon P+(1-\upsilon)	SUPPLEMENT ### Proofs for the verified agreement	0.0	0.6	rewritten	rewritten at destination
+L-60-§A.9-p02	**Corollary 9.2.** Each item follows from the stated formula: $T-R$ in Proposition 9.1; $b	SUPPLEMENT ### Proofs of Corollary 11.1 and Proposition 11.2	0.89	1.0	kept	moved or kept verbatim
+L-60-§A.9-p03	**Proposition 9.3.** - (1) Given the receiver's strategy (restrain after $E$, not otherwis	SUPPLEMENT ### Proofs of Corollary 11.1 and Proposition 11.2	0.04	0.55	check	reviewed: proof → SUPPLEMENT, rewritten for V6.1 notation
+L-60-§A.9-p04	**Proposition 9.4.** (1) Shifting the sequence by $D$ leaves the product over any window o	SUPPLEMENT ### Proofs of Proposition 11.3 and Proposition 11.	0.5	0.83	kept	moved or kept verbatim
+L-60-§A.9-p05	**Proposition 9.6.** (1) is Proposition 8.5 and Theorem 8.2. (2) is Propositions 9.1, 7.9 	SUPPLEMENT ### Proofs of Proposition 11.3 and Proposition 11.	0.42	1.0	kept	moved or kept verbatim
+L-60-§Appendix B-p01	`checks_v6.py` (pure Python, log `checks_v6.log`, about two seconds) computes every case t	SUPPLEMENT ## S15. Numerics	0.1	0.55	check	reviewed: → SUPPLEMENT S15
+L-60-§Appendix B-p02	Results carried unchanged from v5.2 are checked by `../v5/checks_v5.py` (log `../v5/checks	SUPPLEMENT ## S15. Numerics	0.06	0.42	check	reviewed: → SUPPLEMENT S15
+L-60-§Appendix B-p03	None of these suites certifies every proof, and none supplies evidence about the world.	SUPPLEMENT ## S15. Numerics	0.67	1.0	kept	moved or kept verbatim
+L-60-§Appendix C-p01	The evidence register gives the dated observations. This appendix gives the conditions of 	TESTS ## 6. Indicators of the conditional results	0.07	0.45	check	reviewed: → TESTS §6–7
+L-60-§Appendix C-p03	| Object | What is measured | Sources | |---|---|---| | What actors value | The weight $\t	TESTS ## 6. Indicators of the conditional results	0.41	0.62	kept	moved or kept verbatim
+L-60-§Appendix C-p05	| Condition | Indicator | What would refute it | |---|---|---| | H0 floor within reach | P	TESTS ## 6. Indicators of the conditional results	0.35	0.62	rewritten	rewritten at destination
+L-60-§Appendix C-p07	| Condition | Meaning | What would change the conclusion | |---|---|---| | P1 | Actors act	TESTS ## 1. Empirical cruxes	0.06	0.38	check	reviewed: → TESTS §6–7
+L-60-§Appendix C-p09	| Premise | Indicator | What would refute it | |---|---|---| | (X) | Predefined hazard mod	TESTS ## 6. Indicators of the conditional results	0.29	0.57	rewritten	rewritten at destination
+L-60-§Appendix C-p10	**Measuring the arrangements (Section 9.3).** The relation $a\approx\ln2/T_2$, with $T_2$ 	EVIDENCE ## EV5. Capability growth, and how long leads last	0.06	0.33	check	reviewed: → TESTS §6–7
+L-60-§Appendix C-p11	| Arrangement | Indicator | Example of a threshold | Precedent or measurer | What would co	TESTS ## 6. Indicators of the conditional results	0.11	0.4	check	reviewed: → TESTS §6–7
+L-60-§Appendix C-p12	**Data for the pre-registered tests (Section 10.5).** Tests name roles in the text; their 	TESTS ## 7. Data for the tests	0.31	0.66	rewritten	rewritten at destination
+L-60-§Appendix C-p13	**Undoing capture.** As a reform brings inbound conversion toward one, recovery at the cap	TESTS ## 6. Indicators of the conditional results	0.46	0.79	kept	moved or kept verbatim
+L-60-§Appendix D-p01	Each mechanism of Section 2.3 with its formal anchor, its measure, the strand of the gener	SUPPLEMENT ### The mechanism index	0.0	0.67	rewritten	rewritten at destination
+L-60-§Appendix D-p02	| Mechanism | Formal anchor | Measure | Generative counterpart | Requirement | |---|---|--	SUPPLEMENT ### The mechanism index	0.59	0.89	kept	moved or kept verbatim
+L-60-§Appendix E-p01	The theory joins several models. Each join is an assumption, and each is listed so that it	SUPPLEMENT ## S13. Interfaces between the models	0.74	1.0	kept	moved or kept verbatim
+L-60-§Appendix E-p02	| Interface | Between | Assumption | Status | |---|---|---|---| | Shared loss and irrevers	SUPPLEMENT ## S13. Interfaces between the models	0.6	0.8	kept	moved or kept verbatim
+L-60-§Appendix F-p01	A new version integrates the old ones; it does not replace them. This ledger records where	CLAIMS # V6.1 claim register	0.03	0.55	check	reviewed: → LEDGER §7
+L-60-§Appendix F-p02	**Numbered results of v5.2.** In the first column, D, P, T, L, R and C stand for a definit	THEORY ## 9. What any adequate arrangement must do	0.0	0.73	rewritten	rewritten at destination
+L-60-§Appendix F-p03	| v5.2 | v6 | Change | |---|---|---| | D1.1 (Ψ) | Def 2.5 | Ψ is now the configuration the	CLAIMS ## 4. Contribution inventory	0.01	0.46	check	reviewed: → LEDGER §7
+L-60-§Appendix F-p04	**New in v6.** Definition 2.1; Remark 2.4; Lemma 3.3(2); Proposition 3.5; the identificati	CLAIMS ## 4. Contribution inventory	0.0	0.88	rewritten	rewritten at destination
+L-60-§Appendix F-p05	"**Withdrawn, and why.** - ""The trajectory has one root"", typed as a definition: replaced b"	CLAIMS ## 4. Contribution inventory	0.01	0.36	check	reviewed: → LEDGER §7
+L-60-§Appendix F-p07	| Element | Origin | In v6 | |---|---|---| | The primitive is selection, not greed | Autho	THEORY ### 2.3 The reflexive closure: the meta-attractor	0.09	0.26	check	reviewed: → LEDGER §7
+L-60-§Appendix F-p09	| Layer | Where in v6 | |---|---| | 1. Host and shared conditions | §3.2 | | 2. First-orde	THEORY ### 8.3 The alternatives	0.0	0.67	rewritten	rewritten at destination
+L-60-§Appendix G-p01	Each entry is a case that refutes a stronger version of a claim. The text states the weake	SUPPLEMENT ## S14. Counterexamples that bound the claims	0.69	1.0	kept	moved or kept verbatim
+L-60-§Appendix G-p02	| Counterexample | What it refutes | Where it is handled | |---|---|---| | In a four-actor	SUPPLEMENT ## S14. Counterexamples that bound the claims	0.58	0.78	kept	moved or kept verbatim

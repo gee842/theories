@@ -1,0 +1,7 @@
+r=0.5 Gamma=0.45 {'d': 0.2}: Gd=0.289 lambda formula 0.4070 fixed 0.4478 MPE 1.0283 ratio 2.526 | theta_G -0.169 theta_MPE -0.340 | de2/ds -0.934 | conv 462
+r=0.5 Gamma=0.45 {'d': 0.05}: Gd=0.140 lambda formula 0.1623 fixed 0.1639 MPE 0.1755 ratio 1.081 | theta_G -0.075 theta_MPE -0.081 | de2/ds -0.035 | conv 346
+r=1.5 Gamma=0.6 {'d': 0.2, 'beta': 0.5}: Gd=0.386 lambda formula 0.6279 fixed 0.6089 MPE 1.5034 ratio 2.394 | theta_G -0.239 theta_MPE -0.429 | de2/ds -1.997 | conv 298
+r=1.5 Gamma=0.6 {'d': 0.2, 'l': 0.5}: Gd=0.386 lambda formula 0.6279 fixed 0.6089 MPE 2.9827 ratio 4.750 | theta_G -0.239 theta_MPE -0.599 | de2/ds -8.016 | conv 257
+r=1.5 Gamma=0.6 {'d': 0.2, 'delta': 0.5}: Gd=0.100 lambda formula 0.1111 fixed 0.1102 MPE 0.1159 ratio 1.043 | theta_G -0.053 theta_MPE -0.055 | de2/ds -0.083 | conv 40
+r=1.5 Gamma=0.6 {'d': 0.2, 'delta': 0.97}: Gd=0.520 lambda formula 1.0818 fixed 1.0311 MPE 8.5140 ratio 7.870 | theta_G -0.351 theta_MPE -0.810 | de2/ds -29.390 | conv 903
+r=1.5 Gamma=0.6 {'d': 0.2, 'N': 1600}: Gd=0.386 lambda formula 0.6279 fixed 0.6089 MPE 1.5036 ratio 2.395 | theta_G -0.239 theta_MPE -0.429 | de2/ds -4.007 | conv 306

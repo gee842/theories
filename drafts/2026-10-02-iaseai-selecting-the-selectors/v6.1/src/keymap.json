@@ -1,0 +1,644 @@
+{
+ "cond": {
+  "kind": "Definition",
+  "number": "2.1",
+  "file": "20_s2.md",
+  "line": 21
+ },
+ "loopgain": {
+  "kind": "Proposition",
+  "number": "2.2",
+  "file": "20_s2.md",
+  "line": 30
+ },
+ "stocks": {
+  "kind": "eq",
+  "number": "(1)",
+  "file": "20_s2.md",
+  "line": 33
+ },
+ "gamma": {
+  "kind": "eq",
+  "number": "(2)",
+  "file": "20_s2.md",
+  "line": 35
+ },
+ "compound": {
+  "kind": "Proposition",
+  "number": "2.3",
+  "file": "20_s2.md",
+  "line": 44
+ },
+ "meta": {
+  "kind": "Definition",
+  "number": "2.4",
+  "file": "20_s2.md",
+  "line": 62
+ },
+ "bench": {
+  "kind": "Remark",
+  "number": "2.5",
+  "file": "20_s2.md",
+  "line": 75
+ },
+ "pathgen": {
+  "kind": "Remark",
+  "number": "2.6",
+  "file": "20_s2.md",
+  "line": 77
+ },
+ "host": {
+  "kind": "eq",
+  "number": "(3)",
+  "file": "30_s3.md",
+  "line": 10
+ },
+ "viab": {
+  "kind": "Definition",
+  "number": "3.1",
+  "file": "30_s3.md",
+  "line": 13
+ },
+ "payoff": {
+  "kind": "eq",
+  "number": "(4)",
+  "file": "30_s3.md",
+  "line": 20
+ },
+ "relsel": {
+  "kind": "Definition",
+  "number": "3.2",
+  "file": "30_s3.md",
+  "line": 23
+ },
+ "blind": {
+  "kind": "Lemma",
+  "number": "3.3",
+  "file": "30_s3.md",
+  "line": 25
+ },
+ "load": {
+  "kind": "Proposition",
+  "number": "3.4",
+  "file": "30_s3.md",
+  "line": 34
+ },
+ "reach": {
+  "kind": "eq",
+  "number": "(5)",
+  "file": "30_s3.md",
+  "line": 35
+ },
+ "objective": {
+  "kind": "eq",
+  "number": "(6)",
+  "file": "30_s3.md",
+  "line": 45
+ },
+ "twochan": {
+  "kind": "Proposition",
+  "number": "3.5",
+  "file": "30_s3.md",
+  "line": 48
+ },
+ "twochaneq": {
+  "kind": "eq",
+  "number": "(7)",
+  "file": "30_s3.md",
+  "line": 49
+ },
+ "welfare": {
+  "kind": "eq",
+  "number": "(8)",
+  "file": "30_s3.md",
+  "line": 57
+ },
+ "boundary": {
+  "kind": "Proposition",
+  "number": "3.6",
+  "file": "30_s3.md",
+  "line": 60
+ },
+ "wow": {
+  "kind": "Proposition",
+  "number": "3.7",
+  "file": "30_s3.md",
+  "line": 68
+ },
+ "unequal": {
+  "kind": "Remark",
+  "number": "3.8",
+  "file": "30_s3.md",
+  "line": 68
+ },
+ "standprice": {
+  "kind": "Proposition",
+  "number": "3.9",
+  "file": "30_s3.md",
+  "line": 70
+ },
+ "thetagamma": {
+  "kind": "eq",
+  "number": "(9)",
+  "file": "30_s3.md",
+  "line": 71
+ },
+ "onegroup": {
+  "kind": "Lemma",
+  "number": "3.10",
+  "file": "30_s3.md",
+  "line": 82
+ },
+ "club": {
+  "kind": "Proposition",
+  "number": "3.11",
+  "file": "30_s3.md",
+  "line": 90
+ },
+ "psi": {
+  "kind": "Definition",
+  "number": "3.12",
+  "file": "30_s3.md",
+  "line": 107
+ },
+ "field": {
+  "kind": "eq",
+  "number": "(10)",
+  "file": "40_s4.md",
+  "line": 10
+ },
+ "capture": {
+  "kind": "Definition",
+  "number": "4.1",
+  "file": "40_s4.md",
+  "line": 13
+ },
+ "costq": {
+  "kind": "Assumption",
+  "number": "4.2",
+  "file": "40_s4.md",
+  "line": 21
+ },
+ "infret": {
+  "kind": "eq",
+  "number": "(11)",
+  "file": "40_s4.md",
+  "line": 24
+ },
+ "influence": {
+  "kind": "Proposition",
+  "number": "4.3",
+  "file": "40_s4.md",
+  "line": 27
+ },
+ "noinside": {
+  "kind": "Proposition",
+  "number": "4.4",
+  "file": "40_s4.md",
+  "line": 31
+ },
+ "rowsum": {
+  "kind": "eq",
+  "number": "(12)",
+  "file": "40_s4.md",
+  "line": 36
+ },
+ "corrrate": {
+  "kind": "Proposition",
+  "number": "4.5",
+  "file": "40_s4.md",
+  "line": 39
+ },
+ "countervail": {
+  "kind": "Remark",
+  "number": "4.6",
+  "file": "40_s4.md",
+  "line": 47
+ },
+ "mask": {
+  "kind": "eq",
+  "number": "(13)",
+  "file": "40_s4.md",
+  "line": 52
+ },
+ "masking": {
+  "kind": "Proposition",
+  "number": "4.7",
+  "file": "40_s4.md",
+  "line": 55
+ },
+ "alarm": {
+  "kind": "Remark",
+  "number": "4.8",
+  "file": "40_s4.md",
+  "line": 59
+ },
+ "certificate": {
+  "kind": "Proposition",
+  "number": "4.9",
+  "file": "40_s4.md",
+  "line": 67
+ },
+ "reabsorb": {
+  "kind": "Proposition",
+  "number": "4.10",
+  "file": "40_s4.md",
+  "line": 71
+ },
+ "pausefield": {
+  "kind": "Proposition",
+  "number": "4.11",
+  "file": "40_s4.md",
+  "line": 77
+ },
+ "slowroute": {
+  "kind": "Theorem",
+  "number": "4.12",
+  "file": "40_s4.md",
+  "line": 85
+ },
+ "join": {
+  "kind": "Proposition",
+  "number": "5.1",
+  "file": "50_s5.md",
+  "line": 9
+ },
+ "dissipate": {
+  "kind": "Proposition",
+  "number": "5.2",
+  "file": "50_s5.md",
+  "line": 11
+ },
+ "frontier": {
+  "kind": "Remark",
+  "number": "5.3",
+  "file": "50_s5.md",
+  "line": 19
+ },
+ "enforce": {
+  "kind": "Proposition",
+  "number": "5.4",
+  "file": "50_s5.md",
+  "line": 25
+ },
+ "enforceeq": {
+  "kind": "eq",
+  "number": "(14)",
+  "file": "50_s5.md",
+  "line": 27
+ },
+ "relpunish": {
+  "kind": "Corollary",
+  "number": "5.5",
+  "file": "50_s5.md",
+  "line": 38
+ },
+ "restraint": {
+  "kind": "Corollary",
+  "number": "5.6",
+  "file": "50_s5.md",
+  "line": 44
+ },
+ "wingives": {
+  "kind": "Proposition",
+  "number": "5.7",
+  "file": "50_s5.md",
+  "line": 48
+ },
+ "preventattack": {
+  "kind": "Proposition",
+  "number": "5.8",
+  "file": "50_s5.md",
+  "line": 52
+ },
+ "racehazard": {
+  "kind": "Proposition",
+  "number": "5.9",
+  "file": "50_s5.md",
+  "line": 60
+ },
+ "nonsum": {
+  "kind": "Lemma",
+  "number": "5.10",
+  "file": "50_s5.md",
+  "line": 64
+ },
+ "tempo": {
+  "kind": "Proposition",
+  "number": "5.11",
+  "file": "50_s5.md",
+  "line": 66
+ },
+ "coverage": {
+  "kind": "Theorem",
+  "number": "5.12",
+  "file": "50_s5.md",
+  "line": 74
+ },
+ "freeze": {
+  "kind": "Proposition",
+  "number": "5.13",
+  "file": "50_s5.md",
+  "line": 78
+ },
+ "enough": {
+  "kind": "Proposition",
+  "number": "5.14",
+  "file": "50_s5.md",
+  "line": 80
+ },
+ "talk": {
+  "kind": "Proposition",
+  "number": "5.15",
+  "file": "50_s5.md",
+  "line": 90
+ },
+ "faithfuleq": {
+  "kind": "eq",
+  "number": "(15)",
+  "file": "60_s6.md",
+  "line": 14
+ },
+ "faithful": {
+  "kind": "Proposition",
+  "number": "6.1",
+  "file": "60_s6.md",
+  "line": 16
+ },
+ "delegate": {
+  "kind": "Proposition",
+  "number": "6.2",
+  "file": "60_s6.md",
+  "line": 27
+ },
+ "lockin": {
+  "kind": "Lemma",
+  "number": "6.3",
+  "file": "60_s6.md",
+  "line": 29
+ },
+ "delegatelock": {
+  "kind": "Proposition",
+  "number": "6.4",
+  "file": "60_s6.md",
+  "line": 35
+ },
+ "retain": {
+  "kind": "Lemma",
+  "number": "6.5",
+  "file": "60_s6.md",
+  "line": 41
+ },
+ "transmit": {
+  "kind": "Remark",
+  "number": "6.6",
+  "file": "60_s6.md",
+  "line": 45
+ },
+ "nested": {
+  "kind": "Proposition",
+  "number": "6.7",
+  "file": "60_s6.md",
+  "line": 53
+ },
+ "opaquecorr": {
+  "kind": "Proposition",
+  "number": "6.8",
+  "file": "60_s6.md",
+  "line": 63
+ },
+ "topology": {
+  "kind": "Proposition",
+  "number": "6.9",
+  "file": "60_s6.md",
+  "line": 69
+ },
+ "lyapunov": {
+  "kind": "Remark",
+  "number": "6.10",
+  "file": "60_s6.md",
+  "line": 73
+ },
+ "homeostasis": {
+  "kind": "Proposition",
+  "number": "6.11",
+  "file": "60_s6.md",
+  "line": 73
+ },
+ "branches": {
+  "kind": "Theorem",
+  "number": "7.1",
+  "file": "70_s7.md",
+  "line": 36
+ },
+ "raceselects": {
+  "kind": "Proposition",
+  "number": "7.2",
+  "file": "70_s7.md",
+  "line": 46
+ },
+ "racepremise": {
+  "kind": "Corollary",
+  "number": "7.3",
+  "file": "70_s7.md",
+  "line": 50
+ },
+ "kernel": {
+  "kind": "Definition",
+  "number": "8.1",
+  "file": "80_s8.md",
+  "line": 15
+ },
+ "fallback": {
+  "kind": "Lemma",
+  "number": "8.2",
+  "file": "80_s8.md",
+  "line": 19
+ },
+ "survassure": {
+  "kind": "Proposition",
+  "number": "8.3",
+  "file": "80_s8.md",
+  "line": 25
+ },
+ "profile": {
+  "kind": "Definition",
+  "number": "8.4",
+  "file": "80_s8.md",
+  "line": 33
+ },
+ "durability": {
+  "kind": "Definition",
+  "number": "8.5",
+  "file": "80_s8.md",
+  "line": 37
+ },
+ "lead": {
+  "kind": "Remark",
+  "number": "8.6",
+  "file": "80_s8.md",
+  "line": 47
+ },
+ "sprint": {
+  "kind": "Remark",
+  "number": "8.7",
+  "file": "80_s8.md",
+  "line": 51
+ },
+ "preventown": {
+  "kind": "Proposition",
+  "number": "8.8",
+  "file": "80_s8.md",
+  "line": 55
+ },
+ "insure": {
+  "kind": "Remark",
+  "number": "8.9",
+  "file": "80_s8.md",
+  "line": 59
+ },
+ "assure": {
+  "kind": "Proposition",
+  "number": "8.10",
+  "file": "80_s8.md",
+  "line": 63
+ },
+ "verify": {
+  "kind": "Theorem",
+  "number": "8.11",
+  "file": "80_s8.md",
+  "line": 67
+ },
+ "overhang": {
+  "kind": "Proposition",
+  "number": "8.12",
+  "file": "80_s8.md",
+  "line": 69
+ },
+ "require": {
+  "kind": "Proposition",
+  "number": "9.1",
+  "file": "90_s9.md",
+  "line": 7
+ },
+ "nounilateral": {
+  "kind": "Proposition",
+  "number": "9.2",
+  "file": "90_s9.md",
+  "line": 23
+ },
+ "commonfront": {
+  "kind": "Proposition",
+  "number": "10.1",
+  "file": "a0_s10.md",
+  "line": 17
+ },
+ "commonfrontn": {
+  "kind": "Proposition",
+  "number": "10.2",
+  "file": "a0_s10.md",
+  "line": 17
+ },
+ "share": {
+  "kind": "Proposition",
+  "number": "10.3",
+  "file": "a0_s10.md",
+  "line": 19
+ },
+ "twoorders": {
+  "kind": "Remark",
+  "number": "10.4",
+  "file": "a0_s10.md",
+  "line": 28
+ },
+ "safeguards": {
+  "kind": "Theorem",
+  "number": "10.5",
+  "file": "a0_s10.md",
+  "line": 34
+ },
+ "rivalverify": {
+  "kind": "Proposition",
+  "number": "10.6",
+  "file": "a0_s10.md",
+  "line": 41
+ },
+ "participate": {
+  "kind": "Proposition",
+  "number": "10.7",
+  "file": "a0_s10.md",
+  "line": 45
+ },
+ "guardian": {
+  "kind": "Remark",
+  "number": "10.8",
+  "file": "a0_s10.md",
+  "line": 68
+ },
+ "relaxtrust": {
+  "kind": "Corollary",
+  "number": "11.1",
+  "file": "b0_s11.md",
+  "line": 13
+ },
+ "signal": {
+  "kind": "Proposition",
+  "number": "11.2",
+  "file": "b0_s11.md",
+  "line": 23
+ },
+ "pausevalue": {
+  "kind": "Proposition",
+  "number": "11.3",
+  "file": "b0_s11.md",
+  "line": 37
+ },
+ "readiness": {
+  "kind": "Definition",
+  "number": "11.4",
+  "file": "b0_s11.md",
+  "line": 43
+ },
+ "reachable": {
+  "kind": "Proposition",
+  "number": "11.5",
+  "file": "b0_s11.md",
+  "line": 73
+ },
+ "secular": {
+  "kind": "eq",
+  "number": "(S1)",
+  "file": "02_S2.md",
+  "line": 12
+ },
+ "tdec": {
+  "kind": "Remark",
+  "number": "S2.1",
+  "file": "02_S2.md",
+  "line": 23
+ },
+ "thrrep": {
+  "kind": "Remark",
+  "number": "S3.1",
+  "file": "03_S3.md",
+  "line": 33
+ },
+ "scope": {
+  "kind": "Proposition",
+  "number": "S4.1",
+  "file": "04_S4.md",
+  "line": 7
+ },
+ "fieldlemma": {
+  "kind": "Lemma",
+  "number": "S4.2",
+  "file": "04_S4.md",
+  "line": 37
+ },
+ "zonesillus": {
+  "kind": "Remark",
+  "number": "S5.1",
+  "file": "05_S5.md",
+  "line": 31
+ }
+}

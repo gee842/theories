@@ -1,0 +1,11 @@
+{
+  "text": "先秦的一些理论中 他的这种理论,他其实就是一个 Universal Social Dynamics 他没有我他 然后 他没有这种对立 他本身所描述的就是那种Dynamics 他也不需要实态 如果那种Dynamics是那样的 那是这样的",
+  "logprobs": null,
+  "usage": {
+    "type": "duration",
+    "seconds": 35
+  },
+  "audio_start": 798,
+  "audio_end": 833,
+  "model": "whisper-1"
+}

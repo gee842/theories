@@ -1,0 +1,14 @@
+(A) three stocks, sigma = r1 ln X1 + a X2 + b sqrt(X3): 2996 systems, Perron root > 1 <=> Gamma > 1 mismatches: 0 (skipped 4 near the boundary)
+(A') nonlinear simulation, three stocks, deviation 1e-4 for 3000 periods:
+   r1=1.2, a=0.0, b=0.0: r_j=[1.2, 0.0, 0.0], omega=[1.0, 1.0, 0.429], Gamma=1.200 -> gap 4.00e+00 (grows)
+   r1=0.7, a=0.8, b=0.0: r_j=[0.7, 0.2, 0.0], omega=[1.0, 1.0, 0.429], Gamma=0.900 -> gap 2.35e-12 (decays)
+   r1=0.7, a=0.0, b=1.5: r_j=[0.7, 0.0, 0.992], omega=[1.0, 1.0, 0.429], Gamma=0.983 -> gap 5.51e-06 (decays)
+   r1=0.5, a=0.3, b=0.6: r_j=[0.5, 0.075, 0.397], omega=[1.0, 1.0, 0.429], Gamma=0.688 -> gap 1.39e-14 (decays)
+   r1=0.9, a=0.6, b=0.8: r_j=[0.9, 0.15, 0.529], omega=[1.0, 1.0, 0.429], Gamma=1.201 -> gap 4.00e+00 (grows)
+(B) price of standing on the three-stock model: PV of a relative payoff shock vs Gamma_delta/(1-Gamma_delta)
+   189 systems with Gamma<1, Gd<0.9: max relative error 7.06e-07
+(C) Prop 2.3(2) at the boundary K_bar = K*: 'no higher than' includes equality, where the cap does not protect
+   cap/K* = 1.00: phi(cap) = +0.0000, phi'(cap) = +0.0100, laggard from 0.97 cap ends at 0.0000 (excluded/stalled)
+   cap/K* = 0.98: phi(cap) = +0.0020, phi'(cap) = +0.0112, laggard from 0.97 cap ends at 1.9600 (returns to cap)
+   cap/K* = 0.90: phi(cap) = +0.0100, phi'(cap) = +0.0167, laggard from 0.97 cap ends at 1.8000 (returns to cap)
+   at equality phi'(K*) = dK[(1-beta) r omega (n-1)/n - 1] = +0.0100 (positive here, so a laggard just below K* diverges)

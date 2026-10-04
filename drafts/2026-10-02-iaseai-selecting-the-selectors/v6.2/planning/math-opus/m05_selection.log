@@ -1,0 +1,29 @@
+m05  Selection results: blindness, evasion, incidence, Price decomposition, the matched variant.
+
+(A) evasion with a sanction that falls as evaders spread: x' = x(1-x)(c - s(x)), c = 0.3
+   s = .5 + .5(1-x)  [s(1)=.5 >= c]: 0.02->0.000, 0.3->0.000, 0.5->0.000, 0.7->0.000, 0.98->0.000   no tipping share
+   s = .24(1-x)      [s(0)=.24 <= c]: 0.02->1.000, 0.3->1.000, 0.5->1.000, 0.7->1.000, 0.98->1.000   no tipping share
+   s = .48(1-x)      [s(0)>c>s(1)]: 0.02->0.000, 0.3->0.000, 0.5->1.000, 0.7->1.000, 0.98->1.000   tipping share 0.375
+   s = 1.2(1-x)      [s(0)>c>s(1)]: 0.02->0.000, 0.3->0.000, 0.5->0.000, 0.7->0.000, 0.98->1.000   tipping share 0.75
+
+(B) two developer types, unequal compliance costs; replicator on (A comply, A evade, B comply, B evade)
+   costs (0.1,0.2) sanctions (1.0,1.0): compliant share 1.000000; among compliers A:B = 1.0000:0.0000   (every s_k > c_k: compliance -> 1, incidence only re-sorts compliers)
+   costs (0.1,0.2) sanctions (0.15,0.25): compliant share 1.000000; among compliers A:B = 1.0000:0.0000   (every s_k > c_k: compliance -> 1, incidence only re-sorts compliers)
+   costs (0.1,0.2) sanctions (1.0,0.15): compliant share 1.000000; among compliers A:B = 1.0000:0.0000   (s_B < c_B, yet B's evaders are beaten by A's compliers: evasion vanishes)
+   costs (0.1,0.2) sanctions (1.0,0.05): compliant share 0.000000; among compliers A:B = 0.0000:0.0000   (s_B < c_B and B's evaders earn most: evasion takes over)
+
+(C) Price decomposition of a costly trait with a benefit shared by all; fitness w = psi(payoff), psi increasing
+   affine 1+2pi                : total>0 in 0/3000; within>0 in 0/3000; between>0 in 0/3000 (largest between 0.00e+00)
+   exp(5 pi)                   : total>0 in 0/3000; within>0 in 0/3000; between>0 in 33/3000 (largest between 2.03e-01)
+   log(.05+pi)                 : total>0 in 0/3000; within>0 in 0/3000; between>0 in 3/3000 (largest between 4.50e-07)
+   pi^3 (on pi>0)              : total>0 in 0/3000; within>0 in 0/3000; between>0 in 10/3000 (largest between 2.46e-05)
+   logistic 20(pi-1)           : total>0 in 0/3000; within>0 in 0/3000; between>0 in 121/3000 (largest between 1.29e-03)
+   step-like tanh(50(pi-.95))  : total>0 in 0/3000; within>0 in 0/3000; between>0 in 346/3000 (largest between 4.53e-03)
+   Opus: log(1.05+pi), payoff -z: total -0.363691, between +0.016874, within -0.380565
+   Codex: exp(-5z): total -0.114957, between +0.009201, within -0.124158
+
+(D) the alignment tax under selection: matched variant, heterogeneous advantage, a lead that pays the tax
+   safeguarded developer, baseline 2, tax .1, vs unsafe developer baseline 1: safeguarded share -> 1.0000 (tax alone does not eliminate it)
+   add its matched unsafe twin (baseline 2, no tax): shares safeguarded 1.38e-87, unsafe-1 2.47e-322, twin 1.0000
+   tax .01 paid out of an independent advantage 0.02: safeguarded share -> 1.0000
+   tax .01 paid out of an independent advantage 0.005: safeguarded share -> 0.0000

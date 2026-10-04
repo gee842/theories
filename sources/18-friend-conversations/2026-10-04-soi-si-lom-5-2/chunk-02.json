@@ -1,0 +1,297 @@
+{
+  "text": "那 我们就 说OK我们看到 的东西它是一个 什么 然后就会有一种这种结构\n去 把那个事 作为一种 预期 uh 但是在在 关系 的一种 思考中你会去想 okay 我周围 都 有哪些 东西 然后这些东西它\njustru dalam proses ini bagaimana perubahan yang seharusnya? Bagaimana seharusnya perubahan yang seharusnya terjadi? Dan kemudian kemampuan anda akan lebih besar dalam proses act accordingly.\n它它占 的权重就越 重, but if 但是如果你 就是 在一个最基本 的 uh 位置上 那其实就是你的 家你的 这些 uh social relationships. 然后当你有更多 的能力 的的时候\nuh you just in another scale. But but but this uh this event itself are variables. They are not these R_G_ dependent, R_G_ control, they are not fixed, they are not limited, they are not dependent. This kind of relationship of\n思维方式 他对于 未来的 思考 并不是像 OK那里有一个乌托邦他就 应该是那样的而 是他更多 的会是一种OK\n我们我们 当下在这样的一个 dynamics 中然后 我我怎样 的去坐然后 我可以让这个 dynamics 它本身的变化和 发展或者说 我的行动它以 怎样的方式在当 下的这些关系中可以 去产生什么样的影响\n我觉得这个 和 西方的那 种二维 原式的 这种我他 对立的这 这种就是 语言和 思维结构还不一样 你想对于\n先秦的一 些理论中他的 这种理论它其实 就是一个 universal social dynamics 它 没有我 他然后 他没有 这种这种对立\n它本身所 描述的就是那种 dynamics, 它也不需要实态。如果 那种 dynamics 是 那样的,那 it is so.\n因此 它不会得 出一些这样的结论 比如说如果 我 是最大的 我 就一定 要 去 控制 要 去 剥削 统治\n另外一 方 然后 Okay. 我要是 有权利我就 要去塑造一套 秩序然后 如果 我是一个 国王或者 我是一个独裁者我 就最终避免不了 去\nBullshit. Tough.",
+  "logprobs": null,
+  "task": "transcribe",
+  "duration": 312.0,
+  "segments": [
+    {
+      "type": "transcript.text.segment",
+      "text": "那我们就说OK我们看到的东西它是一个什么",
+      "speaker": "A",
+      "start": 0.0,
+      "end": 7.55,
+      "id": "seg_0"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "然后就会有一种这种结构",
+      "speaker": "A",
+      "start": 17.900000000000002,
+      "end": 22.400000000000002,
+      "id": "seg_1"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 去把那个事 作为一种预期",
+      "speaker": "A",
+      "start": 27.572,
+      "end": 33.672,
+      "id": "seg_2"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " uh 但是在在关系 的一种思考中你会去想 okay 我周围 都有哪些 东西",
+      "speaker": "A",
+      "start": 36.022,
+      "end": 48.221999999999994,
+      "id": "seg_3"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 然后这些东西它",
+      "speaker": "A",
+      "start": 49.721999999999994,
+      "end": 52.172,
+      "id": "seg_4"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " justru dalam proses ini bagaimana perubahan yang seharusnya?",
+      "speaker": "A",
+      "start": 53.556,
+      "end": 56.756,
+      "id": "seg_5"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " Bagaimana seharusnya perubahan yang seharusnya terjadi?",
+      "speaker": "A",
+      "start": 56.806,
+      "end": 61.105999999999995,
+      "id": "seg_6"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " Dan kemudian kemampuan anda akan lebih besar dalam proses act accordingly.",
+      "speaker": "A",
+      "start": 70.456,
+      "end": 77.556,
+      "id": "seg_7"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 它它占 的权重就越重, but if",
+      "speaker": "A",
+      "start": 77.972,
+      "end": 80.77199999999999,
+      "id": "seg_8"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 但是如果你",
+      "speaker": "A",
+      "start": 81.77199999999999,
+      "end": 83.472,
+      "id": "seg_9"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 就是 在一个最基本 的 uh 位置上 那其实就是你的 家你的 这些 uh social relationships.",
+      "speaker": "A",
+      "start": 84.172,
+      "end": 97.07199999999999,
+      "id": "seg_10"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 然后当你有更多 的能力 的的时候",
+      "speaker": "A",
+      "start": 98.472,
+      "end": 101.972,
+      "id": "seg_11"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " uh you just in another scale. But but but this uh this event itself are variables.",
+      "speaker": "A",
+      "start": 103.092,
+      "end": 113.942,
+      "id": "seg_12"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " They are not these R_G_ dependent,",
+      "speaker": "A",
+      "start": 114.792,
+      "end": 118.942,
+      "id": "seg_13"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " R_G_ control,",
+      "speaker": "A",
+      "start": 119.092,
+      "end": 119.792,
+      "id": "seg_14"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " they are not fixed, they are not limited, they are not dependent. This kind of relationship of",
+      "speaker": "A",
+      "start": 120.49199999999999,
+      "end": 126.842,
+      "id": "seg_15"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "思维方式",
+      "speaker": "A",
+      "start": 127.892,
+      "end": 128.992,
+      "id": "seg_16"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "他对于未来的思考并不是像OK那里有一个乌托邦他就应该是那样的而是他更多的会是一种OK",
+      "speaker": "A",
+      "start": 133.642,
+      "end": 151.542,
+      "id": "seg_17"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "我们我们当下在这样的一个 dynamics 中然后我我怎样的去坐然后我可以让这个 dynamics 它本身的变化和发展或者说 我的行动它以怎样的方式在当下的这些关系中可以去产生什么样的影响",
+      "speaker": "A",
+      "start": 151.796,
+      "end": 175.896,
+      "id": "seg_18"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 我觉得这个和西方的那种二维原式的",
+      "speaker": "A",
+      "start": 179.348,
+      "end": 187.098,
+      "id": "seg_19"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "这种我他对立的这这种就是语言和思维结构还不一样",
+      "speaker": "A",
+      "start": 189.448,
+      "end": 200.698,
+      "id": "seg_20"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "你想对于",
+      "speaker": "A",
+      "start": 202.39800000000002,
+      "end": 203.74800000000002,
+      "id": "seg_21"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 先秦的一些理论中他的这种理论它其实就是一个",
+      "speaker": "A",
+      "start": 204.724,
+      "end": 210.124,
+      "id": "seg_22"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " universal social dynamics它没有我他然后他没有这种这种对立",
+      "speaker": "A",
+      "start": 211.92399999999998,
+      "end": 225.57399999999998,
+      "id": "seg_23"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 它本身所描述的就是那种 dynamics, 它也不需要实态。如果那种 dynamics 是那样的,那 it is so.",
+      "speaker": "A",
+      "start": 226.164,
+      "end": 236.664,
+      "id": "seg_24"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 因此它不会得出一些这样的结论 比如说如果 我 是最大的 我 就一定 要 去 控制",
+      "speaker": "A",
+      "start": 253.268,
+      "end": 273.168,
+      "id": "seg_25"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 要 去 剥削 统治",
+      "speaker": "A",
+      "start": 274.368,
+      "end": 277.918,
+      "id": "seg_26"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 另外一方",
+      "speaker": "A",
+      "start": 278.836,
+      "end": 279.786,
+      "id": "seg_27"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 然后",
+      "speaker": "A",
+      "start": 282.68600000000004,
+      "end": 282.986,
+      "id": "seg_28"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " Okay.",
+      "speaker": "B",
+      "start": 282.986,
+      "end": 283.036,
+      "id": "seg_29"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "我要是 有权利我就 要去塑造一套",
+      "speaker": "A",
+      "start": 283.036,
+      "end": 289.286,
+      "id": "seg_30"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 秩序然后 如果 我是一个 国王或者 我是一个独裁者我 就最终避免不了 去",
+      "speaker": "A",
+      "start": 290.986,
+      "end": 305.086,
+      "id": "seg_31"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " Bullshit.",
+      "speaker": "A",
+      "start": 305.716,
+      "end": 306.616,
+      "id": "seg_32"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " Tough.",
+      "speaker": "A",
+      "start": 311.666,
+      "end": 311.81600000000003,
+      "id": "seg_33"
+    }
+  ],
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 11971,
+    "input_tokens": 3970,
+    "input_token_details": {
+      "text_tokens": 132,
+      "audio_tokens": 3838
+    },
+    "output_tokens": 8001
+  },
+  "chunk_metadata": {
+    "index": 2,
+    "core_start": 600,
+    "core_end": 900,
+    "audio_start": 594,
+    "audio_end": 906
+  }
+}

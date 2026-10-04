@@ -1,0 +1,130 @@
+[
+  {
+    "source": "endogenous",
+    "context": "stable",
+    "arm": "endogenous",
+    "restored_fingerprint": "71fd8d92014f995b99c4a6b673313db8ca7a4eb8d5e8ed821aaeef762b3b1010",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "endogenous",
+    "context": "stable",
+    "arm": "independent",
+    "restored_fingerprint": "71fd8d92014f995b99c4a6b673313db8ca7a4eb8d5e8ed821aaeef762b3b1010",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "endogenous",
+    "context": "stable",
+    "arm": "fixed",
+    "restored_fingerprint": "71fd8d92014f995b99c4a6b673313db8ca7a4eb8d5e8ed821aaeef762b3b1010",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "endogenous",
+    "context": "stable",
+    "arm": "protected",
+    "restored_fingerprint": "71fd8d92014f995b99c4a6b673313db8ca7a4eb8d5e8ed821aaeef762b3b1010",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "endogenous",
+    "context": "shift",
+    "arm": "endogenous",
+    "restored_fingerprint": "71fd8d92014f995b99c4a6b673313db8ca7a4eb8d5e8ed821aaeef762b3b1010",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "endogenous",
+    "context": "shift",
+    "arm": "independent",
+    "restored_fingerprint": "71fd8d92014f995b99c4a6b673313db8ca7a4eb8d5e8ed821aaeef762b3b1010",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "endogenous",
+    "context": "shift",
+    "arm": "fixed",
+    "restored_fingerprint": "71fd8d92014f995b99c4a6b673313db8ca7a4eb8d5e8ed821aaeef762b3b1010",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "endogenous",
+    "context": "shift",
+    "arm": "protected",
+    "restored_fingerprint": "71fd8d92014f995b99c4a6b673313db8ca7a4eb8d5e8ed821aaeef762b3b1010",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "independent",
+    "context": "stable",
+    "arm": "endogenous",
+    "restored_fingerprint": "e7a8d218272d113aacfa9d40119b3423a35d188d27ee62b5c371736332fe03e5",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "independent",
+    "context": "stable",
+    "arm": "independent",
+    "restored_fingerprint": "e7a8d218272d113aacfa9d40119b3423a35d188d27ee62b5c371736332fe03e5",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "independent",
+    "context": "stable",
+    "arm": "fixed",
+    "restored_fingerprint": "e7a8d218272d113aacfa9d40119b3423a35d188d27ee62b5c371736332fe03e5",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "independent",
+    "context": "stable",
+    "arm": "protected",
+    "restored_fingerprint": "e7a8d218272d113aacfa9d40119b3423a35d188d27ee62b5c371736332fe03e5",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "independent",
+    "context": "shift",
+    "arm": "endogenous",
+    "restored_fingerprint": "e7a8d218272d113aacfa9d40119b3423a35d188d27ee62b5c371736332fe03e5",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "independent",
+    "context": "shift",
+    "arm": "independent",
+    "restored_fingerprint": "e7a8d218272d113aacfa9d40119b3423a35d188d27ee62b5c371736332fe03e5",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "independent",
+    "context": "shift",
+    "arm": "fixed",
+    "restored_fingerprint": "e7a8d218272d113aacfa9d40119b3423a35d188d27ee62b5c371736332fe03e5",
+    "source_unchanged": true,
+    "first_production_matched": true
+  },
+  {
+    "source": "independent",
+    "context": "shift",
+    "arm": "protected",
+    "restored_fingerprint": "e7a8d218272d113aacfa9d40119b3423a35d188d27ee62b5c371736332fe03e5",
+    "source_unchanged": true,
+    "first_production_matched": true
+  }
+]

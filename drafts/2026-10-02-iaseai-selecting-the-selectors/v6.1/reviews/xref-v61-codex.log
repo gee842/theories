@@ -1,0 +1,32 @@
+core words by section (target, cap):
+  front        77  
+  0           343  (400, 450)
+  1          1410  (1500, 1700)
+  2          2645  (2300, 2500)  OVER CAP
+  3          3586  (2700, 2950)  OVER CAP
+  4          2613  (2300, 2500)  OVER CAP
+  5          3184  (2900, 3200)
+  6          2903  (2400, 2600)  OVER CAP
+  7          2020  (1600, 1800)  OVER CAP
+  8          3086  (2900, 3200)
+  9           870  (700, 800)  OVER CAP
+  10         3484  (2900, 3200)  OVER CAP
+  11         2318  (1800, 2000)  OVER CAP
+  12         1664  (1300, 1450)  OVER CAP
+  symbols     322  (350, 400)
+  core total (without references) 30525 (cap 27000); Parts III+IV 11422 = 37% (floor 35%); 导读 1181 字 (cap 1600)
+101 core declarations, 6 supplement declarations
+no problems
+
+citation coverage:
+  THEORY: all cited works listed
+  SUPPLEMENT: all cited works listed
+  DISCUSSION: all cited works listed
+
+must stay in the core: 32/32 present
+
+guide items 9, Section 1.2 items 9: match
+
+named states or firms in core prose: none
+
+ALL CHECKS PASS

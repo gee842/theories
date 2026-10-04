@@ -1,0 +1,36 @@
+=== TR [independent: (a)-(c) brute-force search over strategy profiles; (d)-(f) by direct computation; (g) simulation] keys: signal, pausevalue, readiness, readrule (S11)
+(a) signal(1): a separating equilibrium (S sends, R does not, restraint after E only) exists iff kS <= GS and kR >= GR
+  [ok] signal(1): brute-force search agrees with the condition in 300/300 random games
+(b) signal(2): if 0 <= kR < GR and 1-mu < w, restraint after E has probability at most kR/GR in every equilibrium
+  [ok] signal(2): over 200 random games, max over equilibria of (restraint after E) - kR/GR = 0.00e+00 <= 0
+  [ok] signal(2): the hybrid equilibrium (S sends; R sends with prob (1-mu)(1-w)/(mu w); restraint after E w.p. kR/GR) is found in 135/135 games with kS <= GS kR/GR
+(c) signal: the printed example
+  [ok] kS=-0.05, kR=0.30, GS=0.40, GR=0.20 (mu=0.5, w=0.6): the separating equilibrium exists
+   reversible step kR=0.05: separating exists: False; max restraint after E over equilibria 0.250 = kR/GR = 0.250; hybrid: R imitates w.p. 0.667
+  [ok] kR=0.05: no separation; the step buys restraint with probability 0.25 at most
+   pooling on N exists with skeptical off-path beliefs (restraint after E <= kS/GS): True; E is equilibrium-dominated for R (best -0.10 < 0) and not for S (best +0.30 > 0)
+  [ok] intuitive criterion: beliefs after E must put weight on S, which removes the pooling equilibrium
+(d) pausevalue(1): a pause that changes nothing leaves survival over any number of active rounds unchanged
+  [ok] shift invariance in 200 random sequences
+(e) pausevalue(2): hazard 0.01 a round for 20 rounds, then 0.01/k^1.5 in the k-th round after a change
+   survival to round 10,000: 0.7969 (limit 0.7968); unchanged process at 0.01 a round: 2.25e-44
+  [ok] survival to 10,000 rounds is 0.80 after a change to a summable sequence, 2e-44 without one
+(f) readiness: seven dimensions, each read once with a 5% chance of missing a met dimension
+   a ready state passes all seven with probability 0.95^7 = 0.6983
+  [ok] 0.95^7 = 0.70
+   fixed design (n=16 readings, set for noise 1): at noise 1, a met dimension passes w.p. 0.953; seven pass w.p. 0.7134
+   fixed design (n=16 readings, set for noise 1): at noise 2, a met dimension passes w.p. 0.372; seven pass w.p. 0.0010
+  [ok] a fixed reading designed for one noise level, read at twice the noise, almost never passes a ready state
+(g) sequential test per dimension (SPRT, means 0 vs 1, alpha=0.01, beta=0.05/7): error rates and duration by noise
+   noise 1: false 'met' 0.0075 (bound 0.0101); missed 'met' 0.0037 (bound 0.0072); mean readings when met 10.5
+   noise 2: false 'met' 0.0057 (bound 0.0101); missed 'met' 0.0035 (bound 0.0072); mean readings when met 38.7
+   noise 4: false 'met' 0.0060 (bound 0.0101); missed 'met' 0.0067 (bound 0.0072); mean readings when met 148.6
+   seven dimensions: a ready state is held back with probability at most 7*beta/(1-alpha) = 0.0505
+  [ok] noise lengthens the sequential test (mean readings x16 at four times the noise, within sampling) and leaves its error rates at the registered levels
+(h) X11 identity: joining Phi^P = (1-q_I)(1-p_dec/2) = eps(1+eps)/2; staying out Phi^S = 1 - p^S_dec p_ext
+   eps=0.05: joining 0.0263; staying out, rival's decisive chance unchanged 0.0500; raised to 1-eps^2 0.0025
+   eps=0.1: joining 0.0550; staying out, rival's decisive chance unchanged 0.1000; raised to 1-eps^2 0.0100
+   eps=0.3: joining 0.1950; staying out, rival's decisive chance unchanged 0.3000; raised to 1-eps^2 0.0900
+   eps=0.6: joining 0.4800; staying out, rival's decisive chance unchanged 0.6000; raised to 1-eps^2 0.3600
+  [ok] staying out beats joining when it leaves the rival's decisive chance unchanged, and loses when it raises it to 1-eps^2
+=== TR assertions: 12 passed, 0 failed

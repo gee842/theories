@@ -1,0 +1,4 @@
+n=2, r=3.0: Gamma=3.00 vs n/(n-1)=2.00; phi just below the cap K*: -1.25e-04, -1.27e-03 -> laggard falls away
+n=2, r=1.5: Gamma=1.50 vs n/(n-1)=2.00; phi just below the cap K*: +6.24e-05, +6.16e-04 -> laggard returns
+n=4, r=2.0: Gamma=2.00 vs n/(n-1)=1.33; phi just below the cap K*: -6.25e-05, -6.25e-04 -> laggard falls away
+n=4, r=1.2: Gamma=1.20 vs n/(n-1)=1.33; phi just below the cap K*: +1.25e-05, +1.23e-04 -> laggard returns

@@ -1,0 +1,4 @@
+Delta=0.08 (paper): min V = 0.1397
+floor 0.2: liability margin needed for viability on the logistic host, Delta_min=0.108
+floor 0.3: liability margin needed for viability on the logistic host, Delta_min=0.165
+floor 0.5: liability margin needed for viability on the logistic host, Delta_min=0.355

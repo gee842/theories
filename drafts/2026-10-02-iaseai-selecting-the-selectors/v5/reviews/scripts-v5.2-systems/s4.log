@@ -1,0 +1,9 @@
+  sigma=0.004, sampling=1.0, series length=40000
+== load E=0.35: true V*=0.440 (V_alarm=0.6, V_min=0.3)
+   none (m=0)                       mean report=0.440  level alarm=FIRES  AR1=0.9775  var=3.52e-04  V* inferred from AR1=0.456
+   constant m=0.5                   mean report=0.720  level alarm=silent  AR1=0.9775  var=8.81e-05  V* inferred from AR1=0.456
+   state-dependent m=0.4+0.3(1-V)   mean report=0.758  level alarm=silent  AR1=0.9774  var=2.46e-05  V* inferred from AR1=0.457
+== load E=0.4: true V*=0.360 (V_alarm=0.6, V_min=0.3)
+   none (m=0)                       mean report=0.360  level alarm=FIRES  AR1=0.9815  var=4.30e-04  V* inferred from AR1=0.373
+   constant m=0.5                   mean report=0.680  level alarm=silent  AR1=0.9815  var=1.08e-04  V* inferred from AR1=0.373
+   state-dependent m=0.4+0.3(1-V)   mean report=0.739  level alarm=silent  AR1=0.9814  var=2.00e-05  V* inferred from AR1=0.376

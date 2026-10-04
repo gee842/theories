@@ -1,0 +1,22 @@
+== S3a: viability-kernel boundary V_crit(p0): smallest V at which acting NOW still keeps V>=V_min
+   rho=0.05, h=0.08, ebar=1.0, e_min=0.1, V_min=0.3, V_alarm=0.6
+  Delta=1.00 delay= 0.0:  V_crit at p0=0.5/0.9/0.99 = ['0.301', '0.321', '0.361']
+  Delta=1.00 delay=10.0:  V_crit at p0=0.5/0.9/0.99 = ['0.332', '0.492', '0.614']
+  Delta=0.30 delay= 0.0:  V_crit at p0=0.5/0.9/0.99 = ['0.303', '0.378', '0.594']
+  Delta=0.30 delay=10.0:  V_crit at p0=0.5/0.9/0.99 = ['0.334', '0.604', 'none']
+  Delta=0.10 delay= 0.0:  V_crit at p0=0.5/0.9/0.99 = ['0.308', '0.674', 'none']
+  Delta=0.10 delay=10.0:  V_crit at p0=0.5/0.9/0.99 = ['0.341', 'none', 'none']
+== S3b: logistic vs Allee host (A=0.2). Equilibria vs load E, then remove the load after collapse.
+  Allee fold load E_f = 0.500; logistic collapse load rho/h = 0.625
+  E=0.000: logistic interior eq []; Allee positive eq []
+  E=0.200: logistic interior eq [0.68]; Allee positive eq [0.29, 0.91]
+  E=0.400: logistic interior eq []; Allee positive eq [0.421, 0.779]
+  E=0.500: logistic interior eq [0.2]; Allee positive eq []
+  E=0.490: logistic interior eq [0.216]; Allee positive eq [0.543, 0.657]
+  logistic: after overload V=0.137; after load removed for 400 units V=1.000
+  Allee   : after overload V=0.049; after load removed for 400 units V=0.000
+== S3c: two coupled host components (1 fast: cyber/infra; 2 slow, Allee: trust/institutions)
+   dV1 = V1[r1(1-V1) - h1 E - c(1-V2)],  dV2 = V2[r2(V2/A2-1)(1-V2) - h2 E - c(1-V1)]
+  coupling c=0.00: first load with collapse E=2.01; just below it V1=0.200, V2=0.603, mean=0.402
+  coupling c=0.02: first load with collapse E=1.41; just below it V1=0.401, V2=0.609, mean=0.505
+  coupling c=0.04: first load with collapse E=1.03; just below it V1=0.520, V2=0.640, mean=0.580

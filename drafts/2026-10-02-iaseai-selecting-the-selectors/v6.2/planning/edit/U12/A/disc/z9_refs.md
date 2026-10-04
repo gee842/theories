@@ -1,0 +1,97 @@
+## References
+
+Marks: ‡ works whose existence and identifier were checked (on 3 or 4 October 2026; "full text", "page" or "abstract" says what was read); † works not yet independently verified ("record": the bibliographic record was retrieved; "not retrieved": from prior knowledge); unmarked works carried from the verified bibliography of v3.1. The forms are those of EVIDENCE.md, where sources of observations are listed with dates and links.
+
+- Abecassis, D. 2025. Refining MAIM: identifying changes required to meet conditions for deterrence. Machine Intelligence Research Institute, April. ‡ (page)
+- Acemoglu, D. and Robinson, J. 2012. *Why Nations Fail*. Crown. †
+- Aghion, P., Harris, C., Howitt, P. and Vickers, J. 2001. Competition, imitation and growth with step-by-step innovation. *Review of Economic Studies* 68(3):467–492. † (record)
+- Aktipis, C. A., Boddy, A. M., Jansen, G., Hibner, U., Hochberg, M. E., Maley, C. C. and Wilkinson, G. S. 2015. Cancer across the tree of life: cooperation and cheating in multicellularity. *Philosophical Transactions of the Royal Society B* 370(1673). ‡
+- Anderson, C., Hildreth, J. A. D. and Howland, L. 2015. Is the desire for status a fundamental human motive? A review of the empirical literature. *Psychological Bulletin* 141(3):574–601. ‡
+- Arthur, W. B. 1989. Competing technologies, increasing returns, and lock-in by historical events. *Economic Journal* 99(394). †
+- Avenhaus, R., von Stengel, B. and Zamir, S. 2002. Inspection games. In Aumann, R. J. and Hart, S. (eds), *Handbook of Game Theory with Economic Applications*, vol. 3, ch. 51, 1947–1987. Elsevier. † (record)
+- Bannister, R. C. 1979. *Social Darwinism: Science and Myth in Anglo-American Social Thought*. Temple University Press. ‡
+- Barrett, S. 2003. *Environment and Statecraft: The Strategy of Environmental Treaty-Making*. Oxford University Press. ‡
+- Bueno de Mesquita, E., Dziuda, W. and Polborn, M. 2026. The AGI race and existential risk. NBER Working Paper 35276. ‡ (full text)
+- Bundy, M. 1988. *Danger and Survival*. †
+- Burns, C. et al. 2023. Weak-to-strong generalization: eliciting strong capabilities with weak supervision. arXiv:2312.09390. †
+- Burr, W. and Richelson, J. 2000/01. Whether to "strangle the baby in the cradle". *International Security* 25(3). †
+- Caulin, A. F. and Maley, C. C. 2011. Peto's paradox: evolution's prescription for cancer prevention. *Trends in Ecology and Evolution* 26(4):175–182. † (record)
+- Cheng, J. T., Tracy, J. L., Foulsham, T., Kingstone, A. and Henrich, J. 2013. Two ways to the top: evidence that dominance and prestige are distinct yet viable avenues to social rank and influence. *Journal of Personality and Social Psychology* 104(1). ‡
+- Choi, J.-K. and Bowles, S. 2007. The coevolution of parochial altruism and war. *Science* 318(5850). ‡
+- Coe, A. and Vaynman, J. 2015. Collusion and the nuclear nonproliferation regime. *Journal of Politics* 77(4). †
+- Coe, A. and Vaynman, J. 2020. Why arms control is so rare. *American Political Science Review* 114(2). †
+- Copeland, D. C. 2000b. The constructivist challenge to structural realism: a review essay. *International Security* 25(2):187–212. † (record)
+- Critch, A. 2021. What multipolar failure looks like, and robust agent-agnostic processes (RAAPs). AI Alignment Forum. †
+- Critch, A. and Krueger, D. 2020. AI research considerations for human existential safety (ARCHES). arXiv:2006.04948. ‡
+- Critch, A. and Russell, S. 2023. TASRA: a taxonomy and analysis of societal-scale risks from AI. arXiv:2306.06924. †
+- Dafoe, A. et al. 2020. Open problems in cooperative AI. arXiv:2012.08630. †
+- Dal Bó, E. 2006. Regulatory capture: a review. *Oxford Review of Economic Policy* 22(2). †
+- Debs, A. and Monteiro, N. 2014. Known unknowns: power shifts, uncertainty, and war. *International Organization* 68(1). †
+- Deutsch, K. W. et al. 1957. *Political Community and the North Atlantic Area*. Princeton University Press. †
+- Fischbacher, U., Gächter, S. and Fehr, E. 2001. Are people conditionally cooperative? Evidence from a public goods experiment. *Economics Letters* 71(3). ‡
+- Frank, R. H., Gilovich, T. and Regan, D. T. 1993. Does studying economics inhibit cooperation? *Journal of Economic Perspectives* 7(2). ‡
+- Friedman, M. 1970. The social responsibility of business is to increase its profits. *New York Times Magazine*, 13 September. ‡
+- Fudenberg, D. and Koh, A. 2026. Cooperating against catastrophe. arXiv:2609.28291. ‡
+- Fuhrmann, M. and Kreps, S. E. 2010. Targeting nuclear programs in war and peace: a quantitative empirical analysis, 1941–2000. *Journal of Conflict Resolution* 54(6):831–859. † (record)
+- Gilpin, R. 1981. *War and Change in World Politics*. Cambridge University Press. †
+- Glaser, C. 1994/95. Realists as optimists: cooperation as self-help. *International Security* 19(3). †
+- Glaser, C. L. 2010. *Rational Theory of International Politics*. Princeton University Press. †
+- Greenblatt, R., Shlegeris, B., Sachan, K. and Roger, F. 2024. AI control: improving safety despite intentional subversion. *ICML*. ‡
+- Gunderson, L. H. and Holling, C. S. (eds) 2002. *Panarchy: Understanding Transformations in Human and Natural Systems*. Island Press. †
+- Hamilton, W. D. 1975. Innate social aptitudes of man: an approach from evolutionary genetics. In Fox, R. (ed.), *Biosocial Anthropology*. †
+- Hammond, L. et al. 2025. Multi-agent risks from advanced AI. Cooperative AI Foundation, arXiv:2502.14143. ‡
+- Hanahan, D. and Weinberg, R. A. 2011. Hallmarks of cancer: the next generation. *Cell* 144(5). †
+- Harris, C. and Vickers, J. 1987. Racing with uncertainty. *Review of Economic Studies* 54(1):1–21. † (record)
+- Hart, O. and Zingales, L. 2017. Companies should maximize shareholder welfare not market value. *Journal of Law, Finance, and Accounting* 2(2). ‡
+- Harvey, D. 2005. *A Brief History of Neoliberalism*. Oxford University Press. ‡
+- Hendrycks, D. 2023. Natural selection favors AIs over humans. arXiv:2303.16200. †
+- Hendrycks, D., Schmidt, E. and Wang, A. 2025. Superintelligence strategy: expert version. arXiv:2503.05628. ‡ (abstract)
+- Henrich, J. and Gil-White, F. J. 2001. The evolution of prestige: freely conferred deference as a mechanism for enhancing the benefits of cultural transmission. *Evolution and Human Behavior* 22(3). ‡
+- Henrich, J., Boyd, R., Bowles, S., Camerer, C., Fehr, E., Gintis, H. and McElreath, R. 2001. In search of Homo economicus: behavioral experiments in 15 small-scale societies. *American Economic Review* 91(2). ‡
+- Hirschman, A. O. 1977. *The Passions and the Interests*. Princeton University Press. ‡
+- Hoffman, D. E. 2009. *The Dead Hand: The Untold Story of the Cold War Arms Race and Its Dangerous Legacy*. Doubleday. † (record)
+- Hofstadter, R. 1944. *Social Darwinism in American Thought*. University of Pennsylvania Press. ‡
+- Huxley, T. H. 1893. *Evolution and Ethics* (Romanes Lecture). †
+- Ikenberry, G. J. 2001. *After Victory*. †
+- Jensen, M. C. and Meckling, W. H. 1976. Theory of the firm: managerial behavior, agency costs and ownership structure. *Journal of Financial Economics* 3(4). ‡
+- Jervis, R. 1976. *Perception and Misperception in International Politics*. †
+- Jervis, R. 1978. Cooperation under the security dilemma. *World Politics* 30(2). †
+- Kindleberger, C. P. 1973. *The World in Depression, 1929–1939*. University of California Press. †
+- Konrad, K. A. and Kovenock, D. 2009. Multi-battle contests. *Games and Economic Behavior* 66(1):256–274. † (record)
+- Kulveit, J., Douglas, R., Ammann, N., Turan, D., Krueger, D. and Duvenaud, D. 2025. Position: humanity faces existential risk from gradual disempowerment. *ICML 2025* (position paper track), PMLR 267; arXiv:2501.16946. ‡ (abstract)
+- Kydd, A. 1997. Game theory and the spiral model. *World Politics* 49(3):371–400. † (record)
+- Laffont, J.-J. and Tirole, J. 1991. The politics of government decision-making: a theory of regulatory capture. *Quarterly Journal of Economics* 106(4). †
+- Larsen, T., Dean, R., Halstead, B., Lifland, E., Greenblatt, R. and Kokotajlo, D. 2026. *AI 2040: Plan A*. AI Futures Project, with its supplements (Deal Decline; Comparing Possible Plans; Capability Scaling Strategy; Verification Plan). ‡ (page; names from the site; figures as checked by the handoff review, see EVIDENCE.md, EV10)
+- Leitenberg, M. and Zilinskas, R. 2012. *The Soviet Biological Weapons Program*. †
+- Leonard, T. C. 2009. Origins of the myth of social Darwinism: the ambiguous legacy of Richard Hofstadter's *Social Darwinism in American Thought*. *Journal of Economic Behavior and Organization* 71(1):37–51. † (record)
+- Marks, S., Treutlein, J., Bricken, T., Lindsey, J., Marcus, J., Mishra-Sharma, S. et al. 2025. Auditing language models for hidden objectives. arXiv:2503.10965. ‡ (abstract)
+- Meadows, D. 1999. *Leverage Points: Places to Intervene in a System*. The Sustainability Institute. ‡
+- Mearsheimer, J. 2001. *The Tragedy of Great Power Politics*. †
+- Merton, R. K. 1968. The Matthew effect in science. *Science* 159(3810). †
+- Nye, J. 1987. Nuclear learning and U.S.–Soviet security regimes. *International Organization* 41(3). †
+- Olson, M. 1993. Dictatorship, democracy, and development. *American Political Science Review* 87(3). †
+- Olsson, P., Gunderson, L. H., Carpenter, S. R., Ryan, P., Lebel, L., Folke, C. and Holling, C. S. 2006. Shooting the rapids: navigating transitions to adaptive governance of social-ecological systems. *Ecology and Society* 11(1). †
+- Ostrom, E. 1990. *Governing the Commons*. Cambridge University Press. †
+- Panchanathan, K. and Boyd, R. 2004. Indirect reciprocity can stabilize cooperation without the second-order free rider problem. *Nature* 432.
+- Podvig, P. 2002. History and the current status of the Russian early-warning system. *Science and Global Security* 10(1):21–60. † (record)
+- Powell, R. 1991. Absolute and relative gains in international relations theory. *American Political Science Review* 85(4):1303–1320. † (record)
+- Price, G. R. 1972. Extension of covariance selection mathematics. *Annals of Human Genetics* 35(4):485–490. †
+- Rees, J. V. 1994. *Hostages of Each Other: The Transformation of Nuclear Safety since Three Mile Island*. University of Chicago Press. ‡
+- Rosenberg, D. A. 1983. The origins of overkill: nuclear weapons and American strategy, 1945–1960. *International Security* 7(4):3–71. † (record)
+- Schelling, T. C. 1960. *The Strategy of Conflict*. Harvard University Press. †
+- Schwartz, B. 1964. *In Search of Wealth and Power: Yen Fu and the West*. Harvard University Press. †
+- Senge, P. 1990. *The Fifth Discipline*. Doubleday. †
+- Shavell, S. 1986. The judgment proof problem. *International Review of Law and Economics* 6(1):45–58. † (record)
+- Snyder, G. H. 1965. The balance of power and the balance of terror. In Seabury, P. (ed.), *The Balance of Power*. Chandler. † (not retrieved)
+- Stafford, E., Trager, R. and Dafoe, A. 2022. Safety not guaranteed: international strategic dynamics of risky technology races. Working paper. ‡
+- Sterman, J. D. 2000. *Business Dynamics: Systems Thinking and Modeling for a Complex World*. McGraw-Hill. †
+- Stern, P. C. 2011. Design principles for global commons: natural resources and emerging technologies. *International Journal of the Commons* 5(2). ‡
+- Stigler, G. J. 1971. The theory of economic regulation. *Bell Journal of Economics and Management Science* 2(1). †
+- Trachtenberg, M. 1988/89. A "wasting asset". *International Security* 13(3). ‡
+- Walt, S. 1987. *The Origins of Alliances*. Cornell University Press. †
+- Waltz, K. N. 1979. *Theory of International Politics*. Addison-Wesley. †
+- Weibull, J. W. 1995. *Evolutionary Game Theory*. †
+- Wendt, A. 1992. Anarchy is what states make of it: the social construction of power politics. *International Organization* 46(2). †
+- Wendt, A. 1999. *Social Theory of International Politics*. Cambridge University Press. †
+- Wohlforth, W. C. 1999. The stability of a unipolar world. *International Security* 24(1). †
+- Yan Fu 1898. 《天演论》, a rendering of Huxley 1893. †

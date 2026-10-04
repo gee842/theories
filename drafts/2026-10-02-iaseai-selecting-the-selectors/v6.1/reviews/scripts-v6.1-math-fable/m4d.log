@@ -1,0 +1,7 @@
+(d) rate law: G(t) = (A + aB q*(t))/(c d(t)), gam = e^{-g t}, d = d0 e^{alpha t}, g=0.2, dominant share 0.6, f=0.
+    Threshold predicted alpha_ctl/(1+eta): eta=0.5 -> 0.1333, eta=2 -> 0.0667. Growth exponent of the cultivated term predicted (g-(1+eta)alpha)/eta.
+   eta=0.5, alpha=0.1133 (below 0.1333): G at t=0,50,100,150: 0.166, 0.326, 6.54, 131; cultivated-term growth rate +0.0600 vs (g-(1+eta)alpha)/eta = +0.0600
+   eta=0.5, alpha=0.1533 (above 0.1333): G at t=0,50,100,150: 0.166, 0.000877, 4.02e-05, 2e-06; cultivated-term growth rate -0.0600 vs (g-(1+eta)alpha)/eta = -0.0600
+   eta=2.0, alpha=0.0467 (below 0.0667): G at t=0,50,100,150: 0.295, 0.663, 2.91, 13; cultivated-term growth rate +0.0300 vs (g-(1+eta)alpha)/eta = +0.0300
+   eta=2.0, alpha=0.0867 (above 0.0667): G at t=0,50,100,150: 0.295, 0.0342, 0.00723, 0.00161; cultivated-term growth rate -0.0300 vs (g-(1+eta)alpha)/eta = -0.0300
+(e) sign checks by finite differences at eta=1.7, xv=0.4, p=0.5: dq*/dgam, dq*/dd, dq*/dchi

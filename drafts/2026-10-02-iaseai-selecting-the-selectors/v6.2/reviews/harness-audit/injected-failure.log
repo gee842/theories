@@ -1,0 +1,8 @@
+
+=== FB [independent] keys: bench
+    Local feedback benchmark, ab < mu d <=> spectral radius < 1
+agreement 0/200000
+
+=== timing by block (s): FB 0
+=== assertions: 0 passed, 0 failed (default sizes)
+=== done in 0 s

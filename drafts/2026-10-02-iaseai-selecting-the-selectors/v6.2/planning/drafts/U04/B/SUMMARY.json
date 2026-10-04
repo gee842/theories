@@ -1,0 +1,58 @@
+{
+ "files_written": [
+  "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U04/B/core/40_s4.md",
+  "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U04/B/supp/04_S4.md",
+  "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U04/B/SUMMARY.json"
+ ],
+ "items_addressed": [
+  "capture (Def 4.1): two directions added to the definition (accommodation; barriers against challengers); new paragraph: under relative selection both directions move one payoff difference (Lemma 3.3(1)), unequal incidence picks winners (Lemma 3.3(2)), fixed per-carrier compliance cost as example (EV4), 'equal incidence ... keeps a rule from becoming a weapon', consistent with Test B's contrary",
+  "costq (Ass 4.2): Cost(q;p) rename; f is a per-unit cost floor, not a lump sum; [H_gamma], [H_f] stated as hypotheses; quasi-static sentence removed from the assumption and placed where used (4.5(2) necessary half, S4.2)",
+  "corrrate (Prop 4.5): Yhat, Bhat defined in 4.3 text; row sum (12) written for held capacity q; (1) 'with capacity at its selected level'; (2) sufficient half at any adaptation speed (adjustment that never raises capacity above its selected level) and necessary half where capacity stays above a fixed fraction of it; f=0 only; (3) per-unit floor: d_f rises at alpha_f, three cases (alpha_cor >, =, < alpha_f) with initial condition, transient clause, lump sum only delays; (4) kept; Scope gives lag delay formula and the conservative/optimistic reading with S4.2",
+  "humancorr (new Prop 4.6, after corrrate): d_eff=d(M/M0)^w; (1) both halves of the rate law with threshold +w*delta_h [thm]; (2) hysteresis of release 1.6-2.6x [num]; Scope: modelling choice inside S13 interface, floor M_min case; prose ties to Lemma 6.3 and narrow E1; proof and numerics in S4 (m06 D, Sys s5 E4a/E4b)",
+  "countervail, noinside, influence, masking, certificate, reabsorb: kept (K); influence with Cost and 'floor'; mechanism sentence for the p^2 and Ren's corpus line quoted after it",
+  "alarm (Remark 4.9): bound on m_model must come from evidence the model's behaviour does not control (weights and activations, Goldowsky-Dill et al. 2025; training data; elicitation by fine-tuning, Greenblatt, Roger, Krasheninnikov and Krueger 2024); x_ev observable where models evaluate models; S4 full remark gains items (3),(4)",
+  "pausefield (Prop 4.12): Scope uses the frozen-share formula ln(G/S(x_p))/(eps d) with S in units of c/a, zero where S>=G, infinite from x_sigma; numbers from DW and Sys s2c; 'ln G plus repay' pointed to Section 11.4; derivation added to S4",
+  "slowroute (Prop 4.13, 'Silent crossing when capture precedes evidence', [thm|prem]): premises (reach),(a),(d),(e); clock form with (b),(c) and T_cap<T_A as an alternative premise set; Scope: (b),(c) are mechanism not premises, two clocks, 12-75 periods, endogenous-clock result; proof in S4 with T_A lower bound; SR (f7 F) and Sys s5b numerics replace the v3 illustration; pilot experiment failure (EV12) kept",
+  "line-363 repair: last paragraph of 4.6 says the generative recursion is not the same selection (Prop 4.4), persists by coverage and formula financing through the whole (Section 10.4), attraction a conjecture",
+  "Restored Ren/v6.0 sentence 'A fixed capacity to certify or to correct can make some kinds of erroneous support decay faster; growing understanding without executive authority may change nothing' at its v6.0 home in 4.3 (d vs U paragraph)",
+  "'AI-assisted correction can keep pace' (not 'win this race'), sharpened to alpha_uc >= alpha_ctl/(1+eta) and conditioned on independence from the evaluated lineage; durable remedies: per-unit cost AI does not lower; lump sum excluded",
+  "'certified' defined once at first use in 4.1 as full inbound row sum below one, a sufficient certificate, with forward pointer to Prop 4.10(2)",
+  "S4 capdyn (Prop S4.2, new supplement key): sufficiency under any non-overshooting adjustment [thm]; necessity whenever liminf q/q*>0 [thm]; constant-rate lag delay [thm]; additive-variance bound [thm]; multiplicative tracking [num]; reversal [num]; QS numerics from f5 A, Sys s4/s5, m06 D/E; TESTS Study 2 failure signature corrected",
+  "S4 corrrate proof rewritten: halves, three-case [H_f] proof with corrected sign (d_f rises), transient, lump-sum threshold exponent eta/(2+2eta-xi_v-eta*xi_f); FF numerics (Codex case, f5 B/C, m06 A-C); CS numerics extended (eta in {0.5,2}, xi_f grid, Yhat scaling)",
+  "Claim box rewritten: two lines, conditions as antecedents, tag per sentence, no hedges; hand-off sentence kept (to Section 5)",
+  "Evidence/bibliography items for this unit (D4 L1, L3; Grossman-Helpman [D,S]) placed; notation renames N_D, k_V, kappa_q applied in S4",
+  "Test-assembled in scratch copy: 'no problems'; no unknown keys; no named states or firms; must-stay 32/32"
+ ],
+ "moved_or_dropped": [
+  "Ass 4.2's 'Capacity is at its selected level at every date (quasi-static)': moved into Prop 4.5(2)'s necessary half and Prop S4.2",
+  "Ass 4.2's '(EV4)' tag on [H_gamma]/[H_f]: dropped; the hypotheses are stated as unmeasured; EV4 is now cited in 4.1 for fixed compliance costs",
+  "Prop 4.5(2) 'f=0 or falling': restricted to f=0; falling f moved to (3) as three cases (V6.1's min{alpha_f, alpha_ctl/(1+eta)} rule is wrong and not carried)",
+  "Prop 4.5 Scope 'a joint simulation ... has not been run (TESTS, Study 2)' and the same sentence in S4 Numerics (CS): superseded by Prop S4.2 and Numerics (QS)",
+  "'AI-assisted correction can win this race': replaced by 'can keep pace' with a sharper rate and a lineage condition",
+  "'a fixed cost of control AI does not lower' (durable remedy): replaced by 'a per-unit cost of capacity that AI does not lower, or lowers more slowly than correction grows'; a lump sum is stated not durable",
+  "Theorem 4.12 title 'No viable race through the host' and kind Theorem: retired; now Proposition 'Silent crossing when capture precedes evidence'; (b),(c) moved from premises to the clock form and Scope",
+  "slowroute's informal clause 'the floor is crossed unless decision and reversal fit the remaining window and a liability ... escapes re-absorption': moved from the statement to the prose after it",
+  "'The same recursion can be generative: success that funds correctors it cannot control is selected in the same way, and then strengthens correction': replaced (line-363 repair); its true part (generative recursion exists) kept, the false 'selected in the same way' dropped",
+  "pausefield Scope 'A long enough pause is at least ln G/(eps d) plus the time to repay the lock-in accumulated meanwhile (S11)': moved to Section 11.4/S11, where the non-frozen insulating reform lives; core points there",
+  "S4 slowroute illustration (alarm t~37/45/63, floor t~53, exogenous clocks, from v3/figures_v3.py, not a v6.2 check block): not carried; same three points now made with SR (f7 F) and the endogenous two-clock simulation (Sys s5b); the delayed-alarm case (m_in=0.3) is carried by the late-alarm formula in the masking proof",
+  "S4 'under [H_f] that level falls at alpha_f': corrected to rises (sign error)",
+  "'What persists is a logic of success, not an identity': now 'a way of succeeding, not an identity (Section 2.3)', pointing to its home in 2.3",
+  "Symbols: C(q;p) -> Cost(q;p); 'fixed part' -> per-unit cost floor; D (number of domains) -> N_D; v_d -> k_V; lag rate kappa_q (local)",
+  "Masking Prop lead 'can silence it' -> 'silences it ... when masking stays high enough' (condition made explicit)"
+ ],
+ "open_issues": [
+  "Bibliography: core list lacks Goldowsky-Dill et al. 2025 and van der Weij et al. 2024 (the parser keys 'van der Weij' as 'der Weij'); 'Greenblatt, Roger, Krasheninnikov and Krueger 2024' keys as (Greenblatt, et al., 2024) and silently matches the AI-control entry: the refs unit must give the three Greenblatt 2024 works a/b/c suffixes and the citation in Remark 4.9 must take its suffix; supplement list lacks Grossman and Helpman 1994",
+  "Check blocks QS, FF and SR are cited per plan section 7 but not yet defined in checks_v62.py; the numbers come from f5 (A-C), m06 (A-E), f7 (F), m4 and Sys s2c/s4/s5/s5b logs; DW should be extended with the s2c frozen-share lengths, and QS should carry Sys s5 E2/E4a/E4b and s5b E3'",
+  "One home: Ren's 'growing understanding without executive authority may change nothing' is placed in 4.3 (its v6.0 home); 1.4's non-claims and 12.2's theory of change should cite 4.3 rather than restate",
+  "One home: 'Equal incidence is not what keeps a rule; it is what keeps a rule from becoming a weapon' placed in 4.1 as the capture mechanism; the section 3 unit (blind) should not repeat it",
+  "Ren line 被选择的，开始选择选择者 quoted after Prop 4.3 with [corpus: meta-attractor] (corpus claim 31, source CHAIN v6.3 main-zh.md); CLAIMS should record provenance (mark D if not Ren's own sentence); if the section 2 unit also uses it in 2.3, keep one home",
+  "Registers and other units: S13 needs the row 'Human capacity and correction' and the 'Capacity and the field' status changed to Prop S4.2; TESTS Study 2 failure signature (S4 states the corrected one); Table 9.1 R3a 'sufficient at any adaptation speed; necessary when capacity tracks its selected level; threshold +w*delta_h with eroding human capacity'; S0/symbol table: Cost(q;p), 'per-unit cost floor', d_eff and w local to Prop 4.6; S11 currently restates the frozen-share formula and should cite Prop 4.12/S4",
+  "Numbering shifts from inserting humancorr as 4.6: countervail 4.7, masking 4.8, alarm 4.9, certificate 4.10, reabsorb 4.11, pausefield 4.12, slowroute 4.13 (memo/plan prose 'Remark 4.8', 'Prop 4.11', 'Theorem 4.12' map to these); capdyn is S4.2 and fieldlemma S4.3; all in-source references are by key",
+  "D2-fable section 27 states necessity 'iff liminf q/q*>0'; only 'if' holds (q/q* can tend to zero while q still outgrows d), so S4.2 says 'whenever'",
+  "Section 2 unit: Remark 2.6's 'success funds correctors it cannot control' must not claim this is selected among carriers (consistent with the line-363 repair)",
+  "Section 8 unit: 4.3 cites 'Section 8.3(a)' for AI-assisted correction; keep that label or update",
+  "Length: core section 4 is 4,135 words by the assembler's count (V6.1 2,699; D1-opus target 2,400); possible non-lossy trims for the merge: the numeric examples in Prop 4.12's Scope, or the clock form of Prop 4.13 moved to S4",
+  "Unknown keys from other units' new keys: none used in this unit"
+ ],
+ "word_counts": "core section 4: 4,135 words (assembler count; 4,236 raw in source) vs V6.1 2,699 raw; S4: 4,039 raw words vs V6.1 1,716"
+}

@@ -1,0 +1,26 @@
+00_head.md:2 (0.000) Reviewed at V6.1 by one model outside the drafting family (Codex); not yet reviewed by outside readers.
+
+00_head.md:3 (0.143) DISCUSSION; registers and the record of changes: see README.*
+
+00_head.md:6 (0.250) In specified models, each under the conditions it states, the paper shows the following.
+
+00_head.md:18 (0.370) *论证链（与第 1.2 节同序，逐条对应）。** **赢的条件（第 2 节）。** 载体（企业、国家、做法、AI 系统等）处在这三个条件下，若地位相近、奖金与行为固定，三者相乘为结构环路增益，大于一则领先越滚越大。杠杆按通道起作用：分享与扩散在每个通道都压低增益；不必赢得的供给，在决定性增长慢于存量的通道（如能力）压低增益；纠错则在决定性随存量增长得足够快的通道压低增益，至少同比增长者（如规则支持）即是。成功还能买到对选择本身的控制，即元吸引子。条件相互联系，不限于任何基质。 **同一个系统（第 3 节）。** 载体共处一个母体，彼此耦合，没有外部。相对选择看不见共有之物；耦合真实时，边界画在系统之内的自我会出错，选择却青睐最狭隘者。向前看也治不了：地位相近时，在一阶上，再投入的相对回报一旦高于共同回报，行动者便重地位轻共有；奖金固定时，贴现环路增益为正即如此；奖金与能力成正比、无供给与扩散时，恰在领先越滚越大处。每一方都算得没错，错的是博弈。对全局不可逆的失败，整合只能依准确的理解预先完成：若增长与变化是我们所看重的，理解"我们是一体"、一个相互联系的系统，就是长期不可或缺的：增长与变化已让我们成为一个系统，局部的变化（疫情、气候变化、AI）可能大到需要整个系统来回应。 **选择选择者（第 4 节）。** 对纠错者的影响若能买下并归己所有，其回报随份额的平方增长，选择因而把它集中到最大的载体。AI 压低控制成本时，独立纠错只要起点经过认证、增长不慢于成本下降速度的一定比例，评估就不会被俘获；没有单位成本下限时，增长更慢的纠错会被影响力随之上升的载体俘获；纠错若依靠人的能力，而这种能力正因委托给 AI 而退化，还须增长得更快。改革若不把流入纠错者的转化压到一以下，会被重新吸收；俘获先于危害的证据时，竞赛会在任何平均警报响起之前越过可及的底线。 **加速与三重侵蚀（第 5 节）。** 随着赌注增大，这些条件使竞争加速，侵蚀三种约束。执行：对决定性位置的价值高于惩罚的偏离而言，偏离成为决定性优势的概率低于一个门槛，克制才可执行；必须赢得的那份能力是两刃共同的支点（本文称之为"剪刀"），随赌注超出博弈之下的供给而增大：领先越滚越大处它抬高这一概率，再投入的相对回报高于共同回报处它把决定这一门槛的目标收窄；各刃各在其模型中得证，现实中是否一同合拢，是待检验的猜想 C0。纠错：覆盖越来越落后于危险的多样性，不可逆损失的概率不低于未覆盖份额的一个固定比例，且失败会蔓延时，无论谁在竞赛，存活的概率都趋于零；不随赌注而满足的目标没有"够了"之点，所以危险不在增长，而在心。理解：相对的算计让两个对手的话语失去信息，三方以上把冲突放大 n/(n−2) 倍，参与者越多放大越弱；结成集团只是一种解读。 **工具与化身（第 6 节）。** 委托人玩有害的博弈时，忠实的 AI 让它更有效；委托所得多于增加的失控损失时，决策随速度交给 AI，推翻的能力随之衰退。化身的弱形式：最外层回路决定哪些偏差值得花钱去除，去除若让开发者相对吃亏，只有准入时强制执行的共同约束保得住，评估中隐藏的偏差，在检出率随能力上升而趋于零、制裁有上限时，连这也挡不住，能力须停在不靠系统配合的控制能确保之处。化身的强形式有条件：按相对表现保留、再投入自身能力、触及自己选择者的 AI 谱系，自身即处在这一压力之下，其闭合在系统内部运行；AI 已在开发者内部用于研究任务，已有早期公开迹象，而最可能处在这一压力之下的、自动化 AI 研究的系统，预期先在开发者内部部署，发布时的准入够不着。各自对齐，不能让委托人之间的博弈对齐。 **当下的轨迹（第 7 节）。** 这些门槛取决于少数几个共同参数：必须赢得的份额、成功转化为控制的程度、决定性（第 7.1 节的门槛表）；当下的动态是这些条件的征候，证据的缺口已逐一注明。偏离若能在被应对前到达不亚于合作的决定性位置，如竞赛前提所设想，重复博弈只能执行各方本会选择的克制，胜后的保护全凭赢家的目标。所以，依 V1–V3，这一前提不能为竞赛这条集体路线辩护，反而是趁领先尚短准备共同保管的理由。 **替代路径与要求（第 8、9 节）。** 各路径按同一标准比较：先保护不可逆的损失，同一个不确定范围，计入各自的失效方式。安排不看名称，看它把哪些门槛推向哪侧、为谁推；只约束行为、不动门槛的会随赌注增大、速度加快而失效，为所有有能力的行动者移动门槛的会持续，这是登记的预测。底线可及、有竞赛载体而无一个规则制定者够得着所有载体时，有几项要求任何一方都无法单独满足。 **生生的选择（第 10 节）。** 同一个反身结构也可以是生生的，让贡献为更多贡献提供条件：成功得到回报，不得同一博弈中更多的优势，也不得对自身评判的控制；供给在博弈之下，像树一样。地位性奖赏仍在时，这些杠杆都不能让被选择的强度为零，那部分只能不让它形成或共同保管。覆盖完整、纠错按公式出资时，这一秩序经由共有之物延续，不经由赢家；形态按功能推导；是否吸引是猜想。没有更好的守护者，只有错误不能无限扩大的结构。 **过渡与判断（第 11、12 节）。** 在"场"模型中，一步若没把它推动的慢变量带过门槛并守满停留时间，就被重新吸收，渐进的步子只能像棘轮那样到达。在把锁定当作必然来计价的各方之间，狭义 E1（把一旦交出便无法收回的决策，如动武与核指挥，留在人手中）开头几步不需要信任，区分不同目标的代价信号也不需要。此后，信任与核查都是必须满足的条件，两者并不冲突：核查让行为看得见，信任由此增长；把核查结果当作信息而不是招数来读，又需要一点先在的信任，所以第一步是不先认定对方不可信。按保护标准与现有证据，改变"选择什么"现在就有理由，分三层，见下。
+
+10_s01.md:107 (0.067) *Review status.** The drafting is from one model family, and so was almost all of the review.
+
+10_s01.md:108 (0.091) One model outside it (Codex) reviewed V6.1, whose review round this version answers; no outside reader has yet reviewed V6.2, whose new mathematics and reduced joint models are the first things to check.
+
+10_s01.md:109 (0.300) **How to read.** In thirty minutes: the abstract or the Chinese guide;
+
+10_s01.md:110 (0.125) Sections 1.2 and 1.4; the claim box at the head of each section; {{>thresholds}}; and Section 12.
+
+20_s2.md:55 (0.242) Where $p_i$ is a probability, the price in (3) and (4) is that of the first-order dynamics of the expected deviation; the value of a win in the lottery itself, from its Bellman equation over finite jumps, is a different object, which coincides with it in the linear case and with small jumps and otherwise only approximately, and once rivals respond strongly it is computed, not given by (4) ({{eqgain}}).
+
+50_s5.md:116 (0.235) *{{!Proposition:enough}} (A point of enough) [thm].** Growth that meets satiable needs has a point of enough; objectives that are not satiated have none.
+
+80_s8.md:83 (0.364) EV2]; the precedents had no decisive prize; and the conditions of winning erode both conditions of pacing, which G1 and G6 secure: the hazard through relative accounting ({{twochan}}), transparency through quiet deviation, captured evaluation and masking ({{enforce}}, {{masking}}, {{masked}};
+
+b0_s11.md:51 (0.192) Since it removes AI from those decisions, not from the detection that answers a breakout, it leaves the chance that a rival's breakout becomes decisive, $p_d=1-\upsilon(T_{\rm dec})$, where it was ({{detectlink}}) [thm].
+
+c0_s12.md:66 (0.361) The asymmetry is between failures that, if they occur, have a named reversal not yet shown to work (C4), and failures that, if they occur, have none; whether either occurs turns on cruxes on both sides (C1, C2 and C5 for continuation;
+

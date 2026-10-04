@@ -1,0 +1,52 @@
+(A) rate law under finite adjustment (threshold 0.1)
+   alpha_cor=0.05: first failure -> QS: 28.8 | R(0.3): 32.9 | R(0.1): 38.1 | R(0.03): 46.9 | GA(1.0): never | GM(1.0): 28.9
+   alpha_cor=0.08: first failure -> QS: 73.0 | R(0.3): 81.4 | R(0.1): 92.7 | R(0.03): 113.2 | GA(1.0): never | GM(1.0): 73.1
+   alpha_cor=0.09: first failure -> QS: 145.9 | R(0.3): 161.5 | R(0.1): 183.0 | R(0.03): 222.9 | GA(1.0): never | GM(1.0): 146.2
+   alpha_cor=0.11: first failure -> QS: never | R(0.3): never | R(0.1): never | R(0.03): never | GA(1.0): never | GM(1.0): never
+   constant-rate lag: delay vs eta ln(1+g/k)/(alpha_ctl-(1+eta)alpha_cor), g=(alpha_ctl-alpha_cor)/eta
+      alpha_cor=0.05, k=0.3: delay 4.11 vs formula 4.05
+      alpha_cor=0.05, k=0.1: delay 9.29 vs formula 9.16
+      alpha_cor=0.05, k=0.03: delay 18.11 vs formula 17.92
+      alpha_cor=0.08, k=0.3: delay 8.40 vs formula 8.41
+      alpha_cor=0.08, k=0.1: delay 19.70 vs formula 19.71
+      alpha_cor=0.08, k=0.03: delay 40.23 vs formula 40.24
+   GA bound: q(t) <= q0 + V p^2/(d0 alpha_cor)
+      alpha_cor=0.02: q(600)=7.290 <= bound 9.180; max G_ev over [0,600] = 0.506 (never fails)
+      alpha_cor=0.05: q(600)=2.182 <= bound 3.780; max G_ev over [0,600] = 0.204 (never fails)
+(B) falling f (marginal-cost floor): cultivation on iff d(t) < d_f(t) = p^2/f(t); d_f(0)/d0 = p^2/(f0 d0)
+   Codex: eta=p=1, A=0, gamma=e^{-.2t}, d=2e^{.05t}, f=.49e^{-.01t}: q*=[.5e^{-.05t}-.49e^{-.01t}]_+ e^{.2t}
+      q*(0)=0.0100, q*(0.3)=0.00427, q*(0.6)=0.0000, q*(5)=0.0000; cutoff ln(.5/.49)/.04=0.5051; alpha_cor=.05<.1 yet the certificate never fails
+   this model (alpha_ctl=.2, eta=1): alpha_f=0.05
+      f0=0.1 (d_f(0)/d0=1.80), alpha_cor=0.05: first failure 37.1, max G_ev 2.74e+24, cultivation ends never
+      f0=0.1 (d_f(0)/d0=1.80), alpha_cor=0.051: first failure 38.4, max G_ev 2.1e+21, cultivation ends 588
+      f0=0.1 (d_f(0)/d0=1.80), alpha_cor=0.06: first failure never, max G_ev 0.267, cultivation ends 59
+      f0=0.1 (d_f(0)/d0=1.80), alpha_cor=0.08: first failure never, max G_ev 0.174, cultivation ends 20
+      f0=0.1 (d_f(0)/d0=1.80), alpha_cor=0.11: first failure never, max G_ev 0.174, cultivation ends 10
+      f0=0.17 (d_f(0)/d0=1.06), alpha_cor=0.05: first failure 58.0, max G_ev 3.43e+23, cultivation ends never
+      f0=0.17 (d_f(0)/d0=1.06), alpha_cor=0.051: first failure never, max G_ev 0.153, cultivation ends 57
+      f0=0.17 (d_f(0)/d0=1.06), alpha_cor=0.06: first failure never, max G_ev 0.153, cultivation ends 6
+      f0=0.17 (d_f(0)/d0=1.06), alpha_cor=0.08: first failure never, max G_ev 0.153, cultivation ends 2
+      f0=0.17 (d_f(0)/d0=1.06), alpha_cor=0.11: first failure never, max G_ev 0.153, cultivation ends 1
+      f0=0.3 (d_f(0)/d0=0.60), alpha_cor=0.05: first failure never, max G_ev 0.15, cultivation ends 0
+      f0=0.3 (d_f(0)/d0=0.60), alpha_cor=0.051: first failure never, max G_ev 0.15, cultivation ends 0
+      f0=0.3 (d_f(0)/d0=0.60), alpha_cor=0.06: first failure never, max G_ev 0.15, cultivation ends 0
+      f0=0.3 (d_f(0)/d0=0.60), alpha_cor=0.08: first failure never, max G_ev 0.15, cultivation ends 0
+      f0=0.3 (d_f(0)/d0=0.60), alpha_cor=0.11: first failure never, max G_ev 0.15, cultivation ends 0
+   -> alpha_cor > alpha_f alone is NOT sufficient (f0=0.1, alpha_cor=0.051: fails at a finite time although cultivation ends later);
+      alpha_cor = alpha_f: the initial ratio d_f(0)/d0 decides (f0=0.17: 1.06>1 -> no cultivation, holds; f0=0.1: 1.8 -> f=0 law, fails)
+   S4's 'that level falls at alpha_f': d_f(t)=p^2/f(t) with f falling RISES: t=0: 1.200, t=10: 1.978, t=20: 3.262
+(C) lump-sum fixed cost F p^xf (paid iff q>0) vs the linear floor f p^xf q
+   xf=0 xv=0 eta=1: lump-sum threshold exponent 0.2500 (predicted eta/(2eta+2-xv-eta xf)=0.2500); linear-floor exponent 0.5000 (1/(2-xf)=0.5000)
+   xf=1 xv=1 eta=1: lump-sum threshold exponent 0.5000 (predicted eta/(2eta+2-xv-eta xf)=0.5000); linear-floor exponent 1.0000 (1/(2-xf)=1.0000)
+   xf=0 xv=0 eta=2: lump-sum threshold exponent 0.3333 (predicted eta/(2eta+2-xv-eta xf)=0.3333); linear-floor exponent 0.5000 (1/(2-xf)=0.5000)
+   xf=0 xv=1 eta=0.5: lump-sum threshold exponent 0.2500 (predicted eta/(2eta+2-xv-eta xf)=0.2500); linear-floor exponent 0.5000 (1/(2-xf)=0.5000)
+   gamma=1e+00: required d* with linear floor f=0.3: 0.529; with lump-sum F=0.3: 0.465; with f=0: 0.638
+   gamma=1e-02: required d* with linear floor f=0.3: 1.146; with lump-sum F=0.3: 4.648; with f=0: 4.800
+   gamma=1e-04: required d* with linear floor f=0.3: 1.199; with lump-sum F=0.3: 46.476; with f=0: 46.626
+   gamma=1e-06: required d* with linear floor f=0.3: 1.200; with lump-sum F=0.3: 464.758; with f=0: 464.908
+   -> the linear floor caps the requirement (levels off at p^2/f = 1.2); a true fixed cost only delays cultivation
+(D) Yhat = p^2 ybar^T Ahat ybar: q* scaling in p (f=0) is p^{(2-xi_v)/eta}; splitting into k parts divides Yhat by k^2
+   xi_v=0 eta=1: d ln q*/d ln p = 2.0000 vs (2-xi_v)/eta = 2.0000
+   xi_v=1 eta=1: d ln q*/d ln p = 1.0000 vs (2-xi_v)/eta = 1.0000
+   xi_v=0 eta=2: d ln q*/d ln p = 1.0000 vs (2-xi_v)/eta = 1.0000
+   xi_v=0.5 eta=0.5: d ln q*/d ln p = 3.0000 vs (2-xi_v)/eta = 3.0000

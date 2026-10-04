@@ -1,0 +1,16 @@
+{
+  "text": "心理是一个动态的过程，它是一种dynamics，没有其中之一dominance。有的时候，即使心所向往如此，我们依然要通过理性去regulate，我们不能产生positive feedback loop that runs away。",
+  "logprobs": null,
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 570,
+    "input_tokens": 523,
+    "input_token_details": {
+      "text_tokens": 43,
+      "audio_tokens": 480
+    },
+    "output_tokens": 47
+  },
+  "audio_start": 165,
+  "audio_end": 213
+}

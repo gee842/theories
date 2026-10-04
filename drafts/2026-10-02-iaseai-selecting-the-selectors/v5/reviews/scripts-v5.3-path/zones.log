@@ -1,0 +1,26 @@
+theta* = 0.9375
+brute-force check of theta_rep2 (decisiveness resolved once after deviation):
+  delta=0.5 pd=0.0: theta_rep=-0.3673  boundary verified True; theta=-1 sustainable? False
+  delta=0.5 pd=0.5: theta_rep=-0.0462  boundary verified True; theta=-1 sustainable? False
+  delta=0.5 pd=0.9: theta_rep=0.6062  boundary verified True; theta=-1 sustainable? False
+  delta=0.5 pd=0.99: theta_rep=0.8983  boundary verified True; theta=-1 sustainable? False
+  delta=0.5 pd=1.0: theta_rep=0.9375  boundary verified True; theta=-1 sustainable? False
+  delta=0.9 pd=0.0: theta_rep=-0.9010  boundary verified True; theta=-1 sustainable? False
+  delta=0.9 pd=0.5: theta_rep=-0.8116  boundary verified True; theta=-1 sustainable? False
+  delta=0.9 pd=0.9: theta_rep=-0.3217  boundary verified True; theta=-1 sustainable? False
+  delta=0.9 pd=0.99: theta_rep=0.6342  boundary verified True; theta=-1 sustainable? False
+  delta=0.9 pd=1.0: theta_rep=0.9375  boundary verified True; theta=-1 sustainable? False
+Zone III check: racing dominated just above theta*: True
+  rank-prize sharing beta=0: theta*=0.9375
+  rank-prize sharing beta=0.25: theta*=0.5556
+  rank-prize sharing beta=0.5: theta*=0.0000
+  rank-prize sharing beta=0.75: theta*=-0.8824
+  private cost/levy c=0.3: theta*=0.9375
+  private cost/levy c=0.6: theta*=0.3750
+  private cost/levy c=0.9: theta*=-0.1875
+  eps=1: theta*(cost diluted)=0.9375; theta*(harm d*eps^0.5 extra)=0.9375
+  eps=10: theta*(cost diluted)=1.4438; theta*(harm d*eps^0.5 extra)=0.3495
+  eps=100: theta*(cost diluted)=1.4944; theta*(harm d*eps^0.5 extra)=-0.4299
+decisive winner's share to others (linear): [(-1, 0.0), (0, 0.0), (0.4, 0.0), (2, 0.0), (2.9, 0.0), (3, 0.0)]
+decisive winner's share to others (log utility): [(0, 0.0), (0.4, 0.286), (1, 0.5), (2, 0.667), (3, 0.75)]
+theta from weight on winning lambda (n=4): [(0, 0.0), (0.5, -0.2727), (1, -0.4286), (2, -0.6), (10, -0.8824), (1000000.0, -1.0)]

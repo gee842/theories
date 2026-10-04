@@ -1,0 +1,49 @@
+JX  Joint scissors and the detect link (proposed block for checks_v62.py; keys `scissors`, `detectlink`,
+
+(A) detectlink identity: 1 - pbar_d against Proposition 8.10's (T-R)/(T-P+F) under the continuation reading
+   100000 random settings with D > v: largest |difference| = 4.35e-11  (the two thresholds are one number)
+   they differ in what is held fixed: (14) is the equilibrium-path condition (the other restrains, trust 1) and
+   computes v in the same game; 8.10's one-shot game adds trust < 1 and takes the answered value P - F as given
+
+(B) detectlink, independent: a Poisson detection clock of mean tau gives p_d = exp(-T_dec/tau)
+   T_dec= 8.0, tau=10.0: simulated p_d 0.4485; exp(-T_dec/tau) 0.4493
+   T_dec=20.0, tau=10.0: simulated p_d 0.1349; exp(-T_dec/tau) 0.1353
+   T_dec= 5.0, tau= 2.0: simulated p_d 0.0818; exp(-T_dec/tau) 0.0821
+   T_dec= 8.0: simulated normalized value of deviating 0.7384 vs restraint 1.0000 -> deterred True; (14) says True
+   T_dec=30.0: simulated normalized value of deviating 0.1973 vs restraint 1.0000 -> deterred True; (14) says True
+
+(C) the reduced joint model; parameters: r=3.0, dK=0.2, df=0.05, th0=0.0, tau=10.0, gap0=0.05, gapbar=0.5 ; stage game of Remark S5.1, D=C
+    omega   Gamma  Gamma_d  theta   T_dec(nonlin)  T_dec(lin)   p_d    pbar_d(i)  enforceable (i)  (ii)
+     0.20   0.480   0.332  -0.272          inf          inf    0.000    +0.911     True             True 
+     0.30   0.720   0.498  -0.427          inf          inf    0.000    +0.872     True             True 
+     0.40   0.960   0.665  -0.598          inf          inf    0.000    +0.794     True             True 
+     0.42   1.008   0.698  -0.634        141.0       1152.4    0.000    +0.769     True             True 
+     0.45   1.080   0.748  -0.690         62.0        116.3    0.002    +0.718     True             True 
+     0.50   1.200   0.831  -0.786         34.0         47.2    0.033    +0.565     True             True 
+     0.55   1.320   0.914  -0.888         23.0         29.9    0.100    +0.119     True             False
+     0.60   1.440   0.997  -0.996         18.0         22.1    0.165   -24.414     False            False
+     0.70   1.680   1.163  -1.000         13.0         14.7    0.273     -inf      False            False
+     0.90   2.160   1.495  -1.000          8.0          9.0    0.449     -inf      False            False
+   restraint enforceable iff omega < omega*:  joint (i) 0.551;  joint (ii) one breakout technology 0.542;
+   objective arm alone (p_d held at 0) 0.556;  breakout arm alone (theta held at theta_0) never fails
+   at the joint crossing (i): Gamma = 1.323, Gamma_delta = 0.916
+
+(D) paths: x = kappa*Omega/(n k0) = omega/(1-omega) grows at g_Omega - g_k
+   stakes outgrow fixed provision (g_Omega=0.05, g_k=0.0):
+      t=0: omega 0.20, p_d 0.000, pbar +0.911; t=10: omega 0.29, p_d 0.000, pbar +0.876; t=20: omega 0.40, p_d 0.000, pbar +0.789; t=30: omega 0.53, p_d 0.067, pbar +0.386; t=40: omega 0.65, p_d 0.223, pbar -inf; t=60: omega 0.83, p_d 0.407, pbar -inf
+   provision grows with the stakes (g_Omega=0.05, g_k=0.05):
+      t=0: omega 0.20, p_d 0.000, pbar +0.911; t=10: omega 0.20, p_d 0.000, pbar +0.911; t=20: omega 0.20, p_d 0.000, pbar +0.911; t=30: omega 0.20, p_d 0.000, pbar +0.911; t=40: omega 0.20, p_d 0.000, pbar +0.911; t=60: omega 0.20, p_d 0.000, pbar +0.911
+   provision outgrows the stakes (g_Omega=0.05, g_k=0.08):
+      t=0: omega 0.60, p_d 0.165, pbar -24.414; t=10: omega 0.53, p_d 0.067, pbar +0.404; t=20: omega 0.45, p_d 0.002, pbar +0.714; t=30: omega 0.38, p_d 0.000, pbar +0.817; t=40: omega 0.31, p_d 0.000, pbar +0.866; t=60: omega 0.20, p_d 0.000, pbar +0.911
+   with fixed provision from omega=0.20 at g_Omega=0.05 the blades cross at t* = ln(x*/x0)/(g_Omega-g_k) = 31.8; with g_k = g_Omega never
+
+(E) robustness: omega* (joint, variant (i)) vs each arm alone, over tau, diffusion, theta_0, r
+   tau= 5.0 df=0.00 theta0=0.0 r=2: omega* joint 0.718, objective alone 0.719, breakout alone none
+   tau= 5.0 df=0.05 theta0=0.0 r=3: omega* joint 0.556, objective alone 0.556, breakout alone none
+   tau= 5.0 df=0.10 theta0=0.4 r=2: omega* joint 0.979, objective alone 0.979, breakout alone none
+   tau=10.0 df=0.00 theta0=0.4 r=3: omega* joint 0.491, objective alone 0.494, breakout alone none
+   tau=10.0 df=0.10 theta0=0.0 r=2: omega* joint 0.943, objective alone 0.949, breakout alone none
+   tau=20.0 df=0.00 theta0=0.0 r=3: omega* joint 0.464, objective alone 0.479, breakout alone none
+   tau=20.0 df=0.05 theta0=0.4 r=2: omega* joint 0.843, objective alone 0.860, breakout alone none
+   tau=20.0 df=0.10 theta0=0.4 r=3: omega* joint 0.637, objective alone 0.653, breakout alone none
+   joint threshold at or below each arm's own in 36 of 36 settings

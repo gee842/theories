@@ -1,0 +1,233 @@
+{
+  "text": "思维 它会被西方 就是给一个这种 collectiveism 的这样的一个标签 但是这不代表就是 他们理解这种内在逻辑 并且这种标签化也是一种过 度的简化但 如果你从 关系的角度来思 考这个世界\n本身就是 这个世界越 好我就越 好 然后我在这个过程当中 我作为一个 系统 我 怎样跟身边的人 和事处好关系 然后这些关系它 应该是什么样的 哪些是好的 哪些 我不喜欢但我必须要\n去做 然后 还有哪 一些是大家共同去做 的和我们 共同对事情的理解 认知和共鸣对 吧 人亦理智嘛 他 不是一种 那种丛林式 的 哇 我 我是最大的 之后我 就是那个\n那个爸爸 然后也也不总 对这种权力 就是有着一种恐惧 和敌视 和对抗 至少现在在在西方我觉得 这个是非常普遍 的 然后他也不会特别极端 的\n去去思 考事情 但是他同 时又理解 ok当 下我们在一个这个 western的秩序 里边然后这个 秩序本身 它它就是在斗争你只有落 后就要挨打对吧如果你这个 逻辑看的话那那那 我们也有这种对于 法家\n对对于 孙子兵法 对各种各样战略和博弈 的的理解然后 在这个过程中我们其实就是 要赢但是你 从另外一个方向去看 这个中国的字的 构成比如说武这个 字它本身就是一种 止歌它 是一种\n这个 对对 于这种 conflux的一种 resolution一种 stopping 然后他在就是 ontology和 epistemology\n所以虽 虽然说 这两个词汇 它它有 非常强的西方特色 但其实也不能完全 地在这种 范畴上去去精 确的去这种 概括 但是最初的 或者说不能说是最初的\n這是從早 期 在個體在成長 的過程中在一代 一代的這個文明 延續中這種 思維模式是 和西方相對 不同的並 且你也可以看到這樣的 一些模式 在比如說\n五年计划 中的这种 就是 uh reflection. 然后比如说他会 说 okay 我们要考虑 这个系统性问题, 然后在这个系统中它有各种 各样的反馈,各种各样 的争议,然后 它有什么样的信号.\n同时 你你也可以去 看到就是它 会去讨论比如说延 伸至深风险 然后 再再再关系 在产生变化的时候那 并不只是一个事情 在在变它 是围绕着关系的整个的 那一套的\n就是 uh 現實因果它它它都在變 因因因兒 就是加速主義其實在 uh 中國 的這種傳統的思想和認 知中它它也不不 make sense它不它不合理然後 uh 比如說它有 這樣的表達你像在道德經中反 者道之動\n对吧?这 你一个东西你过度地去 追求极限,然后它 它考虑的不仅仅是这种 追求和那个目的 之间",
+  "logprobs": null,
+  "task": "transcribe",
+  "duration": 312.0,
+  "segments": [
+    {
+      "type": "transcript.text.segment",
+      "text": "思维",
+      "speaker": "A",
+      "start": 0.0,
+      "end": 0.5,
+      "id": "seg_0"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "它会被西方就是给一个这种 collectiveism 的这样的一个标签但是这不代表就是他们理解这种内在逻辑并且这种标签化也是一种过度的简化但如果你从关系的角度来思考这个世界",
+      "speaker": "A",
+      "start": 1.45,
+      "end": 22.95,
+      "id": "seg_1"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 本身就是这个世界越好我就越好 然后我在这个过程当中 我作为一个系统 我怎样跟身边的人和事处好关系",
+      "speaker": "A",
+      "start": 24.052,
+      "end": 39.702,
+      "id": "seg_2"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 然后这些关系它 应该是什么样的 哪些是好的 哪些我不喜欢但我必须要",
+      "speaker": "A",
+      "start": 40.652,
+      "end": 49.552,
+      "id": "seg_3"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "去做 然后还有哪一些是大家共同去做的和我们共同对事情的理解认知和共鸣对吧 人亦理智嘛 他不是一种那种丛林式的 哇 我我是最大的之后我就是那个",
+      "speaker": "A",
+      "start": 50.004,
+      "end": 75.604,
+      "id": "seg_4"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 那个爸爸",
+      "speaker": "A",
+      "start": 76.756,
+      "end": 77.606,
+      "id": "seg_5"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 然后也也不总",
+      "speaker": "A",
+      "start": 80.156,
+      "end": 82.206,
+      "id": "seg_6"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 对这种权力就是有着一种恐惧和敌视和对抗",
+      "speaker": "A",
+      "start": 82.806,
+      "end": 91.206,
+      "id": "seg_7"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 至少现在在在西方我觉得这个是非常普遍的",
+      "speaker": "A",
+      "start": 91.656,
+      "end": 96.806,
+      "id": "seg_8"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 然后他也不会特别极端的",
+      "speaker": "A",
+      "start": 98.306,
+      "end": 101.156,
+      "id": "seg_9"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 去去思考事情 但是他同 时又理解 ok当 下我们在一个这个 western的秩序里边然后这个秩序本身",
+      "speaker": "A",
+      "start": 102.164,
+      "end": 115.364,
+      "id": "seg_10"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "它它就是在斗争你只有落 后就要挨打对吧如果你这个逻辑看的话那那那我们也有这种对于法家",
+      "speaker": "A",
+      "start": 116.06400000000001,
+      "end": 126.364,
+      "id": "seg_11"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "对对于孙子兵法对各种各样战略和博弈的的理解然后在这个过程中我们其实就是要赢但是你从另外一个方向去看这个中国的字的构成比如说武这个字它本身就是一种止歌它是一种",
+      "speaker": "A",
+      "start": 127.38,
+      "end": 151.23,
+      "id": "seg_12"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 这个对对于这种 conflux的一种 resolution一种 stopping",
+      "speaker": "A",
+      "start": 152.468,
+      "end": 161.518,
+      "id": "seg_13"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "然后他在就是",
+      "speaker": "A",
+      "start": 172.018,
+      "end": 173.968,
+      "id": "seg_14"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " ontology和 epistemology",
+      "speaker": "A",
+      "start": 175.91799999999998,
+      "end": 178.018,
+      "id": "seg_15"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 所以虽 虽然说 这两个词汇 它它有非常强的西方特色 但其实也不能完全 地在这种范畴上去去精确的去这种概括",
+      "speaker": "A",
+      "start": 178.1,
+      "end": 193.04999999999998,
+      "id": "seg_16"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "但是最初的",
+      "speaker": "A",
+      "start": 194.1,
+      "end": 196.45,
+      "id": "seg_17"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 或者说不能说是最初的",
+      "speaker": "A",
+      "start": 199.3,
+      "end": 201.1,
+      "id": "seg_18"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "這是從早期在個體在成長的過程中在一代一代的這個文明延續中這種思維模式是和西方相對不同的並且你也可以看到這樣的一些模式在比如說",
+      "speaker": "A",
+      "start": 201.524,
+      "end": 226.074,
+      "id": "seg_19"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 五年计划中的这种 就是 uh reflection.",
+      "speaker": "A",
+      "start": 226.58,
+      "end": 233.23000000000002,
+      "id": "seg_20"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 然后比如说他会说 okay 我们要考虑这个系统性问题,",
+      "speaker": "A",
+      "start": 233.58,
+      "end": 239.93,
+      "id": "seg_21"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 然后在这个系统中它有各种各样的反馈,各种各样 的争议,然后它有什么样的信号.",
+      "speaker": "A",
+      "start": 240.38000000000002,
+      "end": 249.13000000000002,
+      "id": "seg_22"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 同时你你也可以去看到就是它会去讨论比如说延伸至深风险然后再再再关系在产生变化的时候那并不只是一个事情在在变它是围绕着关系的整个的那一套的",
+      "speaker": "A",
+      "start": 251.252,
+      "end": 276.002,
+      "id": "seg_23"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "就是 uh 現實因果它它它都在變因因因兒就是加速主義其實在 uh 中國的這種傳統的思想和認知中它它也不不 make sense它不它不合理然後 uh 比如說它有這樣的表達你像在道德經中反者道之動",
+      "speaker": "A",
+      "start": 277.172,
+      "end": 301.22200000000004,
+      "id": "seg_24"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 对吧?这你一个东西你过度地去追求极限,然后它它考虑的不仅仅是这种追求和那个目的之间",
+      "speaker": "A",
+      "start": 301.972,
+      "end": 311.822,
+      "id": "seg_25"
+    }
+  ],
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 12876,
+    "input_tokens": 4386,
+    "input_token_details": {
+      "text_tokens": 120,
+      "audio_tokens": 4266
+    },
+    "output_tokens": 8490
+  },
+  "chunk_metadata": {
+    "index": 4,
+    "core_start": 1200,
+    "core_end": 1500,
+    "audio_start": 1194,
+    "audio_end": 1506
+  }
+}

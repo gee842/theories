@@ -1,0 +1,16 @@
+{
+  "text": "然后就是变得越来越大，斗得越来越猛。当然大多数人，不管你在世界哪里，不是会认可这套逻辑的吗？但是目前不幸的是权力系统它确实在奖赏这种行为，并且它的这种奖赏其实也在筛选权力，在迭代的速度越快的地方，这种效应就越明显。",
+  "logprobs": null,
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 524,
+    "input_tokens": 443,
+    "input_token_details": {
+      "text_tokens": 43,
+      "audio_tokens": 400
+    },
+    "output_tokens": 81
+  },
+  "audio_start": 2152,
+  "audio_end": 2192
+}

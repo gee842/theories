@@ -1,0 +1,24 @@
+{
+  "v7_files_checked": 87,
+  "changed_v7_files": [],
+  "stable_declarations": 128,
+  "declaration_identity_changes": [],
+  "ren_claims_sections_8_9_verbatim_content": true,
+  "assembly_exit_code": 0,
+  "assembly_reproducible": true,
+  "missing_local_document_links": [],
+  "verified_input_files": 55,
+  "document_sha256": {
+    "CHANGELOG.md": "8c6e79e9c9dcbe6b56f1633fc81545399efd14bffcf28615989029bf7d6860e4",
+    "CLAIMS.md": "7d654302cc9e13c178fcad6b119896cd581e2dc8d3aaf0629ed34973188c0efa",
+    "DISCUSSION.md": "ba20e2765dfe2c3ad391803e062aec2e3bc7a6001565c1b1cc3c47b625f54984",
+    "EVIDENCE.md": "0c9299907446e669ef6aa52774ec8b36d354cc6f2c476e2d64c9f68e75335427",
+    "LEDGER.md": "c4278a0f08064ff04f3de53280d40aa92a1d8a62df1ee386b31b615f7e18dc2b",
+    "README.md": "e1d8f229b0c06801fd36707bf099af6df9ede73a7a908fad56dafdd31d7d76eb",
+    "RELEASE-REVIEW.md": "c9f93363e4f4b5030020cea510d712630af66e7d80eefdd12757449ed56d94b9",
+    "START-HERE.md": "ff0945b1e2a88bbed3b790ef6d05a534bfc339845004d0a9c4d4174187f8772c",
+    "SUPPLEMENT.md": "9ed6f1223a60e4ddfebc3a3c3d5c213e029ecfbe5dd6e5192ac3d105ab835af9",
+    "TESTS.md": "402e275e7a605ff830cbda3cfc9b2371933c47d682ffa39584b31179cd710455",
+    "THEORY.md": "88797e8e0e5d337c4c062abaa1d7604dfc6c40cd5a58734ef668ade5ad04c001"
+  }
+}

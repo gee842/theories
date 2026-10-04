@@ -1,0 +1,21 @@
+core words by section (figures, not caps; V6.1 plan range for reference):
+  front       531
+  0           544   (v6.1 plan 400-450)
+  1          3373   (v6.1 plan 1500-1700)
+  2          4187   (v6.1 plan 2300-2500)
+  3          5552   (v6.1 plan 2700-2950)
+  4          4477   (v6.1 plan 2300-2500)
+  5          5655   (v6.1 plan 2900-3200)
+  6          6326   (v6.1 plan 2400-2600)
+  7          5617   (v6.1 plan 1600-1800)
+  8          5186   (v6.1 plan 2900-3200)
+  9          2718   (v6.1 plan 700-800)
+  10         6268   (v6.1 plan 2900-3200)
+  11         5595   (v6.1 plan 1800-2000)
+  12         6277   (v6.1 plan 1300-1450)
+  symbols     785   (v6.1 plan 350-400)
+  core total (without references) 63091; Parts III+IV 26044 = 41% of the core; 导读 3850 字
+  supplement 65353, discussion 22119 words (without references)
+93 core declarations, 35 supplement declarations
+1 problems:
+   forward use of standprice (Proposition 3.9) at 20_s2.md:47

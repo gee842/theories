@@ -1,0 +1,52 @@
+{
+  "files_written": [
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U09/A/core/90_s9.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U09/A/supp/09_S9.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U09/A/SUMMARY.json"
+  ],
+  "items_addressed": [
+    "require -> Table 9.1 [def, with support], each row tagged with its source result's tag (plan s2 Kinds, D2-fable s23, D2-opus s17)",
+    "R1 limsup: stated in the sharper form B(t) does not tend to infinity (from load), with limsup of the time-average as its consequence; S9 shows limsup is necessary, not sufficient [num: HO(g), crossing at t=89]; finite-horizon counterexample kept [num: HO(c)]",
+    "R3a halves: sufficient at any speed of adaptation; necessary where capacity tracks its selected level (liminf q/q* > 0); threshold + w*delta_h (humancorr); not-needed list repaired: per-unit floor AI does not lower, alpha_f < alpha_cor with the transient [num: FF 38.4 vs 588], gradual selection (capdyn); lump sum explicitly excluded",
+    "R3b kept with FA example",
+    "R4 exception: 'D<C' removed (false); (1-delta)g <= delta(C-D), i.e. p_bar >= 1, with one-line proof and ES counterexample (p_bar=0.864); timely detection moved from 'not needed' to 'met, not excused' (detectlink)",
+    "R5: necessity derived under (residual floor) alone (product bound, new in S9); (variety grows)/(coverage lags) moved out of 'not needed' (they say when R5 fails); 'met, not excused' via enough",
+    "R6: bound on masking from evidence the observed behaviour does not control; necessary for R4 on the detection route",
+    "R8 split: R8a compliance (necessary [thm|prem], per-type sanction; across types sufficient not necessary [num: CI]); R8b equal incidence (necessary and sufficient for neutrality [thm]; required by V5 [val]); liability route added as the way (A_tau) fails, with its limits",
+    "Limits paragraph: internal deployment (admission before consequential deployment), open weights (release is the last admission decision), masked classes (R8a necessary not sufficient; capability threshold; E2/E3 beyond); 'admission reaches only to release' moved here",
+    "Four sufficient safeguards kept and updated (Delta_min [num: HO]; detection faster than breakout; verification vs exit)",
+    "Functions-not-forms kept; regulated competition met at its strongest",
+    "nounilateral kept, conditions moved into each part; (3) as antecedent; S9 proof notes the tau(1-x_rule) join is an S13 interface",
+    "Which rows need more than one party: extended row by row (R1,R2,R3,R4,R5,R6,R8a,R9)",
+    "Coverage can unravel kept; mechanism made exact as Remark S9.1 `unravel` (blind(3) with evasion read as exit; per-type tipping share; participation threshold; [num: CI])",
+    "S9 row by row rewritten; crosswalk Table S9.2 `crosswalk`: R <-> threshold (Table 7.1) <-> G-mark <-> (I1)-(I4) <-> D-test <-> Q, read by threshold, mark, test and readiness, plus section 10.1 provision properties, section 6.6 levels and Table 11.5",
+    "New core paragraphs: 'The row the others rest on' (every row but R7 is a corrector's act; R3 carries the table: the reflexive closure seen from requirements) and 'What the table does not list' (sharing, provision, non-convertible reward are alternatives by compound, each meeting several rows)",
+    "Claim box: Claim/Why, conditions as antecedents, tags per sentence; D1-opus addition included; hand-off to section 10",
+    "Judgment call: new row R9 (human decision authority kept, O2) exposed by the crosswalk: the delegation threshold and O2 had no requirement row"
+  ],
+  "moved_or_dropped": [
+    "R1 'cumulative advantage bounded' (not-needed column): absorbed into R1's statement, which is now the B(t) form",
+    "R3a 'a fixed cost of control AI does not lower': replaced by 'a per-unit cost floor that AI does not lower'; lump-sum cost explicitly excluded in S9 R3a",
+    "R4 'D<C' (not-needed): dropped as false (ES counterexample kept in S9); 'timely detection' moved to 'met, not excused'; 'saturation' now 'Branch I-prime above its saturating level'",
+    "R5 '(variety grows), (coverage lags) fail' (not-needed): moved to S9 R5 as the conditions under which R5 fails, not of its necessity; failure of (variety grows) with coverage growing kept in the table as 'met, not excused' (enough)",
+    "R8 'admission reaches only to release' (not-needed): moved to core 'Where admission does not reach' and S9 R8a 'Limits, not exceptions', beside internal deployment and open weights",
+    "R8 'of equal incidence': moved out of the compliance requirement into R8b",
+    "nounilateral headline 'Correction and coverage are not supplied by any one carrier or rule-maker' rewritten; global premise (reach) moved into part (2)",
+    "'This is a conditional result combined with evidence and a stated standard, not a proof from first principles': rewritten as the split assure / Part II diagnosis / Section 12 judgment [val]",
+    "Participation threshold redefined from 'the coverage at which its constraints remain neutral among compliers' to the tipping coverage of Remark S9.1; the loss of neutrality kept as the mechanism (blind(2))",
+    "S9 sufficient safeguards 'with a margin on harsher hosts': now Delta_min with numbers from HO"
+  ],
+  "open_issues": [
+    "Assembler: 'Table' must be added to KINDS in src/assemble_v62.py (tested in scratch with it added; section 7's thresholds needs it too)",
+    "R9 (human decision authority, O2) is not in the plan. If adopted: symbols 'R1-R8' -> 'R1-R9', README, CLAIMS, section 10 form-table row 'human decision authority' and section 12 narrow E1 may cite R9. If rejected, drop: the R9 table row, its sentences in 'Reading the rows' and 'Which rows need more than one party', the clause 'and the verification of capacity kept in practice', the S9 R9 bullet, the crosswalk R9 row and its mentions in the readings",
+    "R8 -> R8a/R8b: update references elsewhere: S7 P8 '({{require}}, R8)' -> R8a; README 'Section 9 (R8)'; S14 row 'Proposition {{#require}}, R1' -> 'Table {{#require}}, R1'; CLAIMS rows for require (kind now Table) and nounilateral; LEDGER",
+    "S5 (merged) says '(variety grows) ... R5's list of conditions under which the requirement is not needed keeps it'; Table 9.1 now keeps it as 'met, not excused' and S9 says it does not enter R5's necessity; S5 wording should follow",
+    "safeguards(3) in section 10 (not yet rewritten) states 'long-run average'; R1 cites it as the limsup consequence of the sharper B(t) form; the section 10 unit should state limsup",
+    "Crosswalk uses labels G1-G7 (D1-opus list per plan), (I1)-(I4), D1-D8, Q1-Q7 and section 10.1's four provision properties; verify against the final sections 8, 10, 11",
+    "Crosswalk findings for other units: readiness Q1-Q7 has no dimension for R1, R2, R7, R8b (presupposed); O3 (D6) carried by no row; Remark S9.1's [conj] that a conjunctive, noisy readiness rule spends coverage links to section 11.3's decision rule (systems review I3)",
+    "No unknown keys in the scratch assembly: the other units' new keys (twoerrors, humancorr, detectlink, scissors, masked, thresholds) are already merged in v6.2/src. New supplement keys: unravel (Remark S9.1), crosswalk (Table S9.2), both unique",
+    "xref_v62.py fails only on citation coverage from other units; nothing from section 9 (Barrett 2003 is listed)",
+    "The R5 necessity derivation (product bound under (residual floor)) is analytic; no check block covers it"
+  ],
+  "word_counts": "core section 9: 2,853 words by the assembler's rule (V6.1: 870), of which Table 9.1 about 970; S9: 3,766 (V6.1: 696). No numbers stated in the core section; all S9 numbers come from checks_v62.log blocks HO, FF, FA, ES, CI"
+}

@@ -1,0 +1,37 @@
+(A) caps: local stability at K_bar = K* and the role of diffusion
+   n=2 r=3.0 beta=0.0 k0=0.0 df=0.0: Gamma0(n-1)/n=1.500 vs 1+df(n-1)/(n dK)=1.000 -> predicted falls away; laggard from 0.999 K* ends at 0.0000 K* (falls away) OK
+   n=2 r=1.5 beta=0.0 k0=0.0 df=0.0: Gamma0(n-1)/n=0.750 vs 1+df(n-1)/(n dK)=1.000 -> predicted returns; laggard from 0.999 K* ends at 1.0000 K* (returns) OK
+   n=4 r=2.0 beta=0.0 k0=0.0 df=0.0: Gamma0(n-1)/n=1.500 vs 1+df(n-1)/(n dK)=1.000 -> predicted falls away; laggard from 0.999 K* ends at 0.0000 K* (falls away) OK
+   n=4 r=1.2 beta=0.0 k0=0.0 df=0.0: Gamma0(n-1)/n=0.900 vs 1+df(n-1)/(n dK)=1.000 -> predicted returns; laggard from 0.999 K* ends at 1.0000 K* (returns) OK
+   n=5 r=1.5 beta=0.0 k0=0.0 df=0.0: Gamma0(n-1)/n=1.200 vs 1+df(n-1)/(n dK)=1.000 -> predicted falls away; laggard from 0.999 K* ends at 0.0000 K* (falls away) OK
+   n=2 r=3.0 beta=0.0 k0=0.0 df=0.6: Gamma0(n-1)/n=1.500 vs 1+df(n-1)/(n dK)=2.500 -> predicted returns; laggard from 0.999 K* ends at 1.0000 K* (returns) OK
+   n=4 r=2.0 beta=0.0 k0=0.0 df=0.3: Gamma0(n-1)/n=1.500 vs 1+df(n-1)/(n dK)=2.125 -> predicted returns; laggard from 0.999 K* ends at 1.0000 K* (returns) OK
+   n=4 r=2.0 beta=0.0 k0=0.0 df=0.1: Gamma0(n-1)/n=1.500 vs 1+df(n-1)/(n dK)=1.375 -> predicted falls away; laggard from 0.999 K* ends at 0.4811 K* (falls away) OK
+   n=3 r=2.0 beta=0.3 k0=0.0 df=0.0: Gamma0(n-1)/n=0.933 vs 1+df(n-1)/(n dK)=1.000 -> predicted returns; laggard from 0.999 K* ends at 1.0000 K* (returns) OK
+   n=3 r=2.0 beta=0.0 k0=0.05 df=0.0: Gamma0(n-1)/n=1.026 vs 1+df(n-1)/(n dK)=1.000 -> predicted falls away; laggard from 0.999 K* ends at 0.4084 K* (falls away) OK
+   strictly lower cap (0.98 K*), n=2 r=3 (Gamma=3), no diffusion: laggard from 0.999 cap ends at 1.0000 cap (returns)
+   strictly lower cap (0.9 K*), n=2 r=3 (Gamma=3), no diffusion: laggard from 0.999 cap ends at 1.0000 cap (returns)
+   diffusion as the third restoring source (n=2, r=2, d=0.2, df=0.6, cap=K*=2.5, beta=k0=0): from K=0.01 -> [2.499999999999999, 2.499999999999999]
+   min phi on (0, Kbar) = 0.0007 > 0 (restored from every start without sharing or provision)
+   necessity: beta=k0=df=0, r=2, n=2, cap=0.9 K*: laggard from 0.3 cap -> 9.88e-324 (excluded)
+   with df=0.05 only: laggard from 0.3 cap -> 0.3624; phi(0+)= 0.0562 min phi on (0,Kbar)= -0.0131
+(B) sign of d by channel form (n=2, kap*Om=1, k0=0.2, df=0.1): numerical spectral radius of the deviation map
+   ratio-form, d=0.1: r_j=2.000 Gamma=0.714 spectral radius=0.9429 -> stable
+   ratio-form, d=0.2: r_j=2.000 Gamma=0.952 spectral radius=0.9857 -> stable
+   ratio-form, d=0.3: r_j=2.000 Gamma=1.071 spectral radius=1.0286 -> UNSTABLE
+   ratio-form, d=0.6: r_j=2.000 Gamma=1.224 spectral radius=1.1571 -> UNSTABLE
+   level-form, d=0.1: r_j=8.400 Gamma=3.000 spectral radius=1.4000 -> UNSTABLE
+   level-form, d=0.2: r_j=4.200 Gamma=2.000 spectral radius=1.3000 -> UNSTABLE
+   level-form, d=0.3: r_j=2.800 Gamma=1.500 spectral radius=1.2000 -> UNSTABLE
+   level-form, d=0.6: r_j=1.400 Gamma=0.857 spectral radius=0.9000 -> stable
+   -> faster depreciation of a ratio-form stock raises Gamma (with diffusion); correction of a level-form stock lowers it
+   Gamma_delta of a ratio-form channel rises with d even without diffusion: d/dd [delta d/(1-delta(1-d))] has sign delta(1-delta) > 0
+(C) Remark S2.1: exact growth factor of a single-channel gap vs 1+(dK+df)(Gamma-1) and vs the text's 1+dK(Gamma-1)
+   d=0.2 df=0.0 r=3.0: Gamma=3.000; exact multiplier 1.4000; 1+(d+df)(Gamma-1)=1.4000; text 1+d(Gamma-1)=1.4000; periods 1%->50%: exact 11.6, text 11.6
+   d=0.2 df=0.1 r=2.0: Gamma=1.333; exact multiplier 1.1000; 1+(d+df)(Gamma-1)=1.1000; text 1+d(Gamma-1)=1.0667; periods 1%->50%: exact 41.0, text 60.6
+   d=0.05 df=0.05 r=3.0: Gamma=1.500; exact multiplier 1.0500; 1+(d+df)(Gamma-1)=1.0500; text 1+d(Gamma-1)=1.0250; periods 1%->50%: exact 80.2, text 158.4
+   d=0.2 df=0.3 r=1.2: Gamma=0.480; exact multiplier 0.7400; 1+(d+df)(Gamma-1)=0.7400; text 1+d(Gamma-1)=0.8960; periods 1%->50%: exact -13.0, text inf
+   two channels with different turnover and the same Gamma=1.2: the multiplier is the secular root, not a function of Gamma alone
+   dK=0.5, dZ=0.5: lambda*=1.1000; periods 1%->50% = 41
+   dK=0.02, dZ=0.02: lambda*=1.0040; periods 1%->50% = 980
+   dK=0.5, dZ=0.02: lambda*=1.0092; periods 1%->50% = 427

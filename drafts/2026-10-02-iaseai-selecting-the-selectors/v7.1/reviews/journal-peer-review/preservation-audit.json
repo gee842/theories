@@ -1,0 +1,14 @@
+{
+  "review_date": "2026-10-04",
+  "baseline_files_checked": 82,
+  "changed_or_missing": [],
+  "broken_local_links": [],
+  "manuscript_preserved": true,
+  "review_type": "Three fresh AI reviewer contexts and editorial synthesis; not external human peer review",
+  "reports": {
+    "EDITORIAL-DECISION.md": "3f003d2ce600adba75e0d36697d729a50ba12b589733b02d943246999a9e9d9f",
+    "evidence-referee.md": "5cb8ba6b65a26e2a94081fac36e523e221b8a3252d243943da92ada334238159",
+    "formal-referee.md": "5eeee3e06a908bbb6cad24024e644ce2802190d0640a6dae95b12008091b78f1",
+    "novelty-referee.md": "56022dfbf77c54a598719debde89b6c78000e6d947102dcebbe77cb0472e0838"
+  }
+}

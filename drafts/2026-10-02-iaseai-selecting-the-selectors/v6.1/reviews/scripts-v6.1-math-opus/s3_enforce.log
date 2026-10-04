@@ -1,0 +1,13 @@
+(1) EC 'direct values' vs (14) with exact rationals, 20,000 draws: disagreements 0 -> the EC block tests algebra only
+(2) paper's example C=1,g=0.5,delta=0.9,P=0,D=4,U=0,q=0.1: v=1.286 > C=1.0: both actors prefer the race-with-breakouts to cooperation
+    g=0.5: q-window with v<C yet reversion fails to deter (deters at q=0: True): [0.0498, 0.0555]
+    g=2.0: q-window with v<C yet reversion fails to deter (deters at q=0: True): [0.0354, 0.0555]
+    g=5.0: q-window with v<C yet reversion fails to deter (deters at q=0: True): [0.0159, 0.0555]
+    credibility, S=-0.5, q=0.03: racing in punishment worth 7.013, restraining one period 5.622 -> racing a best response: True
+    credibility, S=0.0, q=0.03: racing in punishment worth 7.013, restraining one period 6.122 -> racing a best response: True
+(3) at p_bar=0 (g=(delta/(1-delta))(C-v)=18.0): dp_bar/dD = 0.00e+00 (zero, not negative)
+(4) D<C: C=1, D=0.9, v=0, g=2, delta=0.9 -> p_bar=0.864; at p_d=0.9 restraint fails although D<C: True
+(5) punishment [('A', 'X'), ('A', 'X'), ('A', 'Y')]: objectives [-0.5, -0.5, 1.0]; best unilateral gain per player [0.0, 0.0, -0.2] -> the deviator and one punisher are exactly indifferent (weak equilibrium)
+    anonymous perturbation eps=0.01: games with a stage-NE punishment holding the deviator below C: 400/400; of which strict NE: 400; median delta* 0.707
+    anonymous perturbation eps=0.05: games with a stage-NE punishment holding the deviator below C: 400/400; of which strict NE: 400; median delta* 0.711
+    anonymous perturbation eps=0.1: games with a stage-NE punishment holding the deviator below C: 372/400; of which strict NE: 372; median delta* 0.715

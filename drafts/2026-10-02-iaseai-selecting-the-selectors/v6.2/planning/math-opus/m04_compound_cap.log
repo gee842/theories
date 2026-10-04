@@ -1,0 +1,18 @@
+m04  A point of enough: caps, diffusion and inflow not tied to rank (Prop 2.3(2), key `compound`).
+
+(A) cap at and below K*
+   cap = K* = 2.5, r=3, start (2.499, 2.5): after 400 periods 2.385e-32, 2.5000  (excluded)
+   cap = 0.98 K* = 2.45, same start just below the cap: after 4000 periods 2.450000, 2.450000  (restored)
+   400 random settings: strict cap (0.97 K*) restored from just below in 400 of 400;
+   cap = K*: local exclusion predicted by (1-beta) r omega (n-1)/n > 1 + df(n-1)/(n d) in 400 of 400 (simulated)
+
+(B) global recovery: criterion phi>0 on (0,Kbar) vs simulation from a laggard at 1% of the cap
+   Codex: n=2 r=2 d=.2 df=.6, cap=K*=2.5, no sharing or provision: min phi on grid 0.0001 (>0); from (0.01, 2.5) -> (2.500000, 2.500000)
+   random settings with leaders provably held at the cap (Kbar <= (kap Om + n k0)/(n d + df)): criterion agrees with simulation in 444 of 446
+   disagreements: the criterion concerns EVERY start; these laggards start above the exclusion threshold: [{'n': 2, 'r': 1.19, 'd': 0.362, 'cap_over_Kstar': 0.789, 'criterion': False, 'recovered_from_1pct': True, 'exclusion_threshold_over_cap': 0.007}, {'n': 3, 'r': 1.13, 'd': 0.374, 'cap_over_Kstar': 0.661, 'criterion': False, 'recovered_from_1pct': True, 'exclusion_threshold_over_cap': 0.002}]
+
+(C) r>1 and no inflow not tied to rank: laggards below a threshold are excluded; any one of the three restores
+   beta=0 k0=0 df=0: phi(0+)=0.0000; laggard 0.05->0.0000, 0.2->0.0000, 0.5->0.8000
+   beta=0.1 k0=0 df=0: phi(0+)=0.0200; laggard 0.05->0.8000, 0.2->0.8000, 0.5->0.8000
+   beta=0 k0=0.05 df=0: phi(0+)=0.0500; laggard 0.05->0.8000, 0.2->0.8000, 0.5->0.8000
+   beta=0 k0=0 df=0.15: phi(0+)=0.0960; laggard 0.05->0.8000, 0.2->0.8000, 0.5->0.8000

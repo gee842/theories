@@ -1,0 +1,27 @@
+eta=1.0: rate-law threshold alpha_cor = g/(1+eta) = 0.1000
+  alpha_cor=0.0900 (below threshold)
+     selection speed s_q= 100.0: quasi-static certificate fails at t=69.3; actual (a z > c) at t=69.3; evaluation captured (x>1/2) at t=118.8; q/q* in [0.995, 1.000]
+     selection speed s_q=   1.0: quasi-static certificate fails at t=69.3; actual (a z > c) at t=75.3; evaluation captured (x>1/2) at t=129.2; q/q* in [0.391, 1.000]
+     selection speed s_q=   0.1: quasi-static certificate fails at t=69.3; actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.000, 1.000]
+     selection speed s_q=  0.01: quasi-static certificate fails at t=69.3; actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.000, 1.000]
+  alpha_cor=0.1100 (above threshold)
+     selection speed s_q= 100.0: quasi-static certificate fails at t=never (T=250); actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.204, 1.000]
+     selection speed s_q=   1.0: quasi-static certificate fails at t=never (T=250); actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.000, 1.000]
+     selection speed s_q=   0.1: quasi-static certificate fails at t=never (T=250); actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.000, 1.000]
+     selection speed s_q=  0.01: quasi-static certificate fails at t=never (T=250); actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.000, 1.000]
+eta=2.0: rate-law threshold alpha_cor = g/(1+eta) = 0.0667
+  alpha_cor=0.0567 (below threshold)
+     selection speed s_q= 100.0: quasi-static certificate fails at t=69.1; actual (a z > c) at t=69.1; evaluation captured (x>1/2) at t=122.7; q/q* in [0.999, 1.000]
+     selection speed s_q=   1.0: quasi-static certificate fails at t=69.1; actual (a z > c) at t=71.6; evaluation captured (x>1/2) at t=126.4; q/q* in [0.892, 1.000]
+     selection speed s_q=   0.1: quasi-static certificate fails at t=69.1; actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.000, 1.000]
+     selection speed s_q=  0.01: quasi-static certificate fails at t=69.1; actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.000, 1.000]
+  alpha_cor=0.0767 (above threshold)
+     selection speed s_q= 100.0: quasi-static certificate fails at t=never (T=250); actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.961, 1.000]
+     selection speed s_q=   1.0: quasi-static certificate fails at t=never (T=250); actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.000, 1.000]
+     selection speed s_q=   0.1: quasi-static certificate fails at t=never (T=250); actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.000, 1.000]
+     selection speed s_q=  0.01: quasi-static certificate fails at t=never (T=250); actual (a z > c) at t=never (T=250); evaluation captured (x>1/2) at t=never (T=250); q/q* in [0.000, 1.000]
+Reading: with fast selection on capacity the joint dynamics reproduce the rate law: the certificate fails when the quasi-static
+one does, and the seeded evaluation domain is captured shortly after; above the threshold nothing is captured. With slow
+selection q lags q*, the failure is delayed and within the horizon may not occur, although the rate law says it does. The
+threshold rate is not moved, but the failure TIME and so the finite-horizon necessity of R3a depend on how fast selection
+tracks q*. Quasi-static capacity is the worst case for the certificate when q starts at or below q*.

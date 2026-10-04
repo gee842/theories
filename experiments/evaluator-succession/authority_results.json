@@ -1,0 +1,475 @@
+{
+  "status": "verified",
+  "interpretation": "Simulation and algebra checks for an illustrative model; not empirical evidence, a proof by simulation, or a novelty claim.",
+  "state_order": [
+    "independent_authority_ell",
+    "influence_capacity_q"
+  ],
+  "integration": {
+    "method": "RK4 without state clipping",
+    "coarse_step": 0.02,
+    "fine_step": 0.01,
+    "maximum_allowed_pair_disagreement": 1e-05
+  },
+  "quasi_static_analytic_checks": [
+    {
+      "parameters": {
+        "C": 1.0,
+        "K": 1.0,
+        "D": 1.3,
+        "rho": 1.0,
+        "kappa": 0.4
+      },
+      "coarse_exact_error": 1.5346202086874428e-10,
+      "fine_exact_error": 9.511391674266179e-12,
+      "error_ratio": 16.13454961422185,
+      "limiting_effective_correction": 0.9,
+      "limiting_gain": 1.2345679012345678
+    },
+    {
+      "parameters": {
+        "C": 1.0,
+        "K": 1.0,
+        "D": 1.4,
+        "rho": 1.0,
+        "kappa": 0.4
+      },
+      "coarse_exact_error": 1.4250067792431764e-10,
+      "fine_exact_error": 8.832046205498045e-12,
+      "error_ratio": 16.134503218020917,
+      "limiting_effective_correction": 0.9999999999999999,
+      "limiting_gain": 1.0000000000000002
+    },
+    {
+      "parameters": {
+        "C": 1.0,
+        "K": 1.0,
+        "D": 1.6,
+        "rho": 1.0,
+        "kappa": 0.4
+      },
+      "coarse_exact_error": 1.2468781562802178e-10,
+      "fine_exact_error": 7.728262474415715e-12,
+      "error_ratio": 16.134003735095533,
+      "limiting_effective_correction": 1.2000000000000002,
+      "limiting_gain": 0.6944444444444443
+    }
+  ],
+  "quasi_static_below_threshold_crossing_time": 1.3862943611198906,
+  "threshold_equality": {
+    "times": [
+      1,
+      5,
+      10
+    ],
+    "gains": [
+      0.7599031346353986,
+      0.9946313563190008,
+      0.9999636810455204
+    ],
+    "limiting_gain": 1.0,
+    "meaning": "Strict at each finite time from ell0=1, but no uniform strict margin."
+  },
+  "invariant_rectangle": {
+    "parameters": {
+      "C": 1.0,
+      "K": 1.0,
+      "D": 1.6,
+      "rho": 1.0,
+      "kappa": 0.4
+    },
+    "authority_floor": 0.7,
+    "capacity_ceiling": 0.8928571428571429,
+    "gain_bound": 0.7971938775510203,
+    "runs": [
+      {
+        "adjustment_rate": 0.05,
+        "h_vs_half_h_disagreement": 1.6163348437459035e-10,
+        "initial": [
+          0.7,
+          0.0
+        ],
+        "final": [
+          0.8535486454981704,
+          0.4418105511607921
+        ],
+        "minimum_authority": 0.7,
+        "maximum_authority": 0.9593304856786575,
+        "minimum_capacity": 0.0,
+        "maximum_capacity": 0.4418105511607921,
+        "initial_gain": 0.0,
+        "maximum_gain": 0.3235100845533319,
+        "final_gain": 0.3235100845533319,
+        "first_sample_at_gain_at_least_one": null
+      },
+      {
+        "adjustment_rate": 0.05,
+        "h_vs_half_h_disagreement": 6.00478555767836e-11,
+        "initial": [
+          0.7,
+          0.8928571428571429
+        ],
+        "final": [
+          0.743329927716689,
+          0.8624184511285596
+        ],
+        "minimum_authority": 0.7,
+        "maximum_authority": 0.743329927716689,
+        "minimum_capacity": 0.8624184511285596,
+        "maximum_capacity": 0.8928571428571429,
+        "initial_gain": 0.7971938775510206,
+        "maximum_gain": 0.7971938775510206,
+        "final_gain": 0.7251309436861356,
+        "first_sample_at_gain_at_least_one": null
+      },
+      {
+        "adjustment_rate": 0.05,
+        "h_vs_half_h_disagreement": 6.293965348902475e-12,
+        "initial": [
+          1.0,
+          0.0
+        ],
+        "final": [
+          0.8551952751789619,
+          0.43637638458953093
+        ],
+        "minimum_authority": 0.8551952751789619,
+        "maximum_authority": 1.0,
+        "minimum_capacity": 0.0,
+        "maximum_capacity": 0.43637638458953093,
+        "initial_gain": 0.0,
+        "maximum_gain": 0.3189157474138091,
+        "final_gain": 0.3189157474138091,
+        "first_sample_at_gain_at_least_one": null
+      },
+      {
+        "adjustment_rate": 0.05,
+        "h_vs_half_h_disagreement": 4.2612002815189953e-10,
+        "initial": [
+          1.0,
+          0.8928571428571429
+        ],
+        "final": [
+          0.744561021428169,
+          0.857009869219327
+        ],
+        "minimum_authority": 0.7408400915413236,
+        "maximum_authority": 1.0,
+        "minimum_capacity": 0.857009869219327,
+        "maximum_capacity": 0.8928571428571429,
+        "initial_gain": 0.5580357142857143,
+        "maximum_gain": 0.7388014883718053,
+        "final_gain": 0.7193919005250451,
+        "first_sample_at_gain_at_least_one": null
+      },
+      {
+        "adjustment_rate": 1.0,
+        "h_vs_half_h_disagreement": 1.0462213317907754e-09,
+        "initial": [
+          0.7,
+          0.0
+        ],
+        "final": [
+          0.7500023623578916,
+          0.8333272889468599
+        ],
+        "minimum_authority": 0.7,
+        "maximum_authority": 0.821979750301289,
+        "minimum_capacity": 0.0,
+        "maximum_capacity": 0.8333272889468599,
+        "initial_gain": 0.0,
+        "maximum_gain": 0.6944372201100537,
+        "final_gain": 0.6944372201100537,
+        "first_sample_at_gain_at_least_one": null
+      },
+      {
+        "adjustment_rate": 1.0,
+        "h_vs_half_h_disagreement": 1.2761103285185982e-10,
+        "initial": [
+          0.7,
+          0.8928571428571429
+        ],
+        "final": [
+          0.7499995954962667,
+          0.8333343683136565
+        ],
+        "minimum_authority": 0.7,
+        "maximum_authority": 0.7499995954962667,
+        "minimum_capacity": 0.8333343683136565,
+        "maximum_capacity": 0.8928571428571429,
+        "initial_gain": 0.7971938775510206,
+        "maximum_gain": 0.7971938775510206,
+        "final_gain": 0.694445681469208,
+        "first_sample_at_gain_at_least_one": null
+      },
+      {
+        "adjustment_rate": 1.0,
+        "h_vs_half_h_disagreement": 4.936134834210293e-10,
+        "initial": [
+          1.0,
+          0.0
+        ],
+        "final": [
+          0.750003717238706,
+          0.8333238223482534
+        ],
+        "minimum_authority": 0.750003717238706,
+        "maximum_authority": 1.0,
+        "minimum_capacity": 0.0,
+        "maximum_capacity": 0.8333238223482534,
+        "initial_gain": 0.0,
+        "maximum_gain": 0.6944330767921955,
+        "final_gain": 0.6944330767921955,
+        "first_sample_at_gain_at_least_one": null
+      },
+      {
+        "adjustment_rate": 1.0,
+        "h_vs_half_h_disagreement": 9.8742991561096e-10,
+        "initial": [
+          1.0,
+          0.8928571428571429
+        ],
+        "final": [
+          0.7500008145696716,
+          0.8333312491473932
+        ],
+        "minimum_authority": 0.7500008145696716,
+        "maximum_authority": 1.0,
+        "minimum_capacity": 0.7788948534703026,
+        "maximum_capacity": 0.8928571428571429,
+        "initial_gain": 0.5580357142857143,
+        "maximum_gain": 0.6944419533943557,
+        "final_gain": 0.6944419533943557,
+        "first_sample_at_gain_at_least_one": null
+      },
+      {
+        "adjustment_rate": 10.0,
+        "h_vs_half_h_disagreement": 5.479483995096679e-06,
+        "initial": [
+          0.7,
+          0.0
+        ],
+        "final": [
+          0.7499999999047281,
+          0.83333333345049
+        ],
+        "minimum_authority": 0.7,
+        "maximum_authority": 0.7499999999047281,
+        "minimum_capacity": 0.0,
+        "maximum_capacity": 0.8475757280817089,
+        "initial_gain": 0.0,
+        "maximum_gain": 0.7188933625833918,
+        "final_gain": 0.6944444446302896,
+        "first_sample_at_gain_at_least_one": null
+      },
+      {
+        "adjustment_rate": 10.0,
+        "h_vs_half_h_disagreement": 4.121568053516711e-08,
+        "initial": [
+          0.7,
+          0.8928571428571429
+        ],
+        "final": [
+          0.7499999997902823,
+          0.8333333335912244
+        ],
+        "minimum_authority": 0.7,
+        "maximum_authority": 0.7499999997902823,
+        "minimum_capacity": 0.8333333335912244,
+        "maximum_capacity": 0.8928571428571429,
+        "initial_gain": 0.7971938775510206,
+        "maximum_gain": 0.7971938775510206,
+        "final_gain": 0.6944444448535367,
+        "first_sample_at_gain_at_least_one": null
+      },
+      {
+        "adjustment_rate": 10.0,
+        "h_vs_half_h_disagreement": 3.606959552426847e-06,
+        "initial": [
+          1.0,
+          0.0
+        ],
+        "final": [
+          0.7500000011432935,
+          0.8333333319274179
+        ],
+        "minimum_authority": 0.7500000011432935,
+        "maximum_authority": 1.0,
+        "minimum_capacity": 0.0,
+        "maximum_capacity": 0.8333333319274179,
+        "initial_gain": 0.0,
+        "maximum_gain": 0.6944444422142432,
+        "final_gain": 0.6944444422142432,
+        "first_sample_at_gain_at_least_one": null
+      },
+      {
+        "adjustment_rate": 10.0,
+        "h_vs_half_h_disagreement": 1.705000093887854e-06,
+        "initial": [
+          1.0,
+          0.8928571428571429
+        ],
+        "final": [
+          0.7500000009882823,
+          0.8333333321180358
+        ],
+        "minimum_authority": 0.7500000009882823,
+        "maximum_authority": 1.0,
+        "minimum_capacity": 0.6729110608191466,
+        "maximum_capacity": 0.8928571428571429,
+        "initial_gain": 0.5580357142857143,
+        "maximum_gain": 0.6944444425166203,
+        "final_gain": 0.6944444425166203,
+        "first_sample_at_gain_at_least_one": null
+      }
+    ]
+  },
+  "below_threshold_tracking": {
+    "parameters": {
+      "C": 1.0,
+      "K": 1.0,
+      "D": 1.3,
+      "rho": 1.0,
+      "kappa": 0.4
+    },
+    "adjustment_rate": 1.0,
+    "h_vs_half_h_disagreement": 7.22965243227236e-10,
+    "initial": [
+      1.0,
+      0.7692307692307692
+    ],
+    "final": [
+      0.6923076924622853,
+      1.1111111105947544
+    ],
+    "minimum_authority": 0.6923076924622853,
+    "maximum_authority": 1.0,
+    "minimum_capacity": 0.7692307692307692,
+    "maximum_capacity": 1.1111111105947544,
+    "initial_gain": 0.5917159763313609,
+    "maximum_gain": 1.234567900385158,
+    "final_gain": 1.234567900385158,
+    "first_sample_at_gain_at_least_one": 2.45
+  },
+  "below_threshold_without_tracking": {
+    "parameters": {
+      "C": 1.0,
+      "K": 1.0,
+      "D": 0.8,
+      "rho": 1.0,
+      "kappa": 0.4
+    },
+    "adjustment_rate": 0.0,
+    "h_vs_half_h_disagreement": 9.35674870916614e-11,
+    "initial": [
+      0.8,
+      0.0
+    ],
+    "final": [
+      0.9999999995877693,
+      0.0
+    ],
+    "minimum_authority": 0.8,
+    "maximum_authority": 0.9999999995877693,
+    "minimum_capacity": 0.0,
+    "maximum_capacity": 0.0,
+    "initial_gain": 0.0,
+    "maximum_gain": 0.0,
+    "final_gain": 0.0,
+    "first_sample_at_gain_at_least_one": null
+  },
+  "oversized_initial_stock": {
+    "parameters": {
+      "C": 1.0,
+      "K": 1.0,
+      "D": 1.6,
+      "rho": 1.0,
+      "kappa": 0.4
+    },
+    "adjustment_rate": 0.001,
+    "h_vs_half_h_disagreement": 1.161783003134076e-09,
+    "initial": [
+      1.0,
+      1.5
+    ],
+    "final": [
+      0.6265514695470514,
+      1.4897866330379281
+    ],
+    "minimum_authority": 0.6254821793000966,
+    "maximum_authority": 1.0,
+    "minimum_capacity": 1.4897866330379281,
+    "maximum_capacity": 1.5,
+    "initial_gain": 0.9375,
+    "maximum_gain": 1.4960074503816887,
+    "final_gain": 1.4860976167238598,
+    "first_sample_at_gain_at_least_one": 0.12
+  },
+  "zero_erosion": {
+    "parameters": {
+      "C": 1.0,
+      "K": 1.0,
+      "D": 1.2,
+      "rho": 1.0,
+      "kappa": 0
+    },
+    "adjustment_rate": 1.0,
+    "h_vs_half_h_disagreement": 1.3191236991616506e-10,
+    "initial": [
+      0.9,
+      0.9259259259259258
+    ],
+    "final": [
+      0.9999999997938848,
+      0.833333336977534
+    ],
+    "minimum_authority": 0.9,
+    "maximum_authority": 0.9999999997938848,
+    "minimum_capacity": 0.833333336977534,
+    "maximum_capacity": 0.9259259259259258,
+    "initial_gain": 0.8573388203017831,
+    "maximum_gain": 0.8573388203017831,
+    "final_gain": 0.6944444476244139,
+    "first_sample_at_gain_at_least_one": null
+  },
+  "deadline_bound": {
+    "D": 1.6,
+    "rho": 1.0,
+    "authority_at_intervention": 0.2,
+    "support_at_intervention": 4.0,
+    "epsilon": 1.0,
+    "neutral_support": 1.0,
+    "required_dose": 1.3862943611198906,
+    "earliest_best_case_neutralization_elapsed": 1.4852834592214545,
+    "runs": [
+      {
+        "elapsed": 1.0,
+        "maximum_dose": 0.7908856846994463,
+        "exact_best_case_final_support": 1.8137720393804906,
+        "rk4_final_support": 1.8137720391233052,
+        "h_vs_half_h_disagreement": 6.211037906211914e-09,
+        "necessary_dose_met": false
+      },
+      {
+        "elapsed": 2.0,
+        "maximum_dose": 2.093229162542864,
+        "exact_best_case_final_support": 0.4931534965243857,
+        "rk4_final_support": 0.4931534966116116,
+        "h_vs_half_h_disagreement": 6.211037906211914e-09,
+        "necessary_dose_met": true
+      }
+    ],
+    "positive_incoming_support": {
+      "incoming": 10,
+      "elapsed": 2,
+      "final_support": 7.717721051557136,
+      "h_vs_half_h_disagreement": 2.9337096307813226e-08,
+      "meaning": "Passing the dose test alone is not sufficient."
+    },
+    "direct_removal_escape": {
+      "support_immediately_after_removal": 0.5,
+      "meaning": "An intervention outside damping-only control removes the current advantage immediately; it does not establish lasting safety."
+    }
+  },
+  "source_sha256": "d6c200a7c388968a7a5007febe73356b75d276ca75c7d9c0981e8739f61dfa14"
+}

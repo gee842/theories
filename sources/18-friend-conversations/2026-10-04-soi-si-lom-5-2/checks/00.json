@@ -1,0 +1,21 @@
+{
+  "text": "We have the nature of other animal like dogs and in Chinese we call this 兽性 and we also have the part that we call humanity like the noble values in the Chinese construct 仁义礼智\nSo when we are regulating the animal nature, the construct that the genetics brings, we become following those mechanisms, feelings but at the same time we also have the other side of nature in Chinese 我们说这个是理,另外一部分是心,它们两个不是对立的,感受和理性也不是二分的,它们共同组成一个dynamic心理,中文的psychology\nThere are this internal good and evil in the western framing and there are also the seven virtues and the sense\nBut regardless心理是一个动态的过程,它是一种dynamics,没有其中之一dominance,有的时候既是心所向往如此,我们依然要通过理性去regulate,我们不能产生positive feedback loop that runs away\nSo it is not about going into the extremes, it's about holding the balance\n阴阳它是一种动态的平衡,它是一种在非常多的关系之中在一个很高维的认知空间中去在理性的引导下和对于感性的塑造下去成为一个在当时的环境中可以创造一种和谐,一种flow,一种我的心和我的理",
+  "logprobs": null,
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 3376,
+    "input_tokens": 3090,
+    "input_token_details": {
+      "text_tokens": 30,
+      "audio_tokens": 3060
+    },
+    "output_tokens": 286
+  },
+  "chunk_metadata": {
+    "index": 0,
+    "core_start": 0,
+    "core_end": 300,
+    "audio_start": 0,
+    "audio_end": 306
+  }
+}

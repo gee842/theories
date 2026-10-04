@@ -1,0 +1,14 @@
+r=1.0 Gamma=0.6 delta=0.9: dp/ds at parity, MPE = 3.271 vs r = 1.0; equilibrium loop gain Gamma*(dp/ds)/r = 1.963
+r=1.0 Gamma=0.6 delta=0.97: dp/ds at parity, MPE = 5.202 vs r = 1.0; equilibrium loop gain Gamma*(dp/ds)/r = 3.121
+r=1.5 Gamma=0.6 delta=0.9: dp/ds at parity, MPE = 4.702 vs r = 1.5; equilibrium loop gain Gamma*(dp/ds)/r = 1.881
+r=1.5 Gamma=0.6 delta=0.97: dp/ds at parity, MPE = 7.727 vs r = 1.5; equilibrium loop gain Gamma*(dp/ds)/r = 3.091
+r=1.5 Gamma=0.9 delta=0.9: dp/ds at parity, MPE = 4.721 vs r = 1.5; equilibrium loop gain Gamma*(dp/ds)/r = 2.833
+r=1.5 Gamma=0.9 delta=0.97: dp/ds at parity, MPE = 5.787 vs r = 1.5; equilibrium loop gain Gamma*(dp/ds)/r = 3.472
+r=1.0 Gamma=0.9 delta=0.9: dp/ds at parity, MPE = 3.280 vs r = 1.0; equilibrium loop gain Gamma*(dp/ds)/r = 2.952
+r=1.0 Gamma=0.9 delta=0.97: dp/ds at parity, MPE = 3.905 vs r = 1.0; equilibrium loop gain Gamma*(dp/ds)/r = 3.514
+N=1600, h=0.0025: dp/ds = 4.703; Gamma_eq = 1.881
+N=1600, h=0.01: dp/ds = 4.678; Gamma_eq = 1.871
+N=1600, h=0.02: dp/ds = 4.601; Gamma_eq = 1.840
+N=1600, h=0.05: dp/ds = 4.129; Gamma_eq = 1.651
+expected-share path from 0.52 after 40 periods: 0.633
+mean |s-1/2| and 90th pct after 100 periods: MPE [0.136, 0.196]  passive [0.081, 0.158]

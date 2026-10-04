@@ -1,0 +1,54 @@
+{
+  "files_written": [
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U05/B/core/50_s5.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U05/B/supp/05_S5.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U05/B/SUMMARY.json",
+    "(kept from the interrupted attempt, already ported into checks_v62.py block JX(g)) /Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U05/B/scripts/jx_joint.py and jx_joint.log"
+  ],
+  "items_addressed": [
+    "Plan §4 §5 / D1-opus §3.3: claim box rewritten as Claim + Why, conditions as antecedents, every sentence tagged from the fixed tag list, conjectured part named in the last sentence",
+    "enforce (A9, plan §3): per-deviation p_d(a), g_i(a), D_i(a) in (1)–(2); (5) with at most one breakout per period, q_b ≤ 1/2, independent breakouts q_b→q_b(1−q_b), renames q→q_b and U→V^sub; new example q_b=0.045, v=0.895<C [num: ES]; Scope cites the least-value (optimal penal code) assertion, EC relabelled a valuation check, explicit-action best response [num: ES]; the V6.1 example (q=0.1, v=1.29>C) kept in S5 for its different point",
+    "detectlink (new Remark 5.3): p_d=1−υ(T_dec); (14) as υ ≥ 1−p̄_d; T_dec from Λ* of Remark S2.1; Prop 8.10's threshold shown identical under the continuation reading with its T<R case = p̄_d ≥ 1; where the two differ; both quantities masked → certified correctors; derivation and JX(d),(e) numbers in S5",
+    "relpunish (A10): exchangeable continuation in the statement (no label-carrying state; strategies free to condition on who deviated); Scope: label-dependent continuation escapes (S14), weak as printed / strict under symmetric perturbations (300/300 at 0.02, 0.05) / strict with roles matched to an asymmetry, role assignment is equilibrium selection; blocs reading [conj]; Duersch clause deleted per D4 M5",
+    "restraint (A11): '(a) changing the premise itself'; applies per deviation",
+    "wingives: κ_W/(1+κ_W) sentence for the accurate winner; crux = dependence on the governed after victory (C13; §8.3(d)); Ψ2 keyed to {{psi}}",
+    "coverage (A12): (variety grows) is motivation, not a premise; theorem under (coverage lags) and (residual floor); (shared failure) decides whose bound it is (Scope); U_t counted as predefined hazard modes with correction meeting the four conditions at a stated catch rate (Ali I10); D4 B4 wording on the longest-horizon series",
+    "enough: kept; sharpened rule after the result in Ren's words (D1-opus §5.1 row), with the 癌亦增长 line [corpus: shengsheng, 2026-07-14 l.113] (verified in sources/07-shengsheng-buxi/.../2026-07-14-生生不息论.md:113); Adv-O m5 (linear absolute objective also unsatiated) in the statement; pointer to §6.4 and {{>masked}}",
+    "talk (A13, D2-opus §13): one effective bias b_0(n−1−θ)/(n−1+θ), informative iff < 1/4; (1) and (2) as cases; third parties linear (Adv-F F12); title states what is proved (n/(n−2), fading with n); blocs [conj]; Snidal 1991; 'compare Crawford and Sobel' (D4 M1); unified derivation of both ideal points in S5",
+    "frontier: core reduced to the mechanism sentence with conditions plus 'peace of abundance' and Ren's 'expansion is an anaesthetic … a self-replicating economy carries the same switch with it' (v6.0 wording restored); Remark in full and the toy [num: FS] in S5",
+    "Kuran 1995 added to §5.4 as 'professed doctrine' with the race-doctrine consequence [conj]; MacKenzie left to §11.2 per plan, §5.4 points there",
+    "scissors (new Proposition 5.11, closes the section): four arms (breakout, objective, sanction, stakes) each tagged in its model; pivot ω = κ_cΩ/(κ_cΩ+nk_0); Scope: conjunction = C0 [conj]; corrected reduced-form numbers 0.92/0.85/0.39, none above 0.9495 (0.9793 at θ_0=0.4), common gain 0.3 → 0.57 [num: JX]; joint model [num: JX, one model, rivals not responding]; Test G hump wording (Sys m2); rivals-responding caveat via loopgain(4)",
+    "S5 jointscissors (new Remark S5.8): setup, parameters, report (blades meet at t=59; 47 if stage scales; never when provision keeps pace; τ=6 → 60; θ_0=0.4 → 69; objective arm does the closing), honest label; one sentence on the block's second specification (JX(f))",
+    "S5 reduced form corrected: one p_d, punishment = stage equilibrium with no breakout during punishment stated explicitly (Math-O minor 9)",
+    "Hand-offs: opening matches §4's closing sentence; §5 closes with (14) and the two channels handed to §6",
+    "One home per point: the 讲理/讲赢 line is quoted in §3.6 only; §5.4 refers back instead of re-quoting",
+    "Every number carries its block: ES, EC (valuation), CR, BI, WG, SM, PE, FS, RH, NB, TK, T3, JX; FS/WG/PE/SM/CR numbers checked against checks_v62.log",
+    "Test-assembled in /private/tmp/claude-501/v62scratch-U05-f: no problems except the expected unknown keys (masked from §6, thresholds from §2); no doubled kind names, no unresolved markup, no banned phrases"
+  ],
+  "moved_or_dropped": [
+    "join (V6.1 Prop 5.1): statement moved to S5 as Proposition S5.1 (key kept); the core keeps one sentence carrying all four parts' conditions and cites it",
+    "frontier (V6.1 Remark 5.3): full statement and the FS toy moved to S5 as Remark S5.2; the core keeps the mechanism in one conditioned sentence, 'peace of abundance', and Ren's restored lines",
+    "preventattack (V6.1 Prop 5.8): full statement, proof and numbers moved to S5 as Proposition S5.4; one sentence in the core (A8, Fearon, Powell)",
+    "racehazard (V6.1 Prop 5.9): full statement moved to S5 as Proposition S5.5; the core's race-channel paragraph carries the hazard formula, the four levers and the survival criterion",
+    "nonsum (V6.1 Lemma 5.10): moved to S5 as Lemma S5.6; the core states its content in one sentence",
+    "freeze (V6.1 Prop 5.13): moved to S5 as Proposition S5.7; the core keeps the freeze/rollback sentence with its condition in the E2/E3 paragraph",
+    "V6.1 enforce example (q=0.1, v=1.29>C): moved to S5 with the point it makes (the race with breakouts is preferred to cooperation itself)",
+    "'200,000 random settings' and the 10,723/10,032 counts: moved from the core Scope to S5, relabelled a valuation check (EC); the core says 'reproduces (1) as an identity (EC, a valuation check)'",
+    "§5.4 quotation 一旦争，则「我对」… : not re-quoted; its home is §3.6 (psi paragraph), §5.4 refers to it",
+    "MacKenzie 2006: not placed in §5.4 (plan: §11.2 is the home of counter-performativity); §5.4 keeps the pointer to Section 11.2",
+    "zonesillus's local Λ renamed w_p=δ(1−p_d)/(1−δ) (D1-opus §7.4: S5.1's local Λ renamed); Λ* kept for the Perron root",
+    "Tags '[thm, linearized]' and '[thm, first order]' from the interrupted attempt replaced by '[thm]' with 'in the linearized loop' / 'to first order' inside the statements; '[thm by arm]' in the box replaced by 'each arm in its own model [thm]'",
+    "§5.5 lead paragraph trimmed to two sentences; the arms are stated once, in the Proposition",
+    "Numbering shifts in §5 (dissipate 5.1, enforce 5.2, detectlink 5.3, relpunish 5.4, restraint 5.5, wingives 5.6, tempo 5.7, coverage 5.8, enough 5.9, talk 5.10, scissors 5.11); equation (14) keeps its number; all cross-references elsewhere are by key"
+  ],
+  "open_issues": [
+    "Unknown key masked (expected: §6's new key, cited by {{>masked}} in §5.3) and thresholds (from §2, not this unit)",
+    "Bibliography: Kuran 1995 is cited in §5.4 but absent from core z9_refs.md (D4 lists the entry); Snidal 1991 is present; 'Abreu's optimal penal codes' is named in S5 (as in V6.1) without a bibliography entry — suggest adding Abreu, D. 1988, On the theory of infinitely repeated games with discounting, Econometrica 56(2):383–396, or keep the name-only mention",
+    "S5 retains V6.1's citations of old scripts for two numbers: preventattack's N≤3/N≥4 result (../v4/checks_v44.py) and the derivative-action gains k_p=1.02, k_d=0.644 (../v4/checks_v42.py); neither is in checks_v62.py. A small PA/TE port would close this; nonsum's 0.34/0.22/0.14/0.70 and coverage's 0.98/0.025 and freeze's 0.86/0.53/0.86 are V6.1 figures with no named block",
+    "Corpus attribution: 'Expansion is an anaesthetic … self-replicating economy carries the same switch' is v6.0 §5.1's drafting of Ren's story-1 idea (meta-attractor README claim 289), cited [corpus: meta-attractor]; mark D in CLAIMS until Ren confirms. 'Growth is not the danger; the mind is' cited as [corpus: meta-attractor; Ren's ruling of 2026-09-25] (the README records the statement at l.250, dated 2026-10-02 there; memory dates the ruling 09-25)",
+    "S5.8 mentions the JX block's second joint specification (JX(f), from the other U05 draft's script, ported into checks_v62.py) in one sentence; the merger may keep or drop it depending on which joint model is chosen",
+    "Length: core §5 is 5,100 words (V6.1 3,163; D1-opus target 3,000). Other merged units are at a similar ratio; the plan has no cap. If the integration pass wants it shorter without loss, candidates are the enforce(5) bracket, the growth-channel premise paragraph, and the scissors Scope's number sentences, all of which have S5 homes",
+    "Prop 8.10 (assure) in §8 should now refer back to detectlink rather than restate (plan §4 §8(g)); not this unit's file"
+  ],
+  "word_counts": "core 50_s5.md about 5,100 words (V6.1: 3,163); supp 05_S5.md about 5,450 words (V6.1: 2,546); assembled core §5 by the assembler's count 5,164"
+}

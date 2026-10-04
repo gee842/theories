@@ -1,0 +1,25 @@
+
+=== RV [independent regression groups] keys: standprice loopgain onegroup masked enough rivalverify share relaxtrust dwell
+    V7 counterexamples and preserved special cases
+  [ok] math: check_lottery_distinction
+  [ok] math: check_nonlinear_prize_domain
+  [ok] math: check_preserved_proportional_case
+  [ok] math: check_background_scope
+  RV mathematical values: {"check_background_scope": {"heterogeneous_covariance": 0.25, "homogeneous_covariance": -0.25}, "check_lottery_distinction": {"coarse": {"cells": 1000, "finite_premium": 1.0311064245755297, "iterations": 810, "local_price": 1.0817843866171006, "r": 1.5, "residual": 9.947598300641403e-12}, "fine": {"cells": 2000, "finite_premium": 1.0311103490895481, "iterations": 810, "local_price": 1.0817843866171006, "r": 1.5, "residual": 9.947598300641403e-12}, "linear_control": {"cells": 1000, "finite_premium": 1.0817843866170958, "iterations": 810, "local_price": 1.0817843866171006, "r": 1, "residual": 9.947598300641403e-12}}, "check_nonlinear_prize_domain": {"common_gain": 0.6666666666666666, "formal_common_price": 2.0, "positive_perturbations": [{"discounted_term_ratio": 4.538407122295282, "epsilon": 0.01, "escape_period": 12, "total": 5.025550346512944}, {"discounted_term_ratio": 7.126949960232233, "epsilon": 1e-06, "escape_period": 35, "total": 6.550867478764136}, {"discounted_term_ratio": 12.071238673943647, "epsilon": 1e-10, "escape_period": 58, "total": 8.826999002317502}], "relative_gain": 0.3333333333333333}, "check_preserved_proportional_case": [{"measured_common": 0.6086956521933473, "measured_relative": 0.36029411757398927, "predicted_common": 0.6086956521739131, "predicted_relative": 0.36029411764705876, "r": 0.7}, {"measured_common": 0.6086956521933473, "measured_relative": 0.6086956521933473, "predicted_common": 0.6086956521739131, "predicted_relative": 0.6086956521739131, "r": 1.0}, {"measured_common": 0.6086956521933473, "measured_relative": 1.3124999994396092, "predicted_common": 0.6086956521739131, "predicted_relative": 1.3125000000000004, "r": 1.5}]}
+  [ok] systems: test_actual_stop_gives_finite_exposure
+  [ok] systems: test_bounded_prize_has_positive_bounded_effort
+  [ok] systems: test_cumulative_selection_for_the_moving_tax_counterexample
+  [ok] systems: test_failed_detection_does_not_determine_residual_hazard
+  [ok] systems: test_fixed_positive_tax_has_a_finite_detection_threshold
+  [ok] systems: test_moving_tax_needs_a_relative_condition
+  [ok] transition: test_complete_detection_response_clock
+  [ok] transition: test_dwell_release_strictly_beyond_boundary
+  [ok] transition: test_high_hazard_pacing_profile_has_unsafe_racing_region
+  [ok] transition: test_others_only_sharing_uses_kept_promise_probability
+  [ok] transition: test_partial_and_complete_pooling
+  [ok] transition: test_row_certificate_allows_captured_transient
+  [ok] transition: test_trust_componentwise_and_joint_payoff_changes
+
+=== timing by block (s): RV 1
+=== assertions: 17 passed, 0 failed (default sizes)
+=== done in 1 s

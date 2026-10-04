@@ -1,0 +1,26 @@
+(a) Ratio form sigma=r ln X, r=2 (decisiveness elasticity held fixed); kappa*Omega=1, k0=0.2, delta_f=0.1, n=2
+   d=0.05: Gamma=0.476  numerical spectral radius=0.9500  deviation x1.21e-11 after 400 periods  -> stable
+   d=0.10: Gamma=0.714  numerical spectral radius=0.9429  deviation x5.84e-11 after 400 periods  -> stable
+   d=0.20: Gamma=0.952  numerical spectral radius=0.9857  deviation x0.00317 after 400 periods  -> stable
+   d=0.30: Gamma=1.071  numerical spectral radius=1.0286  deviation x2.67e+03 after 400 periods  -> UNSTABLE
+   d=0.60: Gamma=1.224  numerical spectral radius=1.1571  deviation x4.74e+03 after 400 periods  -> UNSTABLE
+   d=0.90: Gamma=1.286  numerical spectral radius=1.2857  deviation x5.35e+03 after 400 periods  -> UNSTABLE
+   => raising the decay/correction rate d of a ratio-form stock RAISES Gamma (and destabilizes) when delta_f>0; with delta_f=0 it has no effect.
+(a') Difference form sigma=s X, s=1.2 (strength linear in the stock, like rule support offsetting a cost)
+   d=0.05: r_j=s X*=16.800  Gamma=4.000  spectral radius=1.4500  -> UNSTABLE
+   d=0.10: r_j=s X*=8.400  Gamma=3.000  spectral radius=1.4000  -> UNSTABLE
+   d=0.20: r_j=s X*=4.200  Gamma=2.000  spectral radius=1.3000  -> UNSTABLE
+   d=0.30: r_j=s X*=2.800  Gamma=1.500  spectral radius=1.2000  -> UNSTABLE
+   d=0.60: r_j=s X*=1.400  Gamma=0.857  spectral radius=0.9000  -> stable
+   d=0.90: r_j=s X*=0.933  Gamma=0.600  spectral radius=0.6000  -> stable
+   => here correction lowers Gamma, through r_j = s X* = s (kO/n+k0)/d.
+(b) growth factor per period of a single channel: exact lambda* vs Remark S2.1's 1+d(Gamma-1)
+   d=0.2, delta_f=0.0: Gamma=3.000; exact 1.4000; 1+d(G-1)=1.4000; 1+(d+df)(G-1)=1.4000
+   d=0.2, delta_f=0.1: Gamma=2.000; exact 1.3000; 1+d(G-1)=1.2000; 1+(d+df)(G-1)=1.3000
+   d=0.2, delta_f=0.3: Gamma=1.200; exact 1.1000; 1+d(G-1)=1.0400; 1+(d+df)(G-1)=1.1000
+(c) same Gamma=1.2, gain placed on a fast channel (d+df=0.5) or a slow one (d+df=0.02): periods for a 1% gap to reach 50%
+   fast: lambda*=1.1000, periods=41
+   slow: lambda*=1.0040, periods=980
+(d) two channels, one countervailing and slow (mobilization against the leader): J = D + (1/n) u v^T with g2<0
+   net DC gain sum g_j/(1-D_j) = 0.250 (<1);  eigenvalues 1.0000+0.1225j, 1.0000-0.1225j; modulus 1.0075 -> growing oscillation, period 52
+   simulated |deviation| at t=100,300,600: 1.32, 3.01, 111

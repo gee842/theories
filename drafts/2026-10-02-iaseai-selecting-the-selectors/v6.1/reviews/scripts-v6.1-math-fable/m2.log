@@ -1,0 +1,14 @@
+Two-period game with endogenous period-2 effort (strength K^r2 * f). Direct symmetric SPE intensity e* vs the
+reduced-form e(theta(lambda_red)) [rivals' strategies fixed, as in Prop 2.2(3)] and e(theta(lambda_full)) [rivals respond].
+Analytic prediction for r_f=1 Tullock: lambda_full/lambda_red = 2(n-1)/n (rivals are discouraged by a stronger field).
+   {'n': 2}: e*=0.226616; e(theta_red)=0.226616 (lam_red=0.3263, theta=-0.1403); e(theta_full)=0.226616 (lam_full=0.3263, theta=-0.1403); lam_full/lam_red=1.0000 vs 2(n-1)/n=1.0000; period-2 BR check err 0.0e+00
+   {'n': 3}: e*=0.192748; e(theta_red)=0.187864 (lam_red=0.2269, theta=-0.1314); e(theta_full)=0.192748 (lam_full=0.3025, theta=-0.1678); lam_full/lam_red=1.3333 vs 2(n-1)/n=1.3333; period-2 BR check err 0.0e+00
+   {'n': 4}: e*=0.158002; e(theta_red)=0.153828 (lam_red=0.1730, theta=-0.1148); e(theta_full)=0.158002 (lam_full=0.2595, theta=-0.1629); lam_full/lam_red=1.5000 vs 2(n-1)/n=1.5000; period-2 BR check err 0.0e+00
+   {'n': 6}: e*=0.113481; e(theta_red)=0.111009 (lam_red=0.1169, theta=-0.0888); e(theta_full)=0.113481 (lam_full=0.1949, theta=-0.1397); lam_full/lam_red=1.6667 vs 2(n-1)/n=1.6667; period-2 BR check err 0.0e+00
+   {'n': 3, 'r2': 1.0, 'Om2': 4.0}: e*=0.198839; e(theta_red)=0.192803 (lam_red=0.3034, theta=-0.1682); e(theta_full)=0.198839 (lam_full=0.4045, theta=-0.2124); lam_full/lam_red=1.3333 vs 2(n-1)/n=1.3333; period-2 BR check err 0.0e+00
+   {'n': 4, 'dl': 0.5}: e*=0.152327; e(theta_red)=0.149770 (lam_red=0.0958, theta=-0.0670); e(theta_full)=0.152327 (lam_full=0.1437, theta=-0.0973); lam_full/lam_red=1.5000 vs 2(n-1)/n=1.5000; period-2 BR check err 0.0e+00
+   {'n': 3, 'kap': 1.0, 'K0': 1.0}: e*=0.237692; e(theta_red)=0.226738 (lam_red=1.0207, theta=-0.4049); e(theta_full)=0.237692 (lam_full=1.3610, theta=-0.4757); lam_full/lam_red=1.3333 vs 2(n-1)/n=1.3333; period-2 BR check err 0.0e+00
+Reading: the first-order structure (objective pi_i + lambda(pi_i - mean)) survives in the full game, but lambda is the
+full derivative dV_i/dK_i, not the reduced one. Here the strategic term is positive (rivals reduce effort), so the reduced
+form UNDERSTATES the price of standing by a factor approaching 2 as n grows; with a different period-2 technology the sign
+of the correction can differ. The reduced form is exact only for n=2 in this technology.

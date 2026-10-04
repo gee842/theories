@@ -1,0 +1,13 @@
+A. theta* (paper scaling) [0.938, 1.444, 1.494]
+   limit 1.5
+B. harm superlinear eps^1.5 [0.938, 0.35, -0.43]
+C. private cost scales with eps too [0.938, 0.937, 0.938]
+D. AI lowers private cost (eps^-0.5) [0.938, 1.482, 1.499]
+E. d=0.2: theta*=0.938, all-race loss per principal=1.10
+E. d=0.1: theta*=1.385, all-race loss per principal=0.70
+E. d=0.05: theta*=1.696, all-race loss per principal=0.50
+F. kappa=0.4 < theta*(1)=0.938 -> race persists at accuracy
+G. serial=0.531, redundant(paper, f=0.9 each)=0.999999, redundant(each spans full gap, f=0.531)=0.989
+   with common cause rho=0.05: cap 0.95; fair redundant with cc: 0.940
+H. serial chain with 2-fold redundancy per layer: 0.9415
+H. serial chain with 3-fold redundancy per layer: 0.9940

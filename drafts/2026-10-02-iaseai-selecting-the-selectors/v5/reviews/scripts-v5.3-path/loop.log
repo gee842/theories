@@ -1,0 +1,15 @@
+B=k+G; bistable band in beta:
+  s=0.2 k=0.4 G=0.4 B=0.8 4s=0.8: band=None
+  s=0.2 k=0.4 G=0.0 B=0.4 4s=0.8: band=None
+  s=0.2 k=0.0 G=0.4 B=0.4 4s=0.8: band=None
+  s=0.1 k=0.4 G=0.4 B=0.8 4s=0.4: band=(0.647, 0.753)
+  s=0.1 k=0.4 G=0.0 B=0.4 4s=0.4: band=None
+  s=0.1 k=0.0 G=0.4 B=0.4 4s=0.4: band=None
+  s=0.05 k=0.4 G=0.4 B=0.8 4s=0.2: band=(0.593, 0.807)
+  s=0.05 k=0.4 G=0.0 B=0.4 4s=0.2: band=(0.574, 0.626)
+  s=0.05 k=0.0 G=0.4 B=0.4 4s=0.2: band=(0.774, 0.826)
+  s=0.025 k=0.4 G=0.4 B=0.8 4s=0.1: band=(0.556, 0.844)
+  s=0.025 k=0.4 G=0.0 B=0.4 4s=0.1: band=(0.547, 0.653)
+  s=0.025 k=0.0 G=0.4 B=0.4 4s=0.1: band=(0.747, 0.853)
+eps=0.1: minimal push duration ~5 (0.5/(eps d)=5.0)
+eps=0.03: minimal push duration ~20 (0.5/(eps d)=16.666666666666668)

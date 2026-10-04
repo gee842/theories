@@ -1,0 +1,45 @@
+31360 coherent configurations; 202 on the Pareto frontier (min time, max F, max R)
+<=  8 min | uses  7.9 min | F  38.0 ( 40%) | R  41.0 ( 42%) | cut: film, agenda, minds, kernel, endgames, training, brakes, frame, dilemma, relational, regulator
+<= 10 min | uses 10.0 min | F  56.9 ( 60%) | R  58.9 ( 61%) | cut: film, agenda, minds, boundary, endgames, training, frame, regulator
+<= 12 min | uses 11.8 min | F  71.3 ( 75%) | R  70.0 ( 73%) | cut: film, agenda, endgames, brakes, frame, regulator
+<= 14 min | uses 14.0 min | F  83.4 ( 88%) | R  82.3 ( 85%) | cut: film, agenda, minds
+<= 15 min | uses 14.9 min | F  89.4 ( 94%) | R  86.0 ( 89%) | cut: film, agenda
+<= 16 min | uses 15.8 min | F  90.1 ( 95%) | R  91.1 ( 94%) | cut: agenda, regulator
+<= 17 min | uses 16.7 min | F  94.4 ( 99%) | R  94.0 ( 97%) | cut: agenda
+<= 18 min | uses 17.2 min | F  95.3 (100%) | R  96.5 (100%) | cut: none
+<= 20 min | uses 17.2 min | F  95.3 (100%) | R  96.5 (100%) | cut: none
+
+marginal value per minute, removing one slide from the full talk:
+  film         105s  dF/min  2.77  dR/min  4.31  weighted/min  3.62
+  agenda        35s  dF/min  1.46  dR/min  4.37  weighted/min  3.06
+  minds         55s  dF/min  6.52  dR/min  4.02  weighted/min  5.15
+  boundary      50s  dF/min  7.18  dR/min  5.44  weighted/min  6.22
+  kernel        45s  dF/min  6.84  dR/min  6.05  weighted/min  6.40
+  endgames      50s  dF/min  4.42  dR/min  4.42  weighted/min  4.42
+  training      45s  dF/min  6.74  dR/min  7.88  weighted/min  7.37
+  scales        55s  dF/min  6.61  dR/min  7.54  weighted/min  7.12
+  brakes        40s  dF/min  7.59  dR/min  7.59  weighted/min  7.59
+  frame         45s  dF/min  6.74  dR/min  5.78  weighted/min  6.21
+  mirror        45s  dF/min  6.74  dR/min  9.38  weighted/min  8.19
+  dilemma       50s  dF/min  7.27  dR/min  7.24  weighted/min  7.25
+  relational  (required by a constraint once others are in)
+  regulator     50s  dF/min  5.20  dR/min  3.47  weighted/min  4.25
+  direction     40s  dF/min  7.78  dR/min  8.38  weighted/min  8.11
+  trust         50s  dF/min  8.40  dR/min 10.80  weighted/min  9.72
+
+With the film fixed in, at the base scores (W_R = 0.55):
+  <= 12 min | uses 12.0 | cut: agenda, minds, endgames, brakes, frame, relational, regulator
+  <= 14 min | uses 14.0 | cut: agenda, minds, scales, regulator
+  <= 15 min | uses 15.0 | cut: agenda, endgames, regulator
+  <= 16 min | uses 15.8 | cut: agenda, regulator
+  <= 17 min | uses 16.7 | cut: agenda
+  <= 18 min | uses 17.2 | cut: none
+
+Robustness at <= 15 min (film fixed; scores ±1.5, W_R 0.40–0.70; 300 draws): share of draws that keep each slide
+  agenda 0%  minds 94%  boundary 99%  kernel 100%  endgames 7%  training 100%  scales 100%  brakes 100%  frame 100%  mirror 100%  dilemma 100%  relational 100%  regulator 0%  direction 100%  trust 100%
+
+Robustness at <= 16 min (film fixed; scores ±1.5, W_R 0.40–0.70; 300 draws): share of draws that keep each slide
+  agenda 0%  minds 99%  boundary 100%  kernel 100%  endgames 63%  training 100%  scales 100%  brakes 100%  frame 99%  mirror 100%  dilemma 100%  relational 100%  regulator 40%  direction 100%  trust 100%
+
+Robustness at <= 17 min (film fixed; scores ±1.5, W_R 0.40–0.70; 300 draws): share of draws that keep each slide
+  agenda 1%  minds 100%  boundary 100%  kernel 100%  endgames 100%  training 100%  scales 100%  brakes 100%  frame 100%  mirror 100%  dilemma 100%  relational 100%  regulator 99%  direction 100%  trust 100%

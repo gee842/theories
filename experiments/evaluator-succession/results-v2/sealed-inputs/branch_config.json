@@ -1,0 +1,10 @@
+{
+  "worlds": 128,
+  "seed_start": 51000,
+  "fork_epoch": 80,
+  "source_histories": ["endogenous", "independent"],
+  "contexts": ["stable", "shift"],
+  "branches": ["endogenous", "independent", "fixed", "protected"],
+  "analysis_seed": 97532,
+  "bootstrap_replicates": 10000
+}

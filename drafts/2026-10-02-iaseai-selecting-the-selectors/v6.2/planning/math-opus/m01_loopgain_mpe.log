@@ -1,0 +1,50 @@
+m01  Loop gain and price of standing when rivals respond (Prop 2.2, key `loopgain`; Prop 3.9, key `standprice`).
+
+(D) static Tullock with weights, own effort fixed, rivals at their equilibrium: r_pr/r (own-only and relative perturbation) vs 2(n-1)/n
+   n=2: own-only 1.000000, relative 1.000000, 2(n-1)/n = 1.000000
+   n=3: own-only 1.333333, relative 1.333333, 2(n-1)/n = 1.333333
+   n=4: own-only 1.500000, relative 1.500000, 2(n-1)/n = 1.500000
+   n=6: own-only 1.666667, relative 1.666667, 2(n-1)/n = 1.666667
+   n=10: own-only 1.800000, relative 1.800000, 2(n-1)/n = 1.800000
+
+(B,C) MPE, n=2, theta0=0, d=0.1, delta=1/1.1 (so Gd = Gamma/2).  Small jumps by large r and small omega
+  (jump = d*omega*(1-beta)); lam_MPE measured from the value function; lam_pred = envelope formula with measured r_pr;
+  struct = Gd/(1-Gd).  Geq_d = (1-beta) r_eq omega delta d/(1-delta(1-d)): the local formula applies only while Geq_d<1.
+  r=4 Gamma=0.2: jump=0.0050 lam_MPE=0.1164 lam_pred=0.1166 struct=0.1111 MPE/struct=1.05 | r_eq/r=1.09 (h=2,12 cells: 1.09,1.09) r_pr/r=1.04 | Geq=0.22 Geq_d=0.11 Gpr_d=0.10 | lam(.25)=0.0081 lam(.75)=0.0578 | s40=0.501 | BRgap 6e-17 conv 1e-11
+  r=4 Gamma=0.3: jump=0.0075 lam_MPE=0.1941 lam_pred=0.1950 struct=0.1765 MPE/struct=1.10 | r_eq/r=1.18 (h=2,12 cells: 1.18,1.17) r_pr/r=1.09 | Geq=0.35 Geq_d=0.18 Gpr_d=0.16 | lam(.25)=0.0093 lam(.75)=0.0856 | s40=0.501 | BRgap -6e-17 conv 1e-11
+  r=4 Gamma=0.4: jump=0.0100 lam_MPE=0.3099 lam_pred=0.3170 struct=0.2500 MPE/struct=1.24 | r_eq/r=1.41 (h=2,12 cells: 1.41,1.40) r_pr/r=1.20 | Geq=0.56 Geq_d=0.28 Gpr_d=0.24 | lam(.25)=0.0089 lam(.75)=0.1102 | s40=0.503 | BRgap 0e+00 conv 1e-11
+  r=4 Gamma=0.45: jump=0.0113 lam_MPE=0.5131 lam_pred=0.6425 struct=0.2903 MPE/struct=1.77 | r_eq/r=2.48 (h=2,12 cells: 2.51,2.37) r_pr/r=1.74 | Geq=1.11 Geq_d=0.56 Gpr_d=0.39 | lam(.25)=0.0085 lam(.75)=0.1198 | s40=0.514 | BRgap 0e+00 conv 1e-11
+  r=4 Gamma=0.5: jump=0.0125 lam_MPE=0.7800 lam_pred=1.5595 struct=0.3333 MPE/struct=2.34 | r_eq/r=3.87 (h=2,12 cells: 3.96,3.56) r_pr/r=2.44 | Geq=1.93 Geq_d=0.97 Gpr_d=0.61 | lam(.25)=0.0083 lam(.75)=0.1295 | s40=0.524 | BRgap 0e+00 conv 1e-11
+  r=4 Gamma=0.6: jump=0.0150 lam_MPE=1.1420 lam_pred=6.1410 struct=0.4286 MPE/struct=2.66 | r_eq/r=4.72 (h=2,12 cells: 4.83,4.35) r_pr/r=2.87 | Geq=2.83 Geq_d=1.41 Gpr_d=0.86 | lam(.25)=0.0073 lam(.75)=0.1460 | s40=0.534 | BRgap 0e+00 conv 1e-11
+  r=4 Gamma=0.8: jump=0.0200 lam_MPE=1.8608 lam_pred=inf struct=0.6667 MPE/struct=2.79 | r_eq/r=5.09 (h=2,12 cells: 5.18,4.81) r_pr/r=3.06 | Geq=4.08 Geq_d=2.04 Gpr_d=1.22 | lam(.25)=0.0057 lam(.75)=0.1677 | s40=0.559 | BRgap 0e+00 conv 9e-12
+  jump halved (r=8, N=3000):
+  r=8 Gamma=0.3: jump=0.0038 lam_MPE=0.1941 lam_pred=0.1950 struct=0.1765 MPE/struct=1.10 | r_eq/r=1.18 (h=2,12 cells: 1.18,1.17) r_pr/r=1.09 | Geq=0.35 Geq_d=0.18 Gpr_d=0.16 | lam(.25)=0.0021 lam(.75)=0.0230 | s40=0.501 | BRgap 0e+00 conv 1e-11
+  r=8 Gamma=0.6: jump=0.0075 lam_MPE=1.1407 lam_pred=6.1312 struct=0.4286 MPE/struct=2.66 | r_eq/r=4.71 (h=2,12 cells: 4.83,4.35) r_pr/r=2.87 | Geq=2.83 Geq_d=1.41 Gpr_d=0.86 | lam(.25)=0.0014 lam(.75)=0.0341 | s40=0.517 | BRgap 0e+00 conv 1e-11
+  shared loss and sharing (r=4, Gamma=0.3):
+  {'l': 0.5}: jump=0.0075 lam_MPE=0.2201 lam_pred=0.2221 struct=0.1765 MPE/struct=1.25 | r_eq/r=1.32 (h=2,12 cells: 1.32,1.31) r_pr/r=1.16 | Geq=0.40 Geq_d=0.20 Gpr_d=0.17 | lam(.25)=-0.0041 lam(.75)=0.0949 | s40=0.502 | BRgap 6e-17 conv 1e-11
+  {'beta': 0.3}: jump=0.0075 lam_MPE=0.1941 lam_pred=0.1950 struct=0.1765 MPE/struct=1.10 | r_eq/r=1.18 (h=2,12 cells: 1.18,1.17) r_pr/r=1.09 | Geq=0.35 Geq_d=0.18 Gpr_d=0.16 | lam(.25)=0.0093 lam(.75)=0.0856 | s40=0.501 | BRgap 3e-17 conv 1e-11
+  large jumps, r=1 (the reviewer's regime; local formula not expected to hold):
+  r=1 Gamma=0.3: jump=0.0300 lam_MPE=0.1934 lam_pred=0.1936 struct=0.1765 MPE/struct=1.10 | r_eq/r=1.16 (h=2,12 cells: 1.16,1.16) r_pr/r=1.08 | Geq=0.35 Geq_d=0.17 Gpr_d=0.16 | lam(.25)=0.1003 lam(.75)=0.2703 | s40=0.501 | BRgap 0e+00 conv 9e-12
+  r=1 Gamma=0.6: jump=0.0600 lam_MPE=1.1762 lam_pred=7.1578 struct=0.4286 MPE/struct=2.74 | r_eq/r=4.84 (h=2,12 cells: 4.89,4.69) r_pr/r=2.92 | Geq=2.90 Geq_d=1.45 Gpr_d=0.88 | lam(.25)=0.1065 lam(.75)=0.6543 | s40=0.638 | BRgap 0e+00 conv 1e-11
+  r=1 Gamma=0.9: jump=0.0900 lam_MPE=2.5803 lam_pred=inf struct=0.8182 MPE/struct=3.15 | r_eq/r=5.41 (h=2,12 cells: 5.44,5.31) r_pr/r=3.21 | Geq=4.87 Geq_d=2.44 Gpr_d=1.45 | lam(.25)=0.0688 lam(.75)=1.0769 | s40=0.845 | BRgap -1e-16 conv 1e-11
+
+(E) catch-up: a flow cost Lsub*(1-s)^2 of standing below the top (concave value of standing; r=4, Gamma=0.3/0.6).
+    The price formula (3) is then not the whole price (the flow term adds its own slope), so only r_eq is compared:
+  Lsub=0.0 Gamma=0.3: r_eq/r=1.176 r_pr/r=1.088 Geq=0.353 e1(.25)=0.0113 e2(.25)=0.0122 (laggard gives up)
+  Lsub=0.0 Gamma=0.6: r_eq/r=4.716 r_pr/r=2.867 Geq=2.830 e1(.25)=0.0107 e2(.25)=0.0122 (laggard gives up)
+  Lsub=10.0 Gamma=0.3: r_eq/r=1.109 r_pr/r=1.055 Geq=0.333 e1(.25)=0.0201 e2(.25)=0.0182 (laggard tries harder)
+  Lsub=10.0 Gamma=0.6: r_eq/r=4.130 r_pr/r=2.571 Geq=2.478 e1(.25)=0.0284 e2(.25)=0.0244 (laggard tries harder)
+  Lsub=100.0 Gamma=0.3: r_eq/r=0.993 r_pr/r=0.996 Geq=0.298 e1(.25)=0.1116 e2(.25)=0.0721 (laggard tries harder)
+  Lsub=100.0 Gamma=0.6: r_eq/r=3.424 r_pr/r=2.215 Geq=2.055 e1(.25)=0.2112 e2(.25)=0.1342 (laggard tries harder)
+
+(F) multiplicity: value iteration from V=0 vs from a step at parity (V0 = 3 sign(s-1/2)); r=4, delta=1/(1+d), damping .5
+  Gamma=0.2 d=0.1 N=1500 init V=0 : lam_MPE=0.1164 (struct 0.1111, x1.05); lam_pred=0.1166; r_eq/r=1.09 (h=12: 1.09); lam(.25)=0.0081; conv 1e-11
+  Gamma=0.2 d=0.1 N=1500 init step: lam_MPE=0.1164 (struct 0.1111, x1.05); lam_pred=0.1166; r_eq/r=1.09 (h=12: 1.09); lam(.25)=0.0081; conv 1e-11
+  Gamma=0.2 d=0.05 N=3000 init V=0 : lam_MPE=0.1169 (struct 0.1111, x1.05); lam_pred=0.1170; r_eq/r=1.10 (h=12: 1.09); lam(.25)=0.0072; conv 1e-11
+  Gamma=0.2 d=0.05 N=3000 init step: lam_MPE=1.3919 (struct 0.1111, x12.53); lam_pred=inf; r_eq/r=27.47 (h=12: 11.58); lam(.25)=0.0076; conv 1e-11
+  Gamma=0.2 d=0.05 N=6000 init step: lam_MPE=1.4103 (struct 0.1111, x12.69); lam_pred=inf; r_eq/r=35.38 (h=12: 27.70); lam(.25)=0.0076; conv 1e-11
+  Gamma=0.3 d=0.05 N=3000 init V=0 : lam_MPE=0.1969 (struct 0.1765, x1.12); lam_pred=0.1975; r_eq/r=1.20 (h=12: 1.20); lam(.25)=0.0083; conv 1e-11
+  Gamma=0.3 d=0.05 N=3000 init step: lam_MPE=1.5509 (struct 0.1765, x8.79); lam_pred=inf; r_eq/r=22.89 (h=12: 14.77); lam(.25)=0.0092; conv 1e-11
+  finer rounds, smooth branch: Gamma=0.2 d=0.025 N=4000 init V=0: lam_MPE=0.1191 lam_pred=0.1195 r_eq/r=1.135
+
+(elapsed 255s)

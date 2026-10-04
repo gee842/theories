@@ -1,0 +1,4 @@
+eps/zeta=1.0, G=2 (ln G=0.69, x_sigma=0.676): x_p=0.10: S=3.92, eps*d*T=-0.67; x_p=0.30: S=2.15, eps*d*T=-0.07; x_p=0.50: S=1.00, eps*d*T=0.69; x_p=0.60: S=0.45, eps*d*T=1.50; x_p=0.80: S=-inf, eps*d*T=inf; x_p=0.95: S=-inf, eps*d*T=inf
+eps/zeta=1.0, G=5 (ln G=1.61, x_sigma=0.321): x_p=0.10: S=2.19, eps*d*T=0.82; x_p=0.30: S=0.16, eps*d*T=3.45; x_p=0.20: S=1.00, eps*d*T=1.61; x_p=0.60: S=-inf, eps*d*T=inf; x_p=0.80: S=-inf, eps*d*T=inf; x_p=0.95: S=-inf, eps*d*T=inf
+eps/zeta=0.1, G=2 (ln G=0.69, x_sigma=0.984): x_p=0.10: S=1.58, eps*d*T=0.24; x_p=0.30: S=1.23, eps*d*T=0.48; x_p=0.50: S=1.00, eps*d*T=0.69; x_p=0.60: S=0.89, eps*d*T=0.81; x_p=0.80: S=0.62, eps*d*T=1.17; x_p=0.95: S=0.25, eps*d*T=2.08
+eps/zeta=0.1, G=5 (ln G=1.61, x_sigma=0.775): x_p=0.10: S=1.26, eps*d*T=1.38; x_p=0.30: S=0.81, eps*d*T=1.82; x_p=0.20: S=1.00, eps*d*T=1.61; x_p=0.60: S=0.33, eps*d*T=2.72; x_p=0.80: S=-inf, eps*d*T=inf; x_p=0.95: S=-inf, eps*d*T=inf

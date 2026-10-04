@@ -1,0 +1,59 @@
+{
+  "files_written": [
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U02/A/core/20_s2.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U02/A/supp/02_S2.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U02/A/SUMMARY.json"
+  ],
+  "items_addressed": [
+    "Plan §4 §2 box: Claim/Why as D1-opus with the corrected lever sentence of plan §1 item 2 (sharing and diffusion every channel; provision where decisiveness rises less than in proportion to the stock; correction where it rises with the level); conditions as antecedents, a tag per sentence, {{>standprice}} as the hand-off for the common return",
+    "Plan §4 §2 `cond`: 'carriers' glossed at first use; 'provision not won in the contest' = 'provision beneath the game' defined once, trees as its image (§10.1); hedge 'may be divided' removed",
+    "Plan §4 §2 Ren's sentence completed verbatim with 'and trade everything for winning' [corpus: selfishness-spiral]; game-design rule quoted verbatim [corpus: keep-the-possibility-space-open]; 'hurricane' and 'change the basin, then add speed' quoted [corpus: meta-attractor], each after the mechanism it compresses",
+    "Plan §4 §2 hand-off: §2.4 ends in one sentence (structural gain and the price for §3; what those inside cannot see)",
+    "Plan §3 `loopgain` 2.2 per D2-opus §1: (1) with the one-win-share premise of additivity; (2); (3) with 0≤Γ_δ<1, net payoff reinvested, prize and others' conduct fixed, the cusp beyond Γ_δ≥1 (infinite, not negative); (4) rivals who respond [thm] with r^eq for stability and r^pr for the price; Scope: reinforcing channels, rank-one failure case, structural Γ as benchmark with MP magnitudes [num], multiplicity and catch-up labelled 'held for outside review', Γ not estimated; title 'One loop gain', text 'structural loop gain'",
+    "Plan §3 `tdec` S2.1 per D2-fable §5: Λ*=1+(d_K+δ_f)(Γ−1), Perron root of (S1) for several channels, 'Γ sets the sign, turnover the speed', TD numbers, settling short of decisive with diffusion, p_d=1−υ(T_dec) pointing to {{>detectlink}}, S13 interface 'set by Λ*'",
+    "Plan §3 `compound` 2.3 per D2-fable §3: strict inequalities in (1) with equality undecided; strict cap; local criterion at K̄=K* with the diffusion term; φ with the laggard's diffusion inflow; 'inflow not tied to rank: sharing, provision or diffusion'; sufficient condition; Scope with the leaders-held bound [num: CE]; 'diffusion is a source, not a guarantee' [num: CE]",
+    "Plan §3 channel signs per D2-opus §4: Proposition S2.4 `chansign` with ξ_r (four parts, proof, CH checks); consequences for the §2 box, Table 7.1's split correction/provision rows and Test Γ's sign recorded in S2",
+    "Plan §2 Supplement keys: `eqgain` S2.2 (two gains, magnitudes table, off parity, catch-up, multiplicity with 'the belief selects the equilibrium' held for outside review), `delayosc` S2.3, `chansign` S2.4, `gammarange` S2.6 (illustrative ranges, 'Γ is not estimated', per plan §9)",
+    "Plan §2 side results: `bench` moved to S2 (Remark S2.5, key kept) with one core sentence in §2.3 carrying its stability condition; 'of the same form, not the same theorem' (Sys m1); '200,000' stated only in S2 as the FB check of an algebraic identity",
+    "Plan §4 §3 item on §2.1: the corpus claim made analytic ('by construction ... every further concern could only bind'), with Ren's line quoted after it (Adv-O m7)",
+    "`meta` kept; 'Why meta-attractor' tightened; rule/update symbols renamed 𝒮, 𝓕, 𝓖 to remove the σ and F clashes (Math-F minor 8, D1-opus §7.4); Jacobian 𝒥, eigenvalues Λ, bench deviations u, w",
+    "`pathgen` kept; the line-363 class of sentence made consistent: correction keyed to no one is not selected by any carrier ({{>noinside}}), it is held by the whole (§10.4)",
+    "'What the loop gain does not decide' now carries the Λ* sentence and points to {{>thresholds}} for the shared parameters; the chain prose is gone from §2",
+    "S2 'What the loop gain unifies' table extended with chansign, tdec, eqgain; bench row corrected; standprice row restated as Γ_δ against Γ^c_δ",
+    "S2 growth variant ties compounding to the narrowing of the working objective ((1−β)r>1 with proportional stakes) and records the diffusion split [num: SP; m02 C]",
+    "Codex 1 (price domain), Codex 2 (sign of correction by channel), Codex 3 (cap equality, diffusion in φ) all repaired in statement and proof; Codex boundary cases Γ_δ≥1, cap equality and positive diffusion appear in S2 numerics (PD, CE)",
+    "Sys I1 (sign by channel, DC gain, speed by Λ*), Sys I2 (delayed balancing channel oscillates, Remark S2.3), Sys m1; Math-F I1 and Math-O M1 (two elasticities; structural Γ<1 not sufficient in the class computed; catch-up reverses), Math-F minors 1, 5, 7 (rank-one in Scope), 8; Math-O minors 11, 12; Adv-F F1 via the growth variant's link to standprice(2); Adv-O I1 (laggard's price off parity; illustrative Γ ranges in S2 only)",
+    "Fidelity (D1-fable §5.1, D1-opus §5.1): Ren's sentences quoted, not paraphrased, with corpus keys; 'the author' kept as the body's self-reference (V6.1 convention)",
+    "Every number carries [num: BLOCK; script] with blocks named in plan §7 (LG, FB, SM, PD, MP, TD, CH, CE, SP) and the memo scripts (m01–m04, f1–f3, Adv-O adv_checks §1)",
+    "Test assembly in /private/tmp/claude-501/v62scratch-U02-f: no unresolved markup, no doubled kinds, no banned phrases, no forward use; only the two expected unknown keys (thresholds, detectlink)"
+  ],
+  "moved_or_dropped": [
+    "Core Remark 2.5 `bench` → Supplement Remark S2.5 (key kept; full statement, proof and FB check there); §2.3 keeps one sentence with its stability condition and the Richardson reading. pathgen therefore becomes Remark 2.5 (LEDGER crosswalk is automatic)",
+    "V6.1 §2.4 closing paragraph ('The rest of Part I follows one chain ... accelerates ... regulate ... alienates language ... each consequence a mechanism of the others') → not carried in §2 (one home per point: the chain lives in the abstract, guide, §1.2 and §12.4; the four loops in §7.1); replaced by a single hand-off sentence",
+    "V6.1 box 'Why' clause 'the same number prices standing for every actor' → replaced by 'Where the discounted gain is below one, it prices a unit of relative standing in the actor's own future winnings [thm]; what standing is worth against what all share is the question of {{>standprice}}' (D2-opus §1; 'every forward-looking actor' deleted)",
+    "V6.1 box 'Why' clause 'decisiveness and every channel through which success buys advantage raise it' → absorbed into eq. (2) and chansign(4) (κ_j, level channels); the box now carries the channel-by-channel lever sentence instead",
+    "V6.1 loopgain Scope 'It does not decide global behaviour, whether a position beyond sanction can be reached, or whether capability outruns correction' → kept once, in the paragraph 'What the loop gain does not decide' (its home), not repeated in the Scope",
+    "V6.1 loopgain '[num: 4,000 random systems without a mismatch]' in the core → moved to S2 Numerics as [num: LG]; the core Scope says 'Proof: S2'",
+    "V6.1 compound(2) 'a cap no higher than equal-standing capacity ... locally stable' → corrected: strict cap returns a laggard; at K̄=K* the criterion decides (Codex 3); V6.1's '[num: five cases of the cap]' → S2 numerics [num: SM(9), SM(10)] plus [num: CE]",
+    "V6.1 compound follow-up paragraph's paraphrase 'One principle of the corpus acts on convertibility: a winner ... should be rewarded with anything other than more advantage in the same game' → Ren's verbatim sentence with its corpus key; 'needs inflow not tied to rank, from sharing or provision' → 'sharing, provision or diffusion', diffusion as the third inflow (plan §3)",
+    "V6.1 Definition 2.4's σ, F, G → 𝒮, 𝓕, 𝓖 (notation clash with Proposition 2.2's σ and S0's F); V6.1 S2's J, λ → 𝒥, Λ (D1-opus §7.4 renames)",
+    "V6.1 §2.4 'It can raise decisiveness ... If it lowers ... It can raise the growth of hazardous behaviour' → hedges turned into antecedents ('It raises ...; Where it lowers ...; It raises ...'); 'can become a carrier itself' kept as genuine existence",
+    "V6.1 S2 Remark S2.1 factor 1+d_K(Γ−1) and '12 periods' → corrected to 1+(d_K+δ_f)(Γ−1) and 11.6 (linear) / 13 (nonlinear); the old formula's error is recorded inside the remark",
+    "V6.1 S2 table row 'feedback benchmark: Yes, the two-channel case in deviations' → 'Of the same form, not the same theorem' (Sys m1); rows in θ_Γ → Γ_δ against Γ^c_δ and θ, matching the general standprice form",
+    "V6.1 S2 'Proof of Remark bench' section → folded into Remark S2.5; V6.1 'Numerics (LG, PS)' → [num: LG] (no PS block in checks_v62; LG(B) covers the present value)",
+    "V6.1 S2 proof of compound(2) (without diffusion; 'φ(K̄)≥0 gives local stability') → rewritten with the diffusion term, strict cap, cap equality, leaders held (Codex 3, Math-O minor 11)",
+    "V6.1 cond(1) 'a share β of it may be divided equally' → 'a share β of it is divided equally whatever the outcome, and the rest by relative success' (hedge removed; same model)"
+  ],
+  "open_issues": [
+    "Expected unknown keys in the test assembly: `thresholds` (core/20_s2.md:59, forward pointer to Table 7.1, §7 unit) and `detectlink` (supp/02_S2.md:30, §5 unit). The assembler's KINDS also lacks 'Table', which {{>thresholds}} needs",
+    "The current checks_v62.log (3 Oct 23:39) does not contain the CH, TD, CE, PD, SP, MP blocks named in plan §7 and listed in checks_v62.py's ORDER; S2 cites those block names with the memo scripts (m01–m04, f1–f3) as the source logs until the blocks are run",
+    "Other units must match S2: S13's row 'T_dec set by Γ' → 'set by Λ*' (S13 unit); Table 7.1 and S7 split of the correction row and 'through capacity' on the provision row (§7 unit); Test Γ re-signed (§7.4); §10.2 to carry 'what should diffuse' and 'openness restores standing as well as eroding leads', which §2 points to; §8.2 keeps the export-controls sentence gammarange cites; §4's line-363 sentence to match pathgen's 'held by the whole'",
+    "S2's growth variant states the diffusion-split thresholds ((1−β)r>1+δδ_f/(1−δ(1−d)) for narrowing; 1+δ_f/(κ_c g) for instability) with '(S3)' and [num: SP; m02 C]; the §3 unit's S3 must carry the derivation (D2-opus §22.8)",
+    "Length: core §2 is 3,538 words against V6.1's 2,644 (+894, all conditions or labelled numbers: loopgain (4) and Scope, compound's cap criterion and φ, the Λ* sentence); S2 is 4,206 against 904. An integration pass could shorten the loopgain Scope by moving the MP magnitudes sentence to eqgain if a shorter core is wanted",
+    "Rounded magnitudes in the loopgain Scope: 'about five times' (5.09 at r=4, 5.41 at r=1), 'about three times' (2.79, 3.15); exact values are in S2",
+    "Ren's quotations carry bracketed grammatical fixes ('optimiz[es]', 'discard[s]', 'compet[ing]'); Ren may prefer the raw originals",
+    "'the author' is used for Ren in the body (V6.1 convention, 4 uses vs 1 'Ren'); the integration editor should settle one form across the core",
+    "Multiplicity, catch-up reversal and 'the belief selects the equilibrium' are labelled 'held for outside review' per plan §3; the Ψ3 link to §3.8 is stated conditionally in S2 only"
+  ],
+  "word_counts": "core §2: 3,538 words (V6.1: 2,644; V6.1 plan range 2,300–2,500; D1 targets 2,400–2,450). Supplement S2: 4,206 words (V6.1: 904). Assembled core total with my §2: 31,439 words."
+}

@@ -1,0 +1,24 @@
+MIXED SIGNAL
+sigma_R, rho_E, posterior_E = 0.6666666666666667 0.25 0.6
+R payoffs E,N: 0.0 0 ; S payoffs E,N: 0.15000000000000002 0
+Under core deterministic tie rule receiver must use rho=1, so R strictly chooses E: 0.15000000000000002 > 0
+
+DWELL G=2, equal speeds
+Threshold: 5.858956055890303
+T 5.857956055890303 release (0.7314496393936851, 0.005714154850602239) fate ('capture', 79.58118121893304, 1.999999999999889)
+T 5.859956055890303 release (0.7294610562826902, 0.005702737961595666) fate ('absence', -79.58144462570591, 4.274973428699707e-33)
+depth 2.1972245773362196 duration threshold 3.4459302874165587
+depth 4.595119850134589 duration threshold 5.858956055890303
+depth 6.906754778648553 duration threshold 8.171929411764722
+Continuity + open basin => first crossing lies on stable manifold, converges to saddle, infimum not minimum.
+
+PULSES: G=2, insulation 0.2 then restored conversion 0.05, no floor
+cycles 1 share 0.9917557136429834 support 1.654325595324615 release fate capture
+cycles 10 share 0.9892461231409194 support 0.5654021148556334 release fate capture
+cycles 20 share 0.9578837126691845 support 0.43893977698049047 release fate capture
+cycles 40 share 0.46274841637527536 support 0.26656026068963795 release fate absence
+cycles 80 share 6.75105751384302e-05 support 0.00024719196380118525 release fate absence
+
+SPRT COUNTEREXAMPLE: informative independent but nonidentical readings
+boundaries -4.931592086755803 4.5980016965094785 but every partial sum lies in -0.12770144917616608 0.1224849575797974
+Neither boundary can ever be reached; all readings are informative, independent, correctly modeled.

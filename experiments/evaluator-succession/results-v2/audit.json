@@ -1,0 +1,172 @@
+{
+  "checks": {
+    "snapshot_hash/benchmark.py": true,
+    "current_hash/benchmark.py": true,
+    "snapshot_hash/config.json": true,
+    "current_hash/config.json": true,
+    "snapshot_hash/branch_engine.py": true,
+    "current_hash/branch_engine.py": true,
+    "snapshot_hash/branch_experiment.py": true,
+    "current_hash/branch_experiment.py": true,
+    "snapshot_hash/branch_config.json": true,
+    "current_hash/branch_config.json": true,
+    "snapshot_hash/BRANCH-PROTOCOL.md": true,
+    "current_hash/BRANCH-PROTOCOL.md": true,
+    "snapshot_hash/test_branching.py": true,
+    "current_hash/test_branching.py": true,
+    "prefix_restoration/endogenous": true,
+    "branch_receipts/endogenous/stable/endogenous": true,
+    "branch_receipts/endogenous/stable/independent": true,
+    "branch_receipts/endogenous/stable/fixed": true,
+    "branch_receipts/endogenous/stable/protected": true,
+    "branch_receipts/endogenous/shift/endogenous": true,
+    "branch_receipts/endogenous/shift/independent": true,
+    "branch_receipts/endogenous/shift/fixed": true,
+    "branch_receipts/endogenous/shift/protected": true,
+    "prefix_restoration/independent": true,
+    "branch_receipts/independent/stable/endogenous": true,
+    "branch_receipts/independent/stable/independent": true,
+    "branch_receipts/independent/stable/fixed": true,
+    "branch_receipts/independent/stable/protected": true,
+    "branch_receipts/independent/shift/endogenous": true,
+    "branch_receipts/independent/shift/independent": true,
+    "branch_receipts/independent/shift/fixed": true,
+    "branch_receipts/independent/shift/protected": true,
+    "primary_receipts/B1": true,
+    "primary_receipts/B2": true,
+    "primary_receipts/B3": true,
+    "csv_means_match_2048_world_branches": true
+  },
+  "maximum_frozen_rescoring_error": 1.1102230246251565e-16,
+  "descriptive_correction_and_specialization": {
+    "endogenous/stable/endogenous": {
+      "opportunities": 0,
+      "corrections": 0,
+      "worlds_without_opportunities": 128,
+      "mean_world_response": null,
+      "late_a_governor_fraction": 0.9547275641025641,
+      "late_a_rubric": 0.9407714843750001
+    },
+    "endogenous/stable/independent": {
+      "opportunities": 98,
+      "corrections": 38,
+      "worlds_without_opportunities": 62,
+      "mean_world_response": 0.4065656565656566,
+      "late_a_governor_fraction": 0.5006009615384616,
+      "late_a_rubric": 0.778916015625
+    },
+    "endogenous/stable/fixed": {
+      "opportunities": 0,
+      "corrections": 0,
+      "worlds_without_opportunities": 128,
+      "mean_world_response": null,
+      "late_a_governor_fraction": null,
+      "late_a_rubric": 0.9357421875000004
+    },
+    "endogenous/stable/protected": {
+      "opportunities": 0,
+      "corrections": 0,
+      "worlds_without_opportunities": 128,
+      "mean_world_response": null,
+      "late_a_governor_fraction": 0.9647435897435898,
+      "late_a_rubric": 0.9787109375000004
+    },
+    "endogenous/shift/endogenous": {
+      "opportunities": 349,
+      "corrections": 17,
+      "worlds_without_opportunities": 0,
+      "mean_world_response": 0.08203125,
+      "late_a_governor_fraction": 0.8619791666666666,
+      "late_a_rubric": 0.8238476562500002
+    },
+    "endogenous/shift/independent": {
+      "opportunities": 278,
+      "corrections": 132,
+      "worlds_without_opportunities": 0,
+      "mean_world_response": 0.5768229166666667,
+      "late_a_governor_fraction": 0.5006009615384616,
+      "late_a_rubric": 0.20560546875000002
+    },
+    "endogenous/shift/fixed": {
+      "opportunities": 0,
+      "corrections": 0,
+      "worlds_without_opportunities": 128,
+      "mean_world_response": null,
+      "late_a_governor_fraction": null,
+      "late_a_rubric": 0.9357421875000004
+    },
+    "endogenous/shift/protected": {
+      "opportunities": 128,
+      "corrections": 128,
+      "worlds_without_opportunities": 0,
+      "mean_world_response": 1.0,
+      "late_a_governor_fraction": 0.03225160256410257,
+      "late_a_rubric": 5.859375e-05
+    },
+    "independent/stable/endogenous": {
+      "opportunities": 8,
+      "corrections": 4,
+      "worlds_without_opportunities": 123,
+      "mean_world_response": 0.7,
+      "late_a_governor_fraction": 0.9513221153846154,
+      "late_a_rubric": 0.9449511718750003
+    },
+    "independent/stable/independent": {
+      "opportunities": 133,
+      "corrections": 55,
+      "worlds_without_opportunities": 49,
+      "mean_world_response": 0.4156118143459915,
+      "late_a_governor_fraction": 0.5006009615384616,
+      "late_a_rubric": 0.7748144531250001
+    },
+    "independent/stable/fixed": {
+      "opportunities": 0,
+      "corrections": 0,
+      "worlds_without_opportunities": 128,
+      "mean_world_response": null,
+      "late_a_governor_fraction": null,
+      "late_a_rubric": 0.785546875
+    },
+    "independent/stable/protected": {
+      "opportunities": 0,
+      "corrections": 0,
+      "worlds_without_opportunities": 128,
+      "mean_world_response": null,
+      "late_a_governor_fraction": 0.9667467948717948,
+      "late_a_rubric": 0.9921875000000003
+    },
+    "independent/shift/endogenous": {
+      "opportunities": 328,
+      "corrections": 16,
+      "worlds_without_opportunities": 2,
+      "mean_world_response": 0.09259259259259259,
+      "late_a_governor_fraction": 0.8247195512820513,
+      "late_a_rubric": 0.7937109375
+    },
+    "independent/shift/independent": {
+      "opportunities": 260,
+      "corrections": 130,
+      "worlds_without_opportunities": 2,
+      "mean_world_response": 0.5939153439153437,
+      "late_a_governor_fraction": 0.5006009615384616,
+      "late_a_rubric": 0.193525390625
+    },
+    "independent/shift/fixed": {
+      "opportunities": 0,
+      "corrections": 0,
+      "worlds_without_opportunities": 128,
+      "mean_world_response": null,
+      "late_a_governor_fraction": null,
+      "late_a_rubric": 0.785546875
+    },
+    "independent/shift/protected": {
+      "opportunities": 122,
+      "corrections": 122,
+      "worlds_without_opportunities": 6,
+      "mean_world_response": 1.0,
+      "late_a_governor_fraction": 0.03245192307692308,
+      "late_a_rubric": 0.00019531249999999985
+    }
+  },
+  "warning": "Later correction opportunities are treatment-dependent; their conditional rates are descriptive."
+}

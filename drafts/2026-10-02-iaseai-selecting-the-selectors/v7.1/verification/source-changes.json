@@ -1,0 +1,187 @@
+[
+  {
+    "file": "src/core/00_head.md",
+    "added_lines": 9,
+    "removed_lines": 9
+  },
+  {
+    "file": "src/core/10_s01.md",
+    "added_lines": 9,
+    "removed_lines": 9
+  },
+  {
+    "file": "src/core/20_s2.md",
+    "added_lines": 1,
+    "removed_lines": 1
+  },
+  {
+    "file": "src/core/30_s3.md",
+    "added_lines": 8,
+    "removed_lines": 6
+  },
+  {
+    "file": "src/core/40_s4.md",
+    "added_lines": 1,
+    "removed_lines": 1
+  },
+  {
+    "file": "src/core/50_s5.md",
+    "added_lines": 4,
+    "removed_lines": 4
+  },
+  {
+    "file": "src/core/60_s6.md",
+    "added_lines": 5,
+    "removed_lines": 5
+  },
+  {
+    "file": "src/core/70_s7.md",
+    "added_lines": 6,
+    "removed_lines": 6
+  },
+  {
+    "file": "src/core/80_s8.md",
+    "added_lines": 11,
+    "removed_lines": 11
+  },
+  {
+    "file": "src/core/90_s9.md",
+    "added_lines": 3,
+    "removed_lines": 3
+  },
+  {
+    "file": "src/core/a0_s10.md",
+    "added_lines": 9,
+    "removed_lines": 9
+  },
+  {
+    "file": "src/core/b0_s11.md",
+    "added_lines": 4,
+    "removed_lines": 4
+  },
+  {
+    "file": "src/core/c0_s12.md",
+    "added_lines": 18,
+    "removed_lines": 18
+  },
+  {
+    "file": "src/disc/01_X1.md",
+    "added_lines": 4,
+    "removed_lines": 4
+  },
+  {
+    "file": "src/disc/08_X8.md",
+    "added_lines": 29,
+    "removed_lines": 30
+  },
+  {
+    "file": "src/disc/10_X10.md",
+    "added_lines": 9,
+    "removed_lines": 7
+  },
+  {
+    "file": "src/disc/11_X11.md",
+    "added_lines": 7,
+    "removed_lines": 7
+  },
+  {
+    "file": "src/reg/CHANGELOG.md",
+    "added_lines": 20,
+    "removed_lines": 21
+  },
+  {
+    "file": "src/reg/CLAIMS.md",
+    "added_lines": 42,
+    "removed_lines": 18
+  },
+  {
+    "file": "src/reg/EVIDENCE.md",
+    "added_lines": 16,
+    "removed_lines": 16
+  },
+  {
+    "file": "src/reg/LEDGER.md",
+    "added_lines": 14,
+    "removed_lines": 30
+  },
+  {
+    "file": "src/reg/README.md",
+    "added_lines": 21,
+    "removed_lines": 18
+  },
+  {
+    "file": "src/reg/RELEASE-REVIEW.md",
+    "added_lines": 45,
+    "removed_lines": 0
+  },
+  {
+    "file": "src/reg/START-HERE.md",
+    "added_lines": 4,
+    "removed_lines": 4
+  },
+  {
+    "file": "src/reg/TESTS.md",
+    "added_lines": 29,
+    "removed_lines": 29
+  },
+  {
+    "file": "src/supp/00_S0.md",
+    "added_lines": 5,
+    "removed_lines": 5
+  },
+  {
+    "file": "src/supp/03_S3.md",
+    "added_lines": 5,
+    "removed_lines": 1
+  },
+  {
+    "file": "src/supp/04_S4.md",
+    "added_lines": 1,
+    "removed_lines": 1
+  },
+  {
+    "file": "src/supp/05_S5.md",
+    "added_lines": 1,
+    "removed_lines": 1
+  },
+  {
+    "file": "src/supp/06_S6.md",
+    "added_lines": 2,
+    "removed_lines": 2
+  },
+  {
+    "file": "src/supp/08_S8.md",
+    "added_lines": 4,
+    "removed_lines": 2
+  },
+  {
+    "file": "src/supp/09_S9.md",
+    "added_lines": 10,
+    "removed_lines": 4
+  },
+  {
+    "file": "src/supp/10_S10.md",
+    "added_lines": 3,
+    "removed_lines": 3
+  },
+  {
+    "file": "src/supp/11_S11.md",
+    "added_lines": 5,
+    "removed_lines": 5
+  },
+  {
+    "file": "src/supp/13_S13.md",
+    "added_lines": 3,
+    "removed_lines": 1
+  },
+  {
+    "file": "src/supp/14_S14.md",
+    "added_lines": 16,
+    "removed_lines": 2
+  },
+  {
+    "file": "src/supp/15_S15.md",
+    "added_lines": 4,
+    "removed_lines": 3
+  }
+]

@@ -1,0 +1,16 @@
+r=1.5 Gamma=0.9: formula lambda at s=1/2 = 1.373
+   s=0.1: lambda_fixed=0.704 lambda_MPE=0.018  theta(n=2): fixed -0.260, MPE -0.009
+   s=0.25: lambda_fixed=0.975 lambda_MPE=0.026  theta(n=2): fixed -0.328, MPE -0.013
+   s=0.4: lambda_fixed=1.167 lambda_MPE=0.578  theta(n=2): fixed -0.368, MPE -0.224
+   s=0.5: lambda_fixed=1.208 lambda_MPE=3.013  theta(n=2): fixed -0.377, MPE -0.601
+   s=0.6: lambda_fixed=1.167 lambda_MPE=3.665  theta(n=2): fixed -0.368, MPE -0.647
+   s=0.75: lambda_fixed=0.975 lambda_MPE=1.250  theta(n=2): fixed -0.328, MPE -0.385
+   s=0.9: lambda_fixed=0.704 lambda_MPE=0.741  theta(n=2): fixed -0.260, MPE -0.270
+r=1.5 Gamma=1.2: formula lambda at s=1/2 = 3.375
+   s=0.1: lambda_fixed=1.028 lambda_MPE=0.011  theta(n=2): fixed -0.339, MPE -0.005
+   s=0.25: lambda_fixed=1.593 lambda_MPE=0.037  theta(n=2): fixed -0.443, MPE -0.018
+   s=0.4: lambda_fixed=2.020 lambda_MPE=1.283  theta(n=2): fixed -0.503, MPE -0.391
+   s=0.5: lambda_fixed=2.115 lambda_MPE=4.252  theta(n=2): fixed -0.514, MPE -0.680
+   s=0.6: lambda_fixed=2.020 lambda_MPE=5.289  theta(n=2): fixed -0.503, MPE -0.726
+   s=0.75: lambda_fixed=1.593 lambda_MPE=2.019  theta(n=2): fixed -0.443, MPE -0.502
+   s=0.9: lambda_fixed=1.028 lambda_MPE=0.869  theta(n=2): fixed -0.339, MPE -0.303

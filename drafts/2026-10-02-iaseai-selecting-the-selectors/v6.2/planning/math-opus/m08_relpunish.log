@@ -1,0 +1,20 @@
+m08  Relative objectives and punishments that can be imitated (Cor 5.5, key `relpunish`).
+
+(A) the printed example: punishment [(A,X) deviator, (A,X) punisher 1, (A,Y) punisher 2]
+   deviator's objective -0.500; best unilateral deviation gains [0.0, 0.0, -0.2]  (weak: two zeros)
+   deviation gain from cooperation 1.200; grim reversion sustains cooperation for delta >= g/(g-v) = 0.706
+(B) label asymmetry eps: unique X pays 1+eps
+   eps=+0.01 roles (X,X,Y): deviator held at -0.500; deviation gains [-0.005, -0.005, -0.2] -> STRICT; delta* = 0.706
+   eps=+0.01 roles (Y,Y,X): deviator held at -0.505; deviation gains [0.005, 0.005, -0.2] -> not strict
+   eps=+0.05 roles (X,X,Y): deviator held at -0.500; deviation gains [-0.025, -0.025, -0.2] -> STRICT; delta* = 0.706
+   eps=+0.05 roles (Y,Y,X): deviator held at -0.525; deviation gains [0.025, 0.025, -0.2] -> not strict
+   eps=-0.05 roles (X,X,Y): deviator held at -0.500; deviation gains [0.025, 0.025, -0.2] -> not strict
+   eps=-0.05 roles (Y,Y,X): deviator held at -0.475; deviation gains [-0.025, -0.025, -0.2] -> STRICT; delta* = 0.716
+    random anonymous perturbations of every payoff (uniform in [-e, e], same function for all players):
+      e=0.02: a strict punishment holding the deviator below cooperation exists in 300/300 games; median delta* 0.708
+      e=0.05: a strict punishment holding the deviator below cooperation exists in 300/300 games; median delta* 0.711
+      e=0.1: a strict punishment holding the deviator below cooperation exists in 282/300 games; median delta* 0.713
+
+(C) continuation symmetry. Prisoner's dilemma CC=(3,3), DC=(4,0), DD=(1,1); relative objectives (pi_i - pi_j)
+   role-dependent continuation: target's punishment value -8.1818; deviation worth -69.636 < 0 = cooperation: sustained
+   symmetric continuation: target's punishment value 0.0000; deviation worth 4.000 > 0: not sustained (the bound v >= 0 holds)

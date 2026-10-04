@@ -1,0 +1,7 @@
+Prop 2.2(1): 1500 random systems (1-3 channels, log/linear entry, k0, diffusion): mismatches 0, skipped near boundary 11
+Prop 2.2(3): 200 systems with Gamma<0.95: max relative error of PV vs Gd/(1-Gd) = 3.96e-07
+Gamma_delta <= Gamma violations: 0
+Finite perturbations when Gamma>1 but Gd<1: PV per unit y vs first-order lambda
+  Gamma=1.50, delta=0.7: Gd=0.477, lambda=0.913; x=1e-06: 0.913; x=0.001: 0.913; x=0.01: 0.913; x=0.05: 0.912; x=0.2: 0.901
+  Gamma=1.50, delta=0.8: Gd=0.667, lambda=2.000; x=1e-06: 2.000; x=0.001: 2.000; x=0.01: 1.998; x=0.05: 1.980; x=0.2: 1.888
+  Gamma=1.50, delta=0.85: Gd=0.797, lambda=3.923; x=1e-06: 3.923; x=0.001: 3.906; x=0.01: 3.837; x=0.05: 3.657; x=0.2: 3.234

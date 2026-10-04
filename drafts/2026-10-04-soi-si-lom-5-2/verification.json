@@ -1,0 +1,11 @@
+{
+  "audio_duration_seconds": 3086.208,
+  "main_chunks": 11,
+  "independent_check_chunks": 11,
+  "targeted_gpt_checks": 9,
+  "targeted_whisper_checks": 5,
+  "translation_timestamped_paragraphs": 97,
+  "translation_chinese_characters": 6972,
+  "last_translation_timestamp_seconds": 3082,
+  "verification": "Both full recognition passes cover all chunks. Translation manually compared with outputs. No word-for-word human listening verification."
+}

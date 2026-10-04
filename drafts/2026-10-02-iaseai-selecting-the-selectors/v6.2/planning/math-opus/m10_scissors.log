@@ -1,0 +1,15 @@
+m10  The scissors in reduced form, and Test G (Section 5.5; Remark S5.1; keys `zonesillus`, `enforce`, `standprice`).
+
+(A) largest enforceable discounted relative loop gain, by p_d (D=C)
+   theta0=0.0: p_d=0.0: 0.924; p_d=0.5: 0.852; p_d=0.9: 0.387; p_d=0.94: 0.108; p_d=0.95: none; p_d=0.97: none; p_d=0.98: none; p_d=0.99: none  | none above p_d = 0.9495
+   theta0=0.4: p_d=0.0: 0.953; p_d=0.5: 0.908; p_d=0.9: 0.621; p_d=0.94: 0.448; p_d=0.95: 0.377; p_d=0.97: 0.161; p_d=0.98: none; p_d=0.99: none  | none above p_d = 0.9793
+(B) with a common return Gcom_d (prize growing with capacity), theta0=0
+   Gcom_d=0.0: p_d=0.0: 0.924; p_d=0.5: 0.852; p_d=0.9: 0.387
+   Gcom_d=0.3: p_d=0.0: 0.947; p_d=0.5: 0.896; p_d=0.9: 0.571
+   Gcom_d=0.6: p_d=0.0: 0.970; p_d=0.5: 0.941; p_d=0.9: 0.755
+
+(C) Test G: share of theta ~ U[-1,3] sustaining restraint; wider (theta>1) minus narrower (theta<1)
+   D-C=0.0: gap by p_d  0.0: +0.05; 0.5: +0.09; 0.8: +0.21; 0.9: +0.34; 0.95: +0.50; 0.99: +0.82; 1.0: +0.97
+   D-C=0.5: gap by p_d  0.0: +0.05; 0.5: +0.30; 0.8: +0.92; 0.9: +0.33; 0.95: +0.00; 0.99: +0.00; 1.0: +0.00
+   D=C: the gap rises with p_d; D>C: it rises, then closes as p_d -> 1 (no objective with theta<=n-1 sustains restraint),
+   where this theory and structural realism agree: the test discriminates at intermediate p_d

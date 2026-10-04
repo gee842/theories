@@ -1,0 +1,19 @@
+(a) exponents, numerical, 300 random (xf, xv, eta):
+   mismatches against stated exponents: {'thr': 0, 'split': 0, 'conc': 0, 'spend': 0}
+(b) a genuine lump-sum fixed cost F p^xf (paid iff q>0) instead of the linear term f p^xf q:
+   xf=0, xv=0, eta=1: lump-sum threshold exponent 0.2500 (eta/(2eta+2-xv-eta xf) = 0.2500); linear-term exponent 1/(2-xf) = 0.5000
+   xf=1, xv=1, eta=1: lump-sum threshold exponent 0.5000 (eta/(2eta+2-xv-eta xf) = 0.5000); linear-term exponent 1/(2-xf) = 1.0000
+   xf=0, xv=0, eta=2: lump-sum threshold exponent 0.3333 (eta/(2eta+2-xv-eta xf) = 0.3333); linear-term exponent 1/(2-xf) = 0.5000
+   xf=0, xv=1, eta=0.5: lump-sum threshold exponent 0.2500 (eta/(2eta+2-xv-eta xf) = 0.2500); linear-term exponent 1/(2-xf) = 0.5000
+   requirement d* (certificate root) as gam falls, A=0.3, cE=1, aB=1, p=0.6, chi=Y=1, eta=1:
+     gam=1e+00: linear part f=0.3 -> d*=0.529;  lump-sum F=0.3 -> d*=0.465;  f=0 -> d*=0.638
+     gam=1e-02: linear part f=0.3 -> d*=1.146;  lump-sum F=0.3 -> d*=4.648;  f=0 -> d*=4.800
+     gam=1e-04: linear part f=0.3 -> d*=1.199;  lump-sum F=0.3 -> d*=46.476;  f=0 -> d*=46.626
+     gam=1e-06: linear part f=0.3 -> d*=1.200;  lump-sum F=0.3 -> d*=464.758;  f=0 -> d*=464.908
+     gam=1e-08: linear part f=0.3 -> d*=1.200;  lump-sum F=0.3 -> d*=4647.580;  f=0 -> d*=4647.730
+(c) quasi-static vs selection with finite speed. Dominant share p=0.6, A=0.3, aB=cE=1, chi=Y=1, eta=1, f=0,
+    gam=e^{-0.2t}, d=2 e^{alpha t} (rate law threshold alpha = 0.1). Certificate s_E=(A+p q)/d.
+   alpha=0.09: qs: first failure 145.9, s_E(T)=21.8 | additive(V=1.0): first failure none by 300, s_E(T)=7.68e-13 | additive(V=100.0): first failure none by 300, s_E(T)=6.39e-12 | log(V=1.0): first failure none by 300, s_E(T)=4.08e-13 | log(V=100.0): first failure 145.9, s_E(T)=6.06e-08 | replicator(V=1.0): first failure none by 300, s_E(T)=3.87e-13 | replicator(V=20.0): first failure none by 300, s_E(T)=3.87e-13
+   alpha=0.11: qs: first failure none by 300, s_E(T)=0.000134 | additive(V=1.0): first failure none by 300, s_E(T)=1.54e-15 | additive(V=100.0): first failure none by 300, s_E(T)=7.38e-15 | log(V=1.0): first failure none by 300, s_E(T)=9.9e-16 | log(V=100.0): first failure none by 300, s_E(T)=4.24e-11 | replicator(V=1.0): first failure none by 300, s_E(T)=9.6e-16 | replicator(V=20.0): first failure none by 300, s_E(T)=9.6e-16
+   alpha=0.05: qs: first failure 28.8, s_E(T)=5.76e+11 | additive(V=1.0): first failure none by 300, s_E(T)=2.46e-07 | additive(V=100.0): first failure 36.0, s_E(T)=6.39e-06 | log(V=1.0): first failure none by 300, s_E(T)=7.76e-08 | log(V=100.0): first failure 28.8, s_E(T)=4.59e-08 | replicator(V=1.0): first failure 86.2, s_E(T)=6.62e+03 | replicator(V=20.0): first failure 51.0, s_E(T)=6.62e+03
+   alpha=0.0: qs: first failure 13.8, s_E(T)=6.14e+24 | additive(V=1.0): first failure 26.1, s_E(T)=15.8 | additive(V=100.0): first failure 13.9, s_E(T)=1.44e+03 | log(V=1.0): first failure 34.5, s_E(T)=0.15 | log(V=100.0): first failure 13.8, s_E(T)=0.15 | replicator(V=1.0): first failure 44.9, s_E(T)=2.16e+10 | replicator(V=20.0): first failure 27.5, s_E(T)=2.16e+10

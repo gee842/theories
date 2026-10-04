@@ -1,0 +1,63 @@
+{
+  "files_written": [
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U08/A/core/80_s8.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U08/A/supp/08_S8.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U08/A/disc/08_X8.md",
+    "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U08/A/SUMMARY.json"
+  ],
+  "items_addressed": [
+    "Jones fix (Evi I1; D4 A1-A4; SYNTHESIS G1): §8.1 curvature sentence with EV11 figures [obs]; §8.4 and X8 'utility linear in consumption'; S8 Discounting rewritten as this paper's derivation, the special case of Jones's v(c)=g/δ, with Key Points 1-5",
+    "kernel K: Cardaliaguet 1996 added (D4 M4); statement carries union over strategies / intersection over disturbances; 'not computed here; Theorem 10.5 is a boundary of viable parameters under one fixed strategy' (D2-fable §21, D2-opus); openness 未/可/应/转 with Ren's 开者，未成之域不闭也 and 护闭/成闭 [corpus: possibility-space]",
+    "fallback K: statement with both conditions inside, 'rules that depend on the state included'; Scope cites SM(4), SM(14); S8 proof with the failing conditional step and the exact-DP numbers; FD example [num]",
+    "survassure M: full statement moved to S8 (Proposition S8.1), core keeps a 'Horizons' paragraph that carries its conditions; numbers cited to ../v4/checks_v44.py and ../v5/checks_v5.py SR",
+    "profile K: read through Table 7.1 ({{thresholds}}); export controls 'block diffusion, which raises the structural loop gain' (plan §1 item 2)",
+    "G1-G7 canonical in §8.2 (D1-opus list, verbatim, in order), each tied to a Table 7.1 threshold; superset of V6.1's four marks, §7.4's five and §12.4's six; G2 with Ren's 2024-07-29 line [corpus: possibility-space]; E1 noted as an arrangement, not a mark (Adv-O I8)",
+    "durability K: D1-D8 verbatim; 'where documents are silent the test records the silence, under one evidence standard' (Adv-O m6)",
+    "Registered prediction [conj] made exact in §8.2 with its mechanism reasons; box states it as the claim, Section 7.4 refutation referenced (Adv-O labels)",
+    "8.3(a): 'drive the alignment tax to zero or below, class by class' (D1-opus; alignment review); masked class via {{masked}} (C12); 'sufficient certificate, not a proof of independent errors' (Sys/A16)",
+    "8.3(b): Fudenberg-Koh kept at strongest with pointer to X8's new paragraph (Adv-F F11); D4 E3 wording (77%, twelve pairs); Shavell 1986 for liability's ceiling; {{>nounilateral}} without kind word (F8, Fid minor 6, D4 M11)",
+    "8.3(c): Bueno de Mesquita et al. read correctly, discouragement cited to Harris-Vickers and Konrad-Kovenock (D4 F1/F2; Evi minor 1); 'spending returns the contest toward parity where the price of standing is highest' (near-parity consequence, Aghion et al. in X8); LD number [num]",
+    "8.3(d): tone fix 'It persuades by promising both security and benefits; both rest on the winner's restraint after the fact' (Fid); κ_W/(1+κ_W) sentence and crux C13 (Adv-F F4); X8 'proposed, in its authors' terms, as humanitarian and defensive'; C13 generalized in X8 with Acemoglu-Robinson 2012",
+    "8.3(e): sprint answered by mechanism (Adv-O I6): unequal incidence (Lemma 3.3(2)), largest conversion target (Prop 4.3; 4.5(4)), objections by type in X8, D4/D5 row-by-row table against common custody in X8; Remark sprint moved to S8 (S8.3)",
+    "8.3(f): preventown K with conditions inside the statement and (2) 'compared by hazard, not by the event'; FS numbers in S8 [num]; insure R moved to S8 (S8.4) with the three reasons; Ren's 2026-10-03 ruling quoted in Chinese in the core [corpus: possibility-space]; 'insurance accepts the frame of the contest' in the core (Fid important 4); hard case kept; coercive restriction cross-referenced to §12.1 tier 3's three conditions (Adv-O I5; plan); Abecassis moved to X8 What remains and summarized in the core as 'unclear red lines, doubtful credibility (X8)' (D4 G1)",
+    "8.3(g): assure K with the stage game named in the statement; detectlink referenced with the JX(d) identity and 'what each takes as given' (Adv-F F7; D1-opus §2.3); verify R with clauses (1)-(4) numbered (Math-O), clause (4)'s rate condition tagged [conj] with the premise '(advantage keeps pace)' named and EV9 as the observation (plan §3 Tags; D2-fable §24; D2-opus §18); overhang M moved to S8 (S8.5); 'the position it stands for, keep the contest, slow it and stay safe' (Ren: answer positions, not documents); plan in roles",
+    "8.4: table gains the profile column (D1-fable) and a row for the coercive restriction of frontier inputs; paragraph states the third step and points to X8's failure-mode table as the base of tier 3 (D1-opus; Adv-O I3a); hand-off sentence names §9 and §12",
+    "X8: Fudenberg-Koh paragraph (where pacing coincides with E3, four places where it does not, and the measurements that decide); failure-mode table for every path with reversibility, measurement and evidence mark; durability table D1-D8 under one evidence standard with the EVIDENCE gap for the design's D2 (Adv-O m6); present-policies table kept with the diffusion note; equal evidence standard applied to the paper's own design",
+    "S8: failure-mode table method (D1-opus S8 spec); detect-link paragraph with JX(d), JX(e); Avenhaus-von Stengel-Zamir attribution of the inspection-game threshold (Adv-O I7); every number cited to a block or legacy script log",
+    "Symbol: S8's uniform draw renamed $\\mathsf u_t$ to avoid the coverage-U clash (D2-opus §15; D2-fable §23 proposed ξ_t, avoided because ξ_r is now the rule-support elasticity)",
+    "Part III gets a one-sentence lead naming the level of claim (D1-opus §7.5)",
+    "Test assembly in /private/tmp/claude-501/v62scratch-U08-f: no problems; all keys resolved (thresholds, detectlink, masked, scissors are declared in the scratch's merged src); no banned phrases; no doubled kinds"
+  ],
+  "moved_or_dropped": [
+    "Proposition 8.3 survassure: full statement moved from the core to S8 (now Proposition S8.1); the core's 'Horizons' paragraph in §8.1 carries its conditions and cites it",
+    "Remark 8.6 lead: declared in S8 (now Remark S8.2); core 8.3(c) carries its four points in prose and cites it",
+    "Remark 8.7 sprint: declared in S8 (now Remark S8.3); core 8.3(e) carries its content by mechanism",
+    "Remark 8.9 insure: declared in S8 (now Remark S8.4); core 8.3(f) carries its three reasons in two sentences and Ren's ruling",
+    "Proposition 8.12 overhang: moved to S8 (now Proposition S8.5); Theorem verify(3) in the core carries its condition in one clause",
+    "The '*Profile:*' lines of 8.3(a)-(g): moved into the 8.4 table's 'What it changes (profile)' column and into each paragraph's closing sentence (D1-fable §3); no content dropped: (a) 'selection only when held by correctors separated from success' kept in prose and table; (b) content-dependence kept in prose; (c) 'tempo for a time; first stage' kept; (d) 'nothing before victory; what would show it suffices' kept; (e) 'nothing during the sprint' kept; (g) 'bridge' kept",
+    "V6.1 8.3(c) 'a leader committed to slowing can lead rivals to slow where the shared hazard is significant (Bueno de Mesquita et al.)': not carried, a misreading; replaced by the correct commitment result (D4 F1)",
+    "V6.1 8.1 and S8 'a discounted criterion can favour a race ... (Jones 2024)': not carried as stated, a misreading; replaced per D4 A1/A4",
+    "V6.1 X8 Abecassis in deterrence's Best case: moved to What remains with its actual content (D4 G1)",
+    "V6.1 X8 'Its force comes from the combination of stick and carrot' and 'proposed in explicitly humanitarian and defensive terms ... a real challenge': replaced by the fidelity wording; the stick-and-carrot content survives in the description of the strategy and 'a real challenge' sentence is kept",
+    "V6.1 X8 durability table D1-D6: extended to D1-D8 with evidence marks; V6.1 rows carried",
+    "V6.1 X8 'Where the criteria disagree': kept, with the Jones correction (D4 A3)",
+    "V6.1 S8 proof of Theorem verify citing '(1)-(4)': the core statement now numbers its four clauses (D2-opus §18)",
+    "V6.1 S8 uniform draw $U_t$: renamed $\\mathsf u_t$ (symbol clash); to be listed in the symbol table's renames",
+    "V6.1 8.2 'four marks' of the generative direction: replaced by the canonical G1-G7, a superset",
+    "V6.1 8.3(b) EV2 sentence: replaced by D4 E3 wording; V6.1 X8 EV2 sentence replaced by D4 E4 wording",
+    "V6.1 8.3(f) 'coercive denial ... Section 10.5's constraints': now points to §12.1 tier 3's three conditions (plan: coercion has one home)",
+    "V6.1 8.4 'a discounted criterion prefers racing whenever ...': carried with 'with utility linear in consumption' (D4 A2)"
+  ],
+  "open_issues": [
+    "Reference lists (not my unit's files; D4's bibliography section has the entries): checked against the scratch's src/{core,supp,disc}/z9_refs.md, my text cites entries absent from the list it needs: Shavell 1986 (core §8.3(b) and X8; in no list), Cardaliaguet 1996 (core Definition 8.1; in no list), Avenhaus, von Stengel and Zamir 2002 (S8; in no list), Aghion, Harris, Howitt and Vickers 2001 (X8; in no list), Harris and Vickers 1987 and Konrad and Kovenock 2009 (core §8.3(c); only in the Discussion list, D4 F1 asks for [T]). Present: Abecassis 2025 [D], Van Evera 1999 and Dixit 1987 [S], Jones 2024 [T, S]. xref's reverse check reported only Shavell and Aghion",
+    "The scratch assembler was patched (scratch copy only) to add 'Table' to KINDS and to the doubled-kind regex; the real src/assemble_v62.py needs the same change (plan §2), since the merged 70_s7.md already declares {{!Table:thresholds}} and the unpatched assembler crashes on it",
+    "Numbers resting on legacy logs rather than checks_v62.py blocks: survassure's stag-hunt thresholds 0.16/0.42/0.11 (../v4/checks_v44.py, survival-classification block) and its horizon result (../v5/checks_v5.py SR); lead's 4.7/7.9/12.2 months (../v4/checks_v45.py LD); preventown's 0.90/0.60/0.13 vs 0.60/0.08/0.00 and 0.56 (../v5/checks_v5.py FS); assure's -3.73 (../v5 N13); the two-cruxes illustration (../v5 CMP). Plan §7 asks to port scripts; a small v6.2 block (e.g. 'PA: paths') porting SR, FS, N13, CMP, LD and the v4.4 classification would let the core cite [num: PA]",
+    "Two model-supplied paraphrases to mark D in CLAIMS until Ren confirms: 'Insurance accepts the frame of the contest; it hedges against losing instead of declining the game' (§8.3(f), S8.4) and 'It persuades by promising both security and benefits; both rest on the winner's restraint after the fact' (§8.3(d), X8)",
+    "Ren's 2026-10-03 ruling (如果胜利者的逻辑是cancer式的...) is quoted from the possibility-space README's record, which cites sources/16-claude-code-directions/2026-10-03-v4-direction-cooperation.md; the exact sentence was not found in the first 60 lines of that file and should be confirmed against the source",
+    "Crux labels C12 (verifiability), C13 (dependence on the governed) and C3a are used; §12.3 must define them (plan §4 §12.3)",
+    "The §8.3(g) sentence 'the two thresholds are numerically the same where the continuation after detection is the stage game's punishment' rests on JX(d) and on the §5 unit's detectlink statement (Remark 5.5 in the scratch); the integration editor should check the wording agrees across the two units",
+    "EVIDENCE's gap list should record 'no base rate for the survival and capture of international regulatory bodies' (the analogue class for the design's D2), which X8 now names as a gap (Adv-O m6)",
+    "Length: §8 assembles to 4,821 words (V6.1 3,122), in proportion with the merged §5-§7 (5.5-6k each); X8 doubled mainly through the two plan-mandated tables. If the integration editor wants cuts, the candidates are the kernel's openness paragraph (keep the four capacities, drop 护闭/成闭) and the S8 sprint remark's restatement of the mechanism"
+  ],
+  "word_counts": "core/80_s8.md 4,870 words (V6.1 3,118; assembled §8 4,821); supp/08_S8.md 2,807 (V6.1 1,803); disc/08_X8.md 5,423 (V6.1 2,682); total 13,100 (V6.1 7,603)"
+}

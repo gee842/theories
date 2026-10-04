@@ -1,0 +1,123 @@
+## References
+
+Marks: ‡ works whose existence and identifier were checked (on 3 or 4 October 2026; "full text", "page" or "abstract" says what was read); † works not yet independently verified ("record": the bibliographic record was retrieved; "not retrieved": from prior knowledge); unmarked works carried from the verified bibliography of v3.1. The forms are those of EVIDENCE.md, where sources of observations are listed with dates and links.
+
+- Abbott, K. W., Keohane, R. O., Moravcsik, A., Slaughter, A.-M. and Snidal, D. 2000. The concept of legalization. *International Organization* 54(3). †
+- Abreu, D. 1988. On the theory of infinitely repeated games with discounting. *Econometrica* 56(2). ‡
+- Acemoglu, D. and Robinson, J. 2008. Persistence of power, elites, and institutions. *American Economic Review* 98(1).
+- Aktipis, C. A., Boddy, A. M., Jansen, G., Hibner, U., Hochberg, M. E., Maley, C. C. and Wilkinson, G. S. 2015. Cancer across the tree of life: cooperation and cheating in multicellularity. *Philosophical Transactions of the Royal Society B* 370(1673). ‡
+- Alchian, A. 1950. Uncertainty, evolution, and economic theory. *Journal of Political Economy* 58(3).
+- Anderson, C., Hildreth, J. A. D. and Howland, L. 2015. Is the desire for status a fundamental human motive? A review of the empirical literature. *Psychological Bulletin* 141(3):574–601. ‡
+- Armstrong, S., Bostrom, N. and Shulman, C. 2016. Racing to the precipice: a model of artificial intelligence development. *AI & Society* 31(2).
+- Arrow, K. and Fisher, A. 1974. Environmental preservation, uncertainty, and irreversibility. *Quarterly Journal of Economics* 88(2). †
+- Arthur, W. B. 1989. Competing technologies, increasing returns, and lock-in by historical events. *Economic Journal* 99(394). †
+- Aubin, J.-P. 1991. *Viability Theory*.
+- Avenhaus, R., von Stengel, B. and Zamir, S. 2002. Inspection games. In Aumann, R. J. and Hart, S. (eds), *Handbook of Game Theory with Economic Applications*, vol. 3, ch. 51, 1947–1987. Elsevier. † (record)
+- Baker, B., Huizinga, J., Gao, L., Dou, Z., Guan, M. Y., Madry, A. et al. 2025. Monitoring reasoning models for misbehavior and the risks of promoting obfuscation. arXiv:2503.11926. ‡ (abstract)
+- Barnes, B. and Christiano, P. 2020. Debate update: obfuscated arguments problem. AI Alignment Forum. †
+- Barrett, S. 2003. *Environment and Statecraft: The Strategy of Environmental Treaty-Making*. Oxford University Press. ‡
+- Becker, G. 1983. A theory of competition among pressure groups for political influence. *Quarterly Journal of Economics* 98(3).
+- Brown-Cohen, J., Irving, G., Piliouras, G., Chen, L., Li, J. and Xun, Z. 2025. Avoiding obfuscation with prover-estimator debate. arXiv:2506.13609. † (record)
+- Bueno de Mesquita, E., Dziuda, W. and Polborn, M. 2026. The AGI race and existential risk. NBER Working Paper 35276. ‡ (full text)
+- Burns, C. et al. 2023. Weak-to-strong generalization: eliciting strong capabilities with weak supervision. arXiv:2312.09390. †
+- Calvano, E., Calzolari, G., Denicolò, V. and Pastorello, S. 2020. Artificial intelligence, algorithmic pricing, and collusion. *American Economic Review* 110(10):3267–3297. † (record)
+- Campbell, D. T. 1979. Assessing the impact of planned social change. *Evaluation and Program Planning* 2(1). †
+- Cardaliaguet, P. 1996. A differential game with two players and one target. *SIAM Journal on Control and Optimization* 34(4):1441–1460. † (record)
+- Cardaliaguet, P., Quincampoix, M. and Saint-Pierre, P. 1999. Set-valued numerical analysis for optimal control and differential games. In Bardi, M., Raghavan, T. E. S. and Parthasarathy, T. (eds), *Stochastic and Differential Games*, Annals of the International Society of Dynamic Games 4, 177–247. Birkhäuser. † (pages per the v6.1 evidence review)
+- Crawford, V. P. and Sobel, J. 1982. Strategic information transmission. *Econometrica* 50(6):1431–1451. † (record)
+- Critch, A. and Krueger, D. 2020. AI research considerations for human existential safety (ARCHES). arXiv:2006.04948. ‡
+- Dal Bó, E. 2006. Regulatory capture: a review. *Oxford Review of Economic Policy* 22(2). †
+- Dalrymple, D. et al. 2024. Towards guaranteed safe AI. arXiv:2405.06624. ‡
+- Davidson, T., Finnveden, L. and Hadshar, R. 2025. *AI-Enabled Coups: How a Small Group Could Use AI to Seize Power*. Forethought, April. ‡ (page)
+- Denison, C. et al. 2024. Sycophancy to subterfuge: investigating reward-tampering in large language models. arXiv:2406.10162. †
+- Engels, J., Baek, D. D., Kantamneni, S. and Tegmark, M. 2025. Scaling laws for scalable oversight. arXiv:2504.18530; NeurIPS 2025 (spotlight). ‡
+- Everitt, T., Hutter, M., Kumar, R. and Krakovna, V. 2021. Reward tampering problems and solutions in reinforcement learning: a causal influence diagram perspective. *Synthese* 198. †
+- Fearon, J. 1995. Rationalist explanations for war. *International Organization* 49(3). †
+- Fey, M. and Ramsay, K. 2007. Mutual optimism and war. *American Journal of Political Science* 51(4). †
+- Fish, S., Gonczarowski, Y. A. and Shorrer, R. I. 2024. Algorithmic collusion by large language models. arXiv:2404.00806 (EC 2026). † (record)
+- Frank, S. A. 1995. George Price's contributions to evolutionary genetics. *Journal of Theoretical Biology* 175(3). †
+- Fudenberg, D. and Koh, A. 2026. Cooperating against catastrophe. arXiv:2609.28291. ‡
+- Fudenberg, D. and Levine, D. K. 1993. Self-confirming equilibrium. *Econometrica* 61(3). ‡
+- Gabriel, I. 2020. Artificial intelligence, values, and alignment. *Minds and Machines* 30(3):411–437. † (record)
+- Gao, L., Schulman, J. and Hilton, J. 2023. Scaling laws for reward model overoptimization. *ICML 2023*. ‡
+- Gardner-Challis, N., Bostock, J., Kozhevnikov, G., Sinclaire, M., Velja, J., Abate, A. et al. 2026. When can we trust untrusted monitoring? A safety case sketch across collusion strategies. arXiv:2602.20628. † (record)
+- Goldowsky-Dill, N., Chughtai, B., Heimersheim, S. and Hobbhahn, M. 2025. Detecting strategic deception using linear probes. arXiv:2502.03407. † (record)
+- Goodhart, C. A. E. 1975. Problems of monetary management: the U.K. experience. *Papers in Monetary Economics*, Reserve Bank of Australia. †
+- Greenblatt, R., Denison, C., Wright, B., Roger, F., MacDiarmid, M., Marks, S. et al. 2024. Alignment faking in large language models. arXiv:2412.14093. ‡ (abstract)
+- Greenblatt, R., Roger, F., Krasheninnikov, D. and Krueger, D. 2024. Stress-testing capability elicitation with password-locked models. arXiv:2405.19550. ‡ (abstract record)
+- Greenblatt, R., Shlegeris, B., Sachan, K. and Roger, F. 2024. AI control: improving safety despite intentional subversion. *ICML*. ‡
+- Grieco, J. M. 1988. Anarchy and the limits of cooperation: a realist critique of the newest liberal institutionalism. *International Organization* 42(3):485–507. † (record)
+- Guan, M. Y., Wang, M., Carroll, M., Dou, Z., Wei, A. Y., Williams, M. et al. 2025. Monitoring monitorability. arXiv:2512.18311. ‡ (abstract)
+- Gunderson, L. H. and Holling, C. S. (eds) 2002. *Panarchy: Understanding Transformations in Human and Natural Systems*. Island Press. †
+- Hanahan, D. and Weinberg, R. A. 2011. Hallmarks of cancer: the next generation. *Cell* 144(5). †
+- Harris, C. and Vickers, J. 1987. Racing with uncertainty. *Review of Economic Studies* 54(1):1–21. † (record)
+- Hayes, N. 1950. Roots of the transcendental equation associated with a certain difference-differential equation. *Journal of the London Mathematical Society* 25. †
+- Heckathorn, D. 1989. Collective action and the second-order free-rider problem. *Rationality and Society* 1(1).
+- Hehenkamp, B., Leininger, W. and Possajennikov, A. 2004. Evolutionary equilibrium in Tullock contests: spite and overdissipation. *European Journal of Political Economy* 20(4):1045–1057. † (record)
+- Hendrycks, D. 2023. Natural selection favors AIs over humans. arXiv:2303.16200. †
+- Hendrycks, D., Schmidt, E. and Wang, A. 2025. Superintelligence strategy: expert version. arXiv:2503.05628. ‡ (abstract)
+- Henrich, J. and Gil-White, F. J. 2001. The evolution of prestige: freely conferred deference as a mechanism for enhancing the benefits of cultural transmission. *Evolution and Human Behavior* 22(3). ‡
+- Henrich, J., Boyd, R., Bowles, S., Camerer, C., Fehr, E., Gintis, H. and McElreath, R. 2001. In search of Homo economicus: behavioral experiments in 15 small-scale societies. *American Economic Review* 91(2). ‡
+- Hirsch, M. 1985. Systems of differential equations that are competitive or cooperative II. *SIAM Journal on Mathematical Analysis* 16(3).
+- Hoffman, D. E. 2009. *The Dead Hand: The Untold Story of the Cold War Arms Race and Its Dangerous Legacy*. Doubleday. † (record)
+- Hubinger, E., Denison, C., Mu, J., Lambert, M., Tong, M., MacDiarmid, M. et al. 2024. Sleeper agents: training deceptive LLMs that persist through safety training. arXiv:2401.05566. ‡ (abstract)
+- Ikenberry, G. J. 2001. *After Victory*. †
+- Jervis, R. 1976. *Perception and Misperception in International Politics*. †
+- Jervis, R. 1978. Cooperation under the security dilemma. *World Politics* 30(2). †
+- Jones, C. I. 2024. The AI dilemma: growth versus existential risk. *American Economic Review: Insights* 6(4):575–590. ‡ (full text)
+- Kamenica, E. and Gentzkow, M. 2011. Bayesian persuasion. *American Economic Review* 101(6). †
+- Kindleberger, C. P. 1973. *The World in Depression, 1929–1939*. University of California Press. †
+- Knight, J. C. and Leveson, N. G. 1986. An experimental evaluation of the assumption of independence in multiversion programming. *IEEE Transactions on Software Engineering* SE-12(1). †
+- Konrad, K. A. and Kovenock, D. 2009. Multi-battle contests. *Games and Economic Behavior* 66(1):256–274. † (record)
+- Korbak, T. et al. 2025. Chain of thought monitorability: a new and fragile opportunity for AI safety. arXiv:2507.11473. †
+- Kulveit, J., Douglas, R., Ammann, N., Turan, D., Krueger, D. and Duvenaud, D. 2025. Position: humanity faces existential risk from gradual disempowerment. *ICML 2025* (position paper track), PMLR 267; arXiv:2501.16946. ‡ (abstract)
+- Kuran, T. 1995. *Private Truths, Public Lies: The Social Consequences of Preference Falsification*. Harvard University Press. † (record)
+- Kydd, A. 1997. Game theory and the spiral model. *World Politics* 49(3):371–400. † (record)
+- Kydd, A. 2000. Trust, reassurance, and cooperation. *International Organization* 54(2):325–357. † (record)
+- Langosco, L., Koch, J., Sharkey, L., Pfau, J. and Krueger, D. 2022. Goal misgeneralization in deep reinforcement learning. *ICML 2022*. †
+- Liberman, V., Samuels, S. M. and Ross, L. 2004. The name of the game: predictive power of reputations versus situational labels in determining prisoner's dilemma game moves. *Personality and Social Psychology Bulletin* 30(9). ‡
+- MacDiarmid, M., Wright, B., Uesato, J., Benton, J., Kutasov, J., Price, S. et al. 2025. Natural emergent misalignment from reward hacking in production RL. arXiv:2511.18397. ‡ (abstract)
+- MacKenzie, D. 2006. *An Engine, Not a Camera: How Financial Models Shape Markets*. MIT Press. † (record)
+- Marks, S., Treutlein, J., Bricken, T., Lindsey, J., Marcus, J., Mishra-Sharma, S. et al. 2025. Auditing language models for hidden objectives. arXiv:2503.10965. ‡ (abstract)
+- Maynard Smith, J. and Szathmáry, E. 1995. *The Major Transitions in Evolution*. W. H. Freeman (first edition; Oxford University Press reprint). ‡
+- Meadows, D. 1999. *Leverage Points: Places to Intervene in a System*. The Sustainability Institute. ‡
+- Meinke, A., Schoen, B., Scheurer, J., Balesni, M., Shah, R. and Hobbhahn, M. 2024. Frontier models are capable of in-context scheming. arXiv:2412.04984. ‡ (abstract)
+- Morris, S. 2000. Contagion. *Review of Economic Studies* 67(1).
+- Oliver, P. 1980. Rewards and punishments as selective incentives for collective action. *American Journal of Sociology* 85(6).
+- Olson, M. 1993. Dictatorship, democracy, and development. *American Political Science Review* 87(3). †
+- Osgood, C. 1962. *An Alternative to War or Surrender*. †
+- Ostrom, E. 1990. *Governing the Commons*. Cambridge University Press. †
+- Panickssery, A., Bowman, S. R. and Feng, S. 2024. LLM evaluators recognize and favor their own generations. arXiv:2404.13076. † (record)
+- Podvig, P. 2002. History and the current status of the Russian early-warning system. *Science and Global Security* 10(1):21–60. † (record)
+- Powell, R. 1991. Absolute and relative gains in international relations theory. *American Political Science Review* 85(4):1303–1320. † (record)
+- Powell, R. 2006. War as a commitment problem. *International Organization* 60(1):169–203. † (record)
+- Price, G. R. 1972. Extension of covariance selection mathematics. *Annals of Human Genetics* 35(4):485–490. †
+- Qi, X. et al. 2024. Fine-tuning aligned language models compromises safety, even when users do not intend to! *ICLR 2024*. †
+- Rankin, D. J., Bargum, K. and Kokko, H. 2007. The tragedy of the commons in evolutionary biology. *Trends in Ecology and Evolution* 22(12). †
+- Richardson, L. F. 1960. *Arms and Insecurity*. Boxwood Press. ‡
+- Schaffer, M. E. 1988. Evolutionarily stable strategies for a finite population and a variable contest size. *Journal of Theoretical Biology* 132(4):469–478. † (record)
+- Schelling, T. C. 1960. *The Strategy of Conflict*. Harvard University Press. †
+- Schoen, B. et al. 2025. Stress testing deliberative alignment for anti-scheming training. arXiv:2509.15541. ‡
+- Seidman, S. 1983. Network structure and minimum degree. *Social Networks* 5(3).
+- Sharma, M., Tong, M., Korbak, T., Duvenaud, D., Askell, A., Bowman, S. R. et al. 2023. Towards understanding sycophancy in language models. arXiv:2310.13548. † (record)
+- Shavell, S. 1984. Liability for harm versus regulation of safety. *Journal of Legal Studies* 13(2). †
+- Shavell, S. 1986. The judgment proof problem. *International Review of Law and Economics* 6(1):45–58. † (record)
+- Snidal, D. 1991. Relative gains and the pattern of international cooperation. *American Political Science Review* 85(3):701–726. † (record)
+- Soares, N., Fallenstein, B., Yudkowsky, E. and Armstrong, S. 2015. Corrigibility. *AAAI-15 Workshop on AI and Ethics*. ‡ (page)
+- Soulé, C. 2003. Graphic requirements for multistationarity. *ComPlexUs* 1(3). ‡
+- Stafford, E., Trager, R. and Dafoe, A. 2022. Safety not guaranteed: international strategic dynamics of risky technology races. Working paper. ‡
+- Stern, P. C. 2011. Design principles for global commons: natural resources and emerging technologies. *International Journal of the Commons* 5(2). ‡
+- Stigler, G. J. 1971. The theory of economic regulation. *Bell Journal of Economics and Management Science* 2(1). †
+- Stix, C., Pistillo, M., Sastry, G., Hobbhahn, M., Ortega, A., Balesni, M. et al. 2025. AI behind closed doors: a primer on the governance of internal deployment. arXiv:2504.12170. ‡ (abstract)
+- Taylor, J. 2016. Quantilizers: a safer alternative to maximizers for limited optimization. *AAAI-16 Workshop on AI, Ethics, and Society*. ‡ (page)
+- Tennenholtz, M. 2004. Program equilibrium. *Games and Economic Behavior* 49(2). †
+- Tessler, M. H. et al. 2024. AI can help humans find common ground in democratic deliberation. *Science* 386(6719). †
+- Thornley, E. 2024. The shutdown problem: an AI engineering puzzle for decision theorists. *Philosophical Studies* 182(7):1653–1680 (online 2024). † (record)
+- Turner, A. M. and Tadepalli, P. 2022. Parametrically retargetable decision-makers tend to seek power. *Advances in Neural Information Processing Systems* 35:31391–31401; arXiv:2206.13477. † (record)
+- Turner, A. M., Hadfield-Menell, D. and Tadepalli, P. 2020. Conservative agency via attainable utility preservation. *Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society*, 385–391; arXiv:1902.09725. † (record)
+- Turner, A. M., Smith, L., Shah, R., Critch, A. and Tadepalli, P. 2021. Optimal policies tend to seek power. *NeurIPS 2021*; arXiv:1912.01683. ‡ (abstract)
+- van der Weij, T., Hofstätter, F., Jaffe, O., Brown, S. F. and Ward, F. R. 2024. AI sandbagging: language models can strategically underperform on evaluations. arXiv:2406.07358. ‡ (abstract)
+- Weibull, J. W. 1995. *Evolutionary Game Theory*. †
+- Weitzman, M. 1974. Prices vs. quantities. *Review of Economic Studies* 41(4). †
+- Wendt, A. 1992. Anarchy is what states make of it: the social construction of power politics. *International Organization* 46(2). †
+- Williams, M., Carroll, M., Narang, A., Weisser, C., Murphy, B. and Dragan, A. 2025. On targeted manipulation and deception when optimizing LLMs for user feedback. *ICLR 2025*; arXiv:2411.02306. † (record)

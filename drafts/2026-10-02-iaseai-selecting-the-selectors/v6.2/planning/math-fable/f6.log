@@ -1,0 +1,29 @@
+(A) per-deviation p_d (C=3, D=6, v=1, delta=.9): deviation X (g=1.0, p_d=.1), deviation Y (g=.2, p_d=.6)
+   deviation X: V_coop=30.00, V_dev=17.50 -> deterred
+   deviation Y: V_coop=30.00, V_dev=39.20 -> NOT deterred
+   -> the condition must hold for every deviation with its own p_d; the max-g deviation need not bind
+(B) 5.4(5): punishment = reversion to the race with breakouts
+   q=0.045: v exclusive 0.8950 (sim 0.8950); v independent 0.8723 (sim 0.8723)
+   q=0.1: v exclusive 1.2857 (sim 1.2857); v independent 1.2366 (sim 1.2366)
+   q=0.3: v exclusive 1.6875 (sim 1.6875); v independent 1.5816 (sim 1.5816)
+   example C=1, P=0, D=4, U=0, g=2, delta=.9, q=.045: v=0.895 < C; deviation (p_d=0) deterred at q=0: True; at q=.045: False
+   the paper's example (g=.5, q=.1): v=1.286 > C: the race-with-breakouts is preferred to cooperation itself
+   q=.6 exclusive: 1-2q=-0.2 (invalid); independent form stays valid: v=1.6241
+(C) R4 exception
+   D<C (C=1, D=.9, v=0, g=2): p_bar=0.864; at p_d=.9 restraint sustained? False -> D<C does not exempt
+   (1-delta)g=0.050 <= delta(C-D)=0.090: sustained at p_d = 0, .5, .9, 1: [True, True, True, True] -> p_bar>=1 exempts
+(D) Corollary 5.5 and the continuation premise (two actors, theta=-1, delta=.9)
+   (i) exchangeable lottery continuation: mirrored strategy gives the punished normalized relative value +0.000000 (= 0, as the corollary needs)
+   (ii) label-dependent continuation (target gets -10 w.p. .5 whatever it does): normalized value -8.1818; deviation worth 4+delta*V = -69.64 < 0 -> cooperation sustained among relative actors
+       -> the premise is exchangeability of the whole continuation (payoffs and transitions invariant under relabelling), not stage symmetry
+(E) three-player role-differentiated punishment: strictness
+   eps=+0.00 on the X prize: objectives [-0.5, -0.5, 1.0], margins over best deviation [0.0, 0.0, 0.2] -> weak NE
+   eps=+0.02 on the X prize: objectives [-0.5, -0.5, 1.0], margins over best deviation [0.01, 0.01, 0.2] -> strict NE
+   eps=-0.02 on the X prize: objectives [-0.5, -0.5, 1.0], margins over best deviation [-0.01, -0.01, 0.2] -> not an equilibrium
+(F) the scissors in reduced form (binary game n=4, b=1, c=.3, d=.2, eps=1, delta=.9), direct discounted streams
+   theta_rep(p_d) at D=C=0: p_d=0: -0.901, p_d=0.5: -0.812, p_d=0.9: -0.322, p_d=0.95: +0.005, p_d=0.99: +0.634, p_d=1.0: +0.937
+   theta_0=0 loses enforced restraint at p_d=0.9495 (the text's 'none above 0.99' should read about 0.95; for theta_0=.4: 0.9793)
+   restraint gap (share of theta~U[-1,3] above theta_rep among wide theta>1 minus among narrow theta<1):
+      D=0.0: +0.05 +0.09 +0.21 +0.34 +0.50 +0.82 +0.97  (monotone)
+      D=0.5: +0.05 +0.30 +0.92 +0.33 +0.00 +0.00 +0.00  (hump: closes as p_d -> 1, no theta <= n-1 sustains restraint)
+   D=0.5: theta_rep at p_d=.9 = +2.337; at p_d=1: inf

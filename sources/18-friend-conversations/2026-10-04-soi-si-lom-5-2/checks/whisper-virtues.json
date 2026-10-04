@@ -1,0 +1,11 @@
+{
+  "text": "There are this internal good and evil in the Western framing, and there are also the seven virtues and the saints.",
+  "logprobs": null,
+  "usage": {
+    "type": "duration",
+    "seconds": 27
+  },
+  "audio_start": 103,
+  "audio_end": 130,
+  "model": "whisper-1"
+}

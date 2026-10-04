@@ -1,0 +1,7 @@
+B = k + ab/d = 0.8
+  s=0.250  B/(4s)=0.80  monostable
+  s=0.200  B/(4s)=1.00  monostable
+  s=0.150  B/(4s)=1.33  bistable beta in [0.682, 0.718]  width=0.035
+  s=0.100  B/(4s)=2.00  bistable beta in [0.647, 0.752]  width=0.105
+  s=0.050  B/(4s)=4.00  bistable beta in [0.595, 0.805]  width=0.210
+  s=0.025  B/(4s)=8.00  bistable beta in [0.557, 0.843]  width=0.285

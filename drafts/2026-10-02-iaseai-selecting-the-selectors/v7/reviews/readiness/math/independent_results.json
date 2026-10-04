@@ -1,0 +1,48 @@
+{
+  "R1_cumulative_counterexample": {
+    "cycles": 100,
+    "time": 140.00000000000026,
+    "B_exact": 20.0,
+    "time_average_liability": 0.8571428571428572,
+    "private_advantage_nu": 1,
+    "race_share_global_max_exact": 0.0073421467117029985,
+    "race_share_final": 1.3852818090093695e-90,
+    "host_global_lower_bound_analytical": 0.9882525652612753,
+    "host_min_numerical": 0.9996745363520868,
+    "host_final": 0.9999996537272858,
+    "floor": 0.3,
+    "reach_holds": true
+  },
+  "narrowing_without_concentration": {
+    "Gamma": 0.5,
+    "Gamma_discounted": 0.32142857142857156,
+    "lambda_relative": 0.4736842105263161,
+    "lambda_common": 0,
+    "gap_factor_exact": 0.9,
+    "gap_initial": 0.20000000000000018,
+    "gap_after_100": 5.312279777847095e-06
+  },
+  "rank_one_stability": {
+    "cases": 1000,
+    "threshold_mismatches": 0
+  },
+  "enforcement_identity": {
+    "cases": 1000,
+    "maximum_absolute_error": 8.881784197001252e-16
+  },
+  "scope_at_fixed_total_share": {
+    "assumptions": "p=chi=gamma=eta=c_ev=a_ev=Bhat=1; A=0; occupied Ahat block=I_2; separate evaluation row=(1,1)",
+    "single_domain_profile": [
+      1,
+      0
+    ],
+    "two_domain_profile": [
+      0.5,
+      0.5
+    ],
+    "Yhat_single": 1,
+    "Yhat_two": 0.5,
+    "d_star_single": 1,
+    "d_star_two": 0.7071067811865476
+  }
+}

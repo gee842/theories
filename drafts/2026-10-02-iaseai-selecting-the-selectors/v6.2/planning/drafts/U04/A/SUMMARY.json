@@ -1,0 +1,52 @@
+{
+ "files_written": [
+  "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U04/A/core/40_s4.md",
+  "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U04/A/supp/04_S4.md",
+  "/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v6.2/planning/drafts/U04/A/SUMMARY.json"
+ ],
+ "items_addressed": [
+  "Plan §2 new key humancorr: Proposition 4.6 in §4.3 after corrrate; threshold +wδ_h [thm]; hysteresis 1.6–2.6× [num: QS]; proof and Sys E4a/E4b, m06(D) numerics in S4",
+  "Plan §3 costq/corrrate (D2-fable §9): f is a per-unit cost floor (not 'fixed part'); quasi-static removed from the Assumption and placed in the results that use it; Ŷ and B̂ defined; q* with the floor; (2) sufficient at any adaptation speed / necessary when capacity tracks its selected level, with R(k) delay formula, GA bound, GM tracking; (3) three cases on α_cor vs α_f plus the transient clause; lump sum only delays (exponent η/(2η+2−ξ_v−ηξ_f)); (4) kept; Scope: quasi-static failure date is a lower bound, conservative under monotone decline, optimistic after reversal and under an eroded slow variable",
+  "Plan §4 / D1-opus capture R: the two directions (accommodation; incidence moved, barriers against challengers via {{blind}}(2)); shown as one term in (10); appropriability as the mark; Test B refutation sentence aligned with TESTS",
+  "Remark alarm R (Ali I1, D4 L3): bound must come from evidence the model's behaviour does not control (Goldowsky-Dill et al. 2025; Greenblatt, Roger, Krasheninnikov and Krueger 2024); x_ev observable where models evaluate models (Ali E6) in §4.4 and S4 (5); sandbagging cites van der Weij et al. 2024 (D4 L1)",
+  "pausefield Scope (Sys I4): frozen-share formula ln(G/S(x_p))/(εd) with S defined in units of c/a; s2c numbers [num: DW]; 'ln G plus repay' left to S11/§11.4; statement says 'until rule support has settled'",
+  "slowroute (D2-fable §10, Adv-F F6, Math-F I3, Math-O minor 6): Proposition, 'Silent crossing when capture precedes evidence', premises (reach),(a),(d),(e); clock version with (b),(c),(clock) T_cap<T_A; [thm∣prem]; Scope with T_A, 12–75 periods, adjustment speed reverses the order [num: QS, SR]; pilot experiment kept",
+  "Line-363 repair (A22): generative recursion not selected among carriers ({{noinside}}); persists by coverage and formula funding through the whole (Section 10.4); attraction a conjecture [conj]",
+  "Fidelity: 'AI-assisted correction can keep pace'; 'growing understanding without executive authority may change nothing' restored in §4.3 as its one home (§12.2 to cite it)",
+  "Claim box: two lines, per-sentence tags, conditions as antecedents, 'from a certified start'; Why ends 'Delegation that erodes human capacity erodes the corrector too.'; hand-off names captured sanctioners and masked alarms for §5 and §12's trigger",
+  "§4.4 closing: pre-committed triggers rest on channels that observe actions directly (Adv-F F7, Adv-O m8)",
+  "S4 capdyn Proposition S4.2 [thm; num] (plan §2 recommended key; D2-fable §27): joint model QS/R(k)/GA(V)/GM(V); (1)(2) proved; (3) reversal +6–14% (Sys E2) and +17%/+54% (m06 E); (4) two clocks; (5) human capacity; reading sentence; corrected Study 2 signature",
+  "Every number sourced: CS (plus m4 η∈{0.5,2} and ξ grid), FF (f5 B,C; m06 A–C; Math-O s4, s7), QS (f5 A; m06 D,E; Sys s4, s5; Math-F m5), SR (f7 F; Sys s5 E3, s5b E3′), DW (plus s2c), AC, FA; blocks named with their source scripts",
+  "Codex boundary case 'falling positive f' in FF; Codex 4 / Math-O minor 2 (initial conditions; 'falls'→'rises') fixed in (3) and S4; Math-O M2/M3, Math-F I4, Sys I3 folded",
+  "D4 M8: Smith 1995 now cited at the field lemma ('cooperative in the sense of Smith (1995)')",
+  "A21 rename Cost(q;p) applied; no kind word before any {{key}}/{{>key}}; no banned phrases; roles only; test assembly clean (no problems; 102 core, 7 supplement declarations)",
+  "Keys kept: capture, costq, influence, noinside, corrrate, countervail, masking, alarm, certificate, reabsorb, pausefield, slowroute, scope, fieldlemma, field, infret, rowsum, mask; new core key humancorr; new supplement key capdyn"
+ ],
+ "moved_or_dropped": [
+  "V6.1 Assumption 4.2 last sentence (quasi-static at every date) → moved into corrrate(2)'s necessary half, humancorr and capdyn as the tracking premise (plan §3; D2-opus §9)",
+  "V6.1 corrrate(2) 'f=0 or falling' → restricted to f=0; the falling-f branch is (3)'s three cases (Codex 4)",
+  "V6.1 corrrate(3) 'required rate min{α_f, α_ctl/(1+η)}' → replaced by the three cases plus transient (false by f5(B): α_cor=0.051>α_f fails at t=38.4)",
+  "V6.1 corrrate Scope 'joint simulation not run (TESTS, Study 2)' and S4 CS last sentence → replaced by capdyn S4.2; TESTS Study 2's own wording is the register unit's",
+  "V6.1 slowroute premises (b),(c) → moved to the clock version and the Scope's mechanism sentence; the 'delayed … escapes re-absorption' tail split: 'delayed, not silenced' stays in the statement, the window/liability reading is prose after the Scope",
+  "V6.1 §4.6 'success that funds correctors it cannot control is selected in the same way' → replaced (line 363; contradicted χ=0 and noinside)",
+  "V6.1 pausefield Scope 'ln G/(εd) plus the time to repay (S11)' → that sentence belongs to S11/§11.4 (shares moving); frozen-share formula here (Sys I4)",
+  "V6.1 S4 'that level falls at α_f' → rises (Codex; Math-O; s7_Hf)",
+  "V6.1 S4 slow-route illustration with exogenous clocks (t≈37, 53, 45, 63) → replaced by f7(F) and Sys s5/s5b runs; the V6.1 numbers exist in no log; the illustration's point (capture before the harm silences, after it nearly on time) is carried by the new runs",
+  "V6.1 §4.3 'a fixed cost of control AI does not lower' → 'a per-unit cost of control that AI does not lower, or lowers more slowly than correction grows'; a lump sum excluded (Math-O M3)",
+  "V6.1 'AI-assisted correction can win this race' → 'can keep pace' (fidelity)",
+  "V6.1 Theorem 4.12 'No viable race through the host' → Proposition 'Silent crossing when capture precedes evidence'",
+  "V6.1 countervail S4 sentence 'With fixed costs, enough gain and speed can keep the certificate' → 'With a per-unit floor that AI does not lower …' (same point, corrected term)",
+  "Nothing else dropped: every V6.1 §4 paragraph and S4 section has a home in the two files"
+ ],
+ "open_issues": [
+  "Bibliography (refs unit, D4 (b) [T] additions): add Goldowsky-Dill et al. 2025, van der Weij et al. 2024 and Greenblatt, Roger, Krasheninnikov and Krueger 2024 (disambiguated from the other Greenblatt 2024 entries) to core z9_refs.md, and Goldowsky-Dill to the supplement list; xref flags these as cited-not-listed; Smith, H. 1995 is now cited at Lemma S4.3, so keep and complete that supplement entry",
+  "Check blocks QS, FF, SR to be ported into checks_v62.py from f5, m06, Sys s4/s5/s5b and f7(F); CS extended with m4's η∈{0.5,2} and ξ grid; the core's '12 to 75 periods' needs QS to carry m06(D) and '1.6 to 2.6 times' needs Sys E4b",
+  "Numbering shift: humancorr as 4.6 renumbers countervail…slowroute to 4.7–4.13; other units reference by key (none use literal 4.N), but D1-opus §6's draft trigger text says 'Remark 4.8' and should use {{alarm}}",
+  "Cross-unit dependencies: {{blind}}(2) assumes §3 states the compliance/neutrality split as part (2); {{>lockin}} assumes Lemma 6.3's key; '(reach)' and {{load}} from §3; S13 needs the row 'Human capacity and correction' and 'Capacity and the field' replaced by capdyn; TESTS Study 2's failure signature and Table 9.1 R3a ('sufficient; necessary when capacity tracks its selected level') per plan; §12.2 cites §4.3 for 'growing understanding without executive authority'",
+  "Provenance: 'growing understanding without executive authority may change nothing' is Ren's (v6.0 §4.3) with no corpus key; CLAIMS/LEDGER to record. The hysteresis numbers are one Sys simulation (E4b) with quasi-static capacity and constant γ, labelled so in S4",
+  "No unknown keys from other units were needed (twoerrors, detectlink, scissors, masked, thresholds unused); test assembly reports no problems",
+  "The claim box holds one 'can' ('can be kept by those who buy it'), as in D1-opus's draft: genuine existence, not a hedge",
+  "Length: §4 is 3,922 words (V6.1 2,711); the growth is the two new results and restored conditions; a venue cut would move corrrate(2)'s named dynamics and (3)'s cases to S4"
+ ],
+ "word_counts": "core §4: 3,922 words by the assembler (V6.1 §4: 2,711); S4: 4,315 words by wc (V6.1 S4: 1716); whole core after insertion 31,832 words"
+}

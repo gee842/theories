@@ -1,0 +1,44 @@
+{
+  "sealed_at": "2026-10-04T16:11:16.808290+00:00",
+  "kind": "prospective local input seal, not external preregistration",
+  "inputs": {
+    "benchmark.py": "62149a8ff3f413735602a7e677ba1940e8c6d55854af9ff2ca043ab5c4df7e5f",
+    "config.json": "6c96cc0a7d68292bf6c92a80727dcbbf3c3c6d7ead0fd7c094f6285d0024abfd",
+    "PROTOCOL.md": "8bd58454b7979a0d990d214ab0b84818d395f35b6efa2be3c79c7d7324de8711",
+    "test_benchmark.py": "38e42f164ba775fe01590c2daa5c378ad6741fb27d82e688666d8b4164a6dcf3"
+  },
+  "python": "3.11.2",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "config": {
+    "worlds": 128,
+    "seed_start": 41000,
+    "donor_seed_offset": 1000000,
+    "epochs": 160,
+    "rounds_per_epoch": 5,
+    "evaluation_epochs": 40,
+    "agents": 8,
+    "allocation_floor": 0.1,
+    "score_temperature": 4.0,
+    "production_temperature": 80.0,
+    "governance_temperature": 200.0,
+    "common_value_weight": 0.25,
+    "amendment_cost": 0.002,
+    "audit_cost": 0.001,
+    "authority_memory": 0.25,
+    "authority_power": 2.0,
+    "rubric_step": 0.05,
+    "initial_rubric": [
+      0.675,
+      0.225,
+      0.1
+    ],
+    "skill_jitter": 0.08,
+    "correction_every": 20,
+    "evidence_threshold": 0.002,
+    "numeric_tolerance": 1e-09,
+    "persistence_epochs": 5,
+    "bootstrap_replicates": 10000,
+    "analysis_seed": 97531
+  }
+}

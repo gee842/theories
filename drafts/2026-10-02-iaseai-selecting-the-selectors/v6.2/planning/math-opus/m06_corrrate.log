@@ -1,0 +1,66 @@
+m06  How fast independent correction must grow (Prop 4.5, key `corrrate`; Assumption 4.2 `costq`; R3a; Study 2).
+
+(A) Codex: eta=p=chiY=c_ev=a_ev B=1, A=0, gamma=e^{-.2t}, d=2e^{.05t}, f=.49e^{-.01t}
+   t=0: q*=0.01000, G=0.00500; t=0.25: q*=0.00527, G=0.00260; t=0.5: q*=0.00011, G=0.00005; t=0.51: q*=0.00000, G=0.00000; t=1: q*=0.00000, G=0.00000; t=10: q*=0.00000, G=0.00000; t=100: q*=0.00000, G=0.00000
+   cultivation stops at t = ln(.5/.49)/.04 = 0.50507; alpha_cor=.05 < alpha_ctl/(1+eta)=.1, yet the certificate never fails
+
+(B) [H_f]: d_f(t) = chiY/f(t) rises at alpha_f; eventual certificate vs the corrected rule (alpha_ctl=.2, eta=1, rate law .1)
+   d_f(0)=5.00, d_f(50)=22.41 for f0=.2, alpha_f=.03 (V6.1's S4 said this level 'falls')
+   eventual certificate predicted by [alpha_cor > alpha_f, or = with no initial cultivation, or >= alpha_ctl/(1+eta)] in 32 of 32; mismatches []
+   Opus's case alpha_cor = alpha_f = .05 with cultivation at the start (f0=.1): fails at t=15.4, held at the end: False
+   same rates with no cultivation at the start (f0=.6, d0 > d_f(0)): first failure None, held at the end: True
+
+(C) a lump-sum fixed cost F p^xi_f: size threshold exponent (numerical, by bisection on p) and the requirement d*
+   eta=1 xi_v=0 xi_f=0: threshold exponent in F 0.2500; eta/(2+2eta-xi_v-eta xi_f) = 0.2500; per-unit floor gives 1/(2-xi_f) = 0.5000
+   eta=1 xi_v=1 xi_f=0: threshold exponent in F 0.3333; eta/(2+2eta-xi_v-eta xi_f) = 0.3333; per-unit floor gives 1/(2-xi_f) = 0.5000
+   eta=2 xi_v=0 xi_f=0.5: threshold exponent in F 0.4000; eta/(2+2eta-xi_v-eta xi_f) = 0.4000; per-unit floor gives 1/(2-xi_f) = 0.6667
+   eta=0.5 xi_v=0.3 xi_f=1: threshold exponent in F 0.2273; eta/(2+2eta-xi_v-eta xi_f) = 0.2273; per-unit floor gives 1/(2-xi_f) = 1.0000
+   requirement d*(gamma) with A=0, B=1, p=1, eta=1: lump-sum F=0.3 vs per-unit floor f=0.3
+   gamma=1e-02: d* lump-sum 10.00; d* per-unit floor 3.0278 (levels off at chiY/f = 3.3333)
+   gamma=1e-04: d* lump-sum 100.00; d* per-unit floor 3.3296 (levels off at chiY/f = 3.3333)
+   gamma=1e-06: d* lump-sum 1000.00; d* per-unit floor 3.3333 (levels off at chiY/f = 3.3333)
+   gamma=1e-08: d* lump-sum 10000.00; d* per-unit floor 3.3333 (levels off at chiY/f = 3.3333)
+
+(D) capacity off its optimum, joint with the evaluation domain (alpha_ctl=.2, eta=1: rate law .1)
+   alpha_cor | dynamics           | cert. fails | captured (x>1/2) | final G
+        0.05 | quasi-static       |     13.0    |     25.4         | 5.88e+16
+        0.05 | lag kappa=.1       |     22.5    |     36.9         | 2.36e+16
+        0.05 | lag kappa=.03      |     31.3    |     47.5         | 9.82e+15
+        0.05 | additive V=1       |    never    |    never         | 3.09e-10
+        0.05 | additive V=100     |     13.3    |     26.5         | 3.09e-10
+        0.05 | multiplicative V=1 |     23.8    |     58.9         | 8.64e-08
+        0.09 | quasi-static       |     69.3    |    118.8         | 745
+        0.09 | lag kappa=.1       |    106.4    |    169.9         | 355
+        0.09 | lag kappa=.03      |    146.3    |    221.7         | 160
+        0.09 | additive V=1       |    never    |    never         | 3.48e-17
+        0.09 | additive V=100     |    never    |    never         | 3.48e-17
+        0.09 | multiplicative V=1 |    never    |    never         | 4.6e-16
+        0.10 | quasi-static       |    never    |    never         | 0.25
+        0.10 | lag kappa=.1       |    never    |    never         | 0.125
+        0.10 | lag kappa=.03      |    never    |    never         | 0.0577
+        0.10 | additive V=1       |    never    |    never         | 3.46e-17
+        0.10 | additive V=100     |    never    |    never         | 3.46e-17
+        0.10 | multiplicative V=1 |    never    |    never         | 5.98e-18
+        0.12 | quasi-static       |    never    |    never         | 2.81e-08
+        0.12 | lag kappa=.1       |    never    |    never         | 1.56e-08
+        0.12 | lag kappa=.03      |    never    |    never         | 7.68e-09
+        0.12 | additive V=1       |    never    |    never         | 1.22e-21
+        0.12 | additive V=100     |    never    |    never         | 6.59e-21
+        0.12 | multiplicative V=1 |    never    |    never         | 1.24e-21
+   lag delay vs eta ln(1+g/kappa)/(alpha_ctl-(1+eta)alpha_cor):
+      alpha_cor=0.05 kappa=0.1: simulated delay 9.42, formula 9.16 (asymptotic; exact once both fail in the exponential regime)
+      alpha_cor=0.05 kappa=0.03: simulated delay 18.23, formula 17.92 (asymptotic; exact once both fail in the exponential regime)
+      alpha_cor=0.02 kappa=0.1: simulated delay 6.33, formula 6.44 (asymptotic; exact once both fail in the exponential regime)
+   additive selection, alpha_cor=0.01 (far below .1): failure 10.629999999999818, final G 4.59e-08 (bound q <= q0 + V/(d0 alpha_cor) = 50.5)
+   additive selection, alpha_cor=0.03 (far below .1): failure 18.67000000000012, final G 4.29e-21 (bound q <= q0 + V/(d0 alpha_cor) = 17.2)
+   correction resting on human capacity eroded by delegation (w=1): quasi-static certificate eventually held?
+      delta_h=0.0: threshold predicted 0.10; 0.1:held, 0.12:held, 0.15:held, 0.2:held, 0.22:held
+      delta_h=0.05: threshold predicted 0.15; 0.1:fails, 0.12:fails, 0.15:held, 0.2:held, 0.22:held
+      delta_h=0.1: threshold predicted 0.20; 0.1:fails, 0.12:fails, 0.15:fails, 0.2:held, 0.22:held
+
+(E) reversal in a self-sustaining domain (conversion from its own share, z' = eps((A+q)x - d z): bistable when G>1).
+    From capture at d1, raise d to d2 for a hold T, then return to d1. Minimal T to undo capture (x -> 0).
+   ('QS', None): minimal hold 38.05
+   ('lag', 0.1): minimal hold 44.34  (+17% over quasi-static)
+   ('lag', 0.03): minimal hold 58.67  (+54% over quasi-static)
+   G at d1 = 1.57 (captured), at d2 = 0.64

@@ -1,0 +1,177 @@
+{
+  "payoff_monotone_counterexample": {
+    "initial_race_share": 0.1,
+    "limiting_race_share": 0.23196931668407392,
+    "raw_payoff_advantage_integral": "infinity: integral 1/(1+t) dt",
+    "actual_log_odds_increment": 1,
+    "host_floor": 0.5,
+    "rho": 1,
+    "load_coefficient": 1,
+    "reach_condition": "1 > 1*(1-.5)",
+    "limiting_host": 0.768030683315926,
+    "selection_rule": "dot p_i=p_i*gap*(pi_i-mean pi); gap=1/(1+t)>0"
+  },
+  "theta_endpoint": {
+    "n": 4,
+    "theta_held": -1,
+    "relative_gain": 0.5,
+    "common_gain": 0,
+    "theta_working": -1.0
+  },
+  "exact_fixed_conduct_lottery": {
+    "n": 2,
+    "prize": 1,
+    "conversion": 1,
+    "provision": 0.5,
+    "depreciation": 1,
+    "decisiveness": 2,
+    "discount": 0.5,
+    "symmetric_stock": 1,
+    "winner_next_stock": 1.5,
+    "loser_next_stock": 0.5,
+    "leader_win_probability": 0.9,
+    "retention_eigenvalue": 0.8,
+    "discounted_gain": 0.5,
+    "deterministic_local_price": 1,
+    "actual_lottery_marginal_price": 0.8333333333333334
+  },
+  "slow_breakout_timing": {
+    "discount": 0.9,
+    "cooperation": 1,
+    "immediate_gain": 0.3,
+    "decisive_flow": 1.5,
+    "punishment_flow": 0,
+    "breakout_time": 8,
+    "escape_probability": 0.7,
+    "detection_time_if_detected": 1,
+    "compressed_normalized_deviation_value": 1.0750000000000002,
+    "actual_normalized_deviation_value": 0.9106635235
+  },
+  "trait_background_scope": {
+    "traits": [
+      0,
+      1
+    ],
+    "background_payoffs": [
+      0,
+      2
+    ],
+    "cost_per_trait": 1,
+    "shared_benefit": 0.5,
+    "material_payoffs": [
+      0.5,
+      1.5
+    ],
+    "covariance_trait_payoff": 0.25
+  },
+  "frontier_rest_counterexample": {
+    "n": 4,
+    "theta": -1,
+    "private_destruction_cost": 1,
+    "rival_loss": 1,
+    "frontier_marginal_net": -1,
+    "destruction_value": -0.6666666666666667,
+    "rest_value": 0,
+    "claimed_switch_inequality": true,
+    "actual_choice": "rest"
+  },
+  "multi_channel_pivot_scope": [
+    {
+      "prize": 0.2,
+      "provision": 0.1,
+      "omega": 0.5,
+      "stock": 1.0,
+      "gamma": 0.5
+    },
+    {
+      "prize": 0.4,
+      "provision": 0.2,
+      "omega": 0.5,
+      "stock": 2.0,
+      "gamma": 1.0
+    },
+    {
+      "prize": 0.8,
+      "provision": 0.4,
+      "omega": 0.5,
+      "stock": 4.0,
+      "gamma": 2.0
+    }
+  ],
+  "lottery": [
+    {
+      "cells": 800,
+      "iterations": 2002,
+      "residual": 9.938716516444401e-13,
+      "structural_gamma": 0.45,
+      "equilibrium_gamma": 1.0899087331308044,
+      "partial_discounted_gain": 0.384993020466483,
+      "local_formula": 0.625997806981801,
+      "lottery_prize_premium": 0.5032153404212787,
+      "marginal_stock_injection": 0.5083601791158341,
+      "formula_relative_error": 0.24399587353146268
+    },
+    {
+      "cells": 1600,
+      "iterations": 2016,
+      "residual": 9.898748487557896e-13,
+      "structural_gamma": 0.45,
+      "equilibrium_gamma": 1.1287411898647244,
+      "partial_discounted_gain": 0.39469002186003344,
+      "local_formula": 0.6520461187057597,
+      "lottery_prize_premium": 0.5137435167581924,
+      "marginal_stock_injection": 0.5196800288351746,
+      "formula_relative_error": 0.2692055421356552
+    },
+    {
+      "cells": 3200,
+      "iterations": 2015,
+      "residual": 9.912071163853398e-13,
+      "structural_gamma": 0.45,
+      "equilibrium_gamma": 1.1414334578760832,
+      "partial_discounted_gain": 0.397859611820358,
+      "local_formula": 0.6607422780975472,
+      "lottery_prize_premium": 0.516436363639157,
+      "marginal_stock_injection": 0.5225426331022816,
+      "formula_relative_error": 0.27942632358711905
+    }
+  ],
+  "lottery_stable_case": [
+    {
+      "cells": 800,
+      "iterations": 268,
+      "residual": 9.14823772291129e-13,
+      "structural_gamma": 0.3,
+      "equilibrium_gamma": 0.35315675784021283,
+      "partial_discounted_gain": 0.16328697299459538,
+      "local_formula": 0.19515289917141526,
+      "lottery_prize_premium": 0.19407387897377462,
+      "marginal_stock_injection": 0.19412665352762123,
+      "formula_relative_error": 0.005559842485481692
+    },
+    {
+      "cells": 1600,
+      "iterations": 268,
+      "residual": 9.112710586123285e-13,
+      "structural_gamma": 0.3,
+      "equilibrium_gamma": 0.3529597188822764,
+      "partial_discounted_gain": 0.16323937552535356,
+      "local_formula": 0.1950849152681415,
+      "lottery_prize_premium": 0.19408728421564309,
+      "marginal_stock_injection": 0.19415381538663046,
+      "formula_relative_error": 0.005140115471913065
+    },
+    {
+      "cells": 3200,
+      "iterations": 268,
+      "residual": 9.112710586123285e-13,
+      "structural_gamma": 0.3,
+      "equilibrium_gamma": 0.3531255837322944,
+      "partial_discounted_gain": 0.1632812574460784,
+      "local_formula": 0.19514473519225117,
+      "lottery_prize_premium": 0.19409290156115588,
+      "marginal_stock_injection": 0.19416722702424427,
+      "formula_relative_error": 0.005419227713301389
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+alpha_ctl=0.2, eta=1 (alpha_ctl/(1+eta)=0.1), alpha_f=0.05; f0 chosen so cultivation is positive at t=0 (p^2/d0=0.18>f0)
+  f0=0.1, alpha_cor=0.05: certificate first fails at 37.10000000000003, last failure 599.9500000000021, max s_E 2.73e+24
+  f0=0.1, alpha_cor=0.06: certificate first fails at None, last failure None, max s_E 0.267
+  f0=0.1, alpha_cor=0.08: certificate first fails at None, last failure None, max s_E 0.174
+  f0=0.17, alpha_cor=0.05: certificate first fails at 58.04999999999884, last failure 599.9500000000021, max s_E 3.41e+23
+  f0=0.17, alpha_cor=0.06: certificate first fails at None, last failure None, max s_E 0.153
+  f0=0.17, alpha_cor=0.08: certificate first fails at None, last failure None, max s_E 0.153
+  f0=0.3, alpha_cor=0.05: certificate first fails at None, last failure None, max s_E 0.15
+  f0=0.3, alpha_cor=0.06: certificate first fails at None, last failure None, max s_E 0.15
+  f0=0.3, alpha_cor=0.08: certificate first fails at None, last failure None, max s_E 0.15
+Supplement S4 says the level chi*Y/(f p^xf) 'falls at alpha_f' under [H_f]; with f=f0 e^{-alpha_f t} it rises:
+  t=0: level ~ 1/f = 3.333
+  t=10: level ~ 1/f = 5.496
+  t=20: level ~ 1/f = 9.061

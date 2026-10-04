@@ -1,0 +1,16 @@
+{
+  "text": "你也要看到OK，就是你现在在这个世界中你是处在一个什么位置上，对吧，你的reference frame。然后你也知道你的psychology是这个和别人是很相似的，所以说己所不欲勿施于人。然后你也可以想象一个幸福的世界中的这种社会关系富足是什么样的，而大同就是一个这样的方向。而在这个整体的思想的脉络中，我们就一直说OK，我们要朝那个方向走。不管是从古代到近代康有为、孙中山、毛泽东到习近平的。",
+  "logprobs": null,
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 721,
+    "input_tokens": 593,
+    "input_token_details": {
+      "text_tokens": 43,
+      "audio_tokens": 550
+    },
+    "output_tokens": 128
+  },
+  "audio_start": 1010,
+  "audio_end": 1065
+}

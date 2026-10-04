@@ -1,0 +1,21 @@
+Lemma 3.10: two groups, global benefit, fitness w = phi(pi), pi = b*zbar - c*z_j, phi increasing concave
+   linear: between-group Cov(w_g,z_g) = -0.0025; total Cov(w,z) = -0.1275
+   concave 1-exp(-8(x+1)): between-group Cov(w_g,z_g) = +0.0001; total Cov(w,z) = -0.0014
+   concave log(1.05+x): between-group Cov(w_g,z_g) = +0.0005; total Cov(w,z) = -0.1221
+Theorem 10.5(1): minimal liability margin on the pointwise-harsher Allee host (independent integration)
+   A=0.05: Delta_min=0.260, V_u(e_min)=0.254; transient minimum at Delta_min+0.01: 0.270
+   A=0.10: Delta_min=0.306, V_u(e_min)=0.308; transient minimum at Delta_min+0.01: 0.322
+   A=0.15: Delta_min=0.359, V_u(e_min)=0.364; transient minimum at Delta_min+0.01: 0.376
+   A=0.20: Delta_min=0.423, V_u(e_min)=0.421; transient minimum at Delta_min+0.01: 0.431
+   A=0.25: Delta_min=0.505, V_u(e_min)=0.481; transient minimum at Delta_min+0.01: 0.489
+Lemma 8.2: two-state Markov world; dissolution more likely in the bad state
+   H=10: S^A=0.8840 >= S^C=0.8126: True
+   H=30: S^A=0.5507 >= S^C=0.4610: True
+   H=100: S^A=0.0770 >= S^C=0.0615: True
+Prop 5.15(2): ideal points with third-party payoff -k y^2 (nonlinear) instead of linear
+   n=3, u=0.0: ideal-point gap in y 0.2140; in state units gap*(1-k) = 0.1498 (b0 n/(n-2) = 0.1500)
+   n=3, u=0.5: ideal-point gap in y 0.2140; in state units gap*(1-k) = 0.1498 (b0 n/(n-2) = 0.1500)
+   n=3, u=1.0: ideal-point gap in y 0.2140; in state units gap*(1-k) = 0.1498 (b0 n/(n-2) = 0.1500)
+   n=4, u=0.0: ideal-point gap in y 0.1430; in state units gap*(1-k) = 0.1001 (b0 n/(n-2) = 0.1000)
+   n=4, u=0.5: ideal-point gap in y 0.1420; in state units gap*(1-k) = 0.0994 (b0 n/(n-2) = 0.1000)
+   n=4, u=1.0: ideal-point gap in y 0.1430; in state units gap*(1-k) = 0.1001 (b0 n/(n-2) = 0.1000)

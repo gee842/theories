@@ -1,0 +1,16 @@
+{
+  "text": "自己的小把认知和所在的整体环境的dynamic，它就是这样的一个dynamic。而你说OK，我一定会去创造出什么东西的特别不一样，我们自己都没有办法去产生alignment，都不知道alignment，我们还可以去alignment这些东西。但如果它们是你的完美的align的一种结果的完全遵循意志，那在当下的大家的这种思维和这种斗争式的这种西方当下的这种状态之中，它能好吗？它太不make sense了。这个世界",
+  "logprobs": null,
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 674,
+    "input_tokens": 563,
+    "input_token_details": {
+      "text_tokens": 43,
+      "audio_tokens": 520
+    },
+    "output_tokens": 111
+  },
+  "audio_start": 2688,
+  "audio_end": 2740
+}

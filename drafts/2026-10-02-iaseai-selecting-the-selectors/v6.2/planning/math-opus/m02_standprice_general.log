@@ -1,0 +1,48 @@
+m02  Compounding prices standing: the general form (Prop 3.9, key `standprice`; Prop 2.2(3), key `loopgain`).
+
+(A) prices of a relative and a common unit, nonlinear simulation vs closed forms (others' conduct fixed)
+   n=2 r=1.5 kap=0.5 d=0.2 df=0.0 k0=0.1 beta=0.0 Om=(1.0+0.0S) delta=0.9: Grel_d=0.6888 Gcom_d=0.0000 | relative: sim 2.213115 formula 2.213115 | common: sim 0.000000 formula 0.000000
+   n=2 r=1.5 kap=0.5 d=0.2 df=0.0 k0=0.1 beta=0.0 Om=(1.0+0.2S) delta=0.9: Grel_d=0.8265 Gcom_d=0.3214 | relative: sim 4.764587 formula 4.764706 | common: sim 0.473684 formula 0.473684
+   n=3 r=1.2 kap=0.4 d=0.15 df=0.05 k0=0.05 beta=0.2 Om=(2.0+0.15S) delta=0.95: Grel_d=0.5160 Gcom_d=0.2961 | relative: sim 1.066116 formula 1.066116 | common: sim 0.420664 formula 0.420664
+   n=4 r=0.8 kap=0.6 d=0.1 df=0.02 k0=0.0 beta=0.1 Om=(1.0+0.1S) delta=0.9: Grel_d=0.3115 Gcom_d=0.2842 | relative: sim 0.452514 formula 0.452514 | common: sim 0.397059 formula 0.397059
+   n=5 r=2.0 kap=0.3 d=0.25 df=0.1 k0=0.2 beta=0.0 Om=(3.0+0.5S) delta=0.85: Grel_d=0.7498 Gcom_d=0.3517 | relative: sim 2.996475 formula 2.996475 | common: sim 0.542553 formula 0.542553
+   OUTSIDE THE DOMAIN (Grel_d>=1; the relative formula does not apply, see D): balanced growth n=2 r=1.5 df=0.0 beta=0.0 Om=0.3S (growth 1.050/period): Grel_d=1.0658 Gcom_d=0.7105 | relative: sim 226.004541 formula -16.200000 | common: sim 2.454545 formula 2.454545
+   balanced growth n=3 r=0.8 df=0.0 beta=0.0 Om=0.3S (growth 1.050/period): Grel_d=0.5684 Gcom_d=0.7105 | relative: sim 1.317073 formula 1.317073 | common: sim 2.454545 formula 2.454545
+   balanced growth n=3 r=1.3 df=0.05 beta=0.1 Om=0.3S (growth 1.050/period): Grel_d=0.6129 Gcom_d=0.6346 | relative: sim 1.583026 formula 1.583026 | common: sim 1.736842 formula 1.736842
+   largest relative error inside the domain 2.5e-05
+
+(B) two-period contest, net payoffs convert to capacity, period-2 prize Om20 + g*sum(K): direct symmetric equilibrium e*
+    vs e(theta) with the general form, and vs e(theta) of the fixed-prize formula (9)
+   {'g': 0.0}: e*=0.1388352 e(theta_general)=0.1388352 [theta=+0.4005; lam_rel=0.1421 lam_com=0.0000] e(theta_fixedprize)=0.1388352 [theta=+0.4005] | narrows: True
+   {'g': 0.3}: e*=0.1376206 e(theta_general)=0.1376206 [theta=+0.4117; lam_rel=0.2770 lam_com=0.1350] e(theta_fixedprize)=0.1479530 [theta=+0.3175] | narrows: True
+   {'g': 0.6, 'Om20': 0.0}: e*=0.1282051 e(theta_general)=0.1282051 [theta=+0.5000; lam_rel=0.2700 lam_com=0.2700] e(theta_fixedprize)=0.1475029 [theta=+0.3216] | narrows: False
+   {'g': 0.6, 'Om20': 0.0, 'r': 0.7}: e*=0.1230467 e(theta_general)=0.1230467 [theta=+0.5494; lam_rel=0.1890 lam_com=0.2700] e(theta_fixedprize)=0.1421059 [theta=+0.3705] | narrows: False
+   {'g': 0.6, 'Om20': 0.0, 'r': 1.4}: e*=0.1347019 e(theta_general)=0.1347019 [theta=+0.4388; lam_rel=0.3780 lam_com=0.2700] e(theta_fixedprize)=0.1542422 [theta=+0.2616] | narrows: True
+   {'g': 0.3, 'th0': 1.0, 'n': 4}: e*=0.0945766 e(theta_general)=0.0945766 [theta=+0.9090; lam_rel=0.2432 lam_com=0.1350] e(theta_fixedprize)=0.1021286 [theta=+0.7832] | narrows: True
+
+(C) prize proportional to capacity: narrowing (Grel_d>Gcom_d) vs instability of equal shares (simulated)
+   no diffusion: narrowing and instability coincide in 24 of 24 cases; (1-beta)r>1 decides both
+   cases where they part (only with diffusion expected): [('with diffusion', 1.17, 0.0, 'narrows', 'stable')]
+   stationary total, fixed prize (n=3, r=1.5, k0=0.1): Gamma=0.938 (<1, equal standing stable) while Gcom_d=0 < Grel_d: the objective narrows
+
+(D) beyond the domain: Codex case n=2, kap*Om=1, d=0.2, r=2, no provision/diffusion, delta=0.9 (Gamma=2, Gd=9/7)
+   m_rel = 1.200, delta*m_rel = 1.080; predicted exponent ln(1/delta)/ln(m_rel) = 0.5779
+   eps 1e-02: PV 5.369759e-01, PV/eps 5.370e+01; fitted exponent to next: 0.5628
+   eps 1e-04: PV 4.020710e-02, PV/eps 4.021e+02; fitted exponent to next: 0.5758
+   eps 1e-06: PV 2.835841e-03, PV/eps 2.836e+03; fitted exponent to next: 0.5776
+   eps 1e-08: PV 1.983838e-04, PV/eps 1.984e+04; fitted exponent to next: 0.5778
+   printed multiplier Gd/(1-Gd) = -4.5 (negative, meaningless); the true marginal value diverges as eps->0
+   inside the domain but above Gamma=1 (delta=0.8, Gd=0.8889, m_rel=1.2, delta*m_rel=0.96): formula Gd/(1-Gd)/kap = 8.000000; PV/eps:
+      eps 1e-4: 7.163001  (gap to formula 8.37e-01; predicted to shrink like eps^0.224)
+      eps 1e-6: 7.701515  (gap to formula 2.98e-01; predicted to shrink like eps^0.224)
+      eps 1e-8: 7.893556  (gap to formula 1.06e-01; predicted to shrink like eps^0.224)
+      eps 1e-10: 7.962018  (gap to formula 3.80e-02; predicted to shrink like eps^0.224)
+      eps 1e-12: 7.986944  (gap to formula 1.31e-02; predicted to shrink like eps^0.224)
+   at the boundary delta*m_rel = 1: eps 1e-3: PV/eps 14.53; eps 1e-5: PV/eps 22.95; eps 1e-7: PV/eps 31.37; eps 1e-9: PV/eps 39.79  (grows by a constant per decade: logarithmic)
+
+(E) Test Gamma's observable: (de/d ell)/(de/dc) from numerical equilibria vs 1+theta
+   n=2 theta=-0.5: ratio 0.50004, 1+theta 0.50000
+   n=3 theta=0.0: ratio 0.99996, 1+theta 1.00000
+   n=4 theta=-0.43: ratio 0.56997, 1+theta 0.57000
+   n=4 theta=1.0: ratio 1.99960, 1+theta 2.00000
+   so the registered observable is 1+theta, which RISES with provision (provision lowers Grel_d) - the sign Test Gamma must use

@@ -1,0 +1,297 @@
+{
+  "text": "um we have the nature of other animal like dogs and uh in Chinese we call this shou xin and um we also have uh the part that we call human being.\nlike the noble values are in the Chinese construct, ren yi li zhi. So when we are regulating the animal nature, the\nconstruct that the genetics brings. We becomes following those mechanisms' feelings. But at the same time we also have a\nthe other side of nature. In Chinese, we call this Li, another part is Xin. They two are not at right angles. They are not even at right angles with each other. They form a dynamic system, a psychology, um\nThere are this internal like good and evil in the Western framing and there are also like the same with virtues and the sins.\nBut regardless.\n心理是 一个动态的过程 它是一种 dynamics 没有其中之一导致 一刀为男子 有的时候既 使心所向往如此 我们依然要通过 理性去 regulate 我们不能产生\npositive feedback loop that runs away.\nSo it is not about going into the extremes. It is about holding the balance. Yin yang. Tā shì yī zhǒng dòngtài de pínghéng. Tā shì yī zhǒng zài fēi cháng duō de guān xi zhī zhōng zài yī gè\n很高维 的认 知空间中处于 在理 性的引 导下和 对于感性的塑 造下去 成为 一个在 当时 的\n环境 中可以 创造 一种和 谐一种流 一种我的心 和 我的理",
+  "logprobs": null,
+  "task": "transcribe",
+  "duration": 306.0,
+  "segments": [
+    {
+      "type": "transcript.text.segment",
+      "text": " um we have the nature of other animal like dogs and uh in Chinese we call this shou xin and um we also have uh the part that we call human being.",
+      "speaker": "A",
+      "start": 2.46,
+      "end": 26.060000000000002,
+      "id": "seg_0"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " like the noble values are in the Chinese construct,",
+      "speaker": "A",
+      "start": 26.996,
+      "end": 34.496,
+      "id": "seg_1"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " ren yi li zhi.",
+      "speaker": "A",
+      "start": 34.896,
+      "end": 38.496,
+      "id": "seg_2"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " So when we are regulating the animal nature,",
+      "speaker": "A",
+      "start": 38.946,
+      "end": 49.396,
+      "id": "seg_3"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " the",
+      "speaker": "A",
+      "start": 49.54599999999999,
+      "end": 50.096,
+      "id": "seg_4"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " construct that the genetics brings.",
+      "speaker": "A",
+      "start": 51.284,
+      "end": 57.034,
+      "id": "seg_5"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " We",
+      "speaker": "A",
+      "start": 58.634,
+      "end": 59.083999999999996,
+      "id": "seg_6"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " becomes",
+      "speaker": "A",
+      "start": 59.584,
+      "end": 63.384,
+      "id": "seg_7"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " following those",
+      "speaker": "A",
+      "start": 63.984,
+      "end": 65.484,
+      "id": "seg_8"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " mechanisms' feelings.",
+      "speaker": "A",
+      "start": 67.484,
+      "end": 68.78399999999999,
+      "id": "seg_9"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " But at the same time we also have a",
+      "speaker": "A",
+      "start": 72.384,
+      "end": 75.78399999999999,
+      "id": "seg_10"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " the other side of nature.",
+      "speaker": "A",
+      "start": 76.564,
+      "end": 78.064,
+      "id": "seg_11"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " In Chinese,",
+      "speaker": "A",
+      "start": 79.564,
+      "end": 80.564,
+      "id": "seg_12"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " we call this Li,",
+      "speaker": "A",
+      "start": 80.61399999999999,
+      "end": 83.214,
+      "id": "seg_13"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " another part is Xin. They two are not at right angles.",
+      "speaker": "A",
+      "start": 83.764,
+      "end": 89.86399999999999,
+      "id": "seg_14"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " They are not even at right angles with each other. They form a dynamic system,",
+      "speaker": "A",
+      "start": 90.564,
+      "end": 97.264,
+      "id": "seg_15"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " a psychology,",
+      "speaker": "A",
+      "start": 97.714,
+      "end": 99.714,
+      "id": "seg_16"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " um",
+      "speaker": "A",
+      "start": 101.564,
+      "end": 102.064,
+      "id": "seg_17"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " There are this internal like good and evil in the Western framing and there are also like the same with virtues and the sins.",
+      "speaker": "A",
+      "start": 104.468,
+      "end": 126.468,
+      "id": "seg_18"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " But regardless.",
+      "speaker": "A",
+      "start": 137.108,
+      "end": 138.808,
+      "id": "seg_19"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 心理是一个动态的过程 它是一种 dynamics 没有其中之一导致一刀为男子",
+      "speaker": "A",
+      "start": 177.396,
+      "end": 185.546,
+      "id": "seg_20"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 有的时候既使心所向往如此",
+      "speaker": "A",
+      "start": 187.696,
+      "end": 192.296,
+      "id": "seg_21"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 我们依然要通过理性去 regulate",
+      "speaker": "A",
+      "start": 194.096,
+      "end": 198.696,
+      "id": "seg_22"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " 我们不能产生",
+      "speaker": "A",
+      "start": 200.396,
+      "end": 202.49599999999998,
+      "id": "seg_23"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " positive feedback loop that runs away.",
+      "speaker": "A",
+      "start": 204.244,
+      "end": 208.344,
+      "id": "seg_24"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " So it is not about going into the extremes.",
+      "speaker": "A",
+      "start": 234.004,
+      "end": 237.904,
+      "id": "seg_25"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " It is about holding the balance.",
+      "speaker": "A",
+      "start": 238.754,
+      "end": 243.054,
+      "id": "seg_26"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " Yin yang.",
+      "speaker": "A",
+      "start": 246.654,
+      "end": 247.304,
+      "id": "seg_27"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " Tā shì yī zhǒng dòngtài de pínghéng.",
+      "speaker": "A",
+      "start": 249.404,
+      "end": 253.454,
+      "id": "seg_28"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": " Tā shì yī zhǒng zài fēi cháng duō de guān xi zhī zhōng zài yī gè",
+      "speaker": "A",
+      "start": 254.154,
+      "end": 258.204,
+      "id": "seg_29"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "很高维的认知空间中处于在理性的引导下和对于感性的塑造下去成为一个在当时的",
+      "speaker": "A",
+      "start": 258.804,
+      "end": 282.554,
+      "id": "seg_30"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "环境中可以创造",
+      "speaker": "A",
+      "start": 283.828,
+      "end": 288.27799999999996,
+      "id": "seg_31"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "一种和",
+      "speaker": "A",
+      "start": 290.928,
+      "end": 292.628,
+      "id": "seg_32"
+    },
+    {
+      "type": "transcript.text.segment",
+      "text": "谐一种流一种我的心和我的理",
+      "speaker": "A",
+      "start": 295.328,
+      "end": 303.97799999999995,
+      "id": "seg_33"
+    }
+  ],
+  "usage": {
+    "type": "tokens",
+    "total_tokens": 9459,
+    "input_tokens": 3328,
+    "input_token_details": {
+      "text_tokens": 100,
+      "audio_tokens": 3228
+    },
+    "output_tokens": 6131
+  },
+  "chunk_metadata": {
+    "index": 0,
+    "core_start": 0,
+    "core_end": 300,
+    "audio_start": 0,
+    "audio_end": 306
+  }
+}

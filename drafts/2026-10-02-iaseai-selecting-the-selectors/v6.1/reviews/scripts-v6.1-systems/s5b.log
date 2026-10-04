@@ -1,0 +1,7 @@
+E3'. alpha_cor=0 (QS capture ~23.5); host: rho=0.05, h_V=0.08, race share from 0.05 at rate 0.12
+   independent: alarm at t=32.1 with V=0.579 (before the floor); x_ev=1.00
+   QS: alarm at t=58.8 with V=0.200 (AFTER the floor); x_ev=1.00
+   R(1.0): alarm at t=58.8 with V=0.200 (AFTER the floor); x_ev=1.00
+   R(0.1): alarm at t=58.8 with V=0.200 (AFTER the floor); x_ev=1.00
+   R(0.03): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.00
+   GA(1.0): alarm at t=32.1 with V=0.579 (before the floor); x_ev=0.00

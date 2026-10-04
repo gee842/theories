@@ -1,0 +1,136 @@
+##### r1_props12_13.py
+Prop1.2 (1)(2) exact failures: 0
+theta*(eps=1) = 15/16 = 0.93750
+theta*(eps=10) = 231/160 = 1.44375
+limit 1.5
+  eps=1, theta=0.9365: gain of racing constant across others' profiles: True, value +0.00053
+  eps=1, theta=0.9385: gain of racing constant across others' profiles: True, value -0.00053
+  eps=10, theta=1.4427: gain of racing constant across others' profiles: True, value +0.00533
+  eps=10, theta=1.4447: gain of racing constant across others' profiles: True, value -0.00533
+theta=-1.00: share at s=1,10,100,1e6 = [2.2, 13.0, 121.0, 1200001.0]; ceiling None
+theta=+0.00: share at s=1,10,100,1e6 = [1.2692, 2.4375, 2.9274, 3.0]; ceiling 3.0
+theta=+0.40: share at s=1,10,100,1e6 = [1.007, 1.625, 1.8291, 1.8571]; ceiling 1.8571
+theta=+1.00: share at s=1,10,100,1e6 = [0.6875, 0.9286, 0.9918, 1.0]; ceiling 1.0
+theta=+2.00: share at s=1,10,100,1e6 = [0.2895, 0.325, 0.3324, 0.3333]; ceiling 0.3333
+derivative-sign identity verified on 1000 exact random cases
+theta_g(n=4,r=1) = 1 ; theta_g(n=4,r=1/2) = 1/3
+theta_g iff, scan up to s=1e8 (disagreements arise only very near threshold): 0
+  n=2: theta_g at r=n/(n-1): 0.3333 = (n-1)^2/(2n-1) = 0.3333; inclusive n-1 = 1
+  n=3: theta_g at r=n/(n-1): 0.8000 = (n-1)^2/(2n-1) = 0.8000; inclusive n-1 = 2
+  n=4: theta_g at r=n/(n-1): 1.2857 = (n-1)^2/(2n-1) = 1.2857; inclusive n-1 = 3
+  n=6: theta_g at r=n/(n-1): 2.2727 = (n-1)^2/(2n-1) = 2.2727; inclusive n-1 = 5
+  n=10: theta_g at r=n/(n-1): 4.2632 = (n-1)^2/(2n-1) = 4.2632; inclusive n-1 = 9
+  n=100: theta_g at r=n/(n-1): 49.2513 = (n-1)^2/(2n-1) = 49.2513; inclusive n-1 = 99
+share at theta=0.4 if l fixed: 1.0070422535211268
+##### r2_equilibrium.py
+symmetric FOC point checked as global best response in 420 cases; failures: 0; worst gain from deviating 4.44e-16
+  n=2: SOC coefficient (r-1)n-2r at r=n/(n-1): -2.0000 (negative => strict local max)
+  n=3: SOC coefficient (r-1)n-2r at r=n/(n-1): -1.5000 (negative => strict local max)
+  n=4: SOC coefficient (r-1)n-2r at r=n/(n-1): -1.3333 (negative => strict local max)
+  n=6: SOC coefficient (r-1)n-2r at r=n/(n-1): -1.2000 (negative => strict local max)
+  n=10: SOC coefficient (r-1)n-2r at r=n/(n-1): -1.1111 (negative => strict local max)
+  n=2, r=n/(n-1): effective payoff at equilibrium V/n - kx = +0.00e+00 (= payoff of e=0): weak equilibrium
+  n=3, r=n/(n-1): effective payoff at equilibrium V/n - kx = +0.00e+00 (= payoff of e=0): weak equilibrium
+  n=4, r=n/(n-1): effective payoff at equilibrium V/n - kx = +0.00e+00 (= payoff of e=0): weak equilibrium
+
+asymmetric pure equilibria with m < n active (prize V=1, cost k=1 in the effective game):
+  n=3: 2 active at x=0.3750 and one inactive is a pure equilibrium for r in [1.3505, 1.5000] (at r=n/(n-1) the entrant's best payoff is -0.0001); total intensity there 0.7500 vs symmetric 1.0000
+  n=4: 3 active at x=0.2963 and one inactive is a pure equilibrium for r in [1.1653, 1.3333] (at r=n/(n-1) the entrant's best payoff is -0.0001); total intensity there 0.8889 vs symmetric 1.0000
+  n=6: 5 active at x=0.1920 and one inactive is a pure equilibrium for r in [1.0808, 1.2000] (at r=n/(n-1) the entrant's best payoff is -0.0001); total intensity there 0.9600 vs symmetric 1.0000
+  n=2: total intensity at r=n/(n-1): n*e = 1.0000 * V/k  (upper bound V/k for every r)
+  n=4: total intensity at r=n/(n-1): n*e = 1.0000 * V/k  (upper bound V/k for every r)
+##### r3_prop14.py
+theta=0.4 fixed, L=0.3: H=100: 0.421; H=200: 1.46e-09; H=1000: 0 (q>=1 first at t=223); H=10000: 0 (q>=1 first at t=223)
+gap 2.6 g^-t t^-1.5: H=100: 0.997; H=200: 0.997; H=1000: 0.997; H=10000: 0.997
+gap 2.6/t: H=100: 0.988; H=200: 0.927; H=1000: 0 (q>=1 first at t=444); H=10000: 0 (q>=1 first at t=444)
+theta=-1, L=0.3: H=100: 0.149; H=200: 0 (q>=1 first at t=197); H=1000: 0 (q>=1 first at t=197); H=10000: 0 (q>=1 first at t=197)
+theta=-1, L=0.3 g^-t t^-1.5: H=100: 0.993; H=200: 0.993; H=1000: 0.992; H=10000: 0.992
+constant stakes, theta=0.4, L=0.3: H=100: 0.872; H=200: 0.76; H=1000: 0.253; H=10000: 1.08e-06
+linear link: theta=0.4, q_t = 0.001373 * 1.03^t reaches 1 at t = 223.0
+linear link: theta=-1, q_t = 0.003000 * 1.03^t reaches 1 at t = 196.5
+linear link: theta=0, q_t = 0.001731 * 1.03^t reaches 1 at t = 215.1
+Poisson link, theta=0.4 fixed, L=0.3: survival at H=200 = 2.87e-08
+Poisson link, gap 2.6 g^-t t^-1.5: survival at H=200 = 0.997
+Poisson link, gap 2.6/t: survival at H=200 = 0.927
+Poisson link, theta=-1, L=0.3: survival at H=200 = 3.33e-17
+theta=-1, L=0.3, stakes 3%/round, c fixed at 1: H=100: 0.149; H=1000: 0; H=10000: 0
+theta=-1, L=0.3, stakes 3%/round, c_t = 1 + tau_t with tau_t = g^t t^1.5 (levy rising faster than stakes): H=100: 0.995; H=1000: 0.994; H=10000: 0.994
+theta=-1, L=0.3, stakes 3%/round, c_t = g^t (cost of a unit of racing rises with the stakes): H=100: 0.74; H=1000: 0.0496; H=10000: 8.95e-14
+forward-looking theta=+0.0, delta=0.95: q_t at t=10,100,200,500,1000 = -0.0895, -0.0604, -0.0341, -0.0330, -0.0330; survival at 100, 200, 1000 = 2.7e+03, 1.47e+05, 2.82e+16
+forward-looking theta=+0.0, delta=0.99: q_t at t=10,100,200,500,1000 = -0.0000, -0.0000, -0.0000, -0.0000, -0.0000; survival at 100, 200, 1000 = 1, 1, 1
+forward-looking theta=+0.4, delta=0.95: q_t at t=10,100,200,500,1000 = -0.1139, -0.0974, -0.0503, -0.0476, -0.0476; survival at 100, 200, 1000 = 3.31e+04, 1.86e+07, 2.91e+23
+forward-looking theta=+0.4, delta=0.99: q_t at t=10,100,200,500,1000 = -0.0000, -0.0000, -0.0000, -0.0000, -0.0000; survival at 100, 200, 1000 = 1, 1, 1
+forward-looking theta=-1.0, delta=0.95: q_t at t=10,100,200,500,1000 = 0.0040, 0.0577, 1.0000, 1.0000, 1.0000; survival at 100, 200, 1000 = 0.149, 1.24e-48, 0
+forward-looking theta=-1.0, delta=0.99: q_t at t=10,100,200,500,1000 = 0.0040, 0.0577, 1.0000, 1.0000, 1.0000; survival at 100, 200, 1000 = 0.149, 1.24e-48, 0
+myopic theta=0: q_t at t=10,100,200 = 0.0023, 0.0333, 0.6393
+repeated contest, theta=+0.0: cooperation +0.2500, best deviation +0.9961, stage Nash -0.0673 -> near-zero intensity sustained by grim reversion iff delta >= 0.702
+repeated contest, theta=+0.4: cooperation +0.3500, best deviation +0.9962, stage Nash -0.0025 -> near-zero intensity sustained by grim reversion iff delta >= 0.647
+repeated contest, theta=-0.5: cooperation +0.1250, best deviation +0.9960, stage Nash -0.0842 -> near-zero intensity sustained by grim reversion iff delta >= 0.806
+repeated contest, theta=-1.0: cooperation +0.0000, best deviation +0.9960, stage Nash +0.0000 -> near-zero intensity sustained by grim reversion iff delta >= 1.000
+##### r3b_forward.py
+y0= 1.0, theta=+0.0, delta=0.95: q_t at t=10,100,200,500,1000,2000 = 0.0021, 0.0150, 0.0308, 0.0330, 0.0330, 0.0330 | survival at 100, 200, 1000 = 0.511, 0.0423, 1.04e-13
+y0= 1.0, theta=+0.0, delta=0.99: q_t at t=10,100,200,500,1000,2000 = 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000 | survival at 100, 200, 1000 = 1, 1, 1
+y0= 1.0, theta=+0.4, delta=0.95: q_t at t=10,100,200,500,1000,2000 = 0.0016, 0.0085, 0.0126, 0.0130, 0.0130, 0.0130 | survival at 100, 200, 1000 = 0.648, 0.209, 6.11e-06
+y0= 1.0, theta=+0.4, delta=0.99: q_t at t=10,100,200,500,1000,2000 = 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000 | survival at 100, 200, 1000 = 1, 1, 1
+y0= 1.0, theta=-1.0, delta=0.95: q_t at t=10,100,200,500,1000,2000 = 0.0040, 0.0577, 1.0000, 1.0000, 1.0000, 1.0000 | survival at 100, 200, 1000 = 0.149, 1.24e-48, 0
+y0= 1.0, theta=-1.0, delta=0.99: q_t at t=10,100,200,500,1000,2000 = 0.0040, 0.0577, 1.0000, 1.0000, 1.0000, 1.0000 | survival at 100, 200, 1000 = 0.149, 1.24e-48, 0
+y0=10.0, theta=+0.0, delta=0.95: q_t at t=10,100,200,500,1000,2000 = 0.0010, 0.0016, 0.0017, 0.0017, 0.0017, 0.0017 | survival at 100, 200, 1000 = 0.873, 0.736, 0.184
+y0=10.0, theta=+0.0, delta=0.99: q_t at t=10,100,200,500,1000,2000 = 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000 | survival at 100, 200, 1000 = 1, 1, 1
+y0=10.0, theta=+0.4, delta=0.95: q_t at t=10,100,200,500,1000,2000 = 0.0007, 0.0010, 0.0010, 0.0010, 0.0010, 0.0010 | survival at 100, 200, 1000 = 0.918, 0.828, 0.359
+y0=10.0, theta=+0.4, delta=0.99: q_t at t=10,100,200,500,1000,2000 = 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000 | survival at 100, 200, 1000 = 1, 1, 1
+y0=10.0, theta=-1.0, delta=0.95: q_t at t=10,100,200,500,1000,2000 = 0.0040, 0.0577, 1.0000, 1.0000, 1.0000, 1.0000 | survival at 100, 200, 1000 = 0.149, 1.24e-48, 0
+y0=10.0, theta=-1.0, delta=0.99: q_t at t=10,100,200,500,1000,2000 = 0.0040, 0.0577, 1.0000, 1.0000, 1.0000, 1.0000 | survival at 100, 200, 1000 = 0.149, 1.24e-48, 0
+##### r4_prop15.py
+theta_eff derivative identity verified (exact, 500 cases)
+pooling ends racing in faithful-AI game (eps=1) at beta = 20/31 = 0.6452
+pooling ends racing in faithful-AI game (eps=10) at beta = 308/391 = 0.7877
+pooling: theta_eff=1 (theta_g, n=4, r=1) at beta = 2/3
+theta=-1 intensity, no sharing / half shared: 0.25 0.125
+paper's comparison (separate fields, l=0): beta=0.0: pay(0.2)-pay(0.05) = +0.1071
+   same with l=0.3 counted in each carrier's own field: +0.0621
+paper's comparison (separate fields, l=0): beta=0.5: pay(0.2)-pay(0.05) = -0.0214
+   same with l=0.3 counted in each carrier's own field: -0.0664
+common field (0.2, 0.05, 0.1, 0.1), beta=0.0: pay(0.2)-pay(0.05) = +0.1833
+common field (0.2, 0.05, 0.1, 0.1), beta=0.5: pay(0.2)-pay(0.05) = +0.0167
+common field (0.2, 0.05, 0.1, 0.1), beta=0.9: pay(0.2)-pay(0.05) = -0.1167
+residents at 0.1, beta=0.0: mutant minus resident: y=0.05: -0.0929, y=0.15: +0.0611, y=0.2: +0.1000 | relative-selection rest point (1-beta)rOm/(nc) = 0.2500
+residents at 0.1, beta=0.5: mutant minus resident: y=0.05: -0.0214, y=0.15: +0.0056, y=0.2: +0.0000 | relative-selection rest point (1-beta)rOm/(nc) = 0.1250
+residents at 0.1, beta=0.9: mutant minus resident: y=0.05: +0.0357, y=0.15: -0.0389, y=0.2: -0.0800 | relative-selection rest point (1-beta)rOm/(nc) = 0.0250
+  beta=0.0: ESS candidate x=0.2500: best mutant advantage +0.00e+00 (<=0 means uninvadable); positive for every beta<1
+  beta=0.5: ESS candidate x=0.1250: best mutant advantage +0.00e+00 (<=0 means uninvadable); positive for every beta<1
+  beta=0.9: ESS candidate x=0.0250: best mutant advantage +0.00e+00 (<=0 means uninvadable); positive for every beta<1
+  beta=0.99: ESS candidate x=0.0025: best mutant advantage +0.00e+00 (<=0 means uninvadable); positive for every beta<1
+common-field replicator, loads 0.2 vs 0.05, beta=0.0: share of high-load type after 400 steps = 1.000
+common-field replicator, loads 0.2 vs 0.05, beta=0.5: share of high-load type after 400 steps = 0.500
+common-field replicator, loads 0.2 vs 0.05, beta=0.75: share of high-load type after 400 steps = 0.084
+material 1 + positional 1: sharing beta=0.0 of the material part leaves effective prize 2.00 (intensity x1.00)
+material 1 + positional 1: sharing beta=0.5 of the material part leaves effective prize 1.50 (intensity x0.75)
+material 1 + positional 1: sharing beta=0.9 of the material part leaves effective prize 1.10 (intensity x0.55)
+material 1 + positional 1: sharing beta=1.0 of the material part leaves effective prize 1.00 (intensity x0.50)
+beta=0.9 honoured with prob rho=1.0: effective contested prize = 0.10 of Omega
+beta=0.9 honoured with prob rho=0.5: effective contested prize = 0.55 of Omega
+beta=0.9 honoured with prob rho=0.0: effective contested prize = 1.00 of Omega
+##### r5_commitment.py
+n=2, kappa=0.0: committed theta_1 maximizing own true welfare = -0.000 (W=0.1923) vs accurate theta_1=kappa (W=0.1923)
+n=2, kappa=0.4: committed theta_1 maximizing own true welfare = +0.400 (W=0.4634) vs accurate theta_1=kappa (W=0.4634)
+n=3, kappa=0.0: committed theta_1 maximizing own true welfare = -1.000 (W=0.0458) vs accurate theta_1=kappa (W=0.0085)
+n=3, kappa=0.4: committed theta_1 maximizing own true welfare = -1.000 (W=0.1935) vs accurate theta_1=kappa (W=0.1336)
+n=4, kappa=0.0: committed theta_1 maximizing own true welfare = -1.000 (W=-0.0104) vs accurate theta_1=kappa (W=-0.0673)
+n=4, kappa=0.4: committed theta_1 maximizing own true welfare = -1.000 (W=0.0861) vs accurate theta_1=kappa (W=-0.0025)
+##### r6_productive.py
+productive intensity, theta=0.0: t=10: q=0.0013, S=0.99; t=50: q=0.0132, S=0.802; t=100: q=0.2259, S=0.0117; t=200: q=1.0000, S=0
+productive intensity, theta=1.0: t=10: q=0.0033, S=0.975; t=50: q=0.0346, S=0.559; t=100: q=0.4915, S=7.89e-06; t=200: q=1.0000, S=0
+productive intensity, theta=3.0: t=10: q=0.0070, S=0.947; t=50: q=0.0717, S=0.292; t=100: q=0.7609, S=1.6e-11; t=200: q=1.0000, S=0
+##### r7_minmax.py
+theta=-1, n=4: deviator's minmax over others' profiles (grid) = +0.0000 at others = [0.0, 0.375, 0.375]
+##### r8_hetero.py
+n=2, kappa=0.0: committed theta_1 maximizing own true welfare = -0.000 (W=0.1923) vs accurate theta_1=kappa (W=0.1923)
+n=2, kappa=0.4: committed theta_1 maximizing own true welfare = +0.400 (W=0.4634) vs accurate theta_1=kappa (W=0.4634)
+n=3, kappa=0.0: committed theta_1 maximizing own true welfare = -1.000 (W=0.0458) vs accurate theta_1=kappa (W=0.0085)
+n=3, kappa=0.4: committed theta_1 maximizing own true welfare = -1.000 (W=0.1935) vs accurate theta_1=kappa (W=0.1336)
+n=4, kappa=0.0: committed theta_1 maximizing own true welfare = -1.000 (W=-0.0104) vs accurate theta_1=kappa (W=-0.0673)
+n=4, kappa=0.4: committed theta_1 maximizing own true welfare = -1.000 (W=0.0861) vs accurate theta_1=kappa (W=-0.0025)
+thetas=[-1.0, -1.0, -1.0, -1.0]: total intensity 1.0000; win probs [0.25, 0.25, 0.25, 0.25]; material [-0.3, -0.3, -0.3, -0.3]
+thetas=[-1.0, 2.9, 2.9, 2.9]: total intensity 0.0153; win probs [0.989, 0.004, 0.004, 0.004]; material [0.969, -0.001, -0.001, -0.001]
+thetas=[0.4, 2.9, 2.9, 2.9]: total intensity 0.0152; win probs [0.975, 0.008, 0.008, 0.008]; material [0.956, 0.004, 0.004, 0.004]
+thetas=[2.9, 2.9, 2.9, 2.9]: total intensity 0.0115; win probs [0.25, 0.25, 0.25, 0.25]; material [0.244, 0.244, 0.244, 0.244]

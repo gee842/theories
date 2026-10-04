@@ -1,0 +1,28 @@
+m03  What moves the loop gain, channel by channel (Prop 2.2 key `loopgain`; Remark S2.1; the shared-parameter table).
+
+(A) sign of dGamma/dd and of d(growth factor)/dd by channel form; (B) sign of dGamma/dk0
+   ratio  r ln X (eps_r=0)    df=0.0: Gamma sim 1.2857 -> 1.2857 when d .2->.3 (formula 1.2857->1.2857); rule sign(df/(d+df)-eps_r)=0 (eps_r=0.00) | k0 .1->.2: Gamma sim 1.2857 -> 1.0000; rule sign(eps_r-1)=- (lowers iff -)
+   ratio  r ln X (eps_r=0)    df=0.1: Gamma sim 0.8571 -> 0.9643 when d .2->.3 (formula 0.8571->0.9643); rule sign(df/(d+df)-eps_r)=+ (eps_r=0.00) | k0 .1->.2: Gamma sim 0.8571 -> 0.6667; rule sign(eps_r-1)=- (lowers iff -)
+   level  a X    (eps_r=1)    df=0.0: Gamma sim 1.1250 -> 0.7500 when d .2->.3 (formula 1.1250->0.7500); rule sign(df/(d+df)-eps_r)=- (eps_r=1.00) | k0 .1->.2: Gamma sim 1.1250 -> 1.1250; rule sign(eps_r-1)=0 (lowers iff -)
+   level  a X    (eps_r=1)    df=0.1: Gamma sim 0.7500 -> 0.5625 when d .2->.3 (formula 0.7500->0.5625); rule sign(df/(d+df)-eps_r)=- (eps_r=1.00) | k0 .1->.2: Gamma sim 0.7500 -> 0.7500; rule sign(eps_r-1)=0 (lowers iff -)
+   power  a X^.5 (eps_r=.5)   df=0.0: Gamma sim 0.7087 -> 0.5786 when d .2->.3 (formula 0.7087->0.5786); rule sign(df/(d+df)-eps_r)=- (eps_r=0.50) | k0 .1->.2: Gamma sim 0.7087 -> 0.6250; rule sign(eps_r-1)=- (lowers iff -)
+   power  a X^.5 (eps_r=.5)   df=0.1: Gamma sim 0.4725 -> 0.4340 when d .2->.3 (formula 0.4725->0.4340); rule sign(df/(d+df)-eps_r)=- (eps_r=0.50) | k0 .1->.2: Gamma sim 0.4725 -> 0.4167; rule sign(eps_r-1)=- (lowers iff -)
+   power  a X^2  (eps_r=2)    df=0.0: Gamma sim 1.7500 -> 0.7778 when d .2->.3 (formula 1.7500->0.7778); rule sign(df/(d+df)-eps_r)=- (eps_r=2.00) | k0 .1->.2: Gamma sim 1.7500 -> 2.2500; rule sign(eps_r-1)=+ (lowers iff -)
+   power  a X^2  (eps_r=2)    df=0.1: Gamma sim 1.1667 -> 0.5833 when d .2->.3 (formula 1.1667->0.5833); rule sign(df/(d+df)-eps_r)=- (eps_r=2.00) | k0 .1->.2: Gamma sim 1.1667 -> 1.5000; rule sign(eps_r-1)=+ (lowers iff -)
+   saturating ln(1+X)         df=0.0: Gamma sim 1.1364 -> 0.9615 when d .2->.3 (formula 1.1364->0.9615); rule sign(df/(d+df)-eps_r)=- (eps_r=0.36) | k0 .1->.2: Gamma sim 1.1364 -> 0.9615; rule sign(eps_r-1)=- (lowers iff -)
+   saturating ln(1+X)         df=0.1: Gamma sim 0.7576 -> 0.7212 when d .2->.3 (formula 0.7576->0.7212); rule sign(df/(d+df)-eps_r)=- (eps_r=0.36) | k0 .1->.2: Gamma sim 0.7576 -> 0.6410; rule sign(eps_r-1)=- (lowers iff -)
+   Gamma_delta, ratio channel, no diffusion, delta=0.9: d=0.1: 0.8526  d=0.2: 1.1571  d=0.4: 1.4087  (rises with d although Gamma=1.8*omega is unchanged)
+
+(C) Remark S2.1: growth factor of a relative gap, simulated vs 1+(d+df)(Gamma-1); and time 1% -> 50%
+   r=3.0 d=0.2 df=0.0: Gamma=3.000; simulated factor 1.40000; 1+(d+df)(Gamma-1)=1.40000; V6.1's 1+d(Gamma-1)=1.40000; 1%->50% gap in 13 periods (linear estimate 11.6)
+   r=3.0 d=0.05 df=0.05: Gamma=1.500; simulated factor 1.05000; 1+(d+df)(Gamma-1)=1.05000; V6.1's 1+d(Gamma-1)=1.02500; 1%->50% gap in 10001 periods (linear estimate 80.2)
+   r=2.0 d=0.2 df=0.1: Gamma=1.333; simulated factor 1.10000; 1+(d+df)(Gamma-1)=1.10000; V6.1's 1+d(Gamma-1)=1.06667; 1%->50% gap in 50 periods (linear estimate 41.0)
+   r=1.5 d=0.1 df=0.02: Gamma=1.250; simulated factor 1.03000; 1+(d+df)(Gamma-1)=1.03000; V6.1's 1+d(Gamma-1)=1.02500; 1%->50% gap in 144 periods (linear estimate 132.3)
+   same Gamma=1.2, different turnover (Sys I1): d+df=0.5: factor 1.10000, periods to grow 50x 41;  d+df=0.02: factor 1.00400, periods to grow 50x 980;  
+   two channels with the same Gamma but different turnover split:
+      d=(0.3,0.02): Gamma=1.200; simulated factor 1.00877; Perron root of (S1) 1.00877
+      d=(0.1,0.1): Gamma=1.200; simulated factor 1.02000; Perron root of (S1) 1.02000
+
+(D) a delayed countervailing channel: net DC gain below one, yet growing oscillation (eigenvalues of J = D + a-vector)
+   net DC gain sum a_j/(1-D_j) = 0.250 (<1); eigenvalue modulus 1.0075; period 51.6; |y| after 600 periods 292.0 (grows)
+   Prop 2.2's criterion needs every channel reinforcing (nonnegative J); correction is not a negative term of Gamma

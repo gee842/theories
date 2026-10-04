@@ -1,0 +1,30 @@
+(a) size threshold exponent 1/(2-xf), f=0.05, d=1, gam=1 (eta irrelevant for the threshold):
+   xf=0.0: threshold 0.22361 vs (f/(chi Y))^(1/(2-xf)) = 0.22361
+   xf=0.3: threshold 0.17167 vs (f/(chi Y))^(1/(2-xf)) = 0.17167
+   xf=0.7: threshold 0.09982 vs (f/(chi Y))^(1/(2-xf)) = 0.09982
+   xf=1.0: threshold 0.05000 vs (f/(chi Y))^(1/(2-xf)) = 0.05000
+(b) exponents of q*, p q*, and spending in p (f=0), by log-log regression over p in [0.05, 1]:
+   eta=0.5, xv=0.0: q* ~ p^4.000 (formula 4.000); p q* ~ p^5.000 (formula 5.000); spending ~ p^6.000 (formula 6.000)
+   eta=0.5, xv=0.3: q* ~ p^3.400 (formula 3.400); p q* ~ p^4.400 (formula 4.400); spending ~ p^5.400 (formula 5.400)
+   eta=0.5, xv=1.0: q* ~ p^2.000 (formula 2.000); p q* ~ p^3.000 (formula 3.000); spending ~ p^4.000 (formula 4.000)
+   eta=1.0, xv=0.0: q* ~ p^2.000 (formula 2.000); p q* ~ p^3.000 (formula 3.000); spending ~ p^4.000 (formula 4.000)
+   eta=1.0, xv=0.3: q* ~ p^1.700 (formula 1.700); p q* ~ p^2.700 (formula 2.700); spending ~ p^3.700 (formula 3.700)
+   eta=1.0, xv=1.0: q* ~ p^1.000 (formula 1.000); p q* ~ p^2.000 (formula 2.000); spending ~ p^3.000 (formula 3.000)
+   eta=2.0, xv=0.0: q* ~ p^1.000 (formula 1.000); p q* ~ p^2.000 (formula 2.000); spending ~ p^3.000 (formula 3.000)
+   eta=2.0, xv=0.3: q* ~ p^0.850 (formula 0.850); p q* ~ p^1.850 (formula 1.850); spending ~ p^2.850 (formula 2.850)
+   eta=2.0, xv=1.0: q* ~ p^0.500 (formula 0.500); p q* ~ p^1.500 (formula 1.500); spending ~ p^2.500 (formula 2.500)
+(c) splitting factor k^((2-xv)/eta), cultivated conversion sum_k p_k q*_k, monopoly over k equal parts (f=0):
+   eta=0.5, xv=0.0: k=2: 16.000 vs 16.000; k=5: 625.000 vs 625.000
+   eta=0.5, xv=0.5: k=2: 8.000 vs 8.000; k=5: 125.000 vs 125.000
+   eta=0.5, xv=1.0: k=2: 4.000 vs 4.000; k=5: 25.000 vs 25.000
+   eta=2.0, xv=0.0: k=2: 2.000 vs 2.000; k=5: 5.000 vs 5.000
+   eta=2.0, xv=0.5: k=2: 1.682 vs 1.682; k=5: 3.344 vs 3.344
+   eta=2.0, xv=1.0: k=2: 1.414 vs 1.414; k=5: 2.236 vs 2.236
+(d) rate law: G(t) = (A + aB q*(t))/(c d(t)), gam = e^{-g t}, d = d0 e^{alpha t}, g=0.2, dominant share 0.6, f=0.
+    Threshold predicted alpha_ctl/(1+eta): eta=0.5 -> 0.1333, eta=2 -> 0.0667. Growth exponent of the cultivated term predicted (g-(1+eta)alpha)/eta.
+   eta=0.5, alpha=0.1133 (below 0.1333): G at t=0,50,100,150: 0.166, 0.326, 6.54, 131; cultivated-term growth rate +0.0600 vs (g-(1+eta)alpha)/eta = +0.0600
+   eta=0.5, alpha=0.1533 (above 0.1333): G at t=0,50,100,150: 0.166, 0.000877, 4.02e-05, 2e-06; cultivated-term growth rate -0.0600 vs (g-(1+eta)alpha)/eta = -0.0600
+   eta=2.0, alpha=0.0467 (below 0.0667): G at t=0,50,100,150: 0.295, 0.663, 2.91, 13; cultivated-term growth rate +0.0300 vs (g-(1+eta)alpha)/eta = +0.0300
+   eta=2.0, alpha=0.0867 (above 0.0667): G at t=0,50,100,150: 0.295, 0.0342, 0.00723, 0.00161; cultivated-term growth rate -0.0300 vs (g-(1+eta)alpha)/eta = -0.0300
+(e) sign checks by finite differences at eta=1.7, xv=0.4, p=0.5: dq*/dgam, dq*/dd, dq*/dchi
+   dq*/dgam = -0.3064 (<0 expected); dq*/dd = -0.3064 (<0); dq*/dchi = +0.3064 (>0)

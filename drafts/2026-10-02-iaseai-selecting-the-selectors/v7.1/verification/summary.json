@@ -1,0 +1,66 @@
+{
+  "version": "V7.1",
+  "date": "2026-10-04",
+  "status": "ready for conditional public working-paper circulation within the reviewed scopes",
+  "full_default_suite": {
+    "exit_code": 0,
+    "passed": 239,
+    "failed": 0,
+    "blocks": 44,
+    "new_RP_groups": 8,
+    "retained_RV_groups": 18,
+    "duration_seconds": 300,
+    "log": "checks_v71.log",
+    "sha256": "d2d6b1be69b72e6b9d0cf84c3f994500e9f256cbe4b19a2db525c7ceb45e2053"
+  },
+  "limits": [
+    "Model computations and structure checks do not certify every proof.",
+    "Empirical interfaces, strategic extensions and institutional performance remain open.",
+    "Separate AI reviewers are not independent human certification."
+  ],
+  "structure": "passed",
+  "fresh_release_reviews": {
+    "math": {
+      "report": "reviews/release-math.md",
+      "remaining_actionable_blockers": 0,
+      "sha256": "ae12b7fb93ab0d3d56e9920686d04444c51e00de43809c95f595cd6aa1fd929c"
+    },
+    "systems": {
+      "report": "reviews/release-systems.md",
+      "remaining_actionable_blockers": 0,
+      "sha256": "b2c2261c6ba6b0abb1686a92de508cddc9ca9a3b3eb44e1a4ba10dd84f014bfc"
+    },
+    "evidence": {
+      "report": "reviews/release-evidence.md",
+      "remaining_actionable_blockers": 0,
+      "sha256": "01b0d2a00f1842fa7bf4ad2deb1d2b1a5942a6f50d7ebcf4164152ea66ba2a2d"
+    }
+  },
+  "preservation": {
+    "v7_files_checked": 87,
+    "changed_v7_files": [],
+    "stable_declarations": 128,
+    "declaration_identity_changes": [],
+    "ren_claims_sections_8_9_verbatim_content": true,
+    "assembly_exit_code": 0,
+    "assembly_reproducible": true,
+    "missing_local_document_links": [],
+    "verified_input_files": 55,
+    "document_sha256": {
+      "CHANGELOG.md": "8c6e79e9c9dcbe6b56f1633fc81545399efd14bffcf28615989029bf7d6860e4",
+      "CLAIMS.md": "7d654302cc9e13c178fcad6b119896cd581e2dc8d3aaf0629ed34973188c0efa",
+      "DISCUSSION.md": "ba20e2765dfe2c3ad391803e062aec2e3bc7a6001565c1b1cc3c47b625f54984",
+      "EVIDENCE.md": "0c9299907446e669ef6aa52774ec8b36d354cc6f2c476e2d64c9f68e75335427",
+      "LEDGER.md": "c4278a0f08064ff04f3de53280d40aa92a1d8a62df1ee386b31b615f7e18dc2b",
+      "README.md": "e1d8f229b0c06801fd36707bf099af6df9ede73a7a908fad56dafdd31d7d76eb",
+      "RELEASE-REVIEW.md": "c9f93363e4f4b5030020cea510d712630af66e7d80eefdd12757449ed56d94b9",
+      "START-HERE.md": "ff0945b1e2a88bbed3b790ef6d05a534bfc339845004d0a9c4d4174187f8772c",
+      "SUPPLEMENT.md": "9ed6f1223a60e4ddfebc3a3c3d5c213e029ecfbe5dd6e5192ac3d105ab835af9",
+      "TESTS.md": "402e275e7a605ff830cbda3cfc9b2371933c47d682ffa39584b31179cd710455",
+      "THEORY.md": "88797e8e0e5d337c4c062abaa1d7604dfc6c40cd5a58734ef668ade5ad04c001"
+    }
+  },
+  "source_input_manifest": "verification/v71-input-manifest.json",
+  "release_note": "RELEASE-REVIEW.md",
+  "external_publication_performed": false
+}
