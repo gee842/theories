@@ -17,6 +17,7 @@ button:hover { border-color: rgba(255,255,255,0.4); } button:focus-visible, inpu
 .chapters { display: flex; gap: 6px; flex-wrap: wrap; } .chapters button { color: var(--dim); padding: 4px 8px; }
 .start { position: fixed; inset: 0; display: grid; place-items: center; background: rgba(0,0,0,0.55); border: 0; color: var(--fg); font: inherit; letter-spacing: 0.3em; cursor: pointer; }
 .start span { border: 1px solid rgba(255,255,255,0.5); padding: 14px 28px; font-size: 13px; }
+.start[hidden] { display: none; }
 .start[disabled] span { border-color: rgba(255,255,255,0.15); color: var(--dim); }
 body.render .bar, body.render .start { display: none; } body.render .frame { width: 1920px; height: 1080px; aspect-ratio: auto; }
 </style></head><body>
