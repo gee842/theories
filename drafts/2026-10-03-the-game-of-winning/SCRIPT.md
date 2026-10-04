@@ -62,7 +62,7 @@
 
 | 文件 | 用途 |
 |---|---|
-| [film.html](film.html) | 可播放的初剪：拖动进度、跳章节、开关声音、切换有无尾声。私有 Artifact：https://claude.ai/artifact/18xYHjLLGCNdMR7wzZWuZM |
+| [film.html](film.html) | 可播放的初剪：拖动进度、跳章节、开关声音、切换有无尾声。私有 Artifact：https://claude.ai/artifact/BBwmrBMqFYi3wg6WrSYF9c |
 | [render.mjs](render.mjs) | 用本机 Chrome 无头模式逐帧渲染 1920×1080、30fps，再用 ffmpeg 合成 MP4。不需要安装任何依赖。 |
 | `soundtrack.mp3` | 播放器用的音轨，由 `node render.mjs --soundtrack` 从同一段合成代码生成，和 MP4 里的声音一致。不进 Git。 |
 | `out/` | 成片，不进 Git。 |
