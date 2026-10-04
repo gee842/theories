@@ -1,0 +1,90 @@
+{
+  "src/assemble_v73.py": {
+    "baseline": "src/assemble_v72.py",
+    "sha256": "13a690f4362f58020166add6efb35e2cff70855285e1b107fc8a016fab5283de"
+  },
+  "src/core/00_head.md": {
+    "baseline": "src/core/00_head.md",
+    "sha256": "c5c2c5b623bfd2cde8f472ad06a0f0304ad028fed11940d529e9ea08278a6927"
+  },
+  "src/core/10_s01.md": {
+    "baseline": "src/core/10_s01.md",
+    "sha256": "2729ca7da058bd48774114541e436d8b9d30235898d7bd42336f2ade8a85b6db"
+  },
+  "src/core/a0_s10.md": {
+    "baseline": "src/core/a0_s10.md",
+    "sha256": "e2bc7d13b8adf8a958af179761226d97c9f7f7b9f156e637f07969514b224b0a"
+  },
+  "src/core/b0_s11.md": {
+    "baseline": "src/core/b0_s11.md",
+    "sha256": "2198914deab322311258fbeb73b1763d8b6705e3e1c23a23e78bcc5d8ca97121"
+  },
+  "src/core/c0_s12.md": {
+    "baseline": "src/core/c0_s12.md",
+    "sha256": "bece35b4a4088981db2ba19ee58995517db8652aaaf10135cb5c4271f33612a6"
+  },
+  "src/core/z9_refs.md": {
+    "baseline": "src/core/z9_refs.md",
+    "sha256": "abab2f7152de9dc0192ee4034f042dae0d4d8e44e7e86f9291e21d3f54d2f26b"
+  },
+  "src/disc/10_X10.md": {
+    "baseline": "src/disc/10_X10.md",
+    "sha256": "9e5b7fb02081b281f6fc883fdb513066e2e56c326278d1f51e24061ec264686b"
+  },
+  "src/disc/z9_refs.md": {
+    "baseline": "src/disc/z9_refs.md",
+    "sha256": "fc024f2345f499512b371e09dea7217404489dbc7a2aedef22e1417b3b51e796"
+  },
+  "src/refs_v73.py": {
+    "baseline": "src/refs_v72.py",
+    "sha256": "c8310ebc3b6130213fa11d40270c6a7948a398b967787e5c59a0ed8c87c7e574"
+  },
+  "src/reg/CHANGELOG.md": {
+    "baseline": "src/reg/CHANGELOG.md",
+    "sha256": "ba3a84a63ac2356fe409e943b60c990d8007b87eb7c12b27233258f9747cb09b"
+  },
+  "src/reg/CLAIMS.md": {
+    "baseline": "src/reg/CLAIMS.md",
+    "sha256": "b9e40dafaf04b06dfaa01329b424394e6ed4c6715c7842c591d237e130cdb5bf"
+  },
+  "src/reg/EVIDENCE.md": {
+    "baseline": "src/reg/EVIDENCE.md",
+    "sha256": "2acd2d3fa8a62f433ce848c401ae7492eb9471ab7c6d39fec9ba2fcc6aa3a6c9"
+  },
+  "src/reg/LEDGER.md": {
+    "baseline": "src/reg/LEDGER.md",
+    "sha256": "a5cdc9397e7eb5ceca1b61b66169428a862830d4a59889ba420392db9df9fbb2"
+  },
+  "src/reg/README.md": {
+    "baseline": "src/reg/README.md",
+    "sha256": "bf7772aff0008aaa0fac86aeab8f66543f2f72153d9ce2e847f57d1376a465a1"
+  },
+  "src/reg/RELEASE-REVIEW.md": {
+    "baseline": "src/reg/RELEASE-REVIEW.md",
+    "sha256": "9b46f20e3490cb8e17086ace058045509e417598ae5e894e64bad225a573392d"
+  },
+  "src/reg/START-HERE.md": {
+    "baseline": "src/reg/START-HERE.md",
+    "sha256": "cf1c2c33c09ca1512822bb64e94db15c7edd8f14f07cdebec79b6b7420c2116c"
+  },
+  "src/reg/TESTS.md": {
+    "baseline": "src/reg/TESTS.md",
+    "sha256": "060d3e52a3d39354a03f79fa92ea8bd844ee0ad14a0837aa3e9cdcc60f45501c"
+  },
+  "src/supp/13_S13.md": {
+    "baseline": "src/supp/13_S13.md",
+    "sha256": "290c63d04a09fd0139c1076c43bba25d9ad13755b9e60c352fb688e0c435b5e4"
+  },
+  "src/supp/15_S15.md": {
+    "baseline": "src/supp/15_S15.md",
+    "sha256": "e344bf3279ffb3b5be754b7f7c9467f83804dd703d21b4cb13311c6d2da04d09"
+  },
+  "src/supp/17_S17.md": {
+    "baseline": null,
+    "sha256": "c663e8ffe50a2becb94bb3ed53a9ecb0b42faa5cbcb52123b414debdaa7d66ce"
+  },
+  "src/supp/z9_refs.md": {
+    "baseline": "src/supp/z9_refs.md",
+    "sha256": "3fe305bc8c87561473665a9345555df66e198231befebaa73bee676b43ec212a"
+  }
+}

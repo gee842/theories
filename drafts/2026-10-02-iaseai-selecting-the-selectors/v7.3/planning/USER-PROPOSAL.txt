@@ -1,0 +1,72 @@
+I think this could provide a **direction toward a solution**, especially for a layer of alignment that model-level training cannot handle alone.
+
+The larger object I see is this:
+
+**How can an adaptive system preserve its ability to discover and correct mistakes—even as it becomes powerful enough to change what counts as a mistake?**
+
+That connects your backpropagation intuition, cancer analogy, and meta-attractor theory. It also gives us something more precise to investigate than “find the correct ultimate objective.”
+
+There are three different gradients here:
+
+| Gradient | What it tells us |
+|---|---|
+| **Selection gradient** | Which behaviors, models, or institutions will spread |
+| **Welfare or viability gradient** | Which changes improve explicitly chosen human and environmental conditions |
+| **Design gradient** | How changing incentives, authority, and feedback changes the future trajectory |
+
+Your intuition becomes especially useful at the third level. **We can intervene on the mechanism that produces future selection gradients.**
+
+In your [existing model](/Users/ren/theories/sources/03-meta-attractor/2026-09-28-meta_attractors_v0.1_zh.md:219), the feedback sustaining capture is summarized by
+
+\[
+\mathcal R_{\mathrm{cap}}=\frac{ab}{cd},
+\]
+
+where \(a\) converts favorable rules into advantage, \(b\) converts success into rule support, \(c\) is the practice’s disadvantage without that support, and \(d\) is independent correction or decay of support.
+
+Its sensitivity is explicit:
+
+\[
+\nabla_{(\log a,\log b,\log c,\log d)}
+\log\mathcal R_{\mathrm{cap}}
+=(1,1,-1,-1).
+\]
+
+So there is already a mathematically identifiable direction: reduce how easily success purchases favorable rules, or strengthen independent correction. In this model, moving below \(\mathcal R_{\mathrm{cap}}=1\) eliminates the persistent high-capture outcome for interior starting states. That does not by itself prevent damage during the transition, but it identifies a structural intervention.
+
+**The deeper requirement is that this improvement must survive the system’s subsequent evolution.**
+
+Suppose we build a helpful, correctable AI. If the surrounding competition rewards successors that conceal problems, weaken oversight, or control their evaluators, the initial alignment is vulnerable to replacement. Conversely, oversight can look strong today while depending increasingly on the systems it oversees.
+
+This suggests a stronger research criterion:
+
+> **Alignment should remain stable under the learning, selection, and institutional changes that the aligned system itself generates.**
+
+Corrigibility research already asks whether correction survives an AI’s self-modification and creation of successors. Your framework extends that question to organizations, deployment markets, evaluation systems, and the selection of future decision-makers. [Corrigibility](https://intelligence.org/files/Corrigibility.pdf), [Human Control: Definitions and Algorithms](https://proceedings.mlr.press/v216/carey23a.html)
+
+A concrete mathematical target would be to examine the return to undermining correction. Let \(q\) measure a strategy’s capacity to obstruct legitimate oversight, and \(s(q)\) its advantage when introduced into the current system. If
+
+\[
+\frac{\partial s}{\partial q}>0,
+\]
+
+the system rewards becoming harder to correct. A design intervention should reverse that incentive while preserving legitimate ways to challenge mistaken rules. This is a local test; resistance to coordinated capture and large disturbances requires additional analysis.
+
+There is also a deeper biological connection: **the evolution of mechanisms that regulate evolution itself**. Work on major evolutionary transitions studies how competing components form larger cooperative systems whose coordination persists. Frank’s models jointly evolve competitiveness and mechanisms restraining destructive competition. That is close to the question we are reaching—not simply how systems adapt, but how adaptation becomes compatible across levels. [Frank, 1995](https://stevefrank.org/reprints-pdf/95Nature-Police.pdf)
+
+For alignment, however, persistence and coordination are insufficient. An oppressive institution can possess both. Human agency, participation, and the legitimacy of correction have to be explicit commitments; the mathematics does not derive them from survival.
+
+This is why I suspect the direction will be **a set of acceptable directions, rather than one universal scalar gradient**. Control theory already provides a mathematical language for this: define conditions that must remain viable, then optimize useful performance within them. Under specified assumptions, control-barrier methods establish that the system remains inside an acceptable region. [Ames et al., 2017](https://arxiv.org/abs/1609.06408)
+
+Your contribution to that formulation would be to include **the real capacity for future correction inside the protected region**:
+
+- Can harmful consequences still be detected?
+- Can affected people challenge the objective?
+- Can an independent institution actually intervene?
+- Can the system change course without destroying the capacities needed to do so?
+
+Those capacities must remain real as capability increases. Measuring them becomes another possible point of manipulation, so independent evidence and revision remain necessary.
+
+This connects closely to your 生生 idea: maintaining the conditions for continued becoming, learning, and revision. It gives that idea a possible operational meaning without claiming that we have derived all ethics from dynamics.
+
+**The next theorem worth seeking is whether we can identify conditions under which increasing capability preserves both shared viability and effective correction—and under which strategies that dismantle those conditions cannot reliably take over.** That would be a substantial alignment result. We have mathematical components for it; joining them into a robust, empirically testable account is the unresolved work.

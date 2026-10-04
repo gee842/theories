@@ -1,0 +1,72 @@
+{
+  "adverse": {
+    "entry_capture": 0.9186961324950231,
+    "entry_host": 0.8559984678682718,
+    "entry_load": 0.8179529481880855,
+    "entry_support": 0.41844921150055414,
+    "final_capture": 1.0,
+    "final_host": 0.1046903980595996,
+    "minimum_host": 0.1046903980595996,
+    "peak_capture": 1.0,
+    "release_capture": 0.9186961324950231,
+    "release_support": 0.41844921150055414
+  },
+  "analytic": {
+    "ZL": 1.883450349525202,
+    "entry": 2.606503499299098,
+    "full_cost": 10.630740172881389,
+    "release": 1.643741794067096,
+    "reserve": 0.32199869801974523,
+    "tx": 1.4595033124148271,
+    "ty": 0.9627617052320019,
+    "tz": 0.03423848165226881
+  },
+  "certificate_not_necessary": {
+    "bound": {
+      "ZL": 1.883450349525202,
+      "entry": 3.0011638153002824,
+      "full_cost": 12.009232276628385,
+      "release": 1.8974519972107147,
+      "reserve": 0.29652492167623795,
+      "tx": 1.7132135155584458,
+      "ty": 1.103711818089568,
+      "tz": 0.03423848165226881
+    },
+    "trajectory": {
+      "entry_capture": 1.662458917303911e-09,
+      "entry_host": 0.9415505178896194,
+      "entry_load": 9.330403700327669e-17,
+      "entry_support": 1.216623230581534e-07,
+      "final_capture": 2.6132832270083864e-103,
+      "final_host": 0.9999999999997224,
+      "minimum_host": 0.6464202221062889,
+      "peak_capture": 0.9269768082802483,
+      "release_capture": 1.1361379215766958e-05,
+      "release_support": 6.197073509892075e-07
+    }
+  },
+  "defunded_self_coupling_stays_safe": {
+    "entry_capture": 3.104937962806074e-10,
+    "entry_host": 0.9266606730660829,
+    "entry_load": 1.588781313343091e-14,
+    "entry_support": 8.482465293216468e-07,
+    "final_capture": 0.0,
+    "final_host": 0.999999999999889,
+    "minimum_host": 0.6654652907177397,
+    "peak_capture": 0.9326263604363009,
+    "release_capture": 4.712686378971523e-06,
+    "release_support": 2.827597707451591e-07
+  },
+  "positive": {
+    "entry_capture": 3.104922512081762e-10,
+    "entry_host": 0.9266606730657286,
+    "entry_load": 1.5887813133818235e-14,
+    "entry_support": 6.066509366657016e-08,
+    "final_capture": 3.338928747225605e-129,
+    "final_host": 0.9999999999997224,
+    "minimum_host": 0.6654651398599394,
+    "peak_capture": 0.9326269697102404,
+    "release_capture": 4.712686378980732e-06,
+    "release_support": 2.827597703882722e-07
+  }
+}

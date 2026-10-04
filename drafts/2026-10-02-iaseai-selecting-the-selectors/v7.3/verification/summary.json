@@ -1,0 +1,49 @@
+{
+  "edition": "V7.3",
+  "v72_files_checked": 85,
+  "changed_v72_files": [],
+  "inherited_declarations": 129,
+  "inherited_identity_changes": [],
+  "new_declarations": [
+    "reformpath"
+  ],
+  "total_declarations": 130,
+  "historical_claims_8_to_11_source_preserved": true,
+  "historical_claims_8_to_11_output_preserved": true,
+  "assembly_exit_code": 0,
+  "assembly_reproducible": true,
+  "missing_local_document_links": [],
+  "cross_reference_checks_pass": true,
+  "numerical": {
+    "passed": 249,
+    "failed": 0
+  },
+  "default_blocks": 46,
+  "numerical_run_complete": true,
+  "institutional_test_N_run": false,
+  "general_institutional_preservation_proved": false,
+  "reduced_finite_transition_review": "accepted within maintained model premises",
+  "real_institutional_pilot_run": false,
+  "fresh_review_reports": [
+    "V73-MATH-REVIEW.md",
+    "V73-INSTITUTION-REVIEW.md",
+    "V73-CLAIM-REVIEW.md"
+  ],
+  "review_is_independent_human_certification": false,
+  "verified_input_files": 72,
+  "changed_source_files": 22,
+  "document_sha256": {
+    "CHANGELOG.md": "8c8b19b1c8c1ab37b9ab11d543e6446ce69a30c94300a3436499d5375a809393",
+    "CLAIMS.md": "14cd3531b9fd7297921a636d8b343e62f61d675e92170c1a144d8c847867fbf4",
+    "DISCUSSION.md": "2fa71f7839b0f5347ac9a23acc1b75392d49b1d7bb8a40556291d1636190d369",
+    "EVIDENCE.md": "35c75d889416b54c03010b9dccb461be3740a9fcdb6f16d592fd7286b3b0ae07",
+    "LEDGER.md": "c7ae3e8e8879062b18ab810c0b76c2b74943cd34331a6d2830c59e511f765bfb",
+    "README.md": "81bb7c9dced3f3d6e118ca9eece9eab009e54296a23bda5aad8679ba7d30466e",
+    "RELEASE-REVIEW.md": "9ea0e68db7630ce915dbbb54bb8d94c450e03d8f5358e361dd3f85c5981599da",
+    "START-HERE.md": "b39a9ef17c0cf8fc02255d0db5cb7980960080e811bae2d16955992f75641939",
+    "SUPPLEMENT.md": "bde717ed355ed2213f05dd1642567a90f7f2d4eafdb04556579d0727eed2ab36",
+    "TESTS.md": "43598185c40e5e27da22446cfb59e2a46fc0226ea452a8584bada0507a7ec12d",
+    "THEORY.md": "7198977493e258e91d8fb7fae78ede22640586ce293f33ef3c23c05873d67b2d"
+  },
+  "audit_pass": true
+}
