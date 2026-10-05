@@ -14,6 +14,26 @@ The proposal earns that role by explaining how differences and interactions form
 
 The working criterion is a connected explanation with explicit premises and consequences at each transition. It should distinguish what follows generally, what needs additional physical or historical conditions, and what remains conjectural. A compact foundation can generate many conditional results without determining every history from its premises alone. The existence, adequacy and uniqueness of the proposed root remain to be tested; this statement records the research aim, not a completed theorem.
 
+## Completion of the unified foundation
+
+[Ren's continuity directive, recorded 6 October 2026](../../../sources/15-codex-theory-conversations/2026-10-06-unified-generativity-goal-and-continuity.md), makes the research goal above the continuing objective across parallel sessions. The following conditions are an AI-authored operational interpretation of that directive. Completion means an adequate connected foundation, with its empirical reach established at the scope claimed:
+
+1. **Explicit grounding.** State the common premises, why each is needed, and their informative consequences. Distinguish them from additional physical laws, historical conditions and model choices. Compare simpler alternatives; a claim of unique minimality needs its own argument.
+2. **Connected derivations.** Explain the transitions from interacting differences to organization, operational significance, learning and selection over selectors, models of shared consequences, concern and wisdom. Show how the relevant mechanisms arise and change under stated conditions. A supplied reward, interpretation, transfer architecture or benevolent selector cannot silently stand in for the capacity whose origin is being explained.
+3. **Compatible composition.** Show that the output of one mechanism actually supplies the next mechanism's required input. Shared situations must retain their resources, information, timing, affected centers and successor conditions wherever these matter. Separate successful examples do not establish a joint process if joining them resets costs, removes conflicts or installs unexplained capacities.
+4. **Generative and degenerative dynamics.** Use the common account to explain when capabilities develop, persist, widen, narrow or collapse, and what can change those paths. Include failures of learning, exclusion and domination. State whose possibilities change and over what horizon. Claims about attractors, favorable direction or ethical justification carry their own arguments and evidence.
+5. **Discriminating support and an integrated statement.** Give explicit mappings to materially different domains, predictions or interventions that distinguish the account from alternatives, and evidence at the level claimed. Check the derivations and bridges independently of their construction. Present a coherent synthesis with a traceable record of premises, proofs, observations, ethical arguments and conjectures, preserving counterexamples and specifying what would revise the account.
+
+The unified foundation remains **ongoing** while a central transition or its required composition is only named, assumed or illustrated in disconnected examples. Particular proofs, experiments and branches can be completed earlier. Completion of a foundational account does not mean that every possible application or historical question has been answered; its established scope and remaining empirical questions must be stated without claiming unsupported universality. A finite collection of successful models alone cannot establish universal empirical validity.
+
+## Keeping studies on the goal
+
+Each foundational study should identify the transition in the [derivation map](#the-derivation-and-the-existing-work) that it advances, the inputs it still borrows, and the result that would support, restrict or overturn its proposed explanation. On completion, integrate the result or failure into that map and the [research index](../../../RESEARCH.md), and name the next unresolved connection. Prefer work that resolves these dependencies to accumulating another disconnected example. A negative result can eliminate a route and improve the account.
+
+The [physical formation and direction plan](COMPLETION-PLAN.md) remains an active contributing plan. Its completion gates concern that branch; they do not replace the five obligations above. Preservation, publication, formal verification and a local favorable result each contribute at their stated level. None by itself completes the repository's governing task.
+
+Keep the goal through handoffs until these obligations are met or Ren redirects the work. This continuity is compatible with revising or rejecting a candidate foundation when evidence requires it. It calls for sustained investigation of the question, not a predetermined positive conclusion. Universal explanatory scope, inevitable moral improvement, and exactly two attractor basins remain distinct claims.
+
 ## Minimal grounding and universal scope
 
 The initial task is to identify and justify the smallest adequate set of premises about system-forming reality. A provisional starting set is:
