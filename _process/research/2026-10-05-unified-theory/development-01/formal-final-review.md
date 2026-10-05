@@ -35,7 +35,7 @@ The stationary profitability comparison A6 and its earliest-feasible-date argume
 
 ## Independent supplemental checks
 
-The separate [rational-case checker](formal_adversarial_check.py) uses the previously independently implemented decision tree, without invoking the coordinating implementation. It tested 150 rational parameter families satisfying A15, each with seven initial-cash locations and both operator horizons: 2,100 cases. Locations include both exact reserve boundaries, fractional points inside the middle region, and lower/upper controls. Every selected activation pattern, participant value, and protected active-period outcome matched A15/A16. [Results](formal-adversarial-checks.json) retain the deterministic seed and counts.
+The separate [rational-case checker](/Users/ren/theories/experiments/constructed-correction/formal_adversarial_check.py) uses the previously independently implemented decision tree, without invoking the coordinating implementation. It tested 150 rational parameter families satisfying A15, each with seven initial-cash locations and both operator horizons: 2,100 cases. Locations include both exact reserve boundaries, fractional points inside the middle region, and lower/upper controls. Every selected activation pattern, participant value, and protected active-period outcome matched A15/A16. [Results](/Users/ren/theories/experiments/constructed-correction/formal-adversarial-checks.json) retain the deterministic seed and counts.
 
 These finite tests supplement the proof audit. The acceptance concerns the explicit mechanism and assumptions; it does not establish empirical adequacy, originality of game-theoretic ingredients, or protection against an enlarged interference repertoire.
 

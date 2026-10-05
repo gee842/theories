@@ -4,7 +4,7 @@
 
 **Verdict: the implemented exact finite-game recursion matches the independently reconstructed semantics in the tested cases. The main strategic-depletion witness is reproduced and unchanged by reversing operator tie preference. No blocking implementation error was found.** This is computational verification of an authored game, not empirical validation or a theorem about real institutions.
 
-The [independent reference](independent_game_check.py) builds separate budget, operator, and allocation nodes, then recursively resolves decision owners' objectives. Its definitions precede importing the production code; it does not call production `Game`, `choices`, `operator_moves`, or `Result` when generating reference outcomes. Import is used only for subsequent comparison. All arithmetic is rational. The [complete results](independent-game-check-results.json) record code hashes and witnesses.
+The [independent reference](/Users/ren/theories/experiments/constructed-correction/independent_game_check.py) builds separate budget, operator, and allocation nodes, then recursively resolves decision owners' objectives. Its definitions precede importing the production code; it does not call production `Game`, `choices`, `operator_moves`, or `Result` when generating reference outcomes. Import is used only for subsequent comparison. All arithmetic is rational. The [complete results](/Users/ren/theories/experiments/constructed-correction/independent-game-check-results.json) record code hashes and witnesses.
 
 ## Checks completed
 

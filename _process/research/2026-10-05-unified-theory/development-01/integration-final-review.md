@@ -20,7 +20,7 @@ The revised insulated-regeneration countermodel is sound as a deliberately speci
 
 ## Precise recommended edits
 
-1. **CLAIMS.md, introductory paragraph.** The current sentence says that every proved claim uses assumptions displayed in FORMAL-CORE, while the new A-series results appear in FORMATION-MATH. Replace its first sentence after the date with: `“Proved” below always means under the displayed assumptions in the [formal core](FORMAL-CORE.md) or [formation proofs](FORMATION-MATH.md), as indicated.` This is a navigation/scope clarification, not a mathematical defect.
+1. **CLAIMS.md, introductory paragraph.** The current sentence says that every proved claim uses assumptions displayed in FORMAL-CORE, while the new A-series results appear in FORMATION-MATH. Replace its first sentence after the date with: `“Proved” below always means under the displayed assumptions in the [formal core](/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md) or [formation proofs](/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION-MATH.md), as indicated.` This is a navigation/scope clarification, not a mathematical defect.
 
 2. **THEORY.md, Section 8, paragraph beginning “The distinction reaches the foundation”.** Replace `A present improvement can be chosen for its future effects on another actor's corrective means.` with `A costly present intervention can be chosen because it reduces another actor's future corrective means.` The existing phrase “present improvement” obscures the specific result: blocking is more expensive now than safeguarding, but gains future control. The proposed wording tracks that mechanism directly.
 
