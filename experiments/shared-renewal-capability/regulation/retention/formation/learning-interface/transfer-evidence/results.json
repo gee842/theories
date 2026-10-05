@@ -1,0 +1,1396 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-05T19:40:59.035523+00:00",
+  "source_hashes": {
+    "model.py": "a6292b8b6637705815ffcd945c375e563ffab76ef87184b7eccd42de4df9aad3",
+    "check.py": "f9952985be0e9c536631a902a83883560eac3be1a5180e81901c1ec75aaec395",
+    "PROTOCOL.md": "d0e2edec5e2708bec938b54ddad18a9475330e87690d409640a19b638f184dd8",
+    "../model.py": "e7ebb37ba61cff4c500e6331beda5f1d71b971c2c8be972fb710af5b73042ae9"
+  },
+  "arithmetic": "fractions.Fraction; exact finite probabilities",
+  "supplied_decision_interface": {
+    "g": 1,
+    "z": 1,
+    "b": 0,
+    "H": 4,
+    "a": 1,
+    "strict_threshold": "1/4",
+    "terminal_returns": 0
+  },
+  "supplied_memory_interface": {
+    "update_bill": 2,
+    "operation_component": 1,
+    "write_computation_component": 1,
+    "counter_capacity": "0..T per counter, ceil(log2(T+1)) bits each",
+    "additional_apparatus": "Confidence-budget/routing records and a finite certificate table are supplied; memory construction and maintenance are not derived by the common finite-horizon price."
+  },
+  "cases": [
+    {
+      "name": "funded_half",
+      "horizon": 16,
+      "initial_fuel": 33,
+      "initial_source": 32,
+      "beta": "1/2",
+      "alpha": "1/10",
+      "counter_bits_each": 5,
+      "mean_paid_observations": "16",
+      "all_opportunities_paid_probability": "1",
+      "terminal_action_affordable_probability": "1",
+      "mean_ewma": "4251920575/8589934592",
+      "mean_count": "1/2",
+      "mean_lower": "120501/1048576",
+      "ever_false_lower_certificate_probability": "1/65536",
+      "terminal_false_lower_certificate_probability": "1/65536",
+      "policies": {
+        "ewma": {
+          "strict_preference": "29271/32768",
+          "protect": "29271/32768",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "3497/8192",
+          "expected_terminal_bill": "29271/32768",
+          "action_when_true_score_not_strict": "0"
+        },
+        "count": {
+          "strict_preference": "63019/65536",
+          "protect": "63019/65536",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "2517/16384",
+          "expected_terminal_bill": "63019/65536",
+          "action_when_true_score_not_strict": "0"
+        },
+        "certificate": {
+          "strict_preference": "697/65536",
+          "protect": "697/65536",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "64839/16384",
+          "expected_terminal_bill": "697/65536",
+          "action_when_true_score_not_strict": "0"
+        }
+      },
+      "reachable_endpoints": 17,
+      "checked_acquired_edges": 272,
+      "endpoints": [
+        {
+          "paid": 16,
+          "losses": 0,
+          "fuel": 33,
+          "source": 0,
+          "probability": "1/65536",
+          "count": "0",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 1,
+          "fuel": 31,
+          "source": 2,
+          "probability": "1/4096",
+          "count": "1/16",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 2,
+          "fuel": 29,
+          "source": 4,
+          "probability": "15/8192",
+          "count": "1/8",
+          "lower": "0",
+          "ewma_strict_fraction": "3/20",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 3,
+          "fuel": 27,
+          "source": 6,
+          "probability": "35/4096",
+          "count": "3/16",
+          "lower": "0",
+          "ewma_strict_fraction": "3/10",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 4,
+          "fuel": 25,
+          "source": 8,
+          "probability": "455/16384",
+          "count": "1/4",
+          "lower": "0",
+          "ewma_strict_fraction": "85/182",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 5,
+          "fuel": 23,
+          "source": 10,
+          "probability": "273/4096",
+          "count": "5/16",
+          "lower": "0",
+          "ewma_strict_fraction": "927/1456",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 6,
+          "fuel": 21,
+          "source": 12,
+          "probability": "1001/8192",
+          "count": "3/8",
+          "lower": "1/16",
+          "ewma_strict_fraction": "1563/2002",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 7,
+          "fuel": 19,
+          "source": 14,
+          "probability": "715/4096",
+          "count": "7/16",
+          "lower": "1/16",
+          "ewma_strict_fraction": "5063/5720",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 8,
+          "fuel": 17,
+          "source": 16,
+          "probability": "6435/32768",
+          "count": "1/2",
+          "lower": "1/8",
+          "ewma_strict_fraction": "556/585",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 9,
+          "fuel": 15,
+          "source": 18,
+          "probability": "715/4096",
+          "count": "9/16",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1023/1040",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 10,
+          "fuel": 13,
+          "source": 20,
+          "probability": "1001/8192",
+          "count": "5/8",
+          "lower": "3/16",
+          "ewma_strict_fraction": "7979/8008",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 11,
+          "fuel": 11,
+          "source": 22,
+          "probability": "273/4096",
+          "count": "11/16",
+          "lower": "1/4",
+          "ewma_strict_fraction": "2183/2184",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 12,
+          "fuel": 9,
+          "source": 24,
+          "probability": "455/16384",
+          "count": "3/4",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 13,
+          "fuel": 7,
+          "source": 26,
+          "probability": "35/4096",
+          "count": "13/16",
+          "lower": "5/16",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 14,
+          "fuel": 5,
+          "source": 28,
+          "probability": "15/8192",
+          "count": "7/8",
+          "lower": "3/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 15,
+          "fuel": 3,
+          "source": 30,
+          "probability": "1/4096",
+          "count": "15/16",
+          "lower": "1/2",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 16,
+          "fuel": 1,
+          "source": 32,
+          "probability": "1/65536",
+          "count": "1",
+          "lower": "9/16",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        }
+      ]
+    },
+    {
+      "name": "stopped_no_action_reserve",
+      "horizon": 16,
+      "initial_fuel": 16,
+      "initial_source": 32,
+      "beta": "1/2",
+      "alpha": "1/10",
+      "counter_bits_each": 5,
+      "mean_paid_observations": "59101/4096",
+      "all_opportunities_paid_probability": "1/2",
+      "terminal_action_affordable_probability": "26333/65536",
+      "mean_ewma": "19392251272785/35184372088832",
+      "mean_count": "612086093/1180827648",
+      "mean_lower": "52767/524288",
+      "ever_false_lower_certificate_probability": "0",
+      "terminal_false_lower_certificate_probability": "0",
+      "policies": {
+        "ewma": {
+          "strict_preference": "29699/32768",
+          "protect": "20195/65536",
+          "unfunded_preference": "39203/65536",
+          "expected_terminal_recipient_outcome": "45341/16384",
+          "expected_terminal_bill": "20195/65536",
+          "action_when_true_score_not_strict": "0"
+        },
+        "count": {
+          "strict_preference": "63019/65536",
+          "protect": "2977/8192",
+          "unfunded_preference": "39203/65536",
+          "expected_terminal_recipient_outcome": "5215/2048",
+          "expected_terminal_bill": "2977/8192",
+          "action_when_true_score_not_strict": "0"
+        },
+        "certificate": {
+          "strict_preference": "1/256",
+          "protect": "0",
+          "unfunded_preference": "1/256",
+          "expected_terminal_recipient_outcome": "4",
+          "expected_terminal_bill": "0",
+          "action_when_true_score_not_strict": "0"
+        }
+      },
+      "reachable_endpoints": 17,
+      "checked_acquired_edges": 200,
+      "endpoints": [
+        {
+          "paid": 8,
+          "losses": 8,
+          "fuel": 0,
+          "source": 32,
+          "probability": "1/256",
+          "count": "1",
+          "lower": "3/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 9,
+          "losses": 8,
+          "fuel": 0,
+          "source": 30,
+          "probability": "1/64",
+          "count": "8/9",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 10,
+          "losses": 8,
+          "fuel": 0,
+          "source": 28,
+          "probability": "9/256",
+          "count": "4/5",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 11,
+          "losses": 8,
+          "fuel": 0,
+          "source": 26,
+          "probability": "15/256",
+          "count": "8/11",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 12,
+          "losses": 8,
+          "fuel": 0,
+          "source": 24,
+          "probability": "165/2048",
+          "count": "2/3",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 13,
+          "losses": 8,
+          "fuel": 0,
+          "source": 22,
+          "probability": "99/1024",
+          "count": "8/13",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 14,
+          "losses": 8,
+          "fuel": 0,
+          "source": 20,
+          "probability": "429/4096",
+          "count": "4/7",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 15,
+          "losses": 8,
+          "fuel": 0,
+          "source": 18,
+          "probability": "429/4096",
+          "count": "8/15",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 16,
+          "losses": 0,
+          "fuel": 16,
+          "source": 0,
+          "probability": "1/65536",
+          "count": "0",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 1,
+          "fuel": 14,
+          "source": 2,
+          "probability": "1/4096",
+          "count": "1/16",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 2,
+          "fuel": 12,
+          "source": 4,
+          "probability": "15/8192",
+          "count": "1/8",
+          "lower": "0",
+          "ewma_strict_fraction": "3/20",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 3,
+          "fuel": 10,
+          "source": 6,
+          "probability": "35/4096",
+          "count": "3/16",
+          "lower": "0",
+          "ewma_strict_fraction": "3/10",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 4,
+          "fuel": 8,
+          "source": 8,
+          "probability": "455/16384",
+          "count": "1/4",
+          "lower": "0",
+          "ewma_strict_fraction": "85/182",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 5,
+          "fuel": 6,
+          "source": 10,
+          "probability": "273/4096",
+          "count": "5/16",
+          "lower": "0",
+          "ewma_strict_fraction": "927/1456",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 6,
+          "fuel": 4,
+          "source": 12,
+          "probability": "1001/8192",
+          "count": "3/8",
+          "lower": "1/16",
+          "ewma_strict_fraction": "1563/2002",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 7,
+          "fuel": 2,
+          "source": 14,
+          "probability": "715/4096",
+          "count": "7/16",
+          "lower": "1/16",
+          "ewma_strict_fraction": "5063/5720",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 8,
+          "fuel": 0,
+          "source": 16,
+          "probability": "6435/65536",
+          "count": "1/2",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        }
+      ]
+    },
+    {
+      "name": "stopped_with_action_reserve",
+      "horizon": 16,
+      "initial_fuel": 17,
+      "initial_source": 32,
+      "beta": "1/2",
+      "alpha": "1/10",
+      "counter_bits_each": 5,
+      "mean_paid_observations": "59101/4096",
+      "all_opportunities_paid_probability": "1/2",
+      "terminal_action_affordable_probability": "1",
+      "mean_ewma": "19392251272785/35184372088832",
+      "mean_count": "612086093/1180827648",
+      "mean_lower": "52767/524288",
+      "ever_false_lower_certificate_probability": "0",
+      "terminal_false_lower_certificate_probability": "0",
+      "policies": {
+        "ewma": {
+          "strict_preference": "29699/32768",
+          "protect": "29699/32768",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "3069/8192",
+          "expected_terminal_bill": "29699/32768",
+          "action_when_true_score_not_strict": "0"
+        },
+        "count": {
+          "strict_preference": "63019/65536",
+          "protect": "63019/65536",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "2517/16384",
+          "expected_terminal_bill": "63019/65536",
+          "action_when_true_score_not_strict": "0"
+        },
+        "certificate": {
+          "strict_preference": "1/256",
+          "protect": "1/256",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "255/64",
+          "expected_terminal_bill": "1/256",
+          "action_when_true_score_not_strict": "0"
+        }
+      },
+      "reachable_endpoints": 17,
+      "checked_acquired_edges": 200,
+      "endpoints": [
+        {
+          "paid": 8,
+          "losses": 8,
+          "fuel": 1,
+          "source": 32,
+          "probability": "1/256",
+          "count": "1",
+          "lower": "3/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 9,
+          "losses": 8,
+          "fuel": 1,
+          "source": 30,
+          "probability": "1/64",
+          "count": "8/9",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 10,
+          "losses": 8,
+          "fuel": 1,
+          "source": 28,
+          "probability": "9/256",
+          "count": "4/5",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 11,
+          "losses": 8,
+          "fuel": 1,
+          "source": 26,
+          "probability": "15/256",
+          "count": "8/11",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 12,
+          "losses": 8,
+          "fuel": 1,
+          "source": 24,
+          "probability": "165/2048",
+          "count": "2/3",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 13,
+          "losses": 8,
+          "fuel": 1,
+          "source": 22,
+          "probability": "99/1024",
+          "count": "8/13",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 14,
+          "losses": 8,
+          "fuel": 1,
+          "source": 20,
+          "probability": "429/4096",
+          "count": "4/7",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 15,
+          "losses": 8,
+          "fuel": 1,
+          "source": 18,
+          "probability": "429/4096",
+          "count": "8/15",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 0,
+          "fuel": 17,
+          "source": 0,
+          "probability": "1/65536",
+          "count": "0",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 1,
+          "fuel": 15,
+          "source": 2,
+          "probability": "1/4096",
+          "count": "1/16",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 2,
+          "fuel": 13,
+          "source": 4,
+          "probability": "15/8192",
+          "count": "1/8",
+          "lower": "0",
+          "ewma_strict_fraction": "3/20",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 3,
+          "fuel": 11,
+          "source": 6,
+          "probability": "35/4096",
+          "count": "3/16",
+          "lower": "0",
+          "ewma_strict_fraction": "3/10",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 4,
+          "fuel": 9,
+          "source": 8,
+          "probability": "455/16384",
+          "count": "1/4",
+          "lower": "0",
+          "ewma_strict_fraction": "85/182",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 5,
+          "fuel": 7,
+          "source": 10,
+          "probability": "273/4096",
+          "count": "5/16",
+          "lower": "0",
+          "ewma_strict_fraction": "927/1456",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 6,
+          "fuel": 5,
+          "source": 12,
+          "probability": "1001/8192",
+          "count": "3/8",
+          "lower": "1/16",
+          "ewma_strict_fraction": "1563/2002",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 7,
+          "fuel": 3,
+          "source": 14,
+          "probability": "715/4096",
+          "count": "7/16",
+          "lower": "1/16",
+          "ewma_strict_fraction": "5063/5720",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 8,
+          "fuel": 1,
+          "source": 16,
+          "probability": "6435/65536",
+          "count": "1/2",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        }
+      ]
+    },
+    {
+      "name": "funded_threshold_boundary",
+      "horizon": 16,
+      "initial_fuel": 33,
+      "initial_source": 32,
+      "beta": "1/4",
+      "alpha": "1/10",
+      "counter_bits_each": 5,
+      "mean_paid_observations": "16",
+      "all_opportunities_paid_probability": "1",
+      "terminal_action_affordable_probability": "1",
+      "mean_ewma": "4251920575/17179869184",
+      "mean_count": "1/4",
+      "mean_lower": "939387957/68719476736",
+      "ever_false_lower_certificate_probability": "415/16777216",
+      "terminal_false_lower_certificate_probability": "16249/4294967296",
+      "policies": {
+        "ewma": {
+          "strict_preference": "989350265/2147483648",
+          "protect": "989350265/2147483648",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "1158133383/536870912",
+          "expected_terminal_bill": "989350265/2147483648",
+          "action_when_true_score_not_strict": "989350265/2147483648"
+        },
+        "count": {
+          "strict_preference": "1588338283/4294967296",
+          "protect": "1588338283/4294967296",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "2706629013/1073741824",
+          "expected_terminal_bill": "1588338283/4294967296",
+          "action_when_true_score_not_strict": "1588338283/4294967296"
+        },
+        "certificate": {
+          "strict_preference": "16249/4294967296",
+          "protect": "16249/4294967296",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "4294951047/1073741824",
+          "expected_terminal_bill": "16249/4294967296",
+          "action_when_true_score_not_strict": "16249/4294967296"
+        }
+      },
+      "reachable_endpoints": 17,
+      "checked_acquired_edges": 272,
+      "endpoints": [
+        {
+          "paid": 16,
+          "losses": 0,
+          "fuel": 33,
+          "source": 0,
+          "probability": "43046721/4294967296",
+          "count": "0",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 1,
+          "fuel": 31,
+          "source": 2,
+          "probability": "14348907/268435456",
+          "count": "1/16",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 2,
+          "fuel": 29,
+          "source": 4,
+          "probability": "71744535/536870912",
+          "count": "1/8",
+          "lower": "0",
+          "ewma_strict_fraction": "3/20",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 3,
+          "fuel": 27,
+          "source": 6,
+          "probability": "55801305/268435456",
+          "count": "3/16",
+          "lower": "0",
+          "ewma_strict_fraction": "3/10",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 4,
+          "fuel": 25,
+          "source": 8,
+          "probability": "241805655/1073741824",
+          "count": "1/4",
+          "lower": "0",
+          "ewma_strict_fraction": "85/182",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 5,
+          "fuel": 23,
+          "source": 10,
+          "probability": "48361131/268435456",
+          "count": "5/16",
+          "lower": "0",
+          "ewma_strict_fraction": "927/1456",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 6,
+          "fuel": 21,
+          "source": 12,
+          "probability": "59108049/536870912",
+          "count": "3/8",
+          "lower": "1/16",
+          "ewma_strict_fraction": "1563/2002",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 7,
+          "fuel": 19,
+          "source": 14,
+          "probability": "14073345/268435456",
+          "count": "7/16",
+          "lower": "1/16",
+          "ewma_strict_fraction": "5063/5720",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 8,
+          "fuel": 17,
+          "source": 16,
+          "probability": "42220035/2147483648",
+          "count": "1/2",
+          "lower": "1/8",
+          "ewma_strict_fraction": "556/585",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 9,
+          "fuel": 15,
+          "source": 18,
+          "probability": "1563705/268435456",
+          "count": "9/16",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1023/1040",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 10,
+          "fuel": 13,
+          "source": 20,
+          "probability": "729729/536870912",
+          "count": "5/8",
+          "lower": "3/16",
+          "ewma_strict_fraction": "7979/8008",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 11,
+          "fuel": 11,
+          "source": 22,
+          "probability": "66339/268435456",
+          "count": "11/16",
+          "lower": "1/4",
+          "ewma_strict_fraction": "2183/2184",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 12,
+          "fuel": 9,
+          "source": 24,
+          "probability": "36855/1073741824",
+          "count": "3/4",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 13,
+          "fuel": 7,
+          "source": 26,
+          "probability": "945/268435456",
+          "count": "13/16",
+          "lower": "5/16",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 14,
+          "fuel": 5,
+          "source": 28,
+          "probability": "135/536870912",
+          "count": "7/8",
+          "lower": "3/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 15,
+          "fuel": 3,
+          "source": 30,
+          "probability": "3/268435456",
+          "count": "15/16",
+          "lower": "1/2",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 16,
+          "fuel": 1,
+          "source": 32,
+          "probability": "1/4294967296",
+          "count": "1",
+          "lower": "9/16",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        }
+      ]
+    },
+    {
+      "name": "scarce_raw_count_bias",
+      "horizon": 16,
+      "initial_fuel": 3,
+      "initial_source": 32,
+      "beta": "1/8",
+      "alpha": "1/10",
+      "counter_bits_each": 5,
+      "mean_paid_observations": "248242046141055/35184372088832",
+      "all_opportunities_paid_probability": "4747561509943/35184372088832",
+      "terminal_action_affordable_probability": "1",
+      "mean_ewma": "248242046141055/1125899906842624",
+      "mean_count": "1691202783520205569/5796132720425828352",
+      "mean_lower": "0",
+      "ever_false_lower_certificate_probability": "0",
+      "terminal_false_lower_certificate_probability": "0",
+      "policies": {
+        "ewma": {
+          "strict_preference": "0",
+          "protect": "0",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "4",
+          "expected_terminal_bill": "0",
+          "action_when_true_score_not_strict": "0"
+        },
+        "count": {
+          "strict_preference": "169/512",
+          "protect": "169/512",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "343/128",
+          "expected_terminal_bill": "169/512",
+          "action_when_true_score_not_strict": "169/512"
+        },
+        "certificate": {
+          "strict_preference": "0",
+          "protect": "0",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "4",
+          "expected_terminal_bill": "0",
+          "action_when_true_score_not_strict": "0"
+        }
+      },
+      "reachable_endpoints": 17,
+      "checked_acquired_edges": 32,
+      "endpoints": [
+        {
+          "paid": 1,
+          "losses": 1,
+          "fuel": 1,
+          "source": 32,
+          "probability": "1/8",
+          "count": "1",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 2,
+          "losses": 1,
+          "fuel": 1,
+          "source": 30,
+          "probability": "7/64",
+          "count": "1/2",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 3,
+          "losses": 1,
+          "fuel": 1,
+          "source": 28,
+          "probability": "49/512",
+          "count": "1/3",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 4,
+          "losses": 1,
+          "fuel": 1,
+          "source": 26,
+          "probability": "343/4096",
+          "count": "1/4",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 5,
+          "losses": 1,
+          "fuel": 1,
+          "source": 24,
+          "probability": "2401/32768",
+          "count": "1/5",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 6,
+          "losses": 1,
+          "fuel": 1,
+          "source": 22,
+          "probability": "16807/262144",
+          "count": "1/6",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 7,
+          "losses": 1,
+          "fuel": 1,
+          "source": 20,
+          "probability": "117649/2097152",
+          "count": "1/7",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 8,
+          "losses": 1,
+          "fuel": 1,
+          "source": 18,
+          "probability": "823543/16777216",
+          "count": "1/8",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 9,
+          "losses": 1,
+          "fuel": 1,
+          "source": 16,
+          "probability": "5764801/134217728",
+          "count": "1/9",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 10,
+          "losses": 1,
+          "fuel": 1,
+          "source": 14,
+          "probability": "40353607/1073741824",
+          "count": "1/10",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 11,
+          "losses": 1,
+          "fuel": 1,
+          "source": 12,
+          "probability": "282475249/8589934592",
+          "count": "1/11",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 12,
+          "losses": 1,
+          "fuel": 1,
+          "source": 10,
+          "probability": "1977326743/68719476736",
+          "count": "1/12",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 13,
+          "losses": 1,
+          "fuel": 1,
+          "source": 8,
+          "probability": "13841287201/549755813888",
+          "count": "1/13",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 14,
+          "losses": 1,
+          "fuel": 1,
+          "source": 6,
+          "probability": "96889010407/4398046511104",
+          "count": "1/14",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 15,
+          "losses": 1,
+          "fuel": 1,
+          "source": 4,
+          "probability": "678223072849/35184372088832",
+          "count": "1/15",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 0,
+          "fuel": 3,
+          "source": 0,
+          "probability": "33232930569601/281474976710656",
+          "count": "0",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 1,
+          "fuel": 1,
+          "source": 2,
+          "probability": "4747561509943/281474976710656",
+          "count": "1/16",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        }
+      ]
+    }
+  ],
+  "additional_checks": {
+    "small_full_word_count_checks": 45,
+    "fixed_sample_coverage_checks": 96
+  },
+  "negative_witnesses": {
+    "paid_sixteen_ones_then_five_zeros": [
+      {
+        "paid": 0,
+        "losses": 0,
+        "fuel": 43,
+        "source": 42,
+        "ewma": "0",
+        "lower": "0"
+      },
+      {
+        "paid": 1,
+        "losses": 1,
+        "fuel": 41,
+        "source": 42,
+        "ewma": "1/4",
+        "lower": "0"
+      },
+      {
+        "paid": 2,
+        "losses": 2,
+        "fuel": 39,
+        "source": 42,
+        "ewma": "7/16",
+        "lower": "0"
+      },
+      {
+        "paid": 3,
+        "losses": 3,
+        "fuel": 37,
+        "source": 42,
+        "ewma": "37/64",
+        "lower": "0"
+      },
+      {
+        "paid": 4,
+        "losses": 4,
+        "fuel": 35,
+        "source": 42,
+        "ewma": "175/256",
+        "lower": "1/4"
+      },
+      {
+        "paid": 5,
+        "losses": 5,
+        "fuel": 33,
+        "source": 42,
+        "ewma": "781/1024",
+        "lower": "1/4"
+      },
+      {
+        "paid": 6,
+        "losses": 6,
+        "fuel": 31,
+        "source": 42,
+        "ewma": "3367/4096",
+        "lower": "1/4"
+      },
+      {
+        "paid": 7,
+        "losses": 7,
+        "fuel": 29,
+        "source": 42,
+        "ewma": "14197/16384",
+        "lower": "1/4"
+      },
+      {
+        "paid": 8,
+        "losses": 8,
+        "fuel": 27,
+        "source": 42,
+        "ewma": "58975/65536",
+        "lower": "3/8"
+      },
+      {
+        "paid": 9,
+        "losses": 9,
+        "fuel": 25,
+        "source": 42,
+        "ewma": "242461/262144",
+        "lower": "3/8"
+      },
+      {
+        "paid": 10,
+        "losses": 10,
+        "fuel": 23,
+        "source": 42,
+        "ewma": "989527/1048576",
+        "lower": "3/8"
+      },
+      {
+        "paid": 11,
+        "losses": 11,
+        "fuel": 21,
+        "source": 42,
+        "ewma": "4017157/4194304",
+        "lower": "1/2"
+      },
+      {
+        "paid": 12,
+        "losses": 12,
+        "fuel": 19,
+        "source": 42,
+        "ewma": "16245775/16777216",
+        "lower": "1/2"
+      },
+      {
+        "paid": 13,
+        "losses": 13,
+        "fuel": 17,
+        "source": 42,
+        "ewma": "65514541/67108864",
+        "lower": "1/2"
+      },
+      {
+        "paid": 14,
+        "losses": 14,
+        "fuel": 15,
+        "source": 42,
+        "ewma": "263652487/268435456",
+        "lower": "1/2"
+      },
+      {
+        "paid": 15,
+        "losses": 15,
+        "fuel": 13,
+        "source": 42,
+        "ewma": "1059392917/1073741824",
+        "lower": "1/2"
+      },
+      {
+        "paid": 16,
+        "losses": 16,
+        "fuel": 11,
+        "source": 42,
+        "ewma": "4251920575/4294967296",
+        "lower": "9/16"
+      },
+      {
+        "paid": 17,
+        "losses": 16,
+        "fuel": 11,
+        "source": 40,
+        "ewma": "12755761725/17179869184",
+        "lower": "1/2"
+      },
+      {
+        "paid": 18,
+        "losses": 16,
+        "fuel": 11,
+        "source": 38,
+        "ewma": "38267285175/68719476736",
+        "lower": "7/16"
+      },
+      {
+        "paid": 19,
+        "losses": 16,
+        "fuel": 11,
+        "source": 36,
+        "ewma": "114801855525/274877906944",
+        "lower": "3/8"
+      },
+      {
+        "paid": 20,
+        "losses": 16,
+        "fuel": 11,
+        "source": 34,
+        "ewma": "344405566575/1099511627776",
+        "lower": "3/8"
+      },
+      {
+        "paid": 21,
+        "losses": 16,
+        "fuel": 11,
+        "source": 32,
+        "ewma": "1033216699725/4398046511104",
+        "lower": "5/16"
+      }
+    ],
+    "five_zero_uniform_ewma_upper_bound": "243/1024",
+    "history_probability_under_stationary_half": "1/2097152",
+    "after_drift_current_beta": "0",
+    "drift_note": "The same later zero outcomes can follow a switch to beta=0; the retained positive certificate is then stale, outside stationary coverage.",
+    "certificate_terminal_action_after_path": {
+      "fuel": 10,
+      "source": 32,
+      "recipient_outcome": 0,
+      "bill": 1
+    },
+    "all_one_probability_under_boundary_beta": "1/4294967296",
+    "all_one_lower_certificate": "9/16"
+  },
+  "scope": "A finite, supplied counter/certificate circuit on the existing paid teacher histories, and a separate affordable next action with supplied g=z=1 and routing. Stationary model-score calibration, not phenomenal valence, derived correspondence, memory construction, a harmful-action certificate, infinite funded execution, or durable concern. Independent review is recorded separately."
+}

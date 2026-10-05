@@ -1,0 +1,6135 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-05T19:43:48.026481+00:00",
+  "source_hashes": {
+    "model.py": "a6292b8b6637705815ffcd945c375e563ffab76ef87184b7eccd42de4df9aad3",
+    "check.py": "f9952985be0e9c536631a902a83883560eac3be1a5180e81901c1ec75aaec395",
+    "PROTOCOL.md": "d0e2edec5e2708bec938b54ddad18a9475330e87690d409640a19b638f184dd8",
+    "README.md": "0c44563f6665e0484dd52bc708c9d453c043d2a9f9c76a3f311a53463ed97a83",
+    "results.json": "a0110494be14d117d439a9119cd867b7b2ce10d4b126c1d97bead8f34e2286fc",
+    "../model.py": "e7ebb37ba61cff4c500e6331beda5f1d71b971c2c8be972fb710af5b73042ae9",
+    "independent_check.py": "caf3f0fd45e41ed24efb05c7848fc54a3aaea0ce3ee13052e669e7dfe22c2d5f"
+  },
+  "unchanged_inputs": true,
+  "scope": "Exact finite paid-word, terminal-action and discrete certificate checks; no empirical calibration, infinite-support or shared-routing-origin claim.",
+  "cases": {
+    "funded_half": {
+      "name": "funded_half",
+      "horizon": 16,
+      "initial_fuel": 33,
+      "initial_source": 32,
+      "beta": "1/2",
+      "alpha": "1/10",
+      "counter_bits_each": 5,
+      "mean_paid_observations": "16",
+      "all_opportunities_paid_probability": "1",
+      "terminal_action_affordable_probability": "1",
+      "mean_ewma": "4251920575/8589934592",
+      "mean_count": "1/2",
+      "mean_lower": "120501/1048576",
+      "ever_false_lower_certificate_probability": "1/65536",
+      "terminal_false_lower_certificate_probability": "1/65536",
+      "policies": {
+        "ewma": {
+          "strict_preference": "29271/32768",
+          "protect": "29271/32768",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "3497/8192",
+          "expected_terminal_bill": "29271/32768",
+          "action_when_true_score_not_strict": "0"
+        },
+        "count": {
+          "strict_preference": "63019/65536",
+          "protect": "63019/65536",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "2517/16384",
+          "expected_terminal_bill": "63019/65536",
+          "action_when_true_score_not_strict": "0"
+        },
+        "certificate": {
+          "strict_preference": "697/65536",
+          "protect": "697/65536",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "64839/16384",
+          "expected_terminal_bill": "697/65536",
+          "action_when_true_score_not_strict": "0"
+        }
+      },
+      "reachable_endpoints": 17,
+      "checked_acquired_edges": 272,
+      "endpoints": [
+        {
+          "paid": 16,
+          "losses": 0,
+          "fuel": 33,
+          "source": 0,
+          "probability": "1/65536",
+          "count": "0",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 1,
+          "fuel": 31,
+          "source": 2,
+          "probability": "1/4096",
+          "count": "1/16",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 2,
+          "fuel": 29,
+          "source": 4,
+          "probability": "15/8192",
+          "count": "1/8",
+          "lower": "0",
+          "ewma_strict_fraction": "3/20",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 3,
+          "fuel": 27,
+          "source": 6,
+          "probability": "35/4096",
+          "count": "3/16",
+          "lower": "0",
+          "ewma_strict_fraction": "3/10",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 4,
+          "fuel": 25,
+          "source": 8,
+          "probability": "455/16384",
+          "count": "1/4",
+          "lower": "0",
+          "ewma_strict_fraction": "85/182",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 5,
+          "fuel": 23,
+          "source": 10,
+          "probability": "273/4096",
+          "count": "5/16",
+          "lower": "0",
+          "ewma_strict_fraction": "927/1456",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 6,
+          "fuel": 21,
+          "source": 12,
+          "probability": "1001/8192",
+          "count": "3/8",
+          "lower": "1/16",
+          "ewma_strict_fraction": "1563/2002",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 7,
+          "fuel": 19,
+          "source": 14,
+          "probability": "715/4096",
+          "count": "7/16",
+          "lower": "1/16",
+          "ewma_strict_fraction": "5063/5720",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 8,
+          "fuel": 17,
+          "source": 16,
+          "probability": "6435/32768",
+          "count": "1/2",
+          "lower": "1/8",
+          "ewma_strict_fraction": "556/585",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 9,
+          "fuel": 15,
+          "source": 18,
+          "probability": "715/4096",
+          "count": "9/16",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1023/1040",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 10,
+          "fuel": 13,
+          "source": 20,
+          "probability": "1001/8192",
+          "count": "5/8",
+          "lower": "3/16",
+          "ewma_strict_fraction": "7979/8008",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 11,
+          "fuel": 11,
+          "source": 22,
+          "probability": "273/4096",
+          "count": "11/16",
+          "lower": "1/4",
+          "ewma_strict_fraction": "2183/2184",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 12,
+          "fuel": 9,
+          "source": 24,
+          "probability": "455/16384",
+          "count": "3/4",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 13,
+          "fuel": 7,
+          "source": 26,
+          "probability": "35/4096",
+          "count": "13/16",
+          "lower": "5/16",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 14,
+          "fuel": 5,
+          "source": 28,
+          "probability": "15/8192",
+          "count": "7/8",
+          "lower": "3/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 15,
+          "fuel": 3,
+          "source": 30,
+          "probability": "1/4096",
+          "count": "15/16",
+          "lower": "1/2",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 16,
+          "fuel": 1,
+          "source": 32,
+          "probability": "1/65536",
+          "count": "1",
+          "lower": "9/16",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        }
+      ],
+      "independently_enumerated_paid_words": 65536
+    },
+    "stopped_no_action_reserve": {
+      "name": "stopped_no_action_reserve",
+      "horizon": 16,
+      "initial_fuel": 16,
+      "initial_source": 32,
+      "beta": "1/2",
+      "alpha": "1/10",
+      "counter_bits_each": 5,
+      "mean_paid_observations": "59101/4096",
+      "all_opportunities_paid_probability": "1/2",
+      "terminal_action_affordable_probability": "26333/65536",
+      "mean_ewma": "19392251272785/35184372088832",
+      "mean_count": "612086093/1180827648",
+      "mean_lower": "52767/524288",
+      "ever_false_lower_certificate_probability": "0",
+      "terminal_false_lower_certificate_probability": "0",
+      "policies": {
+        "ewma": {
+          "strict_preference": "29699/32768",
+          "protect": "20195/65536",
+          "unfunded_preference": "39203/65536",
+          "expected_terminal_recipient_outcome": "45341/16384",
+          "expected_terminal_bill": "20195/65536",
+          "action_when_true_score_not_strict": "0"
+        },
+        "count": {
+          "strict_preference": "63019/65536",
+          "protect": "2977/8192",
+          "unfunded_preference": "39203/65536",
+          "expected_terminal_recipient_outcome": "5215/2048",
+          "expected_terminal_bill": "2977/8192",
+          "action_when_true_score_not_strict": "0"
+        },
+        "certificate": {
+          "strict_preference": "1/256",
+          "protect": "0",
+          "unfunded_preference": "1/256",
+          "expected_terminal_recipient_outcome": "4",
+          "expected_terminal_bill": "0",
+          "action_when_true_score_not_strict": "0"
+        }
+      },
+      "reachable_endpoints": 17,
+      "checked_acquired_edges": 200,
+      "endpoints": [
+        {
+          "paid": 8,
+          "losses": 8,
+          "fuel": 0,
+          "source": 32,
+          "probability": "1/256",
+          "count": "1",
+          "lower": "3/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 9,
+          "losses": 8,
+          "fuel": 0,
+          "source": 30,
+          "probability": "1/64",
+          "count": "8/9",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 10,
+          "losses": 8,
+          "fuel": 0,
+          "source": 28,
+          "probability": "9/256",
+          "count": "4/5",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 11,
+          "losses": 8,
+          "fuel": 0,
+          "source": 26,
+          "probability": "15/256",
+          "count": "8/11",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 12,
+          "losses": 8,
+          "fuel": 0,
+          "source": 24,
+          "probability": "165/2048",
+          "count": "2/3",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 13,
+          "losses": 8,
+          "fuel": 0,
+          "source": 22,
+          "probability": "99/1024",
+          "count": "8/13",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 14,
+          "losses": 8,
+          "fuel": 0,
+          "source": 20,
+          "probability": "429/4096",
+          "count": "4/7",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 15,
+          "losses": 8,
+          "fuel": 0,
+          "source": 18,
+          "probability": "429/4096",
+          "count": "8/15",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        },
+        {
+          "paid": 16,
+          "losses": 0,
+          "fuel": 16,
+          "source": 0,
+          "probability": "1/65536",
+          "count": "0",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 1,
+          "fuel": 14,
+          "source": 2,
+          "probability": "1/4096",
+          "count": "1/16",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 2,
+          "fuel": 12,
+          "source": 4,
+          "probability": "15/8192",
+          "count": "1/8",
+          "lower": "0",
+          "ewma_strict_fraction": "3/20",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 3,
+          "fuel": 10,
+          "source": 6,
+          "probability": "35/4096",
+          "count": "3/16",
+          "lower": "0",
+          "ewma_strict_fraction": "3/10",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 4,
+          "fuel": 8,
+          "source": 8,
+          "probability": "455/16384",
+          "count": "1/4",
+          "lower": "0",
+          "ewma_strict_fraction": "85/182",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 5,
+          "fuel": 6,
+          "source": 10,
+          "probability": "273/4096",
+          "count": "5/16",
+          "lower": "0",
+          "ewma_strict_fraction": "927/1456",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 6,
+          "fuel": 4,
+          "source": 12,
+          "probability": "1001/8192",
+          "count": "3/8",
+          "lower": "1/16",
+          "ewma_strict_fraction": "1563/2002",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 7,
+          "fuel": 2,
+          "source": 14,
+          "probability": "715/4096",
+          "count": "7/16",
+          "lower": "1/16",
+          "ewma_strict_fraction": "5063/5720",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 8,
+          "fuel": 0,
+          "source": 16,
+          "probability": "6435/65536",
+          "count": "1/2",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": false
+        }
+      ],
+      "independently_enumerated_paid_words": 39203
+    },
+    "stopped_with_action_reserve": {
+      "name": "stopped_with_action_reserve",
+      "horizon": 16,
+      "initial_fuel": 17,
+      "initial_source": 32,
+      "beta": "1/2",
+      "alpha": "1/10",
+      "counter_bits_each": 5,
+      "mean_paid_observations": "59101/4096",
+      "all_opportunities_paid_probability": "1/2",
+      "terminal_action_affordable_probability": "1",
+      "mean_ewma": "19392251272785/35184372088832",
+      "mean_count": "612086093/1180827648",
+      "mean_lower": "52767/524288",
+      "ever_false_lower_certificate_probability": "0",
+      "terminal_false_lower_certificate_probability": "0",
+      "policies": {
+        "ewma": {
+          "strict_preference": "29699/32768",
+          "protect": "29699/32768",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "3069/8192",
+          "expected_terminal_bill": "29699/32768",
+          "action_when_true_score_not_strict": "0"
+        },
+        "count": {
+          "strict_preference": "63019/65536",
+          "protect": "63019/65536",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "2517/16384",
+          "expected_terminal_bill": "63019/65536",
+          "action_when_true_score_not_strict": "0"
+        },
+        "certificate": {
+          "strict_preference": "1/256",
+          "protect": "1/256",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "255/64",
+          "expected_terminal_bill": "1/256",
+          "action_when_true_score_not_strict": "0"
+        }
+      },
+      "reachable_endpoints": 17,
+      "checked_acquired_edges": 200,
+      "endpoints": [
+        {
+          "paid": 8,
+          "losses": 8,
+          "fuel": 1,
+          "source": 32,
+          "probability": "1/256",
+          "count": "1",
+          "lower": "3/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 9,
+          "losses": 8,
+          "fuel": 1,
+          "source": 30,
+          "probability": "1/64",
+          "count": "8/9",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 10,
+          "losses": 8,
+          "fuel": 1,
+          "source": 28,
+          "probability": "9/256",
+          "count": "4/5",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 11,
+          "losses": 8,
+          "fuel": 1,
+          "source": 26,
+          "probability": "15/256",
+          "count": "8/11",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 12,
+          "losses": 8,
+          "fuel": 1,
+          "source": 24,
+          "probability": "165/2048",
+          "count": "2/3",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 13,
+          "losses": 8,
+          "fuel": 1,
+          "source": 22,
+          "probability": "99/1024",
+          "count": "8/13",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 14,
+          "losses": 8,
+          "fuel": 1,
+          "source": 20,
+          "probability": "429/4096",
+          "count": "4/7",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 15,
+          "losses": 8,
+          "fuel": 1,
+          "source": 18,
+          "probability": "429/4096",
+          "count": "8/15",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 0,
+          "fuel": 17,
+          "source": 0,
+          "probability": "1/65536",
+          "count": "0",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 1,
+          "fuel": 15,
+          "source": 2,
+          "probability": "1/4096",
+          "count": "1/16",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 2,
+          "fuel": 13,
+          "source": 4,
+          "probability": "15/8192",
+          "count": "1/8",
+          "lower": "0",
+          "ewma_strict_fraction": "3/20",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 3,
+          "fuel": 11,
+          "source": 6,
+          "probability": "35/4096",
+          "count": "3/16",
+          "lower": "0",
+          "ewma_strict_fraction": "3/10",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 4,
+          "fuel": 9,
+          "source": 8,
+          "probability": "455/16384",
+          "count": "1/4",
+          "lower": "0",
+          "ewma_strict_fraction": "85/182",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 5,
+          "fuel": 7,
+          "source": 10,
+          "probability": "273/4096",
+          "count": "5/16",
+          "lower": "0",
+          "ewma_strict_fraction": "927/1456",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 6,
+          "fuel": 5,
+          "source": 12,
+          "probability": "1001/8192",
+          "count": "3/8",
+          "lower": "1/16",
+          "ewma_strict_fraction": "1563/2002",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 7,
+          "fuel": 3,
+          "source": 14,
+          "probability": "715/4096",
+          "count": "7/16",
+          "lower": "1/16",
+          "ewma_strict_fraction": "5063/5720",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 8,
+          "fuel": 1,
+          "source": 16,
+          "probability": "6435/65536",
+          "count": "1/2",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        }
+      ],
+      "independently_enumerated_paid_words": 39203
+    },
+    "funded_threshold_boundary": {
+      "name": "funded_threshold_boundary",
+      "horizon": 16,
+      "initial_fuel": 33,
+      "initial_source": 32,
+      "beta": "1/4",
+      "alpha": "1/10",
+      "counter_bits_each": 5,
+      "mean_paid_observations": "16",
+      "all_opportunities_paid_probability": "1",
+      "terminal_action_affordable_probability": "1",
+      "mean_ewma": "4251920575/17179869184",
+      "mean_count": "1/4",
+      "mean_lower": "939387957/68719476736",
+      "ever_false_lower_certificate_probability": "415/16777216",
+      "terminal_false_lower_certificate_probability": "16249/4294967296",
+      "policies": {
+        "ewma": {
+          "strict_preference": "989350265/2147483648",
+          "protect": "989350265/2147483648",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "1158133383/536870912",
+          "expected_terminal_bill": "989350265/2147483648",
+          "action_when_true_score_not_strict": "989350265/2147483648"
+        },
+        "count": {
+          "strict_preference": "1588338283/4294967296",
+          "protect": "1588338283/4294967296",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "2706629013/1073741824",
+          "expected_terminal_bill": "1588338283/4294967296",
+          "action_when_true_score_not_strict": "1588338283/4294967296"
+        },
+        "certificate": {
+          "strict_preference": "16249/4294967296",
+          "protect": "16249/4294967296",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "4294951047/1073741824",
+          "expected_terminal_bill": "16249/4294967296",
+          "action_when_true_score_not_strict": "16249/4294967296"
+        }
+      },
+      "reachable_endpoints": 17,
+      "checked_acquired_edges": 272,
+      "endpoints": [
+        {
+          "paid": 16,
+          "losses": 0,
+          "fuel": 33,
+          "source": 0,
+          "probability": "43046721/4294967296",
+          "count": "0",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 1,
+          "fuel": 31,
+          "source": 2,
+          "probability": "14348907/268435456",
+          "count": "1/16",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 2,
+          "fuel": 29,
+          "source": 4,
+          "probability": "71744535/536870912",
+          "count": "1/8",
+          "lower": "0",
+          "ewma_strict_fraction": "3/20",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 3,
+          "fuel": 27,
+          "source": 6,
+          "probability": "55801305/268435456",
+          "count": "3/16",
+          "lower": "0",
+          "ewma_strict_fraction": "3/10",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 4,
+          "fuel": 25,
+          "source": 8,
+          "probability": "241805655/1073741824",
+          "count": "1/4",
+          "lower": "0",
+          "ewma_strict_fraction": "85/182",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 5,
+          "fuel": 23,
+          "source": 10,
+          "probability": "48361131/268435456",
+          "count": "5/16",
+          "lower": "0",
+          "ewma_strict_fraction": "927/1456",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 6,
+          "fuel": 21,
+          "source": 12,
+          "probability": "59108049/536870912",
+          "count": "3/8",
+          "lower": "1/16",
+          "ewma_strict_fraction": "1563/2002",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 7,
+          "fuel": 19,
+          "source": 14,
+          "probability": "14073345/268435456",
+          "count": "7/16",
+          "lower": "1/16",
+          "ewma_strict_fraction": "5063/5720",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 8,
+          "fuel": 17,
+          "source": 16,
+          "probability": "42220035/2147483648",
+          "count": "1/2",
+          "lower": "1/8",
+          "ewma_strict_fraction": "556/585",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 9,
+          "fuel": 15,
+          "source": 18,
+          "probability": "1563705/268435456",
+          "count": "9/16",
+          "lower": "1/8",
+          "ewma_strict_fraction": "1023/1040",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 10,
+          "fuel": 13,
+          "source": 20,
+          "probability": "729729/536870912",
+          "count": "5/8",
+          "lower": "3/16",
+          "ewma_strict_fraction": "7979/8008",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 11,
+          "fuel": 11,
+          "source": 22,
+          "probability": "66339/268435456",
+          "count": "11/16",
+          "lower": "1/4",
+          "ewma_strict_fraction": "2183/2184",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 12,
+          "fuel": 9,
+          "source": 24,
+          "probability": "36855/1073741824",
+          "count": "3/4",
+          "lower": "1/4",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 13,
+          "fuel": 7,
+          "source": 26,
+          "probability": "945/268435456",
+          "count": "13/16",
+          "lower": "5/16",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 14,
+          "fuel": 5,
+          "source": 28,
+          "probability": "135/536870912",
+          "count": "7/8",
+          "lower": "3/8",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 15,
+          "fuel": 3,
+          "source": 30,
+          "probability": "3/268435456",
+          "count": "15/16",
+          "lower": "1/2",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 16,
+          "fuel": 1,
+          "source": 32,
+          "probability": "1/4294967296",
+          "count": "1",
+          "lower": "9/16",
+          "ewma_strict_fraction": "1",
+          "action_affordable": true
+        }
+      ],
+      "independently_enumerated_paid_words": 65536
+    },
+    "scarce_raw_count_bias": {
+      "name": "scarce_raw_count_bias",
+      "horizon": 16,
+      "initial_fuel": 3,
+      "initial_source": 32,
+      "beta": "1/8",
+      "alpha": "1/10",
+      "counter_bits_each": 5,
+      "mean_paid_observations": "248242046141055/35184372088832",
+      "all_opportunities_paid_probability": "4747561509943/35184372088832",
+      "terminal_action_affordable_probability": "1",
+      "mean_ewma": "248242046141055/1125899906842624",
+      "mean_count": "1691202783520205569/5796132720425828352",
+      "mean_lower": "0",
+      "ever_false_lower_certificate_probability": "0",
+      "terminal_false_lower_certificate_probability": "0",
+      "policies": {
+        "ewma": {
+          "strict_preference": "0",
+          "protect": "0",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "4",
+          "expected_terminal_bill": "0",
+          "action_when_true_score_not_strict": "0"
+        },
+        "count": {
+          "strict_preference": "169/512",
+          "protect": "169/512",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "343/128",
+          "expected_terminal_bill": "169/512",
+          "action_when_true_score_not_strict": "169/512"
+        },
+        "certificate": {
+          "strict_preference": "0",
+          "protect": "0",
+          "unfunded_preference": "0",
+          "expected_terminal_recipient_outcome": "4",
+          "expected_terminal_bill": "0",
+          "action_when_true_score_not_strict": "0"
+        }
+      },
+      "reachable_endpoints": 17,
+      "checked_acquired_edges": 32,
+      "endpoints": [
+        {
+          "paid": 1,
+          "losses": 1,
+          "fuel": 1,
+          "source": 32,
+          "probability": "1/8",
+          "count": "1",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 2,
+          "losses": 1,
+          "fuel": 1,
+          "source": 30,
+          "probability": "7/64",
+          "count": "1/2",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 3,
+          "losses": 1,
+          "fuel": 1,
+          "source": 28,
+          "probability": "49/512",
+          "count": "1/3",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 4,
+          "losses": 1,
+          "fuel": 1,
+          "source": 26,
+          "probability": "343/4096",
+          "count": "1/4",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 5,
+          "losses": 1,
+          "fuel": 1,
+          "source": 24,
+          "probability": "2401/32768",
+          "count": "1/5",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 6,
+          "losses": 1,
+          "fuel": 1,
+          "source": 22,
+          "probability": "16807/262144",
+          "count": "1/6",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 7,
+          "losses": 1,
+          "fuel": 1,
+          "source": 20,
+          "probability": "117649/2097152",
+          "count": "1/7",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 8,
+          "losses": 1,
+          "fuel": 1,
+          "source": 18,
+          "probability": "823543/16777216",
+          "count": "1/8",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 9,
+          "losses": 1,
+          "fuel": 1,
+          "source": 16,
+          "probability": "5764801/134217728",
+          "count": "1/9",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 10,
+          "losses": 1,
+          "fuel": 1,
+          "source": 14,
+          "probability": "40353607/1073741824",
+          "count": "1/10",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 11,
+          "losses": 1,
+          "fuel": 1,
+          "source": 12,
+          "probability": "282475249/8589934592",
+          "count": "1/11",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 12,
+          "losses": 1,
+          "fuel": 1,
+          "source": 10,
+          "probability": "1977326743/68719476736",
+          "count": "1/12",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 13,
+          "losses": 1,
+          "fuel": 1,
+          "source": 8,
+          "probability": "13841287201/549755813888",
+          "count": "1/13",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 14,
+          "losses": 1,
+          "fuel": 1,
+          "source": 6,
+          "probability": "96889010407/4398046511104",
+          "count": "1/14",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 15,
+          "losses": 1,
+          "fuel": 1,
+          "source": 4,
+          "probability": "678223072849/35184372088832",
+          "count": "1/15",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 0,
+          "fuel": 3,
+          "source": 0,
+          "probability": "33232930569601/281474976710656",
+          "count": "0",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        },
+        {
+          "paid": 16,
+          "losses": 1,
+          "fuel": 1,
+          "source": 2,
+          "probability": "4747561509943/281474976710656",
+          "count": "1/16",
+          "lower": "0",
+          "ewma_strict_fraction": "0",
+          "action_affordable": true
+        }
+      ],
+      "independently_enumerated_paid_words": 17
+    }
+  },
+  "coverage_checks": [
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "1/16",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "1/8",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "3/16",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 1,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/20"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "1/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "1/8",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "3/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 2,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "1/16",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "1/8",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "3/16",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 3,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/120"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "1/16",
+      "violation_probability": "1/65536",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "1/8",
+      "violation_probability": "1/4096",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "3/16",
+      "violation_probability": "81/65536",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 4,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/200"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "1/16",
+      "violation_probability": "1/1048576",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "1/8",
+      "violation_probability": "1/32768",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "3/16",
+      "violation_probability": "243/1048576",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 5,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/300"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "1/16",
+      "violation_probability": "1/16777216",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "1/8",
+      "violation_probability": "1/262144",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "3/16",
+      "violation_probability": "729/16777216",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 6,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/420"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "1/16",
+      "violation_probability": "53/134217728",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "1/8",
+      "violation_probability": "25/1048576",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "3/16",
+      "violation_probability": "34263/134217728",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 7,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/560"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "1/16",
+      "violation_probability": "195421/4294967296",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "1/8",
+      "violation_probability": "57/16777216",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "3/16",
+      "violation_probability": "234009/4294967296",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "1/4",
+      "violation_probability": "1/65536",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "5/16",
+      "violation_probability": "390625/4294967296",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 8,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/720"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "1/16",
+      "violation_probability": "36467/8589934592",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "1/8",
+      "violation_probability": "1/2097152",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "3/16",
+      "violation_probability": "98415/8589934592",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "1/4",
+      "violation_probability": "1/262144",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "5/16",
+      "violation_probability": "1953125/68719476736",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 9,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "1/16",
+      "violation_probability": "5523263/549755813888",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "1/8",
+      "violation_probability": "569/268435456",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "3/16",
+      "violation_probability": "13128561/274877906944",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "1/4",
+      "violation_probability": "1/1048576",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "5/16",
+      "violation_probability": "9765625/1099511627776",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 10,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/1100"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "1/16",
+      "violation_probability": "8637833/8796093022208",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "1/8",
+      "violation_probability": "2773/8589934592",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "3/16",
+      "violation_probability": "191574639/17592186044416",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "1/4",
+      "violation_probability": "17/2097152",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "5/16",
+      "violation_probability": "615234375/8796093022208",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "3/8",
+      "violation_probability": "177147/8589934592",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "7/16",
+      "violation_probability": "1977326743/17592186044416",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 11,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/1320"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "1/16",
+      "violation_probability": "313620953/140737488355328",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "1/8",
+      "violation_probability": "78779/68719476736",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "3/16",
+      "violation_probability": "10200380139/281474976710656",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "1/4",
+      "violation_probability": "37/16777216",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "5/16",
+      "violation_probability": "6689453125/281474976710656",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "3/8",
+      "violation_probability": "531441/68719476736",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "7/16",
+      "violation_probability": "13841287201/281474976710656",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 12,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/1560"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "1/16",
+      "violation_probability": "5140201999/1125899906842624",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "1/8",
+      "violation_probability": "25503/137438953472",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "3/16",
+      "violation_probability": "9882381591/1125899906842624",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "1/4",
+      "violation_probability": "5/8388608",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "5/16",
+      "violation_probability": "9033203125/1125899906842624",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "3/8",
+      "violation_probability": "1594323/549755813888",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "7/16",
+      "violation_probability": "96889010407/4503599627370496",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 13,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/1820"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "1/16",
+      "violation_probability": "8944560109/18014398509481984",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "1/8",
+      "violation_probability": "2532811/4398046511104",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "3/16",
+      "violation_probability": "1838318841459/72057594037927936",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "1/4",
+      "violation_probability": "431/134217728",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "5/16",
+      "violation_probability": "1441162109375/36028797018963968",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "3/8",
+      "violation_probability": "4782969/4398046511104",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "7/16",
+      "violation_probability": "678223072849/72057594037927936",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 14,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/2100"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "1/16",
+      "violation_probability": "144855152747/144115188075855872",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "1/8",
+      "violation_probability": "3438681/35184372088832",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "3/16",
+      "violation_probability": "7466696625987/1152921504606846976",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "1/4",
+      "violation_probability": "991/1073741824",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "5/16",
+      "violation_probability": "16546630859375/1152921504606846976",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "3/8",
+      "violation_probability": "14348907/35184372088832",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "7/16",
+      "violation_probability": "4747561509943/1152921504606846976",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 15,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/2400"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "1/16",
+      "violation_probability": "35033660723491/18446744073709551616",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "1/8",
+      "violation_probability": "1020114061/281474976710656",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "3/16",
+      "violation_probability": "316984789552005/18446744073709551616",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "1/4",
+      "violation_probability": "16249/4294967296",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "5/16",
+      "violation_probability": "94146728515625/18446744073709551616",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "3/8",
+      "violation_probability": "1190959281/281474976710656",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "7/16",
+      "violation_probability": "716881788001393/18446744073709551616",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "1/2",
+      "violation_probability": "1/65536",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 16,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/2720"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "1/16",
+      "violation_probability": "32886268209803/147573952589676412928",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "1/8",
+      "violation_probability": "2197780551/281474976710656",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "3/16",
+      "violation_probability": "41777423595513/9223372036854775808",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "1/4",
+      "violation_probability": "3319/268435456",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "5/16",
+      "violation_probability": "189239501953125/9223372036854775808",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "3/8",
+      "violation_probability": "3285899703/140737488355328",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "7/16",
+      "violation_probability": "166164652848005/9223372036854775808",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "1/2",
+      "violation_probability": "1/131072",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 17,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/3060"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "1/16",
+      "violation_probability": "993459324559973/2361183241434822606848",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "1/8",
+      "violation_probability": "3568013177/2251799813685248",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "3/16",
+      "violation_probability": "6642064130249475/590295810358705651712",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "1/4",
+      "violation_probability": "67831/17179869184",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "5/16",
+      "violation_probability": "4515594482421875/590295810358705651712",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "3/8",
+      "violation_probability": "22082967873/2251799813685248",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "7/16",
+      "violation_probability": "39314556863837983/4722366482869645213696",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "1/2",
+      "violation_probability": "1/262144",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "9/16",
+      "violation_probability": "150094635296999121/4722366482869645213696",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 18,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/3420"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "1/16",
+      "violation_probability": "28511883089443943/37778931862957161709568",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "1/8",
+      "violation_probability": "240304502743/72057594037927936",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "3/16",
+      "violation_probability": "57782000382654123/18889465931478580854784",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "1/4",
+      "violation_probability": "395915/34359738368",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "5/16",
+      "violation_probability": "13337554931640625/4722366482869645213696",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "3/8",
+      "violation_probability": "590041404747/144115188075855872",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "7/16",
+      "violation_probability": "144928810214029961/37778931862957161709568",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "1/2",
+      "violation_probability": "1/524288",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "9/16",
+      "violation_probability": "1350851717672992089/75557863725914323419136",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 19,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/3800"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "1/16",
+      "violation_probability": "56666556042431213/604462909807314587353088",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "1/8",
+      "violation_probability": "397432859807/576460752303423488",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "3/16",
+      "violation_probability": "2184733570660145595/302231454903657293676544",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "1/4",
+      "violation_probability": "1048117/274877906944",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "5/16",
+      "violation_probability": "3018387603759765625/302231454903657293676544",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "3/8",
+      "violation_probability": "20362433481351/1152921504606846976",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "7/16",
+      "violation_probability": "27192878671506587851/1208925819614629174706176",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "1/2",
+      "violation_probability": "21/1048576",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "9/16",
+      "violation_probability": "12157665459056928801/1208925819614629174706176",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 1,
+      "n": 20,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/4200"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "1/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "1/8",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "3/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 1,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/60"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "1/16",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "1/8",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "3/16",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 2,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/180"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "1/16",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "1/8",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "3/16",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 3,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/360"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "1/16",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "1/8",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "3/16",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 4,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/600"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "1/16",
+      "violation_probability": "1/1048576",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "1/8",
+      "violation_probability": "1/32768",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "3/16",
+      "violation_probability": "243/1048576",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 5,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/900"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "1/16",
+      "violation_probability": "1/16777216",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "1/8",
+      "violation_probability": "1/262144",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "3/16",
+      "violation_probability": "729/16777216",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 6,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/1260"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "1/16",
+      "violation_probability": "1/268435456",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "1/8",
+      "violation_probability": "1/2097152",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "3/16",
+      "violation_probability": "2187/268435456",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "1/4",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "5/16",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 7,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/1680"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "1/16",
+      "violation_probability": "6421/4294967296",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "1/8",
+      "violation_probability": "57/16777216",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "3/16",
+      "violation_probability": "234009/4294967296",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "1/4",
+      "violation_probability": "1/65536",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "5/16",
+      "violation_probability": "390625/4294967296",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 8,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/2160"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "1/16",
+      "violation_probability": "36467/8589934592",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "1/8",
+      "violation_probability": "1/2097152",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "3/16",
+      "violation_probability": "98415/8589934592",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "1/4",
+      "violation_probability": "1/262144",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "5/16",
+      "violation_probability": "1953125/68719476736",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 9,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/2700"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "1/16",
+      "violation_probability": "103819/274877906944",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "1/8",
+      "violation_probability": "71/1073741824",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "3/16",
+      "violation_probability": "2617839/1099511627776",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "1/4",
+      "violation_probability": "1/1048576",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "5/16",
+      "violation_probability": "9765625/1099511627776",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 10,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/3300"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "1/16",
+      "violation_probability": "8637833/8796093022208",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "1/8",
+      "violation_probability": "2773/8589934592",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "3/16",
+      "violation_probability": "191574639/17592186044416",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "1/4",
+      "violation_probability": "1/4194304",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "5/16",
+      "violation_probability": "48828125/17592186044416",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 11,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/3960"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "1/16",
+      "violation_probability": "313620953/140737488355328",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "1/8",
+      "violation_probability": "3319/68719476736",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "3/16",
+      "violation_probability": "686798919/281474976710656",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "1/4",
+      "violation_probability": "37/16777216",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "5/16",
+      "violation_probability": "6689453125/281474976710656",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "3/8",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "7/16",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 12,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/4680"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "1/16",
+      "violation_probability": "126811937/562949953421312",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "1/8",
+      "violation_probability": "25503/137438953472",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "3/16",
+      "violation_probability": "9882381591/1125899906842624",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "1/4",
+      "violation_probability": "5/8388608",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "5/16",
+      "violation_probability": "9033203125/1125899906842624",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "3/8",
+      "violation_probability": "1594323/549755813888",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "7/16",
+      "violation_probability": "96889010407/4503599627370496",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 13,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/5460"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "1/16",
+      "violation_probability": "8944560109/18014398509481984",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "1/8",
+      "violation_probability": "64705/2199023255552",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "3/16",
+      "violation_probability": "75066926985/36028797018963968",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "1/4",
+      "violation_probability": "43/268435456",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "5/16",
+      "violation_probability": "194091796875/72057594037927936",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "3/8",
+      "violation_probability": "4782969/4398046511104",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "7/16",
+      "violation_probability": "678223072849/72057594037927936",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 14,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/6300"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "1/16",
+      "violation_probability": "59361143851/1152921504606846976",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "1/8",
+      "violation_probability": "3438681/35184372088832",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "3/16",
+      "violation_probability": "7466696625987/1152921504606846976",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "1/4",
+      "violation_probability": "991/1073741824",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "5/16",
+      "violation_probability": "16546630859375/1152921504606846976",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "3/8",
+      "violation_probability": "14348907/35184372088832",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "7/16",
+      "violation_probability": "4747561509943/1152921504606846976",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "1/2",
+      "violation_probability": "0",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 15,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/7200"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "1/16",
+      "violation_probability": "2049258379741/18446744073709551616",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "1/8",
+      "violation_probability": "77980869/281474976710656",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "3/16",
+      "violation_probability": "29686398953877/18446744073709551616",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "1/4",
+      "violation_probability": "16249/4294967296",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "5/16",
+      "violation_probability": "94146728515625/18446744073709551616",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "3/8",
+      "violation_probability": "1190959281/281474976710656",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "7/16",
+      "violation_probability": "33232930569601/18446744073709551616",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "1/2",
+      "violation_probability": "1/65536",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 16,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/8160"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "1/16",
+      "violation_probability": "32886268209803/147573952589676412928",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "1/8",
+      "violation_probability": "97873759/140737488355328",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "3/16",
+      "violation_probability": "41777423595513/9223372036854775808",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "1/4",
+      "violation_probability": "4909/4294967296",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "5/16",
+      "violation_probability": "66436767578125/36893488147419103232",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "3/8",
+      "violation_probability": "473513931/281474976710656",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "7/16",
+      "violation_probability": "232630513987207/295147905179352825856",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "1/2",
+      "violation_probability": "1/131072",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 17,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/9180"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "1/16",
+      "violation_probability": "58901258153723/2361183241434822606848",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "1/8",
+      "violation_probability": "3568013177/2251799813685248",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "3/16",
+      "violation_probability": "1379201200089021/1180591620717411303424",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "1/4",
+      "violation_probability": "67831/17179869184",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "5/16",
+      "violation_probability": "4515594482421875/590295810358705651712",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "3/8",
+      "violation_probability": "22082967873/2251799813685248",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "7/16",
+      "violation_probability": "39314556863837983/4722366482869645213696",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "1/2",
+      "violation_probability": "1/262144",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 18,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/10260"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "1/16",
+      "violation_probability": "938489098432909/18889465931478580854784",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "1/8",
+      "violation_probability": "2805863519/9007199254740992",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "3/16",
+      "violation_probability": "57782000382654123/18889465931478580854784",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "1/4",
+      "violation_probability": "85429/68719476736",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "5/16",
+      "violation_probability": "13337554931640625/4722366482869645213696",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "3/8",
+      "violation_probability": "590041404747/144115188075855872",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "7/16",
+      "violation_probability": "144928810214029961/37778931862957161709568",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "1/2",
+      "violation_probability": "1/524288",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 19,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/11400"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "0",
+      "violation_probability": "0",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "1/16",
+      "violation_probability": "56666556042431213/604462909807314587353088",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "1/8",
+      "violation_probability": "397432859807/576460752303423488",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "3/16",
+      "violation_probability": "245931163679100015/302231454903657293676544",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "1/4",
+      "violation_probability": "1048117/274877906944",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "5/16",
+      "violation_probability": "1249629974365234375/1208925819614629174706176",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "3/8",
+      "violation_probability": "1959960253851/1152921504606846976",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "7/16",
+      "violation_probability": "2131593399664777741/1208925819614629174706176",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "1/2",
+      "violation_probability": "1/1048576",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "9/16",
+      "violation_probability": "0",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "5/8",
+      "violation_probability": "0",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "11/16",
+      "violation_probability": "0",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "3/4",
+      "violation_probability": "0",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "13/16",
+      "violation_probability": "0",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "7/8",
+      "violation_probability": "0",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "15/16",
+      "violation_probability": "0",
+      "allowance": "1/12600"
+    },
+    {
+      "streams": 3,
+      "n": 20,
+      "true_parameter": "1",
+      "violation_probability": "0",
+      "allowance": "1/12600"
+    }
+  ],
+  "coverage_case_count": 680,
+  "negative_path": [
+    {
+      "paid": 0,
+      "losses": 0,
+      "fuel": 43,
+      "source": 42,
+      "ewma": "0",
+      "lower": "0"
+    },
+    {
+      "paid": 1,
+      "losses": 1,
+      "fuel": 41,
+      "source": 42,
+      "ewma": "1/4",
+      "lower": "0"
+    },
+    {
+      "paid": 2,
+      "losses": 2,
+      "fuel": 39,
+      "source": 42,
+      "ewma": "7/16",
+      "lower": "0"
+    },
+    {
+      "paid": 3,
+      "losses": 3,
+      "fuel": 37,
+      "source": 42,
+      "ewma": "37/64",
+      "lower": "0"
+    },
+    {
+      "paid": 4,
+      "losses": 4,
+      "fuel": 35,
+      "source": 42,
+      "ewma": "175/256",
+      "lower": "1/4"
+    },
+    {
+      "paid": 5,
+      "losses": 5,
+      "fuel": 33,
+      "source": 42,
+      "ewma": "781/1024",
+      "lower": "1/4"
+    },
+    {
+      "paid": 6,
+      "losses": 6,
+      "fuel": 31,
+      "source": 42,
+      "ewma": "3367/4096",
+      "lower": "1/4"
+    },
+    {
+      "paid": 7,
+      "losses": 7,
+      "fuel": 29,
+      "source": 42,
+      "ewma": "14197/16384",
+      "lower": "1/4"
+    },
+    {
+      "paid": 8,
+      "losses": 8,
+      "fuel": 27,
+      "source": 42,
+      "ewma": "58975/65536",
+      "lower": "3/8"
+    },
+    {
+      "paid": 9,
+      "losses": 9,
+      "fuel": 25,
+      "source": 42,
+      "ewma": "242461/262144",
+      "lower": "3/8"
+    },
+    {
+      "paid": 10,
+      "losses": 10,
+      "fuel": 23,
+      "source": 42,
+      "ewma": "989527/1048576",
+      "lower": "3/8"
+    },
+    {
+      "paid": 11,
+      "losses": 11,
+      "fuel": 21,
+      "source": 42,
+      "ewma": "4017157/4194304",
+      "lower": "1/2"
+    },
+    {
+      "paid": 12,
+      "losses": 12,
+      "fuel": 19,
+      "source": 42,
+      "ewma": "16245775/16777216",
+      "lower": "1/2"
+    },
+    {
+      "paid": 13,
+      "losses": 13,
+      "fuel": 17,
+      "source": 42,
+      "ewma": "65514541/67108864",
+      "lower": "1/2"
+    },
+    {
+      "paid": 14,
+      "losses": 14,
+      "fuel": 15,
+      "source": 42,
+      "ewma": "263652487/268435456",
+      "lower": "1/2"
+    },
+    {
+      "paid": 15,
+      "losses": 15,
+      "fuel": 13,
+      "source": 42,
+      "ewma": "1059392917/1073741824",
+      "lower": "1/2"
+    },
+    {
+      "paid": 16,
+      "losses": 16,
+      "fuel": 11,
+      "source": 42,
+      "ewma": "4251920575/4294967296",
+      "lower": "9/16"
+    },
+    {
+      "paid": 17,
+      "losses": 16,
+      "fuel": 11,
+      "source": 40,
+      "ewma": "12755761725/17179869184",
+      "lower": "1/2"
+    },
+    {
+      "paid": 18,
+      "losses": 16,
+      "fuel": 11,
+      "source": 38,
+      "ewma": "38267285175/68719476736",
+      "lower": "7/16"
+    },
+    {
+      "paid": 19,
+      "losses": 16,
+      "fuel": 11,
+      "source": 36,
+      "ewma": "114801855525/274877906944",
+      "lower": "3/8"
+    },
+    {
+      "paid": 20,
+      "losses": 16,
+      "fuel": 11,
+      "source": 34,
+      "ewma": "344405566575/1099511627776",
+      "lower": "3/8"
+    },
+    {
+      "paid": 21,
+      "losses": 16,
+      "fuel": 11,
+      "source": 32,
+      "ewma": "1033216699725/4398046511104",
+      "lower": "5/16"
+    }
+  ],
+  "boundary_all_one_certificate_probability": "1/4294967296",
+  "total_paid_words": 209495
+}

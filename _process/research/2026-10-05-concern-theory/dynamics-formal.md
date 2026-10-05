@@ -1,5 +1,7 @@
 # A paid learning–action–correction–succession loop
 
+**Later reliability bridge, 6 October 2026:** [paid noisy evidence](TRANSFER-EVIDENCE-INTEGRATION.md) connects acquired records to this model's choice score, with signed efficacy, actual action funding and separate stationary confidence guarantees. The exact assay and recurrence results below keep their original scope; confidence in a mean effect does not guarantee every individual outcome.
+
 Internal formal research note, 5 October 2026. This is an exactly specified mechanism specimen and its closure conditions, not an empirically complete theory of conscience. It extends the shared-feature learning interface developed in the accompanying learning audit. It supplies neither phenomenal experience nor universal moral standing by mathematical stipulation.
 
 ## 1. What is learned, and what remains a premise
