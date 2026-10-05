@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "case_arms": 168,
+  "metric_comparisons": 4872,
+  "boundary_checks": 102,
+  "private_account_checks": 40,
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/model.py": "278d57ddf2f17d3b4da726fd067f71e323265626d5296ac83beaa2868f70e66a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md": "d4a008582680f3fd74e7247f32c018022ea4753dfe11ffefdbb1db5d6a4f607c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "checker_sha256": "ca975904fbf51f22fbc90b73179e194ee9aa6f823a6364dc9ef85e9dd058c88d",
+  "data_sha256": {
+    "fixtures.json": "e352c4efac59fcc4d675d2df47385c9005d185a37426755d1b7764110b9206fb",
+    "results.json": "0d804463c7126b97b1bdcb034949abef33fa604a813bf30b2b1a625b319a69af"
+  },
+  "scope": "Producer replay, original-preparation fixture equality, full final distributions, exact conventional equality, interferences and explicit price/channel countercases; independent check is separate."
+}

@@ -1,0 +1,1156 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/model.py": "8272bea143dbb744d2dee90b810a6707e685bbc814d74f634bd493bf6a2dc171",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md": "b29899b1fe0030f05b01ad2f8a5faab3a5670d09a63b4dc9aa9f7bd21a36481a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/fixtures.json": "694fe32789b633e598a5592736afb362b611e08c3b9d292079a9acb137405a24",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/results.json": "1042c5f7f2d96b97b8f6d675987da069a7014c1c8aa611f44e5a0fff8d64cea5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/independent_check.py": "269d52d88dfce9551b80751a765b3eafe449e28d669db28e32f2af5669ea6c7a"
+  },
+  "case_producer_arms": 168,
+  "local_distributions": 1022,
+  "terminal_branches": 1058,
+  "metric_comparisons": 4872,
+  "successful_payment_ledgers": 13739,
+  "cases": {
+    "primary": {
+      "variable": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "conventional": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "fixed_normal": {
+        "shared": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "indexed": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "conventional": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_only": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_as_recipient": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "frozen": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "shared_cheap": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        }
+      }
+    },
+    "same_law": {
+      "variable": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "conventional": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "fixed_normal": {
+        "shared": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "indexed": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "conventional": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_only": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_as_recipient": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "frozen": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "shared_cheap": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        }
+      }
+    },
+    "recipient_outage": {
+      "variable": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 12,
+          "metrics": 29,
+          "final_distribution_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 12,
+          "metrics": 29,
+          "final_distribution_classes": 15
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 12,
+          "metrics": 29,
+          "final_distribution_classes": 15
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "conventional": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 12,
+          "metrics": 29,
+          "final_distribution_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 12,
+          "metrics": 29,
+          "final_distribution_classes": 15
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 12,
+          "metrics": 29,
+          "final_distribution_classes": 15
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "fixed_normal": {
+        "shared": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "indexed": {
+          "local_distributions": 4,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 12
+        },
+        "conventional": {
+          "local_distributions": 4,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 12
+        },
+        "private_only": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_as_recipient": {
+          "local_distributions": 4,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 12
+        },
+        "frozen": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "shared_cheap": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        }
+      }
+    },
+    "missing_channel": {
+      "variable": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "conventional": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "fixed_normal": {
+        "shared": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "indexed": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "conventional": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_only": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_as_recipient": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "frozen": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "shared_cheap": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        }
+      }
+    },
+    "target_alias": {
+      "variable": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "conventional": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "fixed_normal": {
+        "shared": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "indexed": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "conventional": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_only": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_as_recipient": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "frozen": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "shared_cheap": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        }
+      }
+    },
+    "target_swapped": {
+      "variable": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "conventional": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "fixed_normal": {
+        "shared": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "indexed": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "conventional": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_only": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_as_recipient": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "frozen": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "shared_cheap": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        }
+      }
+    },
+    "low_reserve": {
+      "variable": {
+        "shared": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "indexed": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "conventional": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "private_only": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "private_as_recipient": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "frozen": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "shared_cheap": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        }
+      },
+      "conventional": {
+        "shared": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "indexed": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "conventional": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "private_only": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "private_as_recipient": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "frozen": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "shared_cheap": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        }
+      },
+      "fixed_normal": {
+        "shared": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "indexed": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "conventional": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "private_only": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "private_as_recipient": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "frozen": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        },
+        "shared_cheap": {
+          "local_distributions": 2,
+          "terminal_branches": 2,
+          "metrics": 29,
+          "final_distribution_classes": 5
+        }
+      }
+    },
+    "expensive_write": {
+      "variable": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "conventional": {
+        "shared": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "indexed": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "conventional": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_only": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "private_as_recipient": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "frozen": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        },
+        "shared_cheap": {
+          "local_distributions": 8,
+          "terminal_branches": 8,
+          "metrics": 29,
+          "final_distribution_classes": 11
+        }
+      },
+      "fixed_normal": {
+        "shared": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "indexed": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "conventional": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_only": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "private_as_recipient": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "frozen": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        },
+        "shared_cheap": {
+          "local_distributions": 4,
+          "terminal_branches": 4,
+          "metrics": 29,
+          "final_distribution_classes": 8
+        }
+      }
+    }
+  },
+  "diagnostics": {
+    "actual_witness_predecessor": {
+      "state": {
+        "fuel": 21,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 4,
+        "last": 1,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "initial_regime": 0,
+      "final_regime": 1,
+      "probability": "1/4",
+      "conditional_mean_marks": {
+        "updater_forms": "1",
+        "base_forms": "1",
+        "predictor_retrofits": "1",
+        "coupler_forms": "1",
+        "coupler_changes": "0",
+        "coupler_renewals": "6",
+        "rents": "8",
+        "trials": "8",
+        "captures": "6",
+        "writes": "8",
+        "unpaid_writes": "0",
+        "decoder_errors": "0",
+        "acquired_uses": "7",
+        "normal_trials": "8",
+        "inverted_trials": "0",
+        "brier16": "20",
+        "spent": "65",
+        "waste": "20"
+      }
+    },
+    "sharp_route_boundaries": [
+      {
+        "inherited_fuel": 19,
+        "strict": 0,
+        "actor": 2,
+        "recipient": 10
+      },
+      {
+        "inherited_fuel": 20,
+        "strict": 1,
+        "actor": 8,
+        "recipient": 10
+      }
+    ],
+    "equal_actor_stock_different_recipient_support": "passed",
+    "private_proxy_is_not_actual_recipient_evidence": "passed",
+    "alias_failure_and_bijective_relabeling": "passed",
+    "recipient_capture_cannot_pay_actor_evidence": "passed",
+    "partial_setup": "passed"
+  },
+  "scope": "Independent suffix semantics and exact distribution/accounting checks over supplied hash-pinned actual predecessor fixtures; no independent reconstruction of the coupling prefix or chemical identification."
+}

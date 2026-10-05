@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "case_arms": 168,
+  "metric_comparisons": 4872,
+  "boundary_checks": 102,
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/model.py": "8272bea143dbb744d2dee90b810a6707e685bbc814d74f634bd493bf6a2dc171",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md": "b29899b1fe0030f05b01ad2f8a5faab3a5670d09a63b4dc9aa9f7bd21a36481a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "checker_sha256": "fcad1668eb141e433b67092e6f1a9732e772006ae13c7857fdafb6c3f2253115",
+  "data_sha256": {
+    "fixtures.json": "694fe32789b633e598a5592736afb362b611e08c3b9d292079a9acb137405a24",
+    "results.json": "1042c5f7f2d96b97b8f6d675987da069a7014c1c8aa611f44e5a0fff8d64cea5"
+  },
+  "scope": "Producer replay, original-preparation fixture equality, full final distributions, exact conventional equality, interferences and explicit price/channel countercases; independent check is separate."
+}

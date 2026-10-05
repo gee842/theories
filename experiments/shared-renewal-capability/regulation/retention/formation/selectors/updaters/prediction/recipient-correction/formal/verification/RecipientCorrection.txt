@@ -1,0 +1,36 @@
+'RecipientCorrection.exact_encoding_injective' does not depend on any axioms
+'RecipientCorrection.exact_encoding_behaviourally_distinct' does not depend on any axioms
+'RecipientCorrection.four_distinct_controller_states' does not depend on any axioms
+'RecipientCorrection.no_one_bit_exact_controller' depends on axioms: [propext]
+'RecipientCorrection.shared_bit_cannot_serve_opposite_laws' does not depend on any axioms
+'RecipientCorrection.shared_alternating_writes_interfere' does not depend on any axioms
+'RecipientCorrection.supplied_opposite_relation_needs_only_one_bit' does not depend on any axioms
+'RecipientCorrection.unpack_pack' does not depend on any axioms
+'RecipientCorrection.packed_code_bounded' does not depend on any axioms
+'RecipientCorrection.packed_table_is_exact' depends on axioms: [propext]
+'RecipientCorrection.existing_five_code_register_suffices' depends on axioms: [propext, Quot.sound]
+'RecipientCorrection.packed_write_bounded' does not depend on any axioms
+'RecipientCorrection.packed_write_sets_queried_cell' depends on axioms: [propext]
+'RecipientCorrection.recipient_write_preserves_actor_cell' depends on axioms: [propext]
+'RecipientCorrection.actor_write_preserves_recipient_cell' depends on axioms: [propext]
+'RecipientCorrection.distinct_target_writes_commute' depends on axioms: [propext]
+'RecipientCorrection.consistent_target_swap_preserves_commands' does not depend on any axioms
+'RecipientCorrection.consistent_target_swap_preserves_writes' does not depend on any axioms
+'RecipientCorrection.aliased_recipient_write_can_damage_actor' depends on axioms: [propext]
+'RecipientCorrection.noiseless_recipient_receipt_decodes_law' does not depend on any axioms
+'RecipientCorrection.zero_actor_receipt_aliases_recipient_outcomes' does not depend on any axioms
+'RecipientCorrection.no_decoder_from_actor_credit' does not depend on any axioms
+'RecipientCorrection.private_zero_proxy_correct_iff_recipient_failure' does not depend on any axioms
+'RecipientCorrection.outage_receipt_is_ambiguous' does not depend on any axioms
+'RecipientCorrection.recipient_feedback_repairs_only_recipient' depends on axioms: [propext]
+'RecipientCorrection.corrected_table_serves_both_targets' depends on axioms: [propext]
+'RecipientCorrection.paid_feedback_exists_iff' depends on axioms: [propext, Quot.sound]
+'RecipientCorrection.affordable_feedback' depends on axioms: [propext, Quot.sound]
+'RecipientCorrection.affordable_noiseless_feedback' depends on axioms: [propext, Quot.sound]
+'RecipientCorrection.paid_feedback_energy_account' depends on axioms: [propext, Quot.sound]
+'RecipientCorrection.paid_feedback_preserves_actor' depends on axioms: [propext, Quot.sound]
+'RecipientCorrection.paid_feedback_corrects_recipient' depends on axioms: [propext, Quot.sound]
+'RecipientCorrection.unpaid_recipient_feedback_is_absent' depends on axioms: [propext, Quot.sound]
+'RecipientCorrection.failed_write_retains_observation_charge' depends on axioms: [propext, Quot.sound]
+'RecipientCorrection.opposite_laws_packed_correction_witness' does not depend on any axioms
+'RecipientCorrection.opposite_laws_shared_interference_witness' does not depend on any axioms
