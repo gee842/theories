@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "checked_cases": 18,
+  "runtime_errors": [],
+  "checks": [
+    {
+      "width": 320,
+      "d": 6,
+      "e": 2,
+      "v": 0,
+      "actual": "Choice: bypass · Other's loss: 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 320,
+      "d": 12,
+      "e": 2,
+      "v": 0,
+      "actual": "Choice: bypass · Other's loss: 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 320,
+      "d": 12,
+      "e": 2,
+      "v": 0.25,
+      "actual": "Choice: protect · Other's loss: 0",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 320,
+      "d": 12,
+      "e": 2,
+      "v": 0.2,
+      "actual": "Tie: protect / bypass · Other's loss: 0 or 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 320,
+      "d": 0,
+      "e": 0,
+      "v": 0,
+      "actual": "Tie: ignore / bypass · Other's loss: 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 320,
+      "d": 12,
+      "e": 12,
+      "v": 1,
+      "actual": "Choice: protect · Other's loss: 0",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 360,
+      "d": 6,
+      "e": 2,
+      "v": 0,
+      "actual": "Choice: bypass · Other's loss: 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 360,
+      "d": 12,
+      "e": 2,
+      "v": 0,
+      "actual": "Choice: bypass · Other's loss: 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 360,
+      "d": 12,
+      "e": 2,
+      "v": 0.25,
+      "actual": "Choice: protect · Other's loss: 0",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 360,
+      "d": 12,
+      "e": 2,
+      "v": 0.2,
+      "actual": "Tie: protect / bypass · Other's loss: 0 or 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 360,
+      "d": 0,
+      "e": 0,
+      "v": 0,
+      "actual": "Tie: ignore / bypass · Other's loss: 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 360,
+      "d": 12,
+      "e": 12,
+      "v": 1,
+      "actual": "Choice: protect · Other's loss: 0",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 760,
+      "d": 6,
+      "e": 2,
+      "v": 0,
+      "actual": "Choice: bypass · Other's loss: 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 760,
+      "d": 12,
+      "e": 2,
+      "v": 0,
+      "actual": "Choice: bypass · Other's loss: 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 760,
+      "d": 12,
+      "e": 2,
+      "v": 0.25,
+      "actual": "Choice: protect · Other's loss: 0",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 760,
+      "d": 12,
+      "e": 2,
+      "v": 0.2,
+      "actual": "Tie: protect / bypass · Other's loss: 0 or 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 760,
+      "d": 0,
+      "e": 0,
+      "v": 0,
+      "actual": "Tie: ignore / bypass · Other's loss: 10",
+      "overflow": false,
+      "labelsOutside": []
+    },
+    {
+      "width": 760,
+      "d": 12,
+      "e": 12,
+      "v": 1,
+      "actual": "Choice: protect · Other's loss: 0",
+      "overflow": false,
+      "labelsOutside": []
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+<div id="protection-evasion">
+  <h3>When does protection win?</h3>
+  <div class="text-small text-muted">Toy model · Protection costs 4 · Unprotected loss is 10</div>
+  <div class="viz-controls">
+    <label class="form-label" for="pe-return">Cost returning to the decision maker <span id="pe-return-value" class="tabular-nums">6</span>
+      <input id="pe-return" class="form-range" type="range" min="0" max="12" step="0.5" value="6">
+    </label>
+    <label class="form-label" for="pe-bypass">Cost of bypassing that return <span id="pe-bypass-value" class="tabular-nums">2</span>
+      <input id="pe-bypass" class="form-range" type="range" min="0" max="12" step="0.5" value="2">
+    </label>
+    <label class="form-label" for="pe-concern">Direct weight on the other's loss <span id="pe-concern-value" class="tabular-nums">0.0</span>
+      <input id="pe-concern" class="form-range" type="range" min="0" max="1" step="0.05" value="0">
+    </label>
+  </div>
+  <div id="pe-plot"></div>
+  <div id="pe-choice" class="tabular-nums" aria-live="polite"></div>
+</div>
+<style>
+  #protection-evasion { color: var(--foreground); }
+  #protection-evasion #pe-plot { width: 100%; margin-block: 12px; }
+  #protection-evasion .pe-chart { display: block; width: 100%; }
+  #protection-evasion .pe-chart text { fill: var(--foreground); font-size: 12px; font-weight: 400; }
+  #protection-evasion .pe-chart .pe-bar { fill: var(--viz-series-1); }
+  @media (prefers-reduced-motion: no-preference) {
+    #protection-evasion .pe-chart .pe-bar { transition: width 180ms ease, opacity 180ms ease; }
+  }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('protection-evasion');
+  const controls = ['return','bypass','concern'].map(key => root.querySelector('#pe-' + key));
+  const plot = root.querySelector('#pe-plot');
+  const status = root.querySelector('#pe-choice');
+  const ns = 'http://www.w3.org/2000/svg';
+  let svg = null;
+  const el = (name, attributes, text) => {
+    const node = document.createElementNS(ns, name);
+    Object.entries(attributes || {}).forEach(([key,value]) => node.setAttribute(key,String(value)));
+    if (text !== undefined) node.textContent = text;
+    return node;
+  };
+  const values = () => ({ returnedCost: +controls[0].value, bypassCost: +controls[1].value, concern: +controls[2].value });
+  function draw() {
+    const state = values();
+    ['return','bypass','concern'].forEach((key,index) => {
+      root.querySelector('#pe-' + key + '-value').textContent = (+controls[index].value).toFixed(index === 2 ? 2 : 1);
+    });
+    const data = [
+      {name:'Protect',cost:4,loss:0},
+      {name:'Ignore',cost:state.returnedCost + 10*state.concern,loss:10},
+      {name:'Bypass',cost:state.bypassCost + 10*state.concern,loss:10}
+    ];
+    const lowest = Math.min(...data.map(d => d.cost));
+    const winners = data.filter(d => Math.abs(d.cost-lowest) < 1e-8);
+    const width = Math.max(280, plot.getBoundingClientRect().width);
+    const left = 64, right = width-16, top = 30, bottom = 196;
+    const maximum = Math.max(...data.map(d => d.cost))*1.3;
+    const x = v => left + v/maximum*(right-left);
+    if (!svg) {
+      svg = el('svg',{class:'pe-chart',role:'img',height:246});
+      plot.appendChild(svg);
+    }
+    svg.setAttribute('viewBox',`0 0 ${width} 246`);
+    const oldWidths = [...svg.querySelectorAll('.pe-bar')].map(node => node.getAttribute('width'));
+    svg.replaceChildren();
+    svg.appendChild(el('title',{},'Three available actions and their decision burdens'));
+    svg.appendChild(el('desc',{},data.map(d => `${d.name}: burden ${d.cost.toFixed(2)}, loss to other ${d.loss}`).join('. ')));
+    svg.appendChild(el('rect',{'data-chart-frame':'',x:left,y:top,width:right-left,height:bottom-top,fill:'none',stroke:'var(--border)','stroke-width':1}));
+    svg.appendChild(el('text',{'data-axis':'y',class:'axis-title',x:0,y:18},'Action'));
+    data.forEach((d,index) => {
+      const y = 60+index*54;
+      svg.appendChild(el('text',{x:left-8,y:y+10,'text-anchor':'end'},d.name));
+      svg.appendChild(el('text',{x:left+6,y:y-8},`Other's loss: ${d.loss}`));
+      const initialWidth = oldWidths[index] === undefined ? x(d.cost)-left : Math.min(+oldWidths[index],right-left);
+      const bar = el('rect',{class:'pe-bar',x:left,y,width:initialWidth,height:14,opacity:Math.abs(d.cost-lowest)<1e-8 ? 1 : 0.35});
+      svg.appendChild(bar);
+      requestAnimationFrame(() => bar.setAttribute('width',x(d.cost)-left));
+      svg.appendChild(el('text',{x:x(d.cost)+6,y:y+11},d.cost.toFixed(1)));
+    });
+    [0,maximum/3,2*maximum/3,maximum].forEach((value,index) => {
+      const at = x(value);
+      svg.appendChild(el('line',{x1:at,x2:at,y1:bottom,y2:bottom+4,stroke:'var(--border)','stroke-width':1}));
+      svg.appendChild(el('text',{x:at,y:bottom+18,'text-anchor':index===0?'start':index===3?'end':'middle'},value.toFixed(1)));
+    });
+    svg.appendChild(el('text',{'data-axis':'x',class:'axis-title',x:(left+right)/2,y:240,'text-anchor':'middle'},'Decision burden (model units)'));
+    const losses = [...new Set(winners.map(d => d.loss))];
+    status.textContent = `${winners.length===1?'Choice':'Tie'}: ${winners.map(d=>d.name.toLowerCase()).join(' / ')} · Other's loss: ${losses.join(' or ')}`;
+  }
+  function restore(snapshot) {
+    const saved = snapshot && snapshot.modelContent;
+    if (!saved || saved.model !== 'protection-bypass-v1') return;
+    const fields = ['returnedCost','bypassCost','concern'];
+    fields.forEach((field,index) => {
+      if (Number.isFinite(saved[field])) controls[index].value = String(Math.max(+controls[index].min,Math.min(+controls[index].max,saved[field])));
+    });
+  }
+  restore(window.openai && window.openai.widgetState);
+  controls.forEach(control => control.addEventListener('input',() => {
+    draw();
+    if (window.openai && window.openai.setWidgetState) window.openai.setWidgetState({modelContent:{model:'protection-bypass-v1',...values(),protectionCost:4,unprotectedLoss:10},privateContent:null}).catch(()=>{});
+  }));
+  window.addEventListener('openai:set_globals',event => {
+    if (event.detail && event.detail.globals && Object.prototype.hasOwnProperty.call(event.detail.globals,'widgetState')) {
+      restore(event.detail.globals.widgetState); draw();
+    }
+  });
+  new ResizeObserver(draw).observe(plot);
+  draw();
+})();
+</script>

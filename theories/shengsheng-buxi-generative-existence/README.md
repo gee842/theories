@@ -16,6 +16,14 @@ The ethical core explicitly values affected beings' suffering, agency, and worth
 
 The [synthesis record](unified-2026-10-05/SYNTHESIS-RECORD.md) records checkpoints `003cd2a` and `38f8022`, independent reconstruction, review repairs, and the next discriminating study. The original source files and earlier formulations remain available. The current synthesis does not endorse earlier claims of a uniquely grounded alignment target, unproved global inexhaustibility, or universal moral direction as mathematical conclusions.
 
+## Current exploration of direction
+
+The [direction and concern continuation](../../sources/15-codex-theory-conversations/2026-10-05-direction-and-generalized-concern.md) takes the open universal tendency as its research focus. It identifies a specific bridge: representing another center accurately, being affected by its condition, valuing that condition, acting on it, and transmitting the capacity for correction are causally connected but distinct. A cheaper bypass can turn stronger returned consequences into better insulation instead of greater protection.
+
+The [new exploration](../../_process/research/2026-10-05-direction-frontier/EXPLORATION.md) derives a conditional resource threshold for protective response to spread and a paid trial mechanism that can construct an initially absent response type. The construction repertoire and trial rule are supplied. These results concern specified protection and relative propagation; they do not establish a general increase in wisdom or the protected standing of new recipients.
+
+The constructive frontier is how concern forms and generalizes to unfamiliar affected beings beyond their usefulness, then remains effective, revisable, and transmissible under cost. Causal and ethical warrants differ, while moral learning and conscience can belong to the same natural process being explained. A comparative hypothesis now separates predictive generalization from costly protection of recipients who cannot reward or punish the actor. This is a proposed research advance; the unified formal core and its evidence boundaries remain in force.
+
 ## Earlier opening preserved for genealogy
 
 The following two opening paragraphs and the earlier argument are retained as the pre-integration formulation. Their historical claims and stronger philosophical assertions should be read with the current scope and claim register above; preservation does not renew their warrant.

@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "resource_threshold_cases": 11421,
+  "static_protection_and_tie_cases": 512,
+  "exact_capital_conservation_cases": 128,
+  "formation_and_limit_cases": 8,
+  "threshold_example_b": "70/11",
+  "illustrations": [
+    {
+      "bypass_cost": 2.0,
+      "returned_loss": 12,
+      "W0": "19/10",
+      "W1": "37/22",
+      "stationary_composition": [
+        {
+          "exploration_fraction": 0.5,
+          "responsive_share": 0.44611151755927875
+        },
+        {
+          "exploration_fraction": 0.05,
+          "responsive_share": 0.1630018738981836
+        },
+        {
+          "exploration_fraction": 0.005,
+          "responsive_share": 0.01944721596228802
+        },
+        {
+          "exploration_fraction": 0.0005,
+          "responsive_share": 0.001975741988371016
+        }
+      ]
+    },
+    {
+      "bypass_cost": 10.0,
+      "returned_loss": 12,
+      "W0": "3/2",
+      "W1": "37/22",
+      "stationary_composition": [
+        {
+          "exploration_fraction": 0.5,
+          "responsive_share": 0.5045901234569019
+        },
+        {
+          "exploration_fraction": 0.05,
+          "responsive_share": 0.8006556252631459
+        },
+        {
+          "exploration_fraction": 0.005,
+          "responsive_share": 0.9751445019149585
+        },
+        {
+          "exploration_fraction": 0.0005,
+          "responsive_share": 0.9974620834537195
+        }
+      ]
+    }
+  ],
+  "scope": "Exact rational finite checks and numerical stationary-ratio corroboration; general results are proved in math-note.md."
+}

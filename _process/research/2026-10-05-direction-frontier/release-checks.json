@@ -1,0 +1,5 @@
+{
+  "status": "passed",
+  "local_links_checked": 32,
+  "scope": "Both research and exported Markdown copies; local links, math delimiter counts, and editorial markers. No new rendering or theorem-prover claim."
+}
