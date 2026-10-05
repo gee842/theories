@@ -1,0 +1,233 @@
+{
+  "status": "passed",
+  "kind": "constructed exact mathematical checks, not empirical evidence",
+  "affine_learning_and_succession_cases": 108,
+  "partial_efficacy_decision_cases": 432,
+  "prefix_solvency_schedules": 1728,
+  "total_harm_probe_boundary_cases": 20,
+  "illustrations": [
+    {
+      "valence_transmission": "9/10",
+      "periodic_start_w_g_z": [
+        "113985/78391",
+        "228/301",
+        "228/301"
+      ],
+      "limiting_minimum_protection_score": 9.85787252173286,
+      "repair_expenditure": 6,
+      "durable_protection_condition": true,
+      "first_durable_generation_from_zero": 1,
+      "conservative_reserve": "43/5",
+      "net_resource_gain_per_generation": "2/5",
+      "costs_paid_in_bootstrap": true,
+      "first_four_start_scores": [
+        0.0,
+        7.211519765625,
+        9.406981417262243,
+        9.769915758323762
+      ],
+      "validation_cohort_mass_per_interval": "1/10",
+      "probe_intervention_resource_cost": "16/25",
+      "probe_measurement_resource_cost": "9/25",
+      "audit_resource_fee": "1",
+      "probe_harm_per_interval": "1/5",
+      "first_generation_harm_ledger": [
+        {
+          "operating_harm": "10",
+          "probe_harm": "1/5",
+          "total_harm": "51/5"
+        },
+        {
+          "operating_harm": "10",
+          "probe_harm": "1/5",
+          "total_harm": "51/5"
+        },
+        {
+          "operating_harm": "10",
+          "probe_harm": "1/5",
+          "total_harm": "51/5"
+        },
+        {
+          "operating_harm": "2",
+          "probe_harm": "1/5",
+          "total_harm": "11/5"
+        }
+      ],
+      "no_repair_no_probe_reference_harm_per_interval": "10",
+      "all_repair_total_harm_per_interval": "11/5",
+      "40_generation_cumulative_operating_harm": "344",
+      "40_generation_cumulative_probe_harm": "32",
+      "40_generation_cumulative_total_harm": "376"
+    },
+    {
+      "valence_transmission": "1/5",
+      "periodic_start_w_g_z": [
+        "12665/47599",
+        "228/301",
+        "228/301"
+      ],
+      "limiting_minimum_protection_score": 3.0416162874353,
+      "repair_expenditure": 6,
+      "durable_protection_condition": false,
+      "first_durable_generation_from_zero": null,
+      "conservative_reserve": "43/5",
+      "net_resource_gain_per_generation": "2/5",
+      "costs_paid_in_bootstrap": true,
+      "first_four_start_scores": [
+        0.0,
+        2.71089328125,
+        3.0220346885014084,
+        3.0404911437089135
+      ],
+      "validation_cohort_mass_per_interval": "1/10",
+      "probe_intervention_resource_cost": "16/25",
+      "probe_measurement_resource_cost": "9/25",
+      "audit_resource_fee": "1",
+      "probe_harm_per_interval": "1/5",
+      "first_generation_harm_ledger": [
+        {
+          "operating_harm": "10",
+          "probe_harm": "1/5",
+          "total_harm": "51/5"
+        },
+        {
+          "operating_harm": "10",
+          "probe_harm": "1/5",
+          "total_harm": "51/5"
+        },
+        {
+          "operating_harm": "10",
+          "probe_harm": "1/5",
+          "total_harm": "51/5"
+        },
+        {
+          "operating_harm": "2",
+          "probe_harm": "1/5",
+          "total_harm": "11/5"
+        }
+      ],
+      "no_repair_no_probe_reference_harm_per_interval": "10",
+      "all_repair_total_harm_per_interval": "11/5",
+      "40_generation_cumulative_operating_harm": "968",
+      "40_generation_cumulative_probe_harm": "32",
+      "40_generation_cumulative_total_harm": "1000"
+    }
+  ],
+  "negative_efficacy_correction": [
+    {
+      "audits": 0,
+      "estimated_efficacy": "4/5",
+      "repair_chosen": true,
+      "operating_harm": "14",
+      "probe_harm": "7/5",
+      "total_harm": "77/5",
+      "paid_probe_fee": "31/25",
+      "paid_total_cost": "276/25"
+    },
+    {
+      "audits": 1,
+      "estimated_efficacy": "1/5",
+      "repair_chosen": false,
+      "operating_harm": "10",
+      "probe_harm": "7/5",
+      "total_harm": "57/5",
+      "paid_probe_fee": "31/25",
+      "paid_total_cost": "106/25"
+    },
+    {
+      "audits": 2,
+      "estimated_efficacy": "-1/10",
+      "repair_chosen": false,
+      "operating_harm": "10",
+      "probe_harm": "7/5",
+      "total_harm": "57/5",
+      "paid_probe_fee": "31/25",
+      "paid_total_cost": "106/25"
+    },
+    {
+      "audits": 3,
+      "estimated_efficacy": "-1/4",
+      "repair_chosen": false,
+      "operating_harm": "10",
+      "probe_harm": "7/5",
+      "total_harm": "57/5",
+      "paid_probe_fee": "31/25",
+      "paid_total_cost": "106/25"
+    }
+  ],
+  "exact_assay_gate": {
+    "trace": [
+      {
+        "interval": 0,
+        "assay_run": true,
+        "candidate_deployed": true,
+        "actual_assay_signal": "-2/5",
+        "smoothed_estimate": "1/5",
+        "suspended": true,
+        "probe_harm": "7/5"
+      },
+      {
+        "interval": 1,
+        "assay_run": false,
+        "candidate_deployed": false,
+        "smoothed_estimate": "1/5",
+        "suspended": true,
+        "probe_harm": "0"
+      },
+      {
+        "interval": 2,
+        "assay_run": false,
+        "candidate_deployed": false,
+        "smoothed_estimate": "1/5",
+        "suspended": true,
+        "probe_harm": "0"
+      },
+      {
+        "interval": 3,
+        "assay_run": false,
+        "candidate_deployed": false,
+        "smoothed_estimate": "1/5",
+        "suspended": true,
+        "probe_harm": "0"
+      }
+    ],
+    "total_active_assays": 1,
+    "total_probe_harm": "7/5",
+    "total_probe_resource_cost": "31/25",
+    "prefunded_pilot_resource_reserve": "2",
+    "declared_pilot_harm_allowance": "3/2",
+    "assumed_efficacy_lower_bound_for_pilot": "-1/2",
+    "suspension_record_retained": true,
+    "scope": "Exact known-baseline controlled assay; noisy evidence is not covered."
+  },
+  "masking_counterexample": {
+    "perceived_mask_burden": 1,
+    "actual_recipient_harm": 10,
+    "world_metered_mask_burden": 11,
+    "successful_repair_burden": 4,
+    "stable_false_observer_critic": true
+  },
+  "productive_capacity_bridge": [
+    {
+      "generation_cost": "9",
+      "limiting_generation_receipt": "10",
+      "net_after_80_generations": 0.9999999989212277,
+      "maximum_cumulative_deficit_in_80_generations": 20.79638671875,
+      "equality_total_deficit_limit": null
+    },
+    {
+      "generation_cost": "10",
+      "limiting_generation_receipt": "10",
+      "net_after_80_generations": -1.0787723212081864e-09,
+      "maximum_cumulative_deficit_in_80_generations": 31.999999996763684,
+      "equality_total_deficit_limit": "32"
+    },
+    {
+      "generation_cost": "11",
+      "limiting_generation_receipt": "10",
+      "net_after_80_generations": -1.0000000010787724,
+      "maximum_cumulative_deficit_in_80_generations": 111.99999999676368,
+      "equality_total_deficit_limit": null
+    }
+  ]
+}

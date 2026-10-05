@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "closed_form_steps": 3888,
+  "threshold_and_tie_cases": 73872,
+  "periodic_fixed_point_cases": 162,
+  "identity_ambiguity_cases": 9,
+  "validation_reversal_cases": 4,
+  "formation_witness": [
+    {
+      "step": 1,
+      "w": "1",
+      "g": "1/5",
+      "v": "1/5",
+      "protects": false
+    },
+    {
+      "step": 2,
+      "w": "7/5",
+      "g": "7/20",
+      "v": "49/100",
+      "protects": false
+    },
+    {
+      "step": 3,
+      "w": "39/25",
+      "g": "37/80",
+      "v": "1443/2000",
+      "protects": true
+    }
+  ],
+  "scope": "Exact finite rational corroboration; general theorems proved in learning-formal.md."
+}
