@@ -1,0 +1,11 @@
+{
+  "status": "checker coverage defect found after first independent pass; numerical model not defective",
+  "findings": [
+    "Destination/token identity inferred partly from observed state; consistent actor relabelling passed.",
+    "Physical prefix comparison omitted phase/target/action metadata; actor target in four intermediate snapshots passed.",
+    "Named case settings taken from reported law without independent protocol pin."
+  ],
+  "interventions": "Separate reviewer mutated existing rows only in memory; no model or result bytes were changed.",
+  "correction": "Independently pin named-case parameters, initial recipient/lineage/request and mutation history; validate complete physical phase/target/action metadata; retain targeted fault-sensitivity checks.",
+  "preserved_checker_sha256": "449e447d3216a3f244f3fd63c2ae28ac5b8c93de875cc3e20f94b101093e7b09"
+}

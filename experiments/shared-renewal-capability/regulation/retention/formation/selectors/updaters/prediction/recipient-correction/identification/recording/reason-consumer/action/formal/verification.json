@@ -1,12 +1,35 @@
 {
-  "checked_at_utc": "2026-10-05T22:14:45.717459+00:00",
-  "status": "failed",
+  "protocol_sources_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/PROTOCOL.md": "11c83453664cd31718928e1fda7af614e322ac9075110949efd2454c01e0f252",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/protocol-freeze.json": "508c3b29087556022acba46942100b75adbf95fb301fc8d9b9c84ac96d0209b5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/PROSPECTIVE-CLARIFICATIONS.md": "d4817903a911b75386c143f2b97bd7718adf3c19b7ac063a43687bc178d6ee15"
+  },
+  "protocol_frozen_predecessors_match": true,
+  "parent_commit": "d5a6b71eab5d3eff2e59649a193b59992d13b6c7",
+  "all_inherited_lean_match_parent_commit": {
+    "GenerativeCore": true,
+    "FormedSelection": true,
+    "RecipientCorrection": true,
+    "RecipientIdentification": true,
+    "EmissionArchive": true,
+    "RecipientArchive": true,
+    "ArchivePreparation": true,
+    "PaidArchiveReader": true,
+    "RecordedEvidence": true,
+    "ReasonReplay": true,
+    "RecipientReasons": true,
+    "PaidRecipientReasons": true,
+    "ReasonPreparation": true,
+    "ReasonReplayBridge": true
+  },
+  "checked_at_utc": "2026-10-05T22:33:18.880855+00:00",
+  "status": "passed",
   "toolchain": "leanprover/lean4:v4.29.1",
   "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
   "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
   "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
-  "checker_sha256": "45cecfbda79388e2074bb2b254d23a3de799d63f9d45d94c8acd3168e1316b06",
+  "checker_sha256": "0af30664141db464172bf99b797c6c91829ce21be58f577659ed2620d99b41ad",
   "source_unchanged_during_check": true,
   "fresh_temporary_build": true,
   "project_objects_only_from_frozen_sources": true,
@@ -706,7 +729,7 @@
     {
       "module": "RecipientAction",
       "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean",
-      "source_sha256": "65a8c241aca7b8bc6b844500d335e636eb31fd5423ae00de324c3bb9ecff14b7",
+      "source_sha256": "56f7b2cc977c36b54705edb5dce2e6692f9831df248c3625e3794b851a1b7c6b",
       "role": "new formalization",
       "command": [
         "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
@@ -714,8 +737,8 @@
         "RecipientAction.olean",
         "RecipientAction.lean"
       ],
-      "exit_code": 1,
-      "clean_dependency_audit": false,
+      "exit_code": 0,
+      "clean_dependency_audit": true,
       "audited_declarations": [
         "RecipientAction.core_set",
         "RecipientAction.import_is_typed",
@@ -734,19 +757,123 @@
         "RecipientAction.step_material",
         "RecipientAction.step_energy",
         "RecipientAction.trace_energy",
+        "RecipientAction.trace_run",
         "RecipientAction.trace_execute_projects",
-        "RecipientAction.semantic_import_then_receipt"
+        "RecipientAction.semantic_import_then_receipt",
+        "RecipientAction.route_is_member",
+        "RecipientAction.supported_is_current",
+        "RecipientAction.command_meaning",
+        "RecipientAction.imported_core_exact",
+        "RecipientAction.paid_import_and_execution",
+        "RecipientAction.actual_archive_replay_import_execution",
+        "RecipientAction.partial_packet_preserved",
+        "RecipientAction.original_recipient_balance_cannot_fund_import",
+        "RecipientAction.step_archive_bytes",
+        "RecipientAction.trace_archive_bytes",
+        "RecipientAction.exact_core_trial_budget",
+        "RecipientAction.prescribed_import_then_rent_requires_ten",
+        "RecipientAction.trace_material",
+        "RecipientAction.recipient_port_cannot_sense_actor",
+        "RecipientAction.executed_work_targets_recipient",
+        "RecipientAction.executed_recipient_work_has_no_actor_credit"
       ],
-      "dependency_audits": 19,
+      "dependency_audits": 36,
       "axioms": [
         "Quot.sound",
-        "propext",
-        "sorryAx"
+        "propext"
       ],
       "output": "verification/RecipientAction.txt",
-      "output_sha256": "3ac0a0c771746f52f41b0681fbe6f45b35dc9dadd1d470c0a8a8a5bd8cbf8fe8"
+      "output_sha256": "97f2fe0748cb1fbd9e398a252faddadcc4cb29016250dc7d417eea8eaeb44aa0"
+    },
+    {
+      "module": "ActionPreparation",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean",
+      "source_sha256": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+      "role": "new formalization",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "ActionPreparation.olean",
+        "ActionPreparation.lean"
+      ],
+      "exit_code": 0,
+      "clean_dependency_audit": true,
+      "audited_declarations": [
+        "ActionPreparation.runnable_trace",
+        "ActionPreparation.actual_formation_feasible",
+        "ActionPreparation.actual_formation_trace",
+        "ActionPreparation.actual_formation_endpoint",
+        "ActionPreparation.actual_assemblies_feasible",
+        "ActionPreparation.actual_material_partition",
+        "ActionPreparation.exact_parent_prepared_projection",
+        "ActionPreparation.original_accounts_partition",
+        "ActionPreparation.action_control_preparations_feasible",
+        "ActionPreparation.exact_control_reserves",
+        "ActionPreparation.old_material_has_no_free_command_pair",
+        "ActionPreparation.omitted_assembly_retains_parts_and_payment",
+        "ActionPreparation.whole_history_accounts"
+      ],
+      "dependency_audits": 13,
+      "axioms": [
+        "propext"
+      ],
+      "output": "verification/ActionPreparation.txt",
+      "output_sha256": "f9e5365152d4f4b084e586fd7331d1acfeb016c5c112728cbc3a67e7eb3141ab"
+    },
+    {
+      "module": "ActionWitness",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean",
+      "source_sha256": "5eb63e2b7af10e610ef6d34f3121d785c1755a86c73422e0654f074f6674cbf7",
+      "role": "new formalization",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "ActionWitness.olean",
+        "ActionWitness.lean"
+      ],
+      "exit_code": 0,
+      "clean_dependency_audit": true,
+      "audited_declarations": [
+        "ActionWitness.core_check_iff",
+        "ActionWitness.valid_check_iff",
+        "ActionWitness.write_check_iff",
+        "ActionWitness.archive_runnable_trace",
+        "ActionWitness.genuine_archive_runnable",
+        "ActionWitness.genuine_archive_trace",
+        "ActionWitness.archive_endpoint",
+        "ActionWitness.actual_parent_two_cycle_trace",
+        "ActionWitness.settlement_check_iff",
+        "ActionWitness.runnable_trace",
+        "ActionWitness.actual_entry_accounts",
+        "ActionWitness.actual_action_runnable",
+        "ActionWitness.actual_action_trace",
+        "ActionWitness.actual_recipient_effect",
+        "ActionWitness.actual_later_replay_runnable",
+        "ActionWitness.actual_later_replay_trace",
+        "ActionWitness.actual_final_accounts",
+        "ActionWitness.later_replay_has_no_new_archive",
+        "ActionWitness.binding_is_paid_and_qualified",
+        "ActionWitness.short_import_retains_charge_then_misses",
+        "ActionWitness.partial_packet_does_not_start_opportunity",
+        "ActionWitness.same_label_reopening_rejects_old_import_and_use",
+        "ActionWitness.compatible_command_without_available_source_receipt",
+        "ActionWitness.forged_current_flag_can_import_wrong_command",
+        "ActionWitness.unaudited_voluntary_alternative",
+        "ActionWitness.voluntary_start_does_not_require_command_port",
+        "ActionWitness.before_work_cut_keeps_sunk_bill_and_packet",
+        "ActionWitness.after_work_cut_settles_without_undoing_receipt",
+        "ActionWitness.later_changed_context_pays_and_loses_available_ground",
+        "ActionWitness.genuine_reason_and_actual_recipient_credit"
+      ],
+      "dependency_audits": 30,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "output": "verification/ActionWitness.txt",
+      "output_sha256": "92c87094a3f3f6b0ad12a49a4368e14884541ff1d384afa346b6bede40ee92d6"
     }
   ],
-  "new_audited_declarations": 19,
-  "scope": "Signed normalization of finite sound evidence, unique compatible recipient command under a supplied binary receipt law, and instrumental reason relative to supplied objective G. A backed paid finite consumer reuses the actual archive/cache through funded inference, path checks and cold replay. Semantic results concern the prescribed complete reason words from actual archive histories, not arbitrary fabricated publications or all legal control interleavings. Material preparation and capacity accounts are separately checked; no whole stochastic Python refinement, ethical root, new delivery, unbounded memory or indefinite hardware is derived."
+  "new_audited_declarations": 79,
+  "scope": "Actual conditional recipient archive history through paid reason reconstruction, charged certificate import into a fixed recipient-only port, unchanged identification-core trial, actual recipient receipt, and funded reconstruction from unchanged old archive. Generic guarded projection, material and exact common/source ledgers; original M32 construction and explicit parent prepared-state resource projection. The conditional witness starts at the accepted identification boundary; the whole stochastic formation/eight-opportunity Python prefix is not formally refined. Fixed calibrated law, recipient binding/interlock, objective G and permission remain supplied. No welfare, motivation, ethical root, cryptographic authenticity or infinite renewal is derived."
 }

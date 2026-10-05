@@ -1,5 +1,7 @@
 # Completion audit of the unified generative foundation
 
+**Current completion update, 6 October 2026:** the [recipient-reason/action join](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-ACTION.md) now discharges the named typed-reason-to-funded-recipient-command interface under declared laws (79 new Lean audits; 111 independent comparison arms). It preserves actual stocks and the old archive, and separately charges later reconstruction. An already learned route can deliver more while wasting more, so this is a composition result rather than evidence that explicit reasons are always needed. The older source-zero/actor-four endpoint remains unable to fund the action; the new study pays the extension from its original precursor. Requirements 2 and 3 advance, while formation and justification of the objective, paid independent calibration/change detection, revision of inherited learning routes, sustained plural correction and discriminating empirical scope remain open. No additional completion criterion is introduced.
+
 6 October 2026. **AI-authored, evidence-based audit snapshot.** This records the active full research goal and the current evidence, including work advancing concurrently. It is an internal collaborating-AI audit, not external peer review. No new empirical observations, experiments or proof results are produced by this document. Later integration must update individual receipts without dropping unresolved obligations.
 
 ## The active goal has not changed

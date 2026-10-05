@@ -6,7 +6,7 @@
   "imports_model_transition_functions": false,
   "source_sha256": {
     "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/model.py": "165ed9df6523082f35c79eeb85342e8000b54b6513d6865ea9545530a472c6d1",
-    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/check_model.py": "449e447d3216a3f244f3fd63c2ae28ac5b8c93de875cc3e20f94b101093e7b09",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/check_model.py": "e6977b159d1340cf5e5ddbf37e08c6e04f7057e2afedfc89f6cb7e7122fc1b0e",
     "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/results.json.gz": "d99fa7caf7fb1611e6c332492d9069df37886b00cb9ea8ea54311de2f6457c59",
     "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/fixtures.json": "38441f66bccce92026ace521d72eb3b79652df8784a8de14cbb8bff13fbb4bef",
     "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/PROTOCOL.md": "11c83453664cd31718928e1fda7af614e322ac9075110949efd2454c01e0f252",
@@ -575,6 +575,11 @@
       }
     }
   },
+  "supplemental_checker_review": [
+    "consistent_actor_destination",
+    "actor_intermediate_target",
+    "named_shortage_relabelled_as_funded"
+  ],
   "limits": [
     "Finite constructed interface; no new empirical observations or normative grounding.",
     "Inactive unindexed producer rows remain in the numerical mixture; RI.Valid formal scope is separate.",

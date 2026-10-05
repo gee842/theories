@@ -480,10 +480,49 @@ def check_row(case, producer, index, row):
     physical = []
     previous = None
     reader_payments = []
+    expected_identity = dict(lineage=f"{case['parent_case']}/{producer}/{index}", generation=0,
+        destination_recipient="recipient", destination_lineage="fixed-recipient-lineage",
+        command_request="recipient-command", scope=True)
+    expected_phase = {k: deepcopy(origin["producer"][k]) for k in
+                      ("core_phase", "core_target", "core_action", "acquired_record")}
     for item in row["runtime_trace"]:
         event, state = item["event"], item["state"]
         p, r = state["parent"]["producer"], reason_view(state["parent"])
         core = p["core"]
+        if event.startswith("invalidate_"):
+            kind = event[len("invalidate_"):]
+            expected_identity["generation"] += 1
+            assert state["latch"] is None and state["imported"] is None
+            if kind in ("destination_recipient", "destination_lineage", "command_request"):
+                expected_identity[kind] = "replaced-" + expected_identity[kind]
+                expected_identity["scope"] = False
+                assert state["parent"] == previous["parent"]
+            else:
+                assert not r["publication_current"] and not r["active"] and r["phase"] == "invalidated"
+                if kind != "publication_replace":
+                    assert not p["cache_valid"]
+                    before_context = previous["parent"]["producer"]["context"]
+                    assert p["context"] == (not before_context if kind == "changed_context" else before_context)
+        elif event == "cold_reason_and_factual_turnover":
+            expected_identity["generation"] += 1
+        for key, value in expected_identity.items():
+            assert_equal(state[key], value, (event, "independently bound identity", key))
+        assert state["permission"] == case["permission"] and state["delivery"] == case["delivery"]
+        assert state["mode"] == case["mode"] and state["port"] == case["port"]
+        if event == "ri_rent":
+            expected_phase["core_phase"] = "rented"
+        elif event == "ri_sense_recipient":
+            expected_phase.update(core_phase="sensed", core_target="recipient")
+        elif event == "ri_reserve_feedback":
+            expected_phase["core_phase"] = "reserved"
+        elif event == "ri_work_actual_receipt":
+            expected_phase.update(core_phase="worked", core_action=(core["q"] >> 1) & 1)
+        elif event == "ri_paid_acquire":
+            expected_phase.update(core_phase="acquired", acquired_record=expected["receipt"])
+        elif event == "ri_paid_write":
+            expected_phase.update(core_phase="ready", core_target=None, core_action=None, acquired_record=None)
+        for key, value in expected_phase.items():
+            assert_equal(p[key], value, (event, "physical phase/target/action", key))
         for field in ARCHIVE_UNCHANGED:
             assert_equal(p[field], origin["producer"][field], (event, "unchanged", field))
         assert core["q"] & 1 == origin["producer"]["core"]["q"] & 1
@@ -534,18 +573,67 @@ def check_row(case, producer, index, row):
     return len(row["runtime_trace"]), len(physical), len(reader_payments)
 
 
-def required_cases():
-    names = {"primary", "no_later", "command_short", "source_none", "source_partial", "no_extension",
-        "no_command_pair", "permission_lost", "delivery_lost", "inverted_import", "no_opportunity",
-        "learned_register", "unaudited_voluntary", "unaudited_then_first_replay", "conventional_command",
-        "later_changed_context", "foreign_live_token"}
-    names.update("parent_" + x for x in ("consistently_corrupt", "changed_context", "same_context_reopen",
-                                        "remove_both_grounds", "remove_late_positive"))
-    names.update(f"{e}_{p}" for e in ("same_context", "changed_context", "publication_replace",
-                                       "destination_recipient", "destination_lineage", "command_request")
-                 for p in ("after_read", "after_import"))
-    names.update("scope_loss_" + p for p in ("after_rent", "after_work", "after_acquire"))
-    return names
+def expected_cases():
+    """Pin the named interventions to the frozen protocol, not reported laws."""
+    base = dict(parent_case="primary", common=155, source=154, port=True, later=24,
+                mode="reason", permission=True, delivery=True, intervention=None,
+                available=True, inverted=False, old_endpoint=False, later_context=False)
+    changes = {
+        "primary": {}, "no_later": dict(common=131, later=0),
+        "command_short": dict(common=130, later=0), "source_none": dict(source=144),
+        "source_partial": dict(source=153), "no_extension": dict(old_endpoint=True, later=0, port=False),
+        "no_command_pair": dict(port=False), "permission_lost": dict(permission=False),
+        "delivery_lost": dict(delivery=False), "inverted_import": dict(inverted=True),
+        "no_opportunity": dict(available=False), "learned_register": dict(mode="learned", port=False),
+        "unaudited_voluntary": dict(mode="unaudited", port=False, later=0, common=131),
+        "unaudited_then_first_replay": dict(mode="unaudited", port=False),
+        "conventional_command": dict(mode="conventional"), "later_changed_context": dict(later_context=True),
+        "foreign_live_token": dict(intervention="foreign_token:after_read")}
+    for name in ("consistently_corrupt", "changed_context", "same_context_reopen", "remove_both_grounds", "remove_late_positive"):
+        changes["parent_" + name] = dict(parent_case=name)
+    for kind in ("same_context", "changed_context", "publication_replace", "destination_recipient", "destination_lineage", "command_request"):
+        for point in ("after_read", "after_import"):
+            changes[kind + "_" + point] = dict(intervention=kind + ":" + point)
+    for point in ("after_rent", "after_work", "after_acquire"):
+        changes["scope_loss_" + point] = dict(intervention="destination_lineage:" + point)
+    return {name: dict(base, **change) for name, change in changes.items()}
+
+
+def assert_frozen_case(name, case):
+    assert_equal(case, expected_cases()[name], (name, "frozen named-case configuration"))
+
+
+def checker_fault_sensitivity(results):
+    """Post-baseline checker review controls; not new scientific model arms."""
+    group = results["cases"]["primary"]["producers"]["variable"]
+    index = group["witness_path_index"]
+    original = group["paths"][index]
+    rejected = []
+    for mutation in ("consistent_actor_destination", "actor_intermediate_target"):
+        bad = deepcopy(original)
+        states = [x["state"] for x in bad["runtime_trace"]] + [bad["state"]]
+        for state in states:
+            if mutation == "consistent_actor_destination":
+                state["destination_recipient"] = "actor"
+                for k in ("latch", "imported"):
+                    if state[k] is not None:
+                        state[k]["recipient"] = "actor"
+            elif state["parent"]["producer"]["core_target"] == "recipient":
+                state["parent"]["producer"]["core_target"] = "actor"
+        try:
+            check_row(expected_cases()["primary"], "variable", index, bad)
+        except AssertionError:
+            rejected.append(mutation)
+        else:
+            raise AssertionError(("checker accepted semantic mutation", mutation))
+    bad_case = dict(results["cases"]["command_short"]["law"], common=131)
+    try:
+        assert_frozen_case("command_short", bad_case)
+    except AssertionError:
+        rejected.append("named_shortage_relabelled_as_funded")
+    else:
+        raise AssertionError("checker accepted a relabelled named shortage")
+    return rejected
 
 
 def check_foreign_tokens(fixtures, results):
@@ -567,6 +655,8 @@ def check_foreign_tokens(fixtures, results):
             assert final["binding_spent"] == 1 and final["action_spent"] == 0
             assert final["latch"] == donor["token"] == token_for(final)
             assert final["lineage"] == f"primary/{producer}/{ref['path_index']}"
+            assert (final["destination_recipient"], final["destination_lineage"], final["command_request"],
+                    final["generation"], final["scope"]) == ("recipient", "fixed-recipient-lineage", "recipient-command", 0, True)
             for k in ARCHIVE_UNCHANGED:
                 assert final["parent"]["producer"][k] == origin["producer"][k]
             donors_by_ref[object_hash(ref)] = donor["token"]
@@ -609,12 +699,14 @@ def main():
         first_hashes = [v for k, v in first.items() if "cases" in k and "sha256" in k]
         assert packaging["semantic_cases_sha256"] in first_hashes
         del raw
-    assert set(results["cases"]) == required_cases()
+    contracts = expected_cases()
+    assert set(results["cases"]) == set(contracts)
     totals = defaultdict(int)
     totals["paid_foreign_donor_histories"] = check_foreign_tokens(fixtures, results)
     checked = {}
     for name, bundle in results["cases"].items():
         case = bundle["law"]
+        assert_frozen_case(name, case)
         prep = fixtures["fixtures"]["preparations"][name]
         if not case["old_endpoint"]:
             own = independent_preparation(case["common"], case["source"], case["port"])
@@ -648,6 +740,7 @@ def main():
         b = results["cases"]["conventional_command"]["producers"][producer]
         assert a["metrics"] == b["metrics"]
     check_receipt_hashes(results)
+    supplemental = checker_fault_sensitivity(results)
     inputs = {str(existing_path(HERE / n).relative_to(REPO)): digest(existing_path(HERE / n)) for n in
               ("model.py", "check_model.py", "results.json", "fixtures.json", "PROTOCOL.md",
                "PROSPECTIVE-CLARIFICATIONS.md", "protocol-freeze.json", "clarifications-freeze.json",
@@ -657,6 +750,7 @@ def main():
         initial_oracle_sha256="6ee3ffd7d2ac9f65078a07c26effcfffb66ddc6be052ee4745011c3bba06721a",
         imports_model_transition_functions=False, source_sha256=inputs, inherited_source_sha256=results["source_sha256"],
         totals=dict(totals), cases=checked,
+        supplemental_checker_review=supplemental,
         limits=["Finite constructed interface; no new empirical observations or normative grounding.",
                 "Inactive unindexed producer rows remain in the numerical mixture; RI.Valid formal scope is separate.",
                 "Voluntary permission/scheduling is supplied; no enforcement mechanism is ablated.",

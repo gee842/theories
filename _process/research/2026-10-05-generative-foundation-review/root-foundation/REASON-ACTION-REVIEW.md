@@ -6,9 +6,9 @@ independent finite checker. This is not external peer review. The full
 [generative-grounding objective](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md)
 and its five completion conditions remain unchanged.
 
-**Status: independent numerical review passed; final compiled formal evidence
-is pending.** The implemented finite interface is conditionally accepted at
-the numerical scope below. No complete-foundation, normative, empirical
+**Status: accepted at the stated conditional formal and finite numerical
+scopes.** The final fresh build, separate concrete checker and bounded second
+review of that checker pass. No complete-foundation, normative, empirical
 replication or algorithmic-superiority claim is accepted.
 
 ## Contract and prospective scrutiny
@@ -79,13 +79,36 @@ The [verification receipt](../../../../experiments/shared-renewal-capability/reg
 records exact inputs. The checked numerical implementation SHA256 is
 `165ed9df6523082f35c79eeb85342e8000b54b6513d6865ea9545530a472c6d1`;
 the independent checker SHA256 is
-`449e447d3216a3f244f3fd63c2ae28ac5b8c93de875cc3e20f94b101093e7b09`.
+`e6977b159d1340cf5e5ddbf37e08c6e04f7057e2afedfc89f6cb7e7122fc1b0e`.
 The canonical case-output hash is
 `3b9ca5bb772a1756e3d4939557c8c91e286ec1b3130bc916f499da49c4843bd4`.
 Exact compressed/decompressed bytes and equality with the preserved first-run
 cases were checked. Separating unimported, still-developing proof files from
 the numerical manifest and changing delivery to gzip did not change any
 case result. The first receipt remains preserved.
+
+After the first independent pass, a separate collaborating reviewer audited
+the checker itself. It found two coverage defects: consistently relabelling
+destination/token metadata as actor could pass, and actor labels in physical
+intermediate targets could pass because the prefix comparison omitted those
+metadata. Named case configurations were also taken from reported laws rather
+than independently pinned to the protocol. The actual model had the correct
+recipient target and case settings; these were weaknesses in detecting a
+wrong result, not newly observed model behavior.
+
+The [earlier checker, receipt and findings](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/development/checker-review/)
+are preserved. The repaired checker independently fixes all thirty-seven
+named configurations, source/destination identities and allowed mutation
+histories; checks physical phase, target, action and acquired-record metadata
+on every prefix; and pins donor metadata. Three supplemental checker tests
+now reject both original actor relabellings and a funded state mislabeled as
+the named shortage. They were added after the initial outcomes and are not
+counted as prospective scientific arms. The separate reviewer repeated the
+two original mutations, confirmed rejection and found no further material
+issue within this bounded review. The unchanged scientific outputs pass
+the repaired full checker. Prefix coverage means the stated identity,
+physical-transition, payment and invariant checks, not a proved refinement
+of every possible interleaving or every runtime field.
 
 The two strict ledgers are 285 and 309, with the extra twenty-four units paying
 for a third old-archive reconstruction. The successful action costs two actor
@@ -153,7 +176,7 @@ Inspection confirms the guard implements this requirement. The
 is preserved with SHA256
 `6898572488308f600d111f311f3f678c37c2d3c16dc0ae3bc19b9d4848722140`,
 alongside the [correction record](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/recipient-guard-review.json).
-Final compiler acceptance remains to be recorded below.
+The corrected fresh compiler result is accepted below.
 
 The reviewed proof structure separates actual preparation/projection,
 authentic archive/reason provenance, typed paid import, core-trial feasibility
@@ -164,6 +187,31 @@ that formal state invariant. No full Python refinement or Lean derivation of
 the numerical probabilities is claimed. The stochastic upstream producer is
 preserved numerically, while the formal witness starts from its explicit
 conditional identification boundary.
+
+The final fresh **Lean 4.29.1** build passes seventeen modules and 449 theorem
+dependency audits: 370 inherited and **79 new** (36 recipient-interface,
+13 preparation and 30 witness results). Seven new audits are axiom-free;
+the remaining seventy-two use only standard `propext`/`Quot.sound`. The checker
+rejects warnings, proof holes, unchecked decision shortcuts, custom axioms
+and undeclared theorem audits. No source changed during compilation.
+
+Independently checked **52 integrity comparisons**: all seventeen source/log
+hash pairs, fourteen inherited-source matches to commit `d5a6b71`, checker,
+toolchain and compiler fingerprints, and the preserved rejected source. The
+final sources are:
+
+- `RecipientAction.lean`: `56f7b2cc977c36b54705edb5dce2e6692f9831df248c3625e3794b851a1b7c6b`.
+- `ActionPreparation.lean`: `0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f`.
+- `ActionWitness.lean`: `5eb63e2b7af10e610ef6d34f3121d785c1755a86c73422e0654f074f6674cbf7`.
+
+The [formal receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/verification.json)
+has SHA256 `ed22110088e7bda3abe6f38e67a1111af65f5b1953ab85d04873dcc31b2c8736`.
+The corrected generic law now rejects actor sensing on both routes and proves
+recipient work cannot credit actor fuel. Concrete enabled traces establish
+the genuine archive, two paid reason cycles, import/trial and later replay;
+negative results cover short fuel, partial source, same-label reopening,
+outage, a configured forged publication, voluntary use and interrupted work.
+The forged publication is explicitly not claimed to have an authentic history.
 
 ## Exposition, empirical evidence and remaining obligations
 

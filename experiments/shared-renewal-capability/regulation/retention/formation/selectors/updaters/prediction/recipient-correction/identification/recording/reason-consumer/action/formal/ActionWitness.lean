@@ -348,7 +348,7 @@ theorem genuine_reason_and_actual_recipient_credit {G : Prop} (root : G) :
     RecipientReasons.Meaning G true .q ∧ (core afterAction).patient=30 := by
   constructor
   · exact ReasonReplayBridge.actual_archive_to_cold_replayed_reasons
-      (laws:=laws) (by decide) genuine_archive_trace false root (by decide)
+      (laws:=laws) (by decide) genuine_archive_trace false root (by change parentReasons.working.q=true; decide)
   · exact actual_recipient_effect.1
 
 end ActionWitness
