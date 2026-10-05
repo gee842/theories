@@ -10,6 +10,8 @@ The elementary structural results are not claimed as novel mathematics. The cont
 
 ## 1. The positive candidate
 
+**Subsequent development, 6 October 2026:** Ren narrows the universal target to consequences for every reality satisfying specified properties of its laws. The [conditional-universality extension](CONDITIONAL-UNIVERSALITY.md) proves such consequences for support accounting and dependency lifetimes. It develops the dynamics that this substrate analysis leaves supplied. A uniquely necessary ontology remains a separate philosophical question, rather than a prerequisite for completing that universal explanatory programme.
+
 The proposed ontological stance is:
 
 > **Beings, activities and understandings are differentiated formations within the reality they inhabit. Their relations enable and constrain transformations, whose effects can become conditions of further transformation. An explanation includes the formation and maintenance of its observers, representations and evaluations wherever those affect the process.**

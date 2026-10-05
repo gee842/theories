@@ -36,6 +36,8 @@ Keep the goal through handoffs until these obligations are met or Ren redirects 
 
 ## Minimal grounding and universal scope
 
+**Universal target refined, 6 October 2026:** [Ren proposes](../../../sources/15-codex-theory-conversations/2026-10-06-conditional-universality-request.md) “for any reality that has laws that…”. The active target is conditional universality: independently specified properties of local laws imply substantive consequences for every admitted process or history. The [first checked law-class development](CONDITIONAL-UNIVERSALITY.md) adds 60 Lean theorem audits on cumulative support accounting, accounted recurrence and finite support deadlines under bounded dependency ranks. These constrain continuation without assuming a learner, reward or favorable direction. Their application requires identified quantities, dependencies and system boundaries; separate necessary constraints do not construct a jointly feasible mechanism. Establishing a uniquely necessary metaphysical ontology is no longer a prerequisite for this programme. The connected derivation and empirical obligations above remain in force.
+
 The initial task is to identify and justify the smallest adequate set of premises about system-forming reality. A provisional starting set is:
 
 1. **Consequential differentiation.** Reality permits distinguishable conditions and relations whose differences can affect subsequent interactions. An observer's particular description is not what creates those differences.
