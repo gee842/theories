@@ -1,0 +1,522 @@
+{
+  "renewal_ode": [
+    {
+      "parameters": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "initial": [
+        3,
+        0,
+        0
+      ],
+      "t": 200,
+      "final": [
+        0.9999999999999968,
+        1.0000000000000078,
+        0.9999999999999944
+      ],
+      "equilibrium": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "step_size_error": 3.219646771412954e-15
+    },
+    {
+      "parameters": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "initial": [
+        0,
+        0.1,
+        2.9
+      ],
+      "t": 200,
+      "final": [
+        0.9999999999999983,
+        0.9999999999999928,
+        1.000000000000011
+      ],
+      "equilibrium": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "step_size_error": 5.551115123125783e-15
+    },
+    {
+      "parameters": [
+        0.3,
+        0.7,
+        2,
+        2
+      ],
+      "initial": [
+        0.2,
+        0,
+        1.8
+      ],
+      "t": 200,
+      "final": [
+        1.1550000000000105,
+        0.49500000000000055,
+        0.35000000000000275
+      ],
+      "equilibrium": [
+        1.1549999999999998,
+        0.49499999999999994,
+        0.35
+      ],
+      "step_size_error": 5.329070518200751e-15
+    },
+    {
+      "parameters": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "initial": [
+        0.5,
+        0,
+        0
+      ],
+      "t": 200,
+      "final": [
+        3.959340528366047e-27,
+        5.599353073268752e-27,
+        0.4999999999999934
+      ],
+      "equilibrium": [
+        0,
+        0,
+        0.5
+      ],
+      "step_size_error": 4.163336342344337e-15
+    },
+    {
+      "parameters": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "initial": [
+        1,
+        0,
+        0
+      ],
+      "t": 200,
+      "final": [
+        0.004892853832781131,
+        0.004917091658342483,
+        0.990190054508872
+      ],
+      "equilibrium": [
+        0,
+        0,
+        1
+      ],
+      "step_size_error": 1.758593271006248e-13
+    },
+    {
+      "parameters": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "initial": [
+        0,
+        0,
+        3
+      ],
+      "t": 200,
+      "final": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "equilibrium": [
+        0,
+        0,
+        3
+      ],
+      "step_size_error": 0.0
+    }
+  ],
+  "control_exact_determinant_checks": 192,
+  "finite_particle_graphs": [
+    {
+      "N": 1,
+      "states": 3,
+      "reach_absorption": 3
+    },
+    {
+      "N": 2,
+      "states": 6,
+      "reach_absorption": 6
+    },
+    {
+      "N": 3,
+      "states": 10,
+      "reach_absorption": 10
+    },
+    {
+      "N": 4,
+      "states": 15,
+      "reach_absorption": 15
+    },
+    {
+      "N": 5,
+      "states": 21,
+      "reach_absorption": 21
+    },
+    {
+      "N": 6,
+      "states": 28,
+      "reach_absorption": 28
+    },
+    {
+      "N": 7,
+      "states": 36,
+      "reach_absorption": 36
+    },
+    {
+      "N": 8,
+      "states": 45,
+      "reach_absorption": 45
+    },
+    {
+      "N": 9,
+      "states": 55,
+      "reach_absorption": 55
+    },
+    {
+      "N": 10,
+      "states": 66,
+      "reach_absorption": 66
+    },
+    {
+      "N": 11,
+      "states": 78,
+      "reach_absorption": 78
+    },
+    {
+      "N": 12,
+      "states": 91,
+      "reach_absorption": 91
+    },
+    {
+      "N": 13,
+      "states": 105,
+      "reach_absorption": 105
+    },
+    {
+      "N": 14,
+      "states": 120,
+      "reach_absorption": 120
+    },
+    {
+      "N": 15,
+      "states": 136,
+      "reach_absorption": 136
+    },
+    {
+      "N": 16,
+      "states": 153,
+      "reach_absorption": 153
+    },
+    {
+      "N": 17,
+      "states": 171,
+      "reach_absorption": 171
+    },
+    {
+      "N": 18,
+      "states": 190,
+      "reach_absorption": 190
+    },
+    {
+      "N": 19,
+      "states": 210,
+      "reach_absorption": 210
+    },
+    {
+      "N": 20,
+      "states": 231,
+      "reach_absorption": 231
+    },
+    {
+      "N": 21,
+      "states": 253,
+      "reach_absorption": 253
+    },
+    {
+      "N": 22,
+      "states": 276,
+      "reach_absorption": 276
+    },
+    {
+      "N": 23,
+      "states": 300,
+      "reach_absorption": 300
+    },
+    {
+      "N": 24,
+      "states": 325,
+      "reach_absorption": 325
+    },
+    {
+      "N": 25,
+      "states": 351,
+      "reach_absorption": 351
+    }
+  ],
+  "correction_cycle": [
+    {
+      "B": 6,
+      "Q": "23/9",
+      "phase": 0,
+      "rule": "X",
+      "file": false
+    },
+    {
+      "B": 5,
+      "Q": "25/9",
+      "phase": 0,
+      "rule": "X",
+      "file": false
+    },
+    {
+      "B": 4,
+      "Q": "3",
+      "phase": 0,
+      "rule": "X",
+      "file": true
+    },
+    {
+      "B": 2,
+      "Q": "11/9",
+      "phase": 1,
+      "rule": "X",
+      "file": false
+    },
+    {
+      "B": 1,
+      "Q": "13/9",
+      "phase": -1,
+      "rule": "F",
+      "file": false
+    },
+    {
+      "B": 2,
+      "Q": "5/3",
+      "phase": -1,
+      "rule": "F",
+      "file": false
+    },
+    {
+      "B": 3,
+      "Q": "17/9",
+      "phase": -1,
+      "rule": "F",
+      "file": false
+    },
+    {
+      "B": 4,
+      "Q": "19/9",
+      "phase": -1,
+      "rule": "F",
+      "file": false
+    },
+    {
+      "B": 5,
+      "Q": "7/3",
+      "phase": -1,
+      "rule": "F",
+      "file": false
+    }
+  ],
+  "correction_graph": {
+    "states": 2380,
+    "pointwise_protected": 1008,
+    "indefinitely_protected": 272,
+    "attractors": 7,
+    "protected_attractors": 2
+  },
+  "initial_funding_threshold": [
+    {
+      "Q_ninths": 0,
+      "protected": false
+    },
+    {
+      "Q_ninths": 1,
+      "protected": false
+    },
+    {
+      "Q_ninths": 2,
+      "protected": false
+    },
+    {
+      "Q_ninths": 3,
+      "protected": false
+    },
+    {
+      "Q_ninths": 4,
+      "protected": false
+    },
+    {
+      "Q_ninths": 5,
+      "protected": false
+    },
+    {
+      "Q_ninths": 6,
+      "protected": false
+    },
+    {
+      "Q_ninths": 7,
+      "protected": false
+    },
+    {
+      "Q_ninths": 8,
+      "protected": false
+    },
+    {
+      "Q_ninths": 9,
+      "protected": false
+    },
+    {
+      "Q_ninths": 10,
+      "protected": false
+    },
+    {
+      "Q_ninths": 11,
+      "protected": false
+    },
+    {
+      "Q_ninths": 12,
+      "protected": false
+    },
+    {
+      "Q_ninths": 13,
+      "protected": false
+    },
+    {
+      "Q_ninths": 14,
+      "protected": false
+    },
+    {
+      "Q_ninths": 15,
+      "protected": false
+    },
+    {
+      "Q_ninths": 16,
+      "protected": false
+    },
+    {
+      "Q_ninths": 17,
+      "protected": false
+    },
+    {
+      "Q_ninths": 18,
+      "protected": false
+    },
+    {
+      "Q_ninths": 19,
+      "protected": false
+    },
+    {
+      "Q_ninths": 20,
+      "protected": false
+    },
+    {
+      "Q_ninths": 21,
+      "protected": false
+    },
+    {
+      "Q_ninths": 22,
+      "protected": false
+    },
+    {
+      "Q_ninths": 23,
+      "protected": true
+    },
+    {
+      "Q_ninths": 24,
+      "protected": true
+    },
+    {
+      "Q_ninths": 25,
+      "protected": true
+    },
+    {
+      "Q_ninths": 26,
+      "protected": true
+    },
+    {
+      "Q_ninths": 27,
+      "protected": true
+    }
+  ],
+  "correction_failures": [
+    {
+      "case": "no_access",
+      "first_failure_round": 6
+    },
+    {
+      "case": "upkeep_only",
+      "first_failure_round": 15
+    },
+    {
+      "case": "delay3",
+      "first_failure_round": 5
+    },
+    {
+      "case": "below_threshold_large_reserve",
+      "first_failure_round": 194
+    }
+  ],
+  "safe_general_parameter_cases": 125,
+  "acyclic_renewal_weight": {
+    "B": [
+      [
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        10
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "losses": [
+      1,
+      1,
+      1
+    ],
+    "weights": [
+      1,
+      11,
+      111
+    ],
+    "weighted_drift_coefficients": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "status": "all_checks_passed"
+}

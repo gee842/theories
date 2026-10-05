@@ -1,0 +1,83 @@
+{
+  "checked_utc": "2026-10-05T04:18:06.854313+00:00",
+  "scope": "Independent read-only SHA-256 and byte-size checks against preserved manifests, Git checkpoint manifest content, and exact original README tail preservation. Only this result JSON is written.",
+  "base_manifest_sha256": "9df8e6e3ab8704b92d977c162be01ddceb3a944c9f7e7e9240a7aba358a75061",
+  "overlay_manifest_sha256": "69576ca65665edb222ba53a8b0bb1d203b06b8ddc39b4eaaaaa7fd3658fe31df",
+  "base_snapshot": {
+    "expected_entry_count": 2378,
+    "manifest_entries": 2378,
+    "checked_files": 2378,
+    "unique_paths": 2378,
+    "listed_bytes": 337544211,
+    "observed_bytes": 337544211,
+    "manifest_total_bytes": 337544211,
+    "mismatches": [],
+    "passed": true
+  },
+  "completion_overlay": {
+    "expected_entry_count": 20,
+    "manifest_entries": 20,
+    "checked_files": 20,
+    "unique_paths": 20,
+    "listed_bytes": 579664,
+    "observed_bytes": 579664,
+    "manifest_total_bytes": null,
+    "mismatches": [],
+    "passed": true,
+    "base_lineage": {
+      "new_files": 20,
+      "changed_files": 0,
+      "mismatches": [],
+      "passed": true
+    }
+  },
+  "checkpoint_manifests": [
+    {
+      "commit": "003cd2a2e2d95a8b7a46314299342d977aa94d8a",
+      "manifests": [
+        {
+          "path": "sources/20-codex-theory-sessions-2026-10-05/SNAPSHOT-MANIFEST.json",
+          "present": true,
+          "committed_bytes": 3316752,
+          "committed_sha256": "9df8e6e3ab8704b92d977c162be01ddceb3a944c9f7e7e9240a7aba358a75061",
+          "matches_working_manifest": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "commit": "38f8022eab23e1c08c847163e2daec9a425549c6",
+      "manifests": [
+        {
+          "path": "sources/20-codex-theory-sessions-2026-10-05/SNAPSHOT-MANIFEST.json",
+          "present": true,
+          "committed_bytes": 3316752,
+          "committed_sha256": "9df8e6e3ab8704b92d977c162be01ddceb3a944c9f7e7e9240a7aba358a75061",
+          "matches_working_manifest": true
+        },
+        {
+          "path": "sources/20-codex-theory-sessions-2026-10-05/completion-supplement/MANIFEST.json",
+          "present": true,
+          "committed_bytes": 6907,
+          "committed_sha256": "69576ca65665edb222ba53a8b0bb1d203b06b8ddc39b4eaaaaa7fd3658fe31df",
+          "matches_working_manifest": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "canonical_readme_preservation": {
+    "path": "theories/shengsheng-buxi-generative-existence/README.md",
+    "reference_commit": "38f8022eab23e1c08c847163e2daec9a425549c6",
+    "original_bytes": 411101,
+    "current_bytes": 415414,
+    "inserted_bytes": 4313,
+    "title_unchanged": true,
+    "original_tail_bytes": 411060,
+    "original_tail_sha256": "aa3e9c89eca5c4d5d2514c492f5c349227c4d68a3b5d08ff9faf602600dc1e2d",
+    "current_preserved_tail_sha256": "aa3e9c89eca5c4d5d2514c492f5c349227c4d68a3b5d08ff9faf602600dc1e2d",
+    "original_tail_is_exact_current_suffix": true,
+    "passed": true
+  },
+  "passed": true
+}

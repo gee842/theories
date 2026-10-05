@@ -4,6 +4,8 @@ Everything Ren has thought, drafted and theorised from 2021 to September 2026, g
 
 ## Start here
 
+**Latest integrated foundation, 5 October 2026:** [The unified foundation in brief](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md) connects the completed theory sessions on relational generativity, renewal, wisdom, selection, and correction. The [full theory](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md) and [formal core](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md) separate proved conditional results, synthetic evidence, ethical commitments, and open universal claims. Original work is preserved in pre-synthesis checkpoints.
+
 | File | What it gives you |
 |---|---|
 | [MAP.md](MAP.md) | The whole corpus on one page: what the central claim is, why the theories exist and what they mean ("Why, and what it means", from Ren's recorded conversation of 2026-10-02), how they connect, and what to do next. |
@@ -16,7 +18,7 @@ Everything Ren has thought, drafted and theorised from 2021 to September 2026, g
 
 New exploration: [Architecture for a living Earth](theories/architecture-for-a-living-earth/README.md), opened 2026-09-13 — branching towers, elevated frameworks, automated construction, circulating materials, and the ecological conditions under which human settlements could support more life.
 
-Current writing plan: [v5 of the AI trajectory and cooperation theory](drafts/2026-10-02-iaseai-selecting-the-selectors/V5-PLAN.md), prepared 2026-10-03 from the local v4.5 manuscript and [Ren's supplied direction and review package](sources/19-v5-handoff-2026-10-03/README.md). It maps the existing contributions, mathematical repairs, evidence needs, and a proposed cooperative transition into the next writing sequence. The manuscript has not yet been rewritten as v5.
+Earlier writing plan: [v5 of the AI trajectory and cooperation theory](drafts/2026-10-02-iaseai-selecting-the-selectors/V5-PLAN.md), prepared 2026-10-03 from the local v4.5 manuscript and [Ren's supplied direction and review package](sources/19-v5-handoff-2026-10-03/README.md). It maps the existing contributions, mathematical repairs, evidence needs, and a proposed cooperative transition into the next writing sequence. Subsequent manuscript work is available in [V7.3](drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/START-HERE.md); the new foundation synthesis is linked above.
 
 ## The layers
 
