@@ -1,0 +1,16 @@
+{
+  "protocol": "PROTOCOL.md",
+  "sha256": "eab0da293df1ff66795d7b32e9a8e52091b20ebdcb3252b61447db403f09b505",
+  "frozen_at_utc": "2026-10-05T22:47:29.305110+00:00",
+  "status": "Prospective finite-model protocol before implementation execution; hand-derived primary and adverse arithmetic already known.",
+  "dependency_status": "Monitor is concurrent developing dependency; fixed-source receipt validation required before numerical acceptance.",
+  "rejected_design": "New retention4 tariff rejected before numerical execution; exact inherited copying/use/hold law substituted.",
+  "clarifications_before_execution": {
+    "path": "PROSPECTIVE-CLARIFICATIONS.md",
+    "sha256": "4dfd2369755eecad99aa419156d049f504930413d3b6f90cff3a75eec1415f3c"
+  },
+  "data_contract_before_execution": {
+    "path": "DATA-CONTRACT.md",
+    "sha256": "406955d4971422c78bc87df3b1918a2b785b82d690f0e4de81198e6362603a87"
+  }
+}

@@ -1,5 +1,7 @@
 # Ren's Theories
 
+**Latest learning-mechanism milestone, 6 October 2026:** [paid route revision and succession](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-ROUTE-REVISION.md) now connects actual diagnosis to a changed inherited updater, subsequent learning and copying into a successor. Forty-seven new Lean audits and independent reconstruction of 75 cases preserve resource costs and counterexamples. This closes the finite route-revision next step recorded below. Formation and sustained use of the revision architecture, warranted shared evaluation and empirical identification remain part of the [ongoing roadmap](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation).
+
 Everything Ren has thought, drafted and theorised from 2021 to October 2026, gathered from `~/repos`, `~/writings`, `~/wamo`, `~/meta_attractor`, `~/Downloads`, `~/Desktop`, the claude.ai chat exports and the Claude Code memories and transcripts — organised so the ideas can be connected, tested, taught, and turned into books.
 
 ## Start here

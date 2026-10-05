@@ -1,0 +1,27 @@
+{
+  "status": "reconstructed reviewed source checkpoint; original receipt bytes unavailable",
+  "original_new_theorem_audits": 41,
+  "original_modules": 7,
+  "original_checker_sha256_reported_by_independent_review": "3281fe43bb46972ad0241efe35d844f6bfe7891318c679888fb5d43094898820",
+  "original_protocol_sha256": "eab0da293df1ff66795d7b32e9a8e52091b20ebdcb3252b61447db403f09b505",
+  "original_clarifications_sha256_reported_by_independent_review": "4dfd2369755eecad99aa419156d049f504930413d3b6f90cff3a75eec1415f3c",
+  "reconstruction": "Reversed the recorded keep/grant13/grant14 patch from the current source. Checker/toolchain unchanged; README reconstruction reverses the same prose patch.",
+  "not_recovered": [
+    "original verification.json bytes",
+    "original output log bytes",
+    "original per-module source hash map",
+    "original revision verification.json hash"
+  ],
+  "verification_limit": "The independent reviewer checked the original 41-theorem receipt against then-current files. Its complete receipt and per-module hash map were not retained, so reconstructed source/log equivalence is not claimed from those unavailable hashes. No old rebuild was run to manufacture an original receipt.",
+  "preserved_limitation": "learn required changed, reached only after swap. An unarmed paid read stalled in inspected and could not model the numerical unchanged-route continuation. The stated swapped witnesses remain narrower than that whole policy.",
+  "reconstructed_files": {
+    "RevisionSuccession.lean": "075f260809d23b439726ef0c93673d8140353afa0595705ab388f1a052af8c3c",
+    "check.py": "3281fe43bb46972ad0241efe35d844f6bfe7891318c679888fb5d43094898820",
+    "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "README.original.md": "5428ed56487eea5f0c89ddf8a8053c6a1a9db635accd49239ec0657c26c4a67e",
+    "RouteRevision.lean": "c42ee82dcac0c651434b65fd52c7e070a0d0896a9b2fcc185609e2d814ddb34d"
+  },
+  "original_revision_receipt_sha256": null,
+  "known_monitor_dependency_receipt_sha256_reported_by_independent_review": "ee95bd50caed73238411f9338dbc8338895c2817679aafd1bd1024a9a2f7c7ad",
+  "receipt_attribution_correction": "The ee95bd50\u2026 hash was initially misattributed to the original 41-theorem revision receipt. The independent reviewer corrected it to the monitor formal dependency receipt. The original revision receipt hash is unavailable."
+}

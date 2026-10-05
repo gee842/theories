@@ -1,0 +1,275 @@
+"""Paid route replacement and actual recopying, following an actual monitor prefix.
+
+The supplied finite head, variation law, leases, recipient funding and calibrated
+plant remain premises. Only plant work reads `world`; no success score chooses a
+route. Prefixes and whole-mixture ancestry are bound separately by run.py.
+"""
+from copy import deepcopy
+import importlib.util
+from pathlib import Path
+import sys
+
+sys.dont_write_bytecode = True
+HERE = Path(__file__).resolve().parent
+BASE = HERE.parents[1]
+
+
+def load(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+parent = load('_revision_transmission', BASE / 'transmission/model.py')
+ROUTES = ('target', 'closed', 'private_zero', 'frozen')
+OPS = (('rent', 1), ('sense', 1), ('work', 3), ('acquire', 1), ('write', 1))
+
+
+def classification(success, failure):
+    if 3 in (success, failure):
+        return 'conflict'
+    signatures = {'target': (1, 2), 'private_zero': (2, 2), 'nonwriter': (1, 1)}
+    possible = [key for key, pair in signatures.items()
+                if success in (0, pair[0]) and failure in (0, pair[1])]
+    return possible[0] if len(possible) == 1 else 'unresolved' if possible else 'conflict'
+
+
+def revised(gamma, q, issued, captured, channel, conventional):
+    if not conventional:
+        return parent.route_feedback(parent.Route(gamma), q, 1, issued, captured, True, channel)[0]
+    if gamma in ('closed', 'frozen') or (not channel and gamma != 'private_zero'):
+        return q
+    observed = False if gamma == 'private_zero' else captured
+    return q % 2 + 2 * (issued if observed else 1 - issued)
+
+
+def run(prefix, case, proposal, world):
+    if proposal not in ROUTES:
+        raise ValueError('Proposal outside supplied repertoire')
+    if case['probes'] not in (0, 2, 3):
+        raise ValueError('Undeclared finite schedule')
+    for key in ('grant', 'probe_source', 'copy_source', 'heads', 'parts', 'receiver_blank', 'receiver_part'):
+        if case[key] < 0:
+            raise ValueError('Negative provision')
+    if case['copy_source'] not in (0, 10):
+        raise ValueError('Copy packet is present or absent, never a changed packet value')
+    if case['mode'] not in ('revise', 'no_repair', 'same_route'):
+        raise ValueError('Unknown intervention')
+    s = deepcopy(prefix['state'])
+    before = deepcopy(s)
+    initial_part = prefix.get('material', {}).get('current_routing_part', int(s['carrier_active']))
+    s.update(held_fuel=case['grant'], probe_reserve=case['probe_source'],
+             copy_source=case['copy_source'], free_revision_heads=case['heads'],
+             installed_revision_heads=0, replacement_parts=case['parts'], retired_parts=0,
+             installed_route_parts=initial_part, revision_armed=False,
+             phase='prefix', probe_index=0, successor_cash=0,
+             successor_blank=case['receiver_blank'], successor_occupied=0,
+             successor_part=case['receiver_part'], successor_assembled=0,
+             successor_latch=None, successor_template=None, successor_retained=False,
+             successor_capture=None)
+    metrics = dict(prefix_complete=0, grants_released=0, head_assemblies=0, reads=0,
+                   swap_requests=0, swaps=0, route_changes=0, probes_completed=0,
+                   probe_work=0, probe_captures=0, copies=0, child_captures=0,
+                   child_retained=0, revised_productive_successor=0,
+                   recipient_updater_changes=0, behaviorally_revised_productive_successor=0)
+    trace = []
+    initial_total = sum(s[k] for k in ('untouched_energy', 'recipient', 'child_cash',
+                                     'new_source', 'spent', 'lost', 'held_fuel',
+                                     'probe_reserve', 'copy_source'))
+    original_bit = None if s['q'] is None else s['q'] % 2
+
+    def audit():
+        assert sum(s[k] for k in ('untouched_energy', 'recipient', 'child_cash',
+                    'new_source', 'spent', 'lost', 'held_fuel', 'probe_reserve',
+                    'copy_source', 'successor_cash')) == initial_total
+        assert min(s[k] for k in ('recipient', 'child_cash', 'new_source', 'spent',
+                    'lost', 'held_fuel', 'probe_reserve', 'copy_source', 'successor_cash')) >= 0
+        assert s['recipient'] >= min(before['recipient'], 1)
+        assert s['original_actor'] == before['original_actor']
+        assert s['older_learner_cash'] == before['older_learner_cash']
+        assert s['untouched_energy'] == before['untouched_energy']
+        assert s['free_revision_heads'] + s['installed_revision_heads'] == case['heads']
+        assert s['replacement_parts'] + s['retired_parts'] + s['installed_route_parts'] == case['parts'] + initial_part
+        assert s['successor_blank'] + s['successor_occupied'] == case['receiver_blank']
+        assert s['successor_part'] + s['successor_assembled'] == case['receiver_part']
+        for key in ('free_cells', 'bound_cells', 'free_heads', 'bound_heads', 'monitor_installed'):
+            assert s[key] == before[key]
+        if s['q'] is not None:
+            assert 0 <= s['q'] < 4 and s['q'] % 2 == original_bit
+        if s['successor_template'] is not None:
+            assert s['successor_template'][1] % 2 == original_bit
+
+    def snapshot(stage):
+        s['stage'] = stage
+        audit()
+        trace.append(deepcopy(s))
+
+    def finish(stage):
+        snapshot(stage)
+        metrics.update(new_spent=s['spent'] - before['spent'],
+                       new_lost=s['lost'] - before['lost'],
+                       total_spent=s['spent'], total_lost=s['lost'],
+                       final_recipient=s['recipient'], final_donor=s['child_cash'],
+                       final_successor=s['successor_cash'],
+                       source_remaining=s['new_source'] + s['probe_reserve'] + s['copy_source'],
+                       held_fuel=s['held_fuel'])
+        metrics['revised_productive_successor'] = int(metrics['route_changes'] > 0
+            and s['successor_capture'] is True and s['successor_retained'])
+        metrics['behaviorally_revised_productive_successor'] = int(metrics['recipient_updater_changes'] > 0
+            and s['successor_capture'] is True and s['successor_retained'])
+        return {'state': s, 'trace': trace, 'metrics': metrics}
+
+    def stopped(event):
+        return case['stop_before'] == event
+
+    def pay(fee):
+        missing = max(0, fee - s['child_cash'])
+        if s['recipient'] < 1 + missing:
+            return False
+        s['recipient'] -= missing
+        s['child_cash'] += missing
+        s['transferred'] += missing
+        audit()
+        s['child_cash'] -= fee
+        s['spent'] += fee
+        audit()
+        return True
+
+    snapshot('revision_initial')
+    if before['stage'] not in ('commit', 'episode_complete') or not before['carrier_active']:
+        return finish('prefix_incomplete')
+    if before['monitor_installed'] and not before['binding']:
+        return finish('prefix_unbound')
+    metrics['prefix_complete'] = 1
+    s['recipient'] += s['held_fuel']
+    metrics['grants_released'] = s['held_fuel']
+    s['held_fuel'] = 0
+    s['new_source'] += s['probe_reserve']
+    s['probe_reserve'] = 0
+    s['phase'] = 'ready'
+    snapshot('handoff')
+
+    if case['mode'] != 'no_repair' and before['monitor_installed']:
+        if stopped('head'):
+            return finish('stopped_head')
+        if not s['free_revision_heads']:
+            return finish('blocked_head_part')
+        if not pay(1):
+            return finish('blocked_head_funds')
+        s['free_revision_heads'] -= 1
+        s['installed_revision_heads'] += 1
+        metrics['head_assemblies'] = 1
+        snapshot('head_assembled')
+        if stopped('read'):
+            return finish('stopped_read')
+        if not s['binding']:
+            return finish('blocked_read_binding')
+        if not pay(1):
+            return finish('blocked_read_funds')
+        verdict = classification(s['success_summary'], s['failure_summary'])
+        s['revision_armed'] = verdict in ('nonwriter', 'private_zero')
+        metrics['reads'] = 1
+        metrics['swap_requests'] = int(s['revision_armed'])
+        snapshot('diagnosis_read')
+        if case['break_after_read']:
+            s.update(binding=False, success_summary=0, failure_summary=0,
+                     diagnosis='unresolved', revision_armed=False)
+            return finish('binding_broken_after_read')
+        if s['revision_armed']:
+            if stopped('swap'):
+                return finish('stopped_swap')
+            if not s['replacement_parts']:
+                return finish('blocked_swap_part')
+            if not pay(1):
+                return finish('blocked_swap_funds')
+            # same_route is an explicitly supplied intervention on the proposal,
+            # not a freely observed route label in the primary controller.
+            candidate = s['gamma'] if case['mode'] == 'same_route' else proposal
+            metrics['route_changes'] = int(candidate != s['gamma'])
+            behavior = {'target': 'target', 'private_zero': 'private_zero',
+                        'closed': 'nonwriter', 'frozen': 'nonwriter'}
+            metrics['recipient_updater_changes'] = int(behavior[candidate] != behavior[s['gamma']])
+            s['gamma'] = candidate
+            s['replacement_parts'] -= 1
+            s['retired_parts'] += 1
+            s.update(revision_armed=False, binding=False, success_summary=0,
+                     failure_summary=0, diagnosis='unresolved', armed=False)
+            metrics['swaps'] = 1
+            snapshot('route_swapped')
+
+    for index in range(case['probes']):
+        current_world = world ^ int(case['reverse_third'] and index >= 2)
+        issued = None
+        receipt = False
+        candidate = None
+        for op, price in OPS:
+            label = f'probe_{index}_{op}'
+            if stopped(label):
+                return finish('stopped_' + label)
+            if op == 'work' and s['new_source'] < 10:
+                return finish('blocked_probe_packet')
+            if not pay(price):
+                if op == 'rent':
+                    s['carrier_active'] = False
+                return finish('blocked_' + label + '_funds')
+            if op == 'rent':
+                s['phase'] = 'rented'
+                s.update(target_report=None, issued=None, candidate=None, route_receipt=False)
+            elif op == 'sense':
+                s['phase'] = 'sensed'
+                s['target_report'] = 1
+            elif op == 'work':
+                issued = ((0, 0, 1, 1)[s['q']] if case.get('conventional', False)
+                          else parent.issue(s['q'], s['target_report']))
+                receipt = issued == current_world and case['availability'][index]
+                s['new_source'] -= 10
+                s['recipient' if receipt else 'lost'] += 10
+                s.update(issued=issued, route_receipt=receipt, phase='worked')
+                metrics['probe_work'] += 1
+                metrics['probe_captures'] += int(receipt)
+            elif op == 'acquire':
+                candidate = revised(s['gamma'], s['q'], issued, receipt,
+                                    case['channel'], case.get('conventional', False))
+                s.update(candidate=candidate, phase='observed')
+            elif op == 'write':
+                s.update(q=candidate, phase='ready', probe_index=index + 1)
+                metrics['probes_completed'] += 1
+            snapshot(label)
+
+    if not s['carrier_active'] or s['phase'] != 'ready':
+        return finish('copy_unavailable')
+    missing = max(0, 1 - s['child_cash'])
+    if s['recipient'] < 1 + missing:
+        return finish('blocked_copy_funding')
+    s['recipient'] -= missing
+    s['child_cash'] += missing
+    s['transferred'] += missing
+    s['phase'] = 'copy'
+    snapshot('copy_funded')
+    donor = dict(fuel=s['child_cash'], recipient=s['recipient'], gamma=s['gamma'],
+                 q=s['q'], active=s['carrier_active'], installed=True,
+                 original_source_remaining=0)
+    child_world = world ^ int(case['reverse_third'] and case['probes'] >= 3) ^ int(case['reverse_child'])
+    outcome = parent.transmit(donor, child_world, receiver_blank=case['receiver_blank'],
+                              routing_part=case['receiver_part'])
+    spent0, lost0 = s['spent'], s['lost']
+    packet_present = s['copy_source'] == 10
+    for item in outcome['trace']:
+        # Source absence restricts the old nominal event word at work. Earlier
+        # payments stand; no zero-valued or new packet is put into circulation.
+        if not packet_present and item['stage'] == 'work_paid':
+            return finish('blocked_copy_packet')
+        s.update(recipient=item['recipient'], child_cash=item['actor'],
+                 copy_source=item['auxiliary_source'] if packet_present else 0,
+                 successor_cash=item['child_fuel'], successor_blank=item['blank'],
+                 successor_occupied=item['occupied_blank'], successor_part=item['routing_part'],
+                 successor_assembled=item['assembled_part'], successor_latch=item['latch'],
+                 successor_template=item['child'], successor_retained=item['retained'],
+                 successor_capture=item['capture'], spent=spent0 + item['spent'], lost=lost0 + item['lost'])
+        metrics['copies'] = int(item['copied'])
+        metrics['child_captures'] = int(item['capture'] is True)
+        metrics['child_retained'] = int(item['retained'])
+        snapshot('copy_' + item['stage'])
+    return finish('revision_complete' if s['successor_retained'] else s['stage'])

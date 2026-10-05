@@ -12,5 +12,11 @@
   "data_contract_before_execution": {
     "path": "DATA-CONTRACT.md",
     "sha256": "406955d4971422c78bc87df3b1918a2b785b82d690f0e4de81198e6362603a87"
-  }
+  },
+  "current_data_contract": {
+    "path": "DATA-CONTRACT.md",
+    "sha256": "92df4d028cb22dddf310dffa8d346e7f2c37f6d65d1273cb494e4492f2a3bcfb",
+    "status": "Post-run clarification of operational-register lifecycle and separation of configuration/recipient-update metrics. Original contract and outputs retained; no physical transition change."
+  },
+  "review_corrections": "REVIEW-CORRECTIONS.md"
 }

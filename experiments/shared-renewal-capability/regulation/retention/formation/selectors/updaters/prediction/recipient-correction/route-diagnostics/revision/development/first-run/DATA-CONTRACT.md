@@ -1,0 +1,30 @@
+# Numerical producer and independent reconstruction contract
+
+This API describes the frozen prospective mechanism; it does not establish that it passes. `run(prefix, case, proposal, world)` receives the exact existing one-frame monitor result, including state and trace. `world` is the inherited actual plant orientation after the declared first challenge, supplied to plant work only. The route proposal is one of `target`, `closed`, `private_zero`, `frozen` and is not chosen from this orientation.
+
+The case carries `mode` (`revise`, `no_repair`, explicit `same_route` proposal intervention); `grant`, `probe_source`, `copy_source`, `heads`, `parts`, `receiver_blank`, `receiver_part`; `probes` (0,2,3); three `availability` flags; `channel`; `reverse_third`; `reverse_child`; `stop_before`; `break_after_read`; and an optional conventional arithmetic implementation selector. Primary numerical values are 5,20,10,1,1,1,1 and three probes. The third-probe reversal occurs only if that probe exists; a child following zero/two probes does not inherit an event that never occurred.
+
+The result is `{state, trace, metrics}`. Full trace states can be losslessly stored as an initial state and deltas. Exact independent comparison may project away labels or redundant producer counters only if each excluded field is identified; all physical transitions, stocks, retained records, payments, material and final outcomes must still be checked.
+
+State begins with all monitor-state fields unchanged, plus:
+
+- `held_fuel=grant`, `probe_reserve=probe_source`, `copy_source`;
+- `free_revision_heads=heads`, `installed_revision_heads=0`, `replacement_parts=parts`, `retired_parts=0`, `installed_route_parts=prefix.material.current_routing_part`, derived from the actual parent's `grandchild_assembled` field independently of activity/retention. Partial inactive descendants can still have one assembled part. Other old material remains in the unchanged, explicitly referenced ancestor frame;
+- `revision_armed=false`, `phase=prefix`, `probe_index=0`;
+- `successor_cash=0`, `successor_blank=receiver_blank`, `successor_occupied=0`, `successor_part=receiver_part`, `successor_assembled=0`, `successor_latch=null`, `successor_template=null`, `successor_retained=false`, `successor_capture=null`.
+
+`phase` becomes ready, rented, sensed, worked, observed, ready across a completed ordinary trial. `probe_index` counts completed writes, incremented only after writing; it stays at the preceding count on any partial trial. At copying, phase becomes copy. A paid swap preserves the inherited q and its actor bit, changes gamma, increments retired parts, consumes a spare, and clears binding/summaries/diagnosis/authorization. The other original monitor fields remain historical cells, not a current diagnostic of the replacement.
+
+All assembly/read/swap/probe payments transfer only a shortfall from recipient to current carrier, then dissipate the fee. `transferred` accumulates those transfers and the later donor-funding transfer; it excludes release of the separate grant and the copier's seed transfer, which remain explicitly visible in their own stocks. Grant release and opening the probe bank occur only after an active first prefix ends at `commit` or its observer stop marker `episode_complete` (and an installed monitor stays bound). No-repair and ordinary no-monitor controls receive the same release. Prefix failures retain all new stocks.
+
+The revision trace labels are `revision_initial`, `handoff`, `head_assembled`, `diagnosis_read`, `route_swapped`; ordinary stages are `probe_i_rent/sense/work/acquire/write` for zero-based i. `break_after_read` invalidates binding, summaries and authorization and **halts** this finite continuation. Stopping before a requested stage likewise preserves its prior state and halts. It is not an implicit ordinary-operation fallback. Missing head/part or an unpaid stage halts rather than granting a retry.
+
+Every completed bound monitored revise arm pays the head and read before classification. Nonwriter/private-zero arms; target/unresolved/conflict does not. A no-repair or ordinary no-monitor arm uses the old route without the new head. The same-route case is an experimenter-supplied proposal clamp, not an extra diagnostic read in the primary controller.
+
+After all requested writes complete, `copy_funded` marks the one-unit donor cash transfer. The unchanged copy's stages become `copy_donor_held`, `copy_recipient_operated`, `copy_template_read`, `copy_receiver_assembled`, `copy_template_written`, `copy_child_seeded`, `copy_child_rented`, `copy_target_sensed`, `copy_work_paid`, `copy_child_acted`, `copy_child_held`, or its actual blocked stage. Map the copied module's actor cash back to the current donor, never to original_actor. Missing copy source blocks **before work_paid**, preserving the target_sensed state and all previous copy expenses. The primary packet-present path must match the inherited copier exactly.
+
+`revision_complete` means the actual copied child paid its final hold; it does not imply a productive child, sound updater or complete foundation. Partial termination receives a distinct blocked/stopped label. Labels and metrics are observation records, not controller input.
+
+Metrics record completed prefix, grant released, actual head assemblies/reads/requests/swaps/functional route changes, completed probes/work/captures, copies/child captures/child holds, new and total spending/loss, final separate cash and source. `revised_productive_successor` requires an actual functional route change, actual productive copied-child action and subsequent paid child hold. It is an analyst's outcome, never a reward or selection guard.
+
+Mixture tables retain every original row reference, its exact rational mass, its first-prefix reference and proposal mass. Identical suffixes may share an execution record; their distinct ancestor identities and masses must remain. Local parameter sweeps are labeled boundary tests and do not become unconditional formation probabilities.
