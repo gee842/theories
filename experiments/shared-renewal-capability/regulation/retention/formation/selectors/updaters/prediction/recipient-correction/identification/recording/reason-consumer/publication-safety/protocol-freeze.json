@@ -1,0 +1,6 @@
+{
+  "protocol_sha256": "57de4112ea607d02c2678e70abeb5bd3c0794f5539fac5461779526c10821416",
+  "stage": "prospective before full producer graph exploration, after initial critic boundary checks",
+  "supersedes_prospective_hash": "6611113eec20c002bd3aaaba960fd2374a9d65a420b0e4df6bb0d54052066281",
+  "reason": "Independent reviewer requested explicit synthetic domain before full producer exploration; no outcomes or kernel behavior changed."
+}

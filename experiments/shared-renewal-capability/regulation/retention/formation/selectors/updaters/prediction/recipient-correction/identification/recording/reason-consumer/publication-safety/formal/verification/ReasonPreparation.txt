@@ -1,0 +1,10 @@
+'ReasonPreparation.runnable_trace' depends on axioms: [propext]
+'ReasonPreparation.actual_formation_feasible' depends on axioms: [propext]
+'ReasonPreparation.actual_formation_trace' depends on axioms: [propext]
+'ReasonPreparation.actual_formation_endpoint' depends on axioms: [propext]
+'ReasonPreparation.actual_assemblies_feasible' does not depend on any axioms
+'ReasonPreparation.actual_material_partition' depends on axioms: [propext]
+'ReasonPreparation.original_energy_partition' does not depend on any axioms
+'ReasonPreparation.boundary_preparations_feasible' depends on axioms: [propext]
+'ReasonPreparation.exact_paid_capacity_boundaries' does not depend on any axioms
+'ReasonPreparation.primary_whole_ledger_arithmetic' does not depend on any axioms
