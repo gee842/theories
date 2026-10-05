@@ -1,0 +1,127 @@
+{
+  "created_at_utc": "2026-10-05T13:31:03.962460+00:00",
+  "type": "Integration, source-delta, preservation, links and saved-execution provenance; not a scientific rerun",
+  "prior_goal_turn_assessment": "Real progress at f81afc0; this turn closes a named common finite-event interface and adds independently reviewed retention/equilibrium constraints. No repeated blocking condition.",
+  "repository_head_before_commit": "f81afc02d52b02b19a8848201b15a81d19b79e5a",
+  "goal_status": "active; physical identification, full useful retention, broad joint-capability direction and universal coverage remain open",
+  "local_links_checked": 419,
+  "missing_local_links": [],
+  "frozen_antecedents_unchanged": {
+    "RENEWAL-RETURN.md": "8c72623e2cb4d4cc11ae944ef8fbefeb25e5b002187f0e7544670cfd13db827c",
+    "ARCHITECTURE-FORMATION-CRITIQUE.md": "d20d3284cb2afe84884d567c7d39efe1b3a360fee9375b2158c8116fc7e50362",
+    "THERMODYNAMIC-EMBEDDING.md": "77eefb42eddb97b76ef4e6d3335d732a2e84874e415d5d2323b47c40638312b8",
+    "DIRECTION-AND-TURNOVER.md": "7c819e13ff39c2c42e602946a498cc159e943bccd985444839e8724b3d97fe20",
+    "ALLOCATION-CONTROL.md": "93ba1c7d550d64b3176e34c1826ae45889b0a68907e33d0c766825273be7f60b"
+  },
+  "new_reviewed_proof_hashes": {
+    "INTEGRATED-FORMATION-RENEWAL.md": "c1409e8614fd2ade57edcdbe74f004a5bf8c63b7199f4b1453c49fc9084e4947",
+    "INTEGRATED-THERMODYNAMICS.md": "3f0c7ae294539ff5004d5e8fe56519719ff9166ddff24ec4cc164727a720f559",
+    "USEFUL-RETENTION-MECHANISM.md": "0313fc92e856f3de983232361884f3133a23cfecf9b74ed0ca8b6cb2a3c5ff37"
+  },
+  "result_checker_and_protocol_hashes_match": true,
+  "formation_event": {
+    "status": "passed",
+    "fresh_capture_budget": 8,
+    "total_selected_steps": 27,
+    "uniform_full_event_J0_lower_bound": "1/808804024575624000000",
+    "algebraically_chosen_finite_m": "2426412073726872000000",
+    "strict_full_event_margin_lower_bound": "1/1617608049151248000000"
+  },
+  "thermodynamic_event": {
+    "status": "all exact assertions passed",
+    "source_stock_B": "9783293481266747904000000",
+    "potential_scale_M": 299,
+    "reaction_pairs": 31,
+    "pre_capture_states": 38133,
+    "pre_capture_enabled_balance_edges_checked": 232507,
+    "simpler_preserved_gap_strict_lower": {
+      "exact": "1/3235216098302496000000",
+      "decimal_for_reading": 3.0909836301961273e-22
+    }
+  },
+  "retention_review": {
+    "status": "passed",
+    "results": {
+      "duration": {
+        "blocking": "332837/1101408",
+        "nonblocking": "401591/1329312",
+        "absolute_gain": "335099/3812799144"
+      },
+      "C_or_CF_occupation": {
+        "blocking": "11497/45892",
+        "nonblocking": "13875/55388",
+        "absolute_gain": "2771/158866631"
+      },
+      "fresh_captures": {
+        "blocking": "11593/275352",
+        "nonblocking": "13987/332328",
+        "absolute_gain": "13855/953199786"
+      },
+      "C_reassemblies": {
+        "blocking": "24/11473",
+        "nonblocking": "28/13847",
+        "absolute_gain": "11084/158866631"
+      }
+    },
+    "executed_source_hash": "78311a603ff33407faeacb09f81895a8b50e9acf33062410a03c06bb17e54e02",
+    "final_source_hash": "0313fc92e856f3de983232361884f3133a23cfecf9b74ed0ca8b6cb2a3c5ff37",
+    "exact_delta_reconstructs_executed_source": true,
+    "calculation_unchanged_after_succession_obstruction_added": true,
+    "scope": "All-path retained-scaffold episodes only. Bare CF law cannot replace A/G after entry; prospective paid-access extension requires a new full comparison."
+  },
+  "primary_source_hashes_verified": [
+    {
+      "file": "Mizuuchi-2022.pdf",
+      "url": "https://webpark2056.sakura.ne.jp/papers/2022_Mizuuchi.pdf",
+      "sha256": "3b8c7d7eaec21f3dd97ddca0224abf876d06b0e66a5d48cdae6033ef96627f6c",
+      "bytes": 1583315
+    },
+    {
+      "file": "Bansho-2016.pdf",
+      "url": "https://webpark2056.sakura.ne.jp/papers/2016_Bansho.pdf",
+      "sha256": "4c9643e76215c9a422330524205d1691dff55651e8d85382bc5239382bcc9e70",
+      "bytes": 1181793
+    },
+    {
+      "file": "Mizuuchi-2022-SI.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-29113-x/MediaObjects/41467_2022_29113_MOESM1_ESM.pdf",
+      "sha256": "a2cf3989ed16a6b4e76b08a5aba49b9a7597072058a3219ac7df58907c579d08",
+      "bytes": 16866850
+    }
+  ],
+  "execution_scope": "Agents executed new exact formation and thermodynamic checks. Root executed a new independent nine-state rational audit once. Source/hash/link verification does not rerun those science checks.",
+  "review_scope": "Independent AI analytic and code/table review; no proof-assistant or external peer review; no laboratory experiment or authors simulation reproduced",
+  "artifact_sha256": {
+    "RESEARCH.md": "612af619db9c56e46d45b304ea924e99712af30245691c73e3bee28830f30992",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md": "c8261dc5b396e0a14b68c2450b139fc10d6a44b4035812963741c2cacbf9ec76",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/monitor-state.json": "5180157cea73318aca0f8b4fc99735c6b425306d39a33405cc07e0abdde62bf2",
+    "experiments/shared-renewal-capability/README.md": "87c7f6c0a0fc146374c756a85f85ab1e96a1e3f178efd873427c5f0e36869480",
+    "sources/SOURCES.md": "59c044c6a365aedd7d39ce262bd61fed7039c49d84466481e123c7ffb06fdc82",
+    "theories/shengsheng-buxi-generative-existence/README.md": "941460cd9603f3702a2afd660b1d9a541ff1ceb8d01de8d3b9fff82f511348f0",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md": "723aff9f6255bdd64802353f9f2eea1e925c1551363e4e1a41276329516ef883",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md": "9e714db285ebcdafa662e62076a9c3c826f0fa55753cb35c16b2955b36255909",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATED-FORMATION-RENEWAL.md": "c1409e8614fd2ade57edcdbe74f004a5bf8c63b7199f4b1453c49fc9084e4947",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATED-PROCESS-REVIEW.md": "722c849c506af22828f637a203ecf6638583c3cc276271c16a213b28b8173818",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATED-THERMODYNAMICS.md": "3f0c7ae294539ff5004d5e8fe56519719ff9166ddff24ec4cc164727a720f559",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-EVIDENCE-RNA-NETWORK.md": "cfecc3c7364055136131404b09a72a169bd31ca0b223d56f3bf08254891455c4",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/USEFUL-RETENTION-MECHANISM.md": "0313fc92e856f3de983232361884f3133a23cfecf9b74ed0ca8b6cb2a3c5ff37",
+    "experiments/shared-renewal-capability/integrated-formation/README.md": "99434275d08a490bb75310e72f5ac28a5bf280bda6ee4bb7f2797b0c86f12bd5",
+    "experiments/shared-renewal-capability/integrated-formation/exact-check.json": "9a26ef31b549932a62586977680f9840d1f9f0aa49a02a3cb6ca1db963ee78b0",
+    "experiments/shared-renewal-capability/integrated-formation/exact_check.py": "79f3a779b012c0c857c154f5303108383bb211ea6b7d4278175ef8f2153bff92",
+    "experiments/shared-renewal-capability/integrated-thermo/PROTOCOL.md": "91055a10eee9ffc1e0ee3c2db728da8def528871b0ad862c9c9427ec65b77564",
+    "experiments/shared-renewal-capability/integrated-thermo/README.md": "c4c7b689f671dbc6542fab6ec857eee745a74489fd0aa629f4e4e41dcffdd158",
+    "experiments/shared-renewal-capability/integrated-thermo/exact-check.json": "30bb10eaaf52bbc40d9655796d330a242a9c8121914d6beffad433e780bbdc5f",
+    "experiments/shared-renewal-capability/integrated-thermo/exact_check.py": "87a98fc0d466c62fb62aa998ebc41da8a558e81f2a28ebebacc432a882a15681",
+    "experiments/shared-renewal-capability/retention-review/README.md": "e09d4ebbe0eee32d3212f8619a5dc4f4e8d067e4381d27b27adc924b508e88c1",
+    "experiments/shared-renewal-capability/retention-review/exact-check.json": "6ecefb6d9d94fd9a50d2e0de00f0e5c466b47b2315584efad0555e97d1e91c50",
+    "experiments/shared-renewal-capability/retention-review/exact_check.py": "683a05abbc98964a637e190cc9ac7ef921f73056f00da69d64af6599b93e3426",
+    "experiments/shared-renewal-capability/retention-review/source-delta.json": "0fdadd1534a384448a660225ed4404c7a1ed41611dd7496ac921b728442278a2",
+    "sources/24-rna-network-evidence-2026-10-05/Bansho-2016.pdf": "4c9643e76215c9a422330524205d1691dff55651e8d85382bc5239382bcc9e70",
+    "sources/24-rna-network-evidence-2026-10-05/MANIFEST.json": "5d7c0336c09e3e6942f04219609883a219d8a4a53b4b1202b56b2a2ebed9db92",
+    "sources/24-rna-network-evidence-2026-10-05/Mizuuchi-2022-SI.pdf": "a2cf3989ed16a6b4e76b08a5aba49b9a7597072058a3219ac7df58907c579d08",
+    "sources/24-rna-network-evidence-2026-10-05/Mizuuchi-2022.pdf": "3b8c7d7eaec21f3dd97ddca0224abf876d06b0e66a5d48cdae6033ef96627f6c",
+    "sources/24-rna-network-evidence-2026-10-05/README.md": "017144e68764bb6fa1f43bbe0b2d17b9d3bd6668f8a103f218a5515093621c22",
+    "sources/24-rna-network-evidence-2026-10-05/.gitattributes": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b"
+  },
+  "whitespace_check": "One trailing space in frozen, reviewed USEFUL-RETENTION-MECHANISM.md line116 retained to preserve its exact producer/source-delta hashes. No substantive defect. Original PDFs marked binary without changing bytes."
+}

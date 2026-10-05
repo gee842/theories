@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "scope": "Independent exact solution of the published nine-state table and rank-one formula; chemistry reviewed analytically, not empirically identified",
+  "results": {
+    "duration": {
+      "blocking": "332837/1101408",
+      "nonblocking": "401591/1329312",
+      "absolute_gain": "335099/3812799144"
+    },
+    "C_or_CF_occupation": {
+      "blocking": "11497/45892",
+      "nonblocking": "13875/55388",
+      "absolute_gain": "2771/158866631"
+    },
+    "fresh_captures": {
+      "blocking": "11593/275352",
+      "nonblocking": "13987/332328",
+      "absolute_gain": "13855/953199786"
+    },
+    "C_reassemblies": {
+      "blocking": "24/11473",
+      "nonblocking": "28/13847",
+      "absolute_gain": "11084/158866631"
+    }
+  },
+  "rank_one_identity_states_checked": 9,
+  "source_sha256": "78311a603ff33407faeacb09f81895a8b50e9acf33062410a03c06bb17e54e02",
+  "checker_sha256": "683a05abbc98964a637e190cc9ac7ef921f73056f00da69d64af6599b93e3426"
+}

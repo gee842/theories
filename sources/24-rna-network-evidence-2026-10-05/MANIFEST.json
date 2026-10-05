@@ -1,0 +1,23 @@
+{
+  "retrieved_utc": "2026-10-05",
+  "sources": [
+    {
+      "file": "Mizuuchi-2022.pdf",
+      "url": "https://webpark2056.sakura.ne.jp/papers/2022_Mizuuchi.pdf",
+      "sha256": "3b8c7d7eaec21f3dd97ddca0224abf876d06b0e66a5d48cdae6033ef96627f6c",
+      "bytes": 1583315
+    },
+    {
+      "file": "Bansho-2016.pdf",
+      "url": "https://webpark2056.sakura.ne.jp/papers/2016_Bansho.pdf",
+      "sha256": "4c9643e76215c9a422330524205d1691dff55651e8d85382bc5239382bcc9e70",
+      "bytes": 1181793
+    },
+    {
+      "file": "Mizuuchi-2022-SI.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-29113-x/MediaObjects/41467_2022_29113_MOESM1_ESM.pdf",
+      "sha256": "a2cf3989ed16a6b4e76b08a5aba49b9a7597072058a3219ac7df58907c579d08",
+      "bytes": 16866850
+    }
+  ]
+}
