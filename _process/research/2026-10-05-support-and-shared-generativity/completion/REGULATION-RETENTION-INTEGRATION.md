@@ -30,6 +30,8 @@ The gate permits supplied physical laws and formation mechanisms. Requiring uniq
 
 ## The next result must join the actual processes
 
+**Subsequent result, 6 October 2026:** the [formed-variant integration](FORMED-VARIANT-SELECTION-INTEGRATION.md) meets this preparation obligation under a newly declared joint law. Both variants form from absence and can undergo mixed-population copying without a resource reset. This is not an exact kinetic composition of the two older laws. The historical gap below explains the construction's target; formation and revision of the selection mechanisms themselves remain open.
+
 The formation law starts without G but has one supplied response type. The selection extension begins with two existing types, unformed associations and extra starter fuel. Its useful relative-retention effect is a valid separate conditional theorem. Its preparation is not yet an output of the first law.
 
 The next construction must produce alternative response types, pay their formation costs, and carry the resulting states into competition under one law. It must retain common-resource neutrality, potential exploitation and work-induced losses alongside useful local return. A formal or computational adapter that merely installs the contest preparation would leave this explanatory gap intact.

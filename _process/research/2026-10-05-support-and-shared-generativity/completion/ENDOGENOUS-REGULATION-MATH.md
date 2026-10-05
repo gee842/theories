@@ -249,6 +249,8 @@ Copy counts, surviving regulators, site condition and fresh captures must be rep
 
 ## 7. Finite support and the next missing connection
 
+**Subsequent result, 6 October 2026:** the [formed-variant integration](FORMED-VARIANT-SELECTION-INTEGRATION.md) joins variant formation and mixed-population differential reconstruction under a newly declared law with continuous resource accounting. It addresses the preparation gap identified below without claiming an exact kinetic refinement of this earlier model. The origin and revision of the supplied sensing, access and copying architecture remain the next central connection.
+
 Under α,δ,ℓ>0, every trajectory uses at most F₀+E₀ fuel-consuming events and captures at most E₀ packets. Almost surely any enabled leak, wear or damage eventually occurs unless its reactant has already disappeared. After the finitely many repairs and regulator births, intact sites and regulators therefore disappear almost surely; finite existing fuel leaks away. Some uncaptured E can remain inaccessible. The finite construction cannot support indefinite active renewal.
 
 The material loop explains why restoring a productive dependency can cause additional copying of the response that restored it. It does not explain why the useful response defeats a useless competitor sharing the same fuel. Equal-rate variants can receive the same replenished fuel, so repair can subsidize a nonrepairing lineage. Local association, compartmentalization or another feedback route would need its own formation account; adding one by assumption would shift that part of the problem upstream.

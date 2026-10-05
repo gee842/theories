@@ -165,6 +165,8 @@ With E₀=0, initially empty local stores and σ>0, the left side is always zero
 
 ## 5. What this supplies to the next derivation
 
+**Subsequent result, 6 October 2026:** the [formed-variant construction](FORMED-VARIANT-SELECTION-INTEGRATION.md) now supplies an initially variant-absent process with paid formation and actual mixed copying under one resource history. Its new law and expected-count statistic have their own proofs; the stopped-frequency result here is not automatically transferred. In particular, shared return need not be neutral for the newer count statistic. The preparation limitation recorded below remains a limitation of this earlier model; selector revision remains unresolved in both.
+
 The original loop explains why a response can recreate material used in its copying. This extension specifies when that return changes its **relative** retention against an alternative: the operative issue is who can actually access the resulting support and who bears losses. The shared-pool counterexample and the paid-localization witness now occupy one generator framework.
 
 What becomes explained conditionally is a route from productive action to preferential copying without an observer reward. What remains supplied is the variation repertoire, type inheritance, local-access chemistry, site scaffold, formation mechanism for associations, and the distinction between response efficacies. Association instances form at cost; the capacity to form them does not yet evolve here. The first construction and this contest have not yet been joined into one derivation that produces the needed preparation and both types.

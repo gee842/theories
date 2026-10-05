@@ -54,6 +54,8 @@ The first command writes [results.json](results.json), including all nine interv
 
 ## Contribution and next bridge
 
+The subsequent [formed-variant study](formation/README.md) now starts with neither response type present and joins paid formation, association and mixed copying under one continuing resource history. Its [integration audit](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md) advances the next task to formation and revision of the selection mechanisms themselves. This is a new declared law; the earlier study and its scope remain intact.
+
 This round checks a conditional causal loop from initially absent response to consequence-dependent material reconstruction. Formation, operation and copying spend actual fuel. Its failures include bootstrap exhaustion, loss of productive support and competition between copying and continued repair.
 
 The [shared-pool neutrality result](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-REVIEW.md#why-this-does-not-yet-derive-selection-of-useful-responses) remains decisive: useful repair can fund an ineffective competitor just as readily. The next bridge concerns differential return to actual alternative responses and, later, how sensing and selection mechanisms themselves change. The [gate audit](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md) accepts the first conditional causal-loop milestone. A physical scaffold, response repertoire, copy specificity and storage capacity remain supplied; empirical identification and the wider derivation remain open.
