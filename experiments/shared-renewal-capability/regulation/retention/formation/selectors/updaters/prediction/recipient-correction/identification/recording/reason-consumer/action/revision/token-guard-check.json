@@ -1,0 +1,556 @@
+{
+  "scope": "Supplemental post-review producer regression on actual saved funded endpoints; not an additional frozen experimental arm or independent checker.",
+  "model_sha256": "f57e7ed9ae9df7844926c1c857e233c350395a00484d53dd7d60333723ee7f40",
+  "result_sha256": "cbd19b32b18f3afbfb2c50cc6fb6d8f46fd633dec2e3902124e1c5a5ab7c3438",
+  "checker_sha256": "6a462d4d94d55233e80aec20dbbf076a903fd0a7ce2428a632895b8533ecaf74",
+  "checked_endpoints": [
+    {
+      "case": "primary",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "primary",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "primary",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "primary",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "primary",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "variable",
+      "index": 4,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "variable",
+      "index": 5,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "variable",
+      "index": 11,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "variable",
+      "index": 12,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "conventional",
+      "index": 4,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "conventional",
+      "index": 5,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "conventional",
+      "index": 11,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "conventional",
+      "index": 12,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "fixed_normal",
+      "index": 2,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "fixed_normal",
+      "index": 3,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "fixed_normal",
+      "index": 7,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "fixed_normal",
+      "index": 8,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "first_outage",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "first_outage",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "first_outage",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "first_outage",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "first_outage",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "first_outage",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    }
+  ],
+  "count": 78,
+  "all_blocked_without_state_change": true
+}

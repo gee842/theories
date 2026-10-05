@@ -1,0 +1,707 @@
+{
+  "schema_version": 1,
+  "scope": "Prospectively fixed finite deterministic continuations of every saved parent path; no outcome-conditioned selection.",
+  "funding": "Every case starts with original M42/common227/source184. Displaced compartment units and omitted assembly payments remain idle; omitted assemblies retain typed constituents.",
+  "cases": {
+    "primary": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "no_change": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": false,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "locked_qualification": {
+      "parent_case": "primary",
+      "mode": "locked",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "old_archive_replay": {
+      "parent_case": "primary",
+      "mode": "old_replay",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "attempt_fourth_old_query": {
+      "parent_case": "primary",
+      "mode": "fourth_query",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "no_adapter": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": false,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "no_fresh_cells": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 0,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "recording_disabled": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": false,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "reader_route_missing": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": false,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "import_route_missing": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": false,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "first_outage": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        false,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "second_outage": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        false,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "final_outage": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        false
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "first_acquisition_missing": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "missing",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "second_acquisition_missing": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "missing"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "no_change_first_outage": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": false,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        false,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "change_between_probes": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": false,
+      "flip_between": true,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "change_before_final_work": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": true,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "false_fresh_channel": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "inverted",
+        "inverted"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "actor_short": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 27,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "writer_short": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 4,
+      "reader": 24,
+      "source": 30
+    },
+    "reader_short": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 23,
+      "source": 30
+    },
+    "source_none": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 0
+    },
+    "source_partial": {
+      "parent_case": "primary",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 9
+    },
+    "conventional": {
+      "parent_case": "primary",
+      "mode": "conventional",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "voluntary_learned_register": {
+      "parent_case": "primary",
+      "mode": "voluntary",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "parent_consistently_corrupt": {
+      "parent_case": "parent_consistently_corrupt",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    },
+    "parent_scope_loss_after_rent": {
+      "parent_case": "scope_loss_after_rent",
+      "mode": "reason",
+      "adapter": true,
+      "cells": 4,
+      "recording": true,
+      "reader_route": true,
+      "import_route": true,
+      "flip": true,
+      "flip_between": false,
+      "flip_late": false,
+      "availability": [
+        true,
+        true,
+        true
+      ],
+      "channels": [
+        "faithful",
+        "faithful"
+      ],
+      "actor": 28,
+      "writer": 5,
+      "reader": 24,
+      "source": 30
+    }
+  }
+}

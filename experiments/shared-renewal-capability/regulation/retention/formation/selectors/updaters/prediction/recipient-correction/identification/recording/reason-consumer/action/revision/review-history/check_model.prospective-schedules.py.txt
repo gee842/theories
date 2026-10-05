@@ -1,0 +1,562 @@
+"""Independent fresh-evidence/revision oracle.
+
+The initial law oracle is authored from PROTOCOL.md and the committed ancestor
+laws BEFORE inspecting revision/model.py or any new numerical result.  It never
+imports new transition functions.  Its initial bytes and timestamp are retained
+in review-history.  Output-schema adapters may be added after that freeze.
+"""
+from __future__ import annotations
+
+from copy import deepcopy
+from fractions import Fraction
+from pathlib import Path
+import gzip
+import hashlib
+import json
+
+HERE = Path(__file__).resolve().parent
+PARENT = HERE.parent
+REPO = next(p for p in HERE.parents if (p / "AGENTS.md").exists())
+DESIGNATED = (0, 1, 0)
+CORE_FUNDS = ("fuel", "recipient", "source", "escrow")
+
+
+def sha(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def object_sha(obj):
+    return hashlib.sha256(json.dumps(obj, sort_keys=True,
+                                    separators=(",", ":")).encode()).hexdigest()
+
+
+def read_json(path):
+    path = Path(path)
+    if not path.exists():
+        path = path.with_suffix(path.suffix + ".gz")
+    if path.suffix == ".gz":
+        with gzip.open(path, "rt") as f:
+            return json.load(f)
+    return json.loads(path.read_text())
+
+
+def eq(actual, expected, context):
+    assert actual == expected, (context, actual, expected)
+
+
+def candidate(core):
+    return (core["q"] >> 1) & 1
+
+
+def core_energy(core):
+    return sum(core[k] for k in CORE_FUNDS)
+
+
+def ri_step(core, meta, event, truth=None, available=True, channel="faithful"):
+    """One original identification microstep, never using truth to choose q.
+
+    meta uses phase, target, action, receipt, acquired.  The assay-fault control
+    is explicitly separate from ordinary missing feedback.  Its physical receipt
+    remains unchanged.  A new law is consulted only at actual physical work.
+    """
+    c, m = deepcopy(core), deepcopy(meta)
+    bill = loss = 0
+    phase = m["phase"]
+    if event == "rent":
+        assert c["active"] and phase == "ready" and c["source"] >= 10 and c["fuel"] >= 8
+        c["fuel"] -= 1
+        bill = 1
+        m["phase"] = "rented"
+    elif event == "sense":
+        assert phase == "rented" and c["fuel"] >= 1
+        c["fuel"] -= 1
+        bill = 1
+        m.update(phase="sensed", target="recipient")
+    elif event == "reserve":
+        assert phase == "sensed" and m["target"] == "recipient"
+        assert c["fuel"] >= 6 and c["source"] >= 10 and c["escrow"] == 0
+        c["fuel"] -= 3
+        c["escrow"] = 3
+        m["phase"] = "reserved"
+    elif event == "work":
+        assert phase == "reserved" and m["target"] == "recipient"
+        assert c["fuel"] >= 3 and c["source"] >= 10 and c["escrow"] == 3
+        assert truth in (0, 1)
+        action = candidate(c)
+        receipt = bool(available and action == truth)
+        c["fuel"] -= 3
+        c["source"] -= 10
+        bill = 3
+        if receipt:
+            c["recipient"] += 10
+        else:
+            loss = 10
+        m.update(phase="worked", action=action, receipt=receipt)
+    elif event == "acquire":
+        assert phase == "worked" and m["target"] == "recipient" and c["escrow"] == 3
+        assert channel in ("faithful", "missing", "inverted")
+        observed = (None if channel == "missing" else
+                    bool(m["receipt"]) ^ (channel == "inverted"))
+        c["escrow"] -= 1
+        bill = 1
+        m.update(phase="acquired", acquired=observed)
+    elif event == "write":
+        assert phase == "acquired" and m["target"] == "recipient" and c["escrow"] == 2
+        observed = m["acquired"]
+        if observed is not None and not c["last"]:
+            if observed:
+                c["last"] = 1
+            else:
+                c["q"] = (c["q"] & 1) + 2 * (1 - candidate(c))
+        c["escrow"] -= 2
+        bill = 2
+        m.update(phase="ready", target=None, action=None, receipt=None, acquired=None)
+    elif event == "miss":
+        assert phase == "ready" and c["source"] >= 10
+        assert not c["active"] or c["fuel"] < 8
+        c["source"] -= 10
+        c["active"] = False
+        loss = 10
+    else:
+        raise AssertionError(("unknown RI event", event))
+    assert min(c[k] for k in CORE_FUNDS) >= 0
+    eq(core_energy(c) + bill + loss, core_energy(core), (event, "RI ledger"))
+    eq(c["q"] & 1, core["q"] & 1, (event, "actor bit"))
+    return c, m, bill, loss
+
+
+def paid_reset(core, meta, *, adapter, scope, parent_pointer):
+    """The supplied two-unit reset, with no truth/change parameter."""
+    assert adapter and scope and core["active"] and meta["phase"] == "ready"
+    assert core["fuel"] >= 2
+    c = deepcopy(core)
+    c["fuel"] -= 2
+    c["last"] = 0
+    eq(c["q"], core["q"], "reset preserves both command bits")
+    eq(core_energy(c) + 2, core_energy(core), "reset payment")
+    return c, dict(query_pointer=0, old_pointer=parent_pointer,
+                   selected_bank="fresh", publication_current=False,
+                   latch=None, imported=None)
+
+
+def new_bank(cells=True, writer=5):
+    return dict(cells=[None] * 4 if cells else [], blanks=4 if cells else 0,
+                budget=writer, escrow=0, phase="idle", header=None,
+                pending=None, record=None, writes=0, spent=0)
+
+
+def bind_second(bank, query, meta, core, context):
+    """Prebind second query before work; not a post-outcome selected frame."""
+    assert query == 1 and meta["phase"] == "sensed" and meta["target"] == "recipient"
+    assert bank["phase"] == "idle" and bank["record"] is None
+    assert bank["blanks"] >= 4 and bank["budget"] >= 5
+    b = deepcopy(bank)
+    b.update(budget=b["budget"] - 5, escrow=4, blanks=b["blanks"] - 4,
+             phase="bound", header=dict(address=1, context=context, action=candidate(core)),
+             spent=b["spent"] + 1)
+    return b
+
+
+def acquire_frame(bank, query, before_meta, after_meta, context):
+    """Only the actual acquire of the already-bound second query emits."""
+    b = deepcopy(bank)
+    if b["phase"] != "bound":
+        return b
+    h = b["header"]
+    assert query == h["address"] == 1 and h["context"] == context
+    assert before_meta["phase"] == "worked" and before_meta["target"] == "recipient"
+    assert after_meta["phase"] == "acquired" and after_meta["target"] == "recipient"
+    assert h["action"] == before_meta["action"]
+    r = after_meta["acquired"]
+    b.update(phase="latched", pending=[int(context), h["action"], int(r is not None), int(bool(r))])
+    return b
+
+
+def write_bit(bank):
+    b = deepcopy(bank)
+    assert b["phase"] == "latched" and b["escrow"] > 0 and b["writes"] < 4
+    i = b["writes"]
+    b["cells"][i] = b["pending"][i]
+    b["escrow"] -= 1
+    b["spent"] += 1
+    b["writes"] += 1
+    if b["writes"] == 4:
+        b["record"] = b["pending"][:]
+        b["phase"] = "idle"
+    return b
+
+
+def sparse_decode(bank, address, context):
+    """Only physical slot1 exists.  Empty supported addresses are not cells."""
+    if address != 1 or bank["record"] is None:
+        return None
+    recorded_context, action, present, receipt = bank["record"]
+    if recorded_context != int(context) or not present or not receipt:
+        return None
+    return action == DESIGNATED[address]
+
+
+def paid_reader_cycle(bank, fuel, context, access=(True, True, True), reason=True, decode=None):
+    """The unchanged 14+10 paid schedule, retaining interrupted prefixes."""
+    r = dict(fuel=fuel, factual=0, reason=0, cache=[None] * 3, read_count=0,
+             cache_valid=False, normalized=[None] * 3, orientation=None,
+             conflict=False, working=[False] * 3, phase="cold", current=False)
+    trace = []
+
+    def pay(n, kind, event):
+        if r["fuel"] < n:
+            return False
+        r["fuel"] -= n
+        r[kind] += n
+        trace.append(dict(event=event, fuel=r["fuel"], factual=r["factual"], reason=r["reason"]))
+        return True
+
+    for event in ("activate", "sense"):
+        if not pay(1, "factual", event):
+            return r, trace
+    for i in range(3):
+        if not pay(4, "factual", "decode"):
+            return r, trace
+        r["cache"][i] = (sparse_decode(bank, i, context) if decode is None else decode(i, context))
+        r["read_count"] += 1
+    r["cache_valid"] = True
+    if not reason:
+        # Separate conventional current-cache authority, NOT an unpaid reason
+        # publication.  Its direct finite decoder retains the skipped ten units.
+        xs = [None if x is None else DESIGNATED[i] if x else 1 - DESIGNATED[i]
+              for i, x in enumerate(r["cache"])]
+        known = {x for x in xs if x is not None}
+        r.update(phase="cache_complete", orientation=next(iter(known)) if len(known) == 1 else None,
+                 conflict=len(known) > 1)
+        return r, trace
+    if not pay(1, "reason", "activate_reason"):
+        return r, trace
+    r.update(phase="inference", working=[True, False, False])
+    for i, desired in enumerate(DESIGNATED):
+        if not pay(1, "reason", "infer"):
+            return r, trace
+        fact = r["cache"][i] if access[i] else None
+        r["normalized"][i] = None if fact is None else desired if fact else 1 - desired
+    known = set(v for v in r["normalized"] if v is not None)
+    r["conflict"] = len(known) > 1
+    r["orientation"] = next(iter(known)) if len(known) == 1 else None
+    r["phase"] = "paths"
+    for i, price in enumerate((1, 1, 2, 2)):
+        if not pay(price, "reason", "path"):
+            return r, trace
+        if i < 2 and r["orientation"] == i:
+            r["working"][i + 1] = True
+    r.update(phase="published", current=True)
+    eq(r["fuel"] + r["factual"] + r["reason"], fuel, "reader ledger")
+    return r, trace
+
+
+def route(reader):
+    if not (reader["current"] and reader["phase"] == "published" and reader["cache_valid"]):
+        return None
+    return { (True, True, False): 0, (True, False, True): 1 }.get(tuple(reader["working"]))
+
+
+def import_command(core, command):
+    assert command in (0, 1) and core["fuel"] >= 1
+    c = deepcopy(core)
+    c["fuel"] -= 1
+    c["q"] = (c["q"] & 1) + 2 * command
+    c["last"] = 1
+    eq(c["q"] & 1, core["q"] & 1, "import actor bit")
+    return c
+
+
+def precursor(common=227, source=184, adapter=True, cells=True):
+    """Actual M42 formation with protected parts; old projection is M32.
+
+    Aggregate extra assembly placement is independent of its ordinal placement
+    among the disjoint supplied assemblies.  Every formation transition below
+    still checks finite free capacity and fuel; protected parts are not inputs
+    to the old reaction's guard or its projected precursor capacity.
+    """
+    p = dict(a=0, h=0, resident=0, intact=0, local=0, fuel=common,
+             source=source, protected_a=0, protected_h=0, bound=0, spent=0)
+    trace = []
+
+    def emit(event):
+        matter = sum(p[k] for k in ("a", "h", "resident", "protected_a", "protected_h", "bound"))
+        assert 0 <= matter <= 42
+        eq(p["fuel"] + p["source"] + p["local"] + p["spent"], common + source, "formation energy")
+        trace.append(dict(event=event, state=deepcopy(p)))
+
+    emit("initial")
+    for kind in ("h",) * 5 + ("a",) * 5:
+        assert p["fuel"] > 0 and not p["intact"]
+        p["protected_" + kind] += 1
+        p["fuel"] -= 1
+        p["spent"] += 1
+        emit("form_extra_" + kind)
+    word = ["h"] * 16 + ["a"] * 3 + ["associate", "repair"] + ["capture", "copy"] * 13 + ["capture"]
+    for event in word:
+        capacity = 32 - p["a"] - p["h"] - p["resident"] - p["bound"]
+        if event in ("a", "h"):
+            assert capacity > 0 and not p["intact"] and p["fuel"] > 0
+            p[event] += 1
+            p["fuel"] -= 1
+            p["spent"] += 1
+        elif event == "associate":
+            assert p["a"] > 0 and not p["resident"] and p["fuel"] > 0
+            p["a"] -= 1
+            p["resident"] = 1
+            p["fuel"] -= 1
+            p["spent"] += 1
+        elif event == "repair":
+            assert p["resident"] and not p["intact"] and p["h"] >= 2 and p["fuel"] > 0
+            p["intact"] = 1
+            p["fuel"] -= 1
+            p["spent"] += 1
+        elif event == "capture":
+            assert p["intact"] and not p["local"] and p["source"] > 0
+            p["source"] -= 1
+            p["local"] = 1
+        elif event == "copy":
+            assert p["resident"] and p["local"] and capacity > 0
+            p["a"] += 1
+            p["local"] = 0
+            p["spent"] += 1
+        emit("old_" + event)
+    for _ in range(15):
+        assert p["a"] > 0 and p["h"] > 0 and p["fuel"] > 0
+        p["a"] -= 1
+        p["h"] -= 1
+        p["bound"] += 2
+        p["fuel"] -= 1
+        p["spent"] += 1
+        emit("old_pair")
+    assert p["resident"] == 1 and p["h"] == 1 and p["local"] == 1
+    p.update(resident=0, h=0, bound=p["bound"] + 2,
+             fuel=p["fuel"] - 1 + p["local"], local=0, spent=p["spent"] + 1)
+    emit("old_adapter")
+    for _ in range(4 * int(cells) + int(adapter)):
+        assert p["protected_a"] and p["protected_h"] and p["fuel"] > 0
+        p["protected_a"] -= 1
+        p["protected_h"] -= 1
+        p["bound"] += 2
+        p["fuel"] -= 1
+        p["spent"] += 1
+        emit("new_pair")
+    eq(p["bound"] + p["protected_a"] + p["protected_h"], 42, "all material retained")
+    eq(p["spent"], 60 + 4 * int(cells) + int(adapter), "construction bill")
+    return p, trace
+
+
+def prescribed_cases():
+    """Independent prospective named-case specification, not result-provided laws."""
+    base = dict(parent_case="primary", mode="reason", adapter=True, cells=4,
+                recording=True, reader_route=True, import_route=True, flip=True,
+                flip_between=False, flip_late=False, availability=[True] * 3,
+                channels=["faithful"] * 2, actor=28, writer=5, reader=24, source=30)
+    changes = {
+        "primary": {}, "no_change": {"flip": False},
+        "locked_qualification": {"mode": "locked"},
+        "old_archive_replay": {"mode": "old_replay"},
+        "attempt_fourth_old_query": {"mode": "fourth_query"},
+        "no_adapter": {"adapter": False}, "no_fresh_cells": {"cells": 0},
+        "recording_disabled": {"recording": False},
+        "reader_route_missing": {"reader_route": False},
+        "import_route_missing": {"import_route": False},
+        "first_outage": {"availability": [False, True, True]},
+        "second_outage": {"availability": [True, False, True]},
+        "final_outage": {"availability": [True, True, False]},
+        "first_acquisition_missing": {"channels": ["missing", "faithful"]},
+        "second_acquisition_missing": {"channels": ["faithful", "missing"]},
+        "no_change_first_outage": {"flip": False, "availability": [False, True, True]},
+        "change_between_probes": {"flip": False, "flip_between": True},
+        "change_before_final_work": {"flip_late": True},
+        "false_fresh_channel": {"channels": ["inverted", "inverted"]},
+        "actor_short": {"actor": 27}, "writer_short": {"writer": 4},
+        "reader_short": {"reader": 23}, "source_none": {"source": 0},
+        "source_partial": {"source": 9}, "conventional": {"mode": "conventional"},
+        "voluntary_learned_register": {"mode": "voluntary"},
+        "parent_consistently_corrupt": {"parent_case": "parent_consistently_corrupt"},
+        "parent_scope_loss_after_rent": {"parent_case": "scope_loss_after_rent"},
+    }
+    return {name: dict(deepcopy(base), **patch) for name, patch in changes.items()}
+
+
+def parent_states():
+    # Committed accepted output is an input, not a regenerated or filtered trial.
+    receipt = read_json(PARENT / "model-verification.json")
+    for rel, expected in receipt["source_sha256"].items():
+        eq(sha(REPO / rel), expected, ("accepted parent input hash", rel))
+    return read_json(PARENT / "results.json.gz")
+
+
+def fresh_schedule(case, parent_row):
+    """Independent primary/comparator schedule from the prospective contract.
+
+    This canonical result is deliberately independent of the producer's JSON
+    layout.  The history adapter below must compare that layout to these fields.
+    Legacy replay/fourth-query alternatives have separate inherited contracts.
+    """
+    assert case["mode"] in ("reason", "locked", "conventional", "voluntary")
+    inherited = parent_row["state"]
+    oldp = inherited["parent"]["producer"]
+    c = deepcopy(oldp["core"])
+    m = dict(phase=oldp["core_phase"], target=oldp["core_target"],
+             action=oldp["core_action"], acquired=oldp["acquired_record"], receipt=None)
+    bank = new_bank(case["cells"] == 4, case["writer"])
+    actor_reserve, source_reserve = case["actor"], case["source"]
+    reader_reserve = case["reader"]
+    reader_fuel = oldp["reader_fuel"]
+    context = oldp["context"]
+    query_pointer = 0
+    services = dict(reset=0, physical=0, binding=0, factual=0, reason=0)
+    loss = 0
+    reader = None
+    physical = []
+    probes = []
+    final = dict(attempted=False, completed=False, captured=False, action=None, receipt=None)
+    z0 = parent_row["observer"]["recipient_law"]
+    laws = [z0 ^ case["flip"], z0 ^ case["flip"] ^ case["flip_between"],
+            z0 ^ case["flip"] ^ case["flip_between"] ^ case["flip_late"]]
+    allowed = inherited["scope"] and inherited["permission"] and inherited["delivery"]
+    opened = bool(case["adapter"] and c["active"] and m["phase"] == "ready"
+                  and inherited["scope"] and c["fuel"] + actor_reserve >= 2)
+
+    def trial(which, recorded=False):
+        nonlocal c, m, bank, query_pointer, loss
+        result = dict(attempted=False, completed=False, captured=False, action=None, receipt=None)
+        if not allowed or m["phase"] != "ready" or c["source"] < 10:
+            return result
+        result["attempted"] = True
+        events = ["miss"] if not c["active"] or c["fuel"] < 8 else ["rent", "sense", "reserve", "work", "acquire", "write"]
+        query = None
+        for event in events:
+            before = deepcopy(m)
+            c, m, bill, waste = ri_step(c, m, event, laws[which], case["availability"][which],
+                                       case["channels"][which] if which < 2 else "faithful")
+            services["physical"] += bill
+            loss += waste
+            if event == "sense" and which < 2:
+                query = query_pointer
+                query_pointer += 1
+                if (recorded and query == 1 and case["recording"] and bank["blanks"] >= 4
+                        and bank["budget"] >= 5):
+                    bank = bind_second(bank, query, m, c, context)
+            if event == "work":
+                result.update(action=m["action"], receipt=m["receipt"], captured=m["receipt"])
+            if event == "acquire" and recorded and bank["phase"] == "bound":
+                bank = acquire_frame(bank, query, before, m, context)
+                for _ in range(4):
+                    bank = write_bit(bank)
+            if event == "write":
+                result["completed"] = True
+            physical.append(dict(trial=which, event=event, core=deepcopy(c), meta=deepcopy(m),
+                                 spent=services["physical"], waste=loss))
+        return result
+
+    if opened:
+        c["fuel"] += actor_reserve
+        actor_reserve = 0
+        c["source"] += 10 * (source_reserve // 10)
+        source_reserve %= 10
+        old_flag = c["last"]
+        c, _ = paid_reset(c, m, adapter=True, scope=True, parent_pointer=oldp["query_pointer"])
+        if case["mode"] == "locked":
+            c["last"] = old_flag
+        services["reset"] = 2
+        probes = [trial(0), trial(1, recorded=True)]
+        if case["mode"] == "voluntary":
+            final = trial(2)
+        elif case["reader_route"]:
+            reader_fuel += reader_reserve
+            reader_reserve = 0
+            reader, _ = paid_reader_cycle(bank, reader_fuel, context,
+                                           reason=case["mode"] != "conventional")
+            reader_fuel = reader["fuel"]
+            services["factual"], services["reason"] = reader["factual"], reader["reason"]
+            command = reader["orientation"] if case["mode"] == "conventional" and reader["cache_valid"] else route(reader)
+            if m["phase"] == "ready" and c["fuel"] >= 1 and inherited["port"]:
+                c["fuel"] -= 1
+                services["binding"] += 1
+                if command is not None and inherited["scope"] and inherited["permission"] and case["import_route"] and c["fuel"] >= 1:
+                    c = import_command(c, command)
+                    services["binding"] += 1
+                    final = trial(2)
+    return dict(core=c, meta=m, opened=opened, bank=bank, reader=reader,
+                reader_fuel=reader_fuel, actor_reserve=actor_reserve,
+                source_reserve=source_reserve, reader_reserve=reader_reserve,
+                query_pointer=query_pointer, services=services, loss=loss,
+                physical=physical, probes=probes, final=final, laws=laws)
+
+
+def historical_schedule(case, parent_row):
+    """Separately declared old-bank and disabled-fourth-query comparators."""
+    assert case["mode"] in ("old_replay", "fourth_query")
+    inherited = parent_row["state"]
+    oldp = inherited["parent"]["producer"]
+    c = deepcopy(oldp["core"])
+    m = dict(phase=oldp["core_phase"], target=oldp["core_target"],
+             action=oldp["core_action"], acquired=oldp["acquired_record"], receipt=None)
+    actor_reserve, source_reserve, reader_reserve = case["actor"], case["source"], case["reader"]
+    reader_fuel = oldp["reader_fuel"]
+    bank = new_bank(case["cells"] == 4, case["writer"])
+    services = dict(reset=0, physical=0, binding=0, factual=0, reason=0)
+    loss = 0
+    physical = []
+    reader = None
+    final = dict(attempted=False, completed=False, captured=False, action=None, receipt=None)
+    law = parent_row["observer"]["recipient_law"] ^ case["flip"]
+    allowed = inherited["scope"] and inherited["permission"] and inherited["delivery"] and m["phase"] == "ready"
+    if allowed:
+        c["fuel"] += actor_reserve
+        actor_reserve = 0
+        c["source"] += 10 * (source_reserve // 10)
+        source_reserve %= 10
+    if case["mode"] == "fourth_query":
+        if allowed and c["active"] and c["fuel"] >= 8 and c["source"] >= 10:
+            c, m, bill, waste = ri_step(c, m, "rent")
+            services["physical"] += bill
+            loss += waste
+            physical.append(dict(trial="old_fourth", event="rent", core=deepcopy(c), meta=deepcopy(m), spent=bill, waste=loss))
+            assert oldp["query_pointer"] >= 3, "old recorder sense blocked only by its actual pointer"
+    else:
+        def historical_decode(i, context):
+            frame = oldp["frames"][i]
+            if not frame["complete"] or not frame["valid"]:
+                return None
+            tag, action, present, receipt = oldp["cells"][4*i:4*i+4]
+            if None in (tag, action, present, receipt) or tag != int(context) or not present or not receipt:
+                return None
+            return action == DESIGNATED[i]
+        reader_fuel += reader_reserve
+        reader_reserve = 0
+        reader, _ = paid_reader_cycle(bank, reader_fuel, oldp["context"], decode=historical_decode)
+        reader_fuel = reader["fuel"]
+        services["factual"], services["reason"] = reader["factual"], reader["reason"]
+        command = route(reader)
+        if m["phase"] == "ready" and c["fuel"] >= 1 and inherited["port"]:
+            c["fuel"] -= 1
+            services["binding"] += 1
+            if command is not None and inherited["scope"] and inherited["permission"] and c["fuel"] >= 1:
+                c = import_command(c, command)
+                services["binding"] += 1
+                if allowed and c["source"] >= 10:
+                    final["attempted"] = True
+                    events = ["miss"] if not c["active"] or c["fuel"] < 8 else ["rent", "sense", "reserve", "work", "acquire", "write"]
+                    for event in events:
+                        c, m, bill, waste = ri_step(c, m, event, law, case["availability"][2])
+                        services["physical"] += bill
+                        loss += waste
+                        if event == "work":
+                            final.update(action=m["action"], receipt=m["receipt"], captured=m["receipt"])
+                        if event == "write":
+                            final["completed"] = True
+                        physical.append(dict(trial=2, event=event, core=deepcopy(c), meta=deepcopy(m),
+                                             spent=services["physical"], waste=loss))
+    return dict(core=c, meta=m, opened=False, bank=bank, reader=reader,
+                reader_fuel=reader_fuel, actor_reserve=actor_reserve,
+                source_reserve=source_reserve, reader_reserve=reader_reserve,
+                query_pointer=0, services=services, loss=loss,
+                physical=physical, probes=[], final=final, laws=[law]*3)
+
+
+if __name__ == "__main__":
+    raise SystemExit("Prospective oracle draft: output adapters and validation receipt pending.")

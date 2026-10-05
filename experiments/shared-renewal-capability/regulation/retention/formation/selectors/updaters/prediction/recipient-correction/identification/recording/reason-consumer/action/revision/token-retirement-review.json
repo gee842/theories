@@ -1,0 +1,14 @@
+{
+  "scope": "Implementation repair authorized by root after independent review, before the reviewed rerun. Protocol and case configuration are unchanged.",
+  "finding": "The first numerical implementation retained its latch at import and retained imported authorization after final write/miss. RecipientAction retires these fields, and the old numerical token could authorize an unscheduled extra trial.",
+  "required_correction": [
+    "Import sets imported authorization and clears the consumed latch.",
+    "Final write or miss clears both command tokens, including the reused parent port fields.",
+    "No extra trial may reuse the completed import without another paid read/import."
+  ],
+  "preservation_directory": "review-history/retire-command-token",
+  "first_model_sha256": "9d18ac558bc75bd2d11b849ea7cad7736d7bec74d7f90e9c711660c0ed3f270c",
+  "first_result_compressed_sha256": "5f8a439277b41bf2e1eb93458d786c2347df74034bcba6c51535c53d5ac653f0",
+  "first_semantic_cases_sha256": "a1eb734e34c09ac13b8c4482f1f7ca177afbf6af3be09d5dc666b5e3988e0545",
+  "acceptance": "The entire reviewed cases object must equal the preserved first object after applying only the three specified token retirements at their actual event prefixes. Core fields, source/recipient stocks, spending, probabilities, acquired records, observer diagnostics and metrics must remain identical. Preserve first-run receipt; write a separate reviewed-run receipt and exact differential receipt."
+}

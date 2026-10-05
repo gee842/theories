@@ -1,0 +1,66 @@
+{
+  "status": "accepted",
+  "checked_at_utc": "2026-10-05T23:29:32.794416+00:00",
+  "scope": "Conditional finite actual-history composition: paid reset, new acquisition and sparse record, rooted instrumental reason revision, typed import and same-recipient action. Independent AI collaboration review, not external peer review.",
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/check_model.py": "7a29e481ad98ae2ee3bff8d68059eb591c417705034410cef27dcb615290ca5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/model-verification.json": "a7ad2c4c4bea1ff0892243e5adf19200d60ae0d8ab88b71b72fb95859aad81b8",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/model.py": "f57e7ed9ae9df7844926c1c857e233c350395a00484d53dd7d60333723ee7f40",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/results.json.gz": "cbd19b32b18f3afbfb2c50cc6fb6d8f46fd633dec2e3902124e1c5a5ab7c3438",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/reporting.py": "b17942ef0f213cd0ab57fc1e5f90f4c7d2ec5be98b0d2056e7919b7686990d84",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/reporting.json": "334d8efa8c976a873e50daf9c67bab85fd7feb01ad6df443a07d04786e0b9101",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/verification.json": "c64b48353664b8687e6f5d58eb9f807fc54f2d3cc40cf47e8394a27507490cef",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/reviewed-run-receipt.json": "07c2d46d79168dbfca30faf4699272f23307902142a689100af4ac64c56620ae",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/supersession.json": "294fc0154956e5c1374be9dac7cec89dc8631242cfa65a27d7a08c8dca274b55",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/token-guard-check.json": "2859a9dc186c566a9edf4a7b6003f0480d6e569749c53ed1dd44222e2639b3f6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal-runtime-crosscheck.json": "6fbfc18a05924b43d648729f393715cb292ff6b27b32b54b16d0fe15cb0c6510",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REASON-REVISION-REVIEW.md": "4ad3b152eb8dd12f62d08b4c80147b90cc679c60b9ea6f2848014ec91732a13d"
+  },
+  "independent_validation": {
+    "cases": 28,
+    "arms": 84,
+    "histories": 1064,
+    "prefixes": 20188,
+    "physical_microsteps": 6084,
+    "formation_prefixes": 2235,
+    "metrics": 2856
+  },
+  "reporting_values_checked": 588,
+  "formal_receipt_checks": {
+    "modules": 23,
+    "new_declarations": 67,
+    "total_declarations": 553,
+    "new_axiom_free": 7,
+    "new_standard_only": 60,
+    "inherited_sources_at_parent_commit": 20
+  },
+  "token_repair": {
+    "preserved_files": 12,
+    "changed_snapshots": 1446,
+    "physical_cost_probability_and_metric_fields_unchanged": true,
+    "actual_funded_retired_endpoints_independently_censused": 78,
+    "census_scope": "Non-voluntary token-authorized modes only; voluntary permission remains a separate lawful route.",
+    "actual_extra_use_counterexample": "review-history/post-write-latch-finding.json",
+    "producer_regression": "token-guard-check.json",
+    "independent_guard_checks": "model-verification.json#post_baseline_adversarial_tests"
+  },
+  "post_baseline_mutation_rejections": 12,
+  "actual_token_boundary_checks": 2,
+  "mutation_results_artifact": "model-verification.json",
+  "prospective_oracle_receipts": [
+    "review-history/prospective-oracle-freeze.json",
+    "review-history/prospective-cases-freeze.json",
+    "review-history/prospective-schedules-freeze.json"
+  ],
+  "interpretive_scope": [
+    "All inherited probability and failed/interrupted states retained. Construction is controlled, not a newly derived stochastic commissioning distribution.",
+    "Fresh/historical support separated; blocked opening never uses obsolete publication for new action.",
+    "Banks remain distinct; first probe is trace-only and second frame selected before outcome.",
+    "Fixed observation-law proof; final compatibility also requires explicit law stability and opportunity availability.",
+    "False acquisition violates calibration; outage/unknown does not refute the root or establish a negative certificate.",
+    "Conventional and voluntary routes keep saved costs. No necessity, optimality, welfare, universal favorable-direction or new empirical claim.",
+    "G, identity, calibration, recipes, scheduling, permission and resources remain supplied; full foundation remains open."
+  ],
+  "unresolved_material_issues": [],
+  "canonical_table_cells_checked": 24
+}

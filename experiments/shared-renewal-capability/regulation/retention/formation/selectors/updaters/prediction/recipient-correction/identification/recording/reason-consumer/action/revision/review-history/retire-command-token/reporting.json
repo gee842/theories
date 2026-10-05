@@ -1,0 +1,824 @@
+{
+  "scope": "Post-first-run reporting clarification; derived from preserved endpoints, no transition rerun.",
+  "meaning": "Support means a structurally available selected-view command, not permission, affordability or universally true current-law knowledge. Historical support remains old evidence. Wrong-at-final-law is an observer diagnostic; late change and false acquisition violate distinct positive premises.",
+  "source_sha256": {
+    "results.json.gz": "5f8a439277b41bf2e1eb93458d786c2347df74034bcba6c51535c53d5ac653f0",
+    "decompressed_results": "7852d8dccc62f6e713490968514f7fdb2cc69156226a59f70af43642a28a65d5",
+    "result-files.json": "7bbf2e944a10dd1afce03233e24d9b84e6410921345a29976c2f18b924f8db12",
+    "reporting.py": "b17942ef0f213cd0ab57fc1e5f90f4c7d2ec5be98b0d2056e7919b7686990d84"
+  },
+  "cases": {
+    "primary": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/2",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "no_change": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "0"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "0"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/2",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "0"
+      }
+    },
+    "locked_qualification": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "3/16",
+        "fresh_supported_command": "1/16",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "3/16",
+        "fresh_supported_command": "1/16",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "3/8",
+        "fresh_supported_command": "1/8",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "old_archive_replay": {
+      "variable": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/4",
+        "historical_wrong_at_final_law": "3/4"
+      }
+    },
+    "attempt_fourth_old_query": {
+      "variable": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/4",
+        "historical_wrong_at_final_law": "3/4"
+      }
+    },
+    "no_adapter": {
+      "variable": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/4",
+        "historical_wrong_at_final_law": "3/4"
+      }
+    },
+    "no_fresh_cells": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "1/2",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "recording_disabled": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "1/2",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "reader_route_missing": {
+      "variable": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "import_route_missing": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/2",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "first_outage": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/2",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "second_outage": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "1/2",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "final_outage": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/2",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "first_acquisition_missing": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "1/2",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "second_acquisition_missing": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "1/2",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "no_change_first_outage": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "0"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "0"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "1/2",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "0"
+      }
+    },
+    "change_between_probes": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "1/2",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "change_before_final_work": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "1/4",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "0"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "1/4",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "0"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/2",
+        "fresh_wrong_at_final_law": "1/2",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "0"
+      }
+    },
+    "false_fresh_channel": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "1/4",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "1/4",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/2",
+        "fresh_wrong_at_final_law": "1/2",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "actor_short": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/2",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "writer_short": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "1/2",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "reader_short": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "source_none": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "1/2",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "source_partial": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "1/4",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "1/2",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "conventional": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/2",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "voluntary_learned_register": {
+      "variable": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "3/16"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "0",
+        "fresh_completed_publication": "0",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "0",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      }
+    },
+    "parent_consistently_corrupt": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "0"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/4",
+        "fresh_completed_publication": "1/4",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/4",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/16",
+        "historical_wrong_at_final_law": "0"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/2",
+        "fresh_completed_publication": "1/2",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/2",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "0"
+      }
+    },
+    "parent_scope_loss_after_rent": {
+      "variable": {
+        "fresh_completed_fact_cache": "1/16",
+        "fresh_completed_publication": "1/16",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/16",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      },
+      "conventional": {
+        "fresh_completed_fact_cache": "1/16",
+        "fresh_completed_publication": "1/16",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/16",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/8",
+        "historical_wrong_at_final_law": "3/8"
+      },
+      "fixed_normal": {
+        "fresh_completed_fact_cache": "1/8",
+        "fresh_completed_publication": "1/8",
+        "fresh_rootonly_publication": "0",
+        "fresh_supported_command": "1/8",
+        "fresh_wrong_at_final_law": "0",
+        "historical_supported_command": "3/4",
+        "historical_wrong_at_final_law": "3/4"
+      }
+    }
+  }
+}

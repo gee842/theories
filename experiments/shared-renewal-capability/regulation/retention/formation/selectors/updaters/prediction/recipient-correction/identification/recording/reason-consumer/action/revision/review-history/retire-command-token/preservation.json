@@ -1,0 +1,17 @@
+{
+  "scope": "Complete first completed numerical run, preserved before token-lifecycle implementation repair.",
+  "files_sha256": {
+    "model.py": "9d18ac558bc75bd2d11b849ea7cad7736d7bec74d7f90e9c711660c0ed3f270c",
+    "PROTOCOL.md": "8f40fb7341d918becc5880ba6c3db8dadf2bda95a0d52d35aa65660b4b2d0b64",
+    "cases.json": "f797201890a51e937aa26cb72fb0e7cb6b3cb086cb9baba0dc23c38b71d35929",
+    "PROSPECTIVE-CLARIFICATIONS.md": "0c7bd93b4d4ee00f48935e1ddaa92bea38d89e447e3e65af6382db8dc38fc381",
+    "protocol-freeze.json": "59886336ccbb450fbc316e3e7236f94669c457eed1db71a1f75170def049c25a",
+    "fixtures.json": "a05d09cd3570ced2a173e4a5c445a58a524affe63bf2f5ef5914f5c25927e848",
+    "results.json.gz": "5f8a439277b41bf2e1eb93458d786c2347df74034bcba6c51535c53d5ac653f0",
+    "result-files.json": "7bbf2e944a10dd1afce03233e24d9b84e6410921345a29976c2f18b924f8db12",
+    "first-run-receipt.json": "9be0baa7137d486e2830e57f62edc00ac3a1fff8eb6d82d23a1225bf02676806",
+    "reporting.py": "b17942ef0f213cd0ab57fc1e5f90f4c7d2ec5be98b0d2056e7919b7686990d84",
+    "reporting.json": "a204e68bac219ce8679942ecc08ac6d86390dff5109c1de6cec45b0fe5d7bb80",
+    "README.md": "ce8f56904c7da952c08652aa46762c06eef83bdb1b78ad4a781443c787e6f21b"
+  }
+}

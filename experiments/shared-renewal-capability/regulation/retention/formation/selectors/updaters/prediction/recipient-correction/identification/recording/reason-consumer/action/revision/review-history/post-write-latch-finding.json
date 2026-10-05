@@ -1,0 +1,759 @@
+{
+  "status": "semantic interface issue, first scalar/core checks remain valid",
+  "model_sha256": "9d18ac558bc75bd2d11b849ea7cad7736d7bec74d7f90e9c711660c0ed3f270c",
+  "results_sha256": "5f8a439277b41bf2e1eb93458d786c2347df74034bcba6c51535c53d5ac653f0",
+  "description": "Numerical final RI write/miss leaves outer latch/imported; formal RecipientAction.stepCore clears them. Active runtime authorization reads numerical imported. No transition functions invoked for this audit.",
+  "completed_with_live_import": 174,
+  "funded_repeat_candidates": [
+    {
+      "case": "primary",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "primary",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "primary",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "primary",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "primary",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "no_change",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "locked_qualification",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "variable",
+      "index": 4,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "variable",
+      "index": 5,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "variable",
+      "index": 11,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "variable",
+      "index": 12,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "conventional",
+      "index": 4,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "conventional",
+      "index": 5,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "conventional",
+      "index": 11,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "conventional",
+      "index": 12,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "fixed_normal",
+      "index": 2,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "fixed_normal",
+      "index": 3,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "fixed_normal",
+      "index": 7,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "old_archive_replay",
+      "producer": "fixed_normal",
+      "index": 8,
+      "fuel": 18,
+      "source": 20
+    },
+    {
+      "case": "first_outage",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "first_outage",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "first_outage",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "first_outage",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "first_outage",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "first_outage",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "final_outage",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "change_before_final_work",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "false_fresh_channel",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "actor_short",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 8,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "conventional",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_consistently_corrupt",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "variable",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "conventional",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "conventional",
+      "index": 13,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "fixed_normal",
+      "index": 4,
+      "fuel": 9,
+      "source": 10
+    },
+    {
+      "case": "parent_scope_loss_after_rent",
+      "producer": "fixed_normal",
+      "index": 9,
+      "fuel": 9,
+      "source": 10
+    }
+  ],
+  "first_examples": [
+    {
+      "case": "primary",
+      "producer": "variable",
+      "index": 4,
+      "fuel": 0,
+      "source": 0
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "index": 5,
+      "fuel": 0,
+      "source": 0
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "index": 6,
+      "fuel": 9,
+      "source": 10
+    }
+  ],
+  "actual_extra_use_counterexample": {
+    "case": "primary",
+    "producer": "variable",
+    "path_index": 6,
+    "parent_state_sha256": "c6da834c2aad35acf79de039318933bb84c824dccf4f51fe0fa66da3788f60d4",
+    "initial_core": {
+      "fuel": 9,
+      "gate_life": 2,
+      "stage": 2,
+      "life": 6,
+      "q": 3,
+      "last": 1,
+      "written": true,
+      "coupling": 0,
+      "coupling_life": 2,
+      "failed_q": -1,
+      "qualified_q": -1,
+      "witness": false,
+      "recipient": 20,
+      "source": 10,
+      "active": true,
+      "installed": true,
+      "recoded": true,
+      "escrow": 0
+    },
+    "old_numerical_authorization": true,
+    "formal_after_write_imported": null,
+    "independent_pure_RI_continuation": [
+      {
+        "event": "rent",
+        "core": {
+          "fuel": 8,
+          "gate_life": 2,
+          "stage": 2,
+          "life": 6,
+          "q": 3,
+          "last": 1,
+          "written": true,
+          "coupling": 0,
+          "coupling_life": 2,
+          "failed_q": -1,
+          "qualified_q": -1,
+          "witness": false,
+          "recipient": 20,
+          "source": 10,
+          "active": true,
+          "installed": true,
+          "recoded": true,
+          "escrow": 0
+        },
+        "spent": 1,
+        "waste": 0
+      },
+      {
+        "event": "sense",
+        "core": {
+          "fuel": 7,
+          "gate_life": 2,
+          "stage": 2,
+          "life": 6,
+          "q": 3,
+          "last": 1,
+          "written": true,
+          "coupling": 0,
+          "coupling_life": 2,
+          "failed_q": -1,
+          "qualified_q": -1,
+          "witness": false,
+          "recipient": 20,
+          "source": 10,
+          "active": true,
+          "installed": true,
+          "recoded": true,
+          "escrow": 0
+        },
+        "spent": 1,
+        "waste": 0
+      },
+      {
+        "event": "reserve",
+        "core": {
+          "fuel": 4,
+          "gate_life": 2,
+          "stage": 2,
+          "life": 6,
+          "q": 3,
+          "last": 1,
+          "written": true,
+          "coupling": 0,
+          "coupling_life": 2,
+          "failed_q": -1,
+          "qualified_q": -1,
+          "witness": false,
+          "recipient": 20,
+          "source": 10,
+          "active": true,
+          "installed": true,
+          "recoded": true,
+          "escrow": 3
+        },
+        "spent": 0,
+        "waste": 0
+      },
+      {
+        "event": "work",
+        "core": {
+          "fuel": 1,
+          "gate_life": 2,
+          "stage": 2,
+          "life": 6,
+          "q": 3,
+          "last": 1,
+          "written": true,
+          "coupling": 0,
+          "coupling_life": 2,
+          "failed_q": -1,
+          "qualified_q": -1,
+          "witness": false,
+          "recipient": 30,
+          "source": 0,
+          "active": true,
+          "installed": true,
+          "recoded": true,
+          "escrow": 3
+        },
+        "spent": 3,
+        "waste": 0
+      },
+      {
+        "event": "acquire",
+        "core": {
+          "fuel": 1,
+          "gate_life": 2,
+          "stage": 2,
+          "life": 6,
+          "q": 3,
+          "last": 1,
+          "written": true,
+          "coupling": 0,
+          "coupling_life": 2,
+          "failed_q": -1,
+          "qualified_q": -1,
+          "witness": false,
+          "recipient": 30,
+          "source": 0,
+          "active": true,
+          "installed": true,
+          "recoded": true,
+          "escrow": 2
+        },
+        "spent": 1,
+        "waste": 0
+      },
+      {
+        "event": "write",
+        "core": {
+          "fuel": 1,
+          "gate_life": 2,
+          "stage": 2,
+          "life": 6,
+          "q": 3,
+          "last": 1,
+          "written": true,
+          "coupling": 0,
+          "coupling_life": 2,
+          "failed_q": -1,
+          "qualified_q": -1,
+          "witness": false,
+          "recipient": 30,
+          "source": 0,
+          "active": true,
+          "installed": true,
+          "recoded": true,
+          "escrow": 0
+        },
+        "spent": 2,
+        "waste": 0
+      }
+    ],
+    "added_patient_credit": 10
+  }
+}

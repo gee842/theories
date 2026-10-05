@@ -1,0 +1,45 @@
+# Paid fresh evidence revises recipient reasons and action
+
+6 October 2026. AI-authored finite continuation of the [accepted action process](../README.md). The first numerical run completed; independent verification and the new Lean package are separate acceptance gates. See the frozen [protocol](PROTOCOL.md), [28 cases](cases.json), [execution clarifications](PROSPECTIVE-CLARIFICATIONS.md) and [dependency receipt](protocol-freeze.json).
+
+**Reporting scope:** the original `supported_command` metric asks whether the retained selected view structurally supplies a command. It includes an old publication on histories where the new opening never happens. It is not a measure of newly learned support. The separate [reporting calculation](reporting.py) and [report](reporting.json) split fresh support, historical support, completed fresh reason publication and root-only publication. Their wrong-at-final-law fields are observer diagnostics, not controller inputs or automatic evidence of a defective proof. The first result bytes and receipt remain unchanged.
+
+## Actual continuation
+
+The same actor/recipient core continues from every saved parent endpoint. The new M42/common227/source184 preparation adds five A/H pairs, four recording cells and one finite window adapter while projecting exactly to the accepted M32 preparation and saved old histories. Ten constituent formations and five assemblies cost15. Protected actor28, writer5, reader24 and source30 remain separate until their specified uses. Omitted assemblies retain their typed parts and saved payment. Shortage controls keep the same total411 and place withheld common or source units in separate inert accounts; they are compartment restrictions, not smaller total endowments.
+
+Opening pays2, preserves both command bits, clears qualification and selects a fresh acquisition window. Two unchanged recipient trials run. The second query alone was selected for recording before outcomes; the first still pays, acquires feedback and affects the actual controller, but is not persistent archive evidence. The old twelve cells, three-query pointer, record provenance and inherited expenditure counters remain intact. The new four-cell frame is read as address1 of the explicitly supplied sparse view `[absent, fresh, absent]` using the one retained factual reader and reason workspace.
+
+An acquired positive can support a new instrumental reason and paid command. Zero, missing acquisition and absent recording do not become false certificates. Reader14 and reason10 are paid from actual stock; read/import2 and final physical trial8 are separate actor costs. Recipient receipts never pay those costs. The old qualified-controller comparison pays the same opening but omits qualification clearing, so acquired zeros leave its candidate unchanged.
+
+The local window is not a change detector. The physical changes are supplied exogenous work parameters in the intervention schedule, visible only in observer diagnostics. The positive argument concerns a fixed observation window and additionally requires stability through final use. Between-probe and late-work changes test distinct ways that this premise can fail. False acquired feedback is separately a calibration violation. The experiment neither constructs these environmental changes nor selects when to investigate.
+
+## Preserved first results
+
+The first run comprises28 cases,84 producer/case arms,1,064 inherited continuing paths and20,188 snapshots. Each path keeps its original probability, full endpoint reference, interrupted phase and actual bills. Preparation is a controlled construction; the prefix expenditure retains its inherited conditional scope. No new stochastic commissioning probability or full initial formation distribution is claimed.
+
+The strict changed-law history satisfies the proposed account:
+
+`411 = construction65 + prefix78 + old suffix54 + old archive15 + old paid cycles72 + old action10 + new services57 + new packet loss10 + retained50`.
+
+Its recipient stock rises from30 to50; actor, source and reader finish at0. With no law change the same schedule retains recipient60. The no-change/first-outage control leaves the fresh reason unknown: the first zero prompts exploration, but the second command then also returns zero. This is an outage ambiguity, not a refutation of either command.
+
+For the inherited variable producer, the primary reason route, conventional direct-cache route and voluntary learned-register route each have final capture mass1/4 in their matched primary cases. The conventional route pays factual14 and binding/action costs while skipping reason10; it does not publish a completed reason. The voluntary route skips factual/reason24 and binding2 and uses the actual learned candidate. On the strict path they respectively retain60 and76 total units, versus50 for the reason route, with the same recipient50. These comparisons establish no physical advantage or necessity for the reason procedure. They do not compare all three routes under every adverse intervention or rank welfare.
+
+The primary reporting split is fresh supported command1/4 and retained historical support3/16. The latter is wrong about the supplied changed final law, but no new action uses it because those histories never opened. All newly supported primary commands match the final law. The late hidden-change and false-channel controls must be read with their explicit violated premises.
+
+`parent_scope_loss_after_rent` is a case label, not a claim that every saved path suffered that interruption. Every actual rented/scope-lost endpoint remains blocked. Other paths in that inherited case never reached the old rent, so the intervention never fired and a later permitted continuation can still occur. The aggregate final capture1/16 includes those surviving paths; it is not a repaired interrupted core. Actor27 can likewise succeed on some inherited paths retaining extra fuel, while the strict zero-fuel parent reaches a funded correct command but cannot prepay the final trial.
+
+## Provenance and verification
+
+- [model.py](model.py) implements the continuation and checks every new account prefix, old-backing preservation, actor-bit preservation, whole-path411 accounting and exact mass.
+- [fixtures.json](fixtures.json) retains actual formation traces and exact parent preparation projection.
+- [results.json.gz](results.json.gz) is gzip of the exact result JSON; [result-files.json](result-files.json) records both compressed and decompressed hashes.
+- [first-run-receipt.json](first-run-receipt.json) preserves the first completed source/outcome manifest. There were no assertion failures or implementation repairs before this completed run.
+- [reporting.json](reporting.json) is a post-run descriptive clarification from these unchanged endpoints; it invokes no transition code and asserts that its fresh/historical split sums to each original broad scalar.
+
+The independent reviewer wrote its own law oracle before inspecting this model or outcomes. Its checker and receipt belong to that review lane; the formal package has its own proof scope and source manifest. Numerical success alone does not imply that either acceptance gate is complete.
+
+One post-freeze explanatory point arose while adapting the independent checker: missing or incomplete reader access can still incur the inherited enabled command-read1. The cleared cache supplies no command, so import and use remain blocked. This behavior was already in the frozen source; no protocol, result or transition was changed. Likewise, `[None]*4` in a missing-cells snapshot is a typed serialization placeholder, with `cell_count=0`; it licenses no cell binding or writing.
+
+To reproduce the accepted numerical law, run `python3 model.py` from this directory; it verifies frozen inputs before and after execution and rejects a changed first semantic result. Run `python3 reporting.py` for the scoped report only. G, calibration, finite recipes, identity, permission, scheduling, stable-window assumptions and the environmental resource supply remain explicit local inputs. No independent-anchor pre-import apparatus is installed by this package.

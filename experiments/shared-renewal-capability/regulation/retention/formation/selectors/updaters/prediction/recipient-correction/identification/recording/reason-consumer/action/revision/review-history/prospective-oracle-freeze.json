@@ -1,0 +1,18 @@
+{
+  "authored_at_utc": "2026-10-05T23:02:25.456338+00:00",
+  "status": "Prospective law oracle, before reading revision model or outcomes; schema adapter pending",
+  "oracle_sha256": "244b2cb971c9a5c2caf60aeae5e0e881f856f780b96640b6266728fdb984446a",
+  "protocol_sha256": "8f40fb7341d918becc5880ba6c3db8dadf2bda95a0d52d35aa65660b4b2d0b64",
+  "scope": [
+    "original RI event guards, phases, physical receipts, escrow and recipient identity",
+    "paid reset preserving both bits",
+    "second-query prebinding and four physical writes",
+    "sparse factual/reason cycle",
+    "M42 constituent formation and protected parts"
+  ],
+  "not_yet_specified": [
+    "frozen case configuration",
+    "producer output schema and schedule adapter",
+    "comparison schedule handling"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "authored_at_utc": "2026-10-05T23:08:17.452524+00:00",
+  "status": "Independent fresh and historical schedules completed before new model inspection/outcomes; producer schema adapter remains pending",
+  "oracle_sha256": "53054110b05776e8dda850df33ffd20feb5eb40e4eeea3b747579c086633cfca",
+  "cases_sha256": "f797201890a51e937aa26cb72fb0e7cb6b3cb086cb9baba0dc23c38b71d35929",
+  "clarifications_sha256": "0c7bd93b4d4ee00f48935e1ddaa92bea38d89e447e3e65af6382db8dc38fc381",
+  "execution": "Syntax only; no new numerical outcomes"
+}

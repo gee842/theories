@@ -1,0 +1,146 @@
+{
+  "scope": "Frozen concrete-theorem constants versus actual saved same-orientation runtime; no transition rerun or new compiler validation.",
+  "formal_source_sha256": {
+    "RevisionPreparation.lean": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94",
+    "FreshRevision.lean": "2752540ebf8680e35ef28b37d0731dca6e3abdb4f175f693797491af435afd38",
+    "RevisionWitness.lean": "2f2575d664a5436ee341a37488146b84e94a18414a911e1b13385057df6b831f"
+  },
+  "model_sha256": "f57e7ed9ae9df7844926c1c857e233c350395a00484d53dd7d60333723ee7f40",
+  "compressed_results_sha256": "cbd19b32b18f3afbfb2c50cc6fb6d8f46fd633dec2e3902124e1c5a5ab7c3438",
+  "checker_sha256": "15097121edc47a35debfccb60a247921e36d6557bb2ef8b26a45cae4068e2bc7",
+  "path": {
+    "case": "primary",
+    "producer": "variable",
+    "index": 11
+  },
+  "stages": {
+    "actual_parent_with_protected_extension": {
+      "fuel": 0,
+      "patient": 30,
+      "source": 0,
+      "q": 2,
+      "qualified": true,
+      "energy": 117,
+      "old_context": false,
+      "old_next": 3,
+      "new_next": 0,
+      "new_cells": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "reader": 0
+    },
+    "paid_open_reset_unknown": {
+      "fuel": 26,
+      "patient": 30,
+      "source": 30,
+      "q": 2,
+      "qualified": false,
+      "energy": 115,
+      "old_context": false,
+      "old_next": 3,
+      "new_next": 0,
+      "new_cells": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "reader": 0
+    },
+    "fresh_paid_bit_write": {
+      "fuel": 10,
+      "patient": 40,
+      "source": 10,
+      "q": 0,
+      "qualified": true,
+      "energy": 84,
+      "old_context": false,
+      "old_next": 3,
+      "new_next": 2,
+      "new_cells": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "reader": 0
+    },
+    "publish_current_reason": {
+      "fuel": 10,
+      "patient": 40,
+      "source": 10,
+      "q": 0,
+      "qualified": true,
+      "energy": 60,
+      "old_context": false,
+      "old_next": 3,
+      "new_next": 2,
+      "new_cells": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "reader": 0
+    },
+    "paid_command_import": {
+      "fuel": 8,
+      "patient": 40,
+      "source": 10,
+      "q": 0,
+      "qualified": true,
+      "energy": 58,
+      "old_context": false,
+      "old_next": 3,
+      "new_next": 2,
+      "new_cells": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "reader": 0
+    },
+    "final_ri_write": {
+      "fuel": 0,
+      "patient": 50,
+      "source": 0,
+      "q": 0,
+      "qualified": true,
+      "energy": 50,
+      "old_context": false,
+      "old_next": 3,
+      "new_next": 2,
+      "new_cells": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "reader": 0
+    }
+  },
+  "locked_after_queries": {
+    "fuel": 10,
+    "patient": 30,
+    "source": 10,
+    "q": 2,
+    "qualified": true,
+    "energy": 78,
+    "old_context": false,
+    "old_next": 3,
+    "new_next": 2,
+    "new_cells": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "reader": 0
+  },
+  "locked_complete_actor": 9,
+  "all_assertions_passed": true
+}

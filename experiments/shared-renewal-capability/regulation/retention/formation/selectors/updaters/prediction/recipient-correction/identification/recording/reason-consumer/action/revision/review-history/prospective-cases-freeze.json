@@ -1,0 +1,9 @@
+{
+  "authored_at_utc": "2026-10-05T23:04:44.956849+00:00",
+  "status": "Independent named28case specification and conventional factual-only route added before new model inspection/outcomes",
+  "oracle_sha256": "8e8aa030b43729ce733aa847ada2bf20ae3a871b0376a8ec7347e3c88c77ae0c",
+  "cases_sha256": "f797201890a51e937aa26cb72fb0e7cb6b3cb086cb9baba0dc23c38b71d35929",
+  "protocol_sha256": "8f40fb7341d918becc5880ba6c3db8dadf2bda95a0d52d35aa65660b4b2d0b64",
+  "clarifications_sha256": "f902585edf77d19872bb9e14ae73c29775fd63255021096b7d35d942994fdad3",
+  "checks": "Python syntax and independent literal case table equality only; no new numerical simulation"
+}

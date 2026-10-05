@@ -1,0 +1,10 @@
+{
+  "scope": "Checker schema adaptations, not hidden changes to model law.",
+  "adaptations": [
+    "The prospective oracle abstract context maps to the frozen adapter marker true; old context stays unchanged.",
+    "The draft omitted read1 with missing reader route; the inherited read guard permits that payment and returns no token, so the schedule adapter was corrected.",
+    "Authentic scope-loss parents retain replaced lineage with scope=false, rather than being forced into the normal lineage.",
+    "Core/payment checks passed before semantic review found reusable tokens. Final acceptance includes latch consumption and authorization retirement; rejected model and actual counterexample are preserved."
+  ],
+  "supplemental_tests": "Twelve mutation rejections and two actual authorization boundary checks are post-baseline validation, not frozen experimental arms."
+}

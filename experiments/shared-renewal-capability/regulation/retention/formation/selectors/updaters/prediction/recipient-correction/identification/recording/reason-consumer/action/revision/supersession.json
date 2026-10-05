@@ -1,0 +1,8 @@
+{
+  "scope": "Exact differential against the preserved first cases. Only latch retirement at import and token retirement at final write/miss differ; all other fields, probabilities, observer diagnostics, payments and metrics are identical.",
+  "first_cases_sha256": "a1eb734e34c09ac13b8c4482f1f7ca177afbf6af3be09d5dc666b5e3988e0545",
+  "reviewed_cases_sha256": "ff30cbd85754a574722a8a4a8d2a3c6d853a3160f9dd715ac733f6b69c78a427",
+  "changed_trace_snapshots": 1446,
+  "exact_expected_cases_match": true,
+  "preserved_manifest_sha256": "084d249df14796800a11055a9b132015f7526ef481ac227a4ccc4f9fc908cdb4"
+}
