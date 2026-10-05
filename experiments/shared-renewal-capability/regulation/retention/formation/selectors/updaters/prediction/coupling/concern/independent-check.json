@@ -1,0 +1,55 @@
+{
+  "status": "pass",
+  "source_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/model.py": "ba967a80af611d23abe01df32e5a94f5b222b836948261106c5a6fba1e9e37d5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/check.py": "380b0f1ff3080fe922920ea671b4be966c27b76a47e17f7fa3cb6e900d1f8b8b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/concern/PROTOCOL.md": "d8a93884cdabe1ab6c5e3f83d48e9637f248be8edb03a41afc58d29ded606f6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/concern/independent_check.py": "b8767a5008498f49b6134f0390d33319450b80d1a09f4d5d8f439a01d1d804b0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/concern/model.py": "8a1a8c523f50b31835768831ce4b5e7ed6dc83ab5fe78204734c038ea87887eb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "preparation_states": 20,
+  "preparation_terminals": 5,
+  "preparation_probability": "2/9",
+  "prefix_event_states": 196,
+  "inherited_state_counts": {
+    "('variable', 26)": 8,
+    "('conventional', 26)": 8,
+    "('fixed_normal', 26)": 4,
+    "('fixed_inverted', 26)": 2
+  },
+  "reachable_suffix_comparisons": 1210,
+  "unconditional_rows": 220,
+  "low_fuel_intervention_comparisons": 1705,
+  "exact_trace_comparison": true,
+  "conventional_distribution_equal": true,
+  "patient_receipt_never_actor_receipt": true,
+  "finite_paid_holds_executed": true,
+  "witness": {
+    "state": {
+      "fuel": 11,
+      "gate_life": 2,
+      "stage": 2,
+      "life": 6,
+      "q": 4,
+      "last": 1,
+      "written": true,
+      "coupling": 0,
+      "coupling_life": 2,
+      "failed_q": -1,
+      "qualified_q": -1,
+      "witness": true
+    },
+    "regime": 1,
+    "unconditional_mass": "1/36",
+    "shared_reserve": 16,
+    "shared_patient": 9,
+    "cheap_gate_reserve": 19,
+    "free_block_reserve": 20
+  },
+  "scope": "Independent finite-model check; no empirical or universal-direction claim."
+}

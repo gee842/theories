@@ -1,0 +1,154 @@
+{
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "checker_sha256": "380b0f1ff3080fe922920ea671b4be966c27b76a47e17f7fa3cb6e900d1f8b8b",
+  "case_arm_count": 35,
+  "independent_marked_kernels": 1968,
+  "marked_branches": 2566,
+  "independent_preparations": {
+    "primary": [
+      20,
+      5
+    ],
+    "no_change": [
+      20,
+      5
+    ],
+    "outages": [
+      20,
+      5
+    ],
+    "low_reserve": [
+      20,
+      5
+    ],
+    "low_yield": [
+      20,
+      5
+    ],
+    "short_circuit": [
+      20,
+      5
+    ],
+    "short_coupler": [
+      20,
+      5
+    ]
+  },
+  "recovery_configurations": 3936,
+  "witness": {
+    "unconditional_prefix_probability": "1/72",
+    "preparation": {
+      "state": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        26,
+        80
+      ],
+      "probability": "2/9",
+      "commissioned": true,
+      "preparation_spent": 4,
+      "remaining_energy": 107,
+      "reserve": 26,
+      "packets": 8,
+      "remainder": 0,
+      "transformed_A": 1,
+      "transformed_H": 1,
+      "backing_slots": 2
+    },
+    "states": [
+      {
+        "fuel": 26,
+        "gate_life": 0,
+        "stage": 0,
+        "life": 0,
+        "q": 2,
+        "last": 0,
+        "written": false,
+        "coupling": -1,
+        "coupling_life": 0,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      {
+        "fuel": 14,
+        "gate_life": 1,
+        "stage": 2,
+        "life": 5,
+        "q": 4,
+        "last": 0,
+        "written": true,
+        "coupling": 1,
+        "coupling_life": 1,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      {
+        "fuel": 9,
+        "gate_life": 0,
+        "stage": 2,
+        "life": 4,
+        "q": 4,
+        "last": 0,
+        "written": true,
+        "coupling": 1,
+        "coupling_life": 0,
+        "failed_q": 4,
+        "qualified_q": -1,
+        "witness": false
+      },
+      {
+        "fuel": 8,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 4,
+        "last": 1,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": 4,
+        "witness": true
+      }
+    ],
+    "marks": {
+      "updater_forms": "2",
+      "base_forms": "1",
+      "predictor_retrofits": "1",
+      "coupler_forms": "2",
+      "coupler_changes": "1",
+      "coupler_renewals": "1",
+      "rents": "3",
+      "trials": "3",
+      "captures": "1",
+      "writes": "3",
+      "unpaid_writes": "0",
+      "decoder_errors": "0",
+      "acquired_uses": "2",
+      "normal_trials": "1",
+      "inverted_trials": "2",
+      "brier16": "4",
+      "spent": "28",
+      "waste": "20"
+    },
+    "remaining_packets": 5,
+    "initial_energy": 111,
+    "next_opportunity_liquidity": {
+      "6": "0",
+      "7": "1/2"
+    }
+  },
+  "scope": "Independent protocol successor and predecessor enumeration; same forward summation driver, not empirical validation or a Lean certificate."
+}
