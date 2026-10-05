@@ -1,0 +1,2595 @@
+{
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/model.py": "5858d2fdcef507323cdfea6495f228e32b6e90098145a9e8a2da8c326e7c0938",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/PROTOCOL.md": "0fdb7ec28e193706c8e076a623a4c848b6c0c7b5da004de3982c8517702b9b89",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/model.py": "278d57ddf2f17d3b4da726fd067f71e323265626d5296ac83beaa2868f70e66a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md": "d4a008582680f3fd74e7247f32c018022ea4753dfe11ffefdbb1db5d6a4f607c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/model.py": "b1776f56c94c98a980ab0b30b203a2a58c736b7199c32c39c86853655e6a902c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/PROTOCOL.md": "c555bfa228f9c5da6c9f2b4e749496d68d9b74302b6bad8739f7600a8cdb56c2"
+  },
+  "fixtures": {
+    "preparations": {
+      "11": {
+        "initial_common": 91,
+        "initial_source": 144,
+        "material": 28,
+        "cell_count": 11,
+        "fuel": 62,
+        "source": 130,
+        "free_a": 1,
+        "free_h": 1,
+        "construction_spent": 43,
+        "trace": [
+          {
+            "event": "initial",
+            "plant": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              91,
+              144
+            ],
+            "spent": 0
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              90,
+              144
+            ],
+            "spent": 1
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              2,
+              0,
+              0,
+              0,
+              89,
+              144
+            ],
+            "spent": 2
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              3,
+              0,
+              0,
+              0,
+              88,
+              144
+            ],
+            "spent": 3
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              4,
+              0,
+              0,
+              0,
+              87,
+              144
+            ],
+            "spent": 4
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              5,
+              0,
+              0,
+              0,
+              86,
+              144
+            ],
+            "spent": 5
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              6,
+              0,
+              0,
+              0,
+              85,
+              144
+            ],
+            "spent": 6
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              7,
+              0,
+              0,
+              0,
+              84,
+              144
+            ],
+            "spent": 7
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              8,
+              0,
+              0,
+              0,
+              83,
+              144
+            ],
+            "spent": 8
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              9,
+              0,
+              0,
+              0,
+              82,
+              144
+            ],
+            "spent": 9
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              10,
+              0,
+              0,
+              0,
+              81,
+              144
+            ],
+            "spent": 10
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              11,
+              0,
+              0,
+              0,
+              80,
+              144
+            ],
+            "spent": 11
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              12,
+              0,
+              0,
+              0,
+              79,
+              144
+            ],
+            "spent": 12
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              13,
+              0,
+              0,
+              0,
+              78,
+              144
+            ],
+            "spent": 13
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              14,
+              0,
+              0,
+              0,
+              77,
+              144
+            ],
+            "spent": 14
+          },
+          {
+            "event": "form_a",
+            "plant": [
+              1,
+              14,
+              0,
+              0,
+              0,
+              76,
+              144
+            ],
+            "spent": 15
+          },
+          {
+            "event": "bind_a",
+            "plant": [
+              0,
+              14,
+              1,
+              0,
+              0,
+              75,
+              144
+            ],
+            "spent": 16
+          },
+          {
+            "event": "repair",
+            "plant": [
+              0,
+              14,
+              1,
+              1,
+              0,
+              74,
+              144
+            ],
+            "spent": 17
+          },
+          {
+            "event": "capture",
+            "plant": [
+              0,
+              14,
+              1,
+              1,
+              1,
+              74,
+              143
+            ],
+            "spent": 17
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              1,
+              14,
+              1,
+              1,
+              0,
+              74,
+              143
+            ],
+            "spent": 18
+          },
+          {
+            "event": "capture",
+            "plant": [
+              1,
+              14,
+              1,
+              1,
+              1,
+              74,
+              142
+            ],
+            "spent": 18
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              2,
+              14,
+              1,
+              1,
+              0,
+              74,
+              142
+            ],
+            "spent": 19
+          },
+          {
+            "event": "capture",
+            "plant": [
+              2,
+              14,
+              1,
+              1,
+              1,
+              74,
+              141
+            ],
+            "spent": 19
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              3,
+              14,
+              1,
+              1,
+              0,
+              74,
+              141
+            ],
+            "spent": 20
+          },
+          {
+            "event": "capture",
+            "plant": [
+              3,
+              14,
+              1,
+              1,
+              1,
+              74,
+              140
+            ],
+            "spent": 20
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              4,
+              14,
+              1,
+              1,
+              0,
+              74,
+              140
+            ],
+            "spent": 21
+          },
+          {
+            "event": "capture",
+            "plant": [
+              4,
+              14,
+              1,
+              1,
+              1,
+              74,
+              139
+            ],
+            "spent": 21
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              5,
+              14,
+              1,
+              1,
+              0,
+              74,
+              139
+            ],
+            "spent": 22
+          },
+          {
+            "event": "capture",
+            "plant": [
+              5,
+              14,
+              1,
+              1,
+              1,
+              74,
+              138
+            ],
+            "spent": 22
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              6,
+              14,
+              1,
+              1,
+              0,
+              74,
+              138
+            ],
+            "spent": 23
+          },
+          {
+            "event": "capture",
+            "plant": [
+              6,
+              14,
+              1,
+              1,
+              1,
+              74,
+              137
+            ],
+            "spent": 23
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              7,
+              14,
+              1,
+              1,
+              0,
+              74,
+              137
+            ],
+            "spent": 24
+          },
+          {
+            "event": "capture",
+            "plant": [
+              7,
+              14,
+              1,
+              1,
+              1,
+              74,
+              136
+            ],
+            "spent": 24
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              8,
+              14,
+              1,
+              1,
+              0,
+              74,
+              136
+            ],
+            "spent": 25
+          },
+          {
+            "event": "capture",
+            "plant": [
+              8,
+              14,
+              1,
+              1,
+              1,
+              74,
+              135
+            ],
+            "spent": 25
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              9,
+              14,
+              1,
+              1,
+              0,
+              74,
+              135
+            ],
+            "spent": 26
+          },
+          {
+            "event": "capture",
+            "plant": [
+              9,
+              14,
+              1,
+              1,
+              1,
+              74,
+              134
+            ],
+            "spent": 26
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              10,
+              14,
+              1,
+              1,
+              0,
+              74,
+              134
+            ],
+            "spent": 27
+          },
+          {
+            "event": "capture",
+            "plant": [
+              10,
+              14,
+              1,
+              1,
+              1,
+              74,
+              133
+            ],
+            "spent": 27
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              11,
+              14,
+              1,
+              1,
+              0,
+              74,
+              133
+            ],
+            "spent": 28
+          },
+          {
+            "event": "capture",
+            "plant": [
+              11,
+              14,
+              1,
+              1,
+              1,
+              74,
+              132
+            ],
+            "spent": 28
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              12,
+              14,
+              1,
+              1,
+              0,
+              74,
+              132
+            ],
+            "spent": 29
+          },
+          {
+            "event": "capture",
+            "plant": [
+              12,
+              14,
+              1,
+              1,
+              1,
+              74,
+              131
+            ],
+            "spent": 29
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              13,
+              14,
+              1,
+              1,
+              0,
+              74,
+              131
+            ],
+            "spent": 30
+          },
+          {
+            "event": "capture",
+            "plant": [
+              13,
+              14,
+              1,
+              1,
+              1,
+              74,
+              130
+            ],
+            "spent": 30
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              12,
+              13,
+              1,
+              1,
+              1,
+              73,
+              130
+            ],
+            "cells": 1,
+            "bound_parts": 2,
+            "spent": 31
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              11,
+              12,
+              1,
+              1,
+              1,
+              72,
+              130
+            ],
+            "cells": 2,
+            "bound_parts": 4,
+            "spent": 32
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              10,
+              11,
+              1,
+              1,
+              1,
+              71,
+              130
+            ],
+            "cells": 3,
+            "bound_parts": 6,
+            "spent": 33
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              9,
+              10,
+              1,
+              1,
+              1,
+              70,
+              130
+            ],
+            "cells": 4,
+            "bound_parts": 8,
+            "spent": 34
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              8,
+              9,
+              1,
+              1,
+              1,
+              69,
+              130
+            ],
+            "cells": 5,
+            "bound_parts": 10,
+            "spent": 35
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              7,
+              8,
+              1,
+              1,
+              1,
+              68,
+              130
+            ],
+            "cells": 6,
+            "bound_parts": 12,
+            "spent": 36
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              6,
+              7,
+              1,
+              1,
+              1,
+              67,
+              130
+            ],
+            "cells": 7,
+            "bound_parts": 14,
+            "spent": 37
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              5,
+              6,
+              1,
+              1,
+              1,
+              66,
+              130
+            ],
+            "cells": 8,
+            "bound_parts": 16,
+            "spent": 38
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              4,
+              5,
+              1,
+              1,
+              1,
+              65,
+              130
+            ],
+            "cells": 9,
+            "bound_parts": 18,
+            "spent": 39
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              3,
+              4,
+              1,
+              1,
+              1,
+              64,
+              130
+            ],
+            "cells": 10,
+            "bound_parts": 20,
+            "spent": 40
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              2,
+              3,
+              1,
+              1,
+              1,
+              63,
+              130
+            ],
+            "cells": 11,
+            "bound_parts": 22,
+            "spent": 41
+          },
+          {
+            "event": "assemble_reader",
+            "plant": [
+              1,
+              2,
+              1,
+              1,
+              1,
+              62,
+              130
+            ],
+            "cells": 11,
+            "bound_parts": 24,
+            "spent": 42
+          },
+          {
+            "event": "existing_adapter",
+            "free_a": 1,
+            "free_h": 1,
+            "controller_parts": 2,
+            "reader_parts": 2,
+            "cell_parts": 22,
+            "fuel": 62,
+            "source": 130,
+            "spent": 43
+          }
+        ]
+      },
+      "12": {
+        "initial_common": 91,
+        "initial_source": 144,
+        "material": 28,
+        "cell_count": 12,
+        "fuel": 61,
+        "source": 130,
+        "free_a": 0,
+        "free_h": 0,
+        "construction_spent": 44,
+        "trace": [
+          {
+            "event": "initial",
+            "plant": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              91,
+              144
+            ],
+            "spent": 0
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              90,
+              144
+            ],
+            "spent": 1
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              2,
+              0,
+              0,
+              0,
+              89,
+              144
+            ],
+            "spent": 2
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              3,
+              0,
+              0,
+              0,
+              88,
+              144
+            ],
+            "spent": 3
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              4,
+              0,
+              0,
+              0,
+              87,
+              144
+            ],
+            "spent": 4
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              5,
+              0,
+              0,
+              0,
+              86,
+              144
+            ],
+            "spent": 5
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              6,
+              0,
+              0,
+              0,
+              85,
+              144
+            ],
+            "spent": 6
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              7,
+              0,
+              0,
+              0,
+              84,
+              144
+            ],
+            "spent": 7
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              8,
+              0,
+              0,
+              0,
+              83,
+              144
+            ],
+            "spent": 8
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              9,
+              0,
+              0,
+              0,
+              82,
+              144
+            ],
+            "spent": 9
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              10,
+              0,
+              0,
+              0,
+              81,
+              144
+            ],
+            "spent": 10
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              11,
+              0,
+              0,
+              0,
+              80,
+              144
+            ],
+            "spent": 11
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              12,
+              0,
+              0,
+              0,
+              79,
+              144
+            ],
+            "spent": 12
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              13,
+              0,
+              0,
+              0,
+              78,
+              144
+            ],
+            "spent": 13
+          },
+          {
+            "event": "form_h",
+            "plant": [
+              0,
+              14,
+              0,
+              0,
+              0,
+              77,
+              144
+            ],
+            "spent": 14
+          },
+          {
+            "event": "form_a",
+            "plant": [
+              1,
+              14,
+              0,
+              0,
+              0,
+              76,
+              144
+            ],
+            "spent": 15
+          },
+          {
+            "event": "bind_a",
+            "plant": [
+              0,
+              14,
+              1,
+              0,
+              0,
+              75,
+              144
+            ],
+            "spent": 16
+          },
+          {
+            "event": "repair",
+            "plant": [
+              0,
+              14,
+              1,
+              1,
+              0,
+              74,
+              144
+            ],
+            "spent": 17
+          },
+          {
+            "event": "capture",
+            "plant": [
+              0,
+              14,
+              1,
+              1,
+              1,
+              74,
+              143
+            ],
+            "spent": 17
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              1,
+              14,
+              1,
+              1,
+              0,
+              74,
+              143
+            ],
+            "spent": 18
+          },
+          {
+            "event": "capture",
+            "plant": [
+              1,
+              14,
+              1,
+              1,
+              1,
+              74,
+              142
+            ],
+            "spent": 18
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              2,
+              14,
+              1,
+              1,
+              0,
+              74,
+              142
+            ],
+            "spent": 19
+          },
+          {
+            "event": "capture",
+            "plant": [
+              2,
+              14,
+              1,
+              1,
+              1,
+              74,
+              141
+            ],
+            "spent": 19
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              3,
+              14,
+              1,
+              1,
+              0,
+              74,
+              141
+            ],
+            "spent": 20
+          },
+          {
+            "event": "capture",
+            "plant": [
+              3,
+              14,
+              1,
+              1,
+              1,
+              74,
+              140
+            ],
+            "spent": 20
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              4,
+              14,
+              1,
+              1,
+              0,
+              74,
+              140
+            ],
+            "spent": 21
+          },
+          {
+            "event": "capture",
+            "plant": [
+              4,
+              14,
+              1,
+              1,
+              1,
+              74,
+              139
+            ],
+            "spent": 21
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              5,
+              14,
+              1,
+              1,
+              0,
+              74,
+              139
+            ],
+            "spent": 22
+          },
+          {
+            "event": "capture",
+            "plant": [
+              5,
+              14,
+              1,
+              1,
+              1,
+              74,
+              138
+            ],
+            "spent": 22
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              6,
+              14,
+              1,
+              1,
+              0,
+              74,
+              138
+            ],
+            "spent": 23
+          },
+          {
+            "event": "capture",
+            "plant": [
+              6,
+              14,
+              1,
+              1,
+              1,
+              74,
+              137
+            ],
+            "spent": 23
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              7,
+              14,
+              1,
+              1,
+              0,
+              74,
+              137
+            ],
+            "spent": 24
+          },
+          {
+            "event": "capture",
+            "plant": [
+              7,
+              14,
+              1,
+              1,
+              1,
+              74,
+              136
+            ],
+            "spent": 24
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              8,
+              14,
+              1,
+              1,
+              0,
+              74,
+              136
+            ],
+            "spent": 25
+          },
+          {
+            "event": "capture",
+            "plant": [
+              8,
+              14,
+              1,
+              1,
+              1,
+              74,
+              135
+            ],
+            "spent": 25
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              9,
+              14,
+              1,
+              1,
+              0,
+              74,
+              135
+            ],
+            "spent": 26
+          },
+          {
+            "event": "capture",
+            "plant": [
+              9,
+              14,
+              1,
+              1,
+              1,
+              74,
+              134
+            ],
+            "spent": 26
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              10,
+              14,
+              1,
+              1,
+              0,
+              74,
+              134
+            ],
+            "spent": 27
+          },
+          {
+            "event": "capture",
+            "plant": [
+              10,
+              14,
+              1,
+              1,
+              1,
+              74,
+              133
+            ],
+            "spent": 27
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              11,
+              14,
+              1,
+              1,
+              0,
+              74,
+              133
+            ],
+            "spent": 28
+          },
+          {
+            "event": "capture",
+            "plant": [
+              11,
+              14,
+              1,
+              1,
+              1,
+              74,
+              132
+            ],
+            "spent": 28
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              12,
+              14,
+              1,
+              1,
+              0,
+              74,
+              132
+            ],
+            "spent": 29
+          },
+          {
+            "event": "capture",
+            "plant": [
+              12,
+              14,
+              1,
+              1,
+              1,
+              74,
+              131
+            ],
+            "spent": 29
+          },
+          {
+            "event": "copy_a",
+            "plant": [
+              13,
+              14,
+              1,
+              1,
+              0,
+              74,
+              131
+            ],
+            "spent": 30
+          },
+          {
+            "event": "capture",
+            "plant": [
+              13,
+              14,
+              1,
+              1,
+              1,
+              74,
+              130
+            ],
+            "spent": 30
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              12,
+              13,
+              1,
+              1,
+              1,
+              73,
+              130
+            ],
+            "cells": 1,
+            "bound_parts": 2,
+            "spent": 31
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              11,
+              12,
+              1,
+              1,
+              1,
+              72,
+              130
+            ],
+            "cells": 2,
+            "bound_parts": 4,
+            "spent": 32
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              10,
+              11,
+              1,
+              1,
+              1,
+              71,
+              130
+            ],
+            "cells": 3,
+            "bound_parts": 6,
+            "spent": 33
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              9,
+              10,
+              1,
+              1,
+              1,
+              70,
+              130
+            ],
+            "cells": 4,
+            "bound_parts": 8,
+            "spent": 34
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              8,
+              9,
+              1,
+              1,
+              1,
+              69,
+              130
+            ],
+            "cells": 5,
+            "bound_parts": 10,
+            "spent": 35
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              7,
+              8,
+              1,
+              1,
+              1,
+              68,
+              130
+            ],
+            "cells": 6,
+            "bound_parts": 12,
+            "spent": 36
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              6,
+              7,
+              1,
+              1,
+              1,
+              67,
+              130
+            ],
+            "cells": 7,
+            "bound_parts": 14,
+            "spent": 37
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              5,
+              6,
+              1,
+              1,
+              1,
+              66,
+              130
+            ],
+            "cells": 8,
+            "bound_parts": 16,
+            "spent": 38
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              4,
+              5,
+              1,
+              1,
+              1,
+              65,
+              130
+            ],
+            "cells": 9,
+            "bound_parts": 18,
+            "spent": 39
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              3,
+              4,
+              1,
+              1,
+              1,
+              64,
+              130
+            ],
+            "cells": 10,
+            "bound_parts": 20,
+            "spent": 40
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              2,
+              3,
+              1,
+              1,
+              1,
+              63,
+              130
+            ],
+            "cells": 11,
+            "bound_parts": 22,
+            "spent": 41
+          },
+          {
+            "event": "assemble_cell",
+            "plant": [
+              1,
+              2,
+              1,
+              1,
+              1,
+              62,
+              130
+            ],
+            "cells": 12,
+            "bound_parts": 24,
+            "spent": 42
+          },
+          {
+            "event": "assemble_reader",
+            "plant": [
+              0,
+              1,
+              1,
+              1,
+              1,
+              61,
+              130
+            ],
+            "cells": 12,
+            "bound_parts": 26,
+            "spent": 43
+          },
+          {
+            "event": "existing_adapter",
+            "free_a": 0,
+            "free_h": 0,
+            "controller_parts": 2,
+            "reader_parts": 2,
+            "cell_parts": 24,
+            "fuel": 61,
+            "source": 130,
+            "spent": 44
+          }
+        ]
+      }
+    },
+    "routes": {
+      "primary": {
+        "event": "route_actual_common_before_prefix",
+        "before_common": 61,
+        "working": 26,
+        "archive": 15,
+        "reader": 20,
+        "idle": 0,
+        "source": 130,
+        "free_a": 0,
+        "free_h": 0,
+        "cell_parts": 24,
+        "reader_parts": 2,
+        "controller_parts": 2,
+        "construction_spent": 44
+      },
+      "archive_short": {
+        "event": "route_actual_common_before_prefix",
+        "before_common": 61,
+        "working": 26,
+        "archive": 14,
+        "reader": 20,
+        "idle": 1,
+        "source": 130,
+        "free_a": 0,
+        "free_h": 0,
+        "cell_parts": 24,
+        "reader_parts": 2,
+        "controller_parts": 2,
+        "construction_spent": 44
+      },
+      "cell_short": {
+        "event": "route_actual_common_before_prefix",
+        "before_common": 62,
+        "working": 26,
+        "archive": 15,
+        "reader": 20,
+        "idle": 1,
+        "source": 130,
+        "free_a": 1,
+        "free_h": 1,
+        "cell_parts": 22,
+        "reader_parts": 2,
+        "controller_parts": 2,
+        "construction_spent": 43
+      },
+      "reader_short": {
+        "event": "route_actual_common_before_prefix",
+        "before_common": 61,
+        "working": 26,
+        "archive": 15,
+        "reader": 13,
+        "idle": 7,
+        "source": 130,
+        "free_a": 0,
+        "free_h": 0,
+        "cell_parts": 24,
+        "reader_parts": 2,
+        "controller_parts": 2,
+        "construction_spent": 44
+      },
+      "missing_channel": {
+        "event": "route_actual_common_before_prefix",
+        "before_common": 61,
+        "working": 26,
+        "archive": 15,
+        "reader": 20,
+        "idle": 0,
+        "source": 130,
+        "free_a": 0,
+        "free_h": 0,
+        "cell_parts": 24,
+        "reader_parts": 2,
+        "controller_parts": 2,
+        "construction_spent": 44
+      },
+      "no_opportunity": {
+        "event": "route_actual_common_before_prefix",
+        "before_common": 61,
+        "working": 26,
+        "archive": 15,
+        "reader": 20,
+        "idle": 0,
+        "source": 130,
+        "free_a": 0,
+        "free_h": 0,
+        "cell_parts": 24,
+        "reader_parts": 2,
+        "controller_parts": 2,
+        "construction_spent": 44
+      },
+      "actor_charged": {
+        "event": "route_actual_common_before_prefix",
+        "before_common": 61,
+        "working": 26,
+        "archive": 15,
+        "reader": 20,
+        "idle": 0,
+        "source": 130,
+        "free_a": 0,
+        "free_h": 0,
+        "cell_parts": 24,
+        "reader_parts": 2,
+        "controller_parts": 2,
+        "construction_spent": 44
+      },
+      "interrupted_write": {
+        "event": "route_actual_common_before_prefix",
+        "before_common": 61,
+        "working": 26,
+        "archive": 15,
+        "reader": 20,
+        "idle": 0,
+        "source": 130,
+        "free_a": 0,
+        "free_h": 0,
+        "cell_parts": 24,
+        "reader_parts": 2,
+        "controller_parts": 2,
+        "construction_spent": 44
+      },
+      "context_during_binding": {
+        "event": "route_actual_common_before_prefix",
+        "before_common": 61,
+        "working": 26,
+        "archive": 15,
+        "reader": 20,
+        "idle": 0,
+        "source": 130,
+        "free_a": 0,
+        "free_h": 0,
+        "cell_parts": 24,
+        "reader_parts": 2,
+        "controller_parts": 2,
+        "construction_spent": 44
+      },
+      "stale_context": {
+        "event": "route_actual_common_before_prefix",
+        "before_common": 61,
+        "working": 26,
+        "archive": 15,
+        "reader": 20,
+        "idle": 0,
+        "source": 130,
+        "free_a": 0,
+        "free_h": 0,
+        "cell_parts": 24,
+        "reader_parts": 2,
+        "controller_parts": 2,
+        "construction_spent": 44
+      },
+      "corrupt_action_tag": {
+        "event": "route_actual_common_before_prefix",
+        "before_common": 61,
+        "working": 26,
+        "archive": 15,
+        "reader": 20,
+        "idle": 0,
+        "source": 130,
+        "free_a": 0,
+        "free_h": 0,
+        "cell_parts": 24,
+        "reader_parts": 2,
+        "controller_parts": 2,
+        "construction_spent": 44
+      }
+    },
+    "prefix_law": {
+      "initial_common": 26,
+      "adapter": 1,
+      "gate_assembly": 2,
+      "base": 1,
+      "retrofit": 3,
+      "coupling_assembly": 1,
+      "rent": 1,
+      "trial": 3,
+      "write": 1,
+      "renewal": 1,
+      "gate_renewal": 1,
+      "coupling_renewal": 1,
+      "packet": 10,
+      "lifetime": 6,
+      "gate_lifetime": 2,
+      "coupling_lifetime": 2,
+      "horizon": 8,
+      "reversals": [
+        4
+      ],
+      "availability": "1",
+      "initial_source": 81
+    },
+    "working_reserve": 26,
+    "prefix_packets": 8,
+    "suffix_packets": 5,
+    "prefix_records": {
+      "variable": [
+        {
+          "state": {
+            "fuel": 0,
+            "gate_life": 1,
+            "stage": 0,
+            "life": 0,
+            "q": 2,
+            "last": 0,
+            "written": false,
+            "coupling": -1,
+            "coupling_life": 0,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 0,
+          "final_regime": 1,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "2",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "2",
+            "coupler_changes": "0",
+            "coupler_renewals": "1/2",
+            "rents": "11/2",
+            "trials": "7/2",
+            "captures": "1/2",
+            "writes": "7/2",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "5/2",
+            "normal_trials": "0",
+            "inverted_trials": "7/2",
+            "brier16": "4",
+            "spent": "31",
+            "waste": "75"
+          }
+        },
+        {
+          "state": {
+            "fuel": 11,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": true
+          },
+          "initial_regime": 0,
+          "final_regime": 1,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "2",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "2",
+            "coupler_changes": "1",
+            "coupler_renewals": "5",
+            "rents": "8",
+            "trials": "8",
+            "captures": "5",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "11/2",
+            "inverted_trials": "5/2",
+            "brier16": "20",
+            "spent": "65",
+            "waste": "30"
+          }
+        },
+        {
+          "state": {
+            "fuel": 21,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 0,
+          "final_regime": 1,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "6",
+            "rents": "8",
+            "trials": "8",
+            "captures": "6",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "65",
+            "waste": "20"
+          }
+        },
+        {
+          "state": {
+            "fuel": 28,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 0,
+          "final_regime": 1,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "7",
+            "rents": "8",
+            "trials": "8",
+            "captures": "7",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "68",
+            "waste": "10"
+          }
+        },
+        {
+          "state": {
+            "fuel": 0,
+            "gate_life": 1,
+            "stage": 0,
+            "life": 0,
+            "q": 2,
+            "last": 0,
+            "written": false,
+            "coupling": -1,
+            "coupling_life": 0,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 1,
+          "final_regime": 0,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "2",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "2",
+            "coupler_changes": "0",
+            "coupler_renewals": "1/2",
+            "rents": "11/2",
+            "trials": "7/2",
+            "captures": "1/2",
+            "writes": "7/2",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "5/2",
+            "normal_trials": "0",
+            "inverted_trials": "7/2",
+            "brier16": "4",
+            "spent": "31",
+            "waste": "75"
+          }
+        },
+        {
+          "state": {
+            "fuel": 11,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": true
+          },
+          "initial_regime": 1,
+          "final_regime": 0,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "2",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "2",
+            "coupler_changes": "1",
+            "coupler_renewals": "5",
+            "rents": "8",
+            "trials": "8",
+            "captures": "5",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "11/2",
+            "inverted_trials": "5/2",
+            "brier16": "20",
+            "spent": "65",
+            "waste": "30"
+          }
+        },
+        {
+          "state": {
+            "fuel": 21,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 1,
+          "final_regime": 0,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "6",
+            "rents": "8",
+            "trials": "8",
+            "captures": "6",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "65",
+            "waste": "20"
+          }
+        },
+        {
+          "state": {
+            "fuel": 28,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 1,
+          "final_regime": 0,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "7",
+            "rents": "8",
+            "trials": "8",
+            "captures": "7",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "68",
+            "waste": "10"
+          }
+        }
+      ],
+      "conventional": [
+        {
+          "state": {
+            "fuel": 0,
+            "gate_life": 1,
+            "stage": 0,
+            "life": 0,
+            "q": 2,
+            "last": 0,
+            "written": false,
+            "coupling": -1,
+            "coupling_life": 0,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 0,
+          "final_regime": 1,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "2",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "2",
+            "coupler_changes": "0",
+            "coupler_renewals": "1/2",
+            "rents": "11/2",
+            "trials": "7/2",
+            "captures": "1/2",
+            "writes": "7/2",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "5/2",
+            "normal_trials": "0",
+            "inverted_trials": "7/2",
+            "brier16": "4",
+            "spent": "31",
+            "waste": "75"
+          }
+        },
+        {
+          "state": {
+            "fuel": 11,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": true
+          },
+          "initial_regime": 0,
+          "final_regime": 1,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "2",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "2",
+            "coupler_changes": "1",
+            "coupler_renewals": "5",
+            "rents": "8",
+            "trials": "8",
+            "captures": "5",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "11/2",
+            "inverted_trials": "5/2",
+            "brier16": "20",
+            "spent": "65",
+            "waste": "30"
+          }
+        },
+        {
+          "state": {
+            "fuel": 21,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 0,
+          "final_regime": 1,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "6",
+            "rents": "8",
+            "trials": "8",
+            "captures": "6",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "65",
+            "waste": "20"
+          }
+        },
+        {
+          "state": {
+            "fuel": 28,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 0,
+          "final_regime": 1,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "7",
+            "rents": "8",
+            "trials": "8",
+            "captures": "7",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "68",
+            "waste": "10"
+          }
+        },
+        {
+          "state": {
+            "fuel": 0,
+            "gate_life": 1,
+            "stage": 0,
+            "life": 0,
+            "q": 2,
+            "last": 0,
+            "written": false,
+            "coupling": -1,
+            "coupling_life": 0,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 1,
+          "final_regime": 0,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "2",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "2",
+            "coupler_changes": "0",
+            "coupler_renewals": "1/2",
+            "rents": "11/2",
+            "trials": "7/2",
+            "captures": "1/2",
+            "writes": "7/2",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "5/2",
+            "normal_trials": "0",
+            "inverted_trials": "7/2",
+            "brier16": "4",
+            "spent": "31",
+            "waste": "75"
+          }
+        },
+        {
+          "state": {
+            "fuel": 11,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": true
+          },
+          "initial_regime": 1,
+          "final_regime": 0,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "2",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "2",
+            "coupler_changes": "1",
+            "coupler_renewals": "5",
+            "rents": "8",
+            "trials": "8",
+            "captures": "5",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "11/2",
+            "inverted_trials": "5/2",
+            "brier16": "20",
+            "spent": "65",
+            "waste": "30"
+          }
+        },
+        {
+          "state": {
+            "fuel": 21,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 1,
+          "final_regime": 0,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "6",
+            "rents": "8",
+            "trials": "8",
+            "captures": "6",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "65",
+            "waste": "20"
+          }
+        },
+        {
+          "state": {
+            "fuel": 28,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 1,
+          "final_regime": 0,
+          "probability": "1/8",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "7",
+            "rents": "8",
+            "trials": "8",
+            "captures": "7",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "68",
+            "waste": "10"
+          }
+        }
+      ],
+      "fixed_normal": [
+        {
+          "state": {
+            "fuel": 21,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 0,
+          "final_regime": 1,
+          "probability": "1/4",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "6",
+            "rents": "8",
+            "trials": "8",
+            "captures": "6",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "65",
+            "waste": "20"
+          }
+        },
+        {
+          "state": {
+            "fuel": 28,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 4,
+            "last": 1,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 0,
+          "final_regime": 1,
+          "probability": "1/4",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "7",
+            "rents": "8",
+            "trials": "8",
+            "captures": "7",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "68",
+            "waste": "10"
+          }
+        },
+        {
+          "state": {
+            "fuel": 21,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 1,
+          "final_regime": 0,
+          "probability": "1/4",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "6",
+            "rents": "8",
+            "trials": "8",
+            "captures": "6",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "65",
+            "waste": "20"
+          }
+        },
+        {
+          "state": {
+            "fuel": 28,
+            "gate_life": 2,
+            "stage": 2,
+            "life": 6,
+            "q": 0,
+            "last": 0,
+            "written": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "qualified_q": -1,
+            "witness": false
+          },
+          "initial_regime": 1,
+          "final_regime": 0,
+          "probability": "1/4",
+          "conditional_mean_marks": {
+            "updater_forms": "1",
+            "base_forms": "1",
+            "predictor_retrofits": "1",
+            "coupler_forms": "1",
+            "coupler_changes": "0",
+            "coupler_renewals": "7",
+            "rents": "8",
+            "trials": "8",
+            "captures": "7",
+            "writes": "8",
+            "unpaid_writes": "0",
+            "decoder_errors": "0",
+            "acquired_uses": "7",
+            "normal_trials": "8",
+            "inverted_trials": "0",
+            "brier16": "20",
+            "spent": "68",
+            "waste": "10"
+          }
+        }
+      ]
+    }
+  }
+}

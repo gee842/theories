@@ -1,0 +1,79 @@
+{
+  "checked_at_utc": "2026-10-05T21:24:39.760125+00:00",
+  "formal_receipt_inspection": {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "compiler_hash_verified": true,
+    "inherited_declaration_audits": 142,
+    "new_declaration_audits": 67,
+    "scope": "Inspection of frozen fresh-build receipt and sources; no independent Lean rerun or Python refinement claim.",
+    "source_checker_toolchain_and_log_hashes_verified": true,
+    "status": "passed"
+  },
+  "local_contract_checks": {
+    "distinct_paid_writes": 4,
+    "duplicate_commit_disabled": true,
+    "fixed_hole_decoding": [
+      null,
+      true,
+      null
+    ],
+    "frame_truth_table_cases": 256
+  },
+  "method": "No producer imports; independent formation guards and exogenous-word physical replay; exact rational comparison.",
+  "scope": "Conditional on the specified actual construction. Inherited prefix rows are hash-bound and compared to the accepted fixture; no new preparation probability or full Lean/Python refinement claim.",
+  "source_sha256": {
+    "_process/research/2026-10-05-concern-theory/RECIPIENT-RECORDING-MATH.md": "84327bb45e0b7b8eae0b4eee3f1778726e53ccec44a103a0861504a131263e9a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md": "d4a008582680f3fd74e7247f32c018022ea4753dfe11ffefdbb1db5d6a4f607c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean": "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/PROTOCOL.md": "0fdb7ec28e193706c8e076a623a4c848b6c0c7b5da004de3982c8517702b9b89",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/fixtures.json": "1a7db5f30c0ea0d10d09601264b738e0a5a83b3ba920b4c13d94719db2348218",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean": "3e755a7d74402f8e14ecfe6c9c6b7713c072b181729fe2b50201e166282032b8",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/independent-check.json": "18d6559ffd60b81b4979eca125c74d815b774ef0a917a4a7321919c7522275ce",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/model.py": "5858d2fdcef507323cdfea6495f228e32b6e90098145a9e8a2da8c326e7c0938",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/PROTOCOL.md": "c555bfa228f9c5da6c9f2b4e749496d68d9b74302b6bad8739f7600a8cdb56c2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/README.md": "be52f41f7e52936d7b415ea7b1f890815018cadb4e7a8eece0b5c69484635741",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/check.json": "e7cd7750a569c6151da772489f54123fa48a7a924c99a192b614d8b1c3ad748b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/check.py": "6a43ed194789eaf5635dc50493b6fefe78b13fcd0c506dfe6528d1bbd4b8e212",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/fixtures.json": "e16f2c6e954ee5281477e256029f29cee79456d64f147396a8698743dd0b6480",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean": "869e37d923316ab27f90c2b34e9b80f5591b9fcfb034b13f2672d9284c79b248",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean": "0e509b5000edd501777c547503b8b96de6a348757d5c3ca9fca8d6e824988be9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/README.md": "81d56abd9152d71f680a2adfd5221ecfbe3b6659ca270216909d531e49502a6e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean": "d122e604965c7e9ab1757b4c99bc484b619d31f245aaf04d86658b4eeb2dc1c0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/check.py": "dd601b225dd6bf99aefb68c18c94522a28699a584a737637394c6fb8a537ea60",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/verification.json": "d3e86d530fa9ac439ddb2a144168682800948945dea12fa6b924bd1c3fe64b19",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/verification/ArchivePreparation.txt": "f23473fe3f861b3e5dae73e0033d3e54271f18850467dc0dce5828ccdd798af2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/verification/EmissionArchive.txt": "4257f369d815f8baaf276d23f243ef4deca0c8207c7550c514715dcb66db2c91",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/verification/FormedSelection.txt": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/verification/GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/verification/PaidArchiveReader.txt": "af49a435380cb5e5dc73c580f330d72c6d68a0b5e9eb1da2d06a84e2f6e91b38",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/verification/RecipientArchive.txt": "1640c929c9d749ce8ddbda0ede23d6253d5320d4521c8890ea3312675ac4d47f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/verification/RecipientCorrection.txt": "797b6ef74c6d412e922bd75d25cc1719e5919c5bfcdbdfa0a0995326caed8ab7",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/verification/RecipientIdentification.txt": "0e376b998d48e305b02ad6b5f835918171a48343443e4505b4b996bd1a3c7ad8",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/independent_check.py": "86d12a6ada564f27c007a4b1925c4a6d6a9e89857aa233f988ef1562921134cf",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/model.py": "b1776f56c94c98a980ab0b30b203a2a58c736b7199c32c39c86853655e6a902c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/results.json": "f306fe61167e25966e54b793e505b6a9b29d05c3506a1b7da86a7fd1b9296711",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/model.py": "278d57ddf2f17d3b4da726fd067f71e323265626d5296ac83beaa2868f70e66a",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "status": "passed",
+  "summary": {
+    "comparison_arms": 33,
+    "distinct_histories": 370,
+    "metric_comparisons": 759,
+    "microstates_checked": 17592,
+    "prefix_cases": 220
+  }
+}
