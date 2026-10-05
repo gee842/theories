@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "goal_status": "active; universal positive objective unresolved",
+  "automation_id": "integrate-completed-theory-work",
+  "frequency_minutes": 15,
+  "integration_directory": "_process/research/2026-10-05-support-and-shared-generativity/completion",
+  "entries": [
+    {
+      "thread_id": "01a10a17-bf6f-7400-8109-70271bbaca71",
+      "title": "Unify theory sessions",
+      "turn_id": "01a10b75-1d3b-7c62-96f3-f171c1c804fc",
+      "cursor": "0b8a3ec2-6855-4a18-8b90-459fdb4ae794:4",
+      "status": "reviewed_and_integrated_organization_only",
+      "completed_at_unix": 1791194752,
+      "commit": "ad220438c78cbc1f459440949b0cb918cae994df",
+      "evidence_role": "repository source preservation and navigation; no added scientific evidence"
+    },
+    {
+      "thread_id": "01a10b2e-91e3-71f0-9da8-0c228cfd5ceb",
+      "title": "Unify theory sessions (2)",
+      "turn_id": "01a10b66-f507-7ff2-801b-36fe1fb7e639",
+      "cursor": "8626f5cc-9526-49dd-ad89-7db5835e941e:6",
+      "status": "reviewed_and_integrated_conditional_theorem",
+      "latest_status": "completed",
+      "latest_commentary": "Completed conditional joint formation and funded reconstruction accepted after source and proof review; physical direction and prevalence remain open.",
+      "evidence_role": "conditional joint formation proof; completion review required",
+      "completed_at_unix": 1791195374,
+      "commit": "b379528da1645db5b5c2eb559fce93831cfda2ec",
+      "review": "JOINT-FORMATION-INTEGRATION.md"
+    },
+    {
+      "thread_id": "01a106c5-cdcb-7723-877d-85507c8a70c9",
+      "title": "Review v0.2 build plan",
+      "turn_id": "01a10b40-33d6-75e3-ac24-db11b05a1c4f",
+      "cursor": "bbf33de6-9b77-4012-93a0-1eb40d99c444:9",
+      "status": "pending_completed_turn_review",
+      "latest_status": "inProgress",
+      "latest_commentary": "Still active: revised hosted-runtime test and architecture review of durable commit and restart assertions.",
+      "evidence_role": "application check; do not treat performance as evidence of universal theory"
+    },
+    {
+      "thread_id": "01a10a17-bf6f-7400-8109-70271bbaca71",
+      "title": "Unify theory sessions",
+      "turn_id": "01a10b92-8dca-77f2-a8b6-e92d0d269027",
+      "cursor": "0b8a3ec2-6855-4a18-8b90-459fdb4ae794:7",
+      "status": "reviewed_and_integrated_conditional_settlement",
+      "latest_status": "completed",
+      "latest_commentary": "Completed conditional paid revision and renewed protection accepted after source and proof review; proposed human study unrun.",
+      "evidence_role": "Repaired conditional strategic extension; bounded feature/decision results; no new observations or physical direction proof.",
+      "registration_reason": "Observed authoritative active turn after completed consolidation; directly relevant to current theory integration, separately registered without changing completed source status.",
+      "completed_at_unix": 1791197167,
+      "commit": "c5cf2ccec506936908b0c1b580c8f5d31e87fd74",
+      "review": "CONCERN-SETTLEMENT-INTEGRATION.md"
+    }
+  ],
+  "stop_rule": "Pause this automation once registered turns are reviewed and integrated or documented outside theory evidential scope; do not complete main goal.",
+  "last_checked_at_utc": "2026-10-05T11:08:00.195607+00:00"
+}

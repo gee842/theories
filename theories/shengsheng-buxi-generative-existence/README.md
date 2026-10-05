@@ -2,6 +2,10 @@
 
 ## Current unified foundation
 
+**Current physical formation test:** [constructed fuel-responsive regulation](../../experiments/shared-renewal-capability/regulation/README.md) makes sensing and control material parts of the shared-renewal process, with exact accounting and a construction-lag theorem. All prespecified constructed-versus-absent comparisons are unfavorable. This retains a substantive boundary: a locally correct response and available energy do not establish that constructing the response sustains the whole. The [concern-settlement integration review](../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONCERN-SETTLEMENT-INTEGRATION.md) accepts the completed parallel contribution without treating strategic equilibrium as a physical directional law.
+
+**Current formal bridge:** [joint capabilities from the renewal event law](../../_process/research/2026-10-05-support-and-shared-generativity/completion/JOINT-CAPABILITY-BRIDGE.md) now connects the physical stochastic model to reliable joint tests. Increased recycling gives productive gains but can trade away reserve readiness; the installed regions are incomparable at one fixed horizon and reliability. This is a scoped result with explicit counterexamples, alongside the completed conditional joint-formation theory.
+
 **Formalization-led completion, 5 October 2026:** the [common specification](unified-2026-10-05/FORMAL-SPECIFICATION.md) and [practical completion plan](unified-2026-10-05/COMPLETION-PLAN.md) make the physical-to-capability-to-direction bridges explicit. The [integration record](../../_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md) preserves separate evidence statuses and tracks active contributions. A complete specification is the first gate; the stronger positive universal goal remains unresolved.
 
 The [current research index](../../RESEARCH.md) connects all recent branches, their repository homes, and their evidence status. It is the starting point for work completed after the synthesis below.

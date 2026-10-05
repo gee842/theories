@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-05T10:11:46.516948+00:00",
+  "repository_head": "ad220438c78cbc1f459440949b0cb918cae994df",
+  "kind": "inspection-manifest; source preservation belongs to existing snapshots and Git objects; not a new scientific validation",
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "0c0d3710735b99f61af69b9ef36f5d824d5d9f794eae629ef8316af1f3e1f348",
+      "bytes": 2226,
+      "reading_scope": "Complete repository instructions",
+      "head_blob": "152c0751c4a5c8109dd6c2135d3d1ef12677bfd0"
+    },
+    {
+      "path": "RESEARCH.md",
+      "sha256": "01c3746ecce4e07068d174a09dcd72d143ffa9cc15c2e810bdd0765893d92ec1",
+      "bytes": 7674,
+      "reading_scope": "Cross-branch index at inspection; concurrently maintained, not frozen theory release",
+      "head_blob": "f599c61fca91bf8e50bff4a21ff7b5dba14b82e5"
+    },
+    {
+      "path": "_process/research/2026-10-05-repository-reconciliation/README.md",
+      "sha256": "cea3228bd6fb933a2b021efde348891d21de2b0f75c80ce19342294fb70ee5ae",
+      "bytes": 4907,
+      "reading_scope": "Complete reconciliation report; organizational contribution only",
+      "head_blob": "4ec037baa6a3789ca804ae95ef3d18a9d5f92d62"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/outputs/conditions-of-generativity-mathematics.md",
+      "sha256": "1ba08778df426cd7b1aee94cdf92bda890f5c733960ac1f6412bf7e93ab9e98b",
+      "bytes": 8461,
+      "reading_scope": "Prior work in this chat; inherited results and assumptions, not rerun",
+      "head_blob": "47eb5e901a1f9e6b21a511aecaad2fa2e1fc9038"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/outputs/renewing-access-to-support-mathematics.md",
+      "sha256": "a9b1b40d428e6b94d4f15a4e9301c165f81230e3232f7bda7a3b6853d95f62f3",
+      "bytes": 8281,
+      "reading_scope": "Prior work in this chat; inherited equilibria, support, formation and limits",
+      "head_blob": "b4e17d6af4b753614d79e5cf44791bb3380ffa7e"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/outputs/shared-generative-direction-mathematics.md",
+      "sha256": "ac6ebd6057edbfa4049a2ef84a7ee22b104ff80582a9e0e1f86df342a5b19bee",
+      "bytes": 10320,
+      "reading_scope": "Prior work in this chat and targeted reread by mechanism reviewer; capacity, rates and C/Y construction",
+      "head_blob": "c105df2cd9182a973f23503f757b8376ee748eab"
+    },
+    {
+      "path": "_process/research/2026-10-05-causal-foundations/outputs/formal-results.md",
+      "sha256": "f6a84bd991395364b948b5171e10a2bb8cf65ef4d20a716138c1aa75b39f9e38",
+      "bytes": 28204,
+      "reading_scope": "Reduction and intervention contracts, consulted with companion causal-foundations report",
+      "head_blob": "428ef6882442a49015a1871699dbe42989342b19"
+    },
+    {
+      "path": "_process/research/2026-10-05-concern-theory/START-HERE.md",
+      "sha256": "08844770f4069217b775824c67d92988aa152d04907f2fbfc1855f0294b39845",
+      "bytes": 3240,
+      "reading_scope": "Complete guide and associated CLAIMS register; no fresh full proof audit",
+      "head_blob": "24882d7f5e4c07efcb9dd21f1ba3ab40e78eefa9"
+    },
+    {
+      "path": "_process/research/2026-10-05-concern-theory/CLAIMS.md",
+      "sha256": "47a09e782bfaccab36bc469a731162d0454611ad6580409f3c8bf5191fdf5db4",
+      "bytes": 7471,
+      "reading_scope": "Claim register",
+      "head_blob": "f9a15fc71c5e80f1cd32383111f34cb9f0bccc5b"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/START-HERE.md",
+      "sha256": "a52616f2f178ed02fd1a103a55a6a65268ddef077f6b8143dcfe080c0318d51a",
+      "bytes": 2506,
+      "reading_scope": "Guide and claim register; no fresh full proof audit",
+      "head_blob": "1cacb72e67da2d0ee816cbd37ea92f01fbc2b9e6"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/CLAIMS.md",
+      "sha256": "bfeb540eab2288ae23314e999799627912be01217289dec89b0beca0a719876a",
+      "bytes": 7148,
+      "reading_scope": "Claim register",
+      "head_blob": "e9cb1e6d0885fe3b0e05f108365d7a7e4372b365"
+    },
+    {
+      "path": "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/outputs/combined-process-proof.md",
+      "sha256": "5e14bb79069943e5c2415b72381be0fd123f9ab02a03ec61d2fe20463b6f8971",
+      "bytes": 29312,
+      "reading_scope": "Targeted sections: actual process, safety and recurrence, theorem C and finite case; later composition sections indexed, not fully reread",
+      "head_blob": "83e30a3c955ea451f4fc16d0b910084800785f79"
+    },
+    {
+      "path": "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/outputs/combined-process-certification.md",
+      "sha256": "b56a5feae82a133071f09dc28787fe77075ddbb816525c3f4da51fbd05cd4b66",
+      "bytes": 16208,
+      "reading_scope": "Report and finite witness assumptions; no reproduction performed",
+      "head_blob": "5611d850dbd1365f41d3a25f1fe313ce2e107afd"
+    },
+    {
+      "path": "sources/20-codex-theory-sessions-2026-10-05/scientific-principles/outputs/README.md",
+      "sha256": "48724f7b4d4d8e4141ee75181e1ced941dcb1191e29d3829c6487b2783ecdbbb",
+      "bytes": 2291,
+      "reading_scope": "Complete source overview; original workspace edition read, preserved equivalent used for links",
+      "head_blob": "246062afa251154d5d9fc1335feaecc0f4438e1f"
+    },
+    {
+      "path": "sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md",
+      "sha256": "2ecf5afb505129416ede3e44238361a81b93db4a7aa5ded96601e5c44f145da5",
+      "bytes": 14013,
+      "reading_scope": "Complete evidence report through independent audit; no new experiment or reproduction",
+      "head_blob": "798955c0cae5e4bce76f4bdab30daec6844737ff"
+    }
+  ]
+}

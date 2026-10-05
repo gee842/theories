@@ -21,6 +21,8 @@ The [current research index](../RESEARCH.md) connects these experiments to the d
 
 | Study | Scope and status |
 |---|---|
+| [Joint capability from shared renewal](shared-renewal-capability/README.md) | Finite-horizon joint assays derived from the same stochastic event law, with directed probability bounds and a reconstructed numerical check; positive construction effects and incomparable installed regions retained. |
+| [Constructed physical regulation](shared-renewal-capability/regulation/README.md) | Explicit fuel-responsive inhibition with paid formation, exact accounting and construction lag; all declared constructed-versus-absent comparisons are unfavorable. Numerical truncation and internal review are separate from external validation. |
 | [Integrated correction](integrated-correction/README.md) | Earlier models of funded, informed and effective correction; component results retain their own assumptions. |
 | [Constructed correction](constructed-correction/README.md) | Completed conditional study of built alternatives, selected protection and strategic depletion of future operating funds. |
 | [Joint formation and renewal](joint-formation/README.md) | Completed conditional equilibrium construction joining chosen learning, paid inspection/control, shared cash, persistent interference, and fresh reconstruction; proofs, exact countermodels and independent checks retained. |

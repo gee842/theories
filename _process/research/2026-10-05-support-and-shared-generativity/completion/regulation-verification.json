@@ -1,0 +1,100 @@
+{
+  "created_at_utc": "2026-10-05T11:17:06.587961+00:00",
+  "kind": "preservation and link check; independent scientific calculation recorded separately",
+  "repository_head_before_snapshot": "c5cf2ccec506936908b0c1b580c8f5d31e87fd74",
+  "full_goal_status": "active; physical identification, favorable general mechanism, selection, empirical and universal coverage remain unresolved",
+  "documents_checked": 17,
+  "local_links_checked": 144,
+  "missing_local_links": [],
+  "primary_frozen_inputs_match": true,
+  "independent_check_inputs_match": true,
+  "previous_source_preservation": [
+    {
+      "path": "AGENTS.md",
+      "status": "unchanged"
+    },
+    {
+      "path": "_process/research/2026-10-05-repository-reconciliation/README.md",
+      "status": "unchanged"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/outputs/conditions-of-generativity-mathematics.md",
+      "status": "unchanged"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/outputs/renewing-access-to-support-mathematics.md",
+      "status": "unchanged"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/outputs/shared-generative-direction-mathematics.md",
+      "status": "unchanged"
+    },
+    {
+      "path": "_process/research/2026-10-05-causal-foundations/outputs/formal-results.md",
+      "status": "unchanged"
+    },
+    {
+      "path": "_process/research/2026-10-05-concern-theory/START-HERE.md",
+      "status": "unchanged"
+    },
+    {
+      "path": "_process/research/2026-10-05-concern-theory/CLAIMS.md",
+      "status": "unchanged"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/START-HERE.md",
+      "status": "later reviewed source revision; earlier bytes preserved in recorded Git blob"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/CLAIMS.md",
+      "status": "later reviewed source revision; earlier bytes preserved in recorded Git blob"
+    },
+    {
+      "path": "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/outputs/combined-process-proof.md",
+      "status": "unchanged"
+    },
+    {
+      "path": "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/outputs/combined-process-certification.md",
+      "status": "unchanged"
+    },
+    {
+      "path": "sources/20-codex-theory-sessions-2026-10-05/scientific-principles/outputs/README.md",
+      "status": "unchanged"
+    },
+    {
+      "path": "sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md",
+      "status": "unchanged"
+    }
+  ],
+  "mutable_indexes": [
+    {
+      "path": "RESEARCH.md",
+      "status": "mutable navigation index; earlier manifest did not freeze a scientific result"
+    }
+  ],
+  "new_model_check_summary": {
+    "status": "PASS exact identities, classifications and independent numerical checks",
+    "constructed_baseline_comparisons": 192,
+    "all_comparisons_remain_negative_after_constructed_overflow_allowance": true,
+    "independently_recomputed_profile_probabilities": 32,
+    "maximum_independent_probability_difference": 4.042322032660195e-13,
+    "arithmetic_scope": "Independent float64 uniformization; Poisson weights and tail are numerical. Tolerance is not a proved roundoff bound. These checks do not upgrade results to rigorous intervals."
+  },
+  "artifact_sha256": {
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-REGULATION.md": "de69fe40bd6f693c0c99f6eb87fd062810d2b696eb6f8057be6dd6d036b6bccc",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-LAG.md": "26a145703d6c27ef868e238bddd468ef3295fda14ac52bced683fcfb3280e4ea",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-RESPONSE.md": "cfae9738b3a4ed571417cd879e8935dbda3db0f2252febb24291522322f4df97",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-REVIEW.md": "e850009e2da9aac3c4e28c9657f36aabc880714792c3692bd8499dcf3cf9e9db",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/CONCERN-SETTLEMENT-INTEGRATION.md": "52a066b78ade836b0e9cbd7d90c839ec94dc87bd1039491a130f84fc676e90a4",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md": "e6685e3af5f007dbcdba1d9a44d76a465f2ae0729ac174012f71035bba33c0aa",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/monitor-state.json": "0645cac1c93f0eca17c49474e26a8f95cc17b946384afdf05b38d5c79a4abd18",
+    "experiments/shared-renewal-capability/regulation/independent-check.json": "fa4b30e159597de7b18930199daeb1e953172a78eabadb82267af4bd4ab7ff71",
+    "experiments/shared-renewal-capability/regulation/results.json": "5c6221564684327c05484fe803069d19e2a8f4a0e12830785d83004ba387b87f",
+    "experiments/shared-renewal-capability/regulation/README.md": "1a2a8bac8a519a10a688491c157c8e2c9674d58c1010a3a03c465f11ff40234f",
+    "experiments/shared-renewal-capability/regulation/compare.py": "6b3163a619b28435cc016aefb14a92519bd459af27ee9fd9f380c73e5bf3c66f",
+    "experiments/shared-renewal-capability/regulation/independent_check.py": "4079be96a5f60afeca198f107e40849f8faabe09eebccd95c42485f8bc83858d",
+    "experiments/shared-renewal-capability/regulation/PROTOCOL.md": "d8ca147ed3890f26203ac9c0d03f6e05dbdf7010dcd926c836e1cc429bb34747",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md": "fbe3dbb2440f243f808c7ed0c98659ac2a7830e8da6cb86a30d5695e3eebcb54",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md": "1afccf177aeaa39af4c149e926264c1ee8a650a71ef3657e33094adde1b5a46f"
+  }
+}

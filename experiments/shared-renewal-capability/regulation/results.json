@@ -1,0 +1,5628 @@
+{
+  "protocol_sha256": "d8ca147ed3890f26203ac9c0d03f6e05dbdf7010dcd926c836e1cc429bb34747",
+  "implementation_sha256": "6b3163a619b28435cc016aefb14a92519bd459af27ee9fd9f380c73e5bf3c66f",
+  "arithmetic": "IEEE float64, scipy expm_multiply; not interval-certified",
+  "initial_state": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "arms": {
+    "absent": [
+      0,
+      0,
+      0
+    ],
+    "burden": [
+      1,
+      0,
+      0
+    ],
+    "buffer": [
+      1,
+      4,
+      0
+    ],
+    "inhibitor": [
+      1,
+      0,
+      4
+    ],
+    "responsive": [
+      1,
+      4,
+      4
+    ]
+  },
+  "networks": [
+    {
+      "capture": 4,
+      "arm": "absent",
+      "cap": 32,
+      "states": 1249,
+      "elapsed_seconds": 0.04999662499176338,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 1.2705351323257583e-32,
+          "mass_error": 4.440892098500626e-16,
+          "minimum_mass": 2.7576875281547967e-47,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9768507786915966,
+              "success_plus_overflow": 0.9768507786915966,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5974976587069925,
+              "success_plus_overflow": 0.5974976587069925,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.0964593665638309,
+              "success_plus_overflow": 0.0964593665638309,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.0625005760194908,
+              "success_plus_overflow": 0.0625005760194908,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.7341572054295888,
+              "success_plus_overflow": 0.7341572054295888,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.4096304309629547,
+              "success_plus_overflow": 0.4096304309629547,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.0964593665638309,
+              "success_plus_overflow": 0.0964593665638309,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.0625005760194908,
+              "success_plus_overflow": 0.0625005760194908,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 1.7453419657726706e-16,
+          "mass_error": 5.551115123125783e-16,
+          "minimum_mass": 3.5521567416072357e-47,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8986389393047133,
+              "success_plus_overflow": 0.8986389393047135,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.593521796055656,
+              "success_plus_overflow": 0.5935217960556562,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.44574360926233936,
+              "success_plus_overflow": 0.4457436092623395,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.35185466326004167,
+              "success_plus_overflow": 0.35185466326004183,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8786508552362629,
+              "success_plus_overflow": 0.8786508552362631,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.587800387926915,
+              "success_plus_overflow": 0.5878003879269152,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.44574360926233936,
+              "success_plus_overflow": 0.4457436092623395,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.35185466326004167,
+              "success_plus_overflow": 0.35185466326004183,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 2.0576496407071626e-10,
+          "mass_error": 4.440892098500626e-16,
+          "minimum_mass": 5.193650449484602e-52,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.6773528631911608,
+              "success_plus_overflow": 0.6773528633969258,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5078726568361018,
+              "success_plus_overflow": 0.5078726570418668,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.6111107573177049,
+              "success_plus_overflow": 0.6111107575234699,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.4979929424438066,
+              "success_plus_overflow": 0.49799294264957156,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.6757373212876168,
+              "success_plus_overflow": 0.6757373214933817,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.5078687297109226,
+              "success_plus_overflow": 0.5078687299166875,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.6111107573177049,
+              "success_plus_overflow": 0.6111107575234699,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.4979929424438066,
+              "success_plus_overflow": 0.49799294264957156,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        }
+      ]
+    },
+    {
+      "capture": 4,
+      "arm": "burden",
+      "cap": 32,
+      "states": 3116,
+      "elapsed_seconds": 0.09281624999130145,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 1.1249855747583676e-32,
+          "mass_error": 9.992007221626409e-16,
+          "minimum_mass": 1.484030586016612e-48,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9755060231981724,
+              "success_plus_overflow": 0.9755060231981724,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5764950008715023,
+              "success_plus_overflow": 0.5764950008715023,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09276915416501166,
+              "success_plus_overflow": 0.09276915416501166,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.05894683393522658,
+              "success_plus_overflow": 0.05894683393522658,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.7328124499361646,
+              "success_plus_overflow": 0.7328124499361646,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.38862777312746466,
+              "success_plus_overflow": 0.38862777312746466,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09276915416501166,
+              "success_plus_overflow": 0.09276915416501166,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.05894683393522658,
+              "success_plus_overflow": 0.05894683393522658,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.05123494906377671,
+          "intact_regulator_finite_success": 0.04741192770576019
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 9.906442285508762e-17,
+          "mass_error": 2.9976021664879227e-15,
+          "minimum_mass": 3.5521567416072293e-47,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.832337570904239,
+              "success_plus_overflow": 0.8323375709042391,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.4917706904880995,
+              "success_plus_overflow": 0.4917706904880996,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.35393997094163615,
+              "success_plus_overflow": 0.35393997094163626,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.25911528377048193,
+              "success_plus_overflow": 0.25911528377048204,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8123494868357887,
+              "success_plus_overflow": 0.8123494868357888,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.4860492823593585,
+              "success_plus_overflow": 0.4860492823593586,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.35393997094163615,
+              "success_plus_overflow": 0.35393997094163626,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.25911528377048193,
+              "success_plus_overflow": 0.25911528377048204,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.347996460035414,
+          "intact_regulator_finite_success": 0.24302794894186283
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 3.8046423091938725e-11,
+          "mass_error": 9.103828801926284e-15,
+          "minimum_mass": 5.193650449484546e-52,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.36801149830229285,
+              "success_plus_overflow": 0.36801149834033925,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.21903448614952462,
+              "success_plus_overflow": 0.21903448618757104,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.2926236227183823,
+              "success_plus_overflow": 0.2926236227564287,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.20423778169505624,
+              "success_plus_overflow": 0.20423778173310267,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.36639595639874895,
+              "success_plus_overflow": 0.36639595643679534,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.21903055902434537,
+              "success_plus_overflow": 0.2190305590623918,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.2926236227183823,
+              "success_plus_overflow": 0.2926236227564287,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.20423778169505624,
+              "success_plus_overflow": 0.20423778173310267,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.637611939356695,
+          "intact_regulator_finite_success": 0.25372551757216727
+        }
+      ]
+    },
+    {
+      "capture": 4,
+      "arm": "buffer",
+      "cap": 32,
+      "states": 4026,
+      "elapsed_seconds": 0.1257194170029834,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 1.1249855921404318e-32,
+          "mass_error": 8.881784197001252e-16,
+          "minimum_mass": 1.1573514857094356e-49,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9755013933763285,
+              "success_plus_overflow": 0.9755013933763285,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5734183260968901,
+              "success_plus_overflow": 0.5734183260968901,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09276431723727381,
+              "success_plus_overflow": 0.09276431723727381,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.058930292144895285,
+              "success_plus_overflow": 0.058930292144895285,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.7328078201143209,
+              "success_plus_overflow": 0.7328078201143209,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.38555109835285256,
+              "success_plus_overflow": 0.38555109835285256,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09276431723727381,
+              "success_plus_overflow": 0.09276431723727381,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.058930292144895285,
+              "success_plus_overflow": 0.058930292144895285,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.05123494906377675,
+          "intact_regulator_finite_success": 0.04741166863074487
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 9.906386012007717e-17,
+          "mass_error": 1.4432899320127035e-15,
+          "minimum_mass": 3.5521567416072293e-47,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8312421630053181,
+              "success_plus_overflow": 0.8312421630053182,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.4710536897068763,
+              "success_plus_overflow": 0.4710536897068764,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.35232478533955003,
+              "success_plus_overflow": 0.35232478533955014,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.2525101488153469,
+              "success_plus_overflow": 0.252510148815347,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8112540789368679,
+              "success_plus_overflow": 0.811254078936868,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.46533228157813533,
+              "success_plus_overflow": 0.46533228157813544,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.35232478533955003,
+              "success_plus_overflow": 0.35232478533955014,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.2525101488153469,
+              "success_plus_overflow": 0.252510148815347,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.34799646003541457,
+          "intact_regulator_finite_success": 0.24214786984040373
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 3.8030367851988756e-11,
+          "mass_error": 3.6637359812630166e-15,
+          "minimum_mass": 5.193650449484582e-52,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3700496986692278,
+              "success_plus_overflow": 0.3700496987072582,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.20945957780878735,
+              "success_plus_overflow": 0.2094595778468177,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.29427376971251606,
+              "success_plus_overflow": 0.2942737697505464,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.19582905643315288,
+              "success_plus_overflow": 0.19582905647118323,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.36843415676568375,
+              "success_plus_overflow": 0.3684341568037141,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.20945565068360814,
+              "success_plus_overflow": 0.2094556507216385,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.29427376971251606,
+              "success_plus_overflow": 0.2942737697505464,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.19582905643315288,
+              "success_plus_overflow": 0.19582905647118323,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.6376119393567143,
+          "intact_regulator_finite_success": 0.24817219626884673
+        }
+      ]
+    },
+    {
+      "capture": 4,
+      "arm": "inhibitor",
+      "cap": 32,
+      "states": 3438,
+      "elapsed_seconds": 0.10216833400772884,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 1.1249855775083231e-32,
+          "mass_error": 1.1102230246251565e-16,
+          "minimum_mass": 1.4840305875881925e-48,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9755021442531032,
+              "success_plus_overflow": 0.9755021442531032,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5765547827031096,
+              "success_plus_overflow": 0.5765547827031096,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09276534579009801,
+              "success_plus_overflow": 0.09276534579009801,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.058945381361677304,
+              "success_plus_overflow": 0.058945381361677304,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.7328085709910952,
+              "success_plus_overflow": 0.7328085709910952,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.3886875549590719,
+              "success_plus_overflow": 0.3886875549590719,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09276534579009801,
+              "success_plus_overflow": 0.09276534579009801,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.058945381361677304,
+              "success_plus_overflow": 0.058945381361677304,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.051234949063776764,
+          "intact_regulator_finite_success": 0.04741185707874247
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 9.906442226668641e-17,
+          "mass_error": 5.551115123125783e-16,
+          "minimum_mass": 3.5521567416072386e-47,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8303500841937487,
+              "success_plus_overflow": 0.8303500841937488,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.4937384724607203,
+              "success_plus_overflow": 0.4937384724607204,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.35204776463173604,
+              "success_plus_overflow": 0.35204776463173615,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.25822731118426606,
+              "success_plus_overflow": 0.2582273111842662,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8103620001252982,
+              "success_plus_overflow": 0.8103620001252984,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.48801706433197933,
+              "success_plus_overflow": 0.48801706433197944,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.35204776463173604,
+              "success_plus_overflow": 0.35204776463173615,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.25822731118426606,
+              "success_plus_overflow": 0.2582273111842662,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.3479964600354149,
+          "intact_regulator_finite_success": 0.2427940763196461
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 3.8041197948681946e-11,
+          "mass_error": 8.881784197001252e-16,
+          "minimum_mass": 5.193650449484612e-52,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3623887053592408,
+              "success_plus_overflow": 0.36238870539728196,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.2167578600968437,
+              "success_plus_overflow": 0.2167578601348849,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.2873654067589171,
+              "success_plus_overflow": 0.28736540679695827,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.2016009321780794,
+              "success_plus_overflow": 0.2016009322161206,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.3607731634556968,
+              "success_plus_overflow": 0.360773163493738,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.21675393297166454,
+              "success_plus_overflow": 0.21675393300970575,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.2873654067589171,
+              "success_plus_overflow": 0.28736540679695827,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.2016009321780794,
+              "success_plus_overflow": 0.2016009322161206,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.6376119393567063,
+          "intact_regulator_finite_success": 0.2512459899024292
+        }
+      ]
+    },
+    {
+      "capture": 4,
+      "arm": "responsive",
+      "cap": 32,
+      "states": 4408,
+      "elapsed_seconds": 0.14356474997475743,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 1.1249855908022848e-32,
+          "mass_error": 8.881784197001252e-16,
+          "minimum_mass": 1.1771621121143405e-49,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9754985328389449,
+              "success_plus_overflow": 0.9754985328389449,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5739330877527073,
+              "success_plus_overflow": 0.5739330877527073,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09276152401568134,
+              "success_plus_overflow": 0.09276152401568134,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.058930314553367696,
+              "success_plus_overflow": 0.058930314553367696,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.7328049595769371,
+              "success_plus_overflow": 0.7328049595769371,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.3860658600086699,
+              "success_plus_overflow": 0.3860658600086699,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09276152401568134,
+              "success_plus_overflow": 0.09276152401568134,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.058930314553367696,
+              "success_plus_overflow": 0.058930314553367696,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.05123494906377671,
+          "intact_regulator_finite_success": 0.047411629259316336
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 9.906387724048375e-17,
+          "mass_error": 5.551115123125783e-15,
+          "minimum_mass": 3.552156741607219e-47,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8302266107081522,
+              "success_plus_overflow": 0.8302266107081523,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.47628695943551325,
+              "success_plus_overflow": 0.47628695943551336,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.351394956804168,
+              "success_plus_overflow": 0.3513949568041681,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.2528417934369247,
+              "success_plus_overflow": 0.2528417934369248,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8102385266397021,
+              "success_plus_overflow": 0.8102385266397022,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.4705655513067723,
+              "success_plus_overflow": 0.4705655513067724,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.351394956804168,
+              "success_plus_overflow": 0.3513949568041681,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.2528417934369247,
+              "success_plus_overflow": 0.2528417934369248,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.3479964600354132,
+          "intact_regulator_finite_success": 0.24208961497841794
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 3.8029683399559754e-11,
+          "mass_error": 1.7319479184152442e-14,
+          "minimum_mass": 5.193650449484538e-52,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3672050371967474,
+              "success_plus_overflow": 0.3672050372347771,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.20907595337212537,
+              "success_plus_overflow": 0.20907595341015506,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.29163047821791155,
+              "success_plus_overflow": 0.29163047825594124,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.1951158994086032,
+              "success_plus_overflow": 0.19511589944663288,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.36558949529320334,
+              "success_plus_overflow": 0.365589495331233,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.20907202624694618,
+              "success_plus_overflow": 0.20907202628497587,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.29163047821791155,
+              "success_plus_overflow": 0.29163047825594124,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.1951158994086032,
+              "success_plus_overflow": 0.19511589944663288,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.6376119393567062,
+          "intact_regulator_finite_success": 0.2472605156970466
+        }
+      ]
+    },
+    {
+      "capture": 8,
+      "arm": "absent",
+      "cap": 32,
+      "states": 1249,
+      "elapsed_seconds": 0.046243834018241614,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 2.3629938457870414e-23,
+          "mass_error": 2.220446049250313e-16,
+          "minimum_mass": 2.402151910737583e-38,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.979276043327387,
+              "success_plus_overflow": 0.979276043327387,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7704458037867723,
+              "success_plus_overflow": 0.7704458037867723,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.10759213495503248,
+              "success_plus_overflow": 0.10759213495503248,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.09165312875689244,
+              "success_plus_overflow": 0.09165312875689244,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8065923786126777,
+              "success_plus_overflow": 0.8065923786126777,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6237837129770887,
+              "success_plus_overflow": 0.6237837129770887,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.10759213495503248,
+              "success_plus_overflow": 0.10759213495503248,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.09165312875689244,
+              "success_plus_overflow": 0.09165312875689244,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 4.961799206324626e-09,
+          "mass_error": 1.3322676295501878e-15,
+          "minimum_mass": 3.8736272639171174e-39,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9334952478821643,
+              "success_plus_overflow": 0.9334952528439635,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7657080756350073,
+              "success_plus_overflow": 0.7657080805968065,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.5150715978798909,
+              "success_plus_overflow": 0.5150716028416901,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.47710716328812136,
+              "success_plus_overflow": 0.47710716824992055,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.9261679919289476,
+              "success_plus_overflow": 0.9261679968907468,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.7647530791163548,
+              "success_plus_overflow": 0.764753084078154,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.5150715978798909,
+              "success_plus_overflow": 0.5150716028416901,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.47710716328812136,
+              "success_plus_overflow": 0.47710716824992055,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 0.00017206185616039092,
+          "mass_error": 4.3298697960381105e-15,
+          "minimum_mass": 9.137955306626035e-47,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8069387557174124,
+              "success_plus_overflow": 0.8071108175735727,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7043770599394588,
+              "success_plus_overflow": 0.7045491217956191,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.749462484043873,
+              "success_plus_overflow": 0.7496345459000333,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.6923713937202047,
+              "success_plus_overflow": 0.6925434555763651,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8060887312882541,
+              "success_plus_overflow": 0.8062607931444145,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.7043770566766321,
+              "success_plus_overflow": 0.7045491185327925,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.749462484043873,
+              "success_plus_overflow": 0.7496345459000333,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.6923713937202047,
+              "success_plus_overflow": 0.6925434555763651,
+              "numerical_alpha_half": "reliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        }
+      ]
+    },
+    {
+      "capture": 8,
+      "arm": "burden",
+      "cap": 32,
+      "states": 3116,
+      "elapsed_seconds": 0.09244637499796227,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 2.0527816318488553e-23,
+          "mass_error": 9.992007221626409e-16,
+          "minimum_mass": 1.3569850506740655e-38,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.976620657229714,
+              "success_plus_overflow": 0.976620657229714,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7485024361645238,
+              "success_plus_overflow": 0.7485024361645238,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09994715663397799,
+              "success_plus_overflow": 0.09994715663397799,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.08402553129893285,
+              "success_plus_overflow": 0.08402553129893285,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8039369925150046,
+              "success_plus_overflow": 0.8039369925150046,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6018403453548402,
+              "success_plus_overflow": 0.6018403453548402,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09994715663397799,
+              "success_plus_overflow": 0.09994715663397799,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.08402553129893285,
+              "success_plus_overflow": 0.08402553129893285,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.10606964849251659,
+          "intact_regulator_finite_success": 0.09817246846011381
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 2.2501677752605793e-09,
+          "mass_error": 4.3298697960381105e-15,
+          "minimum_mass": 3.873627263917103e-39,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8225289971472869,
+              "success_plus_overflow": 0.8225289993974547,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.6221902862963691,
+              "success_plus_overflow": 0.6221902885465369,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.35196657718369373,
+              "success_plus_overflow": 0.3519665794338615,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.3113627512577178,
+              "success_plus_overflow": 0.31136275350788556,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8152017411940701,
+              "success_plus_overflow": 0.8152017434442379,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6212352897777169,
+              "success_plus_overflow": 0.6212352920278847,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.35196657718369373,
+              "success_plus_overflow": 0.3519665794338615,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.3113627512577178,
+              "success_plus_overflow": 0.31136275350788556,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.5929302688432622,
+          "intact_regulator_finite_success": 0.4420460290309533
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.2721997540149414e-05,
+          "mass_error": 1.4210854715202004e-14,
+          "minimum_mass": 9.137955306625923e-47,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3134693393921698,
+              "success_plus_overflow": 0.31348206138970997,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.22233321949392956,
+              "success_plus_overflow": 0.22234594149146972,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.24021936128311805,
+              "success_plus_overflow": 0.2402320832806582,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.19947409634789326,
+              "success_plus_overflow": 0.19948681834543341,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.3126193149630113,
+              "success_plus_overflow": 0.3126320369605515,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.2223332162311029,
+              "success_plus_overflow": 0.22234593822864304,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.24021936128311805,
+              "success_plus_overflow": 0.2402320832806582,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.19947409634789326,
+              "success_plus_overflow": 0.19948681834543341,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.8172071031646386,
+          "intact_regulator_finite_success": 0.3771182115078008
+        }
+      ]
+    },
+    {
+      "capture": 8,
+      "arm": "buffer",
+      "cap": 32,
+      "states": 4026,
+      "elapsed_seconds": 0.12566858401987702,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 2.0527816918011813e-23,
+          "mass_error": 1.1102230246251565e-15,
+          "minimum_mass": 1.654685219246681e-39,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9766060195138395,
+              "success_plus_overflow": 0.9766060195138395,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7429316124921,
+              "success_plus_overflow": 0.7429316124921,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09993071456238649,
+              "success_plus_overflow": 0.09993071456238649,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.08396975500306057,
+              "success_plus_overflow": 0.08396975500306057,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8039223547991303,
+              "success_plus_overflow": 0.8039223547991303,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.5962695216824166,
+              "success_plus_overflow": 0.5962695216824166,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09993071456238649,
+              "success_plus_overflow": 0.09993071456238649,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.08396975500306057,
+              "success_plus_overflow": 0.08396975500306057,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.10606964849251656,
+          "intact_regulator_finite_success": 0.09817062596493766
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 2.2501066639480725e-09,
+          "mass_error": 4.773959005888173e-15,
+          "minimum_mass": 3.873627263917108e-39,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8230988084428796,
+              "success_plus_overflow": 0.8230988106929863,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.6038813232593929,
+              "success_plus_overflow": 0.6038813255094996,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.35096854104228437,
+              "success_plus_overflow": 0.350968543292391,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.30575102639869123,
+              "success_plus_overflow": 0.3057510286487979,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.815771552489663,
+              "success_plus_overflow": 0.8157715547397697,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6029263267407408,
+              "success_plus_overflow": 0.6029263289908474,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.35096854104228437,
+              "success_plus_overflow": 0.350968543292391,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.30575102639869123,
+              "success_plus_overflow": 0.3057510286487979,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.5929302688433229,
+          "intact_regulator_finite_success": 0.4393965232090893
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.2760875681437632e-05,
+          "mass_error": 1.3877787807814457e-14,
+          "minimum_mass": 9.137955306625952e-47,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3209560427055562,
+              "success_plus_overflow": 0.32096880358123764,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.22285257445062315,
+              "success_plus_overflow": 0.2228653353263046,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.24732532367470814,
+              "success_plus_overflow": 0.24733808455038958,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.20115303932411768,
+              "success_plus_overflow": 0.20116580019979913,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.3201060182763978,
+              "success_plus_overflow": 0.3201187791520792,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.22285257118779647,
+              "success_plus_overflow": 0.22286533206347792,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.24732532367470814,
+              "success_plus_overflow": 0.24733808455038958,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.20115303932411768,
+              "success_plus_overflow": 0.20116580019979913,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.8172070642864977,
+          "intact_regulator_finite_success": 0.3725477826353052
+        }
+      ]
+    },
+    {
+      "capture": 8,
+      "arm": "inhibitor",
+      "cap": 32,
+      "states": 3438,
+      "elapsed_seconds": 0.10173404199304059,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 2.0527816296347923e-23,
+          "mass_error": 9.992007221626409e-16,
+          "minimum_mass": 1.3569850463108063e-38,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9766061344592257,
+              "success_plus_overflow": 0.9766061344592257,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7486472323914016,
+              "success_plus_overflow": 0.7486472323914016,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09993273685675495,
+              "success_plus_overflow": 0.09993273685675495,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.08401676199153878,
+              "success_plus_overflow": 0.08401676199153878,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8039224697445166,
+              "success_plus_overflow": 0.8039224697445166,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6019851415817182,
+              "success_plus_overflow": 0.6019851415817182,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09993273685675495,
+              "success_plus_overflow": 0.09993273685675495,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.08401676199153878,
+              "success_plus_overflow": 0.08401676199153878,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.10606964849251661,
+          "intact_regulator_finite_success": 0.09817193501646551
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 2.2501675241104313e-09,
+          "mass_error": 3.3306690738754696e-15,
+          "minimum_mass": 3.8736272639171056e-39,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8179758302719708,
+              "success_plus_overflow": 0.8179758325221383,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.6231614893604298,
+              "success_plus_overflow": 0.6231614916105973,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.3473748795812876,
+              "success_plus_overflow": 0.3473748818314551,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.3080267435966244,
+              "success_plus_overflow": 0.3080267458467919,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.810648574318754,
+              "success_plus_overflow": 0.8106485765689215,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6222064928417774,
+              "success_plus_overflow": 0.6222064950919449,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.3473748795812876,
+              "success_plus_overflow": 0.3473748818314551,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.3080267435966244,
+              "success_plus_overflow": 0.3080267458467919,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.592930268843263,
+          "intact_regulator_finite_success": 0.44086074942968584
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.2708759522789008e-05,
+          "mass_error": 8.548717289613705e-15,
+          "minimum_mass": 9.13795530662598e-47,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3042473065002451,
+              "success_plus_overflow": 0.3042600152597679,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.21719900006950538,
+              "success_plus_overflow": 0.21721170882902816,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.23148511652902978,
+              "success_plus_overflow": 0.23149782528855256,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.19362747497533705,
+              "success_plus_overflow": 0.19364018373485983,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.3033972820710867,
+              "success_plus_overflow": 0.3034099908306095,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.21719899680667865,
+              "success_plus_overflow": 0.21721170556620142,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.23148511652902978,
+              "success_plus_overflow": 0.23149782528855256,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.19362747497533705,
+              "success_plus_overflow": 0.19364018373485983,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.8172071164026605,
+          "intact_regulator_finite_success": 0.36874076420290586
+        }
+      ]
+    },
+    {
+      "capture": 8,
+      "arm": "responsive",
+      "cap": 32,
+      "states": 4408,
+      "elapsed_seconds": 0.13711037498433143,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 2.052781692137616e-23,
+          "mass_error": 3.3306690738754696e-16,
+          "minimum_mass": 1.6827120316285615e-39,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9765955344686735,
+              "success_plus_overflow": 0.9765955344686735,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7438865194354329,
+              "success_plus_overflow": 0.7438865194354329,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09992040028429325,
+              "success_plus_overflow": 0.09992040028429325,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.08396765400910444,
+              "success_plus_overflow": 0.08396765400910444,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8039118697539641,
+              "success_plus_overflow": 0.8039118697539641,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.5972244286257492,
+              "success_plus_overflow": 0.5972244286257492,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09992040028429325,
+              "success_plus_overflow": 0.09992040028429325,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.08396765400910444,
+              "success_plus_overflow": 0.08396765400910444,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.10606964849251665,
+          "intact_regulator_finite_success": 0.09817033347530917
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 2.250108867172637e-09,
+          "mass_error": 7.771561172376096e-16,
+          "minimum_mass": 3.87362726391712e-39,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8206459774166301,
+              "success_plus_overflow": 0.820645979666739,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.6089837301275483,
+              "success_plus_overflow": 0.6089837323776571,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.348631876468863,
+              "success_plus_overflow": 0.3486318787189719,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.30504176779760267,
+              "success_plus_overflow": 0.30504177004771155,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8133187214634134,
+              "success_plus_overflow": 0.8133187237135223,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.608028733608896,
+              "success_plus_overflow": 0.6080287358590049,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.348631876468863,
+              "success_plus_overflow": 0.3486318787189719,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.30504176779760267,
+              "success_plus_overflow": 0.30504177004771155,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.5929302688433232,
+          "intact_regulator_finite_success": 0.4390393851365605
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.2754605804815223e-05,
+          "mass_error": 1.887379141862766e-15,
+          "minimum_mass": 9.137955306625987e-47,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3159528418705701,
+              "success_plus_overflow": 0.3159655964763749,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.22109341257080561,
+              "success_plus_overflow": 0.22110616717661044,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.24261466111495647,
+              "success_plus_overflow": 0.2426274157207613,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.1987792706340671,
+              "success_plus_overflow": 0.19879202523987194,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.3151028174414117,
+              "success_plus_overflow": 0.3151155720472165,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.22109340930797894,
+              "success_plus_overflow": 0.22110616391378377,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.24261466111495647,
+              "success_plus_overflow": 0.2426274157207613,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.1987792706340671,
+              "success_plus_overflow": 0.19879202523987194,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.8172070705563841,
+          "intact_regulator_finite_success": 0.3691992141320316
+        }
+      ]
+    },
+    {
+      "capture": 4,
+      "arm": "absent",
+      "cap": 48,
+      "states": 1857,
+      "elapsed_seconds": 0.07697479199850932,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 8.67834859151756e-53,
+          "mass_error": 1.5543122344752192e-15,
+          "minimum_mass": 1.5460578458931475e-77,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9768507786915986,
+              "success_plus_overflow": 0.9768507786915986,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5974976587069936,
+              "success_plus_overflow": 0.5974976587069936,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09645936656383113,
+              "success_plus_overflow": 0.09645936656383113,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.06250057601949092,
+              "success_plus_overflow": 0.06250057601949092,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.7341572054295904,
+              "success_plus_overflow": 0.7341572054295904,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.4096304309629555,
+              "success_plus_overflow": 0.4096304309629555,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09645936656383113,
+              "success_plus_overflow": 0.09645936656383113,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.06250057601949092,
+              "success_plus_overflow": 0.06250057601949092,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 4.373594312603761e-29,
+          "mass_error": 5.995204332975845e-15,
+          "minimum_mass": 8.82986434122082e-76,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8986389393047195,
+              "success_plus_overflow": 0.8986389393047195,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5935217960556599,
+              "success_plus_overflow": 0.5935217960556599,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.44574360926234247,
+              "success_plus_overflow": 0.44574360926234247,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.351854663260044,
+              "success_plus_overflow": 0.351854663260044,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8786508552362688,
+              "success_plus_overflow": 0.8786508552362688,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.5878003879269188,
+              "success_plus_overflow": 0.5878003879269188,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.44574360926234247,
+              "success_plus_overflow": 0.44574360926234247,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.351854663260044,
+              "success_plus_overflow": 0.351854663260044,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 5.62125241214398e-20,
+          "mass_error": 1.687538997430238e-14,
+          "minimum_mass": 1.112970147522749e-80,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.6773528633968586,
+              "success_plus_overflow": 0.6773528633968586,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5078726570417963,
+              "success_plus_overflow": 0.5078726570417963,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.6111107575234014,
+              "success_plus_overflow": 0.6111107575234014,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.49799294264950095,
+              "success_plus_overflow": 0.49799294264950095,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.6757373214933147,
+              "success_plus_overflow": 0.6757373214933147,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.507868729916617,
+              "success_plus_overflow": 0.507868729916617,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.6111107575234014,
+              "success_plus_overflow": 0.6111107575234014,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.49799294264950095,
+              "success_plus_overflow": 0.49799294264950095,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        }
+      ]
+    },
+    {
+      "capture": 4,
+      "arm": "burden",
+      "cap": 48,
+      "states": 4636,
+      "elapsed_seconds": 0.16052312502870336,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 7.674759304577482e-53,
+          "mass_error": 1.7763568394002505e-15,
+          "minimum_mass": 1.5460578458931447e-77,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9755060231981749,
+              "success_plus_overflow": 0.9755060231981749,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5764950008715037,
+              "success_plus_overflow": 0.5764950008715037,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09276915416501187,
+              "success_plus_overflow": 0.09276915416501187,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.05894683393522672,
+              "success_plus_overflow": 0.05894683393522672,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.7328124499361665,
+              "success_plus_overflow": 0.7328124499361665,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.38862777312746577,
+              "success_plus_overflow": 0.38862777312746577,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09276915416501187,
+              "success_plus_overflow": 0.09276915416501187,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.05894683393522672,
+              "success_plus_overflow": 0.05894683393522672,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.05123494906377684,
+          "intact_regulator_finite_success": 0.04741192770576031
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 2.778593784537655e-29,
+          "mass_error": 5.773159728050814e-15,
+          "minimum_mass": 8.829864341220801e-76,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8323375709042463,
+              "success_plus_overflow": 0.8323375709042463,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.49177069048810385,
+              "success_plus_overflow": 0.49177069048810385,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.35393997094163937,
+              "success_plus_overflow": 0.35393997094163937,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.25911528377048426,
+              "success_plus_overflow": 0.25911528377048426,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8123494868357959,
+              "success_plus_overflow": 0.8123494868357959,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.48604928235936273,
+              "success_plus_overflow": 0.48604928235936273,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.35393997094163937,
+              "success_plus_overflow": 0.35393997094163937,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.25911528377048426,
+              "success_plus_overflow": 0.25911528377048426,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.34799646003541707,
+          "intact_regulator_finite_success": 0.2430279489418649
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.31021601734295e-20,
+          "mass_error": 1.5765166949677223e-14,
+          "minimum_mass": 1.1129701475227513e-80,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3680114983378633,
+              "success_plus_overflow": 0.3680114983378633,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.21903448618509128,
+              "success_plus_overflow": 0.21903448618509128,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.2926236227539509,
+              "success_plus_overflow": 0.2926236227539509,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.2042377817306226,
+              "success_plus_overflow": 0.2042377817306226,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.3663959564343193,
+              "success_plus_overflow": 0.3663959564343193,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.21903055905991203,
+              "success_plus_overflow": 0.21903055905991203,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.2926236227539509,
+              "success_plus_overflow": 0.2926236227539509,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.2042377817306226,
+              "success_plus_overflow": 0.2042377817306226,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.6376119393805572,
+          "intact_regulator_finite_success": 0.2537255175921138
+        }
+      ]
+    },
+    {
+      "capture": 4,
+      "arm": "buffer",
+      "cap": 48,
+      "states": 6010,
+      "elapsed_seconds": 0.2266404579859227,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 7.674759487946081e-53,
+          "mass_error": 3.552713678800501e-15,
+          "minimum_mass": 1.5460578458931387e-77,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9755013933763259,
+              "success_plus_overflow": 0.9755013933763259,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5734183260968887,
+              "success_plus_overflow": 0.5734183260968887,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.0927643172372735,
+              "success_plus_overflow": 0.0927643172372735,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.0589302921448951,
+              "success_plus_overflow": 0.0589302921448951,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.7328078201143187,
+              "success_plus_overflow": 0.7328078201143187,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.38555109835285134,
+              "success_plus_overflow": 0.38555109835285134,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.0927643172372735,
+              "success_plus_overflow": 0.0927643172372735,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.0589302921448951,
+              "success_plus_overflow": 0.0589302921448951,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.051234949063776576,
+          "intact_regulator_finite_success": 0.04741166863074472
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 2.7785893210683267e-29,
+          "mass_error": 1.432187701766452e-14,
+          "minimum_mass": 8.829864341220634e-76,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8312421630053081,
+              "success_plus_overflow": 0.8312421630053081,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.4710536897068706,
+              "success_plus_overflow": 0.4710536897068706,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.3523247853395458,
+              "success_plus_overflow": 0.3523247853395458,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.2525101488153439,
+              "success_plus_overflow": 0.2525101488153439,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.811254078936858,
+              "success_plus_overflow": 0.811254078936858,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.4653322815781296,
+              "success_plus_overflow": 0.4653322815781296,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.3523247853395458,
+              "success_plus_overflow": 0.3523247853395458,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.2525101488153439,
+              "success_plus_overflow": 0.2525101488153439,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.34799646003541007,
+          "intact_regulator_finite_success": 0.24214786984040068
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.3097385878843132e-20,
+          "mass_error": 4.3298697960381105e-14,
+          "minimum_mass": 1.1129701475226927e-80,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3700496987047694,
+              "success_plus_overflow": 0.3700496987047694,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.20945957784433464,
+              "success_plus_overflow": 0.20945957784433464,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.29427376974806063,
+              "success_plus_overflow": 0.29427376974806063,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.19582905646870072,
+              "success_plus_overflow": 0.19582905646870072,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.36843415680122554,
+              "success_plus_overflow": 0.36843415680122554,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.20945565071915542,
+              "success_plus_overflow": 0.20945565071915542,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.29427376974806063,
+              "success_plus_overflow": 0.29427376974806063,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.19582905646870072,
+              "success_plus_overflow": 0.19582905646870072,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.6376119393805199,
+          "intact_regulator_finite_success": 0.2481721962887602
+        }
+      ]
+    },
+    {
+      "capture": 4,
+      "arm": "inhibitor",
+      "cap": 48,
+      "states": 5118,
+      "elapsed_seconds": 0.18230487499386072,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 7.674759264997098e-53,
+          "mass_error": 1.1102230246251565e-16,
+          "minimum_mass": 1.54605784589315e-77,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9755021442531032,
+              "success_plus_overflow": 0.9755021442531032,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5765547827031097,
+              "success_plus_overflow": 0.5765547827031097,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09276534579009807,
+              "success_plus_overflow": 0.09276534579009807,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.058945381361677325,
+              "success_plus_overflow": 0.058945381361677325,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.7328085709910955,
+              "success_plus_overflow": 0.7328085709910955,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.38868755495907203,
+              "success_plus_overflow": 0.38868755495907203,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09276534579009807,
+              "success_plus_overflow": 0.09276534579009807,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.058945381361677325,
+              "success_plus_overflow": 0.058945381361677325,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.0512349490637768,
+          "intact_regulator_finite_success": 0.04741185707874251
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 2.7785937829131396e-29,
+          "mass_error": 6.661338147750939e-16,
+          "minimum_mass": 8.82986434122076e-76,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8303500841937485,
+              "success_plus_overflow": 0.8303500841937485,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.49373847246072045,
+              "success_plus_overflow": 0.49373847246072045,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.35204776463173615,
+              "success_plus_overflow": 0.35204776463173615,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.2582273111842661,
+              "success_plus_overflow": 0.2582273111842661,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8103620001252981,
+              "success_plus_overflow": 0.8103620001252981,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.4880170643319796,
+              "success_plus_overflow": 0.4880170643319796,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.35204776463173615,
+              "success_plus_overflow": 0.35204776463173615,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.2582273111842661,
+              "success_plus_overflow": 0.2582273111842661,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.347996460035415,
+          "intact_regulator_finite_success": 0.24279407631964614
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.3101585761955427e-20,
+          "mass_error": 1.7763568394002505e-15,
+          "minimum_mass": 1.1129701475227266e-80,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3623887053947974,
+              "success_plus_overflow": 0.3623887053947974,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.21675786013240012,
+              "success_plus_overflow": 0.21675786013240012,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.2873654067944737,
+              "success_plus_overflow": 0.2873654067944737,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.2016009322136358,
+              "success_plus_overflow": 0.2016009322136358,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.3607731634912534,
+              "success_plus_overflow": 0.3607731634912534,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.2167539330072209,
+              "success_plus_overflow": 0.2167539330072209,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.2873654067944737,
+              "success_plus_overflow": 0.2873654067944737,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.2016009322136358,
+              "success_plus_overflow": 0.2016009322136358,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.637611939380548,
+          "intact_regulator_finite_success": 0.251245989922368
+        }
+      ]
+    },
+    {
+      "capture": 4,
+      "arm": "responsive",
+      "cap": 48,
+      "states": 6584,
+      "elapsed_seconds": 0.25068533298326656,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 7.674759465950754e-53,
+          "mass_error": 9.992007221626409e-16,
+          "minimum_mass": 1.5460578458931412e-77,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9754985328389449,
+              "success_plus_overflow": 0.9754985328389449,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.5739330877527075,
+              "success_plus_overflow": 0.5739330877527075,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09276152401568137,
+              "success_plus_overflow": 0.09276152401568137,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.05893031455336772,
+              "success_plus_overflow": 0.05893031455336772,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.7328049595769373,
+              "success_plus_overflow": 0.7328049595769373,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.3860658600086699,
+              "success_plus_overflow": 0.3860658600086699,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09276152401568137,
+              "success_plus_overflow": 0.09276152401568137,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.05893031455336772,
+              "success_plus_overflow": 0.05893031455336772,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.051234949063776715,
+          "intact_regulator_finite_success": 0.04741162925931636
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 2.7785894255295573e-29,
+          "mass_error": 2.6645352591003757e-15,
+          "minimum_mass": 8.829864341220731e-76,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8302266107081546,
+              "success_plus_overflow": 0.8302266107081546,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.4762869594355146,
+              "success_plus_overflow": 0.4762869594355146,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.35139495680416905,
+              "success_plus_overflow": 0.35139495680416905,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.2528417934369254,
+              "success_plus_overflow": 0.2528417934369254,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8102385266397041,
+              "success_plus_overflow": 0.8102385266397041,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.47056555130677363,
+              "success_plus_overflow": 0.47056555130677363,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.35139495680416905,
+              "success_plus_overflow": 0.35139495680416905,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.2528417934369254,
+              "success_plus_overflow": 0.2528417934369254,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.3479964600354142,
+          "intact_regulator_finite_success": 0.24208961497841863
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.3097492320185303e-20,
+          "mass_error": 4.884981308350689e-15,
+          "minimum_mass": 1.1129701475227202e-80,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.36720503723230724,
+              "success_plus_overflow": 0.36720503723230724,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.20907595340768273,
+              "success_plus_overflow": 0.20907595340768273,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.2916304782534705,
+              "success_plus_overflow": 0.2916304782534705,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.19511589944416033,
+              "success_plus_overflow": 0.19511589944416033,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.3655894953287633,
+              "success_plus_overflow": 0.3655894953287633,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.20907202628250354,
+              "success_plus_overflow": 0.20907202628250354,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.2916304782534705,
+              "success_plus_overflow": 0.2916304782534705,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.19511589944416033,
+              "success_plus_overflow": 0.19511589944416033,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.6376119393805441,
+          "intact_regulator_finite_success": 0.24726051571697286
+        }
+      ]
+    },
+    {
+      "capture": 8,
+      "arm": "absent",
+      "cap": 48,
+      "states": 1857,
+      "elapsed_seconds": 0.08394783397670835,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 9.582949932695965e-39,
+          "mass_error": 2.886579864025407e-15,
+          "minimum_mass": 8.77531608774686e-64,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9792760433273899,
+              "success_plus_overflow": 0.9792760433273899,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7704458037867745,
+              "success_plus_overflow": 0.7704458037867745,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.10759213495503281,
+              "success_plus_overflow": 0.10759213495503281,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.09165312875689269,
+              "success_plus_overflow": 0.09165312875689269,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8065923786126801,
+              "success_plus_overflow": 0.8065923786126801,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6237837129770907,
+              "success_plus_overflow": 0.6237837129770907,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.10759213495503281,
+              "success_plus_overflow": 0.10759213495503281,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.09165312875689269,
+              "success_plus_overflow": 0.09165312875689269,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 5.591497755587564e-17,
+          "mass_error": 1.1102230246251565e-14,
+          "minimum_mass": 5.897801975729542e-63,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9334952528437274,
+              "success_plus_overflow": 0.9334952528437275,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7657080805965684,
+              "success_plus_overflow": 0.7657080805965685,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.5150716028414487,
+              "success_plus_overflow": 0.5150716028414488,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.47710716824967864,
+              "success_plus_overflow": 0.4771071682496787,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.9261679968905105,
+              "success_plus_overflow": 0.9261679968905107,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.764753084077916,
+              "success_plus_overflow": 0.7647530840779161,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.5150716028414487,
+              "success_plus_overflow": 0.5150716028414488,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.47710716824967864,
+              "success_plus_overflow": 0.4771071682496787,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.6455474881892323e-09,
+          "mass_error": 3.1530333899354446e-14,
+          "minimum_mass": 1.2797094762215298e-70,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8071107453380522,
+              "success_plus_overflow": 0.8071107469835996,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7045490495362261,
+              "success_plus_overflow": 0.7045490511817736,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.7496344736643863,
+              "success_plus_overflow": 0.7496344753099338,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.6925433833168474,
+              "success_plus_overflow": 0.6925433849623949,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8062607209088936,
+              "success_plus_overflow": 0.806260722554441,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.7045490462733993,
+              "success_plus_overflow": 0.7045490479189468,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.7496344736643863,
+              "success_plus_overflow": 0.7496344753099338,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.6925433833168474,
+              "success_plus_overflow": 0.6925433849623949,
+              "numerical_alpha_half": "reliable"
+            }
+          ],
+          "formation_finite_success": 0.0,
+          "intact_regulator_finite_success": 0.0
+        }
+      ]
+    },
+    {
+      "capture": 8,
+      "arm": "burden",
+      "cap": 48,
+      "states": 4636,
+      "elapsed_seconds": 0.16299070901004598,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 8.382662819162151e-39,
+          "mass_error": 4.440892098500626e-16,
+          "minimum_mass": 8.775316087746842e-64,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9766206572297154,
+              "success_plus_overflow": 0.9766206572297154,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.748502436164525,
+              "success_plus_overflow": 0.748502436164525,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09994715663397813,
+              "success_plus_overflow": 0.09994715663397813,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.08402553129893299,
+              "success_plus_overflow": 0.08402553129893299,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.803936992515006,
+              "success_plus_overflow": 0.803936992515006,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6018403453548412,
+              "success_plus_overflow": 0.6018403453548412,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09994715663397813,
+              "success_plus_overflow": 0.09994715663397813,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.08402553129893299,
+              "success_plus_overflow": 0.08402553129893299,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.10606964849251678,
+          "intact_regulator_finite_success": 0.09817246846011397
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 3.076205104329335e-17,
+          "mass_error": 1.9984014443252818e-15,
+          "minimum_mass": 5.897801975729478e-63,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8225289993957238,
+              "success_plus_overflow": 0.8225289993957238,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.6221902885448045,
+              "success_plus_overflow": 0.6221902885448045,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.3519665794321276,
+              "success_plus_overflow": 0.35196657943212767,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.31136275350615134,
+              "success_plus_overflow": 0.3113627535061514,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.815201743442507,
+              "success_plus_overflow": 0.815201743442507,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6212352920261522,
+              "success_plus_overflow": 0.6212352920261522,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.3519665794321276,
+              "success_plus_overflow": 0.35196657943212767,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.31136275350615134,
+              "success_plus_overflow": 0.3113627535061514,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.5929302690936845,
+          "intact_regulator_finite_success": 0.4420460292566302
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.7205429980700909e-10,
+          "mass_error": 5.551115123125783e-15,
+          "minimum_mass": 1.2797094762214944e-70,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.31348033457463115,
+              "success_plus_overflow": 0.31348033474668546,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.22234421465078225,
+              "success_plus_overflow": 0.22234421482283653,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.24023035646548555,
+              "success_plus_overflow": 0.24023035663753983,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.19948509150465313,
+              "success_plus_overflow": 0.19948509167670742,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.3126303101454727,
+              "success_plus_overflow": 0.312630310317527,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.22234421138795557,
+              "success_plus_overflow": 0.22234421156000986,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.24023035646548555,
+              "success_plus_overflow": 0.24023035663753983,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.19948509150465313,
+              "success_plus_overflow": 0.19948509167670742,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.8172179131924509,
+          "intact_regulator_finite_success": 0.37712684467835883
+        }
+      ]
+    },
+    {
+      "capture": 8,
+      "arm": "buffer",
+      "cap": 48,
+      "states": 6010,
+      "elapsed_seconds": 0.24551254202378914,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 8.382662879547307e-39,
+          "mass_error": 2.6645352591003757e-15,
+          "minimum_mass": 8.775316087746812e-64,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.976606019513838,
+              "success_plus_overflow": 0.976606019513838,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.742931612492099,
+              "success_plus_overflow": 0.742931612492099,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09993071456238632,
+              "success_plus_overflow": 0.09993071456238632,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.08396975500306045,
+              "success_plus_overflow": 0.08396975500306045,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8039223547991292,
+              "success_plus_overflow": 0.8039223547991292,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.5962695216824159,
+              "success_plus_overflow": 0.5962695216824159,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09993071456238632,
+              "success_plus_overflow": 0.09993071456238632,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.08396975500306045,
+              "success_plus_overflow": 0.08396975500306045,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.1060696484925164,
+          "intact_regulator_finite_success": 0.09817062596493749
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 3.076180428030413e-17,
+          "mass_error": 9.103828801926284e-15,
+          "minimum_mass": 5.897801975729421e-63,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8230988106912526,
+              "success_plus_overflow": 0.8230988106912526,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.603881325507767,
+              "success_plus_overflow": 0.603881325507767,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.3509685432906593,
+              "success_plus_overflow": 0.35096854329065935,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.30575102864706644,
+              "success_plus_overflow": 0.3057510286470665,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8157715547380359,
+              "success_plus_overflow": 0.8157715547380359,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6029263289891147,
+              "success_plus_overflow": 0.6029263289891147,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.3509685432906593,
+              "success_plus_overflow": 0.35096854329065935,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.30575102864706644,
+              "success_plus_overflow": 0.3057510286470665,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.5929302690936779,
+          "intact_regulator_finite_success": 0.4393965234347546
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.722020997162252e-10,
+          "mass_error": 2.919886554764162e-14,
+          "minimum_mass": 1.2797094762214638e-70,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.32096708000019625,
+              "success_plus_overflow": 0.32096708017239833,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.2228636116491558,
+              "success_plus_overflow": 0.2228636118213579,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.24733636096925724,
+              "success_plus_overflow": 0.24733636114145932,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.20116407652255863,
+              "success_plus_overflow": 0.20116407669476072,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.32011705557103776,
+              "success_plus_overflow": 0.32011705574323984,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.22286360838632907,
+              "success_plus_overflow": 0.22286360855853116,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.24733636096925724,
+              "success_plus_overflow": 0.24733636114145932,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.20116407652255863,
+              "success_plus_overflow": 0.20116407669476072,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.8172179131922748,
+          "intact_regulator_finite_success": 0.3725564302856801
+        }
+      ]
+    },
+    {
+      "capture": 8,
+      "arm": "inhibitor",
+      "cap": 48,
+      "states": 5118,
+      "elapsed_seconds": 0.19019591604592279,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 8.382662735633366e-39,
+          "mass_error": 1.3322676295501878e-15,
+          "minimum_mass": 8.77531608774685e-64,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9766061344592281,
+              "success_plus_overflow": 0.9766061344592281,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7486472323914034,
+              "success_plus_overflow": 0.7486472323914034,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09993273685675517,
+              "success_plus_overflow": 0.09993273685675517,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.08401676199153897,
+              "success_plus_overflow": 0.08401676199153897,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8039224697445185,
+              "success_plus_overflow": 0.8039224697445185,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6019851415817198,
+              "success_plus_overflow": 0.6019851415817198,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09993273685675517,
+              "success_plus_overflow": 0.09993273685675517,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.08401676199153897,
+              "success_plus_overflow": 0.08401676199153897,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.10606964849251689,
+          "intact_regulator_finite_success": 0.09817193501646578
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 3.0762050762355426e-17,
+          "mass_error": 7.327471962526033e-15,
+          "minimum_mass": 5.897801975729525e-63,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.8179758325204104,
+              "success_plus_overflow": 0.8179758325204104,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.6231614916088674,
+              "success_plus_overflow": 0.6231614916088674,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.34737488182972226,
+              "success_plus_overflow": 0.3473748818297223,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.3080267458450587,
+              "success_plus_overflow": 0.30802674584505874,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8106485765671937,
+              "success_plus_overflow": 0.8106485765671937,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6222064950902151,
+              "success_plus_overflow": 0.6222064950902151,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.34737488182972226,
+              "success_plus_overflow": 0.3473748818297223,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.3080267458450587,
+              "success_plus_overflow": 0.30802674584505874,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.5929302690936877,
+          "intact_regulator_finite_success": 0.4408607496553643
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.7199619534338455e-10,
+          "mass_error": 2.2648549702353193e-14,
+          "minimum_mass": 1.2797094762215207e-70,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3042582887872979,
+              "success_plus_overflow": 0.3042582889592941,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.21720998233491026,
+              "success_plus_overflow": 0.21720998250690646,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.23149609881598768,
+              "success_plus_overflow": 0.23149609898798387,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.19363845724064863,
+              "success_plus_overflow": 0.19363845741264482,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.30340826435813945,
+              "success_plus_overflow": 0.30340826453013564,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.21720997907208356,
+              "success_plus_overflow": 0.21720997924407975,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.23149609881598768,
+              "success_plus_overflow": 0.23149609898798387,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.19363845724064863,
+              "success_plus_overflow": 0.19363845741264482,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.8172179131925233,
+          "intact_regulator_finite_success": 0.3687493908713904
+        }
+      ]
+    },
+    {
+      "capture": 8,
+      "arm": "responsive",
+      "cap": 48,
+      "states": 6584,
+      "elapsed_seconds": 0.2749047920224257,
+      "cases": [
+        {
+          "horizon": 0.25,
+          "overflow": 8.38266285576295e-39,
+          "mass_error": 3.3306690738754696e-16,
+          "minimum_mass": 8.775316087746782e-64,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.9765955344686734,
+              "success_plus_overflow": 0.9765955344686734,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.7438865194354327,
+              "success_plus_overflow": 0.7438865194354327,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.09992040028429322,
+              "success_plus_overflow": 0.09992040028429322,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.08396765400910436,
+              "success_plus_overflow": 0.08396765400910436,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8039118697539641,
+              "success_plus_overflow": 0.8039118697539641,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.597224428625749,
+              "success_plus_overflow": 0.597224428625749,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.09992040028429322,
+              "success_plus_overflow": 0.09992040028429322,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.08396765400910436,
+              "success_plus_overflow": 0.08396765400910436,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.10606964849251661,
+          "intact_regulator_finite_success": 0.09817033347530911
+        },
+        {
+          "horizon": 1.0,
+          "overflow": 3.076181052127754e-17,
+          "mass_error": 3.3306690738754696e-15,
+          "minimum_mass": 5.897801975729452e-63,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.820645979665007,
+              "success_plus_overflow": 0.820645979665007,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.6089837323759255,
+              "success_plus_overflow": 0.6089837323759255,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.34863187871724083,
+              "success_plus_overflow": 0.3486318787172409,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.3050417700459806,
+              "success_plus_overflow": 0.30504177004598065,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.8133187237117905,
+              "success_plus_overflow": 0.8133187237117905,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.6080287358572731,
+              "success_plus_overflow": 0.6080287358572731,
+              "numerical_alpha_half": "reliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.34863187871724083,
+              "success_plus_overflow": 0.3486318787172409,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.3050417700459806,
+              "success_plus_overflow": 0.30504177004598065,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.5929302690936814,
+          "intact_regulator_finite_success": 0.4390393853622269
+        },
+        {
+          "horizon": 3.0,
+          "overflow": 1.7217982421386834e-10,
+          "mass_error": 1.1657341758564144e-14,
+          "minimum_mass": 1.2797094762214755e-70,
+          "assays": [
+            {
+              "profile": [
+                0,
+                0,
+                0
+              ],
+              "finite_success": 0.3159638730517957,
+              "success_plus_overflow": 0.3159638732239755,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                0,
+                1
+              ],
+              "finite_success": 0.22110444366492946,
+              "success_plus_overflow": 0.22110444383710928,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                0
+              ],
+              "finite_success": 0.2426256922960904,
+              "success_plus_overflow": 0.24262569246827023,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                0,
+                1,
+                1
+              ],
+              "finite_success": 0.19879030172809903,
+              "success_plus_overflow": 0.19879030190027885,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                0
+              ],
+              "finite_success": 0.3151138486226373,
+              "success_plus_overflow": 0.31511384879481713,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                0,
+                1
+              ],
+              "finite_success": 0.22110444040210278,
+              "success_plus_overflow": 0.2211044405742826,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                0
+              ],
+              "finite_success": 0.2426256922960904,
+              "success_plus_overflow": 0.24262569246827023,
+              "numerical_alpha_half": "unreliable"
+            },
+            {
+              "profile": [
+                1,
+                1,
+                1
+              ],
+              "finite_success": 0.19879030172809903,
+              "success_plus_overflow": 0.19879030190027885,
+              "numerical_alpha_half": "unreliable"
+            }
+          ],
+          "formation_finite_success": 0.8172179131923112,
+          "intact_regulator_finite_success": 0.3692078590261206
+        }
+      ]
+    }
+  ],
+  "max_cap_sensitivity": 0.00017198962063980083
+}

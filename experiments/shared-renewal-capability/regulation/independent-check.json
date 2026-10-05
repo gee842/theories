@@ -1,0 +1,3725 @@
+{
+  "status": "PASS exact identities, classifications and independent numerical checks",
+  "producer_imported_or_executed": false,
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/PROTOCOL.md": "d8ca147ed3890f26203ac9c0d03f6e05dbdf7010dcd926c836e1cc429bb34747",
+    "experiments/shared-renewal-capability/regulation/compare.py": "6b3163a619b28435cc016aefb14a92519bd459af27ee9fd9f380c73e5bf3c66f",
+    "experiments/shared-renewal-capability/regulation/results.json": "5c6221564684327c05484fe803069d19e2a8f4a0e12830785d83004ba387b87f"
+  },
+  "checker_sha256": "4079be96a5f60afeca198f107e40849f8faabe09eebccd95c42485f8bc83858d",
+  "git_head_at_check": "c5cf2ccec506936908b0c1b580c8f5d31e87fd74",
+  "runtime": {
+    "python": "3.11.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "executable": "/private/tmp/meta-attractor-plot-env/bin/python"
+  },
+  "numerical_absolute_tolerance": 1e-10,
+  "arithmetic_scope": "Independent float64 uniformization; Poisson weights and tail are numerical. Tolerance is not a proved roundoff bound. These checks do not upgrade results to rigorous intervals.",
+  "K48_case_profile_records": 240,
+  "constructed_baseline_comparisons": 192,
+  "all_constructed_point_estimates_below_baseline": true,
+  "all_comparisons_remain_negative_after_constructed_overflow_allowance": true,
+  "minimum_baseline_advantage": {
+    "source": 4,
+    "arm": "burden",
+    "horizon": 0.25,
+    "profile": [
+      0,
+      0,
+      0
+    ],
+    "baseline_point_advantage": 0.0013447554934237216,
+    "gap_after_assigning_constructed_overflow_to_success": 0.0013447554934237216
+  },
+  "minimum_threshold_distance": 0.002007057350499053,
+  "maximum_K48_overflow": 1.6455474881892323e-09,
+  "maximum_K32_K48_sensitivity": 0.00017198962063980083,
+  "independently_recomputed_profile_probabilities": 32,
+  "maximum_independent_probability_difference": 4.042322032660195e-13,
+  "exact_checks": [
+    {
+      "source": 4,
+      "arm": "absent",
+      "physical_states": 3009,
+      "positive_labeled_events": 13244,
+      "dead_plant_face_states": 480,
+      "status": "PASS exact integer stoichiometry, eight drifts, U/W/T/L/A ledgers",
+      "boundary_scope": "Actual untruncated target is used even if capture raises U above48."
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "physical_states": 3009,
+      "positive_labeled_events": 14293,
+      "dead_plant_face_states": 480,
+      "status": "PASS exact integer stoichiometry, eight drifts, U/W/T/L/A ledgers",
+      "boundary_scope": "Actual untruncated target is used even if capture raises U above48."
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "physical_states": 3009,
+      "positive_labeled_events": 15342,
+      "dead_plant_face_states": 480,
+      "status": "PASS exact integer stoichiometry, eight drifts, U/W/T/L/A ledgers",
+      "boundary_scope": "Actual untruncated target is used even if capture raises U above48."
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "physical_states": 3009,
+      "positive_labeled_events": 14586,
+      "dead_plant_face_states": 480,
+      "status": "PASS exact integer stoichiometry, eight drifts, U/W/T/L/A ledgers",
+      "boundary_scope": "Actual untruncated target is used even if capture raises U above48."
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "physical_states": 3009,
+      "positive_labeled_events": 15635,
+      "dead_plant_face_states": 480,
+      "status": "PASS exact integer stoichiometry, eight drifts, U/W/T/L/A ledgers",
+      "boundary_scope": "Actual untruncated target is used even if capture raises U above48."
+    },
+    {
+      "source": 8,
+      "arm": "absent",
+      "physical_states": 3009,
+      "positive_labeled_events": 13244,
+      "dead_plant_face_states": 480,
+      "status": "PASS exact integer stoichiometry, eight drifts, U/W/T/L/A ledgers",
+      "boundary_scope": "Actual untruncated target is used even if capture raises U above48."
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "physical_states": 3009,
+      "positive_labeled_events": 14293,
+      "dead_plant_face_states": 480,
+      "status": "PASS exact integer stoichiometry, eight drifts, U/W/T/L/A ledgers",
+      "boundary_scope": "Actual untruncated target is used even if capture raises U above48."
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "physical_states": 3009,
+      "positive_labeled_events": 15342,
+      "dead_plant_face_states": 480,
+      "status": "PASS exact integer stoichiometry, eight drifts, U/W/T/L/A ledgers",
+      "boundary_scope": "Actual untruncated target is used even if capture raises U above48."
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "physical_states": 3009,
+      "positive_labeled_events": 14586,
+      "dead_plant_face_states": 480,
+      "status": "PASS exact integer stoichiometry, eight drifts, U/W/T/L/A ledgers",
+      "boundary_scope": "Actual untruncated target is used even if capture raises U above48."
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "physical_states": 3009,
+      "positive_labeled_events": 15635,
+      "dead_plant_face_states": 480,
+      "status": "PASS exact integer stoichiometry, eight drifts, U/W/T/L/A ledgers",
+      "boundary_scope": "Actual untruncated target is used even if capture raises U above48."
+    }
+  ],
+  "lag_checks": [
+    {
+      "source": 4,
+      "arm": "absent",
+      "formation_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bound_Y_derivatives_0_to_4": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ready_minus_absent_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "formation_H3_coefficient": "0",
+      "bound_Y_H4_coefficient": "0",
+      "arithmetic": "exact integer generator powers"
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "formation_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        60
+      ],
+      "bound_Y_derivatives_0_to_4": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ready_minus_absent_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        -60
+      ],
+      "formation_H3_coefficient": "10",
+      "bound_Y_H4_coefficient": "0",
+      "arithmetic": "exact integer generator powers"
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "formation_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        60
+      ],
+      "bound_Y_derivatives_0_to_4": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ready_minus_absent_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        -60
+      ],
+      "formation_H3_coefficient": "10",
+      "bound_Y_H4_coefficient": "0",
+      "arithmetic": "exact integer generator powers"
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "formation_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        60
+      ],
+      "bound_Y_derivatives_0_to_4": [
+        0,
+        0,
+        0,
+        0,
+        240
+      ],
+      "ready_minus_absent_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        -60
+      ],
+      "formation_H3_coefficient": "10",
+      "bound_Y_H4_coefficient": "10",
+      "arithmetic": "exact integer generator powers"
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "formation_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        60
+      ],
+      "bound_Y_derivatives_0_to_4": [
+        0,
+        0,
+        0,
+        0,
+        240
+      ],
+      "ready_minus_absent_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        -60
+      ],
+      "formation_H3_coefficient": "10",
+      "bound_Y_H4_coefficient": "10",
+      "arithmetic": "exact integer generator powers"
+    },
+    {
+      "source": 8,
+      "arm": "absent",
+      "formation_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "bound_Y_derivatives_0_to_4": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ready_minus_absent_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "formation_H3_coefficient": "0",
+      "bound_Y_H4_coefficient": "0",
+      "arithmetic": "exact integer generator powers"
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "formation_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        120
+      ],
+      "bound_Y_derivatives_0_to_4": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ready_minus_absent_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        -120
+      ],
+      "formation_H3_coefficient": "20",
+      "bound_Y_H4_coefficient": "0",
+      "arithmetic": "exact integer generator powers"
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "formation_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        120
+      ],
+      "bound_Y_derivatives_0_to_4": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ready_minus_absent_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        -120
+      ],
+      "formation_H3_coefficient": "20",
+      "bound_Y_H4_coefficient": "0",
+      "arithmetic": "exact integer generator powers"
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "formation_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        120
+      ],
+      "bound_Y_derivatives_0_to_4": [
+        0,
+        0,
+        0,
+        0,
+        480
+      ],
+      "ready_minus_absent_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        -120
+      ],
+      "formation_H3_coefficient": "20",
+      "bound_Y_H4_coefficient": "20",
+      "arithmetic": "exact integer generator powers"
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "formation_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        120
+      ],
+      "bound_Y_derivatives_0_to_4": [
+        0,
+        0,
+        0,
+        0,
+        480
+      ],
+      "ready_minus_absent_derivatives_0_to_3": [
+        0,
+        0,
+        0,
+        -120
+      ],
+      "formation_H3_coefficient": "20",
+      "bound_Y_H4_coefficient": "20",
+      "arithmetic": "exact integer generator powers"
+    }
+  ],
+  "reliable_regions": [
+    {
+      "source": 4,
+      "arm": "absent",
+      "horizon": 0.25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "arm": "absent",
+      "horizon": 1.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "arm": "absent",
+      "horizon": 3.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 0.25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 1.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 3.0,
+      "reliable_profiles": []
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "reliable_profiles": []
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "reliable_profiles": []
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "reliable_profiles": []
+    },
+    {
+      "source": 8,
+      "arm": "absent",
+      "horizon": 0.25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "absent",
+      "horizon": 1.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "absent",
+      "horizon": 3.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 0.25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 1.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 3.0,
+      "reliable_profiles": []
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "reliable_profiles": []
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "reliable_profiles": []
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "reliable_profiles": []
+    }
+  ],
+  "independent_uniformization": [
+    {
+      "source": 8,
+      "arm": "absent",
+      "cap": 48,
+      "horizon": 1.0,
+      "states": 1857,
+      "diagnostics": {
+        "gamma": 434,
+        "poisson_mean": 434.0,
+        "last_index": 784,
+        "omitted_tail_float_estimate": 7.863203489735367e-52,
+        "poisson_weight_sum_error": 1.0014211682118912e-13,
+        "mass_error": 1.0036416142611415e-13,
+        "minimum_mass": 5.897801975730164e-63
+      },
+      "overflow_uniformization": 5.59149775558785e-17,
+      "formation_uniformization": 0.0,
+      "intact_uniformization": 0.0,
+      "assays": [
+        {
+          "profile": [
+            0,
+            0,
+            0
+          ],
+          "uniformization": 0.9334952528438112,
+          "producer_expm": 0.9334952528437274,
+          "absolute_difference": 8.382183835919932e-14
+        },
+        {
+          "profile": [
+            0,
+            0,
+            1
+          ],
+          "uniformization": 0.7657080805966371,
+          "producer_expm": 0.7657080805965684,
+          "absolute_difference": 6.872280522429719e-14
+        },
+        {
+          "profile": [
+            0,
+            1,
+            0
+          ],
+          "uniformization": 0.5150716028414937,
+          "producer_expm": 0.5150716028414487,
+          "absolute_difference": 4.496403249731884e-14
+        },
+        {
+          "profile": [
+            0,
+            1,
+            1
+          ],
+          "uniformization": 0.477107168249721,
+          "producer_expm": 0.47710716824967864,
+          "absolute_difference": 4.235500838944972e-14
+        },
+        {
+          "profile": [
+            1,
+            0,
+            0
+          ],
+          "uniformization": 0.9261679968905939,
+          "producer_expm": 0.9261679968905105,
+          "absolute_difference": 8.337774914934926e-14
+        },
+        {
+          "profile": [
+            1,
+            0,
+            1
+          ],
+          "uniformization": 0.7647530840779846,
+          "producer_expm": 0.764753084077916,
+          "absolute_difference": 6.861178292183467e-14
+        },
+        {
+          "profile": [
+            1,
+            1,
+            0
+          ],
+          "uniformization": 0.5150716028414937,
+          "producer_expm": 0.5150716028414487,
+          "absolute_difference": 4.496403249731884e-14
+        },
+        {
+          "profile": [
+            1,
+            1,
+            1
+          ],
+          "uniformization": 0.477107168249721,
+          "producer_expm": 0.47710716824967864,
+          "absolute_difference": 4.235500838944972e-14
+        }
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "absent",
+      "cap": 48,
+      "horizon": 3.0,
+      "states": 1857,
+      "diagnostics": {
+        "gamma": 434,
+        "poisson_mean": 1302.0,
+        "last_index": 1835,
+        "omitted_tail_float_estimate": 2.3556667132659377e-44,
+        "poisson_weight_sum_error": 4.687361609967411e-13,
+        "mass_error": 4.714006962558415e-13,
+        "minimum_mass": 1.2797094762209217e-70
+      },
+      "overflow_uniformization": 1.6455474881883917e-09,
+      "formation_uniformization": 0.0,
+      "intact_uniformization": 0.0,
+      "assays": [
+        {
+          "profile": [
+            0,
+            0,
+            0
+          ],
+          "uniformization": 0.8071107453376479,
+          "producer_expm": 0.8071107453380522,
+          "absolute_difference": 4.042322032660195e-13
+        },
+        {
+          "profile": [
+            0,
+            0,
+            1
+          ],
+          "uniformization": 0.7045490495358749,
+          "producer_expm": 0.7045490495362261,
+          "absolute_difference": 3.51163542688937e-13
+        },
+        {
+          "profile": [
+            0,
+            1,
+            0
+          ],
+          "uniformization": 0.749634473664012,
+          "producer_expm": 0.7496344736643863,
+          "absolute_difference": 3.7425618160114027e-13
+        },
+        {
+          "profile": [
+            0,
+            1,
+            1
+          ],
+          "uniformization": 0.6925433833165024,
+          "producer_expm": 0.6925433833168474,
+          "absolute_difference": 3.4494629375103614e-13
+        },
+        {
+          "profile": [
+            1,
+            0,
+            0
+          ],
+          "uniformization": 0.80626072090849,
+          "producer_expm": 0.8062607209088936,
+          "absolute_difference": 4.035660694512444e-13
+        },
+        {
+          "profile": [
+            1,
+            0,
+            1
+          ],
+          "uniformization": 0.7045490462730483,
+          "producer_expm": 0.7045490462733993,
+          "absolute_difference": 3.510525203864745e-13
+        },
+        {
+          "profile": [
+            1,
+            1,
+            0
+          ],
+          "uniformization": 0.749634473664012,
+          "producer_expm": 0.7496344736643863,
+          "absolute_difference": 3.7425618160114027e-13
+        },
+        {
+          "profile": [
+            1,
+            1,
+            1
+          ],
+          "uniformization": 0.6925433833165024,
+          "producer_expm": 0.6925433833168474,
+          "absolute_difference": 3.4494629375103614e-13
+        }
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "cap": 48,
+      "horizon": 1.0,
+      "states": 6584,
+      "diagnostics": {
+        "gamma": 443,
+        "poisson_mean": 443.0,
+        "last_index": 796,
+        "omitted_tail_float_estimate": 9.179247233062153e-52,
+        "poisson_weight_sum_error": 1.9761969838327786e-14,
+        "mass_error": 2.098321516541546e-14,
+        "minimum_mass": 5.89780197572942e-63
+      },
+      "overflow_uniformization": 3.07618105212767e-17,
+      "formation_uniformization": 0.5929302690936692,
+      "intact_uniformization": 0.4390393853622181,
+      "assays": [
+        {
+          "profile": [
+            0,
+            0,
+            0
+          ],
+          "uniformization": 0.820645979664992,
+          "producer_expm": 0.820645979665007,
+          "absolute_difference": 1.4988010832439613e-14
+        },
+        {
+          "profile": [
+            0,
+            0,
+            1
+          ],
+          "uniformization": 0.6089837323759141,
+          "producer_expm": 0.6089837323759255,
+          "absolute_difference": 1.1435297153639112e-14
+        },
+        {
+          "profile": [
+            0,
+            1,
+            0
+          ],
+          "uniformization": 0.3486318787172335,
+          "producer_expm": 0.34863187871724083,
+          "absolute_difference": 7.327471962526033e-15
+        },
+        {
+          "profile": [
+            0,
+            1,
+            1
+          ],
+          "uniformization": 0.30504177004597455,
+          "producer_expm": 0.3050417700459806,
+          "absolute_difference": 6.050715484207103e-15
+        },
+        {
+          "profile": [
+            1,
+            0,
+            0
+          ],
+          "uniformization": 0.8133187237117753,
+          "producer_expm": 0.8133187237117905,
+          "absolute_difference": 1.5210055437364645e-14
+        },
+        {
+          "profile": [
+            1,
+            0,
+            1
+          ],
+          "uniformization": 0.6080287358572619,
+          "producer_expm": 0.6080287358572731,
+          "absolute_difference": 1.1213252548714081e-14
+        },
+        {
+          "profile": [
+            1,
+            1,
+            0
+          ],
+          "uniformization": 0.3486318787172335,
+          "producer_expm": 0.34863187871724083,
+          "absolute_difference": 7.327471962526033e-15
+        },
+        {
+          "profile": [
+            1,
+            1,
+            1
+          ],
+          "uniformization": 0.30504177004597455,
+          "producer_expm": 0.3050417700459806,
+          "absolute_difference": 6.050715484207103e-15
+        }
+      ]
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "cap": 48,
+      "horizon": 3.0,
+      "states": 6584,
+      "diagnostics": {
+        "gamma": 443,
+        "poisson_mean": 1329.0,
+        "last_index": 1867,
+        "omitted_tail_float_estimate": 2.514333444280029e-44,
+        "poisson_weight_sum_error": 2.970956813896919e-13,
+        "mass_error": 2.9887203822909214e-13,
+        "minimum_mass": 1.2797094762219161e-70
+      },
+      "overflow_uniformization": 1.7217982421392108e-10,
+      "formation_uniformization": 0.8172179131925632,
+      "intact_uniformization": 0.3692078590262347,
+      "assays": [
+        {
+          "profile": [
+            0,
+            0,
+            0
+          ],
+          "uniformization": 0.3159638730518931,
+          "producer_expm": 0.3159638730517957,
+          "absolute_difference": 9.742207041085749e-14
+        },
+        {
+          "profile": [
+            0,
+            0,
+            1
+          ],
+          "uniformization": 0.22110444366499754,
+          "producer_expm": 0.22110444366492946,
+          "absolute_difference": 6.808442698513772e-14
+        },
+        {
+          "profile": [
+            0,
+            1,
+            0
+          ],
+          "uniformization": 0.24262569229616468,
+          "producer_expm": 0.2426256922960904,
+          "absolute_difference": 7.427392034742297e-14
+        },
+        {
+          "profile": [
+            0,
+            1,
+            1
+          ],
+          "uniformization": 0.19879030172816006,
+          "producer_expm": 0.19879030172809903,
+          "absolute_difference": 6.103451077876798e-14
+        },
+        {
+          "profile": [
+            1,
+            0,
+            0
+          ],
+          "uniformization": 0.3151138486227344,
+          "producer_expm": 0.3151138486226373,
+          "absolute_difference": 9.708900350346994e-14
+        },
+        {
+          "profile": [
+            1,
+            0,
+            1
+          ],
+          "uniformization": 0.2211044404021709,
+          "producer_expm": 0.22110444040210278,
+          "absolute_difference": 6.811218256075335e-14
+        },
+        {
+          "profile": [
+            1,
+            1,
+            0
+          ],
+          "uniformization": 0.24262569229616468,
+          "producer_expm": 0.2426256922960904,
+          "absolute_difference": 7.427392034742297e-14
+        },
+        {
+          "profile": [
+            1,
+            1,
+            1
+          ],
+          "uniformization": 0.19879030172816006,
+          "producer_expm": 0.19879030172809903,
+          "absolute_difference": 6.103451077876798e-14
+        }
+      ]
+    }
+  ],
+  "baseline_comparisons": [
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0013447554934237216,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0013447554934237216
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.021002657835489824,
+      "gap_after_assigning_constructed_overflow_to_success": 0.021002657835489824
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.0036902123988192537,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0036902123988192537
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.0035537420842642053,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0035537420842642053
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0013447554934239436,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0013447554934239436
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.021002657835489713,
+      "gap_after_assigning_constructed_overflow_to_success": 0.021002657835489713
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.0036902123988192537,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0036902123988192537
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.0035537420842642053,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0035537420842642053
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.06630136840047318,
+      "gap_after_assigning_constructed_overflow_to_success": 0.06630136840047318
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.10175110556755607,
+      "gap_after_assigning_constructed_overflow_to_success": 0.10175110556755607
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.0918036383207031,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0918036383207031
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.09273937948955974,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09273937948955974
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.06630136840047296,
+      "gap_after_assigning_constructed_overflow_to_success": 0.06630136840047296
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.10175110556755607,
+      "gap_after_assigning_constructed_overflow_to_success": 0.10175110556755607
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.0918036383207031,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0918036383207031
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.09273937948955974,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09273937948955974
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.30934136505899534,
+      "gap_after_assigning_constructed_overflow_to_success": 0.30934136505899534
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.28883817085670505,
+      "gap_after_assigning_constructed_overflow_to_success": 0.28883817085670505
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.3184871347694505,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3184871347694505
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.2937551609188783,
+      "gap_after_assigning_constructed_overflow_to_success": 0.2937551609188783
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.30934136505899534,
+      "gap_after_assigning_constructed_overflow_to_success": 0.30934136505899534
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.288838170856705,
+      "gap_after_assigning_constructed_overflow_to_success": 0.288838170856705
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.3184871347694505,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3184871347694505
+    },
+    {
+      "source": 4,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.2937551609188783,
+      "gap_after_assigning_constructed_overflow_to_success": 0.2937551609188783
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.001349385315272733,
+      "gap_after_assigning_constructed_overflow_to_success": 0.001349385315272733
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.024079332610104864,
+      "gap_after_assigning_constructed_overflow_to_success": 0.024079332610104864
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.00369504932655762,
+      "gap_after_assigning_constructed_overflow_to_success": 0.00369504932655762
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.003570283874595827,
+      "gap_after_assigning_constructed_overflow_to_success": 0.003570283874595827
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0013493853152717339,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0013493853152717339
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.024079332610104143,
+      "gap_after_assigning_constructed_overflow_to_success": 0.024079332610104143
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.00369504932655762,
+      "gap_after_assigning_constructed_overflow_to_success": 0.00369504932655762
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.003570283874595827,
+      "gap_after_assigning_constructed_overflow_to_success": 0.003570283874595827
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.06739677629941143,
+      "gap_after_assigning_constructed_overflow_to_success": 0.06739677629941143
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.1224681063487893,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1224681063487893
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.09341882392279666,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09341882392279666
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.0993445144447001,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0993445144447001
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.06739677629941088,
+      "gap_after_assigning_constructed_overflow_to_success": 0.06739677629941088
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.12246810634878919,
+      "gap_after_assigning_constructed_overflow_to_success": 0.12246810634878919
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.09341882392279666,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09341882392279666
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.0993445144447001,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0993445144447001
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.30730316469208924,
+      "gap_after_assigning_constructed_overflow_to_success": 0.30730316469208924
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.29841307919746163,
+      "gap_after_assigning_constructed_overflow_to_success": 0.29841307919746163
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.31683698777534075,
+      "gap_after_assigning_constructed_overflow_to_success": 0.31683698777534075
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.30216388618080026,
+      "gap_after_assigning_constructed_overflow_to_success": 0.30216388618080026
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.3073031646920891,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3073031646920891
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.29841307919746163,
+      "gap_after_assigning_constructed_overflow_to_success": 0.29841307919746163
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.31683698777534075,
+      "gap_after_assigning_constructed_overflow_to_success": 0.31683698777534075
+    },
+    {
+      "source": 4,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.30216388618080026,
+      "gap_after_assigning_constructed_overflow_to_success": 0.30216388618080026
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0013486344384954219,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0013486344384954219
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.020942876003883892,
+      "gap_after_assigning_constructed_overflow_to_success": 0.020942876003883892
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.003694020773733056,
+      "gap_after_assigning_constructed_overflow_to_success": 0.003694020773733056
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.0035551946578136,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0035551946578136
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0013486344384948667,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0013486344384948667
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.02094287600388345,
+      "gap_after_assigning_constructed_overflow_to_success": 0.02094287600388345
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.003694020773733056,
+      "gap_after_assigning_constructed_overflow_to_success": 0.003694020773733056
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.0035551946578136,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0035551946578136
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.06828885511097105,
+      "gap_after_assigning_constructed_overflow_to_success": 0.06828885511097105
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.09978332359493947,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09978332359493947
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.09369584463060632,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09369584463060632
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.09362735207577788,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09362735207577788
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.06828885511097071,
+      "gap_after_assigning_constructed_overflow_to_success": 0.06828885511097071
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.09978332359493919,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09978332359493919
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.09369584463060632,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09369584463060632
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.09362735207577788,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09362735207577788
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.31496415800206123,
+      "gap_after_assigning_constructed_overflow_to_success": 0.31496415800206123
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.2911147969093962,
+      "gap_after_assigning_constructed_overflow_to_success": 0.2911147969093962
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.3237453507289277,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3237453507289277
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.29639201043586516,
+      "gap_after_assigning_constructed_overflow_to_success": 0.29639201043586516
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.3149641580020613,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3149641580020613
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.2911147969093961,
+      "gap_after_assigning_constructed_overflow_to_success": 0.2911147969093961
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.3237453507289277,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3237453507289277
+    },
+    {
+      "source": 4,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.29639201043586516,
+      "gap_after_assigning_constructed_overflow_to_success": 0.29639201043586516
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0013522458526536996,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0013522458526536996
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.0235645709542861,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0235645709542861
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.0036978425481497545,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0036978425481497545
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.0035702614661232077,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0035702614661232077
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0013522458526531445,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0013522458526531445
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.023564570954285602,
+      "gap_after_assigning_constructed_overflow_to_success": 0.023564570954285602
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.0036978425481497545,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0036978425481497545
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.0035702614661232077,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0035702614661232077
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.06841232859656488,
+      "gap_after_assigning_constructed_overflow_to_success": 0.06841232859656488
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.11723483662014533,
+      "gap_after_assigning_constructed_overflow_to_success": 0.11723483662014533
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.09434865245817342,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09434865245817342
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.09901286982311858,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09901286982311858
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.06841232859656476,
+      "gap_after_assigning_constructed_overflow_to_success": 0.06841232859656476
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.11723483662014517,
+      "gap_after_assigning_constructed_overflow_to_success": 0.11723483662014517
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.09434865245817342,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09434865245817342
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.09901286982311858,
+      "gap_after_assigning_constructed_overflow_to_success": 0.09901286982311858
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.3101478261645514,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3101478261645514
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.2987967036341136,
+      "gap_after_assigning_constructed_overflow_to_success": 0.2987967036341136
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.3194802792699309,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3194802792699309
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.3028770432053406,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3028770432053406
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.3101478261645514,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3101478261645514
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.2987967036341135,
+      "gap_after_assigning_constructed_overflow_to_success": 0.2987967036341135
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.3194802792699309,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3194802792699309
+    },
+    {
+      "source": 4,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.3028770432053406,
+      "gap_after_assigning_constructed_overflow_to_success": 0.3028770432053406
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0026553860976745725,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0026553860976745725
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.021943367622249466,
+      "gap_after_assigning_constructed_overflow_to_success": 0.021943367622249466
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.0076449783210546796,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0076449783210546796
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.007627597457959698,
+      "gap_after_assigning_constructed_overflow_to_success": 0.007627597457959698
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0026553860976740173,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0026553860976740173
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.021943367622249466,
+      "gap_after_assigning_constructed_overflow_to_success": 0.021943367622249466
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.0076449783210546796,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0076449783210546796
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.007627597457959698,
+      "gap_after_assigning_constructed_overflow_to_success": 0.007627597457959698
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.1109662534480036,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1109662534480036
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.14351779205176385,
+      "gap_after_assigning_constructed_overflow_to_success": 0.14351779205176385
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.1631050234093211,
+      "gap_after_assigning_constructed_overflow_to_success": 0.16310502340932104
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.1657444147435273,
+      "gap_after_assigning_constructed_overflow_to_success": 0.16574441474352725
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.1109662534480036,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1109662534480036
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.14351779205176374,
+      "gap_after_assigning_constructed_overflow_to_success": 0.14351779205176374
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.1631050234093211,
+      "gap_after_assigning_constructed_overflow_to_success": 0.16310502340932104
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.1657444147435273,
+      "gap_after_assigning_constructed_overflow_to_success": 0.16574441474352725
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.493630410763421,
+      "gap_after_assigning_constructed_overflow_to_success": 0.4936304105913667
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.48220483488544386,
+      "gap_after_assigning_constructed_overflow_to_success": 0.4822048347133896
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.5094041171989008,
+      "gap_after_assigning_constructed_overflow_to_success": 0.5094041170268464
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.4930582918121943,
+      "gap_after_assigning_constructed_overflow_to_success": 0.49305829164014
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.49363041076342085,
+      "gap_after_assigning_constructed_overflow_to_success": 0.49363041059136653
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.48220483488544374,
+      "gap_after_assigning_constructed_overflow_to_success": 0.4822048347133895
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.5094041171989008,
+      "gap_after_assigning_constructed_overflow_to_success": 0.5094041170268464
+    },
+    {
+      "source": 8,
+      "arm": "burden",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.4930582918121943,
+      "gap_after_assigning_constructed_overflow_to_success": 0.49305829164014
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0026700238135519694,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0026700238135519694
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.027514191294675472,
+      "gap_after_assigning_constructed_overflow_to_success": 0.027514191294675472
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.007661420392646487,
+      "gap_after_assigning_constructed_overflow_to_success": 0.007661420392646487
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.00768337375383224,
+      "gap_after_assigning_constructed_overflow_to_success": 0.00768337375383224
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.002670023813550859,
+      "gap_after_assigning_constructed_overflow_to_success": 0.002670023813550859
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.027514191294674806,
+      "gap_after_assigning_constructed_overflow_to_success": 0.027514191294674806
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.007661420392646487,
+      "gap_after_assigning_constructed_overflow_to_success": 0.007661420392646487
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.00768337375383224,
+      "gap_after_assigning_constructed_overflow_to_success": 0.00768337375383224
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.1103964421524748,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1103964421524748
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.1618267550888014,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1618267550888014
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.1641030595507894,
+      "gap_after_assigning_constructed_overflow_to_success": 0.16410305955078935
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.1713561396026122,
+      "gap_after_assigning_constructed_overflow_to_success": 0.17135613960261215
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.11039644215247468,
+      "gap_after_assigning_constructed_overflow_to_success": 0.11039644215247468
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.1618267550888013,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1618267550888013
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.1641030595507894,
+      "gap_after_assigning_constructed_overflow_to_success": 0.16410305955078935
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.1713561396026122,
+      "gap_after_assigning_constructed_overflow_to_success": 0.17135613960261215
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.4861436653378559,
+      "gap_after_assigning_constructed_overflow_to_success": 0.4861436651656538
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.4816854378870703,
+      "gap_after_assigning_constructed_overflow_to_success": 0.4816854377148682
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.502298112695129,
+      "gap_after_assigning_constructed_overflow_to_success": 0.502298112522927
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.49137930679428876,
+      "gap_after_assigning_constructed_overflow_to_success": 0.4913793066220867
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.4861436653378558,
+      "gap_after_assigning_constructed_overflow_to_success": 0.4861436651656537
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.48168543788707024,
+      "gap_after_assigning_constructed_overflow_to_success": 0.48168543771486816
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.502298112695129,
+      "gap_after_assigning_constructed_overflow_to_success": 0.502298112522927
+    },
+    {
+      "source": 8,
+      "arm": "buffer",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.49137930679428876,
+      "gap_after_assigning_constructed_overflow_to_success": 0.4913793066220867
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0026699088681618743,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0026699088681618743
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.021798571395371114,
+      "gap_after_assigning_constructed_overflow_to_success": 0.021798571395371114
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.007659398098277634,
+      "gap_after_assigning_constructed_overflow_to_success": 0.007659398098277634
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.0076363667653537165,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0076363667653537165
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0026699088681615413,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0026699088681615413
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.02179857139537089,
+      "gap_after_assigning_constructed_overflow_to_success": 0.02179857139537089
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.007659398098277634,
+      "gap_after_assigning_constructed_overflow_to_success": 0.007659398098277634
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.0076363667653537165,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0076363667653537165
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.11551942032331697,
+      "gap_after_assigning_constructed_overflow_to_success": 0.11551942032331697
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.142546588987701,
+      "gap_after_assigning_constructed_overflow_to_success": 0.142546588987701
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.16769672101172645,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1676967210117264
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.16908042240461996,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1690804224046199
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.11551942032331686,
+      "gap_after_assigning_constructed_overflow_to_success": 0.11551942032331686
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.1425465889877009,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1425465889877009
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.16769672101172645,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1676967210117264
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.16908042240461996,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1690804224046199
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.5028524565507543,
+      "gap_after_assigning_constructed_overflow_to_success": 0.5028524563787581
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.4873390672013158,
+      "gap_after_assigning_constructed_overflow_to_success": 0.4873390670293196
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.5181383748483986,
+      "gap_after_assigning_constructed_overflow_to_success": 0.5181383746764024
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.49890492607619874,
+      "gap_after_assigning_constructed_overflow_to_success": 0.49890492590420255
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.5028524565507542,
+      "gap_after_assigning_constructed_overflow_to_success": 0.502852456378758
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.48733906720131576,
+      "gap_after_assigning_constructed_overflow_to_success": 0.48733906702931956
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.5181383748483986,
+      "gap_after_assigning_constructed_overflow_to_success": 0.5181383746764024
+    },
+    {
+      "source": 8,
+      "arm": "inhibitor",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.49890492607619874,
+      "gap_after_assigning_constructed_overflow_to_success": 0.49890492590420255
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0026805088587165127,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0026805088587165127
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.026559284351341805,
+      "gap_after_assigning_constructed_overflow_to_success": 0.026559284351341805
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.007671734670739588,
+      "gap_after_assigning_constructed_overflow_to_success": 0.007671734670739588
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.007685474747788329,
+      "gap_after_assigning_constructed_overflow_to_success": 0.007685474747788329
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.0026805088587159576,
+      "gap_after_assigning_constructed_overflow_to_success": 0.0026805088587159576
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.026559284351341694,
+      "gap_after_assigning_constructed_overflow_to_success": 0.026559284351341694
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.007671734670739588,
+      "gap_after_assigning_constructed_overflow_to_success": 0.007671734670739588
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 0.25,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.007685474747788329,
+      "gap_after_assigning_constructed_overflow_to_success": 0.007685474747788329
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.1128492731787204,
+      "gap_after_assigning_constructed_overflow_to_success": 0.1128492731787204
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.15672434822064285,
+      "gap_after_assigning_constructed_overflow_to_success": 0.15672434822064285
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.16643972412420788,
+      "gap_after_assigning_constructed_overflow_to_success": 0.16643972412420782
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.17206539820369804,
+      "gap_after_assigning_constructed_overflow_to_success": 0.17206539820369798
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.11284927317872007,
+      "gap_after_assigning_constructed_overflow_to_success": 0.11284927317872007
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.15672434822064285,
+      "gap_after_assigning_constructed_overflow_to_success": 0.15672434822064285
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.16643972412420788,
+      "gap_after_assigning_constructed_overflow_to_success": 0.16643972412420782
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 1.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.17206539820369804,
+      "gap_after_assigning_constructed_overflow_to_success": 0.17206539820369798
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.4911468722862565,
+      "gap_after_assigning_constructed_overflow_to_success": 0.49114687211407665
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.4834446058712967,
+      "gap_after_assigning_constructed_overflow_to_success": 0.48344460569911685
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.5070087813682959,
+      "gap_after_assigning_constructed_overflow_to_success": 0.507008781196116
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        0,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.49375308158874837,
+      "gap_after_assigning_constructed_overflow_to_success": 0.49375308141656854
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        0
+      ],
+      "baseline_point_advantage": 0.49114687228625625,
+      "gap_after_assigning_constructed_overflow_to_success": 0.4911468721140764
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        0,
+        1
+      ],
+      "baseline_point_advantage": 0.48344460587129656,
+      "gap_after_assigning_constructed_overflow_to_success": 0.48344460569911674
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        0
+      ],
+      "baseline_point_advantage": 0.5070087813682959,
+      "gap_after_assigning_constructed_overflow_to_success": 0.507008781196116
+    },
+    {
+      "source": 8,
+      "arm": "responsive",
+      "horizon": 3.0,
+      "profile": [
+        1,
+        1,
+        1
+      ],
+      "baseline_point_advantage": 0.49375308158874837,
+      "gap_after_assigning_constructed_overflow_to_success": 0.49375308141656854
+    }
+  ]
+}

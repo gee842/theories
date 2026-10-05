@@ -1,5 +1,11 @@
 # Supporting conditions and shared generativity
 
+**Current continuation:** the [formalization and integration record](completion/INTEGRATION.md) places these studies in the common theory and tracks the remaining proof interfaces. Follow the linked specification and completion plan for ongoing work. Source claims below retain their original scope.
+
+The [stochastic realization](completion/STOCHASTIC-REALIZATION.md) and [joint-capability bridge](completion/JOINT-CAPABILITY-BRIDGE.md) now derive event-level accounting, finite-system absorption and finite-horizon reliable profiles from one process. The [experiment](../../../experiments/shared-renewal-capability/README.md) preserves the protocol, interval computation and independent check. The [joint-formation integration](completion/JOINT-FORMATION-INTEGRATION.md) records the completed contribution from the parallel theory session.
+
+The [physical regulation construction](completion/PHYSICAL-REGULATION.md) and [lag proof](completion/REGULATION-LAG.md) extend that same process. The [prospective regulator comparison](../../../experiments/shared-renewal-capability/regulation/README.md) preserves all unfavorable outcomes and makes the next obligation precise: explain when paid regulation repays its costs in shared functional possibilities. The [concern-settlement review](completion/CONCERN-SETTLEMENT-INTEGRATION.md) records a further completed strategic contribution and its missing physical bridges.
+
 This reading edition brings three later wisdom studies into the repository. They investigate the availability and timing of support, machinery that makes support usable, and conditional comparisons of shared generative capacity. Their mathematical claims retain the assumptions and limits stated in the source reports. Repository preservation is not new scientific validation or a completed integration with the concern models.
 
 | Study | Report and mathematics | Saved evidence and program |

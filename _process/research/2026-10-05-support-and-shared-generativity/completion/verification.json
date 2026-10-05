@@ -1,0 +1,55 @@
+{
+  "checked_at_utc": "2026-10-05T10:43:20.602265+00:00",
+  "previous_goal_turn_classification": "progress: operational specification and stochastic realization created",
+  "current_goal_turn_classification": "progress: completed theory contribution integrated; physical-to-joint-assay calculation and independent verification added",
+  "scope": "New documents/local links, original-source preservation and current checked experiment hashes; no unrelated scientific reruns.",
+  "local_links_checked": 76,
+  "missing_links": [],
+  "source_hashes_unchanged": [
+    "AGENTS.md",
+    "_process/research/2026-10-05-repository-reconciliation/README.md",
+    "_process/research/2026-10-05-support-and-shared-generativity/outputs/conditions-of-generativity-mathematics.md",
+    "_process/research/2026-10-05-support-and-shared-generativity/outputs/renewing-access-to-support-mathematics.md",
+    "_process/research/2026-10-05-support-and-shared-generativity/outputs/shared-generative-direction-mathematics.md",
+    "_process/research/2026-10-05-causal-foundations/outputs/formal-results.md",
+    "_process/research/2026-10-05-concern-theory/START-HERE.md",
+    "_process/research/2026-10-05-concern-theory/CLAIMS.md",
+    "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/outputs/combined-process-proof.md",
+    "sources/20-codex-theory-sessions-2026-10-05/full-picture-conjecture/outputs/combined-process-certification.md",
+    "sources/20-codex-theory-sessions-2026-10-05/scientific-principles/outputs/README.md",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md"
+  ],
+  "source_hashes_changed_since_inspection": [
+    "RESEARCH.md",
+    "_process/research/2026-10-05-revisable-concern/START-HERE.md",
+    "_process/research/2026-10-05-revisable-concern/CLAIMS.md"
+  ],
+  "known_expected_change": "RESEARCH.md is a mutable index. The active concern-settlement turn changed revisable-concern START-HERE.md and CLAIMS.md; those deltas await completion review. Their inspected earlier bytes are retained in the recorded Git blobs.",
+  "assay_source_hash_mismatches": [],
+  "independent_assay_check": "PASS: exact accounting and independent numerical agreement",
+  "assay_probabilities_compared": 48,
+  "output_hashes": {
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/JOINT-CAPABILITY-BRIDGE.md": "bd83d3ca53fb8aac4a17b9eedfd2bc763662c0e8c18b416f31f841267c7cd8b3",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md": "06ebda10eed1e72709e657216f487ebc56eecfeed187db4779649d916bd122dd",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/STOCHASTIC-REALIZATION.md": "8f4dfa02387770c66c95ee482b2b5527e3f50038d1952f63ec096f9ad048a48f",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/JOINT-FORMATION-INTEGRATION.md": "f54a56b7f3fd3bc751cfb19eaea7a3e3cdc057d5d9796effa3ff9cb8e0416c3b",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/ASSAY-REVIEW.md": "73dca5673f84164d47c00b9521791172819415402e019b041bb73a5df9a2633f",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/REVIEW.md": "22f8912c59826dbe9425b400675deffeca9c6d0d194b21d5c1299bf2c0e4627d",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md": "b77145d90131f69ae3a6a4c2493f9f1b0cdde258f478a18b005d52fbe022c570",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md": "c41e0870555155330e55392dafea8aa267cffff9d9e5214eecc00137f05f36f4",
+    "experiments/shared-renewal-capability/README.md": "25f41b54658719d428cfd849fdea85e1643dfb028032c7d816ca93035c2f39ff",
+    "experiments/shared-renewal-capability/PROTOCOL.md": "6fb843a79c2bcc64189d1a27fcab4e6e39359343cd0f402cdf18302fefc1a3fd"
+  },
+  "changed_sources_with_exact_retained_git_versions": [
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/START-HERE.md",
+      "blob": "1cacb72e67da2d0ee816cbd37ea92f01fbc2b9e6",
+      "sha256": "a52616f2f178ed02fd1a103a55a6a65268ddef077f6b8143dcfe080c0318d51a"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/CLAIMS.md",
+      "blob": "e9cb1e6d0885fe3b0e05f108365d7a7e4372b365",
+      "sha256": "bfeb540eab2288ae23314e999799627912be01217289dec89b0beca0a719876a"
+    }
+  ]
+}

@@ -1,0 +1,913 @@
+{
+  "status": "PASS: exact accounting and independent numerical agreement",
+  "not_a_rigorous_numeric_certificate": true,
+  "method": "Independent integer reaction generator; scipy.sparse.linalg.expm_multiply",
+  "producer_imported": false,
+  "source_sha256": {
+    "experiments/shared-renewal-capability/PROTOCOL.md": "6fb843a79c2bcc64189d1a27fcab4e6e39359343cd0f402cdf18302fefc1a3fd",
+    "experiments/shared-renewal-capability/certify.py": "5ca3b3730aa37e34267288c8ef05984e65322519af7edf0af8854bc9eb88eece",
+    "experiments/shared-renewal-capability/results.json": "25d2f18e55b021640678c4c19e1b74c571731c6ba8994a4f9fb13033b6f787da",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/STOCHASTIC-REALIZATION.md": "8f4dfa02387770c66c95ee482b2b5527e3f50038d1952f63ec096f9ad048a48f"
+  },
+  "checker_sha256": "b1da1233ac1cbdf91965b6c2acdd91a3af0e73435c2dc756532dd83baa0f2521",
+  "git_head_at_check": "b379528da1645db5b5c2eb559fce93831cfda2ec",
+  "runtime": {
+    "executable": "/private/tmp/meta-attractor-plot-env/bin/python",
+    "python": "3.11.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "absolute_probability_comparison_tolerance": 1e-11,
+  "floating_point_scope": "Tolerance is a disclosed cross-check threshold, not a proved roundoff bound. Tiny producer intervals cannot be certified by double precision. Their enclosure requires the separate directed-arithmetic and overflow argument.",
+  "maximum_float_distance_from_reported_interval": 2.7755575615628914e-15,
+  "maximum_probability_change_when_cap_increased_by_four": 3.885780586188048e-15,
+  "assay_probabilities_compared": 48,
+  "exact_generator_audits": [
+    {
+      "theta": 0,
+      "energy_states_through": 24,
+      "physical_states": 500,
+      "positive_labeled_events": 1676,
+      "all_degraded_face_states": 25,
+      "material_conservation": "exact integer PASS",
+      "nonnegative_successors_and_input_availability": "exact integer PASS",
+      "five_coordinate_drifts": "exact integer PASS",
+      "event_work_equivalent_accounting": "exact integer PASS",
+      "active_material_face_invariance": "exact integer PASS",
+      "scope": "Untruncated local events on every enumerated physical state; capture from f=cap is checked at its actual f=cap+1 target."
+    },
+    {
+      "theta": 4,
+      "energy_states_through": 24,
+      "physical_states": 500,
+      "positive_labeled_events": 1772,
+      "all_degraded_face_states": 25,
+      "material_conservation": "exact integer PASS",
+      "nonnegative_successors_and_input_availability": "exact integer PASS",
+      "five_coordinate_drifts": "exact integer PASS",
+      "event_work_equivalent_accounting": "exact integer PASS",
+      "active_material_face_invariance": "exact integer PASS",
+      "scope": "Untruncated local events on every enumerated physical state; capture from f=cap is checked at its actual f=cap+1 target."
+    }
+  ],
+  "exact_small_time_derivatives": [
+    {
+      "theta": 0,
+      "recycling_first_derivative": 1,
+      "reserve_first_derivative": -2,
+      "recycling_and_assembly_first_derivative": 0,
+      "recycling_and_assembly_quadratic_coefficient": "1/2",
+      "arithmetic": "exact integer/Fraction"
+    },
+    {
+      "theta": 4,
+      "recycling_first_derivative": 5,
+      "reserve_first_derivative": -6,
+      "recycling_and_assembly_first_derivative": 0,
+      "recycling_and_assembly_quadratic_coefficient": "5/2",
+      "arithmetic": "exact integer/Fraction"
+    }
+  ],
+  "fixed_half_reliability_H_quarter": {
+    "theta_zero_only": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "theta_four_only": [
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "conclusion": "Incomparable reliable sets for the singleton installed-run protocol."
+  },
+  "cases": [
+    {
+      "theta": 0,
+      "horizon": "0.05",
+      "energy_cap": 12,
+      "reachable_states": 417,
+      "maximum_exit_rate": 40,
+      "uniformization_mean_exact": "2",
+      "producer_decimal_mean_is_exact": true,
+      "total_probability": 1.0000000000000002,
+      "minimum_probability": 0.0,
+      "scipy_overflow_probability": 2.55994465044872e-25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "assays": [
+        {
+          "profile": [
+            0,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.99769817636273,
+          "scipy_probability_cap_plus_four": 0.99769817636273,
+          "producer_lower": "0.9976981763627298299269994480774216812784",
+          "producer_upper": "0.9976981763627298299270085071581096641392",
+          "distance_from_producer_interval_float": 1.1102230246251565e-16,
+          "cap_increase_absolute_difference": 0.0,
+          "classification_at_half": "reliable"
+        },
+        {
+          "profile": [
+            0,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.9071317657411606,
+          "scipy_probability_cap_plus_four": 0.9071317657411604,
+          "producer_lower": "0.9071317657411603679743376171333929841562",
+          "producer_upper": "0.9071317657411603679743466762140809670133",
+          "distance_from_producer_interval_float": 2.220446049250313e-16,
+          "cap_increase_absolute_difference": 2.220446049250313e-16,
+          "classification_at_half": "reliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.0011885422569749484,
+          "scipy_probability_cap_plus_four": 0.0011885422569749484,
+          "producer_lower": "0.001188542256974948227895503791763367865221",
+          "producer_upper": "0.001188542256974948227904562872451350682580",
+          "distance_from_producer_interval_float": 2.168404344971009e-19,
+          "cap_increase_absolute_difference": 0.0,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 9.117672443294244e-05,
+          "scipy_probability_cap_plus_four": 9.117672443294242e-05,
+          "producer_lower": "0.00009117672443294241737732325225277758468450",
+          "producer_upper": "0.00009117672443294241738638233294076040184668",
+          "distance_from_producer_interval_float": 1.3552527156068805e-20,
+          "cap_increase_absolute_difference": 1.3552527156068805e-20,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.04865435600384431,
+          "scipy_probability_cap_plus_four": 0.04865435600384429,
+          "producer_lower": "0.04865435600384428982431200821684240179384",
+          "producer_upper": "0.04865435600384428982432106729753038461482",
+          "distance_from_producer_interval_float": 2.0816681711721685e-17,
+          "cap_increase_absolute_difference": 2.0816681711721685e-17,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.003349729621692301,
+          "scipy_probability_cap_plus_four": 0.003349729621692302,
+          "producer_lower": "0.003349729621692302106544877502579739528798",
+          "producer_upper": "0.003349729621692302106553936583267722346305",
+          "distance_from_producer_interval_float": 1.3010426069826053e-18,
+          "cap_increase_absolute_difference": 8.673617379884035e-19,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.0011885422569749484,
+          "scipy_probability_cap_plus_four": 0.0011885422569749484,
+          "producer_lower": "0.001188542256974948227895503791763367865221",
+          "producer_upper": "0.001188542256974948227904562872451350682580",
+          "distance_from_producer_interval_float": 2.168404344971009e-19,
+          "cap_increase_absolute_difference": 0.0,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 9.117672443294244e-05,
+          "scipy_probability_cap_plus_four": 9.117672443294242e-05,
+          "producer_lower": "0.00009117672443294241737732325225277758468450",
+          "producer_upper": "0.00009117672443294241738638233294076040184668",
+          "distance_from_producer_interval_float": 1.3552527156068805e-20,
+          "cap_increase_absolute_difference": 1.3552527156068805e-20,
+          "classification_at_half": "unreliable"
+        }
+      ]
+    },
+    {
+      "theta": 4,
+      "horizon": "0.05",
+      "energy_cap": 12,
+      "reachable_states": 489,
+      "maximum_exit_rate": 110,
+      "uniformization_mean_exact": "11/2",
+      "producer_decimal_mean_is_exact": true,
+      "total_probability": 1.0000000000000002,
+      "minimum_probability": 2.0004112835174283e-37,
+      "scipy_overflow_probability": 8.875878736494113e-26,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "assays": [
+        {
+          "profile": [
+            0,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.9979746835818227,
+          "scipy_probability_cap_plus_four": 0.9979746835818226,
+          "producer_lower": "0.9979746835818225474226666489603728636043",
+          "producer_upper": "0.9979746835818225474227082486921349761276",
+          "distance_from_producer_interval_float": 2.220446049250313e-16,
+          "cap_increase_absolute_difference": 1.1102230246251565e-16,
+          "classification_at_half": "reliable"
+        },
+        {
+          "profile": [
+            0,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.7510967698719828,
+          "scipy_probability_cap_plus_four": 0.7510967698719829,
+          "producer_lower": "0.7510967698719827535137958034081437854596",
+          "producer_upper": "0.7510967698719827535138374031399058979723",
+          "distance_from_producer_interval_float": 1.1102230246251565e-16,
+          "cap_increase_absolute_difference": 1.1102230246251565e-16,
+          "classification_at_half": "reliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.005553445883355528,
+          "scipy_probability_cap_plus_four": 0.005553445883355527,
+          "producer_lower": "0.005553445883355529170396380980125508060232",
+          "producer_upper": "0.005553445883355529170437980711887620521800",
+          "distance_from_producer_interval_float": 8.673617379884035e-19,
+          "cap_increase_absolute_difference": 8.673617379884035e-19,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.0004109714329127095,
+          "scipy_probability_cap_plus_four": 0.00041097143291270947,
+          "producer_lower": "0.0004109714329127097294363850337431275812760",
+          "producer_upper": "0.0004109714329127097294779847655052400425287",
+          "distance_from_producer_interval_float": 2.168404344971009e-19,
+          "cap_increase_absolute_difference": 5.421010862427522e-20,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.21986464097956035,
+          "scipy_probability_cap_plus_four": 0.21986464097956032,
+          "producer_lower": "0.2198646409795603333855417667029563735926",
+          "producer_upper": "0.2198646409795603333855833664347184861017",
+          "distance_from_producer_interval_float": 2.7755575615628914e-17,
+          "cap_increase_absolute_difference": 2.7755575615628914e-17,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.014075583726402654,
+          "scipy_probability_cap_plus_four": 0.014075583726402652,
+          "producer_lower": "0.01407558372640265487874525628258428034903",
+          "producer_upper": "0.01407558372640265487878685601434639281458",
+          "distance_from_producer_interval_float": 0.0,
+          "cap_increase_absolute_difference": 1.734723475976807e-18,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.005553445883355528,
+          "scipy_probability_cap_plus_four": 0.005553445883355527,
+          "producer_lower": "0.005553445883355529170396380980125508060232",
+          "producer_upper": "0.005553445883355529170437980711887620521800",
+          "distance_from_producer_interval_float": 8.673617379884035e-19,
+          "cap_increase_absolute_difference": 8.673617379884035e-19,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.0004109714329127095,
+          "scipy_probability_cap_plus_four": 0.00041097143291270947,
+          "producer_lower": "0.0004109714329127097294363850337431275812760",
+          "producer_upper": "0.0004109714329127097294779847655052400425287",
+          "distance_from_producer_interval_float": 2.168404344971009e-19,
+          "cap_increase_absolute_difference": 5.421010862427522e-20,
+          "classification_at_half": "unreliable"
+        }
+      ]
+    },
+    {
+      "theta": 0,
+      "horizon": "0.25",
+      "energy_cap": 12,
+      "reachable_states": 417,
+      "maximum_exit_rate": 40,
+      "uniformization_mean_exact": "10",
+      "producer_decimal_mean_is_exact": true,
+      "total_probability": 0.9999999999999996,
+      "minimum_probability": 1.5337588964642751e-24,
+      "scipy_overflow_probability": 8.685507268791793e-18,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "assays": [
+        {
+          "profile": [
+            0,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.957861991141324,
+          "scipy_probability_cap_plus_four": 0.9578619911413238,
+          "producer_lower": "0.9578619911413243855790694158613149690591",
+          "producer_upper": "0.9578619911413243942646201819415579911182",
+          "distance_from_producer_interval_float": 4.440892098500626e-16,
+          "cap_increase_absolute_difference": 2.220446049250313e-16,
+          "classification_at_half": "reliable"
+        },
+        {
+          "profile": [
+            0,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.6461078278512653,
+          "scipy_probability_cap_plus_four": 0.6461078278512653,
+          "producer_lower": "0.6461078278512657222064171424444183524474",
+          "producer_upper": "0.6461078278512657308919679085246613744994",
+          "distance_from_producer_interval_float": 4.440892098500626e-16,
+          "cap_increase_absolute_difference": 0.0,
+          "classification_at_half": "reliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.024095029578971288,
+          "scipy_probability_cap_plus_four": 0.024095029578971285,
+          "producer_lower": "0.02409502957897129504580690531975290932367",
+          "producer_upper": "0.02409502957897130373135767139999593133026",
+          "distance_from_producer_interval_float": 6.938893903907228e-18,
+          "cap_increase_absolute_difference": 3.469446951953614e-18,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.0066834377983809685,
+          "scipy_probability_cap_plus_four": 0.006683437798380971,
+          "producer_lower": "0.006683437798380970265932273647410039110213",
+          "producer_upper": "0.006683437798380978951483039727653061114803",
+          "distance_from_producer_interval_float": 1.734723475976807e-18,
+          "cap_increase_absolute_difference": 2.6020852139652106e-18,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.2106194115064003,
+          "scipy_probability_cap_plus_four": 0.21061941150640023,
+          "producer_lower": "0.2106194115064003526907132147827466159923",
+          "producer_upper": "0.2106194115064003613762639808629896380337",
+          "distance_from_producer_interval_float": 5.551115123125783e-17,
+          "cap_increase_absolute_difference": 5.551115123125783e-17,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.05238690928667859,
+          "scipy_probability_cap_plus_four": 0.05238690928667858,
+          "producer_lower": "0.05238690928667860288941644512174309840520",
+          "producer_upper": "0.05238690928667861157496721120198612041357",
+          "distance_from_producer_interval_float": 6.938893903907228e-18,
+          "cap_increase_absolute_difference": 1.3877787807814457e-17,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.024095029578971288,
+          "scipy_probability_cap_plus_four": 0.024095029578971285,
+          "producer_lower": "0.02409502957897129504580690531975290932367",
+          "producer_upper": "0.02409502957897130373135767139999593133026",
+          "distance_from_producer_interval_float": 6.938893903907228e-18,
+          "cap_increase_absolute_difference": 3.469446951953614e-18,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.0066834377983809685,
+          "scipy_probability_cap_plus_four": 0.006683437798380971,
+          "producer_lower": "0.006683437798380970265932273647410039110213",
+          "producer_upper": "0.006683437798380978951483039727653061114803",
+          "distance_from_producer_interval_float": 1.734723475976807e-18,
+          "cap_increase_absolute_difference": 2.6020852139652106e-18,
+          "classification_at_half": "unreliable"
+        }
+      ]
+    },
+    {
+      "theta": 4,
+      "horizon": "0.25",
+      "energy_cap": 12,
+      "reachable_states": 489,
+      "maximum_exit_rate": 110,
+      "uniformization_mean_exact": "55/2",
+      "producer_decimal_mean_is_exact": true,
+      "total_probability": 0.9999999999999998,
+      "minimum_probability": 2.601046967471482e-24,
+      "scipy_overflow_probability": 1.6207082240965206e-17,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "assays": [
+        {
+          "profile": [
+            0,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.9747141877130624,
+          "scipy_probability_cap_plus_four": 0.9747141877130624,
+          "producer_lower": "0.9747141877130624968853705551708475168150",
+          "producer_upper": "0.9747141877130625130924820029283530147730",
+          "distance_from_producer_interval_float": 1.1102230246251565e-16,
+          "cap_increase_absolute_difference": 0.0,
+          "classification_at_half": "reliable"
+        },
+        {
+          "profile": [
+            0,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.3443315909249574,
+          "scipy_probability_cap_plus_four": 0.34433159092495735,
+          "producer_lower": "0.3443315909249574290526129999367102967315",
+          "producer_upper": "0.3443315909249574452597244476942157946406",
+          "distance_from_producer_interval_float": 0.0,
+          "cap_increase_absolute_difference": 5.551115123125783e-17,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.08665191565596103,
+          "scipy_probability_cap_plus_four": 0.08665191565596105,
+          "producer_lower": "0.08665191565596107594180100932090512694131",
+          "producer_upper": "0.08665191565596109214891245707841062479155",
+          "distance_from_producer_interval_float": 4.163336342344337e-17,
+          "cap_increase_absolute_difference": 1.3877787807814457e-17,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.021045556479596772,
+          "scipy_probability_cap_plus_four": 0.021045556479596793,
+          "producer_lower": "0.02104555647959678007908349044045316550732",
+          "producer_upper": "0.02104555647959679628619493819795866335190",
+          "distance_from_producer_interval_float": 6.938893903907228e-18,
+          "cap_increase_absolute_difference": 2.0816681711721685e-17,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.659720171501266,
+          "scipy_probability_cap_plus_four": 0.6597201715012662,
+          "producer_lower": "0.6597201715012662224505257094868852000115",
+          "producer_upper": "0.6597201715012662386576371572443906979420",
+          "distance_from_producer_interval_float": 2.220446049250313e-16,
+          "cap_increase_absolute_difference": 1.1102230246251565e-16,
+          "classification_at_half": "reliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.12985915429607553,
+          "scipy_probability_cap_plus_four": 0.12985915429607559,
+          "producer_lower": "0.1298591542960755860226255623428604260070",
+          "producer_upper": "0.1298591542960756022297370101003659238943",
+          "distance_from_producer_interval_float": 5.551115123125783e-17,
+          "cap_increase_absolute_difference": 5.551115123125783e-17,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.08665191565596103,
+          "scipy_probability_cap_plus_four": 0.08665191565596105,
+          "producer_lower": "0.08665191565596107594180100932090512694131",
+          "producer_upper": "0.08665191565596109214891245707841062479155",
+          "distance_from_producer_interval_float": 4.163336342344337e-17,
+          "cap_increase_absolute_difference": 1.3877787807814457e-17,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.021045556479596772,
+          "scipy_probability_cap_plus_four": 0.021045556479596793,
+          "producer_lower": "0.02104555647959678007908349044045316550732",
+          "producer_upper": "0.02104555647959679628619493819795866335190",
+          "distance_from_producer_interval_float": 6.938893903907228e-18,
+          "cap_increase_absolute_difference": 2.0816681711721685e-17,
+          "classification_at_half": "unreliable"
+        }
+      ]
+    },
+    {
+      "theta": 0,
+      "horizon": "1",
+      "energy_cap": 24,
+      "reachable_states": 801,
+      "maximum_exit_rate": 76,
+      "uniformization_mean_exact": "76",
+      "producer_decimal_mean_is_exact": true,
+      "total_probability": 0.9999999999999989,
+      "minimum_probability": 4.714410269036663e-36,
+      "scipy_overflow_probability": 4.287163221906711e-25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "assays": [
+        {
+          "profile": [
+            0,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.7162347585636358,
+          "scipy_probability_cap_plus_four": 0.7162347585636378,
+          "producer_lower": "0.7162347585636366557201320312955384796685",
+          "producer_upper": "0.7162347585636366557202242218578446842760",
+          "distance_from_producer_interval_float": 7.771561172376096e-16,
+          "cap_increase_absolute_difference": 1.9984014443252818e-15,
+          "classification_at_half": "reliable"
+        },
+        {
+          "profile": [
+            0,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.29282716265064046,
+          "scipy_probability_cap_plus_four": 0.29282716265064124,
+          "producer_lower": "0.2928271626506407580048092639515592806992",
+          "producer_upper": "0.2928271626506407580049014545138654852337",
+          "distance_from_producer_interval_float": 2.7755575615628914e-16,
+          "cap_increase_absolute_difference": 7.771561172376096e-16,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.16596477314213479,
+          "scipy_probability_cap_plus_four": 0.1659647731421352,
+          "producer_lower": "0.1659647731421349362582837054195668095067",
+          "producer_upper": "0.1659647731421349362583758959818730139904",
+          "distance_from_producer_interval_float": 1.3877787807814457e-16,
+          "cap_increase_absolute_difference": 4.163336342344337e-16,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.07219845246956906,
+          "scipy_probability_cap_plus_four": 0.07219845246956924,
+          "producer_lower": "0.07219845246956913588467392393729481002267",
+          "producer_upper": "0.07219845246956913588476611449960101445412",
+          "distance_from_producer_interval_float": 6.938893903907228e-17,
+          "cap_increase_absolute_difference": 1.8041124150158794e-16,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.42302622324090094,
+          "scipy_probability_cap_plus_four": 0.423026223240902,
+          "producer_lower": "0.4230262232409013372750053630681939299058",
+          "producer_upper": "0.4230262232409013372750975536305001344637",
+          "distance_from_producer_interval_float": 3.885780586188048e-16,
+          "cap_increase_absolute_difference": 1.0547118733938987e-15,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.16514324607915537,
+          "scipy_probability_cap_plus_four": 0.16514324607915581,
+          "producer_lower": "0.1651432460791555246277584686885933843508",
+          "producer_upper": "0.1651432460791555246278506592508995888562",
+          "distance_from_producer_interval_float": 1.6653345369377348e-16,
+          "cap_increase_absolute_difference": 4.440892098500626e-16,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.16596477314213479,
+          "scipy_probability_cap_plus_four": 0.1659647731421352,
+          "producer_lower": "0.1659647731421349362582837054195668095067",
+          "producer_upper": "0.1659647731421349362583758959818730139904",
+          "distance_from_producer_interval_float": 1.3877787807814457e-16,
+          "cap_increase_absolute_difference": 4.163336342344337e-16,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.07219845246956906,
+          "scipy_probability_cap_plus_four": 0.07219845246956924,
+          "producer_lower": "0.07219845246956913588467392393729481002267",
+          "producer_upper": "0.07219845246956913588476611449960101445412",
+          "distance_from_producer_interval_float": 6.938893903907228e-17,
+          "cap_increase_absolute_difference": 1.8041124150158794e-16,
+          "classification_at_half": "unreliable"
+        }
+      ]
+    },
+    {
+      "theta": 4,
+      "horizon": "1",
+      "energy_cap": 24,
+      "reachable_states": 945,
+      "maximum_exit_rate": 218,
+      "uniformization_mean_exact": "218",
+      "producer_decimal_mean_is_exact": true,
+      "total_probability": 0.9999999999999969,
+      "minimum_probability": 4.561346847189561e-47,
+      "scipy_overflow_probability": 9.030247126563194e-25,
+      "reliable_profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "assays": [
+        {
+          "profile": [
+            0,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.8420144810666771,
+          "scipy_probability_cap_plus_four": 0.842014481066681,
+          "producer_lower": "0.8420144810666798193273644262755794606070",
+          "producer_upper": "0.8420144810666798193274304336906667981353",
+          "distance_from_producer_interval_float": 2.7755575615628914e-15,
+          "cap_increase_absolute_difference": 3.885780586188048e-15,
+          "classification_at_half": "reliable"
+        },
+        {
+          "profile": [
+            0,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.2202839910412388,
+          "scipy_probability_cap_plus_four": 0.2202839910412398,
+          "producer_lower": "0.2202839910412394827434180092977231029934",
+          "producer_upper": "0.2202839910412394827434840167128104402180",
+          "distance_from_producer_interval_float": 6.938893903907228e-16,
+          "cap_increase_absolute_difference": 9.992007221626409e-16,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.3453256555724252,
+          "scipy_probability_cap_plus_four": 0.34532565557242667,
+          "producer_lower": "0.3453256555724263627057142513350190923976",
+          "producer_upper": "0.3453256555724263627057802587501064296505",
+          "distance_from_producer_interval_float": 1.1102230246251565e-15,
+          "cap_increase_absolute_difference": 1.4432899320127035e-15,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            0,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.1181250652945926,
+          "scipy_probability_cap_plus_four": 0.1181250652945931,
+          "producer_lower": "0.1181250652945929514155733619062118596348",
+          "producer_upper": "0.1181250652945929514156393693212991967626",
+          "distance_from_producer_interval_float": 3.469446951953614e-16,
+          "cap_increase_absolute_difference": 4.996003610813204e-16,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.7746683296933836,
+          "scipy_probability_cap_plus_four": 0.7746683296933872,
+          "producer_lower": "0.7746683296933861152234180381917898563215",
+          "producer_upper": "0.7746683296933861152234840456068771938142",
+          "distance_from_producer_interval_float": 2.55351295663786e-15,
+          "cap_increase_absolute_difference": 3.552713678800501e-15,
+          "classification_at_half": "reliable"
+        },
+        {
+          "profile": [
+            1,
+            0,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.20828558958715923,
+          "scipy_probability_cap_plus_four": 0.20828558958716015,
+          "producer_lower": "0.2082855895871598759873874408005802084589",
+          "producer_upper": "0.2082855895871598759874534482156675456715",
+          "distance_from_producer_interval_float": 6.38378239159465e-16,
+          "cap_increase_absolute_difference": 9.159339953157541e-16,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            0
+          ],
+          "scipy_killed_chain_probability": 0.3453256555724252,
+          "scipy_probability_cap_plus_four": 0.34532565557242667,
+          "producer_lower": "0.3453256555724263627057142513350190923976",
+          "producer_upper": "0.3453256555724263627057802587501064296505",
+          "distance_from_producer_interval_float": 1.1102230246251565e-15,
+          "cap_increase_absolute_difference": 1.4432899320127035e-15,
+          "classification_at_half": "unreliable"
+        },
+        {
+          "profile": [
+            1,
+            1,
+            1
+          ],
+          "scipy_killed_chain_probability": 0.1181250652945926,
+          "scipy_probability_cap_plus_four": 0.1181250652945931,
+          "producer_lower": "0.1181250652945929514155733619062118596348",
+          "producer_upper": "0.1181250652945929514156393693212991967626",
+          "distance_from_producer_interval_float": 3.469446951953614e-16,
+          "cap_increase_absolute_difference": 4.996003610813204e-16,
+          "classification_at_half": "unreliable"
+        }
+      ]
+    }
+  ]
+}
