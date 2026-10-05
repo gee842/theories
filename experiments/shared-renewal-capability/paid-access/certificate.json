@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "method": "Directed integer propagation and rational exponential-tail bounds; no floating arithmetic",
+  "uniformization_rate": 21,
+  "deadline": 10,
+  "poisson_order": 512,
+  "integer_scale": "340282366920938463463374607431768211456",
+  "reported_denominator": "1000000000000000000000000000000",
+  "arms": {
+    "0": {
+      "lower_grid_integer": "278831198712280953",
+      "upper_grid_integer": "278831198712280954",
+      "denominator": "1000000000000000000000000000000",
+      "lower_exact": "278831198712280953/1000000000000000000000000000000",
+      "upper_exact": "139415599356140477/500000000000000000000000000000",
+      "poisson_tail_upper": "1/10^65",
+      "transient_states": 1393
+    },
+    "1": {
+      "lower_grid_integer": "269173570450682085",
+      "upper_grid_integer": "269173570450682086",
+      "denominator": "1000000000000000000000000000000",
+      "lower_exact": "53834714090136417/200000000000000000000000000000",
+      "upper_exact": "134586785225341043/500000000000000000000000000000",
+      "poisson_tail_upper": "1/10^65",
+      "transient_states": 1393
+    }
+  },
+  "difference_lower_exact": "9657628261598867/1000000000000000000000000000000",
+  "difference_upper_exact": "9657628261598869/1000000000000000000000000000000",
+  "earliest_success_order": 24,
+  "earliest_difference_coefficient": "-3161/1013804577995489280000",
+  "earliest_rate_sum_difference": "-1934532",
+  "protocol_sha256": "440bd7d4031b9a51db9a92142d752e3ff4c133ee6f2ebfe218d50414dfade55d",
+  "model_sha256": "c8cd7ead0ad6b9c8e33b71f85e7d10752a6eab2e27922093b54fa5ac7737fdac",
+  "certificate_sha256": "8815b03a8df5b5db0ffa81a5e44a5e645d76a02ffb9c026a5073b0a91d40dda5"
+}

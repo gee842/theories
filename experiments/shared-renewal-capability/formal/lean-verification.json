@@ -1,0 +1,15 @@
+{
+  "checked_at_utc": "2026-10-05T13:44:53.414873+00:00",
+  "command": [
+    "lean",
+    "RenewalLedger.lean"
+  ],
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "exit_code": 0,
+  "source_sha256": "1c78c6dae53bc9b7c15ae3a24a63d83558d585fa07a4c402c25c571229514e74",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "output_sha256": "97cdc914bb338a23be3710ef73c762ac5f2804a1a745b3f8b7fb3f790d065782",
+  "contains_sorry": false,
+  "contains_custom_axiom_declaration": false,
+  "scope": "Machine-checked stoichiometric ledger, bare-storage construction obstruction and conditional six-capture-per-full-turnover lower bound; aggregate ledger projection, not kinetic reduction or probability theorem."
+}

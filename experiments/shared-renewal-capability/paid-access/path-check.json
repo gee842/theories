@@ -1,0 +1,1542 @@
+{
+  "status": "passed",
+  "turnover_steps": 21,
+  "formation_steps": 5,
+  "turnover_captures": 6,
+  "total_captures": 7,
+  "initial_work": 6,
+  "entry_and_return_work": 5,
+  "arms": {
+    "0": {
+      "steps": [
+        {
+          "event": "wear_A",
+          "before": [
+            [
+              "A",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            0,
+            0
+          ],
+          "after": [
+            [
+              "D",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            0
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": -1
+        },
+        {
+          "event": "bound_recycling",
+          "before": [
+            [
+              "D",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            0
+          ],
+          "after": [
+            [
+              "R",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            0
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "R",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            0
+          ],
+          "after": [
+            [
+              "R",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            1
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 1
+        },
+        {
+          "event": "bound_A_formation",
+          "before": [
+            [
+              "R",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            1
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            1
+          ],
+          "selected_rate": 1,
+          "total_hazard": 8,
+          "work_change": -1
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "A",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            1
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 1
+        },
+        {
+          "event": "wear_Q",
+          "before": [
+            [
+              "A",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "D",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            1,
+            3,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": -1
+        },
+        {
+          "event": "Y_dissociation",
+          "before": [
+            [
+              "A",
+              "D",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            1,
+            3,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "D",
+              "G",
+              "Y"
+            ],
+            [],
+            1,
+            3,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 5,
+          "work_change": 0
+        },
+        {
+          "event": "free_Y_recycling",
+          "before": [
+            [
+              "A",
+              "D",
+              "G",
+              "Y"
+            ],
+            [],
+            1,
+            3,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "R",
+              "G",
+              "Y"
+            ],
+            [],
+            0,
+            3,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 7,
+          "work_change": 0
+        },
+        {
+          "event": "Y_binding",
+          "before": [
+            [
+              "A",
+              "R",
+              "G",
+              "Y"
+            ],
+            [],
+            0,
+            3,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "R",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 0
+        },
+        {
+          "event": "assemble",
+          "before": [
+            [
+              "A",
+              "R",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 5,
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "A",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            3
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 1
+        },
+        {
+          "event": "wear_G",
+          "before": [
+            [
+              "A",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            3
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "D",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": -1
+        },
+        {
+          "event": "bound_recycling",
+          "before": [
+            [
+              "A",
+              "Q",
+              "D",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "R",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "selected_rate": 1,
+          "total_hazard": 5,
+          "work_change": 0
+        },
+        {
+          "event": "free_reproduction",
+          "before": [
+            [
+              "A",
+              "C",
+              "R",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "Y",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "A",
+              "C",
+              "Y",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            4
+          ],
+          "selected_rate": 1,
+          "total_hazard": 5,
+          "work_change": 1
+        },
+        {
+          "event": "wear_Y",
+          "before": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            4
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "D"
+            ],
+            [],
+            0,
+            15,
+            4
+          ],
+          "selected_rate": 1,
+          "total_hazard": 5,
+          "work_change": -1
+        },
+        {
+          "event": "bound_recycling",
+          "before": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "D"
+            ],
+            [],
+            0,
+            15,
+            4
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "Y",
+              "R"
+            ],
+            [],
+            0,
+            15,
+            4
+          ],
+          "selected_rate": 1,
+          "total_hazard": 5,
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "A",
+              "C",
+              "Y",
+              "R"
+            ],
+            [],
+            0,
+            15,
+            4
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "R"
+            ],
+            [],
+            0,
+            15,
+            5
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 1
+        },
+        {
+          "event": "bound_G_fabrication",
+          "before": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "R"
+            ],
+            [],
+            0,
+            15,
+            5
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "Y",
+              "G"
+            ],
+            [],
+            0,
+            15,
+            5
+          ],
+          "selected_rate": 1,
+          "total_hazard": 9,
+          "work_change": -1
+        },
+        {
+          "event": "Y_binding",
+          "before": [
+            [
+              "A",
+              "C",
+              "Y",
+              "G"
+            ],
+            [],
+            0,
+            15,
+            5
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "Y",
+              "G"
+            ],
+            [
+              [
+                3,
+                2
+              ]
+            ],
+            0,
+            15,
+            5
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "A",
+              "C",
+              "Y",
+              "G"
+            ],
+            [
+              [
+                3,
+                2
+              ]
+            ],
+            0,
+            15,
+            5
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "G"
+            ],
+            [
+              [
+                3,
+                2
+              ]
+            ],
+            0,
+            15,
+            6
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 1
+        }
+      ],
+      "return_path_probability": "1/17142160896000000",
+      "entry_selected_path_probability": "1/4725",
+      "integrated_selected_path_by_H10_lower_bound": "1/5435597211514070630400000000",
+      "final_state": [
+        [
+          "A",
+          "Q",
+          "Y",
+          "G"
+        ],
+        [
+          [
+            3,
+            2
+          ]
+        ],
+        0,
+        15,
+        6
+      ]
+    },
+    "1": {
+      "steps": [
+        {
+          "event": "wear_A",
+          "before": [
+            [
+              "A",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            0,
+            0
+          ],
+          "after": [
+            [
+              "D",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            0
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": -1
+        },
+        {
+          "event": "bound_recycling",
+          "before": [
+            [
+              "D",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            0
+          ],
+          "after": [
+            [
+              "R",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            0
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "R",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            0
+          ],
+          "after": [
+            [
+              "R",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            1
+          ],
+          "selected_rate": 1,
+          "total_hazard": 7,
+          "work_change": 1
+        },
+        {
+          "event": "bound_A_formation",
+          "before": [
+            [
+              "R",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            1
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            1
+          ],
+          "selected_rate": 1,
+          "total_hazard": 9,
+          "work_change": -1
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "A",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            1
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 1
+        },
+        {
+          "event": "wear_Q",
+          "before": [
+            [
+              "A",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            1,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "D",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            1,
+            3,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": -1
+        },
+        {
+          "event": "Y_dissociation",
+          "before": [
+            [
+              "A",
+              "D",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            1,
+            3,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "D",
+              "G",
+              "Y"
+            ],
+            [],
+            1,
+            3,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 5,
+          "work_change": 0
+        },
+        {
+          "event": "free_Y_recycling",
+          "before": [
+            [
+              "A",
+              "D",
+              "G",
+              "Y"
+            ],
+            [],
+            1,
+            3,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "R",
+              "G",
+              "Y"
+            ],
+            [],
+            0,
+            3,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 7,
+          "work_change": 0
+        },
+        {
+          "event": "Y_binding",
+          "before": [
+            [
+              "A",
+              "R",
+              "G",
+              "Y"
+            ],
+            [],
+            0,
+            3,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "R",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 0
+        },
+        {
+          "event": "assemble",
+          "before": [
+            [
+              "A",
+              "R",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            2
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "A",
+              "C",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            2
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            3
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 1
+        },
+        {
+          "event": "wear_G",
+          "before": [
+            [
+              "A",
+              "Q",
+              "G",
+              "Y"
+            ],
+            [
+              [
+                2,
+                3
+              ]
+            ],
+            0,
+            3,
+            3
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "D",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": -1
+        },
+        {
+          "event": "bound_recycling",
+          "before": [
+            [
+              "A",
+              "Q",
+              "D",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "R",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "selected_rate": 1,
+          "total_hazard": 5,
+          "work_change": 0
+        },
+        {
+          "event": "free_reproduction",
+          "before": [
+            [
+              "A",
+              "C",
+              "R",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "Y",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "A",
+              "C",
+              "Y",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            3
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            4
+          ],
+          "selected_rate": 1,
+          "total_hazard": 5,
+          "work_change": 1
+        },
+        {
+          "event": "wear_Y",
+          "before": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "Y"
+            ],
+            [],
+            0,
+            7,
+            4
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "D"
+            ],
+            [],
+            0,
+            15,
+            4
+          ],
+          "selected_rate": 1,
+          "total_hazard": 5,
+          "work_change": -1
+        },
+        {
+          "event": "bound_recycling",
+          "before": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "D"
+            ],
+            [],
+            0,
+            15,
+            4
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "Y",
+              "R"
+            ],
+            [],
+            0,
+            15,
+            4
+          ],
+          "selected_rate": 1,
+          "total_hazard": 5,
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "A",
+              "C",
+              "Y",
+              "R"
+            ],
+            [],
+            0,
+            15,
+            4
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "R"
+            ],
+            [],
+            0,
+            15,
+            5
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 1
+        },
+        {
+          "event": "bound_G_fabrication",
+          "before": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "R"
+            ],
+            [],
+            0,
+            15,
+            5
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "Y",
+              "G"
+            ],
+            [],
+            0,
+            15,
+            5
+          ],
+          "selected_rate": 1,
+          "total_hazard": 9,
+          "work_change": -1
+        },
+        {
+          "event": "Y_binding",
+          "before": [
+            [
+              "A",
+              "C",
+              "Y",
+              "G"
+            ],
+            [],
+            0,
+            15,
+            5
+          ],
+          "after": [
+            [
+              "A",
+              "C",
+              "Y",
+              "G"
+            ],
+            [
+              [
+                3,
+                2
+              ]
+            ],
+            0,
+            15,
+            5
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "before": [
+            [
+              "A",
+              "C",
+              "Y",
+              "G"
+            ],
+            [
+              [
+                3,
+                2
+              ]
+            ],
+            0,
+            15,
+            5
+          ],
+          "after": [
+            [
+              "A",
+              "Q",
+              "Y",
+              "G"
+            ],
+            [
+              [
+                3,
+                2
+              ]
+            ],
+            0,
+            15,
+            6
+          ],
+          "selected_rate": 1,
+          "total_hazard": 6,
+          "work_change": 1
+        }
+      ],
+      "return_path_probability": "1/26998903411200000",
+      "entry_selected_path_probability": "1/5670",
+      "integrated_selected_path_by_H10_lower_bound": "1/10273278729761593491456000000",
+      "final_state": [
+        [
+          "A",
+          "Q",
+          "Y",
+          "G"
+        ],
+        [
+          [
+            3,
+            2
+          ]
+        ],
+        0,
+        15,
+        6
+      ]
+    }
+  },
+  "method": "Exact rational selected-path accounting; same enumerated event table, not an independent chemistry reconstruction",
+  "model_sha256": "c8cd7ead0ad6b9c8e33b71f85e7d10752a6eab2e27922093b54fa5ac7737fdac",
+  "checker_sha256": "08bc3495a073b0b39c88f0ea41a959e4b9e6000dc5ca0f37b311a67eeb9d26d2"
+}

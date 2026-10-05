@@ -1,0 +1,29 @@
+{
+  "status": "computed",
+  "protocol_sha256": "440bd7d4031b9a51db9a92142d752e3ff4c133ee6f2ebfe218d50414dfade55d",
+  "checker_sha256": "c8cd7ead0ad6b9c8e33b71f85e7d10752a6eab2e27922093b54fa5ac7737fdac",
+  "arms": {
+    "0": {
+      "states": 1393,
+      "max_exit_rate": 21,
+      "primary_deadline": 10,
+      "float_probability_at_H10": 2.7883119871225666e-13,
+      "float_eventual_probability": 2.7883251224524965e-13,
+      "shortest_success_jump_count": 24,
+      "leading_coefficient": "17473/391697223316439040000",
+      "shortest_path_rate_sum": "27677232",
+      "numeric_scope": "Floating scipy exponential/linear solve only; exact leading coefficient uses integers"
+    },
+    "1": {
+      "states": 1393,
+      "max_exit_rate": 21,
+      "primary_deadline": 10,
+      "float_probability_at_H10": 2.6917357045065e-13,
+      "float_eventual_probability": 2.6917464678682944e-13,
+      "shortest_success_jump_count": 24,
+      "leading_coefficient": "131/2744812522045440000",
+      "shortest_path_rate_sum": "29611764",
+      "numeric_scope": "Floating scipy exponential/linear solve only; exact leading coefficient uses integers"
+    }
+  }
+}
