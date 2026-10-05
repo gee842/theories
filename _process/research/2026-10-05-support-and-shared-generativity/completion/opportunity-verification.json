@@ -1,0 +1,174 @@
+{
+  "created_at_utc": "2026-10-05T11:49:04.778864+00:00",
+  "type": "source preservation, link and integration check; no scientific rerun",
+  "repository_head_before_snapshot": "9aa1b3ab1623b824082d6b5a1da2b2f22d3e29da",
+  "goal_status": "active; general physical realization, directional emergence and coverage unresolved",
+  "local_links_checked": 105,
+  "missing_local_links": [],
+  "input_hash_checks": [
+    {
+      "record": "diagnostic",
+      "path": "experiments/shared-renewal-capability/regulation/response/PROTOCOL.md",
+      "verified_path": "experiments/shared-renewal-capability/regulation/response/PROTOCOL-at-run.txt",
+      "sha256": "f28f0066d52ded394c80517c48a64eea533ad251deae08d123e6a3d97006784e",
+      "matches": true,
+      "interpretation": "as-run archive; recorded link-only repair"
+    },
+    {
+      "record": "diagnostic",
+      "path": "experiments/shared-renewal-capability/regulation/response/decompose.py",
+      "verified_path": "experiments/shared-renewal-capability/regulation/response/decompose.py",
+      "sha256": "e1c8c28ff0f87d6391619fb745a43951a2f18457e84db5d6259191d91b011e10",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "diagnostic",
+      "path": "experiments/shared-renewal-capability/regulation/compare.py",
+      "verified_path": "experiments/shared-renewal-capability/regulation/compare.py",
+      "sha256": "6b3163a619b28435cc016aefb14a92519bd459af27ee9fd9f380c73e5bf3c66f",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "diagnostic",
+      "path": "experiments/shared-renewal-capability/regulation/PROTOCOL.md",
+      "verified_path": "experiments/shared-renewal-capability/regulation/PROTOCOL.md",
+      "sha256": "d8ca147ed3890f26203ac9c0d03f6e05dbdf7010dcd926c836e1cc429bb34747",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "diagnostic",
+      "path": "experiments/shared-renewal-capability/regulation/results.json",
+      "verified_path": "experiments/shared-renewal-capability/regulation/results.json",
+      "sha256": "5c6221564684327c05484fe803069d19e2a8f4a0e12830785d83004ba387b87f",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "independent",
+      "path": "experiments/shared-renewal-capability/regulation/response/results.json",
+      "verified_path": "experiments/shared-renewal-capability/regulation/response/results.json",
+      "sha256": "ee23df652c8b7f53d81ab4892669fa201b3890ba4e8835ee8a04959776771df6",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "independent",
+      "path": "experiments/shared-renewal-capability/regulation/response/decompose.py",
+      "verified_path": "experiments/shared-renewal-capability/regulation/response/decompose.py",
+      "sha256": "e1c8c28ff0f87d6391619fb745a43951a2f18457e84db5d6259191d91b011e10",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "independent",
+      "path": "experiments/shared-renewal-capability/regulation/response/PROTOCOL.md",
+      "verified_path": "experiments/shared-renewal-capability/regulation/response/PROTOCOL.md",
+      "sha256": "61c2449d7f0d82bbe045c145445a07e1d1be879a41c2c799a0add249f561d047",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "independent",
+      "path": "experiments/shared-renewal-capability/regulation/response/PROTOCOL-at-run.txt",
+      "verified_path": "experiments/shared-renewal-capability/regulation/response/PROTOCOL-at-run.txt",
+      "sha256": "f28f0066d52ded394c80517c48a64eea533ad251deae08d123e6a3d97006784e",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "independent",
+      "path": "experiments/shared-renewal-capability/regulation/response/protocol-link-repair.json",
+      "verified_path": "experiments/shared-renewal-capability/regulation/response/protocol-link-repair.json",
+      "sha256": "42372ec5cdbdf9ada5e1cf61e51d17306b546ac5dcc3243827bbc08914735af8",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "independent",
+      "path": "experiments/shared-renewal-capability/regulation/independent_check.py",
+      "verified_path": "experiments/shared-renewal-capability/regulation/independent_check.py",
+      "sha256": "4079be96a5f60afeca198f107e40849f8faabe09eebccd95c42485f8bc83858d",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "independent",
+      "path": "experiments/shared-renewal-capability/regulation/compare.py",
+      "verified_path": "experiments/shared-renewal-capability/regulation/compare.py",
+      "sha256": "6b3163a619b28435cc016aefb14a92519bd459af27ee9fd9f380c73e5bf3c66f",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "independent",
+      "path": "experiments/shared-renewal-capability/regulation/response/independent_check.py",
+      "verified_path": "experiments/shared-renewal-capability/regulation/response/independent_check.py",
+      "sha256": "91e4236d479d5fc557e4d49638952ea59c052d9d95cbbb6d93455147884fc183",
+      "matches": true,
+      "interpretation": "current bytes"
+    },
+    {
+      "record": "primary external source",
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/evidence/ceroni-2018/Ceroni_ARTICLE-accepted.docx",
+      "sha256": "225c3058afc52a3d978a0eb493d95d4178f43e61ebcaaf452a8d77575d4b7987",
+      "matches": true
+    },
+    {
+      "record": "primary external source",
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/evidence/ceroni-2018/41592_2018_BFnmeth4635_MOESM1_ESM.pdf",
+      "sha256": "8e0bdc5155930ea815134b0fd49c55612b160c7a3254030109ad6224c44c87f3",
+      "matches": true
+    },
+    {
+      "record": "primary external source",
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/evidence/ceroni-2018/41592_2018_BFnmeth4635_MOESM2_ESM.pdf",
+      "sha256": "7d9d6a1be5cd7cdceefe62ef8149814eb7fd28aea91349440e1f7d480dbc5de3",
+      "matches": true
+    },
+    {
+      "record": "primary external source",
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/evidence/ceroni-2018/41592_2018_BFnmeth4635_MOESM5_ESM.xlsx",
+      "sha256": "ac386fc130aec5f79bc3407961710df421a4ac9377faabf8f43bf2a5298c47ed",
+      "matches": true
+    }
+  ],
+  "exact_protocol_link_repair_verified": true,
+  "opportunity_arithmetic_checker_matches_saved_result": true,
+  "published_data_audit_checks": {
+    "s14a_headers_are_as_reported": true,
+    "s14a_non_h2_columns_have_more_od_less_per_od_and_more_total": true,
+    "s14a_product_identities_hold": true,
+    "selected_s8_induced_means_match_summaries": true,
+    "both_selected_s8_uninduced_means_disagree": true,
+    "s9_s13_mean_sheets_are_both_81_rows": true,
+    "s9_s13_mean_sheets_have_exactly_equal_values": true,
+    "s9_s13_raw_sheets_have_unequal_values": true,
+    "source_unchanged_and_matches_fixed_hash": true
+  },
+  "artifact_sha256": {
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-OPPORTUNITY-AUDIT.md": "5ebc122863408c732b6bd53a7ab2cf7814bae7cda283fb0e03dea21c248c8306",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-EVIDENCE-CERONI.md": "0754eafdaf48040a638d8f2e9f13284a37524aa63de2d1faa3840d86697de1ed",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/RESPONSE-DIAGNOSIS-REVIEW.md": "d737a08330e8a589e05180f05b87b4894bfd5d64931373f719680b71280415a2",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md": "b151d6314cbdb39b2964adb96e303f6abb2f259b6fdfccafddd1c1fdeda7a067",
+    "experiments/shared-renewal-capability/regulation/response/README.md": "40427e2065849ec95bc4cc96b1ce286facbd1a91f82d26fcd7250d79dc06cbdb",
+    "experiments/shared-renewal-capability/regulation/response/PROTOCOL.md": "61c2449d7f0d82bbe045c145445a07e1d1be879a41c2c799a0add249f561d047",
+    "experiments/shared-renewal-capability/physical-evidence/README.md": "57fb202a6e8cc60541aa0e54bdde704cf4b1f47f6c9fd9ca960ce4922a2e415e",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md": "c839a608cbb854a1741c3dbc614b6040e31d5ea471fbf19b235720e718273376",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md": "77a2af13d8ed2ab3770647bc12ea7539e460189b02e808e3575c1f1174c5b40d",
+    "experiments/shared-renewal-capability/regulation/response/decompose.py": "e1c8c28ff0f87d6391619fb745a43951a2f18457e84db5d6259191d91b011e10",
+    "experiments/shared-renewal-capability/regulation/response/opportunity_check.py": "e0db0b8e3248580e0b8c5e320e9d57ec6cf437504debcc4e13250e76288d85b7",
+    "experiments/shared-renewal-capability/regulation/response/independent_check.py": "91e4236d479d5fc557e4d49638952ea59c052d9d95cbbb6d93455147884fc183",
+    "experiments/shared-renewal-capability/regulation/response/protocol-link-repair.json": "42372ec5cdbdf9ada5e1cf61e51d17306b546ac5dcc3243827bbc08914735af8",
+    "experiments/shared-renewal-capability/regulation/response/independent-check.json": "33c07f3cf8119f48f908d389c3071a1a1800d4be3e7e12e265962674dce10c12",
+    "experiments/shared-renewal-capability/regulation/response/results.json": "ee23df652c8b7f53d81ab4892669fa201b3890ba4e8835ee8a04959776771df6",
+    "experiments/shared-renewal-capability/regulation/response/opportunity-check.json": "a18ff6e4d62d3446b6243f16ce7c3d3f82ed921f4ad4cff023a623a9e365556d",
+    "experiments/shared-renewal-capability/regulation/response/PROTOCOL-at-run.txt": "f28f0066d52ded394c80517c48a64eea533ad251deae08d123e6a3d97006784e",
+    "experiments/shared-renewal-capability/physical-evidence/ceroni_audit.py": "386b78d97a40dd1e110fe855a4a6c552a9c03063132bdc87d8a77ee2694654e4",
+    "experiments/shared-renewal-capability/physical-evidence/ceroni_audit.json": "8a8de97a39c5f399392c51af4d91b1f98349a104c6485c7ab1bfe33e8df0148d",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/monitor-state.json": "45d10469f38f7e16dbb0a11ab14927fe8b60ff7c80aa721589f4ab381e4706b7",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/evidence/ceroni-2018/MANIFEST.json": "11ae39159dc5d03e8da3c9e21cce90d5c2059c95126f25810d8ad17876c203cf"
+  }
+}

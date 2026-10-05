@@ -18,6 +18,10 @@ The [new stochastic realization](STOCHASTIC-REALIZATION.md) adds a declared even
 
 The [finite-generator response theorem](REGULATION-RESPONSE.md) gives an exact event-to-joint-test contrast and an overflow enclosure for the original process. It is a proved diagnostic using standard semigroup calculus, not an independent reason for a favorable sign or a proof of future-region stochastic dominance. Its role is to locate and explain which physical changes contribute to the measured effect before seeking a general mechanism-class theorem.
 
+**Opportunity and evidence audit, subsequent advance:** the [structural audit](REGULATION-OPPORTUNITY-AUDIT.md) distinguishes free fuel from retained productive work. It proves a restricted storage coupling and a conditional kinetic gain/failure inequality, with the physical implementation of that inequality still open. The [response calculation](../../../../experiments/shared-renewal-capability/regulation/response/README.md) and [independent review](RESPONSE-DIAGNOSIS-REVIEW.md) confirm the regulator's negative net effect and identify irreversible loss when construction uses the last productive unit. Conditional values near the artificial packet boundary need their own error control. This is a post-outcome explanation of a known negative result, not a new prospective directional test.
+
+The [Ceroni evidence audit](PHYSICAL-EVIDENCE-CERONI.md) now reviews the full accepted methods and selected supplementary data. It supplies a bounded empirical opportunity mechanism—expression burden can impair host growth, and paid feedback can relieve it or introduce excessive cost. Installed regulation, formation from absence and evolutionary retention are distinct claims. Exact sources and observed label/summary discrepancies are retained; the evidence neither identifies our G process nor closes the empirical universal-direction interface. The updated specification requires a demonstrated opportunity-loss mechanism and delivered-continuation assays before treating a reserve decline as a reason to construct regulation.
+
 ## Imported claim contracts
 
 Each row condenses a contract. The linked source controls the complete hypotheses and proof. A source can be completed while its contribution remains insufficient for the next interface.
@@ -38,6 +42,17 @@ Each row condenses a contract. The linked source controls the complete hypothese
 
 C7 is stronger than certifying separate feasible modules: it checks the supplied actual combined process. It does not automatically make C2–C5 one process. C11 is actual AI-response evidence in a constructed setting, distinct from numerical simulations, human evidence, or physical laboratory validation. Its 1,024 answers are clustered within founder lineages and must not be counted as 1,024 independent institutions.
 
+New claims from the opportunity/evidence continuation have these separate statuses:
+
+| ID and source | Established statement | Status and unclosed interface |
+|---|---|---|
+| C12 [Storage comparison](REGULATION-OPPORTUNITY-AUDIT.md) | Faster recycling admits a pathwise coupling with no less usable stock or retained work when stock is stable, arrivals common and catalyst availability ordered and external | Conditional proof; full-network assembly, wear, endogenous capture and controller costs excluded |
+| C13 [Construction response diagnosis](RESPONSE-DIAGNOSIS-REVIEW.md) | Exact finite-generator response identity and a numerical negative net effect; consuming the last productive unit has an exact nonpositive continuation contrast | Independently checked numerical implementation; no directed roundoff enclosure, universal sign or full capability order |
+| C14 [Kinetic protection criterion](REGULATION-OPPORTUNITY-AUDIT.md) | Explicit necessary and sufficient eventual-success inequality in the declared three-state opportunity module | Conditional algebraic proof and exact sampled arithmetic checks; physical rate derivation, construction ledger and joint multi-function result open |
+| C15 [Published biological feedback](PHYSICAL-EVIDENCE-CERONI.md) | Engineered feedback can relieve expression burden, with both gain and excessive-cost regimes in specified proxies | Bounded external experimental evidence, retrospectively audited; source ambiguities, physical identification, culture-level joint reliability and architecture origin unresolved |
+
+The C14 random rational cases test algebra only, not a distribution of physical systems. C15's [workbook audit](../../../../experiments/shared-renewal-capability/physical-evidence/README.md) verifies selected source arithmetic and preserves discrepancies; it is not a replication of the experiment.
+
 ## Conflict and dependency ledger
 
 | Issue | Resolution/status |
@@ -49,6 +64,9 @@ C7 is stronger than certifying separate feasible modules: it checks the supplied
 | Physical coexistence versus nested capability regions | Unproved bridge. More Y can coincide with less C; test joint functions instead of equating population level with generativity. |
 | Learned concern versus natural universality | Learning and strategic models have supplied routes and positive/negative regimes. They do not establish their prevalence or universal selection. |
 | Finite vocabulary versus noticing an omitted possibility | Admitting new cases within a grammar differs from building a new sensor, action or representation language. Common extended assays and physical construction are required. |
+| Free fuel versus future productive function | Recycling converts fuel to usable material in the existing law. Reserve readiness is a valid distinct test; later delivered production needs its own continuation assay. The restricted storage theorem is not a full-network ordering. |
+| Useful regulation versus supplied regulation | A physical sensor and controller can be constructed yet reduce joint success. Derive the loss route it prevents, response delay and net consequences; the kinetic inequality alone supplies no physical implementation. |
+| Published feedback benefit versus independent prediction | The reviewed biology supports conditional installed feedback, with both gains and costs. Known outcomes, ambiguous source labels and unmeasured controller states cannot supply independent identification or a new held-out validation. |
 | Classical stochastic model versus theory of everything | Classical specialization is useful but incomplete coverage. General interface does not derive quantum, relativistic or fundamental physical law. |
 
 ## Registered active contributions
@@ -72,3 +90,5 @@ The in-chat automation is `integrate-completed-theory-work`, every fifteen minut
 For completed active work, capture the final relevant artifact revision before deriving new claims. Record later changes as deltas. Accept each imported result only with its assumptions, failure examples and proof/evidence status. Record separately whether it closes a theory interface, merely adds a witness, or only improves organization.
 
 The [internal review](REVIEW.md) records corrections to protocol quantifiers and future capability information, and the separate check of the stochastic absorption proof. Such AI-assisted review is not external peer review or proof-assistant verification.
+
+The subsequent v0.3 review accepted the kinetic inequality and narrowed its local statement to the closed constant-rate module, with no unmodeled wear/reset channels. It added the combined approximation-error margin and retained the distinction between finite-horizon and eventual-success guarantees. A fresh storage-proof audit made predictability and nonexplosion explicit. These are AI-assisted proof/scope reviews; the separate block response computation and read-only source-data audit have their own saved numerical results and limits.

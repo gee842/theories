@@ -1,0 +1,39 @@
+{
+  "title": "Ceroni et al. (2018), Burden-driven feedback control of gene expression",
+  "doi": "10.1038/nmeth.4635",
+  "retrieval_date": "2026-10-05",
+  "retrieved_at_utc": "2026-10-05T11:25:50.981318+00:00",
+  "primary_landing_page": "https://www.nature.com/articles/nmeth.4635",
+  "author_repository": "https://hdl.handle.net/10044/1/57105",
+  "license_status": "Source rights retained; archival research copies, not relicensed or altered. See source publisher/repository terms.",
+  "files": [
+    {
+      "path": "Ceroni_ARTICLE-accepted.docx",
+      "url": "https://spiral.imperial.ac.uk/bitstreams/081a677b-343c-4d13-81be-64e8817f5acf/download",
+      "description": "Accepted manuscript, text and figure legends including Online Methods; retrieved through https://hdl.handle.net/10044/1/57105",
+      "bytes": 95520,
+      "sha256": "225c3058afc52a3d978a0eb493d95d4178f43e61ebcaaf452a8d77575d4b7987"
+    },
+    {
+      "path": "41592_2018_BFnmeth4635_MOESM1_ESM.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnmeth.4635/MediaObjects/41592_2018_BFnmeth4635_MOESM1_ESM.pdf",
+      "description": "Publisher supplementary Figures 1\u201315, Tables 1\u20137, Notes 1\u20133; 26 pages",
+      "bytes": 2064075,
+      "sha256": "8e0bdc5155930ea815134b0fd49c55612b160c7a3254030109ad6224c44c87f3"
+    },
+    {
+      "path": "41592_2018_BFnmeth4635_MOESM2_ESM.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnmeth.4635/MediaObjects/41592_2018_BFnmeth4635_MOESM2_ESM.pdf",
+      "description": "Publisher Life Sciences and Flow Cytometry reporting summaries; 4 pages",
+      "bytes": 212517,
+      "sha256": "7d9d6a1be5cd7cdceefe62ef8149814eb7fd28aea91349440e1f7d480dbc5de3"
+    },
+    {
+      "path": "41592_2018_BFnmeth4635_MOESM5_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnmeth.4635/MediaObjects/41592_2018_BFnmeth4635_MOESM5_ESM.xlsx",
+      "description": "Supplementary Data 3, source data for supplementary figures; exact bytes, no label corrections",
+      "bytes": 709585,
+      "sha256": "ac386fc130aec5f79bc3407961710df421a4ac9377faabf8f43bf2a5298c47ed"
+    }
+  ]
+}

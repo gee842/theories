@@ -1,6 +1,6 @@
 # Formal specification for the integrated generative theory
 
-Version 0.2, 5 October 2026. AI-assisted formal development of Ren's research direction. This is a specification and a set of proof obligations, not a completed universal theorem. It extends the [formal core](FORMAL-CORE.md), preserves the existing theories, and is governed by the [completion plan](COMPLETION-PLAN.md). The [integration record](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md) separates inherited results, new interface propositions, and pending work.
+Version 0.3, 5 October 2026. AI-assisted formal development of Ren's research direction. This is a specification and a set of proof obligations, not a completed universal theorem. It extends the [formal core](FORMAL-CORE.md), preserves the existing theories, and is governed by the [completion plan](COMPLETION-PLAN.md). The [integration record](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md) separates inherited results, new interface propositions, and pending work. Version 0.3 adds the physical-opportunity requirement, a diagnosed regulator failure and a reviewed external feedback mechanism; prior results retain their scope.
 
 ## 1. Research target and levels of claim
 
@@ -49,6 +49,10 @@ A first [declared stochastic realization](../../../_process/research/2026-10-05-
 
 The [constructed-regulation extension](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-REGULATION.md) now adds material G, fuel binding and catalytic inhibition to that same process. It supplies explicit formation, switching, wear and replacement costs; bound Y retains reproduction. An exact finite-copy binding diagnostic proves the intended fuel-response sign in its isolated assay. The [construction-lag theorem](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-LAG.md) proves an early reserve debit before inhibition can act. The [prespecified whole-process comparison](../../../experiments/shared-renewal-capability/regulation/README.md) is unfavorable in all tested constructed-versus-absent assay comparisons, including stronger source conditions. Physical regulation exists in the model, but net generative advantage does not follow from that fact. These numerical results have truncation accounting and internal checks, not a directed-arithmetic certificate or external validation.
 
+The [opportunity audit](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-OPPORTUNITY-AUDIT.md) makes a prior obligation explicit: identify the physical opportunity that regulation is meant to preserve. In the original process, recycling converts a leaking fuel packet into usable material without lowering assigned work. A proved coupling orders usable material and retained work in a restricted storage module; it does not order the full network. A reduction in free fuel therefore establishes a loss of that reserve function, not by itself a loss of later production. The regulator must address an independently specified destructive route or productive conflict, rather than a deficit inferred from one declining coordinate.
+
+The [Ceroni evidence audit](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-EVIDENCE-CERONI.md) supplies a concrete external opportunity mechanism: heterologous expression competes with host production and growth, and paid repression can relieve that burden. Published controller designs exhibit both net growth gains and losses. This is evidence for an engineered, already installed architecture under bounded conditions. It does not identify our G reactions, derive controller formation from absence, or certify a joint-capability ordering. Preserved source-label and summary discrepancies limit further rate identification.
+
 For a countable, nonexplosive jump realization, specify elementary events \(r\), state updates \(\nu_r\), and propensities \(a_r\):
 
 \[
@@ -94,6 +98,8 @@ If preparation uncertainty is a set \(\mathcal P\), use
 The same protocol must work for the uncertainty it cannot distinguish. The order of the quantifiers is essential. The existence of a different successful protocol for each hidden microstate is insufficient.
 
 The assay vocabulary describes physically testable functions; protected conditions are declared separately. These can include individual reserves even when aggregate production survives. Protection is not inferred from a favorable total. If new functions appear, compare both situations in a common extended vocabulary with explicit interpretations, rather than comparing dimension counts. Open-ended discovery of such tests remains an additional problem.
+
+Separate a stock-readiness test from delivered continuation. For the current specimen, an additional proposed test requires recycling and assembly by H, another assembly during (H,H+tau], and productive material throughout. It can be served by stored usable material or further recycling. Its probability has not yet been calculated. A new productive use of free fuel, if claimed, needs an actual task/reaction and its costs rather than an interpretation added to the old reserve threshold.
 
 Order capability regions by set inclusion. This gives a partial order on regions and a preorder on physical situations; different situations can have identical regions. Regions may be incomparable. A larger scalar volume, mean score, or longer survival does not imply inclusion.
 
@@ -145,6 +151,19 @@ An [exact response identity](../../../_process/research/2026-10-05-support-and-s
 \]
 
 Thus a reaction change affects a joint possibility through both its rate and its conditional downstream consequences. The construction contrast consumes R and F in the state update itself; costs need not be inserted as an arbitrary scalar penalty. The sign remains a mechanistic calculation. The linked proof handles the unbounded original reserve through explicit overflow errors rather than assuming an unbounded-operator identity. This compares individual installed joint tests; it does not by itself establish the stronger future-capability distribution order below.
+
+The [implemented response diagnosis](../../../experiments/shared-renewal-capability/regulation/response/README.md), with [independent review](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/RESPONSE-DIAGNOSIS-REVIEW.md), locates the loss for g=8, H=3 and the original all-requirements assay. The net construction response is approximately -0.49375308 in success probability. Consuming the last productive unit reaches an invariant zero-success face; that group accounts for about 19.3% of the net under the declared decomposition. Assignments depend on the valid response ordering and are not intrinsic reaction values. Small positive conditional values near the numerical packet boundary remain unresolved for the unbounded process. This is a secondary diagnosis of a failed test, not a newly confirmed directional law.
+
+A separate conditional kinetic module in the opportunity audit gives a precise gain/failure boundary. Use a closed, time-homogeneous continuous-time Markov chain with transient states S (unbuilt), B (built/unbound) and I (built/bound), and absorbing success/loss states. An unbuilt opportunity completes at rate \(a>0\) and is lost at rate \(b>0\); construction is the single transition S to B at rate \(\gamma>0\). In both built states completion occurs at rate \(\chi a\), where \(0<\chi\le1\); unbound loss is \(b\) and bound loss is \(rb\), with \(0\le r\le1\). B to I and I to B have finite nonnegative rates \(\mu\) and \(\nu\). There are no additional wear, repair, reset or time-varying-rate channels. From S, construction improves eventual success over the \(\gamma=0\) baseline exactly when
+
+\[
+\mu(\chi-r)>(1-\chi)(\chi a+r b+\nu).
+\tag{3b}
+\]
+
+This is a kinetic class certificate: reduced opportunity loss must outweigh productive slowdown and reversible escape from protection. It orders eventual episode success, not every earlier horizon. The module does not itself realize its rates from material reactions; \(\chi\) is a stipulated slowdown, not a complete energetic cost ledger. Its physical implementation, valid reduction and multi-function extension remain obligations. Neither the failed G network nor the published feedback system has been shown to instantiate this exact module.
+
+An approximate reduction needs more than fitted rates. If the matched physical and module success probabilities differ by at most \(\varepsilon_i\) in arrangement i, their success contrasts differ by at most \(\varepsilon_0+\varepsilon_1\). Thus a positive physical prediction requires a module gain larger than that combined error, with the same assay and horizon. Finite-horizon approximation bounds do not automatically control the eventual-success quantity in (3b). This is the probability-level error discipline behind P2, not an exact boundary for arbitrary nearby mechanisms.
 
 ## 7. Exact directional target
 

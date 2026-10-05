@@ -32,10 +32,10 @@
       "thread_id": "01a106c5-cdcb-7723-877d-85507c8a70c9",
       "title": "Review v0.2 build plan",
       "turn_id": "01a10b40-33d6-75e3-ac24-db11b05a1c4f",
-      "cursor": "bbf33de6-9b77-4012-93a0-1eb40d99c444:9",
+      "cursor": "bbf33de6-9b77-4012-93a0-1eb40d99c444:11",
       "status": "pending_completed_turn_review",
       "latest_status": "inProgress",
-      "latest_commentary": "Still active: revised hosted-runtime test and architecture review of durable commit and restart assertions.",
+      "latest_commentary": "Still active: hosted approach, gate-opening and paused-worker checks passed; late-client navigation guard failed and is under trace inspection. Runtime and release passed. No final theory contribution yet.",
       "evidence_role": "application check; do not treat performance as evidence of universal theory"
     },
     {
@@ -54,5 +54,5 @@
     }
   ],
   "stop_rule": "Pause this automation once registered turns are reviewed and integrated or documented outside theory evidential scope; do not complete main goal.",
-  "last_checked_at_utc": "2026-10-05T11:08:00.195607+00:00"
+  "last_checked_at_utc": "2026-10-05T11:46:36.453671+00:00"
 }

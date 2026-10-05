@@ -1,5 +1,7 @@
 # Supporting conditions and shared generativity
 
+**Latest refinement:** the [opportunity audit](completion/REGULATION-OPPORTUNITY-AUDIT.md) distinguishes stored productive material from free fuel and proves conditional storage and kinetic comparisons. The [response diagnosis](../../../experiments/shared-renewal-capability/regulation/response/README.md) explains a regulator failure within the actual event law. The [external feedback evidence audit](completion/PHYSICAL-EVIDENCE-CERONI.md) supplies a bounded biological mechanism and preserves its data limitations. A delivered-continuation assay and physically derived gain/failure boundary are the next work; none of these results establishes universal direction.
+
 **Current continuation:** the [formalization and integration record](completion/INTEGRATION.md) places these studies in the common theory and tracks the remaining proof interfaces. Follow the linked specification and completion plan for ongoing work. Source claims below retain their original scope.
 
 The [stochastic realization](completion/STOCHASTIC-REALIZATION.md) and [joint-capability bridge](completion/JOINT-CAPABILITY-BRIDGE.md) now derive event-level accounting, finite-system absorption and finite-horizon reliable profiles from one process. The [experiment](../../../experiments/shared-renewal-capability/README.md) preserves the protocol, interval computation and independent check. The [joint-formation integration](completion/JOINT-FORMATION-INTEGRATION.md) records the completed contribution from the parallel theory session.

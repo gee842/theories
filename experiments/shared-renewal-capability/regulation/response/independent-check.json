@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "scope": "Independent integer reconstruction and block-exponential net check; no independent sign-separated quadrature or interval arithmetic.",
+  "git_head_at_check": "9aa1b3ab1623b824082d6b5a1da2b2f22d3e29da",
+  "environment": {
+    "python": "3.11.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/response/results.json": "ee23df652c8b7f53d81ab4892669fa201b3890ba4e8835ee8a04959776771df6",
+    "experiments/shared-renewal-capability/regulation/response/decompose.py": "e1c8c28ff0f87d6391619fb745a43951a2f18457e84db5d6259191d91b011e10",
+    "experiments/shared-renewal-capability/regulation/response/PROTOCOL.md": "61c2449d7f0d82bbe045c145445a07e1d1be879a41c2c799a0add249f561d047",
+    "experiments/shared-renewal-capability/regulation/response/PROTOCOL-at-run.txt": "f28f0066d52ded394c80517c48a64eea533ad251deae08d123e6a3d97006784e",
+    "experiments/shared-renewal-capability/regulation/response/protocol-link-repair.json": "42372ec5cdbdf9ada5e1cf61e51d17306b546ac5dcc3243827bbc08914735af8",
+    "experiments/shared-renewal-capability/regulation/independent_check.py": "4079be96a5f60afeca198f107e40849f8faabe09eebccd95c42485f8bc83858d",
+    "experiments/shared-renewal-capability/regulation/compare.py": "6b3163a619b28435cc016aefb14a92519bd459af27ee9fd9f380c73e5bf3c66f",
+    "experiments/shared-renewal-capability/regulation/response/independent_check.py": "91e4236d479d5fc557e4d49638952ea59c052d9d95cbbb6d93455147884fc183"
+  },
+  "primary_input_audit": {
+    "experiments/shared-renewal-capability/regulation/response/PROTOCOL.md": "as-run archived bytes verified; exact one-link repair verified",
+    "experiments/shared-renewal-capability/regulation/response/decompose.py": "exact current bytes verified",
+    "experiments/shared-renewal-capability/regulation/compare.py": "exact current bytes verified",
+    "experiments/shared-renewal-capability/regulation/PROTOCOL.md": "exact current bytes verified",
+    "experiments/shared-renewal-capability/regulation/results.json": "exact current bytes verified"
+  },
+  "case": {
+    "g": 8,
+    "H": 3.0,
+    "profile": [
+      1,
+      1,
+      1
+    ],
+    "cap": 48
+  },
+  "states": 6584,
+  "initial_index": 3424,
+  "labeled_events_Q0": 30060,
+  "labeled_events_Q1": 32344,
+  "exact_checks": {
+    "construction_states": 2284,
+    "last_productive_unit_construction_states": 382,
+    "dead_plant_face_states": 727,
+    "baseline_labeled_events": 30060,
+    "generator_difference_nonzero_entries": 0,
+    "status": "PASS exact integer generator, ledger, flag, dead-face and no-new-regulator checks"
+  },
+  "absolute_comparison_tolerance": 1e-10,
+  "independent_block": {
+    "baseline_success": 0.6925433833168245,
+    "responsive_success": 0.19879030172809495,
+    "net_Duhamel_response": -0.49375308158872655,
+    "endpoint_identity_residual": 2.9976021664879227e-15,
+    "maximum_all_state_identity_residual": 8.659739592076221e-15,
+    "differences_from_primary": {
+      "endpoint_absent": 2.4424906541753444e-15,
+      "endpoint_responsive": -6.411537967210279e-15,
+      "endpoint_difference": -5.828670879282072e-15
+    }
+  },
+  "conditional_boundary_check": {
+    "remaining_time": 1.0,
+    "state": [
+      1,
+      2,
+      0,
+      0,
+      48,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "constructed_state": [
+      0,
+      2,
+      0,
+      0,
+      47,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "finite_conditional_advantage": 0.20829341287369763,
+    "source_conditional_overflow": 0.32887323811594993,
+    "target_conditional_overflow": 0.1013829995644316,
+    "untruncated_advantage_bracket_using_float_overflow": [
+      -0.1205798252422523,
+      0.3096764124381292
+    ],
+    "scope": "Exact coupling formula with floating inputs, not a numerical certificate; no sign inferred for original process."
+  },
+  "primary_decomposition_readback": {
+    "cap64_latest_intervals": 768,
+    "cap64_endpoint_difference": -0.49375308307212584,
+    "cap64_integrated_positive": 1.6976501702484546e-19,
+    "cap64_quadrature_residual": -5.136088776502845e-10,
+    "cap48_primary_integral_minus_independent_block": -5.13606823737689e-10,
+    "cap48_to64_endpoint_shift": -1.4834051209611232e-09,
+    "last_productive_unit_group_fraction_of_net": 0.1925370441285579,
+    "all_cap64_group_nets_negative": true,
+    "all_cap64_time_bin_nets_negative": true,
+    "scope": "Saved primary decomposition inspected, not independently re-integrated."
+  },
+  "elapsed_seconds": 0.8005662499926984
+}

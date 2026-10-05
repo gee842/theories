@@ -1,0 +1,11 @@
+{
+  "change": "Correct one repository-relative mathematical-note link from five to four parent levels. No scientific protocol fields changed; no numerical rerun.",
+  "source_path_at_run": "experiments/shared-renewal-capability/regulation/response/PROTOCOL.md",
+  "preserved_original": "PROTOCOL-at-run.txt",
+  "original_sha256": "f28f0066d52ded394c80517c48a64eea533ad251deae08d123e6a3d97006784e",
+  "current_sha256": "61c2449d7f0d82bbe045c145445a07e1d1be879a41c2c799a0add249f561d047",
+  "replacement": {
+    "old": "../../../../../_process/",
+    "new": "../../../../_process/"
+  }
+}

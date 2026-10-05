@@ -1,0 +1,326 @@
+{
+  "audit_type": "Exploratory secondary descriptive source-data audit; not validation or replication",
+  "runtime": {
+    "python": "3.12.14",
+    "openpyxl": "3.1.5"
+  },
+  "source": {
+    "repository_relative_path": "_process/research/2026-10-05-support-and-shared-generativity/completion/evidence/ceroni-2018/41592_2018_BFnmeth4635_MOESM5_ESM.xlsx",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnmeth.4635/MediaObjects/41592_2018_BFnmeth4635_MOESM5_ESM.xlsx",
+    "expected_sha256": "ac386fc130aec5f79bc3407961710df421a4ac9377faabf8f43bf2a5298c47ed",
+    "sha256_before": "ac386fc130aec5f79bc3407961710df421a4ac9377faabf8f43bf2a5298c47ed",
+    "bytes": 709585,
+    "open_mode": "openpyxl read_only=True, data_only=True; workbook never saved",
+    "sha256_after": "ac386fc130aec5f79bc3407961710df421a4ac9377faabf8f43bf2a5298c47ed"
+  },
+  "s14a_24_hour": {
+    "sheet": "Fig S14a raw data",
+    "time_cell": "B6",
+    "time_hours": 24,
+    "columns": [
+      {
+        "column": "C",
+        "source_cells": {
+          "C1": "H2",
+          "C6": 0.0132,
+          "C13": 575636.363636364,
+          "C20": 7598.4
+        },
+        "ratios_to_column_c": {
+          "od700": 1.0,
+          "red_fluorescence_per_od": 1.0,
+          "total_red_fluorescence": 1.0
+        },
+        "ratio_product_minus_total_ratio": 0.0,
+        "ratio_product_agrees_within_absolute_1e_12": true
+      },
+      {
+        "column": "D",
+        "source_cells": {
+          "D1": "FB5",
+          "D6": 0.017,
+          "D13": 511717.647058824,
+          "D20": 8699.2
+        },
+        "ratios_to_column_c": {
+          "od700": 1.287878787878788,
+          "red_fluorescence_per_od": 0.8889599048716141,
+          "total_red_fluorescence": 1.1448726047588969
+        },
+        "ratio_product_minus_total_ratio": 2.220446049250313e-16,
+        "ratio_product_agrees_within_absolute_1e_12": true
+      },
+      {
+        "column": "E",
+        "source_cells": {
+          "E1": "FB",
+          "E6": 0.072,
+          "E13": 240430.555555556,
+          "E20": 17311
+        },
+        "ratios_to_column_c": {
+          "od700": 5.454545454545454,
+          "red_fluorescence_per_od": 0.417677844458483,
+          "total_red_fluorescence": 2.2782427879553593
+        },
+        "ratio_product_minus_total_ratio": 2.220446049250313e-15,
+        "ratio_product_agrees_within_absolute_1e_12": true
+      },
+      {
+        "column": "F",
+        "source_cells": {
+          "F1": "FB2",
+          "F6": 0.1228,
+          "F13": 168301.302931596,
+          "F20": 20667.4
+        },
+        "ratios_to_column_c": {
+          "od700": 9.303030303030303,
+          "red_fluorescence_per_od": 0.292374341795255,
+          "total_red_fluorescence": 2.7199673615498003
+        },
+        "ratio_product_minus_total_ratio": -3.9968028886505635e-15,
+        "ratio_product_agrees_within_absolute_1e_12": true
+      }
+    ],
+    "non_h2_total_ratio_min_max": [
+      1.1448726047588969,
+      2.7199673615498003
+    ],
+    "interpretation": "Column labels are retained without repair. The paper figure assigns the non-H2 trajectories different feedback labels. Ratios are descriptive, not confidence bounds; per-OD values share the yield and OD data."
+  },
+  "s8_induced_one_hour": [
+    {
+      "raw_column": "E",
+      "source_heading": "Pdcas-2",
+      "growth_rate_per_hour": {
+        "sheet": "Fig S8 Raw Data B",
+        "cell": "E5",
+        "source_cell_value": "[0.440481583312496,0.464663954737232,0.451912985381649]",
+        "values": [
+          0.440481583312496,
+          0.464663954737232,
+          0.451912985381649
+        ],
+        "n": 3,
+        "mean": 0.4523528411437923,
+        "sample_standard_deviation": 0.012097184662126562,
+        "summary_sheet": "Fig S8 Mean and Std values B",
+        "summary_cell": "G6",
+        "supplied_summary_value": 0.452352841143793,
+        "recomputed_minus_supplied": -6.661338147750939e-16,
+        "agrees_within_absolute_1e_8": true
+      },
+      "gfp_rate_per_od_per_hour": {
+        "sheet": "Fig S8 Raw Data B",
+        "cell": "E33",
+        "source_cell_value": "[12233.7662337662,11479.4520547945,12025.3164556962]",
+        "values": [
+          12233.7662337662,
+          11479.4520547945,
+          12025.3164556962
+        ],
+        "n": 3,
+        "mean": 11912.8449147523,
+        "sample_standard_deviation": 389.5315851008226,
+        "summary_sheet": "Fig S8 Mean and Std values B",
+        "summary_cell": "G35",
+        "supplied_summary_value": 11912.8449147523,
+        "recomputed_minus_supplied": 0.0,
+        "agrees_within_absolute_1e_8": true
+      },
+      "growth_difference_from_h2_per_hour": 0.14663621886238365
+    },
+    {
+      "raw_column": "I",
+      "source_heading": "Pdcas-6",
+      "growth_rate_per_hour": {
+        "sheet": "Fig S8 Raw Data B",
+        "cell": "I5",
+        "source_cell_value": "[0.222451270220449,0.354668030565831,0.193699651979835]",
+        "values": [
+          0.222451270220449,
+          0.354668030565831,
+          0.193699651979835
+        ],
+        "n": 3,
+        "mean": 0.25693965092203835,
+        "sample_standard_deviation": 0.08584748702620512,
+        "summary_sheet": "Fig S8 Mean and Std values B",
+        "summary_cell": "O6",
+        "supplied_summary_value": 0.256939650922038,
+        "recomputed_minus_supplied": 3.3306690738754696e-16,
+        "agrees_within_absolute_1e_8": true
+      },
+      "gfp_rate_per_od_per_hour": {
+        "sheet": "Fig S8 Raw Data B",
+        "cell": "I33",
+        "source_cell_value": "[5703.70370370370,9150.68493150685,3967.74193548387]",
+        "values": [
+          5703.7037037037,
+          9150.68493150685,
+          3967.74193548387
+        ],
+        "n": 3,
+        "mean": 6274.0435235648065,
+        "sample_standard_deviation": 2638.122468270819,
+        "summary_sheet": "Fig S8 Mean and Std values B",
+        "summary_cell": "O35",
+        "supplied_summary_value": 6274.04352356481,
+        "recomputed_minus_supplied": -3.637978807091713e-12,
+        "agrees_within_absolute_1e_8": true
+      },
+      "growth_difference_from_h2_per_hour": -0.048776971359370314
+    },
+    {
+      "raw_column": "J",
+      "source_heading": "H2",
+      "growth_rate_per_hour": {
+        "sheet": "Fig S8 Raw Data B",
+        "cell": "J5",
+        "source_cell_value": "[0.296840010236547,0.308301359654516,0.312008496953163]",
+        "values": [
+          0.296840010236547,
+          0.308301359654516,
+          0.312008496953163
+        ],
+        "n": 3,
+        "mean": 0.30571662228140867,
+        "sample_standard_deviation": 0.007907679671306402,
+        "summary_sheet": "Fig S8 Mean and Std values B",
+        "summary_cell": "Q6",
+        "supplied_summary_value": 0.305716622281409,
+        "recomputed_minus_supplied": -3.3306690738754696e-16,
+        "agrees_within_absolute_1e_8": true
+      },
+      "gfp_rate_per_od_per_hour": {
+        "sheet": "Fig S8 Raw Data B",
+        "cell": "J33",
+        "source_cell_value": "[1048.78048780488,1270.58823529412,1421.68674698795]",
+        "values": [
+          1048.78048780488,
+          1270.58823529412,
+          1421.68674698795
+        ],
+        "n": 3,
+        "mean": 1247.0184900289835,
+        "sample_standard_deviation": 187.5671058671411,
+        "summary_sheet": "Fig S8 Mean and Std values B",
+        "summary_cell": "Q35",
+        "supplied_summary_value": 1247.01849002898,
+        "recomputed_minus_supplied": 3.410605131648481e-12,
+        "agrees_within_absolute_1e_8": true
+      },
+      "growth_difference_from_h2_per_hour": 0.0
+    }
+  ],
+  "s8_uninduced_raw_vs_summary_discrepancies": [
+    {
+      "sheet": "Fig S8 Raw Data A",
+      "cell": "D32",
+      "source_cell_value": "[26303.5714285714,27625,27203.3898305085]",
+      "values": [
+        26303.5714285714,
+        27625,
+        27203.3898305085
+      ],
+      "n": 3,
+      "mean": 27043.987086359964,
+      "sample_standard_deviation": 674.9816986248743,
+      "summary_sheet": "Fig S8 Mean and Std values A",
+      "summary_cell": "E34",
+      "supplied_summary_value": 19199.8630887185,
+      "recomputed_minus_supplied": 7844.123997641465,
+      "agrees_within_absolute_1e_8": false
+    },
+    {
+      "sheet": "Fig S8 Raw Data A",
+      "cell": "G5",
+      "source_cell_value": "[0.520566196527334,0.476822046889996,0.547777500638890]",
+      "values": [
+        0.520566196527334,
+        0.476822046889996,
+        0.54777750063889
+      ],
+      "n": 3,
+      "mean": 0.51505524801874,
+      "sample_standard_deviation": 0.03579730463702733,
+      "summary_sheet": "Fig S8 Mean and Std values A",
+      "summary_cell": "K6",
+      "supplied_summary_value": 0.648689973113717,
+      "recomputed_minus_supplied": -0.13363472509497698,
+      "agrees_within_absolute_1e_8": false
+    }
+  ],
+  "s9_vs_s13_mean_sheets": {
+    "left_sheet": "Fig S9 mean & stdev",
+    "right_sheet": "Fig S13 mean & stdev",
+    "left_dimensions": [
+      81,
+      77
+    ],
+    "right_dimensions": [
+      81,
+      77
+    ],
+    "comparison_dimensions": [
+      81,
+      77
+    ],
+    "exact_cell_value_equality": true,
+    "different_cell_count": 0,
+    "first_differences": []
+  },
+  "s9_vs_s13_raw_sheets": {
+    "left_sheet": "Fig S9 raw data",
+    "right_sheet": "Fig S13 raw data",
+    "left_dimensions": [
+      55,
+      41
+    ],
+    "right_dimensions": [
+      55,
+      41
+    ],
+    "comparison_dimensions": [
+      55,
+      41
+    ],
+    "exact_cell_value_equality": false,
+    "different_cell_count": 534,
+    "first_differences": [
+      {
+        "cell": "W28",
+        "left": 6.5,
+        "right": null
+      },
+      {
+        "cell": "X28",
+        "left": "[34976,33703.7037037037,35187.9699248120]",
+        "right": null
+      },
+      {
+        "cell": "Y28",
+        "left": "[23245.9016393443,34079.3650793651,22896.5517241379]",
+        "right": null
+      },
+      {
+        "cell": "Z28",
+        "left": "[10000.0000000000,29787.8787878788,7943.92523364486]",
+        "right": null
+      }
+    ]
+  },
+  "checks": {
+    "s14a_headers_are_as_reported": true,
+    "s14a_non_h2_columns_have_more_od_less_per_od_and_more_total": true,
+    "s14a_product_identities_hold": true,
+    "selected_s8_induced_means_match_summaries": true,
+    "both_selected_s8_uninduced_means_disagree": true,
+    "s9_s13_mean_sheets_are_both_81_rows": true,
+    "s9_s13_mean_sheets_have_exactly_equal_values": true,
+    "s9_s13_raw_sheets_have_unequal_values": true,
+    "source_unchanged_and_matches_fixed_hash": true
+  },
+  "all_expected_checks_passed": true
+}

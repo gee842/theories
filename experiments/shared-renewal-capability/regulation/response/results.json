@@ -1,0 +1,2621 @@
+{
+  "scope": "secondary finite-model decomposition; numerical arithmetic and quadrature not certified",
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/response/PROTOCOL.md": "f28f0066d52ded394c80517c48a64eea533ad251deae08d123e6a3d97006784e",
+    "experiments/shared-renewal-capability/regulation/response/decompose.py": "e1c8c28ff0f87d6391619fb745a43951a2f18457e84db5d6259191d91b011e10",
+    "experiments/shared-renewal-capability/regulation/compare.py": "6b3163a619b28435cc016aefb14a92519bd459af27ee9fd9f380c73e5bf3c66f",
+    "experiments/shared-renewal-capability/regulation/PROTOCOL.md": "d8ca147ed3890f26203ac9c0d03f6e05dbdf7010dcd926c836e1cc429bb34747",
+    "experiments/shared-renewal-capability/regulation/results.json": "5c6221564684327c05484fe803069d19e2a8f4a0e12830785d83004ba387b87f"
+  },
+  "case": {
+    "g": 8,
+    "H": 3,
+    "profile": [
+      1,
+      1,
+      1
+    ]
+  },
+  "runs": [
+    {
+      "cap": 48,
+      "intervals": 192,
+      "states": 6584,
+      "construction_states": 2284,
+      "endpoint_absent": 0.6925433833168156,
+      "endpoint_responsive": 0.19879030172810136,
+      "endpoint_difference": -0.4937530815887143,
+      "integral_net": -0.49375321542542144,
+      "integral_positive": 2.1795843076215403e-12,
+      "integral_negative": -0.4937532154276004,
+      "quadrature_identity_residual": -1.3383670716127227e-07,
+      "responsive_overflow": 1.7217982421387018e-10,
+      "absent_overflow": 1.6455474881891692e-09,
+      "positive_state_count_at_1e_12": 0,
+      "negative_state_count_at_1e_12": 1423,
+      "maximum_positive_construction_advantage": 0.21977421811540065,
+      "mass_error": 4.440892098500626e-16,
+      "groups": {
+        "A=3,C_present=1": {
+          "net": -0.13394605673408302,
+          "positive": 2.176500493392443e-12,
+          "negative": -0.1339460567362595
+        },
+        "A=2,C_present=1": {
+          "net": -0.20370842167838937,
+          "positive": 3.08380592698845e-15,
+          "negative": -0.20370842167839245
+        },
+        "A=2,C_present=0": {
+          "net": -0.04137527707952475,
+          "positive": 8.264118798270554e-21,
+          "negative": -0.04137527707952475
+        },
+        "A=1,C_present=0": {
+          "net": -0.09506575898580868,
+          "positive": 0.0,
+          "negative": -0.09506575898580868
+        },
+        "A=3,C_present=0": {
+          "net": -0.019657700947615504,
+          "positive": 3.7989500179852476e-23,
+          "negative": -0.019657700947615504
+        }
+      },
+      "time_bins": [
+        {
+          "from": 0,
+          "to": 0.25,
+          "net": -0.027422807165646032,
+          "positive": 1.2596556393756628e-41,
+          "negative": -0.027422807165646032
+        },
+        {
+          "from": 0.25,
+          "to": 0.5,
+          "net": -0.055919554412195545,
+          "positive": 4.6436205500427264e-29,
+          "negative": -0.055919554412195545
+        },
+        {
+          "from": 0.5,
+          "to": 1,
+          "net": -0.11181253103171532,
+          "positive": 1.5263802142786057e-19,
+          "negative": -0.11181253103171532
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "net": -0.19125217444552287,
+          "positive": 6.354289960490282e-14,
+          "negative": -0.1912521744455864
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "net": -0.10734614837034107,
+          "positive": 2.1160412553786158e-12,
+          "negative": -0.1073461483724571
+        }
+      ],
+      "largest_positive_states": [
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            47,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 7.376159004158195e-13,
+          "integrated_positive": 7.376159004158195e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            46,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 5.248375984464735e-13,
+          "integrated_positive": 5.248543444673576e-13,
+          "integrated_negative": -1.6746020884051515e-17
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 3.5338465500368693e-13,
+          "integrated_positive": 3.5338465500368693e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            47,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 2.1094627646453165e-13,
+          "integrated_positive": 2.1094627646453165e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            46,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 1.6292404892236162e-13,
+          "integrated_positive": 1.629243288369114e-13,
+          "integrated_negative": -2.7991454977993536e-19
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 1.0116675164561035e-13,
+          "integrated_positive": 1.0116675164561035e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            45,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": -2.402803277881198e-13,
+          "integrated_positive": 5.821465926543704e-14,
+          "integrated_negative": -2.9849498705355686e-13
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            45,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -2.1063341907153033e-14,
+          "integrated_positive": 2.5047985898674863e-14,
+          "integrated_negative": -4.61113278058279e-14
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 2.2552831296435623e-15,
+          "integrated_positive": 2.2552831296435623e-15,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            47,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 7.962674893106708e-16,
+          "integrated_positive": 7.962674893347801e-16,
+          "integrated_negative": -2.410920762799361e-26
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 6.62552028793523e-16,
+          "integrated_positive": 6.62552028793523e-16,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            46,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 4.4355744680927696e-16,
+          "integrated_positive": 5.993176993579807e-16,
+          "integrated_negative": -1.5576025254870382e-16
+        }
+      ],
+      "largest_negative_states": [
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.016356979155680015,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.016356979155680015
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            3,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.013376305546829791,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.013376305546829791
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.011647839366250216,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.011647839366250216
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.00954788936817199,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.00954788936817199
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.009500362210612632,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.009500362210612632
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            6,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.008471442508441798,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.008471442508441798
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.008469815739137255,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.008469815739137255
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.00783393726909618,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.00783393726909618
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "integrated_net": -0.007308438319934775,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.007308438319934775
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "integrated_net": -0.007072552131534146,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.007072552131534146
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.006964969636753833,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.006964969636753833
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            7,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.006913190180208972,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.006913190180208972
+        }
+      ],
+      "elapsed_seconds": 0.7519264579750597
+    },
+    {
+      "cap": 48,
+      "intervals": 384,
+      "states": 6584,
+      "construction_states": 2284,
+      "endpoint_absent": 0.6925433833168156,
+      "endpoint_responsive": 0.19879030172810136,
+      "endpoint_difference": -0.4937530815887143,
+      "integral_net": -0.4937530898359298,
+      "integral_positive": 2.1794311436818006e-12,
+      "integral_negative": -0.4937530898381087,
+      "quadrature_identity_residual": -8.247215521617335e-09,
+      "responsive_overflow": 1.7217982421387018e-10,
+      "absent_overflow": 1.645547488189161e-09,
+      "positive_state_count_at_1e_12": 0,
+      "negative_state_count_at_1e_12": 1423,
+      "maximum_positive_construction_advantage": 0.21977421811540065,
+      "mass_error": 4.440892098500626e-16,
+      "groups": {
+        "A=3,C_present=1": {
+          "net": -0.1339458625306927,
+          "positive": 2.176345415286519e-12,
+          "negative": -0.13394586253286908
+        },
+        "A=2,C_present=1": {
+          "net": -0.20370844992545115,
+          "positive": 3.085720113688039e-15,
+          "negative": -0.20370844992545423
+        },
+        "A=2,C_present=0": {
+          "net": -0.04137531726514149,
+          "positive": 8.24364768233387e-21,
+          "negative": -0.04137531726514149
+        },
+        "A=1,C_present=0": {
+          "net": -0.09506575922537173,
+          "positive": 0.0,
+          "negative": -0.09506575922537173
+        },
+        "A=3,C_present=0": {
+          "net": -0.019657700889272746,
+          "positive": 3.7946526861019304e-23,
+          "negative": -0.019657700889272746
+        }
+      },
+      "time_bins": [
+        {
+          "from": 0,
+          "to": 0.25,
+          "net": -0.027422666078351334,
+          "positive": 1.0944060793276866e-41,
+          "negative": -0.027422666078351334
+        },
+        {
+          "from": 0.25,
+          "to": 0.5,
+          "net": -0.05591956583452973,
+          "positive": 4.612044193955214e-29,
+          "negative": -0.05591956583452973
+        },
+        {
+          "from": 0.5,
+          "to": 1,
+          "net": -0.11181253169199148,
+          "positive": 1.5262611608919363e-19,
+          "negative": -0.11181253169199148
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "net": -0.19125217446898374,
+          "positive": 6.354289095375681e-14,
+          "negative": -0.1912521744690473
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "net": -0.10734615176207302,
+          "positive": 2.1158881001019273e-12,
+          "negative": -0.10734615176418891
+        }
+      ],
+      "largest_positive_states": [
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            47,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 7.374827645900838e-13,
+          "integrated_positive": 7.374827645900838e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            46,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 5.248628195637924e-13,
+          "integrated_positive": 5.248795593724067e-13,
+          "integrated_negative": -1.6739808614323418e-17
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 3.534497215633702e-13,
+          "integrated_positive": 3.534497215633702e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            47,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 2.1087555212581067e-13,
+          "integrated_positive": 2.1087555212581067e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            46,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 1.6293672807591194e-13,
+          "integrated_positive": 1.6293700784430493e-13,
+          "integrated_negative": -2.7976839298604287e-19
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 1.0120183608844726e-13,
+          "integrated_positive": 1.0120183608844726e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            45,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": -2.40265283079818e-13,
+          "integrated_positive": 5.815082241378501e-14,
+          "integrated_negative": -2.9841610549360303e-13
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            45,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -2.1054819106039197e-14,
+          "integrated_positive": 2.5022682715012597e-14,
+          "integrated_negative": -4.607750182105179e-14
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 2.256426388379409e-15,
+          "integrated_positive": 2.256426388379409e-15,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            47,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 7.961748568163855e-16,
+          "integrated_positive": 7.961748568404822e-16,
+          "integrated_negative": -2.409682468032022e-26
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 6.631624806956589e-16,
+          "integrated_positive": 6.631624806956589e-16,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            46,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 4.4358759071280157e-16,
+          "integrated_positive": 5.994206512936104e-16,
+          "integrated_negative": -1.5583306058080875e-16
+        }
+      ],
+      "largest_negative_states": [
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.016357225911097426,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.016357225911097426
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            3,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.013376319522896028,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.013376319522896028
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.011647384950403213,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.011647384950403213
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.009547889322463601,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.009547889322463601
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.009500362451362236,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.009500362451362236
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            6,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.008471442455101492,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.008471442455101492
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.008469814118124032,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.008469814118124032
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.00783393517338369,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.00783393517338369
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "integrated_net": -0.007308438318114008,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.007308438318114008
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "integrated_net": -0.007072552130691678,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.007072552130691678
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.006964972057936976,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.006964972057936976
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            7,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.00691319012841896,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.00691319012841896
+        }
+      ],
+      "elapsed_seconds": 0.8470989170018584
+    },
+    {
+      "cap": 64,
+      "intervals": 384,
+      "states": 8760,
+      "construction_states": 3052,
+      "endpoint_absent": 0.6925433849621373,
+      "endpoint_responsive": 0.1987903018900039,
+      "endpoint_difference": -0.4937530830721334,
+      "integral_net": -0.49375309131932765,
+      "integral_positive": 1.6976542149227069e-19,
+      "integral_negative": -0.4937530913193269,
+      "quadrature_identity_residual": -8.247194260846413e-09,
+      "responsive_overflow": 2.5648085180798487e-17,
+      "absent_overflow": 1.8325706666507187e-16,
+      "positive_state_count_at_1e_12": 0,
+      "negative_state_count_at_1e_12": 1424,
+      "maximum_positive_construction_advantage": 0.18435159773126275,
+      "mass_error": 3.552713678800501e-14,
+      "groups": {
+        "A=3,C_present=1": {
+          "net": -0.13394586368503225,
+          "positive": 1.695773058605264e-19,
+          "negative": -0.13394586368503225
+        },
+        "A=2,C_present=1": {
+          "net": -0.20370845023300907,
+          "positive": 1.881154085426631e-22,
+          "negative": -0.20370845023300907
+        },
+        "A=2,C_present=0": {
+          "net": -0.0413753172751451,
+          "positive": 2.231979947838272e-28,
+          "negative": -0.0413753172751451
+        },
+        "A=1,C_present=0": {
+          "net": -0.09506575923164422,
+          "positive": 0.0,
+          "negative": -0.09506575923164422
+        },
+        "A=3,C_present=0": {
+          "net": -0.01965770089449706,
+          "positive": 3.6464048511664486e-33,
+          "negative": -0.01965770089449706
+        }
+      },
+      "time_bins": [
+        {
+          "from": 0,
+          "to": 0.25,
+          "net": -0.02742266625710077,
+          "positive": 2.963017250080377e-59,
+          "negative": -0.02742266625710077
+        },
+        {
+          "from": 0.25,
+          "to": 0.5,
+          "net": -0.05591956622272832,
+          "positive": 1.3412113601495064e-42,
+          "negative": -0.05591956622272832
+        },
+        {
+          "from": 0.5,
+          "to": 1,
+          "net": -0.1118125323085096,
+          "positive": 1.0471886459184608e-29,
+          "negative": -0.1118125323085096
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "net": -0.19125217473701334,
+          "positive": 8.130258275778275e-22,
+          "negative": -0.19125217473701334
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "net": -0.10734615179397491,
+          "positive": 1.6895239565422096e-19,
+          "negative": -0.10734615179397491
+        }
+      ],
+      "largest_positive_states": [
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            63,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 7.142524319250943e-20,
+          "integrated_positive": 7.142524319250943e-20,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            64,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 3.6202835177877285e-20,
+          "integrated_positive": 3.6202835177877285e-20,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            62,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 3.408395579386999e-20,
+          "integrated_positive": 3.5250774176569867e-20,
+          "integrated_negative": -1.1668183826998795e-21
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            63,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 1.2766685018210377e-20,
+          "integrated_positive": 1.2766685018210377e-20,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            62,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 7.22782791345643e-21,
+          "integrated_positive": 7.290827040969173e-21,
+          "integrated_negative": -6.299912751274217e-23
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            64,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 6.42793166268064e-21,
+          "integrated_positive": 6.42793166268064e-21,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            64,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 1.5445144094355284e-22,
+          "integrated_positive": 1.5445144094355284e-22,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            61,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": -8.785007828153276e-20,
+          "integrated_positive": 9.104267035244899e-23,
+          "integrated_negative": -8.794112095188521e-20
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            63,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 4.047484664797435e-23,
+          "integrated_positive": 4.0474859248440553e-23,
+          "integrated_negative": -1.2600466203583782e-29
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            64,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 2.787836689110217e-23,
+          "integrated_positive": 2.787836689110217e-23,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            62,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 1.0566586190938677e-23,
+          "integrated_positive": 2.5409909562916466e-23,
+          "integrated_negative": -1.4843323371977787e-23
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            61,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -1.110858551040961e-20,
+          "integrated_positive": 2.3744208353142846e-23,
+          "integrated_negative": -1.1132329718762754e-20
+        }
+      ],
+      "largest_negative_states": [
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.01635722597887385,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.01635722597887385
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            3,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.013376319582389605,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.013376319582389605
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.011647384994641912,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.011647384994641912
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.009547889323509817,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.009547889323509817
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.009500362452293413,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.009500362452293413
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            6,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.008471442456134463,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.008471442456134463
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.008469814157336542,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.008469814157336542
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.007833935174064607,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.007833935174064607
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "integrated_net": -0.007308438321296773,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.007308438321296773
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "integrated_net": -0.007072552133843617,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.007072552133843617
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.006964972102799572,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.006964972102799572
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            7,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.00691319012935385,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.00691319012935385
+        }
+      ],
+      "elapsed_seconds": 1.3725148339872248
+    },
+    {
+      "cap": 48,
+      "intervals": 768,
+      "states": 6584,
+      "construction_states": 2284,
+      "endpoint_absent": 0.6925433833168221,
+      "endpoint_responsive": 0.19879030172810136,
+      "endpoint_difference": -0.4937530815887207,
+      "integral_net": -0.4937530821023334,
+      "integral_positive": 2.1794399427592267e-12,
+      "integral_negative": -0.49375308210451213,
+      "quadrature_identity_residual": -5.136126524085682e-10,
+      "responsive_overflow": 1.7217982421387018e-10,
+      "absent_overflow": 1.6455474881891901e-09,
+      "positive_state_count_at_1e_12": 0,
+      "negative_state_count_at_1e_12": 1423,
+      "maximum_positive_construction_advantage": 0.21977421811540043,
+      "mass_error": 5.551115123125783e-16,
+      "groups": {
+        "A=3,C_present=1": {
+          "net": -0.1339458504612431,
+          "positive": 2.17635403247212e-12,
+          "negative": -0.13394585046341945
+        },
+        "A=2,C_present=1": {
+          "net": -0.20370845169173918,
+          "positive": 3.085902003340545e-15,
+          "negative": -0.20370845169174226
+        },
+        "A=2,C_present=0": {
+          "net": -0.04137531982106799,
+          "positive": 8.245800905600799e-21,
+          "negative": -0.04137531982106799
+        },
+        "A=1,C_present=0": {
+          "net": -0.09506575923668416,
+          "positive": 0.0,
+          "negative": -0.09506575923668416
+        },
+        "A=3,C_present=0": {
+          "net": -0.019657700891598785,
+          "positive": 3.796530445055908e-23,
+          "negative": -0.019657700891598785
+        }
+      },
+      "time_bins": [
+        {
+          "from": 0,
+          "to": 0.25,
+          "net": -0.027422657378544095,
+          "positive": 1.0777976957150557e-41,
+          "negative": -0.027422657378544095
+        },
+        {
+          "from": 0.25,
+          "to": 0.5,
+          "net": -0.055919566545175346,
+          "positive": 4.609895748905897e-29,
+          "negative": -0.055919566545175346
+        },
+        {
+          "from": 0.5,
+          "to": 1,
+          "net": -0.11181253173356437,
+          "positive": 1.5262536753863385e-19,
+          "negative": -0.11181253173356437
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "net": -0.19125217447044948,
+          "positive": 6.354288752122094e-14,
+          "negative": -0.19125217447051301
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "net": -0.10734615197459942,
+          "positive": 2.1158969026126384e-12,
+          "negative": -0.10734615197671529
+        }
+      ],
+      "largest_positive_states": [
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            47,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 7.374719497089357e-13,
+          "integrated_positive": 7.374719497089357e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            46,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 5.248662047073345e-13,
+          "integrated_positive": 5.248829413035221e-13,
+          "integrated_negative": -1.6736596187686476e-17
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 3.5345453574126873e-13,
+          "integrated_positive": 3.5345453574126873e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            47,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 2.1086975253588203e-13,
+          "integrated_positive": 2.1086975253588203e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            46,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 1.6293852200357255e-13,
+          "integrated_positive": 1.6293880169457023e-13,
+          "integrated_negative": -2.796909976694295e-19
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 1.0120444314588506e-13,
+          "integrated_positive": 1.0120444314588506e-13,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            45,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": -2.402647692897224e-13,
+          "integrated_positive": 5.816174767134741e-14,
+          "integrated_negative": -2.9842651696106984e-13
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            45,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -2.105451908290049e-14,
+          "integrated_positive": 2.5024405776994537e-14,
+          "integrated_negative": -4.6078924859895024e-14
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 2.2565206631905504e-15,
+          "integrated_positive": 2.2565206631905504e-15,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            47,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 7.961680679870887e-16,
+          "integrated_positive": 7.961680680112583e-16,
+          "integrated_negative": -2.4169682078173168e-26
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            48,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 6.632131267240906e-16,
+          "integrated_positive": 6.632131267240906e-16,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            46,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 4.4359045959507725e-16,
+          "integrated_positive": 5.994185977889504e-16,
+          "integrated_negative": -1.5582813819387323e-16
+        }
+      ],
+      "largest_negative_states": [
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.016357242657042855,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.016357242657042855
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            3,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.0133763197561107,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.0133763197561107
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.011647355856961975,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.011647355856961975
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.009547889319455688,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.009547889319455688
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.009500362467063886,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.009500362467063886
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            6,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.008471442451768304,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.008471442451768304
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.008469814086245352,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.008469814086245352
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.007833935040238348,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.007833935040238348
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "integrated_net": -0.00730843831799991,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.00730843831799991
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "integrated_net": -0.007072552130639561,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.007072552130639561
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.006964972097514505,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.006964972097514505
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            7,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.006913190125166767,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.006913190125166767
+        }
+      ],
+      "elapsed_seconds": 1.1521502909599803
+    },
+    {
+      "cap": 64,
+      "intervals": 768,
+      "states": 8760,
+      "construction_states": 3052,
+      "endpoint_absent": 0.6925433849621373,
+      "endpoint_responsive": 0.19879030189001146,
+      "endpoint_difference": -0.49375308307212584,
+      "integral_net": -0.4937530835857347,
+      "integral_positive": 1.6976501702484546e-19,
+      "integral_negative": -0.493753083585734,
+      "quadrature_identity_residual": -5.136088776502845e-10,
+      "responsive_overflow": 2.5648085180799436e-17,
+      "absent_overflow": 1.8325706666507187e-16,
+      "positive_state_count_at_1e_12": 0,
+      "negative_state_count_at_1e_12": 1424,
+      "maximum_positive_construction_advantage": 0.18435159773126275,
+      "mass_error": 2.220446049250313e-15,
+      "groups": {
+        "A=3,C_present=1": {
+          "net": -0.13394585161558184,
+          "positive": 1.6957687057252363e-19,
+          "negative": -0.13394585161558184
+        },
+        "A=2,C_present=1": {
+          "net": -0.20370845199929918,
+          "positive": 1.8814622932802936e-22,
+          "negative": -0.20370845199929918
+        },
+        "A=2,C_present=0": {
+          "net": -0.04137531983107197,
+          "positive": 2.2299015301298463e-28,
+          "negative": -0.04137531983107197
+        },
+        "A=1,C_present=0": {
+          "net": -0.09506575924295814,
+          "positive": 0.0,
+          "negative": -0.09506575924295814
+        },
+        "A=3,C_present=0": {
+          "net": -0.019657700896823307,
+          "positive": 3.645412524355303e-33,
+          "negative": -0.019657700896823307
+        }
+      },
+      "time_bins": [
+        {
+          "from": 0,
+          "to": 0.25,
+          "net": -0.027422657557293204,
+          "positive": 2.846467483274274e-59,
+          "negative": -0.027422657557293204
+        },
+        {
+          "from": 0.25,
+          "to": 0.5,
+          "net": -0.05591956693337348,
+          "positive": 1.3391570963591291e-42,
+          "negative": -0.05591956693337348
+        },
+        {
+          "from": 0.5,
+          "to": 1,
+          "net": -0.1118125323500821,
+          "positive": 1.0471665383940138e-29,
+          "negative": -0.1118125323500821
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "net": -0.19125217473848105,
+          "positive": 8.1302580065559005e-22,
+          "negative": -0.19125217473848105
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "net": -0.10734615200650412,
+          "positive": 1.6895199121371824e-19,
+          "negative": -0.10734615200650412
+        }
+      ],
+      "largest_positive_states": [
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            63,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 7.142178261799118e-20,
+          "integrated_positive": 7.142178261799118e-20,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            64,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 3.6204283592143353e-20,
+          "integrated_positive": 3.6204283592143353e-20,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            62,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 3.4084951762287285e-20,
+          "integrated_positive": 3.525166700444307e-20,
+          "integrated_negative": -1.1667152421557864e-21
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            63,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 1.2765698523791654e-20,
+          "integrated_positive": 1.2765698523791654e-20,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            62,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 7.228107525394517e-21,
+          "integrated_positive": 7.29109752871964e-21,
+          "integrated_negative": -6.299000332512132e-23
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            64,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 6.428348974220663e-21,
+          "integrated_positive": 6.428348974220663e-21,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            64,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 1.5447427923291037e-22,
+          "integrated_positive": 1.5447427923291037e-22,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            61,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": -8.784980653508566e-20,
+          "integrated_positive": 9.181539822141274e-23,
+          "integrated_negative": -8.794162193330707e-20
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            63,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 4.047353860331592e-23,
+          "integrated_positive": 4.047355119331608e-23,
+          "integrated_negative": -1.2590000158466224e-29
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            64,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": 2.788485852646656e-23,
+          "integrated_positive": 2.788485852646656e-23,
+          "integrated_negative": 0.0
+        },
+        {
+          "state": [
+            2,
+            1,
+            0,
+            0,
+            62,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "integrated_net": 1.0567089875795013e-23,
+          "integrated_positive": 2.5410061491872247e-23,
+          "integrated_negative": -1.4842971616077233e-23
+        },
+        {
+          "state": [
+            1,
+            2,
+            0,
+            0,
+            61,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -1.110850273023336e-20,
+          "integrated_positive": 2.3956355492978686e-23,
+          "integrated_negative": -1.1132459085726339e-20
+        }
+      ],
+      "largest_negative_states": [
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.016357242724819292,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.016357242724819292
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            3,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.013376319815604179,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.013376319815604179
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.011647355901200387,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.011647355901200387
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.009547889320502075,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.009547889320502075
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.009500362467995242,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.009500362467995242
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            6,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.008471442452801426,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.008471442452801426
+        },
+        {
+          "state": [
+            1,
+            1,
+            1,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.008469814125457806,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.008469814125457806
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.00783393504091941,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.00783393504091941
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "integrated_net": -0.007308438321182763,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.007308438321182763
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "integrated_net": -0.007072552133791578,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.007072552133791578
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "integrated_net": -0.006964972142377033,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.006964972142377033
+        },
+        {
+          "state": [
+            1,
+            1,
+            0,
+            0,
+            7,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "integrated_net": -0.006913190126101776,
+          "integrated_positive": 0.0,
+          "integrated_negative": -0.006913190126101776
+        }
+      ],
+      "elapsed_seconds": 1.6440580839989707
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "arithmetic": "Python fractions.Fraction; exact, no floating-point tolerance",
+  "checker_sha256": "e0db0b8e3248580e0b8c5e320e9d57ec6cf437504debcc4e13250e76288d85b7",
+  "checks_per_case": [
+    "positive first-step denominator",
+    "built-state first-step equation",
+    "construction response identity",
+    "exact equality: general criterion = a*b*subclass criterion",
+    "success-difference and both criteria have the same sign",
+    "second generator derivative difference = gamma*(a_B-a)"
+  ],
+  "ordered_parameter_cases_sha256": "66fb503430b077ef736e08e2227ff9fe11c871e090e2d1229c4ace46320f6577",
+  "parameter_cases": 200,
+  "parameter_domain": {
+    "a_b_mu_nu_gamma": "independent randint(1,20)/randint(1,10)",
+    "chi": "randint(1,10)/10",
+    "r": "randint(0,20)/10"
+  },
+  "scope": "Reproducible sampled algebra check for a conditional kinetic module. Not physical identification, a construction/work ledger, a positive result for the G network, or an empirical test.",
+  "seed": 837,
+  "source_note": "_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-OPPORTUNITY-AUDIT.md",
+  "status": "passed",
+  "success_difference_sign_counts": {
+    "negative": 178,
+    "positive": 19,
+    "zero": 3
+  }
+}
