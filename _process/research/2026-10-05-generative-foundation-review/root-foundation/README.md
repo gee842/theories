@@ -1,5 +1,7 @@
 # Root-foundation review package
 
+**Lean continuation, 6 October 2026:** the [formal-core result](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md), [executable proofs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md), and [internal review](LEAN-CORE-REVIEW.md) add a precise finite-continuation completeness criterion and nontrivial realizations. The earlier support and information results below retain their scopes; they are not all newly machine-checked by this addition.
+
 Prepared 5 October 2026. Start with [The root of alignment as continuing realizability](ROOT-FOUNDATION.md). This development asks what mathematical necessity supports the broader theory, without presuming that persistence establishes truth, legitimacy, or a uniquely best physical description. The existing [integrated theory](../final-synthesis/INTEGRATED-THEORY.md), [canonical representation](../OPTIMAL-FOUNDATION.md), and [alternative mechanistic presentation](../FOUNDATION.md) remain available and unchanged.
 
 The focused [plural-capacity extension](PLURAL-CAPACITY.md) generalizes the maintenance result to separate capacity floors, multiple resource reserves and shared activities. It proves an exact indefinite-feasibility condition, a dual finite-failure certificate, and an exact maximum duration for constant losses. This is theoretical development using established methods, with no new empirical study or priority claim.

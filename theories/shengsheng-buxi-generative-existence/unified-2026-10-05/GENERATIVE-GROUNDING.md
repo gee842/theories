@@ -160,6 +160,8 @@ Integrate the round before selecting the next central connection. Record what be
 
 This map places the current contributions within the foundational goal. The links identify supporting studies, not completed proofs of the whole transition named in the first column.
 
+The [Lean core development, 6 October 2026](GENERATIVE-CORE-LEAN.md), now certifies an exact finite-continuation representation criterion, composition through actual successors, a conditional resource obstruction and nontrivial renewal/loss and revision witnesses. It also proves that an irrelevant changing coordinate can be omitted while the operative rule setting in its witness cannot. This advances the precision and coherence of the candidate root. It does not yet derive the supplied revision or restoration mechanisms and therefore leaves the operational-significance bridge below open.
+
 The [three-session integration, 6 October 2026](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/README.md#how-the-contributions-connect), separates existing results from newly accepted supporting work and records what each result supplies to the next transition. In particular, repeated-renewal composition strengthens the requirement to retain actual successors and their support; the mixing witness shows why relations can matter despite identical marginal observations. Neither yet explains how a process discovers and learns those consequential distinctions. The concern and joint-formation constructions remain downstream contributions whose initial significance and learning architectures require that bridge.
 
 | Transition to explain | Existing contribution | Remaining foundational task |

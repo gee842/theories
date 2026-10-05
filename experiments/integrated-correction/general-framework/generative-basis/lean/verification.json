@@ -1,0 +1,141 @@
+{
+  "checked_at_utc": "2026-10-05T17:40:32.502926+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "checker_sha256": "5008b129bb0c708fced81177396882cf6c1df39a485a6aaffc90c8f623cf2f83",
+  "source_unchanged_during_check": true,
+  "fresh_temporary_build": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "command": [
+        "lean",
+        "-o",
+        "GenerativeCore.olean",
+        "GenerativeCore.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 18,
+      "audited_declarations": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "axioms": [],
+      "clean_dependency_audit": true,
+      "output": "verification/GenerativeCore.txt",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "BoundaryModels",
+      "source_sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e",
+      "command": [
+        "lean",
+        "-o",
+        "BoundaryModels.olean",
+        "BoundaryModels.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 8,
+      "audited_declarations": [
+        "GenerativeBoundary.ObservationLoss.no_observation_only_classifier",
+        "GenerativeBoundary.SharedResource.individual_feasibility_without_joint_feasibility",
+        "GenerativeBoundary.FixedSelector.returns_after_two",
+        "GenerativeBoundary.FixedSelector.changes_phase_every_step",
+        "GenerativeBoundary.FixedSelector.selector_changes_next_phase",
+        "GenerativeBoundary.FixedSelector.selector_preserved_by_step",
+        "GenerativeBoundary.FixedSelector.selector_unchanged_at_every_time",
+        "GenerativeBoundary.FixedSelector.recurrent_process_with_fixed_selector"
+      ],
+      "axioms": [],
+      "clean_dependency_audit": true,
+      "output": "verification/BoundaryModels.txt",
+      "output_sha256": "6201e6d14ea683862919e61b0eb0e143b478a6c972026fdf8565c9ae0ada6783"
+    },
+    {
+      "module": "Depletion",
+      "source_sha256": "d18e23ae33c6f018b1af22f2596fc6509848d501f042af026a76b3d2982696f0",
+      "command": [
+        "lean",
+        "-o",
+        "Depletion.olean",
+        "Depletion.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 5,
+      "audited_declarations": [
+        "Generative.trace_reserve_bound",
+        "Generative.trace_length_bound",
+        "Generative.no_nonempty_cycle_under_depletion",
+        "Generative.infinite_execution_contradicts_depletion",
+        "Generative.no_infinite_execution_under_depletion"
+      ],
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "clean_dependency_audit": true,
+      "output": "verification/Depletion.txt",
+      "output_sha256": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a"
+    },
+    {
+      "module": "RootRealization",
+      "source_sha256": "5e0b273caa73be01f38781427a1b7838d6fa291963ccf7a784b5bcbe5994ecf6",
+      "command": [
+        "lean",
+        "-o",
+        "RootRealization.olean",
+        "RootRealization.lean"
+      ],
+      "exit_code": 0,
+      "dependency_audits": 16,
+      "audited_declarations": [
+        "Generative.Realization.activity_changes_its_continuation_conditions",
+        "Generative.Realization.phase_determined_by_support_and_selector",
+        "Generative.Realization.restoration_guard",
+        "Generative.Realization.consequential_internal_revision",
+        "Generative.Realization.revision_guard_requires_depletion",
+        "Generative.Realization.restoration_requires_external_provision",
+        "Generative.Realization.reaches_renewable_state",
+        "Generative.Realization.nonempty_cycle",
+        "Generative.Realization.recurrent_execution",
+        "Generative.Realization.reaches_terminal",
+        "Generative.Realization.terminal_has_no_action",
+        "Generative.Realization.no_continuation_after_loss",
+        "Generative.Realization.same_law_admits_renewal_and_loss",
+        "Generative.Realization.decoration_local_exact",
+        "Generative.Realization.decoration_trace_exact",
+        "Generative.Realization.support_alone_is_incomplete"
+      ],
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "clean_dependency_audit": true,
+      "output": "verification/RootRealization.txt",
+      "output_sha256": "7e93c850b1204842a29c299dbbd9622804c59a604449a635eff9ca5dd2323f37"
+    }
+  ],
+  "audited_declarations": 47,
+  "scope": "Discrete labelled relations; exact finite existential traces and their representations; conditional natural-reserve obstruction; authored supported feedback witness and finite countermodels. No probability, physical law, observational policy, emergent learning, ethical or universal-reality validation."
+}

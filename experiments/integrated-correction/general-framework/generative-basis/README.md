@@ -1,5 +1,7 @@
 # Toward a generative basis for alignment and coordination
 
+**Lean continuation, 6 October 2026:** [machine-checked core](lean/README.md) and [theory note](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-CORE-LEAN.md) formalize exact finite relational histories, actual-successor composition, a reserve obstruction, and nontrivial witnesses. Complete and incomplete state summaries are exhibited. The probabilistic and structural results below retain their original proof and verification status; this addition does not claim to mechanize them all.
+
 5 October 2026. AI-assisted formal research under Ren's direction. This study pursues the requested generative-completeness objective directly. It integrates selected recently completed chats, eleven cycles of local research, and the V7.3 transition construction. It preserves their limitations and original files. The formulations below are research elaborations, not quotations attributed to Ren or independent human peer review.
 
 The theoretical advance is a precise account of **what a proposed generative representation must preserve, how to construct a complete representation within a finite class, and how to find omissions**. The current results establish a conditional mathematical foundation. They do not yet establish a unique explanatory root of alignment, life, and society.
