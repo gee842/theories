@@ -1,12 +1,12 @@
 {
-  "checked_at_utc": "2026-10-05T18:36:49.775925+00:00",
+  "checked_at_utc": "2026-10-05T19:09:38.643304+00:00",
   "status": "passed",
   "toolchain": "leanprover/lean4:v4.29.1",
   "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
   "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
   "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
-  "checker_sha256": "3e543e3f8fc368e03e16868cd4f2dec29879f1ea64b58ad180e5514b11a97d50",
+  "checker_sha256": "2b7ae889b4301335200f8474db7ba9d8e9f4c61d4684caf8608c493411aab7fe",
   "source_unchanged_during_check": true,
   "fresh_temporary_build": true,
   "project_objects_only_from_frozen_sources": true,
@@ -48,6 +48,50 @@
       "axioms": [],
       "output": "verification/GenerativeCore.txt",
       "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "ResourceContinuation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean",
+      "source_sha256": "4c423a74c7c5b197374b652c420fdc682834fbbf5122aac277a828e193cc7c6e",
+      "role": "existing conditional-account dependency",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "ResourceContinuation.olean",
+        "ResourceContinuation.lean"
+      ],
+      "exit_code": 0,
+      "clean_dependency_audit": true,
+      "audited_declarations": [
+        "Generative.Conditional.support_trace_is_trace",
+        "Generative.Conditional.account_law_pullback",
+        "Generative.Conditional.trace_has_support_account",
+        "Generative.Conditional.support_trace_append",
+        "Generative.Conditional.repeat_accounted_cycle",
+        "Generative.Conditional.support_trace_balance",
+        "Generative.Conditional.support_cycle_covers_demand",
+        "Generative.Conditional.support_trace_unit_demand",
+        "Generative.Conditional.amount_le_cap_times_credited",
+        "Generative.Conditional.support_trace_credit_cap",
+        "Generative.Conditional.support_trace_length_bound",
+        "Generative.Conditional.interval_total_positive_witness",
+        "Generative.Conditional.interval_total_le_of_pointwise",
+        "Generative.Conditional.interval_total_unit_bound",
+        "Generative.Conditional.interval_total_cap_bound",
+        "Generative.Conditional.execution_interval_balance",
+        "Generative.Conditional.componentwise_execution_balance",
+        "Generative.Conditional.unbounded_demand_requires_unbounded_credit",
+        "Generative.Conditional.infinite_unit_execution_credit_window",
+        "Generative.Conditional.infinite_unit_execution_unbounded_credit",
+        "Generative.Conditional.execution_interval_frequency_bound"
+      ],
+      "dependency_audits": 21,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "output": "verification/ResourceContinuation.txt",
+      "output_sha256": "041c9b2e2f06dd9d427a1f0811985f67812be10a17825cc3df153bb4cf2e8ef4"
     },
     {
       "module": "FormedSelection",
@@ -147,8 +191,97 @@
       ],
       "output": "verification/FormationRoot.txt",
       "output_sha256": "b1072e71ef599875b5e26b9fff52bf220bc96e3f0731b0663eaad34de8687404"
+    },
+    {
+      "module": "FormationSupport",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean",
+      "source_sha256": "9b32bae244f192097d2e69b4d232e70a26e9ffd59620a1ce00e590eb0aaaa81f",
+      "role": "shared formation-support dependency",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "FormationSupport.olean",
+        "FormationSupport.lean"
+      ],
+      "exit_code": 0,
+      "clean_dependency_audit": true,
+      "audited_declarations": [
+        "FormedSelection.Support.step_source_ledger",
+        "FormedSelection.Support.step_local_ledger",
+        "FormedSelection.Support.step_usable_ledger",
+        "FormedSelection.Support.usable_account",
+        "FormedSelection.Support.local_account",
+        "FormedSelection.Support.source_account",
+        "FormedSelection.Support.closed_account",
+        "FormedSelection.Support.root_trace_account",
+        "FormedSelection.Support.root_account_bound",
+        "FormedSelection.Support.tally_zero",
+        "FormedSelection.Support.root_usable_bound",
+        "FormedSelection.Support.root_local_bound",
+        "FormedSelection.Support.root_source_bound",
+        "FormedSelection.Support.root_closed_bound",
+        "FormedSelection.Support.root_local_source_bound",
+        "FormedSelection.Support.closed_cycle_has_no_expenditure",
+        "FormedSelection.Support.closed_cycle_has_no_capture",
+        "FormedSelection.Support.root_local_copy_bound",
+        "FormedSelection.Support.capture_absent_tally",
+        "FormedSelection.Support.local_expenditure_requires_capture",
+        "FormedSelection.Support.root_prefix_continuation_bound",
+        "FormedSelection.Support.paid_witness_account",
+        "FormedSelection.Support.paid_witness_saturates",
+        "FormedSelection.Support.paid_witness_handoff",
+        "FormedSelection.Support.copied_cannot_pay_more"
+      ],
+      "dependency_audits": 25,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "output": "verification/FormationSupport.txt",
+      "output_sha256": "ab863b9b36770e614a6cc39bf19acb34f8da87975653df08f9eda2408a1f663f"
+    },
+    {
+      "module": "FormationAccounts",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean",
+      "source_sha256": "ca314ce9c800ca1f8e74adfa49deb97c0471131cef7ada5f75c834c0cd96a5cf",
+      "role": "new formalization",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "FormationAccounts.olean",
+        "FormationAccounts.lean"
+      ],
+      "exit_code": 0,
+      "clean_dependency_audit": true,
+      "audited_declarations": [
+        "FormedSelection.Accounts.spending_split",
+        "FormedSelection.Accounts.tally_spending_split",
+        "FormedSelection.Accounts.step_account_exact",
+        "FormedSelection.Accounts.identified_account_laws",
+        "FormedSelection.Accounts.root_account_balance",
+        "FormedSelection.Accounts.root_account_exact",
+        "FormedSelection.Accounts.root_open_closed_consistency",
+        "FormedSelection.Accounts.root_reaction_loss_budget",
+        "FormedSelection.Accounts.root_common_budget",
+        "FormedSelection.Accounts.root_exhausted_accounts",
+        "FormedSelection.Accounts.root_append_account",
+        "FormedSelection.Accounts.root_shared_boundary_budget",
+        "FormedSelection.Accounts.zero_fuel_cost_damage",
+        "FormedSelection.Accounts.fuel_demand_is_not_unit",
+        "FormedSelection.Accounts.mixed_witness_account"
+      ],
+      "dependency_audits": 15,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "output": "verification/FormationAccounts.txt",
+      "output_sha256": "5c07a140492248026ed70cbcf1b47074a76a15ae2b1f2120b0ccb9bc244b03cc"
     }
   ],
-  "new_audited_declarations": 53,
-  "scope": "Sixteen enabled discrete events with formed A/H variants, one paid resident site and shared/local fuel; arbitrary-path material validity, total and common fuel ledgers, copy and event budgets, three-unit and mixed four-unit bootstrap bounds, type-specific formation ancestry, paid witness and repaired-site inheritance counterexample; no-H-local-copy invariant before resident wear; exact trace transport into the original relational generative core. No stochastic rates, numerical probabilities, selection expectation, CTMC-to-Lean refinement, empirical chemistry, learning or universal explanatory sufficiency."
+  "new_audited_declarations": 68,
+  "prior_formation_audited_declarations": 53,
+  "account_composition_audited_declarations": 15,
+  "scope": "Sixteen enabled discrete events with formed A/H variants, one paid resident site and shared/local fuel; arbitrary-path material validity, total and common fuel ledgers, copy and event budgets, three-unit and mixed four-unit bootstrap bounds, type-specific formation ancestry, paid witness and repaired-site inheritance counterexample; no-H-local-copy invariant before resident wear; exact trace transport into the original relational generative core. The shared FormationSupport bridge supplies closed, usable and source accounts and actual accounted traces; a uniform boundary wrapper and common-fuel account extend that bridge, applying the generic continuation theorem on actual root traces and compose at their shared state; capture credit is bounded by inherited source, reaction expenditure is separated from leakage, and a zero-fuel-cost event rules out unit-demand inference. No stochastic rates, numerical probabilities, selection expectation, CTMC-to-Lean refinement, empirical chemistry, learning or universal explanatory sufficiency."
 }

@@ -1,0 +1,923 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-05T19:09:41.914832+00:00",
+  "source_hashes": {
+    "model.py": "e7ebb37ba61cff4c500e6331beda5f1d71b971c2c8be972fb710af5b73042ae9",
+    "check.py": "3ec9fafdc187d28fce4b1090e313b1912c464056313e4f713bbb087a923a301d",
+    "PROTOCOL.md": "526a7e0593f2a2c84159d67709519c5904c1d6218c0c6d0ecef901470a6e30f2"
+  },
+  "unchanged_inputs": true,
+  "scope": "Exact finite declared laws and moment identities; no empirical calibration, learner-origin, valence, ethical or universal advantage claim.",
+  "gate_cases": {
+    "source_0_fuel_0": {
+      "states": 1,
+      "edges": 0,
+      "identification_reachable": false,
+      "write_reachable": false,
+      "delivery_reachable": false,
+      "delivery_after_correct_memory_before_first_repair": false
+    },
+    "source_0_fuel_1": {
+      "states": 3,
+      "edges": 2,
+      "identification_reachable": true,
+      "write_reachable": false,
+      "delivery_reachable": false,
+      "delivery_after_correct_memory_before_first_repair": false
+    },
+    "source_0_fuel_2": {
+      "states": 6,
+      "edges": 6,
+      "identification_reachable": true,
+      "write_reachable": true,
+      "delivery_reachable": false,
+      "delivery_after_correct_memory_before_first_repair": false
+    },
+    "source_0_fuel_3": {
+      "states": 11,
+      "edges": 14,
+      "identification_reachable": true,
+      "write_reachable": true,
+      "delivery_reachable": false,
+      "delivery_after_correct_memory_before_first_repair": false
+    },
+    "source_0_fuel_4": {
+      "states": 16,
+      "edges": 26,
+      "identification_reachable": true,
+      "write_reachable": true,
+      "delivery_reachable": false,
+      "delivery_after_correct_memory_before_first_repair": false
+    },
+    "source_0_fuel_5": {
+      "states": 21,
+      "edges": 38,
+      "identification_reachable": true,
+      "write_reachable": true,
+      "delivery_reachable": false,
+      "delivery_after_correct_memory_before_first_repair": false
+    },
+    "source_1_fuel_0": {
+      "states": 1,
+      "edges": 0,
+      "identification_reachable": false,
+      "write_reachable": false,
+      "delivery_reachable": false,
+      "delivery_after_correct_memory_before_first_repair": false
+    },
+    "source_1_fuel_1": {
+      "states": 5,
+      "edges": 4,
+      "identification_reachable": true,
+      "write_reachable": false,
+      "delivery_reachable": true,
+      "delivery_after_correct_memory_before_first_repair": false
+    },
+    "source_1_fuel_2": {
+      "states": 10,
+      "edges": 11,
+      "identification_reachable": true,
+      "write_reachable": true,
+      "delivery_reachable": true,
+      "delivery_after_correct_memory_before_first_repair": false
+    },
+    "source_1_fuel_3": {
+      "states": 19,
+      "edges": 28,
+      "identification_reachable": true,
+      "write_reachable": true,
+      "delivery_reachable": true,
+      "delivery_after_correct_memory_before_first_repair": true
+    },
+    "source_1_fuel_4": {
+      "states": 27,
+      "edges": 49,
+      "identification_reachable": true,
+      "write_reachable": true,
+      "delivery_reachable": true,
+      "delivery_after_correct_memory_before_first_repair": true
+    },
+    "source_1_fuel_5": {
+      "states": 35,
+      "edges": 70,
+      "identification_reachable": true,
+      "write_reachable": true,
+      "delivery_reachable": true,
+      "delivery_after_correct_memory_before_first_repair": true
+    }
+  },
+  "paths": {
+    "primary": {
+      "actions": [
+        "probe",
+        "write",
+        "repair",
+        "capture"
+      ],
+      "states": [
+        {
+          "source": 1,
+          "fuel": 3,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 2,
+          "intact": false,
+          "record": 1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 1,
+          "intact": false,
+          "record": 1,
+          "weight": 1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 0,
+          "intact": true,
+          "record": 1,
+          "weight": 1,
+          "delivered": false,
+          "correct_memory_before_first_repair": true
+        },
+        {
+          "source": 0,
+          "fuel": 1,
+          "intact": true,
+          "record": 1,
+          "weight": 1,
+          "delivered": true,
+          "correct_memory_before_first_repair": true
+        }
+      ]
+    },
+    "record_driven_then_write": {
+      "actions": [
+        "probe",
+        "repair",
+        "capture",
+        "write"
+      ],
+      "states": [
+        {
+          "source": 1,
+          "fuel": 2,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 1,
+          "intact": false,
+          "record": 1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 0,
+          "intact": true,
+          "record": 1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 1,
+          "intact": true,
+          "record": 1,
+          "weight": -1,
+          "delivered": true,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 0,
+          "intact": true,
+          "record": 1,
+          "weight": 1,
+          "delivered": true,
+          "correct_memory_before_first_repair": false
+        }
+      ]
+    },
+    "blind_then_measure": {
+      "actions": [
+        "repair",
+        "capture",
+        "probe",
+        "write"
+      ],
+      "states": [
+        {
+          "source": 1,
+          "fuel": 2,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 1,
+          "intact": true,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 2,
+          "intact": true,
+          "record": -1,
+          "weight": -1,
+          "delivered": true,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 1,
+          "intact": true,
+          "record": 1,
+          "weight": -1,
+          "delivered": true,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 0,
+          "intact": true,
+          "record": 1,
+          "weight": 1,
+          "delivered": true,
+          "correct_memory_before_first_repair": false
+        }
+      ]
+    }
+  },
+  "controllers": {
+    "source_0_fuel_2_memory": {
+      "actions": [
+        "probe",
+        "write"
+      ],
+      "states": [
+        {
+          "source": 0,
+          "fuel": 2,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 1,
+          "intact": false,
+          "record": 0,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 0,
+          "intact": false,
+          "record": 0,
+          "weight": 0,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        }
+      ],
+      "stop": "stopped"
+    },
+    "source_0_fuel_2_direct": {
+      "actions": [
+        "probe"
+      ],
+      "states": [
+        {
+          "source": 0,
+          "fuel": 2,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 1,
+          "intact": false,
+          "record": 0,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        }
+      ],
+      "stop": "stopped"
+    },
+    "source_0_fuel_2_inverse": {
+      "actions": [
+        "probe",
+        "write"
+      ],
+      "states": [
+        {
+          "source": 0,
+          "fuel": 2,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 1,
+          "intact": false,
+          "record": 0,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 0,
+          "intact": false,
+          "record": 0,
+          "weight": 0,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        }
+      ],
+      "stop": "disabled"
+    },
+    "source_0_fuel_3_memory": {
+      "actions": [
+        "probe",
+        "write"
+      ],
+      "states": [
+        {
+          "source": 0,
+          "fuel": 3,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 2,
+          "intact": false,
+          "record": 0,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 1,
+          "intact": false,
+          "record": 0,
+          "weight": 0,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        }
+      ],
+      "stop": "stopped"
+    },
+    "source_0_fuel_3_direct": {
+      "actions": [
+        "probe"
+      ],
+      "states": [
+        {
+          "source": 0,
+          "fuel": 3,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 2,
+          "intact": false,
+          "record": 0,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        }
+      ],
+      "stop": "stopped"
+    },
+    "source_0_fuel_3_inverse": {
+      "actions": [
+        "probe",
+        "write",
+        "repair"
+      ],
+      "states": [
+        {
+          "source": 0,
+          "fuel": 3,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 2,
+          "intact": false,
+          "record": 0,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 1,
+          "intact": false,
+          "record": 0,
+          "weight": 0,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 0,
+          "intact": true,
+          "record": 0,
+          "weight": 0,
+          "delivered": false,
+          "correct_memory_before_first_repair": true
+        }
+      ],
+      "stop": "disabled"
+    },
+    "source_1_fuel_2_memory": {
+      "actions": [
+        "probe",
+        "write"
+      ],
+      "states": [
+        {
+          "source": 1,
+          "fuel": 2,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 1,
+          "intact": false,
+          "record": 1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 0,
+          "intact": false,
+          "record": 1,
+          "weight": 1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        }
+      ],
+      "stop": "disabled"
+    },
+    "source_1_fuel_2_direct": {
+      "actions": [
+        "probe",
+        "repair",
+        "capture",
+        "write"
+      ],
+      "states": [
+        {
+          "source": 1,
+          "fuel": 2,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 1,
+          "intact": false,
+          "record": 1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 0,
+          "intact": true,
+          "record": 1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 1,
+          "intact": true,
+          "record": 1,
+          "weight": -1,
+          "delivered": true,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 0,
+          "intact": true,
+          "record": 1,
+          "weight": 1,
+          "delivered": true,
+          "correct_memory_before_first_repair": false
+        }
+      ],
+      "stop": "stopped"
+    },
+    "source_1_fuel_2_inverse": {
+      "actions": [
+        "probe",
+        "write"
+      ],
+      "states": [
+        {
+          "source": 1,
+          "fuel": 2,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 1,
+          "intact": false,
+          "record": 1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 0,
+          "intact": false,
+          "record": 1,
+          "weight": 1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        }
+      ],
+      "stop": "stopped"
+    },
+    "source_1_fuel_3_memory": {
+      "actions": [
+        "probe",
+        "write",
+        "repair",
+        "capture"
+      ],
+      "states": [
+        {
+          "source": 1,
+          "fuel": 3,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 2,
+          "intact": false,
+          "record": 1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 1,
+          "intact": false,
+          "record": 1,
+          "weight": 1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 0,
+          "intact": true,
+          "record": 1,
+          "weight": 1,
+          "delivered": false,
+          "correct_memory_before_first_repair": true
+        },
+        {
+          "source": 0,
+          "fuel": 1,
+          "intact": true,
+          "record": 1,
+          "weight": 1,
+          "delivered": true,
+          "correct_memory_before_first_repair": true
+        }
+      ],
+      "stop": "stopped"
+    },
+    "source_1_fuel_3_direct": {
+      "actions": [
+        "probe",
+        "repair",
+        "capture",
+        "write"
+      ],
+      "states": [
+        {
+          "source": 1,
+          "fuel": 3,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 2,
+          "intact": false,
+          "record": 1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 1,
+          "intact": true,
+          "record": 1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 2,
+          "intact": true,
+          "record": 1,
+          "weight": -1,
+          "delivered": true,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 0,
+          "fuel": 1,
+          "intact": true,
+          "record": 1,
+          "weight": 1,
+          "delivered": true,
+          "correct_memory_before_first_repair": false
+        }
+      ],
+      "stop": "stopped"
+    },
+    "source_1_fuel_3_inverse": {
+      "actions": [
+        "probe",
+        "write"
+      ],
+      "states": [
+        {
+          "source": 1,
+          "fuel": 3,
+          "intact": false,
+          "record": -1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 2,
+          "intact": false,
+          "record": 1,
+          "weight": -1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        },
+        {
+          "source": 1,
+          "fuel": 1,
+          "intact": false,
+          "record": 1,
+          "weight": 1,
+          "delivered": false,
+          "correct_memory_before_first_repair": false
+        }
+      ],
+      "stop": "stopped"
+    }
+  },
+  "prediction_cases": {
+    "funded": {
+      "rounds": 3,
+      "fuel": 6,
+      "source": 6,
+      "loss_probability": "1/2",
+      "gain": "1/4",
+      "decay": "0",
+      "mean_retained_weight": "37/128",
+      "parameter_squared_error": "605/8192",
+      "held_out_squared_loss": "2653/8192",
+      "strictly_above_quarter_probability": "1/2",
+      "operating_reserve_probability": "7/8",
+      "mean_weight_given_operating_reserve": "111/448",
+      "mean_completed_rounds": "3",
+      "all_rounds_paid_probability": "1",
+      "moments": [
+        {
+          "before_mean": "0",
+          "paid_probability": "1",
+          "paid_target_mean": "1/2",
+          "paid_weight_mean": "0",
+          "after_mean": "1/8"
+        },
+        {
+          "before_mean": "1/8",
+          "paid_probability": "1",
+          "paid_target_mean": "1/2",
+          "paid_weight_mean": "1/8",
+          "after_mean": "7/32"
+        },
+        {
+          "before_mean": "7/32",
+          "paid_probability": "1",
+          "paid_target_mean": "1/2",
+          "paid_weight_mean": "7/32",
+          "after_mean": "37/128"
+        }
+      ],
+      "endpoint_count": 8
+    },
+    "scarce": {
+      "rounds": 3,
+      "fuel": 2,
+      "source": 6,
+      "loss_probability": "1/2",
+      "gain": "1/4",
+      "decay": "0",
+      "mean_retained_weight": "7/32",
+      "parameter_squared_error": "11/128",
+      "held_out_squared_loss": "43/128",
+      "strictly_above_quarter_probability": "0",
+      "operating_reserve_probability": "1/8",
+      "mean_weight_given_operating_reserve": "0",
+      "mean_completed_rounds": "7/4",
+      "all_rounds_paid_probability": "1/4",
+      "moments": [
+        {
+          "before_mean": "0",
+          "paid_probability": "1",
+          "paid_target_mean": "1/2",
+          "paid_weight_mean": "0",
+          "after_mean": "1/8"
+        },
+        {
+          "before_mean": "1/8",
+          "paid_probability": "1/2",
+          "paid_target_mean": "1/4",
+          "paid_weight_mean": "0",
+          "after_mean": "3/16"
+        },
+        {
+          "before_mean": "3/16",
+          "paid_probability": "1/4",
+          "paid_target_mean": "1/8",
+          "paid_weight_mean": "0",
+          "after_mean": "7/32"
+        }
+      ],
+      "endpoint_count": 4
+    },
+    "funded_decay": {
+      "rounds": 3,
+      "fuel": 6,
+      "source": 6,
+      "loss_probability": "1/2",
+      "gain": "1/4",
+      "decay": "1/8",
+      "mean_retained_weight": "129/512",
+      "parameter_squared_error": "11225/131072",
+      "held_out_squared_loss": "43993/131072",
+      "strictly_above_quarter_probability": "1/2",
+      "operating_reserve_probability": "7/8",
+      "mean_weight_given_operating_reserve": "387/1792",
+      "mean_completed_rounds": "3",
+      "all_rounds_paid_probability": "1",
+      "moments": [
+        {
+          "before_mean": "0",
+          "paid_probability": "1",
+          "paid_target_mean": "1/2",
+          "paid_weight_mean": "0",
+          "after_mean": "1/8"
+        },
+        {
+          "before_mean": "1/8",
+          "paid_probability": "1",
+          "paid_target_mean": "1/2",
+          "paid_weight_mean": "1/8",
+          "after_mean": "13/64"
+        },
+        {
+          "before_mean": "13/64",
+          "paid_probability": "1",
+          "paid_target_mean": "1/2",
+          "paid_weight_mean": "13/64",
+          "after_mean": "129/512"
+        }
+      ],
+      "endpoint_count": 8
+    },
+    "unfunded": {
+      "rounds": 3,
+      "fuel": 1,
+      "source": 6,
+      "loss_probability": "1/2",
+      "gain": "1/4",
+      "decay": "0",
+      "mean_retained_weight": "0",
+      "parameter_squared_error": "1/4",
+      "held_out_squared_loss": "1/2",
+      "strictly_above_quarter_probability": "0",
+      "operating_reserve_probability": "0",
+      "mean_weight_given_operating_reserve": null,
+      "mean_completed_rounds": "0",
+      "all_rounds_paid_probability": "0",
+      "moments": [
+        {
+          "before_mean": "0",
+          "paid_probability": "0",
+          "paid_target_mean": "0",
+          "paid_weight_mean": "0",
+          "after_mean": "0"
+        },
+        {
+          "before_mean": "0",
+          "paid_probability": "0",
+          "paid_target_mean": "0",
+          "paid_weight_mean": "0",
+          "after_mean": "0"
+        },
+        {
+          "before_mean": "0",
+          "paid_probability": "0",
+          "paid_target_mean": "0",
+          "paid_weight_mean": "0",
+          "after_mean": "0"
+        }
+      ],
+      "endpoint_count": 1
+    }
+  },
+  "additional_parameter_cases": 390
+}

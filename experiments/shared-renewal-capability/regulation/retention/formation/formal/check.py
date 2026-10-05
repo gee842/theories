@@ -15,8 +15,16 @@ REPO = ROOT.parents[5]
 CORE = REPO / "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
 SOURCES = {
     "GenerativeCore": CORE,
+    "ResourceContinuation": CORE.parent / "conditional/ResourceContinuation.lean",
     "FormedSelection": ROOT / "FormedSelection.lean",
     "FormationRoot": ROOT / "FormationRoot.lean",
+    "FormationSupport": CORE.parent / "learning/FormationSupport.lean",
+    "FormationAccounts": ROOT / "FormationAccounts.lean",
+}
+DEPENDENCY_ROLES = {
+    "GenerativeCore": "existing root dependency",
+    "ResourceContinuation": "existing conditional-account dependency",
+    "FormationSupport": "shared formation-support dependency",
 }
 ALLOWED_AXIOMS = {"propext", "Quot.sound", "Classical.choice"}
 
@@ -50,7 +58,8 @@ def main():
         assert not re.search(r"\b(sorry|admit|native_decide|unsafe)\b", source_text), name
         assert not re.search(r"^\s*(axiom|constant)\s", source_text, re.M), name
         imports = re.findall(r"^import\s+(.+)$", source_text, re.M)
-        assert set(imports).issubset({"Std", "GenerativeCore", "FormedSelection"}), imports
+        assert set(imports).issubset({"Std", "GenerativeCore", "FormedSelection",
+                                      "FormationRoot", "ResourceContinuation", "FormationSupport"}), imports
         declared[name] = set(re.findall(r"^theorem\s+(\w+)", source_text, re.M))
         requested = {qualified.rsplit(".", 1)[-1] for qualified in
                      re.findall(r"^#print axioms\s+([\w.]+)\s*$", source_text, re.M)}
@@ -88,7 +97,7 @@ def main():
                 "module": name,
                 "source": str(path.relative_to(REPO)),
                 "source_sha256": sha(frozen[name]),
-                "role": "existing root dependency" if name == "GenerativeCore" else "new formalization",
+                "role": DEPENDENCY_ROLES.get(name, "new formalization"),
                 "command": command,
                 "exit_code": result.returncode,
                 "clean_dependency_audit": clean,
@@ -119,12 +128,22 @@ def main():
         "modules": results,
         "new_audited_declarations": sum(item["dependency_audits"] for item in results
                                         if item["role"] == "new formalization"),
+        "prior_formation_audited_declarations": sum(item["dependency_audits"] for item in results
+                                                    if item["module"] in {"FormedSelection", "FormationRoot"}),
+        "account_composition_audited_declarations": sum(item["dependency_audits"] for item in results
+                                                        if item["module"] == "FormationAccounts"),
         "scope": "Sixteen enabled discrete events with formed A/H variants, one paid resident "
                  "site and shared/local fuel; arbitrary-path material validity, total and common "
                  "fuel ledgers, copy and event budgets, three-unit and mixed four-unit bootstrap bounds, "
                  "type-specific formation ancestry, paid witness and repaired-site inheritance "
                  "counterexample; no-H-local-copy invariant before resident wear; exact trace "
-                 "transport into the original relational generative core. No stochastic rates, "
+                 "transport into the original relational generative core. The shared FormationSupport "
+                 "bridge supplies closed, usable and source accounts and actual accounted traces; "
+                 "a uniform boundary wrapper and common-fuel account extend that bridge, applying "
+                 "the generic continuation theorem "
+                 "on actual root traces and compose at their shared state; capture credit is "
+                 "bounded by inherited source, reaction expenditure is separated from leakage, "
+                 "and a zero-fuel-cost event rules out unit-demand inference. No stochastic rates, "
                  "numerical probabilities, selection expectation, CTMC-to-Lean refinement, "
                  "empirical chemistry, learning or universal explanatory sufficiency.",
     }

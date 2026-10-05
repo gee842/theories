@@ -4,6 +4,8 @@
 
 ## What is newly checked
 
+**Subsequent accounting extension, 6 October 2026:** the current package adds fifteen declarations in [FormationAccounts.lean](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean), preserving the 53 original declarations described below. It reuses the shared `FormationSupport` bridge and extends common-fuel, expenditure/loss, exact boundary and zero-demand reasoning. The current verification record therefore reports 68 package audits and identifies its shared dependencies separately. These overlapping interfaces are not independent evidence for learning or a new stochastic result.
+
 The single-site law contains two damage-coupled formation reactions, type-preserving copying, paid association and repair, local fuel access, material wear and fuel leakage. There are no initial response variants or installed associations in the primary witness. Formation, copying and repair all compete within one continuing history.
 
 The 53 new Lean declarations establish five substantive constraints:

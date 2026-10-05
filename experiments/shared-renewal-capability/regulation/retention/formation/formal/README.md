@@ -1,6 +1,6 @@
 # Checked formation and localized copying of competing variants
 
-6 October 2026. [FormedSelection.lean](FormedSelection.lean) and [FormationRoot.lean](FormationRoot.lean) contain **53 checked theorem declarations** for the discrete formation law and its exact connection to the repository's existing causal root. They use Lean 4.29.1 and `Std`. The previous root is compiled from its original source as a dependency; its existing declarations are counted separately in the [verification record](verification.json).
+6 October 2026. [FormedSelection.lean](FormedSelection.lean) and [FormationRoot.lean](FormationRoot.lean) preserve **53 checked theorem declarations** for the discrete formation law and its exact connection to the repository's existing causal root. [FormationAccounts.lean](FormationAccounts.lean) adds **15 checked declarations** extending the shared formation-support bridge, for **68 in this package**. They use Lean 4.29.1 and `Std`. The root, conditional account and shared formation-support module are compiled from their original sources as dependencies; their 18, 21 and 25 existing audits are counted separately in the [verification record](verification.json).
 
 The governing scope is in [FORMED-VARIANT-SELECTION-LEAN.md](../../../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-LEAN.md). These are event-law, accounting and reachability proofs. Expected selective advantage belongs to the separate analytical and computational work; it is not certified here.
 
@@ -43,9 +43,28 @@ The separate counterpath starts with M=2, F=5 and E=1:
 
 It ends with A=0 and H=2. That witness makes the no-resident-wear premise of the access invariant explicit and rules out treating private access as an unconditional reward for useful contribution.
 
+## Identified resource accounts on the actual history
+
+`FormationAccounts.lean` imports [FormationSupport.lean](../../../../../integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean), the shared bridge from this formation law to [ResourceContinuation.lean](../../../../../integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean). It reuses that bridge's source and usable ledgers, account laws, event-quantity adapter, actual-trace accounting, bounds, zero-tally lemma and paid witness. The uniform `Boundary` interface and overlapping theorem wrappers are supporting integration, not independent discoveries or additional evidence for the same law. The extension adds a common-fuel boundary, exact boundary cancellation, the reaction/leakage distinction and the unit-demand obstruction. The account boundary is explicit:
+
+| Account | Reserve | Demand on an event | Credit on an event |
+| --- | --- | --- | --- |
+| Closed fuel | Common fuel + local fuel + incident source | All fuel spending, including leakage | Zero |
+| Usable fuel | Common fuel + local fuel | All fuel spending, including leakage | One on capture |
+| Incident source | Remaining incident source | One on capture | Zero |
+| Common fuel | Remaining common fuel | Common-fuel spending, including common leakage | Zero |
+
+Usable-account credit is a conversion from a tracked stock. Each capture consumes one incident packet and stores one local packet; adding the source and usable accounts cancels the credit exactly. Any finite history's capture credit is bounded by its inherited incident stock. Common fuel is never replenished by capture.
+
+The imported `Support.root_trace_account` builds a generic `SupportTrace` on the original `rootProcess`, retaining every actual intermediate state. Its exact totals agree with the existing event ledgers. Our `root_account_balance` wraps the imported bound under the uniform boundary interface; the imported proof uses the generic `support_trace_balance` theorem. `root_append_account` composes those imported trace accounts through the same shared state using the generic append theorem. Phase boundaries retain that state's remaining fuel and source; the proof supplies no new preparation or reset. The mixed-witness wrapper reuses the checked usable account and records source and closed totals: usable demand 5 and credit 1, source demand 1, and closed demand 5 with zero credit.
+
+The budget separates fuel allocated to formation, association, repair and copying from fuel lost by leakage. Reaction allocation is charged whether the response helps or harms; it is not a success score or a measured thermodynamic work quantity. With both usable fuel and incident stock exhausted, no fuel-spending reaction or leakage can occur along any subsequent valid trace. Damage and wear may still occur without consuming these fuel units.
+
+An explicit enabled damage event has zero fuel demand. Therefore the generic theorem requiring at least one unit of demand on **every** event cannot be applied to this fuel account. The earlier finite event bound remains a separate ranking result. No stochastic, frequency, learning or universal-sufficiency conclusion is added by this composition. This bridge identifies a concrete instance of the conditional constraints; the event law, fuel units and local-access architecture remain supplied premises.
+
 ## Reproduce
 
-Run `python3 check.py` from this directory. The checker explicitly selects `lean +leanprover/lean4:v4.29.1`, records the compiler hash, freezes all source bytes, and compiles in a fresh temporary build. Its original-root dependency is [GenerativeCore.lean](../../../../../integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean). No previously compiled project object is reused.
+Run `python3 check.py` from this directory. The checker explicitly selects `lean +leanprover/lean4:v4.29.1`, records the compiler hash, freezes all six source files, and compiles in a fresh temporary build. Its dependencies are the original [GenerativeCore.lean](../../../../../integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean), [ResourceContinuation.lean](../../../../../integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean) and [FormationSupport.lean](../../../../../integrated-correction/general-framework/generative-basis/lean/learning/FormationSupport.lean). No previously compiled project object is reused. The shared formation-support source is read and audited in place; this package does not maintain a second copy.
 
 Every new theorem must have an axiom audit. The script rejects proof placeholders, custom axioms, unsafe declarations, native decision shortcuts, warnings and unexpected axiom dependencies. [verification.json](verification.json) and [verification/](verification/) preserve source, checker, compiler and log hashes. Only the disclosed standard Lean foundations are accepted. The command replaces only this directory's verification artifacts.
 
