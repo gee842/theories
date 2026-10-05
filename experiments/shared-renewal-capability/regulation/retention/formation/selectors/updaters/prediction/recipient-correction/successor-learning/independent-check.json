@@ -1,0 +1,832 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/model.py": "5e21053601393d71153c4b3b46cefbe0835c52fa6a28fe107af7c56a3644e976",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/PROTOCOL.md": "f91912b7bf47c42fdda72eae791d58d082f9d5722bc9b055553c26bdf09b6def",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/model.py": "efa518913cc9533a00a1f1205e136df6210e84f440a9c15129bd225a4e9f4743",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/IMPLEMENTATION.md": "8506ae2830ed6209d6dae108c3c645075849240d7c82e7d1fffbd28055f73f51",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/model-verification.json": "0fcad114447ef95f09c6bebd44c36292962bed379ad7c3dddadc0f6188fecbc9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/fixtures.json": "e352c4efac59fcc4d675d2df47385c9005d185a37426755d1b7764110b9206fb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/results.json": "0d804463c7126b97b1bdcb034949abef33fa604a813bf30b2b1a625b319a69af",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/model.py": "278d57ddf2f17d3b4da726fd067f71e323265626d5296ac83beaa2868f70e66a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md": "d4a008582680f3fd74e7247f32c018022ea4753dfe11ffefdbb1db5d6a4f607c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/inputs.json": "31320fa075dc797766a0f516bed51cb74b9150c84c5892c73bd5e45812f7bc63",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/results.json": "76423c5e1e768043def66492a61567026d3c40937a7ecbb05276f9e371345d5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/independent_check.py": "30bc724ef25feb4382cb7b7099137513b4731bd7a400906beaad7b287d3dfd30"
+  },
+  "inherited_transmission_branches": 160,
+  "case_producer_controls": 120,
+  "local_distributions": 3200,
+  "terminal_branches": 3404,
+  "metric_comparisons": 2880,
+  "payment_checks": 15912,
+  "cases": {
+    "primary": {
+      "variable": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "conventional": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "fixed_normal": {
+        "ordinary": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "conventional": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "clamp_learning": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "copy_old": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        }
+      }
+    },
+    "stable": {
+      "variable": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "conventional": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "fixed_normal": {
+        "ordinary": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "conventional": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "clamp_learning": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "copy_old": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        }
+      }
+    },
+    "no_warmup": {
+      "variable": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "conventional": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "fixed_normal": {
+        "ordinary": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "conventional": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "clamp_learning": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "copy_old": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        }
+      }
+    },
+    "one_warmup": {
+      "variable": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "conventional": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "fixed_normal": {
+        "ordinary": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "conventional": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "clamp_learning": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "copy_old": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        }
+      }
+    },
+    "outages": {
+      "variable": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 52,
+          "metrics": 24,
+          "final_classes": 35
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 52,
+          "metrics": 24,
+          "final_classes": 35
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 40,
+          "metrics": 24,
+          "final_classes": 23
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 52,
+          "metrics": 24,
+          "final_classes": 35
+        }
+      },
+      "conventional": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 52,
+          "metrics": 24,
+          "final_classes": 35
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 52,
+          "metrics": 24,
+          "final_classes": 35
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 40,
+          "metrics": 24,
+          "final_classes": 23
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 52,
+          "metrics": 24,
+          "final_classes": 35
+        }
+      },
+      "fixed_normal": {
+        "ordinary": {
+          "local_distributions": 16,
+          "terminal_branches": 36,
+          "metrics": 24,
+          "final_classes": 34
+        },
+        "conventional": {
+          "local_distributions": 16,
+          "terminal_branches": 36,
+          "metrics": 24,
+          "final_classes": 34
+        },
+        "clamp_learning": {
+          "local_distributions": 16,
+          "terminal_branches": 24,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "copy_old": {
+          "local_distributions": 16,
+          "terminal_branches": 36,
+          "metrics": 24,
+          "final_classes": 34
+        }
+      }
+    },
+    "missing_evidence": {
+      "variable": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "conventional": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "fixed_normal": {
+        "ordinary": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "conventional": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "clamp_learning": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "copy_old": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        }
+      }
+    },
+    "no_parts": {
+      "variable": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "conventional": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "fixed_normal": {
+        "ordinary": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "conventional": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "clamp_learning": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "copy_old": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        }
+      }
+    },
+    "changed_grandchild": {
+      "variable": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "conventional": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 15
+        }
+      },
+      "fixed_normal": {
+        "ordinary": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "conventional": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "clamp_learning": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        },
+        "copy_old": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 14
+        }
+      }
+    },
+    "same_law_changed": {
+      "variable": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        }
+      },
+      "conventional": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        }
+      },
+      "fixed_normal": {
+        "ordinary": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 20
+        },
+        "conventional": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 20
+        },
+        "clamp_learning": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 20
+        },
+        "copy_old": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 20
+        }
+      }
+    },
+    "same_law_stable": {
+      "variable": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        }
+      },
+      "conventional": {
+        "ordinary": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "conventional": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "clamp_learning": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        },
+        "copy_old": {
+          "local_distributions": 32,
+          "terminal_branches": 32,
+          "metrics": 24,
+          "final_classes": 22
+        }
+      },
+      "fixed_normal": {
+        "ordinary": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 20
+        },
+        "conventional": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 20
+        },
+        "clamp_learning": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 20
+        },
+        "copy_old": {
+          "local_distributions": 16,
+          "terminal_branches": 16,
+          "metrics": 24,
+          "final_classes": 20
+        }
+      }
+    }
+  },
+  "scope": "Independent exact learner and grandchild arithmetic over pinned complete inherited fixtures; no independent reconstruction of all ancestor stochastic laws or physical identification."
+}
