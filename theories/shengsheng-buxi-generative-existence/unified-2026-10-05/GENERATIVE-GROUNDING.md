@@ -199,6 +199,8 @@ There are good grounds for confidence that more precise conditional results can 
 
 Confidence should rise when an upstream result actually supplies a downstream premise, survives interventions, retains costs and conflicts through composition, and makes independently testable predictions. It should fall when success depends on a hidden reward, a favorable reset, an unexplained benevolent selector, or a purported learning effect fully accounted for by passive persistence or pre-existing selection. Completing the whole account means meeting the five completion conditions above; proof count, a finished archive, and a collection of separate successful examples are insufficient measures.
 
+**Proposed recipient-to-transmission connection, 6 October 2026:** the [bounded contract](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-TRANSMISSION-CONTRACT.md) examines how actual recipient consequences could affect which response mechanisms are propagated when private stocks are tied. Its saved-evidence audit preserves equal recipient funding for a faithful route and a misleading private-zero proxy. The next construction must physically encode/form the currently external policy arm, then pay template access, receiver components and actual successor use under an explicit variation/transmission law. Copying feasibility, differential propagation, repeated persistence and ethical justification remain distinct. **No new copying mechanism has yet been validated by this contract.**
+
 ## The derivation and the existing work
 
 This map places the current contributions within the foundational goal. The links identify supporting studies, not completed proofs of the whole transition named in the first column.

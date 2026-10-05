@@ -1,0 +1,2529 @@
+{
+  "actual_witnesses": [
+    {
+      "faithful_trace": [
+        {
+          "action": 1,
+          "capture": false,
+          "command_after": 0,
+          "label": 0,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 3,
+          "receipt_source": "target",
+          "report": 1,
+          "target": "recipient"
+        },
+        {
+          "action": 1,
+          "capture": true,
+          "command_after": 1,
+          "label": 1,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 1,
+          "receipt_source": "target",
+          "report": 0,
+          "target": "actor"
+        },
+        {
+          "action": 0,
+          "capture": true,
+          "command_after": 0,
+          "label": 0,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 1,
+          "receipt_source": "target",
+          "report": 1,
+          "target": "recipient"
+        },
+        {
+          "action": 1,
+          "capture": true,
+          "command_after": 1,
+          "label": 1,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 1,
+          "receipt_source": "target",
+          "report": 0,
+          "target": "actor"
+        }
+      ],
+      "matched_terminal_rows": {
+        "frozen": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 0,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 0,
+            "installed": 1,
+            "missing_evidence": 0,
+            "recipient_captures": 0,
+            "recipient_correction": 0,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 0,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 20,
+            "writes": 4
+          },
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 3,
+            "qualified_q": -1,
+            "recipient": 0,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        "indexed": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 0,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 10,
+            "installed": 1,
+            "missing_evidence": 0,
+            "recipient_captures": 1,
+            "recipient_correction": 1,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 1,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 10,
+            "writes": 4
+          },
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 1,
+            "qualified_q": -1,
+            "recipient": 10,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        "private_as_recipient": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 1,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 10,
+            "installed": 1,
+            "missing_evidence": 0,
+            "recipient_captures": 1,
+            "recipient_correction": 1,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 0,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 10,
+            "writes": 4
+          },
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 3,
+            "qualified_q": -1,
+            "recipient": 10,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        "private_only": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 0,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 0,
+            "installed": 1,
+            "missing_evidence": 2,
+            "recipient_captures": 0,
+            "recipient_correction": 0,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 0,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 20,
+            "writes": 4
+          },
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 3,
+            "qualified_q": -1,
+            "recipient": 0,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        }
+      },
+      "predecessor": {
+        "conditional_mean_marks": {
+          "acquired_uses": "7",
+          "base_forms": "1",
+          "brier16": "20",
+          "captures": "6",
+          "coupler_changes": "0",
+          "coupler_forms": "1",
+          "coupler_renewals": "6",
+          "decoder_errors": "0",
+          "inverted_trials": "0",
+          "normal_trials": "8",
+          "predictor_retrofits": "1",
+          "rents": "8",
+          "spent": "65",
+          "trials": "8",
+          "unpaid_writes": "0",
+          "updater_forms": "1",
+          "waste": "20",
+          "writes": "8"
+        },
+        "final_regime": 1,
+        "initial_regime": 0,
+        "probability": "1/8",
+        "state": {
+          "coupling": 0,
+          "coupling_life": 2,
+          "failed_q": -1,
+          "fuel": 21,
+          "gate_life": 2,
+          "last": 1,
+          "life": 6,
+          "q": 4,
+          "qualified_q": -1,
+          "stage": 2,
+          "witness": false,
+          "written": true
+        }
+      },
+      "preparation": {
+        "backing_slots": 2,
+        "commissioned": true,
+        "packets": 12,
+        "preparation_spent": 4,
+        "probability": "2/9",
+        "remainder": 0,
+        "remaining_energy": 147,
+        "reserve": 26,
+        "state": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          26,
+          120
+        ],
+        "transformed_A": 1,
+        "transformed_H": 1
+      },
+      "producer": "variable",
+      "unconditional_mass": "1/36"
+    },
+    {
+      "faithful_trace": [
+        {
+          "action": 1,
+          "capture": false,
+          "command_after": 0,
+          "label": 0,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 3,
+          "receipt_source": "target",
+          "report": 1,
+          "target": "recipient"
+        },
+        {
+          "action": 1,
+          "capture": true,
+          "command_after": 1,
+          "label": 1,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 1,
+          "receipt_source": "target",
+          "report": 0,
+          "target": "actor"
+        },
+        {
+          "action": 0,
+          "capture": true,
+          "command_after": 0,
+          "label": 0,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 1,
+          "receipt_source": "target",
+          "report": 1,
+          "target": "recipient"
+        },
+        {
+          "action": 1,
+          "capture": true,
+          "command_after": 1,
+          "label": 1,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 1,
+          "receipt_source": "target",
+          "report": 0,
+          "target": "actor"
+        }
+      ],
+      "matched_terminal_rows": {
+        "frozen": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 0,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 0,
+            "installed": 1,
+            "missing_evidence": 0,
+            "recipient_captures": 0,
+            "recipient_correction": 0,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 0,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 20,
+            "writes": 4
+          },
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 3,
+            "qualified_q": -1,
+            "recipient": 0,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        "indexed": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 0,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 10,
+            "installed": 1,
+            "missing_evidence": 0,
+            "recipient_captures": 1,
+            "recipient_correction": 1,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 1,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 10,
+            "writes": 4
+          },
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 1,
+            "qualified_q": -1,
+            "recipient": 10,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        "private_as_recipient": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 1,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 10,
+            "installed": 1,
+            "missing_evidence": 0,
+            "recipient_captures": 1,
+            "recipient_correction": 1,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 0,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 10,
+            "writes": 4
+          },
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 3,
+            "qualified_q": -1,
+            "recipient": 10,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        "private_only": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 0,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 0,
+            "installed": 1,
+            "missing_evidence": 2,
+            "recipient_captures": 0,
+            "recipient_correction": 0,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 0,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 20,
+            "writes": 4
+          },
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 3,
+            "qualified_q": -1,
+            "recipient": 0,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        }
+      },
+      "predecessor": {
+        "conditional_mean_marks": {
+          "acquired_uses": "7",
+          "base_forms": "1",
+          "brier16": "20",
+          "captures": "6",
+          "coupler_changes": "0",
+          "coupler_forms": "1",
+          "coupler_renewals": "6",
+          "decoder_errors": "0",
+          "inverted_trials": "0",
+          "normal_trials": "8",
+          "predictor_retrofits": "1",
+          "rents": "8",
+          "spent": "65",
+          "trials": "8",
+          "unpaid_writes": "0",
+          "updater_forms": "1",
+          "waste": "20",
+          "writes": "8"
+        },
+        "final_regime": 1,
+        "initial_regime": 0,
+        "probability": "1/8",
+        "state": {
+          "coupling": 0,
+          "coupling_life": 2,
+          "failed_q": -1,
+          "fuel": 21,
+          "gate_life": 2,
+          "last": 1,
+          "life": 6,
+          "q": 4,
+          "qualified_q": -1,
+          "stage": 2,
+          "witness": false,
+          "written": true
+        }
+      },
+      "preparation": {
+        "backing_slots": 2,
+        "commissioned": true,
+        "packets": 12,
+        "preparation_spent": 4,
+        "probability": "2/9",
+        "remainder": 0,
+        "remaining_energy": 147,
+        "reserve": 26,
+        "state": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          26,
+          120
+        ],
+        "transformed_A": 1,
+        "transformed_H": 1
+      },
+      "producer": "conventional",
+      "unconditional_mass": "1/36"
+    },
+    {
+      "faithful_trace": [
+        {
+          "action": 1,
+          "capture": false,
+          "command_after": 0,
+          "label": 0,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 3,
+          "receipt_source": "target",
+          "report": 1,
+          "target": "recipient"
+        },
+        {
+          "action": 1,
+          "capture": true,
+          "command_after": 1,
+          "label": 1,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 1,
+          "receipt_source": "target",
+          "report": 0,
+          "target": "actor"
+        },
+        {
+          "action": 0,
+          "capture": true,
+          "command_after": 0,
+          "label": 0,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 1,
+          "receipt_source": "target",
+          "report": 1,
+          "target": "recipient"
+        },
+        {
+          "action": 1,
+          "capture": true,
+          "command_after": 1,
+          "label": 1,
+          "paid_write": true,
+          "q_after": 1,
+          "q_before": 1,
+          "receipt_source": "target",
+          "report": 0,
+          "target": "actor"
+        }
+      ],
+      "matched_terminal_rows": {
+        "frozen": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 0,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 0,
+            "installed": 1,
+            "missing_evidence": 0,
+            "recipient_captures": 0,
+            "recipient_correction": 0,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 0,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 20,
+            "writes": 4
+          },
+          "probability": "1/18",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 3,
+            "qualified_q": -1,
+            "recipient": 0,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        "indexed": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 0,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 10,
+            "installed": 1,
+            "missing_evidence": 0,
+            "recipient_captures": 1,
+            "recipient_correction": 1,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 1,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 10,
+            "writes": 4
+          },
+          "probability": "1/18",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 1,
+            "qualified_q": -1,
+            "recipient": 10,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        "private_as_recipient": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 1,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 10,
+            "installed": 1,
+            "missing_evidence": 0,
+            "recipient_captures": 1,
+            "recipient_correction": 1,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 0,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 10,
+            "writes": 4
+          },
+          "probability": "1/18",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 3,
+            "qualified_q": -1,
+            "recipient": 10,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        "private_only": {
+          "kind": "suffix",
+          "metrics": {
+            "active_memory": 1,
+            "actor_captures": 2,
+            "actor_command_changed": 0,
+            "actor_trials": 2,
+            "decoder_errors": 0,
+            "eligible": 1,
+            "evidence": 4,
+            "final_actor": 9,
+            "final_recipient": 0,
+            "installed": 1,
+            "missing_evidence": 2,
+            "recipient_captures": 0,
+            "recipient_correction": 0,
+            "recipient_trials": 2,
+            "rents": 4,
+            "senses": 4,
+            "setup_started": 1,
+            "spent": 32,
+            "strict_witness": 0,
+            "trials": 4,
+            "unpaid_write": 0,
+            "waste": 20,
+            "writes": 4
+          },
+          "probability": "1/18",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "q": 3,
+            "qualified_q": -1,
+            "recipient": 0,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        }
+      },
+      "predecessor": {
+        "conditional_mean_marks": {
+          "acquired_uses": "7",
+          "base_forms": "1",
+          "brier16": "20",
+          "captures": "6",
+          "coupler_changes": "0",
+          "coupler_forms": "1",
+          "coupler_renewals": "6",
+          "decoder_errors": "0",
+          "inverted_trials": "0",
+          "normal_trials": "8",
+          "predictor_retrofits": "1",
+          "rents": "8",
+          "spent": "65",
+          "trials": "8",
+          "unpaid_writes": "0",
+          "updater_forms": "1",
+          "waste": "20",
+          "writes": "8"
+        },
+        "final_regime": 1,
+        "initial_regime": 0,
+        "probability": "1/4",
+        "state": {
+          "coupling": 0,
+          "coupling_life": 2,
+          "failed_q": -1,
+          "fuel": 21,
+          "gate_life": 2,
+          "last": 1,
+          "life": 6,
+          "q": 4,
+          "qualified_q": -1,
+          "stage": 2,
+          "witness": false,
+          "written": true
+        }
+      },
+      "preparation": {
+        "backing_slots": 2,
+        "commissioned": true,
+        "packets": 12,
+        "preparation_spent": 4,
+        "probability": "2/9",
+        "remainder": 0,
+        "remaining_energy": 147,
+        "reserve": 26,
+        "state": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          26,
+          120
+        ],
+        "transformed_A": 1,
+        "transformed_H": 1
+      },
+      "producer": "fixed_normal",
+      "unconditional_mass": "1/18"
+    }
+  ],
+  "all_projected_comparisons": [
+    {
+      "case": "primary",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "primary",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "primary",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "primary",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "primary",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "primary",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "primary",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "primary",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "primary",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "same_law",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "same_law",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "same_law",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "same_law",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "same_law",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "same_law",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "same_law",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "same_law",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "same_law",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "recipient_outage",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "recipient_outage",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "recipient_outage",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "recipient_outage",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "recipient_outage",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "recipient_outage",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "recipient_outage",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "recipient_outage",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "recipient_outage",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "missing_channel",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "missing_channel",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "missing_channel",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "missing_channel",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "missing_channel",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "missing_channel",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "missing_channel",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "missing_channel",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "missing_channel",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "target_alias",
+      "comparator": "private_only",
+      "equal": false,
+      "producer": "variable"
+    },
+    {
+      "case": "target_alias",
+      "comparator": "frozen",
+      "equal": false,
+      "producer": "variable"
+    },
+    {
+      "case": "target_alias",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "target_alias",
+      "comparator": "private_only",
+      "equal": false,
+      "producer": "conventional"
+    },
+    {
+      "case": "target_alias",
+      "comparator": "frozen",
+      "equal": false,
+      "producer": "conventional"
+    },
+    {
+      "case": "target_alias",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "target_alias",
+      "comparator": "private_only",
+      "equal": false,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "target_alias",
+      "comparator": "frozen",
+      "equal": false,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "target_alias",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "target_swapped",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "target_swapped",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "target_swapped",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "target_swapped",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "target_swapped",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "target_swapped",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "target_swapped",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "target_swapped",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "target_swapped",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "low_reserve",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "low_reserve",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "low_reserve",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "low_reserve",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "low_reserve",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "low_reserve",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "low_reserve",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "low_reserve",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "low_reserve",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "expensive_write",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "expensive_write",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "expensive_write",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "variable"
+    },
+    {
+      "case": "expensive_write",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "expensive_write",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "expensive_write",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "conventional"
+    },
+    {
+      "case": "expensive_write",
+      "comparator": "private_only",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "expensive_write",
+      "comparator": "frozen",
+      "equal": true,
+      "producer": "fixed_normal"
+    },
+    {
+      "case": "expensive_write",
+      "comparator": "private_as_recipient",
+      "equal": true,
+      "producer": "fixed_normal"
+    }
+  ],
+  "checked_at_utc": "2026-10-05T20:52:45.228945+00:00",
+  "checker": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/inspect_handoff.py",
+  "counts": {
+    "actual_predecessor_witnesses": 3,
+    "alias_equalities": 3,
+    "alias_inequalities": 6,
+    "conventional_full_distribution_equalities": 24,
+    "matched_terminal_rows": 12,
+    "nonaliased_projected_equalities": 63,
+    "primary_projected_equalities": 9
+  },
+  "inputs_and_checker_unchanged_during_inspection": true,
+  "lineage_limit": "Indexed witness explicitly retains its actual predecessor and trace. Alternative-arm rows match the saved terminal state projection and mass; their ancestry/trace is not stored per row and is not independently reconstructed by this audit.",
+  "primary": {
+    "conventional": {
+      "actor_projection": [
+        {
+          "kind": "preparation_failure",
+          "probability": "1/4",
+          "state": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            27,
+            121
+          ]
+        },
+        {
+          "kind": "preparation_failure",
+          "probability": "2/9",
+          "state": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            26,
+            120
+          ]
+        },
+        {
+          "kind": "preparation_failure",
+          "probability": "1/18",
+          "state": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            27,
+            119
+          ]
+        },
+        {
+          "kind": "preparation_failure",
+          "probability": "1/4",
+          "state": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            27,
+            121
+          ]
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/18",
+          "state": {
+            "active": false,
+            "coupling": -1,
+            "coupling_life": 0,
+            "failed_q": -1,
+            "fuel": 0,
+            "gate_life": 1,
+            "installed": false,
+            "last": 0,
+            "life": 0,
+            "qualified_q": -1,
+            "recoded": false,
+            "stage": 0,
+            "witness": false,
+            "written": false
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": false,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 0,
+            "gate_life": 2,
+            "installed": true,
+            "last": 0,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": true,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": false,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 0,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": true,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 16,
+            "gate_life": 2,
+            "installed": true,
+            "last": 0,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 16,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 0,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        }
+      ],
+      "arm_metrics": {
+        "frozen": {
+          "active_memory": "1/9",
+          "actor_captures": "2/9",
+          "decoder_errors": "0",
+          "final_actor": "25/18",
+          "final_recipient": "0",
+          "missing_evidence": "0",
+          "spent": "25/6",
+          "strict_witness": "0"
+        },
+        "indexed": {
+          "active_memory": "1/9",
+          "actor_captures": "2/9",
+          "decoder_errors": "0",
+          "final_actor": "25/18",
+          "final_recipient": "10/9",
+          "missing_evidence": "0",
+          "spent": "25/6",
+          "strict_witness": "1/9"
+        },
+        "private_as_recipient": {
+          "active_memory": "1/9",
+          "actor_captures": "2/9",
+          "decoder_errors": "1/9",
+          "final_actor": "25/18",
+          "final_recipient": "10/9",
+          "missing_evidence": "0",
+          "spent": "25/6",
+          "strict_witness": "0"
+        },
+        "private_only": {
+          "active_memory": "1/9",
+          "actor_captures": "2/9",
+          "decoder_errors": "0",
+          "final_actor": "25/18",
+          "final_recipient": "0",
+          "missing_evidence": "5/18",
+          "spent": "25/6",
+          "strict_witness": "0"
+        }
+      },
+      "payload_recipient_projections": {
+        "frozen": [
+          {
+            "actor_fuel": 0,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 2,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          }
+        ],
+        "indexed": [
+          {
+            "actor_fuel": 0,
+            "q": 1,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 2,
+            "recipient": 0,
+            "unconditional_mass": "1/12"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 1,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 2,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 1,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 2,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          }
+        ],
+        "private_as_recipient": [
+          {
+            "actor_fuel": 0,
+            "q": 1,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 2,
+            "recipient": 0,
+            "unconditional_mass": "1/12"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 0,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 3,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 0,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 3,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          }
+        ],
+        "private_only": [
+          {
+            "actor_fuel": 0,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 2,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          }
+        ]
+      }
+    },
+    "fixed_normal": {
+      "actor_projection": [
+        {
+          "kind": "preparation_failure",
+          "probability": "1/4",
+          "state": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            27,
+            121
+          ]
+        },
+        {
+          "kind": "preparation_failure",
+          "probability": "2/9",
+          "state": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            26,
+            120
+          ]
+        },
+        {
+          "kind": "preparation_failure",
+          "probability": "1/18",
+          "state": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            27,
+            119
+          ]
+        },
+        {
+          "kind": "preparation_failure",
+          "probability": "1/4",
+          "state": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            27,
+            121
+          ]
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/18",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 16,
+            "gate_life": 2,
+            "installed": true,
+            "last": 0,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/18",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 16,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/18",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 0,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/18",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        }
+      ],
+      "arm_metrics": {
+        "frozen": {
+          "active_memory": "2/9",
+          "actor_captures": "4/9",
+          "decoder_errors": "0",
+          "final_actor": "25/9",
+          "final_recipient": "0",
+          "missing_evidence": "0",
+          "spent": "64/9",
+          "strict_witness": "0"
+        },
+        "indexed": {
+          "active_memory": "2/9",
+          "actor_captures": "4/9",
+          "decoder_errors": "0",
+          "final_actor": "25/9",
+          "final_recipient": "20/9",
+          "missing_evidence": "0",
+          "spent": "64/9",
+          "strict_witness": "2/9"
+        },
+        "private_as_recipient": {
+          "active_memory": "2/9",
+          "actor_captures": "4/9",
+          "decoder_errors": "2/9",
+          "final_actor": "25/9",
+          "final_recipient": "20/9",
+          "missing_evidence": "0",
+          "spent": "64/9",
+          "strict_witness": "0"
+        },
+        "private_only": {
+          "active_memory": "2/9",
+          "actor_captures": "4/9",
+          "decoder_errors": "0",
+          "final_actor": "25/9",
+          "final_recipient": "0",
+          "missing_evidence": "4/9",
+          "spent": "64/9",
+          "strict_witness": "0"
+        }
+      },
+      "payload_recipient_projections": {
+        "frozen": [
+          {
+            "actor_fuel": 9,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          }
+        ],
+        "indexed": [
+          {
+            "actor_fuel": 9,
+            "q": 1,
+            "recipient": 10,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 2,
+            "recipient": 10,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 1,
+            "recipient": 10,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 2,
+            "recipient": 10,
+            "unconditional_mass": "1/18"
+          }
+        ],
+        "private_as_recipient": [
+          {
+            "actor_fuel": 9,
+            "q": 0,
+            "recipient": 10,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 3,
+            "recipient": 10,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 0,
+            "recipient": 10,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 3,
+            "recipient": 10,
+            "unconditional_mass": "1/18"
+          }
+        ],
+        "private_only": [
+          {
+            "actor_fuel": 9,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          }
+        ]
+      }
+    },
+    "variable": {
+      "actor_projection": [
+        {
+          "kind": "preparation_failure",
+          "probability": "1/4",
+          "state": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            27,
+            121
+          ]
+        },
+        {
+          "kind": "preparation_failure",
+          "probability": "2/9",
+          "state": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            26,
+            120
+          ]
+        },
+        {
+          "kind": "preparation_failure",
+          "probability": "1/18",
+          "state": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            27,
+            119
+          ]
+        },
+        {
+          "kind": "preparation_failure",
+          "probability": "1/4",
+          "state": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            27,
+            121
+          ]
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/18",
+          "state": {
+            "active": false,
+            "coupling": -1,
+            "coupling_life": 0,
+            "failed_q": -1,
+            "fuel": 0,
+            "gate_life": 1,
+            "installed": false,
+            "last": 0,
+            "life": 0,
+            "qualified_q": -1,
+            "recoded": false,
+            "stage": 0,
+            "witness": false,
+            "written": false
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": false,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 0,
+            "gate_life": 2,
+            "installed": true,
+            "last": 0,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": true,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": false,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 0,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": true,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 16,
+            "gate_life": 2,
+            "installed": true,
+            "last": 0,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 16,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 0,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        },
+        {
+          "kind": "suffix",
+          "probability": "1/36",
+          "state": {
+            "active": true,
+            "coupling": 0,
+            "coupling_life": 2,
+            "failed_q": -1,
+            "fuel": 9,
+            "gate_life": 2,
+            "installed": true,
+            "last": 1,
+            "life": 6,
+            "qualified_q": -1,
+            "recoded": true,
+            "stage": 2,
+            "witness": false,
+            "written": true
+          }
+        }
+      ],
+      "arm_metrics": {
+        "frozen": {
+          "active_memory": "1/9",
+          "actor_captures": "2/9",
+          "decoder_errors": "0",
+          "final_actor": "25/18",
+          "final_recipient": "0",
+          "missing_evidence": "0",
+          "spent": "25/6",
+          "strict_witness": "0"
+        },
+        "indexed": {
+          "active_memory": "1/9",
+          "actor_captures": "2/9",
+          "decoder_errors": "0",
+          "final_actor": "25/18",
+          "final_recipient": "10/9",
+          "missing_evidence": "0",
+          "spent": "25/6",
+          "strict_witness": "1/9"
+        },
+        "private_as_recipient": {
+          "active_memory": "1/9",
+          "actor_captures": "2/9",
+          "decoder_errors": "1/9",
+          "final_actor": "25/18",
+          "final_recipient": "10/9",
+          "missing_evidence": "0",
+          "spent": "25/6",
+          "strict_witness": "0"
+        },
+        "private_only": {
+          "active_memory": "1/9",
+          "actor_captures": "2/9",
+          "decoder_errors": "0",
+          "final_actor": "25/18",
+          "final_recipient": "0",
+          "missing_evidence": "5/18",
+          "spent": "25/6",
+          "strict_witness": "0"
+        }
+      },
+      "payload_recipient_projections": {
+        "frozen": [
+          {
+            "actor_fuel": 0,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 2,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          }
+        ],
+        "indexed": [
+          {
+            "actor_fuel": 0,
+            "q": 1,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 2,
+            "recipient": 0,
+            "unconditional_mass": "1/12"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 1,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 2,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 1,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 2,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          }
+        ],
+        "private_as_recipient": [
+          {
+            "actor_fuel": 0,
+            "q": 1,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 2,
+            "recipient": 0,
+            "unconditional_mass": "1/12"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 0,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 3,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 0,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 3,
+            "recipient": 10,
+            "unconditional_mass": "1/36"
+          }
+        ],
+        "private_only": [
+          {
+            "actor_fuel": 0,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 2,
+            "recipient": 0,
+            "unconditional_mass": "1/18"
+          },
+          {
+            "actor_fuel": 0,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 9,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 0,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          },
+          {
+            "actor_fuel": 16,
+            "q": 3,
+            "recipient": 0,
+            "unconditional_mass": "1/36"
+          }
+        ]
+      }
+    }
+  },
+  "producer_code_imported_or_executed": false,
+  "projection": {
+    "excluded_suffix_state_fields": [
+      "q",
+      "recipient"
+    ],
+    "full_comparator": "Full indexed/conventional comparison includes all saved metrics.",
+    "metrics": "Audit metrics excluded; probability masses summed exactly without conditioning.",
+    "retained": "Every other saved state field, including inherited auxiliary fields, and every preparation-failure state."
+  },
+  "scope": "Reanalysis of the same saved synthetic evidence, not an independent experiment, producer rerun, full stochastic verification, pathwise proof, or a physical copying law.",
+  "source_level_observations": {
+    "classification": "Source/interface observations, not machine-proved semantic impossibility.",
+    "external_arm": "The supplied arm parameter selects read/write/channel behavior; it is absent from saved state.",
+    "function_arguments": {
+      "read": [
+        "arm",
+        "q",
+        "target"
+      ],
+      "suffix": [
+        "case",
+        "arm",
+        "initial",
+        "actor_law"
+      ],
+      "write": [
+        "arm",
+        "q",
+        "target",
+        "bit"
+      ]
+    },
+    "missing_copy_template": "No heritable encoding or assembly law for the arm is established by these records. Copying q alone would transmit parameters, not the full learning recipe.",
+    "payload": "HANDOFF.md describes q as two orientation estimates, with no persistent provenance or recipe template.",
+    "resource_limit": "Recipient reserve is a separate scalar stock. No receiver, destination components, recipient maintenance surplus, new source, or continued donor lifetime is introduced.",
+    "saved_suffix_state_fields": [
+      "active",
+      "coupling",
+      "coupling_life",
+      "failed_q",
+      "fuel",
+      "gate_life",
+      "installed",
+      "last",
+      "life",
+      "q",
+      "qualified_q",
+      "recipient",
+      "recoded",
+      "stage",
+      "witness",
+      "written"
+    ]
+  },
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/HANDOFF.md": "8b2a82f6237f7e7a66120e60e5df2fa44062a6854a9af8ea3936606667e85c0f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md": "d4a008582680f3fd74e7247f32c018022ea4753dfe11ffefdbb1db5d6a4f607c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/fixtures.json": "e352c4efac59fcc4d675d2df47385c9005d185a37426755d1b7764110b9206fb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/independent-check.json": "52e7ad54d6595611e7c1b6cdb0902f3b8cb810c4204d5a05e1a256113f5ce6a8",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/independent_check.py": "805ff7122ccb699817bdbcb37691797b78b240888e8adda323d59df5dde86166",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/model.py": "278d57ddf2f17d3b4da726fd067f71e323265626d5296ac83beaa2868f70e66a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/results.json": "0d804463c7126b97b1bdcb034949abef33fa604a813bf30b2b1a625b319a69af",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/inspect_handoff.py": "7e60544ab8ae6edd0241c4a3269cb83eccc86bfe06fefead4fda2dfa511105cf",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "status": "passed"
+}
