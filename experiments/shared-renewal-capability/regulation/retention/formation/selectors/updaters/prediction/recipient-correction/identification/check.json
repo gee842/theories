@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "case_arms": 108,
+  "metric_comparisons": 3348,
+  "checked_microstates": 22456,
+  "boundary_checks": 102,
+  "update_checks": 48,
+  "private_account_checks": 540,
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/model.py": "5858d2fdcef507323cdfea6495f228e32b6e90098145a9e8a2da8c326e7c0938",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/PROTOCOL.md": "0fdb7ec28e193706c8e076a623a4c848b6c0c7b5da004de3982c8517702b9b89",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/model.py": "278d57ddf2f17d3b4da726fd067f71e323265626d5296ac83beaa2868f70e66a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md": "d4a008582680f3fd74e7247f32c018022ea4753dfe11ffefdbb1db5d6a4f607c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "checker_sha256": "fb2842559d05f55913cbf7f633eb77979ae32ff38ef0ee45b538a7dbe70a75dc",
+  "data_sha256": {
+    "fixtures.json": "1a7db5f30c0ea0d10d09601264b738e0a5a83b3ba920b4c13d94719db2348218",
+    "results.json": "d8310178e28f246284301a3dc4b4b5a0e60536a4c4eec0ba97eb3e93ebcaadf9"
+  },
+  "scope": "Producer replay, actual imported fixture equality, full suffix paths and distributions, escrow phases, actor ledger separation, finite-state equivalence, ambiguity and price boundaries. Independent replay is separate."
+}
