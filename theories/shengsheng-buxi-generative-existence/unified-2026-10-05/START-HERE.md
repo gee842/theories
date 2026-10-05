@@ -27,7 +27,27 @@ flowchart TD
 
 The diagram is a proposed causal structure. Each arrow needs a mechanism in an actual application. The upper loop can renew, deplete, or transform its conditions. The lower route can fail at observation, understanding, authority, finance, timing, or succession.
 
-## What the work establishes
+## What now connects, and what remains
+
+The [common premise ledger](FOUNDATION-PREMISES.md) separates the causal presentation from local construction laws, measurements and ethical grounds. For the discrete results, a supplied state/event relation generates finite histories through actual successors. Informative support, observation and construction conditions then constrain which histories are possible. This is a conditional foundation; an arbitrary transition description alone does not explain learning or concern.
+
+The current connected work has reached the following interfaces:
+
+| Transition | Established contribution | Remaining connection |
+|---|---|---|
+| Dependencies → regulation | Actual formation, repair, source access and differential retention under a declared reaction law | Broader physical identification and alternative realizations; the reaction law remains supplied |
+| Regulation → learned and revisable response | Formed selectors, updaters and a finite predictive register; actual correction changes a later paid command | Richer sensing and architecture formation beyond the declared repertoire |
+| Implemented learning → continued physical use | [Material prediction](MATERIAL-PREDICTION-COMPOSITION.md) and [paid protocol composition](PREDICTION-PROTOCOL.md) retain parts, acquired memory, intermediate costs and failed prefixes | Compose later mechanisms through compatible endpoints; distinct material implementations cannot be substituted without a construction |
+| Prediction → another center's consequences | [Motor-coupling revision and a recipient route](GENERATIVE-DEVELOPMENT.md); [context-specific recipient correction](RECIPIENT-CORRECTION.md); [qualified evidence under outages](../../../_process/research/2026-10-05-concern-theory/RECIPIENT-IDENTIFICATION-INTEGRATION.md) | Explain formation and persistence of faithful recipient-sensitive routes where private retention gives no advantage; preserve suppression and misleading-proxy alternatives |
+| Retained evidence → revisable reasons and successors | Faithful finite recording and [paid contextual reason replay](RECORDED-REASONS.md) now connect actual archive construction, calibrated facts, selective revision and a charged cold replay in the finite three-node language | Actual evidence production must meet the assay/context contract; relevance and ethical grounds remain explicit; protection and strategic costs need a further compatible join |
+
+The last three rows use several distinct supplied laws. They have not yet become one uninterrupted physical history. For example, the consumable predictor ends with two packets and no coupler; another recipient suffix requires three opportunities and a formed coupler. The recipient register is not the recorder's physical archive, and a zero under outages is not a sound negative reason certificate. These are concrete composition obligations.
+
+Constructive and destructive paths already share the account: evidence can correct a response or mislead it; construction can enable action or exhaust later parts; an accurate actor can help, exclude or suppress another center. Their separation requires named centers, horizons, accessible evidence and feasible alternatives. The [cross-domain identification audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md) maps existing biological, AI and human evidence without treating them as observations of one complete chain.
+
+The [five-part completion audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md) is the current answer to what remains. It tracks explicit grounding, connected derivations, compatible composition, constructive/destructive regimes, and evidence at the claimed scope. Local proofs and the earlier synthesis below retain their completed scopes.
+
+## Earlier branches and their established scope
 
 **Regeneration can form through the process itself.** In a supplied reaction model, usable material builds machinery, machinery wears down, and powered machinery restores usable material. Above an exact threshold, every starting state with some usable material or machinery converges to a maintained regime; the machinery itself can start absent. The reactions and continuing energy supply remain premises.
 
@@ -59,10 +79,13 @@ The [positive ethical argument](ETHICAL-FOUNDATION.md) now develops standing bey
 
 The stronger directional hypothesis—that reality generally develops increasingly shared and responsive regeneration—remains open within this program. Universal explanatory scope also includes degeneration, domination and failed learning. We now have specific formation mechanisms and correction conditions. The concern model explains one conditional path to learned responsiveness beyond private usefulness. Why its enabling architecture forms, spreads, and remains warranted for unfamiliar affected beings is still open.
 
-## How to read the completed synthesis
+## Reading route
 
 - [Generative grounding](GENERATIVE-GROUNDING.md): the current foundational goal, provisional premises, and derivation tasks connecting the studies.
-- [Unified theory](THEORY.md): the full argument, the connections among sessions, and the precise frontier.
+- [Common premises](FOUNDATION-PREMISES.md): what the present account supplies, derives and leaves to empirical or ethical justification.
+- [Generative development](GENERATIVE-DEVELOPMENT.md): the current explanatory connection from organization through learning, motor-coupling revision and functional concern, with its remaining interfaces.
+- [Completion audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md): accepted contributions and remaining obligations across all five criteria.
+- [Unified theory](THEORY.md): the original integrated argument and its frontier at that checkpoint; the current research index and audit track subsequent advances.
 - [Joint formation and renewal](JOINT-FORMATION.md), with [proof](JOINT-FORMATION-MATH.md): the completed response to the central joint-formation challenge.
 - [Revisable-concern settlement](REVISABLE-CONCERN-SETTLEMENT.md): the later conditional integration of reason revision, paid protection, and succession, with separate ethical and evidence results.
 - [Formation and strategic correction](FORMATION.md), with [new proofs](FORMATION-MATH.md): the first completed development beyond the original synthesis.

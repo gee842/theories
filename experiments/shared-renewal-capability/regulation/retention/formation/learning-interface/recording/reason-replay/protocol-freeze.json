@@ -1,7 +1,11 @@
 {
   "protocol": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/PROTOCOL.md",
-  "sha256": "6ab9c8c26134837af130562415e023a6589075ffaf4e926275dd73d60d2534ee",
-  "status": "Agreed by root, formal branch, independent model branch and adversarial reviewer before numerical execution",
+  "sha256": "0c511e7c186a224498876579dd10a2a14b2e8510b10c62e4c50b6adaeb376d71",
+  "status": "Original protocol agreed before computation; publication-freshness clarification and supplemental diagnostic added after first passing run, before amended computation. Existing event law unchanged.",
   "date": "2026-10-06",
-  "scope": "Finite three-node deterministic audit/replay; supplied calibrated factual premises, relevance and positive anchor"
+  "scope": "Finite three-node deterministic audit/replay; supplied calibrated factual premises, relevance and positive anchor",
+  "predecessor_protocol_sha256": "6ab9c8c26134837af130562415e023a6589075ffaf4e926275dd73d60d2534ee",
+  "predecessor_receipt": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/development/publication-freshness-review/protocol-freeze.json",
+  "first_run_receipt": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/development/publication-freshness-review/first-run-receipt.json",
+  "amendment_origin": "Root and adversarial reviewer identified that a same-context append can enlarge available closure while an old installed tag still matches; phase10 completion must also be required."
 }

@@ -1,0 +1,56 @@
+{
+  "status": "Baseline computation completed before the supplemental same-context append review diagnostic; not independent repeated evidence.",
+  "date": "2026-10-06",
+  "original_result_sha256": "1f6129da68ce1e19d0d1b3b60e430640798848bbba46525165b089fd57f88516",
+  "all_checks_passed": true,
+  "graph_closure": {
+    "ordered_candidate_graphs": 216,
+    "certificate_assignments_per_graph": 8,
+    "cases": 1728,
+    "includes_distinct_parallel_certificate_identities": true
+  },
+  "finite_audit_grid": {
+    "six_bit_words": 64,
+    "prefix_lengths": 7,
+    "contexts": 2,
+    "access_settings": 2,
+    "common_fuel_values": 13,
+    "configurations": 23296,
+    "completed": 1792,
+    "completed_with_unknown_current_certificate": 1152,
+    "configured_states_not_all_claimed_reachable": true
+  },
+  "actual_preparation_histories": 14,
+  "boundaries": {
+    "checks": 16,
+    "results": {
+      "new_context_without_new_records_is_unknown_not_negative": true,
+      "actual_current_negative_is_distinct_from_missing": true,
+      "independent_ground_survives_while_unsupported_descendants_retract": true,
+      "disconnected_positive_cycle_never_bootstraps": true,
+      "context_and_turnover_blocked_during_recording": true,
+      "context_change_invalidates_partial_replay_without_erasing_archive": true,
+      "delivery_cut_does_not_refute_warrant": true,
+      "blocked_archive_access_does_not_create_negative_certificates": true,
+      "cached_replay_does_not_secretly_requery_world_or_archive": true,
+      "parallel_positive_ground_can_survive_negative_edge_premise": true,
+      "visible_context_edge_assay_or_polarity_mismatch_is_unknown": true,
+      "corrupted_trusted_binding_or_bit_can_mislead_when_assay_premise_fails": true,
+      "new_context_has_no_free_overwrite_or_slot_reclamation": true,
+      "old_record_events_project_but_arbitrary_old_words_need_not_lift": true,
+      "old_two_slot_endpoint_does_not_supply_new_reader_pair": true,
+      "finite_successor_replay_does_not_imply_indefinite_funding": true
+    },
+    "corruption_control_outside_sound_positive_protocol": true
+  },
+  "source_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/PROTOCOL.md": "6ab9c8c26134837af130562415e023a6589075ffaf4e926275dd73d60d2534ee",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/check_model.py": "3581475406e8f1d15d3ffa642354009e5280adb3c033d30064b88b6fdfeeecbd",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protocol-freeze.json": "5cd034fbed6d0e2488f736aead91f12376541231bda3a8ae1402d8579b2a258c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean": "7fcfc6cae187b6ea67cd310b73840d96537e527019701015048d63dc8e0e7a0e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "_process/research/2026-10-05-revisable-concern/settlement/formal/check_process.py": "bdb3b0b3a623306c9a6054da2d7c76b9e30cfd1556ba4e3f4abd47012a5aacb0",
+    "_process/research/2026-10-05-revisable-concern/settlement/formal/REPORT.md": "3f2256fa7570d3d3892a9817e21c5990dbbcb53ab972526a5f57443459154a77"
+  }
+}

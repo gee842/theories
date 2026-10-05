@@ -1,0 +1,3063 @@
+{
+  "scope": "Independent finite deterministic checks; supplied factual assay, relevance, positive root and finite circuit recipe",
+  "whole_history": {
+    "initial": {
+      "a": 0,
+      "h": 0,
+      "resident": "empty",
+      "intact": false,
+      "local": false,
+      "fuel": 80,
+      "source": 20
+    },
+    "initial_energy": 100,
+    "preparation_cost": 17,
+    "slot_assembly_cost": 6,
+    "reader_cost": 1,
+    "recording_cost": 12,
+    "audit_cost": 33,
+    "final_energy": 31,
+    "checkpoints": {
+      "record_first": {
+        "cost": 6,
+        "state": {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 50,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        }
+      },
+      "audit_first": {
+        "cost": 11,
+        "state": {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 39,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 10,
+          "sensed": false,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        }
+      },
+      "context_change": {
+        "cost": 0,
+        "state": {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 39,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        }
+      },
+      "record_second": {
+        "cost": 6,
+        "state": {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 35,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        }
+      },
+      "audit_second": {
+        "cost": 11,
+        "state": {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 24,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 10,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 2,
+          "installed": [
+            true,
+            2
+          ],
+          "access": true,
+          "delivery": true
+        }
+      },
+      "successor": {
+        "cost": 0,
+        "state": {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 24,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        }
+      },
+      "audit_successor": {
+        "cost": 11,
+        "state": {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 13,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 10,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 2,
+          "installed": [
+            true,
+            2
+          ],
+          "access": true,
+          "delivery": true
+        }
+      }
+    },
+    "preparation_states": [
+      {
+        "a": 0,
+        "h": 0,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 80,
+        "source": 20
+      },
+      {
+        "a": 0,
+        "h": 1,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 79,
+        "source": 20
+      },
+      {
+        "a": 0,
+        "h": 2,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 78,
+        "source": 20
+      },
+      {
+        "a": 0,
+        "h": 3,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 77,
+        "source": 20
+      },
+      {
+        "a": 0,
+        "h": 4,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 76,
+        "source": 20
+      },
+      {
+        "a": 0,
+        "h": 5,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 75,
+        "source": 20
+      },
+      {
+        "a": 0,
+        "h": 6,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 74,
+        "source": 20
+      },
+      {
+        "a": 0,
+        "h": 7,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 73,
+        "source": 20
+      },
+      {
+        "a": 1,
+        "h": 7,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 72,
+        "source": 20
+      },
+      {
+        "a": 2,
+        "h": 7,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 71,
+        "source": 20
+      },
+      {
+        "a": 3,
+        "h": 7,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 70,
+        "source": 20
+      },
+      {
+        "a": 4,
+        "h": 7,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 69,
+        "source": 20
+      },
+      {
+        "a": 5,
+        "h": 7,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 68,
+        "source": 20
+      },
+      {
+        "a": 6,
+        "h": 7,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 67,
+        "source": 20
+      },
+      {
+        "a": 7,
+        "h": 7,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 66,
+        "source": 20
+      },
+      {
+        "a": 8,
+        "h": 7,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 65,
+        "source": 20
+      },
+      {
+        "a": 7,
+        "h": 7,
+        "resident": "active",
+        "intact": false,
+        "local": false,
+        "fuel": 64,
+        "source": 20
+      },
+      {
+        "a": 7,
+        "h": 7,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "fuel": 63,
+        "source": 20
+      }
+    ],
+    "apparatus_states": [
+      {
+        "record": {
+          "plant": {
+            "a": 7,
+            "h": 7,
+            "resident": "active",
+            "intact": true,
+            "local": false,
+            "fuel": 63,
+            "source": 20
+          },
+          "slots": 0,
+          "blank": 0,
+          "pending": "idle",
+          "latch": null,
+          "escrow": 0,
+          "records": []
+        },
+        "reader": false,
+        "context": false,
+        "phase": 0,
+        "sensed": null,
+        "decoded": [],
+        "working": 0,
+        "installed": null,
+        "access": true,
+        "delivery": true
+      },
+      {
+        "record": {
+          "plant": {
+            "a": 6,
+            "h": 6,
+            "resident": "active",
+            "intact": true,
+            "local": false,
+            "fuel": 62,
+            "source": 20
+          },
+          "slots": 1,
+          "blank": 1,
+          "pending": "idle",
+          "latch": null,
+          "escrow": 0,
+          "records": []
+        },
+        "reader": false,
+        "context": false,
+        "phase": 0,
+        "sensed": null,
+        "decoded": [],
+        "working": 0,
+        "installed": null,
+        "access": true,
+        "delivery": true
+      },
+      {
+        "record": {
+          "plant": {
+            "a": 5,
+            "h": 5,
+            "resident": "active",
+            "intact": true,
+            "local": false,
+            "fuel": 61,
+            "source": 20
+          },
+          "slots": 2,
+          "blank": 2,
+          "pending": "idle",
+          "latch": null,
+          "escrow": 0,
+          "records": []
+        },
+        "reader": false,
+        "context": false,
+        "phase": 0,
+        "sensed": null,
+        "decoded": [],
+        "working": 0,
+        "installed": null,
+        "access": true,
+        "delivery": true
+      },
+      {
+        "record": {
+          "plant": {
+            "a": 4,
+            "h": 4,
+            "resident": "active",
+            "intact": true,
+            "local": false,
+            "fuel": 60,
+            "source": 20
+          },
+          "slots": 3,
+          "blank": 3,
+          "pending": "idle",
+          "latch": null,
+          "escrow": 0,
+          "records": []
+        },
+        "reader": false,
+        "context": false,
+        "phase": 0,
+        "sensed": null,
+        "decoded": [],
+        "working": 0,
+        "installed": null,
+        "access": true,
+        "delivery": true
+      },
+      {
+        "record": {
+          "plant": {
+            "a": 3,
+            "h": 3,
+            "resident": "active",
+            "intact": true,
+            "local": false,
+            "fuel": 59,
+            "source": 20
+          },
+          "slots": 4,
+          "blank": 4,
+          "pending": "idle",
+          "latch": null,
+          "escrow": 0,
+          "records": []
+        },
+        "reader": false,
+        "context": false,
+        "phase": 0,
+        "sensed": null,
+        "decoded": [],
+        "working": 0,
+        "installed": null,
+        "access": true,
+        "delivery": true
+      },
+      {
+        "record": {
+          "plant": {
+            "a": 2,
+            "h": 2,
+            "resident": "active",
+            "intact": true,
+            "local": false,
+            "fuel": 58,
+            "source": 20
+          },
+          "slots": 5,
+          "blank": 5,
+          "pending": "idle",
+          "latch": null,
+          "escrow": 0,
+          "records": []
+        },
+        "reader": false,
+        "context": false,
+        "phase": 0,
+        "sensed": null,
+        "decoded": [],
+        "working": 0,
+        "installed": null,
+        "access": true,
+        "delivery": true
+      },
+      {
+        "record": {
+          "plant": {
+            "a": 1,
+            "h": 1,
+            "resident": "active",
+            "intact": true,
+            "local": false,
+            "fuel": 57,
+            "source": 20
+          },
+          "slots": 6,
+          "blank": 6,
+          "pending": "idle",
+          "latch": null,
+          "escrow": 0,
+          "records": []
+        },
+        "reader": false,
+        "context": false,
+        "phase": 0,
+        "sensed": null,
+        "decoded": [],
+        "working": 0,
+        "installed": null,
+        "access": true,
+        "delivery": true
+      },
+      {
+        "record": {
+          "plant": {
+            "a": 0,
+            "h": 0,
+            "resident": "active",
+            "intact": true,
+            "local": false,
+            "fuel": 56,
+            "source": 20
+          },
+          "slots": 6,
+          "blank": 6,
+          "pending": "idle",
+          "latch": null,
+          "escrow": 0,
+          "records": []
+        },
+        "reader": true,
+        "context": false,
+        "phase": 0,
+        "sensed": null,
+        "decoded": [],
+        "working": 0,
+        "installed": null,
+        "access": true,
+        "delivery": true
+      }
+    ],
+    "operational_states": {
+      "record_first": [
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 56,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 6,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": []
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 54,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 5,
+            "pending": "awaiting",
+            "latch": null,
+            "escrow": 1,
+            "records": []
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 54,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 5,
+            "pending": "latched",
+            "latch": true,
+            "escrow": 1,
+            "records": []
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 54,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 5,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 52,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 4,
+            "pending": "awaiting",
+            "latch": null,
+            "escrow": 1,
+            "records": [
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 52,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 4,
+            "pending": "latched",
+            "latch": true,
+            "escrow": 1,
+            "records": [
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 52,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 4,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 50,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "awaiting",
+            "latch": null,
+            "escrow": 1,
+            "records": [
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 50,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "latched",
+            "latch": true,
+            "escrow": 1,
+            "records": [
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 50,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        }
+      ],
+      "audit_first": [
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 50,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 49,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 1,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 48,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 2,
+          "sensed": false,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 47,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 3,
+          "sensed": false,
+          "decoded": [
+            true
+          ],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 46,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 4,
+          "sensed": false,
+          "decoded": [
+            true,
+            true
+          ],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 45,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 5,
+          "sensed": false,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 44,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 6,
+          "sensed": false,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 1,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 43,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 7,
+          "sensed": false,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 41,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 8,
+          "sensed": false,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 39,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 9,
+          "sensed": false,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 39,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 10,
+          "sensed": false,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        }
+      ],
+      "context_change": [
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 39,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": false,
+          "phase": 10,
+          "sensed": false,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 39,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        }
+      ],
+      "record_second": [
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 39,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 3,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 37,
+              "source": 20
+            },
+            "slots": 6,
+            "blank": 2,
+            "pending": "awaiting",
+            "latch": null,
+            "escrow": 1,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 39,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 2,
+            "pending": "latched",
+            "latch": false,
+            "escrow": 1,
+            "records": [
+              true,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 39,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 2,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 37,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 1,
+            "pending": "awaiting",
+            "latch": null,
+            "escrow": 1,
+            "records": [
+              true,
+              true,
+              true,
+              false
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 37,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 1,
+            "pending": "latched",
+            "latch": true,
+            "escrow": 1,
+            "records": [
+              true,
+              true,
+              true,
+              false
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 37,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 1,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 35,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "awaiting",
+            "latch": null,
+            "escrow": 1,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 35,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "latched",
+            "latch": true,
+            "escrow": 1,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 35,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        }
+      ],
+      "audit_second": [
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 35,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [
+            true,
+            true,
+            true
+          ],
+          "working": 3,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 34,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 1,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 33,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 2,
+          "sensed": true,
+          "decoded": [],
+          "working": 0,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 32,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 3,
+          "sensed": true,
+          "decoded": [
+            false
+          ],
+          "working": 0,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 31,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 4,
+          "sensed": true,
+          "decoded": [
+            false,
+            true
+          ],
+          "working": 0,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 30,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 5,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 0,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 29,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 6,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 0,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 28,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 7,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 2,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 26,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 8,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 2,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 24,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 9,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 2,
+          "installed": [
+            false,
+            3
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 24,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 10,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 2,
+          "installed": [
+            true,
+            2
+          ],
+          "access": true,
+          "delivery": true
+        }
+      ],
+      "successor": [
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 24,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 10,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 2,
+          "installed": [
+            true,
+            2
+          ],
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 24,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        }
+      ],
+      "audit_successor": [
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 24,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 0,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 23,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 1,
+          "sensed": null,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 22,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 2,
+          "sensed": true,
+          "decoded": [],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 21,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 3,
+          "sensed": true,
+          "decoded": [
+            false
+          ],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 20,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 4,
+          "sensed": true,
+          "decoded": [
+            false,
+            true
+          ],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 19,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 5,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 18,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 6,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 0,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 17,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 7,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 2,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 15,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 8,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 2,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 13,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 9,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 2,
+          "installed": null,
+          "access": true,
+          "delivery": true
+        },
+        {
+          "record": {
+            "plant": {
+              "a": 0,
+              "h": 0,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 13,
+              "source": 18
+            },
+            "slots": 6,
+            "blank": 0,
+            "pending": "idle",
+            "latch": null,
+            "escrow": 0,
+            "records": [
+              true,
+              true,
+              true,
+              false,
+              true,
+              true
+            ]
+          },
+          "reader": true,
+          "context": true,
+          "phase": 10,
+          "sensed": true,
+          "decoded": [
+            false,
+            true,
+            true
+          ],
+          "working": 2,
+          "installed": [
+            true,
+            2
+          ],
+          "access": true,
+          "delivery": true
+        }
+      ]
+    }
+  },
+  "graph_closure": {
+    "ordered_candidate_graphs": 216,
+    "certificate_assignments_per_graph": 8,
+    "cases": 1728,
+    "includes_distinct_parallel_certificate_identities": true
+  },
+  "finite_audit_grid": {
+    "six_bit_words": 64,
+    "prefix_lengths": 7,
+    "contexts": 2,
+    "access_settings": 2,
+    "common_fuel_values": 13,
+    "configurations": 23296,
+    "completed": 1792,
+    "completed_with_unknown_current_certificate": 1152,
+    "configured_states_not_all_claimed_reachable": true
+  },
+  "actual_liquidity_grid": {
+    "actual_preparation_histories": 14,
+    "rows": [
+      {
+        "original_common_fuel": 30,
+        "inherited_common_fuel": 0,
+        "completed": false,
+        "stopped_before_event": 0,
+        "actual_audit_spent": 0,
+        "stopped_common_fuel": 0,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": null
+      },
+      {
+        "original_common_fuel": 31,
+        "inherited_common_fuel": 1,
+        "completed": false,
+        "stopped_before_event": 1,
+        "actual_audit_spent": 1,
+        "stopped_common_fuel": 0,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": null
+      },
+      {
+        "original_common_fuel": 32,
+        "inherited_common_fuel": 2,
+        "completed": false,
+        "stopped_before_event": 2,
+        "actual_audit_spent": 2,
+        "stopped_common_fuel": 0,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": null
+      },
+      {
+        "original_common_fuel": 33,
+        "inherited_common_fuel": 3,
+        "completed": false,
+        "stopped_before_event": 3,
+        "actual_audit_spent": 3,
+        "stopped_common_fuel": 0,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": null
+      },
+      {
+        "original_common_fuel": 34,
+        "inherited_common_fuel": 4,
+        "completed": false,
+        "stopped_before_event": 4,
+        "actual_audit_spent": 4,
+        "stopped_common_fuel": 0,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": null
+      },
+      {
+        "original_common_fuel": 35,
+        "inherited_common_fuel": 5,
+        "completed": false,
+        "stopped_before_event": 5,
+        "actual_audit_spent": 5,
+        "stopped_common_fuel": 0,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": null
+      },
+      {
+        "original_common_fuel": 36,
+        "inherited_common_fuel": 6,
+        "completed": false,
+        "stopped_before_event": 6,
+        "actual_audit_spent": 6,
+        "stopped_common_fuel": 0,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": null
+      },
+      {
+        "original_common_fuel": 37,
+        "inherited_common_fuel": 7,
+        "completed": false,
+        "stopped_before_event": 7,
+        "actual_audit_spent": 7,
+        "stopped_common_fuel": 0,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": null
+      },
+      {
+        "original_common_fuel": 38,
+        "inherited_common_fuel": 8,
+        "completed": false,
+        "stopped_before_event": 7,
+        "actual_audit_spent": 7,
+        "stopped_common_fuel": 1,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": null
+      },
+      {
+        "original_common_fuel": 39,
+        "inherited_common_fuel": 9,
+        "completed": false,
+        "stopped_before_event": 8,
+        "actual_audit_spent": 9,
+        "stopped_common_fuel": 0,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": null
+      },
+      {
+        "original_common_fuel": 40,
+        "inherited_common_fuel": 10,
+        "completed": false,
+        "stopped_before_event": 8,
+        "actual_audit_spent": 9,
+        "stopped_common_fuel": 1,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": null
+      },
+      {
+        "original_common_fuel": 41,
+        "inherited_common_fuel": 11,
+        "completed": true,
+        "stopped_before_event": null,
+        "actual_audit_spent": 11,
+        "stopped_common_fuel": 0,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": [
+          false,
+          3
+        ]
+      },
+      {
+        "original_common_fuel": 42,
+        "inherited_common_fuel": 12,
+        "completed": true,
+        "stopped_before_event": null,
+        "actual_audit_spent": 11,
+        "stopped_common_fuel": 1,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": [
+          false,
+          3
+        ]
+      },
+      {
+        "original_common_fuel": 43,
+        "inherited_common_fuel": 13,
+        "completed": true,
+        "stopped_before_event": null,
+        "actual_audit_spent": 11,
+        "stopped_common_fuel": 2,
+        "source_retained": 20,
+        "oracle_admitted_mask": 3,
+        "actual_installed": [
+          false,
+          3
+        ]
+      }
+    ]
+  },
+  "boundaries": {
+    "checks": 16,
+    "results": {
+      "new_context_without_new_records_is_unknown_not_negative": true,
+      "actual_current_negative_is_distinct_from_missing": true,
+      "independent_ground_survives_while_unsupported_descendants_retract": true,
+      "disconnected_positive_cycle_never_bootstraps": true,
+      "context_and_turnover_blocked_during_recording": true,
+      "context_change_invalidates_partial_replay_without_erasing_archive": true,
+      "delivery_cut_does_not_refute_warrant": true,
+      "blocked_archive_access_does_not_create_negative_certificates": true,
+      "cached_replay_does_not_secretly_requery_world_or_archive": true,
+      "parallel_positive_ground_can_survive_negative_edge_premise": true,
+      "visible_context_edge_assay_or_polarity_mismatch_is_unknown": true,
+      "corrupted_trusted_binding_or_bit_can_mislead_when_assay_premise_fails": true,
+      "new_context_has_no_free_overwrite_or_slot_reclamation": true,
+      "old_record_events_project_but_arbitrary_old_words_need_not_lift": true,
+      "old_two_slot_endpoint_does_not_supply_new_reader_pair": true,
+      "finite_successor_replay_does_not_imply_indefinite_funding": true
+    },
+    "corruption_control_outside_sound_positive_protocol": true
+  },
+  "supplemental_publication_freshness": {
+    "checks": 1,
+    "passed": true,
+    "origin": "Supplemental root/reviewer diagnostic after the original 16-boundary run; event law unchanged",
+    "old_published_mask": 1,
+    "available_closure_after_same_context_append": 3,
+    "old_installed_tag_still_matches": true,
+    "old_installed_is_sound_but_incomplete": true,
+    "completed_flag_after_reopening": false,
+    "new_paid_audit_cost": 11,
+    "refreshed_published_mask": 3
+  },
+  "source_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/PROTOCOL.md": "0c511e7c186a224498876579dd10a2a14b2e8510b10c62e4c50b6adaeb376d71",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/check_model.py": "36bbde51115e8df432be389e2510b4b6cec633d49fd2da48234529951e8f96b5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protocol-freeze.json": "c93831248fe5c8b58067151657f00889299e836485b21399072485f3bb9272c3",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "_process/research/2026-10-05-revisable-concern/settlement/formal/check_process.py": "bdb3b0b3a623306c9a6054da2d7c76b9e30cfd1556ba4e3f4abd47012a5aacb0",
+    "_process/research/2026-10-05-revisable-concern/settlement/formal/REPORT.md": "3f2256fa7570d3d3892a9817e21c5990dbbcb53ab972526a5f57443459154a77",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/development/publication-freshness-review/PROTOCOL.md": "6ab9c8c26134837af130562415e023a6589075ffaf4e926275dd73d60d2534ee",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/development/publication-freshness-review/protocol-freeze.json": "5cd034fbed6d0e2488f736aead91f12376541231bda3a8ae1402d8579b2a258c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/development/publication-freshness-review/first-run-receipt.json": "dbebf22b82588eab3e6e4db23c7acd5ee5755592787c3a8eee6a0830efccb5b9"
+  },
+  "all_checks_passed": true
+}
