@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "graphs": 180,
+  "residual_flow_subset_cuts": 540,
+  "additive_augmented_flow_optimizations": 180,
+  "cash_and_monotone_subset_equivalences": 1438,
+  "domain_witnesses": [
+    "undeletable edge cannot be assigned zero cut capacity",
+    "economic cost and upfront cash may differ",
+    "weak existence criterion requires initially reachable targets",
+    "added physical route can propagate onward to both claims"
+  ],
+  "method": "Residual max-flow augmentation versus all deletion outcomes; no partition-cut enumeration.",
+  "scope": "Independent constructed finite mathematical checks, not empirical evidence."
+}

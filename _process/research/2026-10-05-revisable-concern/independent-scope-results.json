@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "independence": "No imports of check_scope.py or check_access.py.",
+  "directed_graphs": 4096,
+  "satisfying_boolean_models": 6912,
+  "boolean_round_containment_checks": 16384,
+  "graphs_with_multiple_fixed_points": 1664,
+  "explicit_path_hitting_comparisons": 882,
+  "dependency_matrices": 49,
+  "witnesses": {
+    "reachable_but_diluted_target": "1/2",
+    "unequal_anchor_harmonic_compromise": "3/2, not an equality solution",
+    "edge_addition_transient": "7/8 -> 11/16, crossing below4/5",
+    "retained_support_after_delivery_cut": "3/4",
+    "domain_precision": "Define operational D by positive P support; nominal zero-weight edges do not transmit."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "domain_cases": 2,
+  "checked": [
+    "empty anchor zero state and bound",
+    "free-edge iff positive weight; pinned anchor exception"
+  ]
+}

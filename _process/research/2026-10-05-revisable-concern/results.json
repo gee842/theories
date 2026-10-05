@@ -1,0 +1,326 @@
+{
+  "status": "passed",
+  "scope": "Finite authored exact models, not empirical data or a universal moral theorem.",
+  "weighted_initially_reachable_directed_graphs": 560,
+  "independent_subset_cut_equalities": 1680,
+  "additive_augmented_cut_and_optimum_cases": 5040,
+  "cash_constrained_optimum_cases": 15120,
+  "monotone_nonlinear_benefit_cases": 1680,
+  "hardening_designs": 27,
+  "minimum_integer_hardening_cost": 2,
+  "minimizing_hardening_vectors": [
+    [
+      2,
+      0,
+      0
+    ]
+  ],
+  "witnesses": {
+    "shared_gate": {
+      "edges": [
+        {
+          "tail": 0,
+          "head": 1,
+          "deletion_cost": 3,
+          "undirected": true
+        },
+        {
+          "tail": 1,
+          "head": 2,
+          "deletion_cost": 3,
+          "undirected": true
+        },
+        {
+          "tail": 1,
+          "head": 3,
+          "deletion_cost": 3,
+          "undirected": true
+        }
+      ],
+      "burdens": {
+        "2": 2,
+        "3": 2
+      },
+      "subset_minimum_deletion_costs": {
+        "2": 3,
+        "3": 3,
+        "2,3": 3
+      },
+      "controller_maximum_gain": 1,
+      "optimal_exclusion_sets": [
+        [
+          2,
+          3
+        ]
+      ],
+      "optimal_attacks": [
+        [
+          0
+        ]
+      ],
+      "every_optimum_full_access": false
+    },
+    "gate_at_tie": {
+      "edges": [
+        {
+          "tail": 0,
+          "head": 1,
+          "deletion_cost": 4,
+          "undirected": true
+        },
+        {
+          "tail": 1,
+          "head": 2,
+          "deletion_cost": 3,
+          "undirected": true
+        },
+        {
+          "tail": 1,
+          "head": 3,
+          "deletion_cost": 3,
+          "undirected": true
+        }
+      ],
+      "burdens": {
+        "2": 2,
+        "3": 2
+      },
+      "subset_minimum_deletion_costs": {
+        "2": 3,
+        "3": 3,
+        "2,3": 4
+      },
+      "controller_maximum_gain": 0,
+      "optimal_exclusion_sets": [
+        [],
+        [
+          2,
+          3
+        ]
+      ],
+      "optimal_attacks": [
+        [],
+        [
+          0
+        ]
+      ],
+      "every_optimum_full_access": false
+    },
+    "gate_strictly_hardened": {
+      "edges": [
+        {
+          "tail": 0,
+          "head": 1,
+          "deletion_cost": 5,
+          "undirected": true
+        },
+        {
+          "tail": 1,
+          "head": 2,
+          "deletion_cost": 3,
+          "undirected": true
+        },
+        {
+          "tail": 1,
+          "head": 3,
+          "deletion_cost": 3,
+          "undirected": true
+        }
+      ],
+      "burdens": {
+        "2": 2,
+        "3": 2
+      },
+      "subset_minimum_deletion_costs": {
+        "2": 3,
+        "3": 3,
+        "2,3": 5
+      },
+      "controller_maximum_gain": 0,
+      "optimal_exclusion_sets": [
+        []
+      ],
+      "optimal_attacks": [
+        []
+      ],
+      "every_optimum_full_access": true
+    },
+    "independent_extra_route": {
+      "edges": [
+        {
+          "tail": 0,
+          "head": 1,
+          "deletion_cost": 3,
+          "undirected": true
+        },
+        {
+          "tail": 1,
+          "head": 2,
+          "deletion_cost": 3,
+          "undirected": true
+        },
+        {
+          "tail": 1,
+          "head": 3,
+          "deletion_cost": 3,
+          "undirected": true
+        },
+        {
+          "tail": 0,
+          "head": 3,
+          "deletion_cost": 2,
+          "undirected": true
+        }
+      ],
+      "burdens": {
+        "2": 2,
+        "3": 2
+      },
+      "subset_minimum_deletion_costs": {
+        "2": 3,
+        "3": 5,
+        "2,3": 5
+      },
+      "controller_maximum_gain": 0,
+      "optimal_exclusion_sets": [
+        []
+      ],
+      "optimal_attacks": [
+        []
+      ],
+      "every_optimum_full_access": true,
+      "defender_financing": {
+        "construction": "1",
+        "window_upkeep": "1/4",
+        "available_prefunded_reserve": "5/4",
+        "adversary_deletion_cost_of_extra_route": 2,
+        "scope": "Construction/upkeep and resistance are separate supplied technology properties."
+      }
+    },
+    "authority_capture": {
+      "edges": [
+        {
+          "tail": 0,
+          "head": 1,
+          "deletion_cost": 10,
+          "undirected": false
+        },
+        {
+          "tail": 1,
+          "head": 2,
+          "deletion_cost": 10,
+          "undirected": false
+        },
+        {
+          "tail": 2,
+          "head": 3,
+          "deletion_cost": 1,
+          "undirected": false
+        },
+        {
+          "tail": 3,
+          "head": 4,
+          "deletion_cost": 10,
+          "undirected": false
+        },
+        {
+          "tail": 3,
+          "head": 5,
+          "deletion_cost": 10,
+          "undirected": false
+        }
+      ],
+      "burdens": {
+        "4": 2,
+        "5": 2
+      },
+      "subset_minimum_deletion_costs": {
+        "4": 1,
+        "5": 1,
+        "4,5": 1
+      },
+      "controller_maximum_gain": 3,
+      "optimal_exclusion_sets": [
+        [
+          4,
+          5
+        ]
+      ],
+      "optimal_attacks": [
+        [
+          2
+        ]
+      ],
+      "every_optimum_full_access": false
+    },
+    "free_rule_revocation": {
+      "edges": [
+        {
+          "tail": 0,
+          "head": 1,
+          "deletion_cost": 10,
+          "undirected": false
+        },
+        {
+          "tail": 1,
+          "head": 2,
+          "deletion_cost": 0,
+          "undirected": false
+        },
+        {
+          "tail": 2,
+          "head": 3,
+          "deletion_cost": 1,
+          "undirected": false
+        },
+        {
+          "tail": 3,
+          "head": 4,
+          "deletion_cost": 10,
+          "undirected": false
+        },
+        {
+          "tail": 3,
+          "head": 5,
+          "deletion_cost": 10,
+          "undirected": false
+        }
+      ],
+      "burdens": {
+        "4": 2,
+        "5": 2
+      },
+      "subset_minimum_deletion_costs": {
+        "4": 0,
+        "5": 0,
+        "4,5": 0
+      },
+      "controller_maximum_gain": 4,
+      "optimal_exclusion_sets": [
+        [
+          4,
+          5
+        ]
+      ],
+      "optimal_attacks": [
+        [
+          1
+        ]
+      ],
+      "every_optimum_full_access": false
+    }
+  },
+  "learning_vs_suppression": {
+    "processing_and_implementation_net_cost": 5,
+    "cheapest_rejection_cost": 3,
+    "preferred_declared_option": "suppression",
+    "caveat": "Only the declared two options; free neglect would have to be represented."
+  },
+  "retained_concern_counterexample": {
+    "operational_delivery_cut": true,
+    "new_untrained_target_reachable": false,
+    "target_with_retained_certificate_is_additional_anchor": true,
+    "retained_isolated_value_after_20_steps": "1",
+    "conclusion": "Communication cutoff does not itself erase a certificate or practiced concern."
+  }
+}

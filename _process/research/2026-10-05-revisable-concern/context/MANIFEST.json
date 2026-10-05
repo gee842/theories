@@ -1,0 +1,37 @@
+{
+  "purpose": "Context read from a concurrent formation study; preserve exact versions used without modifying that study",
+  "repository_head_at_snapshot": "b8dfe71d6c5d26abd407dc1c9acc4fc42322bc13",
+  "files": [
+    {
+      "source": "/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md",
+      "snapshot": "ETHICAL-FOUNDATION.md",
+      "sha256": "fdcd0ed4b11ba28fe4c1ec9160fbfef7bcf232ebf8e53897c640a6b59b40f155",
+      "git_status_at_read": ""
+    },
+    {
+      "source": "/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md",
+      "snapshot": "FORMATION.md",
+      "sha256": "c9d53de40de77bfd3164a716b576400bfc9cd7d3a7e217d4e6f2302d29cc93cc",
+      "git_status_at_read": ""
+    },
+    {
+      "source": "/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION-MATH.md",
+      "snapshot": "FORMATION-MATH.md",
+      "sha256": "c65410ed0daf160c49c477efc16c7ed7bf0d1adf41983b77a9f852751ecf7ecf",
+      "git_status_at_read": ""
+    },
+    {
+      "source": "/Users/ren/theories/experiments/constructed-correction/PROTOCOL.md",
+      "snapshot": "PROTOCOL.md",
+      "sha256": "2c85e93b0df31233546a4ffc07c439c1b2bc27a52c2fbf360ba78e2cd5c292ff",
+      "git_status_at_read": ""
+    },
+    {
+      "source": "/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-CORRECTION.md",
+      "snapshot": "CONCERN-AND-CORRECTION.md",
+      "sha256": "548e21f9623d859c2e4fdb6871f1c1021c5e8512307ff645af28ced9e313daaf",
+      "git_status_at_read": "",
+      "repository_head_at_snapshot": "04b75b32c809aab9c5c64afc6c89874688da5c49"
+    }
+  ]
+}
