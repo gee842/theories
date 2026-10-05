@@ -1,5 +1,7 @@
 # Generative Existence (生生不息论)
 
+**Current reasons to effective protection, 6 October 2026:** [the new joined mechanism](unified-2026-10-05/REASON-PROTECTION.md) forms a finite actuator, consumes actual paid audits, implements safeguards and preserves subsequent revision. Sixty-one new Lean audits and independent finite choices distinguish physical possibility, selected protection and strategic defeat. The primary reaches three paid protective episodes; calibration, ethical grounds, evaluation, authority and commercial support remain explicit. The next factual interface must consume the actual recipient archive without silently replacing its meaning or resources.
+
 ## Current unified foundation
 
 **A copied learner now exercises and transmits its correction, 6 October 2026:** [successor learning](unified-2026-10-05/SUCCESSOR-LEARNING.md) uses actual retained transmission outputs, new paid evidence, corrected action and generic copying to produce a productive retained grandchild. Thirty-five new Lean audits and 120 independent exact comparisons separate corrective use, committed copying, operational seeding and retention. A buffer can retain an obsolete copied response; correct frozen records tie under stable conditions, and conventional feedback is equivalent. The inherited route stays fixed. Next is consequence-dependent paid revision of that route, with actual material, information and resource history preserved; renewed provision and justified shared evaluation remain further obligations.

@@ -1,0 +1,246 @@
+{
+  "scope": "First complete computation, before review-requested selected-word replay and off-path attempt visibility checks; no event-law or parameter change.",
+  "source_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/PROTOCOL.md": "498a2af47c799bc2c2263d022ca8f66a9b6934c8aac7a7b6e9dfb114ab50bef9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/protocol-freeze.json": "fe46afd9a704f4ff1c5ff5232636dcbda9cacc971d1766a85d004519d69bb74d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/model.py": "59c432dd81e378f93781e194c800e90ff3b4ff729a20b1d3a332534892800709",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/check_model.py": "cb0c972fb626ae12eafb527dfedd4402666dc13f50820f2cd2ecaa758087a8d8",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/check_model.py": "36bbde51115e8df432be389e2510b4b6cec633d49fd2da48234529951e8f96b5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean": "4f4c9ca03bb48a93e9b124d998683b9066cae3f6e7d62d6600425fd51da103e6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+  },
+  "source_unchanged_during_check": true,
+  "all_checks_passed": true,
+  "physical_threshold_cases": 72,
+  "physical_boundary_count": 14,
+  "game_summary": {
+    "primary": {
+      "final_cash": 37,
+      "final_fuel": 3,
+      "final_source": 18,
+      "harm": [
+        2,
+        0
+      ],
+      "cache_states": 567
+    },
+    "free_filter": {
+      "final_cash": 47,
+      "final_fuel": 10,
+      "final_source": 18,
+      "harm": [
+        3,
+        3
+      ],
+      "cache_states": 535
+    },
+    "free_forced_open": {
+      "final_cash": 47,
+      "final_fuel": 10,
+      "final_source": 18,
+      "harm": [
+        3,
+        3
+      ],
+      "cache_states": 567
+    },
+    "cheap_suppression": {
+      "final_cash": 47,
+      "final_fuel": 10,
+      "final_source": 18,
+      "harm": [
+        3,
+        3
+      ],
+      "cache_states": 567
+    },
+    "cheap_shared_cut": {
+      "final_cash": 36,
+      "final_fuel": 6,
+      "final_source": 18,
+      "harm": [
+        3,
+        1
+      ],
+      "cache_states": 567
+    },
+    "low_individual_concern": {
+      "final_cash": 47,
+      "final_fuel": 10,
+      "final_source": 18,
+      "harm": [
+        3,
+        3
+      ],
+      "cache_states": 567
+    },
+    "uncompetitive_durable": {
+      "final_cash": 23,
+      "final_fuel": 40,
+      "final_source": 18,
+      "harm": [
+        3,
+        3
+      ],
+      "cache_states": 435
+    },
+    "actual_M15_no_actuator": {
+      "final_cash": 42,
+      "final_fuel": 13,
+      "final_source": 18,
+      "harm": [
+        3,
+        3
+      ],
+      "cache_states": 54
+    },
+    "no_authority": {
+      "final_cash": 42,
+      "final_fuel": 10,
+      "final_source": 18,
+      "harm": [
+        3,
+        3
+      ],
+      "cache_states": 237
+    },
+    "no_delivery": {
+      "final_cash": 42,
+      "final_fuel": 10,
+      "final_source": 18,
+      "harm": [
+        3,
+        3
+      ],
+      "cache_states": 237
+    },
+    "no_evidence_access": {
+      "final_cash": 23,
+      "final_fuel": 40,
+      "final_source": 18,
+      "harm": [
+        3,
+        3
+      ],
+      "cache_states": 144
+    },
+    "context_after_activation": {
+      "final_cash": 23,
+      "final_fuel": 40,
+      "final_source": 18,
+      "harm": [
+        3,
+        3
+      ],
+      "cache_states": 221
+    },
+    "insufficient_cash_upkeep": {
+      "final_cash": 1,
+      "final_fuel": 50,
+      "final_source": 20,
+      "harm": [
+        0,
+        0
+      ],
+      "cache_states": 0
+    },
+    "insufficient_source": {
+      "final_cash": 5,
+      "final_fuel": 56,
+      "final_source": 1,
+      "harm": [
+        0,
+        0
+      ],
+      "cache_states": 0
+    },
+    "original_fuel_33": {
+      "final_cash": 99,
+      "final_fuel": 0,
+      "final_source": 20,
+      "harm": [
+        0,
+        0
+      ],
+      "cache_states": 1
+    },
+    "original_fuel_46": {
+      "final_cash": 109,
+      "final_fuel": 1,
+      "final_source": 20,
+      "harm": [
+        1,
+        1
+      ],
+      "cache_states": 202
+    },
+    "original_fuel_47": {
+      "final_cash": 109,
+      "final_fuel": 0,
+      "final_source": 18,
+      "harm": [
+        1,
+        1
+      ],
+      "cache_states": 216
+    },
+    "original_fuel_48": {
+      "final_cash": 110,
+      "final_fuel": 0,
+      "final_source": 20,
+      "harm": [
+        0,
+        0
+      ],
+      "cache_states": 226
+    },
+    "original_fuel_79": {
+      "final_cash": 135,
+      "final_fuel": 1,
+      "final_source": 18,
+      "harm": [
+        2,
+        1
+      ],
+      "cache_states": 666
+    },
+    "original_fuel_80": {
+      "final_cash": 132,
+      "final_fuel": 0,
+      "final_source": 18,
+      "harm": [
+        2,
+        0
+      ],
+      "cache_states": 666
+    },
+    "original_fuel_81": {
+      "final_cash": 132,
+      "final_fuel": 1,
+      "final_source": 18,
+      "harm": [
+        2,
+        0
+      ],
+      "cache_states": 666
+    },
+    "original_fuel_82": {
+      "final_cash": 132,
+      "final_fuel": 2,
+      "final_source": 18,
+      "harm": [
+        2,
+        0
+      ],
+      "cache_states": 666
+    }
+  },
+  "conventional_comparison": {
+    "same_actual_observations_and_payments": true,
+    "same_selected_history": true,
+    "operator_value_scaled4": 167
+  }
+}

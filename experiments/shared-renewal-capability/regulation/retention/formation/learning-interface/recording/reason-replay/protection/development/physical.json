@@ -1,0 +1,1340 @@
+{
+  "scope": "Independent finite physical law and three-episode exact backward induction; explicit supplied ecology and dated preferences",
+  "physical": {
+    "primary_history": {
+      "formation": {
+        "initial": {
+          "a": 0,
+          "h": 0,
+          "resident": "empty",
+          "intact": false,
+          "local": false,
+          "fuel": 83,
+          "source": 20
+        },
+        "material_capacity": 17,
+        "steps": [
+          {
+            "stage": "formation",
+            "event": "formH",
+            "plant": {
+              "a": 0,
+              "h": 1,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 82,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formH",
+            "plant": {
+              "a": 0,
+              "h": 2,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 81,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formH",
+            "plant": {
+              "a": 0,
+              "h": 3,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 80,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formH",
+            "plant": {
+              "a": 0,
+              "h": 4,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 79,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formH",
+            "plant": {
+              "a": 0,
+              "h": 5,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 78,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formH",
+            "plant": {
+              "a": 0,
+              "h": 6,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 77,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formH",
+            "plant": {
+              "a": 0,
+              "h": 7,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 76,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formH",
+            "plant": {
+              "a": 0,
+              "h": 8,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 75,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formA",
+            "plant": {
+              "a": 1,
+              "h": 8,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 74,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formA",
+            "plant": {
+              "a": 2,
+              "h": 8,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 73,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formA",
+            "plant": {
+              "a": 3,
+              "h": 8,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 72,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formA",
+            "plant": {
+              "a": 4,
+              "h": 8,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 71,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formA",
+            "plant": {
+              "a": 5,
+              "h": 8,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 70,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formA",
+            "plant": {
+              "a": 6,
+              "h": 8,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 69,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formA",
+            "plant": {
+              "a": 7,
+              "h": 8,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 68,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formA",
+            "plant": {
+              "a": 8,
+              "h": 8,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 67,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "formA",
+            "plant": {
+              "a": 9,
+              "h": 8,
+              "resident": "empty",
+              "intact": false,
+              "local": false,
+              "fuel": 66,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "associateA",
+            "plant": {
+              "a": 8,
+              "h": 8,
+              "resident": "active",
+              "intact": false,
+              "local": false,
+              "fuel": 65,
+              "source": 20
+            }
+          },
+          {
+            "stage": "formation",
+            "event": "repair",
+            "plant": {
+              "a": 8,
+              "h": 8,
+              "resident": "active",
+              "intact": true,
+              "local": false,
+              "fuel": 64,
+              "source": 20
+            }
+          },
+          {
+            "stage": "slot",
+            "record": {
+              "plant": {
+                "a": 7,
+                "h": 7,
+                "resident": "active",
+                "intact": true,
+                "local": false,
+                "fuel": 63,
+                "source": 20
+              },
+              "slots": 1,
+              "blank": 1,
+              "pending": "idle",
+              "latch": null,
+              "escrow": 0,
+              "records": []
+            }
+          },
+          {
+            "stage": "slot",
+            "record": {
+              "plant": {
+                "a": 6,
+                "h": 6,
+                "resident": "active",
+                "intact": true,
+                "local": false,
+                "fuel": 62,
+                "source": 20
+              },
+              "slots": 2,
+              "blank": 2,
+              "pending": "idle",
+              "latch": null,
+              "escrow": 0,
+              "records": []
+            }
+          },
+          {
+            "stage": "slot",
+            "record": {
+              "plant": {
+                "a": 5,
+                "h": 5,
+                "resident": "active",
+                "intact": true,
+                "local": false,
+                "fuel": 61,
+                "source": 20
+              },
+              "slots": 3,
+              "blank": 3,
+              "pending": "idle",
+              "latch": null,
+              "escrow": 0,
+              "records": []
+            }
+          },
+          {
+            "stage": "slot",
+            "record": {
+              "plant": {
+                "a": 4,
+                "h": 4,
+                "resident": "active",
+                "intact": true,
+                "local": false,
+                "fuel": 60,
+                "source": 20
+              },
+              "slots": 4,
+              "blank": 4,
+              "pending": "idle",
+              "latch": null,
+              "escrow": 0,
+              "records": []
+            }
+          },
+          {
+            "stage": "slot",
+            "record": {
+              "plant": {
+                "a": 3,
+                "h": 3,
+                "resident": "active",
+                "intact": true,
+                "local": false,
+                "fuel": 59,
+                "source": 20
+              },
+              "slots": 5,
+              "blank": 5,
+              "pending": "idle",
+              "latch": null,
+              "escrow": 0,
+              "records": []
+            }
+          },
+          {
+            "stage": "slot",
+            "record": {
+              "plant": {
+                "a": 2,
+                "h": 2,
+                "resident": "active",
+                "intact": true,
+                "local": false,
+                "fuel": 58,
+                "source": 20
+              },
+              "slots": 6,
+              "blank": 6,
+              "pending": "idle",
+              "latch": null,
+              "escrow": 0,
+              "records": []
+            }
+          },
+          {
+            "stage": "reader",
+            "state": {
+              "core": {
+                "record": {
+                  "plant": {
+                    "a": 1,
+                    "h": 1,
+                    "resident": "active",
+                    "intact": true,
+                    "local": false,
+                    "fuel": 57,
+                    "source": 20
+                  },
+                  "slots": 6,
+                  "blank": 6,
+                  "pending": "idle",
+                  "latch": null,
+                  "escrow": 0,
+                  "records": []
+                },
+                "reader": true,
+                "context": false,
+                "phase": 0,
+                "sensed": null,
+                "decoded": [],
+                "working": 0,
+                "installed": null,
+                "access": true,
+                "delivery": true
+              },
+              "gate": false,
+              "lease": null,
+              "safe": 0,
+              "authority": true,
+              "cuts": 0,
+              "episode_open": false,
+              "forced_open": false,
+              "harm": [
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "stage": "gate",
+            "state": {
+              "core": {
+                "record": {
+                  "plant": {
+                    "a": 0,
+                    "h": 0,
+                    "resident": "active",
+                    "intact": true,
+                    "local": false,
+                    "fuel": 56,
+                    "source": 20
+                  },
+                  "slots": 6,
+                  "blank": 6,
+                  "pending": "idle",
+                  "latch": null,
+                  "escrow": 0,
+                  "records": []
+                },
+                "reader": true,
+                "context": false,
+                "phase": 0,
+                "sensed": null,
+                "decoded": [],
+                "working": 0,
+                "installed": null,
+                "access": true,
+                "delivery": true
+              },
+              "gate": true,
+              "lease": null,
+              "safe": 0,
+              "authority": true,
+              "cuts": 0,
+              "episode_open": false,
+              "forced_open": false,
+              "harm": [
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "spent": 27
+      },
+      "checkpoints": [
+        {
+          "episode": 0,
+          "mask": 3,
+          "action_spending": 4,
+          "before_action_fuel": 39,
+          "state": {
+            "core": {
+              "record": {
+                "plant": {
+                  "a": 0,
+                  "h": 0,
+                  "resident": "active",
+                  "intact": true,
+                  "local": false,
+                  "fuel": 35,
+                  "source": 20
+                },
+                "slots": 6,
+                "blank": 3,
+                "pending": "idle",
+                "latch": null,
+                "escrow": 0,
+                "records": [
+                  true,
+                  true,
+                  true
+                ]
+              },
+              "reader": true,
+              "context": false,
+              "phase": 10,
+              "sensed": false,
+              "decoded": [
+                true,
+                true,
+                true
+              ],
+              "working": 3,
+              "installed": [
+                false,
+                3
+              ],
+              "access": true,
+              "delivery": true
+            },
+            "gate": true,
+            "lease": null,
+            "safe": 0,
+            "authority": true,
+            "cuts": 0,
+            "episode_open": false,
+            "forced_open": false,
+            "harm": [
+              0,
+              0
+            ]
+          },
+          "action_events": [
+            {
+              "event": [
+                "arm",
+                3
+              ],
+              "cost": 1,
+              "state": {
+                "core": {
+                  "record": {
+                    "plant": {
+                      "a": 0,
+                      "h": 0,
+                      "resident": "active",
+                      "intact": true,
+                      "local": false,
+                      "fuel": 38,
+                      "source": 20
+                    },
+                    "slots": 6,
+                    "blank": 3,
+                    "pending": "idle",
+                    "latch": null,
+                    "escrow": 0,
+                    "records": [
+                      true,
+                      true,
+                      true
+                    ]
+                  },
+                  "reader": true,
+                  "context": false,
+                  "phase": 10,
+                  "sensed": false,
+                  "decoded": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "working": 3,
+                  "installed": [
+                    false,
+                    3
+                  ],
+                  "access": true,
+                  "delivery": true
+                },
+                "gate": true,
+                "lease": [
+                  false,
+                  3
+                ],
+                "safe": 0,
+                "authority": true,
+                "cuts": 0,
+                "episode_open": true,
+                "forced_open": false,
+                "harm": [
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "event": [
+                "safeguard",
+                0
+              ],
+              "cost": 1,
+              "state": {
+                "core": {
+                  "record": {
+                    "plant": {
+                      "a": 0,
+                      "h": 0,
+                      "resident": "active",
+                      "intact": true,
+                      "local": false,
+                      "fuel": 37,
+                      "source": 20
+                    },
+                    "slots": 6,
+                    "blank": 3,
+                    "pending": "idle",
+                    "latch": null,
+                    "escrow": 0,
+                    "records": [
+                      true,
+                      true,
+                      true
+                    ]
+                  },
+                  "reader": true,
+                  "context": false,
+                  "phase": 10,
+                  "sensed": false,
+                  "decoded": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "working": 3,
+                  "installed": [
+                    false,
+                    3
+                  ],
+                  "access": true,
+                  "delivery": true
+                },
+                "gate": true,
+                "lease": [
+                  false,
+                  3
+                ],
+                "safe": 1,
+                "authority": true,
+                "cuts": 0,
+                "episode_open": true,
+                "forced_open": false,
+                "harm": [
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "event": [
+                "safeguard",
+                1
+              ],
+              "cost": 1,
+              "state": {
+                "core": {
+                  "record": {
+                    "plant": {
+                      "a": 0,
+                      "h": 0,
+                      "resident": "active",
+                      "intact": true,
+                      "local": false,
+                      "fuel": 36,
+                      "source": 20
+                    },
+                    "slots": 6,
+                    "blank": 3,
+                    "pending": "idle",
+                    "latch": null,
+                    "escrow": 0,
+                    "records": [
+                      true,
+                      true,
+                      true
+                    ]
+                  },
+                  "reader": true,
+                  "context": false,
+                  "phase": 10,
+                  "sensed": false,
+                  "decoded": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "working": 3,
+                  "installed": [
+                    false,
+                    3
+                  ],
+                  "access": true,
+                  "delivery": true
+                },
+                "gate": true,
+                "lease": [
+                  false,
+                  3
+                ],
+                "safe": 3,
+                "authority": true,
+                "cuts": 0,
+                "episode_open": true,
+                "forced_open": false,
+                "harm": [
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "event": [
+                "release",
+                null
+              ],
+              "cost": 1,
+              "state": {
+                "core": {
+                  "record": {
+                    "plant": {
+                      "a": 0,
+                      "h": 0,
+                      "resident": "active",
+                      "intact": true,
+                      "local": false,
+                      "fuel": 35,
+                      "source": 20
+                    },
+                    "slots": 6,
+                    "blank": 3,
+                    "pending": "idle",
+                    "latch": null,
+                    "escrow": 0,
+                    "records": [
+                      true,
+                      true,
+                      true
+                    ]
+                  },
+                  "reader": true,
+                  "context": false,
+                  "phase": 10,
+                  "sensed": false,
+                  "decoded": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "working": 3,
+                  "installed": [
+                    false,
+                    3
+                  ],
+                  "access": true,
+                  "delivery": true
+                },
+                "gate": true,
+                "lease": null,
+                "safe": 0,
+                "authority": true,
+                "cuts": 0,
+                "episode_open": false,
+                "forced_open": false,
+                "harm": [
+                  0,
+                  0
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "episode": 1,
+          "mask": 2,
+          "action_spending": 3,
+          "before_action_fuel": 20,
+          "state": {
+            "core": {
+              "record": {
+                "plant": {
+                  "a": 0,
+                  "h": 0,
+                  "resident": "active",
+                  "intact": true,
+                  "local": false,
+                  "fuel": 17,
+                  "source": 18
+                },
+                "slots": 6,
+                "blank": 0,
+                "pending": "idle",
+                "latch": null,
+                "escrow": 0,
+                "records": [
+                  true,
+                  true,
+                  true,
+                  false,
+                  true,
+                  true
+                ]
+              },
+              "reader": true,
+              "context": true,
+              "phase": 10,
+              "sensed": true,
+              "decoded": [
+                false,
+                true,
+                true
+              ],
+              "working": 2,
+              "installed": [
+                true,
+                2
+              ],
+              "access": true,
+              "delivery": true
+            },
+            "gate": true,
+            "lease": null,
+            "safe": 0,
+            "authority": true,
+            "cuts": 0,
+            "episode_open": false,
+            "forced_open": false,
+            "harm": [
+              1,
+              0
+            ]
+          },
+          "action_events": [
+            {
+              "event": [
+                "arm",
+                2
+              ],
+              "cost": 1,
+              "state": {
+                "core": {
+                  "record": {
+                    "plant": {
+                      "a": 0,
+                      "h": 0,
+                      "resident": "active",
+                      "intact": true,
+                      "local": false,
+                      "fuel": 19,
+                      "source": 18
+                    },
+                    "slots": 6,
+                    "blank": 0,
+                    "pending": "idle",
+                    "latch": null,
+                    "escrow": 0,
+                    "records": [
+                      true,
+                      true,
+                      true,
+                      false,
+                      true,
+                      true
+                    ]
+                  },
+                  "reader": true,
+                  "context": true,
+                  "phase": 10,
+                  "sensed": true,
+                  "decoded": [
+                    false,
+                    true,
+                    true
+                  ],
+                  "working": 2,
+                  "installed": [
+                    true,
+                    2
+                  ],
+                  "access": true,
+                  "delivery": true
+                },
+                "gate": true,
+                "lease": [
+                  true,
+                  2
+                ],
+                "safe": 0,
+                "authority": true,
+                "cuts": 0,
+                "episode_open": true,
+                "forced_open": false,
+                "harm": [
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "event": [
+                "safeguard",
+                1
+              ],
+              "cost": 1,
+              "state": {
+                "core": {
+                  "record": {
+                    "plant": {
+                      "a": 0,
+                      "h": 0,
+                      "resident": "active",
+                      "intact": true,
+                      "local": false,
+                      "fuel": 18,
+                      "source": 18
+                    },
+                    "slots": 6,
+                    "blank": 0,
+                    "pending": "idle",
+                    "latch": null,
+                    "escrow": 0,
+                    "records": [
+                      true,
+                      true,
+                      true,
+                      false,
+                      true,
+                      true
+                    ]
+                  },
+                  "reader": true,
+                  "context": true,
+                  "phase": 10,
+                  "sensed": true,
+                  "decoded": [
+                    false,
+                    true,
+                    true
+                  ],
+                  "working": 2,
+                  "installed": [
+                    true,
+                    2
+                  ],
+                  "access": true,
+                  "delivery": true
+                },
+                "gate": true,
+                "lease": [
+                  true,
+                  2
+                ],
+                "safe": 2,
+                "authority": true,
+                "cuts": 0,
+                "episode_open": true,
+                "forced_open": false,
+                "harm": [
+                  0,
+                  0
+                ]
+              }
+            },
+            {
+              "event": [
+                "release",
+                null
+              ],
+              "cost": 1,
+              "state": {
+                "core": {
+                  "record": {
+                    "plant": {
+                      "a": 0,
+                      "h": 0,
+                      "resident": "active",
+                      "intact": true,
+                      "local": false,
+                      "fuel": 17,
+                      "source": 18
+                    },
+                    "slots": 6,
+                    "blank": 0,
+                    "pending": "idle",
+                    "latch": null,
+                    "escrow": 0,
+                    "records": [
+                      true,
+                      true,
+                      true,
+                      false,
+                      true,
+                      true
+                    ]
+                  },
+                  "reader": true,
+                  "context": true,
+                  "phase": 10,
+                  "sensed": true,
+                  "decoded": [
+                    false,
+                    true,
+                    true
+                  ],
+                  "working": 2,
+                  "installed": [
+                    true,
+                    2
+                  ],
+                  "access": true,
+                  "delivery": true
+                },
+                "gate": true,
+                "lease": null,
+                "safe": 0,
+                "authority": true,
+                "cuts": 0,
+                "episode_open": false,
+                "forced_open": false,
+                "harm": [
+                  1,
+                  0
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "episode": 2,
+          "mask": 2,
+          "action_spending": 3,
+          "before_action_fuel": 6,
+          "state": {
+            "core": {
+              "record": {
+                "plant": {
+                  "a": 0,
+                  "h": 0,
+                  "resident": "active",
+                  "intact": true,
+                  "local": false,
+                  "fuel": 3,
+                  "source": 18
+                },
+                "slots": 6,
+                "blank": 0,
+                "pending": "idle",
+                "latch": null,
+                "escrow": 0,
+                "records": [
+                  true,
+                  true,
+                  true,
+                  false,
+                  true,
+                  true
+                ]
+              },
+              "reader": true,
+              "context": true,
+              "phase": 10,
+              "sensed": true,
+              "decoded": [
+                false,
+                true,
+                true
+              ],
+              "working": 2,
+              "installed": [
+                true,
+                2
+              ],
+              "access": true,
+              "delivery": true
+            },
+            "gate": true,
+            "lease": null,
+            "safe": 0,
+            "authority": true,
+            "cuts": 0,
+            "episode_open": false,
+            "forced_open": false,
+            "harm": [
+              2,
+              0
+            ]
+          },
+          "action_events": [
+            {
+              "event": [
+                "arm",
+                2
+              ],
+              "cost": 1,
+              "state": {
+                "core": {
+                  "record": {
+                    "plant": {
+                      "a": 0,
+                      "h": 0,
+                      "resident": "active",
+                      "intact": true,
+                      "local": false,
+                      "fuel": 5,
+                      "source": 18
+                    },
+                    "slots": 6,
+                    "blank": 0,
+                    "pending": "idle",
+                    "latch": null,
+                    "escrow": 0,
+                    "records": [
+                      true,
+                      true,
+                      true,
+                      false,
+                      true,
+                      true
+                    ]
+                  },
+                  "reader": true,
+                  "context": true,
+                  "phase": 10,
+                  "sensed": true,
+                  "decoded": [
+                    false,
+                    true,
+                    true
+                  ],
+                  "working": 2,
+                  "installed": [
+                    true,
+                    2
+                  ],
+                  "access": true,
+                  "delivery": true
+                },
+                "gate": true,
+                "lease": [
+                  true,
+                  2
+                ],
+                "safe": 0,
+                "authority": true,
+                "cuts": 0,
+                "episode_open": true,
+                "forced_open": false,
+                "harm": [
+                  1,
+                  0
+                ]
+              }
+            },
+            {
+              "event": [
+                "safeguard",
+                1
+              ],
+              "cost": 1,
+              "state": {
+                "core": {
+                  "record": {
+                    "plant": {
+                      "a": 0,
+                      "h": 0,
+                      "resident": "active",
+                      "intact": true,
+                      "local": false,
+                      "fuel": 4,
+                      "source": 18
+                    },
+                    "slots": 6,
+                    "blank": 0,
+                    "pending": "idle",
+                    "latch": null,
+                    "escrow": 0,
+                    "records": [
+                      true,
+                      true,
+                      true,
+                      false,
+                      true,
+                      true
+                    ]
+                  },
+                  "reader": true,
+                  "context": true,
+                  "phase": 10,
+                  "sensed": true,
+                  "decoded": [
+                    false,
+                    true,
+                    true
+                  ],
+                  "working": 2,
+                  "installed": [
+                    true,
+                    2
+                  ],
+                  "access": true,
+                  "delivery": true
+                },
+                "gate": true,
+                "lease": [
+                  true,
+                  2
+                ],
+                "safe": 2,
+                "authority": true,
+                "cuts": 0,
+                "episode_open": true,
+                "forced_open": false,
+                "harm": [
+                  1,
+                  0
+                ]
+              }
+            },
+            {
+              "event": [
+                "release",
+                null
+              ],
+              "cost": 1,
+              "state": {
+                "core": {
+                  "record": {
+                    "plant": {
+                      "a": 0,
+                      "h": 0,
+                      "resident": "active",
+                      "intact": true,
+                      "local": false,
+                      "fuel": 3,
+                      "source": 18
+                    },
+                    "slots": 6,
+                    "blank": 0,
+                    "pending": "idle",
+                    "latch": null,
+                    "escrow": 0,
+                    "records": [
+                      true,
+                      true,
+                      true,
+                      false,
+                      true,
+                      true
+                    ]
+                  },
+                  "reader": true,
+                  "context": true,
+                  "phase": 10,
+                  "sensed": true,
+                  "decoded": [
+                    false,
+                    true,
+                    true
+                  ],
+                  "working": 2,
+                  "installed": [
+                    true,
+                    2
+                  ],
+                  "access": true,
+                  "delivery": true
+                },
+                "gate": true,
+                "lease": null,
+                "safe": 0,
+                "authority": true,
+                "cuts": 0,
+                "episode_open": false,
+                "forced_open": false,
+                "harm": [
+                  2,
+                  0
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "account": {
+        "initial": 103,
+        "preparation": 19,
+        "slots": 6,
+        "reader": 1,
+        "gate": 1,
+        "recording": 12,
+        "audits": 33,
+        "actions": 10,
+        "final": 21
+      }
+    },
+    "threshold_cases": 72,
+    "completed_threshold_words": 17,
+    "boundaries": {
+      "authority_loss_preserves_reason_but_blocks_arm": true,
+      "delivery_loss_preserves_reason_but_blocks_arm": true,
+      "paid_game_cut_can_defeat_effective_protection_without_refuting_reason": true,
+      "unaudited_mechanical_protection_is_available": true,
+      "arming_preserves_already_paid_safeguards": true,
+      "forced_open_does_not_prohibit_voluntary_safeguards_or_refusal": true,
+      "reopening_or_turnover_invalidates_operating_lease_and_active_mitigation": true,
+      "access_and_delivery_cuts_preserve_lease_safeguards_and_reasons": true,
+      "refusal_retains_paid_preparation_without_production_harm": true,
+      "actual_M15_cannot_form_gate_but_ordinary_production_remains_possible": true,
+      "actual_initial_common_or_source_shortage_blocks_acquisition": true,
+      "unknown_stale_and_actual_negative_evidence_remain_distinct": true,
+      "private_work_and_temporary_controls_need_open_opportunity": true
+    },
+    "boundary_count": 13
+  },
+  "games": {},
+  "source_hashes": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/PROTOCOL.md": "498a2af47c799bc2c2263d022ca8f66a9b6934c8aac7a7b6e9dfb114ab50bef9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/protocol-freeze.json": "fe46afd9a704f4ff1c5ff5232636dcbda9cacc971d1766a85d004519d69bb74d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/model.py": "45226cb881f23ebe9ef41f7be1d1699ceaad154b13b87147614ebf80d3f1f10b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/check_model.py": "05844458f6f69f925ce4af6ba256b75e2759db37bae3d3962a6cafa0343e39c6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/check_model.py": "36bbde51115e8df432be389e2510b4b6cec633d49fd2da48234529951e8f96b5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean": "ae2f735433f5b02769c740a9ea0ae9121dfabf207084e96b0bd2528278ef441c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+  },
+  "source_unchanged_during_check": true,
+  "changed_during_development_run": [],
+  "all_checks_passed": true,
+  "elapsed_seconds": 0.018192708026617765
+}

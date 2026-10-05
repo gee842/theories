@@ -1,0 +1,28 @@
+{
+  "status": "prospective protocol frozen before new numerical verification",
+  "frozen_at_utc": "2026-10-05T21:31:56.559362+00:00",
+  "protocol_sha256": "498a2af47c799bc2c2263d022ca8f66a9b6934c8aac7a7b6e9dfb114ab50bef9",
+  "predecessor_modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "module": "FormedSelection",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+      "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37"
+    },
+    {
+      "module": "RecordedEvidence",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean",
+      "sha256": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9"
+    },
+    {
+      "module": "ReasonReplay",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean",
+      "sha256": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20"
+    }
+  ],
+  "scope": "Actual reason replay, formed paid actuator, all-patient harm, and a separately solved finite strategic game; declared calibration, ethical grounds, authority, preferences and commercial ecology remain inputs."
+}
