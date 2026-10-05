@@ -790,11 +790,11 @@
     "updater_type_changes_reconstruction_guard": true
   },
   "source_hashes": {
-    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/updater/check_model.py": "d3f414bafbc2911ab23c2b55e11ce1b7002bae7cea95df75af3ba237e7656bc3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/updater/check_model.py": "a79bdad26fa23bc72e4e6ad4f935676bd2a4adf66160735a7eea5f0e951603e5",
     "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
     "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a",
     "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3",
-    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/updater/ConstructedUpdater.lean": "6bfab6b2d88db0fb8fe5e8703d0bddcbd643127a41ece493fac0c5ae386d6a17"
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/updater/ConstructedUpdater.lean": "c59f5c934ed1884ffddfa36d982b89e6f934386d462a56927478004018e02023"
   },
   "all_checks_passed": true
 }

@@ -463,7 +463,10 @@ theorem old_two_material_bridge_is_insufficient :
     ¬ BridgeEnabled UpdaterFormation.primary 2 UpdaterFormation.oldEntrance := by
   exact ⟨UpdaterFormation.actual_old_entrance_enabled, by decide⟩
 
-def noParts : Running := { ready with aFree := 0, hFree := 0 }
+/-- Configured counterexample, with all unavailable free parts retained as bound
+material. No formation history is claimed for this fixture; exhausted below is
+the corresponding obstruction reached by an actual paid history. -/
+def noParts : Running := { ready with aFree := 0, hFree := 0, boundA := 7, boundH := 5 }
 def noFuel : Running := { ready with core := { ready.core with core := { ready.core.core with fuel := 0 } } }
 
 theorem fuel_does_not_substitute_for_parts :

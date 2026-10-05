@@ -16,6 +16,10 @@ This is a restriction of the coarse updater law under supplied consumable-compon
 
 ## Verification
 
+The fresh Lean 4.29.1 build passes **39 new theorem audits**, together with 107 inherited audits. One new theorem has an empty dependency list; the other 38 use only standard `propext` and/or `Quot.sound`. The inherited updater module also contains a `Classical.choice` dependency, reported separately. There are no proof holes, custom axioms or native proof shortcuts.
+
+The independent model passes 1,248 enabled and 15,600 disabled handoffs; 299,584 short-word/inventory cases; 48 complete-witness stock pairs and 768 prefix/stock cases; seven boundary checks; and a complete 200-state, 522-edge graph from the smaller eight-fuel, three-packet initial state. The complete graph is not claimed for the sixteen-packet main witness. Both actual shortage preparations and the fully reached post-revision material obstruction are retained.
+
 Run from the repository root:
 
 ```sh
