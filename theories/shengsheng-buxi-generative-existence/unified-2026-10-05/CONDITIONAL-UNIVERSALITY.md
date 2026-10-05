@@ -137,6 +137,8 @@ The universal reading is therefore exact: **every process satisfying the display
 
 ## 8. Connection to the unified derivation
 
+**Checked continuation, 6 October 2026:** [the learning-interface extension](LEARNING-INTERFACE.md) now proves the account laws for the actual formed-variant process, including its local capture requirement and spent-resource handoff. It also proves a general complete-feedback obstruction to incompatible next-response requirements and constructs a separately costed diagnostic witness. This connects the support theorem to an existing mechanism and an information-flow requirement; controller formation and revision remain open explanatory tasks.
+
 The shared foundation asks how activities alter the conditions of further activities. This development identifies a conditional necessity within that account: expenditure beyond inherited support requires actual provision, and bounded acyclic replacement dependencies impose a continuation deadline. Sensing, models, selectors and their reconstruction are subject to these constraints wherever their material implementations satisfy the same conditions.
 
 These results do not insert a reward or preinstalled learner. They expose the support obligations that a proposed origin of learning must meet. The [parallel concrete programme](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md) now joins formation of competing response variants to differential retention under one paid history. Its inheritance and access mechanisms remain supplied; deriving their formation and revision must retain the same accounting discipline. Applying the present general theorems to that construction still requires explicit interface proofs.
