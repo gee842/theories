@@ -1,0 +1,9 @@
+{
+  "protocol_sha256": "b98cb07ae0516090b1a2769869a658d5bd136c802df075ed1a2b86eb8929f1e6",
+  "stage": "Prospective freeze before any numerical suffix execution",
+  "date": "2026-10-06",
+  "initial_prospective_sha256": "0e180aad2d95f223310d61208f7fb164fcd0f3ec7578874e226f6c118bc13048",
+  "pre_execution_clarification": "Explicitly changed recipient efficacy at learning handoff and scheduled recipient operation; no numerical suffix run preceded either version.",
+  "first_execution_protocol_sha256": "3d1c52ec33600499c10d642308c9e106398c449b44f6f85085c4ee66beadc4df",
+  "post_first_execution_clarification": "Added explicit direct site1 routing condition to stated scalar fuel bounds, already enforced by frozen graph transitions. No law/case/code changed. Producer results regenerated to bind clarified text."
+}

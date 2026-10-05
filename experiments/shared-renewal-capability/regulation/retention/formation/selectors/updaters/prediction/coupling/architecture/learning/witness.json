@@ -1,0 +1,4508 @@
+{
+  "law": {
+    "initial_common": 30,
+    "connector_parts": 4,
+    "formation_arm": "live",
+    "packet": 10,
+    "recipient_flip": 1,
+    "availability": "1",
+    "reverse_after_first": false,
+    "wire_cost": 1,
+    "recode_cost": 2,
+    "rent": 1,
+    "sensing": 1,
+    "work": 3,
+    "observation": 1,
+    "write": 1,
+    "upkeep": 1,
+    "hold": 1,
+    "patient_use": 1,
+    "harm": 1,
+    "initial_bank": 40,
+    "architecture_law": {
+      "initial_common": 30,
+      "packet": 10,
+      "prefix_steps": 8,
+      "rounds": 2,
+      "receptor_parts": 2,
+      "comparator_parts": 2,
+      "connector_parts": 4,
+      "template_parts": 3,
+      "patient_initial": 4,
+      "guide_cost": 1,
+      "receptor_cost": 1,
+      "comparator_cost": 1,
+      "bond_cost": 1,
+      "gate_bond_cost": 1,
+      "identity_affinity": "1",
+      "rent": 1,
+      "sensing": 1,
+      "work": 3,
+      "route_upkeep": 1,
+      "copy_cost": 2,
+      "hold_cost": 1,
+      "patient_use": 1,
+      "harm": 1,
+      "recipient_flip": 0,
+      "initial_source": 121
+    }
+  },
+  "single_complete_word_probability": "1/1080",
+  "preparation_word_probability": "1/12",
+  "commissioned_preparation_family_probability": "2/9",
+  "prefix_word_probability_including_regime_prior": "1/8",
+  "assembly_word_probability": "4/45",
+  "same_endpoint_preparation_family_probability": "1/405",
+  "inherited_prior_motor_revision": false,
+  "preparation": [
+    {
+      "event": "form_a",
+      "before": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        121
+      ],
+      "after": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        29,
+        121
+      ],
+      "conditional_probability": "1/2",
+      "inert_bank": 40
+    },
+    {
+      "event": "form_h",
+      "before": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        29,
+        121
+      ],
+      "after": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        28,
+        121
+      ],
+      "conditional_probability": "1/3",
+      "inert_bank": 40
+    },
+    {
+      "event": "bind_a",
+      "before": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        28,
+        121
+      ],
+      "after": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        27,
+        121
+      ],
+      "conditional_probability": "1/2",
+      "inert_bank": 40
+    },
+    {
+      "event": "repair",
+      "before": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        27,
+        121
+      ],
+      "after": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        26,
+        121
+      ],
+      "conditional_probability": "1",
+      "inert_bank": 40
+    },
+    {
+      "event": "capture",
+      "before": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        26,
+        121
+      ],
+      "after": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        26,
+        120
+      ],
+      "conditional_probability": "1",
+      "inert_bank": 40
+    }
+  ],
+  "adapter_endpoint": {
+    "state": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      26,
+      120
+    ],
+    "probability": "2/9",
+    "commissioned": true,
+    "preparation_spent": 4,
+    "remaining_energy": 147,
+    "reserve": 26,
+    "packets": 12,
+    "remainder": 0,
+    "transformed_A": 1,
+    "transformed_H": 1,
+    "backing_slots": 2
+  },
+  "prefix": [
+    {
+      "exposure": 0,
+      "regime": 0,
+      "before": {
+        "fuel": 26,
+        "gate_life": 0,
+        "stage": 0,
+        "life": 0,
+        "q": 2,
+        "last": 0,
+        "written": false,
+        "coupling": -1,
+        "coupling_life": 0,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "after": {
+        "fuel": 21,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 0,
+        "last": 0,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "conditional_probability": "1/4",
+      "marks": {
+        "updater_forms": "1",
+        "base_forms": "1",
+        "predictor_retrofits": "1",
+        "coupler_forms": "1",
+        "coupler_changes": "0",
+        "coupler_renewals": "1",
+        "rents": "1",
+        "trials": "1",
+        "captures": "1",
+        "writes": "1",
+        "unpaid_writes": "0",
+        "decoder_errors": "0",
+        "acquired_uses": "0",
+        "normal_trials": "1",
+        "inverted_trials": "0",
+        "brier16": "4",
+        "spent": "15",
+        "waste": "0"
+      }
+    },
+    {
+      "exposure": 1,
+      "regime": 0,
+      "before": {
+        "fuel": 21,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 0,
+        "last": 0,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "after": {
+        "fuel": 23,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 0,
+        "last": 0,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "conditional_probability": "1",
+      "marks": {
+        "updater_forms": "0",
+        "base_forms": "0",
+        "predictor_retrofits": "0",
+        "coupler_forms": "0",
+        "coupler_changes": "0",
+        "coupler_renewals": "1",
+        "rents": "1",
+        "trials": "1",
+        "captures": "1",
+        "writes": "1",
+        "unpaid_writes": "0",
+        "decoder_errors": "0",
+        "acquired_uses": "1",
+        "normal_trials": "1",
+        "inverted_trials": "0",
+        "brier16": "0",
+        "spent": "8",
+        "waste": "0"
+      }
+    },
+    {
+      "exposure": 2,
+      "regime": 0,
+      "before": {
+        "fuel": 23,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 0,
+        "last": 0,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "after": {
+        "fuel": 25,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 0,
+        "last": 0,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "conditional_probability": "1",
+      "marks": {
+        "updater_forms": "0",
+        "base_forms": "0",
+        "predictor_retrofits": "0",
+        "coupler_forms": "0",
+        "coupler_changes": "0",
+        "coupler_renewals": "1",
+        "rents": "1",
+        "trials": "1",
+        "captures": "1",
+        "writes": "1",
+        "unpaid_writes": "0",
+        "decoder_errors": "0",
+        "acquired_uses": "1",
+        "normal_trials": "1",
+        "inverted_trials": "0",
+        "brier16": "0",
+        "spent": "8",
+        "waste": "0"
+      }
+    },
+    {
+      "exposure": 3,
+      "regime": 0,
+      "before": {
+        "fuel": 25,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 0,
+        "last": 0,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "after": {
+        "fuel": 27,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 0,
+        "last": 0,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "conditional_probability": "1",
+      "marks": {
+        "updater_forms": "0",
+        "base_forms": "0",
+        "predictor_retrofits": "0",
+        "coupler_forms": "0",
+        "coupler_changes": "0",
+        "coupler_renewals": "1",
+        "rents": "1",
+        "trials": "1",
+        "captures": "1",
+        "writes": "1",
+        "unpaid_writes": "0",
+        "decoder_errors": "0",
+        "acquired_uses": "1",
+        "normal_trials": "1",
+        "inverted_trials": "0",
+        "brier16": "0",
+        "spent": "8",
+        "waste": "0"
+      }
+    },
+    {
+      "exposure": 4,
+      "regime": 1,
+      "before": {
+        "fuel": 27,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 0,
+        "last": 0,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "after": {
+        "fuel": 22,
+        "gate_life": 1,
+        "stage": 2,
+        "life": 5,
+        "q": 4,
+        "last": 0,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 1,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "conditional_probability": "1",
+      "marks": {
+        "updater_forms": "0",
+        "base_forms": "0",
+        "predictor_retrofits": "0",
+        "coupler_forms": "0",
+        "coupler_changes": "0",
+        "coupler_renewals": "0",
+        "rents": "1",
+        "trials": "1",
+        "captures": "0",
+        "writes": "1",
+        "unpaid_writes": "0",
+        "decoder_errors": "0",
+        "acquired_uses": "1",
+        "normal_trials": "1",
+        "inverted_trials": "0",
+        "brier16": "16",
+        "spent": "5",
+        "waste": "10"
+      }
+    },
+    {
+      "exposure": 5,
+      "regime": 1,
+      "before": {
+        "fuel": 22,
+        "gate_life": 1,
+        "stage": 2,
+        "life": 5,
+        "q": 4,
+        "last": 0,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 1,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "after": {
+        "fuel": 24,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 4,
+        "last": 1,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "conditional_probability": "1",
+      "marks": {
+        "updater_forms": "0",
+        "base_forms": "0",
+        "predictor_retrofits": "0",
+        "coupler_forms": "0",
+        "coupler_changes": "0",
+        "coupler_renewals": "1",
+        "rents": "1",
+        "trials": "1",
+        "captures": "1",
+        "writes": "1",
+        "unpaid_writes": "0",
+        "decoder_errors": "0",
+        "acquired_uses": "1",
+        "normal_trials": "1",
+        "inverted_trials": "0",
+        "brier16": "0",
+        "spent": "8",
+        "waste": "0"
+      }
+    },
+    {
+      "exposure": 6,
+      "regime": 1,
+      "before": {
+        "fuel": 24,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 4,
+        "last": 1,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "after": {
+        "fuel": 26,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 4,
+        "last": 1,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "conditional_probability": "1",
+      "marks": {
+        "updater_forms": "0",
+        "base_forms": "0",
+        "predictor_retrofits": "0",
+        "coupler_forms": "0",
+        "coupler_changes": "0",
+        "coupler_renewals": "1",
+        "rents": "1",
+        "trials": "1",
+        "captures": "1",
+        "writes": "1",
+        "unpaid_writes": "0",
+        "decoder_errors": "0",
+        "acquired_uses": "1",
+        "normal_trials": "1",
+        "inverted_trials": "0",
+        "brier16": "0",
+        "spent": "8",
+        "waste": "0"
+      }
+    },
+    {
+      "exposure": 7,
+      "regime": 1,
+      "before": {
+        "fuel": 26,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 4,
+        "last": 1,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "after": {
+        "fuel": 28,
+        "gate_life": 2,
+        "stage": 2,
+        "life": 6,
+        "q": 4,
+        "last": 1,
+        "written": true,
+        "coupling": 0,
+        "coupling_life": 2,
+        "failed_q": -1,
+        "qualified_q": -1,
+        "witness": false
+      },
+      "conditional_probability": "1",
+      "marks": {
+        "updater_forms": "0",
+        "base_forms": "0",
+        "predictor_retrofits": "0",
+        "coupler_forms": "0",
+        "coupler_changes": "0",
+        "coupler_renewals": "1",
+        "rents": "1",
+        "trials": "1",
+        "captures": "1",
+        "writes": "1",
+        "unpaid_writes": "0",
+        "decoder_errors": "0",
+        "acquired_uses": "1",
+        "normal_trials": "1",
+        "inverted_trials": "0",
+        "brier16": "0",
+        "spent": "8",
+        "waste": "0"
+      }
+    }
+  ],
+  "architecture": [
+    {
+      "event": "guide.seed",
+      "state": {
+        "fuel": 27,
+        "patient": 4,
+        "source": 40,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 2,
+        "raw_d": 2,
+        "raw_w": 4,
+        "raw_t": 2,
+        "guides_e": 1,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          false,
+          false
+        ],
+        "d_nodes": [
+          false,
+          false
+        ],
+        "graph": [
+          0,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 1,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 0,
+        "recipient_attempts": 0,
+        "actor_captures": 0,
+        "recipient_captures": 0,
+        "copy_events": 0,
+        "paid_holds": 0,
+        "rent_events": 0,
+        "sensed": 0
+      }
+    },
+    {
+      "event": "r0.receptor",
+      "state": {
+        "fuel": 26,
+        "patient": 4,
+        "source": 40,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 2,
+        "raw_w": 4,
+        "raw_t": 2,
+        "guides_e": 1,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          false,
+          false
+        ],
+        "graph": [
+          0,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 2,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 0,
+        "recipient_attempts": 0,
+        "actor_captures": 0,
+        "recipient_captures": 0,
+        "copy_events": 0,
+        "paid_holds": 0,
+        "rent_events": 0,
+        "sensed": 0
+      }
+    },
+    {
+      "event": "r0.comparator",
+      "state": {
+        "fuel": 25,
+        "patient": 4,
+        "source": 40,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 4,
+        "raw_t": 2,
+        "guides_e": 1,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          0,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 3,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 0,
+        "recipient_attempts": 0,
+        "actor_captures": 0,
+        "recipient_captures": 0,
+        "copy_events": 0,
+        "paid_holds": 0,
+        "rent_events": 0,
+        "sensed": 0
+      }
+    },
+    {
+      "event": "r0.bind.RP",
+      "state": {
+        "fuel": 24,
+        "patient": 4,
+        "source": 40,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 2,
+        "guides_e": 1,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 4,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 0,
+        "recipient_attempts": 0,
+        "actor_captures": 0,
+        "recipient_captures": 0,
+        "copy_events": 0,
+        "paid_holds": 0,
+        "rent_events": 0,
+        "sensed": 0
+      }
+    },
+    {
+      "event": "r0.actor.rent",
+      "state": {
+        "fuel": 23,
+        "patient": 4,
+        "source": 40,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 2,
+        "guides_e": 1,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 5,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 0,
+        "recipient_attempts": 0,
+        "actor_captures": 0,
+        "recipient_captures": 0,
+        "copy_events": 0,
+        "paid_holds": 0,
+        "rent_events": 1,
+        "sensed": 0
+      }
+    },
+    {
+      "event": "r0.actor.sense",
+      "state": {
+        "fuel": 22,
+        "patient": 4,
+        "source": 40,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 2,
+        "guides_e": 1,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 6,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 0,
+        "recipient_attempts": 0,
+        "actor_captures": 0,
+        "recipient_captures": 0,
+        "copy_events": 0,
+        "paid_holds": 0,
+        "rent_events": 1,
+        "sensed": 1
+      }
+    },
+    {
+      "event": "r0.actor.work",
+      "state": {
+        "fuel": 19,
+        "patient": 4,
+        "source": 40,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 2,
+        "guides_e": 1,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 9,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 0,
+        "recipient_captures": 0,
+        "copy_events": 0,
+        "paid_holds": 0,
+        "rent_events": 1,
+        "sensed": 1
+      }
+    },
+    {
+      "event": "r0.actor.receipt",
+      "state": {
+        "fuel": 29,
+        "patient": 4,
+        "source": 30,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 2,
+        "guides_e": 1,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 9,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "copy_events": 0,
+        "paid_holds": 0,
+        "rent_events": 1,
+        "sensed": 1
+      }
+    },
+    {
+      "event": "r0.actor.route_upkeep",
+      "state": {
+        "fuel": 28,
+        "patient": 4,
+        "source": 30,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 2,
+        "guides_e": 1,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 10,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "copy_events": 0,
+        "paid_holds": 0,
+        "rent_events": 1,
+        "sensed": 1
+      }
+    },
+    {
+      "event": "r0.actor.copy.P",
+      "state": {
+        "fuel": 26,
+        "patient": 4,
+        "source": 30,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 12,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "copy_events": 1,
+        "paid_holds": 0,
+        "rent_events": 1,
+        "sensed": 1
+      }
+    },
+    {
+      "event": "r0.recipient.rent",
+      "state": {
+        "fuel": 25,
+        "patient": 4,
+        "source": 30,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 13,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "copy_events": 1,
+        "paid_holds": 0,
+        "rent_events": 2,
+        "sensed": 1
+      }
+    },
+    {
+      "event": "r0.recipient.sense",
+      "state": {
+        "fuel": 24,
+        "patient": 4,
+        "source": 30,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 14,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "copy_events": 1,
+        "paid_holds": 0,
+        "rent_events": 2,
+        "sensed": 2
+      }
+    },
+    {
+      "event": "r0.recipient.work",
+      "state": {
+        "fuel": 21,
+        "patient": 4,
+        "source": 30,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 17,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "copy_events": 1,
+        "paid_holds": 0,
+        "rent_events": 2,
+        "sensed": 2
+      }
+    },
+    {
+      "event": "r0.recipient.receipt",
+      "state": {
+        "fuel": 21,
+        "patient": 14,
+        "source": 20,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 17,
+        "patient_used": 0,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 0,
+        "rent_events": 2,
+        "sensed": 2
+      }
+    },
+    {
+      "event": "r0.recipient.use",
+      "state": {
+        "fuel": 21,
+        "patient": 13,
+        "source": 20,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          false,
+          false
+        ],
+        "spent": 17,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 0,
+        "rent_events": 2,
+        "sensed": 2
+      }
+    },
+    {
+      "event": "r0.hold0",
+      "state": {
+        "fuel": 20,
+        "patient": 13,
+        "source": 20,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 1,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          false
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 18,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 1,
+        "rent_events": 2,
+        "sensed": 2
+      }
+    },
+    {
+      "event": "r1.receptor",
+      "state": {
+        "fuel": 19,
+        "patient": 13,
+        "source": 20,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 1,
+        "raw_w": 3,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          false
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 19,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 1,
+        "rent_events": 2,
+        "sensed": 2
+      }
+    },
+    {
+      "event": "r1.comparator",
+      "state": {
+        "fuel": 18,
+        "patient": 13,
+        "source": 20,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 3,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          0
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 20,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 1,
+        "rent_events": 2,
+        "sensed": 2
+      }
+    },
+    {
+      "event": "r1.bind.DP",
+      "state": {
+        "fuel": 17,
+        "patient": 13,
+        "source": 20,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 2,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          4
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 21,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 1,
+        "rent_events": 2,
+        "sensed": 2
+      }
+    },
+    {
+      "event": "r1.bind.RP",
+      "state": {
+        "fuel": 16,
+        "patient": 13,
+        "source": 20,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 22,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 1,
+        "rent_events": 2,
+        "sensed": 2
+      }
+    },
+    {
+      "event": "r1.actor.rent",
+      "state": {
+        "fuel": 15,
+        "patient": 13,
+        "source": 20,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 23,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 1,
+        "rent_events": 3,
+        "sensed": 2
+      }
+    },
+    {
+      "event": "r1.actor.sense",
+      "state": {
+        "fuel": 14,
+        "patient": 13,
+        "source": 20,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 24,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 1,
+        "rent_events": 3,
+        "sensed": 3
+      }
+    },
+    {
+      "event": "r1.actor.work",
+      "state": {
+        "fuel": 11,
+        "patient": 13,
+        "source": 20,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 27,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 1,
+        "rent_events": 3,
+        "sensed": 3
+      }
+    },
+    {
+      "event": "r1.actor.receipt",
+      "state": {
+        "fuel": 21,
+        "patient": 13,
+        "source": 10,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 27,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 1,
+        "rent_events": 3,
+        "sensed": 3
+      }
+    },
+    {
+      "event": "r1.actor.route_upkeep",
+      "state": {
+        "fuel": 20,
+        "patient": 13,
+        "source": 10,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 1,
+        "guides_e": 2,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 28,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "copy_events": 1,
+        "paid_holds": 1,
+        "rent_events": 3,
+        "sensed": 3
+      }
+    },
+    {
+      "event": "r1.actor.copy.P",
+      "state": {
+        "fuel": 18,
+        "patient": 13,
+        "source": 10,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 0,
+        "guides_e": 3,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 30,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "copy_events": 2,
+        "paid_holds": 1,
+        "rent_events": 3,
+        "sensed": 3
+      }
+    },
+    {
+      "event": "r1.recipient.rent",
+      "state": {
+        "fuel": 17,
+        "patient": 13,
+        "source": 10,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 0,
+        "guides_e": 3,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 31,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "copy_events": 2,
+        "paid_holds": 1,
+        "rent_events": 4,
+        "sensed": 3
+      }
+    },
+    {
+      "event": "r1.recipient.sense",
+      "state": {
+        "fuel": 16,
+        "patient": 13,
+        "source": 10,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 0,
+        "guides_e": 3,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 32,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "copy_events": 2,
+        "paid_holds": 1,
+        "rent_events": 4,
+        "sensed": 4
+      }
+    },
+    {
+      "event": "r1.recipient.work",
+      "state": {
+        "fuel": 13,
+        "patient": 13,
+        "source": 10,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 0,
+        "guides_e": 3,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 35,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "copy_events": 2,
+        "paid_holds": 1,
+        "rent_events": 4,
+        "sensed": 4
+      }
+    },
+    {
+      "event": "r1.recipient.receipt",
+      "state": {
+        "fuel": 13,
+        "patient": 23,
+        "source": 0,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 0,
+        "guides_e": 3,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 35,
+        "patient_used": 1,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 2,
+        "copy_events": 2,
+        "paid_holds": 1,
+        "rent_events": 4,
+        "sensed": 4
+      }
+    },
+    {
+      "event": "r1.recipient.use",
+      "state": {
+        "fuel": 13,
+        "patient": 22,
+        "source": 0,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 0,
+        "guides_e": 3,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 35,
+        "patient_used": 2,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 2,
+        "copy_events": 2,
+        "paid_holds": 1,
+        "rent_events": 4,
+        "sensed": 4
+      }
+    },
+    {
+      "event": "r1.hold0",
+      "state": {
+        "fuel": 12,
+        "patient": 22,
+        "source": 0,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 0,
+        "guides_e": 3,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          false
+        ],
+        "spent": 36,
+        "patient_used": 2,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 2,
+        "copy_events": 2,
+        "paid_holds": 2,
+        "rent_events": 4,
+        "sensed": 4
+      }
+    },
+    {
+      "event": "r1.hold1",
+      "state": {
+        "fuel": 11,
+        "patient": 22,
+        "source": 0,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 1,
+        "raw_t": 0,
+        "guides_e": 3,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          true
+        ],
+        "spent": 37,
+        "patient_used": 2,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 2,
+        "copy_events": 2,
+        "paid_holds": 3,
+        "rent_events": 4,
+        "sensed": 4
+      }
+    }
+  ],
+  "learning_entry": {
+    "fuel": 11,
+    "patient": 22,
+    "source": 0,
+    "active": true,
+    "q": 4,
+    "coupling": 0,
+    "last": 1,
+    "raw_r": 0,
+    "raw_d": 0,
+    "raw_w": 1,
+    "raw_t": 0,
+    "guides_e": 3,
+    "guides_i": 0,
+    "inert": 0,
+    "r_nodes": [
+      true,
+      true
+    ],
+    "d_nodes": [
+      true,
+      true
+    ],
+    "graph": [
+      1,
+      5
+    ],
+    "retained": [
+      true,
+      true
+    ],
+    "spent": 37,
+    "patient_used": 2,
+    "damage": 0,
+    "waste": 0,
+    "actor_attempts": 2,
+    "recipient_attempts": 2,
+    "actor_captures": 2,
+    "recipient_captures": 2,
+    "copy_events": 2,
+    "paid_holds": 3,
+    "rent_events": 4,
+    "sensed": 4
+  },
+  "learning": [
+    {
+      "event": "A0.rent",
+      "state": {
+        "parent": {
+          "fuel": 10,
+          "patient": 22,
+          "source": 0,
+          "active": true,
+          "q": 4,
+          "coupling": 0,
+          "last": 1,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 1,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 40,
+        "wire": false,
+        "indexed": false,
+        "escrow": 0,
+        "spent": 1,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 0,
+        "actor_attempts": 0,
+        "recipient_attempts": 0,
+        "actor_captures": 0,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "A0.sense",
+      "state": {
+        "parent": {
+          "fuel": 9,
+          "patient": 22,
+          "source": 0,
+          "active": true,
+          "q": 4,
+          "coupling": 0,
+          "last": 1,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 1,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 40,
+        "wire": false,
+        "indexed": false,
+        "escrow": 0,
+        "spent": 2,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 0,
+        "actor_attempts": 0,
+        "recipient_attempts": 0,
+        "actor_captures": 0,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "A0.work.1",
+      "state": {
+        "parent": {
+          "fuel": 6,
+          "patient": 22,
+          "source": 0,
+          "active": true,
+          "q": 4,
+          "coupling": 0,
+          "last": 1,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 1,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 40,
+        "wire": false,
+        "indexed": false,
+        "escrow": 0,
+        "spent": 5,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 0,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "A0.receipt",
+      "state": {
+        "parent": {
+          "fuel": 16,
+          "patient": 22,
+          "source": 0,
+          "active": true,
+          "q": 4,
+          "coupling": 0,
+          "last": 1,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 1,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 30,
+        "wire": false,
+        "indexed": false,
+        "escrow": 0,
+        "spent": 5,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "A0.upkeep",
+      "state": {
+        "parent": {
+          "fuel": 15,
+          "patient": 22,
+          "source": 0,
+          "active": true,
+          "q": 4,
+          "coupling": 0,
+          "last": 1,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 1,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 30,
+        "wire": false,
+        "indexed": false,
+        "escrow": 0,
+        "spent": 6,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "wire.attach",
+      "state": {
+        "parent": {
+          "fuel": 14,
+          "patient": 22,
+          "source": 0,
+          "active": true,
+          "q": 4,
+          "coupling": 0,
+          "last": 1,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 30,
+        "wire": true,
+        "indexed": false,
+        "escrow": 0,
+        "spent": 7,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "memory.recode",
+      "state": {
+        "parent": {
+          "fuel": 12,
+          "patient": 22,
+          "source": 0,
+          "active": true,
+          "q": 3,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 30,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 9,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R1.rent",
+      "state": {
+        "parent": {
+          "fuel": 11,
+          "patient": 22,
+          "source": 0,
+          "active": true,
+          "q": 3,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 30,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 10,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R1.sense",
+      "state": {
+        "parent": {
+          "fuel": 10,
+          "patient": 22,
+          "source": 0,
+          "active": true,
+          "q": 3,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 30,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 11,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R1.escrow",
+      "state": {
+        "parent": {
+          "fuel": 8,
+          "patient": 22,
+          "source": 0,
+          "active": true,
+          "q": 3,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 30,
+        "wire": true,
+        "indexed": true,
+        "escrow": 2,
+        "spent": 11,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 0,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R1.work.1",
+      "state": {
+        "parent": {
+          "fuel": 5,
+          "patient": 22,
+          "source": 0,
+          "active": true,
+          "q": 3,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 30,
+        "wire": true,
+        "indexed": true,
+        "escrow": 2,
+        "spent": 14,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 0,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R1.damage",
+      "state": {
+        "parent": {
+          "fuel": 5,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 3,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 30,
+        "wire": true,
+        "indexed": true,
+        "escrow": 2,
+        "spent": 14,
+        "waste": 0,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R1.spill",
+      "state": {
+        "parent": {
+          "fuel": 5,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 3,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 20,
+        "wire": true,
+        "indexed": true,
+        "escrow": 2,
+        "spent": 14,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R1.observe.real.zero",
+      "state": {
+        "parent": {
+          "fuel": 5,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 3,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 20,
+        "wire": true,
+        "indexed": true,
+        "escrow": 1,
+        "spent": 15,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 1,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R1.write.changed",
+      "state": {
+        "parent": {
+          "fuel": 5,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 20,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 16,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "A1.rent",
+      "state": {
+        "parent": {
+          "fuel": 4,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 20,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 17,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "A1.sense",
+      "state": {
+        "parent": {
+          "fuel": 3,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 20,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 18,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 1,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "A1.work.1",
+      "state": {
+        "parent": {
+          "fuel": 0,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 20,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 21,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 1,
+        "recipient_captures": 0,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "A1.receipt",
+      "state": {
+        "parent": {
+          "fuel": 10,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 10,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 21,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 2,
+        "recipient_captures": 0,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "A1.upkeep",
+      "state": {
+        "parent": {
+          "fuel": 9,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 10,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 22,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 2,
+        "recipient_captures": 0,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R2.rent",
+      "state": {
+        "parent": {
+          "fuel": 8,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 10,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 23,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 2,
+        "recipient_captures": 0,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R2.sense",
+      "state": {
+        "parent": {
+          "fuel": 7,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 10,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 24,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 2,
+        "recipient_captures": 0,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R2.escrow",
+      "state": {
+        "parent": {
+          "fuel": 5,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 10,
+        "wire": true,
+        "indexed": true,
+        "escrow": 2,
+        "spent": 24,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 1,
+        "actor_captures": 2,
+        "recipient_captures": 0,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R2.work.0",
+      "state": {
+        "parent": {
+          "fuel": 2,
+          "patient": 21,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 10,
+        "wire": true,
+        "indexed": true,
+        "escrow": 2,
+        "spent": 27,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 0,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R2.receipt",
+      "state": {
+        "parent": {
+          "fuel": 2,
+          "patient": 31,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 0,
+        "wire": true,
+        "indexed": true,
+        "escrow": 2,
+        "spent": 27,
+        "waste": 10,
+        "patient_used": 0,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R2.patient_use",
+      "state": {
+        "parent": {
+          "fuel": 2,
+          "patient": 30,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 0,
+        "wire": true,
+        "indexed": true,
+        "escrow": 2,
+        "spent": 27,
+        "waste": 10,
+        "patient_used": 1,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "observations": 1,
+        "writes": 1,
+        "real_positive": 0,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R2.observe.real.positive",
+      "state": {
+        "parent": {
+          "fuel": 2,
+          "patient": 30,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 0,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 0,
+        "wire": true,
+        "indexed": true,
+        "escrow": 1,
+        "spent": 28,
+        "waste": 10,
+        "patient_used": 1,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "observations": 2,
+        "writes": 1,
+        "real_positive": 1,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "R2.write.unchanged",
+      "state": {
+        "parent": {
+          "fuel": 2,
+          "patient": 30,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 1,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 0,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 29,
+        "waste": 10,
+        "patient_used": 1,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "observations": 2,
+        "writes": 2,
+        "real_positive": 1,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 0
+      }
+    },
+    {
+      "event": "hold.0",
+      "state": {
+        "parent": {
+          "fuel": 1,
+          "patient": 30,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 1,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 0,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 30,
+        "waste": 10,
+        "patient_used": 1,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "observations": 2,
+        "writes": 2,
+        "real_positive": 1,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 1
+      }
+    },
+    {
+      "event": "hold.1",
+      "state": {
+        "parent": {
+          "fuel": 0,
+          "patient": 30,
+          "source": 0,
+          "active": true,
+          "q": 2,
+          "coupling": 0,
+          "last": 1,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 0,
+        "wire": true,
+        "indexed": true,
+        "escrow": 0,
+        "spent": 31,
+        "waste": 10,
+        "patient_used": 1,
+        "damage": 1,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 1,
+        "observations": 2,
+        "writes": 2,
+        "real_positive": 1,
+        "real_zero": 1,
+        "absent_feedback": 0,
+        "changed_writes": 1,
+        "actor_changes": 0,
+        "holds": 2
+      }
+    }
+  ],
+  "energy_account": {
+    "initial": 195,
+    "preparation": 4,
+    "adapter": 1,
+    "prefix_spent": 68,
+    "prefix_waste": 10,
+    "architecture_spent": 37,
+    "architecture_recipient_operation": 2,
+    "architecture_damage": 0,
+    "architecture_waste": 0,
+    "learning_spent": 31,
+    "learning_waste": 10,
+    "learning_recipient_operation": 1,
+    "learning_damage": 1,
+    "actor_remaining": 0,
+    "recipient_remaining": 30
+  },
+  "configured_boundaries": {
+    "fuel_boundaries": [
+      {
+        "configured_entry_fuel": 4,
+        "first_paid_candidate_change": false,
+        "strict_witness": false,
+        "final_fuel": 0
+      },
+      {
+        "configured_entry_fuel": 5,
+        "first_paid_candidate_change": false,
+        "strict_witness": false,
+        "final_fuel": 0
+      },
+      {
+        "configured_entry_fuel": 6,
+        "first_paid_candidate_change": true,
+        "strict_witness": false,
+        "final_fuel": 0
+      },
+      {
+        "configured_entry_fuel": 7,
+        "first_paid_candidate_change": true,
+        "strict_witness": false,
+        "final_fuel": 0
+      },
+      {
+        "configured_entry_fuel": 8,
+        "first_paid_candidate_change": true,
+        "strict_witness": false,
+        "final_fuel": 0
+      },
+      {
+        "configured_entry_fuel": 9,
+        "first_paid_candidate_change": true,
+        "strict_witness": false,
+        "final_fuel": 0
+      },
+      {
+        "configured_entry_fuel": 10,
+        "first_paid_candidate_change": true,
+        "strict_witness": false,
+        "final_fuel": 0
+      },
+      {
+        "configured_entry_fuel": 11,
+        "first_paid_candidate_change": true,
+        "strict_witness": true,
+        "final_fuel": 0
+      },
+      {
+        "configured_entry_fuel": 12,
+        "first_paid_candidate_change": true,
+        "strict_witness": true,
+        "final_fuel": 1
+      },
+      {
+        "configured_entry_fuel": 13,
+        "first_paid_candidate_change": true,
+        "strict_witness": true,
+        "final_fuel": 2
+      },
+      {
+        "configured_entry_fuel": 14,
+        "first_paid_candidate_change": true,
+        "strict_witness": true,
+        "final_fuel": 3
+      },
+      {
+        "configured_entry_fuel": 15,
+        "first_paid_candidate_change": true,
+        "strict_witness": true,
+        "final_fuel": 4
+      }
+    ],
+    "configured_no_spare_connector": {
+      "entry": {
+        "fuel": 13,
+        "patient": 22,
+        "source": 0,
+        "active": true,
+        "q": 4,
+        "coupling": 0,
+        "last": 1,
+        "raw_r": 0,
+        "raw_d": 0,
+        "raw_w": 0,
+        "raw_t": 0,
+        "guides_e": 3,
+        "guides_i": 0,
+        "inert": 0,
+        "r_nodes": [
+          true,
+          true
+        ],
+        "d_nodes": [
+          true,
+          true
+        ],
+        "graph": [
+          1,
+          5
+        ],
+        "retained": [
+          true,
+          true
+        ],
+        "spent": 37,
+        "patient_used": 2,
+        "damage": 0,
+        "waste": 0,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 2,
+        "copy_events": 2,
+        "paid_holds": 3,
+        "rent_events": 4,
+        "sensed": 4
+      },
+      "final": {
+        "parent": {
+          "fuel": 9,
+          "patient": 20,
+          "source": 0,
+          "active": true,
+          "q": 4,
+          "coupling": 0,
+          "last": 1,
+          "raw_r": 0,
+          "raw_d": 0,
+          "raw_w": 0,
+          "raw_t": 0,
+          "guides_e": 3,
+          "guides_i": 0,
+          "inert": 0,
+          "r_nodes": [
+            true,
+            true
+          ],
+          "d_nodes": [
+            true,
+            true
+          ],
+          "graph": [
+            1,
+            5
+          ],
+          "retained": [
+            true,
+            true
+          ],
+          "spent": 37,
+          "patient_used": 2,
+          "damage": 0,
+          "waste": 0,
+          "actor_attempts": 2,
+          "recipient_attempts": 2,
+          "actor_captures": 2,
+          "recipient_captures": 2,
+          "copy_events": 2,
+          "paid_holds": 3,
+          "rent_events": 4,
+          "sensed": 4
+        },
+        "bank": 0,
+        "wire": false,
+        "indexed": false,
+        "escrow": 0,
+        "spent": 24,
+        "waste": 20,
+        "patient_used": 0,
+        "damage": 2,
+        "actor_attempts": 2,
+        "recipient_attempts": 2,
+        "actor_captures": 2,
+        "recipient_captures": 0,
+        "observations": 0,
+        "writes": 0,
+        "real_positive": 0,
+        "real_zero": 0,
+        "absent_feedback": 2,
+        "changed_writes": 0,
+        "actor_changes": 0,
+        "holds": 2
+      }
+    }
+  },
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/model.py": "729178fc7cc6421cb7049a507bc0b54ecbbfce57022a81b64bfe9a5db8a895a2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/learning/PROTOCOL.md": "b98cb07ae0516090b1a2769869a658d5bd136c802df075ed1a2b86eb8929f1e6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/model.py": "be23f85432ca520f65f9b22574840646ecc6f8d5090a8506837b2df90223ab3c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/PROTOCOL.md": "2941ee2bcc36ed0f89c487923689a85fba655b9d839588e924f538151175dd4d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "producer_check_sha256": "053b84834fa1977b4c4c9f8f610a9bd68f8aa9eab036e4bd9cf2d003a0f25cca"
+}
