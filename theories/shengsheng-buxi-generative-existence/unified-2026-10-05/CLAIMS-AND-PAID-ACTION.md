@@ -16,6 +16,8 @@ The last category includes incomplete information as well as failed or unafforda
 
 For partial evidence, the retained possibilities must include the actual situation. The chosen action requires separately justified permission, an actual enabled trace and a sound link from that trace to the addressed claim's fulfillment. This narrower result does not require the settlement theorem's complete current audit of every candidate edge. It also does not select an ethically correct action from conflicting claims: the reasons and choice remain explicit inputs.
 
+The concrete action theorem uses the existing charged events, a shared initial harm baseline and the supplied apparatus and permission conditions. It proves the certified effect and actual bill without an additional full audit. It does not produce the evidence or promise executable completion from every possible starting state. The separate theorem connecting justified reasons to action retains the parent's audit, calibration and positive-ground requirements.
+
 The ledger is a mathematical verification device. It does not construct storage, pay for a new deliberation algorithm or establish a motive to care. Preserving the admitted ledger is an explicit interface contract. The physical conclusions below follow from the imported event law and reached histories.
 
 ## Protection through time has a stricter composition law

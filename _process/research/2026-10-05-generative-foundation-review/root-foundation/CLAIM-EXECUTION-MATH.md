@@ -23,6 +23,8 @@ They partition K. The second is a lack of certified fulfillment, not an assertio
 
 There is no cardinal aggregation, private-reward maximization or automatic priority rule here. The action selection and ethical grounds remain explicit. This ledger is mathematical verification state, not a newly built recorder. A physical implementation retaining these certificates would have to provide actual storage and access; the theorem does not grant those for free. The inherited event law accounts for actual action expenditures. Constructing or funding a deliberation algorithm is outside this result.
 
+The concrete `paid_partial_evidence_action` theorem instantiates this contract on `ReasonProtection.Step`, using exact conversions between the generic and inherited trace types. Its possibilities share the claim's initial harm baseline and satisfy the apparatus conditions; permission is warranted throughout that class, while enabled execution is required in the actual state. It derives the addressed no-new-harm effects and exact action bill without another full audit. It does not construct the evidence class or guarantee completion from every alternative state. The separate grounded-reason wrapper still exposes the parent's complete audit and positive-root premises.
+
 ## Why certificate accumulation needs a persistence premise
 
 Suppose an earlier trace certifies D₁ and a later trace certifies D₂. The union is sound at the later assessment only if each retained earlier certificate still denotes a fulfilled claim there. For a one-time delivered service with an immutable episode identity, that may be a warranted persistence condition. It does not follow from the existence of a previous certificate, a copied record or the fact that some later action occurred.
