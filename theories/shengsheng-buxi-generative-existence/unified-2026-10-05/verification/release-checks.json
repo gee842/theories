@@ -3,31 +3,47 @@
   "scope": "Local links, balanced math delimiters, editorial markers, result/source labels, and optional source provenance; no rendering or theorem-prover validation.",
   "documents": {
     "CLAIMS.md": {
-      "bytes": 8200,
-      "sha256": "64b2f7b40939f22d92449ef83104a740fc8b69957b18302b5ad8351e2543e21a"
+      "bytes": 9936,
+      "sha256": "f45040646c24badd14ba5b1c10b50aa6cd6a59dfd0b5b9f1e5e6681aca8ad472"
+    },
+    "ETHICAL-FOUNDATION.md": {
+      "bytes": 18790,
+      "sha256": "fdcd0ed4b11ba28fe4c1ec9160fbfef7bcf232ebf8e53897c640a6b59b40f155"
     },
     "FORMAL-CORE.md": {
       "bytes": 39100,
       "sha256": "162e0ebf4017c175958c70e016ae40290247e70f61349e13ff4ff72d5540b694"
     },
+    "FORMATION-MATH.md": {
+      "bytes": 24421,
+      "sha256": "c65410ed0daf160c49c477efc16c7ed7bf0d1adf41983b77a9f852751ecf7ecf"
+    },
+    "FORMATION-PRIOR-ART.md": {
+      "bytes": 17695,
+      "sha256": "3f70a1662bdf36684b10582bdcded71a38aed6a630c29480083fecdf0cbdeb8c"
+    },
+    "FORMATION.md": {
+      "bytes": 15873,
+      "sha256": "c9d53de40de77bfd3164a716b576400bfc9cd7d3a7e217d4e6f2302d29cc93cc"
+    },
     "SOURCE-MAP.md": {
-      "bytes": 30995,
-      "sha256": "3544571c694187c87b474937a8b11b5680e54fa8bc7a66de78d5e3ceb5739c3f"
+      "bytes": 33403,
+      "sha256": "1bab098e175000e05f6335dc9421ea1d732551cf7b88e9bd281deaabbee6cac4"
     },
     "START-HERE.md": {
-      "bytes": 5409,
-      "sha256": "9b3aea773ee8ca10f07a40f5710256cdf4b497c0cf141f911a163d83fbd2e27a"
+      "bytes": 6333,
+      "sha256": "3b9ba022f3fd9604f3974e53ccde7e41f6b962c83fd9d6110ff71b05e6da0959"
     },
     "SYNTHESIS-RECORD.md": {
-      "bytes": 13562,
-      "sha256": "41f23137a8461febb77288672ca2f7173d708dbf277d550702080d84dc46a5dd"
+      "bytes": 16060,
+      "sha256": "68071e9a818df64df91a35be4e22a8a191b4956be796a595fb847270954b36f9"
     },
     "THEORY.md": {
-      "bytes": 39482,
-      "sha256": "89e7821acfc10dea2407dcb02ee821d7d9467f81f57db18c93fb7fab113ffba6"
+      "bytes": 42563,
+      "sha256": "d5955cb50b3c7f2c62ae874fcb202ecc2fd04f73c8dfd86b2f9eed15a1089d03"
     }
   },
-  "local_links_checked": 165,
+  "local_links_checked": 204,
   "external_local_links_skipped": 0,
   "formal_result_labels": [
     "F1",
@@ -46,7 +62,7 @@
     "F2a",
     "F2b"
   ],
-  "source_families": 16,
+  "source_families": 18,
   "snapshots": [
     {
       "manifest": "sources/20-codex-theory-sessions-2026-10-05/SNAPSHOT-MANIFEST.json",
@@ -63,5 +79,6 @@
   ],
   "historical_canonical_text_preserved": true,
   "formal_review_version_matches": true,
+  "formation_review_version_matches": true,
   "errors": []
 }

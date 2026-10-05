@@ -1,0 +1,8522 @@
+[
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 1,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 2,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 3,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 0,
+    "c": 4,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 1,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 2,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 3,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 1,
+    "c": 4,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 1,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 2,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 3,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 2,
+    "c": 4,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 1,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 2,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 3,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ]
+    ],
+    "strict_prediction": "harm"
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 3,
+    "c": 4,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 1,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 2,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": "safeguard"
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 3,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 1,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 1,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 1,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 1,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 1,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 1,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "3"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 2,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 2,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 2,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 2,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 2,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 2,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "2"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 3,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 3,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 3,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 3,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": "block"
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 3,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 3,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "1"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 4,
+    "o": 1,
+    "outcomes": [
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 4,
+    "o": 2,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        true,
+        2,
+        "4"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 4,
+    "o": 3,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        3,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 4,
+    "o": 4,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        4,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 4,
+    "o": 5,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        5,
+        "0"
+      ],
+      [
+        "safeguard",
+        true,
+        5,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  },
+  {
+    "r": 4,
+    "c": 4,
+    "chi": 4,
+    "o": 6,
+    "outcomes": [
+      [
+        "block",
+        true,
+        2,
+        "0"
+      ],
+      [
+        "harm",
+        false,
+        6,
+        "0"
+      ]
+    ],
+    "strict_prediction": null
+  }
+]

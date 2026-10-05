@@ -71,7 +71,19 @@ The saved [integration result](verification/results.json) and [mechanism result]
 
 Earlier large experiment counts are retained in [SOURCE-MAP](SOURCE-MAP.md) with their original units and sampling structure. They were not all rerun during this synthesis. Repeated source copies and multiple AI summaries of one experiment are not additional independent confirmation.
 
-## A concrete next test
+## Completed first development
+
+At Ren's request to pursue the roadmap, Development 1 added a derived strategic formation mechanism and a positive ethical argument. The [formation report](FORMATION.md) and [experiment](../../../experiments/constructed-correction/README.md) provide the current results. The protocol was committed as `1929eb5` before enumeration. The earlier broad proposal below remains prospective where it requires unknown hazards, new-question discovery, and endogenous public authority.
+
+The principal new result separates affordable first operation from an operating reserve that removes a specified strategic financing attack. An operator can rationally pay more for present interference when doing so makes future correction unaffordable. The strict two-period theorem derives three reserve regions; it does not assert a universal effect of patience or institutions. Dormant early construction can tie later construction, so the formal result concerns deferred activation.
+
+The study ran 1,152 parameter cases, two operator environments, and four participant policies, giving 9,216 grid policy runs. Another 2,304 runs reversed operator tie preference; 97 strategic environments changed a recorded outcome. The source report discloses current-payoff allocation in heuristic baselines and the fact that changing participant policies also changes the operator's response. These comparisons do not establish an algorithmic advantage for the proposed wisdom discipline.
+
+An independent game reconstruction matched 1,269 dynamic cases and 128 static equilibrium correspondences. Separate analytical checks passed 1,728 stage games, 30,375 prefix cases, 243 members of the two-period theorem class, and 1,458 reserve variations. The final proof review and source records are retained with the development. The scientific figure was rendered and visually inspected.
+
+The [ethical foundation](ETHICAL-FOUNDATION.md) develops explicit premises and reasons for standing beyond usefulness and effective answerability. A separate countermodel shows why stable productive renewal need not select costly concern when affected harm changes neither selector payoffs nor constraints. The two arguments connect ethical reasons with causal requirements while preserving their different warrants.
+
+## Original prospective integrated inquiry study
 
 The next study should test the **joint causal account**, while allowing a simpler model to win. This is a proposed design, not a completed experiment or an approved human-subject study.
 
@@ -97,6 +109,6 @@ Measure participant losses, service delivered and denied, useful discoveries, fa
 
 ## Remaining explanatory obligations
 
-The theory still lacks a demonstrated general law selecting its actual physical mechanisms, an explanation of all conscious experience or selfhood, a universal source of unlimited novelty, a complete algorithm for arbitrary open-ended futures, empirical superiority across domains, and a derivation of ethical standing from physical persistence.
+The current research still needs stronger accounts of mechanism formation and selection, new-question discovery, and empirical explanatory advantage. Conscious experience, selfhood, and unlimited novelty are broader ambitions not established by this work. A complete terminating exact evaluator for arbitrary computable futures is excluded by F12; deriving ethical standing from physical persistence is not a promise of the present foundation. The positive ethical development states and argues for its own premises.
 
 The most specific open causal frontier is **how effective responsiveness forms, renews its own support and authority, survives rule and carrier replacement, and extends to affected centers whose protection is not already necessary for incumbent success**. The newest formation and correction results make that frontier concrete. They do not complete it by assertion.

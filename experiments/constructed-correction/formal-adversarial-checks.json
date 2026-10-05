@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "rational_dynamic_cases": 2100,
+  "parameter_families": 150,
+  "seed": 130005,
+  "cash_locations": [
+    "ell",
+    "between ell and W_aff",
+    "W_aff",
+    "W_aff+m/7",
+    "W_aff+6m/7",
+    "W_res",
+    "W_res+m/3"
+  ],
+  "note": "Supplemental finite rational checks for A15/A16, using independent reference; proof reviewed separately."
+}

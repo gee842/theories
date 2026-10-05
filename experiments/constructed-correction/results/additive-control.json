@@ -1,0 +1,22 @@
+[
+  {
+    "additive_income": 0,
+    "margin_harm": 2,
+    "margin_safe": 5
+  },
+  {
+    "additive_income": 1,
+    "margin_harm": 2,
+    "margin_safe": 5
+  },
+  {
+    "additive_income": 4,
+    "margin_harm": 2,
+    "margin_safe": 5
+  },
+  {
+    "additive_income": 10,
+    "margin_harm": 2,
+    "margin_safe": 5
+  }
+]

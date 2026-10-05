@@ -1,6 +1,6 @@
 # Claim register for the unified theory
 
-5 October 2026. “Proved” below always means under the displayed assumptions in [FORMAL-CORE](FORMAL-CORE.md). Finite checks and numerical illustrations are additional verification, not a replacement for proofs. Reviews were performed by collaborating AI agents, not independent human peer review.
+5 October 2026. “Proved” below always means under the displayed assumptions in [FORMAL-CORE](FORMAL-CORE.md) or the new [formation proofs](FORMATION-MATH.md). Finite checks and numerical illustrations are additional verification, not a replacement for proofs. Reviews were performed by collaborating AI agents, not independent human peer review.
 
 | Claim | Status | Conditions and limit | Location |
 |---|---|---|---|
@@ -38,6 +38,13 @@
 | Affected beings matter independently of usefulness to aggregate production | Explicit ethical commitment | Not entailed by persistence, conservation, or control | Theory 10 |
 | Reality generally tends toward increasingly inclusive and responsive regeneration | Open causal hypothesis | Requires a formation/selection mechanism and a justified environmental scope | Theory 10–12 |
 | Unceasing cosmic novelty follows from a representation theorem or a nonfixed cycle | Not established | Repetition and unlimited distinct novelty are different properties | Theory 9; F12 |
+| A constructed rival alternative can induce protective operator behavior | Conditional strategic characterization | Public effective actions, actual input control, affordable moves, strict c<min(r,chi); fresh operator or no relevant continuation effect | Formation A1–A5 |
+| Profitable correction can remain inaccessible through prefunding | Exact prefix and bootstrap result | Specified receipts, initial reserve, bills, no borrowing; dormant construction does not create operating cash | Formation A6–A11 |
+| A persistent operator can pay more now to remove later corrective capacity | Exact two-period counterexample and class | Declared complete-information game; does not imply every long-lived operator is worse | Formation A14–A15 |
+| Affordable and strategically resilient first operation have different thresholds | Exact three-region theorem | Full A15 assumptions; K+m+ell versus K+2m+ell; resilience only to the specified financing attack | Formation A16 |
+| Handoff can lose effective protection despite preserved equipment | Exact model cases and prescribed-path finance theorem | Actual reserve, transfer/rebuild options, operative incentives; no derivation of voluntary bequest | Formation A12–A13; experiment |
+| Stable renewal can leave patient harm irrelevant to selection | Explicit countermodel | Harm has no reward, constraint, or transition consequences for selector; direct concern absent | Formation report |
+| Standing beyond usefulness has a positive ethical defense | Conditional philosophical argument | Explicit standing, relevant consistency, answerability, and implementation premises; does not derive ethics from survival | Ethical foundation |
 | This is the unique or best possible universal theory | Not established | Conditional optima are proved; scientific superiority and philosophical uniqueness need other justification | Theory 11 |
 
 ## How the theory can be challenged

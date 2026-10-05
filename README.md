@@ -4,7 +4,7 @@ Everything Ren has thought, drafted and theorised from 2021 to September 2026, g
 
 ## Start here
 
-**Latest integrated foundation, 5 October 2026:** [The unified foundation in brief](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md) connects the completed theory sessions on relational generativity, renewal, wisdom, selection, and correction. The [full theory](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md) and [formal core](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md) separate proved conditional results, synthetic evidence, ethical commitments, and open universal claims. Original work is preserved in pre-synthesis checkpoints.
+**Latest integrated foundation, 5 October 2026:** [The unified foundation in brief](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md) connects the completed theory sessions on relational generativity, renewal, wisdom, selection, and correction. The [full theory](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md) and [formal core](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md) separate proved conditional results, synthetic evidence, ethical commitments, and open universal claims. Original work is preserved in pre-synthesis checkpoints. The first completed development adds [formation and strategic vulnerability of correction](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md) and a [positive ethical foundation](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md).
 
 | File | What it gives you |
 |---|---|

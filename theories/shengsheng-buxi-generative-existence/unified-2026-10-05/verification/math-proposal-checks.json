@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "stage_games": 1728,
+  "prefix_finance_cases": 30375,
+  "persistent_incumbent_general_theorem_cases": 243,
+  "three_region_reserve_cases": 1458,
+  "witnesses": [
+    {
+      "name": "fresh_incumbents",
+      "result": [
+        "7",
+        "6",
+        [
+          {
+            "episode": 0,
+            "setup": "build",
+            "active": true,
+            "operator": "S",
+            "joins": true,
+            "before": "4",
+            "after": "5"
+          },
+          {
+            "episode": 1,
+            "setup": "keep",
+            "active": true,
+            "operator": "S",
+            "joins": true,
+            "before": "5",
+            "after": "7"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "persistent_incumbent",
+      "result": [
+        "5",
+        "7",
+        [
+          {
+            "episode": 0,
+            "setup": "keep",
+            "active": false,
+            "operator": "H",
+            "joins": true,
+            "before": "4",
+            "after": "4"
+          },
+          {
+            "episode": 1,
+            "setup": "build",
+            "active": true,
+            "operator": "S",
+            "joins": true,
+            "before": "4",
+            "after": "5"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "persistent_incumbent_extra_reserve",
+      "result": [
+        "8",
+        "6",
+        [
+          {
+            "episode": 0,
+            "setup": "build",
+            "active": true,
+            "operator": "S",
+            "joins": true,
+            "before": "5",
+            "after": "6"
+          },
+          {
+            "episode": 1,
+            "setup": "keep",
+            "active": true,
+            "operator": "S",
+            "joins": true,
+            "before": "6",
+            "after": "8"
+          }
+        ]
+      ]
+    }
+  ],
+  "scope": "Finite exact-arithmetic checks, not empirical evidence or general theorem automation."
+}

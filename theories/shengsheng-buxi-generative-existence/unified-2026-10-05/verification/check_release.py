@@ -32,7 +32,7 @@ def main():
     link_count = 0
     skipped = 0
     documents = {}
-    for path in sorted(package.glob("*.md")):
+    for path in sorted(package.rglob("*.md")):
         body = path.read_text()
         # The authored package uses simple inline links; no reference-style links.
         for raw in re.findall(r"\[[^\]\n]*\]\(([^\)\n]+)\)", body):
@@ -52,7 +52,7 @@ def main():
                 errors.append(f"Unbalanced math delimiters in {path.name}: {opening}")
         if re.search(r"\b(?:TODO|TBD|FIXME)\b", body):
             errors.append(f"Unresolved editing marker in {path.name}")
-        documents[path.name] = {"bytes": path.stat().st_size, "sha256": sha256(path)}
+        documents[path.relative_to(package).as_posix()] = {"bytes": path.stat().st_size, "sha256": sha256(path)}
 
     formal = (package / "FORMAL-CORE.md").read_text()
     source_map = (package / "SOURCE-MAP.md").read_text()
@@ -60,13 +60,17 @@ def main():
     for label in expected:
         if not re.search(rf"^##?#+ {label} ", formal, re.M):
             errors.append(f"Missing formal result {label}")
-    for number in range(1, 17):
+    families = [int(n) for n in re.findall(r"^## S(\d+) ", source_map, re.M)]
+    if families != list(range(1, len(families) + 1)):
+        errors.append("Source family labels are not consecutive")
+    for number in range(1, len(families) + 1):
         if not re.search(rf"^## S{number} ", source_map, re.M):
             errors.append(f"Missing source family S{number}")
 
     snapshots = []
     historical_text_preserved = None
     formal_review_matches = None
+    formation_review_matches = None
     if args.repository:
         repo = args.repository.resolve()
         source = repo / "sources/20-codex-theory-sessions-2026-10-05"
@@ -100,6 +104,13 @@ def main():
         formal_review_matches = sha256(package / "FORMAL-CORE.md") == reviewed_hash
         if not formal_review_matches:
             errors.append("Formal appendix differs from the version accepted in final review")
+        formation_path = package / "FORMATION-MATH.md"
+        if formation_path.exists():
+            review = (repo / "_process/research/2026-10-05-unified-theory/development-01/formal-final-review.md").read_text()
+            reviewed_hash = re.search(r"Final reviewed SHA-256: `([a-f0-9]{64})`", review).group(1)
+            formation_review_matches = sha256(formation_path) == reviewed_hash
+            if not formation_review_matches:
+                errors.append("Formation appendix differs from its accepted review version")
 
     result = {
         "status": "passed" if not errors else "failed",
@@ -108,10 +119,11 @@ def main():
         "local_links_checked": link_count,
         "external_local_links_skipped": skipped,
         "formal_result_labels": expected,
-        "source_families": 16,
+        "source_families": len(families),
         "snapshots": snapshots,
         "historical_canonical_text_preserved": historical_text_preserved,
         "formal_review_version_matches": formal_review_matches,
+        "formation_review_version_matches": formation_review_matches,
         "errors": errors,
     }
     output = package / "verification/release-checks.json"

@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -33,7 +34,8 @@ def main():
     output.mkdir(parents=True, exist_ok=True)
     substitutions = 0
     source_documents = {}
-    for path in sorted(source.glob("*.md")):
+    experiment = repo / "experiments/constructed-correction"
+    def export_markdown(path, destination):
         def replace(match):
             nonlocal substitutions
             raw = match.group(2).strip().strip("<>")
@@ -41,13 +43,23 @@ def main():
                 return match.group(0)
             target, sep, anchor = raw.partition("#")
             resolved = (path.parent / unquote(target)).resolve()
-            if resolved.is_relative_to(source):
-                return match.group(0)
             assert resolved.exists(), resolved
+            if resolved.is_relative_to(source):
+                mapped = output / resolved.relative_to(source)
+                new_target = os.path.relpath(mapped, destination.parent)
+            elif resolved.is_relative_to(experiment):
+                mapped = output / "formation-study" / resolved.relative_to(experiment)
+                new_target = os.path.relpath(mapped, destination.parent)
+            else:
+                new_target = str(resolved)
             substitutions += 1
-            return f"[{match.group(1)}](<{resolved}{sep}{anchor}>)"
+            if new_target == raw:
+                return match.group(0)
+            return f"[{match.group(1)}](<{new_target}{sep}{anchor}>)"
         exported = re.sub(r"\[([^\]\n]*)\]\(([^\)\n]+)\)", replace, path.read_text())
-        (output / path.name).write_text(exported)
+        destination.write_text(exported)
+    for path in sorted(source.glob("*.md")):
+        export_markdown(path, output / path.name)
         source_documents[path.name] = digest(path)
     shutil.copytree(source / "verification", output / "verification", dirs_exist_ok=True)
     shutil.copy2(source / "verification/release-checks.json", output / "verification/canonical-release-checks.json")
@@ -55,25 +67,36 @@ def main():
     reviews.mkdir(exist_ok=True)
     for name in ["formal-review-final.md", "editorial-review-final.md", "main-review-direction.md"]:
         shutil.copy2(Path(__file__).parent / name, reviews / name)
+    if experiment.exists():
+        shutil.copytree(experiment, output / "formation-study", dirs_exist_ok=True,
+                        ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
+        for path in experiment.rglob("*.md"):
+            export_markdown(path, output / "formation-study" / path.relative_to(experiment))
+        development_reviews = reviews / "development-01"
+        development_reviews.mkdir(exist_ok=True)
+        for name in ["formal-final-review.md", "integration-final-review.md", "independent-game-review.md"]:
+            path = Path(__file__).parent / "development-01" / name
+            export_markdown(path, development_reviews / name)
     (output / "PACKAGE.md").write_text(f"""# Unified theory reading bundle
 
 Start with [the short guide](START-HERE.md), then read [the full theory](THEORY.md) and [formal core](FORMAL-CORE.md). The [claim register](CLAIMS.md) and [source map](SOURCE-MAP.md) identify what each conclusion rests on. The [synthesis record](SYNTHESIS-RECORD.md) explains integration, verification, and the remaining research frontier.
 
-The theory and proof appendix are self-contained. Source citations outside this package point to the preserved repository on this computer. The archive does not duplicate the 338 MB source snapshot. These citation destinations may need adjustment if the reading bundle is moved to another computer; the manifest records the canonical source location and commit.
+The theory and proof appendices are self-contained. This edition includes [Development 1](FORMATION.md), its [new proofs](FORMATION-MATH.md), the [ethical foundation](ETHICAL-FOUNDATION.md), and the full [formation study](formation-study/README.md) with code, data, and independent checks. Source citations outside this package point to the preserved repository on this computer. The archive does not duplicate the 338 MB earlier source snapshot. These citation destinations may need adjustment if the reading bundle is moved to another computer; the manifest records the canonical source location and commit.
 
-The [formal review](reviews/formal-review-final.md), [editorial review](reviews/editorial-review-final.md), and [direction review](reviews/main-review-direction.md) are collaborating AI agents' reviews. The precision edits requested in the editorial review were applied before release. Review is distinct from external peer review and empirical validation.
+The [original formal review](reviews/formal-review-final.md), [original editorial review](reviews/editorial-review-final.md), and [original direction review](reviews/main-review-direction.md) cover the first synthesis. The [new proof review](reviews/development-01/formal-final-review.md), [integration review](reviews/development-01/integration-final-review.md), and [game audit](reviews/development-01/independent-game-review.md) cover Development 1. Requested precision edits were applied before release. These are collaborating AI agents' reviews, distinct from external peer review and empirical validation.
 
 From the unpacked package directory, the two mathematical check programs run with Python's standard library:
 
 ```text
 python3 verification/check_integration.py
 python3 verification/check_mechanisms.py
+python3 verification/check_formation_math.py
 python3 verification/check_release.py --local-only
 ```
 
 The last command checks the exported documents and internal links without requiring the source repository. It replaces the local release-check result; the original canonical record is separately retained in [canonical-release-checks.json](verification/canonical-release-checks.json). [DELIVERY.json](DELIVERY.json) records package file hashes and provenance.
 
-The pre-synthesis checkpoints are `003cd2a` and `38f8022`. The completed integration is committed as `{commit}`. The repository was clean when this bundle was exported.
+The pre-synthesis checkpoints are `003cd2a` and `38f8022`; the original completed integration is `dd8ad7c`. The Development 1 protocol was committed as `1929eb5` before enumeration. This edition is committed as `{commit}`. The repository was clean when this bundle was exported.
 """)
     manifest_path = output / "DELIVERY.json"
     manifest_path.write_text("{}\n")
@@ -88,9 +111,9 @@ The pre-synthesis checkpoints are `003cd2a` and `38f8022`. The completed integra
         "integration_commit": commit,
         "source_repository_clean": True,
         "source_document_sha256": source_documents,
-        "external_local_citations_made_absolute": substitutions,
+        "local_citations_resolved": substitutions,
         "files": [{"path": p.relative_to(output).as_posix(), "bytes": p.stat().st_size, "sha256": digest(p)} for p in files],
-        "scope": "The synthesis, proofs, internal reviews, independent check programs and records. Source corpus is preserved in the separate committed repository.",
+        "scope": "The updated synthesis, proofs, ethical development, exact formation study and data, internal reviews, independent check programs and records. Earlier source corpus is preserved in the separate committed repository.",
     }
     manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
     archive = output.with_suffix(".zip")

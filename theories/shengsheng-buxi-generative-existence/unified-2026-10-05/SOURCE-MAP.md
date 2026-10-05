@@ -147,3 +147,15 @@ The coordinator consulted the following primary sources; this map additionally c
 | Perdomo and colleagues, [Performative Prediction](https://proceedings.mlr.press/v119/perdomo20a.html) | Predictions changing the distribution on which future prediction is evaluated |
 
 Other external papers and classical sources cited in the inherited reports retain the access and scope descriptions of those reports unless the synthesis record explicitly documents a fresh check. Published evidence for a particular chemical, biological, psychological, or institutional mechanism does not validate every analogy drawn from it.
+
+## S17 Constructed alternatives and strategic correction
+
+The [development source record](../../../sources/21-unified-theory-development-2026-10-05/README.md) preserves Ren's request and the development's provenance. The [frozen protocol](../../../experiments/constructed-correction/PROTOCOL.md), [experiment report](../../../experiments/constructed-correction/README.md), and [results](../../../experiments/constructed-correction/results/summary.json) cover 1,152 exact parameter cases under two operator environments. They join constructed rival alternatives, current strategic response, dated capital, and succession. The [formation report](FORMATION.md) and [proofs](FORMATION-MATH.md) separate the one-period c<min(r,chi) condition from the two-period resource attack and reserve thresholds. An independently reconstructed game and a separate analytical checker are saved with the experiment.
+
+This extends the proposed backup study in S13 and the supplied correction gate in S4. It does not explain the origin of its physical technologies, input control, public observability, costly interference, or moral concern. Formation is selected within a supplied repertoire. The [prior-art review](FORMATION-PRIOR-ART.md) identifies established relational incentives, dynamic investment and expropriation, institution formation, and harmful institutional persistence. No mathematical priority or empirical explanatory advantage is claimed.
+
+## S18 Standing and effective answerability
+
+The [ethical foundation](ETHICAL-FOUNDATION.md) extends the earlier conscience and universal-morality source with an AI-assisted positive argument. It states subject-relative standing, relevant consistency, answerability, and feasible implementation as explicit premises and develops their limited consequences. Affected beings can have standing without productive usefulness or bargaining power. Identity consistency alone does not establish standing; an evaluator indifferent to everyone also satisfies a renaming symmetry.
+
+The new argument distinguishes ethical judgment, epistemic discernment, and practical competence. Consent, conflicts, representation, and revision retain their separate warrants. It does not settle all moral patienthood, consciousness, population ethics, or legitimate partiality. The source record identifies authorship; these formulations are not Ren's verbatim words or classical quotations.

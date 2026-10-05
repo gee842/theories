@@ -31,6 +31,8 @@ The diagram is a proposed causal structure. Each arrow needs a mechanism in an a
 
 **Correction needs renewal too.** The same model derives a repeating correction cycle. Funding the corrector's upkeep is insufficient to fund repeated intervention. It also needs money available before each bill and enough participant reserve to survive the delay.
 
+**Effective protection can arise from actual choices.** A completed new model lets a participant build an alternative and lets the operator choose whether to protect or obstruct them. It derives protection from credible refusal under specified physical and strategic conditions. A persistent operator can nevertheless block once to remove the participant's future operating money. The exact two-period result separates the reserve needed to begin from the reserve needed to remove that attack. [Read the new development](FORMATION.md).
+
 **Understanding depends on consequential distinctions.** An aggregate can hide exactly the difference that determines the necessary response. More reasoning over unchanged information cannot always fix this. A new question, measurement, relation, tool, or institutional route may be needed. Complete knowledge is unnecessary when all remaining possibilities share a good action.
 
 **What is inherited must remain usable.** The experiments distinguish retention, access, activation, construction, and onward transmission. More inherited material helped some new tasks and obstructed others under fixed search budgets. No universal rule to maximize retention or openness followed.
@@ -43,11 +45,14 @@ The proposed root of wisdom is the capacity to recognize and revise consequentia
 
 The ethical commitment is that affected beings matter even when the productive whole could continue without protecting them. Under that commitment, **善 supports their worthwhile possibilities and their effective ability to understand and change the conditions shaping those possibilities**. The causal mathematics explains how such protection can work or fail. It does not derive moral standing from survival.
 
+The [positive ethical argument](ETHICAL-FOUNDATION.md) now develops standing beyond usefulness, relevant consistency, and effective answerability. It distinguishes whose claims matter from who has the power to make others respond.
+
 The stronger hypothesis—that reality generally develops increasingly shared and responsive regeneration—remains open. We now have specific formation mechanisms and correction conditions. We still need an explanation of why responsiveness would systematically extend to centers whose protection is not already rewarded.
 
 ## How to read the completed synthesis
 
 - [Unified theory](THEORY.md): the full argument, the connections among sessions, and the precise frontier.
+- [Formation and strategic correction](FORMATION.md), with [new proofs](FORMATION-MATH.md): the first completed development beyond the original synthesis.
 - [Formal core](FORMAL-CORE.md): definitions, proofs, constructions, counterexamples, and scope conditions.
 - [Claim register](CLAIMS.md): what is proved, observed in simulations, proposed, or unresolved.
 - [Source map](SOURCE-MAP.md): the contribution and evidence status of each session family.

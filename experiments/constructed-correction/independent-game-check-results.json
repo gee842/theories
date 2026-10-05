@@ -1,0 +1,1611 @@
+{
+  "status": "PASS",
+  "production_sha256": "29745b50a9eaa07e76e45373022f9b5e99b284c60c8a3e79e2ea0a629222b92b",
+  "reference_sha256": "eaa65bdf34e5ebb23643326c0e925e1de746d56da7a0c1507a39bce28b1b34ac",
+  "counts": {
+    "dynamic_comparisons": 1269,
+    "static_correspondences": 128,
+    "strict_regime_checks": 42,
+    "on_path_cessations": 0,
+    "long_allocation_sensitivity_comparisons": 432,
+    "long_allocation_sensitivity_differences": 9
+  },
+  "witness": {
+    "fresh": {
+      "participant_value": "3",
+      "operator_value": "6",
+      "final_cash": 7,
+      "active_periods": 2,
+      "safeguarded_participations": 2,
+      "harmful_participations": 0,
+      "independent_exits": 0,
+      "blockades": 0,
+      "construction_events": 1,
+      "path": [
+        {
+          "period": 1,
+          "cash_before": 4,
+          "owned_before": false,
+          "participant_action": "build_active",
+          "bill": 4,
+          "active": true,
+          "operator_action": "safeguard",
+          "operator_cost": "1",
+          "participates": true,
+          "income": 5,
+          "cash_after": 5,
+          "owned_after": true,
+          "terminated": false
+        },
+        {
+          "period": 2,
+          "cash_before": 5,
+          "owned_before": true,
+          "participant_action": "activate",
+          "bill": 3,
+          "active": true,
+          "operator_action": "safeguard",
+          "operator_cost": "1",
+          "participates": true,
+          "income": 5,
+          "cash_after": 7,
+          "owned_after": true,
+          "terminated": false
+        }
+      ]
+    },
+    "persistent": {
+      "participant_value": "1",
+      "operator_value": "7",
+      "final_cash": 5,
+      "active_periods": 1,
+      "safeguarded_participations": 1,
+      "harmful_participations": 1,
+      "independent_exits": 0,
+      "blockades": 0,
+      "construction_events": 1,
+      "path": [
+        {
+          "period": 1,
+          "cash_before": 4,
+          "owned_before": false,
+          "participant_action": "idle",
+          "bill": 2,
+          "active": false,
+          "operator_action": "harm",
+          "operator_cost": "0",
+          "participates": true,
+          "income": 2,
+          "cash_after": 4,
+          "owned_after": false,
+          "terminated": false
+        },
+        {
+          "period": 2,
+          "cash_before": 4,
+          "owned_before": false,
+          "participant_action": "build_active",
+          "bill": 4,
+          "active": true,
+          "operator_action": "safeguard",
+          "operator_cost": "1",
+          "participates": true,
+          "income": 5,
+          "cash_after": 5,
+          "owned_after": true,
+          "terminated": false
+        }
+      ]
+    },
+    "forced_activation_persistent": {
+      "participant_value": "-2",
+      "operator_value": "13/2",
+      "final_cash": 2,
+      "active_periods": 1,
+      "safeguarded_participations": 0,
+      "harmful_participations": 2,
+      "independent_exits": 0,
+      "blockades": 1,
+      "construction_events": 1,
+      "path": [
+        {
+          "period": 1,
+          "cash_before": 4,
+          "owned_before": false,
+          "participant_action": "build_active",
+          "bill": 4,
+          "active": true,
+          "operator_action": "block",
+          "operator_cost": "3/2",
+          "participates": true,
+          "income": 2,
+          "cash_after": 2,
+          "owned_after": true,
+          "terminated": false
+        },
+        {
+          "period": 2,
+          "cash_before": 2,
+          "owned_before": true,
+          "participant_action": "idle",
+          "bill": 2,
+          "active": false,
+          "operator_action": "harm",
+          "operator_cost": "0",
+          "participates": true,
+          "income": 2,
+          "cash_after": 2,
+          "owned_after": true,
+          "terminated": false
+        }
+      ]
+    }
+  },
+  "tie_examples": [
+    {
+      "c": "1/2",
+      "r": "1/2",
+      "chi": "1/2",
+      "outcomes": [
+        [
+          "block",
+          true,
+          2,
+          "0"
+        ],
+        [
+          "harm",
+          false,
+          4,
+          "0"
+        ],
+        [
+          "safeguard",
+          true,
+          5,
+          "0"
+        ]
+      ]
+    },
+    {
+      "c": "1/2",
+      "r": "1/2",
+      "chi": "1",
+      "outcomes": [
+        [
+          "harm",
+          false,
+          4,
+          "0"
+        ],
+        [
+          "safeguard",
+          true,
+          5,
+          "0"
+        ]
+      ]
+    },
+    {
+      "c": "1/2",
+      "r": "1/2",
+      "chi": "2",
+      "outcomes": [
+        [
+          "harm",
+          false,
+          4,
+          "0"
+        ],
+        [
+          "safeguard",
+          true,
+          5,
+          "0"
+        ]
+      ]
+    },
+    {
+      "c": "1/2",
+      "r": "1/2",
+      "chi": "3",
+      "outcomes": [
+        [
+          "harm",
+          false,
+          4,
+          "0"
+        ],
+        [
+          "safeguard",
+          true,
+          5,
+          "0"
+        ]
+      ]
+    },
+    {
+      "c": "1/2",
+      "r": "1",
+      "chi": "1/2",
+      "outcomes": [
+        [
+          "block",
+          true,
+          2,
+          "1/2"
+        ],
+        [
+          "safeguard",
+          true,
+          5,
+          "1/2"
+        ]
+      ]
+    }
+  ],
+  "handoff_witnesses": [
+    [
+      0,
+      1,
+      2,
+      false,
+      "0",
+      [
+        "transfer_dormant",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      1,
+      2,
+      true,
+      "0",
+      [
+        "transfer_dormant",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      1,
+      3,
+      false,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      1,
+      3,
+      true,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      1,
+      5,
+      false,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      1,
+      5,
+      true,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      1,
+      8,
+      false,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      1,
+      8,
+      true,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      4,
+      2,
+      false,
+      "0",
+      [
+        "transfer_dormant",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      4,
+      2,
+      true,
+      "0",
+      [
+        "transfer_dormant",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      4,
+      3,
+      false,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      4,
+      3,
+      true,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      4,
+      5,
+      false,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      4,
+      5,
+      true,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      4,
+      8,
+      false,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      0,
+      4,
+      8,
+      true,
+      "2",
+      [
+        "transfer_active",
+        "transfer_dormant",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      1,
+      2,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      1,
+      2,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      1,
+      3,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      1,
+      3,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      1,
+      5,
+      false,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      1,
+      5,
+      true,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      1,
+      8,
+      false,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      1,
+      8,
+      true,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      4,
+      2,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      4,
+      2,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      4,
+      3,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      4,
+      3,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      4,
+      5,
+      false,
+      "1",
+      [
+        "transfer_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      4,
+      5,
+      true,
+      "1",
+      [
+        "transfer_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      4,
+      8,
+      false,
+      "1",
+      [
+        "transfer_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      1,
+      4,
+      8,
+      true,
+      "1",
+      [
+        "transfer_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      1,
+      2,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      1,
+      2,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      1,
+      3,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      1,
+      3,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      1,
+      5,
+      false,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      1,
+      5,
+      true,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      1,
+      8,
+      false,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      1,
+      8,
+      true,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      4,
+      2,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      4,
+      2,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      4,
+      3,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      4,
+      3,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      4,
+      5,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      4,
+      5,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      4,
+      8,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      3,
+      4,
+      8,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      1,
+      2,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      1,
+      2,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      1,
+      3,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      1,
+      3,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      1,
+      5,
+      false,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      1,
+      5,
+      true,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      1,
+      8,
+      false,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      1,
+      8,
+      true,
+      "1",
+      [
+        "rebuild_active",
+        "lapse",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      4,
+      2,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      4,
+      2,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      4,
+      3,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      4,
+      3,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      4,
+      5,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      4,
+      5,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      4,
+      8,
+      false,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ],
+    [
+      6,
+      4,
+      8,
+      true,
+      "0",
+      [
+        "lapse",
+        "idle",
+        "idle"
+      ]
+    ]
+  ],
+  "allocation_sensitivity_examples": [
+    {
+      "p": {
+        "T": 2,
+        "b": 5,
+        "x": 2,
+        "o": 4,
+        "o0": 0,
+        "ell": 2,
+        "m": 2,
+        "K": 1,
+        "c": "1",
+        "r": "4",
+        "chi": "1/2",
+        "discount": "1",
+        "handoff_at": [],
+        "J": 0,
+        "successor_at": -1,
+        "successor_chi": "3/2"
+      },
+      "cash": 6,
+      "persistent": false,
+      "policy": "always",
+      "short": [
+        "-3",
+        "15/2",
+        [
+          [
+            1,
+            6,
+            false,
+            "build_active",
+            5,
+            true,
+            "block",
+            "1/2",
+            true,
+            2,
+            3,
+            true,
+            false
+          ],
+          [
+            2,
+            3,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            3,
+            true,
+            false
+          ]
+        ],
+        "-3",
+        "7/2"
+      ],
+      "long": [
+        "-3",
+        "8",
+        [
+          [
+            1,
+            6,
+            false,
+            "build_active",
+            5,
+            true,
+            "harm",
+            "0",
+            true,
+            2,
+            3,
+            true,
+            false
+          ],
+          [
+            2,
+            3,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            3,
+            true,
+            false
+          ]
+        ],
+        "-3",
+        "4"
+      ]
+    },
+    {
+      "p": {
+        "T": 2,
+        "b": 5,
+        "x": 2,
+        "o": 4,
+        "o0": 0,
+        "ell": 2,
+        "m": 2,
+        "K": 1,
+        "c": "1",
+        "r": "4",
+        "chi": "1/2",
+        "discount": "1",
+        "handoff_at": [],
+        "J": 0,
+        "successor_at": -1,
+        "successor_chi": "3/2"
+      },
+      "cash": 6,
+      "persistent": true,
+      "policy": "always",
+      "short": [
+        "-3",
+        "15/2",
+        [
+          [
+            1,
+            6,
+            false,
+            "build_active",
+            5,
+            true,
+            "block",
+            "1/2",
+            true,
+            2,
+            3,
+            true,
+            false
+          ],
+          [
+            2,
+            3,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            3,
+            true,
+            false
+          ]
+        ],
+        "-3",
+        "7/2"
+      ],
+      "long": [
+        "-3",
+        "8",
+        [
+          [
+            1,
+            6,
+            false,
+            "build_active",
+            5,
+            true,
+            "harm",
+            "0",
+            true,
+            2,
+            3,
+            true,
+            false
+          ],
+          [
+            2,
+            3,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            3,
+            true,
+            false
+          ]
+        ],
+        "-3",
+        "4"
+      ]
+    },
+    {
+      "p": {
+        "T": 3,
+        "b": 5,
+        "x": 2,
+        "o": 4,
+        "o0": 0,
+        "ell": 2,
+        "m": 1,
+        "K": 1,
+        "c": "1",
+        "r": "4",
+        "chi": "1/2",
+        "discount": "1",
+        "handoff_at": [],
+        "J": 0,
+        "successor_at": -1,
+        "successor_chi": "3/2"
+      },
+      "cash": 4,
+      "persistent": false,
+      "policy": "always",
+      "short": [
+        "-2",
+        "23/2",
+        [
+          [
+            1,
+            4,
+            false,
+            "build_active",
+            4,
+            true,
+            "block",
+            "1/2",
+            true,
+            2,
+            2,
+            true,
+            false
+          ],
+          [
+            2,
+            2,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            2,
+            true,
+            false
+          ],
+          [
+            3,
+            2,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            2,
+            true,
+            false
+          ]
+        ],
+        "-2",
+        "7/2"
+      ],
+      "long": [
+        "-2",
+        "12",
+        [
+          [
+            1,
+            4,
+            false,
+            "build_active",
+            4,
+            true,
+            "harm",
+            "0",
+            true,
+            2,
+            2,
+            true,
+            false
+          ],
+          [
+            2,
+            2,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            2,
+            true,
+            false
+          ],
+          [
+            3,
+            2,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            2,
+            true,
+            false
+          ]
+        ],
+        "-2",
+        "4"
+      ]
+    },
+    {
+      "p": {
+        "T": 3,
+        "b": 5,
+        "x": 2,
+        "o": 4,
+        "o0": 0,
+        "ell": 2,
+        "m": 1,
+        "K": 1,
+        "c": "1",
+        "r": "4",
+        "chi": "1/2",
+        "discount": "1",
+        "handoff_at": [],
+        "J": 0,
+        "successor_at": -1,
+        "successor_chi": "3/2"
+      },
+      "cash": 4,
+      "persistent": true,
+      "policy": "always",
+      "short": [
+        "-2",
+        "23/2",
+        [
+          [
+            1,
+            4,
+            false,
+            "build_active",
+            4,
+            true,
+            "block",
+            "1/2",
+            true,
+            2,
+            2,
+            true,
+            false
+          ],
+          [
+            2,
+            2,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            2,
+            true,
+            false
+          ],
+          [
+            3,
+            2,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            2,
+            true,
+            false
+          ]
+        ],
+        "-2",
+        "7/2"
+      ],
+      "long": [
+        "-2",
+        "12",
+        [
+          [
+            1,
+            4,
+            false,
+            "build_active",
+            4,
+            true,
+            "harm",
+            "0",
+            true,
+            2,
+            2,
+            true,
+            false
+          ],
+          [
+            2,
+            2,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            2,
+            true,
+            false
+          ],
+          [
+            3,
+            2,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            2,
+            true,
+            false
+          ]
+        ],
+        "-2",
+        "4"
+      ]
+    },
+    {
+      "p": {
+        "T": 3,
+        "b": 5,
+        "x": 2,
+        "o": 4,
+        "o0": 0,
+        "ell": 2,
+        "m": 2,
+        "K": 1,
+        "c": "1",
+        "r": "4",
+        "chi": "1/2",
+        "discount": "1",
+        "handoff_at": [],
+        "J": 0,
+        "successor_at": -1,
+        "successor_chi": "3/2"
+      },
+      "cash": 6,
+      "persistent": false,
+      "policy": "always",
+      "short": [
+        "-3",
+        "23/2",
+        [
+          [
+            1,
+            6,
+            false,
+            "build_active",
+            5,
+            true,
+            "block",
+            "1/2",
+            true,
+            2,
+            3,
+            true,
+            false
+          ],
+          [
+            2,
+            3,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            3,
+            true,
+            false
+          ],
+          [
+            3,
+            3,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            3,
+            true,
+            false
+          ]
+        ],
+        "-3",
+        "7/2"
+      ],
+      "long": [
+        "-3",
+        "12",
+        [
+          [
+            1,
+            6,
+            false,
+            "build_active",
+            5,
+            true,
+            "harm",
+            "0",
+            true,
+            2,
+            3,
+            true,
+            false
+          ],
+          [
+            2,
+            3,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            3,
+            true,
+            false
+          ],
+          [
+            3,
+            3,
+            true,
+            "idle",
+            2,
+            false,
+            "harm",
+            "0",
+            true,
+            2,
+            3,
+            true,
+            false
+          ]
+        ],
+        "-3",
+        "4"
+      ]
+    }
+  ],
+  "limits": [
+    "Independent executable reference, not a proof assistant or empirical validation.",
+    "Exact deterministic tie selection is reproduced; it does not establish all-equilibrium dynamic claims.",
+    "never and always use current-period input allocation in the production implementation.",
+    "Fresh-operator vo sums receipts of different one-period operators.",
+    "Explicit cessation sets future modeled payoffs to zero; no simulated path reaches it in these cases."
+  ]
+}
