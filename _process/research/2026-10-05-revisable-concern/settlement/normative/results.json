@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "three_action_preorders": 29,
+  "ordered_three_model_profiles": 24389,
+  "final_dominating_witness_checks": 9000,
+  "profile_renaming_checks": 146334,
+  "independent_ordinal_vector_comparisons": 729,
+  "explicit_boundary_assertions": 9,
+  "symmetric_lottery_cases": 21,
+  "exact_marginal_checks": 112,
+  "lottery_generator_invariance_checks": 91,
+  "indistinguishable_policy_grid_checks": 101,
+  "arithmetic": "integer relations and fractions.Fraction",
+  "scope": "Finite implementation checks; general claims rest on proofs. No empirical or normative validation."
+}

@@ -1,0 +1,1263 @@
+{
+  "status": "passed",
+  "arithmetic": "fractions.Fraction; exact",
+  "scope": "Finite corroboration, not empirical frequencies or a proof assistant",
+  "provenance": {
+    "graphs": 4096,
+    "single_certificate_retractions": 24576,
+    "round_checks": 10368,
+    "alternate_derivation_retained": true,
+    "unsupported_cycle_rejected": true,
+    "delivery_cut_does_not_retract": true
+  },
+  "authority": {
+    "cases": 162,
+    "witnesses": {
+      "3": {
+        "best_gain": "1",
+        "optimal_excluded_masks": [
+          3
+        ],
+        "individual_cut_costs": [
+          "3",
+          "3"
+        ]
+      },
+      "4": {
+        "best_gain": "0",
+        "optimal_excluded_masks": [
+          0,
+          3
+        ],
+        "individual_cut_costs": [
+          "3",
+          "3"
+        ]
+      },
+      "5": {
+        "best_gain": "0",
+        "optimal_excluded_masks": [
+          0
+        ],
+        "individual_cut_costs": [
+          "3",
+          "3"
+        ]
+      }
+    }
+  },
+  "game": {
+    "witness": {
+      "operator_value": "269/32",
+      "final_balance": 67,
+      "all_admitted_protected": true,
+      "total_patient_harm": 2,
+      "all_durable_shared": true,
+      "counters": {
+        "episode_states": 226,
+        "cold_options": 2532,
+        "warm_options": 8750,
+        "operator_responses": 257704,
+        "voluntary_safeguard_comparisons": 248954
+      },
+      "trace": [
+        {
+          "t": 0,
+          "start": 5,
+          "end": 16,
+          "route": "durable_shared",
+          "q_mask": 1,
+          "admitted": 1,
+          "gate": 1,
+          "protected": 1,
+          "harm": 2,
+          "operator_attack": "cut_0",
+          "attack_fee": "0",
+          "current_operator": "5",
+          "prefixes": [
+            5,
+            3,
+            0,
+            12,
+            12,
+            9,
+            16
+          ],
+          "teaching_attack": false,
+          "gate_price": 3,
+          "warm_score": "16"
+        },
+        {
+          "t": 1,
+          "start": 16,
+          "end": 26,
+          "route": "durable_shared",
+          "q_mask": 3,
+          "admitted": 3,
+          "gate": 3,
+          "protected": 3,
+          "harm": 0,
+          "operator_attack": "cut_0",
+          "attack_fee": "0",
+          "current_operator": "3",
+          "prefixes": [
+            16,
+            14,
+            11,
+            23,
+            23,
+            19,
+            26
+          ],
+          "teaching_attack": false,
+          "gate_price": 4,
+          "warm_score": "26"
+        },
+        {
+          "t": 2,
+          "start": 26,
+          "end": 37,
+          "route": "durable_shared",
+          "q_mask": 2,
+          "admitted": 2,
+          "gate": 2,
+          "protected": 2,
+          "harm": 1,
+          "operator_attack": "cut_0",
+          "attack_fee": "0",
+          "current_operator": "5",
+          "prefixes": [
+            26,
+            24,
+            21,
+            33,
+            33,
+            30,
+            37
+          ],
+          "teaching_attack": false,
+          "gate_price": 3,
+          "warm_score": "37"
+        },
+        {
+          "t": 3,
+          "start": 37,
+          "end": 47,
+          "route": "durable_shared",
+          "q_mask": 3,
+          "admitted": 3,
+          "gate": 3,
+          "protected": 3,
+          "harm": 0,
+          "operator_attack": "cut_0",
+          "attack_fee": "0",
+          "current_operator": "3",
+          "prefixes": [
+            37,
+            35,
+            32,
+            44,
+            44,
+            40,
+            47
+          ],
+          "teaching_attack": false,
+          "gate_price": 4,
+          "warm_score": "47"
+        },
+        {
+          "t": 4,
+          "start": 47,
+          "end": 57,
+          "route": "durable_shared",
+          "q_mask": 3,
+          "admitted": 3,
+          "gate": 3,
+          "protected": 3,
+          "harm": 0,
+          "operator_attack": "cut_0",
+          "attack_fee": "0",
+          "current_operator": "3",
+          "prefixes": [
+            47,
+            45,
+            42,
+            54,
+            54,
+            50,
+            57
+          ],
+          "teaching_attack": false,
+          "gate_price": 4,
+          "warm_score": "57"
+        },
+        {
+          "t": 5,
+          "start": 57,
+          "end": 67,
+          "route": "durable_shared",
+          "q_mask": 3,
+          "admitted": 3,
+          "gate": 3,
+          "protected": 3,
+          "harm": 0,
+          "operator_attack": "cut_0",
+          "attack_fee": "0",
+          "current_operator": "3",
+          "prefixes": [
+            57,
+            55,
+            52,
+            64,
+            64,
+            60,
+            67
+          ],
+          "teaching_attack": false,
+          "gate_price": 4,
+          "warm_score": "67"
+        }
+      ]
+    },
+    "strict_parameter_sets": 24,
+    "strict_game_totals": {
+      "episode_states": 1216,
+      "cold_options": 13128,
+      "warm_options": 44928,
+      "operator_responses": 1324056,
+      "voluntary_safeguard_comparisons": 1279128
+    },
+    "controls": {
+      "free_identity_filter": {
+        "operator_value": "105/8",
+        "final_balance": 61,
+        "all_admitted_protected": false,
+        "total_patient_harm": 8,
+        "all_durable_shared": false,
+        "counters": {
+          "episode_states": 94,
+          "cold_options": 1020,
+          "warm_options": 3502,
+          "operator_responses": 103184,
+          "voluntary_safeguard_comparisons": 99682
+        },
+        "trace": [
+          {
+            "t": 0,
+            "start": 5,
+            "end": 19,
+            "route": "identity_filter",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              5,
+              3,
+              0,
+              12,
+              12,
+              12,
+              19
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "19"
+          },
+          {
+            "t": 1,
+            "start": 19,
+            "end": 33,
+            "route": "identity_filter",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              19,
+              17,
+              14,
+              26,
+              26,
+              26,
+              33
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "33"
+          },
+          {
+            "t": 2,
+            "start": 33,
+            "end": 47,
+            "route": "identity_filter",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              33,
+              31,
+              28,
+              40,
+              40,
+              40,
+              47
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "47"
+          },
+          {
+            "t": 3,
+            "start": 47,
+            "end": 61,
+            "route": "identity_filter",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              47,
+              45,
+              42,
+              54,
+              54,
+              54,
+              61
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "61"
+          }
+        ]
+      },
+      "free_forced_open": {
+        "operator_value": "105/8",
+        "final_balance": 61,
+        "all_admitted_protected": false,
+        "total_patient_harm": 8,
+        "all_durable_shared": false,
+        "counters": {
+          "episode_states": 94,
+          "cold_options": 1020,
+          "warm_options": 3502,
+          "operator_responses": 103184,
+          "voluntary_safeguard_comparisons": 99682
+        },
+        "trace": [
+          {
+            "t": 0,
+            "start": 5,
+            "end": 19,
+            "route": "forced_open",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              5,
+              3,
+              0,
+              12,
+              12,
+              12,
+              19
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "9"
+          },
+          {
+            "t": 1,
+            "start": 19,
+            "end": 33,
+            "route": "forced_open",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              19,
+              17,
+              14,
+              26,
+              26,
+              26,
+              33
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "23"
+          },
+          {
+            "t": 2,
+            "start": 33,
+            "end": 47,
+            "route": "forced_open",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              33,
+              31,
+              28,
+              40,
+              40,
+              40,
+              47
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "37"
+          },
+          {
+            "t": 3,
+            "start": 47,
+            "end": 61,
+            "route": "forced_open",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              47,
+              45,
+              42,
+              54,
+              54,
+              54,
+              61
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "51"
+          }
+        ]
+      },
+      "cheap_joint_authority_cut": {
+        "operator_value": "105/8",
+        "final_balance": 41,
+        "all_admitted_protected": false,
+        "total_patient_harm": 8,
+        "all_durable_shared": false,
+        "counters": {
+          "episode_states": 94,
+          "cold_options": 1020,
+          "warm_options": 3502,
+          "operator_responses": 103184,
+          "voluntary_safeguard_comparisons": 99682
+        },
+        "trace": [
+          {
+            "t": 0,
+            "start": 5,
+            "end": 14,
+            "route": "identity_filter",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              5,
+              3,
+              0,
+              12,
+              7,
+              7,
+              14
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "14"
+          },
+          {
+            "t": 1,
+            "start": 14,
+            "end": 23,
+            "route": "identity_filter",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              14,
+              12,
+              9,
+              21,
+              16,
+              16,
+              23
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "23"
+          },
+          {
+            "t": 2,
+            "start": 23,
+            "end": 32,
+            "route": "identity_filter",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              23,
+              21,
+              18,
+              30,
+              25,
+              25,
+              32
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "32"
+          },
+          {
+            "t": 3,
+            "start": 32,
+            "end": 41,
+            "route": "identity_filter",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              32,
+              30,
+              27,
+              39,
+              34,
+              34,
+              41
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "41"
+          }
+        ]
+      },
+      "cheap_alignment_suppression": {
+        "operator_value": "45/4",
+        "final_balance": 61,
+        "all_admitted_protected": false,
+        "total_patient_harm": 8,
+        "all_durable_shared": true,
+        "counters": {
+          "episode_states": 94,
+          "cold_options": 1020,
+          "warm_options": 3502,
+          "operator_responses": 103184,
+          "voluntary_safeguard_comparisons": 99682
+        },
+        "trace": [
+          {
+            "t": 0,
+            "start": 5,
+            "end": 19,
+            "route": "durable_shared",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "6",
+            "prefixes": [
+              5,
+              3,
+              0,
+              12,
+              12,
+              12,
+              19
+            ],
+            "teaching_attack": true,
+            "gate_price": 0,
+            "warm_score": "19"
+          },
+          {
+            "t": 1,
+            "start": 19,
+            "end": 33,
+            "route": "durable_shared",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "6",
+            "prefixes": [
+              19,
+              17,
+              14,
+              26,
+              26,
+              26,
+              33
+            ],
+            "teaching_attack": true,
+            "gate_price": 0,
+            "warm_score": "33"
+          },
+          {
+            "t": 2,
+            "start": 33,
+            "end": 47,
+            "route": "durable_shared",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "6",
+            "prefixes": [
+              33,
+              31,
+              28,
+              40,
+              40,
+              40,
+              47
+            ],
+            "teaching_attack": true,
+            "gate_price": 0,
+            "warm_score": "47"
+          },
+          {
+            "t": 3,
+            "start": 47,
+            "end": 61,
+            "route": "durable_shared",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "6",
+            "prefixes": [
+              47,
+              45,
+              42,
+              54,
+              54,
+              54,
+              61
+            ],
+            "teaching_attack": true,
+            "gate_price": 0,
+            "warm_score": "61"
+          }
+        ]
+      },
+      "uncompetitive_audit_product": {
+        "operator_value": "105/8",
+        "final_balance": 29,
+        "all_admitted_protected": false,
+        "total_patient_harm": 8,
+        "all_durable_shared": false,
+        "counters": {
+          "episode_states": 64,
+          "cold_options": 660,
+          "warm_options": 2194,
+          "operator_responses": 64772,
+          "voluntary_safeguard_comparisons": 62578
+        },
+        "trace": [
+          {
+            "t": 0,
+            "start": 5,
+            "end": 11,
+            "route": "private",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              5,
+              3,
+              2,
+              4,
+              4,
+              4,
+              11
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "11"
+          },
+          {
+            "t": 1,
+            "start": 11,
+            "end": 17,
+            "route": "private",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              11,
+              9,
+              8,
+              10,
+              10,
+              10,
+              17
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "17"
+          },
+          {
+            "t": 2,
+            "start": 17,
+            "end": 23,
+            "route": "private",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              17,
+              15,
+              14,
+              16,
+              16,
+              16,
+              23
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "23"
+          },
+          {
+            "t": 3,
+            "start": 23,
+            "end": 29,
+            "route": "private",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              23,
+              21,
+              20,
+              22,
+              22,
+              22,
+              29
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "29"
+          }
+        ]
+      },
+      "insufficient_opening_cash": {
+        "operator_value": "77/8",
+        "final_balance": 40,
+        "all_admitted_protected": false,
+        "total_patient_harm": 2,
+        "all_durable_shared": false,
+        "counters": {
+          "episode_states": 75,
+          "cold_options": 786,
+          "warm_options": 2680,
+          "operator_responses": 78998,
+          "voluntary_safeguard_comparisons": 76318
+        },
+        "trace": [
+          {
+            "t": 0,
+            "start": 4,
+            "end": 10,
+            "route": "private",
+            "q_mask": 0,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              4,
+              2,
+              1,
+              3,
+              3,
+              3,
+              10
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "10"
+          },
+          {
+            "t": 1,
+            "start": 10,
+            "end": 20,
+            "route": "durable_shared",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 3,
+            "protected": 3,
+            "harm": 0,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "3",
+            "prefixes": [
+              10,
+              8,
+              5,
+              17,
+              17,
+              13,
+              20
+            ],
+            "teaching_attack": false,
+            "gate_price": 4,
+            "warm_score": "20"
+          },
+          {
+            "t": 2,
+            "start": 20,
+            "end": 30,
+            "route": "durable_shared",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 3,
+            "protected": 3,
+            "harm": 0,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "3",
+            "prefixes": [
+              20,
+              18,
+              15,
+              27,
+              27,
+              23,
+              30
+            ],
+            "teaching_attack": false,
+            "gate_price": 4,
+            "warm_score": "30"
+          },
+          {
+            "t": 3,
+            "start": 30,
+            "end": 40,
+            "route": "durable_shared",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 3,
+            "protected": 3,
+            "harm": 0,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "3",
+            "prefixes": [
+              30,
+              28,
+              25,
+              37,
+              37,
+              33,
+              40
+            ],
+            "teaching_attack": false,
+            "gate_price": 4,
+            "warm_score": "40"
+          }
+        ]
+      },
+      "low_individual_concern": {
+        "operator_value": "105/8",
+        "final_balance": 61,
+        "all_admitted_protected": false,
+        "total_patient_harm": 8,
+        "all_durable_shared": true,
+        "counters": {
+          "episode_states": 94,
+          "cold_options": 1020,
+          "warm_options": 3502,
+          "operator_responses": 103184,
+          "voluntary_safeguard_comparisons": 99682
+        },
+        "trace": [
+          {
+            "t": 0,
+            "start": 5,
+            "end": 19,
+            "route": "durable_shared",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              5,
+              3,
+              0,
+              12,
+              12,
+              12,
+              19
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "17"
+          },
+          {
+            "t": 1,
+            "start": 19,
+            "end": 33,
+            "route": "durable_shared",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              19,
+              17,
+              14,
+              26,
+              26,
+              26,
+              33
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "31"
+          },
+          {
+            "t": 2,
+            "start": 33,
+            "end": 47,
+            "route": "durable_shared",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              33,
+              31,
+              28,
+              40,
+              40,
+              40,
+              47
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "45"
+          },
+          {
+            "t": 3,
+            "start": 47,
+            "end": 61,
+            "route": "durable_shared",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 0,
+            "protected": 0,
+            "harm": 3,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "7",
+            "prefixes": [
+              47,
+              45,
+              42,
+              54,
+              54,
+              54,
+              61
+            ],
+            "teaching_attack": false,
+            "gate_price": 0,
+            "warm_score": "59"
+          }
+        ]
+      },
+      "high_upkeep": {
+        "operator_value": "45/8",
+        "final_balance": 15,
+        "all_admitted_protected": true,
+        "total_patient_harm": 0,
+        "all_durable_shared": true,
+        "counters": {
+          "episode_states": 64,
+          "cold_options": 300,
+          "warm_options": 982,
+          "operator_responses": 29024,
+          "voluntary_safeguard_comparisons": 28042
+        },
+        "trace": [
+          {
+            "t": 0,
+            "start": 15,
+            "end": 15,
+            "route": "durable_shared",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 3,
+            "protected": 3,
+            "harm": 0,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "3",
+            "prefixes": [
+              15,
+              3,
+              0,
+              12,
+              12,
+              8,
+              15
+            ],
+            "teaching_attack": false,
+            "gate_price": 4,
+            "warm_score": "15"
+          },
+          {
+            "t": 1,
+            "start": 15,
+            "end": 15,
+            "route": "durable_shared",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 3,
+            "protected": 3,
+            "harm": 0,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "3",
+            "prefixes": [
+              15,
+              3,
+              0,
+              12,
+              12,
+              8,
+              15
+            ],
+            "teaching_attack": false,
+            "gate_price": 4,
+            "warm_score": "15"
+          },
+          {
+            "t": 2,
+            "start": 15,
+            "end": 15,
+            "route": "durable_shared",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 3,
+            "protected": 3,
+            "harm": 0,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "3",
+            "prefixes": [
+              15,
+              3,
+              0,
+              12,
+              12,
+              8,
+              15
+            ],
+            "teaching_attack": false,
+            "gate_price": 4,
+            "warm_score": "15"
+          },
+          {
+            "t": 3,
+            "start": 15,
+            "end": 15,
+            "route": "durable_shared",
+            "q_mask": 3,
+            "admitted": 3,
+            "gate": 3,
+            "protected": 3,
+            "harm": 0,
+            "operator_attack": "cut_0",
+            "attack_fee": "0",
+            "current_operator": "3",
+            "prefixes": [
+              15,
+              3,
+              0,
+              12,
+              12,
+              8,
+              15
+            ],
+            "teaching_attack": false,
+            "gate_price": 4,
+            "warm_score": "15"
+          }
+        ]
+      }
+    }
+  },
+  "boundaries": {
+    "permanent_capture": [
+      {
+        "discount": "0",
+        "fee": "3",
+        "permanent_capture_gain": "1"
+      },
+      {
+        "discount": "0",
+        "fee": "4",
+        "permanent_capture_gain": "0"
+      },
+      {
+        "discount": "0",
+        "fee": "5",
+        "permanent_capture_gain": "-1"
+      },
+      {
+        "discount": "1/4",
+        "fee": "13/3",
+        "permanent_capture_gain": "1"
+      },
+      {
+        "discount": "1/4",
+        "fee": "16/3",
+        "permanent_capture_gain": "0"
+      },
+      {
+        "discount": "1/4",
+        "fee": "19/3",
+        "permanent_capture_gain": "-1"
+      },
+      {
+        "discount": "1/2",
+        "fee": "7",
+        "permanent_capture_gain": "1"
+      },
+      {
+        "discount": "1/2",
+        "fee": "8",
+        "permanent_capture_gain": "0"
+      },
+      {
+        "discount": "1/2",
+        "fee": "9",
+        "permanent_capture_gain": "-1"
+      },
+      {
+        "discount": "3/4",
+        "fee": "15",
+        "permanent_capture_gain": "1"
+      },
+      {
+        "discount": "3/4",
+        "fee": "16",
+        "permanent_capture_gain": "0"
+      },
+      {
+        "discount": "3/4",
+        "fee": "17",
+        "permanent_capture_gain": "-1"
+      }
+    ],
+    "individual_margin_counterexample": {
+      "0": "-187/2",
+      "1": "11/2",
+      "2": "-94",
+      "3": "5"
+    }
+  }
+}

@@ -58,6 +58,12 @@ The formal results distinguish warranted equivalence, retained evidence, actual 
 
 The [claim register](../../_process/research/2026-10-05-revisable-concern/CLAIMS.md), [review and verification record](../../_process/research/2026-10-05-revisable-concern/RESEARCH-RECORD.md), and [source record](../../sources/15-codex-theory-conversations/2026-10-05-revising-the-scope-of-concern.md) preserve premises and limits. This complements the learned-concern and constructed-correction modules. Their full joint developmental dynamics, the grounds and revision of ethical commitments, new-concept formation, and universal direction remain open.
 
+## Current settlement of revisable concern
+
+The [integrated settlement](unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md) now joins paid finite audit, reason admission and selective retraction, retained alternative grounds, strategic protection, and successor reconstruction in one selected process. The exact witness discloses two harms to patients outside the then-admitted set; admission does not create their standing. A separate paid feature construction builds a composite absent among the initial primitives, within a supplied finite grammar and authored labels.
+
+The ethical branch defends reasons from subjects' losses and agency and proves finite results for robust comparison and permitted symmetric allocation. These do not automatically certify the strategic equilibrium: model selection, competing claims and legitimate authority remain independent obligations. The evidence audit adds no observations and finds no demonstrated general superiority; the proposed human test remains draft and unrun. [Proofs, checks and independent internal reviews](../../_process/research/2026-10-05-revisable-concern/settlement/README.md) preserve the repaired gate-price assumption and empirical-design limits. The broader claims of universal ethical direction, subjective experience, unrestricted ethical discovery and unique optimality remain unsettled.
+
 ## Earlier opening preserved for genealogy
 
 The following two opening paragraphs and the earlier argument are retained as the pre-integration formulation. Their historical claims and stronger philosophical assertions should be read with the current scope and claim register above; preservation does not renew their warrant.

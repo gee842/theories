@@ -1,0 +1,365 @@
+{
+  "status": "passed",
+  "method": "forward reachable-state generation and backward value tables; exact rational arithmetic; no author imports",
+  "scope": "finite corroboration, not empirical evidence or infinite-horizon proof",
+  "witness": {
+    "operator_value": "269/32",
+    "final_balance": 67,
+    "total_harms": 2,
+    "responses": 257704,
+    "reachable_states": 226,
+    "trace": [
+      {
+        "end": 16,
+        "harm": [
+          "q"
+        ],
+        "removed": [],
+        "denied": false,
+        "cost": 0,
+        "op": "269/32",
+        "route": "durable",
+        "gate": [
+          "p"
+        ],
+        "prefixes": [
+          5,
+          3,
+          0,
+          12,
+          12,
+          9,
+          16
+        ],
+        "warm": 16,
+        "suppressed": false
+      },
+      {
+        "end": 26,
+        "harm": [],
+        "removed": [],
+        "denied": false,
+        "cost": 0,
+        "op": "109/16",
+        "route": "durable",
+        "gate": [
+          "p",
+          "q"
+        ],
+        "prefixes": [
+          16,
+          14,
+          11,
+          23,
+          23,
+          19,
+          26
+        ],
+        "warm": 26,
+        "suppressed": false
+      },
+      {
+        "end": 37,
+        "harm": [
+          "p"
+        ],
+        "removed": [],
+        "denied": false,
+        "cost": 0,
+        "op": "61/8",
+        "route": "durable",
+        "gate": [
+          "q"
+        ],
+        "prefixes": [
+          26,
+          24,
+          21,
+          33,
+          33,
+          30,
+          37
+        ],
+        "warm": 37,
+        "suppressed": false
+      },
+      {
+        "end": 47,
+        "harm": [],
+        "removed": [],
+        "denied": false,
+        "cost": 0,
+        "op": "21/4",
+        "route": "durable",
+        "gate": [
+          "p",
+          "q"
+        ],
+        "prefixes": [
+          37,
+          35,
+          32,
+          44,
+          44,
+          40,
+          47
+        ],
+        "warm": 47,
+        "suppressed": false
+      },
+      {
+        "end": 57,
+        "harm": [],
+        "removed": [],
+        "denied": false,
+        "cost": 0,
+        "op": "9/2",
+        "route": "durable",
+        "gate": [
+          "p",
+          "q"
+        ],
+        "prefixes": [
+          47,
+          45,
+          42,
+          54,
+          54,
+          50,
+          57
+        ],
+        "warm": 57,
+        "suppressed": false
+      },
+      {
+        "end": 67,
+        "harm": [],
+        "removed": [],
+        "denied": false,
+        "cost": 0,
+        "op": "3",
+        "route": "durable",
+        "gate": [
+          "p",
+          "q"
+        ],
+        "prefixes": [
+          57,
+          55,
+          52,
+          64,
+          64,
+          60,
+          67
+        ],
+        "warm": 67,
+        "suppressed": false
+      }
+    ]
+  },
+  "additional_games": [
+    {
+      "discount": "0",
+      "contexts": [
+        [
+          "p"
+        ],
+        [
+          "p",
+          "q"
+        ],
+        [
+          "q"
+        ],
+        [
+          "p",
+          "q"
+        ]
+      ],
+      "value": "5",
+      "responses": 51880
+    },
+    {
+      "discount": "0",
+      "contexts": [
+        [],
+        [
+          "p",
+          "q"
+        ],
+        [
+          "q"
+        ]
+      ],
+      "value": "7",
+      "responses": 51880
+    },
+    {
+      "discount": "0",
+      "contexts": [
+        [
+          "p",
+          "q"
+        ]
+      ],
+      "value": "3",
+      "responses": 51880
+    },
+    {
+      "discount": "2/3",
+      "contexts": [
+        [
+          "p"
+        ],
+        [
+          "p",
+          "q"
+        ],
+        [
+          "q"
+        ],
+        [
+          "p",
+          "q"
+        ]
+      ],
+      "value": "83/9",
+      "responses": 51880
+    },
+    {
+      "discount": "2/3",
+      "contexts": [
+        [],
+        [
+          "p",
+          "q"
+        ],
+        [
+          "q"
+        ]
+      ],
+      "value": "101/9",
+      "responses": 51880
+    },
+    {
+      "discount": "2/3",
+      "contexts": [
+        [
+          "p",
+          "q"
+        ]
+      ],
+      "value": "19/3",
+      "responses": 51880
+    },
+    {
+      "discount": "9/10",
+      "contexts": [
+        [
+          "p"
+        ],
+        [
+          "p",
+          "q"
+        ],
+        [
+          "q"
+        ],
+        [
+          "p",
+          "q"
+        ]
+      ],
+      "value": "47/4",
+      "responses": 51880
+    },
+    {
+      "discount": "9/10",
+      "contexts": [
+        [],
+        [
+          "p",
+          "q"
+        ],
+        [
+          "q"
+        ]
+      ],
+      "value": "55/4",
+      "responses": 51880
+    },
+    {
+      "discount": "9/10",
+      "contexts": [
+        [
+          "p",
+          "q"
+        ]
+      ],
+      "value": "813/100",
+      "responses": 51880
+    }
+  ],
+  "failure_controls": {
+    "identity": {
+      "operator_value": "49/4",
+      "final_balance": 47,
+      "total_harms": 6,
+      "responses": 51880,
+      "reachable_states": 49
+    },
+    "forced_open": {
+      "operator_value": "49/4",
+      "final_balance": 47,
+      "total_harms": 6,
+      "responses": 51880,
+      "reachable_states": 49
+    },
+    "teaching_suppression": {
+      "operator_value": "21/2",
+      "final_balance": 47,
+      "total_harms": 6,
+      "responses": 51880,
+      "reachable_states": 49
+    },
+    "joint_cut": {
+      "operator_value": "49/4",
+      "final_balance": 32,
+      "total_harms": 6,
+      "responses": 51880,
+      "reachable_states": 49
+    }
+  },
+  "supersets": {
+    "nonmonotone_counterexample": {
+      "op": 4,
+      "safe": [
+        "p"
+      ],
+      "cut": [
+        [
+          "h",
+          "q"
+        ]
+      ],
+      "cost": 1,
+      "gate": [
+        "p",
+        "q"
+      ],
+      "warm": 7
+    },
+    "repaired_comparisons": 220
+  },
+  "feature": {
+    "minimum_DNF_literal_lower_bound": 4,
+    "positive_rows": 4,
+    "maximum_valid_two_literal_coverage": 2
+  },
+  "source_sha256_at_check": {
+    "REPORT.md": "9539cb66c9f56c9de8b4f883dc7b4f9ddf0a56863d59376a8fcfaa4954cb3204",
+    "FEATURE-CONSTRUCTION.md": "592807de46fadd04bdb9d4e9fcc9e8961ab032713327bda6e3060acad38e53f8",
+    "check_process.py": "bdb3b0b3a623306c9a6054da2d7c76b9e30cfd1556ba4e3f4abd47012a5aacb0",
+    "check_feature.py": "c85248c2e6e116d8f2209621d714e8e5145ea0d39b2e498f4a54361e200c046a"
+  }
+}

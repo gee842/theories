@@ -1,5 +1,7 @@
 # How concern can revise its own boundaries
 
+**Latest continuation:** the [integrated settlement](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md) now joins paid revision, retained grounds, effective protection and succession in one conditional process, with defended ethical grounds, finite decision results and an evidence audit. Its [study record](settlement/README.md) preserves proofs, independent internal reviews and what remains unresolved. The chapter below introduces the earlier scope and access results on which it builds.
+
 The new advance is an account of how a process can change **who and what its reasons reach**, and how that change can resist convenient suppression.
 
 The previous concern theory explained learned valuation, effective action, correction, and renewal. This continuation adds a traceable challenge to the rules governing inclusion. If the process accepts a reason in one case and a warranted comparison exposes an excluded equivalent case, it must extend the reason, establish a relevant difference, or openly revise its prior commitment. Refusing or silencing the challenge is a different outcome.

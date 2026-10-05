@@ -1,0 +1,54 @@
+{
+  "started_utc": "2026-10-05T10:22:04.348750+00:00",
+  "base_commit": "b379528da1645db5b5c2eb559fce93831cfda2ec",
+  "scope": "Settlement continuation: explicit proof, justification and evidence obligations; other active physical completion work is read-only context, not owned by this team.",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "0c0d3710735b99f61af69b9ef36f5d824d5d9f794eae629ef8316af1f3e1f348"
+    },
+    {
+      "path": "RESEARCH.md",
+      "sha256": "39333b35db825a00446cf446ba53661d68da3c6acaa89d46c47bb1ad810f2853"
+    },
+    {
+      "path": "_process/BRIEF.md",
+      "sha256": "30255cb1da64b5100d39fcc58ce751ab34f98ab5546784823bc5cc6e0f899a05"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/THEORY.md",
+      "sha256": "b8b03f3b1145d14ac283799ab74e091ad3794d5b3bf07887a0ae68bac839dded"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/scope-math.md",
+      "sha256": "0dd84c7c04f4abf60d4af5bdcd95232983f4d784a9f1e8895552d2cf128438df"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/access-math.md",
+      "sha256": "db6a89db565a40a88dfce8831592c6aaacc0a0df82811e710115fe7d92708995"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md",
+      "sha256": "eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION-MATH.md",
+      "sha256": "78588893049559c99f82c7886c3e9edc87e45209b48a6b90d0eba616fcfdb949"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-OBSTRUCTIONS.md",
+      "sha256": "563c720e9327fb48197631e36b1ee97fdc2e4990c147d9da3c5582de67994ee9"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md",
+      "sha256": "0d732c91ee98c8a2292a2efaec9dd2c82e6e22ed403c13e345128963a35238e5"
+    }
+  ],
+  "preexisting_changes": [
+    " M RESEARCH.md",
+    " M _process/research/2026-10-05-support-and-shared-generativity/README.md",
+    "?? _process/research/2026-10-05-support-and-shared-generativity/completion/",
+    "?? theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md",
+    "?? theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md"
+  ]
+}

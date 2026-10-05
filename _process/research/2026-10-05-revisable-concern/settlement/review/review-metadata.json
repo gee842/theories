@@ -1,0 +1,48 @@
+{
+  "review_status": "accepted after repaired supersets blocker",
+  "reviewed_at_utc": "2026-10-05T10:42:56.605382+00:00",
+  "sources_final_inspected": [
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/REPORT.md",
+      "bytes": 27227,
+      "sha256": "3f2256fa7570d3d3892a9817e21c5990dbbcb53ab972526a5f57443459154a77"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/FEATURE-CONSTRUCTION.md",
+      "bytes": 4838,
+      "sha256": "592807de46fadd04bdb9d4e9fcc9e8961ab032713327bda6e3060acad38e53f8"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/check_process.py",
+      "bytes": 17649,
+      "sha256": "bdb3b0b3a623306c9a6054da2d7c76b9e30cfd1556ba4e3f4abd47012a5aacb0"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/check_feature.py",
+      "bytes": 3779,
+      "sha256": "c85248c2e6e116d8f2209621d714e8e5145ea0d39b2e498f4a54361e200c046a"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/results.json",
+      "bytes": 30360,
+      "sha256": "465c9bc762b7f3a82b7125b2a0ac473973479e1ea91d6468eebe06dcd8873f7f"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/feature-results.json",
+      "bytes": 1569,
+      "sha256": "d842aa321acbe2546d08e3d57c524abe4055dee63d1211e739a6da7df0e9d501"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/PROTOCOL.md",
+      "bytes": 3989,
+      "sha256": "a6fd08337e2de8b0711d44420a5b0ced3a0f5106f547ed4f9865baf1fb80a7c6"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "bytes": 17586,
+      "sha256": "7908cb846110d265eb7b6c741f7da60b48e93891da6462b18304f4a7ee8c45a0"
+    }
+  ],
+  "verification_note": "Textual precision repairs inspected after solver run. Model and check implementations unchanged; no repeated solve needed.",
+  "formal_checker_unchanged_since_independent_solve": true
+}

@@ -2,6 +2,8 @@
 
 **How concern can change its own scope, preserve warranted claims, and resist strategic exclusion.** A continuation of the formation and renewal of concern, 5 October 2026. Research direction from Ren; AI-assisted development, proofs, and internal review.
 
+**Later development:** [the integrated settlement](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md) now supplies a conditional joint process for paid revision, retained grounds, strategic protection and renewal, alongside ethical decision results and an evidence audit. This chapter preserves the earlier modular argument and its then-open integration target; the [settlement record](settlement/README.md) states what has since been resolved and what remains open.
+
 ## The advance
 
 The previous concern theory explained a route by which learned recognition and valuation could change action, remain correctable, and survive succession. Its broader ethical scope and shared evaluation route remained supplied. This continuation takes a further step: it specifies how a process can encounter a case excluded by its current rule, recognize that the exclusion conflicts with a reason it already accepts, and revise the operative domain of that reason.

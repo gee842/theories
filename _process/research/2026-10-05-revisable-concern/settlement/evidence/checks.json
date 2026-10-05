@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "local_links_checked": 7,
+  "primary_web_sources_checked": 3,
+  "read_only_source_hashes_matched": 160,
+  "new_observations": 0,
+  "protocol_status": "DRAFT_UNRUN_NOT_REGISTERED",
+  "practical_effect_margin_lower_bound": 0.1,
+  "false_application_margin_upper_bound": 0.05,
+  "source_of_thresholds": "prospective design assumptions",
+  "rendered_layout_inspected": false,
+  "protocol_version": 2,
+  "behavioral_selectivity_margin_lower_bound": 0.05,
+  "confirmatory_comparisons": 6,
+  "family_alpha": 0.05,
+  "intervals": "two-sided Bonferroni; analysis implementation and coverage validation still required"
+}
