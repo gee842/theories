@@ -3,8 +3,12 @@
   "scope": "Local links, balanced math delimiters, editorial markers, result/source labels, and optional source provenance; no rendering or theorem-prover validation.",
   "documents": {
     "CLAIMS.md": {
-      "bytes": 9936,
-      "sha256": "f45040646c24badd14ba5b1c10b50aa6cd6a59dfd0b5b9f1e5e6681aca8ad472"
+      "bytes": 10954,
+      "sha256": "f7391a10da90fb34dc207d0438080789f164d81cabf52538b2b5055eaab7ba88"
+    },
+    "CONCERN-AND-CORRECTION.md": {
+      "bytes": 12408,
+      "sha256": "548e21f9623d859c2e4fdb6871f1c1021c5e8512307ff645af28ced9e313daaf"
     },
     "ETHICAL-FOUNDATION.md": {
       "bytes": 18790,
@@ -27,23 +31,23 @@
       "sha256": "c9d53de40de77bfd3164a716b576400bfc9cd7d3a7e217d4e6f2302d29cc93cc"
     },
     "SOURCE-MAP.md": {
-      "bytes": 33403,
-      "sha256": "1bab098e175000e05f6335dc9421ea1d732551cf7b88e9bd281deaabbee6cac4"
+      "bytes": 35293,
+      "sha256": "9ffe1f9ab6371ee5d55c67d6d5a1a6ce2511e4dc94b1529b6d6a95906e1394f0"
     },
     "START-HERE.md": {
-      "bytes": 6333,
-      "sha256": "3b9ba022f3fd9604f3974e53ccde7e41f6b962c83fd9d6110ff71b05e6da0959"
+      "bytes": 7128,
+      "sha256": "d00eb65c9dfd1e1204bb4e3ad9eea3a478c935c7e67dc69ce133bf57c471e553"
     },
     "SYNTHESIS-RECORD.md": {
-      "bytes": 16060,
-      "sha256": "68071e9a818df64df91a35be4e22a8a191b4956be796a595fb847270954b36f9"
+      "bytes": 17579,
+      "sha256": "2d37d7b3b0f9c225d84a6f933c141b3f28d5f8562819ba19e2219f4fca7a1869"
     },
     "THEORY.md": {
-      "bytes": 42563,
-      "sha256": "d5955cb50b3c7f2c62ae874fcb202ecc2fd04f73c8dfd86b2f9eed15a1089d03"
+      "bytes": 44167,
+      "sha256": "3ec5f541455320f920e940cdfe0e0947c96b9600a6ca442d7a776db05990a3ae"
     }
   },
-  "local_links_checked": 204,
+  "local_links_checked": 229,
   "external_local_links_skipped": 0,
   "formal_result_labels": [
     "F1",
@@ -62,7 +66,7 @@
     "F2a",
     "F2b"
   ],
-  "source_families": 18,
+  "source_families": 19,
   "snapshots": [
     {
       "manifest": "sources/20-codex-theory-sessions-2026-10-05/SNAPSHOT-MANIFEST.json",

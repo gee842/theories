@@ -83,6 +83,14 @@ An independent game reconstruction matched 1,269 dynamic cases and 128 static eq
 
 The [ethical foundation](ETHICAL-FOUNDATION.md) develops explicit premises and reasons for standing beyond usefulness and effective answerability. A separate countermodel shows why stable productive renewal need not select costly concern when affected harm changes neither selector payoffs nor constraints. The two arguments connect ethical reasons with causal requirements while preserving their different warrants.
 
+## Integration of the completed concern branch
+
+While Development 1 was being completed, the parallel direction and concern continuations were committed as `2e1f354` and `a43b3de`. Their files, source records, and canonical introductions were preserved. The present edition integrates their contribution through [Concern and effective correction](CONCERN-AND-CORRECTION.md) and source family S19. This prevents the roadmap from treating conditional acquisition of concern as still wholly unmodeled.
+
+A newly specified one-period model connects current learned valuation with an active rival alternative. It derives both the safeguard-versus-blockage and safeguard-versus-exit inequalities, supplies strict complementarity, and shows why stronger concern can favor harmless exit under imperfect safeguards. Direct action-ledger enumeration passed 7,040 exact rational cases. A separate AI reviewer checked the interface and its interpretations. The earlier concern-theory checks and reviews are retained with their original provenance; this targeted integration does not report them as rerun.
+
+The updated frontier is the joint formation and renewal of learned concern, protected evidence, and effective power under strategic interference and common resource limits. Their separate developmental theorems cannot be multiplied into a joint guarantee. The new reading bundle includes the completed concern branch, the strategic formation study, and the new bridge, while preserving the original source corpus separately.
+
 ## Original prospective integrated inquiry study
 
 The next study should test the **joint causal account**, while allowing a simpler model to win. This is a proposed design, not a completed experiment or an approved human-subject study.

@@ -45,6 +45,10 @@
 | Handoff can lose effective protection despite preserved equipment | Exact model cases and prescribed-path finance theorem | Actual reserve, transfer/rebuild options, operative incentives; no derivation of voluntary bequest | Formation A12–A13; experiment |
 | Stable renewal can leave patient harm irrelevant to selection | Explicit countermodel | Harm has no reward, constraint, or transition consequences for selector; direct concern absent | Formation report |
 | Standing beyond usefulness has a positive ethical defense | Conditional philosophical argument | Explicit standing, relevant consistency, answerability, and implementation premises; does not derive ethics from survival | Ethical foundation |
+| Learned concern can form from initially zero learned significance and recognition | Conditional construction in a parallel branch | Primitive valence, shared evaluation routing, informative paid learning, and specified recipient classes remain premises | Source S19 |
+| Concern and an active alternative can jointly induce protection when neither alone suffices | Exact one-period interface and strict witness | Distinct patient ledger, actual input control, affordable actions, known efficacy, and specified exit consequences | Concern and correction C1–C4 |
+| Increasing concern always produces more ongoing protected production | Rejected in the interface model | With imperfect efficacy, harmless exit can become preferable; actual patient outcomes matter | Concern and correction C5 |
+| The concern and strategic-formation dynamics have been jointly closed | Not established | Joint dated budgets, learning opportunities, interference, and succession must be modeled together | Concern and correction 4–5 |
 | This is the unique or best possible universal theory | Not established | Conditional optima are proved; scientific superiority and philosophical uniqueness need other justification | Theory 11 |
 
 ## How the theory can be challenged

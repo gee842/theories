@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "named_witnesses": {
+    "concern_only": {
+      "winners": [
+        "H"
+      ],
+      "S_B_H_scores": [
+        "2",
+        "3/2",
+        "5/2"
+      ]
+    },
+    "alternative_only": {
+      "winners": [
+        "B"
+      ],
+      "S_B_H_scores": [
+        "2",
+        "3",
+        "0"
+      ]
+    },
+    "together": {
+      "winners": [
+        "S"
+      ],
+      "S_B_H_scores": [
+        "2",
+        "3/2",
+        "0"
+      ]
+    },
+    "substitution_inactive": {
+      "winners": [
+        "S"
+      ],
+      "S_B_H_scores": [
+        "2",
+        "0",
+        "1"
+      ]
+    },
+    "substitution_active": {
+      "winners": [
+        "S"
+      ],
+      "S_B_H_scores": [
+        "2",
+        "0",
+        "0"
+      ]
+    },
+    "imperfect_moderate": {
+      "winners": [
+        "S"
+      ],
+      "S_B_H_scores": [
+        "1/2",
+        "0",
+        "0"
+      ]
+    },
+    "imperfect_high": {
+      "winners": [
+        "H"
+      ],
+      "S_B_H_scores": [
+        "-1/2",
+        "-2",
+        "0"
+      ]
+    }
+  },
+  "general_harm_cases": 648,
+  "scope": "Independent static decision reconstruction. No joint learning/strategic dynamics tested."
+}

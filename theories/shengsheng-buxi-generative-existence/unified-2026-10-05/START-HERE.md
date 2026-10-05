@@ -33,6 +33,8 @@ The diagram is a proposed causal structure. Each arrow needs a mechanism in an a
 
 **Effective protection can arise from actual choices.** A completed new model lets a participant build an alternative and lets the operator choose whether to protect or obstruct them. It derives protection from credible refusal under specified physical and strategic conditions. A persistent operator can nevertheless block once to remove the participant's future operating money. The exact two-period result separates the reserve needed to begin from the reserve needed to remove that attack. [Read the new development](FORMATION.md).
 
+**Concern can be learned, yet learning and power need to work together.** The parallel concern theory derives learned valuation and recognition from zero under explicit teaching and shared-routing premises. A new one-period interface proves that concern and a credible alternative can jointly induce protection when neither alone suffices. With imperfect safeguards, stronger concern can instead favor harmless exit. Their joint formation and renewal remain the next dynamical problem. [Read the connection and revised roadmap](CONCERN-AND-CORRECTION.md).
+
 **Understanding depends on consequential distinctions.** An aggregate can hide exactly the difference that determines the necessary response. More reasoning over unchanged information cannot always fix this. A new question, measurement, relation, tool, or institutional route may be needed. Complete knowledge is unnecessary when all remaining possibilities share a good action.
 
 **What is inherited must remain usable.** The experiments distinguish retention, access, activation, construction, and onward transmission. More inherited material helped some new tasks and obstructed others under fixed search budgets. No universal rule to maximize retention or openness followed.
@@ -47,12 +49,13 @@ The ethical commitment is that affected beings matter even when the productive w
 
 The [positive ethical argument](ETHICAL-FOUNDATION.md) now develops standing beyond usefulness, relevant consistency, and effective answerability. It distinguishes whose claims matter from who has the power to make others respond.
 
-The stronger hypothesis—that reality generally develops increasingly shared and responsive regeneration—remains open. We now have specific formation mechanisms and correction conditions. We still need an explanation of why responsiveness would systematically extend to centers whose protection is not already rewarded.
+The stronger hypothesis—that reality generally develops increasingly shared and responsive regeneration—remains open. We now have specific formation mechanisms and correction conditions. The concern model now explains one conditional path to learned responsiveness beyond private usefulness. Why its enabling architecture forms, spreads, and remains warranted for unfamiliar affected beings is still open.
 
 ## How to read the completed synthesis
 
 - [Unified theory](THEORY.md): the full argument, the connections among sessions, and the precise frontier.
 - [Formation and strategic correction](FORMATION.md), with [new proofs](FORMATION-MATH.md): the first completed development beyond the original synthesis.
+- [Concern and correction](CONCERN-AND-CORRECTION.md): the connection to learned concern, its exact action conditions, and the revised research route.
 - [Formal core](FORMAL-CORE.md): definitions, proofs, constructions, counterexamples, and scope conditions.
 - [Claim register](CLAIMS.md): what is proved, observed in simulations, proposed, or unresolved.
 - [Source map](SOURCE-MAP.md): the contribution and evidence status of each session family.
