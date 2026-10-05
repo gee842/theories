@@ -43,7 +43,14 @@ Let \(A_0,H_0\) be the free component counts at an operational starting state. L
 2N_f(w)\le A_0,\qquad 2N_t(w)\le H_0.
 \]
 
-These requirements accompany the selector's energy and timing conditions. An available fuel balance cannot manufacture missing components, and total material cannot substitute for the required type. Conversely, enough parts cannot pay an unaffordable operation.
+The stronger checked result is an **if-and-only-if construction criterion**. For a fixed inherited operational state and a proposed selector history with a specified endpoint, a material history projecting to that same history and endpoint exists exactly when:
+
+1. the history is admitted by the existing selector law; and
+2. both cumulative component demands above fit the inherited free stocks.
+
+The first condition preserves the selector law's actual payments and consequences. The second supplies the precise additional construction obligation. Since components are consumed without replenishment in this operational phase, the cumulative bounds also suffice at every assembly prefix. This is `material_trace_lift_iff`; the theorem is not restricted to the concrete witness below.
+
+An available fuel balance cannot manufacture missing components, and total material cannot substitute for the required type. Conversely, enough parts cannot pay an unaffordable operation. A positive-lease selector reached from the dormant handoff necessarily has at least two parts in incorporated inventory, so the model cannot obtain operative hardware by changing a flag without its construction.
 
 During operation, the sum of free parts, resident material and incorporated parts remains constant. Closed support includes common fuel, packet energy, the retained remainder and the retained local store. Trial expenditure, maintenance and unused packet loss are charged to the same history. A source packet lost after an unsuccessful trial is not silently available for the retry.
 
@@ -79,9 +86,11 @@ This is a feasible history with a witnessed change of mapping inside the continu
 
 The exhausted earlier witness cannot pay for this assembly. A funded state with the wrong component type can admit an assembly in the abstract selector model while blocking it in the material construction. Too few source packets, too little prepaid fuel or a failed formation order can likewise prevent the joined path. These failures are part of the result.
 
-The [Lean package](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/README.md) records the exact quantified statements and frozen-source verification. The [mathematical companion](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-MATH.md) gives the state interface, ledgers and witnesses. The [separate internal review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-REVIEW.md) checks the construction and its limits. Final verification counts are recorded after the completed check.
+A further checked history begins at the same prepared state, assembles the wrong H-based mapping, undergoes two unsuccessful trials, and then constructs the correct A-based mapping. It ends with **one fuel unit and two source packets**. The correct next trial requires two prepaid fuel units, so the eight units still contained in the packets cannot fund access to themselves. Correcting the mapping does not undo the material costs of reaching it. This refutes any inference that the constructible alternatives inevitably yield useful recovery.
 
-The independent finite check reconstructs the relevant transitions and conservations; it is a check of this synthetic law, not empirical evidence of a chemical implementation. Standard arithmetic and transition-refinement methods are used without a mathematical novelty claim.
+The [Lean package](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/README.md) records **40 new theorem audits**, checked with Lean 4.29.1 alongside 82 inherited audits. Two new results report empty axiom dependencies; the other 38 use only the standard `propext` and/or `Quot.sound`. There are no proof holes or custom axioms. The [mathematical companion](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-MATH.md) gives the state interface, ledgers and witnesses. The [separate internal review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTRUCTED-LEARNING-REVIEW.md) checks the construction and its limits.
+
+The independent finite check passes 6,480 handoff cases, the complete operational graph of 194 states and 510 labelled edges reachable from the main prepared state, and six counterchecks. A 456-case initial-stock grid also checks the declared joined word, without being presented as an all-stock theorem. These are checks of this synthetic law, not empirical evidence of a chemical implementation. Standard arithmetic and transition-refinement methods are used without a mathematical novelty claim.
 
 ## 6. What the next derivation can use
 
