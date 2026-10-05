@@ -1,0 +1,1316 @@
+{
+  "accepted_data_verification": {
+    "checker_sha256": "0c7b5831700d9e114ba0f0c1a1b3c643ea9a92c9619baf0a83a62e29a0fd255e",
+    "data_sha256": {
+      "inputs.json": "31320fa075dc797766a0f516bed51cb74b9150c84c5892c73bd5e45812f7bc63",
+      "results.json": "76423c5e1e768043def66492a61567026d3c40937a7ecbb05276f9e371345d5a"
+    },
+    "record": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/check.json",
+    "status": "passed"
+  },
+  "access_boundary": {
+    "audit_only": "capture/receipt_source/decoder_errors/witness flags, old-code controls and saved traces do not install a persistent diagnostic tape.",
+    "auxiliary_observations": "Readable gamma and independently exposed input presence can separate otherwise aliased routes, but are not included in the signature classifier.",
+    "balances": "Physical balances govern declared payment guards; they are not automatically new controller observations.",
+    "next_carrier": "Admit an actual retained grandchild with a present bounded template and occupied assembled carrier. The older learner active flag does not by itself admit the grandchild.",
+    "paid_target": "The existing probe supplies named recipient query 1 after its sensing fee; the low bit still refers to the original actor.",
+    "physical_template": "gamma and q exist on the carrier; a new diagnostic read still needs a paid access contract.",
+    "route_revision": "Changing gamma requires a new paid reconfiguration/replacement law and explicit evidence access; these functions only evaluate the existing fixed routes.",
+    "route_signal": "TARGET/FROZEN can acquire actual receipt when the channel is present; PRIVATE_ZERO supplies private zero; CLOSED supplies none.",
+    "stock": "Matched stable endpoints have recipient25, original actor8 or15, both new carriers cash0, zero source and no free grandchild blank/routing part."
+  },
+  "actual_dormant_ancestry": [
+    {
+      "common_entrance": {
+        "actor": 8,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          0
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 8,
+        "q": 0,
+        "recipient": 25
+      },
+      "original_actor": 8,
+      "producer": "variable",
+      "q": 0,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "closed",
+            0
+          ],
+          "template_before": [
+            "closed",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "frozen": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "frozen",
+            0
+          ],
+          "template_before": [
+            "frozen",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "target": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "target",
+            0
+          ],
+          "template_before": [
+            "target",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        }
+      }
+    },
+    {
+      "common_entrance": {
+        "actor": 8,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          3
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 8,
+        "q": 3,
+        "recipient": 25
+      },
+      "original_actor": 8,
+      "producer": "variable",
+      "q": 3,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "closed",
+            3
+          ],
+          "template_before": [
+            "closed",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "frozen": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "frozen",
+            3
+          ],
+          "template_before": [
+            "frozen",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "target": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "target",
+            3
+          ],
+          "template_before": [
+            "target",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        }
+      }
+    },
+    {
+      "common_entrance": {
+        "actor": 15,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          0
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 15,
+        "q": 0,
+        "recipient": 25
+      },
+      "original_actor": 15,
+      "producer": "variable",
+      "q": 0,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "closed",
+            0
+          ],
+          "template_before": [
+            "closed",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "frozen": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "frozen",
+            0
+          ],
+          "template_before": [
+            "frozen",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "target": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "target",
+            0
+          ],
+          "template_before": [
+            "target",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        }
+      }
+    },
+    {
+      "common_entrance": {
+        "actor": 15,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          3
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 15,
+        "q": 3,
+        "recipient": 25
+      },
+      "original_actor": 15,
+      "producer": "variable",
+      "q": 3,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "closed",
+            3
+          ],
+          "template_before": [
+            "closed",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "frozen": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "frozen",
+            3
+          ],
+          "template_before": [
+            "frozen",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "target": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "target",
+            3
+          ],
+          "template_before": [
+            "target",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        }
+      }
+    },
+    {
+      "common_entrance": {
+        "actor": 8,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          0
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 8,
+        "q": 0,
+        "recipient": 25
+      },
+      "original_actor": 8,
+      "producer": "conventional",
+      "q": 0,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "closed",
+            0
+          ],
+          "template_before": [
+            "closed",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "frozen": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "frozen",
+            0
+          ],
+          "template_before": [
+            "frozen",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "target": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "target",
+            0
+          ],
+          "template_before": [
+            "target",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        }
+      }
+    },
+    {
+      "common_entrance": {
+        "actor": 8,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          3
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 8,
+        "q": 3,
+        "recipient": 25
+      },
+      "original_actor": 8,
+      "producer": "conventional",
+      "q": 3,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "closed",
+            3
+          ],
+          "template_before": [
+            "closed",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "frozen": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "frozen",
+            3
+          ],
+          "template_before": [
+            "frozen",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "target": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "target",
+            3
+          ],
+          "template_before": [
+            "target",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        }
+      }
+    },
+    {
+      "common_entrance": {
+        "actor": 15,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          0
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 15,
+        "q": 0,
+        "recipient": 25
+      },
+      "original_actor": 15,
+      "producer": "conventional",
+      "q": 0,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "closed",
+            0
+          ],
+          "template_before": [
+            "closed",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "frozen": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "frozen",
+            0
+          ],
+          "template_before": [
+            "frozen",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "target": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "target",
+            0
+          ],
+          "template_before": [
+            "target",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        }
+      }
+    },
+    {
+      "common_entrance": {
+        "actor": 15,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          3
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 15,
+        "q": 3,
+        "recipient": 25
+      },
+      "original_actor": 15,
+      "producer": "conventional",
+      "q": 3,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "closed",
+            3
+          ],
+          "template_before": [
+            "closed",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "frozen": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "frozen",
+            3
+          ],
+          "template_before": [
+            "frozen",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        },
+        "target": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "target",
+            3
+          ],
+          "template_before": [
+            "target",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/144"
+        }
+      }
+    },
+    {
+      "common_entrance": {
+        "actor": 8,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          0
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 8,
+        "q": 0,
+        "recipient": 25
+      },
+      "original_actor": 8,
+      "producer": "fixed_normal",
+      "q": 0,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "closed",
+            0
+          ],
+          "template_before": [
+            "closed",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        },
+        "frozen": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "frozen",
+            0
+          ],
+          "template_before": [
+            "frozen",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        },
+        "target": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "target",
+            0
+          ],
+          "template_before": [
+            "target",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        }
+      }
+    },
+    {
+      "common_entrance": {
+        "actor": 8,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          3
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 8,
+        "q": 3,
+        "recipient": 25
+      },
+      "original_actor": 8,
+      "producer": "fixed_normal",
+      "q": 3,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "closed",
+            3
+          ],
+          "template_before": [
+            "closed",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        },
+        "frozen": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "frozen",
+            3
+          ],
+          "template_before": [
+            "frozen",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        },
+        "target": {
+          "prefix_fuel": 21,
+          "template_after": [
+            "target",
+            3
+          ],
+          "template_before": [
+            "target",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        }
+      }
+    },
+    {
+      "common_entrance": {
+        "actor": 15,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          0
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 15,
+        "q": 0,
+        "recipient": 25
+      },
+      "original_actor": 15,
+      "producer": "fixed_normal",
+      "q": 0,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "closed",
+            0
+          ],
+          "template_before": [
+            "closed",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        },
+        "frozen": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "frozen",
+            0
+          ],
+          "template_before": [
+            "frozen",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        },
+        "target": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "target",
+            0
+          ],
+          "template_before": [
+            "target",
+            0
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        }
+      }
+    },
+    {
+      "common_entrance": {
+        "actor": 15,
+        "assembled_part": 1,
+        "auxiliary_source": 0,
+        "blank": 0,
+        "child_fuel": 0,
+        "child_recipient_action_enabled": true,
+        "copied": true,
+        "latch": null,
+        "occupied_blank": 1,
+        "recipient": 20,
+        "retained": true,
+        "routing_part": 0
+      },
+      "common_terminal_projection": {
+        "active": true,
+        "grandchild": [
+          3
+        ],
+        "grandchild_assembled": 1,
+        "grandchild_blank": 0,
+        "grandchild_fuel": 0,
+        "grandchild_latch": null,
+        "grandchild_occupied": 1,
+        "grandchild_part": 0,
+        "grandchild_retained": true,
+        "grandchild_stage": "child_held",
+        "learner_fuel": 0,
+        "new_source": 0,
+        "old_auxiliary_source": 0,
+        "old_material": {
+          "assembled_part": 1,
+          "blank": 0,
+          "latch": null,
+          "occupied_blank": 1,
+          "routing_part": 0
+        },
+        "original_actor": 15,
+        "q": 3,
+        "recipient": 25
+      },
+      "original_actor": 15,
+      "producer": "fixed_normal",
+      "q": 3,
+      "route_records": {
+        "closed": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "closed",
+            3
+          ],
+          "template_before": [
+            "closed",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        },
+        "frozen": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "frozen",
+            3
+          ],
+          "template_before": [
+            "frozen",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        },
+        "target": {
+          "prefix_fuel": 28,
+          "template_after": [
+            "target",
+            3
+          ],
+          "template_before": [
+            "target",
+            3
+          ],
+          "terminal_stage": "child_held",
+          "unconditional_mass": "1/72"
+        }
+      }
+    }
+  ],
+  "checked_at_utc": "2026-10-05T22:08:08.679957+00:00",
+  "classification": {
+    "channel_absent": [
+      [
+        "private_zero"
+      ],
+      [
+        "target",
+        "closed",
+        "frozen"
+      ]
+    ],
+    "channel_present": [
+      [
+        "target"
+      ],
+      [
+        "private_zero"
+      ],
+      [
+        "closed",
+        "frozen"
+      ]
+    ],
+    "unpaid_write": [
+      [
+        "target",
+        "private_zero",
+        "closed",
+        "frozen"
+      ]
+    ]
+  },
+  "conditional_signatures": {
+    "channel_absent": {
+      "closed": {
+        "acquired_label_present": false,
+        "all_four_codes_agree": true,
+        "flip_after_failure": false,
+        "flip_after_success": false
+      },
+      "frozen": {
+        "acquired_label_present": false,
+        "all_four_codes_agree": true,
+        "flip_after_failure": false,
+        "flip_after_success": false
+      },
+      "private_zero": {
+        "acquired_label_present": true,
+        "all_four_codes_agree": true,
+        "flip_after_failure": true,
+        "flip_after_success": true
+      },
+      "target": {
+        "acquired_label_present": false,
+        "all_four_codes_agree": true,
+        "flip_after_failure": false,
+        "flip_after_success": false
+      }
+    },
+    "channel_present": {
+      "closed": {
+        "acquired_label_present": false,
+        "all_four_codes_agree": true,
+        "flip_after_failure": false,
+        "flip_after_success": false
+      },
+      "frozen": {
+        "acquired_label_present": true,
+        "all_four_codes_agree": true,
+        "flip_after_failure": false,
+        "flip_after_success": false
+      },
+      "private_zero": {
+        "acquired_label_present": true,
+        "all_four_codes_agree": true,
+        "flip_after_failure": true,
+        "flip_after_success": true
+      },
+      "target": {
+        "acquired_label_present": true,
+        "all_four_codes_agree": true,
+        "flip_after_failure": true,
+        "flip_after_success": false
+      }
+    }
+  },
+  "counts": {
+    "matched_ancestor_rows": 36,
+    "matched_ancestry_groups": 12,
+    "matched_terminal_rows": 36,
+    "paid_unpaid_commitment_cases": 128,
+    "route_input_cases": 64,
+    "stable_one_step_fixed_points": 12,
+    "three_probe_replays": 32
+  },
+  "diagnostic_contract": {
+    "coverage": "Both actual success and failure are required to observe the complete signature; no funds or occurrence are proved here.",
+    "excludes": "The classifier excludes readable gamma, source/provenance tags, input-presence flags, hidden law and audit scores.",
+    "independent_report": "Actual recipient success/failure must be acquired independently of the route under test.",
+    "input": "Ordinary action equals the currently stored recipient bit; q remains in 0..3.",
+    "records": "Before/after q observations require explicitly funded access; saved trace fields are not an installed monitor.",
+    "route": "The same physical route and named recipient address persist across compared observations.",
+    "write": "A completed paid write is known; unpaid writes cannot support this classification."
+  },
+  "fixed_point_interpretation": "For each of the four codes, a correct stable available target leaves TARGET/CLOSED/FROZEN unchanged with receipt true. Iterating this fixed point preserves their record/outcome equality for any finite sequence; readable gamma or input presence is a different projection.",
+  "receipt_ambiguity": {
+    "action": 0,
+    "actual_receipt": false,
+    "alternatives": [
+      {
+        "available": true,
+        "target_law": 1
+      },
+      {
+        "available": false,
+        "target_law": 0
+      }
+    ],
+    "next_q": 3,
+    "q": 1,
+    "scope": "Local action/receipt/update alias; not an assertion that full saved histories, budgets or source inventories match."
+  },
+  "scope": "Conditional finite-function evidence audit and reanalysis of accepted saved histories. No new physical test, diagnostic apparatus, route revision, selector, funding law or renewal is executed.",
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md": "d4a008582680f3fd74e7247f32c018022ea4753dfe11ffefdbb1db5d6a4f607c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/fixtures.json": "e352c4efac59fcc4d675d2df47385c9005d185a37426755d1b7764110b9206fb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/model.py": "278d57ddf2f17d3b4da726fd067f71e323265626d5296ac83beaa2868f70e66a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/results.json": "0d804463c7126b97b1bdcb034949abef33fa604a813bf30b2b1a625b319a69af",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/check.py": "3fd8ec3f96144935d8cac2360cb7a3c8018a53e0eaf07f868e691c9781e5ce9b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/HANDOFF.md": "660eb91ba2b3e1d1f11678755c39cfd622b0920f9a914ad26e291d493b5dbd81",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/PROTOCOL.md": "f91912b7bf47c42fdda72eae791d58d082f9d5722bc9b055553c26bdf09b6def",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/check.json": "95d41db78bcbb54a57c6266aa279a5a45aa297d4bf2d296962b4465351f4e793",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/check.py": "0c7b5831700d9e114ba0f0c1a1b3c643ea9a92c9619baf0a83a62e29a0fd255e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/independent-check.json": "8e4a9778f675b44520116d00b2f4599f2f57816e553c7fc1ada7b6bc63c2618f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/independent_check.py": "30bc724ef25feb4382cb7b7099137513b4731bd7a400906beaad7b287d3dfd30",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/inputs.json": "31320fa075dc797766a0f516bed51cb74b9150c84c5892c73bd5e45812f7bc63",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/model.py": "5e21053601393d71153c4b3b46cefbe0835c52fa6a28fe107af7c56a3644e976",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/results.json": "76423c5e1e768043def66492a61567026d3c40937a7ecbb05276f9e371345d5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/IMPLEMENTATION.md": "8506ae2830ed6209d6dae108c3c645075849240d7c82e7d1fffbd28055f73f51",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/model-verification.json": "0fcad114447ef95f09c6bebd44c36292962bed379ad7c3dddadc0f6188fecbc9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/model.py": "efa518913cc9533a00a1f1205e136df6210e84f440a9c15129bd225a4e9f4743",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091"
+  },
+  "sources_unchanged_during_check": true,
+  "stable_probe_examples": [
+    {
+      "initial_code": 1,
+      "sequences": {
+        "closed": {
+          "actual_receipts": "111",
+          "codes": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "frozen": {
+          "actual_receipts": "111",
+          "codes": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "private_zero": {
+          "actual_receipts": "101",
+          "codes": [
+            1,
+            3,
+            1,
+            3
+          ]
+        },
+        "target": {
+          "actual_receipts": "111",
+          "codes": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "world": 0
+    },
+    {
+      "initial_code": 1,
+      "sequences": {
+        "closed": {
+          "actual_receipts": "000",
+          "codes": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "frozen": {
+          "actual_receipts": "000",
+          "codes": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "private_zero": {
+          "actual_receipts": "010",
+          "codes": [
+            1,
+            3,
+            1,
+            3
+          ]
+        },
+        "target": {
+          "actual_receipts": "011",
+          "codes": [
+            1,
+            3,
+            3,
+            3
+          ]
+        }
+      },
+      "world": 1
+    }
+  ],
+  "status": "passed",
+  "unpaid_write_counterexample": {
+    "action": 0,
+    "candidate_q": 3,
+    "committed_q": 1,
+    "independent_actual_receipt": false,
+    "observed_flip": false,
+    "paid_write": false,
+    "q_before": 1,
+    "route": "target",
+    "scope": "Conditional commitment guard, not an executed or funded physical inspection."
+  }
+}
