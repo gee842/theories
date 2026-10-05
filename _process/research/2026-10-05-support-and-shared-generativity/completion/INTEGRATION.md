@@ -88,6 +88,18 @@ The C14 random rational cases test algebra only, not a distribution of physical 
 | C30 [Lean renewal ledger](../../../../experiments/shared-renewal-capability/formal/README.md) | Machine-checked enabledness/material/work identities, bare storage obstruction and 6n-capture lower bound | Aggregated ledger relation only; type projection, carrier semantics, stochastic and physical bridges remain separate |
 | C31 [Completed application review](APPLICATION-INTEGRATION.md) | Registered world-starter turn reports full hosted software verification, with saved evidence hashes and remaining acceptance gates | Implementation evidence; no prespecified theory test and no I1–I6 closure |
 
+### Complete entrances, typed renewal and missing distinctions
+
+| Contribution | Accepted result | Scope retained |
+|---|---|---|
+| C32 [Typed renewal](TYPED-RENEWAL-FORMALIZATION.md) | All 42 typed reactions, enabled steps and traces project to the frozen ledger; obstruction, turnover and exact-six loss budget checked in Lean | One-way stoichiometric overapproximation; no kinetic lumping, original tags, Python equivalence or physical identification |
+| C33 [Inherited support](RESERVE-SENSITIVE-TURNOVER.md) | Lean checks captures ≥ 6n + work change; complete organizational turnover requires ≥6+m′−m captures | Restored A/G and role-wear premises; spending inherited reserves can lower fresh capture needs; no positive-path probability |
+| C34 [Complete entrance and successor interface](FULL-ENTRY-SUCCESSOR.md) | All-history first-entry gate totals receive directed probability bounds under the unchanged unit law; full entrance/first-successor composition is specified | Pair/reserve and occupation outputs are floating; full tagged successor kernel uncomputed; old seven-capture reversible bound does not transfer automatically |
+| C35 [Consequential discovery](CONSEQUENTIAL-DISCOVERY.md) | Fair, funded prospective testing detects every covered positive-margin omitted distinction with controlled false declarations and finite paid installation | Fixed conditional means, obtainable contexts, feasible finite prefixes and joint correction are premises; finite-budget/indistinguishability limits retained; no autonomous origin or empirical validation |
+| C36 [RNA identification](RNA-IDENTIFICATION-CONTRACT.md) | All 15 host-donor effective coefficients reconstructed within printed rounding; exact two-RNA replacement boundary and nonidentifiability witnesses | Retrospective source audit; missing input CSV, physical clock, joint occupancy/capacity and binding data remain; proposed joint assay unrun |
+
+These contributions received independent AI-assisted review with the execution/read-only distinctions in [ENTRANCE-DISCOVERY-REVIEW.md](ENTRANCE-DISCOVERY-REVIEW.md). D1 is an analytic theorem, not a machine-checked or empirical result. The RNA competing-rate witnesses expose a possible discriminating assay; they do not yet supply D1's two obtainable contexts in one physical system.
+
 ## Conflict and dependency ledger
 
 | Issue | Resolution/status |
@@ -110,6 +122,10 @@ The C14 random rational cases test algebra only, not a distribution of physical 
 | Component repair versus full generativity | The original CF mechanism cannot rebuild A/G. C27 supplies a separately checked paid-access successor event; reproduction then has both repair and succession effects, and the same full task reverses with time. Episode retention is not a global order. |
 | Finite-time useful gain versus lasting preference | The integrated closed reversible model has a connected, type-symmetric equilibrium measure despite asymmetric kinetics. Its finite-event branch gain cannot imply useful-type equilibrium prevalence. |
 | Direction versus stationary turnover | A fixed nonconstant capability map cannot improve from every state of a finite irreducible process at every time. Selected preparations, inter-arrangement stationary comparisons, expanding systems and explicit survivor conditioning have different quantifiers. |
+| First entry versus successor generation | Full entrance retains mixed types and inherited reserves. The successor kernel must preserve those actual endpoints and count its stopping rule precisely; a favorable first-entry total is not regenerative continuation. |
+| Captured support versus inherited reserve depletion | Six captures per turnover applies to restored reserve. The generalized minimum is 6+m′−m; reduced fresh capture funded by spent reserves is not steady renewal. |
+| Old predictive success versus completeness | Old tests can remain exact while a new feasible test separates merged contexts. D1 makes covered discovery conditional on paid access and fresh evidence; finite funding and indistinguishable records prevent unrestricted guarantees. |
+| Effective rates versus identified future tasks | The RNA endpoint matrix can be reconstructed while microscopic lifetimes remain unidentifiable. A new task needs extra measurements or a valid bound over the entire compatible class. |
 | Classical stochastic model versus theory of everything | Classical specialization is useful but incomplete coverage. General interface does not derive quantum, relativistic or fundamental physical law. |
 
 ## Registered active contributions
@@ -145,3 +161,6 @@ The v0.5 preservation, result-provenance and link audit is recorded in [turnover
 The v0.6 [combined review](INTEGRATED-PROCESS-REVIEW.md) checks the complete event composition, equilibrium connectivity/symmetry, new retention law and its final succession obstruction. New exact formation and thermodynamic checks have saved outputs; the reviewer separately executed a nine-state rational calculation once. The [integrated verification record](integrated-process-verification.json) checks hashes, source preservation, the unchanged retention calculation after the limitation was added, and local links. No organization-only rerun is counted as scientific evidence.
 
 The v0.7 [paid-access review](PAID-ACCESS-REVIEW.md) checks the model, exact failure pruning, directed probability enclosure, narrow rate-class proof, finite-source transfer and formal-kernel scope. The [verification record](paid-access-verification.json) preserves hashes and reading/execution distinctions. The Lean compilation is new machine-checked evidence for its declared ledger deductions; the physical and universal premises remain open. Completed prior science was not rerun merely for integration.
+
+
+The v0.8 [entrance/discovery review](ENTRANCE-DISCOVERY-REVIEW.md) accepts typed projection and reserve-sensitive formal proofs, the all-history entrance certificate, the conditional discovery theorem and the RNA identification constraints. The [verification record](entrance-discovery-verification.json) checks frozen antecedents, compiler and calculation inputs, source-addition hashes and local links. The discovery check's specification input remains v0.7 at047a8c5; v0.8 is a documented integration delta, not a retroactive execution input. No completed scientific calculation was rerun solely for these index edits. The full theory goal remains active.

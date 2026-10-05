@@ -1,0 +1,780 @@
+{
+  "status": "passed; descriptive reconstruction and conditional algebra only",
+  "source_sha256_before_and_after": {
+    "sources/24-rna-network-evidence-2026-10-05/Mizuuchi-2022.pdf": "3b8c7d7eaec21f3dd97ddca0224abf876d06b0e66a5d48cdae6033ef96627f6c",
+    "sources/24-rna-network-evidence-2026-10-05/Bansho-2016.pdf": "4c9643e76215c9a422330524205d1691dff55651e8d85382bc5239382bcc9e70",
+    "sources/24-rna-network-evidence-2026-10-05/Mizuuchi-2022-SI.pdf": "a2cf3989ed16a6b4e76b08a5aba49b9a7597072058a3219ac7df58907c579d08",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/Mizuuchi-2022-source-data.xlsx": "544fa34ee8706c85e7137d69201e4d51da635bc1994fcd085811abc9ee545bde",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/Serial transfer of the five RNAs.ipynb": "83e1509f2694edd1ec96476dc51a8c784ceaae56e86cd49961efdf07c2b77878",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/author-code-README.md": "c1303a80c201a38f7d6b30f93277426574296c8c47194e8277ba988309df1348",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/dryad-dataset-metadata.json": "9120dbe1634a4575d3e28fa912c59bdacf03e6cb771ba963250d395492f4a061",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/dryad-files-metadata.json": "673a572917e53fe0ee699aef565842c6b92d997313fc2c2108c75ca921dd699a"
+  },
+  "checker_sha256": "6c349b33325c5989731191df453b077404bf38ba4db7a6a9e9246e63a82e1e1f",
+  "workbook_inventory": [
+    {
+      "sheet": "Fig. 4",
+      "rows": 57,
+      "columns": 17
+    },
+    {
+      "sheet": "Fig. S1",
+      "rows": 16,
+      "columns": 4
+    },
+    {
+      "sheet": "Fig. S5",
+      "rows": 12,
+      "columns": 7
+    },
+    {
+      "sheet": "Fig. S13",
+      "rows": 6,
+      "columns": 1
+    },
+    {
+      "sheet": "Fig. S14",
+      "rows": 6,
+      "columns": 1
+    },
+    {
+      "sheet": "Fig. S19",
+      "rows": 25,
+      "columns": 7
+    }
+  ],
+  "round228_assay_rows": 48,
+  "matrix_axis_convention": "rows donor j, columns target i",
+  "matrix_names": [
+    "HL1-228",
+    "HL2-228",
+    "HL3-228",
+    "PL2-228",
+    "PL3-228"
+  ],
+  "reconstructed_matrix": [
+    [
+      2.6155769038736514,
+      0.0,
+      0.0,
+      0.0,
+      3.372958794248614
+    ],
+    [
+      1.4199535066078746,
+      2.790439504902659,
+      1.4220166276709472,
+      5.711837734961316,
+      3.0409181273629518
+    ],
+    [
+      0.0,
+      0.0,
+      0.4389374547329766,
+      0.0,
+      3.058117421673137
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "printed_S23_matrix": [
+    [
+      2.615577,
+      0,
+      0,
+      0,
+      3.372959
+    ],
+    [
+      1.419954,
+      2.79044,
+      1.422017,
+      5.711838,
+      3.040918
+    ],
+    [
+      0,
+      0,
+      0.438937,
+      0,
+      3.058117
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "maximum_absolute_rounding_difference": 4.950973409023618e-07,
+  "reconstruction": [
+    {
+      "donor": "HL1-228",
+      "target": "HL1-228",
+      "replicate_rows": [
+        {
+          "row": 10,
+          "donor_fold": 8.140242738,
+          "target_fold": null
+        },
+        {
+          "row": 11,
+          "donor_fold": 9.516527273,
+          "target_fold": null
+        },
+        {
+          "row": 12,
+          "donor_fold": 14.89491679,
+          "target_fold": null
+        },
+        {
+          "row": 13,
+          "donor_fold": 22.14872649,
+          "target_fold": null
+        }
+      ],
+      "self_rows": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "alpha": 13.675103322750001,
+      "beta": null,
+      "gamma": null,
+      "reff": 13.675103322750001,
+      "target_mean_above_1_5": true,
+      "log_rate": 2.6155769038736514,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL1-228",
+      "target": "HL2-228",
+      "replicate_rows": [
+        {
+          "row": 14,
+          "donor_fold": 8.432725252,
+          "target_fold": 0.77051898112117
+        },
+        {
+          "row": 15,
+          "donor_fold": 12.88662562,
+          "target_fold": 0.951180923171425
+        },
+        {
+          "row": 16,
+          "donor_fold": 13.69581073,
+          "target_fold": 1.16549863757626
+        },
+        {
+          "row": 17,
+          "donor_fold": 17.88817715,
+          "target_fold": 1.34650050752801
+        }
+      ],
+      "self_rows": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "alpha": 13.675103322750001,
+      "beta": 13.225834687999999,
+      "gamma": 1.0584247623492162,
+      "reff": 1.0943784136070587,
+      "target_mean_above_1_5": false,
+      "log_rate": 0.0,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL1-228",
+      "target": "HL3-228",
+      "replicate_rows": [
+        {
+          "row": 18,
+          "donor_fold": 6.403085605,
+          "target_fold": 0.99365575747278
+        },
+        {
+          "row": 19,
+          "donor_fold": 15.71208246,
+          "target_fold": 0.650376109863342
+        },
+        {
+          "row": 20,
+          "donor_fold": 22.31836763,
+          "target_fold": 1.22398942838061
+        }
+      ],
+      "self_rows": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "alpha": 13.675103322750001,
+      "beta": 14.811178565,
+      "gamma": 0.9560070985722441,
+      "reff": 0.8826776203449197,
+      "target_mean_above_1_5": false,
+      "log_rate": 0.0,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL1-228",
+      "target": "PL2-228",
+      "replicate_rows": [
+        {
+          "row": 21,
+          "donor_fold": 19.30646473,
+          "target_fold": 1.33427121038145
+        },
+        {
+          "row": 22,
+          "donor_fold": 44.6895637,
+          "target_fold": 1.30670046740123
+        },
+        {
+          "row": 23,
+          "donor_fold": 8.911655262,
+          "target_fold": 0.730157680908619
+        }
+      ],
+      "self_rows": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "alpha": 13.675103322750001,
+      "beta": 24.302561230666665,
+      "gamma": 1.123709786230433,
+      "reff": 0.6323139065727579,
+      "target_mean_above_1_5": false,
+      "log_rate": 0.0,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL1-228",
+      "target": "PL3-228",
+      "replicate_rows": [
+        {
+          "row": 24,
+          "donor_fold": 6.944986275,
+          "target_fold": 22.1502001719892
+        },
+        {
+          "row": 25,
+          "donor_fold": 9.280913691,
+          "target_fold": 26.6907358544481
+        },
+        {
+          "row": 26,
+          "donor_fold": 12.68169988,
+          "target_fold": 12.8098772510638
+        }
+      ],
+      "self_rows": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "alpha": 13.675103322750001,
+      "beta": 9.635866615333333,
+      "gamma": 20.550271092500367,
+      "reff": 29.164691845492456,
+      "target_mean_above_1_5": true,
+      "log_rate": 3.372958794248614,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL2-228",
+      "target": "HL1-228",
+      "replicate_rows": [
+        {
+          "row": 27,
+          "donor_fold": 8.105152739,
+          "target_fold": 2.2849384365468
+        },
+        {
+          "row": 28,
+          "donor_fold": 11.45561497,
+          "target_fold": 2.38650292101246
+        },
+        {
+          "row": 29,
+          "donor_fold": 9.592677049,
+          "target_fold": 2.73305240445312
+        }
+      ],
+      "self_rows": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "alpha": 16.2881769625,
+      "beta": 9.717814919333334,
+      "gamma": 2.4681645873374602,
+      "reff": 4.136928095959898,
+      "target_mean_above_1_5": true,
+      "log_rate": 1.4199535066078746,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL2-228",
+      "target": "HL2-228",
+      "replicate_rows": [
+        {
+          "row": 30,
+          "donor_fold": 14.98050966,
+          "target_fold": null
+        },
+        {
+          "row": 31,
+          "donor_fold": 19.9199153,
+          "target_fold": null
+        },
+        {
+          "row": 32,
+          "donor_fold": 16.82994937,
+          "target_fold": null
+        },
+        {
+          "row": 33,
+          "donor_fold": 13.42233352,
+          "target_fold": null
+        }
+      ],
+      "self_rows": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "alpha": 16.2881769625,
+      "beta": null,
+      "gamma": null,
+      "reff": 16.2881769625,
+      "target_mean_above_1_5": true,
+      "log_rate": 2.790439504902659,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL2-228",
+      "target": "HL3-228",
+      "replicate_rows": [
+        {
+          "row": 34,
+          "donor_fold": 8.270955165,
+          "target_fold": 2.05097552816844
+        },
+        {
+          "row": 35,
+          "donor_fold": 12.73507503,
+          "target_fold": 2.09224059634905
+        },
+        {
+          "row": 36,
+          "donor_fold": 9.347977409,
+          "target_fold": 3.58212266304071
+        }
+      ],
+      "self_rows": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "alpha": 16.2881769625,
+      "beta": 10.118002534666667,
+      "gamma": 2.5751129291860666,
+      "reff": 4.145471889861136,
+      "target_mean_above_1_5": true,
+      "log_rate": 1.4220166276709472,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL2-228",
+      "target": "PL2-228",
+      "replicate_rows": [
+        {
+          "row": 37,
+          "donor_fold": 3.808441308,
+          "target_fold": 62.5324256670592
+        },
+        {
+          "row": 38,
+          "donor_fold": 3.740502647,
+          "target_fold": 45.8889906340716
+        },
+        {
+          "row": 39,
+          "donor_fold": 3.230509937,
+          "target_fold": 91.7231896186724
+        }
+      ],
+      "self_rows": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "alpha": 16.2881769625,
+      "beta": 3.5931512973333333,
+      "gamma": 66.7148686399344,
+      "reff": 302.4263373612081,
+      "target_mean_above_1_5": true,
+      "log_rate": 5.711837734961316,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL2-228",
+      "target": "PL3-228",
+      "replicate_rows": [
+        {
+          "row": 40,
+          "donor_fold": 10.77555346,
+          "target_fold": 9.62300449157897
+        },
+        {
+          "row": 41,
+          "donor_fold": 6.139848085,
+          "target_fold": 11.3250437350093
+        },
+        {
+          "row": 42,
+          "donor_fold": 10.07825366,
+          "target_fold": 13.7290844292089
+        }
+      ],
+      "self_rows": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "alpha": 16.2881769625,
+      "beta": 8.997885068333332,
+      "gamma": 11.559044218599057,
+      "reff": 20.924445724752747,
+      "target_mean_above_1_5": true,
+      "log_rate": 3.0409181273629518,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL3-228",
+      "target": "HL1-228",
+      "replicate_rows": [
+        {
+          "row": 43,
+          "donor_fold": 1.218523646,
+          "target_fold": 0.993281750208368
+        },
+        {
+          "row": 44,
+          "donor_fold": 0.965798557,
+          "target_fold": 1.10214588195407
+        },
+        {
+          "row": 45,
+          "donor_fold": 1.209951166,
+          "target_fold": 0.856911255268062
+        }
+      ],
+      "self_rows": [
+        49,
+        50,
+        51
+      ],
+      "alpha": 1.5510582729999967,
+      "beta": 1.1314244563333333,
+      "gamma": 0.9841129624768333,
+      "reff": 1.349110445219618,
+      "target_mean_above_1_5": false,
+      "log_rate": 0.0,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL3-228",
+      "target": "HL2-228",
+      "replicate_rows": [
+        {
+          "row": 46,
+          "donor_fold": 1.517766733,
+          "target_fold": 0.870061839787115
+        },
+        {
+          "row": 47,
+          "donor_fold": 2.526007518,
+          "target_fold": 0.841742618785
+        },
+        {
+          "row": 48,
+          "donor_fold": 1.006984277,
+          "target_fold": 0.94651260614572
+        }
+      ],
+      "self_rows": [
+        49,
+        50,
+        51
+      ],
+      "alpha": 1.5510582729999967,
+      "beta": 1.683586176,
+      "gamma": 0.8861056882392784,
+      "reff": 0.8163535541502859,
+      "target_mean_above_1_5": false,
+      "log_rate": 0.0,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL3-228",
+      "target": "HL3-228",
+      "replicate_rows": [
+        {
+          "row": 49,
+          "donor_fold": 1.200814408,
+          "target_fold": null
+        },
+        {
+          "row": 50,
+          "donor_fold": 1.97573405,
+          "target_fold": null
+        },
+        {
+          "row": 51,
+          "donor_fold": 1.47662636099999,
+          "target_fold": null
+        }
+      ],
+      "self_rows": [
+        49,
+        50,
+        51
+      ],
+      "alpha": 1.5510582729999967,
+      "beta": null,
+      "gamma": null,
+      "reff": 1.5510582729999967,
+      "target_mean_above_1_5": true,
+      "log_rate": 0.4389374547329766,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL3-228",
+      "target": "PL2-228",
+      "replicate_rows": [
+        {
+          "row": 52,
+          "donor_fold": 0.939281554,
+          "target_fold": 1.75836646437646
+        },
+        {
+          "row": 53,
+          "donor_fold": 1.758410015,
+          "target_fold": 0.709173716150526
+        },
+        {
+          "row": 54,
+          "donor_fold": 1.218852692,
+          "target_fold": 1.63999834535436
+        }
+      ],
+      "self_rows": [
+        49,
+        50,
+        51
+      ],
+      "alpha": 1.5510582729999967,
+      "beta": 1.3055147536666667,
+      "gamma": 1.3691795086271155,
+      "reff": 1.6266972074529233,
+      "target_mean_above_1_5": false,
+      "log_rate": 0.0,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    },
+    {
+      "donor": "HL3-228",
+      "target": "PL3-228",
+      "replicate_rows": [
+        {
+          "row": 55,
+          "donor_fold": 1.141382218,
+          "target_fold": 18.8380080435316
+        },
+        {
+          "row": 56,
+          "donor_fold": 1.330919424,
+          "target_fold": 11.4125831684443
+        },
+        {
+          "row": 57,
+          "donor_fold": 1.81072985699999,
+          "target_fold": 28.5317223544007
+        }
+      ],
+      "self_rows": [
+        49,
+        50,
+        51
+      ],
+      "alpha": 1.5510582729999967,
+      "beta": 1.4276771663333299,
+      "gamma": 19.594104522125534,
+      "reff": 21.287444134953486,
+      "target_mean_above_1_5": true,
+      "log_rate": 3.058117421673137,
+      "cell_columns": {
+        "donor": "N",
+        "target": "O",
+        "donor_fold": "P",
+        "target_fold": "Q"
+      }
+    }
+  ],
+  "missing_notebook_input": [
+    "211017.csv"
+  ],
+  "missing_input_scope": "Absent from pinned author repository tree (README and notebook only); no substitute CSV represented as original.",
+  "notebook_settings": {
+    "compartments": 300000,
+    "capacity": 300,
+    "dilution": 5,
+    "fusion_division_per_compartment": 1.3,
+    "reaction_time_code_units": 2
+  },
+  "source_ambiguities": [
+    "Fig S19 B11:B13 label HL1-158 while SI caption says round228.",
+    "Fig4 J23 sample loss retained as text; not part of round228 reconstruction.",
+    "Bansho2016 evolved-host efficiency/ratio printed inconsistency remains unresolved."
+  ],
+  "joint_renewal_boundary": {
+    "model": "Two-RNA restriction of published effective ODE, common saturation, no mutation/degradation",
+    "host": "HL2-228",
+    "parasite": "PL2-228",
+    "kh": 2.790439504902659,
+    "kp": 5.711837734961316,
+    "r": 2.046931218156104,
+    "dilution": 5,
+    "capacity": 300,
+    "initial_host": 10,
+    "initial_parasite": 10,
+    "required_capacity_for_joint_fivefold": 319.61467219332656,
+    "critical_equal_initial_occupancy": 9.386302510497323,
+    "condition": "D*h0 + D**r*p0 < C; strict for finite time when r>1",
+    "observed_extrema_sensitivity_r": [
+      1.8319646333191137,
+      2.2885014681816642
+    ],
+    "sensitivity_scope": "Range from component observed extrema; not a confidence interval or paired resampling"
+  },
+  "exact_michaelis_nonidentifiability_witness": [
+    {
+      "kon": "1",
+      "koff": "27/50",
+      "kcat": "11/50",
+      "Km": "19/25",
+      "bound_lifetime": "25/19"
+    },
+    {
+      "kon": "2",
+      "koff": "13/10",
+      "kcat": "11/50",
+      "Km": "19/25",
+      "bound_lifetime": "25/38"
+    }
+  ],
+  "scope": "No original notebook execution, fitting, stochastic data reproduction, held-out validation, or CF mapping."
+}

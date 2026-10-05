@@ -1,0 +1,269 @@
+{
+  "status": "all exact assertions passed",
+  "git_head_at_check": "047a8c54feae7c90ecb8de4c576e5d0efb4c8cdf",
+  "scope": "Exact arithmetic for a supplied deterministic finite model; no empirical, noisy-sample, universal-discovery, or autonomous-formation validation.",
+  "arithmetic": "Python integers and fractions.Fraction; no floating arithmetic in checks",
+  "state_transition": {
+    "a": "c",
+    "b": "a",
+    "c": "d",
+    "d": "d"
+  },
+  "outcome_profiles_length_0_to_3": {
+    "a": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "c": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "d": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "partitions": {
+    "0": [
+      [
+        "a",
+        "b",
+        "c"
+      ],
+      [
+        "d"
+      ]
+    ],
+    "1": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "d"
+      ]
+    ],
+    "2": [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "d"
+      ]
+    ],
+    "3": [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "d"
+      ]
+    ]
+  },
+  "new_separating_program": {
+    "primitive": "u",
+    "composition": "u;u",
+    "same_old_profile": [
+      "a",
+      "b"
+    ],
+    "expanded_outcomes": {
+      "a": 1,
+      "b": 0
+    }
+  },
+  "paid_jobs": [
+    {
+      "job": "construct length-0 program",
+      "cost": 1,
+      "cumulative_cost": 1
+    },
+    {
+      "job": "prepare a, execute 0 moves",
+      "cost": 4,
+      "cumulative_cost": 5
+    },
+    {
+      "job": "prepare b, execute 0 moves",
+      "cost": 4,
+      "cumulative_cost": 9
+    },
+    {
+      "job": "prepare c, execute 0 moves",
+      "cost": 4,
+      "cumulative_cost": 13
+    },
+    {
+      "job": "prepare d, execute 0 moves",
+      "cost": 4,
+      "cumulative_cost": 17
+    },
+    {
+      "job": "construct length-1 program",
+      "cost": 1,
+      "cumulative_cost": 18
+    },
+    {
+      "job": "prepare a, execute 1 moves",
+      "cost": 5,
+      "cumulative_cost": 23
+    },
+    {
+      "job": "prepare b, execute 1 moves",
+      "cost": 5,
+      "cumulative_cost": 28
+    },
+    {
+      "job": "prepare c, execute 1 moves",
+      "cost": 5,
+      "cumulative_cost": 33
+    },
+    {
+      "job": "prepare d, execute 1 moves",
+      "cost": 5,
+      "cumulative_cost": 38
+    },
+    {
+      "job": "construct length-2 program",
+      "cost": 1,
+      "cumulative_cost": 39
+    },
+    {
+      "job": "prepare a, execute 2 moves",
+      "cost": 6,
+      "cumulative_cost": 45
+    },
+    {
+      "job": "prepare b, execute 2 moves",
+      "cost": 6,
+      "cumulative_cost": 51
+    },
+    {
+      "job": "prepare c, execute 2 moves",
+      "cost": 6,
+      "cumulative_cost": 57
+    },
+    {
+      "job": "prepare d, execute 2 moves",
+      "cost": 6,
+      "cumulative_cost": 63
+    },
+    {
+      "job": "construct length-3 program",
+      "cost": 1,
+      "cumulative_cost": 64
+    },
+    {
+      "job": "prepare a, execute 3 moves",
+      "cost": 7,
+      "cumulative_cost": 71
+    },
+    {
+      "job": "prepare b, execute 3 moves",
+      "cost": 7,
+      "cumulative_cost": 78
+    },
+    {
+      "job": "prepare c, execute 3 moves",
+      "cost": 7,
+      "cumulative_cost": 85
+    },
+    {
+      "job": "prepare d, execute 3 moves",
+      "cost": 7,
+      "cumulative_cost": 92
+    },
+    {
+      "job": "install refined response table",
+      "cost": 4,
+      "cumulative_cost": 96
+    }
+  ],
+  "budget": 100,
+  "spent": 96,
+  "remaining": 4,
+  "declared_loss_example": {
+    "context_weights": [
+      "1/3",
+      "2/3"
+    ],
+    "losses": [
+      [
+        "0",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "0"
+      ]
+    ],
+    "coarse_minimum_regret": "1/6",
+    "per_use_access_cost": "1/30",
+    "feature_error_bound": "1/60",
+    "per_use_net_gain_lower": "7/60",
+    "uses": 900,
+    "inquiry_cost_in_declared_loss_units": "96",
+    "net_gain_lower": "9"
+  },
+  "statistical_allocation_finite_checks": {
+    "1": {
+      "assigned": "1/80",
+      "rectangle_bound": "1/80"
+    },
+    "2": {
+      "assigned": "13/720",
+      "rectangle_bound": "1/45"
+    },
+    "10": {
+      "assigned": "85758209/3073593600",
+      "rectangle_bound": "5/121"
+    },
+    "100": {
+      "assigned": "6298279515620432831604039806746810852371863111887772614548356729837465296367333760101/198345417187502417860902020400748573871926258646812148248510606767019779537433896960000",
+      "rectangle_bound": "500/10201"
+    }
+  },
+  "support_clock_check": {
+    "deadline": 192,
+    "work_capacity": "96",
+    "assumed_p1": "1/4",
+    "assumed_p2": "1/4"
+  },
+  "input_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md": "29a0761751282d95f60b44bad8f0a67c62b8259575d1cda15a7c51ccc626cec6",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md": "162e0ebf4017c175958c70e016ae40290247e70f61349e13ff4ff72d5540b694",
+    "_process/research/2026-10-05-causal-foundations/outputs/formal-results.md": "f6a84bd991395364b948b5171e10a2bb8cf65ef4d20a716138c1aa75b39f9e38",
+    "_process/research/2026-10-04-integrated-evolution/prospective-revision-math.md": "751b57560cfab36d19a3d9ee775e5b1bb285c06adfa37c4cbceb39a7eefe90ed",
+    "_process/research/2026-10-04-integrated-evolution/candidate-discovery-math.md": "c5eb3323656fbcdfa75aab864fbee7c8e4d0637fc2d36e1f988d394c3a32ae54",
+    "_process/research/2026-10-05-generative-health/discovery/DISCOVERY-MATH.md": "d8c216db80e83265475c649a31201c02bda304acdcd8a3eb5fae7ce6b49da380",
+    "_process/research/2026-10-05-revisable-concern/settlement/formal/FEATURE-CONSTRUCTION.md": "592807de46fadd04bdb9d4e9fcc9e8961ab032713327bda6e3060acad38e53f8"
+  },
+  "script_sha256": "02184cc6f846a9c8a7c41fdeff03aefb61a9fa728bb93370add18761f506fd02"
+}

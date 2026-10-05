@@ -1,0 +1,38 @@
+{
+  "retrieved_date": "2026-10-05",
+  "original_record": "../MANIFEST.json",
+  "github_commit": "defaabf8633d25fd809ac9ddfec7d65f44083207",
+  "source_discovery": "Article source-data link and git.io/JcliB redirected author repository; original source PDFs are in parent directory.",
+  "sources": [
+    {
+      "file": "Mizuuchi-2022-source-data.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-29113-x/MediaObjects/41467_2022_29113_MOESM6_ESM.xlsx",
+      "bytes": 15722047,
+      "sha256": "544fa34ee8706c85e7137d69201e4d51da635bc1994fcd085811abc9ee545bde"
+    },
+    {
+      "file": "Serial transfer of the five RNAs.ipynb",
+      "url": "https://raw.githubusercontent.com/rmizuuchi/Mizuuchi_Evo_RNA_Complexity/defaabf8633d25fd809ac9ddfec7d65f44083207/Serial%20transfer%20of%20the%20five%20RNAs.ipynb",
+      "bytes": 27034,
+      "sha256": "83e1509f2694edd1ec96476dc51a8c784ceaae56e86cd49961efdf07c2b77878"
+    },
+    {
+      "file": "author-code-README.md",
+      "url": "https://raw.githubusercontent.com/rmizuuchi/Mizuuchi_Evo_RNA_Complexity/defaabf8633d25fd809ac9ddfec7d65f44083207/README.md",
+      "bytes": 300,
+      "sha256": "c1303a80c201a38f7d6b30f93277426574296c8c47194e8277ba988309df1348"
+    },
+    {
+      "file": "dryad-dataset-metadata.json",
+      "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.95x69p8mr",
+      "bytes": 3542,
+      "sha256": "9120dbe1634a4575d3e28fa912c59bdacf03e6cb771ba963250d395492f4a061"
+    },
+    {
+      "file": "dryad-files-metadata.json",
+      "url": "https://datadryad.org/api/v2/versions/169739/files",
+      "bytes": 865,
+      "sha256": "673a572917e53fe0ee699aef565842c6b92d997313fc2c2108c75ca921dd699a"
+    }
+  ]
+}

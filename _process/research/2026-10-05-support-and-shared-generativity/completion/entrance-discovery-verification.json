@@ -1,0 +1,223 @@
+{
+  "created_at_utc": "2026-10-05T14:56:21.669926+00:00",
+  "type": "Integration provenance and display-bound audit; no scientific producer rerun",
+  "repository_head_before_commit": "047a8c54feae7c90ecb8de4c576e5d0efb4c8cdf",
+  "goal_status": "active; full successor ensemble, physical identification, paid discovery implementation, broad capability direction and universal coverage remain open",
+  "frozen_antecedents_unchanged": {
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/RENEWAL-RETURN.md": "8c72623e2cb4d4cc11ae944ef8fbefeb25e5b002187f0e7544670cfd13db827c",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/ARCHITECTURE-FORMATION-CRITIQUE.md": "d20d3284cb2afe84884d567c7d39efe1b3a360fee9375b2158c8116fc7e50362",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/THERMODYNAMIC-EMBEDDING.md": "77eefb42eddb97b76ef4e6d3335d732a2e84874e415d5d2323b47c40638312b8",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/DIRECTION-AND-TURNOVER.md": "7c819e13ff39c2c42e602946a498cc159e943bccd985444839e8724b3d97fe20",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/ALLOCATION-CONTROL.md": "93ba1c7d550d64b3176e34c1826ae45889b0a68907e33d0c766825273be7f60b",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATED-FORMATION-RENEWAL.md": "c1409e8614fd2ade57edcdbe74f004a5bf8c63b7199f4b1453c49fc9084e4947",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATED-THERMODYNAMICS.md": "3f0c7ae294539ff5004d5e8fe56519719ff9166ddff24ec4cc164727a720f559",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/USEFUL-RETENTION-MECHANISM.md": "0313fc92e856f3de983232361884f3133a23cfecf9b74ed0ca8b6cb2a3c5ff37",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/PAID-ACCESS-SUCCESSION.md": "89cecd8b82ed01cb08700cfecf7e0faf82acef95f6e1e2804a06818315193ddc",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/SUCCESSION-DIRECTION-CRITIQUE.md": "ed0b1ac10ce95da6ee4e4db388b2ebe25d1891c6b1d4c9a90e1210eaed622712",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/PAID-ACCESS-PHYSICAL-CONSTRAINTS.md": "02575e0e0fcce1c36c5618372364cce97795304ce641a7e40dd4379272ac17a7",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/PAID-ACCESS-THERMODYNAMIC-CERTIFICATE.md": "f4e22a33b3dd1979881e51963ac0c2f4fdafff52523538003abf47478c276ceb",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/monitor-state.json": "b01750efdd55fbed48ba04143dce209e8a46a8c7d1f09556117fe3ca05b2355e",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/PAID-ACCESS-REVIEW.md": "968af048cee3c9e9c4c26b03d2ffb50d4bf1897036e60277784c674eb820e4a4",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/APPLICATION-INTEGRATION.md": "8c3f258d6850dc0a1b60cd194c867d0d060b533b72737c268e185b9f727e1b49",
+    "experiments/shared-renewal-capability/paid-access/results.json": "056df47ec8892866f1c3fc07b8f8eba3b6f12a15baaedf5dd26ec39af20462c9",
+    "experiments/shared-renewal-capability/paid-access/path_check.py": "08bc3495a073b0b39c88f0ea41a959e4b9e6000dc5ca0f37b311a67eeb9d26d2",
+    "experiments/shared-renewal-capability/paid-access/README.md": "2a8ce2d5939b67f616a8a28f52026b73180cd1f9e116ec7cdd64139ac7cd1629",
+    "experiments/shared-renewal-capability/paid-access/certificate.json": "412419ccb89e4f21b109e6e68c225682d2f26b71bf5a989178eb5f7fd27dd607",
+    "experiments/shared-renewal-capability/paid-access/path-check.json": "4abc6f2cee0ba0c54fc1269a6f212ff44d08c5d60ed8bd9aa52230386c2f18d8",
+    "experiments/shared-renewal-capability/paid-access/certify.py": "8815b03a8df5b5db0ffa81a5e44a5e645d76a02ffb9c026a5073b0a91d40dda5",
+    "experiments/shared-renewal-capability/paid-access/compute.py": "c8cd7ead0ad6b9c8e33b71f85e7d10752a6eab2e27922093b54fa5ac7737fdac",
+    "experiments/shared-renewal-capability/paid-access/PROTOCOL.md": "440bd7d4031b9a51db9a92142d752e3ff4c133ee6f2ebfe218d50414dfade55d",
+    "experiments/shared-renewal-capability/formal/lean-verification.json": "02c2944dc7090def6d61a9c986831818ca28a8ccc0b8b4578bfcbf8b4758a5d0",
+    "experiments/shared-renewal-capability/formal/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/shared-renewal-capability/formal/lean-output.txt": "97cdc914bb338a23be3710ef73c762ac5f2804a1a745b3f8b7fb3f790d065782",
+    "experiments/shared-renewal-capability/formal/RenewalLedger.lean": "1c78c6dae53bc9b7c15ae3a24a63d83558d585fa07a4c402c25c571229514e74"
+  },
+  "reviewer_frozen_hashes_match": {
+    "TYPED-RENEWAL-FORMALIZATION.md": "edb466f965a017142f56b0b9673be5cc53fe3794e825b280f165954b7cc01378",
+    "RESERVE-SENSITIVE-TURNOVER.md": "498894395e5f3a86432df2400af994d879e53b87366a16350fdf680853370e35",
+    "CONSEQUENTIAL-DISCOVERY.md": "a7d1ac9a5e868caacaf8bc5595bd14e959419c970edfff015bb420e5f231255e",
+    "RNA-IDENTIFICATION-CONTRACT.md": "792922df2fdc6313c681067236c766544e933cebc4d227412bd82d7172db35e4"
+  },
+  "formal_checks": {
+    "typed_record_sha256": "f4e630dab1f28a8f78c00393cfe79cff7d67368f8b50518fe8dc7e6c9d2c496d",
+    "reserve_record_sha256": "a704b0a63c9697bb01ff9f2b23855b20646f33cebec288df86636bfbdc8f5248",
+    "compiler": "Lean 4.29.1",
+    "source_dependencies_outputs_and_compiler_match": true,
+    "executed_by": "formal agent; root and critic read sources/records",
+    "not_checked": "Original-carrier tags, Python generator equivalence, CTMC/probability semantics, full capability or physical validity"
+  },
+  "full_entry": {
+    "producer_record_sha256": "8e12c641beef1f3c4e29fd08cb43002b1b6b3a64d5855f1445cf504b29029084",
+    "certificate_sha256": "a287d372bebbf87f99622f682356aad5eadfd21496853c525af084067d581abb",
+    "producer_and_protocol_hashes_match": true,
+    "displayed_outward_intervals": {
+      "0": [
+        "0.00122046147710",
+        "0.00122046147717"
+      ],
+      "1": [
+        "0.00117785304329",
+        "0.00117785304336"
+      ]
+    },
+    "displayed_gap_lower": "4.2608433741e-5",
+    "displayed_overflow_upper": "2.474e-18",
+    "display_bounds_checked_with": "fractions.Fraction against saved exact certificate",
+    "execution": "root executed floating producer and directed certifier once each; critic independently read certificate code and checked rational display bounds",
+    "table_comparison": "formal agent inspected all42 input/output pairs against typed Lean; no machine-checked Python bridge",
+    "uncertified": "Pair/reserve and occupation floats; complete tagged successor kernel not computed"
+  },
+  "discovery": {
+    "record_sha256": "ac7562850c1dc8798deca947d81a9b493901ada382fd17b96eee3198a0abdd3d",
+    "input_status": {
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md": {
+        "execution_input_sha256": "29a0761751282d95f60b44bad8f0a67c62b8259575d1cda15a7c51ccc626cec6",
+        "execution_input_git_revision": "047a8c54feae7c90ecb8de4c576e5d0efb4c8cdf",
+        "current_sha256": "b98b4f549920ba958971cf1208d08433ea8a61b515e3ca99524cfa89df159a26",
+        "delta": "v0.8 integrates accepted results; no scientific rerun for document update"
+      },
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md": {
+        "unchanged_sha256": "162e0ebf4017c175958c70e016ae40290247e70f61349e13ff4ff72d5540b694"
+      },
+      "_process/research/2026-10-05-causal-foundations/outputs/formal-results.md": {
+        "unchanged_sha256": "f6a84bd991395364b948b5171e10a2bb8cf65ef4d20a716138c1aa75b39f9e38"
+      },
+      "_process/research/2026-10-04-integrated-evolution/prospective-revision-math.md": {
+        "unchanged_sha256": "751b57560cfab36d19a3d9ee775e5b1bb285c06adfa37c4cbceb39a7eefe90ed"
+      },
+      "_process/research/2026-10-04-integrated-evolution/candidate-discovery-math.md": {
+        "unchanged_sha256": "c5eb3323656fbcdfa75aab864fbee7c8e4d0637fc2d36e1f988d394c3a32ae54"
+      },
+      "_process/research/2026-10-05-generative-health/discovery/DISCOVERY-MATH.md": {
+        "unchanged_sha256": "d8c216db80e83265475c649a31201c02bda304acdcd8a3eb5fae7ce6b49da380"
+      },
+      "_process/research/2026-10-05-revisable-concern/settlement/formal/FEATURE-CONSTRUCTION.md": {
+        "unchanged_sha256": "592807de46fadd04bdb9d4e9fcc9e8961ab032713327bda6e3060acad38e53f8"
+      }
+    },
+    "execution": "critic executed supplied finite exact witness; root inspected code/result; formal agent independently reviewed analytic D1",
+    "scope": "D1 coverage and funding conditional; finite witness does not empirically validate countable discovery or autonomous formation"
+  },
+  "rna": {
+    "audit_sha256": "4da724ddfde3a002d08c10cc4b12e4dbffaa0f0b5882b4e36e01cae8697c1289",
+    "sources_and_producer_match": true,
+    "addition_manifest_sha256": "08ffff975431a26ff55347a604a8ca1c81bc38e7fbce7f8b679f1e92951969fb",
+    "new_originals": [
+      {
+        "file": "sources/24-rna-network-evidence-2026-10-05/identification-addition/Mizuuchi-2022-source-data.xlsx",
+        "sha256": "544fa34ee8706c85e7137d69201e4d51da635bc1994fcd085811abc9ee545bde",
+        "bytes": 15722047
+      },
+      {
+        "file": "sources/24-rna-network-evidence-2026-10-05/identification-addition/Serial transfer of the five RNAs.ipynb",
+        "sha256": "83e1509f2694edd1ec96476dc51a8c784ceaae56e86cd49961efdf07c2b77878",
+        "bytes": 27034
+      },
+      {
+        "file": "sources/24-rna-network-evidence-2026-10-05/identification-addition/author-code-README.md",
+        "sha256": "c1303a80c201a38f7d6b30f93277426574296c8c47194e8277ba988309df1348",
+        "bytes": 300
+      },
+      {
+        "file": "sources/24-rna-network-evidence-2026-10-05/identification-addition/dryad-dataset-metadata.json",
+        "sha256": "9120dbe1634a4575d3e28fa912c59bdacf03e6cb771ba963250d395492f4a061",
+        "bytes": 3542
+      },
+      {
+        "file": "sources/24-rna-network-evidence-2026-10-05/identification-addition/dryad-files-metadata.json",
+        "sha256": "673a572917e53fe0ee699aef565842c6b92d997313fc2c2108c75ca921dd699a",
+        "bytes": 865
+      }
+    ],
+    "old_source24_unchanged": [
+      {
+        "file": "sources/24-rna-network-evidence-2026-10-05/.gitattributes",
+        "sha256": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b",
+        "bytes": 13
+      },
+      {
+        "file": "sources/24-rna-network-evidence-2026-10-05/Bansho-2016.pdf",
+        "sha256": "4c9643e76215c9a422330524205d1691dff55651e8d85382bc5239382bcc9e70",
+        "bytes": 1181793
+      },
+      {
+        "file": "sources/24-rna-network-evidence-2026-10-05/MANIFEST.json",
+        "sha256": "5d7c0336c09e3e6942f04219609883a219d8a4a53b4b1202b56b2a2ebed9db92",
+        "bytes": 826
+      },
+      {
+        "file": "sources/24-rna-network-evidence-2026-10-05/Mizuuchi-2022-SI.pdf",
+        "sha256": "a2cf3989ed16a6b4e76b08a5aba49b9a7597072058a3219ac7df58907c579d08",
+        "bytes": 16866850
+      },
+      {
+        "file": "sources/24-rna-network-evidence-2026-10-05/Mizuuchi-2022.pdf",
+        "sha256": "3b8c7d7eaec21f3dd97ddca0224abf876d06b0e66a5d48cdae6033ef96627f6c",
+        "bytes": 1583315
+      },
+      {
+        "file": "sources/24-rna-network-evidence-2026-10-05/README.md",
+        "sha256": "017144e68764bb6fa1f43bbe0b2d17b9d3bd6668f8a103f218a5515093621c22",
+        "bytes": 1440
+      }
+    ],
+    "execution": "physical agent read workbook, pinned notebook, supplementary matrix and ran read-only source audit; root inspected program, result and algebra; agent separately audited provenance without rerun",
+    "scope": "Retrospective coefficient reconstruction and conditional model/identification analysis; proposed joint assay unrun"
+  },
+  "review_corrections": [
+    "Only gate-total entrance probabilities called certified; pair/reserve distributions remain floating",
+    "New successor composition tag3c preserves prior kinetic inequality tag3b",
+    "Candidate gaps may be zero; D1 guarantees every covered positive witness",
+    "Competing kinetic alternatives distinguish old observation laws but do not yet instantiate D1 contexts",
+    "First completed turnover distinguished from later successful retries"
+  ],
+  "local_links_checked": 498,
+  "missing_local_links": [],
+  "monitor": "Registered cross-chat integrations already resolved; paused heartbeat unchanged; no other-chat messages or new polls",
+  "inspected_file_hashes": {
+    "RESEARCH.md": "d87e0ad017f66d65b2f714833ed386db1ceeaa52b73bd0ac9e12cba5c059feb6",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENTIAL-DISCOVERY.md": "a7d1ac9a5e868caacaf8bc5595bd14e959419c970edfff015bb420e5f231255e",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/ENTRANCE-DISCOVERY-REVIEW.md": "e31962933019c6227b659fdbe0f42ba56e712b5437d6d65e44a704be8f47d3a7",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/FULL-ENTRY-SUCCESSOR.md": "c3c8a52a1f786e79304b4617818420b101cabeb2072f7f891687968945cfe23c",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md": "a113b196f7e8c423461e1c7f3a14bea140eed4cd7cafb8ced9c9db5eb2cdc077",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/RESERVE-SENSITIVE-TURNOVER.md": "498894395e5f3a86432df2400af994d879e53b87366a16350fdf680853370e35",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/RNA-IDENTIFICATION-CONTRACT.md": "792922df2fdc6313c681067236c766544e933cebc4d227412bd82d7172db35e4",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/TYPED-RENEWAL-FORMALIZATION.md": "edb466f965a017142f56b0b9673be5cc53fe3794e825b280f165954b7cc01378",
+    "experiments/shared-renewal-capability/README.md": "61c2ed287076ef1b5e255a43ab609bc1823ad2392865fee64466a27f7ab699d9",
+    "experiments/shared-renewal-capability/discovery/README.md": "5120ff181e153c5088882b3e5ddf2d39401e8a6b36b5b7368fee0352f4a49cb1",
+    "experiments/shared-renewal-capability/discovery/exact-check.json": "ac7562850c1dc8798deca947d81a9b493901ada382fd17b96eee3198a0abdd3d",
+    "experiments/shared-renewal-capability/discovery/exact_check.py": "02184cc6f846a9c8a7c41fdeff03aefb61a9fa728bb93370add18761f506fd02",
+    "experiments/shared-renewal-capability/formal/README.md": "caece63eb2a83b3298c3129ee0317245f8dd6665565671b22a2f55d58e7b7295",
+    "experiments/shared-renewal-capability/formal/ReserveTurnover.lean": "c0e6ba1c9f3adb1980121e2e0e2f55358256acdae356921638bffd4d8d212b55",
+    "experiments/shared-renewal-capability/formal/TypedRenewal.lean": "73d0fea4f9fbf2a51560b850d608d2cc83a6ac8db80a8b7b2981f5f76a5a193c",
+    "experiments/shared-renewal-capability/formal/reserve-check.py": "ef26354977ce0a9efa36dd638896f1b2b670994419a91e9a31a56ef07dd601ff",
+    "experiments/shared-renewal-capability/formal/reserve-lean-output.txt": "277f35c2359e09ee9901c86f602b0df37a7ab0d231a04cd8b6212716a186e99a",
+    "experiments/shared-renewal-capability/formal/reserve-lean-verification.json": "a704b0a63c9697bb01ff9f2b23855b20646f33cebec288df86636bfbdc8f5248",
+    "experiments/shared-renewal-capability/formal/reserve-ledger-dependency-output.txt": "97cdc914bb338a23be3710ef73c762ac5f2804a1a745b3f8b7fb3f790d065782",
+    "experiments/shared-renewal-capability/formal/reserve-typed-dependency-output.txt": "527214af93e6ddcc3dd8e5262f4a22a4afe0038eab09393408e1b4b755862769",
+    "experiments/shared-renewal-capability/formal/typed-check.py": "1ebca6acd97154d5d9e78bb2f5cc75f0ec59ad669a6c489a65d471c795634b5a",
+    "experiments/shared-renewal-capability/formal/typed-dependency-output.txt": "97cdc914bb338a23be3710ef73c762ac5f2804a1a745b3f8b7fb3f790d065782",
+    "experiments/shared-renewal-capability/formal/typed-lean-output.txt": "527214af93e6ddcc3dd8e5262f4a22a4afe0038eab09393408e1b4b755862769",
+    "experiments/shared-renewal-capability/formal/typed-lean-verification.json": "f4e630dab1f28a8f78c00393cfe79cff7d67368f8b50518fe8dc7e6c9d2c496d",
+    "experiments/shared-renewal-capability/full-entry/PROTOCOL.md": "24c98a721043c38d114e6933e0c9a80558d3814f2fda83d4b3e00773273bbb8b",
+    "experiments/shared-renewal-capability/full-entry/README.md": "0011c487d9a18a3dd60f93780919eee6a9f2b63b19dccd37c8f4b0a671c5ea2f",
+    "experiments/shared-renewal-capability/full-entry/certificate.json": "a287d372bebbf87f99622f682356aad5eadfd21496853c525af084067d581abb",
+    "experiments/shared-renewal-capability/full-entry/certify.py": "bb95ea4d053109e7544993cb54a75097415948a024dd6f70fe5dfc20375898ac",
+    "experiments/shared-renewal-capability/full-entry/compute.py": "e7ab065ffa835bc9eb5aa2164e205c8efb5b3b06a0bdae7a79f3845018b2cb7e",
+    "experiments/shared-renewal-capability/full-entry/results.json": "8e12c641beef1f3c4e29fd08cb43002b1b6b3a64d5855f1445cf504b29029084",
+    "experiments/shared-renewal-capability/rna-identification/README.md": "5dc58550ba2b02f40f46cfc637ceba5ab8b43918b02c008f23d7d3ca02afd883",
+    "experiments/shared-renewal-capability/rna-identification/audit.json": "4da724ddfde3a002d08c10cc4b12e4dbffaa0f0b5882b4e36e01cae8697c1289",
+    "experiments/shared-renewal-capability/rna-identification/audit.py": "6c349b33325c5989731191df453b077404bf38ba4db7a6a9e9246e63a82e1e1f",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/MANIFEST.json": "08ffff975431a26ff55347a604a8ca1c81bc38e7fbce7f8b679f1e92951969fb",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/Mizuuchi-2022-source-data.xlsx": "544fa34ee8706c85e7137d69201e4d51da635bc1994fcd085811abc9ee545bde",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/README.md": "db63695b56922109c3f51bc741779c1d52ee27cd244e3410a000b81775e02a22",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/Serial transfer of the five RNAs.ipynb": "83e1509f2694edd1ec96476dc51a8c784ceaae56e86cd49961efdf07c2b77878",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/author-code-README.md": "c1303a80c201a38f7d6b30f93277426574296c8c47194e8277ba988309df1348",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/dryad-dataset-metadata.json": "9120dbe1634a4575d3e28fa912c59bdacf03e6cb771ba963250d395492f4a061",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/dryad-files-metadata.json": "673a572917e53fe0ee699aef565842c6b92d997313fc2c2108c75ca921dd699a",
+    "sources/SOURCES.md": "0202ce9d132e3a0da7f19750b3dfe6c449f35921238f48ed94a1eb9db5301c08",
+    "theories/shengsheng-buxi-generative-existence/README.md": "b41d57db800ed50422e426e32766a34033688209dffefa499934d09352ba820e",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md": "da7868d745a0122b729425afef005a0019fbc45456b3f4af0f8e52cc608d12c6",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md": "b98b4f549920ba958971cf1208d08433ea8a61b515e3ca99524cfa89df159a26"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "checked_at_utc": "2026-10-05T14:23:12.087808+00:00",
+  "working_directory": "/Users/ren/theories/experiments/shared-renewal-capability/formal",
+  "dependency_command": [
+    "lean",
+    "-o",
+    "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/typed-renewal-lean-wmr8_itg/RenewalLedger.olean",
+    "RenewalLedger.lean"
+  ],
+  "dependency_exit_code": 0,
+  "command": [
+    "lean",
+    "TypedRenewal.lean"
+  ],
+  "environment_override": {
+    "LEAN_PATH": "/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/typed-renewal-lean-wmr8_itg"
+  },
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "exit_code": 0,
+  "source_sha256": "73d0fea4f9fbf2a51560b850d608d2cc83a6ac8db80a8b7b2981f5f76a5a193c",
+  "ledger_source_sha256": "1c78c6dae53bc9b7c15ae3a24a63d83558d585fa07a4c402c25c571229514e74",
+  "imported_olean_sha256": "cf9ff8aca14bb6f2304f32d0b0982939f7c31c00ea641d2c8767adce05db903b",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "checker_sha256": "1ebca6acd97154d5d9e78bb2f5cc75f0ec59ad669a6c489a65d471c795634b5a",
+  "protocol_sha256": "440bd7d4031b9a51db9a92142d752e3ff4c133ee6f2ebfe218d50414dfade55d",
+  "dependency_output_sha256": "97cdc914bb338a23be3710ef73c762ac5f2804a1a745b3f8b7fb3f790d065782",
+  "output_sha256": "527214af93e6ddcc3dd8e5262f4a22a4afe0038eab09393408e1b4b755862769",
+  "contains_sorry_token": false,
+  "contains_custom_axiom_declaration": false,
+  "contains_native_decide": false,
+  "output_contains_sorryAx": false,
+  "scope": "Concrete two-type reaction stoichiometry, enabled steps and traces; proved one-way projection to the frozen pooled ledger; bare obstruction, conditional six-capture turnover bound and exact loss-budget consequence. No original-carrier tags, typed positive path, kinetic lumping, CTMC enumerator equivalence, probability certification or physical calibration.",
+  "temporary_dependency_removed_after_check": true
+}
