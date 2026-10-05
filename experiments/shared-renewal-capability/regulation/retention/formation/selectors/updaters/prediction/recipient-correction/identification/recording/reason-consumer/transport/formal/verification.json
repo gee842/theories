@@ -1,0 +1,51 @@
+{
+  "checked_at_utc": "2026-10-05T21:48:55.973465+00:00",
+  "status": "passed",
+  "scope": "Generic partial-adapter semantic preservation and composition; a finite command-versus-patient countermodel; declared role transport; and separation of reason, admission and causal effects. Std-only abstract contract; no upstream implementation refinement, ethical grounding or physical evidence-to-action join is claimed.",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "9a783cd9bb0f2364669537cf18681d9b21b79b3fd9f6a8ff9bfd0c17a5f7bc15",
+  "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/SemanticAction.lean",
+  "source_sha256": "10706d041844c7ec492be81211661a83f999ac128bc527cbd154507857bdb7e7",
+  "source_unchanged_during_check": true,
+  "fresh_temporary_build": true,
+  "imports": [
+    "Std"
+  ],
+  "command": [
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+    "-o",
+    "SemanticAction.olean",
+    "SemanticAction.lean"
+  ],
+  "exit_code": 0,
+  "new_audited_declarations": 16,
+  "audited_declarations": [
+    "SemanticAction.preserves_iff_no_counterexample",
+    "SemanticAction.preserves_composition",
+    "SemanticAction.preserves_under_justified_scope_restriction",
+    "SemanticAction.rejecting_everything_is_sound_but_exports_nothing",
+    "SemanticAction.raw_route_as_patient_has_counterexample",
+    "SemanticAction.no_injective_mask_decoder_preserves_fixed_bearer",
+    "SemanticAction.addressed_command_keeps_bearer_and_changes_action",
+    "SemanticAction.role_scope_composes",
+    "SemanticAction.justified_role_scope_transports_instrumental",
+    "SemanticAction.changed_actor_can_preserve_role_scope",
+    "SemanticAction.matching_label_is_insufficient_after_reopening",
+    "SemanticAction.sound_admission_preserves_reason",
+    "SemanticAction.distinct_reason_and_action_stages_have_models",
+    "SemanticAction.authorization_and_feasibility_do_not_supply_ground",
+    "SemanticAction.compatibility_does_not_supply_evaluative_good",
+    "SemanticAction.selected_action_requires_two_independent_contracts"
+  ],
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "output": "verification/SemanticAction.txt",
+  "output_sha256": "f2c6ea1c4076865cd920de0503fa92d01ce368c5fae07d359f63af1f088bb266"
+}

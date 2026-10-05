@@ -1,0 +1,24 @@
+{
+  "retrieved_at_utc": "2026-10-05T22:14:31.807164+00:00",
+  "scope": "Public Dryad metadata only; original CSV content not obtained by these requests. Direct website file requests403; API file download401.",
+  "files": [
+    {
+      "file": "dataset-metadata.json",
+      "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.h18931zjd",
+      "sha256": "5794abb904bf2797bc0f58ddbe5248d371837bf808ae2fd3563b0e44dbb1e46f",
+      "bytes": 3759
+    },
+    {
+      "file": "version-metadata.json",
+      "url": "https://datadryad.org/api/v2/versions/93077",
+      "sha256": "4f8a5fc8c24622e4698da6644244623d517a7d99359ea3b6dd149fb66120bc6b",
+      "bytes": 3558
+    },
+    {
+      "file": "files-metadata.json",
+      "url": "https://datadryad.org/api/v2/versions/93077/files",
+      "sha256": "216f6632b9127cf205c41d1af1a636adecab24f8078b2e078e456c9717f1cb0a",
+      "bytes": 3275
+    }
+  ]
+}

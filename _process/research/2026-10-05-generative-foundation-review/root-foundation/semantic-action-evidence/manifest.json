@@ -1,0 +1,18 @@
+{
+  "purpose": "Interpretation evidence for the two-patient consumer during active parallel development; not an implementation import or upstream acceptance.",
+  "captured_at_utc": "2026-10-05T21:58:49.684574+00:00",
+  "files": [
+    {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean",
+      "snapshot": "ReasonProtection.lean.txt",
+      "sha256": "4f4c9ca03bb48a93e9b124d998683b9066cae3f6e7d62d6600425fd51da103e6",
+      "byte_identical": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REASON-PROTECTION.md",
+      "snapshot": "REASON-PROTECTION.md.txt",
+      "sha256": "cc4e93cc518ee25309efaba1e41c9e43ac9a2009569359149f5317904268bd9f",
+      "byte_identical": true
+    }
+  ]
+}

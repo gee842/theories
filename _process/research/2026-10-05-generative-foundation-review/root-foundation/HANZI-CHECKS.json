@@ -1,0 +1,202 @@
+{
+  "date": "2026-10-06",
+  "scope": "Document integrity and local link targets only",
+  "documents": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HANZI-AND-THEORY-TREE.md",
+      "bytes": 12861,
+      "sha256": "33da165e464eacb3f078e4503f962101696a6df087047c073f6af4229de0fd67"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-hanzi-and-theory-tree.md",
+      "bytes": 1296,
+      "sha256": "0f03ece5f603148d204a43865a5bb35ad51d8698439b28bbbf3baee10fdce199"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-THEORY-MAP.md",
+      "bytes": 19529,
+      "sha256": "82e5051c9a8880079ec2687dc743f2c4d8b84868f5599f92ffe037c041eb0892"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-FORM-EVIDENCE.md",
+      "bytes": 11059,
+      "sha256": "345aa96298b1fbae22c1d73c23a0654ce2651e78f3f77c311d7b6fd56cf7c201"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-LEXICAL-PILOT.md",
+      "bytes": 7634,
+      "sha256": "32f0974ba36f0d8ca4c7b544ad472dd4f0cf800f8191cfb0b6dea3c5ffb3dd1b"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-MAPPING-REVIEW.md",
+      "bytes": 16071,
+      "sha256": "d27a662ed824de107e21b79bb37c62aebc516c9e561063209cbae24eeec483ff"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-INTEGRATION.md",
+      "bytes": 6397,
+      "sha256": "10d07ba72c05f29a1564f3fae91df6c7a9796731d80ffb11f39789ba809d0333"
+    }
+  ],
+  "local_link_targets_checked": 62,
+  "broken_local_links": [],
+  "unresolved_reference_links": [],
+  "external_urls_recorded": 38,
+  "external_scope": "Source reading recorded in research notes; no whole-URL/fragment availability audit",
+  "shared_file_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": false,
+      "concurrent_difference_review": "Only an existing reason/protection progress paragraph changed; reviewed and retained without rollback. Own insertion is intact.",
+      "difference_after_removing_own_insertion": [
+        "--- \n",
+        "+++ \n",
+        "@@ -3 +3,3 @@\n",
+        "-**Paid reasons and effective protection, 6 October 2026:** read the [canonical result](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REASON-PROTECTION.md), [mathematics](../../2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-MATH.md), [internal review](../../2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-REVIEW.md) and [empirical identification contract](../../2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md). The constructed physical interface and finite game pass 61 new Lean audits and 22 strategic cases. The [completion audit](FOUNDATION-COMPLETION-AUDIT.md) and [input ledger](CONCERN-WISDOM-INPUTS.md) retain the distinct remaining typed-evidence, evaluation-origin, successor-route and empirical obligations.",
+        "+**Semantic evidence-to-action composition, 6 October 2026:** read the [canonical integration](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md), [independent fixture identification](SEMANTIC-ACTION-IDENTIFICATION.md), [primary comparators](SEMANTIC-ACTION-COMPARATORS.md) and [scope/implementation review](SEMANTIC-ACTION-REVIEW.md). Sixteen checked Lean declarations establish the abstract transport contract. Separate finite checks preserve 666 rows and test 14,472 scenarios, 1,024 joint mismatches and 10,404 source/destination pairs. The failed raw-mask interpretation, repaired cross-history substitution and surviving calibration failure are retained. Actual meaning-preserving, funded actuation and justified concern remain further connections; no upstream acceptance or physical effect is inferred from this interface check.",
+        "+",
+        "+**Paid reasons and effective protection, 6 October 2026:** read the [canonical result](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REASON-PROTECTION.md), [mathematics](../../2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-MATH.md), [internal review](../../2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-REVIEW.md) and [empirical identification contract](../../2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md). The physical interface passes 61 new Lean audits; the separate finite game passes 22 strategic cases. The [completion audit](FOUNDATION-COMPLETION-AUDIT.md) and [input ledger](CONCERN-WISDOM-INPUTS.md) retain the distinct remaining typed-evidence, evaluation-origin, successor-route and empirical obligations."
+      ]
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": false,
+      "concurrent_difference_review": "Only an existing reason/protection progress paragraph changed; reviewed and retained without rollback. Own insertion is intact.",
+      "difference_after_removing_own_insertion": [
+        "--- \n",
+        "+++ \n",
+        "@@ -3 +3 @@\n",
+        "-**Latest reason/action interface, 6 October 2026:** [recorded reasons and effective protection](REASON-PROTECTION.md) now join actual formed evidence, a paid reader and actuator, three reason revisions/actions and explicit strategic alternatives. Sixty-one new Lean audits and independent finite computation establish the conditional construction and its failure regimes. A warranted reason does not create authority; voluntary protection can be cheaper than enforcement; a selected commercial audit does not derive ethical significance or the acquisition schedule. Next is composing actual recipient-derived partial facts with their justified grounds and paid action, preserving current resources and later revision. The five completion conditions below remain the governing goal.",
+        "+**Latest reason/action interface, 6 October 2026:** [recorded reasons and effective protection](REASON-PROTECTION.md) now join actual formed evidence, a paid reader and actuator, three paid audits/actions, including selective revision and cold replay and explicit strategic alternatives. Sixty-one new Lean audits and independent finite computation establish the conditional construction and its failure regimes. A warranted reason does not create authority; voluntary protection can be cheaper than enforcement; a selected commercial audit does not derive ethical significance or the acquisition schedule. Next is composing actual recipient-derived partial facts with their justified grounds and paid action, preserving current resources and later revision. The five completion conditions below remain the governing goal.",
+        "@@ -27,0 +28,2 @@\n",
+        "+",
+        "+**Semantic composition before the action join, 6 October 2026:** [the new interface](SEMANTIC-ACTION-COMPOSITION.md) rules out equating two command reasons for one recipient with two patient reasons merely because they share a mask. Sixteen Lean audits establish a conditional meaning-preserving transport/composition law; separate checks of frozen provisional source histories establish positive scoped dispatch, reject authentic cross-history substitution and preserve the limits of provenance under corrupted calibration. No physical action or ethical ground is added by metadata. The next actual join must construct and fund the reason-to-controller route and establish its consequence for the same recipient, while positive grounds, legitimate authority and actor-scope justification remain explicit. This advances the information/meaning interface within the full derivation rather than substituting type checking for concern or protection.",
+        "@@ -257 +259 @@\n",
+        "-| Shared understanding becomes sustainable wisdom and effective correction | The [unified theory](THEORY.md), [joint formation](JOINT-FORMATION.md) and [ethical argument](ETHICAL-FOUNDATION.md) connect understanding, protection, resources and succession. [Repeated recipient learning](RECIPIENT-RENEWAL.md) now composes actual acquired-response revision and copying with exact prefix-funding conditions and finite inventory, under supplied calibrated laws. | Connect these capacities to the preceding derivation and explain the conditions of wider concern, exclusion and their transitions. Join contextual recipient facts to warranted reasons and effective action through actual succession; renewed operational learning alone does not justify standing or authority. Investigate favorable directional hypotheses with their own scope and evidence. |",
+        "+| Shared understanding becomes sustainable wisdom and effective correction | The [unified theory](THEORY.md), [joint formation](JOINT-FORMATION.md) and [ethical argument](ETHICAL-FOUNDATION.md) connect understanding, protection, resources and succession. [Repeated recipient learning](RECIPIENT-RENEWAL.md) now composes actual acquired-response revision and copying with exact prefix-funding conditions and finite inventory, under supplied calibrated laws. [Semantic action composition](SEMANTIC-ACTION-COMPOSITION.md) now checks bearer/command preservation and scoped succession, exposing an invalid mask join and a repaired destination-history omission. | Connect these capacities to the preceding derivation and explain the conditions of wider concern, exclusion and their transitions. Construct the paid scoped-reason-to-controller route and establish its actual recipient consequence; semantic advice alone does not supply actuation, standing or authority. Investigate favorable directional hypotheses with their own scope and evidence. |"
+      ]
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "theories/jian-and-wenyan-as-formal-language/README.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    }
+  ],
+  "historical_source_preservation": [
+    {
+      "path": "sources/12-claude-ai-chats/2026-05-01_古文字的编码结构与动态所指_d11473e1.md",
+      "sha256": "6bf560e6d9be3d00e2beb7396dc95686bb26546f6fb4c3d6f42069437a117619",
+      "head_available": true,
+      "unchanged_from_head": true
+    },
+    {
+      "path": "sources/12-claude-ai-chats/2026-05-04_求导求积与其他势的处理方法_35c49130.md",
+      "sha256": "35bcf0e095a4f98854d52da8045bb7ee91105390498d125eff97512c952244ff",
+      "head_available": true,
+      "unchanged_from_head": true
+    },
+    {
+      "path": "sources/12-claude-ai-chats/2026-05-05_古文一元论与语言的逻辑收敛_2954cf42.md",
+      "sha256": "3fd894c1b69410b04562bea2eaee835cf5d388bff29e4bf0e88f3b31b9abc79e",
+      "head_available": true,
+      "unchanged_from_head": true
+    },
+    {
+      "path": "sources/08-jian-wen-language/jian-repo/WENYAN_FOUNDATION_NOTE_v1.0.md",
+      "sha256": "59ab5f7c1ab98e54448a4ea443ec6d9a81a28834e3bae96591a3349b3f041a70",
+      "head_available": true,
+      "unchanged_from_head": true
+    }
+  ],
+  "new_formal_or_empirical_results": false,
+  "natural_bijection_established": false,
+  "whole_corpus_or_foundation_complete": false,
+  "continuation_status_update": {
+    "date": "2026-10-06",
+    "scope": "Ren confirms the direction as feasible and the route opened; research remains unfinished and may continue. Documentation/status only.",
+    "prior_checks": "Earlier fields retain the original delivery snapshot; the documents below reflect this later status update.",
+    "source_quote_preserved_verbatim": true,
+    "prior_hanzi_source_unchanged": [
+      "sources/15-codex-theory-conversations/2026-10-06-hanzi-and-theory-tree.md"
+    ],
+    "updated_documents": [
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-06-classical-direction-feasible-and-open.md",
+        "bytes": 2063,
+        "sha256": "441401530a8f1c1c36115097ac212bc85ab8bb81433ef406f6e4e1030eb289cc"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DAO-AND-GENERATIVITY.md",
+        "bytes": 21182,
+        "sha256": "72ddf04f0a9c2b2e2dbc940ce223e504824524996716fc1258c3a67f4e5515ae"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRE-QIN-AND-WENYAN.md",
+        "bytes": 13261,
+        "sha256": "4517f6bcc05e9f45e26e2b9da56d5d62af5f45dcf4f039670889f36c3c7f2504"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HANZI-AND-THEORY-TREE.md",
+        "bytes": 13196,
+        "sha256": "ce14dea241fbac5430c4877b03c371aaef8f1794deb47a8072f1333a1dd953d2"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-INTEGRATION.md",
+        "bytes": 7955,
+        "sha256": "e6c741c5f6778887ecc43323c643b807cb03cf6fab05cae859519b821d9ad7e9"
+      },
+      {
+        "path": "RESEARCH.md",
+        "bytes": 73150,
+        "sha256": "34fa9fa4d56f1acb96a3295b0534d10e4fc28a17c9df39e415003d43459035ba"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "bytes": 21966,
+        "sha256": "dc11acb925ce89cdbe0a1a800b94d7a61e68b4cf999a67319c215c72f1f3e1e6"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/README.md",
+        "bytes": 467973,
+        "sha256": "9a0fbb82bf071c29c85592fa003364673699971a89c2359983c5cadb81537026"
+      },
+      {
+        "path": "theories/jian-and-wenyan-as-formal-language/README.md",
+        "bytes": 303085,
+        "sha256": "bed6441764ab43e38948c045a7760b448a43d7c9fea97833c0e12cfd5923b800"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "bytes": 83622,
+        "sha256": "ea8fc12502ee58d3abf284a551f66b5e561abbd6ec37debd8cbc2f9109e95259"
+      },
+      {
+        "path": "sources/SOURCES.md",
+        "bytes": 171443,
+        "sha256": "55cf0211e358d91f54370c6b5c7f9585d23c1dacdbc996728521041265c07492"
+      }
+    ],
+    "changed_text_local_link_targets_checked": 32,
+    "broken_local_links": [],
+    "changed_files_match_planned_narrow_edits": true,
+    "new_formal_or_empirical_results": false,
+    "research_complete": false
+  }
+}

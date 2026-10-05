@@ -1,0 +1,227 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-05T21:59:06.650008+00:00",
+  "scope": "Current integration path links, preserved bytes and correspondence to saved scientific receipts. No experiment rerun, empirical observation or physical action is implied by this check.",
+  "scientific_checks_rerun": false,
+  "documents": 8,
+  "local_path_links": 44,
+  "links": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../_process/research/2026-10-05-concern-theory/RECIPIENT-REASONS-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "REASON-PROTECTION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/semantic-action-evidence/manifest.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-IDENTIFICATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/check_model.py"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/model-verification.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-COMPARATORS.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-INTEGRATION.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-CHECK.py"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-complete-alignment-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "ALIGNMENT-AND-GOVERNANCE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "RECIPIENT-RENEWAL.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "RECIPIENT-RENEWAL.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/model.py"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../RESEARCH.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/PROTOCOL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/check_model.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/model-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-IDENTIFICATION.md",
+      "target": "../../2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-IDENTIFICATION.md",
+      "target": "../../2026-10-05-revisable-concern/settlement/evidence/report.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-COMPARATORS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-REVIEW.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/README.md",
+      "target": "PROTOCOL.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/README.md",
+      "target": "model.py"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/README.md",
+      "target": "evidence/manifest.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/README.md",
+      "target": "results.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/README.md",
+      "target": "formal/SemanticAction.lean"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/README.md",
+      "target": "verification.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/README.md",
+      "target": "../model.py"
+    }
+  ],
+  "independent_source_hashes": 11,
+  "independent_counts": {
+    "source_rows": 666,
+    "source_cases": 18,
+    "producers": 3,
+    "source_distributions": 54,
+    "reached_receipts": 246,
+    "current_receipts": 102,
+    "independently_compared_scenario_evaluations": 14472,
+    "independent_conjunction_cases": 1024,
+    "upstream_conventional_equality": true,
+    "independent_live_source_destination_pairs": 10404,
+    "opposite_command_cross_destination_rejections": 5202,
+    "conventional_relational_dispatch_equality": true,
+    "exact_projection_and_mass_preservation": true,
+    "observer_orientation_rebuilt_from_actual_positive_capture_commands": true,
+    "actual_request_eligible_count": 0,
+    "executed_count": 0,
+    "protection_established_count": 0
+  },
+  "formal_theorems": 16,
+  "source_fixture_status": "Parent integration remains provisional; acceptance is not inherited.",
+  "preserved_producer_files": 5,
+  "preserved_consumer_files": 2,
+  "artifact_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md": "b11ff31fe8f47bf16b40ca0b058271138e1285e74e7b52f34b701df483777b7a",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md": "e6d7e4f2bdb1d5ec4ece8aa6141c4b8178d830eae5c372d5766b72fe88cd0bdd",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-IDENTIFICATION.md": "f73a336d4026355a47f7e4b72d7edacadc641c6661a39233f7e8ce794b6cf3d3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-COMPARATORS.md": "e26518eb29f33b9457b1090eca0cd2dc6705e9b91638d999eeb1a18bf70ef9b4",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-REVIEW.md": "7eb2fe765b7781b6e3d6b17c0958a83e5d0151b56cf1bc0934abfbe1761a15df",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/PROTOCOL.md": "1f9ea8d941adfbc89e55f0fdbb0e202335722a03f114c8395815032e6d0a266b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/README.md": "d0873cdb5bcef7c189303ab613bfcd38445dcdfc3fa96bab1b1334a0c822baf9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/README.md": "c01400789b74e55a3298e940facdfe32a93c2c7435bf1b1f2ff7e08ffe4c2c74",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-ACTION-CHECK.py": "969b86da134841d1d8527eef66eecf8d43c95d377e61960235a9e57c019fa98f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/model-verification.json": "c46fec76a7e886af0015dbf994448276070f9fdf99e1074ae58d05492997a641",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/formal/verification.json": "04f3af78e5d28033d44130d85e8b782b992eb77a33a4b333057315b89ffd9977",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/manifest.json": "f893f4870ca394db276c5ada65776b5794436989d90cfde33691c33b2e0681ce",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/semantic-action-evidence/manifest.json": "a2953a46e3e299489a7c3c033eff73d1ad1465c101254a25beb9d57e7a9bc3fa"
+  },
+  "full_alignment_goal": "ongoing",
+  "next_connection": "Construct and fund the actual scoped-reason-to-controller binding, execute the same recipient causal law, and identify its consequence without importing ethical grounds, authority or recipient-funded leverage."
+}

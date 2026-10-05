@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-06",
+  "scope": "Document integrity and local link targets, not historical truth, source collation, empirical evidence or formal verification",
+  "new_documents": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRE-QIN-AND-WENYAN.md",
+      "sha256": "e142577e8f45237a30f16e988c89528856ba964e304a2ef85dbd86301d1a38ab",
+      "bytes": 12863
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-pre-qin-and-wenyan-scope.md",
+      "sha256": "5c857ffb7a1496ca2d4dea4d2ed169016d6799b15600a85b06c1b3ec861785aa",
+      "bytes": 1425
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-CONFUCIAN.md",
+      "sha256": "f6d2740849edd42918263cd5ca1deb9a3dd26826c505e34fc121df4c771bddce",
+      "bytes": 26205
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-MOHIST-POLITICAL.md",
+      "sha256": "3c7a00583e23e01640d544d9bf93b6c69f3d3c600bdc0cc8d74128505e5d1d4e",
+      "bytes": 14525
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-LATER-TRANSFORMATIONS.md",
+      "sha256": "03c03f331b5f8fbc8eade97112bb7ee0e9928a99f74e48b18b03767a195d828e",
+      "bytes": 18362
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-LANGUAGE-AND-CORPUS.md",
+      "sha256": "8d95c241e6cd56b7426201ed753ae7d4314b2405031cdb044f6ee3ff70b40529",
+      "bytes": 9945
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-CORPUS-MAP.md",
+      "sha256": "dccd2338cb9439fa8d6f470cbda34017551bf26ce4471dfedacd12cd09179d2e",
+      "bytes": 9306
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WENYAN-REVIEW.md",
+      "sha256": "b9e7c0aec06dd67681a7e90aae0b92873b328676535622fd18ae0eb68aa51d05",
+      "bytes": 5505
+    }
+  ],
+  "local_links_checked": 77,
+  "broken_local_links": [],
+  "external_urls_recorded": 56,
+  "external_url_check_scope": "Primary passages read through browser in this research; no automated whole-URL availability or fragment-validation claim",
+  "shared_file_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "inserted_paragraph_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "inserted_paragraph_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "inserted_paragraph_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "inserted_paragraph_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "inserted_paragraph_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "theories/jian-and-wenyan-as-formal-language/README.md",
+      "inserted_paragraph_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    }
+  ],
+  "source_preservation": [
+    {
+      "path": "sources/07-shengsheng-buxi/ssbx-repo/义理/L_文道一也_自释与微核.md",
+      "sha256": "d655354bd43fbc38502077e58a3079441bb0333e80dfa9379ae20940cb4cf485",
+      "tracked_head_available": true,
+      "unchanged_from_head": true,
+      "scope": "Current bytes equal original version-control bytes"
+    },
+    {
+      "path": "sources/08-jian-wen-language/jian-repo/WENYAN_FOUNDATION_NOTE_v1.0.md",
+      "sha256": "59ab5f7c1ab98e54448a4ea443ec6d9a81a28834e3bae96591a3349b3f041a70",
+      "tracked_head_available": true,
+      "unchanged_from_head": true,
+      "scope": "Current bytes equal original version-control bytes"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-dao-and-generative-grounding.md",
+      "sha256": "5f888b9cb2b72b518f8d28893bc3dd403063dd2277226ffceacfe7b58f7b5a53",
+      "tracked_head_available": false,
+      "unchanged_from_head": null,
+      "scope": "Prior uncommitted source record: only fingerprinted, not compared to HEAD"
+    }
+  ],
+  "formal_or_empirical_tests_run": false,
+  "whole_corpus_complete": false,
+  "unified_foundation_complete": false
+}

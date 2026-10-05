@@ -1,0 +1,36 @@
+{
+  "scope": "Retrospective descriptive browser-preview calculation; no inferential replication.",
+  "source": "https://datadryad.org/dataset/doi:10.5061/dryad.h18931zjd",
+  "version": 93077,
+  "experiment": "experiment4.csv public HTML preview",
+  "row_count": 48,
+  "paired_focal_ids": 24,
+  "pull_totals": {
+    "neutral": 21,
+    "cooperating": 53
+  },
+  "mean_pulls": {
+    "neutral": "7/8",
+    "cooperating": "53/24"
+  },
+  "paired_pull_difference_mean": "4/3",
+  "paired_direction": {
+    "lower": 4,
+    "higher": 17,
+    "equal": 3
+  },
+  "missing_cells": {
+    "Pull6": 2
+  },
+  "transcription": {
+    "canonical_ascii_length": 3119,
+    "fnv1a64": "df8ebe2256185e27",
+    "header_adaptation": "Blank first header renamed preview_row"
+  },
+  "file_sha256": {
+    "experiment4-preview.tsv": "4a2a9b660cfd9920a8d1bdcc7830507341e6c58ff08b239398dd6daebb82adbd",
+    "check_preview.py": "facb78ecbedb620fcfea6d220c8dec78c5c8f1ff44d6893e31571498b8e198b4"
+  },
+  "original_csv_downloaded": false,
+  "original_csv_bytes_verified": false
+}

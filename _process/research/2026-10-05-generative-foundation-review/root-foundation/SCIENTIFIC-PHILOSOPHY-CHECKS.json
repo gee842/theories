@@ -1,0 +1,425 @@
+{
+  "date": "2026-10-06",
+  "timezone": "Asia/Bangkok",
+  "scope": "New scientific-philosophy artifacts and this task-specific integration paragraphs; no scientific package rerun or external URL availability claim.",
+  "status": "pass",
+  "local_links_checked": 72,
+  "local_anchors_checked": 9,
+  "issues": [],
+  "git_diff_check_exit_code": 0,
+  "artifacts": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "bytes": 24659,
+      "words": 3223,
+      "sha256": "b42ba04164ea731545535c528855759cc013c6393597cc66cf4d38d61e5a6c06"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "bytes": 25266,
+      "words": 3371,
+      "sha256": "b749005ab0304881d26388e6b78f9b83625336fc60d80e154b9515b5749c87fd"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "bytes": 22787,
+      "words": 2977,
+      "sha256": "cd3c84b77f21a7c87b2db3e6e3e1b34e6c44ebfc61bd1baa7991dc622c37d5c9"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md",
+      "bytes": 21702,
+      "words": 2781,
+      "sha256": "074b2093ab415b6a9f6d2003d088daee1b227214658947912ad24fcdb57a9458"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "bytes": 13272,
+      "words": 1704,
+      "sha256": "3f5f97d522f08c22ac66fa74c03a73d178fac5ded0b42323dee4a690883b46cb"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "bytes": 9276,
+      "words": 1104,
+      "sha256": "2e94fcceb635b83a433a1647734438e270229f420414d450de86f34d77f61f2d"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-scientific-philosophy-compatibility.md",
+      "bytes": 2235,
+      "words": 282,
+      "sha256": "2b804669292e966aa0045e97c5915681884b2579e1f2a1d3266664f6ea942dcf"
+    }
+  ],
+  "links": [
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "../../../sources/15-codex-theory-conversations/2026-10-06-scientific-philosophy-compatibility.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work",
+      "target_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "FOUNDATION-PREMISES.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "CONDITIONAL-UNIVERSALITY.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INVARIANCE-AND-PRIOR-ART.md#6-what-follows-for-truth-reasonableness-and-universality",
+      "target_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "../../../_process/research/2026-10-05-concern-theory/RECIPIENT-IDENTIFICATION-INTEGRATION.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "RECORDED-REASONS.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "href": "GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation",
+      "target_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "href": "INFORMATION-AND-RENEWAL.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "href": "../../2026-10-05-concern-theory/TRANSFER-EVIDENCE-MATH.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "href": "ROOT-FOUNDATION.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "href": "INFORMATION-AND-RENEWAL.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "href": "../../2026-10-05-concern-theory/RECIPIENT-IDENTIFICATION-INTEGRATION.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "href": "../../2026-10-05-concern-theory/RECORDING-FIDELITY-INTEGRATION.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "href": "ROOT-FOUNDATION.md#1-the-invariant-is-what-the-system-can-actually-accomplish",
+      "target_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-INTERFACE.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-INTERFACE.md#3-indistinguishability-constrains-revision",
+      "target_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "href": "../../2026-10-05-concern-theory/TRANSFER-EVIDENCE-MATH.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "href": "INVARIANCE-AND-PRIOR-ART.md#6-what-follows-for-truth-reasonableness-and-universality",
+      "target_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "href": "SCIENTIFIC-PHILOSOPHY-SOURCES.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md#2-five-distinct-kinds-of-commitment",
+      "target_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "href": "SCIENTIFIC-PHILOSOPHY-SOURCES.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "href": "INVARIANCE-AND-PRIOR-ART.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation",
+      "target_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "href": "../../../../sources/15-codex-theory-conversations/2026-10-06-scientific-philosophy-compatibility.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "href": "../../2026-10-05-concern-theory/RECORDING-FIDELITY-INTEGRATION.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "href": "SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "href": "CONCERN-WISDOM-INPUTS.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "href": "CROSS-DOMAIN-IDENTIFICATION.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "../../../../sources/15-codex-theory-conversations/2026-10-06-scientific-philosophy-compatibility.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "SCIENTIFIC-PHILOSOPHY-SOURCES.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "../../../../sources/15-codex-theory-conversations/2026-10-06-scientific-philosophy-compatibility.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "../../../../RESEARCH.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/README.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work",
+      "target_exists": true,
+      "anchor_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "README.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "../../../../sources/SOURCES.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "href": "SCIENTIFIC-PHILOSOPHY-CHECKS.json",
+      "target_exists": true
+    },
+    {
+      "file": "sources/15-codex-theory-conversations/2026-10-06-scientific-philosophy-compatibility.md",
+      "href": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "target_exists": true
+    },
+    {
+      "file": "sources/15-codex-theory-conversations/2026-10-06-scientific-philosophy-compatibility.md",
+      "href": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target_exists": true
+    },
+    {
+      "file": "RESEARCH.md",
+      "href": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "target_exists": true
+    },
+    {
+      "file": "RESEARCH.md",
+      "href": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/README.md",
+      "href": "unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "href": "SCIENTIFIC-PHILOSOPHY.md",
+      "target_exists": true
+    },
+    {
+      "file": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "href": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "href": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "href": "SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "href": "SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "href": "SCIENTIFIC-PHILOSOPHY-SOURCES.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "href": "SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "target_exists": true
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "href": "SCIENTIFIC-PHILOSOPHY-REVIEW.md",
+      "target_exists": true
+    },
+    {
+      "file": "sources/SOURCES.md",
+      "href": "15-codex-theory-conversations/2026-10-06-scientific-philosophy-compatibility.md",
+      "target_exists": true
+    },
+    {
+      "file": "sources/SOURCES.md",
+      "href": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md",
+      "target_exists": true
+    }
+  ]
+}

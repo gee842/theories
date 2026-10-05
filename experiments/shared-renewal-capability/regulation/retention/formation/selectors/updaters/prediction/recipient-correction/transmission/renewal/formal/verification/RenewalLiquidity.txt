@@ -1,0 +1,39 @@
+'RecipientRenewal.required_nonnegative' depends on axioms: [propext, Quot.sound]
+'RecipientRenewal.feasible_iff_required' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.required_append' depends on axioms: [propext, Quot.sound]
+'RecipientRenewal.feasible_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.final_surplus_not_prefix_solvency' depends on axioms: [propext]
+'RecipientRenewal.correct_probe_required' does not depend on any axioms
+'RecipientRenewal.correct_probe_sum' does not depend on any axioms
+'RecipientRenewal.failed_probe_required' does not depend on any axioms
+'RecipientRenewal.failed_probe_sum' does not depend on any axioms
+'RecipientRenewal.corrected_use_required' does not depend on any axioms
+'RecipientRenewal.correct_copy_required' does not depend on any axioms
+'RecipientRenewal.correct_copy_sum' does not depend on any axioms
+'RecipientRenewal.correction_copy_required' does not depend on any axioms
+'RecipientRenewal.correction_copy_sum' does not depend on any axioms
+'RecipientRenewal.warmups_sum' depends on axioms: [propext, Quot.sound]
+'RecipientRenewal.warmups_required' depends on axioms: [propext, Quot.sound]
+'RecipientRenewal.block_sum' depends on axioms: [propext, Quot.sound]
+'RecipientRenewal.block_feasible_iff_guard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.block_endpoint' depends on axioms: [propext, Quot.sound]
+'RecipientRenewal.two_warmup_guard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.one_warmup_guard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.zero_warmup_guard' depends on axioms: [propext]
+'RecipientRenewal.two_warmup_advance' depends on axioms: [propext, Quot.sound]
+'RecipientRenewal.two_warmup_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.schedule_feasible_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.arbitrarily_many_finite_two_warmup_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.two_warmup_reserve' depends on axioms: [propext, Quot.sound]
+'RecipientRenewal.one_warmup_reserve' depends on axioms: [propext, Quot.sound]
+'RecipientRenewal.zero_warmup_reserve' depends on axioms: [propext, Quot.sound]
+'RecipientRenewal.one_warmup_next_block_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.zero_warmup_next_block_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.one_warmup_full_schedule_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.zero_warmup_full_schedule_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.one_warmup_full_event_schedule_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.zero_warmup_full_event_schedule_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecipientRenewal.primary_two_warmup_source_account' depends on axioms: [propext, Quot.sound]
+'RecipientRenewal.false_large_warmup_bootstrap' depends on axioms: [propext]
+'RecipientRenewal.primary_one_warmup_cannot_copy' depends on axioms: [propext]
+'RecipientRenewal.primary_two_warmup_can_copy' depends on axioms: [propext]

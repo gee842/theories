@@ -1,0 +1,13 @@
+'SemanticCalibration.acquired_step_preserves_qualification' depends on axioms: [propext, Quot.sound]
+'SemanticCalibration.finite_replay_preserves_qualification' depends on axioms: [propext, Quot.sound]
+'SemanticCalibration.initially_unqualified_replay_is_sound' depends on axioms: [propext, Quot.sound]
+'SemanticCalibration.corroboration_exact' depends on axioms: [propext, Quot.sound]
+'SemanticCalibration.grounded_corroboration_is_compatible' depends on axioms: [propext, Quot.sound]
+'SemanticCalibration.replay_corroboration_is_compatible' depends on axioms: [propext, Quot.sound]
+'SemanticCalibration.sound_qualified_anchor_corroborates_exactly_the_true_command' depends on axioms: [propext,
+ Quot.sound]
+'SemanticCalibration.disagreement_excludes_joint_current_soundness' does not depend on any axioms
+'SemanticCalibration.self_import_guarantees_agreement_without_calibration' depends on axioms: [propext, Quot.sound]
+'SemanticCalibration.common_corruption_agrees_but_is_wrong' does not depend on any axioms
+'SemanticCalibration.full_visible_state_cannot_identify_both_uncalibrated_worlds' does not depend on any axioms
+'SemanticCalibration.stale_qualification_can_accept_old_error_and_decline_new_truth' does not depend on any axioms

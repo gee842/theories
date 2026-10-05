@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-05T22:30:02.234854+00:00",
+  "scope": "Source provenance for an original supplementary PDF and independently verified displayed experiment-4 preview; not original CSV retrieval or byte verification.",
+  "primary_article_doi": "10.1098/rspb.2020.2327",
+  "dryad_doi": "10.5061/dryad.h18931zjd",
+  "dryad_version_identifier": 93077,
+  "supplement_doi": "10.6084/m9.figshare.13213518.v2",
+  "licenses": {
+    "supplement": "CC BY 4.0, as declared in preserved Figshare API metadata",
+    "dataset": "CC0, as declared in preserved Dryad dataset metadata"
+  },
+  "original_experimental_csv_retrieved": false,
+  "original_experimental_csv_bytes_verified": false,
+  "attempted_access_outcomes": {
+    "direct_website_file_download": "HTTP 403",
+    "api_file_download": "HTTP 401",
+    "browser_download": "did not yield original CSV bytes"
+  },
+  "preview_scope": {
+    "independent_visible_dom_receipt": "preview-verification.json",
+    "rows_including_header": 49,
+    "columns_each_row": 10,
+    "canonical_ascii_bytes": 3119,
+    "fnv1a64": "df8ebe2256185e27",
+    "reading_edition_sha256": "4a2a9b660cfd9920a8d1bdcc7830507341e6c58ff08b239398dd6daebb82adbd",
+    "original_csv_listed_bytes": 2348,
+    "original_csv_listed_sha256": "5875db96822a78ce91708f8cb385b4941ecf689d6bfa999177e02a3aebdfab29",
+    "original_listed_digest_verified": false,
+    "limitation": "Complete observed displayed table does not establish original file completeness, byte identity, or preservation of original types and encodings.",
+    "experiment3": "Preview truncated during row 74; unusable as the complete experiment and excluded from this experiment-4 evidence."
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "kind": "generated provenance guide",
+      "bytes": 6381,
+      "sha256": "11da2f7180f626d536bbec517b3ef6d12faec45b925188e7a4122823c2473339",
+      "storage": "local"
+    },
+    {
+      "path": "preview-verification.json",
+      "kind": "generated independent displayed-preview verification receipt",
+      "bytes": 837,
+      "sha256": "2ad699b4326e8ccd38fca86d9f24fdc96c3ba1e6fdaf18328cd4b5347b6f316d",
+      "storage": "local"
+    },
+    {
+      "path": "supplement/manifest.json",
+      "kind": "generated preservation and retrieval receipt",
+      "bytes": 1841,
+      "sha256": "012ef26801c99a24e955be37660cc3a748dbd70c63991a6eb7c05c0d55921eee",
+      "storage": "local"
+    },
+    {
+      "path": "supplement/rspb20202327_si_001.pdf",
+      "kind": "original supplementary PDF",
+      "bytes": 1491554,
+      "sha256": "cf0ec691c7699fbbadb12e2c06edce4c03fb4ef0ad82717b571b8b2dc9ed1fa4",
+      "storage": "local"
+    },
+    {
+      "path": "supplement/figshare-article-13213518.json",
+      "kind": "original API response",
+      "bytes": 5077,
+      "sha256": "2ba8ea8c086dbd2a47e9f1e424c5d874b0460ef0f347b948045820719401e4c8",
+      "storage": "local"
+    },
+    {
+      "path": "supplement/supplement-portable.txt",
+      "kind": "generated portable extraction",
+      "bytes": 8795,
+      "sha256": "489eaa3e4ea1a01b2e3e22ddc2f616024b6202666c301942e1c763fddc4f26f7",
+      "storage": "local"
+    },
+    {
+      "path": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/metadata-receipt.json",
+      "kind": "existing generated metadata retrieval receipt",
+      "bytes": 906,
+      "sha256": "f5a1612388621a8b0fa566852255d6dfab56566f55cd7d126adae1c92091cadc",
+      "storage": "linked existing file; not copied"
+    },
+    {
+      "path": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/dataset-metadata.json",
+      "kind": "existing original API response",
+      "bytes": 3759,
+      "sha256": "5794abb904bf2797bc0f58ddbe5248d371837bf808ae2fd3563b0e44dbb1e46f",
+      "storage": "linked existing file; not copied"
+    },
+    {
+      "path": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/version-metadata.json",
+      "kind": "existing original API response",
+      "bytes": 3558,
+      "sha256": "4f8a5fc8c24622e4698da6644244623d517a7d99359ea3b6dd149fb66120bc6b",
+      "storage": "linked existing file; not copied"
+    },
+    {
+      "path": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/files-metadata.json",
+      "kind": "existing original API response",
+      "bytes": 3275,
+      "sha256": "216f6632b9127cf205c41d1af1a636adecab24f8078b2e078e456c9717f1cb0a",
+      "storage": "linked existing file; not copied"
+    },
+    {
+      "path": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/experiment4-preview.tsv",
+      "kind": "existing derived browser-preview reading edition",
+      "bytes": 2051,
+      "sha256": "4a2a9b660cfd9920a8d1bdcc7830507341e6c58ff08b239398dd6daebb82adbd",
+      "storage": "linked existing file; not copied"
+    },
+    {
+      "path": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/preview-check.json",
+      "kind": "existing generated integrity and descriptive receipt",
+      "bytes": 1042,
+      "sha256": "340a78b7a7fe0a07da42ca11ad683633f670d7ea967e572e2349484e112bdd8e",
+      "storage": "linked existing file; not copied"
+    },
+    {
+      "path": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/check_preview.py",
+      "kind": "existing executable reading-edition integrity checker",
+      "bytes": 2796,
+      "sha256": "facb78ecbedb620fcfea6d220c8dec78c5c8f1ff44d6893e31571498b8e198b4",
+      "storage": "linked existing file; not copied"
+    }
+  ],
+  "verification": {
+    "supplement_recorded_hashes_checked": 3,
+    "prior_metadata_recorded_hashes_checked": 3,
+    "edition_hash_against_root_receipt_checked": true,
+    "canonicalized_edition_reproduces_root_dom_fingerprint": true,
+    "independent_dom_read_performed_by_this_manifest_author": false
+  },
+  "preservation_policy": "Referenced existing metadata, TSV, receipt and checker are retained at their original repository paths without copying or modifying them. The manifest excludes itself to avoid recursive hashing."
+}

@@ -1,0 +1,60 @@
+{
+  "retrieved_utc": "2026-10-05T22:21:25.916544+00:00",
+  "retrieval_route": "Public Figshare API collection5202186 -> article13213518 -> listed download_url. No credentials or access controls bypassed.",
+  "collection_api": "https://api.figshare.com/v2/collections/5202186/articles",
+  "article_api": "https://api.figshare.com/v2/articles/13213518",
+  "article_doi": "10.6084/m9.figshare.13213518.v2",
+  "article_version": 2,
+  "resource_doi": "10.1098/rspb.2020.2327",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "files": [
+    {
+      "path": "rspb20202327_si_001.pdf",
+      "source_url": "https://ndownloader.figshare.com/files/25500092",
+      "kind": "original",
+      "bytes": 1491554,
+      "sha256": "cf0ec691c7699fbbadb12e2c06edce4c03fb4ef0ad82717b571b8b2dc9ed1fa4"
+    },
+    {
+      "path": "figshare-article-13213518.json",
+      "source_url": "https://api.figshare.com/v2/articles/13213518",
+      "kind": "original API response",
+      "bytes": 5077,
+      "sha256": "2ba8ea8c086dbd2a47e9f1e424c5d874b0460ef0f347b948045820719401e4c8"
+    },
+    {
+      "path": "supplement-portable.txt",
+      "source_url": null,
+      "kind": "generated extraction",
+      "bytes": 8795,
+      "sha256": "489eaa3e4ea1a01b2e3e22ddc2f616024b6202666c301942e1c763fddc4f26f7"
+    }
+  ],
+  "inspection": {
+    "pdf_pages": 10,
+    "visually_read_pages": [
+      4,
+      6,
+      7,
+      8,
+      9
+    ],
+    "text_read_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "provenance_note": "PDF downloaded from the listed URL into temporary scratch, then preserved byte-for-byte here; API metadata fetched again for exact-byte preservation. Portable text is an extraction, not a replacement original."
+}

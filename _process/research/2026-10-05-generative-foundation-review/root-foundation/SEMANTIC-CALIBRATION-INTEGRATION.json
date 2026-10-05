@@ -1,0 +1,306 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-05T22:15:59.608027+00:00",
+  "scope": "Integration links, preserved source bytes and correspondence to saved scientific receipts. No model, Lean, empirical or physical-action rerun.",
+  "scientific_checks_rerun": false,
+  "documents": 9,
+  "local_path_links": 59,
+  "links": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md",
+      "target": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md",
+      "target": "ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md",
+      "target": "SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-IDENTIFICATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-INTEGRATION.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/HANDOFF.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-alignment-governance-and-future.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-SOURCES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-complete-alignment-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "ALIGNMENT-AND-GOVERNANCE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "RECIPIENT-RENEWAL.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "RECIPIENT-RENEWAL.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/model.py"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "SEMANTIC-CALIBRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../RESEARCH.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/manifest.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/check_model.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/model-verification.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/PROTOCOL.md",
+      "target": "../evidence/manifest.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/PROTOCOL.md",
+      "target": "inputs.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/README.md",
+      "target": "PROTOCOL.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/README.md",
+      "target": "model.py"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/README.md",
+      "target": "inputs.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/README.md",
+      "target": "results.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/README.md",
+      "target": "check_model.py"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/README.md",
+      "target": "model-verification.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/README.md",
+      "target": "formal/README.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/README.md",
+      "target": "evidence/identification-model.py"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/README.md",
+      "target": "evidence/manifest.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/README.md",
+      "target": "verification.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/README.md",
+      "target": "SemanticCalibration.lean"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/README.md",
+      "target": "../model.py"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/HANDOFF.md",
+      "target": "README.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/HANDOFF.md",
+      "target": "evidence/manifest.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/HANDOFF.md",
+      "target": "../../../../../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SEMANTIC-CALIBRATION-IDENTIFICATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SEMANTIC-CALIBRATION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SEMANTIC-CALIBRATION-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "SEMANTIC-CALIBRATION-INTEGRATION.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/SEMANTIC-CALIBRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "SEMANTIC-CALIBRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "THEORY.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "JOINT-FORMATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "ETHICAL-FOUNDATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "RECIPIENT-RENEWAL.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "SEMANTIC-CALIBRATION.md"
+    }
+  ],
+  "shared_index_entries": [
+    {
+      "document": "RESEARCH.md",
+      "entry_sha256": "16df955a61f4f01d300dca852a3ff5d09d7ec93febec35abacc87f90f353c46e"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "entry_sha256": "fbdef3f4d057afa263e3364bcefbe712c2cf294033aa070fe4e0e1649527ca14"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "entry_sha256": "6b0bc15aae4a34ace63e5bbf943302c620c2ad6163fe956e852e9d49dc6515bc"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "entry_sha256": "c8fed3d142ef3b1a4b3c081008a0735adb91a914f14d90d67702d0715149b520"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "entry_sha256": "bd9373871d777abb6184a5932cb7941807c78d048615874e7f570a21d6eb12eb"
+    }
+  ],
+  "independent_counts": {
+    "source_rows": 666,
+    "complete_weighted_arms": 54,
+    "scenarios": 16,
+    "scenario_comparisons": 10656,
+    "current_comparable_rows": 102,
+    "cross_history_pairs": 10404,
+    "admitted_same_history_pairs": 102,
+    "patient_controller_binding_mutations": 612
+  },
+  "acquired_updater_checks": {
+    "original_paths": 370,
+    "original_steps": 1850,
+    "qualified_endpoints": 150,
+    "generic_updater_inputs": 48,
+    "conditional_invariant_steps": 68
+  },
+  "new_formal_audits": 12,
+  "formal_source_modules": 4,
+  "checked_numerical_source_hashes": 9,
+  "original_source_status": "Parent integration remains provisional; acceptance is not inherited.",
+  "root_review": "All twelve new proofs and relevant imported definitions read separately; Python trust-boundary ambiguity repaired before final independent check.",
+  "full_alignment_goal": "ongoing",
+  "next_connection": "Paid correctly bound pre-import acquisition read or separately backed preserved evidence, justified disagreement/change revision, and actual same-recipient command effect. Ethical grounds and authority remain open.",
+  "artifact_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md": "927218fa7036f9c8000bdb8df38d99546200d1fafbc912e890b1db09d39b338c",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md": "c45634f8b47c29c6e20c3a1a7838cbdf97b1dc370de17155edc8d056f1c09826",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-REVIEW.md": "524f5799bb9d2bc77ec074a77813428ec9932b9c79ee424b1990598b21a39db7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-IDENTIFICATION.md": "cbf1551b1e6f7f53b3141365594fe84879ea32c3c49ed971d3cf452479cf68eb",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-SOURCES.md": "03b8c3c28524b35f756dd425aa01225889b490a3b0bdd6d35c4afed3f63bf0eb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/PROTOCOL.md": "a9323a4e0fef9149c75ee9dd7b81fb4851cab006ac74baa91e648cd0d4b89288",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/README.md": "21750c038a6810c17d49d049d2396eaeb8172faa59b458f4eacf16312a10f8f0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/README.md": "80aec78695470301675b689ac00b0c9ec25542a2360c62247716838f71ca0592",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/HANDOFF.md": "9c32e0f8f269254d547eb1cc940925f906d9214a6fc93675ab4c5d82a5e13e24",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-CALIBRATION-CHECK.py": "1ce7230b9bb6d8494ab3316786131b1b3f1a9c8bba2dc4a6df2533ae511b7048",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/model-verification.json": "9addcbff654247fe6e264e4329c651ff296f2355cc20931aef80eedd2dd4c714",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/verification.json": "2bc0000d45d027eb33484aaae52ea867b1898b7da023b3975f4195e9f869d14f"
+  }
+}

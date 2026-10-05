@@ -1,0 +1,285 @@
+{
+  "date": "2026-10-06",
+  "status": "pass",
+  "scope": "Exhaustive binary relevance matrices for 1–4 centers; no empirical or universal proof claim.",
+  "definitions": {
+    "joint_renaming": "r(p(a), p(i)) = r(a, i) for every permutation p",
+    "positive_self": "r(a, a) = 1 for every actor a",
+    "actor_independence": "r(a, i) = r(b, i) for every a, b, i",
+    "interpretation": "These are declared abstract relevance conditions, not definitions of scientific legitimacy or moral truth."
+  },
+  "source_sha256": "6112b4f9c7e16db12ce05f40124f003eb059c5336a90e60c1fc576f139035b51",
+  "total_matrices_enumerated": 66066,
+  "results": [
+    {
+      "centers": 1,
+      "matrices_enumerated": 2,
+      "permutations_per_matrix_available": 1,
+      "jointly_invariant_count": 2,
+      "jointly_invariant_matrices": [
+        [
+          [
+            0
+          ]
+        ],
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "positive_self_count": 1,
+      "actor_independent_count": 2,
+      "positive_self_and_actor_independent_count": 1,
+      "self_only_counterexample_exists": false
+    },
+    {
+      "centers": 2,
+      "matrices_enumerated": 16,
+      "permutations_per_matrix_available": 2,
+      "jointly_invariant_count": 4,
+      "jointly_invariant_matrices": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "positive_self_count": 2,
+      "actor_independent_count": 2,
+      "positive_self_and_actor_independent_count": 1,
+      "self_only_counterexample_exists": true
+    },
+    {
+      "centers": 3,
+      "matrices_enumerated": 512,
+      "permutations_per_matrix_available": 6,
+      "jointly_invariant_count": 4,
+      "jointly_invariant_matrices": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      ],
+      "positive_self_count": 2,
+      "actor_independent_count": 2,
+      "positive_self_and_actor_independent_count": 1,
+      "self_only_counterexample_exists": true
+    },
+    {
+      "centers": 4,
+      "matrices_enumerated": 65536,
+      "permutations_per_matrix_available": 24,
+      "jointly_invariant_count": 4,
+      "jointly_invariant_matrices": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      ],
+      "positive_self_count": 2,
+      "actor_independent_count": 2,
+      "positive_self_and_actor_independent_count": 1,
+      "self_only_counterexample_exists": true
+    }
+  ]
+}

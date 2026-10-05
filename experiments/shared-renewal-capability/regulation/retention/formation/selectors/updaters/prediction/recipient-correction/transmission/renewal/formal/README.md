@@ -1,0 +1,11 @@
+# Renewal liquidity under a declared event contract
+
+6 October 2026. [RenewalLiquidity.lean](RenewalLiquidity.lean) uses only Lean's bundled `Std` library and the existing pinned Lean 4.29.1 compiler. Run `python3 check.py`; the checker compiles frozen source in a fresh temporary directory and audits every declared theorem's dependencies. Its saved result is [verification.json](verification.json).
+
+The formalization proves an exact minimum-reserve recursion for any finite signed-event ledger, composition across concatenated ledgers, and the specified recipient renewal block's ordered-payment thresholds. A block consists of successful warm-ups, one failed correction probe, one corrected successful probe and one correct copied continuation. Under those **supplied outcomes and transfer/access laws**, its net change is `3n − 5`, and complete affordability is exactly `(n = 0 or B ≥ 6) and B + 3n ≥ 15`. This keeps the initial warm-up prepayment condition that a net-balance-only guard would lose.
+
+Repeated two-warm-up blocks preserve affordability from stock at least nine, and the reserve after `g` such blocks is `B + g`. One- and zero-warm-up blocks instead have reserves `B − 2g` and `B − 5g`; exact next-block thresholds establish finite depletion. These statements concern arbitrary finite concatenations. They do not supply infinite source, unused receiver components, reliable sensing or continued functional access.
+
+The signed ledger follows the recipient account. Seed transfer debits that account; grandchild prepayment and actual return are supplied by the block contract, and the seed is not called dissipation. Separate learner/child balances and source/component guards require the executable account and its independent checks. No original-actor funds enter these lemmas.
+
+This is a proof of an abstract contract, **not a refinement proof for the Python stochastic experiment**, the sibling learner or the retained transmission module. It does not prove the origin of a faithful update, target calibration, learned moral concern, source generation or component renewal. The [mathematical note](../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-MATH.md) connects the exact reserve result to the unresolved interpretation and research obligations.

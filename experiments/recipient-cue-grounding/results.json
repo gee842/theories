@@ -1,0 +1,2861 @@
+{
+  "status": "computed_pending_independent_review",
+  "scope": "Retrospective paired reanalysis of complete visible experiment-4 preview.",
+  "provenance": {
+    "source_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/experiment4-preview.tsv",
+    "source_sha256": "4a2a9b660cfd9920a8d1bdcc7830507341e6c58ff08b239398dd6daebb82adbd",
+    "protocol_sha256": "44fe0ae4b4c03741629109110a6ceb22df8d4dcc161bccf1c512487f47e25f2d",
+    "protocol_freeze_sha256": "ecf2de412a18b6caba020c44f1991418cb55d7237913f1c36ecf9f6d4934965d",
+    "model_sha256": "9e8de038b6a0f20909e83c64cecdeccee51c2b44e4d397aef071342931dbbc56",
+    "source_kind": "Derived complete displayed HTML preview; original CSV bytes unavailable.",
+    "original_csv_verified": false,
+    "displayed_data_rows": 48,
+    "canonical_ascii_length": 3119,
+    "fnv1a64": "df8ebe2256185e27",
+    "header_adaptation": "Blank first header renamed preview_row; other cell strings retained.",
+    "source_url": "https://datadryad.org/dataset/doi:10.5061/dryad.h18931zjd",
+    "protocol_frozen_at_utc": "2026-10-05T22:28:10.386120+00:00"
+  },
+  "python_version": "3.11.2 (main, Feb  9 2025, 00:58:25) [Clang 16.0.0 (clang-1600.0.26.4)]",
+  "validation": {
+    "valid": true,
+    "invalid_fields_or_structure": [],
+    "raw_data_rows": 48,
+    "focal_ids": [
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "C4",
+      "D1",
+      "D5",
+      "E2",
+      "E4",
+      "E5",
+      "F1",
+      "F2",
+      "F4",
+      "F5",
+      "G2",
+      "G5",
+      "H2",
+      "H3",
+      "J1",
+      "J2",
+      "J5",
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "duplicated_row_identifiers": [],
+    "duplicated_focal_treatments": [],
+    "incomplete_pairs": {},
+    "missing_cells": {
+      "preview_row": {
+        "count": 0,
+        "preview_rows": []
+      },
+      "ratID": {
+        "count": 0,
+        "preview_rows": []
+      },
+      "treatment": {
+        "count": 0,
+        "preview_rows": []
+      },
+      "pull_f": {
+        "count": 0,
+        "preview_rows": []
+      },
+      "lat_f": {
+        "count": 0,
+        "preview_rows": []
+      },
+      "Pull2": {
+        "count": 0,
+        "preview_rows": []
+      },
+      "Pull3": {
+        "count": 0,
+        "preview_rows": []
+      },
+      "Pull4": {
+        "count": 0,
+        "preview_rows": []
+      },
+      "Pull5": {
+        "count": 0,
+        "preview_rows": []
+      },
+      "Pull6": {
+        "count": 2,
+        "preview_rows": [
+          "39",
+          "41"
+        ]
+      }
+    },
+    "treatment_row_counts": {
+      "neutral": 24,
+      "cooperating": 24
+    }
+  },
+  "source_cell_strings": [
+    {
+      "preview_row": "1",
+      "ratID": "B2",
+      "treatment": "neutral",
+      "pull_f": "2",
+      "lat_f": "205",
+      "Pull2": "242",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "2",
+      "ratID": "B3",
+      "treatment": "neutral",
+      "pull_f": "1",
+      "lat_f": "53",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "3",
+      "ratID": "B4",
+      "treatment": "neutral",
+      "pull_f": "3",
+      "lat_f": "9",
+      "Pull2": "88",
+      "Pull3": "205",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "4",
+      "ratID": "B5",
+      "treatment": "neutral",
+      "pull_f": "2",
+      "lat_f": "105",
+      "Pull2": "385",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "5",
+      "ratID": "C4",
+      "treatment": "neutral",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "6",
+      "ratID": "D1",
+      "treatment": "neutral",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "7",
+      "ratID": "D5",
+      "treatment": "neutral",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "8",
+      "ratID": "E2",
+      "treatment": "neutral",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "9",
+      "ratID": "E4",
+      "treatment": "neutral",
+      "pull_f": "1",
+      "lat_f": "6",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "10",
+      "ratID": "E5",
+      "treatment": "neutral",
+      "pull_f": "1",
+      "lat_f": "105",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "11",
+      "ratID": "F1",
+      "treatment": "neutral",
+      "pull_f": "1",
+      "lat_f": "389",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "12",
+      "ratID": "F2",
+      "treatment": "neutral",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "13",
+      "ratID": "F4",
+      "treatment": "neutral",
+      "pull_f": "2",
+      "lat_f": "117",
+      "Pull2": "348",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "14",
+      "ratID": "F5",
+      "treatment": "neutral",
+      "pull_f": "1",
+      "lat_f": "312",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "15",
+      "ratID": "G2",
+      "treatment": "neutral",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "16",
+      "ratID": "G5",
+      "treatment": "neutral",
+      "pull_f": "2",
+      "lat_f": "121",
+      "Pull2": "199",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "17",
+      "ratID": "H2",
+      "treatment": "neutral",
+      "pull_f": "2",
+      "lat_f": "49",
+      "Pull2": "325",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "18",
+      "ratID": "H3",
+      "treatment": "neutral",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "19",
+      "ratID": "J1",
+      "treatment": "neutral",
+      "pull_f": "1",
+      "lat_f": "29",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "20",
+      "ratID": "J2",
+      "treatment": "neutral",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "21",
+      "ratID": "J5",
+      "treatment": "neutral",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "22",
+      "ratID": "L2",
+      "treatment": "neutral",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "23",
+      "ratID": "L3",
+      "treatment": "neutral",
+      "pull_f": "1",
+      "lat_f": "156",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "24",
+      "ratID": "L1",
+      "treatment": "neutral",
+      "pull_f": "1",
+      "lat_f": "112",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "25",
+      "ratID": "B2",
+      "treatment": "cooperating",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "26",
+      "ratID": "B3",
+      "treatment": "cooperating",
+      "pull_f": "3",
+      "lat_f": "66",
+      "Pull2": "85",
+      "Pull3": "365",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "27",
+      "ratID": "B4",
+      "treatment": "cooperating",
+      "pull_f": "3",
+      "lat_f": "51",
+      "Pull2": "76",
+      "Pull3": "278",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "28",
+      "ratID": "B5",
+      "treatment": "cooperating",
+      "pull_f": "1",
+      "lat_f": "245",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "29",
+      "ratID": "C4",
+      "treatment": "cooperating",
+      "pull_f": "1",
+      "lat_f": "292",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "30",
+      "ratID": "D1",
+      "treatment": "cooperating",
+      "pull_f": "4",
+      "lat_f": "84",
+      "Pull2": "190",
+      "Pull3": "280",
+      "Pull4": "335",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "31",
+      "ratID": "D5",
+      "treatment": "cooperating",
+      "pull_f": "3",
+      "lat_f": "16",
+      "Pull2": "34",
+      "Pull3": "298",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "32",
+      "ratID": "E2",
+      "treatment": "cooperating",
+      "pull_f": "3",
+      "lat_f": "47",
+      "Pull2": "122",
+      "Pull3": "153",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "33",
+      "ratID": "E4",
+      "treatment": "cooperating",
+      "pull_f": "3",
+      "lat_f": "36",
+      "Pull2": "315",
+      "Pull3": "414",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "34",
+      "ratID": "E5",
+      "treatment": "cooperating",
+      "pull_f": "3",
+      "lat_f": "80",
+      "Pull2": "172",
+      "Pull3": "193",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "35",
+      "ratID": "F1",
+      "treatment": "cooperating",
+      "pull_f": "2",
+      "lat_f": "85",
+      "Pull2": "210",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "36",
+      "ratID": "F2",
+      "treatment": "cooperating",
+      "pull_f": "1",
+      "lat_f": "66",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "37",
+      "ratID": "F4",
+      "treatment": "cooperating",
+      "pull_f": "2",
+      "lat_f": "95",
+      "Pull2": "255",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "38",
+      "ratID": "F5",
+      "treatment": "cooperating",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "39",
+      "ratID": "G2",
+      "treatment": "cooperating",
+      "pull_f": "5",
+      "lat_f": "53",
+      "Pull2": "156",
+      "Pull3": "175",
+      "Pull4": "219",
+      "Pull5": "362",
+      "Pull6": "NA"
+    },
+    {
+      "preview_row": "40",
+      "ratID": "G5",
+      "treatment": "cooperating",
+      "pull_f": "3",
+      "lat_f": "10",
+      "Pull2": "83",
+      "Pull3": "190",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "41",
+      "ratID": "H2",
+      "treatment": "cooperating",
+      "pull_f": "5",
+      "lat_f": "143",
+      "Pull2": "176",
+      "Pull3": "237",
+      "Pull4": "372",
+      "Pull5": "398",
+      "Pull6": "NA"
+    },
+    {
+      "preview_row": "42",
+      "ratID": "H3",
+      "treatment": "cooperating",
+      "pull_f": "3",
+      "lat_f": "192",
+      "Pull2": "318",
+      "Pull3": "348",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "43",
+      "ratID": "J1",
+      "treatment": "cooperating",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "44",
+      "ratID": "J2",
+      "treatment": "cooperating",
+      "pull_f": "2",
+      "lat_f": "121",
+      "Pull2": "201",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "45",
+      "ratID": "J5",
+      "treatment": "cooperating",
+      "pull_f": "0",
+      "lat_f": "420",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "46",
+      "ratID": "L2",
+      "treatment": "cooperating",
+      "pull_f": "1",
+      "lat_f": "357",
+      "Pull2": "420",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "47",
+      "ratID": "L3",
+      "treatment": "cooperating",
+      "pull_f": "2",
+      "lat_f": "101",
+      "Pull2": "270",
+      "Pull3": "420",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    },
+    {
+      "preview_row": "48",
+      "ratID": "L1",
+      "treatment": "cooperating",
+      "pull_f": "3",
+      "lat_f": "57",
+      "Pull2": "366",
+      "Pull3": "408",
+      "Pull4": "420",
+      "Pull5": "420",
+      "Pull6": "420"
+    }
+  ],
+  "parsed_rows": [
+    {
+      "preview_row": 1,
+      "ratID": "B2",
+      "treatment": "neutral",
+      "pull_f": 2,
+      "lat_f": 205,
+      "Pull2": 242,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 2,
+      "ratID": "B3",
+      "treatment": "neutral",
+      "pull_f": 1,
+      "lat_f": 53,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 3,
+      "ratID": "B4",
+      "treatment": "neutral",
+      "pull_f": 3,
+      "lat_f": 9,
+      "Pull2": 88,
+      "Pull3": 205,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 4,
+      "ratID": "B5",
+      "treatment": "neutral",
+      "pull_f": 2,
+      "lat_f": 105,
+      "Pull2": 385,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 5,
+      "ratID": "C4",
+      "treatment": "neutral",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 6,
+      "ratID": "D1",
+      "treatment": "neutral",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 7,
+      "ratID": "D5",
+      "treatment": "neutral",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 8,
+      "ratID": "E2",
+      "treatment": "neutral",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 9,
+      "ratID": "E4",
+      "treatment": "neutral",
+      "pull_f": 1,
+      "lat_f": 6,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 10,
+      "ratID": "E5",
+      "treatment": "neutral",
+      "pull_f": 1,
+      "lat_f": 105,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 11,
+      "ratID": "F1",
+      "treatment": "neutral",
+      "pull_f": 1,
+      "lat_f": 389,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 12,
+      "ratID": "F2",
+      "treatment": "neutral",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 13,
+      "ratID": "F4",
+      "treatment": "neutral",
+      "pull_f": 2,
+      "lat_f": 117,
+      "Pull2": 348,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 14,
+      "ratID": "F5",
+      "treatment": "neutral",
+      "pull_f": 1,
+      "lat_f": 312,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 15,
+      "ratID": "G2",
+      "treatment": "neutral",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 16,
+      "ratID": "G5",
+      "treatment": "neutral",
+      "pull_f": 2,
+      "lat_f": 121,
+      "Pull2": 199,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 17,
+      "ratID": "H2",
+      "treatment": "neutral",
+      "pull_f": 2,
+      "lat_f": 49,
+      "Pull2": 325,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 18,
+      "ratID": "H3",
+      "treatment": "neutral",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 19,
+      "ratID": "J1",
+      "treatment": "neutral",
+      "pull_f": 1,
+      "lat_f": 29,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 20,
+      "ratID": "J2",
+      "treatment": "neutral",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 21,
+      "ratID": "J5",
+      "treatment": "neutral",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 22,
+      "ratID": "L2",
+      "treatment": "neutral",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 23,
+      "ratID": "L3",
+      "treatment": "neutral",
+      "pull_f": 1,
+      "lat_f": 156,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 24,
+      "ratID": "L1",
+      "treatment": "neutral",
+      "pull_f": 1,
+      "lat_f": 112,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 25,
+      "ratID": "B2",
+      "treatment": "cooperating",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 26,
+      "ratID": "B3",
+      "treatment": "cooperating",
+      "pull_f": 3,
+      "lat_f": 66,
+      "Pull2": 85,
+      "Pull3": 365,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 27,
+      "ratID": "B4",
+      "treatment": "cooperating",
+      "pull_f": 3,
+      "lat_f": 51,
+      "Pull2": 76,
+      "Pull3": 278,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 28,
+      "ratID": "B5",
+      "treatment": "cooperating",
+      "pull_f": 1,
+      "lat_f": 245,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 29,
+      "ratID": "C4",
+      "treatment": "cooperating",
+      "pull_f": 1,
+      "lat_f": 292,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 30,
+      "ratID": "D1",
+      "treatment": "cooperating",
+      "pull_f": 4,
+      "lat_f": 84,
+      "Pull2": 190,
+      "Pull3": 280,
+      "Pull4": 335,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 31,
+      "ratID": "D5",
+      "treatment": "cooperating",
+      "pull_f": 3,
+      "lat_f": 16,
+      "Pull2": 34,
+      "Pull3": 298,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 32,
+      "ratID": "E2",
+      "treatment": "cooperating",
+      "pull_f": 3,
+      "lat_f": 47,
+      "Pull2": 122,
+      "Pull3": 153,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 33,
+      "ratID": "E4",
+      "treatment": "cooperating",
+      "pull_f": 3,
+      "lat_f": 36,
+      "Pull2": 315,
+      "Pull3": 414,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 34,
+      "ratID": "E5",
+      "treatment": "cooperating",
+      "pull_f": 3,
+      "lat_f": 80,
+      "Pull2": 172,
+      "Pull3": 193,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 35,
+      "ratID": "F1",
+      "treatment": "cooperating",
+      "pull_f": 2,
+      "lat_f": 85,
+      "Pull2": 210,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 36,
+      "ratID": "F2",
+      "treatment": "cooperating",
+      "pull_f": 1,
+      "lat_f": 66,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 37,
+      "ratID": "F4",
+      "treatment": "cooperating",
+      "pull_f": 2,
+      "lat_f": 95,
+      "Pull2": 255,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 38,
+      "ratID": "F5",
+      "treatment": "cooperating",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 39,
+      "ratID": "G2",
+      "treatment": "cooperating",
+      "pull_f": 5,
+      "lat_f": 53,
+      "Pull2": 156,
+      "Pull3": 175,
+      "Pull4": 219,
+      "Pull5": 362,
+      "Pull6": null
+    },
+    {
+      "preview_row": 40,
+      "ratID": "G5",
+      "treatment": "cooperating",
+      "pull_f": 3,
+      "lat_f": 10,
+      "Pull2": 83,
+      "Pull3": 190,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 41,
+      "ratID": "H2",
+      "treatment": "cooperating",
+      "pull_f": 5,
+      "lat_f": 143,
+      "Pull2": 176,
+      "Pull3": 237,
+      "Pull4": 372,
+      "Pull5": 398,
+      "Pull6": null
+    },
+    {
+      "preview_row": 42,
+      "ratID": "H3",
+      "treatment": "cooperating",
+      "pull_f": 3,
+      "lat_f": 192,
+      "Pull2": 318,
+      "Pull3": 348,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 43,
+      "ratID": "J1",
+      "treatment": "cooperating",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 44,
+      "ratID": "J2",
+      "treatment": "cooperating",
+      "pull_f": 2,
+      "lat_f": 121,
+      "Pull2": 201,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 45,
+      "ratID": "J5",
+      "treatment": "cooperating",
+      "pull_f": 0,
+      "lat_f": 420,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 46,
+      "ratID": "L2",
+      "treatment": "cooperating",
+      "pull_f": 1,
+      "lat_f": 357,
+      "Pull2": 420,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 47,
+      "ratID": "L3",
+      "treatment": "cooperating",
+      "pull_f": 2,
+      "lat_f": 101,
+      "Pull2": 270,
+      "Pull3": 420,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    },
+    {
+      "preview_row": 48,
+      "ratID": "L1",
+      "treatment": "cooperating",
+      "pull_f": 3,
+      "lat_f": 57,
+      "Pull2": 366,
+      "Pull3": 408,
+      "Pull4": 420,
+      "Pull5": 420,
+      "Pull6": 420
+    }
+  ],
+  "pairs": [
+    {
+      "ratID": "B2",
+      "neutral": 2,
+      "cooperating": 0,
+      "difference": -2,
+      "source_rows": {
+        "neutral": 1,
+        "cooperating": 25
+      }
+    },
+    {
+      "ratID": "B3",
+      "neutral": 1,
+      "cooperating": 3,
+      "difference": 2,
+      "source_rows": {
+        "neutral": 2,
+        "cooperating": 26
+      }
+    },
+    {
+      "ratID": "B4",
+      "neutral": 3,
+      "cooperating": 3,
+      "difference": 0,
+      "source_rows": {
+        "neutral": 3,
+        "cooperating": 27
+      }
+    },
+    {
+      "ratID": "B5",
+      "neutral": 2,
+      "cooperating": 1,
+      "difference": -1,
+      "source_rows": {
+        "neutral": 4,
+        "cooperating": 28
+      }
+    },
+    {
+      "ratID": "C4",
+      "neutral": 0,
+      "cooperating": 1,
+      "difference": 1,
+      "source_rows": {
+        "neutral": 5,
+        "cooperating": 29
+      }
+    },
+    {
+      "ratID": "D1",
+      "neutral": 0,
+      "cooperating": 4,
+      "difference": 4,
+      "source_rows": {
+        "neutral": 6,
+        "cooperating": 30
+      }
+    },
+    {
+      "ratID": "D5",
+      "neutral": 0,
+      "cooperating": 3,
+      "difference": 3,
+      "source_rows": {
+        "neutral": 7,
+        "cooperating": 31
+      }
+    },
+    {
+      "ratID": "E2",
+      "neutral": 0,
+      "cooperating": 3,
+      "difference": 3,
+      "source_rows": {
+        "neutral": 8,
+        "cooperating": 32
+      }
+    },
+    {
+      "ratID": "E4",
+      "neutral": 1,
+      "cooperating": 3,
+      "difference": 2,
+      "source_rows": {
+        "neutral": 9,
+        "cooperating": 33
+      }
+    },
+    {
+      "ratID": "E5",
+      "neutral": 1,
+      "cooperating": 3,
+      "difference": 2,
+      "source_rows": {
+        "neutral": 10,
+        "cooperating": 34
+      }
+    },
+    {
+      "ratID": "F1",
+      "neutral": 1,
+      "cooperating": 2,
+      "difference": 1,
+      "source_rows": {
+        "neutral": 11,
+        "cooperating": 35
+      }
+    },
+    {
+      "ratID": "F2",
+      "neutral": 0,
+      "cooperating": 1,
+      "difference": 1,
+      "source_rows": {
+        "neutral": 12,
+        "cooperating": 36
+      }
+    },
+    {
+      "ratID": "F4",
+      "neutral": 2,
+      "cooperating": 2,
+      "difference": 0,
+      "source_rows": {
+        "neutral": 13,
+        "cooperating": 37
+      }
+    },
+    {
+      "ratID": "F5",
+      "neutral": 1,
+      "cooperating": 0,
+      "difference": -1,
+      "source_rows": {
+        "neutral": 14,
+        "cooperating": 38
+      }
+    },
+    {
+      "ratID": "G2",
+      "neutral": 0,
+      "cooperating": 5,
+      "difference": 5,
+      "source_rows": {
+        "neutral": 15,
+        "cooperating": 39
+      }
+    },
+    {
+      "ratID": "G5",
+      "neutral": 2,
+      "cooperating": 3,
+      "difference": 1,
+      "source_rows": {
+        "neutral": 16,
+        "cooperating": 40
+      }
+    },
+    {
+      "ratID": "H2",
+      "neutral": 2,
+      "cooperating": 5,
+      "difference": 3,
+      "source_rows": {
+        "neutral": 17,
+        "cooperating": 41
+      }
+    },
+    {
+      "ratID": "H3",
+      "neutral": 0,
+      "cooperating": 3,
+      "difference": 3,
+      "source_rows": {
+        "neutral": 18,
+        "cooperating": 42
+      }
+    },
+    {
+      "ratID": "J1",
+      "neutral": 1,
+      "cooperating": 0,
+      "difference": -1,
+      "source_rows": {
+        "neutral": 19,
+        "cooperating": 43
+      }
+    },
+    {
+      "ratID": "J2",
+      "neutral": 0,
+      "cooperating": 2,
+      "difference": 2,
+      "source_rows": {
+        "neutral": 20,
+        "cooperating": 44
+      }
+    },
+    {
+      "ratID": "J5",
+      "neutral": 0,
+      "cooperating": 0,
+      "difference": 0,
+      "source_rows": {
+        "neutral": 21,
+        "cooperating": 45
+      }
+    },
+    {
+      "ratID": "L1",
+      "neutral": 1,
+      "cooperating": 3,
+      "difference": 2,
+      "source_rows": {
+        "neutral": 24,
+        "cooperating": 48
+      }
+    },
+    {
+      "ratID": "L2",
+      "neutral": 0,
+      "cooperating": 1,
+      "difference": 1,
+      "source_rows": {
+        "neutral": 22,
+        "cooperating": 46
+      }
+    },
+    {
+      "ratID": "L3",
+      "neutral": 1,
+      "cooperating": 2,
+      "difference": 1,
+      "source_rows": {
+        "neutral": 23,
+        "cooperating": 47
+      }
+    }
+  ],
+  "descriptive": {
+    "n": 24,
+    "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+    "treatment_totals": {
+      "neutral": 21,
+      "cooperating": 53
+    },
+    "treatment_means": {
+      "neutral": 0.875,
+      "cooperating": 2.2083333333333335
+    },
+    "treatment_means_exact": {
+      "neutral": "7/8",
+      "cooperating": "53/24"
+    },
+    "difference_sum": 32,
+    "mean_difference": 1.3333333333333333,
+    "mean_difference_exact": "4/3",
+    "median_difference": 1.0,
+    "sample_sd_difference": 1.7110044511584586,
+    "positive_differences": 17,
+    "negative_differences": 4,
+    "zero_differences": 3,
+    "zero_count_sessions": {
+      "neutral": 10,
+      "cooperating": 4
+    }
+  },
+  "bootstrap": {
+    "unit": "Complete focal-animal pair",
+    "seed": 20261006,
+    "replicates": 20000,
+    "sorting": "Focal identifiers lexicographic before sampling.",
+    "sampling": "random.Random(seed); n randrange(n) draws with replacement per resample.",
+    "interval_kind": "Exploratory animal-paired percentile interval; unadjusted.",
+    "quantile_rule": "Linear interpolation at index (B-1)*p.",
+    "probabilities": [
+      0.025,
+      0.975
+    ],
+    "interval": [
+      0.6666666666666666,
+      2.0
+    ],
+    "mean_sequence_sha256": "3b2728bbe8ed564437748da47c3776bba427b8b509ff26985e3ecac19fea6467",
+    "assumption": "Focal animals approximate independent comparable sampling units; donor reuse/common influences unknown."
+  },
+  "sign_flip": {
+    "observed_absolute_sum": 32,
+    "numerator": 24496,
+    "denominator": 16777216,
+    "probability": 0.0014600753784179688,
+    "exact_fraction": "1531/1048576",
+    "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+    "assignment_exact": false
+  },
+  "binomial_sign": {
+    "nonzero_pairs": 21,
+    "positive": 17,
+    "negative": 4,
+    "ties": 3,
+    "numerator": 15094,
+    "denominator": 2097152,
+    "probability": 0.007197380065917969,
+    "exact_fraction": "7547/1048576",
+    "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+  },
+  "single_animal_omissions": {
+    "scope": "All single-focal omissions; none selected to reconstruct unexplained author exclusion.",
+    "omissions": [
+      {
+        "omitted_ratID": "B2",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 19,
+            "cooperating": 53
+          },
+          "treatment_means": {
+            "neutral": 0.8260869565217391,
+            "cooperating": 2.3043478260869565
+          },
+          "treatment_means_exact": {
+            "neutral": "19/23",
+            "cooperating": "53/23"
+          },
+          "difference_sum": 34,
+          "mean_difference": 1.4782608695652173,
+          "mean_difference_exact": "34/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.5917276268082627,
+          "positive_differences": 17,
+          "negative_differences": 3,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 3
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 34,
+          "numerator": 2944,
+          "denominator": 8388608,
+          "probability": 0.0003509521484375,
+          "exact_fraction": "23/65536",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 17,
+          "negative": 3,
+          "ties": 3,
+          "numerator": 2702,
+          "denominator": 1048576,
+          "probability": 0.0025768280029296875,
+          "exact_fraction": "1351/524288",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "B3",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 20,
+            "cooperating": 50
+          },
+          "treatment_means": {
+            "neutral": 0.8695652173913043,
+            "cooperating": 2.1739130434782608
+          },
+          "treatment_means_exact": {
+            "neutral": "20/23",
+            "cooperating": "50/23"
+          },
+          "difference_sum": 30,
+          "mean_difference": 1.3043478260869565,
+          "mean_difference_exact": "30/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7434235548768993,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 30,
+          "numerator": 21552,
+          "denominator": 8388608,
+          "probability": 0.0025691986083984375,
+          "exact_fraction": "1347/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "B4",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 18,
+            "cooperating": 50
+          },
+          "treatment_means": {
+            "neutral": 0.782608695652174,
+            "cooperating": 2.1739130434782608
+          },
+          "treatment_means_exact": {
+            "neutral": "18/23",
+            "cooperating": "50/23"
+          },
+          "difference_sum": 32,
+          "mean_difference": 1.391304347826087,
+          "mean_difference_exact": "32/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7251911734588248,
+          "positive_differences": 17,
+          "negative_differences": 4,
+          "zero_differences": 2,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 32,
+          "numerator": 12248,
+          "denominator": 8388608,
+          "probability": 0.0014600753784179688,
+          "exact_fraction": "1531/1048576",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 21,
+          "positive": 17,
+          "negative": 4,
+          "ties": 2,
+          "numerator": 15094,
+          "denominator": 2097152,
+          "probability": 0.007197380065917969,
+          "exact_fraction": "7547/1048576",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "B5",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 19,
+            "cooperating": 52
+          },
+          "treatment_means": {
+            "neutral": 0.8260869565217391,
+            "cooperating": 2.260869565217391
+          },
+          "treatment_means_exact": {
+            "neutral": "19/23",
+            "cooperating": "52/23"
+          },
+          "difference_sum": 33,
+          "mean_difference": 1.434782608695652,
+          "mean_difference_exact": "33/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.6740285366450527,
+          "positive_differences": 17,
+          "negative_differences": 3,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 33,
+          "numerator": 6992,
+          "denominator": 8388608,
+          "probability": 0.0008335113525390625,
+          "exact_fraction": "437/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 17,
+          "negative": 3,
+          "ties": 3,
+          "numerator": 2702,
+          "denominator": 1048576,
+          "probability": 0.0025768280029296875,
+          "exact_fraction": "1351/524288",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "C4",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 21,
+            "cooperating": 52
+          },
+          "treatment_means": {
+            "neutral": 0.9130434782608695,
+            "cooperating": 2.260869565217391
+          },
+          "treatment_means_exact": {
+            "neutral": "21/23",
+            "cooperating": "52/23"
+          },
+          "difference_sum": 31,
+          "mean_difference": 1.3478260869565217,
+          "mean_difference_exact": "31/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7479519353744961,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 9,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 31,
+          "numerator": 17504,
+          "denominator": 8388608,
+          "probability": 0.002086639404296875,
+          "exact_fraction": "547/262144",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "D1",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 21,
+            "cooperating": 49
+          },
+          "treatment_means": {
+            "neutral": 0.9130434782608695,
+            "cooperating": 2.130434782608696
+          },
+          "treatment_means_exact": {
+            "neutral": "21/23",
+            "cooperating": "49/23"
+          },
+          "difference_sum": 28,
+          "mean_difference": 1.2173913043478262,
+          "mean_difference_exact": "28/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.6502485140434962,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 9,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 28,
+          "numerator": 24336,
+          "denominator": 8388608,
+          "probability": 0.0029010772705078125,
+          "exact_fraction": "1521/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "D5",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 21,
+            "cooperating": 50
+          },
+          "treatment_means": {
+            "neutral": 0.9130434782608695,
+            "cooperating": 2.1739130434782608
+          },
+          "treatment_means_exact": {
+            "neutral": "21/23",
+            "cooperating": "50/23"
+          },
+          "difference_sum": 29,
+          "mean_difference": 1.2608695652173914,
+          "mean_difference_exact": "29/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7113894223527009,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 9,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 29,
+          "numerator": 23664,
+          "denominator": 8388608,
+          "probability": 0.0028209686279296875,
+          "exact_fraction": "1479/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "E2",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 21,
+            "cooperating": 50
+          },
+          "treatment_means": {
+            "neutral": 0.9130434782608695,
+            "cooperating": 2.1739130434782608
+          },
+          "treatment_means_exact": {
+            "neutral": "21/23",
+            "cooperating": "50/23"
+          },
+          "difference_sum": 29,
+          "mean_difference": 1.2608695652173914,
+          "mean_difference_exact": "29/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7113894223527009,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 9,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 29,
+          "numerator": 23664,
+          "denominator": 8388608,
+          "probability": 0.0028209686279296875,
+          "exact_fraction": "1479/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "E4",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 20,
+            "cooperating": 50
+          },
+          "treatment_means": {
+            "neutral": 0.8695652173913043,
+            "cooperating": 2.1739130434782608
+          },
+          "treatment_means_exact": {
+            "neutral": "20/23",
+            "cooperating": "50/23"
+          },
+          "difference_sum": 30,
+          "mean_difference": 1.3043478260869565,
+          "mean_difference_exact": "30/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7434235548768993,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 30,
+          "numerator": 21552,
+          "denominator": 8388608,
+          "probability": 0.0025691986083984375,
+          "exact_fraction": "1347/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "E5",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 20,
+            "cooperating": 50
+          },
+          "treatment_means": {
+            "neutral": 0.8695652173913043,
+            "cooperating": 2.1739130434782608
+          },
+          "treatment_means_exact": {
+            "neutral": "20/23",
+            "cooperating": "50/23"
+          },
+          "difference_sum": 30,
+          "mean_difference": 1.3043478260869565,
+          "mean_difference_exact": "30/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7434235548768993,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 30,
+          "numerator": 21552,
+          "denominator": 8388608,
+          "probability": 0.0025691986083984375,
+          "exact_fraction": "1347/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "F1",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 20,
+            "cooperating": 51
+          },
+          "treatment_means": {
+            "neutral": 0.8695652173913043,
+            "cooperating": 2.217391304347826
+          },
+          "treatment_means_exact": {
+            "neutral": "20/23",
+            "cooperating": "51/23"
+          },
+          "difference_sum": 31,
+          "mean_difference": 1.3478260869565217,
+          "mean_difference_exact": "31/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7479519353744961,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 31,
+          "numerator": 17504,
+          "denominator": 8388608,
+          "probability": 0.002086639404296875,
+          "exact_fraction": "547/262144",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "F2",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 21,
+            "cooperating": 52
+          },
+          "treatment_means": {
+            "neutral": 0.9130434782608695,
+            "cooperating": 2.260869565217391
+          },
+          "treatment_means_exact": {
+            "neutral": "21/23",
+            "cooperating": "52/23"
+          },
+          "difference_sum": 31,
+          "mean_difference": 1.3478260869565217,
+          "mean_difference_exact": "31/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7479519353744961,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 9,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 31,
+          "numerator": 17504,
+          "denominator": 8388608,
+          "probability": 0.002086639404296875,
+          "exact_fraction": "547/262144",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "F4",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 19,
+            "cooperating": 51
+          },
+          "treatment_means": {
+            "neutral": 0.8260869565217391,
+            "cooperating": 2.217391304347826
+          },
+          "treatment_means_exact": {
+            "neutral": "19/23",
+            "cooperating": "51/23"
+          },
+          "difference_sum": 32,
+          "mean_difference": 1.391304347826087,
+          "mean_difference_exact": "32/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7251911734588248,
+          "positive_differences": 17,
+          "negative_differences": 4,
+          "zero_differences": 2,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 32,
+          "numerator": 12248,
+          "denominator": 8388608,
+          "probability": 0.0014600753784179688,
+          "exact_fraction": "1531/1048576",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 21,
+          "positive": 17,
+          "negative": 4,
+          "ties": 2,
+          "numerator": 15094,
+          "denominator": 2097152,
+          "probability": 0.007197380065917969,
+          "exact_fraction": "7547/1048576",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "F5",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 20,
+            "cooperating": 53
+          },
+          "treatment_means": {
+            "neutral": 0.8695652173913043,
+            "cooperating": 2.3043478260869565
+          },
+          "treatment_means_exact": {
+            "neutral": "20/23",
+            "cooperating": "53/23"
+          },
+          "difference_sum": 33,
+          "mean_difference": 1.434782608695652,
+          "mean_difference_exact": "33/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.6740285366450527,
+          "positive_differences": 17,
+          "negative_differences": 3,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 3
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 33,
+          "numerator": 6992,
+          "denominator": 8388608,
+          "probability": 0.0008335113525390625,
+          "exact_fraction": "437/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 17,
+          "negative": 3,
+          "ties": 3,
+          "numerator": 2702,
+          "denominator": 1048576,
+          "probability": 0.0025768280029296875,
+          "exact_fraction": "1351/524288",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "G2",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 21,
+            "cooperating": 48
+          },
+          "treatment_means": {
+            "neutral": 0.9130434782608695,
+            "cooperating": 2.0869565217391304
+          },
+          "treatment_means_exact": {
+            "neutral": "21/23",
+            "cooperating": "48/23"
+          },
+          "difference_sum": 27,
+          "mean_difference": 1.173913043478261,
+          "mean_difference_exact": "27/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.556574733569118,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 9,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 27,
+          "numerator": 24480,
+          "denominator": 8388608,
+          "probability": 0.002918243408203125,
+          "exact_fraction": "765/262144",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "G5",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 19,
+            "cooperating": 50
+          },
+          "treatment_means": {
+            "neutral": 0.8260869565217391,
+            "cooperating": 2.1739130434782608
+          },
+          "treatment_means_exact": {
+            "neutral": "19/23",
+            "cooperating": "50/23"
+          },
+          "difference_sum": 31,
+          "mean_difference": 1.3478260869565217,
+          "mean_difference_exact": "31/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7479519353744961,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 31,
+          "numerator": 17504,
+          "denominator": 8388608,
+          "probability": 0.002086639404296875,
+          "exact_fraction": "547/262144",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "H2",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 19,
+            "cooperating": 48
+          },
+          "treatment_means": {
+            "neutral": 0.8260869565217391,
+            "cooperating": 2.0869565217391304
+          },
+          "treatment_means_exact": {
+            "neutral": "19/23",
+            "cooperating": "48/23"
+          },
+          "difference_sum": 29,
+          "mean_difference": 1.2608695652173914,
+          "mean_difference_exact": "29/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7113894223527009,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 29,
+          "numerator": 23664,
+          "denominator": 8388608,
+          "probability": 0.0028209686279296875,
+          "exact_fraction": "1479/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "H3",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 21,
+            "cooperating": 50
+          },
+          "treatment_means": {
+            "neutral": 0.9130434782608695,
+            "cooperating": 2.1739130434782608
+          },
+          "treatment_means_exact": {
+            "neutral": "21/23",
+            "cooperating": "50/23"
+          },
+          "difference_sum": 29,
+          "mean_difference": 1.2608695652173914,
+          "mean_difference_exact": "29/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7113894223527009,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 9,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 29,
+          "numerator": 23664,
+          "denominator": 8388608,
+          "probability": 0.0028209686279296875,
+          "exact_fraction": "1479/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "J1",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 20,
+            "cooperating": 53
+          },
+          "treatment_means": {
+            "neutral": 0.8695652173913043,
+            "cooperating": 2.3043478260869565
+          },
+          "treatment_means_exact": {
+            "neutral": "20/23",
+            "cooperating": "53/23"
+          },
+          "difference_sum": 33,
+          "mean_difference": 1.434782608695652,
+          "mean_difference_exact": "33/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.6740285366450527,
+          "positive_differences": 17,
+          "negative_differences": 3,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 3
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 33,
+          "numerator": 6992,
+          "denominator": 8388608,
+          "probability": 0.0008335113525390625,
+          "exact_fraction": "437/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 17,
+          "negative": 3,
+          "ties": 3,
+          "numerator": 2702,
+          "denominator": 1048576,
+          "probability": 0.0025768280029296875,
+          "exact_fraction": "1351/524288",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "J2",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 21,
+            "cooperating": 51
+          },
+          "treatment_means": {
+            "neutral": 0.9130434782608695,
+            "cooperating": 2.217391304347826
+          },
+          "treatment_means_exact": {
+            "neutral": "21/23",
+            "cooperating": "51/23"
+          },
+          "difference_sum": 30,
+          "mean_difference": 1.3043478260869565,
+          "mean_difference_exact": "30/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7434235548768993,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 9,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 30,
+          "numerator": 21552,
+          "denominator": 8388608,
+          "probability": 0.0025691986083984375,
+          "exact_fraction": "1347/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "J5",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 21,
+            "cooperating": 53
+          },
+          "treatment_means": {
+            "neutral": 0.9130434782608695,
+            "cooperating": 2.3043478260869565
+          },
+          "treatment_means_exact": {
+            "neutral": "21/23",
+            "cooperating": "53/23"
+          },
+          "difference_sum": 32,
+          "mean_difference": 1.391304347826087,
+          "mean_difference_exact": "32/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7251911734588248,
+          "positive_differences": 17,
+          "negative_differences": 4,
+          "zero_differences": 2,
+          "zero_count_sessions": {
+            "neutral": 9,
+            "cooperating": 3
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 32,
+          "numerator": 12248,
+          "denominator": 8388608,
+          "probability": 0.0014600753784179688,
+          "exact_fraction": "1531/1048576",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 21,
+          "positive": 17,
+          "negative": 4,
+          "ties": 2,
+          "numerator": 15094,
+          "denominator": 2097152,
+          "probability": 0.007197380065917969,
+          "exact_fraction": "7547/1048576",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "L1",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 20,
+            "cooperating": 50
+          },
+          "treatment_means": {
+            "neutral": 0.8695652173913043,
+            "cooperating": 2.1739130434782608
+          },
+          "treatment_means_exact": {
+            "neutral": "20/23",
+            "cooperating": "50/23"
+          },
+          "difference_sum": 30,
+          "mean_difference": 1.3043478260869565,
+          "mean_difference_exact": "30/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7434235548768993,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 30,
+          "numerator": 21552,
+          "denominator": 8388608,
+          "probability": 0.0025691986083984375,
+          "exact_fraction": "1347/524288",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "L2",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 21,
+            "cooperating": 52
+          },
+          "treatment_means": {
+            "neutral": 0.9130434782608695,
+            "cooperating": 2.260869565217391
+          },
+          "treatment_means_exact": {
+            "neutral": "21/23",
+            "cooperating": "52/23"
+          },
+          "difference_sum": 31,
+          "mean_difference": 1.3478260869565217,
+          "mean_difference_exact": "31/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7479519353744961,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 9,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 31,
+          "numerator": 17504,
+          "denominator": 8388608,
+          "probability": 0.002086639404296875,
+          "exact_fraction": "547/262144",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      },
+      {
+        "omitted_ratID": "L3",
+        "descriptive": {
+          "n": 23,
+          "units": "Pulls per focal rat per seven-minute session; cooperating minus neutral.",
+          "treatment_totals": {
+            "neutral": 20,
+            "cooperating": 51
+          },
+          "treatment_means": {
+            "neutral": 0.8695652173913043,
+            "cooperating": 2.217391304347826
+          },
+          "treatment_means_exact": {
+            "neutral": "20/23",
+            "cooperating": "51/23"
+          },
+          "difference_sum": 31,
+          "mean_difference": 1.3478260869565217,
+          "mean_difference_exact": "31/23",
+          "median_difference": 1,
+          "sample_sd_difference": 1.7479519353744961,
+          "positive_differences": 16,
+          "negative_differences": 4,
+          "zero_differences": 3,
+          "zero_count_sessions": {
+            "neutral": 10,
+            "cooperating": 4
+          }
+        },
+        "sign_flip": {
+          "observed_absolute_sum": 31,
+          "numerator": 17504,
+          "denominator": 8388608,
+          "probability": 0.002086639404296875,
+          "exact_fraction": "547/262144",
+          "reference": "Equiprobable independent paired signs; equality included; zero-pair multiplicities retained.",
+          "assignment_exact": false
+        },
+        "binomial_sign": {
+          "nonzero_pairs": 20,
+          "positive": 16,
+          "negative": 4,
+          "ties": 3,
+          "numerator": 12392,
+          "denominator": 1048576,
+          "probability": 0.01181793212890625,
+          "exact_fraction": "1549/131072",
+          "reference": "Conditional independent equiprobable signs among nonties; not assumption-free causal inference."
+        }
+      }
+    ],
+    "ranges": {
+      "mean_difference": {
+        "minimum": 1.173913043478261,
+        "maximum": 1.4782608695652173
+      },
+      "sign_flip_probability": {
+        "minimum": 0.0003509521484375,
+        "maximum": 0.002918243408203125
+      },
+      "binomial_sign_probability": {
+        "minimum": 0.0025768280029296875,
+        "maximum": 0.01181793212890625
+      }
+    }
+  },
+  "latency_audit": {
+    "scope": "Coding audit only; no latency treatment estimate or survival-model fit.",
+    "zero_count_rows": 14,
+    "zero_count_with_420": 14,
+    "zero_count_not_420": [],
+    "positive_count_with_420": [],
+    "first_timing_ranges": {
+      "zero_count": {
+        "n_numeric": 14,
+        "minimum": 420,
+        "maximum": 420
+      },
+      "positive_count": {
+        "n_numeric": 34,
+        "minimum": 6,
+        "maximum": 389
+      }
+    },
+    "missing_timing_cells": {
+      "lat_f": [],
+      "Pull2": [],
+      "Pull3": [],
+      "Pull4": [],
+      "Pull5": [],
+      "Pull6": [
+        39,
+        41
+      ]
+    },
+    "later_420_cell_counts": {
+      "Pull2": 26,
+      "Pull3": 35,
+      "Pull4": 45,
+      "Pull5": 46,
+      "Pull6": 46
+    },
+    "timing_outside_session": [],
+    "warning": "420 on a no-pull row is not treated as an observed first event; later timing meaning not inferred without raw Readme.",
+    "published_discrepancy": "Main article: latency Wilcoxon p=.003; supplement Table S6: Cox p=.048; unresolved."
+  },
+  "limitations": [
+    "Published results and prior preview descriptives were known before the local computational freeze.",
+    "The original CSV was not downloaded or byte-verified; all displayed cells were independently checked.",
+    "Published analysis n=23 versus available complete pairs n=24 is unexplained; all pairs retained.",
+    "No donor/recipient IDs, session dates or treatment sequence: additional clustering/carryover unresolved.",
+    "The count contrast concerns the assigned donor situation, bundling cooperation, access, activity and other changes.",
+    "Contemporaneous remote cue influences recipient-directed action; no retained recipient-specific cognition identified.",
+    "No measurement of ingestion, welfare, metabolic cost, normative grounds, governance or AI alignment.",
+    "Experiment-3 preview incomplete: no numerical experiment-3 analysis."
+  ]
+}

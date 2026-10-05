@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-06",
+  "scope": "Document preservation and local link-target checks; mathematical arguments manually reviewed, not machine-proved; no new experiment.",
+  "documents": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LI-AND-RECIPROCITY.md",
+      "bytes": 14815,
+      "sha256": "49c380ef5ffa0f6dc45c32b1d4a35276bb12b533d0142712db8cda48c692d760"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-THEORY-MAP.md",
+      "bytes": 21435,
+      "sha256": "8223f0fce23c1738a831592e2cbde15de495b4540f8d4def02dcef16476c901a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LI-CLASSICAL.md",
+      "bytes": 12274,
+      "sha256": "6314e337091b10cf02cddec62b22f5459c223b1a679d3bd4db6d7157c19127f5"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPROCITY-BOUNDARY.md",
+      "bytes": 17646,
+      "sha256": "c1dee5330a17bb5d25d5f1c928ac13ad8bbc8f96d551c07bba2d252ff3dbf4ec"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-MODEL-COMPARATORS.md",
+      "bytes": 5257,
+      "sha256": "da5baf296d4fdc39ea110c8bfdb00e49a6ee9a653bc19bcd1ccaa85971e93cd8"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-RECIPROCITY-REVIEW.md",
+      "bytes": 5653,
+      "sha256": "7cb5d210c7114dcb4aa959e33f9d69198af398f93b882da4e5358b97ba2abcbb"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-06-cognition-theory-li-and-reciprocity.md",
+      "bytes": 1211,
+      "sha256": "c29d5db84b92ab0cd55beffe0fdc61a5c1db4228a160d743e4127fbf35316fb7"
+    }
+  ],
+  "local_link_targets_checked": 68,
+  "broken_local_links": [],
+  "unresolved_reference_links": [],
+  "external_urls_recorded": [
+    "https://arxiv.org/pdf/2001.07203",
+    "https://cbmm.mit.edu/sites/default/files/publications/article.pdf",
+    "https://discovery.ucl.ac.uk/id/eprint/1530701/",
+    "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/search.php?word=理",
+    "https://pedia.cloud.edu.tw/Entry/Detail/?search=認知&title=認知",
+    "https://pedia.cloud.edu.tw/Entry/Detail/?title=理論",
+    "https://plato.stanford.edu/archives/spr2017/entries/confucius/",
+    "https://plato.stanford.edu/entries/confucius/",
+    "https://www.nature.com/articles/s41562-017-0064",
+    "https://zh.wikisource.org/wiki/論語",
+    "https://zh.wikisource.org/wiki/韓非子/解老",
+    "https://zh.wikisource.org/zh-hant/荀子/正名篇",
+    "https://zh.wikisource.org/zh-hant/荀子/解蔽篇",
+    "https://zh.wikisource.org/zh-hant/莊子/養生主",
+    "https://zh.wikisource.org/zh-hant/論語/公冶長第五",
+    "https://zh.wikisource.org/zh-hant/論語/衞靈公第十五",
+    "https://zh.wikisource.org/zh-hant/論語/雍也第六",
+    "https://zh.wikisource.org/zh-hant/論語/顏淵第十二"
+  ],
+  "external_scope": "Read extents and failed retrievals are stated in the relevant notes; URLs are not a full availability audit.",
+  "shared_file_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "theories/jian-and-wenyan-as-formal-language/README.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HANZI-AND-THEORY-TREE.md",
+      "own_insertion_count": 1,
+      "removing_own_insertion_matches_snapshot": true
+    }
+  ],
+  "historical_source_preservation": [
+    {
+      "path": "sources/07-shengsheng-buxi/downloads-2026-07-08/2026-07-14-生生不息论.md",
+      "sha256": "80571f0ae3fd8e7064bf970216cf3f5d6c7d40f14dd901d53169fe6153978cf9",
+      "head_available": true,
+      "unchanged_from_head": true
+    },
+    {
+      "path": "sources/12-claude-ai-chats/2026-04-28_Prediction_error_and_identification_in_emotion_regulation_56d9d498.md",
+      "sha256": "e90a06b68f25198fa6d7cd78939e59b68ed65e8ed92b636b3aab038726804a84",
+      "head_available": true,
+      "unchanged_from_head": true
+    },
+    {
+      "path": "sources/12-claude-ai-chats/2026-05-04_求导求积与其他势的处理方法_35c49130.md",
+      "sha256": "35bcf0e095a4f98854d52da8045bb7ee91105390498d125eff97512c952244ff",
+      "head_available": true,
+      "unchanged_from_head": true
+    },
+    {
+      "path": "sources/18-friend-conversations/2026-10-04-soi-si-lom-5-2/README.md",
+      "sha256": "aadc1b3de3630f9130114c067c0dcdc1fcd7816d1a064da7ea18de5eb0db1f27",
+      "head_available": true,
+      "unchanged_from_head": true
+    },
+    {
+      "path": "drafts/2026-10-04-soi-si-lom-5-2/translation-zh.md",
+      "sha256": "acefadcd662d0e798fc804ed5917061073cf75113e68f8320331393ad9ea23a1",
+      "head_available": true,
+      "unchanged_from_head": true
+    }
+  ],
+  "new_empirical_or_machine_proved_result": false,
+  "new_hand_derived_bounds": "Uniform proxy error gives a strict ranking margin above 2 epsilon and a 2 epsilon plus optimization error choice bound; standard elementary arguments, no priority claim.",
+  "normative_grounding_complete": false,
+  "whole_research_complete": false
+}

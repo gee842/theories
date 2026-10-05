@@ -1,0 +1,16 @@
+'SemanticAction.preserves_iff_no_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SemanticAction.preserves_composition' depends on axioms: [propext]
+'SemanticAction.preserves_under_justified_scope_restriction' does not depend on any axioms
+'SemanticAction.rejecting_everything_is_sound_but_exports_nothing' does not depend on any axioms
+'SemanticAction.raw_route_as_patient_has_counterexample' does not depend on any axioms
+'SemanticAction.no_injective_mask_decoder_preserves_fixed_bearer' does not depend on any axioms
+'SemanticAction.addressed_command_keeps_bearer_and_changes_action' does not depend on any axioms
+'SemanticAction.role_scope_composes' does not depend on any axioms
+'SemanticAction.justified_role_scope_transports_instrumental' does not depend on any axioms
+'SemanticAction.changed_actor_can_preserve_role_scope' does not depend on any axioms
+'SemanticAction.matching_label_is_insufficient_after_reopening' does not depend on any axioms
+'SemanticAction.sound_admission_preserves_reason' does not depend on any axioms
+'SemanticAction.distinct_reason_and_action_stages_have_models' does not depend on any axioms
+'SemanticAction.authorization_and_feasibility_do_not_supply_ground' does not depend on any axioms
+'SemanticAction.compatibility_does_not_supply_evaluative_good' does not depend on any axioms
+'SemanticAction.selected_action_requires_two_independent_contracts' does not depend on any axioms

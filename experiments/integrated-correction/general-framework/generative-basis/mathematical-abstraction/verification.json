@@ -1,0 +1,204 @@
+{
+  "assertion_counts": {
+    "approximation_not_transitive": 1,
+    "bounded_queries_determine_entire_behavior": 5898,
+    "current_output_loses_future": 1,
+    "current_output_merges": 1,
+    "every_exact_congruence_refines_canonical": 21864,
+    "finite_data_counterexample_agrees": 13,
+    "finite_data_counterexample_diverges": 13,
+    "finite_profile_equals_refinement": 15898,
+    "independent_product_graph": 118282,
+    "question_expansion": 1,
+    "quotient_output": 61266,
+    "quotient_transition": 61266,
+    "refinement_bound": 9994,
+    "same_behavior_same_bounded_queries": 5898,
+    "sharp_refinement_family": 11,
+    "sharp_word_family": 11,
+    "shortest_witness_bound": 57016,
+    "syntax_does_not_force_commutativity": 1,
+    "term_interpretation_commutes_with_homomorphism": 778032,
+    "too_short_bounded_test": 1
+  },
+  "boundaries": {
+    "delayed_disagreements": [
+      {
+        "delayed_machine_states": 2,
+        "first_difference": 1,
+        "observed_horizon": 0
+      },
+      {
+        "delayed_machine_states": 3,
+        "first_difference": 2,
+        "observed_horizon": 1
+      },
+      {
+        "delayed_machine_states": 4,
+        "first_difference": 3,
+        "observed_horizon": 2
+      },
+      {
+        "delayed_machine_states": 5,
+        "first_difference": 4,
+        "observed_horizon": 3
+      },
+      {
+        "delayed_machine_states": 6,
+        "first_difference": 5,
+        "observed_horizon": 4
+      },
+      {
+        "delayed_machine_states": 7,
+        "first_difference": 6,
+        "observed_horizon": 5
+      },
+      {
+        "delayed_machine_states": 8,
+        "first_difference": 7,
+        "observed_horizon": 6
+      },
+      {
+        "delayed_machine_states": 9,
+        "first_difference": 8,
+        "observed_horizon": 7
+      },
+      {
+        "delayed_machine_states": 10,
+        "first_difference": 9,
+        "observed_horizon": 8
+      },
+      {
+        "delayed_machine_states": 11,
+        "first_difference": 10,
+        "observed_horizon": 9
+      },
+      {
+        "delayed_machine_states": 12,
+        "first_difference": 11,
+        "observed_horizon": 10
+      },
+      {
+        "delayed_machine_states": 13,
+        "first_difference": 12,
+        "observed_horizon": 11
+      },
+      {
+        "delayed_machine_states": 14,
+        "first_difference": 13,
+        "observed_horizon": 12
+      }
+    ],
+    "sharp_bounds": [
+      {
+        "initial_output_classes": 2,
+        "shortest_word": 0,
+        "states": 2,
+        "strict_refinements": 0
+      },
+      {
+        "initial_output_classes": 2,
+        "shortest_word": 1,
+        "states": 3,
+        "strict_refinements": 1
+      },
+      {
+        "initial_output_classes": 2,
+        "shortest_word": 2,
+        "states": 4,
+        "strict_refinements": 2
+      },
+      {
+        "initial_output_classes": 2,
+        "shortest_word": 3,
+        "states": 5,
+        "strict_refinements": 3
+      },
+      {
+        "initial_output_classes": 2,
+        "shortest_word": 4,
+        "states": 6,
+        "strict_refinements": 4
+      },
+      {
+        "initial_output_classes": 2,
+        "shortest_word": 5,
+        "states": 7,
+        "strict_refinements": 5
+      },
+      {
+        "initial_output_classes": 2,
+        "shortest_word": 6,
+        "states": 8,
+        "strict_refinements": 6
+      },
+      {
+        "initial_output_classes": 2,
+        "shortest_word": 7,
+        "states": 9,
+        "strict_refinements": 7
+      },
+      {
+        "initial_output_classes": 2,
+        "shortest_word": 8,
+        "states": 10,
+        "strict_refinements": 8
+      },
+      {
+        "initial_output_classes": 2,
+        "shortest_word": 9,
+        "states": 11,
+        "strict_refinements": 9
+      },
+      {
+        "initial_output_classes": 2,
+        "shortest_word": 10,
+        "states": 12,
+        "strict_refinements": 10
+      }
+    ]
+  },
+  "model_checks": {
+    "bounded_identification": {
+      "distinct_initial_behaviors": 1054,
+      "maximum_states": 3,
+      "maximum_word_length": 4,
+      "queried_words": 31
+    },
+    "classes": [
+      {
+        "actions": 2,
+        "machines": 2,
+        "outputs": 2,
+        "states": 1
+      },
+      {
+        "actions": 2,
+        "machines": 64,
+        "outputs": 2,
+        "states": 2
+      },
+      {
+        "actions": 2,
+        "machines": 5832,
+        "outputs": 2,
+        "states": 3
+      },
+      {
+        "actions": 1,
+        "machines": 4096,
+        "outputs": 2,
+        "states": 4
+      }
+    ],
+    "total_machines": 9994
+  },
+  "scope": "Exhaustive finite checks and explicit boundary witnesses; hand proofs are separate. No Lean, physical, or empirical validation is claimed.",
+  "source_sha256": "6ee6db42008ad4ff5cf2073a527842c30df49e053bf6d716d4495dad67f37520",
+  "status": "passed",
+  "syntax_transport": {
+    "distinct_terms": 21612,
+    "term_height": 3,
+    "valuations_per_term": 36
+  }
+}

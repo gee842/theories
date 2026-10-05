@@ -1,0 +1,79 @@
+Portable text extraction from the original supplementary PDF. AI-generated with pypdf; page order retained, layout and diagrams omitted. The original PDF remains authoritative. CC BY 4.0, Gerber, Schweinfurth and Taborsky (2020).
+
+--- PDF page 1 ---
+Supplementary Tables Table S1: Overview of all experiments  Question sample size (n)     Figures/Tables Experiment 1 Is olfactory information important for cooperative decisions?  23/21     Figure 1 & S1      Table S2,S3 & S7 Experiment 2 Is olfactory information important for cooperation decisions when receiving or when providing help?  23     Figure S2       Table S4 Experiment 3 Does the smell of cooperation suffice to induce cooperative behaviour?  24     Figure S3        Table S5 Experiment 4 Does the performance of cooperation trigger cooperative responses?  24     Figure S4        Table S6  Table S2: Pulling frequency (Experiment 1) 
+ Note that the estimates for the main effects are shown for a model without an interaction term   Table S3a: Latencies to first pull (Experiment 1) 
+  
+Response Fixed Effects      ß  SE    z-value p Direct reciprocity  Number of pulls GLMM (Poisson) N = 23  
+Intercept -0.328  0.233 -1.405   Partner (D) -1.135  0.271 -4.189 <0.001 Olfactory information (yes) 0.993  0.262 3.795 <0.001 Partner (D) : Olfactory information (yes) -0.406 0.587 -0.690 0.490 
+      Generalised reciprocity  Number of pulls GLMM (Poisson) N = 21   
+Intercept 1.316  0.107 12.255 <0.001 Partner (D) -0.657  0.134 -4.921 <0.001 Olfactory information (yes) 0.072  0.127 0.571 0.568 Partner (D) : Olfactory information (yes) -0.433  0.269 -1.612 0.107      
+Response Fixed Effects Coef SE(Coef) SE2 c2 DF p Direct reciprocity  Latencies to first pull Cox proportional hazard N=23  
+Intercept       Partner (D) -1.120 0.502 -0.498 4.99 1 0.026 Olfactory information (yes)   2.354 0.465  0.450 25.67 1 <0.001 Partner (D) : Olfactory information (yes) -1.476 0.675  0.666 4.79 1 0.029 Generalised reciprocity  Latencies to first pull Cox proportional hazard N=21  
+Intercept       Partner (D) -0.450 0.347  0.343 1.68 1 0.19 Olfactory information (yes)  1.155 0.355  0.347 10.57 1 0.001 Partner (D) : Olfactory information (yes) -1.602 0.526  0.519 9.27 1 0.002 
+
+--- PDF page 2 ---
+2  
+  Table S3b: Post hoc Tukey comparisons for latency to first pull (Experiment 1) 
+   
+Response Fixed Effects      ß  SE    z-value p Direct reciprocity N = 23  
+Cooperative– uncooperative smell == 0  -2.5963 0.464 -5.596 <0.001  Cooperative– uncooperative no smell ==0   -1.1203 0.502 -2.233 0.113      Generalised reciprocity N = 21   N = 23   
+Cooperative– uncooperative smell == 0  -2.0524 0.400 -5.131 <0.001 Cooperative– uncooperative no smell ==0   -0.4500   0.347 -1.296 0.564 
+
+--- PDF page 3 ---
+3  
+Table S4a: Is olfactory information important when receiving or providing help? (Experiment 2) Model output comparing the number of pulls when pulling for a partner (cooperative and uncooperative partners) whose smell was blocked in the experience phase (CNS; DNS) with when smell was blocked in the test phase (CSN; DSN).                                                                                                
+ Table S4b: Comparing the pulling frequency and latency to first pull for cooperative and uncooperative partners from experiment 1 and experiment 2 combined.  
+ 
+   
+Wilcoxon signed-rank with continuity correction   V p Number of pulls n= 23  CNS-CSN  139 0.206  DNS-DSN 65.5 0.916    Response Fixed Effects Coeff      SE(Coeff)        SE2    c2 DF p Latencies to first pull n=23  CNS-CSN  0.043          0.337     0.337 0.02 1  0.9 DNS-DSN 0.096          0.345     0.336 0.08 1  0.78         
+Response Fixed Effects ß SE z-value p  Combined GLMM Number of pulls  
+Cooperative– uncooperative == 0 -0.657 0.1336 -4.921 <0.001 
+Response Fixed Effects Coeff      SE(Coeff)        SE2    c2 DF p Combined Latencies to first pull Cox prop. hazard  
+       Partner (uncooperative)  -0.722 0.246 0.243 8.65 1 0.003 
+
+--- PDF page 4 ---
+4  
+Table S5: Does the smell of cooperation suffice to induce reciprocal returns? (Experiment 3): Model output comparing the number of pulls (top) and the latencies to the first pull (bottom) when pulling for a partner after experiencing an uncooperative stooge while being provided with smell of a cooperative partner or an uncooperative partner in the experience phase or in the test phase.                                                                                                                                                                                                                                    
+  Table S6: Does individual identity (‘cooperative’ vs. ‘uncooperative’) or the performance of cooperation trigger cooperative responses? (Experiment 4): Model output comparing the number of pulls and the latencies to the first pull when pulling for a partner while receiving olfactory information from a conspecific in a different room that either does not help its respective own partner (‘neutral’) or which helps its partner (‘cooperative’).                                                                                                                                                                       
+Wilcoxon signed-rank with continuity correction   V p  Number of pulls Wilcoxon signed-rank 
+Experience phase  C-D  115 0.197  Test phase  C-D  180 0.022 
+Response  Fixed Effects Coeff      SE(Coeff)        SE2    c2 DF p Latencies to first pull Cox prop. hazard  
+         Experience phase Partner (defector)  -0.900 0.364 0.352 6.13 1 0.013  Test phase Partner (defector)  -0.682 0.359 0.342 3.62 1 0.057 
+Response                             Fixed effects                    V P    Number of pulls Wilcoxon signed-rank Neutral - cooperative   27 0.003  
+Response Fixed Effects Coeff     SE(Coeff)        SE2    c2 DF p Latencies to first pull Cox prop. hazard  
+        Neutral - cooperative  -0.695 0.352 0.352 3.9 1 0.048 
+
+--- PDF page 5 ---
+5  
+ Table S7: Adjusted p values (method =BH) from post hoc comparison using log rank tests for the latency to first pull  Empty Cage Cooperator  without smell Cooperator with smell Non-cooperator without smell Cooperator without smell 0.0826 - - - Cooperator with smell <0.001 <0.001 - - Non-cooperator without smell 0.69473 0.0826 <0.001 - Non-cooperator with smell 0.15436 0.69473 <0.001 0.15374        
+
+--- PDF page 6 ---
+6  
+Supplementary Figures Figure S1 Overview of the experimental procedure and set-up (a) and experienced treatments (b) for Experiment 1. All focal individuals experienced the treatments in a generalized (n= 21) and a direct (n= 23) reciprocity paradigm, followed by the respective test phase (see a). The control treatment was however only performed in the direct reciprocity paradigm. The order of each treatment was randomized for every focal individual. The experimental period was always preceded by one minute of acclimatisation time. a)              b)   
+
+
+--- PDF page 7 ---
+7  
+Figure S2 Overview of the experimental procedure and set-up (a) as well as the experienced treatments (b) for experiment 2. All focal individuals (n= 23) experienced the treatments in a random order. The experimental period was always preceded by one minute of acclimatisation time.  a)       b)     
+
+
+--- PDF page 8 ---
+8  
+Figure S3 Experimental treatments for experiment 3. Focal individuals (n= 24) experienced the smell of a cooperative or a non-cooperative individual (P1) that was pulling for a cage mate (CM1, represented by a cage mate of P1) in an adjacent room in a randomized order in either the experience phase (a) or the test phase (b). While experiencing the smell of a conspecific in another room, focal rats always experienced the behaviour of a stooge (S1). The experimental period was always preceded by one minute of acclimatisation time.  
+  
+
+
+--- PDF page 9 ---
+9  
+Figure S4 Experimental procedure and set up for experiment 4. Focal individuals (n= 24) experienced the same partner either cooperating or in a neutral context in a randomized order. The experimental period was always preceded by one minute of acclimatisation time.  
+   
+
+
+--- PDF page 10 ---
+10  
+Figure S5 Comparisons of number of pulls from experiment 1 including the empty cage control; The letters indicate significant differences from the posthoc Tukey comparison of a generalized liner mixed model includeing the number of pulls as respose variable, treatment as explanatory variable and the identity as a random factor. 
+  Figure S6 Correlation plot of the number of pulls of cooperative rats and the number of pulls of focal individual as a proxy for the effect of “activity” for the pooled data from all experiments (N=159). r =0.014, p=0.88. 
+ 
+
+

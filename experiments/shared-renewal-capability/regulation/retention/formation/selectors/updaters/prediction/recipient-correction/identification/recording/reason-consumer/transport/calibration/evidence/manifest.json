@@ -1,0 +1,10 @@
+{
+  "status": "Exact prior dependency source; no new working copy.",
+  "files": {
+    "identification-model.py": {
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/model.py",
+      "source_sha256": "5858d2fdcef507323cdfea6495f228e32b6e90098145a9e8a2da8c326e7c0938",
+      "inherited_manifest": "../../evidence/manifest.json"
+    }
+  }
+}

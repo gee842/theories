@@ -1,0 +1,13 @@
+{
+  "source_url": "https://datadryad.org/dataset/doi:10.5061/dryad.h18931zjd",
+  "method": "Independent root read of visible experiment4.csv DOM table via browser locator; trimmed cell text, compact JSON of row arrays including blank first header",
+  "observed_at_utc": "2026-10-05T22:28:10.386526+00:00",
+  "rows_including_header": 49,
+  "columns_each_row": 10,
+  "canonical_ascii_bytes": 3119,
+  "fnv1a64": "df8ebe2256185e27",
+  "matches_preserved_reading_edition_receipt": true,
+  "edition_path": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/experiment4-preview.tsv",
+  "edition_sha256": "4a2a9b660cfd9920a8d1bdcc7830507341e6c58ff08b239398dd6daebb82adbd",
+  "limitation": "Independent agreement with displayed rendering; original CSV bytes were not retrieved or verified."
+}

@@ -1,0 +1,838 @@
+{
+  "status": "pass",
+  "scope": "Independent frozen-fixture reconstruction and abstract interface audit; no paid read/action or empirical generalization.",
+  "source_rows": 666,
+  "complete_weighted_arms": 54,
+  "scenarios": 16,
+  "scenario_comparisons": 10656,
+  "updater": {
+    "original_paths": 370,
+    "original_steps": 1850,
+    "qualified_endpoints": 150,
+    "generic_updater_inputs": 48,
+    "conditional_invariant_steps": 68
+  },
+  "current_comparable_rows": 102,
+  "cross_history_pairs": 10404,
+  "admitted_same_history_pairs": 102,
+  "patient_controller_binding_mutations": 612,
+  "reference_model": "Independent ordinary relation on the same runtime information",
+  "observer_exclusion": "Observer law/history absent from every monitor input; identical runtime inputs checked under opposite causal worlds.",
+  "source_hashes": {
+    "model.py": "0da1ab45713d63719d7547f84b2dcefc54a0430f59abeaa2868795e2a768e6cb",
+    "check_model.py": "c0b71ed1ac2941209cf5421d6e30a4618915b563ee7d14f264e739808052d816",
+    "inputs.json": "3906534c05c1c80951b2bd705744dfc2ce34efeabc9003088662b533f7689b3d",
+    "results.json": "fa245e896cbda349a014512723d68caecb5c7069da6487cac6c35a86660e9193",
+    "evidence/manifest.json": "4193b95d814445c7ccd6307481a5aa42a9da88ac8f3c86411aeb1a9aefdbc052",
+    "evidence/identification-model.py": "5858d2fdcef507323cdfea6495f228e32b6e90098145a9e8a2da8c326e7c0938"
+  },
+  "inherited_source_hashes": {
+    "evidence/manifest.json": "f893f4870ca394db276c5ada65776b5794436989d90cfde33691c33b2e0681ce",
+    "evidence/archive-results.json.gz": "ce7b6233454c1389e4c6a31780802c57435d02df16a19552ffba5e0969294a25",
+    "evidence/parent-results.json.gz": "5f4adf9044e1c32e3fddd37c41f2fe7419da014a6fb5fc8e30d1c8a2689cf256"
+  },
+  "qualification_scope": "No false-positive acquisition, stable response law, uncorrupted command/register; import writes require a separate invariant.",
+  "strong_comparator": "Qualified direct candidate may survive missing/conflicting source grounds, but uses the same hypothetical read and supplied original scope.",
+  "masses": [
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "direct_candidate",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "direct_candidate",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "direct_candidate",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "direct_candidate",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "direct_candidate",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "changed_context",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "disagreement",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "disagreement_with_compatible_source",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "disagreement",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "disagreement_with_compatible_source",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "corroborated",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "corroborated_incompatible",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "disagreement",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "disagreement",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "consistently_corrupt",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "disagreement_with_compatible_source",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "corroborated",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "corroborated_incompatible",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "disagreement",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "disagreement_with_compatible_source",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "corroborated",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "corroborated",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "corroborated",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "corroborated_incompatible",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "primary",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "common_mode_corruption",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "disagreement",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "independently_warranted_new_evidence",
+      "flag": "disagreement_with_compatible_source",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "reason_copied_into_controller",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "retained_inspection",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "corroborated",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "corroborated_incompatible",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "direct_candidate",
+      "count": 6,
+      "mass": "3/8"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "disagreement",
+      "count": 0,
+      "mass": "0"
+    },
+    {
+      "case": "remove_both_grounds",
+      "producer": "variable",
+      "scenario": "silent_target_reversal",
+      "flag": "disagreement_with_compatible_source",
+      "count": 0,
+      "mass": "0"
+    }
+  ]
+}

@@ -1,0 +1,1099 @@
+{
+  "date": "2026-10-06",
+  "status": "pass",
+  "scope": "Local document links and anchors, owned artifact hashes, claim inventory, existing proof/enumeration receipt consistency and stated inherited recipient metrics/source receipts. No rerun of science, empirical validation or completed philosophical foundation.",
+  "local_links_checked": 248,
+  "anchors_checked": 68,
+  "claim_rows_inventoried": 55,
+  "new_lean_audits": 27,
+  "inherited_lean_audits": 23,
+  "finite_matrices_enumerated": 66066,
+  "practical_necessity_follow_up": {
+    "previous_goal_turn": "progress",
+    "new_companions": 3,
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "evidence": "Displayed hand proofs, primary-source argument inspection and internal cross-review; no claim that propagation justifies the supplied normative inputs.",
+    "inspected_reason_interface": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean",
+    "inspected_reason_interface_sha256": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20"
+  },
+  "self_ground_follow_up": {
+    "previous_goal_turn": "progress",
+    "new_companions": 4,
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "primary_philosophical_works_examined": 2,
+    "primary_empirical_reports_examined": 3,
+    "empirical_reports_abstract_only": 1,
+    "evidence": "Displayed conditional branching and fixed-constituency succession arguments; exact scoped-inheritance condition; selective primary readings and internal cross-review. Does not establish practical congruency, universal standing or whole-root necessity."
+  },
+  "practical_congruency_follow_up": {
+    "previous_goal_turn": "progress",
+    "existing_companions_extended_or_corrected": 5,
+    "new_companion_files": 0,
+    "new_primary_philosophical_works_examined": 1,
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "inherited_model_reruns": 0,
+    "evidence": "Matched-case normative adjudication, typed assignment/oracle analysis, Williams primary comparison, corrected countermodel capacity scope, and inherited operational evidence. Positive warrant remains distinct from universal necessity.",
+    "recipient_receipt_source_hash_counts": [
+      8,
+      11
+    ],
+    "recipient_receipt_sha256": {
+      "results.json": "0d804463c7126b97b1bdcb034949abef33fa604a813bf30b2b1a625b319a69af",
+      "independent-check.json": "52e7ad54d6595611e7c1b6cdb0902f3b8cb810c4204d5a05e1a256113f5ce6a8"
+    },
+    "recipient_metric_scope": "Saved primary variable-producer expected values; no inference from equal means alone to equal nonlinear or risk-sensitive evaluations."
+  },
+  "perspective_uptake_follow_up": {
+    "previous_goal_turn": "progress",
+    "existing_companions_extended": 4,
+    "new_companion_files": 0,
+    "new_primary_philosophical_works_examined": 1,
+    "new_primary_empirical_reports_examined": 3,
+    "empirical_reports_abstract_or_preview_only": 2,
+    "empirical_reports_selected_full_text": 1,
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "inherited_model_reruns": 0,
+    "proposed_discrimination_tests_executed": false,
+    "evidence": "Exact typed-frame hand argument, conditional retention of warranted actual-actor reasons, calibrated acquisition route, scoped Sidgwick and empirical readings, and internal cross-review. Recognition and practical grounding remain distinct; full necessity is not established."
+  },
+  "artifacts": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md": "b5e8da5d60aadfede765c1712461e9908379c2d374bc0155bfc7f58136945d2c",
+    "sources/15-codex-theory-conversations/2026-10-06-huigen-entire-theory-necessity.md": "995b491155dec8941aef11549a04483e71f76da856351250d5236aba2a89bf01",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md": "a9908371472ab74bb2006cf765653788b5c3737b424d9f45b1790bcdfb638a4f",
+    "experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/README.md": "8203be3deb0bc0af20b66fe8f5423120a73545fa31176df5b5ed13d3a18a9d82",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md": "791a29dc221809dd27d89c92b604a8407085e36e66e67cd3fbc11b36b896f048",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md": "abbcfaf4bbd0146d18ca042102a19341792fab74e2adc1e2a3fc9521fee7bcf3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md": "22dda35b2cea09155121a9cab49f213b2d51c1fff2bcfa04562cdd7b47248874",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md": "7602d45439a0bf90cb09f7ab2c21afa772fa0223ee446a11391db392815dbea7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md": "3ca02331675ca8944e6225a710b586f4a8def7d48baf0d98e61eacf48d41168c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md": "2c2638e787c8e21b7f7ee2ffd4161277dfc2bae99eb2281ce09be2bf8d8c2187",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md": "5cb9f67d066d390f39b85c422262c18bb9c0acf19a9fd0107610b4b04214950b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md": "0e9b0995d6f820dfd173d073b484db73da7397bc8c92c7740842c97c2ea77a04",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md": "b266ef45ae930843b53c5a11dd641fd195aba2f60f6453f0f4262f088af97c8f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md": "a8c9f73bcf14ce8392ae5b11d397ccbde8d0269a5c152c5fb524681b9cf5f9d6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md": "5d087d031fe3dee608959152d2f92766f400df9bb18ecc3ce5fe717fe9595556",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-CHECK.py": "1f8945d1df984d783e719d8bbbe96922bd886f4d675d322e0187bc8477e13303",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-CLAIM-COVERAGE.json": "21ad75e639a8e5b3e77e044f9bdbc74c5b5ff2b9444626a9b5169235bbf600ce",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean": "bf9a625ac70c7cd1fe78ba39ee37bd506caf319f31d7ea4059ca6a2549908bf4",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/InquiryFamilies.lean": "9b8ccc77d1f3fc7c2c4731312dc416a50bbb3079320e0571994fe43965547a75",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check.py": "af7e7ab1c4ae38d11811f06772f37f6f099393ec299e87c4572c931de19a6101",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/verification.json": "ec057b15a6934b08598e439d6d0e5cd8ca16bd249ce87c457a3def8fb09a05dc",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/verification/Depletion.txt": "c42329c2ab8d545a7897037b50887d4944cf95c47e781d1da19be42a18cb319a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/verification/GenerativeClosure.txt": "06516b35852c7eead00c1e185cc1820b7c90f5ca9197b148c993b10064be50db",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/verification/GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/verification/InquiryFamilies.txt": "e4b5695c35ae43d6ee671116bcf543724ca1e795b22e9a5c9f2d1ba1d4fcadec",
+    "experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/check.py": "6112b4f9c7e16db12ce05f40124f003eb059c5336a90e60c1fc576f139035b51",
+    "experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/verification.json": "4f7e1e0c39850571fa8c3cc4eba5187890344ae8b56146f83f156d7b5991fe2d"
+  },
+  "shared_index_paragraphs": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "sources/SOURCES.md",
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "sources/SOURCES.md"
+  ],
+  "links": [
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-huigen-entire-theory-necessity.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "SCIENTIFIC-PHILOSOPHY.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/research-ledger.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/root-of-wisdom-synthesis.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/root-of-wisdom-formalization.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-CLAIM-COVERAGE.json"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "CLAIMS.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "GENERATIVE-DEVELOPMENT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "RECORDED-REASONS.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md#42-two-orbit-lemma"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/README.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md#a-further-constructive-attempt-generate-protection-before-roles-are-settled"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "RECORDED-REASONS.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#10-practical-congruency-tested-on-an-unrelated-actor"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md#5-a-countermodel-with-the-declared-scientific-and-reflective-capacities"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md#9-practical-congruency-preserving-truth-warrant-and-an-addressee"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#11-imaginative-uptake-without-substituting-the-observer"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md#10-imaginative-perspective-taking-reversible-frames-and-new-warrant"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md#6-perspective-taking-must-earn-its-epistemic-role"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#8-can-reflective-acquisition-justify-the-impersonal-ground"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-06-huigen-entire-theory-necessity.md",
+      "target": "2026-10-06-scientific-philosophy-compatibility.md"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-06-huigen-entire-theory-necessity.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-06-huigen-entire-theory-necessity.md",
+      "target": "../20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/research-ledger.md"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-06-huigen-entire-theory-necessity.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
+      "target": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
+      "target": "GenerativeClosure.lean"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
+      "target": "InquiryFamilies.lean"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
+      "target": "../GenerativeCore.lean"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
+      "target": "../Depletion.lean"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
+      "target": "verification.json"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
+      "target": "verification/"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
+      "target": "../../../../../../sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/root-of-wisdom-synthesis.md"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/README.md",
+      "target": "../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/README.md",
+      "target": "check.py"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/README.md",
+      "target": "verification.json"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/README.md",
+      "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md#42-two-orbit-lemma"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/root-of-wisdom-synthesis.md#formal-limits-without-exaggerated-conclusions"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/research-ledger.md#claim-register"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPOSITION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../2026-10-05-concern-theory/RECIPIENT-IDENTIFICATION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#2-the-exact-transfer-theorem"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/research-ledger.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#6-wisdom-as-situated-and-revisable-understanding"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "ROOT-FOUNDATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#5-effective-possibilities-and-the-role-of-lenses"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "SCIENTIFIC-INQUIRY-CONDITIONS.md#proposition-i1--interactive-indistinguishability"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "ROOT-FOUNDATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md#a-precise-identity-consistency-check"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/check.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md",
+      "target": "SCIENTIFIC-PHILOSOPHY-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/research-ledger.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/root-of-wisdom-synthesis.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md",
+      "target": "SCIENTIFIC-INQUIRY-CONDITIONS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/root-of-wisdom-synthesis.md#formal-limits-without-exaggerated-conclusions"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md",
+      "target": "HUIGEN-GENERATIVE-CLOSURE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-huigen-entire-theory-necessity.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "SCIENTIFIC-PHILOSOPHY-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-GENERATIVE-CLOSURE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-FULL-THEORY-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-CLAIM-COVERAGE.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-NECESSITY-ARGUMENTS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-GENERATIVE-IDENTITY.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-HARM-IDENTIFICATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#10-practical-congruency-tested-on-an-unrelated-actor"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#7-what-practical-congruency-must-answer-after-the-direct-challenge"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md#5-a-countermodel-with-the-declared-scientific-and-reflective-capacities"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#9-practical-congruency-preserving-truth-warrant-and-an-addressee"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-HARM-IDENTIFICATION.md#5-equal-private-cost-is-a-controlled-comparison-not-a-proof-of-reasonlessness"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#11-imaginative-uptake-without-substituting-the-observer"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#10-imaginative-perspective-taking-reversible-frames-and-new-warrant"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#8-can-reflective-acquisition-justify-the-impersonal-ground"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-HARM-IDENTIFICATION.md#6-perspective-taking-must-earn-its-epistemic-role"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../2026-10-05-revisable-concern/settlement/formal/REPORT.md#1-finite-reasons-and-retained-grounds"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../2026-10-05-revisable-concern/settlement/formal/REPORT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../2026-10-05-revisable-concern/settlement/formal/REASON-PROTECTION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../2026-10-05-revisable-concern/settlement/formal/REPORT.md#1-finite-reasons-and-retained-grounds"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-GENERATIVE-CLOSURE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-HARM-IDENTIFICATION.md#5-equal-private-cost-is-a-controlled-comparison-not-a-proof-of-reasonlessness"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-06-huigen-entire-theory-necessity.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "HUIGEN-FULL-THEORY-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "HUIGEN-FULL-THEORY-AUDIT.md#42-two-orbit-lemma"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "HUIGEN-NECESSITY-ARGUMENTS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md",
+      "target": "HUIGEN-NECESSITY-ARGUMENTS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md",
+      "target": "DAO-NORMATIVE-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/research-ledger.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md",
+      "target": "HUIGEN-FULL-THEORY-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md",
+      "target": "HUIGEN-GENERATIVE-CLOSURE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#4-the-strongest-positive-route-preserve-the-ground-that-justified-the-anchor"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#from-interacting-differences-to-consequential-organization"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#3-a-situation-with-differentiated-centers"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-GENERATIVE-IDENTITY.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#4-a-sharper-test-preserve-the-patient-while-ending-the-undertaking"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#8-can-reflective-acquisition-justify-the-impersonal-ground"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-HARM-IDENTIFICATION.md#6-perspective-taking-must-earn-its-epistemic-role"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-HARM-IDENTIFICATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-HARM-IDENTIFICATION.md#6-perspective-taking-must-earn-its-epistemic-role"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "../../../../theories/relational-self-and-datong/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "CONCERN-IDENTITY-DIAGNOSTIC-NOTE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "HUIGEN-GENERATIVE-CLOSURE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md#7-the-most-promising-grounding-route-and-its-exact-test"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-NECESSITY-ARGUMENTS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#3-the-noncommunicating-patient-exposes-two-distinct-transport-tasks"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#accepted-work-sequence"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#9-practical-congruency-preserving-truth-warrant-and-an-addressee"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#104-a-stronger-positive-result-when-public-claims-are-already-admitted"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#10-practical-congruency-tested-on-an-unrelated-actor"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#9-practical-congruency-preserving-truth-warrant-and-an-addressee"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#11-imaginative-uptake-without-substituting-the-observer"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#practical-congruency-and-an-identifiable-ground"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CORRECTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/independent_check.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/results.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/independent-check.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md"
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "HUIGEN.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "HUIGEN-GENERATIVE-CLOSURE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "HUIGEN-FULL-THEORY-AUDIT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "HUIGEN-NECESSITY-ARGUMENTS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "HUIGEN-CLAIM-COVERAGE.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "HUIGEN-REVIEW.md"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "15-codex-theory-conversations/2026-10-06-huigen-entire-theory-necessity.md"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#perspective-taking-and-the-preservation-of-a-reason"
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-perspective-taking-and-warranted-uptake-6-october-2026"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/HUIGEN.md#perspective-taking-and-the-preservation-of-a-reason"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-perspective-taking-and-warranted-uptake-6-october-2026"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "HUIGEN.md#perspective-taking-and-the-preservation-of-a-reason"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-perspective-taking-and-warranted-uptake-6-october-2026"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#perspective-taking-and-the-preservation-of-a-reason"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#11-imaginative-uptake-without-substituting-the-observer"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#10-imaginative-perspective-taking-reversible-frames-and-new-warrant"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#8-can-reflective-acquisition-justify-the-impersonal-ground"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "HUIGEN-HARM-IDENTIFICATION.md#6-perspective-taking-must-earn-its-epistemic-role"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "HUIGEN-REVIEW.md#follow-up-perspective-taking-and-warranted-uptake-6-october-2026"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md"
+    }
+  ]
+}

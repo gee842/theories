@@ -1,0 +1,6 @@
+{
+  "recorded_at_utc": "2026-10-05T22:24:21.430338+00:00",
+  "pre_correction_source_sha256": "6898572488308f600d111f311f3f678c37c2d3c16dc0ae3bc19b9d4848722140",
+  "finding": "The generic execute/voluntary wrapper admitted actor-target sensing even though prescribed witness used recipient.",
+  "correction": "Require recipient sense and recipient-tagged ongoing reserve/work/acquire/write phases in both execution routes. Settlement remains available after cuts only for already incurred recipient work. This aligns the frozen fixed-recipient port contract."
+}

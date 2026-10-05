@@ -1,0 +1,21 @@
+{
+  "status": "preserved",
+  "purpose": "Immutable byte evidence for the independently checked, concurrently edited sibling dependency; production still imports its authoritative path. These are not working implementations.",
+  "receipt": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/model-verification.json",
+  "receipt_sha256": "4f0855f254954c03eacec26f6ee856e13761cef03b22e11f2fe113a0432f34ae",
+  "preserved_at_utc": "2026-10-05T21:35:08.045351+00:00",
+  "files": [
+    {
+      "authoritative_source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/PROTOCOL.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/recipient-renewal-evidence/successor-learning-PROTOCOL.md.txt",
+      "sha256": "f91912b7bf47c42fdda72eae791d58d082f9d5722bc9b055553c26bdf09b6def",
+      "byte_identical": true
+    },
+    {
+      "authoritative_source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/model.py",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/recipient-renewal-evidence/successor-learning-model.py.txt",
+      "sha256": "5e21053601393d71153c4b3b46cefbe0835c52fa6a28fe107af7c56a3644e976",
+      "byte_identical": true
+    }
+  ]
+}

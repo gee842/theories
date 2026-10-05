@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "scope": "Finite scoped metadata dispatch; no physical action or new empirical observations.",
+  "source_status": "Parent integration remains provisional; acceptance is not inherited.",
+  "source_sha256": {
+    "model.py": "d2e107924f0f449001ef972bd825b08f85549ddf19f476480f78e393fe66a591",
+    "PROTOCOL.md": "1f9ea8d941adfbc89e55f0fdbb0e202335722a03f114c8395815032e6d0a266b",
+    "results.json": "a0fbe561ad2f536a2798c3547271fefb891872823f65593f5a1edfcd5f45e9cf",
+    "check_model.py": "af78ba491ac55a345877bc225f002a7149d9995ff2b28ec693cd2a6d8010076e",
+    "evidence/archive-results.json.gz": "ce7b6233454c1389e4c6a31780802c57435d02df16a19552ffba5e0969294a25",
+    "evidence/parent-PROTOCOL.md": "7424028285837ef046f1b37e45896e28f354c37dda14c486119d3495d5833f6c",
+    "evidence/inputs.json": "4a9bdd297a8d5bb061bda9ff108b6e076dc6b2c6d037de442334e5137785b1be",
+    "evidence/parent-model.py": "e700b46eb378351917555bc1b57e0339f5a9078a27a79402565ab8503efe4723",
+    "evidence/manifest.json": "f893f4870ca394db276c5ada65776b5794436989d90cfde33691c33b2e0681ce",
+    "evidence/parent-results.json.gz": "5f4adf9044e1c32e3fddd37c41f2fe7419da014a6fb5fc8e30d1c8a2689cf256",
+    "evidence/RecipientReasons.lean": "47609fbd8220a33a76d356d151b80b12e0f69ccb676ff44d64838fd99933d4a8"
+  },
+  "source_rows": 666,
+  "source_cases": 18,
+  "producers": 3,
+  "source_distributions": 54,
+  "reached_receipts": 246,
+  "current_receipts": 102,
+  "independently_compared_scenario_evaluations": 14472,
+  "independent_conjunction_cases": 1024,
+  "upstream_conventional_equality": true,
+  "independent_live_source_destination_pairs": 10404,
+  "opposite_command_cross_destination_rejections": 5202,
+  "conventional_relational_dispatch_equality": true,
+  "exact_projection_and_mass_preservation": true,
+  "observer_orientation_rebuilt_from_actual_positive_capture_commands": true,
+  "actual_request_eligible_count": 0,
+  "executed_count": 0,
+  "protection_established_count": 0,
+  "primary_publication_masses": {
+    "variable": {
+      "root_only": "5/8",
+      "command_0": "3/16",
+      "command_1": "3/16",
+      "naive_wrong_patient_fixed_p": "3/16",
+      "many_to_one_wrong_patient": "0"
+    },
+    "conventional": {
+      "root_only": "5/8",
+      "command_0": "3/16",
+      "command_1": "3/16",
+      "naive_wrong_patient_fixed_p": "3/16",
+      "many_to_one_wrong_patient": "0"
+    },
+    "fixed_normal": {
+      "command_0": "3/8",
+      "root_only": "1/4",
+      "command_1": "3/8",
+      "naive_wrong_patient_fixed_p": "3/8",
+      "many_to_one_wrong_patient": "0"
+    }
+  },
+  "authentic_but_corrupted_false_route_pass_mass": {
+    "consistently_corrupt/variable": "3/8",
+    "consistently_corrupt/conventional": "3/8",
+    "consistently_corrupt/fixed_normal": "3/4"
+  },
+  "abstract_joint_feasibility_countermodel": {
+    "scope": "Abstract allocation countermodel, not a recipient-source retrofit.",
+    "admitted_claims": [
+      "patient-p-ground",
+      "patient-q-ground"
+    ],
+    "costs": [
+      1,
+      1
+    ],
+    "budget": 1,
+    "individually_feasible": [
+      true,
+      true
+    ],
+    "jointly_feasible": false,
+    "feasible_index_subsets": [
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    "claims_preserved": true
+  },
+  "limitations": [
+    "Registry origin/currentness are trusted premises, not cryptographic implementation.",
+    "Matching policy labels do not establish semantic calibration or normative validity.",
+    "No full upstream replay, Lean-to-Python refinement, paid actuator or moral proof."
+  ]
+}

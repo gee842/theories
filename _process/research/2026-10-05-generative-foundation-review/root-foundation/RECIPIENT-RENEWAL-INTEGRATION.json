@@ -1,0 +1,292 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-05T21:40:00.527684+00:00",
+  "scope": "Integration path links and byte/hash correspondence of saved checks; no new scientific rerun, empirical study or whole-goal completion.",
+  "scientific_checks_rerun": false,
+  "documents": 10,
+  "local_path_links": 59,
+  "links": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-complete-alignment-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "RECIPIENT-TRANSMISSION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/model.py"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/model.py"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-MATH.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/PROTOCOL.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/check_model.py"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/model-verification.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/results.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/recipient-renewal-evidence/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "RECORDED-REASONS.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../_process/research/2026-10-05-concern-theory/RECIPIENT-RECORDING-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-INTEGRATION.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-CHECK.py"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-complete-alignment-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "ALIGNMENT-AND-GOVERNANCE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "RECIPIENT-RENEWAL.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "RECIPIENT-RENEWAL.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/model.py"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "../../../RESEARCH.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-MATH.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-MATH.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-TRANSMISSION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-MATH.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/PROTOCOL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-MATH.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/PROTOCOL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-MATH.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-MATH.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/PROTOCOL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/IMPLEMENTATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/model.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/check_model.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/model-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-TRANSMISSION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md",
+      "target": "RECIPIENT-RENEWAL-MATH.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/recipient-renewal-evidence/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-06-complete-alignment-goal.md",
+      "target": "2026-10-06-alignment-governance-and-future.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-06-complete-alignment-goal.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/IMPLEMENTATION.md",
+      "target": "../../successor-learning/PROTOCOL.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/PROTOCOL.md",
+      "target": "../../successor-learning/PROTOCOL.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/PROTOCOL.md",
+      "target": "../README.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/README.md",
+      "target": "../../successor-learning/PROTOCOL.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/README.md",
+      "target": "model-verification.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/README.md",
+      "target": "../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/README.md",
+      "target": "../../../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/README.md",
+      "target": "results.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/README.md",
+      "target": "PROTOCOL.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/README.md",
+      "target": "IMPLEMENTATION.md"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/README.md",
+      "target": "RenewalLiquidity.lean"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/README.md",
+      "target": "verification.json"
+    },
+    {
+      "document": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/README.md",
+      "target": "../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-MATH.md"
+    }
+  ],
+  "scientific_receipts": {
+    "results.json": {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/results.json",
+      "sha256": "258919de177909b5a022aeb00b92381b6b78943c886fe02e2037c6ae69ff1456",
+      "reported_status": "self_checks_passed_pending_independent_review",
+      "current_hashes": 18
+    },
+    "model-verification.json": {
+      "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/model-verification.json",
+      "sha256": "4f0855f254954c03eacec26f6ee856e13761cef03b22e11f2fe113a0432f34ae",
+      "reported_status": "passed",
+      "current_hashes": 19
+    }
+  },
+  "independent_counts": {
+    "ancestry_rows": 256,
+    "local_lineage_comparisons": 4480,
+    "mixture_comparisons": 168,
+    "reference_payment_prefixes": 134072,
+    "resulting_lineage_branches": 4924,
+    "route_template_interventions": 16,
+    "scheduled_information_controls": 3,
+    "threshold_cases": 217
+  },
+  "formal_declarations": 39,
+  "formal_scope": "Abstract signed-event liquidity and block-contract composition. The displayed event lists assume the specified actual outcomes, available source/parts, zero learner cash and accessible transfer law. No stochastic-simulator refinement or material production theorem is claimed.",
+  "preserved_sibling_sources": 2,
+  "artifact_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md": "63304e87d85fb196175f7c24651dfee0db69fbf045ca221d122640476c06a11a",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md": "c9248f15ce6dade6a7293940675013a8241747468fa6b98b72d59bc908c09315",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-MATH.md": "637587dd1e3b44b3de79b2f6e5be83a9a0548b00003e00643e08eee045f275a9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-REVIEW.md": "d2f7f25063a7f8cecbfbf0e7b6ff7cd90e05483ce85126a8033bc1897d49d707",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/recipient-renewal-evidence/README.md": "436e3f9391c162b0d0c18b30a297330f15c200b85d0b583256bc365fd0d12924",
+    "sources/15-codex-theory-conversations/2026-10-06-complete-alignment-goal.md": "0335c1d1bef660b86eebd3b30647b44818f503fa06d85d8c1531c44e679f5d85",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/IMPLEMENTATION.md": "1835d7e3a208fcaa2ee03624855f9cfe3cb6756a55150647b6dabfd22dcfa507",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/PROTOCOL.md": "ba3fc02a92ea013fe7c6c96d7e67e6d3fb955b0729edf62e9b69fe93e0ac6fa9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/README.md": "4598788f53089c5dcb036b2e7de43fe6dae697ca3b0a4f10ff6dc2f115537bc1",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/README.md": "d1d6bdea2da30fe87fb62db27c0cc8efbf5ed1f502f1d4eb8d69cdb67acf115a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-RENEWAL-CHECK.py": "0a52b195a6bf4bb7d1aa31f8e9456a35a8cee1dc7dc9b5363ebd050dce16b508",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/transmission/renewal/formal/verification.json": "ba9fbdd6e00d60d5f84cbcc85ad9aa3fe23b4f69e2726f6bc6979a90c4b03aeb",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/recipient-renewal-evidence/manifest.json": "d175750669c75a9735a102888f1f7626e25d0a43f5439c9fd92f30ce04d1ad97",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/recipient-renewal-evidence/successor-learning-PROTOCOL.md.txt": "f91912b7bf47c42fdda72eae791d58d082f9d5722bc9b055553c26bdf09b6def",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/recipient-renewal-evidence/successor-learning-model.py.txt": "5e21053601393d71153c4b3b46cefbe0835c52fa6a28fe107af7c56a3644e976"
+  },
+  "next_connection": "Actual context-bound recipient evidence into warranted reason applicability and effective action with preserved revision and succession, including affected centers without funding leverage.",
+  "full_alignment_goal": "ongoing"
+}

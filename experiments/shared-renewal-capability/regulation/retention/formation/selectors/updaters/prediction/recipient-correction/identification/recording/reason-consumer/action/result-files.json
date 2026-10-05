@@ -1,0 +1,10 @@
+{
+  "format": "gzip of exact UTF-8 JSON bytes; mtime=0",
+  "file": "results.json.gz",
+  "compressed_sha256": "d99fa7caf7fb1611e6c332492d9069df37886b00cb9ea8ea54311de2f6457c59",
+  "compressed_bytes": 1793938,
+  "uncompressed_sha256": "b07155cac4d0d4a13a729a60cb1264706643531824bbd3e1a00753ea9d224bc5",
+  "uncompressed_bytes": 67099588,
+  "semantic_cases_sha256": "3b9ca5bb772a1756e3d4939557c8c91e286ec1b3130bc916f499da49c4843bd4",
+  "equals_first_run_cases": true
+}

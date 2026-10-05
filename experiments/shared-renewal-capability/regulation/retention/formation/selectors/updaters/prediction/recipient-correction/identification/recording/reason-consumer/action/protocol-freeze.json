@@ -1,0 +1,18 @@
+{
+  "frozen_at_utc": "2026-10-05T22:08:48.054223+00:00",
+  "parent_commit": "d5a6b71eab5d3eff2e59649a193b59992d13b6c7",
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/PROTOCOL.md": "11c83453664cd31718928e1fda7af614e322ac9075110949efd2454c01e0f252",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/model.py": "e700b46eb378351917555bc1b57e0339f5a9078a27a79402565ab8503efe4723",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/PROTOCOL.md": "7424028285837ef046f1b37e45896e28f354c37dda14c486119d3495d5833f6c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/fixtures.json": "5952a6e81819f5cf89e9881b6d1129f3badcf35b1bb56b0b06feefe7881dbec8",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/results.json": "b86ff1e30f29d42ab0c084d0c0515367c41d35585b1628c68ae72970f6e7f9bf",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/check.json": "4984c3f69e6403157bde6d98362d6e788f402ca57776781f5525e43a31fe97a9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/independent-check.json": "f21926a0dd70400669550ab022660006e71508a717c884e8d26f176e1f0ed14f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean": "7bbd5e4fbfff22b3f679b6aa345756d1ad532cf56a3fbb8fd18f8dbe8a65a5e6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean": "f0b7434c1116004658ac711fef1c34044fc28c5fbed24c4357eb2a6d5dc1e04e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean": "b63de0b8572a4987345dab4116516b283a40dc6f18fbe7b7afe81dee2c5f1218",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean": "2c750ca9fbd432428dc4a69717afdca8862f8efeaabc012429f2031d257d860d"
+  },
+  "scope": "Prospective physical command-use continuation; no new numerical execution before this freeze."
+}

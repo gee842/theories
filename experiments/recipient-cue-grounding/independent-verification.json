@@ -1,0 +1,736 @@
+{
+  "all_single_omissions": {
+    "B2": {
+      "mean": 1.4782608695652173,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        17,
+        3,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 2702,
+        "probability": 0.0025768280029296875
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 2944,
+        "probability": 0.0003509521484375
+      },
+      "stdev": 1.5917276268082627,
+      "sum": 34
+    },
+    "B3": {
+      "mean": 1.3043478260869565,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 21552,
+        "probability": 0.0025691986083984375
+      },
+      "stdev": 1.7434235548768993,
+      "sum": 30
+    },
+    "B4": {
+      "mean": 1.391304347826087,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        17,
+        4,
+        2
+      ],
+      "sign": {
+        "denominator": 2097152,
+        "numerator": 15094,
+        "probability": 0.007197380065917969
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 12248,
+        "probability": 0.0014600753784179688
+      },
+      "stdev": 1.7251911734588248,
+      "sum": 32
+    },
+    "B5": {
+      "mean": 1.434782608695652,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        17,
+        3,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 2702,
+        "probability": 0.0025768280029296875
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 6992,
+        "probability": 0.0008335113525390625
+      },
+      "stdev": 1.6740285366450527,
+      "sum": 33
+    },
+    "C4": {
+      "mean": 1.3478260869565217,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 17504,
+        "probability": 0.002086639404296875
+      },
+      "stdev": 1.7479519353744961,
+      "sum": 31
+    },
+    "D1": {
+      "mean": 1.2173913043478262,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 24336,
+        "probability": 0.0029010772705078125
+      },
+      "stdev": 1.6502485140434962,
+      "sum": 28
+    },
+    "D5": {
+      "mean": 1.2608695652173914,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 23664,
+        "probability": 0.0028209686279296875
+      },
+      "stdev": 1.7113894223527009,
+      "sum": 29
+    },
+    "E2": {
+      "mean": 1.2608695652173914,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 23664,
+        "probability": 0.0028209686279296875
+      },
+      "stdev": 1.7113894223527009,
+      "sum": 29
+    },
+    "E4": {
+      "mean": 1.3043478260869565,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 21552,
+        "probability": 0.0025691986083984375
+      },
+      "stdev": 1.7434235548768993,
+      "sum": 30
+    },
+    "E5": {
+      "mean": 1.3043478260869565,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 21552,
+        "probability": 0.0025691986083984375
+      },
+      "stdev": 1.7434235548768993,
+      "sum": 30
+    },
+    "F1": {
+      "mean": 1.3478260869565217,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 17504,
+        "probability": 0.002086639404296875
+      },
+      "stdev": 1.7479519353744961,
+      "sum": 31
+    },
+    "F2": {
+      "mean": 1.3478260869565217,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 17504,
+        "probability": 0.002086639404296875
+      },
+      "stdev": 1.7479519353744961,
+      "sum": 31
+    },
+    "F4": {
+      "mean": 1.391304347826087,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        17,
+        4,
+        2
+      ],
+      "sign": {
+        "denominator": 2097152,
+        "numerator": 15094,
+        "probability": 0.007197380065917969
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 12248,
+        "probability": 0.0014600753784179688
+      },
+      "stdev": 1.7251911734588248,
+      "sum": 32
+    },
+    "F5": {
+      "mean": 1.434782608695652,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        17,
+        3,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 2702,
+        "probability": 0.0025768280029296875
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 6992,
+        "probability": 0.0008335113525390625
+      },
+      "stdev": 1.6740285366450527,
+      "sum": 33
+    },
+    "G2": {
+      "mean": 1.173913043478261,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 24480,
+        "probability": 0.002918243408203125
+      },
+      "stdev": 1.556574733569118,
+      "sum": 27
+    },
+    "G5": {
+      "mean": 1.3478260869565217,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 17504,
+        "probability": 0.002086639404296875
+      },
+      "stdev": 1.7479519353744961,
+      "sum": 31
+    },
+    "H2": {
+      "mean": 1.2608695652173914,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 23664,
+        "probability": 0.0028209686279296875
+      },
+      "stdev": 1.7113894223527009,
+      "sum": 29
+    },
+    "H3": {
+      "mean": 1.2608695652173914,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 23664,
+        "probability": 0.0028209686279296875
+      },
+      "stdev": 1.7113894223527009,
+      "sum": 29
+    },
+    "J1": {
+      "mean": 1.434782608695652,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        17,
+        3,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 2702,
+        "probability": 0.0025768280029296875
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 6992,
+        "probability": 0.0008335113525390625
+      },
+      "stdev": 1.6740285366450527,
+      "sum": 33
+    },
+    "J2": {
+      "mean": 1.3043478260869565,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 21552,
+        "probability": 0.0025691986083984375
+      },
+      "stdev": 1.7434235548768993,
+      "sum": 30
+    },
+    "J5": {
+      "mean": 1.391304347826087,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        17,
+        4,
+        2
+      ],
+      "sign": {
+        "denominator": 2097152,
+        "numerator": 15094,
+        "probability": 0.007197380065917969
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 12248,
+        "probability": 0.0014600753784179688
+      },
+      "stdev": 1.7251911734588248,
+      "sum": 32
+    },
+    "L1": {
+      "mean": 1.3043478260869565,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 21552,
+        "probability": 0.0025691986083984375
+      },
+      "stdev": 1.7434235548768993,
+      "sum": 30
+    },
+    "L2": {
+      "mean": 1.3478260869565217,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 17504,
+        "probability": 0.002086639404296875
+      },
+      "stdev": 1.7479519353744961,
+      "sum": 31
+    },
+    "L3": {
+      "mean": 1.3478260869565217,
+      "median": 1,
+      "n": 23,
+      "positive_negative_zero": [
+        16,
+        4,
+        3
+      ],
+      "sign": {
+        "denominator": 1048576,
+        "numerator": 12392,
+        "probability": 0.01181793212890625
+      },
+      "signflip": {
+        "denominator": 8388608,
+        "numerator": 17504,
+        "probability": 0.002086639404296875
+      },
+      "stdev": 1.7479519353744961,
+      "sum": 31
+    }
+  },
+  "checker_sha256": "09635e4a7a20db8dd4e98fc3dfcbd872708bd0bbbe7fbdc46c76f67ba1486505",
+  "differences": [
+    -2,
+    2,
+    0,
+    -1,
+    1,
+    4,
+    3,
+    3,
+    2,
+    2,
+    1,
+    1,
+    0,
+    -1,
+    5,
+    1,
+    3,
+    3,
+    -1,
+    2,
+    0,
+    2,
+    1,
+    1
+  ],
+  "ids": [
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "C4",
+    "D1",
+    "D5",
+    "E2",
+    "E4",
+    "E5",
+    "F1",
+    "F2",
+    "F4",
+    "F5",
+    "G2",
+    "G5",
+    "H2",
+    "H3",
+    "J1",
+    "J2",
+    "J5",
+    "L1",
+    "L2",
+    "L3"
+  ],
+  "latency_coding": {
+    "missing_cells": {
+      "Pull6": 2
+    },
+    "zero_pull_rows": 14,
+    "zero_pull_rows_at_420": 14
+  },
+  "method": "Independent CSV parsing, rational descriptives, meet-in-the-middle exact sign enumeration, binomial coefficient counting and separately coded bootstrap replay.",
+  "paired_counts": {
+    "B2": {
+      "cooperating": 0,
+      "neutral": 2
+    },
+    "B3": {
+      "cooperating": 3,
+      "neutral": 1
+    },
+    "B4": {
+      "cooperating": 3,
+      "neutral": 3
+    },
+    "B5": {
+      "cooperating": 1,
+      "neutral": 2
+    },
+    "C4": {
+      "cooperating": 1,
+      "neutral": 0
+    },
+    "D1": {
+      "cooperating": 4,
+      "neutral": 0
+    },
+    "D5": {
+      "cooperating": 3,
+      "neutral": 0
+    },
+    "E2": {
+      "cooperating": 3,
+      "neutral": 0
+    },
+    "E4": {
+      "cooperating": 3,
+      "neutral": 1
+    },
+    "E5": {
+      "cooperating": 3,
+      "neutral": 1
+    },
+    "F1": {
+      "cooperating": 2,
+      "neutral": 1
+    },
+    "F2": {
+      "cooperating": 1,
+      "neutral": 0
+    },
+    "F4": {
+      "cooperating": 2,
+      "neutral": 2
+    },
+    "F5": {
+      "cooperating": 0,
+      "neutral": 1
+    },
+    "G2": {
+      "cooperating": 5,
+      "neutral": 0
+    },
+    "G5": {
+      "cooperating": 3,
+      "neutral": 2
+    },
+    "H2": {
+      "cooperating": 5,
+      "neutral": 2
+    },
+    "H3": {
+      "cooperating": 3,
+      "neutral": 0
+    },
+    "J1": {
+      "cooperating": 0,
+      "neutral": 1
+    },
+    "J2": {
+      "cooperating": 2,
+      "neutral": 0
+    },
+    "J5": {
+      "cooperating": 0,
+      "neutral": 0
+    },
+    "L1": {
+      "cooperating": 3,
+      "neutral": 1
+    },
+    "L2": {
+      "cooperating": 1,
+      "neutral": 0
+    },
+    "L3": {
+      "cooperating": 2,
+      "neutral": 1
+    }
+  },
+  "primary": {
+    "bootstrap_95_percentile": [
+      0.6666666666666666,
+      2.0
+    ],
+    "mean": 1.3333333333333333,
+    "median": 1.0,
+    "n": 24,
+    "positive_negative_zero": [
+      17,
+      4,
+      3
+    ],
+    "sign": {
+      "denominator": 2097152,
+      "numerator": 15094,
+      "probability": 0.007197380065917969
+    },
+    "signflip": {
+      "denominator": 16777216,
+      "numerator": 24496,
+      "probability": 0.0014600753784179688
+    },
+    "stdev": 1.7110044511584586,
+    "sum": 32
+  },
+  "protocol_sha256": "44fe0ae4b4c03741629109110a6ceb22df8d4dcc161bccf1c512487f47e25f2d",
+  "results_comparison": {
+    "analysis_sha256": "9e8de038b6a0f20909e83c64cecdeccee51c2b44e4d397aef071342931dbbc56",
+    "bootstrap_replay": "20,000 complete-animal draws and declared percentile interval agree",
+    "complete_single_omissions_checked": 24,
+    "exact_reference_calculations_checked": 50,
+    "paired_animals_checked": 24,
+    "raw_rows_and_parsed_rows_checked": 48,
+    "results_sha256": "f033aef137f7365f41c16f341032cf3c4aed54d6ecf7795392d0ba3736ad5617",
+    "status": "pass"
+  },
+  "scope": "Arithmetic audit of a derived public preview; no original-CSV verification or validation of sampling, assignment or cognitive interpretation assumptions.",
+  "source_cells_fnv1a64": "df8ebe2256185e27",
+  "source_sha256": "4a2a9b660cfd9920a8d1bdcc7830507341e6c58ff08b239398dd6daebb82adbd",
+  "status": "pass: independent arithmetic and primary-output comparison agree",
+  "totals": {
+    "cooperating": 53,
+    "neutral": 21
+  }
+}
