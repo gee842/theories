@@ -1,0 +1,8 @@
+'Generative.Learning.controlled_trace_world' does not depend on any axioms
+'Generative.Learning.controlled_trace_memory' does not depend on any axioms
+'Generative.Learning.controlled_trace_commands' does not depend on any axioms
+'Generative.Learning.same_feedback_same_memory' does not depend on any axioms
+'Generative.Learning.same_feedback_same_commands' does not depend on any axioms
+'Generative.Learning.same_feedback_excludes_incompatible_futures' does not depend on any axioms
+'Generative.Learning.opposite_futures_require_feedback_difference' does not depend on any axioms
+'Generative.Learning.closed_loop_account_law' does not depend on any axioms
