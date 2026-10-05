@@ -1,0 +1,8 @@
+'EndogenousRetention.trace_to_root' does not depend on any axioms
+'EndogenousRetention.trace_from_root' does not depend on any axioms
+'EndogenousRetention.trace_iff_root' does not depend on any axioms
+'EndogenousRetention.root_trace_fuel_ledger' depends on axioms: [propext, Quot.sound]
+'EndogenousRetention.root_trace_copy_budget' depends on axioms: [propext, Quot.sound]
+'EndogenousRetention.root_bootstrap_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EndogenousRetention.root_witness_from_absence' does not depend on any axioms
+'EndogenousRetention.trace_append_iff' does not depend on any axioms

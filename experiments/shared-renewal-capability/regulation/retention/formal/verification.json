@@ -1,0 +1,135 @@
+{
+  "checked_at_utc": "2026-10-05T18:09:52.232905+00:00",
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "ebb311097633ab8766b833e8477f2f23b5c31e0c10a4b1aaeafd019de391fb02",
+  "source_unchanged_during_check": true,
+  "fresh_temporary_build": true,
+  "project_objects_only_from_frozen_sources": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "role": "existing root dependency",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "GenerativeCore.olean",
+        "GenerativeCore.lean"
+      ],
+      "exit_code": 0,
+      "clean_dependency_audit": true,
+      "audited_declarations": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "dependency_audits": 18,
+      "axioms": [],
+      "output": "verification/GenerativeCore.txt",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "Retention",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formal/Retention.lean",
+      "source_sha256": "7b79901594a51f3e064470a3878ada29fc6ddddac371325fdc7e665c5e71529d",
+      "role": "new formalization",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "Retention.olean",
+        "Retention.lean"
+      ],
+      "exit_code": 0,
+      "clean_dependency_audit": true,
+      "audited_declarations": [
+        "EndogenousRetention.step_valid",
+        "EndogenousRetention.trace_valid",
+        "EndogenousRetention.material_ledgers",
+        "EndogenousRetention.trace_material_ledgers",
+        "EndogenousRetention.step_fuel_ledger",
+        "EndogenousRetention.trace_fuel_ledger",
+        "EndogenousRetention.copy_increment_le_expenditure",
+        "EndogenousRetention.copies_le_spent",
+        "EndogenousRetention.trace_copy_budget",
+        "EndogenousRetention.bootstrap_step",
+        "EndogenousRetention.bootstrap_trace",
+        "EndogenousRetention.bootstrap_under_two_fuel",
+        "EndogenousRetention.bootstrap_forbids_productive_steps",
+        "EndogenousRetention.exact_step_rank_drop",
+        "EndogenousRetention.every_step_decreases_rank",
+        "EndogenousRetention.trace_rank_bound",
+        "EndogenousRetention.trace_length_bound",
+        "EndogenousRetention.no_nonempty_return",
+        "EndogenousRetention.no_infinite_event_path",
+        "EndogenousRetention.terminal_iff",
+        "EndogenousRetention.witness_from_absence",
+        "EndogenousRetention.witness_accounting",
+        "EndogenousRetention.repair_restores_capture",
+        "EndogenousRetention.copying_requires_actual_capture"
+      ],
+      "dependency_audits": 24,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "output": "verification/Retention.txt",
+      "output_sha256": "de78ab77baf8fa48732b86e47cb98ff085fcd82ffd582af235f2afe954c0854b"
+    },
+    {
+      "module": "RootBridge",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formal/RootBridge.lean",
+      "source_sha256": "2d4d79b18fa7b08410ad066c87c4073539151e2a29b9f00cbe659383a9fa519a",
+      "role": "new formalization",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "RootBridge.olean",
+        "RootBridge.lean"
+      ],
+      "exit_code": 0,
+      "clean_dependency_audit": true,
+      "audited_declarations": [
+        "EndogenousRetention.trace_to_root",
+        "EndogenousRetention.trace_from_root",
+        "EndogenousRetention.trace_iff_root",
+        "EndogenousRetention.root_trace_fuel_ledger",
+        "EndogenousRetention.root_trace_copy_budget",
+        "EndogenousRetention.root_bootstrap_obstruction",
+        "EndogenousRetention.root_witness_from_absence",
+        "EndogenousRetention.trace_append_iff"
+      ],
+      "dependency_audits": 8,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "output": "verification/RootBridge.txt",
+      "output_sha256": "279cbd3631620746391ece37131b71f9171f23733ba3cf11d450440ce04de4fa"
+    }
+  ],
+  "new_audited_declarations": 32,
+  "scope": "Seven enabled discrete events on reduced C,G,F,E states; arbitrary-path material validity, fuel/spent and copy budgets, bootstrap trap, exact rank drop, finite event bound, terminal characterization and a paid formation witness; exact transport into the existing relational generative core. No stochastic rates, waiting times, CTMC-to-Lean refinement, floating-point probabilities, empirical chemistry, learning, useful-variant selection or universal explanatory sufficiency are certified."
+}

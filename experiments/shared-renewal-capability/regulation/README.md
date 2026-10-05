@@ -4,6 +4,8 @@ The first prespecified regulator extension gives a negative result. The regulato
 
 The [prospective protocol](PROTOCOL.md) fixed five arms, two source strengths, three horizons and eight joint profiles before calculation. All 240 distinct assay probabilities are in [results.json](results.json). The [network and accounting proof](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-REGULATION.md) and [construction-lag proof](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-LAG.md) specify the physical and analytical scope.
 
+**Later, separate mechanism:** [paid response formation and retention](retention/README.md) implements a different seven-event law in which repair restores support access and captured fuel funds copies. Its source-dependent copying advantage and failure regimes do not supersede the negative results of this original network.
+
 ## Main comparison
 
 At source strength g=8, horizon H=3, starting with three material units and no regulator:

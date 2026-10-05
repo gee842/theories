@@ -1,0 +1,417 @@
+{
+  "checked_at_utc": "2026-10-05T18:17:53.502471+00:00",
+  "status": "passed",
+  "producer_hashes": {
+    "model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "check.py": "347b0258623915502c6161b99f9720ad864b3186681acc7136a4ef9c8e12462c",
+    "PROTOCOL.md": "ea0e2c2411a25f2d5ec97aee0e8b3625939112247b49e842abb3e381211ca642",
+    "results.json": "1284d1babf57803599dfd9ff4e4358a0aff14fc0c6ba9a502b72e7ec0e0bf879"
+  },
+  "checker_sha256": "d375b3758547a35516aa6d4b6f94a4bd04a0cffe7cd65d5cc16a46fb1d96cbeb",
+  "scope": "Independent six-species stoichiometry, complete-inventory exact audits, exact terminal DAG calculations, separate float uniformization and true-successor composition. Float agreement is not a new outward-rounding certificate or Python/Lean refinement proof.",
+  "float_comparison_tolerance": 1e-10,
+  "maximum_distance_from_producer_intervals": 4.085620730620576e-14,
+  "cases": {
+    "active": {
+      "inventory_states": 72,
+      "positive_event_channels": 214,
+      "reachable_states": 36,
+      "max_interval_distance": 8.43769498715119e-15,
+      "numerics": {
+        "chunks": 8,
+        "tail_mass_bound": 3.512628175930094e-18,
+        "local_poisson_reward_tail_bound": 4.215153811116112e-17,
+        "poisson_reward_bound_including_lost_distribution": 8.430307622232225e-17,
+        "float_mass_error": 1.1102230246251565e-15
+      },
+      "independent_copy_expectation": 0.7998268708603274,
+      "terminal_exact_matches": true
+    },
+    "noformation": {
+      "inventory_states": 72,
+      "positive_event_channels": 196,
+      "reachable_states": 3,
+      "max_interval_distance": 4.336808689942018e-19,
+      "numerics": {
+        "chunks": 1,
+        "tail_mass_bound": 2.6487536829272745e-19,
+        "local_poisson_reward_tail_bound": 7.946715120841754e-15,
+        "poisson_reward_bound_including_lost_distribution": 7.949893625261267e-15,
+        "float_mass_error": 0.0
+      },
+      "independent_copy_expectation": 0.0,
+      "terminal_exact_matches": true
+    },
+    "norepair": {
+      "inventory_states": 72,
+      "positive_event_channels": 196,
+      "reachable_states": 6,
+      "max_interval_distance": 6.217248937900877e-15,
+      "numerics": {
+        "chunks": 5,
+        "tail_mass_bound": 1.3941600897751663e-18,
+        "local_poisson_reward_tail_bound": 1.6729921077301993e-17,
+        "poisson_reward_bound_including_lost_distribution": 3.345984215460399e-17,
+        "float_mass_error": 3.1086244689504383e-15
+      },
+      "independent_copy_expectation": 0.4999583359720716,
+      "terminal_exact_matches": true
+    },
+    "deadrepair": {
+      "inventory_states": 72,
+      "positive_event_channels": 214,
+      "reachable_states": 6,
+      "max_interval_distance": 3.552713678800501e-15,
+      "numerics": {
+        "chunks": 5,
+        "tail_mass_bound": 1.3941600897751663e-18,
+        "local_poisson_reward_tail_bound": 1.6729921077301993e-17,
+        "poisson_reward_bound_including_lost_distribution": 3.345984215460399e-17,
+        "float_mass_error": 1.7763568394002505e-15
+      },
+      "independent_copy_expectation": 0.39997066828436495,
+      "terminal_exact_matches": true
+    },
+    "nocapture": {
+      "inventory_states": 72,
+      "positive_event_channels": 198,
+      "reachable_states": 8,
+      "max_interval_distance": 4.440892098500626e-15,
+      "numerics": {
+        "chunks": 5,
+        "tail_mass_bound": 1.3941600897751663e-18,
+        "local_poisson_reward_tail_bound": 1.6729921077301993e-17,
+        "poisson_reward_bound_including_lost_distribution": 3.345984215460399e-17,
+        "float_mass_error": 2.220446049250313e-15
+      },
+      "independent_copy_expectation": 0.39997066828436495,
+      "terminal_exact_matches": true
+    },
+    "burncapture": {
+      "inventory_states": 72,
+      "positive_event_channels": 214,
+      "reachable_states": 16,
+      "max_interval_distance": 3.9968028886505635e-15,
+      "numerics": {
+        "chunks": 5,
+        "tail_mass_bound": 1.3941600897751663e-18,
+        "local_poisson_reward_tail_bound": 1.6729921077301993e-17,
+        "poisson_reward_bound_including_lost_distribution": 3.345984215460399e-17,
+        "float_mass_error": 2.4424906541753444e-15
+      },
+      "independent_copy_expectation": 0.39997066828436495,
+      "terminal_exact_matches": true
+    },
+    "nocopy": {
+      "inventory_states": 72,
+      "positive_event_channels": 190,
+      "reachable_states": 33,
+      "max_interval_distance": 8.43769498715119e-15,
+      "numerics": {
+        "chunks": 5,
+        "tail_mass_bound": 1.3952271818405424e-18,
+        "local_poisson_reward_tail_bound": 1.6742726182086506e-17,
+        "poisson_reward_bound_including_lost_distribution": 3.348545236417301e-17,
+        "float_mass_error": 4.440892098500626e-15
+      },
+      "independent_copy_expectation": 0.0,
+      "terminal_exact_matches": true
+    },
+    "wrongcue": {
+      "inventory_states": 72,
+      "positive_event_channels": 214,
+      "reachable_states": 3,
+      "max_interval_distance": 4.336808689942018e-19,
+      "numerics": {
+        "chunks": 1,
+        "tail_mass_bound": 2.6487536829272745e-19,
+        "local_poisson_reward_tail_bound": 7.946715120841754e-15,
+        "poisson_reward_bound_including_lost_distribution": 7.949893625261267e-15,
+        "float_mass_error": 0.0
+      },
+      "independent_copy_expectation": 0.0,
+      "terminal_exact_matches": true
+    },
+    "constitutive": {
+      "inventory_states": 72,
+      "positive_event_channels": 232,
+      "reachable_states": 36,
+      "max_interval_distance": 9.325873406851315e-15,
+      "numerics": {
+        "chunks": 8,
+        "tail_mass_bound": 3.512628175930094e-18,
+        "local_poisson_reward_tail_bound": 4.215153811116112e-17,
+        "poisson_reward_bound_including_lost_distribution": 8.430307622232225e-17,
+        "float_mass_error": 1.2212453270876722e-15
+      },
+      "independent_copy_expectation": 0.633231273498273,
+      "terminal_exact_matches": true
+    },
+    "source_absent__active": {
+      "inventory_states": 24,
+      "positive_event_channels": 66,
+      "reachable_states": 8,
+      "max_interval_distance": 3.774758283725532e-15,
+      "numerics": {
+        "chunks": 5,
+        "tail_mass_bound": 1.3941600897751663e-18,
+        "local_poisson_reward_tail_bound": 1.3995988393465338e-17,
+        "poisson_reward_bound_including_lost_distribution": 3.072590947076734e-17,
+        "float_mass_error": 2.220446049250313e-15
+      },
+      "independent_copy_expectation": 0.39997066828436495,
+      "terminal_exact_matches": true
+    },
+    "source_absent__norepair": {
+      "inventory_states": 24,
+      "positive_event_channels": 60,
+      "reachable_states": 6,
+      "max_interval_distance": 6.217248937900877e-15,
+      "numerics": {
+        "chunks": 5,
+        "tail_mass_bound": 1.3941600897751663e-18,
+        "local_poisson_reward_tail_bound": 1.3995988393465338e-17,
+        "poisson_reward_bound_including_lost_distribution": 3.072590947076734e-17,
+        "float_mass_error": 3.1086244689504383e-15
+      },
+      "independent_copy_expectation": 0.4999583359720716,
+      "terminal_exact_matches": true
+    },
+    "source_absent__constitutive": {
+      "inventory_states": 24,
+      "positive_event_channels": 72,
+      "reachable_states": 8,
+      "max_interval_distance": 3.774758283725532e-15,
+      "numerics": {
+        "chunks": 5,
+        "tail_mass_bound": 1.3941600897751663e-18,
+        "local_poisson_reward_tail_bound": 1.3995988393465338e-17,
+        "poisson_reward_bound_including_lost_distribution": 3.072590947076734e-17,
+        "float_mass_error": 2.220446049250313e-15
+      },
+      "independent_copy_expectation": 0.39997066828436495,
+      "terminal_exact_matches": true
+    },
+    "fuel_zero__active": {
+      "inventory_states": 48,
+      "positive_event_channels": 126,
+      "reachable_states": 1,
+      "max_interval_distance": 0.0,
+      "numerics": {
+        "chunks": 0,
+        "tail_mass_bound": 0.0,
+        "float_mass_error": 0.0
+      },
+      "independent_copy_expectation": 0.0,
+      "terminal_exact_matches": true
+    },
+    "fuel_zero__norepair": {
+      "inventory_states": 48,
+      "positive_event_channels": 117,
+      "reachable_states": 1,
+      "max_interval_distance": 0.0,
+      "numerics": {
+        "chunks": 0,
+        "tail_mass_bound": 0.0,
+        "float_mass_error": 0.0
+      },
+      "independent_copy_expectation": 0.0,
+      "terminal_exact_matches": true
+    },
+    "fuel_zero__constitutive": {
+      "inventory_states": 48,
+      "positive_event_channels": 135,
+      "reachable_states": 1,
+      "max_interval_distance": 0.0,
+      "numerics": {
+        "chunks": 0,
+        "tail_mass_bound": 0.0,
+        "float_mass_error": 0.0
+      },
+      "independent_copy_expectation": 0.0,
+      "terminal_exact_matches": true
+    },
+    "fuel_one__active": {
+      "inventory_states": 64,
+      "positive_event_channels": 186,
+      "reachable_states": 3,
+      "max_interval_distance": 3.552713678800501e-15,
+      "numerics": {
+        "chunks": 3,
+        "tail_mass_bound": 1.930025335101426e-18,
+        "local_poisson_reward_tail_bound": 3.487966353414029e-17,
+        "poisson_reward_bound_including_lost_distribution": 5.803996755535741e-17,
+        "float_mass_error": 1.7763568394002505e-15
+      },
+      "independent_copy_expectation": 0.0,
+      "terminal_exact_matches": true
+    },
+    "fuel_one__norepair": {
+      "inventory_states": 64,
+      "positive_event_channels": 171,
+      "reachable_states": 3,
+      "max_interval_distance": 3.552713678800501e-15,
+      "numerics": {
+        "chunks": 3,
+        "tail_mass_bound": 1.930025335101426e-18,
+        "local_poisson_reward_tail_bound": 3.487966353414029e-17,
+        "poisson_reward_bound_including_lost_distribution": 5.803996755535741e-17,
+        "float_mass_error": 1.7763568394002505e-15
+      },
+      "independent_copy_expectation": 0.0,
+      "terminal_exact_matches": true
+    },
+    "fuel_one__constitutive": {
+      "inventory_states": 64,
+      "positive_event_channels": 201,
+      "reachable_states": 3,
+      "max_interval_distance": 3.552713678800501e-15,
+      "numerics": {
+        "chunks": 3,
+        "tail_mass_bound": 1.930025335101426e-18,
+        "local_poisson_reward_tail_bound": 3.487966353414029e-17,
+        "poisson_reward_bound_including_lost_distribution": 5.803996755535741e-17,
+        "float_mass_error": 1.7763568394002505e-15
+      },
+      "independent_copy_expectation": 0.0,
+      "terminal_exact_matches": true
+    },
+    "initially_intact__active": {
+      "inventory_states": 72,
+      "positive_event_channels": 214,
+      "reachable_states": 40,
+      "max_interval_distance": 1.0658141036401503e-14,
+      "numerics": {
+        "chunks": 8,
+        "tail_mass_bound": 3.512628175930094e-18,
+        "local_poisson_reward_tail_bound": 4.566416628709122e-17,
+        "poisson_reward_bound_including_lost_distribution": 9.132833257418243e-17,
+        "float_mass_error": 1.7763568394002505e-15
+      },
+      "independent_copy_expectation": 0.0008697531545690325,
+      "terminal_exact_matches": true
+    },
+    "initially_intact__norepair": {
+      "inventory_states": 72,
+      "positive_event_channels": 196,
+      "reachable_states": 27,
+      "max_interval_distance": 1.9539925233402755e-14,
+      "numerics": {
+        "chunks": 5,
+        "tail_mass_bound": 1.3941600897751663e-18,
+        "local_poisson_reward_tail_bound": 1.812408116707716e-17,
+        "poisson_reward_bound_including_lost_distribution": 3.624816233415432e-17,
+        "float_mass_error": 2.3314683517128287e-15
+      },
+      "independent_copy_expectation": 0.0005787283804340453,
+      "terminal_exact_matches": true
+    },
+    "initially_intact__constitutive": {
+      "inventory_states": 72,
+      "positive_event_channels": 232,
+      "reachable_states": 52,
+      "max_interval_distance": 2.6645352591003757e-14,
+      "numerics": {
+        "chunks": 8,
+        "tail_mass_bound": 3.514255497374056e-18,
+        "local_poisson_reward_tail_bound": 4.568532146586273e-17,
+        "poisson_reward_bound_including_lost_distribution": 9.137064293172546e-17,
+        "float_mass_error": 3.552713678800501e-15
+      },
+      "independent_copy_expectation": 1.168816017444645,
+      "terminal_exact_matches": true
+    }
+  },
+  "successor_interventions": {
+    "capture_break_restore": {
+      "max_interval_distance": 1.0658141036401503e-14,
+      "numerics": [
+        {
+          "chunks": 1,
+          "tail_mass_bound": 3.6383931589126147e-22,
+          "local_poisson_reward_tail_bound": 1.0915387384918354e-17,
+          "poisson_reward_bound_including_lost_distribution": 1.0919025778077266e-17,
+          "float_mass_error": 0.0
+        },
+        {
+          "chunks": 6,
+          "tail_mass_bound": 4.124200826887265e-18,
+          "local_poisson_reward_tail_bound": 4.124200826887265e-17,
+          "poisson_reward_bound_including_lost_distribution": 8.24840165377453e-17,
+          "float_mass_error": 2.55351295663786e-15
+        }
+      ],
+      "independent_copy_expectation": 1.9965265312611915
+    },
+    "capture_broken": {
+      "max_interval_distance": 1.7763568394002505e-15,
+      "numerics": [
+        {
+          "chunks": 1,
+          "tail_mass_bound": 2.6487536829272745e-19,
+          "local_poisson_reward_tail_bound": 7.946715120841754e-15,
+          "poisson_reward_bound_including_lost_distribution": 7.949893625261267e-15,
+          "float_mass_error": 0.0
+        }
+      ],
+      "independent_copy_expectation": 0.0
+    },
+    "capture_continuous": {
+      "max_interval_distance": 4.085620730620576e-14,
+      "numerics": [
+        {
+          "chunks": 8,
+          "tail_mass_bound": 3.512628175930094e-18,
+          "local_poisson_reward_tail_bound": 3.512628175930094e-17,
+          "poisson_reward_bound_including_lost_distribution": 7.727781987046206e-17,
+          "float_mass_error": 5.218048215738236e-15
+        }
+      ],
+      "independent_copy_expectation": 1.999439901595505
+    },
+    "cue_break_restore": {
+      "max_interval_distance": 7.105427357601002e-15,
+      "numerics": [
+        {
+          "chunks": 1,
+          "tail_mass_bound": 3.6383931589126147e-22,
+          "local_poisson_reward_tail_bound": 1.0915387384918354e-17,
+          "poisson_reward_bound_including_lost_distribution": 1.0919753456709048e-17,
+          "float_mass_error": 0.0
+        },
+        {
+          "chunks": 6,
+          "tail_mass_bound": 4.124200826887265e-18,
+          "local_poisson_reward_tail_bound": 4.949040992264718e-17,
+          "poisson_reward_bound_including_lost_distribution": 9.898081984529435e-17,
+          "float_mass_error": 2.886579864025407e-15
+        }
+      ],
+      "independent_copy_expectation": 0.798792962489163
+    },
+    "cue_broken": {
+      "max_interval_distance": 4.336808689942018e-19,
+      "numerics": [
+        {
+          "chunks": 1,
+          "tail_mass_bound": 2.6487536829272745e-19,
+          "local_poisson_reward_tail_bound": 7.946715120841754e-15,
+          "poisson_reward_bound_including_lost_distribution": 7.949893625261267e-15,
+          "float_mass_error": 0.0
+        }
+      ],
+      "independent_copy_expectation": 0.0
+    }
+  },
+  "zero_loss_copy_expectations": {
+    "active": "4/5",
+    "norepair": "1/2",
+    "deadrepair": "2/5"
+  },
+  "analytical_certificates": {
+    "positive_lower": "53/1250",
+    "adverse_lower": "153/2500",
+    "path_lower": "35259954180435648/56994475926865715",
+    "neutral_variant_rational_checks": 196
+  }
+}
