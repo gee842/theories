@@ -28,6 +28,8 @@ Added 2026-10-03: [19-v5-handoff-2026-10-03](19-v5-handoff-2026-10-03/README.md)
 
 ## Subsequent additions
 
+Added 2026-10-05: [Generative origin of significance](15-codex-theory-conversations/2026-10-05-generative-origin-of-significance.md) preserves Ren's correction locating significance, learning and conscience within generative reality. [The generative root as the current research goal](15-codex-theory-conversations/2026-10-05-generative-root-research-goal.md) preserves his further foundational ambition and request to make the repository's direction explicit. User words are separated from AI interpretation. The [governing position](../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md) and repository entry points state the active goal and map existing contributions to unfinished derivations. This framing review supplies no new universal proof or empirical result.
+
 The original inventory and totals above are retained as recorded. These later snapshots are additional to that inventory.
 
 Added 2026-09-13: [15-codex-theory-conversations/2026-09-13-chiang-mai-2025.md](15-codex-theory-conversations/2026-09-13-chiang-mai-2025.md). One complete user message, preserved verbatim with an assistant-authored provenance header, naming the alternate-2025 Chiang Mai setting and asking to integrate shared abundance, architecture, ecology, 大同, and generative worldmaking. Developed in the [Chiang Mai 2025 case](../theories/architecture-for-a-living-earth/chiang-mai-2025/README.md); not a full task export.

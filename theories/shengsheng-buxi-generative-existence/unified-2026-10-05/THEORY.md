@@ -273,18 +273,19 @@ Stochastic conclusions are also different. A finite Markov chain can hit every r
 
 ## 10 Shared generativity and 善
 
-The causal question remains primary: does reality systematically generate relations that renew shared conditions and become more responsive to affected centers? The present work establishes mechanisms through which some of this can happen, mechanisms through which it fails, and conditions that effective responsiveness must meet. It has not established the universal tendency.
+The primary foundational question is how interacting differences form organizations and how some organizations develop significance, regulation, learning and the capacity to revise their own selection mechanisms. Within that account, a further directional question asks whether, how and under which conditions reality generates increasingly shared and responsive regeneration. The present work establishes conditional mechanisms of renewal and responsiveness, their failures, and constraints on their operation. The [governing position](GENERATIVE-GROUNDING.md) makes both the universal explanatory ambition and the unfinished derivations explicit.
 
-Four different propositions should therefore remain visible:
+Five different propositions should therefore remain visible:
 
 | Proposition | Present status |
 |---|---|
+| One generative account explains organization, significance, learning and their constructive and destructive regimes wherever systems form | Governing research target; the minimal premises and connected derivation remain under development |
 | An indispensable finite support cannot cover unbounded cumulative loss without replacement, provision, or changed dependence | Proved under the stated balance assumptions |
 | Specified coupled dynamics can form a maintained regenerative organization | Proved for the supplied reaction model |
 | Dynamics generally favor regeneration that becomes responsive to more affected centers | Research hypothesis; no general selection or formation theorem supplied |
 | Affected beings' suffering, agency, and worthwhile futures provide reasons for how to act | Explicit ethical commitment requiring ethical justification |
 
-The third proposition is the sharp remaining version of the direction-of-reality hypothesis. Interconnection alone does not prove it: the same relations can transmit depletion, coercion, or collapse. Demonstrating it would require a specified mechanism of formation and spread, a justified scope of environments, and evidence against plausible alternatives. Restricting attention to surviving regenerative systems would introduce survivor selection rather than establish the direction of all becoming.
+The fourth proposition is the stronger direction-of-reality hypothesis within the explanatory program. Interconnection alone does not prove it: the same relations can transmit depletion, coercion, or collapse. Demonstrating it would require a specified mechanism of formation and spread, a justified scope of environments, and evidence against plausible alternatives. Restricting attention to surviving regenerative systems would introduce survivor selection rather than establish the direction of all becoming.
 
 The ethical proposal is:
 
@@ -292,7 +293,7 @@ The ethical proposal is:
 
 **善：照料并成全受影响者继续生活、行动、理解与改变的条件，也使纠正损害这些条件的力量能够继续。**
 
-This formulation expresses the program's commitment. The causal theory explains what may make that commitment effective, expose a contradiction among its requirements, or reveal that an apparent improvement merely shifts harm out of view. It does not derive the commitment from survival. Affected beings can matter even when the larger system can persist without them.
+This formulation expresses the program's commitment. The causal theory explains what may make that commitment effective, expose a contradiction among its requirements, or reveal that an apparent improvement merely shifts harm out of view. Its current proofs do not derive the commitment from survival. Explaining how another center acquires significance within a process, and why that recognition is warranted, remains part of the foundational task. Affected beings can matter even when the larger system can persist without them.
 
 Shared existence gives no warrant to erase distinct centers. A whole can survive while some are deprived. Formal permission can coexist with unaffordable exercise. Agreement can rise because cooperation improves or because refusal becomes worse. The participation work accordingly separates initial agreement, continued willingness, total benefit, and cash available at the required moment. Effective alternatives and the legitimacy of their conditions remain part of the ethical and institutional question. [S13](SOURCE-MAP.md)
 
@@ -323,6 +324,8 @@ These rules resolve the main tensions among the sessions while preserving their 
 
 ## 12 The resolved construction and remaining explanatory obligations
 
+The governing obligation is the [connected derivation](GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work): explain organization, consequence-sensitive significance, learning and selection over selectors, then shared concern and wisdom within the same generative account. Each local construction below supplies part of that work. Its enabling assumptions remain explicit targets for further explanation. The next foundational bridge concerns how constitutive dependencies come to shape a process's own regulation without an unexplained positive reward inserted at the outset.
+
 The first development has completed one bounded formation mechanism: a participant can construct an alternative that makes protection an operator's best response, and a strategic counterexample shows when the operator can prevent its early use by attacking future operating cash. The [report](FORMATION.md) contains the exact regime boundaries, all declared limitations, and the completed numerical checks. The broader prospective study in the [synthesis record](SYNTHESIS-RECORD.md) remains unrun where it requires uncertain sensing and the discovery of new interventions.
 
 The parallel concern theory supplies a conditional acquisition mechanism: learned significance and recognition begin at zero and acquire an effective product under declared teaching, shared routing, and paid evidence. It also derives maintenance and succession conditions in a favorable stationary ecology. This advances beyond merely assigning a positive patient-loss coefficient, while leaving primitive valence, evaluative routing, legitimate evidence access, and their formation under competition unresolved.
@@ -333,6 +336,6 @@ The remaining causal questions concern the prevalence and formation of the model
 
 The epistemic frontier proceeds alongside it: how a process discovers that the supplied questions, action repertoire, or criteria are inadequate. The current strategic model grants public observation and known technology; it cannot be cited as an account of discovering unknown harms. A stronger study must test useful new distinctions and interventions on withheld problems, charge their construction and transmission, and permit simpler alternatives to succeed.
 
-The program's universal direction-of-reality claim remains open. The completed work now offers more discriminating mechanisms: renewal can persist without concern, concern can be learned under explicit architectural conditions, effective refusal can induce protection, and forward-looking control can destroy the resources required for later correction. A general theory must explain which relations form and prevail in specified environments. Its ethical argument must also justify why the consequences matter.
+The program's universal explanatory target remains open, as does its further hypothesis of broadly favorable direction. The completed work offers more discriminating mechanisms: renewal can persist without concern, concern can be learned under explicit architectural conditions, effective refusal can induce protection, and forward-looking control can destroy the resources required for later correction. A general theory must explain how these divergent relations form and which prevail under specified conditions. It must also explain the development of significance and justify its ethical conclusions.
 
 The candidate foundation now connects the conditions of further activity to the formation and contestability of the means that understand and alter those conditions. Where continued responsiveness matters, wisdom tracks how present action changes the conditions under which later understanding, choice, and correction can occur.

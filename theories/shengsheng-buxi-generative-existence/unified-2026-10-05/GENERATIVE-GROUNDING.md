@@ -6,6 +6,14 @@
 
 This note restores a constructive account to investigate. It distinguishes a proposed grounding, an implemented mechanism, and an established result. It does not announce that the full progression has already been proved.
 
+## The research goal
+
+**Find the smallest adequate generative foundation from which organization, significance, learning, concern and wisdom can be explained together, and formalize the derivations connecting them.** This is the current goal of the repository's foundational research. [Ren's further clarification](../../../sources/15-codex-theory-conversations/2026-10-05-generative-root-research-goal.md) expresses the ambition as understanding the root from which indefinitely many particular rules can follow, analogous to the consequences generated from a mathematical foundation.
+
+The proposal earns that role by explaining how differences and interactions form organizations, how conditions become consequential within them, and how some organizations develop capacities to understand and revise those relations. Learning must include the alteration of selection mechanisms themselves. Shared concern and wisdom must be connected to this development, including their failures and the reproduction of destructive regimes. A common root must retain distinct centers, incompatible possibilities and particular histories.
+
+The working criterion is a connected explanation with explicit premises and consequences at each transition. It should distinguish what follows generally, what needs additional physical or historical conditions, and what remains conjectural. A compact foundation can generate many conditional results without determining every history from its premises alone. The existence, adequacy and uniqueness of the proposed root remain to be tested; this statement records the research aim, not a completed theorem.
+
 ## Minimal grounding and universal scope
 
 The initial task is to identify and justify the smallest adequate set of premises about system-forming reality. A provisional starting set is:
@@ -99,3 +107,17 @@ The next central result should connect three transitions within a process whose 
 The construction must identify the causal mechanism at each transition. Merely adding another variable named concern, wisdom, or generativity would restate the target. Boundaries, reconstruction conditions, time horizons, and unknown inputs must remain inspectable; dependence can be tested through interventions that break and restore candidate enabling relations. Numerical success in an authored example would establish a conditional possibility, while broader natural claims would still need independent evidence.
 
 The existing physical, selection, inquiry, and concern studies supply partial mechanisms for this work. Their assumptions should become an explicit map of derivation tasks. The foundation's intended direction is **to explain how generative existence develops capacities to recognize, evaluate, and alter the conditions of further generation, including their shared and conflicting consequences.**
+
+## The derivation and the existing work
+
+This map places the current contributions within the foundational goal. The links identify supporting studies, not completed proofs of the whole transition named in the first column.
+
+| Transition to explain | Existing contribution | Remaining foundational task |
+|---|---|---|
+| Interacting differences form and reconstruct organizations | The [physical specification](FORMAL-SPECIFICATION.md) connects declared events, resources, formation and carrier replacement. | Identify when relations constitute an organization and derive its formation under explicit conditions; connect the model's supplied laws and interfaces to reality. |
+| Consequences for organization acquire significance within its regulation | The [grounding proposal above](#from-interacting-differences-to-consequential-organization) identifies enabling and damaging dependencies; [physical regulation](../../../experiments/shared-renewal-capability/regulation/README.md) tests a costly responsive mechanism. | Derive the formation of consequence-sensitive regulation. A maintained pattern or an analyst's measure alone does not establish that the process responds to what enables or damages it. |
+| Consequences change responses and the conditions of selection | The [selection account](../../../sources/15-codex-theory-conversations/2026-10-04-selection-and-generative-conditions.md) and [integrated evolution studies](../../../_process/research/2026-10-04-integrated-evolution/README.md) supply partial mechanisms for selection, inquiry and inheritance. | Explain how learning and models develop and revise their own selectors and criteria, including mislearning and capture; identify where objectives or repertoires are still supplied. |
+| Models recognize shared dependencies and other centers of significance | [Concern formation](../../../_process/research/2026-10-05-concern-theory/THEORY.md) and [revisable-concern settlement](REVISABLE-CONCERN-SETTLEMENT.md) construct learning and widening under declared premises. | Derive the origin and revision of their positive anchors and transfer architecture; explain and justify recognition beyond private usefulness. |
+| Shared understanding becomes sustainable wisdom and effective correction | The [unified theory](THEORY.md), [joint formation](JOINT-FORMATION.md) and [ethical argument](ETHICAL-FOUNDATION.md) connect understanding, protection, resources and succession. | Connect these capacities to the preceding derivation and explain the conditions of wider concern, exclusion and their transitions. Investigate favorable directional hypotheses with their own scope and evidence. |
+
+The immediate foundational priority is the first bridge to operational significance: specify actual constitutive dependencies and show how they come to alter the process's own regulation. Each later study should identify which transition it advances and which inputs it still borrows from elsewhere. Physical renewal and the search for broader favorable direction remain active parts of this program. No existing conditional proof gains universal scope merely by entering this map.

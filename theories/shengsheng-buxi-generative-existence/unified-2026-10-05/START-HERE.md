@@ -2,7 +2,9 @@
 
 5 October 2026
 
-For developments after this synthesis, use the [current research index](../../../RESEARCH.md). It includes revisable concern, later work on supporting conditions and shared generativity, and the joint formation study with its current evidence status.
+**Our current goal is to find and formalize a minimal generative foundation with universal explanatory scope wherever systems form.** The [governing position and derivation map](GENERATIVE-GROUNDING.md) explains the intended progression: interacting differences form organizations; consequences become significant within regulation; learning changes responses and selection mechanisms; models discover shared dependencies and other centers; concern and wisdom develop through that process. These are transitions to derive, with their enabling conditions and failures made explicit.
+
+For developments after this synthesis, use the [current research index](../../../RESEARCH.md). The physical renewal, inquiry, and concern studies contribute to this foundation. Their supplied architectures, positive anchors and favorable institutions remain further explanatory targets; the completed local results do not yet establish the whole progression.
 
 The strongest common idea in the latest work is that **activity changes the conditions through which further activity becomes possible**. Understanding a process means understanding that relationship: what supports it, what its activity does to those supports and to others, and what it leaves its successors able to do.
 
@@ -49,14 +51,15 @@ These results join in a precise formal question: **can the actual coupled proces
 
 The proposed root of wisdom is the capacity to recognize and revise consequential dependencies in understanding and action, while maintaining workable conditions for further correction. It includes knowing when to investigate, change the interface, preserve a commitment, pause, or act. The existing reasoning pilots did not establish that this formulation produces superior reasoning; that remains a testable claim.
 
-The ethical commitment is that affected beings matter even when the productive whole could continue without protecting them. Under that commitment, **善 supports their worthwhile possibilities and their effective ability to understand and change the conditions shaping those possibilities**. The causal mathematics explains how such protection can work or fail. It does not derive moral standing from survival.
+The current ethical models commit to affected beings mattering even when the productive whole could continue without protecting them. Under that commitment, **善 supports their worthwhile possibilities and their effective ability to understand and change the conditions shaping those possibilities**. The causal mathematics explains how such protection can work or fail. The foundational task includes explaining how this recognition develops and examining its justification; the existing proofs do not derive moral standing from survival.
 
 The [positive ethical argument](ETHICAL-FOUNDATION.md) now develops standing beyond usefulness, relevant consistency, and effective answerability. It distinguishes whose claims matter from who has the power to make others respond.
 
-The stronger hypothesis—that reality generally develops increasingly shared and responsive regeneration—remains open. We now have specific formation mechanisms and correction conditions. The concern model now explains one conditional path to learned responsiveness beyond private usefulness. Why its enabling architecture forms, spreads, and remains warranted for unfamiliar affected beings is still open.
+The stronger directional hypothesis—that reality generally develops increasingly shared and responsive regeneration—remains open within this program. Universal explanatory scope also includes degeneration, domination and failed learning. We now have specific formation mechanisms and correction conditions. The concern model explains one conditional path to learned responsiveness beyond private usefulness. Why its enabling architecture forms, spreads, and remains warranted for unfamiliar affected beings is still open.
 
 ## How to read the completed synthesis
 
+- [Generative grounding](GENERATIVE-GROUNDING.md): the current foundational goal, provisional premises, and derivation tasks connecting the studies.
 - [Unified theory](THEORY.md): the full argument, the connections among sessions, and the precise frontier.
 - [Joint formation and renewal](JOINT-FORMATION.md), with [proof](JOINT-FORMATION-MATH.md): the completed response to the central joint-formation challenge.
 - [Formation and strategic correction](FORMATION.md), with [new proofs](FORMATION-MATH.md): the first completed development beyond the original synthesis.
@@ -66,4 +69,4 @@ The stronger hypothesis—that reality generally develops increasingly shared an
 - [Source map](SOURCE-MAP.md): the contribution and evidence status of each session family.
 - [Synthesis and verification record](SYNTHESIS-RECORD.md): checkpoints, review corrections, reproducible checks, and the next discriminating study.
 
-This is a completed integration of the latest research into one coherent candidate foundation. It is not a claim that the final theory of reality, a universal moral tendency, or a uniquely best theory has been proved.
+This reading guide summarizes a completed synthesis and its subsequent developments. The foundational research continues under the governing goal above: establish the connected generative explanation. A final theory of reality, a universal moral tendency, and a uniquely best theory have not been proved.

@@ -2,6 +2,8 @@
 
 This repository is the primary home for Ren's theory and research. Start with `README.md`, `RESEARCH.md`, and `_process/BRIEF.md`.
 
+**Current research goal:** follow [generative grounding](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). Seek a minimal generative foundation with universal explanatory scope wherever systems form, and derive organization, significance, learning, selection over selectors, concern and wisdom within that account. Connect each study to this derivation; distinguish foundational premises from supplied local-model inputs. Explain constructive and destructive regimes while preserving differentiated centers and plural possibilities. Universal favorable direction remains a further hypothesis, not the definition of the whole goal or an established result.
+
 - Write and revise substantive research here. Reuse the relevant existing study directory instead of creating another working copy in a dated chat workspace.
 - Keep current formulations in `theories/`, study notes, proofs and reviews in `_process/research/`, and executable experiments in `experiments/`. Preserve imported originals and their provenance in `sources/`.
 - `RESEARCH.md` is the current cross-branch index. Update it when a study is added, completed, or superseded, and connect substantive advances to the relevant theory README. Distinguish ongoing work from completed results and preservation from conceptual integration.
