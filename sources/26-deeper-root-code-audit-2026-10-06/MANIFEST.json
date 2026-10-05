@@ -1,0 +1,39 @@
+{
+  "capture_date": "2026-10-06",
+  "capture_timezone": "Asia/Bangkok",
+  "source_repository": "/Users/ren/repos/生生不息",
+  "source_git_head": "094db61bd69a6b64ec2b718d65a04ef8d1aa964e",
+  "scope": "Three read-only inspected Lean source files from the current checkout. Not guaranteed identical to the earlier preserved prose snapshot. No compilation or dependency preservation performed.",
+  "files": [
+    {
+      "source_absolute_path": "/Users/ren/repos/生生不息/formal/SSBX/Foundation/R/OperationMonism.lean",
+      "source_repository_relative_path": "formal/SSBX/Foundation/R/OperationMonism.lean",
+      "preserved_path": "OperationMonism.lean",
+      "bytes": 8553,
+      "sha256": "f2c1c26129e411b218d8a71cd16030c57300a01b3006c6e441cfb7fa367b838a",
+      "source_git_porcelain_v1": "",
+      "matches_source_head_bytes": true,
+      "copy_matches_source_bytes": true
+    },
+    {
+      "source_absolute_path": "/Users/ren/repos/生生不息/formal/SSBX/Foundation/R/Distinction.lean",
+      "source_repository_relative_path": "formal/SSBX/Foundation/R/Distinction.lean",
+      "preserved_path": "Distinction.lean",
+      "bytes": 9162,
+      "sha256": "3cbcea168a4e2277eb225480096858095a921c71355e116f8ccecc81127b9297",
+      "source_git_porcelain_v1": "",
+      "matches_source_head_bytes": true,
+      "copy_matches_source_bytes": true
+    },
+    {
+      "source_absolute_path": "/Users/ren/repos/生生不息/formal/SSBX/Foundation/R/OperationMonismBridge.lean",
+      "source_repository_relative_path": "formal/SSBX/Foundation/R/OperationMonismBridge.lean",
+      "preserved_path": "OperationMonismBridge.lean",
+      "bytes": 5505,
+      "sha256": "8672e31c90a1b2fc088539e62878a72703af0f9adecb5abbbe60f7b095f47e4e",
+      "source_git_porcelain_v1": "",
+      "matches_source_head_bytes": true,
+      "copy_matches_source_bytes": true
+    }
+  ]
+}

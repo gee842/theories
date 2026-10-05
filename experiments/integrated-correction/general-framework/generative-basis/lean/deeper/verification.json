@@ -1,0 +1,132 @@
+{
+  "checked_at_utc": "2026-10-05T18:26:36.243949+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "checker_sha256": "75ea6af6519f94e70dde9b75d142c0f8adc6b69cfa433bf3389f519b60631d58",
+  "source_unchanged_during_check": true,
+  "fresh_temporary_build": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "../GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "exit_code": 0,
+      "dependency_audits": 18,
+      "audited_declarations": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "axioms": [],
+      "clean_dependency_audit": true,
+      "output": "verification/GenerativeCore.txt",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "ProductTower",
+      "source": "ProductTower.lean",
+      "source_sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54",
+      "exit_code": 0,
+      "dependency_audits": 7,
+      "audited_declarations": [
+        "Generative.Deeper.leaf_diagonal",
+        "Generative.Deeper.diagonal_injective",
+        "Generative.Deeper.tower_nonempty_iff",
+        "Generative.Deeper.tower_subsingleton",
+        "Generative.Deeper.tower_subsingleton_iff",
+        "Generative.Deeper.tower_empty_iff",
+        "Generative.Deeper.seed_distinction_persists"
+      ],
+      "axioms": [],
+      "clean_dependency_audit": true,
+      "output": "verification/ProductTower.txt",
+      "output_sha256": "e675ad8be5cdd58ddb0298f2c412f57714adba5492a5a7f66c22964dcb0a2948"
+    },
+    {
+      "module": "DynamicUnderdetermination",
+      "source": "DynamicUnderdetermination.lean",
+      "source_sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "exit_code": 0,
+      "dependency_audits": 9,
+      "audited_declarations": [
+        "Generative.Deeper.idle_no_event",
+        "Generative.Deeper.static_event",
+        "Generative.Deeper.static_never_changes",
+        "Generative.Deeper.toggle_event",
+        "Generative.Deeper.toggle_always_changes",
+        "Generative.Deeper.static_history_never_changes",
+        "Generative.Deeper.toggle_two_event_cycle",
+        "Generative.Deeper.same_carrier_incompatible_laws",
+        "Generative.Deeper.event_without_state_distinction"
+      ],
+      "axioms": [],
+      "clean_dependency_audit": true,
+      "output": "verification/DynamicUnderdetermination.txt",
+      "output_sha256": "7123d6b8a7695a709de7c94219460a1887c155bd92c9fed256a126939d823a07"
+    },
+    {
+      "module": "GeneratedPaths",
+      "source": "GeneratedPaths.lean",
+      "source_sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1",
+      "exit_code": 0,
+      "dependency_audits": 9,
+      "audited_declarations": [
+        "Generative.Deeper.reach_refl",
+        "Generative.Deeper.reach_step",
+        "Generative.Deeper.reach_trans",
+        "Generative.Deeper.trace_evaluate",
+        "Generative.Deeper.reach_evaluate",
+        "Generative.Deeper.reach_least",
+        "Generative.Deeper.reach_is_least_closure",
+        "Generative.Deeper.least_closure_unique",
+        "Generative.Deeper.reach_without_steps_iff"
+      ],
+      "axioms": [],
+      "clean_dependency_audit": true,
+      "output": "verification/GeneratedPaths.txt",
+      "output_sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+    },
+    {
+      "module": "HistoryRealization",
+      "source": "HistoryRealization.lean",
+      "source_sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "exit_code": 0,
+      "dependency_audits": 7,
+      "audited_declarations": [
+        "Generative.Deeper.append_nil_constructive",
+        "Generative.Deeper.append_assoc_constructive",
+        "Generative.Deeper.history_trace_iff",
+        "Generative.Deeper.history_from_empty_iff",
+        "Generative.Deeper.history_feasible_iff",
+        "Generative.Deeper.process_language_prefix_closed",
+        "Generative.Deeper.process_language_exact_history_realization"
+      ],
+      "axioms": [],
+      "clean_dependency_audit": true,
+      "output": "verification/HistoryRealization.txt",
+      "output_sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    }
+  ],
+  "audited_declarations": 50,
+  "new_audited_declarations": 32,
+  "scope": "Finite product towers relative to supplied seed; independent event laws on common carrier; least reflexive-transitive closure of supplied steps; exact finite-word realization of supplied prefix-closed history language. No claim of axiom-free foundations, generated physical laws or time, observational control, probability, ethical or universal-reality validation."
+}
