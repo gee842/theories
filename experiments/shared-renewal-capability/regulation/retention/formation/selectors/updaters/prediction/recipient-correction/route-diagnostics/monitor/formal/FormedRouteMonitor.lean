@@ -206,6 +206,17 @@ theorem ordinary_accounts (s : SuccessorLearning.State) (op : SuccessorLearning.
     (SuccessorLearning.step_preserves_actor_route_and_carrier h₂).1.trans
       (SuccessorLearning.step_preserves_actor_route_and_carrier h₁).1⟩
 
+theorem ordinary_preserves_bounded_zero_cash (s : SuccessorLearning.State)
+    (op : SuccessorLearning.Op) (h : OrdinaryEnabled s op) (hq : s.template.q < 4) :
+    (ordinary s op).childFuel = 0 ∧ (ordinary s op).template.q < 4 := by
+  have hc := h.1.2.2.2.2.1
+  have h₁ : SuccessorLearning.Step SuccessorLearning.primary s (.fund op) _ := ⟨h.1,rfl⟩
+  have h₂ : SuccessorLearning.Step SuccessorLearning.primary
+      (SuccessorLearning.advance SuccessorLearning.primary s (.fund op)) (.perform op) _ := ⟨h.2,rfl⟩
+  refine ⟨?_,SuccessorLearning.step_preserves_payload_bound h₂
+    (SuccessorLearning.step_preserves_payload_bound h₁ hq)⟩
+  cases op <;> simp [ordinary,SuccessorLearning.advance,hc]
+
 theorem step_accounts {bus : Bus} {s t : State} {e : Event} (h : Step bus s e t) :
     energy t = energy s ∧ cells t = cells s ∧ heads t = heads s ∧
     t.core.originalActor = s.core.originalActor ∧
@@ -232,6 +243,17 @@ theorem step_accounts {bus : Bus} {s t : State} {e : Event} (h : Step bus s e t)
       exact ⟨ha.1,rfl,rfl,rfl,rfl,fun _ => ha.2.1⟩
   | breakBinding => exact ⟨rfl,rfl,rfl,rfl,rfl,id⟩
 
+theorem step_preserves_bounded_zero_cash {bus : Bus} {s t : State} {e : Event}
+    (h : Step bus s e t) (hc : s.core.childFuel = 0) (hq : s.core.template.q < 4) :
+    t.core.childFuel = 0 ∧ t.core.template.q < 4 := by
+  rcases h with ⟨he,rfl⟩
+  cases e with
+  | rent => exact ordinary_preserves_bounded_zero_cash _ _ he.2.2.2.2 hq
+  | sense | work | observe | write => exact ordinary_preserves_bounded_zero_cash _ _ he.2 hq
+  | assemble | preRead | arm | sealWindow | postRead | commit =>
+      simpa [advance,fee,hc] using hq
+  | breakBinding => exact ⟨hc,hq⟩
+
 theorem trace_accounts {bus : Bus} {s t : State} {es : List Event}
     (h : Trace bus s es t) :
     energy t = energy s ∧ cells t = cells s ∧ heads t = heads s ∧
@@ -245,6 +267,15 @@ theorem trace_accounts {bus : Bus} {s t : State} {es : List Event}
       exact ⟨ih.1.trans hm.1,ih.2.1.trans hm.2.1,ih.2.2.1.trans hm.2.2.1,
         ih.2.2.2.1.trans hm.2.2.2.1,ih.2.2.2.2.1.trans hm.2.2.2.2.1,
         fun hr => ih.2.2.2.2.2 (hm.2.2.2.2.2 hr)⟩
+
+theorem trace_preserves_bounded_zero_cash {bus : Bus} {s t : State} {es : List Event}
+    (h : Trace bus s es t) (hc : s.core.childFuel = 0) (hq : s.core.template.q < 4) :
+    t.core.childFuel = 0 ∧ t.core.template.q < 4 := by
+  induction h with
+  | nil => exact ⟨hc,hq⟩
+  | cons hs _ ih =>
+      have hm := step_preserves_bounded_zero_cash hs hc hq
+      exact ih hm.1 hm.2
 
 def run (bus : Bus) : State → List Event → State
   | s,[] => s
@@ -270,8 +301,27 @@ theorem enabled_list_is_trace (bus : Bus) (s : State) (es : List Event)
   | nil => exact .nil s
   | cons e es ih => exact .cons ⟨h.1,rfl⟩ (ih _ h.2)
 
-def frame : List Event :=
-  [.rent,.sense,.preRead,.arm,.work,.sealWindow,.observe,.write,.postRead,.commit]
+def framePrefix : List Event :=
+  [.rent,.sense,.preRead,.arm,.work,.sealWindow,.observe,.write,.postRead]
+
+def frame : List Event := framePrefix ++ [.commit]
+
+theorem run_append (bus : Bus) (s : State) (xs ys : List Event) :
+    run bus s (xs++ys) = run bus (run bus s xs) ys := by
+  induction xs generalizing s with
+  | nil => rfl
+  | cons e es ih => exact ih (advance bus s e)
+
+theorem frame_last_commit (bus : Bus) (s : State) :
+    run bus s frame = advance bus (run bus s framePrefix) .commit := by
+  rw [frame,run_append]
+  rfl
+
+theorem unfinished_frame_preserves_summaries (bus : Bus) (s : State) :
+    (run bus s framePrefix).success = s.success ∧
+    (run bus s framePrefix).failure = s.failure := by
+  simp only [framePrefix,run,advance]
+  trivial
 
 def physicalRecord (s : State) : Bool × Bool × Bool := (s.pre,s.receipt,s.post)
 def sampleProjection (s : RouteDiagnostics.Sample) : Bool × Bool × Bool :=
@@ -282,7 +332,7 @@ theorem completed_frame_projects_sample (bus : Bus) (s : State) :
     physicalRecord (run bus s frame) =
       sampleProjection (RouteDiagnostics.sample s.core.template.route s.core.template.q
         (receiptOf (RouteDiagnostics.bit s.core.template.q) s.core.law true)) := by
-  simp only [frame,run,advance,physicalRecord,fee,ordinary,SuccessorLearning.advance,SuccessorLearning.primary,
+  simp only [frame,framePrefix,List.cons_append,List.nil_append,run,advance,physicalRecord,fee,ordinary,SuccessorLearning.advance,SuccessorLearning.primary,
     SuccessorLearning.cost,SuccessorLearning.command,SuccessorLearning.outcome,SuccessorLearning.revised,creditContact,
     sampleProjection,RouteDiagnostics.sample,RouteDiagnostics.written,RouteDiagnostics.bit,FormedRecipientRoute.action]
   cases h : receiptOf (packedAct s.core.template.q .recipient) s.core.law true <;>
@@ -307,7 +357,11 @@ theorem completed_frame_updates_summaries (bus : Bus) (s : State) :
     let t := run bus s frame
     t.success = (if t.receipt then merge s.success (t.post != t.pre) else s.success) ∧
     t.failure = (if t.receipt then s.failure else merge s.failure (t.post != t.pre)) := by
-  simp only [frame,run,advance]
+  rw [frame_last_commit]
+  simp only [advance]
+  rw [(unfinished_frame_preserves_summaries bus s).1,
+    (unfinished_frame_preserves_summaries bus s).2]
+  exact ⟨rfl,rfl⟩
 
 theorem merge_preserves_consistent_evidence (old : Summary) (bit : Bool)
     (h : old = .unseen ∨ old = encode bit) :
@@ -363,7 +417,7 @@ theorem floor_blocks_inspection_without_refund (s : State)
 theorem completed_two_frames_exhaust_lease (bus : Bus) (s : State) :
     (run bus (run bus s frame) frame).quota = .exhausted ∧
     ¬ Enabled (run bus (run bus s frame) frame) .rent := by
-  cases h : s.quota <;> simp [frame,run,advance,nextQuota,Enabled,h]
+  cases h : s.quota <;> simp [frame,framePrefix,List.cons_append,List.nil_append,run,advance,nextQuota,Enabled,h]
 
 theorem known_binding_break_discards_summaries (bus : Bus) (s : State) :
     (advance bus s .breakBinding).binding = false ∧
@@ -372,6 +426,17 @@ theorem known_binding_break_discards_summaries (bus : Bus) (s : State) :
     diagnosis (advance bus s .breakBinding) = none ∧
     energy (advance bus s .breakBinding) = energy s := by
   exact ⟨rfl,rfl,rfl,rfl,rfl⟩
+
+theorem assembly_initializes_sound_evidence (bus : Bus) (s : State) :
+    SoundSummary s.core.template.route (advance bus s .assemble).success
+      (advance bus s .assemble).failure := ⟨Or.inl rfl,Or.inl rfl⟩
+
+theorem missing_components_block_formation (s : State)
+    (h : s.freeCells < 8 ∨ s.freeHeads = 0) : ¬ Enabled s .assemble := by
+  intro he
+  rcases h with h | h
+  · have := he.2.2.2.2.2.1; omega
+  · have := he.2.2.2.2.2.2.1; omega
 
 /-- Admission copies the actual retained template, never revives an absent child. -/
 def enter (old : FormedRecipientRoute.State) (reserved cells heads : Nat) : Option State :=
@@ -387,6 +452,22 @@ theorem unretained_grandchild_cannot_enter (old : FormedRecipientRoute.State)
     (reserved cells heads : Nat) (h : old.phase ≠ .retained) :
     enter old reserved cells heads = none := by
   simp [enter,SuccessorLearning.unretained_child_cannot_enter old reserved h]
+
+theorem admitted_entry_preserves_energy (old : FormedRecipientRoute.State)
+    (reserved freeCells freeHeads : Nat) (s : State)
+    (h : enter old reserved freeCells freeHeads = some s) :
+    energy s = FormedRecipientRoute.energy old + reserved := by
+  unfold enter at h
+  split at h
+  · cases hc : SuccessorLearning.enter old reserved with
+    | none => simp [hc] at h
+    | some core =>
+        simp only [hc,Option.bind_some] at h
+        split at h
+        · cases h
+          exact SuccessorLearning.entry_accounts_for_reserved_source old reserved core hc
+        · contradiction
+  · contradiction
 
 /-- A typed retained boundary; the saved-distribution join is separately checked. -/
 def boundary (route : Route) (q reserve : Nat) (law : Bool) : FormedRecipientRoute.State :=
@@ -433,4 +514,53 @@ theorem controlled_private_zero_success_identifies :
     allEnabled (some true) (initial .privateZero 15 false) ([.assemble]++frame) ∧
     diagnosis (run (some true) (assembled .privateZero 15 false) frame) = some .privateZero := by decide
 
+theorem stable_success_is_uninformative (route : Route)
+    (h : route = .target ∨ route = .closed ∨ route = .frozen) :
+    allEnabled (some true) (initial route 25 false) ([.assemble]++frame) ∧
+    diagnosis (run (some true) (assembled route 25 false) frame) = none := by
+  rcases h with rfl | rfl | rfl <;> decide
+
+theorem complete_target_local_energy_and_material :
+    let s := run (some true) (initial .target 25 true) ([.assemble]++frame++frame)
+    energy s = 53 ∧ s.core.spent = 26 ∧ s.core.wasted = 10 ∧
+    s.core.originalActor+s.core.recipient+s.core.childFuel = 17 ∧
+    s.core.source = 0 ∧ cells s = 8 ∧ heads s = 1 := by decide
+
 end FormedRouteMonitor
+
+#print axioms FormedRouteMonitor.summary_classification_sound
+#print axioms FormedRouteMonitor.credit_contact_is_actual_work_outcome
+#print axioms FormedRouteMonitor.fee_accounts
+#print axioms FormedRouteMonitor.ordinary_accounts
+#print axioms FormedRouteMonitor.ordinary_preserves_bounded_zero_cash
+#print axioms FormedRouteMonitor.step_accounts
+#print axioms FormedRouteMonitor.step_preserves_bounded_zero_cash
+#print axioms FormedRouteMonitor.trace_accounts
+#print axioms FormedRouteMonitor.trace_preserves_bounded_zero_cash
+#print axioms FormedRouteMonitor.enabled_list_is_trace
+#print axioms FormedRouteMonitor.run_append
+#print axioms FormedRouteMonitor.frame_last_commit
+#print axioms FormedRouteMonitor.unfinished_frame_preserves_summaries
+#print axioms FormedRouteMonitor.completed_frame_projects_sample
+#print axioms FormedRouteMonitor.completed_frame_flip
+#print axioms FormedRouteMonitor.completed_frame_updates_summaries
+#print axioms FormedRouteMonitor.merge_preserves_consistent_evidence
+#print axioms FormedRouteMonitor.completed_frame_preserves_summary_sound
+#print axioms FormedRouteMonitor.paid_frame_diagnosis_sound
+#print axioms FormedRouteMonitor.absent_or_unknown_bus_blocks_commit
+#print axioms FormedRouteMonitor.seal_requires_completed_work
+#print axioms FormedRouteMonitor.paid_post_read_precedes_commit
+#print axioms FormedRouteMonitor.floor_blocks_inspection_without_refund
+#print axioms FormedRouteMonitor.completed_two_frames_exhaust_lease
+#print axioms FormedRouteMonitor.known_binding_break_discards_summaries
+#print axioms FormedRouteMonitor.assembly_initializes_sound_evidence
+#print axioms FormedRouteMonitor.missing_components_block_formation
+#print axioms FormedRouteMonitor.unretained_grandchild_cannot_enter
+#print axioms FormedRouteMonitor.admitted_entry_preserves_energy
+#print axioms FormedRouteMonitor.typed_boundary_admission
+#print axioms FormedRouteMonitor.target_two_frames_are_paid
+#print axioms FormedRouteMonitor.target_retains_full_signature
+#print axioms FormedRouteMonitor.nonwriting_second_frame_stops_after_write
+#print axioms FormedRouteMonitor.controlled_private_zero_success_identifies
+#print axioms FormedRouteMonitor.stable_success_is_uninformative
+#print axioms FormedRouteMonitor.complete_target_local_energy_and_material

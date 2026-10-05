@@ -26,9 +26,9 @@ def cases():
     base = dict(prior_control='ordinary', reverse=True, frames=2, channel=True,
                 bus_contact=True, availability=[True, True], receipt_fault='none',
                 cells=8, heads=1, source=20, prices=dict(PRICES), stop_before=None,
-                known_break=False, implementation='ordinary')
+                known_break=False, implementation='ordinary', monitor=True)
     out = dict(primary=base,
-        stable=dict(base, reverse=False),
+        stable=dict(base, reverse=False), no_monitor=dict(base, monitor=False),
         controlled_proxy_stable=dict(base, prior_control='clamp_learning', reverse=False),
         missing_cells=dict(base, cells=7), missing_head=dict(base, heads=0),
         missing_packet=dict(base, source=0),
@@ -175,15 +175,16 @@ def run(entry, case):
         return finish('unadmitted')
     if entry['base_law'] not in (0, 1):
         raise ValueError('Admitted plant requires its recovered inherited target law')
-    if s['free_cells'] < 8 or s['free_heads'] < 1:
-        return finish('blocked_assembly_parts')
-    if not pay('assembly'):
-        return finish('blocked_assembly_funds')
-    s.update(free_cells=s['free_cells'] - 8, bound_cells=8,
-             free_heads=s['free_heads'] - 1, bound_heads=1,
-             monitor_installed=True, binding=True)
-    metrics['assembled'] = 1
-    snapshot('assembled')
+    if case['monitor']:
+        if s['free_cells'] < 8 or s['free_heads'] < 1:
+            return finish('blocked_assembly_parts')
+        if not pay('assembly'):
+            return finish('blocked_assembly_funds')
+        s.update(free_cells=s['free_cells'] - 8, bound_cells=8,
+                 free_heads=s['free_heads'] - 1, bound_heads=1,
+                 monitor_installed=True, binding=True)
+        metrics['assembled'] = 1
+        snapshot('assembled')
     world = entry['base_law'] ^ int(case['reverse'])
     for frame in range(case['frames']):
         s.update(frame=frame, armed=False, work_done=False, sealed=False, bus_valid=None,
@@ -191,7 +192,8 @@ def run(entry, case):
                  target_report=None, issued=None, candidate=None, route_receipt=False)
         metrics['frames_started'] += 1
         snapshot('frame_started')
-        for stage in STAGES:
+        program = STAGES if case['monitor'] else ('rent', 'sense', 'work', 'acquire', 'write')
+        for stage in program:
             if case['stop_before'] == stage:
                 return finish('stopped_before_' + stage)
             if stage == 'work' and s['new_source'] < 10:

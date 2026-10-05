@@ -66,7 +66,9 @@ An unsealed zero is unknown. A committed learner write without a paid post-read 
 
 A known break of the bound connection clears both summaries and invalidates the episode. The declared comparison applies it after the first commit and before the second rent. This is a supplied passive reset mechanism with no refund or recovered components. It is not proof against a silent change that bypasses the contact. Combining samples from different routes can imitate a third signature; route and context association remains substantive physical work for any later replacement process.
 
-The monitor's diagnostic answer depends on its acquired bits and summary codes. It neither reads a hidden productive law nor selects a replacement by a fidelity score. Its accepted handoff should state the remaining reserves, raw/summary validity, unchanged route and record, source balance and occupied components. Correct diagnosis alone supplies neither a spare replacement part nor an affordable recovery action.
+The monitor's diagnostic answer depends on its acquired bits and summary codes. It neither reads a hidden productive law nor selects a replacement by a fidelity score. Its handoff states the remaining reserves, raw/summary validity, unchanged route and current acquired record, source balance and occupied components. The actor bit remains preserved; the recipient bit can change through ordinary learning. Correct diagnosis alone supplies neither a spare replacement part nor an affordable recovery action.
+
+The declared no-monitor comparison consumes the same two new packets through ordinary learning at seven units per frame, leaving the new monitor components unused. TARGET completes failure followed by success from25 at reserve21, spending14. The monitored endpoint is reserve9, spending26. CLOSED/FROZEN end at11 without monitoring and at1 after the monitored incomplete second frame. Monitoring establishes information availability while consuming capacity that could support later intervention. It is not automatically advantageous; a later policy must test whether its information changes affordable action enough to repay this cost.
 
 ## 5. Scope of verification
 
