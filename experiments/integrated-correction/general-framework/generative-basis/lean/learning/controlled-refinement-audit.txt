@@ -1,0 +1,141 @@
+{
+  "checked_at_utc": "2026-10-05T19:38:47.135633+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "checker_sha256": "8369b984d0d70ce5848e2130af52a658fdd7e40a4db40a39d7a9e4595111bcdc",
+  "source_unchanged_during_check": true,
+  "fresh_temporary_build": true,
+  "new_theorem_audits": 15,
+  "new_empty_axiom_audits": 10,
+  "allowed_standard_axioms": [
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "../GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "dependency_audits": 18,
+      "empty_axiom_audits": 18,
+      "axioms": [],
+      "clean_dependency_audit": true,
+      "compiler_output": "'Generative.trace_append_iff' does not depend on any axioms\n'Generative.trace_singleton_iff' does not depend on any axioms\n'Generative.enabled_iff_singleton_trace' does not depend on any axioms\n'Generative.enabled_difference_implies_state_difference' does not depend on any axioms\n'Generative.feasible_append_iff' does not depend on any axioms\n'Generative.feasible_prefix' does not depend on any axioms\n'Generative.enabled_product_iff' does not depend on any axioms\n'Generative.trace_product_iff' does not depend on any axioms\n'Generative.feasible_product_iff' does not depend on any axioms\n'Generative.trace_map' does not depend on any axioms\n'Generative.trace_lift' does not depend on any axioms\n'Generative.projected_trace_iff' does not depend on any axioms\n'Generative.projection_exact_iff' does not depend on any axioms\n'Generative.local_exact_iff_trace_exact' does not depend on any axioms\n'Generative.enabled_projection_iff' does not depend on any axioms\n'Generative.feasible_projection_iff' does not depend on any axioms\n'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms\n'Generative.trace_faithful_iff' does not depend on any axioms\n"
+    },
+    {
+      "module": "ResourceContinuation",
+      "source": "../conditional/ResourceContinuation.lean",
+      "source_sha256": "4c423a74c7c5b197374b652c420fdc682834fbbf5122aac277a828e193cc7c6e",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Conditional.support_trace_is_trace",
+        "Generative.Conditional.account_law_pullback",
+        "Generative.Conditional.trace_has_support_account",
+        "Generative.Conditional.support_trace_append",
+        "Generative.Conditional.repeat_accounted_cycle",
+        "Generative.Conditional.support_trace_balance",
+        "Generative.Conditional.support_cycle_covers_demand",
+        "Generative.Conditional.support_trace_unit_demand",
+        "Generative.Conditional.amount_le_cap_times_credited",
+        "Generative.Conditional.support_trace_credit_cap",
+        "Generative.Conditional.support_trace_length_bound",
+        "Generative.Conditional.interval_total_positive_witness",
+        "Generative.Conditional.interval_total_le_of_pointwise",
+        "Generative.Conditional.interval_total_unit_bound",
+        "Generative.Conditional.interval_total_cap_bound",
+        "Generative.Conditional.execution_interval_balance",
+        "Generative.Conditional.componentwise_execution_balance",
+        "Generative.Conditional.unbounded_demand_requires_unbounded_credit",
+        "Generative.Conditional.infinite_unit_execution_credit_window",
+        "Generative.Conditional.infinite_unit_execution_unbounded_credit",
+        "Generative.Conditional.execution_interval_frequency_bound"
+      ],
+      "dependency_audits": 21,
+      "empty_axiom_audits": 5,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "clean_dependency_audit": true,
+      "compiler_output": "'Generative.Conditional.support_trace_is_trace' does not depend on any axioms\n'Generative.Conditional.account_law_pullback' does not depend on any axioms\n'Generative.Conditional.trace_has_support_account' does not depend on any axioms\n'Generative.Conditional.support_trace_append' does not depend on any axioms\n'Generative.Conditional.repeat_accounted_cycle' does not depend on any axioms\n'Generative.Conditional.support_trace_balance' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.support_cycle_covers_demand' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.support_trace_unit_demand' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.amount_le_cap_times_credited' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.support_trace_credit_cap' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.support_trace_length_bound' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.interval_total_positive_witness' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.interval_total_le_of_pointwise' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.interval_total_unit_bound' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.interval_total_cap_bound' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.execution_interval_balance' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.componentwise_execution_balance' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.unbounded_demand_requires_unbounded_credit' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.infinite_unit_execution_credit_window' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.infinite_unit_execution_unbounded_credit' depends on axioms: [propext, Quot.sound]\n'Generative.Conditional.execution_interval_frequency_bound' depends on axioms: [propext, Quot.sound]\n"
+    },
+    {
+      "module": "ControllerRevision",
+      "source": "ControllerRevision.lean",
+      "source_sha256": "55b3d154a8cef06fb14dba0ae9ab06e8fb2f607136344bf4865de73adfab49bd",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Learning.controlled_trace_world",
+        "Generative.Learning.controlled_trace_memory",
+        "Generative.Learning.controlled_trace_commands",
+        "Generative.Learning.same_feedback_same_memory",
+        "Generative.Learning.same_feedback_same_commands",
+        "Generative.Learning.same_feedback_excludes_incompatible_futures",
+        "Generative.Learning.opposite_futures_require_feedback_difference",
+        "Generative.Learning.closed_loop_account_law"
+      ],
+      "dependency_audits": 8,
+      "empty_axiom_audits": 8,
+      "axioms": [],
+      "clean_dependency_audit": true,
+      "compiler_output": "'Generative.Learning.controlled_trace_world' does not depend on any axioms\n'Generative.Learning.controlled_trace_memory' does not depend on any axioms\n'Generative.Learning.controlled_trace_commands' does not depend on any axioms\n'Generative.Learning.same_feedback_same_memory' does not depend on any axioms\n'Generative.Learning.same_feedback_same_commands' does not depend on any axioms\n'Generative.Learning.same_feedback_excludes_incompatible_futures' does not depend on any axioms\n'Generative.Learning.opposite_futures_require_feedback_difference' does not depend on any axioms\n'Generative.Learning.closed_loop_account_law' does not depend on any axioms\n"
+    },
+    {
+      "module": "ControlledRefinement",
+      "source": "ControlledRefinement.lean",
+      "source_sha256": "ee438240d0ca70476152d337b83ffe6668d222625bdfb0d576d8ab883c8e10d7",
+      "exit_code": 0,
+      "audited_declarations": [
+        "Generative.Learning.Refinement.local_exact_comp",
+        "Generative.Learning.Refinement.compatible_observations_agree_on_fibres",
+        "Generative.Learning.Refinement.observation_compatible_comp",
+        "Generative.Learning.Refinement.closed_loop_local_exact",
+        "Generative.Learning.Refinement.controlled_trace_exact",
+        "Generative.Learning.Refinement.controlled_feasible_exact",
+        "Generative.Learning.Refinement.ObservationLoss.world_local_exact",
+        "Generative.Learning.Refinement.ObservationLoss.world_trace_exact",
+        "Generative.Learning.Refinement.ObservationLoss.summary_unit_account",
+        "Generative.Learning.Refinement.ObservationLoss.concrete_unit_account",
+        "Generative.Learning.Refinement.ObservationLoss.no_compatible_summary_channel",
+        "Generative.Learning.Refinement.ObservationLoss.concrete_probe_then_right",
+        "Generative.Learning.Refinement.ObservationLoss.summary_probe_then_left",
+        "Generative.Learning.Refinement.ObservationLoss.summary_cannot_issue_probe_then_right",
+        "Generative.Learning.Refinement.ObservationLoss.controlled_local_exact_fails"
+      ],
+      "dependency_audits": 15,
+      "empty_axiom_audits": 10,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "clean_dependency_audit": true,
+      "compiler_output": "'Generative.Learning.Refinement.local_exact_comp' does not depend on any axioms\n'Generative.Learning.Refinement.compatible_observations_agree_on_fibres' does not depend on any axioms\n'Generative.Learning.Refinement.observation_compatible_comp' does not depend on any axioms\n'Generative.Learning.Refinement.closed_loop_local_exact' does not depend on any axioms\n'Generative.Learning.Refinement.controlled_trace_exact' does not depend on any axioms\n'Generative.Learning.Refinement.controlled_feasible_exact' does not depend on any axioms\n'Generative.Learning.Refinement.ObservationLoss.world_local_exact' does not depend on any axioms\n'Generative.Learning.Refinement.ObservationLoss.world_trace_exact' does not depend on any axioms\n'Generative.Learning.Refinement.ObservationLoss.summary_unit_account' depends on axioms: [propext, Quot.sound]\n'Generative.Learning.Refinement.ObservationLoss.concrete_unit_account' depends on axioms: [propext, Quot.sound]\n'Generative.Learning.Refinement.ObservationLoss.no_compatible_summary_channel' does not depend on any axioms\n'Generative.Learning.Refinement.ObservationLoss.concrete_probe_then_right' depends on axioms: [propext]\n'Generative.Learning.Refinement.ObservationLoss.summary_probe_then_left' depends on axioms: [propext]\n'Generative.Learning.Refinement.ObservationLoss.summary_cannot_issue_probe_then_right' does not depend on any axioms\n'Generative.Learning.Refinement.ObservationLoss.controlled_local_exact_fails' depends on axioms: [propext]\n"
+    }
+  ],
+  "scope": "Sufficient observation-compatible exact refinement for finite histories of the same supplied deterministic controller, retaining identical memory. Includes composition and an equal-cost exact-world quotient that fails to preserve controlled command histories after observation erasure. No stochastic, timed, infinite, robust, empirical or architecture-origin claim."
+}

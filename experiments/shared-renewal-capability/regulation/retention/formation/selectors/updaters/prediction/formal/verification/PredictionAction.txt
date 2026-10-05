@@ -1,0 +1,18 @@
+'PredictionAction.noiseless_receipt_decodes_target' does not depend on any axioms
+'PredictionAction.outage_record_is_ambiguous' does not depend on any axioms
+'PredictionAction.changing_memory_changes_command' depends on axioms: [propext]
+'PredictionAction.command_does_not_read_hidden_regime' does not depend on any axioms
+'PredictionAction.revised_score_bounded' depends on axioms: [propext, Quot.sound]
+'PredictionAction.step_score_bounded' depends on axioms: [propext, Quot.sound]
+'PredictionAction.trace_score_bounded' depends on axioms: [propext, Quot.sound]
+'PredictionAction.updater_reformation_retains_memory' does not depend on any axioms
+'PredictionAction.reversal_retains_memory_and_resources' does not depend on any axioms
+'PredictionAction.step_energy_ledger' depends on axioms: [propext, Quot.sound]
+'PredictionAction.trace_energy_ledger' depends on axioms: [propext, Quot.sound]
+'PredictionAction.retrofit_preserves_actual_memory_reference' does not depend on any axioms
+'PredictionAction.paid_retrofit_energy' depends on axioms: [propext, Quot.sound]
+'PredictionAction.paid_cycle' does not depend on any axioms
+'PredictionAction.cycle_then' does not depend on any axioms
+'PredictionAction.three_evidence_then_action_affordable_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PredictionAction.slow_needs_three_false_writes_from_four' does not depend on any axioms
+'PredictionAction.fast_one_false_write_from_four' does not depend on any axioms

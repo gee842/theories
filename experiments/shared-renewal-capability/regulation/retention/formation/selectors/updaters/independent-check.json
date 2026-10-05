@@ -1,0 +1,370 @@
+{
+  "status": "passed",
+  "method": "independent explicit-species preparation and backward expectation recursion",
+  "preparation_boundary_cases": [
+    {
+      "original_reserve": 0,
+      "entrance_probability": "0",
+      "states": 1,
+      "positive_channels": 0
+    },
+    {
+      "original_reserve": 1,
+      "entrance_probability": "0",
+      "states": 3,
+      "positive_channels": 2
+    },
+    {
+      "original_reserve": 2,
+      "entrance_probability": "0",
+      "states": 8,
+      "positive_channels": 8
+    },
+    {
+      "original_reserve": 3,
+      "entrance_probability": "0",
+      "states": 16,
+      "positive_channels": 20
+    },
+    {
+      "original_reserve": 4,
+      "entrance_probability": "0",
+      "states": 20,
+      "positive_channels": 24
+    },
+    {
+      "original_reserve": 5,
+      "entrance_probability": "2/9",
+      "states": 20,
+      "positive_channels": 24
+    },
+    {
+      "original_reserve": 9,
+      "entrance_probability": "2/9",
+      "states": 20,
+      "positive_channels": 24
+    },
+    {
+      "original_reserve": 18,
+      "entrance_probability": "2/9",
+      "states": 20,
+      "positive_channels": 24
+    }
+  ],
+  "comparisons": {
+    "primary": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 266,
+          "audited_branches": 264
+        },
+        "hierarchical": {
+          "backward_states": 266,
+          "audited_branches": 264
+        },
+        "fixed_random": {
+          "backward_states": 162,
+          "audited_branches": 160
+        },
+        "fixed_directed": {
+          "backward_states": 66,
+          "audited_branches": 64
+        }
+      }
+    },
+    "no_reversal": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 182,
+          "audited_branches": 180
+        },
+        "hierarchical": {
+          "backward_states": 182,
+          "audited_branches": 180
+        },
+        "fixed_random": {
+          "backward_states": 94,
+          "audited_branches": 92
+        },
+        "fixed_directed": {
+          "backward_states": 66,
+          "audited_branches": 64
+        }
+      }
+    },
+    "two_reversals": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 294,
+          "audited_branches": 298
+        },
+        "hierarchical": {
+          "backward_states": 294,
+          "audited_branches": 298
+        },
+        "fixed_random": {
+          "backward_states": 182,
+          "audited_branches": 184
+        },
+        "fixed_directed": {
+          "backward_states": 66,
+          "audited_branches": 64
+        }
+      }
+    },
+    "noisy": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 4494,
+          "audited_branches": 5902
+        },
+        "hierarchical": {
+          "backward_states": 4494,
+          "audited_branches": 5902
+        },
+        "fixed_random": {
+          "backward_states": 1952,
+          "audited_branches": 2736
+        },
+        "fixed_directed": {
+          "backward_states": 1124,
+          "audited_branches": 1382
+        }
+      }
+    },
+    "reserve_9": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 150,
+          "audited_branches": 148
+        },
+        "hierarchical": {
+          "backward_states": 150,
+          "audited_branches": 148
+        },
+        "fixed_random": {
+          "backward_states": 86,
+          "audited_branches": 84
+        },
+        "fixed_directed": {
+          "backward_states": 66,
+          "audited_branches": 64
+        }
+      }
+    },
+    "reserve_12": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 210,
+          "audited_branches": 208
+        },
+        "hierarchical": {
+          "backward_states": 210,
+          "audited_branches": 208
+        },
+        "fixed_random": {
+          "backward_states": 130,
+          "audited_branches": 128
+        },
+        "fixed_directed": {
+          "backward_states": 66,
+          "audited_branches": 64
+        }
+      }
+    },
+    "reserve_24": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 330,
+          "audited_branches": 332
+        },
+        "hierarchical": {
+          "backward_states": 330,
+          "audited_branches": 332
+        },
+        "fixed_random": {
+          "backward_states": 202,
+          "audited_branches": 204
+        },
+        "fixed_directed": {
+          "backward_states": 66,
+          "audited_branches": 64
+        }
+      }
+    },
+    "gate_cost_3": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 242,
+          "audited_branches": 240
+        },
+        "hierarchical": {
+          "backward_states": 242,
+          "audited_branches": 240
+        },
+        "fixed_random": {
+          "backward_states": 162,
+          "audited_branches": 160
+        },
+        "fixed_directed": {
+          "backward_states": 66,
+          "audited_branches": 64
+        }
+      }
+    },
+    "gate_life_2": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 470,
+          "audited_branches": 476
+        },
+        "hierarchical": {
+          "backward_states": 470,
+          "audited_branches": 476
+        },
+        "fixed_random": {
+          "backward_states": 150,
+          "audited_branches": 148
+        },
+        "fixed_directed": {
+          "backward_states": 66,
+          "audited_branches": 64
+        }
+      }
+    },
+    "gate_life_1": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 424,
+          "audited_branches": 460
+        },
+        "hierarchical": {
+          "backward_states": 424,
+          "audited_branches": 460
+        },
+        "fixed_random": {
+          "backward_states": 130,
+          "audited_branches": 128
+        },
+        "fixed_directed": {
+          "backward_states": 66,
+          "audited_branches": 64
+        }
+      }
+    },
+    "selector_life_3": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 226,
+          "audited_branches": 224
+        },
+        "hierarchical": {
+          "backward_states": 226,
+          "audited_branches": 224
+        },
+        "fixed_random": {
+          "backward_states": 122,
+          "audited_branches": 120
+        },
+        "fixed_directed": {
+          "backward_states": 66,
+          "audited_branches": 64
+        }
+      }
+    },
+    "yield_4": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "arms": {
+        "variable": {
+          "backward_states": 238,
+          "audited_branches": 236
+        },
+        "hierarchical": {
+          "backward_states": 238,
+          "audited_branches": 236
+        },
+        "fixed_random": {
+          "backward_states": 134,
+          "audited_branches": 132
+        },
+        "fixed_directed": {
+          "backward_states": 66,
+          "audited_branches": 64
+        }
+      }
+    }
+  },
+  "synchronized_recovery": {
+    "parameter_cases": 36828,
+    "first_recovery": "1-4^(-N)",
+    "directed_success_mass": "2/3 of total first-recovery mass",
+    "scope": "synchronized lifetimes; retained obsolete orientation; fixed noiseless postchange plant"
+  },
+  "derived_diagnostics": {
+    "contrasts": 12,
+    "conditional_inherited_path_probability": "9/512",
+    "design": "supplemental after-results diagnostics; not additional prespecified arms",
+    "source_sha256": {
+      "derived_diagnostics.py": "fec56541a792238b36f668baad731afa2f222606936e6234fe5d09c507755fbb",
+      "derived-diagnostics.json": "66db7980d897bd8d0c58046bb0950666474f028bef25abaf97ab4e851097e7a6"
+    }
+  },
+  "case_arms": 48,
+  "exact_metrics_per_arm": 20,
+  "source_sha256": {
+    "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/independent_check.py": "2decde80f713d7a023af3fbe62e36b931eca92b8473d8e3b3083478a029c1d9f",
+    "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/check.py": "ce8be1074f05dcb3a50f2c789da523306541d0e11106d3e9d01b5dbef15a8eb9",
+    "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/PROTOCOL.md": "b43faab326d544eb47864046cba036b235027134c14e5286f0b2d910017037c7",
+    "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "/Users/ren/theories/experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/results.json": "b8bb74a7aea0620da88b15da367b346f473bc724141471539d11edbd90c46d70"
+  }
+}

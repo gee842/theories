@@ -102,6 +102,33 @@ controller, nor does it by itself construct a selector or evaluate one.
 
 ## Reproduce and audit
 
+### Controller-compatible refinement extension
+
+`ControlledRefinement.lean` adds a separately checked connection to the causal
+core: exact world steps plus compatible complete observations preserve and lift
+finite histories of the same supplied controller with its actual inherited
+memory. Both the world and observation interfaces compose. A countermodel drops
+a hidden bit while preserving all uncontrolled action possibilities and unit
+fuel costs; after a probe, the dropped information changes the next command.
+No deterministic channel on that erased state reproduces both bit values.
+
+This is sufficient for the stated action/observation-labelled finite-history
+contract, not necessary for every controller's action-only behavior. The same
+action vocabulary and step granularity are required. Probability, robustness,
+hardware origin and any omitted sensing or writing costs are not inferred.
+The [canonical account](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONTROLLED-REFINEMENT.md)
+and its linked mathematics/review explain the integration obligation.
+
+Run `python3 check_controlled_refinement.py` here for this extension. Its fresh
+Lean 4.29.1 build audits all **15 new theorems** and recompiles only their three
+canonical dependency modules. Ten new audits have empty axiom dependencies;
+five use only standard `propext` and/or `Quot.sound`. The separate
+`controlled-refinement-audit.txt` records compiler output, exact declarations,
+source hashes and checker/compiler hashes. It does not alter the original
+48-theorem record below or claim new verification of unrelated branches.
+
+### Original information and support package
+
 Run `python3 check.py` in this directory. The checker pins Lean `4.29.1`, freezes
 all seven source files, compiles them in a fresh temporary directory, rejects
 proof holes and custom axiom declarations, and audits every theorem in the three

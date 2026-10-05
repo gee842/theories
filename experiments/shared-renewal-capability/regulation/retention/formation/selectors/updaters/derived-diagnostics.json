@@ -1,0 +1,226 @@
+{
+  "status": "passed",
+  "design": "post-result diagnostics; not prespecified primary arms",
+  "source_sha256": {
+    "model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "results.json": "b8bb74a7aea0620da88b15da367b346f473bc724141471539d11edbd90c46d70",
+    "derived_diagnostics.py": "fec56541a792238b36f668baad731afa2f222606936e6234fe5d09c507755fbb"
+  },
+  "frozen_initial_type_contrast": {
+    "primary": {
+      "variable": "335/144",
+      "fair_frozen_type_mixture": "55/24",
+      "difference": "5/144"
+    },
+    "no_reversal": {
+      "variable": "53/18",
+      "fair_frozen_type_mixture": "53/18",
+      "difference": "0"
+    },
+    "two_reversals": {
+      "variable": "137/72",
+      "fair_frozen_type_mixture": "67/36",
+      "difference": "1/24"
+    },
+    "noisy": {
+      "variable": "1143322452373/824633720832",
+      "fair_frozen_type_mixture": "281955343231/206158430208",
+      "difference": "5167026483/274877906944"
+    },
+    "reserve_9": {
+      "variable": "23/18",
+      "fair_frozen_type_mixture": "23/18",
+      "difference": "0"
+    },
+    "reserve_12": {
+      "variable": "23/18",
+      "fair_frozen_type_mixture": "23/18",
+      "difference": "0"
+    },
+    "reserve_24": {
+      "variable": "359/144",
+      "fair_frozen_type_mixture": "181/72",
+      "difference": "-1/48"
+    },
+    "gate_cost_3": {
+      "variable": "83/36",
+      "fair_frozen_type_mixture": "9/4",
+      "difference": "1/18"
+    },
+    "gate_life_2": {
+      "variable": "29/18",
+      "fair_frozen_type_mixture": "14/9",
+      "difference": "1/18"
+    },
+    "gate_life_1": {
+      "variable": "13/9",
+      "fair_frozen_type_mixture": "13/9",
+      "difference": "0"
+    },
+    "selector_life_3": {
+      "variable": "101/72",
+      "fair_frozen_type_mixture": "49/36",
+      "difference": "1/24"
+    },
+    "yield_4": {
+      "variable": "13/9",
+      "fair_frozen_type_mixture": "13/9",
+      "difference": "0"
+    }
+  },
+  "inherited_credit_witness": {
+    "law": {
+      "initial_common": 18,
+      "adapter": 1,
+      "gate_assembly": 2,
+      "assembly": 1,
+      "trial": 2,
+      "renewal": 1,
+      "gate_renewal": 1,
+      "packet": 6,
+      "lifetime": 2,
+      "gate_lifetime": 1,
+      "horizon": 3,
+      "reversals": [],
+      "availability": "3/4",
+      "initial_source": 19
+    },
+    "conditional_start": "commissioned reserve14, hidden regime0",
+    "probability": "9/512",
+    "history": [
+      {
+        "before": {
+          "fuel": 14,
+          "selector": -1,
+          "lease": 0,
+          "updater": -1,
+          "gate_lease": 0,
+          "used": false,
+          "pre_capture": false,
+          "inherited": false,
+          "qualifies": false,
+          "witness": false,
+          "changed": false,
+          "post": false
+        },
+        "after": {
+          "fuel": 13,
+          "selector": 0,
+          "lease": 2,
+          "updater": 0,
+          "gate_lease": 1,
+          "used": false,
+          "pre_capture": true,
+          "inherited": false,
+          "qualifies": false,
+          "witness": false,
+          "changed": false,
+          "post": false
+        },
+        "probability": "3/16",
+        "increments": {
+          "updater_forms": "1",
+          "selector_forms": "1",
+          "trials": "1",
+          "captures": "1",
+          "renewals": "1",
+          "updater_changes": "0",
+          "selector_changes": "0",
+          "post_captures": "0",
+          "inherited_selector_renewals": "0",
+          "random_governed": "0",
+          "directed_governed": "0"
+        }
+      },
+      {
+        "before": {
+          "fuel": 13,
+          "selector": 0,
+          "lease": 2,
+          "updater": 0,
+          "gate_lease": 1,
+          "used": false,
+          "pre_capture": true,
+          "inherited": false,
+          "qualifies": false,
+          "witness": false,
+          "changed": false,
+          "post": false
+        },
+        "after": {
+          "fuel": 11,
+          "selector": 0,
+          "lease": 1,
+          "updater": 0,
+          "gate_lease": 0,
+          "used": false,
+          "pre_capture": true,
+          "inherited": false,
+          "qualifies": false,
+          "witness": false,
+          "changed": false,
+          "post": false
+        },
+        "probability": "1/4",
+        "increments": {
+          "updater_forms": "0",
+          "selector_forms": "0",
+          "trials": "1",
+          "captures": "0",
+          "renewals": "0",
+          "updater_changes": "0",
+          "selector_changes": "0",
+          "post_captures": "0",
+          "inherited_selector_renewals": "0",
+          "random_governed": "0",
+          "directed_governed": "0"
+        }
+      },
+      {
+        "before": {
+          "fuel": 11,
+          "selector": 0,
+          "lease": 1,
+          "updater": 0,
+          "gate_lease": 0,
+          "used": false,
+          "pre_capture": true,
+          "inherited": false,
+          "qualifies": false,
+          "witness": false,
+          "changed": false,
+          "post": false
+        },
+        "after": {
+          "fuel": 11,
+          "selector": 0,
+          "lease": 2,
+          "updater": 1,
+          "gate_lease": 1,
+          "used": false,
+          "pre_capture": true,
+          "inherited": true,
+          "qualifies": false,
+          "witness": false,
+          "changed": true,
+          "post": false
+        },
+        "probability": "3/8",
+        "increments": {
+          "updater_forms": "1",
+          "selector_forms": "0",
+          "trials": "1",
+          "captures": "1",
+          "renewals": "1",
+          "updater_changes": "1",
+          "selector_changes": "0",
+          "post_captures": "0",
+          "inherited_selector_renewals": "1",
+          "random_governed": "0",
+          "directed_governed": "0"
+        }
+      }
+    ],
+    "claim": "new updater receives maintenance before governing the inherited selector"
+  }
+}

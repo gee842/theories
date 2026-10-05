@@ -30,6 +30,8 @@ The synchronized-expiry diagnostic reuses the previous sequential-payment theore
 
 The same law cannot pay its first trial from an absent-updater/absent-selector entrance with less than `g+c+d` reserve. An anticipated return cannot fund startup. The stochastic recovery formula `1-4^(-N)`, the conditional first-success D share `2/3`, first-passage preparation probability and executable comparisons are analytical/computational claims, not Lean probability theorems.
 
+The formal trial relation uses deterministic capture when the response matches the plant. Noisy-capture comparisons add failed-return outcomes even after a matching response; those extra outcome channels are not included in this Lean relation. Their accounting and comparisons require the separate executable and independent checks.
+
 The adapter's functionality, recycled backing slots, two updater algorithms, meta-proposal rule, inherited residue, physical maintenance and retooled scaffold remain supplied premises. Actual composition under those premises is checked. Their natural emergence or empirical realization, richer representations, concern and wisdom are not proved by these declarations.
 
 ## Reproduce

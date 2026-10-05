@@ -1,6 +1,6 @@
 # Forming and replacing mechanisms that revise selectors
 
-6 October 2026. AI-authored comparator and interface audit for the next connection in the [governing derivation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md): **paid formation of an updater module → changed selector-revision rule → consequences that alter that updater's own maintenance or replacement**. This continues the [selector comparison](SELECTOR-REVISION-COMPARATORS.md) and [formation-to-retention construction](FORMED-VARIANT-SELECTION-INTEGRATION.md). The design under examination makes updater identity variable between random and directed selector revision. No numerical outcome or acceptance of the final implementation is asserted in this note before its companion checks are available.
+6 October 2026. AI-authored comparator and interface audit for the next connection in the [governing derivation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md): **paid formation of an updater module → changed selector-revision rule → consequences that alter that updater's own maintenance or replacement**. This continues the [selector comparison](SELECTOR-REVISION-COMPARATORS.md) and [formation-to-retention construction](FORMED-VARIANT-SELECTION-INTEGRATION.md). The implemented design makes updater identity variable between random and directed selector revision. This note now includes a comparison against the completed producer calculation and its protocol. Independent mathematical, implementation and formal review retain their separate scope in the companion documents.
 
 **Comparative position:** mechanisms controlling modification and transmission have long been objects of selection, and learning rules themselves have long been learned. The proposed advance inside this repository is to give such an updater a paid formation and maintenance history within the continuing organization, and to connect that history to the preceding formation process. Adding another level is insufficient by itself. The complete hierarchy still admits an ordinary finite-state description; equivalence to that description is expected.
 
@@ -77,4 +77,52 @@ A higher updater lifetime can improve retention in one regime but obstruct revis
 
 None of these interventions separates the material description from an exactly matching conventional hierarchy. They can separate competing causal couplings or show that a proposed abstraction discards a necessary physical state. The new explanatory obligation is the actual formation-to-updater connection, not an escape from ordinary state-transition mathematics.
 
-**Reading scope:** the prior formation and selector studies, the primary modifier-theory abstracts and author paper links, the 1991 learning-rule paper's introduction and §§2–3, and the 1992 experimental paper's primary abstract. No molecular data were fitted, no historical completeness claim was evaluated systematically, and no numerical updater result is asserted here. The mechanism/proof and independent-review companions determine which proposed tests have actually been implemented and passed.
+## 6. The implemented interface and comparative result
+
+The final [protocol](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/PROTOCOL.md) and [model](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py) use the old formed-variant channels with material count M=2, common fuel F=18 and source E=97. Bulk copying, wear, damage and leakage are zero in this preparation reference; the other old channel rates remain one. Both response variants and the repaired site are initially absent. The completed jump-chain calculation retains all absorbing outcomes.
+
+Commissioning occurs with probability 2/9. Its entrance has one A and one H, a repaired site, one local captured unit, common fuel 14 and remaining source 96. No old channel remains enabled at that entrance. The declared adapter consumes the two formed constituents as backing for two recyclable module slots, costs one common-fuel unit, and makes the local unit accessible. Thus operating reserve is 14−1+1=14, and the remaining source becomes sixteen packets of six units. This is an explicit conversion law; accounting consistency does not establish chemical realization of that law. The other 7/9 of preparations remain in the unconditional calculation with zero commissioned capture or revision witness and their unused energy recorded. The separately retained F=4,E=1 low-stock fixture cannot commission; it is not reset to the funded entrance.
+
+The sixteen exposure opportunities begin when commissioning opens the valve. They are not a shared deadline including random preparation time. This scope avoids a hidden claim that the preparation can finish rapidly, but it also means that elapsed-time comparisons await a fuller timing model. The larger initial stocks are a new supplied preparation, not fuel appearing at the interface.
+
+The updater has lifetime four and costs two units to construct; the selector has lifetime two and costs one. A trial costs two; capture pays one unit to renew each component. The six-unit packet is counted once, leaving a net gain of two on a successful paid trial. An updater must be present for selector construction and operation. Its longer lifetime can let it govern a residue-informed selector reconstruction before the updater expires. Every updater policy shares this gate, cost and lifetime contract. Fixed-R and fixed-D arms also start absent, construct their hardware and pay for renewal and reconstruction.
+
+The producer's [exact results](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/results.json) report twelve cases and four arms. At inspection its recorded hashes matched the protocol, model, checker and imported predecessor files. The primary reversal occurs after exposure four. Its all-preparation results are:
+
+| Arm | Expected commissioned captures | Probability of the strong updater-revision witness |
+|---|---:|---:|
+| Variable material updater | 335/144 ≈ 2.3264 | 1/72 |
+| Exact conventional hierarchy | 335/144 ≈ 2.3264 | 1/72 |
+| Fixed random updater hardware | 61/36 ≈ 1.6944 | 0 |
+| Fixed directed updater hardware | 26/9 ≈ 2.8889 | 0 |
+
+The zero witness for fixed kinds follows from the witness's requirement that updater identity change; it is not a failure of adaptation or resource capture. Fixed directed hardware captures more than the variable updater in this fixture. The exact hierarchy agrees on the complete recorded state-and-moment table, as required by its identical transition law. These results support a paid formation-and-turnover construction, not superiority over conventional feedback.
+
+The strong witness requires an old updater instance that both captured before the boundary and actually governed residue-informed selector reconstruction; a paid post-boundary change of updater kind; and actual governance of selector reconstruction followed by capture under the new instance. The two required old-instance events need not occur in a specified relative order. This records functional use of both mechanisms, rather than an idle label change. The unconditional probability 1/72 includes the 7/9 failed preparation mass; the probability conditional on commissioning is 1/16 and must not replace it.
+
+A **post hoc derived contrast**, not a prespecified additional arm, compares variable updater identity with an equal mixture of the two fixed-identity hardware arms. Both begin with the same R/D mixture and maintain the hardware at the same prices; the frozen mixture reconstructs its initially selected kind thereafter. Linearity gives its expected capture as half the fixed-R value plus half the fixed-D value. This isolates the consequences of permitting updater identity turnover, including extra resource depletion. It is not a comparison with an immortal gate.
+
+For completeness, the difference in expected captures, variable minus that frozen initial mixture, was calculated from the recorded exact outputs in all twelve cases:
+
+| Case | Post hoc capture difference |
+|---|---:|
+| Primary | 5/144 |
+| No reversal | 0 |
+| Two reversals | 1/24 |
+| Noisy return | 5167026483/274877906944 ≈ 0.01880 |
+| Initial common reserve 9 | 0 |
+| Initial common reserve 12 | 0 |
+| Initial common reserve 24 | −1/48 |
+| Updater assembly cost 3 | 1/18 |
+| Updater lifetime 2 | 1/18 |
+| Updater lifetime 1 | 0 |
+| Selector lifetime 3 | 1/24 |
+| Packet yield 4 | 0 |
+
+The primary frozen mixture captures 330/144 against the variable arm's 335/144. At reserve 24 the ordering reverses: the frozen mixture captures 362/144 against 359/144. Thus even this narrower test does not support a uniform benefit from revising updater identity. The post hoc comparison derives a new summary of the existing calculations; it does not increase the number of independently tested preparations or certify historical novelty.
+
+The [mathematical account](UPDATER-FORMATION-MATH.md) and [independent review](UPDATER-FORMATION-REVIEW.md) govern the detailed recovery bounds, projection to the preceding selector process, backing-atom conservation and accepted verification status. Where updater identity stays fixed, the selector comparison uses combined renewal expense r+v; the extra paid updater-formation events cannot be discarded in that projection. Cases with shorter updater lifetime explicitly expose a newcomer receiving maintenance through an inherited selector before governing reconstruction. Such maintenance is not, by itself, evidence that the newcomer's update rule caused the useful response.
+
+The repertoire R/D, rule proposing those kinds, adapter, two module slots, upkeep coupling and starting stocks remain supplied. The concrete bridge established by the construction is paid preparation and within-compartment change of a mechanism that changes selectors. It does not derive the full formation chemistry, open-ended algorithms, evaluative representation, shared concern or favorable universal direction.
+
+**Reading scope:** the prior formation and selector studies, the primary modifier-theory abstracts and author paper links, the 1991 learning-rule paper's introduction and §§2–3, and the 1992 experimental paper's primary abstract; then the completed updater protocol, producer implementation, checker and results. The producer was inspected, not rerun for this comparator review. No molecular data were fitted and no systematic historical-priority determination was made. The mechanism/proof and independent-review companions determine which proposed tests have been independently checked; the broader counterfactual tests in §5 remain obligations except where those companions explicitly report execution.
