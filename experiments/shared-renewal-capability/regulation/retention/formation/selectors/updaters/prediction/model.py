@@ -160,7 +160,7 @@ def advance(law, state, arm, regime, after):
         assembled.append((s,p,m))
     out=[]
     for s,p,m in assembled:
-        if not s.gate_life or not s.life or s.stage!=2:
+        if not s.life or s.stage!=2:
             out.append((s,p,m));continue
         if s.fuel < law.rent:
             t=replace(s,stage=0,life=0,q=2,last=0,written=False,
@@ -168,7 +168,7 @@ def advance(law, state, arm, regime, after):
             out.append((t,p,m));continue
         s=replace(s,fuel=s.fuel-law.rent)
         m=plus(m,delta(rents=1,spent=law.rent))
-        if s.fuel < law.trial:
+        if not s.gate_life or s.fuel < law.trial:
             out.append((s,p,m));continue
         a=issued(arm,s.q,s.last)
         forecast_numerator=s.q if a else 4-s.q
@@ -247,7 +247,7 @@ def summaries(law,table,reserve):
         return sum((p*fn(s) for (_,s),(p,_) in table.items()),Q(0))
     d.update(reserve=mean(lambda s:s.fuel),p_correction=mean(lambda s:int(s.witness)),
              p_active_memory=mean(lambda s:int(s.stage==2 and s.life>0)),
-             p_acquired_active_memory=mean(lambda s:int(s.stage==2 and s.life>0 and s.written)),
+             p_written_active_memory=mean(lambda s:int(s.stage==2 and s.life>0 and s.written)),
              final_q=mean(lambda s:s.q))
     d['brier_loss']=d.pop('brier16')/16
     assert d['reserve']+d['spent']+d['waste']==reserve+law.horizon*law.packet

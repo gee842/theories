@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-05T20:00:26.878859+00:00",
+  "checked_at_utc": "2026-10-05T20:02:28.098110+00:00",
   "status": "passed",
   "toolchain": "leanprover/lean4:v4.29.1",
   "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
@@ -211,7 +211,7 @@
     {
       "module": "PredictionAction",
       "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean",
-      "source_sha256": "eab7e92780cb3c9ed916fbd77347de3b65bf8bf8fd2ead24464dbe96aeed33dc",
+      "source_sha256": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c",
       "role": "new formalization",
       "command": [
         "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
@@ -233,24 +233,40 @@
         "PredictionAction.reversal_retains_memory_and_resources",
         "PredictionAction.step_energy_ledger",
         "PredictionAction.trace_energy_ledger",
+        "PredictionAction.step_material_preserved",
+        "PredictionAction.trace_material_preserved",
         "PredictionAction.retrofit_preserves_actual_memory_reference",
         "PredictionAction.paid_retrofit_energy",
+        "PredictionAction.whole_history_energy_ledger",
         "PredictionAction.paid_cycle",
         "PredictionAction.cycle_then",
         "PredictionAction.three_evidence_then_action_affordable_iff",
         "PredictionAction.slow_needs_three_false_writes_from_four",
-        "PredictionAction.fast_one_false_write_from_four"
+        "PredictionAction.fast_one_false_write_from_four",
+        "PredictionAction.old_joined_trace_embeds",
+        "PredictionAction.prediction_trace_embeds",
+        "PredictionAction.join_actual_formed_machinery",
+        "PredictionAction.actual_old_preparation",
+        "PredictionAction.actual_bridge_enabled",
+        "PredictionAction.actual_paid_old_machinery",
+        "PredictionAction.actual_retrofit_enabled",
+        "PredictionAction.actual_retrofit_state",
+        "PredictionAction.acquired_corrected_prediction_action_witness",
+        "PredictionAction.actual_formed_prefix",
+        "PredictionAction.whole_formation_prediction_corrected_action_witness",
+        "PredictionAction.corrective_write_changes_command_with_action_held_fixed",
+        "PredictionAction.whole_witness_accounting"
       ],
-      "dependency_audits": 18,
+      "dependency_audits": 34,
       "axioms": [
         "Classical.choice",
         "Quot.sound",
         "propext"
       ],
       "output": "verification/PredictionAction.txt",
-      "output_sha256": "9311125521ce143562f8df2bea8a8bf711fdeac670e9a949c8a4cf2d47ed9bbf"
+      "output_sha256": "98b624c0824c4e621ee6fdebc17ed4d6fbd64b18d412ad347545e7bd140fe2d4"
     }
   ],
-  "new_audited_declarations": 18,
+  "new_audited_declarations": 34,
   "scope": "A paid predictive retrofit of actually formed updater/selector machinery; explicit rent, work/receipt, write and wear/renewal phases, finite score and causal memory use. Actual historical energy/material interface, complete acquisition/correction/action witness, no-reset reversal, noiseless receipt decoder and outage ambiguity, sequential affordability obstructions. This is the payable-write deterministic-capture subprocess, not a refinement of the full stochastic program, skipped-write or circuit-rebuild cases, empirical architecture or concern."
 }

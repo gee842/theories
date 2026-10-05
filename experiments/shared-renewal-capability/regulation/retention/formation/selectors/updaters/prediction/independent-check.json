@@ -1,0 +1,455 @@
+{
+  "status": "passed",
+  "method": "explicit-species preparation plus backward exact expectation recursion; no producer imports",
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/check.py": "fbec6d6cd2119e62e8081f290cd41e09683f1d0ca967aeabbd14d9aa324abf8d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/PROTOCOL.md": "ab8aad275955833ea958106362a48b8f1c5a85c6de6d758db491fda3b7276b8b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+    "experiments/shared-renewal-capability/regulation/retention/model.py": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/results.json": "052c5e2d175a9e2c52c169f2a44c6bae24e5e1313970ac69aef958cf69f0da5d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/independent_check.py": "2861e07ca2331cd2181dc7f5017618871e83e9ca2f38e39ec216b267f9f0ef4f"
+  },
+  "case_arms": 64,
+  "metric_comparisons": 1728,
+  "cases": {
+    "primary": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "terminal_classes": 5,
+      "arms": {
+        "variable": {
+          "metrics": 27,
+          "backward_states": 114,
+          "positive_edges": 112
+        },
+        "conventional": {
+          "metrics": 27,
+          "backward_states": 114,
+          "positive_edges": 112
+        },
+        "fixed_fast": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "fixed_slow": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "direct_record": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "frozen_register": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 108
+        },
+        "inverted_record": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 104
+        },
+        "inverted_action": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 104
+        }
+      }
+    },
+    "no_change": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "terminal_classes": 5,
+      "arms": {
+        "variable": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 96
+        },
+        "conventional": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 96
+        },
+        "fixed_fast": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "fixed_slow": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "direct_record": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "frozen_register": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 100
+        },
+        "inverted_record": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 104
+        },
+        "inverted_action": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 104
+        }
+      }
+    },
+    "two_changes": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "terminal_classes": 5,
+      "arms": {
+        "variable": {
+          "metrics": 27,
+          "backward_states": 126,
+          "positive_edges": 124
+        },
+        "conventional": {
+          "metrics": 27,
+          "backward_states": 126,
+          "positive_edges": 124
+        },
+        "fixed_fast": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "fixed_slow": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "direct_record": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "frozen_register": {
+          "metrics": 27,
+          "backward_states": 90,
+          "positive_edges": 104
+        },
+        "inverted_record": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 104
+        },
+        "inverted_action": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 104
+        }
+      }
+    },
+    "outages": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "terminal_classes": 5,
+      "arms": {
+        "variable": {
+          "metrics": 27,
+          "backward_states": 1086,
+          "positive_edges": 1364
+        },
+        "conventional": {
+          "metrics": 27,
+          "backward_states": 1086,
+          "positive_edges": 1364
+        },
+        "fixed_fast": {
+          "metrics": 27,
+          "backward_states": 454,
+          "positive_edges": 516
+        },
+        "fixed_slow": {
+          "metrics": 27,
+          "backward_states": 384,
+          "positive_edges": 456
+        },
+        "direct_record": {
+          "metrics": 27,
+          "backward_states": 482,
+          "positive_edges": 552
+        },
+        "frozen_register": {
+          "metrics": 27,
+          "backward_states": 474,
+          "positive_edges": 660
+        },
+        "inverted_record": {
+          "metrics": 27,
+          "backward_states": 236,
+          "positive_edges": 276
+        },
+        "inverted_action": {
+          "metrics": 27,
+          "backward_states": 126,
+          "positive_edges": 148
+        }
+      }
+    },
+    "low_reserve": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "terminal_classes": 5,
+      "arms": {
+        "variable": {
+          "metrics": 27,
+          "backward_states": 58,
+          "positive_edges": 60
+        },
+        "conventional": {
+          "metrics": 27,
+          "backward_states": 58,
+          "positive_edges": 60
+        },
+        "fixed_fast": {
+          "metrics": 27,
+          "backward_states": 30,
+          "positive_edges": 30
+        },
+        "fixed_slow": {
+          "metrics": 27,
+          "backward_states": 30,
+          "positive_edges": 30
+        },
+        "direct_record": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "frozen_register": {
+          "metrics": 27,
+          "backward_states": 58,
+          "positive_edges": 60
+        },
+        "inverted_record": {
+          "metrics": 27,
+          "backward_states": 58,
+          "positive_edges": 60
+        },
+        "inverted_action": {
+          "metrics": 27,
+          "backward_states": 58,
+          "positive_edges": 60
+        }
+      }
+    },
+    "high_write_cost": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "terminal_classes": 5,
+      "arms": {
+        "variable": {
+          "metrics": 27,
+          "backward_states": 114,
+          "positive_edges": 112
+        },
+        "conventional": {
+          "metrics": 27,
+          "backward_states": 114,
+          "positive_edges": 112
+        },
+        "fixed_fast": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "fixed_slow": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "direct_record": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "frozen_register": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 104
+        },
+        "inverted_record": {
+          "metrics": 27,
+          "backward_states": 70,
+          "positive_edges": 80
+        },
+        "inverted_action": {
+          "metrics": 27,
+          "backward_states": 70,
+          "positive_edges": 80
+        }
+      }
+    },
+    "short_circuit": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "terminal_classes": 5,
+      "arms": {
+        "variable": {
+          "metrics": 27,
+          "backward_states": 134,
+          "positive_edges": 136
+        },
+        "conventional": {
+          "metrics": 27,
+          "backward_states": 134,
+          "positive_edges": 136
+        },
+        "fixed_fast": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "fixed_slow": {
+          "metrics": 27,
+          "backward_states": 60,
+          "positive_edges": 60
+        },
+        "direct_record": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "frozen_register": {
+          "metrics": 27,
+          "backward_states": 154,
+          "positive_edges": 180
+        },
+        "inverted_record": {
+          "metrics": 27,
+          "backward_states": 142,
+          "positive_edges": 160
+        },
+        "inverted_action": {
+          "metrics": 27,
+          "backward_states": 142,
+          "positive_edges": 160
+        }
+      }
+    },
+    "low_yield": {
+      "preparation": {
+        "states": 20,
+        "positive_channels": 24
+      },
+      "terminal_classes": 5,
+      "arms": {
+        "variable": {
+          "metrics": 27,
+          "backward_states": 90,
+          "positive_edges": 92
+        },
+        "conventional": {
+          "metrics": 27,
+          "backward_states": 90,
+          "positive_edges": 92
+        },
+        "fixed_fast": {
+          "metrics": 27,
+          "backward_states": 46,
+          "positive_edges": 46
+        },
+        "fixed_slow": {
+          "metrics": 27,
+          "backward_states": 46,
+          "positive_edges": 46
+        },
+        "direct_record": {
+          "metrics": 27,
+          "backward_states": 50,
+          "positive_edges": 48
+        },
+        "frozen_register": {
+          "metrics": 27,
+          "backward_states": 98,
+          "positive_edges": 100
+        },
+        "inverted_record": {
+          "metrics": 27,
+          "backward_states": 62,
+          "positive_edges": 72
+        },
+        "inverted_action": {
+          "metrics": 27,
+          "backward_states": 62,
+          "positive_edges": 72
+        }
+      }
+    }
+  },
+  "diagnostics": {
+    "paid_history": {
+      "conditional_prefix_probability": "1/16",
+      "unconditional_prefix_probability": "1/72",
+      "remaining_fuel": 18,
+      "remaining_packets": 2,
+      "operational_spent_and_waste": 102
+    },
+    "same_state_memory_clamp": "passed",
+    "outage_record_alias": "passed",
+    "startup_boundaries": [
+      {
+        "commissioned_reserve": 9,
+        "trials": 0,
+        "writes": 0,
+        "remaining_reserve": 2
+      },
+      {
+        "commissioned_reserve": 10,
+        "trials": 1,
+        "writes": 0,
+        "remaining_reserve": 0
+      },
+      {
+        "commissioned_reserve": 11,
+        "trials": 1,
+        "writes": 1,
+        "remaining_reserve": 0
+      }
+    ],
+    "slow_corrective_action_boundaries": [
+      {
+        "commissioned_reserve": 20,
+        "captures": 0
+      },
+      {
+        "commissioned_reserve": 21,
+        "captures": 1
+      }
+    ],
+    "partial_assembly_no_refund_or_double_charge": "passed",
+    "updater_preserves_and_circuit_destruction_resets_memory": "passed",
+    "active_circuit_owes_rent_without_an_active_updater": "passed"
+  },
+  "scope": "independent finite exact implementation and resource accounting; not empirical or universal validation"
+}

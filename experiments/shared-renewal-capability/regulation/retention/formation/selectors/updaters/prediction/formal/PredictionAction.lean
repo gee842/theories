@@ -174,6 +174,17 @@ theorem trace_energy_ledger {p : Parameters} {s t : State} {as : List Event}
     simp only [spentAlong]
     omega
 
+theorem step_material_preserved {p : Parameters} {s t : State} {a : Event}
+    (h : Step p s a t) : t.physical.material = s.physical.material := by
+  rcases h with ⟨_,rfl⟩
+  cases a <;> rfl
+
+theorem trace_material_preserved {p : Parameters} {s t : State} {as : List Event}
+    (h : Trace p s as t) : t.physical.material = s.physical.material := by
+  induction h with
+  | nil => rfl
+  | cons hs _ ih => exact ih.trans (step_material_preserved hs)
+
 def RetrofitEnabled (p : Parameters) (s : UpdaterFormation.State) : Prop :=
   2 ≤ s.material ∧ 0 < s.moduleLease ∧ 0 < s.core.lease ∧ s.selectorSeen = true ∧ p.retrofit ≤ s.core.fuel
 
@@ -191,6 +202,23 @@ theorem paid_retrofit_energy {p : Parameters} {s : UpdaterFormation.State}
     (h : RetrofitEnabled p s) : energy p (retrofit p s)+p.retrofit = UpdaterFormation.energy p.base s := by
   have hf := h.2.2.2.2
   simp only [energy, retrofit, UpdaterFormation.energy, SelectorRevision.energy]
+  omega
+
+theorem whole_history_energy_ledger {p : Parameters} {M : Nat} {z : Bool}
+    {s e : FormedSelection.State} {u : UpdaterFormation.State} {t : State}
+    {xs : List FormedSelection.Event} {ys : List UpdaterFormation.Event} {zs : List Event}
+    (hp : UpdaterFormation.Admissible p.base)
+    (hOld : FormedSelection.Trace M s xs e)
+    (hBridge : UpdaterFormation.BridgeEnabled p.base M e)
+    (hMachinery : UpdaterFormation.Trace p.base (UpdaterFormation.entrance p.base M e z) ys u)
+    (hRetro : RetrofitEnabled p u) (hNew : Trace p (retrofit p u) zs t) :
+    energy p t + spentAlong p (retrofit p u) zs + p.retrofit +
+      UpdaterFormation.spentAlong p.base (UpdaterFormation.entrance p.base M e z) ys +
+      p.base.adapter + FormedSelection.tally FormedSelection.expenditure xs =
+      FormedSelection.energy s := by
+  have h1 := UpdaterFormation.joined_energy_ledger hp hOld hBridge hMachinery
+  have h2 := paid_retrofit_energy hRetro
+  have h3 := trace_energy_ledger hp hNew
   omega
 
 def cycleEvents : List Event := [.rent,.work,.write,.finish]
@@ -233,6 +261,154 @@ theorem slow_needs_three_false_writes_from_four :
 
 theorem fast_one_false_write_from_four : revisedScore true 4 false = 0 := by decide
 
+inductive FullState where
+  | before (s : UpdaterFormation.JointState)
+  | after (s : State)
+deriving DecidableEq, Repr
+
+inductive FullEvent where
+  | before (a : UpdaterFormation.JointEvent)
+  | retrofit
+  | after (a : Event)
+deriving DecidableEq, Repr
+
+def FullStep (p : Parameters) (M : Nat) (z : Bool) : FullState → FullEvent → FullState → Prop
+  | .before s, .before a, .before t => UpdaterFormation.JointStep p.base M z s a t
+  | .before (.organization s), .retrofit, .after t => RetrofitEnabled p s ∧ t = retrofit p s
+  | .after s, .after a, .after t => Step p s a t
+  | _,_,_ => False
+
+def fullProcess (p : Parameters) (M : Nat) (z : Bool) : Generative.Process FullState FullEvent :=
+  ⟨FullStep p M z⟩
+
+theorem old_joined_trace_embeds {p : Parameters} {M : Nat} {z : Bool}
+    {s t : UpdaterFormation.JointState} {as : List UpdaterFormation.JointEvent}
+    (h : Generative.Trace (UpdaterFormation.jointProcess p.base M z) s as t) :
+    Generative.Trace (fullProcess p M z) (.before s) (as.map FullEvent.before) (.before t) := by
+  induction h with
+  | nil => exact .nil _
+  | @cons s u t a as hs ht ih =>
+    apply Generative.Trace.cons (m := .before u)
+    · exact hs
+    · exact ih
+
+theorem prediction_trace_embeds {p : Parameters} {M : Nat} {z : Bool}
+    {s t : State} {as : List Event} (h : Trace p s as t) :
+    Generative.Trace (fullProcess p M z) (.after s) (as.map FullEvent.after) (.after t) := by
+  induction h with
+  | nil => exact .nil _
+  | @cons s u t a as hs ht ih =>
+    apply Generative.Trace.cons (m := .after u)
+    · exact hs
+    · exact ih
+
+theorem join_actual_formed_machinery {p : Parameters} {M : Nat} {z : Bool}
+    {s : UpdaterFormation.JointState} {u : UpdaterFormation.State} {t : State}
+    {as : List UpdaterFormation.JointEvent} {bs : List Event}
+    (hOld : Generative.Trace (UpdaterFormation.jointProcess p.base M z) s as (.organization u))
+    (hRetro : RetrofitEnabled p u) (hNew : Trace p (retrofit p u) bs t) :
+    Generative.Trace (fullProcess p M z) (.before s)
+      (as.map FullEvent.before ++ .retrofit :: bs.map FullEvent.after) (.after t) := by
+  apply Generative.trace_append_iff.mpr
+  refine ⟨.before (.organization u), old_joined_trace_embeds hOld, ?_⟩
+  apply Generative.Trace.cons (m := .after (retrofit p u))
+  · exact ⟨hRetro,rfl⟩
+  · exact prediction_trace_embeds hNew
+
+def primary : Parameters := ⟨⟨⟨1,3,1,10,6⟩,2,1,2,1⟩,3,1,1⟩
+def oldInitial : FormedSelection.State := ⟨0,0,.empty,false,false,24,121⟩
+def oldEntrance : FormedSelection.State := ⟨0,1,.active,true,true,20,120⟩
+def oldPreparation : List FormedSelection.Event := [.formH,.formA,.associateA,.repair,.capture]
+
+def physical (F H : Nat) (last : Bool) (ell : Nat) (z fast : Bool) (J : Nat) : UpdaterFormation.State :=
+  ⟨⟨F,H,last,ell,z⟩,fast,J,true,0,2⟩
+
+def exampleState (F H q : Nat) (last : Bool) (ell : Nat) (z fast : Bool) (J : Nat) : State :=
+  ⟨physical F H last ell z fast J,q,false,.ready⟩
+
+def formed : UpdaterFormation.State := physical 17 12 true 6 true false 2
+def beginning : State := exampleState 14 12 2 true 6 true false 2
+def finalState : State := exampleState 18 2 0 false 6 false true 2
+def formationOps : List UpdaterFormation.Event := [.formModule false,.formSelector true]
+
+theorem actual_old_preparation : FormedSelection.Trace 2 oldInitial oldPreparation oldEntrance := by
+  apply FormedSelection.Trace.cons (u := ⟨0,1,.empty,false,false,23,121⟩) (by decide)
+  apply FormedSelection.Trace.cons (u := ⟨1,1,.empty,false,false,22,121⟩) (by decide)
+  apply FormedSelection.Trace.cons (u := ⟨0,1,.active,false,false,21,121⟩) (by decide)
+  apply FormedSelection.Trace.cons (u := ⟨0,1,.active,true,false,20,121⟩) (by decide)
+  apply FormedSelection.Trace.cons (u := oldEntrance) (by decide)
+  exact .nil _
+
+theorem actual_bridge_enabled : UpdaterFormation.BridgeEnabled primary.base 2 oldEntrance := by
+  unfold UpdaterFormation.BridgeEnabled; decide
+
+theorem actual_paid_old_machinery : UpdaterFormation.Trace primary.base
+    (UpdaterFormation.entrance primary.base 2 oldEntrance true) formationOps formed := by
+  apply Generative.Trace.cons (m := ⟨⟨18,12,false,0,true⟩,false,2,false,0,2⟩) (by change UpdaterFormation.Step _ _ _ _; decide)
+  apply Generative.Trace.cons (m := formed) (by change UpdaterFormation.Step _ _ _ _; decide)
+  exact .nil _
+
+theorem actual_retrofit_enabled : RetrofitEnabled primary formed := by
+  unfold RetrofitEnabled; decide
+
+theorem actual_retrofit_state : retrofit primary formed = beginning := by decide
+
+def cycles : Nat → List Event
+  | 0 => []
+  | n+1 => cycleEvents ++ cycles n
+
+def witnessEvents : List Event := cycles 6 ++ [.reverse] ++ cycles 2 ++ [.formUpdater true] ++ cycles 2
+
+theorem acquired_corrected_prediction_action_witness : Trace primary beginning witnessEvents finalState := by
+  apply cycle_then (u := exampleState 17 11 3 true 6 true false 2) (by decide) (by decide)
+  apply cycle_then (u := exampleState 20 10 4 true 6 true false 2) (by decide) (by decide)
+  apply cycle_then (u := exampleState 23 9 4 true 6 true false 2) (by decide) (by decide)
+  apply cycle_then (u := exampleState 26 8 4 true 6 true false 2) (by decide) (by decide)
+  apply cycle_then (u := exampleState 29 7 4 true 6 true false 2) (by decide) (by decide)
+  apply cycle_then (u := exampleState 32 6 4 true 6 true false 2) (by decide) (by decide)
+  apply Generative.Trace.cons (m := exampleState 32 6 4 true 6 false false 2) (by change Step _ _ _ _; decide)
+  apply cycle_then (u := exampleState 27 5 3 true 5 false false 1) (by decide) (by decide)
+  apply cycle_then (u := exampleState 22 4 2 true 4 false false 0) (by decide) (by decide)
+  apply Generative.Trace.cons (m := exampleState 20 4 2 true 4 false true 2) (by change Step _ _ _ _; decide)
+  apply cycle_then (u := exampleState 15 3 0 true 3 false true 1) (by decide) (by decide)
+  apply cycle_then (u := finalState) (by decide) (by decide)
+  exact .nil _
+
+def preEvents : List UpdaterFormation.JointEvent :=
+  oldPreparation.map UpdaterFormation.JointEvent.old ++
+    .connect :: formationOps.map UpdaterFormation.JointEvent.run
+
+theorem actual_formed_prefix : Generative.Trace
+    (UpdaterFormation.jointProcess primary.base 2 true) (.formation oldInitial)
+    preEvents (.organization formed) :=
+  UpdaterFormation.actual_formation_bridge_continuation actual_old_preparation actual_bridge_enabled actual_paid_old_machinery
+
+theorem whole_formation_prediction_corrected_action_witness :
+    Generative.Trace (fullProcess primary 2 true) (.before (.formation oldInitial))
+      (preEvents.map FullEvent.before ++ .retrofit :: witnessEvents.map FullEvent.after)
+      (.after finalState) := by
+  apply join_actual_formed_machinery actual_formed_prefix actual_retrofit_enabled
+  rw [actual_retrofit_state]
+  exact acquired_corrected_prediction_action_witness
+
+def correctiveObservation : State :=
+  advance primary (advance primary (exampleState 20 4 2 true 4 false true 2) .rent) .work
+
+theorem corrective_write_changes_command_with_action_held_fixed :
+    command correctiveObservation = true ∧
+    command (advance primary correctiveObservation .write) = false ∧
+    (advance primary correctiveObservation .write).physical.core.selector =
+      correctiveObservation.physical.core.selector := by decide
+
+theorem whole_witness_accounting :
+    FormedSelection.energy oldInitial = 145 ∧
+    FormedSelection.tally FormedSelection.expenditure oldPreparation = 4 ∧
+    primary.base.adapter = 1 ∧
+    UpdaterFormation.spentAlong primary.base
+      (UpdaterFormation.entrance primary.base 2 oldEntrance true) formationOps = 3 ∧
+    primary.retrofit = 3 ∧ spentAlong primary beginning witnessEvents = 96 ∧
+    energy primary finalState = 38 ∧ finalState.physical.material = 2 := by decide
+
 end PredictionAction
 
 #print axioms PredictionAction.noiseless_receipt_decodes_target
@@ -246,10 +422,26 @@ end PredictionAction
 #print axioms PredictionAction.reversal_retains_memory_and_resources
 #print axioms PredictionAction.step_energy_ledger
 #print axioms PredictionAction.trace_energy_ledger
+#print axioms PredictionAction.step_material_preserved
+#print axioms PredictionAction.trace_material_preserved
 #print axioms PredictionAction.retrofit_preserves_actual_memory_reference
 #print axioms PredictionAction.paid_retrofit_energy
+#print axioms PredictionAction.whole_history_energy_ledger
 #print axioms PredictionAction.paid_cycle
 #print axioms PredictionAction.cycle_then
 #print axioms PredictionAction.three_evidence_then_action_affordable_iff
 #print axioms PredictionAction.slow_needs_three_false_writes_from_four
 #print axioms PredictionAction.fast_one_false_write_from_four
+#print axioms PredictionAction.old_joined_trace_embeds
+#print axioms PredictionAction.prediction_trace_embeds
+#print axioms PredictionAction.join_actual_formed_machinery
+#print axioms PredictionAction.actual_old_preparation
+#print axioms PredictionAction.actual_bridge_enabled
+#print axioms PredictionAction.actual_paid_old_machinery
+#print axioms PredictionAction.actual_retrofit_enabled
+#print axioms PredictionAction.actual_retrofit_state
+#print axioms PredictionAction.acquired_corrected_prediction_action_witness
+#print axioms PredictionAction.actual_formed_prefix
+#print axioms PredictionAction.whole_formation_prediction_corrected_action_witness
+#print axioms PredictionAction.corrective_write_changes_command_with_action_held_fixed
+#print axioms PredictionAction.whole_witness_accounting

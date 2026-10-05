@@ -77,6 +77,14 @@ def checks():
     ia=m.MOMENTS.index('decoder_errors')
     assert [d[:ia]+d[ia+1:] for _,_,d in a]==[d[:ia]+d[ia+1:] for _,_,d in b]
     assert a[0][2][ia]==0 and b[0][2][ia]==1
+    # An unavailable updater does not grant an active circuit free memory retention.
+    blocked=replace(s,fuel=1,gate_life=0)
+    first=m.advance(m.Law(),blocked,'fixed_slow',0,True)
+    assert len(first)==1 and first[0][0].fuel==0
+    assert first[0][2][m.MOMENTS.index('rents')]==1
+    second=m.advance(m.Law(),first[0][0],'fixed_slow',0,True)
+    assert len(second)==1 and second[0][0].life==0 and second[0][0].q==2
+    assert not second[0][0].written
     # Same-last comparison prevents attributing hysteresis-only change to a write.
     assert m.issued('inverted_action',2,0)!=m.issued('inverted_action',2,1)
     # Corrective route funding: three failed paid Slow writes, one gate replacement,
@@ -94,7 +102,8 @@ def checks():
         boundary.append({'fuel':fuel,'captures':capture,'final_fuel':st.fuel,
                          'final_q':st.q,'correction':st.witness})
     return {'finite_controller_tables':'passed','same_state_register_clamp':'passed',
-            'outage_record_ambiguity':'passed','specified_slow_route_boundary':boundary,
+            'outage_record_ambiguity':'passed','inactive_updater_still_owes_circuit_rent':'passed',
+            'specified_slow_route_boundary':boundary,
             'complete_paid_witness':witness()}
 
 

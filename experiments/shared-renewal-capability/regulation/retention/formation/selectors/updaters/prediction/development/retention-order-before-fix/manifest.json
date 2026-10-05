@@ -1,0 +1,14 @@
+{
+  "status": "superseded implementation; both producer and audit skipped active circuit rent when updater unavailable",
+  "source_sha256": {
+    "model.py": "cba705fa8abe17577739c31a4be7312c76956ee6e430bf004e73f8a08c38952f",
+    "check.py": "9b9507732c218b3b2a70ebd3f245bfabc0a21b7fa4b26b27943e89cc43fb87af",
+    "results.json": "1af0bdb80d52941b6fd31626958485bb64f26365e951121db52fa2588b0c1065",
+    "independent-check.json": "8e54eb65420e956b2d094af587056f23ce941f5160cd11c14b99c4420a89cdd8",
+    "independent_check.py": "9aff52cc7332a68074531221e7d54ff750de481dc59c2bfb08288b514dd9c4c8",
+    "independent_check.during-revision.py": "2861e07ca2331cd2181dc7f5017618871e83e9ca2f38e39ec216b267f9f0ef4f"
+  },
+  "independent_audit_source_recovered_from_commit": null,
+  "captured_independent_source_matches_archived_audit": true,
+  "independent_checker_recovery": "Reviewer reconstructed original bytes from narrow edit; exact SHA256 matches archived audit. Concurrent-copy version separately preserved."
+}

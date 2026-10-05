@@ -9,10 +9,26 @@
 'PredictionAction.reversal_retains_memory_and_resources' does not depend on any axioms
 'PredictionAction.step_energy_ledger' depends on axioms: [propext, Quot.sound]
 'PredictionAction.trace_energy_ledger' depends on axioms: [propext, Quot.sound]
+'PredictionAction.step_material_preserved' does not depend on any axioms
+'PredictionAction.trace_material_preserved' does not depend on any axioms
 'PredictionAction.retrofit_preserves_actual_memory_reference' does not depend on any axioms
 'PredictionAction.paid_retrofit_energy' depends on axioms: [propext, Quot.sound]
+'PredictionAction.whole_history_energy_ledger' depends on axioms: [propext, Quot.sound]
 'PredictionAction.paid_cycle' does not depend on any axioms
 'PredictionAction.cycle_then' does not depend on any axioms
 'PredictionAction.three_evidence_then_action_affordable_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 'PredictionAction.slow_needs_three_false_writes_from_four' does not depend on any axioms
 'PredictionAction.fast_one_false_write_from_four' does not depend on any axioms
+'PredictionAction.old_joined_trace_embeds' depends on axioms: [propext]
+'PredictionAction.prediction_trace_embeds' depends on axioms: [propext]
+'PredictionAction.join_actual_formed_machinery' depends on axioms: [propext]
+'PredictionAction.actual_old_preparation' depends on axioms: [propext]
+'PredictionAction.actual_bridge_enabled' depends on axioms: [propext]
+'PredictionAction.actual_paid_old_machinery' does not depend on any axioms
+'PredictionAction.actual_retrofit_enabled' does not depend on any axioms
+'PredictionAction.actual_retrofit_state' does not depend on any axioms
+'PredictionAction.acquired_corrected_prediction_action_witness' does not depend on any axioms
+'PredictionAction.actual_formed_prefix' depends on axioms: [propext]
+'PredictionAction.whole_formation_prediction_corrected_action_witness' depends on axioms: [propext]
+'PredictionAction.corrective_write_changes_command_with_action_held_fixed' does not depend on any axioms
+'PredictionAction.whole_witness_accounting' depends on axioms: [propext]
