@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-05",
+  "status": "synthetic illustrations, not empirical evidence",
+  "arithmetic": "Fractions for algebra/trajectories; floating-point logarithms only for mutual information",
+  "checks": [
+    {
+      "name": "equilibria",
+      "passed": true,
+      "detail": {
+        "naive": "-5/7",
+        "wrong_meta_model": "-10/7",
+        "calibrated": "0"
+      }
+    },
+    {
+      "name": "trajectory_limit_naive",
+      "passed": true,
+      "detail": {
+        "at_step_200": -0.7142857142857143,
+        "target": -0.7142857142857143
+      }
+    },
+    {
+      "name": "trajectory_limit_wrong",
+      "passed": true,
+      "detail": {
+        "at_step_200": -1.4285714285714286,
+        "target": -1.4285714285714286
+      }
+    },
+    {
+      "name": "trajectory_limit_learn",
+      "passed": true,
+      "detail": {
+        "at_step_200": -1.5557538194652854e-60,
+        "target": 0.0
+      }
+    },
+    {
+      "name": "joint_linear_recurrence",
+      "passed": true,
+      "detail": "All 200 calibration steps match the derived matrix exactly."
+    },
+    {
+      "name": "biased_reference",
+      "passed": true,
+      "detail": {
+        "reference_offset": "1/4",
+        "residual_equilibrium": "-5/28"
+      }
+    },
+    {
+      "name": "gain_stability",
+      "passed": true,
+      "detail": {
+        "base_multiplier": "3/10",
+        "overcorrection_multiplier": "-6/5"
+      }
+    },
+    {
+      "name": "side_information",
+      "passed": true,
+      "detail": {
+        "I_F_M1_bits": 0.0,
+        "I_F_M2_bits": 1.0,
+        "I_F_pair_bits": 1.0
+      }
+    },
+    {
+      "name": "intervention_agreement",
+      "passed": true,
+      "detail": "Independent M sets future F1=M. I(F0;M)=0; I(F1;M)=1 bit."
+    },
+    {
+      "name": "confidence_without_evidence",
+      "passed": true,
+      "detail": {
+        "baseline_brier": 0.24,
+        "depth_4": {
+          "depth": 4,
+          "q": 0.9984798754563,
+          "brier": 0.3987862111436684,
+          "accuracy_of_same_binary_answer": 0.6
+        }
+      }
+    },
+    {
+      "name": "abstraction_counterexample",
+      "passed": true,
+      "detail": {
+        "F": {
+          "0": 0,
+          "1": 2,
+          "2": 2
+        },
+        "r": {
+          "0": 0,
+          "1": 0,
+          "2": 1
+        },
+        "merged_states": [
+          0,
+          1
+        ],
+        "coarse_successors": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "summable_costs",
+      "passed": true,
+      "detail": "First 100 positive costs 2^-k sum to 1-2^-100. Every finite prefix is below 1."
+    },
+    {
+      "name": "positive_cost_floor",
+      "passed": true,
+      "detail": "For additive simultaneous costs >=1/5 under budget 7/5, depth <=7."
+    },
+    {
+      "name": "fixed_point_not_convergence",
+      "passed": true,
+      "detail": "R(m)=1-m has fixed point 1/2 but orbit 0,1,0,1 does not converge."
+    },
+    {
+      "name": "complementary_computations",
+      "passed": true,
+      "detail": "Two complementary fair-bit observations each have zero standalone value; together remove .5 error at .2 total cost."
+    }
+  ],
+  "check_count": 15,
+  "confidence": [
+    {
+      "depth": 0,
+      "q": 0.6,
+      "brier": 0.24,
+      "accuracy_of_same_binary_answer": 0.6
+    },
+    {
+      "depth": 1,
+      "q": 0.6923076923076923,
+      "brier": 0.2485207100591716,
+      "accuracy_of_same_binary_answer": 0.6
+    },
+    {
+      "depth": 2,
+      "q": 0.8350515463917526,
+      "brier": 0.29524922946115423,
+      "accuracy_of_same_binary_answer": 0.6
+    },
+    {
+      "depth": 3,
+      "q": 0.9624468241161801,
+      "brier": 0.37136770031190525,
+      "accuracy_of_same_binary_answer": 0.6
+    },
+    {
+      "depth": 4,
+      "q": 0.9984798754563,
+      "brier": 0.3987862111436684,
+      "accuracy_of_same_binary_answer": 0.6
+    },
+    {
+      "depth": 5,
+      "q": 0.9999976821853497,
+      "brier": 0.399998145753652,
+      "accuracy_of_same_binary_answer": 0.6
+    },
+    {
+      "depth": 6,
+      "q": 0.9999999999946277,
+      "brier": 0.3999999999957022,
+      "accuracy_of_same_binary_answer": 0.6
+    }
+  ],
+  "script_sha256": "6f87f4eff73483b1b617b3cb8479425bb62f26b8c51700b8f84288f6df834007"
+}

@@ -1,0 +1,2442 @@
+{
+  "title": "How shared dynamics produce individuals and viewpoints: evidence record",
+  "date": "2026-10-05",
+  "report": {
+    "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/differentiation-and-viewpoints.md",
+    "sha256": "df792431185cc236e90475f7ad9f916d1fec70b2cd0a3188e15e1057d68ae992"
+  },
+  "status": "Conditional mechanisms established in separate constructed models. Complete physical integration, mechanism genesis, phenomenal experience, and metaphysical monism are not established.",
+  "proofs_and_checks": [
+    {
+      "subject": "Phase domains and symmetry",
+      "proof_note": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/boundary-audit.md",
+        "sha256": "e126ec63a964da31be1524dda657378e49e44c2744edcfcf5cbf897185f86f04",
+        "text": "# An exact example of endogenous differentiation\n\nPrepared 5 October 2026. This is an additive audit for the current inquiry, not an edit to either retained theory. It establishes formation and stability of phase domains under supplied dynamics. It does not establish the origin of organisms, experience, the substrate, or cosmological monism.\n\n## Main result\n\nThe same deterministic law at every location can support several stable, spatially differentiated states. A partition need not be supplied as a label in the law: interactions and the realized state can determine it. Which symmetry-related state occurs still depends on a supplied perturbation/history. Perfect symmetry remains perfect under a unique symmetric deterministic evolution.\n\nThe smallest useful spatial construction here uses four identical sites on a ring. Unlike the previous four-site exchange example, it has no privileged pair partition or different within-pair and between-pair rates. It contains only four equivalent nearest-neighbor edges. Its stable low-energy phase domains emerge from nonlinear dynamics.\n\n## Definitions and assumptions\n\nLet the ring edges be (1,2), (2,3), (3,4), (4,1), and let L be its positive graph Laplacian:\n\n\\[\nL=\\begin{pmatrix}2&-1&0&-1\\\\-1&2&-1&0\\\\0&-1&2&-1\\\\-1&0&-1&2\\end{pmatrix}.\n\\]\n\nThe dimensionless order parameter x_i may be positive or negative. It is not asserted to be a nonnegative abundance or a globally bounded concentration. Restrict preparations to \\(\\sum_i x_i=0\\). For a supplied parameter \\(\\kappa>0\\), define\n\n\\[\nF(x)=\\frac14\\sum_{i=1}^4(x_i^2-1)^2+\\frac\\kappa2 x^TLx,\n\\qquad\n\\mu_i=\\frac{\\partial F}{\\partial x_i}=x_i^3-x_i+\\kappa(Lx)_i,\n\\qquad\n\\boxed{\\dot x=-L\\mu.}\n\\tag{1}\n\\]\n\nThe local term favors two states. The edge term penalizes unlike neighbors. Conservative movement follows chemical-potential differences. These are substantive supplied mechanisms. The model presupposes spatial sites, adjacency, a scalar order parameter, a constitutive potential, mobility, and initial data. It explains a domain partition within that substrate; it does not derive the substrate from an undifferentiated absolute.\n\nThis is a finite graph construction in the phase-field/phase-separation tradition. Cahn and Hilliard's 1958 primary abstract describes a free-energy functional combining a homogeneous-composition term with a gradient term and its use in studying interfaces. Only that abstract was verified for this historical attribution, not the whole paper: [Cahn and Hilliard, 1958](https://doi.org/10.1063/1.1744102). The particular four-site proof below is derived directly here; no historical novelty is claimed.\n\n## Conservation, dissipation, and existence\n\nSince \\({\\bf1}^TL=0\\), the total order parameter is conserved. Further,\n\n\\[\n\\boxed{\\dot F=-\\mu^TL\\mu=-\\sum_{\\{i,j\\}\\in E}(\\mu_i-\\mu_j)^2\\le0.}\n\\tag{2}\n\\]\n\nThe quartic potential makes F coercive. Therefore solutions remain in compact sublevel sets. The polynomial vector field is locally Lipschitz, so each initial state has a unique solution, extending for all forward time. Stationarity requires all chemical potentials equal; it does not require all x_i equal.\n\n## Exact global-minimum theorem\n\nOn the zero-mean subspace, the Laplacian eigenvalues are 2, 2, and 4. Put \\(r^2=\\sum_i x_i^2\\). The spectral inequality and Cauchy–Schwarz give\n\n\\[\nx^TLx\\ge2r^2,\n\\qquad\n\\sum_i x_i^4\\ge\\frac{r^4}{4}.\n\\]\n\nConsequently,\n\n\\[\nF(x)\\ge 1+(\\kappa-\\tfrac12)r^2+\\frac{r^4}{16}.\n\\tag{3}\n\\]\n\nIf \\(\\kappa\\ge1/2\\), the unique minimizer is \\(x=0\\). If \\(0<\\kappa<1/2\\), the lower bound is minimized at\n\n\\[\nr^2=4(1-2\\kappa),\\qquad F_{\\min}=1-(1-2\\kappa)^2.\n\\]\n\nEquality in the fourth-power inequality requires every \\(|x_i|\\) equal. Equality in the spectral inequality requires membership in the eigenvalue-2 eigenspace, whose vectors are \\((p,q,-p,-q)\\). Joint equality therefore leaves exactly four states:\n\n\\[\n\\boxed{x^*=\\sqrt{1-2\\kappa}\\;\\sigma,\n\\quad \\sigma\\in\\{(+,+,-,-),(-,+,+,-),(-,-,+,+),(+,-,-,+)\\}.}\n\\tag{4}\n\\]\n\nThese are four phase-labeled states and two partitions when the phase labels are ignored. Each state has two connected phase domains and two interface edges. The laws contain no preferred one of these cuts. At \\(\\kappa=0\\), excluded from this theorem's strict low-parameter case, the spectral constraint disappears and all six balanced sign patterns minimize F, including checkerboards. This endpoint matters.\n\nAn exact nonnegative remainder helps audit the proof. For \\(q=1-2\\kappa>0\\),\n\n\\[\nF-(1-q^2)=\\frac{(r^2-4q)^2}{16}\n+\\frac14\\left(\\sum_i x_i^4-\\frac{r^4}{4}\\right)\n+\\frac\\kappa2\\left(x^TLx-2r^2\\right).\n\\tag{5}\n\\]\n\nEvery term is nonnegative on the zero-mean subspace. The result is a full global-minimum classification, not just a linear instability calculation.\n\nThe threshold extends beyond this four-site example. For any finite connected undirected weighted graph with n sites and positive second Laplacian eigenvalue \\(\\lambda_2\\), use the same energy and conservative dynamics on the zero-mean subspace. Then\n\n\\[\nF\\ge\\frac n4+\\frac{\\kappa\\lambda_2-1}{2}r^2+\\frac{r^4}{4n}.\n\\]\n\nIf \\(\\kappa\\lambda_2\\ge1\\), the homogeneous state is the unique global minimum. If \\(\\kappa\\lambda_2<1\\), a sufficiently small multiple of a \\(\\lambda_2\\)-eigenvector has energy below the homogeneous state's energy. Coercivity ensures a global minimizer exists, so every global minimizer in this regime is nonconstant. The homogeneous state is also linearly unstable. These conclusions do not require a flat sign-valued eigenvector. If the graph does have a balanced vector \\(\\sigma\\in\\{-1,+1\\}^n\\) with \\(L\\sigma=\\lambda_2\\sigma\\), then simultaneous equality yields the explicit global minimizers \\(\\sqrt{1-\\kappa\\lambda_2}\\,\\sigma\\), with all admissible such sign vectors included. The ring supplies a case where that complete classification is elementary. A general nonconstant minimizer is a differentiated pattern; the theorem alone need not give an organism-like boundary or a preferred number of domains.\n\n## Formation and nonlinear saturation\n\nAt x=0, the linearized growth rate for a Laplacian eigenmode with eigenvalue \\(\\lambda\\) is\n\n\\[\n\\boxed{g(\\lambda)=\\lambda(1-\\kappa\\lambda).}\n\\tag{6}\n\\]\n\nThe two eigenvalue-2 modes become unstable below \\(\\kappa=1/2\\). In \\(1/4<\\kappa<1/2\\), the alternating eigenvalue-4 mode is linearly damped while those two longer modes grow. No particular orientation is selected by the law.\n\nFor any of the four sign patterns \\(\\sigma\\) in (4), the line \\(x(t)=a(t)\\sigma\\) is exactly invariant. Substitution gives\n\n\\[\n\\boxed{\\dot a=2a(q-a^2),\\qquad q=1-2\\kappa.}\n\\tag{7}\n\\]\n\nFor \\(q>0\\), \\(a(0)\\ne0\\), and \\(s_0=a(0)^2\\),\n\n\\[\na(t)^2=\\frac{q}{1+(q/s_0-1)e^{-4qt}},\n\\qquad \\operatorname{sgn}a(t)=\\operatorname{sgn}a(0).\n\\tag{8}\n\\]\n\nThus an arbitrarily small nonzero seed along such a mode grows and saturates at a nonzero differentiated state. For a concrete dimensionless choice, \\(\\kappa=1/4\\) gives \\(q=1/2\\); taking \\(a(0)=1/100\\) yields\n\n\\[\na(t)=\\sqrt{\\frac{1/2}{1+4999e^{-2t}}}.\n\\]\n\nThe seed specifies the initial bias; it is not generated from a featureless state by assertion. The exact trajectory demonstrates a possible formation process. It does not establish convergence to a global minimum from every nonzero initial state.\n\n## Stability, persistence, and dissolution\n\nAt each state in (4),\n\n\\[\n\\nabla^2F=(2-6\\kappa)I+\\kappa L.\n\\]\n\nRestricted to conserved zero-mean perturbations, its eigenvalues are \\(2-4\\kappa\\) twice and \\(2-2\\kappa\\). All are positive for \\(0<\\kappa<1/2\\). The dynamical eigenvalues are \\(-4+8\\kappa\\) twice and \\(-8+8\\kappa\\). These minima are therefore locally asymptotically stable, with open basins within the conserved subspace. Small allowed disturbances relax back: stable persistence is established, although active repair, reproduction, and metabolic self-maintenance are not.\n\nThe distinction between global and local minima is material. When \\(0<\\kappa<1/4\\), a checkerboard equilibrium \\(\\sqrt{1-4\\kappa}(+,-,+,-)\\) also exists. It is locally asymptotically stable for \\(\\kappa<1/5\\), although not globally minimal. No generic-global-convergence claim is made, and a lower-energy state need not be reached from every preparation.\n\nIf the parameter is set to \\(\\kappa>1/2\\), every zero-mean state converges to the homogeneous state. Indeed, with \\(r^2=\\|x\\|^2\\),\n\n\\[\n\\tfrac12\\frac{d}{dt}r^2\n=-x^TLx^{\\circ3}+x^TLx-\\kappa x^TL^2x\n\\le -2(2\\kappa-1)r^2,\n\\]\n\nwhere \\(x^TLx^{\\circ3}=\\sum_E(x_i-x_j)(x_i^3-x_j^3)\\ge0\\) and \\(x^TL^2x\\ge2x^TLx\\ge4r^2\\). Hence\n\n\\[\n\\|x(t)\\|\\le e^{-2(2\\kappa-1)t}\\|x(0)\\|.\n\\tag{9}\n\\]\n\nAt the critical value \\(\\kappa=1/2\\), convergence to zero still follows from compactness and the fact that this norm decrease can vanish only when all x_i agree, hence when x=0 on the conserved subspace. The parameter change supplies a specific condition under which a previously stable boundary dissolves; the model does not explain what physically changes that parameter.\n\n## Symmetry lemma: what unity does and does not imply\n\nLet a group act linearly on a state space and let a locally Lipschitz vector field obey \\(f(gx)=gf(x)\\). If \\(gx_0=x_0\\), then g applied to the solution is a solution with the same initial state. Uniqueness implies \\(gx(t)=x(t)\\) for all times of existence. Thus a deterministic symmetric law cannot move an exactly symmetric initial state out of its symmetry class.\n\nThe ring equations are equivariant under all ring rotations and reflections, and under \\(x\\mapsto-x\\). The perfectly homogeneous zero-mean preparation x=0 remains there forever even in the unstable regime. In an ensemble with symmetry-invariant noise and initial distribution, the distribution can retain symmetry while individual realizations have differentiated patterns. Noise must itself be specified; it is not part of equation (1).\n\nThis distinction is historically explicit in [Turing, 1952, section 4](https://dosequis.colorado.edu/Courses/MethodsLogic/papers/Turing1952.pdf): initially small irregularities matter when a homogeneous state becomes unstable. The primary abstract and section 4 were read for this attribution. Our phase-separation model is not Turing's two-species reaction–diffusion mechanism.\n\n## What counts as the endogenous boundary\n\nFor a settled nonzero state in (4), infer phases from the sign of x_i. Connected regions of the same sign are the phase domains; edges across opposite signs are their interfaces. Those relations are read from the evolved state. No pair labels, permanent walls, or different coupling rates are inserted for the two resulting domains.\n\nTheir interface is a physical difference in the modeled state, not merely a verbal partition. But mobility across every ring edge remains fixed and positive. A phase interface here is not an impermeable membrane or a proof of subsystem autonomy. At equilibrium the chemical potentials agree and net currents vanish; perturbing one region still changes the larger coupled dynamics. Distinguishing a persistent pattern from a dynamically independent unit is essential.\n\nThe explanation supplies a particular chain: local alternatives plus common constraints and interactions make some differences grow; nonlinear saturation stabilizes some of them; the realized stable differences define domains and interfaces. “One common law” does not entail “one uniform state.” “A common process” does not entail “a featureless initial state.”\n\n## Relation to the prior work and next burden\n\nThe prior exchange construction justified a pair partition by a supplied separation of coupling rates. This construction derives a phase partition without prespecifying that pair structure. The prior mutually supporting-component model established maintenance through material turnover; that work remains separate. Combining a domain-formation mechanism, a maintained boundary, resource use, locally available information, and action in one model would be further work. No claim is made that placing two separate models side by side already derives an organism or viewpoint.\n\nA useful candidate synthesis is: **differentiated units are stabilized histories of a shared process under actual constraints; their boundaries are outcomes with conditions, rather than exemptions from those conditions.** This is a philosophical interpretation motivated by the conditional constructions. Its application beyond this model needs substantive mechanisms and evidence.\n\nThe accompanying exact rational checks target algebra, the global energy remainder, invariant-mode dynamics, symmetry, and endpoints. Their finite coverage supports error detection; the displayed proofs establish the general claims.\n"
+      },
+      "check_program": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/check_boundary.py",
+        "sha256": "47c4857bfe0eccf02815636e6fe3b20ffa4e048ddb40b74b0d0b334af60ee4f6",
+        "text": "\"\"\"Exact finite audits of the four-site phase-domain construction.\n\nThese checks are not a proof of unrestricted dynamics; the accompanying audit\ncontains the analytic proofs. No external dependencies or empirical data.\n\"\"\"\nfrom fractions import Fraction as Q\nfrom itertools import product\nfrom pathlib import Path\nimport json\nimport math\n\nHERE = Path(__file__).resolve().parent\nEDGES = ((0, 1), (1, 2), (2, 3), (3, 0))\n\n\ndef lap(x):\n    return tuple(2*x[i] - x[(i-1) % 4] - x[(i+1) % 4] for i in range(4))\n\n\ndef dot(x, y):\n    return sum(a*b for a, b in zip(x, y))\n\n\ndef energy(x, k):\n    return sum((z*z-1)**2 for z in x)/4 + k*dot(x, lap(x))/2\n\n\ndef potential(x, k):\n    lx = lap(x)\n    return tuple(z**3-z+k*v for z, v in zip(x, lx))\n\n\ndef rhs(x, k):\n    return tuple(-v for v in lap(potential(x, k)))\n\n\ndef transform(x, offset, reverse=False):\n    step = -1 if reverse else 1\n    return tuple(x[(offset+step*i) % 4] for i in range(4))\n\n\nvalues = tuple(map(Q, (-2, -1, 0, 1, 2))) + (Q(-1, 2), Q(1, 2))\nstates = [(*u, -sum(u)) for u in product(values, repeat=3)]\nks = (Q(0), Q(1, 10), Q(1, 5), Q(1, 4), Q(1, 3), Q(1, 2), Q(3, 4), Q(1))\ncounts = dict(states=len(states), parameters=len(ks), conservation_dissipation=0,\n              energy_remainders=0, high_parameter_norm_bounds=0,\n              ring_equivariance=0, invariant_mode_equations=0,\n              balanced_sign_minimum_checks=0, exact_minimum_linear_rates=0)\n\nfor k in ks:\n    for x in states:\n        f = rhs(x, k)\n        mu = potential(x, k)\n        assert sum(f) == 0\n        dissipation = sum((mu[i]-mu[j])**2 for i, j in EDGES)\n        assert dot(mu, f) == -dissipation\n        counts['conservation_dissipation'] += 1\n        r2 = dot(x, x)\n        r4 = r2*r2\n        gap4 = sum(z**4 for z in x)-r4/4\n        gapL = dot(x, lap(x))-2*r2\n        assert gap4 >= 0 and gapL >= 0\n        q = 1-2*k\n        remainder = (r2-4*q)**2/16 + gap4/4 + k*gapL/2\n        assert energy(x, k)-(1-q*q) == remainder\n        assert remainder >= 0\n        counts['energy_remainders'] += 1\n        if k >= Q(1, 2):\n            assert dot(x, f) <= -2*(2*k-1)*r2\n            counts['high_parameter_norm_bounds'] += 1\n        for offset in range(4):\n            for reverse in (False, True):\n                gx = transform(x, offset, reverse)\n                assert rhs(gx, k) == transform(f, offset, reverse)\n                counts['ring_equivariance'] += 1\n\npatterns = ((1,1,-1,-1), (-1,1,1,-1), (-1,-1,1,1), (1,-1,-1,1))\nfor k in ks:\n    for a in (Q(-2), Q(-1, 100), Q(0), Q(1, 100), Q(1, 2), Q(1), Q(2)):\n        for signs in patterns:\n            x = tuple(a*s for s in signs)\n            amplitude_rhs = 2*a*(1-2*k-a*a)\n            assert rhs(x, k) == tuple(amplitude_rhs*s for s in signs)\n            counts['invariant_mode_equations'] += 1\n\nfor a in (Q(1, 4), Q(1, 2), Q(3, 4)):\n    k = (1-a*a)/2\n    minimizing = []\n    for signs in product((-1, 1), repeat=4):\n        if sum(signs):\n            continue\n        x = tuple(a*s for s in signs)\n        if energy(x, k) == 1-(1-2*k)**2:\n            minimizing.append(signs)\n            assert all(z == 0 for z in rhs(x, k))\n        counts['balanced_sign_minimum_checks'] += 1\n    assert set(minimizing) == set(patterns)\n    for lam in (Q(2), Q(2), Q(4)):\n        hessian_rate = 3*a*a-1+k*lam\n        dynamical_rate = -lam*hessian_rate\n        assert hessian_rate > 0 and dynamical_rate < 0\n        assert dynamical_rate == (-4+8*k if lam == 2 else -8+8*k)\n        counts['exact_minimum_linear_rates'] += 1\n\n# The k=0 endpoint has six, rather than four, balanced sign minima.\nzero_coupling_minima = [s for s in product((-1, 1), repeat=4)\n                        if sum(s) == 0 and energy(tuple(map(Q, s)), Q(0)) == 0]\nassert len(zero_coupling_minima) == 6\n\ntrajectory = []\nfor t in (0, 1, 2, 3, 4, 5, 10):\n    amplitude = math.sqrt(0.5/(1+4999*math.exp(-2*t)))\n    trajectory.append(dict(t=t, amplitude=amplitude))\n\nresult = dict(status='passed', arithmetic='fractions.Fraction except labeled decimal illustration',\n              counts=counts, zero_coupling_balanced_minima=len(zero_coupling_minima),\n              trajectory_illustration=dict(kappa='1/4', initial_amplitude='1/100',\n                  exact_formula='sqrt((1/2)/(1+4999*exp(-2*t)))', values=trajectory),\n              coverage_limit='Finite checks catch algebraic errors; audit proofs establish general claims. No generic convergence or physical-data claim.')\n(HERE/'boundary-checks.json').write_text(json.dumps(result, indent=2)+'\\n')\nprint(json.dumps(result, indent=2))\n"
+      },
+      "result_file": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/boundary-checks.json",
+        "sha256": "b27cb439b550d69061e3b1388981384d0d16bcb698cf55b318dd274c7b9c7096"
+      },
+      "results": {
+        "status": "passed",
+        "arithmetic": "fractions.Fraction except labeled decimal illustration",
+        "counts": {
+          "states": 343,
+          "parameters": 8,
+          "conservation_dissipation": 2744,
+          "energy_remainders": 2744,
+          "high_parameter_norm_bounds": 1029,
+          "ring_equivariance": 21952,
+          "invariant_mode_equations": 224,
+          "balanced_sign_minimum_checks": 18,
+          "exact_minimum_linear_rates": 9
+        },
+        "zero_coupling_balanced_minima": 6,
+        "trajectory_illustration": {
+          "kappa": "1/4",
+          "initial_amplitude": "1/100",
+          "exact_formula": "sqrt((1/2)/(1+4999*exp(-2*t)))",
+          "values": [
+            {
+              "t": 0,
+              "amplitude": 0.01
+            },
+            {
+              "t": 1,
+              "amplitude": 0.027165467655847278
+            },
+            {
+              "t": 2,
+              "amplitude": 0.0734976771225468
+            },
+            {
+              "t": 3,
+              "amplitude": 0.19322971894181493
+            },
+            {
+              "t": 4,
+              "amplitude": 0.43217797210759484
+            },
+            {
+              "t": 5,
+              "amplitude": 0.6383675723615458
+            },
+            {
+              "t": 10,
+              "amplitude": 0.707103138304168
+            }
+          ]
+        },
+        "coverage_limit": "Finite checks catch algebraic errors; audit proofs establish general claims. No generic convergence or physical-data claim."
+      }
+    },
+    {
+      "subject": "Produced barrier and reciprocal maintenance",
+      "proof_note": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/boundary-maintenance.md",
+        "sha256": "bf3428784696486e922e932732a67846cd9693cba79fe8df568d5c2db3380b56",
+        "text": "# A boundary sustained by the process it protects\n\nConstructed model, 5 October 2026. This supplies an explicit maintenance mechanism beyond a phase-domain interface. It does not derive geometry, chemistry, reproduction, sensing, or experience from monism.\n\nLet c be the abundance of an autocatalytic internal component and b the amount of a barrier around a supplied patch. Precursor and energy availability are held fixed over the modeled interval. Growth from supplied material occurs at per-capita rate r; ordinary loss occurs at rate delta; set A=r-delta>0. The barrier reduces leakage from ell to ell/(1+b), after choosing the unit of b. The internal component produces barrier material from a supplied precursor at rate beta*c. The barrier decays at rate mu*b. Density-dependent internal loss is q*c². All rates are positive:\n\n\\[\n\\dot c=\\left[A-\\frac{\\ell}{1+b}\\right]c-qc^2,\\qquad\n\\dot b=\\beta c-\\mu b.\n\\tag{B1}\n\\]\n\nThe boundary has a specified causal role, rather than simply a name: its amount changes leakage. Its production depends on the internal process whose continuation it helps. The modeled variables refer to a local patch with assumed potential barrier geometry. Thus boundary function is endogenous, while spatial shape and material mechanisms remain premises.\n\nThe nonnegative quadrant is invariant. Since c-dot <= A*c-q*c², c is bounded above by max(c(0),A/q). Consequently b is bounded by max(b(0), beta*max(c(0),A/q)/mu). Positive c remains positive at finite times. No component is generated from c=0, so a seed must be supplied.\n\nSet s=beta/mu and k=q/s. Positive equilibria obey b=s*c and\n\n\\[\nkb^2-(A-k)b+(\\ell-A)=0.\n\\tag{B2}\n\\]\n\nIf ell>A>k>0 and D=(A+k)²-4k*ell>0, there are two positive equilibria:\n\n\\[\nb_\\pm=\\frac{A-k\\pm\\sqrt D}{2k},\\qquad c_\\pm=b_\\pm/s.\n\\tag{B3}\n\\]\n\nThe origin is locally asymptotically stable since its Jacobian has eigenvalues A-ell<0 and -mu<0. At a positive equilibrium,\n\n\\[\nJ=\\begin{pmatrix}-qc&\\ell c/(1+b)^2\\\\\\beta&-\\mu\\end{pmatrix},\n\\quad \\operatorname{tr}J=-qc-\\mu<0,\n\\quad \\det J=\\mu s c\\left[k-\\frac{\\ell}{(1+b)^2}\\right].\n\\tag{B4}\n\\]\n\nLet g(b)=A-ell/(1+b)-kb. Multiplying by 1+b gives -k(b-b_-)(b-b_+). Thus g'(b_-) >0 and g'(b_+)<0. Since the bracket in the determinant is -g'(b), the lower equilibrium is a saddle and the upper equilibrium is locally asymptotically stable. Both a failed state and an operating state therefore exist under the same supplied rates. Large enough coordinated establishment can succeed where sufficiently small seeds decay; no claim that every positive initial condition succeeds is made.\n\nFor A=3, ell=15/4, q=beta=mu=1:\n\n\\[\n(c_-,b_-)=(1/2,1/2),\\qquad(c_+,b_+)=(3/2,3/2).\n\\]\n\nAt the upper state, each part supplies a condition needed by the other: maintained barrier limits leakage; internal production replaces degrading barrier. The structure is dependent on resource supply and remains an open process.\n\nTwo interventions distinguish this causal loop from a merely drawn boundary:\n\n1. Stop barrier production by setting beta=0. Then b(t)=b(0)e^{-mu*t}. Because A<ell, eventually A-ell/(1+b) is bounded above by a negative number. The resulting differential inequality forces c(t) to zero. Alternatively, forcibly keep b=0; then c-dot <= -(ell-A)c and the core decays immediately.\n2. After stopping barrier production, externally hold b=B>ell/A-1. The internal equation becomes logistic with positive growth A-ell/(1+B), so every positive c converges to [A-ell/(1+B)]/q. The outside intervention replaces a failed internal support. Holding this barrier requires a real external maintenance process, omitted by the clamp idealization.\n\nThe disruption and rescue establish a conditional causal function for the barrier. They do not imply that every sustained boundary is an organism. Continuous deterministic persistence also omits finite-population extinction.\n\nNumerical trajectories illustrate an operating seed, a failing seed, disrupted maintenance, and external rescue. They are checked at two integration steps and against the analytic fixed points, bounds and intervention results. The general existence and stability conclusions follow from the algebra above, not the numerical trajectories.\n"
+      },
+      "check_program": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/check_boundary_maintenance.py",
+        "sha256": "fbc647696d8e110f274803f7d92500da1f40b1be24362b94aadc54c50c0342b1",
+        "text": "\"\"\"Exact local stability and converged illustrative trajectories; constructed model.\"\"\"\nfrom fractions import Fraction as Q\nimport json\nfrom pathlib import Path\n\nA, ell, q, beta, mu = Q(3), Q(15, 4), Q(1), Q(1), Q(1)\nfixed = []\nfor c, b in [(Q(1, 2), Q(1, 2)), (Q(3, 2), Q(3, 2))]:\n    assert (A-ell/(1+b))*c-q*c*c == 0\n    assert beta*c-mu*b == 0\n    trace = -q*c-mu\n    determinant = mu*q*c-beta*ell*c/(1+b)**2\n    assert trace < 0\n    assert (determinant < 0) == (c == Q(1, 2))\n    fixed.append({'c': str(c), 'b': str(b), 'trace': str(trace),\n                  'determinant': str(determinant),\n                  'type': 'saddle' if determinant < 0 else 'stable'})\n\n\ndef rhs(z, production=1, clamp=False):\n    c, b = z\n    return ((3-3.75/(1+b))*c-c*c, 0 if clamp else production*c-b)\n\n\ndef trajectory(initial, duration, dt, production=1, clamp=False):\n    z = tuple(map(float, initial))\n    selected = [{'time': 0.0, 'c': z[0], 'b': z[1]}]\n    steps = round(duration/dt)\n    for n in range(steps):\n        k1 = rhs(z, production, clamp)\n        k2 = rhs(tuple(z[i]+dt*k1[i]/2 for i in (0, 1)), production, clamp)\n        k3 = rhs(tuple(z[i]+dt*k2[i]/2 for i in (0, 1)), production, clamp)\n        k4 = rhs(tuple(z[i]+dt*k3[i] for i in (0, 1)), production, clamp)\n        z = tuple(z[i]+dt*(k1[i]+2*k2[i]+2*k3[i]+k4[i])/6 for i in (0, 1))\n        assert min(z) >= 0 and max(z) <= 3.0000001\n        if (n+1) % round(1/dt) == 0:\n            selected.append({'time': round((n+1)*dt, 8), 'c': z[0], 'b': z[1]})\n    return z, selected\n\n\ncases = [\n    ('established', (2, 2), 1, False),\n    ('insufficient_seed', (.1, .1), 1, False),\n    ('barrier_production_disabled', (1.5, 1.5), 0, False),\n    ('externally_maintained_barrier', (.1, 1.5), 0, True),\n]\nnumeric = {}\nfor name, initial, production, clamp in cases:\n    coarse, _ = trajectory(initial, 80, .02, production, clamp)\n    fine, points = trajectory(initial, 80, .01, production, clamp)\n    error = max(abs(x-y) for x, y in zip(coarse, fine))\n    assert error < 1e-8\n    target = (1.5, 1.5) if name in ('established', 'externally_maintained_barrier') else (0, 0)\n    assert max(abs(x-y) for x, y in zip(fine, target)) < 1e-7\n    numeric[name] = {'initial': initial, 'final': fine, 'step_difference': error,\n                     'trajectory': points}\n\nresult = {'status': 'all checks passed', 'exact_fixed_points': fixed,\n          'origin_eigenvalues': ['-3/4', '-1'], 'numerical_cases': numeric,\n          'method': 'RK4 at steps 0.02 and 0.01, t=80; proofs supply general claims',\n          'scope': 'Boundary function and maintenance conditional on fixed patch geometry, supplied growth mechanism and external precursors; no organism or origin-of-life experiment.'}\ndestination = Path(__file__).with_name('boundary-maintenance-checks.json')\ndestination.write_text(json.dumps(result, indent=2)+'\\n')\nprint(json.dumps({'status': result['status'], 'exact_fixed_points': fixed,\n                  'numerical_cases': {name: {key: value for key, value in data.items() if key != 'trajectory'} for name, data in numeric.items()}}, indent=2))\n"
+      },
+      "result_file": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/boundary-maintenance-checks.json",
+        "sha256": "5af347e58e48cd6a72383ca9891e2e77a0e8e1791c5bef1cd19ab351328443fe"
+      },
+      "results": {
+        "status": "all checks passed",
+        "exact_fixed_points": [
+          {
+            "c": "1/2",
+            "b": "1/2",
+            "trace": "-3/2",
+            "determinant": "-1/3",
+            "type": "saddle"
+          },
+          {
+            "c": "3/2",
+            "b": "3/2",
+            "trace": "-5/2",
+            "determinant": "3/5",
+            "type": "stable"
+          }
+        ],
+        "origin_eigenvalues": [
+          "-3/4",
+          "-1"
+        ],
+        "numerical_cases": {
+          "established": {
+            "initial": [
+              2,
+              2
+            ],
+            "final": [
+              1.5000000001264053,
+              1.5000000001729041
+            ],
+            "step_difference": 4.440892098500626e-16,
+            "trajectory": [
+              {
+                "time": 0.0,
+                "c": 2.0,
+                "b": 2.0
+              },
+              {
+                "time": 1.0,
+                "c": 1.7682962509134148,
+                "b": 1.8973990680279298
+              },
+              {
+                "time": 2.0,
+                "c": 1.6886526306736813,
+                "b": 1.7840560825312126
+              },
+              {
+                "time": 3.0,
+                "c": 1.6387526647839856,
+                "b": 1.7044517436859954
+              },
+              {
+                "time": 4.0,
+                "c": 1.6033002209076894,
+                "b": 1.6492924320751818
+              },
+              {
+                "time": 5.0,
+                "c": 1.577409651037827,
+                "b": 1.6102859812847647
+              },
+              {
+                "time": 6.0,
+                "c": 1.5582792837613162,
+                "b": 1.5821729987867457
+              },
+              {
+                "time": 7.0,
+                "c": 1.544031864384356,
+                "b": 1.5616142767058259
+              },
+              {
+                "time": 8.0,
+                "c": 1.5333572994883642,
+                "b": 1.5464158559035162
+              },
+              {
+                "time": 9.0,
+                "c": 1.5253226371117772,
+                "b": 1.5350887587731556
+              },
+              {
+                "time": 10.0,
+                "c": 1.5192534990561142,
+                "b": 1.5265954627513645
+              },
+              {
+                "time": 11.0,
+                "c": 1.514656542132111,
+                "b": 1.520197822981068
+              },
+              {
+                "time": 12.0,
+                "c": 1.511167376885454,
+                "b": 1.5153620743977592
+              },
+              {
+                "time": 13.0,
+                "c": 1.5085148015315222,
+                "b": 1.5116973249988719
+              },
+              {
+                "time": 14.0,
+                "c": 1.5064957572526168,
+                "b": 1.508914488560933
+              },
+              {
+                "time": 15.0,
+                "c": 1.504957493399712,
+                "b": 1.5067981405209616
+              },
+              {
+                "time": 16.0,
+                "c": 1.5037846852725678,
+                "b": 1.5051868054326716
+              },
+              {
+                "time": 17.0,
+                "c": 1.502890019170265,
+                "b": 1.5039588994569038
+              },
+              {
+                "time": 18.0,
+                "c": 1.5022072453660311,
+                "b": 1.5030225575620588
+              },
+              {
+                "time": 19.0,
+                "c": 1.5016860125837739,
+                "b": 1.5023081844494715
+              },
+              {
+                "time": 20.0,
+                "c": 1.5012880036318688,
+                "b": 1.5017629483050383
+              },
+              {
+                "time": 21.0,
+                "c": 1.5009840305253586,
+                "b": 1.5013466802232098
+              },
+              {
+                "time": 22.0,
+                "c": 1.5007518426458126,
+                "b": 1.5010288025384666
+              },
+              {
+                "time": 23.0,
+                "c": 1.5005744680740642,
+                "b": 1.500786017362849
+              },
+              {
+                "time": 24.0,
+                "c": 1.5004389555535487,
+                "b": 1.5006005610047959
+              },
+              {
+                "time": 25.0,
+                "c": 1.500335418646112,
+                "b": 1.5004588821078753
+              },
+              {
+                "time": 26.0,
+                "c": 1.5002563085111915,
+                "b": 1.5003506385323473
+              },
+              {
+                "time": 27.0,
+                "c": 1.500195860051266,
+                "b": 1.500267934876994
+              },
+              {
+                "time": 28.0,
+                "c": 1.5001496697579366,
+                "b": 1.500204742185863
+              },
+              {
+                "time": 29.0,
+                "c": 1.5001143737451033,
+                "b": 1.5001564558834464
+              },
+              {
+                "time": 30.0,
+                "c": 1.5000874020775552,
+                "b": 1.5001195587628284
+              },
+              {
+                "time": 31.0,
+                "c": 1.500066791248304,
+                "b": 1.5000913639164009
+              },
+              {
+                "time": 32.0,
+                "c": 1.5000510410019927,
+                "b": 1.5000698185609629
+              },
+              {
+                "time": 33.0,
+                "c": 1.5000390049942873,
+                "b": 1.5000533542829249
+              },
+              {
+                "time": 34.0,
+                "c": 1.5000298072776235,
+                "b": 1.5000407726903835
+              },
+              {
+                "time": 35.0,
+                "c": 1.5000227785052507,
+                "b": 1.5000311580837926
+              },
+              {
+                "time": 36.0,
+                "c": 1.5000174071933816,
+                "b": 1.5000238107512585
+              },
+              {
+                "time": 37.0,
+                "c": 1.5000133024845255,
+                "b": 1.500018196011748
+              },
+              {
+                "time": 38.0,
+                "c": 1.5000101656963827,
+                "b": 1.5000139052850014
+              },
+              {
+                "time": 39.0,
+                "c": 1.5000077685825466,
+                "b": 1.5000106263476567
+              },
+              {
+                "time": 40.0,
+                "c": 1.5000059367211103,
+                "b": 1.500008120606799
+              },
+              {
+                "time": 41.0,
+                "c": 1.5000045368212929,
+                "b": 1.500006205734643
+              },
+              {
+                "time": 42.0,
+                "c": 1.5000034670237898,
+                "b": 1.5000047423992835
+              },
+              {
+                "time": 43.0,
+                "c": 1.5000026494886642,
+                "b": 1.5000036241251085
+              },
+              {
+                "time": 44.0,
+                "c": 1.5000020247312331,
+                "b": 1.500002769544588
+              },
+              {
+                "time": 45.0,
+                "c": 1.5000015472936887,
+                "b": 1.5000021164773678
+              },
+              {
+                "time": 46.0,
+                "c": 1.5000011824374286,
+                "b": 1.5000016174056776
+              },
+              {
+                "time": 47.0,
+                "c": 1.5000009036153814,
+                "b": 1.5000012360167287
+              },
+              {
+                "time": 48.0,
+                "c": 1.50000069054039,
+                "b": 1.5000009445604847
+              },
+              {
+                "time": 49.0,
+                "c": 1.5000005277090909,
+                "b": 1.5000007218304985
+              },
+              {
+                "time": 50.0,
+                "c": 1.500000403273867,
+                "b": 1.50000055162089
+              },
+              {
+                "time": 51.0,
+                "c": 1.5000003081808126,
+                "b": 1.500000421547191
+              },
+              {
+                "time": 52.0,
+                "c": 1.5000002355109583,
+                "b": 1.500000322145232
+              },
+              {
+                "time": 53.0,
+                "c": 1.5000001799768519,
+                "b": 1.5000002461825277
+              },
+              {
+                "time": 54.0,
+                "c": 1.500000137537836,
+                "b": 1.500000188132035
+              },
+              {
+                "time": 55.0,
+                "c": 1.500000105106053,
+                "b": 1.5000001437700037
+              },
+              {
+                "time": 56.0,
+                "c": 1.5000000803217697,
+                "b": 1.500000109868659
+              },
+              {
+                "time": 57.0,
+                "c": 1.5000000613816857,
+                "b": 1.5000000839613405
+              },
+              {
+                "time": 58.0,
+                "c": 1.500000046907724,
+                "b": 1.5000000641630358
+              },
+              {
+                "time": 59.0,
+                "c": 1.5000000358467593,
+                "b": 1.5000000490332244
+              },
+              {
+                "time": 60.0,
+                "c": 1.5000000273940004,
+                "b": 1.5000000374710623
+              },
+              {
+                "time": 61.0,
+                "c": 1.5000000209344244,
+                "b": 1.5000000286352884
+              },
+              {
+                "time": 62.0,
+                "c": 1.5000000159980327,
+                "b": 1.5000000218830132
+              },
+              {
+                "time": 63.0,
+                "c": 1.5000000122256547,
+                "b": 1.5000000167229415
+              },
+              {
+                "time": 64.0,
+                "c": 1.5000000093428132,
+                "b": 1.5000000127796285
+              },
+              {
+                "time": 65.0,
+                "c": 1.5000000071397535,
+                "b": 1.500000009766158
+              },
+              {
+                "time": 66.0,
+                "c": 1.500000005456181,
+                "b": 1.5000000074632722
+              },
+              {
+                "time": 67.0,
+                "c": 1.5000000041695987,
+                "b": 1.5000000057034133
+              },
+              {
+                "time": 68.0,
+                "c": 1.5000000031863967,
+                "b": 1.5000000043585338
+              },
+              {
+                "time": 69.0,
+                "c": 1.5000000024350366,
+                "b": 1.5000000033307803
+              },
+              {
+                "time": 70.0,
+                "c": 1.5000000018608481,
+                "b": 1.5000000025453735
+              },
+              {
+                "time": 71.0,
+                "c": 1.5000000014220556,
+                "b": 1.5000000019451671
+              },
+              {
+                "time": 72.0,
+                "c": 1.5000000010867314,
+                "b": 1.500000001486492
+              },
+              {
+                "time": 73.0,
+                "c": 1.5000000008304775,
+                "b": 1.5000000011359744
+              },
+              {
+                "time": 74.0,
+                "c": 1.5000000006346494,
+                "b": 1.500000000868109
+              },
+              {
+                "time": 75.0,
+                "c": 1.5000000004849967,
+                "b": 1.5000000006634064
+              },
+              {
+                "time": 76.0,
+                "c": 1.5000000003706333,
+                "b": 1.500000000506974
+              },
+              {
+                "time": 77.0,
+                "c": 1.5000000002832368,
+                "b": 1.5000000003874283
+              },
+              {
+                "time": 78.0,
+                "c": 1.500000000216449,
+                "b": 1.5000000002960712
+              },
+              {
+                "time": 79.0,
+                "c": 1.50000000016541,
+                "b": 1.5000000002262563
+              },
+              {
+                "time": 80.0,
+                "c": 1.5000000001264053,
+                "b": 1.5000000001729041
+              }
+            ]
+          },
+          "insufficient_seed": {
+            "initial": [
+              0.1,
+              0.1
+            ],
+            "final": [
+              1.9625374136393757e-27,
+              7.850149629337246e-27
+            ],
+            "step_difference": 1.8001509152548454e-34,
+            "trajectory": [
+              {
+                "time": 0.0,
+                "c": 0.1,
+                "b": 0.1
+              },
+              {
+                "time": 1.0,
+                "c": 0.060291718445067054,
+                "b": 0.08441299718567334
+              },
+              {
+                "time": 2.0,
+                "c": 0.03494144342381259,
+                "b": 0.05926738969009754
+              },
+              {
+                "time": 3.0,
+                "c": 0.019083975163021693,
+                "b": 0.037644039273248026
+              },
+              {
+                "time": 4.0,
+                "c": 0.009894207763458167,
+                "b": 0.02225539327728506
+              },
+              {
+                "time": 5.0,
+                "c": 0.004939565858466013,
+                "b": 0.012454799112740026
+              },
+              {
+                "time": 6.0,
+                "c": 0.0024067845515841953,
+                "b": 0.006683298797049682
+              },
+              {
+                "time": 7.0,
+                "c": 0.00115595506904456,
+                "b": 0.0034742187843622564
+              },
+              {
+                "time": 8.0,
+                "c": 0.0005507703926012356,
+                "b": 0.0017636339880534153
+              },
+              {
+                "time": 9.0,
+                "c": 0.00026130668829755865,
+                "b": 0.0008795812090908461
+              },
+              {
+                "time": 10.0,
+                "c": 0.00012370185090227083,
+                "b": 0.00043293045610796443
+              },
+              {
+                "time": 11.0,
+                "c": 5.84952502530942e-05,
+                "b": 0.0002109993331461814
+              },
+              {
+                "time": 12.0,
+                "c": 2.7645614953785977e-05,
+                "b": 0.00010207771777011426
+              },
+              {
+                "time": 13.0,
+                "c": 1.3062156464417384e-05,
+                "b": 4.910842781129108e-05
+              },
+              {
+                "time": 14.0,
+                "c": 6.1708737030364526e-06,
+                "b": 2.3525673602077253e-05
+              },
+              {
+                "time": 15.0,
+                "c": 2.915083502605179e-06,
+                "b": 1.1233805775482544e-05
+              },
+              {
+                "time": 16.0,
+                "c": 1.3770260879378584e-06,
+                "b": 5.35106044491075e-06
+              },
+              {
+                "time": 17.0,
+                "c": 6.504696459923603e-07,
+                "b": 2.5440754576580935e-06
+              },
+              {
+                "time": 18.0,
+                "c": 3.072620307336422e-07,
+                "b": 1.2077768276450872e-06
+              },
+              {
+                "time": 19.0,
+                "c": 1.4514073816470264e-07,
+                "b": 5.727361752394559e-07
+              },
+              {
+                "time": 20.0,
+                "c": 6.855972688550166e-08,
+                "b": 2.7135925993087203e-07
+              },
+              {
+                "time": 21.0,
+                "c": 3.238534349372129e-08,
+                "b": 1.2848193538417492e-07
+              },
+              {
+                "time": 22.0,
+                "c": 1.5297757906848622e-08,
+                "b": 6.080126908061993e-08
+              },
+              {
+                "time": 23.0,
+                "c": 7.2261502493562884e-09,
+                "b": 2.8761211598726995e-08
+              },
+              {
+                "time": 24.0,
+                "c": 3.413391924720963e-09,
+                "b": 1.3600816844497058e-08
+              },
+              {
+                "time": 25.0,
+                "c": 1.6123722306713254e-09,
+                "b": 6.43008277966051e-09
+              },
+              {
+                "time": 26.0,
+                "c": 7.616307244127575e-10,
+                "b": 3.039383734573802e-09
+              },
+              {
+                "time": 27.0,
+                "c": 3.5976888245234465e-10,
+                "b": 1.4364491691027518e-09
+              },
+              {
+                "time": 28.0,
+                "c": 1.6994278739200404e-10,
+                "b": 6.788049633641662e-10
+              },
+              {
+                "time": 29.0,
+                "c": 8.02752887793379e-11,
+                "b": 3.2074571460901033e-10
+              },
+              {
+                "time": 30.0,
+                "c": 3.7919361461688626e-11,
+                "b": 1.5154668648680445e-10
+              },
+              {
+                "time": 31.0,
+                "c": 1.7911838062838805e-11,
+                "b": 7.15992485477934e-11
+              },
+              {
+                "time": 32.0,
+                "c": 8.460953200658515e-12,
+                "b": 3.382611643384999e-11
+              },
+              {
+                "time": 33.0,
+                "c": 3.9966712967105395e-12,
+                "b": 1.5980175055422555e-11
+              },
+              {
+                "time": 34.0,
+                "c": 1.887893842977974e-12,
+                "b": 7.549180428144238e-12
+              },
+              {
+                "time": 35.0,
+                "c": 8.917779065828146e-13,
+                "b": 3.566230575698535e-12
+              },
+              {
+                "time": 36.0,
+                "c": 4.212460555552045e-13,
+                "b": 1.6846601017934898e-12
+              },
+              {
+                "time": 37.0,
+                "c": 1.9898254712314695e-13,
+                "b": 7.95810951248024e-13
+              },
+              {
+                "time": 38.0,
+                "c": 9.399269984224201e-14,
+                "b": 3.759269344374256e-13
+              },
+              {
+                "time": 39.0,
+                "c": 4.439900760822543e-14,
+                "b": 1.7757989342625409e-13
+              },
+              {
+                "time": 40.0,
+                "c": 2.0972606169446053e-14,
+                "b": 8.3884488204764e-14
+              },
+              {
+                "time": 41.0,
+                "c": 9.906757678455346e-15,
+                "b": 3.9624846807436905e-14
+              },
+              {
+                "time": 42.0,
+                "c": 4.67962097350611e-15,
+                "b": 1.8717680479762476e-14
+              },
+              {
+                "time": 43.0,
+                "c": 2.2104964274337213e-15,
+                "b": 8.841690150144785e-15
+              },
+              {
+                "time": 44.0,
+                "c": 1.0441645772939962e-15,
+                "b": 4.17654957887906e-15
+              },
+              {
+                "time": 45.0,
+                "c": 4.932284218804639e-16,
+                "b": 1.9728736878809624e-15
+              },
+              {
+                "time": 46.0,
+                "c": 2.3298460936220315e-16,
+                "b": 9.319237224032682e-16
+              },
+              {
+                "time": 47.0,
+                "c": 1.1005413676832615e-16,
+                "b": 4.4021113371057145e-16
+              },
+              {
+                "time": 48.0,
+                "c": 5.1985893201176915e-17,
+                "b": 2.0794158133985027e-16
+              },
+              {
+                "time": 49.0,
+                "c": 2.4556397163091168e-17,
+                "b": 9.822485603338568e-17
+              },
+              {
+                "time": 50.0,
+                "c": 1.1599620675899437e-17,
+                "b": 4.639821318813713e-17
+              },
+              {
+                "time": 51.0,
+                "c": 5.479272831887052e-18,
+                "b": 2.191699217835115e-17
+              },
+              {
+                "time": 52.0,
+                "c": 2.5882252191774875e-18,
+                "b": 1.0352864401758738e-17
+              },
+              {
+                "time": 53.0,
+                "c": 1.2225910245245563e-18,
+                "b": 4.8903506797135545e-18
+              },
+              {
+                "time": 54.0,
+                "c": 5.77511107678263e-19,
+                "b": 2.3100394943651943e-18
+              },
+              {
+                "time": 55.0,
+                "c": 2.727969311090547e-19,
+                "b": 1.0911859084553271e-18
+              },
+              {
+                "time": 56.0,
+                "c": 1.2886014594887646e-19,
+                "b": 5.154399157334703e-19
+              },
+              {
+                "time": 57.0,
+                "c": 6.086922292878603e-20,
+                "b": 2.434766459488559e-19
+              },
+              {
+                "time": 58.0,
+                "c": 2.8752585003467165e-20,
+                "b": 1.1501024960150383e-19
+              },
+              {
+                "time": 59.0,
+                "c": 1.358175946075104e-20,
+                "b": 5.432700458215395e-20
+              },
+              {
+                "time": 60.0,
+                "c": 6.415568896760296e-21,
+                "b": 2.5662263351058216e-20
+              },
+              {
+                "time": 61.0,
+                "c": 3.0305001636954402e-21,
+                "b": 1.2121996153415187e-20
+              },
+              {
+                "time": 62.0,
+                "c": 1.431506915434381e-21,
+                "b": 5.7260260057773086e-21
+              },
+              {
+                "time": 63.0,
+                "c": 6.761959868821178e-22,
+                "b": 2.704783338334752e-21
+              },
+              {
+                "time": 64.0,
+                "c": 3.194123673071703e-22,
+                "b": 1.2776492451188361e-21
+              },
+              {
+                "time": 65.0,
+                "c": 1.5087971885073715e-22,
+                "b": 6.035187929575442e-22
+              },
+              {
+                "time": 66.0,
+                "c": 7.127053267347444e-23,
+                "b": 2.850821003639284e-22
+              },
+              {
+                "time": 67.0,
+                "c": 3.3665815831654924e-23,
+                "b": 1.3466325216884737e-22
+              },
+              {
+                "time": 68.0,
+                "c": 1.5902605369929172e-23,
+                "b": 6.361041737500164e-23
+              },
+              {
+                "time": 69.0,
+                "c": 7.511858878343672e-24,
+                "b": 3.0047434003334396e-23
+              },
+              {
+                "time": 70.0,
+                "c": 3.5483508831107955e-24,
+                "b": 1.419340297693041e-23
+              },
+              {
+                "time": 71.0,
+                "c": 1.676122274603935e-24,
+                "b": 6.704488894054005e-24
+              },
+              {
+                "time": 72.0,
+                "c": 7.917441008428442e-25,
+                "b": 3.166976328190898e-24
+              },
+              {
+                "time": 73.0,
+                "c": 3.739934315756107e-25,
+                "b": 1.4959736986450907e-24
+              },
+              {
+                "time": 74.0,
+                "c": 1.7666198802466925e-25,
+                "b": 7.066479419241057e-25
+              },
+              {
+                "time": 75.0,
+                "c": 8.344921428524802e-26,
+                "b": 3.337968533979764e-25
+              },
+              {
+                "time": 76.0,
+                "c": 3.941861768165328e-26,
+                "b": 1.5767446934963446e-25
+              },
+              {
+                "time": 77.0,
+                "c": 1.8620036548469093e-26,
+                "b": 7.448014568731418e-26
+              },
+              {
+                "time": 78.0,
+                "c": 8.795482476487073e-27,
+                "b": 3.5181929719594486e-26
+              },
+              {
+                "time": 79.0,
+                "c": 4.154691737194874e-27,
+                "b": 1.661876688022376e-26
+              },
+              {
+                "time": 80.0,
+                "c": 1.9625374136393757e-27,
+                "b": 7.850149629337246e-27
+              }
+            ]
+          },
+          "barrier_production_disabled": {
+            "initial": [
+              1.5,
+              1.5
+            ],
+            "final": [
+              2.1200197146246825e-26,
+              2.7072770999676847e-35
+            ],
+            "step_difference": 4.839925080490659e-34,
+            "trajectory": [
+              {
+                "time": 0.0,
+                "c": 1.5,
+                "b": 1.5
+              },
+              {
+                "time": 1.0,
+                "c": 1.101999551608176,
+                "b": 0.551819161803533
+              },
+              {
+                "time": 2.0,
+                "c": 0.5888026855464242,
+                "b": 0.20300292488903598
+              },
+              {
+                "time": 3.0,
+                "c": 0.2796871975344257,
+                "b": 0.07468060257062233
+              },
+              {
+                "time": 4.0,
+                "c": 0.1286964478062559,
+                "b": 0.02747345834233576
+              },
+              {
+                "time": 5.0,
+                "c": 0.059257847953197135,
+                "b": 0.010106920502874666
+              },
+              {
+                "time": 6.0,
+                "c": 0.027504508395084504,
+                "b": 0.003718128266874163
+              },
+              {
+                "time": 7.0,
+                "c": 0.012857011018711511,
+                "b": 0.00136782294913635
+              },
+              {
+                "time": 8.0,
+                "c": 0.006038218888066011,
+                "b": 0.0005031939421920381
+              },
+              {
+                "time": 9.0,
+                "c": 0.0028435688086098283,
+                "b": 0.00018511470627001735
+              },
+              {
+                "time": 10.0,
+                "c": 0.0013411127714960053,
+                "b": 6.809989470095215e-05
+              },
+              {
+                "time": 11.0,
+                "c": 0.0006330018043130691,
+                "b": 2.5052551208525526e-05
+              },
+              {
+                "time": 12.0,
+                "c": 0.0002988935287700681,
+                "b": 9.216318539285773e-06
+              },
+              {
+                "time": 13.0,
+                "c": 0.00014116070743541638,
+                "b": 3.3904941141753583e-06
+              },
+              {
+                "time": 14.0,
+                "c": 6.66735114095684e-05,
+                "b": 1.2472930801227056e-06
+              },
+              {
+                "time": 15.0,
+                "c": 3.1492952664995836e-05,
+                "b": 4.588534813311055e-07
+              },
+              {
+                "time": 16.0,
+                "c": 1.4875904081551e-05,
+                "b": 1.6880276230584257e-07
+              },
+              {
+                "time": 17.0,
+                "c": 7.0268088036341525e-06,
+                "b": 6.209906587048745e-08
+              },
+              {
+                "time": 18.0,
+                "c": 3.319213531677686e-06,
+                "b": 2.2844969651623185e-08
+              },
+              {
+                "time": 19.0,
+                "c": 1.567881877539163e-06,
+                "b": 8.40419466972391e-09
+              },
+              {
+                "time": 20.0,
+                "c": 7.406141554532312e-07,
+                "b": 3.0917304388538473e-09
+              },
+              {
+                "time": 21.0,
+                "c": 3.498411758156309e-07,
+                "b": 1.137384066193867e-09
+              },
+              {
+                "time": 22.0,
+                "c": 1.6525323000405937e-07,
+                "b": 4.1842021470386264e-10
+              },
+              {
+                "time": 23.0,
+                "c": 7.806008959024079e-08,
+                "b": 1.5392819477302668e-10
+              },
+              {
+                "time": 24.0,
+                "c": 3.6872973415662926e-08,
+                "b": 5.66270182783884e-11
+              },
+              {
+                "time": 25.0,
+                "c": 1.741755889253128e-08,
+                "b": 2.08319158412091e-11
+              },
+              {
+                "time": 26.0,
+                "c": 8.227472150983699e-09,
+                "b": 7.663633558838504e-12
+              },
+              {
+                "time": 27.0,
+                "c": 3.886382635385963e-09,
+                "b": 2.8192932312051273e-12
+              },
+              {
+                "time": 28.0,
+                "c": 1.8357971631393297e-09,
+                "b": 1.0371600184813256e-12
+              },
+              {
+                "time": 29.0,
+                "c": 8.671691763832958e-10,
+                "b": 3.8154984803633496e-13
+              },
+              {
+                "time": 30.0,
+                "c": 4.0962171425006866e-10,
+                "b": 1.403643448864506e-13
+              },
+              {
+                "time": 31.0,
+                "c": 1.934915970363255e-10,
+                "b": 5.1637156761562104e-14
+              },
+              {
+                "time": 32.0,
+                "c": 9.139895866579107e-11,
+                "b": 1.8996248374721906e-14
+              },
+              {
+                "time": 33.0,
+                "c": 4.3173811027163184e-11,
+                "b": 6.988329237033852e-15
+              },
+              {
+                "time": 34.0,
+                "c": 2.039386428337979e-11,
+                "b": 2.5708626546580963e-15
+              },
+              {
+                "time": 35.0,
+                "c": 9.63337936866176e-12,
+                "b": 9.457675168036238e-16
+              },
+              {
+                "time": 36.0,
+                "c": 4.550486203680893e-12,
+                "b": 3.4792842558905654e-16
+              },
+              {
+                "time": 37.0,
+                "c": 2.1494974813641857e-12,
+                "b": 1.2799571478411753e-16
+              },
+              {
+                "time": 38.0,
+                "c": 1.015350715416164e-12,
+                "b": 4.7086992031077225e-17
+              },
+              {
+                "time": 39.0,
+                "c": 4.796177172734578e-13,
+                "b": 1.7322336316292455e-17
+              },
+              {
+                "time": 40.0,
+                "c": 2.2655536774640961e-13,
+                "b": 6.372531404356939e-18
+              },
+              {
+                "time": 41.0,
+                "c": 1.0701717806945685e-13,
+                "b": 2.344323292079291e-18
+              },
+              {
+                "time": 42.0,
+                "c": 5.0551335489742775e-14,
+                "b": 8.624283426877954e-19
+              },
+              {
+                "time": 43.0,
+                "c": 2.3878760082218647e-14,
+                "b": 3.1726965678505966e-19
+              },
+              {
+                "time": 44.0,
+                "c": 1.127952758399164e-14,
+                "b": 1.1671698404855084e-19
+              },
+              {
+                "time": 45.0,
+                "c": 5.328071561503301e-15,
+                "b": 4.2937778870605126e-20
+              },
+              {
+                "time": 46.0,
+                "c": 2.5168027963148218e-15,
+                "b": 1.5795926097388515e-20
+              },
+              {
+                "time": 47.0,
+                "c": 1.1888534608478351e-15,
+                "b": 5.810996465980998e-21
+              },
+              {
+                "time": 48.0,
+                "c": 5.615746110260913e-16,
+                "b": 2.1377461327339526e-21
+              },
+              {
+                "time": 49.0,
+                "c": 2.6526906312254964e-16,
+                "b": 7.864328527426622e-22
+              },
+              {
+                "time": 50.0,
+                "c": 1.2530423289853094e-16,
+                "b": 2.893124784101448e-22
+              },
+              {
+                "time": 51.0,
+                "c": 5.918952853931412e-17,
+                "b": 1.0643211289039258e-22
+              },
+              {
+                "time": 52.0,
+                "c": 2.795915355503809e-17,
+                "b": 3.9154186216103646e-23
+              },
+              {
+                "time": 53.0,
+                "c": 1.3206968982612825e-17,
+                "b": 1.4404020145913176e-23
+              },
+              {
+                "time": 54.0,
+                "c": 6.238530410598471e-18,
+                "b": 5.298942882346011e-24
+              },
+              {
+                "time": 55.0,
+                "c": 2.9468731042830277e-18,
+                "b": 1.9493721465206515e-24
+              },
+              {
+                "time": 56.0,
+                "c": 1.3920042896630857e-18,
+                "b": 7.171339359574536e-25
+              },
+              {
+                "time": 57.0,
+                "c": 6.575362677219413e-19,
+                "b": 2.6381883162727407e-25
+              },
+              {
+                "time": 58.0,
+                "c": 3.1059814009218693e-19,
+                "b": 9.705352435769991e-26
+              },
+              {
+                "time": 59.0,
+                "c": 1.4671617272603667e-19,
+                "b": 3.5703996307429814e-26
+              },
+              {
+                "time": 60.0,
+                "c": 6.930381274333235e-20,
+                "b": 1.3134766210268242e-26
+              },
+              {
+                "time": 61.0,
+                "c": 3.2736803118028145e-20,
+                "b": 4.83201045375706e-27
+              },
+              {
+                "time": 62.0,
+                "c": 1.5463770836931966e-20,
+                "b": 1.777597305612087e-27
+              },
+              {
+                "time": 63.0,
+                "c": 7.304568122763944e-21,
+                "b": 6.539415034713869e-28
+              },
+              {
+                "time": 64.0,
+                "c": 3.450433663480569e-21,
+                "b": 2.4057163487608183e-28
+              },
+              {
+                "time": 65.0,
+                "c": 1.6298694551123006e-21,
+                "b": 8.850135860735009e-29
+              },
+              {
+                "time": 66.0,
+                "c": 7.698958159445936e-22,
+                "b": 3.2557830350121236e-29
+              },
+              {
+                "time": 67.0,
+                "c": 3.6367303255471573e-22,
+                "b": 1.1977356435963696e-29
+              },
+              {
+                "time": 68.0,
+                "c": 1.7178697671616045e-22,
+                "b": 4.40622319274376e-30
+              },
+              {
+                "time": 69.0,
+                "c": 8.114642199882849e-23,
+                "b": 1.620958925959432e-30
+              },
+              {
+                "time": 70.0,
+                "c": 3.833085562761703e-23,
+                "b": 5.963174638939263e-31
+              },
+              {
+                "time": 71.0,
+                "c": 1.810621413679128e-23,
+                "b": 2.1937293539650344e-31
+              },
+              {
+                "time": 72.0,
+                "c": 8.552769955156914e-24,
+                "b": 8.070279288858615e-32
+              },
+              {
+                "time": 73.0,
+                "c": 4.040042460184791e-24,
+                "b": 2.96888983513225e-32
+              },
+              {
+                "time": 74.0,
+                "c": 1.9083809298827943e-24,
+                "b": 1.0921935335398057e-32
+              },
+              {
+                "time": 75.0,
+                "c": 9.014553211833661e-25,
+                "b": 4.017955468034497e-33
+              },
+              {
+                "time": 76.0,
+                "c": 4.2581734252590435e-25,
+                "b": 1.4781232123564804e-33
+              },
+              {
+                "time": 77.0,
+                "c": 2.0114187019030383e-25,
+                "b": 5.437711413899329e-34
+              },
+              {
+                "time": 78.0,
+                "c": 9.501269183556517e-26,
+                "b": 2.000422236364956e-34
+              },
+              {
+                "time": 79.0,
+                "c": 4.48808177099034e-26,
+                "b": 7.359142144827067e-35
+              },
+              {
+                "time": 80.0,
+                "c": 2.1200197146246825e-26,
+                "b": 2.7072770999676847e-35
+              }
+            ]
+          },
+          "externally_maintained_barrier": {
+            "initial": [
+              0.1,
+              1.5
+            ],
+            "final": [
+              1.4999999999999925,
+              1.5
+            ],
+            "step_difference": 3.774758283725532e-15,
+            "trajectory": [
+              {
+                "time": 0.0,
+                "c": 0.1,
+                "b": 1.5
+              },
+              {
+                "time": 1.0,
+                "c": 0.3637402175937954,
+                "b": 1.5
+              },
+              {
+                "time": 2.0,
+                "c": 0.883902913074111,
+                "b": 1.5
+              },
+              {
+                "time": 3.0,
+                "c": 1.2981101790899745,
+                "b": 1.5
+              },
+              {
+                "time": 4.0,
+                "c": 1.4496920185016076,
+                "b": 1.5
+              },
+              {
+                "time": 5.0,
+                "c": 1.4884744724568046,
+                "b": 1.5
+              },
+              {
+                "time": 6.0,
+                "c": 1.4974128639997542,
+                "b": 1.5
+              },
+              {
+                "time": 7.0,
+                "c": 1.4994219574033865,
+                "b": 1.5
+              },
+              {
+                "time": 8.0,
+                "c": 1.4998709826380725,
+                "b": 1.5
+              },
+              {
+                "time": 9.0,
+                "c": 1.499971210411638,
+                "b": 1.5
+              },
+              {
+                "time": 10.0,
+                "c": 1.4999935760787504,
+                "b": 1.5
+              },
+              {
+                "time": 11.0,
+                "c": 1.4999985666246531,
+                "b": 1.5
+              },
+              {
+                "time": 12.0,
+                "c": 1.4999996801704918,
+                "b": 1.5
+              },
+              {
+                "time": 13.0,
+                "c": 1.4999999286363783,
+                "b": 1.5
+              },
+              {
+                "time": 14.0,
+                "c": 1.4999999840766236,
+                "b": 1.5
+              },
+              {
+                "time": 15.0,
+                "c": 1.499999996447014,
+                "b": 1.5
+              },
+              {
+                "time": 16.0,
+                "c": 1.4999999992072222,
+                "b": 1.5
+              },
+              {
+                "time": 17.0,
+                "c": 1.4999999998231075,
+                "b": 1.5
+              },
+              {
+                "time": 18.0,
+                "c": 1.4999999999605298,
+                "b": 1.5
+              },
+              {
+                "time": 19.0,
+                "c": 1.4999999999911928,
+                "b": 1.5
+              },
+              {
+                "time": 20.0,
+                "c": 1.4999999999980356,
+                "b": 1.5
+              },
+              {
+                "time": 21.0,
+                "c": 1.4999999999995617,
+                "b": 1.5
+              },
+              {
+                "time": 22.0,
+                "c": 1.4999999999999023,
+                "b": 1.5
+              },
+              {
+                "time": 23.0,
+                "c": 1.4999999999999782,
+                "b": 1.5
+              },
+              {
+                "time": 24.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 25.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 26.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 27.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 28.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 29.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 30.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 31.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 32.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 33.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 34.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 35.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 36.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 37.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 38.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 39.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 40.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 41.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 42.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 43.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 44.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 45.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 46.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 47.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 48.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 49.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 50.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 51.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 52.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 53.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 54.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 55.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 56.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 57.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 58.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 59.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 60.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 61.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 62.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 63.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 64.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 65.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 66.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 67.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 68.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 69.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 70.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 71.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 72.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 73.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 74.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 75.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 76.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 77.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 78.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 79.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              },
+              {
+                "time": 80.0,
+                "c": 1.4999999999999925,
+                "b": 1.5
+              }
+            ]
+          }
+        },
+        "method": "RK4 at steps 0.02 and 0.01, t=80; proofs supply general claims",
+        "scope": "Boundary function and maintenance conditional on fixed patch geometry, supplied growth mechanism and external precursors; no organism or origin-of-life experiment."
+      }
+    },
+    {
+      "subject": "Differentiated records and consequential action",
+      "proof_note": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/viewpoint-audit.md",
+        "sha256": "d410e63639a42beca222e0282fc28e92884a229c33acd03b8c66fafeb5175dc1",
+        "text": "# Differentiated functional viewpoints inside one process\n\nConstructed for the new differentiation branch, 5 October 2026. This note reads the retained `nonseparation-and-selfhood.md` and `next-root-joint-organization.md` as constraints. It preserves them unchanged. The mathematics below is a deliberately small original construction; it does not claim historical novelty for finite controllers, state estimation, or sufficient statistics. No external literature claim is needed for its proofs.\n\n## The positive explanatory mechanism\n\nA functional viewpoint can arise through a concrete chain:\n\n**different causal contact → differently written internal records → retained differences after contact ends → different conditional predictions → actions that regulate a continuing organization.**\n\nThe mechanism is physical copying, retention, and controlled compensation. Its effects are calculated below. We do not begin with a subject possessing a private view and simply rename its perspective. We do supply a sensor–memory–actuator circuit, a criterion of continued functioning, and an asymmetric input field. Thus this explains how differentiated functional viewpoints are produced *given those mechanisms*. Their evolutionary or physical genesis and phenomenal experience are separate burdens. Another part of this investigation must address how the supporting organized units form.\n\n## One finite global dynamics\n\nThere are two sites, indexed A and B, with identical local circuitry. The shared field has two disturbance bits \\(h=(h_A,h_B)\\). A three-phase clock \\(\\phi\\in\\{0,1,2\\}\\), itself a state variable, controls sensing, retention/message exchange, and response. The disturbances remain fixed during a cycle. Each site has a stored bit \\(r_i\\), a message register \\(q_i\\), a viability bit \\(v_i\\), and a body-error bit \\(b_i\\). A nonviable circuit remains nonviable. A mode bit \\(\\gamma\\) specifies whether the disturbance entering a body depends on its local field bit alone or also on the other field bit.\n\nThe updates are:\n\n1. **Sense, phase 0:** a viable site copies its actual local field input, \\(r_i\\leftarrow h_i\\). This overwrites whatever was previously in that register. A nonviable site cannot perform the copy.\n2. **Hold/communicate, phase 1:** the current sensor input is a common blank zero, while the stored record persists. If a physical link is enabled and both circuits remain viable, \\(q_i\\leftarrow r_j\\). Otherwise it holds its previous value.\n3. **Respond, phase 2:** the circuit produces \\(a_i=v_i[r_i\\mathbin\\oplus(\\gamma q_i)]\\), the body error becomes\n\n\\[\nb_i'=a_i\\mathbin\\oplus h_i\\mathbin\\oplus(\\gamma h_j),\n\\qquad\nv_i'=v_i(1-b_i').\n\\tag{V1}\n\\]\n\nThe phase advances modulo three. Registers not mentioned at a phase hold their values. All variables and both controllers belong to one deterministic state transition. There is no outside agent selecting the actual response; an intervention used for analysis is distinct from the implemented update. The supplies that physically realize reliable copying, retention, and timing remain premises of this ideal model.\n\nSwapping A and B commutes with the full transition. Thus the laws do not assign one circuit a special perspective or privileged capacity. Different inputs or histories can nevertheless produce different internal states. If the inputs and complete histories are symmetric, the model does not spontaneously force their records to differ. The asymmetry has a specified source rather than arising from a label.\n\nThere are 6,144 possible global states in the supplied Boolean model, before choosing whether the message link is enabled. Exact enumeration verifies interchange symmetry for every state and both link settings: 12,288 checks. This is verification of a finite construction, not evidence that every actual being has this architecture.\n\n## The records are different information partitions\n\nStart both circuits viable, with arbitrary old records and body errors. After sensing, \\(R_A=h_A\\) and \\(R_B=h_B\\). Their records therefore identify different sets of still-possible field configurations:\n\n| Retained record | Field states compatible with that record |\n|---|---|\n| A records 0 | 00, 01 |\n| A records 1 | 10, 11 |\n| B records 0 | 00, 10 |\n| B records 1 | 01, 11 |\n\nThe partitions result from which field bit was physically copied. They are not independent realities. They are different losses of detail about one field. In a uniform preparation over the four field states, each local record carries one bit about the field and leaves one bit unresolved. These numerical uncertainty statements depend on that declared preparation; the compatibility partitions do not.\n\nAt the subsequent hold phase, both current sensor inputs are zero. Their records can still differ because of earlier contact. For example, in field 01, their records are 0 and 1 despite equal current inputs. Present input alone therefore cannot reconstruct the state that determines the coming response. This is a minimal exact role for history in a standpoint.\n\n## Why these records matter to a continuing system\n\nFirst take local mode \\(\\gamma=0\\). The implemented controller sets \\(a_i=r_i=h_i\\), so \\(b_i'=0\\) and both viable states persist for every one of the four field states. The record supports regulation across counterfactual disturbances. The maintained viable state in turn enables sensing and response in later cycles. This supplies an explicit functional loop, albeit with ideal memory and supplied energy/timing rather than a complete organism.\n\nIf the entire allowed decision statistic is independent of \\(h_i\\), no policy can guarantee this compensation. Under the uniform field preparation every deterministic constant action succeeds in exactly half the states. Randomization is a mixture of such policies and cannot improve the average beyond 1/2. This is a statement about a specified information restriction, not a claim that physically deleting one register prevents all imaginable alternate encodings.\n\nWe can also intervene on the actual retained record immediately before response. Flipping \\(r_i\\) while keeping the field and all other states fixed makes that circuit fail and leaves the other viable in local mode. Thus the recorded correlation is used causally for continuation. Merely being correlated with the surroundings is not sufficient for the sense of agency used here. This circuit satisfies the additional operational conditions of retained discrimination, action selection, regulation under varying disturbances, and dependence of future functioning on the regulated state. We do not assert that these conditions are sufficient for consciousness or for every richer concept of a self.\n\nWhat is relevant differs by site because its maintained state has a different disturbance channel. The local field bit is useful to its own compensation task; the other bit alone is useless for that task under the uniform independent preparation. This is a concrete way in which a shared field acquires different action significance at different organized locations. The local viability condition is supplied by the model, not derived as a universal moral value.\n\n## Exact criterion: when a viewpoint contains the needed distinction\n\nLet \\(\\Omega\\) be a finite set of possible field states, \\(R:\\Omega\\to\\mathcal R\\) the record actually produced, and \\(T:\\Omega\\to\\{0,1\\}\\) the compensation required. A deterministic policy based only on the record can succeed for every field state exactly when\n\n\\[\n\\boxed{R(\\omega)=R(\\omega')\\ \\Longrightarrow\\ T(\\omega)=T(\\omega').}\n\\tag{V2}\n\\]\n\nNecessity follows because equal records require the same chosen action. If those states require different actions, at least one fails. For sufficiency, choose the common required action on each record class. With arbitrary preparation probabilities the optimal average accuracy is\n\n\\[\n\\sum_r\\max_{t\\in\\{0,1\\}}\\Pr(R=r,T=t).\n\\tag{V3}\n\\]\n\nThe record partition therefore has to preserve the distinctions demanded by the consequence under consideration. This is a consequence-relative adequacy criterion, not a declaration that all retained distinctions are equally important.\n\nFor local mode, each record meets the criterion for its own body's continuation. In coupled mode \\(\\gamma=1\\), both bodies instead require \\(T=h_A\\oplus h_B\\). The required classes are \\(\\{00,11\\}\\) and \\(\\{01,10\\}\\). Neither local record preserves this distinction: for example, 00 and 01 look identical to A but require opposite actions. Every one of the four deterministic one-bit policies has accuracy exactly 1/2; randomization cannot improve it. Failure arises from the missing consequence-relevant distinction, despite a perfectly accurate local record.\n\nThis is also a constructive answer to noticing an omitted possibility: **seek two allowed situations that leave the recorded state unchanged but alter the required or predicted consequence.** Finding such a pair proves an omission. It does not supply a guaranteed procedure for finding every unknown pair in the actual world.\n\n## Communication changes which viewpoint is possible\n\nEnable the message link during the hold phase. The other record is physically copied into \\(q_i\\). The pair \\((r_i,q_i)\\) now determines the two-bit field, up to the known ordering at each site. The implemented coupled-mode controller sets \\(a_i=r_i\\oplus q_i\\), so both bodies remain viable for every field state. A one-bit message to each site repairs this particular missing distinction.\n\nNo omniscient external observer is inserted. Two situated circuits have acquired broader knowledge through a new causal channel. Under the uniform preparation each augmented record carries two bits about the supplied field. Unlimited access is not implied beyond those modeled variables. Conversely, differentiated viewpoints are not necessarily condemned to disagree forever: sufficiently informative interaction can make their relevant predictions agree.\n\nThe coupled mode makes this more than two unrelated local examples pasted into a single notation: each body's condition depends on both disturbance ports, and a message carrying the other circuit's acquired record affects its continuation. The distinction between adequate local control and the need for exchange is calculated by the same equations with a declared coupling parameter.\n\n## A restricted operational meaning of self/other\n\nThe model distinguishes three relations that ordinary talk about self can conflate:\n\n- **What informs this circuit:** the field bit written into its record and any messages later received.\n- **What this circuit directly controls:** varying \\(a_i\\) at fixed disturbances changes \\(b_i'\\), while varying \\(a_j\\) does not. The actuator-to-body intervention matrix is diagonal in this construction, including in coupled mode.\n- **What enables its continuation:** the condition \\(v_i=1\\), maintained through compensation, permits its own later sensing and response.\n\nThese relations can be established by the specified transition and counterfactual intervention; an irreducible owner is not among the model variables. They need not coincide in richer systems: a tool can enlarge causal reach, communication can enlarge information, and resource dependence can extend much farther than either. Causal controllability alone therefore does not define an organism or establish moral ownership. The model explains a functional indexical—this record regulates this continuing circuit—conditional on its physical implementation. It does not explain why anything feels like being that circuit.\n\n## Status and exact verification\n\nThe script `check_viewpoints.py` and result `viewpoint-checks.json` record:\n\n- 12,288 global site-swap symmetry checks on 6,144 states and two link settings.\n- 64 local-mode all-field/old-record/body-state regulation trials.\n- 64 coupled-mode communication regulation trials over the same preparations.\n- Eight record-flip intervention checks.\n- All four local deterministic policies, for both sites and both modes.\n- The sufficiency criterion for every one of the 16 binary target functions on the four field states and both local record maps: 32 checks.\n\nThe general claims have short proofs above. No physical, biological, human, or artificial consciousness experiment was performed. The result establishes that different functional viewpoints can be generated and used within one explicitly specified process. It neither proves metaphysical monism nor reduces phenomenal first-person experience to information partitions.\n"
+      },
+      "check_program": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/check_viewpoints.py",
+        "sha256": "80cf4a735252bf856ab4efbf9f81acb4748abbf66d89fe6a610b4075c5e9ada7",
+        "text": "\"\"\"Exact finite checks for viewpoint-audit.md; no external dependencies.\"\"\"\nfrom itertools import product\nfrom fractions import Fraction\nimport json\nfrom pathlib import Path\n\n# State: phase, mode, disturbances, records, messages, viability, body errors.\n# Two identical circuits. Mode 0 requires local compensation; mode 1 adds\n# the other site's disturbance. The message link is controlled by link.\ndef step(s, link):\n    phase, mode, h, r, q, v, b = s\n    if phase == 0:\n        r = tuple(h[i] if v[i] else r[i] for i in range(2))\n    elif phase == 1 and link:\n        q = tuple(r[1-i] if v[i] and v[1-i] else q[i] for i in range(2))\n    elif phase == 2:\n        a = tuple(v[i] * (r[i] ^ (mode * q[i])) for i in range(2))\n        b = tuple(a[i] ^ h[i] ^ (mode * h[1-i]) for i in range(2))\n        v = tuple(v[i] * (1-b[i]) for i in range(2))\n    return ((phase+1) % 3, mode, h, r, q, v, b)\n\ndef swap(s):\n    phase, mode, *pairs = s\n    return (phase, mode, *(tuple(reversed(p)) for p in pairs))\n\nbits = tuple(product((0, 1), repeat=2))\nstates = tuple((p, mode, h, r, q, v, b)\n               for p in range(3) for mode in (0, 1)\n               for h, r, q, v, b in product(bits, repeat=5))\nsymmetry_checks = 0\nfor s in states:\n    for link in (False, True):\n        assert step(swap(s), link) == swap(step(s, link))\n        symmetry_checks += 1\n\nlocal_trials = message_trials = turnover_trials = 0\nfor h, r0, b0 in product(bits, repeat=3):\n    s = (0, 0, h, r0, (0, 0), (1, 1), b0)\n    for _ in range(3):\n        s = step(s, False)\n    assert s[-2] == (1, 1) and s[-1] == (0, 0)\n    local_trials += 1\n    s = (0, 1, h, r0, (0, 0), (1, 1), b0)\n    for _ in range(3):\n        s = step(s, True)\n    assert s[-2] == (1, 1) and s[-1] == (0, 0)\n    message_trials += 1\n\n# Local state has an actually copied record and a currently blank sensor.\nhistory_cases = []\nfor h in bits:\n    s = step((0, 0, h, (0, 0), (0, 0), (1, 1), (0, 0)), False)\n    assert s[0] == 1 and s[3] == h\n    history_cases.append({\"field\": h, \"records\": s[3], \"current_sensors\": (0, 0)})\n\n# Exhaust all deterministic policies based only on one local bit.\npolicies = bits  # a = policy[local_record]\npolicy_results = []\nfor i in range(2):\n    for mode in (0, 1):\n        for policy in policies:\n            correct = sum(policy[h[i]] == (h[i] ^ (mode*h[1-i])) for h in bits)\n            policy_results.append({\"site\": i, \"mode\": mode, \"policy\": policy,\n                                   \"accuracy\": str(Fraction(correct, 4))})\n        best = max(sum(policy[h[i]] == (h[i] ^ (mode*h[1-i])) for h in bits)\n                   for policy in policies)\n        assert best == (4 if mode == 0 else 2)\n\nconstant_success = [sum(a == h[0] for h in bits) for a in (0, 1)]\nassert constant_success == [2, 2]\n\n# Intervene on each stored record after sensing, with messages disabled and\n# local mode. The targeted circuit fails; the other remains viable.\nrecord_interventions = 0\nfor h in bits:\n    for i in range(2):\n        r = list(h)\n        r[i] ^= 1\n        s = step((2, 0, h, tuple(r), (0, 0), (1, 1), (0, 0)), False)\n        assert s[-2][i] == 0 and s[-2][1-i] == 1\n        record_interventions += 1\n\n# All binary target functions on four field states: exact regulation iff\n# target is constant on every record fiber. Check every deterministic policy.\nsufficiency_checks = 0\nfor target in product((0, 1), repeat=4):\n    for i in range(2):\n        fiber_constant = all(target[a] == target[b]\n                             for a, ha in enumerate(bits)\n                             for b, hb in enumerate(bits) if ha[i] == hb[i])\n        feasible = any(all(policy[h[i]] == target[k] for k, h in enumerate(bits))\n                       for policy in policies)\n        assert fiber_constant == feasible\n        sufficiency_checks += 1\n\nreport = {\n    \"arithmetic\": \"Finite Boolean enumeration and exact rational accuracies\",\n    \"global_states\": len(states),\n    \"site_swap_equivariance_checks\": symmetry_checks,\n    \"local_regulation_trials\": local_trials,\n    \"coupled_regulation_with_message_trials\": message_trials,\n    \"record_intervention_checks\": record_interventions,\n    \"all_binary_target_sufficiency_checks\": sufficiency_checks,\n    \"history_cases\": history_cases,\n    \"exhaustive_local_policy_results\": policy_results,\n    \"private_view_classes\": {\n        \"A\": [[[0, 0], [0, 1]], [[1, 0], [1, 1]]],\n        \"B\": [[[0, 0], [1, 0]], [[0, 1], [1, 1]]],\n        \"parity_required_classes\": [[[0, 0], [1, 1]], [[0, 1], [1, 0]]]\n    },\n    \"proved_not_measured\": [\n        \"Claims are conditional on supplied copying, retention, actuator, timing and viability mechanisms.\",\n        \"No claim about phenomenal experience or the historical origin of these mechanisms.\",\n        \"Uniform disturbance ensemble is used for accuracy comparisons; deterministic regulation is all-state.\"\n    ]\n}\nPath(__file__).with_name(\"viewpoint-checks.json\").write_text(json.dumps(report, indent=2)+\"\\n\")\nprint(json.dumps({k: report[k] for k in list(report)[:7]}, indent=2))\n"
+      },
+      "result_file": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/viewpoint-checks.json",
+        "sha256": "19d4c0fd6e1c39275bed8691cb5bacdb9d87902b31680a240ec6978656bf8474"
+      },
+      "results": {
+        "arithmetic": "Finite Boolean enumeration and exact rational accuracies",
+        "global_states": 6144,
+        "site_swap_equivariance_checks": 12288,
+        "local_regulation_trials": 64,
+        "coupled_regulation_with_message_trials": 64,
+        "record_intervention_checks": 8,
+        "all_binary_target_sufficiency_checks": 32,
+        "history_cases": [
+          {
+            "field": [
+              0,
+              0
+            ],
+            "records": [
+              0,
+              0
+            ],
+            "current_sensors": [
+              0,
+              0
+            ]
+          },
+          {
+            "field": [
+              0,
+              1
+            ],
+            "records": [
+              0,
+              1
+            ],
+            "current_sensors": [
+              0,
+              0
+            ]
+          },
+          {
+            "field": [
+              1,
+              0
+            ],
+            "records": [
+              1,
+              0
+            ],
+            "current_sensors": [
+              0,
+              0
+            ]
+          },
+          {
+            "field": [
+              1,
+              1
+            ],
+            "records": [
+              1,
+              1
+            ],
+            "current_sensors": [
+              0,
+              0
+            ]
+          }
+        ],
+        "exhaustive_local_policy_results": [
+          {
+            "site": 0,
+            "mode": 0,
+            "policy": [
+              0,
+              0
+            ],
+            "accuracy": "1/2"
+          },
+          {
+            "site": 0,
+            "mode": 0,
+            "policy": [
+              0,
+              1
+            ],
+            "accuracy": "1"
+          },
+          {
+            "site": 0,
+            "mode": 0,
+            "policy": [
+              1,
+              0
+            ],
+            "accuracy": "0"
+          },
+          {
+            "site": 0,
+            "mode": 0,
+            "policy": [
+              1,
+              1
+            ],
+            "accuracy": "1/2"
+          },
+          {
+            "site": 0,
+            "mode": 1,
+            "policy": [
+              0,
+              0
+            ],
+            "accuracy": "1/2"
+          },
+          {
+            "site": 0,
+            "mode": 1,
+            "policy": [
+              0,
+              1
+            ],
+            "accuracy": "1/2"
+          },
+          {
+            "site": 0,
+            "mode": 1,
+            "policy": [
+              1,
+              0
+            ],
+            "accuracy": "1/2"
+          },
+          {
+            "site": 0,
+            "mode": 1,
+            "policy": [
+              1,
+              1
+            ],
+            "accuracy": "1/2"
+          },
+          {
+            "site": 1,
+            "mode": 0,
+            "policy": [
+              0,
+              0
+            ],
+            "accuracy": "1/2"
+          },
+          {
+            "site": 1,
+            "mode": 0,
+            "policy": [
+              0,
+              1
+            ],
+            "accuracy": "1"
+          },
+          {
+            "site": 1,
+            "mode": 0,
+            "policy": [
+              1,
+              0
+            ],
+            "accuracy": "0"
+          },
+          {
+            "site": 1,
+            "mode": 0,
+            "policy": [
+              1,
+              1
+            ],
+            "accuracy": "1/2"
+          },
+          {
+            "site": 1,
+            "mode": 1,
+            "policy": [
+              0,
+              0
+            ],
+            "accuracy": "1/2"
+          },
+          {
+            "site": 1,
+            "mode": 1,
+            "policy": [
+              0,
+              1
+            ],
+            "accuracy": "1/2"
+          },
+          {
+            "site": 1,
+            "mode": 1,
+            "policy": [
+              1,
+              0
+            ],
+            "accuracy": "1/2"
+          },
+          {
+            "site": 1,
+            "mode": 1,
+            "policy": [
+              1,
+              1
+            ],
+            "accuracy": "1/2"
+          }
+        ],
+        "private_view_classes": {
+          "A": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "B": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "parity_required_classes": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          ]
+        },
+        "proved_not_measured": [
+          "Claims are conditional on supplied copying, retention, actuator, timing and viability mechanisms.",
+          "No claim about phenomenal experience or the historical origin of these mechanisms.",
+          "Uniform disturbance ensemble is used for accuracy comparisons; deterministic regulation is all-state."
+        ]
+      }
+    }
+  ],
+  "conceptual_audit": {
+    "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/conceptual-audit.md",
+    "sha256": "91a32e8d080cb7727d81a3942cdecc0f1dc7d87033be7e5316446e68d40bd59a"
+  },
+  "external_primary_sources": [
+    {
+      "title": "Turing, The Chemical Basis of Morphogenesis, 1952",
+      "url": "https://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf",
+      "scope": "Primary paper section 4, particularly journal pages 41-43; symmetry and perturbation discussion. Our finite phase-separation equations are not attributed to this paper.",
+      "review_date": "2026-10-05"
+    },
+    {
+      "title": "Hanczyc, Fujikawa and Szostak, Experimental Models of Primitive Cellular Compartments, 2003",
+      "url": "https://www.microeco.ethz.ch/uni/kurs/mikevol03/scinews/Science_302_2003_618.pdf",
+      "scope": "Primary article abstract and indexed full-text assembly, retention, growth and extrusion passages. Supports physical compartment formation components, not our ODE or complete autonomous life.",
+      "review_date": "2026-10-05"
+    },
+    {
+      "title": "Cahn and Hilliard, Free Energy of a Nonuniform System I, 1958",
+      "url": "https://doi.org/10.1063/1.1744102",
+      "scope": "Primary abstract reviewed by mathematical audit for phase-field historical context only. Full paper not reviewed; finite graph proofs are derived directly.",
+      "review_date": "2026-10-05"
+    },
+    {
+      "title": "Barandiaran, Di Paolo and Rohde, Defining Agency, 2009",
+      "url": "https://xabier.barandiaran.net/wp-content/uploads/2009/07/barandiaran_dipaolo_rohde_-_defining_agency_v_1_0_-_jab_20091.pdf",
+      "scope": "Conceptual auditor read sections 2-3. Context for proposed agency criteria, not a universal test or a consciousness result.",
+      "review_date": "2026-10-05"
+    },
+    {
+      "title": "Kolchinsky and Wolpert, Semantic information, autonomous agency, and nonequilibrium statistical physics, 2018",
+      "url": "https://arxiv.org/pdf/1806.08053",
+      "scope": "Conceptual auditor read sections IV-V, including intervention and investigator-chosen viability function limits. Background only; finite-circuit proof derived independently.",
+      "review_date": "2026-10-05"
+    },
+    {
+      "title": "Bruineberg and colleagues, The Emperor's New Markov Blankets, 2022",
+      "url": "https://manuelbaltieri.com/assets/pdf/EmperorMarkovBlanketsAccepted.pdf",
+      "scope": "Conceptual auditor read abstract, introduction, sections 5.1-5.2. Methodological critique informs boundary criteria; not a universal rejection of statistical boundaries.",
+      "review_date": "2026-10-05"
+    }
+  ],
+  "other_session_sources": [
+    {
+      "source": {
+        "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-FOUNDATION.md",
+        "sha256": "28fff27053f06e4fb644e5c6b42e2c4dff6865c9cbe0e3a73e5b671ef5d17eea"
+      },
+      "snapshot": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/source-snapshots/continuing-realizability.md",
+        "sha256": "28fff27053f06e4fb644e5c6b42e2c4dff6865c9cbe0e3a73e5b671ef5d17eea",
+        "text": "# The root of alignment as continuing realizability\n\nMathematical development for Alignment as the Reproduction of Its Conditions. Prepared 5 October 2026. Research direction: Yongxu Ren. AI-assisted derivation and internal review. This document advances the universal-core question beyond an analogy with backpropagation or an assertion that every change is selection.\n\nSubsequent assessment: [physical scope, originality and measured performance](../foundation-assessment/ASSESSMENT.md) adds a stochastic support theorem, locates stronger prior competitors, and reports no primary gain in a new exploratory measured-data comparison. The conditional proofs below are retained; novelty, physical coverage and comparative performance should be read in light of that assessment.\n\nThe advance has three parts. We identify an operational object that is invariant under faithful descriptions; derive when finite, vulnerable supports necessarily imply recurrent provision or renewal cycles; and prove an exact resource threshold for continuing informed action. These are conditional mathematical results. They do not identify persistence with truth, prove a universal ethical objective, or establish that every physical process realizes the full selection–renewal mechanism.\n\nThe revised core is:\n\n> What a situated system can distinguish and bring about constrains its possible functioning. Continued functioning requires the continuation of the relevant possibilities. When their implementations have finite lifetimes or sustained losses, continuation beyond inherited support requires renewed provision. Under finite-network and vulnerability assumptions, that provision must trace to continuing outside sources or internal renewal cycles. When the function requires informed correction, the observation and execution capacities are among the conditions that must continue.\n\nThis develops a theory of conditions of possibility, not a new numerical constant of nature. Its force comes from exact implications and identifiable assumptions. The [previous integrated theory](../final-synthesis/INTEGRATED-THEORY.md) remains the detailed account of selection, maintenance, bounded learning, participation, succession, and normative amendments.\n\n## 1 The invariant is what the system can actually accomplish\n\nFor a declared physical or causal model family indexed by \\(\\theta\\), let \\(\\Pi(h)\\) be the policies implementable from actual history \\(h\\). This includes the real observation interface, available commands, memory, time, costs, and any modeled refusal. Let \\(P_\\theta^{\\pi,h}\\) be the law of the consequences retained by the inquiry. Define the attainable response-profile set\n\n\\[\n\\mathscr R(h)=\\left\\{\\bigl(P_\\theta^{\\pi,h}\\bigr)_\\theta:\n\\pi\\in\\Pi(h)\\right\\}.\n\\tag{R1}\n\\]\n\nOne common policy must operate across unresolved possibilities. The definition does not grant a different policy for each hidden true world. Nor does it combine the consequences for different parties into one reward. A requirement is a specified acceptance set \\(\\mathscr A\\) of profiles; its feasibility is the assertion \\(\\mathscr R(h)\\cap\\mathscr A\\ne\\varnothing\\).\n\n**Proposition R1 Faithful description preserves capability.** Suppose two descriptions preserve initial uncertainty, joint transition and observation laws, the meanings of interventions and retained consequences, and implementable policies in both directions. Then their attainable response-profile sets agree after the corresponding relabeling. Every feasibility question expressed through those profiles therefore has the same answer.\n\n**Proof.** Transport a policy through the faithful interface mapping. Its initial law agrees, and induction on the actual history shows that each next action, observation, and state transition has the corresponding law. Thus every attainable profile in the first description is attained in the second. The inverse mapping supplies the reverse inclusion. Intersection with any corresponding acceptance set preserves nonemptiness. ∎\n\nThe [invariance companion](INVARIANCE-AND-PRIOR-ART.md) states a finite hidden-state version precisely. This strengthens the interpretation of the earlier canonical representation: the relevant invariant is not the spelling or number of variables, but preserved distinctions and feasible consequences under actual interventions.\n\nA full labeled intervention-response model contains more information than the attainable set. For example, swapping which of two action labels produces zero and one leaves the set of achievable outcome distributions unchanged while changing the prediction for each named intervention. Capability equivalence therefore does not certify the causal identity of an action. The companion supplies the exact witness.\n\nAn improved sensor enlarges capabilities only when the old policies remain implementable. If receiving its output consumes the deadline or the reserve needed for action, the physical modification may shrink \\(\\mathscr R\\). The mathematical value of additional free information and the physical cost of supplying information are separate questions.\n\nThe set \\(\\mathscr R\\) is not generally constant in time. It is invariant under faithful redescription of the same situation. Activity can enlarge or shrink the next situation's attainable set by changing skills, resources, permissions, models, and social relations. That change is the object the generative theory needs to explain.\n\n## 2 The time scale argument yields a finite theorem\n\nThe earlier discussion left open whether extending time necessarily reveals renewal. A finite-lifetime model gives a stronger answer than the statement that a function needs its conditions.\n\nConsider \\(n\\) named types of functional support. Every instance of type \\(i\\) has a maximum unrenewed lifetime \\(\\tau_i>0\\). A renewal is treated as a new instance for this accounting. Initial instances were established no later than time zero. Every later establishment of type \\(i\\) requires at least one currently functioning earlier parent instance of a permitted type \\(j\\). Draw the edge \\(j\\to i\\). There is no later external entry of an organizational support instance. Physical matter and energy inputs may remain boundary assumptions, but any input that actually supplies a functioning instance or resets its lifetime must be counted.\n\nThe type set, lifetime bounds, and parent relations must be specified independently. Self-renewal is a self-loop; calling the same carrier by the same name does not erase its renewal event. Processes have no infinite event accumulation in finite time. Multiple parents and redundant supply routes are permitted; the graph includes the possible required parent relations.\n\n**Theorem R2 Acyclic support has a finite continuation deadline.** If the type graph is acyclic, define in topological order\n\n\\[\nd_i=\\tau_i+\\max\\bigl(\\{0\\}\\cup\\{d_j:j\\to i\\}\\bigr).\n\\tag{R2}\n\\]\n\nEvery functioning instance of type \\(i\\) expires no later than \\(d_i\\). Consequently no tracked support can remain functioning after\n\n\\[\nD=\\max_i d_i\\le\\sum_{i=1}^n\\tau_i.\n\\tag{R3}\n\\]\n\n**Proof.** A source type has only its initial instances, all expiring by \\(\\tau_i\\). Suppose all predecessor bounds have been established. Any later type-\\(i\\) instance must be created while at least one predecessor still functions, so its creation time is no later than the maximum predecessor expiry. Adding its lifetime proves (R2). Topological induction completes the argument. The recursion sums lifetimes along directed paths; an acyclic path visits each type at most once, proving (R3). ∎\n\nFor a chain with lifetime bounds two, three, and five time units, the last possible functional expiry is bounded by ten. Observing continuation after ten would refute the jointly specified acyclic, bounded-lifetime, closed-entry model. At least one proposed lifetime, dependency, type restriction, entry boundary, or acyclicity claim would need correction.\n\n**This is a precise version of the time scale insight:** if a finite vulnerable organization persists beyond the entire acyclic inheritance horizon, an account containing only one-way inherited support is inadequate. It must include a renewal cycle or a violation of the stated boundary assumptions. A short observation window can conceal this necessity.\n\nA type-level renewal cycle is compatible with ordinary forward causation. Every individual event is caused by earlier events; the repeated type labels form the cycle across time. The theorem does not require an event to cause itself in its own past.\n\nCycles are necessary under these premises, but not sufficient for functioning. They may be too slow, too weak, inaccessible from the initial state, or unable to supply all jointly required functions. The previous mechanism and feasibility results address those further questions. Nor must every maintained component lie on a cycle: some can receive support downstream from one.\n\n## 3 Sustained loss gives a second route to recurrent closure\n\nBounded lifetimes are sometimes inappropriate. Another formulation uses finite stocks with explicit provision. For finitely many support types, write cumulative balances\n\n\\[\nC_i(t)=C_i(0)+E_i(t)+\\sum_jR_{ji}(t)-L_i(t),\n\\qquad C_i(t)\\ge0.\n\\tag{R4}\n\\]\n\nInitial stocks are finite. \\(E_i\\) is cumulative external provision, \\(R_{ji}\\) cumulative internal provision from \\(j\\), and \\(L_i\\) cumulative loss. All cumulative provision and loss terms are nonnegative, nondecreasing, and finite on finite intervals. Internal provision must be causally justified; arbitrary retrospective credit assignment does not identify a support relation.\n\nIf \\(L_i(t)\\to\\infty\\), balance forces unbounded cumulative provision to \\(i\\). Since there are finitely many inputs, either its external provision is unbounded or at least one internal supplier contributes an unbounded amount. To follow that supplier backward, an additional assumption is indispensable: **a supplier providing unbounded cumulative internal service must itself face unbounded cumulative loss of a tracked capacity.** A permanently durable supplier would not satisfy this productive-vulnerability premise.\n\n**Theorem R3 Recurrent support ancestry.** Under these assumptions, every node with unbounded cumulative loss is downstream, in the graph of unbounded cumulative internal provision, from an external recurrent source or a directed internal cycle.\n\n**Proof.** Start from the node. If its external provision is unbounded, stop. Otherwise choose an internal predecessor with unbounded provision. Productive vulnerability gives unbounded loss for that predecessor, so repeat. A backward path in a finite graph either encounters an external recurrent source or repeats a node, creating a cycle. Reversing the traversed edges gives a forward provision path to the original node. ∎\n\nThis proof does not assume that all edges operate simultaneously, or that one time-independent equilibrium exists. It is a statement about recurrent provision across the observation horizon. Unbounded cumulative flow alone does not imply a positive limiting average rate or bounded gaps between renewals.\n\nWithout recurrent external organizational supply, the theorem requires an internal cycle upstream. It does not require energetic isolation: externally supplied energy can be indispensable even when the organization of its conversion is internally renewed. Conversely, merely declaring an input to be “background” does not make its organizational contribution disappear.\n\nAn infinite acyclic succession of new supplier types, a durable catalyst, a finite total loss, or recurring external establishment can evade this conclusion by violating a premise. These are explicit alternatives, not defects to hide by broadening the word selection. The [turnover companion](TURNOVER-AND-CLOSURE.md) gives the full scope and examples.\n\nThe companion also supplies a quantitative obstruction. If independently measured service and replacement bounds imply \\(S(t)\\le k+BS(t)\\), with finite nonnegative \\(k\\) and nonnegative \\(B\\), then \\(\\rho(B)<1\\) implies\n\n\\[\nS(t)\\le (I-B)^{-1}k.\n\\tag{R4a}\n\\]\n\nThe inverse is nonnegative because it equals \\(\\sum_{m\\ge0}B^m\\). Under the companion's routing and loss bounds, total turnover is then bounded too. Thus a cycle can exist while remaining incapable of sustaining unbounded turnover. For this bound, \\(\\rho(B)\\ge1\\) is necessary for unbounded service, but is not sufficient. Positive changes of service units give \\(B'=DBD^{-1}\\) and preserve the spectral radius. This is another exact invariance, with explicit conversion coefficients rather than an assumption that all forms of support share one unit.\n\n## 4 Informed action has a joint information and execution boundary\n\nThe preceding results apply to any specified vulnerable function. To connect them to reasonableness, specify a modest epistemic function: correctly respond to a fresh circumstance by an operational deadline. This concerns factual responsiveness, not the truth of every proposition or the justice of every aim.\n\nFor two equally likely circumstances with observation laws \\(P_0,P_1\\), the smallest classification error is\n\n\\[\ne^*=\\frac{1-\\operatorname{TV}(P_0,P_1)}2.\n\\tag{R5}\n\\]\n\nFor finite observations, choose the more likely circumstance at each observation; the resulting error is \\(\\frac12\\sum_o\\min(P_0(o),P_1(o))\\), which equals (R5). Thus a required error limit imposes an information distinction; mere internal confidence cannot substitute for it.\n\nNow make the channel and execution physically vulnerable. At each task the true context is a fresh fair bit, independent of the preceding record. With probability \\(c\\), an observation reveals the bit exactly; otherwise it reports an erasure. The erasure carries no information about the bit. The channel is an explicit modeling choice, not a claim that all knowledge is an erasure channel.\n\nIts best per-task error, conditional on each realized history before the task observation and the current channel reliability, is \\((1-c)/2\\). We require continuous readiness: this conditional error must remain at most \\(0<\\varepsilon<1/2\\) at every time when a demand could arrive. This requires\n\n\\[\nc\\ge c_*:=1-2\\varepsilon.\n\\tag{R6}\n\\]\n\nLet \\(u(t)\\in[0,1]\\) be effort allocated to maintaining this channel. The remaining effort replenishes an execution reserve \\(b\\). A continuous operating model is\n\n\\[\n\\dot c=\\alpha u(1-c)-\\delta c,\n\\qquad\n\\dot b=s(1-u)-q,\n\\tag{R7}\n\\]\n\nwhere \\(\\alpha,\\delta,s,q>0\\). Error is evaluated probabilistically at each task; it is not a guarantee that no individual answer is ever wrong. The reserve represents the separate ability to provide the required service, with \\(b\\ge0\\). The effort law may depend on the available history. Both inequalities must hold continuously for each realized effort schedule. A marginal error averaged across histories, or accuracy required only at known isolated demand times, defines a weaker problem and does not imply this pointwise floor. Both requirements must be satisfied, rather than traded away inside one score.\n\nDefine\n\n\\[\nu_{\\min}=\\frac{\\delta c_*}{\\alpha(1-c_*)},\n\\qquad\nu_{\\max}=1-\\frac qs.\n\\tag{R8}\n\\]\n\n**Theorem R4 Exact indefinite feasibility boundary.** From an initial \\(c(0)\\in[c_*,1)\\) and finite \\(b(0)\\ge0\\), there exists a policy maintaining both requirements indefinitely if and only if\n\n\\[\nu_{\\min}\\le u_{\\max}.\n\\tag{R9}\n\\]\n\nIf the inequality holds, any constant \\(u\\in[u_{\\min},u_{\\max}]\\) is sufficient. If it fails, no adaptive or time-varying policy can avoid failure indefinitely.\n\n**Proof of sufficiency.** At \\(c=c_*\\), effort at least \\(u_{\\min}\\) makes \\(\\dot c\\ge0\\), while at \\(c=1\\) the derivative is \\(-\\delta<0\\); hence \\([c_*,1]\\) is invariant. Effort at most \\(u_{\\max}\\) makes \\(\\dot b\\ge0\\). The interval lies inside \\([0,1]\\) whenever it is nonempty because \\(u_{\\min}>0\\) and \\(u_{\\max}<1\\). ∎\n\n**Proof of necessity and a finite deadline.** As long as both requirements hold, the auxiliary quantity\n\n\\[\nW=\\frac bs+\n\\frac1\\alpha\\log\\frac{1-c_*}{1-c}\n\\ge0\n\\tag{R10}\n\\]\n\nhas derivative\n\n\\[\n\\dot W=u_{\\max}-\\frac{\\delta c}{\\alpha(1-c)}\n\\le u_{\\max}-u_{\\min}.\n\\tag{R11}\n\\]\n\nThe control cancels. If \\(d=u_{\\min}-u_{\\max}>0\\), a trajectory cannot remain acceptable beyond \\(W(0)/d\\), because the upper bound on \\(W\\) would become negative. This applies pathwise to admissible effort schedules. The initial perfect-channel case \\(c(0)=1\\) can be handled after a positive time: \\(\\delta>0\\) makes it immediately imperfect, restoring the finite expression. ∎\n\nThe logarithmic term is an accounting device for usable reliability reserve, not a utility or thermodynamic entropy. No universal energy-per-truth cost is claimed. The coefficients are application-specific physical or organizational rates that would need measurement.\n\n### An exact deadline that adaptation cannot evade\n\nTake \\(\\alpha=6,\\delta=1,s=4,q=1\\). At tolerated error \\(\\varepsilon=1/10\\), the viable effort interval is\n\n\\[\n2/3\\le u\\le3/4.\n\\tag{R12}\n\\]\n\nThe smallest indefinitely sustainable error in this model is \\(1/11\\). Demand the stricter \\(\\varepsilon=5/58\\), so \\(c_*=24/29\\) and \\(u_{\\min}=4/5>3/4=u_{\\max}\\). From \\(c(0)=c_*\\) and \\(b(0)=1\\), equation (R11) gives the exact upper bound of five time units. Constant effort \\(u=4/5\\) keeps the channel exactly at the required accuracy and spends reserve at rate \\(1/5\\), attaining that bound. Every policy eventually loses either the accuracy guarantee or executable service; rearranging effort cannot create a missing resource.\n\nThis is a quantitative connection between informed correction and reproduction of its conditions. It is stronger than saying that information is useful, and more limited than a universal law of rationality.\n\nThe timing requirement is essential. Under the same stricter accuracy target, a system that is assessed only at selected times can alternate a full-maintenance interval with an execution-provision interval and meet accuracy at the ends of maintenance indefinitely, while falling below the accuracy floor between assessments. The information companion gives the explicit schedule. Passing those scheduled tests does not establish continuously available correction. This is a mathematical distinction between two service claims; whether an actual institution or AI system exploits that distinction is an empirical question.\n\n## 5 Selection can reproduce either adequate or inadequate correction\n\nThe feasibility interval says what could be maintained. A separate mechanism must explain what is actually maintained. The information companion supplies a constructed selection model with \\(u(x)=1/2+x/5\\):\n\n\\[\n\\dot c=6u(x)(1-c)-c,\n\\qquad\n\\dot x=x(1-x)(5c-4).\n\\tag{R13}\n\\]\n\nHere \\(x\\) is the share of a higher-renewal practice. The declared selection law favors that practice only when reliability is already sufficiently high. The two locally attracting equilibria are\n\n\\[\n(c,x)=(3/4,0),\\qquad (c,x)=(21/26,1),\n\\tag{R14}\n\\]\n\nseparated locally by the saddle at \\((4/5,5/6)\\). At required error \\(1/10\\), the lower equilibrium fails the accuracy condition while the upper one satisfies it. Both can reproduce their own practice-selection conditions. The companion verifies stability and provides explicit invariant regions; it does not claim a complete global basin classification.\n\nThus selection–renewal feedback can generate both persistent epistemic failure and persistent adequate response. Its presence does not select truth automatically. A theory of alignment must assess which independently specified function is maintained and how transitions between regimes can actually be implemented.\n\n## 6 What the three results establish together\n\nThe results can be joined under their common application assumptions:\n\n1. A required response profile must belong to the system's attainable set; no faithful change of description alters this feasibility.\n2. If the response requires discriminating circumstances, actual observation channels must provide the corresponding distinction, and execution must remain feasible.\n3. If those capacities are implemented by finitely many support types satisfying the lifetime or productive-vulnerability premises, their continuing provision must have the recurrent ancestry described in R2 or R3.\n4. Supplied selection and renewal mechanisms can then explain which feasible or infeasible regimes the actual system enters and retains.\n\nThis yields the more substantive conditional conclusion:\n\n> Sustained informed correction by a finite vulnerable organization requires recurrent provision of its ability to distinguish relevant circumstances and execute responses. Beyond the acyclic inheritance horizon, that provision must involve continuing organizational input from outside the modeled system or internal renewal cycles in its support ancestry.\n\nThe conclusion is a necessity, not a promise that the required capacities or cycles exist. It is universal over the stated class. It does not require a uniform human purpose, literal biological reproduction, centralized optimization, or a special financial vocabulary.\n\nIt also does not say that every physical event is selection. A selected response can transform the capacities governing future selection; that return path is a substantive causal mechanism to identify. A renewal cycle somewhere upstream does not prove that all maintained components mutually reproduce one another, or that all organizational change follows a selection gradient.\n\n## 7 Truth and reasonableness acquire an operational bridge\n\nThe theory can analyze three distinct questions: whether a claim corresponds to an independently specified circumstance, whether available evidence distinguishes the relevant alternatives, and whether a response can be executed and continued. It does not answer the first merely by proving the third.\n\nAn institution can maintain confidence while losing access to discriminating observations. A system can preserve an accurate record whose meaning no successor can use. An organization can remain viable while systematically imposing unacceptable burdens on others. These possibilities are consistent with renewal and are reasons to retain separate outcome, information, execution, and normative conditions.\n\nReasonableness, when it means being responsive to evidence and feasible consequences, therefore has material conditions. Sustaining those conditions becomes an explicit part of the theory. When reasonableness means moral justification, the evaluation still needs an account of whose interests count, permissible burdens, and legitimate revision. Physical persistence cannot settle those questions by itself.\n\nMathematical truth is also not identical to the survival of a physical proof record. A record's loss can destroy our access to a proof without changing the mathematical proposition. Our account concerns the realized capacity for inquiry, justified belief, and action; it is not a definition of truth as whatever survives.\n\n## 8 New discriminating consequences\n\nThe root becomes scientifically useful through commitments made before inspecting outcomes:\n\n- A proposed finite acyclic account with measured lifetimes predicts a finite continuation ceiling. Longer operation calls for a specified correction to that account, such as an omitted renewal edge or external establishment route.\n- In the erasure-channel operating model, separately measured rates predict the maximum sustainable accuracy and a finite failure deadline when demands exceed it. Changing only the effort schedule cannot cross the proved boundary; changing technology, support supply, demand, or the observation model can.\n- A present accuracy measurement can coexist with eventual failure because finite reliability and execution reserves temporarily hide an unsustainable allocation. Current performance is not a certificate of continued performance.\n- A gain in informational precision can reduce implementable capability when acquiring it consumes needed time or resources. The direction of its practical effect must be assessed in the paid process.\n- Stable renewal can preserve an inadequate correction regime. Establishing a favorable attractor and identifying a feasible path into its basin are different intervention tasks.\n\nThese are proposed application tests, not reported empirical discoveries. The earlier mixed evidence and unrun prospective handoff experiment remain unchanged.\n\n## 9 Existing science and what this development adds\n\nThe ingredients have important predecessors. [Blackwell's comparison of experiments](https://doi.org/10.1214/aoms/1177729032) relates information structures to decision possibilities. [Montévil and Mossio](https://montevil.org/publications/articles/2015-mm-organisation-closure-constraints/) analyze biological organization through mutually maintained constraints at different timescales. [Steel and Hordijk](https://arxiv.org/html/1801.03953v2) give precise cycle and autocatalytic-set results in elementary chemical reaction systems. The elementary finite-graph cycle lemma is not new.\n\nThe information–viability connection is also established. [Kolchinsky and Wolpert](https://arxiv.org/abs/1806.08053) define a form of semantic information using interventions on correlations relevant to continued existence. [Sowinski and colleagues](https://arxiv.org/abs/2304.03286) demonstrate information thresholds in a resource-foraging model. Our work does not originate the claim that information can have physical significance for persistence.\n\nThe advance within this project is the precise join: faithful capability invariance, turnover-derived renewal ancestry, finite acyclic deadlines, a quantitative obstruction to insufficient renewal cycles, and an exact joint observation–execution feasibility bound. This replaces an assertion of universal feedback with stated necessity conditions and a quantitative bridge to informed correction. The particular combination and derivations warrant specialist scrutiny; no exhaustive priority claim has been established.\n\n## 10 Review materials\n\n- [Review entry point](README.md): result map, resolved cross-review findings, exact checks, provenance, and questions for external specialists.\n- [Turnover and closure](TURNOVER-AND-CLOSURE.md): lifetime theorem, recurrent-flow theorem, counterexamples, and relation to existing closure results.\n- [Information and renewal](INFORMATION-AND-RENEWAL.md): statistical distinction bound, paid maintenance and execution theorem, deadline, and endogenous-selection witness.\n- [Invariance and prior art](INVARIANCE-AND-PRIOR-ART.md): exact policy transport, capability order, information comparison, and distinctions between capability and causal equivalence.\n\nThree internal cross-reviews checked the assembled arguments. The final revision makes the history-conditional, continuous-readiness requirement explicit and includes the scheduled-assessment counterexample; it also supplies the previously implicit routing coefficients in the spectral example. The [exact checks](EXACT-CHECKS.json) pass 28 groups of finite enumerations and rational calculations. The [readiness figure](continuous-readiness.png) illustrates the counterexample using analytic model trajectories. These checks and reviews are neither empirical validation nor independent human peer review.\n\nThe universal claim is strongest when its quantifiers remain visible. The invariant is what can be realized through the actual interface; the necessity is continued provision under vulnerability; the explanatory work is identifying the mechanisms and their regimes. Whether these premises exhaust the physically relevant cases remains a scientific question rather than a result produced by changing the meaning of universality.\n"
+      },
+      "read_scope": "Primary agent read sections 1-4; conceptual auditor read sections 1-5. Report draws on finite-lifetime renewal and maintenance of implementable interfaces. Other-session checks were not rerun."
+    },
+    {
+      "snapshot": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/session-snapshots.json",
+        "sha256": "60e1b810db51441ef44598518660ec32f096563c953759b1a268d9a7d41eb48e"
+      },
+      "contents": [
+        {
+          "thread": {
+            "id": "01a109b3-9e69-73f2-90ae-d119becb8ac7",
+            "kind": "codex",
+            "hostId": "local",
+            "title": "Articulate Foundation Lenses",
+            "preview": "we have been \"compressing the core/root dimensions\", but I also see something very different but couldn't well articulate, for each foundation, it is like a lens into it, or a projection/transformation, that gives you different ways of looking at it, understanding it",
+            "status": {
+              "type": "active",
+              "activeFlags": []
+            },
+            "cwd": "/Users/ren/theories",
+            "createdAt": 1791164128,
+            "updatedAt": 1791165457
+          },
+          "completed_messages": [
+            {
+              "status": "completed",
+              "messages": [
+                {
+                  "type": "userMessage",
+                  "id": "01a109bc-de9a-7c71-b157-8acb67d64a0c",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "agree,  what is the core, the universal invariance that they all share, the generative part, that makes them \"healthy\", having, and maintaining, their futures - this is want I want to explore now\n"
+                    }
+                  ]
+                },
+                {
+                  "type": "agentMessage",
+                  "id": "msg_097bd7548d4e2516016ac301d91a5087d0b121a7710aa2bbd4",
+                  "text": "The strongest candidate I see is **the renewal of the capacity to become—including the capacity to change how that renewal happens.**\n\nI would treat this as a hypothesis to develop and test. It gives us something more specific than “everything changes,” and more demanding than “the system survives.”\n\nYour phrase **“having, and maintaining, their futures”** points to an important distinction. Something can still be operating while losing its future: spending inherited reserves, exhausting its participants, suppressing the evidence it needs, or making succession impossible. Present functioning can conceal the erosion of what makes further functioning possible.\n\nThe basic relationship is:\n\n\\[\n\\text{enabling conditions}\n\\;\\longrightarrow\\;\n\\text{activity}\n\\;\\longrightarrow\\;\n\\text{changed conditions for further activity}.\n\\]\n\nThe generative question concerns that return: **what does activity do to the conditions from which subsequent activity can arise?** Those conditions include relations with the surrounding world; renewal need not happen entirely inside a system.\n\nWe can deepen this relationship through three steps:\n\n1. **Renewal.** Activity replenishes, repairs, or replaces the supports on which further activity depends. Otherwise, continuation lasts only as long as inherited support.\n2. **Responsiveness.** Changes in circumstances can change what the system does. Renewal must remain connected to the actual conditions it is trying to sustain.\n3. **Transformation.** When the existing way of renewing becomes inadequate, the system can change that way—including its organization, representations, and arrangements for correction.\n\nThe third step seems especially close to what you are reaching for. **The capacity to maintain a future must itself have a future.** A correction mechanism can become obsolete. A maintenance practice can become destructive. A successful institution can outlive the conditions that made it useful. Generativity therefore reaches into the processes that maintain and evaluate generativity.\n\nThis has a close biological precursor: Di Paolo distinguishes self-production from adaptivity, and explicitly considers adaptive processes that modify their own regulation. In that account, recovering health can involve changing how an organism lives rather than restoring an earlier condition. Extending that relationship across our foundations remains our research hypothesis. [Di Paolo, *Autopoiesis, adaptivity, teleology, agency*](https://ezequieldipaolo.net/wp-content/uploads/2011/10/autopoiesis_teleology_2005.pdf).\n\nWhat would remain invariant across the lenses is **this relationship of enabling further becoming**. The things realizing it can change.\n\nIn knowledge, an existing theory can be abandoned while the capacity for inquiry develops. In an institution, leaders and rules can be replaced while collective competence continues. In education, a teacher’s work can succeed by enabling students to proceed independently and eventually question what they were taught. These are candidate instances of the same structure: what exists contributes to the conditions through which something further can emerge.\n\nBut “healthy” introduces a difficulty we should make central to the inquiry. An oppressive institution can renew itself, learn, and adapt. Its own future may become more secure as other people’s futures close.\n\nSo the relation has to be examined beyond the apparent beneficiary:\n\n**Whose possibilities are being renewed, through whose activity, using whose conditions—and can those continuations remain possible together?**\n\nThis makes health a question about relations among futures. Examining those relations can reveal hidden depletion and incompatible dependencies. It does not, by itself, settle every conflict over whose interests should prevail.\n\nNor does maintaining futures require preserving every option. Learning, commitment, boundaries, and maturation all close possibilities. What matters is whether those changes sustain the ability to respond, develop, and transform further. A temporary narrowing can support a richer future; abundant immediate choices can conceal its destruction.\n\nThat suggests a concrete next test for the proposed core. Compare systems with equally good present performance, but different underlying conditions:\n\n| Same present appearance | Difference the proposed core should detect |\n|---|---|\n| Both keep functioning | One renews its supports; the other spends them down. |\n| Both receive feedback | In one, consequences can alter practice; in the other, feedback merely confirms it. |\n| Both have capable leadership | One develops successors; the other makes itself irreplaceable. |\n\nIf this core has explanatory force, it should help us predict how those futures diverge, under specified changes and over meaningful timescales.\n\nThe question I would now put at the centre is: **what allows a process to sustain the conditions of further becoming while allowing the forms—including its own—that carry those conditions to change?**",
+                  "phase": "final_answer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "thread": {
+            "id": "01a109b1-4170-7fb0-af3e-d5d827560554",
+            "kind": "codex",
+            "hostId": "local",
+            "title": "Review parallel work connections",
+            "preview": "review all recent work, do you see the lines that connect the dots? a lot session worked in parallel, they are yet to be integrated",
+            "status": {
+              "type": "idle"
+            },
+            "cwd": "/Users/ren/theories",
+            "createdAt": 1791163974,
+            "updatedAt": 1791164372
+          },
+          "completed_messages": [
+            {
+              "status": "completed",
+              "messages": [
+                {
+                  "type": "userMessage",
+                  "id": "01a109b2-3ec5-7bc2-a458-3eb8ad595d9f",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "review all recent work, do you see the lines that connect the dots? a lot session worked in parallel, they are yet to be integrated\n"
+                    }
+                  ]
+                },
+                {
+                  "type": "agentMessage",
+                  "id": "msg_0c330cb70294bbdc016ac2ffa7366c87d09d9362e7f414406f",
+                  "text": "**Yes. The connections are substantial—and some of the parallel branches have reached results that should now change how the others are stated.**\n\nI reviewed the recent theory sessions and saved results, including v7.3, the correction experiments, the wisdom and foundations branches, scientific inquiry, and Guardian Anarchy. My synthesis is:\n\n**An activity produces both its immediate result and the conditions under which future activity becomes possible. Your work increasingly explains how those conditions are created, consumed, inherited, and revised.**\n\nThat connects understanding, selection, institutions, and 生生 without assuming they all obey one equation.\n\n**1. Wisdom and institutional power meet at the formation of what can be seen and questioned.**\n\nThe wisdom work asks which distinctions a description must preserve. The inquiry experiments show that a summary adequate for today’s model can erase evidence needed to challenge that model tomorrow. The selector work explains how successful participants acquire influence over which questions, evidence, and alternatives receive standing.\n\nThese form a causal connection:\n\n*What succeeds influences what gets recognized; what gets recognized influences what can subsequently succeed.*\n\nThis reaches deeper than biased evaluation. A system may competently answer its admitted questions while losing the ability to formulate the questions that would change it. The [new foundation]( /Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-FOUNDATION.md:15) connects these distinctions to what a system can actually accomplish under its information, resources, permissions, and timing.\n\n**2. The material and epistemic branches are closing the same dependency loop.**\n\nV7.3 supplies a funded transition toward protected correction. Later sessions ask how inquiry earns resources, how production depends on correction, how evidence survives replacement, and how participants remain willing to cooperate.\n\nThe emerging loop is:\n\n**Experience → inquiry → judgment → action → renewal of supporting conditions → further experience.**\n\nEvery arrow has requirements. Correct knowledge can arrive too late. A beneficial repair can lack available funding. An acceptable agreement can become unacceptable when its burdens become known. A successor can inherit a correct conclusion without inheriting the means to use or reconsider it.\n\nThe advance is that the resources, authority, teaching, and participation supporting correction increasingly become things the theory must explain. [Research sequence](/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/README.md:93)\n\n**3. The latest wisdom result explains the integration problem itself.**\n\nThis is perhaps the most revealing new connection.\n\nThe joint-organization work shows that all the variables can be present while their consequential relationship remains missing. Separately consistent descriptions can also fail to describe any jointly possible situation. [Joint-organization results](/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/next-root-joint-organization.md:34)\n\nThat appears concretely elsewhere:\n\n- Funding and permission can each be ineffective alone but effective together.\n- Diagnosis and execution can compete for the same worker and deadline.\n- Several parties’ requirements can be pairwise compatible yet collectively impossible.\n- A safe old institution and a safe successor can still have an unsafe handoff.\n\n**The missing integration is therefore partly a mathematical and causal problem: can the proposed mechanisms coexist and operate on one shared timeline?** Adding another individually successful module will not settle that.\n\n**4. 生生 becomes clearer through the distinction between renewing support and preserving a particular form.**\n\nThe work increasingly separates continued activity, continued capacity, and continued appropriateness.\n\nStored evidence may remain historically true while its practical implication changes. An institution may survive while its corrective capacities disappear. Inquiry may appropriately pause while retaining a feasible route to restart. A Guardian may be replaced while essential provision continues.\n\nMy reading is that **mutually sustaining processes can make an open future possible**. There is an important vocabulary distinction here: a *closed renewal loop* can support *epistemic and political openness*. Organizational closure and exclusion of alternatives are different phenomena.\n\nThe new support-network results give this a conditional mathematical foundation: finite, vulnerable supports eventually require renewed provision, with explicit assumptions about outside inputs and renewal cycles. They do not establish that whatever persists is good. [Support and renewal results](/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-FOUNDATION.md:37)\n\n**5. Guardian Anarchy gives the abstract work a concrete constructive test.**\n\nThe observatory story is unusually useful: a group produces valuable work, gains resources and workshop access, and eventually makes it difficult for newcomers to begin. Its success changes the conditions of future selection without anyone needing malicious intentions. [Observatory story](/Users/ren/theories/drafts/2026-10-04-guardian-anarchy/edition-02/OBSERVATORY.zh.md:15)\n\nThat is the paper’s mechanism embodied in everyday life. It also tests the proposed alternative:\n\n**Does successful capability help others develop capacities of their own, while preserving their ability to question and change the arrangement?**\n\nThis connects provision, learning, independent agency, succession, and the limits on converting achievement into control. V7.3 already supplies the institutional language for it. [Changing what winning confers](/Users/ren/theories/drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/START-HERE.md:5)\n\n**One correction must travel back through the whole corpus: reinforcing success can sustain correction.**\n\nThe older opening of `MAP.md` makes the harmful trajectory sound too general. A later constructed experiment finds that removing reinforcement of an adaptive practice *shortens* the survival of corrective capacity.\n\nThe stronger claim concerns **which capacities a feedback reproduces, whose alternatives it suppresses, and what consequences follow**. This preserves the selector-capture diagnosis while making room for beneficial selection, competition, and reinforcement. [Explicit counterexample](/Users/ren/theories/experiments/integrated-correction/general-framework/closure-study/README.md:65)\n\nThere are now four concrete integration tasks:\n\n1. **Reconcile the central claims.** Bring the main map and terminology into line with the conditional results, including beneficial reinforcement and the distinction between persistence, truth, and legitimacy.\n2. **Join the existing models through their actual dependencies.** Some composition is already achieved—the full-picture branch has an executable combined process, and the science branch connects ordinary work to inquiry and revision. Their different guarantees and assumptions still need a common account.\n3. **Synchronize the evidence record.** The live AI handoff experiment is completed: timely feedback plus delivered handoffs raised successor accuracy from 75% to 100% in the changed-rule cases. Human institutional renewal and repeated succession remain untested. Failed and inconclusive studies must remain alongside that result. [Completed experiment](/Users/ren/Documents/Codex/2026-10-05/sin/outputs/experiment-report.md:5)\n4. **Use one running case across the layers.** The observatory could connect the philosophy, formal mechanism, institutional proposal, and playable world. Its simulation would expose assumptions and communicate the theory; empirical validation would remain a separate task.\n\nThe next synthesis should explain **how useful activity regenerates the conditions for further discovery, action, participation, and legitimate change—and how successful activity can sever those same connections**. That is the line I see running through the recent work.",
+                  "phase": "final_answer"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "read_scope": "Read-only review of completed final messages in Articulate Foundation Lenses and Review parallel work connections. Ongoing work is not treated as verified evidence."
+    }
+  ],
+  "reviews": [
+    {
+      "reviewer": "boundary_emergence",
+      "result": "No mathematical errors found.",
+      "scope": "Phase minima, general graph threshold, exact trajectory, stability, dissolution, active barrier equilibria/interventions, visual formula.",
+      "clarification_applied": "General graph now explicitly requires at least two sites, nonnegative weights, and connected positive-weight edges."
+    },
+    {
+      "reviewer": "viewpoint_emergence",
+      "result": "No substantive errors found.",
+      "scope": "Unique-action criterion, parity impossibility, communication, records/history/interventions, and functional-versus-phenomenal scope.",
+      "clarification_applied": "All-field local regulation explicitly starts with both circuits functioning."
+    },
+    {
+      "reviewer": "differentiation_audit",
+      "result": "No necessary conceptual or source correction found.",
+      "scope": "Substantive explanation, separate-model limits, supplied mechanisms, nonconflation with consciousness, primary source scopes and unfinished-session status."
+    }
+  ],
+  "inline_illustration": {
+    "source": {
+      "path": "/Users/ren/.codex/visualizations/2026/10/04/01a108d0-9667-77f3-a3ac-9438f2fbde99/shared-process-domains.html",
+      "sha256": "e0da77bbea0438d1c4d6d2e8fc6bb22bc3cedc1c9026fb5cd86b8a13133014d1"
+    },
+    "check_program": {
+      "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/check_visual.cjs",
+      "sha256": "a67ba309e856c068ed27e6210c78b6bdcb94d9a83d9ec6c5c97cfb9aeb90ed34",
+      "text": "const { chromium } = require('/Users/ren/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');\nconst fs = require('fs');\nconst assert = require('assert');\n(async () => {\n  const browser = await chromium.launch({headless: true});\n  const page = await browser.newPage({viewport: {width: 780, height: 600}});\n  const errors = [];\n  page.on('pageerror', error => errors.push(error.message));\n  await page.goto('file:///Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/differentiation/domain-preview.html');\n  const frame = page.frameLocator('iframe');\n  const values = () => frame.locator('.domain-nodes .tabular-nums').allTextContents();\n  await frame.locator('#domain-start').selectOption('zero');\n  assert.deepStrictEqual(await values(), ['0.000','0.000','0.000','0.000']);\n  await frame.locator('#domain-start').selectOption('vertical');\n  const vertical = await values();\n  assert(vertical[0][0] === '+' && vertical[1][0] === '−' && vertical[2][0] === '−' && vertical[3][0] === '+');\n  await frame.locator('#domain-time').evaluate(el => { el.value='0'; el.dispatchEvent(new Event('input', {bubbles: true})); });\n  assert.deepStrictEqual(await values(), ['+0.010','−0.010','−0.010','+0.010']);\n  await frame.locator('#domain-time').evaluate(el => { el.value='12'; el.dispatchEvent(new Event('input', {bubbles: true})); });\n  assert.deepStrictEqual(await values(), ['+0.707','−0.707','−0.707','+0.707']);\n  await frame.locator('#domain-start').selectOption('horizontal');\n  assert.deepStrictEqual(await values(), ['+0.707','+0.707','−0.707','−0.707']);\n  await page.setViewportSize({width: 320, height: 650});\n  await page.screenshot({path: __dirname+'/domain-preview-narrow.png', fullPage: true});\n  const layout = await frame.locator('#shared-process-domains').evaluate(root => {\n    const svg = root.querySelector('svg');\n    const bounds = svg.getBoundingClientRect();\n    const text = [...svg.querySelectorAll('text')].map(el => {const r=el.getBoundingClientRect();return {text:el.textContent,left:r.left,right:r.right,top:r.top,bottom:r.bottom};});\n    return {width:root.clientWidth,scrollWidth:root.scrollWidth,svgWidth:bounds.width,\n      textFits:text.every(r=>r.left>=bounds.left && r.right<=bounds.right && r.top>=bounds.top && r.bottom<=bounds.bottom)};\n  });\n  assert(layout.scrollWidth <= layout.width);\n  assert(layout.textFits);\n  assert.deepStrictEqual(errors, []);\n  const report = {status:'all visual checks passed', checked:['initial exact symmetry','orientation selection','analytic amplitude at t=0 and t=12','primary interactions update values','320px layout and labels','no browser script errors'], layout, errors};\n  fs.writeFileSync(__dirname+'/visual-checks.json', JSON.stringify(report,null,2)+'\\n');\n  console.log(JSON.stringify(report));\n  await browser.close();\n})();\n"
+    },
+    "checks": {
+      "status": "all visual checks passed",
+      "checked": [
+        "initial exact symmetry",
+        "orientation selection",
+        "analytic amplitude at t=0 and t=12",
+        "primary interactions update values",
+        "320px layout and labels",
+        "no browser script errors"
+      ],
+      "layout": {
+        "width": 288,
+        "scrollWidth": 288,
+        "svgWidth": 288,
+        "textFits": true
+      },
+      "errors": []
+    },
+    "visual_inspection": "Primary agent inspected desktop and 320px rendered screenshots; text fits and values are visible.",
+    "scope": "Exact amplitude family for kappa=1/4, initial amplitude 0.01, two orientations or exactly zero. Not a generic numerical simulation."
+  },
+  "preservation": {
+    "all_prior_outputs_unchanged": true,
+    "file_count": 23,
+    "files": [
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/active-inquiry-data.json",
+        "before_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "after_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/active-inquiry-findings.md",
+        "before_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "after_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/missing-possibilities-evidence.json",
+        "before_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "after_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/missing-possibility-check.json",
+        "before_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "after_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/next-root-evidence.json",
+        "before_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "after_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/next-root-joint-organization.md",
+        "before_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "after_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/nonseparation-and-selfhood.md",
+        "before_sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6",
+        "after_sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/nonseparation-evidence.json",
+        "before_sha256": "aeba2f74007c905012d75c98cd9e264b5d21294402eea7222d557cff8485c678",
+        "after_sha256": "aeba2f74007c905012d75c98cd9e264b5d21294402eea7222d557cff8485c678",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/noticing-missing-possibilities.md",
+        "before_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "after_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/reasoning-pilot-data.json",
+        "before_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "after_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/reasoning-pilot-findings.md",
+        "before_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "after_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/research-ledger.md",
+        "before_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "after_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-cross-session-assessment.md",
+        "before_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "after_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-cross-session-evidence.json",
+        "before_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "after_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-formalization-checks.json",
+        "before_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "after_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-formalization-v1.md",
+        "before_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "after_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-formalization-v2.md",
+        "before_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "after_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-formalization.md",
+        "before_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "after_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-fundamental-evidence.json",
+        "before_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "after_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-substantive-evidence.json",
+        "before_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "after_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-synthesis.md",
+        "before_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "after_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/source-map.md",
+        "before_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "after_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/worked-test-results.json",
+        "before_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "after_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "unchanged": true
+      }
+    ]
+  },
+  "evidence_types": {
+    "mathematics": "Displayed proofs plus exact finite arithmetic checks.",
+    "numerics": "Four barrier ODE trajectory illustrations, RK4 steps 0.02 and 0.01, with analytic asymptotic targets.",
+    "published_experiment": "2003 compartment study reviewed; no new physical experiment or data reanalysis here.",
+    "synthesis": "Maintained differentiation within shared conditions is the proposed interpretation, not an experimentally established universal law."
+  },
+  "next_integration_test": "Jointly form compartments, sustain their barriers and sensor/action supports, demonstrate coexisting distinct histories, then interrupt and rescue supports in one physical model or experiment."
+}

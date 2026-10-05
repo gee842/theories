@@ -1,0 +1,252 @@
+{
+  "status": "All specified mathematical/numerical checks passed; no empirical validation.",
+  "parameters": {
+    "y0": 1.0,
+    "B": 0.8,
+    "chi": 1.0,
+    "eta": 10.0,
+    "mu": 1.0,
+    "K": 1.0,
+    "kappa": 1.0,
+    "tau": 0.16666666666666666
+  },
+  "threshold": {
+    "z": 0.49999999999999994,
+    "C_s": 0.9999999999999999,
+    "x_s": 0.5000000000000001
+  },
+  "fee_window": [
+    0.016867880450547195,
+    0.36822528725131615
+  ],
+  "full_adoption_capacity": 2.317295406891308,
+  "full_adoption_selection_margin": 0.15864770344565415,
+  "saddle_eigenvalues": [
+    0.09023021085818494,
+    -0.9235635441915182
+  ],
+  "high_eigenvalues": [
+    -0.8307231024154085,
+    -0.15864770344565415
+  ],
+  "parameter_cases_checked": 600,
+  "task_chain": {
+    "Both channels": {
+      "proposal_accuracy": 0.7,
+      "enactment_probability": 0.5,
+      "actual_accuracy": 0.6,
+      "gross_output": 1.2
+    },
+    "Evidence only": {
+      "proposal_accuracy": 0.7,
+      "enactment_probability": 0.0,
+      "actual_accuracy": 0.5,
+      "gross_output": 1.0
+    },
+    "Execution only": {
+      "proposal_accuracy": 0.5,
+      "enactment_probability": 0.5,
+      "actual_accuracy": 0.5,
+      "gross_output": 1.0
+    },
+    "Neither": {
+      "proposal_accuracy": 0.5,
+      "enactment_probability": 0.0,
+      "actual_accuracy": 0.5,
+      "gross_output": 1.0
+    }
+  },
+  "trajectories": {
+    "healthy": {
+      "x_final": 1.0,
+      "C_final": 2.3172954065219895,
+      "x_min": 0.6,
+      "C_min": 1.2,
+      "horizon": 300.0
+    },
+    "depleted": {
+      "x_final": 6.362803391576395e-23,
+      "C_final": 5.650417470858796e-13,
+      "x_min": 6.362803391576395e-23,
+      "C_min": -9.68627769993526e-11,
+      "horizon": 300.0
+    },
+    "no_evidence": {
+      "x_final": 2.893124771945885e-22,
+      "C_final": 1.5307676245793752e-13,
+      "x_min": 2.893124771945885e-22,
+      "C_min": -1.017776170154993e-10,
+      "horizon": 300.0
+    },
+    "no_execution": {
+      "x_final": 2.893124771945885e-22,
+      "C_final": 1.5307676245793752e-13,
+      "x_min": 2.893124771945885e-22,
+      "C_min": -1.017776170154993e-10,
+      "horizon": 300.0
+    },
+    "free_access": {
+      "x_final": 2.1493565709696545e-22,
+      "C_final": -1.302898258321978e-12,
+      "x_min": 2.1493565709696545e-22,
+      "C_min": -1.1414265184404702e-10,
+      "horizon": 300.0
+    },
+    "all_benefits_public": {
+      "x_final": 2.893124771945885e-22,
+      "C_final": 1.5307676245793752e-13,
+      "x_min": 2.893124771945885e-22,
+      "C_min": -1.017776170154993e-10,
+      "horizon": 300.0
+    },
+    "uninformative_signal": {
+      "x_final": 2.893124771945885e-22,
+      "C_final": 1.5307676245793752e-13,
+      "x_min": 2.893124771945885e-22,
+      "C_min": -1.017776170154993e-10,
+      "horizon": 300.0
+    },
+    "insufficient_private_capture": {
+      "x_final": 3.266523695222504e-87,
+      "C_final": -9.298865744329508e-13,
+      "x_min": 3.266523695222504e-87,
+      "C_min": -8.941425435357767e-11,
+      "horizon": 1200.0
+    },
+    "fee_too_low": {
+      "x_final": 3.098888967656238e-14,
+      "C_final": -1.2862211246823556e-12,
+      "x_min": 3.098888967656238e-14,
+      "C_min": -5.7765604641456335e-11,
+      "horizon": 4000.0
+    },
+    "fee_too_high": {
+      "x_final": 2.3052875521013874e-218,
+      "C_final": -2.931616761008305e-14,
+      "x_min": 2.3052875521013874e-218,
+      "C_min": -1.0537658977377153e-10,
+      "horizon": 1200.0
+    },
+    "external_capacity": {
+      "x_final": 1.0,
+      "C_final": 1.2,
+      "x_min": 0.6,
+      "C_min": 1.2,
+      "horizon": 300.0
+    },
+    "capacity_seed": {
+      "x_final": 1.0,
+      "C_final": 2.317295406910573,
+      "x_min": 0.2,
+      "C_min": 2.0127941740065327,
+      "horizon": 300.0
+    },
+    "matched_many_funders": {
+      "x_final": 1.0,
+      "C_final": 2.31729540689392,
+      "x_min": 0.8874423679011778,
+      "C_min": 0.6,
+      "horizon": 300.0
+    },
+    "matched_few_funders": {
+      "x_final": 1.5663879368515644e-22,
+      "C_final": -2.0497153373276157e-13,
+      "x_min": 1.5663879368515644e-22,
+      "C_min": -9.931877818033202e-11,
+      "horizon": 300.0
+    }
+  },
+  "finite_seed": {
+    "original_state": [
+      0.2,
+      0.4
+    ],
+    "C1": 10.0,
+    "target_x": 0.6,
+    "time_bound": 4.662427866163323,
+    "seed_capacity": 1058.9286401601344,
+    "cost_bound": 105.85286401601343,
+    "state_at_time_bound": {
+      "x_final": 0.6963228680002205,
+      "C_final": 11.706812442496055,
+      "x_min": 0.2,
+      "C_min": 11.706812442496055,
+      "horizon": 4.662427866163323
+    },
+    "meaning": "Sufficient external one-time grant, not optimal or spontaneous recovery."
+  },
+  "exploratory_equal_current_output": {
+    "many_funders": {
+      "initial": [
+        0.8888888888888891,
+        0.6
+      ],
+      "gross_output": 1.1,
+      "upkeep_flow": 0.16481481481481483,
+      "retained_output": 0.9351851851851852,
+      "first_sample_in_persistent_region": 0.5625,
+      "first_sample_in_depleted_region": null,
+      "result": {
+        "x_final": 1.0,
+        "C_final": 2.31729540689392,
+        "x_min": 0.8874423679011778,
+        "C_min": 0.6,
+        "horizon": 300.0
+      }
+    },
+    "few_funders": {
+      "initial": [
+        0.2222222222222222,
+        3.0
+      ],
+      "gross_output": 1.1,
+      "upkeep_flow": 0.0537037037037037,
+      "retained_output": 1.0462962962962963,
+      "first_sample_in_persistent_region": null,
+      "first_sample_in_depleted_region": 3.9375,
+      "result": {
+        "x_final": 1.5663879368515644e-22,
+        "C_final": -2.0497153373276157e-13,
+        "x_min": 1.5663879368515644e-22,
+        "C_min": -9.931877818033202e-11,
+        "horizon": 300.0
+      }
+    }
+  },
+  "public_spillover_witness": {
+    "parameters": {
+      "y0": 1.0,
+      "B": 0.8,
+      "chi": 0.75,
+      "eta": 10.0,
+      "mu": 1.0,
+      "K": 1.0,
+      "kappa": 1.0,
+      "tau": 0.16666666666666666
+    },
+    "threshold": {
+      "z": 0.5773502691896257,
+      "C_s": 1.3660254037844384,
+      "x_s": 0.6830127018922192
+    },
+    "initial": [
+      0.8415063509461096,
+      1.639230484541326
+    ],
+    "result": {
+      "x_final": 0.999999998648238,
+      "C_final": 2.1297237526453117,
+      "x_min": 0.8415063509461096,
+      "C_min": 1.639230484541326,
+      "horizon": 300.0
+    }
+  },
+  "independent_integrator_max_difference": 1.5341265680035576e-07,
+  "versions": {
+    "python": "3.11.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  },
+  "source_sha256": "2c94e2793c449e1198fcd56d28a1e88ed5d33cfb216d2669ca9bc0dc87d23bc2"
+}

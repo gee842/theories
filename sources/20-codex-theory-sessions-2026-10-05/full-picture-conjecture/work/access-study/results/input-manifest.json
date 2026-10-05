@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-10-04T21:23:41.722794+00:00",
+  "files": {
+    "run_study.py": "dbea543e157e3d2143fc2c8f5730683c3fa8173d69a33e2d2c65b417c68d158d",
+    "model.py": "051976c28e15a06bbed3be9c95328755bcbf676dfe30440c03a3e0684d000135",
+    "protocol-freeze.json": "01fac3bbf582984612488dae7592ce4823dcfaa0e0611659502ee19f4a3c0e81",
+    "PROTOCOL.md": "076420c06d25f634266da8bcf8d60a6b0689f3032e5afc076784ff4ed42154cb"
+  }
+}

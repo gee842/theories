@@ -1,0 +1,15 @@
+{
+  "validation_size": 1024,
+  "deployment_size": 500,
+  "audit_fee": 0.02,
+  "validation_fee": 0.002,
+  "running_fee": 0.002,
+  "response_cost": 0.3,
+  "audit_alpha": 0.05,
+  "validation_alpha": 0.05,
+  "max_audits": 128,
+  "expense_cap": 6.0,
+  "question_probability": 0.5,
+  "question_grid": [0.01, 0.1, 0.25, 0.5, 1.0],
+  "prior_grid_denominator": 10
+}

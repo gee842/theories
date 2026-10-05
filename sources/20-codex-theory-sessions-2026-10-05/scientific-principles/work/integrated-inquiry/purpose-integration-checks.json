@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "seed": 1103,
+  "scenario": "emerging",
+  "source_sha256": "c220ff0d128dee5de0305f7f448671eddd206dda18fbe3f323421b390352623d",
+  "paired_case_price": 240,
+  "initial_hearing_round": 92,
+  "initial_hearing_cash": 74410,
+  "initial_unaffordable_check_required": 83720,
+  "later_acceptance_round": 156,
+  "fresh_result": {
+    "n": 426,
+    "W": 0.5,
+    "delta": 0.145,
+    "gain": 0.09091549295774648,
+    "lower": 0.015954691442363167,
+    "radius": 0.07496080151538331,
+    "pass": true,
+    "method": "fixed_fresh_paired_Hoeffding",
+    "group_error_reductions": [
+      0.0,
+      0.47183098591549294
+    ],
+    "group_errors": {
+      "incumbent": [
+        0,
+        201
+      ],
+      "edited": [
+        0,
+        0
+      ]
+    },
+    "diagnostic_gain_A_only": -0.145,
+    "diagnostic_gain_inclusive": 0.09091549295774648
+  },
+  "cash_traces": [
+    {
+      "arm": "full",
+      "transactions_checked": 5057,
+      "final_cash": 280110,
+      "errors_B": 36
+    },
+    {
+      "arm": "fixed_mandate",
+      "transactions_checked": 4655,
+      "final_cash": 405710,
+      "errors_B": 303
+    }
+  ],
+  "scope": "Development trace, represented fixed stakeholder concerns; no independent-agent or ethical-legitimacy claim."
+}

@@ -1,0 +1,4 @@
+1 interaction rule_revised True -> False mean 20.69 lower 7.220860315627098 expense 11704.96
+2 null rule_revised False -> True mean 2.97560302734375 lower 0.5945730254515214 expense 232716.12
+3 interaction rule_revised True -> False mean 20.69 lower 7.220860315627098 expense 11704.96
+total {'exact': '6403151/25', 'decimal': 256126.04}

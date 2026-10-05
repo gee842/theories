@@ -1,0 +1,209 @@
+{
+  "status": "all checks passed",
+  "arithmetic": "integers and exact Fraction rationals",
+  "contingent_policy_enumeration": {
+    "comparisons": 9,
+    "policy_trees_scored": 49356,
+    "task_rollouts": 394008,
+    "results": [
+      {
+        "state": "solution",
+        "horizon": 1,
+        "reserve": "5",
+        "policies": 4,
+        "task_words_per_policy": 2
+      },
+      {
+        "state": "kit",
+        "horizon": 1,
+        "reserve": "2",
+        "policies": 4,
+        "task_words_per_policy": 2
+      },
+      {
+        "state": "partial",
+        "horizon": 1,
+        "reserve": "4",
+        "policies": 4,
+        "task_words_per_policy": 2
+      },
+      {
+        "state": "solution",
+        "horizon": 2,
+        "reserve": "7",
+        "policies": 64,
+        "task_words_per_policy": 4
+      },
+      {
+        "state": "kit",
+        "horizon": 2,
+        "reserve": "3",
+        "policies": 64,
+        "task_words_per_policy": 4
+      },
+      {
+        "state": "partial",
+        "horizon": 2,
+        "reserve": "5",
+        "policies": 64,
+        "task_words_per_policy": 4
+      },
+      {
+        "state": "solution",
+        "horizon": 3,
+        "reserve": "7",
+        "policies": 16384,
+        "task_words_per_policy": 8
+      },
+      {
+        "state": "kit",
+        "horizon": 3,
+        "reserve": "3",
+        "policies": 16384,
+        "task_words_per_policy": 8
+      },
+      {
+        "state": "partial",
+        "horizon": 3,
+        "reserve": "5",
+        "policies": 16384,
+        "task_words_per_policy": 8
+      }
+    ]
+  },
+  "fractional_cost_enumeration": {
+    "comparisons": 6,
+    "policy_trees_scored": 204,
+    "task_rollouts": 792,
+    "results": [
+      {
+        "state": "solution",
+        "horizon": 1,
+        "reserve": "5/2",
+        "policies": 4,
+        "task_words_per_policy": 2
+      },
+      {
+        "state": "kit",
+        "horizon": 1,
+        "reserve": "1",
+        "policies": 4,
+        "task_words_per_policy": 2
+      },
+      {
+        "state": "partial",
+        "horizon": 1,
+        "reserve": "2",
+        "policies": 4,
+        "task_words_per_policy": 2
+      },
+      {
+        "state": "solution",
+        "horizon": 2,
+        "reserve": "7/2",
+        "policies": 64,
+        "task_words_per_policy": 4
+      },
+      {
+        "state": "kit",
+        "horizon": 2,
+        "reserve": "3/2",
+        "policies": 64,
+        "task_words_per_policy": 4
+      },
+      {
+        "state": "partial",
+        "horizon": 2,
+        "reserve": "5/2",
+        "policies": 64,
+        "task_words_per_policy": 4
+      }
+    ]
+  },
+  "stationary_formula": {
+    "comparisons": 2100,
+    "task_words_scored": 44100,
+    "costs_each_task": "integers 1 through 5",
+    "receipt": "integers 0 through 6",
+    "horizons": "1 through 6",
+    "timings": [
+      "before episode cost",
+      "after episode cost"
+    ]
+  },
+  "equal_current_output_witness": {
+    "same_current_answer": true,
+    "same_initial_balance": 9,
+    "same_first_episode_cost": 5,
+    "same_first_horizon_reserve": 5,
+    "external_receipt_after_each_completed_episode": 3,
+    "rich_reserve_by_horizon": [
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27
+    ],
+    "generative_reserve_by_horizon": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "rich_completed_episodes_before_worst_case_failure": 3,
+    "generative_inductive_certificate": {
+      "generative_start": 5,
+      "generative_repeat": 3
+    },
+    "scope": "The infinite claim uses the checked inductive certificate and theorem; twelve horizons alone do not establish it."
+  },
+  "announcement_order": [
+    {
+      "horizon": 1,
+      "announced_before_action": 1,
+      "not_announced_before_action": 4
+    },
+    {
+      "horizon": 2,
+      "announced_before_action": 1,
+      "not_announced_before_action": 7
+    },
+    {
+      "horizon": 3,
+      "announced_before_action": 1,
+      "not_announced_before_action": 10
+    },
+    {
+      "horizon": 4,
+      "announced_before_action": 1,
+      "not_announced_before_action": 13
+    },
+    {
+      "horizon": 5,
+      "announced_before_action": 1,
+      "not_announced_before_action": 16
+    },
+    {
+      "horizon": 6,
+      "announced_before_action": 1,
+      "not_announced_before_action": 19
+    }
+  ],
+  "experiment_timing": "constructive-succession/model.py credits flow before service, target, search, validation, installation, and handoff; use the pre-credit state convention or shift the state to immediately after its inflow.",
+  "limitations": "Finite exact toy checks corroborate the formulas. They do not show indefinite success of the finite NAND experiment, empirical validity, or unrestricted generativity."
+}

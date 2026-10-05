@@ -1,0 +1,1 @@
+Pre-run draft only. Superseded before participant execution: draws were shared within matched pairs. Frozen protocol uses six episodes per participant context, so current cases use independently sampled hidden worlds per episode. Do not use this draft for participants or scoring.

@@ -1,0 +1,11 @@
+{
+  "sha256": {
+    "model.py": "96a923ef4ae391e2f717c77a8f07fd2cd8fe91f4258c560b221ccb1fff79e7eb",
+    "analyze.py": "3432c8518e21776c88ce302c2d4ff13e93ab7e24d56b61fe5960bc3c61593aea",
+    "config.json": "2bf3de442506c120fb978d64ed1621054d966b3ba3f62a884bf0bfe6d8a0ff99",
+    "PROTOCOL.md": "edb1f3f2ca1134d34501bdb87e5cdca6cce19a6a8fc2037762f6cdf2342b5034",
+    "test_model.py": "6d3634981685cc029dbb64ee7f6efc070e3a2411441a476f00594cdf87245350"
+  },
+  "python": "3.11.2",
+  "numpy": "2.4.6"
+}

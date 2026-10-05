@@ -1,0 +1,348 @@
+{
+  "method": "Belief greatest fixed point cross-checked against exhaustive concrete observation-policy trees; extracted controller and losing-rank certificates checked independently.",
+  "exhaustive_games": 12005,
+  "transition_tables": 2401,
+  "observation_partitions": 5,
+  "finite_horizon_policy_tree_queries": 100842,
+  "winning_initial_beliefs": 14060,
+  "checked_controller_product_edges": 19976,
+  "checked_losing_rank_action_obligations": 29504,
+  "largest_observed_losing_rank": 3,
+  "examples": [
+    {
+      "name": "hidden alternating phase requires two-state memory",
+      "transitions": [
+        [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        [
+          [
+            2
+          ],
+          [
+            0
+          ]
+        ],
+        [
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ]
+      ],
+      "observations": [
+        0,
+        0,
+        1
+      ],
+      "safe_states": [
+        0,
+        1
+      ],
+      "winning_beliefs": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "controller": [
+        {
+          "belief": [
+            0
+          ],
+          "action": 0
+        },
+        {
+          "belief": [
+            1
+          ],
+          "action": 1
+        }
+      ],
+      "losing_ranks": [
+        {
+          "belief": [
+            0,
+            1
+          ],
+          "rank": 1
+        }
+      ],
+      "initials": [
+        {
+          "belief": [
+            0
+          ],
+          "winning": true
+        },
+        {
+          "belief": [
+            1
+          ],
+          "winning": true
+        },
+        {
+          "belief": [
+            0,
+            1
+          ],
+          "winning": false
+        }
+      ],
+      "strict_fixed_point_iterations": 1
+    },
+    {
+      "name": "full observation resolves the hidden-phase conflict",
+      "transitions": [
+        [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        [
+          [
+            2
+          ],
+          [
+            0
+          ]
+        ],
+        [
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ]
+      ],
+      "observations": [
+        0,
+        1,
+        2
+      ],
+      "safe_states": [
+        0,
+        1
+      ],
+      "winning_beliefs": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "controller": [
+        {
+          "belief": [
+            0
+          ],
+          "action": 0
+        },
+        {
+          "belief": [
+            1
+          ],
+          "action": 1
+        }
+      ],
+      "losing_ranks": [],
+      "initials": [
+        {
+          "belief": [
+            0
+          ],
+          "winning": true
+        },
+        {
+          "belief": [
+            1
+          ],
+          "winning": true
+        }
+      ],
+      "strict_fixed_point_iterations": 0
+    },
+    {
+      "name": "safe stuttering does not imply progress",
+      "transitions": [
+        [
+          [
+            0
+          ]
+        ]
+      ],
+      "observations": [
+        0
+      ],
+      "safe_states": [
+        0
+      ],
+      "winning_beliefs": [
+        [
+          0
+        ]
+      ],
+      "controller": [
+        {
+          "belief": [
+            0
+          ],
+          "action": 0
+        }
+      ],
+      "losing_ranks": [],
+      "initials": [
+        {
+          "belief": [
+            0
+          ],
+          "winning": true
+        }
+      ],
+      "strict_fixed_point_iterations": 0
+    },
+    {
+      "name": "hidden-phase recurrence can occur without target-certain belief",
+      "transitions": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            0
+          ]
+        ]
+      ],
+      "observations": [
+        0,
+        0
+      ],
+      "safe_states": [
+        0,
+        1
+      ],
+      "winning_beliefs": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "controller": [
+        {
+          "belief": [
+            0
+          ],
+          "action": 0
+        },
+        {
+          "belief": [
+            1
+          ],
+          "action": 0
+        },
+        {
+          "belief": [
+            0,
+            1
+          ],
+          "action": 0
+        }
+      ],
+      "losing_ranks": [],
+      "initials": [
+        {
+          "belief": [
+            0,
+            1
+          ],
+          "winning": true
+        }
+      ],
+      "strict_fixed_point_iterations": 0
+    },
+    {
+      "name": "countdown loses at a finite elimination rank",
+      "transitions": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "observations": [
+        0,
+        0,
+        0
+      ],
+      "safe_states": [
+        0,
+        1
+      ],
+      "winning_beliefs": [],
+      "controller": [],
+      "losing_ranks": [
+        {
+          "belief": [
+            0
+          ],
+          "rank": 2
+        },
+        {
+          "belief": [
+            1
+          ],
+          "rank": 1
+        },
+        {
+          "belief": [
+            0,
+            1
+          ],
+          "rank": 1
+        }
+      ],
+      "initials": [
+        {
+          "belief": [
+            0
+          ],
+          "winning": false
+        }
+      ],
+      "strict_fixed_point_iterations": 2
+    }
+  ],
+  "scope": "All two-safe-state plus absorbing-unsafe-state, two-action nondeterministic transition tables, all observation partitions; examples and exact finite verification, not empirical evidence."
+}

@@ -1,0 +1,1516 @@
+{
+  "description": "Enumerated synthetic probabilities, not empirical effects",
+  "horizon": 200,
+  "parent_sha256": "7eb33e6b47e29a61c41c516807f144f221eef6d93cb9cb40cb5263b2bb3783d5",
+  "script_sha256": "bf24ed1f423e8e774afffbd77754ccd61dd83d87f347a67dd01064e7b58b3ec2",
+  "protocol_sha256": "b721960effc697a787665420dae9e9cad88613efd66632927432665c58adc190",
+  "equivalence": {
+    "related_reachable_pairs": 48,
+    "maximum_joint_row_difference": 0.0
+  },
+  "interventions": {
+    "baseline": {
+      "none": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      "admission": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      "execution": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      "training": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      "admission_execution": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      "all": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      }
+    },
+    "admission_blocked": {
+      "none": {
+        "survival": 0.006721822797561353,
+        "mean_events": {
+          "inquiry": 0.18923773623027895,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.019889532153452617,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841242,
+          "completed_cases": 1.790872731616262,
+          "adequate_cases": 0.907918731957243,
+          "turnover": 0.14550000000317417,
+          "entry": 0.0
+        }
+      },
+      "admission": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      "execution": {
+        "survival": 0.006721822797561353,
+        "mean_events": {
+          "inquiry": 0.18923773623027895,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.019889532153452617,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841242,
+          "completed_cases": 1.790872731616262,
+          "adequate_cases": 0.907918731957243,
+          "turnover": 0.14550000000317417,
+          "entry": 0.0
+        }
+      },
+      "training": {
+        "survival": 0.006721822797561353,
+        "mean_events": {
+          "inquiry": 0.18923773623027895,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.019889532153452617,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841242,
+          "completed_cases": 1.790872731616262,
+          "adequate_cases": 0.907918731957243,
+          "turnover": 0.14550000000317417,
+          "entry": 0.0
+        }
+      },
+      "admission_execution": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      "all": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      }
+    },
+    "execution_blocked": {
+      "none": {
+        "survival": 0.006721822797561313,
+        "mean_events": {
+          "inquiry": 0.18923773623027873,
+          "admission": 0.18923773623027873,
+          "discrepant_admission": 0.06173864277728622,
+          "training": 0.019889532153452606,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841241,
+          "completed_cases": 1.7908727316162614,
+          "adequate_cases": 0.9079187319572428,
+          "turnover": 0.14550000000317412,
+          "entry": 0.0
+        }
+      },
+      "admission": {
+        "survival": 0.006721822797561313,
+        "mean_events": {
+          "inquiry": 0.18923773623027873,
+          "admission": 0.18923773623027873,
+          "discrepant_admission": 0.06173864277728622,
+          "training": 0.019889532153452606,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841241,
+          "completed_cases": 1.7908727316162614,
+          "adequate_cases": 0.9079187319572428,
+          "turnover": 0.14550000000317412,
+          "entry": 0.0
+        }
+      },
+      "execution": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      "training": {
+        "survival": 0.006721822797561313,
+        "mean_events": {
+          "inquiry": 0.18923773623027873,
+          "admission": 0.18923773623027873,
+          "discrepant_admission": 0.06173864277728622,
+          "training": 0.019889532153452606,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841241,
+          "completed_cases": 1.7908727316162614,
+          "adequate_cases": 0.9079187319572428,
+          "turnover": 0.14550000000317412,
+          "entry": 0.0
+        }
+      },
+      "admission_execution": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      "all": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      }
+    },
+    "both_blocked": {
+      "none": {
+        "survival": 0.006721822797561353,
+        "mean_events": {
+          "inquiry": 0.18923773623027895,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.019889532153452617,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841242,
+          "completed_cases": 1.790872731616262,
+          "adequate_cases": 0.907918731957243,
+          "turnover": 0.14550000000317417,
+          "entry": 0.0
+        }
+      },
+      "admission": {
+        "survival": 0.006721822797561313,
+        "mean_events": {
+          "inquiry": 0.18923773623027873,
+          "admission": 0.18923773623027873,
+          "discrepant_admission": 0.06173864277728622,
+          "training": 0.019889532153452606,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841241,
+          "completed_cases": 1.7908727316162614,
+          "adequate_cases": 0.9079187319572428,
+          "turnover": 0.14550000000317412,
+          "entry": 0.0
+        }
+      },
+      "execution": {
+        "survival": 0.006721822797561353,
+        "mean_events": {
+          "inquiry": 0.18923773623027895,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.019889532153452617,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841242,
+          "completed_cases": 1.790872731616262,
+          "adequate_cases": 0.907918731957243,
+          "turnover": 0.14550000000317417,
+          "entry": 0.0
+        }
+      },
+      "training": {
+        "survival": 0.006721822797561353,
+        "mean_events": {
+          "inquiry": 0.18923773623027895,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.019889532153452617,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841242,
+          "completed_cases": 1.790872731616262,
+          "adequate_cases": 0.907918731957243,
+          "turnover": 0.14550000000317417,
+          "entry": 0.0
+        }
+      },
+      "admission_execution": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      "all": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      }
+    },
+    "training_blocked": {
+      "none": {
+        "survival": 1.2743567710294266e-05,
+        "mean_events": {
+          "inquiry": 0.08333298145747291,
+          "admission": 0.08333298145747291,
+          "discrepant_admission": 0.01044787186800328,
+          "training": 0.0,
+          "revision": 0.01044787186800328,
+          "beneficial_revision": 0.006630179617081277,
+          "harmful_revision": 0.0038176922509220047,
+          "adequate": 0.5506247031186294,
+          "completed_cases": 1.8728580631859888,
+          "adequate_cases": 0.9873216247856473,
+          "turnover": 0.1398750593762727,
+          "entry": 0.0
+        }
+      },
+      "admission": {
+        "survival": 1.2743567710294266e-05,
+        "mean_events": {
+          "inquiry": 0.08333298145747291,
+          "admission": 0.08333298145747291,
+          "discrepant_admission": 0.01044787186800328,
+          "training": 0.0,
+          "revision": 0.01044787186800328,
+          "beneficial_revision": 0.006630179617081277,
+          "harmful_revision": 0.0038176922509220047,
+          "adequate": 0.5506247031186294,
+          "completed_cases": 1.8728580631859888,
+          "adequate_cases": 0.9873216247856473,
+          "turnover": 0.1398750593762727,
+          "entry": 0.0
+        }
+      },
+      "execution": {
+        "survival": 1.2743567710294266e-05,
+        "mean_events": {
+          "inquiry": 0.08333298145747291,
+          "admission": 0.08333298145747291,
+          "discrepant_admission": 0.01044787186800328,
+          "training": 0.0,
+          "revision": 0.01044787186800328,
+          "beneficial_revision": 0.006630179617081277,
+          "harmful_revision": 0.0038176922509220047,
+          "adequate": 0.5506247031186294,
+          "completed_cases": 1.8728580631859888,
+          "adequate_cases": 0.9873216247856473,
+          "turnover": 0.1398750593762727,
+          "entry": 0.0
+        }
+      },
+      "training": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      "admission_execution": {
+        "survival": 1.2743567710294266e-05,
+        "mean_events": {
+          "inquiry": 0.08333298145747291,
+          "admission": 0.08333298145747291,
+          "discrepant_admission": 0.01044787186800328,
+          "training": 0.0,
+          "revision": 0.01044787186800328,
+          "beneficial_revision": 0.006630179617081277,
+          "harmful_revision": 0.0038176922509220047,
+          "adequate": 0.5506247031186294,
+          "completed_cases": 1.8728580631859888,
+          "adequate_cases": 0.9873216247856473,
+          "turnover": 0.1398750593762727,
+          "entry": 0.0
+        }
+      },
+      "all": {
+        "survival": 0.09436917425904776,
+        "mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      }
+    }
+  },
+  "no_failure_attrition": {
+    "baseline": {
+      "none": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "admission": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "execution": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "training": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "admission_execution": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "all": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      }
+    },
+    "admission_blocked": {
+      "none": {
+        "survival": 0.16746583040588922,
+        "mean_events": {
+          "inquiry": 0.415716822669159,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.01729333990185932,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841241,
+          "completed_cases": 1.566989837428974,
+          "adequate_cases": 0.8078527168498278,
+          "turnover": 0.049999999999999684,
+          "entry": 0.0
+        }
+      },
+      "admission": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "execution": {
+        "survival": 0.16746583040588922,
+        "mean_events": {
+          "inquiry": 0.415716822669159,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.01729333990185932,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841241,
+          "completed_cases": 1.566989837428974,
+          "adequate_cases": 0.8078527168498278,
+          "turnover": 0.049999999999999684,
+          "entry": 0.0
+        }
+      },
+      "training": {
+        "survival": 0.16746583040588922,
+        "mean_events": {
+          "inquiry": 0.415716822669159,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.01729333990185932,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841241,
+          "completed_cases": 1.566989837428974,
+          "adequate_cases": 0.8078527168498278,
+          "turnover": 0.049999999999999684,
+          "entry": 0.0
+        }
+      },
+      "admission_execution": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "all": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      }
+    },
+    "execution_blocked": {
+      "none": {
+        "survival": 0.16746583040588794,
+        "mean_events": {
+          "inquiry": 0.4157168226691581,
+          "admission": 0.4157168226691581,
+          "discrepant_admission": 0.1899492370243374,
+          "training": 0.01729333990185928,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841232,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 0.8078527168498263,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "admission": {
+        "survival": 0.16746583040588794,
+        "mean_events": {
+          "inquiry": 0.4157168226691581,
+          "admission": 0.4157168226691581,
+          "discrepant_admission": 0.1899492370243374,
+          "training": 0.01729333990185928,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841232,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 0.8078527168498263,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "execution": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "training": {
+        "survival": 0.16746583040588794,
+        "mean_events": {
+          "inquiry": 0.4157168226691581,
+          "admission": 0.4157168226691581,
+          "discrepant_admission": 0.1899492370243374,
+          "training": 0.01729333990185928,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841232,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 0.8078527168498263,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "admission_execution": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "all": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      }
+    },
+    "both_blocked": {
+      "none": {
+        "survival": 0.16746583040588922,
+        "mean_events": {
+          "inquiry": 0.415716822669159,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.01729333990185932,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841241,
+          "completed_cases": 1.566989837428974,
+          "adequate_cases": 0.8078527168498278,
+          "turnover": 0.049999999999999684,
+          "entry": 0.0
+        }
+      },
+      "admission": {
+        "survival": 0.16746583040588794,
+        "mean_events": {
+          "inquiry": 0.4157168226691581,
+          "admission": 0.4157168226691581,
+          "discrepant_admission": 0.1899492370243374,
+          "training": 0.01729333990185928,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841232,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 0.8078527168498263,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "execution": {
+        "survival": 0.16746583040588922,
+        "mean_events": {
+          "inquiry": 0.415716822669159,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.01729333990185932,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841241,
+          "completed_cases": 1.566989837428974,
+          "adequate_cases": 0.8078527168498278,
+          "turnover": 0.049999999999999684,
+          "entry": 0.0
+        }
+      },
+      "training": {
+        "survival": 0.16746583040588922,
+        "mean_events": {
+          "inquiry": 0.415716822669159,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.01729333990185932,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.5224999999841241,
+          "completed_cases": 1.566989837428974,
+          "adequate_cases": 0.8078527168498278,
+          "turnover": 0.049999999999999684,
+          "entry": 0.0
+        }
+      },
+      "admission_execution": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "all": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      }
+    },
+    "training_blocked": {
+      "none": {
+        "survival": 0.0004040281004470252,
+        "mean_events": {
+          "inquiry": 0.09999649473337495,
+          "admission": 0.09999649473337495,
+          "discrepant_admission": 0.013347025036372315,
+          "training": 0.0,
+          "revision": 0.013347025036372315,
+          "beneficial_revision": 0.008810933649687103,
+          "harmful_revision": 0.004536091386685223,
+          "adequate": 0.5652470030113197,
+          "completed_cases": 1.820035827514649,
+          "adequate_cases": 0.9843416810970504,
+          "turnover": 0.04999999999999967,
+          "entry": 0.0
+        }
+      },
+      "admission": {
+        "survival": 0.0004040281004470252,
+        "mean_events": {
+          "inquiry": 0.09999649473337495,
+          "admission": 0.09999649473337495,
+          "discrepant_admission": 0.013347025036372315,
+          "training": 0.0,
+          "revision": 0.013347025036372315,
+          "beneficial_revision": 0.008810933649687103,
+          "harmful_revision": 0.004536091386685223,
+          "adequate": 0.5652470030113197,
+          "completed_cases": 1.820035827514649,
+          "adequate_cases": 0.9843416810970504,
+          "turnover": 0.04999999999999967,
+          "entry": 0.0
+        }
+      },
+      "execution": {
+        "survival": 0.0004040281004470252,
+        "mean_events": {
+          "inquiry": 0.09999649473337495,
+          "admission": 0.09999649473337495,
+          "discrepant_admission": 0.013347025036372315,
+          "training": 0.0,
+          "revision": 0.013347025036372315,
+          "beneficial_revision": 0.008810933649687103,
+          "harmful_revision": 0.004536091386685223,
+          "adequate": 0.5652470030113197,
+          "completed_cases": 1.820035827514649,
+          "adequate_cases": 0.9843416810970504,
+          "turnover": 0.04999999999999967,
+          "entry": 0.0
+        }
+      },
+      "training": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      },
+      "admission_execution": {
+        "survival": 0.0004040281004470252,
+        "mean_events": {
+          "inquiry": 0.09999649473337495,
+          "admission": 0.09999649473337495,
+          "discrepant_admission": 0.013347025036372315,
+          "training": 0.0,
+          "revision": 0.013347025036372315,
+          "beneficial_revision": 0.008810933649687103,
+          "harmful_revision": 0.004536091386685223,
+          "adequate": 0.5652470030113197,
+          "completed_cases": 1.820035827514649,
+          "adequate_cases": 0.9843416810970504,
+          "turnover": 0.04999999999999967,
+          "entry": 0.0
+        }
+      },
+      "all": {
+        "survival": 0.16746583040588786,
+        "mean_events": {
+          "inquiry": 0.415716822669158,
+          "admission": 0.415716822669158,
+          "discrepant_admission": 0.056747298233537705,
+          "training": 0.01729333990185928,
+          "revision": 0.056747298233537705,
+          "beneficial_revision": 0.03795931582786202,
+          "harmful_revision": 0.018787982405675675,
+          "adequate": 0.7112114311311037,
+          "completed_cases": 1.5669898374289708,
+          "adequate_cases": 1.0118704218585703,
+          "turnover": 0.04999999999999966,
+          "entry": 0.0
+        }
+      }
+    }
+  },
+  "no_failure_attrition_survival_range": 1.3600232051658168e-15,
+  "accuracy_factorial": {
+    "0.0": {
+      "arms": {
+        "00": {
+          "survival": 0.006721822797561313,
+          "mean_events": {
+            "inquiry": 0.1892377362302787,
+            "admission": 0.0,
+            "discrepant_admission": 0.0,
+            "training": 0.019889532153452606,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841239,
+            "completed_cases": 1.790872731616261,
+            "adequate_cases": 0.9079187319572426,
+            "turnover": 0.1455000000031741,
+            "entry": 0.0
+          }
+        },
+        "01": {
+          "survival": 0.006721822797561313,
+          "mean_events": {
+            "inquiry": 0.1892377362302787,
+            "admission": 0.0,
+            "discrepant_admission": 0.0,
+            "training": 0.019889532153452606,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841239,
+            "completed_cases": 1.790872731616261,
+            "adequate_cases": 0.9079187319572426,
+            "turnover": 0.1455000000031741,
+            "entry": 0.0
+          }
+        },
+        "10": {
+          "survival": 0.006721822797561322,
+          "mean_events": {
+            "inquiry": 0.1892377362302787,
+            "admission": 0.1892377362302787,
+            "discrepant_admission": 0.13115245182386487,
+            "training": 0.019889532153452603,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.522499999984124,
+            "completed_cases": 1.7908727316162605,
+            "adequate_cases": 0.9079187319572425,
+            "turnover": 0.14550000000317406,
+            "entry": 0.0
+          }
+        },
+        "11": {
+          "survival": 5.732602062167457e-05,
+          "mean_events": {
+            "inquiry": 0.08082681121732391,
+            "admission": 0.08082681121732391,
+            "discrepant_admission": 0.009428232260098103,
+            "training": 0.019999192274908806,
+            "revision": 0.009428232260098103,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.009428232260098103,
+            "adequate": 0.4282193666144904,
+            "completed_cases": 1.8991739965077556,
+            "adequate_cases": 0.8554014308068474,
+            "turnover": 0.16435612667710053,
+            "entry": 0.0
+          }
+        }
+      },
+      "survival_interaction": -0.006664496776939649
+    },
+    "0.5": {
+      "arms": {
+        "00": {
+          "survival": 0.006721822797561313,
+          "mean_events": {
+            "inquiry": 0.1892377362302788,
+            "admission": 0.0,
+            "discrepant_admission": 0.0,
+            "training": 0.019889532153452606,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841241,
+            "completed_cases": 1.790872731616261,
+            "adequate_cases": 0.9079187319572426,
+            "turnover": 0.1455000000031741,
+            "entry": 0.0
+          }
+        },
+        "01": {
+          "survival": 0.006721822797561313,
+          "mean_events": {
+            "inquiry": 0.1892377362302788,
+            "admission": 0.0,
+            "discrepant_admission": 0.0,
+            "training": 0.019889532153452606,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841241,
+            "completed_cases": 1.790872731616261,
+            "adequate_cases": 0.9079187319572426,
+            "turnover": 0.1455000000031741,
+            "entry": 0.0
+          }
+        },
+        "10": {
+          "survival": 0.006721822797561318,
+          "mean_events": {
+            "inquiry": 0.18923773623027892,
+            "admission": 0.18923773623027892,
+            "discrepant_admission": 0.09461886811513938,
+            "training": 0.01988953215345261,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841239,
+            "completed_cases": 1.79087273161626,
+            "adequate_cases": 0.9079187319572426,
+            "turnover": 0.14550000000317406,
+            "entry": 0.0
+          }
+        },
+        "11": {
+          "survival": 0.0020740756045887,
+          "mean_events": {
+            "inquiry": 0.13793596189173626,
+            "admission": 0.13793596189173626,
+            "discrepant_admission": 0.0689679809458681,
+            "training": 0.019966872240591266,
+            "revision": 0.0689679809458681,
+            "beneficial_revision": 0.03224366733855048,
+            "harmful_revision": 0.03672431360731761,
+            "adequate": 0.47770770695752446,
+            "completed_cases": 1.8420971658676606,
+            "adequate_cases": 0.8828363807626236,
+            "turnover": 0.15445845860849367,
+            "entry": 0.0
+          }
+        }
+      },
+      "survival_interaction": -0.004647747192972618
+    },
+    "0.95": {
+      "arms": {
+        "00": {
+          "survival": 0.006721822797561353,
+          "mean_events": {
+            "inquiry": 0.18923773623027895,
+            "admission": 0.0,
+            "discrepant_admission": 0.0,
+            "training": 0.019889532153452617,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841242,
+            "completed_cases": 1.790872731616262,
+            "adequate_cases": 0.907918731957243,
+            "turnover": 0.14550000000317417,
+            "entry": 0.0
+          }
+        },
+        "01": {
+          "survival": 0.006721822797561353,
+          "mean_events": {
+            "inquiry": 0.18923773623027895,
+            "admission": 0.0,
+            "discrepant_admission": 0.0,
+            "training": 0.019889532153452617,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841242,
+            "completed_cases": 1.790872731616262,
+            "adequate_cases": 0.907918731957243,
+            "turnover": 0.14550000000317417,
+            "entry": 0.0
+          }
+        },
+        "10": {
+          "survival": 0.006721822797561313,
+          "mean_events": {
+            "inquiry": 0.18923773623027873,
+            "admission": 0.18923773623027873,
+            "discrepant_admission": 0.06173864277728622,
+            "training": 0.019889532153452606,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841241,
+            "completed_cases": 1.7908727316162614,
+            "adequate_cases": 0.9079187319572428,
+            "turnover": 0.14550000000317412,
+            "entry": 0.0
+          }
+        },
+        "11": {
+          "survival": 0.09436917425904776,
+          "mean_events": {
+            "inquiry": 0.35077819971132634,
+            "admission": 0.35077819971132634,
+            "discrepant_admission": 0.04697848163504314,
+            "training": 0.01834461975998262,
+            "revision": 0.04697848163504314,
+            "beneficial_revision": 0.031075103407781062,
+            "harmful_revision": 0.015903378227262087,
+            "adequate": 0.6724614871998067,
+            "completed_cases": 1.6308771805286775,
+            "adequate_cases": 0.9983020892833426,
+            "turnover": 0.11550770256003708,
+            "entry": 0.0
+          }
+        }
+      },
+      "survival_interaction": 0.08764735146148644
+    },
+    "1.0": {
+      "arms": {
+        "00": {
+          "survival": 0.006721822797561313,
+          "mean_events": {
+            "inquiry": 0.1892377362302787,
+            "admission": 0.0,
+            "discrepant_admission": 0.0,
+            "training": 0.019889532153452606,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841239,
+            "completed_cases": 1.790872731616261,
+            "adequate_cases": 0.9079187319572426,
+            "turnover": 0.1455000000031741,
+            "entry": 0.0
+          }
+        },
+        "01": {
+          "survival": 0.006721822797561313,
+          "mean_events": {
+            "inquiry": 0.1892377362302787,
+            "admission": 0.0,
+            "discrepant_admission": 0.0,
+            "training": 0.019889532153452606,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841239,
+            "completed_cases": 1.790872731616261,
+            "adequate_cases": 0.9079187319572426,
+            "turnover": 0.1455000000031741,
+            "entry": 0.0
+          }
+        },
+        "10": {
+          "survival": 0.006721822797561316,
+          "mean_events": {
+            "inquiry": 0.18923773623027862,
+            "admission": 0.18923773623027862,
+            "discrepant_admission": 0.05808528440641366,
+            "training": 0.019889532153452592,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.522499999984124,
+            "completed_cases": 1.7908727316162603,
+            "adequate_cases": 0.9079187319572425,
+            "turnover": 0.14550000000317406,
+            "entry": 0.0
+          }
+        },
+        "11": {
+          "survival": 0.14978422635855737,
+          "mean_events": {
+            "inquiry": 0.4127624576958732,
+            "admission": 0.4127624576958732,
+            "discrepant_admission": 0.021350727897381037,
+            "training": 0.01734674956694356,
+            "revision": 0.021350727897381037,
+            "beneficial_revision": 0.021350727897381037,
+            "harmful_revision": 0.0,
+            "adequate": 0.7327429112016222,
+            "completed_cases": 1.5698907927371772,
+            "adequate_cases": 1.036433980622131,
+            "turnover": 0.10345141775967477,
+            "entry": 0.0
+          }
+        }
+      },
+      "survival_interaction": 0.14306240356099606
+    }
+  },
+  "delayed_restoration": {
+    "admission_blocked": [
+      {
+        "restoration_time": 0,
+        "endpoint_time": 200,
+        "survival_before_restoration": 1.0,
+        "survival_through_endpoint": 0.09436917425904776,
+        "post_restoration_mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      {
+        "restoration_time": 25,
+        "endpoint_time": 225,
+        "survival_before_restoration": 0.6953982781714172,
+        "survival_through_endpoint": 0.05441831100883432,
+        "post_restoration_mean_events": {
+          "inquiry": 0.2019450087915879,
+          "admission": 0.2019450087915879,
+          "discrepant_admission": 0.02791585277248714,
+          "training": 0.010923519209185866,
+          "revision": 0.02791585277248714,
+          "beneficial_revision": 0.018808524684735938,
+          "harmful_revision": 0.009107328087751216,
+          "adequate": 0.5976147687204321,
+          "completed_cases": 1.787131471999214,
+          "adequate_cases": 0.9955914215993258,
+          "turnover": 0.13047704625591217,
+          "entry": 0.0
+        }
+      },
+      {
+        "restoration_time": 100,
+        "endpoint_time": 300,
+        "survival_before_restoration": 0.09777687375099618,
+        "survival_through_endpoint": 0.007355959293011235,
+        "post_restoration_mean_events": {
+          "inquiry": 0.027296167361096177,
+          "admission": 0.027296167361096177,
+          "discrepant_admission": 0.003779766895575477,
+          "training": 0.00147828949755781,
+          "revision": 0.003779766895575477,
+          "beneficial_revision": 0.0025491228901607017,
+          "harmful_revision": 0.0012306440054147734,
+          "adequate": 0.5130485268231952,
+          "completed_cases": 1.9712255431413317,
+          "adequate_cases": 0.9991129139999351,
+          "turnover": 0.14739029463535905,
+          "entry": 0.0
+        }
+      },
+      {
+        "restoration_time": 200,
+        "endpoint_time": 400,
+        "survival_before_restoration": 0.006721822797561353,
+        "survival_through_endpoint": 0.0005055587079339627,
+        "post_restoration_mean_events": {
+          "inquiry": 0.0018760047989861276,
+          "admission": 0.0018760047989861276,
+          "discrepant_admission": 0.00025977505314345254,
+          "training": 0.00010159957058475394,
+          "revision": 0.00025977505314345254,
+          "beneficial_revision": 0.00017519563614937637,
+          "harmful_revision": 8.457941699407611e-05,
+          "adequate": 0.5008967561479303,
+          "completed_cases": 1.9980223956304044,
+          "adequate_cases": 0.9999389524698757,
+          "turnover": 0.14982064877041087,
+          "entry": 0.0
+        }
+      }
+    ],
+    "execution_blocked": [
+      {
+        "restoration_time": 0,
+        "endpoint_time": 200,
+        "survival_before_restoration": 1.0,
+        "survival_through_endpoint": 0.09436917425904776,
+        "post_restoration_mean_events": {
+          "inquiry": 0.35077819971132634,
+          "admission": 0.35077819971132634,
+          "discrepant_admission": 0.04697848163504314,
+          "training": 0.01834461975998262,
+          "revision": 0.04697848163504314,
+          "beneficial_revision": 0.031075103407781062,
+          "harmful_revision": 0.015903378227262087,
+          "adequate": 0.6724614871998067,
+          "completed_cases": 1.6308771805286775,
+          "adequate_cases": 0.9983020892833426,
+          "turnover": 0.11550770256003708,
+          "entry": 0.0
+        }
+      },
+      {
+        "restoration_time": 25,
+        "endpoint_time": 225,
+        "survival_before_restoration": 0.695398278171417,
+        "survival_through_endpoint": 0.054577133204362735,
+        "post_restoration_mean_events": {
+          "inquiry": 0.2025587563824931,
+          "admission": 0.2025587563824931,
+          "discrepant_admission": 0.027870896742452883,
+          "training": 0.010920733223951736,
+          "revision": 0.0280668496669217,
+          "beneficial_revision": 0.01891159933321067,
+          "harmful_revision": 0.009155250333711054,
+          "adequate": 0.5981633378146103,
+          "completed_cases": 1.7865205103935415,
+          "adequate_cases": 0.9959076620840572,
+          "turnover": 0.1303673324370764,
+          "entry": 0.0
+        }
+      },
+      {
+        "restoration_time": 100,
+        "endpoint_time": 300,
+        "survival_before_restoration": 0.09777687375099592,
+        "survival_through_endpoint": 0.007378651433950199,
+        "post_restoration_mean_events": {
+          "inquiry": 0.027383858170226646,
+          "admission": 0.027383858170226646,
+          "discrepant_admission": 0.0037733436839695656,
+          "training": 0.0014778914425543732,
+          "revision": 0.0038012620547474042,
+          "beneficial_revision": 0.002563810492382753,
+          "harmful_revision": 0.0012374515623646478,
+          "adequate": 0.5131269050823444,
+          "completed_cases": 1.971138250387203,
+          "adequate_cases": 0.999158097694985,
+          "turnover": 0.14737461898352897,
+          "entry": 0.0
+        }
+      },
+      {
+        "restoration_time": 200,
+        "endpoint_time": 400,
+        "survival_before_restoration": 0.006721822797561313,
+        "survival_through_endpoint": 0.0005071183054932238,
+        "post_restoration_mean_events": {
+          "inquiry": 0.001882031659662579,
+          "admission": 0.001882031659662579,
+          "discrepant_admission": 0.00025933359523209115,
+          "training": 0.00010157221284828076,
+          "revision": 0.0002612523828505153,
+          "beneficial_revision": 0.00017620509297900234,
+          "harmful_revision": 8.504728987151286e-05,
+          "adequate": 0.5009021429707073,
+          "completed_cases": 1.9980163961274642,
+          "adequate_cases": 0.9999420578789561,
+          "turnover": 0.14981957140585545,
+          "entry": 0.0
+        }
+      }
+    ]
+  }
+}

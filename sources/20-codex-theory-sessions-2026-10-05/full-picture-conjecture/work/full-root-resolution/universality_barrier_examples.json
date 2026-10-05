@@ -1,0 +1,16 @@
+{
+  "status": "Finite illustrations, not a proof of undecidability or empirical universality.",
+  "finite_prefix": {
+    "cutoffs_checked": 201,
+    "matching_prefix_observations_checked": 20301,
+    "divergent_next_states_checked": 201,
+    "all_passed": true
+  },
+  "wrapper": {
+    "toy_programs_checked": 8,
+    "state_checks": 1032,
+    "output_prefix_checks": 1032,
+    "all_passed": true,
+    "qualification": "Finite wrapper checks; these toy programs are not a universal-machine implementation."
+  }
+}

@@ -1,0 +1,3997 @@
+{
+  "status": "all completed",
+  "main_initial_states": 162,
+  "probes": 7,
+  "main_optimizations": 1134,
+  "control_initial_states": 30,
+  "partition_sensitive_groups_out_of_63_per_access": {
+    "barred": 24,
+    "immediate": 0,
+    "delayed": 15
+  },
+  "nested_access_comparisons": 378,
+  "main_probe_optima_using_paid_tests": 0,
+  "selected_stock2_known_fault_cases": [
+    {
+      "label": "main",
+      "initial": {
+        "horizon": 4,
+        "stock": 2,
+        "cash": 0,
+        "treasury": 5,
+        "ready": 0,
+        "belief": "1",
+        "access": "barred"
+      },
+      "probes": {
+        "failure": {
+          "support_value": "153/250",
+          "metrics_exact": {
+            "failure": "153/250",
+            "expense": "14331/20000",
+            "burden": "3213/200000",
+            "unrecovered": "658699/1000000",
+            "tests": "0",
+            "repairs": "4777/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "1944969/250000",
+            "terminal_cash": "860823/200000",
+            "terminal_treasury": "7759211/1000000"
+          },
+          "metrics": {
+            "failure": 0.612,
+            "expense": 0.71655,
+            "burden": 0.016065,
+            "unrecovered": 0.658699,
+            "tests": 0.0,
+            "repairs": 0.23885,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 7.779876,
+            "terminal_cash": 4.304115,
+            "terminal_treasury": 7.759211
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "recovery": {
+          "support_value": "153/250",
+          "metrics_exact": {
+            "failure": "153/250",
+            "expense": "12171/10000",
+            "burden": "8157/100000",
+            "unrecovered": "153/250",
+            "tests": "0",
+            "repairs": "4057/10000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "2210233/250000",
+            "terminal_cash": "541/125",
+            "terminal_treasury": "1036979/125000"
+          },
+          "metrics": {
+            "failure": 0.612,
+            "expense": 1.2171,
+            "burden": 0.08157,
+            "unrecovered": 0.612,
+            "tests": 0.0,
+            "repairs": 0.4057,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 8.840932,
+            "terminal_cash": 4.328,
+            "terminal_treasury": 8.295832
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "expense": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "541/125",
+            "terminal_treasury": "3675189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 4.328,
+            "terminal_treasury": 7.350378
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "burden": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "541/125",
+            "terminal_treasury": "3675189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 4.328,
+            "terminal_treasury": 7.350378
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "failure_expense": {
+          "support_value": "161211/20000",
+          "metrics_exact": {
+            "failure": "153/250",
+            "expense": "14331/20000",
+            "burden": "3213/200000",
+            "unrecovered": "658699/1000000",
+            "tests": "0",
+            "repairs": "4777/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "1944969/250000",
+            "terminal_cash": "860823/200000",
+            "terminal_treasury": "7759211/1000000"
+          },
+          "metrics": {
+            "failure": 0.612,
+            "expense": 0.71655,
+            "burden": 0.016065,
+            "unrecovered": 0.658699,
+            "tests": 0.0,
+            "repairs": 0.23885,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 7.779876,
+            "terminal_cash": 4.304115,
+            "terminal_treasury": 7.759211
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "failure_expense_burden": {
+          "support_value": "812481/100000",
+          "metrics_exact": {
+            "failure": "153/250",
+            "expense": "14331/20000",
+            "burden": "3213/200000",
+            "unrecovered": "658699/1000000",
+            "tests": "0",
+            "repairs": "4777/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "1944969/250000",
+            "terminal_cash": "860823/200000",
+            "terminal_treasury": "7759211/1000000"
+          },
+          "metrics": {
+            "failure": 0.612,
+            "expense": 0.71655,
+            "burden": 0.016065,
+            "unrecovered": 0.658699,
+            "tests": 0.0,
+            "repairs": 0.23885,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 7.779876,
+            "terminal_cash": 4.304115,
+            "terminal_treasury": 7.759211
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "mixed": {
+          "support_value": "5815411/1000000",
+          "metrics_exact": {
+            "failure": "153/250",
+            "expense": "14331/20000",
+            "burden": "3213/200000",
+            "unrecovered": "658699/1000000",
+            "tests": "0",
+            "repairs": "4777/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "1944969/250000",
+            "terminal_cash": "860823/200000",
+            "terminal_treasury": "7759211/1000000"
+          },
+          "metrics": {
+            "failure": 0.612,
+            "expense": 0.71655,
+            "burden": 0.016065,
+            "unrecovered": 0.658699,
+            "tests": 0.0,
+            "repairs": 0.23885,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 7.779876,
+            "terminal_cash": 4.304115,
+            "terminal_treasury": 7.759211
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        }
+      }
+    },
+    {
+      "label": "main",
+      "initial": {
+        "horizon": 4,
+        "stock": 2,
+        "cash": 1,
+        "treasury": 4,
+        "ready": 0,
+        "belief": "1",
+        "access": "barred"
+      },
+      "probes": {
+        "failure": {
+          "support_value": "17/1250",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1581351/200000",
+            "terminal_treasury": "12761459/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.906755,
+            "terminal_treasury": 12.761459
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "recovery": {
+          "support_value": "17/1250",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "35631/10000",
+            "burden": "737/4000",
+            "unrecovered": "17/1250",
+            "tests": "0",
+            "repairs": "11877/10000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "960647/50000",
+            "terminal_cash": "98897/12500",
+            "terminal_treasury": "79613/6250"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 3.5631,
+            "burden": 0.18425,
+            "unrecovered": 0.0136,
+            "tests": 0.0,
+            "repairs": 1.1877,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 19.21294,
+            "terminal_cash": 7.91176,
+            "terminal_treasury": 12.73808
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "expense": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "247/50",
+            "terminal_treasury": "3369189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 4.94,
+            "terminal_treasury": 6.738378
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "burden": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "247/50",
+            "terminal_treasury": "3369189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 4.94,
+            "terminal_treasury": 6.738378
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "failure_expense": {
+          "support_value": "58251/20000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1581351/200000",
+            "terminal_treasury": "12761459/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.906755,
+            "terminal_treasury": 12.761459
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "failure_expense_burden": {
+          "support_value": "309873/100000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1581351/200000",
+            "terminal_treasury": "12761459/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.906755,
+            "terminal_treasury": 12.761459
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "mixed": {
+          "support_value": "3311811/1000000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1581351/200000",
+            "terminal_treasury": "12761459/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.906755,
+            "terminal_treasury": 12.761459
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        }
+      }
+    },
+    {
+      "label": "main",
+      "initial": {
+        "horizon": 4,
+        "stock": 2,
+        "cash": 5,
+        "treasury": 0,
+        "ready": 0,
+        "belief": "1",
+        "access": "barred"
+      },
+      "probes": {
+        "failure": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "60267/20000",
+            "burden": "25149/200000",
+            "unrecovered": "90339/1000000",
+            "tests": "0",
+            "repairs": "20089/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4675711/250000",
+            "terminal_cash": "1597031/200000",
+            "terminal_treasury": "12704339/1000000"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 3.01335,
+            "burden": 0.125745,
+            "unrecovered": 0.090339,
+            "tests": 0.0,
+            "repairs": 1.00445,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.702844,
+            "terminal_cash": 7.985155,
+            "terminal_treasury": 12.704339
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "recovery": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "42969/10000",
+            "burden": "5211/20000",
+            "unrecovered": "0",
+            "tests": "0",
+            "repairs": "14323/10000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "1139777/50000",
+            "terminal_cash": "8",
+            "terminal_treasury": "193733/12500"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 4.2969,
+            "burden": 0.26055,
+            "unrecovered": 0.0,
+            "tests": 0.0,
+            "repairs": 1.4323,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 22.79554,
+            "terminal_cash": 8.0,
+            "terminal_treasury": 15.49864
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 1
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "expense": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "burden": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "failure_expense": {
+          "support_value": "58251/20000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "failure_expense_burden": {
+          "support_value": "309873/100000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "mixed": {
+          "support_value": "3311811/1000000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        }
+      }
+    },
+    {
+      "label": "main",
+      "initial": {
+        "horizon": 4,
+        "stock": 2,
+        "cash": 0,
+        "treasury": 5,
+        "ready": 0,
+        "belief": "1",
+        "access": "immediate"
+      },
+      "probes": {
+        "failure": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "60267/20000",
+            "burden": "25149/200000",
+            "unrecovered": "90339/1000000",
+            "tests": "0",
+            "repairs": "20089/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4675711/250000",
+            "terminal_cash": "1597031/200000",
+            "terminal_treasury": "12704339/1000000"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 3.01335,
+            "burden": 0.125745,
+            "unrecovered": 0.090339,
+            "tests": 0.0,
+            "repairs": 1.00445,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.702844,
+            "terminal_cash": 7.985155,
+            "terminal_treasury": 12.704339
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "recovery": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "42969/10000",
+            "burden": "5211/20000",
+            "unrecovered": "0",
+            "tests": "0",
+            "repairs": "14323/10000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "1139777/50000",
+            "terminal_cash": "8",
+            "terminal_treasury": "193733/12500"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 4.2969,
+            "burden": 0.26055,
+            "unrecovered": 0.0,
+            "tests": 0.0,
+            "repairs": 1.4323,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 22.79554,
+            "terminal_cash": 8.0,
+            "terminal_treasury": 15.49864
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 1
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "expense": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "burden": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "failure_expense": {
+          "support_value": "58251/20000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "failure_expense_burden": {
+          "support_value": "309873/100000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "mixed": {
+          "support_value": "3311811/1000000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        }
+      }
+    },
+    {
+      "label": "main",
+      "initial": {
+        "horizon": 4,
+        "stock": 2,
+        "cash": 1,
+        "treasury": 4,
+        "ready": 0,
+        "belief": "1",
+        "access": "immediate"
+      },
+      "probes": {
+        "failure": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "60267/20000",
+            "burden": "25149/200000",
+            "unrecovered": "90339/1000000",
+            "tests": "0",
+            "repairs": "20089/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4675711/250000",
+            "terminal_cash": "1597031/200000",
+            "terminal_treasury": "12704339/1000000"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 3.01335,
+            "burden": 0.125745,
+            "unrecovered": 0.090339,
+            "tests": 0.0,
+            "repairs": 1.00445,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.702844,
+            "terminal_cash": 7.985155,
+            "terminal_treasury": 12.704339
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "recovery": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "42969/10000",
+            "burden": "5211/20000",
+            "unrecovered": "0",
+            "tests": "0",
+            "repairs": "14323/10000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "1139777/50000",
+            "terminal_cash": "8",
+            "terminal_treasury": "193733/12500"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 4.2969,
+            "burden": 0.26055,
+            "unrecovered": 0.0,
+            "tests": 0.0,
+            "repairs": 1.4323,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 22.79554,
+            "terminal_cash": 8.0,
+            "terminal_treasury": 15.49864
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 1
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "expense": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "burden": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "failure_expense": {
+          "support_value": "58251/20000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "failure_expense_burden": {
+          "support_value": "309873/100000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "mixed": {
+          "support_value": "3311811/1000000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        }
+      }
+    },
+    {
+      "label": "main",
+      "initial": {
+        "horizon": 4,
+        "stock": 2,
+        "cash": 5,
+        "treasury": 0,
+        "ready": 0,
+        "belief": "1",
+        "access": "immediate"
+      },
+      "probes": {
+        "failure": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "60267/20000",
+            "burden": "25149/200000",
+            "unrecovered": "90339/1000000",
+            "tests": "0",
+            "repairs": "20089/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4675711/250000",
+            "terminal_cash": "1597031/200000",
+            "terminal_treasury": "12704339/1000000"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 3.01335,
+            "burden": 0.125745,
+            "unrecovered": 0.090339,
+            "tests": 0.0,
+            "repairs": 1.00445,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.702844,
+            "terminal_cash": 7.985155,
+            "terminal_treasury": 12.704339
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "recovery": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "42969/10000",
+            "burden": "5211/20000",
+            "unrecovered": "0",
+            "tests": "0",
+            "repairs": "14323/10000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "1139777/50000",
+            "terminal_cash": "8",
+            "terminal_treasury": "193733/12500"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 4.2969,
+            "burden": 0.26055,
+            "unrecovered": 0.0,
+            "tests": 0.0,
+            "repairs": 1.4323,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 22.79554,
+            "terminal_cash": 8.0,
+            "terminal_treasury": 15.49864
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 1
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "expense": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "burden": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "failure_expense": {
+          "support_value": "58251/20000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "failure_expense_burden": {
+          "support_value": "309873/100000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "mixed": {
+          "support_value": "3311811/1000000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        }
+      }
+    },
+    {
+      "label": "main",
+      "initial": {
+        "horizon": 4,
+        "stock": 2,
+        "cash": 0,
+        "treasury": 5,
+        "ready": 0,
+        "belief": "1",
+        "access": "delayed"
+      },
+      "probes": {
+        "failure": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "60267/20000",
+            "burden": "25149/200000",
+            "unrecovered": "90339/1000000",
+            "tests": "0",
+            "repairs": "20089/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4675711/250000",
+            "terminal_cash": "1597031/200000",
+            "terminal_treasury": "12704339/1000000"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 3.01335,
+            "burden": 0.125745,
+            "unrecovered": 0.090339,
+            "tests": 0.0,
+            "repairs": 1.00445,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.702844,
+            "terminal_cash": 7.985155,
+            "terminal_treasury": 12.704339
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "recovery": {
+          "support_value": "1/1250",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "36279/10000",
+            "burden": "4101/20000",
+            "unrecovered": "1/1250",
+            "tests": "0",
+            "repairs": "12093/10000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "973127/50000",
+            "terminal_cash": "4998/625",
+            "terminal_treasury": "160473/12500"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 3.6279,
+            "burden": 0.20505,
+            "unrecovered": 0.0008,
+            "tests": 0.0,
+            "repairs": 1.2093,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 19.46254,
+            "terminal_cash": 7.9968,
+            "terminal_treasury": 12.83784
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "expense": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "burden": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "failure_expense": {
+          "support_value": "58251/20000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "failure_expense_burden": {
+          "support_value": "309873/100000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "mixed": {
+          "support_value": "3311811/1000000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 0,
+          "normalized_treasury": 5,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        }
+      }
+    },
+    {
+      "label": "main",
+      "initial": {
+        "horizon": 4,
+        "stock": 2,
+        "cash": 1,
+        "treasury": 4,
+        "ready": 0,
+        "belief": "1",
+        "access": "delayed"
+      },
+      "probes": {
+        "failure": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "60267/20000",
+            "burden": "25149/200000",
+            "unrecovered": "90339/1000000",
+            "tests": "0",
+            "repairs": "20089/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4675711/250000",
+            "terminal_cash": "1597031/200000",
+            "terminal_treasury": "12704339/1000000"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 3.01335,
+            "burden": 0.125745,
+            "unrecovered": 0.090339,
+            "tests": 0.0,
+            "repairs": 1.00445,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.702844,
+            "terminal_cash": 7.985155,
+            "terminal_treasury": 12.704339
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "recovery": {
+          "support_value": "1/1250",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "36279/10000",
+            "burden": "4101/20000",
+            "unrecovered": "1/1250",
+            "tests": "0",
+            "repairs": "12093/10000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "973127/50000",
+            "terminal_cash": "4998/625",
+            "terminal_treasury": "160473/12500"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 3.6279,
+            "burden": 0.20505,
+            "unrecovered": 0.0008,
+            "tests": 0.0,
+            "repairs": 1.2093,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 19.46254,
+            "terminal_cash": 7.9968,
+            "terminal_treasury": 12.83784
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "expense": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "burden": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "failure_expense": {
+          "support_value": "58251/20000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "failure_expense_burden": {
+          "support_value": "309873/100000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        },
+        "mixed": {
+          "support_value": "3311811/1000000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 1,
+          "normalized_treasury": 4,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 1,
+          "ledger_residual": "0"
+        }
+      }
+    },
+    {
+      "label": "main",
+      "initial": {
+        "horizon": 4,
+        "stock": 2,
+        "cash": 5,
+        "treasury": 0,
+        "ready": 0,
+        "belief": "1",
+        "access": "delayed"
+      },
+      "probes": {
+        "failure": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "60267/20000",
+            "burden": "25149/200000",
+            "unrecovered": "90339/1000000",
+            "tests": "0",
+            "repairs": "20089/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4675711/250000",
+            "terminal_cash": "1597031/200000",
+            "terminal_treasury": "12704339/1000000"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 3.01335,
+            "burden": 0.125745,
+            "unrecovered": 0.090339,
+            "tests": 0.0,
+            "repairs": 1.00445,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.702844,
+            "terminal_cash": 7.985155,
+            "terminal_treasury": 12.704339
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "recovery": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "0",
+            "expense": "42969/10000",
+            "burden": "5211/20000",
+            "unrecovered": "0",
+            "tests": "0",
+            "repairs": "14323/10000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "1139777/50000",
+            "terminal_cash": "8",
+            "terminal_treasury": "193733/12500"
+          },
+          "metrics": {
+            "failure": 0.0,
+            "expense": 4.2969,
+            "burden": 0.26055,
+            "unrecovered": 0.0,
+            "tests": 0.0,
+            "repairs": 1.4323,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 22.79554,
+            "terminal_cash": 8.0,
+            "terminal_treasury": 15.49864
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 1
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "expense": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "burden": {
+          "support_value": "0",
+          "metrics_exact": {
+            "failure": "1583669/2000000",
+            "expense": "0",
+            "burden": "0",
+            "unrecovered": "1629297/2000000",
+            "tests": "0",
+            "repairs": "0",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "3339189/500000",
+            "terminal_cash": "1847/250",
+            "terminal_treasury": "2145189/500000"
+          },
+          "metrics": {
+            "failure": 0.7918345,
+            "expense": 0.0,
+            "burden": 0.0,
+            "unrecovered": 0.8146485,
+            "tests": 0.0,
+            "repairs": 0.0,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 6.678378,
+            "terminal_cash": 7.388,
+            "terminal_treasury": 4.290378
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "failure_expense": {
+          "support_value": "58251/20000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "failure_expense_burden": {
+          "support_value": "309873/100000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        },
+        "mixed": {
+          "support_value": "3311811/1000000",
+          "metrics_exact": {
+            "failure": "17/1250",
+            "expense": "54987/20000",
+            "burden": "9309/200000",
+            "unrecovered": "115379/1000000",
+            "tests": "0",
+            "repairs": "18329/20000",
+            "rebuilds": "0",
+            "upkeep": "0",
+            "inquiry_expense": "0",
+            "output": "4604391/250000",
+            "terminal_cash": "1592231/200000",
+            "terminal_treasury": "12707059/1000000"
+          },
+          "metrics": {
+            "failure": 0.0136,
+            "expense": 2.74935,
+            "burden": 0.046545,
+            "unrecovered": 0.115379,
+            "tests": 0.0,
+            "repairs": 0.91645,
+            "rebuilds": 0.0,
+            "upkeep": 0.0,
+            "inquiry_expense": 0.0,
+            "output": 18.417564,
+            "terminal_cash": 7.961155,
+            "terminal_treasury": 12.707059
+          },
+          "normalized_cash": 5,
+          "normalized_treasury": 0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "initial_action_count": 3,
+          "ledger_residual": "0"
+        }
+      }
+    }
+  ],
+  "controls": {
+    "no_output": [
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 0,
+          "treasury": 5,
+          "ready": 0,
+          "belief": "1",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "1583669/2000000",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "1629297/2000000",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "0",
+          "terminal_treasury": "5"
+        },
+        "mixed_probe": {
+          "failure": "1583669/2000000",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "1629297/2000000",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "0",
+          "terminal_treasury": "5"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 1,
+          "treasury": 4,
+          "ready": 0,
+          "belief": "1",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "1583669/2000000",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "1629297/2000000",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "1",
+          "terminal_treasury": "4"
+        },
+        "mixed_probe": {
+          "failure": "1583669/2000000",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "1629297/2000000",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "1",
+          "terminal_treasury": "4"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 5,
+          "treasury": 0,
+          "ready": 0,
+          "belief": "1",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "45013/20000",
+          "terminal_treasury": "0"
+        },
+        "mixed_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "45013/20000",
+          "terminal_treasury": "0"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 0,
+          "treasury": 5,
+          "ready": 0,
+          "belief": "1",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "45013/20000",
+          "terminal_treasury": "0"
+        },
+        "mixed_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "45013/20000",
+          "terminal_treasury": "0"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 1,
+          "treasury": 4,
+          "ready": 0,
+          "belief": "1",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "45013/20000",
+          "terminal_treasury": "0"
+        },
+        "mixed_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "45013/20000",
+          "terminal_treasury": "0"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 5,
+          "treasury": 0,
+          "ready": 0,
+          "belief": "1",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "45013/20000",
+          "terminal_treasury": "0"
+        },
+        "mixed_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "0",
+          "terminal_cash": "45013/20000",
+          "terminal_treasury": "0"
+        }
+      }
+    ],
+    "known_safe": [
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 0,
+          "treasury": 5,
+          "ready": 0,
+          "belief": "0",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        },
+        "mixed_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 1,
+          "treasury": 4,
+          "ready": 0,
+          "belief": "0",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        },
+        "mixed_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 5,
+          "treasury": 0,
+          "ready": 0,
+          "belief": "0",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        },
+        "mixed_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 0,
+          "treasury": 5,
+          "ready": 0,
+          "belief": "0",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        },
+        "mixed_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 1,
+          "treasury": 4,
+          "ready": 0,
+          "belief": "0",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        },
+        "mixed_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 5,
+          "treasury": 0,
+          "ready": 0,
+          "belief": "0",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        },
+        "mixed_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 0,
+          "treasury": 5,
+          "ready": 0,
+          "belief": "0",
+          "access": "delayed"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        },
+        "mixed_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 1,
+          "treasury": 4,
+          "ready": 0,
+          "belief": "0",
+          "access": "delayed"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        },
+        "mixed_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 5,
+          "treasury": 0,
+          "ready": 0,
+          "belief": "0",
+          "access": "delayed"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        },
+        "mixed_probe": {
+          "failure": "0",
+          "expense": "0",
+          "burden": "0",
+          "unrecovered": "0",
+          "tests": "0",
+          "repairs": "0",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "24",
+          "terminal_cash": "8",
+          "terminal_treasury": "21"
+        }
+      }
+    ],
+    "initially_ready": [
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 1,
+          "cash": 0,
+          "treasury": 5,
+          "ready": 1,
+          "belief": "1/2",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "9/20",
+          "expense": "5049/10000",
+          "burden": "5627/100000",
+          "unrecovered": "992123/2000000",
+          "tests": "0",
+          "repairs": "1683/10000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "5452977/500000",
+          "terminal_cash": "109847/25000",
+          "terminal_treasury": "5503587/500000"
+        },
+        "mixed_probe": {
+          "failure": "452601/1000000",
+          "expense": "459/1000",
+          "burden": "17/400",
+          "unrecovered": "198853/400000",
+          "tests": "0",
+          "repairs": "153/1000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "1087107/100000",
+          "terminal_cash": "4392197/1000000",
+          "terminal_treasury": "11019873/1000000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 1,
+          "cash": 1,
+          "treasury": 4,
+          "ready": 1,
+          "belief": "1/2",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "9/20",
+          "expense": "5049/10000",
+          "burden": "5627/100000",
+          "unrecovered": "992123/2000000",
+          "tests": "0",
+          "repairs": "1683/10000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "5452977/500000",
+          "terminal_cash": "484541/100000",
+          "terminal_treasury": "2638911/250000"
+        },
+        "mixed_probe": {
+          "failure": "452601/1000000",
+          "expense": "459/1000",
+          "burden": "17/400",
+          "unrecovered": "198853/400000",
+          "tests": "0",
+          "repairs": "153/1000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "1087107/100000",
+          "terminal_cash": "2422399/500000",
+          "terminal_treasury": "1320909/125000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 1,
+          "cash": 5,
+          "treasury": 0,
+          "ready": 1,
+          "belief": "1/2",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "17/100000",
+          "expense": "70731/20000",
+          "burden": "121789/200000",
+          "unrecovered": "80189/1000000",
+          "tests": "0",
+          "repairs": "23577/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "5509961/250000",
+          "terminal_cash": "1598087/200000",
+          "terminal_treasury": "15512859/1000000"
+        },
+        "mixed_probe": {
+          "failure": "24361/1000000",
+          "expense": "64131/20000",
+          "burden": "101989/200000",
+          "unrecovered": "19499/200000",
+          "tests": "0",
+          "repairs": "21377/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "10778311/500000",
+          "terminal_cash": "1585023/200000",
+          "terminal_treasury": "15424957/1000000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 1,
+          "cash": 0,
+          "treasury": 5,
+          "ready": 1,
+          "belief": "1/2",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "17/100000",
+          "expense": "70731/20000",
+          "burden": "121789/200000",
+          "unrecovered": "80189/1000000",
+          "tests": "0",
+          "repairs": "23577/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "5509961/250000",
+          "terminal_cash": "1598087/200000",
+          "terminal_treasury": "15512859/1000000"
+        },
+        "mixed_probe": {
+          "failure": "24361/1000000",
+          "expense": "64131/20000",
+          "burden": "101989/200000",
+          "unrecovered": "19499/200000",
+          "tests": "0",
+          "repairs": "21377/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "10778311/500000",
+          "terminal_cash": "1585023/200000",
+          "terminal_treasury": "15424957/1000000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 1,
+          "cash": 1,
+          "treasury": 4,
+          "ready": 1,
+          "belief": "1/2",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "17/100000",
+          "expense": "70731/20000",
+          "burden": "121789/200000",
+          "unrecovered": "80189/1000000",
+          "tests": "0",
+          "repairs": "23577/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "5509961/250000",
+          "terminal_cash": "1598087/200000",
+          "terminal_treasury": "15512859/1000000"
+        },
+        "mixed_probe": {
+          "failure": "24361/1000000",
+          "expense": "64131/20000",
+          "burden": "101989/200000",
+          "unrecovered": "19499/200000",
+          "tests": "0",
+          "repairs": "21377/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "10778311/500000",
+          "terminal_cash": "1585023/200000",
+          "terminal_treasury": "15424957/1000000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 1,
+          "cash": 5,
+          "treasury": 0,
+          "ready": 1,
+          "belief": "1/2",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "17/100000",
+          "expense": "70731/20000",
+          "burden": "121789/200000",
+          "unrecovered": "80189/1000000",
+          "tests": "0",
+          "repairs": "23577/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "5509961/250000",
+          "terminal_cash": "1598087/200000",
+          "terminal_treasury": "15512859/1000000"
+        },
+        "mixed_probe": {
+          "failure": "24361/1000000",
+          "expense": "64131/20000",
+          "burden": "101989/200000",
+          "unrecovered": "19499/200000",
+          "tests": "0",
+          "repairs": "21377/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "10778311/500000",
+          "terminal_cash": "1585023/200000",
+          "terminal_treasury": "15424957/1000000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 1,
+          "cash": 0,
+          "treasury": 5,
+          "ready": 1,
+          "belief": "1/2",
+          "access": "delayed"
+        },
+        "failure_probe": {
+          "failure": "9/20",
+          "expense": "5049/10000",
+          "burden": "5627/100000",
+          "unrecovered": "992123/2000000",
+          "tests": "0",
+          "repairs": "1683/10000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "5452977/500000",
+          "terminal_cash": "439847/100000",
+          "terminal_treasury": "1375323/125000"
+        },
+        "mixed_probe": {
+          "failure": "452601/1000000",
+          "expense": "459/1000",
+          "burden": "17/400",
+          "unrecovered": "198853/400000",
+          "tests": "0",
+          "repairs": "153/1000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "1087107/100000",
+          "terminal_cash": "22/5",
+          "terminal_treasury": "1101207/100000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 1,
+          "cash": 1,
+          "treasury": 4,
+          "ready": 1,
+          "belief": "1/2",
+          "access": "delayed"
+        },
+        "failure_probe": {
+          "failure": "9/20",
+          "expense": "5049/10000",
+          "burden": "5627/100000",
+          "unrecovered": "992123/2000000",
+          "tests": "0",
+          "repairs": "1683/10000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "5452977/500000",
+          "terminal_cash": "484847/100000",
+          "terminal_treasury": "1319073/125000"
+        },
+        "mixed_probe": {
+          "failure": "452601/1000000",
+          "expense": "459/1000",
+          "burden": "17/400",
+          "unrecovered": "198853/400000",
+          "tests": "0",
+          "repairs": "153/1000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "1087107/100000",
+          "terminal_cash": "97/20",
+          "terminal_treasury": "1056207/100000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 1,
+          "cash": 5,
+          "treasury": 0,
+          "ready": 1,
+          "belief": "1/2",
+          "access": "delayed"
+        },
+        "failure_probe": {
+          "failure": "17/100000",
+          "expense": "70731/20000",
+          "burden": "121789/200000",
+          "unrecovered": "80189/1000000",
+          "tests": "0",
+          "repairs": "23577/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "5509961/250000",
+          "terminal_cash": "1598087/200000",
+          "terminal_treasury": "15512859/1000000"
+        },
+        "mixed_probe": {
+          "failure": "24361/1000000",
+          "expense": "64131/20000",
+          "burden": "101989/200000",
+          "unrecovered": "19499/200000",
+          "tests": "0",
+          "repairs": "21377/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "10778311/500000",
+          "terminal_cash": "1585023/200000",
+          "terminal_treasury": "15424957/1000000"
+        }
+      }
+    ],
+    "uninformative_test": [
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 0,
+          "treasury": 5,
+          "ready": 0,
+          "belief": "1",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "153/250",
+          "expense": "14331/20000",
+          "burden": "3213/200000",
+          "unrecovered": "658699/1000000",
+          "tests": "0",
+          "repairs": "4777/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "1944969/250000",
+          "terminal_cash": "860823/200000",
+          "terminal_treasury": "7759211/1000000"
+        },
+        "mixed_probe": {
+          "failure": "153/250",
+          "expense": "14331/20000",
+          "burden": "3213/200000",
+          "unrecovered": "658699/1000000",
+          "tests": "0",
+          "repairs": "4777/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "1944969/250000",
+          "terminal_cash": "860823/200000",
+          "terminal_treasury": "7759211/1000000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 1,
+          "treasury": 4,
+          "ready": 0,
+          "belief": "1",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "4604391/250000",
+          "terminal_cash": "1581351/200000",
+          "terminal_treasury": "12761459/1000000"
+        },
+        "mixed_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "4604391/250000",
+          "terminal_cash": "1581351/200000",
+          "terminal_treasury": "12761459/1000000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 5,
+          "treasury": 0,
+          "ready": 0,
+          "belief": "1",
+          "access": "barred"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "60267/20000",
+          "burden": "25149/200000",
+          "unrecovered": "90339/1000000",
+          "tests": "0",
+          "repairs": "20089/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "4675711/250000",
+          "terminal_cash": "1597031/200000",
+          "terminal_treasury": "12704339/1000000"
+        },
+        "mixed_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "4604391/250000",
+          "terminal_cash": "1592231/200000",
+          "terminal_treasury": "12707059/1000000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 0,
+          "treasury": 5,
+          "ready": 0,
+          "belief": "1",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "60267/20000",
+          "burden": "25149/200000",
+          "unrecovered": "90339/1000000",
+          "tests": "0",
+          "repairs": "20089/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "4675711/250000",
+          "terminal_cash": "1597031/200000",
+          "terminal_treasury": "12704339/1000000"
+        },
+        "mixed_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "4604391/250000",
+          "terminal_cash": "1592231/200000",
+          "terminal_treasury": "12707059/1000000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 1,
+          "treasury": 4,
+          "ready": 0,
+          "belief": "1",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "60267/20000",
+          "burden": "25149/200000",
+          "unrecovered": "90339/1000000",
+          "tests": "0",
+          "repairs": "20089/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "4675711/250000",
+          "terminal_cash": "1597031/200000",
+          "terminal_treasury": "12704339/1000000"
+        },
+        "mixed_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "4604391/250000",
+          "terminal_cash": "1592231/200000",
+          "terminal_treasury": "12707059/1000000"
+        }
+      },
+      {
+        "initial": {
+          "horizon": 4,
+          "stock": 2,
+          "cash": 5,
+          "treasury": 0,
+          "ready": 0,
+          "belief": "1",
+          "access": "immediate"
+        },
+        "failure_probe": {
+          "failure": "0",
+          "expense": "60267/20000",
+          "burden": "25149/200000",
+          "unrecovered": "90339/1000000",
+          "tests": "0",
+          "repairs": "20089/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "4675711/250000",
+          "terminal_cash": "1597031/200000",
+          "terminal_treasury": "12704339/1000000"
+        },
+        "mixed_probe": {
+          "failure": "17/1250",
+          "expense": "54987/20000",
+          "burden": "9309/200000",
+          "unrecovered": "115379/1000000",
+          "tests": "0",
+          "repairs": "18329/20000",
+          "rebuilds": "0",
+          "upkeep": "0",
+          "inquiry_expense": "0",
+          "output": "4604391/250000",
+          "terminal_cash": "1592231/200000",
+          "terminal_treasury": "12707059/1000000"
+        }
+      }
+    ]
+  },
+  "graph_stats": {
+    "main": {
+      "states_solved_per_weight": 19551,
+      "action_states": 2442,
+      "branch_checks": 37167
+    },
+    "no_output": {
+      "states_solved_per_weight": 1330,
+      "action_states": 150,
+      "branch_checks": 452
+    },
+    "known_safe": {
+      "states_solved_per_weight": 805,
+      "action_states": 75,
+      "branch_checks": 605
+    },
+    "initially_ready": {
+      "states_solved_per_weight": 9002,
+      "action_states": 975,
+      "branch_checks": 14750
+    },
+    "uninformative_test": {
+      "states_solved_per_weight": 5712,
+      "action_states": 507,
+      "branch_checks": 7004
+    }
+  },
+  "elapsed_seconds": 5.131376833014656,
+  "meaning": "Exact finite-model support probes. Unequal minima refute equality; seven equal minima alone do not prove attainable-set equality."
+}

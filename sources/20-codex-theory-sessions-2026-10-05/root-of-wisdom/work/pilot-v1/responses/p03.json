@@ -1,0 +1,82 @@
+{
+  "batch": "p03",
+  "condition": "discipline",
+  "replicate": 1,
+  "agent": "/root/pilot_p03",
+  "response": {
+    "answers": [
+      {
+        "id": "R02",
+        "choice": "C",
+        "confidence": 100,
+        "reason": "The added model w has P loss 6 exceeding Q loss 2, defeating the current-class pointwise certificate; the old-class comparison remains valid."
+      },
+      {
+        "id": "R12",
+        "choice": "C",
+        "confidence": 100,
+        "reason": "P assigns probabilities 1/2, 1/3, and 1/6, violating the hard constraint. Q is compliant and therefore the only permitted policy."
+      },
+      {
+        "id": "R11",
+        "choice": "A",
+        "confidence": 100,
+        "reason": "P has lower loss in all three current models: 1<8, 3<7, and 6<9. This supports the current certificate, not arbitrary future expansions."
+      },
+      {
+        "id": "R07",
+        "choice": "D",
+        "confidence": 100,
+        "reason": "The audit finishes at minute 7 and patch at minute 8. Total spending 4 meets budget and eliminates loss 12 within the deadline."
+      },
+      {
+        "id": "R06",
+        "choice": "A",
+        "confidence": 100,
+        "reason": "P gives each named applicant probability 2/6=1/3, satisfying the constraint. Its verified score 10 exceeds Q’s 8."
+      },
+      {
+        "id": "R08",
+        "choice": "D",
+        "confidence": 100,
+        "reason": "Both signatures meet the 11:50 deadline, independently permitting switching. Elm’s score 19 exceeds Cedar’s 14; the sensor threshold need not also be met."
+      },
+      {
+        "id": "R01",
+        "choice": "C",
+        "confidence": 100,
+        "reason": "Operating costs 4 in expectation. Optimal testing costs 3+(1/4)6=4.5, and immediate replacement costs 6, so operating remains optimal ex ante."
+      },
+      {
+        "id": "R03",
+        "choice": "B",
+        "confidence": 100,
+        "reason": "Omitting backup costs either 0 or 4 in expectation, both below backup’s 5. Thus omission is optimal throughout this class despite unidentified exact loss."
+      },
+      {
+        "id": "R09",
+        "choice": "D",
+        "confidence": 100,
+        "reason": "Omission costs 0 or 6, while backup costs 5. Omission is optimal under the first law and backup under the second; neither is universally optimal."
+      },
+      {
+        "id": "R05",
+        "choice": "B",
+        "confidence": 100,
+        "reason": "The mandatory audit and patch require three minutes, finishing at minute 8 after the deadline. Partial work provides no benefit, so no work minimizes cost."
+      },
+      {
+        "id": "R10",
+        "choice": "A",
+        "confidence": 100,
+        "reason": "Testing then replacing only faulty devices costs 2+(1/4)6=3.5 in expectation, below operating’s 4 and immediate replacement’s 6."
+      },
+      {
+        "id": "R04",
+        "choice": "B",
+        "confidence": 100,
+        "reason": "Sol’s signature misses the 11:50 deadline, and the authenticated reading 8.8 is below 9. Neither release condition holds, so Cedar remains mandatory."
+      }
+    ]
+  }
+}

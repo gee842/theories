@@ -1,0 +1,35 @@
+{
+  "phase_audits": [
+    {
+      "phase": 1,
+      "exact_replay": true,
+      "current_rule_carried_and_enacted": true,
+      "paired_protocol_identity_trace_checked": true,
+      "cash_ledger_exact": "292624/25",
+      "reserve_exact": "16048",
+      "confidence_radius": 13.469139684372903
+    },
+    {
+      "phase": 2,
+      "exact_replay": true,
+      "current_rule_carried_and_enacted": true,
+      "paired_protocol_identity_trace_checked": true,
+      "cash_ledger_exact": "5817903/25",
+      "reserve_exact": "8361008/25",
+      "confidence_radius": 2.3810300018922286
+    },
+    {
+      "phase": 3,
+      "exact_replay": true,
+      "current_rule_carried_and_enacted": true,
+      "paired_protocol_identity_trace_checked": true,
+      "cash_ledger_exact": "292624/25",
+      "reserve_exact": "16048",
+      "confidence_radius": 13.469139684372903
+    }
+  ],
+  "underfunded_phase_observe_calls": 0,
+  "conditional_union_bound_alpha_exact": "1/60 + 1/60 + 1/60 = 1/20",
+  "total_expense_exact": "6403151/25",
+  "interpretation": "Three scheduled conditional checks only; no drift-detection or universal norm-generation guarantee."
+}

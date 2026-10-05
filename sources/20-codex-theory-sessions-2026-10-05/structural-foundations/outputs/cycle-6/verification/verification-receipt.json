@@ -1,0 +1,104 @@
+{
+  "created_utc": "2026-10-04T22:35:00.268009+00:00",
+  "status": "all three checkers passed in coordinator final runs",
+  "checks": [
+    {
+      "model": "evaluator-revision-results",
+      "status": "all assertions passed"
+    },
+    {
+      "model": "paid-revision-results",
+      "status": "all assertions passed"
+    },
+    {
+      "model": "revision-scale-results",
+      "status": "all assertions passed"
+    }
+  ],
+  "population_counts": {
+    "ledger_state_cases": 46800,
+    "renewal_invariant_cases": 2080,
+    "prechange_arbitrary_schedule_edges": 468,
+    "periodic_onset_representatives": 3330
+  },
+  "population_frontier_rows": 1040,
+  "quota_certificate": {
+    "invariant_states": 1020,
+    "certified_edges": 1522
+  },
+  "noisy_revision_counts": {
+    "frontier_rows": 55,
+    "exhaustive_policy_tables": 46656,
+    "exhaustive_potential_history_rollouts": 746496
+  },
+  "revision_scale_counts": {
+    "financial_deadline_boundary_checks": 26208,
+    "complete_revision_scale_checks": 576,
+    "rank_certificate_edges_checked": 6
+  },
+  "files": [
+    {
+      "file": "check_evaluator_revision.py",
+      "bytes": 16094,
+      "sha256": "2da30691d222b5820ecca8a2152209ece5105025d72309d1499e3ab6f4024200"
+    },
+    {
+      "file": "check_paid_revision.py",
+      "bytes": 14761,
+      "sha256": "08642eafdda8851ce8b4424a1fb523185a08de07a0fc2a02fc0c58a975eb1d06"
+    },
+    {
+      "file": "check_revision_scale.py",
+      "bytes": 10027,
+      "sha256": "1443415633cd60d845808d824f885d05dcee78350b21fdf7b249734cb38008f7"
+    },
+    {
+      "file": "evaluator-revision-results.json",
+      "bytes": 413782,
+      "sha256": "a64b8420803a11472a86e959e223a97d0f93b2ff9ca45c5baa39cdd3c7d0f37d"
+    },
+    {
+      "file": "paid-revision-frontier.csv",
+      "bytes": 1153,
+      "sha256": "b332f73d89542613a31f723f881629e6ca1f2f7b03800690fbae584070ab3e7d"
+    },
+    {
+      "file": "paid-revision-results.json",
+      "bytes": 717717,
+      "sha256": "8ac566624487c2be075d4efea476ea33647cefeec9b3e0035d98a84496fb3c66"
+    },
+    {
+      "file": "revision-scale-results.json",
+      "bytes": 5286,
+      "sha256": "1eb7425e7a199ee794dfaeb572e153b3fa0c8c43a039ed6a5142d5dea21999da"
+    },
+    {
+      "file": "revision-window.csv",
+      "bytes": 12975,
+      "sha256": "7c9ec976406fb4df085fccb0a72a27a4430b4c8a9a8c4dea8aa7b9c62c4efbf4"
+    }
+  ],
+  "read_only_dependencies": [
+    {
+      "file": "../../cycle-5/verification/check_funded_selection.py",
+      "bytes": 14288,
+      "sha256": "72393d23341e9fbce072e1f4a56bd86c20e644607cf84c52dd60138ef2fe1553",
+      "matches_prior_receipt": true
+    },
+    {
+      "file": "../../cycle-4/verification/check_adoption_dynamics.py",
+      "bytes": 13303,
+      "sha256": "46bbc0cf89620f20dbd9539ac3317ca39811a7b792251a2bacb920769c4f74cf",
+      "matches_prior_receipt": true
+    }
+  ],
+  "review": "Complementary agents independently reviewed proofs, source scope, actual finite interfaces, payment prefixes, noisy policy calculation, and synthesis. An independent integer reconstruction matched all 46,800 population cases, and an independent check verified all 1,522 quota edges. Coordinator read reports and reran all three checkers; review corrections are recorded in research-log.md.",
+  "limits": [
+    "Synthetic exact checks are not empirical validation.",
+    "General revision and scale theorems are prose proofs, not machine-checked proofs.",
+    "All-onset and infinite results use finite-state invariants/phase reductions or analytic potentials, not finite trace extrapolation.",
+    "Perfect-query population and noisy finite handoff remain separate models with different prices and guarantees.",
+    "Program families, tariff, signal interpretation, finance, archive and outer update mechanisms are supplied.",
+    "The mixed quota control has a different initial endowment and admitted controller from the base population."
+  ]
+}

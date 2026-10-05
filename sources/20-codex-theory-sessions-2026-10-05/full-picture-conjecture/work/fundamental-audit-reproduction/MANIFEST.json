@@ -1,0 +1,15 @@
+{
+  "README.md": "1d6c2e653256f832c32e14f2c313b37b2e2ced64c02226da837d92839347ab6d",
+  "evidence-audit.md": "1fea8b7bb8fec1e5f02f1930fa91e0b55c3990cde06b972574a998d122dbe985",
+  "formal-audit.md": "fb98ec0e4651b2425b873a53f50d1fe91afdab5d050cbd9fed3ec660042452d9",
+  "formal_countermodels.json": "3f58e5abd5ff6870caef9f594b0c086726fc984cdeabc4c7f7f5ef5c82b3b8a6",
+  "formal_countermodels.py": "f069e1b8b2e0a20713dc8319d90fe8b6f93c04ca20687f658e86f1be2bb6cab9",
+  "inspected-source-excerpts.md": "d00e913c76e8a5d58b6b1431dea087ac7a7caea817004fa21df5fbb239942351",
+  "inspected-source-manifest.json": "6c1e7eae15f45d1ae6bdfb47383da45ce8e3fa1c8fee2db1d3b30d71f9cea8b2",
+  "primary-sources.md": "e4a8c2c6c3268e4740ad870760e12954659a5621235883ed137f094d810f42a2",
+  "report-formal-review.md": "35b55eaebfae6bc1753bd04041d5dbdd116883ca5e97d18517a90221d320bdc8",
+  "sources/canonical-root-excerpts.md": "aa30aca18a7a7bd96e7276eeaf81c1e60f226fe5681a42073b1fd99734e33b98",
+  "sources/claim-ledger-excerpts.md": "0637ba8fb0d35519310f2bc0ef5474869222689548d07641073f94844ae546bc",
+  "sources/manifest.json": "4fcc6bfc714524d6bc59f1e1ff1c0240924b3defd29009629119861567b16047",
+  "sources/single-root-plan.md": "8c969f92b078da2212e90f207cae075517e9076979be06618b49098d58ac4d49"
+}

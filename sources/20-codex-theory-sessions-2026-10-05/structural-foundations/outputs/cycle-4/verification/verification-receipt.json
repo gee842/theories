@@ -1,0 +1,81 @@
+{
+  "created_utc": "2026-10-04T21:42:01.115051+00:00",
+  "status": "all three checkers passed in coordinator final runs",
+  "checks": [
+    {
+      "model": "adoption-dynamics",
+      "status": "all assertions passed"
+    },
+    {
+      "model": "paid-learning",
+      "status": "all assertions passed"
+    },
+    {
+      "model": "selection-scale",
+      "status": "all assertions passed"
+    }
+  ],
+  "adoption_counts": {
+    "viability_states": 2169,
+    "exhaustive_plan_comparisons": 120,
+    "slot_ledger_comparisons": 17352,
+    "wealth_horizon_grid_rows": 1446,
+    "replication_checks": 180,
+    "two_design_threshold_checks": 120
+  },
+  "learning_counts": {
+    "protocols_evaluated": 505,
+    "histories_enumerated": 28120,
+    "positive_cash_branches_checked": 2426,
+    "base_closed_form_checks": 9
+  },
+  "files": [
+    {
+      "file": "adoption-dynamics-results.json",
+      "bytes": 19457,
+      "sha256": "4a403f9e01e3fdd4c67ca0e624483209b76efc7681e14ae0d71246e738f46480"
+    },
+    {
+      "file": "adoption-frontier.csv",
+      "bytes": 25806,
+      "sha256": "a0460159448314cbf1427e65633995f7c9e8af7adb1500e2e75e6cfee24979de"
+    },
+    {
+      "file": "check_adoption_dynamics.py",
+      "bytes": 13303,
+      "sha256": "46bbc0cf89620f20dbd9539ac3317ca39811a7b792251a2bacb920769c4f74cf"
+    },
+    {
+      "file": "check_paid_learning.py",
+      "bytes": 14611,
+      "sha256": "068d947e49a6f7d0cb8631ecc5269f9be7aa2f31ffb348269720670624055468"
+    },
+    {
+      "file": "check_selection_scale.py",
+      "bytes": 10664,
+      "sha256": "a920d8800ac154eab177ce32caf4bf0bee398e97951d251304f100be68c3c207"
+    },
+    {
+      "file": "paid-learning-frontier.csv",
+      "bytes": 26765,
+      "sha256": "c59da2855251d16401371187c19421b6c49d5fe0de73dc26d8c0fff439c4a1be"
+    },
+    {
+      "file": "paid-learning-results.json",
+      "bytes": 1028586,
+      "sha256": "6de4b4ceb6eb7305fce53c7847bf1379872e145b53e3f03d197a4832b682211c"
+    },
+    {
+      "file": "selection-scale-results.json",
+      "bytes": 16449,
+      "sha256": "df4422bdfcecab937d8d2d2d8ecb1edbe074186385b8d4c00f3e0810f2a29c8a"
+    }
+  ],
+  "review": "Complementary agents independently inspected proof assumptions, financial chronology, finite memory, actual-selector behavior, and synthesis; coordinator inspected and reran all three checkers.",
+  "limits": [
+    "These are synthetic exact computations, not empirical evidence.",
+    "General transfer theorems are proved in prose, not machine verified.",
+    "Each model retains its stated environmental law and evaluation; they are not one solved recurrent learning population.",
+    "Objectives, priors, controller programs, and source of external productive inputs remain explicit assumptions."
+  ]
+}

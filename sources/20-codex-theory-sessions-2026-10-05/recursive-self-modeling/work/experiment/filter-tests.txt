@@ -1,0 +1,17 @@
+test_accounting_includes_only_executed_blocks (__main__.run_tests.<locals>.FilterChecks.test_accounting_includes_only_executed_blocks) ... ok
+test_analytic_prediction_and_control_chronology (__main__.run_tests.<locals>.FilterChecks.test_analytic_prediction_and_control_chronology) ... ok
+test_belief_properties_and_initial_inputs_do_not_alias (__main__.run_tests.<locals>.FilterChecks.test_belief_properties_and_initial_inputs_do_not_alias) ... ok
+test_covariance_symmetry_and_positive_semidefiniteness (__main__.run_tests.<locals>.FilterChecks.test_covariance_symmetry_and_positive_semidefiniteness) ... ok
+test_default_prior (__main__.run_tests.<locals>.FilterChecks.test_default_prior) ... ok
+test_exactly_known_noiseless_value (__main__.run_tests.<locals>.FilterChecks.test_exactly_known_noiseless_value) ... ok
+test_invalid_inputs_fail_without_state_changes (__main__.run_tests.<locals>.FilterChecks.test_invalid_inputs_fail_without_state_changes) ... ok
+test_measurement_order_independence (__main__.run_tests.<locals>.FilterChecks.test_measurement_order_independence) ... ok
+test_noiseless_identification_with_positive_innovation_variance (__main__.run_tests.<locals>.FilterChecks.test_noiseless_identification_with_positive_innovation_variance) ... ok
+test_reference_query_reads_no_observation_or_mean_and_preserves_belief (__main__.run_tests.<locals>.FilterChecks.test_reference_query_reads_no_observation_or_mean_and_preserves_belief) ... ok
+test_reference_value_matches_realized_covariance_reduction (__main__.run_tests.<locals>.FilterChecks.test_reference_value_matches_realized_covariance_reduction) ... ok
+test_sequential_equals_independent_batch_conditioning (__main__.run_tests.<locals>.FilterChecks.test_sequential_equals_independent_batch_conditioning) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.659s
+
+OK

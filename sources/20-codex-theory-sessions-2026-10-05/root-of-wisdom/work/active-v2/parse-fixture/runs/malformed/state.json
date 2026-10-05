@@ -1,0 +1,93 @@
+{
+  "batch": "malformed",
+  "condition": "fixture",
+  "replicate": 0,
+  "round": 1,
+  "order": [
+    "A01",
+    "A04"
+  ],
+  "episodes": {
+    "A01": {
+      "history": [],
+      "events": [
+        {
+          "round": 0,
+          "submitted": {},
+          "invalid": true,
+          "effective_kind": "act",
+          "effective_target": "fallback",
+          "public_posterior": {
+            "w00": "1/4",
+            "w01": "1/4",
+            "w10": "1/4",
+            "w11": "1/4"
+          },
+          "remaining_optimum": "3",
+          "chosen_Q": "8",
+          "bellman_gap": "5",
+          "optimal_command": false,
+          "best_immediate_terminal_loss": "7",
+          "strict_unnecessary_continuation": false,
+          "reason_words": null,
+          "word_cap_compliant": false,
+          "terminal_conditional_excess": "1",
+          "terminal_expected_remaining_loss": "8",
+          "realized_residual_loss": "8"
+        }
+      ],
+      "closed": true,
+      "terminal_action": "fallback",
+      "query_spending": "0",
+      "action_fee": "0",
+      "realized_total_loss": "8",
+      "final_elapsed": 0
+    },
+    "A04": {
+      "history": [],
+      "events": [
+        {
+          "round": 0,
+          "submitted": {},
+          "invalid": true,
+          "effective_kind": "act",
+          "effective_target": "fallback",
+          "public_posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "remaining_optimum": "8",
+          "chosen_Q": "8",
+          "bellman_gap": "0",
+          "optimal_command": false,
+          "best_immediate_terminal_loss": "8",
+          "strict_unnecessary_continuation": false,
+          "reason_words": null,
+          "word_cap_compliant": false,
+          "terminal_conditional_excess": "0",
+          "terminal_expected_remaining_loss": "8",
+          "realized_residual_loss": "8"
+        }
+      ],
+      "closed": true,
+      "terminal_action": "fallback",
+      "query_spending": "0",
+      "action_fee": "0",
+      "realized_total_loss": "8",
+      "final_elapsed": 0
+    }
+  },
+  "parse_failures": [
+    {
+      "round": 0,
+      "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+    }
+  ],
+  "format_events": [
+    {
+      "round": 0,
+      "extra_ids": [],
+      "duplicate_ids": []
+    }
+  ]
+}

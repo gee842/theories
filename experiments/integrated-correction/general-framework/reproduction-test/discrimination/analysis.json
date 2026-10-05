@@ -1,0 +1,1810 @@
+{
+  "status": "synthetic identifiability comparison, not empirical validation",
+  "source_sha256": "82045d4ef5d29efbbf2ccdcc9ea3180de5b591428292689e9ccf60ee3941aeca",
+  "protocol_sha256": "ff61e8a754f25b83cbffc26faebf0c71df437c98d31847d4f7ff8e6f375bca53",
+  "code_sha256": "c79c92fa500e900a71087015e806aecf54afdfcff1e8b817f95df9a84ff436ea",
+  "original_six_arm_max_reproduction_error": 3.552713678800501e-15,
+  "blocked_projection_audit": {
+    "feedback": {
+      "full_reachable_states": 181,
+      "maximum_projected_row_error": 1.1102230246251565e-16
+    },
+    "constant": {
+      "full_reachable_states": 181,
+      "maximum_projected_row_error": 1.1102230246251565e-16
+    }
+  },
+  "blocked_skill_curve_max_difference": 1.1102230246251565e-15,
+  "one_round_turnover": {
+    "execution_False_frame_0": {
+      "feedback": 0.15000000000000002,
+      "constant": 0.15
+    },
+    "execution_False_frame_1": {
+      "feedback": 0.15000000000000002,
+      "constant": 0.15
+    },
+    "execution_False_frame_2": {
+      "feedback": 0.15000000000000002,
+      "constant": 0.15
+    },
+    "execution_True_frame_0": {
+      "feedback": 0.08,
+      "constant": 0.14999999999999997
+    },
+    "execution_True_frame_1": {
+      "feedback": 0.21999999999999997,
+      "constant": 0.15
+    },
+    "execution_True_frame_2": {
+      "feedback": 0.15000000000000002,
+      "constant": 0.15
+    }
+  },
+  "contrasts": {
+    "feedback": {
+      "enabled_minus_blocked": {
+        "plural_success": 0.5528882475437374,
+        "skill_positive": 0.09988996246971904,
+        "frame_present": 0.1189451652312421,
+        "correct_expression": 0.12167435033804214,
+        "ratified": 0.1189451652312421,
+        "ratified_but_violating": -0.4339430823124955,
+        "expected_skill": 0.21690119225990223
+      },
+      "enabled_minus_aggregate": {
+        "plural_success": 0.3864788509589071,
+        "skill_positive": 0.09550811046641217,
+        "frame_present": 0.11216944083704994,
+        "correct_expression": 0.3864788509589071,
+        "ratified": 0.11216944083704994,
+        "ratified_but_violating": -0.27430941012185744,
+        "expected_skill": 0.20176162140933251
+      }
+    },
+    "constant": {
+      "enabled_minus_blocked": {
+        "plural_success": 0.4316738786963201,
+        "skill_positive": -6.661338147750939e-16,
+        "frame_present": -7.771561172376096e-16,
+        "correct_expression": -7.216449660063518e-16,
+        "ratified": -7.771561172376096e-16,
+        "ratified_but_violating": -0.4316738786963209,
+        "expected_skill": -1.4432899320127035e-15
+      },
+      "enabled_minus_aggregate": {
+        "plural_success": 0.3048761831360296,
+        "skill_positive": -1.1102230246251565e-16,
+        "frame_present": -1.1102230246251565e-16,
+        "correct_expression": 0.3048761831360296,
+        "ratified": -1.1102230246251565e-16,
+        "ratified_but_violating": -0.3048761831360297,
+        "expected_skill": -5.551115123125783e-16
+      }
+    }
+  },
+  "arms": {
+    "feedback_enabled": {
+      "endpoint": {
+        "plural_success": 0.5528882475437374,
+        "skill_positive": 0.679308891574632,
+        "frame_present": 0.6255954969527875,
+        "correct_expression": 0.5528882475437374,
+        "ratified": 0.6255954969527875,
+        "ratified_but_violating": 0.07270724940904989,
+        "expected_skill": 1.2055247599897805
+      },
+      "cumulative": {
+        "ordinary_cases": 38.96100037181633,
+        "inquiry_cases": 4.678214917840098,
+        "inquiry_slots": 4.678214917840098,
+        "training_slots": 1.6825697925033944,
+        "harms": 14.847077427785369,
+        "ordinary_harms": 12.507969968865346,
+        "inquiry_harms": 2.339107458920049,
+        "action_one_uses": 12.40763012808666,
+        "turnovers": 3.0323646165793336,
+        "archive_erasures": 0.5086221491203959,
+        "nominations": 0.8393378869710066
+      },
+      "curve": [
+        {
+          "round": 0,
+          "plural_success": 0.0,
+          "skill_positive": 1.0,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 2.0
+        },
+        {
+          "round": 1,
+          "plural_success": 0.0,
+          "skill_positive": 1.0,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.8499999999999999
+        },
+        {
+          "round": 2,
+          "plural_success": 0.0,
+          "skill_positive": 0.9955,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.8200000000000005
+        },
+        {
+          "round": 3,
+          "plural_success": 0.0,
+          "skill_positive": 0.9873100000000002,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.787075
+        },
+        {
+          "round": 4,
+          "plural_success": 0.0,
+          "skill_positive": 0.9761144499999995,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7518865000000012
+        },
+        {
+          "round": 5,
+          "plural_success": 0.0,
+          "skill_positive": 0.9624912040000001,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7149900925000003
+        },
+        {
+          "round": 6,
+          "plural_success": 0.15453427396352123,
+          "skill_positive": 0.9469276272550002,
+          "frame_present": 0.18156845517578118,
+          "correct_expression": 0.15453427396352123,
+          "ratified": 0.18156845517578118,
+          "ratified_but_violating": 0.027034181212260013,
+          "expected_skill": 1.676851549100001
+        },
+        {
+          "round": 7,
+          "plural_success": 0.32399527019641067,
+          "skill_positive": 0.9301297937282542,
+          "frame_present": 0.3804344011532553,
+          "correct_expression": 0.32399527019641067,
+          "ratified": 0.3804344011532553,
+          "ratified_but_violating": 0.0564391309568446,
+          "expected_skill": 1.6486411242002355
+        },
+        {
+          "round": 8,
+          "plural_success": 0.44575382970184163,
+          "skill_positive": 0.9128714009800056,
+          "frame_present": 0.5229326702885163,
+          "correct_expression": 0.44575382970184163,
+          "ratified": 0.5229326702885163,
+          "ratified_but_violating": 0.07717884058667468,
+          "expected_skill": 1.6232934281237248
+        },
+        {
+          "round": 9,
+          "plural_success": 0.5206537015453453,
+          "skill_positive": 0.89570469611132,
+          "frame_present": 0.6100815606670206,
+          "correct_expression": 0.5206537015453453,
+          "ratified": 0.6100815606670206,
+          "ratified_but_violating": 0.08942785912167522,
+          "expected_skill": 1.5971878966373951
+        },
+        {
+          "round": 10,
+          "plural_success": 0.56380672385973,
+          "skill_positive": 0.8789345712661294,
+          "frame_present": 0.6596929486754258,
+          "correct_expression": 0.56380672385973,
+          "ratified": 0.6596929486754258,
+          "ratified_but_violating": 0.09588622481569584,
+          "expected_skill": 1.570090728380839
+        },
+        {
+          "round": 11,
+          "plural_success": 0.5877558074914352,
+          "skill_positive": 0.8626950360495719,
+          "frame_present": 0.6865602883856148,
+          "correct_expression": 0.5877558074914352,
+          "ratified": 0.6865602883856148,
+          "ratified_but_violating": 0.09880448089417983,
+          "expected_skill": 1.5425977936354311
+        },
+        {
+          "round": 12,
+          "plural_success": 0.6004711424067793,
+          "skill_positive": 0.847022186532284,
+          "frame_present": 0.7000970825279101,
+          "correct_expression": 0.6004711424067793,
+          "ratified": 0.7000970825279101,
+          "ratified_but_violating": 0.09962594012113068,
+          "expected_skill": 1.5152163241033518
+        },
+        {
+          "round": 13,
+          "plural_success": 0.6065535916843334,
+          "skill_positive": 0.8319019281527081,
+          "frame_present": 0.7057501221071204,
+          "correct_expression": 0.6065535916843334,
+          "ratified": 0.7057501221071204,
+          "ratified_but_violating": 0.09919653042278692,
+          "expected_skill": 1.4882418689978743
+        },
+        {
+          "round": 14,
+          "plural_success": 0.6085346852605196,
+          "skill_positive": 0.8172972559775584,
+          "frame_present": 0.7065278017160936,
+          "correct_expression": 0.6085346852605196,
+          "ratified": 0.7065278017160936,
+          "ratified_but_violating": 0.09799311645557401,
+          "expected_skill": 1.4618124166729312
+        },
+        {
+          "round": 15,
+          "plural_success": 0.6078333877888509,
+          "skill_positive": 0.803162721133262,
+          "frame_present": 0.7041254005036143,
+          "correct_expression": 0.6078333877888509,
+          "ratified": 0.7041254005036143,
+          "ratified_but_violating": 0.0962920127147635,
+          "expected_skill": 1.4359713184808747
+        },
+        {
+          "round": 16,
+          "plural_success": 0.6053051638900514,
+          "skill_positive": 0.7894517423821952,
+          "frame_present": 0.699571127468091,
+          "correct_expression": 0.6053051638900514,
+          "ratified": 0.699571127468091,
+          "ratified_but_violating": 0.09426596357803976,
+          "expected_skill": 1.410715255662749
+        },
+        {
+          "round": 17,
+          "plural_success": 0.6015049183587327,
+          "skill_positive": 0.7761202047306566,
+          "frame_present": 0.6935357709551604,
+          "correct_expression": 0.6015049183587327,
+          "ratified": 0.6935357709551604,
+          "ratified_but_violating": 0.09203085259642772,
+          "expected_skill": 1.3860220272954198
+        },
+        {
+          "round": 18,
+          "plural_success": 0.5968073958077287,
+          "skill_positive": 0.7631281473613981,
+          "frame_present": 0.6864747514355599,
+          "correct_expression": 0.5968073958077287,
+          "ratified": 0.6864747514355599,
+          "ratified_but_violating": 0.08966735562783126,
+          "expected_skill": 1.3618634050389902
+        },
+        {
+          "round": 19,
+          "plural_success": 0.5914690305447221,
+          "skill_positive": 0.7504404204558256,
+          "frame_present": 0.6787013173945912,
+          "correct_expression": 0.5914690305447221,
+          "ratified": 0.6787013173945912,
+          "ratified_but_violating": 0.087232286849869,
+          "expected_skill": 1.338210362398442
+        },
+        {
+          "round": 20,
+          "plural_success": 0.5856658799161505,
+          "skill_positive": 0.7380267588087953,
+          "frame_present": 0.6704315909312887,
+          "correct_expression": 0.5856658799161505,
+          "ratified": 0.6704315909312887,
+          "ratified_but_violating": 0.08476571101513813,
+          "expected_skill": 1.3150351782076624
+        },
+        {
+          "round": 21,
+          "plural_success": 0.5795195100278996,
+          "skill_positive": 0.7258615270149373,
+          "frame_present": 0.6618154078213483,
+          "correct_expression": 0.5795195100278996,
+          "ratified": 0.6618154078213483,
+          "ratified_but_violating": 0.08229589779344869,
+          "expected_skill": 1.2923123356524782
+        },
+        {
+          "round": 22,
+          "plural_success": 0.5731150369820565,
+          "skill_positive": 0.7139232940941359,
+          "frame_present": 0.6529578889815424,
+          "correct_expression": 0.5731150369820565,
+          "ratified": 0.6529578889815424,
+          "ratified_but_violating": 0.07984285199948601,
+          "expected_skill": 1.2700188943045339
+        },
+        {
+          "round": 23,
+          "plural_success": 0.5665134421405627,
+          "skill_positive": 0.7021943373148343,
+          "frame_present": 0.6439342337295082,
+          "correct_expression": 0.5665134421405627,
+          "ratified": 0.6439342337295082,
+          "ratified_but_violating": 0.07742079158894533,
+          "expected_skill": 1.2481345728066615
+        },
+        {
+          "round": 24,
+          "plural_success": 0.5597597352486866,
+          "skill_positive": 0.6906601362130119,
+          "frame_present": 0.6347995877199416,
+          "correct_expression": 0.5597597352486866,
+          "ratified": 0.6347995877199416,
+          "ratified_but_violating": 0.07503985247125486,
+          "expected_skill": 1.2266416505432922
+        },
+        {
+          "round": 25,
+          "plural_success": 0.5528882475437374,
+          "skill_positive": 0.679308891574632,
+          "frame_present": 0.6255954969527875,
+          "correct_expression": 0.5528882475437374,
+          "ratified": 0.6255954969527875,
+          "ratified_but_violating": 0.07270724940904989,
+          "expected_skill": 1.2055247599897805
+        }
+      ],
+      "max_mass_error": 1.5543122344752192e-15
+    },
+    "feedback_blocked": {
+      "endpoint": {
+        "plural_success": 0.0,
+        "skill_positive": 0.579418929104913,
+        "frame_present": 0.5066503317215454,
+        "correct_expression": 0.4312138972056953,
+        "ratified": 0.5066503317215454,
+        "ratified_but_violating": 0.5066503317215454,
+        "expected_skill": 0.9886235677298782
+      },
+      "cumulative": {
+        "ordinary_cases": 38.32988947632621,
+        "inquiry_cases": 4.797889705660404,
+        "inquiry_slots": 4.797889705660404,
+        "training_slots": 2.074331112353102,
+        "harms": 21.563889590993263,
+        "ordinary_harms": 19.164944738163104,
+        "inquiry_harms": 2.398944852830202,
+        "action_one_uses": 2.398944852830202,
+        "turnovers": 3.750000000000001,
+        "archive_erasures": 0.6572769628777015,
+        "nominations": 0.8573606660807521
+      },
+      "curve": [
+        {
+          "round": 0,
+          "plural_success": 0.0,
+          "skill_positive": 1.0,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 2.0
+        },
+        {
+          "round": 1,
+          "plural_success": 0.0,
+          "skill_positive": 1.0,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.8499999999999999
+        },
+        {
+          "round": 2,
+          "plural_success": 0.0,
+          "skill_positive": 0.9955,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.8200000000000005
+        },
+        {
+          "round": 3,
+          "plural_success": 0.0,
+          "skill_positive": 0.9873100000000002,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.787075
+        },
+        {
+          "round": 4,
+          "plural_success": 0.0,
+          "skill_positive": 0.9761144499999995,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7518865000000012
+        },
+        {
+          "round": 5,
+          "plural_success": 0.0,
+          "skill_positive": 0.9624912040000001,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7149900925000003
+        },
+        {
+          "round": 6,
+          "plural_success": 0.0,
+          "skill_positive": 0.9469276272550002,
+          "frame_present": 0.18156845517578118,
+          "correct_expression": 0.15453427396352123,
+          "ratified": 0.18156845517578118,
+          "ratified_but_violating": 0.18156845517578118,
+          "expected_skill": 1.676851549100001
+        },
+        {
+          "round": 7,
+          "plural_success": 0.0,
+          "skill_positive": 0.9298342839061006,
+          "frame_present": 0.37909037870286877,
+          "correct_expression": 0.3226466644918518,
+          "ratified": 0.37909037870286877,
+          "ratified_but_violating": 0.37909037870286877,
+          "expected_skill": 1.6378604880957508
+        },
+        {
+          "round": 8,
+          "plural_success": 0.0,
+          "skill_positive": 0.9115565680373545,
+          "frame_present": 0.5184594038656886,
+          "correct_expression": 0.4412646870756165,
+          "ratified": 0.5184594038656886,
+          "ratified_but_violating": 0.5184594038656886,
+          "expected_skill": 1.598341986101315
+        },
+        {
+          "round": 9,
+          "plural_success": 0.0,
+          "skill_positive": 0.8923845867474057,
+          "frame_present": 0.6008460317308065,
+          "correct_expression": 0.5113845639513274,
+          "ratified": 0.6008460317308065,
+          "ratified_but_violating": 0.6008460317308065,
+          "expected_skill": 1.5585664422694478
+        },
+        {
+          "round": 10,
+          "plural_success": 0.0,
+          "skill_positive": 0.8725615575334797,
+          "frame_present": 0.6443754095284505,
+          "correct_expression": 0.5484327438652357,
+          "ratified": 0.6443754095284505,
+          "ratified_but_violating": 0.6443754095284505,
+          "expected_skill": 1.5187579573898604
+        },
+        {
+          "round": 11,
+          "plural_success": 0.0,
+          "skill_positive": 0.8522909429376969,
+          "frame_present": 0.6641520479088817,
+          "correct_expression": 0.5652647891156086,
+          "ratified": 0.6641520479088817,
+          "ratified_but_violating": 0.6641520479088817,
+          "expected_skill": 1.4791014507983857
+        },
+        {
+          "round": 12,
+          "plural_success": 0.0,
+          "skill_positive": 0.8317425119602545,
+          "frame_present": 0.6698596316438966,
+          "correct_expression": 0.5701225564393577,
+          "ratified": 0.6698596316438966,
+          "ratified_but_violating": 0.6698596316438966,
+          "expected_skill": 1.4397487045851227
+        },
+        {
+          "round": 13,
+          "plural_success": 0.0,
+          "skill_positive": 0.8110574893155322,
+          "frame_present": 0.6672521601775638,
+          "correct_expression": 0.5679033179183258,
+          "ratified": 0.6672521601775638,
+          "ratified_but_violating": 0.6672521601775638,
+          "expected_skill": 1.4008234961616548
+        },
+        {
+          "round": 14,
+          "plural_success": 0.0,
+          "skill_positive": 0.7903529294430385,
+          "frame_present": 0.6596861446780922,
+          "correct_expression": 0.5614638253816092,
+          "ratified": 0.6596861446780922,
+          "ratified_but_violating": 0.6596861446780922,
+          "expected_skill": 1.3624259560837764
+        },
+        {
+          "round": 15,
+          "plural_success": 0.0,
+          "skill_positive": 0.7697254316456741,
+          "frame_present": 0.6491270279265113,
+          "correct_expression": 0.5524768819209631,
+          "ratified": 0.6491270279265113,
+          "ratified_but_violating": 0.6491270279265113,
+          "expected_skill": 1.3246362674871903
+        },
+        {
+          "round": 16,
+          "plural_success": 0.0,
+          "skill_positive": 0.7492542952693412,
+          "frame_present": 0.6367426485856327,
+          "correct_expression": 0.5419364437810964,
+          "ratified": 0.6367426485856327,
+          "ratified_but_violating": 0.6367426485856327,
+          "expected_skill": 1.2875178060356125
+        },
+        {
+          "round": 17,
+          "plural_success": 0.0,
+          "skill_positive": 0.7290041989983432,
+          "frame_present": 0.6232423579020608,
+          "correct_expression": 0.5304462451281281,
+          "ratified": 0.6232423579020608,
+          "ratified_but_violating": 0.6232423579020608,
+          "expected_skill": 1.251119804441626
+        },
+        {
+          "round": 18,
+          "plural_success": 0.0,
+          "skill_positive": 0.7090274757274123,
+          "frame_present": 0.6090693711436982,
+          "correct_expression": 0.518383509800685,
+          "ratified": 0.6090693711436982,
+          "ratified_but_violating": 0.6090693711436982,
+          "expected_skill": 1.2154796130073966
+        },
+        {
+          "round": 19,
+          "plural_success": 0.0,
+          "skill_positive": 0.6893660437497569,
+          "frame_present": 0.5945100128892812,
+          "correct_expression": 0.5059919307951637,
+          "ratified": 0.5945100128892812,
+          "ratified_but_violating": 0.5945100128892812,
+          "expected_skill": 1.1806246169113415
+        },
+        {
+          "round": 20,
+          "plural_success": 0.0,
+          "skill_positive": 0.6700530458873055,
+          "frame_present": 0.5797561091263954,
+          "correct_expression": 0.49343477264829344,
+          "ratified": 0.5797561091263954,
+          "ratified_but_violating": 0.5797561091263954,
+          "expected_skill": 1.1465738618540435
+        },
+        {
+          "round": 21,
+          "plural_success": 0.0,
+          "skill_positive": 0.6511142404432221,
+          "frame_present": 0.5649409482927206,
+          "correct_expression": 0.4808254781490465,
+          "ratified": 0.5649409482927206,
+          "ratified_but_violating": 0.5649409482927206,
+          "expected_skill": 1.1133394319309569
+        },
+        {
+          "round": 22,
+          "plural_success": 0.0,
+          "skill_positive": 0.6325691812725802,
+          "frame_present": 0.5501602868981804,
+          "correct_expression": 0.4682455463811931,
+          "ratified": 0.5501602868981804,
+          "ratified_but_violating": 0.5501602868981804,
+          "expected_skill": 1.0809276170156836
+        },
+        {
+          "round": 23,
+          "plural_success": 0.0,
+          "skill_positive": 0.6144322186706598,
+          "frame_present": 0.5354848500718966,
+          "correct_expression": 0.45575517203256677,
+          "ratified": 0.5354848500718966,
+          "ratified_but_violating": 0.5354848500718966,
+          "expected_skill": 1.04933990134147
+        },
+        {
+          "round": 24,
+          "plural_success": 0.0,
+          "skill_positive": 0.5967133480213584,
+          "frame_present": 0.5209679584951538,
+          "correct_expression": 0.44339973673491406,
+          "ratified": 0.5209679584951538,
+          "ratified_but_violating": 0.5209679584951538,
+          "expected_skill": 1.0185738002120441
+        },
+        {
+          "round": 25,
+          "plural_success": 0.0,
+          "skill_positive": 0.579418929104913,
+          "frame_present": 0.5066503317215454,
+          "correct_expression": 0.4312138972056953,
+          "ratified": 0.5066503317215454,
+          "ratified_but_violating": 0.5066503317215454,
+          "expected_skill": 0.9886235677298782
+        }
+      ],
+      "max_mass_error": 1.3322676295501878e-15
+    },
+    "feedback_aggregate": {
+      "endpoint": {
+        "plural_success": 0.1664093965848303,
+        "skill_positive": 0.5838007811082199,
+        "frame_present": 0.5134260561157376,
+        "correct_expression": 0.1664093965848303,
+        "ratified": 0.5134260561157376,
+        "ratified_but_violating": 0.3470166595309073,
+        "expected_skill": 1.003763138580448
+      },
+      "cumulative": {
+        "ordinary_cases": 38.372491388296446,
+        "inquiry_cases": 4.791234251292532,
+        "inquiry_slots": 4.791234251292532,
+        "training_slots": 2.045040109118475,
+        "harms": 21.079996006975847,
+        "ordinary_harms": 18.68437888132956,
+        "inquiry_harms": 2.395617125646266,
+        "action_one_uses": 11.44422732835284,
+        "turnovers": 3.7056419509951524,
+        "archive_erasures": 0.6490383896064076,
+        "nominations": 0.8565500461658353
+      },
+      "curve": [
+        {
+          "round": 0,
+          "plural_success": 0.0,
+          "skill_positive": 1.0,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 2.0
+        },
+        {
+          "round": 1,
+          "plural_success": 0.0,
+          "skill_positive": 1.0,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.8499999999999999
+        },
+        {
+          "round": 2,
+          "plural_success": 0.0,
+          "skill_positive": 0.9954999999999999,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.82
+        },
+        {
+          "round": 3,
+          "plural_success": 0.0,
+          "skill_positive": 0.9873099999999999,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.787075
+        },
+        {
+          "round": 4,
+          "plural_success": 0.0,
+          "skill_positive": 0.9761144500000001,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7518865000000003
+        },
+        {
+          "round": 5,
+          "plural_success": 0.0,
+          "skill_positive": 0.9624912040000001,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7149900925
+        },
+        {
+          "round": 6,
+          "plural_success": 0.04539211379394531,
+          "skill_positive": 0.9469276272549996,
+          "frame_present": 0.18156845517578124,
+          "correct_expression": 0.04539211379394531,
+          "ratified": 0.18156845517578124,
+          "ratified_but_violating": 0.13617634138183593,
+          "expected_skill": 1.6768515491
+        },
+        {
+          "round": 7,
+          "plural_success": 0.09516872727487732,
+          "skill_positive": 0.9298342839061,
+          "frame_present": 0.3790903787028687,
+          "correct_expression": 0.09516872727487732,
+          "ratified": 0.3790903787028687,
+          "ratified_but_violating": 0.28392165142799136,
+          "expected_skill": 1.63786048809575
+        },
+        {
+          "round": 8,
+          "plural_success": 0.13093346895129038,
+          "skill_positive": 0.9114908848652773,
+          "frame_present": 0.5184058348672074,
+          "correct_expression": 0.13093346895129038,
+          "ratified": 0.5184058348672074,
+          "ratified_but_violating": 0.387472365915917,
+          "expected_skill": 1.5983974446651972
+        },
+        {
+          "round": 9,
+          "plural_success": 0.1529341773939676,
+          "skill_positive": 0.8921545878476822,
+          "frame_present": 0.6006638906645112,
+          "correct_expression": 0.1529341773939676,
+          "ratified": 0.6006638906645112,
+          "ratified_but_violating": 0.4477297132705437,
+          "expected_skill": 1.558723196268149
+        },
+        {
+          "round": 10,
+          "plural_success": 0.16560972728466436,
+          "skill_positive": 0.8720859778561528,
+          "frame_present": 0.6440130780767258,
+          "correct_expression": 0.16560972728466436,
+          "ratified": 0.6440130780767258,
+          "ratified_but_violating": 0.4784033507920614,
+          "expected_skill": 1.5190531151817512
+        },
+        {
+          "round": 11,
+          "plural_success": 0.17264440963433964,
+          "skill_positive": 0.8515332125876268,
+          "frame_present": 0.6636039166901705,
+          "correct_expression": 0.17264440963433964,
+          "ratified": 0.6636039166901705,
+          "ratified_but_violating": 0.4909595070558308,
+          "expected_skill": 1.4795863278604302
+        },
+        {
+          "round": 12,
+          "plural_success": 0.17637934761671675,
+          "skill_positive": 0.8307161475227418,
+          "frame_present": 0.6691686190239519,
+          "correct_expression": 0.17637934761671675,
+          "ratified": 0.6691686190239519,
+          "ratified_but_violating": 0.4927892714072351,
+          "expected_skill": 1.4405016474071277
+        },
+        {
+          "round": 13,
+          "plural_success": 0.17818619242289555,
+          "skill_positive": 0.809819476442331,
+          "frame_present": 0.6665016138999443,
+          "correct_expression": 0.17818619242289555,
+          "ratified": 0.6665016138999443,
+          "ratified_but_violating": 0.488315421477049,
+          "expected_skill": 1.401950339293679
+        },
+        {
+          "round": 14,
+          "plural_success": 0.1788485619771972,
+          "skill_positive": 0.7889926193305231,
+          "frame_present": 0.6589871711155333,
+          "correct_expression": 0.1788485619771972,
+          "ratified": 0.6589871711155333,
+          "ratified_but_violating": 0.48013860913833617,
+          "expected_skill": 1.3640536842843933
+        },
+        {
+          "round": 15,
+          "plural_success": 0.17881177520837133,
+          "skill_positive": 0.7683530599157476,
+          "frame_present": 0.6486050586853931,
+          "correct_expression": 0.17881177520837133,
+          "ratified": 0.6486050586853931,
+          "ratified_but_violating": 0.46979328347702176,
+          "expected_skill": 1.3269044982716616
+        },
+        {
+          "round": 16,
+          "plural_success": 0.17832985517815203,
+          "skill_positive": 0.7479909615515842,
+          "frame_present": 0.636526360427812,
+          "correct_expression": 0.17832985517815203,
+          "ratified": 0.636526360427812,
+          "ratified_but_violating": 0.4581965052496598,
+          "expected_skill": 1.2905706096113998
+        },
+        {
+          "round": 17,
+          "plural_success": 0.17754929952545886,
+          "skill_positive": 0.7279739074581969,
+          "frame_present": 0.6234560466695842,
+          "correct_expression": 0.17754929952545886,
+          "ratified": 0.6234560466695842,
+          "ratified_but_violating": 0.44590674714412537,
+          "expected_skill": 1.2550989249866389
+        },
+        {
+          "round": 18,
+          "plural_success": 0.17655625713225528,
+          "skill_positive": 0.7083512339134905,
+          "frame_present": 0.6098283325576547,
+          "correct_expression": 0.17655625713225528,
+          "ratified": 0.6098283325576547,
+          "ratified_but_violating": 0.4332720754253994,
+          "expected_skill": 1.2205193654593618
+        },
+        {
+          "round": 19,
+          "plural_success": 0.1754029483887667,
+          "skill_positive": 0.6891577613306192,
+          "frame_present": 0.5959180338176129,
+          "correct_expression": 0.1754029483887667,
+          "ratified": 0.5959180338176129,
+          "ratified_but_violating": 0.42051508542884614,
+          "expected_skill": 1.1868483598348556
+        },
+        {
+          "round": 20,
+          "plural_success": 0.1741224188255802,
+          "skill_positive": 0.6704168964980673,
+          "frame_present": 0.5819043101035762,
+          "correct_expression": 0.1741224188255802,
+          "ratified": 0.5819043101035762,
+          "ratified_but_violating": 0.40778189127799597,
+          "expected_skill": 1.1540917998580194
+        },
+        {
+          "round": 21,
+          "plural_success": 0.1727367697889791,
+          "skill_positive": 0.6521431558041791,
+          "frame_present": 0.5679074714640072,
+          "correct_expression": 0.1727367697889791,
+          "ratified": 0.5679074714640072,
+          "ratified_but_violating": 0.39517070167502816,
+          "expected_skill": 1.1222474678818208
+        },
+        {
+          "round": 22,
+          "plural_success": 0.17126175327341206,
+          "skill_positive": 0.6343441878375053,
+          "frame_present": 0.5540105177608824,
+          "correct_expression": 0.17126175327341206,
+          "ratified": 0.5540105177608824,
+          "ratified_but_violating": 0.3827487644874703,
+          "expected_skill": 1.0913069932961301
+        },
+        {
+          "round": 23,
+          "plural_success": 0.1697093432696326,
+          "skill_positive": 0.6170223785191664,
+          "frame_present": 0.5402719794777782,
+          "correct_expression": 0.1697093432696326,
+          "ratified": 0.5402719794777782,
+          "ratified_but_violating": 0.37056263620814556,
+          "expected_skill": 1.061257408469133
+        },
+        {
+          "round": 24,
+          "plural_success": 0.16808918147359758,
+          "skill_positive": 0.6001761158438205,
+          "frame_present": 0.5267337582754615,
+          "correct_expression": 0.16808918147359758,
+          "ratified": 0.5267337582754615,
+          "ratified_but_violating": 0.35864457680186396,
+          "expected_skill": 1.0320823743305403
+        },
+        {
+          "round": 25,
+          "plural_success": 0.1664093965848303,
+          "skill_positive": 0.5838007811082199,
+          "frame_present": 0.5134260561157376,
+          "correct_expression": 0.1664093965848303,
+          "ratified": 0.5134260561157376,
+          "ratified_but_violating": 0.3470166595309073,
+          "expected_skill": 1.003763138580448
+        }
+      ],
+      "max_mass_error": 1.3322676295501878e-15
+    },
+    "constant_enabled": {
+      "endpoint": {
+        "plural_success": 0.4316738786963201,
+        "skill_positive": 0.5794189291049119,
+        "frame_present": 0.5071907822411625,
+        "correct_expression": 0.4316738786963201,
+        "ratified": 0.5071907822411625,
+        "ratified_but_violating": 0.07551690354484239,
+        "expected_skill": 0.9886235677298763
+      },
+      "cumulative": {
+        "ordinary_cases": 38.302341660229544,
+        "inquiry_cases": 4.8116636137087205,
+        "inquiry_slots": 4.8116636137087205,
+        "training_slots": 2.074331112353102,
+        "harms": 15.403608626331815,
+        "ordinary_harms": 12.997776819477426,
+        "inquiry_harms": 2.4058318068543603,
+        "action_one_uses": 11.473983765139259,
+        "turnovers": 3.7500000000000013,
+        "archive_erasures": 0.6477450386890569,
+        "nominations": 0.8598457154004295
+      },
+      "curve": [
+        {
+          "round": 0,
+          "plural_success": 0.0,
+          "skill_positive": 1.0,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 2.0
+        },
+        {
+          "round": 1,
+          "plural_success": 0.0,
+          "skill_positive": 0.9999999999999999,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.8499999999999999
+        },
+        {
+          "round": 2,
+          "plural_success": 0.0,
+          "skill_positive": 0.9954999999999998,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.819999999999999
+        },
+        {
+          "round": 3,
+          "plural_success": 0.0,
+          "skill_positive": 0.9873099999999999,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7870750000000002
+        },
+        {
+          "round": 4,
+          "plural_success": 0.0,
+          "skill_positive": 0.9761144499999999,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7518865000000003
+        },
+        {
+          "round": 5,
+          "plural_success": 0.0,
+          "skill_positive": 0.9624912040000001,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7149900925000008
+        },
+        {
+          "round": 6,
+          "plural_success": 0.16273963364300026,
+          "skill_positive": 0.9469276272550003,
+          "frame_present": 0.1912092581054688,
+          "correct_expression": 0.16273963364300026,
+          "ratified": 0.1912092581054688,
+          "ratified_but_violating": 0.028469624462468503,
+          "expected_skill": 1.6768515490999996
+        },
+        {
+          "round": 7,
+          "plural_success": 0.3321509284434351,
+          "skill_positive": 0.9298342839061001,
+          "frame_present": 0.39025731584251705,
+          "correct_expression": 0.3321509284434351,
+          "ratified": 0.39025731584251705,
+          "ratified_but_violating": 0.05810638739908198,
+          "expected_skill": 1.6378604880957497
+        },
+        {
+          "round": 8,
+          "plural_success": 0.44866718827463836,
+          "skill_positive": 0.9115565680373544,
+          "frame_present": 0.5271568964844493,
+          "correct_expression": 0.44866718827463836,
+          "ratified": 0.5271568964844493,
+          "ratified_but_violating": 0.07848970820981087,
+          "expected_skill": 1.5983419861013146
+        },
+        {
+          "round": 9,
+          "plural_success": 0.5165089008909571,
+          "skill_positive": 0.8923845867474052,
+          "frame_present": 0.6068668186932403,
+          "correct_expression": 0.5165089008909571,
+          "ratified": 0.6068668186932403,
+          "ratified_but_violating": 0.09035791780228333,
+          "expected_skill": 1.558566442269447
+        },
+        {
+          "round": 10,
+          "plural_success": 0.5519268089085441,
+          "skill_positive": 0.8725615575334792,
+          "frame_present": 0.6484807253003223,
+          "correct_expression": 0.5519268089085441,
+          "ratified": 0.6484807253003223,
+          "ratified_but_violating": 0.09655391639177827,
+          "expected_skill": 1.518757957389859
+        },
+        {
+          "round": 11,
+          "plural_success": 0.5677182684326635,
+          "skill_positive": 0.8522909429376965,
+          "frame_present": 0.6670347381883763,
+          "correct_expression": 0.5677182684326635,
+          "ratified": 0.6670347381883763,
+          "ratified_but_violating": 0.09931646975571287,
+          "expected_skill": 1.4791014507983855
+        },
+        {
+          "round": 12,
+          "plural_success": 0.5719296267271196,
+          "skill_positive": 0.831742511960254,
+          "frame_present": 0.6719828302853864,
+          "correct_expression": 0.5719296267271196,
+          "ratified": 0.6719828302853864,
+          "ratified_but_violating": 0.10005320355826694,
+          "expected_skill": 1.4397487045851223
+        },
+        {
+          "round": 13,
+          "plural_success": 0.5693058494146616,
+          "skill_positive": 0.8110574893155317,
+          "frame_present": 0.6689000501284054,
+          "correct_expression": 0.5693058494146616,
+          "ratified": 0.6689000501284054,
+          "ratified_but_violating": 0.09959420071374361,
+          "expected_skill": 1.4008234961616537
+        },
+        {
+          "round": 14,
+          "plural_success": 0.5626069442957773,
+          "skill_positive": 0.7903529294430378,
+          "frame_present": 0.6610292404846361,
+          "correct_expression": 0.5626069442957773,
+          "ratified": 0.6610292404846361,
+          "ratified_but_violating": 0.09842229618885873,
+          "expected_skill": 1.3624259560837761
+        },
+        {
+          "round": 15,
+          "plural_success": 0.5534477217126313,
+          "skill_positive": 0.7697254316456728,
+          "frame_present": 0.6502677061506699,
+          "correct_expression": 0.5534477217126313,
+          "ratified": 0.6502677061506699,
+          "ratified_but_violating": 0.0968199844380387,
+          "expected_skill": 1.3246362674871892
+        },
+        {
+          "round": 16,
+          "plural_success": 0.542787911791169,
+          "skill_positive": 0.7492542952693404,
+          "frame_present": 0.6377430721632332,
+          "correct_expression": 0.542787911791169,
+          "ratified": 0.6377430721632332,
+          "ratified_but_violating": 0.09495516037206427,
+          "expected_skill": 1.2875178060356116
+        },
+        {
+          "round": 17,
+          "plural_success": 0.5312110683738116,
+          "skill_positive": 0.729004198998342,
+          "frame_present": 0.6241409791052384,
+          "correct_expression": 0.5312110683738116,
+          "ratified": 0.6241409791052384,
+          "ratified_but_violating": 0.09292991073142677,
+          "expected_skill": 1.251119804441624
+        },
+        {
+          "round": 18,
+          "plural_success": 0.519082451646263,
+          "skill_positive": 0.7090274757274113,
+          "frame_present": 0.6098905856736819,
+          "correct_expression": 0.519082451646263,
+          "ratified": 0.6098905856736819,
+          "ratified_but_violating": 0.09080813402741872,
+          "expected_skill": 1.2154796130073946
+        },
+        {
+          "round": 19,
+          "plural_success": 0.5066385913872081,
+          "skill_positive": 0.6893660437497554,
+          "frame_present": 0.5952698000983517,
+          "correct_expression": 0.5066385913872081,
+          "ratified": 0.5952698000983517,
+          "ratified_but_violating": 0.088631208711144,
+          "expected_skill": 1.1806246169113395
+        },
+        {
+          "round": 20,
+          "plural_success": 0.4940384002963775,
+          "skill_positive": 0.6700530458873045,
+          "frame_present": 0.5804653352207302,
+          "correct_expression": 0.4940384002963775,
+          "ratified": 0.5804653352207302,
+          "ratified_but_violating": 0.08642693492435267,
+          "expected_skill": 1.146573861854041
+        },
+        {
+          "round": 21,
+          "plural_success": 0.481392624142846,
+          "skill_positive": 0.6511142404432205,
+          "frame_present": 0.5656073106427167,
+          "correct_expression": 0.481392624142846,
+          "ratified": 0.5656073106427167,
+          "ratified_but_violating": 0.08421468649987084,
+          "expected_skill": 1.113339431930955
+        },
+        {
+          "round": 22,
+          "plural_success": 0.468781046775552,
+          "skill_positive": 0.6325691812725791,
+          "frame_present": 0.5507894675767188,
+          "correct_expression": 0.468781046775552,
+          "ratified": 0.5507894675767188,
+          "ratified_but_violating": 0.08200842080116669,
+          "expected_skill": 1.0809276170156812
+        },
+        {
+          "round": 23,
+          "plural_success": 0.4562627368879809,
+          "skill_positive": 0.6144322186706584,
+          "frame_present": 0.5360812081763832,
+          "correct_expression": 0.4562627368879809,
+          "ratified": 0.5360812081763832,
+          "ratified_but_violating": 0.07981847128840222,
+          "expected_skill": 1.0493399013414675
+        },
+        {
+          "round": 24,
+          "plural_success": 0.44388230950346186,
+          "skill_positive": 0.5967133480213571,
+          "frame_present": 0.5215349524043226,
+          "correct_expression": 0.44388230950346186,
+          "ratified": 0.5215349524043226,
+          "ratified_but_violating": 0.0776526429008607,
+          "expected_skill": 1.018573800212042
+        },
+        {
+          "round": 25,
+          "plural_success": 0.4316738786963201,
+          "skill_positive": 0.5794189291049119,
+          "frame_present": 0.5071907822411625,
+          "correct_expression": 0.4316738786963201,
+          "ratified": 0.5071907822411625,
+          "ratified_but_violating": 0.07551690354484239,
+          "expected_skill": 0.9886235677298763
+        }
+      ],
+      "max_mass_error": 1.9984014443252818e-15
+    },
+    "constant_blocked": {
+      "endpoint": {
+        "plural_success": 0.0,
+        "skill_positive": 0.5794189291049126,
+        "frame_present": 0.5071907822411633,
+        "correct_expression": 0.43167387869632085,
+        "ratified": 0.5071907822411633,
+        "ratified_but_violating": 0.5071907822411633,
+        "expected_skill": 0.9886235677298777
+      },
+      "cumulative": {
+        "ordinary_cases": 38.302341660229565,
+        "inquiry_cases": 4.811663613708721,
+        "inquiry_slots": 4.811663613708721,
+        "training_slots": 2.074331112353102,
+        "harms": 21.557002636969063,
+        "ordinary_harms": 19.151170830114783,
+        "inquiry_harms": 2.4058318068543607,
+        "action_one_uses": 2.4058318068543607,
+        "turnovers": 3.7500000000000013,
+        "archive_erasures": 0.6477450386890572,
+        "nominations": 0.8598457154004295
+      },
+      "curve": [
+        {
+          "round": 0,
+          "plural_success": 0.0,
+          "skill_positive": 1.0,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 2.0
+        },
+        {
+          "round": 1,
+          "plural_success": 0.0,
+          "skill_positive": 0.9999999999999999,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.8499999999999999
+        },
+        {
+          "round": 2,
+          "plural_success": 0.0,
+          "skill_positive": 0.9954999999999998,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.819999999999999
+        },
+        {
+          "round": 3,
+          "plural_success": 0.0,
+          "skill_positive": 0.9873099999999999,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7870750000000002
+        },
+        {
+          "round": 4,
+          "plural_success": 0.0,
+          "skill_positive": 0.9761144499999999,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7518865000000003
+        },
+        {
+          "round": 5,
+          "plural_success": 0.0,
+          "skill_positive": 0.9624912040000001,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7149900925000008
+        },
+        {
+          "round": 6,
+          "plural_success": 0.0,
+          "skill_positive": 0.9469276272550003,
+          "frame_present": 0.1912092581054688,
+          "correct_expression": 0.16273963364300026,
+          "ratified": 0.1912092581054688,
+          "ratified_but_violating": 0.1912092581054688,
+          "expected_skill": 1.6768515490999996
+        },
+        {
+          "round": 7,
+          "plural_success": 0.0,
+          "skill_positive": 0.9298342839061001,
+          "frame_present": 0.39025731584251705,
+          "correct_expression": 0.3321509284434351,
+          "ratified": 0.39025731584251705,
+          "ratified_but_violating": 0.39025731584251705,
+          "expected_skill": 1.6378604880957497
+        },
+        {
+          "round": 8,
+          "plural_success": 0.0,
+          "skill_positive": 0.9115565680373544,
+          "frame_present": 0.5271568964844493,
+          "correct_expression": 0.44866718827463836,
+          "ratified": 0.5271568964844493,
+          "ratified_but_violating": 0.5271568964844493,
+          "expected_skill": 1.5983419861013146
+        },
+        {
+          "round": 9,
+          "plural_success": 0.0,
+          "skill_positive": 0.8923845867474052,
+          "frame_present": 0.6068668186932404,
+          "correct_expression": 0.5165089008909572,
+          "ratified": 0.6068668186932404,
+          "ratified_but_violating": 0.6068668186932404,
+          "expected_skill": 1.5585664422694472
+        },
+        {
+          "round": 10,
+          "plural_success": 0.0,
+          "skill_positive": 0.8725615575334793,
+          "frame_present": 0.6484807253003224,
+          "correct_expression": 0.5519268089085442,
+          "ratified": 0.6484807253003224,
+          "ratified_but_violating": 0.6484807253003224,
+          "expected_skill": 1.5187579573898593
+        },
+        {
+          "round": 11,
+          "plural_success": 0.0,
+          "skill_positive": 0.8522909429376967,
+          "frame_present": 0.6670347381883766,
+          "correct_expression": 0.5677182684326637,
+          "ratified": 0.6670347381883766,
+          "ratified_but_violating": 0.6670347381883766,
+          "expected_skill": 1.479101450798386
+        },
+        {
+          "round": 12,
+          "plural_success": 0.0,
+          "skill_positive": 0.8317425119602542,
+          "frame_present": 0.6719828302853866,
+          "correct_expression": 0.5719296267271198,
+          "ratified": 0.6719828302853866,
+          "ratified_but_violating": 0.6719828302853866,
+          "expected_skill": 1.439748704585123
+        },
+        {
+          "round": 13,
+          "plural_success": 0.0,
+          "skill_positive": 0.811057489315532,
+          "frame_present": 0.6689000501284057,
+          "correct_expression": 0.5693058494146619,
+          "ratified": 0.6689000501284057,
+          "ratified_but_violating": 0.6689000501284057,
+          "expected_skill": 1.4008234961616541
+        },
+        {
+          "round": 14,
+          "plural_success": 0.0,
+          "skill_positive": 0.7903529294430383,
+          "frame_present": 0.6610292404846364,
+          "correct_expression": 0.5626069442957776,
+          "ratified": 0.6610292404846364,
+          "ratified_but_violating": 0.6610292404846364,
+          "expected_skill": 1.3624259560837766
+        },
+        {
+          "round": 15,
+          "plural_success": 0.0,
+          "skill_positive": 0.769725431645673,
+          "frame_present": 0.6502677061506701,
+          "correct_expression": 0.5534477217126317,
+          "ratified": 0.6502677061506701,
+          "ratified_but_violating": 0.6502677061506701,
+          "expected_skill": 1.3246362674871899
+        },
+        {
+          "round": 16,
+          "plural_success": 0.0,
+          "skill_positive": 0.7492542952693407,
+          "frame_present": 0.6377430721632336,
+          "correct_expression": 0.5427879117911694,
+          "ratified": 0.6377430721632336,
+          "ratified_but_violating": 0.6377430721632336,
+          "expected_skill": 1.2875178060356123
+        },
+        {
+          "round": 17,
+          "plural_success": 0.0,
+          "skill_positive": 0.7290041989983425,
+          "frame_present": 0.6241409791052386,
+          "correct_expression": 0.5312110683738119,
+          "ratified": 0.6241409791052386,
+          "ratified_but_violating": 0.6241409791052386,
+          "expected_skill": 1.251119804441625
+        },
+        {
+          "round": 18,
+          "plural_success": 0.0,
+          "skill_positive": 0.709027475727412,
+          "frame_present": 0.6098905856736824,
+          "correct_expression": 0.5190824516462634,
+          "ratified": 0.6098905856736824,
+          "ratified_but_violating": 0.6098905856736824,
+          "expected_skill": 1.2154796130073955
+        },
+        {
+          "round": 19,
+          "plural_success": 0.0,
+          "skill_positive": 0.6893660437497561,
+          "frame_present": 0.5952698000983524,
+          "correct_expression": 0.5066385913872087,
+          "ratified": 0.5952698000983524,
+          "ratified_but_violating": 0.5952698000983524,
+          "expected_skill": 1.1806246169113404
+        },
+        {
+          "round": 20,
+          "plural_success": 0.0,
+          "skill_positive": 0.6700530458873052,
+          "frame_present": 0.5804653352207308,
+          "correct_expression": 0.49403840029637813,
+          "ratified": 0.5804653352207308,
+          "ratified_but_violating": 0.5804653352207308,
+          "expected_skill": 1.1465738618540422
+        },
+        {
+          "round": 21,
+          "plural_success": 0.0,
+          "skill_positive": 0.6511142404432212,
+          "frame_present": 0.5656073106427174,
+          "correct_expression": 0.48139262414284667,
+          "ratified": 0.5656073106427174,
+          "ratified_but_violating": 0.5656073106427174,
+          "expected_skill": 1.1133394319309562
+        },
+        {
+          "round": 22,
+          "plural_success": 0.0,
+          "skill_positive": 0.6325691812725799,
+          "frame_present": 0.5507894675767194,
+          "correct_expression": 0.46878104677555266,
+          "ratified": 0.5507894675767194,
+          "ratified_but_violating": 0.5507894675767194,
+          "expected_skill": 1.0809276170156825
+        },
+        {
+          "round": 23,
+          "plural_success": 0.0,
+          "skill_positive": 0.6144322186706592,
+          "frame_present": 0.5360812081763838,
+          "correct_expression": 0.45626273688798163,
+          "ratified": 0.5360812081763838,
+          "ratified_but_violating": 0.5360812081763838,
+          "expected_skill": 1.049339901341469
+        },
+        {
+          "round": 24,
+          "plural_success": 0.0,
+          "skill_positive": 0.596713348021358,
+          "frame_present": 0.5215349524043233,
+          "correct_expression": 0.4438823095034626,
+          "ratified": 0.5215349524043233,
+          "ratified_but_violating": 0.5215349524043233,
+          "expected_skill": 1.0185738002120435
+        },
+        {
+          "round": 25,
+          "plural_success": 0.0,
+          "skill_positive": 0.5794189291049126,
+          "frame_present": 0.5071907822411633,
+          "correct_expression": 0.43167387869632085,
+          "ratified": 0.5071907822411633,
+          "ratified_but_violating": 0.5071907822411633,
+          "expected_skill": 0.9886235677298777
+        }
+      ],
+      "max_mass_error": 1.1102230246251565e-15
+    },
+    "constant_aggregate": {
+      "endpoint": {
+        "plural_success": 0.12679769556029055,
+        "skill_positive": 0.579418929104912,
+        "frame_present": 0.5071907822411627,
+        "correct_expression": 0.12679769556029055,
+        "ratified": 0.5071907822411627,
+        "ratified_but_violating": 0.3803930866808721,
+        "expected_skill": 0.9886235677298768
+      },
+      "cumulative": {
+        "ordinary_cases": 38.30234166022944,
+        "inquiry_cases": 4.811663613708716,
+        "inquiry_slots": 4.811663613708716,
+        "training_slots": 2.074331112353104,
+        "harms": 21.557002636969077,
+        "ordinary_harms": 19.15117083011472,
+        "inquiry_harms": 2.405831806854358,
+        "action_one_uses": 11.473983765139275,
+        "turnovers": 3.749999999999994,
+        "archive_erasures": 0.6477450386890563,
+        "nominations": 0.8598457154004276
+      },
+      "curve": [
+        {
+          "round": 0,
+          "plural_success": 0.0,
+          "skill_positive": 1.0,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 2.0
+        },
+        {
+          "round": 1,
+          "plural_success": 0.0,
+          "skill_positive": 0.9999999999999999,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.8499999999999999
+        },
+        {
+          "round": 2,
+          "plural_success": 0.0,
+          "skill_positive": 0.9954999999999998,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.8199999999999998
+        },
+        {
+          "round": 3,
+          "plural_success": 0.0,
+          "skill_positive": 0.9873099999999999,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7870749999999995
+        },
+        {
+          "round": 4,
+          "plural_success": 0.0,
+          "skill_positive": 0.9761144499999999,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7518864999999997
+        },
+        {
+          "round": 5,
+          "plural_success": 0.0,
+          "skill_positive": 0.9624912039999998,
+          "frame_present": 0.0,
+          "correct_expression": 0.0,
+          "ratified": 0.0,
+          "ratified_but_violating": 0.0,
+          "expected_skill": 1.7149900924999995
+        },
+        {
+          "round": 6,
+          "plural_success": 0.04780231452636718,
+          "skill_positive": 0.9469276272549993,
+          "frame_present": 0.1912092581054687,
+          "correct_expression": 0.04780231452636718,
+          "ratified": 0.1912092581054687,
+          "ratified_but_violating": 0.14340694357910153,
+          "expected_skill": 1.6768515490999996
+        },
+        {
+          "round": 7,
+          "plural_success": 0.09756432896062925,
+          "skill_positive": 0.9298342839060998,
+          "frame_present": 0.390257315842517,
+          "correct_expression": 0.09756432896062925,
+          "ratified": 0.390257315842517,
+          "ratified_but_violating": 0.2926929868818877,
+          "expected_skill": 1.6378604880957492
+        },
+        {
+          "round": 8,
+          "plural_success": 0.1317892241211123,
+          "skill_positive": 0.9115565680373541,
+          "frame_present": 0.5271568964844492,
+          "correct_expression": 0.1317892241211123,
+          "ratified": 0.5271568964844492,
+          "ratified_but_violating": 0.3953676723633369,
+          "expected_skill": 1.598341986101315
+        },
+        {
+          "round": 9,
+          "plural_success": 0.15171670467331008,
+          "skill_positive": 0.8923845867474053,
+          "frame_present": 0.6068668186932403,
+          "correct_expression": 0.15171670467331008,
+          "ratified": 0.6068668186932403,
+          "ratified_but_violating": 0.4551501140199303,
+          "expected_skill": 1.558566442269447
+        },
+        {
+          "round": 10,
+          "plural_success": 0.16212018132508055,
+          "skill_positive": 0.8725615575334792,
+          "frame_present": 0.6484807253003222,
+          "correct_expression": 0.16212018132508055,
+          "ratified": 0.6484807253003222,
+          "ratified_but_violating": 0.4863605439752417,
+          "expected_skill": 1.5187579573898593
+        },
+        {
+          "round": 11,
+          "plural_success": 0.16675868454709405,
+          "skill_positive": 0.8522909429376965,
+          "frame_present": 0.6670347381883764,
+          "correct_expression": 0.16675868454709405,
+          "ratified": 0.6670347381883764,
+          "ratified_but_violating": 0.5002760536412822,
+          "expected_skill": 1.4791014507983855
+        },
+        {
+          "round": 12,
+          "plural_success": 0.1679957075713466,
+          "skill_positive": 0.831742511960254,
+          "frame_present": 0.6719828302853865,
+          "correct_expression": 0.1679957075713466,
+          "ratified": 0.6719828302853865,
+          "ratified_but_violating": 0.5039871227140399,
+          "expected_skill": 1.4397487045851218
+        },
+        {
+          "round": 13,
+          "plural_success": 0.16722501253210126,
+          "skill_positive": 0.8110574893155315,
+          "frame_present": 0.6689000501284051,
+          "correct_expression": 0.16722501253210126,
+          "ratified": 0.6689000501284051,
+          "ratified_but_violating": 0.5016750375963039,
+          "expected_skill": 1.4008234961616537
+        },
+        {
+          "round": 14,
+          "plural_success": 0.16525731012115896,
+          "skill_positive": 0.7903529294430379,
+          "frame_present": 0.6610292404846362,
+          "correct_expression": 0.16525731012115896,
+          "ratified": 0.6610292404846362,
+          "ratified_but_violating": 0.49577193036347716,
+          "expected_skill": 1.3624259560837761
+        },
+        {
+          "round": 15,
+          "plural_success": 0.1625669265376675,
+          "skill_positive": 0.7697254316456732,
+          "frame_present": 0.6502677061506701,
+          "correct_expression": 0.1625669265376675,
+          "ratified": 0.6502677061506701,
+          "ratified_but_violating": 0.48770077961300273,
+          "expected_skill": 1.3246362674871894
+        },
+        {
+          "round": 16,
+          "plural_success": 0.15943576804080825,
+          "skill_positive": 0.7492542952693406,
+          "frame_present": 0.6377430721632333,
+          "correct_expression": 0.15943576804080825,
+          "ratified": 0.6377430721632333,
+          "ratified_but_violating": 0.4783073041224251,
+          "expected_skill": 1.287517806035611
+        },
+        {
+          "round": 17,
+          "plural_success": 0.15603524477630953,
+          "skill_positive": 0.7290041989983422,
+          "frame_present": 0.6241409791052385,
+          "correct_expression": 0.15603524477630953,
+          "ratified": 0.6241409791052385,
+          "ratified_but_violating": 0.4681057343289289,
+          "expected_skill": 1.2511198044416245
+        },
+        {
+          "round": 18,
+          "plural_success": 0.1524726464184204,
+          "skill_positive": 0.7090274757274113,
+          "frame_present": 0.6098905856736819,
+          "correct_expression": 0.1524726464184204,
+          "ratified": 0.6098905856736819,
+          "ratified_but_violating": 0.45741793925526153,
+          "expected_skill": 1.2154796130073953
+        },
+        {
+          "round": 19,
+          "plural_success": 0.148817450024588,
+          "skill_positive": 0.6893660437497554,
+          "frame_present": 0.5952698000983522,
+          "correct_expression": 0.148817450024588,
+          "ratified": 0.5952698000983522,
+          "ratified_but_violating": 0.4464523500737644,
+          "expected_skill": 1.1806246169113397
+        },
+        {
+          "round": 20,
+          "plural_success": 0.1451163338051825,
+          "skill_positive": 0.6700530458873045,
+          "frame_present": 0.5804653352207303,
+          "correct_expression": 0.1451163338051825,
+          "ratified": 0.5804653352207303,
+          "ratified_but_violating": 0.4353490014155478,
+          "expected_skill": 1.1465738618540415
+        },
+        {
+          "round": 21,
+          "plural_success": 0.14140182766067916,
+          "skill_positive": 0.6511142404432209,
+          "frame_present": 0.5656073106427171,
+          "correct_expression": 0.14140182766067916,
+          "ratified": 0.5656073106427171,
+          "ratified_but_violating": 0.42420548298203786,
+          "expected_skill": 1.1133394319309555
+        },
+        {
+          "round": 22,
+          "plural_success": 0.13769736689417963,
+          "skill_positive": 0.6325691812725793,
+          "frame_present": 0.5507894675767189,
+          "correct_expression": 0.13769736689417963,
+          "ratified": 0.5507894675767189,
+          "ratified_but_violating": 0.4130921006825393,
+          "expected_skill": 1.0809276170156819
+        },
+        {
+          "round": 23,
+          "plural_success": 0.13402030204409576,
+          "skill_positive": 0.6144322186706588,
+          "frame_present": 0.5360812081763834,
+          "correct_expression": 0.13402030204409576,
+          "ratified": 0.5360812081763834,
+          "ratified_but_violating": 0.4020609061322876,
+          "expected_skill": 1.0493399013414684
+        },
+        {
+          "round": 24,
+          "plural_success": 0.13038373810108056,
+          "skill_positive": 0.5967133480213572,
+          "frame_present": 0.5215349524043227,
+          "correct_expression": 0.13038373810108056,
+          "ratified": 0.5215349524043227,
+          "ratified_but_violating": 0.3911512143032422,
+          "expected_skill": 1.0185738002120426
+        },
+        {
+          "round": 25,
+          "plural_success": 0.12679769556029055,
+          "skill_positive": 0.579418929104912,
+          "frame_present": 0.5071907822411627,
+          "correct_expression": 0.12679769556029055,
+          "ratified": 0.5071907822411627,
+          "ratified_but_violating": 0.3803930866808721,
+          "expected_skill": 0.9886235677298768
+        }
+      ],
+      "max_mass_error": 1.887379141862766e-15
+    }
+  }
+}

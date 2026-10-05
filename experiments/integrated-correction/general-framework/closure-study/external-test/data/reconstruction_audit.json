@@ -1,0 +1,17 @@
+{
+  "n_samples": 368,
+  "n_original_taxa": 16808,
+  "n_fixed_eligible_taxa": 13898,
+  "n_globally_retained_taxa": 3310,
+  "original_replication_error": {
+    "mcn_max_abs": 2.4868995751603507e-14,
+    "shannon_max_abs": 1.5987211554602254e-14
+  },
+  "per_sample_max_feature_change": {
+    "mcn": 0.22161104284774424,
+    "shannon": 0.7137372963878144
+  },
+  "protocol_repair_sha256": "61a945c5cc6394f2e26f0cb40d00aeb81dd38e4aabc03ff32362e202837eabcb",
+  "reconstruction_code_sha256": "f4b80acdc8d0996f0b96efc09c83742b329beb0eb25c6bc6af614d8045c6180c",
+  "rdata_version": "1.1.0"
+}

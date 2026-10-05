@@ -1,0 +1,118 @@
+{
+  "schema_version": "active-inquiry-v2.1",
+  "shared_instructions": "Each case is independent. The hidden world is sampled from the listed prior. You know the full model below but not the selected world. At each turn choose exactly one listed query ID or terminal action ID. A query returns only its listed response in the hidden world. Queries are deterministic, may not be repeated, and at most two may be used. All listed prerequisite queries must already have been completed. A terminal action ends the case. All fees and residual losses use loss units; one cash unit pays one fee unit. Minimize expected total loss: all query fees plus terminal action fee plus world-dependent residual loss. Cash budget covers upfront query and action fees only, not residual loss. Durations add sequentially, and the terminal action must finish by the deadline. Time has no additional loss charge. A choice is feasible only if it fits remaining cash and time and satisfies query limits and prerequisites. The fallback always costs zero cash and time. No external tools or evidence are available. Tables give values in world order. Fractions are exact. All worlds, responses, fees and losses are specified.",
+  "cases": [
+    {
+      "case_id": "A01",
+      "statement": "World order: w00, w01, w10, w11. Prior: w00:1/4, w01:1/4, w10:1/4, w11:1/4.\nCash budget: 10; deadline: 5 time units; maximum queries: 2.\nQuery table: ID | fee | duration | prerequisites | responses in world order.\nshare_a | 1 | 1 | none | 0, 1, 0, 1\nshare_b | 1 | 1 | none | 0, 1, 1, 0\nstatus | 1/2 | 1 | none | ready, ready, ready, ready\nTerminal action table: ID | fee | duration | residual losses in world order.\nchoose_0 | 1 | 1 | 0, 0, 12, 12\nchoose_1 | 1 | 1 | 12, 12, 0, 0\nfallback | 0 | 0 | 8, 8, 8, 8",
+      "query_ids": [
+        "share_a",
+        "share_b",
+        "status"
+      ],
+      "action_ids": [
+        "choose_0",
+        "choose_1",
+        "fallback"
+      ],
+      "budgets": {
+        "max_queries": 2,
+        "cash_budget": "10",
+        "deadline": 5
+      }
+    },
+    {
+      "case_id": "A02",
+      "statement": "World order: w00, w01, w10, w11. Prior: w00:1/4, w01:1/4, w10:1/4, w11:1/4.\nCash budget: 10; deadline: 5 time units; maximum queries: 2.\nQuery table: ID | fee | duration | prerequisites | responses in world order.\nshare_a | 4 | 1 | none | 0, 1, 0, 1\nshare_b | 4 | 1 | none | 0, 1, 1, 0\nstatus | 1/2 | 1 | none | ready, ready, ready, ready\nTerminal action table: ID | fee | duration | residual losses in world order.\nchoose_0 | 1 | 1 | 0, 0, 12, 12\nchoose_1 | 1 | 1 | 12, 12, 0, 0\nfallback | 0 | 0 | 8, 8, 8, 8",
+      "query_ids": [
+        "share_a",
+        "share_b",
+        "status"
+      ],
+      "action_ids": [
+        "choose_0",
+        "choose_1",
+        "fallback"
+      ],
+      "budgets": {
+        "max_queries": 2,
+        "cash_budget": "10",
+        "deadline": 5
+      }
+    },
+    {
+      "case_id": "A03",
+      "statement": "World order: fault_0, fault_1. Prior: fault_0:1/2, fault_1:1/2.\nCash budget: 4; deadline: 6 time units; maximum queries: 2.\nQuery table: ID | fee | duration | prerequisites | responses in world order.\nopen_panel | 1 | 1 | none | opened, opened\ndiagnose | 1 | 2 | open_panel | fault_0, fault_1\nstatus | 1/2 | 1 | none | online, online\nTerminal action table: ID | fee | duration | residual losses in world order.\nrepair_0 | 1 | 3 | 0, 20\nrepair_1 | 1 | 3 | 20, 0\nfallback | 0 | 0 | 8, 8",
+      "query_ids": [
+        "open_panel",
+        "diagnose",
+        "status"
+      ],
+      "action_ids": [
+        "repair_0",
+        "repair_1",
+        "fallback"
+      ],
+      "budgets": {
+        "max_queries": 2,
+        "cash_budget": "4",
+        "deadline": 6
+      }
+    },
+    {
+      "case_id": "A04",
+      "statement": "World order: fault_0, fault_1. Prior: fault_0:1/2, fault_1:1/2.\nCash budget: 4; deadline: 5 time units; maximum queries: 2.\nQuery table: ID | fee | duration | prerequisites | responses in world order.\nopen_panel | 1 | 1 | none | opened, opened\ndiagnose | 1 | 2 | open_panel | fault_0, fault_1\nstatus | 1/2 | 1 | none | online, online\nTerminal action table: ID | fee | duration | residual losses in world order.\nrepair_0 | 1 | 3 | 0, 20\nrepair_1 | 1 | 3 | 20, 0\nfallback | 0 | 0 | 8, 8",
+      "query_ids": [
+        "open_panel",
+        "diagnose",
+        "status"
+      ],
+      "action_ids": [
+        "repair_0",
+        "repair_1",
+        "fallback"
+      ],
+      "budgets": {
+        "max_queries": 2,
+        "cash_budget": "4",
+        "deadline": 5
+      }
+    },
+    {
+      "case_id": "A05",
+      "statement": "World order: state_0, state_1. Prior: state_0:1/2, state_1:1/2.\nCash budget: 4; deadline: 3 time units; maximum queries: 2.\nQuery table: ID | fee | duration | prerequisites | responses in world order.\ninspect | 1 | 1 | none | state_0, state_1\nstatus | 1/2 | 1 | none | calibrated, calibrated\nTerminal action table: ID | fee | duration | residual losses in world order.\noption_a | 1 | 1 | 0, 8\noption_b | 1 | 1 | 6, 9\nfallback | 0 | 0 | 10, 10",
+      "query_ids": [
+        "inspect",
+        "status"
+      ],
+      "action_ids": [
+        "option_a",
+        "option_b",
+        "fallback"
+      ],
+      "budgets": {
+        "max_queries": 2,
+        "cash_budget": "4",
+        "deadline": 3
+      }
+    },
+    {
+      "case_id": "A06",
+      "statement": "World order: state_0, state_1. Prior: state_0:1/2, state_1:1/2.\nCash budget: 4; deadline: 3 time units; maximum queries: 2.\nQuery table: ID | fee | duration | prerequisites | responses in world order.\ninspect | 1 | 1 | none | state_0, state_1\nstatus | 1/2 | 1 | none | calibrated, calibrated\nTerminal action table: ID | fee | duration | residual losses in world order.\noption_a | 1 | 1 | 0, 8\noption_b | 1 | 1 | 6, 0\nfallback | 0 | 0 | 10, 10",
+      "query_ids": [
+        "inspect",
+        "status"
+      ],
+      "action_ids": [
+        "option_a",
+        "option_b",
+        "fallback"
+      ],
+      "budgets": {
+        "max_queries": 2,
+        "cash_budget": "4",
+        "deadline": 3
+      }
+    }
+  ]
+}

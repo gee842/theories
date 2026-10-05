@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "case_count": 12,
+  "matched_pair_count": 6,
+  "answer_key_balanced": true,
+  "one_retain_one_revise_per_pair": true,
+  "public_cases_contain_no_answer_or_family_fields": true,
+  "finite_arithmetic_checks_passed": true,
+  "public_text_words": 1592,
+  "key_text_words": 360,
+  "combined_text_words": 1952,
+  "scope_endpoint_case_count": 4,
+  "limits": [
+    "Synthetic pilot only; no empirical difficulty or reliability calibration.",
+    "Two-law sufficiency is decision sufficiency, not identification of a unique expected loss.",
+    "Choices combine conclusions and warrants; scoring must evaluate the entire option."
+  ]
+}

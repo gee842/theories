@@ -1,0 +1,545 @@
+{
+  "date": "2026-10-05",
+  "title": "Generative foundation and canonical representation review package",
+  "primary": "OPTIMAL-FOUNDATION.md",
+  "alternative": "FOUNDATION.md",
+  "original": "FOUNDATION-ALTERNATIVE-ORIGINAL.md",
+  "status": "Specialist-review drafts with conditional representational optimality; internal AI audits completed.",
+  "hash_algorithm": "SHA-256",
+  "self_hash_excluded": true,
+  "package_files": [
+    {
+      "path": "DOCUMENT-CHECKS.json",
+      "sha256": "2c385e150883b48998d3b19fcb3fd511c38c3669bd1417ea964a6fca8e39e4fb",
+      "bytes": 10440
+    },
+    {
+      "path": "FOUNDATION-ALTERNATIVE-ORIGINAL.md",
+      "sha256": "91efaed68a9746e8213437a810a6bb9b0864a572467a9956010fe2711cb92460",
+      "bytes": 100820
+    },
+    {
+      "path": "FOUNDATION.md",
+      "sha256": "8c5300583be10348c86a0e716c2fe953baa9f84cdddb0869ceb689fb02c905b4",
+      "bytes": 101611
+    },
+    {
+      "path": "OPTIMAL-FOUNDATION.md",
+      "sha256": "6e0b601d3fa2c49515bbb35ee4a0fed4d19f36f7bb1ce57b3c2133e81ba38ac6",
+      "bytes": 30685
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "b4fa3baed68d576a55800b80e1b67b7f9f0184c1f2921746545ca1bb78a9cca3",
+      "bytes": 8146
+    },
+    {
+      "path": "final-synthesis/ADAPTIVE-OPTIMUM.md",
+      "sha256": "5762f4bed293cc87c19634e367225f3ab18fcbe756c57980b9a04cc7411ce2b7",
+      "bytes": 21753
+    },
+    {
+      "path": "final-synthesis/COMPOSITION-AND-SCOPE.md",
+      "sha256": "a6f7c29d9ba988459e5429a3777a714f1f75ca4ba2f8f2d801b186dc563152f5",
+      "bytes": 11414
+    },
+    {
+      "path": "final-synthesis/DOCUMENT-CHECKS.json",
+      "sha256": "6d0204207a528a1681d518989a9431fabaaa711b72a2ef7566dea510dd26113e",
+      "bytes": 14070
+    },
+    {
+      "path": "final-synthesis/EXACT-CHECKS.json",
+      "sha256": "6d3a7261dedc62d6bf4e50591d4bc86a0bfa3f85c0cd696381ffa1b4551e2d5a",
+      "bytes": 2226
+    },
+    {
+      "path": "final-synthesis/IDENTIFICATION-AND-VALUE.md",
+      "sha256": "ab48e5d611814d1b1d2d4dea5c85be565dffa7067babf07bb4d3b26c9363b9f8",
+      "bytes": 30160
+    },
+    {
+      "path": "final-synthesis/INTEGRATED-THEORY.md",
+      "sha256": "d32f93afeff3a3c45352642abedc4d360ca0a8739cedaa12b37792b3d8771c16",
+      "bytes": 27344
+    },
+    {
+      "path": "final-synthesis/INTEGRATION-REVIEW.md",
+      "sha256": "e4cd95f1672fb4a645e1b3d9f72eaf84ab9b09e2aaa9566d6b9329987aa5907c",
+      "bytes": 12073
+    },
+    {
+      "path": "final-synthesis/MANIFEST.json",
+      "sha256": "84c05fa4af5a2779c3cb1f84270c6a028b87d02902e689eab476380a597c8b1e",
+      "bytes": 4481
+    },
+    {
+      "path": "final-synthesis/MATHEMATICAL-REVIEW.md",
+      "sha256": "bf7536dc0da7ef71f353240ef2d70550894ecc00a551dd7b35064b41b6d01148",
+      "bytes": 6271
+    },
+    {
+      "path": "final-synthesis/MECHANISM-MATH.md",
+      "sha256": "f57310d7e018154d28108c2d24ba00b6afb0f041d2996bf50ded797d3e6246e3",
+      "bytes": 26587
+    },
+    {
+      "path": "final-synthesis/NUMERICAL-CHECKS.json",
+      "sha256": "690d65230161f27ca4c1d0dcbd1d6297c425547756d096afeae491674537208a",
+      "bytes": 701
+    },
+    {
+      "path": "final-synthesis/README.md",
+      "sha256": "a1a501e830eedf7fc5155faa058bfa996f85774ead7b9f4c55ea579aa6d0913a",
+      "bytes": 3191
+    },
+    {
+      "path": "final-synthesis/check_documents.py",
+      "sha256": "7ba619afeb175d706090a516b9b2c2e024e3de8adbed7af3241d47143c10edc4",
+      "bytes": 4946
+    },
+    {
+      "path": "final-synthesis/plot_and_check_mechanism.py",
+      "sha256": "e8772a9a667a12e6fd42d256275e3b55a20cd519c9d8f11668fff84ddccfd2f5",
+      "bytes": 3764
+    },
+    {
+      "path": "final-synthesis/renewal-tradeoff.png",
+      "sha256": "69c8470f25c92b74a6a01301a447f896f2e1432ecfc985c5d1bf3acbd628eb88",
+      "bytes": 149880
+    },
+    {
+      "path": "final-synthesis/renewal-tradeoff.svg",
+      "sha256": "cf2c37f4e45e9eef78162c7e1c446491370e260d4213a39721c92374b2875475",
+      "bytes": 84122
+    },
+    {
+      "path": "final-synthesis/verify_synthesis.py",
+      "sha256": "eccd36ce29980c7478f614516a7b7494665c8fb34b9966f311b0f995b4e4dc8d",
+      "bytes": 8228
+    },
+    {
+      "path": "foundation-assessment/ASSESSMENT.md",
+      "sha256": "53efae37fb43b724a7fe0a8fcb410f97a07d97996c1f9b0235747fffec18a227",
+      "bytes": 14650
+    },
+    {
+      "path": "foundation-assessment/DOCUMENT-CHECKS.json",
+      "sha256": "a1b267f1122c64cffb8c71611f190482792f7b90c1ef14fc35102f2c10070a3e",
+      "bytes": 10021
+    },
+    {
+      "path": "foundation-assessment/INDEPENDENT-CHECKS.json",
+      "sha256": "0cca4a76969988e79ff597bcf5da207b97bcac8a26502588b24411e78a65ddd8",
+      "bytes": 3240
+    },
+    {
+      "path": "foundation-assessment/MANIFEST.json",
+      "sha256": "7da2e832b069e0cb2fa635ab842fdd4c95a370aaea4e3611003d71be1ccace4e",
+      "bytes": 4564
+    },
+    {
+      "path": "foundation-assessment/MEASURED-COMPARISON.md",
+      "sha256": "fc97595c0a402f6d6e5a48c6c80f6462549b756ad087d5b5d6c400e8dd985aaf",
+      "bytes": 18203
+    },
+    {
+      "path": "foundation-assessment/ORIGINALITY.md",
+      "sha256": "95f8fdb36feae4ae2f897208e2106fc734f480dae2d6565412429bf8f6ad63b5",
+      "bytes": 37407
+    },
+    {
+      "path": "foundation-assessment/PHYSICAL-COVERAGE.md",
+      "sha256": "ffd3f7445e6c95a5787cc5b26cc68011578d46571a8bca3dcf3d79b2a4b95153",
+      "bytes": 28709
+    },
+    {
+      "path": "foundation-assessment/README.md",
+      "sha256": "2566d335d85df48dd0ed06dafb02f20763a6e83a00234aaabfc71f4e288af895",
+      "bytes": 1461
+    },
+    {
+      "path": "foundation-assessment/REVIEW-MEASURED.md",
+      "sha256": "7f8c06179f23930b3602c1634607faa0c13fe1e1cc3a392fc2ba8513a91232f1",
+      "bytes": 5158
+    },
+    {
+      "path": "foundation-assessment/REVIEW-PHYSICAL.md",
+      "sha256": "d9b00e41e7ce3aa7bdc4acacd32cceeb4836823b18e5f77931b6d60dd9c11f6d",
+      "bytes": 8892
+    },
+    {
+      "path": "foundation-assessment/benchmark/PROTOCOL.md",
+      "sha256": "4858ec20a8a1d194d51b3c0d72d6c043f563e4370972791dfbad0dbd4f596e66",
+      "bytes": 6728
+    },
+    {
+      "path": "foundation-assessment/benchmark/VERIFICATION.json",
+      "sha256": "1fa609b9c4fe26cc9d835591b50f7b3227414336b45453f70eb1d7066032203f",
+      "bytes": 6520
+    },
+    {
+      "path": "foundation-assessment/benchmark/analysis.json",
+      "sha256": "0953bb540fe830ae46c06f474261fed80c0e595a31a69b4c6ad9aec0b0957945",
+      "bytes": 336135
+    },
+    {
+      "path": "foundation-assessment/benchmark/analyze.py",
+      "sha256": "6f0fe4b660e81ef47fd2ab1072ea003f79518277e34314fefc713a12a356eabd",
+      "bytes": 9564
+    },
+    {
+      "path": "foundation-assessment/benchmark/paired_source_errors.csv",
+      "sha256": "7bb8161116381e5248856c66ed7c73e94e006c2930970df9d51bfd2a0e3a0d1e",
+      "bytes": 481
+    },
+    {
+      "path": "foundation-assessment/benchmark/predictions.csv",
+      "sha256": "2a73f6b4fb73fecd4bb7dfb6d62060d58187a96d71c7105edb60be76363b6f63",
+      "bytes": 6218
+    },
+    {
+      "path": "foundation-assessment/benchmark/verify_outputs.py",
+      "sha256": "16e98911ecc23f2f509fcfffec1f1d6827f4579a92652301cb6ed7c09b88cb46",
+      "bytes": 3761
+    },
+    {
+      "path": "foundation-assessment/check_documents.py",
+      "sha256": "2c8a142ba68f44f2ff351ca879c8ad5af8c072d8ccdf04ea991ef2f6415b2a5f",
+      "bytes": 4765
+    },
+    {
+      "path": "foundation-assessment/verify_assessment.py",
+      "sha256": "cf6105f0766a4526f63f4f4e2c39feb9fea6eca035c7031001e1d59c00a95160",
+      "bytes": 6476
+    },
+    {
+      "path": "optimal-foundation/ADVERSARIAL.md",
+      "sha256": "b583f93de14b7c54cb649033e858d2601e14536ca492448c2aabb602d708ed39",
+      "bytes": 21880
+    },
+    {
+      "path": "optimal-foundation/EXACT-CHECKS.json",
+      "sha256": "bf6256d7f561d17db793888693d37bb8136f7165313d88a279f3073e08a9d75b",
+      "bytes": 1331
+    },
+    {
+      "path": "optimal-foundation/FOUNDATIONS-PRIOR-ART.md",
+      "sha256": "466da6366525d32228405bdf7b481a5ab7470158e1b9c31b6d361dd0aac8ac46",
+      "bytes": 17901
+    },
+    {
+      "path": "optimal-foundation/MATHEMATICS.md",
+      "sha256": "84cc3a0bcc1f0229d46aba2c5e365f24daaea178041a1ec4d49d874658ac8c4b",
+      "bytes": 33877
+    },
+    {
+      "path": "optimal-foundation/OPTIMAL-ADVERSARIAL-REVIEW.md",
+      "sha256": "ec0099d9fef86127bd88adc61a27dbacf99160a293898a475864cb88d846eca5",
+      "bytes": 8594
+    },
+    {
+      "path": "optimal-foundation/OPTIMAL-MATH-REVIEW.md",
+      "sha256": "f18a890472d5fb6bdc606092978356e512b0be2eb59bf92ce8f0aa9400270473",
+      "bytes": 7122
+    },
+    {
+      "path": "optimal-foundation/OPTIMAL-POSITIONING-REVIEW.md",
+      "sha256": "17ee6a54fe4e89198740d9a0d167e4676a6f8e2ec51b28752cb0c20f4dd2c925",
+      "bytes": 8400
+    },
+    {
+      "path": "optimal-foundation/verify_optimality.py",
+      "sha256": "f862ef3c73fdc1ba0a23aee57adee2d263c8265ff33fb438600a9a4347ee392a",
+      "bytes": 4908
+    },
+    {
+      "path": "review-support/COVERAGE-MEMO.md",
+      "sha256": "d1e9878537d11424afd1092f862ec9ede55a39d42473275245d12f58bd3ba44c",
+      "bytes": 37421
+    },
+    {
+      "path": "review-support/COVERAGE-REVIEW.md",
+      "sha256": "9ba1a8c15406b61901d7db530cae2eaa59da68482237692bbf44debd351e93da",
+      "bytes": 8820
+    },
+    {
+      "path": "review-support/MATH-MEMO.md",
+      "sha256": "952bc99f6dfaf4869866ef3653ba926938935340d98659ba7b9397b319b486e9",
+      "bytes": 24836
+    },
+    {
+      "path": "review-support/MATH-REVIEW.md",
+      "sha256": "405b49b58f1541c5136d8fda7195e71381b9ba027f84eab24e5b442286e48a96",
+      "bytes": 5374
+    },
+    {
+      "path": "review-support/POSITIONING-MEMO.md",
+      "sha256": "88ca2b2fececc50aabbb5551ff1924b667b9a5da944c2a2f1da68a34985a3710",
+      "bytes": 15865
+    },
+    {
+      "path": "review-support/POSITIONING-REVIEW.md",
+      "sha256": "9bfa759ce7c58ab597bc06fb8c474daaf0c77a1362ccfe2ddf80a66dff158783",
+      "bytes": 6379
+    },
+    {
+      "path": "root-foundation/DOCUMENT-CHECKS.json",
+      "sha256": "16baf6fe7bb66bdbfd46599e3b9fbe8dc32ff3326262c3c5857acf9a73c01f7f",
+      "bytes": 9680
+    },
+    {
+      "path": "root-foundation/EXACT-CHECKS.json",
+      "sha256": "d7b372c3e12137993430231a8520a9b6226b864ea7b34e90e9c3ddf12bb57e51",
+      "bytes": 5885
+    },
+    {
+      "path": "root-foundation/FIGURE-CHECKS.json",
+      "sha256": "49adb1bcd101e114612780e1d20a0158d237102fdb44f903e4557837f41c3e4b",
+      "bytes": 924
+    },
+    {
+      "path": "root-foundation/INFORMATION-AND-RENEWAL.md",
+      "sha256": "a34183db8678140b0d8b5fe2bc7280502c214a4fadea2dcf3de1019b935b5281",
+      "bytes": 20946
+    },
+    {
+      "path": "root-foundation/INVARIANCE-AND-PRIOR-ART.md",
+      "sha256": "8b563ee0c684d4a17b034aa2fa3a7f6a256c59095ac6da9260bd26a7f9abc833",
+      "bytes": 22461
+    },
+    {
+      "path": "root-foundation/MANIFEST.json",
+      "sha256": "6427321f9055588276e46787bccef9f4529ad5c774e384f1e1555f7e43df1d17",
+      "bytes": 4180
+    },
+    {
+      "path": "root-foundation/PLURAL-CAPACITY.md",
+      "sha256": "e783435646f0066769224b727ad66aa6d58a699062597726d6de368cf3bf7de5",
+      "bytes": 11957
+    },
+    {
+      "path": "root-foundation/README.md",
+      "sha256": "b326c549e345d8a90b5832591ad8fbb3069859764560fd581fcf553e3890ece9",
+      "bytes": 7175
+    },
+    {
+      "path": "root-foundation/REVIEW-EPISTEMIC.md",
+      "sha256": "9092004d92b510b8b6df4fe0294f71843d62c90b6448e6af7a6aeebb11062605",
+      "bytes": 8689
+    },
+    {
+      "path": "root-foundation/REVIEW-INVARIANCE.md",
+      "sha256": "3cb38d8e1f7eb729d782d95e557b1a501d8e6d8b85a29abe0f27ff801c9f4324",
+      "bytes": 9782
+    },
+    {
+      "path": "root-foundation/REVIEW-TURNOVER.md",
+      "sha256": "0b4d860c8eefd4455b6580d68ad3a8993640cd734720a575c43ec9ced2df1df0",
+      "bytes": 8017
+    },
+    {
+      "path": "root-foundation/ROOT-FOUNDATION.md",
+      "sha256": "e2ef0b5edfe7766bcf857582e077c97885b6bdd91158ce6f05d8c0c879d81c5a",
+      "bytes": 28048
+    },
+    {
+      "path": "root-foundation/TURNOVER-AND-CLOSURE.md",
+      "sha256": "a35feb39fc56d738b029f7392049c08d9c8e1da8cb31fcbcb93f6952dc624461",
+      "bytes": 20650
+    },
+    {
+      "path": "root-foundation/check_documents.py",
+      "sha256": "7922decf489cfb7cf16efd02e00451bf39c3ce3f3b279fb03dc420de8f0be07a",
+      "bytes": 5303
+    },
+    {
+      "path": "root-foundation/continuous-readiness.png",
+      "sha256": "b92e9dc0fb1a36a7308c6f5cd7bf52b4d6a6d3b99fa1269795971c1d3d32c29f",
+      "bytes": 210641
+    },
+    {
+      "path": "root-foundation/continuous-readiness.svg",
+      "sha256": "d53da429ef0168ca0d40fecaa48c28215a8b5a867227de4c556fad94a8beaaa8",
+      "bytes": 107160
+    },
+    {
+      "path": "root-foundation/plot_readiness.py",
+      "sha256": "897eb1c5848904e9832f71d485d0e0ce45833f889019f1474f8d56f05c194274",
+      "bytes": 4327
+    },
+    {
+      "path": "root-foundation/verify_root.py",
+      "sha256": "ac9cf4d082c39d7d8de2f2b1c4423ab8ca14ff9bb0481f0953c8bcbb0d989a69",
+      "bytes": 10788
+    }
+  ],
+  "direct_dossier_inputs": [
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/CLAIMS.md",
+      "sha256": "1ccb5807cdb71c2b9200804399187be8959a9c02135b4aa7c573dd2c996c8cc5",
+      "bytes": 62398
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/candidate-discovery-math.md",
+      "sha256": "c5eb3323656fbcdfa75aab864fbee7c8e4d0637fc2d36e1f988d394c3a32ae54",
+      "bytes": 23155
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/continuing-participation-math.md",
+      "sha256": "eabead8081283fc49514f722c3ee6d79d1181f6043571026745c126d684a544e",
+      "bytes": 21431
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/endogenous-renewal-math.md",
+      "sha256": "f98c64e0c0c1ac5c9055255199865d926e98c81d06a314f993e0328a94b9854e",
+      "bytes": 19327
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/inquiry-renewal-math.md",
+      "sha256": "aad7ed2ace67573eb14e0dcd5898d620399d6fc142247adafb39444833818a1d",
+      "bytes": 20297
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/integrated-dynamics.md",
+      "sha256": "267013db59bcca74f9bfd2c88e374cf1884774a4fe7696cef3a9cc48187ca581",
+      "bytes": 15052
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/model-revision-inheritance-math.md",
+      "sha256": "fe30a7ee2e0d025be858156349d3f884472931465a1fffa7a64114a0a6883777",
+      "bytes": 27854
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/observability-and-correction.md",
+      "sha256": "b600427f9db74393d8cae95b9f2f0e3163237fc4d861b92a0a7e52cdf5487b62",
+      "bytes": 21252
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/plural-correction-math.md",
+      "sha256": "3b21d17e3979a58fb7110afb72917af0de7aca020b39ae83bfa57340fb1fd7b6",
+      "bytes": 19674
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/practice-transmission-model.md",
+      "sha256": "17d6fc1fa1dcdd9f59570368d1b6727e0462dd1d5934b0be4d361ba30ce57a3b",
+      "bytes": 10555
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/prospective-revision-math.md",
+      "sha256": "751b57560cfab36d19a3d9ee775e5b1bb285c06adfa37c4cbceb39a7eefe90ed",
+      "bytes": 22194
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/recoverable-inquiry-math.md",
+      "sha256": "7f4295f59cdf10582ffbc21d00b904c6dd81d7054de2341d2a76ef3612953a4c",
+      "bytes": 23672
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/recurrent-inquiry-math.md",
+      "sha256": "cdf184088c5bc20e8a5e345889b45cf90364674f0d8281b3e53dfa501c097f9c",
+      "bytes": 24538
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/replacement-and-establishment.md",
+      "sha256": "9cfa52d71803ad25f0706cdf8d2755ddc2a6731b7ead3c90187a64cd4b218030",
+      "bytes": 18688
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/selection-of-renewal.md",
+      "sha256": "ee01dd61c5ad77a87df978951281882370cadfe42f0a9c1dfdb29614c53d4c7a",
+      "bytes": 17688
+    },
+    {
+      "repository_path": "_process/research/2026-10-04-integrated-evolution/situated-frame-math-audit.md",
+      "sha256": "f0efc94039f3fa8465985759045de345adf8dbce84d7b72e40619a147ce5d7bf",
+      "bytes": 19463
+    },
+    {
+      "repository_path": "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/core/40_s4.md",
+      "sha256": "a748946a2543cb07d0dd9a568872db19cabf60024d0514b8dd14e5dc7295b656",
+      "bytes": 31808
+    },
+    {
+      "repository_path": "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/04_S4.md",
+      "sha256": "c67459d3db37816cd3946fcd77db3e28c57be898b377e52706f6b92466fe2e2c",
+      "bytes": 39896
+    },
+    {
+      "repository_path": "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/16_S16.md",
+      "sha256": "621d2c65fd96c0c459a37bc29ed6a9431fa363d894a763414bfca3d02abc9f3e",
+      "bytes": 9907
+    },
+    {
+      "repository_path": "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/17_S17.md",
+      "sha256": "c663e8ffe50a2becb94bb3ed53a9ecb0b42faa5cbcb52123b414debdaa7d66ce",
+      "bytes": 10685
+    },
+    {
+      "repository_path": "experiments/integrated-correction/general-framework/closure-study/FORMAL.md",
+      "sha256": "c271e8296909e93a53ebe1096d6fcb771c39a589fde4fc87072979b5ff57155b",
+      "bytes": 28077
+    },
+    {
+      "repository_path": "experiments/integrated-correction/general-framework/gap-resolution/FORMATION.md",
+      "sha256": "bf2d7c1a8d99fb1bc0eac831d7fbb68043a45d2743f796cef65337f3dd375241",
+      "bytes": 18481
+    },
+    {
+      "repository_path": "experiments/integrated-correction/general-framework/gap-resolution/formation-coupled/REOPENING-RESULTS.md",
+      "sha256": "2130d9a633307952aad831b2cde9625c3314f8268f1d8fe1e8b2a8b195001c18",
+      "bytes": 7856
+    },
+    {
+      "repository_path": "experiments/integrated-correction/general-framework/gap-resolution/formation-coupled/RESULTS.md",
+      "sha256": "eeb49612fc13d88c661d16495da2c1b975249374d1916a0231cd34905dda09f9",
+      "bytes": 9012
+    },
+    {
+      "repository_path": "experiments/integrated-correction/general-framework/generative-basis/checks/RESULTS.md",
+      "sha256": "d0a9d665d97bd30b13567fd7b542ec83461d285b233c93c3bcc09d41aa429290",
+      "bytes": 4599
+    },
+    {
+      "repository_path": "experiments/integrated-correction/general-framework/generative-basis/formal/FORMAL.md",
+      "sha256": "88ab9787ca40b6c12f9997793ee0285d2602855127380caa99ef44624ea0ca0a",
+      "bytes": 25477
+    },
+    {
+      "repository_path": "experiments/integrated-correction/general-framework/generative-basis/formal/STRUCTURAL-CLOSURE.md",
+      "sha256": "5293ac3553462256cd38521f4f87d7a45cddef7a65d02df6d68f5aa3992e325a",
+      "bytes": 18289
+    },
+    {
+      "repository_path": "experiments/integrated-correction/general-framework/reproduction-test/README.md",
+      "sha256": "bc9ce275e1fbb828d5f6dcbf0815d6a2c4a0d13f35515bfd99fdbaccdd1f2eec",
+      "bytes": 14776
+    },
+    {
+      "repository_path": "sources/06-zhishan/shengsheng/生生不息论v2/PLAN-v2.md",
+      "sha256": "e5499c4dfbb387f65bab53a465ff953631d35c997995d3efc4615f7d0a0bf94d",
+      "bytes": 39381
+    },
+    {
+      "repository_path": "sources/07-shengsheng-buxi/downloads-2026-07-08/2026-08-09-生生不息论-证明篇-v0.6.md",
+      "sha256": "10b7d4d14d63e58a926370f515c48f086b78eba5a3e737fad1931026d97a52ca",
+      "bytes": 29851
+    },
+    {
+      "repository_path": "sources/15-codex-theory-conversations/2026-10-04-universal-constraints-and-maintained-correction.md",
+      "sha256": "e9245aaf5a7483c515ec615d6e2ce75b932f549dae7cc8bea8223a284bc9b363",
+      "bytes": 18589
+    },
+    {
+      "repository_path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "sha256": "8a68e15bacf3c9af6e0f0757e59133fca24367051ff0042b5acfd0ba5ad332a1",
+      "bytes": 411101
+    }
+  ],
+  "integrated_synthesis": "final-synthesis/INTEGRATED-THEORY.md",
+  "integrated_status": "Conditional mathematical synthesis, constructed checks, and unrun empirical validation specification.",
+  "root_foundation": "root-foundation/ROOT-FOUNDATION.md",
+  "root_status": "Conditional mathematical development with resolved internal cross-reviews and constructed checks.",
+  "foundation_assessment": "foundation-assessment/ASSESSMENT.md",
+  "assessment_status": "Scope and originality audit; stochastic extension; measured primary predictive gain absent."
+}

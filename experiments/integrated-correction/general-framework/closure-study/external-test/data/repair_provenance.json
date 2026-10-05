@@ -1,0 +1,30 @@
+{
+  "protocol_repair_sha256": "61a945c5cc6394f2e26f0cb40d00aeb81dd38e4aabc03ff32362e202837eabcb",
+  "retrieved_utc": "2026-10-04T20:25:18.668592+00:00",
+  "files": [
+    {
+      "file": "data/1_community_experiment/seqtab.nochim.rds",
+      "url": "https://raw.githubusercontent.com/JSHuisman/salinity/f14abee9d5e2d015deead102c04ea4d3030a5788/data/1_community_experiment/seqtab.nochim.rds",
+      "sha256": "a7c80038a352daf5df0650ae8d914fec1939aa41a71fdddd7fcbec968892230b",
+      "bytes": 1171106
+    },
+    {
+      "file": "data/1_community_experiment/taxa.rds",
+      "url": "https://raw.githubusercontent.com/JSHuisman/salinity/f14abee9d5e2d015deead102c04ea4d3030a5788/data/1_community_experiment/taxa.rds",
+      "sha256": "1489bd99b295a3c5223a3fc0c3e9fb2f905265c5b14df0189b0f065f122bcf6c",
+      "bytes": 1153254
+    },
+    {
+      "file": "data/1_community_experiment/metadata.csv",
+      "url": "https://raw.githubusercontent.com/JSHuisman/salinity/f14abee9d5e2d015deead102c04ea4d3030a5788/data/1_community_experiment/metadata.csv",
+      "sha256": "49456654b1b4864edcbfad020d9713ca74e322b907bbd27a98958aa1d7720231",
+      "bytes": 12128
+    },
+    {
+      "file": "data/1.2_isolates/rrnDB-5.8_pantaxa_stats_NCBI.tsv",
+      "url": "https://raw.githubusercontent.com/JSHuisman/salinity/f14abee9d5e2d015deead102c04ea4d3030a5788/data/1.2_isolates/rrnDB-5.8_pantaxa_stats_NCBI.tsv",
+      "sha256": "2e3ab0a7168c68c32a188740ec2a0ad2d6a2f91abc25c88d5b763453746b8196",
+      "bytes": 1188229
+    }
+  ]
+}

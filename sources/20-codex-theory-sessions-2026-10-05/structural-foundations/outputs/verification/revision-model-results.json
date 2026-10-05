@@ -1,0 +1,657 @@
+{
+  "status": "all assertions passed",
+  "model": "declared deterministic paid-revision toy model, perfect recall",
+  "threshold_cases_checked": 32,
+  "independent_policy_tree_cases_checked": 24,
+  "capacity_table": [
+    {
+      "archive": false,
+      "service": false,
+      "initial_reserve": 0,
+      "observation_robust_authorized": false,
+      "full_information_authorized": false,
+      "full_information_physical": false
+    },
+    {
+      "archive": false,
+      "service": false,
+      "initial_reserve": 1,
+      "observation_robust_authorized": false,
+      "full_information_authorized": false,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": false,
+      "initial_reserve": 2,
+      "observation_robust_authorized": false,
+      "full_information_authorized": false,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": false,
+      "initial_reserve": 3,
+      "observation_robust_authorized": false,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": false,
+      "initial_reserve": 4,
+      "observation_robust_authorized": false,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": false,
+      "initial_reserve": 5,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": false,
+      "initial_reserve": 6,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": false,
+      "initial_reserve": 7,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": true,
+      "initial_reserve": 0,
+      "observation_robust_authorized": false,
+      "full_information_authorized": false,
+      "full_information_physical": false
+    },
+    {
+      "archive": false,
+      "service": true,
+      "initial_reserve": 1,
+      "observation_robust_authorized": false,
+      "full_information_authorized": false,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": true,
+      "initial_reserve": 2,
+      "observation_robust_authorized": false,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": true,
+      "initial_reserve": 3,
+      "observation_robust_authorized": false,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": true,
+      "initial_reserve": 4,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": true,
+      "initial_reserve": 5,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": true,
+      "initial_reserve": 6,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": false,
+      "service": true,
+      "initial_reserve": 7,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": false,
+      "initial_reserve": 0,
+      "observation_robust_authorized": false,
+      "full_information_authorized": false,
+      "full_information_physical": false
+    },
+    {
+      "archive": true,
+      "service": false,
+      "initial_reserve": 1,
+      "observation_robust_authorized": false,
+      "full_information_authorized": false,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": false,
+      "initial_reserve": 2,
+      "observation_robust_authorized": false,
+      "full_information_authorized": false,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": false,
+      "initial_reserve": 3,
+      "observation_robust_authorized": false,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": false,
+      "initial_reserve": 4,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": false,
+      "initial_reserve": 5,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": false,
+      "initial_reserve": 6,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": false,
+      "initial_reserve": 7,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": true,
+      "initial_reserve": 0,
+      "observation_robust_authorized": false,
+      "full_information_authorized": false,
+      "full_information_physical": false
+    },
+    {
+      "archive": true,
+      "service": true,
+      "initial_reserve": 1,
+      "observation_robust_authorized": false,
+      "full_information_authorized": false,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": true,
+      "initial_reserve": 2,
+      "observation_robust_authorized": false,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": true,
+      "initial_reserve": 3,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": true,
+      "initial_reserve": 4,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": true,
+      "initial_reserve": 5,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": true,
+      "initial_reserve": 6,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    },
+    {
+      "archive": true,
+      "service": true,
+      "initial_reserve": 7,
+      "observation_robust_authorized": true,
+      "full_information_authorized": true,
+      "full_information_physical": true
+    }
+  ],
+  "initial_routine_cases": [
+    {
+      "initial_reserve": 1,
+      "residual_reserve": 0,
+      "robust_after_initial_routine": false
+    },
+    {
+      "initial_reserve": 2,
+      "residual_reserve": 1,
+      "robust_after_initial_routine": false
+    },
+    {
+      "initial_reserve": 3,
+      "residual_reserve": 2,
+      "robust_after_initial_routine": false
+    },
+    {
+      "initial_reserve": 4,
+      "residual_reserve": 3,
+      "robust_after_initial_routine": false
+    },
+    {
+      "initial_reserve": 5,
+      "residual_reserve": 4,
+      "robust_after_initial_routine": false
+    },
+    {
+      "initial_reserve": 6,
+      "residual_reserve": 5,
+      "robust_after_initial_routine": true
+    },
+    {
+      "initial_reserve": 7,
+      "residual_reserve": 6,
+      "robust_after_initial_routine": true
+    },
+    {
+      "initial_reserve": 8,
+      "residual_reserve": 7,
+      "robust_after_initial_routine": true
+    }
+  ],
+  "optimal_three_unit_witness": {
+    "action": "inspect",
+    "branches": [
+      {
+        "observation": [
+          2,
+          true,
+          true,
+          true,
+          0,
+          false,
+          "old"
+        ],
+        "then": {
+          "action": "authorize",
+          "branches": [
+            {
+              "observation": [
+                1,
+                true,
+                true,
+                true,
+                0,
+                true,
+                "old"
+              ],
+              "then": {
+                "action": "apply0",
+                "branches": [
+                  {
+                    "observation": [
+                      0,
+                      true,
+                      true,
+                      true,
+                      0,
+                      true,
+                      "renewed"
+                    ],
+                    "then": {
+                      "goal": true
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "observation": [
+          2,
+          true,
+          true,
+          true,
+          1,
+          false,
+          "old"
+        ],
+        "then": {
+          "action": "authorize",
+          "branches": [
+            {
+              "observation": [
+                1,
+                true,
+                true,
+                true,
+                1,
+                true,
+                "old"
+              ],
+              "then": {
+                "action": "apply1",
+                "branches": [
+                  {
+                    "observation": [
+                      0,
+                      true,
+                      true,
+                      true,
+                      1,
+                      true,
+                      "renewed"
+                    ],
+                    "then": {
+                      "goal": true
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "post_routine_six_unit_witness": {
+    "action": "test",
+    "branches": [
+      {
+        "observation": [
+          3,
+          false,
+          false,
+          true,
+          0,
+          false,
+          "old"
+        ],
+        "then": {
+          "action": "rebuild",
+          "branches": [
+            {
+              "observation": [
+                1,
+                false,
+                false,
+                true,
+                0,
+                true,
+                "old"
+              ],
+              "then": {
+                "action": "apply0",
+                "branches": [
+                  {
+                    "observation": [
+                      0,
+                      false,
+                      false,
+                      true,
+                      0,
+                      true,
+                      "renewed"
+                    ],
+                    "then": {
+                      "goal": true
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "observation": [
+          3,
+          false,
+          false,
+          true,
+          1,
+          false,
+          "old"
+        ],
+        "then": {
+          "action": "rebuild",
+          "branches": [
+            {
+              "observation": [
+                1,
+                false,
+                false,
+                true,
+                1,
+                true,
+                "old"
+              ],
+              "then": {
+                "action": "apply1",
+                "branches": [
+                  {
+                    "observation": [
+                      0,
+                      false,
+                      false,
+                      true,
+                      1,
+                      true,
+                      "renewed"
+                    ],
+                    "then": {
+                      "goal": true
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "recall_control": {
+    "archive_destroyed": true,
+    "diagnosis_retained": true
+  },
+  "concrete_reachability_checks": [
+    {
+      "reserve": 0,
+      "authorized": false,
+      "reachable_states": 2,
+      "edges": 0
+    },
+    {
+      "reserve": 0,
+      "authorized": true,
+      "reachable_states": 2,
+      "edges": 0
+    },
+    {
+      "reserve": 1,
+      "authorized": false,
+      "reachable_states": 12,
+      "edges": 10
+    },
+    {
+      "reserve": 1,
+      "authorized": true,
+      "reachable_states": 8,
+      "edges": 6
+    },
+    {
+      "reserve": 2,
+      "authorized": false,
+      "reachable_states": 34,
+      "edges": 40
+    },
+    {
+      "reserve": 2,
+      "authorized": true,
+      "reachable_states": 22,
+      "edges": 28
+    },
+    {
+      "reserve": 3,
+      "authorized": false,
+      "reachable_states": 66,
+      "edges": 94
+    },
+    {
+      "reserve": 3,
+      "authorized": true,
+      "reachable_states": 42,
+      "edges": 70
+    },
+    {
+      "reserve": 4,
+      "authorized": false,
+      "reachable_states": 104,
+      "edges": 162
+    },
+    {
+      "reserve": 4,
+      "authorized": true,
+      "reachable_states": 68,
+      "edges": 126
+    },
+    {
+      "reserve": 5,
+      "authorized": false,
+      "reachable_states": 146,
+      "edges": 240
+    },
+    {
+      "reserve": 5,
+      "authorized": true,
+      "reachable_states": 98,
+      "edges": 192
+    },
+    {
+      "reserve": 6,
+      "authorized": false,
+      "reachable_states": 188,
+      "edges": 322
+    },
+    {
+      "reserve": 6,
+      "authorized": true,
+      "reachable_states": 128,
+      "edges": 262
+    },
+    {
+      "reserve": 7,
+      "authorized": false,
+      "reachable_states": 230,
+      "edges": 404
+    },
+    {
+      "reserve": 7,
+      "authorized": true,
+      "reachable_states": 158,
+      "edges": 332
+    }
+  ],
+  "myopic_routine_trace": [
+    {
+      "reserve": 2,
+      "archive": false,
+      "service": false
+    },
+    {
+      "reserve": 1,
+      "archive": false,
+      "service": false
+    },
+    {
+      "reserve": 0,
+      "archive": false,
+      "service": false
+    }
+  ],
+  "resource_countermodels": {
+    "ledger_sequences_checked": 15624,
+    "final_balance_false_positives": 2093,
+    "conversion_zero_marking": {
+      "combined_net": [
+        0,
+        0
+      ],
+      "enabled": [
+        false,
+        false
+      ]
+    },
+    "prerequisite_competition_reachable_states": [
+      [
+        0,
+        false,
+        true
+      ],
+      [
+        0,
+        true,
+        false
+      ],
+      [
+        1,
+        false,
+        false
+      ]
+    ]
+  },
+  "cached_beliefs_evaluated": 367,
+  "limits": [
+    "Small synthetic state space, fixed action grammar and dynamics",
+    "No empirical validation or unrestricted concept generation",
+    "Brute force shares the transition function, so proofs remain necessary",
+    "The post-revision renewing loop assumes explicitly supplied external input"
+  ]
+}

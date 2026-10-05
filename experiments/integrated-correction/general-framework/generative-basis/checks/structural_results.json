@@ -1,0 +1,149 @@
+{
+  "scope": "Exact finite verification of supplied equations; no empirical validation or semantic minimality claim.",
+  "state_count": 1024,
+  "proposal_count": 16,
+  "joint_noise_weights": [
+    "3/8",
+    "3/8",
+    "1/8",
+    "1/8"
+  ],
+  "baseline_closure": [
+    [
+      "v",
+      "b",
+      "p"
+    ],
+    [
+      "c",
+      "y",
+      "k",
+      "v",
+      "m",
+      "b",
+      "p"
+    ],
+    [
+      "c",
+      "y",
+      "r",
+      "k",
+      "a",
+      "v",
+      "m",
+      "b",
+      "p"
+    ]
+  ],
+  "retained_coordinate_state_count": 512,
+  "derived_dependencies_match_listed": true,
+  "baseline_single_bit_comparisons": 327680,
+  "projected_kernel_pairs_equal": 8192,
+  "maintenance_witness_next_burden": [
+    "0",
+    "1/4"
+  ],
+  "maintenance_witness_valid_for_all_proposals": true,
+  "expanded_closure": [
+    [
+      "v",
+      "b",
+      "p"
+    ],
+    [
+      "c",
+      "y",
+      "k",
+      "v",
+      "m",
+      "b",
+      "p"
+    ],
+    [
+      "c",
+      "y",
+      "r",
+      "k",
+      "a",
+      "v",
+      "m",
+      "b",
+      "p"
+    ],
+    [
+      "c",
+      "y",
+      "r",
+      "k",
+      "a",
+      "v",
+      "m",
+      "b",
+      "p",
+      "j"
+    ]
+  ],
+  "expanded_single_bit_comparisons": 327680,
+  "expanded_witness_next_authority": [
+    "0",
+    "1"
+  ],
+  "expanded_original_burden_witness": {
+    "states": [
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    ],
+    "proposals": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "horizon": 3,
+    "final_burden_probabilities": [
+      "3/8",
+      "13/16"
+    ]
+  },
+  "source_sha256": {
+    "checks/structural_check.py": "22631d963edcd8cf96c2a6110bbc452b272dfe310f119870c1d0a2ea799e6fcf",
+    "STRUCTURAL-CHECKPLAN.md": "404f1aef4be0efd2ea2b7c90651d5e4e099f79a1e4343a310f553cfd6f4ce87c",
+    "formal/STRUCTURAL-CLOSURE.md": "5293ac3553462256cd38521f4f87d7a45cddef7a65d02df6d68f5aa3992e325a"
+  }
+}

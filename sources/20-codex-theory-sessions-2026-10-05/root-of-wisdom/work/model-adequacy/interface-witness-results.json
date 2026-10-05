@@ -1,0 +1,160 @@
+{
+  "status": "passed",
+  "method": "independent full finite enumeration using fractions.Fraction; no source implementation imported",
+  "routine_laws_equal_all_four_worlds": true,
+  "archive_laws_equal_E_U_and_P_T": true,
+  "total_variation_E_U": {
+    "routine": {
+      "exact": "0",
+      "decimal": 0.0
+    },
+    "archive_without_linked_outcome": {
+      "exact": "0",
+      "decimal": 0.0
+    },
+    "linked_word_endpoint_outcome": {
+      "exact": "69/640",
+      "decimal": 0.1078125
+    }
+  },
+  "costs": {
+    "E": {
+      "baseline": {
+        "exact": "11/40",
+        "decimal": 0.275
+      },
+      "candidate_operating": {
+        "exact": "577/2048",
+        "decimal": 0.28173828125
+      },
+      "eligibility": {
+        "exact": "69/512",
+        "decimal": 0.134765625
+      },
+      "net_candidate_gain": {
+        "exact": "-2237/256000",
+        "decimal": -0.00873828125
+      }
+    },
+    "P": {
+      "baseline": {
+        "exact": "11/40",
+        "decimal": 0.275
+      },
+      "candidate_operating": {
+        "exact": "511/2048",
+        "decimal": 0.24951171875
+      },
+      "eligibility": {
+        "exact": "87/512",
+        "decimal": 0.169921875
+      },
+      "net_candidate_gain": {
+        "exact": "6013/256000",
+        "decimal": 0.02348828125
+      }
+    },
+    "T": {
+      "baseline": {
+        "exact": "11/40",
+        "decimal": 0.275
+      },
+      "candidate_operating": {
+        "exact": "2903/10240",
+        "decimal": 0.28349609375
+      },
+      "eligibility": {
+        "exact": "87/512",
+        "decimal": 0.169921875
+      },
+      "net_candidate_gain": {
+        "exact": "-2687/256000",
+        "decimal": -0.01049609375
+      }
+    },
+    "U": {
+      "baseline": {
+        "exact": "11/40",
+        "decimal": 0.275
+      },
+      "candidate_operating": {
+        "exact": "2609/10240",
+        "decimal": 0.25478515625
+      },
+      "eligibility": {
+        "exact": "69/512",
+        "decimal": 0.134765625
+      },
+      "net_candidate_gain": {
+        "exact": "4663/256000",
+        "decimal": 0.01821484375
+      }
+    }
+  },
+  "inheritance": {
+    "00010": {
+      "ordered": {
+        "need": {
+          "exact": "26329/58724",
+          "decimal": 0.44835161092568626
+        },
+        "likelihood_ratio_first_to_second": {
+          "exact": "29241/121",
+          "decimal": 241.6611570247934
+        }
+      },
+      "homogeneous": {
+        "need": {
+          "exact": "8857/20324",
+          "decimal": 0.43579019877976777
+        },
+        "likelihood_ratio_first_to_second": {
+          "exact": "361/9801",
+          "decimal": 0.03683297622691562
+        }
+      },
+      "union": {
+        "need": {
+          "exact": "73/164",
+          "decimal": 0.4451219512195122
+        },
+        "likelihood_ratio_first_to_second": {
+          "exact": "29241/121",
+          "decimal": 241.6611570247934
+        }
+      }
+    },
+    "01000": {
+      "ordered": {
+        "need": {
+          "exact": "3033/58724",
+          "decimal": 0.05164838907431374
+        },
+        "likelihood_ratio_first_to_second": {
+          "exact": "121/29241",
+          "decimal": 0.004138025375329161
+        }
+      },
+      "homogeneous": {
+        "need": {
+          "exact": "8857/20324",
+          "decimal": 0.43579019877976777
+        },
+        "likelihood_ratio_first_to_second": {
+          "exact": "361/9801",
+          "decimal": 0.03683297622691562
+        }
+      },
+      "union": {
+        "need": {
+          "exact": "145/964",
+          "decimal": 0.1504149377593361
+        },
+        "likelihood_ratio_first_to_second": {
+          "exact": "121/29241",
+          "decimal": 0.004138025375329161
+        }
+      }
+    }
+  }
+}

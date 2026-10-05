@@ -1,0 +1,185 @@
+{
+  "status": "exact constructed scores, no sampled or empirical data",
+  "prevalence": {
+    "exact": "1/10",
+    "decimal": 0.1
+  },
+  "positive_credit": {
+    "exact": "1",
+    "decimal": 1.0
+  },
+  "false_claim_penalty": {
+    "exact": "4",
+    "decimal": 4.0
+  },
+  "models": {
+    "quick": {
+      "sensitivity": {
+        "exact": "4/5",
+        "decimal": 0.8
+      },
+      "false_positive": {
+        "exact": "1/5",
+        "decimal": 0.2
+      },
+      "cost": {
+        "exact": "1/10",
+        "decimal": 0.1
+      },
+      "positive_probability": {
+        "exact": "13/50",
+        "decimal": 0.26
+      },
+      "fraction_false_among_positive": {
+        "exact": "9/13",
+        "decimal": 0.6923076923076923
+      }
+    },
+    "careful": {
+      "sensitivity": {
+        "exact": "4/5",
+        "decimal": 0.8
+      },
+      "false_positive": {
+        "exact": "1/20",
+        "decimal": 0.05
+      },
+      "cost": {
+        "exact": "3/10",
+        "decimal": 0.3
+      },
+      "positive_probability": {
+        "exact": "1/8",
+        "decimal": 0.125
+      },
+      "fraction_false_among_positive": {
+        "exact": "9/25",
+        "decimal": 0.36
+      }
+    }
+  },
+  "penalty_times_detection_threshold": {
+    "exact": "67/27",
+    "decimal": 2.4814814814814814
+  },
+  "detection_threshold_with_penalty_4": {
+    "exact": "67/108",
+    "decimal": 0.6203703703703703
+  },
+  "cases": [
+    {
+      "detection_probability": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "scores": {
+        "quick": {
+          "exact": "4/25",
+          "decimal": 0.16
+        },
+        "careful": {
+          "exact": "-7/40",
+          "decimal": -0.175
+        }
+      },
+      "careful_minus_quick": {
+        "exact": "-67/200",
+        "decimal": -0.335
+      },
+      "larger_score": "quick"
+    },
+    {
+      "detection_probability": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "scores": {
+        "quick": {
+          "exact": "-1/50",
+          "decimal": -0.02
+        },
+        "careful": {
+          "exact": "-11/50",
+          "decimal": -0.22
+        }
+      },
+      "careful_minus_quick": {
+        "exact": "-1/5",
+        "decimal": -0.2
+      },
+      "larger_score": "quick"
+    },
+    {
+      "detection_probability": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "scores": {
+        "quick": {
+          "exact": "-1/5",
+          "decimal": -0.2
+        },
+        "careful": {
+          "exact": "-53/200",
+          "decimal": -0.265
+        }
+      },
+      "careful_minus_quick": {
+        "exact": "-13/200",
+        "decimal": -0.065
+      },
+      "larger_score": "quick"
+    },
+    {
+      "detection_probability": {
+        "exact": "7/10",
+        "decimal": 0.7
+      },
+      "scores": {
+        "quick": {
+          "exact": "-43/125",
+          "decimal": -0.344
+        },
+        "careful": {
+          "exact": "-301/1000",
+          "decimal": -0.301
+        }
+      },
+      "careful_minus_quick": {
+        "exact": "43/1000",
+        "decimal": 0.043
+      },
+      "larger_score": "careful"
+    },
+    {
+      "detection_probability": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "scores": {
+        "quick": {
+          "exact": "-14/25",
+          "decimal": -0.56
+        },
+        "careful": {
+          "exact": "-71/200",
+          "decimal": -0.355
+        }
+      },
+      "careful_minus_quick": {
+        "exact": "41/200",
+        "decimal": 0.205
+      },
+      "larger_score": "careful"
+    }
+  ],
+  "assumptions": [
+    "Same opportunity rate per round and independent stationary episodes",
+    "Only reported false positive claims can trigger penalties",
+    "Detection is observable, correct, and equally likely across methods conditional on a false positive",
+    "Penalties can be imposed; audit costs and funding are not modeled",
+    "Adoption changes monotonically with score under a separately supplied imitation rule",
+    "Scores may be negative; no assertion of absolute financial or population survival"
+  ],
+  "interpretation": "A specified feedback channel reverses relative reinforcement of two supplied methods. This does not model invention of the methods or legitimate derivation of their standards."
+}

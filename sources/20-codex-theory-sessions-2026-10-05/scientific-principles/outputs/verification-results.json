@@ -1,0 +1,249 @@
+{
+  "status": "exact finite calculations using rational arithmetic",
+  "assumptions": "Specified iid Bernoulli laws; frozen rules; hard maximum 100 observations; no empirical data.",
+  "sequential": {
+    "fixed_n_100": {
+      "null_p_half": {
+        "rejection_probability": {
+          "exact": "7021681478279557518621742225/158456325028528675187087900672",
+          "decimal": 0.04431304005703379
+        },
+        "expected_samples": {
+          "exact": "100",
+          "decimal": 100.0
+        }
+      },
+      "alternative_p_three_quarters": {
+        "rejection_probability": {
+          "exact": "200837713121686496239102905332255012151825229931674468250133/200867255532373784442745261542645325315275374222849104412672",
+          "decimal": 0.9998529257015585
+        },
+        "expected_samples": {
+          "exact": "100",
+          "decimal": 100.0
+        }
+      }
+    },
+    "repeated_fixed_sample_p": {
+      "null_p_half": {
+        "rejection_probability": {
+          "exact": "8004345907601874773458582909/39614081257132168796771975168",
+          "decimal": 0.20205809786793333
+        },
+        "expected_samples": {
+          "exact": "6804582387752034526465809404945/79228162514264337593543950336",
+          "decimal": 85.88590435284839
+        }
+      },
+      "alternative_p_three_quarters": {
+        "rejection_probability": {
+          "exact": "200856297147288319888661715124718148050295275668681248816597/200867255532373784442745261542645325315275374222849104412672",
+          "decimal": 0.9999454446417539
+        },
+        "expected_samples": {
+          "exact": "363023932761282652238327510029449755149625397750767574905461/25108406941546723055343157692830665664409421777856138051584",
+          "decimal": 14.458262270737265
+        }
+      }
+    },
+    "alpha_spending": {
+      "null_p_half": {
+        "rejection_probability": {
+          "exact": "76083100056988642200078829/158456325028528675187087900672",
+          "decimal": 0.000480151865463815
+        },
+        "expected_samples": {
+          "exact": "7919798407662692433250629240015/79228162514264337593543950336",
+          "decimal": 99.9619094565875
+        }
+      },
+      "alternative_p_three_quarters": {
+        "rejection_probability": {
+          "exact": "40531310136040882588315416225873458222081839645764489187491/50216813883093446110686315385661331328818843555712276103168",
+          "decimal": 0.8071262790665938
+        },
+        "expected_samples": {
+          "exact": "1611275040809411495522411859392056318942515631495963363653133/25108406941546723055343157692830665664409421777856138051584",
+          "decimal": 64.17273085307714
+        }
+      }
+    },
+    "likelihood_ratio": {
+      "null_p_half": {
+        "rejection_probability": {
+          "exact": "12958445253891527919585381637/316912650057057350374175801344",
+          "decimal": 0.04088964341296718
+        },
+        "expected_samples": {
+          "exact": "15352930674085615042826852929935/158456325028528675187087900672",
+          "decimal": 96.89061431483694
+        }
+      },
+      "alternative_p_three_quarters": {
+        "rejection_probability": {
+          "exact": "399102671650677132808522880691905565539246572567465076461575/401734511064747568885490523085290650630550748445698208825344",
+          "decimal": 0.993448809246945
+        },
+        "expected_samples": {
+          "exact": "609713707628457790004232390170820278505347124804909713195851/25108406941546723055343157692830665664409421777856138051584",
+          "decimal": 24.283249393236826
+        }
+      }
+    }
+  },
+  "coin_n20": {
+    "n": 20,
+    "reject_if_heads_at_least": 15,
+    "actual_size": {
+      "exact": "5425/262144",
+      "decimal": 0.020694732666015625
+    },
+    "power_p_three_quarters": {
+      "exact": "169647127461/274877906944",
+      "decimal": 0.6171726543871046
+    },
+    "tv": {
+      "exact": "210721447691/274877906944",
+      "decimal": 0.766600160899543
+    },
+    "equal_prior_minimum_error": {
+      "exact": "64156459253/549755813888",
+      "decimal": 0.11669991955022851
+    }
+  },
+  "causal_example": {
+    "model_A": "X=U, Y=X; U ~ Bernoulli(1/2)",
+    "model_B": "X=U, Y=U; U ~ Bernoulli(1/2)",
+    "observed_law_both": [
+      {
+        "x": 0,
+        "y": 0,
+        "probability": 0.5
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "probability": 0.5
+      }
+    ],
+    "P_Y1_under_do_X1": {
+      "model_A": 1.0,
+      "model_B": 0.5
+    }
+  },
+  "measurement_package": [
+    {
+      "state": 0,
+      "sensor_inverted": 0,
+      "routine": 0,
+      "known_zero_reference": 0
+    },
+    {
+      "state": 0,
+      "sensor_inverted": 1,
+      "routine": 1,
+      "known_zero_reference": 1
+    },
+    {
+      "state": 1,
+      "sensor_inverted": 0,
+      "routine": 1,
+      "known_zero_reference": 0
+    },
+    {
+      "state": 1,
+      "sensor_inverted": 1,
+      "routine": 0,
+      "known_zero_reference": 1
+    }
+  ],
+  "checking_error": [
+    {
+      "checks": 1,
+      "all_miss_independent": {
+        "exact": "1/5",
+        "decimal": 0.2
+      },
+      "all_miss_independent_same_marginal": {
+        "exact": "7/25",
+        "decimal": 0.28
+      },
+      "all_miss_shared_mode": {
+        "exact": "7/25",
+        "decimal": 0.28
+      }
+    },
+    {
+      "checks": 2,
+      "all_miss_independent": {
+        "exact": "1/25",
+        "decimal": 0.04
+      },
+      "all_miss_independent_same_marginal": {
+        "exact": "49/625",
+        "decimal": 0.0784
+      },
+      "all_miss_shared_mode": {
+        "exact": "17/125",
+        "decimal": 0.136
+      }
+    },
+    {
+      "checks": 3,
+      "all_miss_independent": {
+        "exact": "1/125",
+        "decimal": 0.008
+      },
+      "all_miss_independent_same_marginal": {
+        "exact": "343/15625",
+        "decimal": 0.021952
+      },
+      "all_miss_shared_mode": {
+        "exact": "67/625",
+        "decimal": 0.1072
+      }
+    },
+    {
+      "checks": 5,
+      "all_miss_independent": {
+        "exact": "1/3125",
+        "decimal": 0.00032
+      },
+      "all_miss_independent_same_marginal": {
+        "exact": "16807/9765625",
+        "decimal": 0.0017210368
+      },
+      "all_miss_shared_mode": {
+        "exact": "1567/15625",
+        "decimal": 0.100288
+      }
+    },
+    {
+      "checks": 10,
+      "all_miss_independent": {
+        "exact": "1/9765625",
+        "decimal": 1.024e-07
+      },
+      "all_miss_independent_same_marginal": {
+        "exact": "282475249/95367431640625",
+        "decimal": 2.96196766695424e-06
+      },
+      "all_miss_shared_mode": {
+        "exact": "4882817/48828125",
+        "decimal": 0.10000009216
+      }
+    }
+  ],
+  "twenty_independent_tests_each_size_point05": {
+    "exact": "67267626542454041806644399/104857600000000000000000000",
+    "decimal": 0.6415140775914577
+  },
+  "checks_passed": [
+    "probability mass at every DP step",
+    "small-horizon exhaustive path enumeration",
+    "TV optimum identity",
+    "error lower bound",
+    "sequential null bounds",
+    "auxiliary calibration recovers physical state"
+  ]
+}

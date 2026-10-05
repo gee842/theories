@@ -1,0 +1,444 @@
+{
+  "seed": 7140301,
+  "fixed_before_execution": true,
+  "grammar": "Toggle the same prefix-gain precondition in either direction",
+  "discovery_pairs_per_phase": 128,
+  "post_decision_tasks_per_phase": 32,
+  "familywise_alpha_budget": 0.05,
+  "conditional_guarantee": "At most .05 probability of one or more nonpositive-mean-gain revisions across these three scheduled checks, under independent fresh phase pairs conditional on prior history, stable within-phase task laws, bounded stated losses, fixed counts, and no further tests.",
+  "records": [
+    {
+      "phase": 1,
+      "external_task_profile": "interaction",
+      "opening": "externally scheduled protected probe",
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "available_budget": {
+        "exact": "17000",
+        "decimal": 17000.0
+      },
+      "required_worst_case_reserve_including_post_tasks": {
+        "exact": "16048",
+        "decimal": 16048.0
+      },
+      "discovery_pairs": 128,
+      "checking_pairs": 256,
+      "alpha": 0.016666666666666666,
+      "discovery": {
+        "incumbent": {
+          "count": 128,
+          "expense": {
+            "exact": "1120",
+            "decimal": 1120.0
+          },
+          "errors": 4096,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "5216",
+            "decimal": 5216.0
+          }
+        },
+        "edited": {
+          "count": 128,
+          "expense": {
+            "exact": "64192/25",
+            "decimal": 2567.68
+          },
+          "errors": 0,
+          "proposals": 128,
+          "adoptions": 128,
+          "observed_loss": {
+            "exact": "64192/25",
+            "decimal": 2567.68
+          }
+        }
+      },
+      "checking": {
+        "incumbent": {
+          "count": 256,
+          "expense": {
+            "exact": "2240",
+            "decimal": 2240.0
+          },
+          "errors": 8192,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "10432",
+            "decimal": 10432.0
+          }
+        },
+        "edited": {
+          "count": 256,
+          "expense": {
+            "exact": "128384/25",
+            "decimal": 5135.36
+          },
+          "errors": 0,
+          "proposals": 256,
+          "adoptions": 256,
+          "observed_loss": {
+            "exact": "128384/25",
+            "decimal": 5135.36
+          }
+        }
+      },
+      "fresh_outer_check": {
+        "pairs": 256,
+        "mean_observed_gain": {
+          "exact": "2069/100",
+          "decimal": 20.69
+        },
+        "bound_absolute_difference": {
+          "exact": "7531/100",
+          "decimal": 75.31
+        },
+        "one_sided_Hoeffding_radius": 13.469139684372903,
+        "lower_confidence_bound": 7.220860315627098,
+        "pass": true
+      },
+      "post_decision_execution": {
+        "actual_rule": {
+          "require_improving_prefix": false,
+          "require_final_training_improvement": true,
+          "require_fresh_local_validation": true
+        },
+        "tasks": 32,
+        "expense": {
+          "exact": "16048/25",
+          "decimal": 641.92
+        },
+        "errors": 0,
+        "proposals": 32,
+        "adoptions": 32
+      },
+      "matched_study_service_accounting": {
+        "blocks": 768,
+        "actual_study_loss": {
+          "exact": "583776/25",
+          "decimal": 23351.04
+        },
+        "two_incumbent_streams_loss_estimate": {
+          "exact": "31296",
+          "decimal": 31296.0
+        },
+        "incremental_loss_estimate": {
+          "exact": "-198624/25",
+          "decimal": -7944.96
+        },
+        "caveat": "Reuses study reports; exact on deterministic interaction, an uncorrected descriptive estimator on stochastic null. Not a second inferential claim."
+      },
+      "status": "rule_revised",
+      "final_rule": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "expense": {
+        "exact": "292624/25",
+        "decimal": 11704.96
+      }
+    },
+    {
+      "phase": 2,
+      "external_task_profile": "null",
+      "opening": "externally scheduled protected probe",
+      "initial_rule": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "generated_edit": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "available_budget": {
+        "exact": "340000",
+        "decimal": 340000.0
+      },
+      "required_worst_case_reserve_including_post_tasks": {
+        "exact": "8361008/25",
+        "decimal": 334440.32
+      },
+      "discovery_pairs": 128,
+      "checking_pairs": 8192,
+      "alpha": 0.016666666666666666,
+      "discovery": {
+        "incumbent": {
+          "count": 128,
+          "expense": {
+            "exact": "49632/25",
+            "decimal": 1985.28
+          },
+          "errors": 4089,
+          "proposals": 96,
+          "adoptions": 1,
+          "observed_loss": {
+            "exact": "151857/25",
+            "decimal": 6074.28
+          }
+        },
+        "edited": {
+          "count": 128,
+          "expense": {
+            "exact": "80289/50",
+            "decimal": 1605.78
+          },
+          "errors": 4152,
+          "proposals": 57,
+          "adoptions": 1,
+          "observed_loss": {
+            "exact": "287889/50",
+            "decimal": 5757.78
+          }
+        }
+      },
+      "checking": {
+        "incumbent": {
+          "count": 8192,
+          "expense": {
+            "exact": "633808/5",
+            "decimal": 126761.6
+          },
+          "errors": 261872,
+          "proposals": 6062,
+          "adoptions": 242,
+          "observed_loss": {
+            "exact": "1943168/5",
+            "decimal": 388633.6
+          }
+        },
+        "edited": {
+          "count": 8192,
+          "expense": {
+            "exact": "5098223/50",
+            "decimal": 101964.46
+          },
+          "errors": 262293,
+          "proposals": 3543,
+          "adoptions": 132,
+          "observed_loss": {
+            "exact": "18212873/50",
+            "decimal": 364257.46
+          }
+        }
+      },
+      "fresh_outer_check": {
+        "pairs": 8192,
+        "mean_observed_gain": {
+          "exact": "1218807/409600",
+          "decimal": 2.97560302734375
+        },
+        "bound_absolute_difference": {
+          "exact": "7531/100",
+          "decimal": 75.31
+        },
+        "one_sided_Hoeffding_radius": 2.3810300018922286,
+        "lower_confidence_bound": 0.5945730254515214,
+        "pass": true
+      },
+      "post_decision_execution": {
+        "actual_rule": {
+          "require_improving_prefix": true,
+          "require_final_training_improvement": true,
+          "require_fresh_local_validation": true
+        },
+        "tasks": 32,
+        "expense": {
+          "exact": "399",
+          "decimal": 399.0
+        },
+        "errors": 1003,
+        "proposals": 14,
+        "adoptions": 0
+      },
+      "matched_study_service_accounting": {
+        "blocks": 16640,
+        "actual_study_loss": {
+          "exact": "19118078/25",
+          "decimal": 764723.12
+        },
+        "two_incumbent_streams_loss_estimate": {
+          "exact": "19735394/25",
+          "decimal": 789415.76
+        },
+        "incremental_loss_estimate": {
+          "exact": "-617316/25",
+          "decimal": -24692.64
+        },
+        "caveat": "Reuses study reports; exact on deterministic interaction, an uncorrected descriptive estimator on stochastic null. Not a second inferential claim."
+      },
+      "status": "rule_revised",
+      "final_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "expense": {
+        "exact": "5817903/25",
+        "decimal": 232716.12
+      }
+    },
+    {
+      "phase": 3,
+      "external_task_profile": "interaction",
+      "opening": "externally scheduled protected probe",
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "available_budget": {
+        "exact": "17000",
+        "decimal": 17000.0
+      },
+      "required_worst_case_reserve_including_post_tasks": {
+        "exact": "16048",
+        "decimal": 16048.0
+      },
+      "discovery_pairs": 128,
+      "checking_pairs": 256,
+      "alpha": 0.016666666666666666,
+      "discovery": {
+        "incumbent": {
+          "count": 128,
+          "expense": {
+            "exact": "1120",
+            "decimal": 1120.0
+          },
+          "errors": 4096,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "5216",
+            "decimal": 5216.0
+          }
+        },
+        "edited": {
+          "count": 128,
+          "expense": {
+            "exact": "64192/25",
+            "decimal": 2567.68
+          },
+          "errors": 0,
+          "proposals": 128,
+          "adoptions": 128,
+          "observed_loss": {
+            "exact": "64192/25",
+            "decimal": 2567.68
+          }
+        }
+      },
+      "checking": {
+        "incumbent": {
+          "count": 256,
+          "expense": {
+            "exact": "2240",
+            "decimal": 2240.0
+          },
+          "errors": 8192,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "10432",
+            "decimal": 10432.0
+          }
+        },
+        "edited": {
+          "count": 256,
+          "expense": {
+            "exact": "128384/25",
+            "decimal": 5135.36
+          },
+          "errors": 0,
+          "proposals": 256,
+          "adoptions": 256,
+          "observed_loss": {
+            "exact": "128384/25",
+            "decimal": 5135.36
+          }
+        }
+      },
+      "fresh_outer_check": {
+        "pairs": 256,
+        "mean_observed_gain": {
+          "exact": "2069/100",
+          "decimal": 20.69
+        },
+        "bound_absolute_difference": {
+          "exact": "7531/100",
+          "decimal": 75.31
+        },
+        "one_sided_Hoeffding_radius": 13.469139684372903,
+        "lower_confidence_bound": 7.220860315627098,
+        "pass": true
+      },
+      "post_decision_execution": {
+        "actual_rule": {
+          "require_improving_prefix": false,
+          "require_final_training_improvement": true,
+          "require_fresh_local_validation": true
+        },
+        "tasks": 32,
+        "expense": {
+          "exact": "16048/25",
+          "decimal": 641.92
+        },
+        "errors": 0,
+        "proposals": 32,
+        "adoptions": 32
+      },
+      "matched_study_service_accounting": {
+        "blocks": 768,
+        "actual_study_loss": {
+          "exact": "583776/25",
+          "decimal": 23351.04
+        },
+        "two_incumbent_streams_loss_estimate": {
+          "exact": "31296",
+          "decimal": 31296.0
+        },
+        "incremental_loss_estimate": {
+          "exact": "-198624/25",
+          "decimal": -7944.96
+        },
+        "caveat": "Reuses study reports; exact on deterministic interaction, an uncorrected descriptive estimator on stochastic null. Not a second inferential claim."
+      },
+      "status": "rule_revised",
+      "final_rule": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "expense": {
+        "exact": "292624/25",
+        "decimal": 11704.96
+      }
+    }
+  ],
+  "final_rule": {
+    "require_improving_prefix": false,
+    "require_final_training_improvement": true,
+    "require_fresh_local_validation": true
+  },
+  "total_priced_expense": {
+    "exact": "6403151/25",
+    "decimal": 256126.04
+  },
+  "source_sha256": "03e7119e463e88930f4fd4bc96451d6cbf20674bd31bae9474b3c0b059b817b6"
+}

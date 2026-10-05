@@ -1,0 +1,923 @@
+{
+  "status": "all assertions passed",
+  "short_horizon": {
+    "status": "no payable complete repair",
+    "failed_wave": 4,
+    "cash": 60,
+    "channels": 2,
+    "completed_cycles": 3,
+    "trace": [
+      {
+        "wave": 1,
+        "cash_before": 240,
+        "old_channels": 0,
+        "chosen_channels": 2,
+        "forecast_depth": 1,
+        "forecast_terminal_cash": 140,
+        "forecast_designs": [
+          2
+        ],
+        "cash_after": 140,
+        "minimum_realized_cash": 84
+      },
+      {
+        "wave": 2,
+        "cash_before": 140,
+        "old_channels": 2,
+        "chosen_channels": 2,
+        "forecast_depth": 1,
+        "forecast_terminal_cash": 100,
+        "forecast_designs": [
+          2
+        ],
+        "cash_after": 100,
+        "minimum_realized_cash": 44
+      },
+      {
+        "wave": 3,
+        "cash_before": 100,
+        "old_channels": 2,
+        "chosen_channels": 2,
+        "forecast_depth": 1,
+        "forecast_terminal_cash": 60,
+        "forecast_designs": [
+          2
+        ],
+        "cash_after": 60,
+        "minimum_realized_cash": 4
+      }
+    ]
+  },
+  "two_cycle_horizon": {
+    "status": "completed requested finite trace",
+    "cash": 240,
+    "channels": 4,
+    "completed_cycles": 40,
+    "trace": [
+      {
+        "wave": 1,
+        "cash_before": 240,
+        "old_channels": 0,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 136,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 128,
+        "minimum_realized_cash": 32
+      },
+      {
+        "wave": 2,
+        "cash_before": 128,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 144,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 136,
+        "minimum_realized_cash": 40
+      },
+      {
+        "wave": 3,
+        "cash_before": 136,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 152,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 144,
+        "minimum_realized_cash": 48
+      },
+      {
+        "wave": 4,
+        "cash_before": 144,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 160,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 152,
+        "minimum_realized_cash": 56
+      },
+      {
+        "wave": 5,
+        "cash_before": 152,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 168,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 160,
+        "minimum_realized_cash": 64
+      },
+      {
+        "wave": 6,
+        "cash_before": 160,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 176,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 168,
+        "minimum_realized_cash": 72
+      },
+      {
+        "wave": 7,
+        "cash_before": 168,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 184,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 176,
+        "minimum_realized_cash": 80
+      },
+      {
+        "wave": 8,
+        "cash_before": 176,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 192,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 184,
+        "minimum_realized_cash": 88
+      },
+      {
+        "wave": 9,
+        "cash_before": 184,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 200,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 192,
+        "minimum_realized_cash": 96
+      },
+      {
+        "wave": 10,
+        "cash_before": 192,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 208,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 200,
+        "minimum_realized_cash": 104
+      },
+      {
+        "wave": 11,
+        "cash_before": 200,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 216,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 208,
+        "minimum_realized_cash": 112
+      },
+      {
+        "wave": 12,
+        "cash_before": 208,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 224,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 216,
+        "minimum_realized_cash": 120
+      },
+      {
+        "wave": 13,
+        "cash_before": 216,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 232,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 224,
+        "minimum_realized_cash": 128
+      },
+      {
+        "wave": 14,
+        "cash_before": 224,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 232,
+        "minimum_realized_cash": 136
+      },
+      {
+        "wave": 15,
+        "cash_before": 232,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 144
+      },
+      {
+        "wave": 16,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 17,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 18,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 19,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 20,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 21,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 22,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 23,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 24,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 25,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 26,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 27,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 28,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 29,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 30,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 31,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 32,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 33,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 34,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 35,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 36,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 37,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 38,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 39,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      },
+      {
+        "wave": 40,
+        "cash_before": 240,
+        "old_channels": 4,
+        "chosen_channels": 4,
+        "forecast_depth": 2,
+        "forecast_terminal_cash": 240,
+        "forecast_designs": [
+          4,
+          4
+        ],
+        "cash_after": 240,
+        "minimum_realized_cash": 152
+      }
+    ]
+  },
+  "short_first_cycle_ledger": {
+    "start_cash": 240,
+    "old_channels": 0,
+    "new_channels": 2,
+    "end_cash": 140,
+    "minimum_cash": 84,
+    "ledger": [
+      {
+        "phase": "installation",
+        "cash": 180,
+        "expense": 60
+      },
+      {
+        "phase": "repair",
+        "tick": 1,
+        "stages": [
+          2,
+          0,
+          0
+        ],
+        "expense": 14,
+        "cash": 166
+      },
+      {
+        "phase": "repair",
+        "tick": 2,
+        "stages": [
+          2,
+          2,
+          0
+        ],
+        "expense": 16,
+        "cash": 150
+      },
+      {
+        "phase": "repair",
+        "tick": 3,
+        "stages": [
+          2,
+          2,
+          2
+        ],
+        "expense": 18,
+        "cash": 132
+      },
+      {
+        "phase": "repair",
+        "tick": 4,
+        "stages": [
+          2,
+          2,
+          2
+        ],
+        "expense": 18,
+        "cash": 114
+      },
+      {
+        "phase": "repair",
+        "tick": 5,
+        "stages": [
+          0,
+          2,
+          2
+        ],
+        "expense": 16,
+        "cash": 98
+      },
+      {
+        "phase": "repair",
+        "tick": 6,
+        "stages": [
+          0,
+          0,
+          2
+        ],
+        "expense": 14,
+        "cash": 84
+      },
+      {
+        "phase": "healthy_receipt",
+        "receipt": 40,
+        "cash": 124
+      },
+      {
+        "phase": "healthy_payment",
+        "expense": 12,
+        "spill": 0,
+        "cash": 112
+      },
+      {
+        "phase": "healthy_receipt",
+        "receipt": 40,
+        "cash": 152
+      },
+      {
+        "phase": "healthy_payment",
+        "expense": 12,
+        "spill": 0,
+        "cash": 140
+      }
+    ]
+  },
+  "longer_first_cycle_ledger": {
+    "start_cash": 240,
+    "old_channels": 0,
+    "new_channels": 4,
+    "end_cash": 128,
+    "minimum_cash": 32,
+    "ledger": [
+      {
+        "phase": "installation",
+        "cash": 120,
+        "expense": 120
+      },
+      {
+        "phase": "repair",
+        "tick": 1,
+        "stages": [
+          4,
+          0,
+          0
+        ],
+        "expense": 20,
+        "cash": 100
+      },
+      {
+        "phase": "repair",
+        "tick": 2,
+        "stages": [
+          4,
+          4,
+          0
+        ],
+        "expense": 24,
+        "cash": 76
+      },
+      {
+        "phase": "repair",
+        "tick": 3,
+        "stages": [
+          0,
+          4,
+          4
+        ],
+        "expense": 24,
+        "cash": 52
+      },
+      {
+        "phase": "repair",
+        "tick": 4,
+        "stages": [
+          0,
+          0,
+          4
+        ],
+        "expense": 20,
+        "cash": 32
+      },
+      {
+        "phase": "healthy_receipt",
+        "receipt": 40,
+        "cash": 72
+      },
+      {
+        "phase": "healthy_payment",
+        "expense": 16,
+        "spill": 0,
+        "cash": 56
+      },
+      {
+        "phase": "healthy_receipt",
+        "receipt": 40,
+        "cash": 96
+      },
+      {
+        "phase": "healthy_payment",
+        "expense": 16,
+        "spill": 0,
+        "cash": 80
+      },
+      {
+        "phase": "healthy_receipt",
+        "receipt": 40,
+        "cash": 120
+      },
+      {
+        "phase": "healthy_payment",
+        "expense": 16,
+        "spill": 0,
+        "cash": 104
+      },
+      {
+        "phase": "healthy_receipt",
+        "receipt": 40,
+        "cash": 144
+      },
+      {
+        "phase": "healthy_payment",
+        "expense": 16,
+        "spill": 0,
+        "cash": 128
+      }
+    ]
+  },
+  "all_state_invariant": {
+    "channels": 4,
+    "cash_min": 88,
+    "cash_max": 240,
+    "states_checked": 153,
+    "actual_horizons_verified": [
+      1,
+      2
+    ]
+  },
+  "viability_states": 2169,
+  "minimum_viable_cash_by_installed_channels": {
+    "0": 208,
+    "1": 178,
+    "2": 148,
+    "3": 118,
+    "4": 88,
+    "5": 88,
+    "6": 88,
+    "7": 88,
+    "8": 88
+  },
+  "capacity_loss": {
+    "initial_winning": true,
+    "after_first_h1_cycle_winning": false,
+    "after_first_h2_cycle_winning": true
+  },
+  "exhaustive_plan_comparisons": 120,
+  "slot_ledger_comparisons": 17352,
+  "wealth_horizon_grid_rows": 1446,
+  "replication_checks": 180,
+  "two_design_threshold_checks": 120,
+  "one_cycle_safe_exit_terminal_cash": {
+    "1": null,
+    "2": 140,
+    "3": 134,
+    "4": 128,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null
+  },
+  "no_hazard_choices": [
+    [
+      0,
+      1,
+      496,
+      [
+        0
+      ]
+    ],
+    [
+      0,
+      2,
+      752,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      0,
+      3,
+      1008,
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "minimum_initial_cash_horizons_2_through_6": 208,
+  "config": {
+    "n": 8,
+    "c": 1,
+    "p": 4,
+    "u": 2,
+    "gap": 8,
+    "deadline": 6,
+    "install": 30,
+    "cap": 240,
+    "menu": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "hazard": true
+  },
+  "limits": [
+    "Periodic fault law, not every prior-cycle fault schedule",
+    "Perfectly known model and free planning computation; horizon/objective supplied",
+    "Installation has zero latency; removal free with no salvage value",
+    "No empirical data; no evolutionary origin of objective or horizon modeled",
+    "Safe-exit control assumes declared duty ends and closure is permitted without extra cost"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-05",
+  "status": "passed",
+  "check_groups": 8,
+  "scope": "Independent finite algebra and data/protocol integrity checks. No empirical universality, causal inference, or proof certification.",
+  "checks": [
+    {
+      "name": "acyclic_stochastic_comparison_polynomial",
+      "passed": true,
+      "details": {
+        "directed_graphs_enumerated": 4096,
+        "acyclic_graphs": 543,
+        "nilpotent_and_differential_identities": "exact rational arithmetic",
+        "decay_rates_per_graph": 3
+      }
+    },
+    {
+      "name": "erlang_sharp_witness",
+      "passed": true,
+      "details": {
+        "chain_lengths": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "rates": [
+          "1/2",
+          "1",
+          "2"
+        ],
+        "mean_extinction_time": "n/lambda",
+        "meaning": "Constructed continuous-time replacement chain, not measured lifetimes."
+      }
+    },
+    {
+      "name": "protocol_preserved",
+      "passed": true,
+      "details": "4858ec20a8a1d194d51b3c0d72d6c043f563e4370972791dfbad0dbd4f596e66"
+    },
+    {
+      "name": "source_preserved",
+      "passed": true,
+      "details": "87da93d948f63aeea11d3ef14fdcd39c81d00fae20afaa8d43027b7ab68e2c11"
+    },
+    {
+      "name": "saved_rows_complete",
+      "passed": true,
+      "details": {
+        "test_conditions": 24,
+        "source_blocks": 4
+      }
+    },
+    {
+      "name": "outer_and_inner_source_time_separation",
+      "passed": true,
+      "details": {
+        "outer_folds": 4,
+        "primary_selection": "persistence in both libraries for every fold"
+      }
+    },
+    {
+      "name": "metrics_recalculated_from_saved_predictions",
+      "passed": true,
+      "details": {
+        "baseline_selected": {
+          "rmse": 0.047724609546886496,
+          "mae": 0.03297388556723794
+        },
+        "baseline_ridge_only": {
+          "rmse": 0.11167696713545014,
+          "mae": 0.07723905392909879
+        },
+        "baseline_kernel_only": {
+          "rmse": 0.07983986497703684,
+          "mae": 0.06416205528461032
+        },
+        "augmented_selected": {
+          "rmse": 0.047724609546886496,
+          "mae": 0.03297388556723794
+        },
+        "augmented_ridge_only": {
+          "rmse": 0.0880520411615539,
+          "mae": 0.07017747300899037
+        },
+        "augmented_kernel_only": {
+          "rmse": 0.08242037611671231,
+          "mae": 0.06589127769871268
+        },
+        "persistence": {
+          "rmse": 0.047724609546886496,
+          "mae": 0.03297388556723794
+        },
+        "mean": {
+          "rmse": 0.08157647822594208,
+          "mae": 0.06610805485914975
+        }
+      }
+    },
+    {
+      "name": "primary_augmentation_has_zero_increment",
+      "passed": true,
+      "details": "Identical primary predictions; secondary ridge gains are not substituted for the failed expectation."
+    }
+  ],
+  "erlang_three_type_illustration": {
+    "mean_extinction_time": 3,
+    "survival_probability_after_three": 0.42319008112684353,
+    "time_at_five_percent_survival": 6.29579362187199,
+    "method": "Analytic tail evaluated numerically; threshold by bisection; not measured data."
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "query_results": [],
+  "open_episode_ids": [],
+  "instruction": "Choose one next command for each open episode in the listed order. Use only the original public model and returned evidence. Return the same JSON format; no tools."
+}

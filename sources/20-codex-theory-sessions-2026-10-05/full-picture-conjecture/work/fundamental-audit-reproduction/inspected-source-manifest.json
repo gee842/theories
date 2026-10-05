@@ -1,0 +1,90 @@
+{
+  "/Users/ren/repos/生生不息/formal/SSBX/Foundation/Core/MonadRoot.lean": {
+    "sha256": "7625468f3fb76c5193a81696b9657c984ed82046dfb21ecf8068321137cd326e",
+    "bytes": 39868,
+    "anchors_one_based": {
+      "MonadNode and root": [
+        947,
+        961
+      ],
+      "formal_primary_atom_mem": [
+        1021,
+        1027
+      ],
+      "DirectEdge": [
+        1120,
+        1128
+      ],
+      "Reachability constructors and conclusions": [
+        1135,
+        1222
+      ],
+      "unique_root": [
+        1259,
+        1292
+      ],
+      "rank and acyclicity": [
+        1294,
+        1329
+      ]
+    }
+  },
+  "/Users/ren/repos/生生不息/formal/SSBX/Foundation/Doctrine/FullGUT.lean": {
+    "sha256": "246a9c74ae0c0f6af8c7c664ceda86277b2d09351ff5112adf015408b5ee5825",
+    "bytes": 142477,
+    "anchors_one_based": {
+      "FormalPresentation": [
+        53,
+        71
+      ],
+      "SatisfiesD1": [
+        79,
+        88
+      ],
+      "R encoding and structure preservation": [
+        818,
+        862
+      ],
+      "FaithfulRRealisation": [
+        866,
+        875
+      ],
+      "SemanticsPreservable": [
+        1082,
+        1089
+      ],
+      "Finite construction and theorem": [
+        1561,
+        1639
+      ],
+      "Stream construction and theorem": [
+        2169,
+        2241
+      ],
+      "Conditional interfaces": [
+        2482,
+        2526
+      ]
+    }
+  },
+  "/Users/ren/repos/生生不息/docs-next/10_formal_形式/claim-status-ledger.md": {
+    "sha256": "6a7b33a057497afcba31533693a3e775efae594b2e39968112975325c954b200",
+    "bytes": 81940,
+    "anchors_one_based": {
+      "Reading rule": [
+        1,
+        17
+      ]
+    }
+  },
+  "/Users/ren/repos/生生不息/AGENTS.md": {
+    "sha256": "d1f5077eca31479c6e769f86b37db66c0688700029213897affb83496ea8a492",
+    "bytes": 5604,
+    "anchors_one_based": {
+      "Instructions": [
+        1,
+        59
+      ]
+    }
+  }
+}

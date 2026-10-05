@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "scope": "independent aggregation of saved outputs, not independent reoptimization",
+  "main_states": 162,
+  "ledger_and_probe_score_checks": 1134,
+  "groups_each_access": 63,
+  "partition_sensitive": {
+    "barred": 24,
+    "immediate": 0,
+    "delayed": 15
+  },
+  "access_order_comparisons": 378,
+  "selected_optima_with_tests": 0,
+  "control_states": 30,
+  "controls_by_label": {
+    "no_output": 6,
+    "known_safe": 9,
+    "initially_ready": 9,
+    "uninformative_test": 6
+  },
+  "model_snapshot_matches_live": true,
+  "main_json_sha256": "85800d19fa584c0075275bb9060b6e910038e45e3d14450817d1b493f976b0e3"
+}

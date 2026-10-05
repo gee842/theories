@@ -1,0 +1,13 @@
+{
+  "created_unix": 1791155297.351748,
+  "files": {
+    "experiment.py": "5b920abe6ef6248ec52643f418759ffd52a904690f53dcef4d4e668da348b618",
+    "anchor_filter.py": "0b2e32dd23198369edd5f5e23037974e8c8bba089f4579e8b4a8908fb2fccb72",
+    "protocol.json": "56d563b5ce1ecccf2ba20d058d8b9b23e82450f6813d2be4100bba912c31b1b8",
+    "selected.json": "e4132c99ce7bfe8bd4e3b576e2039288ce4ed990ab4fa22c18625f3511d88f25"
+  },
+  "evaluation_seeds": [
+    30000,
+    31999
+  ]
+}

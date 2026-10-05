@@ -1,0 +1,237 @@
+Independent formal audit of the proposed recursive self-modeling experiment
+Date: 2026-10-05
+Status: design audit and pre-development implementation review
+
+Scope
+The conclusions here are algebraic consequences of the proposed scalar synthetic
+system. They are not empirical claims about feelings, introspection, consciousness,
+or biological implementation. No external theory workspace was modified.
+
+1. Ordinary observations already make the constant bias observable
+
+Let s_t=(x_t,b_t)^T with constant b, A=diag(a,1), a=.8,
+known input B*u=(u,0)^T, and observation H*s with H=(1,1).
+The two-row observability matrix is O=[[1,1],[a,1]]. Its determinant is
+1-a=.2, so O has full rank. In the noiseless system:
+  y_(t+1)-a*y_t-u_t = (1-a)*b,
+  b = [y_(t+1)-a*y_t-u_t]/(1-a), x_t=y_t-b.
+The known applied action must be used, including its clipping. A controller's
+choice of feedback does not change this rank calculation when its action is
+observed and subtracted.
+
+With w~N(0,.05^2), eps~N(0,.25^2), the numerator's variance is
+Q+(1+a^2)*R_y=.0025+1.64*.0625=.105. The one-step bias estimate has
+variance .105/.04=2.625 and SD about 1.620. Observability is not a claim
+of useful instantaneous precision. Consecutive estimates also have correlated
+sensor noise, so naive independent averaging is not a correct variance model.
+A temporal estimator can combine many steps. Include a joint x,b estimator
+which never buys z; otherwise ordinary dynamics information is omitted from
+the apparent comparison between 'external' evidence and self-calibration.
+At a=1 the rank is one: an absolute offset is then unidentifiable from y
+and known inputs alone. As a approaches one, separation is poorly conditioned.
+The known .8 relaxation toward absolute zero is an epistemic anchor.
+
+2. A biased reference identifies relative bias directly, but need not impose
+   a fundamental identification limit under the supplied dynamics
+
+At a reference step r=y-z=b-d+eps-eta. A policy treating z as unbiased
+therefore estimates b-d, leaving d in its corrected state estimate. This is
+a real failure mode of that specified policy and its assumptions.
+It is not an impossibility result for every policy in this world.
+
+If d is an unknown constant, augment the state to (x,b,d), with
+A=diag(a,1,1), H_y=(1,1,0), H_z=(1,0,1). Rows H_y,H_z,H_y*A form
+[[1,1,0],[1,0,1],[a,1,0]], whose determinant is a-1=-.2.
+Thus one simultaneous y,z observation and a subsequent y observation
+suffice for noiseless identification given known dynamics and actions.
+Intermittent z is enough, although finite-horizon noisy estimation may be poor.
+A 2D Kalman filter with z=x+eta in the biased-reference world is deliberately
+misspecified. Either add a 3D x,b,d sensitivity comparator or explicitly
+limit the result to reference-trusting implementations.
+
+The boundary is instructive. If an unknown constant process offset c is also
+allowed, x_next=a*x+u+c+w, the transformation
+  x'=x+delta, b'=b-delta, d'=d-delta, c'=c+(1-a)*delta
+preserves every y,z and the dynamics. Absolute location then cannot be
+identified without another anchor. With fixed c=0 and the specified zero-mean
+noise law, this transformation changes the process-noise distribution, so it
+does not establish nonidentifiability in the currently proposed model.
+
+3. Retained bias correction equals direct fusion when a reference arrives
+
+For h_new=(1-alpha)*h_old+alpha*(y-z), using xhat=y-h_new yields
+  xhat=(1-alpha)*(y-h_old)+alpha*z.
+On purchase steps this is an ordinary measurement-fusion rule; its distinctive
+functional feature is retaining h for later ordinary-only steps. Equivalent
+flat and nested implementations must agree in actions, forecasts, acquisitions,
+and all numerical state given identical random inputs, including clipping.
+Their semantic labels alone do not predict a behavioral difference.
+
+Do not compute uncertainty at reference steps by adding R_y+Var(h_new):
+h_new contains current eps and is correlated with y. If h_old-b has variance
+P_h and is independent of fresh eps,eta, the estimation-error variance after
+the current update (for d=0) is
+  (1-alpha)^2*(P_h+R_y)+alpha^2*R_z.
+At ordinary-only steps it is P_h+R_y under those assumptions. With d!=0,
+unmodeled mean error is also present. A residual-adaptive alpha selected from
+the current residual makes simple unconditional Gaussian covariance formulas
+approximate; label its probabilities accordingly and evaluate calibration.
+
+4. Fair contrasts
+
+Keep the action law fixed across estimators, e.g. u=clip(-.8*xhat,-2,2).
+Different control gains can otherwise confound estimation with control tuning.
+Report raw y and switch-to-z-at-purchase as weak transparent baselines, but
+include a dynamic no-reference joint estimator. A direct reference controller
+that discards z immediately after acquisition is not the strongest simpler
+alternative; an estimator can retain/predict x without a named nested layer.
+Choose 'best simpler comparator' on development seeds only and freeze it.
+If a separate comparator is chosen for each world, disclose that the evaluation
+contrast is world-specific. Policies must not receive the world's identity,
+actual b,d, the sign-switch time, or hidden state unless every arm is explicitly
+given that same information as a separate oracle experiment.
+
+Stage 1: all policies should have the same acquisition schedule and sensing
+charge, whether they use or ignore z. Equal opportunities alone do not establish
+equal acquired information or equal expense. Disaggregate purchased evidence,
+retained sufficient state, update algorithm, and resulting control.
+Stage 2: budgets are equal hard ceilings, not equal realized costs. Decide
+whether to acquire using y and retained history before revealing current z.
+A residual y-z cannot trigger the purchase that makes z visible. It may change
+the update after purchase. The price, computation-price conversion, and any
+practical improvement threshold are supplied design choices.
+
+Pair exogenous draws x0,b0,w,eps,eta across policies. Once their actions differ,
+their x,y,z values differ causally even when the disturbance draws are the same.
+Do not replay one policy's realized y trajectory into another controlled plant.
+Generate all disturbance arrays in advance so acquisition and computation
+counts cannot alter the random stream. Initialize the Gaussian bias prior with
+variance 2/3 if moment-matching the specified uniform {-1,0,1} prior; acknowledge
+that Gaussian filtering is an approximation to the discrete prior. Do not use
+a different zero-bias prior for the no-bias world without disclosing that
+additional regime knowledge.
+
+5. Forecasting and outcome timing
+
+At step t: observe y; optionally buy z; update; choose u; record the forecast
+for x_(t+1) conditional on available history and this chosen u; then realize
+w_t and score against x_(t+1). For an approximately Gaussian current state
+posterior N(xhat,P_x), the action-conditioned next mean/variance are
+mu=a*xhat+u and V=a^2*P_x+Q, and
+P(|x_next|>.5)=Phi((- .5-mu)/sqrt(V))+1-Phi((.5-mu)/sqrt(V)).
+Check deterministic/zero-variance edges. A controller can drive its predicted
+mean near zero, so a good event forecast requires honest uncertainty too.
+For an estimator without a valid posterior, its Gaussian plug-in is a forecast
+heuristic, not a true conditional distribution. Report proper scores (Brier,
+and log score if probabilities are safeguarded), calibration/coverage and
+prediction error separately. Avoid inferring calibration from one scalar score.
+Record xhat error against x_t before the action. Declare whether cumulative
+state loss sums t=0..59 or t=1..60 and use the same convention everywhere.
+
+6. Change-world and statistical interpretation
+
+The proposed switch at t=30 coincides with an offered reference. That is a
+relatively favorable change-detection schedule. Preserve it as the planned
+main world, and if feasible add an explicitly labeled nonaligned switch
+sensitivity (e.g. t=32). Do not quietly change the main world after evaluation.
+One third of sign-switch runs begin with b=0 and do not change. Report the full
+world primary outcome, but assess recovery on |b0|=1 runs or explicitly mark
+the others as no change. Recovery times need a frozen criterion and censoring
+for runs failing to recover by the horizon. Avoid assigning zero recovery time
+to no-change runs or dropping non-recoveries without disclosure.
+
+Use a paired per-seed difference for each contrast. Give a mean paired
+difference and uncertainty separately in all four declared worlds. Do not select
+the favorable world after seeing evaluation results. A selected-best arm on the
+held-out data invalidates an ordinary unadjusted pairwise interval for that
+selection. Within-world intervals are not simultaneous confidence guarantees.
+Seeds are simulation replicates under this supplied generator, not human cases.
+Resource-adjusted losses need frozen weights and separate raw components.
+Count modeled arithmetic, retained scalar state and realized measurements with
+explicit conventions. Wall-clock microbenchmarks and Python object memory
+are machine/implementation measurements, not universal cognitive costs.
+Repeated reformulation may alter arithmetic or numerical rounding, but creates
+no new evidence; call a repeated unchanged calculation a negative control only
+after verifying no hidden state or information was added.
+
+7. Suggested exact implementation checks
+
+* Verify det(O)=.2 and noiseless reconstruction for multiple x,b,u.
+* Verify the x,b,d rank and the unknown-offset gauge transformation algebra.
+* Verify bias-update/fusion equality and Monte Carlo error variance at fixed alpha.
+* Verify nested/flat trajectories and forecasts exactly or at justified floating
+  tolerance for every world and both acquisition regimes.
+* Verify purchase decisions do not read z, b,d,x or future disturbances.
+* Verify no arm gets scenario labels, true switch time or hidden noise.
+* Verify paired exogenous arrays are unaffected by policy RNG paths.
+* Verify price/budget bookkeeping and pre-action forecast timing.
+* Verify confidence-probability range and nonnegative covariance.
+* Verify saturation uses the applied action in estimator prediction.
+
+Overall judgment
+The experiment can test benefits of retained calibration and adaptive updating
+under supplied information, dynamics and costs. It cannot establish that another
+semantic meta-level is uniquely necessary. The two most important safeguards
+are a no-reference temporal estimator and explicit acknowledgment that biased
+reference failure is conditional on the assumed anchoring and estimator model.
+
+Implementation review: experiment.py, filter_model.py and protocol.json
+Reviewed before development/evaluation on 2026-10-05. No implementation files
+were edited by this auditor. The runner's common gain is .5 (rather than the .8
+example used above); this is explicitly frozen in the protocol and shared by
+all policies. It does not change observability or the measurement-fusion proof.
+
+Sound features found by inspection:
+* Ground truth, world labels and future observations remain outside Policy.
+* All exogenous arrays are generated before policy execution and seed choices
+  do not depend on acquisition or action histories.
+* Purchase decisions precede reference-value construction. Past residuals may
+  influence retained variances, but an unpurchased current residual is not read.
+* The joint filter predicts using the preceding clipped, actually applied action.
+* The simultaneous observation correction handles shared current epsilon in
+  h_new and xhat; audit-selected gains remain explicitly approximate forecasts.
+* Actions and forecasts are computed before the next physical noise/outcome.
+* All matched policies acquire/pay for 12 packets, even ignored ones. Adaptive
+  policies have a six-packet ceiling; gates continue to be charged after exhaustion.
+* Gate, audit, repeated estimate and joint-update blocks are included in the
+  declared abstract work accounting. They are not measured floating-point costs.
+* Baseline and policy tuning use only development seeds and four primary worlds.
+* The primary critical value corresponds to two-sided Bonferroni familywise
+  95% coverage for eight normal-approximation intervals. Seed pairing is used.
+* Zero-bias sign-switch episodes are excluded from recovery calculations.
+
+Independent executable checks completed without using held-out seeds:
+* Noiseless two-y joint-filter identification at three distinct x,b,u tuples:
+  maximum estimate error approximately 3e-15.
+* 400 policy runs = five development seeds {0,1,4,11,22}, five worlds, two
+  acquisition regimes and eight policy implementations.
+* Every matched run bought 12 packets; every adaptive run bought at most six.
+* Actions stayed within +/-2, variances stayed nonnegative/positive where needed,
+  and event probabilities stayed within [0,1].
+* Replacing all unpurchased reference-noise entries with 1e6 left each entire
+  trace unchanged. Purchased entries were preserved. This checks an important
+  acquisition boundary beyond merely inspecting the method signature.
+* Total loss equaled control loss plus sensing cost plus work cost.
+* Nested and flat retained estimators had identical traces.
+* Four repeated estimate calculations had identical traces to retained estimation
+  and exactly .018 greater episode work cost under the supplied work price.
+No violations were found in these checks.
+
+Issues and caveats sent to the implementing researcher before freeze:
+1. switch32 is the descriptive timing control, but its contrast label was still
+   'primary' even though the code correctly used ordinary descriptive 95% bounds.
+   Change the label or reporting to descriptive.
+2. implementation_seconds times complete run() simulations and metric collection,
+   not policy-only deliberation. Describe it as end-to-end simulation runtime.
+3. PERSISTENT_SCALARS is analytical retained belief size, not measured peak memory.
+   Policy objects additionally allocate unused alternate representations and
+   bookkeeping. Do not claim those figures are actual process memory.
+4. Recovery initially reported the start j+1 of a five-step successful window,
+   while assigning unconfirmed cases delay L (remaining horizon). Start times
+   after L-4 cannot be assessed. Prefer confirmed recovery at completion j+5,
+   censored at L; alternatively censor onset at L-4 or explicitly present a capped
+   heuristic score rather than ordinary time-to-event censoring.
+
+The biased-reference result remains a misspecification experiment. The current
+two-dimensional filter intentionally assumes d=0; its failure cannot establish
+that estimating reference bias is impossible in the supplied anchored world.

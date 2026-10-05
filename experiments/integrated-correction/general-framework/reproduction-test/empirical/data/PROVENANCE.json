@@ -1,0 +1,43 @@
+{
+  "access_date_local": "2026-10-05",
+  "article_doi": "10.1371/journal.pone.0307832",
+  "article_publication_date": "2024-08-23",
+  "authors": "Daniel A. DeCaro, Marci S. DeCaro, Marco A. Janssen, Allen Lee, Alanea Graci, Devin Flener",
+  "archive_metadata": "https://api.osf.io/v2/nodes/v3drm/",
+  "archive_file_listing": "https://api.osf.io/v2/nodes/v3drm/files/osfstorage/",
+  "access": "Public read access, no authentication used",
+  "license": "OSF node_license and license relationship absent/null. Article CC BY. Separate dataset redistribution license not verified.",
+  "files": {
+    "Dataset1_ChatCodes.xlsm": {
+      "author_filename": "Dataset1 ChatCodes.xlsm",
+      "url": "https://osf.io/download/ke5fw/",
+      "osf_file_id": "65bd14623280d805d6a3b0b4",
+      "sha256": "2913ab8d24be76f1447b3a5545347940609b9d279cf47b3a85bc5ef3e1483e0b"
+    },
+    "Dataset2_Main.xlsx": {
+      "author_filename": "Dataset2 Main.xlsx",
+      "url": "https://osf.io/download/r2w4f/",
+      "osf_file_id": "65bd146f35be200624a504e9",
+      "sha256": "46a9b16c9d82d7ab914a942ac9fce6aabae34729d43519cab3d22fdf0c7b8a6b"
+    },
+    "CODEBOOK.pdf": {
+      "author_filename": "S3 CODEBOOK.pdf",
+      "url": "https://osf.io/download/s2za4/",
+      "osf_file_id": "65bd1438435c4505d2da7894",
+      "sha256": "728b9f74f782edb4f233a21b0395244a14a3773424176a73498524fdb67565c4"
+    },
+    "Appendix.docx": {
+      "author_filename": "S1 Appendix.docx",
+      "url": "https://osf.io/download/j5fwk/",
+      "osf_file_id": "65bd13f035be200636a50331",
+      "sha256": "d67cfdc3ae7c28e1a1ca53cb41ba15e1388e89b9c350b210ec03e3eb693d42ce"
+    },
+    "Protocol_author.doc": {
+      "author_filename": "S2 Protocol.doc",
+      "url": "https://osf.io/download/p3bs7/",
+      "osf_file_id": "65bd14259b32ca065d97f22b",
+      "sha256": "0f7517a8739a54e62c919460043b389a0c262c6a6e810804edb5004a1138cca5",
+      "inspection_timing": "After frozen outcome analysis, for assignment clarification only"
+    }
+  }
+}

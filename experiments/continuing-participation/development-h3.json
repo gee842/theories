@@ -1,0 +1,530 @@
+[
+  {
+    "mode": "ex_ante",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 3,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.138999999999999,
+      "loss_b": -6.138999999999999,
+      "failure": 0.017,
+      "expense": 3.0,
+      "output": 16.312,
+      "compensation": 0.0,
+      "repairs": 1.0,
+      "tests": 0.0,
+      "terminal_cash": 7.898,
+      "treasury": 8.414
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 0.0,
+    "maximum_reach_weighted_violation": 1.7646660571891374e-17,
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 1.7763568394002505e-15,
+    "duality_gap": 0.0,
+    "minimum_failure": 0.017,
+    "minimum_expense_at_best_failure": 3.0,
+    "node_count": 1982,
+    "action_count": 5954,
+    "cash_conservation_residual": -3.552713678800501e-15,
+    "loss_sum_residual": 1.7763568394002505e-15
+  },
+  {
+    "mode": "continuing",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 3,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.138999999999999,
+      "loss_b": -6.138999999999999,
+      "failure": 0.017,
+      "expense": 3.0,
+      "output": 16.311999999999998,
+      "compensation": 0.0,
+      "repairs": 1.0,
+      "tests": 0.0,
+      "terminal_cash": 7.898,
+      "treasury": 8.413999999999998
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 0.0,
+    "maximum_reach_weighted_violation": 0.0,
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 3.552713678800501e-15,
+    "duality_gap": 0.0,
+    "minimum_failure": 0.017,
+    "minimum_expense_at_best_failure": 3.0,
+    "node_count": 1982,
+    "action_count": 5954,
+    "cash_conservation_residual": 0.0,
+    "loss_sum_residual": -1.7763568394002505e-15
+  },
+  {
+    "mode": "ex_ante",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 3,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0,
+        1,
+        2
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.138999999999999,
+      "loss_b": -6.139,
+      "failure": 0.017,
+      "expense": 3.0,
+      "output": 16.312,
+      "compensation": 0.0,
+      "repairs": 1.0,
+      "tests": 0.0,
+      "terminal_cash": 7.898,
+      "treasury": 8.413999999999998
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 0.0,
+    "maximum_reach_weighted_violation": 0.0,
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 8.881784197001252e-16,
+    "duality_gap": 0.0,
+    "minimum_failure": 0.017,
+    "minimum_expense_at_best_failure": 3.0,
+    "node_count": 2558,
+    "action_count": 9910,
+    "cash_conservation_residual": -3.552713678800501e-15,
+    "loss_sum_residual": 1.7763568394002505e-15
+  },
+  {
+    "mode": "continuing",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 3,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0,
+        1,
+        2
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.138999999999999,
+      "loss_b": -6.138999999999999,
+      "failure": 0.017,
+      "expense": 3.0,
+      "output": 16.312,
+      "compensation": 0.0,
+      "repairs": 1.0,
+      "tests": 0.0,
+      "terminal_cash": 7.898,
+      "treasury": 8.413999999999998
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 0.0,
+    "maximum_reach_weighted_violation": 0.0,
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 0.0,
+    "duality_gap": 0.0,
+    "minimum_failure": 0.017,
+    "minimum_expense_at_best_failure": 3.0,
+    "node_count": 2558,
+    "action_count": 9910,
+    "cash_conservation_residual": -3.552713678800501e-15,
+    "loss_sum_residual": 1.7763568394002505e-15
+  },
+  {
+    "mode": "ex_ante",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 4,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.1212,
+      "loss_b": -6.1212,
+      "failure": 0.0017000000000000006,
+      "expense": 3.3,
+      "output": 16.6458,
+      "compensation": 0.0,
+      "repairs": 1.1,
+      "tests": 0.0,
+      "terminal_cash": 7.973200000000001,
+      "treasury": 9.372599999999998
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 0.6779999999999995,
+    "maximum_reach_weighted_violation": 0.016949999999999976,
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 8.881784197001252e-16,
+    "duality_gap": 2.168404344971009e-19,
+    "minimum_failure": 0.0017000000000000003,
+    "minimum_expense_at_best_failure": 3.3000000000000003,
+    "node_count": 2594,
+    "action_count": 7960,
+    "cash_conservation_residual": 0.0,
+    "loss_sum_residual": 1.7763568394002505e-15
+  },
+  {
+    "mode": "continuing",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 4,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.138999999999999,
+      "loss_b": -6.138999999999999,
+      "failure": 0.017,
+      "expense": 3.0,
+      "output": 16.311999999999998,
+      "compensation": 0.0,
+      "repairs": 1.0,
+      "tests": 0.0,
+      "terminal_cash": 7.915000000000001,
+      "treasury": 9.396999999999998
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 0.0,
+    "maximum_reach_weighted_violation": 0.0,
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 3.552713678800501e-15,
+    "duality_gap": 0.0,
+    "minimum_failure": 0.017,
+    "minimum_expense_at_best_failure": 3.0,
+    "node_count": 2594,
+    "action_count": 7960,
+    "cash_conservation_residual": 0.0,
+    "loss_sum_residual": -1.7763568394002505e-15
+  },
+  {
+    "mode": "ex_ante",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 4,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0,
+        1,
+        2
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.121200000000001,
+      "loss_b": -6.1212,
+      "failure": 0.0017000000000000027,
+      "expense": 3.3000000000000007,
+      "output": 16.6458,
+      "compensation": 0.0,
+      "repairs": 1.1,
+      "tests": 0.0,
+      "terminal_cash": 7.973200000000002,
+      "treasury": 9.372599999999998
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 0.6779999999999995,
+    "maximum_reach_weighted_violation": 0.01695000000000006,
+    "flow_residual": 1.3183898417423734e-16,
+    "policy_evaluation_residual": 1.7763568394002505e-15,
+    "duality_gap": 2.168404344971009e-19,
+    "minimum_failure": 0.0017000000000000003,
+    "minimum_expense_at_best_failure": 3.3000000000000003,
+    "node_count": 4118,
+    "action_count": 16802,
+    "cash_conservation_residual": 0.0,
+    "loss_sum_residual": 1.7763568394002505e-15
+  },
+  {
+    "mode": "continuing",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 4,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0,
+        1,
+        2
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.138999999999999,
+      "loss_b": -6.138999999999999,
+      "failure": 0.017,
+      "expense": 3.0,
+      "output": 16.312,
+      "compensation": 0.0,
+      "repairs": 1.0,
+      "tests": 0.0,
+      "terminal_cash": 7.915,
+      "treasury": 9.396999999999998
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 0.0,
+    "maximum_reach_weighted_violation": 0.0,
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 8.881784197001252e-16,
+    "duality_gap": 0.0,
+    "minimum_failure": 0.017,
+    "minimum_expense_at_best_failure": 3.0,
+    "node_count": 4118,
+    "action_count": 16802,
+    "cash_conservation_residual": -3.552713678800501e-15,
+    "loss_sum_residual": 1.7763568394002505e-15
+  },
+  {
+    "mode": "ex_ante",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.114299999999998,
+      "loss_b": -6.114299999999998,
+      "failure": 0.0,
+      "expense": 3.329999999999999,
+      "output": 16.668599999999994,
+      "compensation": 0.0,
+      "repairs": 1.1099999999999999,
+      "tests": 0.0,
+      "terminal_cash": 7.996999999999997,
+      "treasury": 13.341599999999996
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 1.1899999999999997,
+    "maximum_reach_weighted_violation": 0.018674999999999983,
+    "flow_residual": 2.220446049250313e-16,
+    "policy_evaluation_residual": 7.105427357601002e-15,
+    "duality_gap": 0.0,
+    "minimum_failure": 0.0,
+    "minimum_expense_at_best_failure": 3.3300000000000005,
+    "node_count": 4802,
+    "action_count": 14940,
+    "cash_conservation_residual": -3.552713678800501e-15,
+    "loss_sum_residual": 0.0
+  },
+  {
+    "mode": "continuing",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.138999999999999,
+      "loss_b": -6.138999999999999,
+      "failure": 0.017,
+      "expense": 3.0,
+      "output": 16.311999999999998,
+      "compensation": 0.0,
+      "repairs": 1.0,
+      "tests": 0.0,
+      "terminal_cash": 7.9830000000000005,
+      "treasury": 13.329
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 0.0,
+    "maximum_reach_weighted_violation": 0.0,
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 3.552713678800501e-15,
+    "duality_gap": 0.0,
+    "minimum_failure": 0.017,
+    "minimum_expense_at_best_failure": 3.0,
+    "node_count": 4802,
+    "action_count": 14940,
+    "cash_conservation_residual": 3.552713678800501e-15,
+    "loss_sum_residual": -1.7763568394002505e-15
+  },
+  {
+    "mode": "ex_ante",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0,
+        1,
+        2
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.1142999999999965,
+      "loss_b": -6.1142999999999965,
+      "failure": 0.0,
+      "expense": 3.3299999999999983,
+      "output": 16.66859999999999,
+      "compensation": 0.0,
+      "repairs": 1.1099999999999994,
+      "tests": 0.0,
+      "terminal_cash": 7.9969999999999954,
+      "treasury": 13.34159999999999
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 1.1899999999999997,
+    "maximum_reach_weighted_violation": 0.01867499999999998,
+    "flow_residual": 5.551115123125783e-16,
+    "policy_evaluation_residual": 1.0658141036401503e-14,
+    "duality_gap": 0.0,
+    "minimum_failure": 0.0,
+    "minimum_expense_at_best_failure": 3.3300000000000005,
+    "node_count": 14698,
+    "action_count": 62388,
+    "cash_conservation_residual": -7.105427357601002e-15,
+    "loss_sum_residual": 0.0
+  },
+  {
+    "mode": "continuing",
+    "config": {
+      "horizon": 3,
+      "initial_stock": 1,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "1/2",
+      "compensation_grid": [
+        0,
+        1,
+        2
+      ],
+      "repair_burden": 1.0,
+      "collapse_loss": 1.0,
+      "total_test_burden": 0.05
+    },
+    "metrics": {
+      "loss_a": -6.139000000000001,
+      "loss_b": -6.139000000000001,
+      "failure": 0.017000000000000005,
+      "expense": 3.000000000000001,
+      "output": 16.312000000000005,
+      "compensation": 0.0,
+      "repairs": 1.0000000000000002,
+      "tests": 0.0,
+      "terminal_cash": 7.983000000000002,
+      "treasury": 13.329000000000004
+    },
+    "initial_outside_loss": [
+      -3.1289000000000002,
+      -3.1289000000000002
+    ],
+    "maximum_conditional_refusal_gain": 0.0,
+    "maximum_reach_weighted_violation": 0.0,
+    "flow_residual": 2.220446049250313e-16,
+    "policy_evaluation_residual": 3.552713678800501e-15,
+    "duality_gap": 0.0,
+    "minimum_failure": 0.017,
+    "minimum_expense_at_best_failure": 3.0,
+    "node_count": 14698,
+    "action_count": 62388,
+    "cash_conservation_residual": 3.552713678800501e-15,
+    "loss_sum_residual": 1.7763568394002505e-15
+  }
+]

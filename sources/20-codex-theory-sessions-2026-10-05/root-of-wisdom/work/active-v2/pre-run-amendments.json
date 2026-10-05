@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-10-05T05:25:41.047567+07:00",
+  "timing": "Before any participant dispatch or outcome collection. Original protocol preserved unchanged.",
+  "case_freeze_pending": false,
+  "parse_policy": "Parse the exact raw participant response as JSON, allowing ordinary JSON whitespace only. No fence stripping, repairs or retries. Syntax failure is recorded and treated as an empty response, forcing fallback for every open episode.",
+  "reason_policy": "Missing, non-string or empty reason invalidates its command. Reasons over 35 whitespace-delimited words are counted as cap violations but the command executes if otherwise feasible.",
+  "extra_id_policy": "Commands for unknown or already-closed episode IDs are logged and ignored. A missing required open ID or duplicate required ID forces that episode fallback. Extra IDs do not invalidate otherwise valid required commands.",
+  "private_draw_amendment": "Pre-run draft with shared draws within matched pairs was replaced by six sequential independent draws from stated priors, seed 2026100502; old draft preserved. Current draws are fixed across conditions and repetitions; each public case remains independent.",
+  "initial_comparison": "Initial exact ties accepted. Invalid commands count as failures even if the effective fallback is optimal. Initial Bellman gap records the effective forced action when invalid.",
+  "word_count": "Whitespace-delimited counts; output cap equal across conditions, not a hidden-computation control."
+}

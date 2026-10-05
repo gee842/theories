@@ -1,0 +1,32 @@
+[
+  {
+    "original": "/Users/ren/theories/experiments/situated-discovery/results-evaluation/runs.jsonl",
+    "copy": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/discovery-checks/inherited-evidence/runs.jsonl",
+    "bytes": 55441180,
+    "sha256": "5ebfebbd2d87632469d90d2b0e070d5d0c2c4f3c23d91394c381b2d63692a963"
+  },
+  {
+    "original": "/Users/ren/theories/experiments/situated-discovery/results-evaluation/summary.json",
+    "copy": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/discovery-checks/inherited-evidence/summary.json",
+    "bytes": 51210,
+    "sha256": "3f55144749df1ed77ae0c75ea6febb387732b16a5a5bf9bcbdc002f65f1b6ce7"
+  },
+  {
+    "original": "/Users/ren/theories/experiments/situated-discovery/results-evaluation/analysis.json",
+    "copy": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/discovery-checks/inherited-evidence/analysis.json",
+    "bytes": 5077,
+    "sha256": "1555f31bf6e6a5977162f52ca6f3932f2d7fdc93ac5e97fcb315552ec249a864"
+  },
+  {
+    "original": "/Users/ren/theories/experiments/situated-discovery/evaluation-inputs/manifest.json",
+    "copy": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/discovery-checks/inherited-evidence/manifest.json",
+    "bytes": 267,
+    "sha256": "8927cb6d30fb0cb2e32dccb6c879064f3fe019d8c79b6e190c0499a1788b38f7"
+  },
+  {
+    "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/candidate-discovery-math.md",
+    "copy": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/discovery-checks/inherited-evidence/candidate-discovery-math.md",
+    "bytes": 23155,
+    "sha256": "c5eb3323656fbcdfa75aab864fbee7c8e4d0637fc2d36e1f988d394c3a32ae54"
+  }
+]

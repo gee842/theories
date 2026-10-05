@@ -1,0 +1,53 @@
+contrast,control_mean,estimate,n,n_high,n_low,n_treated,result,session,treated_mean
+"Exp1 randomized higher accuracy, all rules",0.5859375,0.125,60,,,28,primary_information,141126_1136,0.7321428571428571
+"Exp1 randomized higher accuracy, all rules",0.4270833333333333,0.175,40,,,16,primary_information,141201_1146,0.609375
+"Exp1 randomized higher accuracy, all rules",0.6585365853658537,0.0375,80,,,39,primary_information,141201_1616,0.7051282051282052
+"Exp1 randomized higher accuracy, all rules",0.625,0.05,60,,,26,primary_information,141203_1150,0.7211538461538461
+"Exp1 randomized higher accuracy, all rules",0.5416666666666666,0.20833333333333334,60,,,30,primary_information,150130_1204,0.75
+"Exp1 randomized higher accuracy, all rules",0.7,0.008333333333333333,60,,,30,primary_information,150206_1200,0.7083333333333334
+"Exp1 accuracy, investment=0",0.35,0.1111111111111111,27,,,12,information_investment_0,141126_1136,0.4375
+"Exp1 accuracy, investment=0",0.21666666666666667,0.3409090909090909,22,,,7,information_investment_0,141201_1146,0.42857142857142855
+"Exp1 accuracy, investment=0",0.48214285714285715,0.11428571428571428,35,,,21,information_investment_0,141201_1616,0.5833333333333334
+"Exp1 accuracy, investment=0",0.46153846153846156,0.07142857142857142,21,,,8,information_investment_0,141203_1150,0.53125
+"Exp1 accuracy, investment=0",0.21875,0.10714285714285714,14,,,6,information_investment_0,150130_1204,0.25
+"Exp1 accuracy, investment=0",0.3888888888888889,0.25925925925925924,27,,,18,information_investment_0,150206_1200,0.6388888888888888
+"Exp1 accuracy, investment=1",0.7941176470588235,0.13636363636363635,33,,,16,information_investment_1,141126_1136,0.953125
+"Exp1 accuracy, investment=1",0.7777777777777778,-0.027777777777777776,18,,,9,information_investment_1,141201_1146,0.75
+"Exp1 accuracy, investment=1",0.75,-0.022222222222222223,45,,,18,information_investment_1,141201_1616,0.8472222222222222
+"Exp1 accuracy, investment=1",0.7261904761904762,0.038461538461538464,39,,,18,information_investment_1,141203_1150,0.8055555555555556
+"Exp1 accuracy, investment=1",0.6590909090909091,0.2391304347826087,46,,,24,information_investment_1,150130_1204,0.875
+"Exp1 accuracy, investment=1",0.8333333333333334,-0.19696969696969696,33,,,12,information_investment_1,150206_1200,0.8125
+"Exp2 authority benefits, all rules",0.3404255319148936,0.06875,80,,,33,boundary_authority_beneficiary,160129_1448,0.3560606060606061
+"Exp2 authority benefits, all rules",0.5166666666666667,-0.03333333333333333,60,,,30,boundary_authority_beneficiary,160204_1603,0.48333333333333334
+"Exp2 authority benefits, all rules",0.6370967741935484,-0.09166666666666666,60,,,29,boundary_authority_beneficiary,160205_1200,0.5517241379310345
+"Exp2 authority benefits, all rules",0.6287878787878788,-0.041666666666666664,60,,,27,boundary_authority_beneficiary,160208_1506,0.6111111111111112
+"Exp2 authority benefits, all rules",0.37,-0.18333333333333332,60,,,35,boundary_authority_beneficiary,160218_1445,0.25
+"Exp2 authority benefits, all rules",0.5648148148148148,-0.016666666666666666,60,,,33,boundary_authority_beneficiary,160325_1418,0.5378787878787878
+"Exp2 authority benefits, all rules",0.5092592592592593,-0.041666666666666664,60,,,33,boundary_authority_beneficiary,160402_1342,0.4696969696969697
+"Exp2 authority benefits, pre-treatment PATS",0.4782608695652174,0.08108108108108109,37,,,14,boundary_authority_beneficiary_PATS,160129_1448,0.5714285714285714
+"Exp2 authority benefits, pre-treatment PATS",0.618421052631579,-0.02702702702702703,37,,,18,boundary_authority_beneficiary_PATS,160204_1603,0.5972222222222222
+"Exp2 authority benefits, pre-treatment PATS",0.7727272727272727,-0.1125,40,,,18,boundary_authority_beneficiary_PATS,160205_1200,0.7083333333333334
+"Exp2 authority benefits, pre-treatment PATS",0.7613636363636364,-0.0641025641025641,39,,,17,boundary_authority_beneficiary_PATS,160208_1506,0.7647058823529411
+"Exp2 authority benefits, pre-treatment PATS",0.4666666666666667,-0.078125,32,,,17,boundary_authority_beneficiary_PATS,160218_1445,0.39705882352941174
+"Exp2 authority benefits, pre-treatment PATS",0.8125,0.0,31,,,15,boundary_authority_beneficiary_PATS,160325_1418,0.8333333333333334
+"Exp2 authority benefits, pre-treatment PATS",0.7678571428571429,0.0,34,,,20,boundary_authority_beneficiary_PATS,160402_1342,0.6875
+"Exp2 beneficiary, investment=0",0.24242424242424243,0.0625,56,,,23,beneficiary_investment_0,160129_1448,0.20652173913043478
+"Exp2 beneficiary, investment=0",0.5131578947368421,-0.1891891891891892,37,,,18,beneficiary_investment_0,160204_1603,0.3194444444444444
+"Exp2 beneficiary, investment=0",0.5454545454545454,-0.047619047619047616,42,,,20,beneficiary_investment_0,160205_1200,0.5
+"Exp2 beneficiary, investment=0",0.5113636363636364,0.013513513513513514,37,,,15,beneficiary_investment_0,160208_1506,0.5333333333333333
+"Exp2 beneficiary, investment=0",0.3125,-0.14893617021276595,47,,,27,beneficiary_investment_0,160218_1445,0.23148148148148148
+"Exp2 beneficiary, investment=0",0.4852941176470588,-0.024390243902439025,41,,,24,beneficiary_investment_0,160325_1418,0.46875
+"Exp2 beneficiary, investment=0",0.42857142857142855,-0.1323529411764706,34,,,20,beneficiary_investment_0,160402_1342,0.3375
+"Exp2 beneficiary, investment=1",0.5714285714285714,0.08333333333333333,24,,,10,beneficiary_investment_1,160129_1448,0.7
+"Exp2 beneficiary, investment=1",0.5227272727272727,0.21739130434782608,23,,,12,beneficiary_investment_1,160204_1603,0.7291666666666666
+"Exp2 beneficiary, investment=1",0.8611111111111112,-0.19444444444444445,18,,,9,beneficiary_investment_1,160205_1200,0.6666666666666666
+"Exp2 beneficiary, investment=1",0.8636363636363636,-0.13043478260869565,23,,,12,beneficiary_investment_1,160208_1506,0.7083333333333334
+"Exp2 beneficiary, investment=1",0.6,-0.3076923076923077,13,,,8,beneficiary_investment_1,160218_1445,0.3125
+"Exp2 beneficiary, investment=1",0.7,0.0,19,,,9,beneficiary_investment_1,160325_1418,0.7222222222222222
+"Exp2 beneficiary, investment=1",0.5961538461538461,0.07692307692307693,26,,,13,beneficiary_investment_1,160402_1342,0.6730769230769231
+"Exp1 chosen investment at same accuracy/rule, descriptive",,0.1428571428571429,,14,5,,descriptive_matched_material_investment,141126_1136,
+"Exp1 chosen investment at same accuracy/rule, descriptive",,0.32499999999999996,,8,5,,descriptive_matched_material_investment,141201_1146,
+"Exp1 chosen investment at same accuracy/rule, descriptive",,0.06612318840579712,,23,12,,descriptive_matched_material_investment,141201_1616,
+"Exp1 chosen investment at same accuracy/rule, descriptive",,0.18823529411764706,,17,5,,descriptive_matched_material_investment,141203_1150,
+"Exp1 chosen investment at same accuracy/rule, descriptive",,,,18,0,,descriptive_matched_material_investment,150130_1204,
+"Exp1 chosen investment at same accuracy/rule, descriptive",,0.07403846153846161,,20,13,,descriptive_matched_material_investment,150206_1200,

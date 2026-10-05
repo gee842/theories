@@ -1,0 +1,15 @@
+interaction protected_probe 12000 rule_revised spent 8297.28 check_mean 20.69 lower 9.168761636339232
+interaction incumbent_gate 12000 probe_blocked_by_incumbent spent 8.75 check_mean None lower None
+interaction protected_probe 100 probe_unfunded spent 0.0 check_mean None lower None
+single protected_probe 12000 edit_failed_discovery spent 1193.92 check_mean None lower None
+constant protected_probe 12000 edit_failed_discovery spent 584.0 check_mean None lower None
+null protected_probe 12000 edit_failed_discovery spent 837.78 check_mean None lower None
+noisy_interaction protected_probe 12000 edit_failed_fresh_check spent 8059.18 check_mean -3.2215625 lower -14.742800863660769
+mixed protected_probe 12000 edit_failed_fresh_check spent 8174.48 check_mean 8.2925 lower -3.228738363660769
+interaction protected_probe 40000 edit_failed_discovery spent 2068.8 check_mean None lower None
+mixed protected_probe 45000 rule_revised spent 29730.7 check_mean 8.76330078125 lower 3.002681599419616
+transfer interaction 20.69
+transfer single -0.25
+transfer constant -0.75
+transfer null -2.89265625
+transfer noisy_interaction -4.375078125

@@ -1,0 +1,254 @@
+{
+  "status": "passed",
+  "scope": "branch contrasts only",
+  "results": {
+    "canonical": {
+      "eligible": true,
+      "liquid": true,
+      "usable_checker": true,
+      "empirical_a_guard": true,
+      "votes": [
+        {
+          "actor": "A delegate",
+          "yes": false,
+          "observed_utility_change": -0.075,
+          "reason": "own error reduction less half of institutional extra cost"
+        },
+        {
+          "actor": "B delegate",
+          "yes": true,
+          "observed_utility_change": 0.425,
+          "reason": "eligible grievance and own benefit exceeds fixed .125 threshold"
+        },
+        {
+          "actor": "steward",
+          "yes": true,
+          "observed_utility_change": 0.35,
+          "reason": "lower worst group error after expense, empirical A guard, liquidity"
+        }
+      ],
+      "adopt": true,
+      "mandate_after": "INCLUDE_B",
+      "gain_under_old_mandate": -0.15,
+      "gain_under_inclusive_mandate": 0.1,
+      "scope": "fallible pilot-based mandate adoption; separate fresh rule check required"
+    },
+    "similar_groups": {
+      "eligible": false,
+      "liquid": true,
+      "usable_checker": true,
+      "empirical_a_guard": true,
+      "votes": [
+        {
+          "actor": "A delegate",
+          "yes": false,
+          "observed_utility_change": -0.075,
+          "reason": "own error reduction less half of institutional extra cost"
+        },
+        {
+          "actor": "B delegate",
+          "yes": false,
+          "observed_utility_change": 0.425,
+          "reason": "eligible grievance and own benefit exceeds fixed .125 threshold"
+        },
+        {
+          "actor": "steward",
+          "yes": true,
+          "observed_utility_change": 0.35,
+          "reason": "lower worst group error after expense, empirical A guard, liquidity"
+        }
+      ],
+      "adopt": false,
+      "mandate_after": "A_ONLY",
+      "gain_under_old_mandate": -0.15,
+      "gain_under_inclusive_mandate": 0.1,
+      "scope": "fallible pilot-based mandate adoption; separate fresh rule check required"
+    },
+    "no_benefit": {
+      "eligible": true,
+      "liquid": true,
+      "usable_checker": true,
+      "empirical_a_guard": true,
+      "votes": [
+        {
+          "actor": "A delegate",
+          "yes": false,
+          "observed_utility_change": -0.075,
+          "reason": "own error reduction less half of institutional extra cost"
+        },
+        {
+          "actor": "B delegate",
+          "yes": false,
+          "observed_utility_change": -0.075,
+          "reason": "eligible grievance and own benefit exceeds fixed .125 threshold"
+        },
+        {
+          "actor": "steward",
+          "yes": false,
+          "observed_utility_change": -0.15,
+          "reason": "lower worst group error after expense, empirical A guard, liquidity"
+        }
+      ],
+      "adopt": false,
+      "mandate_after": "A_ONLY",
+      "gain_under_old_mandate": -0.15,
+      "gain_under_inclusive_mandate": -0.15,
+      "scope": "fallible pilot-based mandate adoption; separate fresh rule check required"
+    },
+    "costly": {
+      "eligible": true,
+      "liquid": true,
+      "usable_checker": true,
+      "empirical_a_guard": true,
+      "votes": [
+        {
+          "actor": "A delegate",
+          "yes": false,
+          "observed_utility_change": -0.3,
+          "reason": "own error reduction less half of institutional extra cost"
+        },
+        {
+          "actor": "B delegate",
+          "yes": true,
+          "observed_utility_change": 0.2,
+          "reason": "eligible grievance and own benefit exceeds fixed .125 threshold"
+        },
+        {
+          "actor": "steward",
+          "yes": false,
+          "observed_utility_change": -0.09999999999999998,
+          "reason": "lower worst group error after expense, empirical A guard, liquidity"
+        }
+      ],
+      "adopt": false,
+      "mandate_after": "A_ONLY",
+      "gain_under_old_mandate": -0.6,
+      "gain_under_inclusive_mandate": -0.35,
+      "scope": "fallible pilot-based mandate adoption; separate fresh rule check required"
+    },
+    "a_harm": {
+      "eligible": true,
+      "liquid": true,
+      "usable_checker": true,
+      "empirical_a_guard": false,
+      "votes": [
+        {
+          "actor": "A delegate",
+          "yes": false,
+          "observed_utility_change": -0.10625,
+          "reason": "own error reduction less half of institutional extra cost"
+        },
+        {
+          "actor": "B delegate",
+          "yes": true,
+          "observed_utility_change": 0.425,
+          "reason": "eligible grievance and own benefit exceeds fixed .125 threshold"
+        },
+        {
+          "actor": "steward",
+          "yes": false,
+          "observed_utility_change": 0.31875,
+          "reason": "lower worst group error after expense, empirical A guard, liquidity"
+        }
+      ],
+      "adopt": false,
+      "mandate_after": "A_ONLY",
+      "gain_under_old_mandate": -0.18125,
+      "gain_under_inclusive_mandate": 0.084375,
+      "scope": "fallible pilot-based mandate adoption; separate fresh rule check required"
+    },
+    "poor_liquidity": {
+      "eligible": true,
+      "liquid": false,
+      "usable_checker": true,
+      "empirical_a_guard": true,
+      "votes": [
+        {
+          "actor": "A delegate",
+          "yes": false,
+          "observed_utility_change": -0.075,
+          "reason": "own error reduction less half of institutional extra cost"
+        },
+        {
+          "actor": "B delegate",
+          "yes": true,
+          "observed_utility_change": 0.425,
+          "reason": "eligible grievance and own benefit exceeds fixed .125 threshold"
+        },
+        {
+          "actor": "steward",
+          "yes": false,
+          "observed_utility_change": 0.35,
+          "reason": "lower worst group error after expense, empirical A guard, liquidity"
+        }
+      ],
+      "adopt": false,
+      "mandate_after": "A_ONLY",
+      "gain_under_old_mandate": -0.15,
+      "gain_under_inclusive_mandate": 0.1,
+      "scope": "fallible pilot-based mandate adoption; separate fresh rule check required"
+    },
+    "no_checker": {
+      "eligible": true,
+      "liquid": true,
+      "usable_checker": false,
+      "empirical_a_guard": true,
+      "votes": [
+        {
+          "actor": "A delegate",
+          "yes": false,
+          "observed_utility_change": -0.075,
+          "reason": "own error reduction less half of institutional extra cost"
+        },
+        {
+          "actor": "B delegate",
+          "yes": true,
+          "observed_utility_change": 0.425,
+          "reason": "eligible grievance and own benefit exceeds fixed .125 threshold"
+        },
+        {
+          "actor": "steward",
+          "yes": false,
+          "observed_utility_change": 0.35,
+          "reason": "lower worst group error after expense, empirical A guard, liquidity"
+        }
+      ],
+      "adopt": false,
+      "mandate_after": "A_ONLY",
+      "gain_under_old_mandate": -0.15,
+      "gain_under_inclusive_mandate": 0.1,
+      "scope": "fallible pilot-based mandate adoption; separate fresh rule check required"
+    },
+    "insufficient_record": {
+      "eligible": false,
+      "liquid": true,
+      "usable_checker": true,
+      "empirical_a_guard": true,
+      "votes": [
+        {
+          "actor": "A delegate",
+          "yes": false,
+          "observed_utility_change": -0.075,
+          "reason": "own error reduction less half of institutional extra cost"
+        },
+        {
+          "actor": "B delegate",
+          "yes": false,
+          "observed_utility_change": 0.425,
+          "reason": "eligible grievance and own benefit exceeds fixed .125 threshold"
+        },
+        {
+          "actor": "steward",
+          "yes": true,
+          "observed_utility_change": 0.35,
+          "reason": "lower worst group error after expense, empirical A guard, liquidity"
+        }
+      ],
+      "adopt": false,
+      "mandate_after": "A_ONLY",
+      "gain_under_old_mandate": -0.15,
+      "gain_under_inclusive_mandate": 0.1,
+      "scope": "fallible pilot-based mandate adoption; separate fresh rule check required"
+    }
+  }
+}

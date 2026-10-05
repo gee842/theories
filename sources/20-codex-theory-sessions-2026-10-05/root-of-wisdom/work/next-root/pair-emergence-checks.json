@@ -1,0 +1,723 @@
+{
+  "status": "passed",
+  "scope": "New constructed mathematical example; no empirical experiment.",
+  "rational_parameter_pairs": 49,
+  "rational_states_reconstructed": 81,
+  "exact_properties": [
+    "nonnegative off-diagonal generator entries",
+    "mass conservation",
+    "symmetric generator",
+    "four independent eigenmodes with claimed rates",
+    "exact two-dimensional pair-mean closure",
+    "exact pair-contrast and internal-difference derivative identities",
+    "connected precisely when epsilon is positive",
+    "zero-coupling conservation of each pair mean",
+    "all-six-equal edge degeneracy at k=epsilon/2",
+    "simple slowest nonconstant mode exactly when k>epsilon/2 for epsilon>0",
+    "alternative balanced pair partitions relax at the faster rate when k>epsilon/2",
+    "full mode reconstruction on 81 rational states"
+  ],
+  "parameter_checks": [
+    {
+      "k": "0",
+      "epsilon": "0",
+      "decay_rates": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "connected": false,
+      "all_edges_equal": true,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "0",
+      "epsilon": "1/10",
+      "decay_rates": [
+        "0",
+        "1/5",
+        "1/10",
+        "1/10"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "0",
+      "epsilon": "1/2",
+      "decay_rates": [
+        "0",
+        "1",
+        "1/2",
+        "1/2"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "0",
+      "epsilon": "1",
+      "decay_rates": [
+        "0",
+        "2",
+        "1",
+        "1"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "0",
+      "epsilon": "2",
+      "decay_rates": [
+        "0",
+        "4",
+        "2",
+        "2"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "0",
+      "epsilon": "10",
+      "decay_rates": [
+        "0",
+        "20",
+        "10",
+        "10"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "0",
+      "epsilon": "100",
+      "decay_rates": [
+        "0",
+        "200",
+        "100",
+        "100"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/10",
+      "epsilon": "0",
+      "decay_rates": [
+        "0",
+        "0",
+        "1/5",
+        "1/5"
+      ],
+      "connected": false,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/10",
+      "epsilon": "1/10",
+      "decay_rates": [
+        "0",
+        "1/5",
+        "3/10",
+        "3/10"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/10",
+      "epsilon": "1/2",
+      "decay_rates": [
+        "0",
+        "1",
+        "7/10",
+        "7/10"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/10",
+      "epsilon": "1",
+      "decay_rates": [
+        "0",
+        "2",
+        "6/5",
+        "6/5"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/10",
+      "epsilon": "2",
+      "decay_rates": [
+        "0",
+        "4",
+        "11/5",
+        "11/5"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/10",
+      "epsilon": "10",
+      "decay_rates": [
+        "0",
+        "20",
+        "51/5",
+        "51/5"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/10",
+      "epsilon": "100",
+      "decay_rates": [
+        "0",
+        "200",
+        "501/5",
+        "501/5"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/2",
+      "epsilon": "0",
+      "decay_rates": [
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "connected": false,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/2",
+      "epsilon": "1/10",
+      "decay_rates": [
+        "0",
+        "1/5",
+        "11/10",
+        "11/10"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/2",
+      "epsilon": "1/2",
+      "decay_rates": [
+        "0",
+        "1",
+        "3/2",
+        "3/2"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/2",
+      "epsilon": "1",
+      "decay_rates": [
+        "0",
+        "2",
+        "2",
+        "2"
+      ],
+      "connected": true,
+      "all_edges_equal": true,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/2",
+      "epsilon": "2",
+      "decay_rates": [
+        "0",
+        "4",
+        "3",
+        "3"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/2",
+      "epsilon": "10",
+      "decay_rates": [
+        "0",
+        "20",
+        "11",
+        "11"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1/2",
+      "epsilon": "100",
+      "decay_rates": [
+        "0",
+        "200",
+        "101",
+        "101"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1",
+      "epsilon": "0",
+      "decay_rates": [
+        "0",
+        "0",
+        "2",
+        "2"
+      ],
+      "connected": false,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1",
+      "epsilon": "1/10",
+      "decay_rates": [
+        "0",
+        "1/5",
+        "21/10",
+        "21/10"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1",
+      "epsilon": "1/2",
+      "decay_rates": [
+        "0",
+        "1",
+        "5/2",
+        "5/2"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1",
+      "epsilon": "1",
+      "decay_rates": [
+        "0",
+        "2",
+        "3",
+        "3"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1",
+      "epsilon": "2",
+      "decay_rates": [
+        "0",
+        "4",
+        "4",
+        "4"
+      ],
+      "connected": true,
+      "all_edges_equal": true,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1",
+      "epsilon": "10",
+      "decay_rates": [
+        "0",
+        "20",
+        "12",
+        "12"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "1",
+      "epsilon": "100",
+      "decay_rates": [
+        "0",
+        "200",
+        "102",
+        "102"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "2",
+      "epsilon": "0",
+      "decay_rates": [
+        "0",
+        "0",
+        "4",
+        "4"
+      ],
+      "connected": false,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "2",
+      "epsilon": "1/10",
+      "decay_rates": [
+        "0",
+        "1/5",
+        "41/10",
+        "41/10"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "2",
+      "epsilon": "1/2",
+      "decay_rates": [
+        "0",
+        "1",
+        "9/2",
+        "9/2"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "2",
+      "epsilon": "1",
+      "decay_rates": [
+        "0",
+        "2",
+        "5",
+        "5"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "2",
+      "epsilon": "2",
+      "decay_rates": [
+        "0",
+        "4",
+        "6",
+        "6"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "2",
+      "epsilon": "10",
+      "decay_rates": [
+        "0",
+        "20",
+        "14",
+        "14"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "2",
+      "epsilon": "100",
+      "decay_rates": [
+        "0",
+        "200",
+        "104",
+        "104"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "10",
+      "epsilon": "0",
+      "decay_rates": [
+        "0",
+        "0",
+        "20",
+        "20"
+      ],
+      "connected": false,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "10",
+      "epsilon": "1/10",
+      "decay_rates": [
+        "0",
+        "1/5",
+        "201/10",
+        "201/10"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "10",
+      "epsilon": "1/2",
+      "decay_rates": [
+        "0",
+        "1",
+        "41/2",
+        "41/2"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "10",
+      "epsilon": "1",
+      "decay_rates": [
+        "0",
+        "2",
+        "21",
+        "21"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "10",
+      "epsilon": "2",
+      "decay_rates": [
+        "0",
+        "4",
+        "22",
+        "22"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "10",
+      "epsilon": "10",
+      "decay_rates": [
+        "0",
+        "20",
+        "30",
+        "30"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "10",
+      "epsilon": "100",
+      "decay_rates": [
+        "0",
+        "200",
+        "120",
+        "120"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "100",
+      "epsilon": "0",
+      "decay_rates": [
+        "0",
+        "0",
+        "200",
+        "200"
+      ],
+      "connected": false,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "100",
+      "epsilon": "1/10",
+      "decay_rates": [
+        "0",
+        "1/5",
+        "2001/10",
+        "2001/10"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "100",
+      "epsilon": "1/2",
+      "decay_rates": [
+        "0",
+        "1",
+        "401/2",
+        "401/2"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "100",
+      "epsilon": "1",
+      "decay_rates": [
+        "0",
+        "2",
+        "201",
+        "201"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "100",
+      "epsilon": "2",
+      "decay_rates": [
+        "0",
+        "4",
+        "202",
+        "202"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "100",
+      "epsilon": "10",
+      "decay_rates": [
+        "0",
+        "20",
+        "210",
+        "210"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    },
+    {
+      "k": "100",
+      "epsilon": "100",
+      "decay_rates": [
+        "0",
+        "200",
+        "300",
+        "300"
+      ],
+      "connected": true,
+      "all_edges_equal": false,
+      "all_exact_checks_pass": true
+    }
+  ],
+  "time_window_examples": [
+    {
+      "k": 100,
+      "epsilon": 1,
+      "relative_tolerance": 0.05,
+      "lower_time": 0.014904140664447715,
+      "upper_time": 0.02564664719377529,
+      "nonempty_window": true,
+      "chosen_time": 0.020275393929111502,
+      "numeric_not_exact": true,
+      "internal_remaining_fraction": 0.01698619744425274,
+      "pair_contrast_remaining_fraction": 0.9602603937042085
+    },
+    {
+      "k": 1,
+      "epsilon": 0,
+      "relative_tolerance": 0.05,
+      "lower_time": 1.4978661367769954,
+      "upper_time": null,
+      "nonempty_window": true,
+      "chosen_time": 1.4978661367769954,
+      "numeric_not_exact": true,
+      "internal_remaining_fraction": 0.05000000000000001,
+      "pair_contrast_remaining_fraction": 1.0
+    },
+    {
+      "k": 0,
+      "epsilon": 1,
+      "relative_tolerance": 0.05,
+      "lower_time": 2.995732273553991,
+      "upper_time": 0.02564664719377529,
+      "nonempty_window": false,
+      "chosen_time": null,
+      "numeric_not_exact": true
+    },
+    {
+      "k": 0.5,
+      "epsilon": 1,
+      "relative_tolerance": 0.05,
+      "lower_time": 1.4978661367769954,
+      "upper_time": 0.02564664719377529,
+      "nonempty_window": false,
+      "chosen_time": null,
+      "numeric_not_exact": true
+    },
+    {
+      "k": 0,
+      "epsilon": 0,
+      "relative_tolerance": 0.05,
+      "lower_time": null,
+      "upper_time": null,
+      "nonempty_window": false,
+      "chosen_time": null,
+      "numeric_not_exact": true
+    }
+  ],
+  "qualifiers": [
+    "The coupling matrix is supplied; its historical formation is not derived.",
+    "The zero generator has no relaxation; already coherent preparations are special cases.",
+    "Nonzero initial pair contrast or a preparation exciting it is needed to observe its retention.",
+    "A time-scale separation warrants this approximation; it does not prove a unique ontology.",
+    "The pair labels are not uniquely favored at equal six-edge rates.",
+    "Invariance under all unrestricted changes of basis is not claimed."
+  ]
+}

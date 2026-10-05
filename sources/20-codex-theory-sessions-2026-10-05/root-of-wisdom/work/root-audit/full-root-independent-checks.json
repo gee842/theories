@@ -1,0 +1,13 @@
+{
+  "period_two": {
+    "states": 128,
+    "nonzero_displacements": 127,
+    "cases": 16256,
+    "passed": true
+  },
+  "unrestricted_schema": {
+    "two_state_relations": 16,
+    "passed": true
+  },
+  "scope": "Independent finite illustrations of the algebraic arguments; no Lean rebuild or empirical validation."
+}

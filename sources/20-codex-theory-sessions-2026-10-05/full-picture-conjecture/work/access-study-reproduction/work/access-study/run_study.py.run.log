@@ -1,0 +1,20 @@
+Main grid completed: 162 initial states; 3.15 seconds
+Control completed: no_output 3.22 seconds
+Control completed: known_safe 3.28 seconds
+Control completed: initially_ready 4.54 seconds
+Control completed: uninformative_test 5.11 seconds
+{
+  "status": "all completed",
+  "main_initial_states": 162,
+  "probes": 7,
+  "main_optimizations": 1134,
+  "control_initial_states": 30,
+  "partition_sensitive_groups_out_of_63_per_access": {
+    "barred": 24,
+    "immediate": 0,
+    "delayed": 15
+  },
+  "nested_access_comparisons": 378,
+  "main_probe_optima_using_paid_tests": 0,
+  "elapsed_seconds": 5.131376833014656
+}

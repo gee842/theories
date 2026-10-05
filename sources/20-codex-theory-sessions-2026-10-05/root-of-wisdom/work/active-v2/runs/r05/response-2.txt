@@ -1,0 +1,1 @@
+{"decisions":[{"id":"A01","kind":"act","target":"choose_0","reason":"The two responses identify w01 with certainty. Choose_0 has zero residual loss and fee 1, with sufficient cash and time."},{"id":"A03","kind":"act","target":"repair_0","reason":"Diagnosis identifies fault_0 with certainty. Repair_0 costs 1 with zero residual loss and finishes exactly at the deadline."}]}

@@ -1,0 +1,244 @@
+{
+  "title": "Toward a generative basis for alignment and coordination",
+  "date": "2026-10-05",
+  "scope": "Conditional formal proofs, constructed finite checks and selected prior-work integration; no empirical generality or novelty certification.",
+  "checks": {
+    "internal_markdown_links_resolve": 75,
+    "recorded_source_hashes_match": true,
+    "json_parsing_passes": true,
+    "primary_assertions": 744,
+    "structural_joint_kernel_pairs": 8192,
+    "independent_structural_branch_pairs": 32768
+  },
+  "files": [
+    {
+      "path": "CHECKPLAN.md",
+      "bytes": 3675,
+      "sha256": "a7a059a839a1f9a62629ab0dc493a9014558b993cec4de00b61f4b14e5184ac9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 15193,
+      "sha256": "d6ebab21179f28d9ce8e8b05fef82c9ace3da738390f1aca2f98ad74e1c08605"
+    },
+    {
+      "path": "STRUCTURAL-CHECKPLAN.md",
+      "bytes": 2094,
+      "sha256": "404f1aef4be0efd2ea2b7c90651d5e4e099f79a1e4343a310f553cfd6f4ce87c"
+    },
+    {
+      "path": "checks/RESULTS.md",
+      "bytes": 4599,
+      "sha256": "d0a9d665d97bd30b13567fd7b542ec83461d285b233c93c3bcc09d41aa429290"
+    },
+    {
+      "path": "checks/REVIEW.md",
+      "bytes": 14938,
+      "sha256": "7b2fb41f0abbdff2e1b892802ad13ae8170f6df9edebc4032eda2a3351e57f09"
+    },
+    {
+      "path": "checks/check_basis.py",
+      "bytes": 14294,
+      "sha256": "91bf94fdba56c8783a84b8ecfdc0d3c2a90f457ab10ee6af916aed8fd1e3c346"
+    },
+    {
+      "path": "checks/draw_closure.py",
+      "bytes": 3656,
+      "sha256": "11af1cd92181868e6a0ea9b3e9d5ccd3dc66abe849892acd8d05e43d76051336"
+    },
+    {
+      "path": "checks/results.json",
+      "bytes": 47731,
+      "sha256": "ad941358378c9736ea449fcbe4b590b990461bc33a10aa8947492b25c5c18901"
+    },
+    {
+      "path": "checks/review_checks.json",
+      "bytes": 1809,
+      "sha256": "5e6efa4d27d1eb3597c59b56d3aaf148aabb7ef889e7e5c58f789adbe3b3f448"
+    },
+    {
+      "path": "checks/review_checks.py",
+      "bytes": 8013,
+      "sha256": "86f1de514c527f484e63917f619783c27a20b47d3a800ff84074cf6cd8c9d0d0"
+    },
+    {
+      "path": "checks/structural_check.py",
+      "bytes": 7780,
+      "sha256": "22631d963edcd8cf96c2a6110bbc452b272dfe310f119870c1d0a2ea799e6fcf"
+    },
+    {
+      "path": "checks/structural_results.json",
+      "bytes": 2247,
+      "sha256": "60b4a413381fda7d649c6535393549984bfd027da21c1b7e58ca003207da642b"
+    },
+    {
+      "path": "figures/closure.pdf",
+      "bytes": 32253,
+      "sha256": "3ebbcead3dbdd0609b6e577b059cd2a809c898f623d48ade9edfa3e0b37996f9"
+    },
+    {
+      "path": "figures/closure.png",
+      "bytes": 211644,
+      "sha256": "11f8e29f9f7217c59ce093641d3218dc7626d8455287233fcbbe83ef98f0744c"
+    },
+    {
+      "path": "formal/FORMAL.md",
+      "bytes": 25477,
+      "sha256": "88ab9787ca40b6c12f9997793ee0285d2602855127380caa99ef44624ea0ca0a"
+    },
+    {
+      "path": "formal/STRUCTURAL-CLOSURE.md",
+      "bytes": 18289,
+      "sha256": "5293ac3553462256cd38521f4f87d7a45cddef7a65d02df6d68f5aa3992e325a"
+    },
+    {
+      "path": "integration/INTEGRATION.md",
+      "bytes": 23724,
+      "sha256": "5b3d65954de6b7418cbb3793d35c4ce8254f10fed9ab6f0bff9e15c1efb444bf"
+    },
+    {
+      "path": "review/REVIEW.md",
+      "bytes": 17876,
+      "sha256": "aedd177749e11e02e96d8e71521360030fcd62ab63621cda8885eea44133fe90"
+    }
+  ],
+  "linked_input_artifacts": [
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/CLAIMS.md",
+      "sha256": "1ccb5807cdb71c2b9200804399187be8959a9c02135b4aa7c573dd2c996c8cc5"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/README.md",
+      "sha256": "1c8ffc4ff15ac124527f9ba87b0982bae665a625ed1d25a510a0ae06ca07a6b1"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/candidate-discovery-math.md",
+      "sha256": "c5eb3323656fbcdfa75aab864fbee7c8e4d0637fc2d36e1f988d394c3a32ae54"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/continuing-participation-math.md",
+      "sha256": "eabead8081283fc49514f722c3ee6d79d1181f6043571026745c126d684a544e"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/endogenous-renewal-math.md",
+      "sha256": "f98c64e0c0c1ac5c9055255199865d926e98c81d06a314f993e0328a94b9854e"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/generative-capacity.md",
+      "sha256": "f0553cf71999d30fb4111ac3b0ce45323e569694d109e923c2e6f4f79faa2265"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/inquiry-renewal-math.md",
+      "sha256": "aad7ed2ace67573eb14e0dcd5898d620399d6fc142247adafb39444833818a1d"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/integrated-dynamics.md",
+      "sha256": "267013db59bcca74f9bfd2c88e374cf1884774a4fe7696cef3a9cc48187ca581"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/model-revision-inheritance-math.md",
+      "sha256": "fe30a7ee2e0d025be858156349d3f884472931465a1fffa7a64114a0a6883777"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/observability-and-correction.md",
+      "sha256": "b600427f9db74393d8cae95b9f2f0e3163237fc4d861b92a0a7e52cdf5487b62"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/plural-correction-math.md",
+      "sha256": "3b21d17e3979a58fb7110afb72917af0de7aca020b39ae83bfa57340fb1fd7b6"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/practice-transmission-model.md",
+      "sha256": "17d6fc1fa1dcdd9f59570368d1b6727e0462dd1d5934b0be4d361ba30ce57a3b"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/prospective-revision-math.md",
+      "sha256": "751b57560cfab36d19a3d9ee775e5b1bb285c06adfa37c4cbceb39a7eefe90ed"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/recoverable-inquiry-math.md",
+      "sha256": "7f4295f59cdf10582ffbc21d00b904c6dd81d7054de2341d2a76ef3612953a4c"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/recurrent-inquiry-math.md",
+      "sha256": "cdf184088c5bc20e8a5e345889b45cf90364674f0d8281b3e53dfa501c097f9c"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/replacement-and-establishment.md",
+      "sha256": "9cfa52d71803ad25f0706cdf8d2755ddc2a6731b7ead3c90187a64cd4b218030"
+    },
+    {
+      "path_from_repository_root": "_process/research/2026-10-04-integrated-evolution/situated-frame-math-audit.md",
+      "sha256": "f0efc94039f3fa8465985759045de345adf8dbce84d7b72e40619a147ce5d7bf"
+    },
+    {
+      "path_from_repository_root": "drafts/2026-10-02-iaseai-selecting-the-selectors/v5-codex/FORMAL.md",
+      "sha256": "0761301c0d0dfa510795cd6ecb10a9d511d082b1573dd5bdf3c7c2a33cda4f3d"
+    },
+    {
+      "path_from_repository_root": "drafts/2026-10-02-iaseai-selecting-the-selectors/v5-codex/THEORY.md",
+      "sha256": "1b2cdae77b991dea42869c4e7baedbb7f89cedb7cefe9c4b55718e225a7560f5"
+    },
+    {
+      "path_from_repository_root": "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/START-HERE.md",
+      "sha256": "b39a9ef17c0cf8fc02255d0db5cb7980960080e811bae2d16955992f75641939"
+    },
+    {
+      "path_from_repository_root": "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/16_S16.md",
+      "sha256": "621d2c65fd96c0c459a37bc29ed6a9431fa363d894a763414bfca3d02abc9f3e"
+    },
+    {
+      "path_from_repository_root": "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/supp/17_S17.md",
+      "sha256": "c663e8ffe50a2becb94bb3ed53a9ecb0b42faa5cbcb52123b414debdaa7d66ce"
+    },
+    {
+      "path_from_repository_root": "experiments/continuing-participation/README.md",
+      "sha256": "36f42087e864ed0dfdd2c19c28039e6d895ec53607898963a4d791c99e4484a7"
+    },
+    {
+      "path_from_repository_root": "experiments/inquiry-renewal/README.md",
+      "sha256": "d152b33a70f045f13a92f45b3c9230a7582b8ee19871313d37afbcdc1f5bf3eb"
+    },
+    {
+      "path_from_repository_root": "experiments/integrated-correction/general-framework/closure-study/FORMAL.md",
+      "sha256": "c271e8296909e93a53ebe1096d6fcb771c39a589fde4fc87072979b5ff57155b"
+    },
+    {
+      "path_from_repository_root": "experiments/integrated-correction/general-framework/closure-study/README.md",
+      "sha256": "0fecce329d15017c43e071aa64cde77ab70767c0bd5989902002b28fc89a65eb"
+    },
+    {
+      "path_from_repository_root": "experiments/plural-correction/README.md",
+      "sha256": "d900e8f8aa54e19c66205b625bcdd737afa01d07817a5d11b7287c7d1e64f4c2"
+    },
+    {
+      "path_from_repository_root": "experiments/prospective-revision/README.md",
+      "sha256": "2f5fe8edb2dae501c78951896ecda02a9a55c525cdf0062a0d07371c42ee1ce6"
+    },
+    {
+      "path_from_repository_root": "experiments/recoverable-inquiry/README.md",
+      "sha256": "99eddb4307ea4cd08e241b26521ac56de8dfa4e4fb0597a8a3802c291e443751"
+    },
+    {
+      "path_from_repository_root": "experiments/recurrent-inquiry/README.md",
+      "sha256": "f4823eff4a739a961e0e54724a21669022a8e69dab6e190b7ae3d5d040b1e94b"
+    },
+    {
+      "path_from_repository_root": "experiments/revisable-inheritance/README.md",
+      "sha256": "b6f61d190f0cdf01b3390eb9a00e66b0fab4b614028b3a66f9238b2d27997be6"
+    },
+    {
+      "path_from_repository_root": "experiments/situated-discovery/README.md",
+      "sha256": "7a9e7eb7e84f349126789a711d3623c2feac3738fb04a3d381f55eb041856294"
+    },
+    {
+      "path_from_repository_root": "sources/19-v5-handoff-2026-10-03/README.md",
+      "sha256": "4bfc986a2a434e5315d914cba12a55a0d6b9d88fd167bbe608cf35d926c3140e"
+    }
+  ],
+  "exclusions": [
+    "MANIFEST.json itself",
+    "__pycache__ generated Python bytecode"
+  ],
+  "input_note": "Hashes identify versions read or linked at delivery; this manifest does not independently certify every earlier experiment."
+}

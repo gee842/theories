@@ -1,0 +1,658 @@
+{
+  "status": "all assertions passed",
+  "exact_game_cases": 24,
+  "enumerated_game_states": 30536,
+  "frontier_rows": 2080,
+  "proportional_scaling_checks": 108,
+  "eight_module_example": [
+    {
+      "k": 1,
+      "duration": 10,
+      "episode_cost": 124,
+      "healthy_net": 30,
+      "minimum_healthy_slots": 0,
+      "replenishment": 0,
+      "minimum_initial_cash": null
+    },
+    {
+      "k": 2,
+      "duration": 6,
+      "episode_cost": 96,
+      "healthy_net": 28,
+      "minimum_healthy_slots": 2,
+      "replenishment": 56,
+      "minimum_initial_cash": null
+    },
+    {
+      "k": 3,
+      "duration": 5,
+      "episode_cost": 94,
+      "healthy_net": 26,
+      "minimum_healthy_slots": 3,
+      "replenishment": 78,
+      "minimum_initial_cash": null
+    },
+    {
+      "k": 4,
+      "duration": 4,
+      "episode_cost": 88,
+      "healthy_net": 24,
+      "minimum_healthy_slots": 4,
+      "replenishment": 96,
+      "minimum_initial_cash": 88
+    },
+    {
+      "k": 5,
+      "duration": 4,
+      "episode_cost": 96,
+      "healthy_net": 22,
+      "minimum_healthy_slots": 4,
+      "replenishment": 88,
+      "minimum_initial_cash": null
+    },
+    {
+      "k": 6,
+      "duration": 4,
+      "episode_cost": 104,
+      "healthy_net": 20,
+      "minimum_healthy_slots": 4,
+      "replenishment": 80,
+      "minimum_initial_cash": null
+    },
+    {
+      "k": 7,
+      "duration": 4,
+      "episode_cost": 112,
+      "healthy_net": 18,
+      "minimum_healthy_slots": 4,
+      "replenishment": 72,
+      "minimum_initial_cash": null
+    },
+    {
+      "k": 8,
+      "duration": 3,
+      "episode_cost": 96,
+      "healthy_net": 16,
+      "minimum_healthy_slots": 5,
+      "replenishment": 80,
+      "minimum_initial_cash": null
+    }
+  ],
+  "installation_examples": [
+    {
+      "installation_fee_per_channel": 1,
+      "least_endowment": 76,
+      "optimal_k": 4,
+      "feasible_design_costs": [
+        [
+          82,
+          3
+        ],
+        [
+          76,
+          4
+        ],
+        [
+          81,
+          5
+        ],
+        [
+          86,
+          6
+        ],
+        [
+          91,
+          7
+        ],
+        [
+          80,
+          8
+        ]
+      ]
+    },
+    {
+      "installation_fee_per_channel": 10,
+      "least_endowment": 109,
+      "optimal_k": 3,
+      "feasible_design_costs": [
+        [
+          109,
+          3
+        ],
+        [
+          112,
+          4
+        ],
+        [
+          126,
+          5
+        ],
+        [
+          140,
+          6
+        ],
+        [
+          154,
+          7
+        ],
+        [
+          152,
+          8
+        ]
+      ]
+    }
+  ],
+  "exact_cases": [
+    {
+      "config": {
+        "n": 1,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 60
+      },
+      "duration": 3,
+      "episode_cost": 12,
+      "healthy_net": 2,
+      "minimum_healthy_slots": 5,
+      "replenishment": 10,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 1033,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 60
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 6,
+      "minimum_healthy_slots": 4,
+      "replenishment": 24,
+      "minimum_initial_cash": 22,
+      "exact_minimum_cash": 22,
+      "states": 1760,
+      "winning_states": 833
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 2,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 60
+      },
+      "duration": 3,
+      "episode_cost": 24,
+      "healthy_net": 4,
+      "minimum_healthy_slots": 5,
+      "replenishment": 20,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 1653,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 3,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 60
+      },
+      "duration": 5,
+      "episode_cost": 34,
+      "healthy_net": 10,
+      "minimum_healthy_slots": 3,
+      "replenishment": 30,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 2418,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 3,
+        "k": 2,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 60
+      },
+      "duration": 4,
+      "episode_cost": 37,
+      "healthy_net": 8,
+      "minimum_healthy_slots": 4,
+      "replenishment": 32,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 2393,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 3,
+        "k": 3,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 60
+      },
+      "duration": 3,
+      "episode_cost": 36,
+      "healthy_net": 6,
+      "minimum_healthy_slots": 5,
+      "replenishment": 30,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 2012,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 4,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 60
+      },
+      "duration": 6,
+      "episode_cost": 48,
+      "healthy_net": 14,
+      "minimum_healthy_slots": 2,
+      "replenishment": 28,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 2739,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 4,
+        "k": 2,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 60
+      },
+      "duration": 4,
+      "episode_cost": 44,
+      "healthy_net": 12,
+      "minimum_healthy_slots": 4,
+      "replenishment": 48,
+      "minimum_initial_cash": 44,
+      "exact_minimum_cash": 44,
+      "states": 3098,
+      "winning_states": 228
+    },
+    {
+      "config": {
+        "n": 4,
+        "k": 3,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 60
+      },
+      "duration": 4,
+      "episode_cost": 52,
+      "healthy_net": 10,
+      "minimum_healthy_slots": 4,
+      "replenishment": 40,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 2365,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 4,
+        "k": 4,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 60
+      },
+      "duration": 3,
+      "episode_cost": 48,
+      "healthy_net": 8,
+      "minimum_healthy_slots": 5,
+      "replenishment": 40,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 1757,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 21
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 6,
+      "minimum_healthy_slots": 4,
+      "replenishment": 24,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 218,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 22
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 6,
+      "minimum_healthy_slots": 4,
+      "replenishment": 24,
+      "minimum_initial_cash": 22,
+      "exact_minimum_cash": 22,
+      "states": 252,
+      "winning_states": 10
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 23
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 6,
+      "minimum_healthy_slots": 4,
+      "replenishment": 24,
+      "minimum_initial_cash": 22,
+      "exact_minimum_cash": 22,
+      "states": 288,
+      "winning_states": 20
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 0,
+        "deadline": 6,
+        "cap": 40
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 6,
+      "minimum_healthy_slots": 0,
+      "replenishment": 0,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 874,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 4,
+        "deadline": 6,
+        "cap": 40
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 6,
+      "minimum_healthy_slots": 0,
+      "replenishment": 0,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 874,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 7,
+        "deadline": 6,
+        "cap": 40
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 6,
+      "minimum_healthy_slots": 3,
+      "replenishment": 18,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 949,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 9,
+        "deadline": 6,
+        "cap": 40
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 6,
+      "minimum_healthy_slots": 5,
+      "replenishment": 30,
+      "minimum_initial_cash": 22,
+      "exact_minimum_cash": 22,
+      "states": 1009,
+      "winning_states": 420
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": -1,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 40
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": -4,
+      "minimum_healthy_slots": 4,
+      "replenishment": -16,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 926,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 0,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 40
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": -2,
+      "minimum_healthy_slots": 4,
+      "replenishment": -8,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 938,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 3,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 40
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 4,
+      "minimum_healthy_slots": 4,
+      "replenishment": 16,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 970,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 5,
+        "u": 2,
+        "gap": 8,
+        "deadline": 6,
+        "cap": 40
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 8,
+      "minimum_healthy_slots": 4,
+      "replenishment": 32,
+      "minimum_initial_cash": 22,
+      "exact_minimum_cash": 22,
+      "states": 988,
+      "winning_states": 381
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 3,
+        "cap": 40
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 6,
+      "minimum_healthy_slots": 4,
+      "replenishment": 24,
+      "minimum_initial_cash": null,
+      "exact_minimum_cash": null,
+      "states": 271,
+      "winning_states": 0
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 1,
+        "p": 4,
+        "u": 2,
+        "gap": 8,
+        "deadline": 4,
+        "cap": 40
+      },
+      "duration": 4,
+      "episode_cost": 22,
+      "healthy_net": 6,
+      "minimum_healthy_slots": 4,
+      "replenishment": 24,
+      "minimum_initial_cash": 22,
+      "exact_minimum_cash": 22,
+      "states": 584,
+      "winning_states": 190
+    },
+    {
+      "config": {
+        "n": 2,
+        "k": 1,
+        "c": 0,
+        "p": 2,
+        "u": 0,
+        "gap": 6,
+        "deadline": 6,
+        "cap": 6
+      },
+      "duration": 4,
+      "episode_cost": 6,
+      "healthy_net": 4,
+      "minimum_healthy_slots": 2,
+      "replenishment": 8,
+      "minimum_initial_cash": 6,
+      "exact_minimum_cash": 6,
+      "states": 167,
+      "winning_states": 8
+    }
+  ],
+  "limits": [
+    "Synthetic model, no empirical fit",
+    "Fixed channel count during operation",
+    "All-module shutdown during a fault wave",
+    "Perfect diagnosis and free intra-episode bit registers",
+    "Finite exact checks support analytic proof, not general machine proof"
+  ]
+}

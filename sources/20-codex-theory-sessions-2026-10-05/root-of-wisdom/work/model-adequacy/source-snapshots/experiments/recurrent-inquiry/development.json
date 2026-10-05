@@ -1,0 +1,306 @@
+[
+  {
+    "parameters": {
+      "h": 0.05,
+      "loss": 1.0,
+      "treatment": 0.4,
+      "diagnostic": 0.08,
+      "success": 0.8,
+      "upkeep": 0.015,
+      "rebuild": 0.08,
+      "cap": 0.65
+    },
+    "horizon": 8,
+    "adaptive": {
+      "untreated_loss": 0.19423005946239993,
+      "treatment_cost": 1.6876233691238394,
+      "diagnostic_cost": 0.22847078399999995,
+      "upkeep_cost": 0.061726271999999985,
+      "rebuilding_cost": 0.0,
+      "tests": 2.855884800000001,
+      "maintained_without_test": 2.2592000000000003,
+      "ready_periods": 5.115084799999998,
+      "inquiry_cost": 0.29019705599999995,
+      "operating_loss": 1.8818534285862394,
+      "total_loss": 2.172050484586239
+    },
+    "best_calendar": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "best_calendar_total": 2.18727746512,
+    "gap": 0.015226980533760148
+  },
+  {
+    "parameters": {
+      "h": 0.05,
+      "loss": 1.0,
+      "treatment": 0.4,
+      "diagnostic": 0.08,
+      "success": 0.8,
+      "upkeep": 0.015,
+      "rebuild": 0.3,
+      "cap": 0.65
+    },
+    "horizon": 8,
+    "adaptive": {
+      "untreated_loss": 0.19423005946239993,
+      "treatment_cost": 1.6876233691238394,
+      "diagnostic_cost": 0.22847078399999995,
+      "upkeep_cost": 0.061726271999999985,
+      "rebuilding_cost": 0.0,
+      "tests": 2.855884800000001,
+      "maintained_without_test": 2.2592000000000003,
+      "ready_periods": 5.115084799999998,
+      "inquiry_cost": 0.29019705599999995,
+      "operating_loss": 1.8818534285862394,
+      "total_loss": 2.172050484586239
+    },
+    "best_calendar": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "best_calendar_total": 2.18727746512,
+    "gap": 0.015226980533760148
+  },
+  {
+    "parameters": {
+      "h": 0.05,
+      "loss": 1.0,
+      "treatment": 0.4,
+      "diagnostic": 0.08,
+      "success": 0.8,
+      "upkeep": 0.06,
+      "rebuild": 0.08,
+      "cap": 0.65
+    },
+    "horizon": 8,
+    "adaptive": {
+      "untreated_loss": 0.26860627119999986,
+      "treatment_cost": 1.6693689958399995,
+      "diagnostic_cost": 0.18883174399999997,
+      "upkeep_cost": 0.027863807999999997,
+      "rebuilding_cost": 0.07168000000000001,
+      "tests": 2.3603968,
+      "maintained_without_test": 0.0,
+      "ready_periods": 2.3603968,
+      "inquiry_cost": 0.288375552,
+      "operating_loss": 1.9379752670399994,
+      "total_loss": 2.2263508190399994
+    },
+    "best_calendar": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_calendar_total": 2.3040906359999997,
+    "gap": 0.07773981696000032
+  },
+  {
+    "parameters": {
+      "h": 0.05,
+      "loss": 1.0,
+      "treatment": 0.4,
+      "diagnostic": 0.08,
+      "success": 0.8,
+      "upkeep": 0.06,
+      "rebuild": 0.3,
+      "cap": 0.65
+    },
+    "horizon": 8,
+    "adaptive": {
+      "untreated_loss": 0.2970800693311999,
+      "treatment_cost": 1.7600975142912,
+      "diagnostic_cost": 0.14797414399999997,
+      "upkeep_cost": 0.07978060799999998,
+      "rebuilding_cost": 0.0,
+      "tests": 1.8496768000000006,
+      "maintained_without_test": 0.48,
+      "ready_periods": 2.3296768000000005,
+      "inquiry_cost": 0.22775475199999995,
+      "operating_loss": 2.0571775836224,
+      "total_loss": 2.2849323356224
+    },
+    "best_calendar": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_calendar_total": 2.33810958,
+    "gap": 0.053177244377600186
+  },
+  {
+    "parameters": {
+      "h": 0.15,
+      "loss": 1.0,
+      "treatment": 0.4,
+      "diagnostic": 0.08,
+      "success": 0.8,
+      "upkeep": 0.015,
+      "rebuild": 0.08,
+      "cap": 0.65
+    },
+    "horizon": 8,
+    "adaptive": {
+      "untreated_loss": 0.15218574245068794,
+      "treatment_cost": 1.7521614339178486,
+      "diagnostic_cost": 0.4513338929971199,
+      "upkeep_cost": 0.08913800349696,
+      "rebuilding_cost": 0.0,
+      "tests": 5.641673662464003,
+      "maintained_without_test": 1.300859904,
+      "ready_periods": 6.942533566464002,
+      "inquiry_cost": 0.5404718964940799,
+      "operating_loss": 1.9043471763685367,
+      "total_loss": 2.4448190728626167
+    },
+    "best_calendar": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "best_calendar_total": 2.4521813290188796,
+    "gap": 0.007362256156262514
+  },
+  {
+    "parameters": {
+      "h": 0.15,
+      "loss": 1.0,
+      "treatment": 0.4,
+      "diagnostic": 0.08,
+      "success": 0.8,
+      "upkeep": 0.015,
+      "rebuild": 0.3,
+      "cap": 0.65
+    },
+    "horizon": 8,
+    "adaptive": {
+      "untreated_loss": 0.15218574245068794,
+      "treatment_cost": 1.7521614339178486,
+      "diagnostic_cost": 0.4513338929971199,
+      "upkeep_cost": 0.08913800349696,
+      "rebuilding_cost": 0.0,
+      "tests": 5.641673662464003,
+      "maintained_without_test": 1.300859904,
+      "ready_periods": 6.942533566464002,
+      "inquiry_cost": 0.5404718964940799,
+      "operating_loss": 1.9043471763685367,
+      "total_loss": 2.4448190728626167
+    },
+    "best_calendar": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "best_calendar_total": 2.4521813290188796,
+    "gap": 0.007362256156262514
+  },
+  {
+    "parameters": {
+      "h": 0.15,
+      "loss": 1.0,
+      "treatment": 0.4,
+      "diagnostic": 0.08,
+      "success": 0.8,
+      "upkeep": 0.06,
+      "rebuild": 0.08,
+      "cap": 0.65
+    },
+    "horizon": 8,
+    "adaptive": {
+      "untreated_loss": 0.3579649936128,
+      "treatment_cost": 1.751554659209216,
+      "diagnostic_cost": 0.2914672230399999,
+      "upkeep_cost": 0.039768314879999996,
+      "rebuilding_cost": 0.15844280319999998,
+      "tests": 3.643340288000001,
+      "maintained_without_test": 0.0,
+      "ready_periods": 3.643340288000001,
+      "inquiry_cost": 0.48967834111999986,
+      "operating_loss": 2.1095196528220157,
+      "total_loss": 2.5991979939420156
+    },
+    "best_calendar": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "best_calendar_total": 2.6673983999999997,
+    "gap": 0.06820040605798372
+  },
+  {
+    "parameters": {
+      "h": 0.15,
+      "loss": 1.0,
+      "treatment": 0.4,
+      "diagnostic": 0.08,
+      "success": 0.8,
+      "upkeep": 0.06,
+      "rebuild": 0.3,
+      "cap": 0.65
+    },
+    "horizon": 8,
+    "adaptive": {
+      "untreated_loss": 0.22341927552614396,
+      "treatment_cost": 1.8160872845361147,
+      "diagnostic_cost": 0.3711258591231999,
+      "upkeep_cost": 0.2688019943424,
+      "rebuilding_cost": 0.0,
+      "tests": 4.639073239040003,
+      "maintained_without_test": 0.84096,
+      "ready_periods": 5.480033239040002,
+      "inquiry_cost": 0.6399278534655999,
+      "operating_loss": 2.0395065600622586,
+      "total_loss": 2.6794344135278587
+    },
+    "best_calendar": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "best_calendar_total": 2.7081628542976,
+    "gap": 0.028728440769741237
+  }
+]

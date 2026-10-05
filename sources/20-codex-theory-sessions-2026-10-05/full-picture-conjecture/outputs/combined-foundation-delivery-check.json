@@ -1,0 +1,10 @@
+{
+  "replayed_scripts": 5,
+  "payload_hashes_unchanged": 37,
+  "source_snapshots_verified": 7,
+  "local_links_checked": 41,
+  "documents_checked": 5,
+  "math_and_fence_balance": "pass",
+  "archive_integrity": "pass",
+  "verification_kind": "exact model and document checks; no empirical or proof-assistant certification"
+}

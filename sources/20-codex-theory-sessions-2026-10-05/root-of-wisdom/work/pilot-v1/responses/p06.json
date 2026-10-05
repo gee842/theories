@@ -1,0 +1,82 @@
+{
+  "batch": "p06",
+  "condition": "discipline",
+  "replicate": 2,
+  "agent": "/root/pilot_p06",
+  "response": {
+    "answers": [
+      {
+        "id": "R04",
+        "choice": "B",
+        "confidence": 100,
+        "reason": "Sol signed after 11:50, and the reading was below 9. Neither release condition holds, so Cedar remains mandatory under this charter."
+      },
+      {
+        "id": "R10",
+        "choice": "A",
+        "confidence": 100,
+        "reason": "Testing and replacing only faulty devices costs 2 + (1/4 × 6) = 3.5 ex ante, below operating’s 4 and immediate replacement’s 6."
+      },
+      {
+        "id": "R05",
+        "choice": "B",
+        "confidence": 100,
+        "reason": "The required audit and patch take three minutes, exceeding the two available. Partial work provides no benefit, so no work minimizes this run’s cost."
+      },
+      {
+        "id": "R09",
+        "choice": "D",
+        "confidence": 100,
+        "reason": "Omitting backup costs 0 under one law and 6 under the other; backup costs 5. Optimal actions differ within the current class."
+      },
+      {
+        "id": "R03",
+        "choice": "B",
+        "confidence": 100,
+        "reason": "Omitting backup costs either 0 or 4, both below 5. It remains optimal throughout the current class despite unidentified exact expected loss."
+      },
+      {
+        "id": "R01",
+        "choice": "C",
+        "confidence": 100,
+        "reason": "Operating costs 4 in expectation. Optimal testing costs 3 + (1/4 × 6) = 4.5, so operating remains the ex ante optimum."
+      },
+      {
+        "id": "R08",
+        "choice": "D",
+        "confidence": 100,
+        "reason": "Both signatures preceded 11:50, satisfying one sufficient release condition. Elm’s higher score then makes switching optimal among permitted choices."
+      },
+      {
+        "id": "R06",
+        "choice": "A",
+        "confidence": 100,
+        "reason": "P assigns each person two of six equiprobable tickets, satisfying the exact probability constraint. Its verified score 10 exceeds Q’s 8."
+      },
+      {
+        "id": "R07",
+        "choice": "D",
+        "confidence": 100,
+        "reason": "The sequential audit and patch finish at minute 8 and cost 4 within budget. They eliminate loss 12, making permitted repair optimal."
+      },
+      {
+        "id": "R11",
+        "choice": "A",
+        "confidence": 100,
+        "reason": "P’s losses remain below Q’s in every current model: 1 < 8, 3 < 7, and 6 < 9. Future expansions remain unassessed."
+      },
+      {
+        "id": "R12",
+        "choice": "C",
+        "confidence": 100,
+        "reason": "P gives Ivo, Nia, and Tao probabilities 1/2, 1/3, and 1/6, violating the hard constraint. Q is the only permitted policy."
+      },
+      {
+        "id": "R02",
+        "choice": "C",
+        "confidence": 100,
+        "reason": "In added model w, P loses 6 while Q loses 2. This counterexample defeats the current pointwise certificate without invalidating its old-class version."
+      }
+    ]
+  }
+}

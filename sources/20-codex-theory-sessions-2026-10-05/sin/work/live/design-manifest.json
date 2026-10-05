@@ -1,0 +1,194 @@
+[
+  {
+    "id": "L01",
+    "stratum": "adequate",
+    "private_sha256": "d9840a17689c75983f3a389ca01d68f8e4afe96e63b510263d2428301fb3d8d2",
+    "prompt_sha256": "8ee641bd655442925ece9907c795a1e28193f8d4e4e5b2b22eb27b7c4a59c246"
+  },
+  {
+    "id": "L02",
+    "stratum": "challenge",
+    "private_sha256": "b8328668259c0cdc0376b33cb56ba99f14fbc0adff45559e99312c8194510d2f",
+    "prompt_sha256": "e2db9e43b58ffefabca278b69326cdbcece2082b9705e1fd068c61c7855164f6"
+  },
+  {
+    "id": "L03",
+    "stratum": "challenge",
+    "private_sha256": "ea57088e11fb0808789b570ec011e91ef30cb89f7a7c7f0c12c55957b70846b0",
+    "prompt_sha256": "1d6560e594e84abb3825eb15f6ec01b5bfebee555f37837adf65ada1008eb558"
+  },
+  {
+    "id": "L04",
+    "stratum": "challenge",
+    "private_sha256": "39be86258a95f46b673289400ccb6d54c70abe8350baa1280767dca4c17eaa47",
+    "prompt_sha256": "dda737c77f950139dfef54a5732adae2fdc2545ab0b95971bdf96c333687461a"
+  },
+  {
+    "id": "L05",
+    "stratum": "adequate",
+    "private_sha256": "d3b36fabc52628f66dfa08afaf489b307573c6e730b48b2dd6de4ee7bfc50b29",
+    "prompt_sha256": "dbeb005d8210f579c05f36b0d826741ae11a4c3e831d703f62ddc3668cabc209"
+  },
+  {
+    "id": "L06",
+    "stratum": "challenge",
+    "private_sha256": "7fc65095081a56f1c0c8d861c29c051bd2057a0c129a84078219707cced74bfb",
+    "prompt_sha256": "85fd609bf6b2e3d2b16f656333a1b395c37757c92fb7d4ae721313862369bc65"
+  },
+  {
+    "id": "L07",
+    "stratum": "adequate",
+    "private_sha256": "6a41f99819be85c2a590f4f20ef6ae896196abdbc4f4e19e1bb33e1cd68fbdd6",
+    "prompt_sha256": "6de06e87027ec50afd8179a75cc31a0bcca6464998502aae83a21b5ce0800752"
+  },
+  {
+    "id": "L08",
+    "stratum": "challenge",
+    "private_sha256": "1548624b820d8412351b3ac355e54ca7da1561e8b3ad40f9b06b0115b0095301",
+    "prompt_sha256": "aec5fea7ac1d7750d579917778bd0f97ea24b109d98353b101a1a22ec5fa83d6"
+  },
+  {
+    "id": "L09",
+    "stratum": "challenge",
+    "private_sha256": "e2b5b2faea3077fadff99bd1b67c44322ecdd6869c1a5e42e485193da366a9d7",
+    "prompt_sha256": "908e5f106c52181f5ebc4ef13eefe655ad47beb50b576bdbaa3263dafd5b4807"
+  },
+  {
+    "id": "L10",
+    "stratum": "adequate",
+    "private_sha256": "32d49480535dda3f803ba80758ec78319808c83ad1616d66355c73ef9a958c6e",
+    "prompt_sha256": "e724390e60fe536614be5858e6b615f57c18c3f8f0809c01b90f16a44df2499c"
+  },
+  {
+    "id": "L11",
+    "stratum": "challenge",
+    "private_sha256": "9b0afaccc87f7cd54e004a00588d04b4f6b6eaf38b62d6b33bdc081eb1aa25a7",
+    "prompt_sha256": "1136c81674e24f881539817f99b37bb76a6fdaffce1b56e9c67b802b980c6592"
+  },
+  {
+    "id": "L12",
+    "stratum": "challenge",
+    "private_sha256": "e0fc154ffbe92f9e7d5957bd6c9b434ecb900f129285d77904c7b6adbc7c4381",
+    "prompt_sha256": "3f5cf81bba99ec79a96f8ab84d655ef84397c58dbff4e885aef16fd5b116522c"
+  },
+  {
+    "id": "L13",
+    "stratum": "challenge",
+    "private_sha256": "a0dd232e6110818dfe943ace5203481efb406d4afbc648a5c270a34a3f5bfceb",
+    "prompt_sha256": "20e902c0137b9171d04343b2a6932ea88811ae3e195e787011f6b9f4cacc22bb"
+  },
+  {
+    "id": "L14",
+    "stratum": "challenge",
+    "private_sha256": "5f43558b6e1d2fdbf34ef6014397af0b9b11e73ae75994a0580e08055169cbd0",
+    "prompt_sha256": "d4a2c5992a74eef7b6baa9a24a96cb0f04e2c6cd6d64d0118da5db9315364b25"
+  },
+  {
+    "id": "L15",
+    "stratum": "challenge",
+    "private_sha256": "4c53f888f06bf36302892f8ffb9cc1384fcf739d97b0c23c2f586d752119b12f",
+    "prompt_sha256": "02b6284ff9816a2ef40db0b85ceed2f9759f30d5284c81fe10f513eec3fa747b"
+  },
+  {
+    "id": "L16",
+    "stratum": "adequate",
+    "private_sha256": "454412d21daf01ea83759b8de0048dee11153c1cf49e3f81b218c42a3091fe02",
+    "prompt_sha256": "4f5f4703625dff09e5ae42b250cff11028457c146470b705d5611316d907901b"
+  },
+  {
+    "id": "L17",
+    "stratum": "challenge",
+    "private_sha256": "c252b39f2868d7226650172cc7f81ec6b3aa47471ee25b4c50e8820fe153e24a",
+    "prompt_sha256": "c3e3ee0d77da8fc40542b27dd42e32da4d907a48c8ab90c39bb48c648b867d0c"
+  },
+  {
+    "id": "L18",
+    "stratum": "challenge",
+    "private_sha256": "1dd31c7f2eed9911b46128fdb0f45da8a7212b0de06caacab170391a81d47989",
+    "prompt_sha256": "e519f596439fcf119e33496baa2055e7f6130906f4a37d85232c84aa5bc2ac94"
+  },
+  {
+    "id": "L19",
+    "stratum": "challenge",
+    "private_sha256": "134da53d047c0d14b13ff3178168f3343563f25102506102aca77dd5f8883326",
+    "prompt_sha256": "7ea22f52e5e57586ef8653ade50bd508ae37f4ff2fadeacb2f5bc14ab4a696b6"
+  },
+  {
+    "id": "L20",
+    "stratum": "challenge",
+    "private_sha256": "f2e73307a97988cd4120afe6ad848b024691e4f0ad738c3edf0c3b8d1195c574",
+    "prompt_sha256": "06b319c10ff3df6d819be68fecda89c05e8360747a93274b15781d539c15e093"
+  },
+  {
+    "id": "L21",
+    "stratum": "adequate",
+    "private_sha256": "b0677feb4896b1013148606c82af52b27fedfbbacffbb3089ff138d6cc9c298b",
+    "prompt_sha256": "d99429adecd08842f1342f9dc9f9f20ed5aabd43e93d4255e0541c4a00a73ee6"
+  },
+  {
+    "id": "L22",
+    "stratum": "challenge",
+    "private_sha256": "b3113b3ab67087951c68a5f1a762cea99222cdeb454f438105e828abf8d977a3",
+    "prompt_sha256": "6a7840f4a75a1ae5487f7701a78e9f3b0dbf13afcd123eb5e68a1c146f35eb71"
+  },
+  {
+    "id": "L23",
+    "stratum": "challenge",
+    "private_sha256": "512d5bec98b2e33b2ab7495ea6ccef662cc48a39f191ed1a446c4dec7bfcd90c",
+    "prompt_sha256": "e405ad0a7b41bdd02c77628836f4cffba837b7c7e49e93ef24130d41d8c06680"
+  },
+  {
+    "id": "L24",
+    "stratum": "adequate",
+    "private_sha256": "e7c7290b915d5c1bc9444aa33c43fa70f61e5e5ef8257050ffbff1642d34604e",
+    "prompt_sha256": "6758c7dcdb01ce27f3bf383e696091381a4e1f452e8990df72d8c949e5e89671"
+  },
+  {
+    "id": "L25",
+    "stratum": "challenge",
+    "private_sha256": "257b5153b762f80ab32c45bcf2b57e9fd3d6ce8f8febb98d95fc4e95eae26585",
+    "prompt_sha256": "99bedd33118605b4cafafbdc5de549259f3634541d7ede9e5709bcfe726b9430"
+  },
+  {
+    "id": "L26",
+    "stratum": "challenge",
+    "private_sha256": "e0fa6506cfdb7520581ee612e5e4dcd99bad6f199ea89ce0529055b8306912ff",
+    "prompt_sha256": "938fcf9abc1574a683d80549708cde276468c760e828c716859a2ec5d579d030"
+  },
+  {
+    "id": "L27",
+    "stratum": "challenge",
+    "private_sha256": "967916d43e46cee43bd2f0e044df3c652e990939007cd25e3cd1739b5fa84368",
+    "prompt_sha256": "c2c44a0c45ad9e36c9e7aa80d2e0d80bf37f17869792091d70c21754c07bc12b"
+  },
+  {
+    "id": "L28",
+    "stratum": "adequate",
+    "private_sha256": "60a44676a69847d3356fb45ca721d3c363ea41f6eb915ed68cc98cc432aa9510",
+    "prompt_sha256": "19345c3c21a2dcd759634a5a8b44a01cd820f0bb5d6f04c9f99de40896f6d283"
+  },
+  {
+    "id": "L29",
+    "stratum": "challenge",
+    "private_sha256": "9538bd3e0b9834954b96eb0689aebc8dfb8ccea3f6a8647fa6f482a833dbd10e",
+    "prompt_sha256": "07062e7b17e1b8a630e71ad91ef2a6186275ecd285e2c6d546843fd6d87bcd93"
+  },
+  {
+    "id": "L30",
+    "stratum": "challenge",
+    "private_sha256": "276178e9da5db30df1f840026e517e1e265d61fdabcc71c68e3134abc483681a",
+    "prompt_sha256": "940261f9d8f48d0bcf92089d8ce88b2727837516e72775364a6b719ea0e1b317"
+  },
+  {
+    "id": "L31",
+    "stratum": "challenge",
+    "private_sha256": "0a7b94312a6d4598b9a89c27c549feb7d101a54fb177f347ad2de22a0733442e",
+    "prompt_sha256": "bbe25984c2b7eb0f9a9956045a268f8db23beea6586ba19570f3ad0b66fe63f8"
+  },
+  {
+    "id": "L32",
+    "stratum": "challenge",
+    "private_sha256": "77cc69f17bbd58433d0bb5eba7cf4d46ee994b17b471884d82f919e303cf1be8",
+    "prompt_sha256": "c657fdaec2bccf85fed808ec9210e2524dcac839ecc4d093731f005fa3481ca2"
+  }
+]

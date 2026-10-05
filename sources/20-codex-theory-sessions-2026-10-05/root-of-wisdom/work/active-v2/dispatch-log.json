@@ -1,0 +1,35 @@
+{
+  "recorded_at": "2026-10-05T05:27:48.450756+07:00",
+  "events": [
+    {
+      "batch": "r01",
+      "participant": "/root/active_p01",
+      "phase": "initial dispatched"
+    },
+    {
+      "batch": "r02",
+      "participant": "/root/active_p02",
+      "phase": "initial dispatched"
+    },
+    {
+      "batch": "r03",
+      "participant": "/root/active_p03",
+      "phase": "initial dispatched"
+    },
+    {
+      "batch": "r04",
+      "participant": "/root/active_p04",
+      "phase": "initial dispatched"
+    },
+    {
+      "batch": "r05",
+      "participant": "/root/active_p05",
+      "phase": "initial dispatched"
+    },
+    {
+      "batch": "r06",
+      "participant": "/root/active_p06",
+      "phase": "initial dispatched"
+    }
+  ]
+}

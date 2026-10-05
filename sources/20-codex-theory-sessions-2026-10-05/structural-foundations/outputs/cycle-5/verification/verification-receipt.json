@@ -1,0 +1,229 @@
+{
+  "created_utc": "2026-10-04T22:16:13.250216+00:00",
+  "status": "all three checkers passed in coordinator final runs",
+  "checks": [
+    {
+      "model": "funded-selection-results",
+      "status": "all assertions passed"
+    },
+    {
+      "model": "paid-evaluation-results",
+      "status": "all assertions passed"
+    },
+    {
+      "model": "population-scale-results",
+      "status": "all assertions passed"
+    }
+  ],
+  "funded_selection_counts": {
+    "ledger_states_checked": 11700,
+    "kernel_rows_checked": 11700,
+    "forecast_equivalence_states": 3900,
+    "pure_long_persistence_states": 1040,
+    "pure_short_decline_states": 1040
+  },
+  "paid_evaluation_counts": {
+    "actual_controller_states": 8676,
+    "complete_frontiers": 72,
+    "selected_cases": 15
+  },
+  "population_scale_counts": {
+    "reserve_boundary_checks": 21600,
+    "population_kernel_rows_checked": 405,
+    "kernel_composition_checks": 135,
+    "extinction_generation": 8,
+    "independent_branching_exact_generations": [
+      {
+        "generation": 0,
+        "extinction_probability": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "mean_viable_carriers": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "variance": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "nonzero_count_states": 1
+      },
+      {
+        "generation": 1,
+        "extinction_probability": {
+          "exact": "1/4",
+          "decimal": 0.25
+        },
+        "mean_viable_carriers": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "variance": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "nonzero_count_states": 3
+      },
+      {
+        "generation": 2,
+        "extinction_probability": {
+          "exact": "25/64",
+          "decimal": 0.390625
+        },
+        "mean_viable_carriers": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "variance": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "nonzero_count_states": 5
+      },
+      {
+        "generation": 3,
+        "extinction_probability": {
+          "exact": "7921/16384",
+          "decimal": 0.48345947265625
+        },
+        "mean_viable_carriers": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "variance": {
+          "exact": "3/2",
+          "decimal": 1.5
+        },
+        "nonzero_count_states": 9
+      },
+      {
+        "generation": 4,
+        "extinction_probability": {
+          "exact": "590733025/1073741824",
+          "decimal": 0.5501630017533898
+        },
+        "mean_viable_carriers": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "variance": {
+          "exact": "2",
+          "decimal": 2.0
+        },
+        "nonzero_count_states": 17
+      },
+      {
+        "generation": 5,
+        "extinction_probability": {
+          "exact": "2770476522953572801/4611686018427387904",
+          "decimal": 0.60075133300127
+        },
+        "mean_viable_carriers": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "variance": {
+          "exact": "5/2",
+          "decimal": 2.5
+        },
+        "nonzero_count_states": 33
+      },
+      {
+        "generation": 6,
+        "extinction_probability": {
+          "exact": "54496323787368204373233033868754097025/85070591730234615865843651857942052864",
+          "decimal": 0.6406012075263358
+        },
+        "mean_viable_carriers": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "variance": {
+          "exact": "3",
+          "decimal": 3.0
+        },
+        "nonzero_count_states": 65
+      },
+      {
+        "generation": 7,
+        "extinction_probability": {
+          "exact": "19478923907097682900047670470044963078711659459439612523537770193495954712321/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+          "decimal": 0.6728930805342177
+        },
+        "mean_viable_carriers": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "variance": {
+          "exact": "7/2",
+          "decimal": 3.5
+        },
+        "nonzero_count_states": 129
+      }
+    ]
+  },
+  "files": [
+    {
+      "file": "check_funded_selection.py",
+      "bytes": 14288,
+      "sha256": "72393d23341e9fbce072e1f4a56bd86c20e644607cf84c52dd60138ef2fe1553"
+    },
+    {
+      "file": "check_paid_evaluation.py",
+      "bytes": 14461,
+      "sha256": "8c26a310384676e56d6005c2aaa9386ee344a86d3bf73feed4a6e2f5350169c2"
+    },
+    {
+      "file": "check_population_scale.py",
+      "bytes": 10455,
+      "sha256": "31b240e9502d82fb2628806903f34a86d671fb7030cb071551d537931272d58e"
+    },
+    {
+      "file": "funded-selection-results.json",
+      "bytes": 659624,
+      "sha256": "9d3421179e7e04d64ca6c70003aa48d326fe2adaf4df1cc1dad4493ab5cfeb80"
+    },
+    {
+      "file": "paid-evaluation-controller-certificates.json",
+      "bytes": 1031349,
+      "sha256": "263687e71aa3bf11b1c047936bf1b541f6505d97e2087ed47f5b438aebac9fd1"
+    },
+    {
+      "file": "paid-evaluation-frontier.csv",
+      "bytes": 2592,
+      "sha256": "1925c8dbb314a582872dd85a1081a3289f4bbf7e1df07cb76556fdcbb04577f9"
+    },
+    {
+      "file": "paid-evaluation-results.json",
+      "bytes": 51586,
+      "sha256": "93e6186481f8b8e04ba9ada5f8f8055b569b86efe9201d03e2c241986cd10892"
+    },
+    {
+      "file": "population-scale-results.json",
+      "bytes": 8653,
+      "sha256": "78464f092d5e979fea2a73fd1d5764f3e398c2581e687c9bd6767712aa55fa6c"
+    },
+    {
+      "file": "population-trajectories.csv",
+      "bytes": 1738,
+      "sha256": "1c63aa6db07976bc1bb5e3090cabb378c7bc1f8e573a696b60dd3ad469dc8208"
+    }
+  ],
+  "read_only_dependencies": [
+    {
+      "file": "../../cycle-4/verification/check_adoption_dynamics.py",
+      "bytes": 13303,
+      "sha256": "46bbc0cf89620f20dbd9539ac3317ca39811a7b792251a2bacb920769c4f74cf",
+      "matches_cycle_4_receipt": true
+    }
+  ],
+  "review": "Complementary agents independently reviewed funded-selection accounting and kernels, the mutation block proof, paid evaluation and asset conservation, population scaling, and the synthesis. Coordinator inspected reports and reran all three checkers. Clarifications from synthesis review were incorporated.",
+  "limits": [
+    "Synthetic mechanisms and exact computations are not empirical validation.",
+    "General theorems and infinite-horizon conclusions have prose proofs; finite examples do not machine-prove them.",
+    "The evaluator and population experiments have different declared funding boundaries and supplied institutions.",
+    "Continuing external grants/feedstock, timing, retirement, caps, observation and joint copying assumptions are explicit.",
+    "The origin or revision of the outer evaluation and funding institutions is not derived."
+  ]
+}

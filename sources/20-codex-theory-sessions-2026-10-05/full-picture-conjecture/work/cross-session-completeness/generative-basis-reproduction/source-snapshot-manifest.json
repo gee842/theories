@@ -1,0 +1,15 @@
+{
+  "source": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis",
+  "files": {
+    "CHECKPLAN.md": "a7a059a839a1f9a62629ab0dc493a9014558b993cec4de00b61f4b14e5184ac9",
+    "STRUCTURAL-CHECKPLAN.md": "404f1aef4be0efd2ea2b7c90651d5e4e099f79a1e4343a310f553cfd6f4ce87c",
+    "formal/FORMAL.md": "88ab9787ca40b6c12f9997793ee0285d2602855127380caa99ef44624ea0ca0a",
+    "formal/STRUCTURAL-CLOSURE.md": "5293ac3553462256cd38521f4f87d7a45cddef7a65d02df6d68f5aa3992e325a",
+    "checks/check_basis.py": "91bf94fdba56c8783a84b8ecfdc0d3c2a90f457ab10ee6af916aed8fd1e3c346",
+    "checks/structural_check.py": "22631d963edcd8cf96c2a6110bbc452b272dfe310f119870c1d0a2ea799e6fcf",
+    "checks/review_checks.py": "86f1de514c527f484e63917f619783c27a20b47d3a800ff84074cf6cd8c9d0d0",
+    "checks/results.json": "ad941358378c9736ea449fcbe4b590b990461bc33a10aa8947492b25c5c18901",
+    "checks/structural_results.json": "60b4a413381fda7d649c6535393549984bfd027da21c1b7e58ca003207da642b",
+    "checks/review_checks.json": "5e6efa4d27d1eb3597c59b56d3aaf148aabb7ef889e7e5c58f789adbe3b3f448"
+  }
+}

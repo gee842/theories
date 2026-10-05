@@ -1,0 +1,280 @@
+Independent analysis of raw held-out arrays, 5 October 2026
+All numerical means and contrasts below are recomputed from all-results.npz without importing the simulator. Arrays comprise 80 cases × 1000 paired seed trajectories = 80,000 recorded policy episodes; per-case inference n=1000, not time steps. Extra exact-equivalence reruns are not independent data.
+Initial hypotheses were conditional: retained calibration might improve a simple method, auditing might help bias switches, biased references might create shared failure, and nested/flat equivalence should defeat claims from labels. These hypotheses must be distinguished from the observed comparisons below.
+
+PRIMARY contrasts: retained minus development-selected joint_y_only; negative favors retained.
+Bonferroni normal critical value 2.734368786533, 99.375% individual two-sided intervals; eight prespecified tests. Margin .02.
+matched  constant       delta=+1.001252123 SE=0.031278389 CI=[+0.915725473,+1.086778773] harm beyond margin
+matched  switch30       delta=+3.078679014 SE=0.067640364 CI=[+2.893725316,+3.263632713] harm beyond margin
+matched  reference_bias delta=+2.572793446 SE=0.046804961 CI=[+2.444811422,+2.700775470] harm beyond margin
+matched  no_bias        delta=+0.686024334 SE=0.021523963 CI=[+0.627169882,+0.744878786] harm beyond margin
+adaptive constant       delta=+1.313724594 SE=0.034397243 CI=[+1.219669846,+1.407779342] harm beyond margin
+adaptive switch30       delta=+15.328385571 SE=0.347446960 CI=[+14.378337448,+16.278433693] harm beyond margin
+adaptive reference_bias delta=+2.872076440 SE=0.063158635 CI=[+2.699377439,+3.044775441] harm beyond margin
+adaptive no_bias        delta=+0.986641275 SE=0.025299766 CI=[+0.917462384,+1.055820167] harm beyond margin
+
+DESCRIPTIVE contrasts: 95% paired intervals; no multiplicity-controlled claims.
+matched  constant       audit       -retained  delta=+2.323369 CI=[+2.205759,+2.440979]
+matched  constant       retained    -direct    delta=-13.386440 CI=[-14.008434,-12.764446]
+matched  constant       joint       -retained  delta=-1.720646 CI=[-1.764516,-1.676776]
+matched  constant       joint_y_only-joint     delta=+0.719394 CI=[+0.665828,+0.772959]
+matched  switch30       audit       -retained  delta=+0.165732 CI=[+0.097844,+0.233621]
+matched  switch30       retained    -direct    delta=-11.113389 CI=[-11.636047,-10.590730]
+matched  switch30       joint       -retained  delta=-3.799463 CI=[-3.932599,-3.666327]
+matched  switch30       joint_y_only-joint     delta=+0.720784 CI=[+0.667188,+0.774380]
+matched  reference_bias audit       -retained  delta=+2.037191 CI=[+1.886118,+2.188264]
+matched  reference_bias retained    -direct    delta=-11.985338 CI=[-12.606827,-11.363849]
+matched  reference_bias joint       -retained  delta=-2.707459 CI=[-2.787377,-2.627540]
+matched  reference_bias joint_y_only-joint     delta=+0.134665 CI=[+0.078194,+0.191136]
+matched  no_bias        audit       -retained  delta=-0.166617 CI=[-0.187096,-0.146138]
+matched  no_bias        retained    -direct    delta=+0.505975 CI=[+0.484602,+0.527348]
+matched  no_bias        joint       -retained  delta=-1.175354 CI=[-1.200577,-1.150131]
+matched  no_bias        joint_y_only-joint     delta=+0.489330 CI=[+0.454671,+0.523989]
+matched  switch32       audit       -retained  delta=-0.747730 CI=[-0.833967,-0.661493]
+matched  switch32       retained    -direct    delta=-7.280299 CI=[-7.641362,-6.919236]
+matched  switch32       joint       -retained  delta=-7.446790 CI=[-7.741818,-7.151763]
+matched  switch32       joint_y_only-joint     delta=+0.719573 CI=[+0.665984,+0.773162]
+adaptive constant       audit       -retained  delta=+3.342060 CI=[+3.155541,+3.528578]
+adaptive constant       retained    -direct    delta=-16.211258 CI=[-16.963339,-15.459177]
+adaptive constant       joint       -retained  delta=-1.934711 CI=[-1.986369,-1.883053]
+adaptive constant       joint_y_only-joint     delta=+0.620986 CI=[+0.567495,+0.674478]
+adaptive switch30       audit       -retained  delta=-9.383962 CI=[-10.228865,-8.539060]
+adaptive switch30       retained    -direct    delta=-1.682907 CI=[-1.938754,-1.427060]
+adaptive switch30       joint       -retained  delta=-15.949323 CI=[-16.638686,-15.259959]
+adaptive switch30       joint_y_only-joint     delta=+0.620937 CI=[+0.567449,+0.674425]
+adaptive reference_bias audit       -retained  delta=+3.004327 CI=[+2.732573,+3.276081]
+adaptive reference_bias retained    -direct    delta=-14.737319 CI=[-15.492441,-13.982198]
+adaptive reference_bias joint       -retained  delta=-3.421267 CI=[-3.536667,-3.305867]
+adaptive reference_bias joint_y_only-joint     delta=+0.549191 CI=[+0.494431,+0.603951]
+adaptive no_bias        audit       -retained  delta=-0.354718 CI=[-0.385460,-0.323976]
+adaptive no_bias        retained    -direct    delta=+0.579926 CI=[+0.546743,+0.613110]
+adaptive no_bias        joint       -retained  delta=-1.377559 CI=[-1.414961,-1.340157]
+adaptive no_bias        joint_y_only-joint     delta=+0.390918 CI=[+0.356603,+0.425232]
+adaptive switch32       audit       -retained  delta=+13.538198 CI=[+12.668552,+14.407843]
+adaptive switch32       retained    -direct    delta=-4.283730 CI=[-4.589466,-3.977993]
+adaptive switch32       joint       -retained  delta=-13.368506 CI=[-13.942203,-12.794808]
+adaptive switch32       joint_y_only-joint     delta=+0.620954 CI=[+0.567465,+0.674444]
+
+PER-CASE COMPONENTS: means across seed clusters. Coverage target is .90. NPE target of 1 requires correctly specified conditional mean/variance; approximate forecasts need not satisfy it.
+stage world policy | total control state effort senses work | estimateMSE forecastMSE Brier coverage90 width90 NPE eventrate biasMSE
+matched constant raw | 21.748977 21.484977 21.361211 2.475322 12.000000 240.000000 0.725709 0.467080 0.256096 0.961833 2.253309 0.995551 0.612967 0.661000
+matched constant direct | 15.861653 15.597653 15.384135 4.270370 12.000000 240.000000 0.581296 0.374668 0.199668 0.949283 1.844776 0.994137 0.451500 0.661000
+matched constant retained | 2.475213 2.202913 2.127207 1.514132 12.000000 323.000000 0.089223 0.059767 0.017014 0.918350 0.815661 0.900174 0.014550 0.039401
+matched constant audit | 4.798583 4.523883 4.439315 1.691345 12.000000 347.000000 0.166989 0.109513 0.063175 0.930150 1.091733 0.879143 0.079650 0.112310
+matched constant joint | 0.754567 0.435767 0.421778 0.279796 12.000000 788.000000 0.004327 0.005321 0.000420 0.899233 0.238035 1.005393 0.001450 0.026055
+matched constant joint_y_only | 1.473961 1.162361 1.154664 0.153940 12.000000 716.000000 0.024304 0.018164 0.009833 0.899283 0.357634 1.000579 0.013567 0.049042
+matched switch30 raw | 21.235114 20.971114 20.819655 3.029188 12.000000 240.000000 0.722298 0.464985 0.256176 0.962750 2.253309 0.991088 0.599050 0.661000
+matched switch30 direct | 15.668212 15.404212 15.183106 4.422124 12.000000 240.000000 0.578745 0.373056 0.199533 0.949950 1.844776 0.990703 0.445950 0.661000
+matched switch30 retained | 4.554823 4.282523 4.193002 1.790427 12.000000 323.000000 0.161666 0.106099 0.066383 0.832433 0.815661 1.973398 0.072967 0.112586
+matched switch30 audit | 4.720555 4.445855 4.361047 1.696165 12.000000 347.000000 0.164620 0.107998 0.063248 0.934050 1.089496 0.859576 0.079533 0.110431
+matched switch30 joint | 0.755360 0.436560 0.422563 0.279950 12.000000 788.000000 0.004360 0.005341 0.000420 0.899067 0.238035 1.009031 0.001450 0.038260
+matched switch30 joint_y_only | 1.476144 1.164544 1.156832 0.154235 12.000000 716.000000 0.024385 0.018214 0.009833 0.898450 0.357634 1.007868 0.013567 0.061796
+matched reference_bias raw | 21.748977 21.484977 21.361211 2.475322 12.000000 240.000000 0.725709 0.467080 0.256096 0.961833 2.253309 0.995551 0.612967 0.661000
+matched reference_bias direct | 16.032092 15.768092 15.539650 4.568843 12.000000 240.000000 0.593749 0.382616 0.201970 0.783000 1.844776 2.932813 0.451200 0.661000
+matched reference_bias retained | 4.046754 3.774454 3.694964 1.589814 12.000000 323.000000 0.141280 0.092977 0.033678 0.794350 0.815661 1.635616 0.035517 0.091649
+matched reference_bias audit | 6.083945 5.809245 5.721340 1.758104 12.000000 347.000000 0.209772 0.136792 0.084256 0.858017 1.085498 1.312570 0.107217 0.156451
+matched reference_bias joint | 1.339296 1.020496 1.002762 0.354670 12.000000 788.000000 0.024795 0.018348 0.001973 0.532433 0.238035 3.873828 0.002083 0.049806
+matched reference_bias joint_y_only | 1.473961 1.162361 1.154664 0.153940 12.000000 716.000000 0.024304 0.018164 0.009833 0.899283 0.357634 1.000579 0.013567 0.049042
+matched no_bias raw | 1.638406 1.374406 1.299683 1.494461 12.000000 240.000000 0.062246 0.042591 0.220314 1.000000 2.253309 0.090779 0.002833 0.000000
+matched no_bias direct | 1.423886 1.159886 1.096289 1.271949 12.000000 240.000000 0.050365 0.034927 0.176289 0.979933 1.844776 0.270001 0.001850 0.000000
+matched no_bias retained | 1.929861 1.657561 1.584861 1.454005 12.000000 323.000000 0.070482 0.047795 0.010280 0.931683 0.815661 0.795511 0.003950 0.020856
+matched no_bias audit | 1.763245 1.488545 1.415088 1.469128 12.000000 347.000000 0.065393 0.044581 0.034284 0.974867 1.095190 0.484708 0.004233 0.009129
+matched no_bias joint | 0.754507 0.435707 0.421713 0.279869 12.000000 788.000000 0.004327 0.005321 0.000427 0.899133 0.238035 1.005333 0.001467 0.025953
+matched no_bias joint_y_only | 1.243837 0.932237 0.927169 0.101358 12.000000 716.000000 0.015769 0.012702 0.006591 0.908283 0.357634 0.950283 0.009050 0.038442
+matched switch32 raw | 21.256993 20.992993 20.840730 3.045256 12.000000 240.000000 0.723496 0.465653 0.256148 0.962383 2.253309 0.992511 0.599633 0.661000
+matched switch32 direct | 15.483407 15.219407 14.983885 4.710431 12.000000 240.000000 0.579620 0.373620 0.199651 0.949667 1.844776 0.991904 0.440233 0.661000
+matched switch32 retained | 8.203108 7.930808 7.805289 2.510365 12.000000 323.000000 0.294308 0.190859 0.092337 0.802033 0.815661 3.302803 0.114217 0.244772
+matched switch32 audit | 7.455378 7.180678 7.037885 2.855849 12.000000 347.000000 0.278751 0.180886 0.079450 0.901567 1.094058 1.729497 0.113333 0.224817
+matched switch32 joint | 0.756317 0.437517 0.423500 0.280356 12.000000 788.000000 0.004404 0.005367 0.000420 0.898033 0.238035 1.013045 0.001450 0.039056
+matched switch32 joint_y_only | 1.475890 1.164290 1.156578 0.154240 12.000000 716.000000 0.024380 0.018209 0.009833 0.898250 0.357634 1.007092 0.013567 0.061698
+adaptive constant raw | 21.510177 21.484977 21.361211 2.475322 0.000000 252.000000 0.725709 0.467080 0.256096 0.961833 2.253309 0.995551 0.612967 0.661000
+adaptive constant direct | 18.760144 18.614344 18.450157 3.283735 6.000000 258.000000 0.653755 0.421034 0.228000 0.955500 2.049043 0.995206 0.534317 0.661000
+adaptive constant retained | 2.548886 2.395786 2.318285 1.550012 6.000000 331.000000 0.096111 0.064228 0.020834 0.934067 0.908956 0.809113 0.015733 0.040034
+adaptive constant audit | 5.890945 5.737531 5.650160 1.747415 5.937000 346.748000 0.206884 0.135075 0.092929 0.939900 1.291041 0.839832 0.102283 0.147059
+adaptive constant joint | 0.614175 0.519575 0.506292 0.265654 1.000000 746.000000 0.006675 0.006823 0.000420 0.897733 0.270143 1.010305 0.001450 0.028559
+adaptive constant joint_y_only | 1.235161 1.162361 1.154664 0.153940 0.000000 728.000000 0.024304 0.018164 0.009833 0.899283 0.357634 1.000579 0.013567 0.049042
+adaptive switch30 raw | 20.996314 20.971114 20.819655 3.029188 0.000000 252.000000 0.722298 0.464985 0.256176 0.962750 2.253309 0.991088 0.599050 0.661000
+adaptive switch30 direct | 18.248637 18.102837 17.911116 3.834415 6.000000 258.000000 0.650343 0.418940 0.228075 0.956417 2.049043 0.990743 0.520450 0.661000
+adaptive switch30 retained | 16.565730 16.412630 16.268852 2.875559 6.000000 331.000000 0.574321 0.370311 0.245548 0.646283 0.908956 5.032792 0.312767 0.520498
+adaptive switch30 audit | 7.181767 7.040858 6.946473 1.887699 5.324000 344.296000 0.251445 0.163538 0.089152 0.934683 1.248918 1.108224 0.103533 0.192724
+adaptive switch30 joint | 0.616407 0.521807 0.508509 0.265949 1.000000 746.000000 0.006758 0.006874 0.000420 0.896900 0.270143 1.017739 0.001450 0.041335
+adaptive switch30 joint_y_only | 1.237344 1.164544 1.156832 0.154235 0.000000 728.000000 0.024385 0.018214 0.009833 0.898450 0.357634 1.007868 0.013567 0.061796
+adaptive reference_bias raw | 21.510177 21.484977 21.361211 2.475322 0.000000 252.000000 0.725709 0.467080 0.256096 0.961833 2.253309 0.995551 0.612967 0.661000
+adaptive reference_bias direct | 18.844557 18.698757 18.527045 3.434231 6.000000 258.000000 0.659983 0.425012 0.229864 0.872233 2.049043 1.965378 0.534767 0.661000
+adaptive reference_bias retained | 4.107237 3.954137 3.872868 1.625383 6.000000 331.000000 0.147755 0.097174 0.040248 0.846633 0.908956 1.320659 0.040900 0.091869
+adaptive reference_bias audit | 7.111564 6.960230 6.869723 1.810157 5.835000 346.340000 0.247379 0.160970 0.122226 0.896233 1.286170 1.074054 0.148150 0.188398
+adaptive reference_bias joint | 0.685970 0.591370 0.576944 0.288520 1.000000 746.000000 0.009508 0.008626 0.001973 0.855217 0.270143 1.369885 0.002083 0.031780
+adaptive reference_bias joint_y_only | 1.235161 1.162361 1.154664 0.153940 0.000000 728.000000 0.024304 0.018164 0.009833 0.899283 0.357634 1.000579 0.013567 0.049042
+adaptive no_bias raw | 1.399606 1.374406 1.299683 1.494461 0.000000 252.000000 0.062246 0.042591 0.220314 1.000000 2.253309 0.090779 0.002833 0.000000
+adaptive no_bias direct | 1.411752 1.265952 1.196719 1.384648 6.000000 258.000000 0.056294 0.038748 0.198346 0.990000 2.049043 0.180387 0.001900 0.000000
+adaptive no_bias retained | 1.991678 1.838578 1.764113 1.489300 6.000000 331.000000 0.076975 0.052005 0.014106 0.948017 0.908956 0.701148 0.005117 0.021139
+adaptive no_bias audit | 1.636960 1.482260 1.408159 1.482035 6.000000 347.000000 0.065375 0.044604 0.050364 0.996083 1.294768 0.305472 0.002800 0.005683
+adaptive no_bias joint | 0.614119 0.519519 0.506233 0.265727 1.000000 746.000000 0.006675 0.006823 0.000427 0.897633 0.270143 1.010257 0.001467 0.028458
+adaptive no_bias joint_y_only | 1.005037 0.932237 0.927169 0.101358 0.000000 728.000000 0.015769 0.012702 0.006591 0.908283 0.357634 0.950283 0.009050 0.038442
+adaptive switch32 raw | 21.018193 20.992993 20.840730 3.045256 0.000000 252.000000 0.723496 0.465653 0.256148 0.962383 2.253309 0.992511 0.599633 0.661000
+adaptive switch32 direct | 18.268371 18.122571 17.929902 3.853382 6.000000 258.000000 0.651541 0.419608 0.228051 0.956050 2.049043 0.992166 0.520983 0.661000
+adaptive switch32 retained | 13.984642 13.831542 13.692856 2.773701 6.000000 331.000000 0.490330 0.316458 0.229101 0.666867 0.908956 4.265765 0.290767 0.435310
+adaptive switch32 audit | 27.522839 27.369425 27.187906 3.630363 5.937000 346.748000 0.936984 0.602063 0.222304 0.705067 1.275192 4.391927 0.339600 0.880502
+adaptive switch32 joint | 0.616136 0.521536 0.508238 0.265954 1.000000 746.000000 0.006752 0.006869 0.000420 0.896717 0.270143 1.016912 0.001450 0.041229
+adaptive switch32 joint_y_only | 1.237090 1.164290 1.156578 0.154240 0.000000 728.000000 0.024380 0.018209 0.009833 0.898250 0.357634 1.007092 0.013567 0.061698
+
+TARGETED EXPLORATORY CHECK: matched reference_bias joint minus joint_y_only, paired95% intervals. This post-observation focus is descriptive.
+control_loss: delta=-0.141865167,95%CI=[-0.198335926,-0.085394407]
+estimate_mse: delta=+0.000491099,95%CI=[-0.000873500,+0.001855698]
+forecast_mse: delta=+0.000184660,95%CI=[-0.000724591,+0.001093911]
+coverage90: delta=-0.366850000,95%CI=[-0.373918842,-0.359781158]
+brier: delta=-0.007860141,95%CI=[-0.008559029,-0.007161252]
+normalized_forecast_error: delta=+2.873248697,95%CI=[+2.817082783,+2.929414612]
+interval90_width: delta=-0.119599673,95%CI=[-0.119599673,-0.119599673]
+The small positive MSE differences are unresolved, while the control improvement and severe interval-undercoverage difference are clearly separated in these paired data. Brier loss improves despite interval undercoverage; these assess different properties and are also affected by control-induced event rates.
+
+ACQUISITION COUNTS: per-seed minimum/maximum and histogram (all offered time points remain the same).
+matched constant raw: {12: 1000}
+matched constant direct: {12: 1000}
+matched constant retained: {12: 1000}
+matched constant audit: {12: 1000}
+matched constant joint: {12: 1000}
+matched constant joint_y_only: {12: 1000}
+matched switch30 raw: {12: 1000}
+matched switch30 direct: {12: 1000}
+matched switch30 retained: {12: 1000}
+matched switch30 audit: {12: 1000}
+matched switch30 joint: {12: 1000}
+matched switch30 joint_y_only: {12: 1000}
+matched reference_bias raw: {12: 1000}
+matched reference_bias direct: {12: 1000}
+matched reference_bias retained: {12: 1000}
+matched reference_bias audit: {12: 1000}
+matched reference_bias joint: {12: 1000}
+matched reference_bias joint_y_only: {12: 1000}
+matched no_bias raw: {12: 1000}
+matched no_bias direct: {12: 1000}
+matched no_bias retained: {12: 1000}
+matched no_bias audit: {12: 1000}
+matched no_bias joint: {12: 1000}
+matched no_bias joint_y_only: {12: 1000}
+matched switch32 raw: {12: 1000}
+matched switch32 direct: {12: 1000}
+matched switch32 retained: {12: 1000}
+matched switch32 audit: {12: 1000}
+matched switch32 joint: {12: 1000}
+matched switch32 joint_y_only: {12: 1000}
+adaptive constant raw: {0: 1000}
+adaptive constant direct: {6: 1000}
+adaptive constant retained: {6: 1000}
+adaptive constant audit: {2: 1, 3: 4, 4: 10, 5: 27, 6: 958}
+adaptive constant joint: {1: 1000}
+adaptive constant joint_y_only: {0: 1000}
+adaptive switch30 raw: {0: 1000}
+adaptive switch30 direct: {6: 1000}
+adaptive switch30 retained: {6: 1000}
+adaptive switch30 audit: {2: 1, 3: 4, 4: 10, 5: 640, 6: 345}
+adaptive switch30 joint: {1: 1000}
+adaptive switch30 joint_y_only: {0: 1000}
+adaptive reference_bias raw: {0: 1000}
+adaptive reference_bias direct: {6: 1000}
+adaptive reference_bias retained: {6: 1000}
+adaptive reference_bias audit: {2: 8, 3: 17, 4: 22, 5: 38, 6: 915}
+adaptive reference_bias joint: {1: 1000}
+adaptive reference_bias joint_y_only: {0: 1000}
+adaptive no_bias raw: {0: 1000}
+adaptive no_bias direct: {6: 1000}
+adaptive no_bias retained: {6: 1000}
+adaptive no_bias audit: {6: 1000}
+adaptive no_bias joint: {1: 1000}
+adaptive no_bias joint_y_only: {0: 1000}
+adaptive switch32 raw: {0: 1000}
+adaptive switch32 direct: {6: 1000}
+adaptive switch32 retained: {6: 1000}
+adaptive switch32 audit: {2: 1, 3: 4, 4: 10, 5: 27, 6: 958}
+adaptive switch32 joint: {1: 1000}
+adaptive switch32 joint_y_only: {0: 1000}
+
+ACQUISITION TIMING AUDIT: independently reconstruct scalar policies from b-d+eps-eta (x cancels); no simulator import. Counts checked against every raw NPZ episode, seed1000 timing against saved full trace.
+constant retained: purchase counts at t=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]: [1000, 1000, 1000, 1000, 0, 1000, 0, 1000, 0, 0, 0, 0]
+constant audit: purchase counts at t=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]: [1000, 999, 995, 985, 0, 0, 973, 0, 1, 4, 10, 970]
+switch30 retained: purchase counts at t=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]: [1000, 1000, 1000, 1000, 0, 1000, 0, 1000, 0, 0, 0, 0]
+  actual-switch subset n=661: purchase counts=[661, 661, 661, 661, 0, 661, 0, 661, 0, 0, 0, 0], fast update counts=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+switch30 audit: purchase counts at t=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]: [1000, 999, 995, 985, 0, 0, 973, 0, 1, 4, 10, 357]
+  actual-switch subset n=661: purchase counts=[661, 660, 656, 646, 0, 0, 634, 0, 1, 4, 10, 18], fast update counts=[1, 4, 10, 12, 0, 0, 628, 0, 1, 4, 10, 18]
+reference_bias retained: purchase counts at t=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]: [1000, 1000, 1000, 1000, 0, 1000, 0, 1000, 0, 0, 0, 0]
+reference_bias audit: purchase counts at t=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]: [1000, 992, 975, 953, 0, 0, 931, 0, 8, 17, 22, 937]
+no_bias retained: purchase counts at t=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]: [1000, 1000, 1000, 1000, 0, 1000, 0, 1000, 0, 0, 0, 0]
+no_bias audit: purchase counts at t=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]: [1000, 1000, 1000, 1000, 0, 0, 1000, 0, 0, 0, 0, 1000]
+switch32 retained: purchase counts at t=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]: [1000, 1000, 1000, 1000, 0, 1000, 0, 1000, 0, 0, 0, 0]
+  actual-switch subset n=661: purchase counts=[661, 661, 661, 661, 0, 661, 0, 661, 0, 0, 0, 0], fast update counts=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+switch32 audit: purchase counts at t=[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]: [1000, 999, 995, 985, 0, 0, 973, 0, 1, 4, 10, 970]
+  actual-switch subset n=661: purchase counts=[661, 660, 656, 646, 0, 0, 634, 0, 1, 4, 10, 631], fast update counts=[1, 4, 10, 12, 0, 0, 15, 0, 1, 4, 10, 628]
+The retained schedule is deterministic under its covariance-only gate. Audit surprise is examined only on purchased reference packets; ordinary observations do not trigger purchase through their values. The timing sensitivity exposes a gate-observation dependency, not a general result that reflection fails at a given depth.
+
+PRICE SENSITIVITY: fixed trajectories/policies repriced; no policy adaptation or retuning. Columns computeprice=0,.0001,.001,.01.
+matched constant retained-joint_y_only: +1.040552, +1.001252, +0.647552, -2.889448; compute break-even=0.002647715 (nonnegative only meaningful)
+matched constant audit-retained: +2.320969, +2.323369, +2.344969, +2.560969; compute break-even=-0.096707057 (nonnegative only meaningful)
+matched constant joint-retained: -1.767146, -1.720646, -1.302146, +2.882854; compute break-even=0.003800313 (nonnegative only meaningful)
+matched switch30 retained-joint_y_only: +3.117979, +3.078679, +2.724979, -0.812021; compute break-even=0.007933789 (nonnegative only meaningful)
+matched switch30 audit-retained: +0.163332, +0.165732, +0.187332, +0.403332; compute break-even=-0.006805507 (nonnegative only meaningful)
+matched switch30 joint-retained: -3.845963, -3.799463, -3.380963, +0.804037; compute break-even=0.008270888 (nonnegative only meaningful)
+matched reference_bias retained-joint_y_only: +2.612093, +2.572793, +2.219093, -1.317907; compute break-even=0.006646548 (nonnegative only meaningful)
+matched reference_bias audit-retained: +2.034791, +2.037191, +2.058791, +2.274791; compute break-even=-0.084782949 (nonnegative only meaningful)
+matched reference_bias joint-retained: -2.753959, -2.707459, -2.288959, +1.896041; compute break-even=0.005922492 (nonnegative only meaningful)
+matched no_bias retained-joint_y_only: +0.725324, +0.686024, +0.332324, -3.204676; compute break-even=0.001845609 (nonnegative only meaningful)
+matched no_bias audit-retained: -0.169017, -0.166617, -0.145017, +0.070983; compute break-even=0.007042362 (nonnegative only meaningful)
+matched no_bias joint-retained: -1.221854, -1.175354, -0.756854, +3.428146; compute break-even=0.002627644 (nonnegative only meaningful)
+matched switch32 retained-joint_y_only: +6.766517, +6.727217, +6.373517, +2.836517; compute break-even=0.017217602 (nonnegative only meaningful)
+matched switch32 audit-retained: -0.750130, -0.747730, -0.726130, -0.510130; compute break-even=0.031255408 (nonnegative only meaningful)
+matched switch32 joint-retained: -7.493290, -7.446790, -7.028290, -2.843290; compute break-even=0.016114603 (nonnegative only meaningful)
+adaptive constant retained-joint_y_only: +1.353425, +1.313725, +0.956425, -2.616575; compute break-even=0.003409130 (nonnegative only meaningful)
+adaptive constant audit-retained: +3.340485, +3.342060, +3.356233, +3.497965; compute break-even=-0.212121219 (nonnegative only meaningful)
+adaptive constant joint-retained: -1.976211, -1.934711, -1.561211, +2.173789; compute break-even=0.004761954 (nonnegative only meaningful)
+adaptive switch30 retained-joint_y_only: +15.368086, +15.328386, +14.971086, +11.398086; compute break-even=0.038710543 (nonnegative only meaningful)
+adaptive switch30 audit-retained: -9.385292, -9.383962, -9.371996, -9.252332; compute break-even=0.705873325 (nonnegative only meaningful)
+adaptive switch30 joint-retained: -15.990823, -15.949323, -15.575823, -11.840823; compute break-even=0.038532103 (nonnegative only meaningful)
+adaptive reference_bias retained-joint_y_only: +2.911776, +2.872076, +2.514776, -1.058224; compute break-even=0.007334449 (nonnegative only meaningful)
+adaptive reference_bias audit-retained: +3.002793, +3.004327, +3.018133, +3.156193; compute break-even=-0.195749217 (nonnegative only meaningful)
+adaptive reference_bias joint-retained: -3.462767, -3.421267, -3.047767, +0.687233; compute break-even=0.008344017 (nonnegative only meaningful)
+adaptive no_bias retained-joint_y_only: +1.026341, +0.986641, +0.629341, -2.943659; compute break-even=0.002585243 (nonnegative only meaningful)
+adaptive no_bias audit-retained: -0.356318, -0.354718, -0.340318, -0.196318; compute break-even=0.022269863 (nonnegative only meaningful)
+adaptive no_bias joint-retained: -1.419059, -1.377559, -1.004059, +2.730941; compute break-even=0.003419419 (nonnegative only meaningful)
+adaptive switch32 retained-joint_y_only: +12.787251, +12.747551, +12.390251, +8.817251; compute break-even=0.032209701 (nonnegative only meaningful)
+adaptive switch32 audit-retained: +13.536623, +13.538198, +13.552371, +13.694103; compute break-even=-0.859577279 (nonnegative only meaningful)
+adaptive switch32 joint-retained: -13.410006, -13.368506, -12.995006, -9.260006; compute break-even=0.032313267 (nonnegative only meaningful)
+
+RECOVERY: five consecutive post-action states within ±.2; confirm at j+5, capped at remaining horizon; transient and right-censored, not permanent recovery.
+matched switch30 raw: eligible=661, capped_mean_delay=30.000000, recovered=0/661 (0.000000)
+matched switch30 direct: eligible=661, capped_mean_delay=30.000000, recovered=0/661 (0.000000)
+matched switch30 retained: eligible=661, capped_mean_delay=22.034796, recovered=561/661 (0.848714)
+matched switch30 audit: eligible=661, capped_mean_delay=13.406959, recovered=602/661 (0.910741)
+matched switch30 joint: eligible=661, capped_mean_delay=5.078669, recovered=661/661 (1.000000)
+matched switch30 joint_y_only: eligible=661, capped_mean_delay=5.239032, recovered=661/661 (1.000000)
+matched switch32 raw: eligible=661, capped_mean_delay=28.000000, recovered=0/661 (0.000000)
+matched switch32 direct: eligible=661, capped_mean_delay=28.000000, recovered=0/661 (0.000000)
+matched switch32 retained: eligible=661, capped_mean_delay=23.753404, recovered=475/661 (0.718608)
+matched switch32 audit: eligible=661, capped_mean_delay=16.620272, recovered=557/661 (0.842663)
+matched switch32 joint: eligible=661, capped_mean_delay=5.110439, recovered=661/661 (1.000000)
+matched switch32 joint_y_only: eligible=661, capped_mean_delay=5.245083, recovered=661/661 (1.000000)
+adaptive switch30 raw: eligible=661, capped_mean_delay=30.000000, recovered=0/661 (0.000000)
+adaptive switch30 direct: eligible=661, capped_mean_delay=30.000000, recovered=0/661 (0.000000)
+adaptive switch30 retained: eligible=661, capped_mean_delay=30.000000, recovered=0/661 (0.000000)
+adaptive switch30 audit: eligible=661, capped_mean_delay=16.072617, recovered=479/661 (0.724660)
+adaptive switch30 joint: eligible=661, capped_mean_delay=5.239032, recovered=661/661 (1.000000)
+adaptive switch30 joint_y_only: eligible=661, capped_mean_delay=5.239032, recovered=661/661 (1.000000)
+adaptive switch32 raw: eligible=661, capped_mean_delay=28.000000, recovered=0/661 (0.000000)
+adaptive switch32 direct: eligible=661, capped_mean_delay=28.000000, recovered=0/661 (0.000000)
+adaptive switch32 retained: eligible=661, capped_mean_delay=28.000000, recovered=0/661 (0.000000)
+adaptive switch32 audit: eligible=661, capped_mean_delay=27.956127, recovered=9/661 (0.013616)
+adaptive switch32 joint: eligible=661, capped_mean_delay=5.239032, recovered=661/661 (1.000000)
+adaptive switch32 joint_y_only: eligible=661, capped_mean_delay=5.245083, recovered=661/661 (1.000000)
+
+NEGATIVE CONTROL AND ACCOUNTING CHECKS
+All raw arrays retained=flat including seed-level metrics, with identical documented budget/cost. Per-step equality for all seeds is in evaluator assertion; independently checked saved seed1000 traces below.
+Repeat behavior equals retained, adds exactly 180 work units and .018 net loss per episode at the chosen price.
+2184 independent numerical assertions passed, including 80 rows, 60 paired contrasts, component accounting, caps and negative controls. These are software checks, not independent experiments.
+
+Interpretation limits: matched means equal paid opportunities, including forced reference packets discarded by joint_y_only. Adaptive stage changes acquisition choices and actual spending. Brier comparisons can reflect control-induced event frequencies, so pair them with pre-action estimate MSE, interval coverage/width, and NPE. Repricing cannot establish performance of retrained or price-aware policies. Monte Carlo uncertainty does not quantify model adequacy for minds or real systems. No evidence here establishes unique hierarchy, consciousness, wisdom, or ethical legitimacy.
+
+INTERPRETIVE FINDINGS (observed after freeze)
+1. Retention beats the immediate-reference controller in biased worlds, yet loses every prespecified primary comparison with joint_y_only. The original claim of conditional usefulness relative to a weak immediate comparator survives; a stronger claim that retention was the best frozen approach is rejected. joint_y_only retains its own joint state and bias, so it is not a no-memory or necessarily non-meta comparator.
+2. Faster transient recovery does not imply lower full-horizon loss. With forced references, audit switch30 recovers in capped mean13.407 steps versus22.035 for retained, but has total loss4.721 versus4.555; its exploratory paired difference is +.166 [+.098,+.234].
+3. The adaptive switch30 audit advantage is timing-sensitive: audit7.182 versusretained16.566, but the switch32 control produces audit27.523 versusretained13.985. These were two prespecified timing cases, not representative samples from a timing distribution. The mechanism includes unavailable residual checks between purchases and long gaps caused by the covariance-only gate.
+4. Biased-reference joint filtering achieves better control than joint_y_only (1.020496 versus1.162361) while state-estimation MSE is similar (.024795 versus.024304; paired95% difference interval[-.000873,.001856]) and nominal90% coverage is much worse (.532433 versus.899283). Width shrinks to.238035 from.357634 and normalized error rises to3.873828 from1.000579. Thus low control loss does not demonstrate well-calibrated uncertainty. The small positive observed MSE difference does not establish worse estimation.
+5. Costs matter without becoming empirical resource measurements. At frozen workprice0 and.001 retained still loses all eight primary mean comparisons; at.01 it beats joint_y_only in seven of eight, with adaptive switch30 still worse. This is repricing of fixed policies under a declared weighted-block convention, not proof of robustness or optimal behavior at a new price.

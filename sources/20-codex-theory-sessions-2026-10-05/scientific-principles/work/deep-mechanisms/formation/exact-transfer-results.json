@@ -1,0 +1,325 @@
+{
+  "status": "Exact evaluator computation, never provided as feedback to learner",
+  "rows": [
+    {
+      "profile": "interaction",
+      "incumbent": {
+        "expected_expense": {
+          "exact": "35/4",
+          "decimal": 8.75
+        },
+        "expected_errors": {
+          "exact": "32",
+          "decimal": 32.0
+        },
+        "expected_loss": {
+          "exact": "163/4",
+          "decimal": 40.75
+        },
+        "proposal_probability": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "adoption_probability": {
+          "exact": "0",
+          "decimal": 0.0
+        }
+      },
+      "edited": {
+        "expected_expense": {
+          "exact": "1003/50",
+          "decimal": 20.06
+        },
+        "expected_errors": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "expected_loss": {
+          "exact": "1003/50",
+          "decimal": 20.06
+        },
+        "proposal_probability": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "adoption_probability": {
+          "exact": "1",
+          "decimal": 1.0
+        }
+      },
+      "true_expected_gain": {
+        "exact": "2069/100",
+        "decimal": 20.69
+      }
+    },
+    {
+      "profile": "single",
+      "incumbent": {
+        "expected_expense": {
+          "exact": "1853/100",
+          "decimal": 18.53
+        },
+        "expected_errors": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "expected_loss": {
+          "exact": "1853/100",
+          "decimal": 18.53
+        },
+        "proposal_probability": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "adoption_probability": {
+          "exact": "1",
+          "decimal": 1.0
+        }
+      },
+      "edited": {
+        "expected_expense": {
+          "exact": "939/50",
+          "decimal": 18.78
+        },
+        "expected_errors": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "expected_loss": {
+          "exact": "939/50",
+          "decimal": 18.78
+        },
+        "proposal_probability": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "adoption_probability": {
+          "exact": "1",
+          "decimal": 1.0
+        }
+      },
+      "true_expected_gain": {
+        "exact": "-1/4",
+        "decimal": -0.25
+      }
+    },
+    {
+      "profile": "constant",
+      "incumbent": {
+        "expected_expense": {
+          "exact": "35/4",
+          "decimal": 8.75
+        },
+        "expected_errors": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "expected_loss": {
+          "exact": "35/4",
+          "decimal": 8.75
+        },
+        "proposal_probability": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "adoption_probability": {
+          "exact": "0",
+          "decimal": 0.0
+        }
+      },
+      "edited": {
+        "expected_expense": {
+          "exact": "19/2",
+          "decimal": 9.5
+        },
+        "expected_errors": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "expected_loss": {
+          "exact": "19/2",
+          "decimal": 9.5
+        },
+        "proposal_probability": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "adoption_probability": {
+          "exact": "0",
+          "decimal": 0.0
+        }
+      },
+      "true_expected_gain": {
+        "exact": "-3/4",
+        "decimal": -0.75
+      }
+    },
+    {
+      "profile": "null",
+      "incumbent": {
+        "expected_expense": {
+          "exact": "63599/5120",
+          "decimal": 12.4216796875
+        },
+        "expected_errors": {
+          "exact": "32",
+          "decimal": 32.0
+        },
+        "expected_loss": {
+          "exact": "227439/5120",
+          "decimal": 44.4216796875
+        },
+        "proposal_probability": {
+          "exact": "55/128",
+          "decimal": 0.4296875
+        },
+        "adoption_probability": {
+          "exact": "495/32768",
+          "decimal": 0.015106201171875
+        }
+      },
+      "edited": {
+        "expected_expense": {
+          "exact": "394797/25600",
+          "decimal": 15.4217578125
+        },
+        "expected_errors": {
+          "exact": "32",
+          "decimal": 32.0
+        },
+        "expected_loss": {
+          "exact": "1213997/25600",
+          "decimal": 47.4217578125
+        },
+        "proposal_probability": {
+          "exact": "47/64",
+          "decimal": 0.734375
+        },
+        "adoption_probability": {
+          "exact": "423/16384",
+          "decimal": 0.02581787109375
+        }
+      },
+      "true_expected_gain": {
+        "exact": "-38401/12800",
+        "decimal": -3.000078125
+      }
+    },
+    {
+      "profile": "noisy_interaction",
+      "incumbent": {
+        "expected_expense": {
+          "exact": "19200327599/1677721600",
+          "decimal": 11.444287061095238
+        },
+        "expected_errors": {
+          "exact": "32",
+          "decimal": 32.0
+        },
+        "expected_loss": {
+          "exact": "72887418799/1677721600",
+          "decimal": 43.44428706109524
+        },
+        "proposal_probability": {
+          "exact": "10359/32768",
+          "decimal": 0.316131591796875
+        },
+        "adoption_probability": {
+          "exact": "12026799/2147483648",
+          "decimal": 0.005600414704531431
+        }
+      },
+      "edited": {
+        "expected_expense": {
+          "exact": "27398224877/1677721600",
+          "decimal": 16.330614612698554
+        },
+        "expected_errors": {
+          "exact": "511461675/16777216",
+          "decimal": 30.485491454601288
+        },
+        "expected_loss": {
+          "exact": "78544392377/1677721600",
+          "decimal": 46.81610606729984
+        },
+        "proposal_probability": {
+          "exact": "13423/16384",
+          "decimal": 0.81927490234375
+        },
+        "adoption_probability": {
+          "exact": "118943719/1073741824",
+          "decimal": 0.11077497061342001
+        }
+      },
+      "true_expected_gain": {
+        "exact": "-2828486789/838860800",
+        "decimal": -3.371819006204605
+      }
+    },
+    {
+      "profile": "mixed",
+      "incumbent": {
+        "expected_expense": {
+          "exact": "108399/10240",
+          "decimal": 10.58583984375
+        },
+        "expected_errors": {
+          "exact": "32",
+          "decimal": 32.0
+        },
+        "expected_loss": {
+          "exact": "436079/10240",
+          "decimal": 42.58583984375
+        },
+        "proposal_probability": {
+          "exact": "55/256",
+          "decimal": 0.21484375
+        },
+        "adoption_probability": {
+          "exact": "495/65536",
+          "decimal": 0.0075531005859375
+        }
+      },
+      "edited": {
+        "expected_expense": {
+          "exact": "908333/51200",
+          "decimal": 17.74087890625
+        },
+        "expected_errors": {
+          "exact": "16",
+          "decimal": 16.0
+        },
+        "expected_loss": {
+          "exact": "1727533/51200",
+          "decimal": 33.74087890625
+        },
+        "proposal_probability": {
+          "exact": "111/128",
+          "decimal": 0.8671875
+        },
+        "adoption_probability": {
+          "exact": "16807/32768",
+          "decimal": 0.512908935546875
+        }
+      },
+      "true_expected_gain": {
+        "exact": "226431/25600",
+        "decimal": 8.8449609375
+      }
+    }
+  ],
+  "total_outlay_hurdle": {
+    "study_expense": {
+      "exact": "207432/25",
+      "decimal": 8297.28
+    },
+    "future_episodes_at_exact_gain": {
+      "exact": "829728/2069",
+      "decimal": 401.0285161913968
+    },
+    "whole_future_episodes_at_exact_gain": 402,
+    "future_episodes_at_confidence_lower_bound": 904.950998738453,
+    "whole_future_episodes_at_confidence_lower_bound": 905,
+    "interpretation": "Conservative future value required to match every priced study payment, ignoring service value produced during study. Not total net ROI or proof that objective gains become spendable cash. Assumes unchanged task law, costs, horizon, and fixed rule."
+  }
+}

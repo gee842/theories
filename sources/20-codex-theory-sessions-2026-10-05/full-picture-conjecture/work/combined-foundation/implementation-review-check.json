@@ -1,0 +1,228 @@
+{
+  "method": "Independent BFS replay and microstep semantic assertions; no author verify.py import",
+  "source_sha256": {
+    "model.py": "440a7623377867b1147b44157caf240b9ce5c63d77fd9a1ed90e4d57e11bef6f",
+    "verify.py": "70e19a25aba82eec2a6f937c97f0dd1e9a2149cbb40c416a4a5dd5de636fedec",
+    "MODEL.md": "7941b560ac65bc86b1bfff6090395337f27e78ff7031e410a4d31257f2d8c9b9",
+    "RESULTS.md": "62351e0a9a30089ecbb2095b673b8b96dc00eb47fd7b217de7b82a7b6e16acdb",
+    "results.json": "5f0bdf35a6f587d73387fb3a44b24a835ce1239c91be15647d743c2f7a6d3e7e"
+  },
+  "results": [
+    {
+      "mode": "baseline",
+      "states": 486,
+      "edges": 506,
+      "export_matches_actual_reachable_model": true,
+      "ledger_event_payload_checks": true,
+      "all_reachable_protected": true,
+      "min_funds": 2,
+      "min_after_debit": 1,
+      "false_strict_certificates": 0,
+      "event_edges": {
+        "corrective_install": 26,
+        "delivered_x0": 10,
+        "delivered_x1": 10,
+        "maintained_archive": 10,
+        "trained_successor": 10,
+        "competent_handoff": 10
+      },
+      "phase_rank_failure_edges": {
+        "corrective_install": 0,
+        "delivered_x0": 0,
+        "delivered_x1": 0,
+        "maintained_archive": 0,
+        "trained_successor": 0,
+        "competent_handoff": 0
+      }
+    },
+    {
+      "mode": "record_loss",
+      "states": 204,
+      "edges": 220,
+      "export_matches_actual_reachable_model": true,
+      "ledger_event_payload_checks": true,
+      "all_reachable_protected": true,
+      "min_funds": 2,
+      "min_after_debit": 1,
+      "false_strict_certificates": 0,
+      "event_edges": {
+        "corrective_install": 0,
+        "delivered_x0": 2,
+        "delivered_x1": 2,
+        "maintained_archive": 8,
+        "trained_successor": 8,
+        "competent_handoff": 8
+      },
+      "phase_rank_failure_edges": {
+        "corrective_install": 8,
+        "delivered_x0": 6,
+        "delivered_x1": 6,
+        "maintained_archive": 0,
+        "trained_successor": 0,
+        "competent_handoff": 0
+      }
+    },
+    {
+      "mode": "execution_blocked",
+      "states": 486,
+      "edges": 506,
+      "export_matches_actual_reachable_model": true,
+      "ledger_event_payload_checks": true,
+      "all_reachable_protected": true,
+      "min_funds": 2,
+      "min_after_debit": 1,
+      "false_strict_certificates": 0,
+      "event_edges": {
+        "corrective_install": 26,
+        "delivered_x0": 0,
+        "delivered_x1": 0,
+        "maintained_archive": 10,
+        "trained_successor": 10,
+        "competent_handoff": 10
+      },
+      "phase_rank_failure_edges": {
+        "corrective_install": 0,
+        "delivered_x0": 10,
+        "delivered_x1": 10,
+        "maintained_archive": 0,
+        "trained_successor": 0,
+        "competent_handoff": 0
+      }
+    },
+    {
+      "mode": "no_renewal",
+      "states": 18,
+      "edges": 18,
+      "export_matches_actual_reachable_model": true,
+      "ledger_event_payload_checks": true,
+      "all_reachable_protected": true,
+      "min_funds": 0,
+      "min_after_debit": 0,
+      "false_strict_certificates": 0,
+      "event_edges": {
+        "corrective_install": 0,
+        "delivered_x0": 0,
+        "delivered_x1": 0,
+        "maintained_archive": 0,
+        "trained_successor": 0,
+        "competent_handoff": 0
+      },
+      "phase_rank_failure_edges": {
+        "corrective_install": 2,
+        "delivered_x0": 2,
+        "delivered_x1": 2,
+        "maintained_archive": 2,
+        "trained_successor": 2,
+        "competent_handoff": 2
+      }
+    },
+    {
+      "mode": "no_maintenance",
+      "states": 230,
+      "edges": 250,
+      "export_matches_actual_reachable_model": true,
+      "ledger_event_payload_checks": true,
+      "all_reachable_protected": true,
+      "min_funds": 2,
+      "min_after_debit": 1,
+      "false_strict_certificates": 0,
+      "event_edges": {
+        "corrective_install": 2,
+        "delivered_x0": 2,
+        "delivered_x1": 2,
+        "maintained_archive": 0,
+        "trained_successor": 0,
+        "competent_handoff": 0
+      },
+      "phase_rank_failure_edges": {
+        "corrective_install": 8,
+        "delivered_x0": 8,
+        "delivered_x1": 8,
+        "maintained_archive": 10,
+        "trained_successor": 10,
+        "competent_handoff": 10
+      }
+    },
+    {
+      "mode": "no_training",
+      "states": 230,
+      "edges": 250,
+      "export_matches_actual_reachable_model": true,
+      "ledger_event_payload_checks": true,
+      "all_reachable_protected": true,
+      "min_funds": 2,
+      "min_after_debit": 1,
+      "false_strict_certificates": 0,
+      "event_edges": {
+        "corrective_install": 2,
+        "delivered_x0": 2,
+        "delivered_x1": 2,
+        "maintained_archive": 2,
+        "trained_successor": 0,
+        "competent_handoff": 0
+      },
+      "phase_rank_failure_edges": {
+        "corrective_install": 8,
+        "delivered_x0": 8,
+        "delivered_x1": 8,
+        "maintained_archive": 8,
+        "trained_successor": 10,
+        "competent_handoff": 10
+      }
+    },
+    {
+      "mode": "score_capture",
+      "states": 315,
+      "edges": 331,
+      "export_matches_actual_reachable_model": true,
+      "ledger_event_payload_checks": true,
+      "all_reachable_protected": false,
+      "min_funds": 2,
+      "min_after_debit": 1,
+      "false_strict_certificates": 0,
+      "event_edges": {
+        "corrective_install": 0,
+        "delivered_x0": 7,
+        "delivered_x1": 6,
+        "maintained_archive": 8,
+        "trained_successor": 8,
+        "competent_handoff": 0
+      },
+      "phase_rank_failure_edges": {
+        "corrective_install": 16,
+        "delivered_x0": 3,
+        "delivered_x1": 3,
+        "maintained_archive": 0,
+        "trained_successor": 0,
+        "competent_handoff": 8
+      }
+    },
+    {
+      "mode": "misleading_calibration",
+      "states": 486,
+      "edges": 506,
+      "export_matches_actual_reachable_model": true,
+      "ledger_event_payload_checks": true,
+      "all_reachable_protected": false,
+      "min_funds": 2,
+      "min_after_debit": 1,
+      "false_strict_certificates": 122,
+      "event_edges": {
+        "corrective_install": 0,
+        "delivered_x0": 0,
+        "delivered_x1": 0,
+        "maintained_archive": 10,
+        "trained_successor": 10,
+        "competent_handoff": 10
+      },
+      "phase_rank_failure_edges": {
+        "corrective_install": 26,
+        "delivered_x0": 10,
+        "delivered_x1": 10,
+        "maintained_archive": 0,
+        "trained_successor": 0,
+        "competent_handoff": 0
+      }
+    }
+  ]
+}

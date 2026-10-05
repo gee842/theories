@@ -1,0 +1,42 @@
+{
+  "frozen_at": "2026-10-05T05:15:57.423739+07:00",
+  "status": "local prospective protocol, not external preregistration",
+  "conditions": [
+    "ordinary",
+    "decision_procedure",
+    "discipline"
+  ],
+  "contexts_per_condition": 2,
+  "episodes_per_context": 6,
+  "max_queries_per_episode": 2,
+  "max_decision_rounds": 3,
+  "reason_word_limit_per_command": 35,
+  "order": "seeded first permutation; reverse for second; common across conditions within repetition",
+  "order_seed": 2026100503,
+  "participants": "fresh fork-none agents; no model or reasoning override",
+  "tool_rule": "one input-loading read of assigned file; afterwards no tools; root supplies only outputs of actually selected queries",
+  "primary_endpoint": "number of Bayes-optimal initial commands under exact finite public-prior dynamic programming; all exact ties accepted",
+  "secondary_endpoints": [
+    "matched-pair initial-command success",
+    "per-visited-state exact optimal next commands",
+    "strict unnecessary continuation: chosen query with Q greater than best feasible immediate terminal loss",
+    "paid query fees and total queries",
+    "conditional terminal action excess loss over best feasible terminal action at that reached state",
+    "realized terminal loss plus paid fees, descriptive only",
+    "invalid or missing commands and word-cap violations"
+  ],
+  "diagnostic": "sum of nonnegative Bellman gaps Q(chosen)-V at visited public-belief states; trajectory-local, not unobserved full-policy ex ante regret",
+  "oracle_information": "only public model, past selected query results, spent cash/time and permissions; never private world when evaluating commands",
+  "posterior": "exact conditioning on deterministic query results; retain all consistent prior-positive worlds",
+  "query_quality": "evaluate before its outcome, including multi-step continuation; unchanged terminal action on a realized branch is not by itself wasted inquiry",
+  "invalid_handling": "missing, unknown, duplicate, infeasible, repeated, or malformed command forces specified feasible fallback at no additional request charge, closes episode, and is counted invalid",
+  "inference_limits": [
+    "six context-level batches",
+    "selected synthetic families directly relevant to method",
+    "actual hidden reasoning and sampling seeds uncontrolled",
+    "endogenous visited histories differ across treatments",
+    "available variable/query grammar supplied; no unbounded concept discovery tested"
+  ],
+  "stop_rule": "complete the six planned contexts without adding trials based on outcomes; preserve every result and report any post-freeze defect separately",
+  "case_freeze_pending": true
+}

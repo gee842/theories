@@ -1,0 +1,17 @@
+# Independent numerical and design check
+
+5 October 2026 task date. A second implementation in the same AI-assisted research team, not independent human peer review.
+
+The [checker](verify_independent.py) reconstructs all 800 group-period outcomes directly from individual citizen decisions, using exact rational arithmetic for treatment scores and session means. It imports none of the production analysis. It verifies the complete grouped records and all source/protocol hashes. The primary estimate is exactly `29/288`; the authority-beneficiary estimate is `−163/3360`. Converted point estimates, session standard errors and approximate t intervals agree with production to less than `3e−17`. Results are saved in [independent_verification.json](results/independent_verification.json).
+
+The published [experimental sequence and Methods](https://pmc.ncbi.nlm.nih.gov/articles/PMC8856613/) support the asserted assignment order and probabilities. Accuracy is randomized conditional on investment before the authority chooses its enforcement rule. Authority compensation in Experiment 2 is randomized after those choices. Thus retaining all rules for the first contrast and permitting the pre-treatment rule subgroup for the second respects the respective temporal order. Random assignment does not make chosen investment itself randomized.
+
+The causal target is a contemporaneous response under naturally occurring experimental histories. The primary full-session denominator is fixed by the design. Repeated subjects and within-session dependence are handled at the session level; the confidence intervals remain approximate with six or seven sessions. Secondary investment/rule subgroup averages have random sample sizes under the repeated experiment, so they should not be described as exactly unbiased finite-sample estimators solely from the fair-coin argument. This does not change the primary calculation.
+
+This verification cannot audit unobserved execution of the original randomization, settle generalizability beyond the participants and task, or turn contribution into a complete measure of alignment. It supports numerical reproducibility and the stated narrow interpretation.
+
+## Separate one-round investment check
+
+The additional [lagged protocol](SUCCESSION-PROTOCOL.md) was frozen after the immediate results were known but before constructing lagged outcomes. It is explicitly exploratory. Selecting the next randomly assigned authority is valid for the proposed exposure effect only if those assignments and participation are independent of the previous accuracy draw and its behavioral consequences. The documented random reassignment is consistent with that premise; the original assignment implementation is not independently audited. This is externally supplied access to a subsequent decision, not endogenous succession.
+
+The [second checker](verify_succession.py) starts from each actual authority in rounds 2–20 and joins backward to that person's previous record, independently of the production forward joins. All 342 treatment/outcome pairs agree, the exact equal-session estimate is `−1/342`, and the interval is approximately `[−.10604,+.10019]`. Session estimates and inputs match; the maximum numerical discrepancy is below `1.4e−17`. See [saved verification](results/succession_verification.json). This inconclusive one-round result neither validates the proposed maintenance-choice link nor rules out effects of practical size. No additional lags or outcomes were searched.

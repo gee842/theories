@@ -1,0 +1,10 @@
+{
+  "all_six_scripts_reproduced": true,
+  "all_payload_hashes_after_reproduction": 27,
+  "frozen_inputs_and_predictions_unchanged": true,
+  "result_json_files_reproduced_byte_identically": 6,
+  "local_deliverable_links_checked": 31,
+  "math_delimiters_balanced": true,
+  "archive_integrity": true,
+  "visual_markdown_rendering_verified": false
+}

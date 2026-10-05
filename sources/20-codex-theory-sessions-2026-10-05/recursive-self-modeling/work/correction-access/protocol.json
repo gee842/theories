@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-05",
+  "status": "Specified before fresh development and evaluation; local timestamped freeze, not external preregistration",
+  "horizon": 60,
+  "opportunities": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55
+  ],
+  "budget": 6,
+  "dynamics": {
+    "a": 0.8,
+    "gain": 0.5,
+    "action_bound": 2,
+    "x0": "Normal(0,1)",
+    "b0": "equiprobable -1,+1",
+    "g": "0 or independent equiprobable -.15,+.15",
+    "d": "0 or independent equiprobable -.25,+.25",
+    "noise_sd": {
+      "w": 0.05,
+      "eps": 0.25,
+      "eta": 0.05
+    }
+  },
+  "worlds": "Eight factorial worlds: ordinary bias constant/one sign reversal; forcing g zero/nonzero; reference bias d zero/nonzero. Ninth descriptive no_bias world b=d=g=0. Nonzero g,d constant from t=0. Policies assume g=0; scalar correction assumes d=0. No true world label supplied.",
+  "change_time": "Uniform integer 8..47 inclusive, independently generated before noise. Same latent time per paired seed across change worlds; no-change worlds ignore it.",
+  "rng": "One NumPy default_rng(seed); draw x0,b0,forcing sign,reference sign,tau,then eps[60],eta[60],w[60]. All draws before policy; same draws paired across worlds and policies.",
+  "common_scalar_update": {
+    "prior_h": 0,
+    "prior_ph": 1,
+    "qh": 0.0025,
+    "slow_alpha": 0.2,
+    "fast_alpha": 1,
+    "audit_threshold": 2,
+    "rule": "After paid z, fast iff abs(y-z-h)>2*sqrt(ph+RY+RZ). New h=(1-alpha)h+alpha*(y-z), ph=(1-alpha)^2*ph+alpha^2*(RY+RZ). Inflate ph by qh each t>0. State estimate y-h, with current-y-reuse-aware plug-in variance on update. Common rule inherited from prior audit; prior variance adjusted to new b0 distribution."
+  },
+  "gates": {
+    "confidence": "Buy iff .25*[ph+RY-((1-.2)^2*(ph+RY)+.2^2*RZ)]>.02 and budget remains. No compute cost in current study.",
+    "innovation": "Always buy at0. Each t>0 form r=y_t-.8*y_prev-u_prev-.2*h before current reference update, standardized by sqrt(QX+(1+.8^2)*RY+.2^2*ph). Latch max abs standardized residual since last opportunity. At an opportunity buy if latch exceeds threshold and budget remains. Clear latch at every opportunity, including declined. This is a heuristic score, not exact conditional innovation variance.",
+    "periodic": [
+      0,
+      10,
+      20,
+      35,
+      45,
+      55
+    ],
+    "hybrid": "Protect0,25,55. At remaining opportunities, same innovation gate, but at most3 discretionary purchases. Protected purchases cannot be consumed early.",
+    "anchor_filter": "Descriptive benchmark only: three-state Gaussian moment estimate (x,b,d), known g=0, initial mean0 covariance diag(1,1,.0625), A=diag(.8,1,1), Q=diag(.0025,qb,0), y H=(1,1,0), z H=(1,0,1). Same periodic six references. No causal attribution of benchmark difference solely to access."
+  },
+  "loss": "sum(x_next^2+.05*u^2)+.02*number of paid references. No monetary compute price, energy, memory, or physical latency model. Monitor evaluations counted; timing end-to-end simulation only. Compare gate performance under free computation, not cognitive efficiency.",
+  "development_seeds": [
+    20000,
+    20199
+  ],
+  "evaluation_seeds": [
+    30000,
+    31999
+  ],
+  "test_seeds": "40000 and above",
+  "selection": "Choose threshold for innovation and hybrid separately from [1.5,2,2.5,3,3.5], and anchor qb from [0,.0025,.04], minimizing mean loss over eight equally weighted factorial worlds on development only. Periodic/confidence and shared scalar update fixed. No_bias excluded from selection.",
+  "primary": "Three gate-minus-confidence paired differences in total loss, averaged within seed over 4 change worlds and separately 4 constant worlds: six prespecified tests. Normal-approximation Bonferroni familywise95% CI across6; practical margin .02. Seed is independent unit; world and time are not independent replications.",
+  "secondary": "Individual world contrasts, postchange first reference delay/fraction observed, state-recovery delay/fraction, no-change alarm and purchase counts, estimation/relative-bias errors, forecast90% coverage/width, descriptive anchor benchmark, timing distributions. Descriptive95% intervals; no discovery claims from cherry-picked cells.",
+  "access_delay": "First purchase t>=tau minus tau; censor missing at60-tau and report missing fraction. Opportunities occur before action at t. This measures sample arrival, not detection or correct interpretation.",
+  "recovery": "First completed five-consecutive post-action states |x_next|<=.2 after tau, delay j+5; censor at60-tau and report fraction. Only change worlds. Transient, target-dependent, potentially ill-suited under forcing; secondary only.",
+  "alarm": "For innovation/hybrid only count every t>0 score>selected threshold, whether latch already set or budget exhausted. In no-change worlds these are no-change alarms, not automatically false statistical discoveries; persistent initial calibration error/forcing/reference bias can cause model discrepancy.",
+  "forecast": "Normal(.8*xhat+u,.64*v+.0025), g assumed0. Plug-in variance for scalar adaptive audit, Gaussian moment for anchor; check coverage empirically, no calibration guarantee.",
+  "freeze": "Hash runner, anchor_filter, protocol, selected parameters before evaluation. Archive selection scores and immutable raw evaluation.",
+  "examples": "Prespecified seed30000 only; no handpicked success traces.",
+  "scope": "Synthetic restricted algorithms with known target0; no consciousness, brain, or human efficacy inference. Stochastic factorial has known priors and is not the unrestricted shift-closed nonidentifiability class."
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Finite sure safety plus physical-state Buchi under partial observation; obligation-memory product",
+  "exhaustive_two_state_cases": 4608,
+  "plants": 256,
+  "observation_partitions": 2,
+  "safe_progress_pairs": 9,
+  "constructed_product_states_across_cases": 11520,
+  "certified_plant_controller_states": 3962,
+  "checks": [
+    "Product fixed point versus exhaustive product-memory strategies",
+    "Extracted strategies checked on concrete plant/controller cycles",
+    "Fully observed specialization equals original full-state solver",
+    "Hidden alternating recurrence succeeds despite never target-certain belief",
+    "A stuttering adversarial option defeats the progress guarantee"
+  ],
+  "failures": 0,
+  "limit": "Finite enumeration supports implementation; general equivalence uses the written finite-branching proof."
+}

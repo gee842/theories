@@ -1,0 +1,186 @@
+{
+  "status": "passed",
+  "scope": "analytic model verification, not empirical validation",
+  "parameters": {
+    "a": 9.0,
+    "delta": 1.0,
+    "eta": 1.0,
+    "mu": 1.0,
+    "K": 1.0,
+    "E_min": 1.0
+  },
+  "strict_equilibrium_effort_interval": [
+    0.25,
+    1.0
+  ],
+  "equilibria": [
+    {
+      "u": 0.2,
+      "positive_equilibria": []
+    },
+    {
+      "u": 0.5,
+      "positive_equilibria": [
+        {
+          "E": 2.0,
+          "C": 0.3542486889354093,
+          "residual": 4.440892098500626e-16,
+          "eigenvalues_real": [
+            -1.6076252185107651,
+            0.4305008740430603
+          ],
+          "eigenvalues_imaginary": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "E": 2.0,
+          "C": 5.645751311064591,
+          "residual": 0.0,
+          "eigenvalues_real": [
+            -3.097167540709727,
+            -0.7257081148225683
+          ],
+          "eigenvalues_imaginary": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "u": 1.0,
+      "positive_equilibria": [
+        {
+          "E": 1.0,
+          "C": 0.1458980337503153,
+          "residual": 8.881784197001252e-16,
+          "eigenvalues_real": [
+            -1.6603185686779907,
+            0.5144205349276751
+          ],
+          "eigenvalues_imaginary": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "E": 1.0,
+          "C": 6.854101966249685,
+          "residual": 0.0,
+          "eigenvalues_real": [
+            -7.020209152021497,
+            -0.8338928142281875
+          ],
+          "eigenvalues_imaginary": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "u": 1.5,
+      "positive_equilibria": [
+        {
+          "E": 0.6666666666666666,
+          "C": 0.09206490174546378,
+          "residual": 7.771561172376096e-16,
+          "eigenvalues_real": [
+            -1.6771419924118591,
+            0.5390446397936632
+          ],
+          "eigenvalues_imaginary": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "E": 0.6666666666666666,
+          "C": 7.241268431587869,
+          "residual": 0.0,
+          "eigenvalues_real": [
+            -11.005752865060757,
+            -0.8561497823210462
+          ],
+          "eigenvalues_imaginary": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "trajectories": [
+    {
+      "case": "Insufficient fixed effort",
+      "u": 0.2,
+      "initial": [
+        2.0,
+        4.0
+      ],
+      "final_t200": [
+        8.60561001479346e-80,
+        5.089990348551709e-83
+      ],
+      "minimum_E_over_sampled_times": 8.60561001479346e-80,
+      "tolerance_refinement_error": 1.492875600916932e-09
+    },
+    {
+      "case": "Maintained correction with reserve",
+      "u": 0.5,
+      "initial": [
+        2.0,
+        4.0
+      ],
+      "final_t200": [
+        2.0000000000000018,
+        5.645751311064583
+      ],
+      "minimum_E_over_sampled_times": 2.0,
+      "tolerance_refinement_error": 5.393827606781088e-10
+    },
+    {
+      "case": "Stable correction below support floor",
+      "u": 1.5,
+      "initial": [
+        2.0,
+        4.0
+      ],
+      "final_t200": [
+        0.6666666666666672,
+        7.241268431587863
+      ],
+      "minimum_E_over_sampled_times": 0.6666666666666672,
+      "tolerance_refinement_error": 4.68884486792831e-10
+    },
+    {
+      "case": "Depleted repair capacity",
+      "u": 0.5,
+      "initial": [
+        0.05,
+        0.001
+      ],
+      "final_t200": [
+        2.634434395398469e-87,
+        1.4254048000128253e-90
+      ],
+      "minimum_E_over_sampled_times": 2.634434395398469e-87,
+      "tolerance_refinement_error": 1.3979095658811502e-13
+    }
+  ],
+  "depleted_box_certificate": {
+    "E_upper": 0.1,
+    "C_upper": 0.001,
+    "u": 0.5,
+    "E_upper_boundary_derivative_bound": -0.091,
+    "C_per_capita_growth_upper": -0.95
+  },
+  "limitations": [
+    "No empirical fit or universal social parameter claim.",
+    "Fixed u does not explain selection over renewal effort.",
+    "Finite trajectories are illustrations; analytic proofs are separate.",
+    "External feedstock for production is a declared boundary condition."
+  ]
+}

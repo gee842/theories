@@ -1,0 +1,258 @@
+{
+  "source_sha256": "c220ff0d128dee5de0305f7f448671eddd206dda18fbe3f323421b390352623d",
+  "development_seed": 1103,
+  "runs": 30,
+  "all_acquisitions_and_fits_prepaid": true,
+  "ledger_and_fresh_check_math_independently_verified": true,
+  "optimized_python_behavior_digest_identical": true,
+  "behavior_sha256": "806d2ec6c42886d07613e2b950005c116a0bff586eb5eda831209b0c89fd7774",
+  "boundary_checks": {
+    "unfunded_observation_calls": 0,
+    "missing_capability_observation_calls": 0,
+    "unfunded_service_observation_calls": 0,
+    "blocked_review_spent_alpha": false
+  },
+  "run_details": [
+    {
+      "scenario": "emerging",
+      "arm": "full",
+      "accepted": 1,
+      "nonpositive_accepted": 0,
+      "paid_observations": 1460,
+      "cash": 280110
+    },
+    {
+      "scenario": "emerging",
+      "arm": "fixed_mandate",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 992,
+      "cash": 405710
+    },
+    {
+      "scenario": "emerging",
+      "arm": "fixed_rule",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 3892,
+      "cash": 59960
+    },
+    {
+      "scenario": "emerging",
+      "arm": "no_renewal",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 542610
+    },
+    {
+      "scenario": "emerging",
+      "arm": "incumbent_only_opening",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 507610
+    },
+    {
+      "scenario": "simple",
+      "arm": "full",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 512,
+      "cash": 473060
+    },
+    {
+      "scenario": "simple",
+      "arm": "fixed_mandate",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 512,
+      "cash": 473060
+    },
+    {
+      "scenario": "simple",
+      "arm": "fixed_rule",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 512,
+      "cash": 473060
+    },
+    {
+      "scenario": "simple",
+      "arm": "no_renewal",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 557760
+    },
+    {
+      "scenario": "simple",
+      "arm": "incumbent_only_opening",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 522760
+    },
+    {
+      "scenario": "noise",
+      "arm": "full",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 992,
+      "cash": 404510
+    },
+    {
+      "scenario": "noise",
+      "arm": "fixed_mandate",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 992,
+      "cash": 404260
+    },
+    {
+      "scenario": "noise",
+      "arm": "fixed_rule",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 992,
+      "cash": 404510
+    },
+    {
+      "scenario": "noise",
+      "arm": "no_renewal",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 541160
+    },
+    {
+      "scenario": "noise",
+      "arm": "incumbent_only_opening",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 506160
+    },
+    {
+      "scenario": "transient",
+      "arm": "full",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 608,
+      "cash": 460970
+    },
+    {
+      "scenario": "transient",
+      "arm": "fixed_mandate",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 608,
+      "cash": 460720
+    },
+    {
+      "scenario": "transient",
+      "arm": "fixed_rule",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 608,
+      "cash": 460970
+    },
+    {
+      "scenario": "transient",
+      "arm": "no_renewal",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 555860
+    },
+    {
+      "scenario": "transient",
+      "arm": "incumbent_only_opening",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 520860
+    },
+    {
+      "scenario": "material_stress",
+      "arm": "full",
+      "accepted": 2,
+      "nonpositive_accepted": 0,
+      "paid_observations": 2484,
+      "cash": 164990
+    },
+    {
+      "scenario": "material_stress",
+      "arm": "fixed_mandate",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 704,
+      "cash": 297230
+    },
+    {
+      "scenario": "material_stress",
+      "arm": "fixed_rule",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 1652,
+      "cash": 305600
+    },
+    {
+      "scenario": "material_stress",
+      "arm": "no_renewal",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 550110
+    },
+    {
+      "scenario": "material_stress",
+      "arm": "incumbent_only_opening",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 380160
+    },
+    {
+      "scenario": "poor_income",
+      "arm": "full",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 224,
+      "cash": 0
+    },
+    {
+      "scenario": "poor_income",
+      "arm": "fixed_mandate",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 224,
+      "cash": 20
+    },
+    {
+      "scenario": "poor_income",
+      "arm": "fixed_rule",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 224,
+      "cash": 0
+    },
+    {
+      "scenario": "poor_income",
+      "arm": "no_renewal",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 26680
+    },
+    {
+      "scenario": "poor_income",
+      "arm": "incumbent_only_opening",
+      "accepted": 0,
+      "nonpositive_accepted": 0,
+      "paid_observations": 32,
+      "cash": 20
+    }
+  ],
+  "scope": "No held-out seed run. Fixed source domain and root-approved synchronous settlement/centrally represented interests."
+}

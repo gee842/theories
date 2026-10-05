@@ -1,0 +1,5 @@
+Limited design excerpts from author Protocol.doc binary text stream; not a full document conversion.
+
+First, check the Treatment Order Log to make sure you are about to run the correct treatment condition for that day/session.
+
+Each of you has been randomly assigned to a group with 4 people in it (and each of you has a Player ID number from 1 to 4 within that group). The members of your group will stay the same throughout the entire experiment. And your numbers will too. However, you will not be able to identify which person in the room has been assigned to your group, because it was randomly assigned. 

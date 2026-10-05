@@ -1,0 +1,22 @@
+{
+  "status": "all assertions passed",
+  "checks": {
+    "parameter_sets": 27,
+    "positive_equilibria": 10,
+    "critical_sets": 7,
+    "below_threshold_sets": 10,
+    "mass_balance_states": 243,
+    "exact_logistic_residuals": 240,
+    "exact_critical_residuals": 84,
+    "original_cohort_ratio_checks": 729,
+    "inherited_lineage_ratio_checks": 729,
+    "stochastic_projection_states": 121,
+    "detailed_balance_pairs": 31
+  },
+  "scope": "Exact algebraic checks of a constructed model. No physical measurements or stochastic simulation.",
+  "analytic_results_not_replaced_by_grid": [
+    "Global convergence for all positive finite parameters and nonnegative initial concentrations",
+    "Original material cohort decays as exp(-D t)",
+    "Finite-volume molecule model eventually loses every X almost surely because total count is a recurrent immigration-death process"
+  ]
+}

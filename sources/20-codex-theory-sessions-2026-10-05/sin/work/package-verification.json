@@ -1,0 +1,9 @@
+{
+  "archive": "experiment-evidence.zip",
+  "files": 331,
+  "bytes": 375923,
+  "sha256": "c0f68e669214384392a1297e2c92a4286fa7a06b7fb15568bac6a4b3b5e29859",
+  "all_manifest_hashes_verified": true,
+  "zip_integrity_verified": true,
+  "extracted_live_reanalysis_matches_byte_for_byte": true
+}

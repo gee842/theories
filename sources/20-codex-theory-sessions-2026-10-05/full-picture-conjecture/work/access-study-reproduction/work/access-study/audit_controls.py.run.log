@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "runtime_seconds": 4.836243583995383,
+  "counts": {
+    "control_states": 5184,
+    "control_action_kernels": 20034,
+    "control_branch_masses": 42300,
+    "independent_control_H1_optima": 18144
+  },
+  "configurations": [
+    "output_zero",
+    "onset_and_healthy_damage_zero",
+    "uninformative_test"
+  ],
+  "scope": "exact stage vectors and next-observation/posterior laws at H1/H2 states; independent H1 optimal values; not independent H4 control optima",
+  "model_sha256": "051976c28e15a06bbed3be9c95328755bcbf676dfe30440c03a3e0684d000135"
+}

@@ -1,0 +1,57 @@
+{
+  "status": "exact constructed illustration; not observed physical data",
+  "parameters": {
+    "a": "1/2",
+    "b": "1/4",
+    "gamma": "1/8"
+  },
+  "direct_impulse_markov_terms": [
+    "0",
+    "1/8",
+    "3/32",
+    "7/128",
+    "15/512",
+    "31/2048",
+    "63/8192",
+    "127/32768",
+    "255/131072",
+    "511/524288",
+    "1023/2097152",
+    "2047/8388608",
+    "4095/33554432",
+    "8191/134217728"
+  ],
+  "fit_terms": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "inferred_recurrence": {
+    "s": "3/4",
+    "p": "1/8",
+    "formula": "h[k+2] = s*h[k+1] - p*h[k]"
+  },
+  "heldout_terms": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "heldout_equal": true,
+  "hankel_determinant": "-1/64",
+  "one_state_excluded": true,
+  "uncoupled_control": "gamma=0 gives all zero impulse terms at this output; initially varying observed coordinate can still matter",
+  "limits": [
+    "LTI finite-dimensional model class assumed",
+    "zero initial condition for impulse experiment",
+    "physical coordinates not uniquely identified",
+    "exact arithmetic ignores observation noise"
+  ]
+}

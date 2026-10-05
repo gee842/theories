@@ -1,0 +1,447 @@
+{
+  "captured_at": "2026-10-05T06:01:03.099979+07:00",
+  "source_workspace": "read only; not modified",
+  "files": [
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-recurrent-inquiry-and-inherited-evidence.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/sources/15-codex-theory-conversations/2026-10-05-recurrent-inquiry-and-inherited-evidence.md",
+      "relative": "sources/15-codex-theory-conversations/2026-10-05-recurrent-inquiry-and-inherited-evidence.md",
+      "sha256": "b11f41f41e34a40b6fc9bba758e5ce1ae208a927ff390f9f89f9607228ae5063",
+      "bytes": 15905
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-recoverable-inquiry.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/sources/15-codex-theory-conversations/2026-10-05-recoverable-inquiry.md",
+      "relative": "sources/15-codex-theory-conversations/2026-10-05-recoverable-inquiry.md",
+      "sha256": "07613452ef430dcec784b2aaadc67b6c6a868770c40257a4a28d4770d18ec42f",
+      "bytes": 16339
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-questions-without-anomalies.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/sources/15-codex-theory-conversations/2026-10-05-questions-without-anomalies.md",
+      "relative": "sources/15-codex-theory-conversations/2026-10-05-questions-without-anomalies.md",
+      "sha256": "16a1f2c1cb72987f7413ea31da3637dca573fcea0e733b369ea4454863945c8e",
+      "bytes": 17740
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-inherited-evidence-under-model-revision.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/sources/15-codex-theory-conversations/2026-10-05-inherited-evidence-under-model-revision.md",
+      "relative": "sources/15-codex-theory-conversations/2026-10-05-inherited-evidence-under-model-revision.md",
+      "sha256": "e84233cded658ee5fce64daa5e8fa843aed4ac7ce457ae81d2cfd16fb053e837",
+      "bytes": 16952
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-selection-and-continuity-of-renewal.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/sources/15-codex-theory-conversations/2026-10-05-selection-and-continuity-of-renewal.md",
+      "relative": "sources/15-codex-theory-conversations/2026-10-05-selection-and-continuity-of-renewal.md",
+      "sha256": "ba2667b8c096ffb710d650db2af718611c278860625c4e5d13e9e36d0747d3b2",
+      "bytes": 17146
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-plural-requirements-and-attainable-correction.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/sources/15-codex-theory-conversations/2026-10-05-plural-requirements-and-attainable-correction.md",
+      "relative": "sources/15-codex-theory-conversations/2026-10-05-plural-requirements-and-attainable-correction.md",
+      "sha256": "e27ec44612aade946fe3ff2dd7b1d6280523dd446f3ff29af39055080d8df8bb",
+      "bytes": 15875
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-discovery-before-demonstrated-returns.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/sources/15-codex-theory-conversations/2026-10-05-discovery-before-demonstrated-returns.md",
+      "relative": "sources/15-codex-theory-conversations/2026-10-05-discovery-before-demonstrated-returns.md",
+      "sha256": "55d9bf5048f7d82f73ad7b32215679484549d7fe86d2398f5edceaa064097ded",
+      "bytes": 15843
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-formation-and-revision-of-frames.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/sources/15-codex-theory-conversations/2026-10-05-formation-and-revision-of-frames.md",
+      "relative": "sources/15-codex-theory-conversations/2026-10-05-formation-and-revision-of-frames.md",
+      "sha256": "11b06a023484a979595bce83c001d73b0f1b6f495097f15dad06fe13893a45eb",
+      "bytes": 16144
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-renewal-of-inquiry.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/sources/15-codex-theory-conversations/2026-10-05-renewal-of-inquiry.md",
+      "relative": "sources/15-codex-theory-conversations/2026-10-05-renewal-of-inquiry.md",
+      "sha256": "5f982e6862c9be868e68de3966a305487d741e3c6b9a4bb11f99c71615c2003a",
+      "bytes": 17397
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-continuing-participation-and-funded-correction.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/sources/15-codex-theory-conversations/2026-10-05-continuing-participation-and-funded-correction.md",
+      "relative": "sources/15-codex-theory-conversations/2026-10-05-continuing-participation-and-funded-correction.md",
+      "sha256": "fdd9ce228fb24241a95d5ae7532aed4785e5b15f8e5ef01439a7be6cb21112d2",
+      "bytes": 14760
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/README.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/README.md",
+      "sha256": "1c8ffc4ff15ac124527f9ba87b0982bae665a625ed1d25a510a0ae06ca07a6b1",
+      "bytes": 36938
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/CLAIMS.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/CLAIMS.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/CLAIMS.md",
+      "sha256": "1ccb5807cdb71c2b9200804399187be8959a9c02135b4aa7c573dd2c996c8cc5",
+      "bytes": 62398
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/RESEARCH-LOG.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/RESEARCH-LOG.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/RESEARCH-LOG.md",
+      "sha256": "93ee0cf13df4fdad22aa713e2031240534d81ae17b9e9e0006fdee401aa96fb7",
+      "bytes": 90995
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/candidate-discovery-prior-art.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/candidate-discovery-prior-art.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/candidate-discovery-prior-art.md",
+      "sha256": "9d2dbae81af51aadd1d5da4fe344509ec35c642582e8d1027462d1b2ba485694",
+      "bytes": 18033
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/candidate-discovery-design-review.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/candidate-discovery-design-review.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/candidate-discovery-design-review.md",
+      "sha256": "d94f53dc4c5e193b99a20771420c9e060bb899dae8eef0bba93971b03075e7eb",
+      "bytes": 13087
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/prospective-revision-math.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/prospective-revision-math.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/prospective-revision-math.md",
+      "sha256": "751b57560cfab36d19a3d9ee775e5b1bb285c06adfa37c4cbceb39a7eefe90ed",
+      "bytes": 22194
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/prospective-revision-prior-art.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/prospective-revision-prior-art.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/prospective-revision-prior-art.md",
+      "sha256": "3d2924b961a565042fd0f0ccee337fdd64cff39c443f2549a37717341b80a449",
+      "bytes": 16687
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/prospective-revision-design-review.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/prospective-revision-design-review.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/prospective-revision-design-review.md",
+      "sha256": "6c097c98beecee5f5cbd24e06fd4578f65539aea97d1cc41f8c5d140dcb1f4f9",
+      "bytes": 24637
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/situated-frame-prior-art.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/situated-frame-prior-art.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/situated-frame-prior-art.md",
+      "sha256": "a4f53ff02ec4eed72d11b08f9e3b321fc4d67e12f7220f8290ba0587777d1ac5",
+      "bytes": 21059
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/model-revision-inheritance-math.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/model-revision-inheritance-math.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/model-revision-inheritance-math.md",
+      "sha256": "fe30a7ee2e0d025be858156349d3f884472931465a1fffa7a64114a0a6883777",
+      "bytes": 27854
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/recoverable-inquiry-math.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/recoverable-inquiry-math.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/recoverable-inquiry-math.md",
+      "sha256": "7f4295f59cdf10582ffbc21d00b904c6dd81d7054de2341d2a76ef3612953a4c",
+      "bytes": 23672
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/inquiry-renewal-math.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/inquiry-renewal-math.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/inquiry-renewal-math.md",
+      "sha256": "aad7ed2ace67573eb14e0dcd5898d620399d6fc142247adafb39444833818a1d",
+      "bytes": 20297
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/recurrent-inquiry-math.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/_process/research/2026-10-04-integrated-evolution/recurrent-inquiry-math.md",
+      "relative": "_process/research/2026-10-04-integrated-evolution/recurrent-inquiry-math.md",
+      "sha256": "cdf184088c5bc20e8a5e345889b45cf90364674f0d8281b3e53dfa501c097f9c",
+      "bytes": 24538
+    },
+    {
+      "original": "/Users/ren/theories/experiments/situated-discovery/test_experiment.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/situated-discovery/test_experiment.py",
+      "relative": "experiments/situated-discovery/test_experiment.py",
+      "sha256": "ae7c60b8c03566ff22a648e817e0b556b6fc043e64c8d4ad9124a0f12bd77948",
+      "bytes": 2270
+    },
+    {
+      "original": "/Users/ren/theories/experiments/situated-discovery/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/situated-discovery/README.md",
+      "relative": "experiments/situated-discovery/README.md",
+      "sha256": "7a9e7eb7e84f349126789a711d3623c2feac3738fb04a3d381f55eb041856294",
+      "bytes": 3793
+    },
+    {
+      "original": "/Users/ren/theories/experiments/situated-discovery/experiment.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/situated-discovery/experiment.py",
+      "relative": "experiments/situated-discovery/experiment.py",
+      "sha256": "9415c6926b01005a4adece62cf53089951c7ab52b458d86b5d74bea23b24c9ff",
+      "bytes": 19380
+    },
+    {
+      "original": "/Users/ren/theories/experiments/situated-discovery/analyze.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/situated-discovery/analyze.py",
+      "relative": "experiments/situated-discovery/analyze.py",
+      "sha256": "5ed93ba14e306227e935fba5c9465e4f2b4379e78b0fdbc4d058a5ef0db7e70c",
+      "bytes": 6481
+    },
+    {
+      "original": "/Users/ren/theories/experiments/situated-discovery/PROTOCOL.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/situated-discovery/PROTOCOL.md",
+      "relative": "experiments/situated-discovery/PROTOCOL.md",
+      "sha256": "636d375dd332c9f65f0787aef6bf5c83799c14e22b70b839c7d0351ab3cb4aca",
+      "bytes": 14353
+    },
+    {
+      "original": "/Users/ren/theories/experiments/prospective-revision/test_model.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/prospective-revision/test_model.py",
+      "relative": "experiments/prospective-revision/test_model.py",
+      "sha256": "a2b87be3270bf3f76cb67e1401f52d386164bc205fac95e16c5b25bb0a39b33d",
+      "bytes": 6997
+    },
+    {
+      "original": "/Users/ren/theories/experiments/prospective-revision/config.json",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/prospective-revision/config.json",
+      "relative": "experiments/prospective-revision/config.json",
+      "sha256": "4afd8391970c277f10f877c2ce430853aa93cafd4c1e99e5af4ed6e77508aef4",
+      "bytes": 357
+    },
+    {
+      "original": "/Users/ren/theories/experiments/prospective-revision/model.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/prospective-revision/model.py",
+      "relative": "experiments/prospective-revision/model.py",
+      "sha256": "ad5161c4103c708adc5878f183c41b443395ca8246707a881f517088b1f90f67",
+      "bytes": 6552
+    },
+    {
+      "original": "/Users/ren/theories/experiments/prospective-revision/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/prospective-revision/README.md",
+      "relative": "experiments/prospective-revision/README.md",
+      "sha256": "2f5fe8edb2dae501c78951896ecda02a9a55c525cdf0062a0d07371c42ee1ce6",
+      "bytes": 4013
+    },
+    {
+      "original": "/Users/ren/theories/experiments/prospective-revision/analyze.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/prospective-revision/analyze.py",
+      "relative": "experiments/prospective-revision/analyze.py",
+      "sha256": "e170880ff9fd94880a93aafb29df46a06e77f6f3f28fda92743112c467407eb7",
+      "bytes": 8672
+    },
+    {
+      "original": "/Users/ren/theories/experiments/prospective-revision/PROTOCOL.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/prospective-revision/PROTOCOL.md",
+      "relative": "experiments/prospective-revision/PROTOCOL.md",
+      "sha256": "617ba838b71a512a965b166159c95fd861979aacb25a2b916c6357ff69fb3bcb",
+      "bytes": 6887
+    },
+    {
+      "original": "/Users/ren/theories/experiments/revisable-inheritance/test_model.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/revisable-inheritance/test_model.py",
+      "relative": "experiments/revisable-inheritance/test_model.py",
+      "sha256": "76c3cf737c6bf4ed702963f050ca8e0188be58345ec2dc2e66b317b3dd59e46c",
+      "bytes": 3408
+    },
+    {
+      "original": "/Users/ren/theories/experiments/revisable-inheritance/results-console.json",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/revisable-inheritance/results-console.json",
+      "relative": "experiments/revisable-inheritance/results-console.json",
+      "sha256": "2d27a0f698a616fd6c3226eb4bc0463e47078e51aaced2f02b83ab87b8ccef5b",
+      "bytes": 3687
+    },
+    {
+      "original": "/Users/ren/theories/experiments/revisable-inheritance/development.json",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/revisable-inheritance/development.json",
+      "relative": "experiments/revisable-inheritance/development.json",
+      "sha256": "07c829ea4a45fbfe79052d8e2b997cfa79763687802225bf019c5cc70beabacf",
+      "bytes": 64980
+    },
+    {
+      "original": "/Users/ren/theories/experiments/revisable-inheritance/model.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/revisable-inheritance/model.py",
+      "relative": "experiments/revisable-inheritance/model.py",
+      "sha256": "ba659be8f347fd84b374206f9dc65e211c04e36e7da9d4334aff9a64ec871b72",
+      "bytes": 9220
+    },
+    {
+      "original": "/Users/ren/theories/experiments/revisable-inheritance/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/revisable-inheritance/README.md",
+      "relative": "experiments/revisable-inheritance/README.md",
+      "sha256": "b6f61d190f0cdf01b3390eb9a00e66b0fab4b614028b3a66f9238b2d27997be6",
+      "bytes": 3058
+    },
+    {
+      "original": "/Users/ren/theories/experiments/revisable-inheritance/analyze.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/revisable-inheritance/analyze.py",
+      "relative": "experiments/revisable-inheritance/analyze.py",
+      "sha256": "9d702ad7e7453dc443c05c7c44bfe576e28d8c5d66e6c6a70ecf747d9139db2d",
+      "bytes": 5920
+    },
+    {
+      "original": "/Users/ren/theories/experiments/revisable-inheritance/PROTOCOL.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/revisable-inheritance/PROTOCOL.md",
+      "relative": "experiments/revisable-inheritance/PROTOCOL.md",
+      "sha256": "c0b88a3dad029bf6d7198fdc7efdba85de95fd0f4d6c88896324473a5fbfd4be",
+      "bytes": 5867
+    },
+    {
+      "original": "/Users/ren/theories/experiments/inquiry-renewal/test_model.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/inquiry-renewal/test_model.py",
+      "relative": "experiments/inquiry-renewal/test_model.py",
+      "sha256": "0e4ba7c4b9ade3e016a46b8f31e3696c2cfb7316bfb4dbf0202fd3a5137095b2",
+      "bytes": 5573
+    },
+    {
+      "original": "/Users/ren/theories/experiments/inquiry-renewal/config.json",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/inquiry-renewal/config.json",
+      "relative": "experiments/inquiry-renewal/config.json",
+      "sha256": "0667b2d401ed636560152932aa0d0768b8a85d8987fd268ec691682301362126",
+      "bytes": 599
+    },
+    {
+      "original": "/Users/ren/theories/experiments/inquiry-renewal/model.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/inquiry-renewal/model.py",
+      "relative": "experiments/inquiry-renewal/model.py",
+      "sha256": "f372bcc1109ee68a1155b52528e7013d066e52fea964f84b7b9abcbb80536542",
+      "bytes": 8908
+    },
+    {
+      "original": "/Users/ren/theories/experiments/inquiry-renewal/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/inquiry-renewal/README.md",
+      "relative": "experiments/inquiry-renewal/README.md",
+      "sha256": "d152b33a70f045f13a92f45b3c9230a7582b8ee19871313d37afbcdc1f5bf3eb",
+      "bytes": 4260
+    },
+    {
+      "original": "/Users/ren/theories/experiments/inquiry-renewal/analyze.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/inquiry-renewal/analyze.py",
+      "relative": "experiments/inquiry-renewal/analyze.py",
+      "sha256": "25352f268387fe9b8f06e8f7a19b57c0791a83d70c8371eb465ed271f496139a",
+      "bytes": 8431
+    },
+    {
+      "original": "/Users/ren/theories/experiments/inquiry-renewal/PROTOCOL.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/inquiry-renewal/PROTOCOL.md",
+      "relative": "experiments/inquiry-renewal/PROTOCOL.md",
+      "sha256": "3160d6a7ec0a93b2f2e95314b1953539386767d732f6707ffb726b348576db58",
+      "bytes": 9780
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recoverable-inquiry/test_model.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recoverable-inquiry/test_model.py",
+      "relative": "experiments/recoverable-inquiry/test_model.py",
+      "sha256": "413ecd15a259b4d1da18e33651147bdfd37cc49ccf8d5d1bc4113e1c3f6a92d6",
+      "bytes": 12345
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recoverable-inquiry/config.json",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recoverable-inquiry/config.json",
+      "relative": "experiments/recoverable-inquiry/config.json",
+      "sha256": "2bf3de442506c120fb978d64ed1621054d966b3ba3f62a884bf0bfe6d8a0ff99",
+      "bytes": 498
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recoverable-inquiry/development.json",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recoverable-inquiry/development.json",
+      "relative": "experiments/recoverable-inquiry/development.json",
+      "sha256": "60fd72d02928c7882674e97fde5d69a8f203f4232af7f1b4ae7e711a1694e97a",
+      "bytes": 52927
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recoverable-inquiry/model.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recoverable-inquiry/model.py",
+      "relative": "experiments/recoverable-inquiry/model.py",
+      "sha256": "96a923ef4ae391e2f717c77a8f07fd2cd8fe91f4258c560b221ccb1fff79e7eb",
+      "bytes": 13932
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recoverable-inquiry/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recoverable-inquiry/README.md",
+      "relative": "experiments/recoverable-inquiry/README.md",
+      "sha256": "99eddb4307ea4cd08e241b26521ac56de8dfa4e4fb0597a8a3802c291e443751",
+      "bytes": 7339
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recoverable-inquiry/plot_detail.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recoverable-inquiry/plot_detail.py",
+      "relative": "experiments/recoverable-inquiry/plot_detail.py",
+      "sha256": "78e6492e32e368af2de3c288076812946ea2239918160e60bc67a1855f68a596",
+      "bytes": 2383
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recoverable-inquiry/development-h8-detail.json",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recoverable-inquiry/development-h8-detail.json",
+      "relative": "experiments/recoverable-inquiry/development-h8-detail.json",
+      "sha256": "8e1c43c3e3d75dd4313657a67f407ed50b01a03e1fe8e7b5b00d897eadebdb9b",
+      "bytes": 116135
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recoverable-inquiry/analyze.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recoverable-inquiry/analyze.py",
+      "relative": "experiments/recoverable-inquiry/analyze.py",
+      "sha256": "3432c8518e21776c88ce302c2d4ff13e93ab7e24d56b61fe5960bc3c61593aea",
+      "bytes": 4847
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recoverable-inquiry/PROTOCOL.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recoverable-inquiry/PROTOCOL.md",
+      "relative": "experiments/recoverable-inquiry/PROTOCOL.md",
+      "sha256": "edb1f3f2ca1134d34501bdb87e5cdca6cce19a6a8fc2037762f6cdf2342b5034",
+      "bytes": 7547
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recurrent-inquiry/test_model.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recurrent-inquiry/test_model.py",
+      "relative": "experiments/recurrent-inquiry/test_model.py",
+      "sha256": "7b301b0820dd653617a492b7ed0f5b2df8344cc29b1cf9b8c7fb501486525602",
+      "bytes": 3632
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recurrent-inquiry/results-console.json",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recurrent-inquiry/results-console.json",
+      "relative": "experiments/recurrent-inquiry/results-console.json",
+      "sha256": "80d9c8f3f5a3ce7c5d9336366b9a717983092e45e129e70b85000dff2c04c5f0",
+      "bytes": 19477
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recurrent-inquiry/development.json",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recurrent-inquiry/development.json",
+      "relative": "experiments/recurrent-inquiry/development.json",
+      "sha256": "3ab0681933961626acf29fc3220697b449a53f4e98ac2c131247f8af6e7e3a9b",
+      "bytes": 7027
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recurrent-inquiry/model.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recurrent-inquiry/model.py",
+      "relative": "experiments/recurrent-inquiry/model.py",
+      "sha256": "67b4f79dc12d1253c3cfa7ec951dbf7cb19dc4c04766f8418c5920d4842dbab0",
+      "bytes": 11649
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recurrent-inquiry/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recurrent-inquiry/README.md",
+      "relative": "experiments/recurrent-inquiry/README.md",
+      "sha256": "f4823eff4a739a961e0e54724a21669022a8e69dab6e190b7ae3d5d040b1e94b",
+      "bytes": 3445
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recurrent-inquiry/analyze.py",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recurrent-inquiry/analyze.py",
+      "relative": "experiments/recurrent-inquiry/analyze.py",
+      "sha256": "b202476f2201a3071e2c2c9ab592cf3a69d19b37a49f2a841dc0c3c3ad4ef235",
+      "bytes": 6464
+    },
+    {
+      "original": "/Users/ren/theories/experiments/recurrent-inquiry/PROTOCOL.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/model-adequacy/source-snapshots/experiments/recurrent-inquiry/PROTOCOL.md",
+      "relative": "experiments/recurrent-inquiry/PROTOCOL.md",
+      "sha256": "177ad50c79af5052c1b3105ee440ed6e248bb42a815079f2306eb2f1f3625436",
+      "bytes": 7034
+    }
+  ]
+}

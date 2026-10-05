@@ -1,0 +1,13 @@
+{
+  "confidence": {},
+  "periodic": {},
+  "innovation": {
+    "threshold": 1.5
+  },
+  "hybrid": {
+    "threshold": 1.5
+  },
+  "anchor_filter": {
+    "q_b": 0.04
+  }
+}

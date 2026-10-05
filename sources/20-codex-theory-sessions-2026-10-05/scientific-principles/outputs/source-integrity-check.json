@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-04T23:50:58.787499+00:00",
+  "frozen_files_unchanged": {
+    "integrated_model.py": true,
+    "purpose_policy.py": true,
+    "evaluate_integration.py": true,
+    "audit_recorded_integration.py": true,
+    "audit_implementation.py": true,
+    "check_purpose_policy.py": true,
+    "plot_integration.py": true,
+    "protocol-v3.md": true,
+    "validation-plan.md": true,
+    "development-record.md": true
+  },
+  "passed": true
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "Exact checks of supplied toy models, not empirical estimates",
+  "common_failure_checks": [
+    {
+      "checks": 1,
+      "miss_probability_exact": "7/25",
+      "miss_probability": 0.28
+    },
+    {
+      "checks": 2,
+      "miss_probability_exact": "17/125",
+      "miss_probability": 0.136
+    },
+    {
+      "checks": 5,
+      "miss_probability_exact": "1567/15625",
+      "miss_probability": 0.100288
+    },
+    {
+      "checks": 10,
+      "miss_probability_exact": "4882817/48828125",
+      "miss_probability": 0.10000009216
+    }
+  ],
+  "binary_information": {
+    "before": 0.5,
+    "after": 0.1,
+    "gross_value": 0.4
+  },
+  "twenty_size_point05_tests_family_error": 0.6415140775914577,
+  "shared_calibration_mean_square_error": {
+    "1": 1.04,
+    "10": 0.14,
+    "100": 0.05,
+    "10000": 0.0401
+  }
+}

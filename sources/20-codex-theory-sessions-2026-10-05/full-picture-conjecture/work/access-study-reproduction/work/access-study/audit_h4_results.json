@@ -1,0 +1,353 @@
+{
+  "status": "passed",
+  "runtime_seconds": 1.701748082996346,
+  "independent_H4_optima_compared": 18,
+  "results": [
+    {
+      "cash": 0,
+      "treasury": 5,
+      "access": "barred",
+      "probe": "failure",
+      "support_exact": "153/250",
+      "independent_selected_metrics": [
+        "153/250",
+        "14331/20000",
+        "3213/200000",
+        "658699/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "153/250",
+        "expense": "14331/20000",
+        "burden": "3213/200000",
+        "unrecovered": "658699/1000000"
+      }
+    },
+    {
+      "cash": 0,
+      "treasury": 5,
+      "access": "barred",
+      "probe": "mixed",
+      "support_exact": "5815411/1000000",
+      "independent_selected_metrics": [
+        "153/250",
+        "14331/20000",
+        "3213/200000",
+        "658699/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "153/250",
+        "expense": "14331/20000",
+        "burden": "3213/200000",
+        "unrecovered": "658699/1000000"
+      }
+    },
+    {
+      "cash": 0,
+      "treasury": 5,
+      "access": "immediate",
+      "probe": "failure",
+      "support_exact": "0",
+      "independent_selected_metrics": [
+        "0",
+        "60267/20000",
+        "25149/200000",
+        "90339/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "0",
+        "expense": "60267/20000",
+        "burden": "25149/200000",
+        "unrecovered": "90339/1000000"
+      }
+    },
+    {
+      "cash": 0,
+      "treasury": 5,
+      "access": "immediate",
+      "probe": "mixed",
+      "support_exact": "3311811/1000000",
+      "independent_selected_metrics": [
+        "17/1250",
+        "54987/20000",
+        "9309/200000",
+        "115379/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "17/1250",
+        "expense": "54987/20000",
+        "burden": "9309/200000",
+        "unrecovered": "115379/1000000"
+      }
+    },
+    {
+      "cash": 0,
+      "treasury": 5,
+      "access": "delayed",
+      "probe": "failure",
+      "support_exact": "0",
+      "independent_selected_metrics": [
+        "0",
+        "60267/20000",
+        "25149/200000",
+        "90339/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "0",
+        "expense": "60267/20000",
+        "burden": "25149/200000",
+        "unrecovered": "90339/1000000"
+      }
+    },
+    {
+      "cash": 0,
+      "treasury": 5,
+      "access": "delayed",
+      "probe": "mixed",
+      "support_exact": "3311811/1000000",
+      "independent_selected_metrics": [
+        "17/1250",
+        "54987/20000",
+        "9309/200000",
+        "115379/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "17/1250",
+        "expense": "54987/20000",
+        "burden": "9309/200000",
+        "unrecovered": "115379/1000000"
+      }
+    },
+    {
+      "cash": 1,
+      "treasury": 4,
+      "access": "barred",
+      "probe": "failure",
+      "support_exact": "17/1250",
+      "independent_selected_metrics": [
+        "17/1250",
+        "54987/20000",
+        "9309/200000",
+        "115379/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "17/1250",
+        "expense": "54987/20000",
+        "burden": "9309/200000",
+        "unrecovered": "115379/1000000"
+      }
+    },
+    {
+      "cash": 1,
+      "treasury": 4,
+      "access": "barred",
+      "probe": "mixed",
+      "support_exact": "3311811/1000000",
+      "independent_selected_metrics": [
+        "17/1250",
+        "54987/20000",
+        "9309/200000",
+        "115379/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "17/1250",
+        "expense": "54987/20000",
+        "burden": "9309/200000",
+        "unrecovered": "115379/1000000"
+      }
+    },
+    {
+      "cash": 1,
+      "treasury": 4,
+      "access": "immediate",
+      "probe": "failure",
+      "support_exact": "0",
+      "independent_selected_metrics": [
+        "0",
+        "60267/20000",
+        "25149/200000",
+        "90339/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "0",
+        "expense": "60267/20000",
+        "burden": "25149/200000",
+        "unrecovered": "90339/1000000"
+      }
+    },
+    {
+      "cash": 1,
+      "treasury": 4,
+      "access": "immediate",
+      "probe": "mixed",
+      "support_exact": "3311811/1000000",
+      "independent_selected_metrics": [
+        "17/1250",
+        "54987/20000",
+        "9309/200000",
+        "115379/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "17/1250",
+        "expense": "54987/20000",
+        "burden": "9309/200000",
+        "unrecovered": "115379/1000000"
+      }
+    },
+    {
+      "cash": 1,
+      "treasury": 4,
+      "access": "delayed",
+      "probe": "failure",
+      "support_exact": "0",
+      "independent_selected_metrics": [
+        "0",
+        "60267/20000",
+        "25149/200000",
+        "90339/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "0",
+        "expense": "60267/20000",
+        "burden": "25149/200000",
+        "unrecovered": "90339/1000000"
+      }
+    },
+    {
+      "cash": 1,
+      "treasury": 4,
+      "access": "delayed",
+      "probe": "mixed",
+      "support_exact": "3311811/1000000",
+      "independent_selected_metrics": [
+        "17/1250",
+        "54987/20000",
+        "9309/200000",
+        "115379/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "17/1250",
+        "expense": "54987/20000",
+        "burden": "9309/200000",
+        "unrecovered": "115379/1000000"
+      }
+    },
+    {
+      "cash": 5,
+      "treasury": 0,
+      "access": "barred",
+      "probe": "failure",
+      "support_exact": "0",
+      "independent_selected_metrics": [
+        "0",
+        "60267/20000",
+        "25149/200000",
+        "90339/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "0",
+        "expense": "60267/20000",
+        "burden": "25149/200000",
+        "unrecovered": "90339/1000000"
+      }
+    },
+    {
+      "cash": 5,
+      "treasury": 0,
+      "access": "barred",
+      "probe": "mixed",
+      "support_exact": "3311811/1000000",
+      "independent_selected_metrics": [
+        "17/1250",
+        "54987/20000",
+        "9309/200000",
+        "115379/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "17/1250",
+        "expense": "54987/20000",
+        "burden": "9309/200000",
+        "unrecovered": "115379/1000000"
+      }
+    },
+    {
+      "cash": 5,
+      "treasury": 0,
+      "access": "immediate",
+      "probe": "failure",
+      "support_exact": "0",
+      "independent_selected_metrics": [
+        "0",
+        "60267/20000",
+        "25149/200000",
+        "90339/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "0",
+        "expense": "60267/20000",
+        "burden": "25149/200000",
+        "unrecovered": "90339/1000000"
+      }
+    },
+    {
+      "cash": 5,
+      "treasury": 0,
+      "access": "immediate",
+      "probe": "mixed",
+      "support_exact": "3311811/1000000",
+      "independent_selected_metrics": [
+        "17/1250",
+        "54987/20000",
+        "9309/200000",
+        "115379/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "17/1250",
+        "expense": "54987/20000",
+        "burden": "9309/200000",
+        "unrecovered": "115379/1000000"
+      }
+    },
+    {
+      "cash": 5,
+      "treasury": 0,
+      "access": "delayed",
+      "probe": "failure",
+      "support_exact": "0",
+      "independent_selected_metrics": [
+        "0",
+        "60267/20000",
+        "25149/200000",
+        "90339/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "0",
+        "expense": "60267/20000",
+        "burden": "25149/200000",
+        "unrecovered": "90339/1000000"
+      }
+    },
+    {
+      "cash": 5,
+      "treasury": 0,
+      "access": "delayed",
+      "probe": "mixed",
+      "support_exact": "3311811/1000000",
+      "independent_selected_metrics": [
+        "17/1250",
+        "54987/20000",
+        "9309/200000",
+        "115379/1000000"
+      ],
+      "candidate_selected_metrics": {
+        "failure": "17/1250",
+        "expense": "54987/20000",
+        "burden": "9309/200000",
+        "unrecovered": "115379/1000000"
+      }
+    }
+  ],
+  "scope": "stock2, certain initial fault, unready, total5; splits0/1/5; all3access modes; failure and mixed probes",
+  "model_sha256": "051976c28e15a06bbed3be9c95328755bcbf676dfe30440c03a3e0684d000135",
+  "oracle_sha256": "627537684594db454214a346265277d4df207b6579129b46f0c1b59f2fbf6e1e",
+  "independent_cache": "CacheInfo(hits=18862, misses=2000, maxsize=None, currsize=2000)"
+}

@@ -1,0 +1,376 @@
+{
+  "status": "all assertions passed",
+  "depletion_generations": [
+    {
+      "parents_A": 64,
+      "parents_B": 64,
+      "cash_before": 384,
+      "evaluation_expense": 128,
+      "construction_copy_expense": 64,
+      "child_cash": 192,
+      "discarded_cash": 0,
+      "children_A": 43,
+      "children_B": 21,
+      "A_share_before": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "A_share_after": {
+        "exact": "43/64",
+        "decimal": 0.671875
+      },
+      "generation": 1
+    },
+    {
+      "parents_A": 43,
+      "parents_B": 21,
+      "cash_before": 192,
+      "evaluation_expense": 64,
+      "construction_copy_expense": 32,
+      "child_cash": 96,
+      "discarded_cash": 0,
+      "children_A": 26,
+      "children_B": 6,
+      "A_share_before": {
+        "exact": "43/64",
+        "decimal": 0.671875
+      },
+      "A_share_after": {
+        "exact": "13/16",
+        "decimal": 0.8125
+      },
+      "generation": 2
+    },
+    {
+      "parents_A": 26,
+      "parents_B": 6,
+      "cash_before": 96,
+      "evaluation_expense": 32,
+      "construction_copy_expense": 16,
+      "child_cash": 48,
+      "discarded_cash": 0,
+      "children_A": 14,
+      "children_B": 2,
+      "A_share_before": {
+        "exact": "13/16",
+        "decimal": 0.8125
+      },
+      "A_share_after": {
+        "exact": "7/8",
+        "decimal": 0.875
+      },
+      "generation": 3
+    },
+    {
+      "parents_A": 14,
+      "parents_B": 2,
+      "cash_before": 48,
+      "evaluation_expense": 16,
+      "construction_copy_expense": 8,
+      "child_cash": 24,
+      "discarded_cash": 0,
+      "children_A": 7,
+      "children_B": 1,
+      "A_share_before": {
+        "exact": "7/8",
+        "decimal": 0.875
+      },
+      "A_share_after": {
+        "exact": "7/8",
+        "decimal": 0.875
+      },
+      "generation": 4
+    },
+    {
+      "parents_A": 7,
+      "parents_B": 1,
+      "cash_before": 24,
+      "evaluation_expense": 8,
+      "construction_copy_expense": 4,
+      "child_cash": 12,
+      "discarded_cash": 0,
+      "children_A": 4,
+      "children_B": 0,
+      "A_share_before": {
+        "exact": "7/8",
+        "decimal": 0.875
+      },
+      "A_share_after": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "generation": 5
+    },
+    {
+      "parents_A": 4,
+      "parents_B": 0,
+      "cash_before": 12,
+      "evaluation_expense": 4,
+      "construction_copy_expense": 2,
+      "child_cash": 6,
+      "discarded_cash": 0,
+      "children_A": 2,
+      "children_B": 0,
+      "A_share_before": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "A_share_after": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "generation": 6
+    },
+    {
+      "parents_A": 2,
+      "parents_B": 0,
+      "cash_before": 6,
+      "evaluation_expense": 2,
+      "construction_copy_expense": 1,
+      "child_cash": 3,
+      "discarded_cash": 0,
+      "children_A": 1,
+      "children_B": 0,
+      "A_share_before": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "A_share_after": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "generation": 7
+    },
+    {
+      "parents_A": 1,
+      "parents_B": 0,
+      "cash_before": 3,
+      "evaluation_expense": 1,
+      "construction_copy_expense": 0,
+      "child_cash": 0,
+      "discarded_cash": 2,
+      "children_A": 0,
+      "children_B": 0,
+      "A_share_before": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "A_share_after": null,
+      "generation": 8
+    }
+  ],
+  "extinction_generation": 8,
+  "initial_cash": 384,
+  "reserve_boundary_checks": 21600,
+  "independent_branching_exact_generations": [
+    {
+      "generation": 0,
+      "extinction_probability": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "mean_viable_carriers": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "variance": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "nonzero_count_states": 1
+    },
+    {
+      "generation": 1,
+      "extinction_probability": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "mean_viable_carriers": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "variance": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "nonzero_count_states": 3
+    },
+    {
+      "generation": 2,
+      "extinction_probability": {
+        "exact": "25/64",
+        "decimal": 0.390625
+      },
+      "mean_viable_carriers": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "variance": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "nonzero_count_states": 5
+    },
+    {
+      "generation": 3,
+      "extinction_probability": {
+        "exact": "7921/16384",
+        "decimal": 0.48345947265625
+      },
+      "mean_viable_carriers": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "variance": {
+        "exact": "3/2",
+        "decimal": 1.5
+      },
+      "nonzero_count_states": 9
+    },
+    {
+      "generation": 4,
+      "extinction_probability": {
+        "exact": "590733025/1073741824",
+        "decimal": 0.5501630017533898
+      },
+      "mean_viable_carriers": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "variance": {
+        "exact": "2",
+        "decimal": 2.0
+      },
+      "nonzero_count_states": 17
+    },
+    {
+      "generation": 5,
+      "extinction_probability": {
+        "exact": "2770476522953572801/4611686018427387904",
+        "decimal": 0.60075133300127
+      },
+      "mean_viable_carriers": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "variance": {
+        "exact": "5/2",
+        "decimal": 2.5
+      },
+      "nonzero_count_states": 33
+    },
+    {
+      "generation": 6,
+      "extinction_probability": {
+        "exact": "54496323787368204373233033868754097025/85070591730234615865843651857942052864",
+        "decimal": 0.6406012075263358
+      },
+      "mean_viable_carriers": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "variance": {
+        "exact": "3",
+        "decimal": 3.0
+      },
+      "nonzero_count_states": 65
+    },
+    {
+      "generation": 7,
+      "extinction_probability": {
+        "exact": "19478923907097682900047670470044963078711659459439612523537770193495954712321/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+        "decimal": 0.6728930805342177
+      },
+      "mean_viable_carriers": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "variance": {
+        "exact": "7/2",
+        "decimal": 3.5
+      },
+      "nonzero_count_states": 129
+    }
+  ],
+  "funded_copy_outcome_ledgers": [
+    {
+      "validity_pair": [
+        0,
+        0
+      ],
+      "parent_cash_plus_receipt": 9,
+      "operating_expense": 1,
+      "construction_copy_expense": 2,
+      "living_child_cash": 0,
+      "inaccessible_failed_child_cash": 6
+    },
+    {
+      "validity_pair": [
+        0,
+        1
+      ],
+      "parent_cash_plus_receipt": 9,
+      "operating_expense": 1,
+      "construction_copy_expense": 2,
+      "living_child_cash": 3,
+      "inaccessible_failed_child_cash": 3
+    },
+    {
+      "validity_pair": [
+        1,
+        0
+      ],
+      "parent_cash_plus_receipt": 9,
+      "operating_expense": 1,
+      "construction_copy_expense": 2,
+      "living_child_cash": 3,
+      "inaccessible_failed_child_cash": 3
+    },
+    {
+      "validity_pair": [
+        1,
+        1
+      ],
+      "parent_cash_plus_receipt": 9,
+      "operating_expense": 1,
+      "construction_copy_expense": 2,
+      "living_child_cash": 6,
+      "inaccessible_failed_child_cash": 0
+    }
+  ],
+  "protected_copy_viable_count_every_generation": 1,
+  "random_denominator": {
+    "expected_share": {
+      "exact": "1/2",
+      "decimal": 0.5
+    },
+    "ratio_of_expected_counts": {
+      "exact": "1/10",
+      "decimal": 0.1
+    }
+  },
+  "population_kernel_rows_checked": 405,
+  "kernel_composition_checks": 135,
+  "replication_extinction": {
+    "one_carrier": {
+      "exact": "1/2",
+      "decimal": 0.5
+    },
+    "synchronized_pair": {
+      "exact": "1/2",
+      "decimal": 0.5
+    },
+    "independent_pair": {
+      "exact": "1/4",
+      "decimal": 0.25
+    }
+  },
+  "limits": [
+    "Finite checks do not machine-prove the general transport or extinction theorems",
+    "Depletion scores and pooled allocation rule are supplied",
+    "Branching experiment has an explicit per-viable-parent external income promise",
+    "Copied invalid offspring consume their funded endowments and die before census",
+    "Exact packet scaling uses correlated corresponding events, not independent replicas",
+    "No empirical or normative inference"
+  ]
+}

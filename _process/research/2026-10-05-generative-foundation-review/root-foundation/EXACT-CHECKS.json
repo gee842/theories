@@ -1,0 +1,216 @@
+{
+  "status": "passed",
+  "date": "2026-10-05",
+  "check_groups": 28,
+  "method": "Python standard-library rational arithmetic and exhaustive finite enumeration",
+  "scope": "Constructed mathematical examples; no empirical data, no proof assistant, no general proof certification.",
+  "checks": [
+    {
+      "name": "all_four_node_acyclic_lifetime_bounds",
+      "passed": true,
+      "detail": {
+        "graphs_enumerated": 4096,
+        "acyclic_graphs": 543,
+        "independent_longest_path_agreements": 543
+      }
+    },
+    {
+      "name": "ten_time_unit_lifetime_witness",
+      "passed": true,
+      "detail": {
+        "0": 2,
+        "1": 5,
+        "2": 10
+      }
+    },
+    {
+      "name": "cycle_not_treated_as_acyclic",
+      "passed": true,
+      "detail": "A cyclic routing graph has no topological lifetime deadline from this theorem."
+    },
+    {
+      "name": "recurrent_ancestry_all_three_node_graphs",
+      "passed": true,
+      "detail": {
+        "graph_and_boundary_configurations": 4096,
+        "qualifying_configurations": 3375
+      }
+    },
+    {
+      "name": "downstream_support_need_not_be_on_cycle",
+      "passed": true,
+      "detail": "The 0↔1→2 witness prevents an inference of full mutual closure."
+    },
+    {
+      "name": "spectral_inverse_exact",
+      "passed": true,
+      "detail": "The nonnegative inverse (I−B)^−1 equals [[4/3,2/3],[2/3,4/3]]."
+    },
+    {
+      "name": "two_cycle_radius_one_half",
+      "passed": true,
+      "detail": "Eigenvalues are ±1/2 despite the existence of a routing cycle."
+    },
+    {
+      "name": "service_unit_similarity",
+      "passed": true,
+      "detail": "Changing service units by diag(2,3) preserves the spectrum."
+    },
+    {
+      "name": "finite_binary_testing_bound",
+      "passed": true,
+      "detail": {
+        "channel_pairs": 225,
+        "deterministic_decoders_per_pair": 8,
+        "justification_for_randomized_rules": "Risk is affine; deterministic vertices attain its minimum."
+      }
+    },
+    {
+      "name": "erasure_channel_average_and_worst_case",
+      "passed": true,
+      "detail": {
+        "reliability_values": 12,
+        "randomized_erasure_decision": "fair coin"
+      }
+    },
+    {
+      "name": "feasible_allocation_interval",
+      "passed": true,
+      "detail": "At error 1/10, all constant allocations from 2/3 to 3/4 suffice."
+    },
+    {
+      "name": "minimum_sustainable_error",
+      "passed": true,
+      "detail": "1/11"
+    },
+    {
+      "name": "accuracy_optimum_is_attained",
+      "passed": true,
+      "detail": "At u=3/4, b is constant and reliability equilibrium is 9/11."
+    },
+    {
+      "name": "accuracy_feasibility_classification",
+      "passed": true,
+      "detail": {
+        "rational_tolerances_checked": 49
+      }
+    },
+    {
+      "name": "strict_accuracy_witness",
+      "passed": true,
+      "detail": {
+        "required_reliability": "24/29",
+        "required_effort": "4/5"
+      }
+    },
+    {
+      "name": "sharp_deadline",
+      "passed": true,
+      "detail": "5"
+    },
+    {
+      "name": "deadline_attained_exactly",
+      "passed": true,
+      "detail": "c remains at 24/29 and b(t)=1−t/5. The boundary is allowed at t=5."
+    },
+    {
+      "name": "scheduled_accuracy_counterexample_exact",
+      "passed": true,
+      "detail": "e^7>1+7+49/2>29 implies every full-maintenance endpoint exceeds 24/29. The first endpoint rises from c*, and all later ones exceed (6/7)(1−e^−7)."
+    },
+    {
+      "name": "scheduled_execution_counterexample_exact",
+      "passed": true,
+      "detail": "One maintenance interval spends1, the next gains3. e>2 implies the off-interval reliability is below3/7<c*. Assessments pass while continuous readiness fails."
+    },
+    {
+      "name": "marginal_risk_not_conditional_guarantee",
+      "passed": true,
+      "detail": "A 90% perfect/10% erased channel mixture has marginal error .05, but its erased-history conditional error .5 violates a .1 guarantee."
+    },
+    {
+      "name": "control_cancels_from_reserve_derivative",
+      "passed": true,
+      "detail": {
+        "exact_state_effort_pairs": 44,
+        "scope": "Finite witnesses of the displayed symbolic identity."
+      }
+    },
+    {
+      "name": "three_allocation_tradeoffs",
+      "passed": true,
+      "detail": [
+        [
+          "3/4",
+          "1/8",
+          "1"
+        ],
+        [
+          "21/26",
+          "5/52",
+          "1/5"
+        ],
+        [
+          "27/32",
+          "5/64",
+          "-3/5"
+        ]
+      ]
+    },
+    {
+      "name": "selection_equilibria",
+      "passed": true,
+      "detail": [
+        [
+          "3/4",
+          "0"
+        ],
+        [
+          "21/26",
+          "1"
+        ],
+        [
+          "4/5",
+          "5/6"
+        ]
+      ]
+    },
+    {
+      "name": "stable_boundary_equilibria",
+      "passed": true,
+      "detail": {
+        "low_eigenvalues": [
+          "-4",
+          "-1/4"
+        ],
+        "high_eigenvalues": [
+          "-26/5",
+          "-1/26"
+        ]
+      }
+    },
+    {
+      "name": "interior_saddle",
+      "passed": true,
+      "detail": "Jacobian determinant −1/6 gives eigenvalues of opposite signs."
+    },
+    {
+      "name": "selection_rectangle_boundary_signs",
+      "passed": true,
+      "detail": {
+        "rational_boundary_points": 202,
+        "scope": "Signs support the analytic invariant-region proof."
+      }
+    },
+    {
+      "name": "execution_reserve_grows_in_selection_witness",
+      "passed": true,
+      "detail": "ḃ≥1/5 for all x∈[0,1], so (c,x) attractors are not full-state fixed points."
+    },
+    {
+      "name": "capability_not_labeled_causality",
+      "passed": true,
+      "detail": "M: Z=a, N: Z=1−a. Relabeling randomized choices preserves achievable outcome laws; the physical action a=0 still has opposite effects."
+    }
+  ]
+}

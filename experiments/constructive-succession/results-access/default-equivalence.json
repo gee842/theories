@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "default_behavior_exactly_matches_saved_main_trajectories": 7740,
+  "current_model_sha256": "539f0c0de887a0f0623df01349f66f8c9e1c66696976151bd157bd7cb86dd94c",
+  "main_frozen_model_sha256": "407286c644f5c7515a711b81d1e33e4c3cba0709b2b2024f007762eadadad284",
+  "comparison": "all saved trajectory fields, excluding only the new activate_extra=True log field; final packages were not present in the saved main trajectories"
+}

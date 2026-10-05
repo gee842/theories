@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-05",
+  "scope": "Exact synthetic models and conditional proofs; no empirical cross-domain validation",
+  "status": "All three checkers passed; all local document links resolve",
+  "files": [
+    {
+      "path": "verification/check_modular_replacement.py",
+      "sha256": "21c4d65f729ca30c383b8f0d0ac560012f24f0f268f6c557f65cd1dbcc38ec22"
+    },
+    {
+      "path": "verification/check_recurrent_repair.py",
+      "sha256": "dd005a71a7866720cdc5aab1f3dffa2440f62b8ba5223d602ebfaeb3027597f1"
+    },
+    {
+      "path": "verification/check_scale_deadline.py",
+      "sha256": "e94aab505d794543eb8d0ad7563e04ca8ad78e46bc3b95b8290d00cf51e6c956"
+    },
+    {
+      "path": "verification/modular-replacement-results.json",
+      "sha256": "b5a34197f0be7b85cdc3d5b2e5e24ad026674b2f4217e6cb91c1f410d698456f"
+    },
+    {
+      "path": "verification/recurrent-repair-results.json",
+      "sha256": "5adb5c45bf513c9b7b56b677c798898432bbff7325702deb85617decadd8420d"
+    },
+    {
+      "path": "verification/route-frontier.csv",
+      "sha256": "b566304035309e94656d2bd2a5adbce6c00ce819188636a99e79b76d9948f495"
+    },
+    {
+      "path": "verification/scale-deadline-results.json",
+      "sha256": "98b65a3e60d7a194f0ba1623205ded75cf5efa755861c8c5505d85ed1111e792"
+    }
+  ]
+}

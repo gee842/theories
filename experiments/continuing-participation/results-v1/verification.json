@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-05",
+  "frozen_inputs_match_current": true,
+  "upstream_byte_identical": true,
+  "test_count": 9,
+  "tests_passed": 9,
+  "source_reviews": 2,
+  "figure_visually_inspected": true,
+  "markdown_files_checked": 9,
+  "local_links_checked": 213,
+  "balanced_math_delimiters": true,
+  "versions": {
+    "python": "3.11.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  },
+  "artifact_sha256": {
+    "results.json": "bead3d1e6bf92116a6318b99f514c801ee8ea1d34bb90f1cf8f604b5aa68e8d8",
+    "checks.json": "2a552e9deae4f84a371f6c91f3febf37cebbd0b092bc37cb8c3bfdfe20d813e2",
+    "manifest.json": "4e1cbf9b14bc005d513f3e78a7a23f80754a72b29966e7650c9b5f7b96c2d887",
+    "participation.png": "71aea90939ac1a8b888ae17182c2f12b3bd818a148b000f95ed95e2793b01696",
+    "participation.svg": "943b42f6114fcf51f88402516b8a2ff3b8ed04b2a8de8279b1304e83829b1179",
+    "test-report.txt": "02e310e1dbf2eccff0d2fc8e00bdcd1a2d95d4b7d6df398f9446948f3f096a2b"
+  }
+}

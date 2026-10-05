@@ -1,0 +1,23 @@
+test_a_equals_one_preserves_unobservable_common_shift (test_anchor_filter.AnchorFilterChecks.test_a_equals_one_preserves_unobservable_common_shift) ... ok
+test_defaults_and_known_control_prediction (test_anchor_filter.AnchorFilterChecks.test_defaults_and_known_control_prediction) ... ok
+test_input_validation_copies_and_accounting (test_anchor_filter.AnchorFilterChecks.test_input_validation_copies_and_accounting) ... ok
+test_noiseless_known_forcing_identifies_both_offsets (test_anchor_filter.AnchorFilterChecks.test_noiseless_known_forcing_identifies_both_offsets) ... ok
+test_positive_semidefinite_covariance_for_each_candidate_qb (test_anchor_filter.AnchorFilterChecks.test_positive_semidefinite_covariance_for_each_candidate_qb) ... ok
+test_reference_offset_learnable_under_known_forcing_with_noise (test_anchor_filter.AnchorFilterChecks.test_reference_offset_learnable_under_known_forcing_with_noise) ... ok
+test_sequential_posterior_matches_independent_batch_conditioning (test_anchor_filter.AnchorFilterChecks.test_sequential_posterior_matches_independent_batch_conditioning) ... ok
+test_unknown_forcing_shift_is_exactly_observationally_equivalent (test_anchor_filter.AnchorFilterChecks.test_unknown_forcing_shift_is_exactly_observationally_equivalent) ... ok
+test_all_policy_budgets_opportunities_protected_samples_and_counts (test_runner.RunnerChecks.test_all_policy_budgets_opportunities_protected_samples_and_counts) ... ok
+test_change_delays_and_censoring_reconstructed_from_trace (test_runner.RunnerChecks.test_change_delays_and_censoring_reconstructed_from_trace) ... ok
+test_current_outcome_not_used_in_current_forecast_or_action (test_runner.RunnerChecks.test_current_outcome_not_used_in_current_forecast_or_action) ... ok
+test_hidden_reference_values_cannot_affect_any_decision_or_trace (test_runner.RunnerChecks.test_hidden_reference_values_cannot_affect_any_decision_or_trace) ... ok
+test_hybrid_reservations_survive_immediate_discretionary_exhaustion (test_runner.RunnerChecks.test_hybrid_reservations_survive_immediate_discretionary_exhaustion) ... ok
+test_known_delay_examples_use_completed_recovery_and_access_censor (test_runner.RunnerChecks.test_known_delay_examples_use_completed_recovery_and_access_censor) ... ok
+test_latch_preserves_nonopportunity_alarm_and_clears_on_decline (test_runner.RunnerChecks.test_latch_preserves_nonopportunity_alarm_and_clears_on_decline) ... ok
+test_metrics_reconstructed_from_trace (test_runner.RunnerChecks.test_metrics_reconstructed_from_trace) ... ok
+test_score_and_gate_fixed_before_current_reference_update (test_runner.RunnerChecks.test_score_and_gate_fixed_before_current_reference_update) ... ok
+test_score_reconstruction_uses_preupdate_h_and_current_inflated_ph (test_runner.RunnerChecks.test_score_reconstruction_uses_preupdate_h_and_current_inflated_ph) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.779s
+
+OK

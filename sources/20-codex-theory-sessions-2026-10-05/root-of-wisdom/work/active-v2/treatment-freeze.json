@@ -1,0 +1,18 @@
+{
+  "frozen_at": "2026-10-05T05:15:57.423739+07:00",
+  "stage": "before case inspection or participants",
+  "treatments": {
+    "ordinary": {
+      "sha256": "4338fc5ed534ee1f04d962296fa6129ce0368be15a6dcd1e14db80eaff2e3704",
+      "file": "treatment-ordinary.txt"
+    },
+    "decision_procedure": {
+      "sha256": "594af84e264a244526e2ebb94f00e24ca4882a875f3bed23e96b810bed3e7f40",
+      "file": "treatment-decision_procedure.txt"
+    },
+    "discipline": {
+      "sha256": "53a55298f2260595bb2a1feea04a15d55e70aceff9af8c04d2a774c96f493593",
+      "file": "treatment-discipline.txt"
+    }
+  }
+}

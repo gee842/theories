@@ -1,0 +1,62 @@
+{
+  "status": "all checks passed",
+  "scope": "Constructed examples only; no empirical validation or general proof certificate.",
+  "timing_model": {
+    "fine_states": 10,
+    "actions": [
+      "wait",
+      "dispatch"
+    ],
+    "label_respecting_partitions_enumerated": 4140,
+    "faithful_partitions": 9,
+    "minimal_blocks": 6,
+    "distinct_minimal_partitions": 1,
+    "every_faithful_partition_refines_canonical": true,
+    "canonical_blocks": [
+      [
+        "(1, 1, 0)",
+        "(1, 1, 1)"
+      ],
+      [
+        "(1, 2, 0)",
+        "(1, 2, 1)"
+      ],
+      [
+        "(2, 1, 0)",
+        "(2, 1, 1)"
+      ],
+      [
+        "(2, 2, 0)",
+        "(2, 2, 1)"
+      ],
+      [
+        "failed"
+      ],
+      [
+        "safe"
+      ]
+    ],
+    "spatial_distinction": "reserve 1, delay 1 dispatches safely; reserve 1, delay 2 fails",
+    "decorative_badge_removed": true
+  },
+  "hidden_environment": {
+    "latent_states": 2,
+    "first_distinct_predictions_checked": 13,
+    "predictions": [
+      "1/2",
+      "5/9",
+      "3/5",
+      "17/27",
+      "11/17",
+      "65/99",
+      "43/65",
+      "257/387",
+      "171/257",
+      "1025/1539",
+      "683/1025",
+      "4097/6147",
+      "2731/4097"
+    ],
+    "infinite_distinctness": "Established algebraically in the note; finite check is illustrative."
+  }
+}

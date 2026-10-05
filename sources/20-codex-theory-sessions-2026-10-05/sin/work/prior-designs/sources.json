@@ -1,0 +1,14 @@
+{
+  "handoff-design.md": {
+    "source": "/Users/ren/theories/experiments/integrated-correction/general-framework/reproduction-test/design/DESIGN.md",
+    "sha256": "7688c8d20e02f37e5d2207e4f5fdc0424748cfbbb3cf4719dfd12371b2b9bcc9"
+  },
+  "transfer-design.md": {
+    "source": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/next-test.md",
+    "sha256": "4c5e9332b03eb4d0b6c4d54d73d70e4cea52dc66b2c0c544e8da31bed3ccded8"
+  },
+  "fundamental-theory-audit.md": {
+    "source": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/fundamental-theory-audit.md",
+    "sha256": "2641b6b050cece30eb5928e7b3bf8181742d3f7378e80b4095dbfeafba9b5e45"
+  }
+}

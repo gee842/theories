@@ -1,0 +1,1713 @@
+{
+  "scope": "Specified deterministic model; declared constraints; illustrative numerical comparisons, no empirical fitting.",
+  "algebra_checks": {
+    "plant_max_difference_from_baseline": 1.0408340855860843e-17,
+    "random_safe_states_checked": 2000,
+    "smallest_sampled_controller_interval_width": 0.36047872433584094,
+    "analytical_raw_interval_gap_lower_bound": 0.029354838709677478,
+    "lower_corner_operating_derivatives": [
+      0.003386109282422648,
+      0.013659751481237657,
+      0.12209711470795215,
+      0.023898662913441004
+    ],
+    "minimum_user_selection_margin": 0.037623436471362764,
+    "maximum_clean_target_with_declared_buffer": 4.855284662312084,
+    "boundary_impossibility_state": [
+      0.94,
+      0.9,
+      2.7,
+      2.4,
+      0.8
+    ],
+    "boundary_impossibility_hdot": -0.014902584625961408,
+    "outside_empty_interval_state": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.45
+    ],
+    "outside_empty_interval_detected": true
+  },
+  "design": {
+    "rate_limit": 0.5,
+    "alpha": 2.0,
+    "incentive_buffer": 0.02,
+    "minimum_m": 0.45
+  },
+  "cases": {
+    "reference": {
+      "arguments": {
+        "schedule": [
+          [
+            600.0,
+            4.0
+          ]
+        ],
+        "epsilon": 1.0
+      },
+      "policies": {
+        "target": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            2.3370160760122975e-37,
+            3.8054678854524693e-10,
+            5.6884772641275e-37,
+            4.329463509152744e-46,
+            1.0
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            -0.9,
+            -0.8999999996194532,
+            -2.5,
+            -2.1,
+            0.04999999999999999,
+            -1.0200000000000078
+          ],
+          "operating_floor_breach": true,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 3.8054678854524693e-10,
+          "sampled_minimum_G": 4.329463509152744e-46,
+          "maximum_m": 1.0000000395391693,
+          "final_absolute_target_error": 4.0,
+          "phase_late_max_target_errors": [
+            4.0
+          ],
+          "rule_total_variation": 0.6816957125444459,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 8.34080634523201,
+          "integrated_delivered_maintenance_expenditure": 1.3902470704331782,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.4,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.0,
+          "certified_loss_entry_sample": 21.6,
+          "final_operating_depletion_below_1e-6": true
+        },
+        "slow": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            4.000000000000001,
+            0.6666666666666671
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.07652806383648204
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.6868785243046516,
+          "final_absolute_target_error": 8.881784197001252e-16,
+          "phase_late_max_target_errors": [
+            8.881784197001252e-16
+          ],
+          "rule_total_variation": 0.20710741634477847,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.35143298866043,
+          "integrated_delivered_maintenance_expenditure": 43.40335159297321,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.04,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.0,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "fixed": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            2.999999999999999,
+            0.5
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.13647058823529426
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.5,
+          "final_absolute_target_error": 1.0000000000000009,
+          "phase_late_max_target_errors": [
+            1.0000000000000009
+          ],
+          "rule_total_variation": 0.0,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.33529031935643,
+          "integrated_delivered_maintenance_expenditure": 32.56569226253261,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.0,
+          "filter_deviation_integral_from_rate_limited_nominal": 150.96814544975382,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "equilibrium_rule": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            3.9999999999999982,
+            0.6666666666666666
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.04791560422211118
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.6666666666666666,
+          "final_absolute_target_error": 1.7763568394002505e-15,
+          "phase_late_max_target_errors": [
+            1.7763568394002505e-15
+          ],
+          "rule_total_variation": 0.16722185220643707,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.35201422366964,
+          "integrated_delivered_maintenance_expenditure": 43.38378573713116,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.16666666666666663,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.0,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.6": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            3.5999999999999983,
+            0.6
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.07989690049497068
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.6000000000000006,
+          "final_absolute_target_error": 0.4000000000000017,
+          "phase_late_max_target_errors": [
+            0.4000000000000017
+          ],
+          "rule_total_variation": 0.10132979146122408,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.34827345489882,
+          "integrated_delivered_maintenance_expenditure": 39.06762218898045,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.19999999999999996,
+          "filter_deviation_integral_from_rate_limited_nominal": 58.88740270344989,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.7": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            4.0,
+            0.666666666666667
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.0013871649652183078
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.699999999999994,
+          "final_absolute_target_error": 0.0,
+          "phase_late_max_target_errors": [
+            0.0
+          ],
+          "rule_total_variation": 0.2359938688937584,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.35194121103638,
+          "integrated_delivered_maintenance_expenditure": 43.44793581486509,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.3999999999999999,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.8071411663882321,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.8": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            9.056860848475979e-37,
+            3.0534452694597355e-09,
+            2.2045097399941378e-36,
+            1.0770159739300789e-44,
+            0.8
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            -0.9,
+            -0.8999999969465547,
+            -2.5,
+            -2.1,
+            0.04999999999999999,
+            -0.8200000000000001
+          ],
+          "operating_floor_breach": true,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 3.0534452694597355e-09,
+          "sampled_minimum_G": 1.0770159739300789e-44,
+          "maximum_m": 0.8000000000000028,
+          "final_absolute_target_error": 4.0,
+          "phase_late_max_target_errors": [
+            4.0
+          ],
+          "rule_total_variation": 0.3852442819186588,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 10.289600288702882,
+          "integrated_delivered_maintenance_expenditure": 1.8026953329014455,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.4,
+          "filter_deviation_integral_from_rate_limited_nominal": 287.65672697869473,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": true
+        },
+        "filtered": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.9999999999999996,
+            4.0,
+            0.6666666666666667
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            1.546842544677962e-08
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.7350320814047437,
+          "final_absolute_target_error": 0.0,
+          "phase_late_max_target_errors": [
+            2.6645352591003757e-15
+          ],
+          "rule_total_variation": 0.3048712647638654,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.35142507522534,
+          "integrated_delivered_maintenance_expenditure": 43.47017290317544,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.29458636537879923,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.5520414120952363,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        }
+      }
+    },
+    "fast_recovery_control": {
+      "arguments": {
+        "schedule": [
+          [
+            600.0,
+            3.6
+          ]
+        ],
+        "epsilon": 10.0
+      },
+      "policies": {
+        "target": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            3.6000000004204233,
+            0.6000000000711994
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.016693660951920153,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            -0.24367372908976256
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 0.9166936609519202,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.9432164686829644,
+          "final_absolute_target_error": 4.2042325176794293e-10,
+          "phase_late_max_target_errors": [
+            6.669444374551858e-08
+          ],
+          "rule_total_variation": 1.677532835344444,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.3483608617397,
+          "integrated_delivered_maintenance_expenditure": 39.162827335932064,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.5,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.0,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "slow": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            3.6000000000000005,
+            0.6000000000000002
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.029050790078959388,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            -0.06399466637499328
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 0.9290507900789594,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.7704030070594446,
+          "final_absolute_target_error": 4.440892098500626e-16,
+          "phase_late_max_target_errors": [
+            7.549516567451064e-15
+          ],
+          "rule_total_variation": 0.44720842237392194,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.34947570177798,
+          "integrated_delivered_maintenance_expenditure": 39.16430431298579,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.30000000000000004,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.0,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "fixed": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            2.999999999999999,
+            0.5
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.13647058823529426
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.5,
+          "final_absolute_target_error": 0.600000000000001,
+          "phase_late_max_target_errors": [
+            0.600000000000001
+          ],
+          "rule_total_variation": 0.0,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.33529031935643,
+          "integrated_delivered_maintenance_expenditure": 32.56569226253261,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.0,
+          "filter_deviation_integral_from_rate_limited_nominal": 300.0,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "equilibrium_rule": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            3.5999999999999983,
+            0.6
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.0961291781819348
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.6000000000000006,
+          "final_absolute_target_error": 1.7763568394002505e-15,
+          "phase_late_max_target_errors": [
+            1.7763568394002505e-15
+          ],
+          "rule_total_variation": 0.10033311136978147,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.34797924289262,
+          "integrated_delivered_maintenance_expenditure": 39.0638977817197,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.09999999999999998,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.0,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.6": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            3.5999999999653585,
+            0.5999999999995249
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.07989690049497068
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.6000000001603903,
+          "final_absolute_target_error": 3.4641622903563984e-11,
+          "phase_late_max_target_errors": [
+            7.275913205262441e-10
+          ],
+          "rule_total_variation": 0.10132980180638372,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.34827345489882,
+          "integrated_delivered_maintenance_expenditure": 39.06762218893404,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.19999999999999996,
+          "filter_deviation_integral_from_rate_limited_nominal": 8.07018538819519,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.7": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            3.600000000194402,
+            0.6000000000247954
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.0013871649652183078
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.6996537656809199,
+          "final_absolute_target_error": 1.944018279687043e-10,
+          "phase_late_max_target_errors": [
+            3.9241610405582605e-08
+          ],
+          "rule_total_variation": 0.342358613263722,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.3503494622057,
+          "integrated_delivered_maintenance_expenditure": 39.145390487101224,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.3999999999999999,
+          "filter_deviation_integral_from_rate_limited_nominal": 1.0428877365608349,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.8": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            3.600000000165326,
+            0.6000000001075076
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.027002408372951092,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            -0.0831960425064525
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 0.9270024083729511,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.7875532329721964,
+          "final_absolute_target_error": 1.6532597513219116e-10,
+          "phase_late_max_target_errors": [
+            4.877388981583408e-08
+          ],
+          "rule_total_variation": 0.771204452008829,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.34968651229838,
+          "integrated_delivered_maintenance_expenditure": 39.15473953557418,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.5,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.4366116485523702,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "filtered": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.9999999999999996,
+            3.600000000058197,
+            0.6000000000079315
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.0003382759713830459
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.7135093875071036,
+          "final_absolute_target_error": 5.8197002772431006e-11,
+          "phase_late_max_target_errors": [
+            6.209023251102508e-08
+          ],
+          "rule_total_variation": 0.41145846461226593,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 130.35038055181286,
+          "integrated_delivered_maintenance_expenditure": 39.14380597414315,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.29458636537879923,
+          "filter_deviation_integral_from_rate_limited_nominal": 1.0385684482337987,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        }
+      }
+    },
+    "changing_targets": {
+      "arguments": {
+        "schedule": [
+          [
+            150.0,
+            4.0
+          ],
+          [
+            150.0,
+            4.7
+          ],
+          [
+            150.0,
+            3.0
+          ],
+          [
+            150.0,
+            6.0
+          ],
+          [
+            150.0,
+            4.0
+          ]
+        ],
+        "epsilon": 1.0
+      },
+      "policies": {
+        "target": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            3.953992644124213e-47,
+            3.8054678854524554e-10,
+            9.62432286602236e-47,
+            7.325010317174893e-56,
+            1.0
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            -0.9,
+            -0.8999999996194532,
+            -2.5,
+            -2.1,
+            0.04999999999999999,
+            -1.0200000000000078
+          ],
+          "operating_floor_breach": true,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 3.8054678854524554e-10,
+          "sampled_minimum_G": 7.325010317174893e-56,
+          "maximum_m": 1.0000000395391693,
+          "final_absolute_target_error": 4.0,
+          "phase_late_max_target_errors": [
+            4.0,
+            4.7,
+            3.0,
+            6.0,
+            4.0
+          ],
+          "rule_total_variation": 0.6816957125444459,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 8.34080634523201,
+          "integrated_delivered_maintenance_expenditure": 1.3902470704331782,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.4,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.0,
+          "certified_loss_entry_sample": 21.6,
+          "final_operating_depletion_below_1e-6": true
+        },
+        "slow": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            4.000000001472222,
+            0.6666666668731625
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            -0.153122828407231
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.9888818377447137,
+          "final_absolute_target_error": 1.472222344034435e-09,
+          "phase_late_max_target_errors": [
+            4.1258529126508847e-07,
+            5.587864029266143e-07,
+            7.143947655663396e-10,
+            0.08385725096398566,
+            1.6536195701633005e-07
+          ],
+          "rule_total_variation": 1.4181950524203588,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.97643298866365,
+          "integrated_delivered_maintenance_expenditure": 58.900205019322335,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.07499999999992527,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.0,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "fixed": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            2.999999999999999,
+            0.5
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.13647058823529426
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.5,
+          "final_absolute_target_error": 1.0000000000000009,
+          "phase_late_max_target_errors": [
+            1.0000002028746926,
+            1.7000000000000033,
+            8.881784197001252e-16,
+            3.000000000000001,
+            1.0000000000000009
+          ],
+          "rule_total_variation": 0.0,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.96029031935643,
+          "integrated_delivered_maintenance_expenditure": 40.72194226253261,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.0,
+          "filter_deviation_integral_from_rate_limited_nominal": 214.71814544975382,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "equilibrium_rule": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            3.999999999999999,
+            0.6666666666666666
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999927,
+            -0.16287468609858566
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 1.0000000000000027,
+          "final_absolute_target_error": 8.881784197001252e-16,
+          "phase_late_max_target_errors": [
+            4.609725134940845e-08,
+            1.397104654188297e-12,
+            8.881784197001252e-16,
+            5.240252676230739e-14,
+            1.7763568394002505e-15
+          ],
+          "rule_total_variation": 1.4046635584273406,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.97701422367533,
+          "integrated_delivered_maintenance_expenditure": 58.88066073704417,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.5,
+          "filter_deviation_integral_from_rate_limited_nominal": 4.338751580235005e-14,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.6": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            3.5999999999999988,
+            0.5999999999999999
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.006900894633376453,
+            0.07989690049497068
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.600000000000061,
+          "final_absolute_target_error": 0.40000000000000124,
+          "phase_late_max_target_errors": [
+            0.40000004601361683,
+            1.1000000000000019,
+            8.881784197001252e-16,
+            2.4000000000001194,
+            0.40000000000001634
+          ],
+          "rule_total_variation": 0.41752370926164145,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.97327345489882,
+          "integrated_delivered_maintenance_expenditure": 47.21556739387452,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.19999999999999996,
+          "filter_deviation_integral_from_rate_limited_nominal": 144.59552020261873,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.7": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            4.0,
+            0.666666666666667
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.0031751128441397936,
+            0.0013871649652183078
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.7000000000000717,
+          "final_absolute_target_error": 0.0,
+          "phase_late_max_target_errors": [
+            9.256648780819887e-09,
+            0.5000000000000924,
+            1.9095836023552692e-14,
+            1.800000000000117,
+            0.0
+          ],
+          "rule_total_variation": 0.8665609786222934,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.97694121103845,
+          "integrated_delivered_maintenance_expenditure": 52.67818257700316,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.40000000000000047,
+          "filter_deviation_integral_from_rate_limited_nominal": 73.4700307627021,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.8": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.5323284054953863e-46,
+            3.0534452694597244e-09,
+            3.72980544948191e-46,
+            1.8222010889161037e-54,
+            0.8
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            -0.9,
+            -0.8999999969465547,
+            -2.5,
+            -2.1,
+            0.04999999999999999,
+            -0.8200000000000001
+          ],
+          "operating_floor_breach": true,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 3.0534452694597244e-09,
+          "sampled_minimum_G": 1.8222010889161037e-54,
+          "maximum_m": 0.8000000000000028,
+          "final_absolute_target_error": 4.0,
+          "phase_late_max_target_errors": [
+            3.999999999999998,
+            4.7,
+            3.0,
+            6.0,
+            4.0
+          ],
+          "rule_total_variation": 0.3852442819186587,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 10.289600288702882,
+          "integrated_delivered_maintenance_expenditure": 1.8026953329014455,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.4,
+          "filter_deviation_integral_from_rate_limited_nominal": 359.65672697869473,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": true
+        },
+        "filtered": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            4.0,
+            0.666666666666667
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.0024870877740679753,
+            -6.254823048390534e-13
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.8092141103854285,
+          "final_absolute_target_error": 0.0,
+          "phase_late_max_target_errors": [
+            1.4387112834413074e-08,
+            3.312905505481467e-13,
+            1.9095836023552692e-14,
+            1.144715337688142,
+            0.0
+          ],
+          "rule_total_variation": 1.4903735502716187,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.97642507523236,
+          "integrated_delivered_maintenance_expenditure": 55.83040628271669,
+          "imposed_practice_reintroductions": [],
+          "maximum_absolute_u": 0.46,
+          "filter_deviation_integral_from_rate_limited_nominal": 27.60122536961456,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        }
+      }
+    },
+    "exploratory_reintroduction": {
+      "arguments": {
+        "schedule": [
+          [
+            150.0,
+            4.0
+          ],
+          [
+            150.0,
+            4.7
+          ],
+          [
+            150.0,
+            3.0
+          ],
+          [
+            150.0,
+            6.0
+          ],
+          [
+            150.0,
+            4.0
+          ]
+        ],
+        "epsilon": 1.0,
+        "shock_at": 450.0
+      },
+      "policies": {
+        "target": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            3.953992644124213e-47,
+            3.8054678854524554e-10,
+            9.62432286602236e-47,
+            7.325010317174893e-56,
+            1.0
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            -0.9,
+            -0.8999999996194532,
+            -2.5,
+            -2.1,
+            0.04999999999999999,
+            -1.0200000000000078
+          ],
+          "operating_floor_breach": true,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 3.8054678854524554e-10,
+          "sampled_minimum_G": 7.325010317174893e-56,
+          "maximum_m": 1.0000000395391693,
+          "final_absolute_target_error": 4.0,
+          "phase_late_max_target_errors": [
+            4.0,
+            4.7,
+            3.0,
+            6.0,
+            4.0
+          ],
+          "rule_total_variation": 0.6816957125444459,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 8.34080634523201,
+          "integrated_delivered_maintenance_expenditure": 1.3902470704331782,
+          "imposed_practice_reintroductions": [
+            {
+              "time": 450.0,
+              "before_h": 3.8054678854524554e-10,
+              "after_h": 3.8054678854524554e-10,
+              "post_jump_in_certificate": false
+            }
+          ],
+          "maximum_absolute_u": 0.4,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.0,
+          "certified_loss_entry_sample": 21.6,
+          "final_operating_depletion_below_1e-6": true
+        },
+        "slow": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            0.9999997499848005,
+            7.676772901894302e-122,
+            2.9999992939600997,
+            2.8555069643393416e-110,
+            1.0
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            -0.9,
+            0.20000000000000018,
+            -2.1,
+            0.04999999999999999,
+            -1.02
+          ],
+          "operating_floor_breach": true,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 7.676772901894302e-122,
+          "sampled_minimum_G": 2.8555069643393416e-110,
+          "maximum_m": 1.0,
+          "final_absolute_target_error": 4.0,
+          "phase_late_max_target_errors": [
+            4.1258529126508847e-07,
+            5.587864029266143e-07,
+            7.143947655663396e-10,
+            6.0,
+            4.0
+          ],
+          "rule_total_variation": 1.1070968886154442,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.9764327020839,
+          "integrated_delivered_maintenance_expenditure": 35.8492389117039,
+          "imposed_practice_reintroductions": [
+            {
+              "time": 450.0,
+              "before_h": 1.0,
+              "after_h": 0.99,
+              "post_jump_in_certificate": true
+            }
+          ],
+          "maximum_absolute_u": 0.07499999999992527,
+          "filter_deviation_integral_from_rate_limited_nominal": 0.0,
+          "certified_loss_entry_sample": 651.0,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "fixed": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            2.999999999999999,
+            0.5
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.04999999999999999,
+            0.13647058823529426
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.5,
+          "final_absolute_target_error": 1.0000000000000009,
+          "phase_late_max_target_errors": [
+            1.0000002028746926,
+            1.7000000000000033,
+            8.881784197001252e-16,
+            3.0000000000000036,
+            1.0000000000000009
+          ],
+          "rule_total_variation": 0.0,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.96029031935643,
+          "integrated_delivered_maintenance_expenditure": 40.71989469856479,
+          "imposed_practice_reintroductions": [
+            {
+              "time": 450.0,
+              "before_h": 1.0,
+              "after_h": 0.99,
+              "post_jump_in_certificate": true
+            }
+          ],
+          "maximum_absolute_u": 0.0,
+          "filter_deviation_integral_from_rate_limited_nominal": 214.71814544975382,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "equilibrium_rule": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            0.9986519780055075,
+            3.3994336037085344e-109,
+            2.996192458706301,
+            4.92913747675581e-108,
+            0.6666666666666666
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            -0.9,
+            0.20000000000000018,
+            -2.1,
+            0.04999999999999927,
+            -1.02
+          ],
+          "operating_floor_breach": true,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 3.3994336037085344e-109,
+          "sampled_minimum_G": 4.92913747675581e-108,
+          "maximum_m": 1.0000000000000009,
+          "final_absolute_target_error": 4.0,
+          "phase_late_max_target_errors": [
+            4.609725134940845e-08,
+            1.397104654188297e-12,
+            8.881784197001252e-16,
+            6.0,
+            4.0
+          ],
+          "rule_total_variation": 1.404663558875825,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.97546789604044,
+          "integrated_delivered_maintenance_expenditure": 33.73768126573724,
+          "imposed_practice_reintroductions": [
+            {
+              "time": 450.0,
+              "before_h": 1.0,
+              "after_h": 0.99,
+              "post_jump_in_certificate": true
+            }
+          ],
+          "maximum_absolute_u": 0.5,
+          "filter_deviation_integral_from_rate_limited_nominal": 2.664535259100224e-16,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.6": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            3.5999999999999983,
+            0.6
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.006900894633376453,
+            0.07989690049497068
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.6000000000000174,
+          "final_absolute_target_error": 0.4000000000000017,
+          "phase_late_max_target_errors": [
+            0.40000004601361683,
+            1.1000000000000019,
+            8.881784197001252e-16,
+            2.4000000000020516,
+            0.4000000000000017
+          ],
+          "rule_total_variation": 0.4175237092928212,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.97327345489882,
+          "integrated_delivered_maintenance_expenditure": 47.21225729674737,
+          "imposed_practice_reintroductions": [
+            {
+              "time": 450.0,
+              "before_h": 1.0,
+              "after_h": 0.99,
+              "post_jump_in_certificate": true
+            }
+          ],
+          "maximum_absolute_u": 0.19999999999999996,
+          "filter_deviation_integral_from_rate_limited_nominal": 144.5955202025856,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.7": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            1.0,
+            2.999999999999999,
+            4.0,
+            0.666666666666667
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.0031751128441397936,
+            0.0013871649652183078
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.7000000000000413,
+          "final_absolute_target_error": 0.0,
+          "phase_late_max_target_errors": [
+            9.256648780819887e-09,
+            0.5000000000000924,
+            1.9095836023552692e-14,
+            1.800000039552983,
+            0.0
+          ],
+          "rule_total_variation": 0.8665609781922194,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.97694121103845,
+          "integrated_delivered_maintenance_expenditure": 52.671640905925486,
+          "imposed_practice_reintroductions": [
+            {
+              "time": 450.0,
+              "before_h": 1.0,
+              "after_h": 0.99,
+              "post_jump_in_certificate": true
+            }
+          ],
+          "maximum_absolute_u": 0.40000000000000047,
+          "filter_deviation_integral_from_rate_limited_nominal": 73.5412124058273,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        },
+        "cap_0.8": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.5323284054953863e-46,
+            3.0534452694597244e-09,
+            3.72980544948191e-46,
+            1.8222010889161037e-54,
+            0.8
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            -0.9,
+            -0.8999999969465547,
+            -2.5,
+            -2.1,
+            0.04999999999999999,
+            -0.8200000000000001
+          ],
+          "operating_floor_breach": true,
+          "certificate_margin_breach": true,
+          "sampled_minimum_h": 3.0534452694597244e-09,
+          "sampled_minimum_G": 1.8222010889161037e-54,
+          "maximum_m": 0.8000000000000028,
+          "final_absolute_target_error": 4.0,
+          "phase_late_max_target_errors": [
+            3.999999999999998,
+            4.7,
+            3.0,
+            6.0,
+            4.0
+          ],
+          "rule_total_variation": 0.3852442819186587,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 10.289600288702882,
+          "integrated_delivered_maintenance_expenditure": 1.8026953329014455,
+          "imposed_practice_reintroductions": [
+            {
+              "time": 450.0,
+              "before_h": 3.0534452694597244e-09,
+              "after_h": 3.0534452694597244e-09,
+              "post_jump_in_certificate": false
+            }
+          ],
+          "maximum_absolute_u": 0.4,
+          "filter_deviation_integral_from_rate_limited_nominal": 359.65672697869473,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": true
+        },
+        "filtered": {
+          "initial_x_h_C_G_m": [
+            0.94,
+            0.93,
+            2.7,
+            2.4,
+            0.5
+          ],
+          "initial_certified": true,
+          "final_x_h_C_G_m": [
+            1.0,
+            0.9999999999998823,
+            2.999999999999999,
+            4.000000000000051,
+            0.6666666666667536
+          ],
+          "minimum_margins_x_h_C_G_m_b": [
+            0.040000000000000036,
+            0.030000000000000027,
+            0.20000000000000018,
+            0.2999999999999998,
+            0.0024870877740679753,
+            -2.3627142225340902e-08
+          ],
+          "operating_floor_breach": false,
+          "certificate_margin_breach": false,
+          "sampled_minimum_h": 0.93,
+          "sampled_minimum_G": 2.4,
+          "maximum_m": 0.8088076989470108,
+          "final_absolute_target_error": 5.062616992290714e-14,
+          "phase_late_max_target_errors": [
+            1.4387112834413074e-08,
+            3.312905505481467e-13,
+            1.9095836023552692e-14,
+            1.152726970004963,
+            4.249933738265099e-12
+          ],
+          "rule_total_variation": 1.4883719673521199,
+          "actuator_limit": 0.5,
+          "integrated_fee_revenue": 162.97642507523236,
+          "integrated_delivered_maintenance_expenditure": 55.74612294140856,
+          "imposed_practice_reintroductions": [
+            {
+              "time": 450.0,
+              "before_h": 1.0,
+              "after_h": 0.99,
+              "post_jump_in_certificate": true
+            }
+          ],
+          "maximum_absolute_u": 0.44510186171875016,
+          "filter_deviation_integral_from_rate_limited_nominal": 28.661911754931268,
+          "certified_loss_entry_sample": null,
+          "final_operating_depletion_below_1e-6": false
+        }
+      }
+    }
+  },
+  "grid_aggregate": {
+    "target": {
+      "number_of_starts": 72,
+      "operating_floor_breaches": 48,
+      "certificate_margin_breaches": 72,
+      "operating_depletions": 48,
+      "target_error_under_point_01": 24,
+      "worst_sampled_minimum_h": 1.8258145140760817e-14,
+      "worst_sampled_minimum_G": 6.2750509982732234e-37,
+      "max_rule_total_variation": 0.6851486729456192
+    },
+    "slow": {
+      "number_of_starts": 72,
+      "operating_floor_breaches": 26,
+      "certificate_margin_breaches": 37,
+      "operating_depletions": 26,
+      "target_error_under_point_01": 46,
+      "worst_sampled_minimum_h": 1.1509252087242149e-31,
+      "worst_sampled_minimum_G": 8.951471973478278e-48,
+      "max_rule_total_variation": 0.5501231009722797
+    },
+    "fixed": {
+      "number_of_starts": 72,
+      "operating_floor_breaches": 0,
+      "certificate_margin_breaches": 0,
+      "operating_depletions": 0,
+      "target_error_under_point_01": 0,
+      "worst_sampled_minimum_h": 0.8999999999999999,
+      "worst_sampled_minimum_G": 2.1,
+      "max_rule_total_variation": 0.0
+    },
+    "equilibrium_rule": {
+      "number_of_starts": 72,
+      "operating_floor_breaches": 46,
+      "certificate_margin_breaches": 53,
+      "operating_depletions": 46,
+      "target_error_under_point_01": 26,
+      "worst_sampled_minimum_h": 4.0338448640229946e-32,
+      "worst_sampled_minimum_G": 8.311721051390974e-45,
+      "max_rule_total_variation": 0.3402490151248808
+    },
+    "cap_0.6": {
+      "number_of_starts": 72,
+      "operating_floor_breaches": 0,
+      "certificate_margin_breaches": 0,
+      "operating_depletions": 0,
+      "target_error_under_point_01": 0,
+      "worst_sampled_minimum_h": 0.8999999999999999,
+      "worst_sampled_minimum_G": 2.1,
+      "max_rule_total_variation": 0.16229650816880328
+    },
+    "cap_0.7": {
+      "number_of_starts": 72,
+      "operating_floor_breaches": 4,
+      "certificate_margin_breaches": 24,
+      "operating_depletions": 0,
+      "target_error_under_point_01": 0,
+      "worst_sampled_minimum_h": 0.8942654179204343,
+      "worst_sampled_minimum_G": 2.1,
+      "max_rule_total_variation": 0.2704941762170221
+    },
+    "cap_0.8": {
+      "number_of_starts": 72,
+      "operating_floor_breaches": 48,
+      "certificate_margin_breaches": 72,
+      "operating_depletions": 48,
+      "target_error_under_point_01": 24,
+      "worst_sampled_minimum_h": 2.9588448709612575e-15,
+      "worst_sampled_minimum_G": 5.666203639476302e-36,
+      "max_rule_total_variation": 0.3587462880886974
+    },
+    "filtered": {
+      "number_of_starts": 72,
+      "operating_floor_breaches": 0,
+      "certificate_margin_breaches": 0,
+      "operating_depletions": 0,
+      "target_error_under_point_01": 72,
+      "worst_sampled_minimum_h": 0.8999999999999999,
+      "worst_sampled_minimum_G": 2.1,
+      "max_rule_total_variation": 0.3778428019742019
+    }
+  },
+  "independent_solver_max_state_errors": {
+    "reference/filtered": 5.4281699135572126e-08,
+    "reference/target": 1.6434486982408458e-07,
+    "changing_targets/filtered": 1.3517633057347211e-07,
+    "exploratory_reintroduction/equilibrium_rule": 4.979893510892452e-07
+  },
+  "base_sha256": "3bf1f20095aa2256da762b7e54034bb4c3f01f60d0658b80e2323a18abbe70ca",
+  "source_sha256": "43b0aec9aec68cb6c880a76b2cf9af79417fea27a9bd26de97921b7082f268eb",
+  "protocol_sha256": "cb7e66607b206af3328b32042fe641531b54ee6d9c8edfb13527a08f607fc70d"
+}

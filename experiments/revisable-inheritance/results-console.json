@@ -1,0 +1,161 @@
+{
+  "main": [
+    {
+      "family": "homogeneous",
+      "format": "last",
+      "total_loss": 0.275,
+      "inquiry_cost": 0.0,
+      "inspect_probability": 0.0,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.0
+    },
+    {
+      "family": "homogeneous",
+      "format": "count",
+      "total_loss": 0.26369500000000007,
+      "inquiry_cost": 0.06186195312500002,
+      "inspect_probability": 0.5,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.2734968750000001
+    },
+    {
+      "family": "homogeneous",
+      "format": "timed",
+      "total_loss": 0.266695,
+      "inquiry_cost": 0.06486195312500001,
+      "inspect_probability": 0.5,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.2734968750000001
+    },
+    {
+      "family": "homogeneous",
+      "format": "raw",
+      "total_loss": 0.26669500000000007,
+      "inquiry_cost": 0.06486195312500001,
+      "inspect_probability": 0.5,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.2734968750000001
+    },
+    {
+      "family": "ordered",
+      "format": "last",
+      "total_loss": 0.27499999999999997,
+      "inquiry_cost": 0.0,
+      "inspect_probability": 0.0,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.0
+    },
+    {
+      "family": "ordered",
+      "format": "count",
+      "total_loss": 0.284,
+      "inquiry_cost": 0.009,
+      "inspect_probability": 0.0,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.0
+    },
+    {
+      "family": "ordered",
+      "format": "timed",
+      "total_loss": 0.27037,
+      "inquiry_cost": 0.046726484375,
+      "inspect_probability": 0.5,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.16986562500000002
+    },
+    {
+      "family": "ordered",
+      "format": "raw",
+      "total_loss": 0.27037,
+      "inquiry_cost": 0.046726484375000016,
+      "inspect_probability": 0.5,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.16986562500000002
+    },
+    {
+      "family": "expanded",
+      "format": "last",
+      "total_loss": 0.275,
+      "inquiry_cost": 0.0,
+      "inspect_probability": 0.0,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.0
+    },
+    {
+      "family": "expanded",
+      "format": "count",
+      "total_loss": 0.2763475,
+      "inquiry_cost": 0.06973695312500001,
+      "inspect_probability": 0.5,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.31849687500000007
+    },
+    {
+      "family": "expanded",
+      "format": "timed",
+      "total_loss": 0.271,
+      "inquiry_cost": 0.05178125000000001,
+      "inspect_probability": 0.5,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.19875000000000004
+    },
+    {
+      "family": "expanded",
+      "format": "raw",
+      "total_loss": 0.271,
+      "inquiry_cost": 0.05178125,
+      "inspect_probability": 0.5,
+      "send_probability": 0.0,
+      "diagnostic_probability": 0.19875
+    }
+  ],
+  "counts": {
+    "grid": 144,
+    "controls": 54,
+    "capscan": 8
+  },
+  "example_pair": [
+    {
+      "path": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "last": 0,
+      "count": 2,
+      "timed": [
+        0,
+        2
+      ],
+      "family": "ordered",
+      "models": [
+        0.9958790273142156,
+        0.004120972685784347
+      ],
+      "need": 0.4483516109256862
+    },
+    {
+      "path": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "last": 0,
+      "count": 2,
+      "timed": [
+        2,
+        0
+      ],
+      "family": "ordered",
+      "models": [
+        0.004120972685784349,
+        0.9958790273142156
+      ],
+      "need": 0.05164838907431374
+    }
+  ]
+}

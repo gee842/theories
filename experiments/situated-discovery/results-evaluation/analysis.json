@@ -1,0 +1,234 @@
+{
+  "status": "passed",
+  "n_independent_seeds": 256,
+  "arms": 14,
+  "conditions": 2,
+  "total_trajectories": 7168,
+  "first_full_test_cost": 42.97,
+  "severe_funding_total": 23.0,
+  "necessary_funding_rho_boundary_at_deadline": 0.8153055884161704,
+  "renewal_sweep": [
+    {
+      "rho": 0.8,
+      "funding_by_block22": 39.92353924769659,
+      "ever_validated": 256,
+      "timely": 0,
+      "validation_min": 49,
+      "validation_max": 49,
+      "validation_mean": 49.0
+    },
+    {
+      "rho": 0.81,
+      "funding_by_block22": 41.8579101919396,
+      "ever_validated": 256,
+      "timely": 0,
+      "validation_min": 33,
+      "validation_max": 33,
+      "validation_mean": 33.0
+    },
+    {
+      "rho": 0.815,
+      "funding_by_block22": 42.904090312898305,
+      "ever_validated": 256,
+      "timely": 0,
+      "validation_min": 25,
+      "validation_max": 25,
+      "validation_mean": 25.0
+    },
+    {
+      "rho": 0.816,
+      "funding_by_block22": 43.12045414897781,
+      "ever_validated": 256,
+      "timely": 256,
+      "validation_min": 23,
+      "validation_max": 23,
+      "validation_mean": 23.0
+    },
+    {
+      "rho": 0.82,
+      "funding_by_block22": 44.00593740973921,
+      "ever_validated": 256,
+      "timely": 256,
+      "validation_min": 19,
+      "validation_max": 19,
+      "validation_mean": 19.0
+    },
+    {
+      "rho": 0.9,
+      "funding_by_block22": 72.90964950427801,
+      "ever_validated": 256,
+      "timely": 256,
+      "validation_min": 13,
+      "validation_max": 16,
+      "validation_mean": 14.42578125
+    }
+  ],
+  "protected_hazard": {
+    "hazard": true,
+    "arm": "protected",
+    "n": 256,
+    "timely_validation": {
+      "count": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ]
+    },
+    "timely_enactment": {
+      "count": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ]
+    },
+    "false_acceptance": {
+      "count": 0,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ]
+    },
+    "exact_predicate_recovered": {
+      "count": 256,
+      "rate": 1.0,
+      "wilson95": [
+        0.9852161435741286,
+        0.9999999999999999
+      ]
+    },
+    "failures": {
+      "mean": 661.703125,
+      "se": 1.4834330086374632
+    },
+    "action_cost": {
+      "mean": 429.0458984375,
+      "se": 0.5479483261750863
+    },
+    "inquiry_overhead": {
+      "mean": 10.97,
+      "se": 1.1123978024676787e-16
+    },
+    "total_realized_loss": {
+      "mean": 1101.7190234374998,
+      "se": 1.5612767871602065
+    },
+    "true_selected_policy_gain": {
+      "mean": 0.125,
+      "se": 0.0
+    },
+    "initiated_trials": {
+      "mean": 256.0,
+      "se": 0.0
+    },
+    "completed_trials": {
+      "mean": 256.0,
+      "se": 0.0
+    },
+    "completed_attempts": {
+      "mean": 1.0,
+      "se": 0.0
+    },
+    "mature_discovery_records": {
+      "mean": 640.0,
+      "se": 0.0
+    },
+    "ever_validated": 256,
+    "validation_block_mean_if_any": 14.42578125,
+    "loss_reduction_vs_no_inquiry": {
+      "mean": 846.7106640625002,
+      "se": 1.7192193289122462
+    },
+    "protected_minus_arm_timely_validation": {
+      "mean": 0.0,
+      "se": 0.0
+    }
+  },
+  "protected_absent": {
+    "hazard": false,
+    "arm": "protected",
+    "n": 256,
+    "timely_validation": {
+      "count": 0,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ]
+    },
+    "timely_enactment": {
+      "count": 0,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ]
+    },
+    "false_acceptance": {
+      "count": 0,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ]
+    },
+    "exact_predicate_recovered": {
+      "count": 0,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.01478385642587143
+      ]
+    },
+    "failures": {
+      "mean": 410.36328125,
+      "se": 1.2028816429697975
+    },
+    "action_cost": {
+      "mean": 128.0,
+      "se": 0.0
+    },
+    "inquiry_overhead": {
+      "mean": 22.490000000000446,
+      "se": 4.449591209870715e-16
+    },
+    "total_realized_loss": {
+      "mean": 560.8532812500006,
+      "se": 1.2028816429697975
+    },
+    "true_selected_policy_gain": {
+      "mean": 0.0,
+      "se": 0.0
+    },
+    "initiated_trials": {
+      "mean": 1024.0,
+      "se": 0.0
+    },
+    "completed_trials": {
+      "mean": 1024.0,
+      "se": 0.0
+    },
+    "completed_attempts": {
+      "mean": 4.0,
+      "se": 0.0
+    },
+    "mature_discovery_records": {
+      "mean": 640.0,
+      "se": 0.0
+    },
+    "ever_validated": 0,
+    "validation_block_mean_if_any": null,
+    "loss_reduction_vs_no_inquiry": {
+      "mean": -150.49000000000046,
+      "se": 0.0
+    },
+    "protected_minus_arm_timely_validation": {
+      "mean": 0.0,
+      "se": 0.0
+    }
+  },
+  "all_false_acceptances": 0,
+  "note": "Arms and hazard conditions are paired, not 7168 independent replications. The confidence guarantee is conditional on the protocol assumptions."
+}

@@ -1,0 +1,41 @@
+{
+  "captured_at": "2026-10-05T04:30:30.468975+07:00",
+  "files": [
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/README.md",
+      "local_copy": "work/reference-snapshots/01-README.md",
+      "sha256": "21eddb64d961884a615913519463f82ba225d79789296df46883d822ddb70b7b",
+      "bytes": 33347
+    },
+    {
+      "original": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/CLAIMS.md",
+      "local_copy": "work/reference-snapshots/02-CLAIMS.md",
+      "sha256": "d7518e6db5d4534504ca119dc5d7b6f57c3efda1426d985bef1abdcee5b8edaa",
+      "bytes": 56084
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-inherited-evidence-under-model-revision.md",
+      "local_copy": "work/reference-snapshots/03-2026-10-05-inherited-evidence-under-model-revision.md",
+      "sha256": "e84233cded658ee5fce64daa5e8fa843aed4ac7ce457ae81d2cfd16fb053e837",
+      "bytes": 16952
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-recoverable-inquiry.md",
+      "local_copy": "work/reference-snapshots/04-2026-10-05-recoverable-inquiry.md",
+      "sha256": "07613452ef430dcec784b2aaadc67b6c6a868770c40257a4a28d4770d18ec42f",
+      "bytes": 16339
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-plural-requirements-and-attainable-correction.md",
+      "local_copy": "work/reference-snapshots/05-2026-10-05-plural-requirements-and-attainable-correction.md",
+      "sha256": "e27ec44612aade946fe3ff2dd7b1d6280523dd446f3ff29af39055080d8df8bb",
+      "bytes": 15875
+    },
+    {
+      "original": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-questions-without-anomalies.md",
+      "local_copy": "work/reference-snapshots/06-2026-10-05-questions-without-anomalies.md",
+      "sha256": "16a1f2c1cb72987f7413ea31da3637dca573fcea0e733b369ea4454863945c8e",
+      "bytes": 17740
+    }
+  ]
+}

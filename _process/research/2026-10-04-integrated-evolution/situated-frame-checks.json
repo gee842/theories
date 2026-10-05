@@ -1,0 +1,319 @@
+{
+  "status": "passed",
+  "scope": "Conditional model checks, not empirical evidence",
+  "parameters": {
+    "b": 4.0,
+    "c": 1.0,
+    "lambda": 1.0,
+    "mu": 1.0
+  },
+  "prediction_correction": "Initial q=.05,z=.9 did not recover. That case and q=.05,z=1 are retained; matched q=.1 examples selected after inspecting basins.",
+  "proposal_origination_threshold_beta": 1.0,
+  "analytic_thresholds": {
+    "q_saddle": 0.3333333333333333,
+    "z_saddle": 0.25,
+    "u_fold": 0.07179676972449088,
+    "q_fold": 0.15470053837925146
+  },
+  "equilibria": [
+    {
+      "name": "closed",
+      "q": 0.0,
+      "z": 0.0,
+      "eigenvalues": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "name": "saddle",
+      "q": 0.3333333333333333,
+      "z": 0.25,
+      "eigenvalues": [
+        0.3874258867227931,
+        -1.7207592200561264
+      ]
+    },
+    {
+      "name": "high",
+      "q": 1.0,
+      "z": 0.5,
+      "eigenvalues": [
+        -2.0,
+        -1.0
+      ]
+    },
+    {
+      "name": "protected_u0.02_0",
+      "q": 0.021872698840513703,
+      "z": 0.021404524130385277,
+      "eigenvalues": [
+        -0.6618016805889058,
+        -1.254452921730067
+      ]
+    },
+    {
+      "name": "protected_u0.02_1",
+      "q": 0.304793967826153,
+      "z": 0.2335954758696147,
+      "eigenvalues": [
+        0.3475201796596221,
+        -1.6979322440073163
+      ]
+    },
+    {
+      "name": "protected_u0.05_0",
+      "q": 0.06666666666666668,
+      "z": 0.06250000000000001,
+      "eigenvalues": [
+        -0.3666666666666667,
+        -1.4000000000000001
+      ]
+    },
+    {
+      "name": "protected_u0.05_1",
+      "q": 0.24999999999999997,
+      "z": 0.19999999999999998,
+      "eigenvalues": [
+        0.25,
+        -1.65
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case": "weak_frame",
+      "parameters": {},
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        7.295272203491137e-71,
+        1.159407858857517e-68,
+        3.7165897014133644e-70,
+        0.1318494820755868,
+        0.1318494820755868
+      ],
+      "maximum_q_on_output_grid": 0.1,
+      "tolerance_refinement_error": 5.815209425108492e-11
+    },
+    {
+      "case": "stronger_frame",
+      "parameters": {
+        "initial": [
+          0.1,
+          0.9
+        ]
+      },
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        0.9999999999999994,
+        0.4999999999999997,
+        0.015341556445723211,
+        155.8228099747521,
+        155.8228099747521
+      ],
+      "maximum_q_on_output_grid": 0.9999999999999994,
+      "tolerance_refinement_error": 1.109898839501966e-09
+    },
+    {
+      "case": "initial_prediction_failed",
+      "parameters": {
+        "initial": [
+          0.05,
+          0.9
+        ]
+      },
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        6.494532168366901e-69,
+        1.0040288946705877e-66,
+        6.97874063191267e-70,
+        0.7619114629111343,
+        0.7619114629111343
+      ],
+      "maximum_q_on_output_grid": 0.18650909115937422,
+      "tolerance_refinement_error": 2.871466397991185e-10
+    },
+    {
+      "case": "full_frame_insufficient",
+      "parameters": {
+        "initial": [
+          0.05,
+          1.0
+        ]
+      },
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        5.1494389760687224e-68,
+        7.854073695225251e-66,
+        1.2178911479246694e-69,
+        1.3187488807773906,
+        1.3187488807773906
+      ],
+      "maximum_q_on_output_grid": 0.24914229506272528,
+      "tolerance_refinement_error": 9.31122734471046e-10
+    },
+    {
+      "case": "weak_proposal_origination",
+      "parameters": {
+        "initial": [
+          0.05,
+          0.05
+        ],
+        "beta": 0.2
+      },
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        1.9308168609239103e-40,
+        4.317437753128622e-40,
+        3.5676925173804216e-70,
+        0.09096201359141394,
+        0.09096201359141394
+      ],
+      "maximum_q_on_output_grid": 0.05,
+      "tolerance_refinement_error": 1.0520251336743058e-10
+    },
+    {
+      "case": "strong_proposal_origination",
+      "parameters": {
+        "initial": [
+          0.05,
+          0.05
+        ],
+        "beta": 1.2
+      },
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        0.9999999999999997,
+        0.4999999999999997,
+        0.0004811170526507193,
+        152.36060003146983,
+        152.36060003146983
+      ],
+      "maximum_q_on_output_grid": 0.9999999999999997,
+      "tolerance_refinement_error": 3.25872440143371e-10
+    },
+    {
+      "case": "small_protected_rate",
+      "parameters": {
+        "u": 0.02
+      },
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        0.021872698840513728,
+        0.02140452413038532,
+        1.2186231679674562e-68,
+        3.6219349021459952,
+        3.6219349021459952
+      ],
+      "maximum_q_on_output_grid": 0.1,
+      "tolerance_refinement_error": 6.76473321803428e-11
+    },
+    {
+      "case": "above_fold",
+      "parameters": {
+        "u": 0.1
+      },
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        0.9999999999999996,
+        0.4999999999999997,
+        2.9907195160440522e-05,
+        149.5825885290287,
+        149.5825885290287
+      ],
+      "maximum_q_on_output_grid": 0.9999999999999996,
+      "tolerance_refinement_error": 1.575237718043354e-10
+    },
+    {
+      "case": "short_pulse",
+      "parameters": {
+        "u": 0.1,
+        "pulse": 1.0
+      },
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        3.1918812998121405e-70,
+        5.028702790060354e-68,
+        4.3300418888259336e-70,
+        0.2846201984232238,
+        0.2846201984232237
+      ],
+      "maximum_q_on_output_grid": 0.11854256104666686,
+      "tolerance_refinement_error": 1.575237718043354e-10
+    },
+    {
+      "case": "long_pulse",
+      "parameters": {
+        "u": 0.1,
+        "pulse": 50.0
+      },
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        0.9999999999999996,
+        0.4999999999999997,
+        2.9907195160440522e-05,
+        149.5825885290287,
+        149.5825885290287
+      ],
+      "maximum_q_on_output_grid": 0.9999999999999996,
+      "tolerance_refinement_error": 1.575237718043354e-10
+    },
+    {
+      "case": "absent_benefit",
+      "parameters": {
+        "b": 0.0,
+        "u": 0.1
+      },
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        0.1,
+        0.09090909090909086,
+        2.894641087098663e-63,
+        16.00000000000028,
+        16.00000000000028
+      ],
+      "maximum_q_on_output_grid": 0.1,
+      "tolerance_refinement_error": 2.1004664674251217e-10
+    },
+    {
+      "case": "blocked_evidence",
+      "parameters": {
+        "lam": 0.0,
+        "u": 0.1,
+        "initial": [
+          0.05,
+          0.0
+        ]
+      },
+      "final_time": 160.0,
+      "final_q_z_familiar_error_cost_exposure": [
+        0.09999999999999994,
+        0.0,
+        2.7422915566214577e-63,
+        15.945932778729633,
+        0.0
+      ],
+      "maximum_q_on_output_grid": 0.09999999999999994,
+      "tolerance_refinement_error": 2.102159557537675e-10
+    }
+  ],
+  "numerical_initial_z_basin_boundary_at_q0_10": [
+    0.8317853510379791,
+    0.8317853584885597
+  ],
+  "long_pulse_withdrawal_q_z": [
+    0.9999999999999996,
+    0.4999999999999997
+  ],
+  "closed_trajectory_exposure_t160": 0.1318494820755868,
+  "optional_poisson_no_trigger_probability_t160": 0.8764729100345644,
+  "verification": [
+    "equilibrium residuals and eigenvalue signs",
+    "saddle-node residual and zero determinant",
+    "twelve trajectories including the retained failed initial prediction",
+    "bounded fractions and monotone cumulative trial cost",
+    "absent-benefit q=1 invariant boundary and its recurring cost",
+    "exact cost to diagnostic exposure accounting",
+    "Dulac divergence finite-difference comparison"
+  ]
+}

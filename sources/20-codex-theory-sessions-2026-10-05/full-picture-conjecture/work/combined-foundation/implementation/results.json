@@ -1,0 +1,1050 @@
+[
+  {
+    "mode": "baseline",
+    "states": 486,
+    "edges": 506,
+    "initial_states": 2,
+    "all_reachable_protected": true,
+    "unsafe_states": 0,
+    "min_funds": 2,
+    "min_after_payment": 1,
+    "ledger_and_event_semantics_pass": true,
+    "false_strict_certificate_states": 0,
+    "noninterference_cases": 3888,
+    "evaluator_revised_edges": 2,
+    "conditional_generation_edges": 26,
+    "recurrence": {
+      "corrective_install": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "delivered_x0": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "delivered_x1": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "maintained_archive": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "trained_successor": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "competent_handoff": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      }
+    },
+    "shortest_public_violation": null
+  },
+  {
+    "mode": "record_loss",
+    "states": 204,
+    "edges": 220,
+    "initial_states": 2,
+    "all_reachable_protected": true,
+    "unsafe_states": 0,
+    "min_funds": 2,
+    "min_after_payment": 1,
+    "ledger_and_event_semantics_pass": true,
+    "false_strict_certificate_states": 0,
+    "noninterference_cases": 1632,
+    "evaluator_revised_edges": 2,
+    "conditional_generation_edges": 0,
+    "recurrence": {
+      "corrective_install": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 8,
+        "first_rank_failure": 30,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      },
+      "delivered_x0": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 6,
+        "first_rank_failure": 32,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 172
+        }
+      },
+      "delivered_x1": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 6,
+        "first_rank_failure": 34,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 174
+        }
+      },
+      "maintained_archive": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "trained_successor": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "competent_handoff": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      }
+    },
+    "shortest_public_violation": null
+  },
+  {
+    "mode": "execution_blocked",
+    "states": 486,
+    "edges": 506,
+    "initial_states": 2,
+    "all_reachable_protected": true,
+    "unsafe_states": 0,
+    "min_funds": 2,
+    "min_after_payment": 1,
+    "ledger_and_event_semantics_pass": true,
+    "false_strict_certificate_states": 0,
+    "noninterference_cases": 3888,
+    "evaluator_revised_edges": 2,
+    "conditional_generation_edges": 26,
+    "recurrence": {
+      "corrective_install": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "delivered_x0": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 10,
+        "first_rank_failure": 32,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 440
+        }
+      },
+      "delivered_x1": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 10,
+        "first_rank_failure": 34,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 440
+        }
+      },
+      "maintained_archive": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "trained_successor": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "competent_handoff": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      }
+    },
+    "shortest_public_violation": null
+  },
+  {
+    "mode": "no_renewal",
+    "states": 18,
+    "edges": 18,
+    "initial_states": 2,
+    "all_reachable_protected": true,
+    "unsafe_states": 0,
+    "min_funds": 0,
+    "min_after_payment": 0,
+    "ledger_and_event_semantics_pass": true,
+    "false_strict_certificate_states": 0,
+    "noninterference_cases": 144,
+    "evaluator_revised_edges": 0,
+    "conditional_generation_edges": 0,
+    "recurrence": {
+      "corrective_install": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 2,
+        "first_rank_failure": 16,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 2
+        }
+      },
+      "delivered_x0": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 2,
+        "first_rank_failure": 16,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 2
+        }
+      },
+      "delivered_x1": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 2,
+        "first_rank_failure": 16,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 2
+        }
+      },
+      "maintained_archive": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 2,
+        "first_rank_failure": 16,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 2
+        }
+      },
+      "trained_successor": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 2,
+        "first_rank_failure": 16,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 2
+        }
+      },
+      "competent_handoff": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 2,
+        "first_rank_failure": 16,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 2
+        }
+      }
+    },
+    "shortest_public_violation": null
+  },
+  {
+    "mode": "no_maintenance",
+    "states": 230,
+    "edges": 250,
+    "initial_states": 2,
+    "all_reachable_protected": true,
+    "unsafe_states": 0,
+    "min_funds": 2,
+    "min_after_payment": 1,
+    "ledger_and_event_semantics_pass": true,
+    "false_strict_certificate_states": 0,
+    "noninterference_cases": 1840,
+    "evaluator_revised_edges": 2,
+    "conditional_generation_edges": 2,
+    "recurrence": {
+      "corrective_install": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 8,
+        "first_rank_failure": 110,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      },
+      "delivered_x0": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 8,
+        "first_rank_failure": 114,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      },
+      "delivered_x1": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 8,
+        "first_rank_failure": 118,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      },
+      "maintained_archive": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 10,
+        "first_rank_failure": 36,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      },
+      "trained_successor": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 10,
+        "first_rank_failure": 38,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      },
+      "competent_handoff": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 10,
+        "first_rank_failure": 40,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      }
+    },
+    "shortest_public_violation": null
+  },
+  {
+    "mode": "no_training",
+    "states": 230,
+    "edges": 250,
+    "initial_states": 2,
+    "all_reachable_protected": true,
+    "unsafe_states": 0,
+    "min_funds": 2,
+    "min_after_payment": 1,
+    "ledger_and_event_semantics_pass": true,
+    "false_strict_certificate_states": 0,
+    "noninterference_cases": 1840,
+    "evaluator_revised_edges": 2,
+    "conditional_generation_edges": 2,
+    "recurrence": {
+      "corrective_install": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 8,
+        "first_rank_failure": 110,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      },
+      "delivered_x0": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 8,
+        "first_rank_failure": 114,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      },
+      "delivered_x1": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 8,
+        "first_rank_failure": 118,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      },
+      "maintained_archive": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 8,
+        "first_rank_failure": 122,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      },
+      "trained_successor": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 10,
+        "first_rank_failure": 38,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      },
+      "competent_handoff": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 10,
+        "first_rank_failure": 40,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 184
+        }
+      }
+    },
+    "shortest_public_violation": null
+  },
+  {
+    "mode": "score_capture",
+    "states": 315,
+    "edges": 331,
+    "initial_states": 2,
+    "all_reachable_protected": false,
+    "unsafe_states": 280,
+    "min_funds": 2,
+    "min_after_payment": 1,
+    "ledger_and_event_semantics_pass": true,
+    "false_strict_certificate_states": 0,
+    "noninterference_cases": 2520,
+    "evaluator_revised_edges": 0,
+    "conditional_generation_edges": 0,
+    "recurrence": {
+      "corrective_install": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 16,
+        "first_rank_failure": 30,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 280
+        }
+      },
+      "delivered_x0": {
+        "sure_recurs": true,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 3,
+        "first_rank_failure": 32,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "delivered_x1": {
+        "sure_recurs": true,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 3,
+        "first_rank_failure": 35,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "maintained_archive": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "trained_successor": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "competent_handoff": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 8,
+        "first_rank_failure": 40,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 280
+        }
+      }
+    },
+    "shortest_public_violation": {
+      "state": 34,
+      "microsteps": 17,
+      "edges": [
+        {
+          "source": 0,
+          "target": 2,
+          "action": "auxiliary_work",
+          "argument": -1,
+          "cost": 1,
+          "receipt": 7,
+          "spill": 6,
+          "events": [
+            "auxiliary_service"
+          ]
+        },
+        {
+          "source": 2,
+          "target": 4,
+          "action": "lease_memory",
+          "argument": -1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 4,
+          "target": 6,
+          "action": "observe",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 6,
+          "target": 8,
+          "action": "observe",
+          "argument": 1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 8,
+          "target": 10,
+          "action": "generate",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 10,
+          "target": 12,
+          "action": "check",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 12,
+          "target": 14,
+          "action": "check",
+          "argument": 1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 14,
+          "target": 16,
+          "action": "auxiliary_work",
+          "argument": -1,
+          "cost": 1,
+          "receipt": 7,
+          "spill": 0,
+          "events": [
+            "auxiliary_service"
+          ]
+        },
+        {
+          "source": 16,
+          "target": 18,
+          "action": "review",
+          "argument": -1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": [
+            "verifier_captured"
+          ]
+        },
+        {
+          "source": 18,
+          "target": 20,
+          "action": "amend_evaluator",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 20,
+          "target": 22,
+          "action": "generate",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 22,
+          "target": 24,
+          "action": "check",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 24,
+          "target": 26,
+          "action": "check",
+          "argument": 1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 26,
+          "target": 28,
+          "action": "final_verdict",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 28,
+          "target": 30,
+          "action": "auxiliary_work",
+          "argument": -1,
+          "cost": 1,
+          "receipt": 7,
+          "spill": 0,
+          "events": [
+            "auxiliary_service"
+          ]
+        },
+        {
+          "source": 30,
+          "target": 32,
+          "action": "admit",
+          "argument": 1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": [
+            "program_admitted"
+          ]
+        },
+        {
+          "source": 32,
+          "target": 34,
+          "action": "ordinary_service",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": [
+            "wrong_service"
+          ]
+        }
+      ],
+      "state_record": {
+        "id": 34,
+        "phase": 17,
+        "truth": 1,
+        "installed": 0,
+        "evaluator": 0,
+        "guard": 2,
+        "skilled": true,
+        "funds": 6,
+        "carrier": 0,
+        "lease": true,
+        "data0": 1,
+        "data1": 0,
+        "candidate": 0,
+        "check0": 1,
+        "check1": 0,
+        "review_failed": true,
+        "certificate": false,
+        "active": true,
+        "archive": null,
+        "trainee": null,
+        "bad": true,
+        "protected": false
+      }
+    }
+  },
+  {
+    "mode": "misleading_calibration",
+    "states": 486,
+    "edges": 506,
+    "initial_states": 2,
+    "all_reachable_protected": false,
+    "unsafe_states": 452,
+    "min_funds": 2,
+    "min_after_payment": 1,
+    "ledger_and_event_semantics_pass": true,
+    "false_strict_certificate_states": 122,
+    "noninterference_cases": 3888,
+    "evaluator_revised_edges": 2,
+    "conditional_generation_edges": 26,
+    "recurrence": {
+      "corrective_install": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 26,
+        "first_rank_failure": 30,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 440
+        }
+      },
+      "delivered_x0": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 10,
+        "first_rank_failure": 32,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 440
+        }
+      },
+      "delivered_x1": {
+        "sure_recurs": false,
+        "phase_rank_certificate": false,
+        "rank_failing_edges": 10,
+        "first_rank_failure": 34,
+        "cycle_test": {
+          "acyclic": false,
+          "uneliminated_states": 440
+        }
+      },
+      "maintained_archive": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "trained_successor": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      },
+      "competent_handoff": {
+        "sure_recurs": true,
+        "phase_rank_certificate": true,
+        "rank_failing_edges": 0,
+        "first_rank_failure": null,
+        "cycle_test": {
+          "acyclic": true,
+          "uneliminated_states": 0
+        }
+      }
+    },
+    "shortest_public_violation": {
+      "state": 34,
+      "microsteps": 17,
+      "edges": [
+        {
+          "source": 0,
+          "target": 2,
+          "action": "auxiliary_work",
+          "argument": -1,
+          "cost": 1,
+          "receipt": 7,
+          "spill": 6,
+          "events": [
+            "auxiliary_service"
+          ]
+        },
+        {
+          "source": 2,
+          "target": 4,
+          "action": "lease_memory",
+          "argument": -1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 4,
+          "target": 6,
+          "action": "observe",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 6,
+          "target": 8,
+          "action": "observe",
+          "argument": 1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 8,
+          "target": 10,
+          "action": "generate",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 10,
+          "target": 12,
+          "action": "check",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 12,
+          "target": 14,
+          "action": "check",
+          "argument": 1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 14,
+          "target": 16,
+          "action": "auxiliary_work",
+          "argument": -1,
+          "cost": 1,
+          "receipt": 7,
+          "spill": 0,
+          "events": [
+            "auxiliary_service"
+          ]
+        },
+        {
+          "source": 16,
+          "target": 18,
+          "action": "review",
+          "argument": -1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 18,
+          "target": 20,
+          "action": "amend_evaluator",
+          "argument": 1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": [
+            "evaluator_revised"
+          ]
+        },
+        {
+          "source": 20,
+          "target": 22,
+          "action": "generate",
+          "argument": 2,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": [
+            "conditional_candidate_constructed"
+          ]
+        },
+        {
+          "source": 22,
+          "target": 24,
+          "action": "check",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 24,
+          "target": 26,
+          "action": "check",
+          "argument": 1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 26,
+          "target": 28,
+          "action": "final_verdict",
+          "argument": 1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": []
+        },
+        {
+          "source": 28,
+          "target": 30,
+          "action": "auxiliary_work",
+          "argument": -1,
+          "cost": 1,
+          "receipt": 7,
+          "spill": 0,
+          "events": [
+            "auxiliary_service"
+          ]
+        },
+        {
+          "source": 30,
+          "target": 32,
+          "action": "admit",
+          "argument": 1,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": [
+            "program_admitted"
+          ]
+        },
+        {
+          "source": 32,
+          "target": 34,
+          "action": "ordinary_service",
+          "argument": 0,
+          "cost": 1,
+          "receipt": 0,
+          "spill": 0,
+          "events": [
+            "wrong_service"
+          ]
+        }
+      ],
+      "state_record": {
+        "id": 34,
+        "phase": 17,
+        "truth": 1,
+        "installed": 2,
+        "evaluator": 1,
+        "guard": 1,
+        "skilled": true,
+        "funds": 6,
+        "carrier": 0,
+        "lease": true,
+        "data0": 0,
+        "data1": 1,
+        "candidate": 2,
+        "check0": 0,
+        "check1": 1,
+        "review_failed": true,
+        "certificate": true,
+        "active": true,
+        "archive": null,
+        "trainee": null,
+        "bad": true,
+        "protected": false
+      }
+    }
+  }
+]

@@ -1,0 +1,268 @@
+Independent experiment-method review
+Research date: 5 October 2026
+Status: recommendations made before held-out evaluation; not results.
+
+Protocol update received from the coordinating researcher before development
+results: control outcome is x_next; .05 action price, .02 sensing price, and
+.0001 weighted model-block price are fixed. Compute-price sensitivity is
+0,.0001,.001,.01 on frozen policies. The primary simple comparator is selected
+globally across four equally weighted development worlds from raw, direct, and
+joint_y_only, separately for each of two access stages. Eight primary comparisons
+(four worlds times two stages) use Bonferroni intervals: 99.375% two-sided each,
+using quantile 1-.05/16. Audit versus retained is exploratory. A bias switch at
+step32 is a descriptive timing sensitivity alongside the main step30 switch.
+The shared gain is k=.5. The adaptive gate buys when k² times modeled current
+state-variance reduction exceeds .02 plus .0001 times the weighted reference
+update cost; it never reads the reference first. Forced access buys at 12 offered
+times; adaptive access has a cap of six purchases. The cap is a sensing cap;
+unless separately restricted, computation is priced rather than hard-budgeted.
+Retained bias variance inflates by .0025 per step; retained alpha is selected
+from [.2,.5,.8], audit slow alpha from [.1,.2], fast alpha from [.8,1], audit
+threshold from [2,3], and joint bias process variance from [0,.0025,.04]. The
+gate is a myopic approximation that ignores future persistence value and cannot
+assume its uncertainty model is correct. Its own evaluation overhead is charged.
+Where the recommendations below mention four-comparison intervals or alternative
+budget/margin designs, they are conditional suggestions, not the adopted protocol.
+
+The central estimand is the effect of preserving and updating a bias estimate,
+under declared information access, compared with frozen simpler methods. A
+second estimand is the net value of a policy that chooses when to buy evidence.
+Neither estimand identifies the value of semantic meta-depth in isolation.
+
+1. Freeze and leakage controls
+
+Use development seeds 0–99 to choose controller gains, prior covariance, bias
+process variance or forgetting rate, audit threshold, acquisition thresholds,
+simple comparator, and any combined-loss prices. Specify the exact grid and
+selection rule, including tie breaking. Freeze a human-readable manifest and
+code hashes before evaluation on 1000–1999. The 1000 evaluation seeds are paired
+across policies. After evaluating, changing any policy creates a new exploratory
+analysis; preserve original results. New confirmatory assessment needs new seeds.
+
+For the primary comparison, do not choose the best simpler comparator using
+evaluation performance. If selecting one simpler method per world on development
+data, state that these are scenario-specific comparators, not one deployment
+policy that inferred the world. Prefer one pooled-development policy setting
+across worlds for the principal deployable-policy comparison. No policy should
+receive true bias, reference error d, forthcoming switch time, future disturbances,
+or the world label as an input unless an explicitly named oracle comparator.
+Scoring may use hidden truth; estimation and acquisition may not.
+
+Pre-generate x0, b0, process noise, ordinary-sensor noise, and possible calibration
+noise for each seed independently of the policy. Draw all potential reference
+noise whether or not purchased. Otherwise conditional draws can desynchronize
+the paired random streams. Disturbances and timestamps match, but observations
+need not have identical numeric values across control policies: their actions
+produce different x trajectories. Identical access means identical channels and
+times, not access to another policy's counterfactual measurements.
+
+2. Comparison hierarchy
+
+A. Fixed access. Every eligible policy is offered/billed the same prespecified
+calibration schedule, independent of residuals, observations, or future truth.
+Its use or non-use of received observations is part of its computation. Compare
+persistent correction with immediate reference control and ordinary filtering.
+Also report an ordinary-only no-purchase benchmark as a different access case;
+do not call that comparison matched information. Log the actual access vectors.
+
+B. Adaptive access. Give every policy the same hard sensing/compute resource cap
+and opportunities. An acquisition policy sees current ordinary observation and
+its own past before choosing to buy current reference. It must decide before
+the reference value is exposed. Charge acquisition-policy execution, including
+checks that decide not to purchase. Common ceiling is not common expenditure.
+Report spending and savings alongside outcome, and call this a policy comparison.
+
+C. Resource frontier. For any predeclared budget grid, re-evaluate already-frozen
+policies at each allowed cap without retuning using evaluation outcomes. A fair
+cost comparison need not force a frugal policy to waste its unused allowance.
+Instead compare attained loss versus actual expense, and identify dominated
+policies. Matching purchases after observing outcomes can create selection bias.
+
+D. Nested-versus-flat negative control. Define the same sufficient state, same
+update order, observation access, control rule, and charged operations in two
+representations. Assert per-step equality of posterior means, covariance, bias
+state, actions, access, forecasts, and costs to a specified floating-point
+tolerance on all seeds. Matching aggregate mean loss is not sufficient. This
+control refutes inference from a semantic label alone. It cannot prove every
+cognitive hierarchy is flattenable without losing relevant resource properties.
+
+3. Outcome definitions and indexing
+
+For t=0,...,59, observe, optionally purchase, estimate, choose u_t, forecast,
+then transition to x_(t+1). A clean intervention-responsive state loss is
+  S_i = sum_{t=0}^{59} x_(t+1)^2.
+Report x0 separately. If the existing script scores x0,...,x59, then include
+x60 as a terminal cost or disclose that final action's state consequence is
+unscored. This choice can otherwise reward an unintended terminal action.
+
+Per-seed metrics, summarized across seeds:
+  S_i: cumulative squared state after each action.
+  U_i = sum u_t^2: action effort.
+  E_i = (1/60) sum (xhat_t - x_t)^2: filtered state error before action.
+  B_i = (1/60) sum (bhat_t - b_t)^2: bias error, for policies defining bhat.
+  M_i = max_{0<=t<=60}|x_t|: maximum excursion.
+  N_i: number of calibration purchases and denied purchase requests.
+  C_i: operation/block count under a documented accounting convention.
+  Memory_i: peak live numeric state count (not process RSS labeled algorithm memory).
+  Calibration metrics: Brier loss, interval coverage and width, normalized error.
+  Recovery: predeclared threshold and right-censor status after the bias switch.
+
+Keep state accuracy distinct from prediction accuracy. The latter is a forecast
+of x_(t+1), which includes process noise, rather than an estimate of x_t after
+seeing y_t. For a model posterior N(xhat_t,Pxx_t), chosen action u_t, and independent
+w_t with variance .0025, the declared Gaussian predictive approximation is
+  mu_t = .8*xhat_t + u_t;
+  V_t = .64*Pxx_t + .0025.
+For the event x_(t+1) outside [-.5,.5], record before transition
+  p_t = Phi((-.5-mu_t)/sqrt(V_t)) + 1-Phi((.5-mu_t)/sqrt(V_t)).
+Then score (p_t - 1{|x_(t+1)|>.5})^2. Normalized prediction error is
+  (x_(t+1)-mu_t)^2/V_t;
+nominal 95% interval coverage is the fraction inside mu_t±1.96 sqrt(V_t).
+Report interval width as well, since wide intervals can achieve coverage cheaply.
+Variance floors should be numerical safeguards declared beforehand, not tuned to
+improve evaluation scores. A policy's Gaussian forecast can be misspecified,
+especially after bias shifts or with a biased reference; that is tested, not
+assumed away. A Brier difference reflects overall forecast quality, not solely
+calibration. Calibration and accuracy must not be used as synonyms.
+
+Because actions influence the event rate, Brier loss across control policies
+also reflects task difficulty induced by those policies. State-estimation error
+before action and within-policy reliability remain useful complementary views.
+Do not interpret a controller making states remain near zero as independent
+evidence that its model understood an earlier state correctly. Optional fixed
+replay estimation runs can compare identical state/observation sequences, but
+their estimand differs from on-policy control and should be named separately.
+
+Define recovery before seeing evaluation. One option: earliest post-switch k
+with |xhat_t-x_t|<.25 for five consecutive steps. Report recovery probability by
+the 30-step post-switch horizon and a censored duration statistic; never average
+only recovered runs. If using a clipped duration of 30, explicitly call it a
+capped duration and separately display censor fraction. Five steps and .25 are
+research choices, not natural constants. Exclude b0=0 from the actual-switch
+recovery subset and state its sample size. State recovery and bias-estimate
+recovery answer different questions, so identify which is being reported.
+
+4. Prices, budget, and uncertainty
+
+With the proposed prices, use
+  L_i = S_i + .05 U_i + .02 N_i + .0001 C_i.
+These prices express this experiment's supplied preferences. They are not human
+utility measurements or empirically measured compute cost. Document exactly what
+constitutes one compute block. A block price cannot establish machine time,
+energy, or cognitive cost. If real elapsed time is measured, report it separately
+with machine/runtime description; do not confuse interpreter overhead with
+physical deliberation latency. Actual control delay is not modeled here.
+
+Charge each active policy's own control/estimation/acquisition/audit operations.
+Scoring and experiment logging are common external infrastructure, not policy
+computation, unless a policy uses them. Mandatory baseline work must have budget
+reserved or the cap must specify fallback behavior; do not overspend a hard cap.
+If the cap covers only optional sensing/computation, call it exactly that rather
+than a total-resource cap. Separate action penalty from sensing/compute cap unless
+the latter explicitly includes physical actuation expense.
+
+For two fixed policies A,B, the mean loss difference at new prices is
+  Delta(p_s,p_c) = Delta(S+.05U)+p_s Delta(N)+p_c Delta(C).
+This gives a transparent break-even line. Repricing frozen trajectories is a
+sensitivity analysis, not evidence of optimal behavior under the new prices,
+because rational acquisition may change with price. If both count differences
+are zero, the price cannot change the paired ranking. Display a small predeclared
+price grid or the break-even line instead of choosing favorable prices after
+the fact. A second price analysis should retain separate performance components.
+
+The independent inference unit is the entire seed trajectory. For each world,
+form D_i=L_i(persistent)-L_i(frozen simpler) for i=1000,...,1999, and report mean
+D, standard deviation of D, Monte Carlo standard error sd(D)/sqrt(1000), and a
+paired confidence interval. Positive means persistent is worse. Do not use
+60,000 time steps as independent samples. Bootstrap resampling, if used, resamples
+seeds together across policies and worlds, retaining each seed's whole trajectory.
+These intervals quantify Monte Carlo uncertainty under the supplied simulator,
+not uncertainty that this model describes people or consciousness.
+
+For four prespecified within-world claims in one family, two-sided 98.75%
+intervals give Bonferroni family coverage at least 95% (approximately z=2.498,
+or the corresponding t quantile). Unadjusted 95% intervals are acceptable as
+explicitly descriptive intervals without claiming family-wide error control.
+Secondary metrics should remain exploratory unless their multiplicity is also
+addressed. If more primary access regimes/comparisons are included, update the
+family size; four only covers four designated comparisons, not every table row.
+
+Freeze a practical margin m before evaluation. A possible convention is m=.02
+cumulative loss, equal to one calibration fee. It is defensible as a declared
+resource-equivalent choice, not an empirical threshold of meaningful cognition.
+For D=persistent-minus-simple, a benefit claim requires upper CI < -m. Harm beyond
+margin requires lower CI > m. An interval fully inside [-m,m] supports practical
+equivalence at that declared margin. Every other case is unresolved with respect
+to margin, including small directionally significant effects. Failure to show
+benefit is not proof of equality. Negative-control equality is instead checked
+algorithmically and by its construction.
+
+5. Focused verified primary-source map
+
+Friedland, Bernard (1969), Treatment of Bias in Recursive Filtering. IEEE
+Transactions on Automatic Control AC-14(4):359–367.
+DOI: https://doi.org/10.1109/TAC.1969.1099223
+Author-institution research record and abstract inspected:
+https://researchwith.njit.edu/en/publications/treatment-of-bias-in-recursive-filtering/
+Scope verified: constant unknown bias in a linear process, affecting dynamics
+and/or observations; separates optimal state correction from bias estimation
+under the article's assumptions. Supports established engineering precedent for
+state/bias decomposition. It does not validate our adaptive-rate heuristic,
+non-Gaussian prior, bias-switch treatment, or theory of introspection. Full text
+was not inspected in this review, so no exact theorem is attributed beyond the
+institutional abstract's scope.
+
+Hay, Nicholas; Russell, Stuart; Tolpin, David; Shimony, Solomon Eyal (2012),
+Selecting Computations: Theory and Applications. UAI 2012.
+Author-hosted paper inspected, especially pp. 2–4, Definitions 1–3 and Theorems 5–7:
+https://people.eecs.berkeley.edu/~russell/papers/uai12-meta.pdf
+Scope: metalevel Bayesian selection compares expected decision improvement with
+computation costs; a myopic stopping policy may stop before useful complementary
+computations. Their bounded-utility, positive-cost setting bounds expected
+computation and implies almost-sure stopping, not a universal fixed runtime.
+This motivates cost-aware audit decisions; it does not prove our threshold
+policy optimal or establish bounds for every cognitive recursive process.
+
+Tzoumas, Vasileios; Carlone, Luca; Pappas, George J.; Jadbabaie, Ali (2020),
+LQG Control and Sensing Co-Design. IEEE Transactions on Automatic Control.
+Author preprint inspected, especially Section II and Theorem 1:
+https://arxiv.org/pdf/1802.08376
+Scope: chooses a fixed sensor subset from a finite set for a horizon, with
+sensor-specific costs and linear Gaussian dynamics. It distinguishes minimizing
+control loss subject to sensing budget from minimizing sensing expense subject
+to a performance bound. Supports evaluating sensing through control objectives,
+not covariance reduction alone. Its separation and approximation guarantees do
+not transfer to our observation-triggered, online purchases, control clipping,
+reference misspecification, or model-change heuristic.
+
+Gneiting, Tilmann; Raftery, Adrian E. (2007), Strictly Proper Scoring Rules,
+Prediction, and Estimation. JASA 102(477):359–378.
+DOI: https://doi.org/10.1198/016214506000001437
+Author-hosted paper inspected, introduction and scoring/interval material:
+https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf
+Scope: proper scoring rules assess probabilistic forecasts against observed
+outcomes and distinguish forecast concentration from statistical calibration.
+Supports scoring declared probabilities and reporting interval width with
+coverage. Propriety does not establish calibration on finite data or protect
+against a controller changing the outcome-generating policy. The explicit
+action-conditioned formulas above are derived for our simulator.
+
+Source-selection decision: Joshi and Boyd (2009), Sensor Selection via Convex
+Optimization, was also inspected at the authors' Stanford page and PDF. It is a
+static parameter/sensor subset selection problem under an estimation criterion.
+Tzoumas et al. is the closer focused citation for this controlled dynamic study;
+neither alone validates adaptive sensing. No source is treated as evidence that
+recursive self-modeling has a unique or universal cognitive architecture.
+
+6. Limits to preserve in the report
+
+The strongest result available from this experiment is conditional functional
+performance in a small, specified dynamical model. An auditor that wins after a
+switch may simply implement a useful change-detection mechanism. A persistent
+bias state is information retained through time; calling it a meta-model is a
+semantic interpretation grounded in its target, not a new mathematical species.
+A biased reference tests shared dependence on a calibration channel. A useful
+algorithm can still be overconfident or have a wrong model. Constant-bias and
+switching worlds should remain separate results, including no-bias harms.
+Delay, competing goals, endogenous world changes, strategic feedback, human
+experience, and ethical legitimacy remain outside this simulator.

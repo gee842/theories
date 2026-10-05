@@ -6,6 +6,9 @@ This project was developed on 4 October 2026 following Ren's request to pursue t
 
 ## What was completed
 
+- [Situated cognition and correction](SITUATED-CORRECTION.md): extends the framework to endogenous cognitive frames, discovery, plural consequences, and effective revision rights, with conditional proofs and a proposed experiment.
+- [Scientific assessment](SCIENCE-ASSESSMENT.md): comparison with primary research, what the model establishes, and which claims need revision.
+- [Structural results and exact diagnostics](STRUCTURAL-RESULTS.md): authority–correction covariance, negative controls, concentration under restricted assumptions, and limits on attractor claims.
 - [Matched-state follow-up report](BRANCH-REPORT.md): future appointment policy affects adaptation even from identical inherited states; stable demand retains the opposite effect.
 - [Follow-up protocol](BRANCH-PROTOCOL.md) and [sealed records](results-v2/input_manifest.json): 128 fresh paired worlds, two source histories, two contexts and four branch policies, with complete checkpoints and trajectories.
 - [Mathematical model and proofs](AUTHORITY-MODEL.md): authority reserve, an invariant region, and a deadline bound, with assumptions and counterexamples.
@@ -29,6 +32,7 @@ python -m venv .venv
 .venv/bin/python -m unittest test_branching -v
 .venv/bin/python branch_experiment.py --output results-branch-reproduction
 .venv/bin/python analyze_branches.py
+.venv/bin/python analyze_authority_signal.py
 ```
 
 Run these commands from this directory. The benchmark refuses to overwrite an existing output directory. The analysis script audits and renders the preserved results-v1 run. The sealed-inputs subdirectory contains the exact four input files used for that run; hashes allow their integrity to be checked. Future experiments should use a new protocol and output directory.

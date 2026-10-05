@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "arithmetic": "fractions.Fraction except labeled decimal illustration",
+  "counts": {
+    "states": 343,
+    "parameters": 8,
+    "conservation_dissipation": 2744,
+    "energy_remainders": 2744,
+    "high_parameter_norm_bounds": 1029,
+    "ring_equivariance": 21952,
+    "invariant_mode_equations": 224,
+    "balanced_sign_minimum_checks": 18,
+    "exact_minimum_linear_rates": 9
+  },
+  "zero_coupling_balanced_minima": 6,
+  "trajectory_illustration": {
+    "kappa": "1/4",
+    "initial_amplitude": "1/100",
+    "exact_formula": "sqrt((1/2)/(1+4999*exp(-2*t)))",
+    "values": [
+      {
+        "t": 0,
+        "amplitude": 0.01
+      },
+      {
+        "t": 1,
+        "amplitude": 0.027165467655847278
+      },
+      {
+        "t": 2,
+        "amplitude": 0.0734976771225468
+      },
+      {
+        "t": 3,
+        "amplitude": 0.19322971894181493
+      },
+      {
+        "t": 4,
+        "amplitude": 0.43217797210759484
+      },
+      {
+        "t": 5,
+        "amplitude": 0.6383675723615458
+      },
+      {
+        "t": 10,
+        "amplitude": 0.707103138304168
+      }
+    ]
+  },
+  "coverage_limit": "Finite checks catch algebraic errors; audit proofs establish general claims. No generic convergence or physical-data claim."
+}

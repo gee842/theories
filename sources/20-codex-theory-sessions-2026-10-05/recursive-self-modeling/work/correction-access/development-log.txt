@@ -1,0 +1,13 @@
+{"development": "innovation", "params": {"threshold": 1.5}, "mean_total_loss": 15.18047657470935}
+{"development": "innovation", "params": {"threshold": 2}, "mean_total_loss": 17.860276683763573}
+{"development": "innovation", "params": {"threshold": 2.5}, "mean_total_loss": 22.198499614902595}
+{"development": "innovation", "params": {"threshold": 3}, "mean_total_loss": 24.246442592903904}
+{"development": "innovation", "params": {"threshold": 3.5}, "mean_total_loss": 24.92744337968674}
+{"development": "hybrid", "params": {"threshold": 1.5}, "mean_total_loss": 15.567313390234162}
+{"development": "hybrid", "params": {"threshold": 2}, "mean_total_loss": 16.54224985065889}
+{"development": "hybrid", "params": {"threshold": 2.5}, "mean_total_loss": 18.828536400651622}
+{"development": "hybrid", "params": {"threshold": 3}, "mean_total_loss": 20.24676221597945}
+{"development": "hybrid", "params": {"threshold": 3.5}, "mean_total_loss": 20.751264183961098}
+{"development": "anchor_filter", "params": {"q_b": 0}, "mean_total_loss": 15.756640089079887}
+{"development": "anchor_filter", "params": {"q_b": 0.0025}, "mean_total_loss": 15.435342532943551}
+{"development": "anchor_filter", "params": {"q_b": 0.04}, "mean_total_loss": 15.393048720893512}

@@ -1,0 +1,2078 @@
+{
+  "status": "all assertions passed",
+  "date": "2026-10-05",
+  "source_trial_capital": 480,
+  "actual_controller_graphs": 4,
+  "states_per_graph": 2169,
+  "frontier_rows": 72,
+  "parent_profiles": {
+    "S": [
+      {
+        "cash": 140,
+        "channels": 2,
+        "completed": true,
+        "trace": [
+          {
+            "cycle": 1,
+            "cash_before": 240,
+            "channels_before": 0,
+            "cash_after": 140,
+            "channels_after": 2
+          }
+        ]
+      },
+      {
+        "cash": 100,
+        "channels": 2,
+        "completed": true,
+        "trace": [
+          {
+            "cycle": 1,
+            "cash_before": 240,
+            "channels_before": 0,
+            "cash_after": 140,
+            "channels_after": 2
+          },
+          {
+            "cycle": 2,
+            "cash_before": 140,
+            "channels_before": 2,
+            "cash_after": 100,
+            "channels_after": 2
+          }
+        ]
+      },
+      {
+        "cash": 60,
+        "channels": 2,
+        "completed": true,
+        "trace": [
+          {
+            "cycle": 1,
+            "cash_before": 240,
+            "channels_before": 0,
+            "cash_after": 140,
+            "channels_after": 2
+          },
+          {
+            "cycle": 2,
+            "cash_before": 140,
+            "channels_before": 2,
+            "cash_after": 100,
+            "channels_after": 2
+          },
+          {
+            "cycle": 3,
+            "cash_before": 100,
+            "channels_before": 2,
+            "cash_after": 60,
+            "channels_after": 2
+          }
+        ]
+      },
+      {
+        "cash": 60,
+        "channels": 2,
+        "completed": false,
+        "failure_cycle": 4,
+        "trace": [
+          {
+            "cycle": 1,
+            "cash_before": 240,
+            "channels_before": 0,
+            "cash_after": 140,
+            "channels_after": 2
+          },
+          {
+            "cycle": 2,
+            "cash_before": 140,
+            "channels_before": 2,
+            "cash_after": 100,
+            "channels_after": 2
+          },
+          {
+            "cycle": 3,
+            "cash_before": 100,
+            "channels_before": 2,
+            "cash_after": 60,
+            "channels_after": 2
+          }
+        ]
+      }
+    ],
+    "L": [
+      {
+        "cash": 128,
+        "channels": 4,
+        "completed": true,
+        "trace": [
+          {
+            "cycle": 1,
+            "cash_before": 240,
+            "channels_before": 0,
+            "cash_after": 128,
+            "channels_after": 4
+          }
+        ]
+      },
+      {
+        "cash": 136,
+        "channels": 4,
+        "completed": true,
+        "trace": [
+          {
+            "cycle": 1,
+            "cash_before": 240,
+            "channels_before": 0,
+            "cash_after": 128,
+            "channels_after": 4
+          },
+          {
+            "cycle": 2,
+            "cash_before": 128,
+            "channels_before": 4,
+            "cash_after": 136,
+            "channels_after": 4
+          }
+        ]
+      },
+      {
+        "cash": 144,
+        "channels": 4,
+        "completed": true,
+        "trace": [
+          {
+            "cycle": 1,
+            "cash_before": 240,
+            "channels_before": 0,
+            "cash_after": 128,
+            "channels_after": 4
+          },
+          {
+            "cycle": 2,
+            "cash_before": 128,
+            "channels_before": 4,
+            "cash_after": 136,
+            "channels_after": 4
+          },
+          {
+            "cycle": 3,
+            "cash_before": 136,
+            "channels_before": 4,
+            "cash_after": 144,
+            "channels_after": 4
+          }
+        ]
+      },
+      {
+        "cash": 152,
+        "channels": 4,
+        "completed": true,
+        "trace": [
+          {
+            "cycle": 1,
+            "cash_before": 240,
+            "channels_before": 0,
+            "cash_after": 128,
+            "channels_after": 4
+          },
+          {
+            "cycle": 2,
+            "cash_before": 128,
+            "channels_before": 4,
+            "cash_after": 136,
+            "channels_after": 4
+          },
+          {
+            "cycle": 3,
+            "cash_before": 136,
+            "channels_before": 4,
+            "cash_after": 144,
+            "channels_after": 4
+          },
+          {
+            "cycle": 4,
+            "cash_before": 144,
+            "channels_before": 4,
+            "cash_after": 152,
+            "channels_after": 4
+          }
+        ]
+      }
+    ]
+  },
+  "selected_cases": [
+    {
+      "config": {
+        "name": "early_cash_proxy",
+        "checkpoint": 1,
+        "scoring": "cash_rank",
+        "reserve": 240,
+        "transfer": "program_only",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 15,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 230
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 228
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 227
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 225
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "handoff_success": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "guarantees_child_continuation_for_both_assignments": false,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": 140,
+            "B": 128
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "S",
+          "donor_channels_before": 2,
+          "donor_channels_after": 2,
+          "child_channels": 0,
+          "child_cash": 225,
+          "indefinite_actual_child_success": false
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": 128,
+            "B": 140
+          },
+          "audit_selection": "B",
+          "register_at_copy": "B",
+          "copied_address": "B",
+          "copied_rule": "S",
+          "donor_channels_before": 2,
+          "donor_channels_after": 2,
+          "child_channels": 0,
+          "child_cash": 225,
+          "indefinite_actual_child_success": false
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "delayed_cash_rank",
+        "checkpoint": 2,
+        "scoring": "cash_rank",
+        "reserve": 240,
+        "transfer": "program_only",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 25,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 230
+        },
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 220
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 218
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 217
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 215
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "handoff_success": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "guarantees_child_continuation_for_both_assignments": true,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": 100,
+            "B": 136
+          },
+          "audit_selection": "B",
+          "register_at_copy": "B",
+          "copied_address": "B",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 215,
+          "indefinite_actual_child_success": true
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": 136,
+            "B": 100
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 215,
+          "indefinite_actual_child_success": true
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "calibrated_early",
+        "checkpoint": 1,
+        "scoring": "calibrated",
+        "reserve": 240,
+        "transfer": "program_only",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 15,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 230
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 228
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 227
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 225
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "handoff_success": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "guarantees_child_continuation_for_both_assignments": true,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": [
+              140,
+              true
+            ],
+            "B": [
+              128,
+              true
+            ]
+          },
+          "audit_selection": "B",
+          "register_at_copy": "B",
+          "copied_address": "B",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 225,
+          "indefinite_actual_child_success": true
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": [
+              128,
+              true
+            ],
+            "B": [
+              140,
+              true
+            ]
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 225,
+          "indefinite_actual_child_success": true
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "coarse_early_pass",
+        "checkpoint": 1,
+        "scoring": "pass_rank",
+        "reserve": 240,
+        "transfer": "program_only",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 15,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 230
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 228
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 227
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 225
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "handoff_success": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "guarantees_child_continuation_for_both_assignments": false,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": true,
+            "B": true
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "S",
+          "donor_channels_before": 2,
+          "donor_channels_after": 2,
+          "child_channels": 0,
+          "child_cash": 225,
+          "indefinite_actual_child_success": false
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": true,
+            "B": true
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 225,
+          "indefinite_actual_child_success": true
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "coarse_late_duty",
+        "checkpoint": 4,
+        "scoring": "pass_rank",
+        "reserve": 270,
+        "transfer": "program_only",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 45,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 260
+        },
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 250
+        },
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 240
+        },
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 230
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 228
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 227
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 225
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "handoff_success": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "guarantees_child_continuation_for_both_assignments": true,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": false,
+            "B": true
+          },
+          "audit_selection": "B",
+          "register_at_copy": "B",
+          "copied_address": "B",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 225,
+          "indefinite_actual_child_success": true
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": true,
+            "B": false
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 225,
+          "indefinite_actual_child_success": true
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "lost_delayed_address",
+        "checkpoint": 2,
+        "scoring": "cash_rank",
+        "reserve": 240,
+        "transfer": "program_only",
+        "retain_address": false,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 24,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 230
+        },
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 220
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 218
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 216
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "handoff_success": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "guarantees_child_continuation_for_both_assignments": false,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": 100,
+            "B": 136
+          },
+          "audit_selection": "B",
+          "register_at_copy": null,
+          "copied_address": "A",
+          "copied_rule": "S",
+          "donor_channels_before": 2,
+          "donor_channels_after": 2,
+          "child_channels": 0,
+          "child_cash": 216,
+          "indefinite_actual_child_success": false
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": 136,
+            "B": 100
+          },
+          "audit_selection": "A",
+          "register_at_copy": null,
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 216,
+          "indefinite_actual_child_success": true
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "delay_consumes_bridge",
+        "checkpoint": 2,
+        "scoring": "cash_rank",
+        "reserve": 230,
+        "transfer": "program_only",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 25,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 220
+        },
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 210
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 208
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 207
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 205
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "handoff_success": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "guarantees_child_continuation_for_both_assignments": false,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": 100,
+            "B": 136
+          },
+          "audit_selection": "B",
+          "register_at_copy": "B",
+          "copied_address": "B",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 205,
+          "indefinite_actual_child_success": false
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": 136,
+            "B": 100
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 205,
+          "indefinite_actual_child_success": false
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "early_same_reserve",
+        "checkpoint": 1,
+        "scoring": "calibrated",
+        "reserve": 230,
+        "transfer": "program_only",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 15,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 220
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 218
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 217
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 215
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "handoff_success": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "guarantees_child_continuation_for_both_assignments": true,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": [
+              140,
+              true
+            ],
+            "B": [
+              128,
+              true
+            ]
+          },
+          "audit_selection": "B",
+          "register_at_copy": "B",
+          "copied_address": "B",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 215,
+          "indefinite_actual_child_success": true
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": [
+              128,
+              true
+            ],
+            "B": [
+              140,
+              true
+            ]
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 215,
+          "indefinite_actual_child_success": true
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "late_program_only",
+        "checkpoint": 2,
+        "scoring": "cash_rank",
+        "reserve": 120,
+        "transfer": "program_only",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 25,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 110
+        },
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 100
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 98
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 97
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 95
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "handoff_success": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "guarantees_child_continuation_for_both_assignments": false,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": 100,
+            "B": 136
+          },
+          "audit_selection": "B",
+          "register_at_copy": "B",
+          "copied_address": "B",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 95,
+          "indefinite_actual_child_success": false
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": 136,
+            "B": 100
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 0,
+          "child_cash": 95,
+          "indefinite_actual_child_success": false
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "late_donor_bundle",
+        "checkpoint": 2,
+        "scoring": "cash_rank",
+        "reserve": 120,
+        "transfer": "donor_bundle",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 28,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 110
+        },
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 100
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 98
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 97
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 95
+        },
+        {
+          "phase": "one_to_one_asset_transfer",
+          "expense": 3,
+          "remaining": 92
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "handoff_success": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "guarantees_child_continuation_for_both_assignments": true,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": 100,
+            "B": 136
+          },
+          "audit_selection": "B",
+          "register_at_copy": "B",
+          "copied_address": "B",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 0,
+          "child_channels": 4,
+          "child_cash": 92,
+          "indefinite_actual_child_success": true
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": 136,
+            "B": 100
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 0,
+          "child_channels": 4,
+          "child_cash": 92,
+          "indefinite_actual_child_success": true
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "warm_early_unnecessary_evaluation",
+        "checkpoint": 1,
+        "scoring": "cash_rank",
+        "reserve": 103,
+        "transfer": "existing_four",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 15,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 93
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 91
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 90
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 88
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "handoff_success": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "guarantees_child_continuation_for_both_assignments": true,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": 140,
+            "B": 128
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "S",
+          "donor_channels_before": 2,
+          "donor_channels_after": 2,
+          "child_channels": 4,
+          "child_cash": 88,
+          "indefinite_actual_child_success": true
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": 128,
+            "B": 140
+          },
+          "audit_selection": "B",
+          "register_at_copy": "B",
+          "copied_address": "B",
+          "copied_rule": "S",
+          "donor_channels_before": 2,
+          "donor_channels_after": 2,
+          "child_channels": 4,
+          "child_cash": 88,
+          "indefinite_actual_child_success": true
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "warm_delayed_evaluation_harms",
+        "checkpoint": 2,
+        "scoring": "cash_rank",
+        "reserve": 103,
+        "transfer": "existing_four",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": true,
+      "total_evaluator_expense": 25,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 93
+        },
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 83
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 81
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 80
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 78
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "handoff_success": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "guarantees_child_continuation_for_both_assignments": false,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": 100,
+            "B": 136
+          },
+          "audit_selection": "B",
+          "register_at_copy": "B",
+          "copied_address": "B",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 4,
+          "child_cash": 78,
+          "indefinite_actual_child_success": false
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": 136,
+            "B": 100
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 4,
+          "donor_channels_after": 4,
+          "child_channels": 4,
+          "child_cash": 78,
+          "indefinite_actual_child_success": false
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "wait_bill_unaffordable",
+        "checkpoint": 2,
+        "scoring": "cash_rank",
+        "reserve": 19,
+        "transfer": "program_only",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": true
+      },
+      "affordable": false,
+      "failed_payment": "waiting",
+      "spent_before_failure": 10,
+      "handoff_success": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "config": {
+        "name": "no_hazard_early",
+        "checkpoint": 1,
+        "scoring": "cash_rank",
+        "reserve": 15,
+        "transfer": "program_only",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": false
+      },
+      "affordable": true,
+      "total_evaluator_expense": 15,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 5
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 3
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 2
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 0
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "handoff_success": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "guarantees_child_continuation_for_both_assignments": true,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": 240,
+            "B": 240
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "S",
+          "donor_channels_before": 0,
+          "donor_channels_after": 0,
+          "child_channels": 0,
+          "child_cash": 0,
+          "indefinite_actual_child_success": true
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": 240,
+            "B": 240
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 0,
+          "donor_channels_after": 0,
+          "child_channels": 0,
+          "child_cash": 0,
+          "indefinite_actual_child_success": true
+        }
+      ]
+    },
+    {
+      "config": {
+        "name": "no_hazard_delayed",
+        "checkpoint": 2,
+        "scoring": "cash_rank",
+        "reserve": 25,
+        "transfer": "program_only",
+        "retain_address": true,
+        "waiting_per_cycle": 10,
+        "audit_fee": 2,
+        "address_retention": 1,
+        "copy_fee": 2,
+        "bundle_fee": 3,
+        "hazard": false
+      },
+      "affordable": true,
+      "total_evaluator_expense": 25,
+      "cash_spill_at_child_cap": 0,
+      "payment_ledger": [
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 15
+        },
+        {
+          "phase": "waiting",
+          "expense": 10,
+          "remaining": 5
+        },
+        {
+          "phase": "audit",
+          "expense": 2,
+          "remaining": 3
+        },
+        {
+          "phase": "address_memory",
+          "expense": 1,
+          "remaining": 2
+        },
+        {
+          "phase": "copy",
+          "expense": 2,
+          "remaining": 0
+        }
+      ],
+      "probability_copy_L": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "handoff_success": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "guarantees_child_continuation_for_both_assignments": true,
+      "assignment_cases": [
+        {
+          "address_rules": {
+            "A": "S",
+            "B": "L"
+          },
+          "observed_payload": {
+            "A": 240,
+            "B": 240
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "S",
+          "donor_channels_before": 0,
+          "donor_channels_after": 0,
+          "child_channels": 0,
+          "child_cash": 0,
+          "indefinite_actual_child_success": true
+        },
+        {
+          "address_rules": {
+            "A": "L",
+            "B": "S"
+          },
+          "observed_payload": {
+            "A": 240,
+            "B": 240
+          },
+          "audit_selection": "A",
+          "register_at_copy": "A",
+          "copied_address": "A",
+          "copied_rule": "L",
+          "donor_channels_before": 0,
+          "donor_channels_after": 0,
+          "child_channels": 0,
+          "child_cash": 0,
+          "indefinite_actual_child_success": true
+        }
+      ]
+    }
+  ],
+  "frontier": [
+    {
+      "checkpoint": 1,
+      "scoring": "cash_rank",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "cash_rank",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "cash_rank",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "cash_rank",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "cash_rank",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 102
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "cash_rank",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 103
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "pass_rank",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "pass_rank",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "pass_rank",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "pass_rank",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "pass_rank",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 102
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "pass_rank",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 103
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "calibrated",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "calibrated",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 223
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "calibrated",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "calibrated",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 106
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "calibrated",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 102
+    },
+    {
+      "checkpoint": 1,
+      "scoring": "calibrated",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 103
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "cash_rank",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "cash_rank",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 233
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "cash_rank",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "cash_rank",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 116
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "cash_rank",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 112
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "cash_rank",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 113
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "pass_rank",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "pass_rank",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "pass_rank",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "pass_rank",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "pass_rank",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 112
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "pass_rank",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 113
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "calibrated",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "calibrated",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 233
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "calibrated",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "calibrated",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 116
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "calibrated",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 112
+    },
+    {
+      "checkpoint": 2,
+      "scoring": "calibrated",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 113
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "cash_rank",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "cash_rank",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 243
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "cash_rank",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "cash_rank",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 126
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "cash_rank",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 122
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "cash_rank",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 123
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "pass_rank",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "pass_rank",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "pass_rank",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "pass_rank",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "pass_rank",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 122
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "pass_rank",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 123
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "calibrated",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "calibrated",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 243
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "calibrated",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "calibrated",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 126
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "calibrated",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 122
+    },
+    {
+      "checkpoint": 3,
+      "scoring": "calibrated",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 123
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "cash_rank",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "cash_rank",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 253
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "cash_rank",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "cash_rank",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 136
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "cash_rank",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 132
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "cash_rank",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 133
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "pass_rank",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "pass_rank",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 253
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "pass_rank",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "pass_rank",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 136
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "pass_rank",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 132
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "pass_rank",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 133
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "calibrated",
+      "transfer": "program_only",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "calibrated",
+      "transfer": "program_only",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 253
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "calibrated",
+      "transfer": "donor_bundle",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": null
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "calibrated",
+      "transfer": "donor_bundle",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 136
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "calibrated",
+      "transfer": "existing_four",
+      "retain_address": false,
+      "minimum_reserve_for_sure_actual_success": 132
+    },
+    {
+      "checkpoint": 4,
+      "scoring": "calibrated",
+      "transfer": "existing_four",
+      "retain_address": true,
+      "minimum_reserve_for_sure_actual_success": 133
+    }
+  ],
+  "limits": [
+    "Deterministic periodic faults; exact supplied plant and rule family",
+    "Two candidate trial plants each receive endowed capital240",
+    "Basic source and child plant bodies are endowed; their construction is outside this module",
+    "Evaluator/child reserve is separate; parental remainingcash is inaccessible",
+    "Donor assets move to one child and donor retires; no free copying of hardware",
+    "Hidden candidate assignment is uniform only for reported probabilities",
+    "No population-frequency or endogenous evaluator-financing theorem is claimed"
+  ]
+}

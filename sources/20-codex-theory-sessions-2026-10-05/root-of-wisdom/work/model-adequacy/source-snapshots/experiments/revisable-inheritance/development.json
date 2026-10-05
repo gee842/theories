@@ -1,0 +1,2645 @@
+[
+  {
+    "feasible": true,
+    "family": "homogeneous",
+    "format": "last",
+    "bits": 0,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.25,
+        "branches": [
+          {
+            "type": [],
+            "mass": 1.0000000000000002,
+            "need": 0.24999999999999994,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.0,
+            "total": 0.24999999999999994
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 1.0000000000000002,
+            "need": 0.24999999999999994,
+            "response": 0
+          }
+        ],
+        "inquiry_cost": 0.0,
+        "operating_loss": 0.25,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.0,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      },
+      {
+        "total_loss": 0.30000000000000004,
+        "branches": [
+          {
+            "type": [],
+            "mass": 1.0000000000000002,
+            "need": 0.75,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.0,
+            "total": 0.3
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 1.0000000000000002,
+            "need": 0.75,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.0,
+        "operating_loss": 0.30000000000000004,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.0,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.275,
+    "operating_loss": 0.275,
+    "inquiry_cost": 0.0,
+    "readiness_probability": 0.0,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.0,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.0,
+    "components": {
+      "retention": 0.0,
+      "inspection": 0.0,
+      "setup": 0.0,
+      "readiness": 0.0,
+      "payload": 0.0,
+      "diagnostic": 0.0
+    }
+  },
+  {
+    "feasible": true,
+    "family": "homogeneous",
+    "format": "count",
+    "bits": 3,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.21839000000000008,
+        "branches": [
+          {
+            "type": [
+              0
+            ],
+            "mass": 0.45300624999999994,
+            "need": 0.0903995529862999,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.019000000000000003,
+            "total": 0.1093995529862999
+          },
+          {
+            "type": [
+              1
+            ],
+            "mass": 0.23547500000000005,
+            "need": 0.3043582121244294,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.194,
+            "total": 0.28530746363732884
+          },
+          {
+            "type": [
+              2
+            ],
+            "mass": 0.19053750000000005,
+            "need": 0.43579019877976766,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.194,
+            "total": 0.3247370596339303
+          },
+          {
+            "type": [
+              3
+            ],
+            "mass": 0.10047500000000002,
+            "need": 0.449054491166957,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.194,
+            "total": 0.3287163473500871
+          },
+          {
+            "type": [
+              4
+            ],
+            "mass": 0.020506250000000004,
+            "need": 0.4499390429747029,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.194,
+            "total": 0.32898171289241085
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.45300624999999994,
+            "need": 0.0903995529862999,
+            "response": 0
+          },
+          {
+            "ready": 1,
+            "message": "silent",
+            "mass": 0.5469937500000002,
+            "need": 0.38217701299146467,
+            "response": 2
+          }
+        ],
+        "inquiry_cost": 0.11472390625000004,
+        "operating_loss": 0.10366609375000005,
+        "readiness_probability": 0.5469937500000002,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.5469937500000002,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 1,
+        "channel": 0,
+        "components": {
+          "retention": 0.009000000000000001,
+          "inspection": 0.01,
+          "setup": 0.0,
+          "readiness": 0.008204906250000003,
+          "payload": 0.0,
+          "diagnostic": 0.08751900000000003
+        }
+      },
+      {
+        "total_loss": 0.30900000000000005,
+        "branches": [
+          {
+            "type": [],
+            "mass": 1.0000000000000002,
+            "need": 0.75,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.009000000000000001,
+            "total": 0.309
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 1.0000000000000002,
+            "need": 0.75,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.009000000000000003,
+        "operating_loss": 0.30000000000000004,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.009000000000000001,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.26369500000000007,
+    "operating_loss": 0.20183304687500003,
+    "inquiry_cost": 0.06186195312500002,
+    "readiness_probability": 0.2734968750000001,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.2734968750000001,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.5,
+    "components": {
+      "retention": 0.009000000000000001,
+      "inspection": 0.005,
+      "setup": 0.0,
+      "readiness": 0.0041024531250000015,
+      "payload": 0.0,
+      "diagnostic": 0.043759500000000014
+    }
+  },
+  {
+    "feasible": true,
+    "family": "homogeneous",
+    "format": "timed",
+    "bits": 4,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.22139000000000003,
+        "branches": [
+          {
+            "type": [
+              0,
+              0
+            ],
+            "mass": 0.45300624999999994,
+            "need": 0.0903995529862999,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.11239955298629989
+          },
+          {
+            "type": [
+              0,
+              1
+            ],
+            "mass": 0.11773750000000002,
+            "need": 0.3043582121244294,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.28830746363732884
+          },
+          {
+            "type": [
+              0,
+              2
+            ],
+            "mass": 0.03175625000000001,
+            "need": 0.4357901987797677,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3277370596339303
+          },
+          {
+            "type": [
+              1,
+              0
+            ],
+            "mass": 0.11773750000000002,
+            "need": 0.3043582121244294,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.28830746363732884
+          },
+          {
+            "type": [
+              1,
+              1
+            ],
+            "mass": 0.12702500000000003,
+            "need": 0.4357901987797677,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3277370596339303
+          },
+          {
+            "type": [
+              1,
+              2
+            ],
+            "mass": 0.05023750000000001,
+            "need": 0.449054491166957,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3317163473500871
+          },
+          {
+            "type": [
+              2,
+              0
+            ],
+            "mass": 0.03175625000000001,
+            "need": 0.4357901987797677,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3277370596339303
+          },
+          {
+            "type": [
+              2,
+              1
+            ],
+            "mass": 0.05023750000000001,
+            "need": 0.449054491166957,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3317163473500871
+          },
+          {
+            "type": [
+              2,
+              2
+            ],
+            "mass": 0.020506250000000004,
+            "need": 0.4499390429747029,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.33198171289241085
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.45300624999999994,
+            "need": 0.0903995529862999,
+            "response": 0
+          },
+          {
+            "ready": 1,
+            "message": "silent",
+            "mass": 0.5469937500000002,
+            "need": 0.38217701299146467,
+            "response": 2
+          }
+        ],
+        "inquiry_cost": 0.11772390625000001,
+        "operating_loss": 0.10366609375000002,
+        "readiness_probability": 0.5469937500000002,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.5469937500000002,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 1,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.01,
+          "setup": 0.0,
+          "readiness": 0.008204906250000003,
+          "payload": 0.0,
+          "diagnostic": 0.08751900000000003
+        }
+      },
+      {
+        "total_loss": 0.31200000000000006,
+        "branches": [
+          {
+            "type": [],
+            "mass": 1.0000000000000002,
+            "need": 0.75,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.012,
+            "total": 0.312
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 1.0000000000000002,
+            "need": 0.75,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.012000000000000004,
+        "operating_loss": 0.30000000000000004,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.266695,
+    "operating_loss": 0.20183304687500003,
+    "inquiry_cost": 0.06486195312500001,
+    "readiness_probability": 0.2734968750000001,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.2734968750000001,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.5,
+    "components": {
+      "retention": 0.012,
+      "inspection": 0.005,
+      "setup": 0.0,
+      "readiness": 0.0041024531250000015,
+      "payload": 0.0,
+      "diagnostic": 0.043759500000000014
+    }
+  },
+  {
+    "feasible": true,
+    "family": "homogeneous",
+    "format": "raw",
+    "bits": 4,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.2213900000000001,
+        "branches": [
+          {
+            "type": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "mass": 0.45300624999999994,
+            "need": 0.0903995529862999,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.11239955298629989
+          },
+          {
+            "type": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "mass": 0.05886875000000001,
+            "need": 0.3043582121244294,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.28830746363732884
+          },
+          {
+            "type": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "mass": 0.05886875000000001,
+            "need": 0.3043582121244294,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.28830746363732884
+          },
+          {
+            "type": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "mass": 0.03175625000000001,
+            "need": 0.4357901987797677,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3277370596339303
+          },
+          {
+            "type": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "mass": 0.05886875000000001,
+            "need": 0.3043582121244294,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.28830746363732884
+          },
+          {
+            "type": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "mass": 0.03175625000000001,
+            "need": 0.4357901987797677,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3277370596339303
+          },
+          {
+            "type": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "mass": 0.03175625000000001,
+            "need": 0.4357901987797677,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3277370596339303
+          },
+          {
+            "type": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "mass": 0.025118750000000006,
+            "need": 0.449054491166957,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3317163473500871
+          },
+          {
+            "type": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "mass": 0.05886875000000001,
+            "need": 0.3043582121244294,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.28830746363732884
+          },
+          {
+            "type": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "mass": 0.03175625000000001,
+            "need": 0.4357901987797677,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3277370596339303
+          },
+          {
+            "type": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "mass": 0.03175625000000001,
+            "need": 0.4357901987797677,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3277370596339303
+          },
+          {
+            "type": [
+              1,
+              0,
+              1,
+              1
+            ],
+            "mass": 0.025118750000000006,
+            "need": 0.449054491166957,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3317163473500871
+          },
+          {
+            "type": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "mass": 0.03175625000000001,
+            "need": 0.4357901987797677,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3277370596339303
+          },
+          {
+            "type": [
+              1,
+              1,
+              0,
+              1
+            ],
+            "mass": 0.025118750000000006,
+            "need": 0.449054491166957,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3317163473500871
+          },
+          {
+            "type": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "mass": 0.025118750000000006,
+            "need": 0.449054491166957,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3317163473500871
+          },
+          {
+            "type": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "mass": 0.020506250000000004,
+            "need": 0.4499390429747029,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.33198171289241085
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.45300624999999994,
+            "need": 0.0903995529862999,
+            "response": 0
+          },
+          {
+            "ready": 1,
+            "message": "silent",
+            "mass": 0.5469937500000002,
+            "need": 0.3821770129914646,
+            "response": 2
+          }
+        ],
+        "inquiry_cost": 0.11772390625000001,
+        "operating_loss": 0.10366609375000008,
+        "readiness_probability": 0.5469937500000002,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.5469937500000002,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 1,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.01,
+          "setup": 0.0,
+          "readiness": 0.008204906250000003,
+          "payload": 0.0,
+          "diagnostic": 0.08751900000000003
+        }
+      },
+      {
+        "total_loss": 0.31200000000000006,
+        "branches": [
+          {
+            "type": [],
+            "mass": 1.0000000000000002,
+            "need": 0.75,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.012,
+            "total": 0.312
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 1.0000000000000002,
+            "need": 0.75,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.012000000000000004,
+        "operating_loss": 0.30000000000000004,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.26669500000000007,
+    "operating_loss": 0.20183304687500006,
+    "inquiry_cost": 0.06486195312500001,
+    "readiness_probability": 0.2734968750000001,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.2734968750000001,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.5,
+    "components": {
+      "retention": 0.012,
+      "inspection": 0.005,
+      "setup": 0.0,
+      "readiness": 0.0041024531250000015,
+      "payload": 0.0,
+      "diagnostic": 0.043759500000000014
+    }
+  },
+  {
+    "feasible": true,
+    "family": "ordered",
+    "format": "last",
+    "bits": 0,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.25,
+        "branches": [
+          {
+            "type": [],
+            "mass": 0.9999999999999999,
+            "need": 0.25000000000000006,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.0,
+            "total": 0.25000000000000006
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.9999999999999999,
+            "need": 0.25000000000000006,
+            "response": 0
+          }
+        ],
+        "inquiry_cost": 0.0,
+        "operating_loss": 0.25,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.0,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      },
+      {
+        "total_loss": 0.29999999999999993,
+        "branches": [
+          {
+            "type": [],
+            "mass": 0.9999999999999999,
+            "need": 0.7500000000000002,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.0,
+            "total": 0.3
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.9999999999999999,
+            "need": 0.7500000000000002,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.0,
+        "operating_loss": 0.29999999999999993,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.0,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.27499999999999997,
+    "operating_loss": 0.27499999999999997,
+    "inquiry_cost": 0.0,
+    "readiness_probability": 0.0,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.0,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.0,
+    "components": {
+      "retention": 0.0,
+      "inspection": 0.0,
+      "setup": 0.0,
+      "readiness": 0.0,
+      "payload": 0.0,
+      "diagnostic": 0.0
+    }
+  },
+  {
+    "feasible": true,
+    "family": "ordered",
+    "format": "count",
+    "bits": 3,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.259,
+        "branches": [
+          {
+            "type": [],
+            "mass": 0.9999999999999999,
+            "need": 0.25000000000000006,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.009000000000000001,
+            "total": 0.25900000000000006
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.9999999999999999,
+            "need": 0.25000000000000006,
+            "response": 0
+          }
+        ],
+        "inquiry_cost": 0.009,
+        "operating_loss": 0.25,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.009000000000000001,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      },
+      {
+        "total_loss": 0.30899999999999994,
+        "branches": [
+          {
+            "type": [],
+            "mass": 0.9999999999999999,
+            "need": 0.7500000000000002,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.009000000000000001,
+            "total": 0.309
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.9999999999999999,
+            "need": 0.7500000000000002,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.009,
+        "operating_loss": 0.29999999999999993,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.009000000000000001,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.284,
+    "operating_loss": 0.27499999999999997,
+    "inquiry_cost": 0.009,
+    "readiness_probability": 0.0,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.0,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.0,
+    "components": {
+      "retention": 0.009000000000000001,
+      "inspection": 0.0,
+      "setup": 0.0,
+      "readiness": 0.0,
+      "payload": 0.0,
+      "diagnostic": 0.0
+    }
+  },
+  {
+    "feasible": true,
+    "family": "ordered",
+    "format": "timed",
+    "bits": 4,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.22874,
+        "branches": [
+          {
+            "type": [
+              0,
+              0
+            ],
+            "mass": 0.27300625,
+            "need": 0.25,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.272
+          },
+          {
+            "type": [
+              0,
+              1
+            ],
+            "mass": 0.23773750000000005,
+            "need": 0.4258241758241758,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.32474725274725275
+          },
+          {
+            "type": [
+              0,
+              2
+            ],
+            "mass": 0.09175625000000001,
+            "need": 0.44835161092568615,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.33150548327770585
+          },
+          {
+            "type": [
+              1,
+              0
+            ],
+            "mass": 0.2377375,
+            "need": 0.07417582417582419,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.09617582417582418
+          },
+          {
+            "type": [
+              1,
+              1
+            ],
+            "mass": 0.047025000000000004,
+            "need": 0.25,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.272
+          },
+          {
+            "type": [
+              1,
+              2
+            ],
+            "mass": 0.0102375,
+            "need": 0.42582417582417587,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3247472527472528
+          },
+          {
+            "type": [
+              2,
+              0
+            ],
+            "mass": 0.09175625,
+            "need": 0.051648389074313746,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.07364838907431374
+          },
+          {
+            "type": [
+              2,
+              1
+            ],
+            "mass": 0.0102375,
+            "need": 0.0741758241758242,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.09617582417582421
+          },
+          {
+            "type": [
+              2,
+              2
+            ],
+            "mass": 0.0005062500000000002,
+            "need": 0.25,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.272
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.6602687500000001,
+            "need": 0.15640174928769535,
+            "response": 0
+          },
+          {
+            "ready": 1,
+            "message": "silent",
+            "mass": 0.33973125000000004,
+            "need": 0.4319084938462387,
+            "response": 2
+          }
+        ],
+        "inquiry_cost": 0.08145296875000001,
+        "operating_loss": 0.14728703124999998,
+        "readiness_probability": 0.33973125000000004,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.33973125000000004,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 1,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.01,
+          "setup": 0.0,
+          "readiness": 0.005095968750000001,
+          "payload": 0.0,
+          "diagnostic": 0.05435700000000001
+        }
+      },
+      {
+        "total_loss": 0.31199999999999994,
+        "branches": [
+          {
+            "type": [],
+            "mass": 0.9999999999999999,
+            "need": 0.7500000000000002,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.012,
+            "total": 0.312
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.9999999999999999,
+            "need": 0.7500000000000002,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.011999999999999999,
+        "operating_loss": 0.29999999999999993,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.27037,
+    "operating_loss": 0.22364351562499996,
+    "inquiry_cost": 0.046726484375,
+    "readiness_probability": 0.16986562500000002,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.16986562500000002,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.5,
+    "components": {
+      "retention": 0.012,
+      "inspection": 0.005,
+      "setup": 0.0,
+      "readiness": 0.0025479843750000003,
+      "payload": 0.0,
+      "diagnostic": 0.027178500000000005
+    }
+  },
+  {
+    "feasible": true,
+    "family": "ordered",
+    "format": "raw",
+    "bits": 4,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.22874000000000003,
+        "branches": [
+          {
+            "type": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "mass": 0.27300625,
+            "need": 0.25,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.272
+          },
+          {
+            "type": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "mass": 0.11886875000000001,
+            "need": 0.4258241758241758,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.32474725274725275
+          },
+          {
+            "type": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "mass": 0.11886875000000002,
+            "need": 0.4258241758241758,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.32474725274725275
+          },
+          {
+            "type": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "mass": 0.09175625000000001,
+            "need": 0.44835161092568615,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.33150548327770585
+          },
+          {
+            "type": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "mass": 0.11886875,
+            "need": 0.07417582417582419,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.09617582417582418
+          },
+          {
+            "type": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "mass": 0.011756250000000001,
+            "need": 0.25,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.272
+          },
+          {
+            "type": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "mass": 0.011756250000000001,
+            "need": 0.25,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.272
+          },
+          {
+            "type": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "mass": 0.00511875,
+            "need": 0.42582417582417587,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3247472527472528
+          },
+          {
+            "type": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "mass": 0.11886875,
+            "need": 0.07417582417582419,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.09617582417582418
+          },
+          {
+            "type": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "mass": 0.011756250000000001,
+            "need": 0.25,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.272
+          },
+          {
+            "type": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "mass": 0.011756250000000001,
+            "need": 0.25,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.272
+          },
+          {
+            "type": [
+              1,
+              0,
+              1,
+              1
+            ],
+            "mass": 0.00511875,
+            "need": 0.42582417582417587,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3247472527472528
+          },
+          {
+            "type": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "mass": 0.09175625,
+            "need": 0.051648389074313746,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.07364838907431374
+          },
+          {
+            "type": [
+              1,
+              1,
+              0,
+              1
+            ],
+            "mass": 0.00511875,
+            "need": 0.07417582417582419,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.09617582417582418
+          },
+          {
+            "type": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "mass": 0.005118750000000001,
+            "need": 0.07417582417582419,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.09617582417582418
+          },
+          {
+            "type": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "mass": 0.0005062500000000002,
+            "need": 0.25,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.272
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.66026875,
+            "need": 0.15640174928769543,
+            "response": 0
+          },
+          {
+            "ready": 1,
+            "message": "silent",
+            "mass": 0.33973125000000004,
+            "need": 0.4319084938462387,
+            "response": 2
+          }
+        ],
+        "inquiry_cost": 0.08145296875000003,
+        "operating_loss": 0.14728703124999998,
+        "readiness_probability": 0.33973125000000004,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.33973125000000004,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 1,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.01,
+          "setup": 0.0,
+          "readiness": 0.005095968750000001,
+          "payload": 0.0,
+          "diagnostic": 0.05435700000000001
+        }
+      },
+      {
+        "total_loss": 0.31199999999999994,
+        "branches": [
+          {
+            "type": [],
+            "mass": 0.9999999999999999,
+            "need": 0.7500000000000002,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.012,
+            "total": 0.312
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.9999999999999999,
+            "need": 0.7500000000000002,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.011999999999999999,
+        "operating_loss": 0.29999999999999993,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.27037,
+    "operating_loss": 0.22364351562499996,
+    "inquiry_cost": 0.046726484375000016,
+    "readiness_probability": 0.16986562500000002,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.16986562500000002,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.5,
+    "components": {
+      "retention": 0.012,
+      "inspection": 0.005,
+      "setup": 0.0,
+      "readiness": 0.0025479843750000003,
+      "payload": 0.0,
+      "diagnostic": 0.027178500000000005
+    }
+  },
+  {
+    "feasible": true,
+    "family": "expanded",
+    "format": "last",
+    "bits": 0,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.25000000000000006,
+        "branches": [
+          {
+            "type": [],
+            "mass": 1.0,
+            "need": 0.25000000000000006,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.0,
+            "total": 0.25000000000000006
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 1.0,
+            "need": 0.25000000000000006,
+            "response": 0
+          }
+        ],
+        "inquiry_cost": 0.0,
+        "operating_loss": 0.25000000000000006,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.0,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      },
+      {
+        "total_loss": 0.3,
+        "branches": [
+          {
+            "type": [],
+            "mass": 1.0,
+            "need": 0.7500000000000001,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.0,
+            "total": 0.3
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 1.0,
+            "need": 0.7500000000000001,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.0,
+        "operating_loss": 0.3,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.0,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.275,
+    "operating_loss": 0.275,
+    "inquiry_cost": 0.0,
+    "readiness_probability": 0.0,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.0,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.0,
+    "components": {
+      "retention": 0.0,
+      "inspection": 0.0,
+      "setup": 0.0,
+      "readiness": 0.0,
+      "payload": 0.0,
+      "diagnostic": 0.0
+    }
+  },
+  {
+    "feasible": true,
+    "family": "expanded",
+    "format": "count",
+    "bits": 3,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.24369500000000002,
+        "branches": [
+          {
+            "type": [
+              0
+            ],
+            "mass": 0.36300625,
+            "need": 0.15041493775933612,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.019000000000000003,
+            "total": 0.16941493775933614
+          },
+          {
+            "type": [
+              1
+            ],
+            "mass": 0.35547500000000004,
+            "need": 0.26800407904915957,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.194,
+            "total": 0.27440122371474784
+          },
+          {
+            "type": [
+              2
+            ],
+            "mass": 0.21053750000000004,
+            "need": 0.3340705337528943,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.194,
+            "total": 0.2942211601258683
+          },
+          {
+            "type": [
+              3
+            ],
+            "mass": 0.060475000000000015,
+            "need": 0.41535758577924764,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.194,
+            "total": 0.3186072757337743
+          },
+          {
+            "type": [
+              4
+            ],
+            "mass": 0.010506250000000002,
+            "need": 0.4451219512195122,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.194,
+            "total": 0.32753658536585367
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.36300625,
+            "need": 0.15041493775933612,
+            "response": 0
+          },
+          {
+            "ready": 1,
+            "message": "silent",
+            "mass": 0.6369937500000001,
+            "need": 0.3067509492832543,
+            "response": 2
+          }
+        ],
+        "inquiry_cost": 0.13047390625000002,
+        "operating_loss": 0.11322109375,
+        "readiness_probability": 0.6369937500000001,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.6369937500000001,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 1,
+        "channel": 0,
+        "components": {
+          "retention": 0.009000000000000001,
+          "inspection": 0.01,
+          "setup": 0.0,
+          "readiness": 0.009554906250000002,
+          "payload": 0.0,
+          "diagnostic": 0.10191900000000002
+        }
+      },
+      {
+        "total_loss": 0.309,
+        "branches": [
+          {
+            "type": [],
+            "mass": 1.0,
+            "need": 0.7500000000000001,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.009000000000000001,
+            "total": 0.309
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 1.0,
+            "need": 0.7500000000000001,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.009000000000000001,
+        "operating_loss": 0.3,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.009000000000000001,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.2763475,
+    "operating_loss": 0.206610546875,
+    "inquiry_cost": 0.06973695312500001,
+    "readiness_probability": 0.31849687500000007,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.31849687500000007,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.5,
+    "components": {
+      "retention": 0.009000000000000001,
+      "inspection": 0.005,
+      "setup": 0.0,
+      "readiness": 0.004777453125000001,
+      "payload": 0.0,
+      "diagnostic": 0.05095950000000001
+    }
+  },
+  {
+    "feasible": true,
+    "family": "expanded",
+    "format": "timed",
+    "bits": 4,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.23,
+        "branches": [
+          {
+            "type": [
+              0,
+              0
+            ],
+            "mass": 0.36300625,
+            "need": 0.15041493775933612,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.1724149377593361
+          },
+          {
+            "type": [
+              0,
+              1
+            ],
+            "mass": 0.17773750000000002,
+            "need": 0.3855932203389831,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.31267796610169496
+          },
+          {
+            "type": [
+              0,
+              2
+            ],
+            "mass": 0.06175625000000001,
+            "need": 0.4451219512195121,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3305365853658536
+          },
+          {
+            "type": [
+              1,
+              0
+            ],
+            "mass": 0.1777375,
+            "need": 0.15041493775933615,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.17241493775933614
+          },
+          {
+            "type": [
+              1,
+              1
+            ],
+            "mass": 0.087025,
+            "need": 0.38559322033898313,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.31267796610169496
+          },
+          {
+            "type": [
+              1,
+              2
+            ],
+            "mass": 0.030237500000000007,
+            "need": 0.4451219512195122,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3305365853658537
+          },
+          {
+            "type": [
+              2,
+              0
+            ],
+            "mass": 0.06175625,
+            "need": 0.15041493775933612,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.1724149377593361
+          },
+          {
+            "type": [
+              2,
+              1
+            ],
+            "mass": 0.030237500000000007,
+            "need": 0.385593220338983,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3126779661016949
+          },
+          {
+            "type": [
+              2,
+              2
+            ],
+            "mass": 0.010506250000000002,
+            "need": 0.4451219512195122,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3305365853658537
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.6024999999999999,
+            "need": 0.15041493775933615,
+            "response": 0
+          },
+          {
+            "ready": 1,
+            "message": "silent",
+            "mass": 0.3975000000000001,
+            "need": 0.40094339622641506,
+            "response": 2
+          }
+        ],
+        "inquiry_cost": 0.09156250000000002,
+        "operating_loss": 0.1384375,
+        "readiness_probability": 0.3975000000000001,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.3975000000000001,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 1,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.01,
+          "setup": 0.0,
+          "readiness": 0.005962500000000001,
+          "payload": 0.0,
+          "diagnostic": 0.06360000000000002
+        }
+      },
+      {
+        "total_loss": 0.312,
+        "branches": [
+          {
+            "type": [],
+            "mass": 1.0,
+            "need": 0.7500000000000001,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.012,
+            "total": 0.312
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 1.0,
+            "need": 0.7500000000000001,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.012,
+        "operating_loss": 0.3,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.271,
+    "operating_loss": 0.21921875,
+    "inquiry_cost": 0.05178125000000001,
+    "readiness_probability": 0.19875000000000004,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.19875000000000004,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.5,
+    "components": {
+      "retention": 0.012,
+      "inspection": 0.005,
+      "setup": 0.0,
+      "readiness": 0.0029812500000000004,
+      "payload": 0.0,
+      "diagnostic": 0.03180000000000001
+    }
+  },
+  {
+    "feasible": true,
+    "family": "expanded",
+    "format": "raw",
+    "bits": 4,
+    "n": 4,
+    "costs": {
+      "retention_bit": 0.003,
+      "inspect": 0.01,
+      "setup": 0.003,
+      "payload_bit": 0.01,
+      "ready": 0.015,
+      "diagnostic": 0.16,
+      "response": 0.3,
+      "loss": 1.0,
+      "cap": 0.4
+    },
+    "controls": {
+      "allow_payload": true,
+      "ready_constraint": null,
+      "allow_diagnostic": true
+    },
+    "contexts": [
+      {
+        "total_loss": 0.23000000000000004,
+        "branches": [
+          {
+            "type": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "mass": 0.36300625,
+            "need": 0.15041493775933612,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.1724149377593361
+          },
+          {
+            "type": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "mass": 0.08886875000000001,
+            "need": 0.3855932203389831,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.31267796610169496
+          },
+          {
+            "type": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "mass": 0.08886875000000001,
+            "need": 0.3855932203389831,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.31267796610169496
+          },
+          {
+            "type": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "mass": 0.06175625000000001,
+            "need": 0.4451219512195121,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3305365853658536
+          },
+          {
+            "type": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "mass": 0.08886875,
+            "need": 0.15041493775933615,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.17241493775933614
+          },
+          {
+            "type": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "mass": 0.02175625,
+            "need": 0.38559322033898313,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.31267796610169496
+          },
+          {
+            "type": [
+              0,
+              1,
+              1,
+              0
+            ],
+            "mass": 0.02175625,
+            "need": 0.38559322033898313,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.31267796610169496
+          },
+          {
+            "type": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "mass": 0.015118750000000004,
+            "need": 0.4451219512195122,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3305365853658537
+          },
+          {
+            "type": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "mass": 0.08886875,
+            "need": 0.15041493775933615,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.17241493775933614
+          },
+          {
+            "type": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "mass": 0.02175625,
+            "need": 0.38559322033898313,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.31267796610169496
+          },
+          {
+            "type": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "mass": 0.02175625,
+            "need": 0.38559322033898313,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.31267796610169496
+          },
+          {
+            "type": [
+              1,
+              0,
+              1,
+              1
+            ],
+            "mass": 0.015118750000000004,
+            "need": 0.4451219512195122,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3305365853658537
+          },
+          {
+            "type": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "mass": 0.06175625,
+            "need": 0.15041493775933612,
+            "ready": 0,
+            "send": 0,
+            "response": 0,
+            "inquiry": 0.022,
+            "total": 0.1724149377593361
+          },
+          {
+            "type": [
+              1,
+              1,
+              0,
+              1
+            ],
+            "mass": 0.015118750000000004,
+            "need": 0.385593220338983,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3126779661016949
+          },
+          {
+            "type": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "mass": 0.015118750000000004,
+            "need": 0.385593220338983,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3126779661016949
+          },
+          {
+            "type": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "mass": 0.010506250000000002,
+            "need": 0.4451219512195122,
+            "ready": 1,
+            "send": 0,
+            "response": 2,
+            "inquiry": 0.197,
+            "total": 0.3305365853658537
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 0.6024999999999999,
+            "need": 0.15041493775933615,
+            "response": 0
+          },
+          {
+            "ready": 1,
+            "message": "silent",
+            "mass": 0.3975,
+            "need": 0.40094339622641517,
+            "response": 2
+          }
+        ],
+        "inquiry_cost": 0.0915625,
+        "operating_loss": 0.13843750000000005,
+        "readiness_probability": 0.3975,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.3975,
+        "unused_ready_probability": 0.0,
+        "z": 0,
+        "inspect": 1,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.01,
+          "setup": 0.0,
+          "readiness": 0.0059625,
+          "payload": 0.0,
+          "diagnostic": 0.0636
+        }
+      },
+      {
+        "total_loss": 0.312,
+        "branches": [
+          {
+            "type": [],
+            "mass": 1.0,
+            "need": 0.7500000000000001,
+            "ready": 0,
+            "send": 0,
+            "response": 1,
+            "inquiry": 0.012,
+            "total": 0.312
+          }
+        ],
+        "signals": [
+          {
+            "ready": 0,
+            "message": "silent",
+            "mass": 1.0,
+            "need": 0.7500000000000001,
+            "response": 1
+          }
+        ],
+        "inquiry_cost": 0.012,
+        "operating_loss": 0.3,
+        "readiness_probability": 0.0,
+        "send_probability": 0.0,
+        "diagnostic_probability": 0.0,
+        "unused_ready_probability": 0.0,
+        "z": 1,
+        "inspect": 0,
+        "channel": 0,
+        "components": {
+          "retention": 0.012,
+          "inspection": 0.0,
+          "setup": 0.0,
+          "readiness": 0.0,
+          "payload": 0.0,
+          "diagnostic": 0.0
+        }
+      }
+    ],
+    "total_loss": 0.271,
+    "operating_loss": 0.21921875000000002,
+    "inquiry_cost": 0.05178125,
+    "readiness_probability": 0.19875,
+    "send_probability": 0.0,
+    "diagnostic_probability": 0.19875,
+    "unused_ready_probability": 0.0,
+    "inspect_probability": 0.5,
+    "components": {
+      "retention": 0.012,
+      "inspection": 0.005,
+      "setup": 0.0,
+      "readiness": 0.00298125,
+      "payload": 0.0,
+      "diagnostic": 0.0318
+    }
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "canonical_synthesis": {
+    "path": "/Users/ren/theories/theories/shengsheng-buxi-generative-existence/README.md",
+    "sha256": "0ebafd0068addc5749ff4aa8608c03e5fe2fdf8bfd9ca8c57b5e272ecdf7f909"
+  },
+  "kernel": {
+    "path": "/Users/ren/repos/生生不息/formal/SSBX/Foundation/Wen/Kernel.lean",
+    "sha256": "efdff9619b5232e05a4542ff46b7b4008456d87d68c3f4af3451d59d9e57c398"
+  },
+  "r7": {
+    "path": "/Users/ren/repos/生生不息/formal/SSBX/Foundation/Atlas/Yi/Classical/Cells/R7.lean",
+    "sha256": "c0907adf8fbd280030c89b388ecec5aa3095805a1ad473b26a85422d1ad7f889"
+  },
+  "yi": {
+    "path": "/Users/ren/repos/生生不息/formal/SSBX/Foundation/Atlas/Yi/Classical/Core/Yi.lean",
+    "sha256": "09625250f9dd5e5ac0c895414c8a0a04b7de6679b2a519a841172eea7456b294"
+  },
+  "root": {
+    "path": "/Users/ren/repos/生生不息/formal/SSBX/Foundation/Core/MonadRoot.lean",
+    "sha256": "7625468f3fb76c5193a81696b9657c984ed82046dfb21ecf8068321137cd326e"
+  },
+  "full_gut": {
+    "path": "/Users/ren/repos/生生不息/formal/SSBX/Foundation/Doctrine/FullGUT.lean",
+    "sha256": "246a9c74ae0c0f6af8c7c664ceda86277b2d09351ff5112adf015408b5ee5825"
+  },
+  "root_plan": {
+    "path": "/Users/ren/repos/生生不息/formal/SSBX/notes/monad-root-plan.md",
+    "sha256": "8c969f92b078da2212e90f207cae075517e9076979be06618b49098d58ac4d49"
+  },
+  "claim_ledger": {
+    "path": "/Users/ren/repos/生生不息/docs-next/10_formal_形式/claim-status-ledger.md",
+    "sha256": "6a7b33a057497afcba31533693a3e775efae594b2e39968112975325c954b200"
+  },
+  "jian": {
+    "path": "/Users/ren/repos/生生不息/史料/生生不息论_三本文完整版/04_补篇二_间生论_主篇/03_一、间.md",
+    "sha256": "296604fede54f432b7230433351e2b96bdc7cd282a70ae4087da54a1a0bbbc98"
+  },
+  "openness": {
+    "path": "/Users/ren/repos/生生不息/史料/生生不息论_三本文完整版/04_补篇二_间生论_主篇/06_四、开闭.md",
+    "sha256": "e498cc36032630fc2e82ff3d4567e5d8b7a62586c06b45f6501b729f0ca21121"
+  },
+  "global_assertion": {
+    "path": "/Users/ren/repos/生生不息/史料/生生不息论_三本文完整版/04_补篇二_间生论_主篇/15_十三、行仁要善_alignment_之真义.md",
+    "sha256": "90898bfe770d6db0115d0cd659019d261582d02964cfee5d274b5a49b8f7a75f"
+  }
+}

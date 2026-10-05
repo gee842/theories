@@ -1,0 +1,448 @@
+{
+  "date": "2026-10-05",
+  "primary": "ROOT-FOUNDATION.md",
+  "scope": "Document integrity and constructed examples; not empirical validation or general proof certification.",
+  "documents": [
+    {
+      "file": "INFORMATION-AND-RENEWAL.md",
+      "sha256": "a34183db8678140b0d8b5fe2bc7280502c214a4fadea2dcf3de1019b935b5281",
+      "words": 2896,
+      "lines": 262,
+      "equation_tags": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "E9",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E14",
+        "E15",
+        "E16",
+        "E17",
+        "E18",
+        "E19",
+        "E20",
+        "E21"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        21,
+        21
+      ],
+      "inline_delimiters": [
+        0,
+        0
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "INVARIANCE-AND-PRIOR-ART.md",
+      "sha256": "8b563ee0c684d4a17b034aa2fa3a7f6a256c59095ac6da9260bd26a7f9abc833",
+      "words": 2906,
+      "lines": 231,
+      "equation_tags": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6",
+        "I7",
+        "I8",
+        "I9",
+        "I10",
+        "I11",
+        "I12"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        12,
+        12
+      ],
+      "inline_delimiters": [
+        38,
+        38
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "PLURAL-CAPACITY.md",
+      "sha256": "e783435646f0066769224b727ad66aa6d58a699062597726d6de368cf3bf7de5",
+      "words": 1613,
+      "lines": 155,
+      "equation_tags": [
+        "PC1",
+        "PC2",
+        "PC3",
+        "PC4",
+        "PC5",
+        "PC6",
+        "PC7",
+        "PC8",
+        "PC9",
+        "PC10"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        10,
+        10
+      ],
+      "inline_delimiters": [
+        75,
+        75
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "README.md",
+      "sha256": "b326c549e345d8a90b5832591ad8fbb3069859764560fd581fcf553e3890ece9",
+      "words": 868,
+      "lines": 51,
+      "equation_tags": [],
+      "unique_tags": true,
+      "display_delimiters": [
+        0,
+        0
+      ],
+      "inline_delimiters": [
+        0,
+        0
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "REVIEW-EPISTEMIC.md",
+      "sha256": "9092004d92b510b8b6df4fe0294f71843d62c90b6448e6af7a6aeebb11062605",
+      "words": 1182,
+      "lines": 61,
+      "equation_tags": [],
+      "unique_tags": true,
+      "display_delimiters": [
+        3,
+        3
+      ],
+      "inline_delimiters": [
+        0,
+        0
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "REVIEW-INVARIANCE.md",
+      "sha256": "3cb38d8e1f7eb729d782d95e557b1a501d8e6d8b85a29abe0f27ff801c9f4324",
+      "words": 1301,
+      "lines": 71,
+      "equation_tags": [],
+      "unique_tags": true,
+      "display_delimiters": [
+        2,
+        2
+      ],
+      "inline_delimiters": [
+        12,
+        12
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "REVIEW-TURNOVER.md",
+      "sha256": "0b4d860c8eefd4455b6580d68ad3a8993640cd734720a575c43ec9ced2df1df0",
+      "words": 1053,
+      "lines": 56,
+      "equation_tags": [],
+      "unique_tags": true,
+      "display_delimiters": [
+        1,
+        1
+      ],
+      "inline_delimiters": [
+        24,
+        24
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "sha256": "e2ef0b5edfe7766bcf857582e077c97885b6bdd91158ce6f05d8c0c879d81c5a",
+      "words": 3752,
+      "lines": 273,
+      "equation_tags": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R4a",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        15,
+        15
+      ],
+      "inline_delimiters": [
+        73,
+        73
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "TURNOVER-AND-CLOSURE.md",
+      "sha256": "a35feb39fc56d738b029f7392049c08d9c8e1da8cb31fcbcb93f6952dc624461",
+      "words": 2880,
+      "lines": 174,
+      "equation_tags": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        9,
+        9
+      ],
+      "inline_delimiters": [
+        87,
+        87
+      ],
+      "placeholders": []
+    }
+  ],
+  "local_links": [
+    {
+      "file": "INFORMATION-AND-RENEWAL.md",
+      "target": "../final-synthesis/ADAPTIVE-OPTIMUM.md",
+      "exists": true
+    },
+    {
+      "file": "INFORMATION-AND-RENEWAL.md",
+      "target": "../final-synthesis/INTEGRATED-THEORY.md",
+      "exists": true
+    },
+    {
+      "file": "INVARIANCE-AND-PRIOR-ART.md",
+      "target": "../OPTIMAL-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "PLURAL-CAPACITY.md",
+      "target": "ROOT-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "PLURAL-CAPACITY.md",
+      "target": "../foundation-assessment/ASSESSMENT.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "ROOT-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "../final-synthesis/INTEGRATED-THEORY.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "../OPTIMAL-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "../FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "PLURAL-CAPACITY.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "TURNOVER-AND-CLOSURE.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "INFORMATION-AND-RENEWAL.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "INVARIANCE-AND-PRIOR-ART.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "REVIEW-INVARIANCE.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "REVIEW-EPISTEMIC.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "REVIEW-TURNOVER.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "EXACT-CHECKS.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "continuous-readiness.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "FIGURE-CHECKS.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "continuous-readiness.svg",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "DOCUMENT-CHECKS.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "MANIFEST.json",
+      "exists": true
+    },
+    {
+      "file": "REVIEW-EPISTEMIC.md",
+      "target": "TURNOVER-AND-CLOSURE.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW-EPISTEMIC.md",
+      "target": "ROOT-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW-EPISTEMIC.md",
+      "target": "INFORMATION-AND-RENEWAL.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW-TURNOVER.md",
+      "target": "INFORMATION-AND-RENEWAL.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW-TURNOVER.md",
+      "target": "ROOT-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW-TURNOVER.md",
+      "target": "TURNOVER-AND-CLOSURE.md",
+      "exists": true
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "target": "../foundation-assessment/ASSESSMENT.md",
+      "exists": true
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "target": "PLURAL-CAPACITY.md",
+      "exists": true
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "target": "../final-synthesis/INTEGRATED-THEORY.md",
+      "exists": true
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "target": "INVARIANCE-AND-PRIOR-ART.md",
+      "exists": true
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "target": "TURNOVER-AND-CLOSURE.md",
+      "exists": true
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "target": "TURNOVER-AND-CLOSURE.md",
+      "exists": true
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "target": "INFORMATION-AND-RENEWAL.md",
+      "exists": true
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "target": "INVARIANCE-AND-PRIOR-ART.md",
+      "exists": true
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "target": "EXACT-CHECKS.json",
+      "exists": true
+    },
+    {
+      "file": "ROOT-FOUNDATION.md",
+      "target": "continuous-readiness.png",
+      "exists": true
+    },
+    {
+      "file": "TURNOVER-AND-CLOSURE.md",
+      "target": "../final-synthesis/INTEGRATED-THEORY.md",
+      "exists": true
+    },
+    {
+      "file": "TURNOVER-AND-CLOSURE.md",
+      "target": "../final-synthesis/INTEGRATED-THEORY.md",
+      "exists": true
+    }
+  ],
+  "errors": [],
+  "original_preserved_sha256": "91efaed68a9746e8213437a810a6bb9b0864a572467a9956010fe2711cb92460",
+  "exact_check_groups_passed": 28,
+  "exact_check_record": "EXACT-CHECKS.json",
+  "analytic_figure_checks": "FIGURE-CHECKS.json",
+  "figure_visually_inspected": true,
+  "full_document_render_audit": false,
+  "review_scope": "Three internal AI cross-reviews with reported scope corrections resolved; no human peer review or novelty certification.",
+  "new_empirical_validation": false
+}

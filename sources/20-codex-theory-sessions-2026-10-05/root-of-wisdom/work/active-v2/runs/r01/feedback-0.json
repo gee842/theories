@@ -1,0 +1,40 @@
+{
+  "query_results": [
+    {
+      "id": "A03",
+      "query": "open_panel",
+      "result": "opened",
+      "fee_charged": "1",
+      "cash_remaining": "3",
+      "elapsed_time": 1,
+      "deadline": 6,
+      "queries_remaining": 1
+    },
+    {
+      "id": "A01",
+      "query": "share_a",
+      "result": "1",
+      "fee_charged": "1",
+      "cash_remaining": "9",
+      "elapsed_time": 1,
+      "deadline": 5,
+      "queries_remaining": 1
+    },
+    {
+      "id": "A06",
+      "query": "inspect",
+      "result": "state_1",
+      "fee_charged": "1",
+      "cash_remaining": "3",
+      "elapsed_time": 1,
+      "deadline": 3,
+      "queries_remaining": 1
+    }
+  ],
+  "open_episode_ids": [
+    "A03",
+    "A01",
+    "A06"
+  ],
+  "instruction": "Choose one next command for each open episode in the listed order. Use only the original public model and returned evidence. Return the same JSON format; no tools."
+}

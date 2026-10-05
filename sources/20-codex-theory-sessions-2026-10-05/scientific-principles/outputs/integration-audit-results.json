@@ -1,0 +1,4864 @@
+{
+  "runs_audited": 1920,
+  "completed_comparisons": 460,
+  "enacted_changes": 188,
+  "nonpositive_enacted_changes": 0,
+  "nonpositive_formal_passes": 0,
+  "enacted_changes_by_scenario_arm": [
+    {
+      "scenario": "emerging",
+      "arm": "fixed_mandate",
+      "count": 0
+    },
+    {
+      "scenario": "emerging",
+      "arm": "fixed_rule",
+      "count": 0
+    },
+    {
+      "scenario": "emerging",
+      "arm": "full",
+      "count": 64
+    },
+    {
+      "scenario": "emerging",
+      "arm": "incumbent_only_opening",
+      "count": 0
+    },
+    {
+      "scenario": "emerging",
+      "arm": "no_renewal",
+      "count": 0
+    },
+    {
+      "scenario": "material_stress",
+      "arm": "fixed_mandate",
+      "count": 0
+    },
+    {
+      "scenario": "material_stress",
+      "arm": "fixed_rule",
+      "count": 0
+    },
+    {
+      "scenario": "material_stress",
+      "arm": "full",
+      "count": 122
+    },
+    {
+      "scenario": "material_stress",
+      "arm": "incumbent_only_opening",
+      "count": 0
+    },
+    {
+      "scenario": "material_stress",
+      "arm": "no_renewal",
+      "count": 0
+    },
+    {
+      "scenario": "noise",
+      "arm": "fixed_mandate",
+      "count": 0
+    },
+    {
+      "scenario": "noise",
+      "arm": "fixed_rule",
+      "count": 0
+    },
+    {
+      "scenario": "noise",
+      "arm": "full",
+      "count": 0
+    },
+    {
+      "scenario": "noise",
+      "arm": "incumbent_only_opening",
+      "count": 0
+    },
+    {
+      "scenario": "noise",
+      "arm": "no_renewal",
+      "count": 0
+    },
+    {
+      "scenario": "poor_income",
+      "arm": "fixed_mandate",
+      "count": 0
+    },
+    {
+      "scenario": "poor_income",
+      "arm": "fixed_rule",
+      "count": 0
+    },
+    {
+      "scenario": "poor_income",
+      "arm": "full",
+      "count": 0
+    },
+    {
+      "scenario": "poor_income",
+      "arm": "incumbent_only_opening",
+      "count": 0
+    },
+    {
+      "scenario": "poor_income",
+      "arm": "no_renewal",
+      "count": 0
+    },
+    {
+      "scenario": "simple",
+      "arm": "fixed_mandate",
+      "count": 0
+    },
+    {
+      "scenario": "simple",
+      "arm": "fixed_rule",
+      "count": 0
+    },
+    {
+      "scenario": "simple",
+      "arm": "full",
+      "count": 0
+    },
+    {
+      "scenario": "simple",
+      "arm": "incumbent_only_opening",
+      "count": 0
+    },
+    {
+      "scenario": "simple",
+      "arm": "no_renewal",
+      "count": 0
+    },
+    {
+      "scenario": "transient",
+      "arm": "fixed_mandate",
+      "count": 0
+    },
+    {
+      "scenario": "transient",
+      "arm": "fixed_rule",
+      "count": 0
+    },
+    {
+      "scenario": "transient",
+      "arm": "full",
+      "count": 2
+    },
+    {
+      "scenario": "transient",
+      "arm": "incumbent_only_opening",
+      "count": 0
+    },
+    {
+      "scenario": "transient",
+      "arm": "no_renewal",
+      "count": 0
+    }
+  ],
+  "nonpositive_change_details": [],
+  "nonpositive_pass_details": [],
+  "all_enacted_exact_gain_records": [
+    {
+      "scenario": "emerging",
+      "seed": 800001,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 807920,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 815839,
+      "arm": "full",
+      "round": 162,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 823758,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 831677,
+      "arm": "full",
+      "round": 164,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 839596,
+      "arm": "full",
+      "round": 162,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 847515,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 855434,
+      "arm": "full",
+      "round": 163,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 863353,
+      "arm": "full",
+      "round": 162,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 871272,
+      "arm": "full",
+      "round": 156,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 879191,
+      "arm": "full",
+      "round": 161,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 887110,
+      "arm": "full",
+      "round": 216,
+      "review": 3,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 895029,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 902948,
+      "arm": "full",
+      "round": 110,
+      "review": 1,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 910867,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 918786,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 926705,
+      "arm": "full",
+      "round": 156,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 934624,
+      "arm": "full",
+      "round": 161,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 942543,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 950462,
+      "arm": "full",
+      "round": 162,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 958381,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 966300,
+      "arm": "full",
+      "round": 218,
+      "review": 3,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 974219,
+      "arm": "full",
+      "round": 154,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 982138,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 990057,
+      "arm": "full",
+      "round": 154,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 997976,
+      "arm": "full",
+      "round": 165,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1005895,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1013814,
+      "arm": "full",
+      "round": 168,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1021733,
+      "arm": "full",
+      "round": 161,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1029652,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1037571,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1045490,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1053409,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1061328,
+      "arm": "full",
+      "round": 217,
+      "review": 3,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1069247,
+      "arm": "full",
+      "round": 164,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1077166,
+      "arm": "full",
+      "round": 105,
+      "review": 1,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1085085,
+      "arm": "full",
+      "round": 163,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1093004,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1100923,
+      "arm": "full",
+      "round": 227,
+      "review": 3,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1108842,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1116761,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1124680,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1132599,
+      "arm": "full",
+      "round": 165,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1140518,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1148437,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1156356,
+      "arm": "full",
+      "round": 161,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1164275,
+      "arm": "full",
+      "round": 167,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1172194,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1180113,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1188032,
+      "arm": "full",
+      "round": 105,
+      "review": 1,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1195951,
+      "arm": "full",
+      "round": 165,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1203870,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1211789,
+      "arm": "full",
+      "round": 162,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1219708,
+      "arm": "full",
+      "round": 166,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1227627,
+      "arm": "full",
+      "round": 107,
+      "review": 1,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1235546,
+      "arm": "full",
+      "round": 161,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1243465,
+      "arm": "full",
+      "round": 154,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1251384,
+      "arm": "full",
+      "round": 160,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1259303,
+      "arm": "full",
+      "round": 156,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1267222,
+      "arm": "full",
+      "round": 162,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1275141,
+      "arm": "full",
+      "round": 160,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1283060,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1290979,
+      "arm": "full",
+      "round": 167,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "emerging",
+      "seed": 1298898,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "transient",
+      "seed": 800001,
+      "arm": "full",
+      "round": 106,
+      "review": 1,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "transient",
+      "seed": 800001,
+      "arm": "full",
+      "round": 426,
+      "review": 6,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 800001,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 800001,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 807920,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 807920,
+      "arm": "full",
+      "round": 478,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 815839,
+      "arm": "full",
+      "round": 161,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 815839,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 823758,
+      "arm": "full",
+      "round": 161,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 823758,
+      "arm": "full",
+      "round": 481,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 839596,
+      "arm": "full",
+      "round": 160,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 839596,
+      "arm": "full",
+      "round": 480,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 847515,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 847515,
+      "arm": "full",
+      "round": 479,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 855434,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 855434,
+      "arm": "full",
+      "round": 478,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 863353,
+      "arm": "full",
+      "round": 162,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 863353,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 871272,
+      "arm": "full",
+      "round": 163,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 871272,
+      "arm": "full",
+      "round": 476,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 879191,
+      "arm": "full",
+      "round": 162,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 879191,
+      "arm": "full",
+      "round": 482,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 887110,
+      "arm": "full",
+      "round": 162,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 887110,
+      "arm": "full",
+      "round": 482,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 895029,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 895029,
+      "arm": "full",
+      "round": 476,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 902948,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 902948,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 910867,
+      "arm": "full",
+      "round": 156,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 910867,
+      "arm": "full",
+      "round": 476,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 918786,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 918786,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 926705,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 926705,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 934624,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 934624,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 942543,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 942543,
+      "arm": "full",
+      "round": 475,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 950462,
+      "arm": "full",
+      "round": 160,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 950462,
+      "arm": "full",
+      "round": 479,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 958381,
+      "arm": "full",
+      "round": 160,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 958381,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 966300,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 966300,
+      "arm": "full",
+      "round": 478,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 974219,
+      "arm": "full",
+      "round": 156,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 974219,
+      "arm": "full",
+      "round": 476,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 982138,
+      "arm": "full",
+      "round": 160,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 982138,
+      "arm": "full",
+      "round": 476,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 990057,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 990057,
+      "arm": "full",
+      "round": 475,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 997976,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 997976,
+      "arm": "full",
+      "round": 475,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1005895,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1005895,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1013814,
+      "arm": "full",
+      "round": 160,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1013814,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1029652,
+      "arm": "full",
+      "round": 165,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1029652,
+      "arm": "full",
+      "round": 476,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1037571,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1037571,
+      "arm": "full",
+      "round": 475,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1045490,
+      "arm": "full",
+      "round": 156,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1045490,
+      "arm": "full",
+      "round": 476,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1053409,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1053409,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1061328,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1061328,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1069247,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1069247,
+      "arm": "full",
+      "round": 479,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1077166,
+      "arm": "full",
+      "round": 163,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1077166,
+      "arm": "full",
+      "round": 480,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1085085,
+      "arm": "full",
+      "round": 162,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1085085,
+      "arm": "full",
+      "round": 482,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1093004,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1093004,
+      "arm": "full",
+      "round": 479,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1100923,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1100923,
+      "arm": "full",
+      "round": 474,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1108842,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1108842,
+      "arm": "full",
+      "round": 475,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1116761,
+      "arm": "full",
+      "round": 165,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1116761,
+      "arm": "full",
+      "round": 474,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1124680,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1124680,
+      "arm": "full",
+      "round": 475,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1132599,
+      "arm": "full",
+      "round": 161,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1132599,
+      "arm": "full",
+      "round": 481,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1140518,
+      "arm": "full",
+      "round": 156,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1140518,
+      "arm": "full",
+      "round": 476,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1148437,
+      "arm": "full",
+      "round": 154,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1148437,
+      "arm": "full",
+      "round": 474,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1164275,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1164275,
+      "arm": "full",
+      "round": 474,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1172194,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1172194,
+      "arm": "full",
+      "round": 478,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1180113,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1180113,
+      "arm": "full",
+      "round": 475,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1188032,
+      "arm": "full",
+      "round": 161,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1188032,
+      "arm": "full",
+      "round": 475,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1195951,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1195951,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1203870,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1203870,
+      "arm": "full",
+      "round": 475,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1211789,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1211789,
+      "arm": "full",
+      "round": 479,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1219708,
+      "arm": "full",
+      "round": 159,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1219708,
+      "arm": "full",
+      "round": 479,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1227627,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1227627,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1235546,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1235546,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1243465,
+      "arm": "full",
+      "round": 163,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1243465,
+      "arm": "full",
+      "round": 480,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1251384,
+      "arm": "full",
+      "round": 161,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1251384,
+      "arm": "full",
+      "round": 481,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1259303,
+      "arm": "full",
+      "round": 154,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1259303,
+      "arm": "full",
+      "round": 474,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1267222,
+      "arm": "full",
+      "round": 158,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1267222,
+      "arm": "full",
+      "round": 476,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1275141,
+      "arm": "full",
+      "round": 167,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1275141,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1283060,
+      "arm": "full",
+      "round": 155,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1283060,
+      "arm": "full",
+      "round": 475,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1290979,
+      "arm": "full",
+      "round": 154,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1290979,
+      "arm": "full",
+      "round": 474,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1298898,
+      "arm": "full",
+      "round": 157,
+      "review": 2,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "21/200",
+      "true_gain_decimal": 0.105,
+      "true_gain_A_only": "-29/200",
+      "true_gain_inclusive": "21/200",
+      "W": "1/2",
+      "delta": "29/200",
+      "nonpositive": false
+    },
+    {
+      "scenario": "material_stress",
+      "seed": 1298898,
+      "arm": "full",
+      "round": 477,
+      "review": 5,
+      "mandate": "INCLUDE_B",
+      "formal_pass": true,
+      "enacted": true,
+      "expected_incumbent_errors": [
+        "0",
+        "1/2"
+      ],
+      "expected_candidate_errors": [
+        "0",
+        "0"
+      ],
+      "true_expected_gain": "79/200",
+      "true_gain_decimal": 0.395,
+      "true_gain_A_only": "29/200",
+      "true_gain_inclusive": "79/200",
+      "W": "1/2",
+      "delta": "-29/200",
+      "nonpositive": false
+    }
+  ],
+  "scope": "Evaluator-only exact expectations under declared uniform-context/independent-fair-noise laws; never learner feedback. Hash-key streams instantiate a pseudorandom simulation of these laws. Does not claim fixed deterministic tape has intrinsic IID randomness or infer post-review future advantage."
+}

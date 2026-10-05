@@ -1,0 +1,113 @@
+RECURSIVE SELF-MODELING: METACOGNITION AND INTROSPECTION SOURCE MAP
+Research date: 2026-10-05 (Asia/Bangkok)
+Purpose: bounded source map for the present conjecture, not a comprehensive review or a current consensus claim. Distinguish empirical observations, original theoretical proposals, and reviews. All factual attributions below are to primary authors' papers, including copies of those papers in author/institution repositories. Access limitations are explicit. Suggested experiments at the end are our synthesis.
+
+1. NELSON AND NARENS: MONITORING AND CONTROL
+Nelson, T. O., & Narens, L. (1990). Metamemory: A theoretical framework and new findings. Psychology of Learning and Motivation 26, 125–173.
+DOI: https://doi.org/10.1016/S0079-7421(08)60053-5
+Author-hosted full chapter: https://sites.socsci.uci.edu/~lnarens/1990/Nelson%26Narens_Book_Chapter_1990.pdf
+Readable mirror: https://pdf.retrievalpractice.org/metacognition/4_Nelson_Narens_1990.pdf
+Type: original theoretical framework plus new empirical findings; not a neural architecture.
+Checked: pp.125–128, 130–134, 136–137. Monitoring informs the meta-level from the object-level; control changes the object-level's state or process. Their meta-level contains a dynamic model. They distinguish logically independent functions without insisting on psychological separateness. More than two levels can be generalized, but the chapter does not need that generalization. Introspective reports are fallible behavior needing explanation; distorted monitoring can still influence control. Study-time allocation operationalizes control separately from judgments about learning.
+Supports: typed monitoring/control arrows, causal feedback, fallible introspection, distinct empirical measures for monitoring and regulation.
+Does not establish: literal anatomical tiers; correct models at every tier; an infinite hierarchy; universal invariance. Their asymmetric two-level diagram is an idealization and does not establish that all reciprocal systems must have the same asymmetric organization.
+
+2. FLEMING AND DAW: SECOND-ORDER INFERENCE WITHOUT A HOMUNCULUS
+Fleming, S. M., & Daw, N. D. (2017). Self-Evaluation of Decision-Making: A General Bayesian Framework for Metacognitive Computation. Psychological Review 124(1), 91–114.
+DOI: https://doi.org/10.1037/rev0000045
+Full article: https://pmc.ncbi.nlm.nih.gov/articles/PMC5178868/
+Author PDF: https://www.princeton.edu/~ndaw/fd17.pdf
+Code identified in paper: https://github.com/smfleming/Self-evaluation-paper
+Type: original computational theory and simulations compared with existing empirical findings, not a new experiment demonstrating the architecture.
+Checked: pp.91–94, model overview and first/postdecisional/second-order comparison. Confidence and action may depend on coupled but distinct internal evidence; separation can occur across time or space. The confidence process infers the actor's correctness using its evidence, the actor's action, and assumptions about covariance. First-order and postdecisional cases are special cases under suitable conditions. Additional postdecision evidence can support error recognition.
+Supports: model reuse over time need not entail a separate anatomical structure per semantic level; own action can be evidence; more elaborate inference can miscalibrate if its assumptions are wrong.
+Does not establish: consciousness equals metacognition, literal implemented third/fourth tiers, or universally superior higher-order inference. The basic presentation deliberately abstracts from within-trial dynamics.
+
+3. HIGHER-ORDER CONSCIOUSNESS: A THEORETICAL POSITION, NOT A SYNONYM FOR REGULATION
+Lau, H., & Rosenthal, D. (2011). Empirical support for higher-order theories of conscious awareness. Trends in Cognitive Sciences 15(8), 365–373.
+DOI: https://doi.org/10.1016/j.tics.2011.05.009
+Author-uploaded full text: https://www.researchgate.net/publication/51475128_Empirical_Support_for_Higher-order_Theories_of_Conscious_Awareness
+Type: theory-led review of evidence, not an original controlled experiment.
+Checked full text: introduction, Table 1, Figure 1 and accompanying discussion on pp.365–368. Advocates dependence of conscious awareness on higher-order representations of one's mental states. Interprets dissociations between objective performance and subjective reports, and prefrontal findings, as support. Explicitly contrasts first-order, global-workspace and recurrent-processing views.
+Supports: a serious competing hypothesis under which first-order performance and awareness can dissociate; misrepresentation is allowed rather than excluded by definition.
+Does not establish: that every form of metacognition generates consciousness, that performance/confidence dissociation uniquely identifies HOT, or that theories have been conclusively settled. Neural correlates of report and metacognitive access need not by themselves isolate phenomenal experience.
+
+Especially useful companion, original philosophical argument:
+Rosenthal, D. (2012). Higher-order awareness, misrepresentation and function. Philosophical Transactions B 367, 1424–1438.
+DOI: https://doi.org/10.1098/rstb.2011.0353
+Full article: https://pmc.ncbi.nlm.nih.gov/articles/PMC3318760/
+Checked: abstract and sections 2–5. Rosenthal explicitly separates the higher-order awareness proposed to explain a state's being conscious from metacognition used to evaluate/regulate cognition. They share higher-order content and possible misrepresentation, but need not share functional utility. His controversial view is that consciousness may add little utility beyond unconscious processing; this is an argument, not an established empirical result. This source prevents treating HOT as simply Nelson–Narens control in different terminology.
+
+4. LAMME: RECURRENT-PROCESSING ALTERNATIVE
+Lamme, V. A. F. (2010). How neuroscience will change our view on consciousness. Cognitive Neuroscience 1(3), 204–220.
+DOI: https://doi.org/10.1080/17588921003731586
+PubMed: https://pubmed.ncbi.nlm.nih.gov/24168336/
+Full target article with commentaries/reply: https://people.uncw.edu/tothj/PSY595/Lamme-How%20Neurosci%20Will%20Change%20Our%20View%20of%20Cs-CN-2010.pdf
+Type: theoretical target article using prior findings; not a new decisive experiment.
+Checked original target article: four processing stages around pp.211–213 and ontological argument pp.218–219. Distinguishes feedforward processing from recurrent/reentrant processing, and local recurrent processing from widespread recurrent processing. Argues that local recurrence may already support phenomenality, while broad access/report involves further processes. Consciousness and cognitive control are therefore not coextensive in this account.
+Disagreement: HOT assigns a constitutive role to higher-order awareness; Lamme's account allows phenomenal content without such reportable access. The attached commentaries expose disagreement over the inference from neural processing to phenomenality.
+Does not establish: any feedback loop is conscious, recursion itself is consciousness, or recurrent processing is semantically a model of a model. Neural recurrence and representational meta-order are different variables.
+Earlier formulation (abstract checked only): Lamme (2006), https://doi.org/10.1016/j.tics.2006.09.001 ; https://pubmed.ncbi.nlm.nih.gov/16997611/
+
+5. NISBETT AND WILSON: CONTENT IS NOT ACCESS TO ITS CAUSAL PRODUCTION
+Nisbett, R. E., & Wilson, T. D. (1977). Telling more than we can know: Verbal reports on mental processes. Psychological Review 84(3), 231–259.
+DOI: https://doi.org/10.1037/0033-295X.84.3.231
+Institutional PDF (search indexed; direct download blocked during this run): https://deepblue.lib.umich.edu/bitstream/handle/2027.42/92167/TellingMoreThanWeCanKnow.pdf
+Full original-paper mirror checked: https://gwern.net/doc/psychology/cognitive-bias/illusion-of-depth/1977-nisbett.pdf
+Type: critical review/theoretical argument with studies described; not one comprehensive experiment establishing universal inaccessibility.
+Checked: abstract, introduction, pp.255–256 on content versus process. Authors argue that causal explanations often use implicit causal theories rather than direct access to generating processes. They nevertheless allow private access to contents, intentions, attention, and personal history to improve reports relative to an outside observer.
+Supports: sincere introspective explanations can be mistaken; reporting a feeling differs from identifying what caused it. A further explanation can merely restate an intermediate content.
+Does not establish: all introspection is false, experiences are unreal, subjects have no informational advantage, or every causal explanation is confabulation. Their strong process-access thesis remains distinct from the narrower experimental dissociations.
+
+6. ERICSSON AND SIMON: VERBAL REPORTS AS FALLIBLE, MODELABLE DATA
+Ericsson, K. A., & Simon, H. A. (1980). Verbal reports as data. Psychological Review 87(3), 215–251.
+DOI: https://doi.org/10.1037/0033-295X.87.3.215
+Institution-hosted original PDF: https://acs.ist.psu.edu/ist597/papers/ericssonS80.pdf
+Author abstract indexed by ERIC: https://eric.ed.gov/?id=EJ231273
+Type: methodological theory and evidence review, not an empirical demonstration that every think-aloud protocol is valid.
+Access: PDF downloaded but image-only extraction; author abstract verified in ERIC and original-text excerpts indexed online. Do not claim full-text audit.
+Core proposal: model how reports are produced, including instructions and task demands. Concurrent reports of attended short-term-memory contents differ from requests for explanations requiring additional interpretation. Reporting can change processing when instructions require attention to material not otherwise attended.
+Supports: report validity is conditional on mechanism and procedure, and can be tested; study the observation channel rather than presuming it transparent.
+Does not establish: reports are complete, universally nonreactive, or direct readouts of hidden causes. Their account qualifies blanket skepticism without supplying infallible introspection.
+
+EMPIRICAL AND MEASUREMENT ANCHORS
+
+A. Direct example of monitoring failing to track a changed target:
+Jameson, K. A., Narens, L., Goldfarb, K., & Nelson, T. O. (1990). The influence of near-threshold priming on metamemory and recall. Acta Psychologica 73, 55–68.
+DOI: https://doi.org/10.1016/0001-6918(90)90058-N
+Author original PDF: https://sites.socsci.uci.edu/~lnarens/1990/JamesonNarensGoldfarbNelson_Acta_Psychologica_1990.pdf
+Checked abstract: near-threshold answer primes improved recall of previously nonrecalled items without being detected in feeling-of-knowing judgments. This is a concrete experimental counterexample to assuming that a monitor automatically tracks every useful change in the target. It does not show monitors never help.
+
+B. Measurement:
+Maniscalco, B., & Lau, H. (2012). A signal detection theoretic approach for estimating metacognitive sensitivity from confidence ratings. Consciousness and Cognition 21(1), 422–430.
+DOI: https://doi.org/10.1016/j.concog.2011.09.021
+Author corrected PDF: https://brianmaniscalco.org/wp-content/uploads/2018/10/Maniscalco-Lau-2012-Consc-Cog-corrected.pdf
+Publisher original: https://www.sciencedirect.com/science/article/pii/S1053810011002303
+Type: original formal measurement method with a visual-task application; abstract and introductory text checked. Meta-d' expresses confidence-based discrimination of correct versus incorrect responses in the same signal-detection units as task d'. Simple confidence–accuracy correlations can conflate sensitivity and response bias. Compare meta-d' to d' while checking model assumptions; a metric is not an anatomical or consciousness theory.
+
+Useful methodological review, clearly labeled as such:
+Fleming, S. M., & Lau, H. (2014). How to measure metacognition. Frontiers in Human Neuroscience 8, 443.
+DOI: https://doi.org/10.3389/fnhum.2014.00443
+Full text checked: https://pmc.ncbi.nlm.nih.gov/articles/PMC4097944/
+Separate bias (general confidence tendency), sensitivity (confidence separates correct/error trials), and efficiency (sensitivity relative to task performance, e.g. meta-d'/d'). Use calibrated probability judgments if numerical calibration is wanted. A Brier score evaluates squared probability error; calibration curves ask whether reported probabilities match observed frequencies. Meta-d' does not identify the cause of an impairment. The ratio can behave poorly near d'=0. AUROC2 alone can change with task accuracy and decision bias. None of these metrics measures wisdom.
+
+C. Illustrative contested causal evidence; do not present as resolved:
+Bor, D., Schwartzman, D. J., Barrett, A. B., & Seth, A. K. (2017). Theta-burst transcranial magnetic stimulation to the prefrontal or parietal cortex does not impair metacognitive visual awareness. PLOS ONE 12, e0171793.
+DOI/full text: https://doi.org/10.1371/journal.pone.0171793
+https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0171793
+Two experiments reported null replication/extension results for a prior prefrontal stimulation impairment result; original study design differed in several respects.
+Ruby, E., Maniscalco, B., & Peters, M. A. K. (2018). On a 'failed' attempt to manipulate visual metacognition with transcranial magnetic stimulation to prefrontal cortex. Consciousness and Cognition 62, 34–41.
+DOI: https://doi.org/10.1016/j.concog.2018.04.009
+Full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC5964034/
+Reanalysis/simulation disputes participant exclusions, power, and inference from those nulls. The disagreement illustrates that an operational metacognitive measure and its causal manipulation require design-sensitive interpretation. Neither paper by itself adjudicates all HOT versus first-order theories.
+
+SYNTHESIS AND OPERATIONAL NEXT TEST (OUR PROPOSED RESEARCH DESIGN)
+
+Do not collapse the following pairs: monitoring/control; state report/causal explanation; neural recurrence/semantic meta-order; confidence/accuracy; accurate monitoring/effective regulation; metacognition/consciousness. Logical levels can index what a representation is about without implying new tissue or a permanently allocated mechanism at each level. Whether an actual system reuses resources is an implementation question.
+
+An economical next test is an instrumented agent task, before making human psychological claims. Give an agent an initial noisy state estimate, a forecast of the estimate's error, and a bounded opportunity to revise that forecast. Randomize whether reflection adds independent evidence, merely reformats existing evidence, or injects correlated noise. Factor reflection apart from control: in a monitor-only condition the extra estimate is logged; in a regulation condition it may change the action. Fix compute/time budgets or report costs explicitly. Log full causal state so prediction accuracy has an external criterion. Compare state-estimation error, probability calibration, action loss, resource use, and recovery after an induced bias. Model-of-model output must predict an identifiable property of the first model, rather than merely repeat its answer.
+
+Predeclare improvement as reduced held-out task loss including a chosen resource cost; this is a normative evaluation criterion, not a discovered moral law. Preserve multiple outcomes because a reflection may improve calibration while worsening speed or control. Extra depth with unchanged information should not be credited as evidence acquisition; it can still reorganize computation or expose inconsistencies. Stop rules can compare estimated marginal benefit to declared cost, with hard budget termination as a fallback. No result in this map proves a universal depth optimum, ethical legitimacy, or a consciousness criterion.
+
+FILES AND ACCESS RECORD
+work/metacognition-source-snapshots contains downloaded original PDFs and available text extractions for Nelson–Narens, Ericsson–Simon, and Lamme with commentaries. Ericsson–Simon text extraction contains page markers only; full-text audit was not claimed. source-urls.txt also records attempted URLs for unavailable snapshots. Some PMC requests alternated between readable full text and an access challenge; the readable outputs described above were actually inspected. No modifications to /Users/ren/theories were made.

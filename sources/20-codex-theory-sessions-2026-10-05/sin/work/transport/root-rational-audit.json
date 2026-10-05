@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "target_object_engine_exact_weighted_paths": 6912,
+  "same_exact_rates_as_independent_queue_certificate": true,
+  "regimes": [
+    {
+      "regime": "reserved_control",
+      "exact_rates": [
+        "969/3200",
+        "969/1600",
+        "323/800",
+        "323/400"
+      ],
+      "determinant": "0"
+    },
+    {
+      "regime": "shared_fifo",
+      "exact_rates": [
+        "13306631/102400000",
+        "33778371/102400000",
+        "202883083/1024000000",
+        "681853/1280000"
+      ],
+      "determinant": "405472966596607/104857600000000000"
+    },
+    {
+      "regime": "urgent_fifo",
+      "exact_rates": [
+        "4180589/102400000",
+        "4180589/102400000",
+        "2873731/51200000",
+        "8077261/51200000"
+      ],
+      "determinant": "2175382027917/524288000000000"
+    }
+  ]
+}

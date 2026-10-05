@@ -1,0 +1,2337 @@
+{
+  "phase": "evaluation",
+  "n_seeds": 256,
+  "rows": 7168,
+  "inputs_sha256": {
+    "experiment.py": "9415c6926b01005a4adece62cf53089951c7ab52b458d86b5d74bea23b24c9ff",
+    "PROTOCOL.md": "636d375dd332c9f65f0787aef6bf5c83799c14e22b70b839c7d0351ab3cb4aca",
+    "test_experiment.py": "ae7c60b8c03566ff22a648e817e0b556b6fc043e64c8d4ad9124a0f12bd77948"
+  },
+  "checks": "cash balance, no confirmation reuse, no truth in nomination, paired pre-gate evidence, stage gates, retention",
+  "summary": [
+    {
+      "hazard": true,
+      "arm": "protected",
+      "n": 256,
+      "timely_validation": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "timely_enactment": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "failures": {
+        "mean": 661.703125,
+        "se": 1.4834330086374632
+      },
+      "action_cost": {
+        "mean": 429.0458984375,
+        "se": 0.5479483261750863
+      },
+      "inquiry_overhead": {
+        "mean": 10.97,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 1101.7190234374998,
+        "se": 1.5612767871602065
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.125,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 256,
+      "validation_block_mean_if_any": 14.42578125,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 846.7106640625002,
+        "se": 1.7192193289122462
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "return_funded",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 1906.32421875,
+        "se": 2.5139198561110896
+      },
+      "action_cost": {
+        "mean": 14.0673828125,
+        "se": 0.007729481935963855
+      },
+      "inquiry_overhead": {
+        "mean": 8.815214843749917,
+        "se": 0.006358992281558228
+      },
+      "total_realized_loss": {
+        "mean": 1929.20681640625,
+        "se": 2.513656369770448
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 112.34765625,
+        "se": 0.4239328187705325
+      },
+      "completed_trials": {
+        "mean": 112.34765625,
+        "se": 0.4239328187705325
+      },
+      "completed_attempts": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 19.222871093750065,
+        "se": 0.2046614240143124
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 1.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "short_records",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 1948.4296875,
+        "se": 2.506446145248048
+      },
+      "action_cost": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "inquiry_overhead": {
+        "mean": 81.920000000005,
+        "se": 0.0
+      },
+      "total_realized_loss": {
+        "mean": 2030.3496875000053,
+        "se": 2.506446145248048
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -81.92000000000507,
+        "se": 0.0
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 1.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "frozen_model",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 1924.1875,
+        "se": 2.492817500968985
+      },
+      "action_cost": {
+        "mean": 32.0,
+        "se": 0.0
+      },
+      "inquiry_overhead": {
+        "mean": 10.249999999999961,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 1966.4375,
+        "se": 2.492817500968985
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -18.0078125,
+        "se": 0.2762278841460062
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 1.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "no_standing",
+      "n": 256,
+      "timely_validation": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "failures": {
+        "mean": 1852.5078125,
+        "se": 2.467279701086106
+      },
+      "action_cost": {
+        "mean": 32.0,
+        "se": 0.0
+      },
+      "inquiry_overhead": {
+        "mean": 10.97,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 1895.4778125000005,
+        "se": 2.467279701086106
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.125,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 256,
+      "validation_block_mean_if_any": 14.42578125,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 52.95187499999997,
+        "se": 0.30125446207337353
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "no_authority",
+      "n": 256,
+      "timely_validation": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "failures": {
+        "mean": 1852.5078125,
+        "se": 2.467279701086106
+      },
+      "action_cost": {
+        "mean": 32.0,
+        "se": 0.0
+      },
+      "inquiry_overhead": {
+        "mean": 10.97,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 1895.4778125000005,
+        "se": 2.467279701086106
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.125,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 256,
+      "validation_block_mean_if_any": 14.42578125,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 52.95187499999997,
+        "se": 0.30125446207337353
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "no_inquiry",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 1948.4296875,
+        "se": 2.506446145248048
+      },
+      "action_cost": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "inquiry_overhead": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "total_realized_loss": {
+        "mean": 1948.4296875,
+        "se": 2.506446145248048
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 1.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "temporary_rescue",
+      "n": 256,
+      "timely_validation": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "timely_enactment": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "failures": {
+        "mean": 782.32421875,
+        "se": 1.6653644875170526
+      },
+      "action_cost": {
+        "mean": 388.9697265625,
+        "se": 0.5300477006498046
+      },
+      "inquiry_overhead": {
+        "mean": 10.97,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 1182.2639453125,
+        "se": 1.6995600647020213
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.125,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 256,
+      "validation_block_mean_if_any": 19.43359375,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 766.1657421875001,
+        "se": 1.6311392816972181
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "renewal_0.800",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "failures": {
+        "mean": 1492.765625,
+        "se": 2.226579968541726
+      },
+      "action_cost": {
+        "mean": 152.265625,
+        "se": 0.275692296484117
+      },
+      "inquiry_overhead": {
+        "mean": 10.97,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 1656.0012500000003,
+        "se": 2.2587808642378433
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.125,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 256,
+      "validation_block_mean_if_any": 49.0,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 292.42843749999986,
+        "se": 0.8612194722580568
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 1.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "renewal_0.810",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "failures": {
+        "mean": 1107.58203125,
+        "se": 1.9388960709681626
+      },
+      "action_cost": {
+        "mean": 280.3056640625,
+        "se": 0.427227874042537
+      },
+      "inquiry_overhead": {
+        "mean": 10.97,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 1398.8576953125,
+        "se": 1.9599049821133943
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.125,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 256,
+      "validation_block_mean_if_any": 33.0,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 549.5719921874999,
+        "se": 1.345428221771227
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 1.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "renewal_0.815",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "failures": {
+        "mean": 915.1328125,
+        "se": 1.8172962418781604
+      },
+      "action_cost": {
+        "mean": 344.4814453125,
+        "se": 0.466971288093511
+      },
+      "inquiry_overhead": {
+        "mean": 10.97,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 1270.5842578125,
+        "se": 1.8446412579113733
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.125,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 256,
+      "validation_block_mean_if_any": 25.0,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 677.8454296875,
+        "se": 1.4767147754644345
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 1.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "renewal_0.816",
+      "n": 256,
+      "timely_validation": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "timely_enactment": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "failures": {
+        "mean": 866.75390625,
+        "se": 1.7586946826354592
+      },
+      "action_cost": {
+        "mean": 360.5869140625,
+        "se": 0.4757625564739273
+      },
+      "inquiry_overhead": {
+        "mean": 10.97,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 1238.3108203125,
+        "se": 1.797610733552508
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.125,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 256,
+      "validation_block_mean_if_any": 23.0,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 710.1188671875001,
+        "se": 1.4632722255892192
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "renewal_0.820",
+      "n": 256,
+      "timely_validation": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "timely_enactment": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "failures": {
+        "mean": 771.55078125,
+        "se": 1.6647998422523134
+      },
+      "action_cost": {
+        "mean": 392.453125,
+        "se": 0.4794519744166863
+      },
+      "inquiry_overhead": {
+        "mean": 10.97,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 1174.9739062499998,
+        "se": 1.7236760784004188
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.125,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 256,
+      "validation_block_mean_if_any": 19.0,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 773.4557812500001,
+        "se": 1.5205185672305153
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": true,
+      "arm": "renewal_0.900",
+      "n": 256,
+      "timely_validation": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "timely_enactment": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 256,
+        "rate": 1.0,
+        "wilson95": [
+          0.9852161435741286,
+          0.9999999999999999
+        ]
+      },
+      "failures": {
+        "mean": 661.703125,
+        "se": 1.4834330086374632
+      },
+      "action_cost": {
+        "mean": 429.0458984375,
+        "se": 0.5479483261750863
+      },
+      "inquiry_overhead": {
+        "mean": 10.97,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 1101.7190234374998,
+        "se": 1.5612767871602065
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.125,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 256,
+      "validation_block_mean_if_any": 14.42578125,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 846.7106640625002,
+        "se": 1.7192193289122462
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "protected",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 128.0,
+        "se": 0.0
+      },
+      "inquiry_overhead": {
+        "mean": 22.490000000000446,
+        "se": 4.449591209870715e-16
+      },
+      "total_realized_loss": {
+        "mean": 560.8532812500006,
+        "se": 1.2028816429697975
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 1024.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 1024.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 4.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -150.49000000000046,
+        "se": 0.0
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "return_funded",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 14.0673828125,
+        "se": 0.007729481935963855
+      },
+      "inquiry_overhead": {
+        "mean": 8.815214843749917,
+        "se": 0.006358992281558228
+      },
+      "total_realized_loss": {
+        "mean": 433.2458789062499,
+        "se": 1.202911326373791
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 112.34765625,
+        "se": 0.4239328187705325
+      },
+      "completed_trials": {
+        "mean": 112.34765625,
+        "se": 0.4239328187705325
+      },
+      "completed_attempts": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -22.882597656249924,
+        "se": 0.004958386202027571
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "short_records",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "inquiry_overhead": {
+        "mean": 81.920000000005,
+        "se": 0.0
+      },
+      "total_realized_loss": {
+        "mean": 492.28328125000485,
+        "se": 1.2028816429697966
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -81.92000000000502,
+        "se": 1.4924382626034676e-15
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "frozen_model",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 32.0,
+        "se": 0.0
+      },
+      "inquiry_overhead": {
+        "mean": 10.249999999999961,
+        "se": 1.1123978024676787e-16
+      },
+      "total_realized_loss": {
+        "mean": 452.61328124999994,
+        "se": 1.2028816429697975
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 256.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -42.24999999999996,
+        "se": 8.89918241974143e-16
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "no_standing",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 128.0,
+        "se": 0.0
+      },
+      "inquiry_overhead": {
+        "mean": 22.490000000000446,
+        "se": 4.449591209870715e-16
+      },
+      "total_realized_loss": {
+        "mean": 560.8532812500006,
+        "se": 1.2028816429697975
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 1024.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 1024.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 4.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -150.49000000000046,
+        "se": 0.0
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "no_authority",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 128.0,
+        "se": 0.0
+      },
+      "inquiry_overhead": {
+        "mean": 22.490000000000446,
+        "se": 4.449591209870715e-16
+      },
+      "total_realized_loss": {
+        "mean": 560.8532812500006,
+        "se": 1.2028816429697975
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 1024.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 1024.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 4.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -150.49000000000046,
+        "se": 0.0
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "no_inquiry",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "inquiry_overhead": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "total_realized_loss": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "completed_trials": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "completed_attempts": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "temporary_rescue",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 126.5185546875,
+        "se": 0.0041037502918611374
+      },
+      "inquiry_overhead": {
+        "mean": 22.314628906250434,
+        "se": 0.0026088137343822275
+      },
+      "total_realized_loss": {
+        "mean": 559.1964648437504,
+        "se": 1.2029558378383105
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 1012.30859375,
+        "se": 0.17392091562547524
+      },
+      "completed_trials": {
+        "mean": 1012.30859375,
+        "se": 0.17392091562547524
+      },
+      "completed_attempts": {
+        "mean": 3.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -148.83318359375045,
+        "se": 0.003489041780689454
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "renewal_0.800",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 33.7451171875,
+        "se": 0.002166465692419513
+      },
+      "inquiry_overhead": {
+        "mean": 11.19125000000001,
+        "se": 0.0031994800818443024
+      },
+      "total_realized_loss": {
+        "mean": 455.29964843749997,
+        "se": 1.2031492282915672
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 270.75,
+        "se": 0.2132986721229454
+      },
+      "completed_trials": {
+        "mean": 270.75,
+        "se": 0.2132986721229454
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -44.93636718750001,
+        "se": 0.003210285926328728
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "renewal_0.810",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 35.4736328125,
+        "se": 0.0048087209576343215
+      },
+      "inquiry_overhead": {
+        "mean": 11.398203125000018,
+        "se": 0.004455446376367392
+      },
+      "total_realized_loss": {
+        "mean": 457.2351171875,
+        "se": 1.2028190309725213
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 284.546875,
+        "se": 0.2970297584244816
+      },
+      "completed_trials": {
+        "mean": 284.546875,
+        "se": 0.2970297584244816
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -46.87183593750002,
+        "se": 0.00428502920963627
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "renewal_0.815",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 36.4072265625,
+        "se": 0.00756318448062553
+      },
+      "inquiry_overhead": {
+        "mean": 11.510703125000022,
+        "se": 0.00470014379326754
+      },
+      "total_realized_loss": {
+        "mean": 458.2812109375,
+        "se": 1.2028540379534227
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 292.046875,
+        "se": 0.31334291955115745
+      },
+      "completed_trials": {
+        "mean": 292.046875,
+        "se": 0.31334291955115745
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -47.91792968750002,
+        "se": 0.00510258238874503
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "renewal_0.816",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 36.5888671875,
+        "se": 0.007867596391763222
+      },
+      "inquiry_overhead": {
+        "mean": 11.532207031250024,
+        "se": 0.004887252117704568
+      },
+      "total_realized_loss": {
+        "mean": 458.48435546875,
+        "se": 1.2028036852491613
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 293.48046875,
+        "se": 0.3258168078469589
+      },
+      "completed_trials": {
+        "mean": 293.48046875,
+        "se": 0.3258168078469589
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -48.121074218750024,
+        "se": 0.005304859831759436
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "renewal_0.820",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 37.3916015625,
+        "se": 0.007758458539683929
+      },
+      "inquiry_overhead": {
+        "mean": 11.627890625000028,
+        "se": 0.004918547544697557
+      },
+      "total_realized_loss": {
+        "mean": 459.3827734375,
+        "se": 1.2036790863835896
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 299.859375,
+        "se": 0.32790316964649135
+      },
+      "completed_trials": {
+        "mean": 299.859375,
+        "se": 0.32790316964649135
+      },
+      "completed_attempts": {
+        "mean": 1.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -49.019492187500035,
+        "se": 0.005048984901458458
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    },
+    {
+      "hazard": false,
+      "arm": "renewal_0.900",
+      "n": 256,
+      "timely_validation": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "timely_enactment": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "false_acceptance": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "exact_predicate_recovered": {
+        "count": 0,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.01478385642587143
+        ]
+      },
+      "failures": {
+        "mean": 410.36328125,
+        "se": 1.2028816429697975
+      },
+      "action_cost": {
+        "mean": 66.53515625,
+        "se": 0.005615588190845788
+      },
+      "inquiry_overhead": {
+        "mean": 15.124179687500162,
+        "se": 0.0034975869972796287
+      },
+      "total_realized_loss": {
+        "mean": 492.02261718750015,
+        "se": 1.202225044084953
+      },
+      "true_selected_policy_gain": {
+        "mean": 0.0,
+        "se": 0.0
+      },
+      "initiated_trials": {
+        "mean": 532.9453125,
+        "se": 0.23317246648529974
+      },
+      "completed_trials": {
+        "mean": 532.9453125,
+        "se": 0.23317246648529974
+      },
+      "completed_attempts": {
+        "mean": 2.0,
+        "se": 0.0
+      },
+      "mature_discovery_records": {
+        "mean": 640.0,
+        "se": 0.0
+      },
+      "ever_validated": 0,
+      "validation_block_mean_if_any": null,
+      "loss_reduction_vs_no_inquiry": {
+        "mean": -81.65933593750016,
+        "se": 0.004756537537647114
+      },
+      "protected_minus_arm_timely_validation": {
+        "mean": 0.0,
+        "se": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "AGENTS.md",
+    "snapshot": "work/cross-session-completeness/source-snapshots/AGENTS.md",
+    "sha256": "856353c7e39937cc7a1d83fd825ff3636d32439c8618d66e8dad1aaa5e4bafca"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "formal/SSBX/Foundation/R/CayleyKernel.lean",
+    "snapshot": "work/cross-session-completeness/source-snapshots/CayleyKernel.lean",
+    "sha256": "81b813530ac97393e2c914d610989c248c2868ab336daf86bbb6f4c146f19b87"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "formal/SSBX/Foundation/Doctrine/T_GUT.lean",
+    "snapshot": "work/cross-session-completeness/source-snapshots/T_GUT.lean",
+    "sha256": "cba6cdd4f7146dcf75091eada0d09329e0586163fbfe6fcb6300eda142d566dd"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "formal/SSBX/Foundation/Closure/PhiOperator.lean",
+    "snapshot": "work/cross-session-completeness/source-snapshots/PhiOperator.lean",
+    "sha256": "75292e115cf526ec42c2ec96102c3902c05999ba5cce5b0fc3624bbf09011394"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "formal/SSBX/Foundation/Doctrine/FullGUTFrontier.lean",
+    "snapshot": "work/cross-session-completeness/source-snapshots/FullGUTFrontier.lean",
+    "sha256": "df7386a8440ec8227adfbadc14cb82695933c5be7c3dd5de03bb7f0879ccf964"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "formal/SSBX/Foundation/Enriched/Power.lean",
+    "snapshot": "work/cross-session-completeness/source-snapshots/Power.lean",
+    "sha256": "434ec5f248c5cabac3acac8e471eaf52527663727dee0a33d749eb7ef55c123f"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "formal/SSBX/Foundation/Enriched/Monad.lean",
+    "snapshot": "work/cross-session-completeness/source-snapshots/Monad.lean",
+    "sha256": "89b53e803b66d268369de3bdb84ae12b0bbcdc23c13901aa4dae457a843d9de6"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "formal/SSBX/Foundation/Enriched/NatTrans.lean",
+    "snapshot": "work/cross-session-completeness/source-snapshots/NatTrans.lean",
+    "sha256": "472b9f2eaace099b154237021fc3311f9c73f2d36db4cbb3c20f3a8ef1395be3"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "formal/SSBX/Foundation/Enriched/Yoneda.lean",
+    "snapshot": "work/cross-session-completeness/source-snapshots/Yoneda.lean",
+    "sha256": "66346ece4110d7c93e68c6df363679217e36df86327141420745ec7f078aa3e3"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "formal/SSBX/Foundation/Doctrine/FullGUTNativeFrontier.lean",
+    "snapshot": "work/cross-session-completeness/source-snapshots/FullGUTNativeFrontier.lean",
+    "sha256": "7f3950e1311b1be918c6a70a9e60805215f502ec9b3bb6d5d7b7aa485748956a"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "formal/SSBX/Foundation/Doctrine/Instance/SemanticWitnessFrontier.lean",
+    "snapshot": "work/cross-session-completeness/source-snapshots/SemanticWitnessFrontier.lean",
+    "sha256": "1714fb954f27170cbeeb6d300a6c1fe9e35403b514af45f5b1bfbf9ab1c131fa"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "docs-next/10_formal_形式/claim-status-ledger.md",
+    "snapshot": "work/cross-session-completeness/source-snapshots/claim-status-ledger.md",
+    "sha256": "6a7b33a057497afcba31533693a3e775efae594b2e39968112975325c954b200"
+  },
+  {
+    "ref": "main",
+    "commit": "7e6361236a658016ddb5c386a0bdf8338d93ea17",
+    "source": "docs-next/10_formal_形式/phase-1-4-scaffolding-handoff.md",
+    "snapshot": "work/cross-session-completeness/source-snapshots/phase-1-4-scaffolding-handoff.md",
+    "sha256": "613ecfee4d80ea33d14a0b226e9d86fa74136613b7b506eff7875b1f3669e826"
+  }
+]

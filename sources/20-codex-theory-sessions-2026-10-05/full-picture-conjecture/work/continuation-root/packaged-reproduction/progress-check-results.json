@@ -1,0 +1,33 @@
+{
+  "scope": "Finite fully observed nondeterministic games; sure safe B\u00fcchi; empty actions unavailable",
+  "exhaustive_two_state_two_action_cases": 2304,
+  "two_state_class_details": {
+    "plants": 256,
+    "safe_target_pairs_per_plant": 9,
+    "state_verdicts": 4608,
+    "policies_per_case": 4,
+    "policy_enumerations": 9216
+  },
+  "exhaustive_two_safe_states_plus_unsafe_sink_cases": 9604,
+  "sink_class_details": {
+    "plants": 2401,
+    "target_sets_per_plant": 4,
+    "state_verdicts": 28812,
+    "policies_per_case": 4,
+    "policy_enumerations": 38416
+  },
+  "seeded_three_to_six_state_cases": 500,
+  "sampled_details": {
+    "seed": 20261005,
+    "cases_per_size": 125,
+    "state_verdicts": 2250,
+    "policy_enumerations": 15000
+  },
+  "named_examples": 4,
+  "checks": [
+    "fixed point equals exhaustive positional-policy cycle oracle",
+    "guarded and unguarded formulas agree",
+    "rank controller certificate"
+  ],
+  "failures": 0
+}

@@ -1,0 +1,12 @@
+{
+  "backward_joins_verified": 342,
+  "estimate_exact": "-1/342",
+  "interval": [
+    -0.10603738387650027,
+    0.100189430660126
+  ],
+  "max_difference": 1.3877787807814457e-17,
+  "input_hashes_match": true,
+  "checker_sha256": "8bfe5ac6f789f7e68aa356f6c5403a9c3285e6ac5bd9a6b1c8947c789ffb88e3",
+  "limitation": "The documented independent role reassignment assumption cannot be verified from endpoint records alone."
+}

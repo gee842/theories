@@ -1,0 +1,8 @@
+{
+  "sha256": {
+    "test_model.py": "413ecd15a259b4d1da18e33651147bdfd37cc49ccf8d5d1bc4113e1c3f6a92d6",
+    "TESTS.txt": "a18fff36ce048b57e67d4352da44383d08eedd7cdaf48e7ef1a97525b28c4583",
+    "checks.json": "57d0decca212c2a65e2453fbd7f10998b876adbd757a12c73ae42c8d999da479"
+  },
+  "tested_model_sha256": "96a923ef4ae391e2f717c77a8f07fd2cd8fe91f4258c560b221ccb1fff79e7eb"
+}

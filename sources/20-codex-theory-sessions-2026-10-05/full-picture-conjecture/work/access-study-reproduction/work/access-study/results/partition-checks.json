@@ -1,0 +1,1703 @@
+[
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "barred",
+    "probe": "failure",
+    "minimum": "17/100000",
+    "maximum": "1/10",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "barred",
+    "probe": "recovery",
+    "minimum": "17/100000",
+    "maximum": "1/10",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "barred",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "barred",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "barred",
+    "probe": "failure_expense",
+    "minimum": "422553/250000",
+    "maximum": "422553/250000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "barred",
+    "probe": "failure_expense_burden",
+    "minimum": "499053/250000",
+    "maximum": "499053/250000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "barred",
+    "probe": "mixed",
+    "minimum": "202663/125000",
+    "maximum": "202663/125000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "failure",
+    "minimum": "17/100000",
+    "maximum": "17/100000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "recovery",
+    "minimum": "17/100000",
+    "maximum": "17/100000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "failure_expense",
+    "minimum": "422553/250000",
+    "maximum": "422553/250000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "failure_expense_burden",
+    "minimum": "499053/250000",
+    "maximum": "499053/250000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "mixed",
+    "minimum": "202663/125000",
+    "maximum": "202663/125000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "failure",
+    "minimum": "17/100000",
+    "maximum": "1/10",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "recovery",
+    "minimum": "17/100000",
+    "maximum": "1/10",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "failure_expense",
+    "minimum": "422553/250000",
+    "maximum": "422553/250000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "failure_expense_burden",
+    "minimum": "499053/250000",
+    "maximum": "499053/250000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "mixed",
+    "minimum": "202663/125000",
+    "maximum": "202663/125000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "failure",
+    "minimum": "17/100000",
+    "maximum": "9/20",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "recovery",
+    "minimum": "17/100000",
+    "maximum": "9/20",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "failure_expense",
+    "minimum": "69129/20000",
+    "maximum": "1472553/250000",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "failure_expense_burden",
+    "minimum": "552411/100000",
+    "maximum": "1515053/250000",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "mixed",
+    "minimum": "4203919/1000000",
+    "maximum": "2150217/500000",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "failure",
+    "minimum": "17/100000",
+    "maximum": "17/100000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "recovery",
+    "minimum": "17/100000",
+    "maximum": "17/100000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "failure_expense",
+    "minimum": "69129/20000",
+    "maximum": "69129/20000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "failure_expense_burden",
+    "minimum": "552411/100000",
+    "maximum": "552411/100000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "mixed",
+    "minimum": "4203919/1000000",
+    "maximum": "4203919/1000000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "failure",
+    "minimum": "17/100000",
+    "maximum": "9/20",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "recovery",
+    "minimum": "17/100000",
+    "maximum": "9/20",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "failure_expense",
+    "minimum": "69129/20000",
+    "maximum": "1472553/250000",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "failure_expense_burden",
+    "minimum": "552411/100000",
+    "maximum": "1515053/250000",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "mixed",
+    "minimum": "4203919/1000000",
+    "maximum": "2150217/500000",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "barred",
+    "probe": "failure",
+    "minimum": "17/100000",
+    "maximum": "4/5",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "barred",
+    "probe": "recovery",
+    "minimum": "17/100000",
+    "maximum": "4/5",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "barred",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "barred",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "barred",
+    "probe": "failure_expense",
+    "minimum": "69129/20000",
+    "maximum": "2522553/250000",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "barred",
+    "probe": "failure_expense_burden",
+    "minimum": "352411/100000",
+    "maximum": "2531053/250000",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "barred",
+    "probe": "mixed",
+    "minimum": "3703919/1000000",
+    "maximum": "1744891/250000",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "failure",
+    "minimum": "17/100000",
+    "maximum": "17/100000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "recovery",
+    "minimum": "17/100000",
+    "maximum": "17/100000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "failure_expense",
+    "minimum": "69129/20000",
+    "maximum": "69129/20000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "failure_expense_burden",
+    "minimum": "352411/100000",
+    "maximum": "352411/100000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "mixed",
+    "minimum": "3703919/1000000",
+    "maximum": "3703919/1000000",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "failure",
+    "minimum": "17/100000",
+    "maximum": "4/5",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "recovery",
+    "minimum": "17/100000",
+    "maximum": "4/5",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "failure_expense",
+    "minimum": "69129/20000",
+    "maximum": "2522553/250000",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "failure_expense_burden",
+    "minimum": "352411/100000",
+    "maximum": "2531053/250000",
+    "different": true
+  },
+  {
+    "stock": 1,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "mixed",
+    "minimum": "3703919/1000000",
+    "maximum": "1744891/250000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "barred",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "17/1000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "barred",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "17/1000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "barred",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "barred",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "barred",
+    "probe": "failure_expense",
+    "minimum": "9129/20000",
+    "maximum": "9129/20000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "barred",
+    "probe": "failure_expense_burden",
+    "minimum": "52411/100000",
+    "maximum": "52411/100000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "barred",
+    "probe": "mixed",
+    "minimum": "703919/1000000",
+    "maximum": "703919/1000000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "failure_expense",
+    "minimum": "9129/20000",
+    "maximum": "9129/20000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "failure_expense_burden",
+    "minimum": "52411/100000",
+    "maximum": "52411/100000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "mixed",
+    "minimum": "703919/1000000",
+    "maximum": "703919/1000000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "1/10000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "failure_expense",
+    "minimum": "9129/20000",
+    "maximum": "9129/20000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "failure_expense_burden",
+    "minimum": "52411/100000",
+    "maximum": "52411/100000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "mixed",
+    "minimum": "703919/1000000",
+    "maximum": "703919/1000000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "629/2000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "629/2000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "failure_expense",
+    "minimum": "6879/4000",
+    "maximum": "8517/2000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "failure_expense_burden",
+    "minimum": "201273/100000",
+    "maximum": "216223/50000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "mixed",
+    "minimum": "2129051/1000000",
+    "maximum": "814929/250000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "failure_expense",
+    "minimum": "6879/4000",
+    "maximum": "6879/4000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "failure_expense_burden",
+    "minimum": "201273/100000",
+    "maximum": "201273/100000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "mixed",
+    "minimum": "2129051/1000000",
+    "maximum": "2129051/1000000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "9/20000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "failure_expense",
+    "minimum": "6879/4000",
+    "maximum": "6879/4000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "failure_expense_burden",
+    "minimum": "201273/100000",
+    "maximum": "201273/100000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "mixed",
+    "minimum": "2129051/1000000",
+    "maximum": "2129051/1000000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "barred",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "153/250",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "barred",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "153/250",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "barred",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "barred",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "barred",
+    "probe": "failure_expense",
+    "minimum": "58251/20000",
+    "maximum": "161211/20000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "barred",
+    "probe": "failure_expense_burden",
+    "minimum": "309873/100000",
+    "maximum": "812481/100000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "barred",
+    "probe": "mixed",
+    "minimum": "3311811/1000000",
+    "maximum": "5815411/1000000",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "failure_expense",
+    "minimum": "58251/20000",
+    "maximum": "58251/20000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "failure_expense_burden",
+    "minimum": "309873/100000",
+    "maximum": "309873/100000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "mixed",
+    "minimum": "3311811/1000000",
+    "maximum": "3311811/1000000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "1/1250",
+    "different": true
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "failure_expense",
+    "minimum": "58251/20000",
+    "maximum": "58251/20000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "failure_expense_burden",
+    "minimum": "309873/100000",
+    "maximum": "309873/100000",
+    "different": false
+  },
+  {
+    "stock": 2,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "mixed",
+    "minimum": "3311811/1000000",
+    "maximum": "3311811/1000000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "barred",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "barred",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "barred",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "barred",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "barred",
+    "probe": "failure_expense",
+    "minimum": "130509/500000",
+    "maximum": "130509/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "barred",
+    "probe": "failure_expense_burden",
+    "minimum": "167399/500000",
+    "maximum": "167399/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "barred",
+    "probe": "mixed",
+    "minimum": "600287/1000000",
+    "maximum": "600287/1000000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "failure_expense",
+    "minimum": "130509/500000",
+    "maximum": "130509/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "failure_expense_burden",
+    "minimum": "167399/500000",
+    "maximum": "167399/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "immediate",
+    "probe": "mixed",
+    "minimum": "600287/1000000",
+    "maximum": "600287/1000000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "failure_expense",
+    "minimum": "130509/500000",
+    "maximum": "130509/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "failure_expense_burden",
+    "minimum": "167399/500000",
+    "maximum": "167399/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "0",
+    "access": "delayed",
+    "probe": "mixed",
+    "minimum": "600287/1000000",
+    "maximum": "600287/1000000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "failure_expense",
+    "minimum": "160701/125000",
+    "maximum": "160701/125000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "failure_expense_burden",
+    "minimum": "350897/250000",
+    "maximum": "350897/250000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "barred",
+    "probe": "mixed",
+    "minimum": "1706137/1000000",
+    "maximum": "1706137/1000000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "failure_expense",
+    "minimum": "160701/125000",
+    "maximum": "160701/125000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "failure_expense_burden",
+    "minimum": "350897/250000",
+    "maximum": "350897/250000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "immediate",
+    "probe": "mixed",
+    "minimum": "1706137/1000000",
+    "maximum": "1706137/1000000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "failure_expense",
+    "minimum": "160701/125000",
+    "maximum": "160701/125000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "failure_expense_burden",
+    "minimum": "350897/250000",
+    "maximum": "350897/250000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1/2",
+    "access": "delayed",
+    "probe": "mixed",
+    "minimum": "1706137/1000000",
+    "maximum": "1706137/1000000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "barred",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "barred",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "barred",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "barred",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "barred",
+    "probe": "failure_expense",
+    "minimum": "1155099/500000",
+    "maximum": "1155099/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "barred",
+    "probe": "failure_expense_burden",
+    "minimum": "1236189/500000",
+    "maximum": "1236189/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "barred",
+    "probe": "mixed",
+    "minimum": "2811987/1000000",
+    "maximum": "2811987/1000000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "failure_expense",
+    "minimum": "1155099/500000",
+    "maximum": "1155099/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "failure_expense_burden",
+    "minimum": "1236189/500000",
+    "maximum": "1236189/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "immediate",
+    "probe": "mixed",
+    "minimum": "2811987/1000000",
+    "maximum": "2811987/1000000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "failure",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "recovery",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "expense",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "burden",
+    "minimum": "0",
+    "maximum": "0",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "failure_expense",
+    "minimum": "1155099/500000",
+    "maximum": "1155099/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "failure_expense_burden",
+    "minimum": "1236189/500000",
+    "maximum": "1236189/500000",
+    "different": false
+  },
+  {
+    "stock": 3,
+    "belief": "1",
+    "access": "delayed",
+    "probe": "mixed",
+    "minimum": "2811987/1000000",
+    "maximum": "2811987/1000000",
+    "different": false
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "states_per_repair_model": 72,
+  "valid_transition_checks": 288,
+  "repair_witness": {
+    "beneficial": {
+      "initial_observation": [
+        1,
+        1
+      ],
+      "action": "repair",
+      "expense": 1,
+      "next_capacity": 2,
+      "next_cash": 0,
+      "failure": 0,
+      "target_capacity_2_met": 1
+    },
+    "ineffective": {
+      "initial_observation": [
+        1,
+        1
+      ],
+      "action": "repair",
+      "expense": 1,
+      "next_capacity": 1,
+      "next_cash": 0,
+      "failure": 0,
+      "target_capacity_2_met": 0
+    },
+    "harmful": {
+      "initial_observation": [
+        1,
+        1
+      ],
+      "action": "repair",
+      "expense": 1,
+      "next_capacity": 0,
+      "next_cash": 0,
+      "failure": 1,
+      "target_capacity_2_met": 0
+    }
+  },
+  "deterministic_plant_kernels": 16,
+  "carrier_projection_checks": 128,
+  "frozen_distinguishable_model_checked": true,
+  "scope": "Finite constructed countermodels; not empirical data or a Lean build."
+}

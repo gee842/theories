@@ -1,0 +1,44 @@
+{
+  "parameters": {
+    "raw": {},
+    "direct": {},
+    "retained": {
+      "alpha": 0.5
+    },
+    "audit": {
+      "slow": 0.2,
+      "fast": 1.0,
+      "threshold": 2.0
+    },
+    "joint": {
+      "q_b": 0.04
+    },
+    "joint_y_only": {
+      "q_b": 0.04
+    },
+    "flat": {
+      "alpha": 0.5
+    },
+    "repeat": {
+      "alpha": 0.5
+    }
+  },
+  "baselines": {
+    "matched": {
+      "selected": "joint_y_only",
+      "scores": {
+        "raw": 16.74205791045237,
+        "direct": 12.413297498018364,
+        "joint_y_only": 1.3276795502295118
+      }
+    },
+    "adaptive": {
+      "selected": "joint_y_only",
+      "scores": {
+        "raw": 16.503257910452366,
+        "direct": 14.49604154140689,
+        "joint_y_only": 1.0888795502295117
+      }
+    }
+  }
+}

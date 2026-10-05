@@ -1,0 +1,11 @@
+{
+  "files": {
+    "audit.py": "ef60bdd9c576aaeb826b495feac69ca2171f0552bb3a0996bdc38f8070ac1aaf",
+    "experiment.py": "5d3aac76bf60199772b008f691481c60cf5f75f65f181fe0bc7404651a7d5178",
+    "protocol.md": "39c85d7c4e8f829d1f120c48539c94adc0f760ccece9d1441b691cf51b032c2c",
+    "queue_model.py": "a9fe678619f850295054c3040f2a1d9a957a5e0faa472ddfc4127745bb9142a5",
+    "service.py": "3024e130d4d7bcd09b4deaf813f6baa99f7d75e3dbb5c272436319bafa56c11d"
+  },
+  "state": "before calibration and integrated target execution",
+  "utc": "2026-10-04T22:50:40.542143+00:00"
+}

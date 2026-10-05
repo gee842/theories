@@ -1,0 +1,62 @@
+{
+  "finite_tv_check": {
+    "laws": 35,
+    "tests": 19600,
+    "all_exact": true
+  },
+  "binomial_n20_p0_0.5_p1_0.8": {
+    "cutoff": 15,
+    "type_I": 0.020694732666015625,
+    "power": 0.8042077854595495,
+    "TV": 0.8556483372626779,
+    "minimum_equal_prior_risk": 0.07217583136866107,
+    "all_finite_sequences_positive_probability": true
+  },
+  "fresh_independent_100_exact_0.05_tests_FWER": 0.994079470779666,
+  "optional_peeking": {
+    "ordinary_fixed_time_tests_null_crossing": {
+      "20": 0.0986785888671875,
+      "50": 0.1578822453198061,
+      "100": 0.20205809786793333,
+      "200": 0.24462730236319022
+    },
+    "ordinary_fixed_time_tests_alternative_crossing": {
+      "20": 0.897253054984749,
+      "50": 0.9990892895250777,
+      "100": 0.9999998501838999,
+      "200": 0.999999999999998
+    },
+    "alpha_spending_null_crossing": {
+      "20": 0.000335693359375,
+      "50": 0.0004542238591422887,
+      "100": 0.000480151865463815,
+      "200": 0.0004892529044651299
+    },
+    "alpha_spending_alternative_crossing": {
+      "20": 0.13627347114655744,
+      "50": 0.6668996290701443,
+      "100": 0.9802857665951169,
+      "200": 0.9999973716336645
+    },
+    "safe_likelihood_ratio_null_crossing": {
+      "20": 0.02623748779296875,
+      "50": 0.03580441380565347,
+      "100": 0.03668263013373573,
+      "200": 0.036712795702607895
+    },
+    "safe_likelihood_ratio_alternative_crossing": {
+      "20": 0.7300723132162114,
+      "50": 0.9767955325148148,
+      "100": 0.9992625485604306,
+      "200": 0.9999984015046016
+    },
+    "conditions": "iid Bernoulli, p0=0.5, p1=0.8; every n=1..200; exact rational recursion"
+  },
+  "calibration_counterexample": {
+    "outcomes": "0,1 repeating",
+    "constant_forecast": 0.5,
+    "overall_observed_frequency": 0.5,
+    "constant_Brier": 0.25,
+    "perfect_Brier": 0.0
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "threshold": {
+    "exact": "67/27",
+    "decimal": 2.4814814814814814
+  },
+  "detection_threshold": {
+    "exact": "67/108",
+    "decimal": 0.6203703703703703
+  },
+  "cases": [
+    {
+      "detection_probability": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "scores": {
+        "quick": {
+          "exact": "4/25",
+          "decimal": 0.16
+        },
+        "careful": {
+          "exact": "-7/40",
+          "decimal": -0.175
+        }
+      },
+      "careful_minus_quick": {
+        "exact": "-67/200",
+        "decimal": -0.335
+      },
+      "larger_score": "quick"
+    },
+    {
+      "detection_probability": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "scores": {
+        "quick": {
+          "exact": "-1/50",
+          "decimal": -0.02
+        },
+        "careful": {
+          "exact": "-11/50",
+          "decimal": -0.22
+        }
+      },
+      "careful_minus_quick": {
+        "exact": "-1/5",
+        "decimal": -0.2
+      },
+      "larger_score": "quick"
+    },
+    {
+      "detection_probability": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "scores": {
+        "quick": {
+          "exact": "-1/5",
+          "decimal": -0.2
+        },
+        "careful": {
+          "exact": "-53/200",
+          "decimal": -0.265
+        }
+      },
+      "careful_minus_quick": {
+        "exact": "-13/200",
+        "decimal": -0.065
+      },
+      "larger_score": "quick"
+    },
+    {
+      "detection_probability": {
+        "exact": "7/10",
+        "decimal": 0.7
+      },
+      "scores": {
+        "quick": {
+          "exact": "-43/125",
+          "decimal": -0.344
+        },
+        "careful": {
+          "exact": "-301/1000",
+          "decimal": -0.301
+        }
+      },
+      "careful_minus_quick": {
+        "exact": "43/1000",
+        "decimal": 0.043
+      },
+      "larger_score": "careful"
+    },
+    {
+      "detection_probability": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "scores": {
+        "quick": {
+          "exact": "-14/25",
+          "decimal": -0.56
+        },
+        "careful": {
+          "exact": "-71/200",
+          "decimal": -0.355
+        }
+      },
+      "careful_minus_quick": {
+        "exact": "41/200",
+        "decimal": 0.205
+      },
+      "larger_score": "careful"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "research_date": "2026-10-05",
+  "scope": "Selective primary-source audit; not an exhaustive novelty search",
+  "core_source_groups": [
+    {
+      "id": "L01",
+      "label": "Ashby: behavioral structure across material implementations",
+      "urls": [
+        "https://ashby.info/Ashby-Introduction-to-Cybernetics.pdf"
+      ],
+      "access_note": "Full text available and opening material inspected; the root research agent additionally inspected \u00a7\u00a71/2\u20131/6. No claim of a complete rereading."
+    },
+    {
+      "id": "L02",
+      "label": "Interface automata: environment assumptions are part of composition",
+      "urls": [
+        "https://research-explorer.ista.ac.at/record/4622",
+        "https://www.csd.uoc.gr/~hy565/docs/pdfs/papers/interface_automata.pdf"
+      ],
+      "access_note": "Full technical PDF, especially abstract and introduction, inspected. Its pagination differs from the published conference version."
+    },
+    {
+      "id": "L03",
+      "label": "Open Petri nets: endpoint summaries lose interaction",
+      "urls": [
+        "https://arxiv.org/abs/1808.05415",
+        "https://arxiv.org/html/1808.05415v6"
+      ],
+      "access_note": "Full HTML inspected, especially \u00a7\u00a73\u20136, Theorems 17, 23, 24 and the strict-inclusion counterexample. This distinction is stronger than the abstract alone suggests."
+    },
+    {
+      "id": "L04",
+      "label": "Autocatalytic sets: prerequisite closure differs from actual maintenance",
+      "urls": [
+        "https://link.springer.com/article/10.1186/1759-2208-3-5"
+      ],
+      "access_note": "Full text inspected, especially Background, Part I: Dynamics, food replenishment, and spontaneous seeding of subRAFs. No claim that its structural RAF condition alone proves indefinite persistence under finite support."
+    },
+    {
+      "id": "L05",
+      "label": "Partial-observation games: information states require objective-specific memory",
+      "urls": [
+        "https://arxiv.org/abs/1107.2141",
+        "https://arxiv.org/html/1107.2141v1"
+      ],
+      "access_note": "Primary abstract and full HTML retrieved; the result stated above is explicitly in the abstract. This audit does not reproduce its complexity proofs."
+    },
+    {
+      "id": "L06",
+      "label": "Unawareness: changing expressiveness is not ordinary uncertainty",
+      "urls": [
+        "https://faculty.econ.ucdavis.edu/faculty/schipper/unaw.pdf",
+        "https://bse.eu/research/publications/interactive-unawareness"
+      ],
+      "access_note": "Full author PDF inspected, especially \u00a72 and its description of the lattice and projections. Working-paper version and final article are distinguished."
+    },
+    {
+      "id": "L07",
+      "label": "Institutional grammar: rules are not just physical constraints",
+      "urls": [
+        "https://www.cambridge.org/core/journals/american-political-science-review/article/abs/grammar-of-institutions/7D37CD3BC5ED2D9FD57D2EE292958F47"
+      ],
+      "access_note": "Publisher abstract and publication metadata inspected. A discovered full-PDF mirror failed to open. Detailed syntax and theorem-level claims are therefore not attributed on the basis of this session. The publisher's 2013 online date is not the article's original 1995 publication date."
+    },
+    {
+      "id": "L08",
+      "label": "Price: selection is a decomposition, not an ethical direction",
+      "urls": [
+        "https://sites.santafe.edu/~altenber/LIBRARY/REPRINTS/Price_selection_Nature.1970.pdf",
+        "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1957.tb01874.x"
+      ],
+      "access_note": "The two-page 1970 scan was inspected; OCR is poor, so use the scan for exact notation. The 1972 scan was retrieved once but a repeat request timed out; detailed claims here rely on 1970. The 1972 DOI contains \u201c1957\u201d although the publisher verifies publication in 1972."
+    },
+    {
+      "id": "L09",
+      "label": "Niche construction: selection can modify its resource environment",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC17873/"
+      ],
+      "access_note": "Full article text was available in the search index, including abstract and model-discussion passages; direct opening encountered the site's browser check. Accordingly, no uninspected equation or theorem number is used here."
+    },
+    {
+      "id": "L10",
+      "label": "Reflective rewriting: rules can be represented and transformed internally",
+      "urls": [
+        "https://www.sciencedirect.com/science/article/pii/S1571066105825538",
+        "https://maude.cs.illinois.edu/papers/abstract/tcs4009.html"
+      ],
+      "access_note": "Primary publisher/research-group abstracts and the author's publication list inspected; full proofs not reviewed. Bibliographic pagination differs between the publisher record and author list, so page numbers are deliberately omitted pending reconciliation."
+    },
+    {
+      "id": "L11",
+      "label": "Self-modifying agents: preservation results have a fixed evaluative reference",
+      "urls": [
+        "https://www.hutter1.net/publ/selfmod.pdf",
+        "https://arxiv.org/abs/1605.03142"
+      ],
+      "access_note": "Full PDF inspected at model setup, Theorem 16, and its subsequent qualifications. This is a formal conditional result, not evidence that deployed self-modifying systems satisfy its assumptions."
+    },
+    {
+      "id": "L12",
+      "label": "Corrigibility: preserving correction mechanisms is already a design target",
+      "urls": [
+        "https://intelligence.org/files/Corrigibility.pdf"
+      ],
+      "access_note": "Full paper inspected, particularly abstract, \u00a71.1, and manipulation examples. Its open-problem statement describes that paper's result, not a claim about the entire field in 2026."
+    }
+  ],
+  "limited_access_leads": [
+    {
+      "label": "Aubin, Bayen, Saint-Pierre (2011), Viability Theory: New Directions",
+      "url": "https://link.springer.com/book/10.1007/978-3-642-16684-6",
+      "access": "Publisher overview and contents only; no theorem proof inspected"
+    },
+    {
+      "label": "Blackwell (1953), Equivalent Comparisons of Experiments",
+      "url": "https://doi.org/10.1214/aoms/1177729032",
+      "access": "Bibliographic/abstract records; publisher page and PDF requests failed"
+    }
+  ]
+}

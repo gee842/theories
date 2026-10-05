@@ -1,0 +1,338 @@
+{
+  "title": "Evidence for How organizations regulate the conditions of their continuation",
+  "date": "2026-10-05",
+  "report": {
+    "path": "outputs/regulating-generative-conditions.md",
+    "sha256": "d1679e54a372c077d436e5683e3ecbffa621513c1b3ba3f0eab2a779eb87be4d"
+  },
+  "status": "Conceptual synthesis, elementary conditional selection identity, and constructed arithmetic examples; universal explanation is a research hypothesis.",
+  "new_results": [
+    "Distinguishes renewal from regulating the conditions of renewal, including environmental modification.",
+    "Separates causal continuation from independently specified future productive capacity when form changes.",
+    "Expresses inherited variation and environmental feedback in an explicitly supplied deterministic census model.",
+    "Derives mean-capacity change as Cov(g,W)/mean(W) for type-preserving continuations with fixed scores and positive census totals.",
+    "Shows with exact examples that increasing abundance does not force an independently defined capacity score to increase.",
+    "Distinguishes a distribution of consequences described by an analyst from a physically implemented prediction mechanism."
+  ],
+  "verification": {
+    "arithmetic_examples": {
+      "status": "exact arithmetic identities passed",
+      "examples": [
+        {
+          "p": [
+            "1/2",
+            "1/2"
+          ],
+          "g": [
+            "2",
+            "1"
+          ],
+          "W": [
+            "1",
+            "2"
+          ],
+          "mean_before": "3/2",
+          "mean_after": "4/3",
+          "mean_contribution": "3/2",
+          "covariance": "-1/4",
+          "change": "-1/6"
+        },
+        {
+          "p": [
+            "1/2",
+            "1/2"
+          ],
+          "g": [
+            "2",
+            "1"
+          ],
+          "W": [
+            "2",
+            "1"
+          ],
+          "mean_before": "3/2",
+          "mean_after": "5/3",
+          "mean_contribution": "3/2",
+          "covariance": "1/4",
+          "change": "1/6"
+        }
+      ],
+      "scope": "Two constructed arithmetic examples, not empirical data or simulation."
+    },
+    "proof": "The displayed covariance identity follows by substitution of p_i_next=p_i*W_i/mean_W into the next mean and subtraction of the current mean. This proof, not the two examples, establishes the conditional identity.",
+    "scope": "Exact rational arithmetic with Python fractions; no biological, social, or psychological experiment and no stochastic simulation. No claim of historical novelty for the selection identity."
+  },
+  "peer_review": {
+    "reviewer": "allostasis_universal_critic",
+    "scope": "Independent conceptual critique and final read of the saved report. Reviewed equations, numerical examples, continuation criteria, and scope of allostasis and cross-domain claims. Did not independently re-review primary literature.",
+    "result": "No material issues; one clarification applied.",
+    "clarification": "Type preservation stated as M_ij=delta_ij rather than only no mutation, excluding other type transitions in the covariance example."
+  },
+  "sources": [
+    {
+      "title": "Allostasis: a model of predictive regulation",
+      "author": "Peter Sterling",
+      "year": 2012,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21684297/",
+      "review_scope": "Author abstract and metadata returned by indexed PubMed search; subsequent direct retrieval gave only a footer. No full-paper empirical review.",
+      "role": "Theoretical predecessor for anticipatory regulation; not evidence that all regulation is allostasis."
+    },
+    {
+      "title": "Defining Agency: Individuality, Normativity, Asymmetry, and Spatio-temporality in Action",
+      "authors": "Barandiaran, Di Paolo, Rohde",
+      "year": 2009,
+      "url": "https://journals.sagepub.com/doi/10.1177/1059712309343819",
+      "review_scope": "Publisher abstract and visible conceptual footnotes. Earlier local work had read author-hosted sections; that earlier broader scope is not claimed as repeated here.",
+      "role": "Established theoretical account of adaptive regulation of system-environment coupling."
+    },
+    {
+      "title": "Niche construction theory: a practical guide for ecologists",
+      "authors": "Odling-Smee and colleagues",
+      "year": 2013,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23653966/",
+      "review_scope": "Primary author abstract and metadata. No independent empirical-data review.",
+      "role": "Environmental modification, subsequent evolutionary feedback, and ecological inheritance."
+    },
+    {
+      "title": "The free-energy principle: a unified brain theory?",
+      "author": "Karl Friston",
+      "year": 2010,
+      "url": "https://www.nature.com/articles/nrn2787",
+      "review_scope": "Publisher abstract and key points, not a complete mathematical or empirical audit.",
+      "role": "Related formal proposal connecting action, perception, and learning. Not taken as proof of universal optimality or consciousness."
+    },
+    {
+      "title": "Cooperation and Commune Longevity: A Test of the Costly Signaling Theory of Religion",
+      "authors": "Richard Sosis and Eric R. Bressler",
+      "year": 2003,
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/1069397103037002003",
+      "review_scope": "Publisher abstract and metadata. No raw-data reanalysis or replication.",
+      "role": "Narrow empirical precedent involving historical records of 83 communes; not a general theory of cults or a causal conclusion about all restrictive groups."
+    }
+  ],
+  "prior_work": [
+    {
+      "path": "outputs/generative-becoming.md",
+      "sha256": "d6bcba2259b6f96881a77caab986deddab6fb7c38ba63026d17fd986077e3012",
+      "role": "Preserved conceptual starting point."
+    },
+    {
+      "path": "outputs/identity-through-change.md",
+      "sha256": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170",
+      "role": "Prior distinction between causal history and current/future response descriptions."
+    },
+    {
+      "path": "/Users/ren/theories/sources/06-zhishan/writing-program/context/meta-attractor-foundational-context.md",
+      "sha256": "d68ceaa914bd143009801c3f40ddeb649d53012d180ce3a2ae42fcc389b9f513",
+      "review_scope": "Lines 450–540 read in this turn, read-only.",
+      "role": "User-owned earlier distinction between pattern persistence through growing control and renewal of shared capacities for agency and correction."
+    }
+  ],
+  "preservation": {
+    "baseline_count": 32,
+    "unchanged_count": 32,
+    "files": [
+      {
+        "path": "outputs/active-inquiry-data.json",
+        "before_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "after_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/active-inquiry-findings.md",
+        "before_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "after_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/changing-the-interface-evidence.json",
+        "before_sha256": "9a92cb803bfe3f5aad5405c8aa285c4578f1cd167a8841b8535e36cfbc99f230",
+        "after_sha256": "9a92cb803bfe3f5aad5405c8aa285c4578f1cd167a8841b8535e36cfbc99f230",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/changing-the-interface.md",
+        "before_sha256": "0fd70e74556689b4072fa7b2eab585f06400e32da3d7d7cde9122cae8b588a44",
+        "after_sha256": "0fd70e74556689b4072fa7b2eab585f06400e32da3d7d7cde9122cae8b588a44",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/differentiation-and-viewpoints.md",
+        "before_sha256": "df792431185cc236e90475f7ad9f916d1fec70b2cd0a3188e15e1057d68ae992",
+        "after_sha256": "df792431185cc236e90475f7ad9f916d1fec70b2cd0a3188e15e1057d68ae992",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/differentiation-evidence.json",
+        "before_sha256": "ba414e92f28923ac4424e0b85dbb071efe577dd031423d2e147622b2ac7993f1",
+        "after_sha256": "ba414e92f28923ac4424e0b85dbb071efe577dd031423d2e147622b2ac7993f1",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/generative-becoming-evidence.json",
+        "before_sha256": "2e052082f1e4c6e398d025337cf72af56ab27256211878b8a0b1d08abb7f60c2",
+        "after_sha256": "2e052082f1e4c6e398d025337cf72af56ab27256211878b8a0b1d08abb7f60c2",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/generative-becoming.md",
+        "before_sha256": "d6bcba2259b6f96881a77caab986deddab6fb7c38ba63026d17fd986077e3012",
+        "after_sha256": "d6bcba2259b6f96881a77caab986deddab6fb7c38ba63026d17fd986077e3012",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/identity-through-change-evidence.json",
+        "before_sha256": "e65fc90568956b3831a58a8520733227b4070b214f11a015a66820cada41e368",
+        "after_sha256": "e65fc90568956b3831a58a8520733227b4070b214f11a015a66820cada41e368",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/identity-through-change-mathematics.md",
+        "before_sha256": "6c1ec924808f1f31b08703957c10cf802044133e9b85aad37cd27b1b23353dfc",
+        "after_sha256": "6c1ec924808f1f31b08703957c10cf802044133e9b85aad37cd27b1b23353dfc",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/identity-through-change.md",
+        "before_sha256": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170",
+        "after_sha256": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/missing-possibilities-evidence.json",
+        "before_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "after_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/missing-possibility-check.json",
+        "before_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "after_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/next-root-evidence.json",
+        "before_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "after_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/next-root-joint-organization.md",
+        "before_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "after_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/nonseparation-and-selfhood.md",
+        "before_sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6",
+        "after_sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/nonseparation-evidence.json",
+        "before_sha256": "aeba2f74007c905012d75c98cd9e264b5d21294402eea7222d557cff8485c678",
+        "after_sha256": "aeba2f74007c905012d75c98cd9e264b5d21294402eea7222d557cff8485c678",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/noticing-missing-possibilities.md",
+        "before_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "after_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/reasoning-pilot-data.json",
+        "before_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "after_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/reasoning-pilot-findings.md",
+        "before_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "after_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/research-ledger.md",
+        "before_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "after_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-cross-session-assessment.md",
+        "before_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "after_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-cross-session-evidence.json",
+        "before_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "after_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-checks.json",
+        "before_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "after_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-v1.md",
+        "before_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "after_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-v2.md",
+        "before_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "after_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization.md",
+        "before_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "after_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-fundamental-evidence.json",
+        "before_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "after_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-substantive-evidence.json",
+        "before_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "after_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-synthesis.md",
+        "before_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "after_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/source-map.md",
+        "before_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "after_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/worked-test-results.json",
+        "before_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "after_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "unchanged": true
+      }
+    ],
+    "scope": "This branch writes only its new report and evidence plus its own work records. No pre-existing outputs were edited by these operations; concurrent changes, if any, are recorded without reversal."
+  },
+  "limits": [
+    "Equation 1 is a modeling form; F, G, H still require physical justification.",
+    "Equation 2 supplies a type space, variation law, and contribution rule, so it does not derive unlimited novelty or actual natural laws.",
+    "A productive system-environment relation is not automatically a unit of selection without inherited reconstruction of that relation.",
+    "Biological and cultural regulation require different mechanisms and supporting evidence.",
+    "Functional prediction does not by itself establish phenomenal experience.",
+    "Persistence and selection establish neither truth nor ethical value."
+  ]
+}

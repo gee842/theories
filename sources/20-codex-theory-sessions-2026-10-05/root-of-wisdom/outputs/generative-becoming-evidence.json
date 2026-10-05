@@ -1,0 +1,310 @@
+{
+  "title": "Evidence for How change can maintain the capacity for further change",
+  "date": "2026-10-05",
+  "status": "Candidate conceptual foundation with conditional formalization. No complete theory of everything or biological classification theorem claimed.",
+  "report": {
+    "path": "outputs/generative-becoming.md",
+    "sha256": "d6bcba2259b6f96881a77caab986deddab6fb7c38ba63026d17fd986077e3012"
+  },
+  "contribution": [
+    "Products of transformation can become mechanisms or constraints on later transformation.",
+    "Physically possible outcomes, their probabilities, and implementable response capacities are distinct objects.",
+    "Renewal of productive capacity is distinguished from raw outcome diversity, passive persistence, and unsustained innovation.",
+    "A cumulative capacity balance yields a necessary renewal bound under sustained loss.",
+    "An inherited reciprocal-production model demonstrates creation of a second productive capacity and a separate maintenance threshold."
+  ],
+  "new_derivations": [
+    {
+      "statement": "If c(T)=c(0)+R(T)+E(T)-D(T), c(T)>=c_min, and D(T)>=d*T, then R(T)+E(T)>=d*T-(c(0)-c_min).",
+      "proof": "Rearrange the equality to R+E=c(T)-c(0)+D(T), then apply the two lower bounds.",
+      "scope": "Necessary cumulative provision condition for a declared vulnerable capacity. Does not guarantee adequate timing, internal autonomy, or sufficient renewal."
+    },
+    {
+      "statement": "In the inherited model, x(0)>0,y(0)=0 gives y_dot(0)=b*x(0)>0; the resulting y activates the afy contribution to x production.",
+      "proof": "Direct substitution into the supplied production equations. Positive x persists locally; the integral solution y(t)=exp(-mu*t)*[y(0)+b*integral_0^t exp(mu*s)*x(s) ds] gives positive y at positive time.",
+      "scope": "Creation of a previously absent capacity under a fixed supplied law and held resource conditions, not generation of new fundamental laws."
+    },
+    {
+      "statement": "Greater future outcome entropy need not imply greater maintained productive capacity.",
+      "witness": "A specified process with equiprobable two-way breakdown has one bit of next-outcome entropy and loses the capacity. A deterministic renewing continuation has zero next-outcome entropy and retains it.",
+      "scope": "Logical counterexample to treating outcome entropy alone as a generativity criterion, not an empirical process comparison."
+    }
+  ],
+  "inherited_verification": {
+    "scope": "Earlier proof, exact check program, and saved results inspected in this turn. The inherited checks were not rerun; no new stochastic simulation or experiment was run.",
+    "program": {
+      "path": "work/nonseparation/check_self_maintenance.py",
+      "sha256": "83ef3ab1e4d628a5321ffd4ea3b7ed8c218466c3b6790289b251e1cd128554d6",
+      "text": "\"\"\"Exact algebra checks for the constructed organization/turnover model.\n\nThese checks do not simulate organisms or establish a theory of consciousness.\nThe accompanying audit gives the general proof.\n\"\"\"\nfrom fractions import Fraction as Q\nfrom itertools import product\nimport json\nfrom pathlib import Path\n\ncounts = {\"parameter_tuples\": 0, \"positive_equilibria\": 0,\n          \"below_threshold\": 0, \"at_threshold\": 0,\n          \"lyapunov_point_checks\": 0}\nvalues = (Q(1, 2), Q(1), Q(2))\nfor a, b, f, delta, mu, c in product(values, values, (Q(0), *values), values, values, values):\n    counts[\"parameter_tuples\"] += 1\n    gap = a*b*f - delta*mu\n    if gap <= 0:\n        counts[\"at_threshold\" if gap == 0 else \"below_threshold\"] += 1\n        assert delta*mu - a*b*f >= 0\n        continue\n    counts[\"positive_equilibria\"] += 1\n    R = a*b*f/mu\n    C = R-delta\n    xs = C/c\n    ys = b*xs/mu\n    assert xs > 0 and ys > 0\n    assert a*f*ys-delta*xs-c*xs*xs == 0\n    assert b*xs-mu*ys == 0\n    trace = -delta - 2*c*xs - mu\n    determinant = mu*(delta+2*c*xs)-a*b*f\n    assert trace < 0 and determinant == mu*c*xs > 0\n    assert delta+c*xs == R\n    for u, v in product((Q(1, 4), Q(1, 2), Q(1), Q(2), Q(4)), repeat=2):\n        du = R*(v-u)-C*u*(u-1)\n        dv = mu*(u-v)\n        direct = (1-1/u)*du+(R/mu)*(1-1/v)*dv\n        formula = -R*(u-v)**2/(u*v)-C*(u-1)**2\n        assert direct == formula\n        assert (direct == 0) == (u == 1 and v == 1)\n        counts[\"lyapunov_point_checks\"] += 1\n\nresult = {\"status\": \"all exact checks passed\", \"counts\": counts,\n          \"scope\": \"constructed deterministic two-species maintenance model; general proof in self-audit.md\",\n          \"limits\": [\"original label tends to zero, never zero at finite time in this continuum model\",\n                     \"constant resource supply and rates are assumed\",\n                     \"no empirical or metaphysical no-self claim was tested\"]}\nout = Path(__file__).with_name(\"self-maintenance-checks.json\")\nout.write_text(json.dumps(result, indent=2)+\"\\n\")\nprint(json.dumps(result, indent=2))\n"
+    },
+    "results": {
+      "path": "work/nonseparation/self-maintenance-checks.json",
+      "sha256": "1f93daeeaae2445730eb285820e98b7752acd82e43b5fbb8d6f669c4b6540c58",
+      "data": {
+        "status": "all exact checks passed",
+        "counts": {
+          "parameter_tuples": 972,
+          "positive_equilibria": 288,
+          "below_threshold": 531,
+          "at_threshold": 153,
+          "lyapunov_point_checks": 7200
+        },
+        "scope": "constructed deterministic two-species maintenance model; general proof in self-audit.md",
+        "limits": [
+          "original label tends to zero, never zero at finite time in this continuum model",
+          "constant resource supply and rates are assumed",
+          "no empirical or metaphysical no-self claim was tested"
+        ]
+      }
+    }
+  },
+  "prior_local_work": [
+    {
+      "path": "outputs/root-of-wisdom-formalization.md",
+      "sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61"
+    },
+    {
+      "path": "outputs/differentiation-and-viewpoints.md",
+      "sha256": "df792431185cc236e90475f7ad9f916d1fec70b2cd0a3188e15e1057d68ae992"
+    },
+    {
+      "path": "outputs/identity-through-change.md",
+      "sha256": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170"
+    },
+    {
+      "path": "outputs/nonseparation-and-selfhood.md",
+      "sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6"
+    },
+    {
+      "path": "work/differentiation/source-snapshots/continuing-realizability.md",
+      "sha256": "28fff27053f06e4fb644e5c6b42e2c4dff6865c9cbe0e3a73e5b671ef5d17eea"
+    },
+    {
+      "path": "work/substantive-foundation/snapshots/07-STRUCTURAL-CLOSURE.md",
+      "sha256": "5293ac3553462256cd38521f4f87d7a45cddef7a65d02df6d68f5aa3992e325a"
+    },
+    {
+      "path": "work/nonseparation/self-audit.md",
+      "sha256": "28203771abf045631a60ecbb6bbc88546fefd42723027df10b747981f1383e37"
+    }
+  ],
+  "source_review": [
+    {
+      "title": "Biological organisation as closure of constraints",
+      "authors": "Mael Montevil and Matteo Mossio",
+      "year": 2015,
+      "url": "https://montevil.org/publications/articles/2015-mm-organisation-closure-constraints/",
+      "scope": "Author-hosted indexed primary text returned by web search, including abstract and introduction. Direct webpage and mirror retrievals failed. No claim of complete independent proof review.",
+      "supports": "Established conceptual predecessor for maintained constraints acting on processes; not a derivation of this proposed universal foundation."
+    },
+    {
+      "title": "Semantic information, autonomous agency, and nonequilibrium statistical physics",
+      "authors": "Artemy Kolchinsky and David H. Wolpert",
+      "year": 2018,
+      "url": "https://arxiv.org/abs/1806.08053",
+      "scope": "Primary abstract and publication metadata read. No full-paper or raw-data reanalysis in this turn.",
+      "supports": "A published intervention-based connection between certain correlations and continued existence, applicable also to nonliving systems."
+    },
+    {
+      "title": "Superposition with Qiskit",
+      "author": "IBM Quantum Learning",
+      "url": "https://quantum.cloud.ibm.com/learning/en/modules/quantum-mechanics/superposition-with-qiskit",
+      "scope": "Official teaching material, classical versus quantum representations and quantum phase sections read. No quantum code or hardware experiment run.",
+      "supports": "Complex amplitudes and relative phase distinguish a quantum wave function from an ordinary probability distribution."
+    }
+  ],
+  "review": {
+    "completed": "Parent checked conceptual scope, algebraic balance bound, inherited proof and check results, readable definitions, citations, file links, and mathematical delimiters.",
+    "independent_review": "Parallel specialist reviews were requested but are not counted as completed evidence in this record.",
+    "clarification_applied": "The current-state kernel explicitly requires sufficient retained state and memory; a present snapshot does not establish Markov sufficiency."
+  },
+  "preservation": {
+    "baseline_count": 29,
+    "unchanged_count": 28,
+    "all_unchanged": false,
+    "files": [
+      {
+        "path": "outputs/active-inquiry-data.json",
+        "before_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "after_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/active-inquiry-findings.md",
+        "before_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "after_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/changing-the-interface.md",
+        "before_sha256": "7a9b36e4a83368045e3b71bfaac5b1ee5d8c48064bea48ee1f38b68b6c1b1ee3",
+        "after_sha256": "0fd70e74556689b4072fa7b2eab585f06400e32da3d7d7cde9122cae8b588a44",
+        "unchanged": false
+      },
+      {
+        "path": "outputs/differentiation-and-viewpoints.md",
+        "before_sha256": "df792431185cc236e90475f7ad9f916d1fec70b2cd0a3188e15e1057d68ae992",
+        "after_sha256": "df792431185cc236e90475f7ad9f916d1fec70b2cd0a3188e15e1057d68ae992",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/differentiation-evidence.json",
+        "before_sha256": "ba414e92f28923ac4424e0b85dbb071efe577dd031423d2e147622b2ac7993f1",
+        "after_sha256": "ba414e92f28923ac4424e0b85dbb071efe577dd031423d2e147622b2ac7993f1",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/identity-through-change-evidence.json",
+        "before_sha256": "e65fc90568956b3831a58a8520733227b4070b214f11a015a66820cada41e368",
+        "after_sha256": "e65fc90568956b3831a58a8520733227b4070b214f11a015a66820cada41e368",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/identity-through-change-mathematics.md",
+        "before_sha256": "6c1ec924808f1f31b08703957c10cf802044133e9b85aad37cd27b1b23353dfc",
+        "after_sha256": "6c1ec924808f1f31b08703957c10cf802044133e9b85aad37cd27b1b23353dfc",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/identity-through-change.md",
+        "before_sha256": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170",
+        "after_sha256": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/missing-possibilities-evidence.json",
+        "before_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "after_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/missing-possibility-check.json",
+        "before_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "after_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/next-root-evidence.json",
+        "before_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "after_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/next-root-joint-organization.md",
+        "before_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "after_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/nonseparation-and-selfhood.md",
+        "before_sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6",
+        "after_sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/nonseparation-evidence.json",
+        "before_sha256": "aeba2f74007c905012d75c98cd9e264b5d21294402eea7222d557cff8485c678",
+        "after_sha256": "aeba2f74007c905012d75c98cd9e264b5d21294402eea7222d557cff8485c678",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/noticing-missing-possibilities.md",
+        "before_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "after_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/reasoning-pilot-data.json",
+        "before_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "after_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/reasoning-pilot-findings.md",
+        "before_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "after_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/research-ledger.md",
+        "before_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "after_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-cross-session-assessment.md",
+        "before_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "after_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-cross-session-evidence.json",
+        "before_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "after_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-checks.json",
+        "before_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "after_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-v1.md",
+        "before_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "after_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-v2.md",
+        "before_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "after_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization.md",
+        "before_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "after_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-fundamental-evidence.json",
+        "before_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "after_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-substantive-evidence.json",
+        "before_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "after_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-synthesis.md",
+        "before_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "after_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/source-map.md",
+        "before_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "after_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/worked-test-results.json",
+        "before_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "after_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "unchanged": true
+      }
+    ],
+    "note": "This branch wrote only its new report and evidence record. A change to outputs/changing-the-interface.md was detected between audits; this turn made no writes to that file and did not revert it."
+  },
+  "limits": [
+    "Difference alone does not imply change, interaction, new structure, stochastic branching, or self-maintenance.",
+    "Transition kernels and attainable-response notation do not select the actual laws of nature.",
+    "Effective novelty is relative to an initial repertoire, resource and timing conditions, and stated outcome meanings.",
+    "Recurring production does not by itself establish biological life, consciousness, ethical value, or truth.",
+    "The maintenance model supplies reaction capacities, reservoirs, and rate laws; it does not provide a closed material or energy balance."
+  ]
+}

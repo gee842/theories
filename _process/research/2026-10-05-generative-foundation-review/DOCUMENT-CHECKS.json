@@ -1,0 +1,467 @@
+{
+  "date": "2026-10-05",
+  "primary": "OPTIMAL-FOUNDATION.md",
+  "alternative": "FOUNDATION.md",
+  "original_preserved": {
+    "file": "FOUNDATION-ALTERNATIVE-ORIGINAL.md",
+    "sha256": "91efaed68a9746e8213437a810a6bb9b0864a572467a9956010fe2711cb92460",
+    "matches_previous_checked_dossier": true
+  },
+  "scope": "Document integrity and constructed mathematical examples; not empirical validation or a rendered-layout audit.",
+  "documents": [
+    {
+      "file": "OPTIMAL-FOUNDATION.md",
+      "sha256": "6e0b601d3fa2c49515bbb35ee4a0fed4d19f36f7bb1ce57b3c2133e81ba38ac6",
+      "words": 3973,
+      "lines": 348,
+      "equation_tags": [
+        "N1",
+        "N2",
+        "N3",
+        "N4",
+        "N5",
+        "N6",
+        "N7",
+        "N8",
+        "N9",
+        "N10",
+        "N10a",
+        "N11",
+        "N12",
+        "N13",
+        "N14",
+        "N15",
+        "N16",
+        "N17",
+        "N18"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        19,
+        19
+      ],
+      "inline_delimiters": [
+        88,
+        88
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "FOUNDATION.md",
+      "sha256": "8c5300583be10348c86a0e716c2fe953baa9f84cdddb0869ceb689fb02c905b4",
+      "words": 12978,
+      "lines": 1078,
+      "equation_tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        62,
+        62
+      ],
+      "inline_delimiters": [
+        320,
+        320
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "FOUNDATION-ALTERNATIVE-ORIGINAL.md",
+      "sha256": "91efaed68a9746e8213437a810a6bb9b0864a572467a9956010fe2711cb92460",
+      "words": 12884,
+      "lines": 1074,
+      "equation_tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        62,
+        62
+      ],
+      "inline_delimiters": [
+        319,
+        319
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "REVIEW.md",
+      "sha256": "b4fa3baed68d576a55800b80e1b67b7f9f0184c1f2921746545ca1bb78a9cca3",
+      "words": 953,
+      "lines": 43,
+      "equation_tags": [],
+      "unique_tags": true,
+      "display_delimiters": [
+        0,
+        0
+      ],
+      "inline_delimiters": [
+        0,
+        0
+      ],
+      "placeholders": []
+    }
+  ],
+  "local_links": [
+    {
+      "file": "FOUNDATION-ALTERNATIVE-ORIGINAL.md",
+      "local_links": 32,
+      "all_resolve": true
+    },
+    {
+      "file": "FOUNDATION.md",
+      "local_links": 34,
+      "all_resolve": true
+    },
+    {
+      "file": "OPTIMAL-FOUNDATION.md",
+      "local_links": 8,
+      "all_resolve": true
+    },
+    {
+      "file": "optimal-foundation/ADVERSARIAL.md",
+      "local_links": 4,
+      "all_resolve": true
+    },
+    {
+      "file": "optimal-foundation/FOUNDATIONS-PRIOR-ART.md",
+      "local_links": 2,
+      "all_resolve": true
+    },
+    {
+      "file": "optimal-foundation/MATHEMATICS.md",
+      "local_links": 0,
+      "all_resolve": true
+    },
+    {
+      "file": "optimal-foundation/OPTIMAL-ADVERSARIAL-REVIEW.md",
+      "local_links": 15,
+      "all_resolve": true
+    },
+    {
+      "file": "optimal-foundation/OPTIMAL-MATH-REVIEW.md",
+      "local_links": 1,
+      "all_resolve": true
+    },
+    {
+      "file": "optimal-foundation/OPTIMAL-POSITIONING-REVIEW.md",
+      "local_links": 2,
+      "all_resolve": true
+    },
+    {
+      "file": "review-support/COVERAGE-MEMO.md",
+      "local_links": 61,
+      "all_resolve": true
+    },
+    {
+      "file": "review-support/COVERAGE-REVIEW.md",
+      "local_links": 1,
+      "all_resolve": true
+    },
+    {
+      "file": "review-support/MATH-MEMO.md",
+      "local_links": 6,
+      "all_resolve": true
+    },
+    {
+      "file": "review-support/MATH-REVIEW.md",
+      "local_links": 0,
+      "all_resolve": true
+    },
+    {
+      "file": "review-support/POSITIONING-MEMO.md",
+      "local_links": 2,
+      "all_resolve": true
+    },
+    {
+      "file": "review-support/POSITIONING-REVIEW.md",
+      "local_links": 1,
+      "all_resolve": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "root-foundation/PLURAL-CAPACITY.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "foundation-assessment/ASSESSMENT.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "root-foundation/ROOT-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "root-foundation/README.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "final-synthesis/INTEGRATED-THEORY.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "final-synthesis/README.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "OPTIMAL-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "optimal-foundation/MATHEMATICS.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "FOUNDATION-ALTERNATIVE-ORIGINAL.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "review-support/MATH-REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "review-support/COVERAGE-REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "review-support/POSITIONING-REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "optimal-foundation/OPTIMAL-MATH-REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "optimal-foundation/OPTIMAL-ADVERSARIAL-REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "optimal-foundation/OPTIMAL-POSITIONING-REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "DOCUMENT-CHECKS.json",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "MANIFEST.json",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "review-support/MATH-MEMO.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "review-support/COVERAGE-MEMO.md",
+      "exists": true
+    },
+    {
+      "file": "REVIEW.md",
+      "target": "review-support/POSITIONING-MEMO.md",
+      "exists": true
+    }
+  ],
+  "exact_example_results": {
+    "status": "all checks passed",
+    "scope": "Constructed examples only; no empirical validation or general proof certificate.",
+    "timing_model": {
+      "fine_states": 10,
+      "actions": [
+        "wait",
+        "dispatch"
+      ],
+      "label_respecting_partitions_enumerated": 4140,
+      "faithful_partitions": 9,
+      "minimal_blocks": 6,
+      "distinct_minimal_partitions": 1,
+      "every_faithful_partition_refines_canonical": true,
+      "canonical_blocks": [
+        [
+          "(1, 1, 0)",
+          "(1, 1, 1)"
+        ],
+        [
+          "(1, 2, 0)",
+          "(1, 2, 1)"
+        ],
+        [
+          "(2, 1, 0)",
+          "(2, 1, 1)"
+        ],
+        [
+          "(2, 2, 0)",
+          "(2, 2, 1)"
+        ],
+        [
+          "failed"
+        ],
+        [
+          "safe"
+        ]
+      ],
+      "spatial_distinction": "reserve 1, delay 1 dispatches safely; reserve 1, delay 2 fails",
+      "decorative_badge_removed": true
+    },
+    "hidden_environment": {
+      "latent_states": 2,
+      "first_distinct_predictions_checked": 13,
+      "predictions": [
+        "1/2",
+        "5/9",
+        "3/5",
+        "17/27",
+        "11/17",
+        "65/99",
+        "43/65",
+        "257/387",
+        "171/257",
+        "1025/1539",
+        "683/1025",
+        "4097/6147",
+        "2731/4097"
+      ],
+      "infinite_distinctness": "Established algebraically in the note; finite check is illustrative."
+    }
+  },
+  "historical_experiments_rerun": false,
+  "all_reported_required_review_findings_resolved": true,
+  "integrated_synthesis": {
+    "file": "final-synthesis/INTEGRATED-THEORY.md",
+    "checks": "final-synthesis/DOCUMENT-CHECKS.json",
+    "exact_checks_passed": 34,
+    "empirical_validation": "unrun",
+    "review_scope": "Resolved integration cross-review plus mathematical author audit; no completed independent full proof audit or human peer review."
+  },
+  "root_foundation": {
+    "file": "root-foundation/ROOT-FOUNDATION.md",
+    "checks": "root-foundation/DOCUMENT-CHECKS.json",
+    "exact_check_groups_passed": 28,
+    "review_scope": "Three internal AI cross-reviews with reported scope corrections resolved; no human peer review or novelty certification.",
+    "new_empirical_validation": false
+  },
+  "foundation_assessment": {
+    "file": "foundation-assessment/ASSESSMENT.md",
+    "checks": "foundation-assessment/DOCUMENT-CHECKS.json",
+    "independent_check_groups": 8,
+    "empirical_comparison": "Exploratory reused-data comparison: no primary gain",
+    "new_causal_intervention_study": false,
+    "review_scope": "Three internal agent assessments with cross-review and root verification; reported corrections resolved. No independent human peer review."
+  }
+}

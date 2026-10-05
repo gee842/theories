@@ -1,0 +1,148 @@
+{
+  "candidate_scores": {
+    "retained": [
+      {
+        "params": {
+          "alpha": 0.2
+        },
+        "mean_total_loss": 7.12228449089698
+      },
+      {
+        "params": {
+          "alpha": 0.5
+        },
+        "mean_total_loss": 4.750521240047153
+      },
+      {
+        "params": {
+          "alpha": 0.8
+        },
+        "mean_total_loss": 7.791479373586555
+      }
+    ],
+    "audit": [
+      {
+        "params": {
+          "slow": 0.1,
+          "fast": 0.8,
+          "threshold": 2.0
+        },
+        "mean_total_loss": 8.604969381943597
+      },
+      {
+        "params": {
+          "slow": 0.1,
+          "fast": 0.8,
+          "threshold": 3.0
+        },
+        "mean_total_loss": 9.852798712924939
+      },
+      {
+        "params": {
+          "slow": 0.1,
+          "fast": 1.0,
+          "threshold": 2.0
+        },
+        "mean_total_loss": 8.744319113832509
+      },
+      {
+        "params": {
+          "slow": 0.1,
+          "fast": 1.0,
+          "threshold": 3.0
+        },
+        "mean_total_loss": 9.894699156731612
+      },
+      {
+        "params": {
+          "slow": 0.2,
+          "fast": 0.8,
+          "threshold": 2.0
+        },
+        "mean_total_loss": 4.768542668817235
+      },
+      {
+        "params": {
+          "slow": 0.2,
+          "fast": 0.8,
+          "threshold": 3.0
+        },
+        "mean_total_loss": 4.951140374360195
+      },
+      {
+        "params": {
+          "slow": 0.2,
+          "fast": 1.0,
+          "threshold": 2.0
+        },
+        "mean_total_loss": 4.752595414435991
+      },
+      {
+        "params": {
+          "slow": 0.2,
+          "fast": 1.0,
+          "threshold": 3.0
+        },
+        "mean_total_loss": 4.863338108290572
+      }
+    ],
+    "joint": [
+      {
+        "params": {
+          "q_b": 0.0
+        },
+        "mean_total_loss": 1.0052189765151107
+      },
+      {
+        "params": {
+          "q_b": 0.0025
+        },
+        "mean_total_loss": 0.7750495192814979
+      },
+      {
+        "params": {
+          "q_b": 0.04
+        },
+        "mean_total_loss": 0.7611372989176652
+      }
+    ],
+    "joint_y_only": [
+      {
+        "params": {
+          "q_b": 0.0
+        },
+        "mean_total_loss": 1.4825585437559097
+      },
+      {
+        "params": {
+          "q_b": 0.0025
+        },
+        "mean_total_loss": 1.214925633096616
+      },
+      {
+        "params": {
+          "q_b": 0.04
+        },
+        "mean_total_loss": 1.2082795502295118
+      }
+    ]
+  },
+  "baseline_selection": {
+    "matched": {
+      "selected": "joint_y_only",
+      "scores": {
+        "raw": 16.74205791045237,
+        "direct": 12.413297498018364,
+        "joint_y_only": 1.3276795502295118
+      }
+    },
+    "adaptive": {
+      "selected": "joint_y_only",
+      "scores": {
+        "raw": 16.503257910452366,
+        "direct": 14.49604154140689,
+        "joint_y_only": 1.0888795502295117
+      }
+    }
+  }
+}

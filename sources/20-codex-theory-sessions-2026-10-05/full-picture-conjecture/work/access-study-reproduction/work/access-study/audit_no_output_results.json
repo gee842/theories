@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "method": "direct exact propagation of joint stock/true fault, no candidate-module import",
+  "initial_stock": 2,
+  "initial_fault": 1,
+  "horizon": 4,
+  "barred_cash_zero_and_one_same_failure": "1583669/2000000",
+  "failure_decimal": 0.7918345,
+  "rounds": [
+    {
+      "round": 1,
+      "failure_exact": "0"
+    },
+    {
+      "round": 2,
+      "failure_exact": "153/250"
+    },
+    {
+      "round": 3,
+      "failure_exact": "153/250"
+    },
+    {
+      "round": 4,
+      "failure_exact": "1583669/2000000"
+    }
+  ],
+  "scope": "zero-output, inaccessible treasury, no initially affordable action beyond doing nothing"
+}

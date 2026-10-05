@@ -1,0 +1,18 @@
+{
+  "status": "All checks pass; independent mathematical examples, no development or evaluation dataset used.",
+  "exhaustive_terminal_schedules_N_1_through_12": 4095,
+  "periodic_integer_acquisition_delay_bound_tau_8_to_47": 14,
+  "hybrid_protected_integer_acquisition_delay_bound_tau_8_to_47": 29,
+  "hybrid_optional_schedules_checked": 130,
+  "clipped_exact_cycle_steps": 20,
+  "squared_error_identities": 18,
+  "gaussian_example": {
+    "familywise_false_alarm_bound": 0.04999999999999982,
+    "miss_probability": 0.09999999999882592,
+    "maximum_miss_probability": 0.1,
+    "minimum_shift_sufficient": 0.5183514755095918,
+    "postchange_samples_required": 4,
+    "tested_windows": 12
+  },
+  "stable_control_extreme_noise_steps": 5120
+}

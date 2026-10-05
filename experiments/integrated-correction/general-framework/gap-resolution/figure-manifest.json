@@ -1,0 +1,10 @@
+{
+  "inputs": {
+    "render.py": "056b7d13459188aa9d2173a225bb88166b7b9bf3d36f8024541f4095efb5ff44",
+    "causal-results.json": "4fbd17d21ee1d7daf3243dbfcf8b7dbc5158f800af32f497a836d582d50c28e8",
+    "formation-coupled/analysis.json": "000791d97e6ff4c0fc3ef5415e5734ac115eba6aa3290def5ed95b42fd9c1e60",
+    "empirical/results/analysis.json": "41731791f2f13c992b211a53883969c0f0650f4a693bf48d4508beb7d9c19e8a",
+    "empirical/results/succession_analysis.json": "e9902f7a971866bfcf15c35eedcdddc4341e83b3f269dc266e450dc3ce5430b5"
+  },
+  "description": "Figure panels use separate supplied models and distinct experimental endpoints; no pooled effect."
+}

@@ -1,0 +1,142 @@
+{
+  "result": "passed",
+  "new_core_exactly_present": true,
+  "six_claim_ids_unique": true,
+  "local_links_checked": 8,
+  "source_index_append_only": true,
+  "canonical_change_spans": [
+    {
+      "change": "replace",
+      "old_lines": [
+        3,
+        3
+      ],
+      "new_lines": [
+        3,
+        3
+      ],
+      "old_excerpt": "**The theory in one paragraph.** Nothing that exists is exhausted by what it has already become. Every state carries 間 (jiān — an unexhausted gap, the place where a state"
+    },
+    {
+      "change": "insert",
+      "old_lines": [
+        10,
+        9
+      ],
+      "new_lines": [
+        10,
+        11
+      ],
+      "old_excerpt": ""
+    },
+    {
+      "change": "insert",
+      "old_lines": [
+        123,
+        122
+      ],
+      "new_lines": [
+        125,
+        146
+      ],
+      "old_excerpt": ""
+    },
+    {
+      "change": "replace",
+      "old_lines": [
+        125,
+        125
+      ],
+      "new_lines": [
+        149,
+        149
+      ],
+      "old_excerpt": "Nothing in the ethics is an independent axiom. Each value is the same openness criterion seen along a different dimension, and the derivation was written out by Ren and t"
+    },
+    {
+      "change": "replace",
+      "old_lines": [
+        221,
+        221
+      ],
+      "new_lines": [
+        245,
+        245
+      ],
+      "old_excerpt": "Finally, the account of the self and of what a life is for. **教 = 以象成象**: anything that repeatedly shapes attention, feeling, desire, expectation and action is education "
+    },
+    {
+      "change": "replace",
+      "old_lines": [
+        484,
+        484
+      ],
+      "new_lines": [
+        508,
+        508
+      ],
+      "old_excerpt": "128. Good and evil are not convention, not interest-projection, not cultural relativism — because cross-cultural, cross-species and cross-era moral discussion actually ha"
+    },
+    {
+      "change": "replace",
+      "old_lines": [
+        622,
+        622
+      ],
+      "new_lines": [
+        646,
+        646
+      ],
+      "old_excerpt": "251. **良知 = 生生之理在人心中的初显** — a 生生感应器 forged by long co-living (a species that could never trust, care or reciprocate could not have language, division of labour or civilis"
+    },
+    {
+      "change": "insert",
+      "old_lines": [
+        847,
+        846
+      ],
+      "new_lines": [
+        871,
+        881
+      ],
+      "old_excerpt": ""
+    },
+    {
+      "change": "replace",
+      "old_lines": [
+        913,
+        913
+      ],
+      "new_lines": [
+        948,
+        948
+      ],
+      "old_excerpt": "| innate knowing | 良知 | 生生感应器 | 2026-07-14 第七章 | The generative grain's first appearance in the human mind — a sensor, not a finished product |"
+    },
+    {
+      "change": "insert",
+      "old_lines": [
+        972,
+        971
+      ],
+      "new_lines": [
+        1007,
+        1008
+      ],
+      "old_excerpt": ""
+    },
+    {
+      "change": "insert",
+      "old_lines": [
+        1313,
+        1312
+      ],
+      "new_lines": [
+        1350,
+        1353
+      ],
+      "old_excerpt": ""
+    }
+  ],
+  "note": "Internal text and provenance checks; no new empirical validation or formal build."
+}

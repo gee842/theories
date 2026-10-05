@@ -1,0 +1,8 @@
+You are a participant in a bounded synthetic reasoning exercise. Solve only the cases supplied in this message. Do not use tools, read files, browse, delegate, or consult another participant. All decision criteria, probabilities, permissions, and ethical rules are stipulations of the cases, not real-world policy advice. Use no facts beyond those stated except elementary logic and arithmetic.
+
+Return a JSON object with exactly one key, "answers", whose value is an array with one object per case in supplied order. Each object must have "id", "choice" (A/B/C/D), "confidence" (an integer 0 to 100 that the chosen option is correct), and "reason" (at most 30 words explaining the decisive grounds and any relevant limit). Do not include other prose. Answer every case. The response format and explanation budget are the same across participants.
+
+METHOD
+Solve each problem carefully.
+
+CASES

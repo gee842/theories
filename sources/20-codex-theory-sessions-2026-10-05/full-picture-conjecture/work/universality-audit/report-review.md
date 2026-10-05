@@ -1,0 +1,19 @@
+# Review of proving-generative-theory.md
+
+5 October 2026. Read-only review of `/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/proving-generative-theory.md`, against the claim register, assumption ledger and saved financial checker results. Linked final proof/evidence files are still being prepared and were not treated as missing deliverables. No prior artifact was edited.
+
+## Assessment
+
+The report is relevant to the user's full-theory request and calibrated appropriately. It treats premise discharge as a constructive research program rather than a reason to abandon universality; states the central `∀M∀z: G iff C` target without claiming it has been proved; separates operation, recovery, novelty and plural protected capability; and distinguishes mathematical scope from applicability. It does not claim that reproduction or a financial theorem validates the entire philosophical theory.
+
+The finite/infinite quantifier statement and countdown countermodel are correct. The example must be read as a **single initial state with an allowed initial choice of any finite n**, not as changing the initial state/endowment outside the policy. The draft's “system can permit an initial choice” already supports the correct reading; adding “from the same initial choice state” would make it fully explicit. The compactness/finite-branching caveat appropriately avoids promising that an infinite state path is automatically an executable policy or a novelty guarantee.
+
+The recurrence's formula is correct under the declared income→transfer→bill chronology and valid initial accounts. Greedy cash maximization is monotone at fixed total and implements the successful schedule causally. The saved JSON agrees with the reported 504,840 schedule cases and 1,032,816 examined prefixes. This review did not rerun the exhaustive checker or independently validate every funding inequality.
+
+## Material clarifications
+
+1. **Current protection in the common-safe-action paragraph.** As defined, `S(z)` requires only that successors lie in the protected set. Thus the intersection characterizes a guaranteed next protected state, even when the current state is unsafe. To call it one-step *continued* safety, add `B⊆K` (where K is the protected set), or explicitly say it characterizes protected arrival and that continuation additionally requires the current information set to be protected. Without this condition an unsafe state with a repair into K satisfies the formula but has not stayed protected throughout the interval. The intersection equivalence itself is otherwise correct, subject to the already stated common executable-action caveat.
+
+2. **State precisely which conclusion was generalized.** The new recurrence broadens the **financial-feasibility characterization**. It does not preserve total-only pooling invariance for every limited or delayed transfer schedule; the draft itself correctly explains why that fails. Accordingly, in the opening/closing claims that “one restrictive assumption” has been discharged, explicitly attach the discharge to the feasibility characterization, or say that the old full-round bill cap is unnecessary *when the newly stated transfer/payment conditions hold*. This avoids implying that the original all-attainable-laws pooling result now applies unchanged under arbitrary delay or limited transfer. No larger rewrite is needed: the body already preserves the distinction.
+
+No other material correction was found within this review's scope. In particular, finite checking is not presented as universal proof, the empirical transfer remains unrun, and no normative justification is smuggled into a feasibility result. Historical/source attribution for Noether and the independent formal proof audit remain with their assigned reviewers.

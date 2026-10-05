@@ -1,0 +1,23 @@
+{
+  "grid_cases": 252,
+  "detailed_cases": 22,
+  "curve_points": 84,
+  "max_flow_residual": 1.005002984217458e-15,
+  "max_policy_evaluation_residual": 2.4868995751603507e-14,
+  "max_absolute_primal_dual_gap": 5.204170427930421e-17,
+  "unresolved": 0,
+  "grid_status_counts": {
+    "full": {
+      "feasible": 52,
+      "infeasible": 32
+    },
+    "no_diagnostic": {
+      "feasible": 44,
+      "infeasible": 40
+    },
+    "no_repair": {
+      "feasible": 12,
+      "infeasible": 72
+    }
+  }
+}

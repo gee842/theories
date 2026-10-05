@@ -1,0 +1,586 @@
+{
+  "status": "pass",
+  "scope": "Internal mathematical checks; no empirical validation or universal health theorem.",
+  "method": "Exact rational reachable-state enumeration over five admissible effort levels, plus sampled feasible controls.",
+  "exact_horizon_comparisons": 96,
+  "exact_cases": [
+    {
+      "maintenance_fraction": "1",
+      "initial_multiple": 1,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 1,
+          "maximum_normalized_work": "0"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 1,
+          "maximum_normalized_work": "0"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 1,
+          "maximum_normalized_work": "0"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 1,
+          "maximum_normalized_work": "0"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 1,
+          "maximum_normalized_work": "0"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 1,
+          "maximum_normalized_work": "0"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 1,
+          "maximum_normalized_work": "0"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 1,
+          "maximum_normalized_work": "0"
+        }
+      ]
+    },
+    {
+      "maintenance_fraction": "1",
+      "initial_multiple": 2,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        }
+      ]
+    },
+    {
+      "maintenance_fraction": "1",
+      "initial_multiple": 4,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 13,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 13,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 13,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 13,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 13,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 13,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 13,
+          "maximum_normalized_work": "2"
+        }
+      ]
+    },
+    {
+      "maintenance_fraction": "3/4",
+      "initial_multiple": 1,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 2,
+          "maximum_normalized_work": "1/4"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 4,
+          "maximum_normalized_work": "1/2"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 8,
+          "maximum_normalized_work": "3/4"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 16,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 32,
+          "maximum_normalized_work": "5/4"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 64,
+          "maximum_normalized_work": "3/2"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 128,
+          "maximum_normalized_work": "7/4"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 256,
+          "maximum_normalized_work": "2"
+        }
+      ]
+    },
+    {
+      "maintenance_fraction": "3/4",
+      "initial_multiple": 2,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 7,
+          "maximum_normalized_work": "5/4"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 11,
+          "maximum_normalized_work": "3/2"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 19,
+          "maximum_normalized_work": "7/4"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 35,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 67,
+          "maximum_normalized_work": "9/4"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 131,
+          "maximum_normalized_work": "5/2"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 259,
+          "maximum_normalized_work": "11/4"
+        }
+      ]
+    },
+    {
+      "maintenance_fraction": "3/4",
+      "initial_multiple": 4,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 13,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 17,
+          "maximum_normalized_work": "9/4"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 25,
+          "maximum_normalized_work": "5/2"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 41,
+          "maximum_normalized_work": "11/4"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 73,
+          "maximum_normalized_work": "3"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 137,
+          "maximum_normalized_work": "13/4"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 265,
+          "maximum_normalized_work": "7/2"
+        }
+      ]
+    },
+    {
+      "maintenance_fraction": "1/2",
+      "initial_multiple": 1,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 3,
+          "maximum_normalized_work": "1/2"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 7,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 15,
+          "maximum_normalized_work": "3/2"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 31,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 63,
+          "maximum_normalized_work": "5/2"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 127,
+          "maximum_normalized_work": "3"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 255,
+          "maximum_normalized_work": "7/2"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 511,
+          "maximum_normalized_work": "4"
+        }
+      ]
+    },
+    {
+      "maintenance_fraction": "1/2",
+      "initial_multiple": 2,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 9,
+          "maximum_normalized_work": "3/2"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 17,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 33,
+          "maximum_normalized_work": "5/2"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 65,
+          "maximum_normalized_work": "3"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 129,
+          "maximum_normalized_work": "7/2"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 257,
+          "maximum_normalized_work": "4"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 513,
+          "maximum_normalized_work": "9/2"
+        }
+      ]
+    },
+    {
+      "maintenance_fraction": "1/2",
+      "initial_multiple": 4,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 13,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 21,
+          "maximum_normalized_work": "5/2"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 37,
+          "maximum_normalized_work": "3"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 69,
+          "maximum_normalized_work": "7/2"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 133,
+          "maximum_normalized_work": "4"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 261,
+          "maximum_normalized_work": "9/2"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 517,
+          "maximum_normalized_work": "5"
+        }
+      ]
+    },
+    {
+      "maintenance_fraction": "1/4",
+      "initial_multiple": 1,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 4,
+          "maximum_normalized_work": "3/4"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 10,
+          "maximum_normalized_work": "3/2"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 22,
+          "maximum_normalized_work": "9/4"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 46,
+          "maximum_normalized_work": "3"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 94,
+          "maximum_normalized_work": "15/4"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 190,
+          "maximum_normalized_work": "9/2"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 382,
+          "maximum_normalized_work": "21/4"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 766,
+          "maximum_normalized_work": "6"
+        }
+      ]
+    },
+    {
+      "maintenance_fraction": "1/4",
+      "initial_multiple": 2,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 11,
+          "maximum_normalized_work": "7/4"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 23,
+          "maximum_normalized_work": "5/2"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 47,
+          "maximum_normalized_work": "13/4"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 95,
+          "maximum_normalized_work": "4"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 191,
+          "maximum_normalized_work": "19/4"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 383,
+          "maximum_normalized_work": "11/2"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 767,
+          "maximum_normalized_work": "25/4"
+        }
+      ]
+    },
+    {
+      "maintenance_fraction": "1/4",
+      "initial_multiple": 4,
+      "exact_matches": 8,
+      "horizons": [
+        {
+          "steps": 1,
+          "reachable_capacities": 5,
+          "maximum_normalized_work": "1"
+        },
+        {
+          "steps": 2,
+          "reachable_capacities": 13,
+          "maximum_normalized_work": "2"
+        },
+        {
+          "steps": 3,
+          "reachable_capacities": 25,
+          "maximum_normalized_work": "11/4"
+        },
+        {
+          "steps": 4,
+          "reachable_capacities": 49,
+          "maximum_normalized_work": "7/2"
+        },
+        {
+          "steps": 5,
+          "reachable_capacities": 97,
+          "maximum_normalized_work": "17/4"
+        },
+        {
+          "steps": 6,
+          "reachable_capacities": 193,
+          "maximum_normalized_work": "5"
+        },
+        {
+          "steps": 7,
+          "reachable_capacities": 385,
+          "maximum_normalized_work": "23/4"
+        },
+        {
+          "steps": 8,
+          "reachable_capacities": 769,
+          "maximum_normalized_work": "13/2"
+        }
+      ]
+    }
+  ],
+  "random_control_checks": {
+    "seed": 5102026,
+    "admissible_schedules": 1000,
+    "bound_violations": 0,
+    "smallest_bound_gap": 0.0005667883833400476
+  },
+  "numerical_witnesses": {
+    "perpetual_operation_without_establishment": 0.0,
+    "ongoing_margin_at_deadline_four": 2.0,
+    "reserve_plus_margin_at_deadline_three": 2.0,
+    "insufficient_deadline": 1.75,
+    "finite_reserve_no_margin": 1.0
+  },
+  "script_sha256": "fb802079dcd019fe22cc66e17d03c8edf3978a90022b88c652b7481c37b3b3cd"
+}

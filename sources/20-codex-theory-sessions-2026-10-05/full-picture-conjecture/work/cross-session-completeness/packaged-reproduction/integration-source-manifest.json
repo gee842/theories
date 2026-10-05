@@ -1,0 +1,113 @@
+{
+  "scope": "Read-only selected report and proof snapshots. Secondary empirical reports were inspected, not reanalyzed in this session. Snapshot links retain source-relative references and are not a standalone browsable site.",
+  "files": [
+    {
+      "label": "generative-basis-overview",
+      "source": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/README.md",
+      "snapshot": "integration-snapshots/generative-basis-overview.md",
+      "sha256": "d6ebab21179f28d9ce8e8b05fef82c9ace3da738390f1aca2f98ad74e1c08605"
+    },
+    {
+      "label": "generative-basis-integration",
+      "source": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/integration/INTEGRATION.md",
+      "snapshot": "integration-snapshots/generative-basis-integration.md",
+      "sha256": "5b3d65954de6b7418cbb3793d35c4ce8254f10fed9ab6f0bff9e15c1efb444bf"
+    },
+    {
+      "label": "generative-basis-review",
+      "source": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/checks/REVIEW.md",
+      "snapshot": "integration-snapshots/generative-basis-review.md",
+      "sha256": "7b2fb41f0abbdff2e1b892802ad13ae8170f6df9edebc4032eda2a3351e57f09"
+    },
+    {
+      "label": "actual-process-closure",
+      "source": "/Users/ren/theories/experiments/integrated-correction/general-framework/closure-study/README.md",
+      "snapshot": "integration-snapshots/actual-process-closure.md",
+      "sha256": "0fecce329d15017c43e071aa64cde77ab70767c0bd5989902002b28fc89a65eb"
+    },
+    {
+      "label": "actual-process-proof",
+      "source": "/Users/ren/theories/experiments/integrated-correction/general-framework/closure-study/FORMAL.md",
+      "snapshot": "integration-snapshots/actual-process-proof.md",
+      "sha256": "c271e8296909e93a53ebe1096d6fcb771c39a589fde4fc87072979b5ff57155b"
+    },
+    {
+      "label": "gap-resolution",
+      "source": "/Users/ren/theories/experiments/integrated-correction/general-framework/gap-resolution/README.md",
+      "snapshot": "integration-snapshots/gap-resolution.md",
+      "sha256": "54e49bf8416249c42e0e656db60852910cbaf5bef01520a4ca5ee8455b01eadd"
+    },
+    {
+      "label": "causal-foundations",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/causal-foundations/outputs/formal-results.md",
+      "snapshot": "integration-snapshots/causal-foundations.md",
+      "sha256": "f6a84bd991395364b948b5171e10a2bb8cf65ef4d20a716138c1aa75b39f9e38"
+    },
+    {
+      "label": "missing-possibilities",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/noticing-missing-possibilities.md",
+      "snapshot": "integration-snapshots/missing-possibilities.md",
+      "sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6"
+    },
+    {
+      "label": "scientific-change",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/mechanisms-of-scientific-change.md",
+      "snapshot": "integration-snapshots/scientific-change.md",
+      "sha256": "6472bf9e0398a235fb29f48f41048d9718a40c3a73f53dc59e7764d7f28f5548"
+    },
+    {
+      "label": "scientific-change-proof",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/scientific-change-formal-results.md",
+      "snapshot": "integration-snapshots/scientific-change-proof.md",
+      "sha256": "9494296ab715c29a779017c805638ae33c555e75070043996ab227b620c2878c"
+    },
+    {
+      "label": "scientific-change-record",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/scientific-change-deepening-record.md",
+      "snapshot": "integration-snapshots/scientific-change-record.md",
+      "sha256": "d47123ecdc1476c71e64b76f637fbb9ba7d69923c2bf1cf5769e020184b5f7bd"
+    },
+    {
+      "label": "paid-revision",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-6/synthesis.md",
+      "snapshot": "integration-snapshots/paid-revision.md",
+      "sha256": "05706e09b782d442161ca9591ce517a0ce7a39da8b790cc75ac75f41846321fd"
+    },
+    {
+      "label": "paid-revision-claims",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-6/CLAIMS.md",
+      "snapshot": "integration-snapshots/paid-revision-claims.md",
+      "sha256": "b8d39afccd3b44fce7168e39eab445fb87bf1e9b845f4305388c3398400f2ca0"
+    },
+    {
+      "label": "correction-access",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/correction-access/report.md",
+      "snapshot": "integration-snapshots/correction-access.md",
+      "sha256": "abc1c2761ee38c036dd8127e4c47ffcd9a792c14c94dc8ef6beb14b343aa114a"
+    },
+    {
+      "label": "correction-access-proof",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/correction-access/formal-note.md",
+      "snapshot": "integration-snapshots/correction-access-proof.md",
+      "sha256": "77e83797454e9e784c8f6da4f1593f4a4d7ee63cb6f5b87950c3006d7045da86"
+    },
+    {
+      "label": "cooperation-test",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/sin/outputs/experiment-report.md",
+      "snapshot": "integration-snapshots/cooperation-test.md",
+      "sha256": "1d001945697bfe8bbbe3a693c1dffd70598d9692f9feb761b6e8d582b4ac912b"
+    },
+    {
+      "label": "our-continuation",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/continuation-proof.md",
+      "snapshot": "integration-snapshots/our-continuation.md",
+      "sha256": "3cbaf32f9327658304217c56ba9124d0906ede3277ed3dd5399132e686dec561"
+    },
+    {
+      "label": "our-progress",
+      "source": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/progress-proof.md",
+      "snapshot": "integration-snapshots/our-progress.md",
+      "sha256": "2c9bdb3a245ee48a99a1d738f1ab68c83a55bde1a665257c5b30b806981dace4"
+    }
+  ]
+}

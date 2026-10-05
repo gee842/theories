@@ -1,0 +1,42 @@
+[
+  {
+    "path": "formal/SSBX/Foundation/R/CayleyKernel.lean",
+    "last_main_change": "664f2986467fc205e61aecfc96d7bfceb5bb18ff|2026-05-21T23:55:16+08:00|Phase G.1.5: generalize CayleyKernel from R n carrier to any AddCommGroup"
+  },
+  {
+    "path": "formal/SSBX/Foundation/Doctrine/T_GUT.lean",
+    "last_main_change": "63fd4f70367e9e10b1cf16a61ccf69ac8b534e72|2026-05-21T22:29:47+08:00|Phase C: rename T_GUT cultural-coined generators to math-honest names"
+  },
+  {
+    "path": "formal/SSBX/Foundation/Closure/PhiOperator.lean",
+    "last_main_change": "d0658fae20848de3b3ba4d5cd8b73b50fa1ba709|2026-05-19T17:21:43+07:00|Bridge Phi D1 and enriched Lawvere projections"
+  },
+  {
+    "path": "formal/SSBX/Foundation/Doctrine/FullGUT.lean",
+    "last_main_change": "b5f86c85ed2d5636e06ad752d23d57d4e37b2e9c|2026-05-20T11:33:43+07:00|Expose scoped D6 and Frm unit closed accessors"
+  },
+  {
+    "path": "formal/SSBX/Foundation/Doctrine/Instance/SemanticWitnessFrontier.lean",
+    "last_main_change": "588f37aa0156b0192bd392be049a71d178e6e64f|2026-05-21T11:03:48+07:00|Add coordinate Hilbert dagger tensor boundary"
+  },
+  {
+    "path": "formal/SSBX/Foundation/Enriched/Power.lean",
+    "last_main_change": "8f3fd43faebdc95bfb7f06a085c4637fa89d6dae|2026-05-20T22:53:29+07:00|Expose enriched Power payload accessors"
+  },
+  {
+    "path": "formal/SSBX/Foundation/Enriched/Monad.lean",
+    "last_main_change": "7e6361236a658016ddb5c386a0bdf8338d93ea17|2026-05-22T00:43:17+08:00|Path A Wave 3: Monad refactor + End V-bivariant + sorry/bug closures"
+  },
+  {
+    "path": "formal/SSBX/Foundation/Enriched/Yoneda.lean",
+    "last_main_change": "40db8f1ac66b764d18b56d0ea1b1f72fc1122570|2026-05-22T00:42:47+08:00|Add Foundation/Enriched/Yoneda.lean — Path A Phase A.3.1 V-Yoneda prelim"
+  },
+  {
+    "path": "docs-next/00_start/session-summary-2026-05-17.md",
+    "last_main_change": "dbb07584baad52abc7c30c5f88a1cc1f1d7c2944|2026-05-21T18:41:12+08:00|Sync docs to current code state; add HW + Power-4.5 narratives"
+  },
+  {
+    "path": "docs-next/10_formal_形式/claim-status-ledger.md",
+    "last_main_change": "5acd840d5b348a1079b1f5faa9ec1d350fabe52e|2026-05-21T18:08:04+08:00|Close interpreter architecture review gaps"
+  }
+]

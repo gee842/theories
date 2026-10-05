@@ -1,0 +1,42 @@
+{
+  "first_wave_recorded_at": "2026-10-05T05:04:03.266764+07:00",
+  "runs": [
+    {
+      "batch": "p01",
+      "agent": "/root/pilot_p01",
+      "condition": "ordinary",
+      "replicate": 1
+    },
+    {
+      "batch": "p02",
+      "agent": "/root/pilot_p02",
+      "condition": "reflection",
+      "replicate": 1
+    },
+    {
+      "batch": "p03",
+      "agent": "/root/pilot_p03",
+      "condition": "discipline",
+      "replicate": 1
+    },
+    {
+      "batch": "p04",
+      "agent": "/root/pilot_p04",
+      "condition": "ordinary",
+      "replicate": 2
+    },
+    {
+      "batch": "p05",
+      "agent": "/root/pilot_p05",
+      "condition": "reflection",
+      "replicate": 2
+    },
+    {
+      "batch": "p06",
+      "agent": "/root/pilot_p06",
+      "condition": "discipline",
+      "replicate": 2
+    }
+  ],
+  "second_wave_recorded_at": "2026-10-05T05:06:05.392273+07:00"
+}

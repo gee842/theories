@@ -1,0 +1,846 @@
+{
+  "configurations": {
+    "default": {
+      "horizon": 64,
+      "penalty": "1/32",
+      "fit_cost": "1/4",
+      "label_cost": "1",
+      "field_cost": "1/50",
+      "discovery_pairs": 32,
+      "checking_pairs": 256,
+      "alpha": 0.05
+    },
+    "high_field_cost": "3/10"
+  },
+  "exact_controls": {
+    "all_6_interaction_orientations_checked": true,
+    "conditional_local_false_adoption": "9/256",
+    "deterministic_interaction_gain_per_episode": {
+      "exact": "2069/100",
+      "decimal": 20.69
+    },
+    "fresh_outer_check_guarantee": "Under declared IID task distribution, fixed config, independent fresh checking, probability of accepting a nonpositive-mean-gain edit is at most alpha; one edit/one check only."
+  },
+  "records": [
+    {
+      "profile": "interaction",
+      "opening": "protected_probe",
+      "seed": 20261005,
+      "starting_budget": {
+        "exact": "12000",
+        "decimal": 12000.0
+      },
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "syntactically_generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "required_worst_case_reserve": {
+        "exact": "288864/25",
+        "decimal": 11554.56
+      },
+      "discovery": {
+        "incumbent": {
+          "count": 32,
+          "expense": {
+            "exact": "280",
+            "decimal": 280.0
+          },
+          "errors": 1024,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "1304",
+            "decimal": 1304.0
+          }
+        },
+        "edited": {
+          "count": 32,
+          "expense": {
+            "exact": "16048/25",
+            "decimal": 641.92
+          },
+          "errors": 0,
+          "proposals": 32,
+          "adoptions": 32,
+          "observed_loss": {
+            "exact": "16048/25",
+            "decimal": 641.92
+          }
+        }
+      },
+      "checking": {
+        "incumbent": {
+          "count": 256,
+          "expense": {
+            "exact": "2240",
+            "decimal": 2240.0
+          },
+          "errors": 8192,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "10432",
+            "decimal": 10432.0
+          }
+        },
+        "edited": {
+          "count": 256,
+          "expense": {
+            "exact": "128384/25",
+            "decimal": 5135.36
+          },
+          "errors": 0,
+          "proposals": 256,
+          "adoptions": 256,
+          "observed_loss": {
+            "exact": "128384/25",
+            "decimal": 5135.36
+          }
+        }
+      },
+      "fresh_outer_check": {
+        "pairs": 256,
+        "mean_observed_gain": {
+          "exact": "2069/100",
+          "decimal": 20.69
+        },
+        "bound_absolute_difference": {
+          "exact": "7531/100",
+          "decimal": 75.31
+        },
+        "one_sided_Hoeffding_radius": 11.52123836366077,
+        "lower_confidence_bound": 9.168761636339232,
+        "pass": true
+      },
+      "status": "rule_revised",
+      "final_rule": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "spent": {
+        "exact": "207432/25",
+        "decimal": 8297.28
+      },
+      "events": [
+        "Deleted prefix-gain requirement after separate fresh outer check."
+      ],
+      "study_service_accounting": {
+        "prediction_blocks_delivered": 576,
+        "total_observed_loss_including_priced_expense": {
+          "exact": "437832/25",
+          "decimal": 17513.28
+        },
+        "matched_two_incumbent_streams_loss_estimate": {
+          "exact": "23472",
+          "decimal": 23472.0
+        },
+        "incremental_observed_loss_estimate": {
+          "exact": "-148968/25",
+          "decimal": -5958.72
+        },
+        "interpretation": "One observed incumbent stream supplies the counterfactual mean for two matched service streams. Exact in noiseless interaction; otherwise an estimate using selected data, not an independent confidence statement. Cash expense is already included in observed loss."
+      }
+    },
+    {
+      "profile": "interaction",
+      "opening": "incumbent_gate",
+      "seed": 20261005,
+      "starting_budget": {
+        "exact": "12000",
+        "decimal": 12000.0
+      },
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "syntactically_generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "status": "probe_blocked_by_incumbent",
+      "final_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "spent": {
+        "exact": "35/4",
+        "decimal": 8.75
+      }
+    },
+    {
+      "profile": "interaction",
+      "opening": "protected_probe",
+      "seed": 20261005,
+      "starting_budget": {
+        "exact": "100",
+        "decimal": 100.0
+      },
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "syntactically_generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "required_worst_case_reserve": {
+        "exact": "288864/25",
+        "decimal": 11554.56
+      },
+      "status": "probe_unfunded",
+      "final_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "spent": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "events": []
+    },
+    {
+      "profile": "single",
+      "opening": "protected_probe",
+      "seed": 20261005,
+      "starting_budget": {
+        "exact": "12000",
+        "decimal": 12000.0
+      },
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "syntactically_generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "required_worst_case_reserve": {
+        "exact": "288864/25",
+        "decimal": 11554.56
+      },
+      "discovery": {
+        "incumbent": {
+          "count": 32,
+          "expense": {
+            "exact": "14824/25",
+            "decimal": 592.96
+          },
+          "errors": 0,
+          "proposals": 32,
+          "adoptions": 32,
+          "observed_loss": {
+            "exact": "14824/25",
+            "decimal": 592.96
+          }
+        },
+        "edited": {
+          "count": 32,
+          "expense": {
+            "exact": "15024/25",
+            "decimal": 600.96
+          },
+          "errors": 0,
+          "proposals": 32,
+          "adoptions": 32,
+          "observed_loss": {
+            "exact": "15024/25",
+            "decimal": 600.96
+          }
+        }
+      },
+      "status": "edit_failed_discovery",
+      "final_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "spent": {
+        "exact": "29848/25",
+        "decimal": 1193.92
+      },
+      "events": []
+    },
+    {
+      "profile": "constant",
+      "opening": "protected_probe",
+      "seed": 20261005,
+      "starting_budget": {
+        "exact": "12000",
+        "decimal": 12000.0
+      },
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "syntactically_generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "required_worst_case_reserve": {
+        "exact": "288864/25",
+        "decimal": 11554.56
+      },
+      "discovery": {
+        "incumbent": {
+          "count": 32,
+          "expense": {
+            "exact": "280",
+            "decimal": 280.0
+          },
+          "errors": 0,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "280",
+            "decimal": 280.0
+          }
+        },
+        "edited": {
+          "count": 32,
+          "expense": {
+            "exact": "304",
+            "decimal": 304.0
+          },
+          "errors": 0,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "304",
+            "decimal": 304.0
+          }
+        }
+      },
+      "status": "edit_failed_discovery",
+      "final_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "spent": {
+        "exact": "584",
+        "decimal": 584.0
+      },
+      "events": []
+    },
+    {
+      "profile": "null",
+      "opening": "protected_probe",
+      "seed": 20261005,
+      "starting_budget": {
+        "exact": "12000",
+        "decimal": 12000.0
+      },
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "syntactically_generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "required_worst_case_reserve": {
+        "exact": "288864/25",
+        "decimal": 11554.56
+      },
+      "discovery": {
+        "incumbent": {
+          "count": 32,
+          "expense": {
+            "exact": "17889/50",
+            "decimal": 357.78
+          },
+          "errors": 1045,
+          "proposals": 9,
+          "adoptions": 1,
+          "observed_loss": {
+            "exact": "70139/50",
+            "decimal": 1402.78
+          }
+        },
+        "edited": {
+          "count": 32,
+          "expense": {
+            "exact": "480",
+            "decimal": 480.0
+          },
+          "errors": 1010,
+          "proposals": 22,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "1490",
+            "decimal": 1490.0
+          }
+        }
+      },
+      "status": "edit_failed_discovery",
+      "final_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "spent": {
+        "exact": "41889/50",
+        "decimal": 837.78
+      },
+      "events": []
+    },
+    {
+      "profile": "noisy_interaction",
+      "opening": "protected_probe",
+      "seed": 20261005,
+      "starting_budget": {
+        "exact": "12000",
+        "decimal": 12000.0
+      },
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "syntactically_generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "required_worst_case_reserve": {
+        "exact": "288864/25",
+        "decimal": 11554.56
+      },
+      "discovery": {
+        "incumbent": {
+          "count": 32,
+          "expense": {
+            "exact": "20439/50",
+            "decimal": 408.78
+          },
+          "errors": 1070,
+          "proposals": 15,
+          "adoptions": 1,
+          "observed_loss": {
+            "exact": "73939/50",
+            "decimal": 1478.78
+          }
+        },
+        "edited": {
+          "count": 32,
+          "expense": {
+            "exact": "12728/25",
+            "decimal": 509.12
+          },
+          "errors": 954,
+          "proposals": 25,
+          "adoptions": 2,
+          "observed_loss": {
+            "exact": "36578/25",
+            "decimal": 1463.12
+          }
+        }
+      },
+      "checking": {
+        "incumbent": {
+          "count": 256,
+          "expense": {
+            "exact": "74732/25",
+            "decimal": 2989.28
+          },
+          "errors": 8213,
+          "proposals": 88,
+          "adoptions": 1,
+          "observed_loss": {
+            "exact": "280057/25",
+            "decimal": 11202.28
+          }
+        },
+        "edited": {
+          "count": 256,
+          "expense": {
+            "exact": "4152",
+            "decimal": 4152.0
+          },
+          "errors": 7875,
+          "proposals": 207,
+          "adoptions": 26,
+          "observed_loss": {
+            "exact": "12027",
+            "decimal": 12027.0
+          }
+        }
+      },
+      "fresh_outer_check": {
+        "pairs": 256,
+        "mean_observed_gain": {
+          "exact": "-10309/3200",
+          "decimal": -3.2215625
+        },
+        "bound_absolute_difference": {
+          "exact": "7531/100",
+          "decimal": 75.31
+        },
+        "one_sided_Hoeffding_radius": 11.52123836366077,
+        "lower_confidence_bound": -14.742800863660769,
+        "pass": false
+      },
+      "status": "edit_failed_fresh_check",
+      "final_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "spent": {
+        "exact": "402959/50",
+        "decimal": 8059.18
+      },
+      "events": [],
+      "study_service_accounting": {
+        "prediction_blocks_delivered": 576,
+        "total_observed_loss_including_priced_expense": {
+          "exact": "1308559/50",
+          "decimal": 26171.18
+        },
+        "matched_two_incumbent_streams_loss_estimate": {
+          "exact": "634053/25",
+          "decimal": 25362.12
+        },
+        "incremental_observed_loss_estimate": {
+          "exact": "40453/50",
+          "decimal": 809.06
+        },
+        "interpretation": "One observed incumbent stream supplies the counterfactual mean for two matched service streams. Exact in noiseless interaction; otherwise an estimate using selected data, not an independent confidence statement. Cash expense is already included in observed loss."
+      }
+    },
+    {
+      "profile": "mixed",
+      "opening": "protected_probe",
+      "seed": 20261005,
+      "starting_budget": {
+        "exact": "12000",
+        "decimal": 12000.0
+      },
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "syntactically_generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "required_worst_case_reserve": {
+        "exact": "288864/25",
+        "decimal": 11554.56
+      },
+      "discovery": {
+        "incumbent": {
+          "count": 32,
+          "expense": {
+            "exact": "8732/25",
+            "decimal": 349.28
+          },
+          "errors": 1018,
+          "proposals": 8,
+          "adoptions": 1,
+          "observed_loss": {
+            "exact": "34182/25",
+            "decimal": 1367.28
+          }
+        },
+        "edited": {
+          "count": 32,
+          "expense": {
+            "exact": "13496/25",
+            "decimal": 539.84
+          },
+          "errors": 543,
+          "proposals": 25,
+          "adoptions": 14,
+          "observed_loss": {
+            "exact": "27071/25",
+            "decimal": 1082.84
+          }
+        }
+      },
+      "checking": {
+        "incumbent": {
+          "count": 256,
+          "expense": {
+            "exact": "68878/25",
+            "decimal": 2755.12
+          },
+          "errors": 8145,
+          "proposals": 60,
+          "adoptions": 4,
+          "observed_loss": {
+            "exact": "272503/25",
+            "decimal": 10900.12
+          }
+        },
+        "edited": {
+          "count": 256,
+          "expense": {
+            "exact": "113256/25",
+            "decimal": 4530.24
+          },
+          "errors": 4247,
+          "proposals": 221,
+          "adoptions": 130,
+          "observed_loss": {
+            "exact": "219431/25",
+            "decimal": 8777.24
+          }
+        }
+      },
+      "fresh_outer_check": {
+        "pairs": 256,
+        "mean_observed_gain": {
+          "exact": "3317/400",
+          "decimal": 8.2925
+        },
+        "bound_absolute_difference": {
+          "exact": "7531/100",
+          "decimal": 75.31
+        },
+        "one_sided_Hoeffding_radius": 11.52123836366077,
+        "lower_confidence_bound": -3.228738363660769,
+        "pass": false
+      },
+      "status": "edit_failed_fresh_check",
+      "final_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "spent": {
+        "exact": "204362/25",
+        "decimal": 8174.48
+      },
+      "events": [],
+      "study_service_accounting": {
+        "prediction_blocks_delivered": 576,
+        "total_observed_loss_including_priced_expense": {
+          "exact": "553187/25",
+          "decimal": 22127.48
+        },
+        "matched_two_incumbent_streams_loss_estimate": {
+          "exact": "122674/5",
+          "decimal": 24534.8
+        },
+        "incremental_observed_loss_estimate": {
+          "exact": "-60183/25",
+          "decimal": -2407.32
+        },
+        "interpretation": "One observed incumbent stream supplies the counterfactual mean for two matched service streams. Exact in noiseless interaction; otherwise an estimate using selected data, not an independent confidence statement. Cash expense is already included in observed loss."
+      }
+    },
+    {
+      "profile": "interaction",
+      "opening": "protected_probe",
+      "seed": 20261005,
+      "starting_budget": {
+        "exact": "40000",
+        "decimal": 40000.0
+      },
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "syntactically_generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "required_worst_case_reserve": {
+        "exact": "160992/5",
+        "decimal": 32198.4
+      },
+      "discovery": {
+        "incumbent": {
+          "count": 32,
+          "expense": {
+            "exact": "280",
+            "decimal": 280.0
+          },
+          "errors": 1024,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "1304",
+            "decimal": 1304.0
+          }
+        },
+        "edited": {
+          "count": 32,
+          "expense": {
+            "exact": "8944/5",
+            "decimal": 1788.8
+          },
+          "errors": 0,
+          "proposals": 32,
+          "adoptions": 32,
+          "observed_loss": {
+            "exact": "8944/5",
+            "decimal": 1788.8
+          }
+        }
+      },
+      "status": "edit_failed_discovery",
+      "final_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "spent": {
+        "exact": "10344/5",
+        "decimal": 2068.8
+      },
+      "events": []
+    },
+    {
+      "profile": "mixed",
+      "opening": "protected_probe",
+      "seed": 912867,
+      "starting_budget": {
+        "exact": "45000",
+        "decimal": 45000.0
+      },
+      "initial_rule": {
+        "require_improving_prefix": true,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "syntactically_generated_edit": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "required_worst_case_reserve": {
+        "exact": "1059168/25",
+        "decimal": 42366.72
+      },
+      "discovery": {
+        "incumbent": {
+          "count": 32,
+          "expense": {
+            "exact": "348",
+            "decimal": 348.0
+          },
+          "errors": 1030,
+          "proposals": 8,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "1378",
+            "decimal": 1378.0
+          }
+        },
+        "edited": {
+          "count": 32,
+          "expense": {
+            "exact": "14424/25",
+            "decimal": 576.96
+          },
+          "errors": 495,
+          "proposals": 29,
+          "adoptions": 16,
+          "observed_loss": {
+            "exact": "26799/25",
+            "decimal": 1071.96
+          }
+        }
+      },
+      "checking": {
+        "incumbent": {
+          "count": 1024,
+          "expense": {
+            "exact": "532959/50",
+            "decimal": 10659.18
+          },
+          "errors": 32944,
+          "proposals": 199,
+          "adoptions": 6,
+          "observed_loss": {
+            "exact": "2180159/50",
+            "decimal": 43603.18
+          }
+        },
+        "edited": {
+          "count": 1024,
+          "expense": {
+            "exact": "453664/25",
+            "decimal": 18146.56
+          },
+          "errors": 16483,
+          "proposals": 888,
+          "adoptions": 516,
+          "observed_loss": {
+            "exact": "865739/25",
+            "decimal": 34629.56
+          }
+        }
+      },
+      "fresh_outer_check": {
+        "pairs": 1024,
+        "mean_observed_gain": {
+          "exact": "448681/51200",
+          "decimal": 8.76330078125
+        },
+        "bound_absolute_difference": {
+          "exact": "7531/100",
+          "decimal": 75.31
+        },
+        "one_sided_Hoeffding_radius": 5.760619181830385,
+        "lower_confidence_bound": 3.002681599419616,
+        "pass": true
+      },
+      "status": "rule_revised",
+      "final_rule": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "spent": {
+        "exact": "297307/10",
+        "decimal": 29730.7
+      },
+      "events": [
+        "Deleted prefix-gain requirement after separate fresh outer check."
+      ],
+      "study_service_accounting": {
+        "prediction_blocks_delivered": 2112,
+        "total_observed_loss_including_priced_expense": {
+          "exact": "806827/10",
+          "decimal": 80682.7
+        },
+        "matched_two_incumbent_streams_loss_estimate": {
+          "exact": "2249059/25",
+          "decimal": 89962.36
+        },
+        "incremental_observed_loss_estimate": {
+          "exact": "-463983/50",
+          "decimal": -9279.66
+        },
+        "interpretation": "One observed incumbent stream supplies the counterfactual mean for two matched service streams. Exact in noiseless interaction; otherwise an estimate using selected data, not an independent confidence statement. Cash expense is already included in observed loss."
+      }
+    }
+  ],
+  "source_sha256": "c44b53d349295463d7a5b4fd0b11276281d28bcc9630eef148bb9034ad376444"
+}

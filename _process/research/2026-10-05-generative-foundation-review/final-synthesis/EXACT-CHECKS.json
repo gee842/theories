@@ -1,0 +1,68 @@
+{
+  "scope": "Constructed algebra and finite examples; no new empirical data; no proof certification.",
+  "passed": 34,
+  "checks": [
+    "production surplus polynomial identity",
+    "production surplus attains four",
+    "critical effort is one quarter",
+    "capacity floor gives effort lower bound",
+    "support floor gives effort upper bound",
+    "chosen effort lies strictly inside both floors",
+    "chosen support equals eight fifths",
+    "chosen capacity strictly exceeds six",
+    "ecological saddle signs",
+    "ecological saddle equilibrium residual",
+    "ecological stable signs",
+    "ecological stable equilibrium residual",
+    "practice eigenvalue at kappa 1/2",
+    "practice eigenvalue at kappa 3/2",
+    "perfect-probe exact horizon values",
+    "noisy probe infeasible at horizons one through six",
+    "hazardous probe infeasible at horizons one through six",
+    "known model costs one",
+    "exhaustive two-step policy minimum agrees with DP",
+    "four-signal likelihood ratio rejecting R",
+    "four-signal likelihood ratio retaining L",
+    "false rejection example remains below delta",
+    "factorial observations do not identify mediator",
+    "mediator clamp separates the route",
+    "calibration models agree",
+    "pairwise distance matrix",
+    "design primal budget",
+    "design primal value",
+    "dual certificate feasible",
+    "dual certificate matches primal",
+    "worst pair error",
+    "hard batch cost realizes proportions",
+    "retaining test labels preserves distinction",
+    "erasing test labels can remove distinction"
+  ],
+  "mechanism": {
+    "critical_effort": "1/4",
+    "protected_interval": "7/12 < u < 2/3",
+    "interior_effort": "5/8",
+    "interior_support": "8/5",
+    "interior_capacity": "(16+6 sqrt(6))/5"
+  },
+  "adaptive": {
+    "perfect_horizons_1_to_3": [
+      "infinity",
+      2,
+      2
+    ],
+    "noisy_horizons_1_to_6": "infinity",
+    "two_step_policies_enumerated": 1024,
+    "feasible_two_step_policies": 16,
+    "minimum_cost": 2
+  },
+  "experimental_design": {
+    "weights": [
+      "3/4",
+      "1/4"
+    ],
+    "expected_cost": "5/4",
+    "pairwise_separation": "1/4",
+    "dual_bound": "1/4",
+    "worst_pair_binary_error": "3/8"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "kind": "independent exact latent-event and policy-tree certificate",
+  "metric_order": [
+    "failure",
+    "expense",
+    "burden",
+    "terminal_stock_below_2"
+  ],
+  "identical_initial_action_witness": {
+    "low": {
+      "t": 2,
+      "x": 2,
+      "b": 0,
+      "treasury": 5,
+      "ready": 0,
+      "p": "1",
+      "unlock": -1
+    },
+    "high": {
+      "t": 2,
+      "x": 2,
+      "b": 1,
+      "treasury": 4,
+      "ready": 0,
+      "p": "1",
+      "unlock": -1
+    },
+    "shared_actions": [
+      {
+        "support": "drop",
+        "test": false,
+        "repair_rule": [
+          [
+            "none",
+            0
+          ]
+        ]
+      }
+    ],
+    "barred_low": [
+      "153/250",
+      [
+        "153/250",
+        "0",
+        "0",
+        "153/250"
+      ],
+      {
+        "support": "drop",
+        "test": false,
+        "repair_rule": [
+          [
+            "none",
+            0
+          ]
+        ]
+      }
+    ],
+    "barred_high": [
+      "0",
+      [
+        "0",
+        "12/5",
+        "1/25",
+        "2/25"
+      ],
+      {
+        "support": "drop",
+        "test": false,
+        "repair_rule": [
+          [
+            "none",
+            0
+          ]
+        ]
+      }
+    ],
+    "immediate_access_both": [
+      "0",
+      [
+        "0",
+        "12/5",
+        "1/25",
+        "2/25"
+      ],
+      {
+        "support": "drop",
+        "test": false,
+        "repair_rule": [
+          [
+            "none",
+            0
+          ]
+        ]
+      }
+    ],
+    "first_transition_low": {
+      "expense": "0",
+      "burden": "0",
+      "output": "14/5",
+      "branches": [
+        [
+          "none",
+          "4/5",
+          {
+            "t": 1,
+            "x": 1,
+            "b": 2,
+            "treasury": 5,
+            "ready": 0,
+            "p": "19/20",
+            "unlock": -1
+          }
+        ],
+        [
+          "none",
+          "1/5",
+          {
+            "t": 1,
+            "x": 3,
+            "b": 6,
+            "treasury": 5,
+            "ready": 0,
+            "p": "19/20",
+            "unlock": -1
+          }
+        ]
+      ],
+      "prefix_checks": 2
+    },
+    "first_transition_high": {
+      "expense": "0",
+      "burden": "0",
+      "output": "14/5",
+      "branches": [
+        [
+          "none",
+          "4/5",
+          {
+            "t": 1,
+            "x": 1,
+            "b": 3,
+            "treasury": 4,
+            "ready": 0,
+            "p": "19/20",
+            "unlock": -1
+          }
+        ],
+        [
+          "none",
+          "1/5",
+          {
+            "t": 1,
+            "x": 3,
+            "b": 7,
+            "treasury": 4,
+            "ready": 0,
+            "p": "19/20",
+            "unlock": -1
+          }
+        ]
+      ],
+      "prefix_checks": 2
+    }
+  },
+  "cache_info": "CacheInfo(hits=42, misses=56, maxsize=None, currsize=56)"
+}

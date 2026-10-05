@@ -1,0 +1,11 @@
+Independent read-only model audit: PASS (current independent-draw amendment).
+
+Reviewed environment.json, public-cases.json, build_cases.py, verify.py and current verification.json. No author files were changed.
+
+Reconstructed a separate exact-rational solver from the public text tables alone. Every feasible choice value, continuation value and complete optimal tie set matched the saved oracle at all 74 reachable history states (22/22/7/7/8/8). Root expected losses: A01=3, A02=7, A03=3, A04=8, A05=5, A06=2. Optimal first choices respectively: {share_a,share_b}; {choose_0,choose_1}; open_panel; fallback; option_a; inspect.
+
+Public tables specify all priors, deterministic responses, fees, residual losses, durations, prerequisites and limits. Cash feasibility correctly includes upfront fees only; time feasibility includes the terminal action. Residual losses enter expected loss but do not consume cash. Posterior beliefs are prior mass conditioned on responses. Query fees are charged exactly once and all ties are retained.
+
+Controlled pair differences are exactly the two share fees, the deadline, and one terminal residual entry, apart from case IDs. Private realized worlds are excluded before Bellman evaluation. The amended builder and verifier use six sequential independent uniform draws, preserving listed priors across the six-episode context; fixed realizations are reused across conditions/repetitions. The prior paired-draw wording issue is resolved. Private seed, draws and oracle results are absent from public-cases.json.
+
+Public stimulus count: 650 alphanumeric/numeric tokens including all table entries. Full public JSON count including metadata: 763. Both are below 1800. Current verifier file hashes agree with current source/model files. No remaining substantive model issue found.

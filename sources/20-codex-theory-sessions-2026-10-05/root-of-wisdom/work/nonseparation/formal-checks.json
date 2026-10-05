@@ -1,0 +1,40 @@
+{
+  "status": "all assertions passed",
+  "arithmetic": "exact integer arithmetic; exhaustive weights 0, 1, 2 on six four-site edges",
+  "counts": {
+    "weighted_graphs": 729,
+    "connected_graphs": 624,
+    "basis_states": 2916,
+    "subset_balance_checks": 46656,
+    "partition_balance_checks": 43740,
+    "nested_partition_checks": 174960,
+    "local_autonomy_iff_checks": 10206,
+    "connected_nontrivial_cut_checks": 8736
+  },
+  "zero_sum_tree_realizations": 343,
+  "cycle_current": {
+    "matrix": [
+      [
+        0,
+        -3,
+        3
+      ],
+      [
+        3,
+        0,
+        -3
+      ],
+      [
+        -3,
+        3,
+        0
+      ]
+    ],
+    "divergence": [
+      0,
+      0,
+      0
+    ]
+  },
+  "scope": "Constructed checks support the displayed conditional proofs; no physical, cosmological, or ethical empirical claim is tested."
+}

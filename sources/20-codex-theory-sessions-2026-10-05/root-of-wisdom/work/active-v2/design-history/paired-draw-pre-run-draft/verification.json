@@ -1,0 +1,2362 @@
+{
+  "status": "all_checks_passed",
+  "exact_arithmetic": "fractions.Fraction",
+  "objective": "Expected sum of query fees, terminal fee, and terminal residual loss",
+  "public_word_count": 650,
+  "word_count_method": "regex alphanumeric/numeric tokens over shared instructions and six statements",
+  "checks": [
+    "normalized rational priors",
+    "complete finite response/loss tables",
+    "unique disjoint query/action IDs",
+    "maximum two nonrepeatable queries",
+    "cash and deadline feasibility including terminal action",
+    "prerequisites enforced",
+    "fallback always feasible",
+    "exact controlled matched-pair differences",
+    "public rendering matches public model",
+    "all optimal initial ties retained",
+    "reproducible fixed-seed private worlds",
+    "oracle invariant to every private world selection",
+    "public statements under 1800 words"
+  ],
+  "sha256": {
+    "environment.json": "344dac9716e7124788a40c629b1579dc9e4fc2c4af4ed6194dd9968e93f367ff",
+    "public-cases.json": "0c224b081f19785eb588eb84cea1c37b91c2b7a73c6703fea59cd8561259af2c",
+    "verify.py": "4155568fb6aa921b140940881b1bf058fe7077b303f85dc70294e4b2b21156be",
+    "build_cases.py": "ee2c66fc69c24cb68a374d186c32061b1356bd800bb799d4442ee277d5f06072"
+  },
+  "results": [
+    {
+      "case_id": "A01",
+      "bellman_value": "3",
+      "optimal_first_choices": [
+        "share_a",
+        "share_b"
+      ],
+      "first_choice_values": {
+        "choose_0": "7",
+        "choose_1": "7",
+        "fallback": "8",
+        "share_a": "3",
+        "share_b": "3",
+        "status": "15/2"
+      },
+      "first_query_branches": {
+        "share_a": [
+          {
+            "response": "0",
+            "probability": "1/2",
+            "continuation_value": "2",
+            "optimal_next_choices": [
+              "share_b"
+            ]
+          },
+          {
+            "response": "1",
+            "probability": "1/2",
+            "continuation_value": "2",
+            "optimal_next_choices": [
+              "share_b"
+            ]
+          }
+        ],
+        "share_b": [
+          {
+            "response": "0",
+            "probability": "1/2",
+            "continuation_value": "2",
+            "optimal_next_choices": [
+              "share_a"
+            ]
+          },
+          {
+            "response": "1",
+            "probability": "1/2",
+            "continuation_value": "2",
+            "optimal_next_choices": [
+              "share_a"
+            ]
+          }
+        ],
+        "status": [
+          {
+            "response": "ready",
+            "probability": "1",
+            "continuation_value": "7",
+            "optimal_next_choices": [
+              "choose_0",
+              "choose_1"
+            ]
+          }
+        ]
+      },
+      "evaluated_states": 14,
+      "states": [
+        {
+          "support": [
+            "w00",
+            "w01",
+            "w10",
+            "w11"
+          ],
+          "completed_queries": [
+            "status"
+          ],
+          "spent_cash": "1/2",
+          "elapsed_time": 1,
+          "posterior": {
+            "w00": "1/4",
+            "w01": "1/4",
+            "w10": "1/4",
+            "w11": "1/4"
+          },
+          "value": "7",
+          "optimal_choices": [
+            "choose_0",
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_a": "8",
+            "share_b": "8"
+          },
+          "query_branches": {
+            "share_a": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ],
+            "share_b": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w00",
+            "w01",
+            "w10",
+            "w11"
+          ],
+          "completed_queries": [],
+          "spent_cash": "0",
+          "elapsed_time": 0,
+          "posterior": {
+            "w00": "1/4",
+            "w01": "1/4",
+            "w10": "1/4",
+            "w11": "1/4"
+          },
+          "value": "3",
+          "optimal_choices": [
+            "share_a",
+            "share_b"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_a": "3",
+            "share_b": "3",
+            "status": "15/2"
+          },
+          "query_branches": {
+            "share_a": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "2",
+                "optimal_next_choices": [
+                  "share_b"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "2",
+                "optimal_next_choices": [
+                  "share_b"
+                ]
+              }
+            ],
+            "share_b": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "2",
+                "optimal_next_choices": [
+                  "share_a"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "2",
+                "optimal_next_choices": [
+                  "share_a"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "ready",
+                "probability": "1",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w00",
+            "w10"
+          ],
+          "completed_queries": [
+            "share_a",
+            "status"
+          ],
+          "spent_cash": "3/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w00": "1/2",
+            "w10": "1/2"
+          },
+          "value": "7",
+          "optimal_choices": [
+            "choose_0",
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w00",
+            "w10"
+          ],
+          "completed_queries": [
+            "share_a"
+          ],
+          "spent_cash": "1",
+          "elapsed_time": 1,
+          "posterior": {
+            "w00": "1/2",
+            "w10": "1/2"
+          },
+          "value": "2",
+          "optimal_choices": [
+            "share_b"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_b": "2",
+            "status": "15/2"
+          },
+          "query_branches": {
+            "share_b": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_0"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_1"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "ready",
+                "probability": "1",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w00",
+            "w11"
+          ],
+          "completed_queries": [
+            "share_b",
+            "status"
+          ],
+          "spent_cash": "3/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w00": "1/2",
+            "w11": "1/2"
+          },
+          "value": "7",
+          "optimal_choices": [
+            "choose_0",
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w00",
+            "w11"
+          ],
+          "completed_queries": [
+            "share_b"
+          ],
+          "spent_cash": "1",
+          "elapsed_time": 1,
+          "posterior": {
+            "w00": "1/2",
+            "w11": "1/2"
+          },
+          "value": "2",
+          "optimal_choices": [
+            "share_a"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_a": "2",
+            "status": "15/2"
+          },
+          "query_branches": {
+            "share_a": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_0"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_1"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "ready",
+                "probability": "1",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w00"
+          ],
+          "completed_queries": [
+            "share_a",
+            "share_b"
+          ],
+          "spent_cash": "2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w00": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "choose_0"
+          ],
+          "choice_values": {
+            "choose_0": "1",
+            "choose_1": "13",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w01",
+            "w10"
+          ],
+          "completed_queries": [
+            "share_b",
+            "status"
+          ],
+          "spent_cash": "3/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w01": "1/2",
+            "w10": "1/2"
+          },
+          "value": "7",
+          "optimal_choices": [
+            "choose_0",
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w01",
+            "w10"
+          ],
+          "completed_queries": [
+            "share_b"
+          ],
+          "spent_cash": "1",
+          "elapsed_time": 1,
+          "posterior": {
+            "w01": "1/2",
+            "w10": "1/2"
+          },
+          "value": "2",
+          "optimal_choices": [
+            "share_a"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_a": "2",
+            "status": "15/2"
+          },
+          "query_branches": {
+            "share_a": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_1"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_0"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "ready",
+                "probability": "1",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w01",
+            "w11"
+          ],
+          "completed_queries": [
+            "share_a",
+            "status"
+          ],
+          "spent_cash": "3/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w01": "1/2",
+            "w11": "1/2"
+          },
+          "value": "7",
+          "optimal_choices": [
+            "choose_0",
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w01",
+            "w11"
+          ],
+          "completed_queries": [
+            "share_a"
+          ],
+          "spent_cash": "1",
+          "elapsed_time": 1,
+          "posterior": {
+            "w01": "1/2",
+            "w11": "1/2"
+          },
+          "value": "2",
+          "optimal_choices": [
+            "share_b"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_b": "2",
+            "status": "15/2"
+          },
+          "query_branches": {
+            "share_b": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_1"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_0"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "ready",
+                "probability": "1",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w01"
+          ],
+          "completed_queries": [
+            "share_a",
+            "share_b"
+          ],
+          "spent_cash": "2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w01": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "choose_0"
+          ],
+          "choice_values": {
+            "choose_0": "1",
+            "choose_1": "13",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w10"
+          ],
+          "completed_queries": [
+            "share_a",
+            "share_b"
+          ],
+          "spent_cash": "2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w10": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "13",
+            "choose_1": "1",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w11"
+          ],
+          "completed_queries": [
+            "share_a",
+            "share_b"
+          ],
+          "spent_cash": "2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w11": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "13",
+            "choose_1": "1",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        }
+      ]
+    },
+    {
+      "case_id": "A02",
+      "bellman_value": "7",
+      "optimal_first_choices": [
+        "choose_0",
+        "choose_1"
+      ],
+      "first_choice_values": {
+        "choose_0": "7",
+        "choose_1": "7",
+        "fallback": "8",
+        "share_a": "9",
+        "share_b": "9",
+        "status": "15/2"
+      },
+      "first_query_branches": {
+        "share_a": [
+          {
+            "response": "0",
+            "probability": "1/2",
+            "continuation_value": "5",
+            "optimal_next_choices": [
+              "share_b"
+            ]
+          },
+          {
+            "response": "1",
+            "probability": "1/2",
+            "continuation_value": "5",
+            "optimal_next_choices": [
+              "share_b"
+            ]
+          }
+        ],
+        "share_b": [
+          {
+            "response": "0",
+            "probability": "1/2",
+            "continuation_value": "5",
+            "optimal_next_choices": [
+              "share_a"
+            ]
+          },
+          {
+            "response": "1",
+            "probability": "1/2",
+            "continuation_value": "5",
+            "optimal_next_choices": [
+              "share_a"
+            ]
+          }
+        ],
+        "status": [
+          {
+            "response": "ready",
+            "probability": "1",
+            "continuation_value": "7",
+            "optimal_next_choices": [
+              "choose_0",
+              "choose_1"
+            ]
+          }
+        ]
+      },
+      "evaluated_states": 14,
+      "states": [
+        {
+          "support": [
+            "w00",
+            "w01",
+            "w10",
+            "w11"
+          ],
+          "completed_queries": [
+            "status"
+          ],
+          "spent_cash": "1/2",
+          "elapsed_time": 1,
+          "posterior": {
+            "w00": "1/4",
+            "w01": "1/4",
+            "w10": "1/4",
+            "w11": "1/4"
+          },
+          "value": "7",
+          "optimal_choices": [
+            "choose_0",
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_a": "11",
+            "share_b": "11"
+          },
+          "query_branches": {
+            "share_a": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ],
+            "share_b": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w00",
+            "w01",
+            "w10",
+            "w11"
+          ],
+          "completed_queries": [],
+          "spent_cash": "0",
+          "elapsed_time": 0,
+          "posterior": {
+            "w00": "1/4",
+            "w01": "1/4",
+            "w10": "1/4",
+            "w11": "1/4"
+          },
+          "value": "7",
+          "optimal_choices": [
+            "choose_0",
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_a": "9",
+            "share_b": "9",
+            "status": "15/2"
+          },
+          "query_branches": {
+            "share_a": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "5",
+                "optimal_next_choices": [
+                  "share_b"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "5",
+                "optimal_next_choices": [
+                  "share_b"
+                ]
+              }
+            ],
+            "share_b": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "5",
+                "optimal_next_choices": [
+                  "share_a"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "5",
+                "optimal_next_choices": [
+                  "share_a"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "ready",
+                "probability": "1",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w00",
+            "w10"
+          ],
+          "completed_queries": [
+            "share_a",
+            "status"
+          ],
+          "spent_cash": "9/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w00": "1/2",
+            "w10": "1/2"
+          },
+          "value": "7",
+          "optimal_choices": [
+            "choose_0",
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w00",
+            "w10"
+          ],
+          "completed_queries": [
+            "share_a"
+          ],
+          "spent_cash": "4",
+          "elapsed_time": 1,
+          "posterior": {
+            "w00": "1/2",
+            "w10": "1/2"
+          },
+          "value": "5",
+          "optimal_choices": [
+            "share_b"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_b": "5",
+            "status": "15/2"
+          },
+          "query_branches": {
+            "share_b": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_0"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_1"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "ready",
+                "probability": "1",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w00",
+            "w11"
+          ],
+          "completed_queries": [
+            "share_b",
+            "status"
+          ],
+          "spent_cash": "9/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w00": "1/2",
+            "w11": "1/2"
+          },
+          "value": "7",
+          "optimal_choices": [
+            "choose_0",
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w00",
+            "w11"
+          ],
+          "completed_queries": [
+            "share_b"
+          ],
+          "spent_cash": "4",
+          "elapsed_time": 1,
+          "posterior": {
+            "w00": "1/2",
+            "w11": "1/2"
+          },
+          "value": "5",
+          "optimal_choices": [
+            "share_a"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_a": "5",
+            "status": "15/2"
+          },
+          "query_branches": {
+            "share_a": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_0"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_1"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "ready",
+                "probability": "1",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w00"
+          ],
+          "completed_queries": [
+            "share_a",
+            "share_b"
+          ],
+          "spent_cash": "8",
+          "elapsed_time": 2,
+          "posterior": {
+            "w00": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "choose_0"
+          ],
+          "choice_values": {
+            "choose_0": "1",
+            "choose_1": "13",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w01",
+            "w10"
+          ],
+          "completed_queries": [
+            "share_b",
+            "status"
+          ],
+          "spent_cash": "9/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w01": "1/2",
+            "w10": "1/2"
+          },
+          "value": "7",
+          "optimal_choices": [
+            "choose_0",
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w01",
+            "w10"
+          ],
+          "completed_queries": [
+            "share_b"
+          ],
+          "spent_cash": "4",
+          "elapsed_time": 1,
+          "posterior": {
+            "w01": "1/2",
+            "w10": "1/2"
+          },
+          "value": "5",
+          "optimal_choices": [
+            "share_a"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_a": "5",
+            "status": "15/2"
+          },
+          "query_branches": {
+            "share_a": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_1"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_0"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "ready",
+                "probability": "1",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w01",
+            "w11"
+          ],
+          "completed_queries": [
+            "share_a",
+            "status"
+          ],
+          "spent_cash": "9/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "w01": "1/2",
+            "w11": "1/2"
+          },
+          "value": "7",
+          "optimal_choices": [
+            "choose_0",
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w01",
+            "w11"
+          ],
+          "completed_queries": [
+            "share_a"
+          ],
+          "spent_cash": "4",
+          "elapsed_time": 1,
+          "posterior": {
+            "w01": "1/2",
+            "w11": "1/2"
+          },
+          "value": "5",
+          "optimal_choices": [
+            "share_b"
+          ],
+          "choice_values": {
+            "choose_0": "7",
+            "choose_1": "7",
+            "fallback": "8",
+            "share_b": "5",
+            "status": "15/2"
+          },
+          "query_branches": {
+            "share_b": [
+              {
+                "response": "0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_1"
+                ]
+              },
+              {
+                "response": "1",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "choose_0"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "ready",
+                "probability": "1",
+                "continuation_value": "7",
+                "optimal_next_choices": [
+                  "choose_0",
+                  "choose_1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "w01"
+          ],
+          "completed_queries": [
+            "share_a",
+            "share_b"
+          ],
+          "spent_cash": "8",
+          "elapsed_time": 2,
+          "posterior": {
+            "w01": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "choose_0"
+          ],
+          "choice_values": {
+            "choose_0": "1",
+            "choose_1": "13",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w10"
+          ],
+          "completed_queries": [
+            "share_a",
+            "share_b"
+          ],
+          "spent_cash": "8",
+          "elapsed_time": 2,
+          "posterior": {
+            "w10": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "13",
+            "choose_1": "1",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "w11"
+          ],
+          "completed_queries": [
+            "share_a",
+            "share_b"
+          ],
+          "spent_cash": "8",
+          "elapsed_time": 2,
+          "posterior": {
+            "w11": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "choose_1"
+          ],
+          "choice_values": {
+            "choose_0": "13",
+            "choose_1": "1",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        }
+      ]
+    },
+    {
+      "case_id": "A03",
+      "bellman_value": "3",
+      "optimal_first_choices": [
+        "open_panel"
+      ],
+      "first_choice_values": {
+        "repair_0": "11",
+        "repair_1": "11",
+        "fallback": "8",
+        "open_panel": "3",
+        "status": "17/2"
+      },
+      "first_query_branches": {
+        "open_panel": [
+          {
+            "response": "opened",
+            "probability": "1",
+            "continuation_value": "2",
+            "optimal_next_choices": [
+              "diagnose"
+            ]
+          }
+        ],
+        "status": [
+          {
+            "response": "online",
+            "probability": "1",
+            "continuation_value": "8",
+            "optimal_next_choices": [
+              "fallback"
+            ]
+          }
+        ]
+      },
+      "evaluated_states": 6,
+      "states": [
+        {
+          "support": [
+            "fault_0",
+            "fault_1"
+          ],
+          "completed_queries": [
+            "open_panel",
+            "status"
+          ],
+          "spent_cash": "3/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "value": "8",
+          "optimal_choices": [
+            "fallback"
+          ],
+          "choice_values": {
+            "repair_0": "11",
+            "repair_1": "11",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "fault_0",
+            "fault_1"
+          ],
+          "completed_queries": [
+            "open_panel"
+          ],
+          "spent_cash": "1",
+          "elapsed_time": 1,
+          "posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "value": "2",
+          "optimal_choices": [
+            "diagnose"
+          ],
+          "choice_values": {
+            "repair_0": "11",
+            "repair_1": "11",
+            "fallback": "8",
+            "diagnose": "2",
+            "status": "17/2"
+          },
+          "query_branches": {
+            "diagnose": [
+              {
+                "response": "fault_0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "repair_0"
+                ]
+              },
+              {
+                "response": "fault_1",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "repair_1"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "online",
+                "probability": "1",
+                "continuation_value": "8",
+                "optimal_next_choices": [
+                  "fallback"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "fault_0",
+            "fault_1"
+          ],
+          "completed_queries": [
+            "status"
+          ],
+          "spent_cash": "1/2",
+          "elapsed_time": 1,
+          "posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "value": "8",
+          "optimal_choices": [
+            "fallback"
+          ],
+          "choice_values": {
+            "repair_0": "11",
+            "repair_1": "11",
+            "fallback": "8",
+            "open_panel": "9"
+          },
+          "query_branches": {
+            "open_panel": [
+              {
+                "response": "opened",
+                "probability": "1",
+                "continuation_value": "8",
+                "optimal_next_choices": [
+                  "fallback"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "fault_0",
+            "fault_1"
+          ],
+          "completed_queries": [],
+          "spent_cash": "0",
+          "elapsed_time": 0,
+          "posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "value": "3",
+          "optimal_choices": [
+            "open_panel"
+          ],
+          "choice_values": {
+            "repair_0": "11",
+            "repair_1": "11",
+            "fallback": "8",
+            "open_panel": "3",
+            "status": "17/2"
+          },
+          "query_branches": {
+            "open_panel": [
+              {
+                "response": "opened",
+                "probability": "1",
+                "continuation_value": "2",
+                "optimal_next_choices": [
+                  "diagnose"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "online",
+                "probability": "1",
+                "continuation_value": "8",
+                "optimal_next_choices": [
+                  "fallback"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "fault_0"
+          ],
+          "completed_queries": [
+            "diagnose",
+            "open_panel"
+          ],
+          "spent_cash": "2",
+          "elapsed_time": 3,
+          "posterior": {
+            "fault_0": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "repair_0"
+          ],
+          "choice_values": {
+            "repair_0": "1",
+            "repair_1": "21",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "fault_1"
+          ],
+          "completed_queries": [
+            "diagnose",
+            "open_panel"
+          ],
+          "spent_cash": "2",
+          "elapsed_time": 3,
+          "posterior": {
+            "fault_1": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "repair_1"
+          ],
+          "choice_values": {
+            "repair_0": "21",
+            "repair_1": "1",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        }
+      ]
+    },
+    {
+      "case_id": "A04",
+      "bellman_value": "8",
+      "optimal_first_choices": [
+        "fallback"
+      ],
+      "first_choice_values": {
+        "repair_0": "11",
+        "repair_1": "11",
+        "fallback": "8",
+        "open_panel": "9",
+        "status": "17/2"
+      },
+      "first_query_branches": {
+        "open_panel": [
+          {
+            "response": "opened",
+            "probability": "1",
+            "continuation_value": "8",
+            "optimal_next_choices": [
+              "fallback"
+            ]
+          }
+        ],
+        "status": [
+          {
+            "response": "online",
+            "probability": "1",
+            "continuation_value": "8",
+            "optimal_next_choices": [
+              "fallback"
+            ]
+          }
+        ]
+      },
+      "evaluated_states": 6,
+      "states": [
+        {
+          "support": [
+            "fault_0",
+            "fault_1"
+          ],
+          "completed_queries": [
+            "open_panel",
+            "status"
+          ],
+          "spent_cash": "3/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "value": "8",
+          "optimal_choices": [
+            "fallback"
+          ],
+          "choice_values": {
+            "repair_0": "11",
+            "repair_1": "11",
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "fault_0",
+            "fault_1"
+          ],
+          "completed_queries": [
+            "open_panel"
+          ],
+          "spent_cash": "1",
+          "elapsed_time": 1,
+          "posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "value": "8",
+          "optimal_choices": [
+            "fallback"
+          ],
+          "choice_values": {
+            "repair_0": "11",
+            "repair_1": "11",
+            "fallback": "8",
+            "diagnose": "9",
+            "status": "17/2"
+          },
+          "query_branches": {
+            "diagnose": [
+              {
+                "response": "fault_0",
+                "probability": "1/2",
+                "continuation_value": "8",
+                "optimal_next_choices": [
+                  "fallback"
+                ]
+              },
+              {
+                "response": "fault_1",
+                "probability": "1/2",
+                "continuation_value": "8",
+                "optimal_next_choices": [
+                  "fallback"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "online",
+                "probability": "1",
+                "continuation_value": "8",
+                "optimal_next_choices": [
+                  "fallback"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "fault_0",
+            "fault_1"
+          ],
+          "completed_queries": [
+            "status"
+          ],
+          "spent_cash": "1/2",
+          "elapsed_time": 1,
+          "posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "value": "8",
+          "optimal_choices": [
+            "fallback"
+          ],
+          "choice_values": {
+            "repair_0": "11",
+            "repair_1": "11",
+            "fallback": "8",
+            "open_panel": "9"
+          },
+          "query_branches": {
+            "open_panel": [
+              {
+                "response": "opened",
+                "probability": "1",
+                "continuation_value": "8",
+                "optimal_next_choices": [
+                  "fallback"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "fault_0",
+            "fault_1"
+          ],
+          "completed_queries": [],
+          "spent_cash": "0",
+          "elapsed_time": 0,
+          "posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "value": "8",
+          "optimal_choices": [
+            "fallback"
+          ],
+          "choice_values": {
+            "repair_0": "11",
+            "repair_1": "11",
+            "fallback": "8",
+            "open_panel": "9",
+            "status": "17/2"
+          },
+          "query_branches": {
+            "open_panel": [
+              {
+                "response": "opened",
+                "probability": "1",
+                "continuation_value": "8",
+                "optimal_next_choices": [
+                  "fallback"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "online",
+                "probability": "1",
+                "continuation_value": "8",
+                "optimal_next_choices": [
+                  "fallback"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "fault_0"
+          ],
+          "completed_queries": [
+            "diagnose",
+            "open_panel"
+          ],
+          "spent_cash": "2",
+          "elapsed_time": 3,
+          "posterior": {
+            "fault_0": "1"
+          },
+          "value": "8",
+          "optimal_choices": [
+            "fallback"
+          ],
+          "choice_values": {
+            "fallback": "8"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "fault_1"
+          ],
+          "completed_queries": [
+            "diagnose",
+            "open_panel"
+          ],
+          "spent_cash": "2",
+          "elapsed_time": 3,
+          "posterior": {
+            "fault_1": "1"
+          },
+          "value": "8",
+          "optimal_choices": [
+            "fallback"
+          ],
+          "choice_values": {
+            "fallback": "8"
+          },
+          "query_branches": {}
+        }
+      ]
+    },
+    {
+      "case_id": "A05",
+      "bellman_value": "5",
+      "optimal_first_choices": [
+        "option_a"
+      ],
+      "first_choice_values": {
+        "option_a": "5",
+        "option_b": "17/2",
+        "fallback": "10",
+        "inspect": "6",
+        "status": "11/2"
+      },
+      "first_query_branches": {
+        "inspect": [
+          {
+            "response": "state_0",
+            "probability": "1/2",
+            "continuation_value": "1",
+            "optimal_next_choices": [
+              "option_a"
+            ]
+          },
+          {
+            "response": "state_1",
+            "probability": "1/2",
+            "continuation_value": "9",
+            "optimal_next_choices": [
+              "option_a"
+            ]
+          }
+        ],
+        "status": [
+          {
+            "response": "calibrated",
+            "probability": "1",
+            "continuation_value": "5",
+            "optimal_next_choices": [
+              "option_a"
+            ]
+          }
+        ]
+      },
+      "evaluated_states": 6,
+      "states": [
+        {
+          "support": [
+            "state_0",
+            "state_1"
+          ],
+          "completed_queries": [
+            "status"
+          ],
+          "spent_cash": "1/2",
+          "elapsed_time": 1,
+          "posterior": {
+            "state_0": "1/2",
+            "state_1": "1/2"
+          },
+          "value": "5",
+          "optimal_choices": [
+            "option_a"
+          ],
+          "choice_values": {
+            "option_a": "5",
+            "option_b": "17/2",
+            "fallback": "10",
+            "inspect": "6"
+          },
+          "query_branches": {
+            "inspect": [
+              {
+                "response": "state_0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "option_a"
+                ]
+              },
+              {
+                "response": "state_1",
+                "probability": "1/2",
+                "continuation_value": "9",
+                "optimal_next_choices": [
+                  "option_a"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "state_0",
+            "state_1"
+          ],
+          "completed_queries": [],
+          "spent_cash": "0",
+          "elapsed_time": 0,
+          "posterior": {
+            "state_0": "1/2",
+            "state_1": "1/2"
+          },
+          "value": "5",
+          "optimal_choices": [
+            "option_a"
+          ],
+          "choice_values": {
+            "option_a": "5",
+            "option_b": "17/2",
+            "fallback": "10",
+            "inspect": "6",
+            "status": "11/2"
+          },
+          "query_branches": {
+            "inspect": [
+              {
+                "response": "state_0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "option_a"
+                ]
+              },
+              {
+                "response": "state_1",
+                "probability": "1/2",
+                "continuation_value": "9",
+                "optimal_next_choices": [
+                  "option_a"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "calibrated",
+                "probability": "1",
+                "continuation_value": "5",
+                "optimal_next_choices": [
+                  "option_a"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "state_0"
+          ],
+          "completed_queries": [
+            "inspect",
+            "status"
+          ],
+          "spent_cash": "3/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "state_0": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "option_a"
+          ],
+          "choice_values": {
+            "option_a": "1",
+            "option_b": "7",
+            "fallback": "10"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "state_0"
+          ],
+          "completed_queries": [
+            "inspect"
+          ],
+          "spent_cash": "1",
+          "elapsed_time": 1,
+          "posterior": {
+            "state_0": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "option_a"
+          ],
+          "choice_values": {
+            "option_a": "1",
+            "option_b": "7",
+            "fallback": "10",
+            "status": "3/2"
+          },
+          "query_branches": {
+            "status": [
+              {
+                "response": "calibrated",
+                "probability": "1",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "option_a"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "state_1"
+          ],
+          "completed_queries": [
+            "inspect",
+            "status"
+          ],
+          "spent_cash": "3/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "state_1": "1"
+          },
+          "value": "9",
+          "optimal_choices": [
+            "option_a"
+          ],
+          "choice_values": {
+            "option_a": "9",
+            "option_b": "10",
+            "fallback": "10"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "state_1"
+          ],
+          "completed_queries": [
+            "inspect"
+          ],
+          "spent_cash": "1",
+          "elapsed_time": 1,
+          "posterior": {
+            "state_1": "1"
+          },
+          "value": "9",
+          "optimal_choices": [
+            "option_a"
+          ],
+          "choice_values": {
+            "option_a": "9",
+            "option_b": "10",
+            "fallback": "10",
+            "status": "19/2"
+          },
+          "query_branches": {
+            "status": [
+              {
+                "response": "calibrated",
+                "probability": "1",
+                "continuation_value": "9",
+                "optimal_next_choices": [
+                  "option_a"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "A06",
+      "bellman_value": "2",
+      "optimal_first_choices": [
+        "inspect"
+      ],
+      "first_choice_values": {
+        "option_a": "5",
+        "option_b": "4",
+        "fallback": "10",
+        "inspect": "2",
+        "status": "5/2"
+      },
+      "first_query_branches": {
+        "inspect": [
+          {
+            "response": "state_0",
+            "probability": "1/2",
+            "continuation_value": "1",
+            "optimal_next_choices": [
+              "option_a"
+            ]
+          },
+          {
+            "response": "state_1",
+            "probability": "1/2",
+            "continuation_value": "1",
+            "optimal_next_choices": [
+              "option_b"
+            ]
+          }
+        ],
+        "status": [
+          {
+            "response": "calibrated",
+            "probability": "1",
+            "continuation_value": "2",
+            "optimal_next_choices": [
+              "inspect"
+            ]
+          }
+        ]
+      },
+      "evaluated_states": 6,
+      "states": [
+        {
+          "support": [
+            "state_0",
+            "state_1"
+          ],
+          "completed_queries": [
+            "status"
+          ],
+          "spent_cash": "1/2",
+          "elapsed_time": 1,
+          "posterior": {
+            "state_0": "1/2",
+            "state_1": "1/2"
+          },
+          "value": "2",
+          "optimal_choices": [
+            "inspect"
+          ],
+          "choice_values": {
+            "option_a": "5",
+            "option_b": "4",
+            "fallback": "10",
+            "inspect": "2"
+          },
+          "query_branches": {
+            "inspect": [
+              {
+                "response": "state_0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "option_a"
+                ]
+              },
+              {
+                "response": "state_1",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "option_b"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "state_0",
+            "state_1"
+          ],
+          "completed_queries": [],
+          "spent_cash": "0",
+          "elapsed_time": 0,
+          "posterior": {
+            "state_0": "1/2",
+            "state_1": "1/2"
+          },
+          "value": "2",
+          "optimal_choices": [
+            "inspect"
+          ],
+          "choice_values": {
+            "option_a": "5",
+            "option_b": "4",
+            "fallback": "10",
+            "inspect": "2",
+            "status": "5/2"
+          },
+          "query_branches": {
+            "inspect": [
+              {
+                "response": "state_0",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "option_a"
+                ]
+              },
+              {
+                "response": "state_1",
+                "probability": "1/2",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "option_b"
+                ]
+              }
+            ],
+            "status": [
+              {
+                "response": "calibrated",
+                "probability": "1",
+                "continuation_value": "2",
+                "optimal_next_choices": [
+                  "inspect"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "state_0"
+          ],
+          "completed_queries": [
+            "inspect",
+            "status"
+          ],
+          "spent_cash": "3/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "state_0": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "option_a"
+          ],
+          "choice_values": {
+            "option_a": "1",
+            "option_b": "7",
+            "fallback": "10"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "state_0"
+          ],
+          "completed_queries": [
+            "inspect"
+          ],
+          "spent_cash": "1",
+          "elapsed_time": 1,
+          "posterior": {
+            "state_0": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "option_a"
+          ],
+          "choice_values": {
+            "option_a": "1",
+            "option_b": "7",
+            "fallback": "10",
+            "status": "3/2"
+          },
+          "query_branches": {
+            "status": [
+              {
+                "response": "calibrated",
+                "probability": "1",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "option_a"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "support": [
+            "state_1"
+          ],
+          "completed_queries": [
+            "inspect",
+            "status"
+          ],
+          "spent_cash": "3/2",
+          "elapsed_time": 2,
+          "posterior": {
+            "state_1": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "option_b"
+          ],
+          "choice_values": {
+            "option_a": "9",
+            "option_b": "1",
+            "fallback": "10"
+          },
+          "query_branches": {}
+        },
+        {
+          "support": [
+            "state_1"
+          ],
+          "completed_queries": [
+            "inspect"
+          ],
+          "spent_cash": "1",
+          "elapsed_time": 1,
+          "posterior": {
+            "state_1": "1"
+          },
+          "value": "1",
+          "optimal_choices": [
+            "option_b"
+          ],
+          "choice_values": {
+            "option_a": "9",
+            "option_b": "1",
+            "fallback": "10",
+            "status": "3/2"
+          },
+          "query_branches": {
+            "status": [
+              {
+                "response": "calibrated",
+                "probability": "1",
+                "continuation_value": "1",
+                "optimal_next_choices": [
+                  "option_b"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,481 @@
+{
+  "status": "pass",
+  "scope": "Conditional synthetic model and internal arithmetic checks; no experiment in unrestricted invention.",
+  "support_frontier_exact_comparisons": 36,
+  "support_cases": [
+    {
+      "p1": "1/4",
+      "p2": "1/4",
+      "initial_multiples": [
+        1,
+        1
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "1/2",
+          "reachable_capacity_pairs": 6
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "1",
+          "reachable_capacity_pairs": 28
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "3/2",
+          "reachable_capacity_pairs": 120
+        }
+      ]
+    },
+    {
+      "p1": "1/4",
+      "p2": "1/4",
+      "initial_multiples": [
+        2,
+        1
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "3/4",
+          "reachable_capacity_pairs": 10
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "5/4",
+          "reachable_capacity_pairs": 36
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "7/4",
+          "reachable_capacity_pairs": 136
+        }
+      ]
+    },
+    {
+      "p1": "1/4",
+      "p2": "1/4",
+      "initial_multiples": [
+        1,
+        4
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "3/4",
+          "reachable_capacity_pairs": 10
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "3/2",
+          "reachable_capacity_pairs": 55
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "2",
+          "reachable_capacity_pairs": 171
+        }
+      ]
+    },
+    {
+      "p1": "1/4",
+      "p2": "3/4",
+      "initial_multiples": [
+        1,
+        1
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "0",
+          "reachable_capacity_pairs": 1
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "0",
+          "reachable_capacity_pairs": 1
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "0",
+          "reachable_capacity_pairs": 1
+        }
+      ]
+    },
+    {
+      "p1": "1/4",
+      "p2": "3/4",
+      "initial_multiples": [
+        2,
+        1
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "1/4",
+          "reachable_capacity_pairs": 3
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "1/4",
+          "reachable_capacity_pairs": 3
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "1/4",
+          "reachable_capacity_pairs": 3
+        }
+      ]
+    },
+    {
+      "p1": "1/4",
+      "p2": "3/4",
+      "initial_multiples": [
+        1,
+        4
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "3/4",
+          "reachable_capacity_pairs": 10
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "3/2",
+          "reachable_capacity_pairs": 55
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "3/2",
+          "reachable_capacity_pairs": 55
+        }
+      ]
+    },
+    {
+      "p1": "1/2",
+      "p2": "1/4",
+      "initial_multiples": [
+        1,
+        1
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "1/4",
+          "reachable_capacity_pairs": 3
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "1/2",
+          "reachable_capacity_pairs": 9
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "3/4",
+          "reachable_capacity_pairs": 27
+        }
+      ]
+    },
+    {
+      "p1": "1/2",
+      "p2": "1/4",
+      "initial_multiples": [
+        2,
+        1
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "3/4",
+          "reachable_capacity_pairs": 10
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "1",
+          "reachable_capacity_pairs": 21
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "5/4",
+          "reachable_capacity_pairs": 54
+        }
+      ]
+    },
+    {
+      "p1": "1/2",
+      "p2": "1/4",
+      "initial_multiples": [
+        1,
+        4
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "1/2",
+          "reachable_capacity_pairs": 6
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "1",
+          "reachable_capacity_pairs": 28
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "5/4",
+          "reachable_capacity_pairs": 66
+        }
+      ]
+    },
+    {
+      "p1": "1/2",
+      "p2": "1/2",
+      "initial_multiples": [
+        1,
+        1
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "0",
+          "reachable_capacity_pairs": 1
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "0",
+          "reachable_capacity_pairs": 1
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "0",
+          "reachable_capacity_pairs": 1
+        }
+      ]
+    },
+    {
+      "p1": "1/2",
+      "p2": "1/2",
+      "initial_multiples": [
+        2,
+        1
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "1/2",
+          "reachable_capacity_pairs": 6
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "1/2",
+          "reachable_capacity_pairs": 6
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "1/2",
+          "reachable_capacity_pairs": 6
+        }
+      ]
+    },
+    {
+      "p1": "1/2",
+      "p2": "1/2",
+      "initial_multiples": [
+        1,
+        4
+      ],
+      "checks": [
+        {
+          "steps": 1,
+          "work_in_step_units": "1/2",
+          "reachable_capacity_pairs": 6
+        },
+        {
+          "steps": 2,
+          "work_in_step_units": "1",
+          "reachable_capacity_pairs": 28
+        },
+        {
+          "steps": 3,
+          "work_in_step_units": "1",
+          "reachable_capacity_pairs": 28
+        }
+      ]
+    }
+  ],
+  "candidate_tree_cases": [
+    {
+      "samples": 3,
+      "threshold": 3,
+      "attempts": 2,
+      "budget": 12,
+      "probabilities": {
+        "good": "1539/4096",
+        "bad": "57/4096",
+        "none": "625/1024"
+      },
+      "decimal_probabilities": {
+        "good": 0.375732421875,
+        "bad": 0.013916015625,
+        "none": 0.6103515625
+      },
+      "audited_branch_leaves": 226,
+      "largest_branch_expenditure": 12
+    },
+    {
+      "samples": 1,
+      "threshold": 1,
+      "attempts": 4,
+      "budget": 12,
+      "probabilities": {
+        "good": "45/64",
+        "bad": "15/64",
+        "none": "1/16"
+      },
+      "decimal_probabilities": {
+        "good": 0.703125,
+        "bad": 0.234375,
+        "none": 0.0625
+      },
+      "audited_branch_leaves": 46,
+      "largest_branch_expenditure": 12
+    },
+    {
+      "samples": 2,
+      "threshold": 2,
+      "attempts": 2,
+      "budget": 12,
+      "probabilities": {
+        "good": "243/512",
+        "bad": "27/512",
+        "none": "121/256"
+      },
+      "decimal_probabilities": {
+        "good": 0.474609375,
+        "bad": 0.052734375,
+        "none": 0.47265625
+      },
+      "audited_branch_leaves": 50,
+      "largest_branch_expenditure": 10
+    },
+    {
+      "samples": 4,
+      "threshold": 4,
+      "attempts": 1,
+      "budget": 12,
+      "probabilities": {
+        "good": "81/512",
+        "bad": "1/512",
+        "none": "215/256"
+      },
+      "decimal_probabilities": {
+        "good": 0.158203125,
+        "bad": 0.001953125,
+        "none": 0.83984375
+      },
+      "audited_branch_leaves": 32,
+      "largest_branch_expenditure": 9
+    },
+    {
+      "samples": 6,
+      "threshold": 4,
+      "attempts": 1,
+      "budget": 12,
+      "probabilities": {
+        "good": "1701/4096",
+        "bad": "77/4096",
+        "none": "1159/2048"
+      },
+      "decimal_probabilities": {
+        "good": 0.415283203125,
+        "bad": 0.018798828125,
+        "none": 0.56591796875
+      },
+      "audited_branch_leaves": 128,
+      "largest_branch_expenditure": 11
+    },
+    {
+      "samples": 7,
+      "threshold": 5,
+      "attempts": 1,
+      "budget": 12,
+      "probabilities": {
+        "good": "12393/32768",
+        "bad": "211/32768",
+        "none": "5041/8192"
+      },
+      "decimal_probabilities": {
+        "good": 0.378204345703125,
+        "bad": 0.006439208984375,
+        "none": 0.6153564453125
+      },
+      "audited_branch_leaves": 256,
+      "largest_branch_expenditure": 12
+    },
+    {
+      "samples": 3,
+      "threshold": 3,
+      "attempts": 0,
+      "budget": 7,
+      "probabilities": {
+        "good": "0",
+        "bad": "0",
+        "none": "1"
+      },
+      "decimal_probabilities": {
+        "good": 0.0,
+        "bad": 0.0,
+        "none": 1.0
+      },
+      "audited_branch_leaves": 1,
+      "largest_branch_expenditure": 0
+    },
+    {
+      "samples": 3,
+      "threshold": 3,
+      "attempts": 1,
+      "budget": 8,
+      "probabilities": {
+        "good": "27/128",
+        "bad": "1/128",
+        "none": "25/32"
+      },
+      "decimal_probabilities": {
+        "good": 0.2109375,
+        "bad": 0.0078125,
+        "none": 0.78125
+      },
+      "audited_branch_leaves": 16,
+      "largest_branch_expenditure": 8
+    },
+    {
+      "samples": 3,
+      "threshold": 3,
+      "attempts": 1,
+      "budget": 11,
+      "probabilities": {
+        "good": "27/128",
+        "bad": "1/128",
+        "none": "25/32"
+      },
+      "decimal_probabilities": {
+        "good": 0.2109375,
+        "bad": 0.0078125,
+        "none": 0.78125
+      },
+      "audited_branch_leaves": 16,
+      "largest_branch_expenditure": 8
+    }
+  ],
+  "fixed_batch_policies_compared": 37,
+  "best_fixed_batch_at_false_installation_cap_0_02": {
+    "n": 6,
+    "threshold": 4,
+    "attempts": 1,
+    "good": "1701/4096",
+    "bad": "77/4096",
+    "none": "1159/2048"
+  },
+  "script_sha256": "69d717161d4a1a633f0985a08139bf5d6cfaf7df5b408360ed66b4fe6f42fb0b"
+}

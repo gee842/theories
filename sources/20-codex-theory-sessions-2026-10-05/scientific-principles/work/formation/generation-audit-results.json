@@ -1,0 +1,55 @@
+{
+  "independent_integer_enumeration": [
+    {
+      "noise": "0",
+      "procedure": "greedy",
+      "all_five_reported_metrics_exactly_matched": true,
+      "probability_of_adopting_nonpositive_deployment_gain": "0"
+    },
+    {
+      "noise": "0",
+      "procedure": "compositional",
+      "all_five_reported_metrics_exactly_matched": true,
+      "probability_of_adopting_nonpositive_deployment_gain": "0"
+    },
+    {
+      "noise": "1/10",
+      "procedure": "greedy",
+      "all_five_reported_metrics_exactly_matched": true,
+      "probability_of_adopting_nonpositive_deployment_gain": "1245052829871/5000000000000000"
+    },
+    {
+      "noise": "1/10",
+      "procedure": "compositional",
+      "all_five_reported_metrics_exactly_matched": true,
+      "probability_of_adopting_nonpositive_deployment_gain": "2757317933287/10000000000000000"
+    },
+    {
+      "noise": "1/4",
+      "procedure": "greedy",
+      "all_five_reported_metrics_exactly_matched": true,
+      "probability_of_adopting_nonpositive_deployment_gain": "12026799/2147483648"
+    },
+    {
+      "noise": "1/4",
+      "procedure": "compositional",
+      "all_five_reported_metrics_exactly_matched": true,
+      "probability_of_adopting_nonpositive_deployment_gain": "30958759/4294967296"
+    },
+    {
+      "noise": "1/2",
+      "procedure": "greedy",
+      "all_five_reported_metrics_exactly_matched": true,
+      "probability_of_adopting_nonpositive_deployment_gain": "495/32768"
+    },
+    {
+      "noise": "1/2",
+      "procedure": "compositional",
+      "all_five_reported_metrics_exactly_matched": true,
+      "probability_of_adopting_nonpositive_deployment_gain": "423/16384"
+    }
+  ],
+  "training_full_grid_balanced_labels_under_noiseless_XOR": "1",
+  "training_full_grid_balanced_labels_under_fair_independent_noise": "35/128",
+  "full_grid_balanced_labels_note": "Different transcript statistics despite zero individual-feature mutual information under IID uniform deployment."
+}

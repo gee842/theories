@@ -1,0 +1,287 @@
+{
+  "title": "Evidence for What continues when the material changes",
+  "date": "2026-10-05",
+  "status": "Constructed model and conceptual analysis; no new physical experiment or raw-data reanalysis.",
+  "reports": [
+    {
+      "path": "outputs/identity-through-change.md",
+      "sha256": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170"
+    },
+    {
+      "path": "outputs/identity-through-change-mathematics.md",
+      "sha256": "6c1ec924808f1f31b08703957c10cf802044133e9b85aad37cd27b1b23353dfc"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "A seeded positive population converges to a maintained equilibrium exactly when k*a_in>D.",
+      "basis": "General proof using exact material balance and the reciprocal-variable solution; finite rational checks supplement the proof."
+    },
+    {
+      "claim": "At the positive equilibrium the original molecular cohort fraction is exp(-D*t), while inherited ancestry fractions stay constant in the neutral deterministic model.",
+      "basis": "Different label dynamics derived from the specified conversion and outflow rules; hypothetical labels, not experimental tracers."
+    },
+    {
+      "claim": "Halting both flows can retain catalyst and capacity while activity tends to zero.",
+      "basis": "Closed-system D=0 equations, with positive retained X and no catalyst degradation."
+    },
+    {
+      "claim": "The finite-volume count model eventually loses all X almost surely.",
+      "basis": "Projection onto a recurrent immigration-death chain; a separate first-jump proof establishes almost-sure hitting of total zero. No extinction-time estimate or stochastic simulation."
+    },
+    {
+      "claim": "The supplied present state and all stipulated future responses need not determine uninterrupted prior presence.",
+      "basis": "Two admissible open-reactor histories with identical present states and distinct historical predicates; an external reset is expressly stipulated. Nonfactorization and uniqueness proofs."
+    }
+  ],
+  "verification": {
+    "language": "Python 3, standard library only",
+    "program_path": "work/identity-through-change/mechanism/check_mechanism.py",
+    "program_sha256": "95c364cdbeb806c6551a482e3332724a048129a68e509a90bdc61fcac665f1c0",
+    "program_text": "\"\"\"Exact rational checks for a deliberately specified turnover model.\n\nThese verify algebraic identities and boundary cases, not empirical adequacy.\nOnly the Python standard library is used.\n\"\"\"\nfrom fractions import Fraction as F\nfrom itertools import product\nfrom math import factorial\nfrom pathlib import Path\nimport json\n\n\nclass Dual:\n    def __init__(self, v, d=0):\n        self.v, self.d = F(v), F(d)\n    def __add__(self, other):\n        other = other if isinstance(other, Dual) else Dual(other)\n        return Dual(self.v + other.v, self.d + other.d)\n    __radd__ = __add__\n    def __neg__(self):\n        return Dual(-self.v, -self.d)\n    def __sub__(self, other):\n        return self + (-other if isinstance(other, Dual) else -F(other))\n    def __rsub__(self, other):\n        return -self + other\n    def __mul__(self, other):\n        other = other if isinstance(other, Dual) else Dual(other)\n        return Dual(self.v * other.v, self.d * other.v + self.v * other.d)\n    __rmul__ = __mul__\n    def __truediv__(self, other):\n        other = other if isinstance(other, Dual) else Dual(other)\n        return Dual(self.v / other.v,\n                    (self.d * other.v - self.v * other.d) / other.v**2)\n    def __rtruediv__(self, other):\n        return Dual(other) / self\n\n\nrates = [F(1, 2), F(1), F(2)]\ncounts = dict(parameter_sets=0, positive_equilibria=0, critical_sets=0,\n              below_threshold_sets=0, mass_balance_states=0,\n              exact_logistic_residuals=0, exact_critical_residuals=0,\n              original_cohort_ratio_checks=0, inherited_lineage_ratio_checks=0,\n              stochastic_projection_states=0, detailed_balance_pairs=0)\nfor k, D, ain in product(rates, repeat=3):\n    counts['parameter_sets'] += 1\n    r = k * ain - D\n    if r > 0:\n        counts['positive_equilibria'] += 1\n        a, x = D/k, ain-D/k\n        assert x > 0 and a > 0\n        assert D*(ain-a)-k*a*x == 0\n        assert k*a*x-D*x == 0\n        # Characteristic polynomial of the actual two-variable Jacobian.\n        j11, j12, j21, j22 = -D-k*x, -k*a, k*x, k*a-D\n        assert -(j11+j22) == D+r\n        assert j11*j22-j12*j21 == D*r\n        assert k*a*x == D*x\n    elif r == 0:\n        counts['critical_sets'] += 1\n    else:\n        counts['below_threshold_sets'] += 1\n    # Washout exists in every regime, with eigenvalues -D and r.\n    a, x = ain, F(0)\n    j11, j12, j21, j22 = -D-k*x, -k*a, k*x, k*a-D\n    assert j11+j22 == r-D\n    assert j11*j22-j12*j21 == -D*r\n    for a, x in product([F(0), F(1, 3), F(2)], repeat=2):\n        da = D*(ain-a)-k*a*x\n        dx = k*a*x-D*x\n        assert da+dx == D*(ain-a-x)\n        if a == 0:\n            assert da > 0\n        if x == 0:\n            assert dx == 0\n        counts['mass_balance_states'] += 1\n    for x0 in [ain/8, ain/2, ain]:\n        if r:\n            for z in ([F(1), F(3, 2), F(2), F(10)] if r > 0\n                      else [F(1), F(2, 3), F(1, 2), F(1, 10)]):\n                # z=exp(r t) and dz/dt=r z. Dual numbers differentiate\n                # the claimed closed solution, then compare the ODE.\n                zz = Dual(z, r*z)\n                xx = x0*zz/(1+k*x0*(zz-1)/r)\n                assert 0 < xx.v <= ain\n                assert xx.d == r*xx.v-k*xx.v**2\n                counts['exact_logistic_residuals'] += 1\n        else:\n            for t in [F(0), F(1, 3), F(1), F(10)]:\n                tt = Dual(t, 1)\n                xx = x0/(1+k*x0*tt)\n                assert xx.d == -k*xx.v**2\n                counts['exact_critical_residuals'] += 1\n    for a, x, fraction in product(rates, rates, [F(0), F(1, 4), F(1)]):\n        ell = fraction*x\n        dx = (k*a-D)*x\n        dell = -D*ell\n        dfraction = (dell*x-ell*dx)/x**2\n        assert dfraction == -k*a*fraction\n        counts['original_cohort_ratio_checks'] += 1\n        x1, x2 = fraction*x, (1-fraction)*x\n        dx1, dx2 = (k*a-D)*x1, (k*a-D)*x2\n        assert dx1+dx2 == dx\n        assert (dx1*x-x1*dx)/x**2 == 0\n        counts['inherited_lineage_ratio_checks'] += 1\n\n# The molecule model has substrate immigration, dilution of each molecule,\n# and A+X -> 2X. Check projection onto total molecule count.\nV, k, D, ain = F(3), F(1, 2), F(2, 3), F(5, 2)\narrival = D*V*ain\nfor na, nx in product(range(11), repeat=2):\n    events = [(na+1, nx, arrival),\n              (na-1, nx, D*na),\n              (na, nx-1, D*nx),\n              (na-1, nx+1, k*na*nx/V)]\n    events = [(a, x, rate) for a, x, rate in events if rate]\n    assert all(a >= 0 and x >= 0 for a, x, rate in events)\n    n = na+nx\n    assert sum(rate for a, x, rate in events if a+x == n+1) == arrival\n    assert sum(rate for a, x, rate in events if a+x == n-1) == D*n\n    if nx == 0:\n        assert all(x == 0 for a, x, rate in events)\n    counts['stochastic_projection_states'] += 1\nm = V*ain\nfor n in range(31):\n    # The common exp(-m) factor cancels in detailed balance.\n    pi_n = m**n/F(factorial(n))\n    pi_next = m**(n+1)/F(factorial(n+1))\n    assert pi_n*arrival == pi_next*D*(n+1)\n    counts['detailed_balance_pairs'] += 1\n\nresult = {\n    'status': 'all assertions passed',\n    'checks': counts,\n    'scope': 'Exact algebraic checks of a constructed model. No physical measurements or stochastic simulation.',\n    'analytic_results_not_replaced_by_grid': [\n        'Global convergence for all positive finite parameters and nonnegative initial concentrations',\n        'Original material cohort decays as exp(-D t)',\n        'Finite-volume molecule model eventually loses every X almost surely because total count is a recurrent immigration-death process',\n    ],\n}\nPath(__file__).with_name('mechanism-checks.json').write_text(json.dumps(result, indent=2)+'\\n')\nprint(json.dumps(result, indent=2))\n",
+    "results_path": "work/identity-through-change/mechanism/mechanism-checks.json",
+    "results_sha256": "1b8e48fdee9d7d39ab8f42e102a7c75e5c29a30673eabdec57b1eb3e0b30987c",
+    "results": {
+      "status": "all assertions passed",
+      "checks": {
+        "parameter_sets": 27,
+        "positive_equilibria": 10,
+        "critical_sets": 7,
+        "below_threshold_sets": 10,
+        "mass_balance_states": 243,
+        "exact_logistic_residuals": 240,
+        "exact_critical_residuals": 84,
+        "original_cohort_ratio_checks": 729,
+        "inherited_lineage_ratio_checks": 729,
+        "stochastic_projection_states": 121,
+        "detailed_balance_pairs": 31
+      },
+      "scope": "Exact algebraic checks of a constructed model. No physical measurements or stochastic simulation.",
+      "analytic_results_not_replaced_by_grid": [
+        "Global convergence for all positive finite parameters and nonnegative initial concentrations",
+        "Original material cohort decays as exp(-D t)",
+        "Finite-volume molecule model eventually loses every X almost surely because total count is a recurrent immigration-death process"
+      ]
+    },
+    "scope": "Exact algebraic checks and general proofs, not empirical validation. Checks were executed in the mechanism audit. The final review did not repeat numerical checks after prose-only corrections."
+  },
+  "primary_sources": [
+    {
+      "title": "Out-of-Equilibrium Self-Replication Allows Selection for Dynamic Kinetic Stability in a System of Competing Replicators",
+      "authors": "Liu et al.",
+      "year": 2022,
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202117605",
+      "review_scope": "Parent read primary main text and Figures 1–4. Source reviewer independently checked bibliographic metadata and abstract, not a second full-text review. No raw-data reanalysis.",
+      "role": "Empirical comparison; not verification of the supplied no-spontaneous-formation premise."
+    },
+    {
+      "title": "Non-equilibrium dissipative supramolecular materials with a tunable lifetime",
+      "authors": "Tena-Solsona et al.",
+      "year": 2017,
+      "url": "https://doi.org/10.1038/ncomms15895",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520059/",
+      "review_scope": "Source reviewer read indexed primary article text, experiments, discussion, and methods. No supporting information or raw-data review.",
+      "role": "Empirical comparison for dissolution and renewed formation. Individual identity interpretation is our inference."
+    },
+    {
+      "title": "A Simple Self-Maintaining Metabolic System: Robustness, Autocatalysis, Bistability",
+      "authors": "Piedrafita et al.",
+      "year": 2010,
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000872",
+      "review_scope": "Source reviewer read primary main sections and recovery figure caption. Equations displayed as images were not independently reconstructed.",
+      "role": "Theoretical contextual comparison, not an empirical study or independently replicated model."
+    }
+  ],
+  "prior_local_work": [
+    {
+      "path": "outputs/nonseparation-and-selfhood.md",
+      "sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6",
+      "review_scope": "Earlier local maintenance analysis read and acknowledged; material turnover is not claimed as a new discovery."
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/MECHANISM-MATH.md",
+      "sha256": "f57310d7e018154d28108c2d24ba00b6afb0f041d2996bf50ded797d3e6246e3",
+      "review_scope": "Source reviewer read the entire user-owned mechanism memo. Used for supplied-condition limits and the distinction between composition and absolute persistence. Read-only; no external peer review inferred."
+    }
+  ],
+  "peer_review": {
+    "identity_critic": "Reviewed both final reports. No material identity/history overclaim found. Corrected initial value of historical record bit and clarified reduced-description terminology.",
+    "mechanism_reviewer": "Reviewed both final reports. No material mathematical issue found. Added explicit retained-X condition to the stopped-flow intervention. Did not independently re-review empirical articles in this final pass.",
+    "corrections_applied": [
+      "Stopping both flows retains conversion capacity only with X still present.",
+      "History bit initialized to indicator of X presence at interval start; continuous-record assumption made explicit.",
+      "Fiber defined as histories with the same present state.",
+      "Quotient jargon replaced with direct explanation of lost historical information.",
+      "Truth is not called question-relative; information sufficiency is distinguished from definite historical truth."
+    ],
+    "audit_files": [
+      {
+        "path": "work/identity-through-change/identity-audit.md",
+        "sha256": "888c9b3aba13756299bfebed6ad123a5f8b3fb5cf6fba6977edc0bbaec09f0df"
+      },
+      {
+        "path": "work/identity-through-change/history-bridge.md",
+        "sha256": "140ac03cd35c994bf184b54c50f085df5062fcc15593e54c8a8179f7d63ffc80"
+      },
+      {
+        "path": "work/identity-through-change/source-audit.md",
+        "sha256": "4bb1eba46b4ee664e312f6dd1ef11f9999b8a0308c952172fefd4163189623cc"
+      },
+      {
+        "path": "work/identity-through-change/mechanism/mechanism-audit.md",
+        "sha256": "fba6fd87077db04703b1556a29bbc98ac6a3133a78b306eabc6e33463d240c81"
+      }
+    ]
+  },
+  "preservation": {
+    "baseline_count": 23,
+    "all_baseline_outputs_unchanged": true,
+    "files": [
+      {
+        "path": "outputs/active-inquiry-data.json",
+        "before_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "after_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/active-inquiry-findings.md",
+        "before_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "after_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/missing-possibilities-evidence.json",
+        "before_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "after_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/missing-possibility-check.json",
+        "before_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "after_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/next-root-evidence.json",
+        "before_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "after_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/next-root-joint-organization.md",
+        "before_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "after_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/nonseparation-and-selfhood.md",
+        "before_sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6",
+        "after_sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/nonseparation-evidence.json",
+        "before_sha256": "aeba2f74007c905012d75c98cd9e264b5d21294402eea7222d557cff8485c678",
+        "after_sha256": "aeba2f74007c905012d75c98cd9e264b5d21294402eea7222d557cff8485c678",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/noticing-missing-possibilities.md",
+        "before_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "after_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/reasoning-pilot-data.json",
+        "before_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "after_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/reasoning-pilot-findings.md",
+        "before_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "after_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/research-ledger.md",
+        "before_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "after_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-cross-session-assessment.md",
+        "before_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "after_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-cross-session-evidence.json",
+        "before_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "after_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-checks.json",
+        "before_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "after_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-v1.md",
+        "before_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "after_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-v2.md",
+        "before_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "after_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization.md",
+        "before_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "after_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-fundamental-evidence.json",
+        "before_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "after_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-substantive-evidence.json",
+        "before_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "after_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-synthesis.md",
+        "before_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "after_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/source-map.md",
+        "before_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "after_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/worked-test-results.json",
+        "before_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "after_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "unchanged": true
+      }
+    ],
+    "scope": "All 23 outputs captured at the start of this continuation remain byte-for-byte unchanged. Additional output files created outside this continuation are outside that baseline; none was modified here."
+  },
+  "limits": [
+    "A, X, the vessel, feed, mixing, and reaction law are stipulated, not derived.",
+    "Uninterrupted local presence is a historical predicate, not a universal criterion of numerical or personal identity.",
+    "A supplied model state is not the complete physical state of the universe.",
+    "The work does not establish monism, a final root of wisdom, or that every persistent thing requires uninterrupted activity."
+  ]
+}

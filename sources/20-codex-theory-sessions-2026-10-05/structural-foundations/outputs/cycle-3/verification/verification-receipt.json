@@ -1,0 +1,84 @@
+{
+  "created_utc": "2026-10-04T21:23:53.100922+00:00",
+  "status": "all three checkers passed in coordinator rerun",
+  "checks": [
+    {
+      "model": "constraint-transport",
+      "status": "all assertions passed",
+      "results": "constraint-transport-results.json"
+    },
+    {
+      "model": "integrated-scale",
+      "status": "all assertions passed",
+      "results": "integrated-scale-results.json"
+    },
+    {
+      "model": "paid-memory",
+      "status": "all assertions passed",
+      "results": "paid-memory-results.json"
+    }
+  ],
+  "files": [
+    {
+      "file": "check_constraint_transport.py",
+      "bytes": 8556,
+      "sha256": "433147352e0a163eacb71ec08eb17694878e0159c343084bd11a3eea1be55d74"
+    },
+    {
+      "file": "check_integrated_scale.py",
+      "bytes": 7737,
+      "sha256": "abcc2e48414472c4092945e87e59219c08be62982ceb8748eb1c96d5042f04a8"
+    },
+    {
+      "file": "check_paid_memory.py",
+      "bytes": 12554,
+      "sha256": "34fe6b11451379d9740af892b523d48db45e7778887f1506336f3a5de4ce6b6d"
+    },
+    {
+      "file": "constraint-transport-results.json",
+      "bytes": 3315,
+      "sha256": "2dfb06acc8f5434503876cc1031756cc182113f73660ae1432e0e12496219a4d"
+    },
+    {
+      "file": "integrated-scale-frontier.csv",
+      "bytes": 48768,
+      "sha256": "b129d1b694212d7085fe005f3cc418e5a1e5a6426ba57b5232f3bfd7285beea1"
+    },
+    {
+      "file": "integrated-scale-results.json",
+      "bytes": 13228,
+      "sha256": "79eecca73fc121b30de40678d17e9c6ab00be1c4a4a4a61ac285ab655b9b6562"
+    },
+    {
+      "file": "paid-memory-frontier.csv",
+      "bytes": 18495,
+      "sha256": "0bee6620bed076060e7ec5a8ac4055722950b3f3ec02fb5025311305c6aea28a"
+    },
+    {
+      "file": "paid-memory-results.json",
+      "bytes": 61939,
+      "sha256": "ed287f49944483f6bc244c014e270a0546c274af46b42d7afedd9850107b39b3"
+    }
+  ],
+  "scale_counts": {
+    "exact_games": 24,
+    "enumerated_states": 30536,
+    "design_rows": 2080,
+    "proportional_replications": 108
+  },
+  "memory_counts": {
+    "formula_matrix_cases": 306,
+    "finite_encoder_decoder_evaluations": 176256,
+    "time_coarsening_identities": 330,
+    "frontier_points": 300
+  },
+  "transport_counts": {
+    "precommitted_words": 125
+  },
+  "review": "Complementary agents reviewed proofs, numerical integration, prior-art scope, and memory interfaces. Coordinator inspected and reran all three checkers.",
+  "limits": [
+    "Finite computations check specified synthetic models, not empirical universality.",
+    "General transport theorems are mathematical arguments, not machine-verified proofs.",
+    "Paid finite succession and robust recurrent production have not been fused into one endogenous model."
+  ]
+}

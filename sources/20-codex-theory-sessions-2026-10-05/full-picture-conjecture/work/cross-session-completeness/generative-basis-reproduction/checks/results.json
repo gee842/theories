@@ -1,0 +1,1951 @@
+{
+  "status": "exact rational constructed mathematical checks, not empirical evidence",
+  "checkplan_sha256": "a7a059a839a1f9a62629ab0dc493a9014558b993cec4de00b61f4b14e5184ac9",
+  "code_sha256": "91bf94fdba56c8783a84b8ecfdc0d3c2a90f457ab10ee6af916aed8fd1e3c346",
+  "checks_passed": 744,
+  "checks": [
+    "rational 0 stable output",
+    "rational 0 coarser than every exact partition",
+    "rational 0 unique least-block stable answer",
+    "rational 1 stable output",
+    "rational 1 coarser than every exact partition",
+    "rational 1 unique least-block stable answer",
+    "rational 2 stable output",
+    "rational 2 coarser than every exact partition",
+    "rational 2 unique least-block stable answer",
+    "rational 3 stable output",
+    "rational 3 coarser than every exact partition",
+    "rational 3 unique least-block stable answer",
+    "rational 4 stable output",
+    "rational 4 coarser than every exact partition",
+    "rational 4 unique least-block stable answer",
+    "rational 5 stable output",
+    "rational 5 coarser than every exact partition",
+    "rational 5 unique least-block stable answer",
+    "rational 6 stable output",
+    "rational 6 coarser than every exact partition",
+    "rational 6 unique least-block stable answer",
+    "rational 7 stable output",
+    "rational 7 coarser than every exact partition",
+    "rational 7 unique least-block stable answer",
+    "rational 8 stable output",
+    "rational 8 coarser than every exact partition",
+    "rational 8 unique least-block stable answer",
+    "rational 9 stable output",
+    "rational 9 coarser than every exact partition",
+    "rational 9 unique least-block stable answer",
+    "rational 10 stable output",
+    "rational 10 coarser than every exact partition",
+    "rational 10 unique least-block stable answer",
+    "rational 11 stable output",
+    "rational 11 coarser than every exact partition",
+    "rational 11 unique least-block stable answer",
+    "rational 12 stable output",
+    "rational 12 coarser than every exact partition",
+    "rational 12 unique least-block stable answer",
+    "rational 13 stable output",
+    "rational 13 coarser than every exact partition",
+    "rational 13 unique least-block stable answer",
+    "rational 14 stable output",
+    "rational 14 coarser than every exact partition",
+    "rational 14 unique least-block stable answer",
+    "rational 15 stable output",
+    "rational 15 coarser than every exact partition",
+    "rational 15 unique least-block stable answer",
+    "rational 16 stable output",
+    "rational 16 coarser than every exact partition",
+    "rational 16 unique least-block stable answer",
+    "rational 17 stable output",
+    "rational 17 coarser than every exact partition",
+    "rational 17 unique least-block stable answer",
+    "rational 18 stable output",
+    "rational 18 coarser than every exact partition",
+    "rational 18 unique least-block stable answer",
+    "rational 19 stable output",
+    "rational 19 coarser than every exact partition",
+    "rational 19 unique least-block stable answer",
+    "rational 20 stable output",
+    "rational 20 coarser than every exact partition",
+    "rational 20 unique least-block stable answer",
+    "rational 21 stable output",
+    "rational 21 coarser than every exact partition",
+    "rational 21 unique least-block stable answer",
+    "rational 22 stable output",
+    "rational 22 coarser than every exact partition",
+    "rational 22 unique least-block stable answer",
+    "rational 23 stable output",
+    "rational 23 coarser than every exact partition",
+    "rational 23 unique least-block stable answer",
+    "rational 24 stable output",
+    "rational 24 coarser than every exact partition",
+    "rational 24 unique least-block stable answer",
+    "rational 25 stable output",
+    "rational 25 coarser than every exact partition",
+    "rational 25 unique least-block stable answer",
+    "rational 26 stable output",
+    "rational 26 coarser than every exact partition",
+    "rational 26 unique least-block stable answer",
+    "rational 27 stable output",
+    "rational 27 coarser than every exact partition",
+    "rational 27 unique least-block stable answer",
+    "rational 28 stable output",
+    "rational 28 coarser than every exact partition",
+    "rational 28 unique least-block stable answer",
+    "rational 29 stable output",
+    "rational 29 coarser than every exact partition",
+    "rational 29 unique least-block stable answer",
+    "rational 30 stable output",
+    "rational 30 coarser than every exact partition",
+    "rational 30 unique least-block stable answer",
+    "rational 31 stable output",
+    "rational 31 coarser than every exact partition",
+    "rational 31 unique least-block stable answer",
+    "rational 32 stable output",
+    "rational 32 coarser than every exact partition",
+    "rational 32 unique least-block stable answer",
+    "rational 33 stable output",
+    "rational 33 coarser than every exact partition",
+    "rational 33 unique least-block stable answer",
+    "rational 34 stable output",
+    "rational 34 coarser than every exact partition",
+    "rational 34 unique least-block stable answer",
+    "rational 35 stable output",
+    "rational 35 coarser than every exact partition",
+    "rational 35 unique least-block stable answer",
+    "paired stable output",
+    "paired coarser than every exact partition",
+    "paired unique least-block stable answer",
+    "paired coarsest partition",
+    "one-step cannot separate delayed pair",
+    "later refinement separates delayed pair",
+    "delayed stable output",
+    "delayed coarser than every exact partition",
+    "delayed unique least-block stable answer",
+    "expanded intervention interface strictly refines",
+    "new refusal distinction refines without changing dynamics",
+    "enabled action interface is preserved",
+    "old_interface stable output",
+    "old_interface coarser than every exact partition",
+    "old_interface unique least-block stable answer",
+    "new_interface stable output",
+    "new_interface coarser than every exact partition",
+    "new_interface unique least-block stable answer",
+    "expanded_normative_labels stable output",
+    "expanded_normative_labels coarser than every exact partition",
+    "expanded_normative_labels unique least-block stable answer",
+    "availability stable output",
+    "availability coarser than every exact partition",
+    "availability unique least-block stable answer",
+    "composition exact on common quotient",
+    "quotient-measurable constant mixture exact",
+    "hidden-dependent guard destroys exactness",
+    "identical fair marginals do not determine joint law",
+    "marginals match under shared and independent noise",
+    "rational_0 action 0 compiled row 0",
+    "rational_0 action 0 compiled row 1",
+    "rational_1 action 0 compiled row 0",
+    "rational_1 action 0 compiled row 1",
+    "rational_1 action 0 compiled row 2",
+    "rational_1 action 1 compiled row 0",
+    "rational_1 action 1 compiled row 1",
+    "rational_1 action 1 compiled row 2",
+    "rational_2 action 0 compiled row 0",
+    "rational_2 action 0 compiled row 1",
+    "rational_2 action 0 compiled row 2",
+    "rational_2 action 0 compiled row 3",
+    "rational_2 action 1 compiled row 0",
+    "rational_2 action 1 compiled row 1",
+    "rational_2 action 1 compiled row 2",
+    "rational_2 action 1 compiled row 3",
+    "rational_2 action 2 compiled row 0",
+    "rational_2 action 2 compiled row 1",
+    "rational_2 action 2 compiled row 2",
+    "rational_2 action 2 compiled row 3",
+    "rational_3 action 0 compiled row 0",
+    "rational_3 action 0 compiled row 1",
+    "rational_3 action 0 compiled row 2",
+    "rational_3 action 0 compiled row 3",
+    "rational_3 action 0 compiled row 4",
+    "rational_4 action 0 compiled row 0",
+    "rational_4 action 0 compiled row 1",
+    "rational_4 action 0 compiled row 2",
+    "rational_4 action 0 compiled row 3",
+    "rational_4 action 0 compiled row 4",
+    "rational_4 action 0 compiled row 5",
+    "rational_4 action 1 compiled row 0",
+    "rational_4 action 1 compiled row 1",
+    "rational_4 action 1 compiled row 2",
+    "rational_4 action 1 compiled row 3",
+    "rational_4 action 1 compiled row 4",
+    "rational_4 action 1 compiled row 5",
+    "rational_5 action 0 compiled row 0",
+    "rational_5 action 0 compiled row 1",
+    "rational_5 action 1 compiled row 0",
+    "rational_5 action 1 compiled row 1",
+    "rational_5 action 2 compiled row 0",
+    "rational_5 action 2 compiled row 1",
+    "rational_6 action 0 compiled row 0",
+    "rational_6 action 0 compiled row 1",
+    "rational_6 action 0 compiled row 2",
+    "rational_7 action 0 compiled row 0",
+    "rational_7 action 0 compiled row 1",
+    "rational_7 action 0 compiled row 2",
+    "rational_7 action 0 compiled row 3",
+    "rational_7 action 1 compiled row 0",
+    "rational_7 action 1 compiled row 1",
+    "rational_7 action 1 compiled row 2",
+    "rational_7 action 1 compiled row 3",
+    "rational_8 action 0 compiled row 0",
+    "rational_8 action 0 compiled row 1",
+    "rational_8 action 0 compiled row 2",
+    "rational_8 action 0 compiled row 3",
+    "rational_8 action 0 compiled row 4",
+    "rational_8 action 1 compiled row 0",
+    "rational_8 action 1 compiled row 1",
+    "rational_8 action 1 compiled row 2",
+    "rational_8 action 1 compiled row 3",
+    "rational_8 action 1 compiled row 4",
+    "rational_8 action 2 compiled row 0",
+    "rational_8 action 2 compiled row 1",
+    "rational_8 action 2 compiled row 2",
+    "rational_8 action 2 compiled row 3",
+    "rational_8 action 2 compiled row 4",
+    "rational_9 action 0 compiled row 0",
+    "rational_9 action 0 compiled row 1",
+    "rational_9 action 0 compiled row 2",
+    "rational_9 action 0 compiled row 3",
+    "rational_9 action 0 compiled row 4",
+    "rational_9 action 0 compiled row 5",
+    "rational_10 action 0 compiled row 0",
+    "rational_10 action 0 compiled row 1",
+    "rational_10 action 1 compiled row 0",
+    "rational_10 action 1 compiled row 1",
+    "rational_11 action 0 compiled row 0",
+    "rational_11 action 0 compiled row 1",
+    "rational_11 action 0 compiled row 2",
+    "rational_11 action 1 compiled row 0",
+    "rational_11 action 1 compiled row 1",
+    "rational_11 action 1 compiled row 2",
+    "rational_11 action 2 compiled row 0",
+    "rational_11 action 2 compiled row 1",
+    "rational_11 action 2 compiled row 2",
+    "rational_12 action 0 compiled row 0",
+    "rational_12 action 0 compiled row 1",
+    "rational_12 action 0 compiled row 2",
+    "rational_12 action 0 compiled row 3",
+    "rational_13 action 0 compiled row 0",
+    "rational_13 action 0 compiled row 1",
+    "rational_13 action 0 compiled row 2",
+    "rational_13 action 0 compiled row 3",
+    "rational_13 action 0 compiled row 4",
+    "rational_13 action 1 compiled row 0",
+    "rational_13 action 1 compiled row 1",
+    "rational_13 action 1 compiled row 2",
+    "rational_13 action 1 compiled row 3",
+    "rational_13 action 1 compiled row 4",
+    "rational_14 action 0 compiled row 0",
+    "rational_14 action 0 compiled row 1",
+    "rational_14 action 0 compiled row 2",
+    "rational_14 action 0 compiled row 3",
+    "rational_14 action 0 compiled row 4",
+    "rational_14 action 0 compiled row 5",
+    "rational_14 action 1 compiled row 0",
+    "rational_14 action 1 compiled row 1",
+    "rational_14 action 1 compiled row 2",
+    "rational_14 action 1 compiled row 3",
+    "rational_14 action 1 compiled row 4",
+    "rational_14 action 1 compiled row 5",
+    "rational_14 action 2 compiled row 0",
+    "rational_14 action 2 compiled row 1",
+    "rational_14 action 2 compiled row 2",
+    "rational_14 action 2 compiled row 3",
+    "rational_14 action 2 compiled row 4",
+    "rational_14 action 2 compiled row 5",
+    "rational_15 action 0 compiled row 0",
+    "rational_15 action 0 compiled row 1",
+    "rational_16 action 0 compiled row 0",
+    "rational_16 action 0 compiled row 1",
+    "rational_16 action 0 compiled row 2",
+    "rational_16 action 1 compiled row 0",
+    "rational_16 action 1 compiled row 1",
+    "rational_16 action 1 compiled row 2",
+    "rational_17 action 0 compiled row 0",
+    "rational_17 action 0 compiled row 1",
+    "rational_17 action 0 compiled row 2",
+    "rational_17 action 0 compiled row 3",
+    "rational_17 action 1 compiled row 0",
+    "rational_17 action 1 compiled row 1",
+    "rational_17 action 1 compiled row 2",
+    "rational_17 action 1 compiled row 3",
+    "rational_17 action 2 compiled row 0",
+    "rational_17 action 2 compiled row 1",
+    "rational_17 action 2 compiled row 2",
+    "rational_17 action 2 compiled row 3",
+    "rational_18 action 0 compiled row 0",
+    "rational_18 action 0 compiled row 1",
+    "rational_18 action 0 compiled row 2",
+    "rational_18 action 0 compiled row 3",
+    "rational_18 action 0 compiled row 4",
+    "rational_19 action 0 compiled row 0",
+    "rational_19 action 0 compiled row 1",
+    "rational_19 action 0 compiled row 2",
+    "rational_19 action 0 compiled row 3",
+    "rational_19 action 0 compiled row 4",
+    "rational_19 action 0 compiled row 5",
+    "rational_19 action 1 compiled row 0",
+    "rational_19 action 1 compiled row 1",
+    "rational_19 action 1 compiled row 2",
+    "rational_19 action 1 compiled row 3",
+    "rational_19 action 1 compiled row 4",
+    "rational_19 action 1 compiled row 5",
+    "rational_20 action 0 compiled row 0",
+    "rational_20 action 0 compiled row 1",
+    "rational_20 action 1 compiled row 0",
+    "rational_20 action 1 compiled row 1",
+    "rational_20 action 2 compiled row 0",
+    "rational_20 action 2 compiled row 1",
+    "rational_21 action 0 compiled row 0",
+    "rational_21 action 0 compiled row 1",
+    "rational_21 action 0 compiled row 2",
+    "rational_22 action 0 compiled row 0",
+    "rational_22 action 0 compiled row 1",
+    "rational_22 action 0 compiled row 2",
+    "rational_22 action 0 compiled row 3",
+    "rational_22 action 1 compiled row 0",
+    "rational_22 action 1 compiled row 1",
+    "rational_22 action 1 compiled row 2",
+    "rational_22 action 1 compiled row 3",
+    "rational_23 action 0 compiled row 0",
+    "rational_23 action 0 compiled row 1",
+    "rational_23 action 0 compiled row 2",
+    "rational_23 action 0 compiled row 3",
+    "rational_23 action 0 compiled row 4",
+    "rational_23 action 1 compiled row 0",
+    "rational_23 action 1 compiled row 1",
+    "rational_23 action 1 compiled row 2",
+    "rational_23 action 1 compiled row 3",
+    "rational_23 action 1 compiled row 4",
+    "rational_23 action 2 compiled row 0",
+    "rational_23 action 2 compiled row 1",
+    "rational_23 action 2 compiled row 2",
+    "rational_23 action 2 compiled row 3",
+    "rational_23 action 2 compiled row 4",
+    "rational_24 action 0 compiled row 0",
+    "rational_24 action 0 compiled row 1",
+    "rational_24 action 0 compiled row 2",
+    "rational_24 action 0 compiled row 3",
+    "rational_24 action 0 compiled row 4",
+    "rational_24 action 0 compiled row 5",
+    "rational_25 action 0 compiled row 0",
+    "rational_25 action 0 compiled row 1",
+    "rational_25 action 1 compiled row 0",
+    "rational_25 action 1 compiled row 1",
+    "rational_26 action 0 compiled row 0",
+    "rational_26 action 0 compiled row 1",
+    "rational_26 action 0 compiled row 2",
+    "rational_26 action 1 compiled row 0",
+    "rational_26 action 1 compiled row 1",
+    "rational_26 action 1 compiled row 2",
+    "rational_26 action 2 compiled row 0",
+    "rational_26 action 2 compiled row 1",
+    "rational_26 action 2 compiled row 2",
+    "rational_27 action 0 compiled row 0",
+    "rational_27 action 0 compiled row 1",
+    "rational_27 action 0 compiled row 2",
+    "rational_27 action 0 compiled row 3",
+    "rational_28 action 0 compiled row 0",
+    "rational_28 action 0 compiled row 1",
+    "rational_28 action 0 compiled row 2",
+    "rational_28 action 0 compiled row 3",
+    "rational_28 action 0 compiled row 4",
+    "rational_28 action 1 compiled row 0",
+    "rational_28 action 1 compiled row 1",
+    "rational_28 action 1 compiled row 2",
+    "rational_28 action 1 compiled row 3",
+    "rational_28 action 1 compiled row 4",
+    "rational_29 action 0 compiled row 0",
+    "rational_29 action 0 compiled row 1",
+    "rational_29 action 0 compiled row 2",
+    "rational_29 action 0 compiled row 3",
+    "rational_29 action 0 compiled row 4",
+    "rational_29 action 0 compiled row 5",
+    "rational_29 action 1 compiled row 0",
+    "rational_29 action 1 compiled row 1",
+    "rational_29 action 1 compiled row 2",
+    "rational_29 action 1 compiled row 3",
+    "rational_29 action 1 compiled row 4",
+    "rational_29 action 1 compiled row 5",
+    "rational_29 action 2 compiled row 0",
+    "rational_29 action 2 compiled row 1",
+    "rational_29 action 2 compiled row 2",
+    "rational_29 action 2 compiled row 3",
+    "rational_29 action 2 compiled row 4",
+    "rational_29 action 2 compiled row 5",
+    "rational_30 action 0 compiled row 0",
+    "rational_30 action 0 compiled row 1",
+    "rational_31 action 0 compiled row 0",
+    "rational_31 action 0 compiled row 1",
+    "rational_31 action 0 compiled row 2",
+    "rational_31 action 1 compiled row 0",
+    "rational_31 action 1 compiled row 1",
+    "rational_31 action 1 compiled row 2",
+    "rational_32 action 0 compiled row 0",
+    "rational_32 action 0 compiled row 1",
+    "rational_32 action 0 compiled row 2",
+    "rational_32 action 0 compiled row 3",
+    "rational_32 action 1 compiled row 0",
+    "rational_32 action 1 compiled row 1",
+    "rational_32 action 1 compiled row 2",
+    "rational_32 action 1 compiled row 3",
+    "rational_32 action 2 compiled row 0",
+    "rational_32 action 2 compiled row 1",
+    "rational_32 action 2 compiled row 2",
+    "rational_32 action 2 compiled row 3",
+    "rational_33 action 0 compiled row 0",
+    "rational_33 action 0 compiled row 1",
+    "rational_33 action 0 compiled row 2",
+    "rational_33 action 0 compiled row 3",
+    "rational_33 action 0 compiled row 4",
+    "rational_34 action 0 compiled row 0",
+    "rational_34 action 0 compiled row 1",
+    "rational_34 action 0 compiled row 2",
+    "rational_34 action 0 compiled row 3",
+    "rational_34 action 0 compiled row 4",
+    "rational_34 action 0 compiled row 5",
+    "rational_34 action 1 compiled row 0",
+    "rational_34 action 1 compiled row 1",
+    "rational_34 action 1 compiled row 2",
+    "rational_34 action 1 compiled row 3",
+    "rational_34 action 1 compiled row 4",
+    "rational_34 action 1 compiled row 5",
+    "rational_35 action 0 compiled row 0",
+    "rational_35 action 0 compiled row 1",
+    "rational_35 action 1 compiled row 0",
+    "rational_35 action 1 compiled row 1",
+    "rational_35 action 2 compiled row 0",
+    "rational_35 action 2 compiled row 1",
+    "paired action 0 compiled row 0",
+    "paired action 0 compiled row 1",
+    "paired action 0 compiled row 2",
+    "paired action 0 compiled row 3",
+    "paired action 1 compiled row 0",
+    "paired action 1 compiled row 1",
+    "paired action 1 compiled row 2",
+    "paired action 1 compiled row 3",
+    "delayed action 0 compiled row 0",
+    "delayed action 0 compiled row 1",
+    "delayed action 0 compiled row 2",
+    "delayed action 0 compiled row 3",
+    "delayed action 0 compiled row 4",
+    "old_interface action 0 compiled row 0",
+    "old_interface action 0 compiled row 1",
+    "old_interface action 0 compiled row 2",
+    "new_interface action 0 compiled row 0",
+    "new_interface action 0 compiled row 1",
+    "new_interface action 0 compiled row 2",
+    "new_interface action 1 compiled row 0",
+    "new_interface action 1 compiled row 1",
+    "new_interface action 1 compiled row 2",
+    "expanded_normative_labels action 0 compiled row 0",
+    "expanded_normative_labels action 0 compiled row 1",
+    "expanded_normative_labels action 0 compiled row 2",
+    "availability action 0 compiled row 0",
+    "availability action 0 compiled row 1",
+    "availability action 0 compiled row 2",
+    "one third is not dyadic",
+    "counter witness 0,1",
+    "counter witness 0,2",
+    "counter witness 0,3",
+    "counter witness 0,4",
+    "counter witness 0,5",
+    "counter witness 0,6",
+    "counter witness 0,7",
+    "counter witness 0,8",
+    "counter witness 0,9",
+    "counter witness 0,10",
+    "counter witness 0,11",
+    "counter witness 0,12",
+    "counter witness 0,13",
+    "counter witness 0,14",
+    "counter witness 0,15",
+    "counter witness 0,16",
+    "counter witness 0,17",
+    "counter witness 0,18",
+    "counter witness 0,19",
+    "counter witness 0,20",
+    "counter witness 1,2",
+    "counter witness 1,3",
+    "counter witness 1,4",
+    "counter witness 1,5",
+    "counter witness 1,6",
+    "counter witness 1,7",
+    "counter witness 1,8",
+    "counter witness 1,9",
+    "counter witness 1,10",
+    "counter witness 1,11",
+    "counter witness 1,12",
+    "counter witness 1,13",
+    "counter witness 1,14",
+    "counter witness 1,15",
+    "counter witness 1,16",
+    "counter witness 1,17",
+    "counter witness 1,18",
+    "counter witness 1,19",
+    "counter witness 1,20",
+    "counter witness 2,3",
+    "counter witness 2,4",
+    "counter witness 2,5",
+    "counter witness 2,6",
+    "counter witness 2,7",
+    "counter witness 2,8",
+    "counter witness 2,9",
+    "counter witness 2,10",
+    "counter witness 2,11",
+    "counter witness 2,12",
+    "counter witness 2,13",
+    "counter witness 2,14",
+    "counter witness 2,15",
+    "counter witness 2,16",
+    "counter witness 2,17",
+    "counter witness 2,18",
+    "counter witness 2,19",
+    "counter witness 2,20",
+    "counter witness 3,4",
+    "counter witness 3,5",
+    "counter witness 3,6",
+    "counter witness 3,7",
+    "counter witness 3,8",
+    "counter witness 3,9",
+    "counter witness 3,10",
+    "counter witness 3,11",
+    "counter witness 3,12",
+    "counter witness 3,13",
+    "counter witness 3,14",
+    "counter witness 3,15",
+    "counter witness 3,16",
+    "counter witness 3,17",
+    "counter witness 3,18",
+    "counter witness 3,19",
+    "counter witness 3,20",
+    "counter witness 4,5",
+    "counter witness 4,6",
+    "counter witness 4,7",
+    "counter witness 4,8",
+    "counter witness 4,9",
+    "counter witness 4,10",
+    "counter witness 4,11",
+    "counter witness 4,12",
+    "counter witness 4,13",
+    "counter witness 4,14",
+    "counter witness 4,15",
+    "counter witness 4,16",
+    "counter witness 4,17",
+    "counter witness 4,18",
+    "counter witness 4,19",
+    "counter witness 4,20",
+    "counter witness 5,6",
+    "counter witness 5,7",
+    "counter witness 5,8",
+    "counter witness 5,9",
+    "counter witness 5,10",
+    "counter witness 5,11",
+    "counter witness 5,12",
+    "counter witness 5,13",
+    "counter witness 5,14",
+    "counter witness 5,15",
+    "counter witness 5,16",
+    "counter witness 5,17",
+    "counter witness 5,18",
+    "counter witness 5,19",
+    "counter witness 5,20",
+    "counter witness 6,7",
+    "counter witness 6,8",
+    "counter witness 6,9",
+    "counter witness 6,10",
+    "counter witness 6,11",
+    "counter witness 6,12",
+    "counter witness 6,13",
+    "counter witness 6,14",
+    "counter witness 6,15",
+    "counter witness 6,16",
+    "counter witness 6,17",
+    "counter witness 6,18",
+    "counter witness 6,19",
+    "counter witness 6,20",
+    "counter witness 7,8",
+    "counter witness 7,9",
+    "counter witness 7,10",
+    "counter witness 7,11",
+    "counter witness 7,12",
+    "counter witness 7,13",
+    "counter witness 7,14",
+    "counter witness 7,15",
+    "counter witness 7,16",
+    "counter witness 7,17",
+    "counter witness 7,18",
+    "counter witness 7,19",
+    "counter witness 7,20",
+    "counter witness 8,9",
+    "counter witness 8,10",
+    "counter witness 8,11",
+    "counter witness 8,12",
+    "counter witness 8,13",
+    "counter witness 8,14",
+    "counter witness 8,15",
+    "counter witness 8,16",
+    "counter witness 8,17",
+    "counter witness 8,18",
+    "counter witness 8,19",
+    "counter witness 8,20",
+    "counter witness 9,10",
+    "counter witness 9,11",
+    "counter witness 9,12",
+    "counter witness 9,13",
+    "counter witness 9,14",
+    "counter witness 9,15",
+    "counter witness 9,16",
+    "counter witness 9,17",
+    "counter witness 9,18",
+    "counter witness 9,19",
+    "counter witness 9,20",
+    "counter witness 10,11",
+    "counter witness 10,12",
+    "counter witness 10,13",
+    "counter witness 10,14",
+    "counter witness 10,15",
+    "counter witness 10,16",
+    "counter witness 10,17",
+    "counter witness 10,18",
+    "counter witness 10,19",
+    "counter witness 10,20",
+    "counter witness 11,12",
+    "counter witness 11,13",
+    "counter witness 11,14",
+    "counter witness 11,15",
+    "counter witness 11,16",
+    "counter witness 11,17",
+    "counter witness 11,18",
+    "counter witness 11,19",
+    "counter witness 11,20",
+    "counter witness 12,13",
+    "counter witness 12,14",
+    "counter witness 12,15",
+    "counter witness 12,16",
+    "counter witness 12,17",
+    "counter witness 12,18",
+    "counter witness 12,19",
+    "counter witness 12,20",
+    "counter witness 13,14",
+    "counter witness 13,15",
+    "counter witness 13,16",
+    "counter witness 13,17",
+    "counter witness 13,18",
+    "counter witness 13,19",
+    "counter witness 13,20",
+    "counter witness 14,15",
+    "counter witness 14,16",
+    "counter witness 14,17",
+    "counter witness 14,18",
+    "counter witness 14,19",
+    "counter witness 14,20",
+    "counter witness 15,16",
+    "counter witness 15,17",
+    "counter witness 15,18",
+    "counter witness 15,19",
+    "counter witness 15,20",
+    "counter witness 16,17",
+    "counter witness 16,18",
+    "counter witness 16,19",
+    "counter witness 16,20",
+    "counter witness 17,18",
+    "counter witness 17,19",
+    "counter witness 17,20",
+    "counter witness 18,19",
+    "counter witness 18,20",
+    "counter witness 19,20",
+    "fixed safe rule requires no active renewal in this domain",
+    "rational_0 action monotonicity",
+    "rational_0 observable monotonicity",
+    "rational_1 action monotonicity",
+    "rational_1 observable monotonicity",
+    "rational_2 action monotonicity",
+    "rational_2 observable monotonicity",
+    "rational_3 action monotonicity",
+    "rational_3 observable monotonicity",
+    "rational_4 action monotonicity",
+    "rational_4 observable monotonicity",
+    "rational_5 action monotonicity",
+    "rational_5 observable monotonicity",
+    "rational_6 action monotonicity",
+    "rational_6 observable monotonicity",
+    "rational_7 action monotonicity",
+    "rational_7 observable monotonicity",
+    "rational_8 action monotonicity",
+    "rational_8 observable monotonicity",
+    "rational_9 action monotonicity",
+    "rational_9 observable monotonicity",
+    "rational_10 action monotonicity",
+    "rational_10 observable monotonicity",
+    "rational_11 action monotonicity",
+    "rational_11 observable monotonicity",
+    "rational_12 action monotonicity",
+    "rational_12 observable monotonicity",
+    "rational_13 action monotonicity",
+    "rational_13 observable monotonicity",
+    "rational_14 action monotonicity",
+    "rational_14 observable monotonicity",
+    "rational_15 action monotonicity",
+    "rational_15 observable monotonicity",
+    "rational_16 action monotonicity",
+    "rational_16 observable monotonicity",
+    "rational_17 action monotonicity",
+    "rational_17 observable monotonicity",
+    "rational_18 action monotonicity",
+    "rational_18 observable monotonicity",
+    "rational_19 action monotonicity",
+    "rational_19 observable monotonicity",
+    "rational_20 action monotonicity",
+    "rational_20 observable monotonicity",
+    "rational_21 action monotonicity",
+    "rational_21 observable monotonicity",
+    "rational_22 action monotonicity",
+    "rational_22 observable monotonicity",
+    "rational_23 action monotonicity",
+    "rational_23 observable monotonicity",
+    "rational_24 action monotonicity",
+    "rational_24 observable monotonicity",
+    "rational_25 action monotonicity",
+    "rational_25 observable monotonicity",
+    "rational_26 action monotonicity",
+    "rational_26 observable monotonicity",
+    "rational_27 action monotonicity",
+    "rational_27 observable monotonicity",
+    "rational_28 action monotonicity",
+    "rational_28 observable monotonicity",
+    "rational_29 action monotonicity",
+    "rational_29 observable monotonicity",
+    "rational_30 action monotonicity",
+    "rational_30 observable monotonicity",
+    "rational_31 action monotonicity",
+    "rational_31 observable monotonicity",
+    "rational_32 action monotonicity",
+    "rational_32 observable monotonicity",
+    "rational_33 action monotonicity",
+    "rational_33 observable monotonicity",
+    "rational_34 action monotonicity",
+    "rational_34 observable monotonicity",
+    "rational_35 action monotonicity",
+    "rational_35 observable monotonicity",
+    "paired action monotonicity",
+    "paired observable monotonicity",
+    "delayed action monotonicity",
+    "delayed observable monotonicity",
+    "old_interface action monotonicity",
+    "old_interface observable monotonicity",
+    "new_interface action monotonicity",
+    "new_interface observable monotonicity",
+    "expanded_normative_labels action monotonicity",
+    "expanded_normative_labels observable monotonicity",
+    "availability action monotonicity",
+    "availability observable monotonicity"
+  ],
+  "supplementary_system_count": 36,
+  "random_seed": 20261005,
+  "supplementary_partition_results": [
+    {
+      "states": 2,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "refinement_rounds": 0,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 2
+    },
+    {
+      "states": 3,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 5
+    },
+    {
+      "states": 4,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 15
+    },
+    {
+      "states": 5,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 52
+    },
+    {
+      "states": 6,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 203
+    },
+    {
+      "states": 2,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "refinement_rounds": 0,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 2
+    },
+    {
+      "states": 3,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 5
+    },
+    {
+      "states": 4,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 15
+    },
+    {
+      "states": 5,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 52
+    },
+    {
+      "states": 6,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 203
+    },
+    {
+      "states": 2,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "refinement_rounds": 0,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 2
+    },
+    {
+      "states": 3,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 5
+    },
+    {
+      "states": 4,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 15
+    },
+    {
+      "states": 5,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 52
+    },
+    {
+      "states": 6,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 203
+    },
+    {
+      "states": 2,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "refinement_rounds": 0,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 2
+    },
+    {
+      "states": 3,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 5
+    },
+    {
+      "states": 4,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 15
+    },
+    {
+      "states": 5,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "refinement_rounds": 2,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 52
+    },
+    {
+      "states": 6,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 203
+    },
+    {
+      "states": 2,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "refinement_rounds": 0,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 2
+    },
+    {
+      "states": 3,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 5
+    },
+    {
+      "states": 4,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 15
+    },
+    {
+      "states": 5,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 52
+    },
+    {
+      "states": 6,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 203
+    },
+    {
+      "states": 2,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "refinement_rounds": 0,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 2
+    },
+    {
+      "states": 3,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 5
+    },
+    {
+      "states": 4,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 15
+    },
+    {
+      "states": 5,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 52
+    },
+    {
+      "states": 6,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 203
+    },
+    {
+      "states": 2,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "refinement_rounds": 0,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 2
+    },
+    {
+      "states": 3,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 5
+    },
+    {
+      "states": 4,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 15
+    },
+    {
+      "states": 5,
+      "actions": 1,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "refinement_rounds": 2,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 52
+    },
+    {
+      "states": 6,
+      "actions": 2,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "refinement_rounds": 1,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 203
+    },
+    {
+      "states": 2,
+      "actions": 3,
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "refinement_rounds": 0,
+      "stable_partitions_examined": 1,
+      "all_partitions_examined": 2
+    }
+  ],
+  "paired": {
+    "states": 4,
+    "actions": 2,
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "refinement_rounds": 0,
+    "stable_partitions_examined": 2,
+    "all_partitions_examined": 15
+  },
+  "delayed": {
+    "states": 5,
+    "actions": 1,
+    "blocks": [
+      [
+        0
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ]
+    ],
+    "refinement_rounds": 2,
+    "stable_partitions_examined": 2,
+    "all_partitions_examined": 52
+  },
+  "delayed_trace": [
+    [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ]
+    ],
+    [
+      [
+        0
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ]
+    ]
+  ],
+  "old_interface_partition": [
+    [
+      0,
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "expanded_interface_partition": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "normative_partition": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "compiler_results": {
+    "rational_0/0": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_1/0": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_1/1": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_2/0": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_2/1": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_2/2": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_3/0": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_4/0": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_4/1": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_5/0": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_5/1": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_5/2": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_6/0": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_7/0": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_7/1": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_8/0": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_8/1": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_8/2": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_9/0": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_10/0": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_10/1": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_11/0": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_11/1": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_11/2": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_12/0": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_13/0": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_13/1": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_14/0": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_14/1": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_14/2": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_15/0": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_16/0": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_16/1": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_17/0": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_17/1": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_17/2": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_18/0": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_19/0": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_19/1": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_20/0": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_20/1": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_20/2": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_21/0": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_22/0": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_22/1": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_23/0": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_23/1": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_23/2": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_24/0": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_25/0": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_25/1": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_26/0": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_26/1": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_26/2": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_27/0": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_28/0": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_28/1": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_29/0": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_29/1": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_29/2": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_30/0": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_31/0": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_31/1": {
+      "width": 2,
+      "rows": 3
+    },
+    "rational_32/0": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_32/1": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_32/2": {
+      "width": 2,
+      "rows": 4
+    },
+    "rational_33/0": {
+      "width": 3,
+      "rows": 5
+    },
+    "rational_34/0": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_34/1": {
+      "width": 3,
+      "rows": 6
+    },
+    "rational_35/0": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_35/1": {
+      "width": 1,
+      "rows": 2
+    },
+    "rational_35/2": {
+      "width": 1,
+      "rows": 2
+    },
+    "paired/0": {
+      "width": 2,
+      "rows": 4
+    },
+    "paired/1": {
+      "width": 2,
+      "rows": 4
+    },
+    "delayed/0": {
+      "width": 3,
+      "rows": 5
+    },
+    "old_interface/0": {
+      "width": 2,
+      "rows": 3
+    },
+    "new_interface/0": {
+      "width": 2,
+      "rows": 3
+    },
+    "new_interface/1": {
+      "width": 2,
+      "rows": 3
+    },
+    "expanded_normative_labels/0": {
+      "width": 2,
+      "rows": 3
+    },
+    "availability/0": {
+      "width": 2,
+      "rows": 3
+    }
+  },
+  "counter_prefix_pair_witnesses": 210,
+  "joint_noise_witness": {
+    "independent_probability_equal": "1/2",
+    "shared_probability_equal": "1"
+  },
+  "limitations": [
+    "Compiler is a representation result using supplied kernel coefficients.",
+    "Atomic macrostep compilation does not preserve intermediate timing, work cost or observability.",
+    "A finite generating program can have infinitely many causal states.",
+    "Refinement need not give agents access to the distinctions it retains.",
+    "Exact partition minimality is not minimality among all latent stochastic models."
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "primary": {
+    "effect": 0.4259259259259259,
+    "se": 0.0874497700230933,
+    "df": 7.180357220208789,
+    "ci95": [
+      0.22018836724495702,
+      0.6316634846068947
+    ],
+    "two_sided_p": 0.0016870034984790743,
+    "group_weighted_sensitivity": 0.3986013986013986
+  },
+  "cells": {
+    "CNN": {
+      "sessions": 4,
+      "groups": 11,
+      "session_mean": 0.08333333333333333,
+      "session_variance": 0.02777777777777778,
+      "retained_groups": 1,
+      "group_mean": 0.09090909090909091,
+      "constant_es_groups": 10,
+      "mean_tokens_per_person_round": 84.5378787878788,
+      "mean_penalties_per_group_round": 0.33333333333333337
+    },
+    "FNN": {
+      "sessions": 5,
+      "groups": 11,
+      "session_mean": 0.5,
+      "session_variance": 0.25,
+      "retained_groups": 5,
+      "group_mean": 0.45454545454545453,
+      "constant_es_groups": 11,
+      "mean_tokens_per_person_round": 90.54545454545455,
+      "mean_penalties_per_group_round": 0.18181818181818182
+    },
+    "NCN": {
+      "sessions": 4,
+      "groups": 11,
+      "session_mean": 0.08333333333333333,
+      "session_variance": 0.02777777777777778,
+      "retained_groups": 1,
+      "group_mean": 0.09090909090909091,
+      "constant_es_groups": 10,
+      "mean_tokens_per_person_round": 84.11363636363636,
+      "mean_penalties_per_group_round": 2.121212121212121
+    },
+    "NFN": {
+      "sessions": 6,
+      "groups": 14,
+      "session_mean": 0.5,
+      "session_variance": 0.01111111111111111,
+      "retained_groups": 7,
+      "group_mean": 0.5,
+      "constant_es_groups": 13,
+      "mean_tokens_per_person_round": 95.04761904761904,
+      "mean_penalties_per_group_round": 0.023809523809523808
+    },
+    "PCN": {
+      "sessions": 6,
+      "groups": 13,
+      "session_mean": 0.05555555555555555,
+      "session_variance": 0.01851851851851852,
+      "retained_groups": 1,
+      "group_mean": 0.07692307692307693,
+      "constant_es_groups": 12,
+      "mean_tokens_per_person_round": 84.94871794871794,
+      "mean_penalties_per_group_round": 0.1282051282051282
+    },
+    "PFN": {
+      "sessions": 6,
+      "groups": 12,
+      "session_mean": 0.5,
+      "session_variance": 0.0,
+      "retained_groups": 6,
+      "group_mean": 0.5,
+      "constant_es_groups": 10,
+      "mean_tokens_per_person_round": 98.11111111111113,
+      "mean_penalties_per_group_round": 2.638888888888889
+    }
+  },
+  "contrasts": [
+    {
+      "unfacilitated": "CNN",
+      "facilitated": "FNN",
+      "session_weighted_effect": 0.4166666666666667,
+      "group_weighted_effect": 0.36363636363636365
+    },
+    {
+      "unfacilitated": "NCN",
+      "facilitated": "NFN",
+      "session_weighted_effect": 0.4166666666666667,
+      "group_weighted_effect": 0.40909090909090906
+    },
+    {
+      "unfacilitated": "PCN",
+      "facilitated": "PFN",
+      "session_weighted_effect": 0.4444444444444444,
+      "group_weighted_effect": 0.4230769230769231
+    }
+  ],
+  "constant_es_groups": 66,
+  "total_groups": 72,
+  "changed_second_to_third": 3,
+  "coder_audit": {
+    "pairs": 216,
+    "disagreements": 19,
+    "main_differs_coder1": 0,
+    "main_differs_coder2": 19
+  },
+  "provenance": {
+    "analyzed_at_utc": "2026-10-04T21:35:35.518300+00:00",
+    "article": "https://doi.org/10.1371/journal.pone.0307832",
+    "archive": "https://osf.io/v3drm/",
+    "archive_license": "Not assigned in public OSF node metadata; article CC BY does not establish a separate data license",
+    "protocol_sha256": "d99f55eb37b822aa5baec339bde0ea56e46c92260bde924d8b89ff2472fb4891",
+    "analysis_sha256": "d92a0322bf94be03435270fc2e89942f84f478379036d8509e3abd971ba8ee03",
+    "data_sha256": {
+      "Dataset1_ChatCodes.xlsm": "2913ab8d24be76f1447b3a5545347940609b9d279cf47b3a85bc5ef3e1483e0b",
+      "Dataset2_Main.xlsx": "46a9b16c9d82d7ab914a942ac9fce6aabae34729d43519cab3d22fdf0c7b8a6b",
+      "CODEBOOK.pdf": "728b9f74f782edb4f233a21b0395244a14a3773424176a73498524fdb67565c4",
+      "Appendix.docx": "d67cfdc3ae7c28e1a1ca53cb41ba15e1388e89b9c350b210ec03e3eb693d42ce",
+      "node.json": "ca483fca8750fd16c441b28f2092fd3477dc50b0f4ea52241e4e938006ae3333"
+    },
+    "source_ranges": {
+      "SessID": "Data!B2:B289",
+      "Group": "Data!H2:H289",
+      "Player": "Data!I2:I289",
+      "GraphTreatmentNum": "Data!F2:F289",
+      "OrigTreatmentNum": "Data!E2:E289",
+      "Facil": "Data!G2:G289",
+      "ES Rd1": "Data!CD2:CD289",
+      "ES Rd2": "Data!CE2:CE289",
+      "ES Rd3": "Data!CF2:CF289",
+      "TokensRd1": "Data!Q2:Q289",
+      "TokensRd2": "Data!R2:R289",
+      "TokensRd3": "Data!S2:S289",
+      "TokensRd4": "Data!T2:T289",
+      "TokensRd5": "Data!U2:U289",
+      "TokensRd6": "Data!V2:V289",
+      "Trigg Penalty Rd1": "Data!AL2:AL289",
+      "Trigg Penalty Rd2": "Data!AM2:AM289",
+      "Trigg Penalty Rd3": "Data!AN2:AN289",
+      "Trigg Penalty Rd4": "Data!AO2:AO289",
+      "Trigg Penalty Rd5": "Data!AP2:AP289",
+      "Trigg Penalty Rd6": "Data!AQ2:AQ289"
+    },
+    "coder_range": "Kappa (Interrater Reliability)!A1:M73"
+  }
+}

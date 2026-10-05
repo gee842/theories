@@ -1,0 +1,21 @@
+{
+  "scope": "Delivered evidence file hashes; source provenance is recorded separately.",
+  "files": {
+    "README.md": "4df3dadb410a38b5562148e3f5017d87f18a7ca8c816514703b22a55d7313b3b",
+    "axiom-audit.md": "ba4b6c40122280236f2f4a3ae44ae0a74ccfbf05e4ac22ecc7df10f0d90ca3df",
+    "axiom-source-excerpts.md": "332206ff5e55d2859690c0203d0ad36693d2e17fcd7d580af6e238ed4177f0e1",
+    "barrier-independent-review.md": "907aed78ed3080fc31c0fdbe081054df4dc0c7b13f0d66aa0933776dad5eecc7",
+    "constitutive-bridge.md": "0d8fa0297c5e5c835bad15c95dda303cccaf0a46bc280356f7e95534fe6cb1cd",
+    "extension-bridge-review.md": "6a15e7c82ae6d146b91eabf515c85b88b105495e9a4173d7c772debfee0509da",
+    "final-report-review.md": "0b1a75a0d1a7a75e64c054c3de4079d82e7205c69867e3ca1cded60a60418a62",
+    "normative-source-excerpts.md": "7cc442885b742d054614bdef8f1a8fe78df98f56f527adc5ff472de0f915b4b9",
+    "normative-source.json": "6d651790e617cc1a4cac02f1c821714dc061c1db4c05df7d865a0167deaaa330",
+    "root-scope-checks.json": "d64e3081cff449a42a461fdab06d6bdb1120e433086c0c93a1ea072c1a9dbcc1",
+    "source-and-bridge-review.md": "5af5ba24dbf64b3c2127dcb0c1c08af574e8b5be9f6eeb568e498bc1d0730af0",
+    "source-manifest.json": "e71ea087f7e7bef8b75130d3e4d79e74bd5bc760cbd3a05b5dc2e32c443eaaa9",
+    "universality-barrier.md": "13297931f93e397e0892fb5959089df3efbc52dc916e9208cc38bdbd104678e7",
+    "universality_barrier_examples.json": "cc1ce44a173e0c132077088a38264ba654049af98936e27e693556b633a5b9ee",
+    "universality_barrier_examples.py": "f2f7bf0b46be382995ef6776f33436a75737f1107abb04c07730d8a2a972ccab",
+    "verify_root_scope.py": "289a7a3a45b78e9285991679a978ef6cb71ba6cf930172c70d9ebbae015f4f0a"
+  }
+}

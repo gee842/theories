@@ -1,0 +1,125 @@
+{
+  "serve_success": {
+    "healthy": "1",
+    "fault": "1/4"
+  },
+  "diagnostic_positive": {
+    "healthy": "1/4",
+    "fault": "3/4"
+  },
+  "restart_clears_fault": {
+    "restricted": "1/4",
+    "enabled": "3/4"
+  },
+  "healthy_restart_stays_healthy": true,
+  "primitive_rows": [
+    {
+      "component": "serve",
+      "fault_before": 0,
+      "outcomes": [
+        [
+          "1",
+          true
+        ]
+      ]
+    },
+    {
+      "component": "sensor",
+      "fault_before": 0,
+      "outcomes": [
+        [
+          "1/4",
+          "positive"
+        ],
+        [
+          "3/4",
+          "negative"
+        ]
+      ]
+    },
+    {
+      "component": "restart",
+      "fault_before": 0,
+      "enactment": "restricted",
+      "outcomes": [
+        [
+          "1",
+          0
+        ]
+      ]
+    },
+    {
+      "component": "restart",
+      "fault_before": 0,
+      "enactment": "enabled",
+      "outcomes": [
+        [
+          "1",
+          0
+        ]
+      ]
+    },
+    {
+      "component": "serve",
+      "fault_before": 1,
+      "outcomes": [
+        [
+          "1/4",
+          true
+        ],
+        [
+          "3/4",
+          false
+        ]
+      ]
+    },
+    {
+      "component": "sensor",
+      "fault_before": 1,
+      "outcomes": [
+        [
+          "3/4",
+          "positive"
+        ],
+        [
+          "1/4",
+          "negative"
+        ]
+      ]
+    },
+    {
+      "component": "restart",
+      "fault_before": 1,
+      "enactment": "restricted",
+      "outcomes": [
+        [
+          "1/4",
+          0
+        ],
+        [
+          "3/4",
+          1
+        ]
+      ]
+    },
+    {
+      "component": "restart",
+      "fault_before": 1,
+      "enactment": "enabled",
+      "outcomes": [
+        [
+          "3/4",
+          0
+        ],
+        [
+          "1/4",
+          1
+        ]
+      ]
+    }
+  ],
+  "source": "Exact isolated synthetic component fixtures; no integrated target step was invoked.",
+  "target_sha256": "d0500682ef8587e59106cb252c638b8bf13f3db4eb68454c228de44a321906ce",
+  "target_spec_sha256": "5dd2913a568a1122b27ebea910b889a4f5611e448a73f6bd2ffdc1f8cc5890dd",
+  "empirical": false
+}

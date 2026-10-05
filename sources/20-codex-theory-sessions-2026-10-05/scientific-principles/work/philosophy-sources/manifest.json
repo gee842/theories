@@ -1,0 +1,56 @@
+{
+  "research_date": "2026-10-05",
+  "verified_downloads": {
+    "popper-conjectures-compilation.pdf": "https://kpfu.ru/staff_files/F812164186/HISTORY_AND_PHILOSOPHY_OF_SCIENCE_COMMON_PROBLEMS.pdf",
+    "kuhn-preview.pdf": "https://api.pageplace.de/preview/DT0400.9781139926973_A24437007/preview-9781139926973_A24437007.pdf",
+    "kuhn.pdf": "https://homes.luddy.indiana.edu/jbollen/I501F13/readings/kuhn_en.pdf"
+  },
+  "notes": [
+    "Kuhn preview text was extracted and read. Indiana mirror is a scan with no extracted text.",
+    "Popper full Logic download timed out and is incomplete; not used as verified text.",
+    "Laudan HTML files are access-denied responses; not source text.",
+    "Duhem and Lakatos passages were read via the web tool; source URLs and page locators in philosophy-memo.md."
+  ],
+  "files": [
+    {
+      "file": "kuhn-preview.pdf",
+      "bytes": 3685478,
+      "sha256": "20993fa4e32918889478f20a6b8654538eda63e44a3c11d81ce5e2c7a1d045de"
+    },
+    {
+      "file": "kuhn-preview.txt",
+      "bytes": 75123,
+      "sha256": "8a0076a9eacffe179d506cfb234d96d5f66c2f75f8c3cec59d6a81f7ad2ac8e2"
+    },
+    {
+      "file": "kuhn.pdf",
+      "bytes": 231942,
+      "sha256": "d997c167ffb728b16ae6a366fed59cd45eacab61640be10d3b3fe4b4fa285ab5"
+    },
+    {
+      "file": "laudan-alt.html",
+      "bytes": 5444,
+      "sha256": "dc95429a54c3e36a3ddeaf58e3d6a7ebe9837ded6402a291221ae2dfb7e55302"
+    },
+    {
+      "file": "laudan.html",
+      "bytes": 5433,
+      "sha256": "bb4227790c0c9540d091fbe0db517506e76e1fda917afe72051677b7d1b7b3c1"
+    },
+    {
+      "file": "popper-conjectures-compilation.pdf",
+      "bytes": 2240730,
+      "sha256": "5b3d0733f164dffb86be3fcc7a0a352617f54a0763816f58b648c7fa3d1aa7b7"
+    },
+    {
+      "file": "popper-conjectures-compilation.txt",
+      "bytes": 678075,
+      "sha256": "06abc0428011a5bc1b38b71d3640ca9b02231abdfc308245d9a0259a0050e6b8"
+    },
+    {
+      "file": "popper-logic.incomplete-download",
+      "bytes": 2945472,
+      "sha256": "9f37e1436c6bbecc5a043d593b6b9242424112810ed2a08ed9677f10602a3b23"
+    }
+  ]
+}

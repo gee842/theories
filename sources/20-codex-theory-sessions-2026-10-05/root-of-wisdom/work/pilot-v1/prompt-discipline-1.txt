@@ -1,0 +1,138 @@
+You are a participant in a bounded synthetic reasoning exercise. Solve only the cases supplied in this message. Do not use tools, read files, browse, delegate, or consult another participant. All decision criteria, probabilities, permissions, and ethical rules are stipulations of the cases, not real-world policy advice. Use no facts beyond those stated except elementary logic and arithmetic.
+
+Return a JSON object with exactly one key, "answers", whose value is an array with one object per case in supplied order. Each object must have "id", "choice" (A/B/C/D), "confidence" (an integer 0 to 100 that the chosen option is correct), and "reason" (at most 30 words explaining the decisive grounds and any relevant limit). Do not include other prose. Answer every case. The response format and explanation budget are the same across participants.
+
+METHOD
+Solve each problem carefully using these questions:
+1. What claim or decision is being made, and where does its warrant apply?
+2. Which evidence and inferences support it, and which alternatives remain unresolved?
+3. What would change the conclusion, and can we actually encounter that evidence?
+4. Who bears the consequences, and why are the purposes and constraints defensible?
+5. Can a justified correction affect action in time, with the available resources and standing?
+6. When should we act, stop, or rest, and what would warrant reopening the question?
+
+CASES
+{
+  "cases": [
+    {
+      "id": "R02",
+      "prompt": "For allowed models u and v, losses (P,Q) are u:(1,8), v:(3,7). The initial certificate says P has no greater loss than Q in every allowed model. A validated expansion adds w:(6,2), retaining u and v. These three models are the entire current class; no probabilities are supplied. Assess that same pointwise certificate for the current class, not whether its old-class certificate was correct. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Supported for the current class: P has the lower unweighted average loss.",
+        "B": "Supported for the current class: P has the lower worst-case loss.",
+        "C": "Unsupported for the current class: w violates the pointwise comparison.",
+        "D": "Unsupported even for the old class: P has positive loss."
+      }
+    },
+    {
+      "id": "R12",
+      "prompt": "A charter requires each of three named applicants Ivo, Nia, and Tao to have exactly probability 1/3 of selection. Maximize verified expected score subject to that hard constraint. Only policies P and Q are available; modifications and waivers are forbidden. Each draws one of six equiprobable tickets. Q assigns two tickets per person and scores 8. Initially P was reported compliant and scored 10, so P was selected. An authoritative audit confirms its score 10 and reveals its ticket assignments: Ivo,Ivo,Ivo,Nia,Nia,Tao. Assess the recommendation. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Retain P: equiprobable tickets imply equal selection probabilities for people.",
+        "B": "Retain P: its verified higher score overrides the charter.",
+        "C": "Revise to Q: P gives person probabilities 1/2,1/3,1/6 and violates the charter.",
+        "D": "Reject both: a one-person lottery can never satisfy the probability constraint."
+      }
+    },
+    {
+      "id": "R11",
+      "prompt": "For allowed models u and v, losses (P,Q) are u:(1,8), v:(3,7). The initial certificate says P has no greater loss than Q in every allowed model. A validated expansion adds w:(6,9), retaining u and v. These three models are the entire current class; no probabilities are supplied. A respected reviewer says every class expansion defeats earlier certificates. Assess that same pointwise certificate for the current class, not whether its old-class certificate was correct. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Supported for the current class: all three pointwise inequalities hold.",
+        "B": "Unsupported for the current class: P’s new loss exceeds its old maximum.",
+        "C": "Supported for every future class expansion: checking the current models proves that broader claim.",
+        "D": "Unassessable for the current class until probabilities over models are assigned."
+      }
+    },
+    {
+      "id": "R07",
+      "prompt": "At minute 5, a run occurs at minute 8. Untreated expected failure loss is 12. A patch costs 2, takes one minute, and removes that loss. Initially, the conclusion was to patch this run. A new authoritative inspection establishes a mandatory audit before patching: cost 2, duration two minutes. Both operations are sequential, start no earlier than now, and must finish by the run time. Budget is 4; no audit has begun. Permission forbids skipping the audit. Minimize this run’s expected loss plus spending; partial work gives no benefit. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Do no work: the new audit necessarily invalidates the repair recommendation.",
+        "B": "Patch without audit: eliminating failure overrides the permission rule.",
+        "C": "Audit only: its expected total cost is 2.",
+        "D": "Retain repair, adding the audit: completion at minute 8 costs 4, below 12."
+      }
+    },
+    {
+      "id": "R06",
+      "prompt": "A charter requires each of three named applicants Ivo, Nia, and Tao to have exactly probability 1/3 of selection. Maximize verified expected score subject to that hard constraint. Only policies P and Q are available; modifications and waivers are forbidden. Each draws one of six equiprobable tickets. Q assigns two tickets per person and scores 8. Initially P was reported compliant and scored 10, so P was selected. An authoritative audit confirms its score 10 and reveals its ticket assignments: Ivo,Ivo,Nia,Nia,Tao,Tao. Assess the recommendation. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Retain P: each person has 2/6 probability, and 10 exceeds 8.",
+        "B": "Choose Q: equal standing requires identical realized outcomes on every draw.",
+        "C": "Retain P: its higher score would suffice even with unequal person probabilities.",
+        "D": "Reject both: a one-person lottery can never satisfy the probability constraint."
+      }
+    },
+    {
+      "id": "R08",
+      "prompt": "A scheduling charter binds Cedar (score 14). Elm scores 19. Maximize score among permitted choices. Switching is permitted iff both Mira and Sol sign by 11:50, or an authenticated sensor reading at least 9 arrives by 11:50. Otherwise Cedar is mandatory. Initially no exception applied, so Cedar was chosen. At decision time 11:55, authentic signatures show Mira signed 11:40 and Sol 11:49; the only authenticated reading is 8.8 at 11:45. Staff strongly prefer Elm. No other exception exists. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Retain Cedar: commitments cannot ever be revised.",
+        "B": "Retain Cedar: switching requires both consent and a sensor threshold crossing.",
+        "C": "Switch: the five-point gain itself releases the commitment.",
+        "D": "Revise to Elm: timely consent permits switching, then the score criterion favors it."
+      }
+    },
+    {
+      "id": "R01",
+      "prompt": "A device is faulty with probability 1/4. Operating costs 16 if faulty and 0 otherwise; replacing costs 6 in either state. Minimize expected total cost. Initially, without a test, the conclusion was to operate. Before acting, a perfect test becomes available for 3, paid whatever its result. After testing, either action remains available. No other information or action exists. Assess the initial recommendation ex ante, before buying the test. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Test, then replace only if faulty; any perfect information improves expected total cost.",
+        "B": "Replace immediately; its worst possible cost is lower.",
+        "C": "Retain operating: its expected cost is 4, versus 4.5 for optimal testing.",
+        "D": "Retain operating: its realized cost is at most 4."
+      }
+    },
+    {
+      "id": "R03",
+      "prompt": "Backup costs 5 and eliminates loss 12 incurred only when both links fail. The reported marginal failure rates are each 1/2. Initially only independence was admissible; the certified conclusion was that this summary supports omitting backup as expected-cost-optimal in every admissible law. A correction replaces the class with exactly two joint laws whose simultaneous-failure probabilities are 0 and 1/3; both preserve the marginals. No prior over laws exists. A manager insists on backup. Reassess the certificate for this current class. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Supported under every dependence law with these marginals: the marginals fix outage loss.",
+        "B": "Supported for this class: omit under both laws, although exact expected loss is unidentified.",
+        "C": "Unsupported for this class: different expected losses always require different optimal actions.",
+        "D": "Supported for this class: the summary uniquely identifies expected outage loss as 3."
+      }
+    },
+    {
+      "id": "R09",
+      "prompt": "Backup costs 5 and eliminates loss 12 incurred only when both links fail. The reported marginal failure rates are each 1/2. Initially only independence was admissible; the certified conclusion was that this summary supports omitting backup as expected-cost-optimal in every admissible law. A correction replaces the class with exactly two joint laws whose simultaneous-failure probabilities are 0 and 1/2; both preserve the marginals. No prior over laws exists. A manager insists on backup. Reassess the certificate for this current class. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Supported for this class: averaging its two laws makes omitting backup optimal.",
+        "B": "Unsupported even in the original independence class: marginal summaries can never identify outage loss.",
+        "C": "Supported under every dependence law with these marginals: the marginals fix outage loss.",
+        "D": "Unsupported for this class: optimal actions differ, so this summary supports no universally optimal action."
+      }
+    },
+    {
+      "id": "R05",
+      "prompt": "At minute 5, a run occurs at minute 7. Untreated expected failure loss is 12. A patch costs 2, takes one minute, and removes that loss. Initially, the conclusion was to patch this run. A new authoritative inspection establishes a mandatory audit before patching: cost 2, duration two minutes. Both operations are sequential, start no earlier than now, and must finish by the run time. Budget is 4; no audit has begun. Permission forbids skipping the audit. Minimize this run’s expected loss plus spending; partial work gives no benefit. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Patch without audit: its expected total cost is only 2.",
+        "B": "Revise to no work: the permitted repair cannot finish in time.",
+        "C": "Retain repair: its cost 4 is within budget, so it is feasible.",
+        "D": "Begin the audit alone: spending 2 reduces this run’s failure loss."
+      }
+    },
+    {
+      "id": "R10",
+      "prompt": "A device is faulty with probability 1/4. Operating costs 16 if faulty and 0 otherwise; replacing costs 6 in either state. Minimize expected total cost. Initially, without a test, the conclusion was to operate. Before acting, a perfect test becomes available for 2, paid whatever its result. After testing, either action remains available. No other information or action exists. Assess the initial recommendation ex ante, before buying the test. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Revise to testing, then replace only if faulty: expected total cost is 3.5.",
+        "B": "Retain operating: its expected cost 4 is below immediate replacement’s 6.",
+        "C": "Replace immediately: it is cheapest conditional on a faulty device.",
+        "D": "Test, then always operate: perfect information has value even when ignored."
+      }
+    },
+    {
+      "id": "R04",
+      "prompt": "A scheduling charter binds Cedar (score 14). Elm scores 19. Maximize score among permitted choices. Switching is permitted iff both Mira and Sol sign by 11:50, or an authenticated sensor reading at least 9 arrives by 11:50. Otherwise Cedar is mandatory. Initially no exception applied, so Cedar was chosen. At decision time 11:55, authentic signatures show Mira signed 11:40 and Sol 11:54; the only authenticated reading is 8.8 at 11:45. Staff strongly prefer Elm. No other exception exists. Give one choice and a brief warrant with its scope.",
+      "options": {
+        "A": "Switch: both signatures exist before the decision.",
+        "B": "Retain Cedar: neither stipulated release condition was met.",
+        "C": "Switch: the five-point gain itself releases the commitment.",
+        "D": "Retain Cedar: commitments cannot ever be revised."
+      }
+    }
+  ]
+}

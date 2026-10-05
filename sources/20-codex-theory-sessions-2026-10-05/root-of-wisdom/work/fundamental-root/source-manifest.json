@@ -1,0 +1,774 @@
+{
+  "captured_at": "2026-10-05T00:29:35.433188+00:00",
+  "read_only_sources": true,
+  "files": [
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/access-and-correction.md",
+      "relative": "full-picture-conjecture/outputs/access-and-correction.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/access-and-correction.md",
+      "sha256": "d72f1de4a9bdcd04c5d9605f402e54da272c239d2dfa9b56285eb7b940077400",
+      "bytes": 17346,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/access-proof.md",
+      "relative": "full-picture-conjecture/outputs/access-proof.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/access-proof.md",
+      "sha256": "21ecd5ceeed8be01625bc589979d0b4293b25ae3272128f56ea4152a00bab7a5",
+      "bytes": 23994,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/combined-foundation.md",
+      "relative": "full-picture-conjecture/outputs/combined-foundation.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/combined-foundation.md",
+      "sha256": "c1218f2a5a2d8433ef6f0ce705f89218f6e9a6f15d8292f8846631e584d5f8e9",
+      "bytes": 15860,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/combined-process-certification.md",
+      "relative": "full-picture-conjecture/outputs/combined-process-certification.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/combined-process-certification.md",
+      "sha256": "b56a5feae82a133071f09dc28787fe77075ddbb816525c3f4da51fbd05cd4b66",
+      "bytes": 16208,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/combined-process-proof.md",
+      "relative": "full-picture-conjecture/outputs/combined-process-proof.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/combined-process-proof.md",
+      "sha256": "5e14bb79069943e5c2415b72381be0fd123f9ab02a03ec61d2fe20463b6f8971",
+      "bytes": 29312,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/completeness-bridge.md",
+      "relative": "full-picture-conjecture/outputs/completeness-bridge.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/completeness-bridge.md",
+      "sha256": "0134ba61197b529269e39d85f344aa611511f4d8c47813f83015bfe8e4fb99f0",
+      "bytes": 22885,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/conditions-for-continued-generation.md",
+      "relative": "full-picture-conjecture/outputs/conditions-for-continued-generation.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/conditions-for-continued-generation.md",
+      "sha256": "e641f5159f0f4a53f7c829a568ecab57e054cf85f454e10c1913ee47c9ee9646",
+      "bytes": 15956,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/conscience-and-morality-core.md",
+      "relative": "full-picture-conjecture/outputs/conscience-and-morality-core.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/conscience-and-morality-core.md",
+      "sha256": "87a1ec6c5f01b9fb852c363da242d4f195eea871a2244c83d7b69fbb5d653d88",
+      "bytes": 6055,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/continuation-proof.md",
+      "relative": "full-picture-conjecture/outputs/continuation-proof.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/continuation-proof.md",
+      "sha256": "3cbaf32f9327658304217c56ba9124d0906ede3277ed3dd5399132e686dec561",
+      "bytes": 28541,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/cross-session-completeness.md",
+      "relative": "full-picture-conjecture/outputs/cross-session-completeness.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/cross-session-completeness.md",
+      "sha256": "a59763c5d7c8fd1830670d5bb789202cbcb51d1869fbec86a3e985fcb546bd00",
+      "bytes": 16051,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/cultivation-and-shared-generation.md",
+      "relative": "full-picture-conjecture/outputs/cultivation-and-shared-generation.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/cultivation-and-shared-generation.md",
+      "sha256": "383cfe4463e030c3e0f5bbdb2b56724a8f9f6b724cf689cd39a860d377a35a5b",
+      "bytes": 16569,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/full-picture-synthesis.md",
+      "relative": "full-picture-conjecture/outputs/full-picture-synthesis.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/full-picture-synthesis.md",
+      "sha256": "c3361aaa665666ea62bc42ca53a148ade3d5c59acb5c12d5cb6a3782d7f4b253",
+      "bytes": 43319,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/full-root-resolution.md",
+      "relative": "full-picture-conjecture/outputs/full-root-resolution.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/full-root-resolution.md",
+      "sha256": "8e0a81f84a0075f28e41fe484f811b4cec4c50157e5d04fc61d94adf5013e504",
+      "bytes": 15609,
+      "change_from_previous_snapshot": "changed"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/fundamental-theory-audit.md",
+      "relative": "full-picture-conjecture/outputs/fundamental-theory-audit.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/fundamental-theory-audit.md",
+      "sha256": "2641b6b050cece30eb5928e7b3bf8181742d3f7378e80b4095dbfeafba9b5e45",
+      "bytes": 18706,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/general-access-theorem.md",
+      "relative": "full-picture-conjecture/outputs/general-access-theorem.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/general-access-theorem.md",
+      "sha256": "b3af7f1285409688e57aa6d03715d3b59b3c2ecd0de2ed345cdd92ebdcbf7c3f",
+      "bytes": 23282,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/next-test.md",
+      "relative": "full-picture-conjecture/outputs/next-test.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/next-test.md",
+      "sha256": "4c5e9332b03eb4d0b6c4d54d73d70e4cea52dc66b2c0c544e8da31bed3ccded8",
+      "bytes": 15689,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/progress-proof.md",
+      "relative": "full-picture-conjecture/outputs/progress-proof.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/progress-proof.md",
+      "sha256": "2c9bdb3a245ee48a99a1d738f1ab68c83a55bde1a665257c5b30b806981dace4",
+      "bytes": 20151,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/proving-generative-theory.md",
+      "relative": "full-picture-conjecture/outputs/proving-generative-theory.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/proving-generative-theory.md",
+      "sha256": "9bfe0cfd5a118c44e2b7e185df984fef1d32aec6580c78d38d187bf98887c971",
+      "bytes": 15032,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/research-record.md",
+      "relative": "full-picture-conjecture/outputs/research-record.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/full-picture-conjecture/outputs/research-record.md",
+      "sha256": "d8c8828306ecda9a627ff5385639fb644cb372e6387c2f40585de1d6268759b3",
+      "bytes": 52203,
+      "change_from_previous_snapshot": "changed"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/causal-foundations/outputs/causal-foundations.md",
+      "relative": "causal-foundations/outputs/causal-foundations.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/causal-foundations/outputs/causal-foundations.md",
+      "sha256": "ec3bf8e1ff2a2e56b3bba174ffa2d6e9043cc9742e7c19b7210f30304a3a51d9",
+      "bytes": 28791,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/causal-foundations/outputs/formal-results.md",
+      "relative": "causal-foundations/outputs/formal-results.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/causal-foundations/outputs/formal-results.md",
+      "sha256": "f6a84bd991395364b948b5171e10a2bb8cf65ef4d20a716138c1aa75b39f9e38",
+      "bytes": 28204,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/causal-foundations/outputs/sources-and-claims.md",
+      "relative": "causal-foundations/outputs/sources-and-claims.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/causal-foundations/outputs/sources-and-claims.md",
+      "sha256": "d27d58dbe81fd6580053f36b3bd14bb4e30e2b94558d3030244455f0bbb8e8b4",
+      "bytes": 15642,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/claims.md",
+      "relative": "recursive-self-modeling/outputs/claims.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/recursive-self-modeling/outputs/claims.md",
+      "sha256": "7e86702d7b0ff639b639155d6dad3d4b8a413b86d303c2d86881f3ffc4d64c3b",
+      "bytes": 12881,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/correction-access/anchor-mechanism.md",
+      "relative": "recursive-self-modeling/outputs/correction-access/anchor-mechanism.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/recursive-self-modeling/outputs/correction-access/anchor-mechanism.md",
+      "sha256": "552d376d1ff74e3587045022ba459b2075503fd704648c7404c1941074ad70ef",
+      "bytes": 6818,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/correction-access/formal-note.md",
+      "relative": "recursive-self-modeling/outputs/correction-access/formal-note.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/recursive-self-modeling/outputs/correction-access/formal-note.md",
+      "sha256": "77e83797454e9e784c8f6da4f1593f4a4d7ee63cb6f5b87950c3006d7045da86",
+      "bytes": 20387,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/correction-access/method-review.md",
+      "relative": "recursive-self-modeling/outputs/correction-access/method-review.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/recursive-self-modeling/outputs/correction-access/method-review.md",
+      "sha256": "217aa305e9765a428a247f468cab729d65548ef28d343db6638bad113cdd34b7",
+      "bytes": 27555,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/correction-access/report.md",
+      "relative": "recursive-self-modeling/outputs/correction-access/report.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/recursive-self-modeling/outputs/correction-access/report.md",
+      "sha256": "abc1c2761ee38c036dd8127e4c47ffcd9a792c14c94dc8ef6beb14b343aa114a",
+      "bytes": 19390,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/correction-access/reproduction.md",
+      "relative": "recursive-self-modeling/outputs/correction-access/reproduction.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/recursive-self-modeling/outputs/correction-access/reproduction.md",
+      "sha256": "430642b1d01976ad8d883abe32cc2dcb9316299ed9ad711d524def5710efec7f",
+      "bytes": 4058,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/decisions-and-next-test.md",
+      "relative": "recursive-self-modeling/outputs/decisions-and-next-test.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/recursive-self-modeling/outputs/decisions-and-next-test.md",
+      "sha256": "e3acc375b552129009daa06a6d7dc8c670fb97c82098e411b9e867270c64b2b8",
+      "bytes": 9968,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/experiment/identifiability-proof.md",
+      "relative": "recursive-self-modeling/outputs/experiment/identifiability-proof.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/recursive-self-modeling/outputs/experiment/identifiability-proof.md",
+      "sha256": "41d6f0db924de78ca79138cbda72e31f4bb8d5cbffb21f100a203d5a5ca0c81b",
+      "bytes": 3679,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/experiment/report.md",
+      "relative": "recursive-self-modeling/outputs/experiment/report.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/recursive-self-modeling/outputs/experiment/report.md",
+      "sha256": "8e588bd0affaf5ae2dd7eadb139441a7c7662cef28d6ac8ff9660cc4b6970bea",
+      "bytes": 19611,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/research.md",
+      "relative": "recursive-self-modeling/outputs/research.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/recursive-self-modeling/outputs/research.md",
+      "sha256": "cfb772101ce6e72d30af73a62a7dd39a63a4fd770cfc366d6d6b2b7e16da8298",
+      "bytes": 26650,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/outputs/sources.md",
+      "relative": "recursive-self-modeling/outputs/sources.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/recursive-self-modeling/outputs/sources.md",
+      "sha256": "2012d8e8dce205dfbc0e093b6aa0ed7790a400c6919b54dc03b7386dc0240789",
+      "bytes": 14205,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/CLAIMS.md",
+      "relative": "structural-foundations/outputs/CLAIMS.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/CLAIMS.md",
+      "sha256": "a124a83ba9d329321a0102157a96702ce7931599dcaed2961bd0a0a0fe729e68",
+      "bytes": 5881,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/README.md",
+      "relative": "structural-foundations/outputs/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/README.md",
+      "sha256": "02a04a6511bd29257599427b9a82b459fa6aafd1a360a53d38018e7d79c97de2",
+      "bytes": 5259,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-2/CLAIMS.md",
+      "relative": "structural-foundations/outputs/cycle-2/CLAIMS.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-2/CLAIMS.md",
+      "sha256": "cc3556f897440d546998d852472275e670167809fb8a1950b513a64b1509a599",
+      "bytes": 4415,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-2/README.md",
+      "relative": "structural-foundations/outputs/cycle-2/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-2/README.md",
+      "sha256": "81488f988b20667399560579cfd5f89ef329e3a11a9bc9f1d4df6f616006b07b",
+      "bytes": 3908,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-2/modular-replacement.md",
+      "relative": "structural-foundations/outputs/cycle-2/modular-replacement.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-2/modular-replacement.md",
+      "sha256": "d05958a1ae6172c42b1fa26e60c5e7b36206d2915b053a309de8cc26c604eea1",
+      "bytes": 18450,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-2/recurrent-repair.md",
+      "relative": "structural-foundations/outputs/cycle-2/recurrent-repair.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-2/recurrent-repair.md",
+      "sha256": "b626037e22b1ba9d13eb105d978bd5d8c9cadd05847d74c4032226b0b8c574e9",
+      "bytes": 24203,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-2/scale-and-deadline.md",
+      "relative": "structural-foundations/outputs/cycle-2/scale-and-deadline.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-2/scale-and-deadline.md",
+      "sha256": "e721ba52c10bbf472e7f03c352e25559bf2c9013cdffbd4ed92d8d11b0d5184a",
+      "bytes": 6446,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-2/synthesis.md",
+      "relative": "structural-foundations/outputs/cycle-2/synthesis.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-2/synthesis.md",
+      "sha256": "18d39d0b6d849a48bb1766c6b1fcf02d76b9a1826ce90941d8646d8a7c7e49e1",
+      "bytes": 16483,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-2/universality-and-sources.md",
+      "relative": "structural-foundations/outputs/cycle-2/universality-and-sources.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-2/universality-and-sources.md",
+      "sha256": "a3416db74b3023aa1f2504414fd4b4aa9bd3ef2250efc9b767613abcf93e4613",
+      "bytes": 19908,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-3/CLAIMS.md",
+      "relative": "structural-foundations/outputs/cycle-3/CLAIMS.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-3/CLAIMS.md",
+      "sha256": "2ed29d5938d3251b9f3809a73c0aad911008a1c57661b77437991cbf01d6cd7c",
+      "bytes": 6320,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-3/README.md",
+      "relative": "structural-foundations/outputs/cycle-3/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-3/README.md",
+      "sha256": "ce9b6b5fda0508eedee35f10b1347c410061eee626278b4e90a2554c7bff64f9",
+      "bytes": 2738,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-3/constraint-transport.md",
+      "relative": "structural-foundations/outputs/cycle-3/constraint-transport.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-3/constraint-transport.md",
+      "sha256": "ae8bcc070de6be81b59aea852a42bba4522528acad3f06538c76b6aac96f7a53",
+      "bytes": 25812,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-3/paid-memory-and-succession.md",
+      "relative": "structural-foundations/outputs/cycle-3/paid-memory-and-succession.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-3/paid-memory-and-succession.md",
+      "sha256": "895f17957ec8484ee79de196d650e8ff3c7a0a8e762595f42e78ffec413757c9",
+      "bytes": 19843,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-3/scale-and-renewal.md",
+      "relative": "structural-foundations/outputs/cycle-3/scale-and-renewal.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-3/scale-and-renewal.md",
+      "sha256": "4a3587c86cdd515b85e234d6db7786532549e36f7acd09c888fc8f766f12dd15",
+      "bytes": 13632,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-3/synthesis.md",
+      "relative": "structural-foundations/outputs/cycle-3/synthesis.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-3/synthesis.md",
+      "sha256": "89b4dca0332412e00979637b8e1a5a8ea381c8f31093033c39cb6eaf319f8097",
+      "bytes": 20812,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-3/universality-audit.md",
+      "relative": "structural-foundations/outputs/cycle-3/universality-audit.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-3/universality-audit.md",
+      "sha256": "19f307c96668475cf713024955a80a54d34dce86fa2acda7a7122bb128e8090e",
+      "bytes": 25749,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-4/CLAIMS.md",
+      "relative": "structural-foundations/outputs/cycle-4/CLAIMS.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-4/CLAIMS.md",
+      "sha256": "3b4058893f0186a69be741f427f77c098d190597c28134901d3f7cd5a265407d",
+      "bytes": 6583,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-4/README.md",
+      "relative": "structural-foundations/outputs/cycle-4/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-4/README.md",
+      "sha256": "341016f2971a9a1deb90c91888346fb712752bc00af979cedd10dc93302634dc",
+      "bytes": 2623,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-4/adoption-dynamics.md",
+      "relative": "structural-foundations/outputs/cycle-4/adoption-dynamics.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-4/adoption-dynamics.md",
+      "sha256": "122b3800b5f69adeeef7533c931c856931c90061b76e31e27de8c742483f666f",
+      "bytes": 16625,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-4/paid-learning.md",
+      "relative": "structural-foundations/outputs/cycle-4/paid-learning.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-4/paid-learning.md",
+      "sha256": "a7404ce6efd3ea4843c3608155d247a3f9282d7f165406c87908fae937575c98",
+      "bytes": 18655,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-4/selection-and-scale.md",
+      "relative": "structural-foundations/outputs/cycle-4/selection-and-scale.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-4/selection-and-scale.md",
+      "sha256": "b452ddbd52312d63f96ebaa33d34a2f06e52802e8a32b5011851fa29d82db64b",
+      "bytes": 20877,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-4/selection-audit.md",
+      "relative": "structural-foundations/outputs/cycle-4/selection-audit.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-4/selection-audit.md",
+      "sha256": "17ff09fa423d239bbc077a86096e27aa87b1480eda8c95585d60a1337abdb989",
+      "bytes": 23111,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-4/synthesis.md",
+      "relative": "structural-foundations/outputs/cycle-4/synthesis.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-4/synthesis.md",
+      "sha256": "3bfa581ccf3e1984ca11a9bb4922494311ec9b74a821ef5854e6179786752f09",
+      "bytes": 17031,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-5/CLAIMS.md",
+      "relative": "structural-foundations/outputs/cycle-5/CLAIMS.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-5/CLAIMS.md",
+      "sha256": "a68584ba078c43558a4fc11cea52bedfb4041c764e09c17aea38fff72a0a6267",
+      "bytes": 7599,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-5/README.md",
+      "relative": "structural-foundations/outputs/cycle-5/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-5/README.md",
+      "sha256": "5d830ec031248fe916eb48645cb03491a817dcc3021c253fa8abc652c8d760ac",
+      "bytes": 3187,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-5/funded-selection.md",
+      "relative": "structural-foundations/outputs/cycle-5/funded-selection.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-5/funded-selection.md",
+      "sha256": "c1719634c0949e141d3cf3ac1f13bc1765b73ce1ea71b526106af5356fa269f7",
+      "bytes": 15410,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-5/paid-evaluation.md",
+      "relative": "structural-foundations/outputs/cycle-5/paid-evaluation.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-5/paid-evaluation.md",
+      "sha256": "1b429b52b0d2865807f75ea65ce7fca0326ac909e354f9e4b924e536c96c103f",
+      "bytes": 18881,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-5/population-and-scale.md",
+      "relative": "structural-foundations/outputs/cycle-5/population-and-scale.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-5/population-and-scale.md",
+      "sha256": "a70af784be84f9dc1722c99b302943c4dd9e91d4f860ec124cdd34575f733b28",
+      "bytes": 21162,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-5/population-audit.md",
+      "relative": "structural-foundations/outputs/cycle-5/population-audit.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-5/population-audit.md",
+      "sha256": "8f7a3cad87b0de8bb65068e4b0dab97b150e13dc6a85117143c54d8e8aa1f70a",
+      "bytes": 19308,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-5/synthesis.md",
+      "relative": "structural-foundations/outputs/cycle-5/synthesis.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-5/synthesis.md",
+      "sha256": "94c57664aa2c87a5bb89633a0efe47b65069148d1a3d1762ca43875d4b087ce4",
+      "bytes": 15538,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-6/CLAIMS.md",
+      "relative": "structural-foundations/outputs/cycle-6/CLAIMS.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-6/CLAIMS.md",
+      "sha256": "b8d39afccd3b44fce7168e39eab445fb87bf1e9b845f4305388c3398400f2ca0",
+      "bytes": 7384,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-6/README.md",
+      "relative": "structural-foundations/outputs/cycle-6/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-6/README.md",
+      "sha256": "1f893d918b43bf05b9e278f15d32d32fec2a17dbb425b2753190dd1204aa3b5e",
+      "bytes": 2771,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-6/evaluator-revision.md",
+      "relative": "structural-foundations/outputs/cycle-6/evaluator-revision.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-6/evaluator-revision.md",
+      "sha256": "5b11f7e3e75655d1a57ba8c505ec47949bd87232e63512f3f00057dffce0e8d8",
+      "bytes": 15172,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-6/paid-revision.md",
+      "relative": "structural-foundations/outputs/cycle-6/paid-revision.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-6/paid-revision.md",
+      "sha256": "54e2a9fe4a48a5f8d83fa8f41f69644a6aab797d56fc1b55c33c87f65c62424e",
+      "bytes": 16662,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-6/revision-and-scale.md",
+      "relative": "structural-foundations/outputs/cycle-6/revision-and-scale.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-6/revision-and-scale.md",
+      "sha256": "8a9850209910a3d1726c1d64429effc3cdfc3c6b1594749652a29b92587773f4",
+      "bytes": 21073,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-6/revision-audit.md",
+      "relative": "structural-foundations/outputs/cycle-6/revision-audit.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-6/revision-audit.md",
+      "sha256": "ada20316d412bbd5f4b17b5900bdc46d0cd49f5126087917a692061693961248",
+      "bytes": 19466,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/cycle-6/synthesis.md",
+      "relative": "structural-foundations/outputs/cycle-6/synthesis.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/cycle-6/synthesis.md",
+      "sha256": "05706e09b782d442161ca9591ce517a0ce7a39da8b790cc75ac75f41846321fd",
+      "bytes": 13136,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/formal-foundations.md",
+      "relative": "structural-foundations/outputs/formal-foundations.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/formal-foundations.md",
+      "sha256": "e964f29ba5b9aab74a28e3031e0182a946e98e597bebb631a6ef75733531db2a",
+      "bytes": 28311,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/literature-map.md",
+      "relative": "structural-foundations/outputs/literature-map.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/literature-map.md",
+      "sha256": "46b620abec1cab0bc9128bbc58205452c63b17eb4990f6128eb5242b58dbbce8",
+      "bytes": 21520,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/next-research-target.md",
+      "relative": "structural-foundations/outputs/next-research-target.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/next-research-target.md",
+      "sha256": "adb3f2571323d2ed4c1348fe4bf29cd59fcbfa2d3ff5d1bf84a08cf0c90f7430",
+      "bytes": 12340,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/propositions-and-countermodels.md",
+      "relative": "structural-foundations/outputs/propositions-and-countermodels.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/propositions-and-countermodels.md",
+      "sha256": "babca3753314beca03fcc1fa6b2132ec6c3c9a829a439fd47fb05b649ef0dd08",
+      "bytes": 23231,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/research-log.md",
+      "relative": "structural-foundations/outputs/research-log.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/research-log.md",
+      "sha256": "26e75435bed34d199e7ecc964ab467901b79566c36547c343ccc85d73f817426",
+      "bytes": 34162,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/structural-foundations/outputs/synthesis.md",
+      "relative": "structural-foundations/outputs/synthesis.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/structural-foundations/outputs/synthesis.md",
+      "sha256": "123112e5e610235f7c82f0d0b5867af94a28973ac17c9819b0b79d1e458829ef",
+      "bytes": 27454,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/README.md",
+      "relative": "scientific-principles/outputs/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/README.md",
+      "sha256": "48724f7b4d4d8e4141ee75181e1ced941dcb1191e29d3829c6487b2783ecdbbb",
+      "bytes": 2291,
+      "change_from_previous_snapshot": "changed"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/development-record.md",
+      "relative": "scientific-principles/outputs/development-record.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/development-record.md",
+      "sha256": "e6639f186bfaea4ea6b34b0b0d3f8f962ce603a75ddf7e25dbbbd316c4e31c9a",
+      "bytes": 6286,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/formal-supplement.md",
+      "relative": "scientific-principles/outputs/formal-supplement.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/formal-supplement.md",
+      "sha256": "45d9f5b8d134b890a901afdc7f3ed5158025831ff6f91a232f85a6cde46d3ad6",
+      "bytes": 7350,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/integrated-scientific-inquiry.md",
+      "relative": "scientific-principles/outputs/integrated-scientific-inquiry.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/integrated-scientific-inquiry.md",
+      "sha256": "d26caeb411508303f1992a05834ff416b145b61e038722c7aae9bf310dec7b35",
+      "bytes": 18676,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/integration-independent-audit.md",
+      "relative": "scientific-principles/outputs/integration-independent-audit.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/integration-independent-audit.md",
+      "sha256": "7284f468fb17ad60aca35630db8af4e367ddca18fa5a363bd6e450cd1ce9ca4b",
+      "bytes": 12185,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/integration-reproduction.md",
+      "relative": "scientific-principles/outputs/integration-reproduction.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/integration-reproduction.md",
+      "sha256": "23c90994b1e295ba6bb95359ce5847ccf9324688480cba75f4380a612019f990",
+      "bytes": 4587,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/mechanisms-of-scientific-change.md",
+      "relative": "scientific-principles/outputs/mechanisms-of-scientific-change.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/mechanisms-of-scientific-change.md",
+      "sha256": "6472bf9e0398a235fb29f48f41048d9718a40c3a73f53dc59e7764d7f28f5548",
+      "bytes": 35205,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/primary-source-map.md",
+      "relative": "scientific-principles/outputs/primary-source-map.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/primary-source-map.md",
+      "sha256": "1422e6849c3cd057c8c88bb624e6147b73a0ff2c4fcdaaf8ef28436c2368abaf",
+      "bytes": 10542,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/protocol-v3.md",
+      "relative": "scientific-principles/outputs/protocol-v3.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/protocol-v3.md",
+      "sha256": "8690095770fd0bdf7573d7e871eee27e4f907ba208f2ade3757eaa5c945f9c82",
+      "bytes": 16845,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/purpose-integration-audit.md",
+      "relative": "scientific-principles/outputs/purpose-integration-audit.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/purpose-integration-audit.md",
+      "sha256": "5b8354b6c1d5aa6b5a7e44a0ca17a6e8c25efe7d4fd20c50afaec15b929964c6",
+      "bytes": 9201,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/research-record.md",
+      "relative": "scientific-principles/outputs/research-record.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/research-record.md",
+      "sha256": "f2d0b18d9b65ef37690e13839197f402a4ac57e9f89a82d565d83f13c106663f",
+      "bytes": 7286,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/scientific-change-deepening-record.md",
+      "relative": "scientific-principles/outputs/scientific-change-deepening-record.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/scientific-change-deepening-record.md",
+      "sha256": "d47123ecdc1476c71e64b76f637fbb9ba7d69923c2bf1cf5769e020184b5f7bd",
+      "bytes": 8610,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/scientific-change-formal-results.md",
+      "relative": "scientific-principles/outputs/scientific-change-formal-results.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/scientific-change-formal-results.md",
+      "sha256": "9494296ab715c29a779017c805638ae33c555e75070043996ab227b620c2878c",
+      "bytes": 11292,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/scientific-change-record.md",
+      "relative": "scientific-principles/outputs/scientific-change-record.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/scientific-change-record.md",
+      "sha256": "7593f8dc3a13b1dfd0a0a71dc7a85e09f2747cddbaf429961610c9859a5dae89",
+      "bytes": 4207,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/scientific-principles-investigation.md",
+      "relative": "scientific-principles/outputs/scientific-principles-investigation.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/scientific-principles-investigation.md",
+      "sha256": "a6c1eb8dc46565212c6f0b3f32c0c75af76407bba98d93f593942d16f1726c06",
+      "bytes": 36157,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/theory-of-scientific-change.md",
+      "relative": "scientific-principles/outputs/theory-of-scientific-change.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/theory-of-scientific-change.md",
+      "sha256": "66b7c921dff3a4a704b4670c8638bd69b973ca7585736c7c4c06b497797872cf",
+      "bytes": 23107,
+      "change_from_previous_snapshot": "unchanged"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/scientific-principles/outputs/validation-plan.md",
+      "relative": "scientific-principles/outputs/validation-plan.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/scientific-principles/outputs/validation-plan.md",
+      "sha256": "9700fdcde914b86f2d2e202431aa778e7f159b01219b91ef3eae3a5c2a3c317a",
+      "bytes": 5584,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/Documents/Codex/2026-10-05/sin/outputs/experiment-report.md",
+      "relative": "sin/outputs/experiment-report.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/sin/outputs/experiment-report.md",
+      "sha256": "2ecf5afb505129416ede3e44238361a81b93db4a7aa5ded96601e5c44f145da5",
+      "bytes": 14013,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/formal/FORMAL.md",
+      "relative": "generative-basis/FORMAL.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/generative-basis/FORMAL.md",
+      "sha256": "88ab9787ca40b6c12f9997793ee0285d2602855127380caa99ef44624ea0ca0a",
+      "bytes": 25477,
+      "change_from_previous_snapshot": "new"
+    },
+    {
+      "original": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/formal/STRUCTURAL-CLOSURE.md",
+      "relative": "generative-basis/STRUCTURAL-CLOSURE.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/fundamental-root/snapshots/generative-basis/STRUCTURAL-CLOSURE.md",
+      "sha256": "5293ac3553462256cd38521f4f87d7a45cddef7a65d02df6d68f5aa3992e325a",
+      "bytes": 18289,
+      "change_from_previous_snapshot": "new"
+    }
+  ]
+}

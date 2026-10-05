@@ -1,0 +1,82 @@
+{
+  "batch": "p04",
+  "condition": "ordinary",
+  "replicate": 2,
+  "agent": "/root/pilot_p04",
+  "response": {
+    "answers": [
+      {
+        "id": "R04",
+        "choice": "B",
+        "confidence": 100,
+        "reason": "Sol signed after 11:50, and the authenticated reading was below 9. Neither release condition holds, so Cedar remains mandatory under this charter."
+      },
+      {
+        "id": "R10",
+        "choice": "A",
+        "confidence": 100,
+        "reason": "Optimal testing costs 2 plus replacement with probability 1/4: 3.5 total, below operating at 4 and immediate replacement at 6."
+      },
+      {
+        "id": "R05",
+        "choice": "B",
+        "confidence": 100,
+        "reason": "Audit and patch require three sequential minutes but only two remain. Partial work provides no benefit, so no work minimizes this run’s permitted expected cost."
+      },
+      {
+        "id": "R09",
+        "choice": "D",
+        "confidence": 100,
+        "reason": "Omitting costs 0 in one law and 6 in the other, versus backup’s 5. Optimal actions differ across the current class; averaging lacks authorization."
+      },
+      {
+        "id": "R03",
+        "choice": "B",
+        "confidence": 100,
+        "reason": "Omitting costs either 0 or 4, both below backup’s 5. Thus omitting is optimal throughout this class despite unidentified exact expected loss."
+      },
+      {
+        "id": "R01",
+        "choice": "C",
+        "confidence": 100,
+        "reason": "Operating costs 4 in expectation. Optimal testing costs 3 plus 6/4, totaling 4.5; immediate replacement costs 6. Retain operating ex ante."
+      },
+      {
+        "id": "R08",
+        "choice": "D",
+        "confidence": 100,
+        "reason": "Both signatures arrived by 11:50, satisfying one sufficient release condition. Switching is permitted, and Elm’s score 19 exceeds Cedar’s 14."
+      },
+      {
+        "id": "R06",
+        "choice": "A",
+        "confidence": 100,
+        "reason": "Each applicant receives two of six equiprobable tickets, satisfying exactly 1/3 selection probability. Among the two compliant policies, P’s verified score is higher."
+      },
+      {
+        "id": "R07",
+        "choice": "D",
+        "confidence": 100,
+        "reason": "Starting now, the audit finishes at minute 7 and patch at minute 8. Total spending 4 meets budget and eliminates expected loss 12."
+      },
+      {
+        "id": "R11",
+        "choice": "A",
+        "confidence": 100,
+        "reason": "P’s losses satisfy 1≤8, 3≤7, and 6≤9. The pointwise certificate therefore holds for the entire current class, without requiring model probabilities."
+      },
+      {
+        "id": "R12",
+        "choice": "C",
+        "confidence": 100,
+        "reason": "P assigns probabilities 1/2, 1/3, and 1/6, violating the hard equality constraint. Q is compliant and is the only permitted policy remaining."
+      },
+      {
+        "id": "R02",
+        "choice": "C",
+        "confidence": 100,
+        "reason": "In added model w, P’s loss 6 exceeds Q’s 2. This counterexample defeats the current pointwise certificate, while leaving its old-class validity intact."
+      }
+    ]
+  }
+}

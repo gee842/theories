@@ -1,0 +1,25 @@
+{
+  "date_local": "2026-10-05",
+  "scope": "Reproduced four finite calculation records from packaged scripts; source hashes, archive integrity, delivered links and display-math delimiter balance checked. No full inherited experiment rerun and no empirical validation.",
+  "reproductions": [
+    {
+      "script": "formal_verify.py",
+      "saved_results_match": true
+    },
+    {
+      "script": "prior_checks.py",
+      "saved_results_match": true
+    },
+    {
+      "script": "core_counterexamples.py",
+      "saved_results_match": true
+    },
+    {
+      "script": "prior_schedule_guard.py",
+      "saved_results_match": true
+    }
+  ],
+  "archive": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/outputs/research-evidence.zip",
+  "archive_bytes": 89221,
+  "source_snapshots": 8
+}

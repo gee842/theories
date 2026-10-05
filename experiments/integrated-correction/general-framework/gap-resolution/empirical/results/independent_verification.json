@@ -1,0 +1,50 @@
+{
+  "data_and_protocol_hashes_match": true,
+  "results": [
+    {
+      "experiment": 1,
+      "group_periods": 360,
+      "sessions": 6,
+      "exact_primary_fraction": "29/288",
+      "estimate": 0.10069444444444445,
+      "exact_session_fractions": {
+        "141126_1136": "1/8",
+        "141201_1146": "7/40",
+        "141201_1616": "3/80",
+        "141203_1150": "1/20",
+        "150130_1204": "5/24",
+        "150206_1200": "1/120"
+      },
+      "interval": [
+        0.015706684111885125,
+        0.18568220477700376
+      ],
+      "max_difference_from_production": 2.7755575615628914e-17,
+      "source_sha256": "6015fe56a8b8fe63f4a228043aba122408f048ac081cc2f5152c1c8b90b1908b"
+    },
+    {
+      "experiment": 2,
+      "group_periods": 440,
+      "sessions": 7,
+      "exact_primary_fraction": "-163/3360",
+      "estimate": -0.04851190476190476,
+      "exact_session_fractions": {
+        "160129_1448": "11/160",
+        "160204_1603": "-1/30",
+        "160205_1200": "-11/120",
+        "160208_1506": "-1/24",
+        "160218_1445": "-11/60",
+        "160325_1418": "-1/60",
+        "160402_1342": "-1/24"
+      },
+      "interval": [
+        -0.11927693733399508,
+        0.022253127810185562
+      ],
+      "max_difference_from_production": 1.3877787807814457e-17,
+      "source_sha256": "b21062906fd994daa98d14a0915a7c11550653605da8560ade0add16f3ac6fc5"
+    }
+  ],
+  "checker_sha256": "bc904b8d04864b1cf135c794ea0df0dd75a08adeda1a1692f85debfb67173f39",
+  "limitations": "Numerical verification; does not verify unobserved assignment execution or few-session interval coverage."
+}

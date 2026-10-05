@@ -1,0 +1,169 @@
+{
+  "status": "all assertions passed",
+  "feedback_protocol": {
+    "information_uniform": true,
+    "all_prefixes_solvent": true,
+    "authorized": true,
+    "all_prefixes_safe": true,
+    "all_worlds_target": true,
+    "deadline": true,
+    "certificate_valid": true,
+    "runs": [
+      {
+        "hidden_bit": 0,
+        "actions": [
+          "inspect",
+          "authorize",
+          "apply0"
+        ],
+        "cash_prefixes": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "final_mode": "goal"
+      },
+      {
+        "hidden_bit": 1,
+        "actions": [
+          "inspect",
+          "authorize",
+          "apply1"
+        ],
+        "cash_prefixes": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "final_mode": "goal"
+      }
+    ]
+  },
+  "hidden_oracle_counterexample": {
+    "information_uniform": false,
+    "all_prefixes_solvent": true,
+    "authorized": true,
+    "all_prefixes_safe": true,
+    "all_worlds_target": true,
+    "deadline": true,
+    "certificate_valid": false,
+    "runs": [
+      {
+        "hidden_bit": 0,
+        "actions": [
+          "inspect",
+          "authorize",
+          "apply0"
+        ],
+        "cash_prefixes": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "final_mode": "goal"
+      },
+      {
+        "hidden_bit": 1,
+        "actions": [
+          "inspect",
+          "authorize",
+          "apply1"
+        ],
+        "cash_prefixes": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "final_mode": "goal"
+      }
+    ]
+  },
+  "authority_counterexample": {
+    "information_uniform": true,
+    "all_prefixes_solvent": true,
+    "authorized": false,
+    "all_prefixes_safe": true,
+    "all_worlds_target": true,
+    "deadline": true,
+    "certificate_valid": false,
+    "runs": [
+      {
+        "hidden_bit": 0,
+        "actions": [
+          "inspect",
+          "wait",
+          "apply0"
+        ],
+        "cash_prefixes": [
+          3,
+          2,
+          2,
+          1
+        ],
+        "final_mode": "goal"
+      },
+      {
+        "hidden_bit": 1,
+        "actions": [
+          "inspect",
+          "wait",
+          "apply1"
+        ],
+        "cash_prefixes": [
+          3,
+          2,
+          2,
+          1
+        ],
+        "final_mode": "goal"
+      }
+    ]
+  },
+  "precommitted_words_exhausted": 125,
+  "best_precommitted_successes_out_of_two_worlds": 1,
+  "separately_successful_physical_paths": {
+    "0": true,
+    "1": true
+  },
+  "net_zero_unpayable_ledger": [
+    0,
+    -1,
+    0
+  ],
+  "unsafe_intermediate_path": [
+    "source",
+    "unsafe",
+    "goal"
+  ],
+  "directionality": {
+    "abstract_wins": false,
+    "concrete_wins": true
+  },
+  "shared_channel": {
+    "one_slot_feasible": false,
+    "two_slots_feasible": true
+  },
+  "nested_protocol": {
+    "duration": 8,
+    "gross_cost": 20,
+    "cash_prefixes": [
+      20,
+      11,
+      0
+    ]
+  },
+  "rule_handoff": {
+    "before_safe": true,
+    "rule_only_change_safe": false
+  },
+  "limits": [
+    "Finite examples are not a machine proof of CT1 or CT2",
+    "No finite truncation proves the unbounded-delay example",
+    "Perfect recall of the explicitly listed protocol interface is supplied",
+    "No empirical data or cross-domain universality claim"
+  ]
+}

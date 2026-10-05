@@ -1,0 +1,48 @@
+{
+  "captured_utc": "2026-10-04T22:14:27.320466+00:00",
+  "files": [
+    {
+      "source": "/Users/ren/theories/theories/shengsheng-buxi-generative-existence/README.md",
+      "source_sha256": "0ebafd0068addc5749ff4aa8608c03e5fe2fdf8bfd9ca8c57b5e272ecdf7f909",
+      "snapshot": "canonical-root-excerpts.md",
+      "snapshot_sha256": "aa30aca18a7a7bd96e7276eeaf81c1e60f226fe5681a42073b1fd99734e33b98",
+      "line_ranges": [
+        [
+          1,
+          7
+        ],
+        [
+          35,
+          90
+        ],
+        [
+          255,
+          318
+        ],
+        [
+          1153,
+          1215
+        ]
+      ]
+    },
+    {
+      "source": "/Users/ren/theories/sources/07-shengsheng-buxi/ssbx-repo/formal-notes/monad-root-plan.md",
+      "source_sha256": "8c969f92b078da2212e90f207cae075517e9076979be06618b49098d58ac4d49",
+      "snapshot": "single-root-plan.md",
+      "snapshot_sha256": "8c969f92b078da2212e90f207cae075517e9076979be06618b49098d58ac4d49",
+      "line_ranges": null
+    },
+    {
+      "source": "/Users/ren/theories/sources/07-shengsheng-buxi/ssbx-repo/docs-next/10_formal_\u5f62\u5f0f/claim-status-ledger.md",
+      "source_sha256": "6a7b33a057497afcba31533693a3e775efae594b2e39968112975325c954b200",
+      "snapshot": "claim-ledger-excerpts.md",
+      "snapshot_sha256": "0637ba8fb0d35519310f2bc0ef5474869222689548d07641073f94844ae546bc",
+      "line_ranges": [
+        [
+          1,
+          17
+        ]
+      ]
+    }
+  ]
+}

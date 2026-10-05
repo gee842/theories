@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-10-05T05:03:25.652394+07:00",
+  "review": "author arithmetic and independent root/method audit completed before participant dispatch",
+  "primary_case_ids": [
+    "R02",
+    "R03",
+    "R09",
+    "R11"
+  ],
+  "files": {
+    "cases.json": "aaa5e898fa1ce5308dc50b1db6921d994f716f691f7c322bcfff5370f215fdff",
+    "key.json": "e0a606055ef5544ae50dc932a4f5d5d690fecb337d1a28952c10ca7965d0d733",
+    "orders.json": "681fe09bc011e859c9713eeb1aeace468278759ee99428199eb497047ca745a6",
+    "protocol.json": "8b2460d000ad5a44afb6a449c0f09a281193fafbfb5750c85ec1e61b1c78a92b",
+    "pre-run-amendments.json": "d44d0736753a22dda516687b3f19cb4a9a45fb388ca242a2e97c3171d2ebedc9",
+    "score.py": "afc254be6a2ec43798da553cec94cd3fcbfe6d84b38c38c0fe57785d13aa897a",
+    "prompt-ordinary-1.txt": "f615f732a485808b535247522d553849de7c05c4bebfae95828e15f95497de18",
+    "prompt-ordinary-2.txt": "e7742e342995e54188097845bb250019c52c40f12bc8f905d62d6b6679ae8c14",
+    "prompt-reflection-1.txt": "a0286979a03c6de7916b1c4d4d3f80bda581808d801f63287bb731641c0bc5fc",
+    "prompt-reflection-2.txt": "7ebe56d5f2d8607250a28efd8462c999017665f6d847741100f0ee30f97155d3",
+    "prompt-discipline-1.txt": "74a4882e1f2f4bbe4863237b9a3aef825ca36071e4ece1489ae5a079520c70db",
+    "prompt-discipline-2.txt": "464316f3307461bb66855e955229467b1dc9ecb719202d0cb2540a0937981895"
+  }
+}

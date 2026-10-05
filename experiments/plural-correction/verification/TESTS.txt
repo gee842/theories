@@ -1,0 +1,14 @@
+test_all_one_round_consequences_against_latent_enumeration (test_model.PluralCorrectionTests.test_all_one_round_consequences_against_latent_enumeration) ... ok
+test_analytic_witness_and_no_diagnostic_separator (test_model.PluralCorrectionTests.test_analytic_witness_and_no_diagnostic_separator) ... ok
+test_cash_and_permission_complementarity_is_specific_to_the_bounds (test_model.PluralCorrectionTests.test_cash_and_permission_complementarity_is_specific_to_the_bounds) ... ok
+test_certificate_against_independent_latent_actions (test_model.PluralCorrectionTests.test_certificate_against_independent_latent_actions) ... ok
+test_no_scalar_terminal_preferences_or_impossible_signal_leak (test_model.PluralCorrectionTests.test_no_scalar_terminal_preferences_or_impossible_signal_leak) ... ok
+test_occupancy_normalization_forward_and_backward_agree (test_model.PluralCorrectionTests.test_occupancy_normalization_forward_and_backward_agree) ... ok
+test_postdiagnostic_and_opening_permission_are_different (test_model.PluralCorrectionTests.test_postdiagnostic_and_opening_permission_are_different) ... ok
+test_restrictions_only_remove_unchanged_actions (test_model.PluralCorrectionTests.test_restrictions_only_remove_unchanged_actions) ... ok
+test_terminal_only_graph_has_correct_outcome_and_certificate (test_model.PluralCorrectionTests.test_terminal_only_graph_has_correct_outcome_and_certificate) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.431s
+
+OK

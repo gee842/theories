@@ -1,0 +1,808 @@
+{
+  "end_to_end_simulation_seconds": {
+    "matched/constant/raw": 0.2838853750145063,
+    "matched/constant/direct": 0.2596157499938272,
+    "matched/constant/retained": 0.30204533296637237,
+    "matched/constant/flat": 0.32565274997614324,
+    "matched/constant/audit": 0.30404779099626467,
+    "matched/constant/joint": 1.3590882919961587,
+    "matched/constant/joint_y_only": 1.270429916039575,
+    "matched/constant/repeat": 0.3320059159887023,
+    "matched/switch30/raw": 0.26939591602422297,
+    "matched/switch30/direct": 0.2667828329722397,
+    "matched/switch30/retained": 0.3102952499757521,
+    "matched/switch30/flat": 0.3344141670386307,
+    "matched/switch30/audit": 0.3135156249627471,
+    "matched/switch30/joint": 1.3732774999807589,
+    "matched/switch30/joint_y_only": 1.2293193750083447,
+    "matched/switch30/repeat": 0.32686324999667704,
+    "matched/reference_bias/raw": 0.27270541701000184,
+    "matched/reference_bias/direct": 0.2615670830127783,
+    "matched/reference_bias/retained": 0.30181445798370987,
+    "matched/reference_bias/flat": 0.3253051660140045,
+    "matched/reference_bias/audit": 0.3065859170164913,
+    "matched/reference_bias/joint": 1.3563477499992587,
+    "matched/reference_bias/joint_y_only": 1.2351940830121748,
+    "matched/reference_bias/repeat": 0.3262477919925004,
+    "matched/no_bias/raw": 0.2701308749965392,
+    "matched/no_bias/direct": 0.26368729199748486,
+    "matched/no_bias/retained": 0.30036212503910065,
+    "matched/no_bias/flat": 0.323815208976157,
+    "matched/no_bias/audit": 0.3060153750120662,
+    "matched/no_bias/joint": 1.3643040000461042,
+    "matched/no_bias/joint_y_only": 1.2420325410203077,
+    "matched/no_bias/repeat": 0.32609729102114215,
+    "matched/switch32/raw": 0.26682320900727063,
+    "matched/switch32/direct": 0.26417849998688325,
+    "matched/switch32/retained": 0.302975999948103,
+    "matched/switch32/flat": 0.3277373340097256,
+    "matched/switch32/audit": 0.3086650000186637,
+    "matched/switch32/joint": 1.3520422920119017,
+    "matched/switch32/joint_y_only": 1.2234364169999026,
+    "matched/switch32/repeat": 0.3261826660018414,
+    "adaptive/constant/raw": 0.2626862080069259,
+    "adaptive/constant/direct": 0.2695462090196088,
+    "adaptive/constant/retained": 0.481028874986805,
+    "adaptive/constant/flat": 0.3369679999887012,
+    "adaptive/constant/audit": 0.3227167499717325,
+    "adaptive/constant/joint": 1.340175958990585,
+    "adaptive/constant/joint_y_only": 1.2489430829882622,
+    "adaptive/constant/repeat": 0.3366404589614831,
+    "adaptive/switch30/raw": 0.2706727500190027,
+    "adaptive/switch30/direct": 0.27079241699539125,
+    "adaptive/switch30/retained": 0.31009920802898705,
+    "adaptive/switch30/flat": 0.3402583329589106,
+    "adaptive/switch30/audit": 0.32821370800957084,
+    "adaptive/switch30/joint": 1.4304934169631451,
+    "adaptive/switch30/joint_y_only": 1.3192455840180628,
+    "adaptive/switch30/repeat": 0.33990908303530887,
+    "adaptive/reference_bias/raw": 0.26487333298427984,
+    "adaptive/reference_bias/direct": 0.27081308397464454,
+    "adaptive/reference_bias/retained": 0.30924758297624066,
+    "adaptive/reference_bias/flat": 0.3546941669774242,
+    "adaptive/reference_bias/audit": 0.3143377919914201,
+    "adaptive/reference_bias/joint": 1.2827381669776514,
+    "adaptive/reference_bias/joint_y_only": 2.1204967080266215,
+    "adaptive/reference_bias/repeat": 0.33526137500302866,
+    "adaptive/no_bias/raw": 0.2642811249825172,
+    "adaptive/no_bias/direct": 0.27356391603825614,
+    "adaptive/no_bias/retained": 0.3246308339876123,
+    "adaptive/no_bias/flat": 0.335560625011567,
+    "adaptive/no_bias/audit": 0.32409383298363537,
+    "adaptive/no_bias/joint": 1.3173949579941109,
+    "adaptive/no_bias/joint_y_only": 1.2948512080474757,
+    "adaptive/no_bias/repeat": 0.35208737500943244,
+    "adaptive/switch32/raw": 0.2678229589946568,
+    "adaptive/switch32/direct": 0.2759991670027375,
+    "adaptive/switch32/retained": 0.31673037505242974,
+    "adaptive/switch32/flat": 0.3392051660339348,
+    "adaptive/switch32/audit": 0.3170122090377845,
+    "adaptive/switch32/joint": 1.2906097500235774,
+    "adaptive/switch32/joint_y_only": 1.274118333007209,
+    "adaptive/switch32/repeat": 0.33678308298112825
+  },
+  "equivalence": [
+    {
+      "stage": "matched",
+      "world": "constant",
+      "seeds": 1000,
+      "max_discrepancy": 0.0
+    },
+    {
+      "stage": "matched",
+      "world": "switch30",
+      "seeds": 1000,
+      "max_discrepancy": 0.0
+    },
+    {
+      "stage": "matched",
+      "world": "reference_bias",
+      "seeds": 1000,
+      "max_discrepancy": 0.0
+    },
+    {
+      "stage": "matched",
+      "world": "no_bias",
+      "seeds": 1000,
+      "max_discrepancy": 0.0
+    },
+    {
+      "stage": "matched",
+      "world": "switch32",
+      "seeds": 1000,
+      "max_discrepancy": 0.0
+    },
+    {
+      "stage": "adaptive",
+      "world": "constant",
+      "seeds": 1000,
+      "max_discrepancy": 0.0
+    },
+    {
+      "stage": "adaptive",
+      "world": "switch30",
+      "seeds": 1000,
+      "max_discrepancy": 0.0
+    },
+    {
+      "stage": "adaptive",
+      "world": "reference_bias",
+      "seeds": 1000,
+      "max_discrepancy": 0.0
+    },
+    {
+      "stage": "adaptive",
+      "world": "no_bias",
+      "seeds": 1000,
+      "max_discrepancy": 0.0
+    },
+    {
+      "stage": "adaptive",
+      "world": "switch32",
+      "seeds": 1000,
+      "max_discrepancy": 0.0
+    }
+  ],
+  "example_blocks": {
+    "matched/constant/raw": {
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "matched/constant/direct": {
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "matched/constant/retained": {
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/constant/flat": {
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/constant/audit": {
+      "audit": 12,
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/constant/joint": {
+      "joint_update_y": 60,
+      "joint_update_z": 12,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "matched/constant/joint_y_only": {
+      "joint_update_y": 60,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "matched/constant/repeat": {
+      "bias_update": 12,
+      "estimate": 240,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/switch30/raw": {
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "matched/switch30/direct": {
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "matched/switch30/retained": {
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/switch30/flat": {
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/switch30/audit": {
+      "audit": 12,
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/switch30/joint": {
+      "joint_update_y": 60,
+      "joint_update_z": 12,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "matched/switch30/joint_y_only": {
+      "joint_update_y": 60,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "matched/switch30/repeat": {
+      "bias_update": 12,
+      "estimate": 240,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/reference_bias/raw": {
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "matched/reference_bias/direct": {
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "matched/reference_bias/retained": {
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/reference_bias/flat": {
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/reference_bias/audit": {
+      "audit": 12,
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/reference_bias/joint": {
+      "joint_update_y": 60,
+      "joint_update_z": 12,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "matched/reference_bias/joint_y_only": {
+      "joint_update_y": 60,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "matched/reference_bias/repeat": {
+      "bias_update": 12,
+      "estimate": 240,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/no_bias/raw": {
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "matched/no_bias/direct": {
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "matched/no_bias/retained": {
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/no_bias/flat": {
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/no_bias/audit": {
+      "audit": 12,
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/no_bias/joint": {
+      "joint_update_y": 60,
+      "joint_update_z": 12,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "matched/no_bias/joint_y_only": {
+      "joint_update_y": 60,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "matched/no_bias/repeat": {
+      "bias_update": 12,
+      "estimate": 240,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/switch32/raw": {
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "matched/switch32/direct": {
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "matched/switch32/retained": {
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/switch32/flat": {
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/switch32/audit": {
+      "audit": 12,
+      "bias_update": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "matched/switch32/joint": {
+      "joint_update_y": 60,
+      "joint_update_z": 12,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "matched/switch32/joint_y_only": {
+      "joint_update_y": 60,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "matched/switch32/repeat": {
+      "bias_update": 12,
+      "estimate": 240,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/constant/raw": {
+      "gate": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "adaptive/constant/direct": {
+      "gate": 12,
+      "reference_value": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "adaptive/constant/retained": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/constant/flat": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/constant/audit": {
+      "gate": 12,
+      "reference_value": 12,
+      "audit": 6,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/constant/joint": {
+      "joint_update_y": 60,
+      "gate": 12,
+      "reference_value": 12,
+      "joint_update_z": 1,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "adaptive/constant/joint_y_only": {
+      "joint_update_y": 60,
+      "gate": 12,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "adaptive/constant/repeat": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 240,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/switch30/raw": {
+      "gate": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "adaptive/switch30/direct": {
+      "gate": 12,
+      "reference_value": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "adaptive/switch30/retained": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/switch30/flat": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/switch30/audit": {
+      "gate": 12,
+      "reference_value": 12,
+      "audit": 5,
+      "bias_update": 5,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/switch30/joint": {
+      "joint_update_y": 60,
+      "gate": 12,
+      "reference_value": 12,
+      "joint_update_z": 1,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "adaptive/switch30/joint_y_only": {
+      "joint_update_y": 60,
+      "gate": 12,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "adaptive/switch30/repeat": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 240,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/reference_bias/raw": {
+      "gate": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "adaptive/reference_bias/direct": {
+      "gate": 12,
+      "reference_value": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "adaptive/reference_bias/retained": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/reference_bias/flat": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/reference_bias/audit": {
+      "gate": 12,
+      "reference_value": 12,
+      "audit": 6,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/reference_bias/joint": {
+      "joint_update_y": 60,
+      "gate": 12,
+      "reference_value": 12,
+      "joint_update_z": 1,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "adaptive/reference_bias/joint_y_only": {
+      "joint_update_y": 60,
+      "gate": 12,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "adaptive/reference_bias/repeat": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 240,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/no_bias/raw": {
+      "gate": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "adaptive/no_bias/direct": {
+      "gate": 12,
+      "reference_value": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "adaptive/no_bias/retained": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/no_bias/flat": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/no_bias/audit": {
+      "gate": 12,
+      "reference_value": 12,
+      "audit": 6,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/no_bias/joint": {
+      "joint_update_y": 60,
+      "gate": 12,
+      "reference_value": 12,
+      "joint_update_z": 1,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "adaptive/no_bias/joint_y_only": {
+      "joint_update_y": 60,
+      "gate": 12,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "adaptive/no_bias/repeat": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 240,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/switch32/raw": {
+      "gate": 12,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "adaptive/switch32/direct": {
+      "gate": 12,
+      "reference_value": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60
+    },
+    "adaptive/switch32/retained": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/switch32/flat": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/switch32/audit": {
+      "gate": 12,
+      "reference_value": 12,
+      "audit": 6,
+      "bias_update": 6,
+      "estimate": 60,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    },
+    "adaptive/switch32/joint": {
+      "joint_update_y": 60,
+      "gate": 12,
+      "reference_value": 12,
+      "joint_update_z": 1,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "adaptive/switch32/joint_y_only": {
+      "joint_update_y": 60,
+      "gate": 12,
+      "control": 60,
+      "forecast": 60,
+      "joint_predict": 59
+    },
+    "adaptive/switch32/repeat": {
+      "gate": 12,
+      "reference_value": 8,
+      "bias_update": 6,
+      "estimate": 240,
+      "variance": 60,
+      "control": 60,
+      "forecast": 60,
+      "bias_predict": 59
+    }
+  },
+  "persistent_belief_scalars": {
+    "raw": 0,
+    "direct": 0,
+    "retained": 2,
+    "flat": 2,
+    "audit": 2,
+    "joint": 5,
+    "joint_y_only": 5,
+    "repeat": 2
+  }
+}

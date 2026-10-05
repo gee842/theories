@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-10-05T05:03:25.651704+07:00",
+  "stage": "before first participant run",
+  "amendments": [
+    "Every participant may make exactly one read of its assigned prompt file to load the frozen input. The participant tool ban begins after input loading; no further files, browsing, delegation or computation tools are permitted. This is a common input-loading step, not independent evidence or computation access.",
+    "Primary scope results additionally report valid denominator, missing count, and a conservative error-or-missing count, preventing silence from appearing successful.",
+    "Duplicate known IDs are treated as missing for that case and reported; unknown IDs reported separately; absent rationale is a format failure.",
+    "All-option accuracy scores the entire conclusion plus stated warrant, not bare action choice."
+  ]
+}

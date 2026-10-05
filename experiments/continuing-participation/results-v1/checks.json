@@ -1,0 +1,10 @@
+{
+  "result_count": 92,
+  "max_flow_residual": 5.551115123125783e-16,
+  "max_policy_evaluation_residual": 1.0658141036401503e-14,
+  "max_absolute_primary_duality_gap": 2.7755575615628914e-16,
+  "max_cash_conservation_residual": 7.105427357601002e-15,
+  "max_loss_sum_residual": 2.6645352591003757e-15,
+  "max_continuing_conditional_refusal_gain": 0.0,
+  "max_continuing_replay_discrepancy": 3.552713678800501e-15
+}

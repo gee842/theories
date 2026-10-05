@@ -1,0 +1,10 @@
+{
+  "passes": true,
+  "method": "closed-form period oracle; no implementation imports",
+  "law_sequences": 54,
+  "periods_per_sequence": 4,
+  "state_checks": 4968,
+  "edge_checks": 5400,
+  "all_reachable_states_covered": 486,
+  "all_actual_edges_covered": 506
+}

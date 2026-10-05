@@ -1,0 +1,18 @@
+{
+  "frozen_at": "2026-10-05T04:57:01.808123+07:00",
+  "treatments": {
+    "ordinary": {
+      "file": "treatment-ordinary.txt",
+      "sha256": "313d08b3da10667630dc37bb92dffb4411bc0f3f9774e982e5b59511c811b6ca"
+    },
+    "reflection": {
+      "file": "treatment-reflection.txt",
+      "sha256": "8ea468d9725e13ba27da62ddc223f6771afa9560a9f2bad47e3f2bb97ff752cc"
+    },
+    "discipline": {
+      "file": "treatment-discipline.txt",
+      "sha256": "2fe7aeb6338b6e56cd6a41bfb4e4886e760e693b7a503a55eb23a8da57b1cde3"
+    }
+  },
+  "status": "treatment wording fixed before case inspection"
+}

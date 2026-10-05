@@ -1,0 +1,937 @@
+{
+  "status": "all assertions passed",
+  "safe_physical_states": [
+    [
+      "O",
+      2
+    ],
+    [
+      "S",
+      2
+    ],
+    [
+      "T",
+      1
+    ],
+    [
+      "T",
+      2
+    ]
+  ],
+  "reserve_selector_survival_30_cycles": {
+    "exact": "1",
+    "decimal": 1.0
+  },
+  "consume_selector_survival_one_cycle": {
+    "exact": "0",
+    "decimal": 0.0
+  },
+  "corrupt_transmission_survival_two_cycles": {
+    "exact": "0",
+    "decimal": 0.0
+  },
+  "exact_kernel_rows_checked": 1020,
+  "composed_state_maps_checked": 436,
+  "finite_path_law_equalities_checked": 104,
+  "survival_formula_checks": 80,
+  "finite_horizon_tv_checks": 13,
+  "same_support_different_laws": {
+    "mu_quarter_survival_four_cycles": {
+      "exact": "27/64",
+      "decimal": 0.421875
+    },
+    "mu_half_survival_four_cycles": {
+      "exact": "1/8",
+      "decimal": 0.125
+    }
+  },
+  "survival_rows": [
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 1,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 2,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 3,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 4,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 5,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 6,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 7,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 8,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 9,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 10,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 11,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 12,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 13,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 14,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 15,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 16,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 17,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 18,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 19,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "cycles": 20,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 1,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 2,
+      "survival": {
+        "exact": "3/4",
+        "decimal": 0.75
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 3,
+      "survival": {
+        "exact": "9/16",
+        "decimal": 0.5625
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 4,
+      "survival": {
+        "exact": "27/64",
+        "decimal": 0.421875
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 5,
+      "survival": {
+        "exact": "81/256",
+        "decimal": 0.31640625
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 6,
+      "survival": {
+        "exact": "243/1024",
+        "decimal": 0.2373046875
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 7,
+      "survival": {
+        "exact": "729/4096",
+        "decimal": 0.177978515625
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 8,
+      "survival": {
+        "exact": "2187/16384",
+        "decimal": 0.13348388671875
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 9,
+      "survival": {
+        "exact": "6561/65536",
+        "decimal": 0.1001129150390625
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 10,
+      "survival": {
+        "exact": "19683/262144",
+        "decimal": 0.07508468627929688
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 11,
+      "survival": {
+        "exact": "59049/1048576",
+        "decimal": 0.056313514709472656
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 12,
+      "survival": {
+        "exact": "177147/4194304",
+        "decimal": 0.04223513603210449
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 13,
+      "survival": {
+        "exact": "531441/16777216",
+        "decimal": 0.03167635202407837
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 14,
+      "survival": {
+        "exact": "1594323/67108864",
+        "decimal": 0.023757264018058777
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 15,
+      "survival": {
+        "exact": "4782969/268435456",
+        "decimal": 0.017817948013544083
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 16,
+      "survival": {
+        "exact": "14348907/1073741824",
+        "decimal": 0.013363461010158062
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 17,
+      "survival": {
+        "exact": "43046721/4294967296",
+        "decimal": 0.010022595757618546
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 18,
+      "survival": {
+        "exact": "129140163/17179869184",
+        "decimal": 0.00751694681821391
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 19,
+      "survival": {
+        "exact": "387420489/68719476736",
+        "decimal": 0.005637710113660432
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "cycles": 20,
+      "survival": {
+        "exact": "1162261467/274877906944",
+        "decimal": 0.004228282585245324
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 1,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 2,
+      "survival": {
+        "exact": "1/2",
+        "decimal": 0.5
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 3,
+      "survival": {
+        "exact": "1/4",
+        "decimal": 0.25
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 4,
+      "survival": {
+        "exact": "1/8",
+        "decimal": 0.125
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 5,
+      "survival": {
+        "exact": "1/16",
+        "decimal": 0.0625
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 6,
+      "survival": {
+        "exact": "1/32",
+        "decimal": 0.03125
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 7,
+      "survival": {
+        "exact": "1/64",
+        "decimal": 0.015625
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 8,
+      "survival": {
+        "exact": "1/128",
+        "decimal": 0.0078125
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 9,
+      "survival": {
+        "exact": "1/256",
+        "decimal": 0.00390625
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 10,
+      "survival": {
+        "exact": "1/512",
+        "decimal": 0.001953125
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 11,
+      "survival": {
+        "exact": "1/1024",
+        "decimal": 0.0009765625
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 12,
+      "survival": {
+        "exact": "1/2048",
+        "decimal": 0.00048828125
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 13,
+      "survival": {
+        "exact": "1/4096",
+        "decimal": 0.000244140625
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 14,
+      "survival": {
+        "exact": "1/8192",
+        "decimal": 0.0001220703125
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 15,
+      "survival": {
+        "exact": "1/16384",
+        "decimal": 6.103515625e-05
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 16,
+      "survival": {
+        "exact": "1/32768",
+        "decimal": 3.0517578125e-05
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 17,
+      "survival": {
+        "exact": "1/65536",
+        "decimal": 1.52587890625e-05
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 18,
+      "survival": {
+        "exact": "1/131072",
+        "decimal": 7.62939453125e-06
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 19,
+      "survival": {
+        "exact": "1/262144",
+        "decimal": 3.814697265625e-06
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "cycles": 20,
+      "survival": {
+        "exact": "1/524288",
+        "decimal": 1.9073486328125e-06
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 1,
+      "survival": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 2,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 3,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 4,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 5,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 6,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 7,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 8,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 9,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 10,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 11,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 12,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 13,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 14,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 15,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 16,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 17,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 18,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 19,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    },
+    {
+      "mutation": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "cycles": 20,
+      "survival": {
+        "exact": "0",
+        "decimal": 0.0
+      }
+    }
+  ],
+  "limits": [
+    "Supplied finite rules, not an optimizer or adoption model",
+    "Renewal receipt is external and arrives after transmission payment",
+    "Kernel and trace tests are finite checks, not a machine proof of the general theorem",
+    "Physical plant capacity is relative to the declared solvency test",
+    "No empirical or normative conclusion"
+  ]
+}

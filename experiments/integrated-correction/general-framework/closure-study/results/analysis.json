@@ -1,0 +1,1429 @@
+{
+  "metadata": {
+    "python": "3.11.2",
+    "numpy": "2.4.6",
+    "source_sha256": "7eb33e6b47e29a61c41c516807f144f221eef6d93cb9cb40cb5263b2bb3783d5",
+    "protocol_sha256": "9cf6eebe656534fce97da8327d01466b180605b8aa60e82a4fd0628633d58fcc"
+  },
+  "arms": {
+    "endogenous": {
+      "parameters": {
+        "hazard": 0.05,
+        "accuracy": 0.95,
+        "delta_base": 0.05,
+        "delta_failure": 0.2,
+        "forget": 0.1,
+        "entry": 0.0,
+        "w_volume": 0.25,
+        "w_adaptive": 4.0,
+        "admission": true,
+        "execution": true,
+        "training": true,
+        "succession": "endogenous"
+      },
+      "reachable_states": 32,
+      "closed_safe_states": 0,
+      "initial_in_closed_safe_core": false,
+      "checkpoints": {
+        "200": {
+          "never_lost_capacity": 0.09436917425904776,
+          "currently_has_capacity": 0.09436917425904778,
+          "average_events": {
+            "inquiry": 0.35077819971132634,
+            "admission": 0.35077819971132634,
+            "discrepant_admission": 0.04697848163504314,
+            "training": 0.01834461975998262,
+            "revision": 0.04697848163504314,
+            "beneficial_revision": 0.031075103407781062,
+            "harmful_revision": 0.015903378227262087,
+            "adequate": 0.6724614871998067,
+            "completed_cases": 1.6308771805286775,
+            "adequate_cases": 0.9983020892833426,
+            "turnover": 0.11550770256003708,
+            "entry": 0.0
+          }
+        },
+        "2000": {
+          "never_lost_capacity": 1.5294325605536836e-11,
+          "currently_has_capacity": 1.529432560553684e-11,
+          "average_events": {
+            "inquiry": 0.038196078430867,
+            "admission": 0.038196078430867,
+            "discrepant_admission": 0.005117598039147634,
+            "training": 0.0019999999999731595,
+            "revision": 0.005117598039147634,
+            "beneficial_revision": 0.0033860049019156283,
+            "harmful_revision": 0.001731593137232004,
+            "adequate": 0.5187941176467852,
+            "completed_cases": 1.959803921569071,
+            "adequate_cases": 0.9998431372548537,
+            "turnover": 0.1462411764706314,
+            "entry": 0.0
+          }
+        }
+      },
+      "expected_first_loss_time": 91.09243697478938,
+      "linear_solve_residual": 2.842170943040401e-14,
+      "limiting": {
+        "positive_capacity_fraction": 0.0,
+        "event_rates": {
+          "inquiry": 0.0,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.0,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.4999999999999941,
+          "completed_cases": 1.9999999999999756,
+          "adequate_cases": 0.9999999999999882,
+          "turnover": 0.1499999999999982,
+          "entry": 0.0
+        },
+        "classes": [
+          {
+            "states": 2,
+            "probability": 0.5267454706142223,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          },
+          {
+            "states": 2,
+            "probability": 0.47325452938576573,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          }
+        ]
+      },
+      "max_row_sum_error": 2.220446049250313e-16
+    },
+    "protected": {
+      "parameters": {
+        "hazard": 0.05,
+        "accuracy": 0.95,
+        "delta_base": 0.05,
+        "delta_failure": 0.2,
+        "forget": 0.1,
+        "entry": 0.0,
+        "w_volume": 0.25,
+        "w_adaptive": 4.0,
+        "admission": true,
+        "execution": true,
+        "training": true,
+        "succession": "protected"
+      },
+      "reachable_states": 16,
+      "closed_safe_states": 36,
+      "initial_in_closed_safe_core": true,
+      "checkpoints": {
+        "200": {
+          "never_lost_capacity": 0.9999999999999881,
+          "currently_has_capacity": 0.9999999999999881,
+          "average_events": {
+            "inquiry": 0.9374300208116528,
+            "admission": 0.9374300208116528,
+            "discrepant_admission": 0.127996538761706,
+            "training": 0.06256997918834518,
+            "revision": 0.127996538761706,
+            "beneficial_revision": 0.08563198426118575,
+            "harmful_revision": 0.04236455450052017,
+            "adequate": 0.9355775234131084,
+            "completed_cases": 0.999999999999999,
+            "adequate_cases": 0.9355775234131084,
+            "turnover": 0.06288449531737744,
+            "entry": 0.0
+          }
+        },
+        "2000": {
+          "never_lost_capacity": 0.9999999999999738,
+          "currently_has_capacity": 0.9999999999999738,
+          "average_events": {
+            "inquiry": 0.9371300988553689,
+            "admission": 0.9371300988553689,
+            "discrepant_admission": 0.12819562161810757,
+            "training": 0.06286990114464064,
+            "revision": 0.12819562161810757,
+            "beneficial_revision": 0.08585795649063485,
+            "harmful_revision": 0.0423376651274695,
+            "adequate": 0.9354932362122896,
+            "completed_cases": 0.9999999999999996,
+            "adequate_cases": 0.9354932362122896,
+            "turnover": 0.06290135275754385,
+            "entry": 0.0
+          }
+        }
+      },
+      "expected_first_loss_time": null,
+      "linear_solve_residual": null,
+      "limiting": {
+        "positive_capacity_fraction": 1.0,
+        "event_rates": {
+          "inquiry": 0.9370967741935484,
+          "admission": 0.9370967741935484,
+          "discrepant_admission": 0.12821774193548358,
+          "training": 0.06290322580645152,
+          "revision": 0.12821774193548358,
+          "beneficial_revision": 0.0858830645161287,
+          "harmful_revision": 0.0423346774193549,
+          "adequate": 0.9354838709677422,
+          "completed_cases": 0.9999999999999999,
+          "adequate_cases": 0.9354838709677422,
+          "turnover": 0.06290322580645157,
+          "entry": 0.0
+        },
+        "classes": [
+          {
+            "states": 16,
+            "probability": 1.0,
+            "all_have_capacity": true,
+            "has_capacity_somewhere": true,
+            "recurrent_events": [
+              "inquiry",
+              "admission",
+              "discrepant_admission",
+              "training",
+              "revision",
+              "beneficial_revision",
+              "harmful_revision",
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          }
+        ]
+      },
+      "max_row_sum_error": 2.220446049250313e-16
+    },
+    "volume_only": {
+      "parameters": {
+        "hazard": 0.05,
+        "accuracy": 0.95,
+        "delta_base": 0.05,
+        "delta_failure": 0.2,
+        "forget": 0.1,
+        "entry": 0.0,
+        "w_volume": 0.25,
+        "w_adaptive": 4.0,
+        "admission": true,
+        "execution": true,
+        "training": true,
+        "succession": "volume"
+      },
+      "reachable_states": 20,
+      "closed_safe_states": 0,
+      "initial_in_closed_safe_core": false,
+      "checkpoints": {
+        "200": {
+          "never_lost_capacity": 1.2743567710294275e-05,
+          "currently_has_capacity": 1.2743567710294273e-05,
+          "average_events": {
+            "inquiry": 0.08333298145747291,
+            "admission": 0.08333298145747291,
+            "discrepant_admission": 0.01044787186800328,
+            "training": 0.0,
+            "revision": 0.01044787186800328,
+            "beneficial_revision": 0.006630179617081277,
+            "harmful_revision": 0.0038176922509220047,
+            "adequate": 0.5506247031186294,
+            "completed_cases": 1.9166670185425152,
+            "adequate_cases": 1.0220830738526607,
+            "turnover": 0.13987505937627268,
+            "entry": 0.0
+          }
+        },
+        "2000": {
+          "never_lost_capacity": 5.445447733990486e-54,
+          "currently_has_capacity": 5.445447733990486e-54,
+          "average_events": {
+            "inquiry": 0.008333333333333297,
+            "admission": 0.008333333333333297,
+            "discrepant_admission": 0.0010447916666666637,
+            "training": 0.0,
+            "revision": 0.0010447916666666637,
+            "beneficial_revision": 0.0006630208333333324,
+            "harmful_revision": 0.00038177083333333303,
+            "adequate": 0.5050624999999981,
+            "completed_cases": 1.9916666666666596,
+            "adequate_cases": 1.0022083333333303,
+            "turnover": 0.14898749999999147,
+            "entry": 0.0
+          }
+        }
+      },
+      "expected_first_loss_time": 27.619047619047564,
+      "linear_solve_residual": 3.552713678800501e-15,
+      "limiting": {
+        "positive_capacity_fraction": 0.0,
+        "event_rates": {
+          "inquiry": 0.0,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.0,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.4999999999999971,
+          "completed_cases": 1.9999999999999873,
+          "adequate_cases": 0.9999999999999942,
+          "turnover": 0.14999999999999905,
+          "entry": 0.0
+        },
+        "classes": [
+          {
+            "states": 2,
+            "probability": 0.6022727272727235,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          },
+          {
+            "states": 2,
+            "probability": 0.3977272727272703,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          }
+        ]
+      },
+      "max_row_sum_error": 2.220446049250313e-16
+    },
+    "no_admission": {
+      "parameters": {
+        "hazard": 0.05,
+        "accuracy": 0.95,
+        "delta_base": 0.05,
+        "delta_failure": 0.2,
+        "forget": 0.1,
+        "entry": 0.0,
+        "w_volume": 0.25,
+        "w_adaptive": 4.0,
+        "admission": false,
+        "execution": true,
+        "training": true,
+        "succession": "endogenous"
+      },
+      "reachable_states": 16,
+      "closed_safe_states": 0,
+      "initial_in_closed_safe_core": false,
+      "checkpoints": {
+        "200": {
+          "never_lost_capacity": 0.006721822797561353,
+          "currently_has_capacity": 0.006721822797561353,
+          "average_events": {
+            "inquiry": 0.18923773623027895,
+            "admission": 0.0,
+            "discrepant_admission": 0.0,
+            "training": 0.019889532153452617,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841242,
+            "completed_cases": 1.790872731616262,
+            "adequate_cases": 0.907918731957243,
+            "turnover": 0.14550000000317417,
+            "entry": 0.0
+          }
+        },
+        "2000": {
+          "never_lost_capacity": 7.8678660296341e-24,
+          "currently_has_capacity": 7.8678660296341e-24,
+          "average_events": {
+            "inquiry": 0.019014492753623165,
+            "admission": 0.0,
+            "discrepant_admission": 0.0,
+            "training": 0.001999999999999995,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5022499999999995,
+            "completed_cases": 1.978985507246353,
+            "adequate_cases": 0.990731884057959,
+            "turnover": 0.14954999999999274,
+            "entry": 0.0
+          }
+        }
+      },
+      "expected_first_loss_time": 49.440993788819846,
+      "linear_solve_residual": 5.995204332975845e-15,
+      "limiting": {
+        "positive_capacity_fraction": 0.0,
+        "event_rates": {
+          "inquiry": 0.0,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.0,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.49999999999999856,
+          "completed_cases": 1.9999999999999913,
+          "adequate_cases": 0.9999999999999971,
+          "turnover": 0.14999999999999925,
+          "entry": 0.0
+        },
+        "classes": [
+          {
+            "states": 2,
+            "probability": 0.9999999999999958,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          }
+        ]
+      },
+      "max_row_sum_error": 2.220446049250313e-16
+    },
+    "no_execution": {
+      "parameters": {
+        "hazard": 0.05,
+        "accuracy": 0.95,
+        "delta_base": 0.05,
+        "delta_failure": 0.2,
+        "forget": 0.1,
+        "entry": 0.0,
+        "w_volume": 0.25,
+        "w_adaptive": 4.0,
+        "admission": true,
+        "execution": false,
+        "training": true,
+        "succession": "endogenous"
+      },
+      "reachable_states": 24,
+      "closed_safe_states": 0,
+      "initial_in_closed_safe_core": false,
+      "checkpoints": {
+        "200": {
+          "never_lost_capacity": 0.006721822797561313,
+          "currently_has_capacity": 0.006721822797561313,
+          "average_events": {
+            "inquiry": 0.18923773623027873,
+            "admission": 0.18923773623027873,
+            "discrepant_admission": 0.06173864277728622,
+            "training": 0.019889532153452606,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5224999999841241,
+            "completed_cases": 1.7908727316162614,
+            "adequate_cases": 0.9079187319572428,
+            "turnover": 0.14550000000317412,
+            "entry": 0.0
+          }
+        },
+        "2000": {
+          "never_lost_capacity": 7.867866029633619e-24,
+          "currently_has_capacity": 7.86786602963362e-24,
+          "average_events": {
+            "inquiry": 0.019014492753623144,
+            "admission": 0.019014492753623144,
+            "discrepant_admission": 0.006208550724637654,
+            "training": 0.0019999999999999935,
+            "revision": 0.0,
+            "beneficial_revision": 0.0,
+            "harmful_revision": 0.0,
+            "adequate": 0.5022499999999994,
+            "completed_cases": 1.9789855072463516,
+            "adequate_cases": 0.9907318840579585,
+            "turnover": 0.1495499999999918,
+            "entry": 0.0
+          }
+        }
+      },
+      "expected_first_loss_time": 49.44099378881982,
+      "linear_solve_residual": 1.4210854715202004e-14,
+      "limiting": {
+        "positive_capacity_fraction": 0.0,
+        "event_rates": {
+          "inquiry": 0.0,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.0,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.49999999999999806,
+          "completed_cases": 1.9999999999999893,
+          "adequate_cases": 0.9999999999999961,
+          "turnover": 0.1499999999999991,
+          "entry": 0.0
+        },
+        "classes": [
+          {
+            "states": 2,
+            "probability": 0.9999999999999948,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          }
+        ]
+      },
+      "max_row_sum_error": 2.220446049250313e-16
+    },
+    "no_training": {
+      "parameters": {
+        "hazard": 0.05,
+        "accuracy": 0.95,
+        "delta_base": 0.05,
+        "delta_failure": 0.2,
+        "forget": 0.1,
+        "entry": 0.0,
+        "w_volume": 0.25,
+        "w_adaptive": 4.0,
+        "admission": true,
+        "execution": true,
+        "training": false,
+        "succession": "endogenous"
+      },
+      "reachable_states": 28,
+      "closed_safe_states": 0,
+      "initial_in_closed_safe_core": false,
+      "checkpoints": {
+        "200": {
+          "never_lost_capacity": 1.2743567710294266e-05,
+          "currently_has_capacity": 1.2743567710294268e-05,
+          "average_events": {
+            "inquiry": 0.08333298145747291,
+            "admission": 0.08333298145747291,
+            "discrepant_admission": 0.01044787186800328,
+            "training": 0.0,
+            "revision": 0.01044787186800328,
+            "beneficial_revision": 0.006630179617081277,
+            "harmful_revision": 0.0038176922509220047,
+            "adequate": 0.5506247031186294,
+            "completed_cases": 1.8728580631859888,
+            "adequate_cases": 0.9873216247856473,
+            "turnover": 0.1398750593762727,
+            "entry": 0.0
+          }
+        },
+        "2000": {
+          "never_lost_capacity": 5.445447733990485e-54,
+          "currently_has_capacity": 5.445447733990485e-54,
+          "average_events": {
+            "inquiry": 0.008333333333333297,
+            "admission": 0.008333333333333297,
+            "discrepant_admission": 0.0010447916666666637,
+            "training": 0.0,
+            "revision": 0.0010447916666666637,
+            "beneficial_revision": 0.0006630208333333324,
+            "harmful_revision": 0.00038177083333333303,
+            "adequate": 0.5050624999999982,
+            "completed_cases": 1.9872857142857077,
+            "adequate_cases": 0.9987321428571397,
+            "turnover": 0.14898749999999067,
+            "entry": 0.0
+          }
+        }
+      },
+      "expected_first_loss_time": 27.61904761904756,
+      "linear_solve_residual": 1.3322676295501878e-15,
+      "limiting": {
+        "positive_capacity_fraction": 0.0,
+        "event_rates": {
+          "inquiry": 0.0,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.0,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.499999999999997,
+          "completed_cases": 1.9999999999999871,
+          "adequate_cases": 0.999999999999994,
+          "turnover": 0.14999999999999902,
+          "entry": 0.0
+        },
+        "classes": [
+          {
+            "states": 2,
+            "probability": 0.6022727272727234,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          },
+          {
+            "states": 2,
+            "probability": 0.39772727272727026,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          }
+        ]
+      },
+      "max_row_sum_error": 2.220446049250313e-16
+    },
+    "fixed_criterion": {
+      "parameters": {
+        "hazard": 0.05,
+        "accuracy": 0.95,
+        "delta_base": 0.05,
+        "delta_failure": 0.2,
+        "forget": 0.1,
+        "entry": 0.0,
+        "w_volume": 1.0,
+        "w_adaptive": 1.0,
+        "admission": true,
+        "execution": true,
+        "training": true,
+        "succession": "endogenous"
+      },
+      "reachable_states": 32,
+      "closed_safe_states": 0,
+      "initial_in_closed_safe_core": false,
+      "checkpoints": {
+        "200": {
+          "never_lost_capacity": 0.0029719568621278812,
+          "currently_has_capacity": 0.002971956862127881,
+          "average_events": {
+            "inquiry": 0.15790623885276428,
+            "admission": 0.15790623885276428,
+            "discrepant_admission": 0.020575872443210342,
+            "training": 0.004989805462934598,
+            "revision": 0.020575872443210342,
+            "beneficial_revision": 0.013385036083937232,
+            "harmful_revision": 0.007190836359273098,
+            "adequate": 0.5843914783251816,
+            "completed_cases": 1.8371039556842896,
+            "adequate_cases": 1.015064081171226,
+            "turnover": 0.13312170433496223,
+            "entry": 0.0
+          }
+        },
+        "2000": {
+          "never_lost_capacity": 1.3580766874420811e-27,
+          "currently_has_capacity": 1.3580766874420813e-27,
+          "average_events": {
+            "inquiry": 0.015821839080459667,
+            "admission": 0.015821839080459667,
+            "discrepant_admission": 0.0020616954022988424,
+            "training": 0.0004999999999999986,
+            "revision": 0.0020616954022988424,
+            "beneficial_revision": 0.0013411925287356258,
+            "harmful_revision": 0.0007205028735632147,
+            "adequate": 0.5084568965517182,
+            "completed_cases": 1.9836781609195178,
+            "adequate_cases": 1.0015114942528631,
+            "turnover": 0.14830862068964626,
+            "entry": 0.0
+          }
+        }
+      },
+      "expected_first_loss_time": 43.44827586206889,
+      "linear_solve_residual": 2.4868995751603507e-14,
+      "limiting": {
+        "positive_capacity_fraction": 0.0,
+        "event_rates": {
+          "inquiry": 0.0,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.0,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.49999999999999545,
+          "completed_cases": 1.999999999999981,
+          "adequate_cases": 0.9999999999999909,
+          "turnover": 0.14999999999999858,
+          "entry": 0.0
+        },
+        "classes": [
+          {
+            "states": 2,
+            "probability": 0.5598019087781549,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          },
+          {
+            "states": 2,
+            "probability": 0.4401980912218356,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          }
+        ]
+      },
+      "max_row_sum_error": 2.220446049250313e-16
+    },
+    "perfect_inquiry": {
+      "parameters": {
+        "hazard": 0.05,
+        "accuracy": 1.0,
+        "delta_base": 0.05,
+        "delta_failure": 0.2,
+        "forget": 0.1,
+        "entry": 0.0,
+        "w_volume": 0.25,
+        "w_adaptive": 4.0,
+        "admission": true,
+        "execution": true,
+        "training": true,
+        "succession": "endogenous"
+      },
+      "reachable_states": 32,
+      "closed_safe_states": 0,
+      "initial_in_closed_safe_core": false,
+      "checkpoints": {
+        "200": {
+          "never_lost_capacity": 0.14978422635855737,
+          "currently_has_capacity": 0.14978422635855737,
+          "average_events": {
+            "inquiry": 0.4127624576958732,
+            "admission": 0.4127624576958732,
+            "discrepant_admission": 0.021350727897381037,
+            "training": 0.01734674956694356,
+            "revision": 0.021350727897381037,
+            "beneficial_revision": 0.021350727897381037,
+            "harmful_revision": 0.0,
+            "adequate": 0.7327429112016222,
+            "completed_cases": 1.5698907927371772,
+            "adequate_cases": 1.036433980622131,
+            "turnover": 0.10345141775967477,
+            "entry": 0.0
+          }
+        },
+        "2000": {
+          "never_lost_capacity": 1.737948378456381e-09,
+          "currently_has_capacity": 1.737948378456381e-09,
+          "average_events": {
+            "inquiry": 0.047512195049595383,
+            "admission": 0.047512195049595383,
+            "discrepant_admission": 0.0024579268255222058,
+            "training": 0.001999999996921424,
+            "revision": 0.0024579268255222058,
+            "beneficial_revision": 0.0024579268255222058,
+            "harmful_revision": 0.0,
+            "adequate": 0.5268292682514158,
+            "completed_cases": 1.950487804953411,
+            "adequate_cases": 1.0042682926756392,
+            "turnover": 0.1446341463497075,
+            "entry": 0.0
+          }
+        }
+      },
+      "expected_first_loss_time": 111.32171893147482,
+      "linear_solve_residual": 3.497202527569243e-14,
+      "limiting": {
+        "positive_capacity_fraction": 0.0,
+        "event_rates": {
+          "inquiry": 0.0,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.0,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.4999999999999968,
+          "completed_cases": 1.9999999999999862,
+          "adequate_cases": 0.9999999999999936,
+          "turnover": 0.14999999999999897,
+          "entry": 0.0
+        },
+        "classes": [
+          {
+            "states": 2,
+            "probability": 0.5419318181818147,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          },
+          {
+            "states": 2,
+            "probability": 0.45806818181817854,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          }
+        ]
+      },
+      "max_row_sum_error": 2.220446049250313e-16
+    },
+    "reentry": {
+      "parameters": {
+        "hazard": 0.05,
+        "accuracy": 0.95,
+        "delta_base": 0.05,
+        "delta_failure": 0.2,
+        "forget": 0.1,
+        "entry": 0.01,
+        "w_volume": 0.25,
+        "w_adaptive": 4.0,
+        "admission": true,
+        "execution": true,
+        "training": true,
+        "succession": "endogenous"
+      },
+      "reachable_states": 32,
+      "closed_safe_states": 0,
+      "initial_in_closed_safe_core": false,
+      "checkpoints": {
+        "200": {
+          "never_lost_capacity": 0.09436917425904776,
+          "currently_has_capacity": 0.47429060669942724,
+          "average_events": {
+            "inquiry": 0.5112770777948014,
+            "admission": 0.5112770777948014,
+            "discrepant_admission": 0.0698990422845329,
+            "training": 0.0311508594597896,
+            "revision": 0.0698990422845329,
+            "beneficial_revision": 0.046798254416725714,
+            "harmful_revision": 0.023100787867807168,
+            "adequate": 0.7507275615543841,
+            "completed_cases": 1.457572062745399,
+            "adequate_cases": 0.9942781013488383,
+            "turnover": 0.09985448768912189,
+            "entry": 0.003921111704176957
+          }
+        },
+        "2000": {
+          "never_lost_capacity": 1.5294325605536836e-11,
+          "currently_has_capacity": 0.4684937276020241,
+          "average_events": {
+            "inquiry": 0.40328620753455857,
+            "admission": 0.40328620753455857,
+            "discrepant_admission": 0.05599702891190056,
+            "training": 0.027036750070835277,
+            "revision": 0.05599702891190056,
+            "beneficial_revision": 0.03782342512045772,
+            "harmful_revision": 0.01817360379144001,
+            "adequate": 0.6978844031011568,
+            "completed_cases": 1.5696770423945852,
+            "adequate_cases": 0.9945709141079726,
+            "turnover": 0.11042311937976045,
+            "entry": 0.005174451410288612
+          }
+        }
+      },
+      "expected_first_loss_time": 91.09243697478938,
+      "linear_solve_residual": 2.842170943040401e-14,
+      "limiting": {
+        "positive_capacity_fraction": 0.4684937276020572,
+        "event_rates": {
+          "inquiry": 0.3911781766839812,
+          "admission": 0.3911781766839812,
+          "discrepant_admission": 0.054438130565513144,
+          "training": 0.026575313619896512,
+          "revision": 0.054438130565513144,
+          "beneficial_revision": 0.03681695627194262,
+          "harmful_revision": 0.01762117429357052,
+          "adequate": 0.691957819783723,
+          "completed_cases": 1.5822465096961222,
+          "adequate_cases": 0.9946003447870827,
+          "turnover": 0.11160843604325536,
+          "entry": 0.0053150627239794265
+        },
+        "classes": [
+          {
+            "states": 32,
+            "probability": 1.0,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": true,
+            "recurrent_events": [
+              "inquiry",
+              "admission",
+              "discrepant_admission",
+              "training",
+              "revision",
+              "beneficial_revision",
+              "harmful_revision",
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover",
+              "entry"
+            ]
+          }
+        ]
+      },
+      "max_row_sum_error": 2.220446049250313e-16
+    },
+    "rare_adverse": {
+      "parameters": {
+        "hazard": 0.05,
+        "accuracy": 0.95,
+        "delta_base": 0.05,
+        "delta_failure": 0.2,
+        "forget": 0.1,
+        "entry": 0.0,
+        "w_volume": 0.25,
+        "w_adaptive": 10000.0,
+        "admission": true,
+        "execution": true,
+        "training": true,
+        "succession": "endogenous"
+      },
+      "reachable_states": 32,
+      "closed_safe_states": 0,
+      "initial_in_closed_safe_core": false,
+      "checkpoints": {
+        "200": {
+          "never_lost_capacity": 0.9988099634015453,
+          "currently_has_capacity": 0.9988099634015453,
+          "average_events": {
+            "inquiry": 0.936850363175577,
+            "admission": 0.936850363175577,
+            "discrepant_admission": 0.12791616127581146,
+            "training": 0.06252444737988318,
+            "revision": 0.12791616127581146,
+            "beneficial_revision": 0.0855777344013122,
+            "harmful_revision": 0.04233842687449929,
+            "adequate": 0.9353201079709649,
+            "completed_cases": 1.0006251894445253,
+            "adequate_cases": 0.9356458072570462,
+            "turnover": 0.06293597840580512,
+            "entry": 0.0
+          }
+        },
+        "2000": {
+          "never_lost_capacity": 0.9875657855139008,
+          "currently_has_capacity": 0.9875657855139008,
+          "average_events": {
+            "inquiry": 0.9312701779763849,
+            "admission": 0.9312701779763849,
+            "discrepant_admission": 0.12739276853097128,
+            "training": 0.06246993144424039,
+            "revision": 0.12739276853097128,
+            "beneficial_revision": 0.08531977405616037,
+            "harmful_revision": 0.04207299447481084,
+            "adequate": 0.9327825334981158,
+            "completed_cases": 1.0062598905792421,
+            "adequate_cases": 0.9359261148252422,
+            "turnover": 0.06344349330036039,
+            "entry": 0.0
+          }
+        }
+      },
+      "expected_first_loss_time": 159001.82588320586,
+      "linear_solve_residual": 8.731149137020111e-11,
+      "limiting": {
+        "positive_capacity_fraction": 0.0,
+        "event_rates": {
+          "inquiry": 0.0,
+          "admission": 0.0,
+          "discrepant_admission": 0.0,
+          "training": 0.0,
+          "revision": 0.0,
+          "beneficial_revision": 0.0,
+          "harmful_revision": 0.0,
+          "adequate": 0.4999999999939483,
+          "completed_cases": 1.9999999999757927,
+          "adequate_cases": 0.9999999999878966,
+          "turnover": 0.14999999999818447,
+          "entry": 0.0
+        },
+        "classes": [
+          {
+            "states": 2,
+            "probability": 0.5000145541265368,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          },
+          {
+            "states": 2,
+            "probability": 0.4999854458613596,
+            "all_have_capacity": false,
+            "has_capacity_somewhere": false,
+            "recurrent_events": [
+              "adequate",
+              "completed_cases",
+              "adequate_cases",
+              "turnover"
+            ]
+          }
+        ]
+      },
+      "max_row_sum_error": 2.220446049250313e-16
+    }
+  },
+  "checks": [
+    {
+      "check": "stochastic rows endogenous",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "stochastic rows protected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "stochastic rows volume_only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "stochastic rows no_admission",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "stochastic rows no_execution",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "stochastic rows no_training",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "stochastic rows fixed_criterion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "stochastic rows perfect_inquiry",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "stochastic rows reentry",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "stochastic rows rare_adverse",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "empty safe core endogenous",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "empty safe core rare_adverse",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "empty safe core perfect_inquiry",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "empty safe core no_training",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "protected initial safe core",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "protected has actual recurrent training and inquiry",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "protected succession cannot replace absent training",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "policy reads only available memory or admitted report",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "admission and execution obstruction same observable path law",
+      "passed": true,
+      "details": 5.551115123125783e-16
+    },
+    {
+      "check": "removing outcome feedback separates admission",
+      "passed": true,
+      "details": 2.220446049250313e-15
+    },
+    {
+      "check": "removing outcome feedback separates execution",
+      "passed": true,
+      "details": 4.440892098500626e-16
+    },
+    {
+      "check": "independent sampler endogenous survival",
+      "passed": true,
+      "details": {
+        "exact": 0.09436917425904776,
+        "sample": 0.0938,
+        "tolerance": 0.010193678064431354,
+        "n": 30000
+      }
+    },
+    {
+      "check": "independent sampler endogenous capacity_occupancy",
+      "passed": true,
+      "details": {
+        "exact": 0.09436917425904778,
+        "sample": 0.0938,
+        "tolerance": 0.010193678064431356,
+        "n": 30000
+      }
+    },
+    {
+      "check": "independent sampler protected survival",
+      "passed": true,
+      "details": {
+        "exact": 0.9999999999999881,
+        "sample": 1.0,
+        "tolerance": 6.667044228100559e-05,
+        "n": 30000
+      }
+    },
+    {
+      "check": "independent sampler protected capacity_occupancy",
+      "passed": true,
+      "details": {
+        "exact": 0.9999999999999881,
+        "sample": 1.0,
+        "tolerance": 6.667044228100559e-05,
+        "n": 30000
+      }
+    },
+    {
+      "check": "independent sampler no_training survival",
+      "passed": true,
+      "details": {
+        "exact": 1.2743567710294266e-05,
+        "sample": 0.0,
+        "tolerance": 0.0001903278423611082,
+        "n": 30000
+      }
+    },
+    {
+      "check": "independent sampler no_training capacity_occupancy",
+      "passed": true,
+      "details": {
+        "exact": 1.2743567710294268e-05,
+        "sample": 0.0,
+        "tolerance": 0.0001903278423611082,
+        "n": 30000
+      }
+    },
+    {
+      "check": "independent sampler reentry survival",
+      "passed": true,
+      "details": {
+        "exact": 0.09436917425904776,
+        "sample": 0.0938,
+        "tolerance": 0.010193678064431354,
+        "n": 30000
+      }
+    },
+    {
+      "check": "independent sampler reentry capacity_occupancy",
+      "passed": true,
+      "details": {
+        "exact": 0.47429060669942724,
+        "sample": 0.4783,
+        "tolerance": 0.017364262815130177,
+        "n": 30000
+      }
+    },
+    {
+      "check": "independent sampler rare_adverse survival",
+      "passed": true,
+      "details": {
+        "exact": 0.9988099634015453,
+        "sample": 0.9989333333333333,
+        "tolerance": 0.0012609633189348077,
+        "n": 30000
+      }
+    },
+    {
+      "check": "independent sampler rare_adverse capacity_occupancy",
+      "passed": true,
+      "details": {
+        "exact": 0.9988099634015453,
+        "sample": 0.9989333333333333,
+        "tolerance": 0.0012609633189348077,
+        "n": 30000
+      }
+    },
+    {
+      "check": "uniform two-step loss bound endogenous",
+      "passed": true,
+      "details": {
+        "minimum": 0.0011699999999998933,
+        "bound": 0.0005000000000000001
+      }
+    },
+    {
+      "check": "uniform two-step loss bound perfect_inquiry",
+      "passed": true,
+      "details": {
+        "minimum": 0.0006000000000000449,
+        "bound": 0.0005000000000000001
+      }
+    },
+    {
+      "check": "uniform two-step loss bound rare_adverse",
+      "passed": true,
+      "details": {
+        "minimum": 5.849415056768947e-07,
+        "bound": 2.4997500249975007e-07
+      }
+    }
+  ],
+  "sensitivity": [
+    {
+      "hazard": 0.01,
+      "pressure": 0.0,
+      "adaptive_bias": 1.0,
+      "survival_200": 0.012610946107692152,
+      "mean_first_loss": 59.99999999999991
+    },
+    {
+      "hazard": 0.01,
+      "pressure": 0.0,
+      "adaptive_bias": 4.0,
+      "survival_200": 0.16746583040588864,
+      "mean_first_loss": 119.99999999999967
+    },
+    {
+      "hazard": 0.01,
+      "pressure": 0.0,
+      "adaptive_bias": 16.0,
+      "survival_200": 0.5894996572169879,
+      "mean_first_loss": 359.99999999999415
+    },
+    {
+      "hazard": 0.01,
+      "pressure": 0.2,
+      "adaptive_bias": 1.0,
+      "survival_200": 0.0037984535646500804,
+      "mean_first_loss": 47.178578220683804
+    },
+    {
+      "hazard": 0.01,
+      "pressure": 0.2,
+      "adaptive_bias": 4.0,
+      "survival_200": 0.10088908545144187,
+      "mean_first_loss": 94.99627718633637
+    },
+    {
+      "hazard": 0.01,
+      "pressure": 0.2,
+      "adaptive_bias": 16.0,
+      "survival_200": 0.50591774647883,
+      "mean_first_loss": 286.6824765239499
+    },
+    {
+      "hazard": 0.01,
+      "pressure": 0.5,
+      "adaptive_bias": 1.0,
+      "survival_200": 0.00046518629537417307,
+      "mean_first_loss": 34.522613468130096
+    },
+    {
+      "hazard": 0.01,
+      "pressure": 0.5,
+      "adaptive_bias": 4.0,
+      "survival_200": 0.030666653312350946,
+      "mean_first_loss": 64.27298665188577
+    },
+    {
+      "hazard": 0.01,
+      "pressure": 0.5,
+      "adaptive_bias": 16.0,
+      "survival_200": 0.3361605270520571,
+      "mean_first_loss": 184.23403628573638
+    },
+    {
+      "hazard": 0.05,
+      "pressure": 0.0,
+      "adaptive_bias": 1.0,
+      "survival_200": 0.012610946107692114,
+      "mean_first_loss": 59.99999999999989
+    },
+    {
+      "hazard": 0.05,
+      "pressure": 0.0,
+      "adaptive_bias": 4.0,
+      "survival_200": 0.16746583040588786,
+      "mean_first_loss": 119.99999999999906
+    },
+    {
+      "hazard": 0.05,
+      "pressure": 0.0,
+      "adaptive_bias": 16.0,
+      "survival_200": 0.589499657216985,
+      "mean_first_loss": 359.99999999999136
+    },
+    {
+      "hazard": 0.05,
+      "pressure": 0.2,
+      "adaptive_bias": 1.0,
+      "survival_200": 0.0029719568621278812,
+      "mean_first_loss": 43.44827586206889
+    },
+    {
+      "hazard": 0.05,
+      "pressure": 0.2,
+      "adaptive_bias": 4.0,
+      "survival_200": 0.09436917425904776,
+      "mean_first_loss": 91.09243697478938
+    },
+    {
+      "hazard": 0.05,
+      "pressure": 0.2,
+      "adaptive_bias": 16.0,
+      "survival_200": 0.49724159741734286,
+      "mean_first_loss": 281.8367346938721
+    },
+    {
+      "hazard": 0.05,
+      "pressure": 0.5,
+      "adaptive_bias": 1.0,
+      "survival_200": 0.00029579839751308864,
+      "mean_first_loss": 31.290296120088534
+    },
+    {
+      "hazard": 0.05,
+      "pressure": 0.5,
+      "adaptive_bias": 4.0,
+      "survival_200": 0.028320669915181677,
+      "mean_first_loss": 61.48302561048222
+    },
+    {
+      "hazard": 0.05,
+      "pressure": 0.5,
+      "adaptive_bias": 16.0,
+      "survival_200": 0.33151071116082786,
+      "mean_first_loss": 182.10482023469785
+    },
+    {
+      "hazard": 0.2,
+      "pressure": 0.0,
+      "adaptive_bias": 1.0,
+      "survival_200": 0.012610946107692322,
+      "mean_first_loss": 60.00000000000009
+    },
+    {
+      "hazard": 0.2,
+      "pressure": 0.0,
+      "adaptive_bias": 4.0,
+      "survival_200": 0.167465830405891,
+      "mean_first_loss": 120.00000000000033
+    },
+    {
+      "hazard": 0.2,
+      "pressure": 0.0,
+      "adaptive_bias": 16.0,
+      "survival_200": 0.5894996572169962,
+      "mean_first_loss": 360.00000000000205
+    },
+    {
+      "hazard": 0.2,
+      "pressure": 0.2,
+      "adaptive_bias": 1.0,
+      "survival_200": 0.002446693983770196,
+      "mean_first_loss": 40.07901234567904
+    },
+    {
+      "hazard": 0.2,
+      "pressure": 0.2,
+      "adaptive_bias": 4.0,
+      "survival_200": 0.08727872630420189,
+      "mean_first_loss": 86.94650205761343
+    },
+    {
+      "hazard": 0.2,
+      "pressure": 0.2,
+      "adaptive_bias": 16.0,
+      "survival_200": 0.48575611829633436,
+      "mean_first_loss": 274.3802469135809
+    },
+    {
+      "hazard": 0.2,
+      "pressure": 0.5,
+      "adaptive_bias": 1.0,
+      "survival_200": 0.00022773753152049948,
+      "mean_first_loss": 28.26974523603737
+    },
+    {
+      "hazard": 0.2,
+      "pressure": 0.5,
+      "adaptive_bias": 4.0,
+      "survival_200": 0.026724080263495358,
+      "mean_first_loss": 58.94519719762448
+    },
+    {
+      "hazard": 0.2,
+      "pressure": 0.5,
+      "adaptive_bias": 16.0,
+      "survival_200": 0.32955173468830246,
+      "mean_first_loss": 181.08237953935335
+    }
+  ]
+}

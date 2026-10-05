@@ -1,0 +1,17 @@
+Executed 5 October 2026, Asia/Bangkok.
+Command: /private/tmp/meta-attractor-plot-env/bin/python -m unittest discover -s experiments/continuing-participation -v
+
+test_compensation_cannot_remove_negative_total_continuation_surplus ... ok
+test_diagnostic_disclosure_and_response_fallback_use_actual_information ... ok
+test_every_stage_and_prefix_ledger_against_primitive_outcomes ... ok
+test_one_round_worker_donor_and_cash_threshold ... ok
+test_participation_rows_equal_disclosed_action_conditional_losses ... ok
+test_passive_fallback_against_hidden_history_enumeration ... ok
+test_public_history_is_not_merged_and_has_no_private_fault_label ... ok
+test_replay_does_not_charge_inquiry_declined_at_opening ... ok
+test_veto_replay_recomputes_future_refusals_and_matches_continuing ... ok
+
+Ran 9 tests in 1.155s
+OK
+
+Recorded from the completed tool output, with unittest class/module prefixes omitted.

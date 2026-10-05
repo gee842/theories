@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-05",
+  "title": "The root of alignment as continuing realizability",
+  "primary": "ROOT-FOUNDATION.md",
+  "status": "Conditional mathematical development with resolved internal cross-reviews and constructed checks.",
+  "hash_algorithm": "SHA-256",
+  "self_hash_excluded": true,
+  "files": [
+    {
+      "path": "DOCUMENT-CHECKS.json",
+      "sha256": "16baf6fe7bb66bdbfd46599e3b9fbe8dc32ff3326262c3c5857acf9a73c01f7f",
+      "bytes": 9680
+    },
+    {
+      "path": "EXACT-CHECKS.json",
+      "sha256": "d7b372c3e12137993430231a8520a9b6226b864ea7b34e90e9c3ddf12bb57e51",
+      "bytes": 5885
+    },
+    {
+      "path": "FIGURE-CHECKS.json",
+      "sha256": "49adb1bcd101e114612780e1d20a0158d237102fdb44f903e4557837f41c3e4b",
+      "bytes": 924
+    },
+    {
+      "path": "INFORMATION-AND-RENEWAL.md",
+      "sha256": "a34183db8678140b0d8b5fe2bc7280502c214a4fadea2dcf3de1019b935b5281",
+      "bytes": 20946
+    },
+    {
+      "path": "INVARIANCE-AND-PRIOR-ART.md",
+      "sha256": "8b563ee0c684d4a17b034aa2fa3a7f6a256c59095ac6da9260bd26a7f9abc833",
+      "bytes": 22461
+    },
+    {
+      "path": "PLURAL-CAPACITY.md",
+      "sha256": "e783435646f0066769224b727ad66aa6d58a699062597726d6de368cf3bf7de5",
+      "bytes": 11957
+    },
+    {
+      "path": "README.md",
+      "sha256": "b326c549e345d8a90b5832591ad8fbb3069859764560fd581fcf553e3890ece9",
+      "bytes": 7175
+    },
+    {
+      "path": "REVIEW-EPISTEMIC.md",
+      "sha256": "9092004d92b510b8b6df4fe0294f71843d62c90b6448e6af7a6aeebb11062605",
+      "bytes": 8689
+    },
+    {
+      "path": "REVIEW-INVARIANCE.md",
+      "sha256": "3cb38d8e1f7eb729d782d95e557b1a501d8e6d8b85a29abe0f27ff801c9f4324",
+      "bytes": 9782
+    },
+    {
+      "path": "REVIEW-TURNOVER.md",
+      "sha256": "0b4d860c8eefd4455b6580d68ad3a8993640cd734720a575c43ec9ced2df1df0",
+      "bytes": 8017
+    },
+    {
+      "path": "ROOT-FOUNDATION.md",
+      "sha256": "e2ef0b5edfe7766bcf857582e077c97885b6bdd91158ce6f05d8c0c879d81c5a",
+      "bytes": 28048
+    },
+    {
+      "path": "TURNOVER-AND-CLOSURE.md",
+      "sha256": "a35feb39fc56d738b029f7392049c08d9c8e1da8cb31fcbcb93f6952dc624461",
+      "bytes": 20650
+    },
+    {
+      "path": "check_documents.py",
+      "sha256": "7922decf489cfb7cf16efd02e00451bf39c3ce3f3b279fb03dc420de8f0be07a",
+      "bytes": 5303
+    },
+    {
+      "path": "continuous-readiness.png",
+      "sha256": "b92e9dc0fb1a36a7308c6f5cd7bf52b4d6a6d3b99fa1269795971c1d3d32c29f",
+      "bytes": 210641
+    },
+    {
+      "path": "continuous-readiness.svg",
+      "sha256": "d53da429ef0168ca0d40fecaa48c28215a8b5a867227de4c556fad94a8beaaa8",
+      "bytes": 107160
+    },
+    {
+      "path": "plot_readiness.py",
+      "sha256": "897eb1c5848904e9832f71d485d0e0ce45833f889019f1474f8d56f05c194274",
+      "bytes": 4327
+    },
+    {
+      "path": "verify_root.py",
+      "sha256": "ac9cf4d082c39d7d8de2f2b1c4423ab8ca14ff9bb0481f0953c8bcbb0d989a69",
+      "bytes": 10788
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/OPTIMAL-FOUNDATION.md",
+      "sha256": "6e0b601d3fa2c49515bbb35ee4a0fed4d19f36f7bb1ce57b3c2133e81ba38ac6",
+      "bytes": 30685
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/FOUNDATION.md",
+      "sha256": "8c5300583be10348c86a0e716c2fe953baa9f84cdddb0869ceb689fb02c905b4",
+      "bytes": 101611
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/FOUNDATION-ALTERNATIVE-ORIGINAL.md",
+      "sha256": "91efaed68a9746e8213437a810a6bb9b0864a572467a9956010fe2711cb92460",
+      "bytes": 100820
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/INTEGRATED-THEORY.md",
+      "sha256": "d32f93afeff3a3c45352642abedc4d360ca0a8739cedaa12b37792b3d8771c16",
+      "bytes": 27344
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/ADAPTIVE-OPTIMUM.md",
+      "sha256": "5762f4bed293cc87c19634e367225f3ab18fcbe756c57980b9a04cc7411ce2b7",
+      "bytes": 21753
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "cases": [
+    {
+      "id": "R01",
+      "family": "value_of_information",
+      "gold": "C",
+      "initial_claim_should_change": false,
+      "derivation": "Operate: 16/4=4. Test: 3+6/4=4.5. Replace: 6.",
+      "scope_rubric": "Compare ex ante expectations including the fee; do not claim a pathwise bound.",
+      "scope_overclaim_options": [
+        "A",
+        "D"
+      ],
+      "false_rejection_options": [],
+      "primary_scope_eligible": false
+    },
+    {
+      "id": "R02",
+      "family": "model_class_expansion",
+      "gold": "C",
+      "initial_claim_should_change": true,
+      "derivation": "At w, 6>2, a counterexample. The original two inequalities remain true.",
+      "scope_rubric": "Reject the expanded universal claim, while preserving its old-class validity.",
+      "scope_overclaim_options": [
+        "A",
+        "B"
+      ],
+      "false_rejection_options": [
+        "D"
+      ],
+      "primary_scope_eligible": true
+    },
+    {
+      "id": "R03",
+      "family": "information_sufficiency",
+      "gold": "B",
+      "initial_claim_should_change": false,
+      "derivation": "Omitting costs 0 or 4, each below 5. The summary does not identify which cost.",
+      "scope_rubric": "Certify decision sufficiency only within the two-law class; deny exact-loss or unrestricted-dependence sufficiency.",
+      "scope_overclaim_options": [
+        "A",
+        "D"
+      ],
+      "false_rejection_options": [
+        "C"
+      ],
+      "primary_scope_eligible": true
+    },
+    {
+      "id": "R04",
+      "family": "commitments_and_exceptions",
+      "gold": "B",
+      "initial_claim_should_change": false,
+      "derivation": "Sol missed 11:50, and 8.8<9; neither release clause holds.",
+      "scope_rubric": "Apply the explicit release rule; do not infer consent timing or an unconditional commitment.",
+      "scope_overclaim_options": [
+        "A",
+        "C",
+        "D"
+      ],
+      "false_rejection_options": [],
+      "primary_scope_eligible": false
+    },
+    {
+      "id": "R05",
+      "family": "constrained_correction",
+      "gold": "B",
+      "initial_claim_should_change": true,
+      "derivation": "Earliest authorized completion is 5+2+1=8>7. No work costs 12; incomplete work adds cost.",
+      "scope_rubric": "Distinguish beneficial repair from feasible authorized repair; budget compliance alone is insufficient.",
+      "scope_overclaim_options": [
+        "C"
+      ],
+      "false_rejection_options": [],
+      "primary_scope_eligible": false
+    },
+    {
+      "id": "R06",
+      "family": "stipulated_equal_standing",
+      "gold": "A",
+      "initial_claim_should_change": false,
+      "derivation": "P gives each person 2/6=1/3; both comply, and P scores higher.",
+      "scope_rubric": "Use the stipulated ex ante person-probability constraint, not equal outcomes or score alone.",
+      "scope_overclaim_options": [
+        "C"
+      ],
+      "false_rejection_options": [
+        "B",
+        "D"
+      ],
+      "primary_scope_eligible": false
+    },
+    {
+      "id": "R07",
+      "family": "constrained_correction",
+      "gold": "D",
+      "initial_claim_should_change": false,
+      "derivation": "5+2+1=8 meets the inclusive deadline; 2+2=4 meets budget and beats 12.",
+      "scope_rubric": "Retain the conclusion with a corrected authorized plan; equality at the deadline is allowed.",
+      "scope_overclaim_options": [],
+      "false_rejection_options": [
+        "A"
+      ],
+      "primary_scope_eligible": false
+    },
+    {
+      "id": "R08",
+      "family": "commitments_and_exceptions",
+      "gold": "D",
+      "initial_claim_should_change": true,
+      "derivation": "Both signed before 11:50; the consent disjunct suffices. Elm then wins 19>14.",
+      "scope_rubric": "Respect the explicit disjunction and deadline; preference or factual advantage alone grants no release.",
+      "scope_overclaim_options": [
+        "A",
+        "C"
+      ],
+      "false_rejection_options": [
+        "B"
+      ],
+      "primary_scope_eligible": false
+    },
+    {
+      "id": "R09",
+      "family": "information_sufficiency",
+      "gold": "D",
+      "initial_claim_should_change": true,
+      "derivation": "Omitting costs 0 or 6; backup costs 5. Each law has a different unique optimum.",
+      "scope_rubric": "Reject universal decision sufficiency in the current class; neither assume a prior nor invalidate the old certificate.",
+      "scope_overclaim_options": [
+        "A",
+        "C"
+      ],
+      "false_rejection_options": [
+        "B"
+      ],
+      "primary_scope_eligible": true
+    },
+    {
+      "id": "R10",
+      "family": "value_of_information",
+      "gold": "A",
+      "initial_claim_should_change": true,
+      "derivation": "Optimal testing costs 2+6/4=3.5<4<6; ignoring the result costs 6.",
+      "scope_rubric": "Count the test fee and conditional follow-up actions in the ex ante comparison.",
+      "scope_overclaim_options": [],
+      "false_rejection_options": [],
+      "primary_scope_eligible": false
+    },
+    {
+      "id": "R11",
+      "family": "model_class_expansion",
+      "gold": "A",
+      "initial_claim_should_change": false,
+      "derivation": "1\u22648, 3\u22647, 6\u22649. No weights are needed for a universal finite comparison.",
+      "scope_rubric": "Certify only the stated current class; expansion requires checking, not automatic rejection or unlimited extrapolation.",
+      "scope_overclaim_options": [
+        "C"
+      ],
+      "false_rejection_options": [
+        "B",
+        "D"
+      ],
+      "primary_scope_eligible": true
+    },
+    {
+      "id": "R12",
+      "family": "stipulated_equal_standing",
+      "gold": "C",
+      "initial_claim_should_change": true,
+      "derivation": "P gives 3/6,2/6,1/6. Q gives 1/3 each, making Q the sole feasible policy.",
+      "scope_rubric": "Separate technical score and ticket symmetry from the stipulated person-probability constraint.",
+      "scope_overclaim_options": [
+        "A",
+        "B"
+      ],
+      "false_rejection_options": [
+        "D"
+      ],
+      "primary_scope_eligible": false
+    }
+  ]
+}

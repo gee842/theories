@@ -1,0 +1,35 @@
+{
+  "exhaustive_deterministic_systems": 162,
+  "stationary_belief_policies_checked": 972,
+  "maximum_elimination_rounds_in_exhaustive_family": 2,
+  "exhaustive_fixed_point_matches_brute_force": true,
+  "opposite_actions_information_counterexample": true,
+  "safe_probe_restores_viability": true,
+  "unavailable_or_risky_probe_does_not_restore_viability": true,
+  "immediate_safety_is_not_infinite_viability": true,
+  "capacity_3_alternating_3_tick_phases": {
+    "all_action_histories_considered": true,
+    "oracle_processing_on_present_input": true,
+    "both_initial_types_considered": true,
+    "first_tick_with_no_surviving_history": 14,
+    "reachable_state_counts": [
+      2,
+      5,
+      7,
+      6,
+      6,
+      6,
+      5,
+      5,
+      4,
+      4,
+      4,
+      3,
+      1,
+      2,
+      0
+    ],
+    "analytical_nonsharp_failure_bound_ticks": 21
+  },
+  "scope": "Two safe states, two actions, one absorbing failure state; all deterministic transitions and both observation partitions. Three illustrative larger/counterexample systems checked separately. General theorem is proved in limits-audit.md."
+}

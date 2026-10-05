@@ -1,0 +1,19 @@
+{
+  "status": "All three result files reproduced byte-identically in isolated local copy.",
+  "reference_snapshot_files_unchanged": true,
+  "results": {
+    "checks/results.json": {
+      "byte_identical_to_snapshot": true,
+      "sha256": "ad941358378c9736ea449fcbe4b590b990461bc33a10aa8947492b25c5c18901"
+    },
+    "checks/structural_results.json": {
+      "byte_identical_to_snapshot": true,
+      "sha256": "60b4a413381fda7d649c6535393549984bfd027da21c1b7e58ca003207da642b"
+    },
+    "checks/review_checks.json": {
+      "byte_identical_to_snapshot": true,
+      "sha256": "5e6efa4d27d1eb3597c59b56d3aaf148aabb7ef889e7e5c58f789adbe3b3f448"
+    }
+  },
+  "qualification": "Re-execution and independent proof/code inspection, not fresh independent implementation or empirical validation."
+}

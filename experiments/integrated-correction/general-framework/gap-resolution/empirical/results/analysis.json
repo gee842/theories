@@ -1,0 +1,682 @@
+{
+  "audit": {
+    "experiment_1": {
+      "raw_rows": 1800,
+      "group_periods": 360,
+      "sessions": 6,
+      "participants": 90,
+      "group_consistency_checks_passed": true,
+      "groups_by_session": {
+        "141126_1136": 60,
+        "141201_1146": 40,
+        "141201_1616": 80,
+        "141203_1150": 60,
+        "150130_1204": 60,
+        "150206_1200": 60
+      }
+    },
+    "experiment_2": {
+      "raw_rows": 2200,
+      "group_periods": 440,
+      "sessions": 7,
+      "participants": 110,
+      "group_consistency_checks_passed": true,
+      "groups_by_session": {
+        "160129_1448": 80,
+        "160204_1603": 60,
+        "160205_1200": 60,
+        "160208_1506": 60,
+        "160218_1445": 60,
+        "160325_1418": 60,
+        "160402_1342": 60
+      }
+    }
+  },
+  "results": {
+    "primary_information": {
+      "equal_session_estimate": 0.10069444444444443,
+      "session_count": 6,
+      "session_standard_error": 0.033061682438723726,
+      "approximate_t95_interval": [
+        0.015706684111885097,
+        0.18568220477700376
+      ],
+      "leave_one_session_out_range": [
+        0.07916666666666665,
+        0.11916666666666667
+      ],
+      "label": "Exp1 randomized higher accuracy, all rules",
+      "n_groups": 360,
+      "n_treated": 169,
+      "group_weighted_ht": 0.09305555555555556,
+      "treated_mean": 0.7115384615384616,
+      "control_mean": 0.599476439790576,
+      "ordinary_mean_difference": 0.1120620217478856,
+      "sessions": [
+        {
+          "contrast": "Exp1 randomized higher accuracy, all rules",
+          "session": "141126_1136",
+          "n": 60,
+          "n_treated": 28,
+          "estimate": 0.125,
+          "treated_mean": 0.7321428571428571,
+          "control_mean": 0.5859375
+        },
+        {
+          "contrast": "Exp1 randomized higher accuracy, all rules",
+          "session": "141201_1146",
+          "n": 40,
+          "n_treated": 16,
+          "estimate": 0.175,
+          "treated_mean": 0.609375,
+          "control_mean": 0.4270833333333333
+        },
+        {
+          "contrast": "Exp1 randomized higher accuracy, all rules",
+          "session": "141201_1616",
+          "n": 80,
+          "n_treated": 39,
+          "estimate": 0.0375,
+          "treated_mean": 0.7051282051282052,
+          "control_mean": 0.6585365853658537
+        },
+        {
+          "contrast": "Exp1 randomized higher accuracy, all rules",
+          "session": "141203_1150",
+          "n": 60,
+          "n_treated": 26,
+          "estimate": 0.05,
+          "treated_mean": 0.7211538461538461,
+          "control_mean": 0.625
+        },
+        {
+          "contrast": "Exp1 randomized higher accuracy, all rules",
+          "session": "150130_1204",
+          "n": 60,
+          "n_treated": 30,
+          "estimate": 0.20833333333333334,
+          "treated_mean": 0.75,
+          "control_mean": 0.5416666666666666
+        },
+        {
+          "contrast": "Exp1 randomized higher accuracy, all rules",
+          "session": "150206_1200",
+          "n": 60,
+          "n_treated": 30,
+          "estimate": 0.008333333333333333,
+          "treated_mean": 0.7083333333333334,
+          "control_mean": 0.7
+        }
+      ]
+    },
+    "information_investment_0": {
+      "equal_session_estimate": 0.167356100689434,
+      "session_count": 6,
+      "session_standard_error": 0.04373195677590685,
+      "approximate_t95_interval": [
+        0.05493952696445539,
+        0.27977267441441256
+      ],
+      "leave_one_session_out_range": [
+        0.13264550264550262,
+        0.1865416065416065
+      ],
+      "label": "Exp1 accuracy, investment=0",
+      "n_groups": 146,
+      "n_treated": 72,
+      "group_weighted_ht": 0.1678082191780822,
+      "treated_mean": 0.5243055555555556,
+      "control_mean": 0.3581081081081081,
+      "ordinary_mean_difference": 0.16619744744744747,
+      "sessions": [
+        {
+          "contrast": "Exp1 accuracy, investment=0",
+          "session": "141126_1136",
+          "n": 27,
+          "n_treated": 12,
+          "estimate": 0.1111111111111111,
+          "treated_mean": 0.4375,
+          "control_mean": 0.35
+        },
+        {
+          "contrast": "Exp1 accuracy, investment=0",
+          "session": "141201_1146",
+          "n": 22,
+          "n_treated": 7,
+          "estimate": 0.3409090909090909,
+          "treated_mean": 0.42857142857142855,
+          "control_mean": 0.21666666666666667
+        },
+        {
+          "contrast": "Exp1 accuracy, investment=0",
+          "session": "141201_1616",
+          "n": 35,
+          "n_treated": 21,
+          "estimate": 0.11428571428571428,
+          "treated_mean": 0.5833333333333334,
+          "control_mean": 0.48214285714285715
+        },
+        {
+          "contrast": "Exp1 accuracy, investment=0",
+          "session": "141203_1150",
+          "n": 21,
+          "n_treated": 8,
+          "estimate": 0.07142857142857142,
+          "treated_mean": 0.53125,
+          "control_mean": 0.46153846153846156
+        },
+        {
+          "contrast": "Exp1 accuracy, investment=0",
+          "session": "150130_1204",
+          "n": 14,
+          "n_treated": 6,
+          "estimate": 0.10714285714285714,
+          "treated_mean": 0.25,
+          "control_mean": 0.21875
+        },
+        {
+          "contrast": "Exp1 accuracy, investment=0",
+          "session": "150206_1200",
+          "n": 27,
+          "n_treated": 18,
+          "estimate": 0.25925925925925924,
+          "treated_mean": 0.6388888888888888,
+          "control_mean": 0.3888888888888889
+        }
+      ]
+    },
+    "information_investment_1": {
+      "equal_session_estimate": 0.02783098543968109,
+      "session_count": 6,
+      "session_standard_error": 0.06128425769105233,
+      "approximate_t95_interval": [
+        -0.12970521419139314,
+        0.18536718507075534
+      ],
+      "leave_one_session_out_range": [
+        -0.014428904428904432,
+        0.0727911219215567
+      ],
+      "label": "Exp1 accuracy, investment=1",
+      "n_groups": 214,
+      "n_treated": 97,
+      "group_weighted_ht": 0.04205607476635514,
+      "treated_mean": 0.8505154639175257,
+      "control_mean": 0.7521367521367521,
+      "ordinary_mean_difference": 0.09837871178077362,
+      "sessions": [
+        {
+          "contrast": "Exp1 accuracy, investment=1",
+          "session": "141126_1136",
+          "n": 33,
+          "n_treated": 16,
+          "estimate": 0.13636363636363635,
+          "treated_mean": 0.953125,
+          "control_mean": 0.7941176470588235
+        },
+        {
+          "contrast": "Exp1 accuracy, investment=1",
+          "session": "141201_1146",
+          "n": 18,
+          "n_treated": 9,
+          "estimate": -0.027777777777777776,
+          "treated_mean": 0.75,
+          "control_mean": 0.7777777777777778
+        },
+        {
+          "contrast": "Exp1 accuracy, investment=1",
+          "session": "141201_1616",
+          "n": 45,
+          "n_treated": 18,
+          "estimate": -0.022222222222222223,
+          "treated_mean": 0.8472222222222222,
+          "control_mean": 0.75
+        },
+        {
+          "contrast": "Exp1 accuracy, investment=1",
+          "session": "141203_1150",
+          "n": 39,
+          "n_treated": 18,
+          "estimate": 0.038461538461538464,
+          "treated_mean": 0.8055555555555556,
+          "control_mean": 0.7261904761904762
+        },
+        {
+          "contrast": "Exp1 accuracy, investment=1",
+          "session": "150130_1204",
+          "n": 46,
+          "n_treated": 24,
+          "estimate": 0.2391304347826087,
+          "treated_mean": 0.875,
+          "control_mean": 0.6590909090909091
+        },
+        {
+          "contrast": "Exp1 accuracy, investment=1",
+          "session": "150206_1200",
+          "n": 33,
+          "n_treated": 12,
+          "estimate": -0.19696969696969696,
+          "treated_mean": 0.8125,
+          "control_mean": 0.8333333333333334
+        }
+      ]
+    },
+    "boundary_authority_beneficiary": {
+      "equal_session_estimate": -0.04851190476190476,
+      "session_count": 7,
+      "session_standard_error": 0.028920139701386204,
+      "approximate_t95_interval": [
+        -0.11927693733399508,
+        0.022253127810185548
+      ],
+      "leave_one_session_out_range": [
+        -0.06805555555555555,
+        -0.02604166666666667
+      ],
+      "label": "Exp2 authority benefits, all rules",
+      "n_groups": 440,
+      "n_treated": 220,
+      "group_weighted_ht": -0.04318181818181818,
+      "treated_mean": 0.45795454545454545,
+      "control_mean": 0.5011363636363636,
+      "ordinary_mean_difference": -0.043181818181818155,
+      "sessions": [
+        {
+          "contrast": "Exp2 authority benefits, all rules",
+          "session": "160129_1448",
+          "n": 80,
+          "n_treated": 33,
+          "estimate": 0.06875,
+          "treated_mean": 0.3560606060606061,
+          "control_mean": 0.3404255319148936
+        },
+        {
+          "contrast": "Exp2 authority benefits, all rules",
+          "session": "160204_1603",
+          "n": 60,
+          "n_treated": 30,
+          "estimate": -0.03333333333333333,
+          "treated_mean": 0.48333333333333334,
+          "control_mean": 0.5166666666666667
+        },
+        {
+          "contrast": "Exp2 authority benefits, all rules",
+          "session": "160205_1200",
+          "n": 60,
+          "n_treated": 29,
+          "estimate": -0.09166666666666666,
+          "treated_mean": 0.5517241379310345,
+          "control_mean": 0.6370967741935484
+        },
+        {
+          "contrast": "Exp2 authority benefits, all rules",
+          "session": "160208_1506",
+          "n": 60,
+          "n_treated": 27,
+          "estimate": -0.041666666666666664,
+          "treated_mean": 0.6111111111111112,
+          "control_mean": 0.6287878787878788
+        },
+        {
+          "contrast": "Exp2 authority benefits, all rules",
+          "session": "160218_1445",
+          "n": 60,
+          "n_treated": 35,
+          "estimate": -0.18333333333333332,
+          "treated_mean": 0.25,
+          "control_mean": 0.37
+        },
+        {
+          "contrast": "Exp2 authority benefits, all rules",
+          "session": "160325_1418",
+          "n": 60,
+          "n_treated": 33,
+          "estimate": -0.016666666666666666,
+          "treated_mean": 0.5378787878787878,
+          "control_mean": 0.5648148148148148
+        },
+        {
+          "contrast": "Exp2 authority benefits, all rules",
+          "session": "160402_1342",
+          "n": 60,
+          "n_treated": 33,
+          "estimate": -0.041666666666666664,
+          "treated_mean": 0.4696969696969697,
+          "control_mean": 0.5092592592592593
+        }
+      ]
+    },
+    "boundary_authority_beneficiary_PATS": {
+      "equal_session_estimate": -0.02866764429264429,
+      "session_count": 7,
+      "session_standard_error": 0.024113160526237812,
+      "approximate_t95_interval": [
+        -0.0876704225528569,
+        0.03033513396756831
+      ],
+      "leave_one_session_out_range": [
+        -0.04695909852159852,
+        -0.014695585008085004
+      ],
+      "label": "Exp2 authority benefits, pre-treatment PATS",
+      "n_groups": 250,
+      "n_treated": 119,
+      "group_weighted_ht": -0.03,
+      "treated_mean": 0.6512605042016807,
+      "control_mean": 0.666030534351145,
+      "ordinary_mean_difference": -0.01477003014946432,
+      "sessions": [
+        {
+          "contrast": "Exp2 authority benefits, pre-treatment PATS",
+          "session": "160129_1448",
+          "n": 37,
+          "n_treated": 14,
+          "estimate": 0.08108108108108109,
+          "treated_mean": 0.5714285714285714,
+          "control_mean": 0.4782608695652174
+        },
+        {
+          "contrast": "Exp2 authority benefits, pre-treatment PATS",
+          "session": "160204_1603",
+          "n": 37,
+          "n_treated": 18,
+          "estimate": -0.02702702702702703,
+          "treated_mean": 0.5972222222222222,
+          "control_mean": 0.618421052631579
+        },
+        {
+          "contrast": "Exp2 authority benefits, pre-treatment PATS",
+          "session": "160205_1200",
+          "n": 40,
+          "n_treated": 18,
+          "estimate": -0.1125,
+          "treated_mean": 0.7083333333333334,
+          "control_mean": 0.7727272727272727
+        },
+        {
+          "contrast": "Exp2 authority benefits, pre-treatment PATS",
+          "session": "160208_1506",
+          "n": 39,
+          "n_treated": 17,
+          "estimate": -0.0641025641025641,
+          "treated_mean": 0.7647058823529411,
+          "control_mean": 0.7613636363636364
+        },
+        {
+          "contrast": "Exp2 authority benefits, pre-treatment PATS",
+          "session": "160218_1445",
+          "n": 32,
+          "n_treated": 17,
+          "estimate": -0.078125,
+          "treated_mean": 0.39705882352941174,
+          "control_mean": 0.4666666666666667
+        },
+        {
+          "contrast": "Exp2 authority benefits, pre-treatment PATS",
+          "session": "160325_1418",
+          "n": 31,
+          "n_treated": 15,
+          "estimate": 0.0,
+          "treated_mean": 0.8333333333333334,
+          "control_mean": 0.8125
+        },
+        {
+          "contrast": "Exp2 authority benefits, pre-treatment PATS",
+          "session": "160402_1342",
+          "n": 34,
+          "n_treated": 20,
+          "estimate": 0.0,
+          "treated_mean": 0.6875,
+          "control_mean": 0.7678571428571429
+        }
+      ]
+    },
+    "beneficiary_investment_0": {
+      "equal_session_estimate": -0.06663915408377127,
+      "session_count": 7,
+      "session_standard_error": 0.03496859743773259,
+      "approximate_t95_interval": [
+        -0.15220422957207708,
+        0.018925921404534543
+      ],
+      "leave_one_session_out_range": [
+        -0.08816234643106648,
+        -0.046214148232868284
+      ],
+      "label": "Exp2 beneficiary, investment=0",
+      "n_groups": 294,
+      "n_treated": 147,
+      "group_weighted_ht": -0.05952380952380952,
+      "treated_mean": 0.358843537414966,
+      "control_mean": 0.41836734693877553,
+      "ordinary_mean_difference": -0.059523809523809534,
+      "sessions": [
+        {
+          "contrast": "Exp2 beneficiary, investment=0",
+          "session": "160129_1448",
+          "n": 56,
+          "n_treated": 23,
+          "estimate": 0.0625,
+          "treated_mean": 0.20652173913043478,
+          "control_mean": 0.24242424242424243
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=0",
+          "session": "160204_1603",
+          "n": 37,
+          "n_treated": 18,
+          "estimate": -0.1891891891891892,
+          "treated_mean": 0.3194444444444444,
+          "control_mean": 0.5131578947368421
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=0",
+          "session": "160205_1200",
+          "n": 42,
+          "n_treated": 20,
+          "estimate": -0.047619047619047616,
+          "treated_mean": 0.5,
+          "control_mean": 0.5454545454545454
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=0",
+          "session": "160208_1506",
+          "n": 37,
+          "n_treated": 15,
+          "estimate": 0.013513513513513514,
+          "treated_mean": 0.5333333333333333,
+          "control_mean": 0.5113636363636364
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=0",
+          "session": "160218_1445",
+          "n": 47,
+          "n_treated": 27,
+          "estimate": -0.14893617021276595,
+          "treated_mean": 0.23148148148148148,
+          "control_mean": 0.3125
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=0",
+          "session": "160325_1418",
+          "n": 41,
+          "n_treated": 24,
+          "estimate": -0.024390243902439025,
+          "treated_mean": 0.46875,
+          "control_mean": 0.4852941176470588
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=0",
+          "session": "160402_1342",
+          "n": 34,
+          "n_treated": 20,
+          "estimate": -0.1323529411764706,
+          "treated_mean": 0.3375,
+          "control_mean": 0.42857142857142855
+        }
+      ]
+    },
+    "beneficiary_investment_1": {
+      "equal_session_estimate": -0.03641768859160164,
+      "session_count": 7,
+      "session_standard_error": 0.06906402788783117,
+      "approximate_t95_interval": [
+        -0.20541127691814307,
+        0.1325758997349398
+      ],
+      "leave_one_session_out_range": [
+        -0.07871918741483959,
+        0.008794747925182709
+      ],
+      "label": "Exp2 beneficiary, investment=1",
+      "n_groups": 146,
+      "n_treated": 73,
+      "group_weighted_ht": -0.010273972602739725,
+      "treated_mean": 0.6575342465753424,
+      "control_mean": 0.6678082191780822,
+      "ordinary_mean_difference": -0.010273972602739767,
+      "sessions": [
+        {
+          "contrast": "Exp2 beneficiary, investment=1",
+          "session": "160129_1448",
+          "n": 24,
+          "n_treated": 10,
+          "estimate": 0.08333333333333333,
+          "treated_mean": 0.7,
+          "control_mean": 0.5714285714285714
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=1",
+          "session": "160204_1603",
+          "n": 23,
+          "n_treated": 12,
+          "estimate": 0.21739130434782608,
+          "treated_mean": 0.7291666666666666,
+          "control_mean": 0.5227272727272727
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=1",
+          "session": "160205_1200",
+          "n": 18,
+          "n_treated": 9,
+          "estimate": -0.19444444444444445,
+          "treated_mean": 0.6666666666666666,
+          "control_mean": 0.8611111111111112
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=1",
+          "session": "160208_1506",
+          "n": 23,
+          "n_treated": 12,
+          "estimate": -0.13043478260869565,
+          "treated_mean": 0.7083333333333334,
+          "control_mean": 0.8636363636363636
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=1",
+          "session": "160218_1445",
+          "n": 13,
+          "n_treated": 8,
+          "estimate": -0.3076923076923077,
+          "treated_mean": 0.3125,
+          "control_mean": 0.6
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=1",
+          "session": "160325_1418",
+          "n": 19,
+          "n_treated": 9,
+          "estimate": 0.0,
+          "treated_mean": 0.7222222222222222,
+          "control_mean": 0.7
+        },
+        {
+          "contrast": "Exp2 beneficiary, investment=1",
+          "session": "160402_1342",
+          "n": 26,
+          "n_treated": 13,
+          "estimate": 0.07692307692307693,
+          "treated_mean": 0.6730769230769231,
+          "control_mean": 0.5961538461538461
+        }
+      ]
+    },
+    "beneficiary_effect_modification_by_investment": {
+      "equal_session_estimate": 0.030221465492169634,
+      "session_count": 7,
+      "session_standard_error": 0.08035961179259679,
+      "approximate_t95_interval": [
+        -0.16641142095654526,
+        0.22685435194088455
+      ],
+      "leave_one_session_out_range": [
+        -0.03250503918197131,
+        0.06171773265412153
+      ]
+    },
+    "descriptive_matched_material_investment": {
+      "equal_session_estimate": 0.15925081738380972,
+      "session_count": 5,
+      "session_standard_error": 0.0471781437011549,
+      "approximate_t95_interval": [
+        0.028263291232420107,
+        0.29023834353519934
+      ],
+      "leave_one_session_out_range": [
+        0.11781352172976217,
+        0.18253272462831288
+      ],
+      "n_groups": 140,
+      "sessions": [
+        {
+          "contrast": "Exp1 chosen investment at same accuracy/rule, descriptive",
+          "session": "141126_1136",
+          "n_low": 5,
+          "n_high": 14,
+          "estimate": 0.1428571428571429
+        },
+        {
+          "contrast": "Exp1 chosen investment at same accuracy/rule, descriptive",
+          "session": "141201_1146",
+          "n_low": 5,
+          "n_high": 8,
+          "estimate": 0.32499999999999996
+        },
+        {
+          "contrast": "Exp1 chosen investment at same accuracy/rule, descriptive",
+          "session": "141201_1616",
+          "n_low": 12,
+          "n_high": 23,
+          "estimate": 0.06612318840579712
+        },
+        {
+          "contrast": "Exp1 chosen investment at same accuracy/rule, descriptive",
+          "session": "141203_1150",
+          "n_low": 5,
+          "n_high": 17,
+          "estimate": 0.18823529411764706
+        },
+        {
+          "contrast": "Exp1 chosen investment at same accuracy/rule, descriptive",
+          "session": "150130_1204",
+          "n_low": 0,
+          "n_high": 18,
+          "estimate": null
+        },
+        {
+          "contrast": "Exp1 chosen investment at same accuracy/rule, descriptive",
+          "session": "150206_1200",
+          "n_low": 13,
+          "n_high": 20,
+          "estimate": 0.07403846153846161
+        }
+      ],
+      "n_sessions_missing_one_investment_cell": 1,
+      "group_weighted_raw_difference": 0.10125000000000006
+    }
+  },
+  "protocol_sha256": "56b47bca7bf364c96e664c9e12ed5071c710fdda6e31a18a67418c3585171219",
+  "code_sha256": "3680369f34046629e0d7561be0f49e4f67978a37c1d1bfcb034a78c3d65c2a0d",
+  "python": "3.11.2",
+  "numpy": "2.4.6"
+}

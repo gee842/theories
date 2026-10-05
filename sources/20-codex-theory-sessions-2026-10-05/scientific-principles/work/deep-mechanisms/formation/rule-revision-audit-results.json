@@ -1,0 +1,91 @@
+{
+  "exact_transfer_matches_prior_independent_enumeration": true,
+  "transfer_seeded_replay_matches": true,
+  "matched_service_arithmetic_checked": true,
+  "independent_arithmetic": {
+    "deterministic_gain": "2069/100",
+    "study_expense": "207432/25",
+    "difference_bound": "7531/100",
+    "reserve": "288864/25",
+    "Hoeffding_radius": 11.52123836366077
+  },
+  "seeded_replays": [
+    {
+      "record": 0,
+      "status": "rule_revised",
+      "exact_replay_matches": true
+    },
+    {
+      "record": 1,
+      "status": "probe_blocked_by_incumbent",
+      "exact_replay_matches": true
+    },
+    {
+      "record": 2,
+      "status": "probe_unfunded",
+      "exact_replay_matches": true
+    },
+    {
+      "record": 3,
+      "status": "edit_failed_discovery",
+      "exact_replay_matches": true
+    },
+    {
+      "record": 4,
+      "status": "edit_failed_discovery",
+      "exact_replay_matches": true
+    },
+    {
+      "record": 5,
+      "status": "edit_failed_discovery",
+      "exact_replay_matches": true
+    },
+    {
+      "record": 6,
+      "status": "edit_failed_fresh_check",
+      "exact_replay_matches": true
+    },
+    {
+      "record": 7,
+      "status": "edit_failed_fresh_check",
+      "exact_replay_matches": true
+    },
+    {
+      "record": 8,
+      "status": "edit_failed_discovery",
+      "exact_replay_matches": true
+    },
+    {
+      "record": 9,
+      "status": "rule_revised",
+      "exact_replay_matches": true
+    }
+  ],
+  "outcome_acquisition_counts": {
+    "eight_label_calls": 864,
+    "deployment_calls": 576
+  },
+  "underfunded_pilot": {
+    "status": "pilot_unfunded",
+    "observe_calls": 0,
+    "observed_before_payment_check": false
+  },
+  "relay_check": {
+    "maintenance": 1,
+    "reconstruction": 3,
+    "initial_capacity": 1,
+    "funding_sequence": [
+      0,
+      2,
+      3,
+      2
+    ],
+    "capacity_states": [
+      1,
+      0,
+      0,
+      1,
+      1
+    ]
+  }
+}

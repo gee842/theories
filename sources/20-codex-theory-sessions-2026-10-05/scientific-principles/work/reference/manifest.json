@@ -1,0 +1,58 @@
+[
+  {
+    "source": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/README.md",
+    "snapshot": "work/reference/01-README.md",
+    "bytes": 36938,
+    "sha256": "1c8ffc4ff15ac124527f9ba87b0982bae665a625ed1d25a510a0ae06ca07a6b1",
+    "read_date": "2026-10-05",
+    "note": "Reference copied read-only; original not modified. Original relative links retain original context."
+  },
+  {
+    "source": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/CLAIMS.md",
+    "snapshot": "work/reference/02-CLAIMS.md",
+    "bytes": 62398,
+    "sha256": "1ccb5807cdb71c2b9200804399187be8959a9c02135b4aa7c573dd2c996c8cc5",
+    "read_date": "2026-10-05",
+    "note": "Reference copied read-only; original not modified. Original relative links retain original context."
+  },
+  {
+    "source": "/Users/ren/theories/experiments/evaluator-succession/SITUATED-CORRECTION.md",
+    "snapshot": "work/reference/03-SITUATED-CORRECTION.md",
+    "bytes": 16172,
+    "sha256": "b183ac8c9f13bbe4a17d07e2132d789f87c2161540019319fcadee114b5a56ca",
+    "read_date": "2026-10-05",
+    "note": "Reference copied read-only; original not modified. Original relative links retain original context."
+  },
+  {
+    "source": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-inherited-evidence-under-model-revision.md",
+    "snapshot": "work/reference/04-2026-10-05-inherited-evidence-under-model-revision.md",
+    "bytes": 16952,
+    "sha256": "e84233cded658ee5fce64daa5e8fa843aed4ac7ce457ae81d2cfd16fb053e837",
+    "read_date": "2026-10-05",
+    "note": "Reference copied read-only; original not modified. Original relative links retain original context."
+  },
+  {
+    "source": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-questions-without-anomalies.md",
+    "snapshot": "work/reference/05-2026-10-05-questions-without-anomalies.md",
+    "bytes": 17740,
+    "sha256": "16a1f2c1cb72987f7413ea31da3637dca573fcea0e733b369ea4454863945c8e",
+    "read_date": "2026-10-05",
+    "note": "Reference copied read-only; original not modified. Original relative links retain original context."
+  },
+  {
+    "source": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-recoverable-inquiry.md",
+    "snapshot": "work/reference/06-2026-10-05-recoverable-inquiry.md",
+    "bytes": 16339,
+    "sha256": "07613452ef430dcec784b2aaadc67b6c6a868770c40257a4a28d4770d18ec42f",
+    "read_date": "2026-10-05",
+    "note": "Reference copied read-only; original not modified. Original relative links retain original context."
+  },
+  {
+    "source": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-renewal-of-inquiry.md",
+    "snapshot": "work/reference/07-2026-10-05-renewal-of-inquiry.md",
+    "bytes": 17397,
+    "sha256": "5f982e6862c9be868e68de3966a305487d741e3c6b9a4bb11f99c71615c2003a",
+    "read_date": "2026-10-05",
+    "note": "Reference copied read-only; original not modified. Original relative links retain original context."
+  }
+]

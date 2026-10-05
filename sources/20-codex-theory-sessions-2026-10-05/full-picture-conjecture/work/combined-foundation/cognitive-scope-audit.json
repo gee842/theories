@@ -1,0 +1,139 @@
+{
+  "scope": "Selected semantic replays and payload checks; not exhaustive graph certification or empirical validation.",
+  "implementation_sha256": "440a7623377867b1147b44157caf240b9ce5c63d77fd9a1ed90e4d57e11bef6f",
+  "modes": {
+    "baseline": {
+      "paths_checked": 2,
+      "steps_checked": 92,
+      "first_wrong_service_step": [
+        null,
+        null
+      ],
+      "first_skill_loss_step": [
+        null,
+        null
+      ],
+      "delivered_ordinary_events": [
+        4,
+        4
+      ]
+    },
+    "record_loss": {
+      "paths_checked": 2,
+      "steps_checked": 92,
+      "first_wrong_service_step": [
+        null,
+        null
+      ],
+      "first_skill_loss_step": [
+        null,
+        null
+      ],
+      "delivered_ordinary_events": [
+        0,
+        0
+      ]
+    },
+    "execution_blocked": {
+      "paths_checked": 2,
+      "steps_checked": 92,
+      "first_wrong_service_step": [
+        null,
+        null
+      ],
+      "first_skill_loss_step": [
+        null,
+        null
+      ],
+      "delivered_ordinary_events": [
+        0,
+        0
+      ]
+    },
+    "no_renewal": {
+      "paths_checked": 2,
+      "steps_checked": 92,
+      "first_wrong_service_step": [
+        null,
+        null
+      ],
+      "first_skill_loss_step": [
+        null,
+        null
+      ],
+      "delivered_ordinary_events": [
+        0,
+        0
+      ]
+    },
+    "no_maintenance": {
+      "paths_checked": 2,
+      "steps_checked": 92,
+      "first_wrong_service_step": [
+        null,
+        null
+      ],
+      "first_skill_loss_step": [
+        20,
+        20
+      ],
+      "delivered_ordinary_events": [
+        2,
+        2
+      ]
+    },
+    "no_training": {
+      "paths_checked": 2,
+      "steps_checked": 92,
+      "first_wrong_service_step": [
+        null,
+        null
+      ],
+      "first_skill_loss_step": [
+        20,
+        20
+      ],
+      "delivered_ordinary_events": [
+        2,
+        2
+      ]
+    },
+    "score_capture": {
+      "paths_checked": 2,
+      "steps_checked": 92,
+      "first_wrong_service_step": [
+        16,
+        17
+      ],
+      "first_skill_loss_step": [
+        null,
+        null
+      ],
+      "delivered_ordinary_events": [
+        2,
+        3
+      ]
+    },
+    "misleading_calibration": {
+      "paths_checked": 2,
+      "steps_checked": 92,
+      "first_wrong_service_step": [
+        16,
+        16
+      ],
+      "first_skill_loss_step": [
+        null,
+        null
+      ],
+      "delivered_ordinary_events": [
+        0,
+        0
+      ]
+    }
+  },
+  "total_path_steps": 736,
+  "hidden_field_action_comparisons": 5888,
+  "payload_transfers_checked": 16,
+  "missing_record_check_answers_not_used": true,
+  "all_passed": true
+}

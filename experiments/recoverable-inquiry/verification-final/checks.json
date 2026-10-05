@@ -1,0 +1,11 @@
+{
+  "input_manifest_verified": true,
+  "current_calculation_inputs_match": true,
+  "test_snapshot_updated_after_freeze": true,
+  "test_sha256": "413ecd15a259b4d1da18e33651147bdfd37cc49ccf8d5d1bc4113e1c3f6a92d6",
+  "model_sha256": "96a923ef4ae391e2f717c77a8f07fd2cd8fe91f4258c560b221ccb1fff79e7eb",
+  "figure_manifest_verified": true,
+  "markdown_files_checked": 9,
+  "local_links_checked": 179,
+  "tests_passed": 7
+}

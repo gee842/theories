@@ -1,0 +1,1855 @@
+PAGE 1
+METAMEMORY: A THEORETICAL FRAMEWORK 
+AND NEW FINDINGS 
+Thomas 0. Nelson 
+Louis Narens 
+I. Introduction 
+Although there has been excellent research by many investigators on 
+the topic of metamemory, here we will focus on our own research pro- 
+gram. This article will begin with a description of a theoretical framework 
+that has evolved out of metamemory research, followed by a few remarks 
+about our methodology, and will end with a review of our previously un- 
+published findings. (Our published findings will not be systematically re- 
+viewed here; instead, they will be mentioned only when necessary for 
+continuity .) 
+11. A Theoretical Framework for Metamemory 
+Our analysis of metacognition is based on three abstract principles that 
+have been individually used in isolation by other authors: 
+Principle 1: The cognitive processes are split into two or more spec$- 
+cally interrelated levels. Figure 1 shows the basic structure, which con- 
+tains two interrelated levels that we call the meta-level and the object- 
+level, following the usage of those terms by the mathematician Hilbert 
+THE PSYCHOLOGY OF LEARNING Copyright d 1990 by Academic Press. Inc. 
+AND MOTIVATION. VOL. 26 125 All rights of reproductioti in any form reserved. 
+
+PAGE 2
+Thomas 0. Nelson and Louis Narens 
+Control 
+I 
+1 
+META-LEVEL 
+I 
+Monitorlng 
+t 
+Flow of 
+lnformatlon 
+1 
+OBJECT-LEVEL 
+1 Monitoring 
+Monltorina 
+Monitoring 
+Fig. 1. Upper panel shows a theoretical mechanism consisting of two structures (meta- 
+level and object-level) and two relations in terms of the direction of the flow of information 
+between the two levels (notice the asymmetric aspect of each relation). Lower panel shows 
+(I) a nonhorneostatic mechanism without any feedback, (2) a spylike mechanism that has 
+information about the system but no control (e.g., a time traveller who isn't allowed to 
+affect history), and (3) a mechanism with a symmetric relation, such that neither component 
+is rneta-level with regard to the other (e.g., two department chairmen discussing their re- 
+spective departments). 
+(1927; i.e., "metamathematics") and by the philosopher Carnap (1934; 
+i.e., "metalanguage"). Generalizations to more than two levels can be 
+developed, but we have no need to do so for this article. 
+Principle 2: The meta-level contains a dynamic model (e.g., a mental 
+simulation) of the object-level. Conant and Ashby (1970) gave a demon- 
+
+PAGE 3
+Metamemory Framework 127 
+stration for the necessity of such an assumption if the system is to control 
+a dynamic process so as to change from a given state to some other goal 
+state. 
+Principle 3: There are two dominance relations, called "control" and 
+I' 
+monitoring," which are defined in terms of the direction of the flow of 
+information between the meta-level and the object-level. This distinction 
+in the direction of flow of information is analogous to that in a telephone 
+handset, as discussed next. 
+1. Control 
+The basic notion underlying control-analogous to speaking into a tele- 
+phone handset-is that the meta-level modifies the object-level. In partic- 
+ular, the information flowing from the meta-level to the object-level either 
+changes the state of the object-level process or changes the object-level 
+process itself. This produces some kind of action at the object-level, 
+which could be (1) to initiate an action, (2) to continue an action (not 
+necessarily the same as what had been occurring because time has passed 
+and the total progress has changed, e.g., a game player missing an easy 
+shot as the pressure increases after a long series of successful shots), or 
+(3) to terminate an action. However, because control per se does not yield 
+any information from the object-level, a monitoring component is needed 
+that is logically (even if not always psychologically) independent of the 
+control component. 
+2. Monitoring 
+The basic notion underlying monitoring-analogous to listening to the 
+telephone handset-is that the meta-level is informed by the object-level. 
+This changes the state of the meta-level's model of the situation, including 
+"no change in state" (except perhaps for a notation of the time of entry, 
+because the rate of progress may be expected to change as time passes, 
+e.g., positively accelerated or negatively accelerated returns). However, 
+the opposite does not occur, i.e., the object-level has no model of the 
+meta-level. The main methodological tool for generating data about meta- 
+cognitive monitoring consists of the person's subjective reports about his 
+or her introspections. 
+3. Role of Subjective Reports about Introspection for Inferences about 
+Monitoring 
+During the past decade or so, subjective reports about introspection 
+have been resurrected in a form that circumvents the serious flaws in the 
+
+PAGE 4
+128 Thomas 0. Nelson and Louis Narens 
+older version used by turn-of-the-century psychologists. Methodological 
+rigor is increased when people are construed as imperfect measuring de- 
+vices of their own internal processes and when the assumption that intro- 
+spection yields a veridical picture of the person's internal processes is not 
+made. This distinction in our use of subjective reports is critical and can 
+be highlighted by noticing an analogy between the use of introspection 
+and the use of a telescope. One use of a telescope (e.g.. by early astrono- 
+mers and analogous to the early use of introspection) is to assume that it 
+yields a perfectly valid view of whatever is being observed. However, 
+another use (e.g., by someone in the field of optics who studies tele- 
+scopes) is to examine a telescope in an attempt to characterize both its 
+valid output and its distortions. Analogously, introspection can be exam- 
+ined as a type of behavior so as to characterize both its correlations with 
+some objective behavior (e.g., likelihood of being correct on a subsequent 
+test) and its distortions. 
+Thus we try to recognize and avoid the potential shortcomings of intro- 
+spection (e.g., Nisbett & Wilson, 1977) while capitalizing on its strengths 
+(e.g., Ericsson & Simon, 1980, 1984). We view introspective reports as 
+data to be explained, in contrast to the Structuralists' view of introspec- 
+tive reports as descriptions of internal processes; i.e., we regard intro- 
+spection not as a conduit to the mind but rather as a source of data to be 
+accounted for by postulated internal processes. 
+Although previous writers such as Nisbett and Wilson (1977) have un- 
+derscored the possibility of distortions in introspective monitoring, they 
+have not emphasized its potential role-even with its distortions-of af- 
+fecting control processes. A system that monitors itselJ'(even imperfectly) 
+may use its own introspections as input to alter the system's behavior. 
+One of our primary assumptions is that in spite of its imperfect validity 
+and in spite of its being regarded by some researchers as only an isolated 
+topic of curiosity, introspection is a critical component in the total mem- 
+ory system. In attempting to understand that system, we examine the 
+person's introspections so as to have some idea about the input that the 
+person is using. 
+The person's reported monitoring may, on the one hand, miss some 
+aspects of the input and may, on the other hand, add other aspects that 
+are not actually present. Indeed, one of our goals is to characterize both 
+the accuracy and the distortions that are present in people's introspec- 
+tions. This is analogous to one traditional view of perception, where what 
+is perceived is different from what is sensed (i.e., perception conceptual- 
+ized as sensation plus inference), except that what is analogous to the 
+objects being sensed is here the object-level memory processes. 
+
+PAGE 5
+Metamemory Framework 
+0 FEELINO-OF-KNOWlNO JUDOYENTS 
+V 
+JUDOYENTS 
+OF KNOWIN0 
+a 
+CONFIDENCE 
+In 
+EASE-Of-LEARNINQ RETRIEVED 
+JUDQYENTS ANSWERS 
+OODO WEDEMDOOM RETROEVAL 
+IN ADVANCE ON-GOING MAINTENANCE OUTPUT 
+OF OF SELF-DIRECTED OF 
+LEARNING LEARNING KNOWLEDGE SEARCH RESPONSE 
+ALLOCATION OF 
+SELECTION 
+STUDY TIME 
+OF mRCH 
+SELECTION OF STRATEOY TERMINATION TERYlNATlON 
+KIND OF OF OF 
+0 PROCESSIN0 STUDY SEARCH 
+b 
+Fig. 2. Main stages in the theoretical memory framework (listed inside the horizontal 
+bars) and some examples of monitoring components (shown above the horizontal bars) and 
+control components (shown below the horizontal bars). 
+B. THE MONITORING AND CONTROL OF HUMAN MEMORY 
+An overview of our theoretical framework is shown in Fig. 2. The mon- 
+itoring and control processes are grouped in terms of the overall stages 
+of the system, as discussed next, and the reader is invited to consider 
+them in the context of a college student studying for an upcoming exami- 
+nation. 
+1. Acquisition Stage: In Advance of Learning 
+Two components that occur in advance of learning consist of the per- 
+son's goal and the person's plan to achieve that goal. 
+a. De~ermining One's Goal: The Person's Norm of Study. When the 
+person becomes aware of the to-be-remembered items and the anticipated 
+type of test, he or she makes a judgment about the level of mastery that 
+will be needed for a given item at the time of the anticipated test. When 
+
+PAGE 6
+130 Thomas 0. Nelson and Louis Narens 
+a delay is expected to occur between acquisition and the retention test, 
+then the person's theory of retention (Maki & Berry, 1984) is used to 
+modulate how well each item would have to be mastered now, in order 
+for it to still be remembered on the retention test. The product-of the 
+desired ease of retrieval during the retention test, modulated upward by 
+however much extra learning the person believes will be needed to breach 
+the retention interval-is the overall degree of mastery the person be- 
+lieves should be attained during acquisition, which is referred to as the 
+person's norm of study (Le Ny, Denhiere, & Le Taillanter, 1972). 
+b. Formulating a Plan to Attain the Norm ofstudy. After the norm 
+of study has been determined, the person makes a decision about how to 
+attain that goal, i.e., formulates a plan. This has several parts, involving 
+several kinds of monitoring judgments that need to be distinguished. 
+First, a distinction should be drawn between retrospective monitoring 
+(e.g., a confidence judgment about a previolts recall response) vs. pro- 
+spective monitoring (e.g., a judgment about subsequent responding). The 
+latter are subdivided further into three categories in terms of the state of 
+the to-be-monitored items: 
+1. Ease-of-learning (EOL) judgments occur in advance of acquisition, 
+are largely inferential, and pertain to items that have not yet been 
+learned. These judgments are predictions about what will be easy1 
+difficult to learn, either in terms of which items will be easiest or in 
+terms of which strategies will make learning easiest. 
+2. Judgments of learning (JOL) occur during or after acquisition and 
+are predictions about future test performance on currently recallable 
+items. 
+3. Feeling-of-knowing (FOK) judgments occur during or after acquisi- 
+tion (e.g., during a retention session) and are judgments about 
+whether a given currently nonrecallable item is known and/or will 
+be remembered on a subsequent retention test. 
+Perhaps surprisingly, EOL, JOL, and FOK are not themselves highly 
+correlated (Leonesio & Nelson, 1990). Therefore, these three kinds of 
+judgments may be monitoring somewhat different aspects of memory, 
+and whatever structure underlies these monitoring judgments is likely to 
+be multidimensional (speculations about some possible dimensions occur 
+in R. Krinsky & Nelson, 1985, and Nelson, Gerler, & Narens, 1984, esp. 
+pp. 295-299). 
+c. Ease-ofLearning Judgments. Initially, the person makes and 
+EOL judgment about the degree of difficulty for each item (or set of 
+items) in terms of acquiring that item to the degree of mastery set by the 
+
+PAGE 7
+Metamemory Framework 131 
+norm of study. Underwood (1966) showed that EOL is an accurate pre- 
+dictor of the rate of learning during experimenter-paced study trials, and 
+we showed that EOL is related to how much study time is allocated to 
+each item during self-paced study trials (Nelson & Leonesio, 1988, dis- 
+cussed below). 
+d. A Priori Choice-of-Processing Judgmetzts. After making EOL 
+judgments, the person decides which of the various kinds of processing 
+to use on the to-be-retrieved items, and this decision can affect the rate 
+of learning. 
+e. Initial Plan for the Allocatiotz of Study Time. When planning the 
+allocation of study time, the person may first determine the total time to 
+allocate (e.g., 4 hr of study for an upcoming exam). The kind of retention 
+test that is anticipated may affect both the planned allocation of self- 
+paced study time and how that self-paced study time is apportioned 
+among the items (Butterfield, Belmont, & Peltzman, 1971), including 
+massed vs. distributed self-controlled rehearsals (Modigliani & Hedges. 
+1987). 
+We investigated the relation between EOL and the allocation of self- 
+paced study time, with the major finding being that people study longer 
+on the items they believe in advance will be harder (Nelson & Leonesio, 
+1988). The specific model explored in that research is reproduced here 
+in Fig. 3, both to illustrate how hypothetical causal relations between 
+monitoring and control processes can be explored and to show how the 
+theoretical constructs of the framework can be operationalized, with 
+monitoring constructs typically being operationalized via an introspective 
+report (e.g., EOL judgment) and control constructs being operationalized 
+by some other empirical outcome (e.g., elapsed time during self-paced 
+study). 
+2. Acqlrisitiotz Stage: The Ongoing Learner 
+The focus here is on the changes in both the learner's plan and the 
+learner's performance. Figure 4 shows a model of some hypothetical 
+causal relations between several metacognitive components during the 
+ongoing aspects of acquisition. This model may be useful both as a guide 
+to the components discussed here and as an example of one way that 
+stronger models can be developed within our framework. The metacogni- 
+tive components contained in the model are shown in the upper portion 
+of Fig. 4; the lower portion includes a basic memory model (cf. Atkinson 
+& Shiffrin, 1968; Ericsson & Simon, 1980), containing a working memory 
+(cf. short-term memory, STM) that is separate from long-term memory 
+(LTM). 
+
+PAGE 8
+Thomas 0. Nelson and Louis Narens 
+THEORETICAL Person's belle1 
+about ~tem 4 1 A~~~~~~~~~~ I-> Memory 
+2 dill~culty 
+Mot~vat~on 
+Instruct~ons 
+to person 
+EOL 
+judgment -> before proceeding 
+to next Item performance 
+Fig. 3. A model of the allocation of self-paced study time, with arrows indicating hy- 
+pothesized causal connections and dotted lines indicating the way in which each theoretical 
+construct is operationalized (after Nelson & Leonesio. 1988). 
+The upper left corner of Fig. 4 shows three metacognitive components 
+discussed earlier that give rise to the person's norm of study. Following 
+attempts to learn a given item, a judgment is made about the current state 
+of mastery for that item (namely, an FOK judgment if the item is not 
+currently recallable, or a JOL if the item is currently recallable). When 
+the current state of mastery reaches the norm of study, the person termi- 
+nates study of that item (i.e., exits from the sequence). However, when 
+the current state of mastery has not reached the norm of study, the person 
+allocates more study time to the item, chooses a strategy from his meta- 
+cognitive library of strategies (which may reside in a portion of permanent 
+memory-not shown in Fig. 4; cf. the concept of "metacognitive knowl- 
+edge" in Flavell, 1979), and implements the strategy in an attempt to at- 
+tain the desired degree of mastery for that item. Then the cycle recurs. 
+Each of these hypothesized aspects of the ongoing cycle is elaborated 
+below. 
+a. Feeling of Knowing for Currently Nonrecallable Items. Nelson 
+and Leonesio (1988, Experiment 3) found that FOK judgments made after 
+failed attempts at recall of general-information items were positively cor- 
+
+PAGE 9
+Metamemory Framework 
+DEOREE OF MASTERY 
+DESIRED MOW 
+(NORM Of STUDY) CURRENT STATE 
+CURRENT STATE OC DEOREE OF MASTERY 
+MASTERY 
+(from JOL or COK) 
+t amtlmated 8 tor aaah 
+l atrategy (I, I. k, ... ) 
+9 and auk klnd Of 
+y ltam (A, 0, C, ... ) 
+-- ------------ 
+I : elA 81, eIc a*. 
+j : 8,~ 81B Qc ... 
+k: e,, e,, ek c... 
+Fig. 4. Example of some metamemory components (shown above the dotted line) dur- 
+ing acquisition. Curved-return arrow indicates that a given component obtains information 
+from another component. Information is acquired into LTM at a rate 0 and is retrieved from 
+LTM with probability T (Atkinson & Shiffrin, 1968; other views of storage and retrieval, 
+including the substitution of working memory for STM, could easily be substituted instead). 
+The metacognitive library tells for each available strategy (i, j, k, . . .) the estimated rate of 
+acquisition it will yield for various kinds of items (A, B. C, . . .). 
+
+PAGE 10
+134 Thomas 0. Nelson and Louis Narens 
+related with the subsequent allocation of self-paced study time on those 
+items (cf. Figs. 3 and 4 above). However, as in the case of EOL, the 
+magnitude of that correlation was far from unity, indicating that addi- 
+tional mechanisms underlie the person's allocation of study time (dis- 
+cussed below). 
+b. Judgments of Learning for Currently Recallable Items. Accord- 
+ing to Ericsson and Simon (1980), the monitoring per se occurs in STM. 
+This does not, however, imply that information in LTM cannot be moni- 
+tored-e.g., people are aware that they know their own names. Informa- 
+tion that is in LTM may be monitored by first copying it into a working 
+memory, also referred to as STM (cf. lower portion of Fig. 4), such that 
+the person can functionally monitor both STM and LTM (latencies of that 
+monitoring are reported in Wescourt & Atkinson, 1973). Unfortunately, 
+however, people may mistakenly assess their JOL by monitoring informa- 
+tion that is only in STM, not in LTM. When that occurs, the JOL predic- 
+tions are likely to be accurate for predicting subsequent short-term recall 
+of that information but may be inaccurate for predicting subsequent long- 
+term recall (e.g., on a later examination). Would it be possible to produce 
+more accurate JOL predictions for subsequent long-term recall if people 
+made their JOL after a brief delay from when a given item was studied, 
+so as to minimize recall of the to-be-judged information from STM and 
+instead require recall from LTM'? We have begun research on this topic, 
+and preliminary results (J. Dunlosky & T. 0. Nelson, unpublished) indi- 
+cate that the answer to this question is affirmative. 
+c. Updating the Allocation of Study Time during a Particular Study 
+Trial of an Item. In contrast to Fig. 3 but as indicated in Fig. 4, there 
+may be an ongoing allocation of study time to an individual item in the 
+list, such that the person continues studying until his or her JOL for the 
+item reaches the norm of study. The circumstances under which people 
+sharpen their differential study time (i.e., devote much more study time 
+to harder items and much less study time to easier items) have not yet 
+been established (but see Nelson & Leonesio, 1988; Mazzoni, Cornoldi, 
+& Marchitelli, 1990). 
+Related to this, we found that college students terminate self-paced 
+study on a given item long before it has been mastered well enough for 
+subsequent recall (Nelson & Leonesio, 1988). For instance, in our Exper- 
+iment 1, people who were specifically instructed to continue the self- 
+paced study of each item until they were sure that they would be 100% 
+correct on an upcoming recall test ended up having only 49% correct re- 
+call when tested after the study phase. That research examined only one 
+self-paced study trial per item. Future research should determine whether 
+
+PAGE 11
+Metamemory Framework 135 
+the same or different results occur during multitrial acquisition, because 
+people routinely learn information to mastery, and this needs to be recon- 
+ciled with the Nelson and Leonesio findings. The role of motivation in 
+allocating study time should also be explored more fully. 
+d. Termination of Acquisition. How does a learner decide when to 
+terminate acquisition? Figure 4 can be regarded as one answer to this 
+question, with termination occurring when the JOL reaches the norm of 
+study, as discussed above. 
+3. Retention Stage 
+The major metacognitive activity during this stage is the maintenance 
+of previously acquired knowledge (see Bahrick & Hall, 1990). Several 
+factors may underlie the person's decision about how and when to re- 
+view. For instance, the person may have a theory of forgetting that in- 
+cludes the hypothesis (empirically confirmed by Leonesio & Nelson, 
+1982) that the hardest item to learn will be the hardest item to retain. 
+People potentially could capitalize on their metacognitive monitoring 
+of items to decide how much subsequent study to devote to various items 
+that cannot be recalled on a given maintenance test. Perhaps the mecha- 
+nism would be similar to that for acquisition, where additional processing 
+of a given to-be-retrieved item depends upon the discrepancy between 
+the desired degree of mastery for the item vs. the assessed degree of mas- 
+tery (cf. Fig. 4). For nonrecallable items, the person's FOK may help to 
+direct whatever maintenance-more aptly, "relearning" for nonrecall- 
+able items-is allocated (Nelson et al., 1984, Experiment 1; Nelson & 
+Leonesio, 1988, Experiment 3). 
+4. Retrieval Stage: Termination 
+Nickerson (1980) distinguished between memory retrieval that is versus 
+is not self-directed. Although knowledge about both kinds of retrieval is 
+important for memory theory, our framework focuses on self-directed re- 
+trieval. The self-direction occurs not in the searching itself (which we 
+assume to be automatic once it is initiated-see Fig. 5), but rather in set- 
+ting up the particular cues to initiate the search (e.g., by consciously 
+thinking of the last episode in which the item was retrieved or by con- 
+sciously going through the alphabet as cues for the first letter of the 
+sought-after answer). 
+Some components we suppose are involved in the termination of the 
+retrieval stage are shown in Fig. 5, which shows mechanisms for continu- 
+ing vs. terminating the stage of memory retrieval. 
+
+PAGE 12
+Thomas 0. Nelson and Louis Narens 
+OUTPUT OF ANSWER 
+Fig. 5. Some metamemory components in the retrieval stage in human memory. 
+a. Quick InitiationlTermination of Retrieval. The metacognitive de- 
+cision to initiate a search appears to be based on a very rapid, preliminary 
+FOK judgment (Reder, 1987, 1988). This may be similar to the decision 
+that people make in television game shows such as "Jeopardy" that re- 
+quire the player to signal rapidly that he or she can answer a given ques- 
+tion. Upon presentation of a general-information question. people can 
+make fairly accurate FOK judgments (about whether or not they could 
+recall the answer) with a latency that is shorter than the latency of actu- 
+
+PAGE 13
+Metamemory Framework 137 
+ally recalling the answer. Accordingly, in Fig. 5 this preliminary FOK 
+judgment precedes recall (see Schreiber, Nelson, and Narens' resea:ch 
+discussed in Section 111, B, 7, a). 
+This mechanism may be similar to the one postulated in Juola et al.'s 
+(1971) model for a "fast yes" or "fast no" response in yeslno recognition. 
+The "fast no" may be based on the person's belief of never having en- 
+countered the requested information, as in Kolers and Palef s (1976) 
+"knowing not" (also see Nelson et al., 1984, p. 297, for the role of mem- 
+ory for prior encounters as a basis for FOK.) 
+b. Placement of Retrieval-Termination Threshold for Nonretrieved 
+Itenzs. As indicated in Fig. 5, when a potential answer is not found on a 
+given search through memory, people presumably make a decision about 
+whether they are willing to expend more time searching for the answer 
+(i.e., using some kind of costslrewards rules). If they are, and if the FOK 
+is still positive, the search continues. However, the FOK may no longer 
+be positive enough to continue. That is, there may be an evaluation of 
+progress that is dynamic for a given item (e.g., an evaluation in terms of 
+whether there has been sufficient progress to continue). When someone 
+either is no longer willing to continue searching for the item or has a re- 
+duced FOK that no longer exceeds the FOK threshold for claiming to 
+know the answer, the process is terminated with an omission error (indi- 
+cated in the right-hand side of Fig. 5). The relationship between FOK and 
+how long the retrieval stage continues prior to an omission error has been 
+established empirically: Greater FOK is correlated with a longer latency 
+of an omission error (Nelson et a/., 1984, Fig. 3). 
+The aforementioned mechanisms for terminating searching should be 
+distinguished sharply from the ones in the left-hand side of Fig. 5, where 
+a potential answer is retrieved and output. Then when the outputed an- 
+swer is incorrect-i.e., a commission error-the relationship between 
+FOK and the latency of that error is nil (Nelson et al., 1984, Fig. 3). 
+Commission-error latencies probably involve a complicated mix of confi- 
+dence judgments and other factors (discussed below). Moreover, people's 
+FOK is not completely accurate and is sometimes mistaken because they 
+retrieve the wrong referent (e.g., retrieving Sydney in response to the 
+question, "What is the capital of Australia?"; R. Krinsky & Nelson, 
+1985; also see Schacter & Worling, 1985). 
+Omission versus commission errors have also yielded different effects 
+on other aspects of metacognition. For instance, college students typi- 
+cally have a greater FOK for commission-error items than for omission- 
+error items, even though there is no difference in subsequent recognition 
+memory on the two kinds of items (R. Krinsky & Nelson, 1985). 
+
+PAGE 14
+138 Thomas 0. Nelson and Louis Narens 
+The person's expected reward for correct retrieval can affect the deci- 
+sion to continue or terminate searching (i.e., the threshold for "willing- 
+ness to search longer" in Fig. 5). Although incentive can affect how long 
+the person will continue before terminating the retrieval stage (Loftus & 
+Wickens, 1970), there is no empirical evidence about whether greater in- 
+centive can produce a greater probability of retrieving during a given 
+amount of retrieval time. 
+5. Retrieval Stage: Output of Response 
+Several potential psychological mechanisms may underlie the decision 
+to output a single retrieved answer. Some versions of generation-recogni- 
+tion models of recall (e.g., Bahrick, 1970) propose that a "recognition 
+stage" occurs in which the person makes a yeslno recognition judgment 
+and on that basis decides whether to output the answer that he or she 
+retrieved (i .e., "generated"). If the person retrieves only one response 
+that seems plausible, then presumably that response is evaluated against 
+a confidence threshold like the one indicated in Fig. 5 (confidence judg- 
+ments per se are discussed in the next section). Perhaps this process is 
+mediated by some kind of conscious recollection. 
+A variant of the aforementioned mechanism is what might be labeled 
+the test-until-deemed-successful strategy: If the amount of confidence for 
+the first answer that the person retrieves is below the confidence thresh- 
+old, and if the person continues to search but does not retrieve any other 
+potential answers for that item, then the confidence threshold might be 
+lowered (i.e., a dynamic process). Accordingly, the initially retrieved an- 
+swer might be output even though it was not associated with enough con- 
+fidence to be output earlier. 
+Another strategy can occur in which people output an answer even 
+when they are not convinced that it is correct, but rather only that it has 
+a good likelihood of being correct. This satisficing strategy consists of 
+"aiming at the good when the best is incalculable . . . some stop rule 
+must be imposed to terminate problem-solving activity. The satisficing 
+criterion provides that stop rule: retrieval ends when a good-enough alter- 
+native is found" (Simon, 1979, p. 3). 
+Any of the aforementioned strategies may also be modulated by exter- 
+nal factors. For instance, the person's threshold for outputing a retrieved 
+answer might be affected by the costs vs. rewards associated with com- 
+mission vs. correct responses andlor might also be affected by drugs. The 
+likelihood of commission errors during recall is known to increase after 
+the ingestion of marijuana (Hooker & Jones, 1987; Pfefferbaum, Darley, 
+Tinklenberg, Roth, & Kopell, 1977) or lithium (Weingartner, Rudorfer, & 
+Linnoila, 1985) but is unaffected by alcohol (Nelson, McSpadden, 
+
+PAGE 15
+Metamemory Framework 139 
+Fromme, & Marlatt, 1986). Although marijuana affects the threshold for 
+outputing retrieved answers, it has no effect on the probability of cqrrect 
+recall (or on the FOK threshold for saying that correct recognition would 
+occur). Nelson et al. (1990) found a related outcome at Mount Everest: 
+High altitude decreased the likelihood of commission errors without af- 
+fecting the probability of correct recall. 
+6. Retrieval Stage: Confidence Judgments after Recall 
+The confidence judgments that occur after the recall that the confi- 
+dence pertains to are interesting, but their interpretation is difficult be- 
+cause they are validated retrospectively (in contrast to monitoring judg- 
+ments such as EOL, JOL, and FOK, all of which are validated 
+prospectively). 
+The usual finding is that people are overconfident-in terms of absolute 
+scales-about their preceding memory performance (for a review, see 
+Lichtenstein, Fischhoff, & Phillips, 1982), and this finding occurs across 
+a wide variety of conditions (e.g., the degree of overconfidence about 
+recall is approximately the same for normal and alcohol-intoxicated peo- 
+ple; Nelson, McSpadden et al., 1986). However, sometimes near-perfect 
+calibration does occur (e.g., Nelson et al., 1990). 
+Moreover, the reported confidence about the likelihood of an outputed 
+answer being correct is not necessarily a direct measure of the person's 
+internal confidence. For instance, when the person has retrieved two 
+plausible answers for an item-each of which is associated with high in- 
+ternal confidence-but the experimenter allows only one to be output, 
+the reported confidence may be low (because of the person's awareness 
+that the other answer may be the correct one). However, if subsequently 
+the person receives feedback that the outputed answer was wrong, then 
+he or she may give a high FOK judgment-in contrast to the aforemen- 
+tioned low confidence judgment-because of the belief that the remaining 
+answer must be correct. Accordingly, the probability of reminiscence 
+(i.e., correct recall on a subsequent test after incorrect recall of the an- 
+swer on a previous test, without any intervening study of the answer) is 
+greater for commission-error items (p = .29) than for omission-error 
+items (p = .05), perhaps because during the original test the person may 
+sometimes think of two possible answers (one of which is correct and the 
+other of which is incorrect), output the incorrect one, and then output the 
+other one on a subsequent test of that item (Nelson et al., 1984). 
+Earlier we mentioned that Fig. 2 showed only a skeleton of our frame- 
+work. Fleshing out that skeleton can be accomplished by what is referred 
+
+PAGE 16
+140 Thomas 0. Nelson and Louis Narens 
+to in set-theory terminology (e.g., Shafer, 1976) and computer-assisted- 
+design (CAD) terminology (e.g., Snow, 1987) as "coarsening" and "re- 
+fining." 
+Within our framework, a coarsened node is a node that is elaborated 
+at a greater level of specificity (i.e., containing more detail) somewhere 
+else in the framework, and this elaboration at a greater level of specificity 
+is the refinement. The key idea is that larger or smaller degrees of speci- 
+ficity can occur for any component of interest in the framework. To illus- 
+trate how refinement can occur, Fig. 6 shows the relation between the 
+coarsened nodes of "Termination of Study" and "Termination of 
+Search" that appeared in Fig. 2 and their refinement that appeared in 
+Figs. 4 and 5, respectively. 
+Notice an important characteristic of this approach to theorizing: There 
+is no need to preestablish any primitives at a "lowest level of speci- 
+ficity" or even to speculate about what the lowest level of specificity 
+might be like. Also, a particular refinement may for convenience be rep- 
+resented as a coarsened node when it appears in the refinement of still 
+other nodes. 
+111. Methodology and New Findings from Our Research 
+At the outset of our research on metamemory (circa 1975), we were 
+aware of two findings about metamemory that seemed paradoxical in 
+terms of the then-prevailing theories of memory. The first finding (Hart, 
+1965) was that individuals who failed to recall answers to general-informa- 
+tion questions can nevertheless evaluate whether or not they know the 
+answer, and such evaluations are positively correlated with their perfor- 
+mance on a subsequent recognition test of the previously nonrecalled 
+items. How could subjects consciously and validly monitor such nonre- 
+callable answers? 
+The second finding (Juola, Fischler, Wood, & Atkinson, 1971; Kolers 
+& Palef, 1976) was that subjects are able to give very fast and valid "No" 
+answers to questions about whether they could recall specific items, and 
+these "No" answers occur more quickly than a search of memory (i.e., 
+a search of memory would take more time than the latency of the "No" 
+response; for direct evidence that the latencies of FOK judgments are 
+shorter than the latencies to search memory, both for "No" responses 
+and for "Yes" responses, see Reder, 1987, 1988). How could a subject 
+know about the presencelabsence of an item in memory without first com- 
+pleting the memory search for it? 
+
+PAGE 17
+Metamemory Framework 
+Fig. 2 1 
+IN ADVANCE oNOoyk YAWTEWWEE 
+OF SELF-DIRECTED OYFLn 
+WE RESPONSE 
+Fig. 4 
+Fig. 6. Current slatus of refinement of coarsened ntdes in the lheorelical framework 
+(see text for cxplanalion of coarscning/rcfining). 
+
+PAGE 18
+142 Thomas 0. Nelson and Louis Narens 
+We were intrigued by these paradoxes and decided to develop a re- 
+search program to investigate metamemory experimentally. Analogous to 
+the traditional psychophysical/measurement techniques in which people 
+are construed as measuring devices of external stimuli, our approach to 
+metamemory research was to construe people as measuring devices of 
+their own internal stimuli. We hoped that this would allow us to deter- 
+mine how people monitored their own object-level cognitions (when we 
+compared their judgments with our own assessments of their object-level 
+cognitions, so as to see distortions) and also might give us information 
+about their object-level cognitions that our assessments did not show. 
+Accordingly, we based our methodology on obtaining, scaling, and com- 
+paring introspective judgments similar to those from psychophysical par- 
+adigms. However, the paradigm had to be modified both because of theo- 
+retical considerations and because of various practicalities (e.g., in 
+metamemory experiments, the experimenter collects relatively few obser- 
+vations-with respect to the usual psychophysical case-from relatively 
+many people-again with respect to the usual psychophysical case). We 
+also had a major problem to deal with (as do the researchers in psycho- 
+physics and in recognition memory; see Shepard, 1967), namely, to avoid 
+confounding two aspects of the person's judgments: (1) accuracy of the 
+judgment (e.g., as had been assessed by d' in psychophysics) vs. (2) 
+placement of the decision threshold for making the judgment (e.g., as had 
+been assessed by P in signal-detection theory); for our investigations of 
+metamemory, we sought both an a priori solution via new data-collection 
+techniques and an a posteriori solution via new data-analysis techniques 
+that led us to consider alternatives to d'. 
+I. Remarks about Data Analysis for Metacognitive Judgments 
+Although the signal-detection measure of sensitivity d' had been a use- 
+ful statistic to compare performance across individuals and conditions in 
+psychophysics, for various reasons (elaborated in Nelson, 1984, 1987; 
+Nelson, McSpadden et al., 1986) we chose to use Goodman and 
+Kruskal's gamma, G, as the measure of metacognitive accuracy. In con- 
+trast to d', no distributional assumptions need to be made for G (such 
+assumptions are critical for the use of d' and are untestable in most meta- 
+memory situations; for relevant discussions, see Lockhart & Murdock, 
+1970; Nelson, McSpadden et al., 1986). In contrast to other correlations 
+such as Pearson r or Spearman rho, G is unaffected by ties, which are 
+unavoidable in metamemory research and are otherwise problematic. 
+Also, the expected value of G is constant across changes in the person's 
+
+PAGE 19
+Metamemory Framework 143 
+threshold for being confident. Finally. G has a very general interpretation 
+in terms of telling the probability of accurate detection (see Nelson, 1984, 
+Eq. 7; 1987, p. 305; Nelson, McSpadden et al., 1986, Eq. I), which yields 
+a quantitative metric for the degree of FOK accuracy that is both intuitive 
+and superior to any comparisons of difference scores (e.g., as in Hart, 
+1965, 1967; see Nelson, 1984, for reasons). 
+After evaluating all of the available measures, we concluded that G is 
+the best measure of detection accuracy for research on metacognition (for 
+more recommendations regarding the use of G, see Nelson, 1984, 1986). 
+2. Renzarks about Data Collection for Metacognitive Judgments 
+a. Ratings vs. Rankings. One way to obtain people's metacognitive 
+confidence judgments is to collect confidence ratings on an M-place Lik- 
+ert scale about the person's subjective impressions on each item (where 
+M 2 2). Then the validity of those judgments can be determined either 
+(I) by plotting a calibration curve to determine the accuracy of absolute 
+confidence (i.e., confidence for a given item relative to the person's 
+threshold for being confident; Lichtenstein et al., 1982) or (2) by comput- 
+ing G to determine the accuracy of relative confidence (i.e., confidence 
+for one item relative to another).' 
+Our application to psychophysical techniques stressed the relative as- 
+pects of metacognitive judgments via a paired-comparison ranking meth- 
+odology (Nelson & Narens, 1980a; other advantages and disadvantages 
+of rankings vs. ratings are discussed by Coombs, 1964). However, we 
+now also use Likert rating scales, with our focus being on the relative 
+aspects of those ratings (by analyzing the rating data via G, as described 
+in Nelson, 1984) as well as on the absolute aspects (via calibration 
+curves), and we do retests on the ratings to assess the stability of the 
+person's threshold; e.g., Nelson et al. (1990; Nelson, McSpadden et al., 
+1986). Nevertheless, when an investigator is not interested in the absolute 
+aspects of FOK ratings and has the extra time that the ranking procedure 
+usually requires for each subject, the dividend will be, as shown in a large 
+experiment by Lam (1987), that the standard deviation in FOK accuracy 
+across subjects is somewhat smaller for the ranking procedure (SD = .36) 
+'The two kinds of accuracy may yield different conclusions when computed on the same 
+set of data. For instance, confidence may be 100% accurate in the relative sense (i.e., G = 
++ I .O) but inaccurate in the absolute sense (e.g., overconfidence, as shown by a calibration 
+curve); this kind of pattern occurred in Nelson, McSpadden er ul. (1986). In the terminology 
+of Lichtenstein and Fischhoff (1977). relative confidence is reflecting resolution whereas 
+absolute confidence is reflecting calibration, and resolution (in comparison to calibration) 
+"is a more fundamental aspect of probabilistic functioning" (p. 181). 
+
+PAGE 20
+I44 Thomas 0. Nelson and Louis Narens 
+than for the rating procedure (SD = .41), probably because there is a 
+greater tendency for changes in people's thresholds to be neutralized by 
+the ranking procedure. Lam (1987) also showed that the reliability of 
+FOK judgments is greater for rankings than for ratings and that the corre- 
+lation between FOK rankings and ratings ranges from + .71 to + .87 (the 
+larger correlation is for ratings on a 6-place Likert scale whereas the 
+smaller correlation is for ratings on a 2-place Likert scale). Also, a com- 
+promise rankinglrating procedure for use in FOK research has been de- 
+veloped by Shimamura and Squire (1986). 
+b. Laboratory Paired Associates vs. General-Information Ques- 
+tions. In research where we are interested in the effects of acquisition 
+variables on metamemory, the items are laboratory paired associates 
+such as number-word pairs, whereas in research where we are inter- 
+ested only in the effects of retrieval variables, the items are general-infor- 
+mation questions (Nelson & Narens, 1980b; see next paragraph). The for- 
+mer allow for control over the process of acquisition, whereas the latter 
+are fundamentally a version of paired-associate items (e.g., stimulus = 
+"What is the capital of Finland?" and response = "Helsinki"), with the 
+advantages of eliminating the stage of having to teach the items to the 
+person and also having greater stability of recall than does newly learned 
+information. 
+3. FACTRETRIEVAL Computer Program for Metamemory Research 
+First, we constructed 300 general-information questions and collected 
+normative data on them (Nelson & Narens, 1980b). Next, we put 240 of 
+those questions into a computer program called FACTRETRIEVAL that 
+tests recall, collects FOK judgments, and tests recognition (Shimamura, 
+Landwehr, & Nelson, 1981). Finally, we enlarged that program into a 
+more sophisticated version called FACTRETRIEVAL2 (Wilkinson & 
+Nelson, 1984) that collects confidence judgments about previous recall, in 
+addition to containing both ranking and rating versions of FOK judgments 
+about upcoming recognition, and that offers many other advantages (e.g., 
+control over the difficulty levels of the items presented to the person, 
+more recognition alternatives per item, assessment of retest reliability of 
+the FOK judgments, and more thorough analysis of the data, including 
+an analysis of response latencies). 
+It is not possible here to summarize all of our metamemory findings 
+from the past 15 years. Instead, we will emphasize those findings that 
+
+PAGE 21
+Metamemory Framework 145 
+have not yet appeared in print and will only briefly mention a portion of 
+those already published. 
+The findings below are organized around several themes, as indicated 
+by the side headings. (All differences mentioned as significant had p 
+<.05.) 
+1. Amount of Information Deposited in Long-Term Memory Is 
+Important for Me tacognitive Monitoring 
+a. Our Early Experiments. Our first experiment on metamemory 
+was conducted in 1976 at the University of California, Irvine, and used a 
+paired-comparison ranking methodology on number-word pairs immedi- 
+ately after they had been presented to each subject once during study (a 
+protocol for one subject appears in Nelson & Narens, 1980a). We found 
+that people were very consistent in their FOK judgments, both in terms 
+of transitive FOK paired comparisons (i.e., if Item A is chosen over 
+Item B, and Item B is chosen over Item C, then Item A will have a high 
+probability of being chosen over Item C) and in terms of retest reliability 
+(for near-perfect retest reliability, see Nelson, Leonesio, Landwehr, & 
+Narens, 1986, Fig. 2), but those judgments had nearly no validity for pre- 
+dicting upcoming recognition! This difference between reliability and 
+validity, which we replicated2 in other unpublished experiments during 
+1977-1979, was so extreme that for awhile we used a fun-house mirror 
+analogy to describe our subjects' metamemories, wherein what people 
+see when looking in such a mirror is a reliable but nonvalid image of them- 
+selves. 
+After exploring several blind alleys, including the eventually rejected 
+possibilities that (I) people are inherently poor at monitoring their memo- 
+ries, and/or (2) the structure of the underlying items is compromised of 
+both forward and backward traces (in which the person monitored the 
+strength of the forward trace, whereas recognition tapped the strength of 
+the backward trace), we eventually concluded that the lack of FOK valid- 
+ity we had observed was due to the items never having been registered 
+well enough in LTM to be monitored by the metacognitive system. Here 
+is how we came to that conclusion. 
+b. Effect of Degree of Learning and Retention Interval on FOK Accu- 
+racy. In 1979, we conducted an experiment (T. 0. Nelson & L. Narens, 
+unpublished) in which three groups (n = 27 or 28 subjects/group) differed 
+'~esearchers other than us have also discovered situations in which people have no valid- 
+ity at monitoring their ongoing learning until the items first become recallable after a filled 
+retention interval that exceeds the limits of STM (e.g., Vesonder & Voss, 1985). 
+
+PAGE 22
+146 Thomas 0. Nelson and Louis Narens 
+in terms of the degree of learning and the delay of the retention test. The 
+retention test consisted of recall, followed by paired-comparison FOK 
+judgments about the person's subjective likelihood of recognizing an- 
+swers that he or she did not recall, and ended with 4-alternative-forced- 
+choice (4-AFC) recognition test on every nonrecalled item so as to assess 
+the accuracy of the FOK judgments. The results for each group were: (I) 
+the first group, who had an immediate test after one study trial per item, 
+yielded 35% correct recall, and 63% of the subjects had a positive (vs. 
+negative) G for FOK accuracy at predicting the recognition of nonrecalled 
+items (not significant); (2) the second group, who had a delayed test 1 
+week after acquisition via one correct recall per item, yielded 45% correct 
+recall, and 71% of the subjects had a positive (vs. negative) G (marginally 
+significant); (3) the third group, who had a delayed test 3 weeks after 
+acquisition via one correct recall per item, yielded 25% correct recall, 
+and 86% of the subjects had a positive (vs. negative) G (significant FOK 
+accuracy, p < .001). Thus, the level of recall did not determine FOK 
+accuracy (i.e., the first group's level of recall was bracketed by the sec- 
+ond and third groups) and the people in all three groups attended to every 
+item during presentation (i.e., all items entered STM), but what mattered 
+was to ensure that the items could be recalled from LTM during acquisi- 
+tion (i.e., only the last two groups showed indications of FOK accuracy). 
+However, from this experiment we could not tell whether the critical fac- 
+tor for FOK accuracy was the degree of learning or the length of the 
+retention interval. Therefore, another experiment was needed to separate 
+the effects of those two factors. 
+In 1980, we conducted a paired-associate experiment (L. Narens & T. 
+0. Nelson, unpublished) on three more groups: (I) the first group, who 
+had a delayed test I week after acquisition via one correct recall per item, 
+yielded 29% correct recall and had little FOK accuracy (mean G = 
++ .15); (2) the second group, who had a delayed test 4 weeks after acquisi- 
+tion via one correct recall per item, yielded 15% correct recall and also 
+had little FOK accuracy (mean G = + .14); however, (3) the third group, 
+who had a delayed test 4 weeks after acquisition via four correct recalls 
+per item, yielded 38% recall and had significant FOK accuracy (mean G 
+= + .36). Thus, not the length of the retention interval but rather the 
+degree of learning is critical for FOK accuracy. 
+c. Our First Published Experiment on Metumemory. The aforemen- 
+tioned findings led to an experiment in 198 1 to establish the importance 
+of the degree of learning on FOK accuracy, which was our first published 
+experiment on metamemory (Nelson, Leonesio, Shimamura, Landwehr, 
+& Narens, 1982). We found that 4 weeks after acquisition, FOK accuracy 
+
+PAGE 23
+Metamemory Framework 147 
+was nil for items that had originally been learned to a criterion of only 
+one correct recall (median G = .00), but FOK accuracy was substantial 
+for items that had originally been overlearned to a criterion of four correct 
+recalls per item (median G = + .41). But by what mechanism does the 
+degree of learning affect the accuracy of metacognitive judgments? 
+d. Mechanism for the Overlearning Effect on Metacognitive Accu- 
+racy. The two-part psychological mechanism that seems to underlie this 
+effect is the following: 
+1. Metacognitive judgments attempt to discriminate between different 
+items and therefore will increase in accuracy as the difference between 
+the to-be-judged items increases, and 
+2. overlearning may enhance the stability of retention and apparently 
+also increases the differences between items. 
+For instance, Leonesio and Nelson (1982) found that the degree of learn- 
+ing during acquisition would strongly modulate the gamma correlation be- 
+tween item difficulty (i.e., the number of trials required for the first cor- 
+rect recall during acquisition) and subsequent recall retention: For items 
+that were learned to a criterion of one correct recall during acquisition, 
+this correlation was + .02; for items learned to a criterion of two correct 
+recalls during acquisition, the correlation was - .15; and for items learned 
+to a criterion of four correct recalls during acquisition, the correlation 
+was -.25 (i.e., items that required more trials before the first correct 
+recall were less likely to be remembered during the subsequent retention 
+test). 
+e. Empirical Support for the Item-Discriminution Mechanism. In 
+accord with the above, Leonesio (1985) found that for overlearned items 
+the correlation between FOK and recognition (namely, G = + .28) 
+dropped to nonsignificance when item difficulty was partialled out 
+(namely, G = + .01), suggesting that item difficulty-in particular, the 
+differences in difficulty between items-is a factor that modulates the de- 
+gree of FOK accuracy. Also in accord with Statement (1) above, Nelson, 
+Leonesio et al. (1986) found that FOK accuracy on general-information 
+questions ranged from G = .OO for items that are adjacent in the person's 
+FOK rank ordering to G = + .77 for discriminating between the top and 
+bottom items in the person's rank ordering. Thus, like a pan balance, 
+people are reasonably fine as measuring devices, but they have limits in 
+terms of the objects between which they can validly discriminate (cf. sig- 
+nallnoise ratio). In this case, the relevant difference is in terms of underly- 
+ing memorability (analogous to a difference in mass for the pan-balance 
+
+PAGE 24
+148 Thomas 0. Nelson and Louis Narens 
+case), such that the more different the items, the more likely the metacog- 
+nitive discriminations are to be valid. This point is important not only for 
+theoretical formulations of metamemory, but also for conclusions about 
+methodology; for instance, a low value of G does not necessarily imply 
+that the task is insensitive or that the person cannot monitor accurately, 
+but rather the obtained value of G reflects a combination of the task, the 
+person's ability to monitor, and the degree of differences among the to- 
+be-monitored items. Using more or less discriminable items will produce 
+greater or lesser degrees of accurate metacognitive discriminations be- 
+tween the to-be-monitored items. 
+f. Overlearning cind the Relation between EOL Judgments, JOL, and 
+FOK Judgments. Because EOL judgments occur prior to acquisition 
+(i.e., before overlearning begins), they cannot tap overlearning but rather 
+can only tap item diffi~ulty.~ However, in contrast to EOL judgments, 
+JOL can tap both item difficulty and the degree of learning (because JOL 
+occur after acquisition). Not surprisingly, therefore, subsequent recall re- 
+tention is predicted significantly better by JOL (G = + .3l) than by EOL 
+(G = + .12), as shown by Leonesio and Nelson (1990). Also during the 
+retention session, the recognition of nonrecalled items is predicted as well 
+by JOL (which had been made 4 weeks earlier) as by FOK judgments 
+(which had been made immediately prior to the recognition test), and 
+those two kinds of judgments are not themselves highly correlated with 
+each other and therefore may tap different aspects of memory (see Leone- 
+sio & Nelson, 1990). 
+2. FOK May Be Perfectly Valid lit Tapping a Large Number c?f'Aspects 
+of LTM but the Accuracy of FOK for Predicting Criterion 
+Performance May Nevertlzeless Be Imperfect 
+There are at least two possible reasons, in addition to the methodologi- 
+cal one mentioned above (i.e., items not different enough for the person 
+to be able to discriminate between them), that the observed FOK accu- 
+racy may underestimate the actual FOK accuracy at monitoring informa- 
+tion in LTM. 
+'Moreover, Leonesio and Nelson (1990) showed that those EOL judgments have far- 
+from-perfect accuracy at monitoring item difficulty (e.g.. the mean correlation between EOL 
+judgments and the number of trials required to learn the various items in a constant-study- 
+time situation is only G = - .22), and the relatively low magnitude of this correlation is not 
+due to inadequate range in the number of trials required to learn the various items (e.g., the 
+mean correlation between the number of learning trials and subsequent recall 4 weeks later 
+was G = - .4X). 
+
+PAGE 25
+Metarnemory Framework 149 
+I. No single criterion task may tap the full set of information tapped 
+by the FOK. As just one example of this possibility, consider the typical 
+criterion task-namely, recognition-that is used to validate the accuracy 
+of FOK. We know that recognition does not completely tap the informa- 
+tion in memory (e.g., savings occurs for nonrecognized items, Nelson, 
+1978), so some of the information in memory that is tapped by FOK may 
+be overlooked by recognition (and perhaps vice versa, of course). Given 
+the view that memory is multidimensional rather than unidimensional 
+(e.g., Bower, 1967), it is even possible that the FOK may be tapping more 
+aspects of memory than any single criterion task. That is, different crite- 
+rion tasks tap different aspects of memory, and the current view is that 
+no particular task is strictly more sensitive (in the technical sense; Nel- 
+son, 1978) than all other criterion tasks (for a review of the rapidly grow- 
+ing literature that shows how different tasks are dissociated from one an- 
+other and tap different aspects of memory, see Richard-Klavehn & Bjork, 
+1988). 
+2. FOK does not detect small amounts of new information coming 
+into memory that may affect criterion performance. We recently discov- 
+ered a situation in which the FOK can be less sensitive than recall for 
+detecting information in memory (Jameson, Narens, Goldfarb, & Nelson, 
+1990). In that research, a nonrecalled general-information answer was 
+very briefly flashed while the person was attending to the corresponding 
+general-information question. The very brief flash contained either the 
+correct answer or a nonsensical answer. Following the flash, the person 
+either (1) immediately attempted to recall the answer to the question and 
+then immediately gave an FOK judgment about whether he or she knew 
+the answer (Experiment I), or (2) immediately gave an FOK judgment 
+without any intervening attempt at recall (Experiment 2, which was run 
+as a control in case the effects of the flash dissipated during the immedi- 
+ate-recall phase in Experiment 1, before the FOK judgment occurred). 
+The results, summarized in Table I, show that the new information 
+added to memory by the very brief flash affected recall without affecting 
+FOK. This is in accord with the aforementioned findings that the FOK 
+can tap only those aspects of information that previously had been well- 
+established in LTM and does not detect new incoming information. Con- 
+sistent with such a conclusion, the FOK can validly discriminate between 
+nonrecalled items that will soon have the correct answer flashed tachisto- 
+scopically (Nelson et al.. 1984, Exp. I). Taken together, these results 
+from our 1984 and 1990 research suggest that the residual information in 
+LTM that is tapped by the FOK can be augmented by incoming flashed 
+information that the FOK does not detect. Whether this incoming flashed 
+
+PAGE 26
+Thomas 0. Nelson and Louis Narens 
+TABLE I 
+EFFECT OF A PERCEPTUAL FLASH (OF THE CORRECT 
+ANSWER VS. NONSENSE) ON THE SUBSEQUENT 
+PROBABILITY OF RECALL AND THE FEELING OF 
+KNOWING (FOK)O 
+Answer that was flashed 
+Dependent variable Correct answer Nonsense 
+Experiment 1: p(recal1) .28 .I0 
+Experiment 1: FOK rating 5.4 5.2 
+Experiment 2: FOK rating 6.1 6.1 
+"The entry for p(recal1) is the mean (across subjects) of each individ- 
+ual subject's ~(recall). The entry for FOK rating is the mean (across 
+subjects) of each individual subject's median FOK rating (higher val- 
+ues indicate a stronger feeling of knowing). Although flashing the cor- 
+rect answer (vs. nonsense) yielded a significant improvement in recall 
+beyond the reminiscence that occurred in the nonsense condition, no 
+significant effect occurred on the feeling ol knowing. Data are from 
+Jameson el a/. (1990). 
+information should be conceptualized as residing in STM or in uncon- 
+scious memory (cf. Marcel, 1983) is an open question, whose answer may 
+have ramifications for conceptions about the limits of metacognitive mon- 
+itoring. 
+Thus, the FOK can tap LTM information that by itself is insufficient 
+to trigger correct recall, whereas recall can be based on the conglomerate 
+of both the preflash information in LTM and a boost from flashed infor- 
+mation that the FOK does not tap. From this research, we now know that 
+at least some information in the overall memory system is not tapped by 
+FOK, and therefore the question arises concerning the degree to which 
+people do have direct (or privileged) access to their own idiosyncratic 
+memories. 
+3. Privileged Access 
+Do people have privileged access to idiosyncratic information in their 
+memories about the to-be-retrieved items? We examined this question in 
+two ways. 
+a. JudgelObserver Experiments. We (T. Jameson, T. 0. Nelson, R. 
+J. Leonesio, & L,. Narens, unpublished) modified our standard FACTRE- 
+TRIEVAL paradigm as follows. One person (designated the Target sub- 
+
+PAGE 27
+Metamemory Framework 151 
+ject-the standard subject in FACTRETRIEVAL) went through recall 
+until missing the answers to 15 questions. Then he or she made FOK 
+rankings of those 15 items. Meanwhile-and here's the new twist-while 
+the Target was going through recall, another person (designated the Ob- 
+server) observed the Target's performance during recall (i.e., the Ob- 
+server saw the Target's face, saw how long the Target paused to think 
+about the answer to each question, saw how well the Target did on related 
+questions, and saw what the Target typed as a recall response to a given 
+question). Then the Observer went to another computer room and inde- 
+pendently ranked those same 15 items in terms of how likely the Target 
+would be to recognize the correct answer to each missed item. Finally, 
+yet another person (designated the Judge), who never saw the Target or 
+the Target's answers during recall, also ranked those same 15 items in 
+terms of how likely the Target would be to recognize the correct answer 
+to each missed item. Subsequently the Target went through a CAFC rec- 
+ognition test on each item, so as to provide the criterion performance that 
+allowed us to assess the predictive accuracy of the Target's, Observer's, 
+and Judge's predictions about the Target. 
+The hypothesis we tested was the following. The Judge would have 
+some above-chance accuracy at predicting the Target's recognition perfor- 
+mance, based on the Judge's knowledge of the general difficulty of each of 
+the various items. The Observer would have the same knowledge about 
+general item difficulty that the Judge had, but also by virtue of having 
+watched the Target during attempted recall of each item would have some 
+specific extra knowledge about what the Target might know (e.g., if the 
+Target paused to think awhile before answering or made a close guess at 
+the answer), and therefore the Observer would be more accurate than 
+the Judge at predicting the Target's subsequent recognition. The Target 
+would have all of the above information, plus "privileged" information 
+about his own idiosyncratic memory (e.g., remembering that he or she 
+had learned a particular item in high school) and therefore should be the 
+best possible predictor of his or her subsequent recognition performance. 
+The results, shown in the left side of Fig. 7, generally confirmed the 
+aforementioned hypothesis about the relative predictive accuracy of the 
+Target, Observer, and Judge for predicting the Target's subsequent rec- 
+ognition performance. All three sets of predictions had above-chance ac- 
+curacy, and the Target's predictive accuracy was significantly greater 
+than the Judge's, with the Observer's predictive accuracy being interme- 
+diate between them (but not significantly different from either the Target 
+or the Judge). 
+Because the overall predictive accuracy in that experiment was some- 
+what low, we ran another experiment containing a few methodological 
+
+PAGE 28
+Thomas 0. Nelson and Louis Narens 
+Target Obeerver Judge Terget Obeerver Judge 
+Experlment 1 Experlment 2 
+Predictor 
+Fig. 7. Accuracy at predicting the target's subsequent recognition performance on non- 
+recalled items (in terms of mean G) for three predictors (the Target, the Observer, and the 
+Judge) in two experiments. 
+changes. In particular, during recall the items were not randomly sampled 
+but instead were sampled more systematically to utilize the full range of 
+general-information questions in FACTRETRIEVAL, and the recoani- 
+tion test was made less noisy by using 8-AFC instead of CAFC (both of 
+these changes yield greater overall predictive accuracy; see above). Also, 
+instead of being in the same room with the Target, the Observer watched 
+
+PAGE 29
+Metamemory Framework 153 
+the Target through a one-way mirror from an adjacent room during the 
+recall phase. 
+The results, reported in the right side of Fig. 7, showed greater predict- 
+ive accuracy overall than in the previous experiment. Most important, 
+the general pattern and the qualitative conclusions from the statistical 
+tests were the same as in the previous experiment. Thus people appar- 
+ently do have idiosyncratic information at their disposal during retrieval, 
+and this idiosyncratic information can benefit predictions about their sub- 
+sequent memory performance. But does this idiosyncratic information 
+about their own memories yield the best possible predictive accuracy 
+about their subsequent performance, or is there a way to improve predict- 
+ive accuracy even more? 
+6. Normative Predictions vs. the Individual's Own FOK Predic- 
+tions. It is worth mentioning that Nelson, Leonesio et al. (1986) found 
+that for predicting an individual's subsequent memory performance on 
+currently nonrecalled items, the individual's own FOK predictions were 
+significantly better (mean G = + .28) than normative FOK predictions 
+(means G = +. 12) derived from the average of his or her peers' predic- 
+tions about their own memory performance, but the individual's FOK 
+predictions were significantly worse than predictions derived from the 
+normative probability of correct recall (mean G = + .38). We made sev- 
+eral attempts to induce individuals to utilize (while making FOK judg- 
+ments) their estimates of normative recall, in hopes that this might yield 
+an improvement in FOK accuracy. Unfortunately all of our attempts 
+failed to improve people's FOK accuracy, perhaps because people are 
+poor at trying to intuit the normative probability of recall on items that 
+they themselves cannot recall (Nickerson, Baddeley, & Freeman, 1987). 
+However, M. Calogero (unpublished research conducted in our labora- 
+tory) found that people who are given the normative probability of recall 
+as they make FOK judgments for each item do have significantly greater 
+FOK accuracy (G = + .58) than other people who are not given those 
+normative probabilities (G = + .40), indicating that people will utilize 
+normative information when it is available (in his experiment, the accu- 
+racy from predictions derived solely from the normative probability of 
+recall was G = + .55). Next, we turn to the question of what the informa- 
+tion is that does underlie people's FOK judgments. 
+4. Some Factors Underlying People's FOK Judgments (versus 
+FOK Accuracy) 
+To inquire about whether a given factor "affects FOK accuracy" is to 
+ask whether the factor affects the relationship between the FOK judg- 
+
+PAGE 30
+154 Thomas 0. Nelson and Louis Narens 
+ments and the criterion task (e.g., in the above-mentioned research this 
+was the relationship-as assessed by G-between FOK judgments and 
+subsequent recognition performance). By contrast, to inquire about 
+whether a given factor "affects FOK judgments" is to ask whether the 
+factor affects the magnitude of FOK, as assessed by the median FOK 
+rank or the median FOK rating. These two possible meanings of "an ef- 
+fect on FOK" are mathematically independent of each other. The former 
+kind of effect was examined above. The latter kind is examined next. 
+a. Overlearning Affects Not Only FOK Accurczcy but c~lso AfJ;ects the 
+Magnitude of FOK. Nelson et al. (1982) reported that the median FOK 
+rank varied across items that differed in the degree of original learning: 
+Items originally learned to a criterion of one recall per item had a median 
+FOK rank of 5.8; items with one additional overlearning trial had a me- 
+dian FOK rank of 6.8; and items with three additional overlearning trials 
+had a median FOK rank of 8.4. 
+This effect of overlearning on the magnitude of metacognitive judg- 
+ments was extended recently by Leonesio and Nelson (1990). They inves- 
+tigated a situation in which people (1) made JOL at the end of acquisition, 
+and (2) subsequently made FOK judgments 4 weeks later on items incor- 
+rectly recalled during the retention test (using a retention-session proce- 
+dure similar to the one from Nelson et al., 1982). A major finding, shown 
+in Fig. 8, was that overlearning has a greater effect on JOL than on subse- 
+quent FOK judgments. 
+In all of the aforementioned experiments, the overlearning trials were 
+a combination of study-test trials (e.g., "three additional overlearning tri- 
+als" meant three additional overlearning study trials and three additional 
+overlearning test trials). But which portion-overlearning study or over- 
+learning test-were the FOK judgments being affected by? 
+b. Overlearning Study Trials vs. Overlearning Test Trials. An ex- 
+periment by T. 0. Nelson, T. Rideout, and R. J. Leonesio (unpublished) 
+had people learn a paired-associate list in which one-third of the items 
+were learned to a criterion of one correct recall per item, another one- 
+third had six overlearning study trials after the item was correctly re- 
+called, and the remaining one-third had six overlearning test trials after 
+the item was first correctly recalled. Four weeks later, the median FOK 
+rank for items not recalled on the retention test was 6 for the items that 
+had originally been learned to a criterion of one correct recall. 8 for the 
+items that had received six overlearning study trials, and 8 for the items 
+that had received six overlearning test trials (each of the latter two sets 
+of items differed significantly from the first but did not differ from each 
+other). Thus, both the overlearning study trials and the overlearning test 
+
+PAGE 31
+Metamemory Framework 
+JOL lmmedlately 
+atter acqulsltlon 
+FOK iud ments 
+tour weefs later 
+Metacognitive judgment 
+Fig. 8. Median JOL rank and FOK rank (I = low) for items that were acquired to a 
+criterion of one correct recall (leftmost in each pair of bars) vs. four correct recalls. The 
+effect of overlearning is greater on JOL than on FOK. 
+trials affect the magnitude of subsequent FOK, and to approximately the 
+same degree. 
+c. Actuul Overlrarning vs. Claimed Overlearning. Although over- 
+learning has an effect on FOK, we wondered if that effect was a direct 
+one or instead was mediated by whether the person was aware that the 
+item had been overlearned. An experiment by T. 0. Nelson and S. Gilis- 
+pie (unpublished) attempted to tease those two factors apart. 
+The college-student subjects each received study-test trials on a paired- 
+
+PAGE 32
+Thomas 0. Nelson and Louis Narens 
+TABLE I1 
+EFFECT OF ACTUAL FREQUENCY OF 
+PREVIOUS RECALLS VS. CLAIMED 
+FREQUENCY OF PREVIOUS RECALLS ON 
+SUBSEQUENT FOK JUDGMENTS" 
+Actual frequency of previous 
+recalls 
+Claimed frequency 
+of previous recalls 1 5 Overall 
+I 
+5 
+Overall 
+"The entry is the median (across subjects) of each indi- 
+vidual subject's median FOK rank for the items in that 
+cell (higher values indicate a stronger feeling of know- 
+ing). Although both the actual and the claimed frequency 
+of previous recalls had an overall significant effect, no- 
+tice that the feeling of knowing is affected more by the 
+person's claimed frequency than by the actual frequency 
+of previous recalls. This can be seen in two ways: by 
+comparing the effect manifest in the row marginals with 
+the effect manifest in the column marginals, or, perhaps 
+even better. by comparing the two internal-cell values 
+shown in boldface (i.e, the person's feeling of knowing 
+was stronger for items that had actually been recalled 
+once but which he or she believed to have been recalled 
+five times than for items that were believed to have been 
+recalled once but that had actually been recalled five 
+times). 
+associate list, wherein 16 items were learned to a criterion of one correct 
+recall per item while the remaining 16 were overlearned (five correct re- 
+calls per item). A retention session occurred 3-7 weeks later (this differ- 
+ence in retention interval had no effect on recall or on FOK judgments 
+and therefore will not be discussed further), consisting of three stages: (I) 
+recall of every item, followed by (2) several judgments on every nonre- 
+called item, the two most pertinent for present purposes being the stu- 
+dents' forced-choice frequency judgments of whether a given item had 
+originally been learned to a criterion of one or five correct recalls and 
+the students' FOK judgments (which occurred either before or after- 
+counterbalanced-the other judgments had been made), followed by (3) 
+8-AFC recognition. 
+Table 11 shows that the person's FOK was related more to his or her 
+
+PAGE 33
+Metamemory Framework 
+TABLE 111 
+EFFECT OF ACTUAL FREQUENCY OF 
+PREVIOUS RECALLS VS. CLAIMED 
+FREQUENCY OF PREVIOUS RECALLS ON THE 
+SUBSEQUENT RECOGNITION THAT THE FOK 
+IS ATTEMPTING TO PREDICT" 
+Actual frequency of previous 
+recalls 
+Claimed frequency 
+of previous recalls I 5 Overall 
+I 
+5 
+Overall 
+"The entry is the mean (across subjects) of each indi- 
+vidual subject's percentage correct recognition for the 
+items in that cell. Both the actual and the claimed fre- 
+quency of previous recalls have an overall significant ef- 
+fect (and to the same degree). 
+claimed frequency of previous recalls than to his or her actual frequency 
+of previous recalls. Although this can be seen by comparing the two pairs 
+of marginals, it is perhaps most evident by noticing that the FOK was 
+greater for items that the person believed he or she had previously re- 
+called five times but actually had been recalled only once (median FOK 
+= 16) than for items believed to have been previously recalled only once 
+but that had actually been recalled five times (median FOK = 10). Put 
+another way, most of the effect of overlearning on FOK judgments is 
+mediated by the person's beliefs about whether the items had been over- 
+learned; i.e., the person's memory of prior overlearning (presumably 
+taken together with rules of inference) mediates the effect of prior over- 
+learning on FOK judgments. This is quite different from a direct or "auto- 
+matic" effect of overlearning, in which the effect on a particular depen- 
+dent variable occurs regardless of whether or not the person remembers 
+that one item had occurred more frequently than another item during 
+study. 
+However, this pattern of FOK judgments is not entirely reflecting the 
+recognition that the person was attempting to predict, as shown in Table 
+111. In particular, the percentage correct recognition was affected approx- 
+imately equally by both the claimed frequency (probably due to other 
+differences in the items-the row headings are labels for the subjects' 
+aggregations, not for an independent variable) and the actual frequency. 
+
+PAGE 34
+158 Thomas 0. Nelson and Louis Narens 
+This greater effect on the FOK by the claimed frequency than by the 
+actual frequency can also be seen in another way. We correlated (across 
+items for each subject) the FOK with three other variables: (1) claimed 
+frequency of previous recalls, (2) actual frequency of previous recalls, 
+and (3) recognition performance. The mean correlations were, respec- 
+tively, + .40, + .23, and + .16. Although all three correlations are signif- 
+icantly greater than zero, FOK is more related to the claimed frequency 
+of previous recall than to the actual frequency of previous recall; more- 
+over, FOK is more related to the claimed frequency of previous recall 
+than to the recognition that the FOK is attempting to predict. 
+These results suggest a new hypothesis-which we dub the No-Magic 
+Hypothesis-for how FOK judgments should be conceptualized, namely, 
+the person (1) considers particular recallable properties of the to-be-re- 
+trieved item (e.g., "I recalled it fewlmany times on previous occasions"), 
+in conjunction with (2) rules about how those properties are related to the 
+subsequent criterion performance that the person is trying to predict 
+(e.g., "subsequent recognition is more likely for an item that I previously 
+recalled many times than for an item that 1 previously recalled few 
+times"). Notice that this way of making FOK judgments would utilize 
+only suprathreshold information about remembered attributes of the item 
+(including incorrectly remembered suprathreshold information!), along 
+with rules for how to utilize that information in the FOK judgments. 
+Thus, according to the No-Magic Hypothesis, the FOK does not reflect 
+any monitoring of unconscious information at all. Put another way, the 
+FOK does not directly monitor a given unrecalled item in memory, but 
+rather the FOK monitors recallable aspects related to that item, such as 
+the item's acquisition history or partiallrelated recalled components. 
+5. Learning-to-Learn Effects for FOK Judgments 
+Can FOK accuracy be improved by sheer practice? This question was 
+explored in two experiments by T. 0. Nelson, R. J. Leonesio, and L. 
+Narens (unpublished) that were modifications of the standard FACTRE- 
+TRlEVAL computer program. In Experiment 1, each subject attempted 
+to recall answers to general-information questions until 45 questions had 
+been missed. Then the subject went through three blocks of 15 nonre- 
+called items per block. For the first block, the subject made FOK judg- 
+ments and then received a 7-AFC recognition test on each of the I5 items, 
+followed by the same sequence for the second block and then for the third 
+block. After each block, 58 subjects received feedback (seeing a table of 
+their FOK judgments and their recognition performance on every item), 
+and another 58 subjects received no feedback. 
+
+PAGE 35
+Metamemory Framework 
+1st 2nd 3rd . 1st 2nd 3rd . 1st 2nd 3rd 4th 
+Feedback (Exp.1) No Feedback (Exp. 1) No Feedback (Exp. 2) 
+Block of Wials for Each Group 
+Fig. 9. Feeling-of-knowing accuracy (in terms of mean G) on each block of trials for 
+each group (Feedback or No Feedback) in two experiments. 
+The resulting FOK accuracy is shown in the left and middle portions 
+of Fig. 9. There was no significant change in the feedback group and there 
+was not even a trend of uniformly increasing FOK accuracy (left side of 
+Fig. 9). However, in the no-feedback group a small but significant in- 
+crease in FOK accuracy occurred from Block 1 to Block 3, t(57) = 2.69 
+(middle portion of Fig. 9). 
+In an attempt to replicate and extend this finding that by sheer practice 
+without feedback, people can learn to make FOK judgments more accu- 
+rately, data were examined in Experiment 2, where only the no-feedback 
+condition was run. Following recall on general-information questions so 
+as to isolate 40 nonrecalled items, each of 36 subjects went through four 
+blocks of 10 items per block. During each block, the subject made FOK 
+judgments, followed by a CAFC recognition test on each item, and no 
+feedback was given between blocks. 
+The resulting FOK accuracy, shown in the right side of Fig. 9, was not 
+significantly different across the four blocks and the pattern was not even 
+in accord with the hypothesis of uniformly increasing FOK accuracy 
+across blocks. Thus we conclude that there is no systematic change in 
+FOK accuracy across blocks of items, and the effect of learning to learn 
+
+PAGE 36
+160 Thomas 0. Nelson and Louis Narens 
+by sheer practice on FOK judgments is small if it occurs at all (i.e., negli- 
+gible). 
+Looked at differently, the FOK accuracy of sizeable groups of people 
+appears to be fairly stable across blocks of FOK judgments and does not 
+change in any systematic way. This stability of a group's FOK accuracy 
+can be a methodological advantage because it allows the use of within- 
+subject designs to assess the effect of a given independent variable on 
+FOK accuracy. At the same time, however, researchers should be aware 
+that an individual subject's scores of FOK accuracy vary widely for all 
+known FOK procedures and items (Nelson, 1988), such that (by present- 
+day methodology) individual differences in FOK accuracy are unstable. 
+An important challenge for future research is to discover ways of achiev- 
+ing stable individual scores of FOK accuracy, for use both in theoretical- 
+memory research (e.g., so that such scores can be correlated meaning- 
+fully with other individual differences) and in applied settings (e.g., diag- 
+nostic classification of a newly admitted hospital patient or a poorly per- 
+forming student). For instance, perhaps a standardized set of items can 
+be found that yields stable performance (as in an optometrist's eye test) 
+or perhaps a very large number of items would have to be examined for 
+each individual (as in traditional psychophysics experiments). Whether 
+or not these conclusions about stable FOK accuracy for groups of sub- 
+jects, in conjunction with unstable individual differences in FOK accu- 
+racy, extend to other kinds of metamemory judgments (e.g., JOL) is an 
+open question. 
+6. Relation between Metacognitive Monitoring and Metacognitive 
+Control during Acquisition: The Allocation of Self-Paced Study Time 
+In the theoretical framework above, Fig. 4 shows some interactions 
+during acquisition between metacognitive monitoring processes and met- 
+acognitive control processes. We have conducted several experiments 
+pertaining to that topic. 
+Nelson and Leonesio (1988) found that the allocation of study time is 
+not simply a direct effect of item difficulty but rather is mediated by the 
+person's EOL and FOK judgments about item difficulty (similar to the 
+person's memory of overlearning being a mediator between the actual 
+amount of overlearning and subsequent FOK, as described earlier). Thus 
+the person's metacognitive monitoring may mediate much of the effect of 
+a given independent variable on the person's control of cognitive process- 
+ing. This illustrates one way in which we can sometimes improve our 
+predictions about how people will control their own cognitive processing 
+if we obtain metacognitive monitoring judgments (which comprise part of 
+
+PAGE 37
+Metamemory Framework 161 
+the input people use when they adjust the parameters of their control 
+processes). However, we also want to know the conditions under which 
+people's metacognitive monitoring is to some degree irrelevant to their 
+control processes during acquisition. A few specific examples will help 
+to illustrate. 
+In Nelson and Leonesio's Experiment 1, the mean correlation between 
+EOL and study time was - .3 (i.e., items believed to be harder were allo- 
+cated more self-paced study time). However, there was incomplete com- 
+pensation for differences in item difficulty during self-paced study. That 
+is, the mean correlation between EOL and recall after self-paced study 
+was not zero (which would have indicated that the extra study time allo- 
+cated to the items believed to be harder had completely compensated for 
+the differences in item difficulty), but rather was a hefty G = + .48. Thus. 
+items perceived as easier were more likely (than items perceived as 
+harder) to be recalled, even after self-paced study in which some extra 
+study time had been allocated to the items perceived as harder. In Experi- 
+ments 2 and 3. Nelson and Leonesio (1988) found that this incomplete 
+compensation also occurs for FOK judgments and the subsequent self- 
+paced allocation of study time, and the absolute magnitude of the correla- 
+tion between FOK and self-paced study time was not very large. 
+Therefore, in a follow-up study (T. 0. Nelson & R. J. Leonesio, unpub- 
+lished), we decided that the computer rather than the person would con- 
+trol the study time per item (cf. Groen & Atkinson, 1966), but the com- 
+puter would base the distribution of study times on the person's FOK 
+judgments. Four different ways of allocating various study times were 
+examined. All four groups (n = 52 Sslgroup) made FOK judgments on 
+nonrecalled general-information items (as in Nelson & Leonesio, 1988, 
+Experiment 3), after which the groups received different distributions of 
+study time per nonrecalled item (but the same total study time for the 
+entire set of nonrecalled items): (1) The constant-time group had 4.3 sec 
+of study on every item; (2) the random-assignment-of-different-times 
+group had a random assignment of 8 vs. .5 sec per item, regardless of 
+FOK4; (3) the More-Time-To-Low-FOK group had 8 sec per item on the 
+50% of the items with the lowest FOK and .5 sec per item on the 50% 
+with the highest FOK; and (4) the more-to-high-FOK group had 8 sec per 
+item on the 50% with the highest FOK and .5 sec per item on the 50% 
+'A prerequisite for interpreting the results was that the difference in study time was sub- 
+stantial enough to produce differences in subsequent recall, and this prerequisite was con- 
+firmed when the mean correlation between the amount of study time and subsequent recall 
+in the random-assignment-of-study-time group was significantly greater than zero (G = 
++ .39). 
+
+PAGE 38
+162 Thomas 0. Nelson and Louis Narens 
+with the lowest FOK. Subsequently, the mean percentage correct recall 
+for each of the four groups was 63.9, 64.5, 64.4, and 56.7, respectively. 
+The more-time-to-high-FOK group did significantly worse than the other 
+three groups, which did not differ significantly. These results demonstrate 
+that allocating extra study time to items that people believe they already 
+know (but currently cannot recall) is an inefficient allocation of extra 
+study time, but the surprising finding is that allocating extra study time 
+to items which people believe they don't already know was no better than 
+allocating the same amount of time to all items and wasn't even better 
+than allocating different amounts of study time randomly! Perhaps with a 
+wider range in the allocation of study time per item (e.g., as would be 
+shown by a higher value-ideally, near + I .&of the correlation in foot- 
+note 4) there would be a greater effect of allocating extra study time to 
+items which are believed to be more difficult. Or perhaps the correlation 
+between EOLIFOK and actual item difficulty is too low (i.e., perhaps 
+inaccurate monitoring of item difficulty is giving misleading information 
+for the control of the allocation of study time). 
+7. Relation between Metacognitive Monitoring and Metacognitive 
+Control during Retrieval: Termination of Memory Searching 
+In the theoretical framework, interactions between metacognitive mon- 
+itoring processes and metacognitive control processes also occur during 
+retrieval, and we have recently begun several lines of research on this 
+topic. 
+a. Role of "Preliminary FOK Judgments" Prior to Searching for an 
+Answer. The first construct in the hypothesized retrieval process (see 
+Fig. 5) is a Preliminary FOK Judgment in which the person decides 
+whether to terminate the retrieval stage or to proceed with a search of 
+memory for the to-be-retrieved item. Empirical confirmation of this hypo- 
+thetical construct requires that the latency of such FOK judgments be 
+shorter than the latency of correct recall for the requested item. Previous 
+research by Reder (1987, 1988) had confirmed this speculation by asking 
+people either to make binary (i.e., doldon't know) FOK judgments or to 
+retrieve the sought-after answer, and she found that the FOK latencies 
+were indeed shorter than the latencies for retrieving the correct answer. 
+We utilized Reder's finding to explore a related question, namely, 
+should we conceptualize the Preliminary FOK as consisting of a single 
+FOK component that taps only the presence of information in memory 
+(which we refer to as the single-counter FOK hypothesis) or should the 
+conceptualization be in terms of two FOK components, one of which taps 
+the presence of information in memory and the other of which taps the 
+
+PAGE 39
+Metamemory Framework 163 
+absence of such information (which we refer to as the drral-counter FOK 
+hypothesis)? That is, for the single-counter FOK hypothesis, imagine that 
+there is one counter which is incremented as information comes into the 
+metacognitive system to indicate the presence of the item in memory 
+(e.g., memories of having recalled the item during a recent acquisition 
+session, etc.), and assume that when the amount of accumulating infor- 
+mation exceeds a threshold, the FOK response of "will recognize" oc- 
+curs. Then the only way that a "won't recognize" FOK judgment would 
+occur is by default (i.e., time passes without enough information accumu- 
+lating to indicate that the item is present in memory and eventually the 
+person responds with "won't recognize"). 
+By contrast, for the dual-counter FOK hypothesis, imagine that one 
+counter-the Affirmative-FOK counter-keeps track of accumulating af- 
+firmative information that the item is stored in memory, while another 
+counter-the Negative-FOK counter-keeps track of accumulating nega- 
+tive information that the item is not stored in memory. Thus the "won't 
+recognize" judgment does not occur by default but rather occurs by an 
+accumulation of information directly supporting that judgment. Although 
+the threshold mechanism for the dual-counter FOK hypothesis is unspeci- 
+fied, one possibility is that a difference threshold must be exceeded (i.e., 
+the absolute magnitude of the difference between the value of the Affir- 
+mative-FOK counter minus the value of the Negative-FOK counter must 
+exceed a threshold; then if the difference is positive, the "will recognize" 
+response occurs, whereas if the difference is negative, the "won't recog- 
+nize" response occurs, and if the value does not yet exceed the threshold, 
+then the search for more positivelnegative information continues). 
+We (T. Schreiber, T. 0. Nelson, & L. Narens, unpublished) tested the 
+single-counter vs. dual-counter hypotheses by having each person (n = 
+10) say aloud as quickly as possible an FOK judgment from a 6-place 
+Likert scale (I = "completely certain I would not even recognize the 
+correct answer") upon presentation of each of 239 general-information 
+questions from the FACTRETRIEVAL program. The single-counter hy- 
+pothesis predicts that the latencies of making FOK judgments should be 
+an inverse monotonic function of the FOK judgment; e.g., a judgment of 
+FOK = 6 should have the shortest latency, and a judgment of FOK = I 
+(the default judgment if no threshold for accumulating affirmative infor- 
+mation is eventually exceeded) should have the longest latency. By con- 
+trast, the dual-counter hypothesis predicts that the latencies of making 
+FOK judgments should be a nonmonotonic function of the FOK judg- 
+ments; i.e., judgments of FOK = 6 and FOK = I should have the short- 
+est latencies, with the FOK judgments nearer the center of the FOK rat- 
+ing scale having the longest latencies. 
+
+PAGE 40
+Thomas 0. Nelson and Louis Narens 
+FOK rating 
+Fig. 10. Median of individual-subjects' median latency of FOK ratings is shown for 
+each FOK rating. 
+Figure 10 shows the results, in terms of medians of individual-subject 
+median latencies for each FOK rating category.' A nonmonotonic pattern 
+is obvious in Fig. 10, which confirms the dual-counter hypothesis that 
+there is both an Affirmative FOK to tap the presence of information in 
+memory and a Negative FOK (cf. "knowing not" in Kolers & Palef, 1976) 
+to tap the absence of information in memory and to allow for quick terrni- 
+nation of retrieval when an answer is not known (as in the right branch 
+of Fig. 5). 
+'After a given subject finished making a Preliminary FOK judgment on the 239th item, a 
+recall test occurred on every item to assess the recall latencies. At every FOK rating, the 
+latency of correct recall was longer than the corresponding latency of FOK judgment (the 
+median of individual-subject median latencies of correct recall ranged from a low of 2.9 sec 
+for FOK = 6 to a high oC5.6 sec for FOK = I). replicating and extending the findings from 
+Reder (1987). 
+
+PAGE 41
+Metamemory Framework 165 
+This section focused on how a rapid Preliminary FOK judgment can af- 
+fect the latency of the termination of retrieval. Next we consider how the 
+ongoing FOK (see the center of Fig. 5) might affect the latency of retrieval 
+termination for longer-latency omission errors6 (right branch of Fig. 5). 
+b. Relation between Ongoing FOK and the Latency of Recall Er- 
+rors. Our previous research had shown that the correlation between 
+FOK and the latency of omission errors is substantial (Nelson et al., 1984) 
+and this was replicated by Nelson et al. (1990), where that correlation 
+was G = + .60. This is in accord with the center and right branches of 
+Fig. 5, in which the person's FOK affects whether the overall retrieval 
+stage will be continued or terminated, namely, people terminate the re- 
+trieval stage more quickly on items for which they have a low FOK. 
+Given this substantial correlation, if FOK accuracy could somehow be 
+improved, so might efficiency improve for terminating retrieval (i.e.. peo- 
+ple might be more likely to continue to search for items that are known 
+and be more likely to terminate the retrieval stage for items that are not 
+known). In accord with this idea, neuropsychological patients such as 
+Korsakoffs have poor FOK accuracy (Shimamura & Squire, 1986) and 
+they also tend to terminate prematurely when searching memory and 
+therefore have poor recall performance (Hirst, 1982, p. 454). 
+Contrary to the aforementioned substantial correlation between FOK 
+and the latency of omission errors, the correlation between FOK and the 
+latency of commission errors is nil for general-information items (Nelson 
+et al., 1984; also replicated by Nelson et al., 1990, where that correlation 
+was + .03) or even slightly negative for laboratory paired associates (Nel- 
+son et al., 1982). Thus only a negligible correlation occurs between FOK 
+judgments and the amount of time that the person searches before output- 
+ing a commission error. Such a conclusion is not in conflict with the con- 
+clusion about the relation between FOK and omission errors because the 
+mechanisms are presumably different for omission errors (right branch of 
+Fig. 5) vs. commission errors (left branch of Fig. 5). The latter involves 
+other metacognitive judgments besides FOK, and we consider those 
+other metacognitive judgments next. 
+c. Relation between Metacognitive Confidence Judgments and the 
+Latency of Recall. Nelson et al. (1990) asked people to make retrospec- 
+6For most retrieval situations, the latency of omission errors is substantially longer than 
+the latency of correct responses (e.g.. in Nelson, et a/., 1984. the average correct-response 
+latencies ranged from 9.8 to 15.2 sec across three groups of subjects, whereas the average 
+omission-error latencies ranged from 20.5 to 25.1 sec. In Nelson et a/., 1990. where the 
+responses were spoken rather than typed into a computer, the average correct-response 
+latency was 2.9 sec, whereas the average omission-error latency was 9.9 sec.). 
+
+PAGE 42
+166 Thomas 0. Nelson and Louis Narens 
+tive confidence judgments about the accuracy of their previous recall re- 
+sponse immediately after outputing that response. In contrasl to the 
+aforementioned nil relation between FOK and the latency of commission 
+errors (G = + .03), the correlation between retrospective confidence 
+judgments and the latency of commission errors was substantial (G = 
+- .40). The direction of this correlation indicates that people have greater 
+confidence for items that they retrieve quickly. This different pattern for 
+FOK vs. confidence judgments (when computed on the identical set of 
+commission-error latencies) confirms the idea that different metacogni- 
+tive judgments tap different aspects of memory (additional evidence is 
+reported in Leonesio & Nelson, 1990) and is in accord with the left branch 
+of Fig. 5, where the final component that affects the output of commis- 
+sion-error responses is the person's confidence. Also in accord with that 
+idea, the correlation between retrospective confidence judgments and the 
+latency of correct recall is substantial (G = - .55) (Nelson et al., 1990). 
+Thus people have greater confidence for answers that they retrieve 
+quickly, regardless of whether those answers are wrong (i.e., commission 
+errors) or correct. 
+Given the aforementioned facts that (1) confidence judgments are cor- 
+related with the latency of recall, regardless of whether that recall is cor- 
+rect or a commission error (Nelson et al., 1990), and (2) latencies tend to 
+be longer for commission errors than for correct recall (Nelson et al., 
+1984; replicated in Reder, 1987, and in Nelson et al., 1990) the following 
+question arises: Is anything other than the latency of recall responsible 
+for retrospective confidence being greater for correctly recalled items 
+than for commission errors? That is, perhaps the only reason that confi- 
+dence is greater for correctly recalled answers than for commission errors 
+is because the former are recalled faster than the latter, with confidence 
+being based entirely on recall latency. 
+A test of this Confidence-Determined-Entirely-by-Latency Hypothesis 
+occurred in an experiment by T. 0. Nelson and M. Calogero (unpub- 
+lished) in which people wen1 through the recall phase of FACTRETRIE- 
+VAL2 on 106 general-information questions and made retrospective con- 
+fidence judgments immediately after outputing each answer. For data 
+analysis, the items were categorized into correct recalls and commission 
+errors (omission errors are irrelevant because retrospective confidence 
+judgments did not occur after omission errors). For each subject, the 
+items in each of those two categories were Vincentized into six blocks 
+(i.e., the first block consisted of the one-sixth of the items that had the 
+shortest recall latencies, and so on to the sixth block, consisting of the 
+one-sixth of the items for which that subject had the longest recall latenc- 
+ies), and the median response latency of the items within each block was 
+
+PAGE 43
+Metamemory Framework 
+Latency of Recall (sec) 
+Fig. 11. Confidence in recall for each category of recalled answer (correct recall or 
+commission error) at each Vincentized block of one-sixth of the items ordered in terms of 
+the latency of recall. The value on the abscissa corresponds to the mean of the individual 
+subjects' median latencies. and the value on the ordinate corresponds to the mean of the 
+individual subjects' median confidence for that sixth of the items. 
+determined. Then the median confidence judgment was determined for 
+the items in each of those six blocks. Finally, the means (across subjects) 
+of those individual-subject median latencies and median confidence judg- 
+ments were plotted in bivariate form, separately for the categories of cor- 
+rect recall vs. commission error (see Fig. 11). 
+Several conclusions can be drawn from Fig. 11. First, as expected from 
+the correlations mentioned earlier, retrospective confidence tends to de- 
+crease as the latency of recall increases, both for correct recalls and for 
+commission errors. Second and alternatively, the greater the confidence, 
+the shorter the recall latency tends to be (cf. left branch of Fig. 5). Third 
+and most important for the Confidence-Determined-Entirely-by-Latency 
+Hypothesis, the two curves clearly do not lie one atop the other (espe- 
+
+PAGE 44
+168 Thomas 0. Nelson and Louis Narens 
+cially notice the portions of the curves for latencies in the range from 10 
+to 22 sec), whereas one curve atop the other should have occurred if the 
+latency of recall had been the sole determiner of confidence. Thus, some- 
+thing in addition to the latency of recall is affecting the person's confi- 
+dence and is producing greater confidence for correct recall than for com- 
+mission errors. We do not yet know what that something is, but future 
+research should attempt to isolate and identify it. 
+IV. Applications of Our Methodology to Other Areas 
+Our methodology, including versions of the FACTRETRIEVAL para- 
+digm, has been used in many other laboratories to investigate both the 
+domain of traditional memory research and related areas. We and our 
+past and present co-workers have also applied this methodology to the 
+following areas. Developmental psychology: Butterfield, Nelson, and 
+Peck (1988) examined changes in metamemory across the life span from 
+6 to 70 years old. Neuropsychology: Shimamura and Squire (1986, 1988) 
+examined metamemory in neuropsychological populations such as Korsa- 
+koff patients and chronic alcoholics, and Janowsky, Shimamura, and 
+Squire (1989) examined metamemory in frontal-lobe patients. Special 
+education: S. Krinsky (1988) examined metamemory in the deaf. Prob- 
+lem solving: Metcalfe (1986) examined metacognitions for solving prob- 
+lems, and Metcalfe and Wiebe (1987) discovered dynamic changes in 
+metacognitions during problem solving. Psychopharmacology: Nelson, 
+McSpadden et al. (1986) examined the effects of acute alcohol in- 
+toxication on metamemory. Naturalistic settings: Nelson et al. (1990) 
+examined the way that metamemory is affected by extreme altitude at 
+Mount Everest.' 
+V. Concluding Remarks 
+As mentioned earlier, our research in metamemory was initiated by the 
+"paradoxical" findings that people can accurately predict their subse- 
+quent likelihood of recognizing nonrecallable items and that they can 
+quickly and accurately decide-on the basis of no more than a cursory 
+search through memory-that they will not retrieve particular sought- 
+'The pattern of results obtained at extreme altitude was in several ways the opposite of 
+the pattern obtained from the alcohol-intoxicated people described in Nelson, McSpadden 
+el a/. (1986). 
+
+PAGE 45
+Metamemory Framework 
+after items. Those findings led us to develop a methodology based on 
+psychophysical methods that we used to empirically investigate people's 
+"feeling of knowing." The results of our experiments convinced us that 
+we were dealing with only a part of a complex metacognitive system and 
+that to account adequately for feeling-of-knowing phenomena, a larger 
+perspective was needed. This eventuated in the present theoretical frame- 
+work that emphasizes the role of control and monitoring processes. 
+The embedding of the feeling of knowing in a richer framework helped 
+to dissipate the paradoxical nature of the feeling of knowing. Moreover, 
+in terms of our theoretical framework, an immediate goal of metamemory 
+research is to explain the accuracy of metacognitive judgments in terms 
+of remembered information, that is, to give a "No-Magic" explanation, 
+like the one described above. 
+When we began 15 years ago, there were relatively few metamemory 
+researchers and a paucity of solid empirical results about metamemory. 
+We are pleased that today there are many capable, active investigators 
+and a wealth of solid empirical findings. For our own work, we see the 
+next big challenge to be the development of specific theories that will 
+explicate the role of control and monitoring processes in human memory. 
+Without the continuous support of NIMH during the past 10 years, the research reported 
+here would not have occurred. Preparation of this article was supported by NIMH grant 
+MH32205. We thank Harry Bahrick for helpful comments on an earlier draft. 
+Atkinson, R. C.. & Shiffrin, R. M. (1968). Human memory: A proposed system and its 
+control processes. In K. W. Spence & J. T. Spence (Eds.), The psychology oflearning 
+and motivation (Vol. 2). New York: Academic Press. 
+Bahrick, H. P. (1970). Two-phase model for prompted recall. Psychologicul Review. 77, 
+2 15-222. 
+Bahrick, H. P., & Hall, L. K. (in press). Preventive and corrective maintenance of access 
+to knowledge. Applied Cognitive Psychology. 
+Bower, G. H. (1967). A multicomponent theory of memory trace. In K. W. Spence (Ed.), 
+The Psychology of Learning. New York: Academic Press. 
+Butterfield, E. C., & Belmont, J. M. (1971). Relations of storage and retrieval strategies as 
+short-term memory processes. Journal of Experin~ental Psychology, 89, 319-328. 
+Butterfield, E. C., Belmont, J. M., & Peltzman, D. J. (1971). Effects of recall requirement 
+on acquisition strategy. Journal of Experiment01 Psychology, 90, 347-348. 
+
+PAGE 46
+170 Thomas 0. Nelson and Louis Narens 
+Butterfield, E. C., Nelson, T. O., & Peck, G. (1988). Developmental aspects of the feeling 
+of knowing. Developmet~tal Psychology. 24, 654463. 
+Carnap, R. (1934). Logische syntax der sprache. Vienna: Springer. 
+Conant. R. C., & Ashby, W. R. (1970). Every good regulator of a system must be a model 
+of that system. Internatiotl~l Journal of Systems Science, 1, 89-97. 
+Coombs, C. (1964). A theory ofdatu. New York: Wiley. 
+Ericsson, K. A,, & Simon, H. A. (1980). Verbal reports as data. Psychological Review, 87, 
+21 5-25 1. 
+Ericsson, K. A,, & Simon, H. A. (1984). Protocol analysis: Verbal reports us data. Cam- 
+bridge, MA: MIT Press. 
+Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive- 
+developmental inquiry. American Psychologist, 34, 90691 1. 
+Groen, G., & Atkinson, R. C. (1966). Models for optimizing the learning process. Psycho- 
+logical Bulletin. 66, 309-320. 
+Hart, J. T. (1965). Memory and the feeling-of-knowing experience. Journal of Educationul 
+Psychology. 56, 208-216. 
+Hart, J. T. (1967). Memory and the memory-monitoring process. Journcll of Verbal Leurning 
+and Verbal Behavior, 6, 685-691. 
+Hilbert. D. (1927). Uber das Unendliche.'Jnhresbericht der Deutschett Math~matiker-Verei- 
+nigung, 36 201-215. I 
+Hirst, W. (1982). The amnesic syndrome: Descriptions and explanations. Psychological Blil- 
+letin, 91, 435-460. 
+Hooker, W., & Jones, R. (1987). Increased susceptibility to memory intrusions and the 
+Stroop interference effect during acute marijuana intoxication. Psychoplrarmucology, 
+91, 20-24. 
+Jameson, K. A., Narens, L.. Goldfarb, K., & Nelson, T. 0. (1990). The influence of sub- 
+threshold priming on metamemory and recall. Acta Psycltologica. 73, 55-68. 
+Janowsky, J. S., Shimamura, A. P., & Squire, L. R. (1989). Memory and metamemory: 
+Comparisons between patients with frontal lobe lesions and amnesic patients. Psycho- 
+biology. 17, 3-1 1. 
+Juola. J. F., Fischler, I., Wood, C. T., & Atkinson. R. C. (1971). Recognition time for 
+information stored in long-term memory. Perception & Psychophysics, 10, 8-14. 
+Kolers, P. A,, & Palef, S. R. (1976). Knowing not. Memory & Cognition, 4, 553-558. 
+Krinsky, R., & Nelson. T. 0. (1985). The feeling of knowing for different types of retrieval 
+failure. Actu Psychologica, 58, 141-158. 
+Krinsky, S. (1988). The feeling of knowing in deaf ado1escent.s: A metatnemoriul study. 
+Doctoral dissertation. University of Washington, Seattle. 
+Lam, T. (1987). An empirical investigation ofextrat~eous.factors and data collection proce- 
+dures in the measurement oftire feeling-of-kttowing. Doctoral dissertation, University 
+of Washington, Seattle. 
+Le Ny. J. F., Denhiere, G.. & Le Taillanter, D. (1972). Regulation of study-time and in- 
+terstimulus similarity in self-paced learning conditions. Actu Psychologicu. 36, 280- 
+289. 
+Leonesio, R. J. (1985). Three measures ofntetamemory: Before you know, afier you know, 
+and after you don't know but feel you do. Master's thesis, University of Washington. 
+Seattle. 
+Leonesio. R. J., & Nelson, T. 0. (1982). Postcriterion overlearning reduces the effective- 
+ness of the method of adjusted learning. Behavior Research Methods und Instrumenta- 
+tion. 14, 320-322. 
+Leonesio, R. J., & Nelson, T. 0. (1990). Do different metamemory judgments tap the same 
+
+PAGE 47
+Metamemory Framework 
+underlying aspects of memory? Journal ofExperimenta1 Psychology: Learning. Mem- 
+ory, and Cognition. 
+Lichtenstein, S.. & Fischhoff, 9. (1977). Do those who know more also know more about 
+how much they know? Organizational Behavior and Human Performance. 20, 159- 
+183. 
+Lichtenstein, S.. Fischhoff, B., & Phillips, L. D. (1982). Calibration of probabilities: The 
+state of the art to 1980. In D. Kahneman, P. Slovic. & A. Tversky (Eds.), Judgmenr 
+under uncertainty: Herrristics and biases (pp. 306-334). New York: Cambridge Univer- 
+sity Press. 
+Lockhart, R. S., & Murdock, 9. B. (1970). Memory and the theory of signal detection. 
+Psychologiccrl Bulletin, 74, 100-109. 
+Loftus, G. R., & Wickens, T. D. (1970). Effect of incentive on storage and retrieval pro- 
+cesses. Jorrrnul of Experimenral Psychology, 85, 141-147. 
+Maki. R. H., & Berry, S. L. (1984). Metacomprehension of text material. JournalofExperi- 
+mental Psychology: Learning, Memory, and cognition, 10, 663-679. 
+Marcel, A. (1983). Conscious and unconscious perception: Experiments on visual masking 
+and word recognition. Cognitive Psychology, 15, 197-237. 
+Mazzoni, G.. Cornoldi, C., & Marchitelli, G. (1990). Do memorability ratings affect study- 
+time allocation? Memory and cognition. 18, 196-204. 
+Metcalfe. J. (1986). Feeling of knowing in memory and problem solving. Journal qfExperi- 
+mental Psychology: Learning , Memory, and Cognition, 12, 288-294. 
+Metcalfe, J., & Wiebe, D. (1987). Intuition in insight and noninsight problem solving. Mem- 
+ory & Cognirion. 15, 238-246. 
+Modigliani, V., & Hedges. D. G. (1987). Distributed rehearsals and the primacy effect in 
+single-trial free recall. Journal of Experimental Psychology: Lecrrning. Memory, and 
+Cognition, 13, 426436. 
+Nelson. T. 0. (1978). Detecting small amounts of information in memory: Savings for non- 
+recognized items. Jorrrnal ofExperimenta1 Psychology: Human Learning and Memory, 
+4, 453468. 
+Nelson, T. 0. (1984). A comparison of current measures of the accuracy of feeling-of-know- 
+ing predictions. Psychologicc~l Bltlletin, 95, 109-133. 
+Nelson, T. 0. ( 1986). BASIC programs for computation of Goodman-Kruskal gamma coeffi- 
+cient. Bulletin qf the Psychonomic Society, 24, 28 1-283. 
+Nelson, T. 0. (1987). The Goodman-Kruskal gamma coefficient as an alternative to signal- 
+detection theory's measures of absolute-judgment accuracy. In E. Roskam & R. Suck 
+(Eds.). Progress in mathemuticulpsycl~ology,Vol. I, pp. 299-306 Amsterdam: Elsevierl 
+North-Holland. 
+Nelson. T. 0. (1988). Predictive accuracy of the feeling of knowing across different criterion 
+tasks and across different subject populations and individuals. In M. M. Gruneberg, P. 
+Morris, & R. N. Sykes (Eds.), Practical aspecrs of memory (Vol. 2). New York: Wiley. 
+Nelson, T. O., Dunlosky, J., White, D. M., Steinberg, J.. Townes, 9. D.. & Anderson. D. 
+(1990). Cognition and metacognirion ul extreme altitude on Mounr Everest. Manuscript 
+under review. 
+Nelson. T. O., Gerler. D.. & Narens. L. (1984). Accuracy of feeling-of-knowing judgments 
+for predicting perceptual identification and relearning. Journal of Experimenlul Psy- 
+chology: General, 113, 282-300. 
+Nelson, T. O., & Leonesio, R. J. (1988). Allocation of self-paced study time and the 'labor- 
+in-vain effect.' Journal of Experimental Psychology: Learning. Memory, and Cogni- 
+tion, 14, 47W86. 
+Nelson. T. 0.. Leonesio, R. J., Landwehr. R. S., & Narens. L. (1986). A comparison of 
+
+PAGE 48
+Thomas 0. Nelson and Louis Narens 
+three predictors of an individual's memory performance: The individual's feeling of 
+knowing versus the normative feeling of knowing versus base-rate item difficulty. Jour- 
+nal of Experimental Psychology: Learning, Memory, and Cognition, 12, 279-287. 
+Nelson, T. O., Leonesio. R. J., Shimamura, A. P., Landwehr, R. F., & Narens, L. (1982). 
+Overlearning and the feeling of knowing. Journal of Experimental Psychology: Learn- 
+ing, Memory, and Cognition, 8, 279-288. 
+Nelson, T. O., McSpadden, M., Fromme, K., & Marlatt, G. A. (1986). Effects of alcohol 
+intoxication on metamemory and on retrieval from long-term memory. Journal of Ex- 
+perimental Psychology: General, 115, 247-254. 
+Nelson, T. O., & Narens. L. (1980a). A new technique for investigating the feeling of know- 
+ing. Acta Psychologicu, 46,69-80. 
+Nelson, T. O., & Narens, L. (1980b). Norms of 300 general-information questions: Accu- 
+racy of recall, latency of recall, and feeling-of-knowing ratings. Journal of Verbal 
+Learning and Verbal Behavior, 19, 338-368. 
+Nickerson, R. S. (1980). Motivated retrieval from archival memory. In Nebraska Sympo- 
+sium on Motivation (pp. 73-1 19). 
+Nickerson. R. S.. Baddeley, A., & Freeman. B. (1987). Are people's estimates of what 
+other people know influenced by what they themselves know? Acta Psychologica, 64, 
+245-259. 
+Nisbett, R. E., & Wilson. T. D. (1977). Telling more than we can know: Verbal reports on 
+mental processes. Psychological Review, 84, 231-259. 
+Pfefferbaum, A,, Darley, C., Tinklenberg, J., Roth, W., & Kopell, B. (1 977). Marijuana and 
+memory intrusions. Journal of Nervous and Mental Disease, 165, 381-386. 
+Reder, L. M. (1987). Strategy selection in question answering. Cognitive Psychology, 19, 
+90-138. 
+Reder, L. M. (1988). Strategic control of retrieval strategies. In G. Bower (Ed.), The psy- 
+chology of learning and motivation (Vol. 22). San Diego, CA: Academic Press. 
+Richardson-Klavehn, A., & Bjork, R. A. (1988). Measures of memory. Annual Review of 
+Psychology, 39, 475-543. 
+Schacter, D. L., & Worling, J. R. (1985). Attribute information and the feeling-of-knowing. 
+Canadian Journal of Psychology, 39, 467-475. 
+Shafer, G. (1976). A mathematical theory of evidence. Princeton, NJ: Princeton University 
+Press. 
+Shepard, R. N. (1967). Recognition memory for words, sentences, and pictures. Journal of 
+Verbal Learning and Verbal Behavior, 6, 156-163. 
+Shimamura, A. P., Landwehr, R. F., & Nelson, T. 0. (1981). FACTRETRIEVAL: A pro- 
+gram for assessing someone's recall of general-information facts, feeling-of-knowing 
+judgments for nonrecalled facts, and recognition of nonrecalled facts. Behavior Re- 
+search Methods and Instrumentation. 13, 691-692. 
+Shimamura, A. P., & Squire, L. R. (1986). Memory and metamemory: A study of the feel- 
+ing-of-knowing phenomenon in amnesic patients. Journal of Experimental Psychology: 
+Learning, Memory, and Cognition, 12, 452-460. 
+Shimamura, A. P., & Squire, L. R. (1988). Long-term memory in amnesia: Cued recall, 
+recognition memory, and confidence ratings. Journal of Experimental Psychology: 
+Learning, Memory, and Cognition, 14, 763-771. 
+Simon, H. A. (1979). Models of thought. New Haven, CT: Yale University Press. 
+Snow, J. (1987). Design. Cambridge. MA: Meta Software. 
+Underwood, B. J. (1966). Individual and group predictions of item difficulty for free learn- 
+ing. Journal of Experimental Psychology, 71, 673479. 
+Vesonder, G. T., & Voss, J. F. (1985). On the ability to predict one's own responses while 
+learning. Journal of Memory and Language, 24, 363-376. 
+
+PAGE 49
+Metamemory Framework 173 
+Weingartner, H., Rudorfer, M. V., & Linnoila, M. (1985). Cognitive effects of lithium treat- 
+ment in normal volunteers. Psychopharmacology, 86, 472-474. 
+Wescourt, K. T.. & Atkinson. R. C. (1973). Scanning for information in long- and short- 
+term memory. Jorrrncrl qf Experimental Psvchology, 98, 95-101. 
+Wilkinson, T. S., & Nelson. T. 0. (1984). FACTRETRIEVALZ: A Pascal program for as- 
+sessing someone's recall of general-information facts. confidence about recall correct- 
+ness. feeling-of-knowing judgments for nonrecalled facts, and recognition of nonre- 
+called facts. Behavior Research Methods. Instruments and Computers, 16, 48W88. 

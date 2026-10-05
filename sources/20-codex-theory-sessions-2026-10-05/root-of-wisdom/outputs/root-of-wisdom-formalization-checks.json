@@ -1,0 +1,636 @@
+{
+  "title": "Exact checks and review for the practical root formalization",
+  "date": "2026-10-05",
+  "scope": "Self-contained mathematical checks under stipulated empirical and normative inputs. Not empirical validation of wisdom, novelty, or a complete theorem-prover formalization.",
+  "summary": {
+    "terminal_instances": 2560,
+    "instances_with_policy": 1289,
+    "instances_without_policy": 1271,
+    "bounded_query_instances": 80,
+    "all_terminal_and_query_checks_passed": true
+  },
+  "normative_counterexample": {
+    "burdens_a": [
+      0,
+      5
+    ],
+    "burdens_b": [
+      3,
+      3
+    ],
+    "sum_and_sum_of_squares_a": [
+      5,
+      25
+    ],
+    "sum_and_sum_of_squares_b": [
+      6,
+      18
+    ],
+    "opposite_rankings": true
+  },
+  "supporting_records": [
+    {
+      "file": "root-formalization-check.py",
+      "sha256": "8dacff24c5abbb3049d111ec66ee902436951801c91e5389f29f909a57d82279",
+      "content": "\"\"\"Exact finite checks of a scoped observation-based acceptability theorem.\n\nAcceptability and normative constraints are supplied inputs, not moral facts\nestablished by this script. Policies are deterministic and terminate in one action.\n\"\"\"\nfrom itertools import product\nfrom pathlib import Path\nimport json\n\n\ndef partitions(n):\n    # Canonical restricted-growth labels enumerate each set partition once.\n    result = []\n    def add(labels):\n        if len(labels) == n:\n            result.append(tuple(labels))\n            return\n        upper = 0 if not labels else max(labels) + 1\n        for label in range(upper + 1):\n            add(labels + [label])\n    add([])\n    return result\n\n\ndef policy_witness(acceptable, labels, actions):\n    # This enumeration does not use the intersection criterion.\n    nclasses = max(labels) + 1\n    for policy in product(actions, repeat=nclasses):\n        if all(policy[labels[world]] in acceptable[world] for world in range(len(labels))):\n            return policy\n    return None\n\n\ndef intersection_certificate(acceptable, labels):\n    classes = [tuple(i for i, label in enumerate(labels) if label == c)\n               for c in range(max(labels) + 1)]\n    intersections = []\n    for members in classes:\n        common = set(acceptable[members[0]])\n        for world in members[1:]:\n            common.intersection_update(acceptable[world])\n        intersections.append(common)\n    return all(intersections), intersections\n\n\nworlds = range(3)\nactions = tuple(range(3))\nworld_partitions = partitions(3)\nassert world_partitions == [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (0, 1, 2)]\ntested = positive = negative = enumerated_policy_candidates = 0\nby_partition = []\nfor labels in world_partitions:\n    successes = 0\n    for mask in range(1 << 9):\n        acceptable = [set(a for a in actions if mask & (1 << (3 * w + a))) for w in worlds]\n        witness = policy_witness(acceptable, labels, actions)\n        predicted, intersections = intersection_certificate(acceptable, labels)\n        actual = witness is not None\n        assert actual == predicted, (labels, mask, acceptable, witness, intersections)\n        if predicted:\n            # Independently verify the constructive witness chosen from intersections.\n            constructed = tuple(min(s) for s in intersections)\n            assert all(constructed[labels[w]] in acceptable[w] for w in worlds)\n        else:\n            assert any(not s for s in intersections)\n        tested += 1\n        positive += actual\n        negative += not actual\n        successes += actual\n        enumerated_policy_candidates += len(actions) ** (max(labels) + 1)\n    by_partition.append({'labels': labels, 'matrices_checked': 512, 'policy_exists': successes})\nassert tested == 2560\n\n\ndef query_plan_exists(acceptable, budget, deadline, query_labels=(0, 1),\n                      query_cost=1, query_duration=1, query_permission=True):\n    \"\"\"Declared two-stage policy class: act directly, or query once then act.\n\n    Every terminal action costs one unit and takes one time step. The initial\n    observation is the same in both worlds. No implicit free query is admitted.\n    \"\"\"\n    if budget >= 1 and deadline >= 1:\n        if policy_witness(acceptable, (0, 0), (0, 1)) is not None:\n            return True\n    if query_permission and budget >= query_cost + 1 and deadline >= query_duration + 1:\n        if policy_witness(acceptable, query_labels, (0, 1)) is not None:\n            return True\n    return False\n\n\nquery_records = []\nunique = [{0}, {1}]\ncommon = [{0}, {0}]\nfor budget, deadline in product(range(4), repeat=2):\n    specifications = [\n        ('distinct_required_actions', unique, {}, budget >= 2 and deadline >= 2),\n        ('common_action', common, {}, budget >= 1 and deadline >= 1),\n        ('query_permission_absent', unique, {'query_permission': False}, False),\n        ('query_is_uninformative', unique, {'query_labels': (0, 0)}, False),\n        ('slower_query', unique, {'query_duration': 2}, budget >= 2 and deadline >= 3),\n    ]\n    for name, acceptable, settings, expected in specifications:\n        actual = query_plan_exists(acceptable, budget, deadline, **settings)\n        assert actual == expected, (name, budget, deadline, actual, expected)\n        query_records.append({'case': name, 'budget': budget, 'deadline': deadline, 'policy_exists': actual})\nassert len(query_records) == 80\n\nresult = {\n    'status': 'all exact checks passed',\n    'scope': 'finite deterministic one-step policies and an explicitly bounded one-query extension',\n    'normative_status': 'acceptable sets are stipulated; these checks do not justify the standards or prove wisdom',\n    'terminal_theorem': {\n        'worlds': 3,\n        'actions': 3,\n        'acceptability_matrices': 512,\n        'observation_partitions': 5,\n        'instances_checked': tested,\n        'instances_with_policy': positive,\n        'instances_without_policy': negative,\n        'full_policy_space_sizes_summed': enumerated_policy_candidates,\n        'meaning_of_previous_field': 'sum of candidate policy class sizes; search may stop after finding a witness',\n        'by_partition': by_partition,\n    },\n    'query_extension': {\n        'instances_checked': len(query_records),\n        'terminal_action_cost': 1,\n        'terminal_action_duration': 1,\n        'normal_query_cost': 1,\n        'normal_query_duration': 1,\n        'records': query_records,\n    },\n}\nPath('work/root-formalization-check.json').write_text(json.dumps(result, indent=2) + '\\n')\nprint(json.dumps({\n    'status': result['status'],\n    'terminal_instances': tested,\n    'policy_exists': positive,\n    'no_policy': negative,\n    'query_extension_instances': len(query_records),\n    'by_partition': by_partition,\n}, indent=2))\n"
+    },
+    {
+      "file": "root-formalization-check.json",
+      "sha256": "7d37bc465302259bdbc4a58507e359463d3225662d984216cc8063c65df33a30",
+      "content": {
+        "status": "all exact checks passed",
+        "scope": "finite deterministic one-step policies and an explicitly bounded one-query extension",
+        "normative_status": "acceptable sets are stipulated; these checks do not justify the standards or prove wisdom",
+        "terminal_theorem": {
+          "worlds": 3,
+          "actions": 3,
+          "acceptability_matrices": 512,
+          "observation_partitions": 5,
+          "instances_checked": 2560,
+          "instances_with_policy": 1289,
+          "instances_without_policy": 1271,
+          "full_policy_space_sizes_summed": 29184,
+          "meaning_of_previous_field": "sum of candidate policy class sizes; search may stop after finding a witness",
+          "by_partition": [
+            {
+              "labels": [
+                0,
+                0,
+                0
+              ],
+              "matrices_checked": 512,
+              "policy_exists": 169
+            },
+            {
+              "labels": [
+                0,
+                0,
+                1
+              ],
+              "matrices_checked": 512,
+              "policy_exists": 259
+            },
+            {
+              "labels": [
+                0,
+                1,
+                0
+              ],
+              "matrices_checked": 512,
+              "policy_exists": 259
+            },
+            {
+              "labels": [
+                0,
+                1,
+                1
+              ],
+              "matrices_checked": 512,
+              "policy_exists": 259
+            },
+            {
+              "labels": [
+                0,
+                1,
+                2
+              ],
+              "matrices_checked": 512,
+              "policy_exists": 343
+            }
+          ]
+        },
+        "query_extension": {
+          "instances_checked": 80,
+          "terminal_action_cost": 1,
+          "terminal_action_duration": 1,
+          "normal_query_cost": 1,
+          "normal_query_duration": 1,
+          "records": [
+            {
+              "case": "distinct_required_actions",
+              "budget": 0,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 0,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 0,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 0,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 0,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 0,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 0,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 0,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 0,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 0,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 0,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 0,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 0,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 0,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 0,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 0,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 0,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 0,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 0,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 0,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 1,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 1,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 1,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 1,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 1,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 1,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 1,
+              "deadline": 1,
+              "policy_exists": true
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 1,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 1,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 1,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 1,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 1,
+              "deadline": 2,
+              "policy_exists": true
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 1,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 1,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 1,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 1,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 1,
+              "deadline": 3,
+              "policy_exists": true
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 1,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 1,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 1,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 2,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 2,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 2,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 2,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 2,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 2,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 2,
+              "deadline": 1,
+              "policy_exists": true
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 2,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 2,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 2,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 2,
+              "deadline": 2,
+              "policy_exists": true
+            },
+            {
+              "case": "common_action",
+              "budget": 2,
+              "deadline": 2,
+              "policy_exists": true
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 2,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 2,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 2,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 2,
+              "deadline": 3,
+              "policy_exists": true
+            },
+            {
+              "case": "common_action",
+              "budget": 2,
+              "deadline": 3,
+              "policy_exists": true
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 2,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 2,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 2,
+              "deadline": 3,
+              "policy_exists": true
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 3,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 3,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 3,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 3,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 3,
+              "deadline": 0,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 3,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "common_action",
+              "budget": 3,
+              "deadline": 1,
+              "policy_exists": true
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 3,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 3,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 3,
+              "deadline": 1,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 3,
+              "deadline": 2,
+              "policy_exists": true
+            },
+            {
+              "case": "common_action",
+              "budget": 3,
+              "deadline": 2,
+              "policy_exists": true
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 3,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 3,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 3,
+              "deadline": 2,
+              "policy_exists": false
+            },
+            {
+              "case": "distinct_required_actions",
+              "budget": 3,
+              "deadline": 3,
+              "policy_exists": true
+            },
+            {
+              "case": "common_action",
+              "budget": 3,
+              "deadline": 3,
+              "policy_exists": true
+            },
+            {
+              "case": "query_permission_absent",
+              "budget": 3,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "query_is_uninformative",
+              "budget": 3,
+              "deadline": 3,
+              "policy_exists": false
+            },
+            {
+              "case": "slower_query",
+              "budget": 3,
+              "deadline": 3,
+              "policy_exists": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "root-formalization-cases.md",
+      "sha256": "28b4b889aa6dea68e94b23523e92700027673f019be865797fc42110c9ad4d17",
+      "content": "# Exact witnesses for a practical-root formalization\n\nThese are five deliberately small, synthetic cases. Their role is to make a formal specification exclude known mistakes, not to establish that a procedure possesses wisdom. The attached Python check exhaustively verifies the finite comparisons below. This is not an independently scored behavioral experiment or a claim of novelty.\n\n## Minimal formal interface\n\nLet a deliberative state contain a recorded history H, a set M of presently admitted causal possibilities, an indexed collection P of recognized affected beings, a normative specification N, and a feasible set Π of policies. A policy may contain an inquiry and subsequent contingent action. Inquiry costs, observation access, time limits, and implementation permissions belong in feasibility, not in a free external oracle.\n\nFor each admitted world m and feasible policy π, let h(m, π) be a tuple of consequences for declared protected interests. These tuples need not share cardinal units. Here smaller means less harm on each component. Define robust component dominance:\n\nπ ≺ π′ iff h(m,π) ≤ h(m,π′) componentwise for every m ∈ M, with at least one strict inequality at some m.\n\nAssume every listed possibility remains decision-relevant; this relation does not use a probability distribution. A finite nonempty policy set has at least one nondominated policy. It need not have a unique one. Dominance is just one declared justification rule. It neither establishes moral standing nor resolves conflicts among components.\n\nN can additionally specify prohibitions, permissions, thresholds, commitments, or a partial priority ordering. A weighted utility sum is unnecessary. The cases below separately declare the norms they use; they must not be read as a single universal moral theory.\n\n## Case 1: a paid inquiry has a clear warrant\n\nThere are two live worlds, L and R, and two recognized people. The two numbers are their respective harm levels. Ordinary terminal actions cost no inquiry resource. A perfect probe consumes one resource unit, and one unit is available. The probe itself imposes no declared harm. It reveals L or R before the response.\n\n| Policy or action | World L | World R | Inquiry resource |\n| --- | --- | --- | --- |\n| Left | (0,0) | (0,1) | 0 |\n| Right | (1,0) | (0,0) | 0 |\n| Defer | (1,1) | (1,1) | 0 |\n| Probe, then match the revealed world | (0,0) | (0,0) | 1 |\n\nThe contingent probe policy robustly dominates each static policy while satisfying the resource bound. It is uniquely nondominated in this listed policy class. Inquiry is justified by what it enables for the protected interests, not by a general maxim that more information is good. If the probe takes too long, costs two units, is inaccurate, or itself harms someone, the conclusion needs re-evaluation.\n\nThe relevant coupling is substantive: concern identifies the consequence difference worth resolving; the causal model says which observation resolves it; the response options establish that learning can change an achievable outcome. Delete any of these links and the warrant is incomplete.\n\n## Case 2: a common action makes inquiry unnecessary\n\nThere are again two live worlds. A common action avoids the relevant harm in both. The proposed probe would still reveal the world but requires collecting sensitive information. The tuple is (outcome harm, privacy burden).\n\n| Policy | World L | World R |\n| --- | --- | --- |\n| Common action immediately | (0,0) | (0,0) |\n| Probe, then common action | (0,1) | (0,1) |\n\nThe common action strictly dominates the probe policy. Unresolved beliefs do not entail unresolved conduct. Even without the privacy burden, the two policies could tie on the protected outcomes, so investigation would not be a necessary condition of a justified response. More explicit reflection and more learning cannot be built into the definition of wisdom as unconditional requirements.\n\n## Case 3: complete facts do not settle conflicting reasons\n\nThe facts are known. There is one indivisible benefit that avoids a harm. The tuple records the remaining harms to A and B. Their standing is equal; no lottery, priority convention, promise, or further tie-breaking reason has been supplied.\n\n| Action | Consequences |\n| --- | --- |\n| Help A | (0,1) |\n| Help B | (1,0) |\n| Defer | (1,1) |\n\nHelp A and Help B are both nondominated and incomparable under the specified relation. Defer is dominated. The formalism should return an unresolved justified set, not invent a unique answer or pretend uncertainty about the facts is responsible. A further normative premise could settle the choice, but adding one is a substantive step requiring reasons. Lack of a unique derivation does not make harmful inaction permissible.\n\nThis is an important output type: the process can identify an urgent choice while honestly recording the unresolved conflict. A selected action may include an explicit additional judgment whose basis is separately stated; selection does not magically erase the objection.\n\n## Case 4: a capability gap is not evidence of mistaken judgment\n\nIn a known world, prevention would produce harm 0, but it is unavailable to the deliberating person because another actor controls the relevant intervention. Every response actually available to this person leaves harm 1. Seeking help, documenting an objection, or refusing involvement can be included if feasible; stipulate here that none changes the immediate harm.\n\n| Response | Harm | Feasible for this person? |\n| --- | --- | --- |\n| Prevention | 0 | No |\n| Available response | 1 | Yes |\n\nThe unique feasible outcome is worse than the ideal achievable by a differently empowered actor. It is false to infer an error in this person's judgment solely from that outcome. A correct response description must distinguish an unavailable ideal from an executable recommendation and name the implementation obstruction.\n\nThe finite example proves the outcome/capability distinction. It cannot prove that a particular person has wisdom. The formalism should accordingly report at least a judgment certificate and a separate implementation/achievement status. An impossible guarantee is not an appropriate criterion for good judgment.\n\n## Case 5: routine success can conceal an omitted affected person\n\nAn operator originally records only A's lost service. Operating supplies the service, harm_A = 0. Stopping deprives A of service, harm_A = 1. Two actual worlds have exactly the same routine observation, “output = 1.” In the safe world, operation does not harm anyone else; in the toxic world, it imposes serious irreversible harm on B, who was absent from the operational account.\n\nThe initial table considers only A:\n\n| Response | Recorded harm to A |\n| --- | --- |\n| Operate | 0 |\n| Stop | 1 |\n\nOperating is uniquely nondominated in that account. Successful output does not falsify it. Any detector restricted to the identical routine history must behave identically in both worlds. Thus a deterministic detector with no false alarm in the safe world necessarily misses the toxic world. A randomized detector has equal alarm probabilities in the two worlds, giving the same tradeoff. This impossibility is conditional on the interface; it is not a prohibition on seeking a new interface.\n\nSuppose the independently declared standing commitment is: people causally exposed to serious harm count even when they are not customers or participants in the original decision. Contact with B and a new waste measurement reveal the missing exposure. The system must expand both the recognized affected set and its causal account. The toxic-world table becomes:\n\n| Response | (harm to A, harm to B) |\n| --- | --- |\n| Operate | (0,2) |\n| Stop | (1,0) |\n| Install a feasible filter, then operate | (0,0) |\n\nHere 0 means no relevant harm, 1 means the specified reversible service loss, and 2 means the specified serious irreversible harm. These are ordinal categories in this example, not a universal numerical ethics. Assume the filter is implementable with the available means and is not itself harmful.\n\nUnder component dominance, filtering is uniquely preferred. Before filtering becomes available, the two other actions conflict under component dominance alone. If N also contains the independently defended rule “do not impose the specified serious irreversible harm when a feasible alternative avoids it without such harm,” operation is prohibited and stopping is admissible. The rule, its exceptional scope, and any challenge to it must be explicit. The consequence table cannot derive that rule by itself.\n\nThe discoveries perform different work: extending concern adds a missing protected interest; changing the observation interface distinguishes the worlds; expanding the action repertoire makes a previously unavailable nonconflicting response possible. No single update automatically accomplishes the others. Retain A's service loss and B's harm as separate entries throughout, so a later change of criterion cannot erase the earlier costs.\n\n## A noncircular coupling criterion\n\nA “mutual correction” label by itself is too permissive: an exploiter can coordinate evidence, goals, and action very well. Avoid defining a correction as any change later declared wise. Instead require a recorded, checkable bridge for each proposed revision:\n\n1. **What changed?** Identify the model proposition, recognized interest or standing claim, evaluative rule, observation channel, or feasible action being revised.\n2. **What warrants it?** Give the new observation and its reliability claim, logical contradiction, affected-person testimony, causal mechanism, or explicit normative argument. A normative argument is not an empirical proof of its moral premise.\n3. **What follows?** Recompute consequences or justification under the declared model and norms; record the response differences. A merely verbal revision that changes no admissible claim or response is distinguishable from a substantive one.\n4. **What was preserved?** Keep the previous account, displaced objections, resource cost, and status of unresolved disagreement. Preserve the mapping of common consequence components across revisions; identify genuinely added dimensions rather than silently rescaling old harms.\n\nThis defines inspectable revision and cross-constraint, not the correctness of every warranted premise. Independent standards of evidence and morally defended commitments remain necessary inputs. They too may later be challenged, but the challenge must be represented rather than accepted because the system calls it a correction.\n\nA practical-root formalization can promise these conditional structural properties without claiming that every capable run is wise: feasibility; consistency with declared constraints; faithful accounting of protected consequences; nonconcealment of conflict; and revision traceability. The substantive proposal is that the capacity to connect these functions under defensible concern helps explain wise judgment. Its necessity, sufficiency, universality, and comparative benefit remain open claims.\n\n## Check record\n\n`work/root-formalization-cases.py` checks the exact finite order comparisons, budget compatibility for case 1, nonunique nondominated set for case 3, capability gap for case 4, and deterministic indistinguishability for case 5. It writes `work/root-formalization-cases-check.json`. All assertions passed on 5 October 2026. The randomized observation is a direct consequence of identical input distributions and is explained above rather than empirically sampled.\n\n## Independent finite check of the terminal intersection theorem\n\nFor a finite world set W, finite action set A, observation map o, and independently stipulated feasible-and-acceptable sets K(w) ⊆ A, a deterministic observation-based policy f with f(o(w)) ∈ K(w) for every admitted w exists if and only if every nonempty observation class C has a nonempty intersection ∩_{w∈C} K(w).\n\n**Necessity:** all worlds in C produce the same observation, so f takes one common action there; that action must lie in every K(w). **Sufficiency:** choose one action from each nonempty finite class intersection and define f on its observation accordingly. Classes outside the admitted world set have no guarantee obligation. An empty admitted world set would make the guarantee vacuous, so any practical certificate must separately require a nonempty model and disclose model adequacy assumptions.\n\n`work/root-formalization-check.py` compares that criterion with direct enumeration of observation-based policies on all 512 acceptable-set matrices for three worlds and three actions, over all five observation partitions: 2,560 cases. All comparisons passed. There are 1,289 instances with a policy and 1,271 without one. Counts by partition are 169 for no discrimination, 259 for each of the three two-class partitions, and 343 for full discrimination. These agree with direct counts: 512−7³ = 169; 37×7 = 259; and 7³ = 343.\n\nThe same file checks 80 two-stage inquiry cases over resource budgets and deadlines 0–3. Terminal action costs one unit and takes one time step. A normal informative probe costs one unit and takes one step. When the worlds require opposite actions, a guarantee exists precisely when both budget and deadline permit probe plus response. When a common acceptable action exists, one terminal step and one resource unit suffice. Query permission absent, an uninformative query, and a slower query are checked separately. Thus a change in information partitions alone does not imply an executable improvement when its acquisition is costly.\n\nResults are in `work/root-formalization-check.json`. The theorem and checks concern the declared policy class and supplied acceptable sets. They neither show that actual reality lies in W nor establish that the acceptance criteria are morally justified.\n"
+    },
+    {
+      "file": "root-formalization-cases.py",
+      "sha256": "b5e07ee825107ae44927ff8e5f9b856b48322b93d651195da6e26b8109845c65",
+      "content": "from itertools import product\nimport json\nfrom pathlib import Path\n\n# Outcome tuples are independently declared harm/burden components to be minimized.\n# No weighted sum of components is used.\ndef dominates(x, y):\n    return all(a <= b for a, b in zip(x, y)) and any(a < b for a, b in zip(x, y))\n\ndef minima(table):\n    return [a for a, x in table.items() if not any(dominates(y, x) for b, y in table.items() if a != b)]\n\n# 1. Flatten the two possible worlds' two protected interests.\ncase1 = {'left': (0, 0, 0, 1), 'right': (1, 0, 0, 0), 'defer': (1, 1, 1, 1), 'probe_then_match': (0, 0, 0, 0)}\nassert minima(case1) == ['probe_then_match']\nassert all(dominates(case1['probe_then_match'], case1[a]) for a in ('left', 'right', 'defer'))\n# Probe cost 1 fits the independently declared budget 1. Static policies cost 0.\nassert {'left': 0, 'right': 0, 'defer': 0, 'probe_then_match': 1}['probe_then_match'] <= 1\n\n# 2. Both policies avoid outcome harm in either world; inquiry adds a privacy burden.\ncase2 = {'common_action': (0, 0, 0, 0), 'probe_then_common': (0, 1, 0, 1)}\nassert minima(case2) == ['common_action']\n\n# 3. Two protected persons have a certain conflicting allocation.\ncase3 = {'help_A': (0, 1), 'help_B': (1, 0), 'defer': (1, 1)}\nassert set(minima(case3)) == {'help_A', 'help_B'}\n\n# 4. The ideal prevention is outside the agent's feasible response set.\ncase4_world = {'prevention': (0,), 'available_response': (1,)}\ncase4_feasible = {'available_response': case4_world['available_response']}\nassert minima(case4_world) == ['prevention']\nassert minima(case4_feasible) == ['available_response']\nassert case4_feasible['available_response'] != case4_world['prevention']\n\n# 5. Old outcome interface, observations, and routine histories agree across worlds.\nold_observation = {'safe': 'output=1', 'toxic': 'output=1'}\nassert old_observation['safe'] == old_observation['toxic']\n# Every deterministic detector over that observation has identical outputs.\nfor detector_output in (False, True):\n    detector = {'output=1': detector_output}\n    assert detector[old_observation['safe']] == detector[old_observation['toxic']]\nold_outcomes = {'operate': (0,), 'stop': (1,)}\nassert minima(old_outcomes) == ['operate']\nexpanded_outcomes_toxic = {'operate': (0, 2), 'stop': (1, 0), 'filter': (0, 0)}\nassert minima(expanded_outcomes_toxic) == ['filter']\n# New, independently declared constraint: forbid an imposed serious irreversible harm (2).\nallowed_before_filter = {a: h for a, h in expanded_outcomes_toxic.items() if a != 'filter' and max(h) < 2}\nassert minima(allowed_before_filter) == ['stop']\n\nresult = {\n    'status': 'five exact synthetic witnesses checked',\n    'meaning': 'arithmetic, order, feasibility, and indistinguishability checks only; not a wisdom benchmark',\n    'case1_minimal_policy': minima(case1),\n    'case2_minimal_policy': minima(case2),\n    'case3_unresolved_minimal_set': minima(case3),\n    'case4_feasible_minimal_set': minima(case4_feasible),\n    'case5_old_minimal_set': minima(old_outcomes),\n    'case5_expanded_minimal_set': minima(expanded_outcomes_toxic),\n}\nPath('work/root-formalization-cases-check.json').write_text(json.dumps(result, indent=2) + '\\n')\nprint(json.dumps(result, indent=2))\n"
+    },
+    {
+      "file": "root-formalization-cases-check.json",
+      "sha256": "fd3d740a5a21374ec1638e6c85435a695e518ec61d2ffe8896d97096f16dafac",
+      "content": {
+        "status": "five exact synthetic witnesses checked",
+        "meaning": "arithmetic, order, feasibility, and indistinguishability checks only; not a wisdom benchmark",
+        "case1_minimal_policy": [
+          "probe_then_match"
+        ],
+        "case2_minimal_policy": [
+          "common_action"
+        ],
+        "case3_unresolved_minimal_set": [
+          "help_A",
+          "help_B"
+        ],
+        "case4_feasible_minimal_set": [
+          "available_response"
+        ],
+        "case5_old_minimal_set": [
+          "operate"
+        ],
+        "case5_expanded_minimal_set": [
+          "filter"
+        ]
+      }
+    },
+    {
+      "file": "root-formalization-audit.md",
+      "sha256": "ec7e6b184bf4c67065cbb8be0522c6dead48af712fb89c4636e5cbb9553155fb",
+      "content": "# Independent audit: formalizing the proposed root\n\nPrepared 5 October 2026. This audits the candidate in `outputs/root-of-wisdom-cross-session-assessment.md`; it does not claim that the candidate has become a necessary-and-sufficient definition of wisdom.\n\n## Recommended mathematical object\n\nFormalize a **capacity and its constraints**, rather than identifying wisdom with an optimization score or with whatever a revision operator approves.\n\nA situated deliberative state can be written\n\n\\[\ns=(L,H,\\mathcal M,N,A,B,D).\n\\]\n\nHere:\n\n- `L` is the current representational language, including distinctions, represented beings, possible harms, and response descriptions.\n- `H` is the accessible evidential history. Its interpretation remains contestable.\n- `M` is a nonempty collection of empirical models admitted by current evidence and assumptions. It need not be a probability distribution.\n- `N` is the explicitly avowed normative position: standing, reasons, protections, priorities, and unsettled conflicts. It need not be a total ordering or scalar utility.\n- `A` is the set of presently available responses, including acting, refraining, seeking help, investigating, and stopping. Actual interventions and recommendations about unavailable interventions must be distinguished.\n- `B` records relevant time, capacities, permissions, and material means.\n- `D` is a retained record of claims, objections, consequences, commitments, and reasons for changes. Retention itself is bounded; the specification must say what a proposed preservation condition requires.\n\nThe proposed architecture has two mathematical parts:\n\n\\[\nJ(s)\\subseteq A,\\qquad \\mathsf{Rev}\\subseteq S\\times X\\times S.\n\\]\n\n`J` is a judgment correspondence: currently defensible responses under the declared evidential and normative standards. It may contain multiple responses. It may be empty when standards conflict or no satisfactory response is available. Empty does not automatically mean the actor is unwise; naming an impossible demand can be a good judgment.\n\n`Rev` is a revision relation responding to a challenge `x`. Challenges include observations, consequences, testimony, counterarguments, changed circumstances, and discovered alternatives. A relation is preferable to a purported universal update function: reasonable revisions may be nonunique and the theory does not yet supply an algorithm that generates all relevant challenges.\n\nFor actual executable policies, information consistency and resource constraints belong in the specification. For judgments about what ought to be done, record the distinction between a warranted recommendation and the agent's ability to realize it. Otherwise the account confuses wisdom with power.\n\n### Mutual correction as a substantive structural condition\n\nDraw dependencies from `N` to inquiry priorities and representation, from empirical findings to feasible ways of responding to concern, and from considered responses to further evidential and normative questions. A formal implementation should exhibit cases where changing each relevant input changes a warranted output, while holding the other declared inputs fixed. Merely drawing arrows or saying every component may change proves nothing.\n\nA defensible revision should satisfy independently specified conditions appropriate to its kind:\n\n1. Empirical claims remain answerable to accessible observations and stated intervention assumptions; the revision must not silently discard inconvenient observations.\n2. Normative changes preserve the challenge and provide reasons that can be examined under both the old and new positions. This establishes traceability, not moral validity.\n3. Changes of language or measures record what old distinctions lose representation and why. New language is permitted; exact translation is not universally possible.\n4. Proposed conduct distinguishes unavailable means, unavoidable loss, and uncertainty from promised success.\n5. The architecture permits settled judgment, urgent action, refusal, and stopping. Revision is a conditional capacity, not a required ritual on every occasion.\n\nThe ethical proposal of non-arbitrary consideration is an explicit normative axiom to defend. Neither the transition structure nor symmetry alone supplies it. In particular, formalize concern for beings unable to articulate or reciprocate claims; making voiced objection necessary would contradict the proposal's standing criterion.\n\n## Proposition 1: empirical completeness and non-arbitrary consideration do not uniquely determine judgment\n\nTake two affected beings and two responses with fully known benefit vectors:\n\n\\[\nv(a)=(3,0),\\qquad v(b)=(1,1).\n\\]\n\nConsider these evaluative rules on nonnegative benefits:\n\n\\[\nU_1(v)=v_1+v_2,\\qquad U_2(v)=\\sqrt{v_1}+\\sqrt{v_2}.\n\\]\n\nBoth are invariant under exchanging the two beings' identities; both strictly increase when either being's benefit increases and the other is unchanged. Thus both meet these limited formal tests of non-arbitrary and positive consideration. Nevertheless,\n\n\\[\nU_1(a)=3>2=U_1(b),\\qquad U_2(a)=\\sqrt3<2=U_2(b).\n\\]\n\n**Conclusion.** The same complete factual description and these ethical symmetry/monotonicity constraints permit opposite judgments. Additional evaluative reasons or commitments are required. This is an elementary countermodel, not a claim that either rule is the correct morality or that all relevant goods are numerically commensurable.\n\nThe result blocks a central overclaim: making a model more complete cannot, by itself, turn the proposed root into a unique moral decision procedure. It also blocks using identity invariance as a sufficient definition of ethical concern.\n\n## Proposition 2: a shared optimal response removes the instrumental value of a costly pure-information query\n\nFor this proposition only, take a finite current state set `W`, finite available action set `A`, a declared utility `u(a,w)`, and any probability distribution on `W`. Suppose one response `a*` satisfies\n\n\\[\n\\forall w\\in W,\\ \\forall a\\in A:\\quad u(a^*,w)\\geq u(a,w).\n\\]\n\nA pure-information query supplies a signal `Y`; it changes neither the state, available responses, their consequences, nor the utility. After querying, the actor chooses any signal-contingent response `d(Y)` from `A`. The query incurs a fixed positive cost `c`, assessed in the same declared utility.\n\nPointwise, `u(d(Y),w) <= u(a*,w)`. Taking expectation over states and signals gives\n\n\\[\n\\mathbb E[u(d(Y),w)]-c\n\\leq \\mathbb E[u(a^*,w)]-c\n<\\mathbb E[u(a^*,w)].\n\\]\n\n**Conclusion.** Immediate `a*` strictly dominates every policy that first purchases such a query. With zero cost the query cannot improve the declared expected utility. The proof does not need the query to reveal the state correctly.\n\n**Boundary.** This is conditional on the current possibility set and utility. The conclusion need not survive an omitted state, affected being, action, consequence, independent duty to inquire, or a query that changes what actions are possible. Hence it supports optional inquiry, not complacency about model adequacy. A more general comparison can use costs to each affected party and partial orders, but the simple theorem must not silently pretend to settle those conflicts.\n\n## Additional failure modes the parent formalization should avoid\n\n### Endogenous scores do not certify improvement\n\nSuppose actual conduct remains unchanged and the evaluator is replaced by a rule assigning that conduct a higher score. The transition can satisfy any condition defined solely as an increase in the current self-selected score. Such progress is vacuous unless at least some consequences, claims, comparison standards, or revision reasons are preserved across the change. Preservation gives inspectability; it still cannot mathematically ensure the reasons are morally sufficient.\n\n### Choice correctness does not identify wise capacity\n\nIf an agent has only one available response, every selection rule returns it. Wise and unwise agents can exhibit the same behavior, and the resulting outcome may be terrible. One successful or failed outcome therefore does not identify the relevant capacity. Evidence about a capacity requires reasoning and response across specified contrasts, while acknowledging that verbal explanations can also mislead.\n\n### Closed representation cannot certify its own completeness\n\nIf an omitted distinction induces no difference in any accessible input to a deterministic deliberation process, the process produces the same output whether that distinction is present or absent. Randomization changes this to the same output distribution. Thus guaranteed discrimination of the two situations is impossible without an additional distinction-making channel or a response acceptable in both. This does not show that all missing possibilities are unknowable; it identifies the exact restriction under which a guarantee is impossible.\n\n### Frozen meta-criteria and unrestricted self-revision each have a cost\n\nA fixed higher-order acceptance rule leaves some commitments foundational. An unrestricted rule allowing the system to replace every standard can rationalize anything. A fallible practice can acknowledge this tradeoff by retaining objections, stating current commitments, allowing reasoned challenges, and leaving some disputes unresolved. It should not advertise that practice as an algorithm that escapes every normative assumption.\n\n## Suggested claim strength\n\nA justified initial claim is:\n\n> We have formalized a family of situated, ethically committed, corrigible judgment processes and proved conditional constraints on some of their decisions. We hypothesize that their integration captures a practical root of wisdom.\n\nA stronger claim—necessary and sufficient for wisdom in a declared domain—requires an independently specified target, evidence of discrimination from rival accounts, and boundary cases. A universal root is stronger still. These gaps do not make the formalization worthless; they locate what its mathematics does and does not establish.\n"
+    }
+  ]
+}

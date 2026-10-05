@@ -1,0 +1,8 @@
+{
+  "all_reproduced_payload_hashes_unchanged": 54,
+  "three_result_jsons_byte_identical": true,
+  "local_links_checked": 34,
+  "math_and_fence_delimiters_balanced": true,
+  "fresh_Lean_build": false,
+  "new_unified_application": false
+}

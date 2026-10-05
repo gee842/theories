@@ -1,0 +1,14 @@
+{
+  "local_markdown_links_checked": 48,
+  "missing_links": [],
+  "frozen_source_hashes_checked": {
+    "experiment": 4,
+    "correction-access": 4
+  },
+  "new_experiment_episodes": 90000,
+  "new_independent_seeds": 2000,
+  "new_tests_passed": 18,
+  "new_audit_assertions_passed": 5355,
+  "independently_replayed_scalar_episodes": 72000,
+  "figures": "Both new PNGs visually inspected; matching SVGs supplied."
+}

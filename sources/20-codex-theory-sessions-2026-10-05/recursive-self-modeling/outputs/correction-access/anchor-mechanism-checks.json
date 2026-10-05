@@ -1,0 +1,55 @@
+{
+  "status": "All exact algebraic checks pass; no new simulation evaluation.",
+  "shifted_coordinate_trajectory_steps": 720,
+  "transformed_bias_sign": "b_tilde=b+r, d_tilde=d+r, x_tilde=x-r",
+  "anchor_equilibrium_magnitude": 0.75,
+  "sixty_steps_already_at_equilibrium_state_loss": 33.75,
+  "ideal_noiseless_perfect_coordinate_expected_state_loss_from_N01": 33.42239010989011,
+  "scalar_equilibria": [
+    {
+      "g": -0.15,
+      "d": -0.25,
+      "scalar_equilibrium": -0.03571428571428571
+    },
+    {
+      "g": -0.15,
+      "d": 0.0,
+      "scalar_equilibrium": -0.21428571428571427
+    },
+    {
+      "g": -0.15,
+      "d": 0.25,
+      "scalar_equilibrium": -0.39285714285714285
+    },
+    {
+      "g": 0.0,
+      "d": -0.25,
+      "scalar_equilibrium": 0.17857142857142858
+    },
+    {
+      "g": 0.0,
+      "d": 0.0,
+      "scalar_equilibrium": 0.0
+    },
+    {
+      "g": 0.0,
+      "d": 0.25,
+      "scalar_equilibrium": -0.17857142857142858
+    },
+    {
+      "g": 0.15,
+      "d": -0.25,
+      "scalar_equilibrium": 0.39285714285714285
+    },
+    {
+      "g": 0.15,
+      "d": 0.0,
+      "scalar_equilibrium": 0.21428571428571427
+    },
+    {
+      "g": 0.15,
+      "d": 0.25,
+      "scalar_equilibrium": 0.03571428571428571
+    }
+  ]
+}

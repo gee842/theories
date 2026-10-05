@@ -1,0 +1,39 @@
+{
+  "doi": "10.7910/DVN/SPIMAV",
+  "version": 1,
+  "license": "CC0-1.0",
+  "retrieved_utc": "2026-10-04T20:59:12.064598+00:00",
+  "protocol_sha256": "56b47bca7bf364c96e664c9e12ed5071c710fdda6e31a18a67418c3585171219",
+  "files": [
+    {
+      "file": "Experiment_1_Analysis.do",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/5655780",
+      "sha256": "2736a1e50e85c1c8c2aeab4725db551b6e5eed73f3d83bb0a063459da13e3e83",
+      "bytes": 10612
+    },
+    {
+      "file": "Experiment_1.tab",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/5655783",
+      "sha256": "6015fe56a8b8fe63f4a228043aba122408f048ac081cc2f5152c1c8b90b1908b",
+      "bytes": 318850
+    },
+    {
+      "file": "Experiment_2_Analysis.do",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/5655782",
+      "sha256": "c0630b8dda48045c1d7f46bf067c522b74d75f37f2f0fc70759df668612a539c",
+      "bytes": 6787
+    },
+    {
+      "file": "Experiment_2.tab",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/5655784",
+      "sha256": "b21062906fd994daa98d14a0915a7c11550653605da8560ade0add16f3ac6fc5",
+      "bytes": 437681
+    },
+    {
+      "file": "ReadMe.txt",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/5655781",
+      "sha256": "c78b5d353bc26a789a01921529e307fe5d614c6a856af816c2e68bb99c431f82",
+      "bytes": 1041
+    }
+  ]
+}

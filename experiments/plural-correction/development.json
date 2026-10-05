@@ -1,0 +1,355 @@
+{
+  "full": {
+    "minima": [
+      {
+        "failure": 0.0,
+        "burden": 0.8650607475000001,
+        "net_expense": -28.811266733399997
+      },
+      {
+        "failure": 0.17149392599999996,
+        "burden": 0.0,
+        "net_expense": -24.728674971
+      },
+      {
+        "failure": 4.710700000000002e-05,
+        "burden": 0.228684,
+        "net_expense": -32.32466926
+      }
+    ],
+    "frontier": [
+      {
+        "cap": 0,
+        "feasible": true,
+        "failure": 0.0,
+        "burden": 0.052534250000000005,
+        "net_expense": -28.358046659999996
+      },
+      {
+        "cap": 0.001,
+        "feasible": true,
+        "failure": 0.001,
+        "burden": 0.043536788101123595,
+        "net_expense": -28.63091950597245
+      },
+      {
+        "cap": 0.01,
+        "feasible": true,
+        "failure": 0.01,
+        "burden": 0.025050461399480722,
+        "net_expense": -27.51138110836514
+      },
+      {
+        "cap": 0.02,
+        "feasible": true,
+        "failure": 0.02,
+        "burden": 0.016685138846349104,
+        "net_expense": -26.66382934054071
+      },
+      {
+        "cap": 0.05,
+        "feasible": true,
+        "failure": 0.05000000000000001,
+        "burden": 0.01176709329012918,
+        "net_expense": -26.46008915261994
+      },
+      {
+        "cap": 0.1,
+        "feasible": true,
+        "failure": 0.10000000000000002,
+        "burden": 0.006703600219157617,
+        "net_expense": -26.432046362616877
+      },
+      {
+        "cap": 0.2,
+        "feasible": true,
+        "failure": 0.17149392599999996,
+        "burden": 0.0,
+        "net_expense": -26.003395470999994
+      },
+      {
+        "cap": 0.3,
+        "feasible": true,
+        "failure": 0.17149392599999996,
+        "burden": 0.0,
+        "net_expense": -26.003395470999994
+      }
+    ]
+  },
+  "no_diagnostic": {
+    "minima": [
+      {
+        "failure": 0.0,
+        "burden": 1.56796279,
+        "net_expense": -25.126351428
+      },
+      {
+        "failure": 0.17149392600000002,
+        "burden": 0.0,
+        "net_expense": -29.247082471
+      },
+      {
+        "failure": 4.710700000000002e-05,
+        "burden": 0.228684,
+        "net_expense": -32.32466926
+      }
+    ],
+    "frontier": [
+      {
+        "cap": 0,
+        "feasible": true,
+        "failure": 0.0,
+        "burden": 0.05253425,
+        "net_expense": -27.726255659999996
+      },
+      {
+        "cap": 0.001,
+        "feasible": true,
+        "failure": 0.001,
+        "burden": 0.04671072058823529,
+        "net_expense": -27.589064954117646
+      },
+      {
+        "cap": 0.01,
+        "feasible": true,
+        "failure": 0.010000000000000002,
+        "burden": 0.02957471141638793,
+        "net_expense": -27.46497372748631
+      },
+      {
+        "cap": 0.02,
+        "feasible": true,
+        "failure": 0.020000000000000004,
+        "burden": 0.02714997797353158,
+        "net_expense": -27.389536977003083
+      },
+      {
+        "cap": 0.05,
+        "feasible": true,
+        "failure": 0.05,
+        "burden": 0.021490337719632442,
+        "net_expense": -27.18461252234865
+      },
+      {
+        "cap": 0.1,
+        "feasible": true,
+        "failure": 0.1,
+        "burden": 0.012195929671663679,
+        "net_expense": -26.59808990922405
+      },
+      {
+        "cap": 0.2,
+        "feasible": true,
+        "failure": 0.17149392600000002,
+        "burden": 0.0,
+        "net_expense": -26.428395471
+      },
+      {
+        "cap": 0.3,
+        "feasible": true,
+        "failure": 0.17149392600000002,
+        "burden": 0.0,
+        "net_expense": -26.428395471
+      }
+    ]
+  },
+  "no_repair": {
+    "minima": [
+      {
+        "failure": 0.17149392600000002,
+        "burden": 0.0193925,
+        "net_expense": -28.434963970999995
+      },
+      {
+        "failure": 0.171493926,
+        "burden": 0.0,
+        "net_expense": -29.877296970999996
+      },
+      {
+        "failure": 0.171493926,
+        "burden": 0.0,
+        "net_expense": -30.785913971
+      }
+    ],
+    "frontier": [
+      {
+        "cap": 0,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.001,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.01,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.02,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.05,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.1,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.2,
+        "feasible": true,
+        "failure": 0.171493926,
+        "burden": 0.0,
+        "net_expense": -30.006302470999998
+      },
+      {
+        "cap": 0.3,
+        "feasible": true,
+        "failure": 0.171493926,
+        "burden": 0.0,
+        "net_expense": -30.006302470999998
+      }
+    ]
+  },
+  "approval_floor": {
+    "minima": [
+      {
+        "failure": 0.021916946949500006,
+        "burden": 0.077960237485,
+        "net_expense": -25.276948669632
+      },
+      {
+        "failure": 0.171493926,
+        "burden": 0.0,
+        "net_expense": -28.660522471
+      },
+      {
+        "failure": 0.16103660549999999,
+        "burden": 0.0012614850000000003,
+        "net_expense": -30.807897623
+      }
+    ],
+    "frontier": [
+      {
+        "cap": 0,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.001,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.01,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.02,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.05,
+        "feasible": true,
+        "failure": 0.05,
+        "burden": 0.02815037405908364,
+        "net_expense": -25.64268972785242
+      },
+      {
+        "cap": 0.1,
+        "feasible": true,
+        "failure": 0.09999999999999999,
+        "burden": 0.01581741740810378,
+        "net_expense": -25.17079338786875
+      },
+      {
+        "cap": 0.2,
+        "feasible": true,
+        "failure": 0.17149392600000002,
+        "burden": 0.0,
+        "net_expense": -27.055840471000003
+      },
+      {
+        "cap": 0.3,
+        "feasible": true,
+        "failure": 0.17149392600000002,
+        "burden": 0.0,
+        "net_expense": -27.055840471000003
+      }
+    ]
+  },
+  "expense_cap_2": {
+    "minima": [
+      {
+        "failure": 0.17149392600000002,
+        "burden": 0.0,
+        "net_expense": -27.785913971
+      },
+      {
+        "failure": 0.17149392600000002,
+        "burden": 0.0,
+        "net_expense": -27.785913971
+      },
+      {
+        "failure": 0.17149392600000002,
+        "burden": 0.0,
+        "net_expense": -30.785913971
+      }
+    ],
+    "frontier": [
+      {
+        "cap": 0,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.001,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.01,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.02,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.05,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.1,
+        "feasible": false,
+        "solver_status": 2
+      },
+      {
+        "cap": 0.2,
+        "feasible": true,
+        "failure": 0.17149392599999996,
+        "burden": 0.0,
+        "net_expense": -29.480864971
+      },
+      {
+        "cap": 0.3,
+        "feasible": true,
+        "failure": 0.17149392599999996,
+        "burden": 0.0,
+        "net_expense": -29.480864971
+      }
+    ]
+  }
+}

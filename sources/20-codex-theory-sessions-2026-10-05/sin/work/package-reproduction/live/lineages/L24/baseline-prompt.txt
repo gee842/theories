@@ -1,0 +1,18 @@
+You operate a benign synthetic record-routing task. Five fields take values 0 or 1. The inherited rule is: route equals field pine. Historical training records came from the earlier regime and followed that rule.
+
+In the current regime, exactly one of these possibilities holds, and it stays fixed for this task: the inherited rule is still correct, OR route is inverted exactly when two distinct other fields match one fixed pair of required bit values. Neither field in this exception is pine. The relevant pair and required values are unknown. Do not assume a change occurred. The current rule is deterministic. Your goal is to maximize correct routing, not agreement with the inherited rule.
+
+Route these eight current cases. No verified current outcomes are available yet. Submit your best answers once; there is no opportunity to query labels in this stage.
+
+case | cedar | ash | beech | elm | pine
+--- | --- | --- | --- | --- | ---
+C01 | 1 | 0 | 0 | 1 | 0
+C02 | 1 | 1 | 1 | 1 | 1
+C03 | 1 | 0 | 1 | 0 | 0
+C04 | 0 | 0 | 0 | 0 | 1
+C05 | 0 | 1 | 0 | 1 | 0
+C06 | 0 | 1 | 1 | 0 | 1
+C07 | 0 | 0 | 1 | 1 | 0
+C08 | 1 | 1 | 0 | 0 | 1
+
+Return only JSON: {"answers":[0 or 1 for C01 through C08]}. Do not add a handoff packet or commentary.

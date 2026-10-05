@@ -1,0 +1,53 @@
+{
+  "status": "Post-evaluation analytic extension; not part of the frozen primary comparison family.",
+  "symmetry_exact_checks": [
+    {
+      "a": "4/5",
+      "shift": "-2",
+      "steps": 20,
+      "identical_observations_actions": true
+    },
+    {
+      "a": "4/5",
+      "shift": "1/3",
+      "steps": 20,
+      "identical_observations_actions": true
+    },
+    {
+      "a": "4/5",
+      "shift": "3",
+      "steps": 20,
+      "identical_observations_actions": true
+    },
+    {
+      "a": "1",
+      "shift": "-2",
+      "steps": 20,
+      "identical_observations_actions": true
+    },
+    {
+      "a": "1",
+      "shift": "1/3",
+      "steps": 20,
+      "identical_observations_actions": true
+    },
+    {
+      "a": "1",
+      "shift": "3",
+      "steps": 20,
+      "identical_observations_actions": true
+    }
+  ],
+  "symmetry_note": "Requires shift-closed parameter/initial-state class; fixed known priors or fixed forcing can break it.",
+  "passive_control": {
+    "mean_control_loss": 2.147820574005431,
+    "standard_error": 0.07715953788456373,
+    "descriptive_95_interval": [
+      1.996587879751686,
+      2.299053268259176
+    ],
+    "exact_model_expectation": 2.1820987654279533,
+    "sensing_count": 0,
+    "note": "State-only zero-action benchmark, no algorithm work price assigned. Lower bound on its priced total; same in all five worlds."
+  }
+}

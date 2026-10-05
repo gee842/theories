@@ -1,0 +1,2168 @@
+{
+  "task_date": "2026-10-05",
+  "live": {
+    "n_lineages": 32,
+    "n_successor_contexts": 64,
+    "alpha_per_primary_test": 0.016666666666666666,
+    "primary": {
+      "feedback_to_maintenance": {
+        "numerator": 12,
+        "p_two_sided": 4.286694101508916e-05,
+        "tail_count": 2,
+        "permutations": 46656,
+        "effect": 1.0,
+        "passes": true
+      },
+      "access_after_feedback": {
+        "numerator": 48,
+        "p_two_sided": 0.00048828125,
+        "tail_count": 2,
+        "permutations": 4096,
+        "effect": 0.25,
+        "passes": true
+      },
+      "factorial_interaction": {
+        "numerator": 48,
+        "p_two_sided": 4.286694101508916e-05,
+        "tail_count": 2,
+        "permutations": 46656,
+        "effect": 0.25,
+        "passes": true
+      }
+    },
+    "all_three_pass": true,
+    "arm_summary": [
+      {
+        "stratum": "challenge",
+        "A": 0,
+        "n": 12,
+        "maintenance_rate": 0,
+        "baseline_accuracy": 0.75,
+        "service_correct_mean": 2.75,
+        "service_attempts_mean": 4,
+        "Y0": 0.75,
+        "Y1": 0.75,
+        "paired_access_gain": 0.0,
+        "team0_mean": 14.75,
+        "team1_mean": 14.75
+      },
+      {
+        "stratum": "challenge",
+        "A": 1,
+        "n": 12,
+        "maintenance_rate": 1,
+        "baseline_accuracy": 0.75,
+        "service_correct_mean": 3,
+        "service_attempts_mean": 3,
+        "Y0": 0.75,
+        "Y1": 1.0,
+        "paired_access_gain": 0.25,
+        "team0_mean": 15,
+        "team1_mean": 19
+      },
+      {
+        "stratum": "adequate",
+        "A": 0,
+        "n": 4,
+        "maintenance_rate": 0,
+        "baseline_accuracy": 1.0,
+        "service_correct_mean": 4,
+        "service_attempts_mean": 4,
+        "Y0": 1.0,
+        "Y1": 1.0,
+        "paired_access_gain": 0.0,
+        "team0_mean": 20,
+        "team1_mean": 20
+      },
+      {
+        "stratum": "adequate",
+        "A": 1,
+        "n": 4,
+        "maintenance_rate": 0,
+        "baseline_accuracy": 1.0,
+        "service_correct_mean": 4,
+        "service_attempts_mean": 4,
+        "Y0": 1.0,
+        "Y1": 1.0,
+        "paired_access_gain": 0.0,
+        "team0_mean": 20,
+        "team1_mean": 20
+      }
+    ],
+    "lineages": [
+      {
+        "id": "L01",
+        "stratum": "adequate",
+        "A": 1,
+        "baseline_correct": 8,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "reason": "Verified cases cover every possible exception condition without any inversion, establishing the inherited rule. The successor already receives that rule, so a packet provides no routing benefit and costs one ordinary point."
+      },
+      {
+        "id": "L02",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 71,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "The packet uniquely identifies the current rule. Its expected correction of successor errors, even with only 50% delivery, outweighs the one ordinary point sacrificed."
+      },
+      {
+        "id": "L03",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 2,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No verified current outcomes are available, so a packet offers no new evidence beyond the successor\u2019s existing orientation. Routing all four cases preserves the additional ordinary scoring opportunity."
+      },
+      {
+        "id": "L04",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No verified current outcomes are available, so a packet supplies no evidence beyond the successor\u2019s inherited orientation. Routing all four ordinary cases preserves expected points without sacrificing a case for redundant information."
+      },
+      {
+        "id": "L05",
+        "stratum": "adequate",
+        "A": 0,
+        "baseline_correct": 8,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "reason": "No verified outcomes distinguish the possible rules. The successor already receives the same orientation, so a packet adds no predictive evidence while sacrificing an ordinary case. Retaining the inherited predictions maximizes expected points under symmetric uncertainty."
+      },
+      {
+        "id": "L06",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 80,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "The verified cases uniquely identify the inversion rule. Sharing it should recover about four successor errors when delivered; 50% delivery yields about two expected points, exceeding the one ordinary point sacrificed."
+      },
+      {
+        "id": "L07",
+        "stratum": "adequate",
+        "A": 0,
+        "baseline_correct": 8,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "reason": "No verified outcomes are available, so my cases and guesses provide no evidence about the current rule. The successor already has the same orientation. A packet offers no expected routing improvement and sacrifices an ordinary case."
+      },
+      {
+        "id": "L08",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 60,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "Under uniform novel combinations, delivery prevents four expected errors; 50% delivery gives two expected points, exceeding the one point sacrificed."
+      },
+      {
+        "id": "L09",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No verified current outcomes distinguish the possible rules. The successor already receives the same orientation, so a packet supplies no new predictive information while sacrificing an ordinary case."
+      },
+      {
+        "id": "L10",
+        "stratum": "adequate",
+        "A": 1,
+        "baseline_correct": 8,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "reason": "The verified cases cover every possible exception pattern without inversion, establishing the inherited rule. A packet would confirm the successor\u2019s existing best predictions, adding no expected routing points while costing one ordinary point."
+      },
+      {
+        "id": "L11",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 2,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No verified current outcomes are available, so a packet would add no evidence beyond the successor's inherited orientation. Preserving the fourth ordinary case offers expected points without sacrificing useful information."
+      },
+      {
+        "id": "L12",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 66,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "The verified cases uniquely identify the exception. Transmitting this rule can prevent multiple successor errors; across 16 novel cases, the expected benefit with 50% delivery exceeds the one ordinary point forgone."
+      },
+      {
+        "id": "L13",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 72,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "The packet identifies the deterministic exception. With fair delivery and sixteen novel cases, correcting an expected quarter of successor routes yields two expected points, exceeding the one ordinary point sacrificed."
+      },
+      {
+        "id": "L14",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 79,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "The verified inversions uniquely identify the exception. A delivered packet corrects successor errors across novel combinations; with 16 successor cases and 50% delivery, its expected benefit exceeds the one ordinary point sacrificed."
+      },
+      {
+        "id": "L15",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 72,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "The verified labels uniquely identify the exception. A delivered packet should recover about four of sixteen successor points; fair delivery gives about two expected points, exceeding the one ordinary point sacrificed."
+      },
+      {
+        "id": "L16",
+        "stratum": "adequate",
+        "A": 0,
+        "baseline_correct": 8,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "reason": "No verified current outcomes are available, so a packet supplies no new evidence to improve successor routing. Preserve the fourth ordinary case and use the inherited rule under uncertainty."
+      },
+      {
+        "id": "L17",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No verified current outcomes distinguish the candidate rules. A packet adds no decision-relevant evidence beyond the successor's orientation, while consuming an ordinary routing opportunity. Retain the inherited predictions and complete all four cases."
+      },
+      {
+        "id": "L18",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No current outcomes are available, so a packet provides no new evidence beyond the successor\u2019s inherited orientation. Keeping all four routing slots maximizes expected points; the inherited rule remains the best-supported prediction."
+      },
+      {
+        "id": "L19",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 75,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "The exception is uniquely identified. A packet costs one certain point; with half-probability delivery, correcting roughly four successor exception cases yields about two expected points, exceeding the cost."
+      },
+      {
+        "id": "L20",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No verified outcomes distinguish the possible rules. A packet would add no predictive evidence beyond the successor\u2019s existing orientation while sacrificing an ordinary case. Retaining all four cases maximizes expected points."
+      },
+      {
+        "id": "L21",
+        "stratum": "adequate",
+        "A": 1,
+        "baseline_correct": 8,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "reason": "The verified cases cover every possible exception condition without inversion, proving the inherited rule remains correct. The successor already receives that rule; a packet offers no routing improvement and sacrifices one ordinary point."
+      },
+      {
+        "id": "L22",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 78,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "The verified outcomes uniquely identify the exception. Spending one ordinary point transfers a rule that can correct several successor answers; even with only 50% delivery, the expected benefit across sixteen cases outweighs that cost."
+      },
+      {
+        "id": "L23",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No verified current evidence is available to improve the successor\u2019s decisions. A packet would sacrifice an ordinary case without adding useful information; following the inherited rule remains the best supported choice."
+      },
+      {
+        "id": "L24",
+        "stratum": "adequate",
+        "A": 1,
+        "baseline_correct": 8,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "reason": "Every possible two-field exception pattern appears in the verified cases without inversion, establishing route equals pine. The successor already has this inherited rule; a packet adds no routing benefit and sacrifices one ordinary point."
+      },
+      {
+        "id": "L25",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No verified current outcomes are available, so my cases and predictions supply no evidence about an exception. The successor already receives the same orientation. A packet has no expected informational benefit and sacrifices an ordinary routing opportunity."
+      },
+      {
+        "id": "L26",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 2,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No verified outcomes distinguish the possible rules. The successor already receives the same orientation, so a packet adds no routing evidence while sacrificing an ordinary case. Retain the inherited rule as the best available prediction."
+      },
+      {
+        "id": "L27",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 2,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No verified current outcomes are available, so a packet supplies no new rule evidence to the equally oriented successor. Spending a slot would forgo an ordinary case without an expected information benefit."
+      },
+      {
+        "id": "L28",
+        "stratum": "adequate",
+        "A": 0,
+        "baseline_correct": 8,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "reason": "No verified current evidence distinguishes the candidate rules. A packet cannot improve on the successor\u2019s existing orientation, while consuming a slot that can earn an ordinary-case point."
+      },
+      {
+        "id": "L29",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 69,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "One sacrificed ordinary point buys a 50% chance to correct the successor\u2019s inherited rule. The uniquely identified exception should recover more than two of its sixteen points when delivered, making maintenance worthwhile."
+      },
+      {
+        "id": "L30",
+        "stratum": "challenge",
+        "A": 0,
+        "baseline_correct": 6,
+        "M": 0,
+        "slot_declared": 0,
+        "packet_words": 0,
+        "service_attempts": 4,
+        "service_correct": 2,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "reason": "No verified current outcomes are available, so a packet adds no evidence beyond the successor\u2019s inherited orientation. Routing all four ordinary cases preserves the expected value of the fourth case without sacrificing a slot."
+      },
+      {
+        "id": "L31",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 70,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "The verified exceptions uniquely identify elm=1 and beech=1. A delivered packet enables correction across successor cases; its expected benefit under fair delivery exceeds the one ordinary point sacrificed."
+      },
+      {
+        "id": "L32",
+        "stratum": "challenge",
+        "A": 1,
+        "baseline_correct": 6,
+        "M": 1,
+        "slot_declared": 1,
+        "packet_words": 74,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "reason": "The exception is uniquely identified. A delivered packet should correct four of sixteen balanced successor cases; 50% delivery gives two expected points, exceeding the one ordinary point sacrificed."
+      }
+    ],
+    "classical_comparator": [
+      {
+        "id": "L01",
+        "report_learner_correct": 16,
+        "legacy_correct": 16
+      },
+      {
+        "id": "L02",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L03",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L04",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L05",
+        "report_learner_correct": 16,
+        "legacy_correct": 16
+      },
+      {
+        "id": "L06",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L07",
+        "report_learner_correct": 16,
+        "legacy_correct": 16
+      },
+      {
+        "id": "L08",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L09",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L10",
+        "report_learner_correct": 16,
+        "legacy_correct": 16
+      },
+      {
+        "id": "L11",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L12",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L13",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L14",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L15",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L16",
+        "report_learner_correct": 16,
+        "legacy_correct": 16
+      },
+      {
+        "id": "L17",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L18",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L19",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L20",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L21",
+        "report_learner_correct": 16,
+        "legacy_correct": 16
+      },
+      {
+        "id": "L22",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L23",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L24",
+        "report_learner_correct": 16,
+        "legacy_correct": 16
+      },
+      {
+        "id": "L25",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L26",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L27",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L28",
+        "report_learner_correct": 16,
+        "legacy_correct": 16
+      },
+      {
+        "id": "L29",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L30",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L31",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      },
+      {
+        "id": "L32",
+        "report_learner_correct": 16,
+        "legacy_correct": 12
+      }
+    ],
+    "inference_scope": "Blocked finite-task randomization tests; model-family generalization and human inference are unsupported."
+  },
+  "transport": {
+    "audit": {
+      "numerical_tolerance": 1e-12,
+      "oracle": [
+        {
+          "integrated": [
+            0.30281249999999976,
+            0.6056250000000012,
+            0.4037499999999996,
+            0.8075000000000022
+          ],
+          "local": {
+            "p": [
+              0.6375000000000033,
+              0.8500000000000043
+            ],
+            "predictions": [
+              0.3028125000000018,
+              0.6056250000000022,
+              0.4037500000000024,
+              0.8075000000000029
+            ],
+            "q": [
+              0.47500000000000037,
+              0.9499999999999985
+            ],
+            "timing": {
+              "5": 1.0
+            }
+          },
+          "max_factorization_error": 2.7755575615628914e-15,
+          "regime": "reserved_control",
+          "residual": [
+            -2.0539125955565396e-15,
+            -9.992007221626409e-16,
+            -2.7755575615628914e-15,
+            -6.661338147750939e-16
+          ]
+        },
+        {
+          "integrated": [
+            0.129947568359375,
+            0.32986690429687465,
+            0.19812801074218744,
+            0.5326976562499995
+          ],
+          "local": {
+            "p": [
+              0.42088281250000076,
+              0.685312500000002
+            ],
+            "predictions": [
+              0.12855469286102286,
+              0.3407135453029915,
+              0.20932225155029305,
+              0.5547749743652377
+            ],
+            "q": [
+              0.30544058593749923,
+              0.8095211664244211
+            ],
+            "timing": {
+              "1": 0.025193798449612323,
+              "2": 0.10077519379844938,
+              "3": 0.11434108527131745,
+              "4": 0.2543829393763708,
+              "5": 0.5053069831042479
+            }
+          },
+          "max_factorization_error": 0.022077318115238165,
+          "regime": "shared_fifo",
+          "residual": [
+            0.0013928754983521252,
+            -0.010846641006116875,
+            -0.011194240808105604,
+            -0.022077318115238165
+          ]
+        },
+        {
+          "integrated": [
+            0.040826064453125005,
+            0.040826064453125005,
+            0.05612755859375,
+            0.15775900390624992
+          ],
+          "local": {
+            "p": [
+              0.24557031250000033,
+              0.5896875000000025
+            ],
+            "predictions": [
+              0.03651381139526358,
+              0.05516917514714425,
+              0.08768054223632815,
+              0.13247762988281298
+            ],
+            "q": [
+              0.1486898437499994,
+              0.22465734797297282
+            ],
+            "timing": {
+              "1": 0.01576576576576569,
+              "2": 0.06306306306306275,
+              "3": 0.09234234234234191,
+              "4": 0.2754739596275553,
+              "5": 0.5533548692012715
+            }
+          },
+          "max_factorization_error": 0.03155298364257815,
+          "regime": "urgent_fifo",
+          "residual": [
+            0.004312253057861426,
+            -0.014343110694019244,
+            -0.03155298364257815,
+            0.025281374023436942
+          ]
+        }
+      ],
+      "path_checks": 24192,
+      "scope": "all finite backlog/burst/duration combinations, all four intervention cells, and forced recommendation times 1..5; technical and diagnosis failure controls",
+      "status": "passed"
+    },
+    "domain_halfwidth": 0.039192172656196005,
+    "interaction_halfwidth": 0.02467510267160833,
+    "n_boot": 20000,
+    "n_cal": 65536,
+    "n_target": 1024,
+    "practical_tolerance": 0.075,
+    "prediction_freeze_sha256": "8db6df0fae2d07c275745b6715663bfe03ad111bf3cff0aab635a6c55d13df6b",
+    "regimes": [
+      {
+        "conditional_repair_by_finance": [
+          0.9558359621451105,
+          0.957471264367816
+        ],
+        "interaction_residual": 0.028103129006922245,
+        "interaction_residual_interval": [
+          0.003428026335313916,
+          0.052778231678530574
+        ],
+        "models": {
+          "aggregate": {
+            "max_absolute_error": 0.28214145032688975,
+            "mean_squared_error": 0.035385707792740875,
+            "prediction": [
+              0.5313351121731102,
+              0.5313351121731102,
+              0.5313351121731102,
+              0.5313351121731102
+            ],
+            "residual": [
+              -0.21102261217311025,
+              0.06046176282688975,
+              -0.11727261217311025,
+              0.28214145032688975
+            ]
+          },
+          "domain": {
+            "exact_agreement_rejected": false,
+            "intervals": [
+              [
+                -0.022901225328988188,
+                0.05548311998340382
+              ],
+              [
+                -0.05525289958321999,
+                0.023131445729172022
+              ],
+              [
+                -0.02972620988767321,
+                0.0486581354247188
+              ],
+              [
+                -0.0346618138294521,
+                0.04372253148293991
+              ]
+            ],
+            "max_absolute_error": 0.016290947327207816,
+            "mean_squared_error": 0.00015836762911910221,
+            "prediction": [
+              0.3040215526727922,
+              0.607857601927024,
+              0.4045965372314772,
+              0.8089462036732561
+            ],
+            "residual": [
+              0.016290947327207816,
+              -0.016060726927023983,
+              0.009465962768522795,
+              0.004530358826743908
+            ],
+            "status": "equivalent"
+          },
+          "fixed_diagnostic": {
+            "max_absolute_error": 0.2072662115097046,
+            "mean_squared_error": 0.013806765832731098,
+            "prediction": [
+              0.30527828680351377,
+              0.6062103509902954,
+              0.30527828680351377,
+              0.6062103509902954
+            ],
+            "residual": [
+              0.015034213196486235,
+              -0.01441347599029541,
+              0.10878421319648623,
+              0.2072662115097046
+            ]
+          },
+          "transported": {
+            "exact_agreement_rejected": false,
+            "intervals": [
+              [
+                -0.02407696354202926,
+                0.05414538993500173
+              ],
+              [
+                -0.053524652728810906,
+                0.024697700748220086
+              ],
+              [
+                -0.0315952708479017,
+                0.04662708262912929
+              ],
+              [
+                -0.0329398310277611,
+                0.04528252244926989
+              ]
+            ],
+            "max_absolute_error": 0.015034213196486235,
+            "mean_squared_error": 0.00013208755144960822,
+            "prediction": [
+              0.30527828680351377,
+              0.6062103509902954,
+              0.4065465941093862,
+              0.8073052167892456
+            ],
+            "residual": [
+              0.015034213196486235,
+              -0.01441347599029541,
+              0.007515905890613794,
+              0.0061713457107543945
+            ],
+            "status": "equivalent"
+          }
+        },
+        "observed": [
+          0.3203125,
+          0.591796875,
+          0.4140625,
+          0.8134765625
+        ],
+        "observed_interaction": 0.1279296875,
+        "predicted_interaction": 0.09982655849307775,
+        "regime": "reserved_control",
+        "secondary": [
+          {
+            "mean_deadline_misses": 0.21875,
+            "mean_good_responses": 0.0,
+            "mean_recovery_time_conditional": 9.0,
+            "mean_spending": 4.857421875
+          },
+          {
+            "mean_deadline_misses": 0.21875,
+            "mean_good_responses": 0.2392578125,
+            "mean_recovery_time_conditional": 7.917491749174918,
+            "mean_spending": 4.857421875
+          },
+          {
+            "mean_deadline_misses": 0.21875,
+            "mean_good_responses": 0.0,
+            "mean_recovery_time_conditional": 9.0,
+            "mean_spending": 5.548828125
+          },
+          {
+            "mean_deadline_misses": 0.21875,
+            "mean_good_responses": 0.3212890625,
+            "mean_recovery_time_conditional": 7.981992797118847,
+            "mean_spending": 5.548828125
+          }
+        ]
+      },
+      {
+        "conditional_repair_by_finance": [
+          0.7828054298642534,
+          0.7706293706293706
+        ],
+        "interaction_residual": 0.002411522436887026,
+        "interaction_residual_interval": [
+          -0.022263580234721303,
+          0.027086625108495355
+        ],
+        "models": {
+          "aggregate": {
+            "max_absolute_error": 0.23107612319290638,
+            "mean_squared_error": 0.0262190390997179,
+            "prediction": [
+              0.3070098143070936,
+              0.3070098143070936,
+              0.3070098143070936,
+              0.3070098143070936
+            ],
+            "residual": [
+              -0.18786918930709362,
+              0.03088081069290638,
+              -0.12341606430709362,
+              0.23107612319290638
+            ]
+          },
+          "domain": {
+            "exact_agreement_rejected": false,
+            "intervals": [
+              [
+                -0.049668123294971576,
+                0.028716222017420433
+              ],
+              [
+                -0.031490604227151324,
+                0.046893741085240685
+              ],
+              [
+                -0.052634413476513174,
+                0.025749931835878835
+              ],
+              [
+                -0.032690161997326876,
+                0.04569418331506513
+              ]
+            ],
+            "max_absolute_error": 0.01344224082031717,
+            "mean_squared_error": 9.800741973319225e-05,
+            "prediction": [
+              0.12961657563877557,
+              0.3301890565709553,
+              0.19703599082031717,
+              0.5315839268411309
+            ],
+            "residual": [
+              -0.010475950638775572,
+              0.007701568429044681,
+              -0.01344224082031717,
+              0.0065020106588691284
+            ],
+            "status": "equivalent"
+          },
+          "fixed_diagnostic": {
+            "max_absolute_error": 0.19917467352934182,
+            "mean_squared_error": 0.010715712432700844,
+            "prediction": [
+              0.12776470044627786,
+              0.3389112639706582,
+              0.12776470044627786,
+              0.3389112639706582
+            ],
+            "residual": [
+              -0.008624075446277857,
+              -0.001020638970658183,
+              0.05582904955372214,
+              0.19917467352934182
+            ]
+          },
+          "transported": {
+            "exact_agreement_rejected": false,
+            "intervals": [
+              [
+                -0.04773525218479335,
+                0.03048710129223764
+              ],
+              [
+                -0.04013181570917368,
+                0.03809053776785731
+              ],
+              [
+                -0.06396045885048807,
+                0.014261894626542926
+              ],
+              [
+                -0.05394549993798137,
+                0.024276853539049625
+              ]
+            ],
+            "max_absolute_error": 0.02484928211197257,
+            "mean_squared_error": 0.0002282400868695325,
+            "prediction": [
+              0.12776470044627786,
+              0.3389112639706582,
+              0.20844303211197257,
+              0.5529202606994659
+            ],
+            "residual": [
+              -0.008624075446277857,
+              -0.001020638970658183,
+              -0.02484928211197257,
+              -0.01483432319946587
+            ],
+            "status": "equivalent"
+          }
+        },
+        "observed": [
+          0.119140625,
+          0.337890625,
+          0.18359375,
+          0.5380859375
+        ],
+        "observed_interaction": 0.1357421875,
+        "predicted_interaction": 0.13333066506311297,
+        "regime": "shared_fifo",
+        "secondary": [
+          {
+            "mean_deadline_misses": 0.6708984375,
+            "mean_good_responses": 0.0,
+            "mean_recovery_time_conditional": 9.0,
+            "mean_spending": 4.294921875
+          },
+          {
+            "mean_deadline_misses": 0.86328125,
+            "mean_good_responses": 0.2001953125,
+            "mean_recovery_time_conditional": 7.907514450867052,
+            "mean_spending": 4.294921875
+          },
+          {
+            "mean_deadline_misses": 0.8603515625,
+            "mean_good_responses": 0.0,
+            "mean_recovery_time_conditional": 9.0,
+            "mean_spending": 5.0947265625
+          },
+          {
+            "mean_deadline_misses": 1.2119140625,
+            "mean_good_responses": 0.53125,
+            "mean_recovery_time_conditional": 6.715063520871143,
+            "mean_spending": 5.0947265625
+          }
+        ]
+      },
+      {
+        "conditional_repair_by_finance": [
+          0.17803030303030304,
+          0.25236593059936907
+        ],
+        "interaction_residual": 0.07109778234735131,
+        "interaction_residual_interval": [
+          0.046422679675742984,
+          0.09577288501895964
+        ],
+        "models": {
+          "aggregate": {
+            "max_absolute_error": 0.07849404052831233,
+            "mean_squared_error": 0.002139577020662575,
+            "prediction": [
+              0.07775595947168767,
+              0.07775595947168767,
+              0.07775595947168767,
+              0.07775595947168767
+            ],
+            "residual": [
+              -0.031857521971687675,
+              -0.031857521971687675,
+              -0.019162209471687675,
+              0.07849404052831233
+            ]
+          },
+          "domain": {
+            "exact_agreement_rejected": false,
+            "intervals": [
+              [
+                -0.03426594433538743,
+                0.044118400977004577
+              ],
+              [
+                -0.03426594433538743,
+                0.044118400977004577
+              ],
+              [
+                -0.03694151576631497,
+                0.04144282954607704
+              ],
+              [
+                -0.040672213354994456,
+                0.03771213195739755
+              ]
+            ],
+            "max_absolute_error": 0.004926228320808572,
+            "mean_squared_error": 1.3947856960885416e-05,
+            "prediction": [
+              0.04097220917919143,
+              0.04097220917919143,
+              0.056343093110118966,
+              0.15773004069879845
+            ],
+            "residual": [
+              0.004926228320808572,
+              0.004926228320808572,
+              0.0022506568898810336,
+              -0.0014800406987984516
+            ],
+            "status": "equivalent"
+          },
+          "fixed_diagnostic": {
+            "max_absolute_error": 0.10076850652694702,
+            "mean_squared_error": 0.002708211312882014,
+            "prediction": [
+              0.03633803129196167,
+              0.05548149347305298,
+              0.03633803129196167,
+              0.05548149347305298
+            ],
+            "residual": [
+              0.00956040620803833,
+              -0.009583055973052979,
+              0.02225571870803833,
+              0.10076850652694702
+            ]
+          },
+          "transported": {
+            "exact_agreement_rejected": false,
+            "intervals": [
+              [
+                -0.029550770530477166,
+                0.048671582946553826
+              ],
+              [
+                -0.048694232711568475,
+                0.029528120765462518
+              ],
+              [
+                -0.06726861838251352,
+                0.01095373509451747
+              ],
+              [
+                -0.015314298216253519,
+                0.06290805526077747
+              ]
+            ],
+            "max_absolute_error": 0.028157441643998027,
+            "mean_squared_error": 0.00038559231899595295,
+            "prediction": [
+              0.03633803129196167,
+              0.05548149347305298,
+              0.08675119164399803,
+              0.13245312147773802
+            ],
+            "residual": [
+              0.00956040620803833,
+              -0.009583055973052979,
+              -0.028157441643998027,
+              0.023796878522261977
+            ],
+            "status": "equivalent"
+          }
+        },
+        "observed": [
+          0.0458984375,
+          0.0458984375,
+          0.05859375,
+          0.15625
+        ],
+        "observed_interaction": 0.09765625,
+        "predicted_interaction": 0.026558467652648687,
+        "regime": "urgent_fifo",
+        "secondary": [
+          {
+            "mean_deadline_misses": 1.2734375,
+            "mean_good_responses": 0.0,
+            "mean_recovery_time_conditional": 7.0,
+            "mean_spending": 3.7734375
+          },
+          {
+            "mean_deadline_misses": 1.2734375,
+            "mean_good_responses": 0.0078125,
+            "mean_recovery_time_conditional": 6.723404255319149,
+            "mean_spending": 3.7734375
+          },
+          {
+            "mean_deadline_misses": 1.8330078125,
+            "mean_good_responses": 0.0,
+            "mean_recovery_time_conditional": 7.0,
+            "mean_spending": 4.857421875
+          },
+          {
+            "mean_deadline_misses": 2.0234375,
+            "mean_good_responses": 0.12890625,
+            "mean_recovery_time_conditional": 5.83125,
+            "mean_spending": 4.857421875
+          }
+        ]
+      }
+    ],
+    "simultaneous_halfwidth": 0.039111176738515496,
+    "source_freeze_sha256": "4dd0a30af475f2cb86e1c510abcd78120ceaeac9177a6b9283de608298d1ad2d",
+    "target_sha256": "6b319f8f51834fee8d87710c91e9a5294b701d0be7f4442294c61eb169b777f4",
+    "uncertainty": "Nominal cluster-bootstrap bands, conditional on calibrated proposal mixing distribution; domain component calibration uses first-order Gaussian delta propagation.",
+    "utc": "2026-10-04T22:52:12.592008+00:00"
+  },
+  "exact_transport_certificate": {
+    "status": "exact rational certificate",
+    "registered": false,
+    "explanation": "Post-run deduction from the predeclared oracle law, not a new held-out prediction or modified acceptance rule. The identity det(p outer q)=0 follows algebraically.",
+    "regimes": [
+      {
+        "regime": "reserved_control",
+        "recovery": [
+          {
+            "fraction": "969/3200",
+            "decimal": 0.3028125
+          },
+          {
+            "fraction": "969/1600",
+            "decimal": 0.605625
+          },
+          {
+            "fraction": "323/800",
+            "decimal": 0.40375
+          },
+          {
+            "fraction": "323/400",
+            "decimal": 0.8075
+          }
+        ],
+        "p": [
+          {
+            "fraction": "51/80",
+            "decimal": 0.6375
+          },
+          {
+            "fraction": "17/20",
+            "decimal": 0.85
+          }
+        ],
+        "conditional_q": [
+          {
+            "fraction": "19/40",
+            "decimal": 0.475
+          },
+          {
+            "fraction": "19/20",
+            "decimal": 0.95
+          },
+          {
+            "fraction": "19/40",
+            "decimal": 0.475
+          },
+          {
+            "fraction": "19/20",
+            "decimal": 0.95
+          }
+        ],
+        "determinant": {
+          "fraction": "0",
+          "decimal": 0.0
+        },
+        "interaction": {
+          "fraction": "323/3200",
+          "decimal": 0.1009375
+        }
+      },
+      {
+        "regime": "shared_fifo",
+        "recovery": [
+          {
+            "fraction": "13306631/102400000",
+            "decimal": 0.129947568359375
+          },
+          {
+            "fraction": "33778371/102400000",
+            "decimal": 0.329866904296875
+          },
+          {
+            "fraction": "202883083/1024000000",
+            "decimal": 0.1981280107421875
+          },
+          {
+            "fraction": "681853/1280000",
+            "decimal": 0.53269765625
+          }
+        ],
+        "p": [
+          {
+            "fraction": "53873/128000",
+            "decimal": 0.4208828125
+          },
+          {
+            "fraction": "2193/3200",
+            "decimal": 0.6853125
+          }
+        ],
+        "conditional_q": [
+          {
+            "fraction": "247/800",
+            "decimal": 0.30875
+          },
+          {
+            "fraction": "627/800",
+            "decimal": 0.78375
+          },
+          {
+            "fraction": "11934299/41280000",
+            "decimal": 0.2891060804263566
+          },
+          {
+            "fraction": "40109/51600",
+            "decimal": 0.7773062015503875
+          }
+        ],
+        "determinant": {
+          "fraction": "405472966596607/104857600000000000",
+          "decimal": 0.0038668915424023343
+        },
+        "interaction": {
+          "fraction": "137881917/1024000000",
+          "decimal": 0.1346503095703125
+        }
+      },
+      {
+        "regime": "urgent_fifo",
+        "recovery": [
+          {
+            "fraction": "4180589/102400000",
+            "decimal": 0.040826064453125
+          },
+          {
+            "fraction": "4180589/102400000",
+            "decimal": 0.040826064453125
+          },
+          {
+            "fraction": "2873731/51200000",
+            "decimal": 0.05612755859375
+          },
+          {
+            "fraction": "8077261/51200000",
+            "decimal": 0.15775900390625
+          }
+        ],
+        "p": [
+          {
+            "fraction": "31433/128000",
+            "decimal": 0.2455703125
+          },
+          {
+            "fraction": "1887/3200",
+            "decimal": 0.5896875
+          }
+        ],
+        "conditional_q": [
+          {
+            "fraction": "133/800",
+            "decimal": 0.16625
+          },
+          {
+            "fraction": "133/800",
+            "decimal": 0.16625
+          },
+          {
+            "fraction": "169043/1776000",
+            "decimal": 0.09518186936936937
+          },
+          {
+            "fraction": "475133/1776000",
+            "decimal": 0.26752984234234234
+          }
+        ],
+        "determinant": {
+          "fraction": "2175382027917/524288000000000",
+          "decimal": 0.004149211936792374
+        },
+        "interaction": {
+          "fraction": "520353/5120000",
+          "decimal": 0.1016314453125
+        }
+      }
+    ]
+  },
+  "live_independent_audit": {
+    "audit_method": "Independent standard-library scorer and exhaustive assignment enumeration; neither run.py nor analyze.py imported or executed.",
+    "audit_time_utc": "2026-10-04T23:44:42.477406+00:00",
+    "all_automated_checks_pass": true,
+    "errors": [],
+    "checks_by_category": {
+      "initial_frozen_hash": 3,
+      "analysis_frozen_hash": 1,
+      "manifest_cardinality": 1,
+      "fixture_frozen_hash": 32,
+      "baseline_prompt_frozen_hash": 32,
+      "successor_assignment_frozen_hash": 1,
+      "maintenance_sealed_hash": 32,
+      "successor_cardinality": 1,
+      "successor_prompt_frozen_hash": 64,
+      "randomization_blocks": 1,
+      "A_balance": 8,
+      "A_seed_reproduction": 1,
+      "B_seed_reproduction_and_pairing": 32,
+      "truth_coverage": 2,
+      "response_schema": 128,
+      "slot_schema": 32,
+      "packet_schema": 32,
+      "reason_schema": 32,
+      "allocation_packet_consistency": 32,
+      "baseline_snapshot_equality": 32,
+      "baseline_even_parity": 32,
+      "test_odd_parity": 32,
+      "test_report_novelty": 32,
+      "service_test_overlap": 32,
+      "report_identifies_candidate_family": 32,
+      "classical_report_learner": 32,
+      "classical_successor_score": 32,
+      "common_founder_orientation": 32,
+      "public_legacy_mapping": 32,
+      "baseline_public_rows": 32,
+      "baseline_no_report": 32,
+      "maintenance_actual_baseline": 32,
+      "timely_verified_report_and_service": 16,
+      "timely_actual_score": 16,
+      "common_successor_orientation": 64,
+      "exact_assigned_payload": 64,
+      "recorded_packet_validity": 64,
+      "successor_public_rows": 64,
+      "no_successor_test_labels": 64,
+      "paired_context_equal_except_payload": 32,
+      "delayed_no_labels_or_score": 16,
+      "common_maintenance_incentives": 1,
+      "reported_primary_agreement": 12,
+      "reported_lineage_agreement": 288,
+      "raw_response_count": 1,
+      "local_timing_A": 1,
+      "local_timing_B": 1,
+      "local_timing_initial_freeze": 1,
+      "local_timing_analysis_freeze": 1,
+      "local_timing_successor_freeze": 1,
+      "local_prompt_before_response": 128,
+      "orchestrator_record_cardinality": 1,
+      "orchestrator_declared_fresh_start": 96,
+      "orchestrator_declared_founder_continuation": 32,
+      "orchestrator_record_response_coverage": 1
+    },
+    "raw_response_counts": {
+      "founder_baselines": 32,
+      "founder_maintenance": 32,
+      "successors": 64
+    },
+    "successor_prompt_files": 64,
+    "distinct_successor_prompt_byte_strings": 44,
+    "primary": {
+      "feedback_to_maintenance": {
+        "effect": 1.0,
+        "tail_count": 2,
+        "permutations": 46656,
+        "p_two_sided": 4.286694101508916e-05,
+        "bonferroni_adjusted_p": 0.00012860082304526747,
+        "passes_registered_criterion": true
+      },
+      "factorial_interaction": {
+        "effect": 0.25,
+        "tail_count": 2,
+        "permutations": 46656,
+        "p_two_sided": 4.286694101508916e-05,
+        "bonferroni_adjusted_p": 0.00012860082304526747,
+        "passes_registered_criterion": true
+      },
+      "access_after_feedback": {
+        "effect": 0.25,
+        "tail_count": 2,
+        "permutations": 4096,
+        "p_two_sided": 0.00048828125,
+        "bonferroni_adjusted_p": 0.00146484375,
+        "passes_registered_criterion": true
+      }
+    },
+    "arm_summary": [
+      {
+        "stratum": "challenge",
+        "A": 0,
+        "n": 12,
+        "packets": 0,
+        "baseline_correct": 72,
+        "baseline_cases": 96,
+        "service_attempted": 48,
+        "service_correct": 33,
+        "Y0_correct": 144,
+        "Y1_correct": 144,
+        "successor_cases_per_B": 192
+      },
+      {
+        "stratum": "challenge",
+        "A": 1,
+        "n": 12,
+        "packets": 12,
+        "baseline_correct": 72,
+        "baseline_cases": 96,
+        "service_attempted": 36,
+        "service_correct": 36,
+        "Y0_correct": 144,
+        "Y1_correct": 192,
+        "successor_cases_per_B": 192
+      },
+      {
+        "stratum": "adequate",
+        "A": 0,
+        "n": 4,
+        "packets": 0,
+        "baseline_correct": 32,
+        "baseline_cases": 32,
+        "service_attempted": 16,
+        "service_correct": 16,
+        "Y0_correct": 64,
+        "Y1_correct": 64,
+        "successor_cases_per_B": 64
+      },
+      {
+        "stratum": "adequate",
+        "A": 1,
+        "n": 4,
+        "packets": 0,
+        "baseline_correct": 32,
+        "baseline_cases": 32,
+        "service_attempted": 16,
+        "service_correct": 16,
+        "Y0_correct": 64,
+        "Y1_correct": 64,
+        "successor_cases_per_B": 64
+      }
+    ],
+    "lineages": [
+      {
+        "id": "L01",
+        "stratum": "adequate",
+        "A": 1,
+        "M": 0,
+        "baseline_correct": 8,
+        "packet_words": 0,
+        "reason_words": 32,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L02",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 71,
+        "reason_words": 24,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L03",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 28,
+        "service_attempts": 4,
+        "service_correct": 2,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L04",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 32,
+        "service_attempts": 4,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L05",
+        "stratum": "adequate",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 8,
+        "packet_words": 0,
+        "reason_words": 36,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L06",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 80,
+        "reason_words": 31,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L07",
+        "stratum": "adequate",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 8,
+        "packet_words": 0,
+        "reason_words": 36,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L08",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 60,
+        "reason_words": 20,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L09",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 28,
+        "service_attempts": 4,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L10",
+        "stratum": "adequate",
+        "A": 1,
+        "M": 0,
+        "baseline_correct": 8,
+        "packet_words": 0,
+        "reason_words": 33,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L11",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 30,
+        "service_attempts": 4,
+        "service_correct": 2,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L12",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 66,
+        "reason_words": 31,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L13",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 72,
+        "reason_words": 30,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L14",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 79,
+        "reason_words": 32,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L15",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 72,
+        "reason_words": 31,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L16",
+        "stratum": "adequate",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 8,
+        "packet_words": 0,
+        "reason_words": 29,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L17",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 33,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L18",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 32,
+        "service_attempts": 4,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L19",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 75,
+        "reason_words": 28,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L20",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 31,
+        "service_attempts": 4,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L21",
+        "stratum": "adequate",
+        "A": 1,
+        "M": 0,
+        "baseline_correct": 8,
+        "packet_words": 0,
+        "reason_words": 33,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L22",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 78,
+        "reason_words": 34,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L23",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 31,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L24",
+        "stratum": "adequate",
+        "A": 1,
+        "M": 0,
+        "baseline_correct": 8,
+        "packet_words": 0,
+        "reason_words": 34,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L25",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 37,
+        "service_attempts": 4,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L26",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 35,
+        "service_attempts": 4,
+        "service_correct": 2,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L27",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 32,
+        "service_attempts": 4,
+        "service_correct": 2,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L28",
+        "stratum": "adequate",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 8,
+        "packet_words": 0,
+        "reason_words": 27,
+        "service_attempts": 4,
+        "service_correct": 4,
+        "Y0_count": 16,
+        "Y1_count": 16,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L29",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 69,
+        "reason_words": 32,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L30",
+        "stratum": "challenge",
+        "A": 0,
+        "M": 0,
+        "baseline_correct": 6,
+        "packet_words": 0,
+        "reason_words": 34,
+        "service_attempts": 4,
+        "service_correct": 2,
+        "Y0_count": 12,
+        "Y1_count": 12,
+        "gain_count": 0,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L31",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 70,
+        "reason_words": 28,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      },
+      {
+        "id": "L32",
+        "stratum": "challenge",
+        "A": 1,
+        "M": 1,
+        "baseline_correct": 6,
+        "packet_words": 74,
+        "reason_words": 28,
+        "service_attempts": 3,
+        "service_correct": 3,
+        "Y0_count": 12,
+        "Y1_count": 16,
+        "gain_count": 4,
+        "classical_report_learner_correct": 16
+      }
+    ],
+    "timing": {
+      "last_baseline": "2026-10-04T23:04:46.765593+00:00",
+      "A_file": "2026-10-04T23:05:26.960015+00:00",
+      "first_maintenance": "2026-10-04T23:06:28.141219+00:00",
+      "last_maintenance": "2026-10-04T23:18:08.466846+00:00",
+      "B_file": "2026-10-04T23:18:33.589751+00:00",
+      "first_successor": "2026-10-04T23:19:00.027842+00:00",
+      "last_successor": "2026-10-04T23:38:28.573535+00:00"
+    },
+    "limits": [
+      "Local timestamps and self-generated hashes support integrity but are not external notarization.",
+      "Prompt-file hashes do not by themselves prove invocation identity, fresh context, or full tool-trace compliance.",
+      "Filesystem restrictions were instructional, not a security sandbox.",
+      "All successor contexts are novel relative to the verified baseline, but four test cases also appeared as maintenance-stage ordinary cases.",
+      "The opportunity cost is one foregone case, not necessarily one lost correct point.",
+      "The conventional candidate-elimination learner matches 16/16 with the complete report in every fixture.",
+      "Exact probabilities test sharp finite-assignment nulls and do not establish weak-average interaction inference or population generalization."
+    ],
+    "orchestrator_record": {
+      "provenance": "Orchestrator record reconstructed from the actual dispatch calls in this conversation; not an independently authenticated platform log or a complete participant tool trace.",
+      "distinct_declared_participants": 96,
+      "declared_fresh_founder_contexts": 32,
+      "declared_fresh_successor_contexts": 64,
+      "independent_platform_attestation": false,
+      "complete_tool_trace_audit": false,
+      "actual_model_identifier": "not recorded by exposed collaboration responses"
+    }
+  }
+}

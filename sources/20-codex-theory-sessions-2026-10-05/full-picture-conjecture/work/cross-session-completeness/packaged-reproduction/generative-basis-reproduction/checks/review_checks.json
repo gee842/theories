@@ -1,0 +1,68 @@
+{
+  "producer_sha256": "91bf94fdba56c8783a84b8ecfdc0d3c2a90f457ab10ee6af916aed8fd1e3c346",
+  "formal_sha256": "88ab9787ca40b6c12f9997793ee0285d2602855127380caa99ef44624ea0ca0a",
+  "review_script_sha256": "86f1de514c527f484e63917f619783c27a20b47d3a800ff84074cf6cd8c9d0d0",
+  "structural_note_sha256": "5293ac3553462256cd38521f4f87d7a45cddef7a65d02df6d68f5aa3992e325a",
+  "structural_producer_sha256": "22631d963edcd8cf96c2a6110bbc452b272dfe310f119870c1d0a2ea799e6fcf",
+  "structural_results_sha256": "60b4a413381fda7d649c6535393549984bfd027da21c1b7e58ca003207da642b",
+  "partition_results": [
+    {
+      "states": 1,
+      "all_functions_enumerated": 1,
+      "distinct_partitions": 1
+    },
+    {
+      "states": 2,
+      "all_functions_enumerated": 4,
+      "distinct_partitions": 2
+    },
+    {
+      "states": 3,
+      "all_functions_enumerated": 27,
+      "distinct_partitions": 5
+    },
+    {
+      "states": 4,
+      "all_functions_enumerated": 256,
+      "distinct_partitions": 15
+    },
+    {
+      "states": 5,
+      "all_functions_enumerated": 3125,
+      "distinct_partitions": 52
+    },
+    {
+      "states": 6,
+      "all_functions_enumerated": 46656,
+      "distinct_partitions": 203
+    }
+  ],
+  "shared_noise_equality_probabilities": [
+    "1",
+    "0"
+  ],
+  "atomicity_witness_register_codes": [
+    2,
+    3,
+    1
+  ],
+  "structural_common_noise_branch_pairs": 32768,
+  "structural_maintenance_burden_probabilities": [
+    "0",
+    "1/4"
+  ],
+  "structural_badge_next_authority": [
+    0,
+    1
+  ],
+  "three_step_complete_noise_words_examined": 128,
+  "three_step_original_burden_probabilities": [
+    "3/8",
+    "13/16"
+  ],
+  "three_step_analytic_probabilities": [
+    "3/8",
+    "13/16"
+  ],
+  "status": "all bounded independent checks passed; proofs still supply universal claims"
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 1209,
+    "sha256": "ff22c17453243307fdb880488b0cd270b543c3d9b356bf49eea1fab245ef6d82"
+  },
+  {
+    "path": "checks/core-counterexamples-results.json",
+    "bytes": 892,
+    "sha256": "b51882b86e3dfb448f4d609fa1856c7f07dbb34c84af3eaa27ecc02cfd8d603f"
+  },
+  {
+    "path": "checks/core_counterexamples.py",
+    "bytes": 2763,
+    "sha256": "30bfd7082e7a64b16c45f72e7ec991199ff48a577e8475ac2faf730cd23229e8"
+  },
+  {
+    "path": "checks/formal_checks.json",
+    "bytes": 685,
+    "sha256": "7d380317d309013eddb5bd84975fdcdba9e261f901a93cd41cac3766851bd599"
+  },
+  {
+    "path": "checks/formal_verify.py",
+    "bytes": 4079,
+    "sha256": "de3a46d644ad57e84fdd2f16b8b500e4bc353c032b1472423d8e4dc8ca775da8"
+  },
+  {
+    "path": "checks/prior_checks.json",
+    "bytes": 2197,
+    "sha256": "0c5f899800dcf053bb3f18dcc44a9709781c65891af9b85ca7e0a39beb18ae5e"
+  },
+  {
+    "path": "checks/prior_checks.py",
+    "bytes": 5050,
+    "sha256": "842ca253814f7f15d1a2814050d42c28847ca3cb36d61d7672eba79f57c7779f"
+  },
+  {
+    "path": "checks/prior_schedule_guard.json",
+    "bytes": 630,
+    "sha256": "ab99e1181ca5051d0c7b3c19132982162ef1e604853cb04492da56e5e1b5dc7f"
+  },
+  {
+    "path": "checks/prior_schedule_guard.py",
+    "bytes": 2318,
+    "sha256": "dd81fb67d3b03e63d5e418bf469262f757b5066839779d1911068a40470bdb28"
+  },
+  {
+    "path": "reference-snapshots/2026-10-04-selection-and-generative-conditions.md",
+    "bytes": 30926,
+    "sha256": "a36c8b4a0df8e62d7022c56358ca3cab1b06b4b7613a4d1eaba5a3bed51d70fd"
+  },
+  {
+    "path": "reference-snapshots/2026-10-04-universal-constraints-and-maintained-correction.md",
+    "bytes": 18589,
+    "sha256": "e9245aaf5a7483c515ec615d6e2ce75b932f549dae7cc8bea8223a284bc9b363"
+  },
+  {
+    "path": "reference-snapshots/2026-10-05-inherited-evidence-under-model-revision.md",
+    "bytes": 16952,
+    "sha256": "e84233cded658ee5fce64daa5e8fa843aed4ac7ce457ae81d2cfd16fb053e837"
+  },
+  {
+    "path": "reference-snapshots/2026-10-05-recoverable-inquiry.md",
+    "bytes": 16339,
+    "sha256": "07613452ef430dcec784b2aaadc67b6c6a868770c40257a4a28d4770d18ec42f"
+  },
+  {
+    "path": "reference-snapshots/2026-10-05-renewal-of-inquiry.md",
+    "bytes": 17397,
+    "sha256": "5f982e6862c9be868e68de3966a305487d741e3c6b9a4bb11f99c71615c2003a"
+  },
+  {
+    "path": "reference-snapshots/2026-10-05-selection-and-continuity-of-renewal.md",
+    "bytes": 17146,
+    "sha256": "ba2667b8c096ffb710d650db2af718611c278860625c4e5d13e9e36d0747d3b2"
+  },
+  {
+    "path": "reference-snapshots/CLAIMS.md",
+    "bytes": 49246,
+    "sha256": "641b73f2641acbdcaba7db9705298ff4d00c8357e044c1db899b8808b4479453"
+  },
+  {
+    "path": "reference-snapshots/README.md",
+    "bytes": 30469,
+    "sha256": "13029b636eceefba7feebe4583c63d240992aa0b416f1a2097c7f8f504181ff3"
+  },
+  {
+    "path": "reference-snapshots/manifest.json",
+    "bytes": 3131,
+    "sha256": "8f2e059ae1f28e9a72ae733627757f9ba69670c7c9536a52e2b6b7405191a483"
+  }
+]

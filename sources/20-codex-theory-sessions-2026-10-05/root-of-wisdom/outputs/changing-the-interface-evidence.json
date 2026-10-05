@@ -1,0 +1,1758 @@
+{
+  "title": "Changing the interface: model, proof, and provenance",
+  "packaged_utc": "2026-10-05T02:37:24.975321+00:00",
+  "report": {
+    "path": "outputs/changing-the-interface.md",
+    "sha256": "0fd70e74556689b4072fa7b2eab585f06400e32da3d7d7cde9122cae8b588a44",
+    "word_count_whitespace": 2628
+  },
+  "status": "conditional mathematical construction; checks passed",
+  "scope": {
+    "repertoire": "Two supplied resource-specific interfaces and a two-tick rebuilding primitive.",
+    "sufficient_contract": "Capacity and initial reserve 3; either coherent interface fully fitted and ready, with no rebuild underway; start at phase beginning; each constant-availability phase lasts at least 4 ticks; arbitrary processing bits read only by matching sensor.",
+    "necessary_capacity": "Below 3, any two-tick rebuild exhausts reserve before completion while alive.",
+    "necessary_dwell_at_capacity_3": "Alternating pure-resource phases of length 3 defeat all controllers, even with perfect future knowledge. Counting proof gives death by 21; exhaustive full-information action-history propagation gives no survivor after tick 14.",
+    "comparison": "Every permanently fitted receptor/transporter/converter choice under the same one-slot-per-module physical budget; not every fixed algorithm.",
+    "dwell3_check_scope": "The joint-model graph checks the implemented reactive policy only. The independent limits audit and all-history enumeration establish impossibility for every allowed controller.",
+    "general_theorem": "Finite known-model partial-information indefinite safety, with nonempty transitions and unavailable actions entering absorbing failure.",
+    "tests": "Exact finite enumeration and reachable-state analysis. No physical, biological, human-subject, or other-session experiment was rerun.",
+    "claim_limit": "No scientific priority, derivation of monism, subjective experience, ethical criterion, new purpose, or unforeseen capability is established."
+  },
+  "proofs": [
+    {
+      "path": "work/transformation/joint-model-notes.md",
+      "sha256": "724eeed1d21ec8fa3388d213d29eacaac173a6ba0e2f13e35271625430508735",
+      "content": "# A resource-limited organization that changes its interface\n\nConstructed mathematical model, 5 October 2026. This is a conditional existence proof, not a fitted biological or physical experiment. No earlier output was modified.\n\n## The explanatory target\n\nThe earlier models supplied a fixed sensor, actuator, and vulnerability. This construction joins three changes in one continuing process: which distinctions a receptor makes available, which conversion action can acquire support, and which substances the material interface admits. A fixed physical configuration cannot continue through the specified resource history. A fixed, locally informed program that actually rebuilds that configuration can.\n\nThe comparison is physical. Reconfiguration is itself describable by a larger fixed state-transition law. The result does not establish a computational capacity beyond fixed algorithms or eliminate the need to supply a repertoire of possible configurations.\n\n## Supplied structure and fair resource constraints\n\nThere are two substrate families, A and B. At each tick the available families are one of `{A}`, `{B}`, or `{A,B}`. These availability sets occur in phases lasting at least four ticks. Initial time is the first tick of a phase. This initialization condition matters: minimum full phase length alone does not bound the residual length of a phase already underway.\n\nEach available family has a current processing bit, `h_A` or `h_B`. It specifies which of two conversion settings produces usable input from that family's current form. The bits can vary arbitrarily every tick and independently of each other. They are not regime labels freely visible to the controller.\n\nThe organization has a continuing core, a reserve `r` with capacity three, and three physical module slots:\n\n| Slot | A module does | B module does |\n|---|---|---|\n| Receptor | Reports A's presence and, when present, `h_A`. | Reports B's presence and, when present, `h_B`. |\n| Transporter | Admits A. | Admits B. |\n| Converter | Converts admitted A with a chosen processing setting. | Converts admitted B with a chosen processing setting. |\n\nEach slot holds at most one module. A universal module that handles both families is not in the supplied repertoire; keeping both sets installed violates the slot constraint. These are explicit model premises, not a theorem that actual organisms or all possible hardware must face the same tradeoff.\n\nA ready organization normally aligns all three slots with one family `q`. It can choose processing setting `a=0` or `a=1`. Input is two units exactly when transporter and converter types agree on an available family and `a=h_q`; otherwise input is zero. A mismatched setting is unproductive, rather than instantly fatal. Every tick consumes one unit for maintaining the core and interfaces. Reserve after the combined input/maintenance balance is\n\n\\[\nr' = \\min(3,\\ r-1+I), \\qquad I\\in\\{0,2\\}.\n\\]\n\nInput may pay current maintenance before surplus storage is clipped; this is not `min(3,r+I)-1`. Zero reserve is absorbing and disables all further operation. Continued functioning means `r>=1` after every tick. The dynamics therefore supply the specified functional criterion through the continued availability of sensing, actuation, and rebuilding. The model does not derive the ethical desirability of indefinite continuation.\n\nRebuilding removes and replaces the three modules. It occupies two whole ticks, with no input on either tick and one unit of maintenance per tick. The initiating decision can read the old receptor. The second rebuild tick supplies no observation; the new receptor becomes usable at the start of the next tick. An orientation flag retained by the continuing core determines which set is being installed. There is no instantaneous change, free harvest during reconstruction, reset of reserves, or resurrection after failure.\n\nThis modifies the selective material coupling at the boundary. It does not derive a spatial compartment, its supporting substrate, or new module designs from undifferentiated matter. The remaining enclosure and core are supplied; their operation depends on reserve.\n\n## The implemented local policy\n\nInitially, `r=3` and either aligned interface may be fitted. The policy is:\n\n1. If a rebuild is underway, complete its second tick.\n2. Otherwise read the currently fitted receptor. If its family is present, choose the reported processing setting and harvest.\n3. If the receptor reports absence, begin rebuilding the other family's interface.\n\nThere is no global phase clock or access to the other processing bit. The assumption that at least one family is available makes absence of the currently fitted family a warranted reason to try the other; it is not a discovery of an unmodeled substrate. Current processing bits are read before that tick's selected conversion action.\n\n## Indefinite continuation theorem\n\n**Theorem.** With capacity and initial reserve three, initialization at a phase's first tick, arbitrary initial aligned interface, arbitrary processing bits, and every availability phase lasting at least four ticks, the implemented local policy never reaches zero reserve.\n\n**Proof.** At a phase's start assume reserve three and an aligned ready interface. If that family is present, each harvest gains one net unit before clipping, so reserve stays three throughout the phase. If it is absent, the other family is present and remains present through the phase. Two rebuild ticks and two successful harvests produce the exact reserve path\n\n\\[\n\\boxed{3\\to2\\to1\\to2\\to3.}\n\\]\n\nAfter those four ticks the fitted family is present and reserve is three. Any additional ticks preserve that state. The phase ends with the induction conditions restored. The initial state satisfies them, establishing the claim for every finite prefix and therefore every admitted infinite history. The current processing bits cannot break the argument because every harvest uses the corresponding current receptor report. □\n\nFour-tick dwell is a sufficient contract for this local policy. At capacity three it is also sharp for a guarantee over all allowed availability histories, as the resource-counting proof below establishes. That necessity is not inferred merely from failure of the reactive policy.\n\nThe initialization condition also has a checked counterexample. Start with A fitted and reserve three, but with only one B-only tick left in an old phase. The first rebuild tick leaves reserve two. The world changes to A-only during the second rebuild tick; the new B interface comes online with reserve one. It then detects absence and cannot begin another rebuild without reaching zero. Every complete phase could still have length at least four. Thus arbitrary starting phase age cannot be silently added to the theorem.\n\n## Why every fixed physical configuration fails\n\nUse one common environment: four A-only ticks, four B-only ticks, and repeat. Give a fixed configuration perfect knowledge of all processing bits and any software or memory it wants. If its transporter and converter have different types, it never receives usable input. If both have type A, the B-only phase yields no input; if both have type B, the A-only phase yields no input. In either case reserve at most three reaches zero by the third tick of an opposite phase. A sensor cannot compensate for the absent physical conversion path.\n\nThis proves failure for all fixed choices of the three supplied modules, including mixed choices. Permitting the program to rebuild a slot changes the physical configuration and is exactly the capability under investigation; such a fixed program is not excluded from the successful class.\n\nThe comparison traces are:\n\n| Configuration or intervention | First failure tick on A×4, B×4, A×4 | Reason |\n|---|---:|---|\n| Complete reconfiguration | None; final reserve 3 | Both changes preserve the path `3,2,1,2,3`. |\n| Fixed A | 7 | B cannot supply usable input. |\n| Fixed B | 3 | A cannot supply usable input. |\n| Receptor frozen at A, remaining implemented controller retained | 7 | After switching the other modules to B, B's presence and processing bit remain unavailable. |\n| Transporter frozen at A | 7 | B cannot cross the material interface. |\n| Converter frozen at A | 7 | Admitted B cannot be converted. |\n\nThe intervention trajectories alone concern the implemented controller. The following arguments establish the broader limitations.\n\n## Independent causal roles and a changing relevant distinction\n\n**Transport and conversion.** If either module remains permanently A while only B is available, no choice of the other module, either sensor, or either processing setting can produce input. Even perfect external information cannot repair that material limitation. The same holds with A and B exchanged.\n\n**Sensing.** Hold the transporter and converter at B, the receptor at A, and let only B be available. Two situations with `h_B=0` and `h_B=1` produce the same absent-A record. At reserve one, their safe harvest action sets are `{0}` and `{1}`. Rebuilding or waiting also reaches zero from reserve one. There is no action safe in both situations. The B receptor resolves the difference. For any deterministic controller lacking that observation, a permitted sequence of B processing bits can oppose every selected setting and keep input zero. Randomization cannot give a guarantee over all allowed histories and outcomes. This is an information limitation, not a low-quality policy claim.\n\nThe receptor changes more than a label. With A installed, it reveals `h_A` and leaves independent `h_B` unobserved. With B installed, the reverse holds. Under an A-compatible material organization, `h_A` changes which action produces support, while `h_B` does not affect that immediate conversion. After reconstruction the relevant processing distinction reverses. The need for the distinction follows from the specified supporting reaction; a separate rule does not award points merely for adopting a new viewpoint.\n\nOne must not generalize that dependence to every possible sense of significance. The supplied material repertoire, vulnerability, and preservation criterion still delimit the conclusion. The model does not generate arbitrary purposes or establish moral reasons from metabolism.\n\n## Present operation and realizable transformation separate\n\nA correctly matched organization with reserve one, two, or three can harvest successfully in the current tick. But initiating a two-tick rebuild from reserve one or two necessarily reaches zero before the new interface can supply input. Correctly recognizing the needed change does not create the resources to carry it out.\n\n**Exact resource threshold.** Under the supplied rebuild primitive, a reserve capacity at most two makes every reconstruction fatal, irrespective of the controller's information or foresight. Without reconstruction, the alternating A/B environment eventually defeats any fixed physical configuration. Thus capacity at least three is necessary for guaranteed continuation through that environment. Capacity three is sufficient under the stated dwell and initialization contract.\n\nThe controller's guarantee depends on recovering its reserve before the next disturbance. It preserves not only present conversion but the ability to traverse a temporary interruption in input. The successful history never visits the absorbing state, so the persistence proved is uninterrupted continuation of the modeled core. An independently initialized copy would be a different history.\n\n**Sharp timing contract at capacity three.** Let pure A and pure B phases alternate every three ticks. Suppose an arbitrary allowed controller survives `n` complete phases, starting ready with reserve three. Every phase must contain a successful harvest: three ticks without one exhaust capacity three. Select one successful harvest per phase. Their family types alternate, so between successive selected harvests there must be at least one completed reconstruction. There are therefore at least `n-1` reconstructions, consuming `2(n-1)` ticks without harvest. If `H` denotes successful harvests during these `3n` ticks,\n\n\\[\nH\\le3n-2(n-1)=n+2,\n\\qquad\nr_{3n}\\le3+H-(3n-H)\\le7-n.\n\\]\n\nClipping surplus at capacity can only reduce this upper bound. At seven phases, survival requires reserve at least one but the bound is zero. This contradiction applies even with perfect foresight and anticipatory reconstruction. It proves that a universal minimum-dwell guarantee cannot be reduced to three at capacity three. Independent exhaustive propagation over all harvest, wait, and reconstruct histories in the [limits audit](limits-audit.md) finds no history survives tick fourteen; the simpler twenty-one-tick analytical bound is not claimed sharp. Capacity four changes this particular counterexample: a fixed interface can bridge each three-tick absence while remaining positive. The stated necessity is specific to capacity three and the stipulated actions.\n\n## Verification\n\n`check_joint_model.py` uses integer arithmetic and the Python standard library. `joint-model-checks.json` contains complete traces and scopes.\n\n- 192 local rule cases include every reserve, interface, rebuilding state, availability set, and pair of current processing bits.\n- 192 type-swap cases verify that exchanging A and B commutes with the complete law.\n- 1,536 four-tick blocks cover every independent processing-bit history in each aligned initial-interface and fixed-availability case.\n- 128 physical-module ablation cases verify zero intake under frozen incompatible transport or conversion.\n- Four same-record/different-safe-action witnesses verify the sensing limitation.\n- Exhaustive finite-state reachability for the implemented policy and all allowed phase changes finds 24 reachable states and 36 edges at minimum dwell four, no dead state, and minimum reserve one. Processing bits are soundly quotiented after the local checks establish identical controlled successors for all values. At minimum dwell three, the graph has two reachable dead states; at dwell two it has eight. Those graph counts concern this policy. The broader impossibility at capacity three and minimum dwell three is separately proved above and checked by the independent limits audit.\n- Six comparison trajectories, an insufficient-initial-reserve trajectory, and the unknown-initial-phase-age counterexample are recorded.\n\nThe finite graph covers arbitrarily long histories by exploring every reachable node and allowed successor, rather than stopping after a sample time horizon. The displayed induction proves the general four-tick result independently of that enumeration.\n"
+    },
+    {
+      "path": "work/transformation/limits-audit.md",
+      "sha256": "e8543ea508046e89cc52fd26813c1f5315ae561e66187e95144869aad3bad02f",
+      "content": "# Independent audit: transformation, information, and continued viability\n\n5 October 2026. This note reviews the proposed next branch against `outputs/differentiation-and-viewpoints.md`. It supplies original finite-model proofs and counterexamples. It does not revise earlier outputs or claim a new result in the general mathematical literature. No external claim is needed for the proofs below.\n\n## Verdict\n\nThere is a substantive advance if one integrated mechanism pays the costs of changing its sensing, accessible inputs, and conversion machinery, then survives an environmental sequence that every permanently fitted configuration fails. The comparison must name that restricted fixed-configuration class. A finite controller that changes its hardware is itself a fixed larger dynamical system once hardware configuration is included in the state.\n\nThe most useful generalization is: **adequacy is a property of available information, feasible action, and the transitions through which those capabilities can be maintained or changed.** It is not a property of an observation partition considered alone. A distinguishing experiment can exist while every way to perform it destroys the system before it can use the result.\n\n## 1. A finite multi-step extension of the information–action criterion\n\nLet \\(X\\) be a finite set of world-and-organization states, \\(A\\) a finite action set, and \\(g:X\\to O\\) the observation available before each action. The state includes any hardware configuration, stored resources, environmental phase, and relevant physical memory. Let\n\n\\[\nF:X\\times A\\to 2^X\\setminus\\{\\varnothing\\}\n\\]\n\ngive the possible successors. Nondeterminism represents all disturbances allowed by the stated contract. An unavailable action leads to a distinguished absorbing failure state, rather than silently removing its incompatible worlds from consideration. Let \\(K\\subseteq X\\) be the explicitly stated set of acceptable continuing states; failure is outside \\(K\\).\n\nA belief \\(B\\) is the nonempty set of states still compatible with the complete available history. At a decision instant, \\(B\\) lies in one observation class of \\(g\\). Let \\(\\mathcal B_K\\) be the finite set of all such nonempty beliefs contained in \\(K\\).\n\nFor an action \\(a\\), define\n\n\\[\nP(B,a)=\\bigcup_{x\\in B}F(x,a),\\qquad\nU(B,a,o)=P(B,a)\\cap g^{-1}(o).\n\\]\n\nThe belief update retains exactly the successor states compatible with the next observation. Define\n\n\\[\n\\Phi(W)=\\{B\\in\\mathcal B_K:\\exists a\\in A,\n\\ P(B,a)\\subseteq K\\ \\text{and}\n\\ \\forall o,\\ U(B,a,o)\\ne\\varnothing\\Rightarrow U(B,a,o)\\in W\\}.\n\\tag{1}\n\\]\n\nStarting with \\(W_0=\\mathcal B_K\\), set \\(W_{n+1}=\\Phi(W_n)\\). These sets descend, and stabilize after at most \\(|\\mathcal B_K|\\) strict eliminations. Write \\(W_\\infty\\) for the fixed point.\n\n**Theorem.** A history-dependent policy can keep the system in \\(K\\) forever, against every allowed disturbance sequence from initial belief \\(B_0\\), if and only if \\(B_0\\in W_\\infty\\).\n\n**Proof.** Inductively, \\(W_n\\) consists exactly of beliefs from which some policy guarantees safety for the next \\(n\\) transitions. To extend a guarantee by one step, one action must be safe for every currently possible state, and the resulting belief after every possible observation must have an \\(n\\)-step continuation. This is exactly (1). At a fixed-point belief choose one witnessing action. The next belief stays in the fixed point, so repeating the choice guarantees safety indefinitely. Conversely, any indefinite policy guarantees every finite horizon and therefore its initial belief belongs to every \\(W_n\\), hence to their stabilized intersection. □\n\nFor this safety objective a policy depending only on the current belief suffices; this does not mean that the current raw sensor value suffices. The belief already summarizes the relevant history under the supplied transition model. Randomization cannot create a sure safety guarantee when every available action has an allowed failing continuation.\n\nIf a requirement is terminal success at a finite horizon rather than safety at every step, use backward recursion from the specified acceptable terminal beliefs. Do not identify finite-horizon success, indefinite safety, eventual success, or repeated attainment: their objectives and recursions differ.\n\n### Relation to the one-step intersection criterion\n\nFor one transition, define \\(A_K(x)=\\{a:F(x,a)\\subseteq K\\}\\). Then\n\n\\[\nB\\in W_1\\quad\\Longleftrightarrow\\quad\n\\bigcap_{x\\in B}A_K(x)\\ne\\varnothing.\n\\]\n\nFor multiple steps, the action must also preserve a successor belief with a viable continuation. **An immediately acceptable common action is necessary but need not be sufficient for continued viability.**\n\nReconfiguring a sensor or a boundary does not invalidate the theorem. Include configuration in \\(X\\), let observations and transitions depend on it, and include the reconfiguration's intermediate states and costs. Changing the represented state variables without supplying their transition mechanism would instead change the model from outside.\n\n## 2. Four exact failure cases\n\n### A. Every actual state is individually controllable, but the viewpoint is inadequate\n\nTwo states \\(x,y\\) give the same observation. In \\(x\\), action 0 returns to \\(x\\) while action 1 fails. In \\(y\\), action 1 returns to \\(y\\) while action 0 fails. Each singleton is viable with full information; the belief \\(\\{x,y\\}\\) is not. Combining statewise viability kernels without preserving the common-action constraint makes a false guarantee.\n\n### B. A safe first step can be a dead end\n\nBoth available actions take safe state \\(x\\) to safe state \\(y\\); both actions at \\(y\\) lead to failure. At \\(x\\) the immediate common-action intersection is nonempty, but there is no indefinitely safe policy. The fixed-point recursion removes \\(y\\), then \\(x\\).\n\n### C. Acquiring a distinction can repair the problem\n\nBefore a probe, worlds 0 and 1 have the same observation and require opposite terminal actions. A probe preserves safety and produces distinguishable records of the two worlds. The probe followed by the corresponding response succeeds. A criterion that examines only current terminal responses would miss this viable history policy.\n\n### D. The same distinction can be unreachable while alive\n\nChange only the probe so it destroys the organization in world 1. Now neither immediate response works in both worlds, and probing cannot guarantee continuation. Perfect information in a hypothetical successor state is irrelevant if reaching it violates the requirement. No amount of describing the distinction replaces a feasible path to it.\n\nThe check program verifies these cases and independently compares (1) to exhaustive stationary belief-policy enumeration for all 81 deterministic transition tables with two safe states, two actions, and one failure state, under both observation partitions. Across 162 systems and 972 policies the winning beliefs agree exactly. These checks detect implementation mistakes; the theorem rests on the proof.\n\n## 3. Audit of the proposed joint receptor–transporter–converter construction\n\nThe shared construction has one fitted type \\(q\\in\\{A,B\\}\\), a resource reserve \\(r\\le K\\), and a receptor, selective transporter, and converter fitted to that type. Availability is \\(E_t\\in\\{\\{A\\},\\{B\\},\\{A,B\\}\\}\\). The processing bit \\(h_q\\) is revealed by the fitted receptor when its resource is present. Correct processing yields 2 reserve units before maintenance costs 1; the stored reserve is capped at \\(K\\). A two-tick reconstruction changes the fitted triplet, supplies no harvest, and costs 1 on each tick. A state is alive only if \\(r\\ge1\\) after every tick; depletion prevents further reconstruction and operation.\n\nFor the proposed controller, absent fitted input triggers reconstruction immediately. With \\(K=3\\), a reconstruction followed by two successful processing ticks gives the reserve path\n\n\\[\n3\\longrightarrow2\\longrightarrow1\\longrightarrow2\\longrightarrow3.\n\\]\n\nIf every constant-availability phase lasts at least four ticks, the process starts at the beginning of such a phase with reserve 3, and the initial fitted type is arbitrary, the first four ticks either retain a present type or complete that path. Once restored, continued availability holds it at reserve 3. At each subsequent phase boundary the reserve is therefore full. Induction gives indefinite operation for every allowed availability sequence and every processing-bit sequence, using only local receptor signals and reconstruction stage.\n\n**Timing matters.** With arbitrary initial phase position and an initially absent fitted type, the remaining availability interval might end during reconstruction. Four-tick full phases do not imply four remaining ticks. The theorem must retain its initial phase-start contract, or replace it with a separately proved initialization condition. Initial matching with full reserve is another sufficient entry condition because the first mismatch is then detected at a later phase boundary.\n\n**The reserve threshold is sharp for this mechanism.** Completing any reconstruction consumes two reserve units without replenishment. Maintaining \\(r\\ge1\\) therefore requires a reserve of at least 3 at its start. With \\(K\\le2\\), reconstruction is impossible while alive, even with perfect knowledge of future availability. An opposite-only phase of unbounded duration defeats every permanently fitted type. Thus \\(K\\ge3\\) is necessary for a universal survival guarantee over the specified environmental class.\n\n**At capacity 3, the four-tick minimum phase length is also sharp for a universal guarantee.** Consider the permitted counterexample consisting of alternating A-only and B-only phases, each of length 3. Any surviving full phase must contain at least one successful harvest: three ticks without a successful harvest exhaust a reserve capped at 3. Across \\(n\\) phases the harvested resource therefore alternates, requiring at least \\(n-1\\) completed reconstructions between representative successful harvests in consecutive phases. Each reconstruction occupies two ticks without harvesting. The number \\(H\\) of successful harvests in the \\(3n\\) ticks consequently satisfies\n\n\\[\nH\\le3n-2(n-1)=n+2.\n\\]\n\nEvery successful harvest increases reserve by at most 1; each other tick decreases it by 1. Even granting perfect processing and knowledge of the entire future, the final reserve satisfies\n\n\\[\nr_{3n}\\le3+H-(3n-H)\\le7-n.\n\\]\n\nAt \\(n=7\\), survival would require both \\(r_{21}\\ge1\\) and \\(r_{21}\\le0\\), a contradiction. This defeats every allowed control history, including anticipatory reconstruction; it is not merely a failure of the reactive controller. Exhaustive reachable-state propagation over all harvest, wait, and reconstruction histories gives an even earlier failure: no history survives the 14th tick. The analytical 21-tick bound is deliberately not claimed sharp. The necessity statement is for capacity 3 and the universal phase contract; larger capacities can change the result. In particular, capacity 4 can survive this particular repeating three-tick schedule with one permanently fitted type by bridging each three-tick absence.\n\n**Why all three changes matter.** Permanent transport or conversion of only one resource defeats operation during an indefinitely sustained opposite-only phase. If transport and conversion can change but the receptor remains fixed to the original type, the arbitrary processing bits of the opposite resource remain unobserved. No policy can guarantee correct processing on every allowed bit sequence. The information limitation is distinct from the resource-access limitation. This claim requires the stated restriction that no other observation reveals those bits; an implicit global controller would invalidate the comparison.\n\nThe construction integrates sensing, access, conversion, and the reserve that funds their replacement in one transition mechanism. It remains a deliberately supplied two-type mechanism, with external resources and a designed reconstruction capability. It does not explain the physical origin of that machinery, how an unforeseen third type is discovered, or unrestricted transformation.\n\n## 4. The fixed-controller issue\n\nAn adaptive implementation is described by a constant overall rule whose state includes its current configuration. It therefore cannot establish that adaptation defeats every fixed algorithm, every fixed architecture, or every fixed global law. The fair comparator here is **a permanently fitted single configuration under the same interface-slot and reserve constraints**. A larger permanent device with two receptors, transporters, and converters might succeed without reconstructing; its extra resource and interface costs must be counted before comparison.\n\nSimilarly, an infinitely long run of reversible switches demonstrates continuing successful use of a finite repertoire. It does not show an ability to generate indefinitely many new capabilities, learn an unknown chemistry, revise the laws that govern reconstruction, or survive every possible world.\n\n## 5. Physical stakes and chosen purposes\n\nMaking depletion disable future sensing and reconstruction gives a causal explanation for why reserve differences affect the continuation of this organization. This is stronger than attaching a reward number to otherwise unchanged transitions. But the investigator still specifies the model, the organization whose continuation is being considered, and the property \\(K\\) that the guarantee protects. The causal implication is objective within the mechanism; its moral importance is not derived by that fact alone.\n\nA different organization can have different dependencies. Transforming the organization can change which distinctions are consequential for its continuation. It does not follow that any such transformation is good, that continued operation is always preferable, or that protecting one organization's kernel accounts for everyone it affects.\n\nChanging \\(K\\) after a failure must be reported as changing the task. A stronger theory of wise transformation would make the reasons for such revision explicit and preserve facts about who loses capacities or bears costs. Physical self-maintenance, learning, justified revision of aims, and ethical concern are distinct achievements.\n\n## 6. The impossibility that remains\n\nIf two permitted worlds generate the same complete available history under every safe inquiry policy, but eventual continuation requires disjoint action sets, no controller restricted to those histories can guarantee continuation in both. Changing the language used for unity, intelligence, or wisdom does not remove that indistinguishability. A genuine repair must supply a new feasible discriminating interaction, a common response, or a justified change in the protected requirement.\n\nThis result is relative to the permitted worlds and actions. It does not provide a complete method for discovering omissions from an unrestricted world model. A violated guarantee could expose an omitted state, an incorrect transition, an uncounted cost, an observation failure, or a requirement that was never actually satisfied. The investigation must identify which premise failed.\n\n## 7. Recommended claim\n\n> A system can preserve an ongoing capacity by changing the organization through which that capacity is exercised. Such change is possible only when its current information and resources support a viable transition to the new arrangement.\n\nFor the philosophical inquiry, this is a precise refinement of maintained differentiation: **a continuing individual need not preserve one arrangement of its interface, but continuity of operation depends on the realizable path between arrangements.** It explains one mechanism of transformation within common dynamics. It does not yet equate functional transformation with wisdom or settle metaphysical monism.\n\n## Files\n\n- `work/transformation/check_limits.py`: executable independent finite checks.\n- `work/transformation/limits-checks.json`: exact results.\n- This note: proof, comparison scope, counterexamples, and model audit.\n"
+    }
+  ],
+  "executable_checks": [
+    {
+      "path": "work/transformation/check_joint_model.py",
+      "sha256": "8cdcb7e45a5bb6594041304185afb0b40dc64f7a7ef220f02b6f6afc54fc7c1e",
+      "content": "\"\"\"Exact finite checks of a resource-limited, physically reconfiguring agent.\n\nNo floats, randomness, external dependencies, or empirically fitted parameters.\nThe accompanying proof, not a finite rollout, establishes indefinite viability.\n\"\"\"\nfrom collections import deque\nfrom dataclasses import dataclass\nfrom itertools import product\nimport json\nfrom pathlib import Path\n\n\nTYPES = (\"A\", \"B\")\nFIELDS = (frozenset(\"A\"), frozenset(\"B\"), frozenset(\"AB\"))\nCAPACITY = 3\n\n\n@dataclass(frozen=True)\nclass State:\n    interface: str\n    reserve: int\n    rebuilding: bool = False\n\n\ndef other(interface):\n    return \"B\" if interface == \"A\" else \"A\"\n\n\ndef sensor(sensor_type, field, bits):\n    \"\"\"Only the installed receptor's present substrate and processing bit.\"\"\"\n    return bits[sensor_type] if sensor_type in field else None\n\n\ndef harvest_yield(sensor_type, transporter, converter, field, bits, action):\n    \"\"\"Sensor does not magically affect uptake; it supplies usable knowledge.\"\"\"\n    del sensor_type\n    return 2 * int(\n        transporter == converter\n        and transporter in field\n        and action == bits[transporter]\n    )\n\n\ndef step(state, field, bits):\n    \"\"\"Read current installed receptor, then execute one physical time step.\n\n    A rebuild occupies TWO whole steps without intake. Its initiating decision\n    reads absence through the old receptor; its second step is blind and\n    installs the new set.\n    The new receptor is usable at the START of the following time step.\n    \"\"\"\n    if state.reserve == 0:\n        return state, \"dead\", 0\n    q, reserve = state.interface, state.reserve\n    if state.rebuilding:\n        return State(other(q), reserve - 1), \"rebuild-complete\", 0\n    record = sensor(q, field, bits)\n    if record is None:\n        return State(q, reserve - 1, True), \"rebuild-start\", 0\n    intake = harvest_yield(q, q, q, field, bits, record)\n    return State(q, min(CAPACITY, reserve - 1 + intake)), \"harvest\", intake\n\n\ndef fresh_bits(a=0, b=0):\n    return {\"A\": a, \"B\": b}\n\n\ndef record_state(state):\n    return {\n        \"interface\": state.interface,\n        \"reserve\": state.reserve,\n        \"rebuilding\": state.rebuilding,\n    }\n\n\ndef local_checks():\n    count = 0\n    for q, reserve, rebuilding, field, a, b in product(\n        TYPES, range(4), (False, True), FIELDS, (0, 1), (0, 1)\n    ):\n        state = State(q, reserve, rebuilding)\n        nxt, action, intake = step(state, field, fresh_bits(a, b))\n        assert 0 <= nxt.reserve <= CAPACITY\n        if reserve == 0:\n            assert nxt == state and action == \"dead\"\n        elif rebuilding:\n            assert nxt == State(other(q), reserve - 1) and intake == 0\n        elif q in field:\n            assert nxt == State(q, min(CAPACITY, reserve + 1)) and intake == 2\n        else:\n            assert nxt == State(q, reserve - 1, True) and intake == 0\n        count += 1\n    return count\n\n\ndef symmetry_checks():\n    count = 0\n    for q, reserve, rebuilding, field, a, b in product(\n        TYPES, range(4), (False, True), FIELDS, (0, 1), (0, 1)\n    ):\n        state = State(q, reserve, rebuilding)\n        nxt, action, intake = step(state, field, fresh_bits(a, b))\n        swapped = State(other(q), reserve, rebuilding)\n        field2 = frozenset(other(item) for item in field)\n        nxt2, action2, intake2 = step(swapped, field2, fresh_bits(b, a))\n        assert nxt2 == State(other(nxt.interface), nxt.reserve, nxt.rebuilding)\n        assert action == action2 and intake == intake2\n        count += 1\n    return count\n\n\ndef four_tick_blocks():\n    # All independent bit histories for FOUR ticks, not a held-bit shortcut.\n    count = 0\n    min_reserve = CAPACITY\n    for q, field in product(TYPES, FIELDS):\n        for bits_history in product(tuple(product((0, 1), repeat=2)), repeat=4):\n            state = State(q, CAPACITY)\n            for a, b in bits_history:\n                state, _, _ = step(state, field, fresh_bits(a, b))\n                min_reserve = min(min_reserve, state.reserve)\n                assert state.reserve >= 1\n            assert state.reserve == CAPACITY\n            assert state.interface in field and not state.rebuilding\n            count += 1\n    return count, min_reserve\n\n\ndef dwell_graph(min_dwell):\n    # Node just BEFORE a tick: number of earlier ticks in the current phase,\n    # clipped at min_dwell-1. A switch AFTER this tick is legal once the phase\n    # has lasted at least min_dwell ticks. Initial phase starts at tick zero.\n    seeds = [\n        (State(q, CAPACITY), i, 0)\n        for q, i in product(TYPES, range(len(FIELDS)))\n    ]\n    queue = deque(seeds)\n    seen = set(seeds)\n    edges = 0\n    deaths = []\n    while queue:\n        state, field_index, earlier_ticks = queue.popleft()\n        if state.reserve == 0:\n            deaths.append((record_state(state), field_index, earlier_ticks))\n            continue\n        # Local checks proved the implemented response makes reserve and\n        # interface successors independent of the two current processing bits.\n        nxt, _, _ = step(state, FIELDS[field_index], fresh_bits())\n        choices = [(field_index, min(min_dwell - 1, earlier_ticks + 1))]\n        if earlier_ticks >= min_dwell - 1:\n            choices += [(j, 0) for j in range(len(FIELDS)) if j != field_index]\n        for j, age in choices:\n            successor = (nxt, j, age)\n            edges += 1\n            if successor not in seen:\n                seen.add(successor)\n                queue.append(successor)\n    return {\n        \"minimum_dwell\": min_dwell,\n        \"reachable_states\": len(seen),\n        \"transition_edges\": edges,\n        \"death_states\": len(deaths),\n        \"minimum_reachable_reserve\": min(state.reserve for state, _, _ in seen),\n    }\n\n\ndef sensor_distinction_checks():\n    count = 0\n    witnesses = []\n    for supported in TYPES:\n        unfitted = other(supported)\n        field = frozenset(supported)\n        for irrelevant_bit in (0, 1):\n            b0 = {supported: 0, unfitted: irrelevant_bit}\n            b1 = {supported: 1, unfitted: irrelevant_bit}\n            assert sensor(unfitted, field, b0) == sensor(unfitted, field, b1)\n            assert sensor(supported, field, b0) != sensor(supported, field, b1)\n            safe0 = {\n                a for a in (0, 1)\n                if 1 - 1 + harvest_yield(unfitted, supported, supported, field, b0, a) >= 1\n            }\n            safe1 = {\n                a for a in (0, 1)\n                if 1 - 1 + harvest_yield(unfitted, supported, supported, field, b1, a) >= 1\n            }\n            assert safe0 == {0} and safe1 == {1} and not safe0.intersection(safe1)\n            witnesses.append({\n                \"supported_type\": supported,\n                \"frozen_sensor\": unfitted,\n                \"irrelevant_bit\": irrelevant_bit,\n                \"reserve\": 1,\n                \"common_record\": None,\n                \"safe_actions_bit0\": sorted(safe0),\n                \"safe_actions_bit1\": sorted(safe1),\n            })\n            count += 1\n    return count, witnesses\n\n\ndef physical_ablations():\n    count = 0\n    # A frozen wrong transporter or converter forbids intake despite perfect\n    # bit knowledge and all settings of every other module.\n    for supported, remaining_type, sensor_type, a, b, action in product(\n        TYPES, TYPES, TYPES, (0, 1), (0, 1), (0, 1)\n    ):\n        frozen = other(supported)\n        field, bits = frozenset(supported), fresh_bits(a, b)\n        assert harvest_yield(sensor_type, frozen, remaining_type, field, bits, action) == 0\n        assert harvest_yield(sensor_type, remaining_type, frozen, field, bits, action) == 0\n        count += 2\n    return count\n\n\ndef trace(fields, q=\"A\", reserve=CAPACITY, start_rebuilding=False):\n    state = State(q, reserve, start_rebuilding)\n    result = [{\"tick\": 0, **record_state(state)}]\n    for tick, field in enumerate(fields, 1):\n        state, action, intake = step(state, field, fresh_bits(tick % 2, (tick // 2) % 2))\n        result.append({\n            \"tick\": tick, \"field\": \"\".join(sorted(field)),\n            \"action\": action, \"intake\": intake, **record_state(state),\n        })\n    return result\n\n\ndef comparison_trace(fields, fixed=None, frozen_module=None):\n    \"\"\"Same resource history; fixed hardware gets ideal compatible settings.\n\n    Ablations retain the implemented local controller, while freezing just\n    one of its three physical modules at A. They illustrate causal necessity;\n    the notes give the stronger controller-independent impossibility proofs.\n    \"\"\"\n    state = State(fixed or \"A\", CAPACITY)\n    result = [{\"tick\": 0, **record_state(state)}]\n    for tick, field in enumerate(fields, 1):\n        bits = fresh_bits(tick % 2, (tick // 2) % 2)\n        if state.reserve == 0:\n            action, intake = \"dead\", 0\n        elif fixed is not None:\n            intake = 2 * int(fixed in field)\n            state = State(fixed, min(CAPACITY, state.reserve - 1 + intake))\n            action = \"fixed-harvest\"\n        elif state.rebuilding:\n            state = State(other(state.interface), state.reserve - 1)\n            action, intake = \"rebuild-complete\", 0\n        else:\n            q = state.interface\n            sensor_type = \"A\" if frozen_module == \"sensor\" else q\n            transporter = \"A\" if frozen_module == \"transporter\" else q\n            converter = \"A\" if frozen_module == \"converter\" else q\n            record = sensor(sensor_type, field, bits)\n            if record is None:\n                state = State(q, state.reserve - 1, True)\n                action, intake = \"rebuild-start\", 0\n            else:\n                intake = harvest_yield(sensor_type, transporter, converter, field, bits, record)\n                state = State(q, min(CAPACITY, state.reserve - 1 + intake))\n                action = \"harvest\"\n        result.append({\n            \"tick\": tick, \"field\": \"\".join(sorted(field)),\n            \"action\": action, \"intake\": intake, **record_state(state),\n        })\n    return result\n\n\ndef main():\n    block_count, block_minimum = four_tick_blocks()\n    sensor_count, sensor_witnesses = sensor_distinction_checks()\n    graph4 = dwell_graph(4)\n    assert graph4[\"death_states\"] == 0\n    graph3 = dwell_graph(3)\n    assert graph3[\"death_states\"] > 0\n    graph2 = dwell_graph(2)\n    assert graph2[\"death_states\"] > 0\n    # Unknown initial residual phase: one remaining B tick, then A >=4.\n    # This is NOT admitted by the theorem's initial full-phase contract.\n    residual_counterexample = trace([FIELDS[1]] + [FIELDS[0]] * 5)\n    assert any(item[\"reserve\"] == 0 for item in residual_counterexample)\n    comparison_fields = [FIELDS[0]] * 4 + [FIELDS[1]] * 4 + [FIELDS[0]] * 4\n    comparisons = {\n        \"full_reconfiguration\": comparison_trace(comparison_fields),\n        \"fixed_A\": comparison_trace(comparison_fields, fixed=\"A\"),\n        \"fixed_B\": comparison_trace(comparison_fields, fixed=\"B\"),\n        **{\n            \"frozen_\" + module: comparison_trace(comparison_fields, frozen_module=module)\n            for module in (\"sensor\", \"transporter\", \"converter\")\n        },\n    }\n    comparison_summary = {}\n    for name, trial in comparisons.items():\n        deaths = [item[\"tick\"] for item in trial if item[\"reserve\"] == 0]\n        comparison_summary[name] = {\n            \"first_death_tick\": min(deaths) if deaths else None,\n            \"final_reserve\": trial[-1][\"reserve\"],\n            \"reserve_sequence\": [item[\"reserve\"] for item in trial],\n        }\n        assert bool(deaths) == (name != \"full_reconfiguration\")\n    report = {\n        \"status\": \"all_exact_checks_passed\",\n        \"local_rule_cases\": local_checks(),\n        \"type_swap_symmetry_cases\": symmetry_checks(),\n        \"four_tick_blocks_all_processing_bit_histories\": block_count,\n        \"four_tick_block_minimum_reserve\": block_minimum,\n        \"unbounded_finite_state_reachability\": [graph4, graph3, graph2],\n        \"sensor_missing_distinction_cases\": sensor_count,\n        \"sensor_missing_distinction_witnesses\": sensor_witnesses,\n        \"physical_module_ablation_cases\": physical_ablations(),\n        \"alternating_four_tick_trace\": trace(comparison_fields),\n        \"comparison_summary\": comparison_summary,\n        \"comparison_traces\": comparisons,\n        \"insufficient_reserve_trace\": trace([FIELDS[1]] * 4, reserve=2),\n        \"unknown_initial_residual_counterexample\": residual_counterexample,\n        \"scope\": {\n            \"criterion\": \"reserve >= 1 after every tick; zero absorbing\",\n            \"capacity\": CAPACITY,\n            \"initial_reserve\": CAPACITY,\n            \"initial_time\": \"first tick of an availability phase\",\n            \"availability_minimum_dwell\": 4,\n            \"processing_bits\": \"arbitrary at every tick, visible only through matching installed sensor\",\n            \"dwell3_failure\": \"implemented reactive policy only; not impossibility for all controllers\",\n            \"fixed_baseline\": \"fixed physical configuration, even with arbitrary software and knowledge\",\n        },\n    }\n    path = Path(__file__).with_name(\"joint-model-checks.json\")\n    path.write_text(json.dumps(report, indent=2) + \"\\n\")\n    print(json.dumps({key: value for key, value in report.items() if not isinstance(value, (list, dict))}, indent=2))\n    print(json.dumps(report[\"comparison_summary\"], indent=2))\n    print(json.dumps(report[\"unbounded_finite_state_reachability\"], indent=2))\n\n\nif __name__ == \"__main__\":\n    main()\n"
+    },
+    {
+      "path": "work/transformation/check_limits.py",
+      "sha256": "ef5ba6ccd557a0765ecaf9238875acb38645eb5aa422ed081a21cf55ac14eecb",
+      "content": "\"\"\"Exact checks of the finite partially observed safety fixed point.\n\nOriginal finite verification; no external package or stochastic simulation.\nUnavailable actions are represented by transition to the absorbing failure state.\n\"\"\"\nfrom itertools import product\nimport json\nfrom pathlib import Path\n\n\ndef coherent_beliefs(safe, observation):\n    xs = tuple(sorted(safe))\n    return {frozenset(xs[i] for i in range(len(xs)) if mask >> i & 1)\n            for mask in range(1, 1 << len(xs))\n            if len({observation[xs[i]] for i in range(len(xs))\n                    if mask >> i & 1}) == 1}\n\n\ndef successors(belief, action, transition, observation, safe):\n    post = set().union(*(transition[x, action] for x in belief))\n    if not post <= safe:\n        return None\n    return {frozenset(x for x in post if observation[x] == o)\n            for o in {observation[x] for x in post}}\n\n\ndef kernel(safe, actions, transition, observation):\n    current = coherent_beliefs(safe, observation)\n    rounds = 0\n    while True:\n        nxt = {b for b in current\n               if any((ss := successors(b, a, transition, observation, safe))\n                      is not None and ss <= current for a in actions)}\n        if nxt == current:\n            return current, rounds\n        current = nxt\n        rounds += 1\n\n\ndef brute_stationary(safe, actions, transition, observation):\n    beliefs = sorted(coherent_beliefs(safe, observation),\n                     key=lambda b: (len(b), tuple(sorted(b))))\n    winning = set()\n    policies = 0\n    for choices in product(actions, repeat=len(beliefs)):\n        policy = dict(zip(beliefs, choices))\n        policies += 1\n        for start in beliefs:\n            reached, todo, fails = set(), [start], False\n            while todo:\n                b = todo.pop()\n                if b in reached:\n                    continue\n                reached.add(b)\n                ss = successors(b, policy[b], transition, observation, safe)\n                if ss is None:\n                    fails = True\n                    break\n                todo.extend(ss - reached)\n            if not fails:\n                winning.add(start)\n    return winning, policies\n\n\ndef main():\n    safe, actions = {0, 1}, (0, 1)\n    systems = policy_count = 0\n    max_rounds = 0\n    for images in product(range(3), repeat=4):\n        transition = {(x, a): {images[2*x+a]} for x in safe for a in actions}\n        for separated in (False, True):\n            observation = {0: 0, 1: int(separated), 2: 2}\n            fixed, rounds = kernel(safe, actions, transition, observation)\n            brute, count = brute_stationary(safe, actions, transition, observation)\n            assert fixed == brute\n            systems += 1\n            policy_count += count\n            max_rounds = max(max_rounds, rounds)\n\n    # Full information permits safety at each individual state, whereas an\n    # aliased observation does not allow the required opposite responses.\n    opposite = {(0, 0): {0}, (0, 1): {2},\n                (1, 0): {2}, (1, 1): {1}}\n    aliased = {0: 0, 1: 0, 2: 2}\n    full = {0: 0, 1: 1, 2: 2}\n    ka, _ = kernel(safe, actions, opposite, aliased)\n    kf, _ = kernel(safe, actions, opposite, full)\n    assert frozenset({0, 1}) not in ka\n    assert frozenset({0}) in kf and frozenset({1}) in kf\n\n    # A safe probe creates a useful observation; prohibit or endanger it and\n    # the same initial uncertainty is no longer viable.\n    # 0/1: pre-probe worlds, 2/3: revealed worlds, 4: operating sink, 5: failure.\n    sp = set(range(5)); ap = (0, 1, 2)\n    obs = {0: 0, 1: 0, 2: 1, 3: 2, 4: 3, 5: 4}\n    tr = {(x, a): {5} for x in sp for a in ap}\n    tr.update({(0, 2): {2}, (1, 2): {3},\n               (0, 0): {4}, (1, 1): {4},\n               (2, 0): {4}, (3, 1): {4}})\n    tr.update({(4, a): {4} for a in ap})\n    start = frozenset({0, 1})\n    assert start in kernel(sp, ap, tr, obs)[0]\n    assert start not in kernel(sp, (0, 1), tr, obs)[0]\n    risky = dict(tr); risky[1, 2] = {5}\n    assert start not in kernel(sp, ap, risky, obs)[0]\n\n    # Nonempty immediate safe actions at every belief are insufficient: one\n    # transition can lead to a safe-looking state whose every action fails.\n    doomed = {(0, a): {1} for a in actions}\n    doomed.update({(1, a): {2} for a in actions})\n    assert successors(frozenset({0}), 0, doomed, full, safe) is not None\n    assert kernel(safe, actions, doomed, full)[0] == set()\n\n    # Every action history is considered, with processing assumed perfect\n    # whenever the installed type is present (a stronger oracle controller).\n    # A stage-1 rebuild has one remaining no-harvest tick and then swaps type.\n    # Either initial type is allowed; time 0 begins an A-only phase.\n    possible = {(q, 0, 3) for q in (0, 1)}\n    first_impossible_tick = None\n    reachable_sizes = [len(possible)]\n    for tick in range(21):\n        mode = (tick // 3) % 2\n        after = set()\n        for q, rebuilding, reserve in possible:\n            if rebuilding:\n                if reserve - 1 >= 1:\n                    after.add((1-q, 0, reserve-1))\n            else:\n                # Harvest, including the always-unhelpful absent-input case.\n                r_next = min(3, reserve+1) if q == mode else reserve-1\n                if r_next >= 1:\n                    after.add((q, 0, r_next))\n                # Starting a rebuild supplies no harvest.\n                if reserve-1 >= 1:\n                    after.add((q, 1, reserve-1))\n                # Waiting has the same reserve effect as absent harvesting.\n                if reserve-1 >= 1:\n                    after.add((q, 0, reserve-1))\n        possible = after\n        reachable_sizes.append(len(possible))\n        if not possible:\n            first_impossible_tick = tick+1\n            break\n    assert first_impossible_tick == 14\n\n    result = {\n        \"exhaustive_deterministic_systems\": systems,\n        \"stationary_belief_policies_checked\": policy_count,\n        \"maximum_elimination_rounds_in_exhaustive_family\": max_rounds,\n        \"exhaustive_fixed_point_matches_brute_force\": True,\n        \"opposite_actions_information_counterexample\": True,\n        \"safe_probe_restores_viability\": True,\n        \"unavailable_or_risky_probe_does_not_restore_viability\": True,\n        \"immediate_safety_is_not_infinite_viability\": True,\n        \"capacity_3_alternating_3_tick_phases\": {\n            \"all_action_histories_considered\": True,\n            \"oracle_processing_on_present_input\": True,\n            \"both_initial_types_considered\": True,\n            \"first_tick_with_no_surviving_history\": first_impossible_tick,\n            \"reachable_state_counts\": reachable_sizes,\n            \"analytical_nonsharp_failure_bound_ticks\": 21\n        },\n        \"scope\": \"Two safe states, two actions, one absorbing failure state; all deterministic transitions and both observation partitions. Three illustrative larger/counterexample systems checked separately. General theorem is proved in limits-audit.md.\"\n    }\n    path = Path(__file__).with_name(\"limits-checks.json\")\n    path.write_text(json.dumps(result, indent=2) + \"\\n\")\n    print(json.dumps(result, indent=2))\n\n\nif __name__ == \"__main__\":\n    main()\n"
+    }
+  ],
+  "check_results": [
+    {
+      "path": "work/transformation/joint-model-checks.json",
+      "sha256": "9a583d2a00b42f278ee12721f598c3ba9ed1e8ee50ec25b37661194a7fab0931",
+      "content": {
+        "status": "all_exact_checks_passed",
+        "local_rule_cases": 192,
+        "type_swap_symmetry_cases": 192,
+        "four_tick_blocks_all_processing_bit_histories": 1536,
+        "four_tick_block_minimum_reserve": 1,
+        "unbounded_finite_state_reachability": [
+          {
+            "minimum_dwell": 4,
+            "reachable_states": 24,
+            "transition_edges": 36,
+            "death_states": 0,
+            "minimum_reachable_reserve": 1
+          },
+          {
+            "minimum_dwell": 3,
+            "reachable_states": 28,
+            "transition_edges": 42,
+            "death_states": 2,
+            "minimum_reachable_reserve": 0
+          },
+          {
+            "minimum_dwell": 2,
+            "reachable_states": 36,
+            "transition_edges": 56,
+            "death_states": 8,
+            "minimum_reachable_reserve": 0
+          }
+        ],
+        "sensor_missing_distinction_cases": 4,
+        "sensor_missing_distinction_witnesses": [
+          {
+            "supported_type": "A",
+            "frozen_sensor": "B",
+            "irrelevant_bit": 0,
+            "reserve": 1,
+            "common_record": null,
+            "safe_actions_bit0": [
+              0
+            ],
+            "safe_actions_bit1": [
+              1
+            ]
+          },
+          {
+            "supported_type": "A",
+            "frozen_sensor": "B",
+            "irrelevant_bit": 1,
+            "reserve": 1,
+            "common_record": null,
+            "safe_actions_bit0": [
+              0
+            ],
+            "safe_actions_bit1": [
+              1
+            ]
+          },
+          {
+            "supported_type": "B",
+            "frozen_sensor": "A",
+            "irrelevant_bit": 0,
+            "reserve": 1,
+            "common_record": null,
+            "safe_actions_bit0": [
+              0
+            ],
+            "safe_actions_bit1": [
+              1
+            ]
+          },
+          {
+            "supported_type": "B",
+            "frozen_sensor": "A",
+            "irrelevant_bit": 1,
+            "reserve": 1,
+            "common_record": null,
+            "safe_actions_bit0": [
+              0
+            ],
+            "safe_actions_bit1": [
+              1
+            ]
+          }
+        ],
+        "physical_module_ablation_cases": 128,
+        "alternating_four_tick_trace": [
+          {
+            "tick": 0,
+            "interface": "A",
+            "reserve": 3,
+            "rebuilding": false
+          },
+          {
+            "tick": 1,
+            "field": "A",
+            "action": "harvest",
+            "intake": 2,
+            "interface": "A",
+            "reserve": 3,
+            "rebuilding": false
+          },
+          {
+            "tick": 2,
+            "field": "A",
+            "action": "harvest",
+            "intake": 2,
+            "interface": "A",
+            "reserve": 3,
+            "rebuilding": false
+          },
+          {
+            "tick": 3,
+            "field": "A",
+            "action": "harvest",
+            "intake": 2,
+            "interface": "A",
+            "reserve": 3,
+            "rebuilding": false
+          },
+          {
+            "tick": 4,
+            "field": "A",
+            "action": "harvest",
+            "intake": 2,
+            "interface": "A",
+            "reserve": 3,
+            "rebuilding": false
+          },
+          {
+            "tick": 5,
+            "field": "B",
+            "action": "rebuild-start",
+            "intake": 0,
+            "interface": "A",
+            "reserve": 2,
+            "rebuilding": true
+          },
+          {
+            "tick": 6,
+            "field": "B",
+            "action": "rebuild-complete",
+            "intake": 0,
+            "interface": "B",
+            "reserve": 1,
+            "rebuilding": false
+          },
+          {
+            "tick": 7,
+            "field": "B",
+            "action": "harvest",
+            "intake": 2,
+            "interface": "B",
+            "reserve": 2,
+            "rebuilding": false
+          },
+          {
+            "tick": 8,
+            "field": "B",
+            "action": "harvest",
+            "intake": 2,
+            "interface": "B",
+            "reserve": 3,
+            "rebuilding": false
+          },
+          {
+            "tick": 9,
+            "field": "A",
+            "action": "rebuild-start",
+            "intake": 0,
+            "interface": "B",
+            "reserve": 2,
+            "rebuilding": true
+          },
+          {
+            "tick": 10,
+            "field": "A",
+            "action": "rebuild-complete",
+            "intake": 0,
+            "interface": "A",
+            "reserve": 1,
+            "rebuilding": false
+          },
+          {
+            "tick": 11,
+            "field": "A",
+            "action": "harvest",
+            "intake": 2,
+            "interface": "A",
+            "reserve": 2,
+            "rebuilding": false
+          },
+          {
+            "tick": 12,
+            "field": "A",
+            "action": "harvest",
+            "intake": 2,
+            "interface": "A",
+            "reserve": 3,
+            "rebuilding": false
+          }
+        ],
+        "comparison_summary": {
+          "full_reconfiguration": {
+            "first_death_tick": null,
+            "final_reserve": 3,
+            "reserve_sequence": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              2,
+              3,
+              2,
+              1,
+              2,
+              3
+            ]
+          },
+          "fixed_A": {
+            "first_death_tick": 7,
+            "final_reserve": 0,
+            "reserve_sequence": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "fixed_B": {
+            "first_death_tick": 3,
+            "final_reserve": 0,
+            "reserve_sequence": [
+              3,
+              2,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "frozen_sensor": {
+            "first_death_tick": 7,
+            "final_reserve": 0,
+            "reserve_sequence": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "frozen_transporter": {
+            "first_death_tick": 7,
+            "final_reserve": 0,
+            "reserve_sequence": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "frozen_converter": {
+            "first_death_tick": 7,
+            "final_reserve": 0,
+            "reserve_sequence": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "comparison_traces": {
+          "full_reconfiguration": [
+            {
+              "tick": 0,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 1,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 2,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 3,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 4,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 5,
+              "field": "B",
+              "action": "rebuild-start",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 2,
+              "rebuilding": true
+            },
+            {
+              "tick": 6,
+              "field": "B",
+              "action": "rebuild-complete",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 1,
+              "rebuilding": false
+            },
+            {
+              "tick": 7,
+              "field": "B",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "B",
+              "reserve": 2,
+              "rebuilding": false
+            },
+            {
+              "tick": 8,
+              "field": "B",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "B",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 9,
+              "field": "A",
+              "action": "rebuild-start",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 2,
+              "rebuilding": true
+            },
+            {
+              "tick": 10,
+              "field": "A",
+              "action": "rebuild-complete",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 1,
+              "rebuilding": false
+            },
+            {
+              "tick": 11,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 2,
+              "rebuilding": false
+            },
+            {
+              "tick": 12,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            }
+          ],
+          "fixed_A": [
+            {
+              "tick": 0,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 1,
+              "field": "A",
+              "action": "fixed-harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 2,
+              "field": "A",
+              "action": "fixed-harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 3,
+              "field": "A",
+              "action": "fixed-harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 4,
+              "field": "A",
+              "action": "fixed-harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 5,
+              "field": "B",
+              "action": "fixed-harvest",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 2,
+              "rebuilding": false
+            },
+            {
+              "tick": 6,
+              "field": "B",
+              "action": "fixed-harvest",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 1,
+              "rebuilding": false
+            },
+            {
+              "tick": 7,
+              "field": "B",
+              "action": "fixed-harvest",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 8,
+              "field": "B",
+              "action": "dead",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 9,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 10,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 11,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 12,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 0,
+              "rebuilding": false
+            }
+          ],
+          "fixed_B": [
+            {
+              "tick": 0,
+              "interface": "B",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 1,
+              "field": "A",
+              "action": "fixed-harvest",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 2,
+              "rebuilding": false
+            },
+            {
+              "tick": 2,
+              "field": "A",
+              "action": "fixed-harvest",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 1,
+              "rebuilding": false
+            },
+            {
+              "tick": 3,
+              "field": "A",
+              "action": "fixed-harvest",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 4,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 5,
+              "field": "B",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 6,
+              "field": "B",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 7,
+              "field": "B",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 8,
+              "field": "B",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 9,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 10,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 11,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 12,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            }
+          ],
+          "frozen_sensor": [
+            {
+              "tick": 0,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 1,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 2,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 3,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 4,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 5,
+              "field": "B",
+              "action": "rebuild-start",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 2,
+              "rebuilding": true
+            },
+            {
+              "tick": 6,
+              "field": "B",
+              "action": "rebuild-complete",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 1,
+              "rebuilding": false
+            },
+            {
+              "tick": 7,
+              "field": "B",
+              "action": "rebuild-start",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": true
+            },
+            {
+              "tick": 8,
+              "field": "B",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": true
+            },
+            {
+              "tick": 9,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": true
+            },
+            {
+              "tick": 10,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": true
+            },
+            {
+              "tick": 11,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": true
+            },
+            {
+              "tick": 12,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": true
+            }
+          ],
+          "frozen_transporter": [
+            {
+              "tick": 0,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 1,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 2,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 3,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 4,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 5,
+              "field": "B",
+              "action": "rebuild-start",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 2,
+              "rebuilding": true
+            },
+            {
+              "tick": 6,
+              "field": "B",
+              "action": "rebuild-complete",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 1,
+              "rebuilding": false
+            },
+            {
+              "tick": 7,
+              "field": "B",
+              "action": "harvest",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 8,
+              "field": "B",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 9,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 10,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 11,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 12,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            }
+          ],
+          "frozen_converter": [
+            {
+              "tick": 0,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 1,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 2,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 3,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 4,
+              "field": "A",
+              "action": "harvest",
+              "intake": 2,
+              "interface": "A",
+              "reserve": 3,
+              "rebuilding": false
+            },
+            {
+              "tick": 5,
+              "field": "B",
+              "action": "rebuild-start",
+              "intake": 0,
+              "interface": "A",
+              "reserve": 2,
+              "rebuilding": true
+            },
+            {
+              "tick": 6,
+              "field": "B",
+              "action": "rebuild-complete",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 1,
+              "rebuilding": false
+            },
+            {
+              "tick": 7,
+              "field": "B",
+              "action": "harvest",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 8,
+              "field": "B",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 9,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 10,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 11,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            },
+            {
+              "tick": 12,
+              "field": "A",
+              "action": "dead",
+              "intake": 0,
+              "interface": "B",
+              "reserve": 0,
+              "rebuilding": false
+            }
+          ]
+        },
+        "insufficient_reserve_trace": [
+          {
+            "tick": 0,
+            "interface": "A",
+            "reserve": 2,
+            "rebuilding": false
+          },
+          {
+            "tick": 1,
+            "field": "B",
+            "action": "rebuild-start",
+            "intake": 0,
+            "interface": "A",
+            "reserve": 1,
+            "rebuilding": true
+          },
+          {
+            "tick": 2,
+            "field": "B",
+            "action": "rebuild-complete",
+            "intake": 0,
+            "interface": "B",
+            "reserve": 0,
+            "rebuilding": false
+          },
+          {
+            "tick": 3,
+            "field": "B",
+            "action": "dead",
+            "intake": 0,
+            "interface": "B",
+            "reserve": 0,
+            "rebuilding": false
+          },
+          {
+            "tick": 4,
+            "field": "B",
+            "action": "dead",
+            "intake": 0,
+            "interface": "B",
+            "reserve": 0,
+            "rebuilding": false
+          }
+        ],
+        "unknown_initial_residual_counterexample": [
+          {
+            "tick": 0,
+            "interface": "A",
+            "reserve": 3,
+            "rebuilding": false
+          },
+          {
+            "tick": 1,
+            "field": "B",
+            "action": "rebuild-start",
+            "intake": 0,
+            "interface": "A",
+            "reserve": 2,
+            "rebuilding": true
+          },
+          {
+            "tick": 2,
+            "field": "A",
+            "action": "rebuild-complete",
+            "intake": 0,
+            "interface": "B",
+            "reserve": 1,
+            "rebuilding": false
+          },
+          {
+            "tick": 3,
+            "field": "A",
+            "action": "rebuild-start",
+            "intake": 0,
+            "interface": "B",
+            "reserve": 0,
+            "rebuilding": true
+          },
+          {
+            "tick": 4,
+            "field": "A",
+            "action": "dead",
+            "intake": 0,
+            "interface": "B",
+            "reserve": 0,
+            "rebuilding": true
+          },
+          {
+            "tick": 5,
+            "field": "A",
+            "action": "dead",
+            "intake": 0,
+            "interface": "B",
+            "reserve": 0,
+            "rebuilding": true
+          },
+          {
+            "tick": 6,
+            "field": "A",
+            "action": "dead",
+            "intake": 0,
+            "interface": "B",
+            "reserve": 0,
+            "rebuilding": true
+          }
+        ],
+        "scope": {
+          "criterion": "reserve >= 1 after every tick; zero absorbing",
+          "capacity": 3,
+          "initial_reserve": 3,
+          "initial_time": "first tick of an availability phase",
+          "availability_minimum_dwell": 4,
+          "processing_bits": "arbitrary at every tick, visible only through matching installed sensor",
+          "dwell3_failure": "implemented reactive policy only; not impossibility for all controllers",
+          "fixed_baseline": "fixed physical configuration, even with arbitrary software and knowledge"
+        }
+      }
+    },
+    {
+      "path": "work/transformation/limits-checks.json",
+      "sha256": "6f50778ded53da8e0d2f1d5b46062d8c4b027ad198de22f59c58d46133fa0119",
+      "content": {
+        "exhaustive_deterministic_systems": 162,
+        "stationary_belief_policies_checked": 972,
+        "maximum_elimination_rounds_in_exhaustive_family": 2,
+        "exhaustive_fixed_point_matches_brute_force": true,
+        "opposite_actions_information_counterexample": true,
+        "safe_probe_restores_viability": true,
+        "unavailable_or_risky_probe_does_not_restore_viability": true,
+        "immediate_safety_is_not_infinite_viability": true,
+        "capacity_3_alternating_3_tick_phases": {
+          "all_action_histories_considered": true,
+          "oracle_processing_on_present_input": true,
+          "both_initial_types_considered": true,
+          "first_tick_with_no_surviving_history": 14,
+          "reachable_state_counts": [
+            2,
+            5,
+            7,
+            6,
+            6,
+            6,
+            5,
+            5,
+            4,
+            4,
+            4,
+            3,
+            1,
+            2,
+            0
+          ],
+          "analytical_nonsharp_failure_bound_ticks": 21
+        },
+        "scope": "Two safe states, two actions, one absorbing failure state; all deterministic transitions and both observation partitions. Three illustrative larger/counterexample systems checked separately. General theorem is proved in limits-audit.md."
+      }
+    }
+  ],
+  "peer_reviews": [
+    {
+      "path": "work/transformation/review-model.md",
+      "sha256": "3d56c9599788b26f20571413e809587ca5cf794b3bb937e77192ba63f6086a31",
+      "content": "# Final model review\n\nReviewed `outputs/changing-the-interface.md` against `joint-model-notes.md`, `check_joint_model.py`, `joint-model-checks.json`, and the completed timing result in `limits-audit.md` / `limits-checks.json`. Previously passed programs were not rerun.\n\n## One precision correction\n\nIn the setup immediately before the sufficiency theorem, explicitly require **an initially ready, fully fitted coherent interface, with no rebuild already underway**. The implemented initial state and induction have this premise. The report strongly suggests it through its initial-interface description and transition table, but its sentence listing initial conditions does not say so explicitly.\n\nFor example, the sentence can read: “Take capacity `C=3`, initial reserve 3, and either coherent interface fully fitted, with no rebuilding underway. Start at the beginning of an availability phase.”\n\nThe distinction is real. Starting on the final step of a previously begun A-to-B rebuild in an A-only phase can leave the new B interface mismatched with reserve two; attempting the necessary return rebuild then reaches zero. This does not refute the stated mechanism or checked theorem; it identifies a missing explicit initialization qualifier.\n\n## Confirmed claims\n\n- The reserve balance, storage clipping, order of sensing and action, two-step reconstruction, and absorbing zero match the executable model.\n- The four-step induction and the alternative initially matched entry condition are valid for ready interfaces.\n- Fixed transport/conversion impossibility grants the baseline enough information; it does not conflate a fixed physical configuration with a fixed algorithm that changes its configuration.\n- Frozen-receptor impossibility is valid because the needed processing property can vary arbitrarily and no alternative observation supplies its current value.\n- The sharp capacity-three timing proof is sound: survival requires a successful conversion in every three-step pure phase, hence at least `n-1` disjoint completed rebuilds; the resulting reserve bound `7-n` contradicts survival at seven phases.\n- The independent exhaustive action-history result of failure at step 14 matches the recorded limits result. The report correctly distinguishes this from its conservative analytical 21-step bound.\n- Claims about changing significance are scoped to supplied material organization and continuation; the report does not assert a proof of moral purpose, consciousness, biological genesis, or unrestricted novelty.\n- Physical boundary change is correctly limited to selective exchange, and the model's supplied repertoire and templates remain explicit.\n\n**Conditional verdict:** mathematically and causally consistent after making the ready-interface initialization explicit. No substantive model or calculation correction is required.\n"
+    },
+    {
+      "path": "work/transformation/review-limits.md",
+      "sha256": "afba4ba40cb06bb5886361255a6fa0343cebad0d9b722f774563fe8ef41d2e1f",
+      "content": "# Final limits review\n\n5 October 2026. Reviewed `outputs/changing-the-interface.md` against `limits-audit.md`, `check_limits.py`, and `limits-checks.json`. No redundant checks rerun.\n\n**Verdict: conditional pass; one initialization clarification is needed.**\n\nThe capacity-3 / dwell-4 sufficiency theorem should explicitly start with a **ready coherent interface, not a partially completed rebuild**. Suggested addition to its setup: “The initial interface is coherent and ready to operate; no rebuild is in progress.” The proof and model agent's stated contract use that initialization. Full reserve and phase-start alone would also describe a state with one rebuilding step pending; without the ready-state premise, that pending switch could create an absent interface and leave too little reserve for the required second switch. The alternative entry condition “starting matched with full reserve” should likewise mean ready to operate.\n\nAll substantive mathematics otherwise passes:\n\n- The two-step transition and reserve path use intake-before-final-storage-cap accounting consistently.\n- The lower reserve threshold is correctly scoped to completing this supplied two-step reconstruction while remaining operational.\n- The universal timing obstruction correctly applies to every permitted controller at capacity 3, including foresight, and counts disjoint completed rebuilds between alternating successful conversions. It does not claim the same threshold for larger capacities.\n- The statement that exhaustive histories fail at step 14 agrees with the independent reachable-state computation; the analytical 21-step upper bound is accurately described as conservative.\n- The fixed-point operator explicitly ranges over nonempty safe beliefs with a common observation. Its iteration, safety objective, unavailable-action convention, and sensor-change treatment match the proof. The finite-model premise requires all environmental history constraints relevant to future successors to be encoded in the state; this is already compatible with the stated model and evidence.\n- The report distinguishes perpetually operating a finite supplied repertoire from generating unforeseen capabilities, and changing physical configuration from defeating all fixed algorithms.\n- The sensing-only limitation correctly uses the independently varying current processing bit; histories of earlier guesses cannot reveal the next arbitrary bit.\n- The physical continuation condition is kept separate from moral desirability and phenomenal experience.\n\nNo additional mathematical correction is requested after explicitly adding ready initialization.\n"
+    },
+    {
+      "path": "work/transformation/review-sources.md",
+      "sha256": "0ba6887eedf23c83ee420f298c33e49f02b0e6422a19aaa0ab3acab591faf0c4",
+      "content": "# Source and conceptual review: changing the interface\n\nReviewed 5 October 2026. Target: `outputs/changing-the-interface.md`, read-only. Scope: conceptual advance, other-session precedence, source attribution, and metaphysical or novelty overstatement. This is an internal AI review, not independent external peer review.\n\n**Verdict: pass; no required conceptual or attribution corrections.**\n\nThe report adds a concrete integrated mechanism beyond the borrowed support-budget results: a jointly rebuilt sensing, transport, and conversion interface; a paid and replenished transition; separate restrictions on the three capacities; and an obstruction based on environmental timing. It accurately restricts the comparison to permanently fitted interfaces under the declared slot and resource limits. It explicitly acknowledges that the overall adaptive program remains fixed and that the construction repertoire is supplied.\n\nThe added timing argument is appropriate at capacity 3. Every three-step phase needs a successful conversion to avoid reserve exhaustion; one chosen success in each alternating resource phase forces at least one complete change between consecutive chosen successes. The resulting bound grants stronger information than the actual controller receives, so it is not an artifact of informational deprivation. The conservative analytic bound is distinguished from the sharper finite enumeration.\n\nThe consequences of organization are scoped correctly. The model changes which independently varying property is required for successful conversion, and which physical channel supplies it. It does not infer experienced meaning, autonomous purpose formation, ethics, or monism from this result. Selective exchange is stated as the modeled sense of boundary, and no claim of generated membrane geometry is made.\n\nThe other-session comparison is accurate: paid succession and the shared inquiry/implementation budget are acknowledged as prior work, while the saved discovery module is distinguished from completion of its then-active chat. The identity-through-change correction is retained: uninterrupted positive-reserve history and future control sufficiency do not establish an exhaustive account of identity or truth.\n\nDi Paolo is used as a scoped conceptual precursor rather than as evidence that this discrete construction is a complete biological realization. No scientific-priority or universal physical-law claim is made. The final explanation also preserves the distinction between feasibility of continuation and justified concern for affected participants.\n\nOptional wording improvement only: in the connections section, replace “Those experiments were not rerun here” with “Those other-session checks were not rerun here.” The principal borrowed results are mathematical constructions and checks; the report otherwise clearly distinguishes them from empirical experiments.\n\nThis review does not independently rerun the verification scripts or certify the 28-file preservation claim; those belong to the parent integration check.\n"
+    }
+  ],
+  "review_incorporation": {
+    "final_author_check": "Parent inspected proofs, result files, source scopes, and final reviews. Both mathematical reviewers requested an explicit initially ready interface with no rebuild underway; this was added to both sufficient entry conditions in the final report. Source reviewer passed without required corrections; its optional checks-versus-experiments wording was adopted.",
+    "corrections_during_construction": [
+      "Independent resource processing bits make the changed observation substantive.",
+      "Storage cap applies after the combined maintenance and intake update.",
+      "Old sensor is available when rebuilding starts; next tick completes without a new reading.",
+      "Phase-start or initially matched full-reserve initialization is explicit.",
+      "Final review correction: both sufficient entry conditions require a ready coherent interface with no rebuild underway.",
+      "The separate all-controller timing proof is distinguished from a policy-specific reachability failure.",
+      "The fixed-point operator explicitly ranges over safe observation-coherent beliefs.",
+      "Changing selective exchange does not derive the initial enclosure or rebuilding machinery."
+    ]
+  },
+  "source_manifest": {
+    "path": "work/transformation/integration-sources.json",
+    "sha256": "9d3b853738d7abed393cb84379d9abf082b4f791bfa4cda1c87bb8c25a329526",
+    "content": {
+      "audit_date": "2026-10-05",
+      "source_access": "read-only",
+      "thread": {
+        "id": "01a109b3-9e69-73f2-90ae-d119becb8ac7",
+        "title": "Articulate Foundation Lenses",
+        "latest_turn_at_read": "inProgress",
+        "previous_turn_at_read": "completed",
+        "latest_saved_module": "discovery/ANSWER.md",
+        "status_scope": "Saved file claims are versioned at these hashes; latest chat turn was not declared completed."
+      },
+      "sources": [
+        {
+          "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-FOUNDATION.md",
+          "sha256": "e2ef0b5edfe7766bcf857582e077c97885b6bdd91158ce6f05d8c0c879d81c5a",
+          "bytes": 28048,
+          "snippets": [
+            {
+              "line": 27,
+              "text": "One common policy must operate across unresolved possibilities. The definition does not grant a different policy for each hidden true world. Nor does it combine the consequences for different parties into one reward. A requirement is a specified acceptance set \\(\\mathscr A\\) of profiles; its feasibility is the assertion \\(\\mathscr R(h)\\cap\\mathscr A\\ne\\varnothing\\)."
+            },
+            {
+              "line": 37,
+              "text": "An improved sensor enlarges capabilities only when the old policies remain implementable. If receiving its output consumes the deadline or the reserve needed for action, the physical modification may shrink \\(\\mathscr R\\). The mathematical value of additional free information and the physical cost of supplying information are separate questions."
+            },
+            {
+              "line": 39,
+              "text": "The set \\(\\mathscr R\\) is not generally constant in time. It is invariant under faithful redescription of the same situation. Activity can enlarge or shrink the next situation's attainable set by changing skills, resources, permissions, models, and social relations. That change is the object the generative theory needs to explain."
+            },
+            {
+              "line": 148,
+              "text": "**Theorem R4 Exact indefinite feasibility boundary.** From an initial \\(c(0)\\in[c_*,1)\\) and finite \\(b(0)\\ge0\\), there exists a policy maintaining both requirements indefinitely if and only if"
+            }
+          ]
+        },
+        {
+          "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ASSESSMENT.md",
+          "sha256": "53efae37fb43b724a7fe0a8fcb410f97a07d97996c1f9b0235747fffec18a227",
+          "bytes": 14650,
+          "snippets": [
+            {
+              "line": 12,
+              "text": "| Is the integration scientifically original? | The broad principle is substantially anticipated. No current theorem has been verified as new to science. The exact hard-constraint application and its wider integration remain candidates. | Direct competitors were found in organizational closure, cognition, sensor maintenance, viability, safety engineering, eco-evolutionary games and successor corrigibility. |"
+            },
+            {
+              "line": 48,
+              "text": "For example, a [reaction-network account of autopoiesis and cognition](https://doi.org/10.1016/j.biosystems.2023.104937) already joins self-maintenance, response to perturbation and predictive cognition. [Joint sensor and system maintenance](https://doi.org/10.1002/nav.21763) already treats the deterioration of observation quality and adaptively coordinates repair. Multilevel human and automated control, selection–environment feedback and maintaining successor corrigibility also have direct antecedents documented in the report."
+            }
+          ]
+        },
+        {
+          "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/ANSWER.md",
+          "sha256": "7cdb85c3d446aa764d3bce888bf3c4aa04f73ef20d9114a7f94b1df7f1df97c7",
+          "bytes": 16829,
+          "snippets": [
+            {
+              "line": 13,
+              "text": "The underlying relationship is that **activity helps make the conditions for subsequent activity available, including conditions for changing how that availability is achieved**. Continuity can lie in this relationship while its particular realizations change. Repair, substitution, succession, migration, and release from a dependence are different mechanisms with different costs. Calling all of them renewal would conceal what an explanation needs to identify."
+            },
+            {
+              "line": 58,
+              "text": "X_{\\max}(T)=\\beta\\left[\\min(T,t_0)+(1-p)\\max(T-t_0,0)\\right]."
+            },
+            {
+              "line": 63,
+              "text": "If `c_0=c_*` and `p=1`, every unit of effort is needed to sustain the incumbent. It can operate forever, but no positive successor project can ever be completed. This is a counterexample to treating survival as sufficient evidence of generative capacity. It requires neither malicious leadership nor poor information."
+            },
+            {
+              "line": 78,
+              "text": "The general implication is concrete: **the resources that make today's arrangement viable may leave no capacity to make tomorrow's arrangement possible**. A proposed successor needs a paid transition path, not just desirable properties after installation. Repeated transformations cannot reuse a reserve already spent; the next starting capacities must actually be delivered."
+            }
+          ]
+        },
+        {
+          "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/MATHEMATICAL-ANALYSIS.md",
+          "sha256": "2af8d3e362aa778384ab43054548fc44024c5b7641899579e2144462323a68bc",
+          "bytes": 17087,
+          "snippets": [
+            {
+              "line": 53,
+              "text": "The model assumes construction progress does not decay or fail, the parameters are known, capacity can be observed, and effort has already been made available. These are strong simplifications. It does not obtain energy or material for free: effort stands for a specified externally supported work budget, whose further dependencies would have to be included if the scope covers them."
+            },
+            {
+              "line": 64,
+              "text": "Assume `p <= 1`, so the incumbent can be maintained indefinitely once it reaches its floor. Let `[r]_+ = max(r,0)`."
+            },
+            {
+              "line": 68,
+              "text": "The maximum successor progress attainable by time `T`, while the incumbent supplies continuous service, is"
+            }
+          ]
+        },
+        {
+          "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/discovery/ANSWER.md",
+          "sha256": "4cff4617269ad3142b3186b5bc727953b0f0636c1c1b80c0899418b9777e40c0",
+          "bytes": 12586,
+          "snippets": [
+            {
+              "line": 5,
+              "text": "The important addition is that **when preserving access to future capabilities is an aim, current usefulness is not in general a sufficient criterion for deciding which differences to retain**. Structurally different arrangements can perform identically now while enabling different next steps. A presently inferior intermediate can also make a later useful capability reachable. Reproducing only the current best answer can remove the paths through which another answer would become possible."
+            },
+            {
+              "line": 41,
+              "text": "The mathematical companion adds a different, narrower result. It charges discovery, noisy validation, and installation to the same effort that maintains both current operation and the inquiry apparatus. Candidate quality is supplied probabilistically. This calculation constrains the process; it does not explain the invention of candidates or useful intermediates."
+            },
+            {
+              "line": 46,
+              "text": "B(T)=T-p_1(T-t_1)_+-p_2(T-t_2)_+."
+            },
+            {
+              "line": 73,
+              "text": "No completed succession experiment is claimed here. A discriminating next study would let a learner construct a new effective response, remove the predecessor, and present a different challenge. It would compare inheritance of the solution with inheritance of usable experimental means and authority, while charging maintenance, evidence, retention, and establishment to matched budgets. Some environments must reward retained intermediates, others make them useless, and others make their carrying costs decisive. Otherwise the result is built into the example."
+            }
+          ]
+        },
+        {
+          "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/discovery/DISCOVERY-MATH.md",
+          "sha256": "d8c216db80e83265475c649a31201c02bda304acdcd8a3eb5fae7ce6b49da380",
+          "bytes": 15051,
+          "snippets": [
+            {
+              "line": 3,
+              "text": "Research candidate / internal mathematical analysis. Prepared 5 October 2026. This is a scoped extension of the establishment calculation, not a universal law of invention or a claim of theorem priority."
+            },
+            {
+              "line": 7,
+              "text": "The earlier [establishment result](../MATHEMATICAL-ANALYSIS.md) assumes a successor design is already available. The present extension charges candidate production, noisy validation, and installation to the same physical effort that maintains both current functioning and the capacity to inquire. It supplies an exact resource clock and exact true/false installation probabilities for a declared batch protocol, plus a finite sufficient confidence-and-resource bound."
+            },
+            {
+              "line": 11,
+              "text": "The existing [candidate-discovery analysis](../../2026-10-04-integrated-evolution/candidate-discovery-math.md) already distinguishes nomination, fresh validation, rights, and implementation costs. The [prospective-revision analysis](../../2026-10-04-integrated-evolution/prospective-revision-math.md) already distinguishes anomalies from useful new questions and prices fresh validation. The [recurrent-inquiry analysis](../../2026-10-04-integrated-evolution/recurrent-inquiry-math.md) already prices inquiry upkeep and explains why unused capacity can have future value. Its procurement allowance is supplied externally; operation and implementation are not jointly financed by the production-margin calculation below. Those earlier results are inherited, not rediscovered here."
+            },
+            {
+              "line": 15,
+              "text": "Let two independently specified supports be `c_1` for current operation and `c_2` for inquiry. Their floors `c_i* > 0` are required throughout the interval. Inquiry at its floor means the apparatus and competence remain functional; actually producing or testing a candidate still consumes additional work."
+            },
+            {
+              "line": 31,
+              "text": "\\qquad p_1+p_2\\le1."
+            },
+            {
+              "line": 40,
+              "text": "\\boxed{B(T)=T-p_1(T-t_1)_+-p_2(T-t_2)_+.}"
+            },
+            {
+              "line": 57,
+              "text": "therefore gives a minimum maintenance bill `p_i(T-t_i)_+`. It is attained by `u_i=0` before `t_i` and `u_i=p_i` afterward. The two minimizing schedules are jointly admissible because their total never exceeds `p_1+p_2<=1`. Subtracting their summed work from `T` proves (D3). ∎"
+            },
+            {
+              "line": 63,
+              "text": "- If `s=1-p_1-p_2>0`, then after both reserves are used, `B(T)=sT+p_1t_1+p_2t_2`; recurring margin pays for additional work."
+            },
+            {
+              "line": 64,
+              "text": "- If `p_1+p_2=1`, the lifetime nonmaintenance allowance is finite: `B(infinity)=p_1t_1+p_2t_2`. Both supports can remain functional forever while eventually no effort remains to use inquiry or establish anything else."
+            },
+            {
+              "line": 66,
+              "text": "If initial capacities equal both floors and `p_1+p_2=1`, then `B(T)=0` for every `T`. Maintaining an inquiry apparatus is thus distinct from financing any inquiry through it."
+            },
+            {
+              "line": 70,
+              "text": "## 3. Paid candidate production and fresh noisy validation"
+            },
+            {
+              "line": 72,
+              "text": "Each candidate costs `g>0` work to produce. It has a hidden quality label `G` or `D` with independent probability `theta` of `G`, where `0<theta<1`. A `G` candidate, once fully installed, meets the specified successor requirement; a `D` candidate does not. The label is available to the model analyst, not to the selecting process. The Bernoulli quality law is supplied; it does not explain a grammar, learning, creativity, neutral intermediates, or the source of useful forms."
+            }
+          ]
+        },
+        {
+          "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/discovery/CRITICAL-ANALYSIS.md",
+          "sha256": "0b07a331506637eb7ea45ac70c5fdba5666f4138598659bfd18ecef5a2e08365",
+          "bytes": 12250,
+          "snippets": [
+            {
+              "line": 7,
+              "text": "The current core can explain important conditions of invention: inquiry needs support, experimental consequences need to reach a revisable understanding, and an alternative needs a feasible route into operation. It does not yet explain which new functions will arise or why this process produces them. “Maintain the capacity to reorganize” becomes circular if that capacity means whatever would have produced the successful invention."
+            },
+            {
+              "line": 33,
+              "text": "3. **Functional invention:** a constructed artifact or practice makes a consequential response executable that was unavailable through the actual prior interface and budget."
+            },
+            {
+              "line": 34,
+              "text": "4. **Formation of purposes:** participants come to value, pursue, or contest a way of being that was absent from the previous evaluation."
+            },
+            {
+              "line": 79,
+              "text": "Vary support independently of candidate quality where feasible. A no-authority arm whose code forbids deployment demonstrates the specified gate, not a discovery about endogenous institutional capture. To investigate capture, implement or observe a process that allocates authority and then test its consequences. Likewise, do not advertise an underfunded arm's arithmetic inability to finish a trial as emergent evidence that the inquiry mechanism failed."
+            }
+          ]
+        },
+        {
+          "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/discovery/REVIEW.md",
+          "sha256": "b55d613ec18aec9dc140fc62c2da96c8250e79e5702d3ca52e7ade8e4ced1bf2",
+          "bytes": 2292,
+          "snippets": [
+            {
+              "line": 15,
+              "text": "The candidate-quality distribution, observation laws, costs, viability floors and acceptance objective are supplied. The model does not generate new functions or purposes. The work-clock result assumes divisible, resumable work, immediate outcomes on completion and no unmodeled calendar-time restrictions. Spending inherited capacity down to its floor is a deterministic optimum within that model, not advice to eliminate real reserves."
+            }
+          ]
+        },
+        {
+          "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/identity-through-change.md",
+          "sha256": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170",
+          "bytes": 11517,
+          "snippets": [
+            {
+              "line": 3,
+              "text": "Research continuation for Ren, 5 October 2026. Earlier theories are preserved. This investigation follows the correction that a useful mathematical pattern should not immediately be called a deeper metaphysical root. It examines one concrete case and keeps the meanings of continuity separate."
+            },
+            {
+              "line": 94,
+              "text": "The resulting correction to our earlier emphasis on responses is important:"
+            },
+            {
+              "line": 96,
+              "text": "> **A description can be sufficient for every allowed future response and still be insufficient for a fact about how the present came about.**"
+            },
+            {
+              "line": 98,
+              "text": "Response equivalence remains useful for the questions it preserves. It is not, by itself, an account of all truth. The insufficiency belongs to the description; it does not make the historical fact relative to an observer."
+            }
+          ]
+        }
+      ],
+      "external_primary_read": {
+        "url": "https://ezequieldipaolo.net/wp-content/uploads/2011/10/autopoiesis_teleology_2005.pdf",
+        "author": "Ezequiel Di Paolo",
+        "year": 2005,
+        "scope": "Opened full PDF text; directly checked adaptivity definition, pp.435–440 and caveats on pp.449–450. No full copyrighted text retained."
+      },
+      "external_full_text_failed": [
+        "https://doi.org/10.1007/s10539-015-9497-8",
+        "https://leonardobich.wordpress.com/wp-content/uploads/2015/08/bich-mossio-ruiz-mirazo-moreno-2015-biological_regulation-controlling-the-system-from-within-biology-philosophy.pdf"
+      ],
+      "preservation": "No source was edited; whole-output preservation is delegated to parent."
+    }
+  },
+  "integration_audit": {
+    "path": "work/transformation/integration-audit.md",
+    "sha256": "84cc03c9d63a03b5a135d73cf535f05252800de91b16969aa9582230dfef6ea1",
+    "scope": "Read-only integration; full audit retained locally. Existing other-session results acknowledged, not rerun or presented as newly discovered."
+  },
+  "source_status_at_packaging": [
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-FOUNDATION.md",
+      "sha256_at_read": "e2ef0b5edfe7766bcf857582e077c97885b6bdd91158ce6f05d8c0c879d81c5a",
+      "sha256_at_packaging": "e2ef0b5edfe7766bcf857582e077c97885b6bdd91158ce6f05d8c0c879d81c5a",
+      "unchanged_since_read": true
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ASSESSMENT.md",
+      "sha256_at_read": "53efae37fb43b724a7fe0a8fcb410f97a07d97996c1f9b0235747fffec18a227",
+      "sha256_at_packaging": "53efae37fb43b724a7fe0a8fcb410f97a07d97996c1f9b0235747fffec18a227",
+      "unchanged_since_read": true
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/ANSWER.md",
+      "sha256_at_read": "7cdb85c3d446aa764d3bce888bf3c4aa04f73ef20d9114a7f94b1df7f1df97c7",
+      "sha256_at_packaging": "7cdb85c3d446aa764d3bce888bf3c4aa04f73ef20d9114a7f94b1df7f1df97c7",
+      "unchanged_since_read": true
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/MATHEMATICAL-ANALYSIS.md",
+      "sha256_at_read": "2af8d3e362aa778384ab43054548fc44024c5b7641899579e2144462323a68bc",
+      "sha256_at_packaging": "2af8d3e362aa778384ab43054548fc44024c5b7641899579e2144462323a68bc",
+      "unchanged_since_read": true
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/discovery/ANSWER.md",
+      "sha256_at_read": "4cff4617269ad3142b3186b5bc727953b0f0636c1c1b80c0899418b9777e40c0",
+      "sha256_at_packaging": "4cff4617269ad3142b3186b5bc727953b0f0636c1c1b80c0899418b9777e40c0",
+      "unchanged_since_read": true
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/discovery/DISCOVERY-MATH.md",
+      "sha256_at_read": "d8c216db80e83265475c649a31201c02bda304acdcd8a3eb5fae7ce6b49da380",
+      "sha256_at_packaging": "d8c216db80e83265475c649a31201c02bda304acdcd8a3eb5fae7ce6b49da380",
+      "unchanged_since_read": true
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/discovery/CRITICAL-ANALYSIS.md",
+      "sha256_at_read": "0b07a331506637eb7ea45ac70c5fdba5666f4138598659bfd18ecef5a2e08365",
+      "sha256_at_packaging": "0b07a331506637eb7ea45ac70c5fdba5666f4138598659bfd18ecef5a2e08365",
+      "unchanged_since_read": true
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-health/discovery/REVIEW.md",
+      "sha256_at_read": "b55d613ec18aec9dc140fc62c2da96c8250e79e5702d3ca52e7ade8e4ced1bf2",
+      "sha256_at_packaging": "b55d613ec18aec9dc140fc62c2da96c8250e79e5702d3ca52e7ade8e4ced1bf2",
+      "unchanged_since_read": true
+    },
+    {
+      "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/identity-through-change.md",
+      "sha256_at_read": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170",
+      "sha256_at_packaging": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170",
+      "unchanged_since_read": true
+    }
+  ],
+  "preservation": {
+    "pre_existing_outputs": 28,
+    "all_unchanged": true,
+    "files": [
+      {
+        "path": "outputs/active-inquiry-data.json",
+        "before_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "after_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/active-inquiry-findings.md",
+        "before_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "after_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/differentiation-and-viewpoints.md",
+        "before_sha256": "df792431185cc236e90475f7ad9f916d1fec70b2cd0a3188e15e1057d68ae992",
+        "after_sha256": "df792431185cc236e90475f7ad9f916d1fec70b2cd0a3188e15e1057d68ae992",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/differentiation-evidence.json",
+        "before_sha256": "ba414e92f28923ac4424e0b85dbb071efe577dd031423d2e147622b2ac7993f1",
+        "after_sha256": "ba414e92f28923ac4424e0b85dbb071efe577dd031423d2e147622b2ac7993f1",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/identity-through-change-evidence.json",
+        "before_sha256": "e65fc90568956b3831a58a8520733227b4070b214f11a015a66820cada41e368",
+        "after_sha256": "e65fc90568956b3831a58a8520733227b4070b214f11a015a66820cada41e368",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/identity-through-change-mathematics.md",
+        "before_sha256": "6c1ec924808f1f31b08703957c10cf802044133e9b85aad37cd27b1b23353dfc",
+        "after_sha256": "6c1ec924808f1f31b08703957c10cf802044133e9b85aad37cd27b1b23353dfc",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/identity-through-change.md",
+        "before_sha256": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170",
+        "after_sha256": "8bf11be00ee10dd78d81752b948dc7b0367ec28c1c7022d9469a35dffe757170",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/missing-possibilities-evidence.json",
+        "before_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "after_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/missing-possibility-check.json",
+        "before_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "after_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/next-root-evidence.json",
+        "before_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "after_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/next-root-joint-organization.md",
+        "before_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "after_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/nonseparation-and-selfhood.md",
+        "before_sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6",
+        "after_sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/nonseparation-evidence.json",
+        "before_sha256": "aeba2f74007c905012d75c98cd9e264b5d21294402eea7222d557cff8485c678",
+        "after_sha256": "aeba2f74007c905012d75c98cd9e264b5d21294402eea7222d557cff8485c678",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/noticing-missing-possibilities.md",
+        "before_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "after_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/reasoning-pilot-data.json",
+        "before_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "after_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/reasoning-pilot-findings.md",
+        "before_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "after_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/research-ledger.md",
+        "before_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "after_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-cross-session-assessment.md",
+        "before_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "after_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-cross-session-evidence.json",
+        "before_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "after_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-checks.json",
+        "before_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "after_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-v1.md",
+        "before_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "after_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization-v2.md",
+        "before_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "after_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-formalization.md",
+        "before_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "after_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-fundamental-evidence.json",
+        "before_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "after_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-substantive-evidence.json",
+        "before_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "after_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/root-of-wisdom-synthesis.md",
+        "before_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "after_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/source-map.md",
+        "before_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "after_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "unchanged": true
+      },
+      {
+        "path": "outputs/worked-test-results.json",
+        "before_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "after_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "unchanged": true
+      }
+    ]
+  },
+  "report_local_links": [
+    {
+      "target": "differentiation-and-viewpoints.md",
+      "resolved": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/differentiation-and-viewpoints.md",
+      "exists_or_current_package": true
+    },
+    {
+      "target": "/Users/ren/theories/_process/research/2026-10-05-generative-health/ANSWER.md",
+      "resolved": "/Users/ren/theories/_process/research/2026-10-05-generative-health/ANSWER.md",
+      "exists_or_current_package": true
+    },
+    {
+      "target": "/Users/ren/theories/_process/research/2026-10-05-generative-health/discovery/ANSWER.md",
+      "resolved": "/Users/ren/theories/_process/research/2026-10-05-generative-health/discovery/ANSWER.md",
+      "exists_or_current_package": true
+    },
+    {
+      "target": "identity-through-change.md",
+      "resolved": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/identity-through-change.md",
+      "exists_or_current_package": true
+    },
+    {
+      "target": "changing-the-interface-evidence.json",
+      "resolved": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/changing-the-interface-evidence.json",
+      "exists_or_current_package": true
+    }
+  ]
+}

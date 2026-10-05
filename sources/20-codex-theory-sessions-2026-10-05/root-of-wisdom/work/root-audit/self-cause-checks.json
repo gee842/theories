@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scope": "Exact selected counterexample arithmetic; not independent reproduction of the 90000-episode simulation or proof of general wisdom claims.",
+  "checks": {
+    "60step_observation_equivalence": true,
+    "squared_state_losses": [
+      "0",
+      "60"
+    ],
+    "wrong_origin_r": "3/4",
+    "transformed_control_multiplier": "3/10",
+    "20step_identity": true,
+    "causal_observational_equivalence_different_interventions": true,
+    "goal_reversal_fails_fixed_criterion": true
+  }
+}

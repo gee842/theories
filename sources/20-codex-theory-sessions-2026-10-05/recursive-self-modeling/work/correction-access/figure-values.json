@@ -1,0 +1,121 @@
+{
+  "input": "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/work/correction-access/results/all-results.npz",
+  "figures": [
+    "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/work/correction-access/gate-access-summary.png",
+    "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/work/correction-access/gate-access-summary.svg",
+    "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/work/correction-access/anchor-benchmark-summary.png",
+    "/Users/ren/Documents/Codex/2026-10-05/recursive-self-modeling/work/correction-access/anchor-benchmark-summary.svg"
+  ],
+  "scalar_gate_summary": {
+    "confidence": {
+      "mean_loss_constant": 8.991860440647526,
+      "mean_loss_change": 21.79901063586813,
+      "no_postchange_reference_fraction": 0.28974999999999995,
+      "max_observed_postchange_reference_delay": 39.0,
+      "mean_delay_among_observed_references_only": 4.833861316437874
+    },
+    "innovation": {
+      "mean_loss_constant": 11.709869227393956,
+      "mean_loss_change": 18.589719842990824,
+      "no_postchange_reference_fraction": 0.163875,
+      "max_observed_postchange_reference_delay": 4.0,
+      "mean_delay_among_observed_references_only": 1.9074600089699507
+    },
+    "periodic": {
+      "mean_loss_constant": 12.036277945992847,
+      "mean_loss_change": 19.22832688784204,
+      "no_postchange_reference_fraction": 0.0,
+      "max_observed_postchange_reference_delay": 14.0,
+      "mean_delay_among_observed_references_only": 5.4645
+    },
+    "hybrid": {
+      "mean_loss_constant": 11.276618823193582,
+      "mean_loss_change": 20.960880757304352,
+      "no_postchange_reference_fraction": 0.0,
+      "max_observed_postchange_reference_delay": 29.0,
+      "mean_delay_among_observed_references_only": 6.982625
+    }
+  },
+  "descriptive_anchor_summary": {
+    "constant_g0_d0": {
+      "periodic": {
+        "total_loss": 10.50883188737854,
+        "coverage90": 0.9682916666666666
+      },
+      "anchor_filter": {
+        "total_loss": 0.6569559433555067,
+        "coverage90": 0.9110333333333333
+      }
+    },
+    "constant_g0_d1": {
+      "periodic": {
+        "total_loss": 11.134108472801215,
+        "coverage90": 0.9474666666666666
+      },
+      "anchor_filter": {
+        "total_loss": 0.7227236225968556,
+        "coverage90": 0.9023833333333332
+      }
+    },
+    "constant_g1_d0": {
+      "periodic": {
+        "total_loss": 12.974174628659425,
+        "coverage90": 0.9379333333333333
+      },
+      "anchor_filter": {
+        "total_loss": 30.21572985260385,
+        "coverage90": 0.02565833333333333
+      }
+    },
+    "constant_g1_d1": {
+      "periodic": {
+        "total_loss": 13.527996795132207,
+        "coverage90": 0.9179499999999999
+      },
+      "anchor_filter": {
+        "total_loss": 30.270766202217732,
+        "coverage90": 0.024733333333333333
+      }
+    },
+    "change_g0_d0": {
+      "periodic": {
+        "total_loss": 17.28767545721428,
+        "coverage90": 0.8146083333333334
+      },
+      "anchor_filter": {
+        "total_loss": 0.6594653864854765,
+        "coverage90": 0.9094
+      }
+    },
+    "change_g0_d1": {
+      "periodic": {
+        "total_loss": 18.4717007812131,
+        "coverage90": 0.7697999999999999
+      },
+      "anchor_filter": {
+        "total_loss": 0.7252083999868022,
+        "coverage90": 0.900675
+      }
+    },
+    "change_g1_d0": {
+      "periodic": {
+        "total_loss": 20.041874616782238,
+        "coverage90": 0.7814249999999999
+      },
+      "anchor_filter": {
+        "total_loss": 30.226894192928828,
+        "coverage90": 0.02565833333333333
+      }
+    },
+    "change_g1_d1": {
+      "periodic": {
+        "total_loss": 21.112056696158543,
+        "coverage90": 0.7529333333333333
+      },
+      "anchor_filter": {
+        "total_loss": 30.28190587680269,
+        "coverage90": 0.024733333333333333
+      }
+    }
+  }
+}

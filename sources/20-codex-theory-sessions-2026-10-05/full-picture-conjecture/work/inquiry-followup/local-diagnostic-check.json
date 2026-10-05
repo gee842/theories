@@ -1,0 +1,179 @@
+{
+  "label": "exploratory diagnostic counterexample; outside frozen main starting grid and seven weights",
+  "state": [
+    "1",
+    "1",
+    "6",
+    "0",
+    "1",
+    "1/2",
+    "-1"
+  ],
+  "weights": [
+    20,
+    1,
+    10,
+    0
+  ],
+  "all_actions": [
+    {
+      "support": "drop",
+      "test": false,
+      "repair_rule": {
+        "none": 0
+      },
+      "vector": [
+        "9/20",
+        "0",
+        "0",
+        "9/20"
+      ],
+      "score": "9"
+    },
+    {
+      "support": "drop",
+      "test": false,
+      "repair_rule": {
+        "none": 1
+      },
+      "vector": [
+        "0",
+        "3",
+        "1/2",
+        "1/10"
+      ],
+      "score": "8"
+    },
+    {
+      "support": "keep",
+      "test": false,
+      "repair_rule": {
+        "none": 0
+      },
+      "vector": [
+        "9/20",
+        "1",
+        "0",
+        "9/20"
+      ],
+      "score": "10"
+    },
+    {
+      "support": "keep",
+      "test": false,
+      "repair_rule": {
+        "none": 1
+      },
+      "vector": [
+        "0",
+        "4",
+        "1/2",
+        "1/10"
+      ],
+      "score": "9"
+    },
+    {
+      "support": "keep",
+      "test": true,
+      "repair_rule": {
+        "positive": 0,
+        "negative": 0
+      },
+      "vector": [
+        "9/20",
+        "3",
+        "1/20",
+        "9/20"
+      ],
+      "score": "25/2"
+    },
+    {
+      "support": "keep",
+      "test": true,
+      "repair_rule": {
+        "positive": 0,
+        "negative": 1
+      },
+      "vector": [
+        "73/200",
+        "9/2",
+        "1/2",
+        "83/200"
+      ],
+      "score": "84/5"
+    },
+    {
+      "support": "keep",
+      "test": true,
+      "repair_rule": {
+        "positive": 1,
+        "negative": 0
+      },
+      "vector": [
+        "17/200",
+        "9/2",
+        "1/10",
+        "27/200"
+      ],
+      "score": "36/5"
+    },
+    {
+      "support": "keep",
+      "test": true,
+      "repair_rule": {
+        "positive": 1,
+        "negative": 1
+      },
+      "vector": [
+        "0",
+        "6",
+        "11/20",
+        "1/10"
+      ],
+      "score": "23/2"
+    }
+  ],
+  "optimum": {
+    "support_value": "36/5",
+    "metrics_exact": {
+      "failure": "17/200",
+      "expense": "9/2",
+      "burden": "1/10",
+      "unrecovered": "27/200",
+      "tests": "1",
+      "repairs": "1/2",
+      "rebuilds": "0",
+      "upkeep": "1",
+      "inquiry_expense": "3",
+      "output": "223/50",
+      "terminal_cash": "149/25",
+      "terminal_treasury": "0"
+    },
+    "metrics": {
+      "failure": 0.085,
+      "expense": 4.5,
+      "burden": 0.1,
+      "unrecovered": 0.135,
+      "tests": 1.0,
+      "repairs": 0.5,
+      "rebuilds": 0.0,
+      "upkeep": 1.0,
+      "inquiry_expense": 3.0,
+      "output": 4.46,
+      "terminal_cash": 5.96,
+      "terminal_treasury": 0.0
+    },
+    "normalized_cash": 6,
+    "normalized_treasury": 0,
+    "root_action": {
+      "support": "keep",
+      "test": true,
+      "repair_rule": {
+        "positive": 1,
+        "negative": 0
+      }
+    },
+    "initial_action_count": 8,
+    "ledger_residual": "0"
+  }
+}

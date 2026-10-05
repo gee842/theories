@@ -1,0 +1,186 @@
+{
+  "status": "passed",
+  "scope": "Conditional mathematical examples, not empirical validation",
+  "practice_transmission": {
+    "parameters": {
+      "a": 9.0,
+      "delta": 1.0,
+      "eta": 1.0,
+      "mu": 1.0,
+      "K": 1.0,
+      "uH": 0.5,
+      "uL": 0.1
+    },
+    "critical_effort": 0.25,
+    "cases": [
+      {
+        "case": "Inherited production dominates",
+        "copying": 0.5,
+        "initial": [
+          2.0,
+          5.645751311064591,
+          0.99
+        ],
+        "final_t150_E_C_x": [
+          2.000000000000004,
+          5.645751311064575,
+          1.0
+        ],
+        "max_E": 2.0111832127177287,
+        "tolerance_refinement_error": 1.322111309320917e-10
+      },
+      {
+        "case": "Current-cost copying dominates",
+        "copying": 1.5,
+        "initial": [
+          2.0,
+          5.645751311064591,
+          0.99
+        ],
+        "final_t150_E_C_x": [
+          1.2494800845753045e-55,
+          1.0486025354514932e-58,
+          0.0014666456096914017
+        ],
+        "max_E": 4.633362254711416,
+        "tolerance_refinement_error": 1.0245848613976705e-10
+      },
+      {
+        "case": "Selection-compatible but depleted",
+        "copying": 0.5,
+        "initial": [
+          0.05,
+          0.001,
+          0.99
+        ],
+        "final_t150_E_C_x": [
+          1.0330800693241218e-65,
+          7.388564059771713e-69,
+          0.9901163518548036
+        ],
+        "max_E": 0.05000000000000001,
+        "tolerance_refinement_error": 6.862566070964249e-15
+      },
+      {
+        "case": "Balanced transmission",
+        "copying": 1.0,
+        "initial": [
+          2.0,
+          5.645751311064591,
+          0.99
+        ],
+        "final_t150_E_C_x": [
+          2.016129032258061,
+          5.625478517008686,
+          0.99
+        ],
+        "max_E": 2.016129032258061,
+        "tolerance_refinement_error": 1.1468515026535897e-10
+      }
+    ]
+  },
+  "appropriation": {
+    "parameters": {
+      "B": 4.0,
+      "h": 1.0,
+      "c": 1.0,
+      "fee": 0.2,
+      "decay": 1.0,
+      "activity_scale": 0.1,
+      "E_floor": 0.7
+    },
+    "cases": [
+      {
+        "retained_fraction": 0.1,
+        "formal_selected_share": 0.0,
+        "formal_positive_support": -0.1,
+        "meets_strict_floor": false
+      },
+      {
+        "retained_fraction": 0.3,
+        "formal_selected_share": 0.13207547169811318,
+        "formal_positive_support": 0.2266666666666666,
+        "meets_strict_floor": false,
+        "numerical_final": [
+          0.22666666666666846,
+          0.13207547169811396
+        ]
+      },
+      {
+        "retained_fraction": 0.5,
+        "formal_selected_share": 0.8181818181818181,
+        "formal_positive_support": 0.7999999999999999,
+        "meets_strict_floor": true,
+        "numerical_final": [
+          0.7999999999999995,
+          0.8181818181818172
+        ]
+      },
+      {
+        "retained_fraction": 0.8,
+        "formal_selected_share": 1.0,
+        "formal_positive_support": 0.29999999999999993,
+        "meets_strict_floor": false,
+        "numerical_final": [
+          0.29999999999999977,
+          1.0
+        ]
+      }
+    ],
+    "interior_optimal_retention": 0.512989176042577,
+    "interior_peak_support": 0.8012822620764143,
+    "nonhyperbolic_boundary": {
+      "phi": 0.5555555555555556,
+      "support": 0.7888888888888889,
+      "surplus_identity_verified": true,
+      "meaning": "zero linear exponent; quadratic decline of rare noncontributors"
+    }
+  },
+  "replacement": {
+    "parameters": {
+      "epsilon": 0.01,
+      "gain": 2.0,
+      "delay": 2.0,
+      "speed": 1.0,
+      "flow_scale": 1.0,
+      "reserve": 0.5
+    },
+    "deficit_onset_exp_sL_threshold": 2.020408163265306,
+    "time_of_minimum_support": 6.2794900989279725,
+    "required_reserve": 0.7291694326024698,
+    "floor_crossing_time": 4.9372424882024,
+    "successor_alone_establishment_time": 6.59511985013459,
+    "overlap_checks": [
+      {
+        "speed": 0.25,
+        "integrated_overlap": 1.979999999999999,
+        "expected": 1.98,
+        "sampled_peak_overlap": 0.12435297298189069
+      },
+      {
+        "speed": 0.5,
+        "integrated_overlap": 1.9799999999999933,
+        "expected": 1.98,
+        "sampled_peak_overlap": 0.2449186468493219
+      },
+      {
+        "speed": 1.0,
+        "integrated_overlap": 1.9799999999999964,
+        "expected": 1.98,
+        "sampled_peak_overlap": 0.4621171327062346
+      },
+      {
+        "speed": 2.0,
+        "integrated_overlap": 1.9799999999999949,
+        "expected": 1.98,
+        "sampled_peak_overlap": 0.7615941554420856
+      }
+    ]
+  },
+  "limitations": [
+    "Transmission and retention mechanisms are specified assumptions.",
+    "Fixed operating scale in appropriation is not a population model.",
+    "Full-retention overlap is sufficient, not necessarily minimal.",
+    "No empirical experiment or deployment benchmark was run."
+  ]
+}

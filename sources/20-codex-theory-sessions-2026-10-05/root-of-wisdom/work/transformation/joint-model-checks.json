@@ -1,0 +1,1132 @@
+{
+  "status": "all_exact_checks_passed",
+  "local_rule_cases": 192,
+  "type_swap_symmetry_cases": 192,
+  "four_tick_blocks_all_processing_bit_histories": 1536,
+  "four_tick_block_minimum_reserve": 1,
+  "unbounded_finite_state_reachability": [
+    {
+      "minimum_dwell": 4,
+      "reachable_states": 24,
+      "transition_edges": 36,
+      "death_states": 0,
+      "minimum_reachable_reserve": 1
+    },
+    {
+      "minimum_dwell": 3,
+      "reachable_states": 28,
+      "transition_edges": 42,
+      "death_states": 2,
+      "minimum_reachable_reserve": 0
+    },
+    {
+      "minimum_dwell": 2,
+      "reachable_states": 36,
+      "transition_edges": 56,
+      "death_states": 8,
+      "minimum_reachable_reserve": 0
+    }
+  ],
+  "sensor_missing_distinction_cases": 4,
+  "sensor_missing_distinction_witnesses": [
+    {
+      "supported_type": "A",
+      "frozen_sensor": "B",
+      "irrelevant_bit": 0,
+      "reserve": 1,
+      "common_record": null,
+      "safe_actions_bit0": [
+        0
+      ],
+      "safe_actions_bit1": [
+        1
+      ]
+    },
+    {
+      "supported_type": "A",
+      "frozen_sensor": "B",
+      "irrelevant_bit": 1,
+      "reserve": 1,
+      "common_record": null,
+      "safe_actions_bit0": [
+        0
+      ],
+      "safe_actions_bit1": [
+        1
+      ]
+    },
+    {
+      "supported_type": "B",
+      "frozen_sensor": "A",
+      "irrelevant_bit": 0,
+      "reserve": 1,
+      "common_record": null,
+      "safe_actions_bit0": [
+        0
+      ],
+      "safe_actions_bit1": [
+        1
+      ]
+    },
+    {
+      "supported_type": "B",
+      "frozen_sensor": "A",
+      "irrelevant_bit": 1,
+      "reserve": 1,
+      "common_record": null,
+      "safe_actions_bit0": [
+        0
+      ],
+      "safe_actions_bit1": [
+        1
+      ]
+    }
+  ],
+  "physical_module_ablation_cases": 128,
+  "alternating_four_tick_trace": [
+    {
+      "tick": 0,
+      "interface": "A",
+      "reserve": 3,
+      "rebuilding": false
+    },
+    {
+      "tick": 1,
+      "field": "A",
+      "action": "harvest",
+      "intake": 2,
+      "interface": "A",
+      "reserve": 3,
+      "rebuilding": false
+    },
+    {
+      "tick": 2,
+      "field": "A",
+      "action": "harvest",
+      "intake": 2,
+      "interface": "A",
+      "reserve": 3,
+      "rebuilding": false
+    },
+    {
+      "tick": 3,
+      "field": "A",
+      "action": "harvest",
+      "intake": 2,
+      "interface": "A",
+      "reserve": 3,
+      "rebuilding": false
+    },
+    {
+      "tick": 4,
+      "field": "A",
+      "action": "harvest",
+      "intake": 2,
+      "interface": "A",
+      "reserve": 3,
+      "rebuilding": false
+    },
+    {
+      "tick": 5,
+      "field": "B",
+      "action": "rebuild-start",
+      "intake": 0,
+      "interface": "A",
+      "reserve": 2,
+      "rebuilding": true
+    },
+    {
+      "tick": 6,
+      "field": "B",
+      "action": "rebuild-complete",
+      "intake": 0,
+      "interface": "B",
+      "reserve": 1,
+      "rebuilding": false
+    },
+    {
+      "tick": 7,
+      "field": "B",
+      "action": "harvest",
+      "intake": 2,
+      "interface": "B",
+      "reserve": 2,
+      "rebuilding": false
+    },
+    {
+      "tick": 8,
+      "field": "B",
+      "action": "harvest",
+      "intake": 2,
+      "interface": "B",
+      "reserve": 3,
+      "rebuilding": false
+    },
+    {
+      "tick": 9,
+      "field": "A",
+      "action": "rebuild-start",
+      "intake": 0,
+      "interface": "B",
+      "reserve": 2,
+      "rebuilding": true
+    },
+    {
+      "tick": 10,
+      "field": "A",
+      "action": "rebuild-complete",
+      "intake": 0,
+      "interface": "A",
+      "reserve": 1,
+      "rebuilding": false
+    },
+    {
+      "tick": 11,
+      "field": "A",
+      "action": "harvest",
+      "intake": 2,
+      "interface": "A",
+      "reserve": 2,
+      "rebuilding": false
+    },
+    {
+      "tick": 12,
+      "field": "A",
+      "action": "harvest",
+      "intake": 2,
+      "interface": "A",
+      "reserve": 3,
+      "rebuilding": false
+    }
+  ],
+  "comparison_summary": {
+    "full_reconfiguration": {
+      "first_death_tick": null,
+      "final_reserve": 3,
+      "reserve_sequence": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        1,
+        2,
+        3,
+        2,
+        1,
+        2,
+        3
+      ]
+    },
+    "fixed_A": {
+      "first_death_tick": 7,
+      "final_reserve": 0,
+      "reserve_sequence": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fixed_B": {
+      "first_death_tick": 3,
+      "final_reserve": 0,
+      "reserve_sequence": [
+        3,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "frozen_sensor": {
+      "first_death_tick": 7,
+      "final_reserve": 0,
+      "reserve_sequence": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "frozen_transporter": {
+      "first_death_tick": 7,
+      "final_reserve": 0,
+      "reserve_sequence": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "frozen_converter": {
+      "first_death_tick": 7,
+      "final_reserve": 0,
+      "reserve_sequence": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "comparison_traces": {
+    "full_reconfiguration": [
+      {
+        "tick": 0,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 1,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 2,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 3,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 4,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 5,
+        "field": "B",
+        "action": "rebuild-start",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 2,
+        "rebuilding": true
+      },
+      {
+        "tick": 6,
+        "field": "B",
+        "action": "rebuild-complete",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 1,
+        "rebuilding": false
+      },
+      {
+        "tick": 7,
+        "field": "B",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "B",
+        "reserve": 2,
+        "rebuilding": false
+      },
+      {
+        "tick": 8,
+        "field": "B",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "B",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 9,
+        "field": "A",
+        "action": "rebuild-start",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 2,
+        "rebuilding": true
+      },
+      {
+        "tick": 10,
+        "field": "A",
+        "action": "rebuild-complete",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 1,
+        "rebuilding": false
+      },
+      {
+        "tick": 11,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 2,
+        "rebuilding": false
+      },
+      {
+        "tick": 12,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      }
+    ],
+    "fixed_A": [
+      {
+        "tick": 0,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 1,
+        "field": "A",
+        "action": "fixed-harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 2,
+        "field": "A",
+        "action": "fixed-harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 3,
+        "field": "A",
+        "action": "fixed-harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 4,
+        "field": "A",
+        "action": "fixed-harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 5,
+        "field": "B",
+        "action": "fixed-harvest",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 2,
+        "rebuilding": false
+      },
+      {
+        "tick": 6,
+        "field": "B",
+        "action": "fixed-harvest",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 1,
+        "rebuilding": false
+      },
+      {
+        "tick": 7,
+        "field": "B",
+        "action": "fixed-harvest",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 8,
+        "field": "B",
+        "action": "dead",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 9,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 10,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 11,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 12,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 0,
+        "rebuilding": false
+      }
+    ],
+    "fixed_B": [
+      {
+        "tick": 0,
+        "interface": "B",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 1,
+        "field": "A",
+        "action": "fixed-harvest",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 2,
+        "rebuilding": false
+      },
+      {
+        "tick": 2,
+        "field": "A",
+        "action": "fixed-harvest",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 1,
+        "rebuilding": false
+      },
+      {
+        "tick": 3,
+        "field": "A",
+        "action": "fixed-harvest",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 4,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 5,
+        "field": "B",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 6,
+        "field": "B",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 7,
+        "field": "B",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 8,
+        "field": "B",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 9,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 10,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 11,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 12,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      }
+    ],
+    "frozen_sensor": [
+      {
+        "tick": 0,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 1,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 2,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 3,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 4,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 5,
+        "field": "B",
+        "action": "rebuild-start",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 2,
+        "rebuilding": true
+      },
+      {
+        "tick": 6,
+        "field": "B",
+        "action": "rebuild-complete",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 1,
+        "rebuilding": false
+      },
+      {
+        "tick": 7,
+        "field": "B",
+        "action": "rebuild-start",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": true
+      },
+      {
+        "tick": 8,
+        "field": "B",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": true
+      },
+      {
+        "tick": 9,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": true
+      },
+      {
+        "tick": 10,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": true
+      },
+      {
+        "tick": 11,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": true
+      },
+      {
+        "tick": 12,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": true
+      }
+    ],
+    "frozen_transporter": [
+      {
+        "tick": 0,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 1,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 2,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 3,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 4,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 5,
+        "field": "B",
+        "action": "rebuild-start",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 2,
+        "rebuilding": true
+      },
+      {
+        "tick": 6,
+        "field": "B",
+        "action": "rebuild-complete",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 1,
+        "rebuilding": false
+      },
+      {
+        "tick": 7,
+        "field": "B",
+        "action": "harvest",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 8,
+        "field": "B",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 9,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 10,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 11,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 12,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      }
+    ],
+    "frozen_converter": [
+      {
+        "tick": 0,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 1,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 2,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 3,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 4,
+        "field": "A",
+        "action": "harvest",
+        "intake": 2,
+        "interface": "A",
+        "reserve": 3,
+        "rebuilding": false
+      },
+      {
+        "tick": 5,
+        "field": "B",
+        "action": "rebuild-start",
+        "intake": 0,
+        "interface": "A",
+        "reserve": 2,
+        "rebuilding": true
+      },
+      {
+        "tick": 6,
+        "field": "B",
+        "action": "rebuild-complete",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 1,
+        "rebuilding": false
+      },
+      {
+        "tick": 7,
+        "field": "B",
+        "action": "harvest",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 8,
+        "field": "B",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 9,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 10,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 11,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      },
+      {
+        "tick": 12,
+        "field": "A",
+        "action": "dead",
+        "intake": 0,
+        "interface": "B",
+        "reserve": 0,
+        "rebuilding": false
+      }
+    ]
+  },
+  "insufficient_reserve_trace": [
+    {
+      "tick": 0,
+      "interface": "A",
+      "reserve": 2,
+      "rebuilding": false
+    },
+    {
+      "tick": 1,
+      "field": "B",
+      "action": "rebuild-start",
+      "intake": 0,
+      "interface": "A",
+      "reserve": 1,
+      "rebuilding": true
+    },
+    {
+      "tick": 2,
+      "field": "B",
+      "action": "rebuild-complete",
+      "intake": 0,
+      "interface": "B",
+      "reserve": 0,
+      "rebuilding": false
+    },
+    {
+      "tick": 3,
+      "field": "B",
+      "action": "dead",
+      "intake": 0,
+      "interface": "B",
+      "reserve": 0,
+      "rebuilding": false
+    },
+    {
+      "tick": 4,
+      "field": "B",
+      "action": "dead",
+      "intake": 0,
+      "interface": "B",
+      "reserve": 0,
+      "rebuilding": false
+    }
+  ],
+  "unknown_initial_residual_counterexample": [
+    {
+      "tick": 0,
+      "interface": "A",
+      "reserve": 3,
+      "rebuilding": false
+    },
+    {
+      "tick": 1,
+      "field": "B",
+      "action": "rebuild-start",
+      "intake": 0,
+      "interface": "A",
+      "reserve": 2,
+      "rebuilding": true
+    },
+    {
+      "tick": 2,
+      "field": "A",
+      "action": "rebuild-complete",
+      "intake": 0,
+      "interface": "B",
+      "reserve": 1,
+      "rebuilding": false
+    },
+    {
+      "tick": 3,
+      "field": "A",
+      "action": "rebuild-start",
+      "intake": 0,
+      "interface": "B",
+      "reserve": 0,
+      "rebuilding": true
+    },
+    {
+      "tick": 4,
+      "field": "A",
+      "action": "dead",
+      "intake": 0,
+      "interface": "B",
+      "reserve": 0,
+      "rebuilding": true
+    },
+    {
+      "tick": 5,
+      "field": "A",
+      "action": "dead",
+      "intake": 0,
+      "interface": "B",
+      "reserve": 0,
+      "rebuilding": true
+    },
+    {
+      "tick": 6,
+      "field": "A",
+      "action": "dead",
+      "intake": 0,
+      "interface": "B",
+      "reserve": 0,
+      "rebuilding": true
+    }
+  ],
+  "scope": {
+    "criterion": "reserve >= 1 after every tick; zero absorbing",
+    "capacity": 3,
+    "initial_reserve": 3,
+    "initial_time": "first tick of an availability phase",
+    "availability_minimum_dwell": 4,
+    "processing_bits": "arbitrary at every tick, visible only through matching installed sensor",
+    "dwell3_failure": "implemented reactive policy only; not impossibility for all controllers",
+    "fixed_baseline": "fixed physical configuration, even with arbitrary software and knowledge"
+  }
+}

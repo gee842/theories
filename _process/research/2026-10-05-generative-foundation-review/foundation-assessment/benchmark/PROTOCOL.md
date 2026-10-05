@@ -1,0 +1,33 @@
+# Frozen exploratory source-and-time holdout benchmark
+
+5 October 2026. This document is saved and hashed before executing this new comparison. It is **not a preregistration or fresh blinded validation**: previous analyses have already used all of these outcomes, and their mixed results are known. The dataset is retained because it contains archived measured outcomes with an audited feature reconstruction. No dataset switch, alternative endpoint, feature ablation, or replacement primary analysis will follow this result.
+
+## Question and claim boundary
+
+Do two measured composition summaries improve prediction of next-cycle microbial biomass beyond current biomass and recorded environment when predicting later observations from an entirely held-out source? This is a narrow predictive implication of distinguishing current output from underlying composition. Mean 16S copy number and Shannon diversity are not measurements of maintenance effort, renewal investment, or information/execution capacity. A positive result cannot validate the root theory or a causal intervention. A negative result must remain in the evidence ledger.
+
+Source: Huisman, Dal Bello and Gore (2026), [Nature Microbiology](https://www.nature.com/articles/s41564-026-02422-3), pinned [author repository](https://github.com/JSHuisman/salinity/tree/f14abee9d5e2d015deead102c04ea4d3030a5788). Use only the existing corrected `results-unfiltered/matched_rows.csv` in `experiments/integrated-correction/general-framework/closure-study/external-test/`. Its 72 rows represent four source inocula × three salinities × two temperatures × three current cycles. Each biomass value averages three biological replicates because replicate identities cannot be linked to sequencing. Existing source documentation and preprocessing limitations remain applicable; no raw data are changed.
+
+## Fixed split and endpoint
+
+For each of the four sources, fit on current-cycle 1 and 3 observations from the other three sources (36 rows). Predict the held-out source's current-cycle 5 observations' next-cycle 6 measured, blank-corrected OD600 (six rows). Thus all training outcomes occur by cycle 4 and all test inputs at cycle 5. All 24 test conditions enter once; no held-out source observations enter its training or tuning. Reject rather than silently alter the design if the expected complete rows are absent.
+
+No source identity fixed effects or source interactions are included. An unseen category cannot thereby create a dummy-coding extrapolation artifact. Known source labels are used only for splitting and uncertainty grouping. This is a temporal ordering within serial propagation, not proof that experimental calendar/batch effects are controlled or a newly collected prospective forecast.
+
+## Equal opportunity baseline and augmentation
+
+Use two matched model libraries. The baseline inputs are current OD600, salinity, temperature, and current cycle. Its ridge-regression design additionally includes salinity squared, cycle squared, salinity × temperature, current OD600 × salinity, and current OD600 × temperature. The augmented ridge design adds mean copy number and Shannon diversity; the augmented kernel input adds those same two summaries to the four baseline inputs. This is not a fit of the renewal differential equations.
+
+Each library contains (a) unchanged-current-biomass prediction; (b) training-target mean; (c) ridge regression with alpha ∈ {0.1, 1, 10, 100}; and (d) Gaussian kernel ridge regression with alpha ∈ {0.01, 0.1, 1, 10}, gamma ∈ {0.1, 1, 10}. The Gaussian kernel is exp(−gamma × squared Euclidean standardized distance / number of active input dimensions). Intercepts are handled by centering training targets; ridge intercept is unpenalized. Features are centered and scaled using training rows only; zero-variance training columns are omitted. Predictions are not clipped after fitting.
+
+Selection uses only the outer training pool. For each of its three sources, train on cycle 1 rows of the other two sources (12 rows) and validate on that inner held-out source at current cycle 3 predicting cycle 4 (six rows). Select the candidate minimizing pooled inner validation mean squared error. Candidate ties within 1e−12 favor, in order, persistence, mean, ridge then kernel, then the larger alpha, then the smaller gamma. Refit the selected model on all 36 outer training rows. The baseline and augmented libraries have identical tuning budgets and selection rules. Report every candidate's validation errors and every selected candidate, so favorable model choices cannot be concealed. Kernel ridge is an established nonlinear regression comparator; this benchmark is not a comparison with all ecological forecasting methods or with the authors' mechanistic model.
+
+## Outcomes and uncertainty
+
+The **primary comparison** is the selected augmented library against the selected baseline library on the 24 paired test predictions. Report RMSE and MAE in OD600 units; the declared incremental prediction expectation requires improvement on **both** metrics. Also report the number of sources with lower squared error, each source's paired MSE and MAE differences, and all test predictions. Report persistence, training mean, and the best inner-selected ridge-only and kernel-only models in each library as fixed descriptive comparators; none can replace the primary selected-library result.
+
+There are four source blocks, not 24 independent ecosystems. Enumerate all 4^4 ordered source-block bootstrap resamples and give the 2.5th/97.5th percentiles of paired RMSE and MAE gains. These are descriptive resampling ranges, **not calibrated population confidence intervals**, because the source count is four, the outer training sets overlap, and the dataset was reused. Report leave-one-test-source-out gain ranges without refitting. Do not report a randomization p-value or claim statistical significance, treatment effects, mediation, or causal superiority. Cycle 7 and community growth rates computed from composition are excluded.
+
+## Implementation checks and stopping rule
+
+Save source/protocol/code hashes, software versions, all inner scores, train/test row indices, and output tables. Check row uniqueness/completeness, no source overlap, strict train-target-before-test-input ordering, finite predictions, and direct recalculation of summary errors from the saved CSV. An implementation error may be repaired with a dated explanation; changes intended to improve the hypothesis result are forbidden. After the declared run, write the outcome regardless of its direction and stop model exploration. A separate prospective causal protocol may be specified without executing human/biological experiments.

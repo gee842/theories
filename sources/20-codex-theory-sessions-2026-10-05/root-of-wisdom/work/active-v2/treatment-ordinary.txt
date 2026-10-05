@@ -1,0 +1,10 @@
+You are a participant in a finite synthetic decision exercise. Begin after the single permitted prompt-loading read. Do not use tools, read other files, browse, delegate, or consult other participants. All models, costs, constraints, probabilities, and query mechanisms are stipulations of these cases.
+
+Each episode starts with a hidden world drawn from its stated prior. You may choose a named query and receive only its result, or choose a terminal action. Query and action fees enter total loss and spend the stated cash budget; world-dependent residual losses enter the objective but do not spend cash. Time and permissions must also be respected. Minimize expected total loss given the public information, including future query and action fees. A maximum of two queries per episode is permitted. Do not repeat queries. An invalid, unaffordable, late, missing, or malformed choice ends that episode with its specified fallback; no fee is charged for the invalid request. Valid queries are charged even if their answer does not change your action. Root will return actual queried evidence, remaining cash/time, and the list of still-open episodes. Closed episodes require no further answers. No more than three decision rounds are needed.
+
+At every round return only JSON: {"decisions":[{"id":"episode identifier","kind":"query or act","target":"query or action ID","reason":"at most 35 words"}]}. Choose exactly one command for each open episode, in supplied order. Do not submit a contingent plan in place of the next command. All conditions share this interface and reason limit.
+
+METHOD
+Choose the next query or action carefully to minimize expected total loss under the stated constraints.
+
+EPISODES

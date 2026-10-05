@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "runtime_seconds": 3.32866274996195,
+  "scope": "base kernel H1/H2, all stock1..3, cash0..5 total5, ready0/1, prior0/half/1, barred/immediate/delayed, seven support directions",
+  "counts": {
+    "nodes": 880,
+    "actions": 2359,
+    "exact_stage_metric_comparisons": 18872,
+    "branch_ledgers": 5304,
+    "exact_branch_distribution_comparisons": 2359,
+    "independent_selected_policy_metric_vectors": 4536,
+    "independent_optimal_support_values": 4536,
+    "expected_ledgers": 4536,
+    "initial_states": 648
+  },
+  "candidate_model_sha256": "051976c28e15a06bbed3be9c95328755bcbf676dfe30440c03a3e0684d000135",
+  "protocol_sha256": "076420c06d25f634266da8bcf8d60a6b0689f3032e5afc076784ff4ed42154cb",
+  "oracle_sha256": "627537684594db454214a346265277d4df207b6579129b46f0c1b59f2fbf6e1e",
+  "candidate_cache": "CacheInfo(hits=39204, misses=6160, maxsize=None, currsize=6160)",
+  "oracle_cache": "CacheInfo(hits=35504, misses=6160, maxsize=None, currsize=6160)",
+  "limitations": "No independent H4 full optimization rerun; controls changing primitive parameters require separate kernel audit."
+}

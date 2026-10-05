@@ -1,0 +1,552 @@
+{
+  "status": "all exact checks passed",
+  "scope": "finite deterministic one-step policies and an explicitly bounded one-query extension",
+  "normative_status": "acceptable sets are stipulated; these checks do not justify the standards or prove wisdom",
+  "terminal_theorem": {
+    "worlds": 3,
+    "actions": 3,
+    "acceptability_matrices": 512,
+    "observation_partitions": 5,
+    "instances_checked": 2560,
+    "instances_with_policy": 1289,
+    "instances_without_policy": 1271,
+    "full_policy_space_sizes_summed": 29184,
+    "meaning_of_previous_field": "sum of candidate policy class sizes; search may stop after finding a witness",
+    "by_partition": [
+      {
+        "labels": [
+          0,
+          0,
+          0
+        ],
+        "matrices_checked": 512,
+        "policy_exists": 169
+      },
+      {
+        "labels": [
+          0,
+          0,
+          1
+        ],
+        "matrices_checked": 512,
+        "policy_exists": 259
+      },
+      {
+        "labels": [
+          0,
+          1,
+          0
+        ],
+        "matrices_checked": 512,
+        "policy_exists": 259
+      },
+      {
+        "labels": [
+          0,
+          1,
+          1
+        ],
+        "matrices_checked": 512,
+        "policy_exists": 259
+      },
+      {
+        "labels": [
+          0,
+          1,
+          2
+        ],
+        "matrices_checked": 512,
+        "policy_exists": 343
+      }
+    ]
+  },
+  "query_extension": {
+    "instances_checked": 80,
+    "terminal_action_cost": 1,
+    "terminal_action_duration": 1,
+    "normal_query_cost": 1,
+    "normal_query_duration": 1,
+    "records": [
+      {
+        "case": "distinct_required_actions",
+        "budget": 0,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 0,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 0,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 0,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 0,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 0,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 0,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 0,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 0,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 0,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 0,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 0,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 0,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 0,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 0,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 0,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 0,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 0,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 0,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 0,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 1,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 1,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 1,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 1,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 1,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 1,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 1,
+        "deadline": 1,
+        "policy_exists": true
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 1,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 1,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 1,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 1,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 1,
+        "deadline": 2,
+        "policy_exists": true
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 1,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 1,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 1,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 1,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 1,
+        "deadline": 3,
+        "policy_exists": true
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 1,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 1,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 1,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 2,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 2,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 2,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 2,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 2,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 2,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 2,
+        "deadline": 1,
+        "policy_exists": true
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 2,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 2,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 2,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 2,
+        "deadline": 2,
+        "policy_exists": true
+      },
+      {
+        "case": "common_action",
+        "budget": 2,
+        "deadline": 2,
+        "policy_exists": true
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 2,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 2,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 2,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 2,
+        "deadline": 3,
+        "policy_exists": true
+      },
+      {
+        "case": "common_action",
+        "budget": 2,
+        "deadline": 3,
+        "policy_exists": true
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 2,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 2,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 2,
+        "deadline": 3,
+        "policy_exists": true
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 3,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 3,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 3,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 3,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 3,
+        "deadline": 0,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 3,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "common_action",
+        "budget": 3,
+        "deadline": 1,
+        "policy_exists": true
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 3,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 3,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 3,
+        "deadline": 1,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 3,
+        "deadline": 2,
+        "policy_exists": true
+      },
+      {
+        "case": "common_action",
+        "budget": 3,
+        "deadline": 2,
+        "policy_exists": true
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 3,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 3,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 3,
+        "deadline": 2,
+        "policy_exists": false
+      },
+      {
+        "case": "distinct_required_actions",
+        "budget": 3,
+        "deadline": 3,
+        "policy_exists": true
+      },
+      {
+        "case": "common_action",
+        "budget": 3,
+        "deadline": 3,
+        "policy_exists": true
+      },
+      {
+        "case": "query_permission_absent",
+        "budget": 3,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "query_is_uninformative",
+        "budget": 3,
+        "deadline": 3,
+        "policy_exists": false
+      },
+      {
+        "case": "slower_query",
+        "budget": 3,
+        "deadline": 3,
+        "policy_exists": true
+      }
+    ]
+  }
+}

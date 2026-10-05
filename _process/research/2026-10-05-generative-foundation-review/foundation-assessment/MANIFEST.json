@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-05",
+  "title": "Physical scope originality and measured performance assessment",
+  "primary": "ASSESSMENT.md",
+  "hash_algorithm": "SHA-256",
+  "self_hash_excluded": true,
+  "files": [
+    {
+      "path": "ASSESSMENT.md",
+      "sha256": "53efae37fb43b724a7fe0a8fcb410f97a07d97996c1f9b0235747fffec18a227",
+      "bytes": 14650
+    },
+    {
+      "path": "DOCUMENT-CHECKS.json",
+      "sha256": "a1b267f1122c64cffb8c71611f190482792f7b90c1ef14fc35102f2c10070a3e",
+      "bytes": 10021
+    },
+    {
+      "path": "INDEPENDENT-CHECKS.json",
+      "sha256": "0cca4a76969988e79ff597bcf5da207b97bcac8a26502588b24411e78a65ddd8",
+      "bytes": 3240
+    },
+    {
+      "path": "MEASURED-COMPARISON.md",
+      "sha256": "fc97595c0a402f6d6e5a48c6c80f6462549b756ad087d5b5d6c400e8dd985aaf",
+      "bytes": 18203
+    },
+    {
+      "path": "ORIGINALITY.md",
+      "sha256": "95f8fdb36feae4ae2f897208e2106fc734f480dae2d6565412429bf8f6ad63b5",
+      "bytes": 37407
+    },
+    {
+      "path": "PHYSICAL-COVERAGE.md",
+      "sha256": "ffd3f7445e6c95a5787cc5b26cc68011578d46571a8bca3dcf3d79b2a4b95153",
+      "bytes": 28709
+    },
+    {
+      "path": "README.md",
+      "sha256": "2566d335d85df48dd0ed06dafb02f20763a6e83a00234aaabfc71f4e288af895",
+      "bytes": 1461
+    },
+    {
+      "path": "REVIEW-MEASURED.md",
+      "sha256": "7f8c06179f23930b3602c1634607faa0c13fe1e1cc3a392fc2ba8513a91232f1",
+      "bytes": 5158
+    },
+    {
+      "path": "REVIEW-PHYSICAL.md",
+      "sha256": "d9b00e41e7ce3aa7bdc4acacd32cceeb4836823b18e5f77931b6d60dd9c11f6d",
+      "bytes": 8892
+    },
+    {
+      "path": "benchmark/PROTOCOL.md",
+      "sha256": "4858ec20a8a1d194d51b3c0d72d6c043f563e4370972791dfbad0dbd4f596e66",
+      "bytes": 6728
+    },
+    {
+      "path": "benchmark/VERIFICATION.json",
+      "sha256": "1fa609b9c4fe26cc9d835591b50f7b3227414336b45453f70eb1d7066032203f",
+      "bytes": 6520
+    },
+    {
+      "path": "benchmark/analysis.json",
+      "sha256": "0953bb540fe830ae46c06f474261fed80c0e595a31a69b4c6ad9aec0b0957945",
+      "bytes": 336135
+    },
+    {
+      "path": "benchmark/analyze.py",
+      "sha256": "6f0fe4b660e81ef47fd2ab1072ea003f79518277e34314fefc713a12a356eabd",
+      "bytes": 9564
+    },
+    {
+      "path": "benchmark/paired_source_errors.csv",
+      "sha256": "7bb8161116381e5248856c66ed7c73e94e006c2930970df9d51bfd2a0e3a0d1e",
+      "bytes": 481
+    },
+    {
+      "path": "benchmark/predictions.csv",
+      "sha256": "2a73f6b4fb73fecd4bb7dfb6d62060d58187a96d71c7105edb60be76363b6f63",
+      "bytes": 6218
+    },
+    {
+      "path": "benchmark/verify_outputs.py",
+      "sha256": "16e98911ecc23f2f509fcfffec1f1d6827f4579a92652301cb6ed7c09b88cb46",
+      "bytes": 3761
+    },
+    {
+      "path": "check_documents.py",
+      "sha256": "2c8a142ba68f44f2ff351ca879c8ad5af8c072d8ccdf04ea991ef2f6415b2a5f",
+      "bytes": 4765
+    },
+    {
+      "path": "verify_assessment.py",
+      "sha256": "cf6105f0766a4526f63f4f4e2c39feb9fea6eca035c7031001e1d59c00a95160",
+      "bytes": 6476
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-FOUNDATION.md",
+      "sha256": "e2ef0b5edfe7766bcf857582e077c97885b6bdd91158ce6f05d8c0c879d81c5a",
+      "bytes": 28048
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/TURNOVER-AND-CLOSURE.md",
+      "sha256": "a35feb39fc56d738b029f7392049c08d9c8e1da8cb31fcbcb93f6952dc624461",
+      "bytes": 20650
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/INFORMATION-AND-RENEWAL.md",
+      "sha256": "a34183db8678140b0d8b5fe2bc7280502c214a4fadea2dcf3de1019b935b5281",
+      "bytes": 20946
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/INTEGRATED-THEORY.md",
+      "sha256": "d32f93afeff3a3c45352642abedc4d360ca0a8739cedaa12b37792b3d8771c16",
+      "bytes": 27344
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/FOUNDATION-ALTERNATIVE-ORIGINAL.md",
+      "sha256": "91efaed68a9746e8213437a810a6bb9b0864a572467a9956010fe2711cb92460",
+      "bytes": 100820
+    },
+    {
+      "path": "/Users/ren/theories/experiments/integrated-correction/general-framework/closure-study/external-test/results-unfiltered/matched_rows.csv",
+      "sha256": "87da93d948f63aeea11d3ef14fdcd39c81d00fae20afaa8d43027b7ab68e2c11",
+      "bytes": 6540
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+Recursive self-modeling: finite self-reference, stopping, and exact scope
+Research note, 5 October 2026 (Asia/Bangkok)
+Status: source audit plus elementary derivations; no claim of mathematical novelty or empirical psychology.
+
+CENTRAL FINDING
+
+A finite system can contain self-referential descriptions, reapply one procedure to its previous outputs, or unfold descriptions to any requested finite depth. These are different constructions. Neither the existence of self-reference nor a semantic fixed-point theorem establishes stable dynamics, accurate introspection, unlimited implemented depth, or normative authority. Conversely, diagonal impossibility theorems rule out specified universal guarantees; they do not rule out accurate limited self-prediction.
+
+Read-only local context consulted: /Users/ren/theories/_process/research/2026-10-04-integrated-evolution/README.md and CLAIMS.md. Relevant discipline: keep conditional mathematical results, empirical hypotheses, definitions, and commitments separate. No files there were changed.
+
+DISTINCTIONS TO KEEP IN THE MAIN SYNTHESIS
+
+1. Object nesting versus process reuse. A nesting R(R(x)) concerns what is represented: the outer object has a representation as its target. A program repeatedly applying R need not possess separately designed machinery for each level. Sequential reuse can overwrite the prior state; simultaneous access to all levels requires storage or recomputation. Conversely, repeatedly applying the same update rule is not automatically meta-modeling: it may merely refine an estimate of the same target. Specify target identities, retained states, and decoding functions.
+
+2. Finite graph versus infinite unfolding. A finite directed graph can include a node referring to itself. Following the edge repeatedly generates an arbitrarily long walk; the stored graph has not grown. The infinite unfolding of that graph is a mathematical construction, not evidence that the physical system has traversed every branch or step.
+
+3. Indefinite extensibility versus completed infinity. The claim "for every finite n, this rule specifies a depth-n expression" has quantifier form forall n exists expression. It does not imply one completed execution realizes every n, or that one finite budget supports them simultaneously. For step durations tau_k >= tau_min > 0, n steps require at least n*tau_min. Without such a lower bound, a formal Zeno schedule tau_k=2^(-k) fits infinitely many steps into a finite mathematical interval; whether physically realizable is an additional physical question. Likewise, total resource R bounds level count only when each active level incurs positive minimum cost or another explicit non-summability assumption.
+
+4. Semantic fixed point versus dynamical convergence. A program p and transformed program T(p) can have the same input/output partial function even though their text differs; this is an extensional/semantic fixed point. A state x* with F(x*)=x* is a dynamical fixed point. Its existence does not imply convergence of x_(t+1)=F(x_t). Example: F(x)=1-x on [0,1] has x*=1/2, but every x0 other than 1/2 alternates forever. Under F(x)=a*x+(1-a)*b with |a|<1, x_t-b=a^t(x0-b), so convergence follows from the contraction assumption, not from self-reference. If |a|>1, the fixed point is unstable.
+
+5. Termination versus usefulness. A fixed iteration cap ensures termination but not accuracy or benefit. A convergent sequence may converge to a wrong model. A semantically self-reproducing program can terminate; a non-self-referential loop can run forever. These properties are logically independent.
+
+SMALL CONSTRUCTIONS AND CHECKED PROPOSITIONS
+
+A. Finite self-reference without an infinite tower.
+
+The following Python program, under ordinary Python string formatting, prints exactly its own source line:
+
+    s='s=%r;print(s%%s)';print(s%s)
+
+The data s contains a finite template; %r supplies its quoted representation and %% supplies a literal percent sign. Formatting the template with itself produces the source line. A terminating quine demonstrates a narrow kind of syntactic self-reference. It is not a model of its runtime state, a model of an emotion, or evidence of consciousness. It supplies a counterexample to "self-reference requires infinitely many separately stored representations."
+
+B. A minimal obstruction to universal feedback prediction.
+
+Let a predictor emit a bit p in {0,1}. Let a system receive that bit and act a=1-p. The predictor is required to predict the resulting action exactly using the same bit: p=a. Combining gives p=1-p, impossible for a bit. This proof assumes (i) the prediction is delivered to the target, (ii) the target can implement this response, and (iii) correctness is demanded for this case. It says nothing about forecasts withheld from the target, probabilistic forecasts, restricted targets, stable policies, or predictions at a coarser resolution. Adding another finite meta-level does not fix these three mutually incompatible requirements. Removing or changing one can.
+
+C. Complementarity defeats the naive one-step reflection rule.
+
+Let Z1 and Z2 be independent fair bits whose values are not yet accessible to a decision-maker. The target is theta=Z1 XOR Z2. Choose an action a in {0,1}, receiving 1 when a=theta and 0 otherwise. An allowed computation exposes one Zi at cost 0.1; each can be exposed once. This may represent a costly examination of two stored diagnostic results. It is a stipulated computational uncertainty model, not proof that deterministic processing creates information.
+
+Before either computation, best expected terminal payoff is 0.5. After either single result, theta is still fair, so the payoff remains 0.5. A one-step rule evaluates each computation as 0.5-0.1=0.4 and stops. But doing both yields payoff 1-0.2=0.8. Exact backward induction therefore chooses a first computation (value 0.8), then a second (remaining value 0.9), then acts. If cost is 0.3 per computation, the two-computation value is 0.4 and stopping at 0.5 is better. This elementary constructed example establishes why "no immediate benefit from one more step" is not a generally valid stopping certificate.
+
+D. An operational finite-budget reflection criterion.
+
+State s contains the current information, available actions, relevant environment state, and remaining integer budget b. Let g(s)=max_a E[u(a,theta)|s] be the value of acting now. Every feasible reflection c has integer budget consumption k(c)>=1, net cost K(c,s), and a specified transition model s'~P(.|s,c). Include time effects, target changes, and opportunity costs in s, K, and P when relevant. Set:
+
+    V_0(s)=g(s)
+    V_b(s)=max{g(s), max_(c:k(c)<=b)[-K(c,s)+E[V_(b-k(c))(s')|s,c]]}.
+
+Reflect exactly when its best continuation value exceeds g(s); break ties by acting. Each actual reflection reduces budget at least one, so execution terminates within b operations. The recurrence is exact in this declared finite-horizon decision model. It does not justify an agent recursively spending unlimited computation to solve its own recurrence: policy construction and policy execution must also be implemented and paid for. Practical options are an offline compiled policy, fixed small lookahead, or an empirically learned stopping policy, with their own errors and overhead measured.
+
+For a PURE INFORMATION variant with a static target, fixed utility/action set, and no direct effect of computation except revealing information and paying cost, the gap E[max_a u(a,theta)|s]-g(s) bounds the possible gross improvement. If this gap is below the cheapest possible first computation, any continuation has negative net value. This is a sufficient stop certificate, not a necessary one. It does not apply unchanged when reflection changes the target, available actions, utility, or future environment.
+
+PRIMARY-SOURCE MAP (verified web access on 5 October 2026)
+
+S1. Alan M. Turing (1936–37), On Computable Numbers, with an Application to the Entscheidungsproblem.
+Facsimile/transcription hosted at Stanford: https://theory.stanford.edu/~trevisan/cs172-07/turing36.pdf
+Publisher DOI: https://doi.org/10.1112/plms/s2-42.1.230
+Inspected source includes the 1937 correction. Sections 6–8 concern universal-machine simulation and diagonal arguments; the paper's original formulation uses circle-free machines and computable sequences. Use it to delimit universal effective decision procedures over a computational model class. Do not say its theorem directly proves that a person's introspection cannot ever be correct, that minds are noncomputable, or that every finite control problem is undecidable. Ordinary halting terminology is a modern presentation of related results; avoid casually attributing that exact formulation and proof to the original paper. Finite bounded cases remain exhaustively checkable.
+
+S2. Neil D. Jones (2013), A Swiss Pocket Knife for Computability, EPTCS 129, 1–17.
+https://arxiv.org/abs/1309.5128
+https://arxiv.org/pdf/1309.5128
+https://doi.org/10.4204/EPTCS.129.1
+This is primary research on efficient implementations, with exposition of Kleene's older theorem (not the original discovery source). Section 2.1 states acceptable-language assumptions: programs as data, computational completeness, a universal program, and specialization. Section 2.2 gives a constructive self-reference theorem: for any two-argument program p there is p* with [[p*]](d)=[[p]](p*,d), including equality of undefined partial values. A self-printing program is an explicit application. The conclusion is semantic equality, not syntactic p*=T(p*), guaranteed termination of every resulting program, or cognitive self-understanding. Sections 4–6 distinguish construction overhead from the runtime of the produced program. Attempts to access the original Kleene 1938 scan were unsuccessful; do not describe it as inspected.
+
+S3. Stuart Russell and Eric Wefald (1991), Principles of metareasoning, Artificial Intelligence 49, 361–395.
+https://doi.org/10.1016/0004-3702(91)90015-C
+Publisher landing page/abstract accessible through web search; full 35-page article was not inspected. The abstract supports the historical claim that computational actions can be evaluated by their effects on external action, with uncertainty about computational outcomes handled by probability and decision theory. This is a normative computational framework. It neither establishes how human feelings are represented nor supplies empirical proof that people optimize such quantities. The one-page CMU scan found during search is not the full article and was not used to infer details.
+
+S4. Nicholas Hay, Stuart Russell, David Tolpin, Solomon Eyal Shimony (2012), Selecting Computations: Theory and Applications.
+https://people.eecs.berkeley.edu/~russell/papers/uai12-meta.pdf
+https://arxiv.org/abs/1207.5879
+Inspected Definitions 1–3, Theorems 4–7, Example 3. In its static selection model, terminal utilities are bounded and every computation costs c>0. The optimal expected count obeys E[N]<=VPI/c, and stopping occurs almost surely. This is not a uniform worst-case finite bound: Example 3 allows arbitrarily long runs. The abstract's "all cases" language must not be read as positive-probability nontermination under these assumptions. Theorem 7 says positive myopic value entails continuing optimally; the converse fails, because computations can complement one another. Costs of solving the metalevel decision problem itself require further implementation analysis. Source restrictions matter especially when reflection changes the feeling/state rather than merely reveals information.
+
+S5. David H. Wolpert (2008), Physical limits of inference, Physica D 237, 1257–1281.
+https://arxiv.org/abs/0708.1362
+https://arxiv.org/pdf/0708.1362
+https://doi.org/10.1016/j.physd.2008.03.040
+Definitions 1–4: a device is (X,Y) over possible worldlines U, with binary surjective conclusion Y; weak inference requires a nonempty setup fiber for each single-value binary probe, and correctness everywhere on that fiber. Proposition 1(ii) has a direct diagonal obstruction: a probe demanding -Y cannot equal Y on any setup. Theorem 1 prohibits mutual weak inference when every pair of setups is jointly possible. These are precise relational impossibilities, independent of a chosen dynamical law. The model also permits successful restricted inference; it does not show all self-observation inaccurate. Application to cognition requires defending the question class, setup freedom, counterfactual worldlines, and correctness criterion. Some other existence statements appear to need edge-case auditing; rely here only on the independently checked diagonal claims, not the whole paper's philosophical interpretation.
+
+S6. F. William Lawvere (1969), Diagonal Arguments and Cartesian Closed Categories, Lecture Notes in Mathematics 92, 134–145.
+Original scan inspected: https://www.its.caltech.edu/~matilde/LawvereDiagonalArgCartesianClosedCats.pdf
+Official reprint listing found: https://www.tac.mta.ca/tac/reprints/articles/15/tr15abs.html
+Pages 136–137 state and prove the fixed-point theorem under a weakly point-surjective representation map in a cartesian closed category. In sets, the diagonal proof is transparent: if E(a,x) represents every map A->Y, then for t:Y->Y represent x->t(E(x,x)) by a; y=E(a,a) satisfies y=t(y). If t is Boolean negation, this contradicts universal representability. The strong representability premise must be established before use. This theorem does not imply that psychological reflection converges to a fixed point, that a feeling must be self-contradictory, or that every abstraction preserves its target's properties.
+
+REJECTED FORMULATIONS
+
+- "Self-modeling inevitably creates a completed infinite regress." Finite graphs and finite self-reproducing programs are counterexamples.
+- "Any fixed-point theorem proves reflective equilibrium." Semantic identity and dynamical attraction differ.
+- "Every finite resource bound imposes a maximum depth." Requires explicit per-level costs and a definition of implemented versus describable depth.
+- "A positive computation cost gives a fixed deterministic stopping deadline." False without further assumptions; expected and worst-case bounds differ.
+- "One more step has no immediate expected benefit, so all further reflection is useless." The XOR example disproves this.
+- "Turing/Gödel prove all complete self-knowledge impossible." No target, formal language, allowed query class, or success criterion has been specified.
+- "Universal invariance follows from embeddedness." At most a universally quantified participation constraint follows once implementation in the world is assumed. Preservation under a map requires a separate commuting relation or other explicit proof.
+
+NEXT CONCRETE TEST
+
+Implement a small budgeted selector with three available operations: inspect a stored diagnostic, compute an estimate of that diagnostic's reliability, or obtain fresh environmental data. Compare fixed depth 0/1/2, a myopic policy, and exact bounded-horizon choice. Include (i) redundant meta-descriptions with no new accessible evidence, (ii) complementary diagnostics, (iii) biased meta-reliability estimates, and (iv) reflection that causally changes the target during deliberation. Charge every operation and the stop-policy overhead; score external decision loss, calibration, total cost, and termination separately. The XOR calculation provides an exact control before adding dynamic feeling-like variables.
+
+Verification completed in this session: executed the one-line quine and confirmed byte-for-byte source reproduction after removing its final output newline. Evaluated the two-bit Bellman recurrence with exact rational arithmetic: initial optimal values are 4/5 at cost 1/10 and 1/2 at cost 3/10. The myopic initial value is 1/2 in both cases. The logical diagonal arguments and affine convergence formula were checked algebraically; they were not submitted to an automated proof assistant.
+
+OPEN ISSUES
+
+- When does the recorded representation preserve a target's information sufficiently for later questions, and when does meta-modeling merely reiterate lost information?
+- How can a learned value-of-reflection estimate be calibrated under distribution shift without reopening a supposedly solved infinite metaregress?
+- What temporal indexing correctly distinguishes observing a present feeling from remembering the earlier feeling changed by observation?
+- Which physical cost bounds are empirically defensible for active human recursive reflection? Computability alone does not supply them.
+- What would count as revising the frame/action set rather than simply obtaining better estimates within a fixed decision problem? The finite-budget recurrence assumes the relevant transitions are already represented.

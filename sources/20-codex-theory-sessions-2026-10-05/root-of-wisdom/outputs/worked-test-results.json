@@ -1,0 +1,210 @@
+{
+  "status": "exact rational constructed examples",
+  "assumptions": [
+    "one free routine observation identical in A and B",
+    "known binary symmetric probe, cost one, duration one",
+    "deadline one; final action has zero modeled duration",
+    "probe does not change the hidden world or cause harm",
+    "probe spending constrained separately from operating loss",
+    "conditional action computation and interpretation are supplied"
+  ],
+  "checks": {
+    "noise_grid_values": 101,
+    "scenario_cases": 11,
+    "all_checks_passed": true
+  },
+  "cases": [
+    {
+      "case": "ordinary observations",
+      "error": "1/10",
+      "budget": 0,
+      "informative_probe_usable": false,
+      "minimax_expected_operating_loss": "3",
+      "meets_per_world_expected_bound_one": false,
+      "witness": {
+        "policy": [
+          "wait",
+          "wait"
+        ]
+      },
+      "world_risks": [
+        "3",
+        "3"
+      ]
+    },
+    {
+      "case": "funded timely probe",
+      "error": "1/10",
+      "budget": 1,
+      "informative_probe_usable": true,
+      "minimax_expected_operating_loss": "4/5",
+      "meets_per_world_expected_bound_one": true,
+      "witness": {
+        "policy": [
+          "a",
+          "b"
+        ]
+      },
+      "world_risks": [
+        "4/5",
+        "4/5"
+      ]
+    },
+    {
+      "case": "probe arrives late",
+      "error": "1/10",
+      "budget": 1,
+      "informative_probe_usable": false,
+      "minimax_expected_operating_loss": "3",
+      "meets_per_world_expected_bound_one": false,
+      "witness": {
+        "policy": [
+          "wait",
+          "wait"
+        ]
+      },
+      "world_risks": [
+        "3",
+        "3"
+      ]
+    },
+    {
+      "case": "probe signal cannot inform action",
+      "error": "1/10",
+      "budget": 1,
+      "informative_probe_usable": false,
+      "minimax_expected_operating_loss": "3",
+      "meets_per_world_expected_bound_one": false,
+      "witness": {
+        "policy": [
+          "wait",
+          "wait"
+        ]
+      },
+      "world_risks": [
+        "3",
+        "3"
+      ]
+    },
+    {
+      "case": "response a unavailable",
+      "error": "1/10",
+      "budget": 1,
+      "informative_probe_usable": true,
+      "minimax_expected_operating_loss": "3",
+      "meets_per_world_expected_bound_one": false,
+      "witness": {
+        "policy": [
+          "wait",
+          "wait"
+        ]
+      },
+      "world_risks": [
+        "3",
+        "3"
+      ]
+    },
+    {
+      "case": "uninformative probe",
+      "error": "1/2",
+      "budget": 1,
+      "informative_probe_usable": true,
+      "minimax_expected_operating_loss": "3",
+      "meets_per_world_expected_bound_one": false,
+      "witness": {
+        "policy": [
+          "wait",
+          "wait"
+        ]
+      },
+      "world_risks": [
+        "3",
+        "3"
+      ]
+    },
+    {
+      "case": "noisier probe",
+      "error": "1/5",
+      "budget": 1,
+      "informative_probe_usable": true,
+      "minimax_expected_operating_loss": "8/5",
+      "meets_per_world_expected_bound_one": false,
+      "witness": {
+        "policy": [
+          "a",
+          "b"
+        ]
+      },
+      "world_risks": [
+        "8/5",
+        "8/5"
+      ]
+    },
+    {
+      "case": "perfect probe",
+      "error": "0",
+      "budget": 1,
+      "informative_probe_usable": true,
+      "minimax_expected_operating_loss": "0",
+      "meets_per_world_expected_bound_one": true,
+      "witness": {
+        "policy": [
+          "a",
+          "b"
+        ]
+      },
+      "world_risks": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": "reversed labels known",
+      "error": "9/10",
+      "budget": 1,
+      "informative_probe_usable": true,
+      "minimax_expected_operating_loss": "4/5",
+      "meets_per_world_expected_bound_one": true,
+      "witness": {
+        "policy": [
+          "b",
+          "a"
+        ]
+      },
+      "world_risks": [
+        "4/5",
+        "4/5"
+      ]
+    },
+    {
+      "case": "threshold equality",
+      "error": "1/8",
+      "budget": 1,
+      "informative_probe_usable": true,
+      "minimax_expected_operating_loss": "1",
+      "meets_per_world_expected_bound_one": true,
+      "witness": {
+        "policy": [
+          "a",
+          "b"
+        ]
+      },
+      "world_risks": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "case": "add omitted world C",
+      "minimax_expected_operating_loss": "3",
+      "meets_per_world_expected_bound_one": false,
+      "witness": {
+        "policy": [
+          "wait",
+          "wait"
+        ]
+      },
+      "old_probe_policy_loss_in_C": "8"
+    }
+  ]
+}

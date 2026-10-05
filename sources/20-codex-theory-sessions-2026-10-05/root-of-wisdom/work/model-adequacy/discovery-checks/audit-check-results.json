@@ -1,0 +1,77 @@
+{
+  "source_manifest_match": true,
+  "record_count": 7168,
+  "independent_seed_clusters": 256,
+  "aggregate_summary_exact_recount_match": true,
+  "all_saved_gate_pairings_pass": true,
+  "exact_replays": 56,
+  "replayed_seed_ids": [
+    10000,
+    10255
+  ],
+  "mechanism_tests": {
+    "count": 4,
+    "status": "passed"
+  },
+  "conjunction_4_diagnostic": {
+    "kind": "Exact enumeration outside inherited evaluation; not new benchmark",
+    "best_gain_in_original_73_predicate_grammar": -0.015625,
+    "exact_four_literal_policy_gain": 0.03125,
+    "interpretation": "The supplied grammar contains no beneficial policy, despite complete raw records and known actions."
+  },
+  "hazard_present_metrics": [
+    {
+      "arm": "protected",
+      "n": 256,
+      "timely_validation": 256,
+      "timely_enactment": 256,
+      "exact_recovery": 256
+    },
+    {
+      "arm": "return_funded",
+      "n": 256,
+      "timely_validation": 0,
+      "timely_enactment": 0,
+      "exact_recovery": 0
+    },
+    {
+      "arm": "short_records",
+      "n": 256,
+      "timely_validation": 0,
+      "timely_enactment": 0,
+      "exact_recovery": 0
+    },
+    {
+      "arm": "frozen_model",
+      "n": 256,
+      "timely_validation": 0,
+      "timely_enactment": 0,
+      "exact_recovery": 0
+    },
+    {
+      "arm": "no_standing",
+      "n": 256,
+      "timely_validation": 256,
+      "timely_enactment": 0,
+      "exact_recovery": 256
+    },
+    {
+      "arm": "no_authority",
+      "n": 256,
+      "timely_validation": 256,
+      "timely_enactment": 0,
+      "exact_recovery": 256
+    },
+    {
+      "arm": "temporary_rescue",
+      "n": 256,
+      "timely_validation": 256,
+      "timely_enactment": 256,
+      "exact_recovery": 256
+    }
+  ],
+  "run_notes": [
+    "Initial unittest invocation from workspace root failed import; rerun in copied scratch directory passed.",
+    "Initial raw Python replay comparison failed only because tuples serialize to lists; JSON-normalized exact comparisons pass."
+  ]
+}

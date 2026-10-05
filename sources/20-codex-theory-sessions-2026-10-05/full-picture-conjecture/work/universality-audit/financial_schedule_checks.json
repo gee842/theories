@@ -1,0 +1,51 @@
+{
+  "exhaustive_schedule_cases": 504840,
+  "checked_prefixes": 1032816,
+  "fully_feasible_cases": 141494,
+  "domains": {
+    "cash_cap": [
+      1,
+      2,
+      3
+    ],
+    "initial_total": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "all_initial_valid_cash_splits": true,
+    "income_per_event": [
+      0,
+      1
+    ],
+    "transfer_limit_per_event": [
+      0,
+      1,
+      2
+    ],
+    "bill_per_event": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "schedule_length": [
+      1,
+      2,
+      3
+    ]
+  },
+  "claims_checked": [
+    "Greedy feasibility iff exhaustive transfer-schedule feasibility.",
+    "Greedy cash equals maximum cash of every reachable feasible ledger.",
+    "Closed-form total-funds, cash-source, and interval-storage inequalities are equivalent to schedule feasibility.",
+    "Two bills totaling twice the cap are feasible with intervening refill.",
+    "Deadline delay and no-borrowing counterexamples.",
+    "Equal current totals after different cashflow orders need not suffice.",
+    "A shared lifetime transfer quota defeats greedy filling; it is excluded by the theorem.",
+    "A transfer fee defeats same-total financial equivalence."
+  ],
+  "scope": "Constructed finite exact arithmetic; supports the written general proof, not empirical universality."
+}

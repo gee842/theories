@@ -1,0 +1,7 @@
+{
+  "source_url": "https://raw.githubusercontent.com/JSHuisman/salinity/f14abee9d5e2d015deead102c04ea4d3030a5788/code/1_community_experiment/process_asvs.R",
+  "source_sha256": "da73c3a7cda3003dcd48a9cbe0e5428c2debb8b31c9fc9656fd31f53e4af6b4a",
+  "repository_license_metadata": null,
+  "repository_license_files": [],
+  "verified_limitation": "The published norare feature files remove taxa with prevalence <= 1 across the complete sample set before this secondary cross-validation. Held-out and later samples therefore participate in unsupervised feature preprocessing. Regression scaling and fitting remain training-fold-only. No raw-sequence prospective validation has been performed."
+}

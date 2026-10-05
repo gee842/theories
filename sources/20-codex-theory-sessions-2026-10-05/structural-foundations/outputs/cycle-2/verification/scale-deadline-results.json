@@ -1,0 +1,412 @@
+{
+  "status": "all assertions passed",
+  "model": "supplied unit-stage parallel scheduling model",
+  "frontier_cases": 36,
+  "deadline_cases": 468,
+  "cases": [
+    {
+      "modules": 1,
+      "diagnostic_parallelism": 1,
+      "reserve": 3,
+      "minimum_ticks": 3,
+      "enumerated_states": 4,
+      "enumerated_edges": 3
+    },
+    {
+      "modules": 2,
+      "diagnostic_parallelism": 1,
+      "reserve": 6,
+      "minimum_ticks": 4,
+      "enumerated_states": 10,
+      "enumerated_edges": 17
+    },
+    {
+      "modules": 2,
+      "diagnostic_parallelism": 2,
+      "reserve": 6,
+      "minimum_ticks": 3,
+      "enumerated_states": 10,
+      "enumerated_edges": 18
+    },
+    {
+      "modules": 3,
+      "diagnostic_parallelism": 1,
+      "reserve": 9,
+      "minimum_ticks": 5,
+      "enumerated_states": 20,
+      "enumerated_edges": 57
+    },
+    {
+      "modules": 3,
+      "diagnostic_parallelism": 2,
+      "reserve": 9,
+      "minimum_ticks": 4,
+      "enumerated_states": 20,
+      "enumerated_edges": 63
+    },
+    {
+      "modules": 3,
+      "diagnostic_parallelism": 3,
+      "reserve": 9,
+      "minimum_ticks": 3,
+      "enumerated_states": 20,
+      "enumerated_edges": 64
+    },
+    {
+      "modules": 4,
+      "diagnostic_parallelism": 1,
+      "reserve": 12,
+      "minimum_ticks": 6,
+      "enumerated_states": 35,
+      "enumerated_edges": 147
+    },
+    {
+      "modules": 4,
+      "diagnostic_parallelism": 2,
+      "reserve": 12,
+      "minimum_ticks": 4,
+      "enumerated_states": 35,
+      "enumerated_edges": 168
+    },
+    {
+      "modules": 4,
+      "diagnostic_parallelism": 3,
+      "reserve": 12,
+      "minimum_ticks": 4,
+      "enumerated_states": 35,
+      "enumerated_edges": 174
+    },
+    {
+      "modules": 4,
+      "diagnostic_parallelism": 4,
+      "reserve": 12,
+      "minimum_ticks": 3,
+      "enumerated_states": 35,
+      "enumerated_edges": 175
+    },
+    {
+      "modules": 5,
+      "diagnostic_parallelism": 1,
+      "reserve": 15,
+      "minimum_ticks": 7,
+      "enumerated_states": 56,
+      "enumerated_edges": 322
+    },
+    {
+      "modules": 5,
+      "diagnostic_parallelism": 2,
+      "reserve": 15,
+      "minimum_ticks": 5,
+      "enumerated_states": 56,
+      "enumerated_edges": 378
+    },
+    {
+      "modules": 5,
+      "diagnostic_parallelism": 3,
+      "reserve": 15,
+      "minimum_ticks": 4,
+      "enumerated_states": 56,
+      "enumerated_edges": 399
+    },
+    {
+      "modules": 5,
+      "diagnostic_parallelism": 4,
+      "reserve": 15,
+      "minimum_ticks": 4,
+      "enumerated_states": 56,
+      "enumerated_edges": 405
+    },
+    {
+      "modules": 5,
+      "diagnostic_parallelism": 5,
+      "reserve": 15,
+      "minimum_ticks": 3,
+      "enumerated_states": 56,
+      "enumerated_edges": 406
+    },
+    {
+      "modules": 6,
+      "diagnostic_parallelism": 1,
+      "reserve": 18,
+      "minimum_ticks": 8,
+      "enumerated_states": 84,
+      "enumerated_edges": 630
+    },
+    {
+      "modules": 6,
+      "diagnostic_parallelism": 2,
+      "reserve": 18,
+      "minimum_ticks": 5,
+      "enumerated_states": 84,
+      "enumerated_edges": 756
+    },
+    {
+      "modules": 6,
+      "diagnostic_parallelism": 3,
+      "reserve": 18,
+      "minimum_ticks": 4,
+      "enumerated_states": 84,
+      "enumerated_edges": 812
+    },
+    {
+      "modules": 6,
+      "diagnostic_parallelism": 4,
+      "reserve": 18,
+      "minimum_ticks": 4,
+      "enumerated_states": 84,
+      "enumerated_edges": 833
+    },
+    {
+      "modules": 6,
+      "diagnostic_parallelism": 5,
+      "reserve": 18,
+      "minimum_ticks": 4,
+      "enumerated_states": 84,
+      "enumerated_edges": 839
+    },
+    {
+      "modules": 6,
+      "diagnostic_parallelism": 6,
+      "reserve": 18,
+      "minimum_ticks": 3,
+      "enumerated_states": 84,
+      "enumerated_edges": 840
+    },
+    {
+      "modules": 7,
+      "diagnostic_parallelism": 1,
+      "reserve": 21,
+      "minimum_ticks": 9,
+      "enumerated_states": 120,
+      "enumerated_edges": 1134
+    },
+    {
+      "modules": 7,
+      "diagnostic_parallelism": 2,
+      "reserve": 21,
+      "minimum_ticks": 6,
+      "enumerated_states": 120,
+      "enumerated_edges": 1386
+    },
+    {
+      "modules": 7,
+      "diagnostic_parallelism": 3,
+      "reserve": 21,
+      "minimum_ticks": 5,
+      "enumerated_states": 120,
+      "enumerated_edges": 1512
+    },
+    {
+      "modules": 7,
+      "diagnostic_parallelism": 4,
+      "reserve": 21,
+      "minimum_ticks": 4,
+      "enumerated_states": 120,
+      "enumerated_edges": 1568
+    },
+    {
+      "modules": 7,
+      "diagnostic_parallelism": 5,
+      "reserve": 21,
+      "minimum_ticks": 4,
+      "enumerated_states": 120,
+      "enumerated_edges": 1589
+    },
+    {
+      "modules": 7,
+      "diagnostic_parallelism": 6,
+      "reserve": 21,
+      "minimum_ticks": 4,
+      "enumerated_states": 120,
+      "enumerated_edges": 1595
+    },
+    {
+      "modules": 7,
+      "diagnostic_parallelism": 7,
+      "reserve": 21,
+      "minimum_ticks": 3,
+      "enumerated_states": 120,
+      "enumerated_edges": 1596
+    },
+    {
+      "modules": 8,
+      "diagnostic_parallelism": 1,
+      "reserve": 24,
+      "minimum_ticks": 10,
+      "enumerated_states": 165,
+      "enumerated_edges": 1914
+    },
+    {
+      "modules": 8,
+      "diagnostic_parallelism": 2,
+      "reserve": 24,
+      "minimum_ticks": 6,
+      "enumerated_states": 165,
+      "enumerated_edges": 2376
+    },
+    {
+      "modules": 8,
+      "diagnostic_parallelism": 3,
+      "reserve": 24,
+      "minimum_ticks": 5,
+      "enumerated_states": 165,
+      "enumerated_edges": 2628
+    },
+    {
+      "modules": 8,
+      "diagnostic_parallelism": 4,
+      "reserve": 24,
+      "minimum_ticks": 4,
+      "enumerated_states": 165,
+      "enumerated_edges": 2754
+    },
+    {
+      "modules": 8,
+      "diagnostic_parallelism": 5,
+      "reserve": 24,
+      "minimum_ticks": 4,
+      "enumerated_states": 165,
+      "enumerated_edges": 2810
+    },
+    {
+      "modules": 8,
+      "diagnostic_parallelism": 6,
+      "reserve": 24,
+      "minimum_ticks": 4,
+      "enumerated_states": 165,
+      "enumerated_edges": 2831
+    },
+    {
+      "modules": 8,
+      "diagnostic_parallelism": 7,
+      "reserve": 24,
+      "minimum_ticks": 4,
+      "enumerated_states": 165,
+      "enumerated_edges": 2837
+    },
+    {
+      "modules": 8,
+      "diagnostic_parallelism": 8,
+      "reserve": 24,
+      "minimum_ticks": 3,
+      "enumerated_states": 165,
+      "enumerated_edges": 2838
+    }
+  ],
+  "two_module_shared_diagnostic_witness": [
+    {
+      "before": [
+        2,
+        0,
+        0
+      ],
+      "diagnose": 1,
+      "authorize": 0,
+      "execute": 0,
+      "after": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "before": [
+        1,
+        1,
+        0
+      ],
+      "diagnose": 1,
+      "authorize": 1,
+      "execute": 0,
+      "after": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "before": [
+        0,
+        1,
+        1
+      ],
+      "diagnose": 0,
+      "authorize": 1,
+      "execute": 1,
+      "after": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "before": [
+        0,
+        0,
+        1
+      ],
+      "diagnose": 0,
+      "authorize": 0,
+      "execute": 1,
+      "after": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "two_module_dedicated_diagnostic_witness": [
+    {
+      "before": [
+        2,
+        0,
+        0
+      ],
+      "diagnose": 2,
+      "authorize": 0,
+      "execute": 0,
+      "after": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "before": [
+        0,
+        2,
+        0
+      ],
+      "diagnose": 0,
+      "authorize": 2,
+      "execute": 0,
+      "after": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "before": [
+        0,
+        0,
+        2
+      ],
+      "diagnose": 0,
+      "authorize": 0,
+      "execute": 2,
+      "after": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "limits": [
+    "No empirical cross-scale calibration",
+    "Supplied perfect diagnostic and fixed three-stage protocol",
+    "Only diagnostics share a throughput bottleneck; other stages run in parallel",
+    "Analytic necessity uses independent hidden modes and sure successful repair, not guessed success",
+    "All 3n costs are prepaid from declared reserve; no productive inflow modeled during repair"
+  ]
+}

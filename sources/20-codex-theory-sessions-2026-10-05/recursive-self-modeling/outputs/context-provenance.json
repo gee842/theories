@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-05",
+  "timezone": "Asia/Bangkok",
+  "local_context": [
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/README.md",
+      "sha256_at_record_creation": "1c8ffc4ff15ac124527f9ba87b0982bae665a625ed1d25a510a0ae06ca07a6b1"
+    },
+    {
+      "path": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/CLAIMS.md",
+      "sha256_at_record_creation": "1ccb5807cdb71c2b9200804399187be8959a9c02135b4aa7c573dd2c996c8cc5"
+    },
+    {
+      "path": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-inherited-evidence-under-model-revision.md",
+      "sha256_at_record_creation": "e84233cded658ee5fce64daa5e8fa843aed4ac7ce457ae81d2cfd16fb053e837"
+    },
+    {
+      "path": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-questions-without-anomalies.md",
+      "sha256_at_record_creation": "16a1f2c1cb72987f7413ea31da3637dca573fcea0e733b369ea4454863945c8e"
+    }
+  ],
+  "note": "Read-only reference files; hashes record the source versions at packaging time, not a claim that independent ongoing work has stopped."
+}

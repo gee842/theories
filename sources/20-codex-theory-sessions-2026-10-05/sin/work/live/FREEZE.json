@@ -1,0 +1,10 @@
+{
+  "frozen_at_utc": "2026-10-04T22:47:06.892401+00:00",
+  "files": {
+    "work/live/PROTOCOL.md": "cd86827027e47bff474284bcbff5c425a8615dd3490ecfd085c4d0f6e044a7cf",
+    "work/live/run.py": "5c11d0a945f2596093fb10b2a775e2c6e51ad7ddfbec6caa0df9f1633f88a302",
+    "work/live/design-manifest.json": "dd9b677a9e213c856ec64a9135551c0a4e540d39a61bb6d2cd202a38ef900418"
+  },
+  "before_participants": true,
+  "combinatorial_check": "24 distinct exception signatures; 2 altered baseline cases per exception"
+}

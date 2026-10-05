@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "exact_quotient_transition_checks": 16,
+  "observation_homogeneous_information_sets": 66,
+  "exact_safety_equivalences_checked_horizons_0_through_5": 396,
+  "abstract_beliefs_1_2_and_2_3_viable_through_5": true,
+  "abstract_belief_1_3_not_viable_for_1": true,
+  "hidden_fault_individual_viability_but_no_joint_safe_action": true,
+  "cycle_observation_triples": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "exact_dynamics_unsafe_health_quotient_falsely_certifies_safety": true,
+  "meaning": "Exact finite toy checks, not empirical validation or a proof for all model classes."
+}

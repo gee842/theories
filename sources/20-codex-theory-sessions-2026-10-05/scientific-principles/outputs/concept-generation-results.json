@@ -1,0 +1,381 @@
+{
+  "checks": {
+    "exact_validation_tail_checks": 9,
+    "greedy_XOR_plateau": true,
+    "generic_generator_recovers_pair": true,
+    "fair_null_tail": "9/256"
+  },
+  "parameters": {
+    "training": "One observation at each of the 8 three-bit contexts",
+    "validation": "Fresh observation at each context, accept >=7/8 correct",
+    "grammar": "All singleton and pair partitions, fitted majority tables",
+    "penalty_per_extra_cell": "1/32",
+    "cost_per_candidate_fit": "1/4",
+    "cost_per_outcome": "1",
+    "deployment_cost_per_retained_feature": "1/50",
+    "loss": "0-1 prediction loss; deployment context uniform on 8 rows",
+    "tie_rule": "Majority ties predict zero; score ties lexicographic"
+  },
+  "results": [
+    {
+      "noise": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "procedure": "greedy",
+      "proposal_probability": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "adoption_probability": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "expected_inquiry_cost": {
+        "exact": "35/4",
+        "decimal": 8.75
+      },
+      "expected_net_gain_per_future_decision": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "extra_expected_loss_100_future_decisions": {
+        "exact": "35/4",
+        "decimal": 8.75
+      },
+      "break_even_future_decisions": null,
+      "selected_fields_probability": {}
+    },
+    {
+      "noise": {
+        "exact": "0",
+        "decimal": 0.0
+      },
+      "procedure": "compositional",
+      "proposal_probability": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "adoption_probability": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "expected_inquiry_cost": {
+        "exact": "35/2",
+        "decimal": 17.5
+      },
+      "expected_net_gain_per_future_decision": {
+        "exact": "23/50",
+        "decimal": 0.46
+      },
+      "extra_expected_loss_100_future_decisions": {
+        "exact": "-57/2",
+        "decimal": -28.5
+      },
+      "break_even_future_decisions": {
+        "exact": "875/23",
+        "decimal": 38.04347826086956
+      },
+      "selected_fields_probability": {
+        "(0, 1)": {
+          "exact": "1",
+          "decimal": 1.0
+        }
+      }
+    },
+    {
+      "noise": {
+        "exact": "1/10",
+        "decimal": 0.1
+      },
+      "procedure": "greedy",
+      "proposal_probability": {
+        "exact": "5067927/50000000",
+        "decimal": 0.10135854
+      },
+      "adoption_probability": {
+        "exact": "1245052829871/5000000000000000",
+        "decimal": 0.0002490105659742
+      },
+      "expected_inquiry_cost": {
+        "exact": "961154759/100000000",
+        "decimal": 9.61154759
+      },
+      "expected_net_gain_per_future_decision": {
+        "exact": "-1245052829871/250000000000000000",
+        "decimal": -4.980211319484e-06
+      },
+      "extra_expected_loss_100_future_decisions": {
+        "exact": "24030114027829871/2500000000000000",
+        "decimal": 9.612045611131949
+      },
+      "break_even_future_decisions": null,
+      "selected_fields_probability": {
+        "(0,)": {
+          "exact": "2424249/50000000",
+          "decimal": 0.04848498
+        },
+        "(1,)": {
+          "exact": "2371761/50000000",
+          "decimal": 0.04743522
+        },
+        "(2,)": {
+          "exact": "271917/50000000",
+          "decimal": 0.00543834
+        }
+      }
+    },
+    {
+      "noise": {
+        "exact": "1/10",
+        "decimal": 0.1
+      },
+      "procedure": "compositional",
+      "proposal_probability": {
+        "exact": "23665039/25000000",
+        "decimal": 0.94660156
+      },
+      "adoption_probability": {
+        "exact": "1320176588127847/2500000000000000",
+        "decimal": 0.5280706352511388
+      },
+      "expected_inquiry_cost": {
+        "exact": "53352539/3125000",
+        "decimal": 17.07281248
+      },
+      "expected_net_gain_per_future_decision": {
+        "exact": "46389139527862483/250000000000000000",
+        "decimal": 0.18555655811144994
+      },
+      "extra_expected_loss_100_future_decisions": {
+        "exact": "-3707108327862483/2500000000000000",
+        "decimal": -1.4828433311449931
+      },
+      "break_even_future_decisions": {
+        "exact": "4268203120000000000/46389139527862483",
+        "decimal": 92.00867193142071
+      },
+      "selected_fields_probability": {
+        "(0, 1)": {
+          "exact": "41718317/50000000",
+          "decimal": 0.83436634
+        },
+        "(0, 2)": {
+          "exact": "271917/50000000",
+          "decimal": 0.00543834
+        },
+        "(0,)": {
+          "exact": "2424249/50000000",
+          "decimal": 0.04848498
+        },
+        "(1, 2)": {
+          "exact": "271917/50000000",
+          "decimal": 0.00543834
+        },
+        "(1,)": {
+          "exact": "2371761/50000000",
+          "decimal": 0.04743522
+        },
+        "(2,)": {
+          "exact": "271917/50000000",
+          "decimal": 0.00543834
+        }
+      }
+    },
+    {
+      "noise": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "procedure": "greedy",
+      "proposal_probability": {
+        "exact": "10359/32768",
+        "decimal": 0.316131591796875
+      },
+      "adoption_probability": {
+        "exact": "12026799/2147483648",
+        "decimal": 0.005600414704531431
+      },
+      "expected_inquiry_cost": {
+        "exact": "749543/65536",
+        "decimal": 11.437118530273438
+      },
+      "expected_net_gain_per_future_decision": {
+        "exact": "-12026799/107374182400",
+        "decimal": -0.00011200829409062863
+      },
+      "extra_expected_loss_100_future_decisions": {
+        "exact": "12292539311/1073741824",
+        "decimal": 11.4483193596825
+      },
+      "break_even_future_decisions": null,
+      "selected_fields_probability": {
+        "(0,)": {
+          "exact": "4761/32768",
+          "decimal": 0.145294189453125
+        },
+        "(1,)": {
+          "exact": "4113/32768",
+          "decimal": 0.125518798828125
+        },
+        "(2,)": {
+          "exact": "1485/32768",
+          "decimal": 0.045318603515625
+        }
+      }
+    },
+    {
+      "noise": {
+        "exact": "1/4",
+        "decimal": 0.25
+      },
+      "procedure": "compositional",
+      "proposal_probability": {
+        "exact": "13423/16384",
+        "decimal": 0.81927490234375
+      },
+      "adoption_probability": {
+        "exact": "118943719/1073741824",
+        "decimal": 0.11077497061342001
+      },
+      "expected_inquiry_cost": {
+        "exact": "32879/2048",
+        "decimal": 16.05419921875
+      },
+      "expected_net_gain_per_future_decision": {
+        "exact": "2077175623/107374182400",
+        "decimal": 0.019345205491408706
+      },
+      "extra_expected_loss_100_future_decisions": {
+        "exact": "15160889529/1073741824",
+        "decimal": 14.11967866960913
+      },
+      "break_even_future_decisions": {
+        "exact": "1723806515200/2077175623",
+        "decimal": 829.8800044217542
+      },
+      "selected_fields_probability": {
+        "(0, 1)": {
+          "exact": "13517/32768",
+          "decimal": 0.412506103515625
+        },
+        "(0, 2)": {
+          "exact": "1485/32768",
+          "decimal": 0.045318603515625
+        },
+        "(0,)": {
+          "exact": "4761/32768",
+          "decimal": 0.145294189453125
+        },
+        "(1, 2)": {
+          "exact": "1485/32768",
+          "decimal": 0.045318603515625
+        },
+        "(1,)": {
+          "exact": "4113/32768",
+          "decimal": 0.125518798828125
+        },
+        "(2,)": {
+          "exact": "1485/32768",
+          "decimal": 0.045318603515625
+        }
+      }
+    },
+    {
+      "noise": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "procedure": "greedy",
+      "proposal_probability": {
+        "exact": "55/128",
+        "decimal": 0.4296875
+      },
+      "adoption_probability": {
+        "exact": "495/32768",
+        "decimal": 0.015106201171875
+      },
+      "expected_inquiry_cost": {
+        "exact": "3175/256",
+        "decimal": 12.40234375
+      },
+      "expected_net_gain_per_future_decision": {
+        "exact": "-99/327680",
+        "decimal": -0.0003021240234375
+      },
+      "extra_expected_loss_100_future_decisions": {
+        "exact": "203695/16384",
+        "decimal": 12.43255615234375
+      },
+      "break_even_future_decisions": null,
+      "selected_fields_probability": {
+        "(0,)": {
+          "exact": "25/128",
+          "decimal": 0.1953125
+        },
+        "(1,)": {
+          "exact": "17/128",
+          "decimal": 0.1328125
+        },
+        "(2,)": {
+          "exact": "13/128",
+          "decimal": 0.1015625
+        }
+      }
+    },
+    {
+      "noise": {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      "procedure": "compositional",
+      "proposal_probability": {
+        "exact": "47/64",
+        "decimal": 0.734375
+      },
+      "adoption_probability": {
+        "exact": "423/16384",
+        "decimal": 0.02581787109375
+      },
+      "expected_inquiry_cost": {
+        "exact": "123/8",
+        "decimal": 15.375
+      },
+      "expected_net_gain_per_future_decision": {
+        "exact": "-1197/1638400",
+        "decimal": -0.0007305908203125
+      },
+      "extra_expected_loss_100_future_decisions": {
+        "exact": "253101/16384",
+        "decimal": 15.44805908203125
+      },
+      "break_even_future_decisions": null,
+      "selected_fields_probability": {
+        "(0, 1)": {
+          "exact": "13/128",
+          "decimal": 0.1015625
+        },
+        "(0, 2)": {
+          "exact": "13/128",
+          "decimal": 0.1015625
+        },
+        "(0,)": {
+          "exact": "25/128",
+          "decimal": 0.1953125
+        },
+        "(1, 2)": {
+          "exact": "13/128",
+          "decimal": 0.1015625
+        },
+        "(1,)": {
+          "exact": "17/128",
+          "decimal": 0.1328125
+        },
+        "(2,)": {
+          "exact": "13/128",
+          "decimal": 0.1015625
+        }
+      }
+    }
+  ]
+}

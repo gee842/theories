@@ -1,0 +1,1145 @@
+
+[PDF PAGE 1]
+Published: <Washington, D.C.> : Office of Safety and Mission _ality,
+National Aeronautics and Space Administration, <199_>
+im
+HUBBLE SPACE TELESCOPE
+SILM&QA OBSERVATIONS AND LESSONS LEARNED
+Author: Rodney, George A.
+INTRODUCTION
+The Hubble Space Telescope (HST) Optical Systems Board of Investigation was
+established on July 2, 1990 to review, analyze, and evaluate the facts and circumstances
+regarding the manufacture, development, and testing of the HST Optical Telescope
+Assembly (OTA). Specifically, the Board was tasked to ascertain what caused the
+spherical aberration and how it escaped notice until on-orbit operation.
+The error that caused the on-orbit spherical aberration in the primary mirror was
+traced to the assembly process of the Reflective Null Corrector, one of the three Null
+Correctors developed as special test equipment (STE) to measure and test the primary
+mirror. Therefore, the Safety, Reliability, Maintainability and Quality Assurance
+(SRM&QA) investigation covers the events and the overall Product Assurance
+environment during the manufacturing phase of the primary mirror and Null Correetors
+(from 1978 through 1981).
+This report summarizes the SRM&QA issues that were identified during the HST
+investigation. The crucial Product Assurance requirements (including nonconformance
+processing) for the Telescope are examined. The history of Quality Assurance (QA)
+practices at Perkin-Elmer (P-E) for the period under investigation are reviewed. The
+importance of the information management function is discussed relative to data
+retention/control issues. Metrology and other critical technical issues also are discussed.
+The SRM&QA lessons learned from the investigation are presented along with specific
+recommendations. Appendix A provides the NASA Marshall Space Flight Center
+(MSFC) SRM&QA repon. Appendix B provides supplemental reference materials.
+Appendix C presents the findings of the independent optical consultants, Optical
+Research Associates (OR.A). Appendix D provides further details of the fault-tree
+analysis portion of the investigation process.
+2. BACKGROUND
+2.1 S_vnot)sis of the Optical Problem
+I
+?
+i.
+On-orbit data from the HST revealed an imaging problem with the Wide Field .....
+Planetary Camera (WF/PC), indicating a deficiency in either the telescope or camera. _
+The Faint Object Camera (FOC) indicated the same imaging problem, which made the -
+telescope optics the primary suspect. Since the HST has only two optical components (a
+large primary mirror and a small secondary mirror), the problem could have been in _ ?L
+either component.
+.?
+Additional orbital data revealed that the imaging problem was a spherical
+aberration that did not vary with field angle. Based on knowledge of how telescopes
+image, the data suggested that the problem was in the primary mirror. Previous tests of i
+1
+
+
+[PDF PAGE 2]
+the primary mirror against the Reflective Null Corrector (a precision instrument used to
+test the mirror during manufacture), yielded final test data that appeared "perfect."
+Therefore, characteristics that would cause spherical aberration in the Reflective Null
+Corrector became suspect. A tolerance analysis of the Reflective Null Corrector
+assembly indicated that the error was in either the index of refraction of the field lens
+(improper glass) or the field lens was spaced incorrectly. To ensure that all possible
+sources of the aberration were identified, a fault-tree analysis of the OTA was developed
+by the Hughes-Danbury Optical Systems (lIDOS) organization.
+2.2 Fault-tree Analysis Description
+The fault-tree analysis defined the potential causes of the spherical aberration,
+ultimately focusing on longitudinal spacing errors that could produce the aberration (or
+a condition such as an incorrect index that would appear as a spacing error). The
+preliminary analysis efforts included several tests to eliminate potential fault-tree paths.
+The first test performed on the Reflective Null Corrector measured the effective focal
+length (and, therefore, the index of refraction) of the field lens, confirming that the
+correct glass type had been used. Concurrent with the first test, two spare field lens
+were located that had been manufactured in the same lot as the one actually used in the
+Reflective Null Corrector. The spares were measured for figure and back focal length,
+which also confirmed that the correct lens material had been used. The second test
+measured the spacing of the field lens to the lower mirror of the Reflective Null
+Corrector. This measurement showed that the spacing between the field lens and the
+lower mirror was about 1.3 mm too long, which was sufficient to cause the on-orbit
+spherical aberration.
+Once the Investigation Board had agreed on the cause of the on-orbit spherical
+aberration, the extensive fault-tree analyses (Appendix D) were halted; and the Board
+chose not to extend the analyses to cover other, less viable causes of spherical
+aberration.
+2.3 OA Role in the Investigation
+The investigation of the SRM&QA issues involved the cooperative efforts of
+several QA organizations, including: HDOS Product Assurance Group, NASA MSFC
+and Headquarters personnel, and the Defense Contract Management Command
+(DCMC) (formerly the Defense Contract Administration Services--DCAS).
+Hughes-Danbury Optical Systems. The HDOS Product Assurance Group was
+tasked by the Investigation Board to gather all relevant documentation and
+hardware for impoundment by DCMC. (The document search is continuing
+to locate records that pertain to specific issues.) Additionally, this group
+reviewed and contributed to the test plans and procedures developed during
+the Board investigations, and then witnessed the actual tests. The group also
+assisted in identifying data sources, organizing the impounded data, and
+locating specific information for the investigators.
+NASA. The MSFC QA organization provided daily oversight of the test
+plans/procedures and the use of impounded hardware during actual testing
+2
+
+
+[PDF PAGE 3]
+for the investigation. This effort was supported by the MSFC SRM&QA
+Payloads Assurance Office personnel, who recommended technical QA
+changes to the test plans/procedures developed during the testing phase, and
+then witnessed the actual tests. NASA Headquarters SRM&QA contract
+support personnel served as the on-site representative of the Associate
+Administrator for the Office of Safety and Mission Quality (the NASA
+organization responsible for SRM&0A oversight of all NASA programs).
+This individual provided technical oversight for the SRM&QA-related
+aspects of the investigation; including functions such as: reviewing test plans
+and procedures; witnessing tests; and searching for pertinent data, as needed.
+In addition, he functioned as the on-site technical interface for the optical
+consultants, ORA, who were temporarily employed by NASA Headquarters
+SRM&QA to provide independent optical expertise relative to the HST
+investigation.
+ORA conducted an independent review of the original design and QA
+processes for the HST optical components, both to suppor: this investigation
+and to assist in fulfilling the current NASA SRM&OA mandate to provide
+independent assessments of technical issues. ORA also conducted
+independent analyses for other Board members, as required; for example, to
+cross-check the current HDOS analyses. (The ORA Report is included in its
+entirety, in Appendix C.) Their independent conclusions were summarized in
+the following seven points:
+1) The field lens position error (FLPE) can account for the entire HST
+error, i
+2) Our results agree with HDOS and the University of Arizona results
+within factors inherent in the different analytical tools used, given that
+3) Inputs to each optical design program can be varied enough to cause
+output variations exceeding the variations between programs, and
+4) The analytical error is in the noise of normal hardware error.
+5) The reflective null corrector was the logical choice, if only one of the
+two null correctors were to be used,
+6) Cross checking the reflective and refractive null correctors through tests
+with inverse null and primary mirror would have shown discrepancies
+too large to ignore.
+7) Inserting windows of different thicknesses into the reflective null
+corrector may aid in verifying the magnitude of the conic constant error
+without requiring disassembly of the null corrector.
+Defense Contract Management Command. The DCMC organization
+impounded all documents and hardware related to the HST investigation.
+Additionally, DCMC preserved the HST hardware in the as-found condition
+3
+
+
+[PDF PAGE 4]
+as of July 6, 1990; and ensured that the hardware was not altered during
+testing. Much of the hardware was found to be in the same condition as
+when manufacturing ended (1982-1983 timeframe.) DCMC personnel
+ensured the traceability of calibration data; controlled all investigation-
+related documents generated by HDOS; attended technical reviews of test
+plans/procedures and witnessed the actual tests; and provided access to
+impounded data/hardware, as required.
+3. PRODUCT ASSURANCE REQUIREMENTS
+The SRM&QA findings relative to the P-E OTA Product Assurance Plan and
+requirements for the HST Program are as follows:
+The initial _ Assurwuze Plan contained all of the basic requirements to
+ensure the quality of the end-item.
+The nonconformance requirements in the _ _e Plan and the
+formal repordng system were su_ to raise critical i.xsue.s, if utih.z"e.d.
+The critical program/design reviews and SRM&QA survey processes did not
+_'face the major problems and concerns that led to the spherical aberrtnion.
+Formal disclosure of testing/tooling nonconformance reports would have forced
+a more visible assex.vment of the problems by both P-E and NASA.
+Test data sheets were Mgned off by QA; however, the Prbnt_ Mirror Phase H
+Metrology Test Plan and the OTA Verification Report .for Primary Mirror lacked
+a QA sigrumoe.
+There was minimal participation by P-E design engineering during the mirror
+operations.
+3.1 Basic $1LM&QA Reouirement_
+The NASA contract contained an adequate set of SRM&QA requirements based
+on the criteria specified in NASA Handbook (NHB) 5300.4(1D-1), "Safety, Reliability,
+Maintainability and Quality Assurance Provisions for Space Shuttle Program." [NHB
+5300.4(1D-1) was superceded in October 1979 by NHB 5300.4(1D-2).] To meet NASA
+contractual requirements, the HST plans and procedures that implemented the
+SRM&QA requirements were defined in the P-E OTA Product Assurance Plan (PA-01),
+PR-114. This Plan was originally released in January 1978.
+The basic SRM&QA requirements were expanded and refined during a series of
+design reviews. A Product Assurance Preliminary Work Element Audit Review (P-
+WEAR), PA-07, PR-287, was presented to NASA in March 1979 to summarize the
+status of the Plan. The disposition of Review Item Discrepancies (RIDs) for the P-
+WEAR (PR-283) was documented in April 1979. A Product Assurance Critical Work
+Element Audit Review (C-WEAR), PR-496, was presented to NASA in June 1980 to
+4
+
+
+[PDF PAGE 5]
+provide the final status of the Plan. C-WEAR RIDs, PR-531, were documented and
+dispositioned in August 1980.
+The Quality Engineering provisions of the Product Assurance Plan were designed
+to control the fabrication and inspection sequences, including tooling, jigs, fixtures, and
+other fabrication equipment to ensure the quality of the end-item. Thus, basic
+SRM&QA requirements that governed the processing of critical tools, testing, and the
+manufacture of the OTA components were in place prior to the start of the work.
+The Product Assurance Plan was designed to assure a rigid and conventional
+approach to engineering, manufacturing, and quality. OTA manufacturing efforts were
+governed by the Plan's Quality Engineering requirements, which addressed the
+"requirements appropriate to the design, procurement, fabrication, assembly, acceptance
+test, and on-orbit verification and maintenance phases" (paragraph 6.2.1). Typical tasks
+cited in this paragraph included:
+"a. Review the functional, equipment, design and interface specifications and
+drawings for incorporation of Quality requirements...
+bo Determine the critical processes and develop special training programs,
+certification requirements, and process controls where required.
+C* Ascertain inspectability of the design approach and determine the special
+inspection, inspection tests, tools, equipment, and facilities required.
+do Participate in test planning and verify that test requirements are defined and
+adequate.
+eQ Review test equipment design criteria to ensure that test data requirements
+will be met."
+32 Nonconformance Requirement_
+The NASA contract contained an adequate set of nonconformance requirements as
+specified in NASA Handbook (NHB) 5300.4(1D-1). The intent of the contract in
+meeting N'HB 5300.4(1D-1) requirements, was well defined and amplified in the Product
+Assurance Plan. Subsequent revisions to the Plan enhanced the basic requirements
+governing the critical tooling, testing, and manufacturing processes. Revision A to the
+Plan was issued on May 28, 1978, and included one pertinent change related to
+nonconformance testing. The overall Plan was generic in nature and did not have any
+specific references to mirror operations. For example, paragraph 6.6.7.2(e) originally
+stated:
+"Nonconformances and their dispositions are fully documented. The specific
+type of QA coverage for each particular test will be identified on the
+applicable documentation. All test data sheets will include a QA sign-off
+margin."
+5
+
+
+[PDF PAGE 6]
+Revision A added the following statement to the above paragraph:
+"Selected tests, as the iterative testing of the mirror figuring, will be audited
+and validated by a review and verification of the recorded data."
+It is interesting that this revision indicates a recognition of the importance of the _
+iterative mirror figure testing.
+Additional paragraph changes in Revision A addressed general requirements of
+nonconformance control (6.7.1), and nonconformance reporting and corrective action
+(6.7.2). The control-related change added a requirement for the Criticality classification
+to all OTA Malfunction Reports (MRs). The reporting change added the requirement
+to report any malfunction to NASA within 48 hours of occurrence. The corrective
+action process was changed to ensure that analysis and closure occurred within 21 days
+of the event. Since the final iterative testing of the mirror figuring was the only
+acceptance test of the mirror figure, it certainly should have been covered by these
+reporting provisions.
+Revision B was issued on August 12, 1980, and addressed the basic technical
+requirements for quality control of subcontractors. The Detailed Quality Requirements
+section (6.4.5) was revised to use the term "subcontractor" in place of "supplier."
+While Revision A and B changes enhanced the nonconformance requirements
+sections of the Product Assurance Plan, these changes did not substantively alter the
+basic nonconformance requirements. Testimony indicated that the MSFC Science and
+Engineering (S&E) optical experts reviewed and approved the in-process interferogram
+data. However, P-E and NASA on-site SRM&QA personnel were not directly involved
+in the review and approval of the in-process interferogram data.
+3.3 Nonconformances - Testing/Tooling
+The OTA Verification Report for the Primary Mirror (Ref. 1) lists three types of
+nonconformance documents: Material Review Board (MRB) Reports, Nonconforming
+Material Notices (NMNs), and Vendor Material Review Requests (VMRRs). [Three of
+the MRB reports were listed as remaining open and one NMN was listed as lost.
+Although the open MRB reports were closed by the end of 1984, no attempt was made
+to revise the OTA Verification Report to reflect closure.] The nonconformances
+addressed OTA issues, focusing on imperfections in the manufacture and coating of the
+primary mirror glass. However, none of these documents addressed the critical STE
+used to measure mirror quality.
+Formal nonconformance reporting was not applied to test data or test tooling
+hardware (including STE) discrepancies. The requirement for nonconformance
+reporting of anomalies resulting from end-item acceptance test operations was clear and
+specific that it would be pan of the formal flight hardware nonconformance reporting
+system. The requirement for STE anomaly reports is less specific, requiring the
+contractor to have quality surveillance of STE build in lieu of utilizing formal
+nonconformance system for the flight hardware. The common industrial practice is to
+6
+
+
+[PDF PAGE 7]
+utilize some form of in-house discrepancy report rather than using the formal system for
+test equipment.
+A properly functioning reporting system at the Wilton and Danbury divisions
+would have documented at least the following discrepancies:
+Final Refractive NuI1 interferogram fringe anomalies
+Fringe anomalies with use of the Inverse Null Corrector (INC) in
+combination with the Reflective Null Corrector
+• Purported anomalies in the INC build process.
+Once documented, the formal disclosure of the testing/tooling anomaly reports
+would have forced a more visible assessment of the problems by both P-E and NASA.
+3.4 Critical Review_
+Formal design reviews were held for the whole OTA system but not for the
+elements. These reviews provided NASA with a current status of the various program
+operations. P-WEARs were held prior to preliminary design reviews (PDRs) and C-
+WEARs were held prior to critical design reviews (CDRs). ORIs were primarily safety
+reviews conducted prior to each major processing function to ensure that the mirror and
+OTA components were handled in a safe manner. These reviews should have
+discovered most or all of the deficiencies that have been surfaced by this investigation.
+Other than the formal program reports, the complete records of meetings,
+comments, and rejected/accepted RIDs for these reviews have not been found.
+However, there is little evidence that any of the cited discrepancies (RIDs) raised
+specific concerns related to the current investigation. The ORIs were based on NASA
+requirements, served as the primary SRM&QA review, and focused on detailed safety
+evaluations of manufacturing processes, tooling, and handling to prevent potential in-
+process damage to the mirror. In this regard, the ORIs were generally successful. In
+contrast, the WEAR process (driven primarily by internal P-E requirements with NASA
+involvement) failed in its primary objective of assessing the ability of the primary mirror
+polishing and testing operation to meet design objectives.
+Apparently, there were early concerns within NASA about the effectiveness of the
+P-E quality operation; however, the Review Board found virtually no documented
+evidence of these concerns during the time period in question. A MSFC Safety,
+Reliability, and Quality Assurance (SR&QA) survey (which included one NASA
+Headquarters SR&QA representative) was conducted on February 26-29, 1980. The
+survey produced only three findings pertinent to the investigation (two related to quality
+and one to safety):
+a.
+The Assembly and Verification Plan, AV-01, lacked the required
+identification of test/inspection/contamination control points and associated
+procedures (Q-l).
+7
+
+
+[PDF PAGE 8]
+b.
+The apparent absence of a formal system at Perkin-Elmer to survey principal
+suppliers (Q-8).
+c. No formal closure method for action items generated from ORIs (S-2).
+(Note that the investigation did not locate any records or documentation to verify
+closure of these items.)
+These findings reflect a general concern about the apparent fragmentation and
+informality related to certain areas of the OTA Quality and Safety Programs that were
+not in compliance with the OTA Product Assurance Plan. The MSFC survey team
+emphasized to Perkin-Elmer at the exit interview that the P-E programs should require
+"proper visibility" of corrective actions, delineation of accountability for each action, and
+closure traceability. In addition, the Summary of Findings section in the survey report
+(Ref. 2) included the following statement:
+"The review of the QA planning and documentation, configuration control
+and training revealed that the current method of operation does not always
+agree with that stated in the QA documentation. It was recommended that a
+review and update of the PA Plan and Manual be made to reflect the actual
+method of operation."
+On June 9, 1980, the Head of the MSFC System Safety Office wrote a
+Memorandum for Record (Ref. 3) concerning the P-E Computer Control Polisher
+(CCP) II and the OTA Chamber ORIs. Regarding the overall ORI process as originally
+conducted by P-E, he stated:
+"Their original approach was very informal with little documental [sic] of
+training personnel involved in critical operations, little or no hazard analysis
+of the operation. (They were simply looking at the results of rudimentary
+FMEA's of the equipment involved.) A survey in February also raised
+questions about the methods and documentation of the closure of hazards
+and the support being provided by the company industrial safety
+organization."
+Additionally, he noted in the memorandum that:
+"Data reviewed at PE during the ORl's indicated a marked improvement in
+PE's ORI technique. There was some concern that MSFC employees were
+asking most of the questions during the reviews. (This was especially true
+during the CCP II when several members of the PE upper management were
+present.) Apparently, there had been a "dress rehearsal" earlier where the
+PE questions had been addressed. PE either provided answers during the
+reviews or made the questions action items for closure before operations
+could take on the equipment under review."
+On June 11, 1982, the MSFC Director, Reliability and Quality Office, issued a
+letter concerning HST R&QA support (Ref. 4) to the Director of Science and
+Engineering (S&E) and the HST Program Director. This letter in part stated:
+8
+
+
+[PDF PAGE 9]
+"We believe, as expressed to you, that the effectiveness of the DCAS at P-E
+can be improved and we are committed to work toward that end. In view of
+the weaknesses in the overall P-E operation, including the institutional
+R&QA performance, we concur in the need for additional TDY support to
+supplement the Resident Representative. We plan to provide this additional_
+support through a rotational TDY plan starting in the mid-August time
+frame depending on the scheduled events and improvement progress with
+DCAS.
+Also, as expressed to you, we believe the loss of Mr. Dave Burch, the P-E
+Product Assurance Manager, to the program can only adversely impact an
+already questionable QC operation. As you discuss other aspects of the ST
+Project with top P-E management, please convey our concerns and the need
+for a strong individual in this area."
+Based on the date of the letter, these observations probably were directed to
+activity, that occurred after the primary, mirror grinding/polishing operations; and thus
+after the Reflective Null Corrector was assembled.
+The recurring theme in the above examples is a concern about inherent
+"weaknesses" in the overall P-E approach to quality assurance/control during the optical
+fabrication. Subsequent operations on other portions of the space telescope assembly at
+Perkin-Elmer (such as the Fine Guidance System and integration of the structural
+elements with the Lockheed organization) were controlled more t_oroughly by NASA.
+In-flight performance data has confirmed that these very complex systems are
+functioning as designed.
+3.5 Quality Documentation Requirements
+The formal design reviews discussed in the preceding section rely on documented
+quality criteria to ensure that the design incorporates SRM&QA requirements. The
+technical documentation requirements related to quality, are specified by NHB
+5300.4(ID-I), and supplemented by additional MSFC contractual data requirements and
+guidelines. For example, 5300.4(ID-I), Section ID501, paragraph 1, Technical
+Documents, states:
+"a. The contractor shall establish, document, and ensure compliance with design
+control requirements and quality criteria during all phases of contract work.
+The contractor shall ensure enclusion [dc] of quality characteristics and
+design criteria necessary for procurement, fabrication (including assembly),
+inspection and test operations ......... as applicable in specifications, procedures,
+drawings, and fabrication and planning documents.
+b. The contractor shall utilize a system which identifies hardware characteristics
+requiring verification. This identification should be based on the use of the
+hardware involved and shall be utilized in developing quality inspection and
+test surveillance planning, as an input to the ......... development of quality.
+criteria, workmanship and inspection standards, and inspection procedures.
+9
+
+
+[PDF PAGE 10]
+Cl
+Contractor quality assurance personnel shall conduct a timely review of
+technical documents that affect quality and changes thereto. Reviews shall
+ensure that all necessary information has been included and that
+requirements are clear and unambiguous. The reviews shall be documented
+and action shall be taken to ensure correction of deficiencies. These reviews
+shall also be an integral pan of the quality planning function to ensure
+"timely planning of quality activities and facilities associated with subsequent
+procurement, fabrication, assembly, inspection, testing, delivery ....... activities."
+NHB 5300.4(ID-1), Section ID505, paragraph 2, states that the contractor (P-E)
+must document inspection and test plans to provide for: availability of calibrated
+inspection and test equipment, and coordination of inspections and tests conducted by
+the designatedGovernment (MSFC) quality representative.
+Baseline design criteria used in the final design phase (PDR through CDR) served
+as the basis for special inspections (critical source, receiving, in-process, and final).
+These requirements should have encompassed all of the STE such as the Null
+Correctors used to define critical performance parameters.
+3.6 Test Documentation Approval
+The Product Assurance Plan required a QA signature on test documents for the
+primary mirror and the other OTA components, but did not specify a requirement for a
+QA signature on the final buy-off documentation. While the QA organization reported
+to engineering, none of the formal plans and reports for optics fabrication included
+signature approval from the QA organization or any NASA element. The Abstract of
+P-E document PR-2.35, "Primary Mirror Phase II Metrology Test Plan," dated July 20,
+1979, contained the following statement of purpose:
+"The plan of the Metrology Tests used during the Phase II primary mirror
+polishing to ensure Quality."
+This Plan lacks a QA signature, although it is one of the few reports signed by P-E
+engineering (in this case, the Deputy Director of Engineering). While the test data
+sheets were signed off by QA, it is interesting to note that the test procedures and final
+reports did not have a QA signature. For example, a P-E memorandum on the final
+Phase I test parameters (used to conclude the Wilton Phase I effort on the primary
+mirror) had only engineering signatures (Ref. 5).
+The Panel found no evidence of continuing design engineering participation during
+the fabrication and test of the primary mirror. The signature of the Deputy Director of
+Engineering on the Primary Mirror Phase II Metrology Test Plan was one of the few
+formal indications of engineering participation. In fact, the designer of the original
+Reflective Null Corrector and Inverse Null Corrector stated to the Board that he never
+had been in the tower to see the device in actual operation.
+10
+
+
+[PDF PAGE 11]
+As noted previously, the OTA Verification Report for Primary Mirror finally was
+released on October 3, 1983, but without a QA signature. This report provides the
+following conclusion (paragraph 1.2):
+"Since the Primary Mirror complies with design and verification requirements
+stated in the CEI specification and VRSD, it can be used in the Primary
+Mirror Assembly."
+The Primary Mirror Phase II Metrology Test Plan and OTA Verification Report
+were the engineering-based quality documentation that allowed the primary mirror to
+progress to the next assembly stage. It is interesting to note that the Applicable
+Documents section of the OTA Verification Report did not list the P-E Product
+Assurance Plan, but only the P-E Contamination Control Program Plan. In addition, the
+only NASA publication listed was NHB 5300.4(IC), "Inspection System Provisions for
+Aeronautical and Spare System Materials, Pans, Components, and Services." NHB
+5300.4(1D-I) should have been included.
+It is presumed that both the P-E and NASA QA organizations used the Primary
+Mirror Phase II Metrology Test Plan and the OTA Verification Report in formally
+accepting the primary mirror as pan of the final OTA buy-off package.
+4. HISTORY OF HST QUALITY ASSURANCE
+The findings relative to the HST QA oversight and interfaces by the Government
+and contractor organizations are as follows:
+The on-site representatives for the NASA and P-E QA organizations were not
+specif_ally trained in optics to provide an informed and independent evaluation
+of the assembly and manufacturing operations. Only one NASA QA
+representative was available to cover a 7-day, 3-shift operation at two locations.
+None of the P-E QA Monthly Reports indicated concern that their organizalion
+was removed from the metrolo_ area du_ the jffnal grblding/polishirlg
+operations; nor did they indic.ate arty concerns with test re.m_
+The NASA and P-E QA organizationslacked a clearly independent chain of
+command that would have permitted pn:wam decisions to be appealed to higher
+management.
+A letter o[ delegation was not issued to DCAS prior to critical primary
+mirror/corrector o_ns.
+Critical to the review process of the HST problem was an understanding of the
+interactions and interfaces among the QA organizations involved in the manufacture of
+the primary mirror and Null Correctors from 1978 to 1981. Three distinct organizations
+provided the overall HST OTA product assurance: P-E Product Assurance Directorate;
+NASA Headquarters and MSFC SR&QA, including the MSFC Resident Office at P-E;
+and DCAS (now referred to as DCMC).
+11
+
+
+[PDF PAGE 12]
+Note that the P-E award fee criteria had no specific reference to quality
+performance, and the NASA award fee board did not have a SRM&QA representative.
+However, this was common practice at the time.
+4.1 Perkin-Elmer OA Organization_
+When the OTA contract was awarded to the P-E Optical Technology Division, the -
+existing QA system was organized to comply with MIL-Q-9858A requirements for
+Department of Defense (DoD) programs. Minor adjustments were made to the OTA
+QA program to comply with the basic requirements of the NI-IB 5300.4 (ID-1), and
+additional guidelines imposed by the MSFC Statement of Work and Data Requirements.
+The P-E QA functions (including quality control, quality engineering procurement
+control, and contamination control analysis) reported to the QA manager. The
+reliability engineering functions (including materials and processes, safety, reliability, and
+maintainability) reported to the Reliability Engineering/Assurance manager. The P-E
+system had one significant organizational difference from a typical NASA program: the
+Product Assurance Directorate (responsible for reliability and QA functions) reported
+directly to the OTA Project Manager, who in turn was responsible for schedules,
+resource allocations, and end-item deliveries.
+This reporting structure did not provide the necessary independence for the
+Product Assurance function. The situation was not rectified until 1982 when, in
+response to a RID generated during the MSFC survey, the Directorate began reporting
+to the Assistant General Manager for Operations.
+The P-E Product Assurance organization was staffed with well-qualified senior
+engineering and QA professionals. The management had considerable experience in
+QA and reliability disciplines, optical manufacturing, and systems test applications.
+Staffing levels averaged between 10 to 15 percent of the total program contingent, which
+is typical for Product Assurance programs of this size. Although there were several
+qualified optical engineers working in QA areas, none were actually assigned to interface
+with the critical optical tooling operations at either the Danbury or Wilton facility; each
+facility had a separate QA organization. This arrangement meant that Danbury had
+contractual responsibility for the work subcontracted to the Wilton division, but Danbury
+QA (and also MSFC QA) relied on the Wilton QA organization for coverage of critical
+tooling processes.
+After a series of safety-related incidents related to the Phase I manufacture of the
+primary mirror, the Danbury QA organization expanded their oversight of safety at the
+Wilton facility. Permanent safety/QA personnel were assigned to Wilton from the
+Danbury division Product Assurance organization. These individuals were tasked to
+monitor and provide technical guidance on all safety-related issues concerning the
+primary mirror.
+A major contractual requirement of the OTA QA program was the preparation of
+regular Product Assurance reports that were issued as pan of monthly P-E Program
+Reviews. These reports covered progress, problems, and plans for the areas of: Quality
+12
+
+
+[PDF PAGE 13]
+Assurance (3.6.1); and Reliability, Safety, Maintainability, Materials-Processes, and EEE
+Parts (3.6.2).
+The lIDOS file copies of the monthly PRs are incomplete. The missing data make
+it difficult, if not impossible, to reconstruct the events identified in these reports.
+However, the available information does not indicate any specific concerns related to the
+Reflective Null Correcter. Since the safety of the primary mirror was of paramount _
+concern, more routine QA problems were not considered sufficiently notable to merit
+inclusion in the monthly reports.
+This view may have resulted from the lack of notification to the QA staff that
+Reflective Null Corrector final assembly operations were in-process or completed; since
+the QA staff was not involved in these crucial activities, they could not monitor or
+report QA concerns. The issue of adding spacers to the field lens assembly of the
+Reflective Null Corrector (possibly via a formal MRB process) also was not discussed.
+4.2 NASA Headouarters and MSFC OA
+The P-E contract was awarded in October 1977, and primary mirror grinding/
+polishing operations spanned the period from December 1978 to April 1981. When the
+contract was initiated, NASA Headquarters QA oversight for all NASA programs,
+including HST, comprised two to three engineers assigned to the Office of Chief
+Engineer (which is the predecessor of the Office of Safety and Mission Quality).
+The first full-time NASA quality representative was in place as of March 2, 1979.
+This single individual constituted the total government QA presence during the period in
+question to cover what was essentially an around-the-clock, 6 or 7 day-a-week operation
+at both the Danbury and Wilton facilities. While the representative had over 23 years in
+Government reliability and QA experience at the time of his assignment to the program,
+he did not have any formal optics training. The representative indicated that he utilized
+the optical expertise resident at MSFC whenever such expertise was required. (No file
+copies of the representative's reports to MSFC have been located at Danbury or MSFC.)
+Supporting the NASA representative at P-E Danbury in a collocated function at
+the MSFC Project Office was another NASA quality representative who served as his
+.direct counterpart. Other members of the MSFC SRM&QA staff provided support to
+the NASA representative at P-E on an as-needed basis; the time expended by these
+supporting personnel (at least 12 individuals) varied from 10 to 35 percent. None of the
+MSFC QA staff had expertise in optics and relied totally on the Engineering
+organization for this support and insight.
+Some of the primary responsibilities of the SRM&QA representative included:
+• Providing MSFC SRM&QA interface with the P-E Quality Manager.
+• Monitoring quality compliance with contractual requirements..
+• Providing technical guidance in establishing subcontractor quality criteria.
+13
+
+
+[PDF PAGE 14]
+• Interfacing with DCAS to establish SRM&QA requirements.
+• Serving as the Government MRB representative.
+• Monitoring adequacy of nonconformance reporting system.
+Evaluating hardware and system modifications for reinspection and retest. -
+Participating in MSFC SRM&QA surveys, design reviews, ORIs, and
+Configuration Management Audits.
+4.3 Defense Contract Administration Services (now DCMC_
+The DCAS oversight duties for the HST Program began on December 1, 1980,
+over 3 years after the contract was awarded to P-E. Thus, they were not involved in the
+primary mirror grinding/polishing processes nor the manufacture of the Null Correctors
+at Wilton. (Prior to 1980, DCAS representation consisted of one to two individuals who
+covered the Danbury and Wilton divisions for DoD programs.) Since the actual letter of
+delegation was written only 3 months before the completion of the mirror polishing, it is
+doubtful that DCAS delegation would have had meaningful impact on the design and
+assembly of the Null Correctors.
+During subsequent testing, the DCAS representative indicated a concern for the
+lack of QA participation in critical processes. He noted in a DCAS Optical Telescope
+Division (OTD) Quality Control daily log sheet, dated April 29, 1981 (Ref. 6), that the
+test procedure #679-5017 for the vertex location tests lacked a requirement for QA
+participation in the data collection/review. The log sheet shows that the DCAS
+representative related the problem via telecon to the NASA QA representative in
+compliance with NHB 5300.4(2B), paragraph 2B600, as listed in the letter of delegation
+(Ref. 7). This indicates how independent DCAS oversight might have benefitted the
+design and assembly phases of the Null Correctors.
+DCAS duties for the HST Program were in accordance with NHB 5300.4(2B), and
+were typical of similar NASA programs. Normally, DCAS would monitor compliance
+with calibration requirements, provide an independent verification of test results, and
+sign for the Government on end-item documents. However, there are only limited
+references to DCAS activity in the surviving P-E monthly reports. None of the DCAS
+information in these monthly reports supports any concerns or findings relative to the
+Null Correctors.
+5. DATA RETENTION/CONTROL
+The SRM&QA concern about the adequacy of the data management system in
+retaining critical quality data during the HST program life cycle (from onset to
+completion) is as follows:
+14
+
+
+[PDF PAGE 15]
+There was no formal and c.envali_ infommtion management ryrtem to retain
+and categorizethevolumbwus datathatdefm_ theHST performance
+characteristics
+The NASA contractual requirements for control of critical records for programs of
+this size typically stipulated retention for a specified period of time to support on-orbit
+anomaly investigations and resolutions. The NASA contract requirements (Ref. 8) -
+stipulated that: "The materials....shall be made available to the Office of the Contractor,
+at all reasonable times, for inspection, audit, or reproduction, until the expiration of
+three (3) years from the date of final payment under this contract ..... ". NASA had
+assumed that Perkin-Elmer (and now Hughes-Danbury) would be under contract for a
+minimum period of 15 years during which all HST data would be retained according to
+standard practice.
+There was no separate formal system for retention of HST data by either P-E or
+NASA during the time period in question (the data were not systematically indexed,
+filed, or stored). When the Investigation Board requested that Hughes-Danbury
+impound all relevant data, the available information primarily consisted of final OTA
+buy-off documentation located at Danbury and individual files of former P-E employees
+as well as current HDOS employees.
+The lack of complete data records on the manufacture and assembly operations
+during the time period in question seriously hampered the Board investigation as well as
+the Hughes-Danbury investigation. [Note that the original contract was extended to
+October 5, 1990; after which the Goddard Space Hight Center (qSFC) assumed the
+retention/control function for all existing HST data to support on-orbit operations under
+a 2-year contract.]
+It is believed that the documentation stored at the Wilton facility at the time of
+the final OTA buy-off remained in the possession of the P-E Wilton divisions when the
+Danbury division was sold to Hughes. Consequently, the tooling/STE data were not
+retained with the final OTA buy-off documentation. Acquiring that data after a 10-year
+lapse has been difficult; the Hughes Product Assurance Manager is conducting data
+searches for the investigation in cooperation with the P-E data management
+organizations.
+6. METROLOGY
+The SRM&QA findings relative to the critical metrology operations and the
+pivotal issue of denial of QA access to these areas are as follows:
+Due to a management de_n, neither NASA nor P-E QA provided
+stoveiflance of critical metrology .functions/procesaes during the build of the
+Reflective Null Corrector or testing of the primary mirror. The decision probably
+resulted from schedule/cost p_ and a belief that the respec_e engineering
+coverage was an ad_u_e assurance.
+15
+
+
+[PDF PAGE 16]
+The lIST PnTgram lacked an independent second means of laud testing each
+ optical component, which would have surfaced the HST flaw.
+NOTE
+Optical metrology has a broader context than typical QA metrology organizations,
+which deal primarily with instrumentation calibration. P-E optical metrology __
+encompassed the design, build, and testing of special toollng/hardware (such as the
+Null Correctors), the conduct of the tests, and data analyses required to produce
+the final optical end-items.
+6.1 Surveillance of Critical Metrolo_ Ooeration_
+As discussed in Section 3.1 of this report, witness testimony indicated an
+underlying concern about the formal discipline of the P-E optics/metrology operations.
+P-E treated the metrology operations as experimental engineering rather than formal
+manufacturing operations. A 1979 Program Evaluation Review Technique (PERT) chart
+of 60-inch Null Corrector modifications (Ref. 9) indicates that metrology engineering
+intended to provide only laboratory certification for the Reflective Null Corrector STE
+rather than formal certification through an independent QA process.
+The metrology area at Danbury (where the HST Reflective Null Corrector was
+developed from the original 60-inch Corrector and the Inverse Null Corrector was
+assembled) was secured by a cipher lock door that was accessible only by Wilton
+metrology engineers; ostensibly, this was to afford complete privacy for these engineers.
+The Product Assurance Manager stated that his organization was not aware that a
+modification and final assembly process was occurring until the Reflective Null
+Corrector Assembly was moved from the metrology area to the OTA test chamber.
+Since no formal manufacturing process paperwork covering that activity was initiated
+through the accepted production channels, the QA organization was prevented from
+providing oversight. He could only recall being asked to provide safety personnel to
+assist with the transfer of the 60-inch Reflective Null Corrector from Wilton to Danbury,
+and the final transfer of the HST Reflective Null Corrector to the OTA test chamber.
+The P-E Wilton division optical engineering/metrology organization operated with
+few checks and balances from P-E or NASA program engineering and QA organizations.
+Thus, P-E and NASA central engineering staff and QA organizations had essentially no
+effective technical surveillance of the metrology operations. According to witness
+testimony and written records, the P-E HST optical engineering personnel (under the
+Manager of Manufacturing Optical Analysis) had minimal contact with the P-E central
+engineering staff. NASA engineering coverage basically consisted of MSFC Program
+Office engineering representative, who covered all program aspects and could not
+provide any detailed surveillance of the operation and data analyses.
+Consequently, the QA representatives at the Danbury facility were limited to
+performing safety functions. According to testimony, the primary duty of the QA
+representative during the optical measuring process was to enforce the rules concerning
+loose objects that could fall and damage the mirror. For example, the P-E Danbury QA
+representative was not allowed access to the top platform in the primary mirror test cell;
+16
+
+
+[PDF PAGE 17]
+therefore, he was not in a position to visually confirm the activities of the optical test
+personnel. Limited to the intermediate level, he could only control individual access to
+the tower and tether all loose objects to the optical engineering personnel prior to entry.
+(In this case, denial of access was at least partially driven by technical considerations
+that required a minimum number of people at the upper level.)
+This resulted in a lack of independent surveillance of the critical metrology area _
+for activities such as:
+a. Certification of the STE and equipment being utilized.
+be
+Technical review/validation of the precise methods and analytical tools being
+employed.
+Co
+Surveillance to ensure that the repetitive use of these methods were applied
+consistently.
+d. Control of input film quality, as received from the test tower.
+The MSFC Resident SRM&QA Representative stated that he was directed by his
+senior supervisor, the MSFC Director of Quality and Testing, not to cover the metrology
+area as it would be covered by MSFC engineering. He believed this directive resulted
+from a meeting at MSFC with the Director of Science and Engineering, and his senior
+supervisor. (At that time, the QA organization reported to the Director of Science and
+Engineering.) He believes the rationale given for this arrangement was that the
+metrology engineers were capable of performing the requisite QA functions without the
+adverse schedule impact created by additional Government inspections. This decision
+could have been driven in part by the Resident SRM&QA Representative's lack of
+qualifications in optics; given his experience (refer to Section 4.2), he could have
+effectively monitored the discipline of the operation.
+There axe no written records that either the P-E quality organization or NASA
+ever contested the denial of QA access to the metrology areas. It was the consensus of
+both government and contractor witnesses that P-E management had enforced a policy
+(accepted by both the NASA and P-E HST Program Offices) that limited the NASA and
+P-E Danbury. QA organizations access to the optical metrology operation. Testimony
+indicated that access was deniedmat the request of optical engineering managementm
+to the Danbury metrology areas that involved metrology testing, data reduction/analysis,
+and the final Null Corrector assembly. Apparently, denial was based on the rationale
+that much of the HST metrology assembly operations involved Wilton division
+proprietary functions and DoD-classified sensitive technology. This constraint in effect
+shielded the operation from NASA and the Danbury division.
+The P-E Quality Manager claimed to have verbally protested this arrangement to
+management (Product Assurance Program Manager and Manager of Manufacturing
+Optical Analysis) on several occasions but to no avail. He also claimed that in this time
+period he originally had two qualified optical engineers on his staff; one of whom
+purportedly resigned because he was not being properly utilized in his field of expertise.
+17
+
+
+[PDF PAGE 18]
+Given that P-E Danbury QA had qualified optical engineering personnel, the
+management decision to exclude QA appeared to be based solely on the concern about
+proprietary Wilton division and DoD-classified design technology, rather than on the
+basis of schedule/cost impacts. Since the Product Assurance Manager was qualified with
+the appropriate clearances to operate in both P-E proprietary and DoD classified areas,-
+the only rationale remaining for QA exclusion was the anticipated schedule impact of
+inspections.
+P-E internal memoranda produced during the design and manufacture of Null
+Corrector components indicated that P-E optic engineers had desired the presence of
+the Wilton QA organization (Refs. I0, 11) during Null Corrector assembly and test
+phases. However, no data have been found to confirm that any QA personnel witnessed
+the final assembly of the HST Reflective or Inverse Null Correctors. There are data to
+confirm that Wilton QA did witness the final assembly of the Refractive Null Corrector.
+In theory, QA oversight in the metrology areas should have included: a review of
+these metrology processes as well as test records (including interferograms), and
+provided a documentation trail for support of in-flight anomaly investigations. [A set of
+interferograms was assessed independently by NASA MSFC engineering midway through
+the operation and appeared to confirm the P-E methods. A later set also was sent to
+NASA, but no report on their results has been found.]
+6.2 Optical Review Envirpnmcn¢
+In reviewing witness testimony, there is a sense that the optical review
+environment during the formal design reviews was not conducive to open discussion of
+problems. The presentation material from the 1978 to 1980 timeframe does not indicate
+that the differences among interferograms or any other QA concerns about access to
+metrology were addressed. It appears that these and other issues that might have
+adversely affected schedules or cost did not surface.
+During the 1980s, cost was a major consideration for NASA and its contractors.
+The cost constraints on the HST Program were reflected in the budget/manpower trade-
+offs of the P-E QA organization. For example, the investigation uncovered a
+handwritten P-E memorandum (Ref. 12), dated September 9, 1980, referencing possible
+"changes in the Product Assurance organization to meet the FY 1981 budget level.
+Given a concern about meeting the QA staffing requirements with a restricted budget,
+the memo suggests alternatives such as cutting travel for QA staff and eliminating QA
+positions--including that of the Product Assurance Program Manager. This memo was
+not formally distributed.
+The impact of schedule pressures is reinforced by a P-E memorandum (Ref. 13)
+that explains why the Phase I portion of the HST primary mirror fabrication at Wilton
+took so long. This memo addressed the reasons why a planned 50-week fabrication
+effort became an 86-week effort. By the time the Null Correctors were in final
+assembly, the program had severe schedule problems.
+18
+
+
+[PDF PAGE 19]
+6.3 Need for Additional Testing
+An internal review in 1981 by a P-E team headed by the Assistant Program
+Director recommended additional testing (Ref. 14). "Another test of the figure using an
+alternate method such as a Hartmann test or a test utilizing the pattern distribution of a _
+reflected laser beam should be made. The purpose of this test would be to uncover
+some gross error such as an incorrect null corrector." "After assembly of the primary
+and secondary in there final configuration a simple autocollimation test using a flat of
+the order of 12" diameter should be performed to look for gross errors which may have
+occurred in the very long chahn of analyses and tests leading to a complete optical
+system." No documentation has been found to indicate how this concern was resolved.
+Witness testimony also remembered private discussions about concerns for a possible
+need for a second test method for the Reflective Null Corrector. We do know that no
+other tests were performed.
+7. CRITICAL TECHNICAL ISSUES
+The SRM&QA-related findings with regard to the circumstances that caused the
+spherical aberration are as follows:
+NASA believed that the manufacture of lIST optical components was well
+within the capabilities of P-E and Easmum-Kodak, and thus defetr_ the
+optical issues to Peddn-Elmer.
+In-situ or end-to-end testing of the Rqleaive Null Corrector was not perfommt,
+nor is there evidence of a quantitative _n of this Cotrector.
+No formal opticalacceptance criteriawas extablishedto cro_-compare Null
+Correctortestresultswithinthe errorbudget limits.
+Warning flags such as conflicrbtg interferogrmn data and the field lens mounting
+spacers were ignored.
+Historically, the NASA optical community characterized the manufacture of OTA
+¢iptical components as being well within the capabilities of optical manufacturers such as
+Perkin-Elmer and Eastman Kodak. The large investment in the 60-inch mirror program
+had provided an excellent proof of the capability of the people and systems. It was
+recognized that the optical figure and smoothness requirements for the primary mirror
+imposed stringent controls on the manufacturing process to achieve the desired
+performance. Of greater concern to NASA were the pointing and fine guidance control
+systems required to fully utilize the on-orbit OTA capabilities, and the extensive system
+integration efforts needed to place the HST in orbit. Due to these larger concerns,
+NASA appears to have deferred the critical issues associated with the manufacture of
+the optical components to the P-E experts. The HST contract specified only the final
+OTA performance requirements rather than the component-level requirements to ensure
+that OTA objectives were achieved.
+19
+
+
+[PDF PAGE 20]
+dl
+The Investigation Board focused on the development and manufacture of the
+Refractive, Reflective, and Inverse Null Correctors (INC); and interferograms associated
+with the grinding/polishing of the primary mirror and Null Correctors. The Null
+Correctors were designed to achieve specific goals during the two manufacturing phases
+of the primary mirror. The Refractive Null Corrector was designed to provide a
+sufficient level of accuracy to meet the objectives of the Phase I grinding and polishing
+efforts; i.e., to achieve a surface figure equivalent to one wavelength RMS. The basic
+concept used in the design of the Refractive Null Corrector could not achieve the
+desired OTA quality level. Therefore, the Reflective Null Corrector was designed to
+achieve the final surface figure. The INC originally was designed as a calibrator in
+conjunction with the Reflective Null Corrector. Its purpose was to simulate the primary
+mirror in the optical path to check either the Reflective Null Corrector or the Refractive
+Null Corrector. In actual use, the INC functioned as an alignment monitor between the
+interferometer and the Reflective Null Corrector. The INC never was used in
+conjunction with the Refractive Null Corrector because it was attached to the base of
+the Reflective Null Corrector.
+7.1 [Refractive Null Corrector
+The Refractive Null Corrector was used to measure the primary mirror surface
+figure at the end of Phase I, which was the initial grinding operation at the Wilton
+facility. The series of measurements confirmed that the surface figure was better than
+one wavelength. The Refractive Null Corrector also was used to measure the vertex
+radius at the end of Phase I'I, which was the final grinding/polishing operation at the
+Danbury facility. The testimony of the inspectors who witnessed the assembly and
+signed the inspection sheets, in conjunction with a review of engineering records,
+indicate that the Refractive Null Corrector was built and certified by the standard
+Wilton QA process. A slight error in the design of this Corrector that would produce a
+small amount of fifth-order spherical aberration was confirmed during the current
+investigation, although the amount is within the design error budgets.
+7.2 Reflective Null Corrector
+The HST Reflective Null Corrector was based on the existing P-E 60-inch mirror
+Reflective Null Corrector program. The design objectives and priorities established for
+the 60-inch Reflective Null Corrector incorporated the concerns relative to the stability
+and alignment of the components for extended periods under varying environmental
+conditions. A P-E memorandum (Ref. 15) addressing the design of the Reflective Null
+Corrector stated:
+"Precision of optical performance must be given the highest priority ..... this
+assembly will be used for the manufacture and inspection of optical
+components where size and figure tolerance represent the limits of the state-
+of-the-an. The part of the total error budget that can be assigned to the null
+corrector must be held to a practical minimum in order that the greatest part
+of the error budget can be assigned to the critical manufacturing operations.
+Stability of optical performance is essential in order that precise optical
+performance be maintained under all required environmental conditions.
+2O
+
+
+[PDF PAGE 21]
+Stability is particularly important in this application because optical
+performance of the complete assembly cannot be periodically verified by a
+single test. The performance must be certified by evaluation of separate
+optical components and monitoring critical alignment procedures under
+laboratory conditions. Once certified, it is essential that optical performance
+remain within tolerance within the period of performance under all --
+environmental conditions."
+The emphasis on solving the precision design problems as reflected in the careful
+selection of manufacturing sequences for the original 60-inch Reflective Null Corrector,
+indicated that the design engineers understood the criticality of optical performance.
+The QA/build records are available for the 60-inch Null Corrector, which was built with
+P-E internal Independent Research and Development (IR&D) funds. The detailed
+build records indicate that a standard QA process was implemented.
+The decision was made to develop the HST Reflective Null Corrector by
+modifying the 60-inch Null Corrector. The HST modifications included: a) building a
+new field lens; and b) changing the spacing parameters for the Coaxial Reference
+Interferometer (CORI)-to-upper mirror spacing, upper-to-lower mirror spacing, field
+lens-to-lower mirror spacing, and new field lens. The original 60-inch design analysis
+indicated that these modifications could be accomplished with few significant changes to
+the existing hardware.
+In performing the modifications and in particular, the field l_ns-to-lower mirror
+spacing, mispositioning of the field lens (commonly referred to as the despace error)
+occurred. The despace resulted from an inaccurate interferometric measurement
+because the spherical wave interferometer was focused on an end cap placed over the
+end of a field lens spacing rod, rather than on the end of the rod itself. The technique
+using the spacing rod precluded repeated measurements without altering component
+alignment, since either the field lens or the interferometer had to be removed to extract
+the spacing rod from the assembly.
+Validation/certification procedures for the HST Reflective Null Corrector were
+documented in PR-237B, Test Configuration Report for Phase II Manufacture of Space
+Telescope Primary Mirror, which was released in June 1983. Paragraph 4.2.2.6.2,
+Reflective Null Correctgr, stated in part:
+_'he reflective null corrector was certified by measurement of its
+components, the field lens and the two null mirrors, and the assembly
+parameters. This was necessary since null correctors in general cannot be
+tested as functional units. The reflective design, however, allowed in situ
+testing of the critical elements."
+Lab notes and other documentation of the final assembly process indicated a
+rigorous effort by the optic engineers to check and cross-check each measurement to
+eliminate alignment and spacing errors. There is no evidence that either an in-situ or a
+total end-to-end test of the Reflective Null Corrector was performed. In addition, there
+is no documentation of a quantitative certification of the Null Corrector hardware.
+Since the Reflective Null Corrector was the only test device used to accept the primary
+21
+
+
+[PDF PAGE 22]
+mirror figure, it should have been certified by an independent or second non-
+tntefferometric method such as a Hartmann test as noted by a 1981 P-E Audit Team.
+The HST Reflective Null Corrector was used to measure the surface figure at the
+start and end of Phase II at Danbury, and was the final determiner (measuring device)
+for acceptance of the primary mirror surface figure. It also was used as an intermediate
+and in-process check of this mirror figure during the final polishing phase (Phase 1I) and
+was the actual source of data inputted to the automated CCP.
+7.3 Inverse Null Corrector
+The INC apparently had been intended by engineering (according to Abe Offner)
+to be used as a partial in-situ calibrator of the overall Reflective Null Corrector test
+system, but never was used for this purpose. It only was used as an alignment
+monitoring device (Ret 16). No specific reasons were given as to why the INC was used
+only as an alignment monitoring device, and the overall pedigree of the device could not
+be determined from the documentation. Unverifiable testimony raised concerns about a
+possible dimensional error and/or a possible remelt condition affecting one of the optic
+elements. During the current investigation, an error in the design calculations was
+discovered that produced a small amount of spherical aberration in the INC. In
+comparing the interferogram data between the Reflective Null Corrector and the
+combination of the Reflective Null Corrector and the INC, the difference in the amount
+of spherical aberration noted was due to the calculation-based error. Like the
+Refractive Null Corrector, this unit produced interferograms that indicated possible
+evidence of a basic problem that never was pursued in detail.
+7.4 Cross-checks of Conflicting Interfer0L_rams
+The use of the INC illustrates the lack of a definitive test plan that would have
+correlated and defined more precisely the interrelationships of the various test elements
+(Refractive Null Corrector, Reflective Null Corrector, INC_., vertex radius measurements,
+and others). This plan also should have interrelated the various tests to confirm the
+secondary mirror performance. The elaborate error budget system employed by P-E is
+an adjunct to test planning but does not represent an adequate plan. The Primary
+Mirror Phase II Metrology Test Plan, PR-235, is at best a cursory overview of the testing
+during the polishing phase. PR-237B, Test Configuration Report for Phase 1I
+Manufacture of Space Telescope Primary Mirror, dated June 1983, was essentially an as-
+run test plan that used the error budget as its primary integrating device.
+In discussions of why so little credence was placed in the apparent contradictory
+interferograms taken with the Refractive Null Corrector, the primary thesis given in the
+testimony was that they had absolute confidence in the pedigree of the Reflective Null
+Corrector and considerably less in the Refractive unit. Intensive review of the data
+could not substantiate either of these statements. The lack of formal evidence would
+seem to indicate that by normal aerospace standards, neither unit had an acceptable
+pedigree. The formal reports (PR-235 and PR-237B), using references to the 60-inch
+program to document the pedigree of the HST Reflective Null Corrector, lacked
+sufficient detail to serve as certification papers.
+22
+
+
+[PDF PAGE 23]
+When the decision was made to modify the 60-inch Corrector for use on the HST
+primary mirror, the as-built unit should have been formally certified by the quality
+organization. The design modification may have been done via redlining the 60-inch
+drawings, since no formally released drawings has ever been found. The investigation
+found that Wilton QA only participated in rebuilding the Reflective Null Corrector at
+the component-level involving spacing rods and the field lens assembly.
+An optical-based verification/certification test plan for programs of similar size to
+the HST typically include error budget-driven optical acceptance criteria. The criteria
+are used to cross-check interferogram data from Null Corrector tests within the
+tolerances imposed by the error budgets. Without cross-checking the data, the optical
+engineers missed a series of key indicators (warning flags) that should have evolved from
+comparisons of interferograms such as:
+Phase I Refractive Null Corrector data compared to initial Phase II
+Reflective Null Corrector data
+Phase H Reflective Null Corrector data compared to Refractive Null
+Corrector vertex radius test results
+Data from the Inverse Null Corrector combined with the Reflective Null
+Corrector compared to Reflective Null Corrector data only
+Thus, there are no formal quantitative data to support the pedigree of the Null
+Correctors. The confidence about the accuracy and pedigree of the Reflective Null
+Corrector as expressed in witness testimony may be due to the entire design and build
+operation having involved only a small engineering team who had total confidence in
+each other's ability to ensure final product quality. In its oversight capacity, NASA S&E
+(optics) personnel could have imposed the cross-comparison criteria as a requirement
+for this team to ensure hardware adequacy; particularly since only the Reflective Null
+CorTector data were used to define the end-item figure quality. An alternative might
+have been to use round-robin null testing with a common Inverse Null Corrector
+between Perkin-Elmer and Eastman Kodak.
+8. LESSONS LEARNED - RECOMMENDATIONS
+As a result of the findings and observations during the investigation, several
+SRM&QA lessons have been learned relative to the HST Program:
+Finding: The on-site representatives for the NASA and P-E QA organizations were
+not specifically trained in optics that would have enabled them to provide an
+informed and independent evaluation of the assembly and manufacturing
+operations.
+Recommendat/on.- The NASA SRM&QA organizations should augment their
+staff to provide independent expertise in special technical areas (such as
+optics technology) where major program objectives are at stake.
+23
+
+
+[PDF PAGE 24]
+Finding: NASA oversight of critical optical component design/development and
+manufacture was deferred to Perkin-Elmer, and critical reviews during these
+phases failed to identify major data anomalies.
+Rer, ommendaaoa,¢.- NASA should maintain active oversight of all critical
+program elements, and should ensure that critical review processes are
+conducted in strict compliance with NASA contractual requirements (Plans,
+Handbooks, etc.).
+Finding: The basic Product Assurance requirements and formal review processes were
+in place but lacked the control or foLlow-up to ensure closure of all
+problems/issues/concerns.
+Recommenda_n." The formal program reviews and SRM&QA survey
+processes should require the inclusion of a thorough, closed-loop system for
+resolution of Review Item Discrepancies (RIDs) and Nonconformance
+Reports.
+Finding: Denial of access to critical metrology areas prevented proper QA oversight:
+f'mal signature authority for QA was subsumed by engineering.
+Recommendm/on.- QA organizations with signature responsibility for ensuring
+that SRM&QA requirements are satisfied for final acceptance of critical
+components should have full access to the all critical operations.
+Re.commendat/on.- The QA oversight should be a separate function from
+program and engineering management.
+Finding: The HST Program lacked: I) an independent second means of final testing
+each critical component and 2) a complete end-to-end test of the optical
+system. Either of these independent tests would have surfaced the spherical
+aberration.
+Recommendar/om NASA should impose a requirement on each program to
+incorporate independent means of testing components that define critical
+performance parameters. Full-up (end-to-end) testing is particularly
+desireable where individually developed components/modules must be mated
+for the first time at final assembly (or on-orbit).
+Finding: NASA focused its resources on systems integration and guidance control
+systems, which were considered to be more susceptible to anomalies that
+could adversely impact on-orbit HST operation. Conversely, the design/
+manufacture of large mirrors for space applications was considered to be well
+within the scope of existing state-of-the-an optical technology.
+Recommendat/on." In making the inevitable trade-offs relative to resource
+allocation, NASA program management must consider the long-range
+operational impact of each critical program element.
+24
+
+
+[PDF PAGE 25]
+Finding: Lack of complete data seriously hinders relatively long-term investigations
+(such as for the HST aberration), and renders rapid support for in-flight
+anomalies virtually impossible.
+Recommou/m/on." NASA QA organizations should develop more stringent
+requirements for the data management. Specifically, critical data should be --
+formally collected, indexed, and stored at regular review intervals for access
+by both NASA and the contractor.
+Finding: For large-scale, complex programs (such as the HST), if system specification
+compliance and validation requirements are focused at the component level
+only rather than looking at the components as part of the overall system,
+then the formal validation of the system may be flawed.
+Reco_n." More attention must be placed on detailed specification
+compliance and validation of the overall system as pan of its formal
+acceptance. Incumbent to this is a detailed test plan that specifically traces
+the validation of all performance parameters.
+25
+
+
+[PDF PAGE 26]
+REFERENCES
+ .
+ .
+ *
+ *
+ 1
+ .
+ .
+ .
+ .
+"10.
+11.
+12.
+13.
+Perkin-Ehner, TE 679-4411, "OTA Verification Report for the Primary Mirror
+(679-0006-007C) (SN 001) (AV-04);" dated October 3, 1983 (coveting the 1978-
+1981 timeframe).
+NASA Marshall Space Flight Center "Safety, Reliability and Quality Assurance
+Survey Report (February 26-29, 1980)," Perkin-Elmer Corporation, Optical
+Telescope Assembly, Danbury, CT; dated March 12, 1980.
+Perkin-Elmer memorandum from G. Rogers/A. Slomba to L Montagnino, dated
+June 5, 1980 (Log #102); Subj: Final Test Sequence on ST Primary Mirror.
+NASA MSFC Memorandum of Record; John M. Livingston; Subj: Trip Report -
+Computer Control Polisher (CCP) II and OTA Chamber ORIs at Perldn-Elmer (PE);
+dated May 28-29, 1980.
+NASA MSFC memorandum from Mr. Brooks through Mr. Kingsbury to Dr. Speer;
+Subj: Planned R&QA Support to Space Telescope Pro iect; dated June 11, 1982.
+DCAS Optical Telescope Division (OTD) Quality Control daily log sheet, dated
+April 29, 1981.
+NASA Letter of Contract Administration Delegation, General; Contract NAS8-
+32700 (DCASM); Subj: Space Telescope Project, Optical Telescope Assembly, dated
+December 1, 1980.
+NASA Procurement Regulation Document (PRD) #82-2, dated August 1979; Subj:
+Audit by NASA; para. Z lO4-42(e), Availability.
+Perkin-Elmer Inverse Null Corrector file copy of Program Evaluation Review
+Technique (PERT) chart (program schedule), which notes status of the Null
+Correctors as of December 6, 1979; prepared for or by C. Robbert and L
+Montagnino.
+Perkin-Elmer memorandum from A. F. Slomba to M. Tocci; Subj: Test Plate
+Certification, Element Certification, ST Field Lens, Inverse Null Elements; dated
+December 21, 1979.
+Perkin-Elmer memorandum from A. F. Slomba to R. Carvalho; Subj: Test Plate
+Certification, ST Field Lens, Inverse Null Elements; dated December 21, 1979.
+Perkin-Elmer undistributed memorandum #ST PA-746, from G. Davon to D.
+Rosenberg; Subj: Possible Changes in P.A. to Meet "Boggle;" dated September 9,
+1980.
+Perkin-Elmer memorandum #80-OOD-466, from F. Briscoe to P. E. Petty; Subj:
+ST Primary Mirror Fabrication; dated June 25, 1980.
+26
+
+
+[PDF PAGE 27]
+REFERENCES (CONT.)
+14.
+15.
+16.
+Perkin-Elmer memorandum #RWJ 81-112, from R. Jones to J. D. Rehnberg; Subj:
+Audit Team Review of Optical Performance Evaluation of the ST Primary Mirror;,
+dated May 21, 1981.
+Perkin-Elmer memorandum #74-SS-1675, from W. E. Kohman to L. Montagnino;
+Subj: Design. Reflective Null Corrector Assembly; dated November 20, 1974.
+Perkin-Elmer memorandum, from Chuck Robbert to Sid Greenspan; Subj:
+Fabrication Guidelines for ST Inverse Null Corrector Components; dated October 12,
+1979.
+[Note that this report makes full use of the HST documentation obtained during the
+formal investigation. The documents provided in the appendices of this report also
+contain numerous references to material used.]
+27

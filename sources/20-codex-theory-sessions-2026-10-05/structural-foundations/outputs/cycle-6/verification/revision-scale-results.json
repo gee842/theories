@@ -1,0 +1,251 @@
+{
+  "status": "all assertions passed",
+  "cases": {
+    "retained_truth": {
+      "capacity": true,
+      "winning_policies": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "policies_checked": 8,
+      "worlds_checked_per_policy": 2
+    },
+    "constant_signal": {
+      "capacity": false,
+      "winning_policies": [],
+      "policies_checked": 8,
+      "worlds_checked_per_policy": 2
+    },
+    "paid_report_erased": {
+      "capacity": false,
+      "winning_policies": [],
+      "policies_checked": 8,
+      "worlds_checked_per_policy": 2
+    },
+    "recoded_signal": {
+      "capacity": true,
+      "winning_policies": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "policies_checked": 8,
+      "worlds_checked_per_policy": 2
+    },
+    "program_archive_missing_one": {
+      "capacity": false,
+      "winning_policies": [],
+      "policies_checked": 8,
+      "worlds_checked_per_policy": 2
+    },
+    "cash_one_below_threshold": {
+      "capacity": false,
+      "winning_policies": [],
+      "policies_checked": 8,
+      "worlds_checked_per_policy": 2
+    },
+    "deadline_one_tick_short": {
+      "capacity": false,
+      "winning_policies": [],
+      "policies_checked": 8,
+      "worlds_checked_per_policy": 2
+    }
+  },
+  "support_window_success_by_wait_ticks": [
+    true,
+    true,
+    true,
+    false,
+    false
+  ],
+  "financial_deadline_boundary_checks": 26208,
+  "complete_revision_scale_checks": 576,
+  "rank_certificate_edges_checked": 6,
+  "paid_implementation_example": [
+    {
+      "success": true,
+      "reason": "renewal",
+      "cash": 2,
+      "tick": 2,
+      "report": 0,
+      "installed": 0,
+      "ledger": [
+        {
+          "event": "start",
+          "cash": 9,
+          "tick": 0
+        },
+        {
+          "event": "diagnosis",
+          "cash": 7,
+          "tick": 0
+        },
+        {
+          "event": "report_channel",
+          "cash": 6,
+          "tick": 0
+        },
+        {
+          "event": "support_diagnostic_delivery",
+          "cash": 5,
+          "tick": 0
+        },
+        {
+          "event": "tick_diagnostic_delivery",
+          "cash": 5,
+          "tick": 1
+        },
+        {
+          "event": "install_0",
+          "cash": 3,
+          "tick": 1
+        },
+        {
+          "event": "support_installation",
+          "cash": 2,
+          "tick": 1
+        },
+        {
+          "event": "tick_installation",
+          "cash": 2,
+          "tick": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "reason": "renewal",
+      "cash": 2,
+      "tick": 2,
+      "report": 1,
+      "installed": 1,
+      "ledger": [
+        {
+          "event": "start",
+          "cash": 9,
+          "tick": 0
+        },
+        {
+          "event": "diagnosis",
+          "cash": 7,
+          "tick": 0
+        },
+        {
+          "event": "report_channel",
+          "cash": 6,
+          "tick": 0
+        },
+        {
+          "event": "support_diagnostic_delivery",
+          "cash": 5,
+          "tick": 0
+        },
+        {
+          "event": "tick_diagnostic_delivery",
+          "cash": 5,
+          "tick": 1
+        },
+        {
+          "event": "install_1",
+          "cash": 3,
+          "tick": 1
+        },
+        {
+          "event": "support_installation",
+          "cash": 2,
+          "tick": 1
+        },
+        {
+          "event": "tick_installation",
+          "cash": 2,
+          "tick": 2
+        }
+      ]
+    }
+  ],
+  "paying_full_information_comparator": [
+    {
+      "success": true,
+      "reason": "renewal",
+      "cash": 0,
+      "tick": 1,
+      "report": null,
+      "installed": 0,
+      "ledger": [
+        {
+          "event": "start",
+          "cash": 3,
+          "tick": 0
+        },
+        {
+          "event": "install_0",
+          "cash": 1,
+          "tick": 0
+        },
+        {
+          "event": "support_installation",
+          "cash": 0,
+          "tick": 0
+        },
+        {
+          "event": "tick_installation",
+          "cash": 0,
+          "tick": 1
+        }
+      ]
+    },
+    {
+      "success": true,
+      "reason": "renewal",
+      "cash": 0,
+      "tick": 1,
+      "report": null,
+      "installed": 1,
+      "ledger": [
+        {
+          "event": "start",
+          "cash": 3,
+          "tick": 0
+        },
+        {
+          "event": "install_1",
+          "cash": 1,
+          "tick": 0
+        },
+        {
+          "event": "support_installation",
+          "cash": 0,
+          "tick": 0
+        },
+        {
+          "event": "tick_installation",
+          "cash": 0,
+          "tick": 1
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "One-query finite physical-register workflow; no perfect-recall policy is supplied",
+    "Public fees and schedules do not encode hidden regimes",
+    "Financial formula is exact for this mandatory workflow, not all possible rescue protocols",
+    "Renewal inputs and candidate program payloads must be supplied as declared",
+    "Correct-model certificates do not establish correctness of the empirical model",
+    "Finite checks are not a machine proof of general transport or ranking theorems"
+  ]
+}

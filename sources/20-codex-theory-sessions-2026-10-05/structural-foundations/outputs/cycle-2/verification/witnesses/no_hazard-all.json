@@ -1,0 +1,1923 @@
+{
+  "model": {
+    "name": "no_hazard",
+    "cap": 24,
+    "gross": 5,
+    "operating": 1,
+    "maintenance": 1,
+    "rebuild_cost": 2,
+    "rebuild_delay": 2,
+    "diagnostic": 1,
+    "authority": 1,
+    "implementation": 1,
+    "spacing": 5,
+    "deadline": 5,
+    "hazard": false,
+    "full_information": false,
+    "fixed_fault": false,
+    "authority_supplied": false,
+    "alternative_premium": null
+  },
+  "policy_class": "all",
+  "winning_invariant_and_policy": [
+    {
+      "cash": 0,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 4,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 0,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 4
+      }
+    },
+    {
+      "cash": 0,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 4,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 0,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 4
+      }
+    },
+    {
+      "cash": 1,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 5,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 1,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 5
+      }
+    },
+    {
+      "cash": 1,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 5,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 1,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 5
+      }
+    },
+    {
+      "cash": 2,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 6,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 2,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 6
+      }
+    },
+    {
+      "cash": 2,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 6,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 2,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 6
+      }
+    },
+    {
+      "cash": 2,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 6,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 2,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 6
+      }
+    },
+    {
+      "cash": 3,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 7,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 3,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 7
+      }
+    },
+    {
+      "cash": 3,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 7,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 3,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 7
+      }
+    },
+    {
+      "cash": 3,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 7,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 3,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 7
+      }
+    },
+    {
+      "cash": 4,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 8,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 4,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 4,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 8,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 4,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 4,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 8,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 4,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 5,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 9,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 5,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 9
+      }
+    },
+    {
+      "cash": 5,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 9,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 5,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 9
+      }
+    },
+    {
+      "cash": 5,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 9,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 5,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 9
+      }
+    },
+    {
+      "cash": 6,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 10,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 6,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 10
+      }
+    },
+    {
+      "cash": 6,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 10,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 6,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 10
+      }
+    },
+    {
+      "cash": 6,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 10,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 6,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 10
+      }
+    },
+    {
+      "cash": 7,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 11,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 7,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 11
+      }
+    },
+    {
+      "cash": 7,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 11,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 7,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 11
+      }
+    },
+    {
+      "cash": 7,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 11,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 7,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 11
+      }
+    },
+    {
+      "cash": 8,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 12,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 8,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 12
+      }
+    },
+    {
+      "cash": 8,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 12,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 8,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 12
+      }
+    },
+    {
+      "cash": 8,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 12,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 8,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 12
+      }
+    },
+    {
+      "cash": 9,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 13,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 9,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 13
+      }
+    },
+    {
+      "cash": 9,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 13,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 9,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 13
+      }
+    },
+    {
+      "cash": 9,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 13,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 9,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 13
+      }
+    },
+    {
+      "cash": 10,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 14,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 10,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 14
+      }
+    },
+    {
+      "cash": 10,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 14,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 10,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 14
+      }
+    },
+    {
+      "cash": 10,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 14,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 10,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 14
+      }
+    },
+    {
+      "cash": 11,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 15,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 11,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 15
+      }
+    },
+    {
+      "cash": 11,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 15,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 11,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 15
+      }
+    },
+    {
+      "cash": 11,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 15,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 11,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 15
+      }
+    },
+    {
+      "cash": 12,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 16,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 12,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 16
+      }
+    },
+    {
+      "cash": 12,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 16,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 12,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 16
+      }
+    },
+    {
+      "cash": 12,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 16,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 12,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 16
+      }
+    },
+    {
+      "cash": 13,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 17,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 13,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 17
+      }
+    },
+    {
+      "cash": 13,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 17,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 13,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 17
+      }
+    },
+    {
+      "cash": 13,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 17,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 13,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 17
+      }
+    },
+    {
+      "cash": 14,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 18,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 14,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 18
+      }
+    },
+    {
+      "cash": 14,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 18,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 14,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 18
+      }
+    },
+    {
+      "cash": 14,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 18,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 14,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 18
+      }
+    },
+    {
+      "cash": 15,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 19,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 15,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 19
+      }
+    },
+    {
+      "cash": 15,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 19,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 15,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 19
+      }
+    },
+    {
+      "cash": 15,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 19,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 15,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 19
+      }
+    },
+    {
+      "cash": 16,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 20,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 16,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 20
+      }
+    },
+    {
+      "cash": 16,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 20,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 16,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 20
+      }
+    },
+    {
+      "cash": 16,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 20,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 16,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 20
+      }
+    },
+    {
+      "cash": 17,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 21,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 17,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 21
+      }
+    },
+    {
+      "cash": 17,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 21,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 17,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 21
+      }
+    },
+    {
+      "cash": 17,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 21,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 17,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 21
+      }
+    },
+    {
+      "cash": 18,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 22,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 18,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 22
+      }
+    },
+    {
+      "cash": 18,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 22,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 18,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 22
+      }
+    },
+    {
+      "cash": 18,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 22,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 18,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 22
+      }
+    },
+    {
+      "cash": 19,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 23,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 19,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 23
+      }
+    },
+    {
+      "cash": 19,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 23,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 19,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 23
+      }
+    },
+    {
+      "cash": 19,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 23,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 19,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 23
+      }
+    },
+    {
+      "cash": 20,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 20,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 20,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 20,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 20,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 20,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 21,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 21,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 1,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 21,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 21,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 1,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 21,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 21,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 1,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 22,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 22,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 2,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 22,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 22,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 2,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 22,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 22,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 2,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 23,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 23,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 3,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 23,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 23,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 3,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 23,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 23,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 3,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 24,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 24,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 4,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 24,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 24,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 4,
+        "cash_after": 24
+      }
+    },
+    {
+      "cash": 24,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "cancel_rebuild",
+      "successor": {
+        "cash": 24,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 24,
+        "gross": 5,
+        "operating": 1,
+        "fee": 0,
+        "spill": 4,
+        "cash_after": 24
+      }
+    }
+  ],
+  "losing_counterstrategy": []
+}

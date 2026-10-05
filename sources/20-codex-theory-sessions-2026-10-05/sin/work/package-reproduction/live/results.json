@@ -1,0 +1,735 @@
+{
+  "n_lineages": 32,
+  "n_successor_contexts": 64,
+  "alpha_per_primary_test": 0.016666666666666666,
+  "primary": {
+    "feedback_to_maintenance": {
+      "numerator": 12,
+      "p_two_sided": 4.286694101508916e-05,
+      "tail_count": 2,
+      "permutations": 46656,
+      "effect": 1.0,
+      "passes": true
+    },
+    "access_after_feedback": {
+      "numerator": 48,
+      "p_two_sided": 0.00048828125,
+      "tail_count": 2,
+      "permutations": 4096,
+      "effect": 0.25,
+      "passes": true
+    },
+    "factorial_interaction": {
+      "numerator": 48,
+      "p_two_sided": 4.286694101508916e-05,
+      "tail_count": 2,
+      "permutations": 46656,
+      "effect": 0.25,
+      "passes": true
+    }
+  },
+  "all_three_pass": true,
+  "arm_summary": [
+    {
+      "stratum": "challenge",
+      "A": 0,
+      "n": 12,
+      "maintenance_rate": 0,
+      "baseline_accuracy": 0.75,
+      "service_correct_mean": 2.75,
+      "service_attempts_mean": 4,
+      "Y0": 0.75,
+      "Y1": 0.75,
+      "paired_access_gain": 0.0,
+      "team0_mean": 14.75,
+      "team1_mean": 14.75
+    },
+    {
+      "stratum": "challenge",
+      "A": 1,
+      "n": 12,
+      "maintenance_rate": 1,
+      "baseline_accuracy": 0.75,
+      "service_correct_mean": 3,
+      "service_attempts_mean": 3,
+      "Y0": 0.75,
+      "Y1": 1.0,
+      "paired_access_gain": 0.25,
+      "team0_mean": 15,
+      "team1_mean": 19
+    },
+    {
+      "stratum": "adequate",
+      "A": 0,
+      "n": 4,
+      "maintenance_rate": 0,
+      "baseline_accuracy": 1.0,
+      "service_correct_mean": 4,
+      "service_attempts_mean": 4,
+      "Y0": 1.0,
+      "Y1": 1.0,
+      "paired_access_gain": 0.0,
+      "team0_mean": 20,
+      "team1_mean": 20
+    },
+    {
+      "stratum": "adequate",
+      "A": 1,
+      "n": 4,
+      "maintenance_rate": 0,
+      "baseline_accuracy": 1.0,
+      "service_correct_mean": 4,
+      "service_attempts_mean": 4,
+      "Y0": 1.0,
+      "Y1": 1.0,
+      "paired_access_gain": 0.0,
+      "team0_mean": 20,
+      "team1_mean": 20
+    }
+  ],
+  "lineages": [
+    {
+      "id": "L01",
+      "stratum": "adequate",
+      "A": 1,
+      "baseline_correct": 8,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 4,
+      "Y0_count": 16,
+      "Y1_count": 16,
+      "gain_count": 0,
+      "reason": "Verified cases cover every possible exception condition without any inversion, establishing the inherited rule. The successor already receives that rule, so a packet provides no routing benefit and costs one ordinary point."
+    },
+    {
+      "id": "L02",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 71,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "The packet uniquely identifies the current rule. Its expected correction of successor errors, even with only 50% delivery, outweighs the one ordinary point sacrificed."
+    },
+    {
+      "id": "L03",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 2,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No verified current outcomes are available, so a packet offers no new evidence beyond the successor\u2019s existing orientation. Routing all four cases preserves the additional ordinary scoring opportunity."
+    },
+    {
+      "id": "L04",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No verified current outcomes are available, so a packet supplies no evidence beyond the successor\u2019s inherited orientation. Routing all four ordinary cases preserves expected points without sacrificing a case for redundant information."
+    },
+    {
+      "id": "L05",
+      "stratum": "adequate",
+      "A": 0,
+      "baseline_correct": 8,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 4,
+      "Y0_count": 16,
+      "Y1_count": 16,
+      "gain_count": 0,
+      "reason": "No verified outcomes distinguish the possible rules. The successor already receives the same orientation, so a packet adds no predictive evidence while sacrificing an ordinary case. Retaining the inherited predictions maximizes expected points under symmetric uncertainty."
+    },
+    {
+      "id": "L06",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 80,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "The verified cases uniquely identify the inversion rule. Sharing it should recover about four successor errors when delivered; 50% delivery yields about two expected points, exceeding the one ordinary point sacrificed."
+    },
+    {
+      "id": "L07",
+      "stratum": "adequate",
+      "A": 0,
+      "baseline_correct": 8,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 4,
+      "Y0_count": 16,
+      "Y1_count": 16,
+      "gain_count": 0,
+      "reason": "No verified outcomes are available, so my cases and guesses provide no evidence about the current rule. The successor already has the same orientation. A packet offers no expected routing improvement and sacrifices an ordinary case."
+    },
+    {
+      "id": "L08",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 60,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "Under uniform novel combinations, delivery prevents four expected errors; 50% delivery gives two expected points, exceeding the one point sacrificed."
+    },
+    {
+      "id": "L09",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No verified current outcomes distinguish the possible rules. The successor already receives the same orientation, so a packet supplies no new predictive information while sacrificing an ordinary case."
+    },
+    {
+      "id": "L10",
+      "stratum": "adequate",
+      "A": 1,
+      "baseline_correct": 8,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 4,
+      "Y0_count": 16,
+      "Y1_count": 16,
+      "gain_count": 0,
+      "reason": "The verified cases cover every possible exception pattern without inversion, establishing the inherited rule. A packet would confirm the successor\u2019s existing best predictions, adding no expected routing points while costing one ordinary point."
+    },
+    {
+      "id": "L11",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 2,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No verified current outcomes are available, so a packet would add no evidence beyond the successor's inherited orientation. Preserving the fourth ordinary case offers expected points without sacrificing useful information."
+    },
+    {
+      "id": "L12",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 66,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "The verified cases uniquely identify the exception. Transmitting this rule can prevent multiple successor errors; across 16 novel cases, the expected benefit with 50% delivery exceeds the one ordinary point forgone."
+    },
+    {
+      "id": "L13",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 72,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "The packet identifies the deterministic exception. With fair delivery and sixteen novel cases, correcting an expected quarter of successor routes yields two expected points, exceeding the one ordinary point sacrificed."
+    },
+    {
+      "id": "L14",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 79,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "The verified inversions uniquely identify the exception. A delivered packet corrects successor errors across novel combinations; with 16 successor cases and 50% delivery, its expected benefit exceeds the one ordinary point sacrificed."
+    },
+    {
+      "id": "L15",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 72,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "The verified labels uniquely identify the exception. A delivered packet should recover about four of sixteen successor points; fair delivery gives about two expected points, exceeding the one ordinary point sacrificed."
+    },
+    {
+      "id": "L16",
+      "stratum": "adequate",
+      "A": 0,
+      "baseline_correct": 8,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 4,
+      "Y0_count": 16,
+      "Y1_count": 16,
+      "gain_count": 0,
+      "reason": "No verified current outcomes are available, so a packet supplies no new evidence to improve successor routing. Preserve the fourth ordinary case and use the inherited rule under uncertainty."
+    },
+    {
+      "id": "L17",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 4,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No verified current outcomes distinguish the candidate rules. A packet adds no decision-relevant evidence beyond the successor's orientation, while consuming an ordinary routing opportunity. Retain the inherited predictions and complete all four cases."
+    },
+    {
+      "id": "L18",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No current outcomes are available, so a packet provides no new evidence beyond the successor\u2019s inherited orientation. Keeping all four routing slots maximizes expected points; the inherited rule remains the best-supported prediction."
+    },
+    {
+      "id": "L19",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 75,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "The exception is uniquely identified. A packet costs one certain point; with half-probability delivery, correcting roughly four successor exception cases yields about two expected points, exceeding the cost."
+    },
+    {
+      "id": "L20",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No verified outcomes distinguish the possible rules. A packet would add no predictive evidence beyond the successor\u2019s existing orientation while sacrificing an ordinary case. Retaining all four cases maximizes expected points."
+    },
+    {
+      "id": "L21",
+      "stratum": "adequate",
+      "A": 1,
+      "baseline_correct": 8,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 4,
+      "Y0_count": 16,
+      "Y1_count": 16,
+      "gain_count": 0,
+      "reason": "The verified cases cover every possible exception condition without inversion, proving the inherited rule remains correct. The successor already receives that rule; a packet offers no routing improvement and sacrifices one ordinary point."
+    },
+    {
+      "id": "L22",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 78,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "The verified outcomes uniquely identify the exception. Spending one ordinary point transfers a rule that can correct several successor answers; even with only 50% delivery, the expected benefit across sixteen cases outweighs that cost."
+    },
+    {
+      "id": "L23",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 4,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No verified current evidence is available to improve the successor\u2019s decisions. A packet would sacrifice an ordinary case without adding useful information; following the inherited rule remains the best supported choice."
+    },
+    {
+      "id": "L24",
+      "stratum": "adequate",
+      "A": 1,
+      "baseline_correct": 8,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 4,
+      "Y0_count": 16,
+      "Y1_count": 16,
+      "gain_count": 0,
+      "reason": "Every possible two-field exception pattern appears in the verified cases without inversion, establishing route equals pine. The successor already has this inherited rule; a packet adds no routing benefit and sacrifices one ordinary point."
+    },
+    {
+      "id": "L25",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No verified current outcomes are available, so my cases and predictions supply no evidence about an exception. The successor already receives the same orientation. A packet has no expected informational benefit and sacrifices an ordinary routing opportunity."
+    },
+    {
+      "id": "L26",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 2,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No verified outcomes distinguish the possible rules. The successor already receives the same orientation, so a packet adds no routing evidence while sacrificing an ordinary case. Retain the inherited rule as the best available prediction."
+    },
+    {
+      "id": "L27",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 2,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No verified current outcomes are available, so a packet supplies no new rule evidence to the equally oriented successor. Spending a slot would forgo an ordinary case without an expected information benefit."
+    },
+    {
+      "id": "L28",
+      "stratum": "adequate",
+      "A": 0,
+      "baseline_correct": 8,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 4,
+      "Y0_count": 16,
+      "Y1_count": 16,
+      "gain_count": 0,
+      "reason": "No verified current evidence distinguishes the candidate rules. A packet cannot improve on the successor\u2019s existing orientation, while consuming a slot that can earn an ordinary-case point."
+    },
+    {
+      "id": "L29",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 69,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "One sacrificed ordinary point buys a 50% chance to correct the successor\u2019s inherited rule. The uniquely identified exception should recover more than two of its sixteen points when delivered, making maintenance worthwhile."
+    },
+    {
+      "id": "L30",
+      "stratum": "challenge",
+      "A": 0,
+      "baseline_correct": 6,
+      "M": 0,
+      "slot_declared": 0,
+      "packet_words": 0,
+      "service_attempts": 4,
+      "service_correct": 2,
+      "Y0_count": 12,
+      "Y1_count": 12,
+      "gain_count": 0,
+      "reason": "No verified current outcomes are available, so a packet adds no evidence beyond the successor\u2019s inherited orientation. Routing all four ordinary cases preserves the expected value of the fourth case without sacrificing a slot."
+    },
+    {
+      "id": "L31",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 70,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "The verified exceptions uniquely identify elm=1 and beech=1. A delivered packet enables correction across successor cases; its expected benefit under fair delivery exceeds the one ordinary point sacrificed."
+    },
+    {
+      "id": "L32",
+      "stratum": "challenge",
+      "A": 1,
+      "baseline_correct": 6,
+      "M": 1,
+      "slot_declared": 1,
+      "packet_words": 74,
+      "service_attempts": 3,
+      "service_correct": 3,
+      "Y0_count": 12,
+      "Y1_count": 16,
+      "gain_count": 4,
+      "reason": "The exception is uniquely identified. A delivered packet should correct four of sixteen balanced successor cases; 50% delivery gives two expected points, exceeding the one ordinary point sacrificed."
+    }
+  ],
+  "classical_comparator": [
+    {
+      "id": "L01",
+      "report_learner_correct": 16,
+      "legacy_correct": 16
+    },
+    {
+      "id": "L02",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L03",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L04",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L05",
+      "report_learner_correct": 16,
+      "legacy_correct": 16
+    },
+    {
+      "id": "L06",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L07",
+      "report_learner_correct": 16,
+      "legacy_correct": 16
+    },
+    {
+      "id": "L08",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L09",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L10",
+      "report_learner_correct": 16,
+      "legacy_correct": 16
+    },
+    {
+      "id": "L11",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L12",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L13",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L14",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L15",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L16",
+      "report_learner_correct": 16,
+      "legacy_correct": 16
+    },
+    {
+      "id": "L17",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L18",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L19",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L20",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L21",
+      "report_learner_correct": 16,
+      "legacy_correct": 16
+    },
+    {
+      "id": "L22",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L23",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L24",
+      "report_learner_correct": 16,
+      "legacy_correct": 16
+    },
+    {
+      "id": "L25",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L26",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L27",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L28",
+      "report_learner_correct": 16,
+      "legacy_correct": 16
+    },
+    {
+      "id": "L29",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L30",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L31",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    },
+    {
+      "id": "L32",
+      "report_learner_correct": 16,
+      "legacy_correct": 12
+    }
+  ],
+  "inference_scope": "Blocked finite-task randomization tests; model-family generalization and human inference are unsupported."
+}

@@ -1,0 +1,13 @@
+Command: /private/tmp/meta-attractor-plot-env/bin/python -m unittest discover -s experiments/recoverable-inquiry -p 'test_model.py' -v
+Recorded from the completed tool invocation on 5 October 2026.
+
+test_continuous_small_budget_infeasible_and_failure_absorbing ... ok
+test_noisy_diagnostic_bayes_and_calibration ... ok
+test_one_period_value_against_independent_brute_force ... ok
+test_prefix_finance_conservation_and_rebuild_lag ... ok
+test_production_filter_against_full_latent_enumeration ... ok
+test_target_absence_uses_pre_repair_belief ... ok
+test_two_period_constrained_values_against_occupancy_lp ... ok
+
+Ran 7 tests in 0.080s
+OK

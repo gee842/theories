@@ -1,0 +1,12 @@
+{
+  "archive_integrity": true,
+  "payload_hashes_unchanged_after_reproduction": 16,
+  "result_json_reproduced_byte_for_byte": [
+    "root-scope-checks.json",
+    "universality_barrier_examples.json"
+  ],
+  "local_links_checked": 24,
+  "math_and_fence_delimiters_balanced": true,
+  "full_Lean_build": false,
+  "scope": "Finite arithmetic and indexing reproduction; written proofs establish general statements."
+}

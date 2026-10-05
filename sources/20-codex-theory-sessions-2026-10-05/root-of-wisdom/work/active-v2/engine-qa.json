@@ -1,0 +1,15 @@
+{
+  "status": "passed before participant dispatch",
+  "oracle": "independent recursive oracle matches author across every reachable ordered query history",
+  "checks": [
+    "optimal ties",
+    "two-query complementarity",
+    "unaffordable continuation",
+    "worthwhile query may leave realized action unchanged",
+    "query fees/time and terminal realization",
+    "invalid prerequisites",
+    "missing command",
+    "duplicate command"
+  ],
+  "note": "fixture cases are not participant observations"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "full_blocked_assignments": 46656,
+  "checks": [
+    "constant outcomes p=1",
+    "perfect blocked separation two extreme assignments",
+    "perfect paired effects two extreme sign patterns",
+    "independent full assignment enumeration matches convolution"
+  ]
+}

@@ -1,0 +1,2781 @@
+{
+  "status": "all assertions passed",
+  "date": "2026-10-05",
+  "formula_checks": 306,
+  "deterministic_register_policies_checked": 176256,
+  "exact_time_coarsening_checks": 330,
+  "encoder_count": 9,
+  "decoder_count": 8,
+  "cases": [
+    {
+      "case": {
+        "name": "short_gap_preserve",
+        "eta": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gap": 1,
+        "handoff_latency": 1,
+        "fresh_latency": 1,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 5,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "1/10",
+            "decimal": 0.1
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "duration": 2,
+          "evidence_age": 3,
+          "error": {
+            "exact": "61/250",
+            "decimal": 0.244
+          },
+          "expected_criterion": {
+            "exact": "142/25",
+            "decimal": 5.68
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 2,
+          "evidence_age": 2,
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          },
+          "expected_criterion": {
+            "exact": "39/5",
+            "decimal": 7.8
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "inherit",
+      "minimum_criterion": {
+        "exact": "142/25",
+        "decimal": 5.68
+      },
+      "least_cost_by_error_tolerance": {
+        "0": null,
+        "1/10": null,
+        "1/5": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          }
+        },
+        "1/4": {
+          "route": "inherit",
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "error": {
+            "exact": "61/250",
+            "decimal": 0.244
+          }
+        },
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "long_gap_reacquire",
+        "eta": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gap": 8,
+        "handoff_latency": 1,
+        "fresh_latency": 1,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 5,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "3/2",
+            "decimal": 1.5
+          },
+          "duration": 2,
+          "evidence_age": 10,
+          "error": {
+            "exact": "8717049/19531250",
+            "decimal": 0.4463129088
+          },
+          "expected_criterion": {
+            "exact": "40727571/3906250",
+            "decimal": 10.426258176
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 2,
+          "evidence_age": 2,
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          },
+          "expected_criterion": {
+            "exact": "39/5",
+            "decimal": 7.8
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "reacquire",
+      "minimum_criterion": {
+        "exact": "39/5",
+        "decimal": 7.8
+      },
+      "least_cost_by_error_tolerance": {
+        "0": null,
+        "1/10": null,
+        "1/5": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          }
+        },
+        "1/4": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          }
+        },
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "persistent_long_gap_preserve",
+        "eta": {
+          "exact": "1/1000",
+          "decimal": 0.001
+        },
+        "gap": 8,
+        "handoff_latency": 1,
+        "fresh_latency": 1,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 5,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "3/2",
+            "decimal": 1.5
+          },
+          "duration": 2,
+          "evidence_age": 10,
+          "error": {
+            "exact": "19356402976611889988754999/1953125000000000000000000000",
+            "decimal": 0.009910478324025288
+          },
+          "expected_criterion": {
+            "exact": "165840777976611889988754999/97656250000000000000000000",
+            "decimal": 1.6982095664805057
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 2,
+          "evidence_age": 2,
+          "error": {
+            "exact": "999/500000",
+            "decimal": 0.001998
+          },
+          "expected_criterion": {
+            "exact": "105999/25000",
+            "decimal": 4.23996
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "inherit",
+      "minimum_criterion": {
+        "exact": "165840777976611889988754999/97656250000000000000000000",
+        "decimal": 1.6982095664805057
+      },
+      "least_cost_by_error_tolerance": {
+        "0": null,
+        "1/10": {
+          "route": "inherit",
+          "cost": {
+            "exact": "3/2",
+            "decimal": 1.5
+          },
+          "error": {
+            "exact": "19356402976611889988754999/1953125000000000000000000000",
+            "decimal": 0.009910478324025288
+          }
+        },
+        "1/5": {
+          "route": "inherit",
+          "cost": {
+            "exact": "3/2",
+            "decimal": 1.5
+          },
+          "error": {
+            "exact": "19356402976611889988754999/1953125000000000000000000000",
+            "decimal": 0.009910478324025288
+          }
+        },
+        "1/4": {
+          "route": "inherit",
+          "cost": {
+            "exact": "3/2",
+            "decimal": 1.5
+          },
+          "error": {
+            "exact": "19356402976611889988754999/1953125000000000000000000000",
+            "decimal": 0.009910478324025288
+          }
+        },
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "stable_but_costly_storage",
+        "eta": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "gap": 50,
+        "handoff_latency": 1,
+        "fresh_latency": 1,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 5,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "5",
+            "decimal": 5.0
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "57/10",
+            "decimal": 5.7
+          },
+          "duration": 2,
+          "evidence_age": 52,
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "expected_criterion": {
+            "exact": "57/10",
+            "decimal": 5.7
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 2,
+          "evidence_age": 2,
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "expected_criterion": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "reacquire",
+      "minimum_criterion": {
+        "exact": "21/5",
+        "decimal": 4.2
+      },
+      "least_cost_by_error_tolerance": {
+        "0": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/10": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/5": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/4": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "independent_next_bit",
+        "eta": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "gap": 1,
+        "handoff_latency": 1,
+        "fresh_latency": 1,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 5,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "1/10",
+            "decimal": 0.1
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "duration": 2,
+          "evidence_age": 3,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "54/5",
+            "decimal": 10.8
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              null
+            ],
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 2,
+          "evidence_age": 2,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "71/5",
+            "decimal": 14.2
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              null
+            ],
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "none",
+      "minimum_criterion": {
+        "exact": "10",
+        "decimal": 10.0
+      },
+      "least_cost_by_error_tolerance": {
+        "0": null,
+        "1/10": null,
+        "1/5": null,
+        "1/4": null,
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "static_unknown_bit",
+        "eta": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "gap": 1,
+        "handoff_latency": 1,
+        "fresh_latency": 1,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 5,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "1/10",
+            "decimal": 0.1
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "duration": 2,
+          "evidence_age": 3,
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "expected_criterion": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 2,
+          "evidence_age": 2,
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "expected_criterion": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "inherit",
+      "minimum_criterion": {
+        "exact": "4/5",
+        "decimal": 0.8
+      },
+      "least_cost_by_error_tolerance": {
+        "0": {
+          "route": "inherit",
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/10": {
+          "route": "inherit",
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/5": {
+          "route": "inherit",
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/4": {
+          "route": "inherit",
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "register_erased",
+        "eta": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gap": 1,
+        "handoff_latency": 1,
+        "fresh_latency": 1,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 5,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": false,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "1/10",
+            "decimal": 0.1
+          },
+          "later_payment": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "cost": {
+            "exact": "3/5",
+            "decimal": 0.6
+          },
+          "duration": 2,
+          "evidence_age": 3,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "53/5",
+            "decimal": 10.6
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              null
+            ],
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "4",
+            "decimal": 4.0
+          },
+          "cost": {
+            "exact": "4",
+            "decimal": 4.0
+          },
+          "duration": 2,
+          "evidence_age": 2,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "14",
+            "decimal": 14.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              null
+            ],
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "none",
+      "minimum_criterion": {
+        "exact": "10",
+        "decimal": 10.0
+      },
+      "least_cost_by_error_tolerance": {
+        "0": null,
+        "1/10": null,
+        "1/5": null,
+        "1/4": null,
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "raw_archive_destroyed",
+        "eta": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gap": 1,
+        "handoff_latency": 1,
+        "fresh_latency": 1,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 5,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": false,
+        "local_retention": true,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "1/10",
+            "decimal": 0.1
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "duration": 2,
+          "evidence_age": 3,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "54/5",
+            "decimal": 10.8
+          },
+          "feasible": false,
+          "payload_witness": {
+            "encoder": [
+              null,
+              null
+            ],
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 2,
+          "evidence_age": 2,
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          },
+          "expected_criterion": {
+            "exact": "39/5",
+            "decimal": 7.8
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "reacquire",
+      "minimum_criterion": {
+        "exact": "39/5",
+        "decimal": 7.8
+      },
+      "least_cost_by_error_tolerance": {
+        "0": null,
+        "1/10": null,
+        "1/5": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          }
+        },
+        "1/4": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          }
+        },
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "late_financing",
+        "eta": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gap": 1,
+        "handoff_latency": 1,
+        "fresh_latency": 1,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "handoff_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "deadline": 5,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "1/10",
+            "decimal": 0.1
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "duration": 2,
+          "evidence_age": 3,
+          "error": {
+            "exact": "61/250",
+            "decimal": 0.244
+          },
+          "expected_criterion": {
+            "exact": "142/25",
+            "decimal": 5.68
+          },
+          "feasible": false,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 2,
+          "evidence_age": 2,
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          },
+          "expected_criterion": {
+            "exact": "39/5",
+            "decimal": 7.8
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "reacquire",
+      "minimum_criterion": {
+        "exact": "39/5",
+        "decimal": 7.8
+      },
+      "least_cost_by_error_tolerance": {
+        "0": null,
+        "1/10": null,
+        "1/5": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          }
+        },
+        "1/4": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          }
+        },
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "existing_record_open",
+        "eta": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gap": 1,
+        "handoff_latency": 1,
+        "fresh_latency": 3,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 2,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": true
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "duration": 2,
+          "evidence_age": 3,
+          "error": {
+            "exact": "61/250",
+            "decimal": 0.244
+          },
+          "expected_criterion": {
+            "exact": "279/50",
+            "decimal": 5.58
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 4,
+          "evidence_age": 4,
+          "error": {
+            "exact": "369/1250",
+            "decimal": 0.2952
+          },
+          "expected_criterion": {
+            "exact": "1263/125",
+            "decimal": 10.104
+          },
+          "feasible": false,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "inherit",
+      "minimum_criterion": {
+        "exact": "279/50",
+        "decimal": 5.58
+      },
+      "least_cost_by_error_tolerance": {
+        "0": null,
+        "1/10": null,
+        "1/5": null,
+        "1/4": {
+          "route": "inherit",
+          "cost": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "error": {
+            "exact": "61/250",
+            "decimal": 0.244
+          }
+        },
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "existing_record_blocked",
+        "eta": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gap": 1,
+        "handoff_latency": 1,
+        "fresh_latency": 3,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 2,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": false,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": true
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "duration": 2,
+          "evidence_age": 3,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "107/10",
+            "decimal": 10.7
+          },
+          "feasible": false,
+          "payload_witness": {
+            "encoder": [
+              null,
+              null
+            ],
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 4,
+          "evidence_age": 4,
+          "error": {
+            "exact": "369/1250",
+            "decimal": 0.2952
+          },
+          "expected_criterion": {
+            "exact": "1263/125",
+            "decimal": 10.104
+          },
+          "feasible": false,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "none",
+      "minimum_criterion": {
+        "exact": "10",
+        "decimal": 10.0
+      },
+      "least_cost_by_error_tolerance": {
+        "0": null,
+        "1/10": null,
+        "1/5": null,
+        "1/4": null,
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "fresh_zero_delay",
+        "eta": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "gap": 1,
+        "handoff_latency": 1,
+        "fresh_latency": 0,
+        "action_delay": 0,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 5,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "1/10",
+            "decimal": 0.1
+          },
+          "later_payment": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "cost": {
+            "exact": "3/5",
+            "decimal": 0.6
+          },
+          "duration": 1,
+          "evidence_age": 2,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "53/5",
+            "decimal": 10.6
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              null
+            ],
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "4",
+            "decimal": 4.0
+          },
+          "cost": {
+            "exact": "4",
+            "decimal": 4.0
+          },
+          "duration": 0,
+          "evidence_age": 0,
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "expected_criterion": {
+            "exact": "4",
+            "decimal": 4.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "reacquire",
+      "minimum_criterion": {
+        "exact": "4",
+        "decimal": 4.0
+      },
+      "least_cost_by_error_tolerance": {
+        "0": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "4",
+            "decimal": 4.0
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/10": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "4",
+            "decimal": 4.0
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/5": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "4",
+            "decimal": 4.0
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/4": {
+          "route": "reacquire",
+          "cost": {
+            "exact": "4",
+            "decimal": 4.0
+          },
+          "error": {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        },
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "tight_budget",
+        "eta": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gap": 1,
+        "handoff_latency": 1,
+        "fresh_latency": 1,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "1",
+          "decimal": 1.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 5,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "1/10",
+            "decimal": 0.1
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "duration": 2,
+          "evidence_age": 3,
+          "error": {
+            "exact": "61/250",
+            "decimal": 0.244
+          },
+          "expected_criterion": {
+            "exact": "142/25",
+            "decimal": 5.68
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 2,
+          "evidence_age": 2,
+          "error": {
+            "exact": "9/50",
+            "decimal": 0.18
+          },
+          "expected_criterion": {
+            "exact": "39/5",
+            "decimal": 7.8
+          },
+          "feasible": false,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "inherit",
+      "minimum_criterion": {
+        "exact": "142/25",
+        "decimal": 5.68
+      },
+      "least_cost_by_error_tolerance": {
+        "0": null,
+        "1/10": null,
+        "1/5": null,
+        "1/4": {
+          "route": "inherit",
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "error": {
+            "exact": "61/250",
+            "decimal": 0.244
+          }
+        },
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    },
+    {
+      "case": {
+        "name": "tight_quality_deadline",
+        "eta": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "gap": 1,
+        "handoff_latency": 1,
+        "fresh_latency": 3,
+        "action_delay": 1,
+        "storage_per_slot": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "handoff_fee": {
+          "exact": "1/2",
+          "decimal": 0.5
+        },
+        "fresh_fee": {
+          "exact": "4",
+          "decimal": 4.0
+        },
+        "register_per_slot": {
+          "exact": "1/5",
+          "decimal": 0.2
+        },
+        "early_budget": {
+          "exact": "10",
+          "decimal": 10.0
+        },
+        "handoff_budget": {
+          "exact": "0",
+          "decimal": 0.0
+        },
+        "deadline": 2,
+        "error_weight": {
+          "exact": "20",
+          "decimal": 20.0
+        },
+        "handoff_access": true,
+        "archive_alive": true,
+        "local_retention": true,
+        "existing_archive": false
+      },
+      "routes": [
+        {
+          "route": "none",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "duration": 0,
+          "evidence_age": null,
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          },
+          "expected_criterion": {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          "feasible": true,
+          "payload_witness": {
+            "decoder": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "route": "inherit",
+          "prepayment": {
+            "exact": "1/10",
+            "decimal": 0.1
+          },
+          "later_payment": {
+            "exact": "7/10",
+            "decimal": 0.7
+          },
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "duration": 2,
+          "evidence_age": 3,
+          "error": {
+            "exact": "61/250",
+            "decimal": 0.244
+          },
+          "expected_criterion": {
+            "exact": "142/25",
+            "decimal": 5.68
+          },
+          "feasible": true,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "route": "reacquire",
+          "prepayment": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "later_payment": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "cost": {
+            "exact": "21/5",
+            "decimal": 4.2
+          },
+          "duration": 4,
+          "evidence_age": 4,
+          "error": {
+            "exact": "369/1250",
+            "decimal": 0.2952
+          },
+          "expected_criterion": {
+            "exact": "1263/125",
+            "decimal": 10.104
+          },
+          "feasible": false,
+          "payload_witness": {
+            "encoder": [
+              null,
+              0
+            ],
+            "decoder": [
+              0,
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "criterion_choice": "inherit",
+      "minimum_criterion": {
+        "exact": "142/25",
+        "decimal": 5.68
+      },
+      "least_cost_by_error_tolerance": {
+        "0": null,
+        "1/10": null,
+        "1/5": null,
+        "1/4": {
+          "route": "inherit",
+          "cost": {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          "error": {
+            "exact": "61/250",
+            "decimal": 0.244
+          }
+        },
+        "1/2": {
+          "route": "none",
+          "cost": {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          "error": {
+            "exact": "1/2",
+            "decimal": 0.5
+          }
+        }
+      }
+    }
+  ],
+  "frontier_points": 300,
+  "erased_register_randomized_maximin_success": {
+    "exact": "1/2",
+    "decimal": 0.5
+  },
+  "side_channel_control": {
+    "named_register": null,
+    "balance_after_encoding_0": 1,
+    "balance_after_encoding_1": 0,
+    "decoding": "bit = 1 - balance"
+  },
+  "archive_erased_after_acquisition_control": [
+    {
+      "source_bit": 0,
+      "archive_after_copy": null,
+      "paid_successor_register": 0,
+      "action": 0
+    },
+    {
+      "source_bit": 1,
+      "archive_after_copy": null,
+      "paid_successor_register": 1,
+      "action": 1
+    }
+  ],
+  "limits": [
+    "Restricted paid architecture chosen before hidden payload",
+    "Only physical register and declared public constants reach final actuator",
+    "Clock, program, and phase are free but payload-independent",
+    "No stochastic probabilities imply a sure-safety guarantee",
+    "Repeated use assumes a reliable external allotment each epoch"
+  ]
+}

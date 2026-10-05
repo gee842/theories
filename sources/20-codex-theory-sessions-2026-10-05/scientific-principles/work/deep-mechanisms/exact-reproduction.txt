@@ -1,0 +1,7 @@
+interaction {'exact': '2069/100', 'decimal': 20.69}
+single {'exact': '-1/4', 'decimal': -0.25}
+constant {'exact': '-3/4', 'decimal': -0.75}
+null {'exact': '-38401/12800', 'decimal': -3.000078125}
+noisy_interaction {'exact': '-2828486789/838860800', 'decimal': -3.371819006204605}
+mixed {'exact': '226431/25600', 'decimal': 8.8449609375}
+hurdle {'study_expense': {'exact': '207432/25', 'decimal': 8297.28}, 'future_episodes_at_exact_gain': {'exact': '829728/2069', 'decimal': 401.0285161913968}, 'whole_future_episodes_at_exact_gain': 402, 'future_episodes_at_confidence_lower_bound': 904.950998738453, 'whole_future_episodes_at_confidence_lower_bound': 905, 'interpretation': 'Conservative future value required to match every priced study payment, ignoring service value produced during study. Not total net ROI or proof that objective gains become spendable cash. Assumes unchanged task law, costs, horizon, and fixed rule.'}

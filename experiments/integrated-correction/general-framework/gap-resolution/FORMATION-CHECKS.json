@@ -1,0 +1,283 @@
+{
+  "status": "exact rational mathematical checks; no empirical validation",
+  "checks_passed": 14,
+  "checks": [
+    "canonical burden boundary",
+    "revised .45 ceiling feasible",
+    "revised .40 ceiling infeasible",
+    "correct zero-action group harm",
+    "thinned response reaches harm ceiling",
+    "feasibility and blind obstruction on exact parameter grid",
+    "aggregate observation equivalence in every world/action",
+    "true and irrelevant-feature errors independent",
+    "empty inquiry has chance identification",
+    "single record tie handling",
+    "uninformative response remains chance",
+    "noiseless eleven-case identification",
+    "joint success bounded by discovery and trigger",
+    "blocking either gate removes event success"
+  ],
+  "noise": {
+    "exact": "1/10",
+    "decimal": 0.1
+  },
+  "harm_ceiling": {
+    "exact": "1/5",
+    "decimal": 0.2
+  },
+  "minimum_action_one_rate_in_need_class": {
+    "exact": "7/8",
+    "decimal": 0.875
+  },
+  "minimum_total_burden": {
+    "exact": "7/16",
+    "decimal": 0.4375
+  },
+  "correct_nomination_probability": {
+    "1": {
+      "exact": "9/20",
+      "decimal": 0.45
+    },
+    "3": {
+      "exact": "729/1000",
+      "decimal": 0.729
+    },
+    "5": {
+      "exact": "340443/400000",
+      "decimal": 0.8511075
+    },
+    "11": {
+      "exact": "12422484924777/12800000000000",
+      "decimal": 0.9705066347482031
+    },
+    "21": {
+      "exact": "130754396486394382228838469/131072000000000000000000000",
+      "decimal": 0.9975768774901915
+    },
+    "41": {
+      "exact": "549744432404992151450093737240971463112646022508613/549755813888000000000000000000000000000000000000000",
+      "decimal": 0.999979297203012
+    }
+  },
+  "four_world_blind_outcome_tables": [
+    {
+      "j": 1,
+      "theta": 0,
+      "action": 0,
+      "group_harms": [
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        }
+      ]
+    },
+    {
+      "j": 1,
+      "theta": 0,
+      "action": 1,
+      "group_harms": [
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        }
+      ]
+    },
+    {
+      "j": 1,
+      "theta": 1,
+      "action": 0,
+      "group_harms": [
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        }
+      ]
+    },
+    {
+      "j": 1,
+      "theta": 1,
+      "action": 1,
+      "group_harms": [
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        }
+      ]
+    },
+    {
+      "j": 2,
+      "theta": 0,
+      "action": 0,
+      "group_harms": [
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        }
+      ]
+    },
+    {
+      "j": 2,
+      "theta": 0,
+      "action": 1,
+      "group_harms": [
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        }
+      ]
+    },
+    {
+      "j": 2,
+      "theta": 1,
+      "action": 0,
+      "group_harms": [
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        }
+      ]
+    },
+    {
+      "j": 2,
+      "theta": 1,
+      "action": 1,
+      "group_harms": [
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        {
+          "exact": "9/10",
+          "decimal": 0.9
+        }
+      ]
+    }
+  ],
+  "finite_lineage_example": {
+    "ordinary_opportunities": 4,
+    "inquiry_cases": 11,
+    "handoffs": 3,
+    "ticket_admission_per_harm": {
+      "exact": "1/2",
+      "decimal": 0.5
+    },
+    "frame_admission": {
+      "exact": "4/5",
+      "decimal": 0.8
+    },
+    "execution_enablement": {
+      "exact": "3/4",
+      "decimal": 0.75
+    },
+    "ratification": {
+      "exact": "1",
+      "decimal": 1.0
+    },
+    "joint_package_retention_each_handoff": {
+      "exact": "9/10",
+      "decimal": 0.9
+    },
+    "trigger_probability": {
+      "exact": "175/256",
+      "decimal": 0.68359375
+    },
+    "joint_success": {
+      "exact": "190175821713411093/655360000000000000",
+      "decimal": 0.2901852748312547
+    },
+    "inquiry_and_handoff_slots": 14,
+    "note": "conditional gate inputs are stipulated; failed package not repaired within deadline"
+  }
+}

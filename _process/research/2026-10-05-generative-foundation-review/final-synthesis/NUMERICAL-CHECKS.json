@@ -1,0 +1,28 @@
+{
+  "scope": "Constructed illustrative integration, not proof or empirical validation; tiny endpoint magnitudes are not certified precision.",
+  "horizon": 200,
+  "rtol": 1e-10,
+  "atol": 1e-12,
+  "max_step": 0.1,
+  "sampled_times": 20001,
+  "results": {
+    "0.5": {
+      "endpoint": [
+        2.0000000000000036,
+        5.645751311064583,
+        0.9999999999999987
+      ],
+      "sampled_support_peak": 2.0111832128033047,
+      "integration_success": true
+    },
+    "1.5": {
+      "endpoint": [
+        3.3200577247708947e-77,
+        2.0224931221558727e-80,
+        0.0014666456097940414
+      ],
+      "sampled_support_peak": 4.633363376588952,
+      "integration_success": true
+    }
+  }
+}

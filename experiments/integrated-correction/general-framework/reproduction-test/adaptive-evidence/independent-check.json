@@ -1,0 +1,743 @@
+{
+  "method": "independent dense per-case recursion and exact rational marginal calculations",
+  "checks_passed": 147,
+  "max_difference": 4.873879078104437e-14,
+  "five_case_accuracy_exact": "340443/400000",
+  "checks": [
+    {
+      "check": "exact five-case ML accuracy",
+      "actual": 0.8511075,
+      "expected": 0.8511075000000009
+    },
+    {
+      "check": "exact independent-batch lifetime error",
+      "actual": 0.8555182442159688,
+      "expected": 0.8555182442159699
+    },
+    {
+      "check": "exact sixty-case stationary ML accuracy",
+      "actual": 0.9999997501507426,
+      "expected": 0.9999997501507439
+    },
+    {
+      "check": "stationary n=5 mass",
+      "actual": 1.0,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=5 certificate correct",
+      "actual": 0.3690562500000001,
+      "expected": 0.36905625000000003
+    },
+    {
+      "check": "stationary n=5 certificate undeclared",
+      "actual": 0.6258750000000001,
+      "expected": 0.6258750000000002
+    },
+    {
+      "check": "stationary n=5 certificate ever false",
+      "actual": 0.005068749999999844,
+      "expected": 0.00506875
+    },
+    {
+      "check": "stationary n=5 certificate fresh false",
+      "actual": 0.00506875,
+      "expected": 0.00506875
+    },
+    {
+      "check": "stationary n=5 ML marginal accuracy",
+      "actual": 0.8511075000000002,
+      "expected": 0.8511075000000001
+    },
+    {
+      "check": "stationary n=10 mass",
+      "actual": 1.0000000000000004,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=10 certificate correct",
+      "actual": 0.8393683758380862,
+      "expected": 0.8393683758380859
+    },
+    {
+      "check": "stationary n=10 certificate undeclared",
+      "actual": 0.1534957599414063,
+      "expected": 0.15349575994140618
+    },
+    {
+      "check": "stationary n=10 certificate ever false",
+      "actual": 0.007696368400194942,
+      "expected": 0.007696368400195317
+    },
+    {
+      "check": "stationary n=10 certificate fresh false",
+      "actual": 0.003361273624804689,
+      "expected": 0.0033612736248046947
+    },
+    {
+      "check": "stationary n=10 ML marginal accuracy",
+      "actual": 0.9617728586203129,
+      "expected": 0.9617728586203119
+    },
+    {
+      "check": "stationary n=15 mass",
+      "actual": 1.0000000000000004,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=15 certificate correct",
+      "actual": 0.9609692756072147,
+      "expected": 0.9609692756072148
+    },
+    {
+      "check": "stationary n=15 certificate undeclared",
+      "actual": 0.03406098753522873,
+      "expected": 0.03406098753522874
+    },
+    {
+      "check": "stationary n=15 certificate ever false",
+      "actual": 0.00825422020590516,
+      "expected": 0.008254220205905532
+    },
+    {
+      "check": "stationary n=15 certificate fresh false",
+      "actual": 0.0011492369915088564,
+      "expected": 0.0011492369915088617
+    },
+    {
+      "check": "stationary n=15 ML marginal accuracy",
+      "actual": 0.9893385484307928,
+      "expected": 0.9893385484307928
+    },
+    {
+      "check": "stationary n=20 mass",
+      "actual": 1.0000000000000007,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=20 certificate correct",
+      "actual": 0.9901762635990011,
+      "expected": 0.9901762635990007
+    },
+    {
+      "check": "stationary n=20 certificate undeclared",
+      "actual": 0.007399710941587742,
+      "expected": 0.007399710941587745
+    },
+    {
+      "check": "stationary n=20 certificate ever false",
+      "actual": 0.00838518898475249,
+      "expected": 0.008385188984753073
+    },
+    {
+      "check": "stationary n=20 certificate fresh false",
+      "actual": 0.0003712239923089229,
+      "expected": 0.0003712239923089214
+    },
+    {
+      "check": "stationary n=20 ML marginal accuracy",
+      "actual": 0.9969066220867536,
+      "expected": 0.9969066220867543
+    },
+    {
+      "check": "stationary n=25 mass",
+      "actual": 1.0000000000000009,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=25 certificate correct",
+      "actual": 0.9974199448742124,
+      "expected": 0.9974199448742105
+    },
+    {
+      "check": "stationary n=25 certificate undeclared",
+      "actual": 0.001601859868560899,
+      "expected": 0.001601859868560899
+    },
+    {
+      "check": "stationary n=25 certificate ever false",
+      "actual": 0.008417593594487682,
+      "expected": 0.008417593594488407
+    },
+    {
+      "check": "stationary n=25 certificate fresh false",
+      "actual": 0.00011736833370126702,
+      "expected": 0.00011736833370126575
+    },
+    {
+      "check": "stationary n=25 ML marginal accuracy",
+      "actual": 0.9990804053308965,
+      "expected": 0.9990804053308963
+    },
+    {
+      "check": "stationary n=30 mass",
+      "actual": 1.0000000000000007,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=30 certificate correct",
+      "actual": 0.9992966491794933,
+      "expected": 0.9992966491794909
+    },
+    {
+      "check": "stationary n=30 certificate undeclared",
+      "actual": 0.0003463834023490154,
+      "expected": 0.00034638340234901535
+    },
+    {
+      "check": "stationary n=30 certificate ever false",
+      "actual": 0.008425996131830926,
+      "expected": 0.008425996131831967
+    },
+    {
+      "check": "stationary n=30 certificate fresh false",
+      "actual": 3.6979545885215936e-05,
+      "expected": 3.697954588521505e-05
+    },
+    {
+      "check": "stationary n=30 ML marginal accuracy",
+      "actual": 0.9997221780778837,
+      "expected": 0.9997221780778833
+    },
+    {
+      "check": "stationary n=35 mass",
+      "actual": 1.0000000000000009,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=35 certificate correct",
+      "actual": 0.9998019945025237,
+      "expected": 0.9998019945025236
+    },
+    {
+      "check": "stationary n=35 certificate undeclared",
+      "actual": 7.488603367679268e-05,
+      "expected": 7.488603367679267e-05
+    },
+    {
+      "check": "stationary n=35 certificate ever false",
+      "actual": 0.008428244132829388,
+      "expected": 0.008428244132830356
+    },
+    {
+      "check": "stationary n=35 certificate fresh false",
+      "actual": 1.1649248185045674e-05,
+      "expected": 1.1649248185045528e-05
+    },
+    {
+      "check": "stationary n=35 ML marginal accuracy",
+      "actual": 0.9999150929777294,
+      "expected": 0.9999150929777286
+    },
+    {
+      "check": "stationary n=40 mass",
+      "actual": 1.000000000000001,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=40 certificate correct",
+      "actual": 0.9999427302584165,
+      "expected": 0.9999427302584166
+    },
+    {
+      "check": "stationary n=40 certificate undeclared",
+      "actual": 1.6188847738921167e-05,
+      "expected": 1.6188847738921153e-05
+    },
+    {
+      "check": "stationary n=40 certificate ever false",
+      "actual": 0.008428860259588666,
+      "expected": 0.008428860259589938
+    },
+    {
+      "check": "stationary n=40 certificate fresh false",
+      "actual": 3.6748077797351195e-06,
+      "expected": 3.6748077797350835e-06
+    },
+    {
+      "check": "stationary n=40 ML marginal accuracy",
+      "actual": 0.9999738259007421,
+      "expected": 0.9999738259007419
+    },
+    {
+      "check": "stationary n=45 mass",
+      "actual": 1.0000000000000013,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=45 certificate correct",
+      "actual": 0.9999830638524695,
+      "expected": 0.9999830638524675
+    },
+    {
+      "check": "stationary n=45 certificate undeclared",
+      "actual": 3.499658282136819e-06,
+      "expected": 3.4996582821368142e-06
+    },
+    {
+      "check": "stationary n=45 certificate ever false",
+      "actual": 0.008429032342670117,
+      "expected": 0.008429032342671328
+    },
+    {
+      "check": "stationary n=45 certificate fresh false",
+      "actual": 1.161314400427485e-06,
+      "expected": 1.1613144004274528e-06
+    },
+    {
+      "check": "stationary n=45 ML marginal accuracy",
+      "actual": 0.9999918769814036,
+      "expected": 0.9999918769814027
+    },
+    {
+      "check": "stationary n=50 mass",
+      "actual": 1.0000000000000013,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=50 certificate correct",
+      "actual": 0.9999949016580916,
+      "expected": 0.9999949016580897
+    },
+    {
+      "check": "stationary n=50 certificate undeclared",
+      "actual": 7.565429363531075e-07,
+      "expected": 7.565429363531072e-07
+    },
+    {
+      "check": "stationary n=50 certificate ever false",
+      "actual": 0.008429081145441608,
+      "expected": 0.008429081145442965
+    },
+    {
+      "check": "stationary n=50 certificate fresh false",
+      "actual": 3.676941448338953e-07,
+      "expected": 3.676941448338926e-07
+    },
+    {
+      "check": "stationary n=50 ML marginal accuracy",
+      "actual": 0.9999974654659188,
+      "expected": 0.9999974654659176
+    },
+    {
+      "check": "stationary n=55 mass",
+      "actual": 1.0000000000000016,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=55 certificate correct",
+      "actual": 0.9999984436138334,
+      "expected": 0.9999984436138336
+    },
+    {
+      "check": "stationary n=55 certificate undeclared",
+      "actual": 1.6354647458528756e-07,
+      "expected": 1.6354647458528743e-07
+    },
+    {
+      "check": "stationary n=55 certificate ever false",
+      "actual": 0.008429095161678224,
+      "expected": 0.008429095161679652
+    },
+    {
+      "check": "stationary n=55 certificate fresh false",
+      "actual": 1.1663314598387938e-07,
+      "expected": 1.1663314598387704e-07
+    },
+    {
+      "check": "stationary n=55 ML marginal accuracy",
+      "actual": 0.9999992056887221,
+      "expected": 0.9999992056887227
+    },
+    {
+      "check": "stationary n=60 mass",
+      "actual": 1.0000000000000018,
+      "expected": 1.0
+    },
+    {
+      "check": "stationary n=60 certificate correct",
+      "actual": 0.9999995196872006,
+      "expected": 0.999999519687199
+    },
+    {
+      "check": "stationary n=60 certificate undeclared",
+      "actual": 3.535482433976988e-08,
+      "expected": 3.535482433976986e-08
+    },
+    {
+      "check": "stationary n=60 certificate ever false",
+      "actual": 0.008429099230067516,
+      "expected": 0.008429099230069069
+    },
+    {
+      "check": "stationary n=60 certificate fresh false",
+      "actual": 3.7060285737030834e-08,
+      "expected": 3.706028573703068e-08
+    },
+    {
+      "check": "stationary n=60 ML marginal accuracy",
+      "actual": 0.9999997501507443,
+      "expected": 0.9999997501507439
+    },
+    {
+      "check": "changed n=5 mass",
+      "actual": 1.0,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=5 certificate correct",
+      "actual": 0.3690562500000001,
+      "expected": 0.36905625000000003
+    },
+    {
+      "check": "changed n=5 certificate undeclared",
+      "actual": 0.6258750000000001,
+      "expected": 0.6258750000000002
+    },
+    {
+      "check": "changed n=5 certificate ever false",
+      "actual": 0.005068749999999844,
+      "expected": 0.00506875
+    },
+    {
+      "check": "changed n=5 certificate fresh false",
+      "actual": 0.00506875,
+      "expected": 0.00506875
+    },
+    {
+      "check": "changed n=5 ML marginal accuracy",
+      "actual": 0.8511075000000002,
+      "expected": 0.8511075000000001
+    },
+    {
+      "check": "changed n=10 mass",
+      "actual": 1.0000000000000004,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=10 certificate correct",
+      "actual": 0.8393683758380862,
+      "expected": 0.8393683758380859
+    },
+    {
+      "check": "changed n=10 certificate undeclared",
+      "actual": 0.1534957599414063,
+      "expected": 0.15349575994140618
+    },
+    {
+      "check": "changed n=10 certificate ever false",
+      "actual": 0.007696368400194942,
+      "expected": 0.007696368400195317
+    },
+    {
+      "check": "changed n=10 certificate fresh false",
+      "actual": 0.003361273624804689,
+      "expected": 0.0033612736248046947
+    },
+    {
+      "check": "changed n=10 ML marginal accuracy",
+      "actual": 0.9617728586203129,
+      "expected": 0.9617728586203119
+    },
+    {
+      "check": "changed n=15 mass",
+      "actual": 1.0000000000000004,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=15 certificate correct",
+      "actual": 0.9609692756072147,
+      "expected": 0.9609692756072148
+    },
+    {
+      "check": "changed n=15 certificate undeclared",
+      "actual": 0.03406098753522873,
+      "expected": 0.03406098753522874
+    },
+    {
+      "check": "changed n=15 certificate ever false",
+      "actual": 0.00825422020590516,
+      "expected": 0.008254220205905532
+    },
+    {
+      "check": "changed n=15 certificate fresh false",
+      "actual": 0.0011492369915088564,
+      "expected": 0.0011492369915088617
+    },
+    {
+      "check": "changed n=15 ML marginal accuracy",
+      "actual": 0.9893385484307928,
+      "expected": 0.9893385484307928
+    },
+    {
+      "check": "changed n=20 mass",
+      "actual": 1.0000000000000007,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=20 certificate correct",
+      "actual": 0.9901762635990011,
+      "expected": 0.9901762635990007
+    },
+    {
+      "check": "changed n=20 certificate undeclared",
+      "actual": 0.007399710941587742,
+      "expected": 0.007399710941587745
+    },
+    {
+      "check": "changed n=20 certificate ever false",
+      "actual": 0.00838518898475249,
+      "expected": 0.008385188984753073
+    },
+    {
+      "check": "changed n=20 certificate fresh false",
+      "actual": 0.0003712239923089229,
+      "expected": 0.0003712239923089214
+    },
+    {
+      "check": "changed n=20 ML marginal accuracy",
+      "actual": 0.9969066220867536,
+      "expected": 0.9969066220867543
+    },
+    {
+      "check": "changed n=25 mass",
+      "actual": 1.0000000000000009,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=25 certificate correct",
+      "actual": 0.9974199448742124,
+      "expected": 0.9974199448742105
+    },
+    {
+      "check": "changed n=25 certificate undeclared",
+      "actual": 0.001601859868560899,
+      "expected": 0.001601859868560899
+    },
+    {
+      "check": "changed n=25 certificate ever false",
+      "actual": 0.008417593594487682,
+      "expected": 0.008417593594488407
+    },
+    {
+      "check": "changed n=25 certificate fresh false",
+      "actual": 0.00011736833370126702,
+      "expected": 0.00011736833370126575
+    },
+    {
+      "check": "changed n=25 ML marginal accuracy",
+      "actual": 0.9990804053308965,
+      "expected": 0.9990804053308963
+    },
+    {
+      "check": "changed n=30 mass",
+      "actual": 1.0000000000000007,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=30 certificate correct",
+      "actual": 0.9992966491794933,
+      "expected": 0.9992966491794909
+    },
+    {
+      "check": "changed n=30 certificate undeclared",
+      "actual": 0.0003463834023490154,
+      "expected": 0.00034638340234901535
+    },
+    {
+      "check": "changed n=30 certificate ever false",
+      "actual": 0.008425996131830926,
+      "expected": 0.008425996131831967
+    },
+    {
+      "check": "changed n=30 certificate fresh false",
+      "actual": 3.6979545885215936e-05,
+      "expected": 3.697954588521505e-05
+    },
+    {
+      "check": "changed n=30 ML marginal accuracy",
+      "actual": 0.9997221780778837,
+      "expected": 0.9997221780778833
+    },
+    {
+      "check": "changed n=35 mass",
+      "actual": 1.0000000000000009,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=35 certificate correct",
+      "actual": 1.2003987871196144e-07,
+      "expected": 1.200398787119612e-07
+    },
+    {
+      "check": "changed n=35 certificate undeclared",
+      "actual": 0.00017464674936357717,
+      "expected": 0.00017464674936357709
+    },
+    {
+      "check": "changed n=35 certificate ever false",
+      "actual": 0.987539954695521,
+      "expected": 0.987539954695518
+    },
+    {
+      "check": "changed n=35 certificate fresh false",
+      "actual": 0.9864185475043912,
+      "expected": 0.9864185475043779
+    },
+    {
+      "check": "changed n=35 ML marginal accuracy",
+      "actual": 2.462846627292198e-07,
+      "expected": 2.462846627292194e-07
+    },
+    {
+      "check": "changed n=40 mass",
+      "actual": 1.0000000000000009,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=40 certificate correct",
+      "actual": 1.0824782192419373e-06,
+      "expected": 1.0824782192419364e-06
+    },
+    {
+      "check": "changed n=40 certificate undeclared",
+      "actual": 4.6851615758481526e-05,
+      "expected": 4.6851615758481465e-05
+    },
+    {
+      "check": "changed n=40 certificate ever false",
+      "actual": 0.993972556371281,
+      "expected": 0.9939725563712767
+    },
+    {
+      "check": "changed n=40 certificate fresh false",
+      "actual": 0.9317652635543101,
+      "expected": 0.9317652635542873
+    },
+    {
+      "check": "changed n=40 ML marginal accuracy",
+      "actual": 1.5722589948802977e-05,
+      "expected": 1.5722589948802944e-05
+    },
+    {
+      "check": "changed n=45 mass",
+      "actual": 1.0000000000000009,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=45 certificate correct",
+      "actual": 3.614946479217664e-05,
+      "expected": 3.614946479217656e-05
+    },
+    {
+      "check": "changed n=45 certificate undeclared",
+      "actual": 1.2166557406332842e-05,
+      "expected": 1.2166557406332849e-05
+    },
+    {
+      "check": "changed n=45 certificate ever false",
+      "actual": 0.9983052450969923,
+      "expected": 0.9983052450969924
+    },
+    {
+      "check": "changed n=45 certificate fresh false",
+      "actual": 0.8076517572304577,
+      "expected": 0.8076517572304154
+    },
+    {
+      "check": "changed n=45 ML marginal accuracy",
+      "actual": 0.0004479824935664598,
+      "expected": 0.00044798249356645944
+    },
+    {
+      "check": "changed n=50 mass",
+      "actual": 1.0000000000000009,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=50 certificate correct",
+      "actual": 0.0011105621927794968,
+      "expected": 0.0011105621927794925
+    },
+    {
+      "check": "changed n=50 certificate undeclared",
+      "actual": 3.819424263212396e-06,
+      "expected": 3.819424263212387e-06
+    },
+    {
+      "check": "changed n=50 certificate ever false",
+      "actual": 0.9993976554489119,
+      "expected": 0.9993976554489103
+    },
+    {
+      "check": "changed n=50 certificate fresh false",
+      "actual": 0.6568435377574282,
+      "expected": 0.6568435377573818
+    },
+    {
+      "check": "changed n=50 ML marginal accuracy",
+      "actual": 0.006524535890069265,
+      "expected": 0.006524535890069261
+    },
+    {
+      "check": "changed n=55 mass",
+      "actual": 1.000000000000001,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=55 certificate correct",
+      "actual": 0.011159129029206785,
+      "expected": 0.011159129029206764
+    },
+    {
+      "check": "changed n=55 certificate undeclared",
+      "actual": 1.3857941364353608e-06,
+      "expected": 1.3857941364353595e-06
+    },
+    {
+      "check": "changed n=55 certificate ever false",
+      "actual": 0.9995962132134212,
+      "expected": 0.9995962132134181
+    },
+    {
+      "check": "changed n=55 certificate fresh false",
+      "actual": 0.5490963929487632,
+      "expected": 0.5490963929487145
+    },
+    {
+      "check": "changed n=55 ML marginal accuracy",
+      "actual": 0.046181895777615244,
+      "expected": 0.04618189577761521
+    },
+    {
+      "check": "changed n=60 mass",
+      "actual": 1.0000000000000009,
+      "expected": 1.0
+    },
+    {
+      "check": "changed n=60 certificate correct",
+      "actual": 0.07064360346952013,
+      "expected": 0.07064360346952003
+    },
+    {
+      "check": "changed n=60 certificate undeclared",
+      "actual": 4.70713180689161e-07,
+      "expected": 4.707131806891608e-07
+    },
+    {
+      "check": "changed n=60 certificate ever false",
+      "actual": 0.999626933740089,
+      "expected": 0.9996269337400838
+    },
+    {
+      "check": "changed n=60 certificate fresh false",
+      "actual": 0.49359309655386324,
+      "expected": 0.49359309655384137
+    },
+    {
+      "check": "changed n=60 ML marginal accuracy",
+      "actual": 0.17143364108893833,
+      "expected": 0.17143364108893835
+    }
+  ]
+}

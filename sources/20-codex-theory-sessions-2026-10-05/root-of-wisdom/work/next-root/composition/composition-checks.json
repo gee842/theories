@@ -1,0 +1,79 @@
+{
+  "status": "all assertions passed",
+  "scope": "Exact rational constructed checks, not physical data or a proof of monism.",
+  "cycle_consistency": [
+    {
+      "vertices": 2,
+      "signed_graphs": 3,
+      "realizable": 3,
+      "nonrealizable": 0
+    },
+    {
+      "vertices": 3,
+      "signed_graphs": 27,
+      "realizable": 23,
+      "nonrealizable": 4
+    },
+    {
+      "vertices": 4,
+      "signed_graphs": 729,
+      "realizable": 393,
+      "nonrealizable": 336
+    },
+    {
+      "vertices": 5,
+      "signed_graphs": 59049,
+      "realizable": 13729,
+      "nonrealizable": 45320
+    }
+  ],
+  "parity_family": [
+    {
+      "variables": 2,
+      "distributions": 5,
+      "proper_subset_marginals_checked": 15
+    },
+    {
+      "variables": 3,
+      "distributions": 5,
+      "proper_subset_marginals_checked": 35
+    },
+    {
+      "variables": 4,
+      "distributions": 5,
+      "proper_subset_marginals_checked": 75
+    },
+    {
+      "variables": 5,
+      "distributions": 5,
+      "proper_subset_marginals_checked": 155
+    },
+    {
+      "variables": 6,
+      "distributions": 5,
+      "proper_subset_marginals_checked": 315
+    },
+    {
+      "variables": 7,
+      "distributions": 5,
+      "proper_subset_marginals_checked": 635
+    },
+    {
+      "variables": 8,
+      "distributions": 5,
+      "proper_subset_marginals_checked": 1275
+    }
+  ],
+  "tree_gluing": [
+    {
+      "tree": "chain",
+      "cases": 2187,
+      "cases_with_zero_node_probability": 1844
+    },
+    {
+      "tree": "branch",
+      "cases": 2187,
+      "cases_with_zero_node_probability": 1844
+    }
+  ]
+}

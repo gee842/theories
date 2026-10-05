@@ -1,0 +1,681 @@
+{
+  "provenance": "Orchestrator record reconstructed from the actual dispatch calls in this conversation; not an independently authenticated platform log or a complete participant tool trace.",
+  "participants": [
+    {
+      "participant_task": "/root/founder_l01",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L01/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L01/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L01/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L01/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l01_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L01/r0-prompt.txt",
+      "response": "work/live/lineages/L01/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l01_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L01/r1-prompt.txt",
+      "response": "work/live/lineages/L01/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l02",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L02/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L02/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L02/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L02/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l02_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L02/r0-prompt.txt",
+      "response": "work/live/lineages/L02/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l02_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L02/r1-prompt.txt",
+      "response": "work/live/lineages/L02/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l03",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L03/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L03/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L03/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L03/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l03_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L03/r0-prompt.txt",
+      "response": "work/live/lineages/L03/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l03_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L03/r1-prompt.txt",
+      "response": "work/live/lineages/L03/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l04",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L04/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L04/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L04/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L04/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l04_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L04/r0-prompt.txt",
+      "response": "work/live/lineages/L04/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l04_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L04/r1-prompt.txt",
+      "response": "work/live/lineages/L04/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l05",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L05/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L05/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L05/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L05/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l05_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L05/r0-prompt.txt",
+      "response": "work/live/lineages/L05/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l05_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L05/r1-prompt.txt",
+      "response": "work/live/lineages/L05/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l06",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L06/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L06/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L06/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L06/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l06_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L06/r0-prompt.txt",
+      "response": "work/live/lineages/L06/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l06_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L06/r1-prompt.txt",
+      "response": "work/live/lineages/L06/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l07",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L07/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L07/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L07/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L07/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l07_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L07/r0-prompt.txt",
+      "response": "work/live/lineages/L07/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l07_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L07/r1-prompt.txt",
+      "response": "work/live/lineages/L07/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l08",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L08/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L08/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L08/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L08/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l08_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L08/r0-prompt.txt",
+      "response": "work/live/lineages/L08/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l08_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L08/r1-prompt.txt",
+      "response": "work/live/lineages/L08/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l09",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L09/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L09/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L09/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L09/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l09_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L09/r0-prompt.txt",
+      "response": "work/live/lineages/L09/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l09_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L09/r1-prompt.txt",
+      "response": "work/live/lineages/L09/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l10",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L10/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L10/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L10/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L10/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l10_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L10/r0-prompt.txt",
+      "response": "work/live/lineages/L10/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l10_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L10/r1-prompt.txt",
+      "response": "work/live/lineages/L10/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l11",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L11/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L11/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L11/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L11/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l11_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L11/r0-prompt.txt",
+      "response": "work/live/lineages/L11/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l11_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L11/r1-prompt.txt",
+      "response": "work/live/lineages/L11/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l12",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L12/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L12/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L12/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L12/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l12_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L12/r0-prompt.txt",
+      "response": "work/live/lineages/L12/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l12_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L12/r1-prompt.txt",
+      "response": "work/live/lineages/L12/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l13",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L13/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L13/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L13/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L13/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l13_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L13/r0-prompt.txt",
+      "response": "work/live/lineages/L13/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l13_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L13/r1-prompt.txt",
+      "response": "work/live/lineages/L13/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l14",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L14/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L14/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L14/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L14/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l14_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L14/r0-prompt.txt",
+      "response": "work/live/lineages/L14/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l14_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L14/r1-prompt.txt",
+      "response": "work/live/lineages/L14/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l15",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L15/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L15/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L15/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L15/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l15_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L15/r0-prompt.txt",
+      "response": "work/live/lineages/L15/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l15_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L15/r1-prompt.txt",
+      "response": "work/live/lineages/L15/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l16",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L16/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L16/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L16/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L16/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l16_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L16/r0-prompt.txt",
+      "response": "work/live/lineages/L16/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l16_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L16/r1-prompt.txt",
+      "response": "work/live/lineages/L16/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l17",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L17/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L17/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L17/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L17/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l17_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L17/r0-prompt.txt",
+      "response": "work/live/lineages/L17/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l17_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L17/r1-prompt.txt",
+      "response": "work/live/lineages/L17/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l18",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L18/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L18/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L18/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L18/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l18_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L18/r0-prompt.txt",
+      "response": "work/live/lineages/L18/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l18_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L18/r1-prompt.txt",
+      "response": "work/live/lineages/L18/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l19",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L19/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L19/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L19/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L19/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l19_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L19/r0-prompt.txt",
+      "response": "work/live/lineages/L19/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l19_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L19/r1-prompt.txt",
+      "response": "work/live/lineages/L19/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l20",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L20/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L20/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L20/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L20/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l20_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L20/r0-prompt.txt",
+      "response": "work/live/lineages/L20/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l20_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L20/r1-prompt.txt",
+      "response": "work/live/lineages/L20/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l21",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L21/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L21/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L21/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L21/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l21_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L21/r0-prompt.txt",
+      "response": "work/live/lineages/L21/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l21_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L21/r1-prompt.txt",
+      "response": "work/live/lineages/L21/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l22",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L22/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L22/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L22/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L22/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l22_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L22/r0-prompt.txt",
+      "response": "work/live/lineages/L22/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l22_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L22/r1-prompt.txt",
+      "response": "work/live/lineages/L22/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l23",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L23/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L23/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L23/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L23/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l23_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L23/r0-prompt.txt",
+      "response": "work/live/lineages/L23/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l23_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L23/r1-prompt.txt",
+      "response": "work/live/lineages/L23/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l24",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L24/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L24/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L24/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L24/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l24_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L24/r0-prompt.txt",
+      "response": "work/live/lineages/L24/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l24_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L24/r1-prompt.txt",
+      "response": "work/live/lineages/L24/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l25",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L25/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L25/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L25/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L25/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l25_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L25/r0-prompt.txt",
+      "response": "work/live/lineages/L25/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l25_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L25/r1-prompt.txt",
+      "response": "work/live/lineages/L25/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l26",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L26/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L26/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L26/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L26/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l26_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L26/r0-prompt.txt",
+      "response": "work/live/lineages/L26/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l26_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L26/r1-prompt.txt",
+      "response": "work/live/lineages/L26/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l27",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L27/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L27/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L27/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L27/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l27_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L27/r0-prompt.txt",
+      "response": "work/live/lineages/L27/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l27_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L27/r1-prompt.txt",
+      "response": "work/live/lineages/L27/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l28",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L28/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L28/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L28/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L28/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l28_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L28/r0-prompt.txt",
+      "response": "work/live/lineages/L28/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l28_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L28/r1-prompt.txt",
+      "response": "work/live/lineages/L28/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l29",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L29/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L29/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L29/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L29/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l29_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L29/r0-prompt.txt",
+      "response": "work/live/lineages/L29/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l29_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L29/r1-prompt.txt",
+      "response": "work/live/lineages/L29/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l30",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L30/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L30/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L30/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L30/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l30_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L30/r0-prompt.txt",
+      "response": "work/live/lineages/L30/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l30_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L30/r1-prompt.txt",
+      "response": "work/live/lineages/L30/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l31",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L31/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L31/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L31/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L31/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l31_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L31/r0-prompt.txt",
+      "response": "work/live/lineages/L31/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l31_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L31/r1-prompt.txt",
+      "response": "work/live/lineages/L31/r1-response.json"
+    },
+    {
+      "participant_task": "/root/founder_l32",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "baseline_input": "work/live/lineages/L32/baseline-prompt.txt",
+      "baseline_response": "work/live/lineages/L32/baseline-response.json",
+      "maintenance_context": "same founder via collaboration.followup_task",
+      "maintenance_input": "work/live/lineages/L32/maintenance-prompt.txt",
+      "maintenance_response": "work/live/lineages/L32/maintenance-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l32_r0",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L32/r0-prompt.txt",
+      "response": "work/live/lineages/L32/r0-response.json"
+    },
+    {
+      "participant_task": "/root/successor_l32_r1",
+      "context_creation": "collaboration.spawn_agent with fork_turns none",
+      "input": "work/live/lineages/L32/r1-prompt.txt",
+      "response": "work/live/lineages/L32/r1-response.json"
+    }
+  ],
+  "fresh_context_count": 96,
+  "founder_followup_count": 32,
+  "model_override": null,
+  "scope": "one inherited configured model and effort; actual model identifier not recorded by exposed collaboration responses"
+}

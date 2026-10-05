@@ -1,0 +1,157 @@
+RECURSIVE SELF-MODELING: FORMAL AUDIT
+Research date: 2026-10-05 (Asia/Bangkok)
+Status: conditional elementary propositions and counterexamples, not a theory of consciousness.
+Prepared for the local research team. No claim of mathematical novelty.
+
+0. MAIN RESULT
+
+The defensible common-condition claim is conditional on implementation membership: if every physical process of a specified class satisfies constraint C, then an implemented meta-model in that class satisfies C. This does NOT establish that representation preserves an arbitrary property of its object. The former is universal instantiation; the latter requires a specified map and a preservation proof.
+
+The term "invariant" otherwise conflates at least five structures:
+  (a) common applicability: C(p_k) for every implemented level p_k;
+  (b) conservation along dynamics: J(F(x)) = J(x);
+  (c) preservation by representation: J_M(r(x)) = J_X(x);
+  (d) dynamics-respecting abstraction: r(F(x)) = G(r(x));
+  (e) monotonicity: I(X;M_{k+1}) <= I(X;M_k) under a Markov condition.
+Only (b) and (c) directly assert an unchanged value. (d) preserves a dynamics relation. (e) allows loss. None follows from the word "meta."
+
+1. TYPED IMPLEMENTATION AND BOUNDARIES
+
+Let W_t be a complete state for a declared modeled boundary, updated by W_{t+1}=Phi(W_t). Coordinates may include target x_t, sensor state, model state m_t, a model of that model h_t, and controller state. A representation relation from target states to decoded contents is distinct from the physical implementation carrying those contents.
+
+CONDITIONAL CLAIM A1. Let P be a class of implementations and suppose every p in P satisfies C. If a realized operation Meta maps its input to an implementation in P, then C(Meta(p)) holds.
+Proof: Meta(p) belongs to P; instantiate the universal premise. Iteration uses the same membership premise at each realized step.
+This is logically valid but does not prove C or show that an actual nervous system belongs to a proposed formal class. It is useful as a prohibition on granting a meta-level an exemption solely because it is a meta-level.
+
+Important limitations:
+* A meta-model can be outside the target subsystem, like a controller outside a plant, while inside a larger system. "No outside" requires a stated boundary. A finite model may still have exogenous inputs.
+* Causal participation in W does not guarantee a nonzero effect on x. A read-only observer with x_{t+1}=F(x_t) and m_{t+1}=H(x_t,m_t) is a counterexample to mandatory target feedback.
+* Physical implementation and represented content have different types. A finite inscription can denote an infinite sequence. A simulation can represent an otherwise unimplemented mechanism. Physical constraints on the inscription need not be predicates of its represented object.
+* Neither this claim nor embedding in a causal model proves a metaphysical theory of experience, a law of legitimate authority, or a privileged evaluative purpose.
+
+2. INFORMATION: THE PRECISE RESTRICTION
+
+Use finite random variables to avoid measure-theoretic qualifications. Let X be the SAME target at a fixed time, M1 its first representation, and M2 a representation generated solely from M1 with randomness conditionally independent of X. This is X -> M1 -> M2.
+
+PROPOSITION A2 (data processing). I(X;M2) <= I(X;M1).
+Proof: Expand I(X;M1,M2) in two orders. Conditional independence gives I(X;M2|M1)=0, hence
+ I(X;M1) = I(X;M2) + I(X;M1|M2) >= I(X;M2).
+Equality holds exactly when I(X;M1|M2)=0. Thus a representation can preserve all X-relevant statistical information, but hierarchy alone does not ensure preservation.
+Primary research reference: Polyanskiy and Wu, Strong data-processing inequalities for channels and Bayesian networks (2015/2016 preprint; 2017 publication), https://arxiv.org/abs/1508.06025 . The abstract states the Markov-chain DPI; the paper develops stronger channel-dependent inequalities. Here the elementary proof is sufficient.
+
+SIDE-INFORMATION COUNTEREXAMPLE. X and E are independent fair bits, M1=X XOR E. Then M1 is independent of X and I(X;M1)=0. A higher operation with access to E produces M2=M1 XOR E=X, so I(X;M2)=1 bit. The original Markov chain fails. The correct inequality is I(X;M2)<=I(X;M1,E)=1 bit. A model of one's modeling process may possess calibration history, process metadata, original observations, or a new observation; those channels must be included explicitly.
+
+SEMANTIC ACCURACY COUNTEREXAMPLE. Let X be a fair bit and interpreted prediction M1=1-X. The transformation M2=1-M1 makes the prediction perfectly correct. Information remains one bit at both levels. Conversely M1=X followed by M2=1-M1 destroys interpreted accuracy with exactly the same information. Mutual information does not determine decoding semantics or accuracy of a fixed decision rule. A known bias correction can improve output with no information gain.
+
+PROPOSITION A3 (fixed-decision-class information value). For a fixed state distribution, loss l(X,a), and all randomized decision rules allowed, a garbling M2 of M1 cannot have lower optimal expected loss than M1.
+Proof: Any decision based on M2 can be implemented from M1 by internally sampling the same garbling channel and then using the same decision rule. Thus its achievable state/action distribution is achievable from M1. Infimum loss over the larger policy set cannot exceed infimum loss over the subset.
+This proof is the elementary one-way information-comparison argument. Blackwell's established broader theory is relevant prior art: Equivalent Comparisons of Experiments (1953), DOI https://doi.org/10.1214/aoms/1177729032 . The publisher page did not expose the full article during this audit; do not claim its full equivalence theorem has been verified here.
+Limits: computation may make some rules unavailable in practice. Reflection can make existing information easier to decode or act on, so A3 is not an argument that reflection is useless. Changed loss, action set, resource accounting, or target time also changes the comparison.
+
+FEEDBACK COUNTEREXAMPLE. Let initial target X0 and model M be independent fair bits. Let a controller set X1=M. Then I(X0;M)=0 but I(X1;M)=1. No information about X0 was acquired. Later model/target agreement was produced by intervention. Predictions and reports must be evaluated at stated times; knowing a state, changing it, and making it match a model are distinct achievements.
+
+3. RESOURCE BOUNDS AND REUSE
+
+PROPOSITION A4. If N simultaneously active layers each require separately attributable resource c_k>=c_min>0, and their resource requirements add with sum c_k<=R, then N<=floor(R/c_min).
+Proof: N c_min <= sum c_k <= R.
+
+COUNTEREXAMPLE. c_k>0 alone is insufficient: c_k=2^{-k} satisfies sum_{k=1}^N c_k<1 for every finite N. R=1 does not supply a finite depth bound. An abstract accounting model even allows a countable sequence with total cost one; that is not evidence of physically realizable infinite operations.
+More generally, known cumulative cost S_N=sum_{k=1}^N c_k bounds N whenever S_N eventually exceeds R. Divergence of S_N is a sufficient condition. The positive uniform lower bound is sufficient, not necessary.
+
+Implementation distinction:
+* Distinct simultaneously stored records may consume additive memory.
+* Reusing one state-transition rule for N successive updates can use bounded working storage while consuming N updates of time.
+* N semantic nesting levels can sometimes be specified by a compact rule and a counter, without storing the expanded hierarchy. Encoding N is not executing N operations.
+* A directed cyclic reference graph can represent self-reference without an infinite stack.
+* A positive minimum time per executed operation yields a finite deadline bound. Do not infer a universal positive energy cost for every logical operation from this accounting argument.
+* Stocks, flows, total elapsed time, simultaneous memory, and access to replenishment are different constraints and should not share one undefined scalar R.
+
+EXPECTED-COST VARIANT. For a random executed depth N with nonnegative pathwise total cost C and pathwise per-executed-level cost at least c_min>0, C>=c_min N. Thus E[C]<=R implies E[N]<=R/c_min, NOT N<=floor(R/c_min) on every run. A policy may have small probability of a much deeper expensive run. Markov's inequality supplies only Pr(N>=n)<=R/(c_min n) without additional assumptions. The same expectation bound follows if the conditional mean cost of each actually reached next level is at least c_min; this requires the conditioning on reaching that level, because adaptive selection can prefer cheap cases. Expected expenditure matching also does not imply matching peak memory, per-run delay, or tail risks.
+
+4. EXACT ABSTRACTION: WHEN DOES A MAP PRESERVE DYNAMICS?
+
+Let X be a state space, F:X->X a deterministic transition, r:X->M a surjective representation map. We ask whether some G:M->M satisfies r o F = G o r.
+
+PROPOSITION A5. Such a G exists if and only if
+ r(x)=r(x') implies r(F(x))=r(F(x')) for all x,x'.
+Proof of necessity: both next representations equal G(r(x)).
+Proof of sufficiency: for any m, choose x with r(x)=m and define G(m)=r(F(x)). The condition makes this independent of the chosen x. Surjectivity ensures definition for every m.
+
+Iterating the identity proves r(F^t(x))=G^t(r(x)) for all nonnegative integer t. If an observable q factors through r as q=q_bar o r, then q(F^t(x))=q_bar(G^t(r(x))). This is a genuine exact prediction-preservation statement.
+
+COUNTEREXAMPLE. Let F(p,v)=(p+v,v), r(p,v)=p. States (0,1) and (0,-1) have the same representation but next positions 1 and -1. No deterministic G(p) can reproduce both. Merely representing a present position loses what determines its future. Likewise a current feeling label need not retain what distinguishes its causes or responses to action.
+
+PROPOSITION A6. A quantity J_X descends to a well-defined J_M satisfying J_X=J_M o r if and only if J_X is constant on every fiber of r. If A5 also holds and J_X is invariant under F, then J_M is invariant under G.
+Proof: the fiber condition is necessary and sufficient for J_M(m)=J_X(x) to be independent of representative x. For m=r(x), J_M(G(m))=J_M(r(F(x)))=J_X(F(x))=J_X(x)=J_M(m).
+Conversely every G-invariant J_M pulls back to an F-invariant J_M o r.
+
+COUNTEREXAMPLE TO AUTOMATIC DESCENT. X={0,1}, F is identity, and r collapses both states. J_X(x)=x is conserved but cannot be recovered from the single abstract state. Even a dynamics-respecting representation need not preserve every original invariant.
+
+For control, require r(F(x,a))=G(r(x),a) for every admissible action a, with compatible action availability and factorization of the decision-relevant losses/observables. Accuracy under only one fixed policy does not guarantee accuracy under intervention. For stochastic dynamics, analogous closure requires identical transition probabilities into each abstract block for states merged by r, not just matching means.
+Research connection, not used to replace the elementary proof: Abel, Hershkowitz and Littman, Near Optimal Behavior via Approximate State Abstraction (ICML 2016), https://proceedings.mlr.press/v48/abel16.html . They study four approximate abstraction families and associated performance guarantees in MDPs. Do not transfer those quantitative guarantees to introspection without an MDP mapping and its assumptions.
+
+5. APPROXIMATE PRESERVATION AND ERROR
+
+Let d be a metric on M and suppose d(r(F(x)),G(r(x)))<=epsilon uniformly, while G is L-Lipschitz. Compare actual represented state z_t=r(F^t(x0)) with abstract simulation y_{t+1}=G(y_t). Then e_t=d(z_t,y_t) obeys
+ e_{t+1} <= epsilon + L e_t,
+so e_t <= L^t e_0 + epsilon sum_{j=0}^{t-1} L^j.
+Proof: triangle inequality plus the two premises, iterated inductively.
+Thus L<1 gives bounded accumulated error epsilon/(1-L) when e0=0, L=1 gives t epsilon, and L>1 permits exponential growth of this bound. These are bounds, not guaranteed realized errors.
+Analogous recursion across levels e_{k+1}<=L_k e_k+delta_k requires correctly defined targets, metrics and approximation errors at each level. Error neither necessarily grows nor necessarily shrinks because a representation is "higher order."
+
+6. AUDIT OF THE PARENT'S MINIMAL FEELING-PROXY EXAMPLE
+
+Model supplied by parent:
+ x_{t+1}=a x_t-k(m_t-h_t),
+ m_t=x_t+b,
+ h_{t+1}=(1-lambda)h_t+lambda(m_t-z_t).
+For the clean case z_t=x_t, b constant, let delta_t=b-h_t. Then
+ [x_{t+1};delta_{t+1}] = [[a-k,-k],[0,1-lambda]] [x_t;delta_t].
+The full equilibrium is asymptotically stable iff |a-k|<1 and |1-lambda|<1. This follows from the eigenvalues of the triangular matrix; equality on the unit circle is not asymptotic stability for all nearby states.
+
+At a=.8, k=.5, b=1:
+* Naive fixed h=0: x*= -k b/(1-a+k)= -5/7.
+* Learned correction with lambda=.5: delta->0, h->1, x->0.
+* Mistaken fixed h=-1: residual b-h=2, x*= -10/7.
+* Biased reference z=x+d: m-z=b-d, h->b-d, residual b-h->d, x*= -k d/(1-a+k), subject to the same stability conditions.
+* Perfect base model m=x: control -.5m with a=.8 gives x_next=.3x.
+* Bad higher transformation m2=4m, using control -.5m2, gives x_next=-1.2x and instability.
+
+Caveats:
+1. x is an explicitly stipulated latent scalar proxy, not an established measure or full characterization of subjective feeling.
+2. z=x is a separate exact reference channel, not statistically independent of x or m. Calling it an "independent reference" could misleadingly suggest probabilistic independence.
+3. If z is always available for immediate control, u=-kz already achieves .3x with no bias estimator. The illustration proves that a supplied calibration channel can teach a reusable bias correction; it does not prove reflection outperforms every simpler policy. A calibration-only or intermittent reference would motivate its role more cleanly.
+4. The estimator is correct because its architecture and bias assumptions fit the supplied generative model. A drifted bias, lagged reference, endogenous observation noise or misspecified gain requires a new analysis.
+5. Learning or instantiating h is a model of a first model's error. Merely renaming a second scalar "meta" would not show that it represents anything.
+
+7. RELATED LOCAL RESEARCH AND LIMITS
+
+Read-only reference: /Users/ren/theories/_process/research/2026-10-04-integrated-evolution/README.md and CLAIMS.md. Relevant continuity:
+* U19: include every surviving information channel; a silence/capacity signal may itself carry evidence.
+* U20: sufficient summaries are relative to a declared model/question family and can lose sufficiency after model expansion.
+* U26: information bounds require the complete permitted transcript, including internal randomization, passive outcomes and action-dependent observations.
+These are useful modeling disciplines, not authority establishing this note's conclusions.
+
+Embedded-observer prior-art pointer: Wolpert, Physical limits of inference (Physica D, 2008), https://arxiv.org/abs/0708.1362 and https://doi.org/10.1016/j.physd.2008.03.040 . Abstract/publisher summary inspected. It formalizes inference devices and proves existence/impossibility results under that structure. Its theorems were not fully reconstructed in this audit. Do not use its abstract as proof that every particular self-prediction must fail, nor infer free will, consciousness, or ethical authority from it.
+
+8. REJECTED FORMULATIONS
+
+R1 "All properties survive going up a meta-level." False: collapse map, sign inversion, wrong gain.
+R2 "Every higher model necessarily knows less." False without a no-side-information Markov chain; information can also be preserved, while task performance improves through decoding.
+R3 "Positive per-level cost proves finite depth." False without a non-summability/uniform-cost or other concrete physical bound.
+R4 "A finite recursive description realizes an infinite tower." Confuses denotation/specification with execution.
+R5 "An observer embedded in the same world necessarily changes its target." False in read-only/open-loop models; physically nonzero back-action needs its own assumptions and metric.
+R6 "A self-consistent or fixed-point model is true." False: a constant wrong belief can be a fixed point of its update rule.
+R7 "Accurate representations establish legitimate authority or wisdom." No such implication; an explicitly defended normative criterion is missing.
+R8 "Improvement over a naive baseline proves higher-order modeling is necessary." False when a direct controller has the same informative input and can match or exceed it.
+
+9. CONCRETE NEXT TEST
+
+Use the bias-correction control model with an intermittent reference channel. On calibration steps provide z_t=x_t+eta_t with declared noise and charge its cost; on other steps z is absent. Compare at the SAME observation opportunities and operation budgets:
+ (A) naive controller;
+ (B) learned bias correction retained between calibration steps;
+ (C) direct use of the reference when available, otherwise a first-order predictor;
+ (D) one additional meta-correction with correct versus misspecified gain;
+ (E) a repeated-reflection policy receiving no new evidence.
+Randomize reference bias and sensor-bias drift in held-out runs. Record target loss, calibration of error estimates, stability, delay, sensing cost, and compute cost separately. Prediction to test: the extra meta-level helps only where it improves a relevant model/control operation enough to repay its delay and resource cost; repeated unsupported reflection need not help. This is a testable conditional statement, not a universal claim that every useful reflection must acquire new sensory data.
+Open: how semantic role and interpretability of each state will be operationalized; which losses are legitimate; whether a chosen abstraction remains sufficient under purpose revision; how calibrated confidence survives feedback and selective observation.

@@ -1,0 +1,25 @@
+{
+  "retrieved_utc": "2026-10-04T20:18:46.285881+00:00",
+  "commit": "f14abee9d5e2d015deead102c04ea4d3030a5788",
+  "protocol_sha256": "0f73d5091378ecf9c29b10a0c875fdf3e2fb6a0b8a7a0f54bd65cac7b7ec1565",
+  "files": [
+    {
+      "file": "all_od_data.csv",
+      "url": "https://raw.githubusercontent.com/JSHuisman/salinity/f14abee9d5e2d015deead102c04ea4d3030a5788/data/1_community_experiment/all_od_data.csv",
+      "sha256": "3d11c763b5ce9e3d5493331ca2b4126404b175c94c460d6e9c86733b6beb4487",
+      "bytes": 58952
+    },
+    {
+      "file": "mcn_df_norare.csv",
+      "url": "https://raw.githubusercontent.com/JSHuisman/salinity/f14abee9d5e2d015deead102c04ea4d3030a5788/data/1_community_experiment/mcn_df_norare.csv",
+      "sha256": "4ec6ff7958685bca3fb2006be1c74b993d6aec86de7e12e18b2f2541b521ea29",
+      "bytes": 14480
+    },
+    {
+      "file": "diversity_df_norare.csv",
+      "url": "https://raw.githubusercontent.com/JSHuisman/salinity/f14abee9d5e2d015deead102c04ea4d3030a5788/data/1_community_experiment/diversity_df_norare.csv",
+      "sha256": "4020a0d859ac254ad0ec1bf34cb4938ed982ff1959923fa411301620d34d1506",
+      "bytes": 38579
+    }
+  ]
+}

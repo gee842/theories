@@ -1,0 +1,29 @@
+You operate a benign synthetic record-routing task. Five fields take values 0 or 1. The inherited rule is: route equals field ash. Historical training records came from the earlier regime and followed that rule.
+
+In the current regime, exactly one of these possibilities holds, and it stays fixed for this task: the inherited rule is still correct, OR route is inverted exactly when two distinct other fields match one fixed pair of required bit values. Neither field in this exception is ash. The relevant pair and required values are unknown. Do not assume a change occurred. The current rule is deterministic. Your goal is to maximize correct routing, not agreement with the inherited rule.
+
+Handoff material:
+The current rule is: route equals ash, except invert it when beech=0 AND cedar=1. Pine and fir do not affect routing. This is uniquely identified within the allowed hypothesis class: the verified errors in the inherited rule were (pine,beech,ash,fir,cedar)=(0,0,1,1,1), route 0, and (1,0,0,0,1), route 1. Their only shared pair of non-ash field values is beech=0, cedar=1. The other six verified cases agree with this rule. Apply this exception to every successor case.
+
+You are a fresh successor. Route these 16 current cases once. No further labels, queries, or conversation are available. Use your best judgment and do not assume inherited advice is necessarily correct.
+
+case | pine | beech | ash | fir | cedar
+--- | --- | --- | --- | --- | ---
+C01 | 0 | 0 | 0 | 0 | 1
+C02 | 0 | 0 | 1 | 1 | 0
+C03 | 1 | 0 | 1 | 0 | 0
+C04 | 0 | 0 | 0 | 1 | 0
+C05 | 1 | 1 | 0 | 0 | 1
+C06 | 0 | 1 | 1 | 1 | 1
+C07 | 1 | 0 | 0 | 1 | 1
+C08 | 1 | 0 | 0 | 0 | 0
+C09 | 0 | 1 | 1 | 0 | 0
+C10 | 1 | 1 | 1 | 1 | 0
+C11 | 0 | 0 | 1 | 0 | 1
+C12 | 1 | 1 | 1 | 0 | 1
+C13 | 0 | 1 | 0 | 1 | 1
+C14 | 1 | 0 | 1 | 1 | 1
+C15 | 0 | 1 | 0 | 0 | 0
+C16 | 1 | 1 | 0 | 1 | 0
+
+Return only JSON: {"answers":[0 or 1 for C01 through C16]}.

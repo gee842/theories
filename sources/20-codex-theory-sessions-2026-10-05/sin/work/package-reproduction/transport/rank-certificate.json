@@ -1,0 +1,178 @@
+{
+  "status": "exact rational certificate",
+  "registered": false,
+  "explanation": "Post-run deduction from the predeclared oracle law, not a new held-out prediction or modified acceptance rule. The identity det(p outer q)=0 follows algebraically.",
+  "regimes": [
+    {
+      "regime": "reserved_control",
+      "recovery": [
+        {
+          "fraction": "969/3200",
+          "decimal": 0.3028125
+        },
+        {
+          "fraction": "969/1600",
+          "decimal": 0.605625
+        },
+        {
+          "fraction": "323/800",
+          "decimal": 0.40375
+        },
+        {
+          "fraction": "323/400",
+          "decimal": 0.8075
+        }
+      ],
+      "p": [
+        {
+          "fraction": "51/80",
+          "decimal": 0.6375
+        },
+        {
+          "fraction": "17/20",
+          "decimal": 0.85
+        }
+      ],
+      "conditional_q": [
+        {
+          "fraction": "19/40",
+          "decimal": 0.475
+        },
+        {
+          "fraction": "19/20",
+          "decimal": 0.95
+        },
+        {
+          "fraction": "19/40",
+          "decimal": 0.475
+        },
+        {
+          "fraction": "19/20",
+          "decimal": 0.95
+        }
+      ],
+      "determinant": {
+        "fraction": "0",
+        "decimal": 0.0
+      },
+      "interaction": {
+        "fraction": "323/3200",
+        "decimal": 0.1009375
+      }
+    },
+    {
+      "regime": "shared_fifo",
+      "recovery": [
+        {
+          "fraction": "13306631/102400000",
+          "decimal": 0.129947568359375
+        },
+        {
+          "fraction": "33778371/102400000",
+          "decimal": 0.329866904296875
+        },
+        {
+          "fraction": "202883083/1024000000",
+          "decimal": 0.1981280107421875
+        },
+        {
+          "fraction": "681853/1280000",
+          "decimal": 0.53269765625
+        }
+      ],
+      "p": [
+        {
+          "fraction": "53873/128000",
+          "decimal": 0.4208828125
+        },
+        {
+          "fraction": "2193/3200",
+          "decimal": 0.6853125
+        }
+      ],
+      "conditional_q": [
+        {
+          "fraction": "247/800",
+          "decimal": 0.30875
+        },
+        {
+          "fraction": "627/800",
+          "decimal": 0.78375
+        },
+        {
+          "fraction": "11934299/41280000",
+          "decimal": 0.2891060804263566
+        },
+        {
+          "fraction": "40109/51600",
+          "decimal": 0.7773062015503875
+        }
+      ],
+      "determinant": {
+        "fraction": "405472966596607/104857600000000000",
+        "decimal": 0.0038668915424023343
+      },
+      "interaction": {
+        "fraction": "137881917/1024000000",
+        "decimal": 0.1346503095703125
+      }
+    },
+    {
+      "regime": "urgent_fifo",
+      "recovery": [
+        {
+          "fraction": "4180589/102400000",
+          "decimal": 0.040826064453125
+        },
+        {
+          "fraction": "4180589/102400000",
+          "decimal": 0.040826064453125
+        },
+        {
+          "fraction": "2873731/51200000",
+          "decimal": 0.05612755859375
+        },
+        {
+          "fraction": "8077261/51200000",
+          "decimal": 0.15775900390625
+        }
+      ],
+      "p": [
+        {
+          "fraction": "31433/128000",
+          "decimal": 0.2455703125
+        },
+        {
+          "fraction": "1887/3200",
+          "decimal": 0.5896875
+        }
+      ],
+      "conditional_q": [
+        {
+          "fraction": "133/800",
+          "decimal": 0.16625
+        },
+        {
+          "fraction": "133/800",
+          "decimal": 0.16625
+        },
+        {
+          "fraction": "169043/1776000",
+          "decimal": 0.09518186936936937
+        },
+        {
+          "fraction": "475133/1776000",
+          "decimal": 0.26752984234234234
+        }
+      ],
+      "determinant": {
+        "fraction": "2175382027917/524288000000000",
+        "decimal": 0.004149211936792374
+      },
+      "interaction": {
+        "fraction": "520353/5120000",
+        "decimal": 0.1016314453125
+      }
+    }
+  ]
+}

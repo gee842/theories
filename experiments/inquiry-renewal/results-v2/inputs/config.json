@@ -1,0 +1,24 @@
+{
+  "discovery_size_per_context": 4,
+  "proposal_min_count": 2,
+  "validation_size": 16,
+  "validation_alpha": 0.05,
+  "monitor_size": 8,
+  "response_cost": 0.4,
+  "deployment_size": 40,
+  "inquiry_cost": 1,
+  "inquiry_harm": 0.05,
+  "grant": 5,
+  "productive_output": 6,
+  "reserve_cap": 8,
+  "initial_reserve": 8,
+  "horizon": 1000,
+  "reserve_grid": [1, 2, 4, 8, 12, 16, 24, 32],
+  "capture_grid": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "floors": [0, 1],
+  "worlds": {
+    "distributed": [[0.5, 0.65, 0.15], [0.5, 0.15, 0.65]],
+    "absent": [[1.0, 0.2, 0.2]],
+    "near_null": [[1.0, 0.39, 0.39]]
+  }
+}

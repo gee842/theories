@@ -1,0 +1,1841 @@
+[
+  {
+    "parameters": {
+      "horizon": 5,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.02,
+    "result": {
+      "cost": -32.1421742,
+      "burden": 0.02,
+      "dual_lower_bound": -32.142174203295895,
+      "optimality_gap": 3.2958951123873703e-09,
+      "supporting_multiplier": 44.319976806640625,
+      "multiplier_bracket": [
+        44.3199462890625,
+        44.32000732421875
+      ],
+      "metrics": {
+        "cost": -32.1421742,
+        "burden": 0.02,
+        "tests": 0.0,
+        "target_absent_repairs": 0.02,
+        "repairs": 0.14408000000000004,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 0.43224000000000007,
+        "output": 27.394153099999997,
+        "failure": 0.009414500000000004,
+        "terminal_stock": 2.6466175499999993,
+        "terminal_cash": 7.991306549999999,
+        "treasury": 26.97060655
+      },
+      "components": [
+        {
+          "probability": 0.6228373702422124,
+          "cost": -32.1542514,
+          "burden": 0.020272500000000002,
+          "tests": 0.0,
+          "target_absent_repairs": 0.020272500000000002,
+          "repairs": 0.14506100000000002,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 0.43518300000000004,
+          "output": 27.3980989,
+          "failure": 0.008820450000000002,
+          "terminal_stock": 2.6485904499999995,
+          "terminal_cash": 7.99120845,
+          "treasury": 26.97170745,
+          "multiplier": 44.3199462890625,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": -3.552713678800501e-15
+        },
+        {
+          "probability": 0.3771626297577876,
+          "cost": -32.1222302,
+          "burden": 0.01955,
+          "tests": 0.0,
+          "target_absent_repairs": 0.01955,
+          "repairs": 0.14246000000000003,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 0.42738000000000004,
+          "output": 27.3876371,
+          "failure": 0.0103955,
+          "terminal_stock": 2.6433595499999996,
+          "terminal_cash": 7.99146855,
+          "treasury": 26.96878855,
+          "multiplier": 44.32000732421875,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 525,
+      "action_count": 3415,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 5,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.05,
+    "result": {
+      "cost": -32.452238236881556,
+      "burden": 0.05,
+      "dual_lower_bound": -32.45223823817138,
+      "optimality_gap": 1.289826911943237e-09,
+      "supporting_multiplier": 1.119638442993164,
+      "multiplier_bracket": [
+        1.1196365356445312,
+        1.1196403503417969
+      ],
+      "metrics": {
+        "cost": -32.452238236881556,
+        "burden": 0.05,
+        "tests": 0.0,
+        "target_absent_repairs": 0.05,
+        "repairs": 0.20857541229385312,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 0.6257262368815593,
+        "output": 27.643552236881558,
+        "failure": 0.0,
+        "terminal_stock": 2.717206118440779,
+        "terminal_cash": 7.991211,
+        "treasury": 27.026615
+      },
+      "components": [
+        {
+          "probability": 0.13348619807743187,
+          "cost": -32.5072428,
+          "burden": 0.09912699999999999,
+          "tests": 0.0,
+          "target_absent_repairs": 0.09912699999999999,
+          "repairs": 0.31861400000000006,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 0.9558420000000001,
+          "output": 27.836112399999998,
+          "failure": 0.0,
+          "terminal_stock": 2.8134862000000003,
+          "terminal_cash": 7.991211,
+          "treasury": 26.889059399999997,
+          "multiplier": 1.1196365356445312,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        },
+        {
+          "probability": 0.8665138019225681,
+          "cost": -32.4437648,
+          "burden": 0.042432000000000004,
+          "tests": 0.0,
+          "target_absent_repairs": 0.042432000000000004,
+          "repairs": 0.19162400000000004,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 0.574872,
+          "output": 27.6138884,
+          "failure": 0.0,
+          "terminal_stock": 2.7023741999999995,
+          "terminal_cash": 7.991211,
+          "treasury": 27.047805399999998,
+          "multiplier": 1.1196403503417969,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": -3.552713678800501e-15
+        }
+      ],
+      "state_count": 525,
+      "action_count": 3415,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 5,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.1,
+    "result": {
+      "cost": -32.50816889618105,
+      "burden": 0.1,
+      "dual_lower_bound": -32.50816889719849,
+      "optimality_gap": 1.0174403541896027e-09,
+      "supporting_multiplier": 1.0608062744140625,
+      "multiplier_bracket": [
+        1.060791015625,
+        1.060821533203125
+      ],
+      "metrics": {
+        "cost": -32.50816889618105,
+        "burden": 0.1,
+        "tests": 0.0,
+        "target_absent_repairs": 0.1,
+        "repairs": 0.3197672984441302,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 0.9593018953323905,
+        "output": 27.840221797454028,
+        "failure": 0.0,
+        "terminal_stock": 2.813624497029703,
+        "terminal_cash": 7.9913179332390385,
+        "treasury": 26.8896019688826
+      },
+      "components": [
+        {
+          "probability": 0.014526998918379434,
+          "cost": -32.5709928,
+          "burden": 0.15922200000000003,
+          "tests": 0.0,
+          "target_absent_repairs": 0.15922200000000003,
+          "repairs": 0.398004,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.1940119999999999,
+          "output": 28.118992399999996,
+          "failure": 0.0,
+          "terminal_stock": 2.8230061999999996,
+          "terminal_cash": 7.998572,
+          "treasury": 26.9264084,
+          "multiplier": 1.060791015625,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 3.552713678800501e-15
+        },
+        {
+          "probability": 0.9854730010816206,
+          "cost": -32.5072428,
+          "burden": 0.09912699999999999,
+          "tests": 0.0,
+          "target_absent_repairs": 0.09912699999999999,
+          "repairs": 0.31861400000000006,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 0.9558420000000001,
+          "output": 27.836112399999998,
+          "failure": 0.0,
+          "terminal_stock": 2.8134862000000003,
+          "terminal_cash": 7.991211,
+          "treasury": 26.889059399999997,
+          "multiplier": 1.060821533203125,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 525,
+      "action_count": 3415,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 5,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.15,
+    "result": {
+      "cost": -32.5612099145686,
+      "burden": 0.15,
+      "dual_lower_bound": -32.56120992141037,
+      "optimality_gap": 6.8417662646425015e-09,
+      "supporting_multiplier": 1.0608205795288086,
+      "multiplier_bracket": [
+        1.0608196258544922,
+        1.060821533203125
+      ],
+      "metrics": {
+        "cost": -32.5612099145686,
+        "burden": 0.15,
+        "tests": 0.0,
+        "target_absent_repairs": 0.15,
+        "repairs": 0.3858210466760961,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 1.1574631400282884,
+        "output": 28.07558247637906,
+        "failure": 0.0,
+        "terminal_stock": 2.8215452891089106,
+        "terminal_cash": 7.997442402828854,
+        "treasury": 26.920676933521925
+      },
+      "components": [
+        {
+          "probability": 0.8465429736250931,
+          "cost": -32.5709928,
+          "burden": 0.15922200000000003,
+          "tests": 0.0,
+          "target_absent_repairs": 0.15922200000000003,
+          "repairs": 0.398004,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.1940119999999999,
+          "output": 28.118992399999996,
+          "failure": 0.0,
+          "terminal_stock": 2.8230061999999996,
+          "terminal_cash": 7.998572,
+          "treasury": 26.9264084,
+          "multiplier": 1.0608196258544922,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 3.552713678800501e-15
+        },
+        {
+          "probability": 0.15345702637490688,
+          "cost": -32.5072428,
+          "burden": 0.09912699999999999,
+          "tests": 0.0,
+          "target_absent_repairs": 0.09912699999999999,
+          "repairs": 0.31861400000000006,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 0.9558420000000001,
+          "output": 27.836112399999998,
+          "failure": 0.0,
+          "terminal_stock": 2.8134862000000003,
+          "terminal_cash": 7.991211,
+          "treasury": 26.889059399999997,
+          "multiplier": 1.060821533203125,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 525,
+      "action_count": 3415,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 5,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.2,
+    "result": {
+      "cost": -32.586725839816935,
+      "burden": 0.2,
+      "dual_lower_bound": -32.586725844531976,
+      "optimality_gap": 4.715040802238946e-09,
+      "supporting_multiplier": 0.38535475730895996,
+      "multiplier_bracket": [
+        0.38535451889038086,
+        0.38535499572753906
+      ],
+      "metrics": {
+        "cost": -32.586725839816935,
+        "burden": 0.2,
+        "tests": 0.0,
+        "target_absent_repairs": 0.2,
+        "repairs": 0.4477611899313501,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 1.3432835697940502,
+        "output": 28.27882362929062,
+        "failure": 0.0,
+        "terminal_stock": 2.825592890160183,
+        "terminal_cash": 7.999231463958809,
+        "treasury": 26.93630859553776
+      },
+      "components": [
+        {
+          "probability": 0.5904413634256142,
+          "cost": -32.597278200000005,
+          "burden": 0.22738350000000002,
+          "tests": 0.0,
+          "target_absent_repairs": 0.22738350000000002,
+          "repairs": 0.480471,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.4414129999999998,
+          "output": 28.3868036,
+          "failure": 0.0,
+          "terminal_stock": 2.8259437999999997,
+          "terminal_cash": 7.9996889,
+          "treasury": 26.9457017,
+          "multiplier": 0.38535451889038086,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        },
+        {
+          "probability": 0.40955863657438585,
+          "cost": -32.571512999999996,
+          "burden": 0.16052250000000004,
+          "tests": 0.0,
+          "target_absent_repairs": 0.16052250000000004,
+          "repairs": 0.40060500000000004,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.2018149999999999,
+          "output": 28.123154,
+          "failure": 0.0,
+          "terminal_stock": 2.8250869999999995,
+          "terminal_cash": 7.998572,
+          "treasury": 26.922767,
+          "multiplier": 0.38535499572753906,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 525,
+      "action_count": 3415,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 5,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.6,
+    "result": {
+      "cost": -32.597278200000005,
+      "burden": 0.22738350000000002,
+      "dual_lower_bound": -32.597278200000005,
+      "optimality_gap": 0.0,
+      "supporting_multiplier": 0.0,
+      "metrics": {
+        "cost": -32.597278200000005,
+        "burden": 0.22738350000000002,
+        "tests": 0.0,
+        "target_absent_repairs": 0.22738350000000002,
+        "repairs": 0.480471,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 1.4414129999999998,
+        "output": 28.3868036,
+        "failure": 0.0,
+        "terminal_stock": 2.8259437999999997,
+        "terminal_cash": 7.9996889,
+        "treasury": 26.9457017
+      },
+      "components": [
+        {
+          "probability": 1.0,
+          "cost": -32.597278200000005,
+          "burden": 0.22738350000000002,
+          "tests": 0.0,
+          "target_absent_repairs": 0.22738350000000002,
+          "repairs": 0.480471,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.4414129999999998,
+          "output": 28.3868036,
+          "failure": 0.0,
+          "terminal_stock": 2.8259437999999997,
+          "terminal_cash": 7.9996889,
+          "treasury": 26.9457017,
+          "multiplier": 0.0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 525,
+      "action_count": 3415,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 6,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.02,
+    "result": {
+      "cost": -36.12847275886088,
+      "burden": 0.020000000000000004,
+      "dual_lower_bound": -36.12847276791988,
+      "optimality_gap": 9.059000660727179e-09,
+      "supporting_multiplier": 140.3571014404297,
+      "multiplier_bracket": [
+        140.35708618164062,
+        140.35711669921875
+      ],
+      "metrics": {
+        "cost": -36.12847275886088,
+        "burden": 0.020000000000000004,
+        "tests": 0.0,
+        "target_absent_repairs": 0.020000000000000004,
+        "repairs": 0.15041645876106197,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 0.45124937628318595,
+        "output": 32.32948605143911,
+        "failure": 0.05993265564008848,
+        "terminal_stock": 2.484713975693009,
+        "terminal_cash": 7.996266357851062,
+        "treasury": 31.881970317304866
+      },
+      "components": [
+        {
+          "probability": 0.9155143154606978,
+          "cost": -36.242370437999995,
+          "burden": 0.020811484999999998,
+          "tests": 0.0,
+          "target_absent_repairs": 0.020811484999999998,
+          "repairs": 0.15663545,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 0.46990635000000003,
+          "output": 32.383744293999996,
+          "failure": 0.055631225,
+          "terminal_stock": 2.498053597,
+          "terminal_cash": 7.996160635,
+          "treasury": 31.917677309,
+          "multiplier": 140.35708618164062,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        },
+        {
+          "probability": 0.08448568453930216,
+          "cost": -34.894240518000004,
+          "burden": 0.011206485000000002,
+          "tests": 0.0,
+          "target_absent_repairs": 0.011206485000000002,
+          "repairs": 0.08302545,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 0.24907635000000003,
+          "output": 31.741526113999996,
+          "failure": 0.106544355,
+          "terminal_stock": 2.3401615069999995,
+          "terminal_cash": 7.997412004999999,
+          "treasury": 31.495037759,
+          "multiplier": 140.35711669921875,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 3.552713678800501e-15
+        }
+      ],
+      "state_count": 2374,
+      "action_count": 16242,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 6,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.05,
+    "result": {
+      "cost": -37.5135774271774,
+      "burden": 0.05,
+      "dual_lower_bound": -37.51357742758539,
+      "optimality_gap": 4.079865334460919e-10,
+      "supporting_multiplier": 4.667449951171875,
+      "multiplier_bracket": [
+        4.66741943359375,
+        4.66748046875
+      ],
+      "metrics": {
+        "cost": -37.5135774271774,
+        "burden": 0.05,
+        "tests": 0.0,
+        "target_absent_repairs": 0.05,
+        "repairs": 0.27084379137661085,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 0.8125313741298326,
+        "output": 32.97647388166168,
+        "failure": 0.0024886825376369973,
+        "terminal_stock": 2.6897495550485964,
+        "terminal_cash": 7.991175244268336,
+        "treasury": 32.172767263263516
+      },
+      "components": [
+        {
+          "probability": 0.8540463758669862,
+          "cost": -37.514538986,
+          "burden": 0.05020601499999999,
+          "tests": 0.0,
+          "target_absent_repairs": 0.05020601499999999,
+          "repairs": 0.27105395,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 0.81316185,
+          "output": 32.977456237999995,
+          "failure": 0.0024507200000000004,
+          "terminal_stock": 2.6898266189999998,
+          "terminal_cash": 7.991212784999999,
+          "treasury": 32.173081603,
+          "multiplier": 4.66741943359375,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 7.105427357601002e-15
+        },
+        {
+          "probability": 0.14595362413301383,
+          "cost": -37.507950874,
+          "burden": 0.048794504999999995,
+          "tests": 0.0,
+          "target_absent_repairs": 0.048794504999999995,
+          "repairs": 0.26961405,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 0.8088421499999999,
+          "output": 32.970725632,
+          "failure": 0.0027108200000000005,
+          "terminal_stock": 2.6892986159999994,
+          "terminal_cash": 7.990955574999999,
+          "treasury": 32.170927907,
+          "multiplier": 4.66748046875,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 2374,
+      "action_count": 16242,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 6,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.1,
+    "result": {
+      "cost": -37.614996099173005,
+      "burden": 0.1,
+      "dual_lower_bound": -37.614996100663994,
+      "optimality_gap": 1.490988665864279e-09,
+      "supporting_multiplier": 1.2140936851501465,
+      "multiplier_bracket": [
+        1.2140932083129883,
+        1.2140941619873047
+      ],
+      "metrics": {
+        "cost": -37.614996099173005,
+        "burden": 0.1,
+        "tests": 0.0,
+        "target_absent_repairs": 0.1,
+        "repairs": 0.34068327111467356,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 1.0220498133440208,
+        "output": 33.19654262853369,
+        "failure": 0.0,
+        "terminal_stock": 2.720251641991671,
+        "terminal_cash": 7.99596678970456,
+        "treasury": 32.17852602548511
+      },
+      "components": [
+        {
+          "probability": 0.6396741330835076,
+          "cost": -37.63633613199999,
+          "burden": 0.11757693,
+          "tests": 0.0,
+          "target_absent_repairs": 0.11757693,
+          "repairs": 0.3641349,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.0924047000000001,
+          "output": 33.282426615999995,
+          "failure": 0.0,
+          "terminal_stock": 2.723157108,
+          "terminal_cash": 7.998197405,
+          "treasury": 32.191824511,
+          "multiplier": 1.2140932083129883,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 7.105427357601002e-15
+        },
+        {
+          "probability": 0.3603258669164924,
+          "cost": -37.577111871999996,
+          "burden": 0.06879628,
+          "tests": 0.0,
+          "target_absent_repairs": 0.06879628,
+          "repairs": 0.2990504,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 0.8971512000000001,
+          "output": 33.044075736,
+          "failure": 0.0,
+          "terminal_stock": 2.715093668,
+          "terminal_cash": 7.992006855,
+          "treasury": 32.154917681,
+          "multiplier": 1.2140941619873047,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 2374,
+      "action_count": 16242,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 6,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.15,
+    "result": {
+      "cost": -37.67500402214547,
+      "burden": 0.15,
+      "dual_lower_bound": -37.67500402469325,
+      "optimality_gap": 2.547778876760276e-09,
+      "supporting_multiplier": 1.1926078796386719,
+      "multiplier_bracket": [
+        1.1926040649414062,
+        1.1926116943359375
+      ],
+      "metrics": {
+        "cost": -37.67500402214547,
+        "burden": 0.15,
+        "tests": 0.0,
+        "target_absent_repairs": 0.15,
+        "repairs": 0.39821503602302455,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 1.1946451080690739,
+        "output": 33.44698854197802,
+        "failure": 0.0,
+        "terminal_stock": 2.711330294118263,
+        "terminal_cash": 7.9990038815013085,
+        "treasury": 32.25333955240764
+      },
+      "components": [
+        {
+          "probability": 0.6653547572875302,
+          "cost": -37.694452332,
+          "burden": 0.16630743,
+          "tests": 0.0,
+          "target_absent_repairs": 0.16630743,
+          "repairs": 0.4153559,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.2460677000000002,
+          "output": 33.529756216,
+          "failure": 0.0,
+          "terminal_stock": 2.705381908,
+          "terminal_cash": 7.999409505000001,
+          "treasury": 32.284279011,
+          "multiplier": 1.1926040649414062,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        },
+        {
+          "probability": 0.33464524271246976,
+          "cost": -37.63633613199999,
+          "burden": 0.11757693,
+          "tests": 0.0,
+          "target_absent_repairs": 0.11757693,
+          "repairs": 0.3641349,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.0924047000000001,
+          "output": 33.282426615999995,
+          "failure": 0.0,
+          "terminal_stock": 2.723157108,
+          "terminal_cash": 7.998197405,
+          "treasury": 32.191824511,
+          "multiplier": 1.1926116943359375,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 7.105427357601002e-15
+        }
+      ],
+      "state_count": 2374,
+      "action_count": 16242,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 6,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.2,
+    "result": {
+      "cost": -37.73322398506777,
+      "burden": 0.2,
+      "dual_lower_bound": -37.73322399207593,
+      "optimality_gap": 7.008161162502802e-09,
+      "supporting_multiplier": 1.1507482528686523,
+      "multiplier_bracket": [
+        1.150747299194336,
+        1.1507492065429688
+      ],
+      "metrics": {
+        "cost": -37.73322398506777,
+        "burden": 0.2,
+        "tests": 0.0,
+        "target_absent_repairs": 0.2,
+        "repairs": 0.49117258168925654,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 1.47351774506777,
+        "output": 33.662867065067765,
+        "failure": 0.0,
+        "terminal_stock": 2.771937332533885,
+        "terminal_cash": 7.999409505000001,
+        "treasury": 32.189939815
+      },
+      "components": [
+        {
+          "probability": 0.7319554907681582,
+          "cost": -37.747422291999996,
+          "burden": 0.21233833,
+          "tests": 0.0,
+          "target_absent_repairs": 0.21233833,
+          "repairs": 0.5189368999999999,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.5568107,
+          "output": 33.711612695999996,
+          "failure": 0.0,
+          "terminal_stock": 2.7963101480000003,
+          "terminal_cash": 7.999409505000001,
+          "treasury": 32.155392491,
+          "multiplier": 1.150747299194336,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 7.105427357601002e-15
+        },
+        {
+          "probability": 0.26804450923184175,
+          "cost": -37.694452332,
+          "burden": 0.16630743,
+          "tests": 0.0,
+          "target_absent_repairs": 0.16630743,
+          "repairs": 0.4153559,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.2460677000000002,
+          "output": 33.529756216,
+          "failure": 0.0,
+          "terminal_stock": 2.705381908,
+          "terminal_cash": 7.999409505000001,
+          "treasury": 32.284279011,
+          "multiplier": 1.1507492065429688,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 2374,
+      "action_count": 16242,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 6,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.6,
+    "result": {
+      "cost": -37.78144582,
+      "burden": 0.2985293500000001,
+      "dual_lower_bound": -37.78144582,
+      "optimality_gap": 0.0,
+      "supporting_multiplier": 0.0,
+      "metrics": {
+        "cost": -37.78144582,
+        "burden": 0.2985293500000001,
+        "tests": 0.0,
+        "target_absent_repairs": 0.2985293500000001,
+        "repairs": 0.6363491,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 1.9090473,
+        "output": 34.038648359999996,
+        "failure": 0.0,
+        "terminal_stock": 2.82592238,
+        "terminal_cash": 7.99968108,
+        "treasury": 32.129919980000004
+      },
+      "components": [
+        {
+          "probability": 1.0,
+          "cost": -37.78144582,
+          "burden": 0.2985293500000001,
+          "tests": 0.0,
+          "target_absent_repairs": 0.2985293500000001,
+          "repairs": 0.6363491,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.9090473,
+          "output": 34.038648359999996,
+          "failure": 0.0,
+          "terminal_stock": 2.82592238,
+          "terminal_cash": 7.99968108,
+          "treasury": 32.129919980000004,
+          "multiplier": 0.0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 7.105427357601002e-15
+        }
+      ],
+      "state_count": 2374,
+      "action_count": 16242,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 8,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.02,
+    "result": {
+      "cost": -43.127292360868054,
+      "burden": 0.019999999999999997,
+      "dual_lower_bound": -43.127292361433014,
+      "optimality_gap": 5.649596346302133e-10,
+      "supporting_multiplier": 181.44302368164062,
+      "multiplier_bracket": [
+        181.4429931640625,
+        181.44305419921875
+      ],
+      "metrics": {
+        "cost": -43.127292360868054,
+        "burden": 0.019999999999999997,
+        "tests": 0.13752973751250003,
+        "target_absent_repairs": 0.013123513124375001,
+        "repairs": 0.20657822549375002,
+        "standby": 0.0,
+        "rebuilds": 0.29575234124999994,
+        "expense": 1.9195809127687502,
+        "output": 41.957888533591735,
+        "failure": 0.12438943051060486,
+        "terminal_stock": 2.29082895308617,
+        "terminal_cash": 7.944133524242182,
+        "treasury": 40.094174096580794
+      },
+      "components": [
+        {
+          "probability": 0.06697816176470614,
+          "cost": -43.9676495608673,
+          "burden": 0.024631520404999992,
+          "tests": 0.06885000000000001,
+          "target_absent_repairs": 0.021189020404999995,
+          "repairs": 0.22061553905,
+          "standby": 0.0,
+          "rebuilds": 0.15300000000000002,
+          "expense": 1.32739661715,
+          "output": 42.104170879479895,
+          "failure": 0.118572125212875,
+          "terminal_stock": 2.3068704005459493,
+          "terminal_cash": 7.969946557735,
+          "treasury": 40.806827704594895,
+          "multiplier": 181.4429931640625,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        },
+        {
+          "probability": 0.9330218382352938,
+          "cost": -43.066966248257295,
+          "burden": 0.019667520405,
+          "tests": 0.14246000000000003,
+          "target_absent_repairs": 0.012544520405,
+          "repairs": 0.20557053905,
+          "standby": 0.0,
+          "rebuilds": 0.306,
+          "expense": 1.9620916171500005,
+          "output": 41.9473874689599,
+          "failure": 0.12480703318537502,
+          "terminal_stock": 2.2896773973359497,
+          "terminal_cash": 7.9422805027350005,
+          "treasury": 40.0430153490749,
+          "multiplier": 181.44305419921875,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 59229,
+      "action_count": 414578,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 8,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.05,
+    "result": {
+      "cost": -47.26309726952451,
+      "burden": 0.05,
+      "dual_lower_bound": -47.26309727544341,
+      "optimality_gap": 5.918899148582568e-09,
+      "supporting_multiplier": 41.486576080322266,
+      "multiplier_bracket": [
+        41.486572265625,
+        41.48657989501953
+      ],
+      "metrics": {
+        "cost": -47.26309726952451,
+        "burden": 0.05,
+        "tests": 0.0,
+        "target_absent_repairs": 0.05,
+        "repairs": 0.38026905551593015,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 1.1408071665477904,
+        "output": 43.27692629267319,
+        "failure": 0.011815191431644646,
+        "terminal_stock": 2.63438022028942,
+        "terminal_cash": 7.987116385501581,
+        "treasury": 42.14900274062382
+      },
+      "components": [
+        {
+          "probability": 0.2720613532676804,
+          "cost": -47.507278909212,
+          "burden": 0.05588579864,
+          "tests": 0.0,
+          "target_absent_repairs": 0.05588579864,
+          "repairs": 0.39233586680000004,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.1770076004,
+          "output": 43.465507574065995,
+          "failure": 0.0065208558350000004,
+          "terminal_stock": 2.648514602783,
+          "terminal_cash": 7.986872700045,
+          "treasury": 42.301627273620994,
+          "multiplier": 41.486572265625,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        },
+        {
+          "probability": 0.7279386467323197,
+          "cost": -47.171836299064,
+          "burden": 0.047800228975,
+          "tests": 0.0,
+          "target_absent_repairs": 0.047800228975,
+          "repairs": 0.37575917955000004,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.12727753865,
+          "output": 43.20644551953799,
+          "failure": 0.0137939077885,
+          "terminal_stock": 2.6290976058189997,
+          "terminal_cash": 7.9872074610275,
+          "treasury": 42.09196051986049,
+          "multiplier": 41.48657989501953,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 59229,
+      "action_count": 414578,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 8,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.1,
+    "result": {
+      "cost": -47.79707151522636,
+      "burden": 0.1,
+      "dual_lower_bound": -47.79707152266684,
+      "optimality_gap": 7.440483784648677e-09,
+      "supporting_multiplier": 3.6282882690429688,
+      "multiplier_bracket": [
+        3.6282806396484375,
+        3.6282958984375
+      ],
+      "metrics": {
+        "cost": -47.79707151522636,
+        "burden": 0.1,
+        "tests": 0.0,
+        "target_absent_repairs": 0.1,
+        "repairs": 0.4656190082,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 1.3968570246,
+        "output": 43.80604065134045,
+        "failure": 0.0005837706113636373,
+        "terminal_stock": 2.697446567911137,
+        "terminal_cash": 7.991397176018319,
+        "treasury": 42.41778645072213
+      },
+      "components": [
+        {
+          "probability": 0.5173142374591712,
+          "cost": -47.80940624484999,
+          "burden": 0.103399605325,
+          "tests": 0.0,
+          "target_absent_repairs": 0.103399605325,
+          "repairs": 0.46939634745000003,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.40818904235,
+          "output": 43.818286098399994,
+          "failure": 0.0,
+          "terminal_stock": 2.6996545944000006,
+          "terminal_cash": 7.991942666825,
+          "treasury": 42.418154389224995,
+          "multiplier": 3.6282806396484375,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        },
+        {
+          "probability": 0.48268576254082884,
+          "cost": -47.78385187681,
+          "burden": 0.09635650277500002,
+          "tests": 0.0,
+          "target_absent_repairs": 0.09635650277500002,
+          "repairs": 0.46157067795,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.38471203385,
+          "output": 43.79291670073,
+          "failure": 0.0012094216499999998,
+          "terminal_stock": 2.6950801348650004,
+          "terminal_cash": 7.990812551025001,
+          "treasury": 42.417392115854994,
+          "multiplier": 3.6282958984375,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 59229,
+      "action_count": 414578,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 8,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.15,
+    "result": {
+      "cost": -47.89006910114898,
+      "burden": 0.15,
+      "dual_lower_bound": -47.89006910858643,
+      "optimality_gap": 7.4374497671669815e-09,
+      "supporting_multiplier": 1.4308109283447266,
+      "multiplier_bracket": [
+        1.4308090209960938,
+        1.4308128356933594
+      ],
+      "metrics": {
+        "cost": -47.89006910114898,
+        "burden": 0.15,
+        "tests": 0.0,
+        "target_absent_repairs": 0.15,
+        "repairs": 0.5323482643472802,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 1.5970447930418405,
+        "output": 44.07396958318684,
+        "failure": 0.0,
+        "terminal_stock": 2.706572155501992,
+        "terminal_cash": 7.993923793662323,
+        "treasury": 42.48300099648267
+      },
+      "components": [
+        {
+          "probability": 0.8969000262821062,
+          "cost": -47.894774609044006,
+          "burden": 0.15328869621,
+          "tests": 0.0,
+          "target_absent_repairs": 0.15328869621,
+          "repairs": 0.5358316513,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.6074949538999996,
+          "output": 44.091603285872,
+          "failure": 0.0,
+          "terminal_stock": 2.7053331385360004,
+          "terminal_cash": 7.994010065215001,
+          "treasury": 42.490098266756995,
+          "multiplier": 1.4308090209960938,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        },
+        {
+          "probability": 0.10309997371789381,
+          "cost": -47.849134365644,
+          "burden": 0.12139056771000001,
+          "tests": 0.0,
+          "target_absent_repairs": 0.12139056771000001,
+          "repairs": 0.5020451543,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.5061354629,
+          "output": 43.920568298671995,
+          "failure": 0.0,
+          "terminal_stock": 2.7173507649359996,
+          "terminal_cash": 7.993173289514999,
+          "treasury": 42.42125954625699,
+          "multiplier": 1.4308128356933594,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": -7.105427357601002e-15
+        }
+      ],
+      "state_count": 59229,
+      "action_count": 414578,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 8,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.2,
+    "result": {
+      "cost": -47.955711298952075,
+      "burden": 0.2,
+      "dual_lower_bound": -47.955711300901775,
+      "optimality_gap": 1.9497008452162845e-09,
+      "supporting_multiplier": 1.2579498291015625,
+      "multiplier_bracket": [
+        1.2579345703125,
+        1.257965087890625
+      ],
+      "metrics": {
+        "cost": -47.955711298952075,
+        "burden": 0.2,
+        "tests": 0.0,
+        "target_absent_repairs": 0.2,
+        "repairs": 0.5894593953263558,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 1.7683781859790675,
+        "output": 44.33038261179851,
+        "failure": 0.0,
+        "terminal_stock": 2.6968534365663177,
+        "terminal_cash": 7.994583193924767,
+        "treasury": 42.56742123189467
+      },
+      "components": [
+        {
+          "probability": 0.316945189517378,
+          "cost": -47.983312996184,
+          "burden": 0.22194154806000002,
+          "tests": 0.0,
+          "target_absent_repairs": 0.22194154806000002,
+          "repairs": 0.6188170238,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.8564510714,
+          "output": 44.438716850192,
+          "failure": 0.0,
+          "terminal_stock": 2.700523608696,
+          "terminal_cash": 7.997395441815,
+          "treasury": 42.584870336977,
+          "multiplier": 1.2579345703125,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        },
+        {
+          "probability": 0.683054810482622,
+          "cost": -47.94290379796399,
+          "burden": 0.18981887251000001,
+          "tests": 0.0,
+          "target_absent_repairs": 0.18981887251000001,
+          "repairs": 0.5758371223000002,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 1.7275113669000004,
+          "output": 44.280114294831996,
+          "failure": 0.0,
+          "terminal_stock": 2.6951504350160005,
+          "terminal_cash": 7.993278278965001,
+          "treasury": 42.55932464896699,
+          "multiplier": 1.257965087890625,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 0.0
+        }
+      ],
+      "state_count": 59229,
+      "action_count": 414578,
+      "mode": "adaptive"
+    }
+  },
+  {
+    "parameters": {
+      "horizon": 8,
+      "stock_cap": 3,
+      "cash_cap": 8,
+      "initial_stock": 3,
+      "initial_cash": 8,
+      "initial_ready": 1,
+      "initial_fault_probability": "0",
+      "onset": "0.1",
+      "clearance": "0.05",
+      "damage_healthy": "0.1",
+      "damage_fault": "0.8",
+      "sensitivity": "0.9",
+      "specificity": "0.9",
+      "output_per_stock": 2,
+      "upkeep_cost": 1,
+      "rebuild_cost": 3,
+      "test_cost": 2,
+      "repair_cost": 3,
+      "terminal_stock_value": 2,
+      "failure_cost": 12,
+      "test_burden": 0.05
+    },
+    "budget": 0.6,
+    "result": {
+      "cost": -48.149785558199994,
+      "burden": 0.4408194435,
+      "dual_lower_bound": -48.149785558199994,
+      "optimality_gap": 0.0,
+      "supporting_multiplier": 0.0,
+      "metrics": {
+        "cost": -48.149785558199994,
+        "burden": 0.4408194435,
+        "tests": 0.0,
+        "target_absent_repairs": 0.4408194435,
+        "repairs": 0.948127791,
+        "standby": 0.0,
+        "rebuilds": 0.0,
+        "expense": 2.8443833730000003,
+        "output": 45.3423288836,
+        "failure": 0.0,
+        "terminal_stock": 2.8259200238,
+        "terminal_cash": 7.9996786286,
+        "treasury": 42.498266882
+      },
+      "components": [
+        {
+          "probability": 1.0,
+          "cost": -48.149785558199994,
+          "burden": 0.4408194435,
+          "tests": 0.0,
+          "target_absent_repairs": 0.4408194435,
+          "repairs": 0.948127791,
+          "standby": 0.0,
+          "rebuilds": 0.0,
+          "expense": 2.8443833730000003,
+          "output": 45.3423288836,
+          "failure": 0.0,
+          "terminal_stock": 2.8259200238,
+          "terminal_cash": 7.9996786286,
+          "treasury": 42.498266882,
+          "multiplier": 0.0,
+          "root_action": {
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          "conservation_residual": 7.105427357601002e-15
+        }
+      ],
+      "state_count": 59229,
+      "action_count": 414578,
+      "mode": "adaptive"
+    }
+  }
+]

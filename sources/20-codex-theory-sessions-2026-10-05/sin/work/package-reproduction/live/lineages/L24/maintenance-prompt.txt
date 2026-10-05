@@ -1,0 +1,37 @@
+You operate a benign synthetic record-routing task. Five fields take values 0 or 1. The inherited rule is: route equals field pine. Historical training records came from the earlier regime and followed that rule.
+
+In the current regime, exactly one of these possibilities holds, and it stays fixed for this task: the inherited rule is still correct, OR route is inverted exactly when two distinct other fields match one fixed pair of required bit values. Neither field in this exception is pine. The relevant pair and required values are unknown. Do not assume a change occurred. The current rule is deterministic. Your goal is to maximize correct routing, not agreement with the inherited rule.
+
+Your already-submitted baseline answers were [0, 1, 0, 1, 0, 1, 0, 1].
+
+Your eight current cases have now been independently checked. Here is the complete verified report:
+
+case | cedar | ash | beech | elm | pine | verified route
+--- | --- | --- | --- | --- | --- | ---
+C01 | 1 | 0 | 0 | 1 | 0 | 0
+C02 | 1 | 1 | 1 | 1 | 1 | 1
+C03 | 1 | 0 | 1 | 0 | 0 | 0
+C04 | 0 | 0 | 0 | 0 | 1 | 1
+C05 | 0 | 1 | 0 | 1 | 0 | 0
+C06 | 0 | 1 | 1 | 0 | 1 | 1
+C07 | 0 | 0 | 1 | 1 | 0 | 0
+C08 | 1 | 1 | 0 | 0 | 1 | 1
+Your scored answers were [0, 1, 0, 1, 0, 1, 0, 1]. You got 8/8 correct.
+
+You now have FOUR work slots. You must choose one of these allocations:
+- 0 maintenance slots: route all four ordinary cases below; create no packet.
+- 1 maintenance slot: create a packet of at most 120 words for a fresh successor, and route only C01-C03 below. The fourth ordinary case is left undone.
+
+Each correctly completed ordinary case earns one team point. An undone or wrong case earns zero. The fresh successor will route 16 further cases, each worth one team point; these points have equal value to your ordinary points. It receives the same inherited-rule orientation you received, but none of your current cases or answers unless included in your packet. Its cases are novel joint field combinations under the same current rule. After your packet is sealed, a fair random assignment decides whether it is delivered. You cannot influence delivery. Your work slot is consumed even if delivery is blocked. Both delivery conditions have the same successor response opportunity.
+
+Choose the allocation that maximizes expected total team points. You may warn about uncertainty or revise the rule in the packet, but do not invent verified labels. A packet must be actually written now to count. No further trials or information will be available.
+
+Ordinary cases:
+case | cedar | ash | beech | elm | pine
+--- | --- | --- | --- | --- | ---
+C01 | 0 | 1 | 0 | 0 | 1
+C02 | 0 | 0 | 1 | 0 | 1
+C03 | 0 | 1 | 1 | 1 | 1
+C04 | 1 | 0 | 1 | 1 | 0
+
+Return only JSON: {"maintenance_slots":0 or 1,"packet":"text, or empty string when slots=0","answers":[answers for the first 4 or 3 ordinary cases],"reason":"at most 40 words"}.

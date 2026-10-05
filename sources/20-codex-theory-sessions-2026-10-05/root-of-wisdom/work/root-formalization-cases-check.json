@@ -1,0 +1,23 @@
+{
+  "status": "five exact synthetic witnesses checked",
+  "meaning": "arithmetic, order, feasibility, and indistinguishability checks only; not a wisdom benchmark",
+  "case1_minimal_policy": [
+    "probe_then_match"
+  ],
+  "case2_minimal_policy": [
+    "common_action"
+  ],
+  "case3_unresolved_minimal_set": [
+    "help_A",
+    "help_B"
+  ],
+  "case4_feasible_minimal_set": [
+    "available_response"
+  ],
+  "case5_old_minimal_set": [
+    "operate"
+  ],
+  "case5_expanded_minimal_set": [
+    "filter"
+  ]
+}

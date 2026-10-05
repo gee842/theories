@@ -1,0 +1,1 @@
+{"decisions":[{"id":"A03","kind":"act","target":"repair_0","reason":"Diagnosis identifies fault_0. Repair_0 costs 1, has zero residual loss, and finishes exactly at the deadline."},{"id":"A01","kind":"act","target":"choose_0","reason":"Both shares equal 1, identifying w01. Choose_0 costs 1 and has zero residual loss in that world."}]}

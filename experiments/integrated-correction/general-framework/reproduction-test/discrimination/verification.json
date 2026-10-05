@@ -1,0 +1,45 @@
+{
+  "all_checks_passed": true,
+  "scope": "Independent rational raw-case rows for all reachable states in four primary arms; floating-point propagation of those rows for round-25 skill; independent rational reduced-chain calculation. This verifies supplied models, not empirical truth.",
+  "row_constructor": "Earlier independent raw-case enumerator, with one in-memory turnover-law extension",
+  "source_files_unchanged": true,
+  "reachable_rows_by_arm": {
+    "feedback_enabled": 181,
+    "feedback_blocked": 181,
+    "constant_enabled": 181,
+    "constant_blocked": 181
+  },
+  "total_raw_case_rows_checked": 724,
+  "maximum_row_probability_difference": 2.220446049250313e-16,
+  "maximum_reward_difference": 5.551115123125783e-17,
+  "maximum_reduced_projection_difference": 1.1102230246251565e-16,
+  "maximum_propagation_mass_error": 1.3322676295501878e-15,
+  "round25_skill_retention": {
+    "feedback_enabled": 0.6793088915746338,
+    "feedback_blocked": 0.5794189291049126,
+    "constant_enabled": 0.5794189291049129,
+    "constant_blocked": 0.5794189291049129
+  },
+  "saved_endpoint_differences": {
+    "feedback_enabled": 1.7763568394002505e-15,
+    "feedback_blocked": 4.440892098500626e-16,
+    "constant_enabled": 9.992007221626409e-16,
+    "constant_blocked": 3.3306690738754696e-16
+  },
+  "within_model_execution_effects": {
+    "feedback": 0.09988996246972126,
+    "constant": 0.0
+  },
+  "primary_difference_between_effects": 0.09988996246972126,
+  "primary_difference_from_saved_result": 1.5543122344752192e-15,
+  "reduced_chain_exact_survival25": "2897094645524565070998538830349299923811927497027/5000000000000000000000000000000000000000000000000",
+  "reduced_chain_decimal_survival25": 0.579418929104913,
+  "audited_source_sha256": {
+    "reproduction-test/discrimination/analyze.py": "c79c92fa500e900a71087015e806aecf54afdfcff1e8b817f95df9a84ff436ea",
+    "reproduction-test/discrimination/analysis.json": "b029f0a1b790f59558f42687c021451a2ee5a972cc1ec20d321a69752cb7acad",
+    "reproduction-test/discrimination/PROTOCOL.md": "ff61e8a754f25b83cbffc26faebf0c71df437c98d31847d4f7ff8e6f375bca53",
+    "gap-resolution/formation-coupled/analyze.py": "82045d4ef5d29efbbf2ccdcc9ea3180de5b591428292689e9ccf60ee3941aeca",
+    "gap-resolution/formation-coupled/verify_independent.py": "fb39a40507661dc3d8ec51e158a4d132d0763d4ffcb065ab4ab0af58e245835f"
+  },
+  "checker_sha256": "3924f1ec7380e3fed02e734afc448be7fc432cba8490d0a9cbb28dcd8ed98f52"
+}

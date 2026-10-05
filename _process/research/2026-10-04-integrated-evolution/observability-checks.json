@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "scope": "Exact finite illustrative models; not empirical validation",
+  "method": "Finite-horizon backward recursion on information supports",
+  "standard_library_only": true,
+  "repair_cases": [
+    {
+      "revelation_time": 8,
+      "initial_reserve": 10,
+      "completion_latency": 3,
+      "horizon": 12,
+      "guaranteed_safe": false,
+      "expected": false,
+      "information_states_checked": 151
+    },
+    {
+      "revelation_time": 7,
+      "initial_reserve": 10,
+      "completion_latency": 3,
+      "horizon": 12,
+      "guaranteed_safe": true,
+      "expected": true,
+      "information_states_checked": 112
+    },
+    {
+      "revelation_time": 8,
+      "initial_reserve": 11,
+      "completion_latency": 3,
+      "horizon": 12,
+      "guaranteed_safe": true,
+      "expected": true,
+      "information_states_checked": 113
+    },
+    {
+      "revelation_time": 8,
+      "initial_reserve": 10,
+      "completion_latency": 2,
+      "horizon": 12,
+      "guaranteed_safe": true,
+      "expected": true,
+      "information_states_checked": 96
+    },
+    {
+      "revelation_time": 0,
+      "initial_reserve": 10,
+      "completion_latency": 3,
+      "horizon": 12,
+      "guaranteed_safe": true,
+      "expected": true,
+      "information_states_checked": 80
+    }
+  ],
+  "timing_and_observation_checks": {
+    "correct_completion_at_floor_is_safe": true,
+    "successful_repair_halts_reserve_loss": true,
+    "completion_after_floor_deadline_fails": true,
+    "recipe_initiation_is_irreversible": true,
+    "wrong_recipe_fails_on_completion": true,
+    "diagnosis_updates_observations_during_pending_repair": true,
+    "later_information_does_not_reverse_commitment": true,
+    "diagnosis_splits_information_support": true
+  },
+  "first_action_overlap_counterexample": {
+    "horizon": 2,
+    "each_state_individually_viable": true,
+    "common_full_information_first_actions": [
+      "advance"
+    ],
+    "observation_based_guarantee_without_later_revelation": false,
+    "observation_based_guarantee_with_later_revelation": true
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "arithmetic": "Finite Boolean enumeration and exact rational accuracies",
+  "global_states": 6144,
+  "site_swap_equivariance_checks": 12288,
+  "local_regulation_trials": 64,
+  "coupled_regulation_with_message_trials": 64,
+  "record_intervention_checks": 8,
+  "all_binary_target_sufficiency_checks": 32,
+  "history_cases": [
+    {
+      "field": [
+        0,
+        0
+      ],
+      "records": [
+        0,
+        0
+      ],
+      "current_sensors": [
+        0,
+        0
+      ]
+    },
+    {
+      "field": [
+        0,
+        1
+      ],
+      "records": [
+        0,
+        1
+      ],
+      "current_sensors": [
+        0,
+        0
+      ]
+    },
+    {
+      "field": [
+        1,
+        0
+      ],
+      "records": [
+        1,
+        0
+      ],
+      "current_sensors": [
+        0,
+        0
+      ]
+    },
+    {
+      "field": [
+        1,
+        1
+      ],
+      "records": [
+        1,
+        1
+      ],
+      "current_sensors": [
+        0,
+        0
+      ]
+    }
+  ],
+  "exhaustive_local_policy_results": [
+    {
+      "site": 0,
+      "mode": 0,
+      "policy": [
+        0,
+        0
+      ],
+      "accuracy": "1/2"
+    },
+    {
+      "site": 0,
+      "mode": 0,
+      "policy": [
+        0,
+        1
+      ],
+      "accuracy": "1"
+    },
+    {
+      "site": 0,
+      "mode": 0,
+      "policy": [
+        1,
+        0
+      ],
+      "accuracy": "0"
+    },
+    {
+      "site": 0,
+      "mode": 0,
+      "policy": [
+        1,
+        1
+      ],
+      "accuracy": "1/2"
+    },
+    {
+      "site": 0,
+      "mode": 1,
+      "policy": [
+        0,
+        0
+      ],
+      "accuracy": "1/2"
+    },
+    {
+      "site": 0,
+      "mode": 1,
+      "policy": [
+        0,
+        1
+      ],
+      "accuracy": "1/2"
+    },
+    {
+      "site": 0,
+      "mode": 1,
+      "policy": [
+        1,
+        0
+      ],
+      "accuracy": "1/2"
+    },
+    {
+      "site": 0,
+      "mode": 1,
+      "policy": [
+        1,
+        1
+      ],
+      "accuracy": "1/2"
+    },
+    {
+      "site": 1,
+      "mode": 0,
+      "policy": [
+        0,
+        0
+      ],
+      "accuracy": "1/2"
+    },
+    {
+      "site": 1,
+      "mode": 0,
+      "policy": [
+        0,
+        1
+      ],
+      "accuracy": "1"
+    },
+    {
+      "site": 1,
+      "mode": 0,
+      "policy": [
+        1,
+        0
+      ],
+      "accuracy": "0"
+    },
+    {
+      "site": 1,
+      "mode": 0,
+      "policy": [
+        1,
+        1
+      ],
+      "accuracy": "1/2"
+    },
+    {
+      "site": 1,
+      "mode": 1,
+      "policy": [
+        0,
+        0
+      ],
+      "accuracy": "1/2"
+    },
+    {
+      "site": 1,
+      "mode": 1,
+      "policy": [
+        0,
+        1
+      ],
+      "accuracy": "1/2"
+    },
+    {
+      "site": 1,
+      "mode": 1,
+      "policy": [
+        1,
+        0
+      ],
+      "accuracy": "1/2"
+    },
+    {
+      "site": 1,
+      "mode": 1,
+      "policy": [
+        1,
+        1
+      ],
+      "accuracy": "1/2"
+    }
+  ],
+  "private_view_classes": {
+    "A": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "B": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "parity_required_classes": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    ]
+  },
+  "proved_not_measured": [
+    "Claims are conditional on supplied copying, retention, actuator, timing and viability mechanisms.",
+    "No claim about phenomenal experience or the historical origin of these mechanisms.",
+    "Uniform disturbance ensemble is used for accuracy comparisons; deterministic regulation is all-state."
+  ]
+}

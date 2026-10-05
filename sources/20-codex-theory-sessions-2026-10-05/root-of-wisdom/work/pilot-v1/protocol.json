@@ -1,0 +1,57 @@
+{
+  "frozen_at": "2026-10-05T04:57:56.005565+07:00",
+  "status": "prospectively specified local protocol; not external preregistration",
+  "conditions": [
+    "ordinary",
+    "reflection",
+    "discipline"
+  ],
+  "fresh_participant_contexts_per_condition": 2,
+  "cases_per_context": 12,
+  "matched_pairs_per_context": 6,
+  "tools_allowed": false,
+  "response_schema": {
+    "id": "case identifier",
+    "choice": "A/B/C/D",
+    "confidence": "integer 0..100",
+    "reason": "maximum 30 words"
+  },
+  "order": "one seeded shuffle for replicate 1; reverse for replicate 2; same within replicate across conditions",
+  "order_seed": 2026100501,
+  "controls": [
+    "identical cases and answer format",
+    "no tool access",
+    "same visible output cap",
+    "fresh fork-none contexts",
+    "no model or reasoning-effort override"
+  ],
+  "uncontrolled": [
+    "hidden reasoning tokens",
+    "sampling seed",
+    "training exposure",
+    "stochastic context variation",
+    "actual response word compliance"
+  ],
+  "primary_endpoint": {
+    "name": "unsupported scope endorsement",
+    "denominator": "all responses to four prospectively designated sufficiency/model-expansion cases",
+    "classification": "membership in case-authored scope_overclaim_options fixed before participant runs"
+  },
+  "secondary_endpoints": [
+    "exact choice accuracy",
+    "false rejection of warranted scope on designated cases",
+    "both members of a matched pair correct",
+    "revision-required versus retention-required accuracy",
+    "format and word-limit compliance"
+  ],
+  "exploratory_endpoint": "confidence and binary correctness Brier (p_correct minus indicator)^2 using confidence assigned to the chosen option; not a full four-option multiclass score",
+  "scoring": "deterministic key-based scoring; no LLM-judge quality rating used as primary outcome",
+  "exclusions": "retain every run; invalid JSON may be parsed without changing content; missing/invalid answers scored wrong and reported; no post-hoc replacement",
+  "inference_limit": "descriptive feasibility pilot; six batches, not 72 independent participant trials; no significance tests, no power or general efficacy claim",
+  "stop_rules": [
+    "stop participant dispatch if case ambiguity or wrong key discovered before freeze; repair and log before any run",
+    "if ambiguity found after running, retain original scoring and separately show sensitivity; do not silently edit cases or replace runs",
+    "finish two prespecified replicates per condition; do not add samples based on apparent success"
+  ],
+  "case_freeze_pending": true
+}

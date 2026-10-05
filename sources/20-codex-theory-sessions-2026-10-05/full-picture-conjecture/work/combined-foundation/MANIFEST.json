@@ -1,0 +1,153 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "fc4d2b263f7be9d2dfa1fee8839a88b984ef4aa51c7498e4f4320eafdbcd4ed3"
+    },
+    {
+      "path": "cognitive-scope-audit.json",
+      "sha256": "8d779cfe7ea7412844e54c8d978cc3ffc879e3fd5753b68b452051af65283797"
+    },
+    {
+      "path": "cognitive_scope_audit.py",
+      "sha256": "c6f32368ef83a2ef7766f9866adc2c8e7ed8f879372f7715f2f171da1121f443"
+    },
+    {
+      "path": "combined-process-proof.md",
+      "sha256": "5cfb9d9f7064d4ee990c00bc9b758d0a1322b51953eeca3cc9493d4ca3c0f104"
+    },
+    {
+      "path": "implementation/MODEL.md",
+      "sha256": "7941b560ac65bc86b1bfff6090395337f27e78ff7031e410a4d31257f2d8c9b9"
+    },
+    {
+      "path": "implementation/README.md",
+      "sha256": "8c8e0604e58fe016892f4505086229ead470c1fa12c1885fd51abcd16c6f060a"
+    },
+    {
+      "path": "implementation/RESULTS.md",
+      "sha256": "62351e0a9a30089ecbb2095b673b8b96dc00eb47fd7b217de7b82a7b6e16acdb"
+    },
+    {
+      "path": "implementation/graph-baseline.json",
+      "sha256": "c8f26f70837eddb784834a34954f1e47684d2fe6942b3783476a77622d4f2bbf"
+    },
+    {
+      "path": "implementation/graph-execution_blocked.json",
+      "sha256": "52e6fd58b392683849699686b7bf8169f1f6ecf5dfdd8614318d2ba87227e751"
+    },
+    {
+      "path": "implementation/graph-misleading_calibration.json",
+      "sha256": "beeb13600cf115b4a84fad85e5038d7ddd40d7b5523f7752b09fc9887e4fa94f"
+    },
+    {
+      "path": "implementation/graph-no_maintenance.json",
+      "sha256": "2cfd4914767bace7baad52b8ec34f7a0296af64ff00aa147a63e390d0de192fb"
+    },
+    {
+      "path": "implementation/graph-no_renewal.json",
+      "sha256": "807bfc1022b57185de4ce43f6eb567a449399af79a11b1f3c2250f7013e27232"
+    },
+    {
+      "path": "implementation/graph-no_training.json",
+      "sha256": "8e0573782ab7109f6bdadb2807c6bb95756c458e36828e542cbacf31a5c2967c"
+    },
+    {
+      "path": "implementation/graph-record_loss.json",
+      "sha256": "bf3787d3750113130c2fb420508b028e0e8c6daf237d9a0cad478fe1d2eb2a33"
+    },
+    {
+      "path": "implementation/graph-score_capture.json",
+      "sha256": "c04ecd6da158f8111e593e0f1e81f044e2b1e70219a8f58f44197f1471439216"
+    },
+    {
+      "path": "implementation/independent-oracle-results.json",
+      "sha256": "5ed9db3ac0dbf312aee0d22386adde3cd9b34024793738a5a7ea90cf3c6075e0"
+    },
+    {
+      "path": "implementation/independent_oracle.py",
+      "sha256": "65af4923c313fe5a6e22967372f4d2ff62d697216e50c7b86eae417d931eec68"
+    },
+    {
+      "path": "implementation/model.py",
+      "sha256": "440a7623377867b1147b44157caf240b9ce5c63d77fd9a1ed90e4d57e11bef6f"
+    },
+    {
+      "path": "implementation/results.json",
+      "sha256": "5f0bdf35a6f587d73387fb3a44b24a835ce1239c91be15647d743c2f7a6d3e7e"
+    },
+    {
+      "path": "implementation/verify.py",
+      "sha256": "70e19a25aba82eec2a6f937c97f0dd1e9a2149cbb40c416a4a5dd5de636fedec"
+    },
+    {
+      "path": "implementation-proof-review.md",
+      "sha256": "8b00fac960079440d3bd153849693f76b58ff619a662bb995a53fb55964e22e0"
+    },
+    {
+      "path": "implementation-review-check.json",
+      "sha256": "0c1be59e49ac7f2d95f282351c3f357652ababb0407f6e03490c6a9c8766ba21"
+    },
+    {
+      "path": "implementation-review-check.py",
+      "sha256": "b03d47c0f671291ed69571f8925da40351a477ff93f5194f2f0520487394f9e2"
+    },
+    {
+      "path": "independent-graph-results.json",
+      "sha256": "1742321cd7fe71d272bc0cdd33b6fbb1e0ccd19f9be50b5c3c2627e1adf5fdac"
+    },
+    {
+      "path": "independent_graph_check.py",
+      "sha256": "2f989e461d7fa829f3c9386bb7e08525501140d37cad18b6589417d15fb632ea"
+    },
+    {
+      "path": "model-scope-review.md",
+      "sha256": "49faa985f0a6290efddf1931e06346eb9d71b84d6272a461eb175eeab9a9a316"
+    },
+    {
+      "path": "scope-contract.md",
+      "sha256": "7a7ed8e492a139fcb298df901108a38d6911cb9f055131e1ccfc90ea0d8c96de"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "71ccfc8f7145d4b46a0f2ac02de5f1e24a27fe7867e9717d78c3d0814eabc373"
+    },
+    {
+      "path": "source-snapshots/faithful-representation.md",
+      "sha256": "88ab9787ca40b6c12f9997793ee0285d2602855127380caa99ef44624ea0ca0a"
+    },
+    {
+      "path": "source-snapshots/general-framework.md",
+      "sha256": "b1a8bad8019a138e52e1c27b5c897fb4db620440caef244eff5c017c86edf579"
+    },
+    {
+      "path": "source-snapshots/normative-core.md",
+      "sha256": "87a1ec6c5f01b9fb852c363da242d4f195eea871a2244c83d7b69fbb5d653d88"
+    },
+    {
+      "path": "source-snapshots/normative-specification.md",
+      "sha256": "77f02c7a755d2749a00d3fdd25e8e0fa605fd6d17645314a01e6a59a2f9694c1"
+    },
+    {
+      "path": "source-snapshots/paid-revision-proof.md",
+      "sha256": "8a9850209910a3d1726c1d64429effc3cdfc3c6b1594749652a29b92587773f4"
+    },
+    {
+      "path": "source-snapshots/previous-completeness-bridge.md",
+      "sha256": "0134ba61197b529269e39d85f344aa611511f4d8c47813f83015bfe8e4fb99f0"
+    },
+    {
+      "path": "source-snapshots/structural-closure.md",
+      "sha256": "5293ac3553462256cd38521f4f87d7a45cddef7a65d02df6d68f5aa3992e325a"
+    },
+    {
+      "path": "tradition-integration.md",
+      "sha256": "9095e71a3a58a3ecdba9c2ff7c1274b986ebe1d845ccc97da84ba46cb30bf120"
+    },
+    {
+      "path": "tradition-source-ledger.md",
+      "sha256": "47a3f97d17feeafadcb7070c34ed8dc2c492accd191ed2813fad92a8149af0f7"
+    }
+  ]
+}

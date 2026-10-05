@@ -1,0 +1,259 @@
+{
+  "status": "passed",
+  "status_of_analysis": "exploratory followup, outside frozen main design",
+  "state": {
+    "horizon": 1,
+    "stock": 1,
+    "cash": 6,
+    "treasury": 0,
+    "ready": 1,
+    "fault_prior": "1/2"
+  },
+  "unchanged": "all physical transition, diagnostic reliability, payment and burden costs",
+  "metric_order": [
+    "failure",
+    "expense",
+    "burden",
+    "unrecovered"
+  ],
+  "all_eight_legal_prescriptions": [
+    {
+      "id": 0,
+      "action": {
+        "support": "drop",
+        "test": false,
+        "repair_rule": {
+          "none": 0
+        }
+      },
+      "vector": [
+        "9/20",
+        "0",
+        "0",
+        "9/20"
+      ],
+      "score": "9"
+    },
+    {
+      "id": 1,
+      "action": {
+        "support": "drop",
+        "test": false,
+        "repair_rule": {
+          "none": 1
+        }
+      },
+      "vector": [
+        "0",
+        "3",
+        "1/2",
+        "1/10"
+      ],
+      "score": "8"
+    },
+    {
+      "id": 2,
+      "action": {
+        "support": "keep",
+        "test": false,
+        "repair_rule": {
+          "none": 0
+        }
+      },
+      "vector": [
+        "9/20",
+        "1",
+        "0",
+        "9/20"
+      ],
+      "score": "10"
+    },
+    {
+      "id": 3,
+      "action": {
+        "support": "keep",
+        "test": false,
+        "repair_rule": {
+          "none": 1
+        }
+      },
+      "vector": [
+        "0",
+        "4",
+        "1/2",
+        "1/10"
+      ],
+      "score": "9"
+    },
+    {
+      "id": 4,
+      "action": {
+        "support": "keep",
+        "test": true,
+        "repair_rule": {
+          "positive": 0,
+          "negative": 0
+        }
+      },
+      "vector": [
+        "9/20",
+        "3",
+        "1/20",
+        "9/20"
+      ],
+      "score": "25/2"
+    },
+    {
+      "id": 5,
+      "action": {
+        "support": "keep",
+        "test": true,
+        "repair_rule": {
+          "positive": 0,
+          "negative": 1
+        }
+      },
+      "vector": [
+        "73/200",
+        "9/2",
+        "1/2",
+        "83/200"
+      ],
+      "score": "84/5"
+    },
+    {
+      "id": 6,
+      "action": {
+        "support": "keep",
+        "test": true,
+        "repair_rule": {
+          "positive": 1,
+          "negative": 0
+        }
+      },
+      "vector": [
+        "17/200",
+        "9/2",
+        "1/10",
+        "27/200"
+      ],
+      "score": "36/5"
+    },
+    {
+      "id": 7,
+      "action": {
+        "support": "keep",
+        "test": true,
+        "repair_rule": {
+          "positive": 1,
+          "negative": 1
+        }
+      },
+      "vector": [
+        "0",
+        "6",
+        "11/20",
+        "1/10"
+      ],
+      "score": "23/2"
+    }
+  ],
+  "new_weight": [
+    20,
+    1,
+    10,
+    0
+  ],
+  "unique_scalar_winner": {
+    "id": 6,
+    "action": {
+      "support": "keep",
+      "test": true,
+      "repair_rule": {
+        "positive": 1,
+        "negative": 0
+      }
+    },
+    "vector": [
+      "17/200",
+      "9/2",
+      "1/10",
+      "27/200"
+    ],
+    "score": "36/5"
+  },
+  "constraint": {
+    "expense_at_most": "9/2",
+    "burden_at_most": "1/10"
+  },
+  "all_policy_constrained_minimum": [
+    "17/200",
+    [
+      "17/200",
+      "9/2",
+      "1/10",
+      "27/200"
+    ],
+    [
+      [
+        6,
+        "1"
+      ]
+    ]
+  ],
+  "no_test_randomized_constrained_minimum": [
+    "9/25",
+    [
+      "9/25",
+      "3/5",
+      "1/10",
+      "19/50"
+    ],
+    [
+      [
+        0,
+        "4/5"
+      ],
+      [
+        1,
+        "1/5"
+      ]
+    ]
+  ],
+  "original_seven_probe_optima_at_new_state": {
+    "failure": {
+      "action_id": 1,
+      "score": "0"
+    },
+    "recovery": {
+      "action_id": 1,
+      "score": "1/10"
+    },
+    "expense": {
+      "action_id": 0,
+      "score": "0"
+    },
+    "burden": {
+      "action_id": 0,
+      "score": "0"
+    },
+    "failure_expense": {
+      "action_id": 1,
+      "score": "3"
+    },
+    "failure_expense_burden": {
+      "action_id": 1,
+      "score": "5"
+    },
+    "mixed": {
+      "action_id": 0,
+      "score": "18/5"
+    }
+  },
+  "protected_file_hashes_unchanged": {
+    "model.py": "051976c28e15a06bbed3be9c95328755bcbf676dfe30440c03a3e0684d000135",
+    "PROTOCOL.md": "076420c06d25f634266da8bcf8d60a6b0689f3032e5afc076784ff4ed42154cb",
+    "main.json": "85800d19fa584c0075275bb9060b6e910038e45e3d14450817d1b493f976b0e3"
+  },
+  "method": "independent latent-event oracle; exact Fraction vertex enumeration over randomized prescriptions"
+}

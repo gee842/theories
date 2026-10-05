@@ -1,0 +1,559 @@
+{
+  "schema_version": "active-inquiry-v2.1",
+  "public_rules": "Each case is independent. The hidden world is sampled from the listed prior. You know the full model below but not the selected world. At each turn choose exactly one listed query ID or terminal action ID. A query returns only its listed response in the hidden world. Queries are deterministic, may not be repeated, and at most two may be used. All listed prerequisite queries must already have been completed. A terminal action ends the case. All fees and residual losses use loss units; one cash unit pays one fee unit. Minimize expected total loss: all query fees plus terminal action fee plus world-dependent residual loss. Cash budget covers upfront query and action fees only, not residual loss. Durations add sequentially, and the terminal action must finish by the deadline. Time has no additional loss charge. A choice is feasible only if it fits remaining cash and time and satisfies query limits and prerequisites. The fallback always costs zero cash and time. No external tools or evidence are available. Tables give values in world order. Fractions are exact. All worlds, responses, fees and losses are specified.",
+  "matched_pairs": [
+    {
+      "case_ids": [
+        "A01",
+        "A02"
+      ],
+      "construct": "complementary evidence",
+      "only_model_difference": "share_a and share_b fees: 1 versus 4"
+    },
+    {
+      "case_ids": [
+        "A03",
+        "A04"
+      ],
+      "construct": "diagnosis consumes action time",
+      "only_model_difference": "deadline: 6 versus 5"
+    },
+    {
+      "case_ids": [
+        "A05",
+        "A06"
+      ],
+      "construct": "decision sufficiency despite uncertainty",
+      "only_model_difference": "option_b residual loss in state_1: 9 versus 0"
+    }
+  ],
+  "private_realization": {
+    "seed": 2026100502,
+    "method": "Python random.Random(seed); for the three pairs in file order, draw randrange(number of worlds), using the listed world order; use that same world for both members of each pair.",
+    "balancing": "No balancing or resampling; matched members share the draw. Each pair draw is independent and has its listed uniform prior.",
+    "selected_worlds_by_pair": [
+      "w01",
+      "fault_0",
+      "state_0"
+    ],
+    "disclosure": "Private; never include this object, selected worlds, or oracle results in participant material. Pair structure and cross-case coupling are also private; run each case with fresh isolated context."
+  },
+  "cases": [
+    {
+      "case_id": "A01",
+      "worlds": [
+        {
+          "id": "w00",
+          "prior": "1/4"
+        },
+        {
+          "id": "w01",
+          "prior": "1/4"
+        },
+        {
+          "id": "w10",
+          "prior": "1/4"
+        },
+        {
+          "id": "w11",
+          "prior": "1/4"
+        }
+      ],
+      "queries": [
+        {
+          "id": "share_a",
+          "fee": "1",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "w00": "0",
+            "w01": "1",
+            "w10": "0",
+            "w11": "1"
+          }
+        },
+        {
+          "id": "share_b",
+          "fee": "1",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "w00": "0",
+            "w01": "1",
+            "w10": "1",
+            "w11": "0"
+          }
+        },
+        {
+          "id": "status",
+          "fee": "1/2",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "w00": "ready",
+            "w01": "ready",
+            "w10": "ready",
+            "w11": "ready"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "choose_0",
+          "fee": "1",
+          "duration": 1,
+          "residual_loss_by_world": {
+            "w00": "0",
+            "w01": "0",
+            "w10": "12",
+            "w11": "12"
+          }
+        },
+        {
+          "id": "choose_1",
+          "fee": "1",
+          "duration": 1,
+          "residual_loss_by_world": {
+            "w00": "12",
+            "w01": "12",
+            "w10": "0",
+            "w11": "0"
+          }
+        },
+        {
+          "id": "fallback",
+          "fee": "0",
+          "duration": 0,
+          "residual_loss_by_world": {
+            "w00": "8",
+            "w01": "8",
+            "w10": "8",
+            "w11": "8"
+          }
+        }
+      ],
+      "constraints": {
+        "max_queries": 2,
+        "cash_budget": "10",
+        "deadline": 5
+      },
+      "private": {
+        "selected_world": "w01"
+      }
+    },
+    {
+      "case_id": "A02",
+      "worlds": [
+        {
+          "id": "w00",
+          "prior": "1/4"
+        },
+        {
+          "id": "w01",
+          "prior": "1/4"
+        },
+        {
+          "id": "w10",
+          "prior": "1/4"
+        },
+        {
+          "id": "w11",
+          "prior": "1/4"
+        }
+      ],
+      "queries": [
+        {
+          "id": "share_a",
+          "fee": "4",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "w00": "0",
+            "w01": "1",
+            "w10": "0",
+            "w11": "1"
+          }
+        },
+        {
+          "id": "share_b",
+          "fee": "4",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "w00": "0",
+            "w01": "1",
+            "w10": "1",
+            "w11": "0"
+          }
+        },
+        {
+          "id": "status",
+          "fee": "1/2",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "w00": "ready",
+            "w01": "ready",
+            "w10": "ready",
+            "w11": "ready"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "choose_0",
+          "fee": "1",
+          "duration": 1,
+          "residual_loss_by_world": {
+            "w00": "0",
+            "w01": "0",
+            "w10": "12",
+            "w11": "12"
+          }
+        },
+        {
+          "id": "choose_1",
+          "fee": "1",
+          "duration": 1,
+          "residual_loss_by_world": {
+            "w00": "12",
+            "w01": "12",
+            "w10": "0",
+            "w11": "0"
+          }
+        },
+        {
+          "id": "fallback",
+          "fee": "0",
+          "duration": 0,
+          "residual_loss_by_world": {
+            "w00": "8",
+            "w01": "8",
+            "w10": "8",
+            "w11": "8"
+          }
+        }
+      ],
+      "constraints": {
+        "max_queries": 2,
+        "cash_budget": "10",
+        "deadline": 5
+      },
+      "private": {
+        "selected_world": "w01"
+      }
+    },
+    {
+      "case_id": "A03",
+      "worlds": [
+        {
+          "id": "fault_0",
+          "prior": "1/2"
+        },
+        {
+          "id": "fault_1",
+          "prior": "1/2"
+        }
+      ],
+      "queries": [
+        {
+          "id": "open_panel",
+          "fee": "1",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "fault_0": "opened",
+            "fault_1": "opened"
+          }
+        },
+        {
+          "id": "diagnose",
+          "fee": "1",
+          "duration": 2,
+          "prerequisites": [
+            "open_panel"
+          ],
+          "response_by_world": {
+            "fault_0": "fault_0",
+            "fault_1": "fault_1"
+          }
+        },
+        {
+          "id": "status",
+          "fee": "1/2",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "fault_0": "online",
+            "fault_1": "online"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "repair_0",
+          "fee": "1",
+          "duration": 3,
+          "residual_loss_by_world": {
+            "fault_0": "0",
+            "fault_1": "20"
+          }
+        },
+        {
+          "id": "repair_1",
+          "fee": "1",
+          "duration": 3,
+          "residual_loss_by_world": {
+            "fault_0": "20",
+            "fault_1": "0"
+          }
+        },
+        {
+          "id": "fallback",
+          "fee": "0",
+          "duration": 0,
+          "residual_loss_by_world": {
+            "fault_0": "8",
+            "fault_1": "8"
+          }
+        }
+      ],
+      "constraints": {
+        "max_queries": 2,
+        "cash_budget": "4",
+        "deadline": 6
+      },
+      "private": {
+        "selected_world": "fault_0"
+      }
+    },
+    {
+      "case_id": "A04",
+      "worlds": [
+        {
+          "id": "fault_0",
+          "prior": "1/2"
+        },
+        {
+          "id": "fault_1",
+          "prior": "1/2"
+        }
+      ],
+      "queries": [
+        {
+          "id": "open_panel",
+          "fee": "1",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "fault_0": "opened",
+            "fault_1": "opened"
+          }
+        },
+        {
+          "id": "diagnose",
+          "fee": "1",
+          "duration": 2,
+          "prerequisites": [
+            "open_panel"
+          ],
+          "response_by_world": {
+            "fault_0": "fault_0",
+            "fault_1": "fault_1"
+          }
+        },
+        {
+          "id": "status",
+          "fee": "1/2",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "fault_0": "online",
+            "fault_1": "online"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "repair_0",
+          "fee": "1",
+          "duration": 3,
+          "residual_loss_by_world": {
+            "fault_0": "0",
+            "fault_1": "20"
+          }
+        },
+        {
+          "id": "repair_1",
+          "fee": "1",
+          "duration": 3,
+          "residual_loss_by_world": {
+            "fault_0": "20",
+            "fault_1": "0"
+          }
+        },
+        {
+          "id": "fallback",
+          "fee": "0",
+          "duration": 0,
+          "residual_loss_by_world": {
+            "fault_0": "8",
+            "fault_1": "8"
+          }
+        }
+      ],
+      "constraints": {
+        "max_queries": 2,
+        "cash_budget": "4",
+        "deadline": 5
+      },
+      "private": {
+        "selected_world": "fault_0"
+      }
+    },
+    {
+      "case_id": "A05",
+      "worlds": [
+        {
+          "id": "state_0",
+          "prior": "1/2"
+        },
+        {
+          "id": "state_1",
+          "prior": "1/2"
+        }
+      ],
+      "queries": [
+        {
+          "id": "inspect",
+          "fee": "1",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "state_0": "state_0",
+            "state_1": "state_1"
+          }
+        },
+        {
+          "id": "status",
+          "fee": "1/2",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "state_0": "calibrated",
+            "state_1": "calibrated"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "option_a",
+          "fee": "1",
+          "duration": 1,
+          "residual_loss_by_world": {
+            "state_0": "0",
+            "state_1": "8"
+          }
+        },
+        {
+          "id": "option_b",
+          "fee": "1",
+          "duration": 1,
+          "residual_loss_by_world": {
+            "state_0": "6",
+            "state_1": "9"
+          }
+        },
+        {
+          "id": "fallback",
+          "fee": "0",
+          "duration": 0,
+          "residual_loss_by_world": {
+            "state_0": "10",
+            "state_1": "10"
+          }
+        }
+      ],
+      "constraints": {
+        "max_queries": 2,
+        "cash_budget": "4",
+        "deadline": 3
+      },
+      "private": {
+        "selected_world": "state_0"
+      }
+    },
+    {
+      "case_id": "A06",
+      "worlds": [
+        {
+          "id": "state_0",
+          "prior": "1/2"
+        },
+        {
+          "id": "state_1",
+          "prior": "1/2"
+        }
+      ],
+      "queries": [
+        {
+          "id": "inspect",
+          "fee": "1",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "state_0": "state_0",
+            "state_1": "state_1"
+          }
+        },
+        {
+          "id": "status",
+          "fee": "1/2",
+          "duration": 1,
+          "prerequisites": [],
+          "response_by_world": {
+            "state_0": "calibrated",
+            "state_1": "calibrated"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "option_a",
+          "fee": "1",
+          "duration": 1,
+          "residual_loss_by_world": {
+            "state_0": "0",
+            "state_1": "8"
+          }
+        },
+        {
+          "id": "option_b",
+          "fee": "1",
+          "duration": 1,
+          "residual_loss_by_world": {
+            "state_0": "6",
+            "state_1": "0"
+          }
+        },
+        {
+          "id": "fallback",
+          "fee": "0",
+          "duration": 0,
+          "residual_loss_by_world": {
+            "state_0": "10",
+            "state_1": "10"
+          }
+        }
+      ],
+      "constraints": {
+        "max_queries": 2,
+        "cash_budget": "4",
+        "deadline": 3
+      },
+      "private": {
+        "selected_world": "state_0"
+      }
+    }
+  ]
+}

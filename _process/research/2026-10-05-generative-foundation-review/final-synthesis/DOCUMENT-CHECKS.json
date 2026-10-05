@@ -1,0 +1,550 @@
+{
+  "date": "2026-10-05",
+  "primary": "INTEGRATED-THEORY.md",
+  "scope": "Document integrity and checked constructed examples; not empirical validation or proof certification.",
+  "documents": [
+    {
+      "file": "ADAPTIVE-OPTIMUM.md",
+      "sha256": "5762f4bed293cc87c19634e367225f3ab18fcbe756c57980b9a04cc7411ce2b7",
+      "words": 3051,
+      "lines": 200,
+      "equation_tags": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "A11"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        11,
+        11
+      ],
+      "inline_delimiters": [
+        0,
+        0
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "COMPOSITION-AND-SCOPE.md",
+      "sha256": "a6f7c29d9ba988459e5429a3777a714f1f75ca4ba2f8f2d801b186dc563152f5",
+      "words": 1608,
+      "lines": 82,
+      "equation_tags": [],
+      "unique_tags": true,
+      "display_delimiters": [
+        1,
+        1
+      ],
+      "inline_delimiters": [
+        28,
+        28
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "IDENTIFICATION-AND-VALUE.md",
+      "sha256": "ab48e5d611814d1b1d2d4dea5c85be565dffa7067babf07bb4d3b26c9363b9f8",
+      "words": 3818,
+      "lines": 315,
+      "equation_tags": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6",
+        "I7",
+        "I8",
+        "I9",
+        "I10",
+        "I11",
+        "I12",
+        "I13",
+        "I14",
+        "I15",
+        "I16",
+        "I17",
+        "I18",
+        "I19"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        20,
+        20
+      ],
+      "inline_delimiters": [
+        136,
+        136
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "sha256": "d32f93afeff3a3c45352642abedc4d360ca0a8739cedaa12b37792b3d8771c16",
+      "words": 3519,
+      "lines": 238,
+      "equation_tags": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6",
+        "I7",
+        "I8",
+        "I9"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        10,
+        10
+      ],
+      "inline_delimiters": [
+        59,
+        59
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "sha256": "e4cd95f1672fb4a645e1b3d9f72eaf84ab9b09e2aaa9566d6b9329987aa5907c",
+      "words": 1386,
+      "lines": 82,
+      "equation_tags": [],
+      "unique_tags": true,
+      "display_delimiters": [
+        0,
+        0
+      ],
+      "inline_delimiters": [
+        29,
+        29
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "MATHEMATICAL-REVIEW.md",
+      "sha256": "bf7536dc0da7ef71f353240ef2d70550894ecc00a551dd7b35064b41b6d01148",
+      "words": 817,
+      "lines": 35,
+      "equation_tags": [],
+      "unique_tags": true,
+      "display_delimiters": [
+        0,
+        0
+      ],
+      "inline_delimiters": [
+        0,
+        0
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "MECHANISM-MATH.md",
+      "sha256": "f57310d7e018154d28108c2d24ba00b6afb0f041d2996bf50ded797d3e6246e3",
+      "words": 3416,
+      "lines": 367,
+      "equation_tags": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "M11",
+        "M12",
+        "M13",
+        "M14",
+        "M15",
+        "M16",
+        "M17",
+        "M18",
+        "M19",
+        "M20",
+        "M21",
+        "M22",
+        "M23",
+        "M24",
+        "M25",
+        "M26",
+        "M27",
+        "M28",
+        "M29",
+        "M30",
+        "M31",
+        "M32",
+        "M33"
+      ],
+      "unique_tags": true,
+      "display_delimiters": [
+        33,
+        33
+      ],
+      "inline_delimiters": [
+        190,
+        190
+      ],
+      "placeholders": []
+    },
+    {
+      "file": "README.md",
+      "sha256": "a1a501e830eedf7fc5155faa058bfa996f85774ead7b9f4c55ea579aa6d0913a",
+      "words": 346,
+      "lines": 24,
+      "equation_tags": [],
+      "unique_tags": true,
+      "display_delimiters": [
+        0,
+        0
+      ],
+      "inline_delimiters": [
+        0,
+        0
+      ],
+      "placeholders": []
+    }
+  ],
+  "local_links": [
+    {
+      "file": "ADAPTIVE-OPTIMUM.md",
+      "target": "../FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "ADAPTIVE-OPTIMUM.md",
+      "target": "../OPTIMAL-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "COMPOSITION-AND-SCOPE.md",
+      "target": "ADAPTIVE-OPTIMUM.md",
+      "exists": true
+    },
+    {
+      "file": "IDENTIFICATION-AND-VALUE.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/reproduction-test/design/DESIGN.md",
+      "exists": true
+    },
+    {
+      "file": "IDENTIFICATION-AND-VALUE.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/reproduction-test/README.md",
+      "exists": true
+    },
+    {
+      "file": "IDENTIFICATION-AND-VALUE.md",
+      "target": "../FOUNDATION.md#162-empirical-results-include-failures-and-unresolved-links",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "../OPTIMAL-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "../FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "../FOUNDATION-ALTERNATIVE-ORIGINAL.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "MECHANISM-MATH.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "renewal-tradeoff.png",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "COMPOSITION-AND-SCOPE.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "ADAPTIVE-OPTIMUM.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "COMPOSITION-AND-SCOPE.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "IDENTIFICATION-AND-VALUE.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/reproduction-test/README.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "MECHANISM-MATH.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "ADAPTIVE-OPTIMUM.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "IDENTIFICATION-AND-VALUE.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "COMPOSITION-AND-SCOPE.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATED-THEORY.md",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "target": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/COMPOSITION-AND-SCOPE.md:48",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "target": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/INTEGRATED-THEORY.md:200",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "target": "/Users/ren/theories/experiments/integrated-correction/general-framework/reproduction-test/README.md:25",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "target": "/Users/ren/theories/experiments/integrated-correction/general-framework/reproduction-test/README.md:35",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "target": "/Users/ren/theories/experiments/integrated-correction/general-framework/reproduction-test/README.md:39",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "target": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/INTEGRATED-THEORY.md:73",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "target": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/INTEGRATED-THEORY.md:172",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "target": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/INTEGRATED-THEORY.md:7",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "target": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/INTEGRATED-THEORY.md:13",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "target": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/INTEGRATED-THEORY.md:204",
+      "exists": true
+    },
+    {
+      "file": "INTEGRATION-REVIEW.md",
+      "target": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/final-synthesis/INTEGRATED-THEORY.md:198",
+      "exists": true
+    },
+    {
+      "file": "MECHANISM-MATH.md",
+      "target": "../../2026-10-04-integrated-evolution/practice-transmission-model.md",
+      "exists": true
+    },
+    {
+      "file": "MECHANISM-MATH.md",
+      "target": "../../2026-10-04-integrated-evolution/endogenous-renewal-math.md",
+      "exists": true
+    },
+    {
+      "file": "MECHANISM-MATH.md",
+      "target": "../OPTIMAL-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "INTEGRATED-THEORY.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "../OPTIMAL-FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "../FOUNDATION.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "../FOUNDATION-ALTERNATIVE-ORIGINAL.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "MECHANISM-MATH.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "ADAPTIVE-OPTIMUM.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "IDENTIFICATION-AND-VALUE.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "COMPOSITION-AND-SCOPE.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "EXACT-CHECKS.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "NUMERICAL-CHECKS.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "renewal-tradeoff.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "renewal-tradeoff.svg",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "INTEGRATION-REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "MATHEMATICAL-REVIEW.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "DOCUMENT-CHECKS.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "MANIFEST.json",
+      "exists": true
+    }
+  ],
+  "errors": [],
+  "original_preserved_sha256": "91efaed68a9746e8213437a810a6bb9b0864a572467a9956010fe2711cb92460",
+  "exact_checks": {
+    "scope": "Constructed algebra and finite examples; no new empirical data; no proof certification.",
+    "passed": 34,
+    "checks": [
+      "production surplus polynomial identity",
+      "production surplus attains four",
+      "critical effort is one quarter",
+      "capacity floor gives effort lower bound",
+      "support floor gives effort upper bound",
+      "chosen effort lies strictly inside both floors",
+      "chosen support equals eight fifths",
+      "chosen capacity strictly exceeds six",
+      "ecological saddle signs",
+      "ecological saddle equilibrium residual",
+      "ecological stable signs",
+      "ecological stable equilibrium residual",
+      "practice eigenvalue at kappa 1/2",
+      "practice eigenvalue at kappa 3/2",
+      "perfect-probe exact horizon values",
+      "noisy probe infeasible at horizons one through six",
+      "hazardous probe infeasible at horizons one through six",
+      "known model costs one",
+      "exhaustive two-step policy minimum agrees with DP",
+      "four-signal likelihood ratio rejecting R",
+      "four-signal likelihood ratio retaining L",
+      "false rejection example remains below delta",
+      "factorial observations do not identify mediator",
+      "mediator clamp separates the route",
+      "calibration models agree",
+      "pairwise distance matrix",
+      "design primal budget",
+      "design primal value",
+      "dual certificate feasible",
+      "dual certificate matches primal",
+      "worst pair error",
+      "hard batch cost realizes proportions",
+      "retaining test labels preserves distinction",
+      "erasing test labels can remove distinction"
+    ],
+    "mechanism": {
+      "critical_effort": "1/4",
+      "protected_interval": "7/12 < u < 2/3",
+      "interior_effort": "5/8",
+      "interior_support": "8/5",
+      "interior_capacity": "(16+6 sqrt(6))/5"
+    },
+    "adaptive": {
+      "perfect_horizons_1_to_3": [
+        "infinity",
+        2,
+        2
+      ],
+      "noisy_horizons_1_to_6": "infinity",
+      "two_step_policies_enumerated": 1024,
+      "feasible_two_step_policies": 16,
+      "minimum_cost": 2
+    },
+    "experimental_design": {
+      "weights": [
+        "3/4",
+        "1/4"
+      ],
+      "expected_cost": "5/4",
+      "pairwise_separation": "1/4",
+      "dual_bound": "1/4",
+      "worst_pair_binary_error": "3/8"
+    }
+  },
+  "numerical_checks": "NUMERICAL-CHECKS.json",
+  "figure_visually_inspected": true,
+  "full_document_render_audit": false,
+  "review_scope": "Resolved integration cross-review plus mathematical author audit; no completed independent full proof audit or human peer review."
+}

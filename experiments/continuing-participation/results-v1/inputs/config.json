@@ -1,0 +1,10 @@
+{
+ "horizons":[1,2,3],
+ "initial_cash":[2,3,4,5,8],
+ "compensation_grids":[[0],[0,1,2]],
+ "modes":["ex_ante","continuing"],
+ "burden_controls":[0.5,1.5],
+ "burden_control_cash":[4,8],
+ "high_collapse_loss":6,
+ "high_loss_cash":[3,4,5,8]
+}

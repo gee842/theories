@@ -1,0 +1,20 @@
+Independent runner audit: test seeds 7000..7010 only.
+No development/evaluation functions called; no result-folder writes.
+Audit-selected-alpha uncertainty is plug-in, not exact post-selection variance.
+test_fixed_alpha_variance_accounts_for_reusing_current_y (__main__.RunnerChecks.test_fixed_alpha_variance_accounts_for_reusing_current_y) ... ok
+test_forecast_formula_uses_estimate_uncertainty_and_known_action (__main__.RunnerChecks.test_forecast_formula_uses_estimate_uncertainty_and_known_action) ... ok
+test_forecast_precedes_current_transition_outcome (__main__.RunnerChecks.test_forecast_precedes_current_transition_outcome)
+Changing w[10] cannot change prediction or action made at t=10. ... ok
+test_ledger_and_scores_recompute_from_recorded_trace (__main__.RunnerChecks.test_ledger_and_scores_recompute_from_recorded_trace) ... ok
+test_nested_flat_exact_trace_metric_and_block_equality (__main__.RunnerChecks.test_nested_flat_exact_trace_metric_and_block_equality) ... ok
+test_no_reference_scalar_variance_and_bias_prediction (__main__.RunnerChecks.test_no_reference_scalar_variance_and_bias_prediction) ... ok
+test_purchase_schedules_limits_and_action_limit (__main__.RunnerChecks.test_purchase_schedules_limits_and_action_limit) ... ok
+test_reference_gate_precedes_reference_observation (__main__.RunnerChecks.test_reference_gate_precedes_reference_observation)
+Changing the unobserved initial reference cannot change its purchase. ... ok
+test_repeat_same_behavior_and_exact_expected_extra_work (__main__.RunnerChecks.test_repeat_same_behavior_and_exact_expected_extra_work) ... ok
+test_variance_formula_independently_by_linear_noise_propagation (__main__.RunnerChecks.test_variance_formula_independently_by_linear_noise_propagation) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.325s
+
+OK

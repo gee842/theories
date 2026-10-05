@@ -1,0 +1,16 @@
+{
+  "status": "all exact checks passed",
+  "counts": {
+    "parameter_tuples": 972,
+    "positive_equilibria": 288,
+    "below_threshold": 531,
+    "at_threshold": 153,
+    "lyapunov_point_checks": 7200
+  },
+  "scope": "constructed deterministic two-species maintenance model; general proof in self-audit.md",
+  "limits": [
+    "original label tends to zero, never zero at finite time in this continuum model",
+    "constant resource supply and rates are assumed",
+    "no empirical or metaphysical no-self claim was tested"
+  ]
+}

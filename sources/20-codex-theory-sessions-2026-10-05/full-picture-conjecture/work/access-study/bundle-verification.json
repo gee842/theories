@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "archive_entries_hashed": 35,
+  "numerical_scripts_rerun": [
+    "run_study.py",
+    "formal_access_verify.py",
+    "audit_oracle.py",
+    "audit_compare.py",
+    "audit_controls.py",
+    "audit_h4.py",
+    "audit_no_output.py",
+    "audit_summary.py"
+  ],
+  "byte_identical_result_files": [
+    "main.json",
+    "controls.json",
+    "partition-checks.json",
+    "two-period-witnesses.json"
+  ],
+  "deliverable_links_and_math_delimiters": "passed"
+}

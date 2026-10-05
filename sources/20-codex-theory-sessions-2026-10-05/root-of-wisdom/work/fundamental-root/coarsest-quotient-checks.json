@@ -1,0 +1,303 @@
+{
+  "status": "passed",
+  "scope": "All three-state deterministic systems with two total actions and binary state outputs. Exact mathematical verification, not a behavioral or empirical experiment.",
+  "counts": {
+    "transition_tables": 729,
+    "systems": 5832,
+    "partition_checks": 29160,
+    "faithful_partitions": 9990,
+    "pair_searches": 17496,
+    "equivalent_state_pairs": 5724,
+    "coordinate_transports": 34992,
+    "distinguished_state_pairs": 11772
+  },
+  "minimal_state_count_histogram": {
+    "1": 1458,
+    "2": 1350,
+    "3": 3024
+  },
+  "faithful_partition_count_histogram": {
+    "1": 3024,
+    "2": 1810,
+    "3": 678,
+    "4": 288,
+    "5": 32
+  },
+  "strict_refinement_steps_histogram": {
+    "0": 2808,
+    "1": 3024
+  },
+  "distinguishing_word_length_histogram": {
+    "0": 8748,
+    "1": 3024
+  },
+  "finite_system_sequence_sha256": "6c1886b3879a547303ccb7b1b30ac5e8b56c3feca0179be4642e6785bc185adb",
+  "checked_witness_sequence_sha256": "5e12b1df8b2bf4df63775e1b67dd8ae8cbcf114489e2b5b3fa5db6e8f7b7af11",
+  "hidden_state_repair": {
+    "states": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "output": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "identity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "revealing_action": [
+      0,
+      3,
+      0,
+      3
+    ],
+    "before_partition": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "repaired_partition": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "witness_pair": [
+      0,
+      1
+    ],
+    "witness_action_word": [
+      1
+    ],
+    "interpretation": "Adding a feasible revealing intervention changes which distinctions a sufficient representation must retain."
+  },
+  "targeted_delayed_distinction": {
+    "scope": "One specified five-state chain; counts are separate from the exhaustive three-state enumeration.",
+    "output": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "step": [
+      1,
+      2,
+      3,
+      4,
+      4
+    ],
+    "wait": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "partitions_checked": 52,
+    "faithful_partitions": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "coarsest_partition": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "strict_refinement_steps": 3,
+    "factorizations_checked": 1,
+    "designated_pair": [
+      0,
+      1
+    ],
+    "shortest_distinguishing_word": [
+      0,
+      0,
+      0
+    ],
+    "action_labels": {
+      "0": "step",
+      "1": "wait"
+    },
+    "all_shorter_words_checked": 7,
+    "all_pair_witnesses": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "word": [
+          0,
+          0,
+          0
+        ],
+        "outputs": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "word": [
+          0,
+          0
+        ],
+        "outputs": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair": [
+          0,
+          3
+        ],
+        "word": [
+          0
+        ],
+        "outputs": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair": [
+          0,
+          4
+        ],
+        "word": [],
+        "outputs": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "word": [
+          0,
+          0
+        ],
+        "outputs": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair": [
+          1,
+          3
+        ],
+        "word": [
+          0
+        ],
+        "outputs": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair": [
+          1,
+          4
+        ],
+        "word": [],
+        "outputs": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "word": [
+          0
+        ],
+        "outputs": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair": [
+          2,
+          4
+        ],
+        "word": [],
+        "outputs": [
+          0,
+          1
+        ]
+      },
+      {
+        "pair": [
+          3,
+          4
+        ],
+        "word": [],
+        "outputs": [
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "covariance_counterexamples": {
+    "identity": [
+      0,
+      1
+    ],
+    "toggle": [
+      1,
+      0
+    ],
+    "absorbing": [
+      0,
+      0
+    ],
+    "all_coordinate_transports_checked": true,
+    "identity_and_toggle_have_same_full_binary_permutation_symmetry": true,
+    "interpretation": "Coordinate covariance, even this shared nontrivial symmetry, does not select a unique physical dynamics."
+  },
+  "limits": [
+    "The general theorem rests on its proof, not finite enumeration.",
+    "Actions, output meanings, and transition tables are supplied.",
+    "No stochastic, approximate, infinite-state, feasibility, ethics, or universal-discovery guarantee is tested.",
+    "Existence of a minimal sufficient quotient is not evidence that a real investigator can identify or compute it within available resources."
+  ],
+  "script_sha256": "405124dff5d172a39e282fcf48ac23166cf6725cb7cbd6c206fb7f61fb1fc0d1"
+}

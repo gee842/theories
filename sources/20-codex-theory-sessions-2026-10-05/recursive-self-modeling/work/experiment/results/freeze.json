@@ -1,0 +1,14 @@
+{
+  "files": {
+    "experiment.py": "a25a5ea6033d5c2657ffc89279eb3463048f5e3b42ac5f9b8faa640e811b3c67",
+    "filter_model.py": "03c8ee8a92e8cce4e8da83dcf5d95128024f21bd7eeca34ef962cabb6bbe93a1",
+    "protocol.json": "e6082cc9885752fa39327d88ab55e801b426412e2bbb79856e926c5414e90043",
+    "selected.json": "697f55397731c9d3c8418b79e8517d3d60697dd08f7b7b7699a0cb1f8f6d1f1a"
+  },
+  "evaluation_seeds": [
+    1000,
+    1999
+  ],
+  "created_unix": 1791153129.7540412,
+  "note": "Frozen before held-out evaluation; current code checks hashes."
+}

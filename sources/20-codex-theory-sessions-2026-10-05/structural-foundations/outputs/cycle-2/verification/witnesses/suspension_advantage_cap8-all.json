@@ -1,0 +1,2538 @@
+{
+  "model": {
+    "name": "suspension_advantage_cap8",
+    "cap": 8,
+    "gross": 4,
+    "operating": 1,
+    "maintenance": 4,
+    "rebuild_cost": 1,
+    "rebuild_delay": 1,
+    "diagnostic": 1,
+    "authority": 1,
+    "implementation": 1,
+    "spacing": 7,
+    "deadline": 4,
+    "hazard": true,
+    "full_information": false,
+    "fixed_fault": false,
+    "authority_supplied": false,
+    "alternative_premium": null
+  },
+  "policy_class": "all",
+  "winning_invariant_and_policy": [
+    {
+      "cash": 0,
+      "clock": 3,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 3,
+        "clock": 4,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 0,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 3
+      }
+    },
+    {
+      "cash": 0,
+      "clock": 3,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 3,
+        "clock": 4,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 0,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 3
+      }
+    },
+    {
+      "cash": 0,
+      "clock": 4,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 3,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 0,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 3
+      }
+    },
+    {
+      "cash": 0,
+      "clock": 4,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 3,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 0,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 3
+      }
+    },
+    {
+      "cash": 1,
+      "clock": 3,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 4,
+        "clock": 4,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 1,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 4
+      }
+    },
+    {
+      "cash": 1,
+      "clock": 3,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 4,
+        "clock": 4,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 1,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 4
+      }
+    },
+    {
+      "cash": 1,
+      "clock": 4,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 4,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 1,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 4
+      }
+    },
+    {
+      "cash": 2,
+      "clock": 2,
+      "phase": "execute",
+      "age": 2,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "existing_fault",
+      "action": "apply_reported_keep",
+      "successor": {
+        "cash": 0,
+        "clock": 3,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 2,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 0
+      }
+    },
+    {
+      "cash": 2,
+      "clock": 3,
+      "phase": "execute",
+      "age": 3,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "existing_fault",
+      "action": "apply_reported_keep",
+      "successor": {
+        "cash": 0,
+        "clock": 4,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 2,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 0
+      }
+    },
+    {
+      "cash": 2,
+      "clock": 3,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 5,
+        "clock": 4,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 2,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 5
+      }
+    },
+    {
+      "cash": 2,
+      "clock": 3,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 5,
+        "clock": 4,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 2,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 5
+      }
+    },
+    {
+      "cash": 2,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 5,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 2,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 5
+      }
+    },
+    {
+      "cash": 3,
+      "clock": 2,
+      "phase": "execute",
+      "age": 2,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "existing_fault",
+      "action": "apply_reported_keep",
+      "successor": {
+        "cash": 1,
+        "clock": 3,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 3,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 1
+      }
+    },
+    {
+      "cash": 3,
+      "clock": 4,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 6,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 3,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 6
+      }
+    },
+    {
+      "cash": 3,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 6,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 3,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 6
+      }
+    },
+    {
+      "cash": 3,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 6,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 3,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 6
+      }
+    },
+    {
+      "cash": 4,
+      "clock": 1,
+      "phase": "authorize",
+      "age": 1,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "existing_fault",
+      "action": "authorize",
+      "successor": {
+        "cash": 2,
+        "clock": 2,
+        "phase": "execute",
+        "age": 2,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 4,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 2
+      }
+    },
+    {
+      "cash": 4,
+      "clock": 2,
+      "phase": "authorize",
+      "age": 2,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "existing_fault",
+      "action": "authorize",
+      "successor": {
+        "cash": 2,
+        "clock": 3,
+        "phase": "execute",
+        "age": 3,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 4,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 2
+      }
+    },
+    {
+      "cash": 4,
+      "clock": 2,
+      "phase": "execute",
+      "age": 2,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "existing_fault",
+      "action": "apply_reported_keep",
+      "successor": {
+        "cash": 2,
+        "clock": 3,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 4,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 2
+      }
+    },
+    {
+      "cash": 4,
+      "clock": 4,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 7,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 4,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 7
+      }
+    },
+    {
+      "cash": 4,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 7,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 4,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 7
+      }
+    },
+    {
+      "cash": 5,
+      "clock": 1,
+      "phase": "authorize",
+      "age": 1,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "existing_fault",
+      "action": "authorize",
+      "successor": {
+        "cash": 3,
+        "clock": 2,
+        "phase": "execute",
+        "age": 2,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 5,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 3
+      }
+    },
+    {
+      "cash": 5,
+      "clock": 4,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 8,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 5,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 5,
+      "clock": 6,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 8,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 5,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 5,
+      "clock": 6,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 8,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 5,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 0,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 6,
+      "clock": 1,
+      "phase": "authorize",
+      "age": 1,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "existing_fault",
+      "action": "authorize",
+      "successor": {
+        "cash": 4,
+        "clock": 2,
+        "phase": "execute",
+        "age": 2,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 6,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 4
+      }
+    },
+    {
+      "cash": 6,
+      "clock": 1,
+      "phase": "diagnose",
+      "age": 1,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "existing_fault",
+      "action": "inspect",
+      "successor": {
+        "cash": 4,
+        "clock": 2,
+        "phase": "authorize",
+        "age": 2,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 6,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 4
+      }
+    },
+    {
+      "cash": 6,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 8,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 6,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 1,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 6,
+      "clock": 6,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 8,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 6,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 1,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 6,
+      "clock": 6,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 8,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 6,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 1,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 6,
+      "clock": 7,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 8,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 6,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 1,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 6,
+      "clock": 7,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "fault_onset",
+      "action": "inspect",
+      "successor": {
+        "cash": 4,
+        "clock": 1,
+        "phase": "authorize",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 6,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 4
+      }
+    },
+    {
+      "cash": 7,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 8,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 7,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 2,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 7,
+      "clock": 6,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 8,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 7,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 2,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 7,
+      "clock": 7,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 8,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 7,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 2,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 7,
+      "clock": 7,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "fault_onset",
+      "action": "inspect",
+      "successor": {
+        "cash": 5,
+        "clock": 1,
+        "phase": "authorize",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 7,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 5
+      }
+    },
+    {
+      "cash": 8,
+      "clock": 5,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 8,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 8,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 3,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 8,
+      "clock": 6,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 8,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 8,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 3,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 8,
+      "clock": 7,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "quiet",
+      "action": "remain_absent",
+      "successor": {
+        "cash": 8,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 8,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 3,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 8,
+      "clock": 7,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": -1,
+      "remembered": false,
+      "event": "fault_onset",
+      "action": "start_fault_rebuild",
+      "successor": {
+        "cash": 6,
+        "clock": 1,
+        "phase": "diagnose",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 8,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 6
+      }
+    },
+    {
+      "cash": 8,
+      "clock": 7,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "quiet",
+      "action": "suspend",
+      "successor": {
+        "cash": 8,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 8,
+        "gross": 4,
+        "operating": 1,
+        "fee": 0,
+        "spill": 3,
+        "cash_after": 8
+      }
+    },
+    {
+      "cash": 8,
+      "clock": 7,
+      "phase": "healthy",
+      "age": 0,
+      "apparatus": 0,
+      "remembered": false,
+      "event": "fault_onset",
+      "action": "inspect",
+      "successor": {
+        "cash": 6,
+        "clock": 1,
+        "phase": "authorize",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "flow": {
+        "cash_before": 8,
+        "gross": 0,
+        "operating": 1,
+        "fee": 1,
+        "spill": 0,
+        "cash_after": 6
+      }
+    }
+  ],
+  "losing_counterstrategy": [
+    {
+      "state": {
+        "cash": 0,
+        "clock": 1,
+        "phase": "authorize",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "authorize",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 0,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 0,
+        "clock": 1,
+        "phase": "diagnose",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 0,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 0,
+        "clock": 2,
+        "phase": "authorize",
+        "age": 2,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "authorize",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 0,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 0,
+        "clock": 2,
+        "phase": "execute",
+        "age": 2,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "apply_reported_keep",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 0,
+            "gross": 0,
+            "cost": 2
+          }
+        },
+        {
+          "action": "apply_reported_suspend",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 0,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 0,
+        "clock": 3,
+        "phase": "execute",
+        "age": 3,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "apply_reported_keep",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 0,
+            "gross": 0,
+            "cost": 2
+          }
+        },
+        {
+          "action": "apply_reported_suspend",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 0,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 0,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 6,
+      "event": "quiet",
+      "all_controller_replies": [
+        {
+          "action": "standby",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 0,
+            "gross": 4,
+            "cost": 5
+          }
+        },
+        {
+          "action": "suspend",
+          "successor": {
+            "cash": 3,
+            "clock": 6,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": -1,
+            "remembered": false
+          },
+          "successor_rank": 5,
+          "flow": {
+            "cash_before": 0,
+            "gross": 4,
+            "operating": 1,
+            "fee": 0,
+            "spill": 0,
+            "cash_after": 3
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 0,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 3,
+      "event": "quiet",
+      "all_controller_replies": [
+        {
+          "action": "standby",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 0,
+            "gross": 4,
+            "cost": 5
+          }
+        },
+        {
+          "action": "suspend",
+          "successor": {
+            "cash": 3,
+            "clock": 7,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": -1,
+            "remembered": false
+          },
+          "successor_rank": 2,
+          "flow": {
+            "cash_before": 0,
+            "gross": 4,
+            "operating": 1,
+            "fee": 0,
+            "spill": 0,
+            "cash_after": 3
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 0,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "start_fault_rebuild",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 0,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 0,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 0,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 1,
+        "clock": 1,
+        "phase": "authorize",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "authorize",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 1,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 1,
+        "clock": 1,
+        "phase": "diagnose",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 1,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 1,
+        "clock": 2,
+        "phase": "authorize",
+        "age": 2,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "authorize",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 1,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 1,
+        "clock": 2,
+        "phase": "execute",
+        "age": 2,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "apply_reported_keep",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 1,
+            "gross": 0,
+            "cost": 2
+          }
+        },
+        {
+          "action": "apply_reported_suspend",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 1,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 1,
+        "clock": 3,
+        "phase": "execute",
+        "age": 3,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "apply_reported_keep",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 1,
+            "gross": 0,
+            "cost": 2
+          }
+        },
+        {
+          "action": "apply_reported_suspend",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 1,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 1,
+        "clock": 5,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 6,
+      "event": "quiet",
+      "all_controller_replies": [
+        {
+          "action": "standby",
+          "successor": {
+            "cash": 0,
+            "clock": 6,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 3,
+          "flow": {
+            "cash_before": 1,
+            "gross": 4,
+            "operating": 1,
+            "fee": 4,
+            "spill": 0,
+            "cash_after": 0
+          }
+        },
+        {
+          "action": "suspend",
+          "successor": {
+            "cash": 4,
+            "clock": 6,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": -1,
+            "remembered": false
+          },
+          "successor_rank": 5,
+          "flow": {
+            "cash_before": 1,
+            "gross": 4,
+            "operating": 1,
+            "fee": 0,
+            "spill": 0,
+            "cash_after": 4
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 1,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 4,
+      "event": "quiet",
+      "all_controller_replies": [
+        {
+          "action": "standby",
+          "successor": {
+            "cash": 0,
+            "clock": 7,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 1,
+            "gross": 4,
+            "operating": 1,
+            "fee": 4,
+            "spill": 0,
+            "cash_after": 0
+          }
+        },
+        {
+          "action": "suspend",
+          "successor": {
+            "cash": 4,
+            "clock": 7,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": -1,
+            "remembered": false
+          },
+          "successor_rank": 3,
+          "flow": {
+            "cash_before": 1,
+            "gross": 4,
+            "operating": 1,
+            "fee": 0,
+            "spill": 0,
+            "cash_after": 4
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 1,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "start_fault_rebuild",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 1,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 1,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 1,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": null,
+          "successor_rank": 0,
+          "flow": {
+            "reason": "unaffordable",
+            "cash": 1,
+            "gross": 0,
+            "cost": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 2,
+        "clock": 1,
+        "phase": "authorize",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 2,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "authorize",
+          "successor": {
+            "cash": 0,
+            "clock": 2,
+            "phase": "execute",
+            "age": 2,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 2,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 0
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 2,
+        "clock": 1,
+        "phase": "diagnose",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 2,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": {
+            "cash": 0,
+            "clock": 2,
+            "phase": "authorize",
+            "age": 2,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 2,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 0
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 2,
+        "clock": 2,
+        "phase": "authorize",
+        "age": 2,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 2,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "authorize",
+          "successor": {
+            "cash": 0,
+            "clock": 3,
+            "phase": "execute",
+            "age": 3,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 2,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 0
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 2,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 4,
+      "event": "quiet",
+      "all_controller_replies": [
+        {
+          "action": "standby",
+          "successor": {
+            "cash": 1,
+            "clock": 7,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 2,
+            "gross": 4,
+            "operating": 1,
+            "fee": 4,
+            "spill": 0,
+            "cash_after": 1
+          }
+        },
+        {
+          "action": "suspend",
+          "successor": {
+            "cash": 5,
+            "clock": 7,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": -1,
+            "remembered": false
+          },
+          "successor_rank": 3,
+          "flow": {
+            "cash_before": 2,
+            "gross": 4,
+            "operating": 1,
+            "fee": 0,
+            "spill": 0,
+            "cash_after": 5
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 2,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "rank": 2,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "start_fault_rebuild",
+          "successor": {
+            "cash": 0,
+            "clock": 1,
+            "phase": "diagnose",
+            "age": 1,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 2,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 0
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 2,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 2,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": {
+            "cash": 0,
+            "clock": 1,
+            "phase": "authorize",
+            "age": 1,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 2,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 0
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 3,
+        "clock": 1,
+        "phase": "authorize",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 2,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "authorize",
+          "successor": {
+            "cash": 1,
+            "clock": 2,
+            "phase": "execute",
+            "age": 2,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 3,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 1
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 3,
+        "clock": 1,
+        "phase": "diagnose",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 2,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": {
+            "cash": 1,
+            "clock": 2,
+            "phase": "authorize",
+            "age": 2,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 3,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 1
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 3,
+        "clock": 2,
+        "phase": "authorize",
+        "age": 2,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 2,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "authorize",
+          "successor": {
+            "cash": 1,
+            "clock": 3,
+            "phase": "execute",
+            "age": 3,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 3,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 1
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 3,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "rank": 5,
+      "event": "quiet",
+      "all_controller_replies": [
+        {
+          "action": "remain_absent",
+          "successor": {
+            "cash": 6,
+            "clock": 7,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": -1,
+            "remembered": false
+          },
+          "successor_rank": 4,
+          "flow": {
+            "cash_before": 3,
+            "gross": 4,
+            "operating": 1,
+            "fee": 0,
+            "spill": 0,
+            "cash_after": 6
+          }
+        },
+        {
+          "action": "start_proactive_rebuild",
+          "successor": {
+            "cash": 1,
+            "clock": 7,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 3,
+            "gross": 4,
+            "operating": 1,
+            "fee": 5,
+            "spill": 0,
+            "cash_after": 1
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 3,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "rank": 2,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "start_fault_rebuild",
+          "successor": {
+            "cash": 1,
+            "clock": 1,
+            "phase": "diagnose",
+            "age": 1,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 3,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 1
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 3,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 2,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": {
+            "cash": 1,
+            "clock": 1,
+            "phase": "authorize",
+            "age": 1,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 1,
+          "flow": {
+            "cash_before": 3,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 1
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 4,
+        "clock": 1,
+        "phase": "diagnose",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 3,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": {
+            "cash": 2,
+            "clock": 2,
+            "phase": "authorize",
+            "age": 2,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 2,
+          "flow": {
+            "cash_before": 4,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 4,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "rank": 5,
+      "event": "quiet",
+      "all_controller_replies": [
+        {
+          "action": "remain_absent",
+          "successor": {
+            "cash": 7,
+            "clock": 7,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": -1,
+            "remembered": false
+          },
+          "successor_rank": 4,
+          "flow": {
+            "cash_before": 4,
+            "gross": 4,
+            "operating": 1,
+            "fee": 0,
+            "spill": 0,
+            "cash_after": 7
+          }
+        },
+        {
+          "action": "start_proactive_rebuild",
+          "successor": {
+            "cash": 2,
+            "clock": 7,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 2,
+          "flow": {
+            "cash_before": 4,
+            "gross": 4,
+            "operating": 1,
+            "fee": 5,
+            "spill": 0,
+            "cash_after": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 4,
+        "clock": 6,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 5,
+      "event": "quiet",
+      "all_controller_replies": [
+        {
+          "action": "standby",
+          "successor": {
+            "cash": 3,
+            "clock": 7,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 2,
+          "flow": {
+            "cash_before": 4,
+            "gross": 4,
+            "operating": 1,
+            "fee": 4,
+            "spill": 0,
+            "cash_after": 3
+          }
+        },
+        {
+          "action": "suspend",
+          "successor": {
+            "cash": 7,
+            "clock": 7,
+            "phase": "healthy",
+            "age": 0,
+            "apparatus": -1,
+            "remembered": false
+          },
+          "successor_rank": 4,
+          "flow": {
+            "cash_before": 4,
+            "gross": 4,
+            "operating": 1,
+            "fee": 0,
+            "spill": 0,
+            "cash_after": 7
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 4,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "rank": 3,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "start_fault_rebuild",
+          "successor": {
+            "cash": 2,
+            "clock": 1,
+            "phase": "diagnose",
+            "age": 1,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 2,
+          "flow": {
+            "cash_before": 4,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 4,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 3,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": {
+            "cash": 2,
+            "clock": 1,
+            "phase": "authorize",
+            "age": 1,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 2,
+          "flow": {
+            "cash_before": 4,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 2
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 5,
+        "clock": 1,
+        "phase": "diagnose",
+        "age": 1,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 3,
+      "event": "existing_fault",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": {
+            "cash": 3,
+            "clock": 2,
+            "phase": "authorize",
+            "age": 2,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 2,
+          "flow": {
+            "cash_before": 5,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 3
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 5,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "rank": 3,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "start_fault_rebuild",
+          "successor": {
+            "cash": 3,
+            "clock": 1,
+            "phase": "diagnose",
+            "age": 1,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 2,
+          "flow": {
+            "cash_before": 5,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 3
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 5,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": 0,
+        "remembered": false
+      },
+      "rank": 3,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "inspect",
+          "successor": {
+            "cash": 3,
+            "clock": 1,
+            "phase": "authorize",
+            "age": 1,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 2,
+          "flow": {
+            "cash_before": 5,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 3
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 6,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "rank": 4,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "start_fault_rebuild",
+          "successor": {
+            "cash": 4,
+            "clock": 1,
+            "phase": "diagnose",
+            "age": 1,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 3,
+          "flow": {
+            "cash_before": 6,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 4
+          }
+        }
+      ]
+    },
+    {
+      "state": {
+        "cash": 7,
+        "clock": 7,
+        "phase": "healthy",
+        "age": 0,
+        "apparatus": -1,
+        "remembered": false
+      },
+      "rank": 4,
+      "event": "fault_onset",
+      "all_controller_replies": [
+        {
+          "action": "start_fault_rebuild",
+          "successor": {
+            "cash": 5,
+            "clock": 1,
+            "phase": "diagnose",
+            "age": 1,
+            "apparatus": 0,
+            "remembered": false
+          },
+          "successor_rank": 3,
+          "flow": {
+            "cash_before": 7,
+            "gross": 0,
+            "operating": 1,
+            "fee": 1,
+            "spill": 0,
+            "cash_after": 5
+          }
+        }
+      ]
+    }
+  ]
+}

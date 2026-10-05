@@ -1,0 +1,213 @@
+{
+  "threshold": 0.3148405797101449,
+  "worlds": {
+    "E": {
+      "q": 0.3333333333333333,
+      "p": 0.25,
+      "eligibility": 0.134765625,
+      "gross_gain_per_decision": -0.006738281249999999,
+      "net_gain_per_decision": -0.008738281249999999,
+      "validation_power": 0.0002576678239464408
+    },
+    "P": {
+      "q": 1.0,
+      "p": 0.45,
+      "eligibility": 0.169921875,
+      "gross_gain_per_decision": 0.025488281250000005,
+      "net_gain_per_decision": 0.023488281250000007,
+      "validation_power": 0.974165211839381
+    },
+    "T": {
+      "q": 1.0,
+      "p": 0.25,
+      "eligibility": 0.169921875,
+      "gross_gain_per_decision": -0.008496093749999998,
+      "net_gain_per_decision": -0.010496093749999998,
+      "validation_power": 0.00011880390346601297
+    },
+    "U": {
+      "q": 0.3333333333333333,
+      "p": 0.45,
+      "eligibility": 0.134765625,
+      "gross_gain_per_decision": 0.020214843750000003,
+      "net_gain_per_decision": 0.01821484375,
+      "validation_power": 0.938375371870289
+    }
+  },
+  "audit28": {
+    "name": "audit-28",
+    "m": 28,
+    "eta": 0.0,
+    "worlds": {
+      "E": {
+        "audit_probability": 0.028979937588759434,
+        "validation_open_probability_given_question": 0.028979937588759434,
+        "validation_accept_probability_given_open": 0.0002576678239464408,
+        "adopt_probability_given_question": 7.467197456599308e-06,
+        "archive_expense": 0.56,
+        "validation_expense": 0.02967545609088966,
+        "running_expense": 3.7335987282996546e-06,
+        "operating_improvement": -1.25790191529627e-05,
+        "incremental_loss": 0.5896917687087709,
+        "total_loss_continuation_deployment_plus_expense": 69.33969176870878,
+        "branch_expense_bound": 3.608
+      },
+      "P": {
+        "audit_probability": 0.9532988171440334,
+        "validation_open_probability_given_question": 0.9532988171440334,
+        "validation_accept_probability_given_open": 0.974165211839381,
+        "adopt_probability_given_question": 0.9286705441493486,
+        "archive_expense": 0.56,
+        "validation_expense": 0.9761779887554902,
+        "running_expense": 0.4643352720746743,
+        "operating_improvement": 5.917554004467285,
+        "incremental_loss": -3.917040743637121,
+        "total_loss_continuation_deployment_plus_expense": 64.83295925636288,
+        "branch_expense_bound": 3.608
+      },
+      "T": {
+        "audit_probability": 0.9532988171440334,
+        "validation_open_probability_given_question": 0.9532988171440334,
+        "validation_accept_probability_given_open": 0.00011880390346601297,
+        "adopt_probability_given_question": 0.0001132556206462441,
+        "archive_expense": 0.56,
+        "validation_expense": 0.9761779887554902,
+        "running_expense": 5.662781032312205e-05,
+        "operating_improvement": -0.0002405575926812313,
+        "incremental_loss": 1.5364751741584945,
+        "total_loss_continuation_deployment_plus_expense": 70.2864751741585,
+        "branch_expense_bound": 3.608
+      },
+      "U": {
+        "audit_probability": 0.028979937588759434,
+        "validation_open_probability_given_question": 0.028979937588759434,
+        "validation_accept_probability_given_open": 0.938375371870289,
+        "adopt_probability_given_question": 0.0271940597116299,
+        "archive_expense": 0.56,
+        "validation_expense": 0.02967545609088966,
+        "running_expense": 0.01359702985581495,
+        "operating_improvement": 0.13743091699969215,
+        "incremental_loss": 0.46584156894701245,
+        "total_loss_continuation_deployment_plus_expense": 69.21584156894701,
+        "branch_expense_bound": 3.608
+      }
+    }
+  },
+  "minimax": {
+    "worst_regret": 0.8410009278920639,
+    "dual_value": 0.8410009278920666,
+    "duality_gap": 2.6645352591003757e-15,
+    "max_primal_violation": 1.7763568394002505e-15,
+    "max_dual_violation": 6.217248937900877e-15,
+    "world_best_loss": {
+      "E": 0.0,
+      "P": -4.696366619912304,
+      "T": 0.0,
+      "U": -3.249090194366365
+    },
+    "world_regrets": {
+      "E": 0.8410009278920638,
+      "P": 0.8410009278920535,
+      "T": 0.8410009278920637,
+      "U": 0.582513777502578
+    },
+    "mixture": [
+      {
+        "workflow": "none",
+        "probability": 0.17895985572319362
+      },
+      {
+        "workflow": "audit-16",
+        "probability": 0.0003017170809871723
+      },
+      {
+        "workflow": "direct",
+        "probability": 0.8207384271958209
+      }
+    ],
+    "best_pure": {
+      "workflow": "direct",
+      "worst_regret": 1.02456289347868
+    }
+  },
+  "winner_counts": {
+    "direct": 233,
+    "none": 49,
+    "audit": 4
+  },
+  "question_winners": [
+    {
+      "lambda": 0.01,
+      "counts": {
+        "direct": 237,
+        "none": 49
+      }
+    },
+    {
+      "lambda": 0.1,
+      "counts": {
+        "direct": 237,
+        "none": 49
+      }
+    },
+    {
+      "lambda": 0.25,
+      "counts": {
+        "direct": 237,
+        "none": 49
+      }
+    },
+    {
+      "lambda": 1.0,
+      "counts": {
+        "direct": 220,
+        "none": 43,
+        "audit": 23
+      }
+    }
+  ],
+  "boundary_controls": [
+    {
+      "q": 0.3333333333333333,
+      "kind": "true net-zero",
+      "p": 0.3148405797101449,
+      "net_gain_per_decision": -2.6020852139652106e-18,
+      "validation_accept_probability": 0.04161535183722828
+    },
+    {
+      "q": 0.3333333333333333,
+      "kind": "test threshold",
+      "p": 0.3148405797101449,
+      "net_gain_per_decision": -2.6020852139652106e-18,
+      "validation_accept_probability": 0.04161535183722828
+    },
+    {
+      "q": 0.6666666666666666,
+      "kind": "true net-zero",
+      "p": 0.3131282051282051,
+      "net_gain_per_decision": -1.734723475976807e-18,
+      "validation_accept_probability": 0.03805489364098291
+    },
+    {
+      "q": 0.6666666666666666,
+      "kind": "test threshold",
+      "p": 0.3148405797101449,
+      "net_gain_per_decision": 0.00026086956521738803,
+      "validation_accept_probability": 0.04209657398313191
+    },
+    {
+      "q": 1.0,
+      "kind": "true net-zero",
+      "p": 0.3117701149425287,
+      "net_gain_per_decision": -2.6020852139652106e-18,
+      "validation_accept_probability": 0.035003175374321537
+    },
+    {
+      "q": 1.0,
+      "kind": "test threshold",
+      "p": 0.3148405797101449,
+      "net_gain_per_decision": 0.0005217391304347791,
+      "validation_accept_probability": 0.04243412208566097
+    }
+  ]
+}

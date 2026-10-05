@@ -1,0 +1,29 @@
+{
+  "query_results": [
+    {
+      "id": "A01",
+      "query": "share_b",
+      "result": "1",
+      "fee_charged": "1",
+      "cash_remaining": "8",
+      "elapsed_time": 2,
+      "deadline": 5,
+      "queries_remaining": 0
+    },
+    {
+      "id": "A03",
+      "query": "diagnose",
+      "result": "fault_0",
+      "fee_charged": "1",
+      "cash_remaining": "2",
+      "elapsed_time": 3,
+      "deadline": 6,
+      "queries_remaining": 0
+    }
+  ],
+  "open_episode_ids": [
+    "A01",
+    "A03"
+  ],
+  "instruction": "Choose one next command for each open episode in the listed order. Use only the original public model and returned evidence. Return the same JSON format; no tools."
+}

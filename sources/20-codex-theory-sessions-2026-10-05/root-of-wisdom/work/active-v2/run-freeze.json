@@ -1,0 +1,32 @@
+{
+  "frozen_at": "2026-10-05T05:27:20.389297+07:00",
+  "stage": "After independent model, engine and scorer audit; before any participant dispatch",
+  "protocol": "Local prospective freeze, not external preregistration",
+  "file_sha256": {
+    "environment.json": "00a7f187c2b86c4a5847545b6bf2b1488741151579dca30ded96534e60403e1e",
+    "public-cases.json": "0c224b081f19785eb588eb84cea1c37b91c2b7a73c6703fea59cd8561259af2c",
+    "protocol.json": "93067f7643316912d93de5a09f6ba4f5fbf1fd888e32526cf493227a93c51c1b",
+    "pre-run-amendments.json": "7423c915ba96412ee75fc76b45bcd7acd49cf583913f3c888d29597f4296c3c3",
+    "treatment-freeze.json": "226ff9ae1e1beed134d5d8ae5577b261b04cc343555d40d29b4b37f9e276adb6",
+    "treatment-ordinary.txt": "4338fc5ed534ee1f04d962296fa6129ce0368be15a6dcd1e14db80eaff2e3704",
+    "treatment-decision_procedure.txt": "594af84e264a244526e2ebb94f00e24ca4882a875f3bed23e96b810bed3e7f40",
+    "treatment-discipline.txt": "53a55298f2260595bb2a1feea04a15d55e70aceff9af8c04d2a774c96f493593",
+    "engine.py": "6733cc3b374dc1e9e74879db420824e9dd46d0feee81d50b50ed5a6b19bc9fe7",
+    "score.py": "a01297689f54ae49ac5c6fd7ccd1de676e125a364bb1585d922410f660187395",
+    "verify.py": "82d31974c011fcb41ce9cfcc6e4c0e61fb93ca4109ec925f26c46c27ebab26d8",
+    "verification.json": "85c7f5f1d16560791f7d1aeddcf58b2ba9c63fb968ea7cfe9e4272881a3dcda2",
+    "build_cases.py": "7e8058952f8ff1cfd4318d3d4518d601ead2a919a37f657d5a3a30b3f057da92",
+    "prepare.py": "c4b585580c90d054be7b7a10f314186beb571a31a41f616eb6a94468daf11f71",
+    "run-manifest.json": "38a3a605bb19973cbe45aad74eda79ec028ec50a03d3fc0b0ebb9c21f08d969a",
+    "engine-qa.json": "bcd76b01e628537f31e8ad9bf566ccadf97538310c2754855bcfce385d9b563e",
+    "audit.txt": "d7a5ced557771cc3bd06cb63f403e9718b23604e8c4aae6280174a4c8b54b0a9",
+    "design-audit.md": "10eecc3ba36922faa6bd7cfcb78d1852be60b43389bae8bfc584fcc89d8b190a",
+    "engine-audit.md": "b4a80b7037c32ce97bf4fb7c83933f7c8503639c82030ab80706b58a23e3166c",
+    "runs/r01/prompt.txt": "b0962c6387e6c4b1ed84e587d4154a6677d733047f3c7c6fb2311df22c245836",
+    "runs/r02/prompt.txt": "e9d98d50177dfc3408c784ec15c25afc3ca7b164740287ef88134d484a1ff585",
+    "runs/r03/prompt.txt": "f9bae8d581b5bb9e336863a2036460327096c5266fc369b353e61f166e2e45c9",
+    "runs/r04/prompt.txt": "4ae6d5fab65c794c7f9c28a228e212bc1904b79f91d9ef84b397775c92b067a3",
+    "runs/r05/prompt.txt": "aa1ccc9b44f4074efe114617ff7e1a5343a84c572731b1cc9ff23bdde1f4f6bd",
+    "runs/r06/prompt.txt": "c6911735c38be0c05a893a0b1589f84d3af168201e1e48294c0f304ab9ca654f"
+  }
+}

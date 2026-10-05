@@ -1,0 +1,84 @@
+You are a participant in a finite synthetic decision exercise. Begin after the single permitted prompt-loading read. Do not use tools, read other files, browse, delegate, or consult other participants. All models, costs, constraints, probabilities, and query mechanisms are stipulations of these cases.
+
+Each episode starts with a hidden world drawn from its stated prior. You may choose a named query and receive only its result, or choose a terminal action. Query and action fees enter total loss and spend the stated cash budget; world-dependent residual losses enter the objective but do not spend cash. Time and permissions must also be respected. Minimize expected total loss given the public information, including future query and action fees. A maximum of two queries per episode is permitted. Do not repeat queries. An invalid, unaffordable, late, missing, or malformed choice ends that episode with its specified fallback; no fee is charged for the invalid request. Valid queries are charged even if their answer does not change your action. Root will return actual queried evidence, remaining cash/time, and the list of still-open episodes. Closed episodes require no further answers. No more than three decision rounds are needed.
+
+At every round return only JSON: {"decisions":[{"id":"episode identifier","kind":"query or act","target":"query or action ID","reason":"at most 35 words"}]}. Choose exactly one command for each open episode, in supplied order. Do not submit a contingent plan in place of the next command. All conditions share this interface and reason limit.
+
+METHOD
+Choose the next query or action carefully to minimize expected total loss under the stated constraints.
+
+EPISODES
+
+Interface clarification shared across conditions: a missing or empty reason invalidates a command. An over-35-word reason is recorded as a limit violation, but an otherwise valid command executes. Extra unknown or closed episode IDs are ignored and logged; a missing or duplicate required ID forces fallback for that episode. Return exact JSON without fences or other text; invalid JSON forces fallback for all open episodes.
+
+Each case is independent. The hidden world is sampled from the listed prior. You know the full model below but not the selected world. At each turn choose exactly one listed query ID or terminal action ID. A query returns only its listed response in the hidden world. Queries are deterministic, may not be repeated, and at most two may be used. All listed prerequisite queries must already have been completed. A terminal action ends the case. All fees and residual losses use loss units; one cash unit pays one fee unit. Minimize expected total loss: all query fees plus terminal action fee plus world-dependent residual loss. Cash budget covers upfront query and action fees only, not residual loss. Durations add sequentially, and the terminal action must finish by the deadline. Time has no additional loss charge. A choice is feasible only if it fits remaining cash and time and satisfies query limits and prerequisites. The fallback always costs zero cash and time. No external tools or evidence are available. Tables give values in world order. Fractions are exact. All worlds, responses, fees and losses are specified.
+
+A02
+World order: w00, w01, w10, w11. Prior: w00:1/4, w01:1/4, w10:1/4, w11:1/4.
+Cash budget: 10; deadline: 5 time units; maximum queries: 2.
+Query table: ID | fee | duration | prerequisites | responses in world order.
+share_a | 4 | 1 | none | 0, 1, 0, 1
+share_b | 4 | 1 | none | 0, 1, 1, 0
+status | 1/2 | 1 | none | ready, ready, ready, ready
+Terminal action table: ID | fee | duration | residual losses in world order.
+choose_0 | 1 | 1 | 0, 0, 12, 12
+choose_1 | 1 | 1 | 12, 12, 0, 0
+fallback | 0 | 0 | 8, 8, 8, 8
+
+A03
+World order: fault_0, fault_1. Prior: fault_0:1/2, fault_1:1/2.
+Cash budget: 4; deadline: 6 time units; maximum queries: 2.
+Query table: ID | fee | duration | prerequisites | responses in world order.
+open_panel | 1 | 1 | none | opened, opened
+diagnose | 1 | 2 | open_panel | fault_0, fault_1
+status | 1/2 | 1 | none | online, online
+Terminal action table: ID | fee | duration | residual losses in world order.
+repair_0 | 1 | 3 | 0, 20
+repair_1 | 1 | 3 | 20, 0
+fallback | 0 | 0 | 8, 8
+
+A04
+World order: fault_0, fault_1. Prior: fault_0:1/2, fault_1:1/2.
+Cash budget: 4; deadline: 5 time units; maximum queries: 2.
+Query table: ID | fee | duration | prerequisites | responses in world order.
+open_panel | 1 | 1 | none | opened, opened
+diagnose | 1 | 2 | open_panel | fault_0, fault_1
+status | 1/2 | 1 | none | online, online
+Terminal action table: ID | fee | duration | residual losses in world order.
+repair_0 | 1 | 3 | 0, 20
+repair_1 | 1 | 3 | 20, 0
+fallback | 0 | 0 | 8, 8
+
+A05
+World order: state_0, state_1. Prior: state_0:1/2, state_1:1/2.
+Cash budget: 4; deadline: 3 time units; maximum queries: 2.
+Query table: ID | fee | duration | prerequisites | responses in world order.
+inspect | 1 | 1 | none | state_0, state_1
+status | 1/2 | 1 | none | calibrated, calibrated
+Terminal action table: ID | fee | duration | residual losses in world order.
+option_a | 1 | 1 | 0, 8
+option_b | 1 | 1 | 6, 9
+fallback | 0 | 0 | 10, 10
+
+A01
+World order: w00, w01, w10, w11. Prior: w00:1/4, w01:1/4, w10:1/4, w11:1/4.
+Cash budget: 10; deadline: 5 time units; maximum queries: 2.
+Query table: ID | fee | duration | prerequisites | responses in world order.
+share_a | 1 | 1 | none | 0, 1, 0, 1
+share_b | 1 | 1 | none | 0, 1, 1, 0
+status | 1/2 | 1 | none | ready, ready, ready, ready
+Terminal action table: ID | fee | duration | residual losses in world order.
+choose_0 | 1 | 1 | 0, 0, 12, 12
+choose_1 | 1 | 1 | 12, 12, 0, 0
+fallback | 0 | 0 | 8, 8, 8, 8
+
+A06
+World order: state_0, state_1. Prior: state_0:1/2, state_1:1/2.
+Cash budget: 4; deadline: 3 time units; maximum queries: 2.
+Query table: ID | fee | duration | prerequisites | responses in world order.
+inspect | 1 | 1 | none | state_0, state_1
+status | 1/2 | 1 | none | calibrated, calibrated
+Terminal action table: ID | fee | duration | residual losses in world order.
+option_a | 1 | 1 | 0, 8
+option_b | 1 | 1 | 6, 0
+fallback | 0 | 0 | 10, 10

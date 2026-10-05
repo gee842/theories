@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "canonical_bank_identity_checks": 53228,
+  "two_payment_prefix_dominance_checks": 73130,
+  "enumerated_caps": [
+    1,
+    8
+  ],
+  "enumerated_total_balances": [
+    0,
+    30
+  ],
+  "enumerated_income": [
+    0,
+    6
+  ],
+  "H2_barred_cash0_min_failure": "153/250",
+  "H2_barred_cash1_min_failure": "0",
+  "H2_cash1_witness_expense": "12/5",
+  "H2_cash1_witness_burden": "1/25",
+  "H1_delayed_cash0_min_failure": "4/5",
+  "H1_delayed_cash3_min_failure": "0",
+  "treasury_model_expansion": {
+    "unlock=False,treasury=0": "153/250",
+    "unlock=False,treasury=3": "153/250",
+    "unlock=True,treasury=0": "153/250",
+    "unlock=True,treasury=3": "0"
+  },
+  "scope": "Algebraic/analytic checks only; not an independent solver for the H4 support-probe grid."
+}

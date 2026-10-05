@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-10-04T23:03:33.215247+00:00",
+  "status": "Before integrated target execution; predictor and 864 vectors fixed",
+  "hashes": {
+    "TARGET_PROTOCOL.md": "8d686ac9a719abeaad384a599d9497ed70277126555aa461958383e34f3cadf4",
+    "target-protocol-freeze.json": "67f3ad569fc54f7abc7eef36a12aa50761dda8043b04c48cb0be45771f382c4b",
+    "calibration.json": "0237f4d3b9c570d56572af94f01b1fe33db98e75e5f80b888ca95bb1c424948a",
+    "composed_predictor.py": "11b9e7cfb93de3bd13ecd8ef5a7e8ca79a37ad42b1c9b050db29902ed64edc6c",
+    "frozen-predictions.json": "f3826316d045b34eddfee49f61c2a49bda3f85d0e4f3a033ad9ece0119a710e1",
+    "target.py": "d0500682ef8587e59106cb252c638b8bf13f3db4eb68454c228de44a321906ce",
+    "TARGET_SPEC.md": "5dd2913a568a1122b27ebea910b889a4f5611e448a73f6bd2ffdc1f8cc5890dd"
+  }
+}

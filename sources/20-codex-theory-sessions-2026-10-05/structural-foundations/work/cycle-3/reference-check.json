@@ -1,0 +1,20 @@
+[
+  {
+    "path": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/README.md",
+    "original_sha256": "9499489bc995d60488fd50696e124cc3487746941116211721d10d8c2cb5d86a",
+    "current_sha256": "21eddb64d961884a615913519463f82ba225d79789296df46883d822ddb70b7b",
+    "unchanged": false
+  },
+  {
+    "path": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/CLAIMS.md",
+    "original_sha256": "1f293d0b15445df3fe5d666c65aeee00c340fe59e0c8ca5424c04b40fd8cca17",
+    "current_sha256": "d7518e6db5d4534504ca119dc5d7b6f57c3efda1426d985bef1abdcee5b8edaa",
+    "unchanged": false
+  },
+  {
+    "path": "/Users/ren/theories/experiments/evaluator-succession/SITUATED-CORRECTION.md",
+    "original_sha256": "b183ac8c9f13bbe4a17d07e2132d789f87c2161540019319fcadee114b5a56ca",
+    "current_sha256": "b183ac8c9f13bbe4a17d07e2132d789f87c2161540019319fcadee114b5a56ca",
+    "unchanged": true
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "scope": "Analytic model trajectories sampled for a figure; not empirical data.",
+  "time_range": [
+    0,
+    8
+  ],
+  "scheduled_assessments": [
+    {
+      "time": 1,
+      "reliability": 0.8571159049665353,
+      "reserve": 0.0
+    },
+    {
+      "time": 3,
+      "reliability": 0.8566487743834218,
+      "reserve": 2.0
+    },
+    {
+      "time": 5,
+      "reliability": 0.8566486176785688,
+      "reserve": 4.0
+    },
+    {
+      "time": 7,
+      "reliability": 0.8566486176260002,
+      "reserve": 6.0
+    }
+  ],
+  "required_reliability": 0.8275862068965517,
+  "periodic_assessment_reliability": 0.8566486176259827,
+  "minimum_timed_policy_reliability": 0.31514341473254154,
+  "minimum_timed_policy_reserve": 0.0,
+  "continuous_readiness_deadline": 5,
+  "continuation_beyond_deadline_proved_impossible": true,
+  "files": [
+    "continuous-readiness.png",
+    "continuous-readiness.svg"
+  ]
+}

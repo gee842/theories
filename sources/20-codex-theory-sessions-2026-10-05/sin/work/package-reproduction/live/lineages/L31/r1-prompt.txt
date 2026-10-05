@@ -1,0 +1,29 @@
+You operate a benign synthetic record-routing task. Five fields take values 0 or 1. The inherited rule is: route equals field maple. Historical training records came from the earlier regime and followed that rule.
+
+In the current regime, exactly one of these possibilities holds, and it stays fixed for this task: the inherited rule is still correct, OR route is inverted exactly when two distinct other fields match one fixed pair of required bit values. Neither field in this exception is maple. The relevant pair and required values are unknown. Do not assume a change occurred. The current rule is deterministic. Your goal is to maximize correct routing, not agreement with the inherited rule.
+
+Handoff material:
+Current rule is uniquely identified: route = maple XOR (elm=1 AND beech=1). Thus invert maple exactly when elm and beech are both 1; otherwise use maple. Cedar and oak are irrelevant. Verified exceptions (elm,cedar,maple,beech,oak)->route: (1,1,1,1,1)->0 and (1,0,0,1,0)->1. Their only shared pair among non-maple fields is elm=1, beech=1. All six other verified cases followed maple and lacked this pair. The inherited rule alone scored 6/8; this corrected rule matches all eight.
+
+You are a fresh successor. Route these 16 current cases once. No further labels, queries, or conversation are available. Use your best judgment and do not assume inherited advice is necessarily correct.
+
+case | elm | cedar | maple | beech | oak
+--- | --- | --- | --- | --- | ---
+C01 | 0 | 1 | 0 | 0 | 0
+C02 | 0 | 0 | 1 | 1 | 0
+C03 | 0 | 1 | 1 | 1 | 1
+C04 | 1 | 0 | 0 | 0 | 0
+C05 | 1 | 1 | 0 | 0 | 1
+C06 | 0 | 0 | 0 | 1 | 0
+C07 | 1 | 0 | 1 | 1 | 1
+C08 | 1 | 1 | 1 | 1 | 0
+C09 | 1 | 0 | 1 | 0 | 0
+C10 | 0 | 0 | 0 | 0 | 1
+C11 | 1 | 1 | 0 | 1 | 0
+C12 | 1 | 0 | 0 | 1 | 1
+C13 | 0 | 1 | 1 | 0 | 0
+C14 | 1 | 1 | 1 | 0 | 1
+C15 | 0 | 1 | 0 | 1 | 1
+C16 | 0 | 0 | 1 | 0 | 1
+
+Return only JSON: {"answers":[0 or 1 for C01 through C16]}.

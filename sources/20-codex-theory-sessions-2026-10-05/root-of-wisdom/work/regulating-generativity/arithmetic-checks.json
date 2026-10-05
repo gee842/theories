@@ -1,0 +1,44 @@
+{
+  "status": "exact arithmetic identities passed",
+  "examples": [
+    {
+      "p": [
+        "1/2",
+        "1/2"
+      ],
+      "g": [
+        "2",
+        "1"
+      ],
+      "W": [
+        "1",
+        "2"
+      ],
+      "mean_before": "3/2",
+      "mean_after": "4/3",
+      "mean_contribution": "3/2",
+      "covariance": "-1/4",
+      "change": "-1/6"
+    },
+    {
+      "p": [
+        "1/2",
+        "1/2"
+      ],
+      "g": [
+        "2",
+        "1"
+      ],
+      "W": [
+        "2",
+        "1"
+      ],
+      "mean_before": "3/2",
+      "mean_after": "5/3",
+      "mean_contribution": "3/2",
+      "covariance": "1/4",
+      "change": "1/6"
+    }
+  ],
+  "scope": "Two constructed arithmetic examples, not empirical data or simulation."
+}

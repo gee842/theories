@@ -1,0 +1,53 @@
+{
+  "captured_at_utc": "2026-10-04T20:55:32.127805+00:00",
+  "files": [
+    {
+      "source": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/README.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/work/reference-snapshots/README.md",
+      "sha256": "13029b636eceefba7feebe4583c63d240992aa0b416f1a2097c7f8f504181ff3",
+      "bytes": 30469
+    },
+    {
+      "source": "/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/CLAIMS.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/work/reference-snapshots/CLAIMS.md",
+      "sha256": "641b73f2641acbdcaba7db9705298ff4d00c8357e044c1db899b8808b4479453",
+      "bytes": 49246
+    },
+    {
+      "source": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-04-selection-and-generative-conditions.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/work/reference-snapshots/2026-10-04-selection-and-generative-conditions.md",
+      "sha256": "a36c8b4a0df8e62d7022c56358ca3cab1b06b4b7613a4d1eaba5a3bed51d70fd",
+      "bytes": 30926
+    },
+    {
+      "source": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-04-universal-constraints-and-maintained-correction.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/work/reference-snapshots/2026-10-04-universal-constraints-and-maintained-correction.md",
+      "sha256": "e9245aaf5a7483c515ec615d6e2ce75b932f549dae7cc8bea8223a284bc9b363",
+      "bytes": 18589
+    },
+    {
+      "source": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-selection-and-continuity-of-renewal.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/work/reference-snapshots/2026-10-05-selection-and-continuity-of-renewal.md",
+      "sha256": "ba2667b8c096ffb710d650db2af718611c278860625c4e5d13e9e36d0747d3b2",
+      "bytes": 17146
+    },
+    {
+      "source": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-inherited-evidence-under-model-revision.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/work/reference-snapshots/2026-10-05-inherited-evidence-under-model-revision.md",
+      "sha256": "e84233cded658ee5fce64daa5e8fa843aed4ac7ce457ae81d2cfd16fb053e837",
+      "bytes": 16952
+    },
+    {
+      "source": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-renewal-of-inquiry.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/work/reference-snapshots/2026-10-05-renewal-of-inquiry.md",
+      "sha256": "5f982e6862c9be868e68de3966a305487d741e3c6b9a4bb11f99c71615c2003a",
+      "bytes": 17397
+    },
+    {
+      "source": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-recoverable-inquiry.md",
+      "snapshot": "/Users/ren/Documents/Codex/2026-10-05/full-picture-conjecture/work/reference-snapshots/2026-10-05-recoverable-inquiry.md",
+      "sha256": "07613452ef430dcec784b2aaadc67b6c6a868770c40257a4a28d4770d18ec42f",
+      "bytes": 16339
+    }
+  ]
+}

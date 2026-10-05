@@ -1,0 +1,104 @@
+{
+  "U20_same_count_opposite_actions": {
+    "predictions": [
+      0.44835161092568626,
+      0.05164838907431374
+    ],
+    "all_five_count_masses_equal": true
+  },
+  "U24_positive_uncapped_return_ruin": {
+    "uncapped_net_income": 0.5,
+    "lifetime_from_1": 4.0,
+    "lifetime_from_2": 6.0,
+    "spectral_radius": 0.8090169943749475
+  },
+  "U27_bridge": {
+    "time_of_dip": 1.0986122886681098,
+    "minimum_cash_change": -0.9013877113318902,
+    "required_bridge": 0.9013877113318902
+  },
+  "U26_necessary_sample_floor": {
+    "alpha": 0.05,
+    "power": 0.9,
+    "ordinary_divergence": 0,
+    "required_divergence": 2.376205402245899,
+    "test_divergence": 1.7577796618689758,
+    "necessary_number": 2,
+    "not_a_sufficiency_certificate": true
+  },
+  "U26_necessary_not_sufficient": {
+    "two_test_exact_max_power_at_size_005": 0.85,
+    "two_test_exact_np_rule": [
+      {
+        "word": [
+          1,
+          1
+        ],
+        "p0": "1/100",
+        "p1": "81/100",
+        "likelihood_ratio": "81",
+        "accept_probability": "1"
+      },
+      {
+        "word": [
+          1,
+          0
+        ],
+        "p0": "9/100",
+        "p1": "9/100",
+        "likelihood_ratio": "1",
+        "accept_probability": "4/9"
+      },
+      {
+        "word": [
+          0,
+          1
+        ],
+        "p0": "9/100",
+        "p1": "9/100",
+        "likelihood_ratio": "1",
+        "accept_probability": "0"
+      },
+      {
+        "word": [
+          0,
+          0
+        ],
+        "p0": "81/100",
+        "p1": "1/100",
+        "likelihood_ratio": "1/81",
+        "accept_probability": "0"
+      }
+    ],
+    "three_test_at_least_two_positive_size": 0.028,
+    "three_test_at_least_two_positive_power": 0.972
+  },
+  "U18_historical_decision_values_ages_1_to_4": [
+    1.0,
+    0.3999999999999999,
+    0.040000000000000036,
+    0.0
+  ],
+  "U10_transition_reserve": {
+    "time_of_minimum": 6.2794900989279725,
+    "required_reserve": 0.7291694326024698
+  },
+  "typed_access_counterexample": {
+    "states": [
+      [
+        1,
+        4
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "total": 5,
+    "cost": 1,
+    "feasible": [
+      true,
+      false
+    ]
+  }
+}

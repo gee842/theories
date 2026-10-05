@@ -1,0 +1,1 @@
+{"decisions":[{"id":"A01","kind":"act","target":"choose_0","reason":"Both shares equal 1, identifying w01. Choose_0 has zero residual loss in this world."},{"id":"A03","kind":"act","target":"repair_0","reason":"Diagnosis identified fault_0. Repair_0 has zero residual loss, is affordable, and finishes exactly at the deadline."}]}

@@ -1,0 +1,1316 @@
+{
+  "full": [
+    {
+      "status": "feasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.02,
+        "net_expense": -26.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.01815889290229998,
+        "burden": 0.018158892902299984,
+        "net_expense": -27.596787587725927
+      },
+      "phase_one_value": -0.0018411070977000198,
+      "maximum_normalized_violation": -0.0018411070977000163,
+      "certificate": {
+        "normalized_weights": [
+          0.44458998058718824,
+          0.5554100194128118,
+          0.0
+        ],
+        "raw_weights": [
+          0.44458998058718824,
+          0.5554100194128118,
+          0.0
+        ],
+        "weighted_minimum": 0.01815889290229998,
+        "weighted_bound": 0.02,
+        "separation_margin": -0.0018411070977000198,
+        "primal_dual_gap": 0.0
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 0.0,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 56,
+      "randomized_nodes": 1,
+      "authority": "full",
+      "state_count": 2374,
+      "action_count": 16242
+    },
+    {
+      "status": "feasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.02,
+        "net_expense": -30.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.018232591037843183,
+        "burden": 0.018232591037843183,
+        "net_expense": -30.01767408962157
+      },
+      "phase_one_value": -0.0017674089621568195,
+      "maximum_normalized_violation": -0.0017674089621568176,
+      "certificate": {
+        "normalized_weights": [
+          0.27758712396651086,
+          0.6975930027757165,
+          0.02481987325777271
+        ],
+        "raw_weights": [
+          0.27758712396651086,
+          0.6975930027757165,
+          0.0024819873257772708
+        ],
+        "weighted_minimum": -0.05672342620063041,
+        "weighted_bound": -0.05495601723847358,
+        "separation_margin": -0.0017674089621568315,
+        "primal_dual_gap": 1.1926223897340549e-17
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 3.552713678800501e-15,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 64,
+      "randomized_nodes": 2,
+      "authority": "full",
+      "state_count": 2374,
+      "action_count": 16242
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.01,
+        "burden": 0.02,
+        "net_expense": -26.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.01270590972080031,
+        "burden": 0.02270590972080031,
+        "net_expense": -27.756376391501956
+      },
+      "phase_one_value": 0.0027059097208003108,
+      "maximum_normalized_violation": 0.002705909720800311,
+      "certificate": {
+        "normalized_weights": [
+          0.46422524463239556,
+          0.5357747553676044,
+          0.0
+        ],
+        "raw_weights": [
+          0.46422524463239556,
+          0.5357747553676044,
+          0.0
+        ],
+        "weighted_minimum": 0.018063657274476355,
+        "weighted_bound": 0.015357747553676044,
+        "separation_margin": 0.002705909720800311,
+        "primal_dual_gap": -4.336808689942018e-19
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 3.552713678800501e-15,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 57,
+      "randomized_nodes": 1,
+      "authority": "full",
+      "state_count": 2374,
+      "action_count": 16242
+    },
+    {
+      "status": "feasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.03,
+        "net_expense": -27.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.012705909720800308,
+        "burden": 0.02270590972080031,
+        "net_expense": -27.756376391501956
+      },
+      "phase_one_value": -0.007294090279199691,
+      "maximum_normalized_violation": -0.007294090279199687,
+      "certificate": {
+        "normalized_weights": [
+          0.46422524463239556,
+          0.5357747553676044,
+          0.0
+        ],
+        "raw_weights": [
+          0.46422524463239556,
+          0.5357747553676044,
+          0.0
+        ],
+        "weighted_minimum": 0.018063657274476355,
+        "weighted_bound": 0.025357747553676042,
+        "separation_margin": -0.007294090279199687,
+        "primal_dual_gap": -3.469446951953614e-18
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 3.552713678800501e-15,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 57,
+      "randomized_nodes": 1,
+      "authority": "full",
+      "state_count": 2374,
+      "action_count": 16242
+    },
+    {
+      "status": "feasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.03,
+        "net_expense": -30.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.012705909720800308,
+        "burden": 0.022705909720800315,
+        "net_expense": -30.072940902791995
+      },
+      "phase_one_value": -0.007294090279199691,
+      "maximum_normalized_violation": -0.007294090279199495,
+      "certificate": {
+        "normalized_weights": [
+          0.46422524463239556,
+          0.5357747553676044,
+          0.0
+        ],
+        "raw_weights": [
+          0.46422524463239556,
+          0.5357747553676044,
+          0.0
+        ],
+        "weighted_minimum": 0.018063657274476355,
+        "weighted_bound": 0.025357747553676042,
+        "separation_margin": -0.007294090279199687,
+        "primal_dual_gap": -3.469446951953614e-18
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 3.469446951953614e-18,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 64,
+      "randomized_nodes": 2,
+      "authority": "full",
+      "state_count": 2374,
+      "action_count": 16242
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.005,
+        "burden": 0.01,
+        "net_expense": -31.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.016905365659700248,
+        "burden": 0.02190536565970025,
+        "net_expense": -30.880946343403004
+      },
+      "phase_one_value": 0.01190536565970025,
+      "maximum_normalized_violation": 0.011905365659700249,
+      "certificate": {
+        "normalized_weights": [
+          0.27972620899566963,
+          0.6946130983958894,
+          0.025660692608441102
+        ],
+        "raw_weights": [
+          0.27972620899566963,
+          0.6946130983958894,
+          0.00256606926084411
+        ],
+        "weighted_minimum": -0.05929801939752992,
+        "weighted_bound": -0.07120338505723016,
+        "separation_margin": 0.01190536565970024,
+        "primal_dual_gap": 1.0408340855860843e-17
+      },
+      "flow_residual": 9.614531393253856e-17,
+      "policy_evaluation_residual": 3.552713678800501e-15,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 66,
+      "randomized_nodes": 2,
+      "authority": "full",
+      "state_count": 2374,
+      "action_count": 16242
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.0,
+        "burden": 0.0,
+        "net_expense": -20.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.01815889290229998,
+        "burden": 0.018158892902299984,
+        "net_expense": -27.596787587725927
+      },
+      "phase_one_value": 0.01815889290229998,
+      "maximum_normalized_violation": 0.018158892902299984,
+      "certificate": {
+        "normalized_weights": [
+          0.44458998058718824,
+          0.5554100194128118,
+          0.0
+        ],
+        "raw_weights": [
+          0.44458998058718824,
+          0.5554100194128118,
+          0.0
+        ],
+        "weighted_minimum": 0.01815889290229998,
+        "weighted_bound": 0.0,
+        "separation_margin": 0.01815889290229998,
+        "primal_dual_gap": 0.0
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 0.0,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 56,
+      "randomized_nodes": 1,
+      "authority": "full",
+      "state_count": 2374,
+      "action_count": 16242
+    }
+  ],
+  "no_diagnostic": [
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.02,
+        "net_expense": -26.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.026015185169527708,
+        "burden": 0.026015185169527708,
+        "net_expense": -25.939848148304723
+      },
+      "phase_one_value": 0.006015185169527708,
+      "maximum_normalized_violation": 0.006015185169527726,
+      "certificate": {
+        "normalized_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "raw_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "weighted_minimum": 0.026015185169527708,
+        "weighted_bound": 0.02,
+        "separation_margin": 0.006015185169527707,
+        "primal_dual_gap": 8.673617379884035e-19
+      },
+      "flow_residual": 1.3118442051754737e-16,
+      "policy_evaluation_residual": 3.552713678800501e-15,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 46,
+      "randomized_nodes": 2,
+      "authority": "no_diagnostic",
+      "state_count": 2374,
+      "action_count": 9371
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.02,
+        "net_expense": -30.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.026015185169527704,
+        "burden": 0.02601518516952771,
+        "net_expense": -29.939848148304726
+      },
+      "phase_one_value": 0.006015185169527709,
+      "maximum_normalized_violation": 0.006015185169527711,
+      "certificate": {
+        "normalized_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "raw_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "weighted_minimum": 0.026015185169527708,
+        "weighted_bound": 0.02,
+        "separation_margin": 0.006015185169527707,
+        "primal_dual_gap": 1.734723475976807e-18
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 3.469446951953614e-18,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 43,
+      "randomized_nodes": 2,
+      "authority": "no_diagnostic",
+      "state_count": 2374,
+      "action_count": 9371
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.01,
+        "burden": 0.02,
+        "net_expense": -26.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.017602312861675497,
+        "burden": 0.0276023128616755,
+        "net_expense": -25.923976871383246
+      },
+      "phase_one_value": 0.007602312861675499,
+      "maximum_normalized_violation": 0.007602312861675498,
+      "certificate": {
+        "normalized_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "raw_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "weighted_minimum": 0.026015185169527708,
+        "weighted_bound": 0.01841287230785221,
+        "separation_margin": 0.007602312861675498,
+        "primal_dual_gap": 8.673617379884035e-19
+      },
+      "flow_residual": 7.486786296149651e-17,
+      "policy_evaluation_residual": 3.469446951953614e-18,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 46,
+      "randomized_nodes": 2,
+      "authority": "no_diagnostic",
+      "state_count": 2374,
+      "action_count": 9371
+    },
+    {
+      "status": "feasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.03,
+        "net_expense": -27.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.01760231286167549,
+        "burden": 0.027602312861675502,
+        "net_expense": -27.023976871383248
+      },
+      "phase_one_value": -0.0023976871383245006,
+      "maximum_normalized_violation": -0.0023976871383244967,
+      "certificate": {
+        "normalized_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "raw_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "weighted_minimum": 0.026015185169527708,
+        "weighted_bound": 0.028412872307852208,
+        "separation_margin": -0.0023976871383245,
+        "primal_dual_gap": -4.336808689942018e-19
+      },
+      "flow_residual": 6.406918436027182e-17,
+      "policy_evaluation_residual": 3.552713678800501e-15,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 43,
+      "randomized_nodes": 2,
+      "authority": "no_diagnostic",
+      "state_count": 2374,
+      "action_count": 9371
+    },
+    {
+      "status": "feasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.03,
+        "net_expense": -30.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.017602312861675493,
+        "burden": 0.027602312861675502,
+        "net_expense": -30.023976871383248
+      },
+      "phase_one_value": -0.0023976871383244993,
+      "maximum_normalized_violation": -0.0023976871383244967,
+      "certificate": {
+        "normalized_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "raw_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "weighted_minimum": 0.026015185169527708,
+        "weighted_bound": 0.028412872307852208,
+        "separation_margin": -0.0023976871383245,
+        "primal_dual_gap": 8.673617379884035e-19
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 7.105427357601002e-15,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 43,
+      "randomized_nodes": 2,
+      "authority": "no_diagnostic",
+      "state_count": 2374,
+      "action_count": 9371
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.005,
+        "burden": 0.01,
+        "net_expense": -31.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.021808749015601606,
+        "burden": 0.026808749015601603,
+        "net_expense": -30.83191250984399
+      },
+      "phase_one_value": 0.016808749015601605,
+      "maximum_normalized_violation": 0.016808749015601605,
+      "certificate": {
+        "normalized_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "raw_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "weighted_minimum": 0.026015185169527708,
+        "weighted_bound": 0.009206436153926105,
+        "separation_margin": 0.0168087490156016,
+        "primal_dual_gap": 3.469446951953614e-18
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 0.0,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 41,
+      "randomized_nodes": 2,
+      "authority": "no_diagnostic",
+      "state_count": 2374,
+      "action_count": 9371
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.0,
+        "burden": 0.0,
+        "net_expense": -20.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.026015185169527708,
+        "burden": 0.026015185169527708,
+        "net_expense": -25.099784868000512
+      },
+      "phase_one_value": 0.026015185169527708,
+      "maximum_normalized_violation": 0.026015185169527708,
+      "certificate": {
+        "normalized_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "raw_weights": [
+          0.15871276921477911,
+          0.8412872307852208,
+          0.0
+        ],
+        "weighted_minimum": 0.026015185169527708,
+        "weighted_bound": 0.0,
+        "separation_margin": 0.026015185169527708,
+        "primal_dual_gap": 0.0
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 3.552713678800501e-15,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 37,
+      "randomized_nodes": 1,
+      "authority": "no_diagnostic",
+      "state_count": 2374,
+      "action_count": 9371
+    }
+  ],
+  "no_repair": [
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.02,
+        "net_expense": -26.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.17149392600000002,
+        "burden": 0.04270149347750003,
+        "net_expense": -24.485060739999994
+      },
+      "phase_one_value": 0.15149392599999997,
+      "maximum_normalized_violation": 0.15149392600000056,
+      "certificate": {
+        "normalized_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "raw_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "weighted_minimum": 0.17149392599999996,
+        "weighted_bound": 0.02,
+        "separation_margin": 0.15149392599999997,
+        "primal_dual_gap": 0.0
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 3.552713678800501e-15,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 49,
+      "randomized_nodes": 1,
+      "authority": "no_repair",
+      "state_count": 2374,
+      "action_count": 6466
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.02,
+        "net_expense": -30.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.171493926,
+        "burden": 0.0011704499999999997,
+        "net_expense": -28.48506074
+      },
+      "phase_one_value": 0.15149392599999997,
+      "maximum_normalized_violation": 0.151493926,
+      "certificate": {
+        "normalized_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "raw_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "weighted_minimum": 0.17149392599999996,
+        "weighted_bound": 0.02,
+        "separation_margin": 0.15149392599999997,
+        "primal_dual_gap": 0.0
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 7.105427357601002e-15,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 33,
+      "randomized_nodes": 1,
+      "authority": "no_repair",
+      "state_count": 2374,
+      "action_count": 6466
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.01,
+        "burden": 0.02,
+        "net_expense": -26.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.17149392600000002,
+        "burden": 0.04434025211899122,
+        "net_expense": -24.38506074
+      },
+      "phase_one_value": 0.16149392599999998,
+      "maximum_normalized_violation": 0.161493926,
+      "certificate": {
+        "normalized_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "raw_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "weighted_minimum": 0.17149392599999996,
+        "weighted_bound": 0.01,
+        "separation_margin": 0.16149392599999995,
+        "primal_dual_gap": 2.7755575615628914e-17
+      },
+      "flow_residual": 3.2730578622241374e-17,
+      "policy_evaluation_residual": 5.551115123125783e-17,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 65,
+      "randomized_nodes": 1,
+      "authority": "no_repair",
+      "state_count": 2374,
+      "action_count": 6466
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.03,
+        "net_expense": -27.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.171493926,
+        "burden": 0.034730574790691845,
+        "net_expense": -25.48506074
+      },
+      "phase_one_value": 0.151493926,
+      "maximum_normalized_violation": 0.151493926,
+      "certificate": {
+        "normalized_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "raw_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "weighted_minimum": 0.17149392599999996,
+        "weighted_bound": 0.02,
+        "separation_margin": 0.15149392599999997,
+        "primal_dual_gap": 2.7755575615628914e-17
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 2.7755575615628914e-17,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 51,
+      "randomized_nodes": 1,
+      "authority": "no_repair",
+      "state_count": 2374,
+      "action_count": 6466
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.02,
+        "burden": 0.03,
+        "net_expense": -30.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.171493926,
+        "burden": 0.0011704499999999997,
+        "net_expense": -28.48506074
+      },
+      "phase_one_value": 0.15149392599999997,
+      "maximum_normalized_violation": 0.151493926,
+      "certificate": {
+        "normalized_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "raw_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "weighted_minimum": 0.17149392599999996,
+        "weighted_bound": 0.02,
+        "separation_margin": 0.15149392599999997,
+        "primal_dual_gap": 0.0
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 7.105427357601002e-15,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 33,
+      "randomized_nodes": 1,
+      "authority": "no_repair",
+      "state_count": 2374,
+      "action_count": 6466
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.005,
+        "burden": 0.01,
+        "net_expense": -31.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.171493926,
+        "burden": 0.0,
+        "net_expense": -29.335060740000003
+      },
+      "phase_one_value": 0.166493926,
+      "maximum_normalized_violation": 0.166493926,
+      "certificate": {
+        "normalized_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "raw_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "weighted_minimum": 0.17149392599999996,
+        "weighted_bound": 0.005,
+        "separation_margin": 0.16649392599999996,
+        "primal_dual_gap": 2.7755575615628914e-17
+      },
+      "flow_residual": 5.411834446850666e-17,
+      "policy_evaluation_residual": 2.7755575615628914e-17,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 35,
+      "randomized_nodes": 1,
+      "authority": "no_repair",
+      "state_count": 2374,
+      "action_count": 6466
+    },
+    {
+      "status": "infeasible",
+      "bounds": {
+        "failure": 0.0,
+        "burden": 0.0,
+        "net_expense": -20.0
+      },
+      "scales": [
+        1.0,
+        1.0,
+        10.0
+      ],
+      "consequences": {
+        "failure": 0.17149392600000002,
+        "burden": 0.15119459637499996,
+        "net_expense": -18.285060740000002
+      },
+      "phase_one_value": 0.17149392600000005,
+      "maximum_normalized_violation": 0.17149392600000002,
+      "certificate": {
+        "normalized_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "raw_weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "weighted_minimum": 0.17149392599999996,
+        "weighted_bound": 0.0,
+        "separation_margin": 0.17149392599999996,
+        "primal_dual_gap": 8.326672684688674e-17
+      },
+      "flow_residual": 7.174261185127762e-17,
+      "policy_evaluation_residual": 5.551115123125783e-17,
+      "minimum_occupancy": -0.0,
+      "reachable_nodes": 127,
+      "randomized_nodes": 1,
+      "authority": "no_repair",
+      "state_count": 2374,
+      "action_count": 6466
+    }
+  ],
+  "one_full": {
+    "status": "feasible",
+    "bounds": {
+      "failure": 0.1,
+      "burden": 0.1,
+      "net_expense": 0.05
+    },
+    "scales": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "consequences": {
+      "failure": 0.09677419354838705,
+      "burden": 0.09677419354838712,
+      "net_expense": -0.032258064516128684
+    },
+    "phase_one_value": -0.0032258064516128893,
+    "maximum_normalized_violation": -0.0032258064516128837,
+    "certificate": {
+      "normalized_weights": [
+        0.21505376344086025,
+        0.7849462365591398,
+        0.0
+      ],
+      "raw_weights": [
+        0.21505376344086025,
+        0.7849462365591398,
+        0.0
+      ],
+      "weighted_minimum": 0.0967741935483871,
+      "weighted_bound": 0.1,
+      "separation_margin": -0.0032258064516129115,
+      "primal_dual_gap": 2.211772431870429e-17
+    },
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 0.0,
+    "minimum_occupancy": 0.0,
+    "reachable_nodes": 1,
+    "randomized_nodes": 1,
+    "authority": "full",
+    "state_count": 9,
+    "action_count": 8,
+    "policy": [
+      {
+        "state": {
+          "remaining": 1,
+          "stock": 1,
+          "cash": 8,
+          "ready": 1,
+          "fault_probability": "1/2"
+        },
+        "occupancy": 1.0,
+        "choices": [
+          {
+            "probability": 0.03225806451612889,
+            "action_index": 0,
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          {
+            "probability": 0.9677419354838711,
+            "action_index": 6,
+            "support": "keep",
+            "test": true,
+            "repair_rule": {
+              "positive": 1,
+              "negative": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "one_no_diagnostic": {
+    "status": "infeasible",
+    "bounds": {
+      "failure": 0.1,
+      "burden": 0.1,
+      "net_expense": 0.05
+    },
+    "scales": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "consequences": {
+      "failure": 0.23684210526315788,
+      "burden": 0.23684210526315796,
+      "net_expense": -2.389473684210527
+    },
+    "phase_one_value": 0.1368421052631579,
+    "maximum_normalized_violation": 0.13684210526315796,
+    "certificate": {
+      "normalized_weights": [
+        0.5263157894736842,
+        0.4736842105263158,
+        0.0
+      ],
+      "raw_weights": [
+        0.5263157894736842,
+        0.4736842105263158,
+        0.0
+      ],
+      "weighted_minimum": 0.23684210526315788,
+      "weighted_bound": 0.1,
+      "separation_margin": 0.13684210526315788,
+      "primal_dual_gap": 2.7755575615628914e-17
+    },
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 0.0,
+    "minimum_occupancy": 0.0,
+    "reachable_nodes": 1,
+    "randomized_nodes": 1,
+    "authority": "no_diagnostic",
+    "state_count": 9,
+    "action_count": 4,
+    "policy": [
+      {
+        "state": {
+          "remaining": 1,
+          "stock": 1,
+          "cash": 8,
+          "ready": 1,
+          "fault_probability": "1/2"
+        },
+        "occupancy": 1.0,
+        "choices": [
+          {
+            "probability": 0.5263157894736842,
+            "action_index": 0,
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          {
+            "probability": 0.47368421052631593,
+            "action_index": 1,
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "one_response_75": {
+    "status": "feasible",
+    "bounds": {
+      "failure": 0.1,
+      "burden": 0.1,
+      "net_expense": 0.05
+    },
+    "scales": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "consequences": {
+      "failure": 0.09677419354838705,
+      "burden": 0.09677419354838712,
+      "net_expense": -0.032258064516128684
+    },
+    "phase_one_value": -0.0032258064516128893,
+    "maximum_normalized_violation": -0.0032258064516128837,
+    "certificate": {
+      "normalized_weights": [
+        0.21505376344086025,
+        0.7849462365591398,
+        0.0
+      ],
+      "raw_weights": [
+        0.21505376344086025,
+        0.7849462365591398,
+        0.0
+      ],
+      "weighted_minimum": 0.0967741935483871,
+      "weighted_bound": 0.1,
+      "separation_margin": -0.0032258064516129115,
+      "primal_dual_gap": 2.211772431870429e-17
+    },
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 0.0,
+    "minimum_occupancy": 0.0,
+    "reachable_nodes": 1,
+    "randomized_nodes": 1,
+    "authority": "response_75",
+    "state_count": 9,
+    "action_count": 4,
+    "policy": [
+      {
+        "state": {
+          "remaining": 1,
+          "stock": 1,
+          "cash": 8,
+          "ready": 1,
+          "fault_probability": "1/2"
+        },
+        "occupancy": 1.0,
+        "choices": [
+          {
+            "probability": 0.03225806451612889,
+            "action_index": 0,
+            "support": "drop",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          {
+            "probability": 0.9677419354838711,
+            "action_index": 6,
+            "support": "keep",
+            "test": true,
+            "repair_rule": {
+              "positive": 1,
+              "negative": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "one_response_95": {
+    "status": "infeasible",
+    "bounds": {
+      "failure": 0.1,
+      "burden": 0.1,
+      "net_expense": 0.05
+    },
+    "scales": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "consequences": {
+      "failure": 0.45,
+      "burden": 0.040000000000000036,
+      "net_expense": 0.40000000000000124
+    },
+    "phase_one_value": 0.35,
+    "maximum_normalized_violation": 0.35000000000000125,
+    "certificate": {
+      "normalized_weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "raw_weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "weighted_minimum": 0.45,
+      "weighted_bound": 0.1,
+      "separation_margin": 0.35,
+      "primal_dual_gap": 0.0
+    },
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 0.0,
+    "minimum_occupancy": 0.0,
+    "reachable_nodes": 1,
+    "randomized_nodes": 1,
+    "authority": "response_95",
+    "state_count": 9,
+    "action_count": 3,
+    "policy": [
+      {
+        "state": {
+          "remaining": 1,
+          "stock": 1,
+          "cash": 8,
+          "ready": 1,
+          "fault_probability": "1/2"
+        },
+        "occupancy": 1.0,
+        "choices": [
+          {
+            "probability": 0.1999999999999993,
+            "action_index": 2,
+            "support": "keep",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          {
+            "probability": 0.8000000000000007,
+            "action_index": 4,
+            "support": "keep",
+            "test": true,
+            "repair_rule": {
+              "positive": 0,
+              "negative": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "one_opening_75": {
+    "status": "infeasible",
+    "bounds": {
+      "failure": 0.1,
+      "burden": 0.1,
+      "net_expense": 0.05
+    },
+    "scales": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "consequences": {
+      "failure": 0.45,
+      "burden": 0.040000000000000036,
+      "net_expense": 0.40000000000000124
+    },
+    "phase_one_value": 0.35,
+    "maximum_normalized_violation": 0.35000000000000125,
+    "certificate": {
+      "normalized_weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "raw_weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "weighted_minimum": 0.45,
+      "weighted_bound": 0.1,
+      "separation_margin": 0.35,
+      "primal_dual_gap": 0.0
+    },
+    "flow_residual": 0.0,
+    "policy_evaluation_residual": 0.0,
+    "minimum_occupancy": 0.0,
+    "reachable_nodes": 1,
+    "randomized_nodes": 1,
+    "authority": "opening_75",
+    "state_count": 9,
+    "action_count": 3,
+    "policy": [
+      {
+        "state": {
+          "remaining": 1,
+          "stock": 1,
+          "cash": 8,
+          "ready": 1,
+          "fault_probability": "1/2"
+        },
+        "occupancy": 1.0,
+        "choices": [
+          {
+            "probability": 0.1999999999999993,
+            "action_index": 2,
+            "support": "keep",
+            "test": false,
+            "repair_rule": {
+              "none": 0
+            }
+          },
+          {
+            "probability": 0.8000000000000007,
+            "action_index": 4,
+            "support": "keep",
+            "test": true,
+            "repair_rule": {
+              "positive": 0,
+              "negative": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

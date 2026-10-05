@@ -1,0 +1,93 @@
+{
+  "result": {
+    "equal_session_estimate": -0.0029239766081871343,
+    "session_count": 6,
+    "session_standard_error": 0.040112866993315836,
+    "approximate_t95_interval": [
+      -0.10603738387650029,
+      0.10018943066012602
+    ],
+    "leave_one_session_out_range": [
+      -0.03508771929824561,
+      0.021052631578947368
+    ],
+    "exact_equal_session_estimate": "-1/342",
+    "n_eligible_opportunities": 342,
+    "n_unique_people": 87,
+    "n_treated": 161,
+    "group_opportunity_weighted_ht": 0.005847953216374269,
+    "treated_investment_rate": 0.6086956521739131,
+    "control_investment_rate": 0.5911602209944752,
+    "ordinary_mean_difference": 0.0175354311794379,
+    "current_role_counts": {
+      "citizen": 268,
+      "authority": 74
+    },
+    "sessions": [
+      {
+        "session": "141126_1136",
+        "n": 57,
+        "n_treated": 31,
+        "estimate": -0.08771929824561403,
+        "exact_estimate": "-5/57",
+        "treated_investment_rate": 0.5161290322580645,
+        "control_investment_rate": 0.6153846153846154
+      },
+      {
+        "session": "141201_1146",
+        "n": 38,
+        "n_treated": 14,
+        "estimate": 0.0,
+        "exact_estimate": "0",
+        "treated_investment_rate": 0.42857142857142855,
+        "control_investment_rate": 0.4583333333333333
+      },
+      {
+        "session": "141201_1616",
+        "n": 76,
+        "n_treated": 35,
+        "estimate": 0.15789473684210525,
+        "exact_estimate": "3/19",
+        "treated_investment_rate": 0.6571428571428571,
+        "control_investment_rate": 0.4878048780487805
+      },
+      {
+        "session": "141203_1150",
+        "n": 57,
+        "n_treated": 20,
+        "estimate": 0.017543859649122806,
+        "exact_estimate": "1/57",
+        "treated_investment_rate": 0.75,
+        "control_investment_rate": 0.6216216216216216
+      },
+      {
+        "session": "150130_1204",
+        "n": 57,
+        "n_treated": 27,
+        "estimate": 0.017543859649122806,
+        "exact_estimate": "1/57",
+        "treated_investment_rate": 0.7777777777777778,
+        "control_investment_rate": 0.7333333333333333
+      },
+      {
+        "session": "150206_1200",
+        "n": 57,
+        "n_treated": 34,
+        "estimate": -0.12280701754385964,
+        "exact_estimate": "-7/57",
+        "treated_investment_rate": 0.5,
+        "control_investment_rate": 0.6521739130434783
+      }
+    ]
+  },
+  "checks": {
+    "unique_person_rounds": true,
+    "complete_20_round_participation": true,
+    "complete_adjacent_joins": true,
+    "fixed_authority_places_each_round": true
+  },
+  "protocol_sha256": "f32589ab0e9b408e838d562075ced67b5c66ee4a3a8f857138e570a5a079bb3f",
+  "data_sha256": "6015fe56a8b8fe63f4a228043aba122408f048ac081cc2f5152c1c8b90b1908b",
+  "code_sha256": "7e71f8eaed1a85d01437fac85f4a506a400a8e91dec459b8a1f1855982dd9a47",
+  "summary_dependency_sha256": "3680369f34046629e0d7561be0f49e4f67978a37c1d1bfcb034a78c3d65c2a0d"
+}

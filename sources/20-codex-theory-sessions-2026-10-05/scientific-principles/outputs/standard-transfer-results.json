@@ -1,0 +1,222 @@
+{
+  "seed": 20271109,
+  "rule_frozen_after_study": true,
+  "records": [
+    {
+      "future_profile": "interaction",
+      "pairs": 512,
+      "executed_rule": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "reports": {
+        "incumbent": {
+          "count": 512,
+          "expense": {
+            "exact": "4480",
+            "decimal": 4480.0
+          },
+          "errors": 16384,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "20864",
+            "decimal": 20864.0
+          }
+        },
+        "edited": {
+          "count": 512,
+          "expense": {
+            "exact": "256768/25",
+            "decimal": 10270.72
+          },
+          "errors": 0,
+          "proposals": 512,
+          "adoptions": 512,
+          "observed_loss": {
+            "exact": "256768/25",
+            "decimal": 10270.72
+          }
+        }
+      },
+      "mean_observed_gain_vs_incumbent": {
+        "exact": "2069/100",
+        "decimal": 20.69
+      }
+    },
+    {
+      "future_profile": "single",
+      "pairs": 512,
+      "executed_rule": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "reports": {
+        "incumbent": {
+          "count": 512,
+          "expense": {
+            "exact": "237184/25",
+            "decimal": 9487.36
+          },
+          "errors": 0,
+          "proposals": 512,
+          "adoptions": 512,
+          "observed_loss": {
+            "exact": "237184/25",
+            "decimal": 9487.36
+          }
+        },
+        "edited": {
+          "count": 512,
+          "expense": {
+            "exact": "240384/25",
+            "decimal": 9615.36
+          },
+          "errors": 0,
+          "proposals": 512,
+          "adoptions": 512,
+          "observed_loss": {
+            "exact": "240384/25",
+            "decimal": 9615.36
+          }
+        }
+      },
+      "mean_observed_gain_vs_incumbent": {
+        "exact": "-1/4",
+        "decimal": -0.25
+      }
+    },
+    {
+      "future_profile": "constant",
+      "pairs": 512,
+      "executed_rule": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "reports": {
+        "incumbent": {
+          "count": 512,
+          "expense": {
+            "exact": "4480",
+            "decimal": 4480.0
+          },
+          "errors": 0,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "4480",
+            "decimal": 4480.0
+          }
+        },
+        "edited": {
+          "count": 512,
+          "expense": {
+            "exact": "4864",
+            "decimal": 4864.0
+          },
+          "errors": 0,
+          "proposals": 0,
+          "adoptions": 0,
+          "observed_loss": {
+            "exact": "4864",
+            "decimal": 4864.0
+          }
+        }
+      },
+      "mean_observed_gain_vs_incumbent": {
+        "exact": "-3/4",
+        "decimal": -0.75
+      }
+    },
+    {
+      "future_profile": "null",
+      "pairs": 512,
+      "executed_rule": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "reports": {
+        "incumbent": {
+          "count": 512,
+          "expense": {
+            "exact": "31814/5",
+            "decimal": 6362.8
+          },
+          "errors": 16342,
+          "proposals": 220,
+          "adoptions": 10,
+          "observed_loss": {
+            "exact": "113524/5",
+            "decimal": 22704.8
+          }
+        },
+        "edited": {
+          "count": 512,
+          "expense": {
+            "exact": "196696/25",
+            "decimal": 7867.84
+          },
+          "errors": 16318,
+          "proposals": 371,
+          "adoptions": 21,
+          "observed_loss": {
+            "exact": "604646/25",
+            "decimal": 24185.84
+          }
+        }
+      },
+      "mean_observed_gain_vs_incumbent": {
+        "exact": "-18513/6400",
+        "decimal": -2.89265625
+      }
+    },
+    {
+      "future_profile": "noisy_interaction",
+      "pairs": 512,
+      "executed_rule": {
+        "require_improving_prefix": false,
+        "require_final_training_improvement": true,
+        "require_fresh_local_validation": true
+      },
+      "reports": {
+        "incumbent": {
+          "count": 512,
+          "expense": {
+            "exact": "143514/25",
+            "decimal": 5740.56
+          },
+          "errors": 16283,
+          "proposals": 148,
+          "adoptions": 2,
+          "observed_loss": {
+            "exact": "550589/25",
+            "decimal": 22023.56
+          }
+        },
+        "edited": {
+          "count": 512,
+          "expense": {
+            "exact": "41568/5",
+            "decimal": 8313.6
+          },
+          "errors": 15950,
+          "proposals": 416,
+          "adoptions": 48,
+          "observed_loss": {
+            "exact": "121318/5",
+            "decimal": 24263.6
+          }
+        }
+      },
+      "mean_observed_gain_vs_incumbent": {
+        "exact": "-56001/12800",
+        "decimal": -4.375078125
+      }
+    }
+  ],
+  "limitation": "The learner does not re-open its standard after shift in this implementation; these are prospective transfer executions, not a drift-detection guarantee."
+}

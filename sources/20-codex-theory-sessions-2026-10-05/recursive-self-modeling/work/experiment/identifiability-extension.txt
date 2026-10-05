@@ -1,0 +1,192 @@
+Exact identification boundary: an unknown process offset removes the absolute anchor
+Date: 2026-10-05
+Status: separate analytic extension after the frozen synthetic evaluation
+No simulation code, frozen protocol, or evaluation result was changed.
+
+1. Model class and assumptions
+
+Consider
+  x_(t+1) = a*x_t + u_t + g + w_t,
+  y_t = x_t + b + eps_t,
+  z_t = x_t + d + eta_t,
+where a is known, b,d,g are unknown constant real values, and z may be offered
+only intermittently. Allow any real initial state, or an initial-state law whose
+location is unspecified and may shift with the model. The admissible class must
+contain the shifted parameters and initial state defined below. Restrictions
+such as a fixed g=0, an exactly known x_0, or a fixed initial distribution can
+remove this closure and must not be silently ignored.
+
+A controller's acquisitions, actions, forecasts, model updates and stopping
+decisions may depend on its observation history, past actions, time and internal
+randomness, but not on hidden true x,b,d,g or future disturbances. Couple its
+internal initial state and random choices identically across compared worlds.
+Known deterministic clipping, sensing budgets and supplied algorithms are allowed.
+Use the same realized w,eps,eta sequence in both worlds; when considering laws,
+their joint distribution is also the same. No independence assumption is needed
+for the pathwise equivalence itself. Parameter-dependent noise laws could break
+equivalence and are excluded unless shown to preserve this transformation.
+
+2. Proposition: observational equivalence under a state/bias/offset shift
+
+For any admissible constant c, define T_c by
+  x'_t = x_t+c,
+  b' = b-c,
+  d' = d-c,
+  g' = g+(1-a)*c.
+Then the two worlds have identical ordinary and reference observations, identical
+acquisition decisions and actions, and state trajectories separated by c at all
+times. This holds for every allowed observation-based controller.
+
+Proof. At time zero, x'_0=x_0+c by construction. If x'_t=x_t+c, then
+  y'_t = (x_t+c)+(b-c)+eps_t = y_t,
+  z'_t = (x_t+c)+(d-c)+eta_t = z_t.
+The controller has the same prior internal state, preceding observable history
+and coupled random choices. It therefore takes the same next acquisition and
+action, u'_t=u_t; its next internal state also agrees. Now
+  x'_(t+1)
+    = a*(x_t+c)+u_t+g+(1-a)*c+w_t
+    = x_(t+1)+c.
+Induction proves the claim. For intermittent z, its potential value agrees in
+both worlds, the purchase decision agrees before that value is revealed, and
+the delivered histories agree. T_c composed with T_h equals T_(c+h), with inverse
+T_(-c), so these maps form a one-parameter symmetry of this model class. QED.
+
+If initial distributions are shifted correspondingly, this coupling gives equal
+probability laws for the complete observable history. Distinct latent models in
+the class therefore cannot be identified from those histories. This is stronger
+than a finite-sample precision problem: the observation laws coincide exactly.
+Active selection of u or acquisition times within the stated observation/control
+equations cannot break the symmetry, because the proof covers every such policy.
+
+3. What remains identifiable
+
+In the noiseless case,
+  y_t-z_t = b-d,
+  y_(t+1)-a*y_t-u_t = g+(1-a)*b.
+Both quantities are unchanged by T_c. They are relative or combined parameters,
+not separate identifications of b,d,g. State differences x_t-x_s are also
+invariant. State x_t itself is not invariant.
+
+For an exact rank check, take the augmented state s=(x,b,d,g), with
+  A = [[a,0,0,1], [0,1,0,0], [0,0,1,0], [0,0,0,1]],
+  H_y=(1,1,0,0), H_z=(1,0,1,0).
+The vector v=(1,-1,-1,1-a) satisfies A*v=v and H_y*v=H_z*v=0.
+It is an unobservable mode for any a, including a=.8. The three rows
+  H_y, H_z, H_y*A
+  = [[1,1,0,0], [1,0,1,0], [a,1,0,1]]
+are linearly independent for every a. Thus, when these observations are available,
+the noiseless augmented-state observability rank is exactly three, with a
+one-dimensional ambiguity spanned by v. Further observations cannot recover
+this remaining mode under the unchanged equations.
+
+Concrete counterexample at a=.8, without noise:
+World A has x_0=b=d=g=0. World B has x'_0=1, b'=d'=-1, g'=.2.
+For the policy u_t=0 both worlds produce y_t=z_t=0 at every step.
+World A remains at x_t=0; World B remains at x'_t=1. These parameter values
+belong to the extension's unrestricted class, not the original frozen worlds.
+
+4. The known-dynamics anchor restores identification when a != 1
+
+If g is fixed at a known g0, a shifted world must obey
+  g0 = g0+(1-a)*c.
+For a!=1 this forces c=0. More constructively, with no observation/process noise,
+  b = [y_(t+1)-a*y_t-u_t-g0]/(1-a),
+  x_t = y_t-b.
+For state (x,b), the two-row observability matrix
+  [[1,1],[a,1]]
+has determinant 1-a. At a=.8 this is .2. Known g=0 is the original model's
+absolute relaxation anchor; it is a substantive supplied assumption.
+
+With unknown constant reference bias d but known g0, use state (x,b,d),
+A=diag(a,1,1), H_y=(1,1,0), H_z=(1,0,1). Observations y_0,z_0,y_1
+give the matrix
+  [[1,1,0],[1,0,1],[a,1,0]],
+whose determinant is a-1, equal to -.2 at a=.8. Subtract the known input and
+g0 from y_1 before reconstruction. Thus x_0,b,d are separately identifiable
+noiselessly. Later intermittent z can similarly identify d after y has
+identified x and b; continuous reference access is unnecessary.
+
+At a=1, knowing g0 does not eliminate the shift: g'=g. Even both sensors leave
+the absolute x/b/d offset unresolved unless another anchor is supplied.
+At a close to one, the noiseless inverse exists but is poorly conditioned.
+With nonzero process and measurement noises, rank does not promise exact finite-
+sample state reconstruction or accurate filtering. It distinguishes structural
+ambiguity from noisy estimation; precision still depends on noise, horizon,
+parameter assumptions and estimator design.
+
+5. Initial-state priors and other restrictions can supply an anchor
+
+A known fixed initial distribution is not generally invariant under x_0->x_0+c.
+In particular, the original x_0~Normal(0,1) cannot be silently replaced by
+Normal(c,1) while claiming the same model specification. A fixed proper
+probability distribution on the real line cannot be invariant under every
+translation. Hence the distributional nonidentifiability result in section 2
+requires the shifted initial law to be admissible; its pathwise algebra alone
+does not prove that two models sharing a fixed anchored prior have equal laws.
+
+For example, with known E[x_0]=0, zero-mean measurement/process noise, and fixed
+unknown b,d,g, the observable population moments satisfy
+  E[y_0]=b, E[z_0]=d,
+  E[y_1-a*y_0-u_0]=g+(1-a)*b.
+They distinguish b,d,g, and then g can be recovered from the last equation.
+This population argument uses the actually recorded u_0; it does not require
+open-loop control. It assumes the reference at t=0 is observed unconditionally,
+or that any selection mechanism is properly accounted for. It establishes
+distributional identifiability, not exact recovery from one noisy episode.
+A single initial draw can leave substantial uncertainty even with a known prior.
+
+Other possible anchors include a known unbiased reference d=0, exactly known
+initial x_0, a known process offset with a!=1, or a calibration intervention
+that sets x to a known absolute value. Conversely, merely adding another sensor
+with an unknown additive bias preserves the same shift ambiguity. Nonlinear
+boundaries, known parameter supports, or noise laws may also constrain shifts;
+their effects require separate proofs. A restricted parameter class need not
+contain all T_c transforms even if the observation equations have this symmetry.
+
+The original frozen experiment additionally supplies g=0, a=.8, x_0~Normal(0,1),
+and a specific discrete bias generator. It is outside this unanchored extension.
+Its results must not be redescribed as demonstrating the extension's impossibility.
+
+6. Implications for invariance and recursive modeling
+
+This example specifies both a transformation T_c and the quantities it preserves.
+It therefore gives a genuine, limited invariance statement: histories of y,z,u
+are invariant under T_c in the stated model class. It is not an invariance of
+all properties, all abstraction maps, or every move to a meta-model.
+
+The counterexample also shows why the preserved property must be named. With a
+fixed objective of regulating physical x toward zero, x^2 is NOT invariant:
+  (x+c)^2-x^2 = 2*c*x+c^2.
+In the two noiseless zero-action worlds above, a 60-step state loss is zero in
+World A and 60 in World B despite identical sensor/action records. One cannot
+certify this fixed absolute-state objective from those records alone in the
+unanchored model class. If the target were also shifted by c, relative target
+error would be invariant; that is a different transformation of the full problem.
+Do not conflate a relabeling of coordinates and target with two different latent
+states evaluated against the same externally fixed target.
+
+Any additional model or meta-model computed solely from the same observable
+history and identically coupled internal randomness is also indistinguishable
+between these two worlds. More computation alone cannot remove this exact
+information ambiguity. It can still improve computation of identifiable
+quantities, exploit a justified anchor, or correct an earlier algorithmic error.
+A new observation or intervention breaks the ambiguity only if its law supplies
+information that is not itself invariant under the same shift.
+
+The qualified structural lesson is: a reflective process using unchanged
+evidence and assumptions inherits the corresponding observational ambiguity.
+Its description as 'higher-order' does not supply an absolute reference. This
+supports a precise constraint on certain implementations, while leaving open
+whether actual introspective systems satisfy this toy model's assumptions.
+It neither establishes a general consciousness theory nor turns successful
+control into ethical legitimacy.
+
+7. Audit judgment
+
+The proposed extension and both determinant claims are correct. The decisive
+qualifications are admissibility of shifted initial states/distributions and
+parameter values, identical observable-input policies, unchanged noise laws,
+and separation from the already frozen experiment. The explicit counterexample,
+rank-nullspace calculation, known-anchor inverse and fixed-prior example provide
+independent checks of the boundary. No additional synthetic evaluation is needed
+to establish these exact algebraic statements.

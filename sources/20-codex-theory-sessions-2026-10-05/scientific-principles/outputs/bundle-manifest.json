@@ -1,0 +1,107 @@
+{
+  "created_date": "2026-10-05",
+  "timezone": "Asia/Bangkok",
+  "files": [
+    {
+      "path": "outputs/README.md",
+      "bytes": 1450,
+      "sha256": "d4d8d024a736feb826ab105ec960410410bd84c7e1e935d860369b0d4521665a"
+    },
+    {
+      "path": "outputs/formal-supplement.md",
+      "bytes": 7350,
+      "sha256": "45d9f5b8d134b890a901afdc7f3ed5158025831ff6f91a232f85a6cde46d3ad6"
+    },
+    {
+      "path": "outputs/primary-source-map.md",
+      "bytes": 10542,
+      "sha256": "1422e6849c3cd057c8c88bb624e6147b73a0ff2c4fcdaaf8ef28436c2368abaf"
+    },
+    {
+      "path": "outputs/reproduce.py",
+      "bytes": 6420,
+      "sha256": "2ba0cf914c1e4407e8feab20e820edc14c399071a41853baa5aa63c34dbea626"
+    },
+    {
+      "path": "outputs/research-record.md",
+      "bytes": 7286,
+      "sha256": "f2d0b18d9b65ef37690e13839197f402a4ac57e9f89a82d565d83f13c106663f"
+    },
+    {
+      "path": "outputs/scientific-principles-investigation.md",
+      "bytes": 36157,
+      "sha256": "a6c1eb8dc46565212c6f0b3f32c0c75af76407bba98d93f593942d16f1726c06"
+    },
+    {
+      "path": "outputs/verification-results.json",
+      "bytes": 7086,
+      "sha256": "125ec257a320fde454d8c9c3d20bb6b850d5ca122877468ea9b0e5e24443c35b"
+    },
+    {
+      "path": "work/formal/checks.py",
+      "bytes": 4466,
+      "sha256": "c8e2f79c6faf688e539a984b7952df4cd05981635b1ec4109a45214995105fa9"
+    },
+    {
+      "path": "work/formal/results.json",
+      "bytes": 1849,
+      "sha256": "e89611a8838e8f02a67b6fca000cd232da9a59411734a74f31deb427bea6d92f"
+    },
+    {
+      "path": "work/formal/root-audit.md",
+      "bytes": 2501,
+      "sha256": "704382b3ca381ace58c63ae5a0725be6165dd3aa6a5e71751a0c65efcecb438b"
+    },
+    {
+      "path": "work/replication-checks.py",
+      "bytes": 2148,
+      "sha256": "db1d4c5c099f774371aca33c21db425e08bac365fb04188f32f96637edad2a2e"
+    },
+    {
+      "path": "work/replication-checks.json",
+      "bytes": 830,
+      "sha256": "91b071f312211e226f3190bff7e9ae8079aea4ca9ca398259f61c5d4e5cfe7fb"
+    },
+    {
+      "path": "work/reference/01-README.md",
+      "bytes": 36938,
+      "sha256": "1c8ffc4ff15ac124527f9ba87b0982bae665a625ed1d25a510a0ae06ca07a6b1"
+    },
+    {
+      "path": "work/reference/02-CLAIMS.md",
+      "bytes": 62398,
+      "sha256": "1ccb5807cdb71c2b9200804399187be8959a9c02135b4aa7c573dd2c996c8cc5"
+    },
+    {
+      "path": "work/reference/03-SITUATED-CORRECTION.md",
+      "bytes": 16172,
+      "sha256": "b183ac8c9f13bbe4a17d07e2132d789f87c2161540019319fcadee114b5a56ca"
+    },
+    {
+      "path": "work/reference/04-2026-10-05-inherited-evidence-under-model-revision.md",
+      "bytes": 16952,
+      "sha256": "e84233cded658ee5fce64daa5e8fa843aed4ac7ce457ae81d2cfd16fb053e837"
+    },
+    {
+      "path": "work/reference/05-2026-10-05-questions-without-anomalies.md",
+      "bytes": 17740,
+      "sha256": "16a1f2c1cb72987f7413ea31da3637dca573fcea0e733b369ea4454863945c8e"
+    },
+    {
+      "path": "work/reference/06-2026-10-05-recoverable-inquiry.md",
+      "bytes": 16339,
+      "sha256": "07613452ef430dcec784b2aaadc67b6c6a868770c40257a4a28d4770d18ec42f"
+    },
+    {
+      "path": "work/reference/07-2026-10-05-renewal-of-inquiry.md",
+      "bytes": 17397,
+      "sha256": "5f982e6862c9be868e68de3966a305487d741e3c6b9a4bb11f99c71615c2003a"
+    },
+    {
+      "path": "work/reference/manifest.json",
+      "bytes": 3010,
+      "sha256": "acc17a27b65612ef09118dcaadd1f29ec87bc091b55263b69e8d7e43aec5732f"
+    }
+  ],
+  "note": "The manifest does not hash itself or the enclosing ZIP. Original source snapshots retain their source-context relative links."
+}

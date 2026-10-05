@@ -1,0 +1,410 @@
+{
+  "batch": "r05",
+  "condition": "decision_procedure",
+  "replicate": 2,
+  "round": 3,
+  "order": [
+    "A06",
+    "A01",
+    "A05",
+    "A04",
+    "A03",
+    "A02"
+  ],
+  "episodes": {
+    "A06": {
+      "history": [
+        [
+          "inspect",
+          "\"state_1\""
+        ]
+      ],
+      "events": [
+        {
+          "round": 0,
+          "submitted": {
+            "id": "A06",
+            "kind": "query",
+            "target": "inspect",
+            "reason": "Inspection identifies the state and permits its zero-residual action, yielding expected total loss 2 versus 4 for the best immediate action."
+          },
+          "invalid": false,
+          "effective_kind": "query",
+          "effective_target": "inspect",
+          "public_posterior": {
+            "state_0": "1/2",
+            "state_1": "1/2"
+          },
+          "remaining_optimum": "2",
+          "chosen_Q": "2",
+          "bellman_gap": "0",
+          "optimal_command": true,
+          "best_immediate_terminal_loss": "4",
+          "strict_unnecessary_continuation": false,
+          "reason_words": 21,
+          "word_cap_compliant": true,
+          "query_result": "state_1"
+        },
+        {
+          "round": 1,
+          "submitted": {
+            "id": "A06",
+            "kind": "act",
+            "target": "option_b",
+            "reason": "Inspection establishes state_1 with certainty. Option_b has remaining loss 1 and finishes within the deadline; additional inquiry only adds fees."
+          },
+          "invalid": false,
+          "effective_kind": "act",
+          "effective_target": "option_b",
+          "public_posterior": {
+            "state_1": "1"
+          },
+          "remaining_optimum": "1",
+          "chosen_Q": "1",
+          "bellman_gap": "0",
+          "optimal_command": true,
+          "best_immediate_terminal_loss": "1",
+          "strict_unnecessary_continuation": false,
+          "reason_words": 20,
+          "word_cap_compliant": true,
+          "terminal_conditional_excess": "0",
+          "terminal_expected_remaining_loss": "1",
+          "realized_residual_loss": "0"
+        }
+      ],
+      "closed": true,
+      "terminal_action": "option_b",
+      "query_spending": "1",
+      "action_fee": "1",
+      "realized_total_loss": "2",
+      "final_elapsed": 2
+    },
+    "A01": {
+      "history": [
+        [
+          "share_a",
+          "\"1\""
+        ],
+        [
+          "share_b",
+          "\"1\""
+        ]
+      ],
+      "events": [
+        {
+          "round": 0,
+          "submitted": {
+            "id": "A01",
+            "kind": "query",
+            "target": "share_a",
+            "reason": "Both shares together identify the correct action. The feasible two-query continuation costs 3 total, below immediate expected loss 7; either share alone leaves actions tied."
+          },
+          "invalid": false,
+          "effective_kind": "query",
+          "effective_target": "share_a",
+          "public_posterior": {
+            "w00": "1/4",
+            "w01": "1/4",
+            "w10": "1/4",
+            "w11": "1/4"
+          },
+          "remaining_optimum": "3",
+          "chosen_Q": "3",
+          "bellman_gap": "0",
+          "optimal_command": true,
+          "best_immediate_terminal_loss": "7",
+          "strict_unnecessary_continuation": false,
+          "reason_words": 25,
+          "word_cap_compliant": true,
+          "query_result": "1"
+        },
+        {
+          "round": 1,
+          "submitted": {
+            "id": "A01",
+            "kind": "query",
+            "target": "share_b",
+            "reason": "The posterior assigns equal probability to w01 and w11. Share_b distinguishes them, yielding remaining loss 2 including the correct action, versus 7 for either immediate choice."
+          },
+          "invalid": false,
+          "effective_kind": "query",
+          "effective_target": "share_b",
+          "public_posterior": {
+            "w01": "1/2",
+            "w11": "1/2"
+          },
+          "remaining_optimum": "2",
+          "chosen_Q": "2",
+          "bellman_gap": "0",
+          "optimal_command": true,
+          "best_immediate_terminal_loss": "7",
+          "strict_unnecessary_continuation": false,
+          "reason_words": 26,
+          "word_cap_compliant": true,
+          "query_result": "1"
+        },
+        {
+          "round": 2,
+          "submitted": {
+            "id": "A01",
+            "kind": "act",
+            "target": "choose_0",
+            "reason": "The two responses identify w01 with certainty. Choose_0 has zero residual loss and fee 1, with sufficient cash and time."
+          },
+          "invalid": false,
+          "effective_kind": "act",
+          "effective_target": "choose_0",
+          "public_posterior": {
+            "w01": "1"
+          },
+          "remaining_optimum": "1",
+          "chosen_Q": "1",
+          "bellman_gap": "0",
+          "optimal_command": true,
+          "best_immediate_terminal_loss": "1",
+          "strict_unnecessary_continuation": false,
+          "reason_words": 20,
+          "word_cap_compliant": true,
+          "terminal_conditional_excess": "0",
+          "terminal_expected_remaining_loss": "1",
+          "realized_residual_loss": "0"
+        }
+      ],
+      "closed": true,
+      "terminal_action": "choose_0",
+      "query_spending": "2",
+      "action_fee": "1",
+      "realized_total_loss": "3",
+      "final_elapsed": 3
+    },
+    "A05": {
+      "history": [],
+      "events": [
+        {
+          "round": 0,
+          "submitted": {
+            "id": "A05",
+            "kind": "act",
+            "target": "option_a",
+            "reason": "Option_a minimizes loss in both states and has expected loss 5. Inspection cannot improve the selected action and raises expected total loss to 6."
+          },
+          "invalid": false,
+          "effective_kind": "act",
+          "effective_target": "option_a",
+          "public_posterior": {
+            "state_0": "1/2",
+            "state_1": "1/2"
+          },
+          "remaining_optimum": "5",
+          "chosen_Q": "5",
+          "bellman_gap": "0",
+          "optimal_command": true,
+          "best_immediate_terminal_loss": "5",
+          "strict_unnecessary_continuation": false,
+          "reason_words": 24,
+          "word_cap_compliant": true,
+          "terminal_conditional_excess": "0",
+          "terminal_expected_remaining_loss": "5",
+          "realized_residual_loss": "8"
+        }
+      ],
+      "closed": true,
+      "terminal_action": "option_a",
+      "query_spending": "0",
+      "action_fee": "1",
+      "realized_total_loss": "9",
+      "final_elapsed": 1
+    },
+    "A04": {
+      "history": [],
+      "events": [
+        {
+          "round": 0,
+          "submitted": {
+            "id": "A04",
+            "kind": "act",
+            "target": "fallback",
+            "reason": "Fallback costs 8 versus expected repair loss 11. Opening, diagnosing, and repairing requires 6 time units, exceeding the deadline, so inquiry cannot improve the attainable loss."
+          },
+          "invalid": false,
+          "effective_kind": "act",
+          "effective_target": "fallback",
+          "public_posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "remaining_optimum": "8",
+          "chosen_Q": "8",
+          "bellman_gap": "0",
+          "optimal_command": true,
+          "best_immediate_terminal_loss": "8",
+          "strict_unnecessary_continuation": false,
+          "reason_words": 26,
+          "word_cap_compliant": true,
+          "terminal_conditional_excess": "0",
+          "terminal_expected_remaining_loss": "8",
+          "realized_residual_loss": "8"
+        }
+      ],
+      "closed": true,
+      "terminal_action": "fallback",
+      "query_spending": "0",
+      "action_fee": "0",
+      "realized_total_loss": "8",
+      "final_elapsed": 0
+    },
+    "A03": {
+      "history": [
+        [
+          "open_panel",
+          "\"opened\""
+        ],
+        [
+          "diagnose",
+          "\"fault_0\""
+        ]
+      ],
+      "events": [
+        {
+          "round": 0,
+          "submitted": {
+            "id": "A03",
+            "kind": "query",
+            "target": "open_panel",
+            "reason": "Opening enables diagnosis and the correct repair. This continuation fits the six-unit deadline and costs 3 total, below immediate fallback loss 8."
+          },
+          "invalid": false,
+          "effective_kind": "query",
+          "effective_target": "open_panel",
+          "public_posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "remaining_optimum": "3",
+          "chosen_Q": "3",
+          "bellman_gap": "0",
+          "optimal_command": true,
+          "best_immediate_terminal_loss": "8",
+          "strict_unnecessary_continuation": false,
+          "reason_words": 22,
+          "word_cap_compliant": true,
+          "query_result": "opened"
+        },
+        {
+          "round": 1,
+          "submitted": {
+            "id": "A03",
+            "kind": "query",
+            "target": "diagnose",
+            "reason": "Opening leaves the prior unchanged but enables diagnosis. Diagnosis followed by the correct repair costs 2 more and finishes exactly at the deadline, improving on fallback loss 8."
+          },
+          "invalid": false,
+          "effective_kind": "query",
+          "effective_target": "diagnose",
+          "public_posterior": {
+            "fault_0": "1/2",
+            "fault_1": "1/2"
+          },
+          "remaining_optimum": "2",
+          "chosen_Q": "2",
+          "bellman_gap": "0",
+          "optimal_command": true,
+          "best_immediate_terminal_loss": "8",
+          "strict_unnecessary_continuation": false,
+          "reason_words": 28,
+          "word_cap_compliant": true,
+          "query_result": "fault_0"
+        },
+        {
+          "round": 2,
+          "submitted": {
+            "id": "A03",
+            "kind": "act",
+            "target": "repair_0",
+            "reason": "Diagnosis identifies fault_0 with certainty. Repair_0 costs 1 with zero residual loss and finishes exactly at the deadline."
+          },
+          "invalid": false,
+          "effective_kind": "act",
+          "effective_target": "repair_0",
+          "public_posterior": {
+            "fault_0": "1"
+          },
+          "remaining_optimum": "1",
+          "chosen_Q": "1",
+          "bellman_gap": "0",
+          "optimal_command": true,
+          "best_immediate_terminal_loss": "1",
+          "strict_unnecessary_continuation": false,
+          "reason_words": 18,
+          "word_cap_compliant": true,
+          "terminal_conditional_excess": "0",
+          "terminal_expected_remaining_loss": "1",
+          "realized_residual_loss": "0"
+        }
+      ],
+      "closed": true,
+      "terminal_action": "repair_0",
+      "query_spending": "2",
+      "action_fee": "1",
+      "realized_total_loss": "3",
+      "final_elapsed": 6
+    },
+    "A02": {
+      "history": [],
+      "events": [
+        {
+          "round": 0,
+          "submitted": {
+            "id": "A02",
+            "kind": "act",
+            "target": "choose_0",
+            "reason": "Either immediate choice has expected loss 7. One share does not improve action selection; acquiring both costs 9 including the action, so further inquiry is inferior."
+          },
+          "invalid": false,
+          "effective_kind": "act",
+          "effective_target": "choose_0",
+          "public_posterior": {
+            "w00": "1/4",
+            "w01": "1/4",
+            "w10": "1/4",
+            "w11": "1/4"
+          },
+          "remaining_optimum": "7",
+          "chosen_Q": "7",
+          "bellman_gap": "0",
+          "optimal_command": true,
+          "best_immediate_terminal_loss": "7",
+          "strict_unnecessary_continuation": false,
+          "reason_words": 26,
+          "word_cap_compliant": true,
+          "terminal_conditional_excess": "0",
+          "terminal_expected_remaining_loss": "7",
+          "realized_residual_loss": "0"
+        }
+      ],
+      "closed": true,
+      "terminal_action": "choose_0",
+      "query_spending": "0",
+      "action_fee": "1",
+      "realized_total_loss": "1",
+      "final_elapsed": 1
+    }
+  },
+  "format_events": [
+    {
+      "round": 0,
+      "extra_ids": [],
+      "duplicate_ids": []
+    },
+    {
+      "round": 1,
+      "extra_ids": [],
+      "duplicate_ids": []
+    },
+    {
+      "round": 2,
+      "extra_ids": [],
+      "duplicate_ids": []
+    }
+  ]
+}

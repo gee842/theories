@@ -1,0 +1,55 @@
+{
+  "kind": "exact finite constructed counterexamples",
+  "observational_equivalence": {
+    "natural_joint_distribution": {
+      "(0, 0)": "1/2",
+      "(1, 1)": "1/2"
+    },
+    "P_Y1_do_X1_mediated": "1",
+    "P_Y1_do_X1_common_cause": "1/2"
+  },
+  "public_binary_prediction_reversal": [
+    {
+      "forecast": 0,
+      "response": 1,
+      "correct": false
+    },
+    {
+      "forecast": 1,
+      "response": 0,
+      "correct": false
+    }
+  ],
+  "action_label_counts": [
+    2,
+    4
+  ],
+  "same_reachable_outcomes": [
+    "failed",
+    "safe"
+  ],
+  "same_total_different_person_A_protection": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "instantaneous_boolean_cycle_solutions": {
+    "x_equals_y_y_equals_x": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "x_equals_not_y_y_equals_x": []
+  },
+  "checks_passed": 9
+}

@@ -1,0 +1,291 @@
+{
+  "all_passed": true,
+  "n_checks": 71,
+  "scope": "Independent saved-output arithmetic and selection bookkeeping; not independent model implementation or empirical replication.",
+  "checks": [
+    {
+      "name": "24 held-out predictions",
+      "passed": true
+    },
+    {
+      "name": "unique held-out row indices",
+      "passed": true
+    },
+    {
+      "name": "all predictions use current cycle 5",
+      "passed": true
+    },
+    {
+      "name": "four source blocks",
+      "passed": true
+    },
+    {
+      "name": "six conditions: fucus",
+      "passed": true
+    },
+    {
+      "name": "six conditions: charles",
+      "passed": true
+    },
+    {
+      "name": "six conditions: nahant",
+      "passed": true
+    },
+    {
+      "name": "six conditions: ica",
+      "passed": true
+    },
+    {
+      "name": "CSV-derived metrics: baseline_selected",
+      "passed": true
+    },
+    {
+      "name": "CSV-derived metrics: baseline_ridge_only",
+      "passed": true
+    },
+    {
+      "name": "CSV-derived metrics: baseline_kernel_only",
+      "passed": true
+    },
+    {
+      "name": "CSV-derived metrics: augmented_selected",
+      "passed": true
+    },
+    {
+      "name": "CSV-derived metrics: augmented_ridge_only",
+      "passed": true
+    },
+    {
+      "name": "CSV-derived metrics: augmented_kernel_only",
+      "passed": true
+    },
+    {
+      "name": "CSV-derived metrics: persistence",
+      "passed": true
+    },
+    {
+      "name": "CSV-derived metrics: mean",
+      "passed": true
+    },
+    {
+      "name": "outer fold counts: charles",
+      "passed": true
+    },
+    {
+      "name": "outer index disjointness: charles",
+      "passed": true
+    },
+    {
+      "name": "equal 18-candidate budget: charles/baseline",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: charles/baseline/selected",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: charles/baseline/ridge_only",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: charles/baseline/kernel_only",
+      "passed": true
+    },
+    {
+      "name": "selected persistence: charles/baseline",
+      "passed": true
+    },
+    {
+      "name": "equal 18-candidate budget: charles/augmented",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: charles/augmented/selected",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: charles/augmented/ridge_only",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: charles/augmented/kernel_only",
+      "passed": true
+    },
+    {
+      "name": "selected persistence: charles/augmented",
+      "passed": true
+    },
+    {
+      "name": "outer fold counts: fucus",
+      "passed": true
+    },
+    {
+      "name": "outer index disjointness: fucus",
+      "passed": true
+    },
+    {
+      "name": "equal 18-candidate budget: fucus/baseline",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: fucus/baseline/selected",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: fucus/baseline/ridge_only",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: fucus/baseline/kernel_only",
+      "passed": true
+    },
+    {
+      "name": "selected persistence: fucus/baseline",
+      "passed": true
+    },
+    {
+      "name": "equal 18-candidate budget: fucus/augmented",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: fucus/augmented/selected",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: fucus/augmented/ridge_only",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: fucus/augmented/kernel_only",
+      "passed": true
+    },
+    {
+      "name": "selected persistence: fucus/augmented",
+      "passed": true
+    },
+    {
+      "name": "outer fold counts: ica",
+      "passed": true
+    },
+    {
+      "name": "outer index disjointness: ica",
+      "passed": true
+    },
+    {
+      "name": "equal 18-candidate budget: ica/baseline",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: ica/baseline/selected",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: ica/baseline/ridge_only",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: ica/baseline/kernel_only",
+      "passed": true
+    },
+    {
+      "name": "selected persistence: ica/baseline",
+      "passed": true
+    },
+    {
+      "name": "equal 18-candidate budget: ica/augmented",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: ica/augmented/selected",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: ica/augmented/ridge_only",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: ica/augmented/kernel_only",
+      "passed": true
+    },
+    {
+      "name": "selected persistence: ica/augmented",
+      "passed": true
+    },
+    {
+      "name": "outer fold counts: nahant",
+      "passed": true
+    },
+    {
+      "name": "outer index disjointness: nahant",
+      "passed": true
+    },
+    {
+      "name": "equal 18-candidate budget: nahant/baseline",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: nahant/baseline/selected",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: nahant/baseline/ridge_only",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: nahant/baseline/kernel_only",
+      "passed": true
+    },
+    {
+      "name": "selected persistence: nahant/baseline",
+      "passed": true
+    },
+    {
+      "name": "equal 18-candidate budget: nahant/augmented",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: nahant/augmented/selected",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: nahant/augmented/ridge_only",
+      "passed": true
+    },
+    {
+      "name": "inner-only optimum: nahant/augmented/kernel_only",
+      "passed": true
+    },
+    {
+      "name": "selected persistence: nahant/augmented",
+      "passed": true
+    },
+    {
+      "name": "identical selected predictors equal current biomass",
+      "passed": true
+    },
+    {
+      "name": "primary improvement expectation not met",
+      "passed": true
+    },
+    {
+      "name": "all paired source gains zero",
+      "passed": true
+    },
+    {
+      "name": "256 source-block resamples",
+      "passed": true
+    },
+    {
+      "name": "hash: protocol_sha256",
+      "passed": true
+    },
+    {
+      "name": "hash: code_sha256",
+      "passed": true
+    },
+    {
+      "name": "hash: source_sha256",
+      "passed": true
+    }
+  ]
+}

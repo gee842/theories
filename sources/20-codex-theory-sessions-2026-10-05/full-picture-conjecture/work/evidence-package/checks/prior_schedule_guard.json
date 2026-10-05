@@ -1,0 +1,23 @@
+{
+  "kind": "exact finite prospective-comparison certificate",
+  "horizon": 2,
+  "initial_cash_each_arm": 6,
+  "max_pathwise_cost": "51/10",
+  "feedback": {
+    "inquiry_spend": "11/20",
+    "operating_loss": "2/5",
+    "total": "19/20"
+  },
+  "best_ex_ante_calendar_lottery": {
+    "probability_keep": "11/12",
+    "inquiry_spend": "11/20",
+    "operating_loss": "9/20",
+    "total": "1"
+  },
+  "naive_independent_replay": {
+    "probability_keep": "1/2",
+    "inquiry_spend": "3/10"
+  },
+  "operating_loss_gap": "1/20",
+  "scope": "fixed known model, common objective, no recurrent production, no institution-selection claim"
+}

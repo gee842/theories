@@ -1,0 +1,31 @@
+{
+  "ordinary_trace_counterexample": {
+    "abstract_complete_traces": [
+      "ab",
+      "ac"
+    ],
+    "concrete_complete_traces": [
+      "ab",
+      "ac"
+    ],
+    "abstract_can_force_b_in_two_steps": true,
+    "concrete_can_force_b_in_two_steps": false,
+    "check_uses_full_observation": true
+  },
+  "memory_interface_counterexample": {
+    "best_success_current_erased_information": 0.5,
+    "best_success_perfect_recall": 1.0,
+    "world_prior": [
+      0.5,
+      0.5
+    ],
+    "randomization_improves_current_score": false
+  },
+  "shared_reserve_counterexample": {
+    "reserve": 1,
+    "cost_per_task": 1,
+    "number_simultaneous_tasks": 2,
+    "each_task_separately_feasible": true,
+    "jointly_feasible": false
+  }
+}

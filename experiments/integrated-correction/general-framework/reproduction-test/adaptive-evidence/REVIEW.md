@@ -1,0 +1,13 @@
+# Independent numerical and mathematical audit
+
+5 October 2026. AI-assisted internal audit, not independent human peer review.
+
+The [independent checker](independent_check.py) does not import the producing analysis. It uses a dense per-case recursion rather than the producing script's sparse five-case transitions. A second mass array removes paths at their first false declaration; this independently reconstructs the lifetime-event probability without the producer's event-state representation. Exact rational binomial sums separately verify five-case and sixty-case maximum-likelihood accuracy and the independent-batch error formula.
+
+All **147 comparisons pass**, with maximum numerical discrepancy **4.88×10⁻¹⁴**. They cover both environments at all twelve inspection times: mass, correct and absent declarations, ever-false declarations, freshly false certificates, and cumulative maximum-likelihood endpoint accuracy. The exact five-case nomination probability is `340443/400000`. Full comparison records are in [independent-check.json](independent-check.json). The formerly-correct stale-label subcategory was inspected in the producing recursion but was not independently reconstructed by this checker; it is not included in the 147 numerical claims.
+
+The likelihood-ratio proof is valid under a fixed true hypothesis in the supplied family, known fixed noise, and the stated conditional observation law. With four hypotheses, the union bound covers three false likelihood ratios. At noise .1 and threshold60, each qualifying ratio is at least81, giving the stated bound3/81. Retaining a previous declaration during an inconclusive look preserves this stationary guarantee because no new false declaration is introduced and the physical truth does not change. This reasoning cannot be applied across an unannounced change of truth.
+
+The bounded-loss Hoeffding bound has the correct exponent for differences in[-1,1], and summability at increasing batch endpoints supports eventual correctness through the first Borel–Cantelli lemma. This assurance is weaker than a small probability of any early mistake. The no-safe-exploration argument correctly distinguishes withholding a label from physically withholding a case, which the supplied action repertoire does not allow.
+
+The main interpretation is warranted: evidence retention removes the fixed fresh-batch error hazard in the stationary model, while this same pooling procedure can confidently fail after a reversal. This does not establish an optimal learning rule, a general impossibility of safe adaptation, or a self-maintaining inquiry institution. Known statistical tools supply the assurance theorem; the comparison is an application within the programme's explicit model.

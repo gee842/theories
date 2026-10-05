@@ -1,0 +1,6 @@
+{
+  "calibration_sha256": "4ef29189aafde46cf5aba165111f787c9ba71819e6e7f882ecacb1b8554c1ace",
+  "source_freeze_sha256": "4dd0a30af475f2cb86e1c510abcd78120ceaeac9177a6b9283de608298d1ad2d",
+  "state": "predictions frozen before target evaluation",
+  "utc": "2026-10-04T22:50:48.789939+00:00"
+}

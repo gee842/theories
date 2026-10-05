@@ -1,0 +1,358 @@
+{
+  "title": "Nonseparation and the conditions of selfhood: evidence record",
+  "date": "2026-10-05",
+  "report": {
+    "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/nonseparation-and-selfhood.md",
+    "sha256": "04319988e92f6f1322951f4d8f4586b811125b3db3dad5ef9798a07a62b0e1f6"
+  },
+  "status": "Additive research branch complete; conditional proofs and constructed checks, philosophical synthesis remains a hypothesis.",
+  "mathematical_evidence": {
+    "boundary_balance_and_autonomy": {
+      "proof_note": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/nonseparation/formal-audit.md",
+        "sha256": "837bd1df1e3bf6765fb6e3b817728180e889ad2fdc3f16a9eca6d32aa8c1d2df",
+        "text": "# Nonseparation as boundary-consistent dynamics\n\nFormal audit for the new research branch, 5 October 2026. This note does not alter the retained theories. The results below are elementary derivations; no historical novelty or experimental verification is claimed.\n\n## The useful refinement of “one truth applies to every thing”\n\nA single encompassing reality and a law valid for every region are distinct claims. The first does not make every property of the whole a property of each part. A closed exchange system can have constant total amount while every proper region gains or loses amount. “No exterior to the whole” therefore does not imply “no exchanges across any interior boundary.”\n\nA stronger and more useful interpretation of universality is:\n\n> The same accounting of production, transformation, and exchange remains consistent wherever a boundary is drawn. Changing the boundary changes which processes count as internal and which count as exchange; it does not create or erase their consequences.\n\nThis is a precise conditional result for the following class of systems. It is not a proof that every kind of physical quantity is conserved, nor a derivation of monism from notation.\n\n## A balance law with no privileged boundary\n\nLet a finite set of sites be V. Site i has an amount x_i(t). Let j_ij(t) be the signed instantaneous current from j to i, so j_ij = -j_ji. Let s_i(t) be production minus destruction that is not represented as transfer of this same quantity between modeled sites. Assume\n\n\\[\n\\dot x_i=s_i+\\sum_{j\\in V}j_{ij}.\n\\tag{1}\n\\]\n\nFor every subset S of V, define X_S=Σ_{i∈S}x_i and S_S=Σ_{i∈S}s_i. Then\n\n\\[\n\\boxed{\\dot X_S=S_S+\\sum_{i\\in S,\\ j\\notin S}j_{ij}.}\n\\tag{2}\n\\]\n\nProof: sum (1) over S. For every pair internal to S, j_ij+j_ji=0. Precisely the crossing terms remain. This includes the empty set and the whole. For S=V, the boundary sum vanishes. For s=0, the whole conserves its amount, while its proper regions generally do not. Conversely, if (2) holds for every subset with the stated currents and sources, its singleton cases recover (1). Thus the all-boundary statement and local dynamics are equivalent, not merely analogous.\n\nFor disjoint regions A and B, define J_AB=Σ_{i∈A,j∈B}j_ij. These block currents obey J_AB=-J_BA. For any partition π={B_1,...,B_m},\n\n\\[\n\\boxed{\\dot X_{B_\\alpha}=S_{B_\\alpha}+\\sum_\\beta J_{B_\\alpha B_\\beta}.}\n\\tag{3}\n\\]\n\nIf several blocks are grouped again, summing their block currents gives exactly the currents obtained by grouping the original sites directly. Internal block interfaces cancel. Consequently, every nested partition gives the same total and exchange accounting; aggregation is associative. No particular partition is privileged by this balance law.\n\nThe equation is exact even when currents depend nonlinearly on states or on retained history. It does **not** imply that block totals alone determine those currents. Predictive closure of the coarse dynamics is an additional demand, already investigated in the preceding branch. A block can have an exact balance equation while still requiring boundary conditions, hidden state, or its environment for prediction.\n\n## When a part cannot be dynamically self-sufficient\n\nSpecialize to symmetric linear exchange:\n\n\\[\nj_{ij}=w_{ij}(x_j-x_i),\\qquad w_{ij}=w_{ji}\\ge0,\\qquad s_i=0.\n\\tag{4}\n\\]\n\nFor a nonempty proper subset S, ask whether an exact law for its complete state x_S can be written as \\dot x_S=f_S(x_S), valid for every allowed initial state of the whole. Such a law exists if and only if every crossing weight w_ij, i∈S,j∉S, is zero.\n\nSufficiency is direct. For necessity, choose a crossing edge of positive weight. Hold x_S fixed and change only the exterior x_j. The derivative of at least one interior x_i changes by w_ij Δx_j, although its proposed local input x_S has not changed. Thus no single f_S can give the derivative for both preparations. Nonnegativity creates no obstacle: compare all-zero amounts with one positive exterior amount. The same argument excludes an autonomous law for the total X_S alone whenever a crossing edge exists, because its exterior coefficient is Σ_{i∈S}w_ij>0.\n\nTherefore, if the positive-weight graph is connected, **no nonempty proper region is exactly dynamically self-sufficient across arbitrary preparations**. Every cut has at least one positive crossing edge. This gives a precise sense in which distinct regions can belong to one dynamically inseparable process.\n\nThe quantifiers matter. Particular currents may vanish at equilibrium. Approximate autonomy may be excellent when crossing rates are small relative to internal rates over a specified time. Statistical independence at one instant is a different property. Causal communication can also be absent on a timescale even when a more comprehensive model has connections. This theorem concerns this specified finite exchange system and unrestricted nonnegative initial states, not a claim that all regions of the actual universe are mutually reachable.\n\n## A simple failure of part–whole inheritance\n\nFor two sites with unit exchange,\n\n\\[\n\\dot x_1=x_2-x_1,\\qquad \\dot x_2=x_1-x_2.\n\\]\n\nAt x=(1,0), the whole has derivative zero, while the two site derivatives are -1 and +1. Applying “the total never changes” separately to each site would be false. Applying the boundary balance to each site and to their union is correct. The universal content is a compatible law of relations, with the appropriate boundary terms, not identical behavior at every scale.\n\nAn ontology containing exactly one fundamental entity is also compatible with many distinct possible dynamics. The same two-site whole can obey rates 1 or 2; it can also have zero exchange. Counting fundamentals does not select these rates or decide whether a dynamical distinction is consequential. Additional structure remains necessary.\n\n## Why the boundary law is necessary but not the whole root\n\nConservation alone does not recover physical currents. Given any finite derivative vector v with Σ_i v_i=0 and any connected graph, choose a root and a spanning tree. A leaf edge can carry its leaf's required derivative; remove that leaf and transfer its accounting requirement to its parent. Induction constructs antisymmetric tree currents with divergence v. These are signed currents; this construction does not establish a physical transport law, nonnegative conductance, locality beyond the supplied tree, or energetically permissible flow.\n\nCurrents need not be unique. A circulating current around a cycle has zero net divergence at every site, so adding it changes edge flows without changing any instantaneous site derivative. Site trajectories alone can therefore leave consequential throughput undetermined.\n\nThis identifies the empirical burden: independently warranted transport mechanisms, rates, resources, and boundary observations must select the physically realized currents. Writing everything as one global differential equation is not by itself explanatory. The previous report's diffusion derivation supplies an example of additional constraints that genuinely select a law's form.\n\n## Observers and interventions are within the accounting\n\nAn external input in a subsystem equation is external relative to that chosen subsystem. If the controller and energy or material source are included in a larger model, the relevant transfers become internal there and cancel in its aggregate balance. This is a change in modeling scope, not the disappearance of agency or of the consequences of intervention. Quantities converted to another kind require a suitable transformation law or expanded accounting; merely relabeling conversion as transport would be incorrect.\n\nNo claim that an observer can possess a complete model follows. The observer remains one participating process with limited access, memory, and action. A local point of view and an encompassing physical account can coexist.\n\n## What this does and does not establish about “no self”\n\nFor a modeled participant, distinguish:\n\n1. Its operational boundary: where a specified description, control, or accounting is drawn.\n2. Its organizational persistence: what process keeps a recognizable pattern going.\n3. Absolute self-sufficiency: the claim that its state and continued existence require no external conditions.\n\nThe balance theorem preserves the first. A suitable maintained-process model could explain the second. Connected exchange contradicts the third in its stated setting. Thus “no independently self-sufficient self” has a precise possible interpretation that does not erase organisms, personal experience, or distinct vulnerabilities.\n\nThis mathematics alone neither establishes a religious doctrine of no-self nor establishes metaphysical monism. It provides a common formal question to bring to those accounts: which purported boundaries are merely operational, which support relative autonomy, and which have mistakenly been treated as absolute independence?\n\nLikewise, removing absolute self/other independence does not make different experiences identical. A harm concentrated in one participant does not vanish when one totals the larger system. A moral conclusion requires a reason for how the affected experiences, agency, and interests count. Global amount conservation supplies no such moral ranking.\n\n## Strongest usable synthesis\n\n> **A part is a real differentiation within a larger process. Its apparent independence is a claim about suppressed dependencies, to be established for a specified purpose and scale. A universal account must remain consistent across changes of boundary while retaining the exchanges and conditions that make each differentiation possible.**\n\nThis strengthens the previous branch in one respect: “no separation” need not mean a denial of differences. It can mean that no operational cut licenses us to discard the causal and material conditions crossing it. In the connected exchange example this is an exact theorem; its extension to living selves or the universe is a further substantive claim requiring the appropriate evidence and ontology.\n\nExact checks are recorded separately in formal-checks.json. They corroborate the proofs on finite constructed systems and do not validate a cosmological or ethical interpretation.\n"
+      },
+      "check_program": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/nonseparation/check_formal.py",
+        "sha256": "b1469b3b127111ad68bdb62c5e5a4019bfbc45153f8cba2d34dc854845a3aa67",
+        "text": "\"\"\"Exact constructed checks of all-boundary balance and local nonautonomy.\"\"\"\nimport itertools\nimport json\nfrom pathlib import Path\n\n\ndef partitions(seq):\n    if not seq:\n        yield ()\n        return\n    first, *rest = seq\n    for partition in partitions(rest):\n        yield ((first,),) + partition\n        for k in range(len(partition)):\n            yield partition[:k] + ((first,) + partition[k],) + partition[k + 1:]\n\n\ndef divergence(currents):\n    return [sum(row) for row in currents]\n\n\ndef coarse(currents, partition):\n    return [[sum(currents[i][j] for i in left for j in right)\n             for right in partition] for left in partition]\n\n\nn = 4\nvertices = tuple(range(n))\nedges = tuple(itertools.combinations(vertices, 2))\nall_parts = tuple(partitions(list(vertices)))\nassert len(all_parts) == 15\nall_sets = tuple(tuple(i for i in vertices if mask & (1 << i))\n                 for mask in range(1 << n))\ncounts = {key: 0 for key in (\n    'weighted_graphs', 'connected_graphs', 'basis_states', 'subset_balance_checks',\n    'partition_balance_checks', 'nested_partition_checks',\n    'local_autonomy_iff_checks', 'connected_nontrivial_cut_checks')}\n\nfor weights in itertools.product(range(3), repeat=len(edges)):\n    w = [[0] * n for _ in vertices]\n    for (i, j), weight in zip(edges, weights):\n        w[i][j] = w[j][i] = weight\n    counts['weighted_graphs'] += 1\n    seen, pending = {0}, [0]\n    while pending:\n        i = pending.pop()\n        for j in vertices:\n            if w[i][j] and j not in seen:\n                seen.add(j)\n                pending.append(j)\n    connected = len(seen) == n\n    counts['connected_graphs'] += connected\n\n    for subset in all_sets[1:-1]:\n        exterior = set(vertices) - set(subset)\n        # Matrix coefficients from exterior states are exactly the obstruction.\n        crossing = any(w[i][j] for i in subset for j in exterior)\n        vector_autonomous = all(w[i][j] == 0 for i in subset for j in exterior)\n        total_autonomous = all(sum(w[i][j] for i in subset) == 0 for j in exterior)\n        assert vector_autonomous == total_autonomous == (not crossing)\n        counts['local_autonomy_iff_checks'] += 1\n        if connected:\n            assert crossing and not vector_autonomous\n            counts['connected_nontrivial_cut_checks'] += 1\n\n    for basis in vertices:\n        x = [int(i == basis) for i in vertices]\n        currents = [[w[i][j] * (x[j] - x[i]) for j in vertices] for i in vertices]\n        dx = divergence(currents)\n        assert sum(dx) == 0\n        counts['basis_states'] += 1\n        for subset in all_sets:\n            exterior = set(vertices) - set(subset)\n            assert sum(dx[i] for i in subset) == sum(currents[i][j]\n                   for i in subset for j in exterior)\n            counts['subset_balance_checks'] += 1\n        for partition in all_parts:\n            block_currents = coarse(currents, partition)\n            assert divergence(block_currents) == [sum(dx[i] for i in block)\n                                                 for block in partition]\n            counts['partition_balance_checks'] += 1\n            for upper in partitions(list(range(len(partition)))):\n                direct_partition = tuple(tuple(i for block in group\n                                                for i in partition[block])\n                                         for group in upper)\n                assert coarse(block_currents, upper) == coarse(currents, direct_partition)\n                counts['nested_partition_checks'] += 1\n\n# A nonzero circulation is invisible to all site derivatives.\ncycle = [[0, -3, 3], [3, 0, -3], [-3, 3, 0]]\nassert divergence(cycle) == [0, 0, 0]\n# Every zero-sum integer derivative tested is realizable on a supplied star.\ntree_checks = 0\nfor prefix in itertools.product(range(-3, 4), repeat=3):\n    v = [-sum(prefix), *prefix]\n    currents = [[0] * 4 for _ in range(4)]\n    for i in range(1, 4):\n        currents[i][0], currents[0][i] = v[i], -v[i]\n    assert divergence(currents) == v\n    tree_checks += 1\n\nresult = {\n    'status': 'all assertions passed',\n    'arithmetic': 'exact integer arithmetic; exhaustive weights 0, 1, 2 on six four-site edges',\n    'counts': counts,\n    'zero_sum_tree_realizations': tree_checks,\n    'cycle_current': {'matrix': cycle, 'divergence': divergence(cycle)},\n    'scope': 'Constructed checks support the displayed conditional proofs; no physical, cosmological, or ethical empirical claim is tested.',\n}\npath = Path(__file__).with_name('formal-checks.json')\npath.write_text(json.dumps(result, indent=2) + '\\n')\nprint(json.dumps(result, indent=2))\n"
+      },
+      "result_file": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/nonseparation/formal-checks.json",
+        "sha256": "407f2e0ecfb9052795345e1d27cfd963ef193662debe931cafb519053c97dd6b"
+      },
+      "results": {
+        "status": "all assertions passed",
+        "arithmetic": "exact integer arithmetic; exhaustive weights 0, 1, 2 on six four-site edges",
+        "counts": {
+          "weighted_graphs": 729,
+          "connected_graphs": 624,
+          "basis_states": 2916,
+          "subset_balance_checks": 46656,
+          "partition_balance_checks": 43740,
+          "nested_partition_checks": 174960,
+          "local_autonomy_iff_checks": 10206,
+          "connected_nontrivial_cut_checks": 8736
+        },
+        "zero_sum_tree_realizations": 343,
+        "cycle_current": {
+          "matrix": [
+            [
+              0,
+              -3,
+              3
+            ],
+            [
+              3,
+              0,
+              -3
+            ],
+            [
+              -3,
+              3,
+              0
+            ]
+          ],
+          "divergence": [
+            0,
+            0,
+            0
+          ]
+        },
+        "scope": "Constructed checks support the displayed conditional proofs; no physical, cosmological, or ethical empirical claim is tested."
+      }
+    },
+    "maintenance_and_material_turnover": {
+      "proof_source": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/nonseparation/self-audit.md",
+        "sha256": "28203771abf045631a60ecbb6bbc88546fefd42723027df10b747981f1383e37"
+      },
+      "proof_text": "# Relational selves, maintained organization, and answerability\n\nResearch audit, 5 October 2026. Existing deliverables were read and preserved. This audit supports a new branch, rather than replacing the retained theories. The mathematical model below is newly constructed; the corpus findings are inherited; the philosophical proposal is a synthesis.\n\n## Strongest defensible positive formulation\n\n> **A self can be a maintained, situated organization of a common process: a real center of sensing and action whose continuation depends on conditions it does not independently supply. Its boundary organizes relations rather than abolishing them.**\n\nThis permits a precise reading of “no self”: no independently self-existing, externally sovereign controller is required to explain the modeled organization. It does not mean that there are no individuals, experiences, distinct causal roles, or reasons to protect someone. Those are different claims. A person's experiences are not shown to belong to everybody merely because the conditions of that person are shared.\n\nThe existing joint-organization branch already derived relatively autonomous coarse units from connected dynamics. The new step below shows how an organized state can remain stable while the original material continuously disappears. It is a constructive instance of persistence through replacement. It does not assume that every part affects every other part at every moment, or that every thing is an agent.\n\n## Exact maintained-organization model\n\nLet \\(x,y\\) be concentrations of two mutually supporting species. Let \\(a,b,\\delta,\\mu,c>0\\), and let \\(f\\ge0\\) be a resource level held fixed by the environment over the modeled interval. The reservoirs supply newly produced material; \\(b\\) includes the maintained precursor conditions for producing \\(y\\). This is an open system, not a creation of matter from nothing.\n\n\\[\n\\dot x=afy-\\delta x-cx^2,\\qquad\n\\dot y=bx-\\mu y.\n\\tag{S1}\n\\]\n\nThe positive quadrant is forward invariant: on either coordinate axis the missing species has nonnegative derivative. The rates specify reciprocal production, ordinary loss, and a density-dependent loss of \\(x\\). No separate controller occurs in the equations. The species, reaction capacities, and reservoirs are supplied assumptions; the model does not derive them.\n\n**Existence.** A strictly positive equilibrium exists exactly when\n\n\\[\n\\boxed{abf>\\delta\\mu.}\n\\tag{S2}\n\\]\n\nSubstitution of \\(y_*=(b/\\mu)x_*\\) gives\n\n\\[\nx_*={abf/\\mu-\\delta\\over c},\\qquad\ny_*={b\\over\\mu}x_*.\n\\tag{S3}\n\\]\n\nBelow the threshold, no positive equilibrium exists. At equality, the only nonnegative equilibrium is still the origin; the nonlinear loss removes the neutral continuum of the earlier unsaturated linear model. The zero-state linearization has one zero eigenvalue at equality, so do not claim exponential decay there from linearization alone.\n\n**Global maintenance above threshold.** Assume (S2), set\n\n\\[\nu=x/x_*,\\quad v=y/y_*,\\quad\nR=abf/\\mu,\\quad C=cx_*=R-\\delta>0.\n\\]\n\nThen\n\n\\[\n\\dot u=R(v-u)-Cu(u-1),\\qquad \\dot v=\\mu(u-v).\n\\]\n\nFor \\(u,v>0\\), use\n\n\\[\nW(u,v)=u-1-\\log u+{R\\over\\mu}(v-1-\\log v).\n\\]\n\nIt is nonnegative, vanishes only at \\((1,1)\\), diverges at the boundary and at infinity, and satisfies the exact identity\n\n\\[\n\\boxed{\\dot W=-R{(u-v)^2\\over uv}-C(u-1)^2.}\n\\tag{S4}\n\\]\n\nTo check it, differentiate using \\(d(s-1-\\log s)/ds=1-1/s\\). The two coupling terms combine into \\(-R(u-v)^2/(uv)\\); the density term is \\(-C(u-1)^2\\). Thus \\(\\dot W<0\\) away from \\((1,1)\\). A positive trajectory remains in a compact sublevel set, and the derivative is bounded strictly below zero on any closed region in that set separated from the equilibrium. Therefore every positive initial condition converges to \\((x_*,y_*)\\). This proves asymptotic restoration after finite perturbations that leave both concentrations positive, under the unchanged model conditions.\n\n**Material turnover.** Now mark all material present at time zero. Assume labels do not affect kinetics, newly produced material is unmarked, and losses sample old and new material without label preference. If \\(x_o,y_o\\) denote marked concentrations, their equations are\n\n\\[\n\\dot x_o=-(\\delta+cx)x_o,\\qquad\n\\dot y_o=-\\mu y_o.\n\\tag{S5}\n\\]\n\nTherefore\n\n\\[\n0\\le x_o(t)\\le x_o(0)e^{-\\delta t},\\qquad\ny_o(t)=y_o(0)e^{-\\mu t}.\n\\tag{S6}\n\\]\n\nThe original marked material tends to zero while the maintained concentrations approach positive values. At equilibrium, \\(x_o(t)=x_o(0)e^{-Rt}\\). For any requested \\(0<\\varepsilon<1\\), waiting at least \\(\\log(1/\\varepsilon)/\\min(\\delta,\\mu)\\) reduces each marked concentration to at most \\(\\varepsilon\\) times its initial value. **The continuous model does not make a positive original label exactly zero at a finite time.**\n\nFor \\(a=b=\\delta=\\mu=c=1,f=2\\), the maintained state is \\(x_*=y_*=1\\), with original material declining as \\(e^{-2t}\\) and \\(e^{-t}\\). Its Jacobian eigenvalues are \\(-2\\pm\\sqrt3\\), both negative.\n\nThe result establishes persistence of specified organization without persistence of its original material tokens. It does not establish that there are no necessary functional roles: the two production capacities and environmental conditions remain indispensable to this construction. Maintenance alone does not supply sensing, deliberation, or a first-person standpoint, and a stable pattern is not thereby a person. It does not establish human personal identity, a membrane or spatial boundary, consciousness, or metaphysical no-self. Finite-population stochastic extinction is also outside this deterministic concentration model.\n\nThe positive result is enough to rule out one inference: an enduring organized unit need not be an unchanging collection of matter. Its continued distinction can be a maintained activity. Both the unit and its dependence are real in this model.\n\n",
+      "check_program": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/nonseparation/check_self_maintenance.py",
+        "sha256": "83ef3ab1e4d628a5321ffd4ea3b7ed8c218466c3b6790289b251e1cd128554d6",
+        "text": "\"\"\"Exact algebra checks for the constructed organization/turnover model.\n\nThese checks do not simulate organisms or establish a theory of consciousness.\nThe accompanying audit gives the general proof.\n\"\"\"\nfrom fractions import Fraction as Q\nfrom itertools import product\nimport json\nfrom pathlib import Path\n\ncounts = {\"parameter_tuples\": 0, \"positive_equilibria\": 0,\n          \"below_threshold\": 0, \"at_threshold\": 0,\n          \"lyapunov_point_checks\": 0}\nvalues = (Q(1, 2), Q(1), Q(2))\nfor a, b, f, delta, mu, c in product(values, values, (Q(0), *values), values, values, values):\n    counts[\"parameter_tuples\"] += 1\n    gap = a*b*f - delta*mu\n    if gap <= 0:\n        counts[\"at_threshold\" if gap == 0 else \"below_threshold\"] += 1\n        assert delta*mu - a*b*f >= 0\n        continue\n    counts[\"positive_equilibria\"] += 1\n    R = a*b*f/mu\n    C = R-delta\n    xs = C/c\n    ys = b*xs/mu\n    assert xs > 0 and ys > 0\n    assert a*f*ys-delta*xs-c*xs*xs == 0\n    assert b*xs-mu*ys == 0\n    trace = -delta - 2*c*xs - mu\n    determinant = mu*(delta+2*c*xs)-a*b*f\n    assert trace < 0 and determinant == mu*c*xs > 0\n    assert delta+c*xs == R\n    for u, v in product((Q(1, 4), Q(1, 2), Q(1), Q(2), Q(4)), repeat=2):\n        du = R*(v-u)-C*u*(u-1)\n        dv = mu*(u-v)\n        direct = (1-1/u)*du+(R/mu)*(1-1/v)*dv\n        formula = -R*(u-v)**2/(u*v)-C*(u-1)**2\n        assert direct == formula\n        assert (direct == 0) == (u == 1 and v == 1)\n        counts[\"lyapunov_point_checks\"] += 1\n\nresult = {\"status\": \"all exact checks passed\", \"counts\": counts,\n          \"scope\": \"constructed deterministic two-species maintenance model; general proof in self-audit.md\",\n          \"limits\": [\"original label tends to zero, never zero at finite time in this continuum model\",\n                     \"constant resource supply and rates are assumed\",\n                     \"no empirical or metaphysical no-self claim was tested\"]}\nout = Path(__file__).with_name(\"self-maintenance-checks.json\")\nout.write_text(json.dumps(result, indent=2)+\"\\n\")\nprint(json.dumps(result, indent=2))\n"
+      },
+      "result_file": {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/nonseparation/self-maintenance-checks.json",
+        "sha256": "1f93daeeaae2445730eb285820e98b7752acd82e43b5fbb8d6f669c4b6540c58"
+      },
+      "results": {
+        "status": "all exact checks passed",
+        "counts": {
+          "parameter_tuples": 972,
+          "positive_equilibria": 288,
+          "below_threshold": 531,
+          "at_threshold": 153,
+          "lyapunov_point_checks": 7200
+        },
+        "scope": "constructed deterministic two-species maintenance model; general proof in self-audit.md",
+        "limits": [
+          "original label tends to zero, never zero at finite time in this continuum model",
+          "constant resource supply and rates are assumed",
+          "no empirical or metaphysical no-self claim was tested"
+        ]
+      }
+    }
+  },
+  "proof_vs_checks": "General algebraic arguments establish the stated conditional results. Finite exact-arithmetic checks corroborate calculations within specified constructed families; they are not experimental evidence of universal monism or human no-self.",
+  "external_primary_sources": [
+    {
+      "title": "SN 22.59, Anattalakkhana Sutta",
+      "url": "https://www.dhammatalks.org/suttas/SN/SN22_59.html",
+      "scope": "Full short discourse read; aggregate impermanence, vulnerability, and identification. Translation by Thanissaro Bhikkhu.",
+      "read_date": "2026-10-05",
+      "status": "Primary text in translation consulted; selected passage comparison, not an exhaustive tradition survey."
+    },
+    {
+      "title": "Nagarjuna, Mulamadhyamakakarika, chapter 24",
+      "url": "https://www.wisdomlib.org/buddhism/book/mulamadhyamaka-karika-english/d/doc79738.html",
+      "scope": "Verses 8-10 and 16-20 reviewed; Batchelor translation. Root verses distinguished from later commentary.",
+      "read_date": "2026-10-05",
+      "status": "Primary text in translation consulted; selected passage comparison, not an exhaustive tradition survey."
+    },
+    {
+      "title": "Chandogya Upanishad 6.8, with Shankara commentary",
+      "url": "https://www.wisdomlib.org/hinduism/book/chandogya-upanishad-shankara-bhashya/d/doc1145311.html",
+      "scope": "Section opened; 6.8.7 and its commentary verified. Ganganatha Jha translation. Claims explicitly attributed to this reading.",
+      "read_date": "2026-10-05",
+      "status": "Primary text in translation consulted; selected passage comparison, not an exhaustive tradition survey."
+    },
+    {
+      "title": "Zhuangzi, chapter 2, Legge translation",
+      "url": "https://ratmachines.com/philosophy/chuang-tzu-legge/chapter-2",
+      "scope": "Chapter opened and unity/language passages verified; translator introduction distinguished from primary text.",
+      "read_date": "2026-10-05",
+      "status": "Primary text in translation consulted; selected passage comparison, not an exhaustive tradition survey."
+    }
+  ],
+  "other_session_corpus": [
+    {
+      "path": "/Users/ren/theories/sources/06-zhishan/writing-program/causal-chain/v5/independent-en.md",
+      "sha256": "9c8d971910757bfc4ce5263ba291fb4c34688896ff08eece57a84d6bb10d4938",
+      "role": "Historical formulation of answerability without incorporation; not the newest revision.",
+      "evidence_type": "User-owned other-session research; interpretive synthesis, not independent empirical validation.",
+      "excerpts": [
+        {
+          "start_line": 89,
+          "end_line": 91,
+          "text": "Compassion begins with the reality of suffering rather than a distant calculation that present sacrifice may benefit a larger system. Interconnectedness reveals that the supposedly independent self is formed through causes and relations it does not own. Nonduality loosens the absolute subject-object division through which another being appears only as obstacle, instrument, or external cost. It does not make persons, differences, injuries, or responsibility unreal. No insight into interdependence authorizes one center to represent an undifferentiated whole.\n\nThe relation these traditions can cultivate is answerability without incorporation: another's reality can enter my perception, feeling, and judgment without being absorbed into my objective, represented by me, or deprived of the right to refuse me. Boundaries remain real, but not absolute. The center becomes more answerable, not larger. This is why compassion can limit a grand project that would sacrifice present lives in the name of future generation, and why humaneness can oppose a harmony that silences the people whose pain reveals its falsity."
+        }
+      ]
+    },
+    {
+      "path": "/Users/ren/theories/sources/06-zhishan/writing-program/causal-chain/v7/independent-en.md",
+      "sha256": "5f0d02fb98d53796021e7ddf7e626b96c0bac8492dad6fafb43faeb1adf97b4c",
+      "role": "Later treatment retains distinct personhood, injury, refusal, and responsibility.",
+      "evidence_type": "User-owned other-session research; interpretive synthesis, not independent empirical validation.",
+      "excerpts": [
+        {
+          "start_line": 77,
+          "end_line": 89,
+          "text": "These traditions are not valuable because they serve system stability. *Yi* does not become right only when it wins. Compassion is not justified by lower transaction costs. Justice may disrupt a stable order; conscience may refuse a project that calls itself civilizational. If a tradition is retained only for the cooperation it can produce, the dominant selection environment has already made itself the judge of what was meant to judge it.\n\nBut because these traditions enter perception, character, habit, relationship, and transmission, they also carry real forms of rationality through time. *Ren* discloses that a person is constituted through relationship rather than completed in isolation. *Yi* preserves the ability to distinguish an available gain from a rightful one. *Li*, continually corrected by humaneness and justice, gives repeated form to regard and restraint. *Zhi* is not merely faster optimization; it is discernment of circumstance, consequence, proportion, and the moment when an inherited rule must change.\n\nOther traditions developed different but resonant resources. Virtue places the formation of character before the clever satisfaction of appetite. Covenant and commandment bind conduct to obligations that do not disappear when violation pays. Ubuntu locates personhood in living relations without dissolving the distinct person. Compassion begins from suffering that cannot be discounted into a distant aggregate. Teachings of interdependence reveal how thoroughly every apparently independent achievement is made by conditions it does not own. Nondual insight loosens the fixation that turns another being into mere obstacle or material, while leaving intact the reality of injury, responsibility, and refusal.\n\nThese are not interchangeable doctrines, and none should be reduced to a vocabulary for this argument. Their differences matter. What they demonstrate together is that fuller rationality requires carriers. It needs practices that train attention, stories that preserve long consequences, rituals that make restraint repeatable, communities that honor fidelity under cost, and institutions that allow obligation to survive the moment when defection would be more profitable.\n\nInner orientation alone, however, cannot defeat a selector. A person may perceive the common good and still be eliminated for acting on it. Moral understanding becomes historically effective when it crosses a material bridge: when commitments are visible enough to create expectation, when reciprocity and verification reduce vulnerability, when resources protect those who bear early costs, and when successful practices can form successors rather than beginning again as isolated sacrifice in every generation.\n\nThe recovery of the ozone layer is important not because it proves that global coordination is easy, but because it reveals that a selection environment can change. Scientific recognition became more than warning when differentiated obligations, technical assistance, financing, monitoring, and shared expectation altered what states and industries could realistically do. A problem created by locally useful action was not solved by insight alone. Insight acquired institutions, and institutions changed the return path.\n\nCivilizational traditions and coordinated institutions do not guarantee fuller reason. They can harden into hierarchy, exclude those they claim to protect, or be conscripted into prestige and power. Their relevance is more exact. They have kept alive languages, habits, and material arrangements through which consequences outside a local frame can return to judgment. They have enabled people to treat interdependence not as surrender to a larger sovereign, but as answerability among distinct centers."
+        }
+      ]
+    },
+    {
+      "path": "/Users/ren/theories/sources/06-zhishan/writing-program/causal-chain/v8/independent-en.md",
+      "sha256": "862d73f7ae11587f41637b90d56ad650a8d149ef3e85cb4c4da47816d88fe6b3",
+      "role": "Current corpus synthesis distinguishes traditions and preserves multiple centers in a common world.",
+      "evidence_type": "User-owned other-session research; interpretive synthesis, not independent empirical validation.",
+      "excerpts": [
+        {
+          "start_line": 75,
+          "end_line": 77,
+          "text": "Compassion, virtue, Ubuntu, interdependence, and non-dual traditions differ in metaphysics and practice, but they echo this wider civilizational discovery: the isolated winner is an abstraction, and a reason that cannot encounter the reality of another is incomplete. These traditions cannot be reduced to techniques for stabilizing a system. A perfectly stable order that uses concrete beings as expendable material can still be wrong. Their claim reaches beneath stability to value.\n\nThe value boundary needed here is simple enough to state. No local victory has the right to cancel the conditions under which other beings and later generations can continue to perceive, answer, correct, and practice truth, goodness, and beauty. This is not a demand that every form endure unchanged. Living worlds require endings, transformation, conflict, and choice. It is a demand that one contestant not convert a temporary advantage into ownership of who may remain a participant in reality."
+        },
+        {
+          "start_line": 157,
+          "end_line": 159,
+          "text": "This is not harmony or a final coordinator that knows the whole. Values will conflict, evidence will remain incomplete, and every institutional form will need correction. The alternative to domination is a world that keeps consequential boundaries permeable to those who bear their effects, preserves multiple centers of knowledge and refusal, and refuses to let any victory own the conditions of later judgment.\n\nWe do not possess the final form of the future. We know more than nothing about its direction. A future is better when beings can continue to understand one another, care, create, repair, seek truth, answer claims made upon them, and revise the world they inherit. These are not one option among products. They are the conditions under which any future can still become a common world."
+        }
+      ]
+    },
+    {
+      "path": "/Users/ren/theories/sources/06-zhishan/writing-program/context/meta-attractor-foundational-context.md",
+      "sha256": "d68ceaa914bd143009801c3f40ddeb649d53012d180ce3a2ae42fcc389b9f513",
+      "role": "Shared conditions and reciprocal formation retain agency, refusal, and differentiated participants.",
+      "evidence_type": "User-owned other-session research; interpretive synthesis, not independent empirical validation.",
+      "excerpts": [
+        {
+          "start_line": 490,
+          "end_line": 530,
+          "text": "\nThe carriers include:\n\n- funding;\n- education and training;\n- stewardship and maintenance;\n- shared infrastructure;\n- independent evaluation;\n- conflict resolution;\n- succession;\n- protection against enclosure;\n- real exit and appeal;\n- material security that makes restraint survivable.\n\nCommons are not unbounded access. Boundaries, restrictions, monitoring, and prohibition may protect generative capacity. Their authority must remain limited, reviewable, and unable to convert safety into permanent control over participation or knowledge.\n\nThe positive goal is not one benevolent counter-attractor replacing the current one. It is an ecology in which generative attractors can coexist, challenge one another, learn, and give rise to forms no current center can specify.\n\n## Mutual generation and its limit\n\nThe idea of 生生—generation continuing through generation—can name the orientation, but it must not become a justification for growth, novelty, or higher-level persistence at any cost.\n\nA process is not mutually generative when its continuation systematically makes participants:\n\n- expendable;\n- voiceless;\n- unable to refuse;\n- unable to reproduce the conditions of their own agency;\n- available only as material for another level’s becoming.\n\nNo part may claim autonomy while destroying the field that makes autonomy possible. No whole may claim integration while converting its parts into fuel.\n\nThe direction is mutual generation across levels without closing any level into an absolute whole.\n\nThis is compatible with prohibition and ending. A process that permanently destroys generative conditions may need to be stopped so that becoming can continue.\n\n## What must be preserved from the earlier research\n\nFuture writing must preserve:\n\n- conceptual capture and self-concealment;"
+        }
+      ]
+    }
+  ],
+  "additional_research_notes": [
+    {
+      "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/nonseparation/traditions.md",
+      "sha256": "da44db7eddc66172ac66b987de2dff4a267dccd96312cc88dcfd2fa764dbb1fb"
+    },
+    {
+      "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/nonseparation/self-audit.md",
+      "sha256": "28203771abf045631a60ecbb6bbc88546fefd42723027df10b747981f1383e37"
+    }
+  ],
+  "reviews": [
+    {
+      "reviewer": "monism_universality",
+      "verdict": "No mathematical errors found.",
+      "scope": "Boundary balance, partitions, all-preparation autonomy, Lyapunov identity and convergence, replacement assumptions, and philosophical scope."
+    },
+    {
+      "reviewer": "monism_noself_traditions",
+      "verdict": "No substantive source or interpretation errors found.",
+      "scope": "Four primary-text comparisons, distinctions among traditions, and explicit status of synthesis and ethical bridge."
+    },
+    {
+      "reviewer": "primary agent",
+      "verdict": "Proofs, check programs, and results inspected; equilibrium wording clarified and connection to noticing omitted conditions added.",
+      "scope": "Final integration, exact sources of claims, and preservation."
+    }
+  ],
+  "preservation": {
+    "expected_file_count": 21,
+    "verified_file_count": 21,
+    "all_prior_outputs_unchanged": true,
+    "files": [
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/active-inquiry-data.json",
+        "before_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "after_sha256": "aec54e3cd56a5cecd06b68e32a9465f2204bf026b92a06ceaefbd0ab84d4faeb",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/active-inquiry-findings.md",
+        "before_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "after_sha256": "92b8198b5d6eb0b0a0abd4d43324b4294b09910b169d8e40aba70530d99959af",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/missing-possibilities-evidence.json",
+        "before_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "after_sha256": "12842782e347e45b7767e632b19363957eead1c816b1126865ffa37097f0f379",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/missing-possibility-check.json",
+        "before_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "after_sha256": "c0b4dfbfc24c8006ca64900f35e2ee631d3e267ecf29f2652de3d298045ead29",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/next-root-evidence.json",
+        "before_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "after_sha256": "f32eaa7e501602c346c0ac3ea24ad89f36e6c31efcd6b51f4e8771ed5f4d0a8a",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/next-root-joint-organization.md",
+        "before_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "after_sha256": "643a3e67b40bc5a30254580e74454d501aa58ebc1f1d7f42fb1deafc2e765a80",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/noticing-missing-possibilities.md",
+        "before_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "after_sha256": "1a82de6ac0ca82c1f9521f31c2f6e578d9d4741d0d4bf7fc177ba73241b950d6",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/reasoning-pilot-data.json",
+        "before_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "after_sha256": "f9b41edc9a08f017024818af2fda09f43535458d4e9528d03531d1dd0317ea95",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/reasoning-pilot-findings.md",
+        "before_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "after_sha256": "189ccf4ba73a5da1b36e9996bacc19cac3e382af73c0572a0789f5843c89e90f",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/research-ledger.md",
+        "before_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "after_sha256": "c5932b9d0bf3835d4e666bd8e5969b2379e6f78a25d80e4a322f9575f5f48764",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-cross-session-assessment.md",
+        "before_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "after_sha256": "ca23d10bd6176e6a93cb185d574dd94fe02378356633667534281ee312b290e5",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-cross-session-evidence.json",
+        "before_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "after_sha256": "e2ea94c34ea271e8ede8b1759dc85bd783390890d0126c2811c3ec91e3063bfc",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-formalization-checks.json",
+        "before_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "after_sha256": "444f8733a8f92f30cadc2a1578138b6a54776c6c71f9127ab46f2a9afd942469",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-formalization-v1.md",
+        "before_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "after_sha256": "06ae693a2f4eb7a0711ee3e823eb0a00cb40819c6dc0c21e3337d2234e634518",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-formalization-v2.md",
+        "before_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "after_sha256": "566e88989262ddaf89d2ab44bd6fe60cc100fbb0407d66c44c92179d7b6d7dee",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-formalization.md",
+        "before_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "after_sha256": "49e77a44c2c8a29c4ce2cc879522f00fa8d5c87d37cbab1f934c9fcdd25f8b61",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-fundamental-evidence.json",
+        "before_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "after_sha256": "399c28442e5cd576d5f87901a0960f0fda36288fae02ad662405689da0863138",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-substantive-evidence.json",
+        "before_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "after_sha256": "b0e80cfb06f8afc817bd5c8c272d3281ec41517fd08b9db617ba60813282f80e",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/root-of-wisdom-synthesis.md",
+        "before_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "after_sha256": "646955a3403d9c357214c8695552e6da354978a9bac0ae40bd9e2f6ffad1b11d",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/source-map.md",
+        "before_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "after_sha256": "5dd1e5ab19f131ef9653907db022e4b1816cbaf1dec2a692edbe1b47bfa2c979",
+        "unchanged": true
+      },
+      {
+        "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/worked-test-results.json",
+        "before_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "after_sha256": "e6d7bf77038586fc922f1f7f98ca42aab80777338384dcf792bf5c913249ec76",
+        "unchanged": true
+      }
+    ]
+  },
+  "limits": [
+    "The balance law assumes additive quantities, antisymmetric transfer currents, and stated production/loss terms.",
+    "Exact nonautonomy is proved for a specified connected symmetric exchange system across unrestricted nonnegative preparations.",
+    "The maintenance model assumes supplied fresh material, positive rate constants, held environmental conditions, and no recycling of old labels into new components.",
+    "Organizational persistence does not establish human personal identity, phenomenal consciousness, or a religious doctrine of no-self.",
+    "Common physical conditions alone do not establish a moral ranking; the ethical premise is explicit.",
+    "No new physical, psychological, or contemplative experiment was performed."
+  ],
+  "next_question": "Which mechanisms create and maintain a boundary and a situated viewpoint, and when does treating that boundary as autonomous hide a consequential dependency?"
+}

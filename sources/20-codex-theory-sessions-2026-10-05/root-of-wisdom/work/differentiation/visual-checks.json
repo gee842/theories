@@ -1,0 +1,18 @@
+{
+  "status": "all visual checks passed",
+  "checked": [
+    "initial exact symmetry",
+    "orientation selection",
+    "analytic amplitude at t=0 and t=12",
+    "primary interactions update values",
+    "320px layout and labels",
+    "no browser script errors"
+  ],
+  "layout": {
+    "width": 288,
+    "scrollWidth": 288,
+    "svgWidth": 288,
+    "textFits": true
+  },
+  "errors": []
+}
