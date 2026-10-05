@@ -22,6 +22,8 @@ This is a sufficient contract for the declared finite histories. It does not ass
 
 Compatible interfaces can be chained through several descriptions while retaining the same memory. This result uses the same action vocabulary and step granularity on both sides. Several molecular reactions implementing one learning operation would need a further mapping that accounts for those intermediate events and costs.
 
+**Subsequent extension:** [protocol composition](PROTOCOL-COMPOSITION.md) supplies a conditional mapping for completed multi-event implementations, including physical boundary memory and intermediate cost accounts. It also proves why an exact account of completed operations can omit an admitted infinite internal execution. The extension does not turn completed-history equivalence into a guarantee that the operation finishes.
+
 Resource accounts also need their own compatibility. A transported account preserves the costs and credits already represented by its law. It does not pay for a sensor, memory write or component that the law omitted.
 
 ## Why matching physical possibilities is insufficient

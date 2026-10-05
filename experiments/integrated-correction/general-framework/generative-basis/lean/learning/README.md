@@ -127,6 +127,34 @@ five use only standard `propext` and/or `Quot.sound`. The separate
 source hashes and checker/compiler hashes. It does not alter the original
 48-theorem record below or claim new verification of unrelated branches.
 
+### Paid protocol composition extension
+
+`ProtocolComposition.lean` defines nonempty first-return physical blocks under
+one committed command, their concatenated realizations and their actual boundary
+reports. A local contract with the existing closed-loop process decodes world
+and memory from actual physical boundary states; it does not add a free record.
+Finite controlled histories then correspond to completed physical realizations.
+The same micro-event account bounds completed histories and each actual cut,
+including cuts inside a block. Separate rank results bound internal paths and
+exclude an infinite internal execution under strict descent. They do not prove
+nonblocking, scheduling, physical time or completion from a deadlocked state.
+
+`ProtocolExamples.lean` separates guarded payment from later receipt of a finite
+source unit. Two blocks deplete source from two to zero; a further paid attempt
+deadlocks. Stalling and nonstalling versions have the same completed macro
+histories, yet the same committed internal tick can admit an explicit infinite
+busy execution. Those incomplete attempts remain in the micro-law.
+
+Run `python3 check_protocol_composition.py` here. The fresh Lean 4.29.1 record in
+`protocol-composition-audit.txt` passes **39 new theorem audits**: 17 generic and
+22 example results. Seventeen have empty axiom dependencies; the others use only
+standard `propext` and/or `Quot.sound`. Seven canonical source modules are frozen
+and compiled without relying on existing compiled caches. This record is
+separate from the earlier 15- and 48-theorem audits. See the
+[canonical account](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPOSITION.md)
+and its linked mathematical companion and separate review for the supplied
+contract, progress limitations and the remaining concrete implementation task.
+
 ### Original information and support package
 
 Run `python3 check.py` in this directory. The checker pins Lean `4.29.1`, freezes

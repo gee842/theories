@@ -32,6 +32,8 @@ A second implementation permits an internal stall as well as completion under th
 
 Thus exact completed histories do not establish that an issued action finishes. A decreasing internal rank can limit repeated internal steps, but completion also requires a route out of unfinished states. Probability and elapsed-time claims need their own laws.
 
+For the generative account, continued activity and delivery of a new usable capacity are distinct claims.
+
 There is also a paid deadlock: with one usable fuel unit and no source, entry spends the fuel and reaches a busy state with no next event. This incomplete attempt stays in the physical model and its account, even though it has no completed abstract step. A success-only boundary description cannot be used to erase such attempts from an empirical or probabilistic claim.
 
 ## What the next mechanism can use
@@ -45,6 +47,8 @@ The formed-predictor construction must identify:
 
 This gives the parallel studies an implementation contract across event scales. It does not yet establish that their different material laws implement one common learner. The next substantive mechanism remains formed, revisable machinery acquiring and correcting predictions and using them in paid action. The later connection to another center's significance remains an explanatory task within the same programme.
 
-## Verification status
+## Verification and scope
 
-The formal modules, counterexamples and independent review are being completed in the existing learning package. The final verification record will state the exact checked scope. No empirical realization, new learning algorithm, general termination guarantee or completion of the unified foundation is claimed by this interface.
+The [protocol module](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean) and [paid examples](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolExamples.lean) passed a fresh Lean 4.29.1 build with **39 new theorem audits**: 17 general results and 22 example/account results. Seventeen have empty axiom dependencies; the others use only standard `propext` and/or `Quot.sound`. There are no proof holes or custom axioms. The [saved record](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-composition-audit.txt) includes source, compiler and checker hashes. Run `python3 check_protocol_composition.py` in the existing learning directory to reproduce it.
+
+The [separate internal review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPOSITION-REVIEW.md) checks the proof scope and implementation limits. The theorem gives a contract to establish for a concrete learner; its premise is not yet a proved realization of the parallel predictive machinery. No empirical realization, new learning algorithm, general termination guarantee or completion of the unified foundation is claimed by this interface.
