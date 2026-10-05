@@ -2,7 +2,7 @@
 
 6 October 2026. Independent collaborating-agent review of a supporting proof interface. The reviewer did not author either new Lean module. This is internal mathematical and interpretation review, not external peer review or empirical evidence.
 
-**Status: review in progress.** Both complete new sources, the protocol, mathematical note, canonical account and relevant predecessor results have been inspected. No mathematical blocker was found in the 45 current new theorem statements and proofs. Final fresh-build receipt and hash review remain pending.
+**Status: accepted at the bounded supporting-interface scope.** Both complete new sources, the protocol, mathematical note, canonical account and relevant predecessor results were inspected. No mathematical blocker was found in the 45 new theorem statements and proofs. The fresh-build receipt and all recorded source, output, checker, compiler and toolchain hashes were independently verified.
 
 ## What the interface can add
 
@@ -44,4 +44,15 @@ The concrete ledger is patient-indexed, with assessment scope in the surrounding
 
 ## Scope of acceptance
 
-Acceptance requires inspection of the completed concrete adapter and a fresh Lean 4.29.1 receipt covering every new theorem, with matching source, checker and output hashes. The inherited sources must remain unchanged. No new stochastic or empirical result is requested or inferred. Successful verification will close this bounded proof interface; it will not establish concern formation, ethical necessity, priority among conflicting claims, renewable support, a new selection algorithm or completion of the unified foundation.
+The [fresh verification receipt](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/verification.json), dated `2026-10-05T23:51:46.880527+00:00`, records Lean 4.29.1 successfully compiling seven modules from frozen source bytes in a temporary directory. It audits all 21 new generic theorems and all 24 new concrete theorems. Eighteen new reports have empty axiom dependencies; the remaining reports use only the disclosed standard `Classical.choice`, `propext` and `Quot.sound` dependencies. No custom axioms, proof holes or `native_decide` are introduced.
+
+The reviewer independently recomputed the seven source and seven output hashes, checked their successful exits and clean logs, and matched the compiler, checker and toolchain hashes. All five inherited source hashes also equal the predecessor protection package's saved receipt. The build records unchanged sources throughout execution. This verification reuses the parent's proven physical histories; it is not another run of its stochastic or strategic experiments.
+
+| Reviewed artifact | SHA-256 |
+|---|---|
+| `ClaimLedger.lean` | `8490ff965114fdcacccdf7a4a919a3a9e06321ecc52721b1c6ee41e1d152f805` |
+| `ProtectionLedger.lean` | `57acf62b43ebf371429df554044ab6e895e2f743e996de322b777a6de49f81b1` |
+| `check.py` | `1be36fde024777c536731f1cab750cd7f18c16336e686ad59e5ce0174a9377a2` |
+| Fresh verification receipt | `3426b2f6f8f30e994704970ddbcc6c9612a84f7bc1159f9a3e849fe8589e9226` |
+
+This closes the bounded proof interface. It does not establish concern formation, ethical necessity, priority among conflicting claims, renewable support, a new selection algorithm or completion of the unified foundation. No new stochastic or empirical result is inferred.

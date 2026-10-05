@@ -1,0 +1,21 @@
+'ClaimLedger.distinct_patient_keeps_claim_distinct' does not depend on any axioms
+'ClaimLedger.distinct_episode_keeps_claim_distinct' does not depend on any axioms
+'ClaimLedger.initial_wellFormed' does not depend on any axioms
+'ClaimLedger.record_admitted' does not depend on any axioms
+'ClaimLedger.record_wellFormed' does not depend on any axioms
+'ClaimLedger.unresolved_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClaimLedger.certified_disjoint_unresolved' does not depend on any axioms
+'ClaimLedger.record_unresolved_exact' does not depend on any axioms
+'ClaimLedger.no_new_certificate_preserves_unresolved' depends on axioms: [propext]
+'ClaimLedger.unresolved_retains_independently_admitted_reason' does not depend on any axioms
+'ClaimLedger.recorded_certificates_sound' does not depend on any axioms
+'ClaimLedger.recorded_sound_iff_old_sound' does not depend on any axioms
+'ClaimLedger.traces_compose' does not depend on any axioms
+'ClaimLedger.partial_evidence_actual_execution' does not depend on any axioms
+'ClaimLedger.successive_execution_with_persistent_claims' does not depend on any axioms
+'ClaimLedger.service_step_is_paid' depends on axioms: [propext, Quot.sound]
+'ClaimLedger.one_unit_cannot_deliver_both_positive_services' depends on axioms: [propext]
+'ClaimLedger.paid_service_preserves_unfulfilled_claim' does not depend on any axioms
+'ClaimLedger.no_funding_does_not_erase_admitted_claims' depends on axioms: [propext]
+'ClaimLedger.missing_certificate_does_not_prove_missing_effect' does not depend on any axioms
+'ClaimLedger.prior_certificate_without_persistence_can_be_false' does not depend on any axioms

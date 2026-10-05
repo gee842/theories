@@ -1,6 +1,6 @@
 # Claims through actual paid protection
 
-6 October 2026. AI-authored formal supporting study. Verification in progress.
+6 October 2026. AI-authored formal supporting study. Fresh Lean 4.29.1 build passed: **45 new theorem audits**, 18 with no axiom dependencies and 27 using only permitted standard Lean axioms. All five imported parent sources match their accepted receipt. Separate internal review covers every new statement and proof.
 
 This package leaves the accepted parent event law unchanged and adds a mathematical addressed-claims ledger plus an actual-trace adapter. The ledger is proof-level state, not a newly formed memory device. Normative grounds, permission, action choice and factual calibration remain explicit premises.
 

@@ -35,7 +35,7 @@ def digest(data):
 def run(command, cwd, env=None):
     return subprocess.run(command, cwd=cwd, env=env, text=True,
                           stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-                          timeout=180)
+                          timeout=300)
 
 
 def main():

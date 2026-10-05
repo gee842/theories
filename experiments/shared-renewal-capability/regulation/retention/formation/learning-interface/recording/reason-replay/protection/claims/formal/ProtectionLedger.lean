@@ -100,7 +100,8 @@ theorem actual_trace_lifts {M : Nat} {g : ReasonReplay.Graph}
     ScopedTrace M g truth (withScope K interval s) as (withScope K interval t) := by
   induction h with
   | nil => exact .nil _
-  | cons hs _ ih => exact .cons ⟨hs,rfl,rfl⟩ ih
+  | @cons s m t a as hs _ ih =>
+    exact Generative.Trace.cons (m := withScope K interval m) ⟨hs,rfl,rfl⟩ ih
 
 theorem scoped_trace_projects {M : Nat} {g : ReasonReplay.Graph}
     {truth : Bool → Nat → Bool} {s t : ScopedState} {as : List Event}
@@ -329,7 +330,11 @@ theorem withdrawal_can_leave_uncertified_claim_without_harm :
   have hs : ReasonProtection.Step 17 primary truth freshFinal .withdraw
       (advance primary freshFinal .withdraw) :=
     ⟨hf.1,⟨hf.2.2.1,hf.2.2.2.1⟩,rfl⟩
-  refine ⟨.cons hs (.nil _),?_,rfl,rfl⟩
+  have nh : ∀ (g : ReasonReplay.Graph) (s : ReasonProtection.State),
+      NoNewHarm s (advance g s .withdraw) .q := by intro g s; rfl
+  have en : ∀ (g : ReasonReplay.Graph) (s : ReasonProtection.State),
+      energy (advance g s .withdraw) = energy s := by intro g s; rfl
+  refine ⟨.cons hs (.nil _),?_,nh primary freshFinal,en primary freshFinal⟩
   simp [ClaimLedger.unresolved,ClaimLedger.initial,addressedBoth]
 
 /-- Lack of the eleven-unit audit does not refute the retained publication and
