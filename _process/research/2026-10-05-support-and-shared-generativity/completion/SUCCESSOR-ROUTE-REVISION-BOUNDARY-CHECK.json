@@ -1,0 +1,2795 @@
+{
+  "status": "passed",
+  "scope": "Four representative prefix replays and 21 independently specified cash paths; no revision policy or full-mixture acceptance.",
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/verification.json": "3edcf455e48d5e3f8700255651b7a600cf538d84ab331e8301a33824cc8d02a2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/model.py": "2bbe43cf284bc7426e6ba689ff7aed983a41ea3c07030804123d3cf9d43b4e66",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/monitor/HANDOFF.md": "29ed85e8497eee4e72dac2478cf2aa4235eab277c02147ca9f2ab4052940c9d9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/PROTOCOL.md": "eab0da293df1ff66795d7b32e9a8e52091b20ebdcb3252b61447db403f09b505",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/PROSPECTIVE-CLARIFICATIONS.md": "4dfd2369755eecad99aa419156d049f504930413d3b6f90cff3a75eec1415f3c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/protocol-freeze.json": "e7ed714c35be40f0f6443d9dabc3e6a888250ffa2ce877c5a72206d842741160",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/SUCCESSOR-ROUTE-REVISION-BOUNDARY-CHECK.py": "3898b449e8240aa0ae35be52f81c59775b9a2c600a5f4a440ef395e82b7b0bb1"
+  },
+  "accepted_monitor_hashes_checked": 24,
+  "representative_prefixes": {
+    "target": {
+      "accepted_two_frame_reference": "primary/entry_15",
+      "evaluated_intervention": "same accepted entry and case with frames=1",
+      "projection": {
+        "recipient": 11,
+        "q": 1,
+        "gamma": "target",
+        "new_source": 10,
+        "child_cash": 0,
+        "success_summary": 0,
+        "failure_summary": 2,
+        "binding": true,
+        "post_read_done": true,
+        "write_done": true,
+        "stage": "episode_complete",
+        "diagnosis": "unresolved"
+      }
+    },
+    "closed": {
+      "accepted_two_frame_reference": "primary/entry_17",
+      "evaluated_intervention": "same accepted entry and case with frames=1",
+      "projection": {
+        "recipient": 11,
+        "q": 3,
+        "gamma": "closed",
+        "new_source": 10,
+        "child_cash": 0,
+        "success_summary": 0,
+        "failure_summary": 1,
+        "binding": true,
+        "post_read_done": true,
+        "write_done": true,
+        "stage": "episode_complete",
+        "diagnosis": "nonwriter"
+      }
+    },
+    "frozen": {
+      "accepted_two_frame_reference": "primary/entry_13",
+      "evaluated_intervention": "same accepted entry and case with frames=1",
+      "projection": {
+        "recipient": 11,
+        "q": 3,
+        "gamma": "frozen",
+        "new_source": 10,
+        "child_cash": 0,
+        "success_summary": 0,
+        "failure_summary": 1,
+        "binding": true,
+        "post_read_done": true,
+        "write_done": true,
+        "stage": "episode_complete",
+        "diagnosis": "nonwriter"
+      }
+    },
+    "controlled_proxy": {
+      "accepted_two_frame_reference": "controlled_proxy_stable/entry_25",
+      "evaluated_intervention": "same accepted entry and case with frames=1",
+      "projection": {
+        "recipient": 11,
+        "q": 1,
+        "gamma": "private_zero",
+        "new_source": 10,
+        "child_cash": 0,
+        "success_summary": 2,
+        "failure_summary": 0,
+        "binding": true,
+        "post_read_done": true,
+        "write_done": true,
+        "stage": "episode_complete",
+        "diagnosis": "private_zero"
+      }
+    }
+  },
+  "proposed_target_payment_paths": {
+    "0": {
+      "completed": false,
+      "stopped": "probe2:rent",
+      "stock": 1,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 6
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 3
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 3
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 2
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 1
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": false,
+          "stock": 1
+        }
+      ]
+    },
+    "1": {
+      "completed": false,
+      "stopped": "probe2:sense",
+      "stock": 1,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 4
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 4
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 3
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 2
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 1
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": false,
+          "stock": 1
+        }
+      ]
+    },
+    "2": {
+      "completed": false,
+      "stopped": "probe2:work",
+      "stock": 1,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 5
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 5
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 4
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 3
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 2
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 1
+        },
+        {
+          "stage": "probe2:work",
+          "paid": false,
+          "stock": 1
+        }
+      ]
+    },
+    "3": {
+      "completed": false,
+      "stopped": "probe2:work",
+      "stock": 2,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 6
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 6
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 5
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 4
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 3
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 2
+        },
+        {
+          "stage": "probe2:work",
+          "paid": false,
+          "stock": 2
+        }
+      ]
+    },
+    "4": {
+      "completed": false,
+      "stopped": "probe2:work",
+      "stock": 3,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 7
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 6
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 5
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 4
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 3
+        },
+        {
+          "stage": "probe2:work",
+          "paid": false,
+          "stock": 3
+        }
+      ]
+    },
+    "5": {
+      "completed": true,
+      "stopped": null,
+      "stock": 11,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 8
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 6
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 5
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 4
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 1
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 4
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 2
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 11
+        }
+      ]
+    },
+    "6": {
+      "completed": true,
+      "stopped": null,
+      "stock": 12,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 9
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 6
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 5
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 2
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 5
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 3
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 12
+        }
+      ]
+    },
+    "7": {
+      "completed": true,
+      "stopped": null,
+      "stock": 13,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 10
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 6
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 3
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 6
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 4
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 13
+        }
+      ]
+    },
+    "8": {
+      "completed": true,
+      "stopped": null,
+      "stock": 14,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 11
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 4
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 5
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 14
+        }
+      ]
+    },
+    "9": {
+      "completed": true,
+      "stopped": null,
+      "stock": 15,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 12
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 5
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 6
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 15
+        }
+      ]
+    },
+    "10": {
+      "completed": true,
+      "stopped": null,
+      "stock": 16,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 13
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 6
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 16
+        }
+      ]
+    },
+    "11": {
+      "completed": true,
+      "stopped": null,
+      "stock": 17,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 14
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 7
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 17
+        }
+      ]
+    },
+    "12": {
+      "completed": true,
+      "stopped": null,
+      "stock": 18,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 15
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 8
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 18
+        }
+      ]
+    },
+    "13": {
+      "completed": true,
+      "stopped": null,
+      "stock": 19,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 16
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 9
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 19
+        }
+      ]
+    },
+    "14": {
+      "completed": true,
+      "stopped": null,
+      "stock": 20,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 17
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 10
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 23
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 20
+        }
+      ]
+    },
+    "15": {
+      "completed": true,
+      "stopped": null,
+      "stock": 21,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 25
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 18
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 11
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 24
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 21
+        }
+      ]
+    },
+    "16": {
+      "completed": true,
+      "stopped": null,
+      "stock": 22,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 26
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 25
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 19
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 12
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 25
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 22
+        }
+      ]
+    },
+    "17": {
+      "completed": true,
+      "stopped": null,
+      "stock": 23,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 27
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 26
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 25
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 20
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 13
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 23
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 26
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 25
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 23
+        }
+      ]
+    },
+    "18": {
+      "completed": true,
+      "stopped": null,
+      "stock": 24,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 28
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 27
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 26
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 25
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 21
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 14
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 24
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 27
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 26
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 25
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 24
+        }
+      ]
+    },
+    "19": {
+      "completed": true,
+      "stopped": null,
+      "stock": 25,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 29
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 28
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 27
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 26
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 25
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 22
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 15
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 25
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 18
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 28
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 27
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 26
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 25
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 25
+        }
+      ]
+    },
+    "20": {
+      "completed": true,
+      "stopped": null,
+      "stock": 26,
+      "spent": 35,
+      "lost": 10,
+      "trace": [
+        {
+          "stage": "head_assembly",
+          "paid": true,
+          "stock": 30
+        },
+        {
+          "stage": "evidence_read",
+          "paid": true,
+          "stock": 29
+        },
+        {
+          "stage": "swap",
+          "paid": true,
+          "stock": 28
+        },
+        {
+          "stage": "probe1:rent",
+          "paid": true,
+          "stock": 27
+        },
+        {
+          "stage": "probe1:sense",
+          "paid": true,
+          "stock": 26
+        },
+        {
+          "stage": "probe1:work",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "probe1:return",
+          "capture": false,
+          "stock": 23
+        },
+        {
+          "stage": "probe1:acquire",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe1:write",
+          "paid": true,
+          "stock": 21
+        },
+        {
+          "stage": "probe2:rent",
+          "paid": true,
+          "stock": 20
+        },
+        {
+          "stage": "probe2:sense",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe2:work",
+          "paid": true,
+          "stock": 16
+        },
+        {
+          "stage": "probe2:return",
+          "capture": true,
+          "stock": 26
+        },
+        {
+          "stage": "probe2:acquire",
+          "paid": true,
+          "stock": 25
+        },
+        {
+          "stage": "probe2:write",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "probe3:rent",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "probe3:sense",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "probe3:work",
+          "paid": true,
+          "stock": 19
+        },
+        {
+          "stage": "probe3:return",
+          "capture": true,
+          "stock": 29
+        },
+        {
+          "stage": "probe3:acquire",
+          "paid": true,
+          "stock": 28
+        },
+        {
+          "stage": "probe3:write",
+          "paid": true,
+          "stock": 27
+        },
+        {
+          "stage": "copy:donor",
+          "paid": true,
+          "stock": 26
+        },
+        {
+          "stage": "copy:own_use",
+          "paid": true,
+          "stock": 25
+        },
+        {
+          "stage": "copy:read",
+          "paid": true,
+          "stock": 24
+        },
+        {
+          "stage": "copy:assemble",
+          "paid": true,
+          "stock": 23
+        },
+        {
+          "stage": "copy:write",
+          "paid": true,
+          "stock": 22
+        },
+        {
+          "stage": "copy:seed",
+          "paid": true,
+          "stock": 17
+        },
+        {
+          "stage": "copy:hold",
+          "paid": true,
+          "stock": 26
+        }
+      ]
+    }
+  },
+  "caveat": "First-frame replay is not a saved two-frame endpoint. The dedicated handoff export and revision implementation require their own checks."
+}
