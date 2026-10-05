@@ -1,0 +1,115 @@
+{
+  "created_at_utc": "2026-10-05T12:20:36.853729+00:00",
+  "type": "integration/preservation/link audit; no scientific rerun",
+  "repository_head_before_snapshot": "fceb4f2bb89c98e5b93c3d3641d1f16893e87e8f",
+  "goal_status": "active; one paid conditional episode and sequential assays do not finish universal direction",
+  "local_links_checked": 127,
+  "missing_local_links": [],
+  "continuation_input_hashes": [
+    {
+      "record": "continuation/results.json",
+      "path": "experiments/shared-renewal-capability/continuation/PROTOCOL.md",
+      "matches": true,
+      "sha256": "d95fa527ca087d63d03dbdb9140a2a9102cee02bf38c46408d212bc2d04cd11f"
+    },
+    {
+      "record": "continuation/results.json",
+      "path": "experiments/shared-renewal-capability/continuation/compare.py",
+      "matches": true,
+      "sha256": "efc336267e8e65b1ca4098ec68901c945aa16e47066d4dd3ace8dab7f206544b"
+    },
+    {
+      "record": "continuation/results.json",
+      "path": "experiments/shared-renewal-capability/regulation/compare.py",
+      "matches": true,
+      "sha256": "6b3163a619b28435cc016aefb14a92519bd459af27ee9fd9f380c73e5bf3c66f"
+    },
+    {
+      "record": "continuation/results.json",
+      "path": "experiments/shared-renewal-capability/regulation/PROTOCOL.md",
+      "matches": true,
+      "sha256": "d8ca147ed3890f26203ac9c0d03f6e05dbdf7010dcd926c836e1cc429bb34747"
+    },
+    {
+      "record": "continuation/independent-check.json",
+      "path": "experiments/shared-renewal-capability/continuation/PROTOCOL.md",
+      "matches": true,
+      "sha256": "d95fa527ca087d63d03dbdb9140a2a9102cee02bf38c46408d212bc2d04cd11f"
+    },
+    {
+      "record": "continuation/independent-check.json",
+      "path": "experiments/shared-renewal-capability/continuation/compare.py",
+      "matches": true,
+      "sha256": "efc336267e8e65b1ca4098ec68901c945aa16e47066d4dd3ace8dab7f206544b"
+    },
+    {
+      "record": "continuation/independent-check.json",
+      "path": "experiments/shared-renewal-capability/regulation/compare.py",
+      "matches": true,
+      "sha256": "6b3163a619b28435cc016aefb14a92519bd459af27ee9fd9f380c73e5bf3c66f"
+    },
+    {
+      "record": "continuation/independent-check.json",
+      "path": "experiments/shared-renewal-capability/regulation/PROTOCOL.md",
+      "matches": true,
+      "sha256": "d8ca147ed3890f26203ac9c0d03f6e05dbdf7010dcd926c836e1cc429bb34747"
+    },
+    {
+      "record": "continuation/independent-check.json",
+      "path": "experiments/shared-renewal-capability/continuation/results.json",
+      "matches": true,
+      "sha256": "8996ff812ed000f8cc5dff4194b16ca5e68979067bc7d05eaf87ccc34a8e6234"
+    },
+    {
+      "record": "continuation/independent-check.json",
+      "path": "experiments/shared-renewal-capability/regulation/independent_check.py",
+      "matches": true,
+      "sha256": "4079be96a5f60afeca198f107e40849f8faabe09eebccd95c42485f8bc83858d"
+    },
+    {
+      "record": "continuation/independent-check.json",
+      "path": "experiments/shared-renewal-capability/continuation/independent_check.py",
+      "matches": true,
+      "sha256": "36831354290fe7f5107f95e53d35498a3ec06ba8415163f0946394d18276c74d"
+    }
+  ],
+  "allocation_reviewed_hashes": {
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/ALLOCATION-CONTROL.md": "93ba1c7d550d64b3176e34c1826ae45889b0a68907e33d0c766825273be7f60b",
+    "experiments/shared-renewal-capability/allocation/exact_check.py": "421a1bb9b5bd8cdd1e85d4cc5f35381fc94a60869794bb2143ef9b1471873363",
+    "experiments/shared-renewal-capability/allocation/exact-check.json": "3dcc31aeb217407dc3fcf8d77cbf7c45548bbd2f56f9aab23ae8a764a550d9d4"
+  },
+  "independent_continuation_summary": {
+    "probabilities": 192,
+    "maximum_discrepancy": 3.674838211509268e-14,
+    "comparison_tolerance_not_roundoff_bound": 1e-10
+  },
+  "allocation_analytical_witness": {
+    "status": "passed",
+    "absent_success_upper_bound": "6769/110592",
+    "constructed_success_lower_bound": "2209/18432",
+    "net_improvement_lower_bound": "6485/110592",
+    "early_success_difference_h_cubed_coefficient": "-216576",
+    "separating_reliability": "1/10"
+  },
+  "source_review_scope": "Weiße publication/SI/model source versions identified by URLs and hashes in RESOURCE-ALLOCATION-BASELINE.md; no downloaded source bytes imported this turn, no empirical rerun or parameter fit",
+  "artifact_sha256": {
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/CONTINUATION-BRIDGE.md": "b0dfd71dc3ab261a105a95d8ba34f4f1b9c4b30b7d99d72ca41bd498e021f07b",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/CONTINUATION-REVIEW.md": "62759020d9a2dc42afd3d3c27ff05ffd3765b2c45705dbb148c3a4c1b34cf4ab",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/ALLOCATION-CONTROL.md": "93ba1c7d550d64b3176e34c1826ae45889b0a68907e33d0c766825273be7f60b",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/ALLOCATION-REVIEW.md": "b3fc540e568a75d580cb6e79cb9ed1a18899ab2f23fe6b891ebfecfafacdc080",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/RESOURCE-ALLOCATION-BASELINE.md": "6df3c792ba642f9306b6f571fcad643802f17c153d05d0d24a5a6b697f5e513c",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md": "9a577e1abb0e8bf3f1e618be39b43b332e5336ad5d486e0022820cf6a59a2273",
+    "experiments/shared-renewal-capability/continuation/README.md": "6dab6f9c9778d6d14bf274c7a1d926b403bda57cf13b9a855004644064cd30e4",
+    "experiments/shared-renewal-capability/continuation/PROTOCOL.md": "d95fa527ca087d63d03dbdb9140a2a9102cee02bf38c46408d212bc2d04cd11f",
+    "experiments/shared-renewal-capability/allocation/README.md": "19877d76909badabdbf67cc5673a28f2fd1ab398d229ddfc0118ddbbc924516b",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md": "c82a54b841b2c4ae00c52ec80853155f7741a485a1134a7d31c0700f171280fa",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md": "28d8a430f54efaa51a3e8896ea8fd41ad4601fd0fe8fcde8f6e69c2fb9191930",
+    "experiments/shared-renewal-capability/continuation/compare.py": "efc336267e8e65b1ca4098ec68901c945aa16e47066d4dd3ace8dab7f206544b",
+    "experiments/shared-renewal-capability/continuation/independent_check.py": "36831354290fe7f5107f95e53d35498a3ec06ba8415163f0946394d18276c74d",
+    "experiments/shared-renewal-capability/continuation/independent-check.json": "b1548207d07f4e44e1efc3f2cafe118a21bfaa0e13d6dd1bdc9f02aa6ca8ec8f",
+    "experiments/shared-renewal-capability/continuation/results.json": "8996ff812ed000f8cc5dff4194b16ca5e68979067bc7d05eaf87ccc34a8e6234",
+    "experiments/shared-renewal-capability/allocation/exact_check.py": "421a1bb9b5bd8cdd1e85d4cc5f35381fc94a60869794bb2143ef9b1471873363",
+    "experiments/shared-renewal-capability/allocation/exact-check.json": "3dcc31aeb217407dc3fcf8d77cbf7c45548bbd2f56f9aab23ae8a764a550d9d4",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/monitor-state.json": "ebd280fb2c1e898252a76d845df61d5e62af1834432146bfea0d6a7646c191a4"
+  }
+}

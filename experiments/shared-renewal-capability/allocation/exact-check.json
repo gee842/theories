@@ -1,0 +1,94 @@
+{
+  "absent_construction_coefficient": 0,
+  "absent_success_upper_bound": "6769/110592",
+  "baseline_failure_work_increments": [
+    0,
+    0,
+    -1
+  ],
+  "checker_sha256": "421a1bb9b5bd8cdd1e85d4cc5f35381fc94a60869794bb2143ef9b1471873363",
+  "common_preparation": [
+    2,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "constructed_success_lower_bound": "2209/18432",
+  "constructed_zeta": 0,
+  "construction_route_work_increments": [
+    -1,
+    0,
+    0
+  ],
+  "early_success_difference_derivatives_orders_0_through_3": [
+    "0",
+    "0",
+    "0",
+    "-1299456"
+  ],
+  "early_success_difference_h_cubed_coefficient": "-216576",
+  "exp_3_certified_lower_bound": "131/8",
+  "failure_race_probabilities": [
+    "47/48",
+    "47/48",
+    "47/48"
+  ],
+  "horizon": "3",
+  "matched_parameters_except_construction_availability": {
+    "a": 1,
+    "alpha": 4,
+    "b": 1,
+    "beta": 3384,
+    "d": 1,
+    "delta": 1,
+    "ell": 141,
+    "g": 4,
+    "k": 1,
+    "kappa": 162432,
+    "mu": 159189,
+    "nu": 1,
+    "rho": 1,
+    "theta": 4
+  },
+  "method": "Exact rational arithmetic; one analytically derived witness; no search or simulation",
+  "net_improvement_lower_bound": "6485/110592",
+  "relevant_phase_hazards": [
+    "331776",
+    "162576",
+    "4",
+    "6"
+  ],
+  "scope": "Declared reaction-law result from S with no initial regulator. No chemical calibration, all-capability ordering, advantage of fuel switching, or net comparison from the earlier original preparation is established.",
+  "separating_reliability": "1/10",
+  "source_note": "_process/research/2026-10-05-support-and-shared-generativity/completion/ALLOCATION-CONTROL.md",
+  "state_order": [
+    "R",
+    "C",
+    "Y",
+    "D",
+    "F",
+    "G",
+    "GF",
+    "YG"
+  ],
+  "status": "passed",
+  "success_race_probabilities": [
+    "47/48",
+    "47/48",
+    "1/4",
+    "2/3"
+  ],
+  "supported_preparation_rate_product": "3072",
+  "supported_preparation_work_increments": [
+    1,
+    1,
+    -1,
+    0,
+    0
+  ],
+  "target": "First fresh capture by H, with C>=1 and Y+YG>=1 at capture; not terminal survival"
+}

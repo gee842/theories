@@ -24,6 +24,10 @@ The [Ceroni evidence audit](PHYSICAL-EVIDENCE-CERONI.md) now reviews the full ac
 
 ## Imported claim contracts
 
+**Delivered continuation and paid allocation, subsequent advance:** the [continuation bridge](CONTINUATION-BRIDGE.md) implements the missing functional test in the unchanged model. The [independent review](CONTINUATION-REVIEW.md) verifies the positive marked-process reconstruction. Faster recycling improves repeated delivery in the tested original pair; the old regulator remains unfavorable on all 384 constructed-versus-absent sequential profiles. These are float calculations with explicit truncation accounting, not empirical results or directed arithmetic.
+
+The [allocation-control theorem](ALLOCATION-CONTROL.md) supplies a different interaction: bound Y cannot consume the last precursor for C. It derives a local advantage from actual states, then a paid net advantage from a common supported preparation with G initially absent, using finite event-path bounds. Construction is initially disadvantageous for that same joint target, so its later gain requires a time crossover. The [review](ALLOCATION-REVIEW.md) and [exact checks](../../../../experiments/shared-renewal-capability/allocation/README.md) preserve the distinction between a hitting event, endpoint readiness, full capability order and architecture selection. The [conventional cellular baseline](RESOURCE-ALLOCATION-BASELINE.md) separately explains useful inhibition through resource allocation; no additional identified empirical prediction is claimed.
+
 Each row condenses a contract. The linked source controls the complete hypotheses and proof. A source can be completed while its contribution remains insufficient for the next interface.
 
 | ID and source | State, preparation, resources and intervention | Established output and scope | Interface still needed |
@@ -53,6 +57,12 @@ New claims from the opportunity/evidence continuation have these separate status
 
 The C14 random rational cases test algebra only, not a distribution of physical systems. C15's [workbook audit](../../../../experiments/shared-renewal-capability/physical-evidence/README.md) verifies selected source arithmetic and preserves discrepancies; it is not a replication of the experiment.
 
+| ID and source | Established statement | Status and unclosed interface |
+|---|---|---|
+| C16 [Sequential continuation](CONTINUATION-BRIDGE.md) | Exact killed-generator/marked-process formulas for actual later assembly; unchanged-network comparisons distinguish reserve readiness from repeated delivery | Conditional identity and independently checked numerical results; no broad controller-class capacity or indefinite renewal |
+| C17 [Paid allocation control](ALLOCATION-CONTROL.md) | In a nonempty finite-rate class, fabrication from a common zero-gate preparation improves one joint fresh-capture probability after an early paid disadvantage | Conditional reaction-law proof with exact witness; molecules/rates unidentified, initial preparation supported, architecture supplied, full future-capability order and retention open |
+| C18 [Resource-allocation baseline](RESOURCE-ALLOCATION-BASELINE.md) | Conventional cellular equations explain allocation relief, growth/production differences and finite-batch limits under stated closure assumptions | Primary-source reconstruction and conditional algebra; not a fit to the feedback data or independent validation of this theory |
+
 ## Conflict and dependency ledger
 
 | Issue | Resolution/status |
@@ -67,6 +77,8 @@ The C14 random rational cases test algebra only, not a distribution of physical 
 | Free fuel versus future productive function | Recycling converts fuel to usable material in the existing law. Reserve readiness is a valid distinct test; later delivered production needs its own continuation assay. The restricted storage theorem is not a full-network ordering. |
 | Useful regulation versus supplied regulation | A physical sensor and controller can be constructed yet reduce joint success. Derive the loss route it prevents, response delay and net consequences; the kinetic inequality alone supplies no physical implementation. |
 | Published feedback benefit versus independent prediction | The reviewed biology supports conditional installed feedback, with both gains and costs. Known outcomes, ambiguous source labels and unmeasured controller states cannot supply independent identification or a new held-out validation. |
+| Useful paid episode versus spontaneous useful architecture | The allocation theorem constructs G under a supplied reaction law and supported preparation. A reachable favorable state cannot be conditioned on for free when comparing the full preceding process; selection and inheritance need their own dynamics. |
+| Fresh delivery versus terminal retention | The paid theorem tests a first protected capture by a deadline. Its success state can subsequently decay. The sequential assay instead requires productive survival throughout its full interval. Neither guarantee silently supplies the other. |
 | Classical stochastic model versus theory of everything | Classical specialization is useful but incomplete coverage. General interface does not derive quantum, relativistic or fundamental physical law. |
 
 ## Registered active contributions
@@ -92,3 +104,5 @@ For completed active work, capture the final relevant artifact revision before d
 The [internal review](REVIEW.md) records corrections to protocol quantifiers and future capability information, and the separate check of the stochastic absorption proof. Such AI-assisted review is not external peer review or proof-assistant verification.
 
 The subsequent v0.3 review accepted the kinetic inequality and narrowed its local statement to the closed constant-rate module, with no unmodeled wear/reset channels. It added the combined approximation-error margin and retained the distinction between finite-horizon and eventual-success guarantees. A fresh storage-proof audit made predictability and nonexplosion explicit. These are AI-assisted proof/scope reviews; the separate block response computation and read-only source-data audit have their own saved numerical results and limits.
+
+The v0.4 reviews are [continuation](CONTINUATION-REVIEW.md) and [allocation](ALLOCATION-REVIEW.md). A final scope check also distinguished equal counted preparations from the supplied availability of a fabrication channel: the allocation proof charges G-molecule creation, while the physical implementation and origin of the channel remain open. [continuation-allocation-verification.json](continuation-allocation-verification.json) records input preservation, links and the accepted numerical/analytic evidence without rerunning completed scientific calculations.
