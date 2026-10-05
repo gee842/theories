@@ -1,0 +1,261 @@
+{
+  "conditional_recovery": {
+    "parameter_combinations": 85932,
+    "result": "all exact recursions equal the declared resource/horizon formula",
+    "scope": "constant postchange environment, deterministic usable returns, affordable renewal"
+  },
+  "full_comparisons": {
+    "primary_reversal": {
+      "material": {
+        "compact_terminal_states": 12,
+        "audited_edges": 100
+      },
+      "automaton": {
+        "compact_terminal_states": 12,
+        "audited_edges": 100
+      },
+      "directed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "fixed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "blind": {
+        "compact_terminal_states": 508,
+        "audited_edges": 4132
+      }
+    },
+    "no_reversal": {
+      "material": {
+        "compact_terminal_states": 6,
+        "audited_edges": 68
+      },
+      "automaton": {
+        "compact_terminal_states": 6,
+        "audited_edges": 68
+      },
+      "directed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "fixed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "blind": {
+        "compact_terminal_states": 266,
+        "audited_edges": 2638
+      }
+    },
+    "two_reversals": {
+      "material": {
+        "compact_terminal_states": 14,
+        "audited_edges": 104
+      },
+      "automaton": {
+        "compact_terminal_states": 14,
+        "audited_edges": 104
+      },
+      "directed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "fixed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "blind": {
+        "compact_terminal_states": 646,
+        "audited_edges": 4504
+      }
+    },
+    "noisy_reversal": {
+      "material": {
+        "compact_terminal_states": 110,
+        "audited_edges": 740
+      },
+      "automaton": {
+        "compact_terminal_states": 110,
+        "audited_edges": 740
+      },
+      "directed": {
+        "compact_terminal_states": 82,
+        "audited_edges": 570
+      },
+      "fixed": {
+        "compact_terminal_states": 12,
+        "audited_edges": 202
+      },
+      "blind": {
+        "compact_terminal_states": 758,
+        "audited_edges": 10332
+      }
+    },
+    "reserve_3": {
+      "material": {
+        "compact_terminal_states": 6,
+        "audited_edges": 60
+      },
+      "automaton": {
+        "compact_terminal_states": 6,
+        "audited_edges": 60
+      },
+      "directed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "fixed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "blind": {
+        "compact_terminal_states": 324,
+        "audited_edges": 2342
+      }
+    },
+    "reserve_6": {
+      "material": {
+        "compact_terminal_states": 6,
+        "audited_edges": 80
+      },
+      "automaton": {
+        "compact_terminal_states": 6,
+        "audited_edges": 80
+      },
+      "directed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "fixed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "blind": {
+        "compact_terminal_states": 428,
+        "audited_edges": 3316
+      }
+    },
+    "reserve_12": {
+      "material": {
+        "compact_terminal_states": 14,
+        "audited_edges": 114
+      },
+      "automaton": {
+        "compact_terminal_states": 14,
+        "audited_edges": 114
+      },
+      "directed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "fixed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "blind": {
+        "compact_terminal_states": 592,
+        "audited_edges": 4852
+      }
+    },
+    "assembly_2": {
+      "material": {
+        "compact_terminal_states": 6,
+        "audited_edges": 80
+      },
+      "automaton": {
+        "compact_terminal_states": 6,
+        "audited_edges": 80
+      },
+      "directed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "fixed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "blind": {
+        "compact_terminal_states": 442,
+        "audited_edges": 3436
+      }
+    },
+    "lifetime_1": {
+      "material": {
+        "compact_terminal_states": 18,
+        "audited_edges": 156
+      },
+      "automaton": {
+        "compact_terminal_states": 18,
+        "audited_edges": 156
+      },
+      "directed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "fixed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "blind": {
+        "compact_terminal_states": 114,
+        "audited_edges": 1610
+      }
+    },
+    "lifetime_3": {
+      "material": {
+        "compact_terminal_states": 6,
+        "audited_edges": 76
+      },
+      "automaton": {
+        "compact_terminal_states": 6,
+        "audited_edges": 76
+      },
+      "directed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "fixed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "blind": {
+        "compact_terminal_states": 522,
+        "audited_edges": 3036
+      }
+    },
+    "yield_3": {
+      "material": {
+        "compact_terminal_states": 6,
+        "audited_edges": 70
+      },
+      "automaton": {
+        "compact_terminal_states": 6,
+        "audited_edges": 70
+      },
+      "directed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "fixed": {
+        "compact_terminal_states": 4,
+        "audited_edges": 48
+      },
+      "blind": {
+        "compact_terminal_states": 300,
+        "audited_edges": 2964
+      }
+    }
+  },
+  "checked_case_arms": 55,
+  "compared_exact_metrics_per_arm": 13,
+  "source_sha256": {
+    "model.py": "ba967a80af611d23abe01df32e5a94f5b222b836948261106c5a6fba1e9e37d5",
+    "check.py": "76d7da2dab966fe40aa5c61ac4fa33f450313553b163627b4edf3a18f1fe6f8f",
+    "PROTOCOL.md": "60e73af8b5cb533f1b7ed0cb889445ef94371e42089726754180dc85cab96401",
+    "results.json": "d179ed3e549d8f6344c0082ef45bc018eebfdd3e67a30c2ab0e0361fc13161b4",
+    "independent_check.py": "fecccfd81f3489843b97e599ae3e27d12aae8f176e26887773cf37c4aed343e1"
+  },
+  "status": "passed"
+}

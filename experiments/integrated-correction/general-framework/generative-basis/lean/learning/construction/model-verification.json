@@ -1,0 +1,525 @@
+{
+  "scope": "Independent exact finite arithmetic checks of a declared synthetic staged law; no empirical claim.",
+  "checks_passed": true,
+  "handoff_domain": {
+    "a_h": [
+      0,
+      2
+    ],
+    "fuel": [
+      0,
+      4
+    ],
+    "source": [
+      0,
+      11
+    ],
+    "resident": "all 3 values",
+    "local_and_regime": "both values",
+    "intact": true
+  },
+  "handoff_cases": 6480,
+  "main_fixture": {
+    "initial_energy": 30,
+    "preparation_cost": 7,
+    "operating_cost_including_waste": 20,
+    "final_energy": 3,
+    "final_state": {
+      "fuel": 3,
+      "packets": 0,
+      "mapping": true,
+      "lease": 2,
+      "regime": true,
+      "a": 0,
+      "h": 0,
+      "resident": "active",
+      "intact": true,
+      "local": false,
+      "remainder": 0,
+      "bound_a": 2,
+      "bound_h": 2
+    },
+    "preparation_states": [
+      {
+        "a": 0,
+        "h": 0,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 12,
+        "source": 18
+      },
+      {
+        "a": 0,
+        "h": 1,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 11,
+        "source": 18
+      },
+      {
+        "a": 0,
+        "h": 2,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 10,
+        "source": 18
+      },
+      {
+        "a": 1,
+        "h": 2,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 9,
+        "source": 18
+      },
+      {
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": false,
+        "local": false,
+        "fuel": 8,
+        "source": 18
+      },
+      {
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "fuel": 7,
+        "source": 18
+      },
+      {
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": true,
+        "fuel": 7,
+        "source": 17
+      },
+      {
+        "a": 1,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "fuel": 7,
+        "source": 17
+      },
+      {
+        "a": 1,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": true,
+        "fuel": 7,
+        "source": 16
+      },
+      {
+        "a": 2,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "fuel": 7,
+        "source": 16
+      }
+    ],
+    "operating_states": [
+      {
+        "fuel": 7,
+        "packets": 4,
+        "mapping": false,
+        "lease": 0,
+        "regime": false,
+        "a": 2,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 0,
+        "bound_a": 0,
+        "bound_h": 0
+      },
+      {
+        "fuel": 6,
+        "packets": 4,
+        "mapping": false,
+        "lease": 2,
+        "regime": false,
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 0,
+        "bound_a": 2,
+        "bound_h": 0
+      },
+      {
+        "fuel": 7,
+        "packets": 3,
+        "mapping": false,
+        "lease": 2,
+        "regime": false,
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 0,
+        "bound_a": 2,
+        "bound_h": 0
+      },
+      {
+        "fuel": 7,
+        "packets": 3,
+        "mapping": false,
+        "lease": 2,
+        "regime": true,
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 0,
+        "bound_a": 2,
+        "bound_h": 0
+      },
+      {
+        "fuel": 5,
+        "packets": 2,
+        "mapping": false,
+        "lease": 1,
+        "regime": true,
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 0,
+        "bound_a": 2,
+        "bound_h": 0
+      },
+      {
+        "fuel": 3,
+        "packets": 1,
+        "mapping": false,
+        "lease": 0,
+        "regime": true,
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 0,
+        "bound_a": 2,
+        "bound_h": 0
+      },
+      {
+        "fuel": 2,
+        "packets": 1,
+        "mapping": true,
+        "lease": 2,
+        "regime": true,
+        "a": 0,
+        "h": 0,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 0,
+        "bound_a": 2,
+        "bound_h": 2
+      },
+      {
+        "fuel": 3,
+        "packets": 0,
+        "mapping": true,
+        "lease": 2,
+        "regime": true,
+        "a": 0,
+        "h": 0,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 0,
+        "bound_a": 2,
+        "bound_h": 2
+      }
+    ]
+  },
+  "nonzero_remainder_fixture": {
+    "initial_energy": 31,
+    "preparation_cost": 7,
+    "operating_cost_including_waste": 20,
+    "final_energy": 4,
+    "final_state": {
+      "fuel": 3,
+      "packets": 0,
+      "mapping": true,
+      "lease": 2,
+      "regime": true,
+      "a": 0,
+      "h": 0,
+      "resident": "active",
+      "intact": true,
+      "local": false,
+      "remainder": 1,
+      "bound_a": 2,
+      "bound_h": 2
+    },
+    "preparation_states": [
+      {
+        "a": 0,
+        "h": 0,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 12,
+        "source": 19
+      },
+      {
+        "a": 0,
+        "h": 1,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 11,
+        "source": 19
+      },
+      {
+        "a": 0,
+        "h": 2,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 10,
+        "source": 19
+      },
+      {
+        "a": 1,
+        "h": 2,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 9,
+        "source": 19
+      },
+      {
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": false,
+        "local": false,
+        "fuel": 8,
+        "source": 19
+      },
+      {
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "fuel": 7,
+        "source": 19
+      },
+      {
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": true,
+        "fuel": 7,
+        "source": 18
+      },
+      {
+        "a": 1,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "fuel": 7,
+        "source": 18
+      },
+      {
+        "a": 1,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": true,
+        "fuel": 7,
+        "source": 17
+      },
+      {
+        "a": 2,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "fuel": 7,
+        "source": 17
+      }
+    ],
+    "operating_states": [
+      {
+        "fuel": 7,
+        "packets": 4,
+        "mapping": false,
+        "lease": 0,
+        "regime": false,
+        "a": 2,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 1,
+        "bound_a": 0,
+        "bound_h": 0
+      },
+      {
+        "fuel": 6,
+        "packets": 4,
+        "mapping": false,
+        "lease": 2,
+        "regime": false,
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 1,
+        "bound_a": 2,
+        "bound_h": 0
+      },
+      {
+        "fuel": 7,
+        "packets": 3,
+        "mapping": false,
+        "lease": 2,
+        "regime": false,
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 1,
+        "bound_a": 2,
+        "bound_h": 0
+      },
+      {
+        "fuel": 7,
+        "packets": 3,
+        "mapping": false,
+        "lease": 2,
+        "regime": true,
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 1,
+        "bound_a": 2,
+        "bound_h": 0
+      },
+      {
+        "fuel": 5,
+        "packets": 2,
+        "mapping": false,
+        "lease": 1,
+        "regime": true,
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 1,
+        "bound_a": 2,
+        "bound_h": 0
+      },
+      {
+        "fuel": 3,
+        "packets": 1,
+        "mapping": false,
+        "lease": 0,
+        "regime": true,
+        "a": 0,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 1,
+        "bound_a": 2,
+        "bound_h": 0
+      },
+      {
+        "fuel": 2,
+        "packets": 1,
+        "mapping": true,
+        "lease": 2,
+        "regime": true,
+        "a": 0,
+        "h": 0,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 1,
+        "bound_a": 2,
+        "bound_h": 2
+      },
+      {
+        "fuel": 3,
+        "packets": 0,
+        "mapping": true,
+        "lease": 2,
+        "regime": true,
+        "a": 0,
+        "h": 0,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "remainder": 1,
+        "bound_a": 2,
+        "bound_h": 2
+      }
+    ]
+  },
+  "complete_operational_graph": {
+    "reachable_states": 194,
+    "enabled_labelled_edges": 510,
+    "maximum_assemblies": 2,
+    "exhausted_to_fixed_point": true
+  },
+  "counterchecks": {
+    "exhausted_formation_cannot_start_operation": true,
+    "equal_matter_and_energy_wrong_part_type_obstructs_assembly": true,
+    "source_cannot_replace_upfront_fuel": true,
+    "constructible_wrong_mapping_fails_to_renew": true,
+    "wrong_first_then_correct_mapping_strands_two_packets": true,
+    "damaged_site_blocks_handoff": true
+  },
+  "fixed_word_threshold_grid": {
+    "initial_fuel": [
+      0,
+      18
+    ],
+    "initial_unit_source": [
+      0,
+      23
+    ],
+    "cases": 456,
+    "executable_cases": 42,
+    "criterion_on_checked_grid": "initial fuel >= 12 and unit source >= 18"
+  },
+  "source_hashes": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/ConstructedSelector.lean": "708bcd14568cf42e1eb0c093d07d1fc061dfff7fd08b0e85fcd028ec79fbe488",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/check_model.py": "8b5b7213f03d8f5b5d9f33d68af199c97a552be3ab7a5167dc32cfdd821e07ed",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a"
+  }
+}

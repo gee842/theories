@@ -1,0 +1,10348 @@
+{
+  "status": "passed",
+  "arithmetic": "exact fractions; no Monte Carlo",
+  "source_sha256": {
+    "model.py": "ba967a80af611d23abe01df32e5a94f5b222b836948261106c5a6fba1e9e37d5",
+    "check.py": "76d7da2dab966fe40aa5c61ac4fa33f450313553b163627b4edf3a18f1fe6f8f",
+    "PROTOCOL.md": "60e73af8b5cb533f1b7ed0cb889445ef94371e42089726754180dc85cab96401"
+  },
+  "cases": {
+    "primary_reversal": {
+      "law": {
+        "initial_fuel": 9,
+        "assembly": 1,
+        "trial": 2,
+        "renewal": 1,
+        "packet": 4,
+        "lifetime": 2,
+        "horizon": 12,
+        "reversals": [
+          4
+        ],
+        "availability": "1"
+      },
+      "arms": {
+        "material": {
+          "exact": {
+            "fuel": "17/4",
+            "forms": "5/2",
+            "trials": "63/8",
+            "renewals": "9/2",
+            "captures": "9/2",
+            "changes": "3/4",
+            "post_captures": "2",
+            "p_post_capture": "3/8",
+            "p_capture_both_sides": "3/8",
+            "p_revision_witness": "3/8",
+            "p_ready": "3/8",
+            "total_spent": "91/4",
+            "spilled_source": "30"
+          },
+          "decimal": {
+            "fuel": 4.25,
+            "forms": 2.5,
+            "trials": 7.875,
+            "renewals": 4.5,
+            "captures": 4.5,
+            "changes": 0.75,
+            "post_captures": 2.0,
+            "p_post_capture": 0.375,
+            "p_capture_both_sides": 0.375,
+            "p_revision_witness": 0.375,
+            "p_ready": 0.375,
+            "total_spent": 22.75,
+            "spilled_source": 30.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            10,
+            10,
+            12,
+            12,
+            12,
+            12
+          ]
+        },
+        "automaton": {
+          "exact": {
+            "fuel": "17/4",
+            "forms": "5/2",
+            "trials": "63/8",
+            "renewals": "9/2",
+            "captures": "9/2",
+            "changes": "3/4",
+            "post_captures": "2",
+            "p_post_capture": "3/8",
+            "p_capture_both_sides": "3/8",
+            "p_revision_witness": "3/8",
+            "p_ready": "3/8",
+            "total_spent": "91/4",
+            "spilled_source": "30"
+          },
+          "decimal": {
+            "fuel": 4.25,
+            "forms": 2.5,
+            "trials": 7.875,
+            "renewals": 4.5,
+            "captures": 4.5,
+            "changes": 0.75,
+            "post_captures": 2.0,
+            "p_post_capture": 0.375,
+            "p_capture_both_sides": 0.375,
+            "p_revision_witness": 0.375,
+            "p_ready": 0.375,
+            "total_spent": 22.75,
+            "spilled_source": 30.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            10,
+            10,
+            12,
+            12,
+            12,
+            12
+          ]
+        },
+        "directed": {
+          "exact": {
+            "fuel": "13/2",
+            "forms": "5/2",
+            "trials": "9",
+            "renewals": "6",
+            "captures": "6",
+            "changes": "3/2",
+            "post_captures": "3",
+            "p_post_capture": "1/2",
+            "p_capture_both_sides": "1/2",
+            "p_revision_witness": "1/2",
+            "p_ready": "1/2",
+            "total_spent": "53/2",
+            "spilled_source": "24"
+          },
+          "decimal": {
+            "fuel": 6.5,
+            "forms": 2.5,
+            "trials": 9.0,
+            "renewals": 6.0,
+            "captures": 6.0,
+            "changes": 1.5,
+            "post_captures": 3.0,
+            "p_post_capture": 0.5,
+            "p_capture_both_sides": 0.5,
+            "p_revision_witness": 0.5,
+            "p_ready": 0.5,
+            "total_spent": 26.5,
+            "spilled_source": 24.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "fixed": {
+          "exact": {
+            "fuel": "1/2",
+            "forms": "5/2",
+            "trials": "6",
+            "renewals": "2",
+            "captures": "2",
+            "changes": "0",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "33/2",
+            "spilled_source": "40"
+          },
+          "decimal": {
+            "fuel": 0.5,
+            "forms": 2.5,
+            "trials": 6.0,
+            "renewals": 2.0,
+            "captures": 2.0,
+            "changes": 0.0,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 16.5,
+            "spilled_source": 40.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "blind": {
+          "exact": {
+            "fuel": "220765/65536",
+            "forms": "130237/65536",
+            "trials": "225359/32768",
+            "renewals": "27221/8192",
+            "captures": "440191/131072",
+            "changes": "64701/131072",
+            "post_captures": "182143/131072",
+            "p_post_capture": "2039/8192",
+            "p_capture_both_sides": "2039/8192",
+            "p_revision_witness": "5515/32768",
+            "p_ready": "13947/65536",
+            "total_spent": "1249441/65536",
+            "spilled_source": "1132673/32768"
+          },
+          "decimal": {
+            "fuel": 3.3686065673828125,
+            "forms": 1.9872589111328125,
+            "trials": 6.877410888671875,
+            "renewals": 3.3228759765625,
+            "captures": 3.3583908081054688,
+            "changes": 0.49362945556640625,
+            "post_captures": 1.3896408081054688,
+            "p_post_capture": 0.2489013671875,
+            "p_capture_both_sides": 0.2489013671875,
+            "p_revision_witness": 0.168304443359375,
+            "p_ready": 0.2128143310546875,
+            "total_spent": 19.064956665039062,
+            "spilled_source": 34.566436767578125
+          },
+          "state_counts_by_exposure": [
+            2,
+            8,
+            16,
+            34,
+            54,
+            98,
+            172,
+            294,
+            488,
+            786,
+            1154,
+            1664,
+            2384
+          ]
+        }
+      }
+    },
+    "no_reversal": {
+      "law": {
+        "initial_fuel": 9,
+        "assembly": 1,
+        "trial": 2,
+        "renewal": 1,
+        "packet": 4,
+        "lifetime": 2,
+        "horizon": 12,
+        "reversals": [],
+        "availability": "1"
+      },
+      "arms": {
+        "material": {
+          "exact": {
+            "fuel": "27/2",
+            "forms": "3/2",
+            "trials": "39/4",
+            "renewals": "17/2",
+            "captures": "17/2",
+            "changes": "1/4",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "3/4",
+            "total_spent": "59/2",
+            "spilled_source": "14"
+          },
+          "decimal": {
+            "fuel": 13.5,
+            "forms": 1.5,
+            "trials": 9.75,
+            "renewals": 8.5,
+            "captures": 8.5,
+            "changes": 0.25,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.75,
+            "total_spent": 29.5,
+            "spilled_source": 14.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "automaton": {
+          "exact": {
+            "fuel": "27/2",
+            "forms": "3/2",
+            "trials": "39/4",
+            "renewals": "17/2",
+            "captures": "17/2",
+            "changes": "1/4",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "3/4",
+            "total_spent": "59/2",
+            "spilled_source": "14"
+          },
+          "decimal": {
+            "fuel": 13.5,
+            "forms": 1.5,
+            "trials": 9.75,
+            "renewals": 8.5,
+            "captures": 8.5,
+            "changes": 0.25,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.75,
+            "total_spent": 29.5,
+            "spilled_source": 14.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "directed": {
+          "exact": {
+            "fuel": "33/2",
+            "forms": "3/2",
+            "trials": "12",
+            "renewals": "11",
+            "captures": "11",
+            "changes": "1/2",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "1",
+            "total_spent": "73/2",
+            "spilled_source": "4"
+          },
+          "decimal": {
+            "fuel": 16.5,
+            "forms": 1.5,
+            "trials": 12.0,
+            "renewals": 11.0,
+            "captures": 11.0,
+            "changes": 0.5,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 1.0,
+            "total_spent": 36.5,
+            "spilled_source": 4.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "fixed": {
+          "exact": {
+            "fuel": "21/2",
+            "forms": "3/2",
+            "trials": "15/2",
+            "renewals": "6",
+            "captures": "6",
+            "changes": "0",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "1/2",
+            "total_spent": "45/2",
+            "spilled_source": "24"
+          },
+          "decimal": {
+            "fuel": 10.5,
+            "forms": 1.5,
+            "trials": 7.5,
+            "renewals": 6.0,
+            "captures": 6.0,
+            "changes": 0.0,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.5,
+            "total_spent": 22.5,
+            "spilled_source": 24.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "blind": {
+          "exact": {
+            "fuel": "479615/65536",
+            "forms": "134595/65536",
+            "trials": "121971/16384",
+            "renewals": "29783/8192",
+            "captures": "619209/131072",
+            "changes": "69059/131072",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "25703/65536",
+            "total_spent": "1348627/65536",
+            "spilled_source": "953655/32768"
+          },
+          "decimal": {
+            "fuel": 7.3183441162109375,
+            "forms": 2.0537567138671875,
+            "trials": 7.44451904296875,
+            "renewals": 3.6356201171875,
+            "captures": 4.724189758300781,
+            "changes": 0.5268783569335938,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.3921966552734375,
+            "total_spent": 20.578414916992188,
+            "spilled_source": 29.103240966796875
+          },
+          "state_counts_by_exposure": [
+            2,
+            8,
+            16,
+            34,
+            54,
+            98,
+            168,
+            270,
+            414,
+            632,
+            898,
+            1256,
+            1762
+          ]
+        }
+      }
+    },
+    "two_reversals": {
+      "law": {
+        "initial_fuel": 9,
+        "assembly": 1,
+        "trial": 2,
+        "renewal": 1,
+        "packet": 4,
+        "lifetime": 2,
+        "horizon": 12,
+        "reversals": [
+          4,
+          8
+        ],
+        "availability": "1"
+      },
+      "arms": {
+        "material": {
+          "exact": {
+            "fuel": "7/4",
+            "forms": "11/4",
+            "trials": "63/8",
+            "renewals": "15/4",
+            "captures": "15/4",
+            "changes": "7/8",
+            "post_captures": "5/4",
+            "p_post_capture": "3/8",
+            "p_capture_both_sides": "3/8",
+            "p_revision_witness": "1/4",
+            "p_ready": "1/4",
+            "total_spent": "89/4",
+            "spilled_source": "33"
+          },
+          "decimal": {
+            "fuel": 1.75,
+            "forms": 2.75,
+            "trials": 7.875,
+            "renewals": 3.75,
+            "captures": 3.75,
+            "changes": 0.875,
+            "post_captures": 1.25,
+            "p_post_capture": 0.375,
+            "p_capture_both_sides": 0.375,
+            "p_revision_witness": 0.25,
+            "p_ready": 0.25,
+            "total_spent": 22.25,
+            "spilled_source": 33.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            10,
+            10,
+            12,
+            12,
+            14,
+            14
+          ]
+        },
+        "automaton": {
+          "exact": {
+            "fuel": "7/4",
+            "forms": "11/4",
+            "trials": "63/8",
+            "renewals": "15/4",
+            "captures": "15/4",
+            "changes": "7/8",
+            "post_captures": "5/4",
+            "p_post_capture": "3/8",
+            "p_capture_both_sides": "3/8",
+            "p_revision_witness": "1/4",
+            "p_ready": "1/4",
+            "total_spent": "89/4",
+            "spilled_source": "33"
+          },
+          "decimal": {
+            "fuel": 1.75,
+            "forms": 2.75,
+            "trials": 7.875,
+            "renewals": 3.75,
+            "captures": 3.75,
+            "changes": 0.875,
+            "post_captures": 1.25,
+            "p_post_capture": 0.375,
+            "p_capture_both_sides": 0.375,
+            "p_revision_witness": 0.25,
+            "p_ready": 0.25,
+            "total_spent": 22.25,
+            "spilled_source": 33.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            10,
+            10,
+            12,
+            12,
+            14,
+            14
+          ]
+        },
+        "directed": {
+          "exact": {
+            "fuel": "3",
+            "forms": "3",
+            "trials": "9",
+            "renewals": "5",
+            "captures": "5",
+            "changes": "2",
+            "post_captures": "2",
+            "p_post_capture": "1/2",
+            "p_capture_both_sides": "1/2",
+            "p_revision_witness": "1/2",
+            "p_ready": "1/2",
+            "total_spent": "26",
+            "spilled_source": "28"
+          },
+          "decimal": {
+            "fuel": 3.0,
+            "forms": 3.0,
+            "trials": 9.0,
+            "renewals": 5.0,
+            "captures": 5.0,
+            "changes": 2.0,
+            "post_captures": 2.0,
+            "p_post_capture": 0.5,
+            "p_capture_both_sides": 0.5,
+            "p_revision_witness": 0.5,
+            "p_ready": 0.5,
+            "total_spent": 26.0,
+            "spilled_source": 28.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "fixed": {
+          "exact": {
+            "fuel": "7/2",
+            "forms": "5/2",
+            "trials": "15/2",
+            "renewals": "4",
+            "captures": "4",
+            "changes": "0",
+            "post_captures": "2",
+            "p_post_capture": "1/2",
+            "p_capture_both_sides": "1/2",
+            "p_revision_witness": "0",
+            "p_ready": "1/2",
+            "total_spent": "43/2",
+            "spilled_source": "32"
+          },
+          "decimal": {
+            "fuel": 3.5,
+            "forms": 2.5,
+            "trials": 7.5,
+            "renewals": 4.0,
+            "captures": 4.0,
+            "changes": 0.0,
+            "post_captures": 2.0,
+            "p_post_capture": 0.5,
+            "p_capture_both_sides": 0.5,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.5,
+            "total_spent": 21.5,
+            "spilled_source": 32.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "blind": {
+          "exact": {
+            "fuel": "202709/65536",
+            "forms": "134875/65536",
+            "trials": "243995/32768",
+            "renewals": "59507/16384",
+            "captures": "120221/32768",
+            "changes": "69339/131072",
+            "post_captures": "55709/32768",
+            "p_post_capture": "3725/8192",
+            "p_capture_both_sides": "3725/8192",
+            "p_revision_witness": "287/2048",
+            "p_ready": "10923/32768",
+            "total_spent": "1348883/65536",
+            "spilled_source": "272995/8192"
+          },
+          "decimal": {
+            "fuel": 3.0930938720703125,
+            "forms": 2.0580291748046875,
+            "trials": 7.446136474609375,
+            "renewals": 3.63201904296875,
+            "captures": 3.668853759765625,
+            "changes": 0.5290145874023438,
+            "post_captures": 1.700103759765625,
+            "p_post_capture": 0.4547119140625,
+            "p_capture_both_sides": 0.4547119140625,
+            "p_revision_witness": 0.14013671875,
+            "p_ready": 0.333343505859375,
+            "total_spent": 20.582321166992188,
+            "spilled_source": 33.3245849609375
+          },
+          "state_counts_by_exposure": [
+            2,
+            8,
+            16,
+            34,
+            54,
+            98,
+            172,
+            294,
+            488,
+            802,
+            1236,
+            1812,
+            2606
+          ]
+        }
+      }
+    },
+    "noisy_reversal": {
+      "law": {
+        "initial_fuel": 9,
+        "assembly": 1,
+        "trial": 2,
+        "renewal": 1,
+        "packet": 4,
+        "lifetime": 2,
+        "horizon": 12,
+        "reversals": [
+          4
+        ],
+        "availability": "3/4"
+      },
+      "arms": {
+        "material": {
+          "exact": {
+            "fuel": "128140699/67108864",
+            "forms": "302491/131072",
+            "trials": "111211869/16777216",
+            "renewals": "189577089/67108864",
+            "captures": "189577089/67108864",
+            "changes": "171419/262144",
+            "post_captures": "69252993/67108864",
+            "p_post_capture": "31059/131072",
+            "p_capture_both_sides": "31059/131072",
+            "p_revision_witness": "29907/131072",
+            "p_ready": "6480081/33554432",
+            "total_spent": "1234147433/67108864",
+            "spilled_source": "615729279/16777216"
+          },
+          "decimal": {
+            "fuel": 1.9094452112913132,
+            "forms": 2.3078231811523438,
+            "trials": 6.628743946552277,
+            "renewals": 2.8249187618494034,
+            "captures": 2.8249187618494034,
+            "changes": 0.6539115905761719,
+            "post_captures": 1.0319500118494034,
+            "p_post_capture": 0.23696136474609375,
+            "p_capture_both_sides": 0.23696136474609375,
+            "p_revision_witness": 0.22817230224609375,
+            "p_ready": 0.19312146306037903,
+            "total_spent": 18.3902298361063,
+            "spilled_source": 36.70032495260239
+          },
+          "state_counts_by_exposure": [
+            2,
+            6,
+            10,
+            22,
+            32,
+            40,
+            54,
+            78,
+            106,
+            142,
+            182,
+            232,
+            294
+          ]
+        },
+        "automaton": {
+          "exact": {
+            "fuel": "128140699/67108864",
+            "forms": "302491/131072",
+            "trials": "111211869/16777216",
+            "renewals": "189577089/67108864",
+            "captures": "189577089/67108864",
+            "changes": "171419/262144",
+            "post_captures": "69252993/67108864",
+            "p_post_capture": "31059/131072",
+            "p_capture_both_sides": "31059/131072",
+            "p_revision_witness": "29907/131072",
+            "p_ready": "6480081/33554432",
+            "total_spent": "1234147433/67108864",
+            "spilled_source": "615729279/16777216"
+          },
+          "decimal": {
+            "fuel": 1.9094452112913132,
+            "forms": 2.3078231811523438,
+            "trials": 6.628743946552277,
+            "renewals": 2.8249187618494034,
+            "captures": 2.8249187618494034,
+            "changes": 0.6539115905761719,
+            "post_captures": 1.0319500118494034,
+            "p_post_capture": 0.23696136474609375,
+            "p_capture_both_sides": 0.23696136474609375,
+            "p_revision_witness": 0.22817230224609375,
+            "p_ready": 0.19312146306037903,
+            "total_spent": 18.3902298361063,
+            "spilled_source": 36.70032495260239
+          },
+          "state_counts_by_exposure": [
+            2,
+            6,
+            10,
+            22,
+            32,
+            40,
+            54,
+            78,
+            106,
+            142,
+            182,
+            232,
+            294
+          ]
+        },
+        "directed": {
+          "exact": {
+            "fuel": "98210297/33554432",
+            "forms": "154139/65536",
+            "trials": "65321853/8388608",
+            "renewals": "132571467/33554432",
+            "captures": "132571467/33554432",
+            "changes": "88603/65536",
+            "post_captures": "62382411/33554432",
+            "p_post_capture": "1683/4096",
+            "p_capture_both_sides": "1683/4096",
+            "p_revision_witness": "1611/4096",
+            "p_ready": "5548419/16777216",
+            "total_spent": "734065459/33554432",
+            "spilled_source": "270081717/8388608"
+          },
+          "decimal": {
+            "fuel": 2.926894932985306,
+            "forms": 2.3519744873046875,
+            "trials": 7.786971688270569,
+            "renewals": 3.9509375989437103,
+            "captures": 3.9509375989437103,
+            "changes": 1.3519744873046875,
+            "post_captures": 1.8591407239437103,
+            "p_post_capture": 0.410888671875,
+            "p_capture_both_sides": 0.410888671875,
+            "p_revision_witness": 0.393310546875,
+            "p_ready": 0.3307115435600281,
+            "total_spent": 21.876855462789536,
+            "spilled_source": 32.19624960422516
+          },
+          "state_counts_by_exposure": [
+            2,
+            6,
+            10,
+            16,
+            24,
+            30,
+            40,
+            54,
+            78,
+            102,
+            128,
+            162,
+            198
+          ]
+        },
+        "fixed": {
+          "exact": {
+            "fuel": "157/256",
+            "forms": "1159/512",
+            "trials": "2715/512",
+            "renewals": "765/512",
+            "captures": "765/512",
+            "changes": "0",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "3677/256",
+            "spilled_source": "5379/128"
+          },
+          "decimal": {
+            "fuel": 0.61328125,
+            "forms": 2.263671875,
+            "trials": 5.302734375,
+            "renewals": 1.494140625,
+            "captures": 1.494140625,
+            "changes": 0.0,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 14.36328125,
+            "spilled_source": 42.0234375
+          },
+          "state_counts_by_exposure": [
+            2,
+            6,
+            10,
+            16,
+            22,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20,
+            20
+          ]
+        },
+        "blind": {
+          "exact": {
+            "fuel": "1550998186573/1099511627776",
+            "forms": "125846264059/68719476736",
+            "trials": "1616025934659/274877906944",
+            "renewals": "3082173387439/1099511627776",
+            "captures": "2419828656561/1099511627776",
+            "changes": "57126787323/137438953472",
+            "post_captures": "814450411953/1099511627776",
+            "p_post_capture": "3005603721/17179869184",
+            "p_capture_both_sides": "3005603721/17179869184",
+            "p_revision_witness": "953829009/8589934592",
+            "p_ready": "498575699307/4398046511104",
+            "total_spent": "18023921089655/1099511627776",
+            "spilled_source": "10774310876751/274877906944"
+          },
+          "decimal": {
+            "fuel": 1.4106246331475631,
+            "forms": 1.8313041663932381,
+            "trials": 5.879068102000019,
+            "renewals": 2.8032203658212893,
+            "captures": 2.2008213423405323,
+            "changes": 0.41565208319661906,
+            "post_captures": 0.7407383345280323,
+            "p_post_capture": 0.1749491622322239,
+            "p_capture_both_sides": 0.1749491622322239,
+            "p_revision_witness": 0.1110403110506013,
+            "p_ready": 0.11336298923811228,
+            "total_spent": 16.392660736214566,
+            "spilled_source": 39.19671463063787
+          },
+          "state_counts_by_exposure": [
+            2,
+            12,
+            32,
+            86,
+            152,
+            326,
+            642,
+            1170,
+            1920,
+            3050,
+            4466,
+            6424,
+            9042
+          ]
+        }
+      }
+    },
+    "reserve_3": {
+      "law": {
+        "initial_fuel": 3,
+        "assembly": 1,
+        "trial": 2,
+        "renewal": 1,
+        "packet": 4,
+        "lifetime": 2,
+        "horizon": 12,
+        "reversals": [
+          4
+        ],
+        "availability": "1"
+      },
+      "arms": {
+        "material": {
+          "exact": {
+            "fuel": "1/2",
+            "forms": "3/2",
+            "trials": "7/2",
+            "renewals": "2",
+            "captures": "2",
+            "changes": "1/4",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "21/2",
+            "spilled_source": "40"
+          },
+          "decimal": {
+            "fuel": 0.5,
+            "forms": 1.5,
+            "trials": 3.5,
+            "renewals": 2.0,
+            "captures": 2.0,
+            "changes": 0.25,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 10.5,
+            "spilled_source": 40.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "automaton": {
+          "exact": {
+            "fuel": "1/2",
+            "forms": "3/2",
+            "trials": "7/2",
+            "renewals": "2",
+            "captures": "2",
+            "changes": "1/4",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "21/2",
+            "spilled_source": "40"
+          },
+          "decimal": {
+            "fuel": 0.5,
+            "forms": 1.5,
+            "trials": 3.5,
+            "renewals": 2.0,
+            "captures": 2.0,
+            "changes": 0.25,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 10.5,
+            "spilled_source": 40.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "directed": {
+          "exact": {
+            "fuel": "1/2",
+            "forms": "3/2",
+            "trials": "7/2",
+            "renewals": "2",
+            "captures": "2",
+            "changes": "1/2",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "21/2",
+            "spilled_source": "40"
+          },
+          "decimal": {
+            "fuel": 0.5,
+            "forms": 1.5,
+            "trials": 3.5,
+            "renewals": 2.0,
+            "captures": 2.0,
+            "changes": 0.5,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 10.5,
+            "spilled_source": 40.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "fixed": {
+          "exact": {
+            "fuel": "1/2",
+            "forms": "3/2",
+            "trials": "7/2",
+            "renewals": "2",
+            "captures": "2",
+            "changes": "0",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "21/2",
+            "spilled_source": "40"
+          },
+          "decimal": {
+            "fuel": 0.5,
+            "forms": 1.5,
+            "trials": 3.5,
+            "renewals": 2.0,
+            "captures": 2.0,
+            "changes": 0.0,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 10.5,
+            "spilled_source": 40.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "blind": {
+          "exact": {
+            "fuel": "179741/131072",
+            "forms": "50825/32768",
+            "trials": "282773/65536",
+            "renewals": "237419/131072",
+            "captures": "2653/1024",
+            "changes": "18057/65536",
+            "post_captures": "765/1024",
+            "p_post_capture": "131/1024",
+            "p_capture_both_sides": "131/1024",
+            "p_revision_witness": "12775/131072",
+            "p_ready": "3319/32768",
+            "total_spent": "1571811/131072",
+            "spilled_source": "9635/256"
+          },
+          "decimal": {
+            "fuel": 1.3713150024414062,
+            "forms": 1.551055908203125,
+            "trials": 4.3147735595703125,
+            "renewals": 1.8113632202148438,
+            "captures": 2.5908203125,
+            "changes": 0.2755279541015625,
+            "post_captures": 0.7470703125,
+            "p_post_capture": 0.1279296875,
+            "p_capture_both_sides": 0.1279296875,
+            "p_revision_witness": 0.09746551513671875,
+            "p_ready": 0.101287841796875,
+            "total_spent": 11.991966247558594,
+            "spilled_source": 37.63671875
+          },
+          "state_counts_by_exposure": [
+            2,
+            6,
+            10,
+            20,
+            34,
+            60,
+            104,
+            168,
+            252,
+            374,
+            552,
+            776,
+            1072
+          ]
+        }
+      }
+    },
+    "reserve_6": {
+      "law": {
+        "initial_fuel": 6,
+        "assembly": 1,
+        "trial": 2,
+        "renewal": 1,
+        "packet": 4,
+        "lifetime": 2,
+        "horizon": 12,
+        "reversals": [
+          4
+        ],
+        "availability": "1"
+      },
+      "arms": {
+        "material": {
+          "exact": {
+            "fuel": "5/2",
+            "forms": "2",
+            "trials": "6",
+            "renewals": "7/2",
+            "captures": "7/2",
+            "changes": "1/2",
+            "post_captures": "3/2",
+            "p_post_capture": "1/4",
+            "p_capture_both_sides": "1/4",
+            "p_revision_witness": "1/4",
+            "p_ready": "1/4",
+            "total_spent": "35/2",
+            "spilled_source": "34"
+          },
+          "decimal": {
+            "fuel": 2.5,
+            "forms": 2.0,
+            "trials": 6.0,
+            "renewals": 3.5,
+            "captures": 3.5,
+            "changes": 0.5,
+            "post_captures": 1.5,
+            "p_post_capture": 0.25,
+            "p_capture_both_sides": 0.25,
+            "p_revision_witness": 0.25,
+            "p_ready": 0.25,
+            "total_spent": 17.5,
+            "spilled_source": 34.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "automaton": {
+          "exact": {
+            "fuel": "5/2",
+            "forms": "2",
+            "trials": "6",
+            "renewals": "7/2",
+            "captures": "7/2",
+            "changes": "1/2",
+            "post_captures": "3/2",
+            "p_post_capture": "1/4",
+            "p_capture_both_sides": "1/4",
+            "p_revision_witness": "1/4",
+            "p_ready": "1/4",
+            "total_spent": "35/2",
+            "spilled_source": "34"
+          },
+          "decimal": {
+            "fuel": 2.5,
+            "forms": 2.0,
+            "trials": 6.0,
+            "renewals": 3.5,
+            "captures": 3.5,
+            "changes": 0.5,
+            "post_captures": 1.5,
+            "p_post_capture": 0.25,
+            "p_capture_both_sides": 0.25,
+            "p_revision_witness": 0.25,
+            "p_ready": 0.25,
+            "total_spent": 17.5,
+            "spilled_source": 34.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "directed": {
+          "exact": {
+            "fuel": "5",
+            "forms": "2",
+            "trials": "7",
+            "renewals": "5",
+            "captures": "5",
+            "changes": "1",
+            "post_captures": "3",
+            "p_post_capture": "1/2",
+            "p_capture_both_sides": "1/2",
+            "p_revision_witness": "1/2",
+            "p_ready": "1/2",
+            "total_spent": "21",
+            "spilled_source": "28"
+          },
+          "decimal": {
+            "fuel": 5.0,
+            "forms": 2.0,
+            "trials": 7.0,
+            "renewals": 5.0,
+            "captures": 5.0,
+            "changes": 1.0,
+            "post_captures": 3.0,
+            "p_post_capture": 0.5,
+            "p_capture_both_sides": 0.5,
+            "p_revision_witness": 0.5,
+            "p_ready": 0.5,
+            "total_spent": 21.0,
+            "spilled_source": 28.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "fixed": {
+          "exact": {
+            "fuel": "0",
+            "forms": "2",
+            "trials": "5",
+            "renewals": "2",
+            "captures": "2",
+            "changes": "0",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "14",
+            "spilled_source": "40"
+          },
+          "decimal": {
+            "fuel": 0.0,
+            "forms": 2.0,
+            "trials": 5.0,
+            "renewals": 2.0,
+            "captures": 2.0,
+            "changes": 0.0,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 14.0,
+            "spilled_source": 40.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "blind": {
+          "exact": {
+            "fuel": "311501/131072",
+            "forms": "14847/8192",
+            "trials": "745875/131072",
+            "renewals": "348097/131072",
+            "captures": "400617/131072",
+            "changes": "6655/16384",
+            "post_captures": "158953/131072",
+            "p_post_capture": "433/2048",
+            "p_capture_both_sides": "433/2048",
+            "p_revision_witness": "1053/8192",
+            "p_ready": "11069/65536",
+            "total_spent": "2077399/131072",
+            "spilled_source": "1172247/32768"
+          },
+          "decimal": {
+            "fuel": 2.3765640258789062,
+            "forms": 1.8123779296875,
+            "trials": 5.690574645996094,
+            "renewals": 2.6557693481445312,
+            "captures": 3.0564651489257812,
+            "changes": 0.40618896484375,
+            "post_captures": 1.2127151489257812,
+            "p_post_capture": 0.21142578125,
+            "p_capture_both_sides": 0.21142578125,
+            "p_revision_witness": 0.1285400390625,
+            "p_ready": 0.1688995361328125,
+            "total_spent": 15.849296569824219,
+            "spilled_source": 35.774139404296875
+          },
+          "state_counts_by_exposure": [
+            2,
+            8,
+            14,
+            26,
+            42,
+            76,
+            132,
+            232,
+            382,
+            576,
+            838,
+            1226,
+            1698
+          ]
+        }
+      }
+    },
+    "reserve_12": {
+      "law": {
+        "initial_fuel": 12,
+        "assembly": 1,
+        "trial": 2,
+        "renewal": 1,
+        "packet": 4,
+        "lifetime": 2,
+        "horizon": 12,
+        "reversals": [
+          4
+        ],
+        "availability": "1"
+      },
+      "arms": {
+        "material": {
+          "exact": {
+            "fuel": "53/8",
+            "forms": "23/8",
+            "trials": "73/8",
+            "renewals": "21/4",
+            "captures": "21/4",
+            "changes": "15/16",
+            "post_captures": "11/4",
+            "p_post_capture": "1/2",
+            "p_capture_both_sides": "1/2",
+            "p_revision_witness": "1/2",
+            "p_ready": "1/2",
+            "total_spent": "211/8",
+            "spilled_source": "27"
+          },
+          "decimal": {
+            "fuel": 6.625,
+            "forms": 2.875,
+            "trials": 9.125,
+            "renewals": 5.25,
+            "captures": 5.25,
+            "changes": 0.9375,
+            "post_captures": 2.75,
+            "p_post_capture": 0.5,
+            "p_capture_both_sides": 0.5,
+            "p_revision_witness": 0.5,
+            "p_ready": 0.5,
+            "total_spent": 26.375,
+            "spilled_source": 27.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            8,
+            8,
+            12,
+            12,
+            14,
+            14,
+            16,
+            16
+          ]
+        },
+        "automaton": {
+          "exact": {
+            "fuel": "53/8",
+            "forms": "23/8",
+            "trials": "73/8",
+            "renewals": "21/4",
+            "captures": "21/4",
+            "changes": "15/16",
+            "post_captures": "11/4",
+            "p_post_capture": "1/2",
+            "p_capture_both_sides": "1/2",
+            "p_revision_witness": "1/2",
+            "p_ready": "1/2",
+            "total_spent": "211/8",
+            "spilled_source": "27"
+          },
+          "decimal": {
+            "fuel": 6.625,
+            "forms": 2.875,
+            "trials": 9.125,
+            "renewals": 5.25,
+            "captures": 5.25,
+            "changes": 0.9375,
+            "post_captures": 2.75,
+            "p_post_capture": 0.5,
+            "p_capture_both_sides": 0.5,
+            "p_revision_witness": 0.5,
+            "p_ready": 0.5,
+            "total_spent": 26.375,
+            "spilled_source": 27.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            8,
+            8,
+            12,
+            12,
+            14,
+            14,
+            16,
+            16
+          ]
+        },
+        "directed": {
+          "exact": {
+            "fuel": "25/2",
+            "forms": "5/2",
+            "trials": "12",
+            "renewals": "9",
+            "captures": "9",
+            "changes": "3/2",
+            "post_captures": "6",
+            "p_post_capture": "1",
+            "p_capture_both_sides": "1",
+            "p_revision_witness": "1",
+            "p_ready": "1",
+            "total_spent": "71/2",
+            "spilled_source": "12"
+          },
+          "decimal": {
+            "fuel": 12.5,
+            "forms": 2.5,
+            "trials": 12.0,
+            "renewals": 9.0,
+            "captures": 9.0,
+            "changes": 1.5,
+            "post_captures": 6.0,
+            "p_post_capture": 1.0,
+            "p_capture_both_sides": 1.0,
+            "p_revision_witness": 1.0,
+            "p_ready": 1.0,
+            "total_spent": 35.5,
+            "spilled_source": 12.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "fixed": {
+          "exact": {
+            "fuel": "1/2",
+            "forms": "7/2",
+            "trials": "7",
+            "renewals": "2",
+            "captures": "2",
+            "changes": "0",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "39/2",
+            "spilled_source": "40"
+          },
+          "decimal": {
+            "fuel": 0.5,
+            "forms": 3.5,
+            "trials": 7.0,
+            "renewals": 2.0,
+            "captures": 2.0,
+            "changes": 0.0,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 19.5,
+            "spilled_source": 40.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "blind": {
+          "exact": {
+            "fuel": "72459/16384",
+            "forms": "140489/65536",
+            "trials": "513293/65536",
+            "renewals": "251027/65536",
+            "captures": "460753/131072",
+            "changes": "74953/131072",
+            "post_captures": "198609/131072",
+            "p_post_capture": "18537/65536",
+            "p_capture_both_sides": "18537/65536",
+            "p_revision_witness": "1669/8192",
+            "p_ready": "34697/131072",
+            "total_spent": "709051/32768",
+            "spilled_source": "1112111/32768"
+          },
+          "decimal": {
+            "fuel": 4.42254638671875,
+            "forms": 2.1436920166015625,
+            "trials": 7.8322296142578125,
+            "renewals": 3.8303680419921875,
+            "captures": 3.5152664184570312,
+            "changes": 0.5718460083007812,
+            "post_captures": 1.5152664184570312,
+            "p_post_capture": 0.2828521728515625,
+            "p_capture_both_sides": 0.2828521728515625,
+            "p_revision_witness": 0.2037353515625,
+            "p_ready": 0.26471710205078125,
+            "total_spent": 21.638519287109375,
+            "spilled_source": 33.938934326171875
+          },
+          "state_counts_by_exposure": [
+            2,
+            8,
+            16,
+            36,
+            66,
+            116,
+            196,
+            346,
+            566,
+            910,
+            1418,
+            2060,
+            2924
+          ]
+        }
+      }
+    },
+    "assembly_2": {
+      "law": {
+        "initial_fuel": 9,
+        "assembly": 2,
+        "trial": 2,
+        "renewal": 1,
+        "packet": 4,
+        "lifetime": 2,
+        "horizon": 12,
+        "reversals": [
+          4
+        ],
+        "availability": "1"
+      },
+      "arms": {
+        "material": {
+          "exact": {
+            "fuel": "7/2",
+            "forms": "2",
+            "trials": "6",
+            "renewals": "7/2",
+            "captures": "7/2",
+            "changes": "1/2",
+            "post_captures": "3/2",
+            "p_post_capture": "1/4",
+            "p_capture_both_sides": "1/4",
+            "p_revision_witness": "1/4",
+            "p_ready": "1/4",
+            "total_spent": "39/2",
+            "spilled_source": "34"
+          },
+          "decimal": {
+            "fuel": 3.5,
+            "forms": 2.0,
+            "trials": 6.0,
+            "renewals": 3.5,
+            "captures": 3.5,
+            "changes": 0.5,
+            "post_captures": 1.5,
+            "p_post_capture": 0.25,
+            "p_capture_both_sides": 0.25,
+            "p_revision_witness": 0.25,
+            "p_ready": 0.25,
+            "total_spent": 19.5,
+            "spilled_source": 34.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "automaton": {
+          "exact": {
+            "fuel": "7/2",
+            "forms": "2",
+            "trials": "6",
+            "renewals": "7/2",
+            "captures": "7/2",
+            "changes": "1/2",
+            "post_captures": "3/2",
+            "p_post_capture": "1/4",
+            "p_capture_both_sides": "1/4",
+            "p_revision_witness": "1/4",
+            "p_ready": "1/4",
+            "total_spent": "39/2",
+            "spilled_source": "34"
+          },
+          "decimal": {
+            "fuel": 3.5,
+            "forms": 2.0,
+            "trials": 6.0,
+            "renewals": 3.5,
+            "captures": 3.5,
+            "changes": 0.5,
+            "post_captures": 1.5,
+            "p_post_capture": 0.25,
+            "p_capture_both_sides": 0.25,
+            "p_revision_witness": 0.25,
+            "p_ready": 0.25,
+            "total_spent": 19.5,
+            "spilled_source": 34.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "directed": {
+          "exact": {
+            "fuel": "6",
+            "forms": "2",
+            "trials": "7",
+            "renewals": "5",
+            "captures": "5",
+            "changes": "1",
+            "post_captures": "3",
+            "p_post_capture": "1/2",
+            "p_capture_both_sides": "1/2",
+            "p_revision_witness": "1/2",
+            "p_ready": "1/2",
+            "total_spent": "23",
+            "spilled_source": "28"
+          },
+          "decimal": {
+            "fuel": 6.0,
+            "forms": 2.0,
+            "trials": 7.0,
+            "renewals": 5.0,
+            "captures": 5.0,
+            "changes": 1.0,
+            "post_captures": 3.0,
+            "p_post_capture": 0.5,
+            "p_capture_both_sides": 0.5,
+            "p_revision_witness": 0.5,
+            "p_ready": 0.5,
+            "total_spent": 23.0,
+            "spilled_source": 28.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "fixed": {
+          "exact": {
+            "fuel": "1",
+            "forms": "2",
+            "trials": "5",
+            "renewals": "2",
+            "captures": "2",
+            "changes": "0",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "16",
+            "spilled_source": "40"
+          },
+          "decimal": {
+            "fuel": 1.0,
+            "forms": 2.0,
+            "trials": 5.0,
+            "renewals": 2.0,
+            "captures": 2.0,
+            "changes": 0.0,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 16.0,
+            "spilled_source": 40.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "blind": {
+          "exact": {
+            "fuel": "699305/262144",
+            "forms": "119055/65536",
+            "trials": "99209/16384",
+            "renewals": "748087/262144",
+            "captures": "401903/131072",
+            "changes": "53519/131072",
+            "post_captures": "160239/131072",
+            "p_post_capture": "439/2048",
+            "p_capture_both_sides": "439/2048",
+            "p_revision_witness": "8575/65536",
+            "p_ready": "21937/131072",
+            "total_spent": "4875215/262144",
+            "spilled_source": "1170961/32768"
+          },
+          "decimal": {
+            "fuel": 2.6676368713378906,
+            "forms": 1.8166351318359375,
+            "trials": 6.05523681640625,
+            "renewals": 2.8537254333496094,
+            "captures": 3.0662765502929688,
+            "changes": 0.40831756591796875,
+            "post_captures": 1.2225265502929688,
+            "p_post_capture": 0.21435546875,
+            "p_capture_both_sides": 0.21435546875,
+            "p_revision_witness": 0.1308441162109375,
+            "p_ready": 0.16736602783203125,
+            "total_spent": 18.597469329833984,
+            "spilled_source": 35.734893798828125
+          },
+          "state_counts_by_exposure": [
+            2,
+            8,
+            16,
+            28,
+            44,
+            78,
+            134,
+            234,
+            386,
+            582,
+            844,
+            1200,
+            1664
+          ]
+        }
+      }
+    },
+    "lifetime_1": {
+      "law": {
+        "initial_fuel": 9,
+        "assembly": 1,
+        "trial": 2,
+        "renewal": 1,
+        "packet": 4,
+        "lifetime": 1,
+        "horizon": 12,
+        "reversals": [
+          4
+        ],
+        "availability": "1"
+      },
+      "arms": {
+        "material": {
+          "exact": {
+            "fuel": "65/8",
+            "forms": "51/16",
+            "trials": "151/16",
+            "renewals": "113/16",
+            "captures": "113/16",
+            "changes": "35/32",
+            "post_captures": "65/16",
+            "p_post_capture": "5/8",
+            "p_capture_both_sides": "5/8",
+            "p_revision_witness": "5/8",
+            "p_ready": "5/8",
+            "total_spent": "233/8",
+            "spilled_source": "79/4"
+          },
+          "decimal": {
+            "fuel": 8.125,
+            "forms": 3.1875,
+            "trials": 9.4375,
+            "renewals": 7.0625,
+            "captures": 7.0625,
+            "changes": 1.09375,
+            "post_captures": 4.0625,
+            "p_post_capture": 0.625,
+            "p_capture_both_sides": 0.625,
+            "p_revision_witness": 0.625,
+            "p_ready": 0.625,
+            "total_spent": 29.125,
+            "spilled_source": 19.75
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            6,
+            8,
+            8,
+            8,
+            14,
+            18,
+            20,
+            22,
+            22,
+            22,
+            22
+          ]
+        },
+        "automaton": {
+          "exact": {
+            "fuel": "65/8",
+            "forms": "51/16",
+            "trials": "151/16",
+            "renewals": "113/16",
+            "captures": "113/16",
+            "changes": "35/32",
+            "post_captures": "65/16",
+            "p_post_capture": "5/8",
+            "p_capture_both_sides": "5/8",
+            "p_revision_witness": "5/8",
+            "p_ready": "5/8",
+            "total_spent": "233/8",
+            "spilled_source": "79/4"
+          },
+          "decimal": {
+            "fuel": 8.125,
+            "forms": 3.1875,
+            "trials": 9.4375,
+            "renewals": 7.0625,
+            "captures": 7.0625,
+            "changes": 1.09375,
+            "post_captures": 4.0625,
+            "p_post_capture": 0.625,
+            "p_capture_both_sides": 0.625,
+            "p_revision_witness": 0.625,
+            "p_ready": 0.625,
+            "total_spent": 29.125,
+            "spilled_source": 19.75
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            6,
+            8,
+            8,
+            8,
+            14,
+            18,
+            20,
+            22,
+            22,
+            22,
+            22
+          ]
+        },
+        "directed": {
+          "exact": {
+            "fuel": "14",
+            "forms": "5/2",
+            "trials": "12",
+            "renewals": "21/2",
+            "captures": "21/2",
+            "changes": "3/2",
+            "post_captures": "7",
+            "p_post_capture": "1",
+            "p_capture_both_sides": "1",
+            "p_revision_witness": "1",
+            "p_ready": "1",
+            "total_spent": "37",
+            "spilled_source": "6"
+          },
+          "decimal": {
+            "fuel": 14.0,
+            "forms": 2.5,
+            "trials": 12.0,
+            "renewals": 10.5,
+            "captures": 10.5,
+            "changes": 1.5,
+            "post_captures": 7.0,
+            "p_post_capture": 1.0,
+            "p_capture_both_sides": 1.0,
+            "p_revision_witness": 1.0,
+            "p_ready": 1.0,
+            "total_spent": 37.0,
+            "spilled_source": 6.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "fixed": {
+          "exact": {
+            "fuel": "0",
+            "forms": "4",
+            "trials": "11/2",
+            "renewals": "2",
+            "captures": "2",
+            "changes": "0",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "17",
+            "spilled_source": "40"
+          },
+          "decimal": {
+            "fuel": 0.0,
+            "forms": 4.0,
+            "trials": 5.5,
+            "renewals": 2.0,
+            "captures": 2.0,
+            "changes": 0.0,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 17.0,
+            "spilled_source": 40.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "blind": {
+          "exact": {
+            "fuel": "4480495/2097152",
+            "forms": "8591269/2097152",
+            "trials": "7147877/1048576",
+            "renewals": "3367381/1048576",
+            "captures": "14761833/4194304",
+            "changes": "6494117/4194304",
+            "post_captures": "6668137/4194304",
+            "p_post_capture": "12253/32768",
+            "p_capture_both_sides": "12253/32768",
+            "p_revision_witness": "2378329/8388608",
+            "p_ready": "207207/1048576",
+            "total_spent": "43917539/2097152",
+            "spilled_source": "35569815/1048576"
+          },
+          "decimal": {
+            "fuel": 2.1364665031433105,
+            "forms": 4.0966362953186035,
+            "trials": 6.816746711730957,
+            "renewals": 3.2113847732543945,
+            "captures": 3.5194952487945557,
+            "changes": 1.5483181476593018,
+            "post_captures": 1.5898077487945557,
+            "p_post_capture": 0.373931884765625,
+            "p_capture_both_sides": 0.373931884765625,
+            "p_revision_witness": 0.28351891040802,
+            "p_ready": 0.19760799407958984,
+            "total_spent": 20.941514492034912,
+            "spilled_source": 33.92201900482178
+          },
+          "state_counts_by_exposure": [
+            2,
+            8,
+            24,
+            58,
+            122,
+            262,
+            502,
+            844,
+            1320,
+            1892,
+            2544,
+            3416,
+            4392
+          ]
+        }
+      }
+    },
+    "lifetime_3": {
+      "law": {
+        "initial_fuel": 9,
+        "assembly": 1,
+        "trial": 2,
+        "renewal": 1,
+        "packet": 4,
+        "lifetime": 3,
+        "horizon": 12,
+        "reversals": [
+          4
+        ],
+        "availability": "1"
+      },
+      "arms": {
+        "material": {
+          "exact": {
+            "fuel": "13/4",
+            "forms": "2",
+            "trials": "27/4",
+            "renewals": "13/4",
+            "captures": "13/4",
+            "changes": "1/2",
+            "post_captures": "5/4",
+            "p_post_capture": "1/4",
+            "p_capture_both_sides": "1/4",
+            "p_revision_witness": "1/4",
+            "p_ready": "1/4",
+            "total_spent": "75/4",
+            "spilled_source": "35"
+          },
+          "decimal": {
+            "fuel": 3.25,
+            "forms": 2.0,
+            "trials": 6.75,
+            "renewals": 3.25,
+            "captures": 3.25,
+            "changes": 0.5,
+            "post_captures": 1.25,
+            "p_post_capture": 0.25,
+            "p_capture_both_sides": 0.25,
+            "p_revision_witness": 0.25,
+            "p_ready": 0.25,
+            "total_spent": 18.75,
+            "spilled_source": 35.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "automaton": {
+          "exact": {
+            "fuel": "13/4",
+            "forms": "2",
+            "trials": "27/4",
+            "renewals": "13/4",
+            "captures": "13/4",
+            "changes": "1/2",
+            "post_captures": "5/4",
+            "p_post_capture": "1/4",
+            "p_capture_both_sides": "1/4",
+            "p_revision_witness": "1/4",
+            "p_ready": "1/4",
+            "total_spent": "75/4",
+            "spilled_source": "35"
+          },
+          "decimal": {
+            "fuel": 3.25,
+            "forms": 2.0,
+            "trials": 6.75,
+            "renewals": 3.25,
+            "captures": 3.25,
+            "changes": 0.5,
+            "post_captures": 1.25,
+            "p_post_capture": 0.25,
+            "p_capture_both_sides": 0.25,
+            "p_revision_witness": 0.25,
+            "p_ready": 0.25,
+            "total_spent": 18.75,
+            "spilled_source": 35.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "directed": {
+          "exact": {
+            "fuel": "11/2",
+            "forms": "2",
+            "trials": "15/2",
+            "renewals": "9/2",
+            "captures": "9/2",
+            "changes": "1",
+            "post_captures": "5/2",
+            "p_post_capture": "1/2",
+            "p_capture_both_sides": "1/2",
+            "p_revision_witness": "1/2",
+            "p_ready": "1/2",
+            "total_spent": "43/2",
+            "spilled_source": "30"
+          },
+          "decimal": {
+            "fuel": 5.5,
+            "forms": 2.0,
+            "trials": 7.5,
+            "renewals": 4.5,
+            "captures": 4.5,
+            "changes": 1.0,
+            "post_captures": 2.5,
+            "p_post_capture": 0.5,
+            "p_capture_both_sides": 0.5,
+            "p_revision_witness": 0.5,
+            "p_ready": 0.5,
+            "total_spent": 21.5,
+            "spilled_source": 30.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "fixed": {
+          "exact": {
+            "fuel": "1",
+            "forms": "2",
+            "trials": "6",
+            "renewals": "2",
+            "captures": "2",
+            "changes": "0",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "16",
+            "spilled_source": "40"
+          },
+          "decimal": {
+            "fuel": 1.0,
+            "forms": 2.0,
+            "trials": 6.0,
+            "renewals": 2.0,
+            "captures": 2.0,
+            "changes": 0.0,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 16.0,
+            "spilled_source": 40.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "blind": {
+          "exact": {
+            "fuel": "76827/32768",
+            "forms": "22175/16384",
+            "trials": "52741/8192",
+            "renewals": "101031/32768",
+            "captures": "43653/16384",
+            "changes": "5791/32768",
+            "post_captures": "11397/16384",
+            "p_post_capture": "957/8192",
+            "p_capture_both_sides": "957/8192",
+            "p_revision_witness": "11/128",
+            "p_ready": "3765/32768",
+            "total_spent": "567309/32768",
+            "spilled_source": "152955/4096"
+          },
+          "decimal": {
+            "fuel": 2.344573974609375,
+            "forms": 1.35345458984375,
+            "trials": 6.4381103515625,
+            "renewals": 3.083221435546875,
+            "captures": 2.66436767578125,
+            "changes": 0.176727294921875,
+            "post_captures": 0.69561767578125,
+            "p_post_capture": 0.1168212890625,
+            "p_capture_both_sides": 0.1168212890625,
+            "p_revision_witness": 0.0859375,
+            "p_ready": 0.114898681640625,
+            "total_spent": 17.312896728515625,
+            "spilled_source": 37.342529296875
+          },
+          "state_counts_by_exposure": [
+            2,
+            8,
+            16,
+            26,
+            40,
+            58,
+            88,
+            140,
+            222,
+            346,
+            512,
+            728,
+            1024
+          ]
+        }
+      }
+    },
+    "yield_3": {
+      "law": {
+        "initial_fuel": 9,
+        "assembly": 1,
+        "trial": 2,
+        "renewal": 1,
+        "packet": 3,
+        "lifetime": 2,
+        "horizon": 12,
+        "reversals": [
+          4
+        ],
+        "availability": "1"
+      },
+      "arms": {
+        "material": {
+          "exact": {
+            "fuel": "3/2",
+            "forms": "2",
+            "trials": "27/4",
+            "renewals": "4",
+            "captures": "4",
+            "changes": "1/2",
+            "post_captures": "3/2",
+            "p_post_capture": "1/4",
+            "p_capture_both_sides": "1/4",
+            "p_revision_witness": "1/4",
+            "p_ready": "1/4",
+            "total_spent": "39/2",
+            "spilled_source": "24"
+          },
+          "decimal": {
+            "fuel": 1.5,
+            "forms": 2.0,
+            "trials": 6.75,
+            "renewals": 4.0,
+            "captures": 4.0,
+            "changes": 0.5,
+            "post_captures": 1.5,
+            "p_post_capture": 0.25,
+            "p_capture_both_sides": 0.25,
+            "p_revision_witness": 0.25,
+            "p_ready": 0.25,
+            "total_spent": 19.5,
+            "spilled_source": 24.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "automaton": {
+          "exact": {
+            "fuel": "3/2",
+            "forms": "2",
+            "trials": "27/4",
+            "renewals": "4",
+            "captures": "4",
+            "changes": "1/2",
+            "post_captures": "3/2",
+            "p_post_capture": "1/4",
+            "p_capture_both_sides": "1/4",
+            "p_revision_witness": "1/4",
+            "p_ready": "1/4",
+            "total_spent": "39/2",
+            "spilled_source": "24"
+          },
+          "decimal": {
+            "fuel": 1.5,
+            "forms": 2.0,
+            "trials": 6.75,
+            "renewals": 4.0,
+            "captures": 4.0,
+            "changes": 0.5,
+            "post_captures": 1.5,
+            "p_post_capture": 0.25,
+            "p_capture_both_sides": 0.25,
+            "p_revision_witness": 0.25,
+            "p_ready": 0.25,
+            "total_spent": 19.5,
+            "spilled_source": 24.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            6,
+            6,
+            6,
+            6,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        "directed": {
+          "exact": {
+            "fuel": "2",
+            "forms": "2",
+            "trials": "17/2",
+            "renewals": "6",
+            "captures": "6",
+            "changes": "1",
+            "post_captures": "3",
+            "p_post_capture": "1/2",
+            "p_capture_both_sides": "1/2",
+            "p_revision_witness": "1/2",
+            "p_ready": "1/2",
+            "total_spent": "25",
+            "spilled_source": "18"
+          },
+          "decimal": {
+            "fuel": 2.0,
+            "forms": 2.0,
+            "trials": 8.5,
+            "renewals": 6.0,
+            "captures": 6.0,
+            "changes": 1.0,
+            "post_captures": 3.0,
+            "p_post_capture": 0.5,
+            "p_capture_both_sides": 0.5,
+            "p_revision_witness": 0.5,
+            "p_ready": 0.5,
+            "total_spent": 25.0,
+            "spilled_source": 18.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "fixed": {
+          "exact": {
+            "fuel": "1",
+            "forms": "2",
+            "trials": "5",
+            "renewals": "2",
+            "captures": "2",
+            "changes": "0",
+            "post_captures": "0",
+            "p_post_capture": "0",
+            "p_capture_both_sides": "0",
+            "p_revision_witness": "0",
+            "p_ready": "0",
+            "total_spent": "14",
+            "spilled_source": "30"
+          },
+          "decimal": {
+            "fuel": 1.0,
+            "forms": 2.0,
+            "trials": 5.0,
+            "renewals": 2.0,
+            "captures": 2.0,
+            "changes": 0.0,
+            "post_captures": 0.0,
+            "p_post_capture": 0.0,
+            "p_capture_both_sides": 0.0,
+            "p_revision_witness": 0.0,
+            "p_ready": 0.0,
+            "total_spent": 14.0,
+            "spilled_source": 30.0
+          },
+          "state_counts_by_exposure": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "blind": {
+          "exact": {
+            "fuel": "180815/131072",
+            "forms": "61203/32768",
+            "trials": "789/128",
+            "renewals": "48227/16384",
+            "captures": "415889/131072",
+            "changes": "28435/65536",
+            "post_captures": "157841/131072",
+            "p_post_capture": "425/2048",
+            "p_capture_both_sides": "425/2048",
+            "p_revision_witness": "16135/131072",
+            "p_ready": "38007/262144",
+            "total_spent": "561625/32768",
+            "spilled_source": "3470925/131072"
+          },
+          "decimal": {
+            "fuel": 1.3795089721679688,
+            "forms": 1.867767333984375,
+            "trials": 6.1640625,
+            "renewals": 2.94354248046875,
+            "captures": 3.1729812622070312,
+            "changes": 0.4338836669921875,
+            "post_captures": 1.2042312622070312,
+            "p_post_capture": 0.20751953125,
+            "p_capture_both_sides": 0.20751953125,
+            "p_revision_witness": 0.12310028076171875,
+            "p_ready": 0.14498519897460938,
+            "total_spent": 17.139434814453125,
+            "spilled_source": 26.481056213378906
+          },
+          "state_counts_by_exposure": [
+            2,
+            8,
+            16,
+            34,
+            54,
+            98,
+            158,
+            266,
+            410,
+            612,
+            886,
+            1230,
+            1662
+          ]
+        }
+      }
+    }
+  },
+  "recovery_diagnostics": {
+    "count": 945,
+    "rows": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        0,
+        3,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        0,
+        6,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        0,
+        9,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        1,
+        3,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        1,
+        6,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        1,
+        9,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        2,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        2,
+        3,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        2,
+        6,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        2,
+        9,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        3,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        3,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        3,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        3,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        3,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        4,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        4,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        4,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        4,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        4,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        5,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        5,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        5,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        5,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        5,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        6,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        6,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        6,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        0,
+        6,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        0,
+        6,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        0,
+        7,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        7,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        7,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        0,
+        7,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        0,
+        7,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        0,
+        8,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        8,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        8,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        0,
+        8,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        0,
+        8,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        0,
+        9,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        9,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        9,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        9,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        9,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        10,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        10,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        10,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        10,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        10,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        11,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        11,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        11,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        11,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        11,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        12,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        12,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        12,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        12,
+        6,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        0,
+        12,
+        9,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        0,
+        13,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        13,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        13,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        13,
+        6,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        0,
+        13,
+        9,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        0,
+        14,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        14,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        14,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        14,
+        6,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        0,
+        14,
+        9,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        0,
+        15,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        15,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        15,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        15,
+        6,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        0,
+        15,
+        9,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        0,
+        16,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        16,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        16,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        16,
+        6,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        0,
+        16,
+        9,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        0,
+        17,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        17,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        17,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        17,
+        6,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        0,
+        17,
+        9,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        0,
+        18,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        18,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        18,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        18,
+        6,
+        6,
+        "63/64"
+      ],
+      [
+        1,
+        0,
+        18,
+        9,
+        6,
+        "63/64"
+      ],
+      [
+        1,
+        0,
+        19,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        19,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        19,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        19,
+        6,
+        6,
+        "63/64"
+      ],
+      [
+        1,
+        0,
+        19,
+        9,
+        6,
+        "63/64"
+      ],
+      [
+        1,
+        0,
+        20,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        0,
+        20,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        0,
+        20,
+        3,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        0,
+        20,
+        6,
+        6,
+        "63/64"
+      ],
+      [
+        1,
+        0,
+        20,
+        9,
+        6,
+        "63/64"
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        0,
+        3,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        0,
+        6,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        0,
+        9,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        1,
+        3,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        1,
+        6,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        1,
+        9,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        2,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        2,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        2,
+        3,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        2,
+        6,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        2,
+        9,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        3,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        3,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        3,
+        3,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        3,
+        6,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        3,
+        9,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        4,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        4,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        4,
+        3,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        4,
+        6,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        4,
+        9,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        5,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        5,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        5,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        1,
+        5,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        1,
+        5,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        1,
+        6,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        6,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        6,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        1,
+        6,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        1,
+        6,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        1,
+        7,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        7,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        7,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        1,
+        7,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        1,
+        7,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        1,
+        1,
+        8,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        8,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        8,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        8,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        8,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        9,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        9,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        9,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        9,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        9,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        10,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        10,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        10,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        10,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        10,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        11,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        11,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        11,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        11,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        1,
+        11,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        1,
+        12,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        12,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        12,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        12,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        1,
+        12,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        1,
+        13,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        13,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        13,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        13,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        1,
+        13,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        1,
+        1,
+        14,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        14,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        14,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        14,
+        6,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        1,
+        14,
+        9,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        1,
+        15,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        15,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        15,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        15,
+        6,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        1,
+        15,
+        9,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        1,
+        16,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        16,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        16,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        16,
+        6,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        1,
+        16,
+        9,
+        4,
+        "15/16"
+      ],
+      [
+        1,
+        1,
+        17,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        17,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        17,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        17,
+        6,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        1,
+        17,
+        9,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        1,
+        18,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        18,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        18,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        18,
+        6,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        1,
+        18,
+        9,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        1,
+        19,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        19,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        19,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        19,
+        6,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        1,
+        19,
+        9,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        1,
+        20,
+        0,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        20,
+        1,
+        0,
+        "0"
+      ],
+      [
+        1,
+        1,
+        20,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        1,
+        1,
+        20,
+        6,
+        5,
+        "31/32"
+      ],
+      [
+        1,
+        1,
+        20,
+        9,
+        6,
+        "63/64"
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        0,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        0,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        0,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        0,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        1,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        1,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        1,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        1,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        1,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        2,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        2,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        2,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        2,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        2,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        3,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        3,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        3,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        3,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        3,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        4,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        4,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        4,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        4,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        4,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        5,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        5,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        5,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        5,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        5,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        6,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        6,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        6,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        6,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        6,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        7,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        7,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        7,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        7,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        7,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        8,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        8,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        8,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        8,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        8,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        9,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        9,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        9,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        9,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        9,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        10,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        10,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        10,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        10,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        10,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        11,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        11,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        11,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        11,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        11,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        12,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        12,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        12,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        12,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        12,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        13,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        13,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        13,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        13,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        13,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        14,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        14,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        14,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        14,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        14,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        15,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        15,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        15,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        15,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        15,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        16,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        16,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        16,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        16,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        16,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        17,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        17,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        17,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        17,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        17,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        18,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        18,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        18,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        18,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        18,
+        9,
+        4,
+        "15/16"
+      ],
+      [
+        2,
+        0,
+        19,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        19,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        19,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        19,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        19,
+        9,
+        4,
+        "15/16"
+      ],
+      [
+        2,
+        0,
+        20,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        0,
+        20,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        0,
+        20,
+        3,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        0,
+        20,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        0,
+        20,
+        9,
+        4,
+        "15/16"
+      ],
+      [
+        2,
+        1,
+        0,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        0,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        0,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        0,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        0,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        1,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        1,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        1,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        1,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        1,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        2,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        2,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        2,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        2,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        2,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        3,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        3,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        3,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        3,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        3,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        4,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        4,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        4,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        4,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        4,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        5,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        5,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        5,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        5,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        5,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        6,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        6,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        6,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        6,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        6,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        7,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        7,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        7,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        7,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        7,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        8,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        8,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        8,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        8,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        8,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        9,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        9,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        9,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        9,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        9,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        10,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        10,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        10,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        10,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        1,
+        10,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        1,
+        11,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        11,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        11,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        11,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        1,
+        11,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        1,
+        12,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        12,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        12,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        12,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        1,
+        12,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        1,
+        13,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        13,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        13,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        13,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        1,
+        13,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        1,
+        14,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        14,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        14,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        14,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        1,
+        14,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        1,
+        15,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        15,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        15,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        15,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        1,
+        15,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        1,
+        16,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        16,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        16,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        16,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        1,
+        16,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        1,
+        17,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        17,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        17,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        17,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        1,
+        17,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        1,
+        18,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        18,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        18,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        18,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        1,
+        18,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        1,
+        19,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        19,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        19,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        19,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        1,
+        19,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        1,
+        20,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        20,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        1,
+        20,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        1,
+        20,
+        6,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        1,
+        20,
+        9,
+        4,
+        "15/16"
+      ],
+      [
+        2,
+        2,
+        0,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        0,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        0,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        0,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        0,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        1,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        1,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        1,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        1,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        1,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        2,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        2,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        2,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        2,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        2,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        3,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        3,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        3,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        3,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        3,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        4,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        4,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        4,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        4,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        4,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        5,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        5,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        5,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        5,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        5,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        6,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        6,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        6,
+        3,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        6,
+        6,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        6,
+        9,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        7,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        7,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        7,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        7,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        7,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        8,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        8,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        8,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        8,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        8,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        9,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        9,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        9,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        9,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        9,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        10,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        10,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        10,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        10,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        10,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        11,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        11,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        11,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        11,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        11,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        12,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        12,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        12,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        12,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        12,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        13,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        13,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        13,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        13,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        13,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        14,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        14,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        14,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        14,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        14,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        15,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        15,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        15,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        15,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        15,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        16,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        16,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        16,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        16,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        16,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        17,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        17,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        17,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        17,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        17,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        2,
+        18,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        18,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        18,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        18,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        18,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        2,
+        19,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        19,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        19,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        19,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        19,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        2,
+        2,
+        20,
+        0,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        20,
+        1,
+        0,
+        "0"
+      ],
+      [
+        2,
+        2,
+        20,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        2,
+        2,
+        20,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        2,
+        2,
+        20,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        0,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        0,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        0,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        0,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        1,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        1,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        1,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        1,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        1,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        2,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        2,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        2,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        2,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        2,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        3,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        3,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        3,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        3,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        3,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        4,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        4,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        4,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        4,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        4,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        5,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        5,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        5,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        5,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        5,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        6,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        6,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        6,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        6,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        6,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        7,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        7,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        7,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        7,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        7,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        8,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        8,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        8,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        8,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        8,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        9,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        9,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        9,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        9,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        9,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        10,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        10,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        10,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        10,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        10,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        11,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        11,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        11,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        11,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        11,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        12,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        12,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        12,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        12,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        12,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        13,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        13,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        13,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        13,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        13,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        14,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        14,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        14,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        14,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        14,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        15,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        15,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        15,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        15,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        15,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        16,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        16,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        16,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        16,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        16,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        17,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        17,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        17,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        17,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        17,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        3,
+        0,
+        18,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        18,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        18,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        18,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        18,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        3,
+        0,
+        19,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        19,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        19,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        19,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        19,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        3,
+        0,
+        20,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        0,
+        20,
+        1,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        20,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        0,
+        20,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        0,
+        20,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        3,
+        1,
+        0,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        0,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        0,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        0,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        0,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        1,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        1,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        1,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        1,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        1,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        2,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        2,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        2,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        2,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        2,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        3,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        3,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        3,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        3,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        3,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        4,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        4,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        4,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        4,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        4,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        5,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        5,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        5,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        5,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        5,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        6,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        6,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        6,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        6,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        6,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        7,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        7,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        7,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        7,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        7,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        8,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        8,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        8,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        8,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        8,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        9,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        9,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        9,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        9,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        9,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        10,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        10,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        10,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        10,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        10,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        11,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        11,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        11,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        11,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        11,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        12,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        12,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        12,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        12,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        12,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        13,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        13,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        13,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        13,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        13,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        14,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        14,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        14,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        14,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        14,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        15,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        15,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        15,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        15,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        15,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        16,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        16,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        16,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        16,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        16,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        17,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        17,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        17,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        17,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        17,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        18,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        18,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        18,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        18,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        18,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        19,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        19,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        19,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        19,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        19,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        3,
+        1,
+        20,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        20,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        1,
+        20,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        1,
+        20,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        1,
+        20,
+        9,
+        3,
+        "7/8"
+      ],
+      [
+        3,
+        2,
+        0,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        0,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        0,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        0,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        0,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        1,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        1,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        1,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        1,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        1,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        2,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        2,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        2,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        2,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        2,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        3,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        3,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        3,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        3,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        3,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        4,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        4,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        4,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        4,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        4,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        5,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        5,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        5,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        5,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        5,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        6,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        6,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        6,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        6,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        6,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        7,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        7,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        7,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        7,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        7,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        8,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        8,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        8,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        8,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        8,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        9,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        9,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        9,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        9,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        9,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        10,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        10,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        10,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        10,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        10,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        11,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        11,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        11,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        11,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        11,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        12,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        12,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        12,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        12,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        12,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        13,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        13,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        13,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        13,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        13,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        14,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        14,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        14,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        14,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        14,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        15,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        15,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        15,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        15,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        15,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        16,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        16,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        16,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        16,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        16,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        17,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        17,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        17,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        17,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        17,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        18,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        18,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        18,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        18,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        18,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        19,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        19,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        19,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        19,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        19,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        20,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        20,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        2,
+        20,
+        3,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        2,
+        20,
+        6,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        2,
+        20,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        3,
+        0,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        0,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        0,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        0,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        0,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        1,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        1,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        1,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        1,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        1,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        2,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        2,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        2,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        2,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        2,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        3,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        3,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        3,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        3,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        3,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        4,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        4,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        4,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        4,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        4,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        5,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        5,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        5,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        5,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        5,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        6,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        6,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        6,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        6,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        6,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        7,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        7,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        7,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        7,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        7,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        8,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        8,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        8,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        8,
+        6,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        8,
+        9,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        9,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        9,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        9,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        9,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        9,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        10,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        10,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        10,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        10,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        10,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        11,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        11,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        11,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        11,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        11,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        12,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        12,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        12,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        12,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        12,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        13,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        13,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        13,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        13,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        13,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        14,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        14,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        14,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        14,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        14,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        15,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        15,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        15,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        15,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        15,
+        9,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        16,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        16,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        16,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        16,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        16,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        3,
+        17,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        17,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        17,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        17,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        17,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        3,
+        18,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        18,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        18,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        18,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        18,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        3,
+        19,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        19,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        19,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        19,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        19,
+        9,
+        2,
+        "3/4"
+      ],
+      [
+        3,
+        3,
+        20,
+        0,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        20,
+        1,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        20,
+        3,
+        0,
+        "0"
+      ],
+      [
+        3,
+        3,
+        20,
+        6,
+        1,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        20,
+        9,
+        2,
+        "3/4"
+      ]
+    ]
+  },
+  "scope": "finite declared model; no empirical identification or historical priority"
+}

@@ -1,0 +1,99 @@
+{
+  "checked_at_utc": "2026-10-05T19:01:10.693340+00:00",
+  "status": "passed",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_binary": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "e590fa1fda0f20f2c4414a007761c218f1aea0c777a36aa57764a67eaae11547",
+  "source_unchanged_during_check": true,
+  "fresh_temporary_build": true,
+  "project_objects_only_from_frozen_sources": true,
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "role": "existing root dependency",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "GenerativeCore.olean",
+        "GenerativeCore.lean"
+      ],
+      "exit_code": 0,
+      "clean_dependency_audit": true,
+      "audited_declarations": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "dependency_audits": 18,
+      "axioms": [],
+      "output": "verification/GenerativeCore.txt",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "SelectorRevision",
+      "source": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean",
+      "source_sha256": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a",
+      "role": "new formalization",
+      "command": [
+        "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+        "-o",
+        "SelectorRevision.olean",
+        "SelectorRevision.lean"
+      ],
+      "exit_code": 0,
+      "clean_dependency_audit": true,
+      "audited_declarations": [
+        "SelectorRevision.response_matches_iff",
+        "SelectorRevision.commands_do_not_read_regime",
+        "SelectorRevision.step_energy_ledger",
+        "SelectorRevision.trace_energy_ledger",
+        "SelectorRevision.trial_preserves_selector",
+        "SelectorRevision.renewal_inherits_selector",
+        "SelectorRevision.failed_trial_wears_selector",
+        "SelectorRevision.changed_selector_requires_paid_assembly",
+        "SelectorRevision.reversal_preserves_actual_resources_and_selector",
+        "SelectorRevision.trace_composition_uses_actual_state",
+        "SelectorRevision.revised_selector_witness",
+        "SelectorRevision.witness_changes_response_mapping",
+        "SelectorRevision.paid_ledger",
+        "SelectorRevision.paid_exists_iff",
+        "SelectorRevision.failure_cost_sum",
+        "SelectorRevision.recovery_cost_sum",
+        "SelectorRevision.recovery_prefix_affordable_iff",
+        "SelectorRevision.no_recovery_below_first_cost",
+        "SelectorRevision.each_failed_candidate_adds_full_block",
+        "SelectorRevision.each_failed_candidate_adds_lifetime_trials",
+        "SelectorRevision.source_horizon_obstruction"
+      ],
+      "dependency_audits": 21,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "output": "verification/SelectorRevision.txt",
+      "output_sha256": "8be9f06f8e3931ccfdf0095fbb71c2af4021bd44fe3fadd2101ff57fb22275cc"
+    }
+  ],
+  "new_audited_declarations": 21,
+  "scope": "A supplied continuing-compartment selector event law; actual fuel/source ledger, hidden-regime command independence, paid selector change, inheritance, reversal without reset and direct use of the relational causal root. Exact pre-return payment-prefix threshold and candidate-block cost/trial increments. No probabilistic recovery theorem, Python refinement, empirical identification, evolution of the assembly/renewal architecture, concern or universal explanatory sufficiency."
+}
