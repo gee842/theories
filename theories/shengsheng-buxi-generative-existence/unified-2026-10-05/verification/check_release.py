@@ -6,6 +6,10 @@ Run from the package directory:
 For a downloaded copy without the source repository:
     python3 verification/check_release.py --local-only
 
+To exclude other sessions' untracked drafts in the canonical repository:
+    python3 verification/check_release.py --repository /path/to/theories --tracked-only
+This checks working-copy contents of index-tracked documents, including staged additions.
+
 This checks packaging and provenance, not mathematical truth or rendered layout.
 """
 
@@ -26,13 +30,26 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repository", type=Path)
     parser.add_argument("--local-only", action="store_true")
+    parser.add_argument("--tracked-only", action="store_true")
     args = parser.parse_args()
     package = Path(__file__).resolve().parent.parent
+    markdown_paths = sorted(package.rglob("*.md"))
+    excluded_documents = []
+    if args.tracked_only:
+        if not args.repository or args.local_only:
+            parser.error("--tracked-only requires --repository and cannot accompany --local-only")
+        repo = args.repository.resolve()
+        if not package.is_relative_to(repo):
+            parser.error("--tracked-only requires the canonical package inside the repository")
+        tracked = subprocess.check_output(["git", "ls-files", "-z"], cwd=repo).decode().split("\0")
+        tracked_paths = {repo / path for path in tracked if path}
+        excluded_documents = [path.relative_to(package).as_posix() for path in markdown_paths if path not in tracked_paths]
+        markdown_paths = [path for path in markdown_paths if path in tracked_paths]
     errors = []
     link_count = 0
     skipped = 0
     documents = {}
-    for path in sorted(package.rglob("*.md")):
+    for path in markdown_paths:
         body = path.read_text()
         # The authored package uses simple inline links; no reference-style links.
         for raw in re.findall(r"\[[^\]\n]*\]\(([^\)\n]+)\)", body):
@@ -71,6 +88,8 @@ def main():
     historical_text_preserved = None
     formal_review_matches = None
     formation_review_matches = None
+    joint_review_matches = None
+    joint_model_review_matches = None
     if args.repository:
         repo = args.repository.resolve()
         source = repo / "sources/20-codex-theory-sessions-2026-10-05"
@@ -111,10 +130,28 @@ def main():
             formation_review_matches = sha256(formation_path) == reviewed_hash
             if not formation_review_matches:
                 errors.append("Formation appendix differs from its accepted review version")
+        joint_path = package / "JOINT-FORMATION-MATH.md"
+        if joint_path.exists():
+            process = repo / "_process/research/2026-10-05-unified-theory/development-02"
+            review = (process / "formal-review-final.md").read_text()
+            reviewed_hash = re.search(r"Final reviewed SHA-256: `([a-f0-9]{64})`", review).group(1)
+            joint_review_matches = sha256(joint_path) == reviewed_hash
+            if not joint_review_matches:
+                errors.append("Joint-formation appendix differs from its accepted review version")
+            model = package / "joint-study/model.py"
+            if not model.exists():
+                model = repo / "experiments/joint-formation/model.py"
+            review = (process / "independent-game-review.md").read_text()
+            reviewed_hash = re.search(r"Production SHA-256: `([a-f0-9]{64})`", review).group(1)
+            joint_model_review_matches = sha256(model) == reviewed_hash
+            if not joint_model_review_matches:
+                errors.append("Joint-game implementation differs from its independently reviewed version")
 
     result = {
         "status": "passed" if not errors else "failed",
         "scope": "Local links, balanced math delimiters, editorial markers, result/source labels, and optional source provenance; no rendering or theorem-prover validation.",
+        "document_selection": "Index-tracked Markdown, working-copy contents" if args.tracked_only else "All package Markdown, working-copy contents",
+        "excluded_untracked_documents": excluded_documents,
         "documents": documents,
         "local_links_checked": link_count,
         "external_local_links_skipped": skipped,
@@ -124,6 +161,8 @@ def main():
         "historical_canonical_text_preserved": historical_text_preserved,
         "formal_review_version_matches": formal_review_matches,
         "formation_review_version_matches": formation_review_matches,
+        "joint_formation_review_version_matches": joint_review_matches,
+        "joint_model_review_version_matches": joint_model_review_matches,
         "errors": errors,
     }
     output = package / "verification/release-checks.json"

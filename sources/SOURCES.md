@@ -1511,3 +1511,8 @@ Added 2026-10-05: [Revising the scope of concern](15-codex-theory-conversations/
 ## Repository reconciliation of recent research
 
 Added 5 October 2026: [source record 22](22-research-reconciliation-2026-10-05/README.md) preserves missing supporting work, later wisdom studies, review and delivery history, and a dated snapshot of ongoing development. Its manifest maps the inspected external files to exact repository copies and records exclusions. The [current research index](../RESEARCH.md) is the common reading and working entry point. This consolidation repairs storage and navigation; it does not supply new scientific evidence or change the status of unfinished studies.
+
+
+## Joint formation and renewal
+
+Added 5 October 2026: [source record 23](23-joint-formation-2026-10-05/README.md) preserves Ren's request to solve the central joint-formation challenge. The [joint study](../experiments/joint-formation/README.md) and canonical theory now supply a selected paid reconstruction process beginning with zero current learned concern and apparatus, protecting a patient with no own productive leverage. Its final proof includes dated decision-maker incentives, off-path bounds, finite induction, an infinite discounted equilibrium, and a sufficient destructive-raid bound. Exact computation, independent reconstruction, reviews, and failure countermodels are preserved separately. This is a conditional resolution, not empirical prevalence or a universal ethical-direction theorem.

@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "stationary_sensor_and_bypass_cases": 8,
+  "rejected_constant_cue_cases": 4,
+  "post_calibration_drift_counterexamples": [
+    {
+      "calibration_polarity": 0,
+      "later_polarity": 1,
+      "actual_hazard": 1,
+      "admitted": true
+    },
+    {
+      "calibration_polarity": 1,
+      "later_polarity": 0,
+      "actual_hazard": 1,
+      "admitted": true
+    }
+  ],
+  "self_data_architecture_ambiguities": 3,
+  "cheap_precommitment_comparisons": 24,
+  "witness_precommitment": {
+    "R": 8,
+    "a": 2,
+    "D": 3,
+    "free_commitment_gain": 6,
+    "shared_protective_gain": 3
+  },
+  "scope": "Finite identification/refinement and expanded-choice countermodels. No unknown-distribution reliability guarantee; not part of the primary grid."
+}

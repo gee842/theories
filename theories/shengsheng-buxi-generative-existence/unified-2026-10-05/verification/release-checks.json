@@ -1,18 +1,23 @@
 {
   "status": "passed",
   "scope": "Local links, balanced math delimiters, editorial markers, result/source labels, and optional source provenance; no rendering or theorem-prover validation.",
+  "document_selection": "Index-tracked Markdown, working-copy contents",
+  "excluded_untracked_documents": [
+    "COMPLETION-PLAN.md",
+    "FORMAL-SPECIFICATION.md"
+  ],
   "documents": {
     "CLAIMS.md": {
-      "bytes": 10954,
-      "sha256": "f7391a10da90fb34dc207d0438080789f164d81cabf52538b2b5055eaab7ba88"
+      "bytes": 12097,
+      "sha256": "7a54ba767f1338cab94b6fee97ed6afa42c2de05a46a69f9d6590289fdbca533"
     },
     "CONCERN-AND-CORRECTION.md": {
-      "bytes": 12408,
-      "sha256": "548e21f9623d859c2e4fdb6871f1c1021c5e8512307ff645af28ced9e313daaf"
+      "bytes": 12932,
+      "sha256": "bc648844956b8b4be29d805a8c23c9f0fb9d525d7a14a43493e9e8c074ab09fc"
     },
     "ETHICAL-FOUNDATION.md": {
-      "bytes": 18790,
-      "sha256": "fdcd0ed4b11ba28fe4c1ec9160fbfef7bcf232ebf8e53897c640a6b59b40f155"
+      "bytes": 18694,
+      "sha256": "0d732c91ee98c8a2292a2efaec9dd2c82e6e22ed403c13e345128963a35238e5"
     },
     "FORMAL-CORE.md": {
       "bytes": 39100,
@@ -23,31 +28,47 @@
       "sha256": "c65410ed0daf160c49c477efc16c7ed7bf0d1adf41983b77a9f852751ecf7ecf"
     },
     "FORMATION-PRIOR-ART.md": {
-      "bytes": 17695,
-      "sha256": "3f70a1662bdf36684b10582bdcded71a38aed6a630c29480083fecdf0cbdeb8c"
+      "bytes": 17640,
+      "sha256": "911e3ed7c9ecc07579a26db6882b5e0cf70f74173881d40a6f9b8aea19588060"
     },
     "FORMATION.md": {
       "bytes": 15873,
       "sha256": "c9d53de40de77bfd3164a716b576400bfc9cd7d3a7e217d4e6f2302d29cc93cc"
     },
+    "JOINT-FORMATION-MATH.md": {
+      "bytes": 25619,
+      "sha256": "78588893049559c99f82c7886c3e9edc87e45209b48a6b90d0eba616fcfdb949"
+    },
+    "JOINT-FORMATION.md": {
+      "bytes": 17318,
+      "sha256": "eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145"
+    },
+    "JOINT-OBSTRUCTIONS.md": {
+      "bytes": 17305,
+      "sha256": "563c720e9327fb48197631e36b1ee97fdc2e4990c147d9da3c5582de67994ee9"
+    },
+    "JOINT-PRIOR-ART.md": {
+      "bytes": 14871,
+      "sha256": "a5232b7055bb0ee459df822a7ad2f1d6f059f3f35f0851da9a428ecdc4a5799f"
+    },
     "SOURCE-MAP.md": {
-      "bytes": 35293,
-      "sha256": "9ffe1f9ab6371ee5d55c67d6d5a1a6ce2511e4dc94b1529b6d6a95906e1394f0"
+      "bytes": 39160,
+      "sha256": "9c421e24c1a5502124ea6b76f93e1dec5c9f066088848c131cb30bf48c6aa3fc"
     },
     "START-HERE.md": {
-      "bytes": 7128,
-      "sha256": "d00eb65c9dfd1e1204bb4e3ad9eea3a478c935c7e67dc69ce133bf57c471e553"
+      "bytes": 8159,
+      "sha256": "0b413725d34f4e0da3944d924acf587b09fc01858322ad51e7bd2381780d4e52"
     },
     "SYNTHESIS-RECORD.md": {
-      "bytes": 17579,
-      "sha256": "2d37d7b3b0f9c225d84a6f933c141b3f28d5f8562819ba19e2219f4fca7a1869"
+      "bytes": 20000,
+      "sha256": "0a7b6d653a2511e01c9669d3c0c9f9ca9832b4d11c082764350ae7d31a4815f3"
     },
     "THEORY.md": {
-      "bytes": 44167,
-      "sha256": "3ec5f541455320f920e940cdfe0e0947c96b9600a6ca442d7a776db05990a3ae"
+      "bytes": 46208,
+      "sha256": "c1c3bd1c474d92ddb8a7af4eae527453130e84c1aa0dfd59047b61caec1ad4a3"
     }
   },
-  "local_links_checked": 229,
+  "local_links_checked": 270,
   "external_local_links_skipped": 0,
   "formal_result_labels": [
     "F1",
@@ -66,7 +87,7 @@
     "F2a",
     "F2b"
   ],
-  "source_families": 19,
+  "source_families": 22,
   "snapshots": [
     {
       "manifest": "sources/20-codex-theory-sessions-2026-10-05/SNAPSHOT-MANIFEST.json",
@@ -84,5 +105,7 @@
   "historical_canonical_text_preserved": true,
   "formal_review_version_matches": true,
   "formation_review_version_matches": true,
+  "joint_formation_review_version_matches": true,
+  "joint_model_review_version_matches": true,
   "errors": []
 }

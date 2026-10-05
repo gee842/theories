@@ -35,7 +35,9 @@ The diagram is a proposed causal structure. Each arrow needs a mechanism in an a
 
 **Effective protection can arise from actual choices.** A completed new model lets a participant build an alternative and lets the operator choose whether to protect or obstruct them. It derives protection from credible refusal under specified physical and strategic conditions. A persistent operator can nevertheless block once to remove the participant's future operating money. The exact two-period result separates the reserve needed to begin from the reserve needed to remove that attack. [Read the new development](FORMATION.md).
 
-**Concern can be learned, yet learning and power need to work together.** The parallel concern theory derives learned valuation and recognition from zero under explicit teaching and shared-routing premises. A new one-period interface proves that concern and a credible alternative can jointly induce protection when neither alone suffices. With imperfect safeguards, stronger concern can instead favor harmless exit. Their joint formation and renewal remain the next dynamical problem. [Read the connection and revised roadmap](CONCERN-AND-CORRECTION.md).
+**Concern can be learned, yet learning and power need to work together.** The parallel concern theory derives learned valuation and recognition from zero under explicit teaching and shared-routing premises. A new one-period interface proves that concern and a credible alternative can jointly induce protection when neither alone suffices. With imperfect safeguards, stronger concern can instead favor harmless exit. Development 2 now supplies a [joint paid reconstruction process](JOINT-FORMATION.md), with an equilibrium proof and explicit failure regions. [Read the connection and revised roadmap](CONCERN-AND-CORRECTION.md).
+
+**The components can form and renew together in a declared strategic class.** Initially zero concern, chosen useful learning, truthful inspection, input control, and shared resources now coexist in one process. Fresh controllers pay to rebuild them; a persistent opponent optimally safeguards. Cheap ways to suppress concern, disable its effect, or destroy the next learning budget can instead sustain harm. The [new proof](JOINT-FORMATION-MATH.md) establishes conditional existence and renewal, not natural prevalence or universal moral progress.
 
 **Understanding depends on consequential distinctions.** An aggregate can hide exactly the difference that determines the necessary response. More reasoning over unchanged information cannot always fix this. A new question, measurement, relation, tool, or institutional route may be needed. Complete knowledge is unnecessary when all remaining possibilities share a good action.
 
@@ -56,6 +58,7 @@ The stronger hypothesis—that reality generally develops increasingly shared an
 ## How to read the completed synthesis
 
 - [Unified theory](THEORY.md): the full argument, the connections among sessions, and the precise frontier.
+- [Joint formation and renewal](JOINT-FORMATION.md), with [proof](JOINT-FORMATION-MATH.md): the completed response to the central joint-formation challenge.
 - [Formation and strategic correction](FORMATION.md), with [new proofs](FORMATION-MATH.md): the first completed development beyond the original synthesis.
 - [Concern and correction](CONCERN-AND-CORRECTION.md): the connection to learned concern, its exact action conditions, and the revised research route.
 - [Formal core](FORMAL-CORE.md): definitions, proofs, constructions, counterexamples, and scope conditions.

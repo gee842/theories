@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "protocol_commit": "8a5bf6f",
+  "timing_clarification_commit": "5f40dc0",
+  "parameter_cases": 1944,
+  "primary_runs": 3888,
+  "reversed_tie_runs": 1944,
+  "persistent_lower_harm": 0,
+  "persistent_equal_harm": 1944,
+  "persistent_higher_harm": 0,
+  "reversed_ties_changed_summary": 504,
+  "persistent_all_episodes_safe_and_productive": 48,
+  "fresh_all_episodes_safe_and_productive": 48,
+  "named_cases": 15,
+  "named_runs": 30,
+  "elapsed_seconds": 2.51,
+  "reused_complete_grid_after_count_correction": true,
+  "scope": "Exact finite games and selected-path cash checks; not empirical evidence or an indefinite proof."
+}

@@ -2,6 +2,8 @@
 
 ## Current unified foundation
 
+**Formalization-led completion, 5 October 2026:** the [common specification](unified-2026-10-05/FORMAL-SPECIFICATION.md) and [practical completion plan](unified-2026-10-05/COMPLETION-PLAN.md) make the physical-to-capability-to-direction bridges explicit. The [integration record](../../_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md) preserves separate evidence statuses and tracks active contributions. A complete specification is the first gate; the stronger positive universal goal remains unresolved.
+
 The [current research index](../../RESEARCH.md) connects all recent branches, their repository homes, and their evidence status. It is the starting point for work completed after the synthesis below.
 
 **Current synthesis, 5 October 2026.** The latest sessions are integrated in [Relational generativity and the conditions of wisdom](unified-2026-10-05/THEORY.md), with a [short reading guide](unified-2026-10-05/START-HERE.md), [formal core](unified-2026-10-05/FORMAL-CORE.md), [claim register](unified-2026-10-05/CLAIMS.md), and [source map](unified-2026-10-05/SOURCE-MAP.md). This section governs the current interpretation where earlier formulations below differ.
@@ -35,6 +37,12 @@ The effective concern coefficient now forms as the product of learned significan
 This is model-relative closure, not a completed universal science of concern: efficacy revision is implemented, while the origin and revision of feature repertoires, evaluative routing, ethical scope, and authority remain broader explanatory tasks. Five primary research sources provide limited anchors; the [claim register](../../_process/research/2026-10-05-concern-theory/CLAIMS.md), [review and checks](../../_process/research/2026-10-05-concern-theory/RESEARCH-RECORD.md), and [source record](../../sources/15-codex-theory-conversations/2026-10-05-formation-and-renewal-of-concern.md) preserve scope, provenance, and remaining questions. A universal tendency toward wiser, more inclusive regeneration remains open.
 
 The [new concern–correction bridge](unified-2026-10-05/CONCERN-AND-CORRECTION.md) integrates this parallel branch into the current synthesis. It derives the conditions under which learned concern and an active participant-controlled alternative jointly induce protection, while retaining harmless exit as a distinct response to inadequate safeguards. Joint developmental closure under strategic interference remains the next research step.
+
+## Current joint formation and renewal
+
+The [joint-formation theory](unified-2026-10-05/JOINT-FORMATION.md) now gives a constructive conditional solution to the previously central challenge. A controller initially assigning no learned value to the patient chooses useful learning while anticipating its later care expenditure; shared learning competes with deliberate identity gating. It then pays for genuine inspection and physical input control, and a persistent operator optimally safeguards. A shared reserve funds complete reconstruction by fresh controllers. The [formal proof](unified-2026-10-05/JOINT-FORMATION-MATH.md) covers all dated decision makers, finite games, and an infinite discounted equilibrium; the [experiment](../../experiments/joint-formation/README.md) retains independent reconstruction and exact failure cases.
+
+The patient supplies no useful input or reciprocal return. Continued protection nevertheless depends on a given account/input-control role, useful learning opportunity, justified feature relation, physical repertoire, and adequate costs of capture and self-insulation. Free identity filtering, cheap forced-open commitment, or recurring attacks on the learning budget can defeat the mechanism. This resolves one joint-existence and renewal problem while rejecting an automatic universal direction toward concern. The model does not derive moral standing from any actor's acquired coefficient.
 
 ## Current formation of effective correction
 

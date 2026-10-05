@@ -23,7 +23,7 @@ The [current research index](../RESEARCH.md) connects these experiments to the d
 |---|---|
 | [Integrated correction](integrated-correction/README.md) | Earlier models of funded, informed and effective correction; component results retain their own assumptions. |
 | [Constructed correction](constructed-correction/README.md) | Completed conditional study of built alternatives, selected protection and strategic depletion of future operating funds. |
-| [Joint formation protocol](joint-formation/PROTOCOL.md) | Ongoing study of learned concern, constructed inspection and control, and strategic interference. A protocol or partial run is not a completed finding; consult the study directory for later results. |
+| [Joint formation and renewal](joint-formation/README.md) | Completed conditional equilibrium construction joining chosen learning, paid inspection/control, shared cash, persistent interference, and fresh reconstruction; proofs, exact countermodels and independent checks retained. |
 
 ## Related research experiments
 
