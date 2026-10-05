@@ -8,6 +8,8 @@ Current edition includes Development 2: a conditional solution for the joint for
 
 ## 1 The foundation
 
+**Governing research position:** [generative grounding](GENERATIVE-GROUNDING.md) now makes the intended universal scope explicit: explain system formation, significance, learning and their divergent regimes from minimal properties of system-forming reality. The positive anchors and learning architectures supplied in local theorems are further explanatory targets of this foundation. This clarification changes the direction of further derivation; it does not retroactively enlarge the scope of the proofs below.
+
 A process can change the conditions through which further processes become possible. Some of those changes replenish a support, establish a new relationship, reveal a consequential difference, or leave a successor able to act. Others consume the support, obstruct the relationship, conceal the difference, or leave a successor with an unusable inheritance. The object of explanation is the evolving situation containing these relations, including the centers that perceive and act within it.
 
 The strongest common foundation supported by the work is therefore:
