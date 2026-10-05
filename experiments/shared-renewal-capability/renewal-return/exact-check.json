@@ -1,0 +1,650 @@
+{
+  "all_autonomous_return_paths_from_damaged_entry_upper_bound": "1/72",
+  "checker_sha256": "f8d57d4ae13a9e94114c9ab0b2c2a2e982035c7a2c9eea3aea6d8a62f69e38b8",
+  "damaged_entry": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+  ],
+  "entry": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1
+  ],
+  "entry_from_S_by_time_3_lower_bound": "2209/24576",
+  "event_source_sha256": "421a1bb9b5bd8cdd1e85d4cc5f35381fc94a60869794bb2143ef9b1471873363",
+  "immediate_irrecoverable_Y_loss_probability_at_entry": "1/149",
+  "macro_by_time_4_certified_lower_bound": "743736579615/21073460084905409060302542477719502848",
+  "macro_event_counts": {
+    "C_wear": 1,
+    "G_wear": 1,
+    "Y_wear": 1,
+    "build": 1,
+    "capture": 4,
+    "recycle": 3
+  },
+  "macro_lower_bound_approximate_display_only": 3.5292570684570536e-26,
+  "macro_unrestricted_time_selected_probability": "743736579615/321555482252584977116432838099968",
+  "method": "Exact selected-path probabilities and accounting, using the accepted event implementation",
+  "paths": {
+    "C_repair": {
+      "approximate_display_only": 1.4320330841479742e-10,
+      "steps": [
+        {
+          "event": "C_wear",
+          "from": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "selected_rate": "1",
+          "to": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "total_hazard": "149",
+          "work_change": -1
+        },
+        {
+          "event": "unbind_Y",
+          "from": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "selected_rate": "1",
+          "to": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "total_hazard": "144",
+          "work_change": 0
+        },
+        {
+          "event": "recycle_Y",
+          "from": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "selected_rate": "4",
+          "to": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "total_hazard": "159340",
+          "work_change": 0
+        },
+        {
+          "event": "bind_Y",
+          "from": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "selected_rate": "159189",
+          "to": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "total_hazard": "162576",
+          "work_change": 0
+        },
+        {
+          "event": "assemble",
+          "from": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "selected_rate": "1",
+          "to": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "total_hazard": "4",
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "from": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "selected_rate": "4",
+          "to": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "total_hazard": "8",
+          "work_change": 1
+        }
+      ],
+      "unrestricted_time_path_probability": "47/328204707840"
+    },
+    "G_repair": {
+      "approximate_display_only": 2.900163461924232e-06,
+      "steps": [
+        {
+          "event": "YG_G_wear",
+          "from": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "selected_rate": "1",
+          "to": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "total_hazard": "149",
+          "work_change": -1
+        },
+        {
+          "event": "capture",
+          "from": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "selected_rate": "4",
+          "to": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            0,
+            0,
+            0
+          ],
+          "total_hazard": "152",
+          "work_change": 1
+        },
+        {
+          "event": "recycle",
+          "from": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            0,
+            0,
+            0
+          ],
+          "selected_rate": "10",
+          "to": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "total_hazard": "298",
+          "work_change": 0
+        },
+        {
+          "event": "build",
+          "from": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "selected_rate": "162432",
+          "to": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "total_hazard": "165964",
+          "work_change": -1
+        },
+        {
+          "event": "bind_Y",
+          "from": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "selected_rate": "159189",
+          "to": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "total_hazard": "159196",
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "from": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "selected_rate": "4",
+          "to": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "total_hazard": "8",
+          "work_change": 1
+        }
+      ],
+      "unrestricted_time_path_probability": "2020108410/696549845042071"
+    },
+    "Y_succession": {
+      "approximate_display_only": 1.6151399978026038e-11,
+      "steps": [
+        {
+          "event": "YG_G_wear",
+          "from": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "selected_rate": "1",
+          "to": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "total_hazard": "149",
+          "work_change": -1
+        },
+        {
+          "event": "recycle",
+          "from": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "selected_rate": "5",
+          "to": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_hazard": "152",
+          "work_change": 0
+        },
+        {
+          "event": "reproduce",
+          "from": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_rate": "3384",
+          "to": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_hazard": "3391",
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "from": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_rate": "4",
+          "to": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "total_hazard": "7",
+          "work_change": 1
+        },
+        {
+          "event": "old_Y_wear",
+          "from": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "selected_rate": "1",
+          "to": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "total_hazard": "148",
+          "work_change": -1
+        },
+        {
+          "event": "recycle",
+          "from": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "selected_rate": "5",
+          "to": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_hazard": "152",
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "from": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "selected_rate": "4",
+          "to": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "total_hazard": "3391",
+          "work_change": 1
+        },
+        {
+          "event": "build",
+          "from": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "selected_rate": "162432",
+          "to": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "total_hazard": "165964",
+          "work_change": -1
+        },
+        {
+          "event": "bind_Y",
+          "from": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "selected_rate": "159189",
+          "to": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "total_hazard": "159196",
+          "work_change": 0
+        },
+        {
+          "event": "capture",
+          "from": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "selected_rate": "4",
+          "to": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "total_hazard": "8",
+          "work_change": 1
+        }
+      ],
+      "unrestricted_time_path_probability": "4272529287150/264529966006833571633379"
+    }
+  },
+  "rates": {
+    "a": 1,
+    "alpha": 4,
+    "b": 1,
+    "beta": 3384,
+    "d": 1,
+    "delta": 1,
+    "ell": 141,
+    "g": 4,
+    "k": 1,
+    "kappa": 162432,
+    "mu": 159189,
+    "nu": 1,
+    "rho": 1,
+    "theta": 4
+  },
+  "scope": "Positive finite return certificates, not likely or perpetual renewal. The 847 ratio compares the specified C path, not all repair trajectories. Four packets is a minimum in the declared work ledger, not calibrated thermodynamics.",
+  "selected_C_repair_zeta_0_to_1_probability_ratio": "847",
+  "status": "passed"
+}

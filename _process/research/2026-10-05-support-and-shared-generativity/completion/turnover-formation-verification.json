@@ -1,0 +1,99 @@
+{
+  "created_at_utc": "2026-10-05T12:54:37.505812+00:00",
+  "type": "Integration, preservation, links and saved-result provenance; no scientific rerun",
+  "repository_head_before_snapshot": "348d82644a92315a0ea415a9edc44708e27ad516",
+  "goal_status": "active; common physical realization, useful retention, physical identification and broad direction remain open",
+  "local_links_checked": 284,
+  "missing_local_links": [],
+  "frozen_allocation_hashes_match": true,
+  "frozen_allocation_hashes": {
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/ALLOCATION-CONTROL.md": "93ba1c7d550d64b3176e34c1826ae45889b0a68907e33d0c766825273be7f60b",
+    "experiments/shared-renewal-capability/allocation/exact_check.py": "421a1bb9b5bd8cdd1e85d4cc5f35381fc94a60869794bb2143ef9b1471873363",
+    "experiments/shared-renewal-capability/allocation/exact-check.json": "3dcc31aeb217407dc3fcf8d77cbf7c45548bbd2f56f9aab23ae8a764a550d9d4"
+  },
+  "reviewed_source_hashes_match": true,
+  "reviewed_source_hashes": {
+    "RENEWAL-RETURN.md": "8c72623e2cb4d4cc11ae944ef8fbefeb25e5b002187f0e7544670cfd13db827c",
+    "ARCHITECTURE-FORMATION-CRITIQUE.md": "d20d3284cb2afe84884d567c7d39efe1b3a360fee9375b2158c8116fc7e50362",
+    "THERMODYNAMIC-EMBEDDING.md": "77eefb42eddb97b76ef4e6d3335d732a2e84874e415d5d2323b47c40638312b8",
+    "DIRECTION-AND-TURNOVER.md": "7c819e13ff39c2c42e602946a498cc159e943bccd985444839e8724b3d97fe20"
+  },
+  "architecture_review_delta": "One added paragraph on analyst labels and paid physical readout was independently checked; deleting its exact bytes reproduces prior reviewed hash eb70c5490487f72c3b10016d4a0a6f1c9bd94ec8d0cc77d23d36d035a9f5bac4. No mathematics changed.",
+  "result_provenance_checks": [
+    {
+      "result": "renewal-return/exact-check.json",
+      "checker_hash_matches": true,
+      "frozen_event_source_hash_matches": true
+    },
+    {
+      "result": "thermo-embedding/exact-check.json",
+      "checker_hash_matches": true,
+      "protocol_hash_matches": true
+    }
+  ],
+  "accepted_return_result": {
+    "status": "passed",
+    "macro_event_counts": {
+      "C_wear": 1,
+      "G_wear": 1,
+      "Y_wear": 1,
+      "build": 1,
+      "capture": 4,
+      "recycle": 3
+    },
+    "macro_by_time_4_certified_lower_bound": "743736579615/21073460084905409060302542477719502848",
+    "all_autonomous_return_paths_from_damaged_entry_upper_bound": "1/72",
+    "selected_C_repair_zeta_0_to_1_probability_ratio": "847"
+  },
+  "accepted_thermodynamic_result": {
+    "status": "all exact assertions passed",
+    "finite_state_count": 512,
+    "reaction_pairs": 16,
+    "local_detailed_balance_edges_checked": 1915,
+    "pre_capture_states_checked_per_arm": 96,
+    "perturbed_absent_strict_upper": {
+      "exact": "189961/2764800",
+      "decimal_for_reading": 0.06870695891203704
+    },
+    "perturbed_gate_strict_lower": {
+      "exact": "51769/460800",
+      "decimal_for_reading": 0.11234592013888889
+    },
+    "perturbed_gap_strict_lower": {
+      "exact": "120653/2764800",
+      "decimal_for_reading": 0.043638961226851854
+    }
+  },
+  "architecture_result": "Symbolic single-law finite-rate branch comparison and adverse local frequency drift; no numerical experiment claimed",
+  "review_scope": "Independent AI analytic reviews, code/results inspected where present; no external peer review or empirical validation",
+  "composition_limits": [
+    "Turnover uses N=3 and original irreversible source law.",
+    "Material fabricators use N=4 and supplied finite repertoire.",
+    "Thermodynamic extension has one finite source carrier and transfers only the first-forward-capture event.",
+    "Useful delivery does not establish useful retention."
+  ],
+  "artifact_sha256": {
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/RENEWAL-RETURN.md": "8c72623e2cb4d4cc11ae944ef8fbefeb25e5b002187f0e7544670cfd13db827c",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/RENEWAL-RETURN-REVIEW.md": "5eba9f7273973dc154938d2fb69800c3af439b932ebad304e3d989e58a7c9abd",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/ARCHITECTURE-FORMATION-CRITIQUE.md": "d20d3284cb2afe84884d567c7d39efe1b3a360fee9375b2158c8116fc7e50362",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/ARCHITECTURE-FORMATION-REVIEW.md": "6f682f0fd805713b1880fd7289b2db9ace8d6bde9c16435f6ea1fb3b7ce4d1a2",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/THERMODYNAMIC-EMBEDDING.md": "77eefb42eddb97b76ef4e6d3335d732a2e84874e415d5d2323b47c40638312b8",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/THERMODYNAMIC-EMBEDDING-REVIEW.md": "8f11c3198689106e7011f55f09870275443b002a8e20a8b90ab9411b28063a9c",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/DIRECTION-AND-TURNOVER.md": "7c819e13ff39c2c42e602946a498cc159e943bccd985444839e8724b3d97fe20",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/DIRECTION-AND-TURNOVER-REVIEW.md": "65c3e4ea1a0302416c21b59e0fbff2a0c1240d252e3cb9281f8da25df61537a7",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATION.md": "bcc10164e1b9105939fefe17f5923f030eafe07661ae62a9b421ecbeb4fdd021",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/monitor-state.json": "d6dfb97e716cb3fa8b098b994d97c908c9691ab862f24b783b903ba9b992f9f5",
+    "RESEARCH.md": "d0dcfb3688c8e8a8a33d210a6810c4b370559d981cecd716d5da9c20a5c452ef",
+    "experiments/shared-renewal-capability/README.md": "8731d24f896ab872ba11b324937955bda847d809523270e8e808e67267e24861",
+    "theories/shengsheng-buxi-generative-existence/README.md": "78b55015a7daee652320a1d8ff53bb888da3e442796ad5b6cffd3f23af5eb053",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md": "5b88208381dd5cffc51581dea5d6f203c8196ed56c8d0f4d2f518825d5387415",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md": "e02180b7fa03b6e8b346817841f317b9b4f2b4a1037f572f5a4c511aaa3818b4",
+    "experiments/shared-renewal-capability/renewal-return/README.md": "e8379f0679884dbf4d4ff07cfb02ebc2e2af48d149b10bbcc1ca1c03109823fb",
+    "experiments/shared-renewal-capability/renewal-return/exact-check.json": "cfdf902a7ebd164d0ee7e7041ff41aac0cc04843936aa0764c003886b9a6ce09",
+    "experiments/shared-renewal-capability/renewal-return/exact_check.py": "f8d57d4ae13a9e94114c9ab0b2c2a2e982035c7a2c9eea3aea6d8a62f69e38b8",
+    "experiments/shared-renewal-capability/thermo-embedding/PROTOCOL.md": "30705808c424850c0c3ead30d3133ffef638997d999e94a8409a82465bc52894",
+    "experiments/shared-renewal-capability/thermo-embedding/README.md": "ee4fdcdcc73b3957b7aff4b531cff25a322d444476519fd547b201df5eb9dd4a",
+    "experiments/shared-renewal-capability/thermo-embedding/exact-check.json": "4e2de729860d5abbb258e880d5fe73000481adc2a1965a51f8f5b3d54e6d4b73",
+    "experiments/shared-renewal-capability/thermo-embedding/exact_check.py": "4f9ceea0f9964b291fbe1bd45ec49822eb9bcf6f609fa936252f65cacd9f24ff"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "all exact assertions passed",
+  "scope": "algebraic reversible finite-state embedding; no simulation, fitting or chemistry identification",
+  "protocol_sha256": "30705808c424850c0c3ead30d3133ffef638997d999e94a8409a82465bc52894",
+  "checker_sha256": "4f9ceea0f9964b291fbe1bd45ec49822eb9bcf6f609fa936252f65cacd9f24ff",
+  "dimensionless_potential_scale_M": 20,
+  "finite_state_count": 512,
+  "local_detailed_balance_edges_checked": 1915,
+  "reaction_pairs": 16,
+  "pre_capture_states_checked_per_arm": 96,
+  "reverse_rate_envelope_coefficients": {
+    "1": "657116",
+    "3": "3666",
+    "4": "974592"
+  },
+  "exp5_degree7_partial_sum": {
+    "exact": "2701/21",
+    "decimal_for_reading": 128.61904761904762
+  },
+  "exp_minus20_strict_upper": {
+    "exact": "1/268435456",
+    "decimal_for_reading": 3.725290298461914e-09
+  },
+  "reverse_rate_strict_upper": {
+    "exact": "49650281180117916551733055199/20282409603651670423947251286016",
+    "decimal_for_reading": 0.002447947859764099
+  },
+  "simplified_reverse_rate_strict_upper": {
+    "exact": "1/400",
+    "decimal_for_reading": 0.0025
+  },
+  "horizon": {
+    "exact": "3",
+    "decimal_for_reading": 3.0
+  },
+  "per_arm_probability_error_strict_upper": {
+    "exact": "3/400",
+    "decimal_for_reading": 0.0075
+  },
+  "original_absent_upper": {
+    "exact": "6769/110592",
+    "decimal_for_reading": 0.061206958912037035
+  },
+  "original_gate_lower": {
+    "exact": "2209/18432",
+    "decimal_for_reading": 0.1198459201388889
+  },
+  "perturbed_absent_strict_upper": {
+    "exact": "189961/2764800",
+    "decimal_for_reading": 0.06870695891203704
+  },
+  "perturbed_gate_strict_lower": {
+    "exact": "51769/460800",
+    "decimal_for_reading": 0.11234592013888889
+  },
+  "perturbed_gap_strict_lower": {
+    "exact": "120653/2764800",
+    "decimal_for_reading": 0.043638961226851854
+  }
+}

@@ -32,10 +32,10 @@
       "thread_id": "01a106c5-cdcb-7723-877d-85507c8a70c9",
       "title": "Review v0.2 build plan",
       "turn_id": "01a10b40-33d6-75e3-ac24-db11b05a1c4f",
-      "cursor": "bbf33de6-9b77-4012-93a0-1eb40d99c444:13",
+      "cursor": "bbf33de6-9b77-4012-93a0-1eb40d99c444:16",
       "status": "pending_completed_turn_review",
       "latest_status": "inProgress",
-      "latest_commentary": "Still active: hosted living-world run exceeded total60-second budget although retirement, return and final-state assertions passed. Phase budgets are being inspected; no final contribution yet.",
+      "latest_commentary": "Still active: saved guest identity and position survive startup reordering; complete local co-op proof and preview saved, full run active. No final contribution yet.",
       "evidence_role": "application check; do not treat performance as evidence of universal theory"
     },
     {
@@ -54,5 +54,6 @@
     }
   ],
   "stop_rule": "Pause this automation once registered turns are reviewed and integrated or documented outside theory evidential scope; do not complete main goal.",
-  "last_checked_at_utc": "2026-10-05T12:16:36.499821+00:00"
+  "last_checked_at_utc": "2026-10-05T12:52:07.967108+00:00",
+  "discovery_check": "Recent thread listing inspected this turn; registered theory contributions remain completed and application turn remains active. No newly active theory contribution found in the inspected recent list."
 }

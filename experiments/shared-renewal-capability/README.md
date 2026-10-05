@@ -2,6 +2,8 @@
 
 AI-assisted mathematical experiment, 5 October 2026. This evaluates the existing finite-material shared-renewal process, with all event rates and energy spending retained. It is a calculation for a stipulated model, not an empirical study.
 
+**Later checked developments:** [paid allocation](allocation/README.md), [delivered continuation](continuation/README.md), [physical turnover paths](renewal-return/README.md), and [reversible finite-event embedding](thermo-embedding/README.md) preserve separate protocols, laws and evidence scopes. The turnover check reuses the accepted event table; the thermodynamic check verifies a new finite extension by exact algebra. Neither is empirical validation or a claim that the prior interval experiment was rerun.
+
 **New extension:** the [constructed-regulation comparison](regulation/README.md) adds a fuel-responsive inhibitor and pays its formation, binding and wear costs. It starts with no regulator and uses stronger source conditions. Its negative outcomes are preserved separately; the earlier protocol and interval results below are unchanged.
 
 Read the [mathematical bridge](../../_process/research/2026-10-05-support-and-shared-generativity/completion/JOINT-CAPABILITY-BRIDGE.md) for the proof, assumptions and interpretation. The [protocol](PROTOCOL.md) was recorded before results; [certify.py](certify.py) uses only the Python standard library and writes [results.json](results.json).
