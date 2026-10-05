@@ -18,7 +18,7 @@ Formation spends `2K+3` total fuel units, including the local-copy fuel.
 A supplied blank-slot recipe consumes one free A, one free H and one common
 fuel unit. Both material units remain incorporated in the blank, reserved or
 written slot. No overwritten or spent material is silently made reusable.
-Assembly occurs before recording; its costs remain in the global ledger and
+The specified experiment assembles its slots before recording; its costs remain in the global ledger and
 are not treated as invisible steps of the old teacher. The primary preparation
 is exactly the previously checked `K=2,F0=12,E0=18` witness, producing common
 fuel 7 and source 16 before slot assembly and 5 and 16 afterward.
@@ -52,6 +52,11 @@ attempted outcome word. The stored word's length and popcount are decoded
 quantities, not separately constructed free counters or a constructed confidence
 computer. Further decoding, certificate or action machinery remains supplied.
 
+The local assembly guard requires an idle recorder and available free A, free H
+and common fuel. It does not inspect record contents. The experiment consumes
+all available A/H pairs before admission, so no later assembly can occur in its
+recording runs. Any assembly in a broader trace would still carry its own bill.
+
 Every completed trial spends two units. During a partial trial, write escrow
 is included in available stored energy. At all phases, free and bound parts,
 slots and the resident are included in material accounting. The possible
@@ -67,9 +72,12 @@ attempt. Their commitment rules differ:
 - **Drop zero and resume:** consume write escrow but omit a zero and return its
   slot to blank, then permit another trial. Ones are retained normally. This
   is a declared faulty commitment rule, not the positive protocol.
-- **Halt on first zero:** append the actual zero, then stop. All retained records
-  form an actual prefix, so outcome-dependent stopping does not remove evidence
-  from the prefix or spend a fresh confidence budget.
+- **Halt on first zero:** consume write escrow, omit that zero, return its slot
+  to blank and halt permanently. The retained word is the actual prefix before
+  the final zero, not the whole attempted word. No later observation is appended
+  across that omission. The confidence event remains a subset of the event of
+  crossing on some genuine prefix; no fresh confidence budget is spent. This
+  isolates terminal omission from interior omission followed by resumed sampling.
 
 The audit retains raw attempt counts, both outcome counts, exact history-family
 probabilities and all operation/write costs, including omitted observations.
