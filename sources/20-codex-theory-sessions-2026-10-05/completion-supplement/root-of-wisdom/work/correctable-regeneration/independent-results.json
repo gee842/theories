@@ -1,0 +1,254 @@
+{
+  "status": "all_exact_independent_checks_passed",
+  "method": "Fraction recurrence independent of author code",
+  "generalized_safe_parameter_cases": 149,
+  "initial_nine_rounds": [
+    {
+      "t": 1,
+      "b": "6",
+      "q": "3",
+      "mode": "X",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "5",
+      "qnext": "3",
+      "spill": "2/9"
+    },
+    {
+      "t": 2,
+      "b": "5",
+      "q": "3",
+      "mode": "X",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "4",
+      "qnext": "3",
+      "spill": "2/9"
+    },
+    {
+      "t": 3,
+      "b": "4",
+      "q": "3",
+      "mode": "X",
+      "requested": true,
+      "pbill": 1,
+      "qbill": 2,
+      "bnext": "2",
+      "qnext": "11/9",
+      "spill": "0"
+    },
+    {
+      "t": 4,
+      "b": "2",
+      "q": "11/9",
+      "mode": "X",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "1",
+      "qnext": "13/9",
+      "spill": "0"
+    },
+    {
+      "t": 5,
+      "b": "1",
+      "q": "13/9",
+      "mode": "F",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "2",
+      "qnext": "5/3",
+      "spill": "0"
+    },
+    {
+      "t": 6,
+      "b": "2",
+      "q": "5/3",
+      "mode": "F",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "3",
+      "qnext": "17/9",
+      "spill": "0"
+    },
+    {
+      "t": 7,
+      "b": "3",
+      "q": "17/9",
+      "mode": "F",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "4",
+      "qnext": "19/9",
+      "spill": "0"
+    },
+    {
+      "t": 8,
+      "b": "4",
+      "q": "19/9",
+      "mode": "F",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "5",
+      "qnext": "7/3",
+      "spill": "0"
+    },
+    {
+      "t": 9,
+      "b": "5",
+      "q": "7/3",
+      "mode": "F",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "6",
+      "qnext": "23/9",
+      "spill": "0"
+    }
+  ],
+  "steady_nine_rounds": [
+    {
+      "t": 10,
+      "b": "6",
+      "q": "23/9",
+      "mode": "X",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "5",
+      "qnext": "25/9",
+      "spill": "0"
+    },
+    {
+      "t": 11,
+      "b": "5",
+      "q": "25/9",
+      "mode": "X",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "4",
+      "qnext": "3",
+      "spill": "0"
+    },
+    {
+      "t": 12,
+      "b": "4",
+      "q": "3",
+      "mode": "X",
+      "requested": true,
+      "pbill": 1,
+      "qbill": 2,
+      "bnext": "2",
+      "qnext": "11/9",
+      "spill": "0"
+    },
+    {
+      "t": 13,
+      "b": "2",
+      "q": "11/9",
+      "mode": "X",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "1",
+      "qnext": "13/9",
+      "spill": "0"
+    },
+    {
+      "t": 14,
+      "b": "1",
+      "q": "13/9",
+      "mode": "F",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "2",
+      "qnext": "5/3",
+      "spill": "0"
+    },
+    {
+      "t": 15,
+      "b": "2",
+      "q": "5/3",
+      "mode": "F",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "3",
+      "qnext": "17/9",
+      "spill": "0"
+    },
+    {
+      "t": 16,
+      "b": "3",
+      "q": "17/9",
+      "mode": "F",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "4",
+      "qnext": "19/9",
+      "spill": "0"
+    },
+    {
+      "t": 17,
+      "b": "4",
+      "q": "19/9",
+      "mode": "F",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "5",
+      "qnext": "7/3",
+      "spill": "0"
+    },
+    {
+      "t": 18,
+      "b": "5",
+      "q": "7/3",
+      "mode": "F",
+      "requested": false,
+      "pbill": 0,
+      "qbill": 0,
+      "bnext": "6",
+      "qnext": "23/9",
+      "spill": "0"
+    }
+  ],
+  "failures": {
+    "less_than_claim_capacity": {
+      "first_failure_round": 6,
+      "kind": "participant_floor"
+    },
+    "upkeep_only_funding": {
+      "first_failure_round": 15,
+      "kind": "participant_floor"
+    },
+    "below_recurrent_funding_with_extra_initial_stock": {
+      "first_failure_round": 194,
+      "kind": "participant_floor"
+    },
+    "late_trigger": {
+      "first_failure_round": 5,
+      "kind": "participant_floor"
+    },
+    "extra_delay": {
+      "first_failure_round": 5,
+      "kind": "participant_floor"
+    }
+  },
+  "earlier_trigger": {
+    "threshold": 5,
+    "minimum_b": 2,
+    "length": 7,
+    "funding_minimum": "9/7"
+  },
+  "scope": "A supplied delayed temporary-gate protocol; no optimality across other protocols."
+}

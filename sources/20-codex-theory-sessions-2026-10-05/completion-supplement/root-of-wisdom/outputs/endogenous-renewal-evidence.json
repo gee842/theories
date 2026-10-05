@@ -1,0 +1,230 @@
+{
+  "title": "Endogenous renewal and consequential feedback",
+  "created_utc": "2026-10-05T03:44:22.099228+00:00",
+  "research_date_local": "2026-10-05",
+  "timezone": "Asia/Bangkok",
+  "user_request": "please, advance our theory",
+  "retained_target": "Physical direction of reality itself toward proposed shared generativity and 善; relational situations containing distinct centers, not isolated individual fitness or a substituted ethical prescription.",
+  "artifacts": {
+    "outputs/endogenous-renewal-and-consequential-feedback.md": "8105bee2183e9730c73ae7384f764f01ae91f13411a3dea8aaa43104a27dba1c",
+    "outputs/endogenous-renewal-mathematics.md": "66543cfbb3e0076593e58904fa01dc6aaa43967995242a01739539deab86ef50",
+    "outputs/endogenous-renewal.png": "435cdb8f6725b568220b3a31b1a03baec3c0f0591b8100c2436a219163124842",
+    "outputs/endogenous-renewal.svg": "91910d1f0d2e5fef15316eaca3412aeb5e0902707a808644dbb7bc1a70eecfaf",
+    "work/endogenous-renewal/verify.py": "3c43c369ac1cb8fbb9f745cb876f7145f2877b2aab3f5960fe6dd147148aa25d",
+    "work/endogenous-renewal/checks.json": "a8e7fc45d01b7aee5298fb3a43bf00c9d45033256ed51bba07b2dd3ae974d78d"
+  },
+  "results": {
+    "formation": "C(0)=0<R(0) implies C_dot(0)=aR(0)>0 in the supplied reaction repertoire.",
+    "global_threshold": "For positive a,b,k and maintained driving: M<=b/k implies R,C->0; M>b/k and R(0)+C(0)>0 imply convergence to the explicit positive equilibrium. All-degraded remains inactive.",
+    "regulation": "D_dot=-kC(D-b/k); this is a restoring rate-balance relation where machinery persists, not assigned purpose, perception or allostasis.",
+    "general_necessity": "Uniform componentwise production/loss bound with rho(L^-1 B)<1 implies exponential decay. Independent production and nondecaying capacities alter assumptions.",
+    "hidden_mode": "Fixed aggregate observation leaves an unstable difference unobservable in the stated linear plant; no well-posed deterministic causal controller using only that observation stabilizes all nearby initial states.",
+    "kindness": "No universal physical tendency to kindness, widening repair toward all affected centers, or open-ended novelty was proved."
+  },
+  "checks": {
+    "exact_state_and_parameter_checks": 729,
+    "numerical_method": "Fixed-step classical fourth-order Runge-Kutta; plotted runs repeated at half step.",
+    "trajectories": [
+      {
+        "M": 0.6,
+        "initial_R_C_D": [
+          0.6,
+          0,
+          0
+        ],
+        "final_at_t40": [
+          1.2799078756768538e-05,
+          1.652401217301487e-05,
+          0.5999706769090706
+        ],
+        "maximum_step_halving_difference": 8.361369929765772e-11,
+        "maximum_mass_error": 1.887379141862766e-15,
+        "predicted_limit": [
+          0,
+          0,
+          0.6
+        ]
+      },
+      {
+        "M": 1.0,
+        "initial_R_C_D": [
+          1.0,
+          0,
+          0
+        ],
+        "final_at_t40": [
+          0.02292900599823548,
+          0.02348747275940981,
+          0.9535835212423542
+        ],
+        "maximum_step_halving_difference": 1.6001397429299402e-10,
+        "maximum_mass_error": 1.3322676295501878e-15,
+        "predicted_limit": [
+          0,
+          0,
+          1.0
+        ]
+      },
+      {
+        "M": 3.0,
+        "initial_R_C_D": [
+          3.0,
+          0,
+          0
+        ],
+        "final_at_t40": [
+          0.9999999999999968,
+          1.0000000000000078,
+          0.9999999999999944
+        ],
+        "maximum_step_halving_difference": 8.060296596834604e-10,
+        "maximum_mass_error": 8.881784197001252e-15,
+        "predicted_limit": [
+          1.0,
+          1.0,
+          1
+        ]
+      }
+    ],
+    "feedback_matrix_checks": [
+      {
+        "h": 0.0,
+        "eigenvalues": [
+          [
+            -0.49999999999999967,
+            1.9364916731037087
+          ],
+          [
+            -0.49999999999999967,
+            -1.9364916731037087
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            -2.0,
+            0.0
+          ]
+        ],
+        "all_real_parts_negative": false
+      },
+      {
+        "h": 0.5,
+        "eigenvalues": [
+          [
+            -0.5000000000000003,
+            1.9364916731037094
+          ],
+          [
+            -0.5000000000000003,
+            -1.9364916731037094
+          ],
+          [
+            -0.49999999999999983,
+            0.8660254037844384
+          ],
+          [
+            -0.49999999999999983,
+            -0.8660254037844384
+          ]
+        ],
+        "all_real_parts_negative": true
+      }
+    ],
+    "finite_population_graph_check": {
+      "N": 8,
+      "states": 45,
+      "states_reaching_all_degraded": 45
+    },
+    "scope": "Analytic proofs establish results; finite tests check arithmetic and implementation. Plots are model illustrations, not empirical observations.",
+    "figures": [
+      "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/endogenous-renewal.png",
+      "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/endogenous-renewal.svg"
+    ],
+    "all_checks_passed": true
+  },
+  "visual_review": {
+    "method": "Rendered PNG viewed after creation",
+    "outcome": "Readable titles, axes, legend, threshold annotation and deterministic-model caption; no clipping observed."
+  },
+  "review": {
+    "type": "Three collaborating AI agents; reasoning review, not external scientific peer review.",
+    "reviewers": [
+      "/root/endogenous_regeneration",
+      "/root/generativity_critic",
+      "/root/generativity_formal"
+    ],
+    "outcome": "No substantive mathematical errors found in saved drafts.",
+    "refinements_applied": [
+      "Explicit accessible-state exception for global attraction in opening.",
+      "Well-posed closed-loop qualification in controller impossibility theorem."
+    ]
+  },
+  "sources": [
+    {
+      "kind": "prior work in current workspace",
+      "path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/relational-regeneration-and-direction.md",
+      "sha256_at_finalization": "33f5be9f460224be64c675828a8da78ece16da7304bbc248607f841aabbb2d9a",
+      "scope": "Full report read; starting mechanism, physical-direction target and preservation context."
+    },
+    {
+      "kind": "other session research report",
+      "path": "/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-plural-requirements-and-attainable-correction.md",
+      "sha256_at_finalization": "e27ec44612aade946fe3ff2dd7b1d6280523dd446f3ff29af39055080d8df8bb",
+      "scope": "Lines 1–170 returned and read, including joint feasibility, hidden burden in averages, and conditional scope. Used as conceptual connection, not empirical support.",
+      "session_title": "Compare society to backpropagation (2)",
+      "thread_id": "01a107a5-fd37-7b30-b1b8-f1c9587766bf"
+    },
+    {
+      "kind": "primary conceptual paper",
+      "title": "Biological organisation as closure of constraints",
+      "authors": "Maël Montévil and Matteo Mossio",
+      "year": 2015,
+      "url": "https://montevil.org/publications/articles/2015-mm-organisation-closure-constraints/",
+      "doi": "10.1016/j.jtbi.2015.02.029",
+      "scope": "Search-indexed author abstract and introduction inspected; direct author-page and PDF fetches failed. Only conceptual mutual-maintenance and thermodynamic-openness claims used."
+    },
+    {
+      "kind": "primary experimental paper",
+      "title": "Spontaneous formation of autocatalytic sets with self-replicating inorganic metal oxide clusters",
+      "authors": "Haralampos N. Miras and colleagues",
+      "year": 2020,
+      "url": "https://www.chem.gla.ac.uk/cronin/images/pubs/Mathis-PNASMay2020.pdf",
+      "doi": "10.1073/pnas.1921536117",
+      "scope": "Author-hosted seven-page PDF text read through approximately line 342, including abstract, experimental kinetic/perturbation findings, and phenomenological model development. Not a full supporting-information review.",
+      "use": "Physical example of formation of autocatalytic organization under particular chemical conditions; not evidence for the exact constructed model, indefinite persistence, or 善."
+    },
+    {
+      "kind": "primary theoretical abstract, background only",
+      "title": "Detecting autocatalytic, self-sustaining sets in chemical reaction systems",
+      "authors": "Wim Hordijk and Mike Steel",
+      "year": 2004,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15038982/",
+      "scope": "Full indexed primary abstract read by reviewer; contextual relationship only, not source of present proofs."
+    },
+    {
+      "kind": "primary theoretical abstract, background only",
+      "title": "Emergence of autocatalysis in prebiotic reaction networks",
+      "authors": "Varun Varanasi and Jun Korenaga",
+      "year": 2026,
+      "url": "https://journals.aps.org/pre/abstract/10.1103/nmt5-qsym",
+      "scope": "Publisher abstract and metadata inspected; nonoverlapping-core assumption noted. Full text not available and no quantitative result imported."
+    }
+  ],
+  "preservation": {
+    "baseline_count": 38,
+    "changed_prior_outputs": [],
+    "missing_prior_outputs": [],
+    "all_prior_outputs_unchanged": true,
+    "baseline_path": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/endogenous-renewal/preservation-manifest.json",
+    "other_research_directories": "Read only during this turn. No messages sent to other user chats."
+  },
+  "limitations": [
+    "Constructed ideal kinetics with supplied reaction repertoire and maintained energetic driving; no actual chemical implementation established.",
+    "Global convergence is a deterministic concentration-model result, not an eternal-survival guarantee.",
+    "Exact finite-particle model eventually absorbs; no stochastic lifetime scaling calculated.",
+    "Feedback model is local and separate; its machinery formation and energetic costs are not integrated into the chemical model.",
+    "No new empirical experiment, cosmological test, universal kindness proof or priority claim."
+  ]
+}

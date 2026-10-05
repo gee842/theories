@@ -1,0 +1,123 @@
+{
+  "exact_state_and_parameter_checks": 729,
+  "numerical_method": "Fixed-step classical fourth-order Runge-Kutta; plotted runs repeated at half step.",
+  "trajectories": [
+    {
+      "M": 0.6,
+      "initial_R_C_D": [
+        0.6,
+        0,
+        0
+      ],
+      "final_at_t40": [
+        1.2799078756768538e-05,
+        1.652401217301487e-05,
+        0.5999706769090706
+      ],
+      "maximum_step_halving_difference": 8.361369929765772e-11,
+      "maximum_mass_error": 1.887379141862766e-15,
+      "predicted_limit": [
+        0,
+        0,
+        0.6
+      ]
+    },
+    {
+      "M": 1.0,
+      "initial_R_C_D": [
+        1.0,
+        0,
+        0
+      ],
+      "final_at_t40": [
+        0.02292900599823548,
+        0.02348747275940981,
+        0.9535835212423542
+      ],
+      "maximum_step_halving_difference": 1.6001397429299402e-10,
+      "maximum_mass_error": 1.3322676295501878e-15,
+      "predicted_limit": [
+        0,
+        0,
+        1.0
+      ]
+    },
+    {
+      "M": 3.0,
+      "initial_R_C_D": [
+        3.0,
+        0,
+        0
+      ],
+      "final_at_t40": [
+        0.9999999999999968,
+        1.0000000000000078,
+        0.9999999999999944
+      ],
+      "maximum_step_halving_difference": 8.060296596834604e-10,
+      "maximum_mass_error": 8.881784197001252e-15,
+      "predicted_limit": [
+        1.0,
+        1.0,
+        1
+      ]
+    }
+  ],
+  "feedback_matrix_checks": [
+    {
+      "h": 0.0,
+      "eigenvalues": [
+        [
+          -0.49999999999999967,
+          1.9364916731037087
+        ],
+        [
+          -0.49999999999999967,
+          -1.9364916731037087
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          -2.0,
+          0.0
+        ]
+      ],
+      "all_real_parts_negative": false
+    },
+    {
+      "h": 0.5,
+      "eigenvalues": [
+        [
+          -0.5000000000000003,
+          1.9364916731037094
+        ],
+        [
+          -0.5000000000000003,
+          -1.9364916731037094
+        ],
+        [
+          -0.49999999999999983,
+          0.8660254037844384
+        ],
+        [
+          -0.49999999999999983,
+          -0.8660254037844384
+        ]
+      ],
+      "all_real_parts_negative": true
+    }
+  ],
+  "finite_population_graph_check": {
+    "N": 8,
+    "states": 45,
+    "states_reaching_all_degraded": 45
+  },
+  "scope": "Analytic proofs establish results; finite tests check arithmetic and implementation. Plots are model illustrations, not empirical observations.",
+  "figures": [
+    "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/endogenous-renewal.png",
+    "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/endogenous-renewal.svg"
+  ],
+  "all_checks_passed": true
+}

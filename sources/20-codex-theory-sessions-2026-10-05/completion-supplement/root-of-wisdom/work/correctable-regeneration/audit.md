@@ -1,0 +1,56 @@
+# Independent mechanism audit
+
+Working audit, 5 October 2026. This file states requirements before seeing the new construction, then records independent review of the implemented model. Earlier outputs are preserved. The exercise is a conditional mathematical construction, not a biological or institutional experiment.
+
+## Requirements specified before the new model
+
+The promised advance couples three things: shared renewal, consequences for individual participants, and effective correction of the allocation or governance rule. The last must itself require resources and maintained material carriers. A model that installs an unfailing benevolent controller does not explain the promised coupling.
+
+1. **Independent criteria.** State the shared-support floor, each relevant participant's protected floor, and operational revision access before selecting a policy or judging a run. An aggregate stable equilibrium can violate a participant floor. The criteria are explicit evaluative commitments, not quantities evolution automatically maximizes.
+2. **A closed resource account.** Production, shared renewal, private allocations, real maintenance costs, replacement of rule carriers, and interventions belong in one ledger. Internal transfers are not destroyed resources, but inaccessible private reserves cannot silently fund an institutional bill. Prefix affordability matters as well as an average budget.
+3. **A physically effective update channel.** A complaint or nominal right must reach a sensor, decision mechanism, and actuator capable of changing the relevant rule. If actual compliance is stipulated, say so; affordability does not create authority. Charge continuing operation and replacement if those are claimed.
+4. **Endogenous exposure.** Explain how rule carriers or implementation quality change under incentives, replacement, degradation, or capture. A dynamic rule parameter alone does not derive its execution, historical origin, or legitimacy. An inherited trait with differential return is different from a collectively chosen rule.
+5. **Fair comparisons.** Hold production technology, initial endowment, and permitted physical resources fixed across the no-correction, controller-only, and participant-effective variants. State when the action or information sets differ. An extra subsidy or privileged controller cannot be the unreported cause of success.
+6. **A viable passage.** A favorable eventual equilibrium is insufficient if protected states fail first. Initial reserves, observation timing, repair delay, and recurring threats must be included. One funded reset is insufficient evidence of indefinite correctability.
+7. **Critical ablations.** Test at least one stable shared-stock state with harmful distribution; nominal rights without funded execution; correction with its carrier not replenished; and appropriately matched corrected operation. If a sensor or authority link is claimed essential, removing it must have an explained consequence.
+8. **Honest scope.** A prescribed protocol can demonstrate paid, recurring correction. It cannot by itself establish why evolution favors that protocol, how every rule emerged, or that all future threats admit correction. More future activity is not a complete measure of ethical value.
+
+## Prior-art scope within this research program
+
+The prior local `work/alignment-and-regeneration/model.md` already proves that productive contributors with higher retention can spread until shared support collapses, even when replacement stops short of fixation. It explicitly does not model collective authority or correction.
+
+The cross-session file `/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/continuing-participation-math.md` was read in full for this audit. It already distinguishes ex ante agreement from participation after public histories and recommendations, derives positive aggregate surplus with an unaffordable compensation requirement, proves exact one-gate funding cuts, and uses a full-history policy calculation. It also explicitly supplies public observations, committed control, conditional payment, and a permanent passive-refusal option. Merely charging a fee or adding a participation constraint would repeat that work. The useful remaining target is whether the capacity that makes correction effective can persist through recurring degradation and replacement of its own carriers.
+
+## General resource obstruction worth testing
+
+For any construction in which correction load obeys `load' = incoming pressure - completed correction` and a correction reserve obeys `reserve' = funding - upkeep - cost × completed correction`, integration gives a necessary long-run budget condition whenever load stays bounded and reserve stays nonnegative with finite initial endowment. Sustained funding must cover upkeep plus the correction cost of sustained incoming pressure. This is a conservation argument, not a new universal principle. Favorable average balance alone is not sufficient: a delayed bill can exhaust liquidity or a participant's protected reserve before the eventual repair.
+
+Whether that inequality applies depends on the actual model. It must not be imported when correction load is nonlinear, resources can be borrowed, or the relevant threshold has another definition.
+
+## Independent mathematical and implementation review
+
+The construction in `check_model.py` was read directly. I independently implemented the delayed temporary-gate recurrence with exact rational arithmetic in `independent_check.py`, without importing the author's transitions. For 45 main-model rounds, a subsequent direct comparison matched every participant reserve, correction reserve, selected allocation, filing fee, and correction-reserve overflow. The successful end-round participant path is `6 → 5 → 4 → 2 → 1 → 2 → 3 → 4 → 5 → 6`.
+
+The periodic funding calculation is sound for the supplied protocol. A successful nine-round cycle consumes nine correction-upkeep units and two filing units. With finite initial funds and funding below `11/9` per round, infinitely many such cycles are impossible by summing the budget. Every claim has a three-unit prefunded bill, so capacity below three prevents filing even with abundant later receipts. At exact funding, capacity three, and participant initialization six, initial correction reserve `23/9` is both sufficient and necessary for uninterrupted protection. Two initial ordinary rounds raise that stock to three. Starting instead at three discards `4/9` across those initial rounds and then joins the same periodic section. The steady cycle has no correction-reserve overflow.
+
+Protection has a distinct timing condition. For strictly positive integral delay `d`, an integer trigger `h`, and filing cost `c`, with net extraction of one per delayed round, the lowest participant reserve is `h-c-d`. Thus `h >= 1+c+d` is necessary and sufficient for the participant part of this supplied cycle, assuming the claim and ensuing gate are funded. The filing round is included in `d`. For a ceiling `M`, the cycle length is `2(M-h)+c+2d`; this counts pre-claim extraction, delayed extraction, and restoration. The independent checker verified 149 safe parameter combinations, including non-default ceilings and filing costs.
+
+An initial version of the author's parameter sweep included zero delay while using the positive-delay formula. That was a genuine boundary mistake: with immediate restorative allocation, the same-round receipt can replenish a filing debit before the end-round floor is evaluated. The author restricted the theorem and sweep to positive delay; the principal two-round-delay result was unaffected. This correction should remain visible in the audit rather than be described as an unchanged first-pass success.
+
+Additional exact independent failures are recorded in `independent-results.json`. A reserve cap below three fails protection; upkeep-only funding supports one claim but cannot finance ongoing claims; increasing delay or filing too late breaches the participant floor. At funding `11/9 - 1/90`, even initial correction reserve and capacity five merely delay failure until round 194. This separates a recurrent funding obstruction from an inadequate initial endowment.
+
+An earlier trigger illustrates the protocol's resource tradeoff: with `M=6,h=5,c=1,d=2`, the minimum participant reserve rises to two, but the cycle shortens to seven and its necessary recurring funding rises to `9/7`. This is a result within the supplied temporary-mandate rule, not a general price of participant protection.
+
+The author's complete finite-state check considers 2,380 states. Of 1,008 states satisfying the pointwise protected conditions, 272 remain protected indefinitely under the protocol. Thus present safety and eventual attraction must not be substituted for uninterrupted continuation. The finite graph check and the symbolic periodic proof answer complementary questions.
+
+## Final scope and verdict
+
+**Accepted with the corrections and scope statements above.** The main construction provides a resource-balanced, recurring witness in which the same productive technology maintains shared support either with or without participant protection, depending on a funded effective claim route. Exact arithmetic and independent reconstruction support the main cycle, the funding and prefunding cuts, and the positive-delay boundary.
+
+The comparison called controller-only uses the stated private-current-return replacement rule. It is not an impossibility theorem for all controllers: an externally maintained fair rule can protect the participant. In particular, retaining a protective gate permanently or choosing a different correction protocol can change the recurring filing cost. The sharp `11/9` threshold belongs to compulsory release at full reserve followed by renewed extraction.
+
+The model supplies a protected allocation stream, a binding gate, a known participant signal, automatic filing, and the replacement law. Paying maintenance makes their continued operation costly and testable; it does not derive their initial construction, strategic acceptance, legitimacy, or resistance to every kind of capture. A disabled effective-access switch does not independently isolate failures of sensing, decision authority, and actuation, although those are conceptually distinct links. The allocation operator who receives a private residual should be named separately from the material carrier of the corrective channel.
+
+The participant floor is an independently imposed evaluative requirement. Loss of that floor is neither literal death nor a universal measure of well-being. Shared production can continue because this affected participant is not necessary to the modeled production technology. Protecting a dispensable affected participant therefore remains a substantive commitment instead of being smuggled into the definition of aggregate survival.
+
+The previous funding/participation results are inherited, while the new coupling adds repeated rule replacement, continued material operation of a binding route, and the reserve returned to its next use. It is a completed bounded mechanism study, not an explanation of the ultimate emergence of all governance or a derivation of 善 solely from natural selection.

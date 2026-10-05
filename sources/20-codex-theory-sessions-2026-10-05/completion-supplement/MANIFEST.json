@@ -1,0 +1,147 @@
+{
+  "created_utc": "2026-10-05T03:46:19.121313+00:00",
+  "base_commit": "003cd2a2e2d95a8b7a46314299342d977aa94d8a",
+  "purpose": "Preserve new and changed files after both continuation turns completed. Original snapshot remains unmodified. Apply this overlay to reconstruct final source workspace.",
+  "files": [
+    {
+      "path": "outputs/endogenous-renewal-and-consequential-feedback.md",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/endogenous-renewal-and-consequential-feedback.md",
+      "bytes": 10385,
+      "sha256": "8105bee2183e9730c73ae7384f764f01ae91f13411a3dea8aaa43104a27dba1c",
+      "previous_sha256": null
+    },
+    {
+      "path": "outputs/endogenous-renewal-evidence.json",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/endogenous-renewal-evidence.json",
+      "bytes": 10100,
+      "sha256": "82cffb0acbf209f7db6a0a3cc8d9bca1db5353a7b113f6a65c5f3e08c11fdb56",
+      "previous_sha256": null
+    },
+    {
+      "path": "outputs/endogenous-renewal-mathematics.md",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/endogenous-renewal-mathematics.md",
+      "bytes": 10102,
+      "sha256": "66543cfbb3e0076593e58904fa01dc6aaa43967995242a01739539deab86ef50",
+      "previous_sha256": null
+    },
+    {
+      "path": "outputs/endogenous-renewal.png",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/endogenous-renewal.png",
+      "bytes": 128421,
+      "sha256": "435cdb8f6725b568220b3a31b1a03baec3c0f0591b8100c2436a219163124842",
+      "previous_sha256": null
+    },
+    {
+      "path": "outputs/endogenous-renewal.svg",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/endogenous-renewal.svg",
+      "bytes": 82944,
+      "sha256": "91910d1f0d2e5fef15316eaca3412aeb5e0902707a808644dbb7bc1a70eecfaf",
+      "previous_sha256": null
+    },
+    {
+      "path": "outputs/regeneration-and-effective-correction-evidence.json",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/regeneration-and-effective-correction-evidence.json",
+      "bytes": 168169,
+      "sha256": "2e67e2a56c3d17ed878f55c8114f042d6e9bacc6b4e13bbc17d1fa24b9d86654",
+      "previous_sha256": null
+    },
+    {
+      "path": "outputs/regeneration-and-effective-correction.md",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/regeneration-and-effective-correction.md",
+      "bytes": 14937,
+      "sha256": "a15529339da557c58faf3b6eccb8a8cf4f8aa104837a1d20fe09ae0d602528fb",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/correctable-regeneration/audit.md",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/correctable-regeneration/audit.md",
+      "bytes": 11330,
+      "sha256": "580a2ac0487f7e8fd3490112dd234c4f3d26b6e640476af549a8cf7fcca3eef9",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/correctable-regeneration/check_model.py",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/correctable-regeneration/check_model.py",
+      "bytes": 10427,
+      "sha256": "4c0847dee56e5950ad881f6848342acc23cfdcc345ec665a368640562a4d2e0b",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/correctable-regeneration/final-scope-review.md",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/correctable-regeneration/final-scope-review.md",
+      "bytes": 3248,
+      "sha256": "df2beed80f54b222f2278597c13df3d50b56bcebf691beb4c054df60bb3b16c3",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/correctable-regeneration/independent-results.json",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/correctable-regeneration/independent-results.json",
+      "bytes": 4654,
+      "sha256": "de50051bcf5f7d3878968c89c138d0b9d249672a1645459f3e424637d24c59d6",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/correctable-regeneration/independent_check.py",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/correctable-regeneration/independent_check.py",
+      "bytes": 4827,
+      "sha256": "7b9dca3cce3242456829ef0b3e5eefd87e0433a3974bfbb79f03dff88ed7e505",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/correctable-regeneration/model-checks.json",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/correctable-regeneration/model-checks.json",
+      "bytes": 71054,
+      "sha256": "2982aed29f8124fdea9476738571378f2261ea3ea2c4854ab710f8ae4c357590",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/correctable-regeneration/model.md",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/correctable-regeneration/model.md",
+      "bytes": 11666,
+      "sha256": "d73bd990a34d338b8c63c5031eafe73141af73aa84220195ebe628f48a39b81c",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/correctable-regeneration/package_evidence.py",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/correctable-regeneration/package_evidence.py",
+      "bytes": 8249,
+      "sha256": "96893e1b557ee297c8383e5447145af5d9f38a59f94ba89cd8d2a3184297d509",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/correctable-regeneration/source-and-ethics.md",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/correctable-regeneration/source-and-ethics.md",
+      "bytes": 7728,
+      "sha256": "e45de8036ce981e7a9a62aaa59b03e5b35f9485694b50f96e8a575a3404b9dab",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/endogenous-renewal/checks.json",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/endogenous-renewal/checks.json",
+      "bytes": 2706,
+      "sha256": "a8e7fc45d01b7aee5298fb3a43bf00c9d45033256ed51bba07b2dd3ae974d78d",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/endogenous-renewal/finalize.py",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/endogenous-renewal/finalize.py",
+      "bytes": 8190,
+      "sha256": "0663903fabcec8c69a7be1e07b9227195cf2640b92b1236f8f1c2c7cc15f1bf7",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/endogenous-renewal/preservation-manifest.json",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/endogenous-renewal/preservation-manifest.json",
+      "bytes": 4346,
+      "sha256": "a8dd1aba88147d088ddda31a33ec84b7dd75cd37ed8783bfb92563e230b43d06",
+      "previous_sha256": null
+    },
+    {
+      "path": "work/endogenous-renewal/verify.py",
+      "original": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/work/endogenous-renewal/verify.py",
+      "bytes": 6181,
+      "sha256": "3c43c369ac1cb8fbb9f745cb876f7145f2877b2aab3f5960fe6dd147148aa25d",
+      "previous_sha256": null
+    }
+  ]
+}
