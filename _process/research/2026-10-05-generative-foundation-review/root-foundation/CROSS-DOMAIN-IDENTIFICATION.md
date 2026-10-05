@@ -1,0 +1,51 @@
+# Identifying the common conditions across different domains
+
+6 October 2026. AI-authored identification audit for requirement 5 of the [unified-foundation completion conditions](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation). **Status: bounded evidence reconciliation and prospective discriminators; no new observations, participant study, replication or raw-data reanalysis.** This audit connects the [common premise ledger](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md) to three materially different settings. They instantiate different portions of the proposed chain, not three replications of its complete development.
+
+## 1. The identification contract
+
+A common variable name is insufficient. Before transporting a result, identify:
+
+1. The system boundary, affected centers and time horizon.
+2. Actual interventions and their accessible observations, including what remains hidden.
+3. Retained state and its provenance: which earlier event produced it, what it represents, and whether its interpretation remains applicable.
+4. Construction, operation, maintenance and transfer obligations, with separate units and sequential payment conditions.
+5. The independently assessed outcome, the rival mechanism and a contrast on which they differ.
+
+An observation map need not reproduce every microscopic detail. It must preserve the distinctions the transported claim uses. Growth, displayed points, common fuel and a task-slot opportunity cost are not interchangeable accounts. A proxy can support a narrower claim without establishing the complete conservation or normative interpretation of a formal variable.
+
+## 2. Three mappings, with evidence at its actual scope
+
+| Setting | Identified causal route and retained distinctions | Existing intervention/evidence | Unidentified part of the common derivation |
+|---|---|---|---|
+| Engineered bacterial burden feedback | Induced expression changes host burden; a responsive promoter drives guide RNA and repression. Host growth, capacity-reporting fluorescence and target output are separate outcomes, measured over culture time. | Ceroni et al. compare feedback designs, targeting controls and fixed attenuation. Their engineered system can relieve burden; excessive controller burden can undermine benefit. The repository audit retains source-data inconsistencies and preparation limits. | No complete controller formation history from absent machinery, independently resolved material/energy ledger, or newly learned update architecture. A protected reporter is not a measure of every host capability. |
+| Actual AI founder/successor task | A changed task rule produces timely or delayed evidence; a founder may preserve a corrective packet; a successor may receive or lack access to it. The lineage and declared task-slot opportunity cost remain the units. | Preserved responses show correction and successor performance differences under the task's feedback/access conditions. The separate read-only audit reproduces the saved scoring. Conventional candidate elimination also solves the supplied rule family. | Team accuracy is instructed. There is no independently affected recipient stake, newly learned other-directed valuation, measured physical reconstruction cost, or independent deployment population. |
+| Human learning for a represented beneficiary | Subjects choose symbols after beneficiary instructions and observe probabilistic point outcomes. Self, other and no-beneficiary blocks distinguish which represented recipient the outcomes concern. | Lockwood et al. report learning and model comparisons for 31 analyzed male participants. The other was a confederate; actors believed choices affected payment, but their actual payment was fixed. The experimental framing identifies believed beneficiary-specific learning. | Formation of the beneficiary representation, material learning costs, independent delivery of recipient benefit, and newly acquired moral concern are not established. A displayed reward is not a verified improvement in another person's condition. |
+
+**Source basis.** For bacteria, use the preserved [primary-material and methods audit](../../2026-10-05-support-and-shared-generativity/completion/PHYSICAL-EVIDENCE-CERONI.md), including its original-file manifest and qualified secondary calculation. The [primary publication record](https://pubmed.ncbi.nlm.nih.gov/29578536/) was rechecked here; the publisher page did not provide accessible full text in this session. This audit adds no new extraction from the workbook. For AI, the [preserved experiment](../../../../sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md) and [existing independent scoring audit](../../2026-10-05-revisable-concern/settlement/evidence/report.md) retain the original observations and limitations; they were not rerun. For humans, the [primary full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC5024617/) was inspected, especially Participants, Procedure, Trial Structure and Computational Modeling. Its fixed-payment procedure prevents equating displayed outcomes with measured recipient welfare. All external references are link-only; no imported original was changed.
+
+## 3. What would discriminate the missing interfaces
+
+The following are proposed contrasts, not completed experiments or retrospectively registered predictions.
+
+| Named connection | Matched contrast | Distinct observations required |
+|---|---|---|
+| Regulation that pays for its continued implementation | Keep the productive demand and environmental opportunity comparable; vary a functioning response, a disabled response with comparable apparatus, and fixed attenuation. Measure construction and ongoing burdens separately where possible. | Trace the delivered second activity, retained implementation and costs through the same lineage. One improved reporter alone does not identify improved joint capability. |
+| Stored evidence becomes an operational reason for a successor | Preserve the same underlying observations; vary access, context labels and funds for checking/replay. Compare a current grounded record, a stale record, missing access and a sound negative result. | Separate successful reconstruction, suspended use, incorrect admission and selective retraction. Loss of access should not be scored as evidence that the underlying proposition became false. |
+| Another center's outcome becomes both understood and causally relevant | Separately vary reliable recipient evidence, beneficiary identity and the connection from the estimate to choice. Include a way to avoid private discomfort without helping. | Measure prediction, choice, actor costs and independently delivered recipient outcomes separately. Accurate inference can coexist with exclusion; costly ineffective action does not establish protection. |
+
+The finite constructions already discriminate some of these mechanisms **within their declared laws**. Their component-shortage, selective-recording, inverted-action and identity-gating cases identify variables a real comparison must preserve. They do not supply measurements of those variables in the three settings above.
+
+The current recorded-reasons continuation specifically addresses the second row: actual retained observations, an outcome-independent query plan, paid interpretation and rooted replay. Its calibration, context recognition, finite apparatus recipe and relevance grounds must remain visible. Completion of that construction will justify an implication for implementations meeting the contract; it will not retrospectively turn the saved AI task into an experiment about moral standing.
+
+## 4. Fair comparison and the remaining empirical obligation
+
+Resource allocation, feedback control, reinforcement learning and candidate elimination are serious accounts of the observed mechanisms. Several repository models have exact conventional realizations. If two descriptions preserve the same states, observations, costs and transition law, the corresponding experiment cannot distinguish them merely because one uses generative terminology. Their equivalence is a result to retain.
+
+The integration can instead make a substantive claim about which omitted conditions matter: an installed policy is not its construction; correct bytes are not a calibrated interpretation; an accurate estimate is not a protective action; and a valid retained reason is not an executable successor response. To establish comparative gain, freeze an alternative's omissions and the common observation budget before outcomes, then test the resulting different predictions. An unrestricted alternative permitted to add every relevant state is a different comparison from a specific reduced model.
+
+These mappings provide partial empirical contact for regulation, learning and transmission. They do not establish the complete causal chain, its prevalence in nature, a shared numerical reward scale, or universal favorable direction. The next evidence obligation is a measured implementation of a remaining interface with its discriminating contrast, or a justified restriction of the empirical claim if that measurement is unavailable. The [completion audit](FOUNDATION-COMPLETION-AUDIT.md) therefore keeps requirement 5 open while recognizing this completed identification audit.
+
+## Internal review receipt
+
+A separate collaborating AI reviewer checked the bacterial and AI statements against the preserved audits, independently reopened the human study's primary Procedure, and verified all six local links. The reviewer accepted this bounded identification scope, including the fixed-payment qualification and remaining calibration, normative and empirical obligations. This is internal review, not external peer review or a new replication.
