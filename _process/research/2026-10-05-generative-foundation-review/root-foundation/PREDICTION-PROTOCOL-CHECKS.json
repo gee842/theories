@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-10-05T20:26:17.914585+00:00",
+  "status": "passed",
+  "scope": "Current concrete-protocol documentation link targets and saved compiler/source hashes; no new scientific experiments or Lean rerun.",
+  "local_link_targets_checked": 404,
+  "missing_targets": [],
+  "owned_documents": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-PROTOCOL.md": "ee2264cc24b5e0da2847add9559be4d30746f67fb4e583040bf7fad6a4e11767",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTION-PROTOCOL-MATH.md": "dba9d274c20bfe5c7ff66cffa2329b86c11f3ccae56e2a89bde207d6a6bf343a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTION-PROTOCOL-REVIEW.md": "31153c2221c7c116ae187b17e0bb4d1cccd1b07b2a47db169192ef053c9ef767",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPOSITION.md": "39619af39053b4f5d09d2d3b17025f0d41382b99f6d5f86c2e6cb8401ad3fec2",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/README.md": "b1005af6158a8e397c20185f9a40dde1e4450adec47719e3211af4e321ffa8ca"
+  },
+  "shared_indexes_checked": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md"
+  ],
+  "formal_audit_sha256": "4ca25364c37d2ea8c80dc199c183ee10288229c51263daea0c47c8309a9fa18a",
+  "source_hash_matches": {
+    "GenerativeCore": true,
+    "Depletion": true,
+    "ResourceContinuation": true,
+    "ControllerRevision": true,
+    "ControlledRefinement": true,
+    "ProtocolComposition": true,
+    "FormedSelection": true,
+    "SelectorRevision": true,
+    "UpdaterFormation": true,
+    "PredictionAction": true,
+    "PredictionProtocolBridge": true,
+    "PredictionProtocolObservation": true
+  },
+  "checker_toolchain_compiler_hashes_match": true,
+  "new_theorem_audits": 38,
+  "new_empty_axiom_audits": 19,
+  "not_checked": "Anchor fragments, external URLs, empirical premises, and unrelated concurrent scientific work."
+}

@@ -155,6 +155,41 @@ separate from the earlier 15- and 48-theorem audits. See the
 and its linked mathematical companion and separate review for the supplied
 contract, progress limitations and the remaining concrete implementation task.
 
+### Concrete prediction protocol
+
+`PredictionProtocolBridge.lean` imports the actual `PredictionAction.lean` law.
+Every completed trial is exactly rent/work/write/finish; an independent arithmetic
+macro law matches its command, sequential guards and endpoint. Finite macro
+histories flatten to actual physical histories, using four micro-events and one
+inherited source packet per trial. Whole and prefix energy accounts retain every
+actual intermediate state. The macro law keeps the full physical boundary state;
+it changes event granularity without claiming a smaller sufficient state model.
+
+`PredictionProtocolObservation.lean` proves that bounded before/after score and
+the installed updater identify the target actually consumed by writing. With the
+executed action they recover the actual intermediate receipt, even though finish
+clears it. This semantic trace report is not a new physical sensor or a free
+retained copy of earlier evidence. The reported arithmetic law has exactly the
+same completed finite histories as the instantiated physical protocol.
+
+Checked examples retain paid rent/work aborts, an acquired but unaffordable write,
+a return that funds later writing, completion into updater expiry, and a changed
+future command while the current trial retains its executed action. Macro guards
+characterize completion, not a runtime oracle that prevents failed attempts.
+Only deterministic payable-write trials are covered; ready reversal/reformation,
+full executable outages, skipped writes, rebuilding and stochastic claims are
+outside this contract. Retrofit recipes and physical evidence delivery remain
+supplied or unresolved.
+
+Run `python3 check_prediction_protocol.py` here. The separate
+`prediction-protocol-audit.txt` passes **38 new theorem audits** in a fresh Lean
+4.29.1 build of twelve frozen modules: fifteen bridge and twenty-three observation
+results. Nineteen have empty axiom dependencies; the other new declarations use
+only standard `propext` and/or `Quot.sound`. Predecessor audits separately disclose
+`Classical.choice` where present. Source, checker, compiler and toolchain hashes
+are recorded. The [canonical result](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-PROTOCOL.md)
+links the mathematical specification and separate internal review.
+
 ### Original information and support package
 
 Run `python3 check.py` in this directory. The checker pins Lean `4.29.1`, freezes

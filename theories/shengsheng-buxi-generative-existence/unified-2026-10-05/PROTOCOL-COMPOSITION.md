@@ -2,6 +2,8 @@
 
 6 October 2026. AI-assisted development under the [generative-grounding goal](GENERATIVE-GROUNDING.md). The named connection is **physical construction, sensing and writing → a completed learning operation → further action under inherited conditions**.
 
+**Subsequent concrete connection:** [Prediction protocol](PREDICTION-PROTOCOL.md) now proves the actual formed predictor's four-event trial contract, using independently stated arithmetic command/update equations and its actual consumed receipt. Thirty-eight additional Lean results retain paid failures, finite source and inherited accounts. That application covers deterministic payable-write trials on full physical boundary states; this generic result and its limits remain unchanged.
+
 ## The missing connection
 
 The [previous composition result](CONTROLLED-REFINEMENT.md) preserves a learner across descriptions that use the same event granularity. Actual sensing or updating can take several events. Formation, measurement and writing may each consume support before the resulting prediction can be used. An intermediate failure therefore matters even when the abstract before-and-after description appears affordable.
@@ -38,17 +40,17 @@ There is also a paid deadlock: with one usable fuel unit and no source, entry sp
 
 ## What the next mechanism can use
 
-The formed-predictor construction must identify:
+Applying this interface to a formed predictor requires:
 
 1. the physical states that hold inherited evidence and the next prediction;
 2. the actual events implementing sensing, revision and action, with their payment order;
 3. the boundary relation that preserves the controller's commands and observations;
 4. which failures, interruptions and completion claims its abstraction retains.
 
-This gives the parallel studies an implementation contract across event scales. It does not yet establish that their different material laws implement one common learner. The next substantive mechanism remains formed, revisable machinery acquiring and correcting predictions and using them in paid action. The later connection to another center's significance remains an explanatory task within the same programme.
+This gives the parallel studies an implementation contract across event scales. The subsequent [concrete predictor application](PREDICTION-PROTOCOL.md) meets the trial-level requirements above under its declared law. It does not establish that the studies' different material laws implement one common learner. Formation and revision of the supplied sensing and action routes, and the later connection to another center's significance, remain explanatory tasks within the same programme.
 
 ## Verification and scope
 
 The [protocol module](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolComposition.lean) and [paid examples](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ProtocolExamples.lean) passed a fresh Lean 4.29.1 build with **39 new theorem audits**: 17 general results and 22 example/account results. Seventeen have empty axiom dependencies; the others use only standard `propext` and/or `Quot.sound`. There are no proof holes or custom axioms. The [saved record](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/protocol-composition-audit.txt) includes source, compiler and checker hashes. Run `python3 check_protocol_composition.py` in the existing learning directory to reproduce it.
 
-The [separate internal review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPOSITION-REVIEW.md) checks the proof scope and implementation limits. The theorem gives a contract to establish for a concrete learner; its premise is not yet a proved realization of the parallel predictive machinery. No empirical realization, new learning algorithm, general termination guarantee or completion of the unified foundation is claimed by this interface.
+The [separate internal review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROTOCOL-COMPOSITION-REVIEW.md) checks the proof scope and implementation limits. This theorem gives a contract to establish for a concrete learner; the subsequent application has its own proof and audit. No empirical realization, new learning algorithm, general termination guarantee or completion of the unified foundation is claimed by this interface.
