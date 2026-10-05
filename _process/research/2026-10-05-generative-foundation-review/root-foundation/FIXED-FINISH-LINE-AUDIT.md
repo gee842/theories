@@ -2,6 +2,8 @@
 
 6 October 2026. AI-authored read-only audit with three separate collaborating-agent assessments. Snapshot: 2026-10-06T06:06:15+07:00. [Recorded source identities and development statuses](FIXED-FINISH-LINE-SNAPSHOT.json) bind this assessment to the inspected versions; active work can supersede its status table. No experiment, formal compilation or new empirical analysis was performed. This note does not change shared completion criteria or accept an unfinished study.
 
+**Accepted update:** §8 records the fresh-evidence/reason/action connection accepted in commit `0e704d6`. Its earlier pending statuses below remain historical snapshots. Other branches retain the inspection dates of their respective entries.
+
 **Finding:** the existing five criteria are adequate. Accepted interfaces should stay closed at their stated scope. The remaining central work concerns the formation and justification of evaluative concern, its compatible continuing use, and the evidence supporting the generality claimed. An unlimited sequence of further component constructions is not a completion requirement.
 
 ## 1. Keep the same five criteria
@@ -99,3 +101,15 @@ The follow-up identities in the snapshot file record a later inspection during a
 | Architecture formation | Implementation/checker and a passing handoff receipt now exist. That receipt covers preparation, the eight-slot coupling prefix and architecture entrance only; new-suffix acceptance remains pending. |
 
 These changes materially advance the named local obligations. They do not change the fixed completion criteria or discharge the evaluative, justificatory and empirical connections identified above.
+
+## 8. Accepted fresh-evidence connection
+
+Commit `0e704d6` accepts [fresh recipient evidence → revised instrumental reasons → paid same-recipient action](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-REVISION.md). Its [integration receipt](REASON-REVISION-INTEGRATION.json) and [independent collaborating-AI review](REASON-REVISION-REVIEW.md) establish local conditional acceptance. The earlier pending labels in §§2 and 7 are superseded for this connection. This audit checks those receipts and source identities without rerunning the study.
+
+The accepted result includes **67 new Lean declaration audits** and independent reconstruction of **28 cases, 84 arms, 1,064 inherited continuations and 20,188 saved snapshots**. Actual new acquisition produces fresh-bank facts; a paid reader/reason process reconstructs the supported command and an enabled action uses it for the same recipient. The proof explicitly separates the observation law from the law at use and requires the relevant correspondence to remain stable. Old and fresh records are not combined under a falsely unchanged factual law. Inactive, interrupted, unknown and unaffordable continuations remain in the account.
+
+Review found a real authorization defect in the first numerical implementation: a retained command token could fund another physical trial without a new binding. The accepted repair consumes the read latch at import and retires authorization after use. The original artifacts and counterexample remain preserved; only token fields change in 1,446 snapshots, with physical outcomes, costs and probability unchanged. This provides evidence for the importance of checking actual interfaces, while preserving the distinction between finite executable checks and the Lean proof's stated scope.
+
+**Closed obligation:** finite revision of instrumental reasons through new consequences and their paid use under the declared calibration, stability, identity and resource conditions. Replaying stale evidence is no longer the only constructed route. Conventional dispatch and direct learned-register use preserve their cost savings; the result establishes neither the necessity of explicit reason computation nor its universal superiority.
+
+**Remaining obligation:** formation and justification of evaluative concern, its effective corrigible use through succession, and the synthesis and evidence required at the generality claimed. G, ethical warrant, calibrated observation, recipes, permission and investigation scheduling remain supplied at this interface. The result does not silently combine or rearm the pre-import inspector; §6's downstream-contract analysis remains applicable. This accepted connection stays closed unless new evidence defeats a claim within its actual scope.

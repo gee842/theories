@@ -288,5 +288,53 @@
         "exists": false
       }
     ]
+  },
+  "fresh_evidence_acceptance": {
+    "snapshot_local_time": "2026-10-06T06:34:56+07:00",
+    "accepted_commit": "0e704d60ba59ff6ada04aa1b2015958569d33d52",
+    "scope": "Receipt/source-identity inspection only; accepted local finite composition. No experiment or Lean rerun. Earlier snapshots retained.",
+    "integration_status": "passed",
+    "integration_source_hashes_checked": 122,
+    "source_hash_mismatches": [],
+    "counts": {
+      "new_lean_audits": 67,
+      "comparison_arms": 84,
+      "histories": 1064,
+      "snapshots": 20188
+    },
+    "evidence": [
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REASON-REVISION-INTEGRATION.json",
+        "sha256": "e90eb731e27f699ff9ee78b2d190c480efb67b8a69a7d331736d9e1ad3518380"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REASON-REVISION-REVIEW.md",
+        "sha256": "4ad3b152eb8dd12f62d08b4c80147b90cc679c60b9ea6f2848014ec91732a13d"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/review-acceptance.json",
+        "sha256": "883ff6d3301d6dae7df8eff570da1019ac5aded1e2379f8e272ad58e017a43e4"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/model-verification.json",
+        "sha256": "a7ad2c4c4bea1ff0892243e5adf19200d60ae0d8ab88b71b72fb95859aad81b8"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/verification.json",
+        "sha256": "c64b48353664b8687e6f5d58eb9f807fc54f2d3cc40cf47e8394a27507490cef"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/review-history/post-write-latch-finding.json",
+        "sha256": "17197722d8f375bfd641dba22defad18d5c44e82c4dac6d49a9bef831c5843a1"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/review-history/retire-command-token/preservation.json",
+        "sha256": "084d249df14796800a11055a9b132015f7526ef481ac227a4ccc4f9fc908cdb4"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-REVISION.md",
+        "sha256": "a5dc9b9dcb277332dbe4e9b56732ba1a5ae3411bd7a162c87624eca890cfceb3"
+      }
+    ]
   }
 }
