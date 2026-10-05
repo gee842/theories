@@ -1,0 +1,446 @@
+{
+  "status": "pass: conditional paid pre-import study integrated after independent numerical, formal and conceptual review",
+  "scope": "File identities, preserved accepted dependencies, local links and accepted receipt scopes. This check does not rerun scientific models, rebuild Lean or establish Python refinement.",
+  "named_connection": "Actual acquired recipient memory to constructed paid inspection before import, scoped command use and actual recipient consequence.",
+  "cases": 52,
+  "arms": 156,
+  "histories": 1976,
+  "prefixes": 50352,
+  "independent_row_metric_comparisons": 63232,
+  "new_lean_theorems": 29,
+  "compiled_modules": 21,
+  "deliberate_checker_faults_rejected": [
+    "wrong_paid_candidate",
+    "qualification_from_elsewhere",
+    "unpaid_read",
+    "rearm_after_import",
+    "destination_substitution",
+    "actor_target_substitution",
+    "premature_physical_phase",
+    "omitted_paid_comparison"
+  ],
+  "accepted_parent_commit": "12cfd2124eac4259757d075e05add81066a8e7b0",
+  "preserved_dependency_files": 52,
+  "producer_source_hashes_checked": 61,
+  "checked_local_link_count": 91,
+  "checked_local_link_targets": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "SEMANTIC-CALIBRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "RECIPIENT-REASON-ACTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROTOCOL.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/check_model.py"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-COMPARATORS.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "../../../sources/15-codex-theory-conversations/2026-10-06-alignment-governance-and-future.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-COGNITION-CONNECTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "ALIGNMENT-AND-GOVERNANCE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/HANDOFF.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "RECIPIENT-CUE-GROUNDING.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-INTEGRATION.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-ACTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md",
+      "to": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md",
+      "to": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROPOSAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md",
+      "to": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/protocol-freeze.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md",
+      "to": "PREIMPORT-COGNITION-CONNECTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-COMPARATORS.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-CALIBRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-COMPARATORS.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-COMPARATORS.md",
+      "to": "SEMANTIC-CALIBRATION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-COGNITION-CONNECTION.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-COGNITION-CONNECTION.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-COGNITION-CONNECTION.md",
+      "to": "INFORMATION-AND-RENEWAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-COGNITION-CONNECTION.md",
+      "to": "INVARIANCE-AND-PRIOR-ART.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-COGNITION-CONNECTION.md",
+      "to": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "../../../action/README.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "check_model.py"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "independent-verification.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "formal/README.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "formal/verification.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "HANDOFF.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "model.py"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "results.json.gz"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "result-files.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "fixtures.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "first-run-receipt.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "PROTOCOL.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "PROPOSAL.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "cases.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "IMPLEMENTATION-CLARIFICATIONS.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "SCHEDULE-CLARIFICATIONS.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "HANDOFF.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "protocol-freeze.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "case-freeze.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md",
+      "to": "schedule-freeze.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROTOCOL.md",
+      "to": "PROPOSAL.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROTOCOL.md",
+      "to": "HANDOFF.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROTOCOL.md",
+      "to": "../../../../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROTOCOL.md",
+      "to": "../../../../../../../../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-COMPARATORS.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROPOSAL.md",
+      "to": "../../../action/PROTOCOL.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROPOSAL.md",
+      "to": "../../../action/model.py"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROPOSAL.md",
+      "to": "../../../action/README.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROPOSAL.md",
+      "to": "../README.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/HANDOFF.md",
+      "to": "../../../../../../../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/HANDOFF.md",
+      "to": "PROTOCOL.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/HANDOFF.md",
+      "to": "formal/README.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md",
+      "to": "../PROTOCOL.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md",
+      "to": "../PROPOSAL.md"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md",
+      "to": "verification.json"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md",
+      "to": "InspectionPreparation.lean"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md",
+      "to": "PaidPreImport.lean"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md",
+      "to": "../../formal/SemanticCalibration.lean"
+    },
+    {
+      "from": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md",
+      "to": "InspectionWitness.lean"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "PREIMPORT-EVIDENCE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "PREIMPORT-EVIDENCE-COMPARATORS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "PREIMPORT-EVIDENCE-INTEGRATION.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "PAID-PREIMPORT-EVIDENCE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "THEORY.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "JOINT-FORMATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "ETHICAL-FOUNDATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "RECIPIENT-RENEWAL.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "SEMANTIC-CALIBRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "RECIPIENT-REASON-ACTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "PAID-PREIMPORT-EVIDENCE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "to": "SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "to": "RECIPIENT-REASON-ACTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "to": "PAID-PREIMPORT-EVIDENCE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "to": "PAID-PREIMPORT-EVIDENCE.md"
+    }
+  ],
+  "file_hashes": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PAID-PREIMPORT-EVIDENCE.md": "258d9f15070f5cb7504eed66a60db758ed82f49fa94a3421107c5a7cf4dfa4e1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md": "cb944389c72af584991df740c390000d8333f47d0f215ebf21027621c57a3f15",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-COMPARATORS.md": "1627d5bffad59a04cd918d62094b121e722c73dec632093a2aaf9940451bc1a6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-COGNITION-CONNECTION.md": "d10d623ef2b27adf0be69af6b9472b8e0ada007416f831bad355f23104334f1b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md": "3114f75654586caf4eb119c9f1a04805255905b14ed1081610349b164410efd2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROTOCOL.md": "225399036d5fb6a4fdd1d68c2e3d177d339db5891dc32c7eb98add3d05d93a81",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/PROPOSAL.md": "5536913f1fc36ed27581d1d86a8e137520c8982c0e63ea5647fa6457bc9839ce",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/IMPLEMENTATION-CLARIFICATIONS.md": "53d00302e1e990c1bacc956bf62914a3d29e6699a5641d4f1084aa7b48abebbe",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/SCHEDULE-CLARIFICATIONS.md": "de15638df15ebe71add80fc91607084ddff7019ddcfc0f13e99e05284c8f9052",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/HANDOFF.md": "a511b4b4c5fa9d64b998a3fbcd7abe2d6ca246db268d2f89735778402053fa2f",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md": "c84c83e70566a4d39aa1d9560e5b98e8d413941042bc32b7498c7a69e03e546b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/model.py": "f24544e09c8309f4c046ccafa8558d0da2fa5cbf2709737ac7d1402aea62dccd",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/check_model.py": "07e71161ac2bffd0c5c96de3fe51e6725ee32b09575a194ba0a34091a18f7e4b",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/cases.json": "89efa7c99932f35003b0c587a199010073c3c6179301ce8d5ae57ee4b0543d51",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/fixtures.json": "57deebc25e51fd40a1ecfde30bbdb6057d7a7851f8aecd38644d25365a8ccf74",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/protocol-freeze.json": "8086d47888f6e60409cb481360b21cb705c46cac6bd36e46b2ba3cc21f4613eb",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/case-freeze.json": "9e5d0f12cb2e7851190b2caf973398734186db7e4930daea8814c3cda13ccf37",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/schedule-freeze.json": "f5d1b9065b82f76d17f7268e1c32d704ca34bce6d62bfe9dbdb10c30d3824fa6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/result-files.json": "89dc05dc4cedbc7bfe839b93b53fd563ee984fbf0be117444f44226a48430638",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/first-run-receipt.json": "89dc05dc4cedbc7bfe839b93b53fd563ee984fbf0be117444f44226a48430638",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/independent-verification.json": "6893922766d72e7b8dc6a7823427467bffc66b4df9a10f1508d586bf62867b80",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/check.py": "fa8c4078f020a6b522ee03a4062089e96dc0cb406a49b744af46b63a379b90e1",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/verification.json": "fd1cefa47b83ce3e2b56f57cd614902b8e8ae219939652836d85f35ea5ed5d26",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionPreparation.lean": "474a6b7bd6ed1e16f17109b6938ce79d5fb11b0cbe867e797b8ecba663a57843",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean": "249820368d060ca93f9b1499eb39131caea8e2148fff2f35ff832bfcd0fe62e6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/InspectionWitness.lean": "ca238bd7cfb0e3931a25f1d259013b293c088b4f318732bf0923426fd383ac14"
+  },
+  "compressed_result_sha256": "ffed4568fdb5c3707954f6b107e58fb77456d8cb2009cc518ace0d5f7f93cae2",
+  "uncompressed_result_sha256": "466c2f4482612f04b179fd7e31827b2bffab1b519ddfa98d24e9e4ed21d6854c",
+  "integration_indexes_checked": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md"
+  ],
+  "supplied_or_unresolved": [
+    "physical recipes and tariffs",
+    "original calibration and protected acquired origin",
+    "binding and causal invalidation",
+    "stable law through action",
+    "faithful import and feasible trial",
+    "support objective and ethical standing",
+    "legitimate authority",
+    "fresh observation and revision",
+    "learned-AI and empirical generalization"
+  ],
+  "next_connection": "Actual new recipient consequences to paid retained evidence, warranted reason/command revision and effective changed action; no implicit rearming.",
+  "new_empirical_experiments": 0,
+  "python_lean_refinement_proved": false,
+  "unified_foundation_complete": false,
+  "checker_sha256": "b66aa3728afeb07c2df04570c2217bb9bc248a1a0aacd5a327cf7430f33c7044"
+}

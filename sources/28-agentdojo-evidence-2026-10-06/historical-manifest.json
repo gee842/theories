@@ -1,0 +1,585 @@
+{
+  "title": "Historical AgentDojo source audit, no benchmark execution",
+  "retrieved_utc": "2026-10-05T23:27:23.292920+00:00",
+  "current_corpus_commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "historical_commits": [
+    "af7266303c748a9cf0442d71ceabc9d2488d7188",
+    "a73028fb7bae3c6cf05294d6a1756b34cd90d63c"
+  ],
+  "commit_selection": "Latest Git history entry for each of two previously inspected task0 attacked discovery logs; commit-time source, not an execution provenance assertion.",
+  "license": "Current upstream repository LICENSE is MIT; paper Appendix E.4-E.5 licenses code and data MIT unless otherwise marked. These early historical trees contain no LICENSE. Current LICENSE preserved separately by root under original/LICENSE.",
+  "scope": "Only source, fixture and metadata preservation; no model requests, benchmark imports, tool actions or aggregate log outcomes.",
+  "files": [
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/scripts/benchmark.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/scripts/benchmark.py",
+      "bytes": 7314,
+      "sha256": "a201a579b40748ab9f2677b057cca2e9886efa2e9ce61362a2b76f92168e5b3f",
+      "git_blob_sha1": "c68507e8bb87d9dc6ec43d004686bd54dea7d674",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "scripts/benchmark.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/task_suites/banking/injection_tasks.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/task_suites/banking/injection_tasks.py",
+      "bytes": 15881,
+      "sha256": "c172a2c64acfa1911a9156e8260a2cc6e751ef5e6d17a3c3a16a2ee0c1de2f58",
+      "git_blob_sha1": "91766672ae97cfc5969e0ef79e8aeec5c746b6e7",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/task_suites/banking/injection_tasks.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/task_suites/banking/user_tasks.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/task_suites/banking/user_tasks.py",
+      "bytes": 19752,
+      "sha256": "9a94f36f6b42c4e04f4b74c4e48cae4debbdeccca7174a39a78ef0ae06d03f65",
+      "git_blob_sha1": "8d86a2e6324b33b420d88a363f9ddacf7e1d7416",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/task_suites/banking/user_tasks.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/task_suites/banking/task_suite.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/task_suites/banking/task_suite.py",
+      "bytes": 1190,
+      "sha256": "012beb6624975371b2d5ee8c6477b8e8fb25d6ed4fd850ecfc78866a8372afd7",
+      "git_blob_sha1": "f437296957a4bc26e13739f2f051b62db4759af8",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/task_suites/banking/task_suite.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/task_suites/task_suite.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/task_suites/task_suite.py",
+      "bytes": 13986,
+      "sha256": "80a10ea295685dc998ed92512c4fd9eee1bd0d6e2688ffd7cbf544a3e3e41a3e",
+      "git_blob_sha1": "bc3eb613626d8d638af8f60a77bbd7f64b71a99e",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/task_suites/task_suite.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/base_tasks.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/base_tasks.py",
+      "bytes": 6241,
+      "sha256": "f7fcf6c0aa922c69fbc75c2c8e8c94dca991a2cc33e196a16f17629668882869",
+      "git_blob_sha1": "b2f7d19017f1d43cf59f14a3ef8837b5aa66f7db",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/base_tasks.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/tools/banking_client.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/tools/banking_client.py",
+      "bytes": 5339,
+      "sha256": "9aa11448461e555e5e4fb455b1c14510b613ec9d6df5e5a50eb95e6f6068dcc7",
+      "git_blob_sha1": "819508679786fedda79caf0e978aa767118ed7b5",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/tools/banking_client.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/tools/user_account.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/tools/user_account.py",
+      "bytes": 2069,
+      "sha256": "999050bda44327a6f7b65e2704e038cf82d77a3661bfb9ad5d877ab957fabd63",
+      "git_blob_sha1": "c3a199b92dac5cc18f293a9c02c92cc078847861",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/tools/user_account.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/tools/file_reader.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/tools/file_reader.py",
+      "bytes": 488,
+      "sha256": "83560b50341e31e901b147b217f766a20aad05655d32b0072400c447aad053ad",
+      "git_blob_sha1": "a00df9a0b94236aa7378102f8fb1633285177f22",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/tools/file_reader.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/agent_pipeline/make_pipeline.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/agent_pipeline/make_pipeline.py",
+      "bytes": 7379,
+      "sha256": "42664b2f6d7a12e7ccfc3417feff0b20975f754e83d06795fc895a952bc0fe34",
+      "git_blob_sha1": "780d293d78f180ac98648262f3a3c0c3dcc2e468",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/agent_pipeline/make_pipeline.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/agent_pipeline/basic_elements.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/agent_pipeline/basic_elements.py",
+      "bytes": 2515,
+      "sha256": "15887e30e335475f9d56782724524a442f0affb6db97f4d6f43b463d5bf4e4ed",
+      "git_blob_sha1": "9d9c06fb0cd888022ea1eba969ab24a0dfd61552",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/agent_pipeline/basic_elements.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/agent_pipeline/tool_execution.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/agent_pipeline/tool_execution.py",
+      "bytes": 4859,
+      "sha256": "84bc2cf85d2a766ec93aa4da9582c933da322b81167af2b17eea7a8f218055cf",
+      "git_blob_sha1": "0cd202676e8035febbf9c93629d17ca4426a40e7",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/agent_pipeline/tool_execution.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/agent_pipeline/llms/openai_llm.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/agent_pipeline/llms/openai_llm.py",
+      "bytes": 6972,
+      "sha256": "a1595c6d0e235ca929195c9200bfa01dbba0bf4c64c515f1c6134d958eaef5a8",
+      "git_blob_sha1": "ec43caf75ede915cc625e3207270c0c0761eceb6",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/agent_pipeline/llms/openai_llm.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/benchmark.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/benchmark.py",
+      "bytes": 12660,
+      "sha256": "9bcc0e8808c59341753f7d6213087f4a125f977746e0580f45e927df476a9dc3",
+      "git_blob_sha1": "23f4a53ce961ac3d3161266c9b597e569e4ad126",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/benchmark.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/attacks/baseline_attacks.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/attacks/baseline_attacks.py",
+      "bytes": 10832,
+      "sha256": "884a36ae17d50299a3c1edba6f7d5bf949020a89daaf4dabb91025dc6431494e",
+      "git_blob_sha1": "1d0c53f6a7dde4f10cc81c6c58834ffb6a05da8d",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/attacks/baseline_attacks.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/attacks/base_attack.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/attacks/base_attack.py",
+      "bytes": 3332,
+      "sha256": "f99896d8862c13928fc815d5358e2e66c5ec33eb4273edaae1b150a00afa749c",
+      "git_blob_sha1": "dfe440214a55966c893b4bd091a090254866536e",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/attacks/base_attack.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/attacks/make_attacker.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/attacks/make_attacker.py",
+      "bytes": 4748,
+      "sha256": "c4ba64feb5c2bd02a883fce8fb5872ae55b1f302518af140debb86c74f797dbc",
+      "git_blob_sha1": "56d3e8a87c14bc5261790ebf4e6a04e795d12672",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/attacks/make_attacker.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/functions_engine/functions_engine.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/functions_engine/functions_engine.py",
+      "bytes": 7313,
+      "sha256": "9f7f36a107eb912761f7ae772ed3d0e2a2ce7561fa863771b8b1d4603cac5bd7",
+      "git_blob_sha1": "95bf30bf885469663656772e4900c254c8919be3",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/functions_engine/functions_engine.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/functions_engine/__init__.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/functions_engine/__init__.py",
+      "bytes": 443,
+      "sha256": "e9f3af87ace3cbcbdcd8d31ac537f2f8c78a31aaaef73bb52fd50eed6230581d",
+      "git_blob_sha1": "b304c2d8708213090b25ca70ff9fba1d15d2e1b3",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/functions_engine/__init__.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/data/suites/banking/environment.yaml",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/data/suites/banking/environment.yaml",
+      "bytes": 2267,
+      "sha256": "7113379ea7d3d4a05515b306b74b78e1f263a3f6e483a7b73e32ae9c81ac6674",
+      "git_blob_sha1": "6fde1b0920095dca46e9444c386c0c45b9f6cf16",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/data/suites/banking/environment.yaml"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/data/suites/banking/injection_vectors.yaml",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/data/suites/banking/injection_vectors.yaml",
+      "bytes": 655,
+      "sha256": "5a18bd3aeb6d8d9e9fe94458cd7e06ceab4ed80aad85c2f42df2391af41eb0b5",
+      "git_blob_sha1": "6b74c856af5e8694fbaf45750d878bb3c23e0f09",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/data/suites/banking/injection_vectors.yaml"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/data/system_messages.yaml",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/data/system_messages.yaml",
+      "bytes": 494,
+      "sha256": "b65b4fa81ee473447ae6314b1c41e08f0d53a2e07f2a766901f1f4f1a53c51a4",
+      "git_blob_sha1": "8579ea167f49bdfc833eb195642924d77434ff86",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/data/system_messages.yaml"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/logging.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/logging.py",
+      "bytes": 9754,
+      "sha256": "9f06df987bb06c00bfe68fcc6749a2792db1b7b4bcb5fa3145fd5daf18a3fb4d",
+      "git_blob_sha1": "59823ce648bd629eef8e36e9a3354e248984c74f",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/logging.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/scripts/benchmark.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/scripts/benchmark.py",
+      "bytes": 7314,
+      "sha256": "a201a579b40748ab9f2677b057cca2e9886efa2e9ce61362a2b76f92168e5b3f",
+      "git_blob_sha1": "c68507e8bb87d9dc6ec43d004686bd54dea7d674",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "scripts/benchmark.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/task_suites/banking/injection_tasks.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/task_suites/banking/injection_tasks.py",
+      "bytes": 15881,
+      "sha256": "c172a2c64acfa1911a9156e8260a2cc6e751ef5e6d17a3c3a16a2ee0c1de2f58",
+      "git_blob_sha1": "91766672ae97cfc5969e0ef79e8aeec5c746b6e7",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/task_suites/banking/injection_tasks.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/task_suites/banking/user_tasks.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/task_suites/banking/user_tasks.py",
+      "bytes": 19752,
+      "sha256": "9a94f36f6b42c4e04f4b74c4e48cae4debbdeccca7174a39a78ef0ae06d03f65",
+      "git_blob_sha1": "8d86a2e6324b33b420d88a363f9ddacf7e1d7416",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/task_suites/banking/user_tasks.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/task_suites/banking/task_suite.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/task_suites/banking/task_suite.py",
+      "bytes": 1190,
+      "sha256": "012beb6624975371b2d5ee8c6477b8e8fb25d6ed4fd850ecfc78866a8372afd7",
+      "git_blob_sha1": "f437296957a4bc26e13739f2f051b62db4759af8",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/task_suites/banking/task_suite.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/task_suites/task_suite.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/task_suites/task_suite.py",
+      "bytes": 13986,
+      "sha256": "80a10ea295685dc998ed92512c4fd9eee1bd0d6e2688ffd7cbf544a3e3e41a3e",
+      "git_blob_sha1": "bc3eb613626d8d638af8f60a77bbd7f64b71a99e",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/task_suites/task_suite.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/base_tasks.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/base_tasks.py",
+      "bytes": 6241,
+      "sha256": "f7fcf6c0aa922c69fbc75c2c8e8c94dca991a2cc33e196a16f17629668882869",
+      "git_blob_sha1": "b2f7d19017f1d43cf59f14a3ef8837b5aa66f7db",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/base_tasks.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/tools/banking_client.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/tools/banking_client.py",
+      "bytes": 5339,
+      "sha256": "9aa11448461e555e5e4fb455b1c14510b613ec9d6df5e5a50eb95e6f6068dcc7",
+      "git_blob_sha1": "819508679786fedda79caf0e978aa767118ed7b5",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/tools/banking_client.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/tools/user_account.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/tools/user_account.py",
+      "bytes": 2069,
+      "sha256": "999050bda44327a6f7b65e2704e038cf82d77a3661bfb9ad5d877ab957fabd63",
+      "git_blob_sha1": "c3a199b92dac5cc18f293a9c02c92cc078847861",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/tools/user_account.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/tools/file_reader.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/tools/file_reader.py",
+      "bytes": 488,
+      "sha256": "83560b50341e31e901b147b217f766a20aad05655d32b0072400c447aad053ad",
+      "git_blob_sha1": "a00df9a0b94236aa7378102f8fb1633285177f22",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/tools/file_reader.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/agent_pipeline/make_pipeline.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/agent_pipeline/make_pipeline.py",
+      "bytes": 7379,
+      "sha256": "42664b2f6d7a12e7ccfc3417feff0b20975f754e83d06795fc895a952bc0fe34",
+      "git_blob_sha1": "780d293d78f180ac98648262f3a3c0c3dcc2e468",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/agent_pipeline/make_pipeline.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/agent_pipeline/basic_elements.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/agent_pipeline/basic_elements.py",
+      "bytes": 2515,
+      "sha256": "15887e30e335475f9d56782724524a442f0affb6db97f4d6f43b463d5bf4e4ed",
+      "git_blob_sha1": "9d9c06fb0cd888022ea1eba969ab24a0dfd61552",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/agent_pipeline/basic_elements.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/agent_pipeline/tool_execution.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/agent_pipeline/tool_execution.py",
+      "bytes": 4859,
+      "sha256": "84bc2cf85d2a766ec93aa4da9582c933da322b81167af2b17eea7a8f218055cf",
+      "git_blob_sha1": "0cd202676e8035febbf9c93629d17ca4426a40e7",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/agent_pipeline/tool_execution.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/agent_pipeline/llms/openai_llm.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/agent_pipeline/llms/openai_llm.py",
+      "bytes": 6972,
+      "sha256": "a1595c6d0e235ca929195c9200bfa01dbba0bf4c64c515f1c6134d958eaef5a8",
+      "git_blob_sha1": "ec43caf75ede915cc625e3207270c0c0761eceb6",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/agent_pipeline/llms/openai_llm.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/benchmark.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/benchmark.py",
+      "bytes": 12660,
+      "sha256": "9bcc0e8808c59341753f7d6213087f4a125f977746e0580f45e927df476a9dc3",
+      "git_blob_sha1": "23f4a53ce961ac3d3161266c9b597e569e4ad126",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/benchmark.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/attacks/baseline_attacks.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/attacks/baseline_attacks.py",
+      "bytes": 10832,
+      "sha256": "884a36ae17d50299a3c1edba6f7d5bf949020a89daaf4dabb91025dc6431494e",
+      "git_blob_sha1": "1d0c53f6a7dde4f10cc81c6c58834ffb6a05da8d",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/attacks/baseline_attacks.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/attacks/base_attack.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/attacks/base_attack.py",
+      "bytes": 3332,
+      "sha256": "f99896d8862c13928fc815d5358e2e66c5ec33eb4273edaae1b150a00afa749c",
+      "git_blob_sha1": "dfe440214a55966c893b4bd091a090254866536e",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/attacks/base_attack.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/attacks/make_attacker.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/attacks/make_attacker.py",
+      "bytes": 4748,
+      "sha256": "c4ba64feb5c2bd02a883fce8fb5872ae55b1f302518af140debb86c74f797dbc",
+      "git_blob_sha1": "56d3e8a87c14bc5261790ebf4e6a04e795d12672",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/attacks/make_attacker.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/functions_engine/functions_engine.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/functions_engine/functions_engine.py",
+      "bytes": 7313,
+      "sha256": "9f7f36a107eb912761f7ae772ed3d0e2a2ce7561fa863771b8b1d4603cac5bd7",
+      "git_blob_sha1": "95bf30bf885469663656772e4900c254c8919be3",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/functions_engine/functions_engine.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/functions_engine/__init__.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/functions_engine/__init__.py",
+      "bytes": 443,
+      "sha256": "e9f3af87ace3cbcbdcd8d31ac537f2f8c78a31aaaef73bb52fd50eed6230581d",
+      "git_blob_sha1": "b304c2d8708213090b25ca70ff9fba1d15d2e1b3",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/functions_engine/__init__.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/data/suites/banking/environment.yaml",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/data/suites/banking/environment.yaml",
+      "bytes": 2267,
+      "sha256": "7113379ea7d3d4a05515b306b74b78e1f263a3f6e483a7b73e32ae9c81ac6674",
+      "git_blob_sha1": "6fde1b0920095dca46e9444c386c0c45b9f6cf16",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/data/suites/banking/environment.yaml"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/data/suites/banking/injection_vectors.yaml",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/data/suites/banking/injection_vectors.yaml",
+      "bytes": 655,
+      "sha256": "5a18bd3aeb6d8d9e9fe94458cd7e06ceab4ed80aad85c2f42df2391af41eb0b5",
+      "git_blob_sha1": "6b74c856af5e8694fbaf45750d878bb3c23e0f09",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/data/suites/banking/injection_vectors.yaml"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/data/system_messages.yaml",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/data/system_messages.yaml",
+      "bytes": 494,
+      "sha256": "b65b4fa81ee473447ae6314b1c41e08f0d53a2e07f2a766901f1f4f1a53c51a4",
+      "git_blob_sha1": "8579ea167f49bdfc833eb195642924d77434ff86",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/data/system_messages.yaml"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/logging.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/logging.py",
+      "bytes": 9754,
+      "sha256": "9f06df987bb06c00bfe68fcc6749a2792db1b7b4bcb5fa3145fd5daf18a3fb4d",
+      "git_blob_sha1": "59823ce648bd629eef8e36e9a3354e248984c74f",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/logging.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/yaml_loader.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/src/function_calling_pi/yaml_loader.py",
+      "bytes": 2516,
+      "sha256": "6cf003ddd7dbd5beba4dd848d46e6a1d607c71b8fa8e8f3696c21cb75b29e02b",
+      "git_blob_sha1": "f7fa68babe1e64062766966c379372dd8a3985d3",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "src/function_calling_pi/yaml_loader.py"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/pyproject.toml",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/pyproject.toml",
+      "bytes": 2125,
+      "sha256": "ac96c173fed9ecdc7303ba45671b6db622eb8dcdd46d75a0529e2aaa4457e4de",
+      "git_blob_sha1": "74da7e6d9b0b40989bd2df3c9a0e17a939005376",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "pyproject.toml"
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/requirements.lock",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/af7266303c748a9cf0442d71ceabc9d2488d7188/requirements.lock",
+      "bytes": 7236,
+      "sha256": "ac1938465da4d7fd62036b5129764ddfc43ca14d91d704d27945da3c805d39e7",
+      "git_blob_sha1": "4d5b2440e197177bf8f70a38e88bd1020402fab5",
+      "commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "upstream_path": "requirements.lock"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/yaml_loader.py",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/src/function_calling_pi/yaml_loader.py",
+      "bytes": 2516,
+      "sha256": "6cf003ddd7dbd5beba4dd848d46e6a1d607c71b8fa8e8f3696c21cb75b29e02b",
+      "git_blob_sha1": "f7fa68babe1e64062766966c379372dd8a3985d3",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "src/function_calling_pi/yaml_loader.py"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/pyproject.toml",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/pyproject.toml",
+      "bytes": 2125,
+      "sha256": "ac96c173fed9ecdc7303ba45671b6db622eb8dcdd46d75a0529e2aaa4457e4de",
+      "git_blob_sha1": "74da7e6d9b0b40989bd2df3c9a0e17a939005376",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "pyproject.toml"
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/requirements.lock",
+      "source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/requirements.lock",
+      "bytes": 7236,
+      "sha256": "ac1938465da4d7fd62036b5129764ddfc43ca14d91d704d27945da3c805d39e7",
+      "git_blob_sha1": "4d5b2440e197177bf8f70a38e88bd1020402fab5",
+      "commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "upstream_path": "requirements.lock"
+    }
+  ],
+  "metadata": [
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/metadata/commit.json",
+      "source_url": "https://api.github.com/repos/ethz-spylab/agentdojo/commits/af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "bytes": 1357575,
+      "sha256": "dbc1784f8d1faadc878dfe1082b6f9fbaf69ace1c1be4f45385996b3d539163e",
+      "git_blob_sha1": null
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/metadata/tree.json",
+      "source_url": "https://api.github.com/repos/ethz-spylab/agentdojo/git/trees/af7266303c748a9cf0442d71ceabc9d2488d7188?recursive=1",
+      "bytes": 7842463,
+      "sha256": "a45cbd2bf40ee150d594fce999bd248baa4a011dc077e868b75a2d15ab819569",
+      "git_blob_sha1": null
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/metadata/ancestry-to-current.json",
+      "source_url": "https://api.github.com/repos/ethz-spylab/agentdojo/compare/af7266303c748a9cf0442d71ceabc9d2488d7188...089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+      "bytes": 2200785,
+      "sha256": "718474fe3a504679bf3ff48ac3f5da2b6b7e41bdcb23e16b05b58baf2ae62118",
+      "git_blob_sha1": null
+    },
+    {
+      "path": "historical/af7266303c748a9cf0442d71ceabc9d2488d7188/metadata/discovery-trace-history.json",
+      "source_url": "https://api.github.com/repos/ethz-spylab/agentdojo/commits?per_page=100&path=runs/gpt-4o-2024-05-13/banking/user_task_0/important_instructions/injection_task_0.json",
+      "bytes": 6656,
+      "sha256": "9bb810ed20d398f2a147faee91ad1f3cfe099b093257eba2faf1411a01c4ddba",
+      "git_blob_sha1": null
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/metadata/commit.json",
+      "source_url": "https://api.github.com/repos/ethz-spylab/agentdojo/commits/a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "bytes": 1391184,
+      "sha256": "476cb018caaf056251a110a8dea64c32dfda155f15fd7d78e418468613e6726d",
+      "git_blob_sha1": null
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/metadata/tree.json",
+      "source_url": "https://api.github.com/repos/ethz-spylab/agentdojo/git/trees/a73028fb7bae3c6cf05294d6a1756b34cd90d63c?recursive=1",
+      "bytes": 7172402,
+      "sha256": "52d9408455ab3af219c8438f5f4945f2ef6cb6c9a39fe0a3a5841952e8bbb84a",
+      "git_blob_sha1": null
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/metadata/ancestry-to-current.json",
+      "source_url": "https://api.github.com/repos/ethz-spylab/agentdojo/compare/a73028fb7bae3c6cf05294d6a1756b34cd90d63c...089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+      "bytes": 2173348,
+      "sha256": "cc4b91c66591ac3fcd280d77069e3cde4a5a7bb23c4f1b246b499197b4b9f0b8",
+      "git_blob_sha1": null
+    },
+    {
+      "path": "historical/a73028fb7bae3c6cf05294d6a1756b34cd90d63c/metadata/discovery-trace-history.json",
+      "source_url": "https://api.github.com/repos/ethz-spylab/agentdojo/commits?per_page=100&path=runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_0/important_instructions/injection_task_0.json",
+      "bytes": 3308,
+      "sha256": "91d00602580bba1378d70710f6ef4795bf7e17648980454437986aca673471e4",
+      "git_blob_sha1": null
+    }
+  ],
+  "identical_source_paths_between_commits": [
+    "scripts/benchmark.py",
+    "src/function_calling_pi/task_suites/banking/injection_tasks.py",
+    "src/function_calling_pi/task_suites/banking/user_tasks.py",
+    "src/function_calling_pi/task_suites/banking/task_suite.py",
+    "src/function_calling_pi/task_suites/task_suite.py",
+    "src/function_calling_pi/base_tasks.py",
+    "src/function_calling_pi/tools/banking_client.py",
+    "src/function_calling_pi/tools/user_account.py",
+    "src/function_calling_pi/tools/file_reader.py",
+    "src/function_calling_pi/agent_pipeline/make_pipeline.py",
+    "src/function_calling_pi/agent_pipeline/basic_elements.py",
+    "src/function_calling_pi/agent_pipeline/tool_execution.py",
+    "src/function_calling_pi/agent_pipeline/llms/openai_llm.py",
+    "src/function_calling_pi/benchmark.py",
+    "src/function_calling_pi/attacks/baseline_attacks.py",
+    "src/function_calling_pi/attacks/base_attack.py",
+    "src/function_calling_pi/attacks/make_attacker.py",
+    "src/function_calling_pi/functions_engine/functions_engine.py",
+    "src/function_calling_pi/functions_engine/__init__.py",
+    "src/function_calling_pi/data/suites/banking/environment.yaml",
+    "src/function_calling_pi/data/suites/banking/injection_vectors.yaml",
+    "src/function_calling_pi/data/system_messages.yaml",
+    "src/function_calling_pi/logging.py",
+    "src/function_calling_pi/yaml_loader.py",
+    "pyproject.toml",
+    "requirements.lock"
+  ],
+  "ancestry_caveat": "API compare verifies both historical commits are ancestors of pinned current corpus. This does not prove every saved trace was generated with its contemporaneous committed code.",
+  "selected_log_blob_identity_checks": [
+    {
+      "historical_commit": "af7266303c748a9cf0442d71ceabc9d2488d7188",
+      "pipeline": "gpt-4o-2024-05-13",
+      "selected_paths": 160,
+      "matching_blob_count": 160,
+      "mismatches": []
+    },
+    {
+      "historical_commit": "a73028fb7bae3c6cf05294d6a1756b34cd90d63c",
+      "pipeline": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "selected_paths": 160,
+      "matching_blob_count": 160,
+      "mismatches": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "local_links_checked": 89,
+  "issues": [],
+  "user_quotes_exact": true,
+  "simulation_source_hashes_current": true,
+  "lean_source_checker_log_hashes_current": true,
+  "new_theorem_audits": 39,
+  "document_sha256": {
+    "experiments/market-generativity/README.md": "15031529629cffea981d5c9167c172d724f9135b2f57347ebadc145d199f1369",
+    "experiments/market-generativity/formal/README.md": "6a27a22f1a51f7ff561af06fc7db957693e302073a93b4c39e1e37958b12c48b",
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-FORMAL-REVIEW.md": "db16f43fe0ab8703a4edc668e54a8b5a75a94136c0655055c6c2b9953f9ef98a",
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-IDENTIFICATION.md": "7da8f57ea03b19c7dad7f7340be12264e545a4ed19f7cc5751443878409da0e2",
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-REVIEW.md": "ab9fd1ecbe8ed255da74bd53a882fcc1fba18f7a49d926e24c0c121cbc10bd79",
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-LEAN-REVIEW.md": "015d495dc572de59c27f8e2a597d05da9424e7e03d8a5fafac2786946bac902e",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKET-DYNAMICS-MATH.md": "8bfdb03be8f95a5cbcf0c05c44b5af7084044d9b953653c4ccb4ccf910d4165c",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md": "ef23f041227f0578adefa3c8c3f02e3bb14fb213ac542ef239438e6d0aa0a1cd",
+    "sources/15-codex-theory-conversations/2026-10-06-markets-and-generative-basins.md": "adae52b7c96d18fe49a7e45ce2219fe61243333ef2c123a09033029b16776f30"
+  },
+  "scope": "Document and provenance verification only; scientific checks retain their separately recorded scopes."
+}

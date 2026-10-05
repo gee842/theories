@@ -1,0 +1,397 @@
+{
+  "status": "pass: bounded retrospective study integrated after numerical and conceptual review",
+  "named_connection": "Externally acquired social cue to recipient-directed food-access action; interpretation remains underidentified.",
+  "scope": "This script checks current file identity, source preservation and local link targets. It does not rerun statistics, resolve source discrepancies or validate general AI alignment.",
+  "original_csv_bytes_verified": false,
+  "source_rows": 48,
+  "paired_animals": 24,
+  "single_animal_omissions": 24,
+  "exact_reference_calculations_independently_checked": 50,
+  "mean_difference": 1.3333333333333333,
+  "bootstrap_interval": [
+    0.6666666666666666,
+    2.0
+  ],
+  "new_lean_proofs": 0,
+  "new_animal_experiments": 0,
+  "supplied_or_unidentified": [
+    "training and apparatus",
+    "original-data completeness",
+    "assignment/dependence assumptions",
+    "cue calibration and specific mechanism",
+    "recipient representation",
+    "ingestion/welfare/renewal",
+    "ethical grounds and authority"
+  ],
+  "next_connection": "Independently acquired source information, preserved beneficiary identity and effective delivery under mismatch and change.",
+  "checked_local_link_count": 85,
+  "checked_local_link_targets": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../sources/15-codex-theory-conversations/2026-10-06-alignment-governance-and-future.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../sources/27-rat-cue-grounding-2026-10-06/supplement/rspb20202327_si_001.pdf"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/experiment4-preview.tsv"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../sources/27-rat-cue-grounding-2026-10-06/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../experiments/recipient-cue-grounding/PROTOCOL.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../experiments/recipient-cue-grounding/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../experiments/recipient-cue-grounding/check_analysis.py"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../experiments/recipient-cue-grounding/independent-verification.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "SEMANTIC-CALIBRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../experiments/recipient-cue-grounding/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../sources/27-rat-cue-grounding-2026-10-06/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-INTEGRATION.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md",
+      "to": "REASON-ACTION-EMPIRICAL-CANDIDATES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md",
+      "to": "../../../../sources/27-rat-cue-grounding-2026-10-06/supplement/"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md",
+      "to": "../../../../sources/27-rat-cue-grounding-2026-10-06/supplement/manifest.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "REASON-ACTION-EMPIRICAL-CANDIDATES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "reason-action-evidence/experiment4-preview.tsv"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "reason-action-evidence/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "../../../../experiments/recipient-cue-grounding/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "../../../../experiments/recipient-cue-grounding/protocol-freeze.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "../../../../sources/27-rat-cue-grounding-2026-10-06/preview-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "CUE-GROUNDING-METHODS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "../../../../experiments/recipient-cue-grounding/analysis.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "../../../../experiments/recipient-cue-grounding/check_analysis.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "../../../../experiments/recipient-cue-grounding/results.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "../../../../experiments/recipient-cue-grounding/independent-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "../../../../experiments/recipient-cue-grounding/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/README.md",
+      "to": "analysis.py"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/README.md",
+      "to": "PROTOCOL.md"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/README.md",
+      "to": "protocol-freeze.json"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/README.md",
+      "to": "results.json"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/README.md",
+      "to": "check_analysis.py"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/README.md",
+      "to": "independent-verification.json"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/experiment4-preview.tsv"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/README.md",
+      "to": "results.json"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/PROTOCOL.md",
+      "to": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/PROTOCOL.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/experiment4-preview.tsv"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/PROTOCOL.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/README.md"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/PROTOCOL.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md"
+    },
+    {
+      "from": "experiments/recipient-cue-grounding/PROTOCOL.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "supplement/rspb20202327_si_001.pdf"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "supplement/figshare-article-13213518.json"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "supplement/manifest.json"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "supplement/supplement-portable.txt"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/dataset-metadata.json"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/version-metadata.json"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/files-metadata.json"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/metadata-receipt.json"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/experiment4-preview.tsv"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/README.md"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/reason-action-evidence/preview-check.json"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "preview-verification.json"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "manifest.json"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md"
+    },
+    {
+      "from": "sources/27-rat-cue-grounding-2026-10-06/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REASON-ACTION-EMPIRICAL-CANDIDATES.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "to": "27-rat-cue-grounding-2026-10-06/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "to": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "CUE-GROUNDING-METHODS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "CUE-GROUNDING-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "../../../../experiments/recipient-cue-grounding/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "CUE-GROUNDING-INTEGRATION.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "RECIPIENT-CUE-GROUNDING.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-concern-theory/THEORY.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "REVISABLE-CONCERN-SETTLEMENT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "RECIPIENT-CORRECTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-concern-theory/RECIPIENT-IDENTIFICATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-concern-theory/RECIPIENT-RECORDING-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-concern-theory/RECIPIENT-REASONS-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-concern-theory/RECIPIENT-PUBLICATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "RECIPIENT-CUE-GROUNDING.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "to": "RECIPIENT-CUE-GROUNDING.md"
+    }
+  ],
+  "source_manifest_hash_entries_checked": 16,
+  "unique_preserved_paths_checked": 13,
+  "file_hashes": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md": "b74dd8b8e92864a5bab5ddcb399c35c885dad72f1ba36a8899efbcd6ab378e35",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md": "0ce0267b8d01dd5a5040370c5217a10c81a8e770b49db072c3a7a5be8bc33479",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md": "6c93b5b38f8807f681718a2a2d499375c9655eb044faa7ab8b3467ffe3fb5348",
+    "experiments/recipient-cue-grounding/README.md": "03a4d02e5ed2315bacee8773a099b8107b2ccd207a1d6e887dfa8d50c867bd7c",
+    "experiments/recipient-cue-grounding/PROTOCOL.md": "44fe0ae4b4c03741629109110a6ceb22df8d4dcc161bccf1c512487f47e25f2d",
+    "sources/27-rat-cue-grounding-2026-10-06/README.md": "11da2f7180f626d536bbec517b3ef6d12faec45b925188e7a4122823c2473339",
+    "experiments/recipient-cue-grounding/analysis.py": "9e8de038b6a0f20909e83c64cecdeccee51c2b44e4d397aef071342931dbbc56",
+    "experiments/recipient-cue-grounding/results.json": "f033aef137f7365f41c16f341032cf3c4aed54d6ecf7795392d0ba3736ad5617",
+    "experiments/recipient-cue-grounding/check_analysis.py": "09635e4a7a20db8dd4e98fc3dfcbd872708bd0bbbe7fbdc46c76f67ba1486505",
+    "experiments/recipient-cue-grounding/independent-verification.json": "9bef774ff02951f6ee930804bb7959eec65fa46569e92bb92e7a2ea1bdca86ef",
+    "experiments/recipient-cue-grounding/protocol-freeze.json": "ecf2de412a18b6caba020c44f1991418cb55d7237913f1c36ecf9f6d4934965d",
+    "sources/27-rat-cue-grounding-2026-10-06/manifest.json": "e64739f7a6ecbc79e59f8c4c71fa26257bd83e5b967920c4b541ad1a5ce4e08e",
+    "sources/27-rat-cue-grounding-2026-10-06/preview-verification.json": "2ad699b4326e8ccd38fca86d9f24fdc96c3ba1e6fdaf18328cd4b5347b6f316d"
+  },
+  "integration_indexes_checked": [
+    "RESEARCH.md",
+    "sources/SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md"
+  ],
+  "checker_sha256": "6ee4de2ec218b3a8dfc042a5c6fc395a1c37f0392ee7d94f29afbb1119081b60",
+  "unified_foundation_complete": false
+}

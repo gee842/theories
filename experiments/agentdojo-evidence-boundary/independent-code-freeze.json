@@ -1,0 +1,8 @@
+{
+  "recorded_utc": "2026-10-05T23:27:44.129549+00:00",
+  "status": "Independent reconstruction authored before first execution; no producer imports. Discovery sample schema/labels inspected; not globally outcome blind. Producer-output comparison pending schema.",
+  "files": {
+    "experiments/agentdojo-evidence-boundary/check_analysis.py": "9408cbdf87aab9929a7f53989b14de4035019582351196d53d94ea999d721e04",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGENTDOJO-EVIDENCE-REVIEW.md": "8d0ac81faec9bbb7f3d0bbd629ae24d329549b12992fa8902d800b84c92d381c"
+  }
+}

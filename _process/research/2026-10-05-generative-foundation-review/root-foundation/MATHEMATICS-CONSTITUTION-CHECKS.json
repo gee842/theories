@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-06",
+  "scope": "Document integrity only; general mathematical claims supported by hand proofs and internal review, not these checks. Shared indexes checked only for this continuation's new paragraph.",
+  "documents_checked": 12,
+  "local_links_checked": 76,
+  "local_anchors_checked": 10,
+  "issues": [],
+  "files": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-TRUTH-AND-THE-ROOT.md": {
+      "sha256": "90e069da8a3c30a1b54c1f359d145d4921b4a440666b70a196750fcdd58607ad",
+      "bytes": 22647
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-TRUTH-CONSTITUTION-MATH.md": {
+      "sha256": "e3dbb7b5eac9455bc47ad02f9874f8f41b7c717489c8fdb0d608db018754a656",
+      "bytes": 39129
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-CONSTITUTIVE-ARGUMENT.md": {
+      "sha256": "a3d1aba58e0143a639eaea890469057d04da81e654baa8f2c35529ddc719cba4",
+      "bytes": 31757
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-CONSTITUTION-RIVALS.md": {
+      "sha256": "437aab96383e8be9191f42d6afacb9e980e5dfc74ca10b7d60ab3ebbb6b277dc",
+      "bytes": 20847
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-REVIEW.md": {
+      "sha256": "2f9a0634e7ac92b4bb1e7491c137df5f036989043253f1524ee7f9711338224f",
+      "bytes": 16102
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICS-AND-GENERATIVITY.md": {
+      "sha256": "7ad6da95a2283fa49895653ff00f7c65edb733dea0f4cb383de5ccf428c80f38",
+      "bytes": 30497
+    },
+    "sources/15-codex-theory-conversations/2026-10-06-mathematical-truth-constitution.md": {
+      "sha256": "b23b4f23ec269defc9413743558a3252d96452c0a7e7089dd04cf5e9d3a8478f",
+      "bytes": 1171
+    }
+  },
+  "method": "Extract Markdown inline local link targets; resolve paths relative to containing document; compare fragments with normalized Markdown heading identifiers. SHA-256 records this document snapshot."
+}

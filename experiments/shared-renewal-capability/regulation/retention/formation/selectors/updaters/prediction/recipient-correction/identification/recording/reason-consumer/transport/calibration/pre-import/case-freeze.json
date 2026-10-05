@@ -1,0 +1,8 @@
+{
+  "frozen_at_utc": "2026-10-05T22:53:17.418070+00:00",
+  "status": "Cases and charge/failure details frozen before first new numerical execution.",
+  "case_count": 52,
+  "cases_sha256": "89efa7c99932f35003b0c587a199010073c3c6179301ce8d5ae57ee4b0543d51",
+  "clarifications_sha256": "53d00302e1e990c1bacc956bf62914a3d29e6699a5641d4f1084aa7b48abebbe",
+  "protocol_sha256": "225399036d5fb6a4fdd1d68c2e3d177d339db5891dc32c7eb98add3d05d93a81"
+}

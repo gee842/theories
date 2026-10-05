@@ -2,7 +2,7 @@
 
 6 October 2026. Retrospective reanalysis of the complete public experiment-4 data preview from Gerber, Schweinfurth and Taborsky's *The smell of cooperation*. Across all 24 displayed focal-rat pairs, the cooperating-cue situation has **1.33 more pulls per seven-minute session** than the neutral situation. This measures a difference in recipient-directed food-access actions. It does not identify recipient-specific reasoning, an identity mistake, moral concern or a solution to alignment.
 
-The [analysis](analysis.py) implements the [frozen local protocol](PROTOCOL.md), with its [freeze receipt](protocol-freeze.json). [Results](results.json) retain every source cell string, parsed value, pair, omission and coding diagnostic. Independent numerical verification and conceptual review have separate acceptance scope; the executable result records computation pending that review.
+The [analysis](analysis.py) implements the [frozen local protocol](PROTOCOL.md), with its [freeze receipt](protocol-freeze.json). [Results](results.json) retain every source cell string, parsed value, pair, omission and coding diagnostic. The [independent checker](check_analysis.py) and its [verification receipt](independent-verification.json) accept the numerical reconstruction: all source cells, paired arithmetic, bootstrap replay and 50 exact reference calculations across the full sample and all omissions match. The [conceptual review](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-REVIEW.md) also accepts the scoped implementation and interpretation. The historical executable result keeps its original `computed_pending_independent_review` status; the separate receipt and review record this subsequent acceptance.
 
 ## Source and design
 
@@ -10,7 +10,7 @@ The [preserved TSV](../../_process/research/2026-10-05-generative-foundation-rev
 
 The focal rat faced a noncooperative recipient while receiving odor from another rat elsewhere. The same odor provider was compared while helping versus having no pulling-stick access. Experiment 4's cue was contemporaneous with action. The [primary article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7739497/) and [methods audit](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CUE-GROUNDING-METHODS.md) supply design context. Donor/recipient IDs, treatment sequence and session dates are absent from this preview.
 
-The published result uses n=23; the methods, supplement and complete displayed table support 24 available pairs. The exclusion is unexplained. All 24 are retained, with every possible single-animal omission reported. Published findings and the prior preview descriptives were already known before this computational plan was frozen. This is not preregistration, an outcome-blind study or a reconstruction of the original fitted analysis.
+The published result uses n=23; the methods, supplement and complete displayed table support 24 available pairs. This is an unexplained sample-size discrepancy: no exclusion has been established, and a reporting or version mismatch is also possible. References to an "exclusion" in the frozen protocol and historical code/results describe an unverified possibility, not a determined cause. All 24 are retained, with every possible single-animal omission reported. Published findings and the prior preview descriptives were already known before this computational plan was frozen. This is not preregistration, an outcome-blind study or a reconstruction of the original fitted analysis.
 
 ## Paired count results
 
@@ -34,7 +34,7 @@ The exact equiprobable paired-sign reference calculation gives `24496 / 16777216
 
 ## All single-animal omissions
 
-All 24 omissions appear individually in [results](results.json). Their mean differences range from 1.1739 to 1.4783 additional pulls; paired-sign reference probabilities range from 0.00035095 to 0.00291824; binomial sign references range from 0.00257683 to 0.01181793. No omission is selected or treated as the author's missing exclusion. These ranges describe sensitivity to one animal, not correction of the unresolved source discrepancy.
+All 24 omissions appear individually in [results](results.json). Their mean differences range from 1.1739 to 1.4783 additional pulls; paired-sign reference probabilities range from 0.00035095 to 0.00291824; binomial sign references range from 0.00257683 to 0.01181793. No omission is selected or treated as explaining the published sample size. These ranges describe sensitivity to one animal, not correction of the unresolved source discrepancy.
 
 ## Coding audit and interpretation limits
 

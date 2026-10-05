@@ -1,0 +1,43 @@
+{
+  "retrieved_at_utc": "2026-10-05T23:30:02.214697+00:00",
+  "article_url": "https://www.pnas.org/doi/10.1073/pnas.2101717118",
+  "data_doi": "10.17605/OSF.IO/H24J8",
+  "files": {
+    "cost_of_error_data.xlsx": {
+      "url": "https://osf.io/download/crsu2/",
+      "resolved_url": "https://storage.googleapis.com/cos-osf-prod-files-us-east1/0cd6ae5b0f159531f2442f49a474c5ecfda23a1fcf0965598da99df5d84891cc?response-content-disposition=attachment%3B%20filename%3D%22cost_of_error_data.xlsx%22%3B%20filename%2A%3DUTF-8%27%27cost_of_error_data.xlsx&GoogleAccessId=files-us%40cos-osf-prod.iam.gserviceaccount.com&Expires=1791243063&Signature=MDOiGh1nEJqZYoTOa1ambN9ibzOLv6R3EL9EY5zsfq%2FcONamUTW4pkaq6ZS%2FHZh7YNbn6y9YUHwjp%2BoNAmMHleLfLIpvDEsqlEXJAGy8urNBg1Tg6mvFLyljiya1W8QsqBM8f9Liao61vSUShggHJZfwrtDD3UlXlkaufVDP9SHp6OzCmBgmuJDqhjHApSHnw0U5ko9%2F5oId9cQ8CsWmgMDuCIqWwJSwdrrc6CE7fjsUkiQ7TwlCsR6ZEnz9h44B5tAYwNFuYHA4Kto%2FgwzSAOyxJVG2%2FXDOuktWpbGvwWRLbEJXh1Spq7CjdYmNcNrCW8gWbV9g26pWj7HK03m8Eg%3D%3D",
+      "bytes": 348982,
+      "sha256": "0cd6ae5b0f159531f2442f49a474c5ecfda23a1fcf0965598da99df5d84891cc"
+    },
+    "osf-files.json": {
+      "url": "https://api.osf.io/v2/nodes/h24j8/files/osfstorage/",
+      "resolved_url": "https://api.osf.io/v2/nodes/h24j8/files/osfstorage/",
+      "bytes": 12857,
+      "sha256": "3933c39b8fc10c4698b7c1504c820af4f2d7ddb90b2053946520179db586a344"
+    },
+    "osf-node.json": {
+      "url": "https://api.osf.io/v2/nodes/h24j8/",
+      "resolved_url": "https://api.osf.io/v2/nodes/h24j8/",
+      "bytes": 4238,
+      "sha256": "dadaf53b03383cab083c6f1e9ec7a7edafb8704653eb80624450161fd1d6d555"
+    },
+    "workbook-metadata.json": {
+      "url": "https://api.osf.io/v2/files/608f40cd6801ab02362a7487/",
+      "resolved_url": "https://api.osf.io/v2/files/608f40cd6801ab02362a7487/",
+      "bytes": 2156,
+      "sha256": "5f0d9c4f9cf0e58059eee26fd378eae3479950ef9e0e04a4ff0e8830ddf6d12c"
+    },
+    "workbook-versions.json": {
+      "url": "https://api.osf.io/v2/files/608f40cd6801ab02362a7487/versions/",
+      "resolved_url": "https://api.osf.io/v2/files/608f40cd6801ab02362a7487/versions/",
+      "bytes": 655,
+      "sha256": "66ec0d832052b7c76b8a08356704a00c06739f7e41dcd272b0a2482f9743ee19"
+    },
+    "article-crossref.json": {
+      "url": "https://api.crossref.org/works/10.1073/pnas.2101717118",
+      "resolved_url": "https://api.crossref.org/works/10.1073/pnas.2101717118",
+      "bytes": 9920,
+      "sha256": "2b1e299612b7689fb4c624db9507d9f75cf516068d622bb7238b3dac7ac0e3e4"
+    }
+  }
+}

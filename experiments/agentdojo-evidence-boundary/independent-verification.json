@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-05T23:31:53.205641+00:00",
+  "scope": "Independently reconstructed reported labels and trace metadata; no model or evaluator replay.",
+  "rows": 320,
+  "checked_scalar_fields": 9755,
+  "provenance": {
+    "manifest_sha256": "e4364c27dfb5f345dc623ceca3242f9c66e445ae6145001b75bc1fda24ae0a44",
+    "tree_sha256": "5e64bd28958e631e34230b2371200365826795298d63e3550675418b70f5379d",
+    "protocol_sha256": "d910e7ab54f1155f995807bddca5f5e1dd481a989ab01ccafb45b3033c2120b8",
+    "commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+    "verified_source_files": 343,
+    "verified_trajectory_files": 320
+  },
+  "mutations_rejected": {
+    "missing_row": "Missing/duplicate primary rows",
+    "changed_source_label": "Value mismatch at rows.('baseline', 'u00/clean').utility: True != False",
+    "clean_placeholder_as_attack": "Type mismatch at rows.('baseline', 'u00/clean').reported_attacker_success",
+    "wrong_payload_hash": "Value mismatch at rows.('baseline', 'u00/clean').injections_sha256: '44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a' != '0000000000000000000000000000000000000000000000000000000000000000'",
+    "invented_validity": "Type mismatch at rows.('baseline', 'u00/clean').attack_validity",
+    "wrong_pair_count": "Value mismatch at paired_attacked.utility.known_pairs: 144 != 143",
+    "duplicated_clean_denominator": "Value mismatch at summaries.baseline.clean.utility.known_denominator: 16 != 144",
+    "wrong_leaveout": "Value mismatch at leave_one_task_out.0.reported_attacker_success.repeat_minus_baseline_sum: -23 != -22"
+  },
+  "checker_sha256": "0a6936fbfdda76a69c4d328286219923343a5ad202311d02dc45feb29ffbd8d4",
+  "primary_results_sha256": "61a92bf820c54ffa1070c5e5ae62392368f28f11160bad8827f86408722ebbe4",
+  "exposure_audit_sha256": "a1b77efafd53595b62d53f7c082bbcdb33b9893e4c04f322ccd4eac31398c682",
+  "independent_reconstruction_sha256": "2b30033ee4cdcf971df10d11641a26ae1589c5015a7af748c84aa221b7739b0c"
+}

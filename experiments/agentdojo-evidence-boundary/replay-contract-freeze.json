@@ -1,0 +1,6 @@
+{
+  "status": "frozen_before_replay_aggregates",
+  "contract_sha256": "fe1cdd89f8bab4f7e8d99732d6594942fff9da9ac8b44e2d043f75296814a28c",
+  "time_utc": "2026-10-05T23:27:38.108934+00:00",
+  "prior_knowledge": "Four task-0 discovery traces, published results, source evaluator issues; retrospective."
+}

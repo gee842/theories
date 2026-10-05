@@ -1,0 +1,33 @@
+# Diagnosing experimental access from a retained learned model
+
+6 October 2026. AI-authored protocol before comparison runs, continuing [acquired abstraction](../README.md). Named connection: retained model → acquired tests of its access assumptions → qualified diagnosis or explicit unresolved alternatives. This is a conditional synthetic model-based diagnosis study with supplied apparatus transformations and an operation recipe.
+
+## Actual handoff
+
+Replay the previous successful unary learner and productive `aaaaa` use. Carry its actual learned machine, accessible fuel1030367/65536, source10 and existing 256-cell cartridge. The old durable payload is the seven-cell model and eight controller cells. Do not import its discarded evidence cache, audit trace or executed word into the new learner. The physical port retains its actual phase2 in the environment, while the learner starts with every learned phase possible. A paid diagnostic reprogramming recipe costs1 and adds eight controller cells in the same cartridge; the recipe's origin remains supplied. There is no new cartridge, source packet or free funding.
+
+At the continuation boundary the environment may undergo any combination of the declared changes: complement physical readiness relative to the learned output, complement sensor response, or make reset ineffective. All eight combinations are admitted, not only single faults. Each has three possible current phases, giving24 initial candidate worlds. Candidates are generated from the retained learned model, not the hidden target table. A candidate is stored as a fault-template symbol and a current-state symbol; it carries its state through the actual chronological operations. Reset updates a candidate to the learned initial state only if that candidate says reset works.
+
+The physical target and fault parameters stay inaccessible to the learner. Native commands are `read`, `a`, `reset`, and optionally `probe`. Read observes the sensor. The probe is the earlier phase-controlled extraction with an explicitly paid new receipt: it attempts the sole remaining packet, transfers10 if physically admitted and ready, and otherwise wastes10. The learner observes arrival only, after paying its receipt cost. Source/waste auditing and hidden flags are not diagnosis inputs. Actual credited fuel can pay a subsequent receipt; anticipated credit cannot pay the preceding extraction work.
+
+## Evidence policy
+
+Maintain all compatible apparatus worlds. For a commanded action, advance each candidate's current phase through its own law; for a received reading, eliminate only candidates whose predicted reading disagrees. Before each operation, pay its symbolic preparation and scratch/storage requirements. Pay to retain the resulting belief. An empty set means the current model/interface family is inadequate; never treat it as unanimous support for every diagnosis.
+
+First perform `read,a,read,a,read`. In the retained three-phase 001 cycle, this identifies current phase and the parity of readiness/sensor inversion. Use unanimous current-phase information to move to learned phase1, attempt reset, and repeat the three-read sequence. This tests reset rather than assuming it worked. The remaining sensor-only alternatives agree about reset and inversion parity but disagree about which inversion occurred. Report both.
+
+Two main policies are fixed: preserve the final packet and retain that ambiguity; or move to the learned positive-output phase2 and perform one consequence probe. With known transfer accessibility and a calibrated arrival receipt, the probe distinguishes readiness change from sensor change. It consumes the remaining packet, so this branch cannot claim a second productive use after diagnosis.
+
+## Warrant and adverse conditions
+
+All diagnoses are relative to the supplied transformation family, stability during the assay and faithful native records. The theory does not uniquely identify physical causes from a finite candidate library. A fourth target phase is an outside-family control and may falsify the library; any undetected outside-family rival remains possible in principle. A sensor-only twin transformation toggles both readiness and sensor inversion, preserving every sensor transcript under every adaptive sensor-only policy.
+
+An expanded48-world variant additionally admits a blocked transfer path. The physical packet still exists, but present admission need not match its stored inventory. The raw receipt remains arrival only. No arrival then leaves multiple explanations, including failed readiness and blocked access. A crossed or inverted consequence receipt is another explicit control: a closed-world learner may then diagnose incorrectly. A calibrated additional channel cannot be inferred solely from the channel it is supposed to check.
+
+## Resource law and comparisons
+
+Reuse the prior abstract tariffs: work and durable cell writes1/64, all live-cell rent1/65536 per clock tick, and reset/action/read/attempt1/4. Each event takes one tick plus its declared work. New diagnostic installation costs1; reading the consequence receipt costs1/4. Preserve inherited15 live cells at entrance. Static transformation recipes are supplied control laws; dynamic candidate symbols, updates, filtering, decision scans, retained interpretations, command buffers and all concurrent scratch are charged and capacity checked. These are logical-machine prices, not measured energy or Python memory use.
+
+Examine all24 in-family worlds with the same inherited funds and unknown learner phase, for both sensor-only and consequence-probe policies. Changed physical phases are declared boundary perturbations, not resampling an earlier probability. Report affordable successes and every denied prefix. Compare an independently expressed ordinary consistency-based diagnosis procedure using the same inputs. Also retain expanded access ambiguity, fourth-phase mismatch, inverted receipt, insufficient installation funding, reduced capacity, increased prices and a final-receipt funding boundary. Mathematical tests with larger explicitly provided assay funds, if needed, are separate from the actual funded continuation.
+
+Acceptance requires inherited learned content actually governing tests; no hidden phase/fault label in decisions; correct updating through uncertain resets; retained ambiguity under observational symmetry; a paid native consequence receipt when used; source and fuel preserved; and no claim of renewed operation once the only packet is gone. This closes a bounded diagnosis interface only. Formation and independent warrant of the test channels, open-ended class revision and shared evaluative significance remain further derivations.

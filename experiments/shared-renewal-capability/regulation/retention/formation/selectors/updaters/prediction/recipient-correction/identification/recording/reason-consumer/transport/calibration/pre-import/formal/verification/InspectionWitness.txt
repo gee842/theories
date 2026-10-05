@@ -1,0 +1,6 @@
+'InspectionWitness.actual_original_acquired_anchor' depends on axioms: [propext, Quot.sound]
+'InspectionWitness.actual_paid_read_and_inspection' depends on axioms: [propext, Quot.sound]
+'InspectionWitness.actual_consumption_and_import' depends on axioms: [propext, Quot.sound]
+'InspectionWitness.exact_parent_import_state' depends on axioms: [propext, Quot.sound]
+'InspectionWitness.actual_module_isolation_and_account' depends on axioms: [propext, Quot.sound]
+'InspectionWitness.actual_trial_from_guarded_import' depends on axioms: [propext, Quot.sound]

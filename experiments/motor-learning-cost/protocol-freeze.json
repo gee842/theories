@@ -1,0 +1,7 @@
+{
+  "status": "frozen_before_new_contrasts",
+  "frozen_at_utc": "2026-10-05T23:34:39.775377+00:00",
+  "protocol_sha256": "070940c7933c4aaf4115254b931230eeb50e7c08bffd214a20d3fe4ad3c28594",
+  "source_sha256": "0cd6ae5b0f159531f2442f49a474c5ecfda23a1fcf0965598da99df5d84891cc",
+  "precomputation_review": "Reviewer accepted estimator and requested guard-band amendment, now applied; all biological side interpretation remains conditional on published design."
+}

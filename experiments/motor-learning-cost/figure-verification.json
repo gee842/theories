@@ -1,0 +1,11 @@
+{
+  "status": "generated; visual review separate",
+  "source_result_sha256": "cc6730d6b4259fc87634596ee17c5a47c28e7f24b0aa69dd93d74f618ffcfed0",
+  "plot_source_sha256": "8f0cefcbd512d076b31938e55e5b46763c20af4d5fe41432fbce794e74fcd8d5",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.3",
+  "files": {
+    "paired-contrasts.png": "9211f8ac2b9d73f7efb965d5e3c998982024dae0dc246ef341d9ad1cc1ecac27",
+    "paired-contrasts.svg": "45f7f5b6feae6100f5c2fd0b53a2ffa1202ac3a00d4283a3e5dc16a606f58ebd"
+  }
+}

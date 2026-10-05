@@ -4,6 +4,8 @@
 
 **Positive result:** specified generative data can determine an entire mathematical structure up to the relevant isomorphism, and thereby determine every finitary first-order truth of that structure, including truths no sound effective procedure can exhaustively enumerate. A concrete case below constructs ordinary natural-number arithmetic from a finite operation signature, four recursive equations and the requirement of initiality. Compositional semantics then fixes its whole first-order truth set. Gödelian limitations on effective proof therefore do **not** refute this kind of constitution.
 
+**Universal representation:** C3a recovers every nonempty set-sized first-order structure through a uniform naming-and-table presentation, preserving all its first-order truths. This closes that representational scope question, including uncountable domains. Its input carries the entire domain and atomic diagram, potentially through uncountably many names; it does not establish independent constitutive explanation or a finite presentation. The arithmetic case demonstrates a more economical specified construction.
+
 **Remaining universal obligation:** our proposed common root must justify the truth-determining data, the admitted domains and constructions, the logical interpretation, and the identification of the mathematical subject. The mere availability of alternative structures is compatible with one root constituting all their indexed truths. A counterexample must hold the claimed root and the designated mathematical content fixed while its truth differs. Sections 5–7 give an exact criterion for that test.
 
 The results are self-contained hand proofs of standard mathematical facts and elementary consequences. No new Lean verification, empirical finding or mathematical priority is claimed. The metalanguage here is ordinary classical set-based mathematics, with sets of finite syntax, structural recursion and induction. Its adequacy as the uniquely necessary ultimate foundation is not assumed to have been proved.
@@ -141,6 +143,55 @@ is the unique term-preserving isomorphism from (C6) to \(M\). Consequently all f
 **Proof.** Congruence makes operations independent of representatives; invariance makes the relations well defined. Equation (C7) gives well-definedness and injectivity of (C8); generation by closed terms gives surjectivity. Term evaluation preserves each operation, and the relation hypothesis preserves and reflects every predicate. Any term-preserving map has the displayed value at every class, giving uniqueness. Apply C1–C2 for truth. ∎
 
 The data can be specified by rules rather than by an explicit infinite lookup table. For equations, the least congruence containing all declared equation instances exists as the intersection of congruences containing them; the universal relation ensures this family is nonempty. For positive atomic formation rules, a least closed relation can be defined by finite rule derivations when the rules have finitely many premises. Predicate formation must remain compatible with the quotient. These are definite generative constructions. They neither make arbitrary contradictory logical formation safe nor select the rules without further grounds.
+
+### Corollary C3a — Every set-sized first-order structure has such a presentation
+
+Let \(M\) be **any** structure with nonempty set-sized domain \(D\) for a set-sized finitary first-order language \(L\). Form an expanded language \(L_D\) by adjoining a fresh constant \(c_a\) for each \(a\in D\), with the new symbols disjoint from the original signature. Let \(T_D\) be its closed terms. It is nonempty because \(D\) is nonempty.
+
+For each original \(n\)-ary function symbol and every tuple from \(D\), impose the operation-table equation
+
+\[
+f(c_{a_1},\ldots,c_{a_n})
+=c_{f^M(a_1,\ldots,a_n)}.
+\tag{C8a}
+\]
+
+This includes every original constant \(b\) as the zero-arity equation \(b=c_{b^M}\). No equation identifying distinct new names is added. Let \(E_M\) be the set of these equations and \(\approx_M\) the least congruence on \(T_D\) containing them. The collection \(E_M\) is a set: the original signature and domain are sets, and each operation has finite arity.
+
+Then the algebra on \(T_D/{\approx_M}\) is initial among expanded algebras satisfying \(E_M\), and is isomorphic to the functional part of \(M\) with every element named. Give its relation symbols the exact tables
+
+\[
+R([c_{a_1}],\ldots,[c_{a_n}])
+\iff(a_1,\ldots,a_n)\in R^M.
+\tag{C8b}
+\]
+
+These tables are well defined and recover the whole expanded first-order structure up to a **unique name-preserving isomorphism**. Forgetting the extra names recovers \(M\) and all its original-language first-order truths.
+
+**Proof, every term has a named value.** Structural induction proves
+
+\[
+t\approx_M c_{\llbracket t\rrbracket_{M_D}},
+\tag{C8c}
+\]
+
+where \(M_D\) interprets the new name \(c_a\) as \(a\). An added name already has the required form. An original constant uses its zero-arity table equation. At an original function node, use the induction hypotheses to replace the children by their value names, then apply (C8a). Thus every term class contains a new name.
+
+**Proof, no extra identifications.** The named structure \(M_D\) satisfies all table equations. Its term-evaluation kernel is therefore a congruence containing \(E_M\), and contains \(\approx_M\). If \(c_a\approx_M c_b\), evaluation in \(M_D\) yields \(a=b\). Combined with (C8c), this shows that the classes correspond bijectively to the elements of \(D\), with one new name in each class. In particular,
+
+\[
+t\approx_M u\iff
+\llbracket t\rrbracket_{M_D}=\llbracket u\rrbracket_{M_D}.
+\tag{C8d}
+\]
+
+**Proof, initiality and relations.** In any expanded algebra satisfying \(E_M\), evaluation respects \(\approx_M\) and descends to an operation-preserving map from the quotient. Every class has a term representative, so a map preserving the symbols must be this evaluation map. This proves initiality of the functional quotient. Its unique named representatives make (C8b) independent of any term representative; the table supplies the whole relation, including falsity outside it. The map \([c_a]\mapsto a\) preserves every operation and preserves and reflects each relation. It is therefore an isomorphism of expanded first-order structures. Any map preserving all names must take \([c_a]\) to \(a\), proving uniqueness. C2 applies to the expanded structures and to their original-language reducts, preserving all stated first-order truths. ∎
+
+Initiality here is asserted in the explicitly specified category of algebras for the **functional** signature and equations. The relation tables then expand that algebra. No unspecified category of relational homomorphisms is being assumed. The original structure may have nontrivial automorphisms after its added names are forgotten; the uniqueness above concerns maps preserving all designated names, not arbitrary isomorphisms of the reduct.
+
+This proves genuine universal **representational** scope: every nonempty set-sized finitary first-order structure, including an uncountable one, can be recovered by the same presentation scheme; its full interpreted first-order truth follows from the reconstructed structure. The input, however, contains the entire domain-indexed naming family and the original operation and relation tables. Together they carry its complete ground atomic diagram. The theorem transforms given semantic data into a generative presentation; it does not independently explain that data or derive admissibility of every domain from our current root.
+
+There is no contradiction with the countability restriction on finite terms over a countable signature and countably many generators. For uncountable \(D\), this construction uses uncountably many new constant symbols. It makes no claim to a finite alphabet, finite presentation, effective name encoding or computably enumerable table. Restricting to countably many symbols and finite terms would again limit the number of generated elements. A compact indirect specification of an uncountable structure is another possible method, with its own domain-existence premises; this universal naming construction does not supply that economy.
 
 ### Proposition C4 — Four recursive equations plus initiality fix ordinary arithmetic
 

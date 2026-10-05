@@ -1,5 +1,7 @@
 # Finite checks for mathematical abstraction
 
+**Acquisition continuation, 6 October 2026:** the [paid learner extension](acquisition/README.md) now acquires an exact abstraction through its own observations and prediction failures, preserving actual inherited funds, additional component laws, retention and novel use. Its controls and separate finite enumeration are new implementation evidence. The original 9,994-machine structural check below remains unchanged.
+
 6 October 2026. This owned package checks finite instances and boundary cases from [Mathematical structure, acquired abstraction and finite certificates](../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-STRUCTURAL-RESULTS.md). Its research connection is acquired prediction → reusable abstraction → warranted inference.
 
 The result is a mathematical implementation check. No empirical learning study, physical acquisition mechanism, new Lean verification or mathematical-priority claim is made. The general propositions are hand proofs in the linked note; finite enumeration is not their proof.

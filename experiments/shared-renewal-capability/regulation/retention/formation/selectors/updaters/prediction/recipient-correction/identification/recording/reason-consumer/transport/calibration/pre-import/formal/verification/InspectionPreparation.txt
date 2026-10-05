@@ -1,0 +1,8 @@
+'InspectionPreparation.runnable_trace' depends on axioms: [propext]
+'InspectionPreparation.actual_formation_feasible' depends on axioms: [propext]
+'InspectionPreparation.actual_formation_trace' depends on axioms: [propext]
+'InspectionPreparation.actual_formation_endpoint' depends on axioms: [propext]
+'InspectionPreparation.actual_assembly_and_material' depends on axioms: [propext]
+'InspectionPreparation.exact_parent_prepared_projection' depends on axioms: [propext]
+'InspectionPreparation.original_accounts_partition' does not depend on any axioms
+'InspectionPreparation.omitted_assembly_retains_parts_and_payment' depends on axioms: [propext]

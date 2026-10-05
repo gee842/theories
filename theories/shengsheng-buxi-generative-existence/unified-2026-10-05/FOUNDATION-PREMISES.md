@@ -36,6 +36,8 @@ These are not interchangeable. A kernel-checked theorem validates an implication
 
 The phrase *no custom axioms* in a proof report belongs to the first row. Model data, theorem hypotheses and ordinary proof rules remain explicit. Reports must disclose standard dependencies rather than treating their absence or presence as an ontological result.
 
+**Mathematical-grounding clarification, 6 October 2026:** the [completed argument assessment](MATHEMATICAL-TRUTH-AND-THE-ROOT.md#resolution-of-the-remaining-bridges) distinguishes a canonical construction from a uniquely ultimate explanation of mathematics. Formation rules, equality conditions, admitted domains, background existence principles and logical semantics remain explicit inputs when used. Least closure and initiality give precise relative uniqueness; they do not select their own rule system, and exact truth determination does not by itself establish metaphysical priority. A generative structural identity interpretation is defended as a scoped philosophical extension, not inserted as a proved consequence of the causal presentation. This clarification adds no empirical law or ethical ground and does not complete the unified foundation.
+
 ## 3. Dependencies that the existing work actually tests
 
 The following are relative dependency and counterexample results. A counterexample to an inference does not prove that every formulation must contain the same named variable or recipe.

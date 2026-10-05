@@ -71,3 +71,34 @@ The root proposed an elementary observational-equivalence argument. It is valid 
 For **whole-sequence** equality, `H` must retain the complete relevant observed past, or the alternative process must otherwise preserve shared dependence. Equality of a one-trial marginal kernel does not by itself reproduce correlated repeated trials or shared-donor effects. With the full observed history, ordinary chain-rule factorization supplies the claimed sequence equivalence under the fixed design. This is an existence argument for a saturated descriptive alternative, not evidence that a memoryless cue rule fits all data or that the alternative is a simpler biological mechanism.
 
 Consequently these restricted observables alone cannot identify recipient-indexed internal representation or moral concern without further model restrictions or discriminating interventions. This does not show that the animals lack such capacities, erase the empirical cue contrast, or establish equivalence under new beneficiary-choice or source-mismatch interventions. The argument concerns identification from a specified observation scheme; it is not a new empirical experiment or a completion of cognitive explanation.
+
+## Completed code, result and assumption review
+
+**Accepted at the bounded retrospective scope, 6 October 2026.** This reviewer read the complete [primary implementation](../../../../experiments/recipient-cue-grounding/analysis.py), [independent checker](../../../../experiments/recipient-cue-grounding/check_analysis.py), [reported results](../../../../experiments/recipient-cue-grounding/results.json), [numerical receipt](../../../../experiments/recipient-cue-grounding/independent-verification.json) and [experiment report](../../../../experiments/recipient-cue-grounding/README.md). The source, protocol, implementation and output hashes were compared to the current files. This review is independent of the primary implementation; the root separately owns the independent arithmetic check. No new numerical rerun was needed because this inspection found no unresolved computational issue.
+
+The implementation preserves all 48 raw rows, 24 paired animals, zero counts, three zero differences and the two explicit missing later-timing cells. It prevents malformed primary input from silently becoming an accepted reduced sample. The sign-flip dynamic program preserves multiplicity, including zeros, and includes the tail boundary. The secondary sign probability handles ties separately. Bootstrap draws select complete animal pairs in the declared order with the fixed seed and specified percentile interpolation. Every single-animal omission is emitted without selecting a preferred case. Latency processing is a coding audit, with no imputed events or treatment estimate.
+
+The independent checker reads the TSV separately and compares all raw/parsed rows. Its half-sequence enumeration and binary searches differ from the primary dynamic program; it verifies the 50 reference calculations for the full sample and every omission. It separately reproduces the bootstrap limits. These checks establish computation from the preserved reading edition, not validity of randomization, sampling, measurement, the original CSV or the animal's internal mechanism.
+
+The accepted descriptive result is a paired mean difference of `4/3` additional food-access pulls, with 17 positive differences, four negative and three ties. The declared exploratory paired-bootstrap interval is `[2/3, 2]`; its inferential assumptions remain supplied. The exact paired-sign and binomial-sign reference probabilities are approximately `.0014601` and `.0071974`, respectively. All single omissions retain a positive mean difference, ranging from about `1.1739` to `1.4783`. These are transparent features of this table and the stated calculations, not an independent replication or evidence that unmeasured dependence is harmless.
+
+One nonblocking wording clarification is required for integration: describe the published 23 versus displayed/planned 24 as an **unexplained sample-size discrepancy**. An actual author exclusion has not been established; a reporting or version difference is also possible. The frozen protocol's references to an unexplained exclusion are preserved as historical wording, and the all-omission family remains a sensitivity calculation rather than a reconstruction of any presumed exclusion. This clarification changes neither data selection nor numerical analysis.
+
+Acceptance retains the core limits: a retrospective preview analysis, one bundled contemporaneous cue contrast, no recovered assignment distribution, unknown donor/recipient dependence and carryover, unresolved source discrepancies, and no identification of memory, beneficiary-specific representation, normative concern or future preservation. The empirical contribution is a checked constraint on how helpful action may be interpreted. It leaves the more demanding cue-to-affected-center-to-warranted-action connection open.
+
+Reviewed computational identities:
+
+| Artifact | SHA256 |
+| --- | --- |
+| `analysis.py` | `9e8de038b6a0f20909e83c64cecdeccee51c2b44e4d397aef071342931dbbc56` |
+| `results.json` | `f033aef137f7365f41c16f341032cf3c4aed54d6ecf7795392d0ba3736ad5617` |
+| `check_analysis.py` | `09635e4a7a20db8dd4e98fc3dfcbd872708bd0bbbe7fbdc46c76f67ba1486505` |
+| `independent-verification.json` | `9bef774ff02951f6ee930804bb7959eec65fa46569e92bb92e7a2ea1bdca86ef` |
+
+## Final canonical wording review
+
+Reviewed canonical SHA256, reconfirmed against current bytes: `b74dd8b8e92864a5bab5ddcb399c35c885dad72f1ba36a8899efbcd6ab378e35`.
+
+Read the complete [canonical statement](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md) after numerical review. **Accepted at its stated scope, with no further correction required.** It now calls the 23/24 mismatch an unexplained sample-size discrepancy and does not establish an actual exclusion. It preserves retrospective exposure, preview/original distinctions, supplied inferential assumptions, simultaneous cue timing and the separation of food access from recipient welfare and future continuation.
+
+The kernel argument explicitly separates current conditional predictions from the full joint law: full-history conditioning, preserved observed assignment and relevant cross-unit dependence are required for sequence equivalence. It calls the alternative saturated and descriptive, with neither a fitted-simple-mechanism claim nor an absence-of-understanding conclusion. The empirical contrast survives as a bounded result while the stronger recipient-binding and concern transitions remain open. No additional calculations or original-data verification are claimed by this final prose review.

@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "scope": "Independent equations; no imports from model.py or run.py.",
+  "exact": {
+    "primary_rectangle_points": 2187,
+    "broader_domain_and_ledger_points": 21600,
+    "exact_short_history_steps": 48,
+    "exact_boundary_witnesses": [
+      "high_worst",
+      "outside_rectangle_recovery",
+      "negative_gap_recovery"
+    ]
+  },
+  "trajectory_replay": {
+    "precision": 120,
+    "saved_precision": 80,
+    "horizon": 800,
+    "scalar_comparisons": 48861,
+    "comparison_tolerance": "1e-68",
+    "maximum_absolute_error": "2.9781043072789288389840377546225787412086E-78",
+    "outcomes": {
+      "renewal_basin": {
+        "first_economic_failure": null,
+        "first_any_support_violation": null,
+        "paid_rounds": 800
+      },
+      "bounded_adverse_shocks": {
+        "first_economic_failure": null,
+        "first_any_support_violation": null,
+        "paid_rounds": 800
+      },
+      "capture_collapse": {
+        "first_economic_failure": 21,
+        "first_any_support_violation": 21,
+        "paid_rounds": 21
+      },
+      "same_initial_no_capture": {
+        "first_economic_failure": null,
+        "first_any_support_violation": null,
+        "paid_rounds": 800
+      },
+      "rule_frozen_at_initial": {
+        "first_economic_failure": 21,
+        "first_any_support_violation": 21,
+        "paid_rounds": 21
+      },
+      "ideal_fixed_rule": {
+        "first_economic_failure": null,
+        "first_any_support_violation": null,
+        "paid_rounds": 800
+      },
+      "unfunded_initial_round": {
+        "first_economic_failure": 5,
+        "first_any_support_violation": 5,
+        "paid_rounds": 4
+      },
+      "permanent_authority_veto": {
+        "first_economic_failure": 28,
+        "first_any_support_violation": 28,
+        "paid_rounds": 0
+      },
+      "levy_below_recurring_cost": {
+        "first_economic_failure": null,
+        "first_any_support_violation": null,
+        "paid_rounds": 400
+      },
+      "no_renewing_variant": {
+        "first_economic_failure": 19,
+        "first_any_support_violation": 19,
+        "paid_rounds": 19
+      },
+      "recovery_after_initial_negative_gap": {
+        "first_economic_failure": null,
+        "first_any_support_violation": null,
+        "paid_rounds": 800
+      },
+      "excluded_recipient": {
+        "first_economic_failure": null,
+        "first_any_support_violation": 1,
+        "paid_rounds": 800
+      }
+    }
+  },
+  "sha256": {
+    "model.py": "e14b7612b8dd45b8a63e7c147f0b944aeb5656325bcc7b1d25fd0ea58f293d6f",
+    "run.py": "23bd791c11d7339d2ddbb1af1e4cc4896f766c1a4196908a311d64034e1f8c35",
+    "results/verification.json": "1a1370835d115bc473f8cb1b6bad23b53dbef578e8adf791b743914c341b7cc2",
+    "results/trajectories.csv": "be4b88b7fbffe255de85b035053542e89a54b29463741a9a4ae2821f05c7cf3a",
+    "independent_check.py": "1b0032b00605892a28ab68fdc03e6c85667277dc1e115d5376fafe06f520a8f3"
+  }
+}

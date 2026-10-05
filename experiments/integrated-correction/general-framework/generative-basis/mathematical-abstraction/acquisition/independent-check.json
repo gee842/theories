@@ -1,0 +1,208 @@
+{
+  "exhaustive_unary": {
+    "acquisition_and_retention_fit_36_fuel_256_cells": 222,
+    "equivalent_and_minimal_models": 234,
+    "fixed_supplied_bound": 3,
+    "learned_state_histogram": {
+      "1": 146,
+      "2": 64,
+      "3": 24
+    },
+    "matched_query_hypothesis_and_refinement_traces": 234,
+    "maximum_acquisition_and_retention_spent": "735947/16384",
+    "maximum_peak_cells": 168,
+    "replayed_ledgers": 234,
+    "scope": "mathematical validation with supplemental test stocks, not physical population success",
+    "targets": 234
+  },
+  "fixtures": {
+    "binary": {
+      "certified": false,
+      "ledger": {
+        "events": 83,
+        "fuel_before_return": "1105/16384",
+        "peak_cells": 167,
+        "spent": "588719/16384"
+      },
+      "physical_counterexample": "aa",
+      "retained": false,
+      "status": "funding:cache_lookup",
+      "use": null
+    },
+    "broken_reset": {
+      "certified": true,
+      "ledger": {
+        "events": 62,
+        "fuel_before_return": "1332493/65536",
+        "peak_cells": 39,
+        "spent": "1026803/65536"
+      },
+      "physical_counterexample": "aa",
+      "retained": true,
+      "status": "no_positive_plan_in_declared_search",
+      "use": null
+    },
+    "exact_budget": {
+      "certified": true,
+      "ledger": {
+        "events": 97,
+        "fuel_before_return": "0",
+        "peak_cells": 114,
+        "spent": "1984289/65536"
+      },
+      "physical_counterexample": null,
+      "retained": true,
+      "status": "complete",
+      "use": {
+        "fuel_after_return": "10",
+        "source": 10,
+        "success": true,
+        "transferred": 10,
+        "wasted": 0,
+        "word": "aaaaa"
+      }
+    },
+    "false_bound": {
+      "certified": true,
+      "ledger": {
+        "events": 24,
+        "fuel_before_return": "1762947/65536",
+        "peak_cells": 31,
+        "spent": "596349/65536"
+      },
+      "physical_counterexample": "aa",
+      "retained": true,
+      "status": "no_positive_plan_in_declared_search",
+      "use": null
+    },
+    "fourfold_tariffs": {
+      "certified": false,
+      "ledger": {
+        "events": 26,
+        "fuel_before_return": "3869/8192",
+        "peak_cells": 31,
+        "spent": "291043/8192"
+      },
+      "physical_counterexample": "aa",
+      "retained": false,
+      "status": "funding:target_reset",
+      "use": null
+    },
+    "frozen": {
+      "certified": false,
+      "ledger": {
+        "events": 32,
+        "fuel_before_return": "425549/16384",
+        "peak_cells": 31,
+        "spent": "164275/16384"
+      },
+      "physical_counterexample": "aa",
+      "retained": false,
+      "status": "frozen_after_prediction_failure",
+      "use": null
+    },
+    "installation_denied": {
+      "certified": false,
+      "ledger": {
+        "events": 0,
+        "fuel_before_return": "5",
+        "peak_cells": 0,
+        "spent": "0"
+      },
+      "physical_counterexample": null,
+      "retained": false,
+      "status": "funding:installation",
+      "use": null
+    },
+    "inverted_sensor": {
+      "certified": true,
+      "ledger": {
+        "events": 100,
+        "fuel_before_return": "337615/65536",
+        "peak_cells": 114,
+        "spent": "2021681/65536"
+      },
+      "physical_counterexample": "",
+      "retained": true,
+      "status": "complete",
+      "use": {
+        "fuel_after_return": "337615/65536",
+        "source": 10,
+        "success": false,
+        "transferred": 0,
+        "wasted": 10,
+        "word": "aaaaaa"
+      }
+    },
+    "one_tick_short": {
+      "certified": true,
+      "ledger": {
+        "events": 96,
+        "fuel_before_return": "16405/65536",
+        "peak_cells": 114,
+        "spent": "1967883/65536"
+      },
+      "physical_counterexample": null,
+      "retained": true,
+      "status": "funding:extraction_work",
+      "use": null
+    },
+    "primary": {
+      "certified": true,
+      "ledger": {
+        "events": 97,
+        "fuel_before_return": "375007/65536",
+        "peak_cells": 114,
+        "spent": "1984289/65536"
+      },
+      "physical_counterexample": null,
+      "retained": true,
+      "state_pair_witnesses": {
+        "0,1": "a",
+        "0,2": "",
+        "1,2": ""
+      },
+      "status": "complete",
+      "use": {
+        "fuel_after_return": "1030367/65536",
+        "source": 10,
+        "success": true,
+        "transferred": 10,
+        "wasted": 0,
+        "word": "aaaaa"
+      }
+    },
+    "retention_denied": {
+      "certified": true,
+      "ledger": {
+        "events": 87,
+        "fuel_before_return": "262041/32768",
+        "peak_cells": 114,
+        "spent": "917607/32768"
+      },
+      "physical_counterexample": null,
+      "retained": false,
+      "status": "funding:retention_epoch",
+      "use": null
+    },
+    "small_capacity": {
+      "certified": false,
+      "ledger": {
+        "events": 33,
+        "fuel_before_return": "1686473/65536",
+        "peak_cells": 33,
+        "spent": "672823/65536"
+      },
+      "physical_counterexample": "aa",
+      "retained": false,
+      "status": "capacity:enumerate_table",
+      "use": null
+    }
+  },
+  "hashes": {
+    "PROTOCOL.md": "c1d2e249afde5a1a0d68bba22243e024d22e2d929990d8b173441e1abf79e6b8",
+    "independent_check.py": "61c27c153b5158ba7dabe0eea6c5680a33ab692a2167d64a3defc6a9ccb239ad",
+    "model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+  },
+  "scope": "independent semantic comparator, product graph/minimality and tariff replay; not empirical calibration"
+}

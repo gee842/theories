@@ -1,0 +1,24 @@
+{
+  "status": "completed_local_data_replay",
+  "code_sha256": "e304e6ea5b89a845bf2868b931bd99df19c35fd5723ed334782bbcd8cb5b31f7",
+  "contract_hashes": {
+    "REPLAY-CONTRACT.md": "fe1cdd89f8bab4f7e8d99732d6594942fff9da9ac8b44e2d043f75296814a28c",
+    "REPLAY-SOURCE-CLARIFICATIONS.md": "4c20c8f94ea34e870614c99035097f654923ed5da2de146ec2ea4131f1846e06",
+    "REPLAY-LOADER-CORRECTION.md": "fd5c1e9d5abc2364927015f253453ac808183a7d7ca74cbc6b5b880aff684c03"
+  },
+  "result_sha256": "be65d9320bcd75ade4746259c5b3bcf7312c4d49552543d507c8fee3a8fc55d4",
+  "source_files": 346,
+  "trajectories": 320,
+  "source_manifest_sha256": "e4364c27dfb5f345dc623ceca3242f9c66e445ae6145001b75bc1fda24ae0a44",
+  "historical_manifest_sha256": "2f029126d33bc44c1eaa3affbffb1306f33111afff9c4b0d965ebc37f3e1db8e",
+  "replay_complete": 315,
+  "goal_state_complete": 315,
+  "calls": {
+    "read_matched": 483,
+    "mutation_reconstructed": 480,
+    "recorded_error_no_successful_effect": 4
+  },
+  "issues": {
+    "missing_response": 5
+  }
+}

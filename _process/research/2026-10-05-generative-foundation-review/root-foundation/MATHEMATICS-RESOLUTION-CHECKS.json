@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-06",
+  "scope": "Document integrity only. Mathematical and philosophical findings rely on the explicit hand arguments and internal reviews, not these checks. Shared documents are checked only for the new/revised mathematics-resolution paragraph.",
+  "documents_checked": 13,
+  "local_links_checked": 80,
+  "local_anchors_checked": 19,
+  "issues": [],
+  "review_scope": [
+    "Primary proof inspection of all four resolution companions",
+    "Mathematical review of model-admissibility claims",
+    "Philosophical review of canonical final resolution",
+    "Adversarial review of canonical final resolution and model-admissibility scope"
+  ],
+  "files": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-TRUTH-AND-THE-ROOT.md": {
+      "sha256": "e813c7dcb98f23f695546f9e36ddedd9c3c6f68ff58b4a7564494ccf0e441d1d",
+      "bytes": 37761
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-CLOSURE-RESOLUTION.md": {
+      "sha256": "eb822d250e68158eadd37281dd018a2f08335a93a7b186e7ebf717419a1f29ad",
+      "bytes": 32803
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-MODEL-ADMISSIBILITY.md": {
+      "sha256": "84fd114ded604621a9dbfd35855aaff14af7621d313ca361bc22a6bc673b2f8b",
+      "bytes": 10833
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-GROUNDING-RESOLUTION.md": {
+      "sha256": "2329cde3146122584a2e07a79de0d9d9c812e979e57f878f9189a6f5b25ede2e",
+      "bytes": 24747
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-UNIQUENESS-RESOLUTION.md": {
+      "sha256": "676c5f1829ba8c04dd993a7e89392831fefe99186c7f60ccfb88087cf57df59b",
+      "bytes": 19235
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-REVIEW.md": {
+      "sha256": "9e51a5035622a3561329e041199371277bc915d9584fd0be39aa673ca51f95a4",
+      "bytes": 22368
+    },
+    "sources/15-codex-theory-conversations/2026-10-06-mathematical-grounding-resolution.md": {
+      "sha256": "1933889dcb2acad3786041ab45588df39738416a1e9c5ac20b34c743627f6e05",
+      "bytes": 1245
+    }
+  },
+  "method": "Resolve inline Markdown local paths and normalized heading fragments; compare mathematical delimiter counts; scan missing quad escapes. SHA-256 identifies this document snapshot. Previous constitution receipt is retained as its historical snapshot."
+}

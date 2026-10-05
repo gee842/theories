@@ -1,0 +1,270 @@
+{
+  "accepted_parent_commit": "12cfd2124eac4259757d075e05add81066a8e7b0",
+  "frozen_at_utc": "2026-10-05T22:50:36.362123+00:00",
+  "protocol_sha256": "225399036d5fb6a4fdd1d68c2e3d177d339db5891dc32c7eb98add3d05d93a81",
+  "proposal_sha256": "5536913f1fc36ed27581d1d86a8e137520c8982c0e63ea5647fa6457bc9839ce",
+  "execution_status": "No new numerical execution. Exact case dictionary must be frozen separately before first run.",
+  "preservation": "Original dependency bytes preserved by accepted Git objects; current execution must verify SHA256.",
+  "dependencies": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": {
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "bytes": 14000,
+      "git_blob": "c4da1304f9f67abbccee9680ab1117bb5945480c"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": {
+      "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+      "bytes": 20106,
+      "git_blob": "6c02314a5148ec7866d79b894ed20e09d6bbe25b"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean": {
+      "sha256": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9",
+      "bytes": 14733,
+      "git_blob": "42164cc2c9392664bbf713eef2ad8abfdf7ad1f3"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean": {
+      "sha256": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20",
+      "bytes": 42358,
+      "git_blob": "02b81d4ecf95087504dc61746aa51a530f1b6992"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/process.py": {
+      "sha256": "56c1cccf658cfceed23ed96a83419eb38307fb03df1b1dc608af44a24ad24e68",
+      "bytes": 9464,
+      "git_blob": "d794912553de3dd50b9cc05bc67e74b325196855"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/model.py": {
+      "sha256": "f1c77139eb03f5b3563cfbf5524246fadd92f3ceeece7a674545f369b215aa6d",
+      "bytes": 11858,
+      "git_blob": "b2ffa4abd9f178f298f01ab2d4c13c35066255e1"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/PROTOCOL.md": {
+      "sha256": "6d25a798e3de80f812078625edf5f109f0c4dbaeafd66528dbd20364ab45030f",
+      "bytes": 6763,
+      "git_blob": "c30523b2da6e65dde4e4741209f6a58cc2d9a7fe"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/model.py": {
+      "sha256": "e5f79f69e9a99d20fe8c5d639a4b98d3d891f36bfcb413c982af9791137b40a0",
+      "bytes": 14059,
+      "git_blob": "6fc48bce5a1bd8ef7456f78b4d431cda8891a2e3"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py": {
+      "sha256": "145f1b01fd549fd67076edf9ef664cf8b65cb5c91b292e66b167260187f1a7c5",
+      "bytes": 12775,
+      "git_blob": "ff08c925311daaa9095c4abbc95910a97bdb228f"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md": {
+      "sha256": "d4a008582680f3fd74e7247f32c018022ea4753dfe11ffefdbb1db5d6a4f607c",
+      "bytes": 9503,
+      "git_blob": "ea5bc5bcc613e7362bb7cddf3330f1c46a6bc2dc"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean": {
+      "sha256": "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1",
+      "bytes": 17016,
+      "git_blob": "5f1464e7f5acabd5a8e718744ef81394c0671748"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/PROTOCOL.md": {
+      "sha256": "0fdb7ec28e193706c8e076a623a4c848b6c0c7b5da004de3982c8517702b9b89",
+      "bytes": 7023,
+      "git_blob": "80a3e36d3a35706551a9a995028647748c8fe76a"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean": {
+      "sha256": "3e755a7d74402f8e14ecfe6c9c6b7713c072b181729fe2b50201e166282032b8",
+      "bytes": 25581,
+      "git_blob": "a523c954b16eb67127e0dd00b16dc8064c2e6d01"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/model.py": {
+      "sha256": "5858d2fdcef507323cdfea6495f228e32b6e90098145a9e8a2da8c326e7c0938",
+      "bytes": 13801,
+      "git_blob": "41badde6fa630933319540ad66dde044450d9da8"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/PROTOCOL.md": {
+      "sha256": "c555bfa228f9c5da6c9f2b4e749496d68d9b74302b6bad8739f7600a8cdb56c2",
+      "bytes": 12785,
+      "git_blob": "296c1616f10c48fd511f3615a3b9435f37aef80d"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/check.json": {
+      "sha256": "e7cd7750a569c6151da772489f54123fa48a7a924c99a192b614d8b1c3ad748b",
+      "bytes": 3173,
+      "git_blob": "07590f2acd50c94e72363245edbc8192257996d0"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/fixtures.json": {
+      "sha256": "e16f2c6e954ee5281477e256029f29cee79456d64f147396a8698743dd0b6480",
+      "bytes": 59594,
+      "git_blob": "d06dd84c60b6657651fbf78032a78ecd7941dc1e"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean": {
+      "sha256": "869e37d923316ab27f90c2b34e9b80f5591b9fcfb034b13f2672d9284c79b248",
+      "bytes": 5475,
+      "git_blob": "23c6038120eebde357e070adc2de2c42b17f868a"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean": {
+      "sha256": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d",
+      "bytes": 13778,
+      "git_blob": "590adea9171bc15b2c96e02039b87f5c7e4cfedf"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean": {
+      "sha256": "0e509b5000edd501777c547503b8b96de6a348757d5c3ca9fca8d6e824988be9",
+      "bytes": 8587,
+      "git_blob": "47e97a71fda6b35d7bf169be5a2a2bf7e27dd30d"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean": {
+      "sha256": "d122e604965c7e9ab1757b4c99bc484b619d31f245aaf04d86658b4eeb2dc1c0",
+      "bytes": 13726,
+      "git_blob": "41a8fa6c1dd2cacbea6e34e030068e403af8f8a8"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/model.py": {
+      "sha256": "b1776f56c94c98a980ab0b30b203a2a58c736b7199c32c39c86853655e6a902c",
+      "bytes": 19765,
+      "git_blob": "56599bd25e22644868c967d22c6cf59c71938d58"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/PROTOCOL.md": {
+      "sha256": "7424028285837ef046f1b37e45896e28f354c37dda14c486119d3495d5833f6c",
+      "bytes": 8039,
+      "git_blob": "a82c0e79e61b9b3adb4371c567fd47d32b92be32"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/PROSPECTIVE-CLARIFICATIONS.md": {
+      "sha256": "d4817903a911b75386c143f2b97bd7718adf3c19b7ac063a43687bc178d6ee15",
+      "bytes": 2823,
+      "git_blob": "8b0a642f6077c8f57a4ffa1db81cb6809138ad7c"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/PROTOCOL.md": {
+      "sha256": "11c83453664cd31718928e1fda7af614e322ac9075110949efd2454c01e0f252",
+      "bytes": 12053,
+      "git_blob": "3a26b5ee80006973db78d5b24324c78d2974c971"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/check_model.py": {
+      "sha256": "e6977b159d1340cf5e5ddbf37e08c6e04f7057e2afedfc89f6cb7e7122fc1b0e",
+      "bytes": 38109,
+      "git_blob": "193c9d43ae84db09cb740377b67a09419b8ca03e"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/clarifications-freeze.json": {
+      "sha256": "daecb6d8a70facdcec8c48439cc41d2ebca44dc7e109ca1b397271e4ba71a834",
+      "bytes": 324,
+      "git_blob": "2065b45a19c434bd801fd557354ab4b799812f72"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean": {
+      "sha256": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f",
+      "bytes": 5654,
+      "git_blob": "384b2056060ce5ff985e028c96a74ec4055757f6"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean": {
+      "sha256": "5eb63e2b7af10e610ef6d34f3121d785c1755a86c73422e0654f074f6674cbf7",
+      "bytes": 20017,
+      "git_blob": "fa0b282cc0e3a9951431704901933606b1eeac7b"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean": {
+      "sha256": "56f7b2cc977c36b54705edb5dce2e6692f9831df248c3625e3794b851a1b7c6b",
+      "bytes": 23787,
+      "git_blob": "a2cd7415f0d3a0bc7541ec1333351f89abb0a056"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/model-verification.json": {
+      "sha256": "c0725586ddf4f316713df9862c088dc8d44b1551151ced05d16e95c156afc088",
+      "bytes": 20278,
+      "git_blob": "48c47e9f16ffcd0c422bce982c938b859797e7da"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/model.py": {
+      "sha256": "165ed9df6523082f35c79eeb85342e8000b54b6513d6865ea9545530a472c6d1",
+      "bytes": 26026,
+      "git_blob": "6ee8084d2a09af7ed6d3a015fe22eeaae3339466"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/protocol-freeze.json": {
+      "sha256": "508c3b29087556022acba46942100b75adbf95fb301fc8d9b9c84ac96d0209b5",
+      "bytes": 3074,
+      "git_blob": "d0bebf16045c9ed2127cea5542e2d84493416a53"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/result-files.json": {
+      "sha256": "649d6fe1d4930b907fe2e93c22f08e0e4763b20ef854f80c93feda55d9899d87",
+      "bytes": 465,
+      "git_blob": "255281b685fd478594206b10a07a5813c0748328"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/results.json.gz": {
+      "sha256": "d99fa7caf7fb1611e6c332492d9069df37886b00cb9ea8ea54311de2f6457c59",
+      "bytes": 1793938,
+      "git_blob": "1fa8776ffd08f77fa3e3cf2886f92b14bbffcec5"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/check.json": {
+      "sha256": "4984c3f69e6403157bde6d98362d6e788f402ca57776781f5525e43a31fe97a9",
+      "bytes": 4784,
+      "git_blob": "f3d1d7c4720439d49954e33a05885becf0ae9017"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/fixtures.json": {
+      "sha256": "5952a6e81819f5cf89e9881b6d1129f3badcf35b1bb56b0b06feefe7881dbec8",
+      "bytes": 106575,
+      "git_blob": "e1fb103a451799bad39a46faeb865793f92344d9"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean": {
+      "sha256": "b63de0b8572a4987345dab4116516b283a40dc6f18fbe7b7afe81dee2c5f1218",
+      "bytes": 13466,
+      "git_blob": "8bbfabe071350e38e35d52a6d07831c9564315c3"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean": {
+      "sha256": "7bbd5e4fbfff22b3f679b6aa345756d1ad532cf56a3fbb8fd18f8dbe8a65a5e6",
+      "bytes": 3903,
+      "git_blob": "a468040f28dc46d012135bc2c9b0b3d818d09e02"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean": {
+      "sha256": "f0b7434c1116004658ac711fef1c34044fc28c5fbed24c4357eb2a6d5dc1e04e",
+      "bytes": 11653,
+      "git_blob": "3dd325b2161eb3efa763d27a47a0d6e24667dc14"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean": {
+      "sha256": "2c750ca9fbd432428dc4a69717afdca8862f8efeaabc012429f2031d257d860d",
+      "bytes": 9584,
+      "git_blob": "211065b24df4c23d941f5c894813c598427cd500"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/independent-check.json": {
+      "sha256": "f21926a0dd70400669550ab022660006e71508a717c884e8d26f176e1f0ed14f",
+      "bytes": 20012,
+      "git_blob": "2b9bb00aef2bac26909710ea18e03f8f8cc89639"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/model.py": {
+      "sha256": "e700b46eb378351917555bc1b57e0339f5a9078a27a79402565ab8503efe4723",
+      "bytes": 17617,
+      "git_blob": "07752c310f6ebc4408ee940b2c3006daffd3e56f"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/protocol-freeze.json": {
+      "sha256": "55eb4ff35a319e71f219cfb74680be27c4dde42765e3828a990c7ce9c7686456",
+      "bytes": 250,
+      "git_blob": "bcca232f14f79b2746bb0a5e54002c452d4a1d2a"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/results.json": {
+      "sha256": "b86ff1e30f29d42ab0c084d0c0515367c41d35585b1628c68ae72970f6e7f9bf",
+      "bytes": 8031789,
+      "git_blob": "e2c4888fafe01c29f8c7fa8a8f8b78f18b08f3a2"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/PROTOCOL.md": {
+      "sha256": "a9323a4e0fef9149c75ee9dd7b81fb4851cab006ac74baa91e648cd0d4b89288",
+      "bytes": 8596,
+      "git_blob": "4b821346fb0d4afc5950edf9e76524ecf1d0334f"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/SemanticCalibration.lean": {
+      "sha256": "15ed14bc172ccacf4cebc2c0e8892c22aa4455b47bfd9dfaf430a9c7ebf038d9",
+      "bytes": 8309,
+      "git_blob": "bdda2149e2ed4581f46f744f8595cc63eb3aea30"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/formal/lean-toolchain": {
+      "sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+      "bytes": 25,
+      "git_blob": "33e0c088939ad08c9f2b1befa3118a423b06ad7d"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/model.py": {
+      "sha256": "0da1ab45713d63719d7547f84b2dcefc54a0430f59abeaa2868795e2a768e6cb",
+      "bytes": 17240,
+      "git_blob": "4e6c5e699599ad21cf5c71a8aa19c5038c3f9e73"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/results.json": {
+      "sha256": "f306fe61167e25966e54b793e505b6a9b29d05c3506a1b7da86a7fd1b9296711",
+      "bytes": 20533621,
+      "git_blob": "2fe1915194876a0ef66064b1323fa22ac0a326e8"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/model.py": {
+      "sha256": "278d57ddf2f17d3b4da726fd067f71e323265626d5296ac83beaa2868f70e66a",
+      "bytes": 13389,
+      "git_blob": "e9c7994cd03ad3449754e838e65c8a569caf6d77"
+    },
+    "experiments/shared-renewal-capability/regulation/retention/model.py": {
+      "sha256": "e2ab991293920782584c431c0c8696e12a56d37c0c30caf377e7f79ec905c091",
+      "bytes": 9392,
+      "git_blob": "71c53ded1631e504b765d134ed0c84b9d6ea4b20"
+    }
+  }
+}

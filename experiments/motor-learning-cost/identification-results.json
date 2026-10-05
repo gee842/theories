@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "source_sha256": "94f4b14987a333e2e3bd06c45d1032af90e6807e1c11a9a33d90b934766d07e9",
+  "scope": "Synthetic exact-rational countermodels only; no empirical data, model fit, physical intervention or new Lean claim.",
+  "parameters": {
+    "retention": "3/4",
+    "fixed_gain": "1/2",
+    "effective_gains": [
+      "1/8",
+      "1/2"
+    ]
+  },
+  "input_encoding": {
+    "histories": 18432,
+    "successor_equalities": 92160,
+    "horizon": 5,
+    "conditions": [
+      0,
+      1
+    ],
+    "displacements": [
+      "-1",
+      "1"
+    ],
+    "initial_memory": [
+      "-1/2",
+      "0",
+      "1/2"
+    ],
+    "noise_words": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/16",
+        "-1/16",
+        "1/16",
+        "-1/16",
+        "1/16"
+      ],
+      [
+        "-1/16",
+        "1/16",
+        "-1/16",
+        "1/16",
+        "-1/16"
+      ]
+    ],
+    "error_modes": [
+      "closed_loop_displacement_minus_memory",
+      "externally_clamped"
+    ]
+  },
+  "binary_write_gate": {
+    "schedules": 96,
+    "exact_mean_equalities": 480,
+    "distribution_equality_claimed": false,
+    "one_step_gate_variance_at_memory0_error1": "3/64",
+    "deterministic_effective_gain_variance_same_case": "0"
+  },
+  "exclusion_witnesses": {
+    "matched_delivered_input_outcomes": {
+      "variable_gain": "1/8",
+      "fixed_gain": "1/2"
+    },
+    "equal_current_output_hidden_memory_next_outputs": [
+      "0",
+      "-2/5"
+    ],
+    "intervention_preserving_reencoding_cases": 16,
+    "effect_with_write": [
+      0,
+      1
+    ],
+    "effect_without_write": [
+      0,
+      0
+    ]
+  }
+}

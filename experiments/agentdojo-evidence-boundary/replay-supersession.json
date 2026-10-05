@@ -1,0 +1,32 @@
+{
+  "status": "only_declared_counterparty_proxy_and_reference_changes",
+  "initial_result_sha256": "be65d9320bcd75ade4746259c5b3bcf7312c4d49552543d507c8fee3a8fc55d4",
+  "corrected_result_sha256": "9bb0f3207bed4404ed82e424b5347b1fd3b811c44b9b260b799c7847ea0ef4e7",
+  "all_state_call_label_historical_predicate_literal_and_aggregate_fields_unchanged": true,
+  "complete_proxy_changed_rows": [
+    "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_1/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_10/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_11/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_14/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_15/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_4/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_5/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_6/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_7/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_8/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13-repeat_user_prompt/banking/user_task_9/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_1/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_10/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_11/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_14/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_15/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_3/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_4/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_5/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_6/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_7/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_8/important_instructions/injection_task_1.json",
+    "original/runs/gpt-4o-2024-05-13/banking/user_task_9/important_instructions/injection_task_1.json"
+  ],
+  "complete_proxy_changed_count": 23
+}

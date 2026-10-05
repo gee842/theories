@@ -1,0 +1,8 @@
+{
+  "status": "frozen_before_replay_aggregates",
+  "time_utc": "2026-10-05T23:28:43.819030+00:00",
+  "files": {
+    "REPLAY-CONTRACT.md": "fe1cdd89f8bab4f7e8d99732d6594942fff9da9ac8b44e2d043f75296814a28c",
+    "REPLAY-SOURCE-CLARIFICATIONS.md": "4c20c8f94ea34e870614c99035097f654923ed5da2de146ec2ea4131f1846e06"
+  }
+}

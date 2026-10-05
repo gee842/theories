@@ -1,0 +1,22 @@
+{
+  "reason": "Independent review: goal1 unique-visible-counterparty proxy incorrectly selected first pizza-related transfer when other visible candidates existed. Original contract requires uniqueness. Historical and literal primary predicates unaffected.",
+  "preserved_at_utc": "2026-10-05T23:38:25.033111+00:00",
+  "files": {
+    "replay.py": {
+      "sha256": "e304e6ea5b89a845bf2868b931bd99df19c35fd5723ed334782bbcd8cb5b31f7",
+      "bytes": 23158
+    },
+    "replay-results.json": {
+      "sha256": "be65d9320bcd75ade4746259c5b3bcf7312c4d49552543d507c8fee3a8fc55d4",
+      "bytes": 5120563
+    },
+    "replay-receipt.json": {
+      "sha256": "d85f375f140a89ea672fb930f4739766b6862f81911902ad2f00ed791606fd9b",
+      "bytes": 1015
+    },
+    "REPLAY-FINDINGS.md": {
+      "sha256": "52b2fd1c12e85a1289c5e3e28a8411fd64d83595599a697b53497f187480b6ec",
+      "bytes": 7853
+    }
+  }
+}

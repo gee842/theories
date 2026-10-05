@@ -1,0 +1,27 @@
+{
+  "status": "pass: independent new formation, scheduled outcomes, paid inspection, provenance, identity, physical prefixes and accounts agree",
+  "cases": 52,
+  "arms": 156,
+  "histories": 1976,
+  "prefixes": 50352,
+  "independent_row_metric_comparisons": 63232,
+  "deliberate_checker_faults_rejected": [
+    "wrong_paid_candidate",
+    "qualification_from_elsewhere",
+    "unpaid_read",
+    "rearm_after_import",
+    "destination_substitution",
+    "actor_target_substitution",
+    "premature_physical_phase",
+    "omitted_paid_comparison"
+  ],
+  "checker_sha256": "07e71161ac2bffd0c5c96de3fe51e6725ee32b09575a194ba0a34091a18f7e4b",
+  "model_sha256": "f24544e09c8309f4c046ccafa8558d0da2fa5cbf2709737ac7d1402aea62dccd",
+  "results_compressed_sha256": "ffed4568fdb5c3707954f6b107e58fb77456d8cb2009cc518ace0d5f7f93cae2",
+  "results_uncompressed_sha256": "466c2f4482612f04b179fd7e31827b2bffab1b519ddfa98d24e9e4ed21d6854c",
+  "parent_oracle_sha256": "e6977b159d1340cf5e5ddbf37e08c6e04f7057e2afedfc89f6cb7e7122fc1b0e",
+  "protocol_sha256": "225399036d5fb6a4fdd1d68c2e3d177d339db5891dc32c7eb98add3d05d93a81",
+  "cases_sha256": "89efa7c99932f35003b0c587a199010073c3c6179301ce8d5ae57ee4b0543d51",
+  "dependencies_unchanged": true,
+  "scope": "Independent finite reconstruction. No new empirical experiment, no fresh recipient evidence, no general alignment or Python formal-refinement claim."
+}

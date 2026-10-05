@@ -1,0 +1,710 @@
+{
+  "scope": "Exact rational one-step checks; 80-digit Decimal finite continuations. Not empirical data.",
+  "horizon": 800,
+  "precision": 80,
+  "exact_checks": {
+    "rational_rectangle_points": 2187,
+    "condition_margins": {
+      "selection": "1/2",
+      "influence": "0",
+      "accountability": "1/80",
+      "funding": "0",
+      "supports": [
+        "1/4"
+      ]
+    },
+    "boundary_counterexamples": {
+      "erosion_above_1_16": true,
+      "loss_above_3_4": true,
+      "levy_below_cost": true,
+      "influence_bound_below_target": true,
+      "q_below_profit_threshold": true
+    },
+    "exact_examples": [
+      "one_step_recovery",
+      "initially_negative_gap_recovery",
+      "positive_gap_but_support_failure",
+      "pre_receipt_liquidity",
+      "authority_veto",
+      "absent_variant",
+      "excluded_recipient"
+    ],
+    "cash_and_fund_identities": "exact at every grid point"
+  },
+  "scenarios": {
+    "renewal_basin": {
+      "parameters": {
+        "price": "10",
+        "levy": "1",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "1/2",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "4/5",
+        "accountability": "3/5",
+        "influence": "1/5",
+        "fund": "1",
+        "supports": [
+          "8"
+        ],
+        "operating": true
+      },
+      "options": {},
+      "final": {
+        "renewers": "0.99999999999999999999999999999999999999999999999999999999999999999999999999999999",
+        "accountability": "0.99999999999999999999999999999999999999999999999999999999999999999999999999999995",
+        "influence": "1.0000000000000000000156103748629140317572652635096189296944067937518900990535924E-80",
+        "fund": "1",
+        "supports": [
+          "19.999999999999999999999999999999999995915137878827119016924193588814904192245763"
+        ],
+        "operating": true
+      },
+      "first_economic_failure": null,
+      "first_any_support_violation": null,
+      "minimum_supports": [
+        "8"
+      ],
+      "paid_rounds": 800,
+      "max_cash_residual": "1E-79"
+    },
+    "bounded_adverse_shocks": {
+      "parameters": {
+        "price": "10",
+        "levy": "1",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "1/2",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "4/5",
+        "accountability": "3/5",
+        "influence": "1/5",
+        "fund": "1",
+        "supports": [
+          "8"
+        ],
+        "operating": true
+      },
+      "options": {
+        "erosion": "1/20",
+        "losses": [
+          "1/2"
+        ]
+      },
+      "final": {
+        "renewers": "0.99999999999999999999999999999999999999999999999999999999999999999999999999999999",
+        "accountability": "0.79999999999999999999999999999999999999999999999999999999999999999999999999999995",
+        "influence": "1.0000000000000000000632906126568924173671666543344134168195051588908482596136793E-80",
+        "fund": "1",
+        "supports": [
+          "14.999999999999999999999999999999999996454169338465523142630517076945810182640444"
+        ],
+        "operating": true
+      },
+      "first_economic_failure": null,
+      "first_any_support_violation": null,
+      "minimum_supports": [
+        "8"
+      ],
+      "paid_rounds": 800,
+      "max_cash_residual": "2E-79"
+    },
+    "capture_collapse": {
+      "parameters": {
+        "price": "10",
+        "levy": "1",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "1/2",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "2/25",
+        "accountability": "7/20",
+        "influence": "19/20",
+        "fund": "1",
+        "supports": [
+          "100"
+        ],
+        "operating": true
+      },
+      "options": {},
+      "final": {
+        "renewers": "0.052625350211434249158146424256431508514841684394181803722393092821178300834195389",
+        "accountability": "0.34693370230389127825771993631860791019753434888069377484314564611813403713510077",
+        "influence": "0.94279443158906646716657429268833738877017174460053039878533848425965662674560136",
+        "fund": "1",
+        "supports": [
+          "3.6796776402381746973857760750839534680378177414823735859606662606647926055354003"
+        ],
+        "operating": false
+      },
+      "first_economic_failure": 21,
+      "first_any_support_violation": 21,
+      "minimum_supports": [
+        "3.6796776402381746973857760750839534680378177414823735859606662606647926055354003"
+      ],
+      "paid_rounds": 21,
+      "max_cash_residual": "2E-79"
+    },
+    "same_initial_no_capture": {
+      "parameters": {
+        "price": "10",
+        "levy": "1",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "0",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "2/25",
+        "accountability": "7/20",
+        "influence": "19/20",
+        "fund": "1",
+        "supports": [
+          "100"
+        ],
+        "operating": true
+      },
+      "options": {},
+      "final": {
+        "renewers": "0.99999999999999999999999999999999999999999999999999999999999999999999999999999999",
+        "accountability": "0.99999999999999999999999999999999999999999999999999999999999999999999999999999998",
+        "influence": "1.0000000000000000002802132749751699674734614934897793841351272469521341488779130E-80",
+        "fund": "1",
+        "supports": [
+          "20.000000000000000000000000000000000006026941651195210055387435688082393688100232"
+        ],
+        "operating": true
+      },
+      "first_economic_failure": null,
+      "first_any_support_violation": null,
+      "minimum_supports": [
+        "20.000000000000000000000000000000000006026941651195210055387435688082393688100232"
+      ],
+      "paid_rounds": 800,
+      "max_cash_residual": "2E-79"
+    },
+    "rule_frozen_at_initial": {
+      "parameters": {
+        "price": "10",
+        "levy": "1",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "1/2",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "2/25",
+        "accountability": "7/20",
+        "influence": "19/20",
+        "fund": "1",
+        "supports": [
+          "100"
+        ],
+        "operating": true
+      },
+      "options": {
+        "freeze_rule": true
+      },
+      "final": {
+        "renewers": "0.053858470492263544270154596613026545707276010149724695615944357911193599793426722",
+        "accountability": "0.35",
+        "influence": "0.94184099317393488298663147143990917586930632646933106108269938074889285546498052",
+        "fund": "1",
+        "supports": [
+          "3.7012875919190931683841543691835659757339052658152422211734907787512514862861836"
+        ],
+        "operating": false
+      },
+      "first_economic_failure": 21,
+      "first_any_support_violation": 21,
+      "minimum_supports": [
+        "3.7012875919190931683841543691835659757339052658152422211734907787512514862861836"
+      ],
+      "paid_rounds": 21,
+      "max_cash_residual": "1E-79"
+    },
+    "ideal_fixed_rule": {
+      "parameters": {
+        "price": "10",
+        "levy": "1",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "1/2",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "2/25",
+        "accountability": "1",
+        "influence": "19/20",
+        "fund": "1",
+        "supports": [
+          "100"
+        ],
+        "operating": true
+      },
+      "options": {
+        "freeze_rule": true
+      },
+      "final": {
+        "renewers": "1.0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "accountability": "1",
+        "influence": "9.4231728846242324862095471032851272242159878678856279382320777927460198603174265E-100",
+        "fund": "1",
+        "supports": [
+          "20.000000000000000000000000000000000012632993507483560981510334773648243681851209"
+        ],
+        "operating": true
+      },
+      "first_economic_failure": null,
+      "first_any_support_violation": null,
+      "minimum_supports": [
+        "20.000000000000000000000000000000000012632993507483560981510334773648243681851209"
+      ],
+      "paid_rounds": 800,
+      "max_cash_residual": "1E-79"
+    },
+    "unfunded_initial_round": {
+      "parameters": {
+        "price": "10",
+        "levy": "1",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "1/2",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "1/2",
+        "accountability": "1/2",
+        "influence": "1",
+        "fund": "0",
+        "supports": [
+          "5"
+        ],
+        "operating": true
+      },
+      "options": {},
+      "final": {
+        "renewers": "0.49376069511666976182055289783555840495607945418258517465350557152856114662142772",
+        "accountability": "0.41709365019279317247681319713592529296875000000000000000000",
+        "influence": "0.62038368398269983696934962645173072814941406250000000000000000000000000000",
+        "fund": "1",
+        "supports": [
+          "4.998114073523519925117804482579231262207031250000000000000000000000000000"
+        ],
+        "operating": false
+      },
+      "first_economic_failure": 5,
+      "first_any_support_violation": 5,
+      "minimum_supports": [
+        "4.998114073523519925117804482579231262207031250000000000000000000000000000"
+      ],
+      "paid_rounds": 4,
+      "max_cash_residual": "0"
+    },
+    "permanent_authority_veto": {
+      "parameters": {
+        "price": "10",
+        "levy": "1",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "1/2",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "4/5",
+        "accountability": "3/5",
+        "influence": "1/5",
+        "fund": "1",
+        "supports": [
+          "8"
+        ],
+        "operating": true
+      },
+      "options": {
+        "authorized": false
+      },
+      "final": {
+        "renewers": "0.098478497160554303966348122543013657274282097033966210272631927285185484123986499",
+        "accountability": "0.0086603646136354776650435123477746624197216205922335472325171903223923904966219434",
+        "influence": "0.72091202770717146070633135188631861983394247836963204200091609889513618655591191",
+        "fund": "3",
+        "supports": [
+          "4.1436701315473754714356569834738154055534018872682937690046489443280456275586762"
+        ],
+        "operating": false
+      },
+      "first_economic_failure": 28,
+      "first_any_support_violation": 28,
+      "minimum_supports": [
+        "4.1436701315473754714356569834738154055534018872682937690046489443280456275586762"
+      ],
+      "paid_rounds": 0,
+      "max_cash_residual": "1E-79"
+    },
+    "levy_below_recurring_cost": {
+      "parameters": {
+        "price": "10",
+        "levy": "1/2",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "1/2",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "4/5",
+        "accountability": "3/5",
+        "influence": "1/5",
+        "fund": "1",
+        "supports": [
+          "8"
+        ],
+        "operating": true
+      },
+      "options": {},
+      "final": {
+        "renewers": "0.99999999999999999999999999999999999999999999999999999999999999999999999999999999",
+        "accountability": "0.99999999999999999999999999999999999999999999999996335237435144308624389374224720",
+        "influence": "1.0000000000000000000368707933077764770054957644070851986571147801315603591146668E-80",
+        "fund": "1.0",
+        "supports": [
+          "19.999999999999999999999999999999999995440389526935589093687161190595016570809298"
+        ],
+        "operating": true
+      },
+      "first_economic_failure": null,
+      "first_any_support_violation": null,
+      "minimum_supports": [
+        "8"
+      ],
+      "paid_rounds": 400,
+      "max_cash_residual": "1E-79"
+    },
+    "no_renewing_variant": {
+      "parameters": {
+        "price": "10",
+        "levy": "1",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "1/2",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "0",
+        "accountability": "7/20",
+        "influence": "19/20",
+        "fund": "1",
+        "supports": [
+          "100"
+        ],
+        "operating": true
+      },
+      "options": {},
+      "final": {
+        "renewers": "0E-2417",
+        "accountability": "0.33340382856226151471530847517286863364617080682764819575440098880026803029482060",
+        "influence": "0.99978858587073773378506302833557128906250000000000000000000000000000000000000000",
+        "fund": "1",
+        "supports": [
+          "4.8593688944029129790000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "operating": false
+      },
+      "first_economic_failure": 19,
+      "first_any_support_violation": 19,
+      "minimum_supports": [
+        "4.8593688944029129790000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "paid_rounds": 19,
+      "max_cash_residual": "0"
+    },
+    "recovery_after_initial_negative_gap": {
+      "parameters": {
+        "price": "10",
+        "levy": "1",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "1/2",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "4/5",
+        "accountability": "7/20",
+        "influence": "1/20",
+        "fund": "1",
+        "supports": [
+          "5"
+        ],
+        "operating": true
+      },
+      "options": {},
+      "final": {
+        "renewers": "0.99999999999999999999999999999999999999999999999999999999999999999999999999999999",
+        "accountability": "0.99999999999999999999999999999999999999999999999999999999999999999999999999999995",
+        "influence": "1.0000000000000000000195693770267542614676640201344149786927070819856054811230814E-80",
+        "fund": "1",
+        "supports": [
+          "19.999999999999999999999999999999999994804839144279489893100678718259957355971667"
+        ],
+        "operating": true
+      },
+      "first_economic_failure": null,
+      "first_any_support_violation": null,
+      "minimum_supports": [
+        "5"
+      ],
+      "paid_rounds": 800,
+      "max_cash_residual": "2E-79"
+    },
+    "excluded_recipient": {
+      "parameters": {
+        "price": "10",
+        "levy": "1",
+        "renewal_cost": "2",
+        "liability": "4",
+        "political_cost": "1/2",
+        "selection_rate": "1/5",
+        "restoration": "1/4",
+        "capture": "1/2",
+        "influence_turnover": "1/4",
+        "influence_target": "1",
+        "correction_cost": "1",
+        "fund_cap": "3",
+        "supports": [
+          {
+            "renewal": "2",
+            "depletion": "1",
+            "depreciation": "1/10",
+            "background_harm": "0",
+            "floor": "5",
+            "essential": true
+          },
+          {
+            "renewal": "0",
+            "depletion": "0",
+            "depreciation": "1/10",
+            "background_harm": "1",
+            "floor": "5",
+            "essential": false
+          }
+        ]
+      },
+      "initial": {
+        "renewers": "1",
+        "accountability": "1",
+        "influence": "0",
+        "fund": "1",
+        "supports": [
+          "20",
+          "5"
+        ],
+        "operating": true
+      },
+      "options": {},
+      "final": {
+        "renewers": "1.0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "accountability": 1,
+        "influence": "0E-1667",
+        "fund": "1",
+        "supports": [
+          "20.000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          0
+        ],
+        "operating": true
+      },
+      "first_economic_failure": null,
+      "first_any_support_violation": 1,
+      "minimum_supports": [
+        "20",
+        0
+      ],
+      "paid_rounds": 800,
+      "max_cash_residual": "0"
+    }
+  },
+  "source_sha256": {
+    "model.py": "e14b7612b8dd45b8a63e7c147f0b944aeb5656325bcc7b1d25fd0ea58f293d6f",
+    "run.py": "23bd791c11d7339d2ddbb1af1e4cc4896f766c1a4196908a311d64034e1f8c35"
+  }
+}
