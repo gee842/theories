@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "counts": {
+    "external_file_mappings": 856,
+    "archive_member_mappings": 138,
+    "incoming_repository_versions": 38,
+    "added_local_links": 230
+  },
+  "reading_documents": 32,
+  "base_revision": "9503595ba47fc5f2acc9b676bef7fe7c71b7ea72",
+  "scope": "Exact preservation and added local links only; no scientific producer executed.",
+  "errors": []
+}

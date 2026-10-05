@@ -1,0 +1,5 @@
+'RenewalLedger.material_step' depends on axioms: [propext, Quot.sound]
+'RenewalLedger.work_step' depends on axioms: [propext, Quot.sound]
+'RenewalLedger.bare_no_later_construction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewalLedger.minimum_repeated_turnover_captures' depends on axioms: [propext, Quot.sound]
+'RenewalLedger.minimum_full_turnover_captures' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,12 @@
+'CarrierTurnover.update_gone_permanent' does not depend on any axioms
+'CarrierTurnover.update_live_role' does not depend on any axioms
+'CarrierTurnover.update_first_loss' depends on axioms: [propext]
+'CarrierTurnover.marked_trace_project' does not depend on any axioms
+'CarrierTurnover.all_gone_continuation' depends on axioms: [propext]
+'CarrierTurnover.marked_trace_consistent' does not depend on any axioms
+'CarrierTurnover.marked_trace_gone_permanent' does not depend on any axioms
+'CarrierTurnover.original_loss_requires_role_wear' depends on axioms: [propext, Quot.sound]
+'CarrierTurnover.all_original_losses_require_four_wears' depends on axioms: [propext, Quot.sound]
+'CarrierTurnover.original_turnover_work_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierTurnover.original_turnover_reserve_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierTurnover.original_turnover_restored_reserve' depends on axioms: [propext, Classical.choice, Quot.sound]

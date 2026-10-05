@@ -250,6 +250,8 @@ The condition is simply that an action can be chosen from the common set of mini
 
 Historical questions have their own profiles: identical present state and future behavior need not identify past continuity or ancestry. Records or tracers must carry that information. Sources: [S1, S5–S7](SOURCE-MAP.md). Closely related minimal predictive representations are established in [Shalizi and Crutchfield](https://arxiv.org/abs/cond-mat/9907176).
 
+**Later relational witness.** The [mixing diagnostic](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md#7-a-source-anchored-transfer-consequence-mixing-has-no-fixed-sign) gives identical separate species distributions with different joint arrangements and opposite responses to complete mixing in a stated low-occupancy regime. The missing relation matters to the declared co-occupancy task. This conditional transfer-model example supports F5's representation requirement; it neither demonstrates learning of that distinction nor establishes biological renewal.
+
 ## F6 Consequential differences must reach action
 
 Suppose two admissible worlds produce the same accessible history for a deterministic causal controller up to a decision deadline. Suppose their sets of safe immediate actions are disjoint, and no admissible safe probe can distinguish them before that deadline. No policy based on those histories guarantees safety in both.
@@ -437,6 +439,8 @@ The sequence is nondecreasing. In the finite-action setting, the limit \(H_\inft
 
 The example's costs are stipulated; it is not a fit to the separate circuit experiment. Stochastic tasks, observation before or after task disclosure, storage limits, or infinite action repertoires require different analysis. Source: [S9](SOURCE-MAP.md).
 
+**Later stochastic composition.** The [repeated-renewal result](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md) supplies a separate extension for an installed stochastic process: a successful-cycle measure retains the actual successor, elapsed time and charged expenditure, and its conditional recursion gives finite repeated-task probabilities. Equal one-cycle success totals can conceal different continuations. Its source, information, closure and every-prefix feasibility assumptions remain explicit; it does not change F11's deterministic task-choice quantifiers or supply reliable physical renewal by itself.
+
 ## F12 Limits of a universal ranking and a complete evaluator
 
 **Opposing task rankings.** Suppose at the same budget method A succeeds on some task that D fails, while D succeeds on another that A fails. A next-task distribution concentrated on the first ranks A above D; one concentrated on the second reverses the ranking. No fixed strict ordering or tie preserves both task-dependent success comparisons. This elementary result leaves room for a useful score after the task distribution and valued consequences are specified. The matched inheritance experiment supplies exactly this premise. [S9](SOURCE-MAP.md)
@@ -460,6 +464,8 @@ Then every admissible abstract policy lifts to a concrete policy with the same r
 A reverse causal implementation correspondence gives equality of attainable response sets and permits transferring impossibility statements. A one-way sound abstraction can supply useful sufficient policies while losing concrete alternatives; its failure need not imply concrete impossibility.
 
 Matching separate marginals is insufficient when consequences depend on correlations. Matching successful endpoints is insufficient when intermediate bills cannot be paid. Matching ordinary trajectories is insufficient if the abstraction grants an outside planner a choice that is actually made by a refusing participant. These conditions are how separate models can be joined without silently changing the problem. Sources: [S5, S8](SOURCE-MAP.md).
+
+**Quantified finite stochastic approximation.** [Repeated-renewal composition R4](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md#3-reliability-and-error-budgets) bounds finite-horizon success error by the formation error plus the accumulated uniform total-variation errors of the full marked continuation kernels, capped at one. Matching isolated success totals cannot supply those row bounds. This sharpens a particular stochastic interface without proving that the existing physical and strategic models satisfy it. The [integration review](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md) records the accepted scope.
 
 ## The unified theorem and its precise force
 

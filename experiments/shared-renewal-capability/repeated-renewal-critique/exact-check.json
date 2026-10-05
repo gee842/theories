@@ -1,0 +1,177 @@
+{
+  "scope": "Exact algebraic necessary bounds, not model probabilities or calibration.",
+  "git_head_at_check": "e214ecf80474396856e176430e0a8f86e819ddc4",
+  "script_sha256": "af9dcea7f956f39aa926e5e6c2e971bd10275fb48be6dd09b88383760254817b",
+  "source_sha256": {
+    "FULL-SUCCESSOR-CRITIQUE.md": "4b8f5a07ed5c93ecea6b8212d8685756ac0689a902fedac284fa23368284b7ff",
+    "FULL-SUCCESSOR-RESULT.md": "a6983066d6762dd2ebbf37e1a073f2c675776fad8a45929019d0c592b8d5978a",
+    "RNA-PARTIAL-IDENTIFICATION.md": "8f2ff2a5c66ce43346775c8869f3738454a202c9d6ff439144523bacdf3328e8",
+    "SUCCESSION-DIRECTION-CRITIQUE.md": "ed0b1ac10ce95da6ee4e4db388b2ebe25d1891c6b1d4c9a90e1210eaed622712"
+  },
+  "arithmetic": "fractions.Fraction; exp positive Taylor order 240 and geometric remainder; displayed bounds outward at denominator 10^30",
+  "eventual_bounds": [
+    {
+      "cycles": 1,
+      "eventual_upper_exact": "3/4",
+      "eventual_upper_decimal_enclosure": {
+        "lower_numerator": 750000000000000000000000000000,
+        "upper_numerator": 750000000000000000000000000000,
+        "denominator": 1000000000000000000000000000000
+      }
+    },
+    {
+      "cycles": 2,
+      "eventual_upper_exact": "9/16",
+      "eventual_upper_decimal_enclosure": {
+        "lower_numerator": 562500000000000000000000000000,
+        "upper_numerator": 562500000000000000000000000000,
+        "denominator": 1000000000000000000000000000000
+      }
+    },
+    {
+      "cycles": 5,
+      "eventual_upper_exact": "243/1024",
+      "eventual_upper_decimal_enclosure": {
+        "lower_numerator": 237304687500000000000000000000,
+        "upper_numerator": 237304687500000000000000000000,
+        "denominator": 1000000000000000000000000000000
+      }
+    },
+    {
+      "cycles": 10,
+      "eventual_upper_exact": "59049/1048576",
+      "eventual_upper_decimal_enclosure": {
+        "lower_numerator": 56313514709472656250000000000,
+        "upper_numerator": 56313514709472656250000000000,
+        "denominator": 1000000000000000000000000000000
+      }
+    },
+    {
+      "cycles": 20,
+      "eventual_upper_exact": "3486784401/1099511627776",
+      "eventual_upper_decimal_enclosure": {
+        "lower_numerator": 3171211938933993224054574966,
+        "upper_numerator": 3171211938933993224054574967,
+        "denominator": 1000000000000000000000000000000
+      }
+    }
+  ],
+  "finite_deadline_bounds": [
+    {
+      "cycles": 2,
+      "deadline": 1,
+      "race_bound_lower": 510987265625435117923918065169,
+      "race_bound_upper": 510987265625435117923918065170,
+      "capture_bound_lower": 71386628974206604868761351,
+      "capture_bound_upper": 71386628974206604868761352,
+      "joint_event_upper": 71386628974206604868761352,
+      "denominator": 1000000000000000000000000000000
+    },
+    {
+      "cycles": 2,
+      "deadline": 3,
+      "race_bound_lower": 562455070447166287466139635621,
+      "race_bound_upper": 562455070447166287466139635622,
+      "capture_bound_lower": 196991617470657847666924844586,
+      "capture_bound_upper": 196991617470657847666924844587,
+      "joint_event_upper": 196991617470657847666924844587,
+      "denominator": 1000000000000000000000000000000
+    },
+    {
+      "cycles": 2,
+      "deadline": 10,
+      "race_bound_lower": 562499999999999902022329987337,
+      "race_bound_upper": 562499999999999902022329987338,
+      "capture_bound_lower": 999936122974600726635009341709,
+      "capture_bound_upper": 999936122974600726635009341710,
+      "joint_event_upper": 562499999999999902022329987338,
+      "denominator": 1000000000000000000000000000000
+    },
+    {
+      "cycles": 5,
+      "deadline": 1,
+      "race_bound_lower": 88078735108682357235850145036,
+      "race_bound_upper": 88078735108682357235850145037,
+      "capture_bound_lower": 42770477214,
+      "capture_bound_upper": 42770477215,
+      "joint_event_upper": 42770477215,
+      "denominator": 1000000000000000000000000000000
+    },
+    {
+      "cycles": 5,
+      "deadline": 3,
+      "race_bound_lower": 235501079164551484473074146779,
+      "race_bound_upper": 235501079164551484473074146780,
+      "capture_bound_lower": 27654184231101737745803,
+      "capture_bound_upper": 27654184231101737745804,
+      "joint_event_upper": 27654184231101737745804,
+      "denominator": 1000000000000000000000000000000
+    },
+    {
+      "cycles": 5,
+      "deadline": 10,
+      "race_bound_lower": 237304687499880862028371535214,
+      "race_bound_upper": 237304687499880862028371535215,
+      "capture_bound_lower": 524283013893680069042721770965,
+      "capture_bound_upper": 524283013893680069042721770966,
+      "joint_event_upper": 237304687499880862028371535215,
+      "denominator": 1000000000000000000000000000000
+    },
+    {
+      "cycles": 10,
+      "deadline": 1,
+      "race_bound_lower": 457955174366138158302077993,
+      "race_bound_upper": 457955174366138158302077994,
+      "capture_bound_lower": 0,
+      "capture_bound_upper": 1,
+      "joint_event_upper": 1,
+      "denominator": 1000000000000000000000000000000
+    },
+    {
+      "cycles": 10,
+      "deadline": 3,
+      "race_bound_lower": 42663560147779384920771118146,
+      "race_bound_upper": 42663560147779384920771118147,
+      "capture_bound_lower": 31,
+      "capture_bound_upper": 32,
+      "joint_event_upper": 32,
+      "denominator": 1000000000000000000000000000000
+    },
+    {
+      "cycles": 10,
+      "deadline": 10,
+      "race_bound_lower": 56313514488389614076640008249,
+      "race_bound_upper": 56313514488389614076640008250,
+      "capture_bound_lower": 925186880491505705677903,
+      "capture_bound_upper": 925186880491505705677904,
+      "joint_event_upper": 925186880491505705677904,
+      "denominator": 1000000000000000000000000000000
+    }
+  ],
+  "necessary_material_thresholds": [
+    {
+      "cycles": 10,
+      "required_reliability": "9/10",
+      "minimum_N_under_beta_equals_d": 96
+    },
+    {
+      "cycles": 10,
+      "required_reliability": "19/20",
+      "minimum_N_under_beta_equals_d": 196
+    },
+    {
+      "cycles": 10,
+      "required_reliability": "99/100",
+      "minimum_N_under_beta_equals_d": 996
+    }
+  ],
+  "unpartitioned_rna_check": {
+    "capacity": 300,
+    "D": 5,
+    "initial_h": 10,
+    "initial_p": 10,
+    "minimum_total_after_two_unpartitioned_rounds": 500,
+    "two_rounds_possible": false
+  },
+  "status": "passed"
+}

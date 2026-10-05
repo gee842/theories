@@ -156,6 +156,14 @@ The subsequent directly relevant **Unify theory sessions** turn `01a10b92-8dca-7
 
 The in-chat automation `integrate-completed-theory-work` is now paused under its existing stop rule: all registered contributions are reviewed and integrated or documented outside theory evidential scope. The broader goal remains active. No messages were sent to other user chats, and completion status was not treated as correctness.
 
+## Three-session reconciliation, 6 October 2026
+
+Ren subsequently authorized extraction and integration of **The root of wisdom and open-ended understanding (2)** (`01a109c6-c855-70d3-99ba-d96a4f996aac`), **Unify theory sessions** (`01a10a17-bf6f-7400-8109-70271bbaca71`) and **Unify theory sessions (2)** (`01a10b2e-91e3-71f0-9da8-0c228cfd5ceb`). This is a new bounded reconciliation, documented in the [review and interface map](../../2026-10-05-repository-reconciliation/three-session-integration/README.md), rather than a change to the prior automation's acceptance set.
+
+The earlier external work is already preserved. The [physical review](../../2026-10-05-repository-reconciliation/three-session-integration/PHYSICAL-BRANCH-REVIEW.md) accepts repeated-renewal composition, the original-loss observer, the architecture-specific reliability bound and the RNA transfer/mixing investigation at their declared scopes. The three-cycle physical assay remains unrun; slot-to-observer refinement, reliable physical implementation and the origin of significance remain open. The specification and completion plan now serve the governing generative foundation explicitly. Earlier concern and joint-formation acceptance remains valid; the [new cross-branch map](../../2026-10-05-repository-reconciliation/three-session-integration/README.md#how-the-contributions-connect) identifies which supplied premises are still unconnected.
+
+[Source 25](../../../../sources/25-three-session-integration-2026-10-06/README.md) preserves incoming versions and exact file mappings. Scientific producers were not rerun for this integration. The [verification record](../../2026-10-05-repository-reconciliation/three-session-integration/verification.json) checks preservation and navigation separately from mathematical and empirical evidence.
+
 ## Inspection and preservation
 
 [source-manifest.json](source-manifest.json) records hashes and exact reading scope for the source inputs used here. Existing source snapshots and repository commits preserve the earlier genealogy; this manifest is an inspection record, not an independent replication. Some entries were inspected through targeted sections and their claim registers rather than reread line by line. That limitation is explicit.

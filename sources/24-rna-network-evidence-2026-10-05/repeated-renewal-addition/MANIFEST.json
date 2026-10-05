@@ -1,0 +1,124 @@
+{
+  "created": "2026-10-05",
+  "purpose": "Exact original evidence for repeated-renewal read-scope audit; no new experiment or fit",
+  "author_code_commit": "df6166caa7616a48af39a16a992909ddb06844a4",
+  "files": [
+    {
+      "path": "Ledoux-2026-v6.pdf",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.03.03.709225v6.full.pdf",
+      "bytes": 20296285,
+      "sha256": "83819c129c833c01a8a3af25ca1b640b878e77ef6ed517085d579cfbc29b5dd7",
+      "license": "CC-BY-NC-ND-4.0 as printed",
+      "scope": "82-page author v6, posted 2026-04-01, including SI; not final publisher bytes"
+    },
+    {
+      "path": "Ledoux-EuropePMC-metadata.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1073/pnas.2537522123&format=json",
+      "bytes": 888,
+      "sha256": "a7ea466b442f8349b690ae6d50c293a9a42ff5fafa999138f1a10458cb62f5e3",
+      "license": "Provider metadata terms; no new license asserted",
+      "scope": "Official publication metadata for DOI 10.1073/pnas.2537522123"
+    },
+    {
+      "path": "Sono-2026-v1.pdf",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.15.744999v1.full.pdf",
+      "bytes": 20858476,
+      "sha256": "b140372198868b9285f4a08605b01abd4b2a148c20990f9913a95c53b43ad2c3",
+      "license": "CC-BY-NC-ND-4.0 as printed",
+      "scope": "Author v1, posted 2026-08-17; unreviewed preprint, main paper only"
+    },
+    {
+      "path": "Yoshiyama-2018.pdf",
+      "url": "https://webpark2056.sakura.ne.jp/papers/2018_Yoshiyama.pdf",
+      "bytes": 1734363,
+      "sha256": "41c09839e05dd752aff47c2b5497a01e83d2b85e6597b2e15f211010e14295f2",
+      "license": "CC-BY-4.0 as printed",
+      "scope": "Author-site copy of published main paper"
+    },
+    {
+      "path": "Yoshiyama-2018-SI.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-018-30374-0/MediaObjects/41598_2018_30374_MOESM1_ESM.pdf",
+      "bytes": 593412,
+      "sha256": "22f7df3f78a4798124755ab735269a47f43b51f9dc300ed6d1aee5342b1db550",
+      "license": "Accompanying CC-BY-4.0 article; preserve source terms",
+      "scope": "Original publisher SI"
+    },
+    {
+      "path": "Sono-code-README.md",
+      "url": "https://raw.githubusercontent.com/rmizuuchi/atps-droplet-colony-communication/df6166caa7616a48af39a16a992909ddb06844a4/README.md",
+      "bytes": 2808,
+      "sha256": "248bfe609c9e27d67cf1deacdb87a4e380c8ce559a0f40db5ba815d40241db68",
+      "license": "No explicit repository license located; no new license asserted",
+      "scope": "Pinned author README"
+    },
+    {
+      "path": "atps_droplet_communication_analysis.ipynb",
+      "url": "https://raw.githubusercontent.com/rmizuuchi/atps-droplet-colony-communication/df6166caa7616a48af39a16a992909ddb06844a4/atps_droplet_communication_analysis.ipynb",
+      "bytes": 301901,
+      "sha256": "41d4aba841df068002a32e448ee38c6d5a7edaef14f6e4be90d0c293c9d028a4",
+      "license": "No explicit repository license located; no new license asserted",
+      "scope": "Pinned original notebook; read as data, not executed"
+    },
+    {
+      "path": "adjacency_background_correction_and_data_preparation.ipynb",
+      "url": "https://raw.githubusercontent.com/rmizuuchi/atps-droplet-colony-communication/df6166caa7616a48af39a16a992909ddb06844a4/adjacency_background_correction_and_data_preparation.ipynb",
+      "bytes": 31543,
+      "sha256": "d53fffbfd5c9b0f2ff85e9b8f0bd1c5be5a4fcd720fbdbcaf9cd641dd6185580",
+      "license": "No explicit repository license located; no new license asserted",
+      "scope": "Pinned original notebook; read as data, not executed"
+    },
+    {
+      "path": "260710 prepared_data_dex.pkl.lfs-pointer.txt",
+      "url": "https://raw.githubusercontent.com/rmizuuchi/atps-droplet-colony-communication/df6166caa7616a48af39a16a992909ddb06844a4/Processed%20data/260710%20prepared_data_dex.pkl",
+      "bytes": 134,
+      "sha256": "545e90b60c4bec68fa5bc6b6dcfc44b55dc356e83b49f30c9e8327a375c54dd1",
+      "license": "No explicit repository license located; no new license asserted",
+      "scope": "Original Git LFS pointer only; payload not preserved or deserialized"
+    },
+    {
+      "path": "260710 prepared_data_fam_rna.pkl.lfs-pointer.txt",
+      "url": "https://raw.githubusercontent.com/rmizuuchi/atps-droplet-colony-communication/df6166caa7616a48af39a16a992909ddb06844a4/Processed%20data/260710%20prepared_data_fam_rna.pkl",
+      "bytes": 133,
+      "sha256": "9fa181beb3485e7e6ca5051e3239bd0250d166c704ad4f6310faa01ca81c04a3",
+      "license": "No explicit repository license located; no new license asserted",
+      "scope": "Original Git LFS pointer only; payload not preserved or deserialized"
+    },
+    {
+      "path": "260710 prepared_data_comm.pkl.lfs-pointer.txt",
+      "url": "https://raw.githubusercontent.com/rmizuuchi/atps-droplet-colony-communication/df6166caa7616a48af39a16a992909ddb06844a4/Processed%20data/260710%20prepared_data_comm.pkl",
+      "bytes": 134,
+      "sha256": "5d2802500c477960f50ececdc10465fae8ddfb855bdd29465c8f103fe7ce0b84",
+      "license": "No explicit repository license located; no new license asserted",
+      "scope": "Original Git LFS pointer only; payload not preserved or deserialized"
+    }
+  ],
+  "large_remote_objects": [
+    {
+      "filename": "260710 prepared_data_dex.pkl",
+      "bytes": 291031740,
+      "sha256": "9935fae19655eef155ddd93954ef5841cb4ed20f4c8114bd02aa9664aa47d1dc",
+      "url": "https://media.githubusercontent.com/media/rmizuuchi/atps-droplet-colony-communication/df6166caa7616a48af39a16a992909ddb06844a4/Processed%20data/260710%20prepared_data_dex.pkl",
+      "status": "Downloaded to temporary scratch and hash/size matched to pinned LFS pointer; not deserialized, numerically analyzed or imported. Static pickle opcode/global inspection only."
+    },
+    {
+      "filename": "260710 prepared_data_fam_rna.pkl",
+      "bytes": 31655464,
+      "sha256": "a149097b42ed33519c2f267fca1ef5d1af8d4a0d040356cccbb5a2253aa7c02b",
+      "url": "https://media.githubusercontent.com/media/rmizuuchi/atps-droplet-colony-communication/df6166caa7616a48af39a16a992909ddb06844a4/Processed%20data/260710%20prepared_data_fam_rna.pkl",
+      "status": "Downloaded to temporary scratch and hash/size matched to pinned LFS pointer; not deserialized, numerically analyzed or imported. Static pickle opcode/global inspection only."
+    },
+    {
+      "filename": "260710 prepared_data_comm.pkl",
+      "bytes": 390944404,
+      "sha256": "a17c70f76a505dcf4d7e2d622d8f76912920b02119976189856d161bd8710d47",
+      "url": "https://media.githubusercontent.com/media/rmizuuchi/atps-droplet-colony-communication/df6166caa7616a48af39a16a992909ddb06844a4/Processed%20data/260710%20prepared_data_comm.pkl",
+      "status": "Downloaded to temporary scratch and hash/size matched to pinned LFS pointer; not deserialized, numerically analyzed or imported. Static pickle opcode/global inspection only."
+    }
+  ],
+  "exclusions": [
+    "Derived PDF text/renderings remain scratch, not original raw data.",
+    "Large microscopy/pickle payloads omitted from repository because no numerical result here uses them.",
+    "Sono supplemental figures not inspected; claims restricted to main paper and pinned notebooks.",
+    "Publisher Ledoux PDF unavailable (HTTP 403); no claim v6 equals final publisher version."
+  ]
+}

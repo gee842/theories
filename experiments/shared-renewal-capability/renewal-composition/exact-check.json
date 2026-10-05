@@ -1,0 +1,102 @@
+{
+  "status": "all exact assertions passed",
+  "scope": "Finite abstract Markov-renewal witnesses; not CF or RNA fitted kinetics, independent evidence, or proof of the general analytic theorems.",
+  "producer_sha256": "52533b5599df79b03c97a676ce6479bb0f0693343d3e70dcaf66105249098b55",
+  "input_sha256": {
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/FULL-SUCCESSOR-RESULT.md": "a6983066d6762dd2ebbf37e1a073f2c675776fad8a45929019d0c592b8d5978a",
+    "experiments/shared-renewal-capability/full-successor/certificate.json": "9ed59733e72335af88d8e6e2d019f725fb5404ec244395473466568299b1e900"
+  },
+  "marked_kernel": {
+    "0": [
+      {
+        "probability": "3/5",
+        "successor": 0,
+        "duration": 1,
+        "gross_cost": 2
+      },
+      {
+        "probability": "3/10",
+        "successor": 1,
+        "duration": 2,
+        "gross_cost": 1
+      }
+    ],
+    "1": [
+      {
+        "probability": "1/2",
+        "successor": 0,
+        "duration": 1,
+        "gross_cost": 1
+      },
+      {
+        "probability": "1/4",
+        "successor": 1,
+        "duration": 3,
+        "gross_cost": 2
+      }
+    ]
+  },
+  "budget_and_deadline_checks": [
+    {
+      "cycles": 2,
+      "deadline": 3,
+      "budget": 3,
+      "probability": "33/100"
+    },
+    {
+      "cycles": 2,
+      "deadline": 5,
+      "budget": 4,
+      "probability": "153/200"
+    },
+    {
+      "cycles": 2,
+      "deadline": 2,
+      "budget": 4,
+      "probability": "9/25"
+    },
+    {
+      "cycles": 2,
+      "deadline": 5,
+      "budget": 2,
+      "probability": "3/20"
+    }
+  ],
+  "same_one_cycle_success_different_repetition": {
+    "each_row_success_mass": [
+      "9/10",
+      "0"
+    ],
+    "fresh_preparation_one_cycle_both": "9/10",
+    "two_cycles_A": "81/100",
+    "two_cycles_B": "0",
+    "reason": "Successful endpoint distribution, including hidden support state, differs; observation retains success/time/cost but omits successor state."
+  },
+  "approximation_checks": [
+    {
+      "cycles": 1,
+      "exact_event_error": "1/100",
+      "uniform_operator_bound": "1/100"
+    },
+    {
+      "cycles": 2,
+      "exact_event_error": "179/10000",
+      "uniform_operator_bound": "1/50"
+    },
+    {
+      "cycles": 5,
+      "exact_event_error": "320840551/10000000000",
+      "uniform_operator_bound": "1/20"
+    },
+    {
+      "cycles": 10,
+      "exact_event_error": "3686124080033816399/100000000000000000000",
+      "uniform_operator_bound": "1/10"
+    },
+    {
+      "cycles": 100,
+      "exact_event_error": "1787178129920511893100056855885847889956537688244969017365458928772293279714831378255646185844210812379416308731970217715576540578671212558929758356705840224949886166579715252325521472936714963999/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "uniform_operator_bound": "1"
+    }
+  ]
+}

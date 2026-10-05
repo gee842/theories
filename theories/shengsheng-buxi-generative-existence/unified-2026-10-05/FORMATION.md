@@ -141,10 +141,12 @@ While that stock requirement holds, the supplied technology produces \(Y>\lambda
 
 The stock remains in the productive region by convexity and converges to \(R_*\). The renewal rule and productive technology are supplied; the model isolates selection of concern. Over every finite horizon, or an infinite discounted horizon with \(0<\delta<1\), omitting the safeguard is uniquely payoff maximizing: it adds \(c\) at that date with no future disadvantage. Thus maintained production and perfect information can coexist with systematically unaddressed harm in this model. This is an elementary conditional counterexample, not a claim that actual reality necessarily has those institutions or preferences.
 
-## The next explanatory obligation
+## The explanatory frontier at Development 1
 
 We now have one derived route from a materially constructed alternative to an operator's protective response, with exact formation and strategic failure conditions. We also have a more explicit ethical account of why protection can be owed even where that route gives no leverage.
 
 The remaining central task is to explain how effective concern and protection extend beyond privately useful counterparties. A next model should let agents construct a shared guarantee for someone with no valuable input, and account for why contributors fund it, how its control survives replacement, and how it can be challenged. Direct concern, reciprocal exposure, coalition formation, and enforceable commitments should be distinct candidate mechanisms, with explicit adverse cases. Their success cannot be assumed by assigning the patient's loss to an omniscient planner's objective and calling the result emergence.
 
 The broader work on discovering new questions remains open. This game assumes public, accurate observation and a supplied alternative technology. It advances the formation of effective correction while leaving the formation of new understanding as a separate, connected research task.
+
+**Later disposition, integrated 6 October 2026:** [Development 2](JOINT-FORMATION.md) now constructs one paid ally mechanism protecting a patient without that patient's own useful input, including learned concern, evidence, input control and reconstruction under stated strategic conditions. The earlier frontier above records the question that motivated that advance. The origin of its teaching and transfer architecture, broader warranted scope and legitimate governance remain open; the [joint-formation review](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md) distinguishes this conditional resolution from those remaining obligations.

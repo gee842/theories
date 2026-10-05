@@ -1,0 +1,5 @@
+'ReserveTurnover.minimum_captures_with_work_change' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReserveTurnover.organization_nonnegative' depends on axioms: [propext]
+'ReserveTurnover.organization_work' depends on axioms: [propext, Quot.sound]
+'ReserveTurnover.organization_turnover_reserve_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReserveTurnover.one_turnover_reserve_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

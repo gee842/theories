@@ -1,6 +1,6 @@
 # The unified foundation in brief
 
-5 October 2026
+5 October 2026; navigation and later-study status reconciled 6 October 2026.
 
 **Our current goal is to find and formalize a minimal generative foundation with universal explanatory scope wherever systems form.** The [governing position and derivation map](GENERATIVE-GROUNDING.md) explains the intended progression: interacting differences form organizations; consequences become significant within regulation; learning changes responses and selection mechanisms; models discover shared dependencies and other centers; concern and wisdom develop through that process. These are transitions to derive, with their enabling conditions and failures made explicit.
 
@@ -41,6 +41,8 @@ The diagram is a proposed causal structure. Each arrow needs a mechanism in an a
 
 **The components can form and renew together in a declared strategic class.** Initially zero concern, chosen useful learning, truthful inspection, input control, and shared resources now coexist in one process. Fresh controllers pay to rebuild them; a persistent opponent optimally safeguards. Cheap ways to suppress concern, disable its effect, or destroy the next learning budget can instead sustain harm. The [new proof](JOINT-FORMATION-MATH.md) establishes conditional existence and renewal, not natural prevalence or universal moral progress.
 
+**Concern can revise its grounds while financing protection and succession.** The later [revisable-concern settlement](REVISABLE-CONCERN-SETTLEMENT.md) joins paid audit, admission, selective retraction, effective protection, and reconstruction in one strategic process. Independent grounds survive the defeat of another derivation. A positive root, sound finite audit, known contexts, and explicit price, attack, and reserve conditions remain premises. Its witness records two actual harms before or outside current admission; the result does not guarantee complete ethical coverage or discover arbitrary unknown harms. The [accepted contribution review](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONCERN-SETTLEMENT-INTEGRATION.md) states the remaining physical and explanatory interfaces.
+
 **Understanding depends on consequential distinctions.** An aggregate can hide exactly the difference that determines the necessary response. More reasoning over unchanged information cannot always fix this. A new question, measurement, relation, tool, or institutional route may be needed. Complete knowledge is unnecessary when all remaining possibilities share a good action.
 
 **What is inherited must remain usable.** The experiments distinguish retention, access, activation, construction, and onward transmission. More inherited material helped some new tasks and obstructed others under fixed search budgets. No universal rule to maximize retention or openness followed.
@@ -62,6 +64,7 @@ The stronger directional hypothesis—that reality generally develops increasing
 - [Generative grounding](GENERATIVE-GROUNDING.md): the current foundational goal, provisional premises, and derivation tasks connecting the studies.
 - [Unified theory](THEORY.md): the full argument, the connections among sessions, and the precise frontier.
 - [Joint formation and renewal](JOINT-FORMATION.md), with [proof](JOINT-FORMATION-MATH.md): the completed response to the central joint-formation challenge.
+- [Revisable-concern settlement](REVISABLE-CONCERN-SETTLEMENT.md): the later conditional integration of reason revision, paid protection, and succession, with separate ethical and evidence results.
 - [Formation and strategic correction](FORMATION.md), with [new proofs](FORMATION-MATH.md): the first completed development beyond the original synthesis.
 - [Concern and correction](CONCERN-AND-CORRECTION.md): the connection to learned concern, its exact action conditions, and the revised research route.
 - [Formal core](FORMAL-CORE.md): definitions, proofs, constructions, counterexamples, and scope conditions.

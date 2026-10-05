@@ -1,6 +1,6 @@
 # Synthesis and verification record
 
-5 October 2026. This record documents what was integrated, preserved, checked, corrected, and left unresolved. It is part of the research deliverable rather than evidence that the proposed philosophy is true.
+5 October 2026; navigation and later-study status reconciled 6 October 2026. This record documents what was integrated, preserved, checked, corrected, and left unresolved. It is part of the research deliverable rather than evidence that the proposed philosophy is true.
 
 ## Scope and preservation
 
@@ -89,11 +89,11 @@ While Development 1 was being completed, the parallel direction and concern cont
 
 A newly specified one-period model connects current learned valuation with an active rival alternative. It derives both the safeguard-versus-blockage and safeguard-versus-exit inequalities, supplies strict complementarity, and shows why stronger concern can favor harmless exit under imperfect safeguards. Direct action-ledger enumeration passed 7,040 exact rational cases. A separate AI reviewer checked the interface and its interpretations. The earlier concern-theory checks and reviews are retained with their original provenance; this targeted integration does not report them as rerun.
 
-The updated frontier is the joint formation and renewal of learned concern, protected evidence, and effective power under strategic interference and common resource limits. Their separate developmental theorems cannot be multiplied into a joint guarantee. The new reading bundle includes the completed concern branch, the strategic formation study, and the new bridge, while preserving the original source corpus separately.
+At this stage, the frontier was the joint formation and renewal of learned concern, protected evidence, and effective power under strategic interference and common resource limits. Their separate developmental theorems could not be multiplied into a joint guarantee. The [completed second development](#completed-second-development) subsequently supplied one common process and a conditional solution. The reading bundle at the interface stage included the completed concern branch, the strategic formation study, and the new bridge, while preserving the original source corpus separately.
 
 ## Original prospective integrated inquiry study
 
-The next study should test the **joint causal account**, while allowing a simpler model to win. This is a proposed design, not a completed experiment or an approved human-subject study.
+The following broader design was proposed to test the **joint causal account**, while allowing a simpler model to win. It remains prospective where it requires unknown hazards, uncertain sensing, discovery of new interventions, and the specified policy comparisons. The later strategic constructions do not constitute this whole experiment or an approved human-subject study.
 
 Use a bounded simulated service institution with two affected groups, a productive resource, an observation channel, a replaceable operator, and a corrector. The initial operator's ordinary observations sometimes leave a group-specific failure indistinguishable from a harmless situation. A paid linkage or instrument change can reveal it. A corrective action can then alter provision if the actual authority permits it. All inquiry, review, ordinary service, correction, and handoff draw from explicit dated accounts.
 
@@ -125,8 +125,18 @@ Independent reconstruction matched 484 games and 1,264 episode ledgers. Separate
 
 The joint-existence and renewable-implementation question is therefore conditionally resolved for this class. The experiment does not derive the primitive teaching signal, continuing account role, physical technologies, or environmental returns from nothing, and free effective self-insulation can defeat the result. Its indefinite theorem is not an extrapolation from finite runs or a claim of empirical prevalence.
 
+## Completed revisable-concern settlement
+
+The later [settlement](REVISABLE-CONCERN-SETTLEMENT.md) places paid audit, rooted reason admission, selective retraction, strategic protection, and successor reconstruction in one game. The [accepted contribution review](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONCERN-SETTLEMENT-INTEGRATION.md) records both the achieved conditional result and the remaining interfaces. The positive root, sound finite audit, known contexts, commercial return, attack bounds, and reserve conditions are explicit premises. A review exposed a cheaper-superset gate counterexample; the final theorem adds monotone prices and a specified tie rule. Its six-episode witness records two actual harms before or outside current admission rather than treating unrecognized patients as unharmed.
+
+Separate results cover construction of a feature within a finite supplied grammar and decisions under incomplete ethical agreement. Neither unrestricted new-reason discovery nor automatic composition of the ethical filter with the strategic equilibrium is proved. The evidence audit reanalyzes earlier AI outputs, adds zero observations, and includes a conventional complete-report learner that solves the fixtures. The proposed human study remains draft, unrun, and unregistered. The [study record](../../../_process/research/2026-10-05-revisable-concern/settlement/README.md) retains the proofs, repairs, and checks; the navigation reconciliation did not rerun them.
+
 ## Remaining explanatory obligations
 
 The current research still needs stronger accounts of mechanism formation and selection, new-question discovery, and empirical explanatory advantage. Conscious experience, selfhood, and unlimited novelty are broader ambitions not established by this work. A complete terminating exact evaluator for arbitrary computable futures is excluded by F12; deriving ethical standing from physical persistence is not a promise of the present foundation. The positive ethical development states and argues for its own premises.
 
-The broad causal program asks how effective responsiveness forms, renews its support and authority, survives replacement, and extends to affected centers beyond incumbent usefulness. Development 2 now solves a substantive selected reconstruction class within that program. The origin and prevalence of its enabling conditions, richer changing repertoires, warranted scope, and empirical explanatory advantage remain separate research obligations. The completed conditional result and its countermodels should be retained when pursuing them.
+The broad causal program asks how effective responsiveness forms, renews its support and authority, survives replacement, and extends to affected centers beyond incumbent usefulness. Development 2 solves a substantive selected reconstruction class; the later settlement adds paid finite reason revision and renewal. The origin and prevalence of their enabling conditions, their physical realization, richer changing repertoires, warranted scope, and empirical explanatory advantage remain separate research obligations. The completed conditional results and their countermodels should be retained when pursuing them.
+
+## Navigation reconciliation, 6 October 2026
+
+The [concern and synthesis review](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/CONCERN-AND-SYNTHESIS-REVIEW.md) found the former `fo` workspace's substantive contribution already preserved. This pass labels the earlier formation frontiers as historical, links their conditional resolutions, and adds the settlement's scope and evidence status to the unified reading routes. It does not replace source snapshots, promote a new theorem, complete the prospective broader study, or count preservation checks as scientific replication.

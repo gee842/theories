@@ -160,6 +160,8 @@ Integrate the round before selecting the next central connection. Record what be
 
 This map places the current contributions within the foundational goal. The links identify supporting studies, not completed proofs of the whole transition named in the first column.
 
+The [three-session integration, 6 October 2026](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/README.md#how-the-contributions-connect), separates existing results from newly accepted supporting work and records what each result supplies to the next transition. In particular, repeated-renewal composition strengthens the requirement to retain actual successors and their support; the mixing witness shows why relations can matter despite identical marginal observations. Neither yet explains how a process discovers and learns those consequential distinctions. The concern and joint-formation constructions remain downstream contributions whose initial significance and learning architectures require that bridge.
+
 | Transition to explain | Existing contribution | Remaining foundational task |
 |---|---|---|
 | Interacting differences form and reconstruct organizations | The [physical specification](FORMAL-SPECIFICATION.md) connects declared events, resources, formation and carrier replacement. | Identify when relations constitute an organization and derive its formation under explicit conditions; connect the model's supplied laws and interfaces to reality. |

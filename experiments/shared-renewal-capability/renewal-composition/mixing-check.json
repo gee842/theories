@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "producer_sha256": "d7cadfc29e29a93ed2865c7997919c7440a5d74a7b266601a56e4b4137550fc9",
+  "source": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/Ledoux-2026-v6.pdf",
+  "source_sha256": "83819c129c833c01a8a3af25ca1b640b878e77ef6ed517085d579cfbc29b5dd7",
+  "source_read_scope": "Author v6 PDF p8 equations2-3; diagnostic fixes d=1, no deletion; independent species Poisson law derived by splitting.",
+  "scope": "Conditional model co-occupancy task, not replication or repeated renewal; no parameter fit or external validation. Source dye calibration is a separate packet model.",
+  "arithmetic": "Exact Fraction Taylor100 with geometric remainder for exp(a/2); reciprocal bounds; displayed outward at1e20.",
+  "factorization_diagnostics": 110,
+  "rows": [
+    {
+      "a": 1,
+      "segregated_s0": "0",
+      "co_located_s0": {
+        "lower_numerator": 19978820044686402435,
+        "upper_numerator": 19978820044686402436,
+        "denominator": 100000000000000000000
+      },
+      "either_field_s1": {
+        "lower_numerator": 15481812174617547438,
+        "upper_numerator": 15481812174617547439,
+        "denominator": 100000000000000000000
+      },
+      "co_located_s1_minus_s0": {
+        "lower_numerator": -4497007870068854997,
+        "upper_numerator": -4497007870068854996,
+        "denominator": 100000000000000000000
+      },
+      "co_located_sign": "negative"
+    },
+    {
+      "a": 2,
+      "segregated_s0": "0",
+      "co_located_s0": {
+        "lower_numerator": 37382253620775439825,
+        "upper_numerator": 37382253620775439826,
+        "denominator": 100000000000000000000
+      },
+      "either_field_s1": {
+        "lower_numerator": 39957640089372804870,
+        "upper_numerator": 39957640089372804871,
+        "denominator": 100000000000000000000
+      },
+      "co_located_s1_minus_s0": {
+        "lower_numerator": 2575386468597365045,
+        "upper_numerator": 2575386468597365046,
+        "denominator": 100000000000000000000
+      },
+      "co_located_sign": "positive"
+    }
+  ]
+}

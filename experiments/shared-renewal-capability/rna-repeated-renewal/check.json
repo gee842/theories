@@ -1,0 +1,220 @@
+{
+  "scope": "Read-only exact provenance and algebra; no dataset deserialization, image extraction, author notebook execution, empirical fit or rerun of previous RNA result.",
+  "base_commit": "e214ecf80474396856e176430e0a8f86e819ddc4",
+  "producer": {
+    "path": "experiments/shared-renewal-capability/rna-repeated-renewal/check.py",
+    "bytes": 4347,
+    "sha256": "15170b4d69ef6c0266a63f9f8efb37f87d9b2272621169730a08713963abbad9"
+  },
+  "manifest": {
+    "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/MANIFEST.json",
+    "bytes": 7364,
+    "sha256": "f8919ca12ff7fd2212b7971d18612d3cdd6a9ea079b81fdeea1ac0f26e2dd65b"
+  },
+  "new_original_sources": [
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/Ledoux-2026-v6.pdf",
+      "bytes": 20296285,
+      "sha256": "83819c129c833c01a8a3af25ca1b640b878e77ef6ed517085d579cfbc29b5dd7"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/Ledoux-EuropePMC-metadata.json",
+      "bytes": 888,
+      "sha256": "a7ea466b442f8349b690ae6d50c293a9a42ff5fafa999138f1a10458cb62f5e3"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/Sono-2026-v1.pdf",
+      "bytes": 20858476,
+      "sha256": "b140372198868b9285f4a08605b01abd4b2a148c20990f9913a95c53b43ad2c3"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/Yoshiyama-2018.pdf",
+      "bytes": 1734363,
+      "sha256": "41c09839e05dd752aff47c2b5497a01e83d2b85e6597b2e15f211010e14295f2"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/Yoshiyama-2018-SI.pdf",
+      "bytes": 593412,
+      "sha256": "22f7df3f78a4798124755ab735269a47f43b51f9dc300ed6d1aee5342b1db550"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/Sono-code-README.md",
+      "bytes": 2808,
+      "sha256": "248bfe609c9e27d67cf1deacdb87a4e380c8ce559a0f40db5ba815d40241db68"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/atps_droplet_communication_analysis.ipynb",
+      "bytes": 301901,
+      "sha256": "41d4aba841df068002a32e448ee38c6d5a7edaef14f6e4be90d0c293c9d028a4"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/adjacency_background_correction_and_data_preparation.ipynb",
+      "bytes": 31543,
+      "sha256": "d53fffbfd5c9b0f2ff85e9b8f0bd1c5be5a4fcd720fbdbcaf9cd641dd6185580"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/260710 prepared_data_dex.pkl.lfs-pointer.txt",
+      "bytes": 134,
+      "sha256": "545e90b60c4bec68fa5bc6b6dcfc44b55dc356e83b49f30c9e8327a375c54dd1"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/260710 prepared_data_fam_rna.pkl.lfs-pointer.txt",
+      "bytes": 133,
+      "sha256": "9fa181beb3485e7e6ca5051e3239bd0250d166c704ad4f6310faa01ca81c04a3"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/260710 prepared_data_comm.pkl.lfs-pointer.txt",
+      "bytes": 134,
+      "sha256": "5d2802500c477960f50ececdc10465fae8ddfb855bdd29465c8f103fe7ce0b84"
+    }
+  ],
+  "frozen_files_unchanged_from_base": [
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/.gitattributes",
+      "bytes": 13,
+      "sha256": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/Bansho-2016.pdf",
+      "bytes": 1181793,
+      "sha256": "4c9643e76215c9a422330524205d1691dff55651e8d85382bc5239382bcc9e70"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/MANIFEST.json",
+      "bytes": 826,
+      "sha256": "5d7c0336c09e3e6942f04219609883a219d8a4a53b4b1202b56b2a2ebed9db92"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/Mizuuchi-2022-SI.pdf",
+      "bytes": 16866850,
+      "sha256": "a2cf3989ed16a6b4e76b08a5aba49b9a7597072058a3219ac7df58907c579d08"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/Mizuuchi-2022.pdf",
+      "bytes": 1583315,
+      "sha256": "3b8c7d7eaec21f3dd97ddca0224abf876d06b0e66a5d48cdae6033ef96627f6c"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/README.md",
+      "bytes": 1440,
+      "sha256": "017144e68764bb6fa1f43bbe0b2d17b9d3bd6668f8a103f218a5515093621c22"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/identification-addition/MANIFEST.json",
+      "bytes": 1751,
+      "sha256": "08ffff975431a26ff55347a604a8ca1c81bc38e7fbce7f8b679f1e92951969fb"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/identification-addition/Mizuuchi-2022-source-data.xlsx",
+      "bytes": 15722047,
+      "sha256": "544fa34ee8706c85e7137d69201e4d51da635bc1994fcd085811abc9ee545bde"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/identification-addition/README.md",
+      "bytes": 2097,
+      "sha256": "db63695b56922109c3f51bc741779c1d52ee27cd244e3410a000b81775e02a22"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/identification-addition/Serial transfer of the five RNAs.ipynb",
+      "bytes": 27034,
+      "sha256": "83e1509f2694edd1ec96476dc51a8c784ceaae56e86cd49961efdf07c2b77878"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/identification-addition/author-code-README.md",
+      "bytes": 300,
+      "sha256": "c1303a80c201a38f7d6b30f93277426574296c8c47194e8277ba988309df1348"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/identification-addition/dryad-dataset-metadata.json",
+      "bytes": 3542,
+      "sha256": "9120dbe1634a4575d3e28fa912c59bdacf03e6cb771ba963250d395492f4a061"
+    },
+    {
+      "path": "sources/24-rna-network-evidence-2026-10-05/identification-addition/dryad-files-metadata.json",
+      "bytes": 865,
+      "sha256": "673a572917e53fe0ee699aef565842c6b92d997313fc2c2108c75ca921dd699a"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-EVIDENCE-RNA-NETWORK.md",
+      "bytes": 9375,
+      "sha256": "cfecc3c7364055136131404b09a72a169bd31ca0b223d56f3bf08254891455c4"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/RNA-IDENTIFICATION-CONTRACT.md",
+      "bytes": 20210,
+      "sha256": "792922df2fdc6313c681067236c766544e933cebc4d227412bd82d7172db35e4"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/RNA-PARTIAL-IDENTIFICATION.md",
+      "bytes": 22467,
+      "sha256": "8f2ff2a5c66ce43346775c8869f3738454a202c9d6ff439144523bacdf3328e8"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/PAID-ACCESS-PHYSICAL-CONSTRAINTS.md",
+      "bytes": 24097,
+      "sha256": "02575e0e0fcce1c36c5618372364cce97795304ce641a7e40dd4379272ac17a7"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/PAID-ACCESS-THERMODYNAMIC-CERTIFICATE.md",
+      "bytes": 7777,
+      "sha256": "f4e22a33b3dd1979881e51963ac0c2f4fdafff52523538003abf47478c276ceb"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/THERMODYNAMIC-EMBEDDING.md",
+      "bytes": 20104,
+      "sha256": "77eefb42eddb97b76ef4e6d3335d732a2e84874e415d5d2323b47c40638312b8"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/INTEGRATED-THERMODYNAMICS.md",
+      "bytes": 20247,
+      "sha256": "3f0c7ae294539ff5004d5e8fe56519719ff9166ddff24ec4cc164727a720f559"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/RESOURCE-ALLOCATION-BASELINE.md",
+      "bytes": 22132,
+      "sha256": "6df3c792ba642f9306b6f571fcad643802f17c153d05d0d24a5a6b697f5e513c"
+    },
+    {
+      "path": "_process/research/2026-10-05-support-and-shared-generativity/completion/PHYSICAL-EVIDENCE-CERONI.md",
+      "bytes": 32285,
+      "sha256": "0754eafdaf48040a638d8f2e9f13284a37524aa63de2d1faa3840d86697de1ed"
+    }
+  ],
+  "original_sources_unchanged_during_check": true,
+  "covariance_witness": {
+    "mean_N": "2",
+    "mean_G": "1",
+    "var_N": "1",
+    "var_G": "3/2",
+    "cov_N_G": "1/2",
+    "printed_covariance_formula_value": "3/2",
+    "scope": "Exact consequence of printed conditional premise; no claim about author implementation or fitted-parameter impact."
+  },
+  "stationary_kernel_witness": [
+    {
+      "theta": "0",
+      "snapshot": [
+        "1/2",
+        "1/2"
+      ],
+      "all_one_at_three_observations": "0"
+    },
+    {
+      "theta": "1/2",
+      "snapshot": [
+        "1/2",
+        "1/2"
+      ],
+      "all_one_at_three_observations": "1/8"
+    },
+    {
+      "theta": "1",
+      "snapshot": [
+        "1/2",
+        "1/2"
+      ],
+      "all_one_at_three_observations": "1/2"
+    }
+  ],
+  "result": "All provenance and algebra assertions passed."
+}

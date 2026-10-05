@@ -1,0 +1,13 @@
+'TypedRenewal.input_project' does not depend on any axioms
+'TypedRenewal.output_project' does not depend on any axioms
+'TypedRenewal.project_step' depends on axioms: [propext, Quot.sound]
+'TypedRenewal.enabled_project' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedRenewal.step_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedRenewal.trace_project' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedRenewal.trace_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedRenewal.trace_material' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedRenewal.bare_no_later_construction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedRenewal.minimum_repeated_turnover_captures' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedRenewal.minimum_full_turnover_captures' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedRenewal.exact_six_capture_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TypedRenewal.pooled_enabled_does_not_lift' depends on axioms: [propext]

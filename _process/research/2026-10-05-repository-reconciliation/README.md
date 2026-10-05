@@ -1,5 +1,7 @@
 # Repository reconciliation
 
+**Follow-up, 6 October 2026:** Ren requested reconciliation of three named chats. The [three-session integration](three-session-integration/README.md) verifies their exact file coverage, accepts the pending physical contribution and connects it to concern, joint formation and the governing derivation. This is a separate dated acceptance record; the original capture and boundaries below retain their historical scope.
+
 On 5 October 2026, Ren asked to bring the recent theory and research into one reliable repository home. The appendix that triggered the request was already committed; the delivery link pointed to an export. The audit also found missing supporting material and later research.
 
 ## What changed
