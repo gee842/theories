@@ -1,0 +1,21 @@
+'SelectorRevision.response_matches_iff' depends on axioms: [propext]
+'SelectorRevision.commands_do_not_read_regime' does not depend on any axioms
+'SelectorRevision.step_energy_ledger' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.trace_energy_ledger' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.trial_preserves_selector' depends on axioms: [propext]
+'SelectorRevision.renewal_inherits_selector' depends on axioms: [propext]
+'SelectorRevision.failed_trial_wears_selector' depends on axioms: [propext]
+'SelectorRevision.changed_selector_requires_paid_assembly' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.reversal_preserves_actual_resources_and_selector' does not depend on any axioms
+'SelectorRevision.trace_composition_uses_actual_state' does not depend on any axioms
+'SelectorRevision.revised_selector_witness' does not depend on any axioms
+'SelectorRevision.witness_changes_response_mapping' does not depend on any axioms
+'SelectorRevision.paid_ledger' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.paid_exists_iff' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.failure_cost_sum' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.recovery_cost_sum' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.recovery_prefix_affordable_iff' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.no_recovery_below_first_cost' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.each_failed_candidate_adds_full_block' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.each_failed_candidate_adds_lifetime_trials' depends on axioms: [propext, Quot.sound]
+'SelectorRevision.source_horizon_obstruction' depends on axioms: [propext, Quot.sound]

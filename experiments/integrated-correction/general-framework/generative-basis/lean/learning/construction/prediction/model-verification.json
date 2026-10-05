@@ -1,0 +1,1828 @@
+{
+  "scope": "Independent finite checks of the typed deterministic payable-write subprocess; no Python refinement or empirical claim",
+  "fixture": {
+    "initial": {
+      "a": 0,
+      "h": 0,
+      "resident": "empty",
+      "intact": false,
+      "local": false,
+      "fuel": 33,
+      "source": 121
+    },
+    "prepared": {
+      "a": 4,
+      "h": 6,
+      "resident": "active",
+      "intact": true,
+      "local": true,
+      "fuel": 20,
+      "source": 120
+    },
+    "adapter_endpoint": {
+      "physical": {
+        "fuel": 20,
+        "packets": 12,
+        "last": false,
+        "lease": 0,
+        "regime": true,
+        "fast": false,
+        "module_lease": 0,
+        "seen": false,
+        "remainder": 0,
+        "material": 11
+      },
+      "parts": {
+        "a": 3,
+        "h": 5,
+        "resident": "active",
+        "intact": true,
+        "bound_a": 1,
+        "bound_h": 1,
+        "register_units": 0,
+        "precursor": 0
+      }
+    },
+    "formed": {
+      "physical": {
+        "fuel": 17,
+        "packets": 12,
+        "last": true,
+        "lease": 6,
+        "regime": true,
+        "fast": false,
+        "module_lease": 2,
+        "seen": true,
+        "remainder": 0,
+        "material": 11
+      },
+      "parts": {
+        "a": 2,
+        "h": 2,
+        "resident": "active",
+        "intact": true,
+        "bound_a": 2,
+        "bound_h": 4,
+        "register_units": 0,
+        "precursor": 0
+      }
+    },
+    "retrofit_endpoint": {
+      "prediction": {
+        "physical": {
+          "fuel": 14,
+          "packets": 12,
+          "last": true,
+          "lease": 6,
+          "regime": true,
+          "fast": false,
+          "module_lease": 2,
+          "seen": true,
+          "remainder": 0,
+          "material": 11
+        },
+        "score": 2,
+        "receipt": false,
+        "phase": "ready"
+      },
+      "parts": {
+        "a": 1,
+        "h": 1,
+        "resident": "active",
+        "intact": true,
+        "bound_a": 2,
+        "bound_h": 4,
+        "register_units": 1,
+        "precursor": 0
+      }
+    },
+    "final": {
+      "prediction": {
+        "physical": {
+          "fuel": 18,
+          "packets": 2,
+          "last": false,
+          "lease": 6,
+          "regime": false,
+          "fast": true,
+          "module_lease": 2,
+          "seen": true,
+          "remainder": 0,
+          "material": 11
+        },
+        "score": 0,
+        "receipt": false,
+        "phase": "ready"
+      },
+      "parts": {
+        "a": 0,
+        "h": 0,
+        "resident": "active",
+        "intact": true,
+        "bound_a": 3,
+        "bound_h": 5,
+        "register_units": 1,
+        "precursor": 0
+      }
+    },
+    "initial_energy": 154,
+    "preparation_expenditure": 13,
+    "adapter_expenditure": 1,
+    "base_assembly_expenditure": 3,
+    "retrofit_expenditure": 3,
+    "predictive_expenditure_and_waste": 96,
+    "final_energy": 38,
+    "preparation_states": [
+      {
+        "a": 0,
+        "h": 0,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 33,
+        "source": 121
+      },
+      {
+        "a": 0,
+        "h": 1,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 32,
+        "source": 121
+      },
+      {
+        "a": 0,
+        "h": 2,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 31,
+        "source": 121
+      },
+      {
+        "a": 0,
+        "h": 3,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 30,
+        "source": 121
+      },
+      {
+        "a": 0,
+        "h": 4,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 29,
+        "source": 121
+      },
+      {
+        "a": 0,
+        "h": 5,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 28,
+        "source": 121
+      },
+      {
+        "a": 0,
+        "h": 6,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 27,
+        "source": 121
+      },
+      {
+        "a": 1,
+        "h": 6,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 26,
+        "source": 121
+      },
+      {
+        "a": 2,
+        "h": 6,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 25,
+        "source": 121
+      },
+      {
+        "a": 3,
+        "h": 6,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 24,
+        "source": 121
+      },
+      {
+        "a": 4,
+        "h": 6,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 23,
+        "source": 121
+      },
+      {
+        "a": 5,
+        "h": 6,
+        "resident": "empty",
+        "intact": false,
+        "local": false,
+        "fuel": 22,
+        "source": 121
+      },
+      {
+        "a": 4,
+        "h": 6,
+        "resident": "active",
+        "intact": false,
+        "local": false,
+        "fuel": 21,
+        "source": 121
+      },
+      {
+        "a": 4,
+        "h": 6,
+        "resident": "active",
+        "intact": true,
+        "local": false,
+        "fuel": 20,
+        "source": 121
+      },
+      {
+        "a": 4,
+        "h": 6,
+        "resident": "active",
+        "intact": true,
+        "local": true,
+        "fuel": 20,
+        "source": 120
+      }
+    ],
+    "predictive_states": [
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 14,
+            "packets": 12,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 2,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 13,
+            "packets": 12,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 2,
+          "receipt": false,
+          "phase": "rented"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 18,
+            "packets": 11,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 2,
+          "receipt": true,
+          "phase": "observed"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 17,
+            "packets": 11,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 3,
+          "receipt": true,
+          "phase": "written"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 17,
+            "packets": 11,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 3,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 16,
+            "packets": 11,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 3,
+          "receipt": false,
+          "phase": "rented"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 21,
+            "packets": 10,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 3,
+          "receipt": true,
+          "phase": "observed"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 20,
+            "packets": 10,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": true,
+          "phase": "written"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 20,
+            "packets": 10,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 19,
+            "packets": 10,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "rented"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 24,
+            "packets": 9,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": true,
+          "phase": "observed"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 23,
+            "packets": 9,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": true,
+          "phase": "written"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 23,
+            "packets": 9,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 22,
+            "packets": 9,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "rented"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 27,
+            "packets": 8,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": true,
+          "phase": "observed"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 26,
+            "packets": 8,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": true,
+          "phase": "written"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 26,
+            "packets": 8,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 25,
+            "packets": 8,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "rented"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 30,
+            "packets": 7,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": true,
+          "phase": "observed"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 29,
+            "packets": 7,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": true,
+          "phase": "written"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 29,
+            "packets": 7,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 28,
+            "packets": 7,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "rented"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 33,
+            "packets": 6,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": true,
+          "phase": "observed"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 32,
+            "packets": 6,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": true,
+          "phase": "written"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 32,
+            "packets": 6,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 32,
+            "packets": 6,
+            "last": true,
+            "lease": 6,
+            "regime": false,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 31,
+            "packets": 6,
+            "last": true,
+            "lease": 6,
+            "regime": false,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "rented"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 28,
+            "packets": 5,
+            "last": true,
+            "lease": 6,
+            "regime": false,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 4,
+          "receipt": false,
+          "phase": "observed"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 27,
+            "packets": 5,
+            "last": true,
+            "lease": 6,
+            "regime": false,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 3,
+          "receipt": false,
+          "phase": "written"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 27,
+            "packets": 5,
+            "last": true,
+            "lease": 5,
+            "regime": false,
+            "fast": false,
+            "module_lease": 1,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 3,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 26,
+            "packets": 5,
+            "last": true,
+            "lease": 5,
+            "regime": false,
+            "fast": false,
+            "module_lease": 1,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 3,
+          "receipt": false,
+          "phase": "rented"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 23,
+            "packets": 4,
+            "last": true,
+            "lease": 5,
+            "regime": false,
+            "fast": false,
+            "module_lease": 1,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 3,
+          "receipt": false,
+          "phase": "observed"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 22,
+            "packets": 4,
+            "last": true,
+            "lease": 5,
+            "regime": false,
+            "fast": false,
+            "module_lease": 1,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 2,
+          "receipt": false,
+          "phase": "written"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 22,
+            "packets": 4,
+            "last": true,
+            "lease": 4,
+            "regime": false,
+            "fast": false,
+            "module_lease": 0,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 2,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 1,
+          "h": 1,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 2,
+          "bound_h": 4,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 20,
+            "packets": 4,
+            "last": true,
+            "lease": 4,
+            "regime": false,
+            "fast": true,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 2,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 0,
+          "h": 0,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 3,
+          "bound_h": 5,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 19,
+            "packets": 4,
+            "last": true,
+            "lease": 4,
+            "regime": false,
+            "fast": true,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 2,
+          "receipt": false,
+          "phase": "rented"
+        },
+        "parts": {
+          "a": 0,
+          "h": 0,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 3,
+          "bound_h": 5,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 16,
+            "packets": 3,
+            "last": true,
+            "lease": 4,
+            "regime": false,
+            "fast": true,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 2,
+          "receipt": false,
+          "phase": "observed"
+        },
+        "parts": {
+          "a": 0,
+          "h": 0,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 3,
+          "bound_h": 5,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 15,
+            "packets": 3,
+            "last": true,
+            "lease": 4,
+            "regime": false,
+            "fast": true,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 0,
+          "receipt": false,
+          "phase": "written"
+        },
+        "parts": {
+          "a": 0,
+          "h": 0,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 3,
+          "bound_h": 5,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 15,
+            "packets": 3,
+            "last": true,
+            "lease": 3,
+            "regime": false,
+            "fast": true,
+            "module_lease": 1,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 0,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 0,
+          "h": 0,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 3,
+          "bound_h": 5,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 14,
+            "packets": 3,
+            "last": true,
+            "lease": 3,
+            "regime": false,
+            "fast": true,
+            "module_lease": 1,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 0,
+          "receipt": false,
+          "phase": "rented"
+        },
+        "parts": {
+          "a": 0,
+          "h": 0,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 3,
+          "bound_h": 5,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 19,
+            "packets": 2,
+            "last": false,
+            "lease": 3,
+            "regime": false,
+            "fast": true,
+            "module_lease": 1,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 0,
+          "receipt": true,
+          "phase": "observed"
+        },
+        "parts": {
+          "a": 0,
+          "h": 0,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 3,
+          "bound_h": 5,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 18,
+            "packets": 2,
+            "last": false,
+            "lease": 3,
+            "regime": false,
+            "fast": true,
+            "module_lease": 1,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 0,
+          "receipt": true,
+          "phase": "written"
+        },
+        "parts": {
+          "a": 0,
+          "h": 0,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 3,
+          "bound_h": 5,
+          "register_units": 1,
+          "precursor": 0
+        }
+      },
+      {
+        "prediction": {
+          "physical": {
+            "fuel": 18,
+            "packets": 2,
+            "last": false,
+            "lease": 6,
+            "regime": false,
+            "fast": true,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 11
+          },
+          "score": 0,
+          "receipt": false,
+          "phase": "ready"
+        },
+        "parts": {
+          "a": 0,
+          "h": 0,
+          "resident": "active",
+          "intact": true,
+          "bound_a": 3,
+          "bound_h": 5,
+          "register_units": 1,
+          "precursor": 0
+        }
+      }
+    ]
+  },
+  "retrofit_grid": {
+    "configurations": 972,
+    "admitted": 48
+  },
+  "finite_lift_criterion": {
+    "all_words_max_length": 4,
+    "coarse_base_states": 6,
+    "inventory_and_register_cases_per_word": 18,
+    "cases": 302508,
+    "admitted": 632,
+    "full_witness_inventory_pairs": 9,
+    "full_witness_admitted": 4,
+    "full_witness_prefix_inventory_cases": 387
+  },
+  "complete_operational_graph": {
+    "initial": {
+      "prediction": {
+        "physical": {
+          "fuel": 15,
+          "packets": 4,
+          "last": true,
+          "lease": 6,
+          "regime": true,
+          "fast": false,
+          "module_lease": 2,
+          "seen": true,
+          "remainder": 0,
+          "material": 11
+        },
+        "score": 2,
+        "receipt": false,
+        "phase": "ready"
+      },
+      "parts": {
+        "a": 1,
+        "h": 1,
+        "resident": "active",
+        "intact": true,
+        "bound_a": 2,
+        "bound_h": 4,
+        "register_units": 1,
+        "precursor": 0
+      }
+    },
+    "reachable_states": 180,
+    "enabled_labelled_edges": 222,
+    "updater_replacement_edges": 16,
+    "exhausted_to_fixed_point": true,
+    "depth_cutoff": null
+  },
+  "boundaries": {
+    "checks": 7,
+    "actual_replacement_shortage_histories": [
+      {
+        "initial": {
+          "a": 0,
+          "h": 0,
+          "resident": "empty",
+          "intact": false,
+          "local": false,
+          "fuel": 32,
+          "source": 121
+        },
+        "predictor_entrance": {
+          "prediction": {
+            "physical": {
+              "fuel": 14,
+              "packets": 12,
+              "last": true,
+              "lease": 6,
+              "regime": true,
+              "fast": false,
+              "module_lease": 2,
+              "seen": true,
+              "remainder": 0,
+              "material": 10
+            },
+            "score": 2,
+            "receipt": false,
+            "phase": "ready"
+          },
+          "parts": {
+            "a": 0,
+            "h": 1,
+            "resident": "active",
+            "intact": true,
+            "bound_a": 2,
+            "bound_h": 4,
+            "register_units": 1,
+            "precursor": 0
+          }
+        },
+        "blocked": {
+          "prediction": {
+            "physical": {
+              "fuel": 22,
+              "packets": 4,
+              "last": true,
+              "lease": 4,
+              "regime": false,
+              "fast": false,
+              "module_lease": 0,
+              "seen": true,
+              "remainder": 0,
+              "material": 10
+            },
+            "score": 2,
+            "receipt": false,
+            "phase": "ready"
+          },
+          "parts": {
+            "a": 0,
+            "h": 1,
+            "resident": "active",
+            "intact": true,
+            "bound_a": 2,
+            "bound_h": 4,
+            "register_units": 1,
+            "precursor": 0
+          }
+        }
+      },
+      {
+        "initial": {
+          "a": 0,
+          "h": 0,
+          "resident": "empty",
+          "intact": false,
+          "local": false,
+          "fuel": 32,
+          "source": 121
+        },
+        "predictor_entrance": {
+          "prediction": {
+            "physical": {
+              "fuel": 14,
+              "packets": 12,
+              "last": true,
+              "lease": 6,
+              "regime": true,
+              "fast": false,
+              "module_lease": 2,
+              "seen": true,
+              "remainder": 0,
+              "material": 10
+            },
+            "score": 2,
+            "receipt": false,
+            "phase": "ready"
+          },
+          "parts": {
+            "a": 1,
+            "h": 0,
+            "resident": "active",
+            "intact": true,
+            "bound_a": 2,
+            "bound_h": 4,
+            "register_units": 1,
+            "precursor": 0
+          }
+        },
+        "blocked": {
+          "prediction": {
+            "physical": {
+              "fuel": 22,
+              "packets": 4,
+              "last": true,
+              "lease": 4,
+              "regime": false,
+              "fast": false,
+              "module_lease": 0,
+              "seen": true,
+              "remainder": 0,
+              "material": 10
+            },
+            "score": 2,
+            "receipt": false,
+            "phase": "ready"
+          },
+          "parts": {
+            "a": 1,
+            "h": 0,
+            "resident": "active",
+            "intact": true,
+            "bound_a": 2,
+            "bound_h": 4,
+            "register_units": 1,
+            "precursor": 0
+          }
+        }
+      }
+    ],
+    "actual_retrofit_shortage_histories": [
+      {
+        "initial": {
+          "a": 0,
+          "h": 0,
+          "resident": "empty",
+          "intact": false,
+          "local": false,
+          "fuel": 31,
+          "source": 121
+        },
+        "formed": {
+          "physical": {
+            "fuel": 17,
+            "packets": 12,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 9
+          },
+          "parts": {
+            "a": 0,
+            "h": 2,
+            "resident": "active",
+            "intact": true,
+            "bound_a": 2,
+            "bound_h": 4,
+            "register_units": 0,
+            "precursor": 0
+          }
+        }
+      },
+      {
+        "initial": {
+          "a": 0,
+          "h": 0,
+          "resident": "empty",
+          "intact": false,
+          "local": false,
+          "fuel": 31,
+          "source": 121
+        },
+        "formed": {
+          "physical": {
+            "fuel": 17,
+            "packets": 12,
+            "last": true,
+            "lease": 6,
+            "regime": true,
+            "fast": false,
+            "module_lease": 2,
+            "seen": true,
+            "remainder": 0,
+            "material": 9
+          },
+          "parts": {
+            "a": 2,
+            "h": 0,
+            "resident": "active",
+            "intact": true,
+            "bound_a": 2,
+            "bound_h": 4,
+            "register_units": 0,
+            "precursor": 0
+          }
+        }
+      }
+    ],
+    "unaffordable_write_after_paid_work": {
+      "prediction": {
+        "physical": {
+          "fuel": 0,
+          "packets": 11,
+          "last": true,
+          "lease": 6,
+          "regime": false,
+          "fast": false,
+          "module_lease": 2,
+          "seen": true,
+          "remainder": 0,
+          "material": 11
+        },
+        "score": 2,
+        "receipt": false,
+        "phase": "observed"
+      },
+      "parts": {
+        "a": 1,
+        "h": 1,
+        "resident": "active",
+        "intact": true,
+        "bound_a": 2,
+        "bound_h": 4,
+        "register_units": 1,
+        "precursor": 0
+      }
+    },
+    "unaffordable_rent_is_blockage_not_erasure": true,
+    "coarse_scalar_material_does_not_certify_installed_register": true
+  },
+  "source_hashes": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/check_model.py": "1c690aea4b47119185189dcf5906845bfdd627127e435f75aacb6e86e4963f12",
+    "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/updater/ConstructedUpdater.lean": "c59f5c934ed1884ffddfa36d982b89e6f934386d462a56927478004018e02023",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/ConstructedPrediction.lean": "b3dca9bd1fa58b1c45450c3c77d66ad2bdbbe153c1797fbc4fca534d6878d51f"
+  },
+  "all_checks_passed": true
+}
