@@ -27,3 +27,5 @@ python3 formal/check.py
 These overwrite their own verification receipts. The Python checks consume frozen accepted predecessor data; they do not rerun the full upstream formation experiment. The pinned Lean checker builds imported sources in a fresh temporary directory and records compiler/source/log hashes.
 
 [HANDOFF.md](HANDOFF.md) describes the machine-readable terminal boundary, valid summaries, incomplete raw frames and resource obligations for route replacement. The broader unified foundation remains ongoing.
+
+The subsequent [first-commit export and resource analysis](handoff/README.md) provide the active replacement branch with an earlier exact prefix: a paid informative diagnosis at reserve 11 with one unused packet. It does not add funding or parts. The declared next sequence needs both accessible cash until each return and separate physical source/component stocks; sensing alone cannot supply them.

@@ -2,6 +2,8 @@
 
 6 October 2026. AI-authored integration handoff. This is an executable observation continuation; it has not implemented a new route or proved that purchasing observation improves viability. See [the package](README.md) and [independent evidence](independent-verification.json).
 
+**Earlier entry for active replacement:** [handoff/](handoff/README.md) exports the exact first committed frame and all failed prefixes. Informative nonwriter/proxy boundaries still have recipient reserve 11 and one unused packet. The final two-frame witnesses below remain unchanged; the earlier export is a different stopping point, not a rollback. Its resource analysis specifies the additional head, route parts, blank, funding and source required by the declared revision continuation.
+
 ## Read the saved boundary
 
 In [verification.json](verification.json), `entries[entry_id].entry` preserves the complete immutable incoming parent state, its old unused source and inherited energy. Each `source_rows` item identifies the actual producer/control/row/mass and, for admitted histories, the saved input carrying the latent plant law. The independent checker reconstructs those admitted parent transitions to the entire accepted terminal state. Failed histories retain their probability.

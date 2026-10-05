@@ -2,6 +2,8 @@
 
 6 October 2026. AI-authored companion to [successor learning](SUCCESSOR-LEARNING.md), addressing **acquired response → evidence about the update mechanism → accountable route revision**. **Accepted at its conditional diagnostic and saved-evidence scopes, with separate internal review.** This is a formal evidence interface and an audit of accepted saved histories; it constructs neither a new sensor nor the mechanism that replaces a learning route.
 
+**Subsequent construction, 6 October 2026:** the [formed route monitor](FORMED-ROUTE-MONITOR.md) now realizes the sensing and retained-evidence part of this contract inside the finite event law. It assembles declared cells and a head, derives a report from actual recipient credit, pays for record reads and retains completed diagnostic summaries. Its supplied head recipe and calibrated contacts remain explicit. The [active replacement construction](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/PROTOCOL.md) follows the first informative frame with paid evidence access, replacement parts, explicit funding and subsequent probes/copying; its separate implementation and review must establish that composition. The statements below describe what this original diagnostic study itself establishes.
+
 The successor can already correct and transmit its stored response. Its route through target feedback, private feedback, disconnected input or frozen writing remains inherited. Revising that route requires knowing what the available observations actually distinguish. A failed action alone does not identify whether an estimate, route or source availability caused the failure.
 
 ## The precise diagnostic result
