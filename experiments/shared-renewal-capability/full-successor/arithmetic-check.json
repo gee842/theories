@@ -1,0 +1,10 @@
+{
+  "status": "all exact scalar comparisons passed",
+  "comparisons": 4200,
+  "seed": 120971,
+  "scope": "Limb implementation matches independent arbitrary-precision weighted integer division for declared boundary/random cases; analytic row-sum and limb-size proof supplies general bound",
+  "sha256": {
+    "arithmetic_check.py": "a8887759cd0b0b0763beefead9e94666dd9a47d76fcf1891d018f7ffbce13350",
+    "fixed.py": "c99d7a618105503324bbe7260465c665e351a3717644b68dbec31ea980426c64"
+  }
+}

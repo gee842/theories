@@ -1,0 +1,545 @@
+{
+  "status": "passed; exact conditional model certificate and identification witnesses",
+  "checker_sha256": "df1689e88450c4d9ee6112cb88f9ef03a5fe9a7fb110d48263019f554b188330",
+  "frozen_audit_path": "experiments/shared-renewal-capability/rna-identification/audit.json",
+  "frozen_audit_sha256_before_and_after": "4da724ddfde3a002d08c10cc4b12e4dbffaa0f0b5882b4e36e01cae8697c1289",
+  "frozen_audit_producer_sha256": "6c349b33325c5989731191df453b077404bf38ba4db7a6a9e9246e63a82e1e1f",
+  "source_sha256_before_and_after": {
+    "sources/24-rna-network-evidence-2026-10-05/Mizuuchi-2022.pdf": "3b8c7d7eaec21f3dd97ddca0224abf876d06b0e66a5d48cdae6033ef96627f6c",
+    "sources/24-rna-network-evidence-2026-10-05/Bansho-2016.pdf": "4c9643e76215c9a422330524205d1691dff55651e8d85382bc5239382bcc9e70",
+    "sources/24-rna-network-evidence-2026-10-05/Mizuuchi-2022-SI.pdf": "a2cf3989ed16a6b4e76b08a5aba49b9a7597072058a3219ac7df58907c579d08",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/Mizuuchi-2022-source-data.xlsx": "544fa34ee8706c85e7137d69201e4d51da635bc1994fcd085811abc9ee545bde",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/Serial transfer of the five RNAs.ipynb": "83e1509f2694edd1ec96476dc51a8c784ceaae56e86cd49961efdf07c2b77878",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/author-code-README.md": "c1303a80c201a38f7d6b30f93277426574296c8c47194e8277ba988309df1348",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/dryad-dataset-metadata.json": "9120dbe1634a4575d3e28fa912c59bdacf03e6cb771ba963250d395492f4a061",
+    "sources/24-rna-network-evidence-2026-10-05/identification-addition/dryad-files-metadata.json": "673a572917e53fe0ee699aef565842c6b92d997313fc2c2108c75ca921dd699a"
+  },
+  "scope": "No source extraction rerun, original notebook execution, ODE integration, simulation, parameter fit, measured task probability, or physical clock calibration.",
+  "conditional_ODE_certificate": {
+    "two_RNA_restriction": [
+      "HL2-228",
+      "PL2-228"
+    ],
+    "coefficient_enclosures": {
+      "a": [
+        "5580879/2000000",
+        "5580881/2000000"
+      ],
+      "b": [
+        "456947/80000",
+        "11423677/2000000"
+      ]
+    },
+    "enclosure_scope": "Six-decimal S23 rounding only, not experimental uncertainty.",
+    "five_to_ratio_bounds": [
+      "269/10",
+      "2699/100"
+    ],
+    "capacity": 300,
+    "dilution": 5,
+    "normalized_deadline": 2,
+    "initial_law": "independent Poisson(10) counts of the two selected RNAs; other RNAs absent",
+    "success_states": 299,
+    "max_h_for_p_1_through_11": [
+      54,
+      49,
+      43,
+      38,
+      33,
+      27,
+      22,
+      16,
+      11,
+      6,
+      0
+    ],
+    "uniform_success_time_strict_upper": "320/279",
+    "exp12_Taylor_terms_0_through": 16,
+    "exp12_Taylor_lower_bound": "128113530847/875875",
+    "probability_equals_exp_minus20_times_rational": "35295386893639081533292416677171232390266427052404148940/839804478670853788470022637495376624731865611727",
+    "exp20_Taylor_terms_0_through": 200,
+    "exp20_Taylor_lower_bound": "8248891049577635886361447516698066365550963145858934955284541260615239503071435858171988373244760813029278551350844832842964700288008969700025833560382228461355997742501856422772197131104669914620128495951996979999609302864085264537771731878671014398419591809193493344819065558926800498529/17002231667937941519201532168617991034185852229323930884505666315088477596685559738720853648094390892359651222723899655927403612843809640716834771597976011619246785005355531638444155185119925545818676904786493801733763556534602528448762395370007183914785011815595317178455005081749",
+    "exp20_remainder_upper_bound": "900719925474099200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/40028135175220668794656415085648433287938757432132002549608028251491915528442400508438225178265629203544108383098584474112730824483560275233377450444371583869894636425034201778061054974092784713479232182681652036214450492707597950714178897606598200126824994698492092125193727458945767",
+    "probability_strict_lower_fraction": "86626371255287543892294575296/1000000000000000000000000000000",
+    "probability_strict_upper_fraction": "86626371255287543892294575297/1000000000000000000000000000000",
+    "probability_decimal_for_display": "0.0866263712552875438922945752965653340885054"
+  },
+  "same_marginal_path_law_witness": {
+    "initial": [
+      1,
+      1
+    ],
+    "capacity": 10,
+    "dilution": 5,
+    "marginal_endpoint_law_each_RNA": {
+      "1": "1/2",
+      "5": "1/2"
+    },
+    "aligned_endpoint_law": {
+      "law": [
+        {
+          "weight": "1/2",
+          "x": "5",
+          "y": "5"
+        },
+        {
+          "weight": "1/2",
+          "x": "1",
+          "y": "1"
+        }
+      ],
+      "mean_x": "3",
+      "mean_y": "3",
+      "joint_probability": "1/2"
+    },
+    "opposed_endpoint_law": {
+      "law": [
+        {
+          "weight": "1/2",
+          "x": "5",
+          "y": "1"
+        },
+        {
+          "weight": "1/2",
+          "x": "1",
+          "y": "5"
+        }
+      ],
+      "mean_x": "3",
+      "mean_y": "3",
+      "joint_probability": "0"
+    },
+    "retained_joint_probabilities": [
+      "1/10",
+      "0"
+    ],
+    "path_extension": "Any common continuous nondecreasing f with f(0)=0,f(T)=1: aligned=(1+4Zf,1+4Zf); opposed=(1+4Zf,1+4(1-Z)f); Z is a fair Bernoulli variable.",
+    "scope": "Endpoint/path-law class; these are not solutions of the fixed published ODE or asserted elementary chemical mechanisms."
+  },
+  "sharp_mean_bound_constructive_examples": [
+    {
+      "inputs": {
+        "mean_x": "1",
+        "mean_y": "9",
+        "a": "3",
+        "b": "3",
+        "cap": "10"
+      },
+      "identified_interval": [
+        "0",
+        "1/3"
+      ],
+      "lower_witness": {
+        "law": [
+          {
+            "weight": "1/10",
+            "x": "10",
+            "y": "0"
+          },
+          {
+            "weight": "9/10",
+            "x": "0",
+            "y": "10"
+          },
+          {
+            "weight": "0",
+            "x": "0",
+            "y": "0"
+          }
+        ],
+        "mean_x": "1",
+        "mean_y": "9",
+        "joint_probability": "0"
+      },
+      "upper_witness": {
+        "law": [
+          {
+            "weight": "1/3",
+            "x": "3",
+            "y": "7"
+          },
+          {
+            "weight": "2/3",
+            "x": "0",
+            "y": "10"
+          }
+        ],
+        "mean_x": "1",
+        "mean_y": "9",
+        "joint_probability": "1/3"
+      }
+    },
+    {
+      "inputs": {
+        "mean_x": "9",
+        "mean_y": "1",
+        "a": "3",
+        "b": "3",
+        "cap": "10"
+      },
+      "identified_interval": [
+        "0",
+        "1/3"
+      ],
+      "lower_witness": {
+        "law": [
+          {
+            "weight": "9/10",
+            "x": "10",
+            "y": "0"
+          },
+          {
+            "weight": "1/10",
+            "x": "0",
+            "y": "10"
+          },
+          {
+            "weight": "0",
+            "x": "0",
+            "y": "0"
+          }
+        ],
+        "mean_x": "9",
+        "mean_y": "1",
+        "joint_probability": "0"
+      },
+      "upper_witness": {
+        "law": [
+          {
+            "weight": "1/3",
+            "x": "7",
+            "y": "3"
+          },
+          {
+            "weight": "2/3",
+            "x": "10",
+            "y": "0"
+          }
+        ],
+        "mean_x": "9",
+        "mean_y": "1",
+        "joint_probability": "1/3"
+      }
+    },
+    {
+      "inputs": {
+        "mean_x": "4",
+        "mean_y": "4",
+        "a": "3",
+        "b": "3",
+        "cap": "10"
+      },
+      "identified_interval": [
+        "0",
+        "1"
+      ],
+      "lower_witness": {
+        "law": [
+          {
+            "weight": "2/5",
+            "x": "10",
+            "y": "0"
+          },
+          {
+            "weight": "2/5",
+            "x": "0",
+            "y": "10"
+          },
+          {
+            "weight": "1/5",
+            "x": "0",
+            "y": "0"
+          }
+        ],
+        "mean_x": "4",
+        "mean_y": "4",
+        "joint_probability": "0"
+      },
+      "upper_witness": {
+        "law": [
+          {
+            "weight": "1",
+            "x": "4",
+            "y": "4"
+          }
+        ],
+        "mean_x": "4",
+        "mean_y": "4",
+        "joint_probability": "1"
+      }
+    },
+    {
+      "inputs": {
+        "mean_x": "0",
+        "mean_y": "5",
+        "a": "3",
+        "b": "3",
+        "cap": "10"
+      },
+      "identified_interval": [
+        "0",
+        "0"
+      ],
+      "lower_witness": {
+        "law": [
+          {
+            "weight": "0",
+            "x": "10",
+            "y": "0"
+          },
+          {
+            "weight": "1/2",
+            "x": "0",
+            "y": "10"
+          },
+          {
+            "weight": "1/2",
+            "x": "0",
+            "y": "0"
+          }
+        ],
+        "mean_x": "0",
+        "mean_y": "5",
+        "joint_probability": "0"
+      },
+      "upper_witness": {
+        "law": [
+          {
+            "weight": "0",
+            "x": "10",
+            "y": "0"
+          },
+          {
+            "weight": "1/2",
+            "x": "0",
+            "y": "10"
+          },
+          {
+            "weight": "1/2",
+            "x": "0",
+            "y": "0"
+          }
+        ],
+        "mean_x": "0",
+        "mean_y": "5",
+        "joint_probability": "0"
+      }
+    },
+    {
+      "inputs": {
+        "mean_x": "1",
+        "mean_y": "2",
+        "a": "3",
+        "b": "4",
+        "cap": "10"
+      },
+      "identified_interval": [
+        "0",
+        "1/3"
+      ],
+      "lower_witness": {
+        "law": [
+          {
+            "weight": "1/10",
+            "x": "10",
+            "y": "0"
+          },
+          {
+            "weight": "1/5",
+            "x": "0",
+            "y": "10"
+          },
+          {
+            "weight": "7/10",
+            "x": "0",
+            "y": "0"
+          }
+        ],
+        "mean_x": "1",
+        "mean_y": "2",
+        "joint_probability": "0"
+      },
+      "upper_witness": {
+        "law": [
+          {
+            "weight": "1/3",
+            "x": "3",
+            "y": "4"
+          },
+          {
+            "weight": "2/3",
+            "x": "0",
+            "y": "1"
+          }
+        ],
+        "mean_x": "1",
+        "mean_y": "2",
+        "joint_probability": "1/3"
+      }
+    },
+    {
+      "inputs": {
+        "mean_x": "3/2",
+        "mean_y": "9/2",
+        "a": "2",
+        "b": "3",
+        "cap": "6"
+      },
+      "identified_interval": [
+        "0",
+        "3/4"
+      ],
+      "lower_witness": {
+        "law": [
+          {
+            "weight": "1/4",
+            "x": "6",
+            "y": "0"
+          },
+          {
+            "weight": "3/4",
+            "x": "0",
+            "y": "6"
+          },
+          {
+            "weight": "0",
+            "x": "0",
+            "y": "0"
+          }
+        ],
+        "mean_x": "3/2",
+        "mean_y": "9/2",
+        "joint_probability": "0"
+      },
+      "upper_witness": {
+        "law": [
+          {
+            "weight": "3/4",
+            "x": "2",
+            "y": "4"
+          },
+          {
+            "weight": "1/4",
+            "x": "0",
+            "y": "6"
+          }
+        ],
+        "mean_x": "3/2",
+        "mean_y": "9/2",
+        "joint_probability": "3/4"
+      }
+    },
+    {
+      "inputs": {
+        "mean_x": "2",
+        "mean_y": "2",
+        "a": "3",
+        "b": "3",
+        "cap": "4"
+      },
+      "identified_interval": [
+        "0",
+        "0"
+      ],
+      "lower_witness": {
+        "law": [
+          {
+            "weight": "1/2",
+            "x": "4",
+            "y": "0"
+          },
+          {
+            "weight": "1/2",
+            "x": "0",
+            "y": "4"
+          },
+          {
+            "weight": "0",
+            "x": "0",
+            "y": "0"
+          }
+        ],
+        "mean_x": "2",
+        "mean_y": "2",
+        "joint_probability": "0"
+      },
+      "upper_witness": {
+        "law": [
+          {
+            "weight": "1/2",
+            "x": "4",
+            "y": "0"
+          },
+          {
+            "weight": "1/2",
+            "x": "0",
+            "y": "4"
+          },
+          {
+            "weight": "0",
+            "x": "0",
+            "y": "0"
+          }
+        ],
+        "mean_x": "2",
+        "mean_y": "2",
+        "joint_probability": "0"
+      }
+    },
+    {
+      "inputs": {
+        "mean_x": "0",
+        "mean_y": "0",
+        "a": "1",
+        "b": "1",
+        "cap": "0"
+      },
+      "identified_interval": [
+        "0",
+        "0"
+      ],
+      "lower_witness": {
+        "law": [
+          {
+            "weight": "1",
+            "x": "0",
+            "y": "0"
+          }
+        ],
+        "mean_x": "0",
+        "mean_y": "0",
+        "joint_probability": "0"
+      },
+      "upper_witness": {
+        "law": [
+          {
+            "weight": "1",
+            "x": "0",
+            "y": "0"
+          }
+        ],
+        "mean_x": "0",
+        "mean_y": "0",
+        "joint_probability": "0"
+      }
+    }
+  ],
+  "paired_source_rows_reused_from_frozen_audit": [
+    {
+      "row": 37,
+      "donor_fold": 3.808441308,
+      "target_fold": 62.5324256670592
+    },
+    {
+      "row": 38,
+      "donor_fold": 3.740502647,
+      "target_fold": 45.8889906340716
+    },
+    {
+      "row": 39,
+      "donor_fold": 3.230509937,
+      "target_fold": 91.7231896186724
+    }
+  ],
+  "paired_source_scope": "Three translation-uncoupled bulk assay records all miss the donor fivefold threshold. Target folds are negative-control normalized. Not three droplet joint replacement/retention trials."
+}

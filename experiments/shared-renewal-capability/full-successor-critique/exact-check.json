@@ -1,0 +1,632 @@
+{
+  "status": "all exact assertions passed",
+  "git_head": "eec090f006aec898fe0de13836122b70f92175be",
+  "scope": "Exact channel increments, positive finite path witness, and rational analytic tail bounds; no successor CTMC calculation or probability comparison",
+  "channel_count": 42,
+  "ledger": {
+    "assemble": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    },
+    "Cwear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "reproduce": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    },
+    "Ywear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "capture": {
+      "material": 0,
+      "work": 1,
+      "mobile_packet_pool": 0,
+      "S": 1
+    },
+    "Fleak": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": -1,
+      "S": -2
+    },
+    "recycleC": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": -1,
+      "S": -1
+    },
+    "recycleY": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": -1,
+      "S": -1
+    },
+    "CFleak": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "CFwear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 1,
+      "S": 0
+    },
+    "accessRepair": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    },
+    "formA0": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": -1,
+      "S": -2
+    },
+    "copyA0": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": -1,
+      "S": -2
+    },
+    "fabricateG0": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": -1,
+      "S": -2
+    },
+    "A0wear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "G0wear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "bindF0": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    },
+    "unbindF0": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    },
+    "GF0leak": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": -1,
+      "S": -2
+    },
+    "GF0wear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "bindY0": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    },
+    "unbindY0": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    },
+    "YG0Gwear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "YG0Ywear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "accessForm0": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "accessFabricate0": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "formA1": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": -1,
+      "S": -2
+    },
+    "copyA1": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": -1,
+      "S": -2
+    },
+    "fabricateG1": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": -1,
+      "S": -2
+    },
+    "A1wear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "G1wear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "bindF1": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    },
+    "unbindF1": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    },
+    "GF1leak": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": -1,
+      "S": -2
+    },
+    "GF1wear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "bindY1": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    },
+    "unbindY1": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    },
+    "YG1Gwear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "YG1Ywear": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "accessForm1": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "accessFabricate1": {
+      "material": 0,
+      "work": -1,
+      "mobile_packet_pool": 0,
+      "S": -1
+    },
+    "boundReproduce1": {
+      "material": 0,
+      "work": 0,
+      "mobile_packet_pool": 0,
+      "S": 0
+    }
+  },
+  "approach": [
+    {
+      "event": "assemble",
+      "selected_rate": 3,
+      "before": {
+        "R": 3,
+        "Y": 1,
+        "F": 2
+      },
+      "after": {
+        "R": 2,
+        "C": 1,
+        "Y": 1,
+        "F": 2
+      },
+      "Q": 2,
+      "U": 2,
+      "W": 6,
+      "S": 8
+    },
+    {
+      "event": "assemble",
+      "selected_rate": 2,
+      "before": {
+        "R": 2,
+        "C": 1,
+        "Y": 1,
+        "F": 2
+      },
+      "after": {
+        "R": 1,
+        "C": 2,
+        "Y": 1,
+        "F": 2
+      },
+      "Q": 2,
+      "U": 2,
+      "W": 6,
+      "S": 8
+    },
+    {
+      "event": "capture",
+      "selected_rate": 2,
+      "before": {
+        "R": 1,
+        "C": 2,
+        "Y": 1,
+        "F": 2
+      },
+      "after": {
+        "R": 1,
+        "C": 1,
+        "CF": 1,
+        "Y": 1,
+        "F": 2
+      },
+      "Q": 2,
+      "U": 3,
+      "W": 7,
+      "S": 9
+    },
+    {
+      "event": "capture",
+      "selected_rate": 1,
+      "before": {
+        "R": 1,
+        "C": 1,
+        "CF": 1,
+        "Y": 1,
+        "F": 2
+      },
+      "after": {
+        "R": 1,
+        "CF": 2,
+        "Y": 1,
+        "F": 2
+      },
+      "Q": 2,
+      "U": 4,
+      "W": 8,
+      "S": 10
+    }
+  ],
+  "one_pump": [
+    {
+      "event": "CFwear",
+      "selected_rate": 2,
+      "before": {
+        "R": 1,
+        "CF": 2,
+        "Y": 1,
+        "F": 2
+      },
+      "after": {
+        "R": 1,
+        "CF": 1,
+        "Y": 1,
+        "D": 1,
+        "F": 3
+      },
+      "Q": 3,
+      "U": 4,
+      "W": 7,
+      "S": 10
+    },
+    {
+      "event": "accessRepair",
+      "selected_rate": 1,
+      "before": {
+        "R": 1,
+        "CF": 1,
+        "Y": 1,
+        "D": 1,
+        "F": 3
+      },
+      "after": {
+        "R": 2,
+        "C": 1,
+        "Y": 1,
+        "F": 3
+      },
+      "Q": 3,
+      "U": 3,
+      "W": 7,
+      "S": 10
+    },
+    {
+      "event": "assemble",
+      "selected_rate": 2,
+      "before": {
+        "R": 2,
+        "C": 1,
+        "Y": 1,
+        "F": 3
+      },
+      "after": {
+        "R": 1,
+        "C": 2,
+        "Y": 1,
+        "F": 3
+      },
+      "Q": 3,
+      "U": 3,
+      "W": 7,
+      "S": 10
+    },
+    {
+      "event": "capture",
+      "selected_rate": 2,
+      "before": {
+        "R": 1,
+        "C": 2,
+        "Y": 1,
+        "F": 3
+      },
+      "after": {
+        "R": 1,
+        "C": 1,
+        "CF": 1,
+        "Y": 1,
+        "F": 3
+      },
+      "Q": 3,
+      "U": 4,
+      "W": 8,
+      "S": 11
+    },
+    {
+      "event": "capture",
+      "selected_rate": 1,
+      "before": {
+        "R": 1,
+        "C": 1,
+        "CF": 1,
+        "Y": 1,
+        "F": 3
+      },
+      "after": {
+        "R": 1,
+        "CF": 2,
+        "Y": 1,
+        "F": 3
+      },
+      "Q": 3,
+      "U": 5,
+      "W": 9,
+      "S": 12
+    }
+  ],
+  "example_entry_suffix": [
+    {
+      "event": "formA0",
+      "selected_rate": 3,
+      "before": {
+        "R": 1,
+        "CF": 2,
+        "Y": 1,
+        "F": 3
+      },
+      "after": {
+        "CF": 2,
+        "Y": 1,
+        "F": 2,
+        "A0": 1
+      },
+      "Q": 2,
+      "U": 4,
+      "W": 8,
+      "S": 10
+    },
+    {
+      "event": "CFwear",
+      "selected_rate": 2,
+      "before": {
+        "CF": 2,
+        "Y": 1,
+        "F": 2,
+        "A0": 1
+      },
+      "after": {
+        "CF": 1,
+        "Y": 1,
+        "D": 1,
+        "F": 3,
+        "A0": 1
+      },
+      "Q": 3,
+      "U": 4,
+      "W": 7,
+      "S": 10
+    },
+    {
+      "event": "accessRepair",
+      "selected_rate": 1,
+      "before": {
+        "CF": 1,
+        "Y": 1,
+        "D": 1,
+        "F": 3,
+        "A0": 1
+      },
+      "after": {
+        "R": 1,
+        "C": 1,
+        "Y": 1,
+        "F": 3,
+        "A0": 1
+      },
+      "Q": 3,
+      "U": 3,
+      "W": 7,
+      "S": 10
+    },
+    {
+      "event": "fabricateG0",
+      "selected_rate": 3,
+      "before": {
+        "R": 1,
+        "C": 1,
+        "Y": 1,
+        "F": 3,
+        "A0": 1
+      },
+      "after": {
+        "C": 1,
+        "Y": 1,
+        "F": 2,
+        "A0": 1,
+        "G0": 1
+      },
+      "Q": 2,
+      "U": 2,
+      "W": 6,
+      "S": 8
+    },
+    {
+      "event": "bindY0",
+      "selected_rate": 1,
+      "before": {
+        "C": 1,
+        "Y": 1,
+        "F": 2,
+        "A0": 1,
+        "G0": 1
+      },
+      "after": {
+        "C": 1,
+        "F": 2,
+        "A0": 1,
+        "YG0": 1
+      },
+      "Q": 2,
+      "U": 2,
+      "W": 6,
+      "S": 8
+    },
+    {
+      "event": "capture",
+      "selected_rate": 1,
+      "before": {
+        "C": 1,
+        "F": 2,
+        "A0": 1,
+        "YG0": 1
+      },
+      "after": {
+        "CF": 1,
+        "F": 2,
+        "A0": 1,
+        "YG0": 1
+      },
+      "Q": 2,
+      "U": 3,
+      "W": 7,
+      "S": 9
+    }
+  ],
+  "first_entry_path_checks": {
+    "1": {
+      "jumps": 10,
+      "captures": 3
+    },
+    "2": {
+      "jumps": 15,
+      "captures": 5
+    },
+    "5": {
+      "jumps": 30,
+      "captures": 11
+    },
+    "20": {
+      "jumps": 105,
+      "captures": 41
+    }
+  },
+  "analytic_mobile_pool_upcrossing_bounds_H10": {
+    "20": {
+      "upper_exact": "38270798548722257040209064218627309625295213790286924326483291562869167532904081359840603525884180204488795418848100177138731660920047534080000000000000000000000000/356577989695929638735989584798064005314523488914788160434216426752055018336125014078232923902939117652893668644730972988316221047366939706404160571652590678401294794911511",
+      "upper_decimal": 1.0732798898035607e-07
+    },
+    "25": {
+      "upper_exact": "2216556052639133501564735960708079149449417642245760643419107333200237709312823625336637479291227751911986519070141303043864657299243008000000000000000000000000/356577989695929638735989584798064005314523488914788160434216426752055018336125014078232923902939117652893668644730972988316221047366939706404160571652590678401294794911511",
+      "upper_decimal": 6.2161886507052555e-12
+    },
+    "27": {
+      "upper_exact": "32886945781004535104737658547462261293461468278972426937685668584981787752304394006353371296005716101737626070986335637552991926233333760000000000000000000000/356577989695929638735989584798064005314523488914788160434216426752055018336125014078232923902939117652893668644730972988316221047366939706404160571652590678401294794911511",
+      "upper_decimal": 9.222932074144211e-14
+    },
+    "30": {
+      "upper_exact": "44572942071839084374105960748336465884360977920530042524376464956643093729247331593076798423247229663540779206523274169012626013552640000000000000000000000/356577989695929638735989584798064005314523488914788160434216426752055018336125014078232923902939117652893668644730972988316221047366939706404160571652590678401294794911511",
+      "upper_decimal": 1.2500194448302452e-16
+    },
+    "35": {
+      "upper_exact": "373960113745702740435927600291663060544881830211626534711822877989466926435180823627090032215653007845297245370954042832192536576000000000000000000000/356577989695929638735989584798064005314523488914788160434216426752055018336125014078232923902939117652893668644730972988316221047366939706404160571652590678401294794911511",
+      "upper_decimal": 1.0487470470754397e-21
+    },
+    "40": {
+      "upper_exact": "1490190042194862037714387985730183438769722513394998943295177096643178199747622345796560951579696949095550868251736336970547200000000000000000000/356577989695929638735989584798064005314523488914788160434216426752055018336125014078232923902939117652893668644730972988316221047366939706404160571652590678401294794911511",
+      "upper_decimal": 4.17914196965891e-27
+    },
+    "90": {
+      "upper_exact": "123913748107561627575650887805198854724516295704157470130317463321732710400000000/15332853556924974465647552146316752228524510023335890898671306350338365788453375605364015727826382059074427751723431838497597505036778407375378904581061399171255676181194973",
+      "upper_decimal": 8.08158426919801e-93
+    }
+  },
+  "script_sha256": "e60414069de2276ca492bb64f999dea966720b087ece26ee2e67cf0643269a1d",
+  "sources_sha256": {
+    "experiments/shared-renewal-capability/full-entry/compute.py": "e7ab065ffa835bc9eb5aa2164e205c8efb5b3b06a0bdae7a79f3845018b2cb7e",
+    "_process/research/2026-10-05-support-and-shared-generativity/completion/FULL-ENTRY-SUCCESSOR.md": "c3c8a52a1f786e79304b4617818420b101cabeb2072f7f891687968945cfe23c",
+    "experiments/shared-renewal-capability/formal/TypedRenewal.lean": "73d0fea4f9fbf2a51560b850d608d2cc83a6ac8db80a8b7b2981f5f76a5a193c",
+    "experiments/shared-renewal-capability/formal/ReserveTurnover.lean": "c0e6ba1c9f3adb1980121e2e0e2f55358256acdae356921638bffd4d8d212b55"
+  }
+}

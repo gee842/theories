@@ -100,6 +100,17 @@ The C14 random rational cases test algebra only, not a distribution of physical 
 
 These contributions received independent AI-assisted review with the execution/read-only distinctions in [ENTRANCE-DISCOVERY-REVIEW.md](ENTRANCE-DISCOVERY-REVIEW.md). D1 is an analytic theorem, not a machine-checked or empirical result. The RNA competing-rate witnesses expose a possible discriminating assay; they do not yet supply D1's two obtainable contexts in one physical system.
 
+### Complete successor and task-identification additions
+
+| Contribution | Accepted result | Scope retained |
+|---|---|---|
+| C37 [Original carriers](CARRIER-SEMANTICS.md) | Exact affine per-channel projection on all material skeletons; permanent original-loss semantics and canonical already-worn-slot quotient | Declared carrier convention, not measured molecular identity; exhaustive Python/analytic bridge, not end-to-end Lean |
+| C38 [Reserve control](FULL-SUCCESSOR-CRITIQUE.md) | Positive pump proves no hard reserve cap; immigration–death domination gives rigorous whole-history errors; necessary wear/capture timing bounds | Unit forward law and original preparation; conditional high-reserve starts and reverse channels need their own bounds |
+| C39 [Full first replacement](FULL-SUCCESSOR-RESULT.md) | Actual entrance followed by first all-original replacement, with directed whole-event probabilities; reserve restoration reverses the entry-class comparison at H10 | Rare events, different tasks and endogenous history classes; no common-alpha capability incomparability, reliable repetition or automatic reversible transfer |
+| C40 [RNA task identification](RNA-PARTIAL-IDENTIFICATION.md) | Exact two-RNA conditional probability about0.0866263712553; nuisance symmetry; sharp mean/capacity bounds and same-marginal/different-joint witnesses | Printed rounding is not biological uncertainty; weighted integer support differs from continuous relaxation; matched physical assay unrun |
+
+The [successor review](FULL-SUCCESSOR-REVIEW.md) separates exact carrier checking, probability execution, read-only arithmetic review and source-conditional model deduction. The float-before-tail-gate deviation and post-result precision refinement are preserved in the protocol; no physical rates or event definitions were changed to obtain a favorable sign.
+
 ## Conflict and dependency ledger
 
 | Issue | Resolution/status |
@@ -126,6 +137,9 @@ These contributions received independent AI-assisted review with the execution/r
 | Captured support versus inherited reserve depletion | Six captures per turnover applies to restored reserve. The generalized minimum is 6+m′−m; reduced fresh capture funded by spent reserves is not steady renewal. |
 | Old predictive success versus completeness | Old tests can remain exact while a new feasible test separates merged contexts. D1 makes covered discovery conditional on paid access and fresh evidence; finite funding and indistinguishable records prevent unrestricted guarantees. |
 | Effective rates versus identified future tasks | The RNA endpoint matrix can be reconstructed while microscopic lifetimes remain unidentifiable. A new task needs extra measurements or a valid bound over the entire compatible class. |
+| Complete replacement versus support restoration | Both are whole-history events, but the reserve predicate reverses the comparison. Neither restores the outside source, guarantees operation afterward or orders every joint task. |
+| Microscopic uniqueness versus task identification | A nuisance symmetry may preserve every claimed RNA outcome. A coupling ambiguity can change the joint task while marginals agree. Identify the task range over compatible physical laws and expand observations where needed. |
+| Continuous resource bound versus integer weighted support | Cost rescaling preserves a continuous relaxation; sharp integer bounds require the actual weighted lattice. |
 | Classical stochastic model versus theory of everything | Classical specialization is useful but incomplete coverage. General interface does not derive quantum, relativistic or fundamental physical law. |
 
 ## Registered active contributions
@@ -164,3 +178,6 @@ The v0.7 [paid-access review](PAID-ACCESS-REVIEW.md) checks the model, exact fai
 
 
 The v0.8 [entrance/discovery review](ENTRANCE-DISCOVERY-REVIEW.md) accepts typed projection and reserve-sensitive formal proofs, the all-history entrance certificate, the conditional discovery theorem and the RNA identification constraints. The [verification record](entrance-discovery-verification.json) checks frozen antecedents, compiler and calculation inputs, source-addition hashes and local links. The discovery check's specification input remains v0.7 at047a8c5; v0.8 is a documented integration delta, not a retroactive execution input. No completed scientific calculation was rerun solely for these index edits. The full theory goal remains active.
+
+
+The v0.9 [successor review](FULL-SUCCESSOR-REVIEW.md) accepts the exact carrier bridge, leakage-based tail theorem, directed whole-entrance replacement calculation and conditional RNA identification results. [full-successor-verification.json](full-successor-verification.json) records frozen input hashes, original floating-protocol preservation, certificate composition and local links. Previous scientific producers were not rerun merely for integration. The last two goal turns made substantive progress; no blocked audit is triggered and the universal objective remains active.

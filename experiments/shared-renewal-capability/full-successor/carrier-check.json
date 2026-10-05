@@ -1,0 +1,44 @@
+{
+  "checked_at_utc": "2026-10-05T15:11:01.441175+00:00",
+  "status": "all_exact_assertions_passed",
+  "method": "Exhaustive N=4 material skeletons; exact integer coefficients of affine polynomials in free F; no probability propagation",
+  "material_skeletons": 17593,
+  "channel_count": 42,
+  "counts": {
+    "channel_polynomial_equalities": 738906,
+    "compatible_mask_transition_cases": 339207,
+    "compatible_skeleton_mask_pairs": 37154,
+    "labelled_assignment_cases": 162425,
+    "mask_algebra_cases": 80,
+    "root_model_edge_coefficient_comparisons": 313546,
+    "root_model_state_comparisons": 37154
+  },
+  "examples": {
+    "same_target_copying_assignments": 2,
+    "same_target_copying_total_propensity": "2 F",
+    "reused_material_type_switch_path": [
+      "A0_wear",
+      "paid_recycling",
+      "capture",
+      "A1_paid_formation",
+      "capture"
+    ],
+    "original_wear_mask_after_type_switch_and_later_wear": 1
+  },
+  "free_fuel_scope": "Every nonnegative integer F, by coefficient equality; no fuel cap",
+  "mask_scope": "All 16 masks checked algebraically; every original-role-compatible skeleton/mask event checked; types preserved before wear",
+  "source_sha256": "87fe3afa23d847d11ec3d6d3db800ca491e60b2ca77163f5d274692e2fd42dde",
+  "reference_source": "experiments/shared-renewal-capability/full-entry/compute.py",
+  "reference_source_sha256": "e7ab065ffa835bc9eb5aa2164e205c8efb5b3b06a0bdae7a79f3845018b2cb7e",
+  "typed_source_sha256": "73d0fea4f9fbf2a51560b850d608d2cc83a6ac8db80a8b7b2981f5f76a5a193c",
+  "root_model_source_sha256": "6575e93ca13317f31e2e58031293aca3afd591209f100ce925e024d1611d7449",
+  "root_model_scope": "Every compatible labelled state checked against independently canonicalized per-channel target and affine rate coefficients; graph construction and probability propagation not run",
+  "python_version": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "elapsed_seconds": 4.178617624973413,
+  "scope_limits": [
+    "Not a Lean proof or Python-to-Lean equivalence theorem",
+    "Root model's one-step quotient checked, but not graph stopping, fuel boundaries, propagation or probability certification",
+    "No probability computation or comparison",
+    "Material slots are declared carrier bookkeeping, not a calibrated molecular atom map"
+  ]
+}
