@@ -128,6 +128,34 @@ The construction must identify the causal mechanism at each transition. Merely a
 
 The existing physical, selection, inquiry, and concern studies supply partial mechanisms for this work. Their assumptions should become an explicit map of derivation tasks. The foundation's intended direction is **to explain how generative existence develops capacities to recognize, evaluate, and alter the conditions of further generation, including their shared and conflicting consequences.**
 
+### Accepted work sequence
+
+On 6 October 2026, [Ren approved this path as the current direction](../../../sources/15-codex-theory-conversations/2026-10-06-approved-derivation-path.md). Work forward from the root and backward from the explicit premises of existing results. The following gates operationalize that accepted proposal; they are AI-authored research obligations, not newly established results.
+
+1. **Make the root precise.** Define organization, enabling condition, consequential difference and effective possibility through explicit causal relations and intervention contrasts. For each transition, state its premises and outputs, separating the common foundation from actual physical laws, environmental support and historical circumstances.
+2. **Derive operational significance and regulation.** Explain how actual organizational dependencies generate accessible internal differences, formed responses and consequence-dependent retention. The first acceptance gate below governs this step.
+3. **Derive learning and revision of selectors.** Extend the same process so its history changes response mechanisms and, where claimed, what is sensed, copied or reinforced. Distinguish population replacement, individual learning and revision of the learning mechanism. Effective selectors can change within fixed physical laws. Test a formerly useful signal becoming misleading; explain recovery, mislearning or collapse through actual evidence routes and their costs.
+4. **Supply the premises of concern and wisdom.** Use the derived capacities to supply the teaching signals, representations and evaluative architecture still assumed by [joint formation](JOINT-FORMATION.md) and [revisable concern](REVISABLE-CONCERN-SETTLEMENT.md). Compare shared evaluation with equally informed identity-gated alternatives; account for both widening and exclusion. Check that the resulting capacities meet the downstream theorems' actual conditions. Retain the separate obligation to justify reasons and authority.
+5. **Generalize and test throughout.** Identify essential assumptions, failure boundaries and independently recognizable mechanism classes as the derivation develops. Specify competing explanations and discriminating observations before evaluating new outcomes. Compare with the scientific accounts above and test materially different domains through explicit mappings. An authored construction establishes a conditional mechanism; its empirical reach needs its own evidence.
+
+### First acceptance gate
+
+**Next milestone, open:** a checked conditional explanation of how a forming organization develops consequence-sensitive regulation, with predicted success and failure conditions and an explicit route toward changing its learning mechanisms.
+
+The first construction must identify this complete causal chain:
+
+**Dependency change → accessible internal difference → formed response → changed continuation or reconstruction → changed response retention.**
+
+Define the organization and continuation task independently of the candidate response. Begin without the successful regulator already installed; state the available variation and formation mechanisms. Charge sensing, construction, operation and replacement to the actual process, carrying its successor conditions between episodes. Show the predicted effects of breaking and restoring the dependency and of disrupting the signal, response or retention coupling, with appropriate resource-matched comparisons. Preserve failed formations and adverse regimes.
+
+An analyst may measure success, but that measure must not secretly select responses or provide the reward whose origin is being explained. Physical laws and declared environmental inputs remain legitimate premises; an unexplained evaluative signal must remain an open obligation. A negative result can close a proposed route and redirect the derivation. Neither a useful installed controller nor persistence alone satisfies this gate.
+
+### Parallel work and integration
+
+Organize each research round around one named missing connection: mechanism and proof; counterexamples and assumption review; empirical identification and competing accounts. Each contribution must state the output or challenge it supplies to that connection. Supporting physical, concern and empirical studies may continue when they supply or test a named interface; they need not wait for the entire earlier derivation to finish.
+
+Integrate the round before selecting the next central connection. Record what becomes explained, what remains supplied, which result changes the account, and what the next stage can now use. Progress consists in replacing an unexplained premise with a checked mechanism without silently relocating that premise upstream. Reuse the existing study locations and results in the map below; preserve their failures, sources and scopes.
+
 ## The derivation and the existing work
 
 This map places the current contributions within the foundational goal. The links identify supporting studies, not completed proofs of the whole transition named in the first column.

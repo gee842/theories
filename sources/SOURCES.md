@@ -1521,6 +1521,8 @@ Added 5 October 2026: [source record 23](23-joint-formation-2026-10-05/README.md
 
 ## Continuing goal of the unified foundation
 
+Recorded 6 October 2026: [Approved path from the generative root to a connected foundation](15-codex-theory-conversations/2026-10-06-approved-derivation-path.md) preserves Ren's question and explicit acceptance of the proposed research path. The AI-authored summary records the five stages, first milestone and parallel integration method separately from Ren's words. The canonical grounding and repository guidance now adopt that direction; this update establishes no new theorem or empirical result.
+
 Recorded 6 October 2026: [Unified generativity as the continuing repository goal](15-codex-theory-conversations/2026-10-06-unified-generativity-goal-and-continuity.md) preserves Ren's formulation of interacting differences, feedback, shared learning, contrasting regimes and 良知, followed by his directive to keep the repository on that goal through completion. The selected user messages are distinguished from AI-authored provenance and operational interpretation. The existing canonical grounding now specifies continuity and completion obligations across parallel studies; this is a clarification of research direction, not a new theorem or empirical validation.
 
 ## External evidence on evolving RNA networks
