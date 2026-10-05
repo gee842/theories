@@ -1,0 +1,114 @@
+{
+  "title": "Relational generativity and the conditions of wisdom",
+  "created_at_utc": "2026-10-05T04:20:53.461721+00:00",
+  "canonical_repository": "/Users/ren/theories",
+  "canonical_package": "/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+  "pre_synthesis_checkpoints": [
+    "003cd2a2e2d95a8b7a46314299342d977aa94d8a",
+    "38f8022eab23e1c08c847163e2daec9a425549c6"
+  ],
+  "integration_commit": "dd8ad7cb8276935ed7025502e8cbf69a28a19a5f",
+  "source_repository_clean": true,
+  "source_document_sha256": {
+    "CLAIMS.md": "64b2f7b40939f22d92449ef83104a740fc8b69957b18302b5ad8351e2543e21a",
+    "FORMAL-CORE.md": "162e0ebf4017c175958c70e016ae40290247e70f61349e13ff4ff72d5540b694",
+    "SOURCE-MAP.md": "3544571c694187c87b474937a8b11b5680e54fa8bc7a66de78d5e3ceb5739c3f",
+    "START-HERE.md": "9b3aea773ee8ca10f07a40f5710256cdf4b497c0cf141f911a163d83fbd2e27a",
+    "SYNTHESIS-RECORD.md": "41f23137a8461febb77288672ca2f7173d708dbf277d550702080d84dc46a5dd",
+    "THEORY.md": "89e7821acfc10dea2407dcb02ee821d7d9467f81f57db18c93fb7fab113ffba6"
+  },
+  "external_local_citations_made_absolute": 95,
+  "files": [
+    {
+      "path": "CLAIMS.md",
+      "bytes": 8200,
+      "sha256": "64b2f7b40939f22d92449ef83104a740fc8b69957b18302b5ad8351e2543e21a"
+    },
+    {
+      "path": "FORMAL-CORE.md",
+      "bytes": 39100,
+      "sha256": "162e0ebf4017c175958c70e016ae40290247e70f61349e13ff4ff72d5540b694"
+    },
+    {
+      "path": "PACKAGE.md",
+      "bytes": 1913,
+      "sha256": "9cac10102c84dfdd4720088dd3a56ea091798445faa7e4a3bf53dbe1a6bb9cdd"
+    },
+    {
+      "path": "SOURCE-MAP.md",
+      "bytes": 32217,
+      "sha256": "12d994f29491a5037cde0503bb1a03e2d9167e44ddc8a24f3440d03c0720ea44"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 5409,
+      "sha256": "9b3aea773ee8ca10f07a40f5710256cdf4b497c0cf141f911a163d83fbd2e27a"
+    },
+    {
+      "path": "SYNTHESIS-RECORD.md",
+      "bytes": 13574,
+      "sha256": "3e1ca0cbc6fce40e6ef330e82552fb1adb8ab488d3990fcc8807802c1920c775"
+    },
+    {
+      "path": "THEORY.md",
+      "bytes": 39482,
+      "sha256": "89e7821acfc10dea2407dcb02ee821d7d9467f81f57db18c93fb7fab113ffba6"
+    },
+    {
+      "path": "reviews/editorial-review-final.md",
+      "bytes": 3967,
+      "sha256": "8120912b0c3dc3aa197e44a552a7a35c7aecc15ba6c826293339a91af2194c40"
+    },
+    {
+      "path": "reviews/formal-review-final.md",
+      "bytes": 1603,
+      "sha256": "0d2f6795a025e62f9e9cf3b998822d73ca1ee92605d06601fcd1a5cefe46831e"
+    },
+    {
+      "path": "reviews/main-review-direction.md",
+      "bytes": 12072,
+      "sha256": "83672f6c3b29f04c025b47e555e63cfcd2936c4f7f3ef54bb01d72bc749eb703"
+    },
+    {
+      "path": "verification/canonical-release-checks.json",
+      "bytes": 1849,
+      "sha256": "b9eadfd3a4bbcadf8d3a7a5b1610bfb3372545752558b5ff18a163c6e2bc6624"
+    },
+    {
+      "path": "verification/check_integration.py",
+      "bytes": 7578,
+      "sha256": "094a4c97f46d3a1d1feec0fbb1ebfc4d3ef42dbe9458e185b40819d4eaf36291"
+    },
+    {
+      "path": "verification/check_mechanisms.py",
+      "bytes": 7522,
+      "sha256": "1f83a75ea1ae48628f5c4b9e406c73e1e0a853944e70abb5414e83eaae41be25"
+    },
+    {
+      "path": "verification/check_release.py",
+      "bytes": 5896,
+      "sha256": "e31c73b69b568b380a95a502ee02c953d541172d55f5ed20d9245a4a77ed7484"
+    },
+    {
+      "path": "verification/independent-results.json",
+      "bytes": 7962,
+      "sha256": "0be749923236f23beb1485545c37bd48681e7c5332e0b89c3dc9ddd6958310bb"
+    },
+    {
+      "path": "verification/preservation-final.json",
+      "bytes": 2990,
+      "sha256": "918b8ba160646950dd31f0fb22dbb33b3964185d709cf4551d91f400b0a20461"
+    },
+    {
+      "path": "verification/release-checks.json",
+      "bytes": 1980,
+      "sha256": "877f8250a4e0cc585c5e1f70854a3d2549da07707d36f4b53f3d10981131e665"
+    },
+    {
+      "path": "verification/results.json",
+      "bytes": 263,
+      "sha256": "1a3e8642d00ff8b26f065b4a75a58e20dcec2ad4d16c95def498e483b6ae8087"
+    }
+  ],
+  "scope": "The synthesis, proofs, internal reviews, independent check programs and records. Source corpus is preserved in the separate committed repository."
+}

@@ -2,6 +2,8 @@
 
 5 October 2026
 
+For developments after this synthesis, use the [current research index](../../../RESEARCH.md). It includes revisable concern, later work on supporting conditions and shared generativity, and the joint formation study with its current evidence status.
+
 The strongest common idea in the latest work is that **activity changes the conditions through which further activity becomes possible**. Understanding a process means understanding that relationship: what supports it, what its activity does to those supports and to others, and what it leaves its successors able to do.
 
 This is the proposed root of 生生. The subject is a whole situation with differentiated centers and relations. A center exists through those relations; its particular consequences still matter. A flourishing aggregate can conceal a depleted participant, just as a stable measured total can conceal a growing internal difference.

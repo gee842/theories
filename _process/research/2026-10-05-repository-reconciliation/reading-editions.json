@@ -1,0 +1,271 @@
+[
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/outputs/causal-foundations.md",
+    "source_record": "sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/work/root-audit/snapshots/causal-foundations/outputs/causal-foundations.md",
+    "source_sha256": "ec3bf8e1ff2a2e56b3bba174ffa2d6e9043cc9742e7c19b7210f30304a3a51d9",
+    "edition_sha256": "ec3bf8e1ff2a2e56b3bba174ffa2d6e9043cc9742e7c19b7210f30304a3a51d9",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/outputs/formal-results.md",
+    "source_record": "sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/work/root-audit/snapshots/causal-foundations/outputs/formal-results.md",
+    "source_sha256": "f6a84bd991395364b948b5171e10a2bb8cf65ef4d20a716138c1aa75b39f9e38",
+    "edition_sha256": "f6a84bd991395364b948b5171e10a2bb8cf65ef4d20a716138c1aa75b39f9e38",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/outputs/sources-and-claims.md",
+    "source_record": "sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/work/root-audit/snapshots/causal-foundations/outputs/sources-and-claims.md",
+    "source_sha256": "d27d58dbe81fd6580053f36b3bd14bb4e30e2b94558d3030244455f0bbb8e8b4",
+    "edition_sha256": "d27d58dbe81fd6580053f36b3bd14bb4e30e2b94558d3030244455f0bbb8e8b4",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/work/RESEARCH-LOG.md",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/causal-foundations/work/RESEARCH-LOG.md",
+    "source_sha256": "4e582705323dc1154ebf9c172234b594124aa73cfec750d9ed9eceb4df384c02",
+    "edition_sha256": "4e582705323dc1154ebf9c172234b594124aa73cfec750d9ed9eceb4df384c02",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/work/causal-formalisms-checks.json",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/causal-foundations/work/causal-formalisms-checks.json",
+    "source_sha256": "8a0bb3ce3ad70035e3d3ca3cca6186dbf07fca591279cb4e7f6685222157b7e6",
+    "edition_sha256": "8a0bb3ce3ad70035e3d3ca3cca6186dbf07fca591279cb4e7f6685222157b7e6",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/work/causal-formalisms.md",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/causal-foundations/work/causal-formalisms.md",
+    "source_sha256": "a76640d3d5d361b8ac77af7de1573b16205702f3618fc83c23b3347a3b2ca9e9",
+    "edition_sha256": "a76640d3d5d361b8ac77af7de1573b16205702f3618fc83c23b3347a3b2ca9e9",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/work/conceptual-audit.md",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/causal-foundations/work/conceptual-audit.md",
+    "source_sha256": "485492913f2932b40acc23a67d9714c995b642649d8790f4d1d0a0b014dc4839",
+    "edition_sha256": "485492913f2932b40acc23a67d9714c995b642649d8790f4d1d0a0b014dc4839",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/work/example-checks.json",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/causal-foundations/work/example-checks.json",
+    "source_sha256": "cd37b418accd3ba9a918c4a1f5fd7b5c3a508fbace2b7e97b4662b2b80d5ac01",
+    "edition_sha256": "cd37b418accd3ba9a918c4a1f5fd7b5c3a508fbace2b7e97b4662b2b80d5ac01",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/work/formal-foundations-checks.json",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/causal-foundations/work/formal-foundations-checks.json",
+    "source_sha256": "8a364a34264071e79fd025dc1b69ff29f5b1a68eb59c3298cc2e2c725f5c7926",
+    "edition_sha256": "8a364a34264071e79fd025dc1b69ff29f5b1a68eb59c3298cc2e2c725f5c7926",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/work/formal-foundations.md",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/causal-foundations/work/formal-foundations.md",
+    "source_sha256": "1dfb3527772bd289689aef98c919c278db616be140c50fb7fcb0cdb9e0c96a91",
+    "edition_sha256": "1dfb3527772bd289689aef98c919c278db616be140c50fb7fcb0cdb9e0c96a91",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/work/verify_causal_formalisms.py",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/causal-foundations/work/verify_causal_formalisms.py",
+    "source_sha256": "e1338ddc94f409fb6d7dfea21f468683007df0144f506e8b9f0cd5ffde0f2b86",
+    "edition_sha256": "e1338ddc94f409fb6d7dfea21f468683007df0144f506e8b9f0cd5ffde0f2b86",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/work/verify_examples.py",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/causal-foundations/work/verify_examples.py",
+    "source_sha256": "6e0fa3b70515374d315210ec1f9005afdc25a4e659905eb1bc1c4161a09bcfce",
+    "edition_sha256": "6e0fa3b70515374d315210ec1f9005afdc25a4e659905eb1bc1c4161a09bcfce",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-causal-foundations/work/verify_formal_foundations.py",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/causal-foundations/work/verify_formal_foundations.py",
+    "source_sha256": "69f96bea4950ad5b6ce96d5eb7004bd10cbab6ddde470f0c7d0067ba64162405",
+    "edition_sha256": "69f96bea4950ad5b6ce96d5eb7004bd10cbab6ddde470f0c7d0067ba64162405",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/conditions-of-generativity-evidence.json",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/conditions-of-generativity-evidence.json",
+    "source_sha256": "edccb926d7b341c196c1b7460faeb80fcb6377eaf573cd472bfaf0d1bd2806b5",
+    "edition_sha256": "edccb926d7b341c196c1b7460faeb80fcb6377eaf573cd472bfaf0d1bd2806b5",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/conditions-of-generativity-mathematics.md",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/conditions-of-generativity-mathematics.md",
+    "source_sha256": "1ba08778df426cd7b1aee94cdf92bda890f5c733960ac1f6412bf7e93ab9e98b",
+    "edition_sha256": "1ba08778df426cd7b1aee94cdf92bda890f5c733960ac1f6412bf7e93ab9e98b",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/conditions-of-generativity.md",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/conditions-of-generativity.md",
+    "source_sha256": "bd81e8c77b1a890e0c2a7a22e555c322d0c863888a4a1f671e0572de8da0a94e",
+    "edition_sha256": "1787ab06ddd53ec1aa1438118553c6dd608c9f307776aca560d327e2db2eddbd",
+    "link_changes": [
+      {
+        "old": "endogenous-renewal-and-consequential-feedback.md",
+        "new": "../../../../sources/20-codex-theory-sessions-2026-10-05/completion-supplement/root-of-wisdom/outputs/endogenous-renewal-and-consequential-feedback.md"
+      },
+      {
+        "old": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/conditions-of-generativity.png",
+        "new": "conditions-of-generativity.png"
+      }
+    ]
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/conditions-of-generativity.png",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/conditions-of-generativity.png",
+    "source_sha256": "a0894805fdae70ebc7e70ca692a1b08293fdd8e8f1e4e550ffc3c67b572ad262",
+    "edition_sha256": "a0894805fdae70ebc7e70ca692a1b08293fdd8e8f1e4e550ffc3c67b572ad262",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/conditions-of-generativity.svg",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/conditions-of-generativity.svg",
+    "source_sha256": "6c9adc32032d6c260e4540e2382bd16b444de02557428a4835b479bc1b6e8f87",
+    "edition_sha256": "6c9adc32032d6c260e4540e2382bd16b444de02557428a4835b479bc1b6e8f87",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/renewing-access-to-support-evidence.json",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/renewing-access-to-support-evidence.json",
+    "source_sha256": "8585a6d5b510847b56a051822615e5a2d5020d810e98fe7d43c6a61f63f0df62",
+    "edition_sha256": "8585a6d5b510847b56a051822615e5a2d5020d810e98fe7d43c6a61f63f0df62",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/renewing-access-to-support-mathematics.md",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/renewing-access-to-support-mathematics.md",
+    "source_sha256": "a9b1b40d428e6b94d4f15a4e9301c165f81230e3232f7bda7a3b6853d95f62f3",
+    "edition_sha256": "a9b1b40d428e6b94d4f15a4e9301c165f81230e3232f7bda7a3b6853d95f62f3",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/renewing-access-to-support.md",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/renewing-access-to-support.md",
+    "source_sha256": "22c02e866203d4d32b913557a67207a39184ab00df73c9263384919953f82204",
+    "edition_sha256": "907bab5e421dcc0445333400cbd7becec260a9cb0c3c19f7f04373b0fbc04097",
+    "link_changes": [
+      {
+        "old": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/renewing-access-to-support.png",
+        "new": "renewing-access-to-support.png"
+      }
+    ]
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/renewing-access-to-support.png",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/renewing-access-to-support.png",
+    "source_sha256": "52132a454634de85dd3d1213ff9ddbf7643d0c9bc7686cd66ac4258d3be2ef68",
+    "edition_sha256": "52132a454634de85dd3d1213ff9ddbf7643d0c9bc7686cd66ac4258d3be2ef68",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/renewing-access-to-support.svg",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/renewing-access-to-support.svg",
+    "source_sha256": "78173331890eef6cd904cf82b9e9bce7910121331cccce970b1501029deddf76",
+    "edition_sha256": "78173331890eef6cd904cf82b9e9bce7910121331cccce970b1501029deddf76",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/shared-generative-direction-evidence.json",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/shared-generative-direction-evidence.json",
+    "source_sha256": "267b63702998724e05e2584a0ffb9daf8cede5cb70a5459117cee25a470d5a59",
+    "edition_sha256": "267b63702998724e05e2584a0ffb9daf8cede5cb70a5459117cee25a470d5a59",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/shared-generative-direction-mathematics.md",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/shared-generative-direction-mathematics.md",
+    "source_sha256": "ac6ebd6057edbfa4049a2ef84a7ee22b104ff80582a9e0e1f86df342a5b19bee",
+    "edition_sha256": "ac6ebd6057edbfa4049a2ef84a7ee22b104ff80582a9e0e1f86df342a5b19bee",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/shared-generative-direction.md",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/shared-generative-direction.md",
+    "source_sha256": "73baae1148c42d98f3b8b0193f03c39f92071e7aac15d8a21108bc70449b5a5e",
+    "edition_sha256": "0938fdd3dd75f7f79fe29763f741c94deee51be27c0a949f47acd1c0a2a4b216",
+    "link_changes": [
+      {
+        "old": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-FOUNDATION.md",
+        "new": "../../2026-10-05-generative-foundation-review/root-foundation/ROOT-FOUNDATION.md"
+      },
+      {
+        "old": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CAPACITY.md",
+        "new": "../../2026-10-05-generative-foundation-review/root-foundation/PLURAL-CAPACITY.md"
+      },
+      {
+        "old": "/Users/ren/Documents/Codex/2026-10-05/fo/outputs/direction-of-regeneration/EXPLORATION.md",
+        "new": "../../../../sources/22-research-reconciliation-2026-10-05/files/2026-10-05/fo/outputs/direction-of-regeneration/EXPLORATION.md"
+      },
+      {
+        "old": "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/shared-generative-direction.png",
+        "new": "shared-generative-direction.png"
+      }
+    ]
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/shared-generative-direction.png",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/shared-generative-direction.png",
+    "source_sha256": "8d7094518f744f4b1ac12275e850d9ef2b8852a3c12425da0dda7a5ca0ad071b",
+    "edition_sha256": "8d7094518f744f4b1ac12275e850d9ef2b8852a3c12425da0dda7a5ca0ad071b",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/outputs/shared-generative-direction.svg",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/outputs/shared-generative-direction.svg",
+    "source_sha256": "fbc7bd9421dec57cf8275cb7ea1c4d0d5b9edd4039f730bc78e3c6fe20daa934",
+    "edition_sha256": "fbc7bd9421dec57cf8275cb7ea1c4d0d5b9edd4039f730bc78e3c6fe20daa934",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/work/conditions-of-generativity/checks.json",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/work/conditions-of-generativity/checks.json",
+    "source_sha256": "cb4d6bcaf7b11f799fd756d165136723280a72fd5baf4580943e286c940a9f9f",
+    "edition_sha256": "cb4d6bcaf7b11f799fd756d165136723280a72fd5baf4580943e286c940a9f9f",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/work/conditions-of-generativity/verify.py",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/work/conditions-of-generativity/verify.py",
+    "source_sha256": "5affda2cc4e5957a2ac1cddaae2e2c3333922d6e5d53f21e02ce71c9aedb5542",
+    "edition_sha256": "5affda2cc4e5957a2ac1cddaae2e2c3333922d6e5d53f21e02ce71c9aedb5542",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/work/renewing-access/checks.json",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/work/renewing-access/checks.json",
+    "source_sha256": "cbd2448f9c68d20761f08c85b043c9b78762a7df078b6e396be90a0b5b480126",
+    "edition_sha256": "cbd2448f9c68d20761f08c85b043c9b78762a7df078b6e396be90a0b5b480126",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/work/renewing-access/verify.py",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/work/renewing-access/verify.py",
+    "source_sha256": "48d6938e7a238934fb124823dc570ccf1a74bd91cb947d9000c179f8212f41ff",
+    "edition_sha256": "48d6938e7a238934fb124823dc570ccf1a74bd91cb947d9000c179f8212f41ff",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/work/shared-generative-direction/checks.json",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/work/shared-generative-direction/checks.json",
+    "source_sha256": "e0154cc502d17522c7f4612115c2e2d3ddc13d4b4e79f3c2bddb295ca205329c",
+    "edition_sha256": "e0154cc502d17522c7f4612115c2e2d3ddc13d4b4e79f3c2bddb295ca205329c",
+    "link_changes": []
+  },
+  {
+    "file": "_process/research/2026-10-05-support-and-shared-generativity/work/shared-generative-direction/verify.py",
+    "source_record": "sources/22-research-reconciliation-2026-10-05/files/2026-10-05/root-of-wisdom/work/shared-generative-direction/verify.py",
+    "source_sha256": "ae5e6c109157ab3c7d8ae298c497427f858999ba599c3b81fea767477cd06400",
+    "edition_sha256": "ae5e6c109157ab3c7d8ae298c497427f858999ba599c3b81fea767477cd06400",
+    "link_changes": []
+  }
+]

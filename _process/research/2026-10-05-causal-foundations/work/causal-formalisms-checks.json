@@ -1,0 +1,139 @@
+{
+  "interventional_equivalence": [
+    {
+      "intervention": {},
+      "M1_counts": {
+        "0,0": 1,
+        "0,1": 1,
+        "1,0": 1,
+        "1,1": 1
+      },
+      "M2_counts": {
+        "0,0": 1,
+        "0,1": 1,
+        "1,0": 1,
+        "1,1": 1
+      },
+      "equal": true
+    },
+    {
+      "intervention": {
+        "A": 0
+      },
+      "M1_counts": {
+        "0,0": 2,
+        "0,1": 2
+      },
+      "M2_counts": {
+        "0,0": 2,
+        "0,1": 2
+      },
+      "equal": true
+    },
+    {
+      "intervention": {
+        "A": 1
+      },
+      "M1_counts": {
+        "1,0": 2,
+        "1,1": 2
+      },
+      "M2_counts": {
+        "1,0": 2,
+        "1,1": 2
+      },
+      "equal": true
+    },
+    {
+      "intervention": {
+        "Y": 0
+      },
+      "M1_counts": {
+        "0,0": 2,
+        "1,0": 2
+      },
+      "M2_counts": {
+        "0,0": 2,
+        "1,0": 2
+      },
+      "equal": true
+    },
+    {
+      "intervention": {
+        "Y": 1
+      },
+      "M1_counts": {
+        "0,1": 2,
+        "1,1": 2
+      },
+      "M2_counts": {
+        "0,1": 2,
+        "1,1": 2
+      },
+      "equal": true
+    },
+    {
+      "intervention": {
+        "A": 0,
+        "Y": 0
+      },
+      "M1_counts": {
+        "0,0": 4
+      },
+      "M2_counts": {
+        "0,0": 4
+      },
+      "equal": true
+    },
+    {
+      "intervention": {
+        "A": 0,
+        "Y": 1
+      },
+      "M1_counts": {
+        "0,1": 4
+      },
+      "M2_counts": {
+        "0,1": 4
+      },
+      "equal": true
+    },
+    {
+      "intervention": {
+        "A": 1,
+        "Y": 0
+      },
+      "M1_counts": {
+        "1,0": 4
+      },
+      "M2_counts": {
+        "1,0": 4
+      },
+      "equal": true
+    },
+    {
+      "intervention": {
+        "A": 1,
+        "Y": 1
+      },
+      "M1_counts": {
+        "1,1": 4
+      },
+      "M2_counts": {
+        "1,1": 4
+      },
+      "equal": true
+    }
+  ],
+  "number_of_regimes": 9,
+  "M1_probability_Y0_equals_Y1": 1,
+  "M2_probability_Y0_equals_Y1": 0,
+  "cyclic_solution_in_integer_check_range": [
+    [
+      -1,
+      -1,
+      0
+    ]
+  ],
+  "global_uniqueness_proof": "Y=X forces Z=0; Z=X+1 then forces X=Y=-1. do(Z=1) forces X=X+1, impossible."
+}

@@ -1,0 +1,95 @@
+{
+  "capability_inclusion_cases": 625,
+  "stationary_examples": {
+    "baseline": {
+      "birth_rates": [
+        "5/2",
+        "2"
+      ],
+      "loss_rates": [
+        "1",
+        "2"
+      ],
+      "stationary_probabilities": [
+        "1/6",
+        "5/12",
+        "5/12"
+      ],
+      "mean_capacity_level": "5/4"
+    },
+    "renewal": {
+      "birth_rates": [
+        "5/2",
+        "7/4"
+      ],
+      "loss_rates": [
+        "1/2",
+        "1"
+      ],
+      "stationary_probabilities": [
+        "4/59",
+        "20/59",
+        "35/59"
+      ],
+      "mean_capacity_level": "90/59"
+    },
+    "formation_loss_only": {
+      "birth_rates": [
+        "5/2",
+        "7/4"
+      ],
+      "loss_rates": [
+        "1",
+        "2"
+      ],
+      "stationary_probabilities": [
+        "16/91",
+        "40/91",
+        "5/13"
+      ],
+      "mean_capacity_level": "110/91"
+    }
+  },
+  "transient_counterexample": "From n=1, derivative of Pr(n_t>=2) is 7/4 under renewal, versus 2 at baseline.",
+  "shared_renewal": {
+    "equilibrium_R_C_Y_D_E": [
+      "1/4",
+      "1/4",
+      "1/8",
+      "3/8",
+      "8/3"
+    ],
+    "characteristic_coefficients": [
+      "1",
+      "297/64",
+      "877/128",
+      "265/128",
+      "73/128"
+    ],
+    "routh_margins": [
+      "243509/8192",
+      "51651371/1048576"
+    ],
+    "rare_Y_growth_exponent": "sqrt(19/67), independent of theta",
+    "initial_R_C_Y_D_E": [
+      0.38313106548441245,
+      0.38313106548441245,
+      0.0001,
+      0.23363786903117512,
+      4.278296897909272
+    ],
+    "final_R_C_Y_D_E": [
+      0.25000000536443806,
+      0.25000000372380077,
+      0.12499998872925651,
+      0.37500000218250734,
+      2.6666666873346094
+    ],
+    "max_step_halving_difference_at_integer_times": 3.7969627442180354e-13,
+    "max_final_equilibrium_error": 2.0667942912666604e-08,
+    "max_material_error": 5.329070518200751e-15,
+    "minimum_coordinate": 0.0001,
+    "numerics": "RK4 .004/.002, horizon120; numerical connecting witness only."
+  },
+  "all_checks_passed": true
+}

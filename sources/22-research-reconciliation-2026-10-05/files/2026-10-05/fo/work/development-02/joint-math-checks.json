@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "strict_parameter_sets": 82,
+  "complete_operator_action_sequences": 21760,
+  "payment_prefixes": 154112,
+  "witness": {
+    "cold_shared_gain": "3",
+    "cold_identity_gain": "2",
+    "warm_verified": "2",
+    "warm_open": "3/2",
+    "warm_withdraw": "1",
+    "seed": "5",
+    "safe_ending_reserve": "10",
+    "denied_ending_reserve": "6",
+    "poisoned_ending_reserve": "13",
+    "destructive_attack_bound": "2",
+    "tested_high_raid_cost": "3"
+  },
+  "scope": "Exact finite checks supplement the conditional proof; no empirical or universal theorem claim."
+}

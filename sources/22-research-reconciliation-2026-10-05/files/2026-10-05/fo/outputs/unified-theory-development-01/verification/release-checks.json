@@ -1,0 +1,172 @@
+{
+  "status": "passed",
+  "scope": "Local links, balanced math delimiters, editorial markers, result/source labels, and optional source provenance; no rendering or theorem-prover validation.",
+  "documents": {
+    "CLAIMS.md": {
+      "bytes": 10954,
+      "sha256": "f7391a10da90fb34dc207d0438080789f164d81cabf52538b2b5055eaab7ba88"
+    },
+    "CONCERN-AND-CORRECTION.md": {
+      "bytes": 12228,
+      "sha256": "f4d76decc665ec1cd9c38cbb9bec5c8328c605088dc59c8b076843e2cfb4ba44"
+    },
+    "ETHICAL-FOUNDATION.md": {
+      "bytes": 18707,
+      "sha256": "6e71a0ffb4c68b1609d21294aa32f9d28ef8558fe4d2e1fcf5996325ee96f5e7"
+    },
+    "FORMAL-CORE.md": {
+      "bytes": 39100,
+      "sha256": "162e0ebf4017c175958c70e016ae40290247e70f61349e13ff4ff72d5540b694"
+    },
+    "FORMATION-MATH.md": {
+      "bytes": 24421,
+      "sha256": "c65410ed0daf160c49c477efc16c7ed7bf0d1adf41983b77a9f852751ecf7ecf"
+    },
+    "FORMATION-PRIOR-ART.md": {
+      "bytes": 17695,
+      "sha256": "3f70a1662bdf36684b10582bdcded71a38aed6a630c29480083fecdf0cbdeb8c"
+    },
+    "FORMATION.md": {
+      "bytes": 15782,
+      "sha256": "d1b17eed56ae96c58781660e79c12c47a128475d8e15c0a357feb2a0d611de98"
+    },
+    "PACKAGE.md": {
+      "bytes": 3265,
+      "sha256": "9e189c26c228216727727872f03527704b4dcd5854b348e3e64c183382ee2572"
+    },
+    "SOURCE-MAP.md": {
+      "bytes": 36332,
+      "sha256": "9780d57118918721c3c0d34f631425959b9ca736fd1aa1388b767339432551a7"
+    },
+    "START-HERE.md": {
+      "bytes": 7128,
+      "sha256": "d00eb65c9dfd1e1204bb4e3ad9eea3a478c935c7e67dc69ce133bf57c471e553"
+    },
+    "SYNTHESIS-RECORD.md": {
+      "bytes": 17565,
+      "sha256": "14e6097cda879b7f5b0b0e77958296c4ef77e070f6e587264b761471a103864c"
+    },
+    "THEORY.md": {
+      "bytes": 44167,
+      "sha256": "3ec5f541455320f920e940cdfe0e0947c96b9600a6ca442d7a776db05990a3ae"
+    },
+    "concern-theory/CLAIMS.md": {
+      "bytes": 7471,
+      "sha256": "47a09e782bfaccab36bc469a731162d0454611ad6580409f3c8bf5191fdf5db4"
+    },
+    "concern-theory/RESEARCH-RECORD.md": {
+      "bytes": 7427,
+      "sha256": "821738a0e467a7b961b80a4ac6d6684fc461242644ca2cab7121707adb286036"
+    },
+    "concern-theory/START-HERE.md": {
+      "bytes": 3240,
+      "sha256": "08844770f4069217b775824c67d92988aa152d04907f2fbfc1855f0294b39845"
+    },
+    "concern-theory/THEORY.md": {
+      "bytes": 32011,
+      "sha256": "f7ad5e5e40b3111ebbf198b271f7229cc939263de130def15f1362a06e89bbf3"
+    },
+    "concern-theory/conceptual-evidence.md": {
+      "bytes": 33147,
+      "sha256": "ae23e6bc179f7f9bb37f342b28f7643912e8536cf42cd7fed58ae42773d5f2a0"
+    },
+    "concern-theory/conceptual-review.md": {
+      "bytes": 11612,
+      "sha256": "086a238b2579ea67d7afa215afd18b50fe9e8b8312ed7cf38d65daf31520004b"
+    },
+    "concern-theory/dynamics-formal.md": {
+      "bytes": 23836,
+      "sha256": "36b6ae9d880cc94823fc0682e6d0efa3fb8f76ea46b7093336775ac47cfe2ad3"
+    },
+    "concern-theory/learning-formal.md": {
+      "bytes": 19280,
+      "sha256": "f69758cf104a6fbb0eb2339123d1c35a573b24a7edf516a076109573a4223aaa"
+    },
+    "concern-theory/review.md": {
+      "bytes": 7837,
+      "sha256": "394d933752271249fde02ecdfb76cad8d791d8b70b8dc1e04fb1b07df49f174d"
+    },
+    "formation-study/PROTOCOL.md": {
+      "bytes": 7207,
+      "sha256": "2c85e93b0df31233546a4ffc07c439c1b2bc27a52c2fbf360ba78e2cd5c292ff"
+    },
+    "formation-study/README.md": {
+      "bytes": 6830,
+      "sha256": "893592e4ccfbbe8b2c00226f75325c0ede9fbde89bd03cce98a090a1dd8edfb5"
+    },
+    "formation-study/independent-game-review.md": {
+      "bytes": 6743,
+      "sha256": "cd4c2cff8646969559f642a8885739c0694d4fbb6d583fa6f834da97eb021146"
+    },
+    "reviews/development-01/concern-integration-review.md": {
+      "bytes": 1024,
+      "sha256": "cde713382f782abe399fed0f86fbcc73ab14361788f213f65bc71cfaf73a7aaf"
+    },
+    "reviews/development-01/concern-interface-review.md": {
+      "bytes": 5910,
+      "sha256": "a8b6de957ec7004e3a0ee6bb2cbff565b6c651aaab5e1ef21ebf5f4da91c5f7c"
+    },
+    "reviews/development-01/formal-final-review.md": {
+      "bytes": 6958,
+      "sha256": "1b7549f3e93c560f32e8aef02ba812a482b0f825809c5c20cfd2903d5cf9c3a0"
+    },
+    "reviews/development-01/independent-game-review.md": {
+      "bytes": 6791,
+      "sha256": "5001bc9b3ade95a21a31942bafe7b66fa6475b9c9e40d823219fcabfc0b49522"
+    },
+    "reviews/development-01/integration-final-review.md": {
+      "bytes": 5576,
+      "sha256": "73b6bafa6c4fcb7ff0b63143690ba7c9cae0798ee0886ab6715fb84c1c36cace"
+    },
+    "reviews/editorial-review-final.md": {
+      "bytes": 3967,
+      "sha256": "8120912b0c3dc3aa197e44a552a7a35c7aecc15ba6c826293339a91af2194c40"
+    },
+    "reviews/formal-review-final.md": {
+      "bytes": 1603,
+      "sha256": "0d2f6795a025e62f9e9cf3b998822d73ca1ee92605d06601fcd1a5cefe46831e"
+    },
+    "reviews/main-review-direction.md": {
+      "bytes": 12072,
+      "sha256": "83672f6c3b29f04c025b47e555e63cfcd2936c4f7f3ef54bb01d72bc749eb703"
+    }
+  },
+  "local_links_checked": 300,
+  "external_local_links_skipped": 0,
+  "formal_result_labels": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F2a",
+    "F2b"
+  ],
+  "source_families": 19,
+  "snapshots": [
+    {
+      "manifest": "sources/20-codex-theory-sessions-2026-10-05/SNAPSHOT-MANIFEST.json",
+      "files": 2378,
+      "bytes": 337544211,
+      "commit": "003cd2a2e2d95a8b7a46314299342d977aa94d8a"
+    },
+    {
+      "manifest": "sources/20-codex-theory-sessions-2026-10-05/completion-supplement/MANIFEST.json",
+      "files": 20,
+      "bytes": 579664,
+      "commit": "38f8022eab23e1c08c847163e2daec9a425549c6"
+    }
+  ],
+  "historical_canonical_text_preserved": true,
+  "formal_review_version_matches": true,
+  "formation_review_version_matches": true,
+  "errors": []
+}

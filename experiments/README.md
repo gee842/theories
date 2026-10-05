@@ -14,3 +14,22 @@ Each experiment owns its assumptions, implementation choices, evidence and limit
 | [Plural requirements for correction](plural-correction/README.md) | Common-policy feasibility under distinct expected requirements, with separating certificates, controlled authority restrictions, and funding/permission complements on unchanged productive dynamics. |
 | [Continuing participation and funded correction](continuing-participation/README.md) | Personal loss incidence, public collective veto, and compensation paid from shared funds, separating insufficient gains from distribution and payment timing. |
 | [Constructive succession under paid inheritance](constructive-succession/README.md) | Program construction through four paid handoffs, comparing inherited solutions and intermediate materials; an additional matched-package test separates preservation from active use in search. |
+
+## Current foundation studies
+
+The [current research index](../RESEARCH.md) connects these experiments to the developing theory.
+
+| Study | Scope and status |
+|---|---|
+| [Integrated correction](integrated-correction/README.md) | Earlier models of funded, informed and effective correction; component results retain their own assumptions. |
+| [Constructed correction](constructed-correction/README.md) | Completed conditional study of built alternatives, selected protection and strategic depletion of future operating funds. |
+| [Joint formation protocol](joint-formation/PROTOCOL.md) | Ongoing study of learned concern, constructed inspection and control, and strategic interference. A protocol or partial run is not a completed finding; consult the study directory for later results. |
+
+## Related research experiments
+
+| Study | Question |
+|---|---|
+| [Recurrent inquiry](recurrent-inquiry/README.md) | How can inquiry and correction continue through recurring demands? |
+| [Revisable inheritance](revisable-inheritance/README.md) | How does inherited material support or obstruct model revision? |
+| [Situated discovery](situated-discovery/README.md) | How do available representations and resources shape discovery? |
+| [Guardian anarchy](guardian-anarchy/README.md) | What can the theory contribute to a concrete institutional proposal? |

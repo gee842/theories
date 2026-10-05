@@ -1,0 +1,132 @@
+{
+  "title": "Renewing access to supporting conditions",
+  "created_utc": "2026-10-05T09:26:04.556264+00:00",
+  "local_date": "2026-10-05",
+  "timezone": "Asia/Bangkok",
+  "user_request": "lets explore this stronger working formulation",
+  "interpretation": "Make access to support endogenous; distinguish continued renewal from preservation of a material form; retain the coupled situation as the explanatory unit.",
+  "continuity": [
+    "Conditions-of-generativity supplied usable power; this extension makes its capture depend on maintained machinery.",
+    "Earlier identity and missing-possibility work motivates the distinction between an adequate aggregate for one function and omitted consequential functions.",
+    "All earlier outputs are retained unchanged."
+  ],
+  "claim_status": {
+    "capture_budget": "Exact reduced model with Pcaptured=eta I C/M <= I; full molecular thermodynamics not derived.",
+    "equilibrium_fold": "Proved existence of two positive equilibria above gf=epsilon b+4s ell b/(kM^2), one double equilibrium at gf, none below.",
+    "bistability": "Proved local asymptotic stability of inactivity at every finite g and of the upper positive branch above gf. Lower branch is a saddle.",
+    "global_scope": "No complete basin boundary or classification of nonstationary attractors. Fold is not asserted as a global survival threshold.",
+    "small_preparation_failure": "Proved invariant region and convergence to inactive equilibrium; exact unit-parameter certificate at g17, R0=.01, C0=E0=0, D0=.99.",
+    "formation": "Exact initial machinery formation and second derivative of captured reserve from R0>0; long-term activation from R0=1 is illustrated numerically.",
+    "succession": "Exact X-to-Y replacement at fixed aggregate equilibrium; a supplied Y-only channel activates finite substrate conversion.",
+    "novelty_scope": "Newly accessible function in a stipulated repertoire; no derived invention of chemistry or open-ended novelty.",
+    "universal_direction": "No universal increase of generativity or direction toward kindness proved; wider environmental effects remain to be modeled."
+  },
+  "sources": [
+    {
+      "authors": "Anne Shiu and Bernd Sturmfels",
+      "title": "Siphons in chemical reaction networks",
+      "url": "https://people.tamu.edu/~annejls/SiphonsInCRNs.pdf",
+      "read_scope": "Section 2 definitions and Proposition 2.1, PDF page 4",
+      "used_for": "Standard structural criterion for forward invariance of an empty species face.",
+      "not_used_for": "Novel theorem priority or direct molecular implementation of the energy coordinate."
+    },
+    {
+      "authors": "Katarzyna Adamala and Jack W. Szostak",
+      "title": "Competition between model protocells driven by an encapsulated catalyst",
+      "year": 2013,
+      "doi": "10.1038/nchem.1650",
+      "url": "https://doi.org/10.1038/nchem.1650",
+      "read_url": "https://protobiology.org/wp3/wp-content/uploads/2013/04/Adamala_Szostak_NatChem_2013.pdf",
+      "read_scope": "Abstract; membrane effects and competitive growth on journal pages 497-500; discussion on page 501.",
+      "used_for": "Experimental example of internal chemistry changing a material interface.",
+      "not_used_for": "Autonomous catalyst renewal, improved general permeability, or a universal direction of reality."
+    }
+  ],
+  "checks": {
+    "exact_rational_equilibrium_and_characteristic_checks": 486,
+    "equilibrium_R_C_D_E": [
+      0.42677669529663687,
+      0.42677669529663687,
+      0.14644660940672627,
+      6.82842712474619
+    ],
+    "fold_g": 9,
+    "example_g": 17,
+    "numerical_runs": [
+      {
+        "preparation": "activation",
+        "initial_R_C_D_E": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_R_C_D_E": [
+          0.4267766952966211,
+          0.4267766952966072,
+          0.14644660940674367,
+          6.828427124745487
+        ],
+        "max_step_halving_difference": 8.802558681964001e-11,
+        "max_material_conservation_error": 2.7977620220553945e-14,
+        "minimum_coordinate": 0.0
+      },
+      {
+        "preparation": "failure",
+        "initial_R_C_D_E": [
+          0.01,
+          0.0,
+          0.99,
+          0.0
+        ],
+        "final_R_C_D_E": [
+          1.3974446511647002e-28,
+          8.162266596063735e-27,
+          0.9999999999999843,
+          4.059331337120079e-24
+        ],
+        "max_step_halving_difference": 8.10854855481935e-13,
+        "max_material_conservation_error": 1.5654144647214707e-14,
+        "minimum_coordinate": 0.0
+      }
+    ],
+    "integration_method": "RK4, steps .004 and .002, horizon 60",
+    "small_preparation_certificate": {
+      "A_upper": "1/100",
+      "E_upper": "17/100",
+      "coefficient_in_A_prime_le_minus_coefficient_C": "83/100"
+    },
+    "succession_max_vector_field_residual": 1.2212453270876722e-15,
+    "interpretation": "Arithmetic and numerical checks supplement the written proofs; neither prove global active convergence.",
+    "all_checks_passed": true
+  },
+  "review": {
+    "mathematical": "Separate agent reviewed equations, proofs, numerical-check scope and succession. No material errors found.",
+    "conceptual": "Separate agent reviewed relational interpretation and source scope. Tightened experimental language and asymptotic replacement wording.",
+    "succession": "Separate derivation confirmed aggregate closure after endogenous capture was added.",
+    "status": "Internal AI-assisted review, not external scientific peer review.",
+    "plot": "PNG visually inspected; legend moved away from curves before final delivery.",
+    "markdown": "Local links checked; no claim of native Markdown layout verification."
+  },
+  "preservation": {
+    "baseline_files": 50,
+    "changed_files": [],
+    "all_unchanged": true
+  },
+  "checked_local_links": [
+    "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/conditions-of-generativity.md",
+    "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/renewing-access-to-support.png",
+    "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/renewing-access-to-support-mathematics.md",
+    "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/renewing-access-to-support.md"
+  ],
+  "artifacts": {
+    "outputs/renewing-access-to-support.md": "22c02e866203d4d32b913557a67207a39184ab00df73c9263384919953f82204",
+    "outputs/renewing-access-to-support-mathematics.md": "a9b1b40d428e6b94d4f15a4e9301c165f81230e3232f7bda7a3b6853d95f62f3",
+    "outputs/renewing-access-to-support.png": "52132a454634de85dd3d1213ff9ddbf7643d0c9bc7686cd66ac4258d3be2ef68",
+    "outputs/renewing-access-to-support.svg": "78173331890eef6cd904cf82b9e9bce7910121331cccce970b1501029deddf76",
+    "work/renewing-access/verify.py": "48d6938e7a238934fb124823dc570ccf1a74bd91cb947d9000c179f8212f41ff",
+    "work/renewing-access/checks.json": "cbd2448f9c68d20761f08c85b043c9b78762a7df078b6e396be90a0b5b480126",
+    "work/renewing-access/preservation-manifest.json": "1ec0879364c2e99dd379e6b1b0a87bd10dd66e9845324377da766a49f589d4ab",
+    "work/renewing-access/finalize.py": "1356eb7cd0d159ddbe21710ef45b802856602fd7c0d17e8ba6521c837014574a"
+  }
+}

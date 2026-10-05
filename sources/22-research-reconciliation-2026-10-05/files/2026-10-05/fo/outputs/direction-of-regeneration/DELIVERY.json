@@ -1,0 +1,72 @@
+{
+  "title": "When regeneration can become wiser and more inclusive",
+  "commit": "2e1f35400e1c12a3688510a0feb0c3d0a521aee0",
+  "repository_clean": true,
+  "files": [
+    {
+      "path": "EXPLORATION.md",
+      "bytes": 17810,
+      "sha256": "c01996a873b42e7518c5b68c654d92fcaab318b608cf6928d00b6482c82a9f59"
+    },
+    {
+      "path": "RESEARCH-RECORD.md",
+      "bytes": 2845,
+      "sha256": "12f5b961361101867e11d11db316b8bc6b3ac09761e9e2110b8bb26f5a37a2ae"
+    },
+    {
+      "path": "conceptual-note.md",
+      "bytes": 29260,
+      "sha256": "a699ab385bbeda8c87748317266c8acda11f6f2ce935554b123ac650f6d00579"
+    },
+    {
+      "path": "formation-review-check.py",
+      "bytes": 3440,
+      "sha256": "70b64816e544247e49bf98973d63c3a0ea7300293140d6f17aef60ec7c4e396a"
+    },
+    {
+      "path": "formation-review-checks.json",
+      "bytes": 2796,
+      "sha256": "ad68e4fcbbc1cb0a8235e887dfd277bb2b86d67cb2d9d514614ed60b04d5d186"
+    },
+    {
+      "path": "formation-review.md",
+      "bytes": 9762,
+      "sha256": "8ad208f2118cd83ef637be7b02cb526a8775c2b8f9767a77547ba170b3e49786"
+    },
+    {
+      "path": "literature-note.md",
+      "bytes": 11767,
+      "sha256": "13e8c40ec5ba3a2d416ea8e865c5614863b539da0f9056407212c5649e4a2d10"
+    },
+    {
+      "path": "math-checks.json",
+      "bytes": 1558,
+      "sha256": "cc12bdb8562150ca295e5329de17dbed718a6647c893d674b7047ebc1bfbed9c"
+    },
+    {
+      "path": "math-note.md",
+      "bytes": 22240,
+      "sha256": "d38ec8ac6353302c132422c82a13d1979dd7bae5a52b3310c9050440d964bdf3"
+    },
+    {
+      "path": "release-checks.json",
+      "bytes": 213,
+      "sha256": "f481248257b95b6a9a46009062b9d7de8b17c2ca321bad7111ada8e38c7a1e4c"
+    },
+    {
+      "path": "review.md",
+      "bytes": 4701,
+      "sha256": "72122fd72c7dae1a3421eee146f3768591def0a968aaeba32d420d6bf9c533de"
+    },
+    {
+      "path": "verify_math.py",
+      "bytes": 4031,
+      "sha256": "5050cc85fb8a27342f55e7e454beb6c6cd6c98b5b54a68ec7131c9957fb9579d"
+    },
+    {
+      "path": "visual-checks.json",
+      "bytes": 3413,
+      "sha256": "225711231e9a3650fc0620d6168414f6c49de755bf38ffb0a2b89c2831115b60"
+    }
+  ]
+}

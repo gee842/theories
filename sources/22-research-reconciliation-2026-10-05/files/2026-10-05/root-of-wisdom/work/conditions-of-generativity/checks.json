@@ -1,0 +1,102 @@
+{
+  "equilibrium_and_characteristic_checks": 243,
+  "simulation_runs": [
+    {
+      "mode": "constant",
+      "total_supplied_usable_energy_t180": 216.0,
+      "max_step_halving_difference": 0.0,
+      "max_material_error": 0.0,
+      "initial_R_C_D_E": [
+        0.06101330809702499,
+        0.06101330809702499,
+        0.87797338380595,
+        1.138986691902975
+      ],
+      "final_R_C_D_E": [
+        0.06101330809702499,
+        0.06101330809702499,
+        0.87797338380595,
+        1.138986691902975
+      ],
+      "period_end_C": [
+        0.06101330809702499,
+        0.06101330809702499,
+        0.06101330809702499,
+        0.06101330809702499
+      ]
+    },
+    {
+      "mode": "intermittent",
+      "total_supplied_usable_energy_t180": 216.0,
+      "max_step_halving_difference": 1.0746725731536344e-10,
+      "max_material_error": 5.10702591327572e-15,
+      "initial_R_C_D_E": [
+        0.06101330809702499,
+        0.06101330809702499,
+        0.87797338380595,
+        1.138986691902975
+      ],
+      "final_R_C_D_E": [
+        8.452031860077042e-22,
+        2.3641242827654172e-20,
+        0.999999999999997,
+        2.2458295097309555e-13
+      ],
+      "period_end_C": [
+        0.06101330809702499,
+        3.0438900729512985e-12,
+        2.681161838426234e-16,
+        2.3641242827654172e-20
+      ]
+    }
+  ],
+  "simulation_method": "Fourth-order Runge-Kutta, steps .01 and .005; every supply switch aligned to step boundary.",
+  "timing_proof_bounds": [
+    {
+      "high_energy_envelope": 2.4,
+      "low_energy_envelope": 0.043957533332962026,
+      "period_matrix": [
+        [
+          0.043473430679266706,
+          0.06734874920932102
+        ],
+        [
+          0.2073457198588094,
+          0.32121860796822294
+        ]
+      ],
+      "trace": 0.36469203864748967,
+      "analytic_trace_upper_bound": 0.5944403361888921,
+      "analytic_determinant": "exp(-120)>0; direct floating determinant is ill-conditioned and not used"
+    },
+    {
+      "high_energy_envelope": 2.41,
+      "low_energy_envelope": 0.044140689721849376,
+      "period_matrix": [
+        [
+          0.04906347720884883,
+          0.07616699913961414
+        ],
+        [
+          0.23352149277863304,
+          0.3625228449226924
+        ]
+      ],
+      "trace": 0.4115863221315412,
+      "analytic_trace_upper_bound": 0.6708768690934764,
+      "analytic_determinant": "exp(-120)>0; direct floating determinant is ill-conditioned and not used"
+    }
+  ],
+  "rational_certificate": {
+    "exponent_upper": "-53331/31250",
+    "prefactor_upper": "971/250",
+    "lower_bound_exp_1_69": "29535109/6000000",
+    "passed": true
+  },
+  "figure_paths": [
+    "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/conditions-of-generativity.png",
+    "/Users/ren/Documents/Codex/2026-10-05/root-of-wisdom/outputs/conditions-of-generativity.svg"
+  ],
+  "claims": "Proofs establish threshold and collapse; trajectories illustrate one initial state and do not establish positive global attraction.",
+  "all_checks_passed": true
+}

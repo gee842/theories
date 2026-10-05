@@ -1506,3 +1506,8 @@ Added 5 October 2026: [source record 21](21-unified-theory-development-2026-10-0
 
 
 Added 2026-10-05: [Revising the scope of concern](15-codex-theory-conversations/2026-10-05-revising-the-scope-of-concern.md). Ren authorized continued advancement after the concern theory. The AI-assisted continuation develops a traceable challenge to exclusions, finite reason-admission closure, learning deadlines, and the distinction between warranted relations, retained evidence, and operational access. A strategic graph model derives joint suppression thresholds and shows why individually resistant claims can fail behind one shared bottleneck. Paid reinforcement, authority capture, cash timing, retained knowledge, and defeated-certificate retraction remain explicit. Three agents supplied proofs, primary-source analysis, internal review, and independent exact reconstruction. This is a conditional extension using established graph mathematics, not empirical validation, universal moral convergence, or invention of arbitrary new ethical concepts.
+
+
+## Repository reconciliation of recent research
+
+Added 5 October 2026: [source record 22](22-research-reconciliation-2026-10-05/README.md) preserves missing supporting work, later wisdom studies, review and delivery history, and a dated snapshot of ongoing development. Its manifest maps the inspected external files to exact repository copies and records exclusions. The [current research index](../RESEARCH.md) is the common reading and working entry point. This consolidation repairs storage and navigation; it does not supply new scientific evidence or change the status of unfinished studies.

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "captured_external_files_verified": 2689,
+  "redundant_archive_members_verified": 138,
+  "reading_edition_files_verified": 34,
+  "local_reading_links_checked": 693,
+  "reading_documents_checked": 62,
+  "historical_git_objects_used": 1,
+  "scope": "Byte preservation, documented link-only transformations and local target portability; not scientific revalidation, rendered layout, external URLs or every historical source link.",
+  "errors": []
+}

@@ -1,0 +1,408 @@
+{
+  "title": "Relational generativity and the conditions of wisdom",
+  "created_at_utc": "2026-10-05T09:28:28.080009+00:00",
+  "canonical_repository": "/Users/ren/theories",
+  "canonical_package": "/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+  "pre_synthesis_checkpoints": [
+    "003cd2a2e2d95a8b7a46314299342d977aa94d8a",
+    "38f8022eab23e1c08c847163e2daec9a425549c6"
+  ],
+  "integration_commit": "04b75b32c809aab9c5c64afc6c89874688da5c49",
+  "source_repository_clean": true,
+  "source_document_sha256": {
+    "CLAIMS.md": "f7391a10da90fb34dc207d0438080789f164d81cabf52538b2b5055eaab7ba88",
+    "CONCERN-AND-CORRECTION.md": "548e21f9623d859c2e4fdb6871f1c1021c5e8512307ff645af28ced9e313daaf",
+    "ETHICAL-FOUNDATION.md": "fdcd0ed4b11ba28fe4c1ec9160fbfef7bcf232ebf8e53897c640a6b59b40f155",
+    "FORMAL-CORE.md": "162e0ebf4017c175958c70e016ae40290247e70f61349e13ff4ff72d5540b694",
+    "FORMATION-MATH.md": "c65410ed0daf160c49c477efc16c7ed7bf0d1adf41983b77a9f852751ecf7ecf",
+    "FORMATION-PRIOR-ART.md": "3f70a1662bdf36684b10582bdcded71a38aed6a630c29480083fecdf0cbdeb8c",
+    "FORMATION.md": "c9d53de40de77bfd3164a716b576400bfc9cd7d3a7e217d4e6f2302d29cc93cc",
+    "SOURCE-MAP.md": "9ffe1f9ab6371ee5d55c67d6d5a1a6ce2511e4dc94b1529b6d6a95906e1394f0",
+    "START-HERE.md": "d00eb65c9dfd1e1204bb4e3ad9eea3a478c935c7e67dc69ce133bf57c471e553",
+    "SYNTHESIS-RECORD.md": "2d37d7b3b0f9c225d84a6f933c141b3f28d5f8562819ba19e2219f4fca7a1869",
+    "THEORY.md": "3ec5f541455320f920e940cdfe0e0947c96b9600a6ca442d7a776db05990a3ae"
+  },
+  "parallel_concern_commit": "a43b3deba28bd5d705450a91872ffbd6db8ac636",
+  "parallel_concern_canonical_sha256": {
+    "CLAIMS.md": "47a09e782bfaccab36bc469a731162d0454611ad6580409f3c8bf5191fdf5db4",
+    "RESEARCH-RECORD.md": "821738a0e467a7b961b80a4ac6d6684fc461242644ca2cab7121707adb286036",
+    "START-HERE.md": "08844770f4069217b775824c67d92988aa152d04907f2fbfc1855f0294b39845",
+    "THEORY.md": "f7ad5e5e40b3111ebbf198b271f7229cc939263de130def15f1362a06e89bbf3",
+    "check_learning.py": "5a60092a374c39f6e6e3040e0c562c7bcce5806026187aa2940b061bf5a49c9e",
+    "conceptual-evidence.md": "ae23e6bc179f7f9bb37f342b28f7643912e8536cf42cd7fed58ae42773d5f2a0",
+    "conceptual-review.md": "086a238b2579ea67d7afa215afd18b50fe9e8b8312ed7cf38d65daf31520004b",
+    "dynamics-checks.json": "75b029fc8cb0647bfa70d656aab937505a25ab7e4141b1114b656d6eab574091",
+    "dynamics-formal.md": "36b6ae9d880cc94823fc0682e6d0efa3fb8f76ea46b7093336775ac47cfe2ad3",
+    "dynamics_checks.py": "19e48c2613e026a171c07d83598260c80ca228b0a6fc400e7c663a5ae3bc82b0",
+    "independent-review-checks.json": "f2482c96080e02cb9253d8b813e7198f42f0aaf6543e076dbf7e4cf0e593b0e6",
+    "independent_review_checks.py": "f3e5e26abe677bb3769179d464aab89b5c3c9dd123acebcfd73d39ff8ee3d8db",
+    "integration-check.json": "e14b3199eb036380ce7fb4d78f164438093b200ce2ebaf46a91a37c99835bf6e",
+    "learning-checks.json": "c746684c7b4c52950ba66caefa243032c04fc7ad608b53dfd00024f80f404226",
+    "learning-formal.md": "f69758cf104a6fbb0eb2339123d1c35a573b24a7edf516a076109573a4223aaa",
+    "review.md": "394d933752271249fde02ecdfb76cad8d791d8b70b8dc1e04fb1b07df49f174d"
+  },
+  "local_citations_resolved": 279,
+  "files": [
+    {
+      "path": "CLAIMS.md",
+      "bytes": 10954,
+      "sha256": "f7391a10da90fb34dc207d0438080789f164d81cabf52538b2b5055eaab7ba88"
+    },
+    {
+      "path": "CONCERN-AND-CORRECTION.md",
+      "bytes": 12228,
+      "sha256": "f4d76decc665ec1cd9c38cbb9bec5c8328c605088dc59c8b076843e2cfb4ba44"
+    },
+    {
+      "path": "ETHICAL-FOUNDATION.md",
+      "bytes": 18707,
+      "sha256": "6e71a0ffb4c68b1609d21294aa32f9d28ef8558fe4d2e1fcf5996325ee96f5e7"
+    },
+    {
+      "path": "FORMAL-CORE.md",
+      "bytes": 39100,
+      "sha256": "162e0ebf4017c175958c70e016ae40290247e70f61349e13ff4ff72d5540b694"
+    },
+    {
+      "path": "FORMATION-MATH.md",
+      "bytes": 24421,
+      "sha256": "c65410ed0daf160c49c477efc16c7ed7bf0d1adf41983b77a9f852751ecf7ecf"
+    },
+    {
+      "path": "FORMATION-PRIOR-ART.md",
+      "bytes": 17695,
+      "sha256": "3f70a1662bdf36684b10582bdcded71a38aed6a630c29480083fecdf0cbdeb8c"
+    },
+    {
+      "path": "FORMATION.md",
+      "bytes": 15782,
+      "sha256": "d1b17eed56ae96c58781660e79c12c47a128475d8e15c0a357feb2a0d611de98"
+    },
+    {
+      "path": "PACKAGE.md",
+      "bytes": 3265,
+      "sha256": "9e189c26c228216727727872f03527704b4dcd5854b348e3e64c183382ee2572"
+    },
+    {
+      "path": "SOURCE-MAP.md",
+      "bytes": 36332,
+      "sha256": "9780d57118918721c3c0d34f631425959b9ca736fd1aa1388b767339432551a7"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 7128,
+      "sha256": "d00eb65c9dfd1e1204bb4e3ad9eea3a478c935c7e67dc69ce133bf57c471e553"
+    },
+    {
+      "path": "SYNTHESIS-RECORD.md",
+      "bytes": 17565,
+      "sha256": "14e6097cda879b7f5b0b0e77958296c4ef77e070f6e587264b761471a103864c"
+    },
+    {
+      "path": "THEORY.md",
+      "bytes": 44167,
+      "sha256": "3ec5f541455320f920e940cdfe0e0947c96b9600a6ca442d7a776db05990a3ae"
+    },
+    {
+      "path": "concern-theory/CLAIMS.md",
+      "bytes": 7471,
+      "sha256": "47a09e782bfaccab36bc469a731162d0454611ad6580409f3c8bf5191fdf5db4"
+    },
+    {
+      "path": "concern-theory/RESEARCH-RECORD.md",
+      "bytes": 7427,
+      "sha256": "821738a0e467a7b961b80a4ac6d6684fc461242644ca2cab7121707adb286036"
+    },
+    {
+      "path": "concern-theory/START-HERE.md",
+      "bytes": 3240,
+      "sha256": "08844770f4069217b775824c67d92988aa152d04907f2fbfc1855f0294b39845"
+    },
+    {
+      "path": "concern-theory/THEORY.md",
+      "bytes": 32011,
+      "sha256": "f7ad5e5e40b3111ebbf198b271f7229cc939263de130def15f1362a06e89bbf3"
+    },
+    {
+      "path": "concern-theory/check_learning.py",
+      "bytes": 3689,
+      "sha256": "5a60092a374c39f6e6e3040e0c562c7bcce5806026187aa2940b061bf5a49c9e"
+    },
+    {
+      "path": "concern-theory/conceptual-evidence.md",
+      "bytes": 33147,
+      "sha256": "ae23e6bc179f7f9bb37f342b28f7643912e8536cf42cd7fed58ae42773d5f2a0"
+    },
+    {
+      "path": "concern-theory/conceptual-review.md",
+      "bytes": 11612,
+      "sha256": "086a238b2579ea67d7afa215afd18b50fe9e8b8312ed7cf38d65daf31520004b"
+    },
+    {
+      "path": "concern-theory/dynamics-checks.json",
+      "bytes": 6813,
+      "sha256": "75b029fc8cb0647bfa70d656aab937505a25ab7e4141b1114b656d6eab574091"
+    },
+    {
+      "path": "concern-theory/dynamics-formal.md",
+      "bytes": 23836,
+      "sha256": "36b6ae9d880cc94823fc0682e6d0efa3fb8f76ea46b7093336775ac47cfe2ad3"
+    },
+    {
+      "path": "concern-theory/dynamics_checks.py",
+      "bytes": 15670,
+      "sha256": "19e48c2613e026a171c07d83598260c80ca228b0a6fc400e7c663a5ae3bc82b0"
+    },
+    {
+      "path": "concern-theory/independent-review-checks.json",
+      "bytes": 502,
+      "sha256": "f2482c96080e02cb9253d8b813e7198f42f0aaf6543e076dbf7e4cf0e593b0e6"
+    },
+    {
+      "path": "concern-theory/independent_review_checks.py",
+      "bytes": 5698,
+      "sha256": "f3e5e26abe677bb3769179d464aab89b5c3c9dd123acebcfd73d39ff8ee3d8db"
+    },
+    {
+      "path": "concern-theory/integration-check.json",
+      "bytes": 446,
+      "sha256": "e14b3199eb036380ce7fb4d78f164438093b200ce2ebaf46a91a37c99835bf6e"
+    },
+    {
+      "path": "concern-theory/learning-checks.json",
+      "bytes": 656,
+      "sha256": "c746684c7b4c52950ba66caefa243032c04fc7ad608b53dfd00024f80f404226"
+    },
+    {
+      "path": "concern-theory/learning-formal.md",
+      "bytes": 19280,
+      "sha256": "f69758cf104a6fbb0eb2339123d1c35a573b24a7edf516a076109573a4223aaa"
+    },
+    {
+      "path": "concern-theory/release-checks.json",
+      "bytes": 1885,
+      "sha256": "4df46f71d2c02501fe1811b538d5f23eed3a263eb94545dccf09a7635d02b91b"
+    },
+    {
+      "path": "concern-theory/review.md",
+      "bytes": 7837,
+      "sha256": "394d933752271249fde02ecdfb76cad8d791d8b70b8dc1e04fb1b07df49f174d"
+    },
+    {
+      "path": "formation-study/.gitignore",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "formation-study/PROTOCOL.md",
+      "bytes": 7207,
+      "sha256": "2c85e93b0df31233546a4ffc07c439c1b2bc27a52c2fbf360ba78e2cd5c292ff"
+    },
+    {
+      "path": "formation-study/README.md",
+      "bytes": 6830,
+      "sha256": "893592e4ccfbbe8b2c00226f75325c0ede9fbde89bd03cce98a090a1dd8edfb5"
+    },
+    {
+      "path": "formation-study/check_formation_math.py",
+      "bytes": 7394,
+      "sha256": "e9fdbef6e273b4a2ae57556b7bcacdc64201943588d2cd0db6a77e503ce2cedf"
+    },
+    {
+      "path": "formation-study/formal-adversarial-checks.json",
+      "bytes": 366,
+      "sha256": "04d18fd78b8d3918ed457e56aac5d8cd37e11e1887592199d536d0f8c2726fe4"
+    },
+    {
+      "path": "formation-study/formal_adversarial_check.py",
+      "bytes": 2205,
+      "sha256": "ca8752cb410cadfc2d701477821821846a948fb67087c9815acb6cc9b2c0c399"
+    },
+    {
+      "path": "formation-study/independent-game-check-results.json",
+      "bytes": 24243,
+      "sha256": "0823cbdfd762cadaf7b476d4466324865a39a0c0257ccf41e4cf492b67b4ff37"
+    },
+    {
+      "path": "formation-study/independent-game-review.md",
+      "bytes": 6743,
+      "sha256": "cd4c2cff8646969559f642a8885739c0694d4fbb6d583fa6f834da97eb021146"
+    },
+    {
+      "path": "formation-study/independent_game_check.py",
+      "bytes": 14699,
+      "sha256": "eaa65bdf34e5ebb23643326c0e925e1de746d56da7a0c1507a39bce28b1b34ac"
+    },
+    {
+      "path": "formation-study/math-proposal-checks.json",
+      "bytes": 1969,
+      "sha256": "0f5674f5b137e2f353dc3c87f39b2468a091e675306ea6d25942f64f4b4ffd3b"
+    },
+    {
+      "path": "formation-study/model.py",
+      "bytes": 7306,
+      "sha256": "29745b50a9eaa07e76e45373022f9b5e99b284c60c8a3e79e2ea0a629222b92b"
+    },
+    {
+      "path": "formation-study/plot_results.py",
+      "bytes": 3461,
+      "sha256": "e2bf064ab1c8b23885f29ed992f9a034a72d4792dd5ebab0508cba343b460a06"
+    },
+    {
+      "path": "formation-study/results/additive-control.json",
+      "bytes": 316,
+      "sha256": "daba1c327a68ba7da34ceadcc5b1731e5b3ce9b797da72701255b10470ee6034"
+    },
+    {
+      "path": "formation-study/results/formation-and-strategic-reserve.png",
+      "bytes": 189561,
+      "sha256": "3f5ff62e53f75ca3102481b5936c4b5062cbcf84f71a3f62399f03c5cc3312e8"
+    },
+    {
+      "path": "formation-study/results/formation-and-strategic-reserve.svg",
+      "bytes": 122351,
+      "sha256": "9c9f085660fb98d0af5aa910ad99eff163341037b124af511cdace56f1882ce6"
+    },
+    {
+      "path": "formation-study/results/grid.json",
+      "bytes": 3430247,
+      "sha256": "ab839298e2a0d893d5b9f48b1ecfbd727f5cf739ac2ce00749e9c4d78c953437"
+    },
+    {
+      "path": "formation-study/results/static-games.json",
+      "bytes": 104663,
+      "sha256": "4aef3e933586719335ad7a230e57ef78130b61a0c4e5e0653df6eaaca12f7213"
+    },
+    {
+      "path": "formation-study/results/succession.json",
+      "bytes": 216651,
+      "sha256": "a3d7a4ea386a6c6c44150532791d2839d623dc987ec0c156cfbc659368f4d73c"
+    },
+    {
+      "path": "formation-study/results/summary.json",
+      "bytes": 988,
+      "sha256": "7fc8922501a6c7b2c8dd58fa3df8e97f6c81bb4059dd195c8cacb67e515f62a2"
+    },
+    {
+      "path": "formation-study/results/witnesses.json",
+      "bytes": 192272,
+      "sha256": "48b4ae4db3ea9db1c02dd21b573413fe1e4a7ca391282d91b2f43f8b6c7fc6bf"
+    },
+    {
+      "path": "formation-study/study.py",
+      "bytes": 6799,
+      "sha256": "289ae9350759d1ca4182d7ce3f3e295e5d1895d1831b00e3fbcf66bcde8633a9"
+    },
+    {
+      "path": "reviews/development-01/concern-integration-review.md",
+      "bytes": 1024,
+      "sha256": "cde713382f782abe399fed0f86fbcc73ab14361788f213f65bc71cfaf73a7aaf"
+    },
+    {
+      "path": "reviews/development-01/concern-interface-review.md",
+      "bytes": 5910,
+      "sha256": "a8b6de957ec7004e3a0ee6bb2cbff565b6c651aaab5e1ef21ebf5f4da91c5f7c"
+    },
+    {
+      "path": "reviews/development-01/formal-final-review.md",
+      "bytes": 6958,
+      "sha256": "1b7549f3e93c560f32e8aef02ba812a482b0f825809c5c20cfd2903d5cf9c3a0"
+    },
+    {
+      "path": "reviews/development-01/independent-game-review.md",
+      "bytes": 6791,
+      "sha256": "5001bc9b3ade95a21a31942bafe7b66fa6475b9c9e40d823219fcabfc0b49522"
+    },
+    {
+      "path": "reviews/development-01/integration-final-review.md",
+      "bytes": 5576,
+      "sha256": "73b6bafa6c4fcb7ff0b63143690ba7c9cae0798ee0886ab6715fb84c1c36cace"
+    },
+    {
+      "path": "reviews/editorial-review-final.md",
+      "bytes": 3967,
+      "sha256": "8120912b0c3dc3aa197e44a552a7a35c7aecc15ba6c826293339a91af2194c40"
+    },
+    {
+      "path": "reviews/formal-review-final.md",
+      "bytes": 1603,
+      "sha256": "0d2f6795a025e62f9e9cf3b998822d73ca1ee92605d06601fcd1a5cefe46831e"
+    },
+    {
+      "path": "reviews/main-review-direction.md",
+      "bytes": 12072,
+      "sha256": "83672f6c3b29f04c025b47e555e63cfcd2936c4f7f3ef54bb01d72bc749eb703"
+    },
+    {
+      "path": "verification/canonical-release-checks.json",
+      "bytes": 2601,
+      "sha256": "47ed71f1a491cddcf5e36ab2b1aec4fc980680e74d816ec8a9aceadea67e27f1"
+    },
+    {
+      "path": "verification/check_concern_interface.py",
+      "bytes": 1177,
+      "sha256": "d993cc45d3c2a6fbd77bac9371da6b5d290f2d7d57c3dad800d62b44715b5241"
+    },
+    {
+      "path": "verification/check_concern_interface_independent.py",
+      "bytes": 2472,
+      "sha256": "63382694e272207efafbd03f1eb28c831a078d1b4f6b398795ba5d871744a51f"
+    },
+    {
+      "path": "verification/check_formation_math.py",
+      "bytes": 7394,
+      "sha256": "e9fdbef6e273b4a2ae57556b7bcacdc64201943588d2cd0db6a77e503ce2cedf"
+    },
+    {
+      "path": "verification/check_integration.py",
+      "bytes": 7578,
+      "sha256": "094a4c97f46d3a1d1feec0fbb1ebfc4d3ef42dbe9458e185b40819d4eaf36291"
+    },
+    {
+      "path": "verification/check_mechanisms.py",
+      "bytes": 7522,
+      "sha256": "1f83a75ea1ae48628f5c4b9e406c73e1e0a853944e70abb5414e83eaae41be25"
+    },
+    {
+      "path": "verification/check_release.py",
+      "bytes": 6788,
+      "sha256": "735ffc660f1603ade8280fff585ff0bb8153c0fa75e24f0c366438b05e3f0768"
+    },
+    {
+      "path": "verification/concern-interface-checks.json",
+      "bytes": 168,
+      "sha256": "d6246ccb60f114ab35cd46a7364429a38a197180e473f8324fafad3f79617c51"
+    },
+    {
+      "path": "verification/concern-interface-independent-checks.json",
+      "bytes": 1193,
+      "sha256": "378e12aa4b9146896b4179a05a239aa494a476a714951afe1172738a35f8fc05"
+    },
+    {
+      "path": "verification/independent-results.json",
+      "bytes": 7962,
+      "sha256": "0be749923236f23beb1485545c37bd48681e7c5332e0b89c3dc9ddd6958310bb"
+    },
+    {
+      "path": "verification/math-proposal-checks.json",
+      "bytes": 1969,
+      "sha256": "0f5674f5b137e2f353dc3c87f39b2468a091e675306ea6d25942f64f4b4ffd3b"
+    },
+    {
+      "path": "verification/preservation-final.json",
+      "bytes": 2990,
+      "sha256": "918b8ba160646950dd31f0fb22dbb33b3964185d709cf4551d91f400b0a20461"
+    },
+    {
+      "path": "verification/release-checks.json",
+      "bytes": 5864,
+      "sha256": "fa0b928ca300f285c4737c107609ed1e4d9b62c3b3bf3053af11c7a6f59cfc99"
+    },
+    {
+      "path": "verification/results.json",
+      "bytes": 263,
+      "sha256": "1a3e8642d00ff8b26f065b4a75a58e20dcec2ad4d16c95def498e483b6ae8087"
+    }
+  ],
+  "scope": "The updated synthesis, proofs, ethical development, exact formation study and data, parallel concern theory, new concern-correction interface, internal reviews, independent check programs and records. Earlier source corpus is preserved in the separate committed repository."
+}

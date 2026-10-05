@@ -1,0 +1,287 @@
+{
+  "status": "all exact checks passed",
+  "institutional": {
+    "supported": {
+      "external_success": "1",
+      "internal_success": "1",
+      "branches": [
+        {
+          "theta": 0,
+          "record": 0,
+          "memory": 0,
+          "action": 0,
+          "spent": 2,
+          "budget": 0,
+          "deployed": true,
+          "external_success": true,
+          "internal_success": true
+        },
+        {
+          "theta": 1,
+          "record": 1,
+          "memory": 1,
+          "action": 1,
+          "spent": 2,
+          "budget": 0,
+          "deployed": true,
+          "external_success": true,
+          "internal_success": true
+        }
+      ]
+    },
+    "no_sensor": {
+      "external_success": "1/2",
+      "internal_success": "1/2",
+      "branches": [
+        {
+          "theta": 0,
+          "record": null,
+          "memory": null,
+          "action": 0,
+          "spent": 0,
+          "budget": 2,
+          "deployed": false,
+          "external_success": true,
+          "internal_success": true
+        },
+        {
+          "theta": 1,
+          "record": null,
+          "memory": null,
+          "action": 0,
+          "spent": 0,
+          "budget": 2,
+          "deployed": false,
+          "external_success": false,
+          "internal_success": false
+        }
+      ]
+    },
+    "no_standing": {
+      "external_success": "1/2",
+      "internal_success": "1/2",
+      "branches": [
+        {
+          "theta": 0,
+          "record": 0,
+          "memory": null,
+          "action": 0,
+          "spent": 1,
+          "budget": 1,
+          "deployed": false,
+          "external_success": true,
+          "internal_success": true
+        },
+        {
+          "theta": 1,
+          "record": 1,
+          "memory": null,
+          "action": 0,
+          "spent": 1,
+          "budget": 1,
+          "deployed": false,
+          "external_success": false,
+          "internal_success": false
+        }
+      ]
+    },
+    "no_authority": {
+      "external_success": "1/2",
+      "internal_success": "1/2",
+      "branches": [
+        {
+          "theta": 0,
+          "record": 0,
+          "memory": 0,
+          "action": 0,
+          "spent": 1,
+          "budget": 1,
+          "deployed": false,
+          "external_success": true,
+          "internal_success": true
+        },
+        {
+          "theta": 1,
+          "record": 1,
+          "memory": 1,
+          "action": 0,
+          "spent": 1,
+          "budget": 1,
+          "deployed": false,
+          "external_success": false,
+          "internal_success": false
+        }
+      ]
+    },
+    "budget_one": {
+      "external_success": "1/2",
+      "internal_success": "1/2",
+      "branches": [
+        {
+          "theta": 0,
+          "record": 0,
+          "memory": 0,
+          "action": 0,
+          "spent": 1,
+          "budget": 0,
+          "deployed": false,
+          "external_success": true,
+          "internal_success": true
+        },
+        {
+          "theta": 1,
+          "record": 1,
+          "memory": 1,
+          "action": 0,
+          "spent": 1,
+          "budget": 0,
+          "deployed": false,
+          "external_success": false,
+          "internal_success": false
+        }
+      ]
+    },
+    "reversed_goal": {
+      "external_success": "0",
+      "internal_success": "1",
+      "branches": [
+        {
+          "theta": 0,
+          "record": 0,
+          "memory": 0,
+          "action": 1,
+          "spent": 2,
+          "budget": 0,
+          "deployed": true,
+          "external_success": false,
+          "internal_success": true
+        },
+        {
+          "theta": 1,
+          "record": 1,
+          "memory": 1,
+          "action": 0,
+          "spent": 2,
+          "budget": 0,
+          "deployed": true,
+          "external_success": false,
+          "internal_success": true
+        }
+      ]
+    }
+  },
+  "amendment": {
+    "False": {
+      "success": "1/2",
+      "branches": [
+        {
+          "theta": 0,
+          "requested": true,
+          "gate": false,
+          "action": 0,
+          "budget": 2,
+          "success": true
+        },
+        {
+          "theta": 1,
+          "requested": true,
+          "gate": false,
+          "action": 0,
+          "budget": 2,
+          "success": false
+        }
+      ]
+    },
+    "True": {
+      "success": "1",
+      "branches": [
+        {
+          "theta": 0,
+          "requested": true,
+          "gate": true,
+          "action": 0,
+          "budget": 0,
+          "success": true
+        },
+        {
+          "theta": 1,
+          "requested": true,
+          "gate": true,
+          "action": 1,
+          "budget": 0,
+          "success": true
+        }
+      ]
+    }
+  },
+  "xor_response": [
+    {
+      "q": 0,
+      "m": 0,
+      "g": 0,
+      "action": 0,
+      "outcome": 0
+    },
+    {
+      "q": 0,
+      "m": 0,
+      "g": 1,
+      "action": 1,
+      "outcome": 1
+    },
+    {
+      "q": 0,
+      "m": 1,
+      "g": 0,
+      "action": 1,
+      "outcome": 1
+    },
+    {
+      "q": 0,
+      "m": 1,
+      "g": 1,
+      "action": 0,
+      "outcome": 0
+    },
+    {
+      "q": 1,
+      "m": 0,
+      "g": 0,
+      "action": 0,
+      "outcome": 1
+    },
+    {
+      "q": 1,
+      "m": 0,
+      "g": 1,
+      "action": 1,
+      "outcome": 0
+    },
+    {
+      "q": 1,
+      "m": 1,
+      "g": 0,
+      "action": 1,
+      "outcome": 0
+    },
+    {
+      "q": 1,
+      "m": 1,
+      "g": 1,
+      "action": 0,
+      "outcome": 1
+    }
+  ],
+  "dependency_cycle": {
+    "00": "00",
+    "01": "10",
+    "10": "01",
+    "11": "11"
+  },
+  "cyclic_unique_solution": [
+    -1,
+    -1,
+    0
+  ],
+  "notes": "Constructed finite examples; not empirical validation or discovery."
+}

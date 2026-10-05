@@ -1,0 +1,38 @@
+# Current theory and research
+
+This is the main reading and working index for the recent theory. The repository is the primary home for the work; dated chat folders and exported bundles are historical copies. Existing studies stay at their established paths so their proofs, reviews, and genealogy remain together.
+
+**Start with the [unified foundation](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md), then the [formation of concern](_process/research/2026-10-05-concern-theory/START-HERE.md) and [revisable concern](_process/research/2026-10-05-revisable-concern/START-HERE.md).** The latest concern appendix is [scope-math.md](_process/research/2026-10-05-revisable-concern/scope-math.md). These are repository files, not exported copies.
+
+## The central research line
+
+The candidate foundation describes activity changing the conditions of further activity. Its ethical development asks how another being's condition becomes a reason within a process, how that reason can learn and widen, and how effective concern survives costs, obstruction, and succession. Supporting conditions, recognition, valuation, justified standing, operational influence, and actual protection have distinct roles.
+
+The completed studies supply conditional mechanisms and counterexamples. They do not establish a universal tendency toward wiser or more inclusive regeneration. The current [theory overview and genealogy](theories/shengsheng-buxi-generative-existence/README.md) keeps that distinction explicit.
+
+## Current branches and their evidence
+
+| Research question | Main reading | Proofs and evidence | Status |
+|---|---|---|---|
+| What connects generativity, wisdom, renewal and correction? | [Unified theory](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md) | [Formal core](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md), [claim register](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md), [source map](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SOURCE-MAP.md) | Integrated candidate foundation with scoped results. |
+| When does feedback produce protection or evasion? | [Direction and concern](_process/research/2026-10-05-direction-frontier/EXPLORATION.md) | [Mathematics](_process/research/2026-10-05-direction-frontier/math-note.md), [research record](_process/research/2026-10-05-direction-frontier/RESEARCH-RECORD.md) | Completed conditional exploration; universal direction remains open. |
+| How does concern form, generalize and survive succession? | [Concern theory](_process/research/2026-10-05-concern-theory/THEORY.md) | [Learning](_process/research/2026-10-05-concern-theory/learning-formal.md), [renewal](_process/research/2026-10-05-concern-theory/dynamics-formal.md), [claims](_process/research/2026-10-05-concern-theory/CLAIMS.md) | Completed model under explicit teaching and shared-routing premises. |
+| How can concern revise its scope and resist suppression? | [Revisable concern](_process/research/2026-10-05-revisable-concern/THEORY.md) | [Scope mathematics](_process/research/2026-10-05-revisable-concern/scope-math.md), [access mathematics](_process/research/2026-10-05-revisable-concern/access-math.md), [claims](_process/research/2026-10-05-revisable-concern/CLAIMS.md) | Completed finite models, proofs, counterexamples and internal independent checks. |
+| How does effective correction get built and resist strategic depletion? | [Formation of correction](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md) | [Proofs](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION-MATH.md), [experiment](experiments/constructed-correction/README.md) | Completed conditional strategic study. |
+| How do concern, leverage and ethical standing relate? | [Concern and correction](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-CORRECTION.md), [ethical foundation](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md) | [Development provenance](sources/21-unified-theory-development-2026-10-05/README.md) | One-period interface and explicit ethical argument; no automatic joint developmental theorem. |
+| How should observing and revising be realized inside a causal account? | [Causal foundations](_process/research/2026-10-05-causal-foundations/README.md) | [Formal results](_process/research/2026-10-05-causal-foundations/outputs/formal-results.md), [claims and sources](_process/research/2026-10-05-causal-foundations/outputs/sources-and-claims.md) | Imported completed source study, now with its supporting work together; no new scientific validation in this consolidation. |
+| How are supporting conditions accessed, renewed and shared? | [Supporting conditions and shared generativity](_process/research/2026-10-05-support-and-shared-generativity/README.md) | Three reports, mathematical companions, figures, original checks and programs in the linked study | Newly preserved source studies and portable reading editions; their claims retain their original scope and await further substantive integration. |
+| Can learned concern, constructed control and strategic resilience form and renew together? | [Joint formation protocol](experiments/joint-formation/PROTOCOL.md) | [Live study directory](experiments/joint-formation/) | In progress at reconciliation. Consult the owning study for later completion and review; archived draft notes are not a completed release. |
+
+## Earlier foundations and related experiments
+
+- [Foundation review and optimality](_process/research/2026-10-05-generative-foundation-review/FOUNDATION.md) and [generative health](_process/research/2026-10-05-generative-health/RESEARCH.md) retain competing formulations and explicit limits.
+- [Integrated evolution](_process/research/2026-10-04-integrated-evolution/README.md) and the [experiment index](experiments/README.md) connect selection, discovery, inquiry, inheritance, plural constraints and funded correction.
+- The [unified source map](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SOURCE-MAP.md) connects the original wisdom, full-picture, structural, scientific-inquiry and recursive-modeling sessions to their retained evidence.
+- The [whole-corpus map](MAP.md), [timeline](TIMELINE.md) and [glossary](GLOSSARY.md) retain the broader intellectual history. Use the current theory and claim registers when older formulations differ.
+
+## Preservation and future work
+
+The [reconciliation record](_process/research/2026-10-05-repository-reconciliation/README.md) explains what was found and repaired. Its [source manifest](sources/22-research-reconciliation-2026-10-05/MANIFEST.json) maps inspected external files to exact repository bytes, including duplicates, preserved originals and explicit exclusions. Earlier snapshots remain intact. A [location map](sources/22-research-reconciliation-2026-10-05/LOCATIONS.md) helps locate material by its former session folder.
+
+Continue substantive work in the existing repository study, following [AGENTS.md](AGENTS.md). Update this index as a branch advances; link to repository files in deliveries. Keep exported bundles as snapshots and retain original provenance paths in historical records. Preservation, link repair and organization do not add evidence for a scientific or ethical claim.

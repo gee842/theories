@@ -1,0 +1,23 @@
+{
+  "method": "Exact rational arithmetic and exhaustive finite enumeration; proofs remain in memo.",
+  "lumpability_state_action_checks": 8,
+  "two_step_history_policy_initial_state_checks": 256,
+  "failed_quotient_probability_pair": [
+    "0",
+    "1"
+  ],
+  "observational_models_equal": true,
+  "do_X_1_Y_1_probabilities": {
+    "causal": "1",
+    "confounded": "1/2"
+  },
+  "all_treatment_marginals_equal": true,
+  "probability_individual_outcome_changes": {
+    "stable": "0",
+    "flip": "1"
+  },
+  "one_bit_archive_zero_error_encoders": 0,
+  "best_uniform_archive_query_error": "1/4",
+  "announced_bit_diagonal_cases": 2,
+  "status": "all checks passed"
+}

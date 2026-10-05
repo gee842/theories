@@ -1,0 +1,58 @@
+{
+  "exact_rational_equilibrium_and_characteristic_checks": 486,
+  "equilibrium_R_C_D_E": [
+    0.42677669529663687,
+    0.42677669529663687,
+    0.14644660940672627,
+    6.82842712474619
+  ],
+  "fold_g": 9,
+  "example_g": 17,
+  "numerical_runs": [
+    {
+      "preparation": "activation",
+      "initial_R_C_D_E": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_R_C_D_E": [
+        0.4267766952966211,
+        0.4267766952966072,
+        0.14644660940674367,
+        6.828427124745487
+      ],
+      "max_step_halving_difference": 8.802558681964001e-11,
+      "max_material_conservation_error": 2.7977620220553945e-14,
+      "minimum_coordinate": 0.0
+    },
+    {
+      "preparation": "failure",
+      "initial_R_C_D_E": [
+        0.01,
+        0.0,
+        0.99,
+        0.0
+      ],
+      "final_R_C_D_E": [
+        1.3974446511647002e-28,
+        8.162266596063735e-27,
+        0.9999999999999843,
+        4.059331337120079e-24
+      ],
+      "max_step_halving_difference": 8.10854855481935e-13,
+      "max_material_conservation_error": 1.5654144647214707e-14,
+      "minimum_coordinate": 0.0
+    }
+  ],
+  "integration_method": "RK4, steps .004 and .002, horizon 60",
+  "small_preparation_certificate": {
+    "A_upper": "1/100",
+    "E_upper": "17/100",
+    "coefficient_in_A_prime_le_minus_coefficient_C": "83/100"
+  },
+  "succession_max_vector_field_residual": 1.2212453270876722e-15,
+  "interpretation": "Arithmetic and numerical checks supplement the written proofs; neither prove global active convergence.",
+  "all_checks_passed": true
+}

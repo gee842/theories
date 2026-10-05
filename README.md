@@ -1,8 +1,10 @@
 # Ren's Theories
 
-Everything Ren has thought, drafted and theorised from 2021 to September 2026, gathered from `~/repos`, `~/writings`, `~/wamo`, `~/meta_attractor`, `~/Downloads`, `~/Desktop`, the claude.ai chat exports and the Claude Code memories and transcripts — organised so the ideas can be connected, tested, taught, and turned into books.
+Everything Ren has thought, drafted and theorised from 2021 to October 2026, gathered from `~/repos`, `~/writings`, `~/wamo`, `~/meta_attractor`, `~/Downloads`, `~/Desktop`, the claude.ai chat exports and the Claude Code memories and transcripts — organised so the ideas can be connected, tested, taught, and turned into books.
 
 ## Start here
+
+**Current research and repository home:** [RESEARCH.md](RESEARCH.md) connects the latest foundation, concern, correction, and supporting-condition studies to their proofs, reviews, and experiments. Continue work in these repository locations; dated chat outputs are delivery snapshots.
 
 **Latest integrated foundation, 5 October 2026:** [The unified foundation in brief](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md) connects the completed theory sessions on relational generativity, renewal, wisdom, selection, and correction. The [full theory](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md) and [formal core](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md) separate proved conditional results, synthetic evidence, ethical commitments, and open universal claims. Original work is preserved in pre-synthesis checkpoints. The first completed development adds [formation and strategic vulnerability of correction](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md) and a [positive ethical foundation](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md).
 
@@ -24,7 +26,7 @@ Earlier writing plan: [v5 of the AI trajectory and cooperation theory](drafts/20
 
 **`theories/<slug>/`** — one folder per theory. `README.md` is the canonical document: the strongest current formulation, the mechanism in prose, every claim with its citation, the genealogy, what earlier versions lost, Ren's own words, the open critiques, and what to read next. The `synthesis-*.md` files beside it are the reading drafts it was built from; they are kept because they carry detail the canonical document compresses.
 
-**`experiments/`** — applied experiments and prototypes informed by the theories. Their implementation choices, speculative assumptions and results are separate from canonical theory. The [circular construction experiment](experiments/circular-construction/README.md) explores regenerative building systems and autonomous robotic construction.
+**[`experiments/`](experiments/README.md)** — applied experiments and prototypes informed by the theories. Their implementation choices, speculative assumptions and results are separate from canonical theory. The [circular construction experiment](experiments/circular-construction/README.md) explores regenerative building systems and autonomous robotic construction.
 
 **`sources/`** — a copy of every source document, grouped by origin and never edited. [SOURCES.md](sources/SOURCES.md) records what came from where, with true dates. The originals stay where they were.
 
@@ -45,7 +47,7 @@ The audit found that AI-written sentences had been credited to Ren in several pl
 ## Conventions
 
 - Applied experiments belong in `experiments/`; they do not automatically become theory or source material for canonical claims.
-- The originals are untouched; `sources/` is a snapshot taken on 2026-09-03. New material for the theory corpus goes into `sources/` with a line in `SOURCES.md`, then into the relevant `theories/<slug>/README.md` — not into a parallel document.
+- The originals are untouched; `sources/` preserves the original 2026-09-03 snapshot and later dated additions with their own provenance. New material for the theory corpus goes into `sources/` with a line in `SOURCES.md`, then into the relevant `theories/<slug>/README.md` — not into a parallel document.
 - Chinese and English are equally primary. Terms keep their Chinese form with a gloss on first use.
 - Every claim cites a source path. Ren's own words are quoted verbatim and marked; AI-drafted elaborations and AI reviews are labelled as such, because much of this corpus is AI-assisted writing from Ren's ideas and the distinction matters for publication.
 - Genealogy is preserved. What an earlier version had and a later one dropped is listed rather than silently merged away — a rule that comes from Ren's own standing complaint about lossy consolidation.

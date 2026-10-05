@@ -2,6 +2,8 @@
 
 ## Current unified foundation
 
+The [current research index](../../RESEARCH.md) connects all recent branches, their repository homes, and their evidence status. It is the starting point for work completed after the synthesis below.
+
 **Current synthesis, 5 October 2026.** The latest sessions are integrated in [Relational generativity and the conditions of wisdom](unified-2026-10-05/THEORY.md), with a [short reading guide](unified-2026-10-05/START-HERE.md), [formal core](unified-2026-10-05/FORMAL-CORE.md), [claim register](unified-2026-10-05/CLAIMS.md), and [source map](unified-2026-10-05/SOURCE-MAP.md). This section governs the current interpretation where earlier formulations below differ.
 
 The proposed common foundation is **activity changing the conditions of further activity**. The object of explanation is a joint situation with differentiated centers and relations: what supports their activity, what that activity changes, and what it leaves them and their successors effectively able to do. Where continued functioning faces unbounded cumulative loss of indispensable finite supports, renewal, replacement, provision, or transformed dependence is necessary. Understanding and correction have supporting conditions of their own.

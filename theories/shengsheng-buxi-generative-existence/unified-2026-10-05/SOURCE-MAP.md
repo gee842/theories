@@ -167,3 +167,14 @@ The parallel [concern theory](../../../_process/research/2026-10-05-concern-theo
 The earlier [direction exploration](../../../_process/research/2026-10-05-direction-frontier/EXPLORATION.md), completed at `2e1f354`, distinguishes protective response from cheaper insulation and models paid construction inside a supplied repertoire. Neither branch establishes universal moral direction, the origin of valence, or unrestricted generalization to unfamiliar recipients.
 
 The new [concern–correction interface](CONCERN-AND-CORRECTION.md) is a further explicitly defined one-period model. It preserves separate actor, input-provider, and patient ledgers; proves strict complementarity and a harmless-exit counterexample; and states the changes needed before a joint developmental claim would be justified. Its 7,040-case exact check is newly run. This integration does not count the earlier concern branch's saved checks as newly repeated experiments or claim external peer validation.
+
+
+## S20 Revisable concern and resilient access
+
+The [revisable-concern study](../../../_process/research/2026-10-05-revisable-concern/START-HERE.md) extends the concern branch with finite admission of an existing reason to new cases, explicit learning deadlines, and strategic obstruction through shared routes. Its [scope](../../../_process/research/2026-10-05-revisable-concern/scope-math.md) and [access](../../../_process/research/2026-10-05-revisable-concern/access-math.md) appendices distinguish warranted relations, retained grounds and actual influence. The [source record](../../../sources/15-codex-theory-conversations/2026-10-05-revising-the-scope-of-concern.md) preserves provenance and the limits of the result. Existing checks are not counted as newly run here.
+
+## S21 Reconciled source studies and current locations
+
+The [repository reconciliation](../../../sources/22-research-reconciliation-2026-10-05/README.md) preserves missing causal-foundations working material, three later wisdom studies, and supporting research and delivery records. The [causal-foundations reading edition](../../../_process/research/2026-10-05-causal-foundations/README.md) reunites the reports with their development. The [support and shared-generativity edition](../../../_process/research/2026-10-05-support-and-shared-generativity/README.md) retains the new source reports, mathematical companions, figures, programs and original checks. These editions adapt live links and preserve exact originals; this preservation does not itself integrate or independently validate their conclusions.
+
+The [current research index](../../../RESEARCH.md) is the single cross-branch navigation point. It identifies completed studies, later source reports, and the ongoing joint-formation study separately.

@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "scope": "Local links, balanced math delimiters, editorial markers, result/source labels, and optional source provenance; no rendering or theorem-prover validation.",
+  "documents": {
+    "CLAIMS.md": {
+      "bytes": 8200,
+      "sha256": "64b2f7b40939f22d92449ef83104a740fc8b69957b18302b5ad8351e2543e21a"
+    },
+    "FORMAL-CORE.md": {
+      "bytes": 39100,
+      "sha256": "162e0ebf4017c175958c70e016ae40290247e70f61349e13ff4ff72d5540b694"
+    },
+    "PACKAGE.md": {
+      "bytes": 1913,
+      "sha256": "9cac10102c84dfdd4720088dd3a56ea091798445faa7e4a3bf53dbe1a6bb9cdd"
+    },
+    "SOURCE-MAP.md": {
+      "bytes": 32217,
+      "sha256": "12d994f29491a5037cde0503bb1a03e2d9167e44ddc8a24f3440d03c0720ea44"
+    },
+    "START-HERE.md": {
+      "bytes": 5409,
+      "sha256": "9b3aea773ee8ca10f07a40f5710256cdf4b497c0cf141f911a163d83fbd2e27a"
+    },
+    "SYNTHESIS-RECORD.md": {
+      "bytes": 13574,
+      "sha256": "3e1ca0cbc6fce40e6ef330e82552fb1adb8ab488d3990fcc8807802c1920c775"
+    },
+    "THEORY.md": {
+      "bytes": 39482,
+      "sha256": "89e7821acfc10dea2407dcb02ee821d7d9467f81f57db18c93fb7fab113ffba6"
+    }
+  },
+  "local_links_checked": 176,
+  "external_local_links_skipped": 0,
+  "formal_result_labels": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F2a",
+    "F2b"
+  ],
+  "source_families": 16,
+  "snapshots": [
+    {
+      "manifest": "sources/20-codex-theory-sessions-2026-10-05/SNAPSHOT-MANIFEST.json",
+      "files": 2378,
+      "bytes": 337544211,
+      "commit": "003cd2a2e2d95a8b7a46314299342d977aa94d8a"
+    },
+    {
+      "manifest": "sources/20-codex-theory-sessions-2026-10-05/completion-supplement/MANIFEST.json",
+      "files": 20,
+      "bytes": 579664,
+      "commit": "38f8022eab23e1c08c847163e2daec9a425549c6"
+    }
+  ],
+  "historical_canonical_text_preserved": true,
+  "formal_review_version_matches": true,
+  "errors": []
+}

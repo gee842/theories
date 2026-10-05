@@ -1,0 +1,16 @@
+{
+  "commit": "2ca109c8cf926bb42da4e7d985fc3d9fa53d1baa",
+  "repository": "/Users/ren/theories",
+  "repository_clean_at_delivery": true,
+  "canonical_research": "/Users/ren/theories/_process/research/2026-10-05-revisable-concern",
+  "reading_guide": "START-HERE.md",
+  "main_chapter": "THEORY.md",
+  "claim_register": "CLAIMS.md",
+  "research_record": "RESEARCH-RECORD.md",
+  "formal_appendices": [
+    "scope-math.md",
+    "access-math.md"
+  ],
+  "verification": "release-checks.json",
+  "context_note": "Unmodified context snapshots retain links from their original source locations; the new authored documents use package-relative links."
+}
