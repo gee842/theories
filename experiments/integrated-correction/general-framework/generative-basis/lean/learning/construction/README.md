@@ -25,14 +25,15 @@ Both mapping recipes are available from the same handoff state; neither construc
 
 This is a staged, finite material refinement. After handoff the old formation reaction repertoire is suspended; inherited site/resident/local-store fields remain inert. The bookkeeping denomination does not prove physical packetization or recover otherwise stranded source remainders. The two-part assembly recipes, their response wiring, the trial/retention transduction, and the phase boundary are supplied local laws. The construction pays for and restricts instances of a declared mechanism; it does not derive those laws from generic matter, construct an independently changing updater architecture, give stochastic selection probabilities, or establish inevitable adaptation or unlimited renewal. The witnessed event schedule is existential, not a controller policy theorem.
 
-The independent finite enumerations, when present, are bounded model checks rather than additional quantified Lean theorems. In particular, any reported named-word funding threshold grid should not be read as a separately formalized all-natural-number threshold.
+The [independent finite record](model-verification.json) passes 6,480 handoffs, the complete 194-state/510-edge operational graph from the main prepared state, six counterchecks and a 456-case stock grid. These model checks are separate from the quantified Lean theorems. In particular, the named-word funding threshold grid is not a separately formalized all-natural-number threshold.
 
 ## Verification
 
-Run from any working directory:
+Run from the repository root:
 
 ```sh
 python3 experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/check.py
+python3 experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/check_model.py
 ```
 
 The checker pins the toolchain, captures all imported source bytes, scans for forbidden declarations and proof shortcuts, recompiles into a fresh temporary directory, audits every new theorem, records compiler/source/checker/log hashes, and verifies that sources did not change during the build. [verification.json](verification.json) records results; [verification/ConstructedSelector.txt](verification/ConstructedSelector.txt) contains the new declaration audits. Generated compiler objects are not stored in the repository.
