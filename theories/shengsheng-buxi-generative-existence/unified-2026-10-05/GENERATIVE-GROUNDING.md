@@ -156,6 +156,23 @@ Organize each research round around one named missing connection: mechanism and 
 
 Integrate the round before selecting the next central connection. Record what becomes explained, what remains supplied, which result changes the account, and what the next stage can now use. Progress consists in replacing an unexplained premise with a checked mechanism without silently relocating that premise upstream. Reuse the existing study locations and results in the map below; preserve their failures, sources and scopes.
 
+### Current checkpoint and confidence
+
+6 October 2026. This is an AI-authored assessment of the present evidence, not a probability estimate for future discoveries. The [Lean core](GENERATIVE-CORE-LEAN.md) has completed one precise representation question: exact projected one-step possibilities are equivalent to exact finite histories and projected endpoints. Its 47 audited declarations include composition, a supported realization, resource limits and countermodels. Confidence in those stated formal results is strong within their explicit assumptions. They do not establish the empirical laws or completeness of the entire derivation.
+
+The next [analytical construction](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md) starts without a regulator and connects damage, paid formation, repair, fresh support capture and additional copying under one law. It derives a positive-loss finite-horizon copying advantage and an adverse source-depleted regime. This is consequence-coupled material reconstruction under a supplied chemistry and copying repertoire. The [internal review](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-REVIEW.md) accepts the analytical gain and shows why equally reproducing variants sharing fuel need not favor its useful contributor. Full executable and Lean validation remain pending; the first acceptance gate stays open. The [evidence audit](../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-EVIDENCE.md) supplies relevant comparisons, not empirical validation of this construction.
+
+| Next obligation | What would count as progress |
+|---|---|
+| Finish the regulation/retention connection | Check the proposed law, cost ledger, interventions and failure boundaries; establish what the results say about continuation separately from copy count. |
+| Explain learning and selector revision | Put actual alternative responses into the continuing resource history; derive which consequences affect their retention. Then explain changes to sensing, copying or evaluation when old signals become misleading. Shared support alone need not favor its useful contributor. |
+| Connect to concern and wisdom | Supply the signals, representations and transfer mechanisms assumed by the existing results, retaining other centers separately. Explain both widening and exclusion, including concern beyond private usefulness and the separate justification of reasons. |
+| Establish the claimed generality | Compose through actual successors, compare alternative accounts, and test explicit mappings in materially different systems throughout the work. |
+
+There are good grounds for confidence that more precise conditional results can be established: the interfaces support explicit constructions, counterexamples and checks. Confidence in a connected explanation through learning and concern remains provisional because these central transitions still require substantial work. Universal empirical adequacy and unique minimality remain open. An unconditional guarantee of favorable historical direction is not supported and is not required by the governing explanatory goal.
+
+Confidence should rise when an upstream result actually supplies a downstream premise, survives interventions, retains costs and conflicts through composition, and makes independently testable predictions. It should fall when success depends on a hidden reward, a favorable reset, an unexplained benevolent selector, or a purported learning effect fully accounted for by passive persistence or pre-existing selection. Completing the whole account means meeting the five completion conditions above; proof count, a finished archive, and a collection of separate successful examples are insufficient measures.
+
 ## The derivation and the existing work
 
 This map places the current contributions within the foundational goal. The links identify supporting studies, not completed proofs of the whole transition named in the first column.
