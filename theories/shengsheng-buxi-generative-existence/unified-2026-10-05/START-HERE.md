@@ -1,5 +1,7 @@
 # The unified foundation in brief
 
+**Acquired evaluation can realize justified repair.** The [new accepted connection](EVALUATIVE-GROUNDING.md) identifies when an initially absent evaluative link can mediate a warranted response to another being. Actual formation and paid action explain its effectiveness; independently defended responsibility and patient-related reasons justify its use. The same associative learning can later suppress that response without defeating the reason. This connects a constructive and a destructive path while retaining the distinction between learning a disposition and learning ethical validity.
+
 5 October 2026; current derivation and evidence synthesis updated 6 October 2026. The accepted results below retain their individual scopes; the finite evaluative-successor continuation is now independently accepted.
 
 **Our current goal is to find and formalize a minimal generative foundation with universal explanatory scope wherever systems form.** The [governing position and derivation map](GENERATIVE-GROUNDING.md) explains the intended progression: interacting differences form organizations; consequences become significant within regulation; learning changes responses and selection mechanisms; models discover shared dependencies and other centers; concern and wisdom develop through that process. These are transitions to derive, with their enabling conditions and failures made explicit.
