@@ -1,0 +1,909 @@
+{
+ "results_sha256": "616b08a575e70bb3cc2b2e8f9605f38226c471693b02cee086d49c873a632c52",
+ "passed_all": false,
+ "predictions": {
+  "P1_self_only": {
+   "value": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "passed": true
+  },
+  "P2_proxy_capture": {
+   "proxy_excess": {
+    "mean": 1.2495,
+    "min": 0.981,
+    "max": 1.7295
+   },
+   "access_excess": {
+    "mean": 0.1706,
+    "min": 0.0,
+    "max": 0.5175
+   },
+   "passed": false
+  },
+  "P3_access": {
+   "met": {
+    "mean": 0.9448,
+    "min": 0.9422,
+    "max": 0.9474
+   },
+   "excess": {
+    "mean": 0.1706,
+    "min": 0.0,
+    "max": 0.5175
+   },
+   "rule_met": {
+    "mean": 0.9449,
+    "min": 0.942,
+    "max": 0.95
+   },
+   "passed": false
+  },
+  "P4_generalization": {
+   "new_claimant": {
+    "mean": 0.9309,
+    "min": 0.8091,
+    "max": 0.9505
+   },
+   "large_claims": {
+    "mean": 0.93,
+    "min": 0.9212,
+    "max": 0.9341
+   },
+   "identity_only_large": {
+    "mean": 0.5277,
+    "min": 0.4546,
+    "max": 0.721
+   },
+   "passed": true
+  },
+  "P5_missing": {
+   "missing_excess": {
+    "mean": 0.5921,
+    "min": 0.29,
+    "max": 0.7865
+   },
+   "train_excess": {
+    "mean": 0.1706,
+    "min": 0.0,
+    "max": 0.5175
+   },
+   "passed": true
+  },
+  "P6_forged": {
+   "access_withheld_forged": {
+    "mean": 0.0809,
+    "min": 0.021,
+    "max": 0.1285
+   },
+   "access_withheld_train": {
+    "mean": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "proxy_excess_forged": {
+    "mean": 1.2351,
+    "min": 1.014,
+    "max": 1.704
+   },
+   "proxy_excess_train": {
+    "mean": 1.2495,
+    "min": 0.981,
+    "max": 1.7295
+   },
+   "passed": false
+  },
+  "P7_symmetric_tiebreak": {
+   "first_choice_A": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "swapped_first_choice_A": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "extreme_seeds": 10,
+   "passed": true
+  }
+ },
+ "table": {
+  "access": {
+   "forged_records": {
+    "met": {
+     "mean": 0.9266,
+     "min": 0.9157,
+     "max": 0.9387
+    },
+    "excess": {
+     "mean": 0.1744,
+     "min": 0.0,
+     "max": 0.515
+    },
+    "retained": {
+     "mean": 0.815,
+     "min": 0.4095,
+     "max": 1.045
+    },
+    "withheld_unmet": {
+     "mean": 0.0809,
+     "min": 0.021,
+     "max": 0.1285
+    }
+   },
+   "large_claims": {
+    "met": {
+     "mean": 0.93,
+     "min": 0.9212,
+     "max": 0.9341
+    },
+    "excess": {
+     "mean": 0.0146,
+     "min": 0.0,
+     "max": 0.0555
+    },
+    "retained": {
+     "mean": 0.3708,
+     "min": 0.3215,
+     "max": 0.4035
+    },
+    "withheld_unmet": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "missing_records": {
+    "met": {
+     "mean": 0.8671,
+     "min": 0.8364,
+     "max": 0.9349
+    },
+    "excess": {
+     "mean": 0.5921,
+     "min": 0.29,
+     "max": 0.7865
+    },
+    "retained": {
+     "mean": 0.4778,
+     "min": 0.3015,
+     "max": 0.681
+    },
+    "withheld_unmet": {
+     "mean": 0.0014,
+     "min": 0.0,
+     "max": 0.014
+    }
+   },
+   "new_claimant": {
+    "met": {
+     "mean": 0.9309,
+     "min": 0.8091,
+     "max": 0.9505
+    },
+    "excess": {
+     "mean": 0.3032,
+     "min": 0.0,
+     "max": 0.819
+    },
+    "retained": {
+     "mean": 0.6497,
+     "min": 0.313,
+     "max": 0.97
+    },
+    "withheld_unmet": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "scarce_symmetric": {
+    "met": {
+     "mean": 0.8998,
+     "min": 0.891,
+     "max": 0.9135
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "withheld_unmet": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "scarce_symmetric_swapped": {
+    "met": {
+     "mean": 0.9003,
+     "min": 0.888,
+     "max": 0.9095
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "withheld_unmet": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "train": {
+    "met": {
+     "mean": 0.9448,
+     "min": 0.9422,
+     "max": 0.9474
+    },
+    "excess": {
+     "mean": 0.1706,
+     "min": 0.0,
+     "max": 0.5175
+    },
+    "retained": {
+     "mean": 0.781,
+     "min": 0.3775,
+     "max": 0.9985
+    },
+    "withheld_unmet": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   }
+  },
+  "access_identity_only": {
+   "forged_records": {
+    "met": {
+     "mean": 0.4877,
+     "min": 0.3412,
+     "max": 0.6978
+    },
+    "excess": {
+     "mean": 0.5935,
+     "min": 0.2215,
+     "max": 0.8935
+    },
+    "retained": {
+     "mean": 1.3,
+     "min": 1.0,
+     "max": 2.0
+    },
+    "withheld_unmet": {
+     "mean": 1.7408,
+     "min": 1.013,
+     "max": 2.4915
+    }
+   },
+   "large_claims": {
+    "met": {
+     "mean": 0.5277,
+     "min": 0.4546,
+     "max": 0.721
+    },
+    "excess": {
+     "mean": 0.5877,
+     "min": 0.1955,
+     "max": 0.9855
+    },
+    "retained": {
+     "mean": 1.3,
+     "min": 1.0,
+     "max": 2.0
+    },
+    "withheld_unmet": {
+     "mean": 1.259,
+     "min": 0.792,
+     "max": 2.0
+    }
+   },
+   "missing_records": {
+    "met": {
+     "mean": 0.4875,
+     "min": 0.3459,
+     "max": 0.7072
+    },
+    "excess": {
+     "mean": 0.5928,
+     "min": 0.2305,
+     "max": 0.878
+    },
+    "retained": {
+     "mean": 1.3,
+     "min": 1.0,
+     "max": 2.0
+    },
+    "withheld_unmet": {
+     "mean": 1.7476,
+     "min": 1.001,
+     "max": 2.487
+    }
+   },
+   "new_claimant": {
+    "met": {
+     "mean": 0.5,
+     "min": 0.4724,
+     "max": 0.521
+    },
+    "excess": {
+     "mean": 1.2757,
+     "min": 0.8375,
+     "max": 1.729
+    },
+    "retained": {
+     "mean": 0.5,
+     "min": 0.0,
+     "max": 1.0
+    },
+    "withheld_unmet": {
+     "mean": 0.8527,
+     "min": 0.0,
+     "max": 1.658
+    }
+   },
+   "scarce_symmetric": {
+    "met": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 1.0,
+     "min": 1.0,
+     "max": 1.0
+    },
+    "withheld_unmet": {
+     "mean": 4.0,
+     "min": 4.0,
+     "max": 4.0
+    }
+   },
+   "scarce_symmetric_swapped": {
+    "met": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 1.0,
+     "min": 1.0,
+     "max": 1.0
+    },
+    "withheld_unmet": {
+     "mean": 4.0,
+     "min": 4.0,
+     "max": 4.0
+    }
+   },
+   "train": {
+    "met": {
+     "mean": 0.4857,
+     "min": 0.3432,
+     "max": 0.6978
+    },
+    "excess": {
+     "mean": 0.5867,
+     "min": 0.2115,
+     "max": 0.8755
+    },
+    "retained": {
+     "mean": 1.3,
+     "min": 1.0,
+     "max": 2.0
+    },
+    "withheld_unmet": {
+     "mean": 1.759,
+     "min": 1.005,
+     "max": 2.499
+    }
+   }
+  },
+  "proxy": {
+   "forged_records": {
+    "met": {
+     "mean": 0.7562,
+     "min": 0.5122,
+     "max": 0.8812
+    },
+    "excess": {
+     "mean": 1.2351,
+     "min": 1.014,
+     "max": 1.704
+    },
+    "retained": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "withheld_unmet": {
+     "mean": 0.5501,
+     "min": 0.0,
+     "max": 0.9455
+    }
+   },
+   "large_claims": {
+    "met": {
+     "mean": 0.8033,
+     "min": 0.5014,
+     "max": 0.92
+    },
+    "excess": {
+     "mean": 0.7971,
+     "min": 0.398,
+     "max": 1.855
+    },
+    "retained": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "withheld_unmet": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "missing_records": {
+    "met": {
+     "mean": 0.7085,
+     "min": 0.5258,
+     "max": 0.9069
+    },
+    "excess": {
+     "mean": 1.3368,
+     "min": 0.949,
+     "max": 1.724
+    },
+    "retained": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "withheld_unmet": {
+     "mean": 0.4806,
+     "min": 0.014,
+     "max": 0.935
+    }
+   },
+   "new_claimant": {
+    "met": {
+     "mean": 0.7223,
+     "min": 0.5157,
+     "max": 0.9369
+    },
+    "excess": {
+     "mean": 1.2946,
+     "min": 0.9,
+     "max": 1.7165
+    },
+    "retained": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "withheld_unmet": {
+     "mean": 0.6752,
+     "min": 0.0,
+     "max": 0.9415
+    }
+   },
+   "scarce_symmetric": {
+    "met": {
+     "mean": 0.8998,
+     "min": 0.891,
+     "max": 0.9135
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "withheld_unmet": {
+     "mean": 2.1,
+     "min": 2.0,
+     "max": 3.0
+    }
+   },
+   "scarce_symmetric_swapped": {
+    "met": {
+     "mean": 0.9003,
+     "min": 0.888,
+     "max": 0.9095
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "withheld_unmet": {
+     "mean": 2.1,
+     "min": 2.0,
+     "max": 3.0
+    }
+   },
+   "train": {
+    "met": {
+     "mean": 0.7486,
+     "min": 0.5035,
+     "max": 0.8937
+    },
+    "excess": {
+     "mean": 1.2495,
+     "min": 0.981,
+     "max": 1.7295
+    },
+    "retained": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "withheld_unmet": {
+     "mean": 0.5292,
+     "min": 0.0,
+     "max": 0.9415
+    }
+   }
+  },
+  "record_rule": {
+   "forged_records": {
+    "met": {
+     "mean": 0.9224,
+     "min": 0.9123,
+     "max": 0.9313
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 1.0146,
+     "min": 0.984,
+     "max": 1.045
+    },
+    "withheld_unmet": {
+     "mean": 0.1065,
+     "min": 0.076,
+     "max": 0.1285
+    }
+   },
+   "large_claims": {
+    "met": {
+     "mean": 0.9299,
+     "min": 0.9212,
+     "max": 0.9341
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 0.3874,
+     "min": 0.372,
+     "max": 0.4075
+    },
+    "withheld_unmet": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "missing_records": {
+    "met": {
+     "mean": 0.925,
+     "min": 0.9198,
+     "max": 0.9321
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 1.016,
+     "min": 0.995,
+     "max": 1.038
+    },
+    "withheld_unmet": {
+     "mean": 0.1066,
+     "min": 0.098,
+     "max": 0.1155
+    }
+   },
+   "new_claimant": {
+    "met": {
+     "mean": 0.9442,
+     "min": 0.94,
+     "max": 0.9505
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 0.9573,
+     "min": 0.937,
+     "max": 0.9805
+    },
+    "withheld_unmet": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "scarce_symmetric": {
+    "met": {
+     "mean": 0.8998,
+     "min": 0.891,
+     "max": 0.9135
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "withheld_unmet": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "scarce_symmetric_swapped": {
+    "met": {
+     "mean": 0.9003,
+     "min": 0.888,
+     "max": 0.9095
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "withheld_unmet": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   },
+   "train": {
+    "met": {
+     "mean": 0.9449,
+     "min": 0.942,
+     "max": 0.95
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 0.9667,
+     "min": 0.9115,
+     "max": 0.9985
+    },
+    "withheld_unmet": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    }
+   }
+  },
+  "self": {
+   "forged_records": {
+    "met": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 3.0,
+     "min": 3.0,
+     "max": 3.0
+    },
+    "withheld_unmet": {
+     "mean": 3.7468,
+     "min": 3.718,
+     "max": 3.782
+    }
+   },
+   "large_claims": {
+    "met": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 4.0,
+     "min": 4.0,
+     "max": 4.0
+    },
+    "withheld_unmet": {
+     "mean": 4.0,
+     "min": 4.0,
+     "max": 4.0
+    }
+   },
+   "missing_records": {
+    "met": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 3.0,
+     "min": 3.0,
+     "max": 3.0
+    },
+    "withheld_unmet": {
+     "mean": 3.7482,
+     "min": 3.724,
+     "max": 3.764
+    }
+   },
+   "new_claimant": {
+    "met": {
+     "mean": 0.154,
+     "min": 0.0,
+     "max": 0.519
+    },
+    "excess": {
+     "mean": 0.509,
+     "min": 0.0,
+     "max": 1.729
+    },
+    "retained": {
+     "mean": 2.1,
+     "min": 0.0,
+     "max": 3.0
+    },
+    "withheld_unmet": {
+     "mean": 2.6216,
+     "min": 0.0,
+     "max": 3.786
+    }
+   },
+   "scarce_symmetric": {
+    "met": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 1.0,
+     "min": 1.0,
+     "max": 1.0
+    },
+    "withheld_unmet": {
+     "mean": 4.0,
+     "min": 4.0,
+     "max": 4.0
+    }
+   },
+   "scarce_symmetric_swapped": {
+    "met": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 1.0,
+     "min": 1.0,
+     "max": 1.0
+    },
+    "withheld_unmet": {
+     "mean": 4.0,
+     "min": 4.0,
+     "max": 4.0
+    }
+   },
+   "train": {
+    "met": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "excess": {
+     "mean": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "retained": {
+     "mean": 3.0,
+     "min": 3.0,
+     "max": 3.0
+    },
+    "withheld_unmet": {
+     "mean": 3.7518,
+     "min": 3.734,
+     "max": 3.77
+    }
+   }
+  }
+ }
+}
