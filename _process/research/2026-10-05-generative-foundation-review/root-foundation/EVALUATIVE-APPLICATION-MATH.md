@@ -414,3 +414,26 @@ For a warranted **revised** choice, repeat the argument with sound new evidence 
 ### What the wisdom attribution adds
 
 Bounded practical wisdom adds warranted attention to **whether and how** a reason currently applies, competing claims, uncertainty and executable response; it need not relearn every ethical standard. Ground-, authority- or priority-revision can support broader claims, but requires its own justification and causal evidence. The accepted mechanisms support specified factual correction, selective reason revision, resource-sensitive feasibility and finite continuation. Their fixed two-probe schedule does not establish selection of proportionate inquiry, optimal stopping or permission for every information-gathering act. Nor does finite succession establish sustainable support. These broader claims require the corresponding comparisons and histories; they are not new mandatory gates for the bounded proposition. This synthesis adds no controller, scientific run or formal theorem.
+
+## 12. Accepted historical provenance behind application evidence
+
+Section 10's source-inspection checkpoint now has a precise proof-level upgrade. [APPLICATION-EVIDENCE-MATH](APPLICATION-EVIDENCE-MATH.md) and the [independent review](APPLICATION-EVIDENCE-REVIEW.md) record acceptance of **24 new declaration audits, 746 total across 30 modules**, with separate author and independent fresh compilations. Earlier checkpoint data and scopes remain unchanged. This addition interprets that accepted result; it performs no new compilation or simulation.
+
+In [ApplicationEvidence.lean][application-evidence-source], `ReceiptOnlyEntrance` supplies an actual fixed-law producer history beginning ready with an empty bank, followed by an initialized paid reader/reason history over **that same resulting archive**. Its endpoint has a current supported non-root command. `entrance_has_receipt_with_prior_delivery` then derives:
+
+\[
+\text{supported paid publication}
+\Longrightarrow \text{accessible present positive frame at index }i
+\Longrightarrow \text{actual acquisition of that same }(i,r)
+\Longrightarrow \text{earlier recipient credit }+10.
+\]
+
+`AcquiredAfterDelivery` locates the credited work in **the identified acquisition's own prefix**, retaining its bound header, before/after states and suffix. Ready initialization excludes a preloaded positive worked phase; an unrelated later delivery cannot substitute. The proof also retains the consumer ledger: final energy plus actual reading/reasoning charges equals initial fuel plus reserve. It needs neither an ethical root `G` nor a chosen-action premise. Semantic assurance alone would not establish this historical origin.
+
+Generic currentness remains relative to the reader's supplied initialized context. The entrance does not equate that parameter with the terminal producer world's context or add a global freshness, recipient-identity or episode sensor. The actual successor instance uses its matching fresh bank. `actual_publication_has_prior_paid_delivery` and `actual_credit_precedes_selected_use` join the accepted second query, its positive frame and the 24-unit consumer: recipient60 becomes70 before selected use; the consumption endpoint retains actor10 and one source packet. The later action remains physically feasible.
+
+`EpisodeBound` separately binds actual work positions and states to a predeclared recipient/service episode. `ServiceMeaning` separately interprets its credited work as `Met`. Only with those premises does `current_command_implies_interpreted_service_met` apply. Adding the soundness condition `Pending → ¬Met` yields `no_sound_pending_one_service_entrance`. This excludes the proposed pending comparator **for that fixed qualifying claim and entrance class**; it does not exclude distinct episodes, other grounds or warranted continuing support.
+
+The upgrade proves historical receipt provenance, not an ethical ground, a welfare measurement or a policy that uses completion to withdraw a recommendation. Historical service can remain completed even if future efficacy changes. The source hash matches the accepted review; no source, price, controller or earlier result was altered here.
+
+[application-evidence-source]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/ApplicationEvidence.lean
