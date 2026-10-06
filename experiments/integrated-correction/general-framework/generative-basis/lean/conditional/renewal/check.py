@@ -28,6 +28,7 @@ SOURCES = {
     "RenewalSufficiency": ROOT / "RenewalSufficiency.lean",
     "RenewalLink": ROOT / "RenewalLink.lean",
     "RenewalCharacterization": ROOT / "RenewalCharacterization.lean",
+    "RenewalConfigurations": ROOT / "RenewalConfigurations.lean",
 }
 INHERITED_SHA256 = {
     "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
@@ -35,7 +36,7 @@ INHERITED_SHA256 = {
     "SupportNecessity": "d55d4e960e7d95f0c17e8f915b5b46b85c9c04fbf34c036b17c725cf98b66aa0",
 }
 NEW = ["RenewalClosure", "RenewalAccounting", "RenewalSufficiency", "RenewalLink",
-       "RenewalCharacterization"]
+       "RenewalCharacterization", "RenewalConfigurations"]
 ALLOWED_AXIOMS = {"propext", "Quot.sound"}
 
 
@@ -132,8 +133,11 @@ def main():
                  "tick and opens over its spans at least what forming it demands, otherwise "
                  "every execution stops being live by an explicit time; the same holds for "
                  "keeping a live token of designated kinds, such as means of correction, "
-                 "exactly when some self-renewing population contains one. No physical "
-                 "identification or ethical appraisal is asserted.",
+                 "exactly when some self-renewing population contains one; for whole "
+                 "configurations, renewability is never gained along a history without "
+                 "import, a seeded configuration with enough reserve reaches a standing "
+                 "renewal, and renewability is not a function of the reserve and kinds "
+                 "present. No physical identification or ethical appraisal is asserted.",
     }
     (ROOT / "verification.json").write_text(json.dumps(record, indent=2) + "\n")
     print(json.dumps({"status": record["status"], "modules": len(results),
