@@ -1,0 +1,90 @@
+{
+  "checked_at_utc": "2026-10-06T20:02:25.579246+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "checker_sha256": "5f0c79f1d26888cf138747c88018b10ded002d133f091743ed78abb59ef4b145",
+  "source_unchanged_during_check": true,
+  "fresh_temporary_build": true,
+  "allowed_standard_axioms": [
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "../../GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "exit_code": 0,
+      "new": false,
+      "dependency_audits": 18,
+      "axioms": [],
+      "empty_axiom_audits": 18,
+      "clean": true,
+      "output": "verification/GenerativeCore.txt",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "Depletion",
+      "source": "../../Depletion.lean",
+      "source_sha256": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e",
+      "exit_code": 0,
+      "new": false,
+      "dependency_audits": 5,
+      "axioms": [],
+      "empty_axiom_audits": 5,
+      "clean": true,
+      "output": "verification/Depletion.txt",
+      "output_sha256": "2e14c5291bcd4c020c329f10cf29d7771d129d2758b87d960c03e56adab84679"
+    },
+    {
+      "module": "SupportNecessity",
+      "source": "../SupportNecessity.lean",
+      "source_sha256": "d55d4e960e7d95f0c17e8f915b5b46b85c9c04fbf34c036b17c725cf98b66aa0",
+      "exit_code": 0,
+      "new": false,
+      "dependency_audits": 18,
+      "axioms": [],
+      "empty_axiom_audits": 18,
+      "clean": true,
+      "output": "verification/SupportNecessity.txt",
+      "output_sha256": "9f58bc308816d98a048c83c743d2088b1906f575d6b7ccfdb578f595111fdae7"
+    },
+    {
+      "module": "RenewalClosure",
+      "source": "RenewalClosure.lean",
+      "source_sha256": "8dc5a36fce1fd59edfff80602f35200455a57cc988dabdf0c14dbf46e32cfd8f",
+      "exit_code": 0,
+      "new": true,
+      "dependency_audits": 20,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 7,
+      "clean": true,
+      "output": "verification/RenewalClosure.txt",
+      "output_sha256": "0feba101e9b7e40b961fbd6eb1bc95515d9b96ada51bab4e0d52dec419ba12dc"
+    },
+    {
+      "module": "RenewalAccounting",
+      "source": "RenewalAccounting.lean",
+      "source_sha256": "b593f8c58d7a302506deff75f36fe01ca53db7df59d701ee509f31d7585e0927",
+      "exit_code": 0,
+      "new": true,
+      "dependency_audits": 12,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "empty_axiom_audits": 1,
+      "clean": true,
+      "output": "verification/RenewalAccounting.txt",
+      "output_sha256": "7a1d725b1e122aee3377480c6490098fb122f02d6c088d6c83eed6561b980cd0"
+    }
+  ],
+  "new_audited_declarations": 32,
+  "new_empty_axiom_audits": 8,
+  "scope": "Conditional statements over supplied kinds, support edges, spans, formation demands and arrival rates: late occurrence descends from a realized closure of kinds; acyclic support has a deadline without a supplied rank; when every kind brings in less than its formation demands, a combined potential strictly decreases on every live tick, so renewal ends by an explicit deadline. No sufficiency, physical identification, or ethical appraisal is asserted."
+}
