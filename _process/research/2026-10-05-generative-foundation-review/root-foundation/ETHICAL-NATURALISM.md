@@ -160,6 +160,20 @@ Ren 于同日要求：不许有假设，不许有公理；每个输入要么在 
 - 没改变：哪一种评价关系在某段历史中实际形成，并没有被证明；也没有证明它必须是延续条件序。首版的反例（阻止、承诺、恢复、逃离）和范围问题都仍然有效，因为它们讨论的是记录所用的关系 `E` 本身。
 - 下一步因此是一元的：在同一过程中研究评价关系怎样形成、怎样经后果被修正，以及哪些形成方式能维持其自身被修正的条件。这把伦理自然主义问题接到估值发展和选择者修订的主线，而不是另起一个"道德层"。
 
+## 10. 哪一种评价会延续：接到估值发展的更新–闭合定理
+
+第9节把取向问题改写为"哪一种评价关系在展开中形成并延续"。延续这一半，估值发展研究已在同一更新过程上回答（[§17–18](VALUATION-DEVELOPMENT-ARGUMENT.md#18-no-supplied-inputs-valuations-decide-what-the-process-forms)）：估值决定过程形成哪些种类；某个估值能让一个种类永远延续，当且仅当存在包含它的自我更新群体。这里不重做，只把它读到评价种类上。[`persistence/EvaluationPersistence.lean`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/persistence/EvaluationPersistence.lean) 有 3 条结果：
+
+- **评价延续，当且仅当它属于自我更新的群体**（`evaluation_persists_iff_member`）。
+- **这样的群体生成自身后续形成的条件。** 它对支持封闭：包括评价在内的每个成员，在群体内都有一个能撑过一个时刻的支持者；全体成员打开的量不少于形成它们所需（`persisting_evaluation_renews_its_conditions`）。评价只能连同它自身后续形成的条件一起延续，而且这些条件由它所在的整体形成。
+- **只看重评价自身不够**：在 `lapsingCorrection` 中，无论怎样看重纠正种类，都没有估值能让它延续（`correction_cannot_persist_by_valuing_itself`）。
+
+**意义。** 在同一过程内，延续下来的评价恰好是那些属于"生成其自身后续实现条件的整体"的评价。这与本理论的候选（整体展开生成其后续条件）在延续层面相合，而且不需要从过程外部输入"应当"。
+
+**未证。** 这没有证明延续下来的评价按延续条件序记录，也没有证明"延续"就是善的尺度；前者是下一步要接的形式问题，后者若作为前提引入，就要按第8节的规则证明其必要。
+
+**公理（未能消除，提交 Ren 判断）。** 这3条结果依赖 `propext` 与 `Quot.sound`。它们全部来自所引用的估值研究模块（那里经 `simp` 和 `omega` 引入），本模块自身没有引入。要消除，需要改写估值研究和更新包中的相关证明；那属于那些线程的源码，估值线程已把它列为全项目层面的选择。因此这部分单独放在 `persistence/` 子目录，用单独的检查脚本，不混入前面全部无公理的包。
+
 ## 形式索引
 
 `WholeQualityNaturalism.lean`：`supervenes_factors`、`Covaries`、`covaries_of_supervenes`、`chain_congr`、`base_defined_supervenes`、`supervenes_of_finer`、`Run`、`Along`、`along_iff_steps`、`along_iff_chain`、`along_supervenes_on_states`、`along_append`、`along_mono`、`chain_map`、`along_continuation_transport`、`preserved_throughout`、`witness_refutes_preservation`、`loss_localizes`、`loss_localizes_nn`、`located_loss_breaks_quality`、`quality_not_fixed_by_endpoints_and_word`、`quality_not_supervenient_on_word`、`availability_not_fixed_by_endpoints_and_word`。

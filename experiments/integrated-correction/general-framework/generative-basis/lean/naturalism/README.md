@@ -33,6 +33,8 @@
 
 **`EmbeddedEvaluation.lean`: evaluation as a relation inside the same process.** Rather than relating a "moral property" to a "natural base", evaluation is a record carried in the state and changed only by the process's own transitions. The record equals the whole-history relation of the same history (`record_tracks_whole_history`), so supervenience and identity are derived. Recording shares the process's continuation (`recording_enabled_iff`, `recording_feasible_iff`, `guided_recording_keeps_continuation`). The same law admits recordings in both orientations (`law_admits_opposite_recordings`): which evaluation forms is a question about formation within the history.
 
+**`persistence/EvaluationPersistence.lean` (separate check): which evaluation persists.** Reads the valuation study's `valuation_keeping_theorem` for an evaluating kind: some valuation keeps it alive forever exactly when it belongs to a self-renewing population, which is closed under support and opens what it demands (`evaluation_persists_iff_member`, `persisting_evaluation_renews_its_conditions`); valuing the correction kind of `lapsingCorrection` does not keep it. These 3 results inherit `propext` and `Quot.sound` from the imported valuation and renewal modules, so they are kept apart from the axiom-free package, with their own `check.py` and receipt.
+
 ## What is not proved
 
 That moral properties supervene or explain observations; the premise itself and the choice of the whole scope; property identity beyond necessary coextension; a principled derivation of the protected scope of activities; any verdict when every option removes something. Processes, scopes and rankings are supplied inputs. Nothing here says which history occurs or that any orientation is good.

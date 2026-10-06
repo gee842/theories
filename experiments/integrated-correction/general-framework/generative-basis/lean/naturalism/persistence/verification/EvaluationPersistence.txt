@@ -1,0 +1,3 @@
+'Generative.Naturalism.Persistence.evaluation_persists_iff_member' depends on axioms: [propext, Quot.sound]
+'Generative.Naturalism.Persistence.persisting_evaluation_renews_its_conditions' depends on axioms: [propext, Quot.sound]
+'Generative.Naturalism.Persistence.correction_cannot_persist_by_valuing_itself' depends on axioms: [propext, Quot.sound]
