@@ -13,9 +13,17 @@ decision rule were described, not built.
 This module builds them. The revising port's state is the extended port together
 with what it retains: the last recorded pair of arrivals. Its events are the
 port's own activity (native calls and recovery), which leave the retained
-reading alone, and encounters. An encounter meets the present contact, acts on
-the retained reading (forming the contact when neither output last arrived),
-then runs the native inquiry and retains what it records.
+reading alone, and encounters. An encounter takes the port's own contact
+coordinate, acts on the retained reading (forming the contact when neither
+output last arrived), then runs the native inquiry and retains what it records.
+
+No split between an organization and a world is assumed. The valuation
+package's "presented condition" is here the port's own contact coordinate, its
+consequence law is native execution, and its retained condition is one more
+coordinate of the same state. What sets the reading apart from the rest of the
+state is only a relation inside the process: activity steps keep it and only
+encounters change it (`reading_changes_only_at_encounters`), just as the contact
+changes only through formation.
 
 Proved here:
 
@@ -63,16 +71,16 @@ open FormationClosure FormationLaw AcquiredContact ValuationDevelopment PortValu
 
 /-- The consequence of acting `a` toward contact `x`: what an inquiry then records.
 Forming opens the contact; not forming leaves it. -/
-def actingWorld : World (Bool × Bool) Bool (Bool × Bool) :=
+def actingConsequence : World (Bool × Bool) Bool (Bool × Bool) :=
   fun x a => profile x.1 (x.2 && !a)
 
 /-- The retained reading: none before any encounter. -/
 abbrev Memory := Option (Bool × Bool)
 
-abbrev Agent := Port × Memory
+abbrev Revising := Port × Memory
 
-/-- The port's own activity, or an encounter with a presented contact. -/
-abbrev AgentEvent := Sum (Sum NativePacketProcess.Command Unit) (Bool × Bool)
+/-- The port's own activity, or an encounter with the contact it finds in its own state. -/
+abbrev RevisingEvent := Sum (Sum NativePacketProcess.Command Unit) (Bool × Bool)
 
 /-- What the act does: form the contact, or leave the port as it is. -/
 def acted : Bool → Port → Port → Prop
@@ -81,11 +89,11 @@ def acted : Bool → Port → Port → Prop
 
 /-- The revising port. Activity keeps the retained reading. An encounter meets the
 present contact, acts on the retained reading, inquires, and retains the record. -/
-def agent : Process Agent AgentEvent where
+def revising : Process Revising RevisingEvent where
   step a e b := match e with
     | .inl event => activity.step a.1 event b.1 ∧ b.2 = a.2
-    | .inr presented => contact a.1 = presented ∧
-        ∃ z, acted (portOrg.select a.2 presented) a.1 z ∧
+    | .inr found => contact a.1 = found ∧
+        ∃ z, acted (portOrg.select a.2 found) a.1 z ∧
           ∃ q : Inquiry z.native, b.1 = ⟨q.s5, z.spare, z.recovered⟩ ∧
             b.2 = some (q.reading.arrived0, q.reading.arrived1)
 
@@ -121,16 +129,16 @@ theorem acted_effects {b : Bool} {x z : Port} (act : acted b x z) :
     cases x.native.blocked <;> exact ⟨rfl, rfl⟩
 
 /-- Every step of the revising port keeps the reset intact or broken as it was. -/
-theorem step_retains_broken {a b : Agent} {e : AgentEvent} (step : agent.step a e b) :
+theorem step_retains_broken {a b : Revising} {e : RevisingEvent} (step : revising.step a e b) :
     b.1.native.broken = a.1.native.broken := by
   cases e with
   | inl event => exact activity_retains_broken step.1
-  | inr presented =>
+  | inr found =>
     obtain ⟨_, z, act, q, reached, _⟩ := step
     rw [reached]
     exact (inquiry_retains_broken q).trans (acted_effects act).1
 
-theorem trace_retains_broken {a b : Agent} {es : List AgentEvent} (trace : Trace agent a es b) :
+theorem trace_retains_broken {a b : Revising} {es : List RevisingEvent} (trace : Trace revising a es b) :
     b.1.native.broken = a.1.native.broken := by
   induction trace with
   | nil => rfl
@@ -140,10 +148,10 @@ theorem trace_retains_broken {a b : Agent} {es : List AgentEvent} (trace : Trace
 
 /-- An encounter records the profile of the contact its own act leaves, and that
 contact is what the port carries on with. The consequence law is derived. -/
-theorem encounter_effects {a b : Agent} {presented : Bool × Bool}
-    (step : agent.step a (.inr presented) b) (intact : a.1.native.broken = false) :
-    b.2 = portOrg.next actingWorld a.2 presented ∧
-      contact b.1 = (presented.1, presented.2 && !portOrg.select a.2 presented) := by
+theorem encounter_effects {a b : Revising} {found : Bool × Bool}
+    (step : revising.step a (.inr found) b) (intact : a.1.native.broken = false) :
+    b.2 = portOrg.next actingConsequence a.2 found ∧
+      contact b.1 = (found.1, found.2 && !portOrg.select a.2 found) := by
   obtain ⟨met, z, act, q, reached, retained⟩ := step
   subst met
   obtain ⟨broken, shape⟩ := acted_effects act
@@ -164,16 +172,16 @@ theorem encounter_effects {a b : Agent} {presented : Bool × Bool}
 /-! ## Whole histories -/
 
 /-- The contacts met, in order. -/
-def encounters : List AgentEvent → List (Bool × Bool)
+def encounters : List RevisingEvent → List (Bool × Bool)
   | [] => []
   | .inl _ :: rest => encounters rest
-  | .inr presented :: rest => presented :: encounters rest
+  | .inr found :: rest => found :: encounters rest
 
 /-- What the revising port retains is exactly the valuation organization's run
 over the contacts it met. -/
-theorem memory_is_org_run {a b : Agent} {es : List AgentEvent} (trace : Trace agent a es b)
+theorem memory_is_org_run {a b : Revising} {es : List RevisingEvent} (trace : Trace revising a es b)
     (intact : a.1.native.broken = false) :
-    b.2 = portOrg.run actingWorld a.2 (encounters es) := by
+    b.2 = portOrg.run actingConsequence a.2 (encounters es) := by
   induction trace with
   | nil => rfl
   | @cons a m b e rest step _ ih =>
@@ -182,16 +190,27 @@ theorem memory_is_org_run {a b : Agent} {es : List AgentEvent} (trace : Trace ag
     | inl event =>
       rw [ih intactM, step.2]
       rfl
-    | inr presented =>
+    | inr found =>
       rw [ih intactM, (encounter_effects step intact).1]
       rfl
 
 /-- The same history is a core trace of the valuation organization. -/
-theorem memory_trace {a b : Agent} {es : List AgentEvent} (trace : Trace agent a es b)
+theorem memory_trace {a b : Revising} {es : List RevisingEvent} (trace : Trace revising a es b)
     (intact : a.1.native.broken = false) :
-    Trace (ValuationInCore.orgProcess portOrg actingWorld) a.2 (encounters es) b.2 :=
-  (ValuationInCore.trace_iff_run portOrg actingWorld _ _ _).mpr
+    Trace (ValuationInCore.orgProcess portOrg actingConsequence) a.2 (encounters es) b.2 :=
+  (ValuationInCore.trace_iff_run portOrg actingConsequence _ _ _).mpr
     (memory_is_org_run trace intact).symm
+
+/-- The reading is set apart only by which steps change it: histories without
+an encounter keep it. -/
+theorem reading_changes_only_at_encounters {a b : Revising} {es : List RevisingEvent}
+    (trace : Trace revising a es b) (none : encounters es = []) : b.2 = a.2 := by
+  induction trace with
+  | nil => rfl
+  | @cons a m b e rest step _ ih =>
+    cases e with
+    | inl event => exact (ih none).trans step.2
+    | inr found => cases (show found :: encounters rest = [] from none)
 
 /-- The act an encounter performs, as extended-port events. -/
 def actEvents : Bool → List Event
@@ -199,12 +218,12 @@ def actEvents : Bool → List Event
   | false => []
 
 /-- The extended-port events a history performs, threading the retained reading. -/
-def expand : Memory → List AgentEvent → List Event
+def expand : Memory → List RevisingEvent → List Event
   | _, [] => []
   | m, .inl event :: rest => .inl event :: expand m rest
-  | m, .inr presented :: rest =>
-    actEvents (portOrg.select m presented) ++ nativeRun inquiryCommands ++
-      expand (portOrg.next actingWorld m presented) rest
+  | m, .inr found :: rest =>
+    actEvents (portOrg.select m found) ++ nativeRun inquiryCommands ++
+      expand (portOrg.next actingConsequence m found) rest
 
 theorem act_trace {b : Bool} {x z : Port} (act : acted b x z) :
     Trace FormationClosure.process x (actEvents b) z := by
@@ -228,7 +247,7 @@ theorem inquiry_port_trace (z : Port) (q : Inquiry z.native) :
     (.cons (lift_native z q.step4) (.cons (lift_native z q.step5) (.nil _)))))
 
 /-- Every history of the revising port is an actual history of the extended port. -/
-theorem port_trace {a b : Agent} {es : List AgentEvent} (trace : Trace agent a es b)
+theorem port_trace {a b : Revising} {es : List RevisingEvent} (trace : Trace revising a es b)
     (intact : a.1.native.broken = false) :
     Trace FormationClosure.process a.1 (expand a.2 es) b.1 := by
   induction trace with
@@ -241,7 +260,7 @@ theorem port_trace {a b : Agent} {es : List AgentEvent} (trace : Trace agent a e
       have tail := ih intactM
       rw [kept] at tail
       exact .cons step.1 tail
-    | inr presented =>
+    | inr found =>
       have memory := (encounter_effects step intact).1
       obtain ⟨_, z, act, q, reached, _⟩ := step
       have tail := ih intactM
@@ -251,12 +270,12 @@ theorem port_trace {a b : Agent} {es : List AgentEvent} (trace : Trace agent a e
         inquiry_port_trace z q⟩, tail⟩
 
 /-- How many encounters selected formation. -/
-def selections : Memory → List AgentEvent → Nat
+def selections : Memory → List RevisingEvent → Nat
   | _, [] => 0
   | m, .inl _ :: rest => selections m rest
-  | m, .inr presented :: rest =>
-    (match portOrg.select m presented with | true => 1 | false => 0) +
-      selections (portOrg.next actingWorld m presented) rest
+  | m, .inr found :: rest =>
+    (match portOrg.select m found with | true => 1 | false => 0) +
+      selections (portOrg.next actingConsequence m found) rest
 
 theorem formations_append (xs ys : List Event) :
     formations (xs ++ ys) = formations xs + formations ys := by
@@ -272,25 +291,25 @@ theorem formations_append (xs ys : List Event) :
 theorem inquiry_forms_nothing : formations (nativeRun inquiryCommands) = 0 := rfl
 
 /-- The port's formations are exactly the organization's selections to form. -/
-theorem formations_are_selections (m : Memory) (es : List AgentEvent) :
+theorem formations_are_selections (m : Memory) (es : List RevisingEvent) :
     formations (expand m es) = selections m es := by
   induction es generalizing m with
   | nil => rfl
   | cons e rest ih =>
     cases e with
     | inl event => exact ih m
-    | inr presented =>
-      show formations (actEvents (portOrg.select m presented) ++ nativeRun inquiryCommands ++
-        expand (portOrg.next actingWorld m presented) rest) = _
+    | inr found =>
+      show formations (actEvents (portOrg.select m found) ++ nativeRun inquiryCommands ++
+        expand (portOrg.next actingConsequence m found) rest) = _
       rw [formations_append, formations_append, inquiry_forms_nothing, Nat.add_zero,
-        ih (portOrg.next actingWorld m presented)]
-      show _ = (match portOrg.select m presented with | true => 1 | false => 0) +
-        selections (portOrg.next actingWorld m presented) rest
-      cases portOrg.select m presented <;> rfl
+        ih (portOrg.next actingConsequence m found)]
+      show _ = (match portOrg.select m found with | true => 1 | false => 0) +
+        selections (portOrg.next actingConsequence m found) rest
+      cases portOrg.select m found <;> rfl
 
 /-- The contact class changes only through the organization's own selection. -/
-theorem class_change_requires_selection {a b : Agent} {es : List AgentEvent}
-    (trace : Trace agent a es b) (intact : a.1.native.broken = false)
+theorem class_change_requires_selection {a b : Revising} {es : List RevisingEvent}
+    (trace : Trace revising a es b) (intact : a.1.native.broken = false)
     (changed : targetOf b.1.native.tau b.1.native.blocked =
       targetOf a.1.native.tau a.1.native.blocked → False) :
     1 ≤ selections a.2 es := by
@@ -300,42 +319,42 @@ theorem class_change_requires_selection {a b : Agent} {es : List AgentEvent}
 /-! ## The disposition after the contact has been met -/
 
 /-- The retained reading is the profile of the present contact. -/
-def Accurate (a : Agent) : Prop := a.2 = some (profile a.1.native.tau a.1.native.blocked)
+def Accurate (a : Revising) : Prop := a.2 = some (profile a.1.native.tau a.1.native.blocked)
 
-theorem accurate_selects_blocked {a : Agent} (accurate : Accurate a) (x : Bool × Bool) :
+theorem accurate_selects_blocked {a : Revising} (accurate : Accurate a) (x : Bool × Bool) :
     portOrg.select a.2 x = a.1.native.blocked := by
   unfold Accurate at accurate
   rw [accurate]
   cases a.1.native.tau <;> cases a.1.native.blocked <;> rfl
 
 /-- After any encounter the retained reading is accurate. -/
-theorem encounter_accurate {a b : Agent} {presented : Bool × Bool}
-    (step : agent.step a (.inr presented) b) (intact : a.1.native.broken = false) :
+theorem encounter_accurate {a b : Revising} {found : Bool × Bool}
+    (step : revising.step a (.inr found) b) (intact : a.1.native.broken = false) :
     Accurate b := by
   obtain ⟨memory, shape⟩ := encounter_effects step intact
   unfold Accurate
   rw [memory]
-  show some (profile presented.1 (presented.2 && !portOrg.select a.2 presented)) = _
-  rw [show b.1.native.tau = presented.1 from congrArg Prod.fst shape,
+  show some (profile found.1 (found.2 && !portOrg.select a.2 found)) = _
+  rw [show b.1.native.tau = found.1 from congrArg Prod.fst shape,
     show b.1.native.blocked = _ from congrArg Prod.snd shape]
 
 /-- Activity keeps the retained reading accurate: it changes neither the reading
 nor the contact. -/
-theorem activity_keeps_accurate {a b : Agent} {event : Sum NativePacketProcess.Command Unit}
-    (step : agent.step a (.inl event) b) (accurate : Accurate a) : Accurate b := by
+theorem activity_keeps_accurate {a b : Revising} {event : Sum NativePacketProcess.Command Unit}
+    (step : revising.step a (.inl event) b) (accurate : Accurate a) : Accurate b := by
   have same := activity_retains_contact a.1 event b.1 step.1
   unfold Accurate
   rw [step.2, accurate]
   show some (profile (contact a.1).1 (contact a.1).2) = some (profile (contact b.1).1 (contact b.1).2)
   rw [same]
 
-theorem step_keeps_accurate {a b : Agent} {e : AgentEvent} (step : agent.step a e b)
+theorem step_keeps_accurate {a b : Revising} {e : RevisingEvent} (step : revising.step a e b)
     (intact : a.1.native.broken = false) (accurate : Accurate a) : Accurate b := by
   cases e with
   | inl event => exact activity_keeps_accurate step accurate
-  | inr presented => exact encounter_accurate step intact
+  | inr found => exact encounter_accurate step intact
 
-theorem trace_keeps_accurate {a b : Agent} {es : List AgentEvent} (trace : Trace agent a es b)
+theorem trace_keeps_accurate {a b : Revising} {es : List RevisingEvent} (trace : Trace revising a es b)
     (intact : a.1.native.broken = false) (accurate : Accurate a) : Accurate b := by
   induction trace with
   | nil => exact accurate
@@ -345,8 +364,8 @@ theorem trace_keeps_accurate {a b : Agent} {es : List AgentEvent} (trace : Trace
 /-- Once the contact has been met, through any later activity and encounters,
 the disposition forms exactly when the present contact is blocked: never
 redundantly and never too late. -/
-theorem met_selects_blocked {a m b : Agent} {presented : Bool × Bool} {es : List AgentEvent}
-    (first : agent.step a (.inr presented) m) (later : Trace agent m es b)
+theorem met_selects_blocked {a m b : Revising} {found : Bool × Bool} {es : List RevisingEvent}
+    (first : revising.step a (.inr found) m) (later : Trace revising m es b)
     (intact : a.1.native.broken = false) (x : Bool × Bool) :
     portOrg.select b.2 x = b.1.native.blocked :=
   accurate_selects_blocked (trace_keeps_accurate later ((step_retains_broken first).trans intact)
@@ -401,34 +420,34 @@ theorem actPort_sound {b : Bool} {x z : Port} (ran : actPort b x = some z) : act
     cases ran
     rfl
 
-def encounterPort (z : Port) : Option Agent :=
+def encounterPort (z : Port) : Option Revising :=
   match inquire z.native with
   | some q => some (⟨q.s5, z.spare, z.recovered⟩, some (q.reading.arrived0, q.reading.arrived1))
   | none => none
 
 /-- Keep the retained reading through a completed port event. -/
-def keep (a : Agent) : Option Port → Option Agent
+def keep (a : Revising) : Option Port → Option Revising
   | some y => some (y, a.2)
   | none => none
 
 /-- Inquire after a completed act. -/
-def afterAct : Option Port → Option Agent
+def afterAct : Option Port → Option Revising
   | some z => encounterPort z
   | none => none
 
-def runAgentEvent (a : Agent) : AgentEvent → Option Agent
+def runRevisingEvent (a : Revising) : RevisingEvent → Option Revising
   | .inl event => keep a (runEvent a.1 (.inl event))
-  | .inr presented =>
-    if contact a.1 = presented then afterAct (actPort (portOrg.select a.2 presented) a.1)
+  | .inr found =>
+    if contact a.1 = found then afterAct (actPort (portOrg.select a.2 found) a.1)
     else none
 
-def runAgent (a : Agent) : List AgentEvent → Option Agent
+def runRevising (a : Revising) : List RevisingEvent → Option Revising
   | [] => some a
-  | e :: rest => match runAgentEvent a e with
-    | some b => runAgent b rest
+  | e :: rest => match runRevisingEvent a e with
+    | some b => runRevising b rest
     | none => none
 
-theorem encounterPort_sound {z : Port} {b : Agent} (ran : encounterPort z = some b) :
+theorem encounterPort_sound {z : Port} {b : Revising} (ran : encounterPort z = some b) :
     ∃ q : Inquiry z.native, b.1 = ⟨q.s5, z.spare, z.recovered⟩ ∧
       b.2 = some (q.reading.arrived0, q.reading.arrived1) := by
   unfold encounterPort at ran
@@ -438,7 +457,7 @@ theorem encounterPort_sound {z : Port} {b : Agent} (ran : encounterPort z = some
     exact ⟨q, rfl, rfl⟩
   next => cases ran
 
-theorem keep_some {a b : Agent} {result : Option Port} (ran : keep a result = some b) :
+theorem keep_some {a b : Revising} {result : Option Port} (ran : keep a result = some b) :
     result = some b.1 ∧ b.2 = a.2 := by
   cases result with
   | some y =>
@@ -446,45 +465,45 @@ theorem keep_some {a b : Agent} {result : Option Port} (ran : keep a result = so
     exact ⟨rfl, rfl⟩
   | none => cases ran
 
-theorem afterAct_some {result : Option Port} {b : Agent} (ran : afterAct result = some b) :
+theorem afterAct_some {result : Option Port} {b : Revising} (ran : afterAct result = some b) :
     ∃ z, result = some z ∧ encounterPort z = some b := by
   cases result with
   | some z => exact ⟨z, rfl, ran⟩
   | none => cases ran
 
-theorem runAgentEvent_sound {a b : Agent} {e : AgentEvent} (ran : runAgentEvent a e = some b) :
-    agent.step a e b := by
+theorem runAgentEvent_sound {a b : Revising} {e : RevisingEvent} (ran : runRevisingEvent a e = some b) :
+    revising.step a e b := by
   cases e with
   | inl event =>
     obtain ⟨completed, kept⟩ := keep_some ran
     exact ⟨runEvent_sound completed, kept⟩
-  | inr presented =>
-    change (if contact a.1 = presented then afterAct (actPort (portOrg.select a.2 presented) a.1)
+  | inr found =>
+    change (if contact a.1 = found then afterAct (actPort (portOrg.select a.2 found) a.1)
       else none) = some b at ran
-    by_cases met : contact a.1 = presented
+    by_cases met : contact a.1 = found
     · rw [if_pos met] at ran
       obtain ⟨z, acting, inquired⟩ := afterAct_some ran
       exact ⟨met, z, actPort_sound acting, encounterPort_sound inquired⟩
     · rw [if_neg met] at ran
       cases ran
 
-theorem runAgent_sound {a b : Agent} {es : List AgentEvent} (ran : runAgent a es = some b) :
-    Trace agent a es b := by
+theorem runAgent_sound {a b : Revising} {es : List RevisingEvent} (ran : runRevising a es = some b) :
+    Trace revising a es b := by
   induction es generalizing a with
   | nil =>
     cases ran
     exact .nil _
   | cons e rest ih =>
-    unfold runAgent at ran
+    unfold runRevising at ran
     split at ran
     next m stepped => exact .cons (runAgentEvent_sound stepped) (ih ran)
     next => cases ran
 
-def recoverA : AgentEvent := .inl (.inr ())
-def meet (presented : Bool × Bool) : AgentEvent := .inr presented
+def recoverR : RevisingEvent := .inl (.inr ())
+def meet (found : Bool × Bool) : RevisingEvent := .inr found
 
 /-- Meet the blocked contact, recover the waste of that encounter, meet it again. -/
-def revisingHistory : List AgentEvent := [meet (true, true), recoverA, meet (true, true)]
+def revisingHistory : List RevisingEvent := [meet (true, true), recoverR, meet (true, true)]
 
 /-- From a blocked class-C port with no spares and nothing retained: the first
 encounter does not form (nothing is retained yet) and records no arrival;
@@ -492,8 +511,8 @@ recovery turns that waste into a pair; the second encounter forms on the port's
 own reading and records one arrival. The port ends in class B with ten units
 transferred, its reading accurate, and its disposition no longer forming. -/
 theorem revising_loop :
-    ∃ b, runAgent (acquiredStart, none) revisingHistory = some b ∧
-      Trace agent (acquiredStart, none) revisingHistory b ∧
+    ∃ b, runRevising (acquiredStart, none) revisingHistory = some b ∧
+      Trace revising (acquiredStart, none) revisingHistory b ∧
       targetOf acquiredStart.native.tau acquiredStart.native.blocked = .C ∧
       targetOf b.1.native.tau b.1.native.blocked = .B ∧
       b.2 = some (true, false) ∧ portOrg.select b.2 (contact b.1) = false ∧
@@ -576,9 +595,9 @@ theorem broken_reset_cannot_decide (f : Reading → Bool) :
 
 end Generative.InquirySufficiency.RevisingPort
 
-#print axioms Generative.InquirySufficiency.RevisingPort.actingWorld
+#print axioms Generative.InquirySufficiency.RevisingPort.actingConsequence
 #print axioms Generative.InquirySufficiency.RevisingPort.acted
-#print axioms Generative.InquirySufficiency.RevisingPort.agent
+#print axioms Generative.InquirySufficiency.RevisingPort.revising
 #print axioms Generative.InquirySufficiency.RevisingPort.inquiry_retains_broken
 #print axioms Generative.InquirySufficiency.RevisingPort.activity_retains_broken
 #print axioms Generative.InquirySufficiency.RevisingPort.acted_effects
@@ -616,8 +635,8 @@ end Generative.InquirySufficiency.RevisingPort
 #print axioms Generative.InquirySufficiency.RevisingPort.encounterPort
 #print axioms Generative.InquirySufficiency.RevisingPort.keep
 #print axioms Generative.InquirySufficiency.RevisingPort.afterAct
-#print axioms Generative.InquirySufficiency.RevisingPort.runAgentEvent
-#print axioms Generative.InquirySufficiency.RevisingPort.runAgent
+#print axioms Generative.InquirySufficiency.RevisingPort.runRevisingEvent
+#print axioms Generative.InquirySufficiency.RevisingPort.runRevising
 #print axioms Generative.InquirySufficiency.RevisingPort.encounterPort_sound
 #print axioms Generative.InquirySufficiency.RevisingPort.keep_some
 #print axioms Generative.InquirySufficiency.RevisingPort.afterAct_some
@@ -634,3 +653,4 @@ end Generative.InquirySufficiency.RevisingPort
 #print axioms Generative.InquirySufficiency.RevisingPort.brokenInquiry
 #print axioms Generative.InquirySufficiency.RevisingPort.broken_readings_agree
 #print axioms Generative.InquirySufficiency.RevisingPort.broken_reset_cannot_decide
+#print axioms Generative.InquirySufficiency.RevisingPort.reading_changes_only_at_encounters

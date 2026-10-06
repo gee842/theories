@@ -1,0 +1,10 @@
+'Generative.Conditional.Renewal.mem_aged' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.mem_formed' depends on axioms: [propext]
+'Generative.Conditional.Renewal.token_origin' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.live_has_alive_token' does not depend on any axioms
+'Generative.Conditional.Renewal.alive_token_recent_formation' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.live_late_has_recent_formation' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.live_late_descends_from_realized_closure' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.find_or_none' depends on axioms: [propext]
+'Generative.Conditional.Renewal.endless_renewal_needs_closure_and_adequate_kind' depends on axioms: [propext,
+ Quot.sound]
