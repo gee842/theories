@@ -1,0 +1,35 @@
+import ValuationDevelopment
+open ValuationDevelopment
+#print axioms same_retained_same_valuation
+#print axioms priority_change_needs_retained_difference
+#print axioms no_retention_no_history
+#print axioms trace_changes_choice_not_valuation
+#print axioms agree_on_encountered
+#print axioms extensions_agree_on_self_training
+#print axioms extensions_agree_on_any_self_history
+#print axioms extensions_diverge_on_other
+#print axioms prediction_valuation_tradeoff
+#print axioms same_prediction_different_choice
+#print axioms same_valuation_different_choice
+#print axioms coupled_signal_bounded
+#print axioms proxy_capture
+#print axioms coupled_recovery
+#print axioms coupled_without_variation_depletes
+#print axioms shared_exposure_contracts
+#print axioms shared_exposure_converges
+#print axioms shared_exposure_equalizes
+#print axioms multistable_divergence
+#print axioms multistable_divergence_forever
+#print axioms positional_divergence
+#print axioms halving_nonexpanding_on_sample
+#print axioms rounding_breaks_contraction
+#print axioms rounding_gap_forever
+#print axioms fixed_selectivity_no_history
+#print axioms habituation_history_dependent
+#print axioms habituation_not_consequence_dependent
+#print axioms stale_anticipation
+#print axioms stale_anticipation_not_history_dependent
+#print axioms retained_model_goes_stale
+#print axioms revised_model_recovers
+#print axioms reinforcer_consequence_dependent
+#print axioms reinforcer_history_dependent

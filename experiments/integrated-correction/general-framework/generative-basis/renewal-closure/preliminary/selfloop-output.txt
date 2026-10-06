@@ -1,0 +1,10 @@
+a=1 l=3 m=5  a*l < m  (persists_within_horizon, cap_hit) by R0: {0: (False, False), 1: (False, False), 5: (False, False), 15: (False, False)}
+a=1 l=3 m=4  a*l < m  (persists_within_horizon, cap_hit) by R0: {0: (False, False), 1: (False, False), 4: (False, False), 12: (False, False)}
+a=1 l=3 m=3  a*l = m  (persists_within_horizon, cap_hit) by R0: {0: (False, False), 1: (True, False), 3: (True, False), 9: (True, False)}
+a=1 l=3 m=2  a*l > m  (persists_within_horizon, cap_hit) by R0: {0: (True, True), 1: (True, True), 2: (True, True), 6: (True, True)}
+a=2 l=3 m=7  a*l < m  (persists_within_horizon, cap_hit) by R0: {0: (False, False), 2: (False, False), 7: (False, False), 21: (False, False)}
+a=2 l=3 m=6  a*l = m  (persists_within_horizon, cap_hit) by R0: {0: (False, False), 2: (True, False), 6: (True, False), 18: (True, False)}
+a=1 l=1 m=1  a*l = m  (persists_within_horizon, cap_hit) by R0: {0: (False, False), 1: (False, False), 3: (False, False)}
+a=1 l=1 m=2  a*l < m  (persists_within_horizon, cap_hit) by R0: {0: (False, False), 1: (False, False), 2: (False, False), 6: (False, False)}
+a=3 l=2 m=7  a*l < m  (persists_within_horizon, cap_hit) by R0: {0: (False, False), 3: (False, False), 7: (False, False), 21: (False, False)}
+a=3 l=2 m=6  a*l = m  (persists_within_horizon, cap_hit) by R0: {0: (False, False), 3: (True, False), 6: (True, False), 18: (True, False)}
