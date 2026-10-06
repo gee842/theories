@@ -20,6 +20,8 @@
   condition `m`. It is not a claim about experience or ethical warrant.
 -/
 
+import AxiomFree
+
 namespace ValuationDevelopment
 
 structure Org (M X A C : Type) where
