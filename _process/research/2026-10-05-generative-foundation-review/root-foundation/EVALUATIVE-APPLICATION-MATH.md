@@ -344,3 +344,36 @@ This audit read preserved proofs and results and confirmed all ten source hashes
 [correction-formal]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/formal/ReasonProtection.lean
 [correction-model]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/model.py
 [correction-results]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/model-verification.json
+
+## 10. A retained fulfillment-evidence source in first succession outcomes
+
+**First producer outcomes; independent acceptance pending.** The [succession source][succession-model] and [saved results][succession-results] now exhibit a specific paid child continuation. This section maps that preserved output without promoting producer checks into independent validation. Read-only SHA-256 inspection matched the requested source bytes:
+
+- `model.py`: `cf7afad69d8c48f428a8a94d3cf7eb7cb713ab6c72fda6ab39b2668c98dab184`.
+- `results.json.gz`: `d91c4f20b3783fdbd41eb5d7f9c40d4750e832654b983ee4b05093bb359d31ed`.
+
+The exact row is `cases.changed.arms.shared.producers.variable.paths[11]`, predecessor `signals_111/shared/variable/11`, original reference `primary/variable/11/37`, mass9/128. Its 58 saved events contain:
+
+| Zero-based event | Reached content |
+|---|---|
+| 0, actual donor | Recipient60, q0/qualification1, acquired n7/count3/closed; donor actor/source both0. |
+| 10, `handoff.write_unknown` | A distinct constructed child receives actual q0 with qualification0; the donor is retired. |
+| 18, `probe0.write` | Command0 received zero; the child explores q2/qualification0, preserving the historical actor bit. Recipient remains60. |
+| 23–30, second probe and frame writes | Command1 delivers10, making recipient70. Paid acquisition exposes `True`; the bound writer latches it before RI clearing, then completes four cells `[1,1,1,1]`. Child q2 is qualified. |
+| 47–49, publication and evaluation | Paid reading publishes command1 support matching q2. Read/write through accessible retained n7 leaves actor8/source10 and an assessed-help port. |
+| 54–56, selected work and settlement | Command1 delivers10, making recipient80. Acquisition/write settle escrow and consume the assessment; the child returns ready with actor/source0. |
+
+Here q packs the actor bit below the recipient bit: q2 means historical actor0/recipient1. The first zero drives exploration; it does not soundly identify the opposite efficacy law, because outage can also produce zero. The second positive receipt supports the command only under the declared faithful-channel, destination and observation-to-use conditions.
+
+The four retained cells encode **bank context, issued action, evidence presence and actual receipt**. Query1 is preassigned before its outcome. `bank.prebind_query1` pays one and reserves four; `bank.latch_actual_acquisition` reads `physical.acquired_record` at event25 before event26 clears it. Events27–30 spend that escrow writing the actual cells. The locked bank is then read for14 units and its reasons reconstructed for10. Reader cache `[None,True,None]` supports publication mask `[True,False,True]`; the supplied root/relevance premises remain separate. This evidence has a paid causal route beyond the transient receipt, unlike an analyst merely observing recipient70.
+
+The new child neither copies n into another numeric store nor repeats native lessons. Its adapter accesses the donor's retained six-cell support. Copying q costs2, retirement prevents donor execution, and paid reader rebinding clears old active publication. Child scope, permission and delivery combine inherited guards with a supplied child binding/grant. Actual actor26 pays probes16, evaluation2 and selected trial8; writer5 and reader24 are separately funded. With assemblies9 and copying2, service expenditure is66; the failed first packet loses10. These provisions were isolated at the enlarged original start, not a donor fuel reset.
+
+For this exact row, shared and identity-gated saved prefixes0–48 are identical, through evaluation reading. The gated write instead assesses abstention and ends recipient70/actor8/source10; both routes performed the same inquiry. The conventional row matches the shared row entirely. `outcomes`, observer efficacy laws, catalogs and reporting metrics do not provide application knowledge to the chooser; its support checks use the live bank/reader, command and n access. Recipient balance is physical, but no need assessment follows from inspecting it externally.
+
+The minimal remaining fulfillment bridge can therefore concern **interpretation and causally operative application use of an existing retained frame**, rather than necessarily new receipt storage. A sound positive frame, binding and independently fixed one-service/episode rule may certify some qualifying delivery. It proves neither the earliest delivery nor continuing unmet need. Bank epoch is not automatically an ethical episode, and qualifying prior/probe receipts cannot be excluded retrospectively. For an actually reached publication with established producing provenance, the positive-only decoder can make current support evidence of that positive query1 event. A justified compiled application dependency could then avoid another read or register; this does not change the publication's narrower compatibility meaning or establish that the policy uses it as fulfillment evidence. No implemented branch yet withdraws a recommendation because the admitted service was fulfilled. No ethical permission, new need or additional warranted benefit is established by the later increment. No producer/checker run, build or new apparatus was added here.
+
+At this source-inspected scope, the implication is also an obstruction: an actually reached, assessable current command requires a freshly completed publication; that publication requires the complete current query1 frame with presence and receipt both positive. Under faithful acquisition/provenance and a fixed claim whose episode and service predicate qualify that delivery, current support therefore entails \(\operatorname{Met}\). This class contains no sound current-command-plus-pending entrance at the selected-use boundary. A manufactured pending bit cannot be its counterfactual control. This is a conditional reading of the source, not a new formal theorem or a restriction on independently justified claims with different content.
+
+[succession-model]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/model.py
+[succession-results]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/results.json.gz
