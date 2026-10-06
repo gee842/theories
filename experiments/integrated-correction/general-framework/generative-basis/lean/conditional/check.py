@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent
 MODULES = ["GenerativeCore", "ResourceContinuation", "RenewalExamples", "SupportNecessity"]
 SOURCES = {name: (ROOT.parent if name == "GenerativeCore" else ROOT) /
            (name + ".lean") for name in MODULES}
-ALLOWED_AXIOMS = {"propext", "Quot.sound"}
+ALLOWED_AXIOMS = set()  # every audit must be empty (Ren, 6 October 2026: no axioms)
 
 
 def digest(data):

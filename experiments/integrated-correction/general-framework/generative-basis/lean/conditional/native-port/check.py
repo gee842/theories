@@ -2,7 +2,7 @@
 """Fresh build of the native-port continuation module from frozen source bytes.
 
 Inherited modules must keep the source hashes recorded by their own receipts.
-New declarations may use only Lean's standard propext and Quot.sound.
+New declarations must have empty axiom reports.
 Uses `lean +<toolchain>` through elan when available, else `lean` on PATH;
 either way the reported version must be 4.29.1.
 """
@@ -31,7 +31,7 @@ INHERITED_SHA256 = {
     "NativePacketProcess": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633",
 }
 NEW = "NativePortContinuation"
-ALLOWED_AXIOMS = {"propext", "Quot.sound"}
+ALLOWED_AXIOMS = set()  # every audit must be empty (Ren, 6 October 2026: no axioms)
 
 
 def digest(data):

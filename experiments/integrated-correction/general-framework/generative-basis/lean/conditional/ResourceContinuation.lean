@@ -48,6 +48,34 @@ theorem sustain_law_pullback {Other : Type w} (Q : Process Other Action)
 /-- Counts an event in which something arrived once, whatever the amount. -/
 def arrivalEvent (amount : Nat) : Nat := if amount = 0 then 0 else 1
 
+/-- Constructive left cancellation; the library version depends on `propext`. -/
+theorem le_cancel_left {a b c : Nat} (h : a + b ≤ a + c) : b ≤ c := by
+  induction a with
+  | zero => rw [Nat.zero_add, Nat.zero_add] at h; exact h
+  | succ a ih =>
+    rw [Nat.succ_add, Nat.succ_add] at h
+    exact ih (Nat.le_of_succ_le_succ h)
+
+/-- One sustained step composed with a sustained remainder. -/
+theorem step_then_rest {e E ht hm hs r R : Nat}
+    (edge : hm + e ≤ hs + r) (rest : E + ht ≤ hm + R) :
+    (e + E) + ht ≤ hs + (r + R) :=
+  calc (e + E) + ht = e + (E + ht) := Nat.add_assoc e E ht
+    _ ≤ e + (hm + R) := Nat.add_le_add_left rest e
+    _ = (hm + e) + R := by rw [Nat.add_comm hm e, Nat.add_assoc]
+    _ ≤ (hs + r) + R := Nat.add_le_add_right edge R
+    _ = hs + (r + R) := Nat.add_assoc hs r R
+
+/-- A sustained prefix followed by one sustained step. -/
+theorem rest_then_step {T e h' hm hs R r : Nat}
+    (rest : T + hm ≤ hs + R) (edge : h' + e ≤ hm + r) :
+    (T + e) + h' ≤ hs + (R + r) :=
+  calc (T + e) + h' = T + (h' + e) := by rw [Nat.add_assoc, Nat.add_comm e h']
+    _ ≤ T + (hm + r) := Nat.add_le_add_left edge T
+    _ = (T + hm) + r := (Nat.add_assoc T hm r).symm
+    _ ≤ (hs + R) + r := Nat.add_le_add_right rest r
+    _ = hs + (R + r) := Nat.add_assoc hs R r
+
 /-- Enacted and arrived totals follow the actual intermediate states of a trace. They are
     not calculated from its event word without those states. -/
 inductive SupportTrace (P : Process State Action)
@@ -119,10 +147,8 @@ theorem support_trace_bound (held : State → Nat)
     (h : SupportTrace P enacted arrived s as t enactedTotal arrivedTotal count) :
     enactedTotal + held t ≤ held s + arrivedTotal := by
   induction h with
-  | nil s => simp
-  | cons hs _ ih =>
-    have edge := law _ _ _ hs
-    omega
+  | nil s => rw [Nat.zero_add, Nat.add_zero]; exact Nat.le_refl _
+  | cons hs _ ih => exact step_then_rest (law _ _ _ hs) ih
 
 /-- Around a closed state cycle, what arrived covers what was enacted. -/
 theorem support_cycle_arrival_covers_enactment (held : State → Nat)
@@ -132,7 +158,8 @@ theorem support_cycle_arrival_covers_enactment (held : State → Nat)
     (h : SupportTrace P enacted arrived s as s enactedTotal arrivedTotal count) :
     enactedTotal ≤ arrivedTotal := by
   have hb := support_trace_bound held law h
-  omega
+  rw [Nat.add_comm enactedTotal] at hb
+  exact le_cancel_left hb
 
 theorem support_trace_unit_enactment
     {enacted arrived : State → Action → State → Nat}
@@ -141,17 +168,18 @@ theorem support_trace_unit_enactment
     (h : SupportTrace P enacted arrived s as t enactedTotal arrivedTotal count) :
     as.length ≤ enactedTotal := by
   induction h with
-  | nil s => simp
+  | nil s => exact Nat.zero_le _
   | cons hs _ ih =>
-    have edge := unit _ _ _ hs
-    simp only [List.length_cons]
-    omega
+    show _ + 1 ≤ _
+    rw [Nat.add_comm]
+    exact Nat.add_le_add (unit _ _ _ hs) ih
 
 theorem amount_le_cap_times_arrival_events {amount cap : Nat} (h : amount ≤ cap) :
     amount ≤ cap * arrivalEvent amount := by
-  by_cases hz : amount = 0
-  · simp [arrivalEvent, hz]
-  · simpa [arrivalEvent, hz] using h
+  unfold arrivalEvent
+  cases Nat.decEq amount 0 with
+  | isTrue hz => rw [if_pos hz, hz]; exact Nat.zero_le _
+  | isFalse hz => rw [if_neg hz, Nat.mul_one]; exact h
 
 theorem support_trace_arrival_cap
     {enacted arrived : State → Action → State → Nat} (cap : Nat)
@@ -160,11 +188,10 @@ theorem support_trace_arrival_cap
     (h : SupportTrace P enacted arrived s as t enactedTotal arrivedTotal count) :
     arrivedTotal ≤ cap * count := by
   induction h with
-  | nil s => simp
+  | nil s => exact Nat.zero_le _
   | cons hs _ ih =>
-    have edge := amount_le_cap_times_arrival_events (bounded _ _ _ hs)
     rw [Nat.mul_add]
-    omega
+    exact Nat.add_le_add (amount_le_cap_times_arrival_events (bounded _ _ _ hs)) ih
 
 /-- The frequency bound applies only when every event enacts a positive discrete
     amount AND the amount arriving in any one event is bounded. -/
@@ -175,11 +202,10 @@ theorem support_trace_length_bound (held : State → Nat)
     (cap : Nat) (bounded : ∀ s a t, P.step s a t → arrived s a t ≤ cap)
     {s t : State} {as : List Action} {enactedTotal arrivedTotal count : Nat}
     (h : SupportTrace P enacted arrived s as t enactedTotal arrivedTotal count) :
-    as.length + held t ≤ held s + cap * count := by
-  have hb := support_trace_bound held law h
-  have hd := support_trace_unit_enactment unit h
-  have hc := support_trace_arrival_cap cap bounded h
-  omega
+    as.length + held t ≤ held s + cap * count :=
+  Nat.le_trans (Nat.add_le_add_right (support_trace_unit_enactment unit h) _)
+    (Nat.le_trans (support_trace_bound held law h)
+      (Nat.add_le_add_left (support_trace_arrival_cap cap bounded h) _))
 
 /-- Total of a quantity over a finite interval of event indices. -/
 def intervalTotal (quantity : Nat → Nat) (start : Nat) : Nat → Nat
@@ -190,46 +216,42 @@ theorem interval_total_positive_witness {quantity : Nat → Nat} {start length :
     (positive : 0 < intervalTotal quantity start length) :
     ∃ offset, offset < length ∧ 0 < quantity (start + offset) := by
   induction length with
-  | zero => simp [intervalTotal] at positive
+  | zero => exact absurd positive (Nat.lt_irrefl 0)
   | succ length ih =>
-    by_cases last : 0 < quantity (start + length)
-    · exact ⟨length, Nat.lt_succ_self length, last⟩
-    · have prior : 0 < intervalTotal quantity start length := by
-        simp only [intervalTotal] at positive
-        omega
+    cases Nat.decEq (quantity (start + length)) 0 with
+    | isFalse last => exact ⟨length, Nat.lt_succ_self length, Nat.pos_of_ne_zero last⟩
+    | isTrue last =>
+      have prior : 0 < intervalTotal quantity start length := by
+        have p : 0 < intervalTotal quantity start length + quantity (start + length) := positive
+        rw [last, Nat.add_zero] at p
+        exact p
       obtain ⟨offset, bound, hp⟩ := ih prior
-      exact ⟨offset, by omega, hp⟩
+      exact ⟨offset, Nat.lt_succ_of_lt bound, hp⟩
 
 theorem interval_total_le_of_pointwise {left right : Nat → Nat}
     (bound : ∀ n, left n ≤ right n) (start length : Nat) :
     intervalTotal left start length ≤ intervalTotal right start length := by
   induction length with
-  | zero => simp [intervalTotal]
-  | succ n ih =>
-    have point := bound (start + n)
-    simp only [intervalTotal]
-    omega
+  | zero => exact Nat.le_refl 0
+  | succ n ih => exact Nat.add_le_add ih (bound (start + n))
 
 theorem interval_total_unit_bound {quantity : Nat → Nat}
     (unit : ∀ n, 1 ≤ quantity n) (start length : Nat) :
     length ≤ intervalTotal quantity start length := by
   induction length with
-  | zero => simp [intervalTotal]
-  | succ n ih =>
-    have point := unit (start + n)
-    simp only [intervalTotal]
-    omega
+  | zero => exact Nat.le_refl 0
+  | succ n ih => exact Nat.add_le_add ih (unit (start + n))
 
 theorem interval_total_cap_bound {quantity : Nat → Nat} (cap : Nat)
     (bound : ∀ n, quantity n ≤ cap) (start length : Nat) :
     intervalTotal quantity start length ≤
       cap * intervalTotal (fun n => arrivalEvent (quantity n)) start length := by
   induction length with
-  | zero => simp [intervalTotal]
+  | zero => exact Nat.zero_le _
   | succ n ih =>
-    have point := amount_le_cap_times_arrival_events (bound (start + n))
-    simp only [intervalTotal, Nat.mul_add]
-    omega
+    show _ + _ ≤ cap * (_ + _)
+    rw [Nat.mul_add]
+    exact Nat.add_le_add ih (amount_le_cap_times_arrival_events (bound (start + n)))
 
 /-- All suffixes preserve the actual state history; nothing is reset. -/
 theorem execution_interval_bound (held : State → Nat)
@@ -242,11 +264,10 @@ theorem execution_interval_bound (held : State → Nat)
       held (states (start + length)) ≤ held (states start) +
       intervalTotal (fun n => arrived (states n) (actions n) (states (n + 1))) start length := by
   induction length with
-  | zero => simp [intervalTotal]
-  | succ n ih =>
-    have edge := law _ _ _ (steps (start + n))
-    simp only [intervalTotal, Nat.add_assoc] at *
-    omega
+  | zero =>
+    show 0 + held (states (start + 0)) ≤ held (states start) + 0
+    rw [Nat.zero_add, Nat.add_zero]; exact Nat.le_refl _
+  | succ n ih => exact rest_then_step ih (law _ _ _ (steps (start + n)))
 
 /-- No aggregation of incomparable supports is required: the bound holds for
     each declared supporting quantity independently. -/
@@ -278,7 +299,11 @@ theorem unbounded_enactment_requires_unbounded_arrival (held : State → Nat)
   intro bound
   obtain ⟨length, hd⟩ := unbounded (held (states 0) + bound)
   have hb := execution_interval_bound held law states actions steps 0 length
-  exact ⟨length, by omega⟩
+  refine ⟨length, ?_⟩
+  have h1 : held (states 0) + bound <
+      held (states 0) + intervalTotal (fun n => arrived (states n) (actions n) (states (n + 1))) 0 length :=
+    Nat.lt_of_lt_of_le hd (Nat.le_trans (Nat.le_add_right _ _) hb)
+  exact Nat.lt_of_add_lt_add_left h1
 
 /-- When every event enacts at least one unit, something must arrive in each
     suffix no later than what it inherited as held would be exhausted. This gives an explicit
@@ -297,10 +322,14 @@ theorem infinite_unit_execution_arrival_window (held : State → Nat)
   have hd := interval_total_unit_bound (fun n => unit _ _ _ (steps n)) start length
   have positive : 0 < intervalTotal
       (fun n => arrived (states n) (actions n) (states (n + 1))) start length := by
-    dsimp [length] at *
-    omega
+    -- held(start) + 1 ≤ enacted total + final held ≤ held(start) + arrived total
+    have h1 : held (states start) + 1 ≤ held (states start) + intervalTotal
+        (fun n => arrived (states n) (actions n) (states (n + 1))) start length :=
+      Nat.le_trans (Nat.le_trans hd (Nat.le_add_right _ _)) hb
+    exact le_cancel_left h1
   obtain ⟨offset, ho, hc⟩ := interval_total_positive_witness positive
-  exact ⟨start + offset, by omega, by dsimp [length] at ho; omega, hc⟩
+  exact ⟨start + offset, Nat.le_add_right _ _,
+    Nat.add_le_add_left (Nat.le_of_lt_succ ho) _, hc⟩
 
 theorem infinite_unit_execution_unbounded_arrival (held : State → Nat)
     {enacted arrived : State → Action → State → Nat}
@@ -312,9 +341,7 @@ theorem infinite_unit_execution_unbounded_arrival (held : State → Nat)
       intervalTotal (fun n => arrived (states n) (actions n) (states (n + 1))) 0 length := by
   apply unbounded_enactment_requires_unbounded_arrival held law states actions steps
   intro bound
-  refine ⟨bound + 1, ?_⟩
-  have hd := interval_total_unit_bound (fun n => unit _ _ _ (steps n)) 0 (bound + 1)
-  omega
+  exact ⟨bound + 1, interval_total_unit_bound (fun n => unit _ _ _ (steps n)) 0 (bound + 1)⟩
 
 theorem execution_interval_frequency_bound (held : State → Nat)
     {enacted arrived : State → Action → State → Nat}
@@ -330,8 +357,12 @@ theorem execution_interval_frequency_bound (held : State → Nat)
   have hb := execution_interval_bound held law states actions steps start length
   have hd := interval_total_unit_bound (fun n => unit _ _ _ (steps n)) start length
   have hc := interval_total_cap_bound cap (fun n => bounded _ _ _ (steps n)) start length
-  omega
+  exact Nat.le_trans (Nat.add_le_add_right hd _)
+    (Nat.le_trans hb (Nat.add_le_add_left hc _))
 
+#print axioms le_cancel_left
+#print axioms step_then_rest
+#print axioms rest_then_step
 #print axioms support_trace_is_trace
 #print axioms sustain_law_pullback
 #print axioms trace_has_support_totals

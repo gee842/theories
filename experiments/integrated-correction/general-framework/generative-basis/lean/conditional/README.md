@@ -115,14 +115,18 @@ python3 check.py
 
 The checker pins Lean `4.29.1`, freezes all source bytes, rebuilds the inherited
 core and the new modules in a fresh temporary directory, rejects proof holes and
-custom axiom declarations, and audits every newly declared theorem. It accepts
-only the standard dependencies `propext` and `Quot.sound`; some declarations have
-empty axiom dependencies. This is not an axiom-free foundational claim.
+custom axiom declarations, and audits every newly declared theorem. Every audit
+must be empty: no Lean axiom, including `propext` and `Quot.sound`, is accepted.
+Lean's own logic remains a framework presupposition.
 
-The recorded check passed all four modules: 18 inherited core audits and **60
-new theorem audits** (21 sustaining-law, 21 realization/boundary, 18 support).
-Of the new audits, 34 have empty axiom dependencies; the remaining 26 depend
-only on the allowed standard axioms.
+The recorded check passed all four modules: 18 inherited core audits and **63
+new theorem audits** (24 sustaining-law, 21 realization/boundary, 18 support),
+all empty. Until 6 October 2026, 26 of them depended on `propext` and
+`Quot.sound`, introduced by `omega` and `simp`. Following Ren's rule of no
+assumptions and no axioms, those proofs were rewritten with explicit
+constructive arithmetic; three helper lemmas (`le_cancel_left`, `step_then_rest`,
+`rest_then_step`) were added. No statement changed. `cycleStates` and
+`cycleActions` now read parity from a recursive `even` instead of `% 2`.
 
 `verification.json` records compiler, source, checker and log hashes, exact audited
 declarations, dependency results, and whether sources stayed unchanged during the

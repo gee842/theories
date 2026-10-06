@@ -40,6 +40,39 @@ def Continues (s t : State) : Prop :=
   t.held + t.enacted + s.arrived = s.held + s.enacted + t.arrived ∧
     s.enacted ≤ t.enacted ∧ s.arrived ≤ t.arrived
 
+/-! Constructive arithmetic used below. The library versions of these facts
+depend on `propext`; these proofs do not. -/
+
+theorem cancel_right {a b c : Nat} (h : a + c = b + c) : a = b := by
+  induction c with
+  | zero => exact h
+  | succ c ih => exact ih (Nat.succ.inj h)
+
+theorem sub_add_restore (m k : Nat) (bound : k ≤ m) : (m - k) + k = m := by
+  induction k generalizing m with
+  | zero => rfl
+  | succ k ih =>
+    cases m with
+    | zero => exact False.elim (Nat.not_succ_le_zero _ bound)
+    | succ m =>
+      rw [Nat.succ_sub_succ]
+      exact congrArg Nat.succ (ih m (Nat.le_of_succ_le_succ bound))
+
+theorem add_sub_self_left (a b : Nat) : (a + b) - a = b := by
+  induction a with
+  | zero => rw [Nat.zero_add]; rfl
+  | succ a ih => rw [Nat.succ_add, Nat.succ_sub_succ]; exact ih
+
+/-- Two conserving segments compose: the shared middle cancels. -/
+theorem chain {T M S sA mA tA : Nat} (first : M + sA = S + mA)
+    (second : T + mA = M + tA) : T + sA = S + tA :=
+  cancel_right (c := mA) (calc (T + sA) + mA
+      = (T + mA) + sA := Nat.add_right_comm T sA mA
+    _ = (M + tA) + sA := by rw [second]
+    _ = (M + sA) + tA := Nat.add_right_comm M tA sA
+    _ = (S + mA) + tA := by rw [first]
+    _ = (S + tA) + mA := Nat.add_right_comm S mA tA)
+
 theorem continues_refl (s : State) : Continues s s :=
   ⟨rfl, Nat.le_refl _, Nat.le_refl _⟩
 
@@ -47,23 +80,22 @@ theorem continues_trans {s m t : State} (first : Continues s m)
     (second : Continues m t) : Continues s t := by
   obtain ⟨balance₁, enacted₁, arrived₁⟩ := first
   obtain ⟨balance₂, enacted₂, arrived₂⟩ := second
-  refine ⟨?_, Nat.le_trans enacted₁ enacted₂, Nat.le_trans arrived₁ arrived₂⟩
-  omega
+  exact ⟨chain balance₁ balance₂, Nat.le_trans enacted₁ enacted₂, Nat.le_trans arrived₁ arrived₂⟩
 
 /-- A supported stage moves its draw from `held` to `enacted`. -/
 theorem enact_continues (s : State) (covered : draw s ≤ s.held) :
     Continues s (enact s) := by
   refine ⟨?_, Nat.le_add_right _ _, Nat.le_refl _⟩
-  unfold enact
-  dsimp only
-  omega
+  show (s.held - draw s) + (s.enacted + draw s) + s.arrived = s.held + s.enacted + s.arrived
+  rw [← Nat.add_assoc, Nat.add_right_comm (s.held - draw s) s.enacted (draw s),
+    sub_add_restore s.held (draw s) covered]
 
 /-- An arrival adds the same amount to `held` and `arrived`. -/
 theorem convert_continues (s : State) : Continues s (convert s) := by
   refine ⟨?_, Nat.le_refl _, Nat.le_add_right _ _⟩
-  unfold convert
-  dsimp only
-  omega
+  show (s.held + arrivalAmount s) + s.enacted + s.arrived =
+    s.held + s.enacted + (s.arrived + arrivalAmount s)
+  rw [Nat.add_right_comm s.held, Nat.add_assoc (s.held + s.enacted), Nat.add_comm (arrivalAmount s)]
 
 /-- Changing the phase leaves all three aspects unchanged. -/
 theorem phase_continues (s : State) (p : Phase) :
@@ -127,10 +159,18 @@ def arrivedBy (s : State) (_ : Command) (t : State) : Nat := t.arrived - s.arriv
 theorem step_sustained_exact {s t : State} {command : Command}
     (step : process.step s command t) :
     t.held + enactedBy s command t = s.held + arrivedBy s command t := by
-  have c := step_continues step
-  unfold Continues at c
+  obtain ⟨balance, enactedGrew, arrivedGrew⟩ := step_continues step
   unfold enactedBy arrivedBy
-  omega
+  apply cancel_right (c := s.enacted + s.arrived)
+  calc t.held + (t.enacted - s.enacted) + (s.enacted + s.arrived)
+      = t.held + ((t.enacted - s.enacted) + s.enacted) + s.arrived := by
+        rw [Nat.add_assoc, Nat.add_assoc, Nat.add_assoc]
+    _ = t.held + t.enacted + s.arrived := by rw [sub_add_restore _ _ enactedGrew]
+    _ = s.held + s.enacted + t.arrived := balance
+    _ = s.held + s.enacted + ((t.arrived - s.arrived) + s.arrived) := by
+        rw [sub_add_restore _ _ arrivedGrew]
+    _ = s.held + (t.arrived - s.arrived) + (s.enacted + s.arrived) := by
+        rw [Nat.add_assoc, Nat.add_assoc, Nat.add_left_comm s.enacted]
 
 /-- The native port belongs to the conditional law class U1. -/
 theorem port_sustain_law :
@@ -172,13 +212,12 @@ theorem step_enacts {s t : State} {command : Command}
   obtain ⟨_, shape⟩ := completed_shape step
   unfold enactedBy
   rcases shape with ⟨p, rfl⟩ | ⟨ready, rfl⟩
-  · have first : ({ enact s with phase := p } : State).enacted = s.enacted + draw s := rfl
-    omega
-  · have first : (enact s).enacted = s.enacted + draw s := rfl
-    have middle := (convert_continues (enact s)).2.1
-    have last := (enact_continues (convert (enact s)) ready.2.2.2).2.1
-    change 1 ≤ (enact (convert (enact s))).enacted - s.enacted
-    omega
+  · show 1 ≤ (s.enacted + draw s) - s.enacted
+    rw [add_sub_self_left]
+    exact positive
+  · show 1 ≤ ((s.enacted + draw s) + draw (convert (enact s))) - s.enacted
+    rw [Nat.add_assoc, add_sub_self_left]
+    exact Nat.le_trans positive (Nat.le_add_right _ _)
 
 /-- U2 for the port: on every history, what became activity plus what is still
 held never exceeds what was held plus what arrived. -/
@@ -211,16 +250,26 @@ def potential (s : State) : Nat := s.held + yieldPerUnit * s.source
 
 theorem enact_lowers_potential (s : State) (covered : draw s ≤ s.held) :
     potential (enact s) < potential s := by
-  have positive : 1 ≤ draw s := by unfold draw; omega
-  unfold potential enact
-  dsimp only
-  omega
+  have positive : 0 < draw s := draw_positive s
+  show (s.held - draw s) + yieldPerUnit * s.source < s.held + yieldPerUnit * s.source
+  exact Nat.add_lt_add_right
+    (Nat.sub_lt (Nat.lt_of_lt_of_le positive covered) positive) _
 
 theorem convert_keeps_potential_bound (s : State) (available : 10 ≤ s.source) :
     potential (convert s) ≤ potential s := by
-  unfold potential convert arrivalAmount yieldPerUnit
-  dsimp only
-  split <;> omega
+  have bounded : arrivalAmount s ≤ yieldPerUnit * 10 := by
+    unfold arrivalAmount
+    cases arrival s with
+    | true => exact Nat.le_refl _
+    | false => exact Nat.zero_le _
+  show (s.held + arrivalAmount s) + yieldPerUnit * (s.source - 10) ≤
+    s.held + yieldPerUnit * s.source
+  calc (s.held + arrivalAmount s) + yieldPerUnit * (s.source - 10)
+      ≤ (s.held + yieldPerUnit * 10) + yieldPerUnit * (s.source - 10) :=
+        Nat.add_le_add_right (Nat.add_le_add_left bounded _) _
+    _ = s.held + yieldPerUnit * ((s.source - 10) + 10) := by
+        rw [Nat.add_assoc, Nat.add_comm (yieldPerUnit * 10), ← Nat.mul_add]
+    _ = s.held + yieldPerUnit * s.source := by rw [sub_add_restore _ _ available]
 
 theorem phase_keeps_potential (s : State) (p : Phase) :
     potential { s with phase := p } = potential s := rfl
@@ -249,6 +298,10 @@ theorem port_cannot_continue_indefinitely :
   no_infinite_execution_under_depletion potential
     (fun _ _ _ step => step_lowers_potential step)
 
+#print axioms cancel_right
+#print axioms sub_add_restore
+#print axioms add_sub_self_left
+#print axioms chain
 #print axioms continues_refl
 #print axioms continues_trans
 #print axioms enact_continues

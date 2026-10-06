@@ -60,16 +60,21 @@ theorem terminal_has_no_continuation (a : Event) : ¬ Enabled renewalProcess .te
   rintro ⟨t, h⟩
   cases h
 
-def cycleStates (n : Nat) : Phase := if n % 2 = 0 then .ready else .depleted
-def cycleActions (n : Nat) : Event := if n % 2 = 0 then .use else .restore
+/-- Whether an index is even, by recursion rather than division. -/
+def even : Nat → Bool
+  | 0 => true
+  | n + 1 => !even n
+
+def cycleStates (n : Nat) : Phase := if even n then .ready else .depleted
+def cycleActions (n : Nat) : Event := if even n then .use else .restore
 
 theorem cycle_is_lawful (n : Nat) :
     renewalProcess.step (cycleStates n) (cycleActions n) (cycleStates (n + 1)) := by
-  by_cases even : n % 2 = 0
-  · have odd : ¬ (n + 1) % 2 = 0 := by omega
-    simpa [renewalProcess, cycleStates, cycleActions, even, odd] using RenewalStep.use
-  · have next : (n + 1) % 2 = 0 := by omega
-    simpa [renewalProcess, cycleStates, cycleActions, even, next] using RenewalStep.restore
+  unfold cycleStates cycleActions
+  show RenewalStep _ _ (if !even n then _ else _)
+  cases even n with
+  | true => exact RenewalStep.use
+  | false => exact RenewalStep.restore
 
 theorem renewal_admits_infinite_execution :
     ∃ states : Nat → Phase, ∃ actions : Nat → Event,
@@ -96,8 +101,9 @@ theorem insufficient_sustain_law :
     SustainLaw insufficientProcess id insufficientEnacted insufficientArrived := by
   intro s a t h
   change t + 1 = s at h
-  simp only [id_eq, insufficientEnacted, insufficientArrived]
-  omega
+  show t + 2 ≤ s + 1
+  rw [← h]
+  exact Nat.le_refl _
 
 theorem insufficient_arrival_is_always_positive :
     ∀ s a t, insufficientProcess.step s a t → 0 < insufficientArrived s a t := by
@@ -107,11 +113,12 @@ theorem insufficient_arrival_is_always_positive :
 theorem insufficient_finite_bound {s t : Nat} {events : List Unit}
     (h : Trace insufficientProcess s events t) : events.length + t ≤ s := by
   induction h with
-  | nil s => simp
+  | nil s => show 0 + s ≤ s; rw [Nat.zero_add]; exact Nat.le_refl s
   | cons hs _ ih =>
     change _ + 1 = _ at hs
-    simp only [List.length_cons]
-    omega
+    show (_ + 1) + _ ≤ _
+    rw [Nat.succ_add, ← hs]
+    exact Nat.succ_le_succ ih
 
 theorem insufficient_has_no_infinite_execution :
     ¬ ∃ states : Nat → Nat, ∃ actions : Nat → Unit,
@@ -120,13 +127,16 @@ theorem insufficient_has_no_infinite_execution :
   have bound : ∀ n, n + states n ≤ states 0 := by
     intro n
     induction n with
-    | zero => omega
+    | zero => rw [Nat.zero_add]; exact Nat.le_refl _
     | succ n ih =>
       have h := steps n
       change states (n + 1) + 1 = states n at h
-      omega
+      rw [Nat.succ_add, ← Nat.add_succ]
+      show n + (states (n + 1) + 1) ≤ states 0
+      rw [h]
+      exact ih
   have impossible := bound (states 0 + 1)
-  omega
+  exact Nat.not_succ_le_self _ (Nat.le_trans (Nat.le_add_right _ _) impossible)
 
 /-- Recurrence that enacts nothing falls within the general law but outside the
     positive-enactment corollaries. Nothing needs to arrive for these events. -/
@@ -162,21 +172,16 @@ theorem bulk_sustain_law :
 theorem bulk_has_no_uniform_arrival_cap :
     ¬ ∃ cap, ∀ s a t, bulkProcess.step s a t → a ≤ cap := by
   rintro ⟨cap, hcap⟩
-  have edge : bulkProcess.step 0 (cap + 1) cap := by
-    change cap + 1 = 0 + (cap + 1)
-    omega
-  have h := hcap 0 (cap + 1) cap edge
-  omega
+  have edge : bulkProcess.step 0 (cap + 1) cap := (Nat.zero_add (cap + 1)).symm
+  exact Nat.not_succ_le_self cap (hcap 0 (cap + 1) cap edge)
 
 theorem bulk_single_delivery (amount : Nat) :
     SupportTrace bulkProcess (fun _ _ _ => 1) (fun _ a _ => a)
       0 [amount + 1] amount 1 (amount + 1) 1 := by
-  have hs : bulkProcess.step 0 (amount + 1) amount := by
-    change amount + 1 = 0 + (amount + 1)
-    omega
+  have hs : bulkProcess.step 0 (amount + 1) amount := (Nat.zero_add (amount + 1)).symm
   have ht : SupportTrace bulkProcess (fun _ _ _ => 1) (fun _ a _ => a)
       amount [] amount 0 0 0 := .nil amount
-  simpa [arrivalEvent] using SupportTrace.cons hs ht
+  exact SupportTrace.cons hs ht
 
 theorem bulk_consumes_held (amount : Nat) :
     SupportTrace bulkProcess (fun _ _ _ => 1) (fun _ a _ => a)
@@ -184,18 +189,18 @@ theorem bulk_consumes_held (amount : Nat) :
   induction amount with
   | zero => exact .nil 0
   | succ amount ih =>
-    have hs : bulkProcess.step (amount + 1) 0 amount := by
-      change amount + 1 = amount + 1 + 0
-      omega
-    simpa [List.replicate_succ, arrivalEvent, Nat.add_comm] using SupportTrace.cons hs ih
+    have hs : bulkProcess.step (amount + 1) 0 amount := rfl
+    have h := SupportTrace.cons hs ih
+    rw [Nat.add_comm 1 amount] at h
+    exact h
 
 theorem bulk_single_delivery_then_run (amount : Nat) :
     SupportTrace bulkProcess (fun _ _ _ => 1) (fun _ a _ => a)
       0 ((amount + 1) :: List.replicate amount 0) 0 (amount + 1) (amount + 1) 1 := by
-  have hs : bulkProcess.step 0 (amount + 1) amount := by
-    change amount + 1 = 0 + (amount + 1)
-    omega
-  simpa [arrivalEvent, Nat.add_comm] using SupportTrace.cons hs (bulk_consumes_held amount)
+  have hs : bulkProcess.step 0 (amount + 1) amount := (Nat.zero_add (amount + 1)).symm
+  have h := SupportTrace.cons hs (bulk_consumes_held amount)
+  rw [Nat.add_comm 1 amount] at h
+  exact h
 
 #print axioms renewal_sustain_law
 #print axioms renewal_unit_enactment

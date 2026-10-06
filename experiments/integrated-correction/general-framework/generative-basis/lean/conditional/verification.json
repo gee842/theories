@@ -1,18 +1,15 @@
 {
-  "checked_at_utc": "2026-10-06T20:33:17.045593+00:00",
+  "checked_at_utc": "2026-10-06T20:52:43.343341+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_binary": "/opt/lean-4.29.1-linux/bin/lean",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
   "toolchain": "leanprover/lean4:v4.29.1",
   "toolchain_sha256": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
-  "checker_sha256": "cb96ab69e21000833660cf2861edc8e5e23c77cb3afa476b6ae4defca4b4fd43",
+  "checker_sha256": "bad7c20947535ba255d860bfe1e03c409c9661b52ebb61e27ca7487351f229c6",
   "source_unchanged_during_check": true,
   "fresh_temporary_build": true,
-  "allowed_standard_axioms": [
-    "Quot.sound",
-    "propext"
-  ],
+  "allowed_standard_axioms": [],
   "modules": [
     {
       "module": "GenerativeCore",
@@ -69,10 +66,13 @@
     {
       "module": "ResourceContinuation",
       "source": "ResourceContinuation.lean",
-      "source_sha256": "ef6e676fbc511d0ba9fd695cccb00252dbb61561fb9a9dd9093ed420ca3b40ca",
+      "source_sha256": "8414185c411458c1098f813d84e091fd91c89d9746c0ecde1e47bbd490e6ccf8",
       "exit_code": 0,
-      "dependency_audits": 21,
+      "dependency_audits": 24,
       "audited_declarations": [
+        "Generative.Conditional.le_cancel_left",
+        "Generative.Conditional.step_then_rest",
+        "Generative.Conditional.rest_then_step",
         "Generative.Conditional.support_trace_is_trace",
         "Generative.Conditional.sustain_law_pullback",
         "Generative.Conditional.trace_has_support_totals",
@@ -96,6 +96,9 @@
         "Generative.Conditional.execution_interval_frequency_bound"
       ],
       "requested_audits": [
+        "le_cancel_left",
+        "step_then_rest",
+        "rest_then_step",
         "support_trace_is_trace",
         "sustain_law_pullback",
         "trace_has_support_totals",
@@ -118,19 +121,16 @@
         "infinite_unit_execution_unbounded_arrival",
         "execution_interval_frequency_bound"
       ],
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 5,
+      "axioms": [],
+      "empty_axiom_audits": 24,
       "clean_dependency_audit": true,
       "output": "verification/ResourceContinuation.txt",
-      "output_sha256": "05d3e455017e691ecbfd654f12f4d864a657f9e9ca4b94ef317a7990c7c7742d"
+      "output_sha256": "bb0c1a98b5906a78e00057eff599871c791938953953aa7ebaae00154e79d0c6"
     },
     {
       "module": "RenewalExamples",
       "source": "RenewalExamples.lean",
-      "source_sha256": "46b522669e65f15b64d312d07f8651ff3e06f91351ceba4258554853928cdd77",
+      "source_sha256": "9c65d7d04a722b950746258d5c1deee3b36e5ccfe9a412f80c93e12d1cc0c816",
       "exit_code": 0,
       "dependency_audits": 21,
       "audited_declarations": [
@@ -179,14 +179,11 @@
         "bulk_consumes_held",
         "bulk_single_delivery_then_run"
       ],
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 11,
+      "axioms": [],
+      "empty_axiom_audits": 21,
       "clean_dependency_audit": true,
       "output": "verification/RenewalExamples.txt",
-      "output_sha256": "fde2d36e4ef74b38cae1438f0901603c2b1dce2f2b9df442680c260803420284"
+      "output_sha256": "c7edd0b14fc28b81a5da78ceaeea8c6b44b7e08d8615a07d4c0a79c8482b1a72"
     },
     {
       "module": "SupportNecessity",
@@ -241,8 +238,8 @@
       "output_sha256": "9f58bc308816d98a048c83c743d2088b1906f575d6b7ccfdb578f595111fdae7"
     }
   ],
-  "audited_declarations": 78,
-  "new_audited_declarations": 60,
-  "new_empty_axiom_audits": 34,
+  "audited_declarations": 81,
+  "new_audited_declarations": 63,
+  "new_empty_axiom_audits": 63,
   "scope": "Universal conditional statements over supplied discrete process laws: actual-history nonnegative support accounting, finite reserve and cost bounds, unbounded demand implies unbounded credit, positive-unit credit recurrence, bounded-credit event frequency, transfer by forward simulation, componentwise accounts, and conditional lifetime/dependency constraints. Constructive realizations and countermodels delimit sufficiency and missing hypotheses. No identification of a real-world account, universal welfare scalar, inevitable renewal, learning, concern, or uniquely necessary ontology is asserted."
 }

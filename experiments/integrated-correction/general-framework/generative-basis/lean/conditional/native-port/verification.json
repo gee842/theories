@@ -1,20 +1,21 @@
 {
-  "checked_at_utc": "2026-10-06T20:33:23.196187+00:00",
+  "checked_at_utc": "2026-10-06T20:52:58.490151+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "toolchain": "leanprover/lean4:v4.29.1",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
-  "checker_sha256": "928b0a57f6ec2d171c98f6523b565979dd1e4629b23d4cd6a32be0512f5c95d6",
+  "checker_sha256": "ef2abe8109d42217d83fece68b8da775c0540aa14a23b0373c4492e423602a75",
   "fresh_temporary_build": true,
   "source_unchanged_during_check": true,
-  "allowed_standard_axioms_for_new_module": [
-    "Quot.sound",
-    "propext"
-  ],
-  "new_module_audits": 23,
-  "new_module_empty_audits": 6,
+  "allowed_standard_axioms_for_new_module": [],
+  "new_module_audits": 27,
+  "new_module_empty_audits": 27,
   "new_declarations": [
     "Continues",
+    "cancel_right",
+    "sub_add_restore",
+    "add_sub_self_left",
+    "chain",
     "continues_refl",
     "continues_trans",
     "enact_continues",
@@ -83,32 +84,26 @@
     {
       "module": "ResourceContinuation",
       "source": "../ResourceContinuation.lean",
-      "source_sha256": "ef6e676fbc511d0ba9fd695cccb00252dbb61561fb9a9dd9093ed420ca3b40ca",
+      "source_sha256": "8414185c411458c1098f813d84e091fd91c89d9746c0ecde1e47bbd490e6ccf8",
       "exit_code": 0,
-      "audits": 21,
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 5,
+      "audits": 24,
+      "axioms": [],
+      "empty_axiom_audits": 24,
       "clean": true,
       "log": "verification/ResourceContinuation.txt",
-      "log_sha256": "05d3e455017e691ecbfd654f12f4d864a657f9e9ca4b94ef317a7990c7c7742d"
+      "log_sha256": "bb0c1a98b5906a78e00057eff599871c791938953953aa7ebaae00154e79d0c6"
     },
     {
       "module": "NativePortContinuation",
       "source": "NativePortContinuation.lean",
-      "source_sha256": "238725297fe5f757c8a925bdfcafb2c00181813afa72072ff06994152ad4a789",
+      "source_sha256": "155d4239aa948c70318349e5dbd9173fe3b9b86dce07b90c827a782b1008ed82",
       "exit_code": 0,
-      "audits": 23,
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 6,
+      "audits": 27,
+      "axioms": [],
+      "empty_axiom_audits": 27,
       "clean": true,
       "log": "verification/NativePortContinuation.txt",
-      "log_sha256": "980707fc82be74df7ac698a4f8b327c202f566334131844513b5b1b472a911e8"
+      "log_sha256": "cb227b4648793dc2c2b0eb0280580618c555b6cab39afa599fd48b2b380088ca"
     }
   ],
   "scope": "The reconstructed native port conserves held + enacted relative to arrived on every call, belongs to the conditional account-law class U1 with equality, inherits the U2 history bound and arrival-window theorem, and with only its own source strictly lowers a potential on every completed call, so it has no infinite execution. No inherited source is changed. This is a statement about the Lean reconstruction, not physical identification or a derivation of the port's gate, cycle or tariff."

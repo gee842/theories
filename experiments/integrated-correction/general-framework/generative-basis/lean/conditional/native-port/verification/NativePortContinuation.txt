@@ -1,23 +1,27 @@
+'Generative.NativePortContinuation.cancel_right' does not depend on any axioms
+'Generative.NativePortContinuation.sub_add_restore' does not depend on any axioms
+'Generative.NativePortContinuation.add_sub_self_left' does not depend on any axioms
+'Generative.NativePortContinuation.chain' does not depend on any axioms
 'Generative.NativePortContinuation.continues_refl' does not depend on any axioms
-'Generative.NativePortContinuation.continues_trans' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.enact_continues' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.convert_continues' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.continues_trans' does not depend on any axioms
+'Generative.NativePortContinuation.enact_continues' does not depend on any axioms
+'Generative.NativePortContinuation.convert_continues' does not depend on any axioms
 'Generative.NativePortContinuation.phase_continues' does not depend on any axioms
-'Generative.NativePortContinuation.supported_continues' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.execute_conserves' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.step_continues' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.trace_continues' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.step_sustained_exact' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.port_sustain_law' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.supported_continues' does not depend on any axioms
+'Generative.NativePortContinuation.execute_conserves' does not depend on any axioms
+'Generative.NativePortContinuation.step_continues' does not depend on any axioms
+'Generative.NativePortContinuation.trace_continues' does not depend on any axioms
+'Generative.NativePortContinuation.step_sustained_exact' does not depend on any axioms
+'Generative.NativePortContinuation.port_sustain_law' does not depend on any axioms
 'Generative.NativePortContinuation.completed_shape' does not depend on any axioms
 'Generative.NativePortContinuation.draw_positive' does not depend on any axioms
-'Generative.NativePortContinuation.step_enacts' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.port_history_bound' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.continuing_port_needs_arrivals' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.step_enacts' does not depend on any axioms
+'Generative.NativePortContinuation.port_history_bound' does not depend on any axioms
+'Generative.NativePortContinuation.continuing_port_needs_arrivals' does not depend on any axioms
 'Generative.NativePortContinuation.arrival_amount' does not depend on any axioms
-'Generative.NativePortContinuation.enact_lowers_potential' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.convert_keeps_potential_bound' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.enact_lowers_potential' does not depend on any axioms
+'Generative.NativePortContinuation.convert_keeps_potential_bound' does not depend on any axioms
 'Generative.NativePortContinuation.phase_keeps_potential' does not depend on any axioms
-'Generative.NativePortContinuation.step_lowers_potential' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.port_history_length' depends on axioms: [propext, Quot.sound]
-'Generative.NativePortContinuation.port_cannot_continue_indefinitely' depends on axioms: [propext, Quot.sound]
+'Generative.NativePortContinuation.step_lowers_potential' does not depend on any axioms
+'Generative.NativePortContinuation.port_history_length' does not depend on any axioms
+'Generative.NativePortContinuation.port_cannot_continue_indefinitely' does not depend on any axioms

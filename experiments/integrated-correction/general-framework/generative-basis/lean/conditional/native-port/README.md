@@ -26,7 +26,7 @@ The Python original keeps its names; the correspondence checker maps them. The f
 
 From this directory, run `python3 check.py`. The checker uses Lean 4.29.1, through elan if available or otherwise from `PATH`. It copies the five sources into a fresh temporary directory, checks the three inherited sources against their recorded hashes, and requires every new theorem to be audited.
 
-The [receipt](verification.json) records 23 new audits. Six are empty. Seventeen depend only on Lean's standard `propext` and `Quot.sound`, the same allowance as the conditional package. There are no custom axioms, `sorry` or warnings.
+The [receipt](verification.json) records 27 new audits, **all empty**; the checker now rejects any axiom. Until 6 October 2026, 17 of them depended on `propext` and `Quot.sound`. Following Ren's rule of no assumptions and no axioms, those proofs were rewritten with constructive arithmetic (helpers `cancel_right`, `sub_add_restore`, `add_sub_self_left`, `chain`); no statement changed. There are no custom axioms, `sorry` or warnings.
 
 This module is not part of the 32-module process-law closure. That closure's all-empty audit policy is unchanged, and none of its sources was edited.
 
