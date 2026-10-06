@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-06T19:24:27.474234+00:00",
+  "checked_at_utc": "2026-10-06T19:27:07.900595+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "modules": [
@@ -294,7 +294,7 @@
     {
       "module": "ContactFormation",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ContactFormation.lean",
-      "source_sha256": "46fde60eb6dd8be2d7d13430cc66c9cfaa242618981ad5884c2522038fe9a394",
+      "source_sha256": "08a268ad3039cdb8e50876f47a013fa5e6a77f4a9e33e74d8170fa7a6cfd5423",
       "exit_code": 0,
       "audits": 26,
       "nonempty_audits": {},
@@ -303,7 +303,7 @@
     {
       "module": "FormationClosure",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationClosure.lean",
-      "source_sha256": "4701cc249659ce0a48362810a7c4277039c2949f0b10d5ecb3c08c253ddce6e8",
+      "source_sha256": "6c98403b67434950a48d8278ddfafb70d027d82b272ab5210c23172c3bf21559",
       "exit_code": 0,
       "audits": 48,
       "nonempty_audits": {},

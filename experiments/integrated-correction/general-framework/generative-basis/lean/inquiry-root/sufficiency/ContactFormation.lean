@@ -1,24 +1,24 @@
 import PacketLawDerivation
 
 /-!
-# Paid contact formation changes the derived packet law
+# Supported contact formation changes the derived packet law
 
 The native port holds its contact coordinate fixed: `execute_retains_parameters`
 proves that no native command changes `blocked`. The derived A/B/C class, and
 therefore the effective probe law, is consequently invariant under every native
 history. This module adds one formation operation beside the unchanged port.
 
-Formation follows the port's own ordering. It first pays the native interface
-bill under the native capacity check, then requires one inherited spare
+Formation follows the port's own ordering. It first meets the native interface
+demand under the native capacity check, then requires one inherited spare
 component pair. A completed formation consumes that pair and clears the
-blocked contact. If no spare pair remains, the paid interface charge stays spent
-and the contact stays blocked. No new material, free reset or favorable
+blocked contact. If no spare pair remains, the reserve drawn for the interface
+is not restored and the contact stays blocked. No new material, free reset or favorable
 replacement configuration is introduced.
 
-Supplied here: the spare-pair stock, the use of the native interface tariff for
+Supplied here: the spare-pair stock, the use of the native interface demand for
 formation, and the rule that a formed contact clears `blocked`. These follow the
 pattern of the existing inquiry-revision contact (one inherited spare pair, one
-paid operation), but that mechanism belongs to a different apparatus; its exact
+supported operation), but that mechanism belongs to a different apparatus; its exact
 parts are not claimed to compose with this port. Inversion `tau`, sensor parity
 and receipt inversion remain fixed coordinates. Opening a contact changes which
 transfer class the port has; it does not choose the favorable one, calibrate the
@@ -35,7 +35,7 @@ structure Formed where
   spare : Nat
 
 inductive FormFailure where
-  | interfaceCapacity | interfaceFunding | noSpare
+  | interfaceCapacity | interfaceReserve | noSpare
 
 inductive FormResult where
   | complete (state : Formed)
@@ -44,8 +44,8 @@ inductive FormResult where
 def openContact (s : NativePacketProcess.State) : NativePacketProcess.State :=
   { s with blocked := false }
 
-/-- Pay the native interface bill, then consume one spare pair to open the contact.
-A missing pair is discovered after payment, as the native source check is. -/
+/-- Meet the native interface demand, then consume one spare pair to open the contact.
+A missing pair is discovered after that demand is met, as the native source check is. -/
 def finishForm (x : Formed) (ready : NativePacketProcess.State) : FormResult :=
   if 1 ≤ x.spare then .complete ⟨openContact ready, x.spare - 1⟩
   else .stopped ⟨ready, x.spare⟩ .noSpare
@@ -53,7 +53,7 @@ def finishForm (x : Formed) (ready : NativePacketProcess.State) : FormResult :=
 def form (x : Formed) : FormResult :=
   match charge x.port with
   | .capacity => .stopped x .interfaceCapacity
-  | .funding => .stopped x .interfaceFunding
+  | .funding => .stopped x .interfaceReserve
   | .paid ready => finishForm x ready
 
 def formedState (x : Formed) : Formed := ⟨openContact (debit x.port), x.spare - 1⟩
@@ -92,32 +92,32 @@ theorem form_complete_iff (x y : Formed) :
     | capacity => cases completed
     | funding => cases completed
     | paid ready =>
-      obtain ⟨payable, equality⟩ := (charge_paid_iff x.port ready).mp interface
+      obtain ⟨sustained, equality⟩ := (charge_paid_iff x.port ready).mp interface
       cases equality
       dsimp only at completed
       unfold finishForm at completed
       by_cases pair : 1 ≤ x.spare
       · rw [if_pos pair] at completed
         cases completed
-        exact ⟨payable, pair, rfl⟩
+        exact ⟨sustained, pair, rfl⟩
       · rw [if_neg pair] at completed
         cases completed
-  · rintro ⟨payable, pair, rfl⟩
-    exact form_complete x payable pair
+  · rintro ⟨sustained, pair, rfl⟩
+    exact form_complete x sustained pair
 
 theorem form_capacity_stops (x : Formed) (capacity : ¬ peak x.port ≤ x.port.capacity) :
     form x = .stopped x .interfaceCapacity := by
   unfold form
   rw [charge_capacity x.port capacity]
 
-theorem form_funding_stops (x : Formed) (capacity : peak x.port ≤ x.port.capacity)
-    (funding : ¬ bill x.port ≤ x.port.fuel) :
-    form x = .stopped x .interfaceFunding := by
+theorem form_reserve_stops (x : Formed) (capacity : peak x.port ≤ x.port.capacity)
+    (short : ¬ bill x.port ≤ x.port.fuel) :
+    form x = .stopped x .interfaceReserve := by
   unfold form
-  rw [charge_funding x.port capacity funding]
+  rw [charge_funding x.port capacity short]
 
-/-- Without a spare pair the interface bill is still spent and nothing opens. -/
-theorem form_no_spare_spends_charge (x : Formed) (ready : Payable x.port)
+/-- Without a spare pair the interface demand is still drawn and nothing opens. -/
+theorem form_no_spare_still_draws (x : Formed) (ready : Payable x.port)
     (empty : x.spare = 0) :
     form x = .stopped ⟨debit x.port, x.spare⟩ .noSpare ∧
       (debit x.port).blocked = x.port.blocked ∧
@@ -132,7 +132,8 @@ theorem form_no_spare_spends_charge (x : Formed) (ready : Payable x.port)
   unfold finishForm
   rw [if_neg missing]
 
-/-- Exactly what a completed formation changes and retains. -/
+/-- Exactly what a completed formation changes and retains. `fuel` and `spent`
+are the inherited native names for the usable reserve and its cumulative draw. -/
 theorem formed_effects (x : Formed) :
     (formedState x).port.blocked = false ∧
       (formedState x).port.tau = x.port.tau ∧
@@ -296,8 +297,8 @@ end Generative.InquirySufficiency.ContactFormation
 #print axioms Generative.InquirySufficiency.ContactFormation.form_complete
 #print axioms Generative.InquirySufficiency.ContactFormation.form_complete_iff
 #print axioms Generative.InquirySufficiency.ContactFormation.form_capacity_stops
-#print axioms Generative.InquirySufficiency.ContactFormation.form_funding_stops
-#print axioms Generative.InquirySufficiency.ContactFormation.form_no_spare_spends_charge
+#print axioms Generative.InquirySufficiency.ContactFormation.form_reserve_stops
+#print axioms Generative.InquirySufficiency.ContactFormation.form_no_spare_still_draws
 #print axioms Generative.InquirySufficiency.ContactFormation.formed_effects
 #print axioms Generative.InquirySufficiency.ContactFormation.failed_formation_retains_contact
 #print axioms Generative.InquirySufficiency.ContactFormation.formation_sets_open_class
