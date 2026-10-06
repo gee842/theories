@@ -105,8 +105,8 @@ theorem dip_two_dominates_one : ContinuationLe dip 1 2 := by
 actual damaging transition of `dipped` (from 2 to 1) oppositely. -/
 theorem naturalist_criteria_do_not_fix_orientation :
     (PreorderLaws (ContinuationLe dip) ∧ PreorderLaws (converse (ContinuationLe dip))) ∧
-    (Supervenes (fun h : History dip => Along (ContinuationLe dip) h.2.2) History.states ∧
-      Supervenes (fun h : History dip => Along (converse (ContinuationLe dip)) h.2.2)
+    (Covaries (fun h : History dip => Along (ContinuationLe dip) h.2.2) History.states ∧
+      Covaries (fun h : History dip => Along (converse (ContinuationLe dip)) h.2.2)
         History.states) ∧
     ((2, 1) ∈ dipped.steps ∧
       ¬ ContinuationLe dip 2 1 ∧ converse (ContinuationLe dip) 2 1) :=

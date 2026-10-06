@@ -117,22 +117,26 @@ def executionSupport {law : ChannelLaw Kind} (X : Execution law) : OccurrenceSup
         rw [kindEq] at spanEq inTick'
         refine ⟨tok.kind, m + 1, ⟨edgeTK, by omega⟩, Or.inr ⟨m, rfl, inTick'⟩, by omega, by omega⟩
 
-/-- A live configuration after the longest span holds a token formed recently. -/
-theorem live_late_has_recent_formation {law : ChannelLaw Kind} (X : Execution law)
-    (D : Nat) (spanBound : ∀ k, law.span k ≤ D) {t : Nat}
-    (live : Live (X.states t)) (late : D < t) :
-    ∃ k s, (executionSupport X).occurs k s ∧ s ≤ t ∧ t < s + D := by
-  obtain ⟨tok, member, alive⟩ : ∃ tok, tok ∈ (X.states t).tokens ∧ 1 ≤ tok.remaining := by
-    unfold Live at live
-    generalize (X.states t).tokens = l at live
-    induction l with
-    | nil => exact False.elim (Nat.not_succ_le_zero 0 live)
-    | cons tok rest ih =>
-      by_cases zero : tok.remaining = 0
-      · rw [opened, if_pos zero, Nat.zero_add] at live
-        obtain ⟨found, inside, positive⟩ := ih live
-        exact ⟨found, List.mem_cons_of_mem _ inside, positive⟩
-      · exact ⟨tok, List.mem_cons_self, Nat.pos_of_ne_zero zero⟩
+/-- A live configuration holds a token with time left. -/
+theorem live_has_alive_token {c : Config Kind} (live : Live c) :
+    ∃ tok, tok ∈ c.tokens ∧ 1 ≤ tok.remaining := by
+  unfold Live at live
+  generalize c.tokens = l at live
+  induction l with
+  | nil => exact False.elim (Nat.not_succ_le_zero 0 live)
+  | cons tok rest ih =>
+    by_cases zero : tok.remaining = 0
+    · rw [opened, if_pos zero, Nat.zero_add] at live
+      obtain ⟨found, inside, positive⟩ := ih live
+      exact ⟨found, List.mem_cons_of_mem _ inside, positive⟩
+    · exact ⟨tok, List.mem_cons_self, Nat.pos_of_ne_zero zero⟩
+
+/-- A token alive after the longest span was formed recently, as an occurrence
+of its kind. -/
+theorem alive_token_recent_formation {law : ChannelLaw Kind} (X : Execution law)
+    (D : Nat) (spanBound : ∀ k, law.span k ≤ D) {t : Nat} {tok : Token Kind}
+    (member : tok ∈ (X.states t).tokens) (alive : 1 ≤ tok.remaining) (late : D < t) :
+    ∃ s, (executionSupport X).occurs tok.kind s ∧ s ≤ t ∧ t < s + D := by
   cases token_origin X t tok member with
   | inl initial =>
     obtain ⟨first, firstIn, firstKind, firstAge⟩ := initial
@@ -142,7 +146,16 @@ theorem live_late_has_recent_formation {law : ChannelLaw Kind} (X : Execution la
   | inr formedEarlier =>
     obtain ⟨m, earlier, inTick, spanEq⟩ := formedEarlier
     have bound := spanBound tok.kind
-    exact ⟨tok.kind, m + 1, Or.inr ⟨m, rfl, inTick⟩, earlier, by omega⟩
+    exact ⟨m + 1, Or.inr ⟨m, rfl, inTick⟩, earlier, by omega⟩
+
+/-- A live configuration after the longest span holds a token formed recently. -/
+theorem live_late_has_recent_formation {law : ChannelLaw Kind} (X : Execution law)
+    (D : Nat) (spanBound : ∀ k, law.span k ≤ D) {t : Nat}
+    (live : Live (X.states t)) (late : D < t) :
+    ∃ k s, (executionSupport X).occurs k s ∧ s ≤ t ∧ t < s + D := by
+  obtain ⟨tok, member, alive⟩ := live_has_alive_token live
+  obtain ⟨s, occ, before, near⟩ := alive_token_recent_formation X D spanBound member alive late
+  exact ⟨tok.kind, s, occ, before, near⟩
 
 /-- **Renewal carries a realized closure.** In any execution with finitely many
 kinds and spans at most `D`, a live configuration after `(n + 1) · D` descends
@@ -178,7 +191,7 @@ theorem live_late_descends_from_realized_closure [DecidableEq Kind]
       occ lateS
   refine ⟨j, cycle, nonempty, loop, closed, ?_⟩
   intro v member
-  obtain ⟨r, occV, before, near⟩ := window v member
+  obtain ⟨r, occV, before, near⟩ := window v (List.mem_append_left _ member)
   refine ⟨r, occV, Nat.le_trans before sBefore, ?_⟩
   rw [Nat.succ_mul]
   omega
@@ -226,6 +239,8 @@ theorem endless_renewal_needs_closure_and_adequate_kind [DecidableEq Kind]
 #print axioms mem_aged
 #print axioms mem_formed
 #print axioms token_origin
+#print axioms live_has_alive_token
+#print axioms alive_token_recent_formation
 #print axioms live_late_has_recent_formation
 #print axioms live_late_descends_from_realized_closure
 #print axioms find_or_none
