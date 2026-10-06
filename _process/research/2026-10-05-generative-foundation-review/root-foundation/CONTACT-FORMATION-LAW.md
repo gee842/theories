@@ -73,6 +73,18 @@ The port runs an inquiry on itself with native operations only: reset, probe, tw
 
 This refines the closing section's limit rather than reversing it. A single failed probe cannot identify blockage; a two-probe inquiry from a known phase can, because a blocked contact fails at both outputs while an open one arrives at exactly one. The inquiry needs an intact reset; a broken reset leaves the phase unknown and the theorems do not apply.
 
+## The formation disposition as a developing valuation
+
+[PortValuation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortValuation.lean) connects this track to the [valuation-development universals](VALUATION-DEVELOPMENT-ARGUMENT.md). Its 11 declarations have empty axiom reports.
+
+That package states results for any organization with a selection law, a retention law and a consequence law, where the consequence law is a supplied model input. Here the organization is the port's formation disposition: it retains the last recorded pair of arrivals and selects whether to form. Its consequence law is derived, not supplied: `world_is_native` proves that what an inquiry records is the transfer-response profile.
+
+The disposition is history- and consequence-dependent (`port_history_dependent`, `port_consequence_dependent`), inherits the package's retention universal (`port_change_needs_retained_difference`), and after one encounter forms exactly when that contact was blocked (`disposition_after_encounter`). Once formation opens the contact, the retained reading is stale and would form again, which only draws reserve; one further encounter restores it (`disposition_stale_then_recovers`). This is the redundant-formation countercase seen as staleness of a valuation.
+
+`revision_changes_continuation` compares two executed histories from the same blocked start with the same two inquiries. The history that revises its contact on its own reading ends with ten units transferred and reserve 793,184; the history that only inquires ends class C with nothing transferred, forty units wasted and reserve 170,596. Revision guided by acquired evidence changes the conditions of the port's further activity.
+
+"Valuation" keeps the package's thin functional sense: a selective disposition, not experience or ethical warrant.
+
 ## What the track establishes and what remains
 
 Established, at this model's scope: the contact coordinate is no longer an unexplained fixed input of the effective inquiry law. It changes only through formation, formation draws on the port's own recorded failures, and the decision to form follows soundly from an inquiry the port runs on itself. The same inquiry acquires receipt calibration and, once the contact is open, the inversion. One history realizes the whole loop from failure through inquiry and formation to transfer.
@@ -87,7 +99,7 @@ From `experiments/integrated-correction/general-framework/generative-basis/lean/
 python3 check_contact_formation.py
 ```
 
-It checks that the 32 closure sources match the [process-law receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-verification.json), builds them and the three new modules fresh in a temporary directory, and requires empty audits, no warnings and no placeholders. The latest run passed 35 modules and 699 audits, all empty ([receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/contact-formation-verification.json)). Unlike the earlier checkers, it does not pin a compiler binary path or hash, so it runs on any machine with the pinned version. No existing source, checker or receipt was changed.
+It checks that the 32 closure sources match the [process-law receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-verification.json), builds them, the four new modules and the two valuation-development modules they import fresh in a temporary directory, and requires empty audits, no warnings and no placeholders. The latest run passed 38 modules and 710 audits, all empty ([receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/contact-formation-verification.json)). Unlike the earlier checkers, it does not pin a compiler binary path or hash, so it runs on any machine with the pinned version. No existing source, checker or receipt was changed.
 
 ## Vocabulary
 
