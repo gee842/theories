@@ -1,0 +1,203 @@
+PORTABLE READING EXCERPT — NOT ORIGINAL PDF BYTES
+Official source: https://www.ombudsman.gov.au/__data/assets/pdf_file/0014/112442/Services-Australias-Income-Compliance-Report.pdf
+Version: April 2021, report 2/2021; web reader reports 52 PDF pages
+Accessed: 2026-10-06 UTC through web.run text reader.
+Pinpoints: Printed pp 4–6 §§1.4–1.20; pp32–34 §§3.106–3.113 and Recommendation 8.
+Preparation: selected complete tool-reader lines in the ranges below; original line/page labels and OCR retained. P denotes zero-based PDF page, not printed page. Discontinuous blocks are labeled. This is a selected reading edition, not the complete report or a visual/layout verification. Original local fetch failed; see metadata/retrieval.json. Tool-derived text may contain OCR or extraction artifacts.
+
+[Selected reader lines 65–155]
+L65@P2: Changes to the Income Compliance Program
+L66@P2: 1.4. In early 2019, the Department of Human Services was renamed as Services Australia and
+L67@P2: became part of the Social Services portfolio. On 19 November 2019, the Australian
+L68@P2: Government announced that Services Australia would no longer use averaged ATO income
+L69@P2: information without other proof points to raise debts under the IC Program.
+L70@P2: 1 In an update on
+L71@P2: its media hub on the same day, Services Australia advised that it would make contact with
+L72@P2: individuals for whom Services Australia had used ‘only income averaging’ to raise a debt and
+L73@P2: 1 Minister for Government Services, Transcript: Doorstop, ABC News, 19 November 2019.
+L74@P2-3: 4
+L75@P3: Commonwealth Ombudsman—Services Australia: Income Compliance Program
+L76@P3: would provide advice to those individuals about ‘freezing’ repayment arrangements while it
+L77@P3: reassessed debts.2
+L78@P3: 1.5. This announcement was closely followed by Federal Court of Australia consent orders on
+L79@P3: 27 November 2019 in the matter of Amato v The Commonwealth of Australia (VID611/2019)
+L80@P3: which declared, among other things, that averaged ATO income information was not capable
+L81@P3: of satisfying a decision-maker that Ms Amato owed a debt within the scope of ss 1222A(a) and
+L82@P3: 1223(1) of the Social Security Act 1991.
+L83@P3: 1.6. In light of the changes to the IC Program in November 2019, the Ombudsman decided to
+L84@P3: commence an own motion investigation, pursuant to s 5(1)(b) of the Ombudsman Act 1976
+L85@P3: (Ombudsman Act), into Services Australia’s use of averaged ATO income information in its
+L86@P3: income compliance program. The Ombudsman formally notified the then-interim Chief
+L87@P3: Executive Officer of Services Australia of his decision on 19 February 2020.
+L88@P3: 1.7. On 29 May 2020 the Australian Government announced3 that it would refund repayments
+L89@P3: made on debts based wholly or partially on income averaging of ATO data. In addition, Services
+L90@P3: Australia subsequently announced that any outstanding debts based wholly or partially on
+L91@P3: income averaging would be reduced to zero. Following that announcement, our investigation
+L92@P3: focussed on the implementation of the refund process. For ease of reading, this report refers
+L93@P3: to the ‘refund’ process, recognising this process incorporates both debts that have been paid
+L94@P3: being refunded, as well as debts which remain outstanding being reduced to zero.
+L95@P3: Objective and scope of our investigation
+L96@P3: 1.8. The Ombudsman limited the scope of this investigation to the administration of the
+L97@P3: announced changes to the IC Program, and in particular to seek assurance that Services
+L98@P3: Australia’s processes for identifying and refunding debts raised using income averaging was,
+L99@P3: and continues to be, fair and transparent.
+L100@P3: 1.9. In order to ensure we did not duplicate or prejudice legal proceedings that were underway at
+L101@P3: the time of our investigation, we determined the question of the lawfulness of the income
+L102@P3: averaging methodology previously employed by Services Australia would be out of scope of
+L103@P3: our investigation.
+L104@P3: 1.10. Rather, the scope of this investigation is fundamentally concerned with the adequacy of the
+L105@P3: arrangements that Services Australia put in place to ensure that those hundreds of thousands
+L106@P3: of Australians who were subject to debts on ‘legally insufficient’ grounds have those debts
+L107@P3: refunded.
+L108@P3: 1.11. During the course of our investigation, we identified some issues and concerns with the
+L109@P3: identification process which have now been overtaken by the refund process itself. These
+L110@P3: matters are described and subject to comment in this report but require no immediate action
+L111@P3: by Services Australia.
+L112@P3: 1.12. While the refund process is nearing its completion, we also identified some matters where we
+L113@P3: consider that more still needs to be done to reasonably complete the task, as well as other
+L114@P3: 2 Services Australia, Online Income Compliance Program Update, 19 November 2019. 3 Minister of Government Services, Media release: Changes to the Income Compliance Program, 29 May
+L115@P3: 2020.
+L116@P3-4: 5 Commonwealth Ombudsman—Services Australia: Income Compliance Program
+L117@P4: matters relating to the ongoing administration of the IC Program. These matters are subject to
+L118@P4: recommendations in the report.
+L119@P4: 1.13. In July 2019, the Senate Community Affairs References Committee (the Senate Committee)
+L120@P4: commenced an inquiry into the IC Program, which focused on the impact of the IC Program,
+L121@P4: income averaging methodology and the legality of the debt collection processes. Our Office
+L122@P4: made a submission to the inquiry in September 2019 and a supplementary submission in
+L123@P4: September 2020. Our supplementary submission outlined our previous interest in the IC
+L124@P4: Program and some of the issues we identified during the earlier part of this investigation. A
+L125@P4: copy of this submission is at Appendix A to this report.
+L126@P4: Methodology
+L127@P4: 1.14. Our Office engaged with Services Australia a number of times between November 2019 and
+L128@P4: November 2020 about the IC Program and our investigation. We also sent questions and
+L129@P4: requests for information to Services Australia under s 8 of the Ombudsman Act.
+L130@P4: 4
+L131@P4: 1.15. In addition, our Office investigated a number of individual complaints about the IC Program
+L132@P4: which raised issues including communication, availability of records, delays in reassessments
+L133@P4: and reviews, interest charges, access to advance payments and bankruptcy which also formed
+L134@P4: the basis of this report.
+L135@P4: 1.16. The analysis of the investigation and our recommendations and comments are based on our
+L136@P4: assessment of the material provided by Services Australia and the issues we saw in individual
+L137@P4: complaints we investigated.
+L138@P4: 1.17. During the investigation, Services Australia was still developing its identification and refund
+L139@P4: processes. The Office made a number of inquiries to Services Australia throughout the
+L140@P4: investigation and we acknowledge that Services Australia undertook a significant amount of
+L141@P4: work to provide our Office with a high volume of information.
+L142@P4: Our role
+L143@P4: 1.18. The Office investigates complaints and provides independent oversight of public
+L144@P4: administration by Australian government agencies and certain private sector businesses. The
+L145@P4: Ombudsman makes recommendations to improve government administration.
+L146@P4: 1.19. The Ombudsman cannot be directed to undertake an investigation, to arrive at a certain
+L147@P4: conclusion or on the scope of an investigation. Rather, the Ombudsman decides what is in or
+L148@P4: out of scope of his investigations in accordance with his statutory function as set out in the
+L149@P4: Ombudsman Act.
+L150@P4: 1.20. The Ombudsman’s role is limited to investigating ‘action that relates to a matter of
+L151@P4: administration’.5 Accordingly, our focus is on the administration or implementation of
+L152@P4: legislation and policy by officials in government departments and statutory agencies.
+L153@P4: 4 Section 8 questions sent 5 March, 6 April and 23 July 2020.
+L154@P4: 5 Ombudsman Act 1976 s 5(1)(b), which relates to own motion investigations.
+L155@P4-5: 6
+
+[Selected reader lines 1182–1282]
+L1182@P30: In flight income compliance reviews
+L1183@P30: 3.106. Services Australia uses the term ‘income compliance review’ to refer to activity by its
+L1184@P30: compliance staff to ‘review’ discrepancies between people’s income reported to
+L1185@P30: Services Australia and information obtained from the ATO to determine if a debt might exist.
+L1186@P30: 3.107. Services Australia advised that at the time of the Australian Government’s 19 November 2019
+L1187@P30: announcement, there were approximately 240,000 income compliance reviews ‘in flight’ (that
+L1188@P30: had commenced but had not yet been finalised).30 On 10 September 2020, it reported the
+L1189@P30: number of ‘in flight’ reviews had decreased to 199,065 (i.e. a reduction of approximately
+L1190@P30: 41,000 reviews since changes were made to the IC Program).
+L1191@P30: 3.108. Services Australia advised that it has been finalising in-flight income compliance reviews
+L1192@P30: following the 19 November 2019 announcement, without relying on averaged ATO income
+L1193@P30: information in the process. It provided the following information about what it has been doing,
+L1194@P30: and what it intends to do with these reviews:
+L1195@P30: • Between 19 November 2019 and 3 April 2020—Where Services Australia received
+L1196@P30: confirmation that an individual had received an initiation letter, staff have contacted
+L1197@P30: individuals to ask for information or seek clarification on information previously
+L1198@P30: provided. If officers have been unable to contact individuals, they have been
+L1199@P30: instructed to use ‘information already provided’ to finalise the review.31
+L1200@P30: • 3 April 2020 and 2 November 2020—The national debt pause applied to in-flight
+L1201@P30: reviews between 3 April and 2 November 2020. During this time, Services Australia
+L1202@P30: finalised in-flight reviews in circumstances ‘where a person requests’, but if the result
+L1203@P30: of the review is a debt, it postponed raising and recovering any debts until the end of
+L1204@P30: the debt pause.
+L1205@P30: 30 ‘In flight-reviews’ include any circumstances where Services Australia has initiated an income
+L1206@P30: compliance review but has not yet made a decision about whether or not a person owes a debt. This
+L1207@P30: may include where a person has been sent a discrepancy notice but has not responded, or where a
+L1208@P30: person has commenced engaging with Services Australia through its online portal but has not finished
+L1209@P30: updating and confirming their income information. In-flight reviews are a separate and distinct process
+L1210@P30: from an ‘internal review’, through which a person can seek a fresh look at a Services Australia decision
+L1211@P30: with which they disagree.
+L1212@P30: 31 This policy is referenced in a document titled ‘Messaging/Overview of the ‘Process for Started EIC or
+L1213@P30: CUPI Reviews’. Services Australia’s records do not specify whether ‘information already provided’
+L1214@P30: includes customers’ historical income reports.
+L1215@P30-31: 32
+L1216@P31: It Importan you engage with us to oonfirm the dates you ed and the amount you earned. If
+L1217@P31: you don' , e·1 use he · formabon e get from the other agency o idenbfy and calcula e if we've
+L1218@P31: o erpald you.
+L1219@P31: For example, if the ATO sho s you orked for a period of 5 months, e ·11 equally divide your
+L1220@P31: income over the 5 months. Th · I calculate e payment you shou d ha e got
+L1221@P31: We recommend you I your JHISI payslips or ti. s~t
+L1222@P31: If you c,m t g your pa pays ps or ba st l m n s.
+L1223@P31: We'll use the In omw from the ATO and compare
+L1224@P31: • We1 divtde ATO moun by e number o o
+L1225@P31: me
+L1226@P31: ts to conbnue.
+L1227@P31: Is
+L1228@P31: • Howev\'r, 1f 1~ hours you wor NJ or the amount, you earnl'd changed each fonn,gh you nttd o i. in, Including the euct
+L1229@P31: ,moun s you were pa d.
+L1230@P31: • You shou d a so 1e11 ~ 1f you ontt wor ed fOI' pan o 1 ~ar, 01' 1t 1~ emplo'jer n.>mes we ~ don I ch your records
+L1231@P31: • II you end up owtng us money. no1 prOllldlng lnfOl'malJOn may me n you pay b.1ck mo" I n you n~ o
+L1232@P31: Do you want us to use the 111forma Ion we ready haw to
+L1233@P31: work oullf you r lved I fl&ht mount ot paymen
+L1234@P31: frOl'n ~ In the p.,st?
+L1235@P31: 0
+L1236@P31: Commonwealth Ombudsman—Services Australia: Income Compliance Program
+L1237@P31: • After 2 November 2020—Since the end of the national debt pause, Services Australia
+L1238@P31: gradually recommenced debt-raising activity, including in-flight reviews, and has
+L1239@P31: recommence debt recovery activity in February 2021.
+L1240@P31: 3.109. Although the changes made in November 2019 mean that debts are no longer raised solely
+L1241@P31: using averaged ATO income data, in-flight reviews will have already been impacted, albeit
+L1242@P31: indirectly, by the practice of income averaging. In particular, individuals with in-flight reviews
+L1243@P31: will have already been warned that if they did not check and update their income information,
+L1244@P31: or could not obtain payslips or bank statements, Services Australia would or could use (and
+L1245@P31: average) income information it had received from the ATO in the review. This advice was
+L1246@P31: provided to individuals at various points in the review process, as documented in the Office’s
+L1247@P31: April 2019 implementation report.32 Below we have highlighted examples of information
+L1248@P31: provided to individuals with review initiation letters33 and embedded within the online review
+L1249@P31: system.
+L1250@P31: 34
+L1251@P31: 3.110. These and other similar messages have the potential to influence how individuals engage in
+L1252@P31: the review process. In particular, the potential for a person to be influenced by Services
+L1253@P31: Australia stating that they may be subjected to income averaging and required to ‘pay back
+L1254@P31: more than (they) need to’ if they do not engage in the compliance process in the manner
+L1255@P31: preferred by Services Australia, provides an incentive for people to check and update their
+L1256@P31: income information (or a disincentive for people not to do so).
+L1257@P31: 3.111. As Services Australia has now acknowledged the ‘legal insufficiency’ of using averaged ATO
+L1258@P31: income information to raise a debt, we are concerned that any engagement from individuals
+L1259@P31: 32 This messaging is outlined in pages 10 to 16 of the Office’s April 2019 report. 33 Text extracted from Services Australia’s website, which was linked from EIC initiation letters, as
+L1260@P31: referenced in the Office’s April 2019 report at paragraph 2.26. 34 Text extracted from the CUPI online system, as referenced in the Office’s April 2019 report at
+L1261@P31: paragraph 2.48.
+L1262@P31-32: 33
+L1263@P32: Commonwealth Ombudsman—Services Australia: Income Compliance Program
+L1264@P32: may therefore have been, or continue to be, influenced by Services Australia’s previous
+L1265@P32: statement that income averaging may be used to raise the debt.
+L1266@P32: 3.112. Services Australia advised our Office that in some instances, it is appropriate to ‘close out’ an
+L1267@P32: in-flight review without further action. It also advised that where it continues an individual’s
+L1268@P32: in-flight review, it would write to the individual and work closely with them to finalise the
+L1269@P32: review.
+L1270@P32: 3.113. In circumstances where Services Australia continues an in-flight review, we consider it should
+L1271@P32: include in its written communication clear advice on the changes to the IC Program since the
+L1272@P32: initial correspondence, including where statements in the initial correspondence are no longer
+L1273@P32: accurate. This is particularly important given that individuals within this cohort may be less
+L1274@P32: likely than others impacted by the IC Program to have received information about significant
+L1275@P32: changes and related issues.
+L1276@P32: Recommendation 8
+L1277@P32: In circumstances where Services Australia continues an individual’s income compliance inflight review and where the individual had previously been contacted about an income
+L1278@P32: discrepancy, Services Australia should include in its written communication a correction to any
+L1279@P32: information provided in the initial correspondence that is no longer accurate.
+L1280@P32: At a minimum, the correspondence should note that Services Australia made changes to the IC
+L1281@P32: Program in November 2019, and that it will no longer raise debts relying solely on estimating
+L1282@P32: the person’s income by ‘averaging’ ATO income information over multiple fortnights.
+

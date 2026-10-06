@@ -32,7 +32,7 @@ This imposes no universal duty to disclose facts or assist harmful training. `c`
 
 ## 3. A discriminating empirical contact
 
-The Summer 2026 study varies consequence framing while holding judge-input transcripts and a rubric fixed, and separately tests stricter rubrics and abstention. Its eighteen inputs concern ethically motivated refusals. The authors explicitly acknowledge that some original labels admit defensible disagreement, including later compliance or escalation. Original-label agreement therefore differs from independent truth. [Primary methods, Appendix D and note 3](https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/).
+The [Summer 2026 study's methods and label qualifications](https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/) provide the empirical contact. Original-label agreement differs from independent truth.
 
 The evidence lane located inputs and selected cases, but not the one-turn response matrix; these cannot support the proposed aggregate reanalysis.
 
@@ -54,7 +54,7 @@ A protocol must bind input bytes, target interpretation, rubric, model settings 
 
 [Settlement R2][settlement] assumes complete sound current audits, with installed validity agreeing with independently warranted status. Consequence-driven false reporting threatens that input. Abstention preserves an unknown; it cannot count as a complete valid audit. This neither refutes R2 under its premises nor requires another inspector by default.
 
-The next connection is **warranted objection with faithful evidence and effective correction**, beyond self-preservation implying protection. Persistent definite reporting errors would defeat an unconditional trust claim for the tested interface. Errors disappearing after rubric clarification would narrow the explanation; transparent refusal would support a different, potentially appropriate response. [Teaching Claude Why](https://alignment.anthropic.com/2026/teaching-claude-why/) provides a positive training comparator, but its constitution, rewritten examples, stories and training conditions must remain supplied or experimentally separated; improved behavior does not uniquely identify this foundation's mechanism.
+The next connection is **warranted objection with faithful evidence and effective correction**, beyond self-preservation implying protection. Persistent definite reporting errors would defeat an unconditional trust claim for the tested interface. Errors disappearing after rubric clarification would narrow the explanation; transparent refusal would support a different, potentially appropriate response. [Teaching Claude Why](https://alignment.anthropic.com/2026/teaching-claude-why/) supplies a positive comparator whose training package does not uniquely identify this foundation's mechanism.
 
 [application]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md
 [settlement]: ../../2026-10-05-revisable-concern/settlement/formal/REPORT.md

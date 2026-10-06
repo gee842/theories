@@ -1,0 +1,53 @@
+{
+  "$id": "https://comembench.org/schemas/v17/benchmark_instance.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "control_instance_id": {
+      "type": "string"
+    },
+    "family_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "instance_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "pair_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pollution_plan_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scenario_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "comembench-instance/v17"
+    },
+    "variant": {
+      "enum": [
+        "control",
+        "polluted"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "instance_id",
+    "family_id",
+    "scenario_id",
+    "variant",
+    "pair_id",
+    "pollution_plan_ref"
+  ],
+  "type": "object"
+}

@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored independent review of **retained model and scoped result → admission of a larger current model family → paid fresh observations → revised behavioral warrant or a recorded funding limit**. This follows [experimental access](EXPERIMENTAL-ACCESS-REVIEW.md) within the governing generative-grounding derivation.
 
-**Status:** actual predecessor handoffs and the selected design have been checked. Implementation acceptance is pending the saved protocol, model and independent checks. The proposed positive result is a conservative fresh audit of present behavior. It is not recovery of the discarded historical transcript, proof of the origin of a new model grammar, or autonomous discovery of the need to expand the family.
+**Status:** accepted at the bounded scope below. Actual predecessor handoffs, generated-model semantics, chronological candidate updates, subsequent predictive use and resource prefixes have been independently checked. The positive result is a conservative fresh audit of present behavior. It is not recovery of the discarded historical transcript, proof of the origin of a new model grammar, or autonomous discovery of the need to expand the family.
 
 ## 1. The actual retained payloads differ
 
@@ -24,7 +24,7 @@ A retrospective revision would ask which newly introduced hypotheses can explain
 
 The chosen design instead performs a **fresh audit of current behavior**. It keeps the old learned model and old diagnosis as a scoped historical archive, admits current phases and reading parities afresh for two structural families, and purchases new observations. It does not pretend to know what the discarded transcript would have said about the new family.
 
-Reopening phases and parities even for the old three-cycle is deliberately conservative. The old cursor is not silently used as a trusted present-state fact while boundary changes are being admitted. This loses some possible inferential advantage of old evidence, but makes the present audit's information contract explicit. The archived old candidate remains a statement about its earlier stage, not a continuously updated current-state estimate.
+Reopening phases and parities even for the old three-cycle is deliberately conservative. The old cursor is not silently used as a trusted present-state fact while boundary changes are being admitted. This loses some possible inferential advantage of old evidence, but makes the present audit's information contract explicit. The archived old candidate remains a statement about its earlier stage, not a continuously updated current-state estimate. It is retired during the explicitly paid compaction after a new singleton is selected; its historical content remains in external research records, not a free retained learner archive.
 
 The new audit also does not identify physical readiness reversal, sensor reversal or reset fidelity. It represents their *observable reading parity* under the present sensor-only controls. Separating those older fault parameters would require the appropriate apparatus assumptions and consequence evidence again. A current behavioral-family verdict must not revive an earlier productive interpretation merely because its model has a positive output.
 
@@ -67,7 +67,7 @@ They are disjoint. At five readings the words `00100` and `11011` remain shared,
 
 A set-valued update should advance each candidate through its own model and retain only predictions agreeing with each new paid reading. A nonempty set confined to one family warrants that family within the supplied alternatives. Phase and parity should be reported only when their appropriate candidate labels also agree. Empty belief reports failure of the admitted family or trusted sensing assumptions; it must not manufacture a new model label.
 
-The explicit new evidence matters. If a richer future family is later admitted, the current compact belief may again be insufficient for retrospective replay. Any retained fresh transcript or certificate must have a declared encoding, write cost and rent. The external audit cannot silently become internal memory at the next handoff.
+The explicit new evidence matters. If a richer future family is later admitted, the current compact belief may again be insufficient for retrospective replay. Any retained fresh transcript or certificate must have a declared encoding, write cost and rent. The implemented continuation retains the selected model, parity and current cursor; its new raw transcript remains external. A reusable raw-evidence archive is a further, unimplemented interface. The external audit cannot silently become internal memory at the next handoff.
 
 ## 5. The positive and failure cases must preserve their ancestry
 
@@ -105,4 +105,30 @@ The finite suite should include unchanged and inserted-cycle continuations of th
 
 **Accept the local bridge** if generated alternatives use the actual acquired model, fresh paid evidence selects or rejects those alternatives as claimed, and every memory/resource prefix and failure status is honest. State explicitly that the family generator, restart policy and test-channel calibration remain supplied. Do not infer restored past evidence, open-ended autonomous model invention or renewed productive capacity from this bounded result.
 
-Implementation review and final acceptance remain pending.
+## 8. Completed implementation review
+
+The saved [protocol](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/PROTOCOL.md) and [implementation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/revision.py) satisfy the stated current-audit scope. The [independent checker](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/independent_check.py) reconstructs the insertion graph separately, uses explicit `(family, parity, phase)` sets for compatibility, and implements an unmetered reference observation/selection/forward-use policy. Its [receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/independent-check.json) records the checks and source hashes.
+
+The generated graph agrees with the independent insertion. Six permutations of learned state labels preserve the native trace and cost while transporting the selected cursor. All committed candidate sets and command choices agree with the separate reference. The checker recalculates every charge, including held scratch and committed overwrites, and ties candidate/model storage charges to the independently verified counts. It also replays the actual inherited model/fuel/live-cell payloads and the complete 145-unit resource identity for actual and withdrawal-only cases. Ample assays are explicitly outside that inherited balance.
+
+For the successful access handoff, the unchanged apparatus selects the three-cycle, makes a correct subsequent prediction and retains the updated model. It spends \(679209/65536\), leaving \(72475/65536\) fuel. The declared phase insertion selects the four-cycle and completes the same milestones, spending \(687561/65536\) and leaving \(64123/65536\). Both peak at 118 cells and keep source at zero. The insertion's physical manufacture is a supplied exogenous environmental change, not a costed construction by the learner.
+
+All fourteen admitted phase/parity/family configurations acquire and retain a selected current model under the successful branch's inherited provision. Their later milestones differ:
+
+| Outcome | Cases |
+|---|---:|
+| Acquisition, verified forward use and final retention | 8 |
+| Acquired model retained, but forward read unaffordable | 4 |
+| Acquired model retained and forward prediction verified, but final retention unaffordable | 2 |
+
+The 14-case ample assay, with declared fuel 100, completes all milestones. Its maximum bill is \(805831/65536\). This provision validates semantics and the implementation's finite schedules; it is not extra funding for the actual histories. Case counts are exhaustive over the specified finite configurations, not empirical probabilities.
+
+Fourteen independently checked fixtures preserve both actual low-resource histories, capacity and price failures, five-read ambiguity, outside-family behavior, a late change, and derived budget boundaries. The sensor-only history installs and generates candidates but cannot fund preparation of its first read; it retains its untouched ten-unit source and \(5805/32768\) fuel. The actual historical four-cycle cannot pay installation and retains its original \(52327/65536\) fuel. The alternative old-controller read genuinely refutes that branch's old explanation and leaves \(29509/65536\), as described above.
+
+The negative semantic controls matter. A two-state alternating process empties the admitted family. A five-cycle starting at one phase is accepted as a four-cycle and fails the later prediction; from another phase it passes even that one forward check with a wrong four-cycle model. A late parity change also defeats the selected model's prediction. Thus neither selection nor one confirmed use establishes unrestricted model coverage or continued stationarity.
+
+The exact insertion-schedule budget \(687561/65536\) completes with zero fuel left. Removing another \(1/65536\) permits acquisition and confirmed use but prevents final retention. A separate derived prefix budget permits the physical forward action and denies its cursor commit; then `selected.state` is stale relative to the physical phase. The historical `acquired_retained` flag must not be read as a claim that this later cursor is current. No failed step restores the physical apparatus, old archive or spent fuel.
+
+The companion [proof study](MODEL-FAMILY-REVISION-MATH.md) was reviewed for the memory-fiber criterion, the scoped old-belief collision, conservative union inference and six-reading separation. Those claims are sound at their stated scope. Review corrected a formulation that could have implied raw-evidence retention was implemented: the lossless-record construction is now a separate prospective option, while this executable study retains a predictive model and cursor only. No impossibility claim about the complete actual handoff follows merely from the old-belief collision.
+
+**Final decision:** the finite current-family reacquisition interface is verified. An actual acquired model supplies the structure for a new generated candidate, fresh paid readings select between alternatives, and funded cases retain and use the revised prediction. The study also demonstrates affordable error detection without affordable new installation and learning without affordable later use. It does not demonstrate autonomous invention of the generator, retrospective recovery of discarded evidence, retention of a reusable raw transcript, new productive capture or completeness of the enlarged family.

@@ -1,0 +1,38 @@
+# Portable web-reader excerpts: Report corrigendum
+
+NOT original response bytes. Partial web.run extraction accessed 6 October 2026. Reader line/page labels are retrieval locators. Selected overlapping excerpts are deduplicated by line number and ordered without wording edits; gaps are retained. The SHA-256 of this text does not verify original HTML/PDF identity or completeness. Some PDF text includes extraction artifacts. No rendered-page verification is claimed.
+
+Primary URL: https://robodebt.royalcommission.gov.au/system/files/2023-07/rcc-corrigendum-28-july-2023.pdf
+
+L0@P0: Corrigendum to the report of the Robodebt Royal Commission
+L1@P0: The report of the Royal Commission into the Robodebt Scheme was first published on 7 July 2023.
+L2@P0: An updated edition was published 11 July 2023.
+L3@P0: On page 369, the heading and first paragraph should read:
+L4@P0: 5 Advocacy by the National Council of Single Mothers and their Children
+L5@P0: The National Council of Single Mothers and their Children (NCSMC)…
+L6@P0: Throughout the three paragraphs on page 369, all references to CSMC should be NCSMC.
+L7@P0: The 11 July version contains the following changes:
+L8@P0: Volume 1
+L9@P0: Inside front cover (also volumes 2 and 3), the copyright has been changed from 2022 to 2023.
+L10@P0: Page 218, beneath the subheading, first line: 2019 has been changed to 2017.
+L11@P0: Page 257, Chapter 8 name has had ‘on’ added, ie. The Robodebt Scheme rolls on
+L12@P0: Page 314, paragraph 3 of Section 9.3. The paragraph was deleted and replaced with:
+L13@P0: In fact, there is reason to reject the contemporaneous diary notes as accurate records of
+L14@P0: what happened when, and reason to think that both Mr Robert’s notes and Mr Morrison’s
+L15@P0: chronology are wrong about a meeting on 7 December and the matters recorded as
+L16@P0: discussed in it.
+L17@P0: Volume 2
+L18@P0: Page 430, under the subheading Sidestepping legal advice, first line: advic3 has been changed to
+L19@P0: advice.
+L20@P0: Page 435, first paragraph, first line: DHS has been changed to DSS.
+L21@P0: Volume 3 – Appendix
+L22@P0: Extra blank pages were added to the appendix to provide separation between the appendices. This
+L23@P0: resulted in the page numbering changing for appendices after page xxvi, beginning with the List of
+L24@P0: legislation.
+L25@P0: Page xiii – the repetition of Damien Brazel with a different job title has been deleted.
+L26@P0: Page xiii, in the column next to Cameron Brown, replaced Department of Human Services with
+L27@P0: Department of Social Services.
+L28@P0: Page xlviii (page xlii in the 7 July 2023 version), fourth paragraph, the words ‘Data and analytics’ at
+L29@P0: the end have been deleted. Instead, a subheading has been added between the fourth and fifth
+L30@P0: paragraphs, i.e: 1.4 Data and analytics.
+

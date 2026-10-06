@@ -1,0 +1,458 @@
+[
+  {
+    "id": "L06-defeat-ordinary",
+    "fixture": "L06",
+    "state": "defeat",
+    "arm": "ordinary",
+    "prompt": "prompts/L06-defeat-ordinary.txt",
+    "prompt_sha256": "041c71155611712e6476b2279405f5e54c8366b9ea121c9fc813d09e29c9559b",
+    "expected": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "dispatch_position": 1
+  },
+  {
+    "id": "L02-foreign-boundary",
+    "fixture": "L02",
+    "state": "foreign",
+    "arm": "boundary",
+    "prompt": "prompts/L02-foreign-boundary.txt",
+    "prompt_sha256": "944f00de99bc707c533af91bc1da4839151ba21b2360ab16097841963076be7e",
+    "expected": [
+      "?",
+      "?",
+      0,
+      1,
+      1,
+      "?",
+      "?",
+      0
+    ],
+    "dispatch_position": 2
+  },
+  {
+    "id": "L08-confirm-ordinary",
+    "fixture": "L08",
+    "state": "confirm",
+    "arm": "ordinary",
+    "prompt": "prompts/L08-confirm-ordinary.txt",
+    "prompt_sha256": "b18e8e76a9c3faf0813d3402108fee81ee9f50e664bd0a657b3c78de2f53c405",
+    "expected": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "dispatch_position": 3
+  },
+  {
+    "id": "L12-confirm-boundary",
+    "fixture": "L12",
+    "state": "confirm",
+    "arm": "boundary",
+    "prompt": "prompts/L12-confirm-boundary.txt",
+    "prompt_sha256": "6277b79744c47e6aa5ab7fb57f6e993173e0be688e80434ca2322af39973d83c",
+    "expected": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "dispatch_position": 4
+  },
+  {
+    "id": "L08-confirm-boundary",
+    "fixture": "L08",
+    "state": "confirm",
+    "arm": "boundary",
+    "prompt": "prompts/L08-confirm-boundary.txt",
+    "prompt_sha256": "c23fc9f0460ba6895e74bde387f0a427bc933e7a4f896dc55f93eb3c7a1ad8f1",
+    "expected": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "dispatch_position": 5
+  },
+  {
+    "id": "L06-foreign-ordinary",
+    "fixture": "L06",
+    "state": "foreign",
+    "arm": "ordinary",
+    "prompt": "prompts/L06-foreign-ordinary.txt",
+    "prompt_sha256": "f6d0cb5775ce056b8857582a178b264ca150cdec50642b47ab6865e99a7abcde",
+    "expected": [
+      1,
+      0,
+      0,
+      1,
+      "?",
+      "?",
+      "?",
+      "?"
+    ],
+    "dispatch_position": 6
+  },
+  {
+    "id": "L12-foreign-ordinary",
+    "fixture": "L12",
+    "state": "foreign",
+    "arm": "ordinary",
+    "prompt": "prompts/L12-foreign-ordinary.txt",
+    "prompt_sha256": "61004f7d094e79a4d68a98c947b5b4ee3761bc76302c1d397305d1dfd572e985",
+    "expected": [
+      0,
+      1,
+      0,
+      "?",
+      1,
+      "?",
+      "?",
+      "?"
+    ],
+    "dispatch_position": 7
+  },
+  {
+    "id": "L08-foreign-boundary",
+    "fixture": "L08",
+    "state": "foreign",
+    "arm": "boundary",
+    "prompt": "prompts/L08-foreign-boundary.txt",
+    "prompt_sha256": "9875f66a38cd703407b6949e6b02a23003b2bde449704771f38b7c0a22a0c440",
+    "expected": [
+      1,
+      1,
+      0,
+      0,
+      "?",
+      "?",
+      "?",
+      "?"
+    ],
+    "dispatch_position": 8
+  },
+  {
+    "id": "L12-confirm-ordinary",
+    "fixture": "L12",
+    "state": "confirm",
+    "arm": "ordinary",
+    "prompt": "prompts/L12-confirm-ordinary.txt",
+    "prompt_sha256": "b772d066a775aefb7f679f6e6d72e610d0c9d13cbaa61f97c3ff94973dcf1d1e",
+    "expected": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "dispatch_position": 9
+  },
+  {
+    "id": "L02-foreign-ordinary",
+    "fixture": "L02",
+    "state": "foreign",
+    "arm": "ordinary",
+    "prompt": "prompts/L02-foreign-ordinary.txt",
+    "prompt_sha256": "3f5bbba522b3429c8e32d6f2ddff0094c6a75d00fabfa369c3ab2e2913c8b77e",
+    "expected": [
+      "?",
+      "?",
+      0,
+      1,
+      1,
+      "?",
+      "?",
+      0
+    ],
+    "dispatch_position": 10
+  },
+  {
+    "id": "L06-foreign-boundary",
+    "fixture": "L06",
+    "state": "foreign",
+    "arm": "boundary",
+    "prompt": "prompts/L06-foreign-boundary.txt",
+    "prompt_sha256": "12ba8a5586f74adafe26fbb3bf536cd2936d2fed228d547920db81c4d9e691c4",
+    "expected": [
+      1,
+      0,
+      0,
+      1,
+      "?",
+      "?",
+      "?",
+      "?"
+    ],
+    "dispatch_position": 11
+  },
+  {
+    "id": "L08-defeat-ordinary",
+    "fixture": "L08",
+    "state": "defeat",
+    "arm": "ordinary",
+    "prompt": "prompts/L08-defeat-ordinary.txt",
+    "prompt_sha256": "bc699c9936b3af0c993aa8d3cc6dd6d150394c4cdbfa08be596711a135de8a3b",
+    "expected": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "dispatch_position": 12
+  },
+  {
+    "id": "L02-defeat-boundary",
+    "fixture": "L02",
+    "state": "defeat",
+    "arm": "boundary",
+    "prompt": "prompts/L02-defeat-boundary.txt",
+    "prompt_sha256": "61d5bc28d51d4ab08d03800d67d4d24799381a181bd8d44cbf82b17fe00fbe44",
+    "expected": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "dispatch_position": 13
+  },
+  {
+    "id": "L02-confirm-ordinary",
+    "fixture": "L02",
+    "state": "confirm",
+    "arm": "ordinary",
+    "prompt": "prompts/L02-confirm-ordinary.txt",
+    "prompt_sha256": "f0ba4f946af5cfe599bb6e6f288c9d7b0dc6d83b7fd68d2a32ca1c92f8891b9f",
+    "expected": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "dispatch_position": 14
+  },
+  {
+    "id": "L12-foreign-boundary",
+    "fixture": "L12",
+    "state": "foreign",
+    "arm": "boundary",
+    "prompt": "prompts/L12-foreign-boundary.txt",
+    "prompt_sha256": "1ad8ff3aafc5e7ddc161d20e44387a03803159586b23d5cbbc09d503288904b8",
+    "expected": [
+      0,
+      1,
+      0,
+      "?",
+      1,
+      "?",
+      "?",
+      "?"
+    ],
+    "dispatch_position": 15
+  },
+  {
+    "id": "L02-confirm-boundary",
+    "fixture": "L02",
+    "state": "confirm",
+    "arm": "boundary",
+    "prompt": "prompts/L02-confirm-boundary.txt",
+    "prompt_sha256": "3278e171a314d3400f60a2aa9e7ab561d45163dac629289fd5bd624039c6ba5e",
+    "expected": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "dispatch_position": 16
+  },
+  {
+    "id": "L06-confirm-boundary",
+    "fixture": "L06",
+    "state": "confirm",
+    "arm": "boundary",
+    "prompt": "prompts/L06-confirm-boundary.txt",
+    "prompt_sha256": "b8b3bdc2a7e322b448db0fd113ff815ed2f281fd125dde1799c2930b6843afc6",
+    "expected": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "dispatch_position": 17
+  },
+  {
+    "id": "L06-confirm-ordinary",
+    "fixture": "L06",
+    "state": "confirm",
+    "arm": "ordinary",
+    "prompt": "prompts/L06-confirm-ordinary.txt",
+    "prompt_sha256": "e94ab585cfbdad8cddd208cdaa555696bd8a37a124f76c50158d3e27f32c7d1f",
+    "expected": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "dispatch_position": 18
+  },
+  {
+    "id": "L08-foreign-ordinary",
+    "fixture": "L08",
+    "state": "foreign",
+    "arm": "ordinary",
+    "prompt": "prompts/L08-foreign-ordinary.txt",
+    "prompt_sha256": "997c73833da0192f9417fc734f9436d15421fe5b742effcdb00efc1a9551c205",
+    "expected": [
+      1,
+      1,
+      0,
+      0,
+      "?",
+      "?",
+      "?",
+      "?"
+    ],
+    "dispatch_position": 19
+  },
+  {
+    "id": "L12-defeat-ordinary",
+    "fixture": "L12",
+    "state": "defeat",
+    "arm": "ordinary",
+    "prompt": "prompts/L12-defeat-ordinary.txt",
+    "prompt_sha256": "a9b00b4b91e194a7ac931dedcc3e0f4c25baf176171079c3fb43f19d88ee015b",
+    "expected": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "dispatch_position": 20
+  },
+  {
+    "id": "L06-defeat-boundary",
+    "fixture": "L06",
+    "state": "defeat",
+    "arm": "boundary",
+    "prompt": "prompts/L06-defeat-boundary.txt",
+    "prompt_sha256": "2535cb1a8c3258cdafc7989d8fd5e649d1447167df29e5bf30f4cb98cc076cbf",
+    "expected": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "dispatch_position": 21
+  },
+  {
+    "id": "L12-defeat-boundary",
+    "fixture": "L12",
+    "state": "defeat",
+    "arm": "boundary",
+    "prompt": "prompts/L12-defeat-boundary.txt",
+    "prompt_sha256": "25b1d847acb8c9c3202e68b01764d0bcf00f645bc36dc373522088363c4c60ce",
+    "expected": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "dispatch_position": 22
+  },
+  {
+    "id": "L02-defeat-ordinary",
+    "fixture": "L02",
+    "state": "defeat",
+    "arm": "ordinary",
+    "prompt": "prompts/L02-defeat-ordinary.txt",
+    "prompt_sha256": "97e3b04a4cb40c53bf3d99393d5a438c6e45c9be4dd294f29566788988ea15e6",
+    "expected": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "dispatch_position": 23
+  },
+  {
+    "id": "L08-defeat-boundary",
+    "fixture": "L08",
+    "state": "defeat",
+    "arm": "boundary",
+    "prompt": "prompts/L08-defeat-boundary.txt",
+    "prompt_sha256": "7cea32e5e1bc783582213a0d03dce2d4dbe6019fbe3140023ca116e903299a51",
+    "expected": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "dispatch_position": 24
+  }
+]

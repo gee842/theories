@@ -1,0 +1,799 @@
+{
+  "status": "prospective_literal_case_menu_pending_root_freeze",
+  "protocol": "DRAFT-PROTOCOL.md",
+  "scope": "One controlled formation lift and paid paired-learning suffix on every actual primary revision predecessor; no experimental results.",
+  "initial": {
+    "material": 68,
+    "common": 297,
+    "source": 208,
+    "total_resource": 505,
+    "added_pairs": 13,
+    "initial_new_assemblies": 10,
+    "primary_link_pairs": 2,
+    "replacement_pairs": 1
+  },
+  "parent_producers": [
+    "variable",
+    "conventional",
+    "fixed_normal"
+  ],
+  "variants": {
+    "active": {
+      "link_recipe": "active",
+      "replacement_rule": "current_acquired_sign",
+      "recipient_filter": false,
+      "assessment_implementation": "graph"
+    },
+    "inert": {
+      "link_recipe": "inert",
+      "replacement_rule": "current_acquired_sign",
+      "recipient_filter": false,
+      "assessment_implementation": "graph"
+    },
+    "identity_gated": {
+      "link_recipe": "active",
+      "replacement_rule": "current_acquired_sign",
+      "recipient_filter": true,
+      "assessment_implementation": "graph"
+    },
+    "conventional": {
+      "link_recipe": "active",
+      "replacement_rule": "current_acquired_sign",
+      "recipient_filter": false,
+      "assessment_implementation": "finite_table"
+    },
+    "frozen_sign": {
+      "link_recipe": "active",
+      "replacement_rule": "retired_sign",
+      "recipient_filter": false,
+      "assessment_implementation": "graph"
+    }
+  },
+  "case_count": 11,
+  "local_case_variant_count": 22,
+  "shortage_policy": "Withheld reserves and packet amounts remain in separate inaccessible idle accounts; unavailable pairs remain counted without substituting the reserved replacement.",
+  "schedule_policy": "X/Y are observer plant schedules supplied only to physical return events; completed count/phase choose the current packet, and all learning reads actual paid latches.",
+  "cases": [
+    {
+      "name": "aligned",
+      "config": {
+        "parent_revision_case": "primary",
+        "own_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "recipient_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "own_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "recipient_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "native_updates": true,
+        "primary_reserve": 22,
+        "revision_reserve": 12,
+        "own_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recipient_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "primary_link_accessible": [
+          true,
+          true
+        ],
+        "replacement_accessible": true,
+        "memory_cells": 8,
+        "adapter": true,
+        "initial_port": true,
+        "revision": false,
+        "scope_loss_before_read": false
+      },
+      "variants": [
+        "active",
+        "inert",
+        "identity_gated",
+        "conventional"
+      ]
+    },
+    {
+      "name": "opposed",
+      "config": {
+        "parent_revision_case": "primary",
+        "own_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "recipient_shortfalls": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "own_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "recipient_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "native_updates": true,
+        "primary_reserve": 22,
+        "revision_reserve": 12,
+        "own_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recipient_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "primary_link_accessible": [
+          true,
+          true
+        ],
+        "replacement_accessible": true,
+        "memory_cells": 8,
+        "adapter": true,
+        "initial_port": true,
+        "revision": false,
+        "scope_loss_before_read": false
+      },
+      "variants": [
+        "active",
+        "inert",
+        "identity_gated",
+        "conventional"
+      ]
+    },
+    {
+      "name": "mixed",
+      "config": {
+        "parent_revision_case": "primary",
+        "own_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "recipient_shortfalls": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "own_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "recipient_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "native_updates": true,
+        "primary_reserve": 22,
+        "revision_reserve": 12,
+        "own_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recipient_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "primary_link_accessible": [
+          true,
+          true
+        ],
+        "replacement_accessible": true,
+        "memory_cells": 8,
+        "adapter": true,
+        "initial_port": true,
+        "revision": false,
+        "scope_loss_before_read": false
+      },
+      "variants": [
+        "active",
+        "inert",
+        "identity_gated",
+        "conventional"
+      ]
+    },
+    {
+      "name": "aligned_revision",
+      "config": {
+        "parent_revision_case": "primary",
+        "own_shortfalls": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "recipient_shortfalls": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "own_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "recipient_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "native_updates": true,
+        "primary_reserve": 22,
+        "revision_reserve": 12,
+        "own_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recipient_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "primary_link_accessible": [
+          true,
+          true
+        ],
+        "replacement_accessible": true,
+        "memory_cells": 8,
+        "adapter": true,
+        "initial_port": true,
+        "revision": true,
+        "scope_loss_before_read": false
+      },
+      "variants": [
+        "active",
+        "frozen_sign",
+        "conventional"
+      ]
+    },
+    {
+      "name": "native_write_disabled",
+      "config": {
+        "parent_revision_case": "primary",
+        "own_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "recipient_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "own_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "recipient_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "native_updates": false,
+        "primary_reserve": 22,
+        "revision_reserve": 12,
+        "own_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recipient_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "primary_link_accessible": [
+          true,
+          true
+        ],
+        "replacement_accessible": true,
+        "memory_cells": 8,
+        "adapter": true,
+        "initial_port": true,
+        "revision": false,
+        "scope_loss_before_read": false
+      },
+      "variants": [
+        "active"
+      ]
+    },
+    {
+      "name": "missing_recipient_acquisition",
+      "config": {
+        "parent_revision_case": "primary",
+        "own_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "recipient_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "own_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "recipient_meter": [
+          "missing",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "native_updates": true,
+        "primary_reserve": 22,
+        "revision_reserve": 12,
+        "own_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recipient_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "primary_link_accessible": [
+          true,
+          true
+        ],
+        "replacement_accessible": true,
+        "memory_cells": 8,
+        "adapter": true,
+        "initial_port": true,
+        "revision": false,
+        "scope_loss_before_read": false
+      },
+      "variants": [
+        "active"
+      ]
+    },
+    {
+      "name": "one_primary_link_accessible",
+      "config": {
+        "parent_revision_case": "primary",
+        "own_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "recipient_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "own_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "recipient_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "native_updates": true,
+        "primary_reserve": 22,
+        "revision_reserve": 12,
+        "own_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recipient_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "primary_link_accessible": [
+          true,
+          false
+        ],
+        "replacement_accessible": true,
+        "memory_cells": 8,
+        "adapter": true,
+        "initial_port": true,
+        "revision": false,
+        "scope_loss_before_read": false
+      },
+      "variants": [
+        "active"
+      ]
+    },
+    {
+      "name": "primary_funding_unavailable",
+      "config": {
+        "parent_revision_case": "primary",
+        "own_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "recipient_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "own_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "recipient_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "native_updates": true,
+        "primary_reserve": 0,
+        "revision_reserve": 12,
+        "own_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recipient_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "primary_link_accessible": [
+          true,
+          true
+        ],
+        "replacement_accessible": true,
+        "memory_cells": 8,
+        "adapter": true,
+        "initial_port": true,
+        "revision": false,
+        "scope_loss_before_read": false
+      },
+      "variants": [
+        "active"
+      ]
+    },
+    {
+      "name": "action_funding_short",
+      "config": {
+        "parent_revision_case": "primary",
+        "own_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "recipient_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "own_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "recipient_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "native_updates": true,
+        "primary_reserve": 17,
+        "revision_reserve": 12,
+        "own_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recipient_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "primary_link_accessible": [
+          true,
+          true
+        ],
+        "replacement_accessible": true,
+        "memory_cells": 8,
+        "adapter": true,
+        "initial_port": true,
+        "revision": false,
+        "scope_loss_before_read": false
+      },
+      "variants": [
+        "active"
+      ]
+    },
+    {
+      "name": "recipient_packet_unavailable",
+      "config": {
+        "parent_revision_case": "primary",
+        "own_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "recipient_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "own_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "recipient_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "native_updates": true,
+        "primary_reserve": 22,
+        "revision_reserve": 12,
+        "own_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recipient_packets": [
+          0,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "primary_link_accessible": [
+          true,
+          true
+        ],
+        "replacement_accessible": true,
+        "memory_cells": 8,
+        "adapter": true,
+        "initial_port": true,
+        "revision": false,
+        "scope_loss_before_read": false
+      },
+      "variants": [
+        "active"
+      ]
+    },
+    {
+      "name": "scope_loss_before_read",
+      "config": {
+        "parent_revision_case": "primary",
+        "own_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "recipient_shortfalls": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "own_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "recipient_meter": [
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful",
+          "faithful"
+        ],
+        "native_updates": true,
+        "primary_reserve": 22,
+        "revision_reserve": 12,
+        "own_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "recipient_packets": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "primary_link_accessible": [
+          true,
+          true
+        ],
+        "replacement_accessible": true,
+        "memory_cells": 8,
+        "adapter": true,
+        "initial_port": true,
+        "revision": false,
+        "scope_loss_before_read": true
+      },
+      "variants": [
+        "active"
+      ]
+    }
+  ]
+}

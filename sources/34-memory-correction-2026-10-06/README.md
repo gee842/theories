@@ -1,0 +1,21 @@
+# Memory correction: primary sources and availability
+
+Preserved 6 October 2026 for **correction → retained/transferred evidence → later decision**. This package contains three versioned papers, two official project pages, and CoMemBench release metadata/documentation/schemas. It contains **no per-example model-output corpus, task dataset, separate attack payload file or executable benchmark run**.
+
+| Primary source | Exact preserved response body | Version / rights |
+|---|---|---|
+| CoMemBench | [Paper HTML](original/CoMemBench-2609.32192v2.html), [official project HTML](original/CoMemBench-project.html) | [arXiv 2609.32192v2](https://arxiv.org/html/2609.32192v2); paper CC BY 4.0 |
+| MemSecBench | [Paper HTML](original/MemSecBench-2607.27080v1.html) | [arXiv 2607.27080v1](https://arxiv.org/html/2607.27080v1); arXiv non-exclusive license; code/data license not verified |
+| Semantic Norm Drift / The Misattribution Gap | [Paper HTML](original/SND-2605.22842v1.html), [official project HTML](original/SND-project.html) | [arXiv 2605.22842v1](https://arxiv.org/html/2605.22842v1); arXiv non-exclusive license; site describes prospective CC BY 4.0 corpus release |
+| CoMemBench public release | [Full API tree](metadata/CoMemBench-HF-tree.json), [revision metadata](metadata/CoMemBench-HF-info.json), [README](original/CoMemBench-HF/README.md), [LICENSE](original/CoMemBench-HF/LICENSE) | Pinned Hugging Face commit `d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016`; task-side CC BY 4.0 subject to upstream terms |
+
+Eight small CoMemBench JSON schemas are preserved: [artifact](original/CoMemBench-HF/schemas/artifact.schema.json), [node view](original/CoMemBench-HF/schemas/node_view.schema.json), [handoff oracle](original/CoMemBench-HF/schemas/handoff_oracle.schema.json), [workflow family](original/CoMemBench-HF/schemas/workflow_family.schema.json), [benchmark instance](original/CoMemBench-HF/schemas/benchmark_instance.schema.json), [case initialization](original/CoMemBench-HF/schemas/case_init.schema.json), [memory proposal](original/CoMemBench-HF/schemas/memory_proposal.schema.json), and [node context](original/CoMemBench-HF/schemas/node_context.schema.json). A schema named “oracle” is a format definition, not the withheld oracle records.
+
+The inspected full Hugging Face tree has 20 files and no model-output/receipt bundles. Its README explicitly excludes evaluation oracles, gold trajectories and pollution plans. Large task-side files were not downloaded. MemSecBench describes retained run bundles, but the primary HTML contained no author repository/release link and bounded exact-name GitHub search located none. For SND, the exact linked [anonymous endpoint](https://anonymous.4open.science/r/Semantic_Norm_Drift-D412) returned an empty web-reader extraction and HTTP 403 to the coordinating agent's direct request. That is an access limit, not proof of corpus absence.
+
+[retrieval.json](metadata/retrieval.json) records all 17 successful saved response bodies, original/final URLs, retrieval times, status, selected HTTP headers, lengths and SHA-256 hashes. It separately records earlier failures and the parent-reported SND access attempt. No challenge/error body was saved as source content. HTML can reference unpreserved assets and includes authors' illustrative examples; it was not executed or rendered as a local app. Original source bytes are preserved without silently substituting our interpretation.
+
+[manifest.json](manifest.json) binds every other package file. [verification.json](metadata/verification.json) checks those source hashes, JSON syntax, pinned revision and current local links. [discovery-provenance.json](metadata/discovery-provenance.json) records the byte-identical relocation of an earlier search memo. That memo is an archived development record whose relative links retain their original root-foundation base; the current note supplies maintained links.
+
+The [current evidence audit](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md) separates source scope, accessible artifacts and our proposed discriminators. Published summary results were already visible during discovery. Preservation is not independent numerical replication, validation of a theorem, or confirmation that repair changes later action.
+

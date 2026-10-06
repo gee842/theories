@@ -1,0 +1,1299 @@
+{
+  "status": "complete",
+  "contexts": 24,
+  "present": 24,
+  "summaries": [
+    {
+      "arm": "ordinary",
+      "state": "confirm",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    },
+    {
+      "arm": "ordinary",
+      "state": "defeat",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    },
+    {
+      "arm": "ordinary",
+      "state": "foreign",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    },
+    {
+      "arm": "boundary",
+      "state": "confirm",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    },
+    {
+      "arm": "boundary",
+      "state": "defeat",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    },
+    {
+      "arm": "boundary",
+      "state": "foreign",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    }
+  ],
+  "fixtures_passing_all_three": {
+    "ordinary": 4,
+    "boundary": 4
+  },
+  "rows": [
+    {
+      "id": "L06-defeat-ordinary",
+      "fixture": "L06",
+      "arm": "ordinary",
+      "state": "defeat",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "response_sha256": "9c28f3ab3c19822ef011e57b2d47ba3d50cd37a8ad00af11fd8e95cffd1a8ddd",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L02-foreign-boundary",
+      "fixture": "L02",
+      "arm": "boundary",
+      "state": "foreign",
+      "present": true,
+      "valid": true,
+      "answers": [
+        "?",
+        "?",
+        0,
+        1,
+        1,
+        "?",
+        "?",
+        0
+      ],
+      "response_sha256": "cc373f79c92fa86e57668cb5d05a0b853a5a131e7644155e5e432c74680618b2",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L08-confirm-ordinary",
+      "fixture": "L08",
+      "arm": "ordinary",
+      "state": "confirm",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "response_sha256": "4e0493613ec03f1adf28dfe4b943bcb82c37ef1e2a96b0dece4518879c66f662",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L12-confirm-boundary",
+      "fixture": "L12",
+      "arm": "boundary",
+      "state": "confirm",
+      "present": true,
+      "valid": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "response_sha256": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L08-confirm-boundary",
+      "fixture": "L08",
+      "arm": "boundary",
+      "state": "confirm",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "response_sha256": "4e0493613ec03f1adf28dfe4b943bcb82c37ef1e2a96b0dece4518879c66f662",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L06-foreign-ordinary",
+      "fixture": "L06",
+      "arm": "ordinary",
+      "state": "foreign",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "response_sha256": "95d23a9b66b46dc8db3fedf5e7b90874dc72655efcb7ee7a5de2a7091c94480d",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L12-foreign-ordinary",
+      "fixture": "L12",
+      "arm": "ordinary",
+      "state": "foreign",
+      "present": true,
+      "valid": true,
+      "answers": [
+        0,
+        1,
+        0,
+        "?",
+        1,
+        "?",
+        "?",
+        "?"
+      ],
+      "response_sha256": "feb0327cdb4f44b31e18c31002fdf86ee8319edcfc9b8b086d510e712b670bd7",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L08-foreign-boundary",
+      "fixture": "L08",
+      "arm": "boundary",
+      "state": "foreign",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        1,
+        0,
+        0,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "response_sha256": "08f5721213370e86ec0cfc5c8acde93850f1a3988f5a261e374ce529b568299b",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L12-confirm-ordinary",
+      "fixture": "L12",
+      "arm": "ordinary",
+      "state": "confirm",
+      "present": true,
+      "valid": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "response_sha256": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L02-foreign-ordinary",
+      "fixture": "L02",
+      "arm": "ordinary",
+      "state": "foreign",
+      "present": true,
+      "valid": true,
+      "answers": [
+        "?",
+        "?",
+        0,
+        1,
+        1,
+        "?",
+        "?",
+        0
+      ],
+      "response_sha256": "cc373f79c92fa86e57668cb5d05a0b853a5a131e7644155e5e432c74680618b2",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L06-foreign-boundary",
+      "fixture": "L06",
+      "arm": "boundary",
+      "state": "foreign",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "response_sha256": "95d23a9b66b46dc8db3fedf5e7b90874dc72655efcb7ee7a5de2a7091c94480d",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L08-defeat-ordinary",
+      "fixture": "L08",
+      "arm": "ordinary",
+      "state": "defeat",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "response_sha256": "39c260c5abf53f9189a3591889d82b6ef052898ad134e9266b8f4d24c453939f",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L02-defeat-boundary",
+      "fixture": "L02",
+      "arm": "boundary",
+      "state": "defeat",
+      "present": true,
+      "valid": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "response_sha256": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L02-confirm-ordinary",
+      "fixture": "L02",
+      "arm": "ordinary",
+      "state": "confirm",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "response_sha256": "90f72e544cef481447d1a2345a23f9e3f5f4d09f9e7557647c9c2c2bcb49b2b3",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L12-foreign-boundary",
+      "fixture": "L12",
+      "arm": "boundary",
+      "state": "foreign",
+      "present": true,
+      "valid": true,
+      "answers": [
+        0,
+        1,
+        0,
+        "?",
+        1,
+        "?",
+        "?",
+        "?"
+      ],
+      "response_sha256": "feb0327cdb4f44b31e18c31002fdf86ee8319edcfc9b8b086d510e712b670bd7",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L02-confirm-boundary",
+      "fixture": "L02",
+      "arm": "boundary",
+      "state": "confirm",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "response_sha256": "90f72e544cef481447d1a2345a23f9e3f5f4d09f9e7557647c9c2c2bcb49b2b3",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L06-confirm-boundary",
+      "fixture": "L06",
+      "arm": "boundary",
+      "state": "confirm",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "response_sha256": "9c2b828e5e83059e04700221b0fd16ecef43df109391c5fd9408d00df0bd1d87",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L06-confirm-ordinary",
+      "fixture": "L06",
+      "arm": "ordinary",
+      "state": "confirm",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "response_sha256": "9c2b828e5e83059e04700221b0fd16ecef43df109391c5fd9408d00df0bd1d87",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L08-foreign-ordinary",
+      "fixture": "L08",
+      "arm": "ordinary",
+      "state": "foreign",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        1,
+        0,
+        0,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "response_sha256": "08f5721213370e86ec0cfc5c8acde93850f1a3988f5a261e374ce529b568299b",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L12-defeat-ordinary",
+      "fixture": "L12",
+      "arm": "ordinary",
+      "state": "defeat",
+      "present": true,
+      "valid": true,
+      "answers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "response_sha256": "13ef34de08278faaf11b03371357f3f51c2c4b3f8a320ff22f86ca065b66af3b",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L06-defeat-boundary",
+      "fixture": "L06",
+      "arm": "boundary",
+      "state": "defeat",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "response_sha256": "9c28f3ab3c19822ef011e57b2d47ba3d50cd37a8ad00af11fd8e95cffd1a8ddd",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L12-defeat-boundary",
+      "fixture": "L12",
+      "arm": "boundary",
+      "state": "defeat",
+      "present": true,
+      "valid": true,
+      "answers": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "response_sha256": "13ef34de08278faaf11b03371357f3f51c2c4b3f8a320ff22f86ca065b66af3b",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L02-defeat-ordinary",
+      "fixture": "L02",
+      "arm": "ordinary",
+      "state": "defeat",
+      "present": true,
+      "valid": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "response_sha256": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    },
+    {
+      "id": "L08-defeat-boundary",
+      "fixture": "L08",
+      "arm": "boundary",
+      "state": "defeat",
+      "present": true,
+      "valid": true,
+      "answers": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "response_sha256": "39c260c5abf53f9189a3591889d82b6ef052898ad134e9266b8f4d24c453939f",
+      "entry_correct": 8,
+      "complete_correct": 1,
+      "distinguishing_correct": 4,
+      "common_correct": 4
+    }
+  ],
+  "deterministic_comparators": [
+    {
+      "id": "L06-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L06-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "base_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L06-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-foreign-boundary",
+      "state": "foreign",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L02-foreign-boundary",
+      "state": "foreign",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-foreign-boundary",
+      "state": "foreign",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-foreign-boundary",
+      "state": "foreign",
+      "comparator": "abstain_all",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L08-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "packet_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L08-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-confirm-boundary",
+      "state": "confirm",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L12-confirm-boundary",
+      "state": "confirm",
+      "comparator": "packet_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L12-confirm-boundary",
+      "state": "confirm",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-confirm-boundary",
+      "state": "confirm",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-confirm-boundary",
+      "state": "confirm",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L08-confirm-boundary",
+      "state": "confirm",
+      "comparator": "packet_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L08-confirm-boundary",
+      "state": "confirm",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-confirm-boundary",
+      "state": "confirm",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L06-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "abstain_all",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L12-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "abstain_all",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-foreign-boundary",
+      "state": "foreign",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L08-foreign-boundary",
+      "state": "foreign",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-foreign-boundary",
+      "state": "foreign",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-foreign-boundary",
+      "state": "foreign",
+      "comparator": "abstain_all",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L12-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "packet_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L12-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L02-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "abstain_all",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-foreign-boundary",
+      "state": "foreign",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L06-foreign-boundary",
+      "state": "foreign",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-foreign-boundary",
+      "state": "foreign",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-foreign-boundary",
+      "state": "foreign",
+      "comparator": "abstain_all",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L08-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "base_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L08-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-defeat-boundary",
+      "state": "defeat",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L02-defeat-boundary",
+      "state": "defeat",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-defeat-boundary",
+      "state": "defeat",
+      "comparator": "base_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L02-defeat-boundary",
+      "state": "defeat",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L02-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "packet_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L02-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-foreign-boundary",
+      "state": "foreign",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L12-foreign-boundary",
+      "state": "foreign",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-foreign-boundary",
+      "state": "foreign",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-foreign-boundary",
+      "state": "foreign",
+      "comparator": "abstain_all",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-confirm-boundary",
+      "state": "confirm",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L02-confirm-boundary",
+      "state": "confirm",
+      "comparator": "packet_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L02-confirm-boundary",
+      "state": "confirm",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-confirm-boundary",
+      "state": "confirm",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-confirm-boundary",
+      "state": "confirm",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L06-confirm-boundary",
+      "state": "confirm",
+      "comparator": "packet_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L06-confirm-boundary",
+      "state": "confirm",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-confirm-boundary",
+      "state": "confirm",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L06-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "packet_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L06-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-confirm-ordinary",
+      "state": "confirm",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L08-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "base_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-foreign-ordinary",
+      "state": "foreign",
+      "comparator": "abstain_all",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L12-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "base_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L12-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-defeat-boundary",
+      "state": "defeat",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L06-defeat-boundary",
+      "state": "defeat",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L06-defeat-boundary",
+      "state": "defeat",
+      "comparator": "base_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L06-defeat-boundary",
+      "state": "defeat",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-defeat-boundary",
+      "state": "defeat",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L12-defeat-boundary",
+      "state": "defeat",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L12-defeat-boundary",
+      "state": "defeat",
+      "comparator": "base_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L12-defeat-boundary",
+      "state": "defeat",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L02-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L02-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "base_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L02-defeat-ordinary",
+      "state": "defeat",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-defeat-boundary",
+      "state": "defeat",
+      "comparator": "finite_candidates",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L08-defeat-boundary",
+      "state": "defeat",
+      "comparator": "packet_copy",
+      "entry_correct": 4,
+      "complete_correct": 0
+    },
+    {
+      "id": "L08-defeat-boundary",
+      "state": "defeat",
+      "comparator": "base_copy",
+      "entry_correct": 8,
+      "complete_correct": 1
+    },
+    {
+      "id": "L08-defeat-boundary",
+      "state": "defeat",
+      "comparator": "abstain_all",
+      "entry_correct": 0,
+      "complete_correct": 0
+    }
+  ]
+}

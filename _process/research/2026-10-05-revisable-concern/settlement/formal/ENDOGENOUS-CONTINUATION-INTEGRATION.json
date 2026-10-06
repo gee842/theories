@@ -1,0 +1,437 @@
+{
+  "status": "pass",
+  "date": "2026-10-06",
+  "checked_utc": "2026-10-06T02:11:34.839839+00:00",
+  "named_connection": "justified protection -> continued selection under action-dependent future opportunities/power",
+  "scope": "General conditional written verification proofs, independent internal review, exact authored numerical illustrations and repository integration. No empirical observation, full-R2 extension equilibrium or completed alignment claim.",
+  "previous_goal_turn": "progress: historical notice extension completed and integrated; this round selects the preserved next strategic premise.",
+  "canonical_original": {
+    "commit": "6e175ebd38ffce14bd22f581de75ae31aaf9198b",
+    "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+    "git_blob": "cada73f0cf9801b7ca87f3d6bd145a78e056bfa1",
+    "sha256": "7908cb846110d265eb7b6c741f7da60b48e93891da6462b18304f4a7ee8c45a0",
+    "exact_reconstruction_from_current": true
+  },
+  "original_REPORT_unchanged": true,
+  "review_binds_current_proof_canonical_and_experiment": true,
+  "exact_checks": {
+    "cases": 7,
+    "stationary_policies": 16,
+    "method": "rational policy-equation solve, all-action Bellman residuals, finite-policy comparison, closed-form equality checks; reviewer separately inspected all values and signs",
+    "negative_checks": [
+      "invented continuation rejected",
+      "missing off-path state rejected",
+      "on-path-only candidate rejected at its feasible off-path node",
+      "noncredible deterrence distinguished from backward-induction outcome"
+    ],
+    "scope": "Numerical illustrations, not proof of the general propositions or an implementation of the full strategic economy."
+  },
+  "source_package": {
+    "path": "sources/35-endogenous-continuation-comparators-2026-10-06",
+    "manifest_bound_files": 3,
+    "original_PDF_count": 1,
+    "manifest_sha256": "f553c197080fe1a8e81f8880667f96c6ca8a4c40f5241568152eddc01cb73f8e",
+    "version_limit": "Published paper differs from readable submission; preservation is not verification of every supplementary proof."
+  },
+  "documents": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "bytes": 23260,
+      "sha256": "883bfbbe5c01c70088eee44c94c41f9ac425c58108b70d88ac329072e5b92c85"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "bytes": 18949,
+      "sha256": "1f74461cada69c3821a9dbe76a8baea0b3120fa74e47e7a5446729e4ccfa1385"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "bytes": 15860,
+      "sha256": "77ccf64c2cc3312f4602eb3a59414ea7b47b6545754b43f7f350a500da1f217f"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "bytes": 8216,
+      "sha256": "62aa0d2811b58d4d938f956382b3ac6d08423c822ff0ef28fc79d280ab3d5a56"
+    },
+    {
+      "path": "experiments/integrated-correction/endogenous-continuation/README.md",
+      "bytes": 4680,
+      "sha256": "8e3eb2f9e311793e428f1a1739a41549f9eb8fb2d2f51ee9c4b4597e0147edd3"
+    },
+    {
+      "path": "sources/35-endogenous-continuation-comparators-2026-10-06/README.md",
+      "bytes": 1239,
+      "sha256": "62d375afb7027a1772f07c8efe942816f90c0f703202b5829a981590200855dd"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-INTEGRATION-EDITS.json",
+      "bytes": 8238,
+      "sha256": "9f6f0d220421b7d1d54b3121cc29a3deb0041ee6170a911bcbe128a986c36a5d"
+    },
+    {
+      "path": "experiments/integrated-correction/endogenous-continuation/check_continuations.py",
+      "bytes": 8324,
+      "sha256": "1e6ba8b013cd4129485db558b317d219db3fcff805f41f8193f154dd9da0e7b1"
+    },
+    {
+      "path": "experiments/integrated-correction/endogenous-continuation/fixtures.json",
+      "bytes": 2867,
+      "sha256": "5002b75545a575c6285fb8c401a9a9e6f71820f8d8387625a2a4cbf7c9b19fd5"
+    },
+    {
+      "path": "experiments/integrated-correction/endogenous-continuation/results.json",
+      "bytes": 18089,
+      "sha256": "274c31b65531faa9d31fb8952afaa0eb911ac236693b85fb9a6cec6cbb9c1388"
+    },
+    {
+      "path": "sources/35-endogenous-continuation-comparators-2026-10-06/manifest.json",
+      "bytes": 913,
+      "sha256": "f553c197080fe1a8e81f8880667f96c6ca8a4c40f5241568152eddc01cb73f8e"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/REPORT.md",
+      "bytes": 27227,
+      "sha256": "3f2256fa7570d3d3892a9817e21c5990dbbcb53ab972526a5f57443459154a77"
+    }
+  ],
+  "index_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "paragraph_sha256": "e1f317fead27921c4f6a125ca31fefc2da14b123a862f5a95b5424ef08a2c89f"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "paragraph_sha256": "fc6c9f8621c37d5d0fe9059a9f466ebc97b77a69008ac9af121b0c7ba72eebe8"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "paragraph_sha256": "cc078469144725a6c8e66d05006516457b9fd5b22c10cee5c1dd705d95f01385"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "paragraph_sha256": "e9db6575a15845e1a3b1165f973395464dcce0feeab0d9b230b93ca4a27e57b0"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "paragraph_sha256": "af6293b4cdf258125a9917a21a899a89c889f8f02e079c21c6970a112fae2f23"
+    },
+    {
+      "path": "_process/research/2026-10-05-revisable-concern/settlement/README.md",
+      "paragraph_sha256": "c72528f723948c926e34d495765ec02b0bf0c8250b836c4345981087f347d1c1"
+    },
+    {
+      "path": "experiments/README.md",
+      "paragraph_sha256": "64b34e6ea4624046b9a2d9c2b77b12596262f536ed3c1c55b1d235e9c5f482f8"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "paragraph_sha256": "45601feabf9705cc5266090f169487696eddee5cbf0a3df566b8f27efea1509d"
+    }
+  ],
+  "local_links_and_anchors_checked": 60,
+  "local_links": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "THEORY.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "JOINT-FORMATION.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/THEORY.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/README.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/formal/REPORT.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/formal/FEATURE-CONSTRUCTION.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "REASON-PROTECTION.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "../../../experiments/integrated-correction/endogenous-continuation/README.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/normative/FOUNDATION.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/normative/decision-math.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/evidence/report.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "target": "REPORT.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "target": "REASON-PROTECTION-MATH.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "target": "../../../2026-10-05-generative-foundation-review/root-foundation/development/GOVERNANCE-CONTINUATION-GAP.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "target": "../../../2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md#11-bounded-completion-accounting-after-generic-correction-reuse",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "target": "ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "target": "ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "target": "../../../../../experiments/integrated-correction/endogenous-continuation/check_continuations.py",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "target": "../../../../../experiments/integrated-correction/endogenous-continuation/results.json",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "target": "REPORT.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "target": "REASON-PROTECTION-MATH.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "target": "../../../2026-10-05-generative-foundation-review/root-foundation/development/GOVERNANCE-CONTINUATION-GAP.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "target": "ENDOGENOUS-CONTINUATION-MATH.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "target": "../../../../../experiments/integrated-correction/endogenous-continuation/fixtures.json",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "target": "../../../../../experiments/integrated-correction/endogenous-continuation/check_continuations.py",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "target": "../../../../../experiments/integrated-correction/endogenous-continuation/results.json",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "target": "ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "target": "../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "target": "../../../../../experiments/integrated-correction/endogenous-continuation/README.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "target": "REPORT.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "target": "../../../2026-10-05-generative-foundation-review/root-foundation/development/GOVERNANCE-CONTINUATION-GAP.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "target": "REASON-PROTECTION-MATH.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "target": "../../../../../sources/35-endogenous-continuation-comparators-2026-10-06/README.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "experiments/integrated-correction/endogenous-continuation/README.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/README.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "experiments/integrated-correction/endogenous-continuation/README.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "experiments/integrated-correction/endogenous-continuation/README.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "experiments/integrated-correction/endogenous-continuation/README.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "experiments/integrated-correction/endogenous-continuation/README.md",
+      "target": "fixtures.json",
+      "scope": "whole current document"
+    },
+    {
+      "document": "experiments/integrated-correction/endogenous-continuation/README.md",
+      "target": "check_continuations.py",
+      "scope": "whole current document"
+    },
+    {
+      "document": "experiments/integrated-correction/endogenous-continuation/README.md",
+      "target": "results.json",
+      "scope": "whole current document"
+    },
+    {
+      "document": "sources/35-endogenous-continuation-comparators-2026-10-06/README.md",
+      "target": "original/turner-et-al-2021-neurips.pdf",
+      "scope": "whole current document"
+    },
+    {
+      "document": "sources/35-endogenous-continuation-comparators-2026-10-06/README.md",
+      "target": "provenance.json",
+      "scope": "whole current document"
+    },
+    {
+      "document": "sources/35-endogenous-continuation-comparators-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "scope": "whole current document"
+    },
+    {
+      "document": "sources/35-endogenous-continuation-comparators-2026-10-06/README.md",
+      "target": "manifest.json",
+      "scope": "whole current document"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md#actions-that-change-future-opportunities",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md#actions-that-change-future-opportunities",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "REVISABLE-CONCERN-SETTLEMENT.md#actions-that-change-future-opportunities",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "REVISABLE-CONCERN-SETTLEMENT.md#actions-that-change-future-opportunities",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "target": "REVISABLE-CONCERN-SETTLEMENT.md#actions-that-change-future-opportunities",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/README.md",
+      "target": "formal/ENDOGENOUS-CONTINUATION-MATH.md",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/README.md",
+      "target": "formal/ENDOGENOUS-CONTINUATION-REVIEW.md",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/README.md",
+      "target": "formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/README.md",
+      "target": "../../../../experiments/integrated-correction/endogenous-continuation/README.md",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-revisable-concern/settlement/README.md",
+      "target": "formal/ENDOGENOUS-CONTINUATION-INTEGRATION.json",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "experiments/README.md",
+      "target": "integrated-correction/endogenous-continuation/README.md",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "35-endogenous-continuation-comparators-2026-10-06/README.md",
+      "scope": "inserted paragraph only"
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+      "scope": "inserted paragraph only"
+    }
+  ],
+  "next_connection": "Justified application/revision of concern and integrated premise/composition/regime/evidence account; separately accepted finite evaluative-succession bridge is credited, not reopened.",
+  "completion_status": "Unified foundation ongoing; unchanged five conditions, no new gate."
+}

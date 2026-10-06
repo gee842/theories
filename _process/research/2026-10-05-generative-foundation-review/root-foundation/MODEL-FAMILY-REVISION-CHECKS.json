@@ -1,0 +1,32 @@
+{
+  "scope": "document/link/snapshot and scientific receipt currency only",
+  "documents_or_owned_sections": 16,
+  "local_links": 63,
+  "anchors": 1,
+  "formula_delimiters": "balanced",
+  "full_file_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MODEL-FAMILY-REVISION.md": "2b3eccba02dd7a3ea5ef28230f15a7dbc53084a1f1a12f008f7b80fdc8b89e41",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-FAMILY-REVISION-MATH.md": "6fe25cb70d0ce909a8d72d448e494369f16568a798c92e56869f3ae79dcf25f8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-FAMILY-REVISION-REVIEW.md": "b4329a54419fd2ae7ad68b418d0ccd983cffb9294a94fbddc34a30ffc03213fd",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-FAMILY-REVISION-COMPARATORS.md": "6a485f6de66ad094d5adf36d4d4c6c2a2113a523891138dfefcb128e544fdd91",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/README.md": "3dc5c0002f949923a43758176bf403f62022805cb47c26e4aac6372cf2edd895",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/PROTOCOL.md": "b0dafdd464ee70d26c43e0ec6cedc5e7af8a4b050a7ac753028d1359464b63f5",
+    "sources/15-codex-theory-conversations/2026-10-06-model-family-revision-continuation.md": "fdd6d2fa86bd896b03b2da73ad199eacd473872083a3354c8774a409fb52c4d9"
+  },
+  "owned_section_sha256": {
+    "RESEARCH.md": "6ca9f8a1b7fc8b82bbe72a0450099389c357088488f63e3db124206838f18d65",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "5c0434606032f801970edd4f43bfa8f5e22557e70db90112eb66a015cbf9c7ca",
+    "theories/shengsheng-buxi-generative-existence/README.md": "3445dbc4a6bfbb216ad82c63ebd0c14eac7f922af4bbcc2dd4fac4d369372eb7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "da1b851911644d0109439716c0cca0038d1a25c10cc208a6bb4629aca93c4c5c",
+    "sources/SOURCES.md": "4bb0034a12c6d6c78875ba0218179929aef029492d336868cf436b705d6bec9a",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPERIMENTAL-ACCESS.md": "f839a427b8d13563ab21c134128fccf4cccaee82177833541bc4271de94c20c5",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/README.md": "7cfca684991560fe4e6b9640f202f0bcd4cd1a492c891e83684036271ea8d1c3",
+    "experiments/README.md": "204a86117b798ea2729d4e7c60c00f30014917ad67f7661e8b26cd193fc5487c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICS-REVIEW.md": "5adaa6064492822765e13d39a12a1ff95b82fa926019f06c915fdcdfcd5979aa"
+  },
+  "scientific_receipt_sha256": {
+    "results.json": "96345ccf6d803ea51701da64f787ec7ca5d2c1b374b17595b5288878bf937b3a",
+    "independent-check.json": "fe0e6cbc2594a1547ed79216fad9822a19428b61dc63729df9175aebd49de367"
+  },
+  "checker_sha256": "9858eb67ff4104abcb742df64ef133bc78b66e8a102790fd56bdc67efd9ef176"
+}

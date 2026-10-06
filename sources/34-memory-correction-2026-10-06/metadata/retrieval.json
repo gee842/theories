@@ -1,0 +1,306 @@
+{
+  "scope": "Primary articles/project pages and public schema/release metadata only; no task corpus, attack payload file, model-output aggregate or execution.",
+  "CoMemBench_revision": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016",
+  "requests": [
+    {
+      "path": "original/CoMemBench-2609.32192v2.html",
+      "requested_url": "https://arxiv.org/html/2609.32192v2",
+      "final_url": "https://arxiv.org/html/2609.32192v2",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.279331+00:00",
+      "headers": {
+        "Content-Length": "372298",
+        "last-modified": "Wed, 30 Sep 2026 01:47:06 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://arxiv.org/html/2609.32192>; rel='canonical'",
+        "etag": "\"COv9/c+XlZcDEAE=\""
+      },
+      "bytes": 372298,
+      "sha256": "f91196fe62bd802f6d84b2c1c2dd721a62290df09849ffd8dd7a67206cb00f11",
+      "body_preserved": true
+    },
+    {
+      "path": "original/MemSecBench-2607.27080v1.html",
+      "requested_url": "https://arxiv.org/html/2607.27080v1",
+      "final_url": "https://arxiv.org/html/2607.27080v1",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.279766+00:00",
+      "headers": {
+        "Content-Length": "431977",
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://arxiv.org/html/2607.27080>; rel='canonical'",
+        "last-modified": "Mon, 24 Aug 2026 19:27:18 GMT",
+        "etag": "\"CJ/5sMv/uZYDEAE=\""
+      },
+      "bytes": 431977,
+      "sha256": "dc7dac46e476f65d731dad380e2b2d09471d07dda36497aaf5fd5c1684f13161",
+      "body_preserved": true
+    },
+    {
+      "path": "original/SND-2605.22842v1.html",
+      "requested_url": "https://arxiv.org/html/2605.22842v1",
+      "final_url": "https://arxiv.org/html/2605.22842v1",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.280014+00:00",
+      "headers": {
+        "Content-Length": "571541",
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://arxiv.org/html/2605.22842>; rel='canonical'",
+        "last-modified": "Mon, 24 Aug 2026 18:36:40 GMT",
+        "etag": "\"CM6s8qL0uZYDEAE=\""
+      },
+      "bytes": 571541,
+      "sha256": "255de7d2504274e82848b22b5840eb6c4cc8466bbe0a849df95d9a74c604c303",
+      "body_preserved": true
+    },
+    {
+      "path": "original/CoMemBench-project.html",
+      "requested_url": "https://comembench.world/",
+      "final_url": "https://comembench.world/",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.280187+00:00",
+      "headers": {
+        "Content-Length": "160161",
+        "Content-Type": "text/html; charset=utf-8",
+        "Last-Modified": "Thu, 01 Oct 2026 13:03:59 GMT",
+        "ETag": "\"6abe5a3f-271a1\""
+      },
+      "bytes": 160161,
+      "sha256": "9070367273e3343808f42a82a7aa138aab9fad863529fa7f4f07102fafcd2570",
+      "body_preserved": true
+    },
+    {
+      "path": "original/SND-project.html",
+      "requested_url": "https://supreme-lab.github.io/snd/",
+      "final_url": "https://supreme-lab.github.io/snd/",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.280352+00:00",
+      "headers": {
+        "Content-Length": "38653",
+        "Content-Type": "text/html; charset=utf-8",
+        "Last-Modified": "Sat, 06 Jun 2026 20:28:00 GMT",
+        "ETag": "\"6a2482d0-96fd\""
+      },
+      "bytes": 38653,
+      "sha256": "4f17829b5c9bcd7a6d650c7316cd15850b26d80f8615a661edd2d92103ee7409",
+      "body_preserved": true
+    },
+    {
+      "path": "metadata/CoMemBench-HF-tree.json",
+      "requested_url": "https://huggingface.co/api/datasets/anonymous-submission-333/anonymous-submission/tree/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016?recursive=true&expand=false",
+      "final_url": "https://huggingface.co/api/datasets/anonymous-submission-333/anonymous-submission/tree/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016?recursive=true&expand=false",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.357720+00:00",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "2877",
+        "ETag": "W/\"b3d-lK6XQq8GUxzAR7b+UOePgVWNrFg\""
+      },
+      "bytes": 2877,
+      "sha256": "2f262292606fae576632a47845f7d09274e60b02e028b87edb755efade6d7acc",
+      "body_preserved": true
+    },
+    {
+      "path": "metadata/CoMemBench-HF-info.json",
+      "requested_url": "https://huggingface.co/api/datasets/anonymous-submission-333/anonymous-submission/revision/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016",
+      "final_url": "https://huggingface.co/api/datasets/anonymous-submission-333/anonymous-submission/revision/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.404556+00:00",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "2504",
+        "ETag": "W/\"9c8-N+LFP1iE/4gelvfdzpf1rty2/GY\""
+      },
+      "bytes": 2504,
+      "sha256": "4ad31e8e6ed147217a0475e0f9a682b1302d02fd7b4be5c33bd89e0f3c9d866d",
+      "body_preserved": true
+    },
+    {
+      "path": "original/CoMemBench-HF/README.md",
+      "requested_url": "https://huggingface.co/datasets/anonymous-submission-333/anonymous-submission/resolve/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/README.md",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/anonymous-submission-333/anonymous-submission/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/README.md?%2Fdatasets%2Fanonymous-submission-333%2Fanonymous-submission%2Fresolve%2Fd1cef0fb70ada0ddf9b80d23aa30ed86ee56e016%2FREADME.md=&etag=%22dd1063a3b603754f4db8b98b3dc40ef5f8e4a84c%22",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.665696+00:00",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "12888",
+        "ETag": "\"dd1063a3b603754f4db8b98b3dc40ef5f8e4a84c\"",
+        "X-Repo-Commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016"
+      },
+      "bytes": 12888,
+      "sha256": "28c26212f89f337872fa44da01ed6d0718ee396c4daaf429f3c2df0275ac842c",
+      "body_preserved": true
+    },
+    {
+      "path": "original/CoMemBench-HF/LICENSE",
+      "requested_url": "https://huggingface.co/datasets/anonymous-submission-333/anonymous-submission/resolve/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/LICENSE",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/anonymous-submission-333/anonymous-submission/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/LICENSE?%2Fdatasets%2Fanonymous-submission-333%2Fanonymous-submission%2Fresolve%2Fd1cef0fb70ada0ddf9b80d23aa30ed86ee56e016%2FLICENSE=&etag=%22dc098f9f79c934f7c85b5ede80e704d2896edd17%22",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.666070+00:00",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "1057",
+        "ETag": "\"dc098f9f79c934f7c85b5ede80e704d2896edd17\"",
+        "X-Repo-Commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016"
+      },
+      "bytes": 1057,
+      "sha256": "5b500df238003f2911ca1a130b7e6ed8c494f3ed08efc704d126936533724a00",
+      "body_preserved": true
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/artifact.schema.json",
+      "requested_url": "https://huggingface.co/datasets/anonymous-submission-333/anonymous-submission/resolve/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas/artifact.schema.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/anonymous-submission-333/anonymous-submission/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas%2Fartifact.schema.json?%2Fdatasets%2Fanonymous-submission-333%2Fanonymous-submission%2Fresolve%2Fd1cef0fb70ada0ddf9b80d23aa30ed86ee56e016%2Fschemas%2Fartifact.schema.json=&etag=%22cdd54130dd053569ee46c29a9d592d31e677f448%22",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.680858+00:00",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "1956",
+        "ETag": "\"cdd54130dd053569ee46c29a9d592d31e677f448\"",
+        "X-Repo-Commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016"
+      },
+      "bytes": 1956,
+      "sha256": "ba5ad0f236911283c44bce7098e2479672c06ffddd3dd7e28041693934d97eeb",
+      "body_preserved": true
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/node_view.schema.json",
+      "requested_url": "https://huggingface.co/datasets/anonymous-submission-333/anonymous-submission/resolve/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas/node_view.schema.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/anonymous-submission-333/anonymous-submission/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas%2Fnode_view.schema.json?%2Fdatasets%2Fanonymous-submission-333%2Fanonymous-submission%2Fresolve%2Fd1cef0fb70ada0ddf9b80d23aa30ed86ee56e016%2Fschemas%2Fnode_view.schema.json=&etag=%222aa2a97c9b5491fde78b5fb6130a6aa9eabf1a11%22",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.686893+00:00",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "4558",
+        "ETag": "\"2aa2a97c9b5491fde78b5fb6130a6aa9eabf1a11\"",
+        "X-Repo-Commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016"
+      },
+      "bytes": 4558,
+      "sha256": "8858b8d15e049d361aa9da05e547dde70e4c6971266a7020018923621719ecd9",
+      "body_preserved": true
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/handoff_oracle.schema.json",
+      "requested_url": "https://huggingface.co/datasets/anonymous-submission-333/anonymous-submission/resolve/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas/handoff_oracle.schema.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/anonymous-submission-333/anonymous-submission/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas%2Fhandoff_oracle.schema.json?%2Fdatasets%2Fanonymous-submission-333%2Fanonymous-submission%2Fresolve%2Fd1cef0fb70ada0ddf9b80d23aa30ed86ee56e016%2Fschemas%2Fhandoff_oracle.schema.json=&etag=%227b4538b3dba063165ef5303e56b3d5462ecea80b%22",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:29.730178+00:00",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "1830",
+        "ETag": "\"7b4538b3dba063165ef5303e56b3d5462ecea80b\"",
+        "X-Repo-Commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016"
+      },
+      "bytes": 1830,
+      "sha256": "e4dcb8329685784f448297e19b104ca0cfe58ed5fe90a3064f1a6a2d566d8fe1",
+      "body_preserved": true
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/workflow_family.schema.json",
+      "requested_url": "https://huggingface.co/datasets/anonymous-submission-333/anonymous-submission/resolve/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas/workflow_family.schema.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/anonymous-submission-333/anonymous-submission/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas%2Fworkflow_family.schema.json?%2Fdatasets%2Fanonymous-submission-333%2Fanonymous-submission%2Fresolve%2Fd1cef0fb70ada0ddf9b80d23aa30ed86ee56e016%2Fschemas%2Fworkflow_family.schema.json=&etag=%224e6e371e8963ee380b8e81f332dac7bed7fd4860%22",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:30.285916+00:00",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "7747",
+        "ETag": "\"4e6e371e8963ee380b8e81f332dac7bed7fd4860\"",
+        "X-Repo-Commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016"
+      },
+      "bytes": 7747,
+      "sha256": "2e652b4c5315f6e72639b661feaa3e476d60d773c56e2506482ad2f204b392c2",
+      "body_preserved": true
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/benchmark_instance.schema.json",
+      "requested_url": "https://huggingface.co/datasets/anonymous-submission-333/anonymous-submission/resolve/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas/benchmark_instance.schema.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/anonymous-submission-333/anonymous-submission/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas%2Fbenchmark_instance.schema.json?%2Fdatasets%2Fanonymous-submission-333%2Fanonymous-submission%2Fresolve%2Fd1cef0fb70ada0ddf9b80d23aa30ed86ee56e016%2Fschemas%2Fbenchmark_instance.schema.json=&etag=%22ec2035c08a416390091494c87f857e45a4de26bf%22",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:30.294581+00:00",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "1030",
+        "ETag": "\"ec2035c08a416390091494c87f857e45a4de26bf\"",
+        "X-Repo-Commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016"
+      },
+      "bytes": 1030,
+      "sha256": "7bb12cfb892711effa7510f04fcac170191a1e4179b3827c6f52864952322f0c",
+      "body_preserved": true
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/case_init.schema.json",
+      "requested_url": "https://huggingface.co/datasets/anonymous-submission-333/anonymous-submission/resolve/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas/case_init.schema.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/anonymous-submission-333/anonymous-submission/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas%2Fcase_init.schema.json?%2Fdatasets%2Fanonymous-submission-333%2Fanonymous-submission%2Fresolve%2Fd1cef0fb70ada0ddf9b80d23aa30ed86ee56e016%2Fschemas%2Fcase_init.schema.json=&etag=%22f395eefc49621be6a65a007db78674987fe0115c%22",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:30.318850+00:00",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "891",
+        "ETag": "\"f395eefc49621be6a65a007db78674987fe0115c\"",
+        "X-Repo-Commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016"
+      },
+      "bytes": 891,
+      "sha256": "a71cddf477b37a73cfe926434057e85b5767625959018658c04407e0802db7a2",
+      "body_preserved": true
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/memory_proposal.schema.json",
+      "requested_url": "https://huggingface.co/datasets/anonymous-submission-333/anonymous-submission/resolve/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas/memory_proposal.schema.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/anonymous-submission-333/anonymous-submission/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas%2Fmemory_proposal.schema.json?%2Fdatasets%2Fanonymous-submission-333%2Fanonymous-submission%2Fresolve%2Fd1cef0fb70ada0ddf9b80d23aa30ed86ee56e016%2Fschemas%2Fmemory_proposal.schema.json=&etag=%22d857eec4ff1af3eb2c0ca2124d76f6ac9b21be28%22",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:30.375753+00:00",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "844",
+        "ETag": "\"d857eec4ff1af3eb2c0ca2124d76f6ac9b21be28\"",
+        "X-Repo-Commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016"
+      },
+      "bytes": 844,
+      "sha256": "12bd924866b35b20cefb43a06f2458aa68aca7a16a729714894d5bd9d1c53fbc",
+      "body_preserved": true
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/node_context.schema.json",
+      "requested_url": "https://huggingface.co/datasets/anonymous-submission-333/anonymous-submission/resolve/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas/node_context.schema.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/datasets/anonymous-submission-333/anonymous-submission/d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016/schemas%2Fnode_context.schema.json?%2Fdatasets%2Fanonymous-submission-333%2Fanonymous-submission%2Fresolve%2Fd1cef0fb70ada0ddf9b80d23aa30ed86ee56e016%2Fschemas%2Fnode_context.schema.json=&etag=%2225a866db2dc58a9f21c3db2bb4487dd3bab74f08%22",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T01:00:30.480792+00:00",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "884",
+        "ETag": "\"25a866db2dc58a9f21c3db2bb4487dd3bab74f08\"",
+        "X-Repo-Commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016"
+      },
+      "bytes": 884,
+      "sha256": "bd2987b7f62bb08102ccd73d8a572e319c54b7099c338295db6b40e173e4491d",
+      "body_preserved": true
+    }
+  ],
+  "earlier_access_limits": [
+    {
+      "resource": "http://comembench.world",
+      "method": "web reader",
+      "result": "Internal error; HTTPS source subsequently accessible"
+    },
+    {
+      "resource": "CoMemBench Hugging Face landing page",
+      "method": "web reader",
+      "result": "Internal error; API and pinned raw files accessible"
+    },
+    {
+      "resource": "https://anonymous.4open.science/r/Semantic_Norm_Drift-D412",
+      "method": "parent web reader",
+      "result": "Empty extracted page (0 lines)"
+    },
+    {
+      "resource": "https://anonymous.4open.science/r/Semantic_Norm_Drift-D412/",
+      "method": "parent urllib GET with25s timeout",
+      "result": "HTTP403 immediately; no body retained"
+    },
+    {
+      "resource": "GitHub repository search for exact CoMemBench or MemSecBench",
+      "method": "public search API",
+      "result": "zero repository items for each at discovery time; not exhaustive proof of absence"
+    }
+  ]
+}

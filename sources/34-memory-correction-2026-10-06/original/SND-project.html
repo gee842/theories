@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Misattribution Gap — Memory Poisoning in Agentic AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --white:   #ffffff;
+      --off:     #f7f6f3;
+      --ink:     #111110;
+      --mid:     #555552;
+      --light:   #aaa8a0;
+      --rule:    #e2e0db;
+      --accent:  #c0392b;          /* deep red — danger / security */
+      --accent2: #1a3a5c;          /* navy — authority / trust */
+      --accent3: #2d6a4f;          /* forest green — verified / defense */
+      --mono:    'DM Mono', monospace;
+      --serif:   'EB Garamond', Georgia, serif;
+      --sans:    'Syne', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; font-size: 17px; }
+
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: var(--serif);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Typography ── */
+    h1, h2, h3, h4 { font-family: var(--sans); line-height: 1.15; }
+    h2 { font-size: clamp(1.25rem, 3vw, 1.65rem); font-weight: 700; letter-spacing: -0.01em; }
+    h3 { font-size: clamp(1rem, 2.5vw, 1.2rem); font-weight: 600; }
+    p  { font-size: clamp(0.95rem, 2vw, 1.05rem); }
+
+    a  { color: var(--accent2); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: var(--accent); }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 5vw, 2.5rem);
+    }
+
+    section { padding: 3.5rem 0; border-top: 1px solid var(--rule); }
+    section:first-of-type { border-top: none; }
+
+    /* ── Header / Hero ── */
+    .site-header {
+      padding: 2rem 0 0;
+      background: var(--white);
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .venue-tag {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--accent);
+      padding: 0.25em 0.7em;
+      border-radius: 2px;
+    }
+
+    .venue-label {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--mid);
+      letter-spacing: 0.06em;
+    }
+
+    .hero { padding-bottom: 3rem; }
+
+    .paper-title {
+      font-family: var(--sans);
+      font-size: clamp(1.9rem, 6vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+    }
+
+    .paper-title em {
+      font-style: italic;
+      color: var(--accent);
+      font-family: var(--serif);
+    }
+
+    .subtitle {
+      font-family: var(--serif);
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--mid);
+      font-style: italic;
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+    }
+
+    /* ── Author block ── */
+    .authors {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .author {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent2);
+    }
+    .affil {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--mid);
+      margin-bottom: 2rem;
+    }
+    .affil span { display: block; }
+
+    /* ── CTA Buttons ── */
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: var(--mono);
+      font-size: 0.73rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.65em 1.3em;
+      border-radius: 3px;
+      transition: all 0.18s ease;
+      border: 1.5px solid transparent;
+    }
+    .btn-primary {
+      background: var(--ink);
+      color: var(--white);
+      border-color: var(--ink);
+    }
+    .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: var(--white); }
+    .btn-outline {
+      background: transparent;
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+    .btn-outline:hover { background: var(--off); color: var(--ink); }
+
+    /* ── Divider ── */
+    .rule { height: 1px; background: var(--rule); margin: 0; }
+
+    /* ── Alert Banner ── */
+    .alert-bar {
+      background: var(--off);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.4rem;
+      margin: 2rem 0;
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    .alert-bar strong { font-style: normal; font-family: var(--sans); font-size: 0.8rem; color: var(--accent); letter-spacing: 0.06em; }
+
+    /* ── Abstract ── */
+    .abstract-text {
+      font-size: clamp(0.97rem, 2vw, 1.08rem);
+      line-height: 1.8;
+      color: var(--ink);
+      max-width: 720px;
+    }
+
+    /* ── Stat Grid ── */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      margin: 2rem 0;
+    }
+    .stat-cell {
+      background: var(--white);
+      padding: 1.5rem 1.2rem;
+      text-align: center;
+    }
+    .stat-num {
+      font-family: var(--sans);
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+    .stat-num.red   { color: var(--accent); }
+    .stat-num.blue  { color: var(--accent2); }
+    .stat-num.green { color: var(--accent3); }
+    .stat-label {
+      font-family: var(--mono);
+      font-size: 0.67rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--mid);
+      line-height: 1.4;
+    }
+
+    /* ── Section Label ── */
+    .section-label {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 1.1rem;
+    }
+
+    /* ── Paths Table ── */
+    .path-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 1.5rem 0;
+    }
+    .path-table thead tr {
+      border-bottom: 2px solid var(--ink);
+    }
+    .path-table th {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-align: left;
+      padding: 0.6rem 0.8rem;
+      color: var(--mid);
+    }
+    .path-table td {
+      padding: 0.8rem 0.8rem;
+      border-bottom: 1px solid var(--rule);
+      vertical-align: top;
+      font-family: var(--serif);
+    }
+    .path-table tr.highlight-row { background: #fff8f7; }
+    .path-table tr.highlight-row td { color: var(--accent); font-weight: 500; }
+    .tag-yes  { display: inline-block; background: #e8f5e9; color: #1b5e20; font-family: var(--mono); font-size: 0.67rem; padding: 0.2em 0.55em; border-radius: 2px; }
+    .tag-no   { display: inline-block; background: #fce4e4; color: #8b0000; font-family: var(--mono); font-size: 0.67rem; padding: 0.2em 0.55em; border-radius: 2px; }
+    .tag-na   { display: inline-block; background: var(--off); color: var(--mid); font-family: var(--mono); font-size: 0.67rem; padding: 0.2em 0.55em; border-radius: 2px; }
+
+    /* ── Contributions ── */
+    .contrib-list { list-style: none; margin: 1.5rem 0; }
+    .contrib-list li {
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: 0.8rem;
+      padding: 1.1rem 0;
+      border-bottom: 1px solid var(--rule);
+      align-items: start;
+    }
+    .contrib-num {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--light);
+      padding-top: 0.22rem;
+      font-weight: 500;
+    }
+    .contrib-body h4 {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+      color: var(--ink);
+    }
+    .contrib-body p {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+
+    /* ── Defense Cards ── */
+    .defense-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .defense-card {
+      border: 1.5px solid var(--rule);
+      padding: 1.5rem 1.25rem;
+      border-radius: 4px;
+      transition: border-color 0.2s;
+    }
+    .defense-card:hover { border-color: var(--accent2); }
+    .defense-card .dc-tag {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      padding: 0.2em 0.6em;
+      border-radius: 2px;
+      display: inline-block;
+      margin-bottom: 0.85rem;
+    }
+    .dc-tag.cct  { background: var(--accent2); }
+    .dc-tag.rcm  { background: var(--accent3); }
+    .dc-tag.mpifc{ background: #555552; }
+    .defense-card h4 {
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .defense-card p {
+      font-size: 0.87rem;
+      color: var(--mid);
+      line-height: 1.6;
+      margin-bottom: 0.9rem;
+    }
+    .defense-metric {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--accent2);
+      font-weight: 500;
+    }
+
+    /* ── Result Bars ── */
+    .result-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .result-label {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      width: 130px;
+      flex-shrink: 0;
+      color: var(--mid);
+    }
+    .bar-wrap { flex: 1; background: var(--off); border-radius: 2px; height: 8px; overflow: hidden; }
+    .bar-fill  { height: 100%; border-radius: 2px; transform: scaleX(0); transform-origin: left; transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1); }
+    .bar-fill.animated { transform: scaleX(1); }
+    .bar-val {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      width: 3.5rem;
+      text-align: right;
+      color: var(--ink);
+    }
+
+    /* ── Citation box ── */
+    .cite-box {
+      background: var(--off);
+      border: 1px solid var(--rule);
+      padding: 1.25rem 1.5rem;
+      font-family: var(--mono);
+      font-size: 0.73rem;
+      line-height: 1.8;
+      color: var(--mid);
+      border-radius: 3px;
+      position: relative;
+      margin: 1.5rem 0;
+      word-break: break-word;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3em 0.75em;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      background: var(--white);
+      color: var(--mid);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .copy-btn:hover { background: var(--ink); color: var(--white); border-color: var(--ink); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 2.5rem 0;
+      color: var(--light);
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.04em;
+    }
+    footer .foot-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    footer a { color: var(--mid); }
+
+    /* ── Nav bar ── */
+    .topnav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule);
+      padding: 0.75rem 0;
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .nav-logo {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--mid);
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* ── Mobile nav toggle ── */
+    .hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: all 0.2s; }
+
+    /* ── Fade-in animation ── */
+    .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--rule); padding: 1rem 1.5rem; gap: 1.1rem; }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+      .topnav { position: relative; }
+
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+      .path-table { font-size: 0.78rem; }
+      .path-table th, .path-table td { padding: 0.5rem 0.4rem; }
+      .result-label { width: 100px; font-size: 0.65rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══ STICKY NAV ═══ -->
+  <nav class="topnav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">Misattribution Gap</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#abstract">Abstract</a></li>
+        <li><a href="#contributions">Contributions</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#defenses">Defenses</a></li>
+        <li><a href="#citation">Cite</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <header class="site-header">
+    <div class="container hero">
+      <!-- <div class="header-meta fade-in">
+        <span class="venue-tag">AAAI</span>
+        <span class="venue-label">Under Review · 2026</span>
+      </div> -->
+
+      <h1 class="paper-title fade-in">
+        The Misattribution Gap:<br>
+        When Memory Poisoning<br>
+        Looks Like <em>Model Failure</em><br>
+        in Agentic AI Systems
+      </h1>
+
+      <p class="subtitle fade-in">
+        A single document upload. No model access. No triggers.
+        Complete, persistent governance failure.
+      </p>
+
+      <div class="authors fade-in">
+        <span class="author">Tanzim Ahad</span>
+        <span class="author">Ismail Hossain</span>
+        <span class="author">Md Jahangir Alam</span>
+        <span class="author">Sai Puppala</span>
+        <span class="author">Syed Bahauddin Alam</span>
+        <span class="author">Sajedul Talukder</span>
+      </div>
+      <p class="affil">
+        <span>University of Texas at El Paso &nbsp;·&nbsp; Southern Illinois University Carbondale &nbsp;·&nbsp; UIUC</span>
+        <span style="color:var(--light); font-size:0.66rem;">SUPREME Lab · UTEP</span>
+      </p>
+
+      <div class="cta-row fade-in">
+        <a href="https://anonymous.4open.science/r/Semantic_Norm_Drift-D412" target="_blank" class="btn btn-primary">
+          ↗ Code &amp; Corpus
+        </a>
+        <a href="#abstract" class="btn btn-outline">Read Paper</a>
+        <a href="#citation" class="btn btn-outline">Cite</a>
+      </div>
+
+      <!-- key alert -->
+      <div class="alert-bar fade-in">
+        <strong>Core Finding</strong><br>
+        In all 64 documented failures, standard attribution tools confidently blamed the model — while the actual cause
+        was a single policy-formatted document silently residing in shared memory.
+      </div>
+    </div>
+  </header>
+
+  <div class="rule"></div>
+
+  <!-- ═══ ABSTRACT ═══ -->
+  <section id="abstract">
+    <div class="container">
+      <p class="section-label fade-in">Abstract</p>
+      <p class="abstract-text fade-in">
+        Multi-agent AI pipelines share an assumption: when an agent misbehaves, the fault is in the model.
+        Red-team it, retrain it. We identify a structural failure in this playbook — the <strong>Misattribution Gap</strong> —
+        that an attacker can exploit deliberately. Memory-layer attacks produce artifacts identical to model misalignment,
+        so the correct response to a model problem becomes the wrong response to a memory attack.
+      </p>
+      <br>
+      <p class="abstract-text fade-in">
+        We formalize <strong>Semantic Norm Drift (SND)</strong> as a third, structurally distinct path to agent misconduct.
+        A policy-formatted document enters a shared vector store via normal upload and, via the
+        <em>Trust Laundering Chain</em>, re-emerges in future sessions as trusted system context — provenance permanently lost.
+        Four safety classifiers, including one trained on memory poisoning, return zero detections across 510 checkpoints.
+        In 59 of 65 valid entries, agents cite the injected document as normative authority in their own reasoning, then comply.
+        No trigger, no model access, no repeated interactions. Full effect within five sessions, sustained indefinitely.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══ STATS ═══ -->
+  <section style="padding: 0;">
+    <div class="container" style="padding-top:1px; padding-bottom: 2.5rem;">
+      <div class="stat-grid fade-in">
+        <div class="stat-cell">
+          <span class="stat-num red">0/508</span>
+          <span class="stat-label">Classifier detections<br>across all checkpoints</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num red">64/64</span>
+          <span class="stat-label">Failures misattributed<br>to model by forensics</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num blue">92.9%</span>
+          <span class="stat-label">Entries evading<br>all classifiers</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num blue">5</span>
+          <span class="stat-label">Sessions to full<br>attack effect</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num green">97.3%</span>
+          <span class="stat-label">MP-IFC attack<br>blocking rate</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num green">87.5%</span>
+          <span class="stat-label">CCT causal<br>attribution accuracy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ THREE PATHS ═══ -->
+  <section id="contributions">
+    <div class="container">
+      <p class="section-label fade-in">The Three Paths to Agent Misconduct</p>
+      <h2 class="fade-in">Induced Misalignment: A Structurally Distinct Threat</h2>
+      <p style="color: var(--mid); margin: 1rem 0 1.5rem; font-size: 0.95rem;" class="fade-in">
+        Prior work recognized two paths. We establish the third — invisible to every defense designed for the first two.
+      </p>
+
+      <div class="fade-in" style="overflow-x:auto;">
+        <table class="path-table">
+          <thead>
+            <tr>
+              <th>Dimension</th>
+              <th>Path 1 · Emergent Misalignment</th>
+              <th>Path 2 · Secret Collusion</th>
+              <th>Path 3 · Induced Misalignment <em style="font-style:italic; color: var(--accent); font-weight:400;">(this work)</em></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Root cause</strong></td>
+              <td>Model training / RLHF</td>
+              <td>Agent coordination</td>
+              <td class="highlight-row">Memory poisoning</td>
+            </tr>
+            <tr>
+              <td><strong>Attack layer</strong></td>
+              <td>Model weights</td>
+              <td>Covert channel</td>
+              <td class="highlight-row">Shared memory</td>
+            </tr>
+            <tr>
+              <td><strong>Detectable by model audit?</strong></td>
+              <td><span class="tag-yes">Yes</span></td>
+              <td><span class="tag-yes">Yes</span></td>
+              <td class="highlight-row"><span class="tag-no">No</span></td>
+            </tr>
+            <tr>
+              <td><strong>Correct response</strong></td>
+              <td>Retrain</td>
+              <td>Monitor channels</td>
+              <td class="highlight-row">Audit memory; run CCT</td>
+            </tr>
+            <tr>
+              <td><strong>Minimum attacker access</strong></td>
+              <td><span class="tag-na">Model access</span></td>
+              <td><span class="tag-na">Agent API</span></td>
+              <td class="highlight-row"><span class="tag-yes">Document upload only</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Contributions list -->
+      <h2 class="fade-in" style="margin-top:3rem;">Key Contributions</h2>
+      <ul class="contrib-list">
+        <li class="fade-in">
+          <span class="contrib-num">01</span>
+          <div class="contrib-body">
+            <h4>Induced Misalignment Taxonomy &amp; Formal Proof</h4>
+            <p>We establish Induced Misalignment as the third structurally distinct path to agent misconduct and prove (Theorem 1) that model-layer auditing is <em>incapable</em> of detecting memory-layer attacks. The Misattribution Gap is formally characterized and empirically confirmed at <em>p = 5.21 × 10⁻²²</em>.</p>
+          </div>
+        </li>
+        <li class="fade-in">
+          <span class="contrib-num">02</span>
+          <div class="contrib-body">
+            <h4>MAJB-64 Corpus &amp; the Retrieval-Coverage Dilemma</h4>
+            <p>The first adversarial memory benchmark combining filter-passing construction, multi-agent evaluation, temporal trajectory data (CDG, SDR, RSDR across 20 sessions), and causal ground truth across two regulated domains (financial and EHR). We prove that any evasion strategy reducing Wide Retrieval Coverage simultaneously eliminates attack effectiveness — immune to 12 published defenses.</p>
+          </div>
+        </li>
+        <li class="fade-in">
+          <span class="contrib-num">03</span>
+          <div class="contrib-body">
+            <h4>Defense Suite Deployable in Two Code Changes</h4>
+            <p><strong>CCT</strong> (Counterfactual Composition Testing): TPR = 0.875, FAR = 0.000. <strong>RCM</strong> (Retrieval Concentration Monitoring): AUC = 1.000, structurally evasion-resistant. <strong>MP-IFC</strong> (Memory-Persistent Information-Flow Control): 97.3% attack blocking with two code changes, closing the cross-session gap that prior state-of-the-art fails on every informative case.</p>
+          </div>
+        </li>
+        <li class="fade-in">
+          <span class="contrib-num">04</span>
+          <div class="contrib-body">
+            <h4>SND Corpus Release</h4>
+            <p>70 filter-verified entries with causal ground truth across financial and healthcare domains — the first adversarial memory benchmark combining temporal persistence and multi-agent composition.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══ RESULTS ═══ -->
+  <section id="results">
+    <div class="container">
+      <p class="section-label fade-in">Results</p>
+      <h2 class="fade-in">The Attack Succeeds Where It Should Fail</h2>
+      <p style="color: var(--mid); margin: 1rem 0 2rem; font-size:0.95rem;" class="fade-in">
+        Safety classifier pass rates across all pipeline boundaries, for all four classifiers including AprielGuard — trained specifically on memory poisoning.
+      </p>
+
+      <!-- Classifier bars -->
+      <div class="fade-in">
+        <div class="result-row">
+          <span class="result-label">AprielGuard</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:100%; background: var(--accent);" data-width="100"></div></div>
+          <span class="bar-val" style="color:var(--accent);">100% pass</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">Granite Guard</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:100%; background: var(--accent);" data-width="100"></div></div>
+          <span class="bar-val" style="color:var(--accent);">100% pass</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">LlamaGuard 3</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:95.9%; background: #e8903a;" data-width="95.9"></div></div>
+          <span class="bar-val" style="color:#e8903a;">95.9% pass</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">WildGuard</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:90%; background: #b0922a;" data-width="90"></div></div>
+          <span class="bar-val" style="color:#b0922a;">90.0% pass</span>
+        </div>
+      </div>
+
+      <p style="font-family: var(--mono); font-size:0.68rem; color: var(--light); margin-top: 0.75rem; margin-bottom: 2.5rem;" class="fade-in">
+        "Pass" = attacker document passed undetected. 1,400 total checkpoints evaluated. Higher = more dangerous.
+      </p>
+
+      <!-- Temporal degradation -->
+      <h3 class="fade-in">Safety Degrades Within 5 Sessions</h3>
+      <p style="color: var(--mid); font-size: 0.92rem; margin: 0.75rem 0 1.5rem;" class="fade-in">
+        Safety Degradation Ratio (SDR) across 56 entry-model pairs. Poisoned pipelines collapse to 19.3% of baseline safety in fewer than five sessions — and stay there indefinitely.
+      </p>
+
+      <div class="stat-grid fade-in" style="max-width: 600px;">
+        <div class="stat-cell">
+          <span class="stat-num" style="color: var(--ink);">T=0</span>
+          <span class="stat-label">SDR: 1.000<br>(baseline)</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num red">T=5</span>
+          <span class="stat-label">SDR: 0.193<br>↓ 80.7% degradation</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num red">T=20</span>
+          <span class="stat-label">SDR: 0.193<br>Sustained flat</span>
+        </div>
+      </div>
+
+      <!-- Attribution failure -->
+      <h3 class="fade-in" style="margin-top: 2.5rem;">Forensic Attribution: 100% Wrong</h3>
+      <p style="color: var(--mid); font-size: 0.92rem; margin: 0.75rem 0 1.5rem;" class="fade-in">
+        Applying <em>Who&amp;When</em> (ICML 2025 Spotlight) attribution methods to 64 confirmed memory-attack cases.
+        Ground truth: all 64 caused by injected memory. Natural-failure baseline: 53.5%.
+      </p>
+      <div class="fade-in">
+        <div class="result-row">
+          <span class="result-label">Log-counterfact.</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:0%; background: var(--accent);" data-width="0"></div></div>
+          <span class="bar-val" style="color:var(--accent);">0.0% acc.</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">CoT Attention</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:0%; background: var(--accent);" data-width="0"></div></div>
+          <span class="bar-val" style="color:var(--accent);">0.0% acc.</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">Log-correlation</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:50%; background: #999;" data-width="50"></div></div>
+          <span class="bar-val">50.0% acc.</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">Natural baseline</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:53.5%; background: var(--accent2);" data-width="53.5"></div></div>
+          <span class="bar-val" style="color:var(--accent2);">53.5% base</span>
+        </div>
+      </div>
+      <p style="font-family: var(--mono); font-size:0.68rem; color: var(--light); margin-top: 0.75rem;" class="fade-in">
+        Binomial test vs. natural-failure baseline: <em>p = 5.21 × 10⁻²²</em>. Higher accuracy = correctly identified memory attack.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══ DEFENSES ═══ -->
+  <section id="defenses">
+    <div class="container">
+      <p class="section-label fade-in">Defenses</p>
+      <h2 class="fade-in">Three Mechanisms That Actually Work</h2>
+      <p style="color: var(--mid); margin: 1rem 0 1.75rem; font-size:0.95rem;" class="fade-in">
+        Defenses succeed by operating on behavior, retrieval structure, and provenance — not on document content, which is indistinguishable from legitimate policy.
+      </p>
+
+      <div class="defense-grid">
+        <div class="defense-card fade-in">
+          <span class="dc-tag cct">CCT</span>
+          <h4>Counterfactual Composition Testing</h4>
+          <p>Removes candidate memory entries in descending retrieval-frequency order and re-runs the pipeline. First removal that eliminates confirmed harm identifies the causal entry — bypassing content assessment entirely.</p>
+          <span class="defense-metric">TPR = 0.875 · FAR = 0.000 · McNemar χ² = 21.0, p≈0</span>
+        </div>
+        <div class="defense-card fade-in">
+          <span class="dc-tag rcm">RCM</span>
+          <h4>Retrieval Concentration Monitoring</h4>
+          <p>Detects entries with anomalously broad retrieval coverage across all agent query types. Legitimate documents surface for one query type; SND entries must surface for all three — which is also their detection fingerprint.</p>
+          <span class="defense-metric">AUC = 1.000 · r(ΔWRC, ΔASR) = 0.858 · Evasion-resistant</span>
+        </div>
+        <div class="defense-card fade-in">
+          <span class="dc-tag mpifc">MP-IFC</span>
+          <h4>Memory-Persistent Info-Flow Control</h4>
+          <p>Attaches provenance labels directly in ChromaDB metadata at write time, persisting across sessions. Blocks the Trust Laundering Chain at the cross-session boundary where FIDES loses its label in 91.8% of pairs.</p>
+          <span class="defense-metric">97.3% attack blocking · Two code changes · 0% false alarms</span>
+        </div>
+      </div>
+
+      <div class="alert-bar fade-in" style="border-left-color: var(--accent3); margin-top: 2rem;">
+        <strong>Recommended Layered Deployment</strong><br>
+        Use FIDES for intra-session integrity, MP-IFC for cross-session provenance, RCM for continuous monitoring,
+        and CCT for reactive post-hoc attribution. Content-layer detection of SND is <em>structurally impossible</em> — the entries are legitimate policy.
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TRUST LAUNDERING CHAIN ═══ -->
+  <section>
+    <div class="container">
+      <p class="section-label fade-in">Attack Mechanism</p>
+      <h2 class="fade-in">The Trust Laundering Chain</h2>
+      <p style="color: var(--mid); margin: 1rem 0 2rem; font-size:0.95rem;" class="fade-in">
+        A single injected document self-sustains indefinitely. No further attacker action required after Step 1.
+      </p>
+
+      <div class="fade-in" style="display:grid; gap:1px; background:var(--rule); border:1px solid var(--rule);">
+        <div style="background:var(--white); padding:1.25rem 1.5rem; display:grid; grid-template-columns: 2.5rem 1fr; gap:1rem; align-items:start;">
+          <span style="font-family:var(--mono); font-size:0.75rem; color:var(--accent); font-weight:600;">W</span>
+          <div>
+            <strong style="font-family:var(--sans); font-size:0.88rem;">Write</strong>
+            <p style="font-size:0.88rem; color:var(--mid); margin-top:0.25rem;">Attacker uploads policy-formatted document via standard interface. All classifiers return <code style="font-family:var(--mono); background:var(--off); padding: 0.1em 0.4em; border-radius:2px;">safe</code>.</p>
+          </div>
+        </div>
+        <div style="background:var(--white); padding:1.25rem 1.5rem; display:grid; grid-template-columns: 2.5rem 1fr; gap:1rem; align-items:start;">
+          <span style="font-family:var(--mono); font-size:0.75rem; color:var(--accent); font-weight:600;">S</span>
+          <div>
+            <strong style="font-family:var(--sans); font-size:0.88rem;">Store</strong>
+            <p style="font-size:0.88rem; color:var(--mid); margin-top:0.25rem;">Memory system embeds document without provenance labeling. It enters the vector store as a trust-equivalent peer of all legitimate documents.</p>
+          </div>
+        </div>
+        <div style="background:var(--white); padding:1.25rem 1.5rem; display:grid; grid-template-columns: 2.5rem 1fr; gap:1rem; align-items:start;">
+          <span style="font-family:var(--mono); font-size:0.75rem; color:var(--accent); font-weight:600;">R</span>
+          <div>
+            <strong style="font-family:var(--sans); font-size:0.88rem;">Retrieve</strong>
+            <p style="font-size:0.88rem; color:var(--mid); margin-top:0.25rem;">At each future session, top-k retrieval returns the poisoned entry because it was engineered for broad semantic alignment. All retrieval classifiers return <code style="font-family:var(--mono); background:var(--off); padding: 0.1em 0.4em; border-radius:2px;">safe</code>.</p>
+          </div>
+        </div>
+        <div style="background:var(--white); padding:1.25rem 1.5rem; display:grid; grid-template-columns: 2.5rem 1fr; gap:1rem; align-items:start;">
+          <span style="font-family:var(--mono); font-size:0.75rem; color:var(--accent); font-weight:600;">C</span>
+          <div>
+            <strong style="font-family:var(--sans); font-size:0.88rem;">Comply</strong>
+            <p style="font-size:0.88rem; color:var(--mid); margin-top:0.25rem;">Agent cites injected document as authoritative policy in chain-of-thought and produces prohibited output. All composition classifiers return <code style="font-family:var(--mono); background:var(--off); padding: 0.1em 0.4em; border-radius:2px;">safe</code>. Attacker's provenance is permanently absent from every observable log signal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CITATION ═══ -->
+  <section id="citation">
+    <div class="container">
+      <p class="section-label fade-in">Citation</p>
+      <h2 class="fade-in">Cite This Work</h2>
+      <div class="cite-box fade-in" id="citebox">
+        <button class="copy-btn" id="copyBtn">Copy</button>
+@article{ahad2026misattribution,<br>
+&nbsp;&nbsp;title={{The Misattribution Gap: When Memory Poisoning Looks Like<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Model Failure in Agentic AI Systems}},<br>
+&nbsp;&nbsp;author={Ahad, Tanzim and Hossain, Ismail and Alam, Md Jahangir<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Puppala, Sai and Alam, Syed Bahauddin and Talukder, Sajedul},<br>
+&nbsp;&nbsp;year={2026},<br>
+&nbsp;&nbsp;note={Under Review},<br>
+}
+      </div>
+      <p class="fade-in" style="font-family: var(--mono); font-size:0.72rem; color:var(--mid);">
+        Code, corpus (MAJB-64), and implementations (CCT, RCM, MP-IFC) will be released under CC BY 4.0 upon acceptance.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="container foot-inner">
+      <span>© 2026 SUPREME Lab · University of Texas at El Paso</span>
+      <span>
+        <!-- <a href="#" target="_blank">supreme-lab.github.io/optimus</a> -->
+        <!-- &nbsp;·&nbsp; -->
+        <a href="mailto:ihossain@miners.utep.edu">Contact</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ═══ JS ═══ -->
+  <script>
+    /* -- Mobile nav -- */
+    const ham = document.getElementById('hamburger');
+    const nav = document.getElementById('navLinks');
+    ham.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+    /* -- Fade-in on scroll -- */
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach((el, i) => {
+      el.style.transitionDelay = (i % 4) * 0.07 + 's';
+      obs.observe(el);
+    });
+
+    /* -- Animate bars -- */
+    const barObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.bar-fill').forEach(b => b.classList.add('animated'));
+          barObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.result-row').forEach(r => barObs.observe(r));
+
+    /* -- Copy citation -- */
+    document.getElementById('copyBtn').addEventListener('click', function() {
+      const raw = `@article{ahad2026misattribution,\n  title={{The Misattribution Gap: When Memory Poisoning Looks Like Model Failure in Agentic AI Systems}},\n  author={Ahad, Tanzim and Hossain, Ismail and Alam, Md Jahangir and Puppala, Sai and Alam, Syed Bahauddin and Talukder, Sajedul},\n  year={2026},\n  note={Under Review, AAAI},\n  url={https://supreme-lab.github.io/optimus}\n}`;
+      navigator.clipboard.writeText(raw).then(() => {
+        this.textContent = 'Copied!';
+        setTimeout(() => this.textContent = 'Copy', 2000);
+      });
+    });
+  </script>
+</body>
+</html>

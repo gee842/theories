@@ -2,6 +2,8 @@
 
 6 October 2026. Conditional synthetic continuation of [experimental access](../README.md). Read the [canonical result](../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MODEL-FAMILY-REVISION.md), [protocol](PROTOCOL.md), [proofs](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-FAMILY-REVISION-MATH.md), [independent review](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-FAMILY-REVISION-REVIEW.md) and [primary comparators](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-FAMILY-REVISION-COMPARATORS.md).
 
+**Revision-policy boundary continuation, 6 October 2026:** [the nested endpoint audit](metarevision/README.md) executes this unchanged implementation and continues its actual retained payloads through already installed predictive use. It checks installation bills and limited-memory guarantees separately. No new source, hidden target label or analyst reward is supplied to the controller, and no metaselector is built. The new receipts concern that boundary; the historical revision checks below remain preserved.
+
 The learner constructs a larger candidate using its actual learned table, buys fresh observations, selects a current behavioral model, retains it and uses it for a subsequent prediction. The generator and conservative restart policy are supplied. The external old and new transcripts are not controller inputs. Exact retrospective reconstruction and paid retention of raw new evidence are not implemented.
 
 ## Reproduce

@@ -2,7 +2,7 @@
   "date": "2026-10-06",
   "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
   "source_sha256": "cf5b39f3e2fcfa716399dbfaa7fadd169f69b3ccfcc7b71c0e4c2870af916faa",
-  "scope": "Every row in the current canonical CLAIMS.md, not every statement in the repository or every later module. Inventory and proof obligations, not a new certification of all existing results.",
+  "scope": "Every row in canonical CLAIMS.md at source_sha256: the original 55-row snapshot preserved in commit 2074796603cb8b3b9fbb4adf324ea57c6622e6e6. source_line values refer to that historical snapshot. Later additions are outside this inventory and are separately recorded by HUIGEN-CHECKS.json. Inventory and proof obligations, not a new certification of all existing results.",
   "row_count": 55,
   "classes": {
     "candidate_root_or_wisdom": 3,

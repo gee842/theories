@@ -1,11 +1,90 @@
 {
   "date": "2026-10-06",
   "status": "pass",
-  "scope": "Local document links and anchors, owned artifact hashes, claim inventory, existing proof/enumeration receipt consistency and stated inherited recipient metrics/source receipts. No rerun of science, empirical validation or completed philosophical foundation.",
-  "local_links_checked": 398,
-  "anchors_checked": 182,
+  "scope": "Local document links and anchors, owned artifact hashes, historical claim inventory with live row-text preservation and explicitly uncovered additions, existing proof/enumeration receipt consistency and stated inherited recipient metrics/source receipts. No certification of the complete current register, rerun of science, empirical validation or completed philosophical foundation.",
+  "local_links_checked": 488,
+  "anchors_checked": 259,
   "claim_rows_inventoried": 55,
   "new_lean_audits": 27,
+  "claim_register_snapshot": {
+    "original_inventory_source_sha256": "cf5b39f3e2fcfa716399dbfaa7fadd169f69b3ccfcc7b71c0e4c2870af916faa",
+    "original_source_commit": "2074796603cb8b3b9fbb4adf324ea57c6622e6e6",
+    "source_line_scope": "Historical coordinates in the original 55-row snapshot, not current line positions.",
+    "current_source_sha256": "5bab0aeb86c5d3d6da7f985fdb76ba063c9a944db529cc34ad24859210e4d4bc",
+    "current_canonical_rows": 64,
+    "current_table_row_counts": [
+      56,
+      8
+    ],
+    "later_rows_outside_inventory": [
+      {
+        "table": 1,
+        "current_line": 32,
+        "row": "| An admitted physical operation completes within a finite event bound | Conditional total-correctness theorem with unchanged paid and predictor instances | Actual nonblocking, invariant preservation and strict internal rank cover every permitted branch; finite repetition additionally requires returned-state admission and closure; no scheduler, time or automatic renewal conclusion | [Protocol completion](PROTOCOL-COMPLETION.md) |",
+        "row_sha256": "81ce498687a1553058a73ce194ce289f07c554c49f1a7b9e801694a81cb2fb88",
+        "scope": "Outside the historical inventory; neither its proof nor its role in whole-root necessity is certified here."
+      },
+      {
+        "table": 2,
+        "current_line": 70,
+        "row": "| Independently identified expenditure and support laws constrain every admitted history | [Conditional universality](CONDITIONAL-UNIVERSALITY.md): general prefix accounting, transport and bounded-rank support results | The accounts, units, dependency boundaries and actual laws must be justified. Necessary support constraints do not construct a learner or select a favorable process |",
+        "row_sha256": "df64c9c9e742f613c13094a27b1ec4c0dac8e9481bb53e227759d14e665880e2",
+        "scope": "Outside the historical inventory; neither its proof nor its role in whole-root necessity is certified here."
+      },
+      {
+        "table": 2,
+        "current_line": 71,
+        "row": "| Formed machinery can acquire a response and replace the mechanism that changes it | [Prediction/action](PREDICTION-ACTION.md) and [route revision](LEARNING-ROUTE-REVISION.md): actual construction, learning, diagnosis, paid replacement, use and copying at their stated interfaces | Finite recipes, observations, variation laws, funds and schedules remain explicit. Wrong retained copies, costly monitoring and conventional equality are preserved |",
+        "row_sha256": "2e9bff8dd0a1a89b3a18cf474f3bd4bed8e9ad4dfa6b336fb78b67ffb75ee727",
+        "scope": "Outside the historical inventory; neither its proof nor its role in whole-root necessity is certified here."
+      },
+      {
+        "table": 2,
+        "current_line": 72,
+        "row": "| Actual new recipient evidence can revise an instrumental reason and a paid command | [Fresh reason revision](RECIPIENT-REASON-REVISION.md): joined paid acquisition, record, inference and recipient use | Calibration, target binding, stability through use and the support objective are required. A means correction does not establish a changed need or moral ground |",
+        "row_sha256": "ee8fa616a9f5579f0413def1b81b358ce2b8e5a4fc8c4e41424c0a61fa467c7e",
+        "scope": "Outside the historical inventory; neither its proof nor its role in whole-root necessity is certified here."
+      },
+      {
+        "table": 2,
+        "current_line": 73,
+        "row": "| Consequence acquisition can generate a retained coefficient whose inclusion changes recipient choice and action | [Evaluative uptake](EVALUATIVE-UPTAKE.md): actual learning from a zero register, equally informed exclusion control, paid use and later port replacement | The update and cross-center transfer recipe are supplied; neither self evidence nor coefficient magnitude justifies that transfer. Port replacement retains the same learner |",
+        "row_sha256": "d53f06c99d2fcc5fe691bf2cb78b6e73e1523c174c4e5fa35cc7112347fc6870",
+        "scope": "Outside the historical inventory; neither its proof nor its role in whole-root necessity is certified here."
+      },
+      {
+        "table": 2,
+        "current_line": 74,
+        "row": "| A fixed warranted ground can be functionally applied through sound acquired means knowledge | [Evaluative application](EVALUATIVE-APPLICATION.md): bounded recognition contract joined to the accepted causal use | Patient-good interpretation, defended ground, authority and the complete comparison must apply to that actor and episode. A qualifying earlier probe can already fulfill a one-delivery claim |",
+        "row_sha256": "97c7146178b990dd5ea96d364f1ab04e9d6d48b827652778e29430377f621c4c",
+        "scope": "Outside the historical inventory; neither its proof nor its role in whole-root necessity is certified here."
+      },
+      {
+        "table": 2,
+        "current_line": 75,
+        "row": "| Premise-sensitive reason revision can lead to selected action despite a broader action remaining affordable | [Existing protection witness](EVALUATIVE-APPLICATION.md#an-existing-witness-of-correction-and-feasible-choice): paid proof traces and a separately checked finite choice model | Negative calibration, dependency meaning, valuation and legitimate action remain premises; harm to the less-protected patient remains visible. This is generic capacity, not application revision already implemented in the acquired evaluator |",
+        "row_sha256": "8a2aa0d210bbf7ab24d130cb0394b993e699d33d8f2338631753c8f3da145c0e",
+        "scope": "Outside the historical inventory; neither its proof nor its role in whole-root necessity is certified here."
+      },
+      {
+        "table": 2,
+        "current_line": 76,
+        "row": "| An actual distinct successor can retain acquired influence, correct its means knowledge and use it | [Evaluative succession](EVALUATIVE-SUCCESSION.md): 92 new Lean audits, independently reconstructed finite histories and fourteen selected execution/proof comparisons | Actual paid access, distinct control, retired donor, new evidence and one recipient account are preserved. Formal composition is staged and selected; transfer, calibration and support remain supplied. The evaluator does not retract a claim fulfilled by its inquiry |",
+        "row_sha256": "e7d680968903dfafe90d6a9306755f154cd900d33a4a7b3587f018ad61c68773",
+        "scope": "Outside the historical inventory; neither its proof nor its role in whole-root necessity is certified here."
+      },
+      {
+        "table": 2,
+        "current_line": 77,
+        "row": "| Cross-domain evidence supports the whole acquired-concern lineage or a universal favorable tendency | **Not established.** [Identification audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md), [recipient-harm analysis](RECIPIENT-HARM-AND-ACTION.md) and [reward-learning analysis](REWARD-LEARNING-AND-RECIPIENT-CHOICE.md) support or constrain particular interfaces | Outcome meanings and identification differ across studies. The reward-learning primary contrast is uncertain, and choices alone can leave value/expectancy explanations indistinguishable. Exact conventional equivalence precludes an algorithmic-superiority claim from those same comparisons |",
+        "row_sha256": "faedd2e11a6a60d009115dbce2a1878cd95cb5a6e70da8f81bf0a3f50b0dcd2c",
+        "scope": "Outside the historical inventory; neither its proof nor its role in whole-root necessity is certified here."
+      }
+    ],
+    "original_snapshot_verified_in_git_byte_for_byte": true,
+    "original_row_texts_present_once_in_order": true,
+    "live_register_coverage": "Partial: later rows and surrounding revised context are not certified by this historical inventory. They remain within the eventual whole-theory coverage obligation."
+  },
   "inherited_lean_audits": 23,
   "finite_matrices_enumerated": 66066,
   "practical_necessity_follow_up": {
@@ -225,24 +304,205 @@
     "inherited_model_reruns": 0,
     "evidence": "Applies inherited inquiry I1–I3 methods to fixed set-valued action requirements: zero-error common choice, an exact identical-law minimax benchmark, a disjoint-requirement total-variation bound and selective-commitment coverage/error bounds. Actual law and requirement coverage remain application premises. Fixed fact-relative achievement, evidence-relative justification and lottery authorization remain distinct. The reason-use audit separates learning origin, present basis and normative warrant, retaining the accepted fixed-ground/acquired-means conditional recognition contract without new completion gates. No universal ethical authority or whole-root necessity is established."
   },
+  "inductive_risk_reporting_follow_up": {
+    "previous_goal_turn": "progress",
+    "previous_receipt_local_links": 398,
+    "previous_receipt_anchors": 182,
+    "previous_canonical_transport_self_audit_sources_and_review_hashes_revalidated": true,
+    "existing_companions_extended": 3,
+    "new_companion_files": 0,
+    "new_primary_works_examined": 4,
+    "primary_scope": {
+      "Rudner1953": "Full pp. 1–6 primary extraction by source investigator and separate public primary transcription by root; no facsimile audit; p. 3 n. 1 significance-level gloss is not inherited as a posterior or unconditional error probability.",
+      "Douglas2000": "Source investigator read published main text559–578 and visually checked563–564; root read563–565,576–578 through extraction. September-revised published version distinguished from inaccessible indexed preprint. Historical toxicology illustrations not independently validated.",
+      "Jeffrey1956": "Critic read full237–246 primary text; root separately read237,241–243,245–246. Tables not independently image-audited; probability proposal and its acknowledged difficulties both retained.",
+      "Betz2013": "Critic read early-online main textPDF1–13; root readPDF1,6–7,9,13 and checked publisher metadata. No final-version or complete equation audit; IPCC illustration not empirically assessed."
+    },
+    "new_hand_result_labels": [
+      "T19",
+      "T20",
+      "T21",
+      "T22"
+    ],
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "new_operating_joins_implemented": 0,
+    "inherited_model_reruns": 0,
+    "evidence": "Fixed warranted evidence permits different optimal actions under supplied stakes. Common optimality, including lotteries, requires common minimizers. One deterministic cost-independent complete posterior report serves all positive binary loss ratios exactly iff injective; finite-grid approximation gives normalized regret at most1/(2n). Mathematical optimality is conditional on loss and decision premises. Responsible uncertainty reporting remains a serious alternative to categorical action guidance. Consequential scientific roles do not erase an independently applicable responsibility, but uncertainty alone establishes neither universal standing nor whole-root necessity. No new operating witness or scientific rerun is claimed."
+  },
+  "naturalistic_patient_good_follow_up": {
+    "previous_goal_turn": "progress",
+    "previous_receipt_local_links": 414,
+    "previous_receipt_anchors": 193,
+    "previous_canonical_transport_self_audit_sources_and_review_hashes_revalidated": true,
+    "existing_companions_extended": 3,
+    "new_companion_files": 0,
+    "new_primary_works_examined": 2,
+    "primary_scope": {
+      "Railton1986": "Source investigator read complete original article163–207 through extraction and visually checked174,190,201; root independently read165,173–177,188,190–191,194,201–205; mechanism reviewer separately read174–176. Earlier DAO abstract-only scope remains preserved. No empirical-illustration or2003-reprint validation.",
+      "Foot1995": "Critic read complete original article1–14 through extraction; root separately read4,6–10,14. No facsimile audit. Natural Goodness book chapter access was limited to publisher abstracts and is not counted as a full primary reading."
+    },
+    "new_hand_argument_blocks": 1,
+    "new_numbered_result_labels": [],
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "new_operating_joins_implemented": 0,
+    "inherited_model_reruns": 0,
+    "evidence": "An idealized assessment must preserve the actual patient and circumstances. Contextual adjacent-swap invariance characterizes order-independent readout over all permutations; restricted orders require component comparisons. A finite absorbing counterexample shows that all designated facts can be acquired while recommendations remain order-dependent. This is not a fully rational ideal-agent countermodel or a disproof of naturalistic reduction. Joint empirical and evaluative identification remains a positive route from natural patient conditions to warranted good. Personal good, moral obligation and categorical actor-addressed reasons remain distinct; plural good alternatives are allowed. Recipient-action evidence is read only at its existing canonical scope. Whole-root necessity remains open."
+  },
+  "creaturely_good_public_authority_follow_up": {
+    "previous_goal_turn": "progress",
+    "previous_receipt_local_links": 425,
+    "previous_receipt_anchors": 203,
+    "previous_canonical_transport_self_audit_sources_and_review_hashes_revalidated": true,
+    "existing_companions_extended": 2,
+    "new_companion_files": 0,
+    "new_primary_works_examined": 3,
+    "primary_scope": {
+      "Korsgaard2022Reply": "Source investigator read main author manuscript1–33 and visually checked26,31; root read19–33; mechanism reviewer and critic read25–33. Manuscript and final journal pagination distinguished; no final-journal text comparison. Earlier2018 book reading inherited, not recounted.",
+      "Schapiro2022": "Complete publisher HTML main text and notes1–7 read by root and critic; no printed-page assignments or facsimile audit.",
+      "GodfreySmith2021": "All eight pages of explicitly incomplete March2021 v1 author draft read through extraction by critic, root and source investigator. Separate from2022 symposium; unfinished positive proposal not represented as completed."
+    },
+    "new_numbered_result_labels": [],
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "new_operating_joins_implemented": 0,
+    "inherited_model_reruns": 0,
+    "evidence": "Primary objection/reply comparison repairs chronological and separate-inner-animal interpretations. The stronger rival grants public practical reasons while treating rational status as an additional beneficiary condition. Capacity's failure to determine valuable content does not alone establish its irrelevance to standing; creaturely good as a sufficient ground needs independent justification. Existing transport results already state the conditional extension. Independent truth supports scoped noncontradiction; indispensability to scientific inquiry is a further constitutive claim. No new formal theorem, empirical validation or operating gate; whole-root necessity remains open."
+  },
+  "capacity_concern_claims_follow_up": {
+    "previous_goal_turn": "progress",
+    "previous_receipt_local_links": 430,
+    "previous_receipt_anchors": 206,
+    "previous_canonical_transport_self_audit_sources_and_review_hashes_revalidated": true,
+    "existing_companions_extended": 2,
+    "new_companion_files": 0,
+    "new_primary_works_examined": 3,
+    "primary_scope": {
+      "Feinberg1974": "Source investigator read original chapter43–68 through extraction and visually checked50–51. Root read43–51,66–68. Historical legal and clinical illustrations not verified as current facts. Regan exploratory excerpts not counted as a completed argument reading.",
+      "Cohen1986": "Critic, root and source investigator read full eight-page Colorado course transcription; original publication metadata checked. No journal-facsimile comparison or validation of biomedical, legal or comparative-capacity claims.",
+      "McMahan2005": "Critic and source investigator read353–361, sections1–3, from original journal PDF extraction. Root read353–363 and beginning364; substantive use confined to sections1–3. No full-article or facsimile audit. Intrinsic-property moral individualism not adopted as a neutral premise."
+    },
+    "new_numbered_result_labels": [],
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "new_operating_joins_implemented": 0,
+    "inherited_model_reruns": 0,
+    "evidence": "The actual rational-kind rights restriction retains humane obligations, so rights denial is not a counterexample to every baseline reason. Feinberg separates conceptual eligibility and represented exercise from an actual owed claim. Capacity-change cases discriminate current exercise, disposition, history, potential and kind separately; a disjunction of grounds can support successive accepted cases without making experience alone sufficient. No universal noncauser reason, equal comparative weight, proxy authority or full answerability follows from these distinctions alone. N1 concern and N3 answerability remain distinct tasks within the whole ethical objective. No new theorem, empirical validation or operating gate."
+  },
+  "directed_duties_corrective_response_follow_up": {
+    "previous_goal_turn": "progress",
+    "previous_receipt_local_links": 440,
+    "previous_receipt_anchors": 215,
+    "previous_canonical_transport_self_audit_sources_and_review_hashes_revalidated": true,
+    "existing_companions_extended": 2,
+    "new_companion_files": 0,
+    "new_primary_works_examined": 2,
+    "primary_scope": {
+      "Raz1986_1988Chapter7": "Source investigator read complete chapter165–192 and notes in Oxford export identifying1988 print edition; visually checked exportPDF13. Root read166–172,176–186 and note182; critic read176–186 and note182 through extraction. Gated1984 Mind article not read in full or treated as interchangeable. Historical institutional illustrations not independently verified as current law.",
+      "Thompson2004": "Critic read333–352,366–373 through author-hosted published PDF extraction; root separately read339,342,345,347–350,367–371. Truncated346 output excluded. No full-chapter or facsimile audit. Source investigator explicitly records critic scope rather than claiming an additional personal reading."
+    },
+    "new_numbered_result_labels": [],
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "new_operating_joins_implemented": 0,
+    "inherited_model_reruns": 0,
+    "evidence": "A warranted duty owed to a patient can extend through a defended necessary-means principle to feasible permissible correction of a blocking error. Direction is inherited from that premise, not identified by benefit or technical authority. Aggregate protective duties need not give each patient every outcome, while independently justified procedural standing remains possible. Required response, verification, representation and review retain their particular grounds; no automatic personal explanation, veto or separate right to each technical step follows. Universal noncauser concern and broader N3 answerability remain open. This is primary reading and internal argument review, not a new theorem, empirical validation, implementation or operating gate."
+  },
+  "procedural_standing_follow_up": {
+    "previous_goal_turn": "progress",
+    "previous_receipt_local_links": 447,
+    "previous_receipt_anchors": 221,
+    "previous_canonical_transport_self_audit_sources_and_review_hashes_revalidated": true,
+    "existing_companions_extended": 2,
+    "new_companion_files": 0,
+    "new_primary_works_examined": 2,
+    "primary_scope": {
+      "Waldron2011": "Source investigator read complete published NOMOS chapter3–31 through extraction from a public academic repository's volume PDF. Root and critic independently read14–25. No facsimile audit or reading of other volume chapters. Limited2010 draft access not counted separately or assumed equivalent. Forst2010 candidate reached gated publisher metadata only and supplied no argument.",
+      "Raz2006": "Critic read1009–1044 through public primary-text transcription after official PDF access failed. Root separately read1014–1019 and1025–1027. No1003–1008 or facsimile reading. Source investigator records supplied critic scope. Historical institutional illustrations not independently verified as current law."
+    },
+    "new_numbered_result_labels": [],
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "new_operating_joins_implemented": 0,
+    "inherited_model_reruns": 0,
+    "evidence": "Composes defended responsibility for an imposed restriction with a feasible proportionate route for otherwise unavailable relevant evidence, without assuming a right to a favorable outcome. The baseline, normative direction and absence of actual defeaters remain premises. Genuine consideration may preserve a justified verdict. Competent delegation preserves agency as a serious comparator; participation independent of accuracy needs a further agency or status ground. Knowable authority and personal explanation remain distinct. Broader N3, universal noncauser concern and whole-root necessity remain open. No new theorem, empirical validation, implementation or accepted-finite-application gate."
+  },
+  "agency_delegation_follow_up": {
+    "previous_goal_turn": "progress",
+    "previous_receipt_local_links": 456,
+    "previous_receipt_anchors": 229,
+    "previous_canonical_transport_self_audit_sources_hashes_revalidated": true,
+    "existing_companions_extended": 2,
+    "new_companion_files": 0,
+    "new_primary_works_examined": 1,
+    "primary_scope": {
+      "Shiffrin2022": "Source investigator read complete printed90–116 including notes through official UCLA repository web extraction. Root separately read91–94,104–108 and115n23. No facsimile or local-extraction claim; referenced Democratic Law not read. Prior Shiffrin2000 not counted again. Pettit1996 candidate yielded metadata and an unreadable scan only, not an inspected argument."
+    },
+    "new_numbered_result_labels": [],
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "new_operating_joins_implemented": 0,
+    "inherited_model_reruns": 0,
+    "evidence": "Conditional authorship role can require an actual act or valid delegation without improving the underlying assessment; actual authorization can itself create a normative fact. Effective opportunity differs from an unused invitation. Joint N1–N4 dependency audit preserves patient, good, actor reason and authority; sound conditional generation cannot prove an added agency premise necessary. Coauthors, duty-bearers and affected patients remain distinct. No independence theorem for the entire repository is asserted. Universal noncauser concern, broader N3 and whole-root necessity remain open; no accepted-finite-application gate added."
+  },
+  "constitutive_agency_follow_up": {
+    "previous_goal_turn": "progress",
+    "previous_receipt_local_links": 471,
+    "previous_receipt_anchors": 243,
+    "previous_canonical_self_audit_sources_hashes_revalidated": true,
+    "existing_companions_extended": 2,
+    "new_companion_files": 0,
+    "new_primary_works_examined": 3,
+    "primary_scope": {
+      "Enoch2006": "Critic read main argument169–196 via public primary transcription; root selected183–187 and194–196 through its ordinary public-HTML extraction. No facsimile; references197–198 not inspected.",
+      "Ferrero2009": "Source investigator read complete manuscript1–38 ofJan12,2009v3.05 uncorrected proof through web extraction. Not final published chapter or facsimile; proof locators retained. Publisher303–334 differs from some bibliographic303–333 listings.",
+      "Ferrero2018": "Root read published113–118 via web and127–154 via ordinary official-PDF download/text extraction. No119–126,155–158reference or facsimile reading. Quoted Enoch2011 not independently read."
+    },
+    "new_numbered_result_labels": [],
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "new_operating_joins_implemented": 0,
+    "inherited_model_reruns": 0,
+    "evidence": "Preserves internal vindication as a route beyond voluntary undertakings while distinguishing jurisdiction, normative authority and patient coverage. Three candidate standards are assessed through inherited scoped arguments, not a new full-basis independence proof. A realist comparator can accept moral reasons while denying their proposed constitutive ground. Formation of recognition differs from justification and validity. Next is the sufficiency and addressee scope of the particular patient-ground. Whole-root necessity remains open; no finite-application gate added."
+  },
+  "patient_reason_grounding_follow_up": {
+    "previous_goal_turn": "progress",
+    "previous_receipt_local_links": 482,
+    "previous_receipt_anchors": 253,
+    "previous_canonical_self_audit_sources_hashes_revalidated": true,
+    "existing_companions_extended": 2,
+    "new_companion_files": 0,
+    "new_primary_works_examined": 2,
+    "primary_scope": {
+      "Parfit1997": "Source investigator read complete printed99–130 including notes via primary PDF web/local extraction; root selected115–119 and128–130 via PyPDF. No facsimile. File contains Parfit only despite two-author filename; Broome separate contribution and discovered On What Matters draft not read.",
+      "Schroeder2007Weighting": "Critic read main110–130 and notes130–131 via public primary transcription; root independently read114–118 through web extraction. No facsimile or local reading. Reasons and Agent-Neutrality metadata/abstract only, not an additional reading."
+    },
+    "new_numbered_result_labels": [],
+    "new_lean_audits": 0,
+    "new_empirical_studies": 0,
+    "new_operating_joins_implemented": 0,
+    "inherited_model_reruns": 0,
+    "evidence": "An elementary stipulated explanation-cover argument separates universal patient-reason coverage from a single common desire and from desire-independent grounding. Reason content, explanatory grounds and weight remain distinct; q preserves the patient's relief contrast. Next is warranted acquisition and complete explanatory coverage, not behavioral invariance alone. Real overdetermination, normative validity and whole-root necessity remain unproved; no accepted-finite-application gate added."
+  },
   "artifacts": {
-    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md": "86c995753534deb6368a502dd87eaa7fa85dc6864b657e86d68bb9698ab898b7",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md": "40ff5c12cc752ffd08cf702ad621b9f1d02f36cba5372ae5aa8d0a64de9f3c2b",
     "sources/15-codex-theory-conversations/2026-10-06-huigen-entire-theory-necessity.md": "995b491155dec8941aef11549a04483e71f76da856351250d5236aba2a89bf01",
     "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md": "a9908371472ab74bb2006cf765653788b5c3737b424d9f45b1790bcdfb638a4f",
     "experiments/integrated-correction/general-framework/generative-basis/necessity-symmetry/README.md": "8203be3deb0bc0af20b66fe8f5423120a73545fa31176df5b5ed13d3a18a9d82",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-CLOSURE.md": "fecf1536cac2bf69efeba5b808abb4dd0b74333fba5aba2c4fd61dee7025ac76",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md": "5d033f5eb70c8b6c3238ae251da442969acd91713e4318b048c2e9d571731791",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md": "7555111c7f9212310d1ab120ba48f1eb3c78b5666107ac69b5cf3e7266fcb6f7",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md": "309a69a8ae715912b655b328e7885950852d95a39c43bda9f515a4667a217adb",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md": "3171c3b900e09fe4214c8376ce6c107195299c21b8e37b13ad3ff6f307e5203a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md": "8a68ab4da2cfb035cd9f20e96bb0fcd00633bcce19280f402575e0719ed82f9b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md": "792da360e5b0749476d9f46a6f376958dd04e40d394407bf2af1331e3542ad28",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md": "80d8c725e6c0b737867229f8e4c92e767e429b8e0708616327641886c0c11969",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-SOURCES.md": "5cb9f67d066d390f39b85c422262c18bb9c0acf19a9fd0107610b4b04214950b",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md": "c00dfff1cd9b941531f5f417dac95c874bcb7ccc9d0c65abfd5ee1757c1c13e1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md": "c1d6409c737b9884154472dfb64a0c3b8f703f27b7e45361c0729a89154be8e0",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-GENERATIVE-IDENTITY.md": "b266ef45ae930843b53c5a11dd641fd195aba2f60f6453f0f4262f088af97c8f",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md": "72f5279f62a76f110177231f9126d96422bc6941c18525e74c2b8ba56659afc7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md": "882df85a2136e740feb99cc8b7379d5bde0a155bb8b8ebc290744cc4895c0823",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-HARM-IDENTIFICATION.md": "5d087d031fe3dee608959152d2f92766f400df9bb18ecc3ce5fe717fe9595556",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-CHECK.py": "47e4cb83942b36a235e93af6d0bf88bd022091000e544b3cf218003b1aa7613d",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-CLAIM-COVERAGE.json": "21ad75e639a8e5b3e77e044f9bdbc74c5b5ff2b9444626a9b5169235bbf600ce",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-CHECK.py": "1bb2bec075cb09301e314db420233789c87d8332cb7423bfb7a9135372abd797",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-CLAIM-COVERAGE.json": "b3124e26191109d4e7d0add61772010b267690e68f75f9e0edc96092b21a0880",
     "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean": "bf9a625ac70c7cd1fe78ba39ee37bd506caf319f31d7ea4059ca6a2549908bf4",
     "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/InquiryFamilies.lean": "9b8ccc77d1f3fc7c2c4731312dc416a50bbb3079320e0571994fe43965547a75",
     "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check.py": "af7e7ab1c4ae38d11811f06772f37f6f099393ec299e87c4572c931de19a6101",
@@ -483,6 +743,90 @@
     {
       "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
       "target": "EVALUATIVE-APPLICATION.md#when-the-application-is-functionally-recognized"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#18-does-inductive-risk-make-concern-internal-to-science"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md#17-evidence-reporting-and-application-specific-stakes"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#15-inductive-risk-and-the-scope-of-scientific-responsibility"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#19-naturalistic-patient-good-without-an-imported-moral-verdict"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md#18-patient-good-and-the-determinacy-of-idealization"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#16-naturalistic-good-and-reasons-for-others"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#20-can-rational-valuation-make-creaturely-good-authoritative-for-others"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#17-from-creaturely-good-to-shared-authority"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#21-capacity-concern-and-claims"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#18-capacity-interests-and-the-scope-of-concern"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#22-patient-interests-directed-duties-and-corrective-response"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#19-patient-interests-directed-duties-and-answerability"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#23-procedural-standing-without-a-right-to-win"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#20-procedural-standing-and-justified-authority"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#24-participation-beyond-information-and-the-joint-foundation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#21-participation-shared-duties-and-delegation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#25-inescapable-agency-authority-and-moral-coverage"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#22-inescapable-agency-and-normative-authority"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#26-patient-reasons-motivational-grounds-and-overdetermination"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#23-patient-reasons-and-their-explanatory-grounds"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
@@ -1081,6 +1425,110 @@
       "target": "HUIGEN-CHECKS.json"
     },
     {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#18-does-inductive-risk-make-concern-internal-to-science"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#17-evidence-reporting-and-application-specific-stakes"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#15-inductive-risk-and-the-scope-of-scientific-responsibility"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#19-naturalistic-patient-good-without-an-imported-moral-verdict"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#18-patient-good-and-the-determinacy-of-idealization"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#16-naturalistic-good-and-reasons-for-others"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#20-can-rational-valuation-make-creaturely-good-authoritative-for-others"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#17-from-creaturely-good-to-shared-authority"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#21-capacity-concern-and-claims"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#18-capacity-interests-and-the-scope-of-concern"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#22-patient-interests-directed-duties-and-corrective-response"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#19-patient-interests-directed-duties-and-answerability"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#23-procedural-standing-without-a-right-to-win"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#20-procedural-standing-and-justified-authority"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#24-participation-beyond-information-and-the-joint-foundation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#21-participation-shared-duties-and-delegation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#25-inescapable-agency-authority-and-moral-coverage"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#22-inescapable-agency-and-normative-authority"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#26-patient-reasons-motivational-grounds-and-overdetermination"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#23-patient-reasons-and-their-explanatory-grounds"
+    },
+    {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
       "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
     },
@@ -1215,6 +1663,34 @@
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
       "target": "HUIGEN-SELF-GROUND-SOURCES.md#14-reason-guided-action-and-uncertain-outcomes"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-GENERATIVE-CLOSURE.md#h13-the-operational-invariant-is-a-preserved-question"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#18-does-inductive-risk-make-concern-internal-to-science"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#15-inductive-risk-and-the-scope-of-scientific-responsibility"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#16-naturalistic-good-and-reasons-for-others"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REASON-TRANSPORT.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#19-naturalistic-patient-good-without-an-imported-moral-verdict"
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-PRACTICAL-NECESSITY-AUDIT.md",
@@ -1446,6 +1922,118 @@
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#15-inductive-risk-and-the-scope-of-scientific-responsibility"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "#14-imposed-burdens-and-the-nonparticipating-patient"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#17-evidence-reporting-and-application-specific-stakes"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#16-naturalistic-good-and-reasons-for-others"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#18-patient-good-and-the-determinacy-of-idealization"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#17-from-creaturely-good-to-shared-authority"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#3-the-noncommunicating-patient-exposes-two-distinct-transport-tasks"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#18-capacity-interests-and-the-scope-of-concern"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#19-patient-interests-directed-duties-and-answerability"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#16-reliable-action-under-partial-evidence"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#20-procedural-standing-and-justified-authority"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "#14-imposed-burdens-and-the-nonparticipating-patient"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "#22-patient-interests-directed-duties-and-corrective-response"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#21-participation-shared-duties-and-delegation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-REASON-TRANSPORT.md#15-authorization-requires-more-than-a-beneficial-endpoint"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#21-participation-shared-duties-and-delegation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md#2-five-distinct-kinds-of-commitment"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-GENERATIVE-CLOSURE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#22-inescapable-agency-and-normative-authority"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#22-inescapable-agency-and-normative-authority"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md#5-a-countermodel-with-the-declared-scientific-and-reflective-capacities"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-FULL-THEORY-AUDIT.md#42-two-orbit-lemma"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#22-inescapable-agency-and-normative-authority"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#23-patient-reasons-and-their-explanatory-grounds"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md",
       "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
     },
     {
@@ -1626,6 +2214,18 @@
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "#14-reason-guided-action-and-uncertain-outcomes"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "DAO-NORMATIVE-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md",
       "target": "HUIGEN-SELF-GROUND-AUDIT.md#10-practical-congruency-tested-on-an-unrelated-actor"
     },
     {
@@ -1758,83 +2358,67 @@
     },
     {
       "source": "RESEARCH.md",
-      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#what-uncertainty-permits-us-to-guarantee"
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#shared-reasons-and-their-explanatory-grounds"
     },
     {
       "source": "RESEARCH.md",
-      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#17-acquired-understanding-present-reasons-and-fallible-action"
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#26-patient-reasons-motivational-grounds-and-overdetermination"
     },
     {
       "source": "RESEARCH.md",
-      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md#when-the-application-is-functionally-recognized"
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#23-patient-reasons-and-their-explanatory-grounds"
     },
     {
       "source": "RESEARCH.md",
-      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md#applicability-transfer-and-costly-choice"
-    },
-    {
-      "source": "RESEARCH.md",
-      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-partial-evidence-and-reason-guided-action-6-october-2026"
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-patient-reasons-and-explanatory-coverage-6-october-2026"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/README.md",
-      "target": "unified-2026-10-05/HUIGEN.md#what-uncertainty-permits-us-to-guarantee"
+      "target": "unified-2026-10-05/HUIGEN.md#shared-reasons-and-their-explanatory-grounds"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/README.md",
-      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#17-acquired-understanding-present-reasons-and-fallible-action"
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#26-patient-reasons-motivational-grounds-and-overdetermination"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/README.md",
-      "target": "unified-2026-10-05/EVALUATIVE-APPLICATION.md#when-the-application-is-functionally-recognized"
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#23-patient-reasons-and-their-explanatory-grounds"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/README.md",
-      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md#applicability-transfer-and-costly-choice"
-    },
-    {
-      "source": "theories/shengsheng-buxi-generative-existence/README.md",
-      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-partial-evidence-and-reason-guided-action-6-october-2026"
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-patient-reasons-and-explanatory-coverage-6-october-2026"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
-      "target": "HUIGEN.md#what-uncertainty-permits-us-to-guarantee"
+      "target": "HUIGEN.md#shared-reasons-and-their-explanatory-grounds"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
-      "target": "EVALUATIVE-APPLICATION.md#when-the-application-is-functionally-recognized"
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md#26-patient-reasons-motivational-grounds-and-overdetermination"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
-      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md#applicability-transfer-and-costly-choice"
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#23-patient-reasons-and-their-explanatory-grounds"
     },
     {
       "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
-      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-partial-evidence-and-reason-guided-action-6-october-2026"
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md#follow-up-patient-reasons-and-explanatory-coverage-6-october-2026"
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#what-uncertainty-permits-us-to-guarantee"
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#shared-reasons-and-their-explanatory-grounds"
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "target": "HUIGEN-REASON-TRANSPORT.md#16-reliable-action-under-partial-evidence"
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#26-patient-reasons-motivational-grounds-and-overdetermination"
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "target": "HUIGEN-SELF-GROUND-AUDIT.md#17-acquired-understanding-present-reasons-and-fallible-action"
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#23-patient-reasons-and-their-explanatory-grounds"
     },
     {
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "target": "HUIGEN-SELF-GROUND-SOURCES.md#14-reason-guided-action-and-uncertain-outcomes"
-    },
-    {
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "target": "HUIGEN-FULL-THEORY-AUDIT.md#applicability-transfer-and-costly-choice"
-    },
-    {
-      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
-      "target": "HUIGEN-REVIEW.md#follow-up-partial-evidence-and-reason-guided-action-6-october-2026"
+      "target": "HUIGEN-REVIEW.md#follow-up-patient-reasons-and-explanatory-coverage-6-october-2026"
     },
     {
       "source": "sources/SOURCES.md",
@@ -1851,6 +2435,42 @@
     {
       "source": "sources/SOURCES.md",
       "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#14-reason-guided-action-and-uncertain-outcomes"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#15-inductive-risk-and-the-scope-of-scientific-responsibility"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#16-naturalistic-good-and-reasons-for-others"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#17-from-creaturely-good-to-shared-authority"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#18-capacity-interests-and-the-scope-of-concern"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#19-patient-interests-directed-duties-and-answerability"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#20-procedural-standing-and-justified-authority"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#21-participation-shared-duties-and-delegation"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#22-inescapable-agency-and-normative-authority"
+    },
+    {
+      "source": "sources/SOURCES.md",
+      "target": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-SOURCES.md#23-patient-reasons-and-their-explanatory-grounds"
     },
     {
       "source": "sources/SOURCES.md",

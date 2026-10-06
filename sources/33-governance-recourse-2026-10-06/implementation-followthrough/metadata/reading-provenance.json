@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "access_date_utc": "2026-10-06",
+  "preservation_kind": "selected_web_reader_editions_and_indexed_visual_description",
+  "original_pdf_count": 0,
+  "original_byte_identity_verified": false,
+  "selection_rule": "Complete numbered reader lines selected without altering line content; distinct ranges explicitly labeled. Prefix is AI-authored provenance. The reader's extracted text, OCR and page labels are not independently verified against PDF bytes.",
+  "sources": [
+    {
+      "reading_path": "reading/ombudsman-2021-web-excerpts.txt",
+      "source_url": "https://www.ombudsman.gov.au/__data/assets/pdf_file/0014/112442/Services-Australias-Income-Compliance-Report.pdf",
+      "version": "April 2021, report 2/2021; web reader reports 52 PDF pages",
+      "pinpoints": "Printed pp 4–6 §§1.4–1.20; pp32–34 §§3.106–3.113 and Recommendation 8.",
+      "selected_ranges": [
+        {
+          "tool_response_store_key": "notice2021scope",
+          "start_line": 65,
+          "end_line": 155,
+          "inclusive_line_count": 91
+        },
+        {
+          "tool_response_store_key": "notice2021",
+          "start_line": 1182,
+          "end_line": 1282,
+          "inclusive_line_count": 101
+        }
+      ],
+      "full_original_preserved": false
+    },
+    {
+      "reading_path": "reading/ombudsman-2022-web-excerpts.txt",
+      "source_url": "https://www.ombudsman.gov.au/__data/assets/pdf_file/0029/286517/Did-they-do-what-they-said-they-would-Volume-2.pdf",
+      "version": "October 2022, report 04/2022; web reader reports 109 PDF pages",
+      "pinpoints": "Printed p9 §§1.10–1.15; p63 §§1.268–1.270; pp65–67 §§1.281–1.292 and Recommendation 8.",
+      "selected_ranges": [
+        {
+          "tool_response_store_key": "notice2022scope",
+          "start_line": 326,
+          "end_line": 355,
+          "inclusive_line_count": 30
+        },
+        {
+          "tool_response_store_key": "notice2022body",
+          "start_line": 2353,
+          "end_line": 2367,
+          "inclusive_line_count": 15
+        },
+        {
+          "tool_response_store_key": "notice2022body",
+          "start_line": 2447,
+          "end_line": 2523,
+          "inclusive_line_count": 77
+        }
+      ],
+      "full_original_preserved": false
+    },
+    {
+      "reading_path": "reading/services-australia-2022-23-web-excerpts.txt",
+      "source_url": "https://www.servicesaustralia.gov.au/sites/default/files/2023-10/annual-report-2022-23.pdf",
+      "version": "Annual Report 2022–23, official October 2023 URL; web reader reports 270 PDF pages",
+      "pinpoints": "Printed p111 §7.10; p116 §8.1; p119 §8.5.",
+      "selected_ranges": [
+        {
+          "tool_response_store_key": "notice2023body",
+          "start_line": 4255,
+          "end_line": 4271,
+          "inclusive_line_count": 17
+        },
+        {
+          "tool_response_store_key": "notice2023settlement",
+          "start_line": 4376,
+          "end_line": 4402,
+          "inclusive_line_count": 27
+        },
+        {
+          "tool_response_store_key": "notice2023settlement",
+          "start_line": 4478,
+          "end_line": 4490,
+          "inclusive_line_count": 13
+        }
+      ],
+      "full_original_preserved": false
+    }
+  ],
+  "appendix": {
+    "reading_path": "reading/ombudsman-2022-appendix-search-description.txt",
+    "source_url": "https://www.ombudsman.gov.au/__data/assets/pdf_file/0021/115374/Did-they-do-what-they-said-they-would.-Reviewing-our-recommendations%2C-Volume-2%2C-October-2022.pdf",
+    "query": "site:ombudsman.gov.au \"EC22-003472\"",
+    "kind": "tool_provided_indexed_visual_description",
+    "letter_identification": "Rebecca Skinner; 19 September 2022; EC22-003472",
+    "pixels_inspected": false,
+    "attachment_inspected": false,
+    "identity_to_other_official_pdf_unverified": true
+  },
+  "visual_access": {
+    "pdf_2022_page_indices_attempted": [
+      105,
+      106,
+      107,
+      108
+    ],
+    "result": "Three screenshot calls returned TimeoutError; index106 returned a reference but no image payload visible to this agent. Independent reviewer also could not inspect the appendix pixels. No successful visual verification is claimed."
+  },
+  "license": "Copyright and license pages not captured; no open redistribution license inferred.",
+  "exclusions": [
+    "No current 2026 legal or implementation status inferred",
+    "No independent per-person receipt audit",
+    "No new aggregate calculation",
+    "No original PDF or error page retained as an original"
+  ],
+  "preparation_error": "An initial metadata-generation tool script failed at JavaScript parse time because an unquoted property name began with digits. No commands or writes executed in that failed invocation; fixed before generating metadata or verification.",
+  "preparation_link_correction": "First local link check caught an extra parent-directory segment in README evidence-note link. Corrected before producing verification receipt or manifest."
+}

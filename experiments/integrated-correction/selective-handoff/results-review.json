@@ -1,0 +1,1089 @@
+{
+  "status": "passed_independent_saved_run_audit",
+  "model_calls_by_reviewer": 0,
+  "producer_imported_or_executed": false,
+  "frozen_files_verified": 36,
+  "preflight_inputs_verified": 32,
+  "archival_source_hashes_verified": 44,
+  "exact_result_comparisons": 1144,
+  "deliberate_corruptions_rejected": [
+    "wrong row accuracy",
+    "wrong group total",
+    "wrong joint success",
+    "wrong comparator score",
+    "omitted response row",
+    "false response identity"
+  ],
+  "contexts": 24,
+  "present": 24,
+  "valid": 24,
+  "complete_correct": 24,
+  "correct_entries": 192,
+  "planned_entries": 192,
+  "definite_entries": 160,
+  "uncertainty_entries": 32,
+  "summaries": [
+    {
+      "arm": "ordinary",
+      "state": "confirm",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    },
+    {
+      "arm": "ordinary",
+      "state": "defeat",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    },
+    {
+      "arm": "ordinary",
+      "state": "foreign",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    },
+    {
+      "arm": "boundary",
+      "state": "confirm",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    },
+    {
+      "arm": "boundary",
+      "state": "defeat",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    },
+    {
+      "arm": "boundary",
+      "state": "foreign",
+      "planned_contexts": 4,
+      "present": 4,
+      "valid": 4,
+      "complete_correct": 4,
+      "entries_correct": 32,
+      "planned_entries": 32
+    }
+  ],
+  "joint_success": {
+    "ordinary": 4,
+    "boundary": 4
+  },
+  "paired_differences": [
+    {
+      "fixture": "L02",
+      "state": "confirm",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    },
+    {
+      "fixture": "L02",
+      "state": "defeat",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    },
+    {
+      "fixture": "L02",
+      "state": "foreign",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    },
+    {
+      "fixture": "L06",
+      "state": "confirm",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    },
+    {
+      "fixture": "L06",
+      "state": "defeat",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    },
+    {
+      "fixture": "L06",
+      "state": "foreign",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    },
+    {
+      "fixture": "L08",
+      "state": "confirm",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    },
+    {
+      "fixture": "L08",
+      "state": "defeat",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    },
+    {
+      "fixture": "L08",
+      "state": "foreign",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    },
+    {
+      "fixture": "L12",
+      "state": "confirm",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    },
+    {
+      "fixture": "L12",
+      "state": "defeat",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    },
+    {
+      "fixture": "L12",
+      "state": "foreign",
+      "boundary_minus_ordinary_complete": 0,
+      "boundary_minus_ordinary_entries": 0
+    }
+  ],
+  "independent_oracles": [
+    {
+      "id": "L06-defeat-ordinary",
+      "expected": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "base": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "B"
+      ]
+    },
+    {
+      "id": "L02-foreign-boundary",
+      "expected": [
+        "?",
+        "?",
+        0,
+        1,
+        1,
+        "?",
+        "?",
+        0
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "candidates": [
+        "B",
+        "P"
+      ]
+    },
+    {
+      "id": "L08-confirm-ordinary",
+      "expected": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "base": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "candidates": [
+        "P"
+      ]
+    },
+    {
+      "id": "L12-confirm-boundary",
+      "expected": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "P"
+      ]
+    },
+    {
+      "id": "L08-confirm-boundary",
+      "expected": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "base": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "candidates": [
+        "P"
+      ]
+    },
+    {
+      "id": "L06-foreign-ordinary",
+      "expected": [
+        1,
+        0,
+        0,
+        1,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "base": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "B",
+        "P"
+      ]
+    },
+    {
+      "id": "L12-foreign-ordinary",
+      "expected": [
+        0,
+        1,
+        0,
+        "?",
+        1,
+        "?",
+        "?",
+        "?"
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "B",
+        "P"
+      ]
+    },
+    {
+      "id": "L08-foreign-boundary",
+      "expected": [
+        1,
+        1,
+        0,
+        0,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "base": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "candidates": [
+        "B",
+        "P"
+      ]
+    },
+    {
+      "id": "L12-confirm-ordinary",
+      "expected": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "P"
+      ]
+    },
+    {
+      "id": "L02-foreign-ordinary",
+      "expected": [
+        "?",
+        "?",
+        0,
+        1,
+        1,
+        "?",
+        "?",
+        0
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "candidates": [
+        "B",
+        "P"
+      ]
+    },
+    {
+      "id": "L06-foreign-boundary",
+      "expected": [
+        1,
+        0,
+        0,
+        1,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "base": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "B",
+        "P"
+      ]
+    },
+    {
+      "id": "L08-defeat-ordinary",
+      "expected": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "base": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "candidates": [
+        "B"
+      ]
+    },
+    {
+      "id": "L02-defeat-boundary",
+      "expected": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "candidates": [
+        "B"
+      ]
+    },
+    {
+      "id": "L02-confirm-ordinary",
+      "expected": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "candidates": [
+        "P"
+      ]
+    },
+    {
+      "id": "L12-foreign-boundary",
+      "expected": [
+        0,
+        1,
+        0,
+        "?",
+        1,
+        "?",
+        "?",
+        "?"
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "B",
+        "P"
+      ]
+    },
+    {
+      "id": "L02-confirm-boundary",
+      "expected": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "candidates": [
+        "P"
+      ]
+    },
+    {
+      "id": "L06-confirm-boundary",
+      "expected": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "base": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "P"
+      ]
+    },
+    {
+      "id": "L06-confirm-ordinary",
+      "expected": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "base": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "P"
+      ]
+    },
+    {
+      "id": "L08-foreign-ordinary",
+      "expected": [
+        1,
+        1,
+        0,
+        0,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "base": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "candidates": [
+        "B",
+        "P"
+      ]
+    },
+    {
+      "id": "L12-defeat-ordinary",
+      "expected": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "B"
+      ]
+    },
+    {
+      "id": "L06-defeat-boundary",
+      "expected": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "base": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "B"
+      ]
+    },
+    {
+      "id": "L12-defeat-boundary",
+      "expected": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "packet": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "candidates": [
+        "B"
+      ]
+    },
+    {
+      "id": "L02-defeat-ordinary",
+      "expected": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "base": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "packet": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "candidates": [
+        "B"
+      ]
+    },
+    {
+      "id": "L08-defeat-boundary",
+      "expected": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "base": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "packet": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "candidates": [
+        "B"
+      ]
+    }
+  ],
+  "direct_tool_final_matches": [
+    {
+      "agent": "/root/reuse24",
+      "trial_id": "L08-defeat-boundary",
+      "sha256": "39c260c5abf53f9189a3591889d82b6ef052898ad134e9266b8f4d24c453939f"
+    }
+  ],
+  "runtime_dispatch_metadata_check": {
+    "source_lines_verified": 24,
+    "first_event_timestamp": "2026-10-06T01:25:19.034Z",
+    "last_event_timestamp": "2026-10-06T01:34:02.821Z",
+    "decryption_attempted": false,
+    "scope": "Selected local runtime spawn metadata only. Prompt plaintext and responses are not authenticated by these protected fields. No unrelated session contents were parsed or copied; absence of extra calls outside the selected lines was not independently audited."
+  },
+  "provenance_limit": "Participants reuse01 through reuse23 were not returned by this live-agent snapshot; their finals could not be independently recovered through this tool at review time. Their saved responses and dispatch identities remain orchestrator-transcribed records.",
+  "additional_limits": "Freeze and dispatch history are local orchestrator records, not authenticated platform exports. No complete child tool traces, backend model revision or security isolation certification. Ceiling on selected finite cases shows no observed instruction benefit; not statistical equivalence or value acquisition.",
+  "files_sha256": {
+    "verify_results.py": "5e4d4f258a31853b0a04d9ab72378337d4378f929b093f4f4f6df4f5ee9b20b6",
+    "reviewer-agent-snapshot.json": "f4542588595d8c5602c2bd48f39828462eb39469cdd853e6f32df616d467d79b",
+    "runtime-dispatch-metadata.json": "766cbd26241d5c35e625ead15ed761d66824cd5488c989cc34e189a2d82bfc95",
+    "FREEZE.json": "0fb756ec527f53fc3b348639d9b1d56471711e8cc9d4ba7153c0024ce464c3e1",
+    "preflight.json": "e5f1f9a6baa4ad8c99978e8207d17d695047918c8ba9a3ab4671a14ac3946331",
+    "dispatch-record.json": "04860461ecfa85ec44f598424c8ea7dbce92a76ed81735dff950c77dabb928e3",
+    "RUN-NOTES.md": "959251d67f2309347d0bdc63a10f007c1db1e1e20798e11e3f5df76bf74dad33",
+    "results.json": "845e1f28dd8a8ffec5162ff1738a949e07691aa9d7c0c7ace9338da15dbf764a",
+    "responses/L06-defeat-ordinary.txt": "9c28f3ab3c19822ef011e57b2d47ba3d50cd37a8ad00af11fd8e95cffd1a8ddd",
+    "responses/L02-foreign-boundary.txt": "cc373f79c92fa86e57668cb5d05a0b853a5a131e7644155e5e432c74680618b2",
+    "responses/L08-confirm-ordinary.txt": "4e0493613ec03f1adf28dfe4b943bcb82c37ef1e2a96b0dece4518879c66f662",
+    "responses/L12-confirm-boundary.txt": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+    "responses/L08-confirm-boundary.txt": "4e0493613ec03f1adf28dfe4b943bcb82c37ef1e2a96b0dece4518879c66f662",
+    "responses/L06-foreign-ordinary.txt": "95d23a9b66b46dc8db3fedf5e7b90874dc72655efcb7ee7a5de2a7091c94480d",
+    "responses/L12-foreign-ordinary.txt": "feb0327cdb4f44b31e18c31002fdf86ee8319edcfc9b8b086d510e712b670bd7",
+    "responses/L08-foreign-boundary.txt": "08f5721213370e86ec0cfc5c8acde93850f1a3988f5a261e374ce529b568299b",
+    "responses/L12-confirm-ordinary.txt": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+    "responses/L02-foreign-ordinary.txt": "cc373f79c92fa86e57668cb5d05a0b853a5a131e7644155e5e432c74680618b2",
+    "responses/L06-foreign-boundary.txt": "95d23a9b66b46dc8db3fedf5e7b90874dc72655efcb7ee7a5de2a7091c94480d",
+    "responses/L08-defeat-ordinary.txt": "39c260c5abf53f9189a3591889d82b6ef052898ad134e9266b8f4d24c453939f",
+    "responses/L02-defeat-boundary.txt": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+    "responses/L02-confirm-ordinary.txt": "90f72e544cef481447d1a2345a23f9e3f5f4d09f9e7557647c9c2c2bcb49b2b3",
+    "responses/L12-foreign-boundary.txt": "feb0327cdb4f44b31e18c31002fdf86ee8319edcfc9b8b086d510e712b670bd7",
+    "responses/L02-confirm-boundary.txt": "90f72e544cef481447d1a2345a23f9e3f5f4d09f9e7557647c9c2c2bcb49b2b3",
+    "responses/L06-confirm-boundary.txt": "9c2b828e5e83059e04700221b0fd16ecef43df109391c5fd9408d00df0bd1d87",
+    "responses/L06-confirm-ordinary.txt": "9c2b828e5e83059e04700221b0fd16ecef43df109391c5fd9408d00df0bd1d87",
+    "responses/L08-foreign-ordinary.txt": "08f5721213370e86ec0cfc5c8acde93850f1a3988f5a261e374ce529b568299b",
+    "responses/L12-defeat-ordinary.txt": "13ef34de08278faaf11b03371357f3f51c2c4b3f8a320ff22f86ca065b66af3b",
+    "responses/L06-defeat-boundary.txt": "9c28f3ab3c19822ef011e57b2d47ba3d50cd37a8ad00af11fd8e95cffd1a8ddd",
+    "responses/L12-defeat-boundary.txt": "13ef34de08278faaf11b03371357f3f51c2c4b3f8a320ff22f86ca065b66af3b",
+    "responses/L02-defeat-ordinary.txt": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+    "responses/L08-defeat-boundary.txt": "39c260c5abf53f9189a3591889d82b6ef052898ad134e9266b8f4d24c453939f"
+  }
+}

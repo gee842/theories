@@ -1,0 +1,190 @@
+{
+  "$id": "https://comembench.org/schemas/v17/node_view.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "agent_role": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "capability_token": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "handoff_contract": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "edge_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "producer_node": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "semantic": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "edge_id",
+          "producer_node",
+          "semantic"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "incoming_artifacts": {
+      "items": {
+        "$id": "https://comembench.org/schemas/v17/artifact.schema.json",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "artifact_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "entity_scope": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "parent_artifact_ids": {
+            "items": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "payload": {
+            "type": "object"
+          },
+          "producer_node": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "provenance": {
+            "minProperties": 1,
+            "type": "object"
+          },
+          "scenario_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "schema_version": {
+            "const": "comembench-artifact/v17"
+          },
+          "semantic": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "verification": {
+            "additionalProperties": false,
+            "properties": {
+              "authority": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "receipt_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "signature": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "unverified",
+                  "verified",
+                  "failed"
+                ]
+              }
+            },
+            "required": [
+              "status",
+              "authority",
+              "receipt_id",
+              "signature"
+            ],
+            "type": "object"
+          },
+          "version": {
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "artifact_id",
+          "schema_version",
+          "semantic",
+          "producer_node",
+          "scenario_id",
+          "entity_scope",
+          "version",
+          "verification",
+          "payload",
+          "provenance"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "local_context": {
+      "type": "object"
+    },
+    "node_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "public_output_type": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "comembench-artifact/v17"
+        },
+        "semantic": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "semantic",
+        "schema_version"
+      ],
+      "type": "object"
+    },
+    "scenario_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "comembench-node-view/v17"
+    },
+    "task": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "scenario_id",
+    "node_id",
+    "agent_role",
+    "task",
+    "local_context",
+    "incoming_artifacts",
+    "handoff_contract",
+    "public_output_type",
+    "capability_token"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,333 @@
+{
+  "$defs": {
+    "topology": {
+      "additionalProperties": false,
+      "properties": {
+        "motifs": {
+          "items": {
+            "enum": [
+              "chain",
+              "split_join",
+              "reuse",
+              "overlap",
+              "bounded_revision_loop",
+              "other_dependency"
+            ]
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "primary": {
+          "enum": [
+            "chain",
+            "split_join",
+            "reuse",
+            "overlap",
+            "bounded_revision_loop",
+            "composite",
+            "other_dependency"
+          ]
+        },
+        "signature": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "primary",
+        "motifs",
+        "signature"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://comembench.org/schemas/v17/workflow_family.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "construction": {
+      "additionalProperties": false,
+      "properties": {
+        "cross_source_composition": {
+          "const": false
+        },
+        "edge_policy": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "source_record": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "unit_policy": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_record",
+        "unit_policy",
+        "edge_policy",
+        "cross_source_composition"
+      ],
+      "type": "object"
+    },
+    "domain": {
+      "enum": [
+        "stateful_tool_use",
+        "repository_code_change",
+        "offline_information_retrieval",
+        "mathematical_and_structured_reasoning"
+      ]
+    },
+    "execution": {
+      "additionalProperties": false,
+      "properties": {
+        "domain_evaluator": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "requires_closed_loop": {
+          "const": true
+        },
+        "revision_limit": {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "domain_evaluator",
+        "requires_closed_loop"
+      ],
+      "type": "object"
+    },
+    "execution_topology": {
+      "$ref": "#/$defs/topology"
+    },
+    "family_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "global_goal": {
+      "maxLength": 10000,
+      "minLength": 30,
+      "type": "string"
+    },
+    "nodes": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "agent_role": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "environment_ref": {
+            "type": "object"
+          },
+          "grounding_evidence": {
+            "minProperties": 1,
+            "type": "object"
+          },
+          "local_context_ref": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "node_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "node_kind": {
+            "enum": [
+              "source_task",
+              "verification_overlay"
+            ]
+          },
+          "output_schema": {
+            "const": "comembench-artifact/v17"
+          },
+          "output_semantic": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_ref": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_unit_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "task": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "node_id",
+          "agent_role",
+          "task",
+          "local_context_ref",
+          "output_semantic",
+          "output_schema",
+          "source_ref",
+          "source_unit_id",
+          "node_kind"
+        ],
+        "type": "object"
+      },
+      "minItems": 5,
+      "type": "array"
+    },
+    "scenario_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "comembench-family/v17"
+    },
+    "source_mode": {
+      "enum": [
+        "source_native_workflow",
+        "source_native_dependency_subgraph",
+        "source_grounded_induced_workflow"
+      ]
+    },
+    "source_refs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 1,
+      "minItems": 1,
+      "type": "array"
+    },
+    "source_topology": {
+      "$ref": "#/$defs/topology"
+    },
+    "split": {
+      "enum": [
+        "dev",
+        "test"
+      ]
+    },
+    "task_edges": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "artifact_semantic": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "dependency_evidence": {
+            "minProperties": 1,
+            "type": "object"
+          },
+          "edge_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "from": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "handoff_policy": {
+            "enum": [
+              "mandatory",
+              "conditional_revision",
+              "none"
+            ]
+          },
+          "handoff_required": {
+            "type": "boolean"
+          },
+          "max_traversals": {
+            "maximum": 1,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "relation_type": {
+            "enum": [
+              "dependency",
+              "evidence",
+              "join",
+              "artifact_reuse",
+              "verified_reuse",
+              "proof_dependency",
+              "verification",
+              "revision"
+            ]
+          },
+          "termination_condition": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "to": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "trigger_receipt": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "edge_id",
+          "from",
+          "to",
+          "relation_type",
+          "artifact_semantic",
+          "dependency_evidence",
+          "handoff_required",
+          "handoff_policy"
+        ],
+        "type": "object"
+      },
+      "minItems": 4,
+      "type": "array"
+    },
+    "verification_overlay": {
+      "additionalProperties": false,
+      "properties": {
+        "edge_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "node_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "node_ids",
+        "edge_ids"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "family_id",
+    "scenario_id",
+    "domain",
+    "global_goal",
+    "source_refs",
+    "source_mode",
+    "nodes",
+    "task_edges",
+    "source_topology",
+    "execution_topology",
+    "verification_overlay",
+    "construction",
+    "execution",
+    "split"
+  ],
+  "title": "CoMemBench v16 public workflow family",
+  "type": "object"
+}

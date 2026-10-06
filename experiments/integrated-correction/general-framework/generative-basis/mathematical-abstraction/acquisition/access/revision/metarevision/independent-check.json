@@ -1,0 +1,312 @@
+{
+  "scope": "independent actual endpoint reconstruction and complete continuation schedule/pricing; separate logical countermodel",
+  "endpoints": [
+    {
+      "label": "family0_parity0_phase1",
+      "starting_fuel": "6303/65536",
+      "installation": "funding:additional_controller_installation",
+      "completed": 0,
+      "confirmed": 0,
+      "final_status": "funding:native_a",
+      "spent": "201/4096",
+      "fuel": "3087/65536"
+    },
+    {
+      "label": "family0_parity0_phase2",
+      "starting_fuel": "72475/65536",
+      "installation": "funding:additional_controller_installation",
+      "completed": 0,
+      "confirmed": 1,
+      "final_status": "funding:retain_after_use",
+      "spent": "10075/16384",
+      "fuel": "32175/65536"
+    },
+    {
+      "label": "family0_parity1_phase1",
+      "starting_fuel": "6303/65536",
+      "installation": "funding:additional_controller_installation",
+      "completed": 0,
+      "confirmed": 0,
+      "final_status": "funding:native_a",
+      "spent": "201/4096",
+      "fuel": "3087/65536"
+    },
+    {
+      "label": "family0_parity1_phase2",
+      "starting_fuel": "72475/65536",
+      "installation": "funding:additional_controller_installation",
+      "completed": 0,
+      "confirmed": 1,
+      "final_status": "funding:retain_after_use",
+      "spent": "10075/16384",
+      "fuel": "32175/65536"
+    },
+    {
+      "label": "family1_parity0_phase0",
+      "starting_fuel": "144369/65536",
+      "installation": "complete",
+      "completed": 1,
+      "confirmed": 2,
+      "final_status": "funding:retain_after_use",
+      "spent": "58787/32768",
+      "fuel": "26795/65536"
+    },
+    {
+      "label": "family1_parity0_phase2",
+      "starting_fuel": "64123/65536",
+      "installation": "funding:additional_controller_installation",
+      "completed": 0,
+      "confirmed": 1,
+      "final_status": "funding:retain_after_use",
+      "spent": "315/512",
+      "fuel": "23803/65536"
+    },
+    {
+      "label": "family1_parity1_phase0",
+      "starting_fuel": "144369/65536",
+      "installation": "complete",
+      "completed": 1,
+      "confirmed": 2,
+      "final_status": "funding:retain_after_use",
+      "spent": "58787/32768",
+      "fuel": "26795/65536"
+    },
+    {
+      "label": "family1_parity1_phase2",
+      "starting_fuel": "64123/65536",
+      "installation": "funding:additional_controller_installation",
+      "completed": 0,
+      "confirmed": 1,
+      "final_status": "funding:retain_after_use",
+      "spent": "315/512",
+      "fuel": "23803/65536"
+    }
+  ],
+  "excluded_unretained": [
+    {
+      "label": "family0_parity0_phase0",
+      "status": "funding:native_read",
+      "fuel": "7629/65536",
+      "source": 0
+    },
+    {
+      "label": "family0_parity1_phase0",
+      "status": "funding:native_read",
+      "fuel": "7629/65536",
+      "source": 0
+    },
+    {
+      "label": "family1_parity0_phase1",
+      "status": "funding:native_read",
+      "fuel": "1335/65536",
+      "source": 0
+    },
+    {
+      "label": "family1_parity0_phase3",
+      "status": "funding:retain_after_use",
+      "fuel": "34885/65536",
+      "source": 0
+    },
+    {
+      "label": "family1_parity1_phase1",
+      "status": "funding:native_read",
+      "fuel": "1335/65536",
+      "source": 0
+    },
+    {
+      "label": "family1_parity1_phase3",
+      "status": "funding:retain_after_use",
+      "fuel": "34885/65536",
+      "source": 0
+    }
+  ],
+  "withdrawal_only_controls": [
+    {
+      "family": 0,
+      "starting_fuel": "3215/65536",
+      "withdrawal": "17315/16384",
+      "status": "funding:plan_forward_prediction",
+      "confirmed": false,
+      "native_trace": []
+    },
+    {
+      "family": 0,
+      "starting_fuel": "19637/65536",
+      "withdrawal": "26419/32768",
+      "status": "funding:native_a",
+      "confirmed": false,
+      "native_trace": []
+    },
+    {
+      "family": 0,
+      "starting_fuel": "21757/65536",
+      "withdrawal": "25359/32768",
+      "status": "funding:commit_use_cursor",
+      "confirmed": false,
+      "native_trace": [
+        {
+          "command": "a",
+          "observation": null
+        }
+      ]
+    },
+    {
+      "family": 0,
+      "starting_fuel": "38179/65536",
+      "withdrawal": "4287/8192",
+      "status": "funding:native_read",
+      "confirmed": false,
+      "native_trace": [
+        {
+          "command": "a",
+          "observation": null
+        }
+      ]
+    },
+    {
+      "family": 0,
+      "starting_fuel": "40299/65536",
+      "withdrawal": "2011/4096",
+      "status": "funding:compare_forward_prediction",
+      "confirmed": false,
+      "native_trace": [
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        }
+      ]
+    },
+    {
+      "family": 0,
+      "starting_fuel": "36237/32768",
+      "withdrawal": "1/65536",
+      "status": "funding:retain_after_use",
+      "confirmed": true,
+      "native_trace": [
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        }
+      ]
+    },
+    {
+      "family": 1,
+      "starting_fuel": "3223/65536",
+      "withdrawal": "15225/16384",
+      "status": "funding:plan_forward_prediction",
+      "confirmed": false,
+      "native_trace": []
+    },
+    {
+      "family": 1,
+      "starting_fuel": "19647/65536",
+      "withdrawal": "11119/16384",
+      "status": "funding:native_a",
+      "confirmed": false,
+      "native_trace": []
+    },
+    {
+      "family": 1,
+      "starting_fuel": "21771/65536",
+      "withdrawal": "2647/4096",
+      "status": "funding:commit_use_cursor",
+      "confirmed": false,
+      "native_trace": [
+        {
+          "command": "a",
+          "observation": null
+        }
+      ]
+    },
+    {
+      "family": 1,
+      "starting_fuel": "38195/65536",
+      "withdrawal": "3241/8192",
+      "status": "funding:native_read",
+      "confirmed": false,
+      "native_trace": [
+        {
+          "command": "a",
+          "observation": null
+        }
+      ]
+    },
+    {
+      "family": 1,
+      "starting_fuel": "40319/65536",
+      "withdrawal": "5951/16384",
+      "status": "funding:compare_forward_prediction",
+      "confirmed": false,
+      "native_trace": [
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        }
+      ]
+    },
+    {
+      "family": 1,
+      "starting_fuel": "32061/32768",
+      "withdrawal": "1/65536",
+      "status": "funding:retain_after_use",
+      "confirmed": true,
+      "native_trace": [
+        {
+          "command": "a",
+          "observation": null
+        },
+        {
+          "command": "read",
+          "observation": 1
+        }
+      ]
+    }
+  ],
+  "wrong_model": {
+    "completed": 1,
+    "confirmed": 2,
+    "terminal": "funding:retain_after_use"
+  },
+  "logical_designs": 256,
+  "logical_histogram": {
+    "0,2": 8,
+    "1,1": 8,
+    "1,2": 16,
+    "1,3": 8,
+    "2,0": 8,
+    "2,1": 16,
+    "2,2": 128,
+    "2,3": 16,
+    "2,4": 8,
+    "3,1": 8,
+    "3,2": 16,
+    "3,3": 8,
+    "4,2": 8
+  },
+  "joint_exact": 0,
+  "maximum_correct_answer_pairs": 6,
+  "distinct_six_read_signatures": 14,
+  "distinct_five_read_signatures": 12,
+  "source_hashes": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/independent_check.py": "373cad3e50ebcdb7715c35f983fa8485a865ac812775f3b6f65c683053808791",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/check.py": "8923d249c219e691033f28fec8d28eccc35cd088a26a07d6bd381890047e063f",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/PROTOCOL.md": "8c3a9a8348b7251bdc920f40d3f9258d866b93fb06704c0f8c43e7ee45a0a1f6",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/revision.py": "1bd13b5d11c1c9221b87ec1528605b1188f951568fef1713cf323e5cfeb03ae6",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/independent_check.py": "eee2fa5be6aed375f44b410cdf6628be8eb71ad92c2009512a433704fa9829f5",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+  },
+  "checked_results_sha256": "3406e0f0f6a3acbfab71695ec17e97422bee0cec3fa65864d01c14817f843042"
+}

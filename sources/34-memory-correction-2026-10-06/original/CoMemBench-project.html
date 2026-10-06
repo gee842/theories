@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CoMemBench: Collaborative Memory Boundaries across Multi-Agent Workflows</title>
+<meta name="description" content="CoMemBench benchmarks whether task-relevant memory reaches the agents that need it across multi-agent workflow topologies. 800 source-grounded families, 800 matched polluted instances."/>
+<link rel="canonical" href="https://comembench.world/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://comembench.world/"/>
+<meta property="og:title" content="CoMemBench: Collaborative Memory Boundaries across Multi-Agent Workflows"/>
+<meta property="og:description" content="800 source-grounded families, 800 matched polluted instances. Does task-relevant memory reach the agents that need it?"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:url" content="https://comembench.world/"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        page: "#FCFAF8",
+        card: "#FAF7F3",
+        band: "#F0EBE5",
+        hoverbg: "#F7F3EF",
+        warmborder: "#F0EBE5",
+        ink: "#1F2329",
+        ink2: "#383A42",
+        dim: "#646A73",
+        orange: "#FB8147",
+        orangebg: "#FFF6ED",
+        honey: "#FDA83A",
+      },
+      fontFamily: {
+        display: ['"LXGW WenKai TC"', "Noto Serif SC", "Georgia", "serif"],
+        sans: ["Inter", '"PingFang SC"', "system-ui", "sans-serif"],
+        mono: ['"JetBrains Mono"', "ui-monospace", "monospace"],
+      },
+      borderRadius: { banner: "24px" },
+    },
+  },
+};
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    background: #FCFAF8;
+    color: #1F2329;
+    font-family: Inter, "PingFang SC", system-ui, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  .glass {
+    background: #FAF7F3;
+    border: 1px solid #F0EBE5;
+    box-shadow: 0 1px 2px rgba(31,35,41,0.04), 0 8px 24px rgba(31,35,41,0.04);
+  }
+  .glass-hover:hover {
+    background: #F7F3EF;
+    border-color: #FB8147;
+    box-shadow: 0 12px 32px rgba(251,129,71,0.14);
+    transform: translateY(-2px);
+  }
+  .glow-line {
+    background: linear-gradient(90deg, transparent, #FB8147, transparent);
+    height: 1px; opacity: .35;
+  }
+  .orb {
+    position: absolute; border-radius: 9999px; filter: blur(70px); opacity: 0.30; pointer-events: none;
+    animation: drift 18s ease-in-out infinite alternate;
+  }
+  @keyframes drift {
+    0%   { transform: translate(0,0) scale(1); }
+    50%  { transform: translate(30px,-22px) scale(1.08); }
+    100% { transform: translate(-20px,18px) scale(0.95); }
+  }
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  header .reveal { opacity: 1; transform: none; }
+
+  .chip {
+    font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: .03em;
+    padding: 3px 9px; border-radius: 999px;
+    background: #FFF6ED; border: 1px solid #FB814744; color: #C25A22;
+  }
+  .role-pill {
+    display: inline-block; font-family: "JetBrains Mono", monospace; font-size: 11px;
+    padding: 3px 10px; margin: 3px 4px 3px 0; border-radius: 6px;
+    background: #F0EBE5; border: 1px solid #E5E0D8; color: #646A73;
+  }
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: ""; position: absolute; left: 0; bottom: -4px; height: 2px; width: 0;
+    background: #FB8147; transition: width .28s ease;
+  }
+  .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+  .tab-btn {
+    padding: 8px 16px; border-radius: 10px; font-size: 13px; font-weight: 500;
+    border: 1px solid #E5E0D8; color: #646A73; background: #FFFFFF;
+    transition: all .22s ease; cursor: pointer;
+  }
+  .tab-btn:hover { color: #1F2329; border-color: #FB8147; background: #FFF6ED; }
+  .tab-btn.on {
+    color: #FFFFFF; border-color: transparent;
+    background: #1F2329;
+    box-shadow: 0 6px 18px rgba(31,35,41,0.18);
+  }
+
+  details.expander { border-radius: 16px; overflow: hidden; }
+  details.expander summary { cursor: pointer; list-style: none; }
+  details.expander summary::-webkit-details-marker { display: none; }
+  details.expander[open] { border-color: #FB8147; }
+
+  .sketch-box { background:#FAF7F3; border:1px solid #E5E0D8; border-radius:16px; padding:16px; width:880px; min-height:320px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.sketch-box svg { width:100%; height:auto; max-height:460px; }
+.goal-box {
+    font-family: "JetBrains Mono", monospace; font-size: 12px; line-height: 1.65;
+    background: #FFFFFF; border: 1px solid #F0EBE5;
+    border-left: 3px solid #FB8147; border-radius: 10px; padding: 14px 16px; color: #383A42;
+    max-height: 230px; overflow-y: auto;
+  }
+
+  .metric-card { position: relative; overflow: hidden; }
+  .metric-card::before {
+    content: ""; position: absolute; inset: 0 0 auto 0; height: 2px;
+    background: linear-gradient(90deg, #FB8147, #FDA83A, transparent);
+  }
+
+  /* chronology — multi-lane swimlanes */
+  .chrono-lane {
+    position: relative;
+    border-top: 1px dashed #E5E0D8;
+    min-height: 108px;
+  }
+  .chrono-lane::before {
+    content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px;
+    background: #E5E0D8;
+  }
+  .chrono-card {
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+    cursor: pointer;
+    background: #FFFFFF; border: 1px solid #F0EBE5; border-radius: 12px;
+    padding: 10px 12px;
+  }
+  .chrono-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(251,129,71,0.16);
+    border-color: #FB8147;
+    z-index: 5;
+  }
+  .chrono-dot {
+    width: 9px; height: 9px; border-radius: 999px; flex: none;
+  }
+  .chrono-year-head {
+    font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: .12em;
+    color: #646A73;
+  }
+
+  .tbl th { font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: .08em; color: #646A73; }
+  .tbl td { font-variant-numeric: tabular-nums; }
+  .best { color: #FB8147; font-weight: 600; }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(31,35,41,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(31,35,41,0.04) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse 90% 70% at 50% 20%, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 20%, black 30%, transparent 75%);
+  }
+  .btn-primary {
+    background: #1F2329; color: #FFFFFF; font-weight: 500; border-radius: 999px;
+    box-shadow: 0 8px 22px rgba(31,35,41,0.18);
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  }
+  .btn-primary:hover { background: #000000; transform: translateY(-2px); box-shadow: 0 14px 30px rgba(31,35,41,0.24); }
+  .btn-orange {
+    background: #FB8147; color: #FFFFFF; font-weight: 500; border-radius: 999px;
+    box-shadow: 0 8px 22px rgba(251,129,71,0.28);
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  }
+  .btn-orange:hover { background: #F06A2B; transform: translateY(-2px); box-shadow: 0 14px 32px rgba(251,129,71,0.36); }
+  .btn-ghost {
+    border: 1px solid #E5E0D8; border-radius: 999px; color: #1F2329; background: transparent;
+    transition: border-color .2s ease, background .2s ease;
+  }
+  .btn-ghost:hover { border-color: #FB8147; background: #FFF6ED; }
+
+  .stat-num {
+    font-family: "Noto Serif SC", "LXGW WenKai TC", serif; font-weight: 600; color: #1F2329;
+  }
+  .cite-tag {
+    font-family: "JetBrains Mono", monospace; font-size: 11px; color: #C25A22;
+    border: 1px solid #FB814755; border-radius: 5px; padding: 1px 6px;
+    text-decoration: none; transition: all .18s ease;
+  }
+  .cite-tag:hover { color: #FB8147; border-color: #FB8147; background: #FFF6ED; }
+
+  .example-icon {
+    width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center;
+    background: #FFF6ED; border: 1px solid #FB814744;
+    font-family: "JetBrains Mono", monospace; font-size: 11px; color: #C25A22;
+  }
+
+  .type-cursor {
+    display: inline-block; width: 3px; height: .85em; margin-left: 4px;
+    background: #1F2329; vertical-align: baseline;
+    animation: 1s step-end infinite cursorBlink;
+  }
+  @keyframes cursorBlink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+
+  #chrono-filter .fbtn { transition: all .2s ease; }
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="fixed top-0 inset-x-0 z-50">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mt-3 rounded-2xl glass flex items-center justify-between px-5 py-3">
+      <a href="#top" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center font-display font-bold text-white"
+             style="background:linear-gradient(135deg,#FB8147,#FDA83A)">C</div>
+        <div>
+          <div class="font-display font-semibold text-sm leading-none">CoMemBench</div>
+          <div class="font-mono text-[10px] text-dim leading-none mt-1">v1 · 800 families</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-[13px] text-dim whitespace-nowrap">
+        <a class="nav-link hover:text-ink transition" href="https://arxiv.org/abs/2609.32192" target="_blank" rel="noopener">Paper</a>
+        <a class="nav-link hover:text-ink transition" href="#overview">Overview</a>
+        <a class="nav-link hover:text-ink transition" href="#domains">Domains</a>
+        <a class="nav-link hover:text-ink transition" href="#chrono">Related Work</a>
+        <a class="nav-link hover:text-ink transition" href="#examples">Examples</a>
+        <a class="nav-link hover:text-ink transition" href="#structure">Structure</a>
+        <a class="nav-link hover:text-ink transition" href="#metrics">Metrics</a>
+        <a class="nav-link hover:text-ink transition" href="#leaderboard">Leaderboard</a>
+        <a class="nav-link hover:text-ink transition" href="#access">Access</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="#access" class="btn-primary px-4 py-2 text-xs">Get Access</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header id="top" class="relative min-h-[92vh] flex items-center overflow-hidden">
+  <div class="absolute inset-0 grid-bg"></div>
+  <div class="orb" style="width:460px;height:460px;background:#FB8147;top:-80px;left:-60px;"></div>
+  <div class="orb" style="width:380px;height:380px;background:#FB8147;top:20%;right:-60px;animation-delay:-6s;"></div>
+  <div class="orb" style="width:320px;height:320px;background:#FDA83A;bottom:-40px;left:30%;animation-delay:-12s;"></div>
+
+  <div class="relative z-10 mx-auto max-w-7xl px-6 pt-32 pb-20 w-full">
+    <div class="reveal">
+      <div class="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs">
+        <span class="w-1.5 h-1.5 rounded-full bg-orange animate-pulse"></span>
+        <span class="text-dim font-mono">BENCHMARK · MULTI-AGENT COLLABORATIVE MEMORY</span>
+      </div>
+    </div>
+
+    <h1 class="reveal mt-7 font-display text-5xl md:text-7xl font-bold leading-[1.05] max-w-4xl">
+      Benchmarking<br/>
+      <span class="stat-num">Collaborative Memory Boundaries</span><br/>
+      across Workflow Topologies
+    </h1>
+
+    <p class="reveal mt-7 text-lg text-dim max-w-2xl leading-relaxed">
+      Does task-relevant memory reach the agents that need it &mdash; while inapplicable content stays isolated?
+      CoMemBench turns source-grounded multi-agent workflows into matched clean&ndash;polluted memory experiments
+      with typed, version-aware artifact handoffs.
+    </p>
+
+    <div class="reveal mt-9 flex flex-wrap gap-3">
+      <a href="https://arxiv.org/abs/2609.32192" target="_blank" rel="noopener" class="btn-primary px-7 py-3.5 text-sm">Read the Paper &middot; arXiv</a>
+      <a href="#leaderboard" class="btn-ghost px-7 py-3.5 text-sm">View Leaderboard</a>
+      <a href="#examples" class="btn-ghost px-7 py-3.5 text-sm">Explore Examples</a>
+      <a href="#chrono" class="btn-ghost px-7 py-3.5 text-sm">Related Work Timeline</a>
+    </div>
+
+    <div class="reveal mt-14 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="glass rounded-2xl p-5">
+        <div class="stat-num text-3xl md:text-4xl">800</div>
+        <div class="mt-1.5 text-xs text-dim font-mono uppercase tracking-wider">Workflow families</div>
+      </div>
+      <div class="glass rounded-2xl p-5">
+        <div class="stat-num text-3xl md:text-4xl">4</div>
+        <div class="mt-1.5 text-xs text-dim font-mono uppercase tracking-wider">Source-grounded domains</div>
+      </div>
+      <div class="glass rounded-2xl p-5">
+        <div class="stat-num text-3xl md:text-4xl">800</div>
+        <div class="mt-1.5 text-xs text-dim font-mono uppercase tracking-wider">Polluted instances</div>
+      </div>
+      <div class="glass rounded-2xl p-5">
+        <div class="stat-num text-3xl md:text-4xl">6&ndash;19</div>
+        <div class="mt-1.5 text-xs text-dim font-mono uppercase tracking-wider">Nodes per family (median 11)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-0 inset-x-0 glow-line"></div>
+</header>
+
+<!-- ===== OVERVIEW ===== -->
+<section id="overview" class="relative py-24">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="reveal max-w-3xl">
+      <div class="font-mono text-xs text-orange uppercase tracking-[.28em] mb-3">01 — Overview</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight">Not another single-agent benchmark</h2>
+      <p class="mt-6 text-dim text-lg leading-relaxed">
+        Agents form local memory from their own tasks, observations, and execution histories.
+        In a workflow, whether that memory should cross an agent boundary is <em class="text-ink not-italic">task-conditioned</em>:
+        a downstream node either requires the artifact, or must stay isolated from it.
+        CoMemBench evaluates exactly that boundary.
+      </p>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <div class="reveal glass glass-hover rounded-2xl p-7 transition-all duration-300">
+        <div class="w-11 h-11 rounded-xl flex items-center justify-center text-lg"
+             style="background:rgba(251,129,71,0.12);border:1px solid rgba(251,129,71,0.35)">①</div>
+        <h3 class="mt-5 font-display text-xl font-semibold">Task-conditioned boundaries</h3>
+        <p class="mt-3 text-dim text-sm leading-relaxed">
+          Applicability is defined by workflow dependency edges, not by speakers, roles, or privacy policies.
+          A document required by node A is a distractor for node B when no edge connects them.
+        </p>
+      </div>
+      <div class="reveal glass glass-hover rounded-2xl p-7 transition-all duration-300">
+        <div class="w-11 h-11 rounded-xl flex items-center justify-center text-lg"
+             style="background:rgba(253,168,58,0.14);border:1px solid rgba(253,168,58,0.35)">②</div>
+        <h3 class="mt-5 font-display text-xl font-semibold">Matched clean&ndash;polluted pairs</h3>
+        <p class="mt-3 text-dim text-sm leading-relaxed">
+          800 pollution instances are paired with controls. If inapplicable content changes downstream behavior,
+          the matched pair exposes it &mdash; without equating benchmark-visible artifacts with internal memory.
+        </p>
+      </div>
+      <div class="reveal glass glass-hover rounded-2xl p-7 transition-all duration-300">
+        <div class="w-11 h-11 rounded-xl flex items-center justify-center text-lg"
+             style="background:rgba(253,168,58,0.14);border:1px solid rgba(253,168,58,0.35)">③</div>
+        <h3 class="mt-5 font-display text-xl font-semibold">Typed, version-aware handoffs</h3>
+        <p class="mt-3 text-dim text-sm leading-relaxed">
+          Artifacts carry types and versions (repository commits, Lean toolchains, corpus revisions).
+          Verifiers check that what crossed a boundary is what the receiving node declared it needed.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DOMAINS ===== -->
+<section id="domains" class="relative py-24 border-t border-warmborder">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="reveal">
+      <div class="font-mono text-xs text-orange uppercase tracking-[.28em] mb-3">02 — Domains</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold">Four domains, 200 families each</h2>
+      <p class="mt-5 text-dim max-w-3xl text-lg">
+        Every family is a directed workflow of typed artifact handoffs, grounded in a real source benchmark
+        and executed with domain-native verification.
+      </p>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-2 gap-6">
+      <div class="reveal glass glass-hover rounded-2xl p-7 transition-all duration-300">
+        <div class="flex items-center justify-between">
+          <div class="example-icon">TB</div>
+          <span class="chip">Toolathlon / Toolathlon-GYM</span>
+        </div>
+        <h3 class="mt-5 font-display text-2xl font-semibold">Stateful Tool Use</h3>
+        <p class="mt-3 text-dim text-sm leading-relaxed">
+          Long-horizon application workflows with live tools &mdash; search, finance APIs, office documents, messaging.
+          Memory includes tool state, intermediate artifacts, and receipts that later nodes depend on.
+        </p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="chip">200 families</span><span class="chip">terminal + API tools</span><span class="chip">receipt-gated</span>
+        </div>
+      </div>
+
+      <div class="reveal glass glass-hover rounded-2xl p-7 transition-all duration-300">
+        <div class="flex items-center justify-between">
+          <div class="example-icon">SW</div>
+          <span class="chip">SWE-bench Verified</span>
+        </div>
+        <h3 class="mt-5 font-display text-2xl font-semibold">Repository Code Change</h3>
+        <p class="mt-3 text-dim text-sm leading-relaxed">
+          Real GitHub issues turned into multi-node workflows: reproduce &rarr; localize &rarr; patch &rarr; test &rarr; release.
+          Version-aware handoffs pin commits so a stale analysis cannot silently satisfy a downstream node.
+        </p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="chip">200 families</span><span class="chip">commit-pinned</span><span class="chip">regression verified</span>
+        </div>
+      </div>
+
+      <div class="reveal glass glass-hover rounded-2xl p-7 transition-all duration-300">
+        <div class="flex items-center justify-between">
+          <div class="example-icon">IR</div>
+          <span class="chip">BrowseComp+</span>
+        </div>
+        <h3 class="mt-5 font-display text-2xl font-semibold">Offline Information Retrieval</h3>
+        <p class="mt-3 text-dim text-sm leading-relaxed">
+          Hard multi-clue questions over a fixed candidate corpus. Agents gather evidence partitions, reconcile
+          entities, and return answers with auditable provenance receipts &mdash; often under bounded revision loops.
+        </p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="chip">200 families</span><span class="chip">fixed corpus</span><span class="chip">provenance receipts</span>
+        </div>
+      </div>
+
+      <div class="reveal glass glass-hover rounded-2xl p-7 transition-all duration-300">
+        <div class="flex items-center justify-between">
+          <div class="example-icon">L4</div>
+          <span class="chip">Lean 4 / HepLean</span>
+        </div>
+        <h3 class="mt-5 font-display text-2xl font-semibold">Mathematical &amp; Structured Reasoning</h3>
+        <p class="mt-3 text-dim text-sm leading-relaxed">
+          Real proof-dependency graphs from HepLean. A downstream agent may only receive a successfully compiled
+          ProofReceipt whose theorem ID, statement hash, commit, and toolchain match its declared incoming edge.
+        </p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="chip">200 families</span><span class="chip">ProofReceipt-gated</span><span class="chip">no sorry / axioms</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CHRONOLOGY / RELATED WORK ===== -->
+<section id="chrono" class="relative py-24 border-t border-warmborder overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-60"></div>
+  <div class="mx-auto max-w-7xl px-6 relative">
+    <div class="reveal">
+      <div class="font-mono text-xs text-orange uppercase tracking-[.28em] mb-3">03 — Related Work</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold">A chronology of memory &amp; multi-agent benchmarks</h2>
+      <p class="mt-5 text-dim max-w-3xl text-lg leading-relaxed">
+        From static evidence use toward governed multi-party memory &mdash; and from interaction topologies
+        toward executable task dependencies. CoMemBench sits at the intersection:
+        <span class="text-ink">task-conditioned memory boundaries on executable dependency workflows</span>.
+        Click any card to open the paper.
+      </p>
+    </div>
+
+    <!-- track filter -->
+    <div id="chrono-filter" class="reveal mt-8 flex flex-wrap gap-2 items-center">
+      <span class="font-mono text-[11px] text-dim uppercase tracking-wider mr-2">Tracks:</span>
+      <!-- filled by JS -->
+    </div>
+
+    <!-- timeline: converging lanes, fits in one view (no h-scroll) -->
+    <div class="reveal mt-10">
+      <div id="chrono-scroll" class="w-full">
+        <div id="chrono-inner" class="relative mx-auto" style="width:1400px;height:772px;">
+          <svg id="chrono-svg" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;"></svg>
+          <div id="chrono-cards"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- narrative callout -->
+    <div class="reveal mt-12 grid lg:grid-cols-3 gap-5">
+      <div class="glass rounded-2xl p-6">
+        <div class="font-mono text-[11px] text-honey uppercase tracking-wider">Thread A</div>
+        <h4 class="mt-2 font-display text-lg font-semibold">Agent memory &amp; information boundaries</h4>
+        <p class="mt-2.5 text-dim text-sm leading-relaxed">
+          LongBench, RULER
+          <a class="cite-tag" href="https://openreview.net/forum?id=kIoBbc76Sy" target="_blank" rel="noopener">hsieh2024ruler</a>
+          and KILT / BEIR established static evidence use. MemoryBank, LoCoMo, LongMemEval, RealTalk, StoryBench
+          moved to persistent and interactive memory; MemoryAgentBench added selective forgetting.
+          GroupMemBench, GateMem, PAC-Bench then asked who may see what.
+        </p>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <div class="font-mono text-[11px] text-orange uppercase tracking-wider">Thread B</div>
+        <h4 class="mt-2 font-display text-lg font-semibold">Multi-agent &amp; workflow structure</h4>
+        <p class="mt-2.5 text-dim text-sm leading-relaxed">
+          AgentBench, MindAgent, LLM-Coordination study coordination; MultiAgentBench varies
+          star / chain / tree / graph <em>interaction</em> protocols
+          <a class="cite-tag" href="https://aclanthology.org/2025.acl-long.421/" target="_blank" rel="noopener">zhu2025multiagentbench</a>;
+          TaskBench and MAS-Orchestra vary <em>task</em> dependencies &mdash; chains, DAGs, depth, breadth, parallelism.
+        </p>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <div class="font-mono text-[11px] text-honey uppercase tracking-wider">Thread C</div>
+        <h4 class="mt-2 font-display text-lg font-semibold">Executable outcomes</h4>
+        <p class="mt-2.5 text-dim text-sm leading-relaxed">
+          &tau;-bench, AppWorld, Toolathlon
+          <a class="cite-tag" href="https://openreview.net/forum?id=z53s5p0qhf" target="_blank" rel="noopener">li2025toolathlon</a>
+          and Toolathlon-GYM make success checkable in real environments. PeopleJoin and SILO-BENCH add
+          distributed information. CoMemBench combines these lines with typed handoffs and matched pollution pairs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXAMPLES ===== -->
+<section id="examples" class="relative py-24 border-t border-warmborder">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="reveal">
+      <div class="font-mono text-xs text-orange uppercase tracking-[.28em] mb-3">04 — Task Examples</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold">Four worked examples, one per domain</h2>
+      <p class="mt-5 text-dim max-w-3xl text-lg">
+        Verbatim excerpts from the v1 release (<span class="font-mono text-orange text-base">workflow_families.jsonl</span>).
+        The goal is what every agent in the family is ultimately working toward.
+      </p>
+    </div>
+
+    <!-- Example 1 -->
+    <details class="expander glass reveal mt-10 p-7" open>
+      <summary>
+        <div class="flex items-start gap-4">
+          <div class="example-icon shrink-0">01</div>
+          <div>
+            <div class="font-mono text-orange text-xs mb-1.5 uppercase tracking-wider">Stateful Tool Use</div>
+            <h3 class="font-display text-2xl font-semibold">Evidence-based workplace nutrition program</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="chip">v15_family_0001_b9f32b72e8fd</span>
+              <span class="chip">19 nodes &middot; 60 edges</span>
+              <span class="chip">composite topology</span>
+              <span class="chip">Toolathlon</span>
+            </div>
+          </div>
+        </div>
+      </summary>
+      <div class="mt-7 grid lg:grid-cols-5 gap-7">
+        <div class="lg:col-span-3">
+          <div class="font-mono text-[11px] text-dim uppercase tracking-wider mb-2">Global goal (excerpt)</div>
+          <div class="goal-box">
+You are a corporate wellness coordinator tasked with designing an evidence-based workplace nutrition program. Your goal is to combine practical recipe data with published nutritional science research to create a scientifically grounded meal program for employees.<br><br>
+Start by reading the program_requirements.md file in your workspace, which describes the wellness program goals, target population size, and budget constraints. Also read the dietary_restrictions.csv file that lists common employee die
+          </div>
+          <div class="mt-5 font-mono text-[11px] text-dim uppercase tracking-wider">Agent roles</div>
+          <div class="mt-2">
+            <span class="role-pill">retrieval_agent &times;10</span>
+            <span class="role-pill">analysis_agent &times;2</span>
+            <span class="role-pill">artifact_agent &times;2</span>
+            <span class="role-pill">implementation_agent &times;3</span>
+            <span class="role-pill">workflow_verifier</span>
+          </div>
+          <div class="mt-4 font-mono text-[11px] text-dim uppercase tracking-wider">Artifact types on handoff edges</div>
+          <div class="mt-2">
+            <span class="role-pill">source_evidence</span>
+            <span class="role-pill">code_artifact</span>
+            <span class="role-pill">execution_receipt</span>
+            <span class="role-pill">form_receipt</span>
+            <span class="role-pill">tabular_artifact</span>
+            <span class="role-pill">document_artifact</span>
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="font-mono text-[11px] text-dim uppercase tracking-wider">Notes</div>
+          <div class="mt-2 text-sm text-dim leading-relaxed">
+The deepest chain in the release: a 16-stage pipeline that starts from three parallel sources, writes and executes three Python programs, then iterates a live spreadsheet across four handoffs before a Word proposal and a validation script. Nine <span class="font-mono text-orange">revision</span> edges let a failed validation send the workflow back into the workbook trail.
+          </div>
+        </div>
+      </div>
+      <div class="mt-7">
+        <div class="font-mono text-[11px] text-dim uppercase tracking-wider mb-2">Workflow topology</div>
+        <div class="sketch-box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 887 370" style="width:100%;height:auto;display:block;font-family:Inter,Arial,sans-serif">
+<defs>
+<marker id="sk-sk1-af" viewBox="0 0 8 5.6" refX="7.4" refY="2.8" markerWidth="8" markerHeight="5.6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7.4,2.8 L0,5.6 Z" fill="#9CA3AF"/></marker>
+<marker id="sk-sk1-ar" viewBox="0 0 8 5.6" refX="7.4" refY="2.8" markerWidth="8" markerHeight="5.6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7.4,2.8 L0,5.6 Z" fill="#C2410C"/></marker>
+</defs>
+<path d="M135.6,60.0 L184.1,76.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M135.7,52.3 L313.4,80.6" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M129.1,91.0 L313.4,91.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M283.4,91.0 L313.4,91.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M444.4,91.0 L474.4,91.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M569.4,91.0 L599.4,91.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M146.0,132.5 L599.4,96.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M723.2,80.9 L760.9,74.8" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M723.2,101.1 L753.2,105.9" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M802.9,83.0 L802.9,184.0 L85.8,184.0 L85.8,216.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M802.9,129.0 L802.9,184.0 L85.8,184.0 L85.8,216.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M137.6,231.0 L167.6,231.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M137.6,231.0 L307.0,231.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M277.0,231.0 L425.4,231.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M395.4,231.0 L425.4,231.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M533.4,231.0 L563.4,231.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M671.4,231.0 L701.4,231.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M745.7,246.0 L745.7,278.0 L89.7,278.0 L89.7,310.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M145.4,325.0 L175.4,325.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M267.6,325.0 L297.6,325.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M412.4,325.0 L442.4,325.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk1-af)"/>
+<path d="M497.7,340.0 L497.7,278.0 L351.2,278.0 L351.2,216.0" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk1-ar)"/>
+<path d="M497.7,340.0 L497.7,278.0 L617.4,278.0 L617.4,216.0" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk1-ar)"/>
+<path d="M497.7,340.0 L497.7,278.0 L745.7,278.0 L745.7,216.0" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk1-ar)"/>
+<path d="M442.4,325.0 C442.4,359.0 145.4,359.0 145.4,325.0" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk1-ar)"/>
+<rect x="44.3" y="30.0" width="91.4" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="51.3" y="37.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="59.3" cy="45.0" r="3" fill="#FB8147"/>
+<text x="74.3" y="48.6" font-size="10.5" font-weight="600" fill="#1F2329">program brief</text>
+<rect x="50.9" y="76.0" width="78.2" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="57.9" y="83.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="65.9" cy="91.0" r="3" fill="#FB8147"/>
+<text x="80.9" y="94.6" font-size="10.5" font-weight="600" fill="#1F2329">recipes DB</text>
+<rect x="34.0" y="122.0" width="112.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="129.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="137.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="140.6" font-size="10.5" font-weight="600" fill="#1F2329">nutrition research</text>
+<rect x="176.0" y="76.0" width="107.4" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="183.0" y="83.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="191.0" cy="91.0" r="3" fill="#FB8147"/>
+<text x="206.0" y="94.6" font-size="10.5" font-weight="600" fill="#1F2329">requirements.md</text>
+<rect x="313.4" y="76.0" width="131.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="320.4" y="83.0" width="16" height="16" rx="4" fill="#D97706" fill-opacity="0.18" stroke="#D97706" stroke-width="1"/>
+<circle cx="328.4" cy="91.0" r="3" fill="#D97706"/>
+<text x="343.4" y="94.6" font-size="10.5" font-weight="600" fill="#1F2329">categorize_recipes.py</text>
+<rect x="474.4" y="76.0" width="95.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="481.4" y="83.0" width="16" height="16" rx="4" fill="#E76F51" fill-opacity="0.18" stroke="#E76F51" stroke-width="1"/>
+<circle cx="489.4" cy="91.0" r="3" fill="#E76F51"/>
+<text x="504.4" y="94.6" font-size="10.5" font-weight="600" fill="#1F2329">run categorize</text>
+<rect x="599.4" y="76.0" width="123.8" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="606.4" y="83.0" width="16" height="16" rx="4" fill="#D97706" fill-opacity="0.18" stroke="#D97706" stroke-width="1"/>
+<circle cx="614.4" cy="91.0" r="3" fill="#D97706"/>
+<text x="629.4" y="94.6" font-size="10.5" font-weight="600" fill="#1F2329">analyze_research.py</text>
+<rect x="760.9" y="53.0" width="84.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="767.9" y="60.0" width="16" height="16" rx="4" fill="#E76F51" fill-opacity="0.18" stroke="#E76F51" stroke-width="1"/>
+<circle cx="775.9" cy="68.0" r="3" fill="#E76F51"/>
+<text x="790.9" y="71.6" font-size="10.5" font-weight="600" fill="#1F2329">run analysis</text>
+<rect x="753.2" y="99.0" width="99.4" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="760.2" y="106.0" width="16" height="16" rx="4" fill="#D97706" fill-opacity="0.18" stroke="#D97706" stroke-width="1"/>
+<circle cx="768.2" cy="114.0" r="3" fill="#D97706"/>
+<text x="783.2" y="117.6" font-size="10.5" font-weight="600" fill="#1F2329">build_menus.py</text>
+<rect x="34.0" y="216.0" width="103.6" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="223.0" width="16" height="16" rx="4" fill="#E76F51" fill-opacity="0.18" stroke="#E76F51" stroke-width="1"/>
+<circle cx="49.0" cy="231.0" r="3" fill="#E76F51"/>
+<text x="64.0" y="234.6" font-size="10.5" font-weight="600" fill="#1F2329">run build_menus</text>
+<rect x="167.6" y="216.0" width="109.4" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="174.6" y="223.0" width="16" height="16" rx="4" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="1"/>
+<circle cx="182.6" cy="231.0" r="3" fill="#B45309"/>
+<text x="197.6" y="234.6" font-size="10.5" font-weight="600" fill="#1F2329">preferences form</text>
+<rect x="307.0" y="216.0" width="88.4" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="314.0" y="223.0" width="16" height="16" rx="4" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="1"/>
+<circle cx="322.0" cy="231.0" r="3" fill="#B45309"/>
+<text x="337.0" y="234.6" font-size="10.5" font-weight="600" fill="#1F2329">analysis.xlsx</text>
+<rect x="425.4" y="216.0" width="108.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="432.4" y="223.0" width="16" height="16" rx="4" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="1"/>
+<circle cx="440.4" cy="231.0" r="3" fill="#B45309"/>
+<text x="455.4" y="234.6" font-size="10.5" font-weight="600" fill="#1F2329">update workbook</text>
+<rect x="563.4" y="216.0" width="108.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="570.4" y="223.0" width="16" height="16" rx="4" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="1"/>
+<circle cx="578.4" cy="231.0" r="3" fill="#B45309"/>
+<text x="593.4" y="234.6" font-size="10.5" font-weight="600" fill="#1F2329">update workbook</text>
+<rect x="701.4" y="216.0" width="88.6" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="708.4" y="223.0" width="16" height="16" rx="4" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="1"/>
+<circle cx="716.4" cy="231.0" r="3" fill="#B45309"/>
+<text x="731.4" y="234.6" font-size="10.5" font-weight="600" fill="#1F2329">refine menus</text>
+<rect x="34.0" y="310.0" width="111.4" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="317.0" width="16" height="16" rx="4" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="1"/>
+<circle cx="49.0" cy="325.0" r="3" fill="#B45309"/>
+<text x="64.0" y="328.6" font-size="10.5" font-weight="600" fill="#1F2329">finalize workbook</text>
+<rect x="175.4" y="310.0" width="92.2" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="182.4" y="317.0" width="16" height="16" rx="4" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="1"/>
+<circle cx="190.4" cy="325.0" r="3" fill="#B45309"/>
+<text x="205.4" y="328.6" font-size="10.5" font-weight="600" fill="#1F2329">proposal.docx</text>
+<rect x="297.6" y="310.0" width="114.8" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="304.6" y="317.0" width="16" height="16" rx="4" fill="#D97706" fill-opacity="0.18" stroke="#D97706" stroke-width="1"/>
+<circle cx="312.6" cy="325.0" r="3" fill="#D97706"/>
+<text x="327.6" y="328.6" font-size="10.5" font-weight="600" fill="#1F2329">validate_menus.py</text>
+<rect x="442.4" y="310.0" width="110.6" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="449.4" y="317.0" width="16" height="16" rx="4" fill="#2A9D8F" fill-opacity="0.18" stroke="#2A9D8F" stroke-width="1"/>
+<circle cx="457.4" cy="325.0" r="3" fill="#2A9D8F"/>
+<text x="472.4" y="328.6" font-size="10.5" font-weight="600" fill="#1F2329">workflow verifier</text>
+</svg></div>
+        <div class="mt-2.5 flex flex-wrap items-center gap-x-5 gap-y-1 font-mono text-[10px] text-dim">
+          <span class="flex items-center gap-1.5"><svg width="25" height="6" aria-hidden="true"><line x1="0" y1="3" x2="18" y2="3" stroke="#E8590C" stroke-width="2"/><path d="M18,0.5 L24,3 L18,5.5 Z" fill="#E8590C"/></svg>handoff flow</span>
+          <span class="flex items-center gap-1.5"><svg width="25" height="6" aria-hidden="true"><line x1="0" y1="3" x2="18" y2="3" stroke="#C2410C" stroke-width="2" stroke-dasharray="4 3"/><path d="M18,0.5 L24,3 L18,5.5 Z" fill="#C2410C"/></svg>revision (bounded re-entry)</span>
+        </div>
+      </div>
+    </details>
+
+    <!-- Example 2 -->
+    <details class="expander glass reveal mt-5 p-7">
+      <summary>
+        <div class="flex items-start gap-4">
+          <div class="example-icon shrink-0">02</div>
+          <div>
+            <div class="font-mono text-orange text-xs mb-1.5 uppercase tracking-wider">Repository Code Change</div>
+            <h3 class="font-display text-2xl font-semibold">Sphinx literalinclude indent repair</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="chip">v15_family_0211_750658a4e4ee</span>
+              <span class="chip">16 nodes &middot; 30 edges</span>
+              <span class="chip">sphinx-doc__sphinx-10323</span>
+              <span class="chip">SWE-bench Verified</span>
+            </div>
+          </div>
+        </div>
+      </summary>
+      <div class="mt-7 grid lg:grid-cols-5 gap-7">
+        <div class="lg:col-span-3">
+          <div class="font-mono text-[11px] text-dim uppercase tracking-wider mb-2">Global goal (excerpt)</div>
+          <div class="goal-box">
+Resolve the following real issue in repository sphinx-doc/sphinx at base commit 31eba1a76dd485dc633cae48227b46879eda5df4. Work in the fixed repository environment. Reproduce the reported behavior, localize its cause, implement the smallest correct patch, run relevant regression tests, and return a release decision.<br><br>
+Use of literalinclude prepend results in incorrect indent formatting for code eamples ### Describe the bug<br><br>
+Cannot determine a mechanism to use literalinclude directive with `prepe
+          </div>
+          <div class="mt-5 font-mono text-[11px] text-dim uppercase tracking-wider">Agent roles</div>
+          <div class="mt-2">
+            <span class="role-pill">issue_analyst</span>
+            <span class="role-pill">reproduction_agent &times;3</span>
+            <span class="role-pill">repository_analyst &times;3</span>
+            <span class="role-pill">regression_agent &times;2</span>
+            <span class="role-pill">patch_designer</span>
+            <span class="role-pill">implementation_agent</span>
+            <span class="role-pill">test_agent &times;3</span>
+            <span class="role-pill">release_agent</span>
+            <span class="role-pill">workflow_verifier</span>
+          </div>
+          <div class="mt-4 font-mono text-[11px] text-dim uppercase tracking-wider">Artifact types on handoff edges</div>
+          <div class="mt-2">
+            <span class="role-pill">issue_requirements</span>
+            <span class="role-pill">reproduction_receipt</span>
+            <span class="role-pill">localization_receipt</span>
+            <span class="role-pill">baseline_receipt</span>
+            <span class="role-pill">patch_plan</span>
+            <span class="role-pill">patch_candidate</span>
+            <span class="role-pill">test_receipt</span>
+            <span class="role-pill">release_bundle</span>
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="font-mono text-[11px] text-dim uppercase tracking-wider">Notes</div>
+          <div class="mt-2 text-sm text-dim leading-relaxed">
+A wide split-join in the middle: three independent reproductions, three independent localizations, and a pre-change baseline all feed one patch plan. Four verification receipts (three focused tests plus a regression rerun) gate the release bundle before the trusted SWE-Bench container accepts it.
+          </div>
+        </div>
+      </div>
+      <div class="mt-7">
+        <div class="font-mono text-[11px] text-dim uppercase tracking-wider mb-2">Workflow topology</div>
+        <div class="sketch-box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 772 460" style="width:100%;height:auto;display:block;font-family:Inter,Arial,sans-serif">
+<defs>
+<marker id="sk-sk2-af" viewBox="0 0 8 5.6" refX="7.4" refY="2.8" markerWidth="8" markerHeight="5.6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7.4,2.8 L0,5.6 Z" fill="#9CA3AF"/></marker>
+<marker id="sk-sk2-ar" viewBox="0 0 8 5.6" refX="7.4" refY="2.8" markerWidth="8" markerHeight="5.6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7.4,2.8 L0,5.6 Z" fill="#C2410C"/></marker>
+</defs>
+<path d="M91.4,168.0 L182.2,60.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M97.7,168.0 L175.9,106.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M116.6,168.0 L157.0,152.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M123.6,183.0 L158.9,183.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M116.6,198.0 L158.9,214.7" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M97.7,198.0 L175.9,260.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M91.4,198.0 L182.2,306.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M206.7,60.0 L292.0,168.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M212.6,106.0 L286.0,168.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M230.4,152.0 L268.3,168.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M230.9,183.0 L266.1,183.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M230.4,214.0 L268.3,198.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M212.6,260.0 L286.0,198.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M206.7,306.0 L292.0,198.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M341.5,183.0 L371.5,183.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M454.1,168.0 L530.6,129.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M477.7,174.0 L524.1,166.1" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M477.7,192.0 L524.1,199.9" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M454.1,198.0 L530.6,237.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M588.4,129.0 L661.8,168.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M596.1,166.4 L642.5,174.6" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M596.1,199.6 L642.5,191.4" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M588.4,237.0 L661.8,198.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M690.1,198.0 L690.1,368.0 L89.3,368.0 L89.3,400.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk2-af)"/>
+<path d="M89.3,430.0 L89.3,230.0 L424.6,230.0 L424.6,168.0" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk2-ar)"/>
+<rect x="34.0" y="168.0" width="89.6" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="175.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="183.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="186.6" font-size="10.5" font-weight="600" fill="#1F2329">issue analyst</text>
+<rect x="153.6" y="30.0" width="82.5" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="160.6" y="37.0" width="16" height="16" rx="4" fill="#E76F51" fill-opacity="0.18" stroke="#E76F51" stroke-width="1"/>
+<circle cx="168.6" cy="45.0" r="3" fill="#E76F51"/>
+<text x="183.6" y="48.6" font-size="10.5" font-weight="600" fill="#1F2329">reproduce 1</text>
+<rect x="153.6" y="76.0" width="82.5" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="160.6" y="83.0" width="16" height="16" rx="4" fill="#E76F51" fill-opacity="0.18" stroke="#E76F51" stroke-width="1"/>
+<circle cx="168.6" cy="91.0" r="3" fill="#E76F51"/>
+<text x="183.6" y="94.6" font-size="10.5" font-weight="600" fill="#1F2329">reproduce 2</text>
+<rect x="153.6" y="122.0" width="82.5" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="160.6" y="129.0" width="16" height="16" rx="4" fill="#E76F51" fill-opacity="0.18" stroke="#E76F51" stroke-width="1"/>
+<circle cx="168.6" cy="137.0" r="3" fill="#E76F51"/>
+<text x="183.6" y="140.6" font-size="10.5" font-weight="600" fill="#1F2329">reproduce 3</text>
+<rect x="158.9" y="168.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="165.9" y="175.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="173.9" cy="183.0" r="3" fill="#FB8147"/>
+<text x="188.9" y="186.6" font-size="10.5" font-weight="600" fill="#1F2329">localize 1</text>
+<rect x="158.9" y="214.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="165.9" y="221.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="173.9" cy="229.0" r="3" fill="#FB8147"/>
+<text x="188.9" y="232.6" font-size="10.5" font-weight="600" fill="#1F2329">localize 2</text>
+<rect x="158.9" y="260.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="165.9" y="267.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="173.9" cy="275.0" r="3" fill="#FB8147"/>
+<text x="188.9" y="278.6" font-size="10.5" font-weight="600" fill="#1F2329">localize 3</text>
+<rect x="158.9" y="306.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="165.9" y="313.0" width="16" height="16" rx="4" fill="#E76F51" fill-opacity="0.18" stroke="#E76F51" stroke-width="1"/>
+<circle cx="173.9" cy="321.0" r="3" fill="#E76F51"/>
+<text x="188.9" y="324.6" font-size="10.5" font-weight="600" fill="#1F2329">baseline</text>
+<rect x="266.1" y="168.0" width="75.4" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="273.1" y="175.0" width="16" height="16" rx="4" fill="#D97706" fill-opacity="0.18" stroke="#D97706" stroke-width="1"/>
+<circle cx="281.1" cy="183.0" r="3" fill="#D97706"/>
+<text x="296.1" y="186.6" font-size="10.5" font-weight="600" fill="#1F2329">patch plan</text>
+<rect x="371.5" y="168.0" width="106.2" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="378.5" y="175.0" width="16" height="16" rx="4" fill="#D97706" fill-opacity="0.18" stroke="#D97706" stroke-width="1"/>
+<circle cx="386.5" cy="183.0" r="3" fill="#D97706"/>
+<text x="401.5" y="186.6" font-size="10.5" font-weight="600" fill="#1F2329">implement patch</text>
+<rect x="524.1" y="99.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="531.1" y="106.0" width="16" height="16" rx="4" fill="#2A9D8F" fill-opacity="0.18" stroke="#2A9D8F" stroke-width="1"/>
+<circle cx="539.1" cy="114.0" r="3" fill="#2A9D8F"/>
+<text x="554.1" y="117.6" font-size="10.5" font-weight="600" fill="#1F2329">test 1</text>
+<rect x="524.1" y="145.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="531.1" y="152.0" width="16" height="16" rx="4" fill="#2A9D8F" fill-opacity="0.18" stroke="#2A9D8F" stroke-width="1"/>
+<circle cx="539.1" cy="160.0" r="3" fill="#2A9D8F"/>
+<text x="554.1" y="163.6" font-size="10.5" font-weight="600" fill="#1F2329">test 2</text>
+<rect x="524.1" y="191.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="531.1" y="198.0" width="16" height="16" rx="4" fill="#2A9D8F" fill-opacity="0.18" stroke="#2A9D8F" stroke-width="1"/>
+<circle cx="539.1" cy="206.0" r="3" fill="#2A9D8F"/>
+<text x="554.1" y="209.6" font-size="10.5" font-weight="600" fill="#1F2329">test 3</text>
+<rect x="507.7" y="237.0" width="104.8" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="514.7" y="244.0" width="16" height="16" rx="4" fill="#2A9D8F" fill-opacity="0.18" stroke="#2A9D8F" stroke-width="1"/>
+<circle cx="522.7" cy="252.0" r="3" fill="#2A9D8F"/>
+<text x="537.7" y="255.6" font-size="10.5" font-weight="600" fill="#1F2329">regression rerun</text>
+<rect x="642.5" y="168.0" width="95.2" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="649.5" y="175.0" width="16" height="16" rx="4" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="1"/>
+<circle cx="657.5" cy="183.0" r="3" fill="#B45309"/>
+<text x="672.5" y="186.6" font-size="10.5" font-weight="600" fill="#1F2329">release bundle</text>
+<rect x="34.0" y="400.0" width="110.6" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="407.0" width="16" height="16" rx="4" fill="#2A9D8F" fill-opacity="0.18" stroke="#2A9D8F" stroke-width="1"/>
+<circle cx="49.0" cy="415.0" r="3" fill="#2A9D8F"/>
+<text x="64.0" y="418.6" font-size="10.5" font-weight="600" fill="#1F2329">workflow verifier</text>
+</svg></div>
+        <div class="mt-2.5 flex flex-wrap items-center gap-x-5 gap-y-1 font-mono text-[10px] text-dim">
+          <span class="flex items-center gap-1.5"><svg width="25" height="6" aria-hidden="true"><line x1="0" y1="3" x2="18" y2="3" stroke="#E8590C" stroke-width="2"/><path d="M18,0.5 L24,3 L18,5.5 Z" fill="#E8590C"/></svg>handoff flow</span>
+          <span class="flex items-center gap-1.5"><svg width="25" height="6" aria-hidden="true"><line x1="0" y1="3" x2="18" y2="3" stroke="#C2410C" stroke-width="2" stroke-dasharray="4 3"/><path d="M18,0.5 L24,3 L18,5.5 Z" fill="#C2410C"/></svg>revision (bounded re-entry)</span>
+        </div>
+      </div>
+    </details>
+
+    <!-- Example 3 -->
+    <details class="expander glass reveal mt-5 p-7">
+      <summary>
+        <div class="flex items-start gap-4">
+          <div class="example-icon shrink-0">03</div>
+          <div>
+            <div class="font-mono text-orange text-xs mb-1.5 uppercase tracking-wider">Offline Information Retrieval</div>
+            <h3 class="font-display text-2xl font-semibold">Twelve-partition evidence reconciliation</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="chip">v15_family_0413_cef4321720b5</span>
+              <span class="chip">17 nodes &middot; 41 edges</span>
+              <span class="chip">browsecomp_plus/test/22</span>
+              <span class="chip">bounded_revision_loop</span>
+            </div>
+          </div>
+        </div>
+      </summary>
+      <div class="mt-7 grid lg:grid-cols-5 gap-7">
+        <div class="lg:col-span-3">
+          <div class="font-mono text-[11px] text-dim uppercase tracking-wider mb-2">Global goal (excerpt)</div>
+          <div class="goal-box">
+Answer this real information-seeking question from the released fixed candidate corpus. Use exact supporting passages with document identities, reconcile all clues to one candidate, and return the requested attribute with an auditable provenance receipt.<br><br>
+There is a sport in the world where teams from a certain continent have dominated the biggest yearly international competition in the sport until 2022, excluding one event. The first of these official biggest yearly international competitions f
+          </div>
+          <div class="mt-5 font-mono text-[11px] text-dim uppercase tracking-wider">Agent roles</div>
+          <div class="mt-2">
+            <span class="role-pill">evidence_agent &times;12</span>
+            <span class="role-pill">entity_resolution_agent</span>
+            <span class="role-pill">answer_agent</span>
+            <span class="role-pill">provenance_auditor</span>
+            <span class="role-pill">result_synthesizer</span>
+            <span class="role-pill">workflow_verifier</span>
+          </div>
+          <div class="mt-4 font-mono text-[11px] text-dim uppercase tracking-wider">Artifact types on handoff edges</div>
+          <div class="mt-2">
+            <span class="role-pill">source_evidence</span>
+            <span class="role-pill">resolved_candidate</span>
+            <span class="role-pill">answer_candidate</span>
+            <span class="role-pill">provenance_receipt</span>
+            <span class="role-pill">retrieval_result_bundle</span>
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="font-mono text-[11px] text-dim uppercase tracking-wider">Notes</div>
+          <div class="mt-2 text-sm text-dim leading-relaxed">
+The widest fan-out in the release: twelve fixed-corpus partitions are searched in parallel and every one of them must contribute a verified quotation before entity resolution can commit to a single candidate. Answer and provenance run as an auditable pair, and twelve revision edges let a failed audit push the workflow back into the partition layer.
+          </div>
+        </div>
+      </div>
+      <div class="mt-7">
+        <div class="font-mono text-[11px] text-dim uppercase tracking-wider mb-2">Workflow topology</div>
+        <div class="sketch-box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 707 596" style="width:100%;height:auto;display:block;font-family:Inter,Arial,sans-serif">
+<defs>
+<marker id="sk-sk3-af" viewBox="0 0 8 5.6" refX="7.4" refY="2.8" markerWidth="8" markerHeight="5.6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7.4,2.8 L0,5.6 Z" fill="#9CA3AF"/></marker>
+<marker id="sk-sk3-ar" viewBox="0 0 8 5.6" refX="7.4" refY="2.8" markerWidth="8" markerHeight="5.6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7.4,2.8 L0,5.6 Z" fill="#C2410C"/></marker>
+</defs>
+<path d="M77.0,60.0 L181.6,283.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M78.6,106.0 L180.0,283.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M81.0,152.0 L177.6,283.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M85.5,198.0 L173.1,283.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M95.8,244.0 L162.8,283.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M106.0,282.0 L136.0,287.8" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M106.0,314.0 L136.0,308.2" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M95.8,352.0 L162.8,313.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M85.5,398.0 L173.1,313.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M81.0,444.0 L177.6,313.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M78.6,490.0 L180.0,313.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M77.0,536.0 L181.6,313.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M241.2,289.4 L284.3,282.4" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M241.2,306.6 L271.2,311.4" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M375.5,282.2 L418.6,289.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M388.6,311.7 L418.6,307.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M532.0,298.0 L562.0,298.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk3-af)"/>
+<path d="M562.0,298.0 C562.0,332.0 241.2,332.0 241.2,298.0" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk3-ar)"/>
+<path d="M562.0,293.6 C562.0,332.0 375.5,332.0 375.5,278.6" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk3-ar)"/>
+<path d="M562.0,302.4 C562.0,355.0 388.6,355.0 388.6,316.3" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk3-ar)"/>
+<path d="M418.6,298.0 C418.6,332.0 241.2,332.0 241.2,298.0" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk3-ar)"/>
+<rect x="34.0" y="30.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="37.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="45.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="48.6" font-size="10.5" font-weight="600" fill="#1F2329">P01</text>
+<rect x="34.0" y="76.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="83.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="91.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="94.6" font-size="10.5" font-weight="600" fill="#1F2329">P02</text>
+<rect x="34.0" y="122.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="129.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="137.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="140.6" font-size="10.5" font-weight="600" fill="#1F2329">P03</text>
+<rect x="34.0" y="168.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="175.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="183.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="186.6" font-size="10.5" font-weight="600" fill="#1F2329">P04</text>
+<rect x="34.0" y="214.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="221.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="229.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="232.6" font-size="10.5" font-weight="600" fill="#1F2329">P05</text>
+<rect x="34.0" y="260.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="267.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="275.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="278.6" font-size="10.5" font-weight="600" fill="#1F2329">P06</text>
+<rect x="34.0" y="306.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="313.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="321.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="324.6" font-size="10.5" font-weight="600" fill="#1F2329">P07</text>
+<rect x="34.0" y="352.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="359.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="367.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="370.6" font-size="10.5" font-weight="600" fill="#1F2329">P08</text>
+<rect x="34.0" y="398.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="405.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="413.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="416.6" font-size="10.5" font-weight="600" fill="#1F2329">P09</text>
+<rect x="34.0" y="444.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="451.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="459.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="462.6" font-size="10.5" font-weight="600" fill="#1F2329">P10</text>
+<rect x="34.0" y="490.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="497.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="505.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="508.6" font-size="10.5" font-weight="600" fill="#1F2329">P11</text>
+<rect x="34.0" y="536.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="543.0" width="16" height="16" rx="4" fill="#FB8147" fill-opacity="0.18" stroke="#FB8147" stroke-width="1"/>
+<circle cx="49.0" cy="551.0" r="3" fill="#FB8147"/>
+<text x="64.0" y="554.6" font-size="10.5" font-weight="600" fill="#1F2329">P12</text>
+<rect x="136.0" y="283.0" width="105.2" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="143.0" y="290.0" width="16" height="16" rx="4" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="1"/>
+<circle cx="151.0" cy="298.0" r="3" fill="#B45309"/>
+<text x="166.0" y="301.6" font-size="10.5" font-weight="600" fill="#1F2329">entity resolution</text>
+<rect x="284.3" y="260.0" width="91.2" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="291.3" y="267.0" width="16" height="16" rx="4" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="1"/>
+<circle cx="299.3" cy="275.0" r="3" fill="#B45309"/>
+<text x="314.3" y="278.6" font-size="10.5" font-weight="600" fill="#1F2329">answer agent</text>
+<rect x="271.2" y="306.0" width="117.4" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="278.2" y="313.0" width="16" height="16" rx="4" fill="#2A9D8F" fill-opacity="0.18" stroke="#2A9D8F" stroke-width="1"/>
+<circle cx="286.2" cy="321.0" r="3" fill="#2A9D8F"/>
+<text x="301.2" y="324.6" font-size="10.5" font-weight="600" fill="#1F2329">provenance auditor</text>
+<rect x="418.6" y="283.0" width="113.4" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="425.6" y="290.0" width="16" height="16" rx="4" fill="#B45309" fill-opacity="0.18" stroke="#B45309" stroke-width="1"/>
+<circle cx="433.6" cy="298.0" r="3" fill="#B45309"/>
+<text x="448.6" y="301.6" font-size="10.5" font-weight="600" fill="#1F2329">result synthesizer</text>
+<rect x="562.0" y="283.0" width="110.6" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="569.0" y="290.0" width="16" height="16" rx="4" fill="#2A9D8F" fill-opacity="0.18" stroke="#2A9D8F" stroke-width="1"/>
+<circle cx="577.0" cy="298.0" r="3" fill="#2A9D8F"/>
+<text x="592.0" y="301.6" font-size="10.5" font-weight="600" fill="#1F2329">workflow verifier</text>
+</svg></div>
+        <div class="mt-2.5 flex flex-wrap items-center gap-x-5 gap-y-1 font-mono text-[10px] text-dim">
+          <span class="flex items-center gap-1.5"><svg width="25" height="6" aria-hidden="true"><line x1="0" y1="3" x2="18" y2="3" stroke="#E8590C" stroke-width="2"/><path d="M18,0.5 L24,3 L18,5.5 Z" fill="#E8590C"/></svg>handoff flow</span>
+          <span class="flex items-center gap-1.5"><svg width="25" height="6" aria-hidden="true"><line x1="0" y1="3" x2="18" y2="3" stroke="#C2410C" stroke-width="2" stroke-dasharray="4 3"/><path d="M18,0.5 L24,3 L18,5.5 Z" fill="#C2410C"/></svg>revision (bounded re-entry)</span>
+        </div>
+      </div>
+    </details>
+
+    <!-- Example 4 -->
+    <details class="expander glass reveal mt-5 p-7">
+      <summary>
+        <div class="flex items-start gap-4">
+          <div class="example-icon shrink-0">04</div>
+          <div>
+            <div class="font-mono text-orange text-xs mb-1.5 uppercase tracking-wider">Mathematical &amp; Structured Reasoning</div>
+            <h3 class="font-display text-2xl font-semibold">HepLean ElevenPlane proof-dependency workflow</h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="chip">v15_family_0682_989ef425b8d7</span>
+              <span class="chip">16 nodes &middot; 40 edges</span>
+              <span class="chip">math-hep-0082</span>
+              <span class="chip">Lean 4 &middot; HepLean-v4.7</span>
+            </div>
+          </div>
+        </div>
+      </summary>
+      <div class="mt-7 grid lg:grid-cols-5 gap-7">
+        <div class="lg:col-span-3">
+          <div class="font-mono text-[11px] text-dim uppercase tracking-wider mb-2">Global goal (excerpt)</div>
+          <div class="goal-box">
+Maintain the fixed Lean project HepLean-v4.7 at commit 7448822afced644bd61f0bdcf4dc438f455f9890 with toolchain leanprover/lean4:v4.7.0. Treat the 15 declarations below as one real proof-dependency workflow. Independent declarations may be assigned to separate reasoning agents. A downstream agent may receive only a successfully compiled ProofReceipt whose theorem ID, statement hash, repository commit and toolchain match its declared incoming edge. Do not change signatures and do not use sorry, ad
+          </div>
+          <div class="mt-5 font-mono text-[11px] text-dim uppercase tracking-wider">Agent roles</div>
+          <div class="mt-2">
+            <span class="role-pill">reasoning_agent &times;15</span>
+            <span class="role-pill">workflow_verifier</span>
+          </div>
+          <div class="mt-4 font-mono text-[11px] text-dim uppercase tracking-wider">Artifact types on handoff edges</div>
+          <div class="mt-2">
+            <span class="role-pill">proof_receipt</span>
+            <span class="role-pill">verification_receipt</span>
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="font-mono text-[11px] text-dim uppercase tracking-wider">Notes</div>
+          <div class="mt-2 text-sm text-dim leading-relaxed">
+Ten independent <span class="font-mono text-orange">isSolution_f*</span> obligations fan in to <span class="font-mono text-orange">sum_part</span>, then <span class="font-mono text-orange">grav</span>, and a further pair feeds <span class="font-mono text-orange">f_zero</span>. Every handoff is a ProofReceipt gated on theorem ID, statement hash, repository commit and toolchain &mdash; version-aware memory in its strictest form.
+          </div>
+        </div>
+      </div>
+      <div class="mt-7">
+        <div class="font-mono text-[11px] text-dim uppercase tracking-wider mb-2">Workflow topology</div>
+        <div class="sketch-box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 678 504" style="width:100%;height:auto;display:block;font-family:Inter,Arial,sans-serif">
+<defs>
+<marker id="sk-sk4-af" viewBox="0 0 8 5.6" refX="7.4" refY="2.8" markerWidth="8" markerHeight="5.6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7.4,2.8 L0,5.6 Z" fill="#9CA3AF"/></marker>
+<marker id="sk-sk4-ar" viewBox="0 0 8 5.6" refX="7.4" refY="2.8" markerWidth="8" markerHeight="5.6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7.4,2.8 L0,5.6 Z" fill="#C2410C"/></marker>
+</defs>
+<path d="M77.4,60.0 L164.6,237.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M79.5,106.0 L162.5,237.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M83.3,152.0 L158.7,237.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M92.2,198.0 L149.8,237.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M106.0,237.1 L136.0,243.9" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M106.0,266.9 L136.0,260.1" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M92.2,306.0 L149.8,267.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M83.3,352.0 L158.7,267.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M79.5,398.0 L162.5,267.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M77.4,444.0 L164.6,267.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M208.0,252.0 L238.0,252.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M310.0,244.3 L346.0,236.7" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M310.0,259.7 L340.0,266.1" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M418.0,236.7 L454.0,244.3" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M424.0,266.1 L454.0,259.7" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M526.0,252.0 L556.0,252.0" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" marker-end="url(#sk-sk4-af)"/>
+<path d="M556.0,252.0 C556.0,286.0 208.0,286.0 208.0,252.0" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk4-ar)"/>
+<path d="M556.0,247.4 C556.0,286.0 418.0,286.0 418.0,232.8" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk4-ar)"/>
+<path d="M454.0,252.0 C454.0,286.0 310.0,286.0 310.0,252.0" fill="none" stroke="#C2410C" stroke-width="1.5" stroke-dasharray="5 3.6" stroke-linecap="round" marker-end="url(#sk-sk4-ar)"/>
+<rect x="34.0" y="30.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="37.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="49.0" cy="45.0" r="3" fill="#457B9D"/>
+<text x="64.0" y="48.6" font-size="10.5" font-weight="600" fill="#1F2329">f0</text>
+<rect x="34.0" y="76.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="83.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="49.0" cy="91.0" r="3" fill="#457B9D"/>
+<text x="64.0" y="94.6" font-size="10.5" font-weight="600" fill="#1F2329">f1</text>
+<rect x="34.0" y="122.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="129.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="49.0" cy="137.0" r="3" fill="#457B9D"/>
+<text x="64.0" y="140.6" font-size="10.5" font-weight="600" fill="#1F2329">f2</text>
+<rect x="34.0" y="168.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="175.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="49.0" cy="183.0" r="3" fill="#457B9D"/>
+<text x="64.0" y="186.6" font-size="10.5" font-weight="600" fill="#1F2329">f3</text>
+<rect x="34.0" y="214.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="221.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="49.0" cy="229.0" r="3" fill="#457B9D"/>
+<text x="64.0" y="232.6" font-size="10.5" font-weight="600" fill="#1F2329">f4</text>
+<rect x="34.0" y="260.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="267.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="49.0" cy="275.0" r="3" fill="#457B9D"/>
+<text x="64.0" y="278.6" font-size="10.5" font-weight="600" fill="#1F2329">f5</text>
+<rect x="34.0" y="306.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="313.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="49.0" cy="321.0" r="3" fill="#457B9D"/>
+<text x="64.0" y="324.6" font-size="10.5" font-weight="600" fill="#1F2329">f6</text>
+<rect x="34.0" y="352.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="359.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="49.0" cy="367.0" r="3" fill="#457B9D"/>
+<text x="64.0" y="370.6" font-size="10.5" font-weight="600" fill="#1F2329">f7</text>
+<rect x="34.0" y="398.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="405.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="49.0" cy="413.0" r="3" fill="#457B9D"/>
+<text x="64.0" y="416.6" font-size="10.5" font-weight="600" fill="#1F2329">f8</text>
+<rect x="34.0" y="444.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="41.0" y="451.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="49.0" cy="459.0" r="3" fill="#457B9D"/>
+<text x="64.0" y="462.6" font-size="10.5" font-weight="600" fill="#1F2329">f9</text>
+<rect x="136.0" y="237.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="143.0" y="244.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="151.0" cy="252.0" r="3" fill="#457B9D"/>
+<text x="166.0" y="255.6" font-size="10.5" font-weight="600" fill="#1F2329">sum_part</text>
+<rect x="238.0" y="237.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="245.0" y="244.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="253.0" cy="252.0" r="3" fill="#457B9D"/>
+<text x="268.0" y="255.6" font-size="10.5" font-weight="600" fill="#1F2329">grav</text>
+<rect x="346.0" y="214.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="353.0" y="221.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="361.0" cy="229.0" r="3" fill="#457B9D"/>
+<text x="376.0" y="232.6" font-size="10.5" font-weight="600" fill="#1F2329">f10</text>
+<rect x="340.0" y="260.0" width="84.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="347.0" y="267.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="355.0" cy="275.0" r="3" fill="#457B9D"/>
+<text x="370.0" y="278.6" font-size="10.5" font-weight="600" fill="#1F2329">only_if_zero</text>
+<rect x="454.0" y="237.0" width="72.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="461.0" y="244.0" width="16" height="16" rx="4" fill="#457B9D" fill-opacity="0.18" stroke="#457B9D" stroke-width="1"/>
+<circle cx="469.0" cy="252.0" r="3" fill="#457B9D"/>
+<text x="484.0" y="255.6" font-size="10.5" font-weight="600" fill="#1F2329">f_zero</text>
+<rect x="556.0" y="237.0" width="88.0" height="30.0" rx="8" fill="#FFFFFF" stroke="#E2DBD1" stroke-width="1"/>
+<rect x="563.0" y="244.0" width="16" height="16" rx="4" fill="#2A9D8F" fill-opacity="0.18" stroke="#2A9D8F" stroke-width="1"/>
+<circle cx="571.0" cy="252.0" r="3" fill="#2A9D8F"/>
+<text x="586.0" y="255.6" font-size="10.5" font-weight="600" fill="#1F2329">Lean release</text>
+</svg></div>
+        <div class="mt-2.5 flex flex-wrap items-center gap-x-5 gap-y-1 font-mono text-[10px] text-dim">
+          <span class="flex items-center gap-1.5"><svg width="25" height="6" aria-hidden="true"><line x1="0" y1="3" x2="18" y2="3" stroke="#E8590C" stroke-width="2"/><path d="M18,0.5 L24,3 L18,5.5 Z" fill="#E8590C"/></svg>handoff flow</span>
+          <span class="flex items-center gap-1.5"><svg width="25" height="6" aria-hidden="true"><line x1="0" y1="3" x2="18" y2="3" stroke="#C2410C" stroke-width="2" stroke-dasharray="4 3"/><path d="M18,0.5 L24,3 L18,5.5 Z" fill="#C2410C"/></svg>revision (bounded re-entry)</span>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ===== STRUCTURE ===== -->
+<section id="structure" class="relative py-24 border-t border-warmborder">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="reveal">
+      <div class="font-mono text-xs text-orange uppercase tracking-[.28em] mb-3">05 — Construction</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold">How a source workflow becomes a memory experiment</h2>
+      <p class="mt-5 text-dim max-w-3xl text-lg">
+        Three construction modes, one revision contract, and domain-native execution.
+        Topology is a reporting and stress dimension &mdash; not an asserted cause of failure without matched interventions.
+      </p>
+    </div>
+
+    <!-- pipeline -->
+    <div class="reveal mt-12 glass rounded-2xl p-8">
+      <div class="font-mono text-[11px] text-dim uppercase tracking-wider mb-5">Construction pipeline</div>
+      <div class="grid md:grid-cols-5 gap-3">
+        <div class="rounded-xl p-4" style="background:rgba(251,129,71,0.08);border:1px solid rgba(251,129,71,0.22)">
+          <div class="font-mono text-[10px] text-orange">STEP 01</div>
+          <div class="mt-1.5 text-sm font-medium">Source record</div>
+          <div class="mt-1 text-xs text-dim">Toolathlon / SWE-bench / BrowseComp+ / HepLean</div>
+        </div>
+        <div class="rounded-xl p-4" style="background:rgba(251,129,71,0.08);border:1px solid rgba(251,129,71,0.22)">
+          <div class="font-mono text-[10px] text-honey">STEP 02</div>
+          <div class="mt-1.5 text-sm font-medium">Induced or native workflow</div>
+          <div class="mt-1 text-xs text-dim">400 induced &middot; 200 native &middot; 200 dependency subgraph</div>
+        </div>
+        <div class="rounded-xl p-4" style="background:rgba(253,168,58,0.08);border:1px solid rgba(253,168,58,0.22)">
+          <div class="font-mono text-[10px] text-orange">STEP 03</div>
+          <div class="mt-1.5 text-sm font-medium">Typed handoff graph</div>
+          <div class="mt-1 text-xs text-dim">Artifact types + version pins on every edge</div>
+        </div>
+        <div class="rounded-xl p-4" style="background:rgba(240,171,252,0.08);border:1px solid rgba(240,171,252,0.22)">
+          <div class="font-mono text-[10px] text-honey">STEP 04</div>
+          <div class="mt-1.5 text-sm font-medium">Revision contract</div>
+          <div class="mt-1 text-xs text-dim">semantic_bounded_v19 &mdash; bounded revision loops</div>
+        </div>
+        <div class="rounded-xl p-4" style="background:rgba(253,168,58,0.08);border:1px solid rgba(253,168,58,0.22)">
+          <div class="font-mono text-[10px] text-honey">STEP 05</div>
+          <div class="mt-1.5 text-sm font-medium">Control + pollution pair</div>
+          <div class="mt-1 text-xs text-dim">800 control &middot; 800 matched polluted instances</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- motifs -->
+    <div class="mt-10">
+      <div class="reveal font-mono text-[11px] text-dim uppercase tracking-wider mb-5">Topology motifs across the 800 families</div>
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+        <marker id="mm-o" viewBox="0 0 7 5" refX="6.4" refY="2.5" markerWidth="6.4" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6.4,2.5 L0,5 Z" fill="#FB8147"/></marker>
+        <marker id="mm-h" viewBox="0 0 7 5" refX="6.4" refY="2.5" markerWidth="6.4" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6.4,2.5 L0,5 Z" fill="#FDA83A"/></marker>
+        <marker id="mm-r" viewBox="0 0 7 5" refX="6.4" refY="2.5" markerWidth="6.4" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6.4,2.5 L0,5 Z" fill="#E76F51"/></marker>
+        <marker id="mm-k" viewBox="0 0 7 5" refX="6.4" refY="2.5" markerWidth="6.4" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6.4,2.5 L0,5 Z" fill="#1F2329"/></marker>
+      </defs></svg>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="reveal glass glass-hover rounded-2xl p-5 transition-all duration-300">
+          <svg viewBox="0 0 120 60" class="w-full mb-3">
+            <line x1="19.5" y1="30" x2="40" y2="30" stroke="#FB8147" stroke-width="2" marker-end="url(#mm-o)"/>
+            <line x1="51.5" y1="30" x2="72" y2="30" stroke="#FB8147" stroke-width="2" marker-end="url(#mm-o)"/>
+            <line x1="83.5" y1="30" x2="104" y2="30" stroke="#FB8147" stroke-width="2" marker-end="url(#mm-o)"/>
+            <circle cx="14" cy="30" r="5" fill="#FB8147"/><circle cx="46" cy="30" r="5" fill="#FB8147"/><circle cx="78" cy="30" r="5" fill="#FB8147"/><circle cx="110" cy="30" r="5" fill="#FB8147"/>
+          </svg>
+          <div class="text-sm font-medium">chain</div>
+          <div class="mt-1 text-xs text-dim font-mono">800 / 800</div>
+        </div>
+        <div class="reveal glass glass-hover rounded-2xl p-5 transition-all duration-300">
+          <svg viewBox="0 0 120 60" class="w-full mb-3">
+            <line x1="25.1" y1="27.7" x2="54.2" y2="14.6" stroke="#FDA83A" stroke-width="2" marker-end="url(#mm-h)"/>
+            <line x1="25.1" y1="32.3" x2="54.2" y2="45.4" stroke="#FDA83A" stroke-width="2" marker-end="url(#mm-h)"/>
+            <line x1="65.9" y1="14.6" x2="94.2" y2="27.4" stroke="#FDA83A" stroke-width="2" marker-end="url(#mm-h)"/>
+            <line x1="65.9" y1="45.4" x2="94.2" y2="32.6" stroke="#FDA83A" stroke-width="2" marker-end="url(#mm-h)"/>
+            <circle cx="20" cy="30" r="5" fill="#FDA83A"/><circle cx="60" cy="12" r="5" fill="#FDA83A"/><circle cx="60" cy="48" r="5" fill="#FDA83A"/><circle cx="100" cy="30" r="5" fill="#FDA83A"/>
+          </svg>
+          <div class="text-sm font-medium">split_join</div>
+          <div class="mt-1 text-xs text-dim font-mono">800 / 800</div>
+        </div>
+        <div class="reveal glass glass-hover rounded-2xl p-5 transition-all duration-300">
+          <svg viewBox="0 0 120 60" class="w-full mb-3">
+            <line x1="23.2" y1="27.8" x2="50.1" y2="16.5" stroke="#E76F51" stroke-width="2" marker-end="url(#mm-r)"/>
+            <line x1="23.2" y1="32.2" x2="50.1" y2="43.5" stroke="#E76F51" stroke-width="2" marker-end="url(#mm-r)"/>
+            <line x1="61.9" y1="16.5" x2="88.1" y2="27.5" stroke="#E76F51" stroke-width="2" marker-end="url(#mm-r)"/>
+            <line x1="61.9" y1="43.5" x2="88.1" y2="32.5" stroke="#E76F51" stroke-width="2" marker-end="url(#mm-r)"/>
+            <path d="M56 20.2 C68 25, 68 35, 56 39.6" stroke="#E76F51" stroke-width="1.6" fill="none" stroke-dasharray="3.5 3" marker-end="url(#mm-r)"/>
+            <circle cx="18" cy="30" r="5" fill="#E76F51"/><circle cx="56" cy="14" r="5" fill="#E76F51"/><circle cx="56" cy="46" r="5" fill="#E76F51"/><circle cx="94" cy="30" r="5" fill="#E76F51"/>
+          </svg>
+          <div class="text-sm font-medium">reuse</div>
+          <div class="mt-1 text-xs text-dim font-mono">799 / 800</div>
+        </div>
+        <div class="reveal glass glass-hover rounded-2xl p-5 transition-all duration-300">
+          <svg viewBox="0 0 120 60" class="w-full mb-3">
+            <line x1="21.5" y1="15" x2="49.9" y2="15" stroke="#FDA83A" stroke-width="2" marker-end="url(#mm-h)"/>
+            <line x1="61.5" y1="15" x2="89.9" y2="15" stroke="#FDA83A" stroke-width="2" marker-end="url(#mm-h)"/>
+            <line x1="21.5" y1="45" x2="49.9" y2="45" stroke="#FDA83A" stroke-width="2" marker-end="url(#mm-h)"/>
+            <line x1="61.5" y1="45" x2="89.9" y2="45" stroke="#FDA83A" stroke-width="2" marker-end="url(#mm-h)"/>
+            <line x1="20.5" y1="41.6" x2="50.9" y2="18.8" stroke="#FDA83A" stroke-width="1.5" stroke-dasharray="3.5 3" marker-end="url(#mm-h)"/>
+            <line x1="60.5" y1="18.4" x2="90.9" y2="41.2" stroke="#FDA83A" stroke-width="1.5" stroke-dasharray="3.5 3" marker-end="url(#mm-h)"/>
+            <circle cx="16" cy="15" r="5" fill="#FDA83A"/><circle cx="56" cy="15" r="5" fill="#FDA83A"/><circle cx="96" cy="15" r="5" fill="#FDA83A"/>
+            <circle cx="16" cy="45" r="5" fill="#FDA83A"/><circle cx="56" cy="45" r="5" fill="#FDA83A"/><circle cx="96" cy="45" r="5" fill="#FDA83A"/>
+          </svg>
+          <div class="text-sm font-medium">overlap</div>
+          <div class="mt-1 text-xs text-dim font-mono">787 / 800</div>
+        </div>
+        <div class="reveal glass glass-hover rounded-2xl p-5 transition-all duration-300">
+          <svg viewBox="0 0 120 60" class="w-full mb-3">
+            <line x1="19.5" y1="26" x2="40" y2="26" stroke="#1F2329" stroke-width="2" marker-end="url(#mm-k)"/>
+            <line x1="51.5" y1="26" x2="72" y2="26" stroke="#1F2329" stroke-width="2" marker-end="url(#mm-k)"/>
+            <line x1="83.5" y1="26" x2="104" y2="26" stroke="#1F2329" stroke-width="2" marker-end="url(#mm-k)"/>
+            <path d="M76 31.2 C76 44, 48 44, 48 31.8" stroke="#1F2329" stroke-width="1.6" fill="none" stroke-dasharray="3.5 3" marker-end="url(#mm-k)"/>
+            <circle cx="14" cy="26" r="5" fill="#1F2329"/><circle cx="46" cy="26" r="5" fill="#1F2329"/><circle cx="78" cy="26" r="5" fill="#1F2329"/><circle cx="110" cy="26" r="5" fill="#1F2329"/>
+          </svg>
+          <div class="text-sm font-medium">bounded_revision_loop</div>
+          <div class="mt-1 text-xs text-dim font-mono">418 / 800</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- split / stats -->
+    <div class="reveal mt-10 grid md:grid-cols-3 gap-5">
+      <div class="glass rounded-2xl p-6">
+        <div class="font-mono text-[11px] text-orange uppercase tracking-wider">Problems</div>
+        <div class="mt-3 flex items-end gap-3">
+          <div><div class="stat-num text-3xl">800</div><div class="text-xs text-dim mt-1">complete</div></div>
+        </div>
+        <div class="mt-2 text-xs text-dim leading-relaxed">One complete set &mdash; no held-out test/dev split.</div>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <div class="font-mono text-[11px] text-orange uppercase tracking-wider">Construction modes</div>
+        <div class="mt-3 text-sm text-dim leading-relaxed">
+          <div class="flex justify-between py-1.5 border-b border-warmborder"><span>source_grounded_induced_workflow</span><span class="text-ink font-mono">400</span></div>
+          <div class="flex justify-between py-1.5 border-b border-warmborder"><span>source_native_workflow</span><span class="text-ink font-mono">200</span></div>
+          <div class="flex justify-between py-1.5"><span>source_native_dependency_subgraph</span><span class="text-ink font-mono">200</span></div>
+        </div>
+      </div>
+      <div class="glass rounded-2xl p-6">
+        <div class="font-mono text-[11px] text-honey uppercase tracking-wider">Revision contract</div>
+        <div class="mt-3 text-sm text-dim leading-relaxed">
+          Mode <span class="font-mono text-ink">semantic_bounded_v19</span>.
+          Bounded revision loops let failed receipts send control back one step &mdash; matching how real workflows
+          recover without unbounded replanning.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== METRICS ===== -->
+<section id="metrics" class="relative py-24 border-t border-warmborder">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="reveal">
+      <div class="font-mono text-xs text-orange uppercase tracking-[.28em] mb-3">06 — Evaluation</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold">Headline metrics</h2>
+      <p class="mt-5 text-dim max-w-3xl text-lg">
+        Two standard measures and two memory-specific measures. Infrastructure failures are reported separately
+        and never counted as wrong answers.
+      </p>
+    </div>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="reveal metric-card glass rounded-2xl p-6">
+        <div class="font-mono text-xs text-orange">SR</div>
+        <h3 class="mt-2 font-display text-xl font-semibold">Task Success Rate</h3>
+        <p class="mt-2.5 text-dim text-sm leading-relaxed">
+          End-to-end workflow success over the full 50-family domain denominator.
+          Reported as completed / registered.
+        </p>
+      </div>
+      <div class="reveal metric-card glass rounded-2xl p-6">
+        <div class="font-mono text-xs text-orange">VNCR</div>
+        <h3 class="mt-2 font-display text-xl font-semibold">Verified Native Completion Rate</h3>
+        <p class="mt-2.5 text-dim text-sm leading-relaxed">
+          Macro-mean of native_passed over nodes. Captures whether each node completed its
+          <em>own</em> declared obligation under domain-native checks.
+        </p>
+      </div>
+      <div class="reveal metric-card glass rounded-2xl p-6">
+        <div class="font-mono text-xs text-honey">VHS</div>
+        <h3 class="mt-2 font-display text-xl font-semibold">Verified Handoff Success</h3>
+        <p class="mt-2.5 text-dim text-sm leading-relaxed">
+          Micro-ratio of verified eligible handoffs &mdash; downstream success conditioned on successful
+          mandatory predecessors. Proxy for required-memory availability.
+        </p>
+      </div>
+      <div class="reveal metric-card glass rounded-2xl p-6">
+        <div class="font-mono text-xs text-honey">ICS</div>
+        <h3 class="mt-2 font-display text-xl font-semibold">Isolation Challenge Score</h3>
+        <p class="mt-2.5 text-dim text-sm leading-relaxed">
+          Success on polluted instances conditioned on matched control success.
+          Blank when the denominator is below 10 &mdash; never reported as zero.
+        </p>
+      </div>
+    </div>
+
+    <div class="reveal mt-6 glass rounded-2xl p-6">
+      <div class="flex flex-wrap items-center gap-x-8 gap-y-3">
+        <div>
+          <div class="font-mono text-[11px] text-dim uppercase tracking-wider">Cost</div>
+          <div class="mt-1.5 text-sm text-ink">Tokens / Task &mdash; report input + output (median, P90)</div>
+        </div>
+        <div>
+          <div class="font-mono text-[11px] text-dim uppercase tracking-wider">Infra</div>
+          <div class="mt-1.5 text-sm text-ink">Infrastructure failures reported separately from task failures</div>
+        </div>
+        <div>
+          <div class="font-mono text-[11px] text-dim uppercase tracking-wider">Blanking rule</div>
+          <div class="mt-1.5 text-sm text-ink"><span class="font-mono text-dim">&mdash;</span> = not registered / denom &lt; 10, never an invented zero</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LEADERBOARD ===== -->
+<section id="leaderboard" class="relative py-24 border-t border-warmborder">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="reveal flex flex-wrap items-end justify-between gap-6">
+      <div>
+        <div class="font-mono text-xs text-orange uppercase tracking-[.28em] mb-3">07 — Results</div>
+        <h2 class="font-display text-4xl md:text-5xl font-bold">Leaderboard</h2>
+        <p class="mt-5 text-dim max-w-2xl text-lg">
+          Three backbone snapshots.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-2" id="backbone-tabs">
+        <button class="tab-btn on" data-bb="DeepSeek-V4-Flash">DeepSeek-V4-Flash</button>
+        <button class="tab-btn" data-bb="Qwen3.8-27B">Qwen3.8-27B</button>
+        <button class="tab-btn" data-bb="GPT-6-Luna">GPT-6-Luna</button>
+      </div>
+    </div>
+
+    <!-- snapshot cards -->
+    <div class="reveal mt-8 grid md:grid-cols-3 gap-4">
+      <div class="glass rounded-2xl p-5">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-orange"></span>
+          <div class="text-sm font-medium">DeepSeek-V4-Flash</div>
+        </div>
+      </div>
+      <div class="glass rounded-2xl p-5">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-orange"></span>
+          <div class="text-sm font-medium">Qwen3.8-27B</div>
+        </div>
+      </div>
+      <div class="glass rounded-2xl p-5">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-honey"></span>
+          <div class="text-sm font-medium">GPT-6-Luna</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- metric tabs -->
+    <div class="reveal mt-8 flex flex-wrap gap-2 items-center">
+      <span class="font-mono text-[11px] text-dim uppercase tracking-wider mr-2">Metric:</span>
+      <button class="tab-btn on" data-metric="sr">SR</button>
+      <button class="tab-btn" data-metric="vncr">VNCR</button>
+      <button class="tab-btn" data-metric="vhs">VHS</button>
+      <button class="tab-btn" data-metric="ics">ICS</button>
+    </div>
+
+    <!-- table -->
+    <div class="reveal mt-5 glass rounded-2xl overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="tbl w-full text-sm">
+          <thead>
+            <tr class="border-b border-warmborder">
+              <th class="text-left px-5 py-4">System</th>
+              <th class="text-left px-3 py-4">Org. category</th>
+              <th class="text-right px-3 py-4">Stateful Tool</th>
+              <th class="text-right px-3 py-4">Repository Code</th>
+              <th class="text-right px-3 py-4">Offline Retrieval</th>
+              <th class="text-right px-3 py-4">Formal Mathematics</th>
+              <th class="text-right px-5 py-4">Macro</th>
+            </tr>
+          </thead>
+          <tbody id="lb-body"></tbody>
+        </table>
+      </div>
+      <div class="px-5 py-4 border-t border-warmborder text-xs text-dim leading-relaxed" id="lb-note"></div>
+    </div>
+
+    <!-- domain key -->
+    <div class="reveal mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs text-dim">
+      <span>SR = task success rate over 50-family domain denom</span>
+      <span>VNCR = verified native completion rate (macro)</span>
+      <span>VHS = verified handoff success (micro)</span>
+      <span>ICS = isolation challenge score (provisional; blank if denom&lt;10)</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACCESS ===== -->
+<section id="access" class="relative py-24 border-t border-warmborder">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="reveal">
+      <div class="font-mono text-xs text-orange uppercase tracking-[.28em] mb-3">08 — Access</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold">Get the dataset</h2>
+      <p class="mt-5 text-dim max-w-3xl text-lg">
+        CoMemBench v1 is published on HuggingFace &mdash; 800 complete problems across four domains,
+        each with one matched polluted twin. No held-out split, no gate: download and run.
+      </p>
+      <div class="mt-8">
+        <a href="https://huggingface.co/datasets/anonymous-submission-333/anonymous-submission" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2.5 rounded-full bg-black px-7 py-3.5 text-white text-sm font-semibold hover:bg-orange transition-colors duration-300">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download on HuggingFace
+        </a>
+        <span class="ml-4 font-mono text-xs text-dim">datasets/anonymous-submission-333/anonymous-submission &middot; v1 &middot; CC BY 4.0</span>
+      </div>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-3 gap-5">
+      <div class="reveal glass glass-hover rounded-2xl p-7 transition-all duration-300">
+        <div class="example-icon">01</div>
+        <h3 class="mt-5 font-display text-xl font-semibold">What&rsquo;s in the release</h3>
+        <p class="mt-3 text-dim text-sm leading-relaxed">
+          <span class="font-mono text-xs text-orange">workflow_families.jsonl</span> (800 problems),
+          <span class="font-mono text-xs text-orange">node_contexts.jsonl</span> (8975 memory scopes),
+          <span class="font-mono text-xs text-orange">retrieval_corpora.jsonl</span> &amp; <span class="font-mono text-xs text-orange">math_cases.jsonl</span>,
+          topology descriptors, the instance indexes, and the JSON schemas.
+        </p>
+      </div>
+      <div class="reveal glass glass-hover rounded-2xl p-7 transition-all duration-300">
+        <div class="example-icon">02</div>
+        <h3 class="mt-5 font-display text-xl font-semibold">Load in three lines</h3>
+        <p class="mt-3 text-dim text-sm leading-relaxed">
+          Plain JSON Lines &mdash; or use the <span class="font-mono text-xs text-orange">datasets</span> loader.
+          Each family is a layered DAG of worker nodes with typed handoffs and a bounded revision contract.
+        </p>
+      </div>
+      <div class="reveal glass glass-hover rounded-2xl p-7 transition-all duration-300">
+        <div class="example-icon">03</div>
+        <h3 class="mt-5 font-display text-xl font-semibold">Score against held-out oracles</h3>
+        <p class="mt-3 text-dim text-sm leading-relaxed">
+          Evaluation oracles and pollution plans stay held out. SR / VNCR / VHS / ICS are computed under the
+          published blanking and denominator rules &mdash; infra failures never count as wrong answers.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== CITATION ===== -->
+<section id="citation" class="relative py-24 border-t border-warmborder">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="reveal">
+      <div class="font-mono text-xs text-orange uppercase tracking-[.28em] mb-3">09 — Citation</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold">Cite CoMemBench</h2>
+      <p class="mt-5 text-dim max-w-2xl text-lg">The manuscript is on arXiv: <a class="text-orange hover:underline" href="https://arxiv.org/abs/2609.32192" target="_blank" rel="noopener">arXiv:2609.32192</a>.</p>
+    </div>
+    <div class="reveal mt-8 glass rounded-2xl p-6">
+      <pre class="font-mono text-xs text-dim leading-relaxed overflow-x-auto">@misc{zhao2026comembench,
+  title         = {CoMemBench: Benchmarking Collaborative Memory Boundaries
+                   across Multi-Agent Workflow Topologies},
+  author        = {Sen Zhao and Ruiqi Kong and Zuyu Zhang and Lifeng Shen and
+                   Xinyu He and Ding Zou and Xu Zhang and Qinghua Zhang},
+  year          = {2026},
+  eprint        = {2609.32192},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2609.32192}
+}</pre>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="relative border-t border-warmborder py-12">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="glow-line mb-10"></div>
+    <div class="flex flex-wrap items-start justify-between gap-8">
+      <div>
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center font-display font-bold text-white"
+               style="background:linear-gradient(135deg,#FB8147,#FDA83A)">C</div>
+          <div>
+            <div class="font-display font-semibold text-sm">CoMemBench</div>
+            <div class="font-mono text-[10px] text-dim">v1 &middot; 800 families &middot; 4 domains</div>
+          </div>
+        </div>
+        <p class="mt-4 text-xs text-dim max-w-md leading-relaxed">
+          Benchmarking whether task-relevant memory reaches the agents that need it &mdash;
+          across multi-agent workflow topologies.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-x-10 gap-y-4 text-xs">
+        <div>
+          <div class="font-mono text-[10px] text-dim uppercase tracking-wider mb-2">Explore</div>
+          <div class="flex flex-col gap-1.5">
+            <a class="hover:text-orange transition" href="#overview">Overview</a>
+            <a class="hover:text-orange transition" href="#chrono">Related Work</a>
+            <a class="hover:text-orange transition" href="#examples">Examples</a>
+            <a class="hover:text-orange transition" href="#leaderboard">Leaderboard</a>
+          </div>
+        </div>
+        <div>
+          <div class="font-mono text-[10px] text-dim uppercase tracking-wider mb-2">Resources</div>
+          <div class="flex flex-col gap-1.5">
+            <a class="hover:text-orange transition" href="https://arxiv.org/abs/2609.32192" target="_blank" rel="noopener">Paper (arXiv)</a>
+            <a class="hover:text-orange transition" href="#access">Dataset access</a>
+            <a class="hover:text-orange transition" href="#metrics">Evaluation protocol</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 pt-6 border-t border-warmborder flex flex-wrap items-center justify-between gap-4 text-[11px] text-dim">
+      <div>&copy; 2026 CoMemBench authors. For research use.</div>
+      <div class="font-mono">Benchmark release v1</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---------- leaderboard data ----------
+const PAPER_DATA = [{"backbone":"Qwen3.8-27B","system":"Peer Review","domain":"Stateful Tool","n":50,"sr":0,"vncr":34.9,"vhs":61.8,"ics":72},{"backbone":"Qwen3.8-27B","system":"Peer Review","domain":"Repository Code","n":50,"sr":4,"vncr":49.7,"vhs":55.1,"ics":70},{"backbone":"Qwen3.8-27B","system":"Peer Review","domain":"Offline Retrieval","n":50,"sr":0,"vncr":24.3,"vhs":5,"ics":null},{"backbone":"Qwen3.8-27B","system":"Peer Review","domain":"Formal Mathematics","n":50,"sr":0,"vncr":14,"vhs":11.5,"ics":40},{"backbone":"Qwen3.8-27B","system":"SMoA","domain":"Stateful Tool","n":50,"sr":0,"vncr":43.8,"vhs":72.4,"ics":55},{"backbone":"Qwen3.8-27B","system":"SMoA","domain":"Repository Code","n":50,"sr":0,"vncr":44.5,"vhs":51,"ics":72.7},{"backbone":"Qwen3.8-27B","system":"SMoA","domain":"Offline Retrieval","n":50,"sr":0,"vncr":53.3,"vhs":45.3,"ics":50},{"backbone":"Qwen3.8-27B","system":"SMoA","domain":"Formal Mathematics","n":50,"sr":0,"vncr":13,"vhs":4.7,"ics":null},{"backbone":"Qwen3.8-27B","system":"ADAS","domain":"Stateful Tool","n":50,"sr":0,"vncr":18.3,"vhs":36.6,"ics":43.8},{"backbone":"Qwen3.8-27B","system":"ADAS","domain":"Repository Code","n":50,"sr":0,"vncr":17,"vhs":37.3,"ics":33.3},{"backbone":"Qwen3.8-27B","system":"ADAS","domain":"Offline Retrieval","n":50,"sr":0,"vncr":12.5,"vhs":0,"ics":null},{"backbone":"Qwen3.8-27B","system":"ADAS","domain":"Formal Mathematics","n":50,"sr":0,"vncr":6.5,"vhs":8.2,"ics":0},{"backbone":"Qwen3.8-27B","system":"OMAC","domain":"Stateful Tool","n":50,"sr":0,"vncr":31.8,"vhs":55.3,"ics":56},{"backbone":"Qwen3.8-27B","system":"OMAC","domain":"Repository Code","n":50,"sr":0,"vncr":52.9,"vhs":62.1,"ics":52},{"backbone":"Qwen3.8-27B","system":"OMAC","domain":"Offline Retrieval","n":50,"sr":8,"vncr":39.9,"vhs":38.9,"ics":50},{"backbone":"Qwen3.8-27B","system":"OMAC","domain":"Formal Mathematics","n":50,"sr":0,"vncr":7.4,"vhs":5.8,"ics":null},{"backbone":"Qwen3.8-27B","system":"EvoMAS","domain":"Stateful Tool","n":50,"sr":0,"vncr":21,"vhs":39,"ics":41.4},{"backbone":"Qwen3.8-27B","system":"EvoMAS","domain":"Repository Code","n":50,"sr":4,"vncr":67.6,"vhs":73.2,"ics":69.2},{"backbone":"Qwen3.8-27B","system":"EvoMAS","domain":"Offline Retrieval","n":50,"sr":0,"vncr":13.6,"vhs":0,"ics":null},{"backbone":"Qwen3.8-27B","system":"EvoMAS","domain":"Formal Mathematics","n":50,"sr":0,"vncr":19.4,"vhs":10.8,"ics":75},{"backbone":"Qwen3.8-27B","system":"AutoGen","domain":"Stateful Tool","n":50,"sr":0,"vncr":33.9,"vhs":56.8,"ics":25},{"backbone":"Qwen3.8-27B","system":"AutoGen","domain":"Repository Code","n":50,"sr":0,"vncr":48.8,"vhs":55.1,"ics":61.5},{"backbone":"Qwen3.8-27B","system":"AutoGen","domain":"Offline Retrieval","n":50,"sr":18,"vncr":50.7,"vhs":37.5,"ics":53.8},{"backbone":"Qwen3.8-27B","system":"AutoGen","domain":"Formal Mathematics","n":50,"sr":0,"vncr":10.3,"vhs":8.7,"ics":null},{"backbone":"Qwen3.8-27B","system":"Deep Agents","domain":"Stateful Tool","n":50,"sr":0,"vncr":5.5,"vhs":1.4,"ics":0},{"backbone":"Qwen3.8-27B","system":"Deep Agents","domain":"Repository Code","n":50,"sr":0,"vncr":57.7,"vhs":66.8,"ics":69.2},{"backbone":"Qwen3.8-27B","system":"Deep Agents","domain":"Offline Retrieval","n":50,"sr":0,"vncr":37.8,"vhs":9.5,"ics":0},{"backbone":"Qwen3.8-27B","system":"Deep Agents","domain":"Formal Mathematics","n":null,"sr":null,"vncr":null,"vhs":null,"ics":null},{"backbone":"Qwen3.8-27B","system":"CrewAI","domain":"Stateful Tool","n":50,"sr":0,"vncr":38.3,"vhs":67.1,"ics":42.9},{"backbone":"Qwen3.8-27B","system":"CrewAI","domain":"Repository Code","n":50,"sr":0,"vncr":44.1,"vhs":54.8,"ics":63.6},{"backbone":"Qwen3.8-27B","system":"CrewAI","domain":"Offline Retrieval","n":50,"sr":12,"vncr":53.1,"vhs":38.1,"ics":38.5},{"backbone":"Qwen3.8-27B","system":"CrewAI","domain":"Formal Mathematics","n":50,"sr":0,"vncr":10.8,"vhs":9.3,"ics":0},{"backbone":"Qwen3.8-27B","system":"Hermes","domain":"Stateful Tool","n":50,"sr":0,"vncr":3.2,"vhs":18.2,"ics":0},{"backbone":"Qwen3.8-27B","system":"Hermes","domain":"Repository Code","n":50,"sr":0,"vncr":25.2,"vhs":30.2,"ics":85.7},{"backbone":"Qwen3.8-27B","system":"Hermes","domain":"Offline Retrieval","n":50,"sr":4.1,"vncr":35.7,"vhs":14.4,"ics":45.5},{"backbone":"Qwen3.8-27B","system":"Hermes","domain":"Formal Mathematics","n":50,"sr":0,"vncr":6.2,"vhs":2,"ics":null},{"backbone":"Qwen3.8-27B","system":"Codex","domain":"Stateful Tool","n":50,"sr":0,"vncr":5.1,"vhs":32.7,"ics":0},{"backbone":"Qwen3.8-27B","system":"Codex","domain":"Repository Code","n":50,"sr":0,"vncr":33.2,"vhs":43,"ics":35.3},{"backbone":"Qwen3.8-27B","system":"Codex","domain":"Offline Retrieval","n":50,"sr":4.1,"vncr":23.3,"vhs":10.7,"ics":0},{"backbone":"Qwen3.8-27B","system":"Codex","domain":"Formal Mathematics","n":50,"sr":0,"vncr":9.1,"vhs":5.3,"ics":0},{"backbone":"DeepSeek-V4-Flash","system":"Peer Review","domain":"Stateful Tool","n":50,"sr":0,"vncr":15.7,"vhs":21.8,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Peer Review","domain":"Repository Code","n":50,"sr":2,"vncr":60.4,"vhs":71.6,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Peer Review","domain":"Offline Retrieval","n":50,"sr":2,"vncr":24.6,"vhs":23.3,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Peer Review","domain":"Formal Mathematics","n":50,"sr":0,"vncr":10.2,"vhs":9.1,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"SMoA","domain":"Stateful Tool","n":50,"sr":0,"vncr":21.4,"vhs":51.4,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"SMoA","domain":"Repository Code","n":50,"sr":2,"vncr":74.6,"vhs":84.6,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"SMoA","domain":"Offline Retrieval","n":50,"sr":2,"vncr":42.6,"vhs":34.9,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"SMoA","domain":"Formal Mathematics","n":50,"sr":0,"vncr":9.3,"vhs":3.8,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"ADAS","domain":"Stateful Tool","n":50,"sr":0,"vncr":17.2,"vhs":37.8,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"ADAS","domain":"Repository Code","n":50,"sr":4,"vncr":65.6,"vhs":79.1,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"ADAS","domain":"Offline Retrieval","n":50,"sr":2,"vncr":27.8,"vhs":16.6,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"ADAS","domain":"Formal Mathematics","n":50,"sr":0,"vncr":11.2,"vhs":3,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"OMAC","domain":"Stateful Tool","n":50,"sr":0,"vncr":69.7,"vhs":85.7,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"OMAC","domain":"Repository Code","n":50,"sr":4,"vncr":85,"vhs":92.1,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"OMAC","domain":"Offline Retrieval","n":50,"sr":10,"vncr":67.1,"vhs":58.7,"ics":77.27},{"backbone":"DeepSeek-V4-Flash","system":"OMAC","domain":"Formal Mathematics","n":50,"sr":0,"vncr":12.4,"vhs":7.1,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"EvoMAS","domain":"Stateful Tool","n":50,"sr":0,"vncr":8.9,"vhs":9.1,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"EvoMAS","domain":"Repository Code","n":50,"sr":6,"vncr":57.8,"vhs":71.6,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"EvoMAS","domain":"Offline Retrieval","n":50,"sr":0,"vncr":11.4,"vhs":0,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"EvoMAS","domain":"Formal Mathematics","n":50,"sr":0,"vncr":17.2,"vhs":8.6,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"AutoGen","domain":"Stateful Tool","n":50,"sr":0,"vncr":17,"vhs":32.7,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"AutoGen","domain":"Repository Code","n":50,"sr":0,"vncr":64.3,"vhs":73.3,"ics":84},{"backbone":"DeepSeek-V4-Flash","system":"AutoGen","domain":"Offline Retrieval","n":50,"sr":4,"vncr":42,"vhs":25.4,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"AutoGen","domain":"Formal Mathematics","n":50,"sr":0,"vncr":10.3,"vhs":6.6,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Deep Agents","domain":"Stateful Tool","n":null,"sr":null,"vncr":null,"vhs":null,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Deep Agents","domain":"Repository Code","n":50,"sr":0,"vncr":15.3,"vhs":55.4,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Deep Agents","domain":"Offline Retrieval","n":null,"sr":null,"vncr":null,"vhs":null,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Deep Agents","domain":"Formal Mathematics","n":null,"sr":null,"vncr":null,"vhs":null,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"CrewAI","domain":"Stateful Tool","n":50,"sr":0,"vncr":12.2,"vhs":25.4,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"CrewAI","domain":"Repository Code","n":50,"sr":0,"vncr":40.1,"vhs":45,"ics":93.75},{"backbone":"DeepSeek-V4-Flash","system":"CrewAI","domain":"Offline Retrieval","n":50,"sr":2,"vncr":33.7,"vhs":9.7,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"CrewAI","domain":"Formal Mathematics","n":50,"sr":0,"vncr":9.2,"vhs":4.1,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Hermes","domain":"Stateful Tool","n":50,"sr":0,"vncr":11.4,"vhs":10.7,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Hermes","domain":"Repository Code","n":50,"sr":0,"vncr":32.4,"vhs":29.2,"ics":83.33},{"backbone":"DeepSeek-V4-Flash","system":"Hermes","domain":"Offline Retrieval","n":50,"sr":0,"vncr":44.2,"vhs":15.3,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Hermes","domain":"Formal Mathematics","n":50,"sr":0,"vncr":5.4,"vhs":0,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Codex","domain":"Stateful Tool","n":null,"sr":null,"vncr":null,"vhs":null,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Codex","domain":"Repository Code","n":null,"sr":null,"vncr":null,"vhs":null,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Codex","domain":"Offline Retrieval","n":null,"sr":null,"vncr":null,"vhs":null,"ics":null},{"backbone":"DeepSeek-V4-Flash","system":"Codex","domain":"Formal Mathematics","n":null,"sr":null,"vncr":null,"vhs":null,"ics":null},{"backbone":"GPT-6-Luna","system":"Peer Review","domain":"Stateful Tool","n":32,"sr":0,"vncr":13.7,"vhs":35.8,"ics":null},{"backbone":"GPT-6-Luna","system":"Peer Review","domain":"Repository Code","n":38,"sr":0,"vncr":3.1,"vhs":20,"ics":null},{"backbone":"GPT-6-Luna","system":"Peer Review","domain":"Offline Retrieval","n":46,"sr":0,"vncr":10.2,"vhs":0,"ics":null},{"backbone":"GPT-6-Luna","system":"Peer Review","domain":"Formal Mathematics","n":15,"sr":0,"vncr":4,"vhs":0,"ics":null},{"backbone":"GPT-6-Luna","system":"SMoA","domain":"Stateful Tool","n":46,"sr":0,"vncr":29.6,"vhs":68.5,"ics":null},{"backbone":"GPT-6-Luna","system":"SMoA","domain":"Repository Code","n":50,"sr":0,"vncr":49.2,"vhs":64.1,"ics":null},{"backbone":"GPT-6-Luna","system":"SMoA","domain":"Offline Retrieval","n":50,"sr":2,"vncr":43.5,"vhs":17,"ics":null},{"backbone":"GPT-6-Luna","system":"SMoA","domain":"Formal Mathematics","n":35,"sr":0,"vncr":11.2,"vhs":2.5,"ics":null},{"backbone":"GPT-6-Luna","system":"ADAS","domain":"Stateful Tool","n":46,"sr":0,"vncr":26.8,"vhs":69.8,"ics":null},{"backbone":"GPT-6-Luna","system":"ADAS","domain":"Repository Code","n":50,"sr":0,"vncr":26.7,"vhs":31.3,"ics":null},{"backbone":"GPT-6-Luna","system":"ADAS","domain":"Offline Retrieval","n":50,"sr":2,"vncr":36,"vhs":9.4,"ics":null},{"backbone":"GPT-6-Luna","system":"ADAS","domain":"Formal Mathematics","n":22,"sr":0,"vncr":6.5,"vhs":7.4,"ics":null},{"backbone":"GPT-6-Luna","system":"OMAC","domain":"Stateful Tool","n":30,"sr":0,"vncr":39.7,"vhs":66.9,"ics":null},{"backbone":"GPT-6-Luna","system":"OMAC","domain":"Repository Code","n":50,"sr":0,"vncr":35.3,"vhs":72.4,"ics":null},{"backbone":"GPT-6-Luna","system":"OMAC","domain":"Offline Retrieval","n":50,"sr":0,"vncr":28.5,"vhs":12.5,"ics":null},{"backbone":"GPT-6-Luna","system":"OMAC","domain":"Formal Mathematics","n":44,"sr":0,"vncr":7.8,"vhs":1.4,"ics":null},{"backbone":"GPT-6-Luna","system":"EvoMAS","domain":"Stateful Tool","n":49,"sr":0,"vncr":43.6,"vhs":63.7,"ics":null},{"backbone":"GPT-6-Luna","system":"EvoMAS","domain":"Repository Code","n":49,"sr":0,"vncr":55.5,"vhs":67.9,"ics":null},{"backbone":"GPT-6-Luna","system":"EvoMAS","domain":"Offline Retrieval","n":50,"sr":0,"vncr":17,"vhs":5.2,"ics":null},{"backbone":"GPT-6-Luna","system":"EvoMAS","domain":"Formal Mathematics","n":21,"sr":0,"vncr":18,"vhs":16.4,"ics":null},{"backbone":"GPT-6-Luna","system":"AutoGen","domain":"Stateful Tool","n":29,"sr":0,"vncr":19,"vhs":69.2,"ics":null},{"backbone":"GPT-6-Luna","system":"AutoGen","domain":"Repository Code","n":50,"sr":0,"vncr":37.6,"vhs":73.3,"ics":null},{"backbone":"GPT-6-Luna","system":"AutoGen","domain":"Offline Retrieval","n":50,"sr":4,"vncr":41.6,"vhs":31.1,"ics":null},{"backbone":"GPT-6-Luna","system":"AutoGen","domain":"Formal Mathematics","n":33,"sr":0,"vncr":12,"vhs":2.4,"ics":null},{"backbone":"GPT-6-Luna","system":"Deep Agents","domain":"Stateful Tool","n":50,"sr":0,"vncr":3,"vhs":0,"ics":null},{"backbone":"GPT-6-Luna","system":"Deep Agents","domain":"Repository Code","n":47,"sr":0,"vncr":12.5,"vhs":32.1,"ics":null},{"backbone":"GPT-6-Luna","system":"Deep Agents","domain":"Offline Retrieval","n":48,"sr":0,"vncr":8.9,"vhs":0,"ics":null},{"backbone":"GPT-6-Luna","system":"Deep Agents","domain":"Formal Mathematics","n":26,"sr":0,"vncr":0,"vhs":0,"ics":null},{"backbone":"GPT-6-Luna","system":"CrewAI","domain":"Stateful Tool","n":50,"sr":0,"vncr":35.7,"vhs":63.1,"ics":null},{"backbone":"GPT-6-Luna","system":"CrewAI","domain":"Repository Code","n":50,"sr":0,"vncr":52.5,"vhs":64.4,"ics":null},{"backbone":"GPT-6-Luna","system":"CrewAI","domain":"Offline Retrieval","n":49,"sr":0,"vncr":41.6,"vhs":8.2,"ics":null},{"backbone":"GPT-6-Luna","system":"CrewAI","domain":"Formal Mathematics","n":36,"sr":0,"vncr":8.4,"vhs":6,"ics":null},{"backbone":"GPT-6-Luna","system":"Hermes","domain":"Stateful Tool","n":47,"sr":0,"vncr":6,"vhs":43.8,"ics":null},{"backbone":"GPT-6-Luna","system":"Hermes","domain":"Repository Code","n":47,"sr":0,"vncr":25.9,"vhs":25.4,"ics":null},{"backbone":"GPT-6-Luna","system":"Hermes","domain":"Offline Retrieval","n":50,"sr":0,"vncr":31.4,"vhs":11.5,"ics":null},{"backbone":"GPT-6-Luna","system":"Hermes","domain":"Formal Mathematics","n":8,"sr":0,"vncr":14.7,"vhs":0,"ics":null},{"backbone":"GPT-6-Luna","system":"Codex","domain":"Stateful Tool","n":47,"sr":0,"vncr":6,"vhs":2,"ics":null},{"backbone":"GPT-6-Luna","system":"Codex","domain":"Repository Code","n":50,"sr":0,"vncr":13.3,"vhs":17.2,"ics":null},{"backbone":"GPT-6-Luna","system":"Codex","domain":"Offline Retrieval","n":50,"sr":0,"vncr":3.5,"vhs":0,"ics":null},{"backbone":"GPT-6-Luna","system":"Codex","domain":"Formal Mathematics","n":6,"sr":0,"vncr":4,"vhs":0,"ics":null}];
+const DS_TABLE = [{"system":"Peer Review","code":{"sr":2,"vncr":60.43,"vhs":71.55,"ics":76.92},"math":{"sr":0,"vncr":10.18,"vhs":9.09,"ics":null},"retrieval":{"sr":2,"vncr":24.58,"vhs":23.32,"ics":null},"stateful":{"sr":0,"vncr":15.74,"vhs":21.82,"ics":null}},{"system":"SMoA","code":{"sr":2,"vncr":74.64,"vhs":84.57,"ics":90.62},"math":{"sr":0,"vncr":9.26,"vhs":3.77,"ics":null},"retrieval":{"sr":2,"vncr":42.56,"vhs":34.92,"ics":null},"stateful":{"sr":0,"vncr":21.4,"vhs":51.43,"ics":null}},{"system":"ADAS","code":{"sr":4,"vncr":65.58,"vhs":79.06,"ics":75},"math":{"sr":0,"vncr":11.17,"vhs":3.03,"ics":null},"retrieval":{"sr":2,"vncr":27.84,"vhs":16.6,"ics":null},"stateful":{"sr":0,"vncr":17.18,"vhs":37.84,"ics":null}},{"system":"OMAC","code":{"sr":4,"vncr":85,"vhs":92.06,"ics":null},"math":{"sr":0,"vncr":12.43,"vhs":7.14,"ics":null},"retrieval":{"sr":10,"vncr":67.05,"vhs":58.73,"ics":77.27},"stateful":{"sr":0,"vncr":69.66,"vhs":85.71,"ics":null}},{"system":"EvoMAS","code":{"sr":6,"vncr":57.8,"vhs":71.59,"ics":null},"math":{"sr":0,"vncr":17.21,"vhs":8.59,"ics":null},"retrieval":{"sr":0,"vncr":11.4,"vhs":0,"ics":null},"stateful":{"sr":0,"vncr":8.88,"vhs":9.09,"ics":null}},{"system":"AutoGen","code":{"sr":0,"vncr":64.27,"vhs":73.32,"ics":84},"math":{"sr":0,"vncr":10.26,"vhs":6.59,"ics":null},"retrieval":{"sr":4,"vncr":41.98,"vhs":25.39,"ics":null},"stateful":{"sr":0,"vncr":16.95,"vhs":32.73,"ics":null}},{"system":"Deep Agents","code":{"sr":0,"vncr":15.3,"vhs":55.4,"ics":null},"math":{"sr":null,"vncr":null,"vhs":null,"ics":null},"retrieval":{"sr":null,"vncr":null,"vhs":null,"ics":null},"stateful":{"sr":null,"vncr":null,"vhs":null,"ics":null}},{"system":"CrewAI","code":{"sr":0,"vncr":40.1,"vhs":44.98,"ics":93.75},"math":{"sr":0,"vncr":9.18,"vhs":4.11,"ics":null},"retrieval":{"sr":2,"vncr":33.74,"vhs":9.72,"ics":null},"stateful":{"sr":0,"vncr":12.22,"vhs":25.35,"ics":null}},{"system":"Hermes","code":{"sr":0,"vncr":32.36,"vhs":29.2,"ics":83.33},"math":{"sr":0,"vncr":5.42,"vhs":0,"ics":null},"retrieval":{"sr":0,"vncr":44.18,"vhs":15.28,"ics":null},"stateful":{"sr":0,"vncr":11.41,"vhs":10.71,"ics":null}}];
+
+const ORG = {
+  "Peer Review": "Prespecified",
+  "SMoA": "Prespecified",
+  "ADAS": "Automatically designed",
+  "OMAC": "Automatically designed",
+  "EvoMAS": "Self-evolving",
+  "AutoGen": "Framework baseline",
+  "Deep Agents": "Framework baseline",
+  "CrewAI": "Framework baseline",
+  "Hermes": "Framework baseline",
+  "Codex": "Framework baseline"
+};
+const ORDER = ["Peer Review","SMoA","ADAS","OMAC","EvoMAS","AutoGen","Deep Agents","CrewAI","Hermes","Codex"];
+const DOMKEY = {"Stateful Tool":"stateful","Repository Code":"code","Offline Retrieval":"retrieval","Formal Mathematics":"math"};
+const COLS = [
+  ["Stateful Tool","stateful"],
+  ["Repository Code","code"],
+  ["Offline Retrieval","retrieval"],
+  ["Formal Mathematics","math"]
+];
+
+let BB = "DeepSeek-V4-Flash";
+let METRIC = "sr";
+
+function fmt(v) {
+  if (v === null || v === undefined) return '<span class="text-dim">&mdash;</span>';
+  if (typeof v === "number") return Number.isInteger(v) ? String(v) : v.toFixed(2).replace(/\.00$/,"");
+  return String(v);
+}
+function metricVal(cell) {
+  if (!cell) return null;
+  return cell[METRIC];
+}
+function bestOf(vals) {
+  const nums = vals.filter(v => typeof v === "number");
+  return nums.length ? Math.max(...nums) : null;
+}
+function render() {
+  const body = document.getElementById("lb-body");
+  const note = document.getElementById("lb-note");
+  const rows = [];
+
+  // collect per-system domain values under current backbone+metric
+  const perSystem = {};
+  for (const sys of ORDER) {
+    perSystem[sys] = {};
+    for (const [label, key] of COLS) {
+      if (BB === "DeepSeek-V4-Flash") {
+        const row = DS_TABLE.find(r => r.system === sys);
+        perSystem[sys][key] = row ? metricVal(row[key]) : null;
+      } else {
+        const r = PAPER_DATA.find(x => x.backbone === BB && x.system === sys && x.domain === label);
+        perSystem[sys][key] = r ? (METRIC === "sr" ? r.sr : METRIC === "vncr" ? r.vncr : METRIC === "vhs" ? r.vhs : r.ics) : null;
+      }
+    }
+    const vals = COLS.map(([l,k]) => perSystem[sys][k]);
+    const nums = vals.filter(v => typeof v === "number");
+    perSystem[sys]._macro = nums.length ? nums.reduce((a,b)=>a+b,0)/nums.length : null;
+  }
+  const bestMacro = bestOf(ORDER.map(s => perSystem[s]._macro));
+  const bestDom = {};
+  for (const [l,k] of COLS) bestDom[k] = bestOf(ORDER.map(s => perSystem[s][k]));
+
+  for (const sys of ORDER) {
+    const cells = COLS.map(([label,key]) => {
+      const v = perSystem[sys][key];
+      const cls = (typeof v === "number" && v === bestDom[key] && bestDom[key] !== null) ? "best" : "";
+      return '<td class="text-right px-3 py-3.5 ' + cls + '">' + fmt(v) + '</td>';
+    }).join("");
+    const m = perSystem[sys]._macro;
+    const mcls = (typeof m === "number" && m === bestMacro && bestMacro !== null) ? "best" : "";
+    rows.push(
+      '<tr class="border-b border-warmborder hover:bg-hoverbg transition-colors">' +
+        '<td class="px-5 py-3.5"><div class="font-medium">' + sys + '</div></td>' +
+        '<td class="px-3 py-3.5 text-xs text-dim">' + (ORG[sys] || "") + '</td>' +
+        cells +
+        '<td class="text-right px-5 py-3.5 ' + mcls + '">' + fmt(m === null ? null : Math.round(m*100)/100) + '</td>' +
+      '</tr>'
+    );
+  }
+  body.innerHTML = rows.join("");
+  note.textContent = "Metric view: " + (METRIC === "ics" ? "ICS" : METRIC.toUpperCase()) +
+    ". " + (METRIC === "ics" ? "ICS is provisional (polluted-pair operator); blank when denominator < 10." : "Blank cells mean not registered or denominator < 10.");
+}
+
+// backbone tabs
+document.querySelectorAll("#backbone-tabs .tab-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("#backbone-tabs .tab-btn").forEach(b => b.classList.remove("on"));
+    btn.classList.add("on");
+    BB = btn.dataset.bb;
+    render();
+  });
+});
+// metric tabs
+document.querySelectorAll("[data-metric]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("[data-metric]").forEach(b => b.classList.remove("on"));
+    btn.classList.add("on");
+    METRIC = btn.dataset.metric;
+    render();
+  });
+});
+
+// ---------- chronology ----------
+const CHRONO = [[2021,"static","KILT","static evidence","https://aclanthology.org/2021.naacl-main.200/","Knowledge-intensive language tasks over a fixed corpus"],[2021,"static","BEIR","static evidence","https://arxiv.org/abs/2104.08663","Heterogeneous zero-shot IR evaluation"],[2023,"static","LongBench","long context","https://aclanthology.org/2024.acl-long.172/","Bilingual multitask long-context understanding"],[2023,"persist","MemoryBank","persistent memory","https://ojs.aaai.org/index.php/AAAI/article/view/29946","Long-term memory for LLMs"],[2023,"mas","MindAgent","multi-agent","https://aclanthology.org/2024.findings-naacl.200/","Emergent gaming interaction"],[2023,"mas","TaskBench","task dependency","https://proceedings.neurips.cc/paper_files/paper/2024/hash/085185ea97db31ae6dcac7497616fd3e-Abstract-Datasets_and_Benchmarks_Track.html","Task automation with dependency graphs"],[2023,"exec","SWE-bench","execution","https://openreview.net/forum?id=VTF8yNQM66","Real GitHub issues resolved in repo environments"],[2023,"mas","AgentBench","multi-agent","https://openreview.net/forum?id=zAdUB0aCTQ","Evaluating LLMs as agents"],[2024,"static","RULER","long context","https://openreview.net/forum?id=kIoBbc76Sy","Real context-size measurement"],[2024,"persist","LoCoMo","persistent memory","https://aclanthology.org/2024.acl-long.747/","Very long-term conversational memory"],[2024,"exec","AppWorld","execution","https://aclanthology.org/2024.acl-long.850/","Controllable app world for interactive coding agents"],[2024,"exec","miniCTX","execution","https://arxiv.org/abs/2408.03350","Neural theorem proving with long contexts"],[2025,"persist","LongMemEval","persistent memory","https://openreview.net/forum?id=pZiyCaVuti","Long-term interactive memory for chat assistants"],[2025,"persist","RealTalk","persistent memory","https://arxiv.org/abs/2502.13270","21-day real-world long-term conversation"],[2025,"persist","StoryBench","persistent memory","https://arxiv.org/abs/2506.13356","Dynamic long-term memory with multi-turn stories"],[2025,"mas","MultiAgentBench","interaction topology","https://aclanthology.org/2025.acl-long.421/","Star / chain / tree / graph interaction protocols"],[2025,"mas","LLM-Coordination","multi-agent","https://aclanthology.org/2025.findings-naacl.448/","Multi-agent coordination abilities"],[2025,"exec","τ-bench","execution","https://openreview.net/forum?id=roNSXZpUDN","Tool-agent-user interaction in real domains"],[2025,"exec","Toolathlon","execution","https://openreview.net/forum?id=z53s5p0qhf","Long-horizon realistic tool-use workflows"],[2025,"exec","BrowseComp-Plus","execution","https://arxiv.org/abs/2508.06600","Fair, transparent deep-research evaluation"],[2025,"exec","PeopleJoin","distributed info","https://aclanthology.org/2025.findings-acl.916/","Multi-user information gathering"],[2026,"persist","MemoryAgentBench","selective forgetting","https://openreview.net/forum?id=ZgQ0t3zYTQ","Incremental ingestion, test-time learning, forgetting"],[2026,"gov","GroupMemBench","governed memory","https://arxiv.org/abs/2605.14498","Speaker-grounded multi-party memory"],[2026,"gov","GateMem","governed memory","https://arxiv.org/abs/2606.18829","Utility, access control, active forgetting"],[2026,"gov","PAC-Bench","governed memory","https://aclanthology.org/2026.findings-acl.1552/","Private memories under privacy constraints"],[2026,"mas","MAS-Orchestra","task dependency","https://openreview.net/forum?id=3fGXBm4c3S","Chains, DAGs, depth, breadth, parallelism"],[2026,"exec","Toolathlon-GYM","execution","https://github.com/eigent-ai/toolathlon_gym","Reproducible long-horizon tool environments"],[2026,"exec","SILO-BENCH","distributed info","https://aclanthology.org/2026.acl-long.1354/","Distributed coordination in multi-agent systems"]];
+const TRACKS = {"static":{"label":"Static evidence & long context","color":"#FB8147"},"persist":{"label":"Persistent & interactive memory","color":"#D97706"},"gov":{"label":"Governed & multi-party memory","color":"#E76F51"},"mas":{"label":"Multi-agent & workflow structure","color":"#2A9D8F"},"exec":{"label":"Executable outcomes","color":"#457B9D"}};
+const YEARS = [2021, 2023, 2024, 2025, 2026];
+const activeTracks = new Set(Object.keys(TRACKS));
+
+function buildFilter() {
+  const wrap = document.getElementById("chrono-filter");
+  for (const [key, meta] of Object.entries(TRACKS)) {
+    const s = document.createElement("span");
+    s.className = "fbtn chip";
+    s.style.borderColor = meta.color + "55";
+    s.style.color = meta.color;
+    s.style.background = meta.color + "18";
+    s.textContent = meta.label;
+    s.dataset.track = key;
+    s.addEventListener("click", () => {
+      if (activeTracks.has(key) && activeTracks.size > 1) {
+        activeTracks.delete(key); s.classList.add("off");
+      } else {
+        activeTracks.add(key); s.classList.remove("off");
+      }
+      buildChrono();
+    });
+    wrap.appendChild(s);
+  }
+}
+
+function buildChrono() {
+  const svg = document.getElementById("chrono-svg");
+  const cardsBox = document.getElementById("chrono-cards");
+  svg.innerHTML = "";
+  cardsBox.innerHTML = "";
+
+  // fixed canvas 1400x772 — wider than the text column, no h-scroll on desktop
+  const W = 1400, H = 772;
+  const labelW = 132;
+  const yearW = 208;
+  const yearX0 = labelW + yearW / 2;
+  const railX0 = labelW - 10;
+  const railX1 = labelW + yearW * YEARS.length;
+  const convX = railX1 + 52;
+
+  const yearX = {};
+  YEARS.forEach((y, i) => { yearX[y] = yearX0 + i * yearW; });
+
+  const laneKeys = Object.keys(TRACKS).filter(k => activeTracks.has(k));
+  const nL = laneKeys.length;
+
+  // lane geometry: rail near top of lane, cards hang below (2x2 packing)
+  const CW = 98, CH = 46, CG = 8;
+  const blockH = CH * 2 + CG;          // 86px for a 2-row cell
+  const laneH = 16 + blockH + 10;      // 112px
+  const laneGap = 12;
+  const laneTop = 44;
+  const laneY0 = {}, laneYc = {};
+  laneKeys.forEach((k, i) => {
+    laneY0[k] = laneTop + i * (laneH + laneGap);
+    laneYc[k] = laneY0[k] + 10;        // rail line
+  });
+
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (t, attrs) => {
+    const e = document.createElementNS(NS, t);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    return e;
+  };
+
+  // year headers + faint column separators
+  YEARS.forEach(y => {
+    svg.appendChild(el("line", {x1: yearX[y], x2: yearX[y], y1: 28, y2: laneTop + nL * (laneH + laneGap) + 30,
+      stroke: "#E5E0D8", "stroke-dasharray": "3 6", "stroke-width": 1}));
+    const t = el("text", {x: yearX[y], y: 20, "text-anchor": "middle",
+      fill: "#646A73", "font-family": "JetBrains Mono, monospace", "font-size": 12, "letter-spacing": 2});
+    t.textContent = y;
+    svg.appendChild(t);
+  });
+
+  // convergence target (vertical middle of the active lanes)
+  const convYmid = (laneYc[laneKeys[0]] + laneYc[laneKeys[nL - 1]]) / 2;
+
+  // lane rails + left labels + converging tails
+  laneKeys.forEach(track => {
+    const meta = TRACKS[track];
+    const yc = laneYc[track];
+
+    svg.appendChild(el("line", {x1: railX0, x2: railX1, y1: yc, y2: yc,
+      stroke: meta.color, "stroke-width": 2, "stroke-opacity": 0.5, "stroke-linecap": "round"}));
+
+    const d = "M" + railX1 + " " + yc +
+      " C" + (railX1 + 30) + " " + yc + ", " + (convX - 30) + " " + convYmid + ", " + convX + " " + convYmid;
+    svg.appendChild(el("path", {d: d, stroke: meta.color, "stroke-width": 2.5,
+      "stroke-opacity": 0.8, fill: "none", "stroke-linecap": "round"}));
+
+    svg.appendChild(el("circle", {cx: railX0, cy: yc, r: 5, fill: meta.color}));
+    const t = el("text", {x: railX0 - 14, y: yc + 4, "text-anchor": "end",
+      fill: meta.color, "font-family": "Inter, sans-serif", "font-size": 12.5, "font-weight": 600});
+    t.textContent = meta.label;
+    svg.appendChild(t);
+  });
+
+  // ---- cards: strict 2x2 grid per (track, year), hang below the rail, never overlap ----
+  // column offsets relative to year center; row offsets relative to block top
+  const colX = [-(CG / 2 + CW), CG / 2];
+  const blockTop = (track) => laneY0[track] + 16;
+  let anim = 0;
+
+  laneKeys.forEach(track => {
+    const meta = TRACKS[track];
+    YEARS.forEach(y => {
+      const items = CHRONO.filter(c => c[0] === y && c[1] === track);
+      items.forEach((c, idx) => {
+        const [, , name, tag, url, note] = c;
+        const col = idx % 2, row = Math.floor(idx / 2);
+        const left = yearX[y] + colX[col];
+        const top = blockTop(track) + row * (CH + CG);
+        const card = document.createElement("a");
+        card.href = url;
+        card.target = "_blank";
+        card.rel = "noopener";
+        card.className = "chrono-card absolute no-underline";
+        card.style.cssText =
+          "left:" + left + "px;top:" + top + "px;width:" + CW + "px;height:" + CH + "px;" +
+          "border-left:3px solid " + meta.color + ";" +
+          "display:flex;align-items:center;padding:0 8px;" +
+          "opacity:0;transform:translateY(10px);";
+        card.innerHTML =
+          '<div class="font-display font-semibold text-ink leading-snug" style="font-size:12px;overflow:hidden;">' + name + '</div>';
+        cardsBox.appendChild(card);
+        setTimeout(() => {
+          card.style.transition = "opacity .45s ease, transform .45s ease";
+          card.style.opacity = "1";
+          card.style.transform = "none";
+        }, 40 * anim++);
+      });
+    });
+  });
+
+  // ---- ours node at the convergence point (visually balanced with the work cards) ----
+  const ours = document.createElement("div");
+  ours.className = "absolute";
+  ours.style.left = (convX - 2) + "px";
+  ours.style.top = (convYmid - 48) + "px";
+  ours.style.width = "152px";
+  ours.innerHTML =
+    '<div class="rounded-banner p-3.5" style="background:linear-gradient(135deg,#FFF6ED,#FAF7F3);border:2px solid #FB8147;box-shadow:0 12px 32px rgba(251,129,71,0.20);">' +
+      '<div class="flex items-center gap-1.5 mb-1">' +
+        '<span class="w-2 h-2 rounded-full" style="background:#FB8147"></span>' +
+        '<span class="chip" style="font-size:8.5px;padding:1px 5px;">ours</span>' +
+      '</div>' +
+      '<div class="font-display text-[13px] font-bold text-ink leading-snug">CoMemBench</div>' +
+      '<div class="text-[9.5px] text-dim leading-snug mt-1">Task-conditioned memory boundaries</div>' +
+    '</div>';
+  cardsBox.appendChild(ours);
+}
+
+
+// ---------- workflow sketches (layered DAG) ----------
+const SKETCHES = {"sk1":{"nodes":[{"id":"n01","label":"program brief","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n03","label":"recipes DB","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n06","label":"nutrition research","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n02","label":"requirements.md","layer":1,"accent":"src","sub":"tabular_artifact"},{"id":"n04","label":"categorize_recipes.py","layer":2,"accent":"code","sub":"code_artifact"},{"id":"n05","label":"run categorize","layer":3,"accent":"exec","sub":"execution_receipt"},{"id":"n07","label":"analyze_research.py","layer":4,"accent":"code","sub":"code_artifact"},{"id":"n08","label":"run analysis","layer":5,"accent":"exec","sub":"execution_receipt"},{"id":"n09","label":"build_menus.py","layer":5,"accent":"code","sub":"code_artifact"},{"id":"n10","label":"run build_menus","layer":6,"accent":"exec","sub":"execution_receipt"},{"id":"n11","label":"preferences form","layer":7,"accent":"art","sub":"form_receipt"},{"id":"n12","label":"analysis.xlsx","layer":8,"accent":"art","sub":"tabular_artifact"},{"id":"n13","label":"update workbook","layer":9,"accent":"art","sub":"tabular_artifact"},{"id":"n14","label":"update workbook","layer":10,"accent":"art","sub":"tabular_artifact"},{"id":"n15","label":"refine menus","layer":11,"accent":"art","sub":"tabular_artifact"},{"id":"n16","label":"finalize workbook","layer":12,"accent":"art","sub":"tabular_artifact"},{"id":"n17","label":"proposal.docx","layer":13,"accent":"art","sub":"document_artifact"},{"id":"n18","label":"validate_menus.py","layer":14,"accent":"code","sub":"code_artifact"},{"id":"n19","label":"workflow verifier","layer":15,"accent":"verify","sub":"verification_receipt"}],"edges":[{"f":"n01","t":"n02","kind":"flow"},{"f":"n01","t":"n04","kind":"flow"},{"f":"n03","t":"n04","kind":"flow"},{"f":"n02","t":"n04","kind":"flow"},{"f":"n04","t":"n05","kind":"flow"},{"f":"n05","t":"n07","kind":"flow"},{"f":"n06","t":"n07","kind":"flow"},{"f":"n07","t":"n08","kind":"flow"},{"f":"n07","t":"n09","kind":"flow"},{"f":"n08","t":"n10","kind":"flow"},{"f":"n09","t":"n10","kind":"flow"},{"f":"n10","t":"n11","kind":"flow"},{"f":"n10","t":"n12","kind":"flow"},{"f":"n11","t":"n13","kind":"flow"},{"f":"n12","t":"n13","kind":"flow"},{"f":"n13","t":"n14","kind":"flow"},{"f":"n14","t":"n15","kind":"flow"},{"f":"n15","t":"n16","kind":"flow"},{"f":"n16","t":"n17","kind":"flow"},{"f":"n17","t":"n18","kind":"flow"},{"f":"n18","t":"n19","kind":"flow"},{"f":"n19","t":"n12","kind":"rev"},{"f":"n19","t":"n14","kind":"rev"},{"f":"n19","t":"n15","kind":"rev"},{"f":"n19","t":"n16","kind":"rev"}]},"sk2":{"nodes":[{"id":"n01","label":"issue analyst","layer":0,"accent":"src","sub":"issue_requirements"},{"id":"n02","label":"reproduce 1","layer":1,"accent":"exec","sub":"reproduction_receipt"},{"id":"n03","label":"reproduce 2","layer":1,"accent":"exec","sub":"reproduction_receipt"},{"id":"n04","label":"reproduce 3","layer":1,"accent":"exec","sub":"reproduction_receipt"},{"id":"n05","label":"localize 1","layer":1,"accent":"src","sub":"localization_receipt"},{"id":"n06","label":"localize 2","layer":1,"accent":"src","sub":"localization_receipt"},{"id":"n07","label":"localize 3","layer":1,"accent":"src","sub":"localization_receipt"},{"id":"n08","label":"baseline","layer":1,"accent":"exec","sub":"baseline_receipt"},{"id":"n09","label":"patch plan","layer":2,"accent":"code","sub":"patch_plan"},{"id":"n10","label":"implement patch","layer":3,"accent":"code","sub":"patch_candidate"},{"id":"n11","label":"test 1","layer":4,"accent":"verify","sub":"test_receipt"},{"id":"n12","label":"test 2","layer":4,"accent":"verify","sub":"test_receipt"},{"id":"n13","label":"test 3","layer":4,"accent":"verify","sub":"test_receipt"},{"id":"n14","label":"regression rerun","layer":4,"accent":"verify","sub":"test_receipt"},{"id":"n15","label":"release bundle","layer":5,"accent":"art","sub":"release_bundle"},{"id":"n16","label":"workflow verifier","layer":6,"accent":"verify","sub":"verification_receipt"}],"edges":[{"f":"n01","t":"n02","kind":"flow"},{"f":"n01","t":"n03","kind":"flow"},{"f":"n01","t":"n04","kind":"flow"},{"f":"n01","t":"n05","kind":"flow"},{"f":"n01","t":"n06","kind":"flow"},{"f":"n01","t":"n07","kind":"flow"},{"f":"n01","t":"n08","kind":"flow"},{"f":"n02","t":"n09","kind":"flow"},{"f":"n03","t":"n09","kind":"flow"},{"f":"n04","t":"n09","kind":"flow"},{"f":"n05","t":"n09","kind":"flow"},{"f":"n06","t":"n09","kind":"flow"},{"f":"n07","t":"n09","kind":"flow"},{"f":"n08","t":"n09","kind":"flow"},{"f":"n09","t":"n10","kind":"flow"},{"f":"n10","t":"n11","kind":"flow"},{"f":"n10","t":"n12","kind":"flow"},{"f":"n10","t":"n13","kind":"flow"},{"f":"n10","t":"n14","kind":"flow"},{"f":"n11","t":"n15","kind":"flow"},{"f":"n12","t":"n15","kind":"flow"},{"f":"n13","t":"n15","kind":"flow"},{"f":"n14","t":"n15","kind":"flow"},{"f":"n15","t":"n16","kind":"flow"},{"f":"n16","t":"n10","kind":"rev"}]},"sk3":{"nodes":[{"id":"n01","label":"P01","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n02","label":"P02","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n03","label":"P03","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n04","label":"P04","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n05","label":"P05","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n06","label":"P06","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n07","label":"P07","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n08","label":"P08","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n09","label":"P09","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n10","label":"P10","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n11","label":"P11","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n12","label":"P12","layer":0,"accent":"src","sub":"source_evidence"},{"id":"n13","label":"entity resolution","layer":1,"accent":"art","sub":"resolved_candidate"},{"id":"n14","label":"answer agent","layer":2,"accent":"art","sub":"answer_candidate"},{"id":"n15","label":"provenance auditor","layer":2,"accent":"verify","sub":"provenance_receipt"},{"id":"n16","label":"result synthesizer","layer":3,"accent":"art","sub":"retrieval_result_bundle"},{"id":"n17","label":"workflow verifier","layer":4,"accent":"verify","sub":"verification_receipt"}],"edges":[{"f":"n01","t":"n13","kind":"flow"},{"f":"n02","t":"n13","kind":"flow"},{"f":"n03","t":"n13","kind":"flow"},{"f":"n04","t":"n13","kind":"flow"},{"f":"n05","t":"n13","kind":"flow"},{"f":"n06","t":"n13","kind":"flow"},{"f":"n07","t":"n13","kind":"flow"},{"f":"n08","t":"n13","kind":"flow"},{"f":"n09","t":"n13","kind":"flow"},{"f":"n10","t":"n13","kind":"flow"},{"f":"n11","t":"n13","kind":"flow"},{"f":"n12","t":"n13","kind":"flow"},{"f":"n13","t":"n14","kind":"flow"},{"f":"n13","t":"n15","kind":"flow"},{"f":"n14","t":"n16","kind":"flow"},{"f":"n15","t":"n16","kind":"flow"},{"f":"n16","t":"n17","kind":"flow"},{"f":"n17","t":"n13","kind":"rev"},{"f":"n17","t":"n14","kind":"rev"},{"f":"n17","t":"n15","kind":"rev"},{"f":"n16","t":"n13","kind":"rev"}]},"sk4":{"nodes":[{"id":"n01","label":"f0","layer":0,"accent":"proof","sub":"proof_receipt"},{"id":"n02","label":"f1","layer":0,"accent":"proof","sub":"proof_receipt"},{"id":"n03","label":"f2","layer":0,"accent":"proof","sub":"proof_receipt"},{"id":"n04","label":"f3","layer":0,"accent":"proof","sub":"proof_receipt"},{"id":"n05","label":"f4","layer":0,"accent":"proof","sub":"proof_receipt"},{"id":"n06","label":"f5","layer":0,"accent":"proof","sub":"proof_receipt"},{"id":"n07","label":"f6","layer":0,"accent":"proof","sub":"proof_receipt"},{"id":"n08","label":"f7","layer":0,"accent":"proof","sub":"proof_receipt"},{"id":"n09","label":"f8","layer":0,"accent":"proof","sub":"proof_receipt"},{"id":"n10","label":"f9","layer":0,"accent":"proof","sub":"proof_receipt"},{"id":"n11","label":"sum_part","layer":1,"accent":"proof","sub":"proof_receipt"},{"id":"n12","label":"grav","layer":2,"accent":"proof","sub":"proof_receipt"},{"id":"n13","label":"f10","layer":3,"accent":"proof","sub":"proof_receipt"},{"id":"n14","label":"only_if_zero","layer":3,"accent":"proof","sub":"proof_receipt"},{"id":"n15","label":"f_zero","layer":4,"accent":"proof","sub":"proof_receipt"},{"id":"n16","label":"Lean release","layer":5,"accent":"verify","sub":"verification_receipt"}],"edges":[{"f":"n01","t":"n11","kind":"flow"},{"f":"n02","t":"n11","kind":"flow"},{"f":"n03","t":"n11","kind":"flow"},{"f":"n04","t":"n11","kind":"flow"},{"f":"n05","t":"n11","kind":"flow"},{"f":"n06","t":"n11","kind":"flow"},{"f":"n07","t":"n11","kind":"flow"},{"f":"n08","t":"n11","kind":"flow"},{"f":"n09","t":"n11","kind":"flow"},{"f":"n10","t":"n11","kind":"flow"},{"f":"n11","t":"n12","kind":"flow"},{"f":"n12","t":"n13","kind":"flow"},{"f":"n12","t":"n14","kind":"flow"},{"f":"n13","t":"n15","kind":"flow"},{"f":"n14","t":"n15","kind":"flow"},{"f":"n15","t":"n16","kind":"flow"},{"f":"n16","t":"n11","kind":"rev"},{"f":"n16","t":"n13","kind":"rev"},{"f":"n15","t":"n12","kind":"rev"}]}};
+
+function buildSketch(box) {
+  const key = box.getAttribute("data-sketch");
+  const spec = SKETCHES[key];
+  if (!spec) return;
+  const nodes = spec.nodes, edges = spec.edges;
+
+  const layerMap = {};
+  nodes.forEach(n => { (layerMap[n.layer] = layerMap[n.layer] || []).push(n); });
+  const layerKeys = Object.keys(layerMap).map(Number).sort((a, b) => a - b);
+  const nL = layerKeys.length;
+
+  const ACCENT = {
+    src: "#FB8147", code: "#D97706", exec: "#E76F51",
+    art: "#B45309", verify: "#2A9D8F", proof: "#457B9D"
+  };
+  const NH = 30, HGAP = 11, GX = 40, PAD = 40;
+
+  // width must cover the sub label too, or text spills into the neighbour
+  const labelW = n => {
+    const w1 = n.label.length * 6.5 + 18;
+    const w2 = n.sub ? n.sub.length * 4.3 + 16 : 0;
+    return Math.max(54, Math.min(158, Math.max(w1, w2)));
+  };
+
+  // layers are columns; deep graphs wrap like lines of text — every band
+  // reads left to right, and wrap edges travel through the empty channel
+  // between bands, so no arrow ever points backwards
+  const colW = layerKeys.map(k => Math.max.apply(null, layerMap[k].map(labelW)));
+  const colH = layerKeys.map(k => layerMap[k].length * NH + (layerMap[k].length - 1) * HGAP);
+  const maxColW = Math.max.apply(null, colW);
+  const colStep = maxColW + GX;
+  let colsPerRow = Math.max(2, Math.min(nL, Math.floor(832 / colStep)));
+  if (colsPerRow >= nL) colsPerRow = nL;
+  const nRows = Math.ceil(nL / colsPerRow);
+  const rowHeights = [];
+  for (let r = 0; r < nRows; r++) {
+    let h = 0;
+    for (let c = 0; c < colsPerRow; c++) {
+      const li = r * colsPerRow + c;
+      if (li < nL) h = Math.max(h, colH[li]);
+    }
+    rowHeights.push(h);
+  }
+  const rowGap = 36;
+  let W = PAD * 2 + colsPerRow * colStep - GX;
+  let y = PAD;
+  const rowY = [];
+  for (let r = 0; r < nRows; r++) { rowY.push(y); y += rowHeights[r] + rowGap; }
+  let H = y - rowGap + PAD;  // provisional; routing may claim channels below
+
+  const pos = {};
+  for (let li = 0; li < nL; li++) {
+    const r = Math.floor(li / colsPerRow);
+    const c = li % colsPerRow;
+    const arr = layerMap[layerKeys[li]];
+    const x = PAD + c * colStep;
+    let ny = rowY[r] + (rowHeights[r] - colH[li]) / 2;
+    arr.forEach((n, ni) => {
+      pos[n.id] = {
+        x: x, y: ny, w: colW[li], h: NH, band: r, col: c,
+        colTop: ni === 0, colBot: ni === arr.length - 1,
+        cx: x + colW[li] / 2, cy: ny + NH / 2
+      };
+      ny += NH + HGAP;
+    });
+  }
+
+  // cluster bbox — revision channels run below and to the left of this block
+  let x1 = 1e9, y1 = 1e9, x2 = -1e9, y2 = -1e9;
+  nodes.forEach(n => {
+    const p = pos[n.id];
+    x1 = Math.min(x1, p.x); y1 = Math.min(y1, p.y);
+    x2 = Math.max(x2, p.x + p.w); y2 = Math.max(y2, p.y + p.h);
+  });
+
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (t, attrs) => {
+    const e = document.createElementNS(NS, t);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    return e;
+  };
+
+  const mid = "sk-" + key + "-m";
+  const svg = el("svg", {
+    viewBox: "0 0 " + W + " " + H,
+    preserveAspectRatio: "xMidYMid meet",
+    style: "width:100%;height:auto;max-height:520px;display:block;"
+  });
+  const defs = el("defs", {});
+  [["f", "#E8590C"], ["r", "#C2410C"]].forEach(function (mc) {
+    // userSpaceOnUse keeps the head at a fixed size regardless of stroke-width
+    const marker = el("marker", {
+      id: mid + mc[0], markerWidth: 9, markerHeight: 6, refX: 8.4, refY: 3,
+      orient: "auto", markerUnits: "userSpaceOnUse", viewBox: "0 0 9 6"
+    });
+    marker.appendChild(el("path", { d: "M0,0 L8.4,3 L0,6 Z", fill: mc[1] }));
+    defs.appendChild(marker);
+  });
+  svg.appendChild(defs);
+  svg.appendChild(el("rect", {
+    x: 0, y: 0, width: W, height: H, rx: 14,
+    fill: "#FAF7F3", stroke: "#E5E0D8", "stroke-width": 1
+  }));
+
+  // ---- edges UNDER nodes ----
+  // Forward edges travel through the empty channels between bands; revision
+  // edges drop below the whole cluster and return along the left margin.
+  // Parallel edges get separate lanes in a channel so lines never overlap;
+  // opaque node boxes sit on top as a hard guarantee that no line can ever
+  // cut a label.
+  const GAP = 3, STUB = 9;
+  const lanes = {};
+  const laneFor = k => { const v = lanes[k] || 0; lanes[k] = v + 1; return v; };
+  const aboveY = (r, lane) => Math.max(6, rowY[r] - 12 - lane * 6);
+  const belowY = (r, lane) => rowY[r] + rowHeights[r] + 12 + lane * 6;
+
+  // attach-point fanning: parallel edges spread along the node's side
+  const fanN = {}, fanI = {};
+  edges.forEach(e => {
+    if (e.kind === "rev") {
+      fanN[e.f + "L"] = (fanN[e.f + "L"] || 0) + 1;
+      fanN[e.t + "L"] = (fanN[e.t + "L"] || 0) + 1;
+    } else {
+      fanN[e.f + "R"] = (fanN[e.f + "R"] || 0) + 1;
+      fanN[e.t + "L"] = (fanN[e.t + "L"] || 0) + 1;
+    }
+  });
+  const spread = (id, dir) => {
+    const n = fanN[id + dir] || 1;
+    if (n < 2) return 0;
+    const i = fanI[id + dir] || 0;
+    fanI[id + dir] = i + 1;
+    return (i - (n - 1) / 2) * Math.min(4, 18 / (n - 1));
+  };
+
+  // orthogonal path with rounded corners through [[x, y], ...]
+  const RC = 9;
+  const ortho = pts => {
+    let d = "M" + pts[0][0].toFixed(1) + " " + pts[0][1].toFixed(1);
+    for (let i = 1; i < pts.length - 1; i++) {
+      const px = pts[i - 1][0], py = pts[i - 1][1];
+      const cx = pts[i][0], cy = pts[i][1];
+      const nx = pts[i + 1][0], ny = pts[i + 1][1];
+      const v1x = cx - px, v1y = cy - py, v2x = nx - cx, v2y = ny - cy;
+      const l1 = Math.hypot(v1x, v1y) || 1, l2 = Math.hypot(v2x, v2y) || 1;
+      const r = Math.min(RC, l1 / 2, l2 / 2);
+      d += " L" + (cx - (v1x / l1) * r).toFixed(1) + " " + (cy - (v1y / l1) * r).toFixed(1)
+        + " Q" + cx + " " + cy + " " + (cx + (v2x / l2) * r).toFixed(1) + " " + (cy + (v2y / l2) * r).toFixed(1);
+    }
+    d += " L" + pts[pts.length - 1][0].toFixed(1) + " " + pts[pts.length - 1][1].toFixed(1);
+    return d;
+  };
+
+  const paths = [];
+  let maxBottom = y2;
+  edges.forEach(e => {
+    const a = pos[e.f], b = pos[e.t];
+    if (!a || !b) return;
+    const rev = e.kind === "rev";
+    const fwd = !rev && (b.band > a.band || (b.band === a.band && b.col > a.col));
+    let d;
+
+    if (fwd && b.band === a.band && b.col === a.col + 1) {
+      // adjacent layers inside one band: side-to-side S-curve
+      const sy = a.cy + spread(e.f, "R"), ty = b.cy + spread(e.t, "L");
+      const sx = a.x + a.w + GAP, tx = b.x - GAP;
+      const mx = (sx + tx) / 2;
+      d = "M" + sx + " " + sy + " C" + mx + " " + sy + ", " + mx + " " + ty + ", " + (tx - STUB) + " " + ty + " L" + tx + " " + ty;
+    } else if (fwd && b.band === a.band) {
+      // same band, skips columns: travel through the channel above the band
+      const cY = aboveY(a.band, laneFor("A" + a.band));
+      const sy = a.cy + spread(e.f, "R"), ty = b.cy + spread(e.t, "L");
+      const gxA = a.x + a.w + GAP + STUB;
+      let pts = [[a.x + a.w + GAP, sy], [gxA, sy], [gxA, cY]];
+      if (b.colTop) pts.push([b.cx, cY], [b.cx, b.y - GAP]);
+      else { const gxB = b.x - GAP - STUB; pts.push([gxB, cY], [gxB, ty], [b.x - GAP, ty]); }
+      d = ortho(pts);
+    } else if (fwd) {
+      // crosses into the next band: travel through the channel between bands
+      const cY = belowY(a.band, laneFor("B" + a.band));
+      maxBottom = Math.max(maxBottom, cY);
+      const ty = b.cy + spread(e.t, "L");
+      let pts;
+      if (a.colBot) pts = [[a.cx, a.y + a.h + GAP], [a.cx, cY]];
+      else {
+        const sy = a.cy + spread(e.f, "R"), gxA = a.x + a.w + GAP + STUB;
+        pts = [[a.x + a.w + GAP, sy], [gxA, sy], [gxA, cY]];
+      }
+      if (b.colTop) pts.push([b.cx, cY], [b.cx, b.y - GAP]);
+      else { const gxB = b.x - GAP - STUB; pts.push([gxB, cY], [gxB, ty], [b.x - GAP, ty]); }
+      d = ortho(pts);
+    } else if (rev && a.band === b.band && a.colBot && b.colBot) {
+      // back-edge inside one band: shallow U below the band
+      const cY = belowY(a.band, laneFor("B" + a.band));
+      maxBottom = Math.max(maxBottom, cY);
+      d = ortho([[a.cx, a.y + a.h + GAP], [a.cx, cY], [b.cx, cY], [b.cx, b.y + b.h + GAP]]);
+    } else {
+      // revision to an earlier band: down the source's gutter, below the
+      // whole cluster, back up the left margin, then in through the channel
+      // below the target's band
+      const xl = laneFor("X"), xY = y2 + 16 + xl * 9;
+      const bl = laneFor("B" + b.band), tY = belowY(b.band, bl);
+      maxBottom = Math.max(maxBottom, xY, tY);
+      const mX = x1 - 14 - xl * 7;
+      const ay = a.cy + spread(e.f, "L"), by = b.cy + spread(e.t, "L");
+      const gxA = a.x - GAP - STUB - xl * 3;
+      const gxB = b.x - GAP - STUB - bl * 3;
+      d = ortho([[a.x - GAP, ay], [gxA, ay], [gxA, xY], [mX, xY], [mX, tY], [gxB, tY], [gxB, by], [b.x - GAP, by]]);
+    }
+    paths.push({ d: d, rev: rev });
+  });
+
+  // the canvas grows to fit the channels the routing actually used
+  H = Math.max(H, maxBottom + 18);
+  svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+  svg.querySelector("rect").setAttribute("height", H);
+
+  paths.forEach(p => {
+    const w = p.rev ? 1.9 : 2.3;
+    const col = p.rev ? "#C2410C" : "#E8590C";
+    // casing stops at the stub so the white halo never peeks past the head
+    const dCasing = p.d.replace(/ L [^ ]+ [^ ]+$/, "");
+    svg.appendChild(el("path", {
+      d: dCasing, fill: "none", stroke: "#FFFFFF",
+      "stroke-width": w + 2.2, "stroke-linecap": "butt", "stroke-linejoin": "round",
+      "stroke-opacity": 0.95
+    }));
+    svg.appendChild(el("path", {
+      d: p.d, fill: "none", stroke: col,
+      "stroke-width": w, "stroke-linecap": "butt", "stroke-linejoin": "round",
+      "stroke-opacity": p.rev ? 0.9 : 0.96,
+      "stroke-dasharray": p.rev ? "5 3.5" : "",
+      "marker-end": "url(#" + mid + (p.rev ? "r" : "f") + ")"
+    }));
+  });
+
+  // ---- nodes last: opaque boxes guarantee labels are never cut ----
+  nodes.forEach(n => {
+    const p = pos[n.id];
+    const color = ACCENT[n.accent] || "#FB8147";
+    const g = el("g", {});
+    g.appendChild(el("rect", {
+      x: p.x, y: p.y, width: p.w, height: p.h, rx: 8,
+      fill: "#FFFFFF", stroke: "#E5E0D8", "stroke-width": 1
+    }));
+    g.appendChild(el("rect", {
+      x: p.x, y: p.y, width: 3.5, height: p.h, rx: 2, fill: color
+    }));
+    const t = el("text", {
+      x: p.x + p.w / 2 + 1, y: p.y + (n.sub ? 12.5 : 19),
+      "text-anchor": "middle",
+      "font-family": "Inter, sans-serif",
+      "font-size": 10.5, "font-weight": 600, fill: "#1F2329"
+    });
+    t.textContent = n.label;
+    g.appendChild(t);
+    if (n.sub) {
+      const s2 = el("text", {
+        x: p.x + p.w / 2 + 1, y: p.y + 24,
+        "text-anchor": "middle",
+        "font-family": "JetBrains Mono, monospace",
+        "font-size": 7, fill: "#646A73"
+      });
+      s2.textContent = n.sub;
+      g.appendChild(s2);
+    }
+    svg.appendChild(g);
+  });
+
+  box.innerHTML = "";
+  box.appendChild(svg);
+}
+
+document.querySelectorAll(".sketch-box").forEach(buildSketch);
+
+// ---------- reveal on scroll ----------
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll(".reveal").forEach(el => {
+  const r = el.getBoundingClientRect();
+  // anything already in the first viewport shows immediately (no blank hero)
+  if (r.top < window.innerHeight * 0.98) {
+    el.classList.add("in");
+  } else {
+    io.observe(el);
+  }
+});
+
+// active nav
+const sections = ["overview","domains","chrono","examples","structure","metrics","leaderboard","access"];
+const navIo = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      document.querySelectorAll(".nav-link").forEach(a => a.classList.remove("active"));
+      const link = document.querySelector('.nav-link[href="#' + e.target.id + '"]');
+      if (link) link.classList.add("active");
+    }
+  });
+}, { rootMargin: "-40% 0px -55% 0px" });
+sections.forEach(id => { const el = document.getElementById(id); if (el) navIo.observe(el); });
+
+// init
+buildFilter();
+buildChrono();
+render();
+</script>
+</body>
+</html>

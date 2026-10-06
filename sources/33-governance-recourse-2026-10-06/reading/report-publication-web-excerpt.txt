@@ -1,0 +1,28 @@
+# Portable web-reader excerpts: Report publication and version notice
+
+NOT original response bytes. Partial web.run extraction accessed 6 October 2026. Reader line/page labels are retrieval locators. Selected overlapping excerpts are deduplicated by line number and ordered without wording edits; gaps are retained. The SHA-256 of this text does not verify original HTML/PDF identity or completeness. Some PDF text includes extraction artifacts. No rendered-page verification is claimed.
+
+Primary URL: https://robodebt.royalcommission.gov.au/publications/report
+
+L28: 
+L29: The Royal Commission into the Robodebt Scheme has concluded. Commissioner Catherine Holmes AC SC presented the Report of the Royal Commission into the Robodebt Scheme to the Governor-General, His Excellency, General the Honourable David Hurley AC DSC (Retd) on 7 July 2023. It was tabled on 7 July 2023.
+L30: 
+L31:   * Report
+L32: 
+L33: Publication date
+L34: 
+L35: 7 July 2023
+L36: 
+L37: Prepared by
+L38: 
+L39: The Royal Commission into the Robodebt Scheme
+L40: 
+L41: Download
+L42: 
+L43: cite11†Full Report [PDF] L44: 
+L45: cite12†Full Report [DOCX] L46: 
+L47: cite13†Volume 1 [PDF] L48: cite14†Volume 2 [PDF] L49: 
+L50: cite15†Volume 3 [PDF] L51: 
+L52: cite16†Corrigendum [PDF] L53: 
+L54: The report was first published on 7 July 2023. Subsequently, corrections were made and an updated report was published on 11 July 2023. The changes and corrections in the updated edition are listed in the Corrigendum.
+

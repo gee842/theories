@@ -1,0 +1,483 @@
+# Portable web-reader excerpts: Royal Commission report
+
+NOT original PDF bytes. Partial, overlapping web-reader extracts were deduplicated by reader line number and ordered; gaps are retained and do not imply omitted text is irrelevant. No wording edits. Reader line labels and zero-based PDF page labels are retrieval locators, not official paragraph numbering.
+
+Author: Royal Commission into the Robodebt Scheme (Commonwealth of Australia), 2023.
+Source read: https://www.monash.edu/__data/assets/pdf_file/0007/3365503/report_of-the-royal-commission-into-the-robodebt-scheme.pdf
+Authoritative publication: https://robodebt.royalcommission.gov.au/publications/report
+License: CC BY 4.0 except Coat of Arms / otherwise stated, as inside-front-cover extraction records.
+Access: web.run, 6 October 2026; raw PDF retrieval failed; official byte identity unverified. These UTF-8 bytes hash the reader edition only. The p314 correction marker and 2023 copyright were observed, not an exhaustive edition comparison.
+Scope: copyright/edition markers and chapter 20 selected text, principally printed pp553–564. For this chapter in this hosted full PDF, zero-based reader page = printed page +43. No universal page offset asserted for other volumes.
+
+L0@P0: Report
+L1@P0: Royal Commission into the Robodebt Scheme
+L2@P0: Report
+L3@P0-1: Volume 1This report talks about some difficult themes, including suicide, self-harm and mental ill-health.
+L4@P1: Readers may find parts of the report distressing. These are some support services which might be helpful if
+L5@P1: you or someone you know needs help:·
+L6@P1: • Lifeline 13 11 14 (24/7 crisis support line)
+L7@P1: • Beyond Blue 1300 224 636 (24/7 telephone, website or email short-term counselling)
+L8@P1: • Suicide Call Back Service 1300 659 467 (24/7 counselling for suicide prevention and mental health)
+L9@P1: © Commonwealth of Australia 2023
+L10@P1: Online: ISBN: 978-1-921241-58-1
+L11@P1: Print: ISBN: 978-1-921241-59-8
+L12@P1: With the exception of the Coat of Arms and where otherwise stated, all material presented in this
+L13@P1: publication is provided under a Creative Commons Attribution 4.0 International licence
+L14@P1: (www.creativecommons.org/licenses).
+L15@P1: For the avoidance of doubt, this means this licence only applies to material as set out in this document.
+L16@P1: The details of the relevant licence conditions are available on the Creative Commons website as is the full
+L17@P1: legal code for the CC BY 4.0 licence (www.creativecommons.org/licenses).
+L18@P1: Use of the Coat of Arms
+L19@P1: The terms under which the Coat of Arms can be used are detailed on the Department of the Prime
+L20@P1: Minister and Cabinet website (www.dpmc.gov.au/government/commonwealth-coat-arms).
+L21@P1: Designed, typeset and printed by SNAP UNDERWOOD, Queensland.
+L22@P1-2: An 100% Indigenous owned business servicing Australia wide.Royal Commission
+L23@P2: into the Robodebt Scheme
+L24@P2: 7 July 2023
+L25@P2: His Excellency General the Honourable David Hurley AC DSC (Retd)
+L26@P2: Governor-General of the Commonwealth of Australia
+L27@P2: Government House
+L13120@P353: on 8 November 2019 and there was no compelling reason to reject the contemporaneous evidence of Mr
+L13121@P353: Robert’s diary notes. In addition, the suggestion that Mr Robert was dismissive in speaking of the SolicitorGeneral’s Opinion should not be accepted. Instead it should be found that Mr Robert understood and
+L13122@P353: accepted the advice that the Scheme could not be continued legally.
+L13123@P353: In fact, there is reason to reject the contemporaneous diary notes as accurate records of what happened
+L13124@P353: when, and reason to think that both Mr Robert’s notes and Mr Morrison’s chronology are wrong about a
+L13125@P353: meeting on 7 December and the matters recorded as discussed in it.
+L13126@P353: Firstly, it seems improbable that Mr Robert could have come into possession of the two briefs on 7
+L13127@P353: November 2019 in time to take all the steps recorded in his diary note of that date. The unsigned version
+L13128@P353: of brief MS19-000372 was sent to the minister’s office at 6.18pm on 7 November 2019,143 and a little
+L13129@P353: later, at 6.34pm that day, a staff member in the minister’s office was assuring Dr Baxter that she was the
+L21122@P594: Chapter 20:
+L21123@P594: The Administrative
+L21124@P594-596: Appeals Tribunal552 Royal Commission into the Robodebt SchemeRoyal Commission into the Robodebt Scheme 553 The Administrative Appeals Tribunal
+L21125@P596: 1	 Introduction
+L21126@P596: The AAT was intended not only to give better administrative justice in individual cases but also to
+L21127@P596: secure an improvement in primary administrative decision-making. This had to be achieved by the quality
+L21128@P596: of the AAT’s reasoning. Departments, like any organised human activity, tend to have an inward focus and
+L21129@P596: the corporate culture tends to be the most powerful influence on the conduct of individuals engaged in
+L21130@P596: that activity. External review is only as effective if it infuses the corporate culture and transforms it.
+L21131@P596: – Hon Sir Gerard Brennan1
+L21132@P596: The Commonwealth treated adverse decisions as no more than pin-pricks – Peter Hanks KC2
+L21133@P596: The financial hardship and distress caused to so many people could have been avoided had the
+L21134@P596: Commonwealth paid heed to the AAT decisions, or if it disagreed with them appealed them to a court so
+L21135@P596: the question as to the legality of raising debts based on income averaging from ATO data could be finally
+L21136@P596: decided – Hon Justice Murphy in the Robodebt class action judgement3
+L21137@P596: The Commission’s terms of reference require it to inquire into how the Australian Government responded
+L21138@P596: to adverse decisions made by the Administrative Appeals Tribunal (the AAT), how the government
+L21139@P596: responded to legal challenges or threatened legal challenges and whether the government sought
+L21140@P596: to prevent, inhibit or discourage scrutiny of the Robodebt scheme (the Scheme), whether by moving
+L21141@P596: departmental or other officials or otherwise.4
+L21142@P596: The AAT, which will soon be abolished and replaced by a new body,5 is the Commonwealth body
+L21143@P596: responsible for the merits review of administrative decisions made by government, including DHS
+L21144@P596: decisions about social security debts. Effective merits review is an essential part of the legal framework
+L21145@P596: that protects the rights and interests of individuals; it also promotes government accountability and plays
+L21146@P596: a broader important role in improving the quality and consistency of government decisions.6
+L21147@P596: From 2016, the AAT made a series of decisions that questioned the legal basis for DHS’s use of income
+L21148@P596: averaging to calculate social security debts. While DHS and DSS had some processes in place to consider
+L21149@P596: whether AAT decisions should be appealed, those processes were aimed at managing individual AAT
+L21150@P596: decisions. There was no mechanism for ensuring AAT decisions were reviewed in any systematic way.
+L21151@P596: The result was that adverse decisions of the AAT about the use of income averaging were not sufficiently
+L21152@P596: examined by either department; indeed, they were effectively ignored.
+L21153@P596: On 8 March 2017, Professor Terry Carney (in his position as AAT1 member) handed down the first decision
+L21154@P596: giving reasons for concluding that income averaging was unlawful. DHS did not appeal the 8 March
+L21155@P596: 2017 decision, or other similar decisions that followed it. Nor did it provide AAT members with those
+L21156@P596: decisions, in breach of its duty as a model litigant to assist the AAT. It also did not report those decisions
+L21157@P596: as a significant issue to the Office of Legal Services Coordination (OLSC). Instead, DHS felt free to reject the
+L21158@P596-597: reasoning in those decisions, and continued its use of income averaging under the Scheme. 554 Royal Commission into the Robodebt Scheme
+L21159@P597: 2 Review of social security decisions
+L21160@P597: Decisions about social security during the Scheme were made by DHS officers exercising the delegation
+L21161@P597: of the secretary of DSS.7 (They are now made by officers of Services Australia, the agency which replaced
+L21162@P597: DHS, but since this chapter is concerned primarily with the conduct of DHS in response to AAT decisions,
+L21163@P597: the nomenclature ‘DHS’ will be used when discussing past actions).
+L21164@P597: Such decisions can be subject to several levels of review if a social security recipient wishes to challenge
+L21165@P597: them. An internal review is first carried out by an authorised review officer (ARO) within DHS8 and external
+L21166@P597: review is carried out by the AAT.9 The AAT currently comprises two “tiers” of merits review, AAT1 (the first
+L21167@P597: level) and AAT2 (the second level, to which application can be made for review of AAT1 decisions).10 While
+L21168@P597: the vast majority of cases can be resolved expeditiously at AAT1, a smaller proportion of more complex
+L21169@P597: and contested matters are properly resolved at the AAT2 level.11
+L21170@P597: 2.1	 Non-publication of decisions
+L21171@P597: The majority of decisions concerning the Scheme, and all those which considered income averaging, were
+L21172@P597: made at AAT1 level where there is a high volume of matters, hearings are held in private12 and decisions
+L21173@P597: are not published.13 This meant that AAT1 social security decisions were not published and DHS was able
+L21174@P597: to ignore any adverse decisions in relation to its use of income averaging without any public scrutiny or
+L21175@P597: criticism.
+L21176@P597: At the AAT2 level, decisions are published and a DHS legal officer generally appears and presents
+L21177@P597: arguments.14 The AAT at both levels is required to give written reasons for decisions in social security cases
+L21178@P597: where the initial decision is not affirmed, or, if it is affirmed, where it is requested to do so.15 It is not clear
+L21179@P597: why AAT1 reasons for decision are not published and if there is a cogent legal or policy justification for
+L21180@P597: this.16 It may be that the AAT has regarded the requirement for privacy of AAT1 hearings17 as militating
+L21181@P597: against publication.18 (The justification for holding AAT1 hearings in private is that the AAT1 requirements
+L21182@P597: of informality and speed and the need to protect the privacy of social security claimants are more likely to
+L21183@P597: be met if hearings are conducted this way).19
+L21184@P597: There, is, however, no obvious reason that AAT1 decisions involving significant points of law or policy in
+L21185@P597: social security matters should not have been published, anonymised to preserve the privacy of applicants.
+L21186@P597: Publishing reasons in such cases would promote uniformity in decision-making,20 and allow public scrutiny
+L21187@P597: and wider community understanding of how the AAT was applying law and policy.
+L21188@P597: 2.2 Division of responsibility between the departments
+L21189@P597: DHS was responsible for the management of litigation arising out of decisions made by its officers.21
+L21190@P597: It did not normally take an active role in AAT1 hearings.22 The DHS Appeals Branch, an “administrative
+L21191@P597: operational branch,” was responsible for the collation of documents for AAT1 reviews23 and relied on
+L21192@P597: lawyers in its Legal Services Division to review AAT1 decisions and provide legal advice.24
+L21193@P597: As the agency responsible for the Social Security Act 1991 (Social Security Act) and Social Security
+L21194@P597: (Administration) Act 1999 (the Social Security (Administration) Act) under the Administrative Arrangement
+L21195@P597: Orders,25 DSS had an interest in social security litigation in the AAT. Indeed, the secretary of DSS was
+L21196@P597: required to have regard to relevant decisions of the AAT in administering the social security law.26
+L21197@P597: DHS was required to provide information to and seek instructions from DSS in circumstances set out in the
+L21198@P597: Standing Operational Statements – Social Security Litigation (SOS).27 DHS was also required to refer AAT1
+L21199@P597: decisions to DSS where they were less favourable to the secretary than the decision reviewed and one or
+L21200@P597-598: more of the following applied:28Royal Commission into the Robodebt Scheme 555 The Administrative Appeals Tribunal
+L21201@P598: • DHS recommended an appeal
+L21202@P598: • there was a significant error of law
+L21203@P598: • there was a significant issue of policy or administrative practice
+L21204@P598: • the matter had attracted, or was likely to attract, media or parliamentary attention, or
+L21205@P598: • the matter was of a kind specified by DSS (with the approval of the General Counsel FOI and Litigation
+L21206@P598: Branch).
+L21207@P598: “Appeal” was defined in the SOS as extending to administrative review. It is the term used in DHS and DSS
+L21208@P598: documents to mean the process of applying to AAT2 for review of an AAT1 decision, and will be used in
+L21209@P598: this chapter in the same way. (An appeal to AAT2 is undertaken on behalf of the secretary of DSS).29
+L21210@P598: The Administrative Appeals Tribunal Act 1975 (the AAT Act) empowers the AAT to affirm, vary or set
+L21211@P598: aside a decision under review.30 All AAT1 decisions setting aside or varying a DHS decision on terms
+L21212@P598: less favourable to DHS were required to be scrutinised by a DHS lawyer31 who prepared an Advice for
+L21213@P598: Further Administrative Review (AFAR).32 The AFAR would consider whether the AAT decision should be
+L21214@P598: implemented (i.e. accepted) or referred to DSS if one of the SOS criteria were met, either for information
+L21215@P598: or with a recommendation for appeal to AAT2. DHS relied heavily on the AFAR process, which Annette
+L21216@P598: Musolino (General Counsel, DHS) described as “very transactional”;33 by which she meant, focused on
+L21217@P598: individual decisions, with no wider frame of reference in mind.
+L21218@P598: Under DHS’s own Advocacy Procedures, the AFAR was to be forwarded to the relevant program area of
+L21219@P598: DHS (which one assumes was, for Robodebt decisions, the Integrity and Information Branch) as well as to
+L21220@P598: DSS where it identified that there was:34
+L21221@P598: • a conflict between policy and legislation
+L21222@P598: • a systemic issue in the administration of social security law
+L21223@P598: • inadequacies or unintended outcomes in law or policy, or
+L21224@P598: • an issue impacting on the normative effect of AAT decisions.
+L21225@P598: In considering whether an appeal to AAT2 should be recommended, DHS lawyers were required to assess
+L21226@P598: the importance of the decision and whether there was a reasonable prospect of success if it were to be
+L21227@P598: appealed.35
+L21228@P598: DSS was to respond with information, comments and clear and timely instructions to DHS on whether to
+L21229@P598: proceed with an appeal.36 DSS’s decisions in relation to appeals were required to be made according to the
+L21230@P598: key principles set out in the Social Security Appeals and Litigation Arrangements (Litigation Principles), to
+L21240@P598: not due to the lack of a system of referring relevant decisions. The Commission disagrees, as did the
+L21241@P598: Commonwealth in its submission.
+L21242@P598: The SOS process was inadequate to monitor AAT decisions for referral in any effective way. Moreover,
+L21243@P598: there was no system or policy in place to allow DHS or DSS to systematically review AAT decisions; monitor
+L21244@P598-599: statements of legal principle emerging from AAT decisions; consider how any guidance the AAT gave could 556 Royal Commission into the Robodebt Scheme
+L21245@P599: improve decision-making; raise significant cases with senior officers in DHS or DSS; or generally exchange
+L21246@P599: information about AAT decisions with each other.39
+L21247@P599: Such a system would have been valuable. It would have enabled an approach to appeals which could
+L21248@P599: have resolved the issues of law and policy which the Robodebt decisions raised and, at the least, had the
+L21249@P599: beneficial effect of improving the quality and consistency of decisions made by DHS officers.
+L21250@P599: Had DHS had a system in place to properly review AAT1 decisions, it would have seen that the number of
+L21251@P599: decisions where the AAT was not satisfied that the applicant’s debt was accurately calculated, because
+L21252@P599: income averaging had been used, far exceeded the number of decisions where the AAT accepted that
+L21253@P599: income averaging was appropriate in the circumstances. This is made clear by the document at appendix -
+L21254@P599: AAT Tier 1 reviews which contains the Commission’s review of 558 AAT1 decisions (produced to it by DHS)
+L21255@P599: where income averaging was a key issue, a summary of which is set out in the following table.
+L21256@P599: Year Category of decisions
+L21257@P599: Decisions where the AAT was not
+L21258@P599: satisfied that the department’s
+L21259@P599: calculations were accurate because
+L21260@P599: income averaging was used to
+L21261@P599: calculate the debt or part of the
+L21262@P599: debt
+L21263@P599: Decisions where the AAT
+L21264@P599: accepted that income averaging
+L21265@P599: was appropriate in the
+L21266@P599: circumstances
+L21267@P599: Decisions that did not
+L21268@P599: consider the merits of
+L21269@P599: income averaging because
+L21270@P599: the Applicant conceded
+L21271@P599: the debt
+L21272@P599: 2015 0 0 0
+L21273@P599: 2016 39 21 3
+L21274@P599: 2017 132 41 5
+L21275@P599: 2018 46 22 1
+L21276@P599: 2019 110 28 4
+L21277@P599: 2020 97 2 0
+L21278@P599: 2021 6 0 0
+L21279@P599: 2022 1 0 0
+L21280@P599: Additionally, what was noteworthy about decisions where the AAT accepted that income averaging was
+L21281@P599: appropriate in the circumstances was that they did not embark upon any considered analysis of the
+L21299@P600: • On 19 April 2017 Elizabeth Bundy (Manager, Appeals Branch, DHS) provided Ms Musolino with a list of
+L21300@P600: “10 set aside decisions relating to OCI” which listed some key Robodebt decisions set aside by the AAT
+L21301@P600: and in particular those that “raise the issue around [DHS] relying on averaging without obtaining other
+L21302@P600: information.”46
+L21303@P600: • In July 2017, an email between DHS lawyers noted that there were “clear trends on the AAT1 decisions”
+L21304@P600: that “the averaging of income is inconsistent with the legislation which requires that income be taken
+L21305@P600: into account on fortnightly rests.”47
+L21306@P600: Despite these observations about trends and criticism, no resulting change was made in process to achieve
+L21307@P600: systematic review of AAT decisions. Whether the decisions referred to in these emails should have been
+L21308@P600: referred to DSS required consideration of the following criteria in the SOS:48
+L21309@P600: • There is a significant error of law.
+L21310@P600: • There is a significant issue of policy or administrative practice.
+L21311@P600: • The matter has attracted, or is likely to attract, media or parliamentary attention.
+L21312@P600: On the first point, DHS’s position was that income averaging as used in the Scheme was lawful, so it must
+L21313@P600: also have been its position that decisions asserting that income averaging was inconsistent with the
+L21314@P600: legislation were wrong in law.
+L21315@P600: On the second point, the cases raised a very significant issue in relation to whether DHS should, as a
+L21316@P600: matter of practice and policy, be using the income-averaging method.
+L21317@P600: In relation to the third point, by January 2017 there was significant media attention on the Scheme and the
+L21318@P600: prospect of a Senate Committee inquiry.
+L21319@P600: Despite each of those criteria clearly applying to the AAT decisions setting aside income-averaged debts,
+L21320@P600-601: none of them was referred to DSS.558 Royal Commission into the Robodebt Scheme
+L21321@P601: 3.1	 Failure to appeal Tribunal decisions
+L21322@P601: In March 2017, Professor Carney had before him a case in which an overpayment and debt had been
+L21323@P601: raised solely on the basis of averaged PAYG data. Before determining the matter, Professor Carney
+L21324@P601: exercised the power of the AAT to require DHS to make written submissions in response to particular
+L21325@P601: questions of law,49 and also invited it to appear and make oral submissions. DHS made written submissions
+L21326@P601: in accordance with the request but did not address two of the questions asked by Professor Carney,50 who
+L21327@P601: observed that the submissions “did not delve deeply into the [the law about determining whether there is
+L21328@P601: an overpayment].”51 DHS did not take up the invitation to provide oral submissions.52
+L21329@P601: On 8 March 2017, Professor Carney handed down his decision, in which he set aside the DHS decision,
+L21330@P601: having reached a reasoned conclusion that income averaging based on PAYG data could not provide a
+L21331@P601: sufficient evidentiary basis to prove an overpayment or give rise in law to a debt.53
+L21332@P601: DHS did not appeal the decision.
+L21333@P601: In the AFAR concerning it, a DHS lawyer concluded that there was no error of law that affected the
+L21334@P601: decision and that there were no grounds for appeal.54 A DHS principal government lawyer agreed with that
+L21335@P601: assessment.55
+L21336@P601: Remarkably, they also concluded that the decision did not involve any “important legal or policy
+L21337@P601: principle.”56 That is difficult to understand, particularly when the relevant general counsel, whose team
+L21338@P601: was responsible for advising on whether to appeal AAT1 decisions, accepted in evidence before the
+L21339@P601: Commission that he had formed the view that the legal reasoning in the 8 March 2017 decision was
+L21340@P601: correct.57 Accordingly, from that point on he should have understood that income averaging, in the
+L21341@P601: manner in which it was used in the Scheme, was unlawful.
+L21342@P601: Professor Carney made another four decisions in which he took the same approach to averaging as in his
+L21343@P601: original decision. None were appealed by DHS or referred to DSS, though this was a requirement of the
+L21344@P601: SOS.58
+L21345@P601: Other AAT members made decisions that applied the same reasoning as the 8 March 2017 decision.59
+L21346@P601: In each case, the decision was not appealed because of legal advice, in the form of the AFAR, that there
+L21347@P601: were no grounds for appeal.60 For example, in a decision made on 4 May 2018, the AAT found that the
+L21348@P601: legislation “did not authorise the calculation of youth allowance by reference to averaging of income in
+L21349@P601: this case” and referred to the academic commentary by Professor Carney (by that stage no longer an AAT1
+L21350@P601: member) impugning the validity of averaging.61 The AFAR for the 4 May 2018 decision did not cavil with
+L21351@P601: that reasoning and did not recommend an appeal, noting that an appeal would put the income averaging
+L21352@P601: methodology “squarely into the public arena” and there was “a risk that the whole approach of the OCI
+L21353@P601: would be undermined.”62 However, the decision was referred to DSS for information; a “protective appeal’
+L21354@P601: was filed and then withdrawn on instruction from DSS.63
+L21355@P601: The Commission has identified no appeals on behalf of the secretary which went directly to the lawfulness
+L21356@P601: of income averaging.64
+L21357@P601: Ms Musolino sought to justify the failure to appeal the 8 March 2017 decision, and others applying
+L21358@P601: similar reasoning, on the basis that the circumstances of the recipient and the impact an appeal would
+L21359@P601: have on them and their family was a paramount consideration;65 DHS would not, she said, lightly put a
+L21360@P601: recipient through an appeal.66 The Commission accepts, as submitted by the Commonwealth, that this was
+L21361@P601: consistent with DHS’s obligation to act as a model litigant which requires endeavouring to avoid, prevent
+L21362@P601: and limit the scope of legal proceedings wherever possible.67
+L21363@P601: However, that approach paid no regard to the Litigation Principles (which both DSS and DHS were
+L21364@P601: required to consider), which required the decision maker to consider the beneficial nature of the social
+L21365@P601: security law and the impact of an appeal on the recipient against the broader principles of social security
+L21366@P601-602: administration (emphasis added).68 That included:Royal Commission into the Robodebt Scheme 559 The Administrative Appeals Tribunal
+L21367@P602: • considering “whether there [was] a significant point of law or stated Government policy which needed
+L21368@P602: to be clarified or defended”69 and “a realistic assessment of the broader effect of leaving an inconsistent
+L21369@P602: decision of a … tribunal undisturbed and the potential for other decision makers to follow it”70 and
+L21370@P602: • recognising that while AAT decisions were not binding, in practice they might be followed in similar
+L21371@P602: factual circumstances.71
+L21372@P602: One is entitled to be cynical about the proposition that the failure to appeal sprang from concern for the
+L21373@P602: wellbeing of applicant recipients. It does not, for example, really seem to have been foremost in the mind
+L21374@P602: of the legal officer who prepared the AFAR on the 4 May 2018 decision. But assuming it was genuinely a
+L21375@P602: factor in decision making, it could not be a “paramount” consideration; the Litigation Principles required
+L21376@P602: that it be weighed against the wider concerns identified above. Here the legality of a government program
+L21377@P602: was at stake, but DHS appears to have disregarded that aspect altogether.
+L21378@P602: 3.2	 Failure to bring relevant information to the attention
+L21379@P602: of the Tribunal
+L21380@P602: Consistent with DHS’s obligation to act as model litigant in proceedings before the AAT,72 officers of the
+L21381@P602: Commonwealth must use their best endeavours to assist the AAT to make its decision in relation to the
+L21382@P602: proceeding.73 That includes ensuring that the AAT has all relevant information and bringing the AAT’s
+L21383@P602: attention to arguments of the other side where it appears the AAT has overlooked them.74
+L21384@P602: The reasoning in the 8 March 2017 decision, the decisions which followed it, and the fact that DHS did
+L21385@P602: not pursue appeals of those decisions were matters relevant to other cases in which the AAT had to
+L21386@P602: consider the use, and lawfulness, of income averaging. AAT members showed an increased awareness
+L21387@P602: and interest in the Scheme, as demonstrated by a request from the AAT to DHS for a presentation about
+L21388@P602: the process.75 (Professor Carney gave evidence about one of these presentations.)76 It would have assisted
+L21389@P602: the AAT for those decisions to be drawn to its attention in other cases involving income averaging, as the
+L21390@P602: Commonwealth accepts. The fact that DHS did not pursue appeals of those decisions was also relevant
+L21391@P602: information for AAT members; it would have provided a strong indication of DHS’s level of confidence in
+L21392@P602: the lawfulness of income averaging. It was a fact that would not generally be known to AAT members.
+L21393@P602: DHS’s failure to inform the AAT of the decisions, and that it had not pursued appeals of them, deprived
+L21394@P602: AAT members of information relevant to the discharge of their function and undermined consistency in
+L21395@P602: AAT decision-making. It also advantaged DHS by rendering members of the AAT and the public, including
+L21396@P602: social security recipients, less likely to be aware of the reasoning in the decisions and of the fact (from the
+L21397@P602: absence of appeal) that DHS lawyers likely considered that reasoning to be legally correct.
+L21398@P602: The Commission put to the Commonwealth that DHS’s failure to inform the AAT of the decisions was a
+L21399@P602: breach of the model litigant obligation. The Commonwealth denied that was so. The role of DHS in AAT1
+L21400@P602: proceedings, it submitted, was “extremely limited” and did not carry with it a duty to inform the AAT of
+L21401@P602: the 8 March 2017 decision, the decisions which followed it or the fact that DHS did not pursue appeals of
+L21402@P602: those decisions. It contended that DHS’s role as the “agency party” in AAT1 proceedings was confined to
+L21403@P602: giving the AAT and the other party the documents required by s 37(1) of the AAT Act and responding to
+L21404@P602: requests or orders from the AAT for submissions on a specific issue. The AAT’s General Practice Direction
+L21405@P602: did not specify that decisions such as the 8 March 2017 decision should be lodged as part of the s 37
+L21406@P602: documents.77
+L21407@P602: The Commission does not accept this submission. The respondent to an AAT1 application for review
+L21408@P602: was the secretary of DSS or the chief executive of Centrelink (where the decision was made by a DHS
+L21409@P602: employee).78 As litigants, complying with the General Practice Direction was the bare minimum of what
+L21410@P602: was required of them; they were bound by the much larger obligation to use their best endeavours to
+L21411@P602-603: assist the AAT. DHS had a particular advantage as the repository of specialist knowledge about social 560 Royal Commission into the Robodebt Scheme
+L21412@P603: security law and practice with access to all written AAT decisions. The respondent secretary or chief
+L21413@P603: executive should have been informing AAT members and applicants of highly relevant decisions on a new
+L21414@P603: and controversial program. The 8 March 2017 decision was a considered and thoughtful decision that
+L21415@P603: other AAT members deciding similar cases unquestionably had an interest in knowing about.
+L21416@P603: 3.3 Failure to report income averaging decisions to the
+L21417@P603: Office of Legal Services Coordination
+L21418@P603: The lawyer who prepared the AFAR in relation to the 8 March 2017 decision was wrong to conclude that
+L21419@P603: the decision did not involve any “important legal or policy principle.” The 8 March 2017 decision, and
+L21420@P603: those which followed it, raised serious questions about the legal basis for the use of income averaging to
+L21421@P603: give rise to a debt; a practice that affected many thousands of social security recipients.
+L21422@P603: The 8 March 2017 decision constituted a “significant issue” in the provision of legal services for the
+L21423@P603: purposes of para. 3.1 of the Legal Services Directions.79
+L21424@P603: As the agency responsible for managing social security litigation, DHS was engaged in “the provision of
+L21425@P603: legal services” by its involvement in AAT proceedings concerning debts raised under the Scheme and its
+L21426@P603: preparation of legal advice in the form of AFARs following AAT decisions. Consequently, DHS was required
+L21427@P603: to report to the Office of Legal Services Coordination (OLSC) proceedings concerning debts raised under
+L21428@P603: the Scheme and its preparation of legal advice in the form of AFARs following AAT decisions.
+L21429@P603: In evidence, Michael Johnson (Assistant Secretary, OLSC) agreed that a significant legal issue would
+L21430@P603: exist where the AAT, whether it be Tier 1 or Tier 2, concluded that averaged income was insufficient to
+L21431@P603: ground an allegation of debt in circumstances where the government had a program to raise hundreds of
+L21432@P603: thousands of debts on that basis.80
+L21433@P603: DHS did not report any of the AAT decisions concerning the Scheme to the OLSC. Had it done so, the
+L21434@P603: Attorney-General and the OLSC may have been informed about the questions being raised by various AAT
+L21435@P603-604: members about the legality of the Scheme in 2017.Royal Commission into the Robodebt Scheme 561 The Administrative Appeals Tribunal
+L21436@P604: 4	 The continuing use of income averaging in the calculation of debts
+L21437@P604: 4.1	 Ignoring the reasoning in Tribunal cases
+L21438@P604: Rather than appeal AAT1 decisions rejecting the use of income averaging as a basis for raising debts,
+L21439@P604: DHS generally implemented the directions given by the AAT (for example, that the debt be recalculated
+L21440@P604: based on actual income information). However (and notwithstanding the views of some of its lawyers),
+L21441@P604: Ms Musolino explained in evidence before the Commission, DHS felt free to reject the reasoning in those
+L21442@P604: decisions because it was not uniformly adopted by all AAT members, and DHS considered itself entitled to
+L21443@P604: continue its practice of income averaging under the Scheme.81
+L21444@P604: Ms Musolino’s argument, that because some AAT1 decisions endorsed averaging, DHS could continue with
+L21445@P604: it in disregard of the 8 March 2017 decision and those following it, does not bear scrutiny. The Commission
+L21446@P604: was referred by DHS officers to some AAT1 decisions which upheld debts raised solely through income
+L21447@P604: averaging.82 None of those decisions, nor any of the 558 decisions reviewed by the Commission, contained
+L21448@P604: any statement of legal principle or references to legislation justifying the use of income averaging in the
+L21449@P604: absence of other evidence to support that calculation.83
+L21450@P604: More importantly, the Social Security (Administration) Act requires the secretary of DSS, whose powers
+L21451@P604: DHS officers exercised pursuant to delegation, in “administering the social security law” to have regard
+L21452@P604: to “the need to apply government policy in accordance with the law and with due regard to relevant
+L21453@P604: decisions of the Administrative Appeals Tribunal”.84 There is no question that the 8 March 2017 decision
+L21454@P604: and those following it were relevant decisions, because they contained considered and detailed legal
+L21455@P604: reasoning about the lawfulness of income averaging. Consequently, the secretary and DHS officers
+L21456@P604: exercising the secretary’s powers were obliged by statute to have regard to them.
+L21457@P604: As a general proposition, where the secretary (or their delegates) are of the view that a considered
+L21458@P604: decision of the AAT1 is wrong, so that having regard to it will create problems in administering the law,
+L21459@P604: DSS should appeal that decision to AAT2.85 If it is not willing to appeal, DHS and DSS should accept the
+L21460@P604: principles laid down by the decision,86 and allow them to guide future decision-making. If DHS notices
+L21461@P604: inconsistencies in AAT decision-making, it should recommend that DSS undertake an appeal of the
+L21462@P604: inconsistent decision in order to clarify the issues.
+L21463@P604: In relation to the AAT1 cases setting aside debts raised through income averaging, DHS’s recourse, if it
+L21464@P604: thought them wrong, was to recommend to DSS that it challenge them by appeal. But instead of taking
+L21465@P604: that step (which would have exposed the illegal basis on which the Scheme was operating), DHS in
+L21466@P604: the main ignored them. In one instance, the 4 May 2018 decision, where it did refer a matter (without
+L21467@P604: recommending an appeal), an appeal was commenced but discontinued.87 In the absence of any appeal,
+L21468@P604: s 8 of the Social Security (Administration) Act required regard to be had to those decisions, which would
+L21469@P604: necessarily have entailed acceptance that income averaging as used in the Scheme couldnot lawfully
+L21470@P604: continue.
+L21471@P604: 4.2	 Implementing decisions contrary to the direction of
+L21472@P604: the Tribunal
+L21473@P604: S 43(1)(c)(ii) of the AAT Act empowers the AAT to set aside the decision under review and remit the matter
+L21474@P604: for reconsideration in accordance with any directions or recommendations of the Tribunal.88 The intent of
+L21475@P604: the provision is plainly that the department or agency concerned will undertake any reconsideration in the
+L21476@P604-605: way the AAT proposes. 562 Royal Commission into the Robodebt Scheme
+L21477@P605: The 8 March 2017 decision directed DHS not to recalculate the social security recipient’s debt with income
+L21478@P605: averaging but to recalculate it using fortnightly salary records obtainable in the exercise of DHS’s statutory
+L21479@P605: powers.89 When it went to implement this decision, DHS was unable to obtain salary records from one of
+L21480@P605: the recipient’s four employers because it had gone out of business. DHS then proceeded to use income
+L21481@P605: averaging to recalculate the recipient’s debt.90 In effect, DHS ignored both the legal reasoning and the
+L21482@P605: directions of the AAT and reconsidered the matter in accordance with its own view of the law.
+L21483@P605: DHS used income averaging to recalculate the debt on the advice of Brian Sparkes’ (Principal Legal Officer,
+L21484@P605: DHS) that the decision “should be based on the best available evidence obtainable”, so that if all avenues
+L21485@P605: had been explored DHS was able to use income averaging to raise the debt “regardless of what the AAT1
+L21486@P605: said”.91 Mr Sparkes expressed the same view in relation to a similar direction in the 7 September 2017
+L21487@P605: decision:
+L21488@P605: ….as long as our evidence gathering power are exhausted then it is still open to raise a debt based on
+L21489@P605: averaging. In this respect the AAT1’s direction is wrong in law and can be ignored...92
+L21490@P605: Mr Sparkes argued that was permissible by reference to s 126 and s 182 of the Administration Act.93 That
+L21491@P605: view was misconceived.
+L21492@P605: The secretary has a broad power in s 126 of the Social Security (Administration) Act to review the “decision
+L21493@P605: of an officer,” even if an application to the AAT is on foot “if the Secretary is satisfied that there is sufficient
+L21494@P605: reason to review the decision.”94 There are obvious policy reasons for the existence of this power. It
+L21495@P605: allows for a proceeding to resolve in advance of a full hearing or, if the matter does proceed to hearing, to
+L21496@P605: clarify the issues in dispute.95 It is in keeping with the objective that the AAT is informal, cost effective and
+L21497@P605: quick.96 It would be an extraordinary reading of the provision to regard the power as extending to review
+L21498@P605: of the AAT’s decisions;97 it is plain on its face and in context that it does not contemplate the exercise
+L21499@P605: of the review power once the decision has been made. Apart from the express reference to the power
+L21500@P605: being exercisable even if an application to the AAT has been made (as opposed to determined), it appears
+L21501@P605: in Part 4 of the Social Security (Administration) Act under “Internal Review”, an indication that it has no
+L21502@P605: application to decisions made externally.
+L21503@P605: The secretary is required to give notice of the review decision to the Registrar of the AAT, another
+L21504@P605: indication that it can be made only while the AAT1 proceedings are live.98
+L21505@P605: S 182, the second provision on which Mr Sparkes relied, does not create any power of review but concerns
+L21506@P605: the situation where an officer varies or substitutes a decision after an application for AAT1 review or after
+L21507@P605: an application for AAT2 review. The first situation would arise with the exercise of the s 126 power; in that
+L21508@P605: instance the application (to AAT1) is taken to be for review of the new or varied decision. In the second
+L21509@P605: situation (application to AAT2) the varied or substituted decision is treated as having been made by AAT1,
+L21510@P605: and the application is taken to be for review of that decision. Such a situation might arise where a decision
+L21511@P605: is upheld by AAT1 or a decision is set aside and the matter is remitted for a new decision to be made, or an
+L21512@P605: application for AAT2 review is made and an officer then varies the decision upheld by AAT1 or substitutes
+L21513@P605: another decision in accordance with the AAT’s directions.
+L21514@P605: Whatever Mr Sparkes’ view of the secretary’s powers of review, the secretary remained bound by any
+L21515@P605: directions given by AAT 1 unless and until those directions were set aside.
+L21516@P605: The directions of the AAT prohibited the use of averaging. That prohibition was clear and unqualified.
+L21517@P605: Beyond those directions, it was clear from the reasoning of the decision, which found the practice of
+L21518@P605-606: averaging to be unlawful. Royal Commission into the Robodebt Scheme 563 The Administrative Appeals Tribunal
+L21519@P606: 5 Conclusion
+L21520@P606: 5.1	 The disregard of Tribunal decisions
+L21521@P606: The Scheme was launched in circumstances where the DSS legal advice was that income averaging, as
+L21522@P606: it was used in the Scheme, was not in accordance with the legislation,99 and DHS had not obtained any
+L21523@P606: relevant legal advice. The AAT1 decisions confirming that averaged PAYG data alone did not constitute
+L21524@P606: evidence of fortnightly income earned, derived or received, as the Social Security Act required, should
+L21525@P606: have reinforced that original advice and caused DHS and DSS to reconsider the legality of the Scheme.
+L21526@P606: Instead, DHS chose not to recommend any challenge to those decisions, explicitly or tacitly accepting them
+L21527@P606: as legally correct, but implementing them only as far as was convenient and disregarding their effect for
+L21528@P606: the purposes of the Scheme as a whole.
+L21529@P606: DSS took no active role, apart from discontinuing an appeal in the 4 May 2018 decision, which, as the AFAR
+L21530@P606: astutely noted, would have brought the illegality issue into the public arena and undermined the “whole
+L21531@P606: approach” of the OCI phase of the Scheme.
+L21532@P606: Because the adverse decisions were not published, they were not publicly accessible. DHS was able to take
+L21533@P606: advantage of that situation; in the narrower sense, by not bringing them to the attention of applicants or
+L21534@P606: AAT members, and in the wider sense by continuing with a Scheme based on unlawful debt raising. DSS
+L21535@P606: was shielded from the adverse publicity which would certainly have followed a public understanding of
+L21536@P606: what these decisions were saying and how many of them there were.
+L21537@P606: Clearly, to avoid repetition of that situation, publication of significant decisions in an accessible form is
+L21538@P606: desirable. Professor Carney suggests that AAT1 be empowered, of its own volition, to publish de-identified
+L21539@P606: rulings on key issues as it has done in the child support context.100 Economic Justice Australia supports a
+L21540@P606: recommendation to that effect, as does the Commonwealth.101
+L21541@P606: There was no systematic means of identifying AAT1 decisions significant to DHS’s application of law or
+L21542@P606: policy, which was a serious failing; however, there is reason to doubt that, had one existed, it would have
+L21543@P606: changed DHS’s view that it was entitled to disregard the AAT1 decisions. The SOS should have, in theory,
+L21544@P606: caused referral of all the decisions which identified the legal issue in relation to income averaging to
+L21545@P606: DSS, but they too seem to have been disregarded. Again, there is reason to doubt that even if they had
+L21546@P606: been observed, DSS would have responded appropriately, given its conduct in relation to the 4 May 2018
+L21547@P606: decision.
+L21548@P606: As noted earlier in this chapter, it is the obligation of the secretary of DSS under s 8 of the Social
+L21549@P606: Security (Administration) Act to pay due regard to relevant decisions of the AAT. Presumably, the referral
+L21550@P606: requirements in the SOS are designed to bring relevant decisions to the attention of the secretary. Indeed,
+L21551@P606: Ms Musolino’s evidence was that the AFAR process was about meeting those requirements.102 That did not
+L21552@P606: happen; in fact, there is no evidence that the secretary was ever made aware of the effect of any relevant
+L21553@P606: AAT decision by those who were responsible for informing the secretary about those matters. To the
+L21554@P606: contrary, Finn Pratt AO (DSS Secretary) said that he did not recall any AAT cases about the illegitimacy of
+L21555@P606: debt-raising on the basis of averaging.103
+L21556@P606: It is impossible to see how the secretary could have met their obligations under section 8 without an
+L21557@P606: effective system in place for referring relevant decisions. It is clear that the system that was in place was
+L21558@P606: not effective; DHS was not referring relevant decisions to DSS, and DSS was doing nothing to ensure that it
+L21559@P606-607: was. 564 Royal Commission into the Robodebt Scheme
+L21560@P607: 5.2 Steps taken since the Robodebt scheme
+L21561@P607: The Commission is aware of steps undertaken since to strengthen the processes for identification of, and
+L21562@P607: responses to, significant AAT1 decisions.
+L21563@P607: Services Australia says its Legal Services Division launched a strategy in March 2022 that entails regular
+L21564@P607: liaison meetings about AAT and court outcomes with “internal business areas and external policy clients”
+L21565@P607: and the circulation of a quarterly newsletter containing updates on topical issues and litigation trends,
+L21566@P607: including recent AAT and Federal Court decisions.104
+L21567@P607: DSS says it has strengthened its litigation management processes to include monthly litigation reports
+L21568@P607: provided to the secretary which cover all merits and judicial review matters managed by Services Australia,
+L21569@P607: significant litigation and secretary-initiated applications for review or appeal and prosecutions. The
+L21570@P607: secretary is, the Commission is told, made aware of adverse comments made by a court or tribunal about
+L21571@P607: the conduct of a matter or decisions made in the secretary’s name and the secretary has meetings with
+L21572@P607: the president of the AAT to discuss improvements in DSS’s general dealings with the AAT.105 These are
+L21573@P607: encouraging developments.
+L21574@P607: Recommendation 20.1: AAT cases with significant legal and policy issues
+L21575@P607: Services Australia should put in place a system for identifying AAT1 cases which raise significant legal and policy
+L21576@P607: issues and ensuring that they are brought to the attention of senior DSS and Services Australia officers.
+L21577@P607: Recommendation 20.2: Training for DHS legal officers
+L21578@P607: Services Australia legal officers whose duties involve the preparation of advices in relation to AAT1 decisions
+L21579@P607: should receive training which emphasises the requirements of the Standing Operational Statements in relation
+L21580@P607: to appeal recommendations and referral to DSS; Services Australia’s obligations as a model litigant; and the
+

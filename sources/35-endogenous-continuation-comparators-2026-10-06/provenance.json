@@ -1,0 +1,32 @@
+{
+  "source_url": "https://proceedings.neurips.cc/paper/2021/file/c26820b8a4c1b3c2aa868d6d57e14a79-Paper.pdf",
+  "access_date_utc": "2026-10-06",
+  "preserved_utc": "2026-10-06T02:04:49.617763+00:00",
+  "retrieval_method": "Python urllib.request GET, User-Agent Mozilla/5.0, timeout argument15 seconds",
+  "observed_http_status": 200,
+  "observed_final_url": "https://proceedings.neurips.cc/paper/2021/file/c26820b8a4c1b3c2aa868d6d57e14a79-Paper.pdf",
+  "http_headers_preserved": false,
+  "network_completion_timestamp_recorded": false,
+  "bytes": 7544699,
+  "sha256": "e9a8c19cdfc0d765ea89e7cf8ef58059ccb42422ce0b2dc1e3c66e942ff448e1",
+  "version": "NeurIPS2021 proceedings; named authors and conference footer visually confirmed on page1",
+  "pdf_pages": 12,
+  "text_layer": "pypdf extracted no substantive page text; reader also returned zero text lines",
+  "visual_reading": {
+    "renderer": "pypdfium2 at scale1.7",
+    "pages_one_based": [
+      1,
+      2,
+      3,
+      6,
+      8,
+      9,
+      10
+    ],
+    "figures_in_those_pages_inspected": true,
+    "scope": "Definitions and central result/limits, not every supplement proof"
+  },
+  "rendered_previews_retained": false,
+  "license": "Specific redistribution license not inspected; original publisher URL and author attribution retained. No open license inferred.",
+  "version_caution": "Readable OpenReview anonymous submission uses Blackwell-optimal wording. This preserved final instead states average-optimal Theorem6.13; page9 leaves the connection to near1 discounted optimality probability open. Do not substitute versions."
+}

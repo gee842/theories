@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-06T02:06:07.758382+00:00",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1239,
+      "sha256": "62d375afb7027a1772f07c8efe942816f90c0f703202b5829a981590200855dd"
+    },
+    {
+      "path": "original/turner-et-al-2021-neurips.pdf",
+      "bytes": 7544699,
+      "sha256": "e9a8c19cdfc0d765ea89e7cf8ef58059ccb42422ce0b2dc1e3c66e942ff448e1"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 1601,
+      "sha256": "518fc7868623dbf1ee0ad224efb7b977611a2bbe8db20806db4ff0510d46b125"
+    }
+  ],
+  "file_count_excluding_manifest": 3,
+  "source_note": {
+    "path": "_process/research/2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-EVIDENCE.md",
+    "sha256": "62aa0d2811b58d4d938f956382b3ac6d08423c822ff0ef28fc79d280ab3d5a56"
+  },
+  "checks": {
+    "publisher_pdf_magic": true,
+    "expected_sha256_matches": true
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "date": "2026-10-06",
+  "status": "pass",
+  "scope": "Historical-source preservation and document integration; no new numerical result, experiment, learned-model call or causal estimate.",
+  "named_connection": "affected-party evidence -> individual correction -> warranted revision of a shared decision rule",
+  "source_package": {
+    "path": "sources/33-governance-recourse-2026-10-06",
+    "total_files": 12,
+    "manifest_bound_files_verified": 11,
+    "manifest_sha256": "061f0c574a4c23bc9e89547c02dbf87d47af30a9c814419980f5bf0dff182daf",
+    "reader_editions": 5,
+    "original_document_bodies": 0,
+    "key_report_reader_lines_verified": "21438–21559 inclusive",
+    "limits": "Partial reader editions, not original PDF/HTML bytes; mirror edition markers do not establish official byte identity or complete coverage."
+  },
+  "documents": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "bytes": 10808,
+      "sha256": "fc0d4ea6f732f4104aba7b38f189772551864bbf5662e17adeb975829937a428"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-CONTRACT.md",
+      "bytes": 9752,
+      "sha256": "124d34fb7b2678f61dba057d8daeb0ce37ad70122f64f5d27f1fb340c0c6b52b"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-REVIEW.md",
+      "bytes": 11494,
+      "sha256": "3a755940366875d695743161d1fbcc54505f82d4746d62382ba10a0a709dea12"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "bytes": 7894,
+      "sha256": "afaab849dfb5c84024cff7c8f3dca8afcd403dddd713bdea131b0aeccb6911b5"
+    },
+    {
+      "path": "sources/33-governance-recourse-2026-10-06/README.md",
+      "bytes": 3889,
+      "sha256": "4669093cfaff2f588ba2c66a12970b2262ff9c49826028f3a0dabf11851c413a"
+    }
+  ],
+  "review_binds_current_contract_and_canonical": true,
+  "source_verification_binds_current_evidence_note": true,
+  "local_targets_checked": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-alignment-governance-and-future.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "target": "ALIGNMENT-COMPLETION.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "target": "ALIGNMENT-AND-GOVERNANCE.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "target": "ETHICAL-FOUNDATION.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "target": "EVALUATIVE-APPLICATION.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-REVIEW.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-CONTRACT.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "target": "../../../sources/33-governance-recourse-2026-10-06/README.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-CONTRACT.md",
+      "target": "GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-CONTRACT.md",
+      "target": "GOVERNANCE-LITERATURE.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-CONTRACT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-CONTRACT.md",
+      "target": "../../2026-10-05-revisable-concern/settlement/formal/REPORT.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-CONTRACT.md",
+      "target": "../../2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-CONTRACT.md",
+      "target": "../root-foundation/FUTURE-REPORTING-CONTRACT.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-REVIEW.md",
+      "target": "GOVERNANCE-LITERATURE.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-REVIEW.md",
+      "target": "GOVERNANCE-RECOURSE-CONTRACT.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-REVIEW.md",
+      "target": "../../2026-10-05-revisable-concern/settlement/formal/REPORT.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-REVIEW.md",
+      "target": "../../../../sources/33-governance-recourse-2026-10-06/reading/report-ch20-web-excerpts.txt",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "target": "GOVERNANCE-RECOURSE-CONTRACT.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "target": "GOVERNANCE-RECOURSE-REVIEW.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "target": "../../../../sources/33-governance-recourse-2026-10-06/reading/report-ch20-web-excerpts.txt",
+      "scope": "complete document"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "target": "../../../../sources/33-governance-recourse-2026-10-06/README.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/README.md",
+      "target": "reading/report-publication-web-excerpt.txt",
+      "scope": "complete document"
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/README.md",
+      "target": "reading/report-ch20-web-excerpts.txt",
+      "scope": "complete document"
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/README.md",
+      "target": "reading/report-corrigendum-web-excerpt.txt",
+      "scope": "complete document"
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/README.md",
+      "target": "reading/ombudsman-2017-web-excerpts.txt",
+      "scope": "complete document"
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/README.md",
+      "target": "reading/court-2021fca0634-web-excerpts.txt",
+      "scope": "complete document"
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/README.md",
+      "target": "metadata/retrieval.json",
+      "scope": "complete document"
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/README.md",
+      "target": "metadata/retrieval.json",
+      "scope": "complete document"
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/README.md",
+      "target": "manifest.json",
+      "scope": "complete document"
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/README.md",
+      "target": "metadata/verification.json",
+      "scope": "complete document"
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-REVIEW.md",
+      "scope": "complete document"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "target": "EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "target": "GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "target": "GOVERNANCE-RECOURSE-CONTRACT.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "target": "GOVERNANCE-RECOURSE-REVIEW.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "target": "../../../../sources/33-governance-recourse-2026-10-06/README.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/README.md",
+      "target": "GOVERNANCE-RECOURSE-INTEGRATION.json",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-LITERATURE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-LITERATURE.md",
+      "target": "GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-LITERATURE.md",
+      "target": "GOVERNANCE-RECOURSE-CONTRACT.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-LITERATURE.md",
+      "target": "GOVERNANCE-RECOURSE-REVIEW.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "33-governance-recourse-2026-10-06/README.md",
+      "scope": "new integration paragraph only"
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "scope": "new integration paragraph only"
+    }
+  ],
+  "integration_paragraphs_checked": 8,
+  "limits": [
+    "File targets checked; external URLs and heading anchors are not validated by this receipt.",
+    "Independent AI scope review is not external peer review or a causal intervention.",
+    "Shared index receipt covers only the newly linked paragraph, not unrelated concurrent edits.",
+    "The full foundation and alignment/governance goal remain active under their unchanged completion conditions."
+  ]
+}

@@ -1,0 +1,104 @@
+# Portable web-reader excerpts: Commonwealth Ombudsman Report 02/2017
+
+NOT original response bytes. Partial web.run extraction accessed 6 October 2026. Reader line/page labels are retrieval locators. Selected overlapping excerpts are deduplicated by line number and ordered without wording edits; gaps are retained. The SHA-256 of this text does not verify original HTML/PDF identity or completeness. Some PDF text includes extraction artifacts. No rendered-page verification is claimed.
+
+Primary URL: https://www.ombudsman.gov.au/__data/assets/pdf_file/0022/43528/Report-Centrelinks-automated-debt-raising-and-recovery-system-April-2017.pdf
+
+L0@P0: Centrelink’s automated debt
+L1@P0: raising and recovery system
+L2@P0: A REPORT ABOUT THE DEPARTMENT OF HUMAN
+L3@P0: SERVICES’ ONLINE COMPLIANCE INTERVENTION
+L4@P0: SYSTEM FOR DEBT RAISING AND RECOVERY
+L5@P0: APRIL 2017
+L6@P0: Report by the Acting Commonwealth Ombudsman,
+L7@P0: Richard Glenn, under the Ombudsman Act 1976
+L8@P0-1: REPORT NO. 02|2017CONTENTS
+L1061@P24: DHS’ response to complaints and feedback
+L1062@P24: 3.48 DHS told us the number of OCI complaints it received in the initial rollout
+L1063@P24: increased between December 2016 and February 2017, but at the end of February
+L1064@P24: represented less than one per cent of OCI letters sent. At the same time, however,
+L1065@P24: complaints to our office about the OCI increased significantly.
+L1066@P24: 42 The complaints we
+L1067@P24: received showed some customers who had concerns about the OCI did not make
+L1068@P24: official complaints to DHS’ complaints and feedback service or have their concerns
+L1069@P24: recorded as complaints.43 In our view, the low number of complaints to DHS may be
+L1070@P24: explained by the effective reassessment process which resolved customers’ issues in
+L1071@P24: many cases, but which DHS did not record as complaints.
+L1072@P24: 3.49 In January 2017, DHS analysed complaints about the OCI and identified
+L1073@P24: where improvements could be made.44 This analysis found the main complaint
+L1074@P24: themes were: confusing content in the initial letter, customers not being clear on what
+L1075@P24: action they needed to take, and customers calling the Customer Relations Unit
+L1076@P24: instead of the compliance team, causing a high volume of calls. In response to these
+L1077@P24: complaints DHS undertook further testing and made enhancements to the OCI after
+L1078@P24: the initial rollout.
+L1079@P24: 3.50 This process of capturing complaint themes and using them to make
+L1080@P24: improvements demonstrate that complaints should not be viewed negatively.
+L1081@P24: Complaints about the OCI are an important window into the customer’s experience of
+L1082@P24: the system and how effectively the program is being implemented.45 DHS should
+L1083@P24: view complaints about the OCI as a free and valuable resource for informing service
+L1084@P24: improvements. In this context, ‘complaints/feedback’ is a broad concept which should
+L1085@P24: include any information about how the OCI is working, particularly from the
+L1086@P24: customer’s perspective. In our view, DHS should continue to capture information
+L1087@P24: about the OCI from internal reviews and complaints and feed this back to its business
+L1088@P24: and service delivery areas to continuously improve the system and its delivery.
+L1856@P43: 2.28 In our view the business rules in the OCI that support the debt calculation are
+L1857@P43: comprehensive and accurately capture the legislative and policy requirements. The
+L1858@P43: OCI appears to have the capacity to accurately calculate various types of nonstandard income including leave payments, termination payments, fringe benefits,
+L1859@P43: allowances and reimbursements, and apply relevant exclusions and credits, such as
+L1860@P43: free areas, income banks and working credits.
+L1861@P43: 2.29 However, the calculation relies on the customer accurately entering the
+L1862@P43: various types of income into the OCI for each previously unverified fortnight of
+L1863@P43: income during the debt period.
+L1864@P43: 2.30 The OCI is also designed so that any entitlement fortnights for which income
+L1865@P43: has been previously verified (for example, if the person provided payslips from time
+L1866@P43: to time during the year), will be excluded from the debt calculation.
+L1867@P43: 
+L1868@P43: 99 Based on the last available DHS report on data matching under the Data Matching Act.
+L1869@P43-44: 100 Information obtained via DHS site visit 19 January 2017Commonwealth Ombudsman—Department of Human Services:
+L1870@P44: Centrelink’s automated debt raising and recovery system
+L1871@P44: Page 42 of 110
+L1872@P44: Use of ‘averaged’ ATO income data
+L1873@P44: 2.31 Under the Social Security Act, a fortnightly income test is applied to determine
+L1874@P44: a daily rate of payment, generally paid in fortnightly instalments. A person’s
+L1875@P44: entitlement in any given fortnight will therefore be assessed on the income they
+L1876@P44: earned, derived or received that fortnight. This is different to the tax system (including
+L1877@P44: family payments) which is concerned with assessing annual income. ATO data
+L1878@P44: normally provides an aggregate annual employment income figure and does not
+L1879@P44: provide the detail required to accurately assess fortnightly social security
+L1880@P44: entitlements.
+L1881@P44: 2.32 DHS has always had a process for averaging ATO data to calculate debts.101
+L1882@P44: The process is set out in its operational guidelines102 however it was limited to last
+L1883@P44: resort situations: ‘If every possible means of obtaining the actual income information
+L1884@P44: has been attempted, it is possible to use any evidence available to raise a debt
+L1885@P44: including an annual figure.’ The guideline also identifies the risks involved in
+L1886@P44: averaging income data and shows DHS was aware that averaging ATO earnings
+L1887@P44: may result in incorrect debts:
+L1888@P44: ‘Some of the difficulties:
+L1889@P44: - If a customer reports fortnightly and has under declared, there may be no evidence to
+L1890@P44: support a finding of false or misleading information for any given fortnight
+L1891@P44: - If employment is for a part of a year only, averaging over 12 months will not result in a
+L1892@P44: correct result if the customer should have received a full rate at other times of the year
+L1893@P44: - If income varied greatly during the year, the result may be incorrect
+L1894@P44: Actual period(s) worked should be obtained so that averaging only occurs for periods
+L1895@P44: worked.
+L1896@P44: The raising and recovery of debts must satisfy legislative requirements. Evidence is
+L1897@P44: required to support the claim that a legally recoverable debt exists’. 103
+L1898@P44: 2.33 We asked DHS whether it had done modelling on how many debts were likely
+L1899@P44: to be over-calculated as opposed to under-calculated. DHS advised no such
+L1900@P44: modelling was done.104 In our view the risk of over-recovering debts from social
+L1901@P44: security recipients should be the subject of more thorough research and analysis.
+L1902@P44: 2.34 Averaging in the OCI occurs when:
+L1903@P44:  the customer does not respond to DHS’ request to go online or contact DHS
+L1904@P44: by the due date
+L1905@P44:  the customer’s response is incomplete – for example, if the person entered
+L1906@P44: the information accounting for some, but not all of the income received over
+L1907@P44: the debt period. In this case, the OCI will average the balance over the
+L1908@P44: remainder of the period/s
+L1909@P44:  the customer’s response is outside certain tolerances as to what is
+L1910@P44: reasonable (in such cases, the OCI requires a compliance officer to consider
+L1911@P44: 
+L1912@P44: 101 DHS told this office on 3 February 2017 that it ‘uses the concept of averaging income in
+L1913@P44: the absence of detailed information and has been using this methodology since the early
+L1914@P44: 1980’s, both in manual and OCI systems’.
+L1915@P44: 102 DHS Operational Blueprint 107.02040020 Acceptable documents for verifying income
+

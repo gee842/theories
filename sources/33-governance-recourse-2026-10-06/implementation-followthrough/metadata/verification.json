@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-06T01:55:39.361468+00:00",
+  "status": "pass",
+  "scope": "Local preservation integrity and source-note link checks, not validation of unavailable original PDF bytes or institutional outcomes",
+  "original_pdf_count": 0,
+  "reading_file_count": 4,
+  "payload_hashes": [
+    {
+      "path": "README.md",
+      "bytes": 3024,
+      "sha256": "a3e29a0a7e08db85d999ef9739ca64fb6a119f824d428e6c6bd98c5674619622"
+    },
+    {
+      "path": "metadata/parent-snapshot-before.json",
+      "bytes": 1647,
+      "sha256": "dc8a9818cbcda737e1037d20cd8201232132d1ed7b82b815b6b342a107f5dc5f"
+    },
+    {
+      "path": "metadata/reading-provenance.json",
+      "bytes": 5032,
+      "sha256": "b327c1d12b4ca6149a9e3ce5bb6b1ab57625ab13ab647198e4442d14aa0b391b"
+    },
+    {
+      "path": "metadata/retrieval.json",
+      "bytes": 5603,
+      "sha256": "6730fbf56eceb5d62a3f167a324959f377f8d13638be209a1f472140268f174e"
+    },
+    {
+      "path": "reading/ombudsman-2021-web-excerpts.txt",
+      "bytes": 17346,
+      "sha256": "9dfcd49f01c33f485c7d7c18da8ab4ac5e05a82414903c1c0f5d2605c34053ea"
+    },
+    {
+      "path": "reading/ombudsman-2022-appendix-search-description.txt",
+      "bytes": 2702,
+      "sha256": "a762a6734f7e09da0f295b0e3e4bf5d3846c0348da874eb76bea2512f4f53d5e"
+    },
+    {
+      "path": "reading/ombudsman-2022-web-excerpts.txt",
+      "bytes": 10954,
+      "sha256": "7add675e7a6bbb5e69e6838bbee96f175cdd68b615ce0e031a50339f34110865"
+    },
+    {
+      "path": "reading/services-australia-2022-23-web-excerpts.txt",
+      "bytes": 5635,
+      "sha256": "525cf03e7bc35816c4d0f70fdc4bc80ec58e2a60a1bd14607c748434d9fcf765"
+    }
+  ],
+  "parent_package_checks": [
+    {
+      "path": "README.md",
+      "expected_sha256": "4669093cfaff2f588ba2c66a12970b2262ff9c49826028f3a0dabf11851c413a",
+      "actual_sha256": "4669093cfaff2f588ba2c66a12970b2262ff9c49826028f3a0dabf11851c413a",
+      "unchanged": true
+    },
+    {
+      "path": "manifest.json",
+      "expected_sha256": "061f0c574a4c23bc9e89547c02dbf87d47af30a9c814419980f5bf0dff182daf",
+      "actual_sha256": "061f0c574a4c23bc9e89547c02dbf87d47af30a9c814419980f5bf0dff182daf",
+      "unchanged": true
+    },
+    {
+      "path": "metadata/2021fca0634.headers.txt",
+      "expected_sha256": "aa8353ac2bbe94ea16831ce62ab1123e72a56dfd6a1dd0508bd4697c8606676a",
+      "actual_sha256": "aa8353ac2bbe94ea16831ce62ab1123e72a56dfd6a1dd0508bd4697c8606676a",
+      "unchanged": true
+    },
+    {
+      "path": "metadata/monash-report.headers.txt",
+      "expected_sha256": "a4633e561f3b6578616d7debc31a6ad023c08ac84e3ab8e0cc9ce02a820a03f0",
+      "actual_sha256": "a4633e561f3b6578616d7debc31a6ad023c08ac84e3ab8e0cc9ce02a820a03f0",
+      "unchanged": true
+    },
+    {
+      "path": "metadata/ombudsman2017.headers.txt",
+      "expected_sha256": "f91890e89c304f67bf4f3101277d9b9f78a28ecc577dfbd385d71aadb1a985c1",
+      "actual_sha256": "f91890e89c304f67bf4f3101277d9b9f78a28ecc577dfbd385d71aadb1a985c1",
+      "unchanged": true
+    },
+    {
+      "path": "metadata/retrieval.json",
+      "expected_sha256": "29dbe3402c6d95b6ae5930671576b559e73ef92d41dd5f061bea412e67cda234",
+      "actual_sha256": "29dbe3402c6d95b6ae5930671576b559e73ef92d41dd5f061bea412e67cda234",
+      "unchanged": true
+    },
+    {
+      "path": "metadata/verification.json",
+      "expected_sha256": "03191d33581477c4e739262b5e13aa75dc0fb5da8e8c86c250c35e3e2a5e5fa3",
+      "actual_sha256": "03191d33581477c4e739262b5e13aa75dc0fb5da8e8c86c250c35e3e2a5e5fa3",
+      "unchanged": true
+    },
+    {
+      "path": "reading/court-2021fca0634-web-excerpts.txt",
+      "expected_sha256": "23a56394ee2dab53e5a1255dcecb5dd8dfc95bda11446dd274b4c0c79f9670b2",
+      "actual_sha256": "23a56394ee2dab53e5a1255dcecb5dd8dfc95bda11446dd274b4c0c79f9670b2",
+      "unchanged": true
+    },
+    {
+      "path": "reading/ombudsman-2017-web-excerpts.txt",
+      "expected_sha256": "8272391b66db3a13e956b543dd4113a4ebd153fdb5717033a63e80d8bedac338",
+      "actual_sha256": "8272391b66db3a13e956b543dd4113a4ebd153fdb5717033a63e80d8bedac338",
+      "unchanged": true
+    },
+    {
+      "path": "reading/report-ch20-web-excerpts.txt",
+      "expected_sha256": "618635e0207321d29c8e7ca2efced2096f06116e6365acc061d5ebf028880550",
+      "actual_sha256": "618635e0207321d29c8e7ca2efced2096f06116e6365acc061d5ebf028880550",
+      "unchanged": true
+    },
+    {
+      "path": "reading/report-corrigendum-web-excerpt.txt",
+      "expected_sha256": "54bb011cb941bc1a5ecdf8c94a090e6c069717af48615dcf1778f20f022024b5",
+      "actual_sha256": "54bb011cb941bc1a5ecdf8c94a090e6c069717af48615dcf1778f20f022024b5",
+      "unchanged": true
+    },
+    {
+      "path": "reading/report-publication-web-excerpt.txt",
+      "expected_sha256": "d8546a0a280e58bb79b5713ebf217f191f342136e60f75e89af43627794135bb",
+      "actual_sha256": "d8546a0a280e58bb79b5713ebf217f191f342136e60f75e89af43627794135bb",
+      "unchanged": true
+    }
+  ],
+  "local_link_checks": [
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "target": "reading/ombudsman-2021-web-excerpts.txt",
+      "resolved": "/Users/ren/theories/sources/33-governance-recourse-2026-10-06/implementation-followthrough/reading/ombudsman-2021-web-excerpts.txt",
+      "exists": true
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "target": "reading/ombudsman-2022-web-excerpts.txt",
+      "resolved": "/Users/ren/theories/sources/33-governance-recourse-2026-10-06/implementation-followthrough/reading/ombudsman-2022-web-excerpts.txt",
+      "exists": true
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "target": "reading/services-australia-2022-23-web-excerpts.txt",
+      "resolved": "/Users/ren/theories/sources/33-governance-recourse-2026-10-06/implementation-followthrough/reading/services-australia-2022-23-web-excerpts.txt",
+      "exists": true
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-NOTICE-EVIDENCE.md",
+      "resolved": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-NOTICE-EVIDENCE.md",
+      "exists": true
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "target": "reading/ombudsman-2022-appendix-search-description.txt",
+      "resolved": "/Users/ren/theories/sources/33-governance-recourse-2026-10-06/implementation-followthrough/reading/ombudsman-2022-appendix-search-description.txt",
+      "exists": true
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "target": "metadata/retrieval.json",
+      "resolved": "/Users/ren/theories/sources/33-governance-recourse-2026-10-06/implementation-followthrough/metadata/retrieval.json",
+      "exists": true
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "target": "metadata/reading-provenance.json",
+      "resolved": "/Users/ren/theories/sources/33-governance-recourse-2026-10-06/implementation-followthrough/metadata/reading-provenance.json",
+      "exists": true
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "target": "manifest.json",
+      "resolved": "/Users/ren/theories/sources/33-governance-recourse-2026-10-06/implementation-followthrough/manifest.json",
+      "exists": true
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "target": "metadata/verification.json",
+      "resolved": "/Users/ren/theories/sources/33-governance-recourse-2026-10-06/implementation-followthrough/metadata/verification.json",
+      "exists": true
+    },
+    {
+      "document": "sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "target": "metadata/parent-snapshot-before.json",
+      "resolved": "/Users/ren/theories/sources/33-governance-recourse-2026-10-06/implementation-followthrough/metadata/parent-snapshot-before.json",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-NOTICE-EVIDENCE.md",
+      "target": "GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "resolved": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-RECOURSE-EVIDENCE.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-NOTICE-EVIDENCE.md",
+      "target": "GOVERNANCE-NOTICE-CONTRACT.md",
+      "resolved": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-NOTICE-CONTRACT.md",
+      "exists": true
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-NOTICE-EVIDENCE.md",
+      "target": "../../../../sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "resolved": "/Users/ren/theories/sources/33-governance-recourse-2026-10-06/implementation-followthrough/README.md",
+      "exists": true
+    }
+  ],
+  "reading_line_range_checks": [
+    {
+      "path": "reading/ombudsman-2021-web-excerpts.txt",
+      "observed_lines": 192,
+      "expected_lines": 192,
+      "exact_range_order": true
+    },
+    {
+      "path": "reading/ombudsman-2022-web-excerpts.txt",
+      "observed_lines": 122,
+      "expected_lines": 122,
+      "exact_range_order": true
+    },
+    {
+      "path": "reading/services-australia-2022-23-web-excerpts.txt",
+      "observed_lines": 57,
+      "expected_lines": 57,
+      "exact_range_order": true
+    }
+  ],
+  "source_note": {
+    "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/GOVERNANCE-NOTICE-EVIDENCE.md",
+    "sha256": "bd474f7e1c8010266405fe4253535ef534ca90f5e9e6890b329ad2c2647944ce",
+    "word_count_whitespace": 788
+  },
+  "aggregate_analysis_performed": false,
+  "all_checks_passed": true
+}

@@ -218,6 +218,10 @@ def run_one(H, prior, environment, parity, phase=None, fuel=None, **kwargs):
         assert result['acquired_retained'] and result['use_confirmed']
         assert result['physical_phase'] == ordinary['physical_phase']
     ledger = replay(result, H, prior, kwargs.get('tariff', implementation.access.Tariff()), kwargs.get('capacity', 256))
+    if starting <= Q(prior['fuel']):
+        withdrawal = Q(prior['fuel'])-starting
+        assert Q(145) == (89+Q(1984289,65536)+Q(prior['spent'])+prior['wasted']
+                          +withdrawal+Q(result['spent'])+Q(result['fuel'])+result['source_remaining'])
     return result, ledger
 
 
@@ -231,9 +235,12 @@ def main():
         for parity in (0, 1):
             for phase in range(len(target.outputs)):
                 result, ledger = run_one(H, p, target, parity, phase=phase)
+                assert result['acquired_retained']
                 statuses[result['status']] = statuses.get(result['status'], 0)+1
                 inherited.append({'family': k, 'phase': phase, 'parity': parity,
-                                  'status': result['status'], 'retained': result['retained'], 'ledger': ledger})
+                                  'status': result['status'], 'retained': result['retained'],
+                                  'acquired_retained': result['acquired_retained'],
+                                  'use_confirmed': result['use_confirmed'], 'ledger': ledger})
                 result, ledger = run_one(H, p, target, parity, phase=phase, fuel=100)
                 assert result['retained'] and result['selected']['family'] == k
                 assert result['selected']['parity'] == parity

@@ -26,6 +26,8 @@ An observation map need not reproduce every microscopic detail. It must preserve
 
 ## 3. What would discriminate the missing interfaces
 
+**Subsequent memory-correction study, 6 October 2026:** [the source and mathematical audit](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md) retains the distinction between repaired storage and later execution. A subsequent [fixed pilot](../../../../experiments/integrated-correction/selective-handoff/README.md) adds 24 actual fresh-context responses to authentic archived corrections, varying confirming, defeating and unrelated-setting evidence. Both instruction arms pass all outputs; no added reminder advantage is observed. This establishes selective assessment under supplied scope/reliability premises, not autonomous evidence acquisition, persistent repair or downstream external action. Packet presence is held constant, so its separate causal contribution is unmeasured.
+
 The following are proposed contrasts, not completed experiments or retrospectively registered predictions.
 
 | Named connection | Matched contrast | Distinct observations required |

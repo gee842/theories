@@ -1,0 +1,99 @@
+{
+  "scope": "Robodebt historical recourse, 2015–2023",
+  "preserved_on": "2026-10-06",
+  "original_source_bodies_retrieved": 0,
+  "reader_source_count": 5,
+  "reader_method": "web.run open/find; extracted text deduplicated by reader line number per source and ordered; partial selections; no wording edits",
+  "reader_http_metadata": "Not exposed by the web reader; no HTTP status or redirect chain invented",
+  "rendering": "PDF screenshot requests returned citation-only strings to this tool interface; no local PDF or successful rendered-page inspection claimed",
+  "sources": [
+    {
+      "id": "report",
+      "official_url": "https://robodebt.royalcommission.gov.au/publications/report",
+      "read_url": "https://www.monash.edu/__data/assets/pdf_file/0007/3365503/report_of-the-royal-commission-into-the-robodebt-scheme.pdf",
+      "reading": "reading/report-ch20-web-excerpts.txt",
+      "reported_pages": 1052,
+      "edition_checks": [
+        "2023 copyright present",
+        "p314 §9.3 matches the replacement passage in the official corrigendum"
+      ],
+      "edition_identity": "Partial markers checked only; original bytes and complete edition identity unverified",
+      "license": "Report's inside front cover: CC BY 4.0 except Coat of Arms and otherwise stated material",
+      "coverage": "Selected copyright and p314 correction markers; chapter20 mainly printed553–564. Gaps retained; not complete report or chapter."
+    },
+    {
+      "id": "publication_page",
+      "url": "https://robodebt.royalcommission.gov.au/publications/report",
+      "reading": "reading/report-publication-web-excerpt.txt",
+      "coverage": "Identification and publication/version notice"
+    },
+    {
+      "id": "corrigendum",
+      "url": "https://robodebt.royalcommission.gov.au/system/files/2023-07/rcc-corrigendum-28-july-2023.pdf",
+      "reading": "reading/report-corrigendum-web-excerpt.txt",
+      "reported_pages": 1,
+      "coverage": "31 extracted lines, not original PDF"
+    },
+    {
+      "id": "court",
+      "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2021/2021fca0634",
+      "reading": "reading/court-2021fca0634-web-excerpts.txt",
+      "coverage": "Selected Orders Annexure C, introduction, paragraphs58–61 and89; no full HTML",
+      "license": "No explicit open reuse license verified"
+    },
+    {
+      "id": "ombudsman",
+      "url": "https://www.ombudsman.gov.au/__data/assets/pdf_file/0022/43528/Report-Centrelinks-automated-debt-raising-and-recovery-system-April-2017.pdf",
+      "reading": "reading/ombudsman-2017-web-excerpts.txt",
+      "reported_pages": 113,
+      "coverage": "Identification and selected paragraphs3.48–3.50 and2.28–2.33; incomplete report",
+      "license": "No explicit open reuse license verified"
+    }
+  ],
+  "failures": [
+    {
+      "resource": "official report page",
+      "method": "urllib Request with Mozilla user agent",
+      "result": "read timeout at60seconds; no body saved"
+    },
+    {
+      "resource": "official volumes1/2",
+      "method": "web reader",
+      "result": "size access limit",
+      "reported_bytes": [
+        12131390,
+        13744472
+      ]
+    },
+    {
+      "resource": "official volume2",
+      "method": "curl HTTP2 then HTTP1.1",
+      "result": "HTTP2 INTERNAL_ERROR92; timeout/receive failure, no PDF saved"
+    },
+    {
+      "resource": "court HTML",
+      "method": "urllib and curl",
+      "result": "HTTP403",
+      "header_file": "metadata/2021fca0634.headers.txt"
+    },
+    {
+      "resource": "Ombudsman PDF",
+      "method": "curl",
+      "result": "HTTP403",
+      "header_file": "metadata/ombudsman2017.headers.txt"
+    },
+    {
+      "resource": "Monash report PDF",
+      "method": "curl",
+      "result": "HTTP403",
+      "header_file": "metadata/monash-report.headers.txt"
+    }
+  ],
+  "header_handling": "Failed-response headers retained as metadata; Set-Cookie values redacted. No failed-response body retained as an original.",
+  "inference_limits": [
+    "Reader text is not an original-file download.",
+    "No byte-identity comparison to official report.",
+    "No complete exhibit or hearing-transcript audit.",
+    "No new aggregates, live models, external messages or real-world decision actions."
+  ]
+}

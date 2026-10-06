@@ -31,3 +31,9 @@ The author applied the requested clarification, explicitly identifying −0.76 a
 [results]: ../../../../experiments/recipient-harm-valuation/results.json
 [verification]: ../../../../experiments/recipient-harm-valuation/independent-verification.json
 [audit]: ../../../../experiments/recipient-harm-valuation/source-summary-audit.json
+
+## Neural-extension acceptance — 6 October 2026
+
+Accepted the added section “From shared responses to recipient-directed choice” at current canonical SHA-256 `309ececbbb21e184e99d73249504736c672b589a472977efd8380912333e7ca8`. The [independent neural-interface review](SHARED-AFFECT-ACTION-REVIEW.md) records its primary-source, interpretation and causal-contract checks. This is a literature and identification extension; it reports no new neural-data computation and does not join distinct studies into one demonstrated causal history.
+
+An exact byte comparison against Git revision `113a956` confirms that removing only the new section reproduces the previously accepted report, SHA-256 `abb7a2bd5dd9e260c660b261dfd9127ca847f4fb02de951c6ca202120f9d6b70`. The behavioral numbers and interpretation outside that section are unchanged. All earlier numerical receipts and acceptance identities above remain historical records; no numerical validation was repeated for this addition. **Current canonical accepted within its stated combined scopes; no outstanding correction.**

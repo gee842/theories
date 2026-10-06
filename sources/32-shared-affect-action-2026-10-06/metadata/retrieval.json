@@ -1,0 +1,87 @@
+{
+  "scope": "Minimal primary-document preservation, no neural recordings/videos/supplement PDF downloads",
+  "prior_access_failures": [
+    "Direct PMC web reading of Wu2023 returned reCAPTCHA.",
+    "ScienceDirect direct web fetch returned403.",
+    "Reviewer reported initial EuropePMC attempt for Schneider2020 returned500; successful PMC HTML used instead."
+  ],
+  "files": [
+    {
+      "path": "original/Wu2023-PMC9826941.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9826941/fullTextXML",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9826941/fullTextXML",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T00:32:07.873355+00:00",
+      "method": "Python urllib urlopen; independent retrieval after first successful reading; no model or benchmark execution",
+      "bytes": 163030,
+      "sha256": "97b266e3a3e6d51373491bc8d30390a66f1c6742407cd09fd10c36ae4b7d3fa9",
+      "headers_path": "metadata/Wu2023.headers.txt",
+      "license_observed": "CC BY-NC-ND 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "license_scope": "Article; not an unprovided raw-data license"
+    },
+    {
+      "path": "original/Carrillo2019-PMC6488290.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6488290/",
+      "final_url": null,
+      "status": null,
+      "network_retrieval_time": null,
+      "method": "Exact body copied from independent reviewer successful urllib Request with User-Agent Mozilla/5.0 and timeout 20; original body at /tmp/PMC6488290-source.html",
+      "reviewer": "/root/cue_grounding_review",
+      "copied_at_utc": "2026-10-06T00:32:07.875683+00:00",
+      "source_file_mtime_utc": "2026-10-06T00:30:15.289546+00:00",
+      "bytes": 256761,
+      "sha256": "3be01c81c3dbfe5399e2d76706ce4d2a4ddfcdae6370d70acf31cc9c1f41a4fe",
+      "headers_path": null,
+      "provenance_omissions": "Reviewer did not save status, response headers or final redirect URL. Source-file mtime is local save time, not a verified network timestamp.",
+      "license_observed": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "path": "original/Schneider2020-PMC7541607.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7541607/",
+      "final_url": null,
+      "status": null,
+      "network_retrieval_time": null,
+      "method": "Exact body copied from independent reviewer successful urllib Request with User-Agent Mozilla/5.0 and timeout 20; original body at /tmp/PMC7541607-source.html",
+      "reviewer": "/root/cue_grounding_review",
+      "copied_at_utc": "2026-10-06T00:32:07.876259+00:00",
+      "source_file_mtime_utc": "2026-10-06T00:30:15.273507+00:00",
+      "bytes": 246100,
+      "sha256": "b8f07a0e2069c1de8674eb5d065bafe866fb6ba35ab5cdf5b1a3b0ed87857e83",
+      "headers_path": null,
+      "provenance_omissions": "Reviewer did not save status, response headers or final redirect URL. Source-file mtime is local save time, not a verified network timestamp.",
+      "license_observed": "No explicit open reuse license observed in inspected PMC manuscript",
+      "license_url": null
+    },
+    {
+      "path": "original/Carrillo2019-correction-PMC6584327.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6584327/fullTextXML",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6584327/fullTextXML",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T00:34:21.427361+00:00",
+      "method": "Python urllib Request with Mozilla/5.0 User-Agent",
+      "bytes": 4017,
+      "sha256": "f6981ecf0dcd5cda194bd5a170d61894a2e9c1e74fc6c8f05d3ddc1c5c9f151b",
+      "headers_path": "metadata/Carrillo2019-correction-PMC6584327.xml.headers.txt",
+      "license_observed": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "path": "original/Carrillo2019-Mendeley-rkt957v4n4-v1.html",
+      "requested_url": "https://data.mendeley.com/datasets/rkt957v4n4/1",
+      "final_url": "https://data.mendeley.com/datasets/rkt957v4n4/1",
+      "status": 200,
+      "retrieved_at_utc": "2026-10-06T00:34:23.026085+00:00",
+      "method": "Python urllib Request with Mozilla/5.0 User-Agent",
+      "bytes": 126852,
+      "sha256": "57674c1d428941086d62fc312ef243b08d99dd8a2036aa81f7246816c9e84eca",
+      "headers_path": "metadata/Carrillo2019-Mendeley-rkt957v4n4-v1.html.headers.txt",
+      "license_observed": "Dataset identified as CC BY 4.0; landing page contains its own site notices",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "metadata_discovery_failures": [
+    "Mendeley /public-api/datasets/rkt957v4n4/versions/1 and /public-api/datasets/rkt957v4n4/versions/1/files both returned404. These are endpoint failures, not evidence that the published dataset is empty. Landing metadata confirms a public dataset but file schema was not obtained."
+  ]
+}

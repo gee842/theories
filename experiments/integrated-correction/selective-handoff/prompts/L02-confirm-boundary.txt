@@ -1,0 +1,32 @@
+This is a benign synthetic routing assessment. Work only from this message. Do not use tools, inspect files, browse, contact agents, or write files. Return your final answer directly. Do not discuss the study design.
+
+TASK
+All five fields are binary. The target setting is Aster, episode 1. Throughout each setting and episode there is one deterministic rule. Different settings and different episodes may have different rules; there is no presumption of persistence or change.
+Exactly two rules are allowed in the current target: B, route equals oak; or P, the corrected rule described in the archived packet below. These are the entire candidate family. The packet was correct for Aster, episode 0. Its statements about future cases were written in that historical episode and are not a guarantee about episode 1. The following audited row is exact for its labeled setting and episode. No other current observations or cross-setting equivalence are supplied.
+
+ARCHIVED PACKET FROM ASTER EPISODE 0
+Verified current rule: route = oak XOR [(elm=0) AND (fir=0)]. Invert oak exactly when elm and fir are both zero; beech and pine are irrelevant. Two audited flips were (elm,oak,fir,beech,pine)=(0,0,0,1,1), route 1, and (0,1,0,0,0), route 0. Their only shared pair of non-oak field values is elm=0, fir=0, uniquely identifying the exception under the stated hypothesis class. The other six audited cases also matched this rule. Apply it to all future cases.
+END ARCHIVED PACKET
+
+CURRENT AUDITED ROW
+setting: Aster; episode: 1
+fields: elm, oak, fir, beech, pine
+values: 0, 0, 0, 1, 1
+verified route: 1
+
+TARGET CASES, ALL ASTER EPISODE 1
+case | elm | oak | fir | beech | pine
+T01 | 0 | 0 | 0 | 0 | 0
+T02 | 0 | 1 | 0 | 1 | 0
+T03 | 1 | 0 | 0 | 0 | 0
+T04 | 1 | 1 | 0 | 0 | 0
+T05 | 1 | 1 | 0 | 1 | 1
+T06 | 0 | 0 | 0 | 0 | 1
+T07 | 0 | 1 | 0 | 0 | 1
+T08 | 1 | 0 | 0 | 0 | 1
+
+OUTPUT CONTRACT
+For each target case, return 0 or 1 only if every current target rule consistent with the supplied information gives that route. Otherwise return "?". This is a warranted-output task: guessing a hidden true rule is not requested. Return only JSON in this shape: {"answers":[eight entries, each 0, 1, or "?"]}.
+
+ASSESSMENT INSTRUCTION
+Assess the supplied materials carefully and answer the current target cases accurately. Check the setting and episode of evidence before using it; retain an inherited correction where supported, revise it when defeated, and preserve uncertainty where the evidence does not decide.

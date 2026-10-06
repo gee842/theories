@@ -1,0 +1,194 @@
+[
+  {
+    "position": 1,
+    "trial_id": "L06-defeat-ordinary",
+    "returned_task_name": "/root/reuse01",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:26:13.656673+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 2,
+    "trial_id": "L02-foreign-boundary",
+    "returned_task_name": "/root/reuse02",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:26:13.656813+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 3,
+    "trial_id": "L08-confirm-ordinary",
+    "returned_task_name": "/root/reuse03",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:26:13.656815+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 4,
+    "trial_id": "L12-confirm-boundary",
+    "returned_task_name": "/root/reuse04",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:27:29.688960+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 5,
+    "trial_id": "L08-confirm-boundary",
+    "returned_task_name": "/root/reuse05",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:27:29.689103+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 6,
+    "trial_id": "L06-foreign-ordinary",
+    "returned_task_name": "/root/reuse06",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:27:29.689106+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 7,
+    "trial_id": "L12-foreign-ordinary",
+    "returned_task_name": "/root/reuse07",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:28:32.852000+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 8,
+    "trial_id": "L08-foreign-boundary",
+    "returned_task_name": "/root/reuse08",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:28:32.852178+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 9,
+    "trial_id": "L12-confirm-ordinary",
+    "returned_task_name": "/root/reuse09",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:28:32.852181+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 10,
+    "trial_id": "L02-foreign-ordinary",
+    "returned_task_name": "/root/reuse10",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:29:38.370558+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 11,
+    "trial_id": "L06-foreign-boundary",
+    "returned_task_name": "/root/reuse11",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:29:38.370708+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 12,
+    "trial_id": "L08-defeat-ordinary",
+    "returned_task_name": "/root/reuse12",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:29:38.370710+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 13,
+    "trial_id": "L02-defeat-boundary",
+    "returned_task_name": "/root/reuse13",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:30:47.374065+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 14,
+    "trial_id": "L02-confirm-ordinary",
+    "returned_task_name": "/root/reuse14",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:30:47.374215+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 15,
+    "trial_id": "L12-foreign-boundary",
+    "returned_task_name": "/root/reuse15",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:30:47.374217+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 16,
+    "trial_id": "L02-confirm-boundary",
+    "returned_task_name": "/root/reuse16",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:31:55.506547+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 17,
+    "trial_id": "L06-confirm-boundary",
+    "returned_task_name": "/root/reuse17",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:31:55.506715+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 18,
+    "trial_id": "L06-confirm-ordinary",
+    "returned_task_name": "/root/reuse18",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:31:55.506717+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 19,
+    "trial_id": "L08-foreign-ordinary",
+    "returned_task_name": "/root/reuse19",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:33:04.156222+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 20,
+    "trial_id": "L12-defeat-ordinary",
+    "returned_task_name": "/root/reuse20",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:33:04.156374+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 21,
+    "trial_id": "L06-defeat-boundary",
+    "returned_task_name": "/root/reuse21",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:33:04.156376+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 22,
+    "trial_id": "L12-defeat-boundary",
+    "returned_task_name": "/root/reuse22",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:34:13.868032+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 23,
+    "trial_id": "L02-defeat-ordinary",
+    "returned_task_name": "/root/reuse23",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:34:13.868170+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  },
+  {
+    "position": 24,
+    "trial_id": "L08-defeat-boundary",
+    "returned_task_name": "/root/reuse24",
+    "arguments_source": "dispatch-plan.json",
+    "recorded_at_utc": "2026-10-06T01:34:13.868172+00:00",
+    "basis": "Orchestrator transcription of actual spawn tool return; not independent platform log"
+  }
+]

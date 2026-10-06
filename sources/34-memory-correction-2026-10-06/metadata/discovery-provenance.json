@@ -1,0 +1,8 @@
+{
+  "status": "superseded initial discovery, not current assessment",
+  "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUCCESSOR-EVIDENCE-AVAILABILITY.md",
+  "preserved_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/MEMORY-CORRECTION-DISCOVERY.md",
+  "bytes": 9373,
+  "sha256": "2464e8250015d88470a7dd9d84196ec58a0e0e59ca26fdf6b82d539874eada5a",
+  "reason": "Initial LongMemEval-oriented discovery replaced by parent-selected CoMemBench, MemSecBench and SND audit; unique precursor search preserved without duplicate current note."
+}

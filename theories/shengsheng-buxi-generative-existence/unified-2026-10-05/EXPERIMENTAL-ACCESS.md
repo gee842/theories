@@ -2,6 +2,8 @@
 
 6 October 2026. AI-authored continuation of [acquired abstraction](ABSTRACTION-ACQUISITION.md), following [Ren's instruction to continue](../../../sources/15-codex-theory-conversations/2026-10-06-experimental-access-continuation.md). Named connection: **retained learned model → paid tests of apparatus assumptions → qualified diagnosis or retained ambiguity**, within [generative grounding](GENERATIVE-GROUNDING.md).
 
+**Model-family continuation, 6 October 2026:** [the subsequent result](MODEL-FAMILY-REVISION.md) characterizes sufficient memory for historical reinterpretation and implements paid fresh current-family reacquisition using this actual retained model and resources. A supplied structural edit generates a larger candidate; observations select its current behavior. This closes the reacquisition route of the next bridge below. Reusable raw-evidence retention and the origin/selection of candidate generators and retention policies remain open; this access result and its receipts retain their historical scope.
+
 The bounded result is positive: an acquired model can guide experiments that test a previously assumed reset and distinguish some sensor changes from changes in the process being sensed. The same construction establishes an exact limit: some explanations remain indistinguishable through every experiment using that sensor. A consequence channel can separate them only under additional, explicit assumptions about that channel. This is conditional synthetic research with hand proofs and independent executable checks.
 
 ## What actually continues

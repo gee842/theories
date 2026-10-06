@@ -1,0 +1,113 @@
+{
+  "package": "34-memory-correction-2026-10-06",
+  "created_on": "2026-10-06",
+  "hash_algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4336,
+      "sha256": "3f9074b842d65c4777454904c173dffd5deb3ce336263986f01b20697ceaf411"
+    },
+    {
+      "path": "metadata/CoMemBench-HF-info.json",
+      "bytes": 2504,
+      "sha256": "4ad31e8e6ed147217a0475e0f9a682b1302d02fd7b4be5c33bd89e0f3c9d866d"
+    },
+    {
+      "path": "metadata/CoMemBench-HF-tree.json",
+      "bytes": 2877,
+      "sha256": "2f262292606fae576632a47845f7d09274e60b02e028b87edb755efade6d7acc"
+    },
+    {
+      "path": "metadata/discovery-provenance.json",
+      "bytes": 621,
+      "sha256": "33554a14ae684399e6dd3e6259e41899735513059bc2dab7f94ad5e5ea7bbc03"
+    },
+    {
+      "path": "metadata/retrieval.json",
+      "bytes": 17241,
+      "sha256": "5b7dd00ed2f748a46accf4f436ed5a85ffe635cef5003cbd3f4eed73cb906b02"
+    },
+    {
+      "path": "metadata/verification.json",
+      "bytes": 6279,
+      "sha256": "e20462871f91608530b044a64ee2f5f103a44f716db14445487fcac7fa35d551"
+    },
+    {
+      "path": "original/CoMemBench-2609.32192v2.html",
+      "bytes": 372298,
+      "sha256": "f91196fe62bd802f6d84b2c1c2dd721a62290df09849ffd8dd7a67206cb00f11"
+    },
+    {
+      "path": "original/CoMemBench-HF/LICENSE",
+      "bytes": 1057,
+      "sha256": "5b500df238003f2911ca1a130b7e6ed8c494f3ed08efc704d126936533724a00"
+    },
+    {
+      "path": "original/CoMemBench-HF/README.md",
+      "bytes": 12888,
+      "sha256": "28c26212f89f337872fa44da01ed6d0718ee396c4daaf429f3c2df0275ac842c"
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/artifact.schema.json",
+      "bytes": 1956,
+      "sha256": "ba5ad0f236911283c44bce7098e2479672c06ffddd3dd7e28041693934d97eeb"
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/benchmark_instance.schema.json",
+      "bytes": 1030,
+      "sha256": "7bb12cfb892711effa7510f04fcac170191a1e4179b3827c6f52864952322f0c"
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/case_init.schema.json",
+      "bytes": 891,
+      "sha256": "a71cddf477b37a73cfe926434057e85b5767625959018658c04407e0802db7a2"
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/handoff_oracle.schema.json",
+      "bytes": 1830,
+      "sha256": "e4dcb8329685784f448297e19b104ca0cfe58ed5fe90a3064f1a6a2d566d8fe1"
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/memory_proposal.schema.json",
+      "bytes": 844,
+      "sha256": "12bd924866b35b20cefb43a06f2458aa68aca7a16a729714894d5bd9d1c53fbc"
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/node_context.schema.json",
+      "bytes": 884,
+      "sha256": "bd2987b7f62bb08102ccd73d8a572e319c54b7099c338295db6b40e173e4491d"
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/node_view.schema.json",
+      "bytes": 4558,
+      "sha256": "8858b8d15e049d361aa9da05e547dde70e4c6971266a7020018923621719ecd9"
+    },
+    {
+      "path": "original/CoMemBench-HF/schemas/workflow_family.schema.json",
+      "bytes": 7747,
+      "sha256": "2e652b4c5315f6e72639b661feaa3e476d60d773c56e2506482ad2f204b392c2"
+    },
+    {
+      "path": "original/CoMemBench-project.html",
+      "bytes": 160161,
+      "sha256": "9070367273e3343808f42a82a7aa138aab9fad863529fa7f4f07102fafcd2570"
+    },
+    {
+      "path": "original/MemSecBench-2607.27080v1.html",
+      "bytes": 431977,
+      "sha256": "dc7dac46e476f65d731dad380e2b2d09471d07dda36497aaf5fd5c1684f13161"
+    },
+    {
+      "path": "original/SND-2605.22842v1.html",
+      "bytes": 571541,
+      "sha256": "255de7d2504274e82848b22b5840eb6c4cc8466bbe0a849df95d9a74c604c303"
+    },
+    {
+      "path": "original/SND-project.html",
+      "bytes": 38653,
+      "sha256": "4f17829b5c9bcd7a6d650c7316cd15850b26d80f8615a661edd2d92103ee7409"
+    }
+  ],
+  "self_exclusion": "manifest.json excludes itself"
+}

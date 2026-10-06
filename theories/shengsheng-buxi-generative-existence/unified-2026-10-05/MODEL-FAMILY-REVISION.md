@@ -2,6 +2,8 @@
 
 6 October 2026. AI-authored continuation of [experimental access](EXPERIMENTAL-ACCESS.md), following [Ren's instruction](../../../sources/15-codex-theory-conversations/2026-10-06-model-family-revision-continuation.md). Named connection: **retained abstraction → broader candidate family → paid reacquisition → revised prediction**, supporting [generative grounding](GENERATIVE-GROUNDING.md).
 
+**Revision-policy boundary continuation, 6 October 2026:** [the subsequent audit](META-REVISION.md) now follows these actual retained endpoints into further installed use and tests the affordability of additional installation. It also characterizes exact future-question memory requirements. Both named primary branches can confirm another prediction but cannot complete the scheduled maintenance or pay the earlier installation recipe. This is a scoped resource/information boundary, not a completed selector; the next positive connection requires payable native demand, feedback and support. This study and its historical receipts retain their original scope.
+
 A learned model can contribute to constructing and selecting a larger model. Our finite construction now performs that transition using actual retained content and resources. It also establishes a precise limitation: evidence compressed for one question need not preserve distinctions needed by a later question. Fresh experiments can repair current prediction without reconstructing the discarded past.
 
 ## What memory must preserve

@@ -1,0 +1,28 @@
+ApplicationEvidence.lean:22:6: error: `simp` made no progress
+ApplicationEvidence.lean:24:6: error: Tactic `contradiction` failed
+
+case h_2
+c d b : Bool
+r : RecipientArchive.Frame
+x✝ : Option RecipientArchive.Frame
+r✝ : RecipientArchive.Frame
+heq✝ : some r = some r✝
+h : (if (r✝.context == c && r✝.present && r✝.receipt) = true then some (r✝.action == d) else none) = some b
+⊢ ∃ r_1, some r = some r_1 ∧ r_1.context = c ∧ r_1.present = true ∧ r_1.receipt = true
+ApplicationEvidence.lean:40:3: error: unknown tactic
+ApplicationEvidence.lean:39:84: error: unsolved goals
+W : Type
+s : State W
+z command : Bool
+hi : PublicationSafety.Invariant z s
+hc : CurrentPublication s
+hs : RecipientAction.route s.working = some command
+⊢ s.normalized.first ≠ none ∨ s.normalized.second ≠ none ∨ s.normalized.third ≠ none
+ApplicationEvidence.lean:73:52: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  0 ≤ a ≤ 2
+  a - c ≥ 0
+where
+ a := ↑i
+ c := ↑s.reader.next

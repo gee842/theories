@@ -1,0 +1,11 @@
+{
+  "source_tool": "collaboration.list_agents",
+  "record_type": "Reviewer transcription of selected fields from the actual tool response; not an independently signed export",
+  "scope": "Live agents visible to the independent reviewer after the completed run",
+  "participant_names_returned": ["/root/reuse24"],
+  "other_agent_names_returned": ["/root", "/root/calibration_mechanism", "/root/cue_grounding_review"],
+  "final_texts": {
+    "/root/reuse24": "{\"answers\":[1,1,0,0,1,0,0,1]}"
+  },
+  "limitation": "Participants reuse01 through reuse23 were not returned by this live-agent snapshot; their finals could not be independently recovered through this tool at review time. Their saved responses and dispatch identities remain orchestrator-transcribed records."
+}

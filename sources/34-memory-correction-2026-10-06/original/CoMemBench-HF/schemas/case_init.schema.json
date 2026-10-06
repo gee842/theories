@@ -1,0 +1,41 @@
+{
+  "$id": "https://comembench.org/schemas/v17/case_init.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "family_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "global_goal": {
+      "maxLength": 10000,
+      "minLength": 30,
+      "type": "string"
+    },
+    "local_context_handles": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "type": "object"
+    },
+    "public_graph": {
+      "type": "object"
+    },
+    "scenario_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "comembench-case-init/v17"
+    }
+  },
+  "required": [
+    "schema_version",
+    "family_id",
+    "scenario_id",
+    "global_goal",
+    "public_graph",
+    "local_context_handles"
+  ],
+  "type": "object"
+}

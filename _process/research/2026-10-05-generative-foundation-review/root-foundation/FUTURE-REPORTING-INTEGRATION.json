@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-06",
+  "status": "pass",
+  "scope": "Source preservation and document integration only; no model calls, outcome reanalysis or new scientific validation.",
+  "source_package": {
+    "path": "sources/31-agentic-misalignment-public-2026-10-06",
+    "total_files": 19,
+    "manifest_bound_files_verified": 18,
+    "manifest_sha256": "64dce16d6bc0528681838eda0a4a19293bb30a6e34ccb2e90a2c6355beada674",
+    "original_files": 7
+  },
+  "documents": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "bytes": 9665,
+      "sha256": "028e1978019f65cfeb107110023ff3bfea13263a0f1d6598e721ed951e799419"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-CONTRACT.md",
+      "bytes": 7354,
+      "sha256": "855fd216f49babeca46eb4bf4b988ea3a4949a4a43be76f425db2de8b96e0820"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-REVIEW.md",
+      "bytes": 8901,
+      "sha256": "d0327c593b9c000278f4f05ec50ef64d80afb4060eb82f260645e6400ec65d0b"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MOTIVATED-MISLABELING-AVAILABILITY.md",
+      "bytes": 6603,
+      "sha256": "cf080ec80dadb9ce354dbaa551c4b3739cd5622d12af24928ca7c1cefc15fb36"
+    },
+    {
+      "path": "sources/31-agentic-misalignment-public-2026-10-06/README.md",
+      "bytes": 3955,
+      "sha256": "3e23ac6ca2d0ff63012219d627f51fababf49ba7efb54c1b6d828c007395a035"
+    }
+  ],
+  "review_binds_current_contract_and_canonical": true,
+  "local_file_targets_checked": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "target": "ALIGNMENT-AND-GOVERNANCE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "target": "EVALUATIVE-UPTAKE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "target": "EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "target": "REVISABLE-CONCERN-SETTLEMENT.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-CONTRACT.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MOTIVATED-MISLABELING-AVAILABILITY.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "target": "../../../sources/31-agentic-misalignment-public-2026-10-06/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-06-alignment-governance-and-future.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-CONTRACT.md",
+      "target": "FIXED-FINISH-LINE-AUDIT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-CONTRACT.md",
+      "target": "EVALUATIVE-UPTAKE-SCOPE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-CONTRACT.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-CONTRACT.md",
+      "target": "../../2026-10-05-revisable-concern/settlement/formal/REPORT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-REVIEW.md",
+      "target": "FUTURE-REPORTING-CONTRACT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-REVIEW.md",
+      "target": "../../../../sources/31-agentic-misalignment-public-2026-10-06/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FUTURE-REPORTING-REVIEW.md",
+      "target": "MOTIVATED-MISLABELING-AVAILABILITY.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MOTIVATED-MISLABELING-AVAILABILITY.md",
+      "target": "FUTURE-REPORTING-CONTRACT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MOTIVATED-MISLABELING-AVAILABILITY.md",
+      "target": "AGENTDOJO-REPLAY-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MOTIVATED-MISLABELING-AVAILABILITY.md",
+      "target": "FUTURE-REPORTING-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MOTIVATED-MISLABELING-AVAILABILITY.md",
+      "target": "../../../../sources/31-agentic-misalignment-public-2026-10-06/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MOTIVATED-MISLABELING-AVAILABILITY.md",
+      "target": "../../../../sources/31-agentic-misalignment-public-2026-10-06/metadata/availability.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MOTIVATED-MISLABELING-AVAILABILITY.md",
+      "target": "FUTURE-REPORTING-REVIEW.md"
+    },
+    {
+      "document": "sources/31-agentic-misalignment-public-2026-10-06/README.md",
+      "target": "metadata/retrieval.json"
+    },
+    {
+      "document": "sources/31-agentic-misalignment-public-2026-10-06/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "document": "sources/31-agentic-misalignment-public-2026-10-06/README.md",
+      "target": "original/summer-2026.html"
+    },
+    {
+      "document": "sources/31-agentic-misalignment-public-2026-10-06/README.md",
+      "target": "original/teaching-claude-why.html"
+    },
+    {
+      "document": "sources/31-agentic-misalignment-public-2026-10-06/README.md",
+      "target": "original/viewer/index.html"
+    },
+    {
+      "document": "sources/31-agentic-misalignment-public-2026-10-06/README.md",
+      "target": "original/viewer/assets/index-Ivi1Vlum.js"
+    },
+    {
+      "document": "sources/31-agentic-misalignment-public-2026-10-06/README.md",
+      "target": "original/viewer/static/manifest.json"
+    },
+    {
+      "document": "sources/31-agentic-misalignment-public-2026-10-06/README.md",
+      "target": "metadata/availability.json"
+    },
+    {
+      "document": "sources/31-agentic-misalignment-public-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MOTIVATED-MISLABELING-AVAILABILITY.md"
+    }
+  ],
+  "new_index_entry_targets_checked": [
+    {
+      "document": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "FUTURE-REPORTING-CONTRACT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "FUTURE-REPORTING-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "MOTIVATED-MISLABELING-AVAILABILITY.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../sources/31-agentic-misalignment-public-2026-10-06/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "EVALUATION-AND-FAITHFUL-REPORTING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "target": "EVALUATION-AND-FAITHFUL-REPORTING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "EVALUATION-AND-FAITHFUL-REPORTING.md"
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "31-agentic-misalignment-public-2026-10-06/README.md"
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md"
+    }
+  ],
+  "limits": [
+    "Local file existence checked; external links and heading anchors not revalidated by this check.",
+    "Shared indexes receive narrow additions; unrelated concurrent edits are not accepted by this receipt.",
+    "Earlier source-package verification remains a historical receipt; this integration checks the current standalone research notes."
+  ]
+}

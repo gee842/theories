@@ -1,0 +1,641 @@
+{
+  "assertions": 676,
+  "archive_details": [
+    {
+      "fixture": "L02",
+      "packet_rule": {
+        "base": "oak",
+        "exception": {
+          "elm": 0,
+          "fir": 0
+        }
+      },
+      "historical_candidates": 25,
+      "compatible_candidates": 1,
+      "baseline_overlap": 0,
+      "prior_service_overlap": 1,
+      "prior_successor_test_overlap": 6
+    },
+    {
+      "fixture": "L06",
+      "packet_rule": {
+        "base": "cedar",
+        "exception": {
+          "beech": 1,
+          "pine": 1
+        }
+      },
+      "historical_candidates": 25,
+      "compatible_candidates": 1,
+      "baseline_overlap": 0,
+      "prior_service_overlap": 2,
+      "prior_successor_test_overlap": 6
+    },
+    {
+      "fixture": "L08",
+      "packet_rule": {
+        "base": "birch",
+        "exception": {
+          "oak": 1,
+          "beech": 1
+        }
+      },
+      "historical_candidates": 25,
+      "compatible_candidates": 1,
+      "baseline_overlap": 0,
+      "prior_service_overlap": 3,
+      "prior_successor_test_overlap": 6
+    },
+    {
+      "fixture": "L12",
+      "packet_rule": {
+        "base": "cedar",
+        "exception": {
+          "maple": 0,
+          "yew": 1
+        }
+      },
+      "historical_candidates": 25,
+      "compatible_candidates": 1,
+      "baseline_overlap": 0,
+      "prior_service_overlap": 2,
+      "prior_successor_test_overlap": 6
+    }
+  ],
+  "rows": [
+    {
+      "id": "L06-defeat-ordinary",
+      "dispatch_position": 1,
+      "compatible_candidates": [
+        "B"
+      ],
+      "independent_expected": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "prompt_sha256": "041c71155611712e6476b2279405f5e54c8366b9ea121c9fc813d09e29c9559b"
+    },
+    {
+      "id": "L02-foreign-boundary",
+      "dispatch_position": 2,
+      "compatible_candidates": [
+        "B",
+        "P"
+      ],
+      "independent_expected": [
+        "?",
+        "?",
+        0,
+        1,
+        1,
+        "?",
+        "?",
+        0
+      ],
+      "prompt_sha256": "944f00de99bc707c533af91bc1da4839151ba21b2360ab16097841963076be7e"
+    },
+    {
+      "id": "L08-confirm-ordinary",
+      "dispatch_position": 3,
+      "compatible_candidates": [
+        "P"
+      ],
+      "independent_expected": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "prompt_sha256": "b18e8e76a9c3faf0813d3402108fee81ee9f50e664bd0a657b3c78de2f53c405"
+    },
+    {
+      "id": "L12-confirm-boundary",
+      "dispatch_position": 4,
+      "compatible_candidates": [
+        "P"
+      ],
+      "independent_expected": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prompt_sha256": "6277b79744c47e6aa5ab7fb57f6e993173e0be688e80434ca2322af39973d83c"
+    },
+    {
+      "id": "L08-confirm-boundary",
+      "dispatch_position": 5,
+      "compatible_candidates": [
+        "P"
+      ],
+      "independent_expected": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "prompt_sha256": "c23fc9f0460ba6895e74bde387f0a427bc933e7a4f896dc55f93eb3c7a1ad8f1"
+    },
+    {
+      "id": "L06-foreign-ordinary",
+      "dispatch_position": 6,
+      "compatible_candidates": [
+        "B",
+        "P"
+      ],
+      "independent_expected": [
+        1,
+        0,
+        0,
+        1,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "prompt_sha256": "f6d0cb5775ce056b8857582a178b264ca150cdec50642b47ab6865e99a7abcde"
+    },
+    {
+      "id": "L12-foreign-ordinary",
+      "dispatch_position": 7,
+      "compatible_candidates": [
+        "B",
+        "P"
+      ],
+      "independent_expected": [
+        0,
+        1,
+        0,
+        "?",
+        1,
+        "?",
+        "?",
+        "?"
+      ],
+      "prompt_sha256": "61004f7d094e79a4d68a98c947b5b4ee3761bc76302c1d397305d1dfd572e985"
+    },
+    {
+      "id": "L08-foreign-boundary",
+      "dispatch_position": 8,
+      "compatible_candidates": [
+        "B",
+        "P"
+      ],
+      "independent_expected": [
+        1,
+        1,
+        0,
+        0,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "prompt_sha256": "9875f66a38cd703407b6949e6b02a23003b2bde449704771f38b7c0a22a0c440"
+    },
+    {
+      "id": "L12-confirm-ordinary",
+      "dispatch_position": 9,
+      "compatible_candidates": [
+        "P"
+      ],
+      "independent_expected": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prompt_sha256": "b772d066a775aefb7f679f6e6d72e610d0c9d13cbaa61f97c3ff94973dcf1d1e"
+    },
+    {
+      "id": "L02-foreign-ordinary",
+      "dispatch_position": 10,
+      "compatible_candidates": [
+        "B",
+        "P"
+      ],
+      "independent_expected": [
+        "?",
+        "?",
+        0,
+        1,
+        1,
+        "?",
+        "?",
+        0
+      ],
+      "prompt_sha256": "3f5bbba522b3429c8e32d6f2ddff0094c6a75d00fabfa369c3ab2e2913c8b77e"
+    },
+    {
+      "id": "L06-foreign-boundary",
+      "dispatch_position": 11,
+      "compatible_candidates": [
+        "B",
+        "P"
+      ],
+      "independent_expected": [
+        1,
+        0,
+        0,
+        1,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "prompt_sha256": "12ba8a5586f74adafe26fbb3bf536cd2936d2fed228d547920db81c4d9e691c4"
+    },
+    {
+      "id": "L08-defeat-ordinary",
+      "dispatch_position": 12,
+      "compatible_candidates": [
+        "B"
+      ],
+      "independent_expected": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "prompt_sha256": "bc699c9936b3af0c993aa8d3cc6dd6d150394c4cdbfa08be596711a135de8a3b"
+    },
+    {
+      "id": "L02-defeat-boundary",
+      "dispatch_position": 13,
+      "compatible_candidates": [
+        "B"
+      ],
+      "independent_expected": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prompt_sha256": "61d5bc28d51d4ab08d03800d67d4d24799381a181bd8d44cbf82b17fe00fbe44"
+    },
+    {
+      "id": "L02-confirm-ordinary",
+      "dispatch_position": 14,
+      "compatible_candidates": [
+        "P"
+      ],
+      "independent_expected": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prompt_sha256": "f0ba4f946af5cfe599bb6e6f288c9d7b0dc6d83b7fd68d2a32ca1c92f8891b9f"
+    },
+    {
+      "id": "L12-foreign-boundary",
+      "dispatch_position": 15,
+      "compatible_candidates": [
+        "B",
+        "P"
+      ],
+      "independent_expected": [
+        0,
+        1,
+        0,
+        "?",
+        1,
+        "?",
+        "?",
+        "?"
+      ],
+      "prompt_sha256": "1ad8ff3aafc5e7ddc161d20e44387a03803159586b23d5cbbc09d503288904b8"
+    },
+    {
+      "id": "L02-confirm-boundary",
+      "dispatch_position": 16,
+      "compatible_candidates": [
+        "P"
+      ],
+      "independent_expected": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prompt_sha256": "3278e171a314d3400f60a2aa9e7ab561d45163dac629289fd5bd624039c6ba5e"
+    },
+    {
+      "id": "L06-confirm-boundary",
+      "dispatch_position": 17,
+      "compatible_candidates": [
+        "P"
+      ],
+      "independent_expected": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prompt_sha256": "b8b3bdc2a7e322b448db0fd113ff815ed2f281fd125dde1799c2930b6843afc6"
+    },
+    {
+      "id": "L06-confirm-ordinary",
+      "dispatch_position": 18,
+      "compatible_candidates": [
+        "P"
+      ],
+      "independent_expected": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prompt_sha256": "e94ab585cfbdad8cddd208cdaa555696bd8a37a124f76c50158d3e27f32c7d1f"
+    },
+    {
+      "id": "L08-foreign-ordinary",
+      "dispatch_position": 19,
+      "compatible_candidates": [
+        "B",
+        "P"
+      ],
+      "independent_expected": [
+        1,
+        1,
+        0,
+        0,
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "prompt_sha256": "997c73833da0192f9417fc734f9436d15421fe5b742effcdb00efc1a9551c205"
+    },
+    {
+      "id": "L12-defeat-ordinary",
+      "dispatch_position": 20,
+      "compatible_candidates": [
+        "B"
+      ],
+      "independent_expected": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "prompt_sha256": "a9b00b4b91e194a7ac931dedcc3e0f4c25baf176171079c3fb43f19d88ee015b"
+    },
+    {
+      "id": "L06-defeat-boundary",
+      "dispatch_position": 21,
+      "compatible_candidates": [
+        "B"
+      ],
+      "independent_expected": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "prompt_sha256": "2535cb1a8c3258cdafc7989d8fd5e649d1447167df29e5bf30f4cb98cc076cbf"
+    },
+    {
+      "id": "L12-defeat-boundary",
+      "dispatch_position": 22,
+      "compatible_candidates": [
+        "B"
+      ],
+      "independent_expected": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "prompt_sha256": "25b1d847acb8c9c3202e68b01764d0bcf00f645bc36dc373522088363c4c60ce"
+    },
+    {
+      "id": "L02-defeat-ordinary",
+      "dispatch_position": 23,
+      "compatible_candidates": [
+        "B"
+      ],
+      "independent_expected": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prompt_sha256": "97e3b04a4cb40c53bf3d99393d5a438c6e45c9be4dd294f29566788988ea15e6"
+    },
+    {
+      "id": "L08-defeat-boundary",
+      "dispatch_position": 24,
+      "compatible_candidates": [
+        "B"
+      ],
+      "independent_expected": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "prompt_sha256": "7cea32e5e1bc783582213a0d03dce2d4dbe6019fbe3140023ca116e903299a51"
+    }
+  ],
+  "status": "passed_pre_dispatch_core_audit",
+  "participant_calls": 0,
+  "participant_outputs_examined": 0,
+  "contexts": 24,
+  "answer_slots": 192,
+  "paired_prompts": 12,
+  "donor_blocks": 4,
+  "faults_rejected": [
+    "missing trial",
+    "wrong expected vector",
+    "changed inherited packet",
+    "wrong exception field value",
+    "target leaks calibration",
+    "changed source digest",
+    "scope corrupted with recomputed hash",
+    "arm changed with recomputed hash",
+    "dispatch position changed"
+  ],
+  "dispatch_plan": {
+    "records": 24,
+    "neutral_names": "reuse01 through reuse24",
+    "exact_arguments_verified": true,
+    "dispatch_performed": false
+  },
+  "parser_checks": {
+    "tested_isolated_function": "analyze.py:parsed",
+    "cases": [
+      "valid",
+      "whitespace",
+      "boolean",
+      "float",
+      "numeric string",
+      "null",
+      "out of range",
+      "negative",
+      "unknown string",
+      "nested",
+      "empty",
+      "fence",
+      "extra text",
+      "second JSON",
+      "extra key",
+      "missing key",
+      "top list",
+      "short",
+      "long",
+      "duplicate key",
+      "escaped duplicate key",
+      "NaN"
+    ],
+    "analyze_main_executed": false
+  },
+  "method": "Independent displayed-prompt and named-packet reconstruction; no prepare/analyze import or analyze.main execution.",
+  "files_sha256": {
+    "PROTOCOL.md": "7150bc30e496e29726205494ea92b62b362c656bdf8c506e3e5c111f47c621f3",
+    "prepare.py": "99978ad341b90986b4e0742096ab17428f3f37505c03325c600b686c875ffc5c",
+    "analyze.py": "2c76cbedfdc0e03c8e977074699ae34f47c107dcc09b94aae43fcae27d263287",
+    "fixtures.json": "98cbc85625a2d52d7540d9c873b4310a62bd66aa10e2f54672c0bc143eca3b23",
+    "trials.json": "f138ee6ba832a1cffa04769496ce4048e7f4046c09424564de1410d1d979e598",
+    "dispatch-plan.json": "a106e710f91b9b145a15701502fbbc28808b2ab8df1e9998038d2287ee7c1205",
+    "independent_check.py": "29d8bcab1b1c845c336406a46e80b6d2edb355d64579eb463407fb00fc95e7ed",
+    "development/PREPARATION.md": "cdb7fb282f5c90e78073fe6788864f343af85b9673554d1e6bfa25fe16aa89c2",
+    "prompts/L06-defeat-ordinary.txt": "041c71155611712e6476b2279405f5e54c8366b9ea121c9fc813d09e29c9559b",
+    "prompts/L02-foreign-boundary.txt": "944f00de99bc707c533af91bc1da4839151ba21b2360ab16097841963076be7e",
+    "prompts/L08-confirm-ordinary.txt": "b18e8e76a9c3faf0813d3402108fee81ee9f50e664bd0a657b3c78de2f53c405",
+    "prompts/L12-confirm-boundary.txt": "6277b79744c47e6aa5ab7fb57f6e993173e0be688e80434ca2322af39973d83c",
+    "prompts/L08-confirm-boundary.txt": "c23fc9f0460ba6895e74bde387f0a427bc933e7a4f896dc55f93eb3c7a1ad8f1",
+    "prompts/L06-foreign-ordinary.txt": "f6d0cb5775ce056b8857582a178b264ca150cdec50642b47ab6865e99a7abcde",
+    "prompts/L12-foreign-ordinary.txt": "61004f7d094e79a4d68a98c947b5b4ee3761bc76302c1d397305d1dfd572e985",
+    "prompts/L08-foreign-boundary.txt": "9875f66a38cd703407b6949e6b02a23003b2bde449704771f38b7c0a22a0c440",
+    "prompts/L12-confirm-ordinary.txt": "b772d066a775aefb7f679f6e6d72e610d0c9d13cbaa61f97c3ff94973dcf1d1e",
+    "prompts/L02-foreign-ordinary.txt": "3f5bbba522b3429c8e32d6f2ddff0094c6a75d00fabfa369c3ab2e2913c8b77e",
+    "prompts/L06-foreign-boundary.txt": "12ba8a5586f74adafe26fbb3bf536cd2936d2fed228d547920db81c4d9e691c4",
+    "prompts/L08-defeat-ordinary.txt": "bc699c9936b3af0c993aa8d3cc6dd6d150394c4cdbfa08be596711a135de8a3b",
+    "prompts/L02-defeat-boundary.txt": "61d5bc28d51d4ab08d03800d67d4d24799381a181bd8d44cbf82b17fe00fbe44",
+    "prompts/L02-confirm-ordinary.txt": "f0ba4f946af5cfe599bb6e6f288c9d7b0dc6d83b7fd68d2a32ca1c92f8891b9f",
+    "prompts/L12-foreign-boundary.txt": "1ad8ff3aafc5e7ddc161d20e44387a03803159586b23d5cbbc09d503288904b8",
+    "prompts/L02-confirm-boundary.txt": "3278e171a314d3400f60a2aa9e7ab561d45163dac629289fd5bd624039c6ba5e",
+    "prompts/L06-confirm-boundary.txt": "b8b3bdc2a7e322b448db0fd113ff815ed2f281fd125dde1799c2930b6843afc6",
+    "prompts/L06-confirm-ordinary.txt": "e94ab585cfbdad8cddd208cdaa555696bd8a37a124f76c50158d3e27f32c7d1f",
+    "prompts/L08-foreign-ordinary.txt": "997c73833da0192f9417fc734f9436d15421fe5b742effcdb00efc1a9551c205",
+    "prompts/L12-defeat-ordinary.txt": "a9b00b4b91e194a7ac931dedcc3e0f4c25baf176171079c3fb43f19d88ee015b",
+    "prompts/L06-defeat-boundary.txt": "2535cb1a8c3258cdafc7989d8fd5e649d1447167df29e5bf30f4cb98cc076cbf",
+    "prompts/L12-defeat-boundary.txt": "25b1d847acb8c9c3202e68b01764d0bcf00f645bc36dc373522088363c4c60ce",
+    "prompts/L02-defeat-ordinary.txt": "97e3b04a4cb40c53bf3d99393d5a438c6e45c9be4dd294f29566788988ea15e6",
+    "prompts/L08-defeat-boundary.txt": "7cea32e5e1bc783582213a0d03dce2d4dbe6019fbe3140023ca116e903299a51"
+  },
+  "source_sha256": {
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L01/maintenance-response.json": "583f69aac44725323485a113a74c1dd8d50c3af84142aef165acc783dd15f48d",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L02/baseline-prompt.txt": "e2db9e43b58ffefabca278b69326cdbcece2082b9705e1fd068c61c7855164f6",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L02/maintenance-prompt.txt": "6ce097e9ba599970c5460307ea4ac0ff8cf6aba4525135866c0896ade2149f25",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L02/maintenance-response.json": "3f1d4e6c7ab080e84c2f296b1784fc511489dbdbaea4d886500187247bf30303",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L02/private.json": "b8328668259c0cdc0376b33cb56ba99f14fbc0adff45559e99312c8194510d2f",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L03/maintenance-response.json": "6dfff42ceef7c8b97801b758cbbcbfdf0e0343a3d1b6ed852ee1c0b474571f9b",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L04/maintenance-response.json": "7f64c7deb161ab19b9b7a95a52b10de9b1f6ea7d5f9637922f4e8435f3201439",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L05/maintenance-response.json": "40d347c27407fe0673bc878560f2fdc680404ad0b0bdb93496bb115db94bde3a",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L06/baseline-prompt.txt": "85fd609bf6b2e3d2b16f656333a1b395c37757c92fb7d4ae721313862369bc65",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L06/maintenance-prompt.txt": "7a9af470a1ad8de519f9c2e36703491ad40f70e9c56151274915c68035cd4e41",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L06/maintenance-response.json": "ed3c5361c54101ef5638315197477efe939d9a0a72846f24eb69e9dab91a0b97",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L06/private.json": "7fc65095081a56f1c0c8d861c29c051bd2057a0c129a84078219707cced74bfb",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L07/maintenance-response.json": "f748f1d8ea7443ad02a935a2f757b3c56c7ff1517fed962ee48f998f3536140a",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L08/baseline-prompt.txt": "aec5fea7ac1d7750d579917778bd0f97ea24b109d98353b101a1a22ec5fa83d6",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L08/maintenance-prompt.txt": "44a2e872367b8621fe441261b092d93c51fc86ec441092645a39ed4d3d280cb3",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L08/maintenance-response.json": "3f1a8c8dbe20e8af1fb1dadeff1599efec477aa4e8234e6db4d834588ba31de7",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L08/private.json": "1548624b820d8412351b3ac355e54ca7da1561e8b3ad40f9b06b0115b0095301",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L09/maintenance-response.json": "377d5fc38d99da7a3f090b51aeae0d453128b8dd20ac6634e71828ac0fd489e7",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L10/maintenance-response.json": "9576b87fc619ca0d18e3f8642037ce570496eac3992d27500743f4e5a9b33d30",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L11/maintenance-response.json": "bf4146c3e8b5a1a1e1640f5c2488b8df7e2acbbfeff41d2413c2e758454853b6",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L12/baseline-prompt.txt": "3f5cf81bba99ec79a96f8ab84d655ef84397c58dbff4e885aef16fd5b116522c",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L12/maintenance-prompt.txt": "988e3ed892ff56b7531dbaab63d73928caa634f9d262df5e9cd01489b2230f77",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L12/maintenance-response.json": "ffff2865b6873cff5a2590c1707baf4c268b0c61d4170221a0e8d4a6d96d8199",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L12/private.json": "e0fc154ffbe92f9e7d5957bd6c9b434ecb900f129285d77904c7b6adbc7c4381",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L13/maintenance-response.json": "4b8b6a5929ec546e5a6882494be38d87b0c1d63f451cf4a5786da6a0ed632df7",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L14/maintenance-response.json": "d27feb41b9e2321e52432d3ca8af5193d285c02232475a0d4ec14972876f8ca4",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L15/maintenance-response.json": "03ecdc8c66e1abee3691e179dbd7dd6c20cb3c2cf9c5096f352db401d4559b5b",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L16/maintenance-response.json": "d3d7c6af8b1622a055f67cef93c919a42e35c38b2ea272c46a6bb89eef66ef0c",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L17/maintenance-response.json": "5c08b4bf68647a16e04586829462ad93e6f56395072e92576182cf9e7ebbd790",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L18/maintenance-response.json": "d643ae709a7e3af8ff456d1cfc7b31611a07c6a8f979ffcf6b74f00357ef004d",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L19/maintenance-response.json": "a1b249f2351ed7ae8dac8eab382a4869d1c2cec7cc6f45035a9353b9bc2ab239",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L20/maintenance-response.json": "6b2e255294b1c09fa225c0b3e9d0cdf04b90bc31dd85ef302adb0e2a284c4021",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L21/maintenance-response.json": "febd5c6d3e627ee89d1f1dc39b8bee897c5ff67aafdf4d188afe75df8cc1590a",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L22/maintenance-response.json": "dfe67745d4cd27c138c30af3287206640e8fd9679e183e66dbee396474e8ce5b",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L23/maintenance-response.json": "b6e089634599589a87c6a0e837c7e0f44c4c1aa3c7fa9c9fc4028480889ca67a",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L24/maintenance-response.json": "b040a1bf1d018b257e922b175c800a0a88d829fae68ab0e124694b55a2a65088",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L25/maintenance-response.json": "2fbe91f3981c9c87d5934feb4112e85c007b218f2579edac716ab3e6bdbf14cf",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L26/maintenance-response.json": "74770ef974fe76e35a4195dd5be4556cac08cf976049f56ffc630ee04c81688b",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L27/maintenance-response.json": "cd68dcfda7e513024e43248a8ddb5f78c81a0ef029cc4041a518da8d206699bf",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L28/maintenance-response.json": "befb3c4d12537457c1bde1234cdf9e3069b7e5fdb62bfd425a04fae7fa580c06",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L29/maintenance-response.json": "5d37d1fa6fc04dba2b38734bec9935f72bbdd37b4ddb7075d759aec61f7b59df",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L30/maintenance-response.json": "fad5b039fbcbd9c052679380d76f78212a1534bac01f142ff64025e1f82f88f9",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L31/maintenance-response.json": "99cedb0948c468e0c47f9d9e57612922d6296ca067d6a91b912bdb782cc220f6",
+    "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L32/maintenance-response.json": "a4025ed38cfb810675e8adf85572acfaec295d6e7fb3b91994de690ce2aad1af"
+  },
+  "scope": "Prospective fixture/parser validation. No empirical success estimate or platform isolation certification."
+}

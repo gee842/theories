@@ -1,0 +1,43 @@
+{
+  "$id": "https://comembench.org/schemas/v17/node_context.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "context_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "domain": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "family_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "local_context": {
+      "type": "object"
+    },
+    "node_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "scenario_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "comembench-node-context/v17"
+    }
+  },
+  "required": [
+    "schema_version",
+    "context_ref",
+    "domain",
+    "family_id",
+    "scenario_id",
+    "node_id",
+    "local_context"
+  ],
+  "type": "object"
+}

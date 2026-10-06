@@ -735,3 +735,114 @@ With identical laws for all models, coverage is common. At fixed \(c>0\), normal
 A claimed response guarantee needs sufficient information **or** sufficient overlap among acceptable responses, plus an actual means of acting. It need not require identifying every hidden fact. New evidence can help only when it separates relevant possibilities; purely normative disagreement is not automatically settled by additional sensor readings. Acquiring information may also consume resources, miss a deadline or alter authority, so its effect on the complete decision problem must be reassessed rather than inferred from informativeness alone.
 
 The [accepted application account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md) remains closed at its conditional scope. These results neither demand new randomization machinery for its settled witness nor convert a retained self-loss coefficient into a moral risk allowance. The next judgment must say what its requirement measures, what grounds it, which interpretations it covers and which causal capacities the learner actually possesses. The [reason-guided-action comparison](HUIGEN-SELF-GROUND-SOURCES.md#14-reason-guided-action-and-uncertain-outcomes) separates those obligations from the stronger attribution of acting for a justified reason. No empirical measurement, code experiment or formal compilation is added here.
+
+## 17. Evidence reporting and application-specific stakes
+
+6 October 2026. The connection is **warranted inference → recommendations under error stakes → practical responsibility**. These elementary decision-theoretic results apply the earlier information-preservation methods; they are not new statistical principles. Their constructive point is that preserving usable evidence can serve different applications without silently selecting one application's priorities.
+
+### T19. Fixed evidence does not determine a unique recommendation across stakes
+
+Let a finite evidence model yield a posterior \(q=\Pr(\theta=1\mid h)\) at a reachable transcript, where \(\theta\in\{0,1\}\). Its prior, observation law and application are independently justified premises. For actions \(a\in\{0,1\}\), give correct decisions zero loss, false positives loss \(c_{FP}>0\), and false negatives loss \(c_{FN}>0\). Expected losses are
+
+\[
+R(1)=(1-q)c_{FP},\qquad R(0)=qc_{FN}.
+\]
+
+Hence action 1 minimizes expected loss exactly when
+
+\[
+q\ge t:=\frac{c_{FP}}{c_{FP}+c_{FN}}.
+\tag{T19}
+\]
+
+At equality both actions minimize; choosing 1 there is a tie convention. The result follows by rearranging \(R(1)\le R(0)\).
+
+For \(0<q<1\), put \(o=q/(1-q)\). With \(c_{FN}=1\), choosing \(c_{FP}=o/2\) makes action 1 uniquely optimal, while \(c_{FP}=2o\) makes action 0 uniquely optimal. Thus no one binary action is optimal for every positive loss ratio at an interior posterior. At \(q=0\) or \(q=1\), the corresponding correct action is optimal for all such ratios. The evidence and posterior remain fixed throughout. Multiplying both losses by one positive constant preserves the threshold; changing their ratio changes the decision criterion.
+
+### T20. Exact common optimality under several applications
+
+For finite nonempty state and action sets, fix a posterior \(q\) and a nonempty family \(\mathcal L\) of finite real-valued loss tables. Define
+
+\[
+O_\ell(q)=\arg\min_{a\in A}\sum_mq_m\ell(a,m).
+\]
+
+A simultaneously optimal action exists exactly when \(\bigcap_{\ell\in\mathcal L}O_\ell(q)\ne\varnothing\). Under linear expected loss, a lottery is simultaneously optimal exactly when its support lies in that intersection.
+
+**Proof.** The pure-action statement is the definition of simultaneous optimality. For each table, subtract its minimum risk from every action's risk. The lottery's excess risk is a sum of nonnegative terms, so it vanishes exactly when every positive-probability action is a minimizer. Apply this to every table. ∎
+
+This is simultaneous optimality, not minimax compromise or moral licensing of a lottery. Feasible alternatives, applicable authority and the comparison criterion must be specified independently. Adding abstention, further inquiry or a report changes the action menu and requires its own consequences and costs. Failure of one terminal recommendation across applications is not failure of scientific inquiry as such.
+
+### T21. Preserving every binary application distinguishes every admitted posterior
+
+Let nonempty \(Q\subseteq[0,1]\) be the admitted posterior values and \(r:Q\to Z\) one deterministic, cost-independent report, the recipient's complete channel of information about the posterior. A decoder receiving only that report and the positive loss pair can return an optimal binary action for every \(q\in Q\) and every such pair **if and only if** \(r\) is injective.
+
+**Proof.** If \(q<q'\) share a report, choose \(t\in(q,q')\), \(c_{FP}=t\) and \(c_{FN}=1-t\). The unique optimal actions differ, so one decoded answer cannot serve both. Conversely, an injective report determines its posterior on its image, permitting T19's threshold rule. ∎
+
+Therefore a finite report alphabet cannot meet this exact all-stakes specification on an infinite \(Q\). Finite actual \(Q\) can be encoded finitely. A stakes-specific one-bit recommendation can suffice for its fixed threshold; additional recipient information can also distinguish otherwise identical reports. Those are different interfaces. This is an application of [H13's preserved-question condition](HUIGEN-GENERATIVE-CLOSURE.md#h13-the-operational-invariant-is-a-preserved-question), not a demand that every scientist store infinitely precise probabilities. The theorem concerns semantic sufficiency; acquiring the posterior, knowing the encoding and executing its inverse are additional capacities.
+
+### T22. Approximate reporting has a uniform regret bound
+
+Suppose a report yields \(\hat q\in[0,1]\) with independently warranted \(|\hat q-q|\le\varepsilon\), where \(\varepsilon\ge0\). Applying the threshold to \(\hat q\) incurs excess expected loss at most
+
+\[
+(c_{FP}+c_{FN})\varepsilon.
+\tag{T22}
+\]
+
+**Proof.** If the chosen action is optimal at \(q\), regret is zero. Otherwise \(q\) and \(\hat q\) lie on opposite sides of the threshold, allowing a boundary tie. The excess loss equals \((c_{FP}+c_{FN})|q-t|\), which is at most \((c_{FP}+c_{FN})|q-\hat q|\). ∎
+
+Normalizing the loss sum to 1 gives regret at most \(\varepsilon\); it does not make differently scaled real burdens equally serious. When a choice incurs positive regret, unbounded rescaling removes any uniform finite absolute bound. Approximate reporting can nevertheless serve a specified tolerance without hiding an application-specific threshold. If \(|q-t|>\varepsilon\), the report selects the unique optimal action exactly. Which tolerance and loss scale are acceptable remains supplied.
+
+For every integer \(n\ge1\), rounding a known \(q\) to the nearest point of \(\{0,1/n,\ldots,1\}\) uses \(n+1\) possible report symbols and gives normalized regret at most \(1/(2n)\). This supplies an indefinitely refinable family of conditional guarantees, while no finite \(n\) preserves exact optimal decisions for every \(q\in[0,1]\) and threshold; actual acquisition, warranted calibration and implementation costs are not supplied by the construction.
+
+### What the root must preserve
+
+A mathematical posterior is not automatically a probability the learner has warranted or acquired. Model adequacy, calibration evidence and retained interpretation need their own account; no hidden true label or analyst reward supplies them. T22's approximation error concerns a specified posterior, not an unproved bound on real-world miscalibration. A likelihood report also differs from a posterior: application requires a prior or another stated inference rule.
+
+Scientific work may report evidence, assumptions and uncertainty for others to apply. Such reporting can itself affect reliance and action, so it is not automatically consequence-free. Where a justified undertaking or role requires advice, the recommendation should expose its substantive comparison premises rather than present them as evidence alone. Expected-loss minimization does not make a convenient falsehood true or establish its epistemic warrant.
+
+Actual patient burdens, actor-addressed reasons, intervention authority and feasible resources remain distinct inputs. A self-loss coefficient or successful choice rule does not justify interpersonal loss weights. Conversely, learned information can warrant different applications of an independently justified ground without recreating that ground. The [accepted application](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md) retains its settled conditional scope; this extension adds no gate or experiment to it. The positive generative obligation is to explain how usable evidence and justified application premises reach actual choices, while preserving the option of an adequate report. No empirical study, model execution or formal compilation is added.
+
+**Bounded review, 6 October 2026:** independent argument review passed T19–T22 and their reporting, implementation and normative limits. This author reviewed [self-ground audit §18](HUIGEN-SELF-GROUND-AUDIT.md#18-does-inductive-risk-make-concern-internal-to-science), [source reconstruction §15](HUIGEN-SELF-GROUND-SOURCES.md#15-inductive-risk-and-the-scope-of-scientific-responsibility), and the canonical lead, new scientific-responsibility subsection and continuing-derivation paragraph. No mathematical or scope blocker was found. This was conceptual and interface review without independent reopening of the four primary works, empirical reanalysis or formal execution. No canonical or index file was edited by this author.
+
+## 18. Patient good and the determinacy of idealization
+
+6 October 2026. The connection is **formed evaluative response → warranted patient-good representation → reasons concerning another patient**. This is an assumption audit of an idealization procedure, not another optimization theorem. The [new harm-and-action account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md) gives empirical contact with recipient-linked action and shared responses. It explicitly separates factual or efficacy learning from acquired evaluative influence and ethical warrant. We inherit that scope without rerunning its analysis or treating its behavioral change as a direct measurement of patient-good.
+
+### Preserve the actual beneficiary of the idealized assessment
+
+Write the proposed assessment as \(E(z;p,c,x)\): an informed counterpart \(z\) assesses outcome \(x\) for actual patient \(p\) in actual circumstances \(c\). It is not automatically \(E(z;z,c_z,x)\), what suits the counterpart after its transformation. Information, changed capacities or altered preferences can change the counterpart's own interests. Confusing these targets can make an idealization answer the wrong question even when every represented fact is true.
+
+This preserves neither every present desire nor every present circumstance as desirable. An assessment can favor learning, changed habits or a different future for \(p\). It must explain why these changes serve that patient's good. Actual approval, informed advice, a dispositional natural basis and intervention authority remain different claims. [Railton's comparison](HUIGEN-SELF-GROUND-SOURCES.md#16-naturalistic-good-and-reasons-for-others) makes the actual-versus-ideal target explicit, distinguishes the proposed natural truthmaker from the ideal response, and acknowledges order-independence as a substantive idealization assumption. The following finite audit sharpens that admitted issue; it does not discover it anew.
+
+### Factual convergence need not determine the evaluative readout
+
+Fix an initial state \(s_0\), a finite set \(F\) of distinct information items, and update maps \(U_f\). For this audit, every permutation of \(F\) is admitted and processes each item once. A factual projection records which target facts are correctly understood. A separate readout \(\rho(s;p,c)\) gives the proposed patient-good comparison or full recommendation set. Keep \(p,c\) fixed throughout.
+
+The readout is independent of information order **if and only if every adjacent exchange preserves it in its complete context**: whenever words \(u f g v\) and \(u g f v\) are permutations of \(F\),
+
+\[
+\rho(U_vU_gU_fU_u s_0;p,c)
+=\rho(U_vU_fU_gU_u s_0;p,c).
+\]
+
+Here \(U_u\) applies the prefix in its written order, with the empty word acting as the identity; the suffix is retained because later updates can amplify a difference. Necessity follows from order-independence. For sufficiency, any permutation can be transformed into any other by adjacent exchanges, each preserving the final readout. This is an elementary permutation argument. If only some orders are admitted, adjacent checks establish equality within each connected component of their swap graph; comparison between components remains necessary.
+
+Commuting full update states is sufficient but stronger than needed. Distinct memories or histories may yield the same relevant assessment. Conversely, equal readouts immediately after swapping two updates are insufficient if a later update can distinguish their hidden states. Equal-best alternatives can also form one stable, plural recommendation set: arbitrary selection of different members is not evidence that the underlying assessment changed.
+
+For an exact counterexample to factual correction alone, let states be \((K,v)\), with \(K\subseteq\{f,g\}\) the acquired facts and \(v\in\{0,1\}\) selecting opposite strict recommendations for the same patient. Acquiring a previously unseen \(f\) adds it to \(K\) and sets \(v=0\); acquiring a previously unseen \(g\) adds it and sets \(v=1\). Reprocessing a known item does nothing. From one initial state with \(K=\varnothing\), order \(fg\) ends at \((\{f,g\},1)\), while \(gf\) ends at \((\{f,g\},0)\). Both have all designated facts and remain stable under further repetition, yet their recommendations differ.
+
+This stipulated update law is not a psychological finding or a model of fully rational ideal agents. The terminal states share their finite target-fact model, not every fact about their histories, physical states or self-knowledge. It identifies what the declared correction constraints fail to determine. It does not refute a naturalistic identity that independently restricts which evaluative updates or bases are appropriate.
+
+### Convergence and justified patient-good remain separate
+
+Restricting the admitted orders to \(fg\) makes the example converge; restricting them to \(gf\) produces the opposite result. Alternatively, setting the readout permanently to either recommendation gives order-independence. None of these operations alone justifies its recommendation. A convergence proof must expose what its selected update, contraction or tie-breaking rule contributes. It cannot define the desired answer as the unique permissible endpoint and then claim to have explained its authority.
+
+A constructive naturalistic account can do more. It can identify a relational property of the actual patient's constitution, circumstances and available developments; explain why that property realizes the proposed patient-good role; and show how information corrects an assessment of it. The relevant standard is whether the identified basis explains and constrains the assessment, including its errors and counterfactual changes, rather than whether a favored training procedure happens to produce agreement. A justified reduction may thereby exclude the rival readout. Leaving arbitrary utilities free would ignore that proposal, not refute it.
+
+The learning mechanism must still show how those identified conditions acquire and retain influence. Shared activation alone does not specify that influence's direction, and an analyst-chosen reward cannot supply the very ground being explained. Conversely, internal causal realization does not make a patient-directed response selfish. Finally, establishing what benefits \(p\) does not itself settle another actor's addressed reason, authority or competing obligations; the proposed relational or moral bridge needs its own justification.
+
+**Acceptance condition.** Specify the actual beneficiary, candidate natural basis, admitted information updates and intended readout. Test order sensitivity at that readout, allow justified plural results, and defend any restriction used to obtain determinacy. Establish the patient-good interpretation rather than selecting it by favorable behavior, then assess its connection to other actors separately. This can close a finite explanatory interface without claiming omniscient convergence or reopening the accepted application contract. No new experiment, code or formal compilation is added.
+
+**Bounded review, 6 October 2026:** independent argument and source-attribution reviews passed this section. This author read Railton's printed pp. 174–176 through the shared extraction of the original journal PDF, without a facsimile or full-article review. The [companion audit §19](HUIGEN-SELF-GROUND-AUDIT.md#19-naturalistic-patient-good-without-an-imported-moral-verdict), source reconstruction and canonical lead, new patient-good subsection and continuing-derivation paragraph also pass at their stated scopes. Foot's primary work and the recipient study's data were not independently reaudited here. No canonical or index file was edited by this author.

@@ -1,0 +1,117 @@
+# Portable web-reader excerpts: Prygodicz v Commonwealth of Australia (No 2) [2021] FCA 634
+
+NOT original response bytes. Partial web.run extraction accessed 6 October 2026. Reader line/page labels are retrieval locators. Selected overlapping excerpts are deduplicated by line number and ordered without wording edits; gaps are retained. The SHA-256 of this text does not verify original HTML/PDF identity or completeness. Some PDF text includes extraction artifacts. No rendered-page verification is claimed.
+
+Primary URL: https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2021/2021fca0634
+
+L354: 
+L355: In respect of asserted overpayment debts raised against the a pplicants and g roup m embers, the Court declares that:
+L356: 
+L357: 1.    A decision that a n a pplicant or g roup m ember owed the Commonwealth a debt under s 1223 of the Social Security Act 1991 (Cth), because the person had obtained the benefit of a social security payment to which they were not entitled, was not validly made where all of the following apply:
+L358: (a)    the rate of the social security payment for the a pplicant or g roup m ember was depend e nt upon the person’s ordinary income on a fortnightly basis;
+L359: 
+L360: (b)    the Commonwealth based its decision on an assumption (Assumption) that the person’s ordinary income for a fortnight (relevant fortnight) was greater than the amount of ordinary income that the person had reported to the Commonwealth for the relevant fortnight;
+L361: (c)    the Commonwealth relied solely on PAYG employment income data from the Australian Taxation Office (ATO data) to make the Assumption and did not have evidence that the person was likely to have earned employment income at a constant fortnightly rate during a period covered by the ATO data, or other evidence to support the Assumption; and
+L362: (d)    the Assumption was based on an assessment of the person’s employment income for the relevant fortnight derived from averaging the ATO data, for a longer period that included the relevant fortnight, as if the person had earned income at a constant rate during that period.
+L374: REASONS FOR JUDGMENT
+L375: 
+L376: MURPHY J:
+L377: 
+L378: INTRODUCTION
+L379: 1    In this application the applicants, Katherine Prygodicz, Elyane Porter, Steven Fritze, Felicity Button, Shannon Thiel and Devon Collins, seek court approval under s 33V of the Federal Court of Australia Act 1976 (Cth) (the FCA) of a proposed settlement of a class action they have brought against the respondent, the Commonwealth of Australia (the Commonwealth).
+L380: 2    The class action ar ose out of the Commonwealth’s use of an automated debt-collection system between July 2015 and November 2019, intended to recover social security payments that had been overpaid, colloquially known as the “Robodebt system”. In summary, the system attempted to identify overpayments of social security benefits in a period under review (review period) through data matching. That was automatically conducted by:
+L381: (a)    utilising PAYG income information of social security recipient s kept by the Australian Taxation Office (ATO data) and evenly apportion ing that income over fortnightly increments in the review period (in a process the parties called “income averaging”) to determine that person’s notional or assumed fortnightly income; and
+L382: (b)    compar ing the notional or assumed fortnightly income of the person with the actual fortnightly income information provided by the person (which was the basis upon which the level of social security payments had been assessed and paid to the person);
+L383: 
+L384: to determine whether the person had been overpaid social security benefits, and where that had occurred, to raise and recover that asserted debt.
+L385: 
+L386: 3    The proceeding advances two broad claims against the Commonwealth:
+L387: (a)    a restitutionary claim for unjust enrichment (principally mon ies had and received) alleging that the Commonwealth was unjustly enriched by its receipt or recovery of wrongly asserted debts from the applicants and group members; and
+L388: (b)    a common law tort claim in negligence for damages for economic loss suffered by the applicants and group members as a result of the Commonwealth’s alleged breach of its duty of care in raising and recovering wrongly asserted debts, together with damages for “stress, anxiety and stigma” associated with the request or demand for, and threatened or actual, recovery of their asserted debts (distress damages).
+L389: 4    In the course of the proceeding the Commonwealth admitted that it did not have a proper legal basis to raise, demand or recover asserted debts which were based on income averaging from ATO data. The evidence shows that the Commonwealth unlawfully asserted such debts, totalling at least $1.763 billion against approximately 433,000 Australians.
+L390: Then, including through private debt collection agencies, the Commonwealth pursued people to repay these wrongly asserted debts, and recovered approximately $751 mill ion from about 381,000 of them.
+L391: 5    The proceeding has exposed a shameful chapter in the administration of the Commonwealth social security system and a massive failure of public administration.
+L392: It should have been obvious to the senior public servants charged with overseeing the Robodebt system and to the responsible Minister at different points that many social security recipients do not earn a stable or constant income, and any employment they obtain may be casual, part-time, sessional, or intermittent and may not continue throughout the year.
+L393: W here a social security recipient does not earn a constant fortnightly wage, does not earn income every fortnight, or only works for intermittent periods in a year, their notional or assumed fortnightly income based on income averaging is unlikely to be the same as their actual fortnightly income. It should have been plain that in such circumstances the automated Robodebt system may indicate an overpayment of social security benefits when that was not in fact the case.
+L394: Yet, in the absence of further information from social security recipients, that is the basis upon which the automated Robodebt system raised and recovered debts for asserted overpayments of social security benefits.
+L395: 6    It is, however, one thing for the applicants to be in a position to prove that the responsible Ministers and senior public servants should have known that income averaging based on ATO data was an unreliable basis upon which to raise and recover debts from social security recipients. It is quite another thing to be able to prove to the requisite standard that they actually knew that the operation of the Robodebt system was unlawful.
+L396: There is little in the materials to indicate that the evidence rises to that level. I am reminded of the aphorism that, given a choice between a stuff-up (even a massive one) and a conspiracy, one should usually choose a stuff up.
+L397: 7    It is fundamental that before the s tate asserts that its citizens have a legal obligation to pay a debt to it, and before it recovers those debt s, the debt s ha ve a proper basis in law.
+L398: The group of Australians who, from time to time, find themselves in need of support through the provision of social security benefits is broad and includes many who are marginalised or vulnerable and ill-equipped to properly understand or to challenge the basis of the asserted debts so as to protect their own legal rights.
+L399: Having regard to that, and the profound asymmetry in resources, capacity and information that existed between them and the Commonwealth, it is self-evident that before the Commonwealth raised, demanded and recovered asserted social security debts, it ought to have ensured that it had a proper legal basis to do so. The proceeding revealed that the Commonwealth completely failed in fulfilling that obligation.
+L400: Its failure was particularly acute given that many people who faced demands for repayment of unlawfully asserted debts could ill afford to repay those amounts.
+L401: 8    In summary, the proposed settlement provides that the Commonwealth will, without admission of liability:
+L402: 
+L403: (a)    consent to the Court making declarations (Declarations) which, in effect, provide that any decision by the Commonwealth:
+L404: (i)    that an applicant or group member owed a debt under s 1223 of the Social Security Act 1991 (Cth) (the SSA) because the person had obtained the benefit of a social security payment to which they were not entitled, where the Commonwealth relied solely on income averaging from ATO data; and
+L405: 
+L406: (ii)    did not have other evidence that the person was likely to have earned employment income at a constant fortnightly rate during the period covered by the ATO income information;
+L407: 
+L408: was not validly made;
+L409: (b)    not raise, demand or recover from any Category 1 Group Member or Category 2 Group Member (which categories I later explain) any invalid debt as described in the Declarations; and
+L410: 
+L411: (c)    pay $112 million inclusive of legal costs (Settlement Sum), which after deduction of Court-approved legal costs (Distribution Sum), is to be distributed to Category 2 Group Member s and Eligible Category 3 Group Members pursuant to a Court-approved Settlement Distribution Scheme (SDS).
+L412: 9    T he proposed settlement is on top of an earlier announced Commonwealth program under which it withdrew approximately $1.763 billion in debts based on income averaging from ATO data and promised to refund approximately $75 1 million it had received or recovered from social security recipients in relation to such debts (Commonwealth-recovered amounts).
+L413: 10    T he materials indicate that the Commonwealth maintained the Robodebt system in the face of approximately 2 9 decisions of the Administrative Appeals Tribunal (AAT) up to 30 May 2017, which rejected income averaging based on ATO data as a basis for asserting a social security debt.
+L414: Then, on 27 November 2019, in the “test case” of Amato v The Commonwealth of Australia (Federal Court VID611/2019), the Commonwealth consented to declarations to the effect that the debt in that case, raised based on income averaging from ATO data, was invalid.
+L415: T he financial hardship and distress caused to so many people could have been avoided had the Commonwealth paid heed to the AAT decisions, or if it disagreed with them appealed them to a court so the question as to the legality of raising debts based on income averaging from ATO data could be finally decided.
+L583: Other relevant matters and steps
+L584: 57    On 17 September 2019, Gordon Legal announced that it was investigating a class action against the Commonwealth in relation to the Robodebt system. On 19 November 2019 the firm commenced the proceeding.
+L585: 58    On 27 November 2019, the Commonwealth consented to declaration s in Amato which stated that the demand by the Commonwealth for payment of the alleged social security debt in that case was not validly made because the information before the decision-maker was not capable of satisfying the decision-maker that the debt was owed by the applicant to the Commonwealth within the scope of s s 1222A and 1223(1) of the SSA in the amount of the alleged debt.
+L586: The alleged debt was a debt raised wholly or partially based on income averaging from ATO data.
+L587: 59    In its Defence filed 14 February 2020, the Commonwealth did not contest that a social security recipient’s notional fortnightly income based on income averaging from ATO data did not provide a legal basis for the Commonwealth to assert that the person owed a n Asserted Overpayment Debt to the Commonwealth.
+L588: Even so, the Commonwealth denied that the applicants and group members had an entitlement to re stitution from the Commonwealth on the basis of unjust enrichment or for compensatory damages in negligence.
+L589: 60    Amongst other things, the Commonwealth asserted a “juristic reason” as a defence to the unjust enrichment claims, and contended that it permitted the Commonwealth to retain the Commonwealth-recovered amounts.
+L590: The juristic reason alleged in relation to the first, third, fourth and fifth applicants and an unspecified number of group members was that those persons, in fact, had a debt payable to the Commonwealth pursuant to s 1223(1) of the SSA (even though the original basis upon which the debt was asserted was invalid, it being based on income averaging from ATO data).
+L591: 61    I n relation to the negligence claim, t he Commonwealth denied the existence of the alleged duty of care.
+L761: The key terms
+L762: 
+L763: 89    The benefits accruing to different categories of group members are set out in cl 2.4.1 of the Settlement Deed. Clause 2.4.1 relevantly provides among other matters that, without admission of liability, the Commonwealth:
+L764: 
+L765: (1)    will consent to the Court making Declarations in the following form: cl 2.4.1(e):
+L766: In respect of asserted overpayment debts raised against Representative Applicants and Group Members, the Court declares that:
+L767: 
+L768: 1.    A decision that a Representative Applicant or Group Member owed the Commonwealth a debt under s 1223 of the Social Security Act 1991, because the person had obtained the benefit of a social security payment to which they were not entitled, was not validly made where all of the following apply:
+L769: a.    the rate of the social security payment for the Representative Applicant or Group Member was dependant upon the person’s ordinary income on a fortnightly basis;
+L770: 
+L771: b.    the Commonwealth based its decision on an assumption (Assumption) that the person’s ordinary income for a fortnight (relevant fortnight) was greater than the amount of ordinary income that the person had reported to the Commonwealth for the relevant fortnight;
+L772: c.    the Commonwealth relied solely on PAYG employment income data from the Australian Taxation Office (ATO data) to make the Assumption and did not have evidence that the person was likely to have earned employment income at a constant fortnightly rate during a period covered by the ATO data, or other evidence to support the Assumption;
+L773: d.    the Assumption was based on an assessment of the person’s employment income for the relevant fortnight derived from averaging the ATO data, for a longer period that included the relevant fortnight, as if the person had earned income at a constant rate during that period.
+L774: 
+L775: (2)    will not demand, raise or recover from Category 1 Group Members and Category 2 Group Members any “invalid debt” as described in the Declarations: cl 2.4.1(b).
+L776: (3)    will pay to each Category 2 and Eligible Category 3 Group Members the Distribution Sum, being the amount left from the Settlement Sum of $112 million after deduction of Court-approved legal costs, with each such group member’s share to be determined in accordance with the SDS;
+L777: (4)    will pay Category 2 Group Members and Eligible Category 3 Group Members a share of the Distribution Sum calculated by reference to the amount of the money received or recovered from them and the time they were without the money prior to the amount being refunded; and
+L778: 
+L779: (5)    will refund to each Category 2 Group M ember any debt raised using income averaging from ATO data to the extent any such refund has not already been made
+L780: 90    Under the proposed settlement Category 3 Group Members are broken down into two sub-categories:
+L781: 
+L782: (a)    “Eligible Category 3 Group Members”, being those for whom the validly recalculated debt (not being based on income averaging from ATO data) is an amount less than the amount recovered or received from them by the Commonwealth; and
+L783: (b)    “Ineligible Category 3 Group Members”, being those for whom the validly recalculated debt is equal to or more than the amount recovered or received from them in relation to the initial debt.
+L784: Only Eligible Category 3 Group Members, whose recalculated debt is less than the amount of the invalidly raised debt the Commonwealth received or recovered from the group member, will receive a share of the Distribution Sum. That is on the basis that they are the only Category 3 Group Members who have suffered a loss by reason of the initial wrongly asserted debt.
+L785: 91    Category 1 Group Members and Ineligible Group Members (that is, Ineligible Category 3 Group Members and Category 4 Group Members) will not receive a share of the Distribution Sum.
+L786: 
+L787: 92    In return the Commonwealth will receive the benefit of the release in cl 2.2 of the Settlement Deed. Clause 2.2.1 of the Settlement Deed provides that, subject to Court approval of the settlement:
+L788: …the Applicants on their own behalf and on behalf of the Group Members release the Respondent and its Related Persons [defined to mean past and present ministers, officers, employees, agents, professional advisers, executors, administrators or assigns of a party to the Settlement Deed] from all Claims in the Proceeding, other than claims that arise under this Deed (including the Settlement Distribution Scheme).
+L789: The r elease is by all group members who have not opted out of the proceeding, including Category 1 Group Members and Ineligible Group Members.
+L790: 
+L791: The benefits and burdens of the proposed settlement for the different categories of group members
+L792: 
+L793: Category 1 Group Members
+L794: 93    Category 1 Group Members are those whose debts were based on income averaging from ATO data, but who have made no repayments of such debts. The evidence shows that there are approximately 52,000 Category 1 Group Members and the total value of their debts is approximately $268 million. As at 17 March 2021, the debts of around 50,518 such group members had been withdrawn by the Commonwealth and that process was ongoing.
+L795: 94    Category 1 Group Members will not receive a share of the Distribution Sum. The Contradictor submitted that the proposed Declarations and the Settlement Deed (which provides that the Commonwealth will not demand, raise or recover from any Category 1 Group Member any invalid debt a s described in the Declarations) have little practical benefit for them because they get little more than what had already been promised to them by the Commonwealth.
+L796: On that basis the Contradictor contended that the proposed settlement is not in their interests, because they will be bound the release yet get little more.
+L797: 95    In my view the Contradictor overstated the position. Although at the point the settlement was reached the Commonwealth had publicly announced that it would withdraw all Asserted Overpayment Debts based on income averaging from ATO data, in my view the Declarations and the Settlement Deed provide some benefit for Category 1 Group Members.
+L798: 96    First, the Declarations provide that the Asserted Overpayment Debts of Category 1 Group Members are invalid insofar as they were raised based on income averaging from ATO data. They achieve one of the key aim s of the proceeding, being to ensure that debts raised based on income averaging from ATO data are declared invalid by the Court. It is in the interests of Category 1 Group Members that the Declarations be made.
+L799: 97    Second, the evidence shows that there are (or were) approximately 52,000 people with debts of approximately $268 million against which no repayments have been made, and who were eligible to have their debts withdrawn pursuant to the Commonwealth announcement s. The evidence does not, however, show how many of those group members had not yet had their debts withdrawn when the case settled on 16 November 2020. A s at 17 March 2021 the debts of 50,518 such group members had been withdrawn.
+L800: On the assumption that approximately 10% to 15% of Category 1 Group Members had not yet had their debts withdrawn at the point of settlement, there were at that time approximately 5,200 to 7,800 such group members with debts of between $26.8 million and $40.2 million (on the rough and ready assumption that debts were evenly apportioned between group members).
+L801: For those group members the proposed Declarations and the relevant settlement term provide a means for them to legally enforce that entitlement in the event that their debts were somehow overlooked in the Commonwealth program or if the Commonwealth altered its position. When it is all said and done the Commonwealth program was a political promise, which could later be changed or withdrawn. Further, even if not changed it can be expected that the program will come to an end at some point.
+L802: After the program comes to an end anyone who was somehow missed (because for example they were overseas) may then be unable to have their debt withdrawn (or if they are a Category 2 Group Member or Eligible Category 3 Group Member to have their debt refunded). The advantage of the Declarations is that their debts will be declared invalid in perpetuity.
+L803: 98    Third, for many Category 1 Group Members the Declarations are likely to provide a sense of vindication and “closure” through the Court’s declaration that their debts were unlawfully raised.
+L804: 99    Fourth, the Declarations will mark the Court’s disapproval of the Commonwealth’s conduct in invalidly raising Asserted Overpayment Debts based on income averaging from ATO data; and also inform the public more broadly in that regard.
+L805: It is in the interests of Category 1 Group Members for the Declarations to be made as they serve to vindicate the ir claims that it was unlawful for the Commonwealth to raise debts based on income averaging from ATO data: see Australian Competition and Consumer Commission v Coles Supermarkets Australia Pty Ltd [2014] FCA 1405 at [74]-[79] (Gordon J) and the cases there cited.
+L806: 100    In my view the proposed settlement does provide some benefit s for Category 1 Group Members in return for the release.
+L807: 
+L808: Category 2 Group members
+L809: 101    Category 2 Group Members are those whose debts were wholly or partially based on income averaging from ATO data, and who have made a repayment towards those debts. The evidence shows that there are approximately 381,000 Category 2 Group Members from whom Commonwealth received or recovered approximately $751 million of such debts. At the time the settlement was reached about $707.9 million had been refunded.
+L810: 102    For the same reasons as in relation to Category 1 Group Members the Contradictor contended that the Declarations provide little practical benefit to Category 2 Group Members, as they provide for little more than what had already been promised to them. For essentially the same reasons as in respect of Category 1 Group Members, I do not accept that the Declarations are of little practical benefit to Category 2 Group Members. They:
+

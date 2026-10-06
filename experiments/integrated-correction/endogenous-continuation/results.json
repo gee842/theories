@@ -1,0 +1,827 @@
+{
+  "status": "pass",
+  "scope": "Exact authored illustrations of action-dependent continuation, all-state policy verification, cash-prefix feasibility and off-path credibility. No learned-AI experiment, empirical estimate or whole-settlement equilibrium validation.",
+  "fixture_sha256": "5002b75545a575c6285fb8c401a9a9e6f71820f8d8387625a2a4cbf7c9b19fd5",
+  "checker_sha256": "1e6ba8b013cd4129485db558b317d219db3fcff805f41f8193f154dd9da0e7b1",
+  "process_discount_cases": 7,
+  "stationary_policies_evaluated": 16,
+  "results": [
+    {
+      "id": "changed_opportunity",
+      "discount": "1/5",
+      "candidate_policy": {
+        "H": "protect",
+        "X": "continue"
+      },
+      "candidate_values": {
+        "H": "15/4",
+        "X": "15/2"
+      },
+      "candidate_certificate": {
+        "evaluated": true,
+        "optimal": true,
+        "residuals": {
+          "H": {
+            "protect": "0",
+            "attack": "1/4"
+          },
+          "X": {
+            "continue": "0"
+          }
+        }
+      },
+      "policies": [
+        {
+          "policy": {
+            "H": "protect",
+            "X": "continue"
+          },
+          "values": {
+            "H": "15/4",
+            "X": "15/2"
+          },
+          "evaluated": true,
+          "optimal": true,
+          "residuals": {
+            "H": {
+              "protect": "0",
+              "attack": "1/4"
+            },
+            "X": {
+              "continue": "0"
+            }
+          }
+        },
+        {
+          "policy": {
+            "H": "attack",
+            "X": "continue"
+          },
+          "values": {
+            "H": "7/2",
+            "X": "15/2"
+          },
+          "evaluated": true,
+          "optimal": false,
+          "residuals": {
+            "H": {
+              "protect": "-1/5",
+              "attack": "0"
+            },
+            "X": {
+              "continue": "0"
+            }
+          }
+        }
+      ],
+      "funded_prefixes": [
+        {
+          "state": "H",
+          "action": "protect",
+          "opening": 2,
+          "after_cost": 1,
+          "after_receipt": 5,
+          "dividend": 3,
+          "closing": 2
+        },
+        {
+          "state": "H",
+          "action": "attack",
+          "opening": 2,
+          "after_cost": 0,
+          "after_receipt": 4,
+          "dividend": 2,
+          "closing": 2
+        },
+        {
+          "state": "X",
+          "action": "continue",
+          "opening": 2,
+          "after_cost": 2,
+          "after_receipt": 8,
+          "dividend": 6,
+          "closing": 2
+        }
+      ]
+    },
+    {
+      "id": "changed_opportunity",
+      "discount": "1/4",
+      "candidate_policy": {
+        "H": "protect",
+        "X": "continue"
+      },
+      "candidate_values": {
+        "H": "4",
+        "X": "8"
+      },
+      "candidate_certificate": {
+        "evaluated": true,
+        "optimal": true,
+        "residuals": {
+          "H": {
+            "protect": "0",
+            "attack": "0"
+          },
+          "X": {
+            "continue": "0"
+          }
+        }
+      },
+      "policies": [
+        {
+          "policy": {
+            "H": "protect",
+            "X": "continue"
+          },
+          "values": {
+            "H": "4",
+            "X": "8"
+          },
+          "evaluated": true,
+          "optimal": true,
+          "residuals": {
+            "H": {
+              "protect": "0",
+              "attack": "0"
+            },
+            "X": {
+              "continue": "0"
+            }
+          }
+        },
+        {
+          "policy": {
+            "H": "attack",
+            "X": "continue"
+          },
+          "values": {
+            "H": "4",
+            "X": "8"
+          },
+          "evaluated": true,
+          "optimal": true,
+          "residuals": {
+            "H": {
+              "protect": "0",
+              "attack": "0"
+            },
+            "X": {
+              "continue": "0"
+            }
+          }
+        }
+      ],
+      "funded_prefixes": [
+        {
+          "state": "H",
+          "action": "protect",
+          "opening": 2,
+          "after_cost": 1,
+          "after_receipt": 5,
+          "dividend": 3,
+          "closing": 2
+        },
+        {
+          "state": "H",
+          "action": "attack",
+          "opening": 2,
+          "after_cost": 0,
+          "after_receipt": 4,
+          "dividend": 2,
+          "closing": 2
+        },
+        {
+          "state": "X",
+          "action": "continue",
+          "opening": 2,
+          "after_cost": 2,
+          "after_receipt": 8,
+          "dividend": 6,
+          "closing": 2
+        }
+      ]
+    },
+    {
+      "id": "changed_opportunity",
+      "discount": "1/2",
+      "candidate_policy": {
+        "H": "protect",
+        "X": "continue"
+      },
+      "candidate_values": {
+        "H": "6",
+        "X": "12"
+      },
+      "candidate_certificate": {
+        "evaluated": true,
+        "optimal": false,
+        "residuals": {
+          "H": {
+            "protect": "0",
+            "attack": "-2"
+          },
+          "X": {
+            "continue": "0"
+          }
+        }
+      },
+      "policies": [
+        {
+          "policy": {
+            "H": "protect",
+            "X": "continue"
+          },
+          "values": {
+            "H": "6",
+            "X": "12"
+          },
+          "evaluated": true,
+          "optimal": false,
+          "residuals": {
+            "H": {
+              "protect": "0",
+              "attack": "-2"
+            },
+            "X": {
+              "continue": "0"
+            }
+          }
+        },
+        {
+          "policy": {
+            "H": "attack",
+            "X": "continue"
+          },
+          "values": {
+            "H": "8",
+            "X": "12"
+          },
+          "evaluated": true,
+          "optimal": true,
+          "residuals": {
+            "H": {
+              "protect": "1",
+              "attack": "0"
+            },
+            "X": {
+              "continue": "0"
+            }
+          }
+        }
+      ],
+      "funded_prefixes": [
+        {
+          "state": "H",
+          "action": "protect",
+          "opening": 2,
+          "after_cost": 1,
+          "after_receipt": 5,
+          "dividend": 3,
+          "closing": 2
+        },
+        {
+          "state": "H",
+          "action": "attack",
+          "opening": 2,
+          "after_cost": 0,
+          "after_receipt": 4,
+          "dividend": 2,
+          "closing": 2
+        },
+        {
+          "state": "X",
+          "action": "continue",
+          "opening": 2,
+          "after_cost": 2,
+          "after_receipt": 8,
+          "dividend": 6,
+          "closing": 2
+        }
+      ]
+    },
+    {
+      "id": "future_support",
+      "discount": "1/5",
+      "candidate_policy": {
+        "O": "protect",
+        "H": "continue",
+        "L": "continue"
+      },
+      "candidate_values": {
+        "O": "7/2",
+        "H": "15/2",
+        "L": "15/4"
+      },
+      "candidate_certificate": {
+        "evaluated": true,
+        "optimal": false,
+        "residuals": {
+          "O": {
+            "protect": "0",
+            "defect": "-1/4"
+          },
+          "H": {
+            "continue": "0"
+          },
+          "L": {
+            "continue": "0"
+          }
+        }
+      },
+      "policies": [
+        {
+          "policy": {
+            "O": "protect",
+            "H": "continue",
+            "L": "continue"
+          },
+          "values": {
+            "O": "7/2",
+            "H": "15/2",
+            "L": "15/4"
+          },
+          "evaluated": true,
+          "optimal": false,
+          "residuals": {
+            "O": {
+              "protect": "0",
+              "defect": "-1/4"
+            },
+            "H": {
+              "continue": "0"
+            },
+            "L": {
+              "continue": "0"
+            }
+          }
+        },
+        {
+          "policy": {
+            "O": "defect",
+            "H": "continue",
+            "L": "continue"
+          },
+          "values": {
+            "O": "15/4",
+            "H": "15/2",
+            "L": "15/4"
+          },
+          "evaluated": true,
+          "optimal": true,
+          "residuals": {
+            "O": {
+              "protect": "1/4",
+              "defect": "0"
+            },
+            "H": {
+              "continue": "0"
+            },
+            "L": {
+              "continue": "0"
+            }
+          }
+        }
+      ],
+      "funded_prefixes": [
+        {
+          "state": "O",
+          "action": "protect",
+          "opening": 2,
+          "after_cost": 0,
+          "after_receipt": 4,
+          "dividend": 2,
+          "closing": 2
+        },
+        {
+          "state": "O",
+          "action": "defect",
+          "opening": 2,
+          "after_cost": 1,
+          "after_receipt": 5,
+          "dividend": 3,
+          "closing": 2
+        },
+        {
+          "state": "H",
+          "action": "continue",
+          "opening": 2,
+          "after_cost": 2,
+          "after_receipt": 8,
+          "dividend": 6,
+          "closing": 2
+        },
+        {
+          "state": "L",
+          "action": "continue",
+          "opening": 2,
+          "after_cost": 2,
+          "after_receipt": 5,
+          "dividend": 3,
+          "closing": 2
+        }
+      ]
+    },
+    {
+      "id": "future_support",
+      "discount": "1/4",
+      "candidate_policy": {
+        "O": "protect",
+        "H": "continue",
+        "L": "continue"
+      },
+      "candidate_values": {
+        "O": "4",
+        "H": "8",
+        "L": "4"
+      },
+      "candidate_certificate": {
+        "evaluated": true,
+        "optimal": true,
+        "residuals": {
+          "O": {
+            "protect": "0",
+            "defect": "0"
+          },
+          "H": {
+            "continue": "0"
+          },
+          "L": {
+            "continue": "0"
+          }
+        }
+      },
+      "policies": [
+        {
+          "policy": {
+            "O": "protect",
+            "H": "continue",
+            "L": "continue"
+          },
+          "values": {
+            "O": "4",
+            "H": "8",
+            "L": "4"
+          },
+          "evaluated": true,
+          "optimal": true,
+          "residuals": {
+            "O": {
+              "protect": "0",
+              "defect": "0"
+            },
+            "H": {
+              "continue": "0"
+            },
+            "L": {
+              "continue": "0"
+            }
+          }
+        },
+        {
+          "policy": {
+            "O": "defect",
+            "H": "continue",
+            "L": "continue"
+          },
+          "values": {
+            "O": "4",
+            "H": "8",
+            "L": "4"
+          },
+          "evaluated": true,
+          "optimal": true,
+          "residuals": {
+            "O": {
+              "protect": "0",
+              "defect": "0"
+            },
+            "H": {
+              "continue": "0"
+            },
+            "L": {
+              "continue": "0"
+            }
+          }
+        }
+      ],
+      "funded_prefixes": [
+        {
+          "state": "O",
+          "action": "protect",
+          "opening": 2,
+          "after_cost": 0,
+          "after_receipt": 4,
+          "dividend": 2,
+          "closing": 2
+        },
+        {
+          "state": "O",
+          "action": "defect",
+          "opening": 2,
+          "after_cost": 1,
+          "after_receipt": 5,
+          "dividend": 3,
+          "closing": 2
+        },
+        {
+          "state": "H",
+          "action": "continue",
+          "opening": 2,
+          "after_cost": 2,
+          "after_receipt": 8,
+          "dividend": 6,
+          "closing": 2
+        },
+        {
+          "state": "L",
+          "action": "continue",
+          "opening": 2,
+          "after_cost": 2,
+          "after_receipt": 5,
+          "dividend": 3,
+          "closing": 2
+        }
+      ]
+    },
+    {
+      "id": "future_support",
+      "discount": "1/2",
+      "candidate_policy": {
+        "O": "protect",
+        "H": "continue",
+        "L": "continue"
+      },
+      "candidate_values": {
+        "O": "8",
+        "H": "12",
+        "L": "6"
+      },
+      "candidate_certificate": {
+        "evaluated": true,
+        "optimal": true,
+        "residuals": {
+          "O": {
+            "protect": "0",
+            "defect": "2"
+          },
+          "H": {
+            "continue": "0"
+          },
+          "L": {
+            "continue": "0"
+          }
+        }
+      },
+      "policies": [
+        {
+          "policy": {
+            "O": "protect",
+            "H": "continue",
+            "L": "continue"
+          },
+          "values": {
+            "O": "8",
+            "H": "12",
+            "L": "6"
+          },
+          "evaluated": true,
+          "optimal": true,
+          "residuals": {
+            "O": {
+              "protect": "0",
+              "defect": "2"
+            },
+            "H": {
+              "continue": "0"
+            },
+            "L": {
+              "continue": "0"
+            }
+          }
+        },
+        {
+          "policy": {
+            "O": "defect",
+            "H": "continue",
+            "L": "continue"
+          },
+          "values": {
+            "O": "6",
+            "H": "12",
+            "L": "6"
+          },
+          "evaluated": true,
+          "optimal": false,
+          "residuals": {
+            "O": {
+              "protect": "-2",
+              "defect": "0"
+            },
+            "H": {
+              "continue": "0"
+            },
+            "L": {
+              "continue": "0"
+            }
+          }
+        }
+      ],
+      "funded_prefixes": [
+        {
+          "state": "O",
+          "action": "protect",
+          "opening": 2,
+          "after_cost": 0,
+          "after_receipt": 4,
+          "dividend": 2,
+          "closing": 2
+        },
+        {
+          "state": "O",
+          "action": "defect",
+          "opening": 2,
+          "after_cost": 1,
+          "after_receipt": 5,
+          "dividend": 3,
+          "closing": 2
+        },
+        {
+          "state": "H",
+          "action": "continue",
+          "opening": 2,
+          "after_cost": 2,
+          "after_receipt": 8,
+          "dividend": 6,
+          "closing": 2
+        },
+        {
+          "state": "L",
+          "action": "continue",
+          "opening": 2,
+          "after_cost": 2,
+          "after_receipt": 5,
+          "dividend": 3,
+          "closing": 2
+        }
+      ]
+    },
+    {
+      "id": "off_path_two_step",
+      "discount": "1/2",
+      "candidate_policy": {
+        "S": "stay",
+        "A": "return",
+        "C": "continue"
+      },
+      "candidate_values": {
+        "S": "2",
+        "A": "1",
+        "C": "20"
+      },
+      "candidate_certificate": {
+        "evaluated": true,
+        "optimal": false,
+        "residuals": {
+          "S": {
+            "stay": "0",
+            "move": "3/2"
+          },
+          "A": {
+            "return": "0",
+            "advance": "-9"
+          },
+          "C": {
+            "continue": "0"
+          }
+        }
+      },
+      "policies": [
+        {
+          "policy": {
+            "S": "stay",
+            "A": "return",
+            "C": "continue"
+          },
+          "values": {
+            "S": "2",
+            "A": "1",
+            "C": "20"
+          },
+          "evaluated": true,
+          "optimal": false,
+          "residuals": {
+            "S": {
+              "stay": "0",
+              "move": "3/2"
+            },
+            "A": {
+              "return": "0",
+              "advance": "-9"
+            },
+            "C": {
+              "continue": "0"
+            }
+          }
+        },
+        {
+          "policy": {
+            "S": "stay",
+            "A": "advance",
+            "C": "continue"
+          },
+          "values": {
+            "S": "2",
+            "A": "10",
+            "C": "20"
+          },
+          "evaluated": true,
+          "optimal": false,
+          "residuals": {
+            "S": {
+              "stay": "0",
+              "move": "-3"
+            },
+            "A": {
+              "return": "9",
+              "advance": "0"
+            },
+            "C": {
+              "continue": "0"
+            }
+          }
+        },
+        {
+          "policy": {
+            "S": "move",
+            "A": "return",
+            "C": "continue"
+          },
+          "values": {
+            "S": "0",
+            "A": "0",
+            "C": "20"
+          },
+          "evaluated": true,
+          "optimal": false,
+          "residuals": {
+            "S": {
+              "stay": "-1",
+              "move": "0"
+            },
+            "A": {
+              "return": "0",
+              "advance": "-10"
+            },
+            "C": {
+              "continue": "0"
+            }
+          }
+        },
+        {
+          "policy": {
+            "S": "move",
+            "A": "advance",
+            "C": "continue"
+          },
+          "values": {
+            "S": "5",
+            "A": "10",
+            "C": "20"
+          },
+          "evaluated": true,
+          "optimal": true,
+          "residuals": {
+            "S": {
+              "stay": "3/2",
+              "move": "0"
+            },
+            "A": {
+              "return": "15/2",
+              "advance": "0"
+            },
+            "C": {
+              "continue": "0"
+            }
+          }
+        }
+      ],
+      "funded_prefixes": null
+    }
+  ],
+  "invalid_certificates_rejected": [
+    "fabricated continuation value",
+    "missing off-path state"
+  ],
+  "two_stage_game": {
+    "fixed_threat_operator_best_reply": "respect",
+    "trustee_credible_response": "tolerate",
+    "backward_induction_outcome": "attack then tolerate"
+  },
+  "limits": [
+    "Authored examples, not empirical observations.",
+    "Enumerations corroborate finite examples, not the general written proof.",
+    "No integration with the full R2 game or physical learner is asserted.",
+    "Rewards, transitions, gross receipts and ethical interpretations are supplied."
+  ]
+}

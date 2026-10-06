@@ -1,0 +1,520 @@
+{
+  "date": "2026-10-06",
+  "status": "pass",
+  "scope": "Primary-source preservation, final review binding and document integration. Mathematical examples received manual independent review; no new scientific execution, learned-model run, behavioral aggregate or replication.",
+  "named_connection": "warranted correction -> retained/transferred evidence -> changed successor action",
+  "source_package": {
+    "path": "sources/34-memory-correction-2026-10-06",
+    "total_files": 22,
+    "manifest_bound_files_verified": 21,
+    "manifest_sha256": "d283a216f1068c84c6db3d85373803c68c08289e26b03cf544986768b72ef3f9",
+    "exact_response_bodies_checked": 17,
+    "upstream_git_blob_matches": [
+      {
+        "path": "LICENSE",
+        "upstream_git_blob": "dc098f9f79c934f7c85b5ede80e704d2896edd17"
+      },
+      {
+        "path": "README.md",
+        "upstream_git_blob": "dd1063a3b603754f4db8b98b3dc40ef5f8e4a84c"
+      },
+      {
+        "path": "schemas/artifact.schema.json",
+        "upstream_git_blob": "cdd54130dd053569ee46c29a9d592d31e677f448"
+      },
+      {
+        "path": "schemas/benchmark_instance.schema.json",
+        "upstream_git_blob": "ec2035c08a416390091494c87f857e45a4de26bf"
+      },
+      {
+        "path": "schemas/case_init.schema.json",
+        "upstream_git_blob": "f395eefc49621be6a65a007db78674987fe0115c"
+      },
+      {
+        "path": "schemas/handoff_oracle.schema.json",
+        "upstream_git_blob": "7b4538b3dba063165ef5303e56b3d5462ecea80b"
+      },
+      {
+        "path": "schemas/memory_proposal.schema.json",
+        "upstream_git_blob": "d857eec4ff1af3eb2c0ca2124d76f6ac9b21be28"
+      },
+      {
+        "path": "schemas/node_context.schema.json",
+        "upstream_git_blob": "25a866db2dc58a9f21c3db2bb4487dd3bab74f08"
+      },
+      {
+        "path": "schemas/node_view.schema.json",
+        "upstream_git_blob": "2aa2a97c9b5491fde78b5fb6130a6aa9eabf1a11"
+      },
+      {
+        "path": "schemas/workflow_family.schema.json",
+        "upstream_git_blob": "4e6e371e8963ee380b8e81f332dac7bed7fd4860"
+      }
+    ],
+    "pinned_release_commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016",
+    "pinned_release_files": 20,
+    "release_scope": "Task-side release and schemas; no per-run model-output corpus selected for reanalysis. Other source access limits remain explicit."
+  },
+  "documents": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "bytes": 10278,
+      "sha256": "0346e1df420a09e6055338b5b16e74836acdc8af93fb5fb4cabfd81ff1e47142"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md",
+      "bytes": 9824,
+      "sha256": "a4675370b749aceda3d7c8dd2e8f862ae4d92f8d8bca0ec888310466f74693a6"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md",
+      "bytes": 10922,
+      "sha256": "e6ba1fc004f333d72d05ffb6e7c9811161c8334a19ee5a33680747f3e38e849c"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "bytes": 7476,
+      "sha256": "aeaf46e94c3c3c580726708114df5eb14a823834ad5844e0758140b267d81533"
+    },
+    {
+      "path": "sources/34-memory-correction-2026-10-06/README.md",
+      "bytes": 4336,
+      "sha256": "3f9074b842d65c4777454904c173dffd5deb3ce336263986f01b20697ceaf411"
+    }
+  ],
+  "archived_discovery": {
+    "status": "superseded initial discovery, not current assessment",
+    "old_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUCCESSOR-EVIDENCE-AVAILABILITY.md",
+    "preserved_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/MEMORY-CORRECTION-DISCOVERY.md",
+    "bytes": 9373,
+    "sha256": "2464e8250015d88470a7dd9d84196ec58a0e0e59ca26fdf6b82d539874eada5a",
+    "reason": "Initial LongMemEval-oriented discovery replaced by parent-selected CoMemBench, MemSecBench and SND audit; unique precursor search preserved without duplicate current note."
+  },
+  "review_binds_current_metrics_and_canonical": true,
+  "source_verification_binds_current_evidence_note": true,
+  "local_targets_checked": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "target": "ALIGNMENT-COMPLETION.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "target": "EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "target": "../../../sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md",
+      "scope": "complete maintained document",
+      "resolved": "sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/evidence/report.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-revisable-concern/settlement/evidence/report.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "target": "ALIGNMENT-AND-GOVERNANCE.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "target": "EVALUATIVE-APPLICATION.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "target": "ETHICAL-FOUNDATION.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "target": "GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md",
+      "target": "CROSS-DOMAIN-IDENTIFICATION.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md",
+      "target": "EVALUATIVE-COMPOSITION-AUDIT.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-COMPOSITION-AUDIT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md",
+      "target": "../../../../sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/README.md",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md",
+      "target": "../../2026-10-05-revisable-concern/settlement/evidence/report.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-revisable-concern/settlement/evidence/report.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md",
+      "target": "CROSS-DOMAIN-IDENTIFICATION.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md",
+      "target": "EVALUATIVE-COMPOSITION-AUDIT.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-COMPOSITION-AUDIT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md",
+      "target": "MEMORY-CORRECTION-METRICS.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md",
+      "target": "../../../../sources/34-memory-correction-2026-10-06/README.md",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "scope": "complete maintained document",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "target": "CROSS-DOMAIN-IDENTIFICATION.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "target": "../../../../sources/34-memory-correction-2026-10-06/README.md",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "target": "../../../../sources/34-memory-correction-2026-10-06/README.md",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "target": "development/MEMORY-CORRECTION-DISCOVERY.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/MEMORY-CORRECTION-DISCOVERY.md"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-2609.32192v2.html",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-2609.32192v2.html"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-project.html",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-project.html"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/MemSecBench-2607.27080v1.html",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/MemSecBench-2607.27080v1.html"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/SND-2605.22842v1.html",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/SND-2605.22842v1.html"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/SND-project.html",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/SND-project.html"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "metadata/CoMemBench-HF-tree.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/metadata/CoMemBench-HF-tree.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "metadata/CoMemBench-HF-info.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/metadata/CoMemBench-HF-info.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/README.md",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/README.md"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/LICENSE",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/LICENSE"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/artifact.schema.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/schemas/artifact.schema.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/node_view.schema.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/schemas/node_view.schema.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/handoff_oracle.schema.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/schemas/handoff_oracle.schema.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/workflow_family.schema.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/schemas/workflow_family.schema.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/benchmark_instance.schema.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/schemas/benchmark_instance.schema.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/case_init.schema.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/schemas/case_init.schema.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/memory_proposal.schema.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/schemas/memory_proposal.schema.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/node_context.schema.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/original/CoMemBench-HF/schemas/node_context.schema.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "metadata/retrieval.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/metadata/retrieval.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "manifest.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/manifest.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "metadata/verification.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/metadata/verification.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "metadata/discovery-provenance.json",
+      "scope": "complete maintained document",
+      "resolved": "sources/34-memory-correction-2026-10-06/metadata/discovery-provenance.json"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "scope": "complete maintained document",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/MEMORY-CORRECTION-DISCOVERY.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "scope": "archived discovery at recorded original base",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/MEMORY-CORRECTION-DISCOVERY.md",
+      "target": "CROSS-DOMAIN-IDENTIFICATION.md",
+      "scope": "archived discovery at recorded original base",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "scope": "new integration paragraph only",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "sources/34-memory-correction-2026-10-06/README.md",
+      "scope": "new integration paragraph only",
+      "resolved": "sources/34-memory-correction-2026-10-06/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "scope": "new integration paragraph only",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "scope": "new integration paragraph only",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md",
+      "target": "MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "scope": "new integration paragraph only",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "target": "MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "scope": "new integration paragraph only",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "scope": "new integration paragraph only",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "MEMORY-CORRECTION-EVIDENCE.md",
+      "scope": "new integration paragraph only",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "MEMORY-CORRECTION-METRICS.md",
+      "scope": "new integration paragraph only",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-METRICS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "MEMORY-CORRECTION-REVIEW.md",
+      "scope": "new integration paragraph only",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "../../../../sources/34-memory-correction-2026-10-06/README.md",
+      "scope": "new integration paragraph only",
+      "resolved": "sources/34-memory-correction-2026-10-06/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "target": "MEMORY-CORRECTION-INTEGRATION.json",
+      "scope": "new integration paragraph only",
+      "resolved": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-INTEGRATION.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSS-DOMAIN-IDENTIFICATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "scope": "new integration paragraph only",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "34-memory-correction-2026-10-06/README.md",
+      "scope": "new integration paragraph only",
+      "resolved": "sources/34-memory-correction-2026-10-06/README.md"
+    },
+    {
+      "document": "sources/SOURCES.md",
+      "target": "../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md",
+      "scope": "new integration paragraph only",
+      "resolved": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    }
+  ],
+  "new_integration_paragraphs_checked": 8,
+  "limits": [
+    "Local file targets checked, not external URL liveness or heading anchors.",
+    "Original upstream Markdown is preserved verbatim; unavailable source-relative references are not rewritten or claimed locally complete.",
+    "The archived discovery memo retains its original link base; its exact bytes and relocation are verified.",
+    "Shared-file checks cover only the new integration paragraph and do not accept unrelated concurrent edits.",
+    "Source integrity does not establish a theorem or reproduce experimental results.",
+    "The complete foundation and alignment/governance goal remain active with unchanged completion conditions."
+  ]
+}

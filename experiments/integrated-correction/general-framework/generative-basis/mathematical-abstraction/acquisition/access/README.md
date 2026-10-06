@@ -2,6 +2,8 @@
 
 6 October 2026. Conditional synthetic continuation of [acquired abstraction](../README.md). Read the [canonical result](../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPERIMENTAL-ACCESS.md), [protocol and revision record](PROTOCOL.md), [hand proofs](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-MATH.md), [independent review](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md) and [primary comparators](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-COMPARATORS.md).
 
+**Model-family continuation, 6 October 2026:** [the nested revision study](revision/README.md) executes this unchanged access code and inherits its actual retained payload and funds. It generates a larger candidate and reacquires current behavior through paid observations, with funding and out-of-family failures preserved. Old and new audit transcripts remain unavailable to its learner. Its checks are separate from the access receipts below; generator selection and reusable evidence retention remain open.
+
 The actual retained learned model generates apparatus hypotheses and guides paid tests. Neither hidden physical phase nor a fault label enters the controller. The result distinguishes an acquired class-relative diagnosis, an affordable retained ambiguity, and a physically completed experiment whose result cannot be retained. It supplies a diagnosis recipe and restricted transformation family; it does not derive them or calibrate all observations from nothing.
 
 ## Reproduce

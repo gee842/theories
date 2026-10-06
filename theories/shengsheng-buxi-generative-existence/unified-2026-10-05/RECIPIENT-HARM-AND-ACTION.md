@@ -57,6 +57,33 @@ The trial/summary cross-check produces **39 audit flags**, not 39 contradictory 
 
 The first implementation also rejected a literal `NaN` during the summary audit. The [preserved repair](../../../experiments/recipient-harm-valuation/ANALYSIS-REPAIRS.md) explicitly treats that value as undefined, without altering trial codes or selecting actors. Independent reconstruction and interpretation review are recorded in [the experiment guide](../../../experiments/recipient-harm-valuation/README.md) and [review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-VALUATION-REVIEW.md).
 
+## From shared responses to recipient-directed choice
+
+**Neural-mechanism extension, 6 October 2026:** the [evidence audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-AFFECT-ACTION-EVIDENCE.md), [causal contract](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-AFFECT-ACTION-CONTRACT.md) and [independent review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-AFFECT-ACTION-REVIEW.md) examine a specific supplied premise of [evaluative uptake](EVALUATIVE-UPTAKE.md): how consequences experienced by an actor could influence its response to another center. This extension is a primary-source comparison, not a new neural-data analysis or an alteration of the behavioral results above.
+
+[Carrillo et al. (2019)](https://doi.org/10.1016/j.cub.2019.03.024) report overlapping responses to experienced and observed pain, and a regional intervention affecting social freezing. That supplies a physiological connection; it does not test selective mirror-cell control of helping.
+
+[Schneider et al. (2020)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7541607/) find population responses shared across reward and shock alongside more specific cells. Removing the observer's own outcomes changes the task context. This challenges a uniform pain-sharing interpretation without disproving every shared representation.
+
+[Wu et al. (2023)](https://doi.org/10.1016/j.isci.2022.105865) link neural responses to actual door-opening behavior. However, helping precedes the self/other classification, cross-task cell identity is putative, and the retained cohort selects successful helpers with stable recordings. This design does not identify the acquisition of concern.
+
+The [source package](../../../sources/32-shared-affect-action-2026-10-06/README.md) preserves the inspected publications and access qualifications. Published neural associations are not independent replications of the present theory. Nor can one study's regional intervention be silently combined with another study's selected neurons to claim a cell-specific causal helping result in a single history.
+
+The comparison gives the proposed transfer architecture a biological candidate while placing a limit on its interpretation. A response shared across self and other can carry information relevant to action. Whether downstream selection uses that information to help, freeze, escape or conceal the cue is a further causal question. A shared representation does not by itself specify the sign, strength or recipient-directed use of its influence.
+
+| Claim | Evidence needed beyond a shared response |
+|---|---|
+| The response distinguishes the relevant consequence | Validation against matched sensory, movement and attentional alternatives, with held-out observations and the recipient kept identifiable |
+| It contributes specifically to recipient-sensitive choice | A causally identified change in its use, with factual access, action competence and relevant costs preserved or separately estimated |
+| The contribution is acquired | An identified learning history and comparison that separates new evaluative influence from learning an effective means to an already valued outcome |
+| Its use constitutes warranted concern | Independently justified patient-good, ground, authority and competing-claim premises, plus the actual addressed consequence |
+
+These requirements do not prescribe one neural implementation. A broad intervention that reduces helping may also impair observation, action or task engagement. Conversely, intact helping after disruption can reflect an alternative route. A test of one route's contribution is therefore narrower than a universal necessity claim. The [contract](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-AFFECT-ACTION-CONTRACT.md) makes the additional identification assumptions explicit rather than treating a brain-region label as the model's transfer parameter.
+
+The decisive behavioral separation remains actual recipient improvement versus relief of the actor's immediate cue experience. Those effects can occur together, but their coincidence cannot determine which the process tracks when they diverge. Successful helping also need not involve matching the recipient's feeling, and an internal affective realization does not make concern selfish by definition. The evidence is compatible with multiple constructive and defensive routes.
+
+For the generative derivation, this is progress on a concrete mechanism premise: external social information can enter machinery also involved in self-related responses, while its practical use remains to be explained. It leaves a specific next test of acquired, recipient-sensitive influence under preserved information and competent action. It supplies neither a universal neural recipe nor the ethical validity of the resulting choice.
+
 ## What this supplies to the foundation
 
 The existing [concern model](../../../_process/research/2026-10-05-concern-theory/learning-formal.md) distinguishes learned self-related valence `w`, an evaluative correspondence `g`, effective recipient influence `v=gw`, and estimated intervention efficacy. An actor can learn which lever causes an aversive event while its valuation of that event remains unchanged. The new behavioral history is therefore evidence relevant to consequence-sensitive action, not a direct measurement of an acquired `w`, `g` or ethical root.

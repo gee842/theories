@@ -1,0 +1,70 @@
+PORTABLE READING EXCERPT — NOT ORIGINAL PDF BYTES
+Official source: https://www.servicesaustralia.gov.au/sites/default/files/2023-10/annual-report-2022-23.pdf
+Version: Annual Report 2022–23, official October 2023 URL; web reader reports 270 PDF pages
+Accessed: 2026-10-06 UTC through web.run text reader.
+Pinpoints: Printed p111 §7.10; p116 §8.1; p119 §8.5.
+Preparation: selected complete tool-reader lines in the ranges below; original line/page labels and OCR retained. P denotes zero-based PDF page, not printed page. Discontinuous blocks are labeled. This is a selected reading edition, not the complete report or a visual/layout verification. Original local fetch failed; see metadata/retrieval.json. Tool-derived text may contain OCR or extraction artifacts.
+
+[Selected reader lines 4255–4271]
+L4255@P122: 7.10 Income compliance program
+L4256@P122: The agency is refunding repayments on debts raised between July 2015 and
+L4257@P122: November 2019 under the Income compliance program. These debts were incorrectly
+L4258@P122: raised based on averaged ATO income information (see Judicial decisions on page 116).
+L4259@P122: We have refunded all former customers who have provided their correct bank account
+L4260@P122: details, and all current customers who are eligible for a refund.
+L4261@P122: As of April 2023, of the $752.7 million in estimated refunds, over $749.1 million has
+L4262@P122: been refunded.
+L4263@P122: As of June 2023, approximately 3,100 former customers are yet to engage with the
+L4264@P122: agency to receive refunds. The agency continues to attempt contact with these
+L4265@P122: customers by liaising with other agencies to obtain more accurate contact details.
+L4266@P122: These refund amounts will remain on customer records until contact is made, which
+L4267@P122: will allow refunds to be issued.
+L4268@P122: In September 2022 the agency completed making settlement payments to eligible
+L4269@P122: registered group members of the Income Compliance class action for repayments
+L4270@P122: on debts raised under the program between July 2015 and November 2019. We have
+L4271@P122-123: distributed approximately $101.7 million to eligible registered group members.PART 7 COMPLIANCE AND BUSINESS INTEGRITY
+
+[Selected reader lines 4376–4402]
+L4376@P127: 116 SERVICES AUSTRALIA
+L4377@P127: 8.1 Judicial decisions
+L4378@P127: On 11 June 2021, Justice Murphy of the Federal Court of Australia approved a
+L4379@P127: settlement in Katherine Prygodicz & Ors v Commonwealth of Australia (VID1252/2019).
+L4380@P127: The proceedings relate to a class action commenced pursuant to Part IVA of the
+L4381@P127: Federal Court of Australia Act 1976 seeking declarations, restitution, damages and
+L4382@P127: other relief involving some 648,000 group members who had debts raised based on
+L4383@P127: averaged ATO income information. This averaging process was part of the Income
+L4384@P127: Compliance Program (see Income Compliance Program on page 111).
+L4385@P127: In May 2020 the Commonwealth announced that it would refund debts raised
+L4386@P127: wholly or partially using averaged ATO income data. Under the Deed of Settlement,
+L4387@P127: the Commonwealth agreed to pay an additional settlement sum of $112 million
+L4388@P127: (inclusive of legal costs) to eligible group members.
+L4389@P127: The agency wrote to group members between 29 October and 19 November 2021 to
+L4390@P127: advise them of their eligibility for a settlement payment based on:
+L4391@P127: • the categorisation of their Income Compliance Program debts
+L4392@P127: • how to register or update their details to receive a payment
+L4393@P127: • how to raise a dispute.
+L4394@P127: Eligible group members who had received a refund were automatically registered for
+L4395@P127: a settlement payment. Other eligible group members could register by providing their
+L4396@P127: details through an online portal or by telephone.
+L4397@P127: The agency completed calculation and independent assurance of individual settlement
+L4398@P127: payments by June 2022. The agency completed all steps required of it under the
+L4399@P127: implementation plan for the settlement distribution in 2023. On 6 June 2023, the
+L4400@P127: parties filed draft consent orders with the Federal Court requesting the court dismiss
+L4401@P127: the class action and pay any unclaimed settlement payments to a not-for-profit
+L4402@P127-128: organisation. Once the court issues final orders, the class action will be at an end.PART 8 MANAGEMENT AND ACCOUNTABILITY
+
+[Selected reader lines 4478–4490]
+L4478@P130: ANNUAL REPORT 2022–23 119
+L4479@P130: 8.5 Commonwealth Ombudsman
+L4480@P130: The agency maintains a collaborative and productive working relationship with
+L4481@P130: the Office of the Commonwealth Ombudsman. We monitor the implementation of
+L4482@P130: recommendations from reports published by the Commonwealth Ombudsman.
+L4483@P130: In October 2022, the Commonwealth Ombudsman published the Did They Do What
+L4484@P130: They Said They Would? Volume 2 report, which contained a chapter on Services
+L4485@P130: Australia. This report reviewed the implementation of Ombudsman recommendations
+L4486@P130: across Commonwealth agencies from 1 July 2019 to 30 June 2021.
+L4487@P130: The Services Australia chapter was a point-in-time assessment of the agency’s
+L4488@P130: progress in implementing the Commonwealth Ombudsman’s recommendations from
+L4489@P130: the April 2021 report: Services Australia’s Income Compliance Program: A report about
+L4490@P130: Services Australia’s implementation of changes to the program in 2019 and 2020.
+

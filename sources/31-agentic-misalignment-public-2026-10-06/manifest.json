@@ -1,0 +1,95 @@
+{
+  "description": "All files in source31 except this manifest; original bytes kept distinct from derived availability audit.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3955,
+      "sha256": "3e23ac6ca2d0ff63012219d627f51fababf49ba7efb54c1b6d828c007395a035"
+    },
+    {
+      "path": "metadata/availability.json",
+      "bytes": 7042,
+      "sha256": "5d848c4e86f981f3a2f73d3ce9610cb6afe2fbb32956db4d3559efda4c365040"
+    },
+    {
+      "path": "metadata/retrieval.json",
+      "bytes": 4871,
+      "sha256": "6977f776964f66dd1031916a3da0a91e3aa0ea4121c866f677062cb28ce782fe"
+    },
+    {
+      "path": "metadata/summer-2026.html.headers.txt",
+      "bytes": 1113,
+      "sha256": "f4e21fcb32b36ed3f7537aebb3cec0cd8d52a921f4131fbf9d3754eb5af63a07"
+    },
+    {
+      "path": "metadata/teaching-claude-why.html.headers.txt",
+      "bytes": 1105,
+      "sha256": "c367b89664ff20960fce47c6f4bb64036b188466a2fa297910c1f7ac3c148273"
+    },
+    {
+      "path": "metadata/verification.json",
+      "bytes": 2826,
+      "sha256": "073eb2aadd7bad30215804efb2e60bc6cac1a6ec1db742071834343c999bdc03"
+    },
+    {
+      "path": "metadata/viewer__assets__index-Ivi1Vlum.js.headers.txt",
+      "bytes": 1042,
+      "sha256": "2e1b9155d48d38bbf52c5602ab495fa935ed17f308b0db6e1c53e8d400aa0dac"
+    },
+    {
+      "path": "metadata/viewer__index.html.headers.txt",
+      "bytes": 1000,
+      "sha256": "f7885d11023cf3f88877b7ca3186b77c2ceea270c180c6d70f78f46e9b6a46d5"
+    },
+    {
+      "path": "metadata/viewer__static__manifest.json.headers.txt",
+      "bytes": 1037,
+      "sha256": "c64f13496fc6ea277e42f4dab4bee57f523a485252163b117a00b261f979e686"
+    },
+    {
+      "path": "metadata/viewer__static__transcripts__motivated-mislabelling__mislabel-input-welfare-sonnet46-993324.json.headers.txt",
+      "bytes": 1033,
+      "sha256": "89bb1b72feffa901e50e08a3b2c765d00b5f963fefe2a58fd9afb0eca2b2a5ff"
+    },
+    {
+      "path": "metadata/viewer__static__transcripts__motivated-mislabelling__motivated-mislabelling-opus-4-6-auditor-run4-d15f4b.json.headers.txt",
+      "bytes": 1032,
+      "sha256": "ac16ad04a2095ef2b92ef240a3dca40373a2ef4ea20c7392bdf09cb208771f86"
+    },
+    {
+      "path": "original/summer-2026.html",
+      "bytes": 119073,
+      "sha256": "9d08e4a578585468f56eb07ea1a2de68397670875cf47705e71c70d58cc95312"
+    },
+    {
+      "path": "original/teaching-claude-why.html",
+      "bytes": 104226,
+      "sha256": "6cf2a89751ecf54854a0cbb9c6c5fa457fc2cdaaa0002bf171dabfcc5663a0b0"
+    },
+    {
+      "path": "original/viewer/assets/index-Ivi1Vlum.js",
+      "bytes": 8520,
+      "sha256": "fef426f7c933c9ef989c9c7ef9051b95419ac78425bc4fe00ebf9a3ab6a0b656"
+    },
+    {
+      "path": "original/viewer/index.html",
+      "bytes": 468,
+      "sha256": "3870df79c20c2e3bbf781e8c890878d6edf4e9208acb82d85264650375d32bb7"
+    },
+    {
+      "path": "original/viewer/static/manifest.json",
+      "bytes": 449222,
+      "sha256": "499d3bd0f7bd934d736e33a278cb7802c347f3843583df5e3527e466243a032d"
+    },
+    {
+      "path": "original/viewer/static/transcripts/motivated-mislabelling/mislabel-input-welfare-sonnet46-993324.json",
+      "bytes": 34817,
+      "sha256": "5058338af47f0e16c92cbba522055a77e3808da3709e6b4ea8d4fa0d392229e8"
+    },
+    {
+      "path": "original/viewer/static/transcripts/motivated-mislabelling/motivated-mislabelling-opus-4-6-auditor-run4-d15f4b.json",
+      "bytes": 116304,
+      "sha256": "7f8bd608da22bb5e611922170126faaf089c9628ea8d1be58c24d481e1c61d33"
+    }
+  ]
+}

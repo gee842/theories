@@ -1,0 +1,24 @@
+CoMemBench — Dataset License
+============================
+
+The annotations, workflow structures, node contexts, and instance index files
+in this repository ("CoMemBench v1") are released under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+    https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt the material for any purpose, even commercially,
+provided that you give appropriate credit, provide a link to the license, and
+indicate if changes were made.
+
+Upstream sources retain their own terms. Problems are constructed from the
+following corpora; if you use the corresponding domains, please also cite and
+respect the upstream license:
+
+  stateful_tool_use                    Toolathlon
+  repository_code_change               SWE-bench Verified
+  offline_information_retrieval        BrowseComp+
+  mathematical_and_structured_reasoning  Lean4 proof-dependent workflows
+
+Evaluation oracles, gold trajectories, and pollution plans are NOT part of this
+release and are not covered by this license grant.

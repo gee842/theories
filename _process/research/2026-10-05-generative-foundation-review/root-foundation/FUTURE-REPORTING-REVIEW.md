@@ -32,10 +32,22 @@ This is a prospective computational contract after exposure to published finding
 
 ## Reporting-contract acceptance
 
-Reviewed [FUTURE-REPORTING-CONTRACT.md](FUTURE-REPORTING-CONTRACT.md), SHA-256 `0f9c77e8aca70adb93e1fbe275fd4095176543f4356624fab1d0455509af5624`.
+Reviewed current [FUTURE-REPORTING-CONTRACT.md](FUTURE-REPORTING-CONTRACT.md), SHA-256 `855fd216f49babeca46eb4bf4b988ea3a4949a4a43be76f425db2de8b96e0820`.
+
+The earlier accepted version was `0f9c77e8aca70adb93e1fbe275fd4095176543f4356624fab1d0455509af5624`. Re-read after shortening duplicated source summaries in section 3 and the closing comparator sentence: semantic conditions, counterexamples and acceptance scope are unchanged.
 
 Accepted at its stated scope. The invariance statement fixes every fact- and interpretation-relevant input, and expressly excludes cases where downstream-use wording changes evidence or the question. It is a semantic separation condition, not a new empirical or learning theorem. Its set-valued treatment avoids calling every publisher-label disagreement an error; membership in that set remains weaker than truth under every admissible interpretation.
 
 The contract correctly permits inquiry, clarification, withholding and refusal to depend on consequences. It establishes no universal duty to disclose truth or participate in harmful training, and no general theorem against every possible act of deception. Its restriction concerns an interface claiming faithful factual assurance. Effective and justified recourse needs separate institutional evidence; offering an abstention token alone does not provide it.
 
 The connection to settlement R2 is also conditional: false reports can defeat the supplied sound-audit premise; unknowns cannot be counted as complete valid audits. This does not refute R2 under its assumptions or require an endless hierarchy of monitors. The next unresolved task remains warranted evaluative grounds, legitimate authority and effective correction while preserving evidential integrity. No substantive correction to the reviewed contract is required.
+
+## Canonical review
+
+Reviewed [EVALUATION-AND-FAITHFUL-REPORTING.md](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATION-AND-FAITHFUL-REPORTING.md), SHA-256 `028e1978019f65cfeb107110023ff3bfea13263a0f1d6598e721ed951e799419`. Accepted with no substantive correction required.
+
+The report connects Ren's preserved clarification to a distinct downstream obligation: dependence and acquisition need not secure faithful reporting or warranted action. It retains the conditional information limit and does not claim that every material dependency requires fresh observation. Its example of understanding followed by convenient reporting is a possible failure regime, not an inference that the published studies identify internal understanding or deceptive motive.
+
+The two research comparators are appropriately bounded. The canonical text claims neither independent outcome reconstruction nor unique mechanism identification. Its fixed-target equation is explicitly semantic, and its ethical discussion permits justified refusal, privacy and withholding. Factual correctness, normative assessment and authority remain separate. The cross-result table earns an existing premise rather than replacing the root goal or adding an indefinite chain of monitors. The next connection remains formed understanding, warranted evaluative influence and effective correction.
+
+Read the stable [source package](../../../../sources/31-agentic-misalignment-public-2026-10-06/README.md) and [availability audit](MOTIVATED-MISLABELING-AVAILABILITY.md). The recorded manifest SHA-256 is `64dce16d6bc0528681838eda0a4a19293bb30a6e34ccb2e90a2c6355beada674`; its current bytes match. In particular, old condition strings in input filenames and annotation highlights cannot substitute for the missing one-turn judge matrix. The canonical report does not make that substitution. Its nine local document links resolve. This review adds no scientific computation or independent verification of unavailable outcomes.

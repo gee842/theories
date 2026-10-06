@@ -1,0 +1,158 @@
+{
+  "status": "pass",
+  "checked_on": "2026-10-06",
+  "source_body_hash_checks": 17,
+  "json_syntax": "pass",
+  "hf_commit": "d1cef0fb70ada0ddf9b80d23aa30ed86ee56e016",
+  "hf_complete_tree_file_count": 20,
+  "hf_model_output_or_receipt_bundle_found": false,
+  "scope_of_absence": "Only inspected pinned tree and stated file roles; no universal unavailability claim",
+  "no_task_corpus_downloaded": true,
+  "separate_attack_payload_files_downloaded": 0,
+  "note_sha256": "aeaf46e94c3c3c580726708114df5eb14a823834ad5844e0758140b267d81533",
+  "note_words_approx": 875,
+  "paper_scope_paragraph_words": [
+    52,
+    51,
+    41
+  ],
+  "current_and_archived_contextual_links_checked": [
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-2609.32192v2.html",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-project.html",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/MemSecBench-2607.27080v1.html",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/SND-2605.22842v1.html",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/SND-project.html",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "metadata/CoMemBench-HF-tree.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "metadata/CoMemBench-HF-info.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/README.md",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/LICENSE",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/artifact.schema.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/node_view.schema.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/handoff_oracle.schema.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/workflow_family.schema.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/benchmark_instance.schema.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/case_init.schema.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/memory_proposal.schema.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "original/CoMemBench-HF/schemas/node_context.schema.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "metadata/retrieval.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "metadata/discovery-provenance.json",
+      "context": "current base"
+    },
+    {
+      "document": "sources/34-memory-correction-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "context": "current base"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "context": "current base"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "target": "CROSS-DOMAIN-IDENTIFICATION.md",
+      "context": "current base"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "target": "../../../../sources/34-memory-correction-2026-10-06/README.md",
+      "context": "current base"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "target": "../../../../sources/34-memory-correction-2026-10-06/README.md",
+      "context": "current base"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEMORY-CORRECTION-EVIDENCE.md",
+      "target": "development/MEMORY-CORRECTION-DISCOVERY.md",
+      "context": "current base"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/MEMORY-CORRECTION-DISCOVERY.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md",
+      "context": "historical original base"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/MEMORY-CORRECTION-DISCOVERY.md",
+      "target": "CROSS-DOMAIN-IDENTIFICATION.md",
+      "context": "historical original base"
+    }
+  ],
+  "archived_discovery_byte_identity": "pass using recorded original SHA-256",
+  "scientific_execution": "none; no new numerical reanalysis or model calls"
+}

@@ -1,0 +1,458 @@
+[
+  {
+    "id": "L02",
+    "fields": [
+      "elm",
+      "oak",
+      "fir",
+      "beech",
+      "pine"
+    ],
+    "base_field": "oak",
+    "corrected_exception": [
+      {
+        "field": "fir",
+        "value": 0
+      },
+      {
+        "field": "elm",
+        "value": 0
+      }
+    ],
+    "source_files": {
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L02/private.json": "b8328668259c0cdc0376b33cb56ba99f14fbc0adff45559e99312c8194510d2f",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L02/baseline-prompt.txt": "e2db9e43b58ffefabca278b69326cdbcece2082b9705e1fd068c61c7855164f6",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L02/maintenance-prompt.txt": "6ce097e9ba599970c5460307ea4ac0ff8cf6aba4525135866c0896ade2149f25",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L02/maintenance-response.json": "3f1d4e6c7ab080e84c2f296b1784fc511489dbdbaea4d886500187247bf30303"
+    },
+    "packet": "Verified current rule: route = oak XOR [(elm=0) AND (fir=0)]. Invert oak exactly when elm and fir are both zero; beech and pine are irrelevant. Two audited flips were (elm,oak,fir,beech,pine)=(0,0,0,1,1), route 1, and (0,1,0,0,0), route 0. Their only shared pair of non-oak field values is elm=0, fir=0, uniquely identifying the exception under the stated hypothesis class. The other six audited cases also matched this rule. Apply it to all future cases.",
+    "packet_utf8_sha256": "70c16273e561d009482c67f6cbce972a112a74483003056c0f95647b553ac131",
+    "calibration": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "tests": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "base_labels": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "packet_labels": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "L06",
+    "fields": [
+      "beech",
+      "birch",
+      "cedar",
+      "oak",
+      "pine"
+    ],
+    "base_field": "cedar",
+    "corrected_exception": [
+      {
+        "field": "beech",
+        "value": 1
+      },
+      {
+        "field": "pine",
+        "value": 1
+      }
+    ],
+    "source_files": {
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L06/private.json": "7fc65095081a56f1c0c8d861c29c051bd2057a0c129a84078219707cced74bfb",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L06/baseline-prompt.txt": "85fd609bf6b2e3d2b16f656333a1b395c37757c92fb7d4ae721313862369bc65",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L06/maintenance-prompt.txt": "7a9af470a1ad8de519f9c2e36703491ad40f70e9c56151274915c68035cd4e41",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L06/maintenance-response.json": "ed3c5361c54101ef5638315197477efe939d9a0a72846f24eb69e9dab91a0b97"
+    },
+    "packet": "Verified current rule: route = cedar XOR (beech AND pine). Invert cedar exactly when beech=1 and pine=1; otherwise use cedar. The eight independently checked cases uniquely identify this rule. In field order (beech,birch,cedar,oak,pine), verified routes were: 11011→1, 00111→1, 01001→0, 01110→1, 00000→0, 11100→1, 10001→1, 10110→1. Only the first and seventh invert cedar. Because the first has all other fields equal to 1, the exception requires two 1s; the remaining observations eliminate every pair except beech/pine. The inherited rule alone scored 6/8.",
+    "packet_utf8_sha256": "18d5d9ef99869dce8d2354fb5f38aa258322cba131de66aaf9a0cccc29ff990f",
+    "calibration": [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "tests": [
+      [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    ],
+    "base_labels": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "packet_labels": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "L08",
+    "fields": [
+      "birch",
+      "elm",
+      "oak",
+      "beech",
+      "fir"
+    ],
+    "base_field": "birch",
+    "corrected_exception": [
+      {
+        "field": "oak",
+        "value": 1
+      },
+      {
+        "field": "beech",
+        "value": 1
+      }
+    ],
+    "source_files": {
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L08/private.json": "1548624b820d8412351b3ac355e54ca7da1561e8b3ad40f9b06b0115b0095301",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L08/baseline-prompt.txt": "aec5fea7ac1d7750d579917778bd0f97ea24b109d98353b101a1a22ec5fa83d6",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L08/maintenance-prompt.txt": "44a2e872367b8621fe441261b092d93c51fc86ec441092645a39ed4d3d280cb3",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L08/maintenance-response.json": "3f1a8c8dbe20e8af1fb1dadeff1599efec477aa4e8234e6db4d834588ba31de7"
+    },
+    "packet": "Current rule: route equals birch, except invert it when oak=1 AND beech=1. Elm and fir do not matter. Verified C04 (birch=1, elm=1, oak=1, beech=1, fir=1) routed 0; C05 (0,0,1,1,0) routed 1. All six other verified cases followed birch. The two inversions share only oak=1 and beech=1, uniquely identifying the permitted exception. Apply this corrected deterministic rule to every successor case.",
+    "packet_utf8_sha256": "16eed972af040b1dbe45c2081b217ca0b810443ee228939bf4093bd27a412512",
+    "calibration": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "tests": [
+      [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "base_labels": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "packet_labels": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "L12",
+    "fields": [
+      "cedar",
+      "maple",
+      "beech",
+      "yew",
+      "fir"
+    ],
+    "base_field": "cedar",
+    "corrected_exception": [
+      {
+        "field": "yew",
+        "value": 1
+      },
+      {
+        "field": "maple",
+        "value": 0
+      }
+    ],
+    "source_files": {
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L12/private.json": "e0fc154ffbe92f9e7d5957bd6c9b434ecb900f129285d77904c7b6adbc7c4381",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L12/baseline-prompt.txt": "3f5cf81bba99ec79a96f8ab84d655ef84397c58dbff4e885aef16fd5b116522c",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L12/maintenance-prompt.txt": "988e3ed892ff56b7531dbaab63d73928caa634f9d262df5e9cd01489b2230f77",
+      "sources/20-codex-theory-sessions-2026-10-05/sin/work/live/lineages/L12/maintenance-response.json": "ffff2865b6873cff5a2590c1707baf4c268b0c61d4170221a0e8d4a6d96d8199"
+    },
+    "packet": "Use route = cedar XOR (maple=0 AND yew=1). Verified cases (cedar,maple,beech,yew,fir)=(0,0,1,1,0) and (0,0,0,1,1) both routed 1, inverting cedar. Their only shared non-cedar field values are maple=0 and yew=1, uniquely identifying the exception within the stated hypothesis class. All six other verified cases followed cedar, consistent with this rule. Thus invert cedar exactly when maple=0 and yew=1; otherwise use cedar. Beech and fir do not affect routing.",
+    "packet_utf8_sha256": "fe2b4ef0b2d4f766a082c32d67cc5cf2da5e8aeb57f399fa8b786605136f0b37",
+    "calibration": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "tests": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    ],
+    "base_labels": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "packet_labels": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ]
+  }
+]

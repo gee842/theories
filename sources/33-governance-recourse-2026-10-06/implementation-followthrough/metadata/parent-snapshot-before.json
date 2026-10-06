@@ -1,0 +1,50 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "4669093cfaff2f588ba2c66a12970b2262ff9c49826028f3a0dabf11851c413a"
+  },
+  {
+    "path": "manifest.json",
+    "sha256": "061f0c574a4c23bc9e89547c02dbf87d47af30a9c814419980f5bf0dff182daf"
+  },
+  {
+    "path": "metadata/2021fca0634.headers.txt",
+    "sha256": "aa8353ac2bbe94ea16831ce62ab1123e72a56dfd6a1dd0508bd4697c8606676a"
+  },
+  {
+    "path": "metadata/monash-report.headers.txt",
+    "sha256": "a4633e561f3b6578616d7debc31a6ad023c08ac84e3ab8e0cc9ce02a820a03f0"
+  },
+  {
+    "path": "metadata/ombudsman2017.headers.txt",
+    "sha256": "f91890e89c304f67bf4f3101277d9b9f78a28ecc577dfbd385d71aadb1a985c1"
+  },
+  {
+    "path": "metadata/retrieval.json",
+    "sha256": "29dbe3402c6d95b6ae5930671576b559e73ef92d41dd5f061bea412e67cda234"
+  },
+  {
+    "path": "metadata/verification.json",
+    "sha256": "03191d33581477c4e739262b5e13aa75dc0fb5da8e8c86c250c35e3e2a5e5fa3"
+  },
+  {
+    "path": "reading/court-2021fca0634-web-excerpts.txt",
+    "sha256": "23a56394ee2dab53e5a1255dcecb5dd8dfc95bda11446dd274b4c0c79f9670b2"
+  },
+  {
+    "path": "reading/ombudsman-2017-web-excerpts.txt",
+    "sha256": "8272391b66db3a13e956b543dd4113a4ebd153fdb5717033a63e80d8bedac338"
+  },
+  {
+    "path": "reading/report-ch20-web-excerpts.txt",
+    "sha256": "618635e0207321d29c8e7ca2efced2096f06116e6365acc061d5ebf028880550"
+  },
+  {
+    "path": "reading/report-corrigendum-web-excerpt.txt",
+    "sha256": "54bb011cb941bc1a5ecdf8c94a090e6c069717af48615dcf1778f20f022024b5"
+  },
+  {
+    "path": "reading/report-publication-web-excerpt.txt",
+    "sha256": "d8546a0a280e58bb79b5713ebf217f191f342136e60f75e89af43627794135bb"
+  }
+]

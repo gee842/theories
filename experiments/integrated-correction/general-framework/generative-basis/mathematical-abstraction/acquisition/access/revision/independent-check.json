@@ -197,11 +197,12 @@
     "../../model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135",
     "../diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
     "PROTOCOL.md": "b0dafdd464ee70d26c43e0ec6cedc5e7af8a4b050a7ac753028d1359464b63f5",
-    "independent_check.py": "bedbe0d6b819f82bf4b8f9c2b980ffad9e23c4636461d3efc6cd3ec1639a0e09",
+    "independent_check.py": "eee2fa5be6aed375f44b410cdf6628be8eb71ad92c2009512a433704fa9829f5",
     "revision.py": "1bd13b5d11c1c9221b87ec1528605b1188f951568fef1713cf323e5cfeb03ae6"
   },
   "inherited_family_runs": [
     {
+      "acquired_retained": true,
       "family": 0,
       "ledger": {
         "fuel": "7629/65536",
@@ -213,9 +214,11 @@
       "parity": 0,
       "phase": 0,
       "retained": false,
-      "status": "funding:native_read"
+      "status": "funding:native_read",
+      "use_confirmed": false
     },
     {
+      "acquired_retained": true,
       "family": 0,
       "ledger": {
         "fuel": "6303/65536",
@@ -227,9 +230,11 @@
       "parity": 0,
       "phase": 1,
       "retained": true,
-      "status": "complete"
+      "status": "complete",
+      "use_confirmed": true
     },
     {
+      "acquired_retained": true,
       "family": 0,
       "ledger": {
         "fuel": "72475/65536",
@@ -241,9 +246,11 @@
       "parity": 0,
       "phase": 2,
       "retained": true,
-      "status": "complete"
+      "status": "complete",
+      "use_confirmed": true
     },
     {
+      "acquired_retained": true,
       "family": 0,
       "ledger": {
         "fuel": "7629/65536",
@@ -255,9 +262,11 @@
       "parity": 1,
       "phase": 0,
       "retained": false,
-      "status": "funding:native_read"
+      "status": "funding:native_read",
+      "use_confirmed": false
     },
     {
+      "acquired_retained": true,
       "family": 0,
       "ledger": {
         "fuel": "6303/65536",
@@ -269,9 +278,11 @@
       "parity": 1,
       "phase": 1,
       "retained": true,
-      "status": "complete"
+      "status": "complete",
+      "use_confirmed": true
     },
     {
+      "acquired_retained": true,
       "family": 0,
       "ledger": {
         "fuel": "72475/65536",
@@ -283,9 +294,11 @@
       "parity": 1,
       "phase": 2,
       "retained": true,
-      "status": "complete"
+      "status": "complete",
+      "use_confirmed": true
     },
     {
+      "acquired_retained": true,
       "family": 1,
       "ledger": {
         "fuel": "144369/65536",
@@ -297,9 +310,11 @@
       "parity": 0,
       "phase": 0,
       "retained": true,
-      "status": "complete"
+      "status": "complete",
+      "use_confirmed": true
     },
     {
+      "acquired_retained": true,
       "family": 1,
       "ledger": {
         "fuel": "1335/65536",
@@ -311,9 +326,11 @@
       "parity": 0,
       "phase": 1,
       "retained": false,
-      "status": "funding:native_read"
+      "status": "funding:native_read",
+      "use_confirmed": false
     },
     {
+      "acquired_retained": true,
       "family": 1,
       "ledger": {
         "fuel": "64123/65536",
@@ -325,9 +342,11 @@
       "parity": 0,
       "phase": 2,
       "retained": true,
-      "status": "complete"
+      "status": "complete",
+      "use_confirmed": true
     },
     {
+      "acquired_retained": true,
       "family": 1,
       "ledger": {
         "fuel": "34885/65536",
@@ -339,9 +358,11 @@
       "parity": 0,
       "phase": 3,
       "retained": false,
-      "status": "funding:retain_after_use"
+      "status": "funding:retain_after_use",
+      "use_confirmed": true
     },
     {
+      "acquired_retained": true,
       "family": 1,
       "ledger": {
         "fuel": "144369/65536",
@@ -353,9 +374,11 @@
       "parity": 1,
       "phase": 0,
       "retained": true,
-      "status": "complete"
+      "status": "complete",
+      "use_confirmed": true
     },
     {
+      "acquired_retained": true,
       "family": 1,
       "ledger": {
         "fuel": "1335/65536",
@@ -367,9 +390,11 @@
       "parity": 1,
       "phase": 1,
       "retained": false,
-      "status": "funding:native_read"
+      "status": "funding:native_read",
+      "use_confirmed": false
     },
     {
+      "acquired_retained": true,
       "family": 1,
       "ledger": {
         "fuel": "64123/65536",
@@ -381,9 +406,11 @@
       "parity": 1,
       "phase": 2,
       "retained": true,
-      "status": "complete"
+      "status": "complete",
+      "use_confirmed": true
     },
     {
+      "acquired_retained": true,
       "family": 1,
       "ledger": {
         "fuel": "34885/65536",
@@ -395,7 +422,8 @@
       "parity": 1,
       "phase": 3,
       "retained": false,
-      "status": "funding:retain_after_use"
+      "status": "funding:retain_after_use",
+      "use_confirmed": true
     }
   ],
   "old_family_refutation": {

@@ -1,0 +1,135 @@
+PORTABLE READING EXCERPT — NOT ORIGINAL PDF BYTES
+Official source: https://www.ombudsman.gov.au/__data/assets/pdf_file/0029/286517/Did-they-do-what-they-said-they-would-Volume-2.pdf
+Version: October 2022, report 04/2022; web reader reports 109 PDF pages
+Accessed: 2026-10-06 UTC through web.run text reader.
+Pinpoints: Printed p9 §§1.10–1.15; p63 §§1.268–1.270; pp65–67 §§1.281–1.292 and Recommendation 8.
+Preparation: selected complete tool-reader lines in the ranges below; original line/page labels and OCR retained. P denotes zero-based PDF page, not printed page. Discontinuous blocks are labeled. This is a selected reading edition, not the complete report or a visual/layout verification. Original local fetch failed; see metadata/retrieval.json. Tool-derived text may contain OCR or extraction artifacts.
+
+[Selected reader lines 326–355]
+L326@P9: METHODOLOGY
+L327@P9: 1.10. In July 2021, the then Ombudsman, Michael Manthorpe PSM, wrote to the
+L328@P9: agencies covered by this report to request information about the implementation
+L329@P9: of recommendations from the reports listed at 1.2. The then Ombudsman made
+L330@P9: this request for information using his powers under ss 8 and 15(4) of the
+L331@P9-10: Ombudsman Act 1976 (Cth) and s 18(4) of the Ombudsman Act 1989 (ACT). The Commonwealth and ACT Ombudsman—Did They Do What They Said They Would? Volume 2
+L332@P10: 9
+L333@P10: letter included a self-assessment template and a request for supporting
+L334@P10: documentation.
+L335@P10: 1.11. The Office analysed the self-assessment and supporting documentation provided
+L336@P10: by agencies. After considering the information, the Office sent its preliminary
+L337@P10: views on the status of implementation to the agencies and provided an
+L338@P10: opportunity to comment.
+L339@P10: 1.12. The Office adopted this self-assessment approach as it recognises agencies have
+L340@P10: their own internal processes for monitoring implementation of recommendations
+L341@P10: for improvement and, in many cases, had already undertaken considerable work
+L342@P10: to implement our recommendations.
+L343@P10: 1.13. While the Office engages with agencies to obtain a high level of confidence about
+L344@P10: the implementation of our recommendations, the Office cannot provide
+L345@P10: unqualified assurance of each agency’s adherence to improved processes and
+L346@P10: policies in day-to-day administration and operational activities.
+L347@P10: 1.14. Where possible, the Office seeks information that demonstrates practical
+L348@P10: implementation of a recommendation. For example, where an agency changes or
+L349@P10: implements a policy, the Office often seeks assurance the policy is captured in
+L350@P10: procedural instructions and communicated to relevant officers, and training is
+L351@P10: delivered where appropriate.
+L352@P10: 1.15. We provided agencies with the opportunity to correct errors of fact in our final
+L353@P10: report, which was sent to agencies in draft. We also invited agencies to provide a
+L354@P10: formal response to the report. The formal responses are included in the appendix
+L355@P10: to this report.
+
+[Selected reader lines 2353–2367]
+L2353@P64: Recommendation 4
+L2354@P64: Services Australia should continue to identify options to resolve the issue of individuals’
+L2355@P64: debts having been affirmed by the AAT with income averaging in the final decision, ideally
+L2356@P64: with a view to refunding those debts which would otherwise have been eligible for refund
+L2357@P64: as soon as possible.
+L2358@P64: 1.268. The Office considers Services Australia has implemented this recommendation.
+L2359@P64: Services Australia advised it is in the process of refunding individuals who
+L2360@P64: previously had their income compliance debt affirmed by the AAT.
+L2361@P64: 1.269. As of 31 December 2021, 98 per cent of these debts were refunded. For the
+L2362@P64: remaining debts, Services Australia is awaiting receipt of the individuals’ bank
+L2363@P64: account details to process the refund. As most debts are refunded, we consider
+L2364@P64: this recommendation implemented.
+L2365@P64: 1.270. Services Australia noted in its formal response to the draft report that it has taken
+L2366@P64: further steps to implement this recommendation. The Services Australia response
+L2367@P64: is provided in the appendix to this report.
+
+[Selected reader lines 2447–2523]
+L2447@P66: Recommendation 8
+L2448@P66: In circumstances where Services Australia continues an individual’s income compliance inflight review and where the individual had previously been contacted about an income
+L2449@P66: discrepancy, Services Australia should include in its written communication a correction to
+L2450@P66: any information provided in the initial correspondence that is no longer accurate.
+L2451@P66: At a minimum, the correspondence should note that Services Australia made changes to the
+L2452@P66: IC Program in November 2019, and that it will no longer raise debts relying solely on
+L2453@P66: estimating the person’s income by ‘averaging’ ATO income information over multiple
+L2454@P66: fortnights.
+L2455@P66: 1.281. The Office considers Services Australia has not implemented this
+L2456@P66: recommendation.
+L2457@P66: 1.282. Services Australia uses the term ‘income compliance review’ to refer to activity by
+L2458@P66: its compliance staff to review discrepancies between income reported to Services
+L2459@P66: Australia and income information obtained from the ATO to determine if a debt
+L2460@P66: might exist.4
+L2461@P66: 1.283. An ‘in-flight’ income compliance review is an income compliance review Services
+L2462@P66: Australia has initiated but not yet decided. This may include where Services
+L2463@P66: Australia has sent a discrepancy notice but not received a response, or where a
+L2464@P66: person has engaged with Services Australia through its online portal but not
+L2465@P66: finished updating and confirming their income information.
+L2466@P66: 1.284. At the time of our investigation, Services Australia advised the Office it was
+L2467@P66: finalising in-flight income compliance reviews following the Government’s
+L2468@P66: 19 November 2019 announcement, without relying on averaged ATO income
+L2469@P66: information in the process.
+L2470@P66: 1.285. As noted in our investigation report, notwithstanding the 19 November 2019
+L2471@P66: announcement, in-flight reviews are already impacted, albeit indirectly, by the
+L2472@P66: practice of income averaging – for example, individuals with in-flight reviews were
+L2473@P66: already warned that if they did not check and update their income information,
+L2474@P66: 4 An ‘in-flight review’ is a separate and distinct process from an ‘internal review’ (through which a
+L2475@P66-67: person can seek a fresh look at a Services Australia decision with which they disagree).Commonwealth and ACT Ombudsman—Did They Do What They Said They Would? Volume 2
+L2476@P67: 66
+L2477@P67: Services Australia would or could use (and average) income information from the
+L2478@P67: ATO.
+L2479@P67: 1.286. This recommendation specifically addressed our concerns that any engagement
+L2480@P67: from individuals may therefore have been, or continue to be, influenced by these
+L2481@P67: kinds of previous statements by Services Australia that income averaging may be
+L2482@P67: used to raise a debt.
+L2483@P67: 1.287. Services Australia advised the Office it is consulting with the Department of Social
+L2484@P67: Services to ‘determine the policy approach for future income compliance
+L2485@P67: activities, including in-flight reviews’ and no decision has been made to
+L2486@P67: systematically reinstate in-flight reviews. It stated that, should a decision be made,
+L2487@P67: it will take action to correct any information in the initial correspondence.
+L2488@P67: 1.288. Services Australia advised that for individuals who contact it to have their in-flight
+L2489@P67: review finalised, it will advise individuals that it no longer raises debts relying
+L2490@P67: solely on averaged ATO income information. The Office considers this information
+L2491@P67: relevant to all individuals with in-flight reviews and it is open to Services Australia
+L2492@P67: to provide this information in correspondence to all individuals, not just those who
+L2493@P67: proactively contact Services Australia.
+L2494@P67: 1.289. The Office notes the action Services Australia is taking to reach a decision about
+L2495@P67: unresolved in-flight reviews and its advice to individuals who proactively contact
+L2496@P67: Services Australia about their in-flight review. Services Australia explained there
+L2497@P67: has been no decision whether to continue an individual’s in-flight review, Services
+L2498@P67: Australia has not yet had an opportunity to write to affected individuals and
+L2499@P67: cannot do so until a decision is made about the future of the IC Program.
+L2500@P67: 1.290. We acknowledge our recommendation was predicated on a decision being made
+L2501@P67: on whether to continue the IC Program in some capacity. However, given almost 3
+L2502@P67: years has passed since the 19 November 2019 announcement, we consider this an
+L2503@P67: unreasonable delay and are concerned there has been no formal or individual
+L2504@P67: communication from Services Australia about the in-flight reviews.
+L2505@P67: 1.291. A significant number of individuals had in-flight reviews at the time of the
+L2506@P67: 19 November 2019 announcement. Since then, individuals with open in-flight
+L2507@P67: reviews have not received any correspondence about if or when the IC Program
+L2508@P67: may resume, whether a debt may be raised against them, and if so how the debt
+L2509@P67: would be calculated. It is open to Services Australia to finalise the in-flight reviews
+L2510@P67: now and re-open them if a Government decision is made or write to individuals to
+L2511@P67: explain the status of their in-flight review. To assess this recommendation as
+L2512@P67: implemented, we would expect Services Australia to write to affected individuals
+L2513@P67: to:
+L2514@P67: • correct any information provided in the initial correspondence to the person
+L2515@P67: that is no longer accurate
+L2516@P67: • note that Services Australia made changes to the Income Compliance
+L2517@P67: Program in November 2019, and it will no longer raise debts relying solely
+L2518@P67: on estimating the person’s income by ‘averaging’ ATO income information
+L2519@P67-68: over multiple fortnights.Commonwealth and ACT Ombudsman—Did They Do What They Said They Would? Volume 2
+L2520@P68: 67
+L2521@P68: 1.292. Services Australia noted in its formal response to the draft report that it has taken
+L2522@P68: further steps to implement this recommendation. The Services Australia response
+L2523@P68: is provided in the appendix to this report.
+

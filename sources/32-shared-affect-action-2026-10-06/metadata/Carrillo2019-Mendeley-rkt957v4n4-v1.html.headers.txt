@@ -1,0 +1,17 @@
+Date: Tue, 06 Oct 2026 00:34:22 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+content-security-policy: base-uri 'self';default-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval' *.adobedtm.com *.optimizely.com *.newrelic.com *.nr-data.net *.googletagmanager.com *.demdex.net *.googleadservices.com *.doubleclick.net *.hotjar.com *.mendeley.com *.mendeley.com:3001 *.google.com *.google-analytics.com *.elsevier.com *.googleapis.com *.cloudfront.net *.plu.mx *.pendo.io cdn.cookielaw.org cdn.jsdelivr.net/npm/@datacite/datacite-tracker *.filestackapi.com geolocation.onetrust.com *.gstatic.com static.cloudflareinsights.com unpkg.com blob:;connect-src 'self' *.adobedtm.com *.optimizely.com *.newrelic.com *.nr-data.net *.googletagmanager.com *.demdex.net *.googleadservices.com *.doubleclick.net *.hotjar.com *.mendeley.com *.mendeley.com:3001 *.google.com *.google-analytics.com *.elsevier.com *.googleapis.com *.s3.amazonaws.com s3.eu-west-1.amazonaws.com *.s3.eu-west-1.amazonaws.com *.cloudfront.net *.plu.mx *.tt.omtrdc.net cdn.cookielaw.org *.filestackapi.com *.onetrust.com analytics.datacite.org/api/metric *.datacite.org;style-src 'self' 'unsafe-inline' *.mendeley.com *.googleapis.com *.cloudfront.net *.pendo.io *.plu.mx *.filestackapi.com;img-src 'self' data: * blob:;font-src 'self' *.mendeley.com *.hotjar.com *.cloudfront.net *.plu.mx data: fonts.gstatic.com;object-src 'self' blob:;media-src 'self' blob:;frame-src 'self' *.hotjar.com *.doubleclick.net *.elsevier.com *.google.com *.optimizely.com *.kitware.fr *.demdex.net blob:;form-action 'self';frame-ancestors 'self';script-src-attr 'none';upgrade-insecure-requests
+Set-Cookie: mdata.sid1=s%3A09mme-a2cPA9Y2_wgnVdBcN9p4CLQ_WG.qn%2Bd1B5P4XVXmPrWGrqCSWqvrvbAqHpA%2FQpLXW1uhNU; Path=/; HttpOnly; Secure
+set-cookie: __cf_bm=ZCrUsSC30aBXo5YvxAXLw1MjI5ycZ0ZxmJ6KIfiSdu8-1791246861.5932305-1.0.1.1-heEAqe9CX8OodpR7LbLTFJBh5TovsOgG4XuHFuLgKpb5ddxqsuMvlJ13pkC1eabZwegykXsOomBWMo5lj.LjZCa8w2bimvHmhe4i3V1gDx9rcgplfJqjXCm_V4DPzAlf; HttpOnly; SameSite=None; Secure; Path=/; Domain=mendeley.com; Expires=Tue, 06 Oct 2026 01:04:22 GMT
+link: <https://schema.org/Dataset>; rel="type", <https://schema.org/AboutPage>; rel="type", <https://doi.org/10.17632/rkt957v4n4.1>; rel="cite-as", <https://data.mendeley.com/api/citations/text/x-bibliography/10.17632/rkt957v4n4.1?style=apa>; rel="described-by"; type="text/x-bibliography", <https://data.mendeley.com/api/citations/application/x-bibtex/10.17632/rkt957v4n4.1>; rel="described-by"; type="application/x-bibtex", <https://data.mendeley.com/api/citations/application/vnd.datacite.datacite+xml/10.17632/rkt957v4n4.1>; rel="described-by"; type="application/vnd.datacite.datacite+xml", <https://data.mendeley.com/api/citations/application/x-research-info-systems/10.17632/rkt957v4n4.1>; rel="described-by"; type="application/x-research-info-systems", <https://data.mendeley.com/datasets/rkt957v4n4/1/linkset>; rel="linkset"; type="application/linkset+json", <http://creativecommons.org/licenses/by/4.0>; rel="licence"
+Server: cloudflare
+Server-Timing: cfCacheStatus;desc="DYNAMIC"
+Server-Timing: cfEdge;dur=10,cfOrigin;dur=1058
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-xss-protection: 0
+cf-cache-status: DYNAMIC
+CF-RAY: a4609474fb8bf4cf-BKK
+

@@ -1,0 +1,63 @@
+{
+  "status": "pass",
+  "verified_at_utc": "2026-10-06T00:36:43.360178+00:00",
+  "originals_verified": 5,
+  "original_lengths_and_hashes_match": true,
+  "local_links_checked": [
+    {
+      "document": "sources/32-shared-affect-action-2026-10-06/README.md",
+      "target": "original/Wu2023-PMC9826941.xml"
+    },
+    {
+      "document": "sources/32-shared-affect-action-2026-10-06/README.md",
+      "target": "original/Carrillo2019-PMC6488290.html"
+    },
+    {
+      "document": "sources/32-shared-affect-action-2026-10-06/README.md",
+      "target": "original/Carrillo2019-Mendeley-rkt957v4n4-v1.html"
+    },
+    {
+      "document": "sources/32-shared-affect-action-2026-10-06/README.md",
+      "target": "original/Carrillo2019-correction-PMC6584327.xml"
+    },
+    {
+      "document": "sources/32-shared-affect-action-2026-10-06/README.md",
+      "target": "original/Schneider2020-PMC7541607.html"
+    },
+    {
+      "document": "sources/32-shared-affect-action-2026-10-06/README.md",
+      "target": "metadata/retrieval.json"
+    },
+    {
+      "document": "sources/32-shared-affect-action-2026-10-06/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "document": "sources/32-shared-affect-action-2026-10-06/README.md",
+      "target": "metadata/availability.json"
+    },
+    {
+      "document": "sources/32-shared-affect-action-2026-10-06/README.md",
+      "target": "metadata/verification.json"
+    },
+    {
+      "document": "sources/32-shared-affect-action-2026-10-06/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-AFFECT-ACTION-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-AFFECT-ACTION-EVIDENCE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-AFFECT-ACTION-EVIDENCE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-AFFECT-ACTION-EVIDENCE.md",
+      "target": "../../../../sources/32-shared-affect-action-2026-10-06/README.md"
+    }
+  ],
+  "wu_source_summary_words": 88,
+  "new_outcome_aggregates": false,
+  "construction_correction": "Initial local-link check ran before this receipt file existed. Created the receipt target and repeated all checks; no original bytes changed."
+}

@@ -1,0 +1,90 @@
+{
+  "scope": "Primary-document and access audit; no new scientific outcome aggregates",
+  "wu2023": {
+    "pmcid": "PMC9826941",
+    "article_doi": "10.1016/j.isci.2022.105865",
+    "public_raw_dataset_identified": false,
+    "actual_public_trial_neuron_schema": null,
+    "data_availability": "Data and reanalysis information upon request from lead contact; no original code reported.",
+    "listed_supplements": [
+      {
+        "file": "mmc2.mp4",
+        "title": "Video S1. An example of social approach behavior of an observer rat following laser irradiation of the forepaw of a demonstrator rat, related to Figure 2 The text “Laser” appears in the left corner when the demonstrator’s forepaw was hit at time 617.8271s. The demonstrator lifted and licked its forepaw and the observer then shifted its body and head position, pushed its nose against a hole in the partition. The activity of a simultaneously recorded InC unit is shown in the bottom panel.",
+        "mimetype": "video"
+      },
+      {
+        "file": "mmc3.mp4",
+        "title": "Video S2.An example of rat helping behavior and a mirror neuron in InC activated before door opening, related to Figure 7 Superimposed waveforms (left panel) and PC1-PC2 plot (right panel) were shown in the opening scene. A mirror neuron in InC activa. It shows no change before door opening at t = 96 in the toy trial.",
+        "mimetype": "video"
+      },
+      {
+        "file": "mmc1.pdf",
+        "title": "Document S1. Figures S1–S7",
+        "mimetype": "application"
+      }
+    ],
+    "supplements_downloaded": false,
+    "source_read_scope": [
+      "main results",
+      "Figures 6-7 captions",
+      "limitations",
+      "experimental subjects",
+      "helping and observational-distress methods",
+      "quantification and statistics",
+      "resource and data availability"
+    ]
+  },
+  "carrillo2019": {
+    "pmcid": "PMC6488290",
+    "article_doi": "10.1016/j.cub.2019.03.024",
+    "correction_pmcid": "PMC6584327",
+    "correction_doi": "10.1016/j.cub.2019.05.064",
+    "dataset_doi": "10.17632/rkt957v4n4.1",
+    "landing_json_ld": [
+      {
+        "@context": "http://schema.org/",
+        "@type": "Dataset",
+        "name": "Emotional Mirrors in the Rat’s Anterior Cingulate Cortex. Carrillo et al.",
+        "description": " How do the emotions of others affect us? The human anterior cingulate cortex (ACC) responds while experiencing pain in the self and witnessing pain in others, but the underlying cellular mechanisms remain poorly understood. Here we show the rat ACC (area 24) contains neurons responding when a rat experiences pain as triggered by a laser and while witnessing another rat receive footshocks. Most of these neurons do not respond to a fear conditioned tone (CS). Deactivating this region reduces freezing while witnessing footshocks to others but not while hearing the CS. A decoder trained on spike counts while witnessing footshocks to another rat can decode stimulus intensity both while witnessing pain in another and while experiencing the pain first-hand. Mirror-like neurons thus exist in the ACC that encode the pain of others in a code shared with first-hand pain experience. A smaller population of neurons responded to witnessing footshocks to others and while hearing the CS but not while experiencing laser triggered pain. These differential responses suggest that the ACC may contain channels that map the distress of another animal onto a mosaic of pain and fear sensitive channels in the observer. More experiments are necessary to determine whether painfulness and fearfulness in particular or differences in arousal or salience are responsible for these differential responses \n\nThe data is organized based by the figures included in the paper, one folder per figure.  Each figure contains a text file that explains in detail the organization of the data files and matlab scripts where applicable. \nFigure 2 --&gt; \n",
+        "url": "http://doi.org/10.17632/rkt957v4n4.1",
+        "sameAs": "https://data.mendeley.com/datasets/rkt957v4n4/1",
+        "version": "1",
+        "keywords": "Animal Behavior, Animal Neurophysiology, Cellular Electrophysiology",
+        "publisher": null,
+        "datePublished": "2019-04-03T15:18:30.331Z",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://data.mendeley.com/datasets/rkt957v4n4/1"
+        },
+        "includedInDataCatalog": "https://data.mendeley.com",
+        "license": {
+          "@type": "CreativeWork",
+          "url": "http://creativecommons.org/licenses/by/4.0",
+          "text": "CC BY 4.0"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Christian Keysers"
+        },
+        "citation": {
+          "@type": "CreativeWork",
+          "text": "Keysers, Christian; Carrillo, Maria; Han, Yingying; Gazzola, Valeria (2019), 'Emotional Mirrors in the Rat’s Anterior Cingulate Cortex. Carrillo et al.', Mendeley Data, v1, http://doi.org/10.17632/rkt957v4n4.1",
+          "headline": "Emotional Mirrors in the Rat’s Anterior Cingulate Cortex. Carrillo et al.",
+          "datePublished": "2019-04-03T15:18:30.331Z",
+          "url": "https://data.mendeley.com/datasets/rkt957v4n4/1"
+        }
+      }
+    ],
+    "public_file_schema_obtained": false,
+    "files_or_scripts_downloaded": false,
+    "scope": "Dataset landing metadata only; public dataset existence is verified, but 404 endpoint guesses do not establish absence or emptiness."
+  },
+  "schneider2020": {
+    "pmcid": "PMC7541607",
+    "article_doi": "10.1016/j.cub.2020.07.039",
+    "document_version": "Author manuscript in PMC",
+    "data_availability": "Lead-contact request, suitable requester format",
+    "public_raw_dataset_identified": false
+  },
+  "contact_or_new_experiment_performed": false
+}

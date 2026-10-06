@@ -1,0 +1,65 @@
+{
+  "scope": "All source32 files other than this manifest",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3929,
+      "sha256": "9d3b71b38a692219c82738d8987d22ba7a41ffeca84bb7233c38426fe6ede488"
+    },
+    {
+      "path": "metadata/Carrillo2019-Mendeley-rkt957v4n4-v1.html.headers.txt",
+      "bytes": 3349,
+      "sha256": "2fec223a20a34269fdfc8197c545a635c09ac7c4a972b00a764ea78f3fada810"
+    },
+    {
+      "path": "metadata/Carrillo2019-correction-PMC6584327.xml.headers.txt",
+      "bytes": 378,
+      "sha256": "80bcf95926303c49753cb74105329f64868686e887a42ab24ecff348ed854138"
+    },
+    {
+      "path": "metadata/Wu2023.headers.txt",
+      "bytes": 378,
+      "sha256": "2f099af3a693961d793fad3c92a4486902fd44abb5b0e1e9a89fae658b6afcb5"
+    },
+    {
+      "path": "metadata/availability.json",
+      "bytes": 5830,
+      "sha256": "edabbb375825add9f6db5c9286798007bceb360d48f1dbf3f6686e0a3a9caab0"
+    },
+    {
+      "path": "metadata/retrieval.json",
+      "bytes": 4999,
+      "sha256": "fe0fc3ea63fbb8ccc95cb9f074246ef1fa6a9c15a02226033d81a01c4bd8dd6d"
+    },
+    {
+      "path": "metadata/verification.json",
+      "bytes": 2632,
+      "sha256": "2be9a00ffb45f4fe2d7941e26d81a4a62ab5732deb76a64c9908de71e5336713"
+    },
+    {
+      "path": "original/Carrillo2019-Mendeley-rkt957v4n4-v1.html",
+      "bytes": 126852,
+      "sha256": "57674c1d428941086d62fc312ef243b08d99dd8a2036aa81f7246816c9e84eca"
+    },
+    {
+      "path": "original/Carrillo2019-PMC6488290.html",
+      "bytes": 256761,
+      "sha256": "3be01c81c3dbfe5399e2d76706ce4d2a4ddfcdae6370d70acf31cc9c1f41a4fe"
+    },
+    {
+      "path": "original/Carrillo2019-correction-PMC6584327.xml",
+      "bytes": 4017,
+      "sha256": "f6981ecf0dcd5cda194bd5a170d61894a2e9c1e74fc6c8f05d3ddc1c5c9f151b"
+    },
+    {
+      "path": "original/Schneider2020-PMC7541607.html",
+      "bytes": 246100,
+      "sha256": "b8f07a0e2069c1de8674eb5d065bafe866fb6ba35ab5cdf5b1a3b0ed87857e83"
+    },
+    {
+      "path": "original/Wu2023-PMC9826941.xml",
+      "bytes": 163030,
+      "sha256": "97b266e3a3e6d51373491bc8d30390a66f1c6742407cd09fd10c36ae4b7d3fa9"
+    }
+  ]
+}

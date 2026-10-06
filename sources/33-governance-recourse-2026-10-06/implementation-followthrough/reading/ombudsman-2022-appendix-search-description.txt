@@ -1,0 +1,13 @@
+PORTABLE SEARCH-READER DESCRIPTION — NOT ORIGINAL PDF OR VERIFIED TRANSCRIPTION
+Accessed: 2026-10-06 UTC.
+Request: web.run search_query, q = site:ombudsman.gov.au "EC22-003472".
+Scope: tool-provided indexed visual description of the appendix letter, reproduced below. The letter's pixels and attached implementation detail were not successfully inspected. Treat the description as a bounded reading aid, not independently authenticated exact letter text. Alternate official source URL is shown in the response. Its byte identity to the other official URL has not been verified.
+
+Commonwealth and ACT Ombudsman—Did They Do What They Said They Would? Volume 2 (https://www.ombudsman.gov.au/__data/assets/pdf_file/0021/115374/Did-they-do-what-they-said-they-would.-Reviewing-our-recommendations%2C-Volume-2%2C-October-2022.pdf)
+citeturn268search0 [wordlim: 200] Published: 4.0 years ago; Crawled: 4.0 years ago; Reference lines read “Your Ref: A2224852” and “Our Ref: EC22-003472.”
+Commonwealth and ACT Ombudsman—Did They Do What They Said They Would? Volume 2
+
+<visual_element id="e1">
+Scanned letter on Australian Government Services Australia letterhead. Top left shows the Australian Government crest and “Australian Government / Services Australia.” Top right reads “Chief Executive Officer / Rebecca Skinner PSM.” The letter is addressed to “Mr Iain Anderson, Commonwealth Ombudsman, GPO Box 442, CANBERRA ACT 2601.” Reference lines read “Your Ref: A2224852” and “Our Ref: EC22-003472.” The body begins “Dear Mr Anderson” and the subject line in bold italics is “Did They Do What They Said They Would? Volume 2.” The letter thanks the recipient for the letter of 29 July 2022 regarding the report “Did They Do What They Said They Would? Volume 2 (Implementation Report),” comments on Services Australia’s implementation of recommendations from the Services Australia’s Income Compliance Program report (ICP report), notes implementation status dates of 24 September 2021, 3 December 2021 and 10 February 2022, states recommendations 1 and 7 have subsequently been fully implemented and recommendation 8 partially implemented, and says the most current information is attached. It also notes the Agency was heavily focused on delivering its COVID-19 response during the relevant implementation period. A contact line says the Agency contact is Ms Kathryn Haigh, Chief Counsel, with phone/email details blacked out. The letter closes “Yours sincerely,” signed Rebecca Skinner, dated 19 September 2022. Footer reads “PO Box 7788, Canberra Business Centre ACT 2610 | Phone [redacted] | www.servicesaustralia.gov.au.”
+</visual_element>
+

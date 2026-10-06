@@ -1,0 +1,51 @@
+{
+  "scope": "Exact authored illustrations of action-dependent continuation, all-state policy verification, cash-prefix feasibility and off-path credibility. No learned-AI experiment, empirical estimate or whole-settlement equilibrium validation.",
+  "processes": [
+    {
+      "id": "changed_opportunity",
+      "meaning": "At H, protection leaves the current opportunity unchanged. An immediately costly harmful intervention enables a new future gross receipt at X. Its source and availability are supplied; this exceeds the old no-windfall bound. X is a declared continuation, not a claim that all future acts are harmful.",
+      "reserve": 2,
+      "discounts": ["1/5", "1/4", "1/2"],
+      "candidate": {"H": "protect", "X": "continue"},
+      "actions": {
+        "H": {
+          "protect": {"reward": 3, "next": "H", "cost": 1, "gross": 4, "dividend": 3},
+          "attack": {"reward": 2, "next": "X", "cost": 2, "gross": 4, "dividend": 2}
+        },
+        "X": {"continue": {"reward": 6, "next": "X", "cost": 0, "gross": 6, "dividend": 6}}
+      }
+    },
+    {
+      "id": "future_support",
+      "meaning": "At O, protection costs a current unit of private receipt but creates a better continuing opportunity. Defection leads to a lower receipt. These transition and benefit laws are declared, not inferred from action labels.",
+      "reserve": 2,
+      "discounts": ["1/5", "1/4", "1/2"],
+      "candidate": {"O": "protect", "H": "continue", "L": "continue"},
+      "actions": {
+        "O": {
+          "protect": {"reward": 2, "next": "H", "cost": 2, "gross": 4, "dividend": 2},
+          "defect": {"reward": 3, "next": "L", "cost": 1, "gross": 4, "dividend": 3}
+        },
+        "H": {"continue": {"reward": 6, "next": "H", "cost": 0, "gross": 6, "dividend": 6}},
+        "L": {"continue": {"reward": 3, "next": "L", "cost": 0, "gross": 3, "dividend": 3}}
+      }
+    },
+    {
+      "id": "off_path_two_step",
+      "meaning": "The candidate passes all inequalities on its realized path S but fails at the feasible off-path state A. This example checks strategic verification only and asserts no independent material implementation.",
+      "discounts": ["1/2"],
+      "candidate": {"S": "stay", "A": "return", "C": "continue"},
+      "actions": {
+        "S": {"stay": {"reward": 1, "next": "S"}, "move": {"reward": 0, "next": "A"}},
+        "A": {"return": {"reward": 0, "next": "S"}, "advance": {"reward": 0, "next": "C"}},
+        "C": {"continue": {"reward": 10, "next": "C"}}
+      }
+    }
+  ],
+  "two_stage_game": {
+    "payoff_order": ["operator", "trustee"],
+    "respect": [2, 2],
+    "after_attack": {"punish": [0, 0], "tolerate": [3, 1]},
+    "meaning": "A fixed punishment strategy deters attack but is not optimal for the trustee after attack. This is a finite stage-game illustration, not a claim about a real institution."
+  }
+}

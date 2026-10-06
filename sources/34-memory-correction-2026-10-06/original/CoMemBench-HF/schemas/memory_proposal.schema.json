@@ -1,0 +1,39 @@
+{
+  "$id": "https://comembench.org/schemas/v17/memory_proposal.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "producer_node": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "proposal_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "recipients": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "schema_version": {
+      "const": "comembench-memory-proposal/v17"
+    }
+  },
+  "required": [
+    "schema_version",
+    "proposal_id",
+    "artifact_id",
+    "producer_node",
+    "recipients"
+  ],
+  "type": "object"
+}

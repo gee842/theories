@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "package": "Robodebt implementation follow-through, historical2021–2023 sources",
+  "created_utc": "2026-10-06T01:55:39.362541+00:00",
+  "original_pdf_count": 0,
+  "reading_editions_count": 4,
+  "file_count_excluding_manifest": 9,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3024,
+      "sha256": "a3e29a0a7e08db85d999ef9739ca64fb6a119f824d428e6c6bd98c5674619622"
+    },
+    {
+      "path": "metadata/parent-snapshot-before.json",
+      "bytes": 1647,
+      "sha256": "dc8a9818cbcda737e1037d20cd8201232132d1ed7b82b815b6b342a107f5dc5f"
+    },
+    {
+      "path": "metadata/reading-provenance.json",
+      "bytes": 5032,
+      "sha256": "b327c1d12b4ca6149a9e3ce5bb6b1ab57625ab13ab647198e4442d14aa0b391b"
+    },
+    {
+      "path": "metadata/retrieval.json",
+      "bytes": 5603,
+      "sha256": "6730fbf56eceb5d62a3f167a324959f377f8d13638be209a1f472140268f174e"
+    },
+    {
+      "path": "metadata/verification.json",
+      "bytes": 10459,
+      "sha256": "1bdc2745fc59841af87b5a021360a2dea3574766fc9f217f6638616c447dff4e"
+    },
+    {
+      "path": "reading/ombudsman-2021-web-excerpts.txt",
+      "bytes": 17346,
+      "sha256": "9dfcd49f01c33f485c7d7c18da8ab4ac5e05a82414903c1c0f5d2605c34053ea"
+    },
+    {
+      "path": "reading/ombudsman-2022-appendix-search-description.txt",
+      "bytes": 2702,
+      "sha256": "a762a6734f7e09da0f295b0e3e4bf5d3846c0348da874eb76bea2512f4f53d5e"
+    },
+    {
+      "path": "reading/ombudsman-2022-web-excerpts.txt",
+      "bytes": 10954,
+      "sha256": "7add675e7a6bbb5e69e6838bbee96f175cdd68b615ce0e031a50339f34110865"
+    },
+    {
+      "path": "reading/services-australia-2022-23-web-excerpts.txt",
+      "bytes": 5635,
+      "sha256": "525cf03e7bc35816c4d0f70fdc4bc80ec58e2a60a1bd14607c748434d9fcf765"
+    }
+  ],
+  "unmodified_parent_manifest_sha256": "061f0c574a4c23bc9e89547c02dbf87d47af30a9c814419980f5bf0dff182daf",
+  "verification_receipt": "metadata/verification.json"
+}

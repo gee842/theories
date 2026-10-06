@@ -4,7 +4,7 @@
 
 ## 1. A sharper reported comparison
 
-The [Summer 2026 primary study](https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/) compares judges reading the same 18 refusal transcripts and descriptive rubric while changing stated downstream training consequences: standard, reversed, or no explicit consequence. It also examines tighter rubrics and abstention. Inputs were selected around Claude-salient concerns; this is not a provider-neutral sample. All scenarios are simulated. Authors acknowledge defensible alternative labels on some inputs, and the displayed reasoning is summarized API reasoning. These details limit claims about truth, motives and deployment risk.
+The [Summer 2026 primary study](https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/) motivates a comparison of downstream framing at fixed inputs. Its selected simulated cases cannot establish general deployment rates. See the [independent source-scope review](FUTURE-REPORTING-REVIEW.md) for interpretation limits.
 
 **Discriminating implication:** if a fixed historical question and evidence receive different factual assertions when only a later use changes, concern about consequences affects the reporting interface. That is a different issue from external instructions contaminating AgentDojo actions. It does not by itself distinguish strategic misstatement, rubric reinterpretation, belief changes or response-style changes. A proposed downstream harm is not evidence of actual delivery; an honest objection can be warranted without falsifying the record.
 
@@ -28,9 +28,7 @@ Missing raw data is an access boundary, not a refutation. For the present deriva
 
 ## 4. Positive training comparator and earlier adverse comparator
 
-[Teaching Claude Why](https://alignment.anthropic.com/2026/teaching-claude-why/) reports improvements on held-out autonomous-action tests after training on difficult-advice chats, and an ablation of assistant-response rewriting. It also reports persistence through selected subsequent RL training. The public article provides methods, prompts, examples and figures; its inspected external links expose no complete training/evaluation rows or replication package. Its Google Docs link is a prose cross-reference, not identified dataset metadata.
-
-The rewrite changes explanations, quality, values coverage and response content together. It therefore supports a training-pipeline effect more directly than a uniquely identified effect of reasons. Constitutional targets and examples remain supplied; a transfer result does not derive them. Selected RL persistence does not establish robustness to arbitrary later incentives, and the authors explicitly limit that claim.
+[Teaching Claude Why](https://alignment.anthropic.com/2026/teaching-claude-why/) is the positive training comparator. Our link inspection found no complete training/evaluation rows or replication package. Its Google Docs link is a prose cross-reference, not identified dataset metadata. See the [independent review](FUTURE-REPORTING-REVIEW.md) for causal confounds and limits.
 
 The [2025 official repository](https://github.com/anthropic-experimental/agentic-misalignment/tree/ea0630e1a3eaae7f9f9740fd2703229d3854ccda) supplies templates, configurations and classifiers for adverse self-continuation/goal-conflict scenarios. Its inspected current tree lacks result files; releases and tags were empty. A results-path history entry exists and was not exhaustively audited, so no blanket historical non-release claim is warranted. This branch was superseded by the closer 2026 reporting comparison, not silently counted as a new raw-data reanalysis.
 

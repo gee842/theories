@@ -1,0 +1,389 @@
+{
+  "date": "2026-10-06",
+  "checked_at_utc": "2026-10-06T01:42:14.974443+00:00",
+  "scope": "Root preservation/link/accepted-output verification; no new scientific calculation or participant dispatch",
+  "status": "passed",
+  "frozen_files_verified": 36,
+  "archival_source_hashes_verified": 44,
+  "independent_result_bound_files_verified": 32,
+  "responses": 24,
+  "reviewed_complete_contexts": 24,
+  "reviewed_warranted_outputs": 192,
+  "reviewed_definite_routes": 160,
+  "reviewed_required_uncertainty": 32,
+  "maintained_documents_checked": 8,
+  "local_link_targets_checked": 73,
+  "integration_paragraphs": 8,
+  "files": {
+    "experiments/integrated-correction/selective-handoff/verify_results.py": "5e4d4f258a31853b0a04d9ab72378337d4378f929b093f4f4f6df4f5ee9b20b6",
+    "experiments/integrated-correction/selective-handoff/dispatch-record.json": "04860461ecfa85ec44f598424c8ea7dbce92a76ed81735dff950c77dabb928e3",
+    "experiments/integrated-correction/selective-handoff/reviewer-agent-snapshot.json": "f4542588595d8c5602c2bd48f39828462eb39469cdd853e6f32df616d467d79b",
+    "experiments/integrated-correction/selective-handoff/trials.json": "f138ee6ba832a1cffa04769496ce4048e7f4046c09424564de1410d1d979e598",
+    "experiments/integrated-correction/selective-handoff/results.json": "845e1f28dd8a8ffec5162ff1738a949e07691aa9d7c0c7ace9338da15dbf764a",
+    "experiments/integrated-correction/selective-handoff/dispatch-plan.json": "a106e710f91b9b145a15701502fbbc28808b2ab8df1e9998038d2287ee7c1205",
+    "experiments/integrated-correction/selective-handoff/results-review.json": "116abf8a27e398def0d0246315466421dfdf81f1d36e14cd15a558297757ead4",
+    "experiments/integrated-correction/selective-handoff/README.md": "bc2131ee706c958c1702ee23ae5e5a2cdb7c8b785fef7e5680b04e0dbed18dbe",
+    "experiments/integrated-correction/selective-handoff/RUN-NOTES.md": "959251d67f2309347d0bdc63a10f007c1db1e1e20798e11e3f5df76bf74dad33",
+    "experiments/integrated-correction/selective-handoff/fixtures.json": "98cbc85625a2d52d7540d9c873b4310a62bd66aa10e2f54672c0bc143eca3b23",
+    "experiments/integrated-correction/selective-handoff/runtime-dispatch-metadata.json": "766cbd26241d5c35e625ead15ed761d66824cd5488c989cc34e189a2d82bfc95",
+    "experiments/integrated-correction/selective-handoff/preflight.json": "e5f1f9a6baa4ad8c99978e8207d17d695047918c8ba9a3ab4671a14ac3946331",
+    "experiments/integrated-correction/selective-handoff/prepare.py": "99978ad341b90986b4e0742096ab17428f3f37505c03325c600b686c875ffc5c",
+    "experiments/integrated-correction/selective-handoff/FREEZE.json": "0fb756ec527f53fc3b348639d9b1d56471711e8cc9d4ba7153c0024ce464c3e1",
+    "experiments/integrated-correction/selective-handoff/analyze.py": "2c76cbedfdc0e03c8e977074699ae34f47c107dcc09b94aae43fcae27d263287",
+    "experiments/integrated-correction/selective-handoff/independent_check.py": "29d8bcab1b1c845c336406a46e80b6d2edb355d64579eb463407fb00fc95e7ed",
+    "experiments/integrated-correction/selective-handoff/PROTOCOL.md": "7150bc30e496e29726205494ea92b62b362c656bdf8c506e3e5c111f47c621f3",
+    "experiments/integrated-correction/selective-handoff/development/PREPARATION.md": "cdb7fb282f5c90e78073fe6788864f343af85b9673554d1e6bfa25fe16aa89c2",
+    "experiments/integrated-correction/selective-handoff/responses/L06-foreign-ordinary.txt": "95d23a9b66b46dc8db3fedf5e7b90874dc72655efcb7ee7a5de2a7091c94480d",
+    "experiments/integrated-correction/selective-handoff/responses/L02-defeat-ordinary.txt": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+    "experiments/integrated-correction/selective-handoff/responses/L12-foreign-boundary.txt": "feb0327cdb4f44b31e18c31002fdf86ee8319edcfc9b8b086d510e712b670bd7",
+    "experiments/integrated-correction/selective-handoff/responses/L06-defeat-ordinary.txt": "9c28f3ab3c19822ef011e57b2d47ba3d50cd37a8ad00af11fd8e95cffd1a8ddd",
+    "experiments/integrated-correction/selective-handoff/responses/L06-confirm-boundary.txt": "9c2b828e5e83059e04700221b0fd16ecef43df109391c5fd9408d00df0bd1d87",
+    "experiments/integrated-correction/selective-handoff/responses/L12-confirm-ordinary.txt": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+    "experiments/integrated-correction/selective-handoff/responses/L08-defeat-ordinary.txt": "39c260c5abf53f9189a3591889d82b6ef052898ad134e9266b8f4d24c453939f",
+    "experiments/integrated-correction/selective-handoff/responses/L08-foreign-ordinary.txt": "08f5721213370e86ec0cfc5c8acde93850f1a3988f5a261e374ce529b568299b",
+    "experiments/integrated-correction/selective-handoff/responses/L02-foreign-ordinary.txt": "cc373f79c92fa86e57668cb5d05a0b853a5a131e7644155e5e432c74680618b2",
+    "experiments/integrated-correction/selective-handoff/responses/L12-defeat-ordinary.txt": "13ef34de08278faaf11b03371357f3f51c2c4b3f8a320ff22f86ca065b66af3b",
+    "experiments/integrated-correction/selective-handoff/responses/L08-confirm-boundary.txt": "4e0493613ec03f1adf28dfe4b943bcb82c37ef1e2a96b0dece4518879c66f662",
+    "experiments/integrated-correction/selective-handoff/responses/L02-confirm-boundary.txt": "90f72e544cef481447d1a2345a23f9e3f5f4d09f9e7557647c9c2c2bcb49b2b3",
+    "experiments/integrated-correction/selective-handoff/responses/L12-defeat-boundary.txt": "13ef34de08278faaf11b03371357f3f51c2c4b3f8a320ff22f86ca065b66af3b",
+    "experiments/integrated-correction/selective-handoff/responses/L02-foreign-boundary.txt": "cc373f79c92fa86e57668cb5d05a0b853a5a131e7644155e5e432c74680618b2",
+    "experiments/integrated-correction/selective-handoff/responses/L08-defeat-boundary.txt": "39c260c5abf53f9189a3591889d82b6ef052898ad134e9266b8f4d24c453939f",
+    "experiments/integrated-correction/selective-handoff/responses/L08-foreign-boundary.txt": "08f5721213370e86ec0cfc5c8acde93850f1a3988f5a261e374ce529b568299b",
+    "experiments/integrated-correction/selective-handoff/responses/L02-confirm-ordinary.txt": "90f72e544cef481447d1a2345a23f9e3f5f4d09f9e7557647c9c2c2bcb49b2b3",
+    "experiments/integrated-correction/selective-handoff/responses/L08-confirm-ordinary.txt": "4e0493613ec03f1adf28dfe4b943bcb82c37ef1e2a96b0dece4518879c66f662",
+    "experiments/integrated-correction/selective-handoff/responses/L12-foreign-ordinary.txt": "feb0327cdb4f44b31e18c31002fdf86ee8319edcfc9b8b086d510e712b670bd7",
+    "experiments/integrated-correction/selective-handoff/responses/L06-foreign-boundary.txt": "95d23a9b66b46dc8db3fedf5e7b90874dc72655efcb7ee7a5de2a7091c94480d",
+    "experiments/integrated-correction/selective-handoff/responses/L02-defeat-boundary.txt": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+    "experiments/integrated-correction/selective-handoff/responses/L12-confirm-boundary.txt": "1a60e89f67f4517217ee1a20526710ed7db4874756e4f1062e849bf4794be85b",
+    "experiments/integrated-correction/selective-handoff/responses/L06-confirm-ordinary.txt": "9c2b828e5e83059e04700221b0fd16ecef43df109391c5fd9408d00df0bd1d87",
+    "experiments/integrated-correction/selective-handoff/responses/L06-defeat-boundary.txt": "9c28f3ab3c19822ef011e57b2d47ba3d50cd37a8ad00af11fd8e95cffd1a8ddd",
+    "experiments/integrated-correction/selective-handoff/prompts/L06-foreign-ordinary.txt": "f6d0cb5775ce056b8857582a178b264ca150cdec50642b47ab6865e99a7abcde",
+    "experiments/integrated-correction/selective-handoff/prompts/L02-defeat-ordinary.txt": "97e3b04a4cb40c53bf3d99393d5a438c6e45c9be4dd294f29566788988ea15e6",
+    "experiments/integrated-correction/selective-handoff/prompts/L12-foreign-boundary.txt": "1ad8ff3aafc5e7ddc161d20e44387a03803159586b23d5cbbc09d503288904b8",
+    "experiments/integrated-correction/selective-handoff/prompts/L06-defeat-ordinary.txt": "041c71155611712e6476b2279405f5e54c8366b9ea121c9fc813d09e29c9559b",
+    "experiments/integrated-correction/selective-handoff/prompts/L06-confirm-boundary.txt": "b8b3bdc2a7e322b448db0fd113ff815ed2f281fd125dde1799c2930b6843afc6",
+    "experiments/integrated-correction/selective-handoff/prompts/L12-confirm-ordinary.txt": "b772d066a775aefb7f679f6e6d72e610d0c9d13cbaa61f97c3ff94973dcf1d1e",
+    "experiments/integrated-correction/selective-handoff/prompts/L08-defeat-ordinary.txt": "bc699c9936b3af0c993aa8d3cc6dd6d150394c4cdbfa08be596711a135de8a3b",
+    "experiments/integrated-correction/selective-handoff/prompts/L08-foreign-ordinary.txt": "997c73833da0192f9417fc734f9436d15421fe5b742effcdb00efc1a9551c205",
+    "experiments/integrated-correction/selective-handoff/prompts/L02-foreign-ordinary.txt": "3f5bbba522b3429c8e32d6f2ddff0094c6a75d00fabfa369c3ab2e2913c8b77e",
+    "experiments/integrated-correction/selective-handoff/prompts/L12-defeat-ordinary.txt": "a9b00b4b91e194a7ac931dedcc3e0f4c25baf176171079c3fb43f19d88ee015b",
+    "experiments/integrated-correction/selective-handoff/prompts/L08-confirm-boundary.txt": "c23fc9f0460ba6895e74bde387f0a427bc933e7a4f896dc55f93eb3c7a1ad8f1",
+    "experiments/integrated-correction/selective-handoff/prompts/L02-confirm-boundary.txt": "3278e171a314d3400f60a2aa9e7ab561d45163dac629289fd5bd624039c6ba5e",
+    "experiments/integrated-correction/selective-handoff/prompts/L12-defeat-boundary.txt": "25b1d847acb8c9c3202e68b01764d0bcf00f645bc36dc373522088363c4c60ce",
+    "experiments/integrated-correction/selective-handoff/prompts/L02-foreign-boundary.txt": "944f00de99bc707c533af91bc1da4839151ba21b2360ab16097841963076be7e",
+    "experiments/integrated-correction/selective-handoff/prompts/L08-defeat-boundary.txt": "7cea32e5e1bc783582213a0d03dce2d4dbe6019fbe3140023ca116e903299a51",
+    "experiments/integrated-correction/selective-handoff/prompts/L08-foreign-boundary.txt": "9875f66a38cd703407b6949e6b02a23003b2bde449704771f38b7c0a22a0c440",
+    "experiments/integrated-correction/selective-handoff/prompts/L02-confirm-ordinary.txt": "f0ba4f946af5cfe599bb6e6f288c9d7b0dc6d83b7fd68d2a32ca1c92f8891b9f",
+    "experiments/integrated-correction/selective-handoff/prompts/L08-confirm-ordinary.txt": "b18e8e76a9c3faf0813d3402108fee81ee9f50e664bd0a657b3c78de2f53c405",
+    "experiments/integrated-correction/selective-handoff/prompts/L12-foreign-ordinary.txt": "61004f7d094e79a4d68a98c947b5b4ee3761bc76302c1d397305d1dfd572e985",
+    "experiments/integrated-correction/selective-handoff/prompts/L06-foreign-boundary.txt": "12ba8a5586f74adafe26fbb3bf536cd2936d2fed228d547920db81c4d9e691c4",
+    "experiments/integrated-correction/selective-handoff/prompts/L02-defeat-boundary.txt": "61d5bc28d51d4ab08d03800d67d4d24799381a181bd8d44cbf82b17fe00fbe44",
+    "experiments/integrated-correction/selective-handoff/prompts/L12-confirm-boundary.txt": "6277b79744c47e6aa5ab7fb57f6e993173e0be688e80434ca2322af39973d83c",
+    "experiments/integrated-correction/selective-handoff/prompts/L06-confirm-ordinary.txt": "e94ab585cfbdad8cddd208cdaa555696bd8a37a124f76c50158d3e27f32c7d1f",
+    "experiments/integrated-correction/selective-handoff/prompts/L06-defeat-boundary.txt": "2535cb1a8c3258cdafc7989d8fd5e649d1447167df29e5bf30f4cb98cc076cbf",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md": "e55222460d80968aaf5fb0a3439cdf9a2b45fd3de34f5971141c23c27c794114",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/MEMORY-CORRECTION-BEFORE-PILOT.md": "0346e1df420a09e6055338b5b16e74836acdc8af93fb5fb4cabfd81ff1e47142",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/MEMORY-CORRECTION-BEFORE-PILOT.json": "d34f400bddb25f2795a05ea195ee044c9514b35f04bd76063994280c1cb7e3ce",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-HANDOFF-INTEGRATION-EDITS.json": "468768f8c24b367ea4cd6b71b3ff91690da680ce8028cce6938b44c9ca53eab2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-HANDOFF-DESIGN.md": "7569d589d1b7b1cddf9cbbd5a4146f080ff5104e1ee43a1f7e78cf968191ba02",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-HANDOFF-REVIEW.md": "41dcf9be338b62201b1f6bc116a6451e7f12bba5b78c4207ecaeb3266dfd6aa7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-HANDOFF-PROVENANCE.md": "a3d9e18f9e47bb7baec00443c4e4a4ff51335dc365ab95a10f24be6ac37135d4",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-HANDOFF-RESULTS-REVIEW.md": "7556ff812f4e3f6d6f9f292af34e8e5b939ae113b20f848fe75fae5d5a7db70c"
+  },
+  "links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "ALIGNMENT-COMPLETION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "../../../sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "../../../_process/research/2026-10-05-revisable-concern/settlement/evidence/report.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "ALIGNMENT-AND-GOVERNANCE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "../../../experiments/integrated-correction/selective-handoff/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "../../../experiments/integrated-correction/selective-handoff/PROTOCOL.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-HANDOFF-RESULTS-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "ETHICAL-FOUNDATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "../../../sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "preflight.json"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "PROTOCOL.md"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "prompts/"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "fixtures.json"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "dispatch-plan.json"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "analyze.py"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "FREEZE.json"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "development/PREPARATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "runtime-dispatch-metadata.json"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "dispatch-record.json"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "responses/"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "RUN-NOTES.md"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-HANDOFF-DESIGN.md"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "results.json"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "../../../sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/selective-handoff",
+      "target": "../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../experiments/integrated-correction/selective-handoff/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "SELECTIVE-HANDOFF-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "SELECTIVE-HANDOFF-PROVENANCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../2026-10-05-revisable-concern/settlement/evidence/report.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../experiments/integrated-correction/selective-handoff/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../experiments/integrated-correction/selective-handoff/independent_check.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../experiments/integrated-correction/selective-handoff/preflight.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/sin/outputs/experiment-report.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/sin/work/live/PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/sin/work/live/data-audit.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/sin/work/live/orchestrator-invocations.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../sources/20-codex-theory-sessions-2026-10-05/sin/work/live/independent-data-audit.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "SELECTIVE-HANDOFF-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../experiments/integrated-correction/selective-handoff/verify_results.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../experiments/integrated-correction/selective-handoff/results-review.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../experiments/integrated-correction/selective-handoff/reviewer-agent-snapshot.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../experiments/integrated-correction/selective-handoff/runtime-dispatch-metadata.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../experiments/integrated-correction/selective-handoff/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "MEMORY-CORRECTION-REVIEW.md"
+    },
+    {
+      "from": ".",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md#selective-reuse-in-actual-fresh-contexts"
+    },
+    {
+      "from": ".",
+      "target": "experiments/integrated-correction/selective-handoff/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence",
+      "target": "unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md#selective-reuse-in-actual-fresh-contexts"
+    },
+    {
+      "from": "experiments",
+      "target": "integrated-correction/selective-handoff/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "MEMORY-CORRECTION-AND-SUCCESSION.md#selective-reuse-in-actual-fresh-contexts"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+      "target": "MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../experiments/integrated-correction/selective-handoff/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "MEMORY-CORRECTION-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "MEMORY-CORRECTION-METRICS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "MEMORY-CORRECTION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "../../../../experiments/integrated-correction/selective-handoff/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "SELECTIVE-HANDOFF-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "SELECTIVE-HANDOFF-PROVENANCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "SELECTIVE-HANDOFF-RESULTS-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation",
+      "target": "development/MEMORY-CORRECTION-BEFORE-PILOT.md"
+    }
+  ],
+  "preserved_pre_pilot_original_link_base": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05",
+  "provenance_limits": "All dispatches corroborated by selected local runtime metadata; protected messages prevent plaintext verification. One final independently visible to reviewer; other23 are actual orchestrator conversation copies. Not secure tool isolation or independent models."
+}

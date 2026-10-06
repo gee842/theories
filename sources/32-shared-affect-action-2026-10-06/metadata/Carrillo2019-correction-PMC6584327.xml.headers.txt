@@ -1,0 +1,10 @@
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/xml
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+Date: Tue, 06 Oct 2026 00:34:21 GMT
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: JSESSIONID=5171F5BD94721FA06C1191B7BB6A374D; Path=/europepmc/webservices/rest; Secure; HttpOnly
+

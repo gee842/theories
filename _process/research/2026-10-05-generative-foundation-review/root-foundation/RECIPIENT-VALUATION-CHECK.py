@@ -12,9 +12,13 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
 EXPERIMENT = ROOT / "experiments/recipient-harm-valuation"
 SOURCES = ROOT / "sources/30-recipient-harm-valuation-2026-10-06"
+NEURAL_SOURCES = ROOT / "sources/32-shared-affect-action-2026-10-06"
 CANONICAL = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
 OUTPUT = HERE / "RECIPIENT-VALUATION-INTEGRATION.json"
-ACCEPTED_CANONICAL = "abb7a2bd5dd9e260c660b261dfd9127ca847f4fb02de951c6ca202120f9d6b70"
+# Earlier behavioral-only acceptance is preserved in the canonical review and git 113a956.
+ACCEPTED_CANONICAL = "309ececbbb21e184e99d73249504736c672b589a472977efd8380912333e7ca8"
+NEURAL_MANIFEST = "1978b0aad933511daaad4d61dd6e4bb4aaba8658c86124847d4ef6f48f467996"
+NEURAL_CONTRACT = "fcdd52b271e52c24e080a0877a8480f1a80c354d57fdde32747a115272abf082"
 
 
 def require(condition, message):
@@ -58,6 +62,19 @@ def main():
     require(len(set(paths)) == 20, "Duplicate source manifest entry")
     for entry in manifest["files"]:
         bind(SOURCES / entry["path"], entry["sha256"], "source_manifest", entry["bytes"])
+
+    bind(NEURAL_SOURCES / "manifest.json", NEURAL_MANIFEST, "neural_source_manifest_identity")
+    neural_manifest = read(NEURAL_SOURCES / "manifest.json")
+    neural_paths = {entry["path"] for entry in neural_manifest["files"]}
+    require(len(neural_paths) == len(neural_manifest["files"]) == 12,
+            "Neural source manifest coverage changed")
+    actual_neural_paths = {str(p.relative_to(NEURAL_SOURCES))
+                           for p in NEURAL_SOURCES.rglob("*") if p.is_file()}
+    require(actual_neural_paths == neural_paths | {"manifest.json"},
+            "Neural source package contains unbound or missing files")
+    for entry in neural_manifest["files"]:
+        bind(NEURAL_SOURCES / entry["path"], entry["sha256"],
+             "neural_source_manifest", entry["bytes"])
 
     originals = manifest["original_osf_files"]
     require(len(originals) == 4 and len({x["path"] for x in originals}) == 4,
@@ -187,8 +204,15 @@ def main():
         require(digest(path) in review, f"Review does not bind current {relative(path)}")
     require("Final verdict: accepted within the stated scope; no outstanding correction" in review,
             "Final canonical acceptance absent")
+    neural_review = (HERE / "SHARED-AFFECT-ACTION-REVIEW.md").read_text()
+    bind(HERE / "SHARED-AFFECT-ACTION-CONTRACT.md", NEURAL_CONTRACT,
+         "accepted_neural_identification_contract")
+    require(ACCEPTED_CANONICAL in neural_review and NEURAL_CONTRACT in neural_review,
+            "Neural review does not bind current canonical and contract")
 
-    docs = [CANONICAL, SOURCES / "README.md"]
+    docs = [CANONICAL, SOURCES / "README.md", NEURAL_SOURCES / "README.md"]
+    docs += [HERE / f"SHARED-AFFECT-ACTION-{suffix}.md"
+             for suffix in ("EVIDENCE", "CONTRACT", "REVIEW")]
     docs += [HERE / f"RECIPIENT-VALUATION-{suffix}.md"
              for suffix in ("EVIDENCE", "IDENTIFICATION", "REVIEW", "CANONICAL-REVIEW")]
     docs += [EXPERIMENT / name for name in
@@ -229,6 +253,8 @@ def main():
         "named_connection": "Recipient-linked physical consequences to changing action under unchanged offered food.",
         "scope": "Checks saved byte identities, receipt consistency, accepted canonical identity and local file-link targets. No scientific calculation or checker rerun; no network verification or new data collection.",
         "source_manifest_files_checked": len(manifest["files"]),
+        "neural_source_manifest_files_checked": len(neural_manifest["files"]),
+        "neural_extension_scope": "Reviewed primary-source comparison and conditional identification contract only; no neural-data analysis or new behavioral calculation.",
         "osf_originals_checked": len(osf_checks), "osf_original_checks": osf_checks,
         "source_workbook_validation": {"mode": "saved manifest claim, not recomputed", **validation},
         "saved_independent_verification_counts": counts,

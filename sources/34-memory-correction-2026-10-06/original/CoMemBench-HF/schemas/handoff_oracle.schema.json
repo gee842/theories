@@ -1,0 +1,76 @@
+{
+  "$id": "https://comembench.org/schemas/v17/handoff_oracle.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "family_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "handoffs": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "consumer_node": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "edge_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "entity_scope": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "handoff_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "handoff_policy": {
+            "enum": [
+              "mandatory",
+              "conditional_revision"
+            ]
+          },
+          "producer_node": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "semantic": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "verification_required": {
+            "const": true
+          },
+          "version_rule": {
+            "const": "latest_verified"
+          }
+        },
+        "required": [
+          "handoff_id",
+          "edge_id",
+          "producer_node",
+          "consumer_node",
+          "semantic",
+          "entity_scope",
+          "version_rule",
+          "verification_required",
+          "handoff_policy"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "comembench-handoff-oracle/v17"
+    }
+  },
+  "required": [
+    "schema_version",
+    "family_id",
+    "handoffs"
+  ],
+  "type": "object"
+}
