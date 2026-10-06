@@ -32,7 +32,7 @@ variable {State : Type u} {Action : Type v}
 /-- Supervenience on visited states and composition hold for an arbitrary relation. -/
 theorem credentials_hold_for_every_relation (P : Process State Action) :
     ∀ R : State → State → Prop,
-      Supervenes (fun h : History P => Along R h.2.2) History.states ∧
+      Covaries (fun h : History P => Along R h.2.2) History.states ∧
       ∀ {s m t : State} (r : Run P s m) (r' : Run P m t),
         (Along R (r.append r') ↔ Along R r ∧ Along R r') :=
   fun R => ⟨along_supervenes_on_states P R, fun r r' => along_append R r r'⟩
@@ -82,24 +82,26 @@ theorem generation_endorses_no_switch :
 /-- From an open state, committing to either of two exclusive courses is an actual
 transition, and each registers as damage. -/
 def committing : Process (Option Bool) (Option Bool) where
-  step s a t := match s, a with
-    | none, none => t = some true ∨ t = some false
-    | some b, some c => c = b ∧ t = some b
-    | _, _ => False
+  step s a t := match s with
+    | none => a = none ∧ (t = some true ∨ t = some false)
+    | some b => a = some b ∧ t = some b
 
-theorem committing_open_can (b : Bool) : Feasible committing none [none, some b] :=
-  ⟨some b, .cons (show some b = some true ∨ some b = some false by cases b <;> simp)
-    (.cons (show b = b ∧ some b = some b from ⟨rfl, rfl⟩) (.nil _))⟩
+theorem committing_open_can (b : Bool) : Feasible committing none [none, some b] := by
+  refine ⟨some b, .cons (m := some b) ?_ (.cons (m := some b) ⟨rfl, rfl⟩ (.nil _))⟩
+  refine ⟨rfl, ?_⟩
+  cases b
+  · exact Or.inr rfl
+  · exact Or.inl rfl
 
 theorem committing_lost (b : Bool) : ¬ Feasible committing (some b) [none, some (!b)] := by
   rintro ⟨t, h⟩
   cases h with
-  | cons hs _ => exact hs
+  | cons hs _ => cases hs.1
 
 theorem every_exclusive_choice_registers_as_damage (b : Bool) :
     committing.step none none (some b) ∧ ¬ ContinuationLe committing none (some b) := by
   constructor
-  · show some b = some true ∨ some b = some false
+  · refine ⟨rfl, ?_⟩
     cases b
     · exact Or.inr rfl
     · exact Or.inl rfl

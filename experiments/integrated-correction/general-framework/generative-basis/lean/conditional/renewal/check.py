@@ -28,6 +28,7 @@ SOURCES = {
     "RenewalSufficiency": ROOT / "RenewalSufficiency.lean",
     "RenewalLink": ROOT / "RenewalLink.lean",
     "RenewalCharacterization": ROOT / "RenewalCharacterization.lean",
+    "RenewalConfigurations": ROOT / "RenewalConfigurations.lean",
 }
 INHERITED_SHA256 = {
     "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
@@ -35,7 +36,7 @@ INHERITED_SHA256 = {
     "SupportNecessity": "30050ec7366ef84fa6d2bd71ea8f5998ef0d9975b6841393b7014b147573b715",
 }
 NEW = ["RenewalClosure", "RenewalAccounting", "RenewalSufficiency", "RenewalLink",
-       "RenewalCharacterization"]
+       "RenewalCharacterization", "RenewalConfigurations"]
 ALLOWED_AXIOMS = {"propext", "Quot.sound"}
 
 
@@ -130,8 +131,13 @@ def main():
                  "between one and D, some execution stays live forever exactly when a nonempty "
                  "population of kinds is closed under support by constraints that outlast a "
                  "tick and opens over its spans at least what forming it demands, otherwise "
-                 "every execution stops being live by an explicit time. No physical "
-                 "identification or ethical appraisal is asserted.",
+                 "every execution stops being live by an explicit time; the same holds for "
+                 "keeping a live token of designated kinds, such as means of correction, "
+                 "exactly when some self-renewing population contains one; for whole "
+                 "configurations, renewability is never gained along a history without "
+                 "import, a seeded configuration with enough reserve reaches a standing "
+                 "renewal, and renewability is not a function of the reserve and kinds "
+                 "present. No physical identification or ethical appraisal is asserted.",
     }
     (ROOT / "verification.json").write_text(json.dumps(record, indent=2) + "\n")
     print(json.dumps({"status": record["status"], "modules": len(results),

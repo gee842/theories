@@ -36,7 +36,7 @@ All 26 audited declarations have empty axiom reports.
 
 ## What remains supplied
 
-- The spare-pair stock, applying the native interface draw to formation, and the rule that a formed contact clears `blocked`. These follow the pattern of the [inquiry-revision contact](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md#the-concrete-change) (one inherited spare pair, one paid operation). That mechanism belongs to a different apparatus, and its exact parts are not claimed to compose with this port.
+- The spare-pair stock, applying the native interface draw to formation, and the rule that a formed contact clears `blocked`. These follow the pattern of the [inquiry-revision contact](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md#the-concrete-change) (one inherited spare pair, one supported operation). That mechanism belongs to a different apparatus, and its exact parts are not claimed to compose with this port.
 - `tau`, sensor parity and receipt inversion remain fixed. Formation therefore opens the contact into whichever class `tau` dictates; it does not choose A over B, calibrate receipts, or acquire the phase knowledge alignment uses.
 - Formation is not decided by anything inside the model; the theorems hold for any history that includes it. Why a formation event occurs (an acquired reason, selection or accident) is not derived here.
 - Changing the effective law is not shown to be good. It changes what inquiry can reach.
@@ -47,7 +47,7 @@ All 26 audited declarations have empty axiom reports.
 
 **A general formation law.** For any process whose steps retain a coordinate, every law read from that coordinate is constant along every history (`law_constant`). Extend the process with a separate family of formation events: any history that changes the coordinate contains a formation event (`change_requires_formation`). This holds for every process meeting the retention condition, in the conditional-universality form ∀P, A(P) ⇒ G(P). The packet port is one instance (`class_change_requires_formation`).
 
-**Spare pairs from the port's own failures.** The inherited spare stock is removed. A supported recovery step turns ten units of recorded failed conversion into one pair. The native `dissipated` counter is never decremented; a separate recovery count stays bounded by it in every history (`trace_preserves_backing`). An exact record holds: final spares plus formations equal initial spares plus recoveries (`pair_record`). From an empty start, formations never exceed recoveries, and ten times the recoveries never exceeds the recorded waste (`formations_backed_by_failures`). Every formation therefore draws on failed transfers in the same history.
+**Spare pairs from the port's own failures.** The inherited spare stock is removed. A supported recovery step turns ten units of recorded failed conversion into one pair. The native `dissipated` counter is never decremented; a separate recovery count stays bounded by it in every history (`trace_preserves_backing`). An exact record holds: final spares plus formations equal initial spares plus recoveries (`pair_record`). From an empty start, formations never exceed recoveries, and ten times the recoveries never exceeds the recorded dissipation (`formations_backed_by_failures`). Every formation therefore draws on failed transfers in the same history.
 
 **What evidence can decide.** A blocked contact and an open but misaligned contact give the same receipt, dissipation, transfer, held amount, arrivals and source after a probe, yet they belong to different classes (`failed_transfer_indistinguishable`). The retained record alone cannot identify blockage. Forming an already open contact draws on what is held, uses a pair and changes no class (`redundant_formation_draws`). Aligned to the output that differs from `tau`, a transfer identifies the contact exactly (`aligned_transfer_identifies_contact`). That alignment uses phase and inversion knowledge not acquired here. These countercases are kept as results, not removed.
 
@@ -87,11 +87,30 @@ The disposition is history- and consequence-dependent (`port_history_dependent`,
 
 "Valuation" keeps the package's thin functional sense: a selective disposition, not experience or ethical warrant.
 
+## The revising port: valuation and port as one process
+
+[RevisingPort.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RevisingPort.lean) builds the reading and the decision into the port itself, so the valuation organization and the port are one process rather than two linked by a theorem. It adds 58 declarations, all with empty axiom reports.
+
+The revising port is the extended port plus what it retains: the last recorded pair of arrivals. Its own activity (native calls and recovery) leaves that reading alone. At an encounter it acts on the reading toward the contact it meets, forming when neither output last arrived, then runs the inquiry and retains what it records.
+
+| Theorem | Content |
+|---|---|
+| `encounter_effects` | An encounter records the profile of the contact its own act leaves. The consequence law, including the act, is derived from native execution. |
+| `memory_is_org_run`, `memory_trace` | Along every history the retained readings are exactly the valuation organization's run over the contacts met, and so a core trace of that organization. |
+| `port_trace`, `formations_are_selections` | The same history is an actual history of the extended port, and its formations are exactly the organization's selections to form. |
+| `class_change_requires_selection` | The contact class changes only through the organization's own selection. |
+| `met_selects_blocked` | Once the contact has been met, through any later activity the disposition forms exactly when the contact is blocked. Reading after acting removes the staleness of the earlier section. |
+| `revising_loop` | One executed history from the blocked class-C start with no spares: meet, recover, meet. The second encounter forms on the port's own reading; the port ends in class B with ten units transferred, its reading accurate and its disposition no longer forming. It performs exactly the acquired history of the section above. |
+
+Following Ren's rule that no result may rest on a bare assumption, each part of the encounter is proved necessary for the claim that the disposition forms exactly when blocked. The decision rule is the only rule on recorded arrivals that does this (`decision_rule_unique`). One output's arrival never suffices (`one_output_cannot_decide`), so two probes at different outputs are needed, and after an intact reset the other output is first reached after two rotations (`other_output_after_two_rotations`). The intact reset cannot be dropped: a broken reset resting in phase `p1` probes the same output twice, and then no rule on the inquiry's record decides (`broken_reset_cannot_decide`). Reading after acting is needed as well, since a reading taken before the act goes stale (`disposition_stale_then_recovers`).
+
+Two inputs of the extended port remain, and removing them is the next step. One is the recovery rate of ten dissipated units per pair, which a separate thread is grounding. The other is the formation rule: formation meets the native interface draw and clears `blocked`.
+
 ## What the track establishes and what remains
 
 Established, at this model's scope: the contact coordinate is no longer an unexplained fixed input of the effective inquiry law. It changes only through formation, formation draws on the port's own recorded failures, and the decision to form follows soundly from an inquiry the port runs on itself. The same inquiry acquires receipt calibration and, once the contact is open, the inversion. One history realizes the whole loop from failure through inquiry and formation to transfer.
 
-Still supplied: the recovery rate of ten dissipated units per pair, applying the native interface draw to recovery and formation, the rule that formation clears `blocked`, and the inquiry schedule itself. Reading the record and applying the decision rule are described in the theorems, not built as a further mechanism inside the port; why the port runs this inquiry rather than another is not derived. Sensor parity remains fixed and unused here. The three-phase cycle and the conservation rules are being examined in a separate thread.
+Not yet derived: the recovery rate of ten dissipated units per pair (being grounded in a separate thread) and the formation rule (formation meets the native interface draw and clears `blocked`); removing them is the next step. Reading the record and applying the decision rule are now built into the port and proved necessary in the revising-port section. Sensor parity remains fixed and unused here. The three-phase cycle and the conservation rules are being examined in a separate thread.
 
 ## Reproduce
 
@@ -101,7 +120,7 @@ From `experiments/integrated-correction/general-framework/generative-basis/lean/
 python3 check_contact_formation.py
 ```
 
-It checks that the 32 closure sources match the [process-law receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-verification.json), builds them, the four new modules and the two valuation-development modules they import fresh in a temporary directory, and requires empty audits, no warnings and no placeholders. The latest run passed 39 modules and 718 audits, all empty ([receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/contact-formation-verification.json)). Unlike the earlier checkers, it does not pin a compiler binary path or hash, so it runs on any machine with the pinned version. No existing source, checker or receipt was changed.
+It checks that the 32 closure sources match the [process-law receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-verification.json), builds them, the six new modules and the two valuation-development modules they import fresh in a temporary directory, and requires empty audits, no warnings and no placeholders. The latest run passed 40 modules and 776 audits, all empty ([receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/contact-formation-verification.json)). Unlike the earlier checkers, it does not pin a compiler binary path or hash, so it runs on any machine with the pinned version. No existing source, checker or receipt was changed.
 
 ## Vocabulary
 

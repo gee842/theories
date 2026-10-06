@@ -72,7 +72,7 @@ At [Ren's direction](../../../../../../../sources/15-codex-theory-conversations/
 
 ## Contact-formation, phase-cycle and valuation modules (renamed when merged with main)
 
-`ContactFormation`, `FormationClosure`, `AcquiredContact`, `PhaseCycleDerivation` and `PortValuation` reached main while the rename was under way. On merge they take the native-port names above, plus:
+`ContactFormation`, `FormationClosure`, `AcquiredContact`, `PhaseCycleDerivation`, `PortValuation`, and later `PhasePeriodSelection` and `RevisingPort`, reached main while the rename was under way. On merge they take the native-port names above, plus:
 
 | Old | New |
 |---|---|

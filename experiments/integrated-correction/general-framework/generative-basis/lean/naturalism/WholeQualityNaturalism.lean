@@ -6,9 +6,9 @@ import EthicalOrientation
 Four standard arguments for ethical naturalism are given formal counterparts over
 the unchanged `Process`/`Trace` semantics.
 
-* Supervenience (Jackson). `supervenes_iff_factors` proves that a property `M`
-  supervenes on a base `N` exactly when `M` is a function on the classes of
-  `N`-identical cases. That is the formal step from global supervenience to a
+* Supervenience (Jackson). `supervenes_factors` proves that a property `M`
+  supervening on a base `N` is a function on the classes of `N`-identical cases;
+  `base_defined_supervenes` gives the converse for functions of the base. That is the formal step from global supervenience to a
   necessarily coextensive base-defined property. Identity of properties, as
   opposed to coextension, is not a theorem here.
 * The base is the whole history. `Run` keeps every intermediate state as data.
@@ -46,16 +46,19 @@ def Supervenes {X : Sort u} {B : Sort v} {V : Sort w} (M : X → V) (N : X → B
 /-- Two cases are base-identical. -/
 def SameBase {X : Sort u} {B : Sort v} (N : X → B) (x y : X) : Prop := N x = N y
 
-/-- Supervenience is exactly factorization through the base-identity classes. -/
-theorem supervenes_iff_factors {X : Sort u} {B : Sort v} {V : Sort w}
-    (M : X → V) (N : X → B) :
-    Supervenes M N ↔ ∃ f : Quot (SameBase N) → V, ∀ x, M x = f (Quot.mk _ x) := by
-  constructor
-  · intro h
-    exact ⟨Quot.lift M (fun x y hxy => h x y hxy), fun _ => rfl⟩
-  · rintro ⟨f, hf⟩ x y hxy
-    rw [hf x, hf y]
-    exact congrArg f (Quot.sound hxy)
+/-- Supervenience yields a function on the base-identity classes. -/
+theorem supervenes_factors {X : Sort u} {B : Sort v} {V : Sort w}
+    (M : X → V) (N : X → B) (h : Supervenes M N) :
+    ∃ f : Quot (SameBase N) → V, ∀ x, M x = f (Quot.mk _ x) :=
+  ⟨Quot.lift M (fun x y hxy => h x y hxy), fun _ => rfl⟩
+
+/-- For propositions, supervenience as co-variation: base-identical cases agree. -/
+def Covaries {X : Sort u} {B : Sort v} (M : X → Prop) (N : X → B) : Prop :=
+  ∀ x y, N x = N y → (M x ↔ M y)
+
+theorem covaries_of_supervenes {X : Sort u} {B : Sort v} (M : X → Prop) (N : X → B)
+    (h : Supervenes M N) : Covaries M N :=
+  fun x y hxy => h x y hxy ▸ Iff.rfl
 
 /-- A property defined from the base supervenes on it. -/
 theorem base_defined_supervenes {X : Sort u} {B : Sort v} {V : Sort w}
@@ -167,15 +170,14 @@ def History (P : Process State Action) : Type (max u v) := Σ s t, Run P s t
 
 def History.states {P : Process State Action} (h : History P) : List State := h.2.2.states
 
-/-- Any step quality supervenes on the visited states of the history. -/
+/-- Any step quality co-varies with the visited states of the history. -/
 theorem along_supervenes_on_states (P : Process State Action) (R : State → State → Prop) :
-    Supervenes (fun h : History P => Along R h.2.2) History.states := by
+    Covaries (fun h : History P => Along R h.2.2) History.states := by
   intro x y hxy
-  apply propext
-  show Along R x.2.2 ↔ Along R y.2.2
-  rw [along_iff_chain R x.2.2, along_iff_chain R y.2.2]
-  show Chain R x.states ↔ Chain R y.states
-  rw [hxy]
+  have hx := along_iff_chain R x.2.2
+  have hy := along_iff_chain R y.2.2
+  have hs : x.2.2.states = y.2.2.states := hxy
+  exact Iff.intro (fun h => hy.mpr (hs ▸ hx.mp h)) (fun h => hx.mpr (hs ▸ hy.mp h))
 
 /-- The quality composes through the shared actual boundary state. -/
 theorem along_append {P : Process State Action} (R : State → State → Prop) :
@@ -205,17 +207,22 @@ theorem chain_map {α : Type u} {β : Type w} (R : β → β → Prop) (q : α �
     have ih := chain_map R q (y :: rest)
     exact Iff.intro (fun h => ⟨h.1, ih.mp h.2⟩) (fun h => ⟨h.1, ih.mpr h.2⟩)
 
+theorem chain_congr {α : Type u} {R S : α → α → Prop} (h : ∀ x y, R x y ↔ S x y) :
+    (xs : List α) → (Chain R xs ↔ Chain S xs)
+  | [] => Iff.rfl
+  | [_] => Iff.rfl
+  | x :: y :: rest => by
+    have ih := chain_congr h (y :: rest)
+    exact Iff.intro (fun c => ⟨(h x y).mp c.1, ih.mp c.2⟩) (fun c => ⟨(h x y).mpr c.1, ih.mpr c.2⟩)
+
 /-- Exact re-representation of feasible words preserves and reflects the quality. -/
 theorem along_continuation_transport {Other : Type w}
     {P : Process State Action} {Q : Process Other Action} {q : State → Other}
     (hexact : ∀ s word, Feasible P s word ↔ Feasible Q (q s) word)
     {s t : State} (r : Run P s t) :
-    Along (ContinuationLe P) r ↔ Chain (ContinuationLe Q) (r.states.map q) := by
-  rw [along_iff_chain, ← chain_map]
-  have key : (fun x y => ContinuationLe Q (q x) (q y)) = ContinuationLe P := by
-    funext x y
-    exact propext (continuation_projection_iff hexact x y).symm
-  rw [key]
+    Along (ContinuationLe P) r ↔ Chain (ContinuationLe Q) (r.states.map q) :=
+  (along_iff_chain _ r).trans ((chain_congr (fun x y => continuation_projection_iff hexact x y)
+    r.states).trans (chain_map _ q r.states))
 
 /-! ## 4. Explanation and knowledge of losses -/
 
@@ -330,10 +337,10 @@ theorem quality_not_fixed_by_endpoints_and_word :
 
 /-- The quality does not supervene on the action word of histories with fixed endpoints. -/
 theorem quality_not_supervenient_on_word :
-    ¬ Supervenes (fun r : Run dip 2 2 => Along (ContinuationLe dip) r) Run.word := by
+    ¬ Covaries (fun r : Run dip 2 2 => Along (ContinuationLe dip) r) Run.word := by
   intro h
   obtain ⟨hw, hs, hd⟩ := quality_not_fixed_by_endpoints_and_word
-  exact hd (Eq.mp (h steady dipped hw) hs)
+  exact hd ((h steady dipped hw).mp hs)
 
 /-- The explained fact: continuous availability of `use` differs between the two
 histories, though both start and end where `use` is available. -/
@@ -347,7 +354,8 @@ theorem availability_not_fixed_by_endpoints_and_word :
 
 end Generative.Naturalism
 
-#print axioms Generative.Naturalism.supervenes_iff_factors
+#print axioms Generative.Naturalism.supervenes_factors
+#print axioms Generative.Naturalism.covaries_of_supervenes
 #print axioms Generative.Naturalism.base_defined_supervenes
 #print axioms Generative.Naturalism.supervenes_of_finer
 #print axioms Generative.Naturalism.Run.toTrace
@@ -359,6 +367,7 @@ end Generative.Naturalism
 #print axioms Generative.Naturalism.along_append
 #print axioms Generative.Naturalism.along_mono
 #print axioms Generative.Naturalism.chain_map
+#print axioms Generative.Naturalism.chain_congr
 #print axioms Generative.Naturalism.along_continuation_transport
 #print axioms Generative.Naturalism.preserved_throughout
 #print axioms Generative.Naturalism.witness_refutes_preservation

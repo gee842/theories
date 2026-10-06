@@ -1,0 +1,160 @@
+{
+  "checked_at_utc": "2026-10-06T21:01:42.608123+00:00",
+  "modules": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodSelection.lean": "832ab5f036cb62a6b475620e899b870da615da40e58bdd2004efb35b0e62bd32",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormedContactCycle.lean": "06889cdcee41208db379a21e3963fb421fcfe964dc44e5e56f1379634e89871d"
+  },
+  "checker_sha256": "772c7fafc303f6d242d4d78a16e685322bc1865e194d97698138a9f121477b97",
+  "declared": 43,
+  "lint": "passed",
+  "enumeration": {
+    "by_period": {
+      "1": {
+        "least_worst_case": null,
+        "patterns_within_seven": []
+      },
+      "2": {
+        "least_worst_case": null,
+        "patterns_within_seven": []
+      },
+      "3": {
+        "least_worst_case": 7,
+        "patterns_within_seven": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ]
+      },
+      "4": {
+        "least_worst_case": 8,
+        "patterns_within_seven": []
+      },
+      "5": {
+        "least_worst_case": 9,
+        "patterns_within_seven": []
+      },
+      "6": {
+        "least_worst_case": 7,
+        "patterns_within_seven": [
+          "001001",
+          "010010",
+          "011011",
+          "100100",
+          "101101",
+          "110110"
+        ]
+      },
+      "7": {
+        "least_worst_case": 9,
+        "patterns_within_seven": []
+      },
+      "8": {
+        "least_worst_case": 8,
+        "patterns_within_seven": []
+      }
+    },
+    "native_per_value": [
+      4,
+      7
+    ],
+    "total_known_phase_waits": {
+      "001": 4,
+      "00101": 6
+    }
+  },
+  "source_binding": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/model.py": "18bff69c94f65a5fa9b91c3369f04ba73b5ee705ed5ad5a97ad514c2bd8db135"
+  },
+  "lean": {
+    "status": "passed",
+    "toolchain": "leanprover/lean4:v4.29.1",
+    "version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+    "modules": [
+      {
+        "module": "GenerativeCore",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+        "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "NativePacketProcess",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
+        "source_sha256": "7499283a14cf4c6ffa75d438e9e8b8554655c8a01a652d8e67add4da698f3633",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "InquirySufficiency",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+        "source_sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "AttainableQuestions",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean",
+        "source_sha256": "84dfcab5064771a9aef59b9c8fd56e1b2384fcbbe94878feb3bc93208e2e18d8",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "OnePacketQuestions",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean",
+        "source_sha256": "ed0f0579c8b872bf096fcfc55e6b3921ea2f1f82f2e42f2b35b45d61d02912dd",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "OnePacketAdmissibility",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketAdmissibility.lean",
+        "source_sha256": "ad86c969e6b4d76a554bb4fea54f24cab553a99ab13e37759cc807a627a97730",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PacketLawDerivation",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
+        "source_sha256": "d7532473306bd426af9e702e4772814b2b3471f4f64ce6c4046aa7d8bddeb553",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PhaseCycleDerivation",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
+        "source_sha256": "327cfcd02d8f7deaf4c4bc45a95c12888c6e1241362ed14806dc5781ce32f94d",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PhasePeriodSelection",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodSelection.lean",
+        "source_sha256": "832ab5f036cb62a6b475620e899b870da615da40e58bdd2004efb35b0e62bd32",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "ContactFormation",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ContactFormation.lean",
+        "source_sha256": "e94ede1ad6ce5cc98b9947a819dfa99918fa2508bf3da4616c845d73cd0a3032",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "FormedContactCycle",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormedContactCycle.lean",
+        "source_sha256": "06889cdcee41208db379a21e3963fb421fcfe964dc44e5e56f1379634e89871d",
+        "exit_code": 0,
+        "clean": true
+      }
+    ],
+    "audits": 43,
+    "empty_audits": 43,
+    "nonempty": []
+  },
+  "scope": "Python game solving is an independent finite reconstruction, not a kernel proof. Lean statements count as verified only when lean.status is passed. ContactFormation.lean is imported unchanged from the contact-formation thread."
+}
