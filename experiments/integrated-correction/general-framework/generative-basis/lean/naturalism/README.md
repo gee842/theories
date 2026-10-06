@@ -27,12 +27,14 @@
 - `TransitionNonUndermining` constrains only actual transitions. In `switching`, where the move actually occurs, every complete and every scalar ranking endorses a transition that removes an activity (`total_orders_undermine_on_transitions`, `scalar_ranking_undermines_on_transitions`); `ContinuationLe` endorses neither move (`generation_endorses_no_switch`).
 - Every exclusive commitment registers as damage (`every_exclusive_choice_registers_as_damage`), and a recovered dip is condemned (`recovered_dip_still_condemned`). The quality is binary non-loss over existential feasibility, with no positive measure of generation.
 
+**`ProtectedScope.lean` and `ProtectedScopeLimits.lean`: a protected scope derived from the process (reviewed; mostly a negative result).** Eventual realizability (`Can`), removal between activities (`Removes`), and protection of ongoing activities that remove no other (`Protected`). With every activity in scope, restraint is not damage and harm is (`restraint_not_damage_harm_is`), but only in a process where the victim's activity removes nothing; if the victim can escape, harm registers nothing (`escape_harm_unregistered`). The exercised scope rescues commitment (`commitment_damage_depends_on_scope`) but makes restraint damage again (`restraint_damage_exercised`). No step of `dip` is damage, recovered or not (`recoverable_dip_not_damage`, `dip_fall_zero_not_damage`). Symmetric rivals are unprotected (`symmetric_rivals_leave_ruin_unregistered`). See the [study note](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-NATURALISM-PROTECTED-SCOPE.md).
+
 ## What is not proved
 
 That moral properties supervene or explain observations; the premise itself and the choice of the whole scope; property identity beyond necessary coextension; a principled derivation of the protected scope of activities; any verdict when every option removes something. Processes, scopes and rankings are supplied inputs. Nothing here says which history occurs or that any orientation is good.
 
 ## Verify
 
-From this directory, with Lean 4.29.1 through elan or on `PATH`, run `python3 check.py`. The checker requires the inherited `GenerativeCore`, `DynamicUnderdetermination`, `DynamicSymmetry`, `DynamicConsequences` and `EthicalOrientation` to match the source hashes in the main [generative-basis receipt](../verification.json). It builds all eight modules fresh in a temporary directory, rejects `sorry`, custom axioms and warnings, and requires every new theorem to be audited.
+From this directory, with Lean 4.29.1 through elan or on `PATH`, run `python3 check.py`. The checker requires the inherited `GenerativeCore`, `DynamicUnderdetermination`, `DynamicSymmetry`, `DynamicConsequences` and `EthicalOrientation` to match the source hashes in the main [generative-basis receipt](../verification.json). It builds all ten modules fresh in a temporary directory, rejects `sorry`, custom axioms and warnings, and requires every new theorem to be audited.
 
-The [receipt](verification.json) records **53 new audits**: 45 with empty axiom reports, and 8 that depend only on Lean's standard `propext` and `Quot.sound`.
+The [receipt](verification.json) records **93 new audits**: 79 with empty axiom reports, and 14 that depend only on Lean's standard `propext` and `Quot.sound`.
