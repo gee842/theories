@@ -65,7 +65,7 @@ theorem advance_returns_after_three (phase : Phase) :
 
 theorem advance_no_shorter_return (phase : Phase) :
     nextPhase phase ≠ phase ∧ nextPhase (nextPhase phase) ≠ phase := by
-  cases phase <;> exact ⟨fun h => by cases h, fun h => by cases h⟩
+  cases phase <;> constructor <;> intro h <;> cases h
 
 theorem phaseAfter_three (phase : Phase) : phaseAfter 3 phase = phase := by
   cases phase <;> rfl
