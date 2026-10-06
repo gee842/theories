@@ -1,0 +1,496 @@
+{
+  "results_sha256": "5f8505bce00e9795fb90cf64f32ec04fe9fc7935f97a85ef7e30957c64e5fc26",
+  "counts": {
+    "cases": 33,
+    "arms": 5,
+    "producers": 3,
+    "histories": 6270,
+    "prefixes": 147792
+  },
+  "passed": false,
+  "predictions": {
+    "P1_shared_regression": {
+      "passed": true,
+      "compared_cases": 29,
+      "mismatches": [],
+      "mismatch_count": 0
+    },
+    "P2_k1_withdrawal": {
+      "passed": true,
+      "shared_attempts": 180,
+      "violations": [],
+      "violation_count": 0,
+      "source_gain_values": [
+        10
+      ]
+    },
+    "P3_k2_evidence_sensitivity": {
+      "passed": true,
+      "counts": {
+        "withhold_both_captured": 36,
+        "deliver_first_missed": 216
+      },
+      "violations": [],
+      "violation_count": 0
+    },
+    "P4_unknown_status": {
+      "passed": false,
+      "counts": {
+        "unknown": 36,
+        "deliver_excess": 18,
+        "hold_unmet": 0
+      },
+      "violations": [],
+      "violation_count": 0
+    },
+    "P5_forged_record": {
+      "passed": true,
+      "misled_histories": 36,
+      "violations": []
+    },
+    "P6_k3_matches_shared": {
+      "passed": true,
+      "violations": [],
+      "violation_count": 0
+    },
+    "P7_unprovisioned": {
+      "passed": true,
+      "violations": [],
+      "violation_count": 0
+    }
+  },
+  "variable_summary": {
+    "changed": {
+      "shared": {
+        "positive_assessment": "1/4",
+        "selected_capture": "1/4",
+        "recipient_gain": "5",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "1/4",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k1": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "5/2",
+        "source": "65/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "1/4",
+        "status_fulfilled": "1/4",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k2_deliver": {
+        "positive_assessment": "1/4",
+        "selected_capture": "1/4",
+        "recipient_gain": "5",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "1/4",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "1/4",
+        "status_unknown": "0"
+      },
+      "fulfill_k2_hold": {
+        "positive_assessment": "1/4",
+        "selected_capture": "1/4",
+        "recipient_gain": "5",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "1/4",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "1/4",
+        "status_unknown": "0"
+      },
+      "fulfill_k3": {
+        "positive_assessment": "1/4",
+        "selected_capture": "1/4",
+        "recipient_gain": "5",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "1/4",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "1/4",
+        "status_unknown": "0"
+      }
+    },
+    "stable": {
+      "shared": {
+        "positive_assessment": "1/4",
+        "selected_capture": "1/4",
+        "recipient_gain": "15/2",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "1/4",
+        "excess_k2": "1/4",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k1": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "5",
+        "source": "65/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "1/4",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k2_deliver": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "5",
+        "source": "65/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "1/4",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k2_hold": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "5",
+        "source": "65/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "1/4",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k3": {
+        "positive_assessment": "1/4",
+        "selected_capture": "1/4",
+        "recipient_gain": "15/2",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "1/4",
+        "excess_k2": "1/4",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "1/4",
+        "status_unknown": "0"
+      }
+    },
+    "first_feedback_missing_changed": {
+      "shared": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "0",
+        "source": "65/8",
+        "claim_met_end_k1": "0",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k1": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "0",
+        "source": "65/8",
+        "claim_met_end_k1": "0",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k2_deliver": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "0",
+        "source": "65/8",
+        "claim_met_end_k1": "0",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k2_hold": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "0",
+        "source": "65/8",
+        "claim_met_end_k1": "0",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k3": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "0",
+        "source": "65/8",
+        "claim_met_end_k1": "0",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "0"
+      }
+    },
+    "first_feedback_missing_stable": {
+      "shared": {
+        "positive_assessment": "1/4",
+        "selected_capture": "1/4",
+        "recipient_gain": "15/2",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "1/4",
+        "excess_k2": "1/4",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k1": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "5",
+        "source": "65/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "1/4",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k2_deliver": {
+        "positive_assessment": "1/4",
+        "selected_capture": "1/4",
+        "recipient_gain": "15/2",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "1/4",
+        "excess_k2": "1/4",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "1/4"
+      },
+      "fulfill_k2_hold": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "5",
+        "source": "65/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "1/4"
+      },
+      "fulfill_k3": {
+        "positive_assessment": "1/4",
+        "selected_capture": "1/4",
+        "recipient_gain": "15/2",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "1/4",
+        "excess_k2": "1/4",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "1/4",
+        "status_unknown": "0"
+      }
+    },
+    "register_receipt_forged": {
+      "shared": {
+        "positive_assessment": "1/4",
+        "selected_capture": "1/4",
+        "recipient_gain": "5",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "1/4",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k1": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "5/2",
+        "source": "65/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "1/4",
+        "status_fulfilled": "1/4",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k2_deliver": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "5/2",
+        "source": "65/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "1/4",
+        "status_fulfilled": "1/4",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k2_hold": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "5/2",
+        "source": "65/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "1/4",
+        "status_fulfilled": "1/4",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k3": {
+        "positive_assessment": "1/4",
+        "selected_capture": "1/4",
+        "recipient_gain": "5",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "1/4",
+        "excess_k1": "1/4",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "1/4",
+        "status_unknown": "0"
+      }
+    },
+    "late_efficacy_change": {
+      "shared": {
+        "positive_assessment": "1/4",
+        "selected_capture": "0",
+        "recipient_gain": "5/2",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k1": {
+        "positive_assessment": "0",
+        "selected_capture": "0",
+        "recipient_gain": "5/2",
+        "source": "65/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "1/4",
+        "status_fulfilled": "1/4",
+        "status_pending": "0",
+        "status_unknown": "0"
+      },
+      "fulfill_k2_deliver": {
+        "positive_assessment": "1/4",
+        "selected_capture": "0",
+        "recipient_gain": "5/2",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "1/4",
+        "status_unknown": "0"
+      },
+      "fulfill_k2_hold": {
+        "positive_assessment": "1/4",
+        "selected_capture": "0",
+        "recipient_gain": "5/2",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "1/4",
+        "status_unknown": "0"
+      },
+      "fulfill_k3": {
+        "positive_assessment": "1/4",
+        "selected_capture": "0",
+        "recipient_gain": "5/2",
+        "source": "45/8",
+        "claim_met_end_k1": "1/4",
+        "claim_met_end_k2": "0",
+        "excess_k1": "0",
+        "excess_k2": "0",
+        "withheld_while_unmet_k2": "0",
+        "status_fulfilled": "0",
+        "status_pending": "1/4",
+        "status_unknown": "0"
+      }
+    }
+  }
+}
