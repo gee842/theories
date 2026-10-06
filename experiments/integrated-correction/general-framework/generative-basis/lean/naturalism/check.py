@@ -32,6 +32,7 @@ SOURCES = {
     "ProtectedScopeLimits": ROOT / "ProtectedScopeLimits.lean",
     "PremiseNecessity": ROOT / "PremiseNecessity.lean",
     "EmbeddedEvaluation": ROOT / "EmbeddedEvaluation.lean",
+    "RegeneratingPersistence": ROOT / "RegeneratingPersistence.lean",
 }
 # Equal to the source_sha256 values in ../verification.json.
 INHERITED_SHA256 = {
@@ -41,7 +42,7 @@ INHERITED_SHA256 = {
     "DynamicConsequences": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
     "EthicalOrientation": "00bcc4a7542d4b81f1e924207d1d5b82e1ae032c4e26d7031d2779914fd56cc4",
 }
-NEW = ["WholeQualityNaturalism", "NaturalismIdentity", "NaturalismReview", "ProtectedScope", "ProtectedScopeLimits", "PremiseNecessity", "EmbeddedEvaluation"]
+NEW = ["WholeQualityNaturalism", "NaturalismIdentity", "NaturalismReview", "ProtectedScope", "ProtectedScopeLimits", "PremiseNecessity", "EmbeddedEvaluation", "RegeneratingPersistence"]
 ALLOWED_AXIOMS = set()  # Ren, 6 October 2026: no axioms in new declarations
 
 
@@ -145,7 +146,10 @@ def main():
                  "the empty and the whole scope, and the action vocabulary is necessary. Evaluation "
                  "is also modelled as a record inside the same process: the record equals the "
                  "whole-history relation, shares the process's continuation, and which recording "
-                 "relation forms is not fixed by the law. No separate moral predicate is "
+                 "relation forms is not fixed by the law. With finitely many states, an evaluating "
+                 "activity persists exactly when a regenerated state where it is realizable is "
+                 "reachable, and the return path loses no eventual realizability. No separate "
+                 "moral predicate is "
                  "formalized: the premise, the supervenience of moral properties, property "
                  "identity and any ethical verdict are not asserted.",
     }
