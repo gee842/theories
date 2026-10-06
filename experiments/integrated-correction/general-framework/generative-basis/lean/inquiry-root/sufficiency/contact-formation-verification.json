@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-06T19:15:59.056075+00:00",
+  "checked_at_utc": "2026-10-06T19:24:27.474234+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "modules": [
@@ -299,9 +299,21 @@
       "audits": 26,
       "nonempty_audits": {},
       "clean": true
+    },
+    {
+      "module": "FormationClosure",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationClosure.lean",
+      "source_sha256": "4701cc249659ce0a48362810a7c4277039c2949f0b10d5ecb3c08c253ddce6e8",
+      "exit_code": 0,
+      "audits": 48,
+      "nonempty_audits": {},
+      "clean": true
     }
   ],
-  "total_audits": 625,
-  "new_module_audits": 26,
-  "scope": "ContactFormation over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the spare-pair stock, formation tariff and contact-opening rule are supplied."
+  "total_audits": 673,
+  "new_module_audits": {
+    "ContactFormation": 26,
+    "FormationClosure": 48
+  },
+  "scope": "ContactFormation and FormationClosure over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the decision to form is not derived."
 }

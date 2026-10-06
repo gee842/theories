@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fresh build of ContactFormation over the unchanged 32-module process-law closure.
+"""Fresh build of ContactFormation and FormationClosure over the unchanged 32-module process-law closure.
 
 Portable: uses `lean` from PATH (or $LEAN) and checks its version against the
 pinned toolchain. Sources are copied into a temporary directory; no local
@@ -15,7 +15,7 @@ HERE = Path(__file__).resolve().parent
 CORE = HERE.parents[1]
 REPO = CORE.parents[4]
 CLOSURE = HERE / "process-law-verification.json"
-NEW = "ContactFormation"
+NEW = ["ContactFormation", "FormationClosure"]
 AUDIT = re.compile(r"'([^']+)' (?:does not depend on any axioms|depends on axioms: \[([^\]]*)\])")
 
 
@@ -35,7 +35,7 @@ def main():
     for name, path in modules:
         recorded = next(r for r in closure["modules"] if r["module"] == name)["source_sha256"]
         assert sha(path.read_bytes()) == recorded, f"{name} changed since the process-law receipt"
-    modules.append((NEW, HERE / (NEW + ".lean")))
+    modules += [(name, HERE / (name + ".lean")) for name in NEW]
     rows, passed = [], True
     with tempfile.TemporaryDirectory(prefix="contact-formation-") as temporary:
         build = Path(temporary)
@@ -61,13 +61,14 @@ def main():
                 print(output)
                 passed = False
                 break
-    new_row = rows[-1]
-    passed = passed and len(rows) == len(modules) and new_row["module"] == NEW and new_row["audits"] > 0
+    new_rows = [r for r in rows if r["module"] in NEW]
+    passed = (passed and len(rows) == len(modules) and len(new_rows) == len(NEW)
+              and all(r["audits"] > 0 for r in new_rows))
     record = {"checked_at_utc": datetime.now(timezone.utc).isoformat(),
               "status": "passed" if passed else "failed", "lean_version": version,
               "modules": rows, "total_audits": sum(r["audits"] for r in rows),
-              "new_module_audits": new_row["audits"],
-              "scope": "ContactFormation over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the spare-pair stock, formation tariff and contact-opening rule are supplied."}
+              "new_module_audits": {r["module"]: r["audits"] for r in new_rows},
+              "scope": "ContactFormation and FormationClosure over the unchanged 32-module process-law closure. Empty axiom reports do not establish an assumption-free foundation; the salvage rate, formation and salvage tariffs and the contact-opening rule are supplied, and the decision to form is not derived."}
     (HERE / "contact-formation-verification.json").write_text(json.dumps(record, indent=2) + "\n")
     print(json.dumps({"status": record["status"], "modules": len(rows), "audits": record["total_audits"]}))
     raise SystemExit(0 if passed else 1)
