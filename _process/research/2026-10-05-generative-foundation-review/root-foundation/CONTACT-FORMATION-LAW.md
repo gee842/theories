@@ -89,9 +89,9 @@ The disposition is history- and consequence-dependent (`port_history_dependent`,
 
 ## The revising port: valuation and port as one process
 
-[RevisingPort.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RevisingPort.lean) builds the reading and the decision into the port itself, so the valuation organization and the port are one process rather than two linked by a theorem. It adds 58 declarations, all with empty axiom reports.
+[RevisingPort.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RevisingPort.lean) builds the reading and the decision into the port itself, so the valuation organization and the port are one process rather than two linked by a theorem. It adds 61 declarations, all with empty axiom reports.
 
-The revising port is the extended port plus what it retains: the last recorded pair of arrivals. Its own activity (native calls and recovery) leaves that reading alone. At an encounter it acts on the reading toward the contact it meets, forming when neither output last arrived, then runs the inquiry and retains what it records.
+The revising port's state is the extended port's state plus one more coordinate: the last recorded pair of arrivals. Its activity (native calls and recovery) leaves that reading alone. At an encounter it takes its own contact coordinate, acts on the reading (forming when neither output last arrived), then runs the inquiry and retains what it records. No split between an organization and a world is assumed: the valuation package's presented condition is the port's own contact, its consequence law is native execution, and the reading is set apart only by which steps change it (`reading_changes_only_at_encounters`), as the contact is set apart by formation.
 
 | Theorem | Content |
 |---|---|
@@ -104,13 +104,13 @@ The revising port is the extended port plus what it retains: the last recorded p
 
 Following Ren's rule that no result may rest on a bare assumption, each part of the encounter is proved necessary for the claim that the disposition forms exactly when blocked. The decision rule is the only rule on recorded arrivals that does this (`decision_rule_unique`). One output's arrival never suffices (`one_output_cannot_decide`), so two probes at different outputs are needed, and after an intact reset the other output is first reached after two rotations (`other_output_after_two_rotations`). The intact reset cannot be dropped: a broken reset resting in phase `p1` probes the same output twice, and then no rule on the inquiry's record decides (`broken_reset_cannot_decide`). Reading after acting is needed as well, since a reading taken before the act goes stale (`disposition_stale_then_recovers`).
 
-Two inputs of the extended port remain, and removing them is the next step. One is the recovery rate of ten wasted units per pair, which a separate thread is grounding. The other is the formation rule: formation meets the native interface demand and clears `blocked`.
+For the formation step itself, two parts are now proved necessary. Some event outside native activity is needed for any contact change (`change_requires_formation`). Consuming a recovered pair is needed for every opening to be backed by recorded failures: a rival formation that opens without consuming a pair opens a port with no spares, no recoveries and no recorded failure (`unconsumed_formation_unbacked`). Two parts are not yet derived. First, that formation meets the native interface demand: no current result needs it. Second, formation as a primitive event rather than a rearrangement of the port's own material. The recovery rate of ten wasted units per pair is being grounded in a separate thread.
 
 ## What the track establishes and what remains
 
 Established, at this model's scope: the contact coordinate is no longer an unexplained fixed input of the effective inquiry law. It changes only through formation, formation draws on the port's own recorded failures, and the decision to form follows soundly from an inquiry the port runs on itself. The same inquiry acquires receipt calibration and, once the contact is open, the inversion. One history realizes the whole loop from failure through inquiry and formation to transfer.
 
-Not yet derived: the recovery rate of ten wasted units per pair (being grounded in a separate thread) and the formation rule (formation meets the native interface demand and clears `blocked`); removing them is the next step. Reading the record and applying the decision rule are now built into the port and proved necessary in the revising-port section. Sensor parity remains fixed and unused here. The three-phase cycle and accounting rules are being examined in a separate thread.
+Not yet derived: the recovery rate (being grounded in a separate thread), formation's interface demand, and formation as a primitive event rather than a rearrangement of the port's material (see the revising-port section). Reading the record and applying the decision rule are now built into the port and proved necessary in the revising-port section. Sensor parity remains fixed and unused here. The three-phase cycle and accounting rules are being examined in a separate thread.
 
 ## Reproduce
 

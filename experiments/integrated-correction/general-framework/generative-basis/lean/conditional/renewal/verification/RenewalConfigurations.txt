@@ -1,19 +1,20 @@
-'Generative.Conditional.Renewal.step_within' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.execution_within' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.opened_one_pos' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.alive_token_live' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.dead_stays_dead' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.renewable_live_step' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.renewable_live_step' does not depend on any axioms
 'Generative.Conditional.Renewal.renewable_of_step' does not depend on any axioms
-'Generative.Conditional.Renewal.renewable_iff_step' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.renewable_iff_step' does not depend on any axioms
 'Generative.Conditional.Renewal.renewability_not_generated' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.mem_agedN' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.renewable_of_more' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.mem_aged_of_kept' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.agedN_empty' depends on axioms: [propext, Quot.sound]
-'Generative.Conditional.Renewal.build_within' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.build_step' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.build_live' depends on axioms: [propext, Quot.sound]
+'Generative.Conditional.Renewal.le_longer_left' does not depend on any axioms
+'Generative.Conditional.Renewal.le_longer_right' does not depend on any axioms
+'Generative.Conditional.Renewal.seeded_positivePart' depends on axioms: [propext]
+'Generative.Conditional.Renewal.formation_le_mul' does not depend on any axioms
 'Generative.Conditional.Renewal.seeded_renewable' depends on axioms: [propext, Quot.sound]
 'Generative.Conditional.Renewal.balanced_population' does not depend on any axioms
 'Generative.Conditional.Renewal.young_token_renewable' depends on axioms: [propext, Quot.sound]
