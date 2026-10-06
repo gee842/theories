@@ -149,5 +149,305 @@
     "relative_file_links_broken": 0,
     "source_hashes_match_at_link_check": true,
     "source_changes_after_capture": []
-  }
+  },
+  "followups": [
+    {
+      "snapshot_local_time": "2026-10-06T07:25:53+07:00",
+      "head": "113a956409e188842099220c4571b51d66d33f1d",
+      "scope": "Read-only receipt, accepted conceptual-recognition and actual saved-history follow-up. Initial snapshot and review scope remain historical. No producer source edit, simulation or proof compilation.",
+      "accepted_recognition_commit": "38df6f6",
+      "numerical_receipt_status": "full_reconstruction_passed_additional_review_pending",
+      "numerical_counts": {
+        "cases": 29,
+        "mixtures": 261,
+        "histories": 3306,
+        "prefixes": 40200,
+        "aggregate_metrics": 8352,
+        "preparation_prefix_comparisons": 3071,
+        "catalog_entries": 152
+      },
+      "receipt_source_hash_validation": [
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/check_model.py",
+          "recorded_sha256": "2e4adca30d9d21636add4d5cd1d9f44b257160ae40763e758674bf30770d044a",
+          "current_sha256": "324a5bd055c7af93d182351c5fbe9af11bf9538c755f28f6d8a3e97ad9d3cd1d",
+          "matches": false
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model.py",
+          "recorded_sha256": "69d52407a0ab5a81b01c3d535deda60eddc0c40289e7c2cfeca0e20e89879561",
+          "current_sha256": "69d52407a0ab5a81b01c3d535deda60eddc0c40289e7c2cfeca0e20e89879561",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/DRAFT-PROTOCOL.md",
+          "recorded_sha256": "a226f1536bd36fbedae26c04a70d9a9e4644dd9d18684d2988dd33c8e5eec21d",
+          "current_sha256": "a226f1536bd36fbedae26c04a70d9a9e4644dd9d18684d2988dd33c8e5eec21d",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/cases.json",
+          "recorded_sha256": "9d252c1f76e16f8653cae311626a476b739a57ec1d19ce2f80b3182059ccc911",
+          "current_sha256": "9d252c1f76e16f8653cae311626a476b739a57ec1d19ce2f80b3182059ccc911",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/INTERFACE.md",
+          "recorded_sha256": "7c033a471cde4a988ff51f5b0e65abe14653582f6134867abd315078810225b1",
+          "current_sha256": "7c033a471cde4a988ff51f5b0e65abe14653582f6134867abd315078810225b1",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/result-files.json",
+          "recorded_sha256": "b1117c7f0eaf49dd0fbeacbf2e5b207ae0bb1108b1306e273e2d380ce8354dd9",
+          "current_sha256": "b1117c7f0eaf49dd0fbeacbf2e5b207ae0bb1108b1306e273e2d380ce8354dd9",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/results.json.gz",
+          "recorded_sha256": "11255f2ed4ac29ca1e6811ff06e7c4dfe4b549da2d9b6136ad31c1991ad2abf2",
+          "current_sha256": "11255f2ed4ac29ca1e6811ff06e7c4dfe4b549da2d9b6136ad31c1991ad2abf2",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/fixtures.json",
+          "recorded_sha256": "01facecb0b4cfef6bb9dacf93244b10a74c706ffef7cc145f570bdccf4cb90af",
+          "current_sha256": "01facecb0b4cfef6bb9dacf93244b10a74c706ffef7cc145f570bdccf4cb90af",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/reporting.json",
+          "recorded_sha256": "9c234d315e1f55d26189d03a6d89fca7f74f8fe0774513499e77c34edbb09c5b",
+          "current_sha256": "9c234d315e1f55d26189d03a6d89fca7f74f8fe0774513499e77c34edbb09c5b",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/check_model.py",
+          "recorded_sha256": "7a29e481ad98ae2ee3bff8d68059eb591c417705034410cef27dcb615290ca5a",
+          "current_sha256": "7a29e481ad98ae2ee3bff8d68059eb591c417705034410cef27dcb615290ca5a",
+          "matches": true
+        }
+      ],
+      "formal_verification_receipt_present": false,
+      "relative_file_links_checked": 37,
+      "relative_file_links_broken": 0,
+      "evidence": [
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md",
+          "sha256": "b92eb8fd3c207dbba95812b33196aac186b940cb2115a43cd0fe00407b89c61d",
+          "bytes": 18968
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-CONTRACT.md",
+          "sha256": "2ddb7350f39cec21901d6e21533b62f87a0266871e2dbe14f3bf785aa75a3618",
+          "bytes": 32723
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-MATH.md",
+          "sha256": "9be57f930e3ea357c2a40d23f8e638781df2471872b4947a5ae8d960e126caa4",
+          "bytes": 33728
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-APPLICATION-REVIEW.md",
+          "sha256": "0765e402b11c103de438d8ed7b36daa59c74b16fe076f3b149e1888c2790edfd",
+          "bytes": 28576
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/README.md",
+          "sha256": "31ad66a704a3fa4d4d9897b831dcbdfb015b90914a9b51e5cb5b8cb0e0abdc1a",
+          "bytes": 6966
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/INTERFACE.md",
+          "sha256": "7c033a471cde4a988ff51f5b0e65abe14653582f6134867abd315078810225b1",
+          "bytes": 5448
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/review-history/first-independent-run.json",
+          "sha256": "2560954a75f2c7371f59c1e57029cf8e3540212e95247b574aa98caf3721719e",
+          "bytes": 3306
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/producer-checks.json",
+          "sha256": "963ae242053e3a5f14a3a5722802bf3a3f893818c52f0cae5cc7971a2407fb44",
+          "bytes": 21679
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/first-run-receipt.json",
+          "sha256": "b05c8dbfd412ae76658beac9dd82e1772a49331e4ef5166ded127336961a2ab0",
+          "bytes": 14935
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/results.json.gz",
+          "sha256": "11255f2ed4ac29ca1e6811ff06e7c4dfe4b549da2d9b6136ad31c1991ad2abf2",
+          "bytes": 1612592
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/check_model.py",
+          "sha256": "324a5bd055c7af93d182351c5fbe9af11bf9538c755f28f6d8a3e97ad9d3cd1d",
+          "bytes": 44282
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/results.json.gz",
+          "sha256": "cbd19b32b18f3afbfb2c50cc6fb6d8f46fd633dec2e3902124e1c5a5ab7c3438",
+          "bytes": 1152142
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/model-verification.json",
+          "sha256": "a7ad2c4c4bea1ff0892243e5adf19200d60ae0d8ab88b71b72fb95859aad81b8",
+          "bytes": 16271
+        }
+      ]
+    },
+    {
+      "snapshot_local_time": "2026-10-06T07:27:36+07:00",
+      "head": "113a956409e188842099220c4571b51d66d33f1d",
+      "scope": "Current numerical/adversarial receipt and read-only inspection of actual saved command-diverse evaluator continuations. No simulation or Lean rerun; no whole-package acceptance.",
+      "numerical_receipt": {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model-verification.json",
+        "sha256": "5b5c4114c2f52ada951ad96d1ba0148adfbfd818a5f8165d1629b708b5c30faa",
+        "status": "passed",
+        "counts": {
+          "cases": 29,
+          "mixtures": 261,
+          "histories": 3306,
+          "prefixes": 40200,
+          "aggregate_metrics": 8352,
+          "preparation_prefix_comparisons": 3071,
+          "catalog_entries": 152
+        },
+        "comparisons": {
+          "matched_input_histories": 1102,
+          "fixed000_contrasts": 18,
+          "permission_preserves_assessment": 18,
+          "actual_funded_retired_port_boundaries": 18
+        },
+        "rejected_mutations": 15
+      },
+      "receipt_source_hash_validation": [
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/check_model.py",
+          "recorded_sha256": "324a5bd055c7af93d182351c5fbe9af11bf9538c755f28f6d8a3e97ad9d3cd1d",
+          "current_sha256": "324a5bd055c7af93d182351c5fbe9af11bf9538c755f28f6d8a3e97ad9d3cd1d",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model.py",
+          "recorded_sha256": "69d52407a0ab5a81b01c3d535deda60eddc0c40289e7c2cfeca0e20e89879561",
+          "current_sha256": "69d52407a0ab5a81b01c3d535deda60eddc0c40289e7c2cfeca0e20e89879561",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/DRAFT-PROTOCOL.md",
+          "recorded_sha256": "a226f1536bd36fbedae26c04a70d9a9e4644dd9d18684d2988dd33c8e5eec21d",
+          "current_sha256": "a226f1536bd36fbedae26c04a70d9a9e4644dd9d18684d2988dd33c8e5eec21d",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/cases.json",
+          "recorded_sha256": "9d252c1f76e16f8653cae311626a476b739a57ec1d19ce2f80b3182059ccc911",
+          "current_sha256": "9d252c1f76e16f8653cae311626a476b739a57ec1d19ce2f80b3182059ccc911",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/INTERFACE.md",
+          "recorded_sha256": "7c033a471cde4a988ff51f5b0e65abe14653582f6134867abd315078810225b1",
+          "current_sha256": "7c033a471cde4a988ff51f5b0e65abe14653582f6134867abd315078810225b1",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/protocol-freeze.json",
+          "recorded_sha256": "1b834163d59fb272e5a60ba19f997e333f09b9810e664cd992b4e94262176bca",
+          "current_sha256": "1b834163d59fb272e5a60ba19f997e333f09b9810e664cd992b4e94262176bca",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/results.json.gz",
+          "recorded_sha256": "11255f2ed4ac29ca1e6811ff06e7c4dfe4b549da2d9b6136ad31c1991ad2abf2",
+          "current_sha256": "11255f2ed4ac29ca1e6811ff06e7c4dfe4b549da2d9b6136ad31c1991ad2abf2",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/result-files.json",
+          "recorded_sha256": "b1117c7f0eaf49dd0fbeacbf2e5b207ae0bb1108b1306e273e2d380ce8354dd9",
+          "current_sha256": "b1117c7f0eaf49dd0fbeacbf2e5b207ae0bb1108b1306e273e2d380ce8354dd9",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/fixtures.json",
+          "recorded_sha256": "01facecb0b4cfef6bb9dacf93244b10a74c706ffef7cc145f570bdccf4cb90af",
+          "current_sha256": "01facecb0b4cfef6bb9dacf93244b10a74c706ffef7cc145f570bdccf4cb90af",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/reporting.json",
+          "recorded_sha256": "9c234d315e1f55d26189d03a6d89fca7f74f8fe0774513499e77c34edbb09c5b",
+          "current_sha256": "9c234d315e1f55d26189d03a6d89fca7f74f8fe0774513499e77c34edbb09c5b",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/first-run-receipt.json",
+          "recorded_sha256": "b05c8dbfd412ae76658beac9dd82e1772a49331e4ef5166ded127336961a2ab0",
+          "current_sha256": "b05c8dbfd412ae76658beac9dd82e1772a49331e4ef5166ded127336961a2ab0",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/check_model.py",
+          "recorded_sha256": "7a29e481ad98ae2ee3bff8d68059eb591c417705034410cef27dcb615290ca5a",
+          "current_sha256": "7a29e481ad98ae2ee3bff8d68059eb591c417705034410cef27dcb615290ca5a",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/results.json.gz",
+          "recorded_sha256": "cbd19b32b18f3afbfb2c50cc6fb6d8f46fd633dec2e3902124e1c5a5ab7c3438",
+          "current_sha256": "cbd19b32b18f3afbfb2c50cc6fb6d8f46fd633dec2e3902124e1c5a5ab7c3438",
+          "matches": true
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/fixtures.json",
+          "recorded_sha256": "4bbc33b4b2e9793b8ff9c188f2f6d10c78557e95b6962afd6ec45a4b1680a5bc",
+          "current_sha256": "4bbc33b4b2e9793b8ff9c188f2f6d10c78557e95b6962afd6ec45a4b1680a5bc",
+          "matches": true
+        }
+      ],
+      "saved_history_inspection": {
+        "collaborating_ai_reviewer": "/root/completion_interface_status",
+        "case": "signals_111",
+        "producer": "variable",
+        "predecessor_refs": [
+          "primary/variable/4/37",
+          "primary/variable/11/37"
+        ],
+        "mass_each": "9/128",
+        "acquired_q": [
+          3,
+          0
+        ],
+        "executed_commands": [
+          1,
+          0
+        ],
+        "native_n_sequence": [
+          0,
+          4,
+          6,
+          7
+        ],
+        "shared_and_conventional_final_actor_recipient_live_source": [
+          0,
+          60,
+          0
+        ],
+        "gated_final_actor_recipient_live_source": [
+          16,
+          40,
+          20
+        ],
+        "scope": "Distinct reached histories; within each ancestry factual/private inputs are matched across routing arms. Cross-command histories are not all-private-state-matched interventions. Same learner persists through one port replacement."
+      },
+      "formal_verification_receipt_present": false,
+      "relative_file_links_checked": 38,
+      "relative_file_links_broken": 0
+    }
+  ]
 }
