@@ -37,9 +37,23 @@ Proved here:
   encounter forms on the port's own reading and records an arrival
   (`revising_loop`).
 
-Still supplied: the inquiry schedule, the decision rule `!r.1 && !r.2`, the
-recovery rate, and that encounters need an intact reset. "Valuation" keeps the
-package's thin functional sense: a selective disposition.
+Each part of the encounter is necessary for the claim that the disposition
+forms exactly when blocked, and is proved so here rather than assumed. The
+decision rule is the only rule on recorded arrivals that does it
+(`decision_rule_unique`). One output's arrival never suffices
+(`one_output_cannot_decide`), so two probes at different outputs are needed;
+after an intact reset the other output is first reached after two rotations
+(`other_output_after_two_rotations`). The intact reset cannot be dropped: a
+broken reset can probe the same output twice, and then no rule decides
+(`broken_reset_cannot_decide`). Reading after acting is needed too:
+`PortValuation.disposition_stale_then_recovers` shows the reading taken before
+the act goes stale.
+
+Two inputs of the extended port remain and are the next to remove: the recovery
+rate of ten wasted units per pair (being grounded in a separate thread), and
+the formation rule (formation meets the native interface demand and clears
+`blocked`). "Valuation" keeps the package's thin functional sense: a selective
+disposition.
 -/
 
 namespace Generative.InquirySufficiency.RevisingPort
@@ -489,6 +503,77 @@ theorem revising_loop :
       expand none revisingHistory = acquiredHistory := by
   exact ⟨_, rfl, runAgent_sound rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
 
+/-! ## Why the rule, the two probes and the intact reset
+
+None of these is a free choice. Each is necessary for the claim that the
+disposition forms exactly when the contact is blocked. -/
+
+/-- No contact configuration makes both outputs arrive. -/
+theorem profile_never_both (tau blocked : Bool) : profile tau blocked ≠ (true, true) := by
+  cases tau <;> cases blocked <;> decide
+
+/-- The decision rule is forced: a rule on recorded arrivals forms exactly when
+the contact is blocked if and only if it is `!r.1 && !r.2` on every reading a
+port can produce. The one reading no port produces is left free. -/
+theorem decision_rule_unique (f : Bool × Bool → Bool) :
+    (∀ tau blocked, f (profile tau blocked) = blocked) ↔
+      ∀ r, r ≠ (true, true) → f r = (!r.1 && !r.2) := by
+  constructor
+  · intro decides r possible
+    obtain ⟨r1, r2⟩ := r
+    cases r1 <;> cases r2
+    · exact decides false true
+    · exact decides false false
+    · exact decides true false
+    · exact absurd rfl possible
+  · intro agrees tau blocked
+    rw [agrees _ (profile_never_both tau blocked)]
+    cases tau <;> cases blocked <;> rfl
+
+/-- The organization's rule is that rule. -/
+theorem portOrg_rule (r : Bool × Bool) (x : Bool × Bool) :
+    portOrg.select (some r) x = (!r.1 && !r.2) := rfl
+
+/-- One output's arrival cannot decide the contact: whichever output is tested,
+no rule on its arrival forms exactly when blocked. Both outputs must be recorded,
+so the inquiry needs two probes at different outputs. -/
+theorem one_output_cannot_decide (o : Bool) (f : Bool → Bool) :
+    ¬ ∀ tau blocked, f (arrivalAt o tau blocked) = blocked := by
+  intro decides
+  cases o
+  · exact Bool.noConfusion ((decides false true).symm.trans (decides false false))
+  · exact Bool.noConfusion ((decides true true).symm.trans (decides true false))
+
+/-- From the phase an intact reset fixes, the next phase probes the same output;
+the other output is first reached after two rotations. -/
+theorem other_output_after_two_rotations :
+    output .p0 = false ∧ output (nextPhase .p0) = false ∧ output (nextPhase (nextPhase .p0)) = true :=
+  ⟨rfl, rfl, rfl⟩
+
+/-- A port whose reset is broken, resting in phase `p1`. -/
+def brokenPort (blocked : Bool) : NativePacketProcess.State :=
+  { phase := .p1, tau := false, sigma := false, broken := true, blocked := blocked,
+    receiptFlip := false, source := 40, fuel := 400000, live := 0, workspace := 0,
+    capacity := 10, spent := 0, income := 0, transferred := 0, wasted := 0 }
+
+/-- Its completed inquiries, blocked and open. -/
+def brokenInquiry (blocked : Bool) : Inquiry (brokenPort blocked) :=
+  (inquire (brokenPort blocked)).get (by cases blocked <;> rfl)
+
+/-- With a broken reset both probes can test the same output, so a blocked and an
+open contact leave identical readings. -/
+theorem broken_readings_agree : (brokenInquiry true).reading = (brokenInquiry false).reading := rfl
+
+/-- The intact reset cannot be dropped: no rule on what an inquiry records forms
+exactly when the contact is blocked for every port. -/
+theorem broken_reset_cannot_decide (f : Reading → Bool) :
+    ¬ ∀ s (q : Inquiry s), f q.reading = s.blocked := by
+  intro decides
+  have blocked := decides _ (brokenInquiry true)
+  have opened := decides _ (brokenInquiry false)
+  rw [broken_readings_agree] at blocked
+  exact Bool.noConfusion (blocked.symm.trans opened)
+
 end Generative.InquirySufficiency.RevisingPort
 
 #print axioms Generative.InquirySufficiency.RevisingPort.actingWorld
@@ -540,3 +625,12 @@ end Generative.InquirySufficiency.RevisingPort
 #print axioms Generative.InquirySufficiency.RevisingPort.runAgent_sound
 #print axioms Generative.InquirySufficiency.RevisingPort.revisingHistory
 #print axioms Generative.InquirySufficiency.RevisingPort.revising_loop
+#print axioms Generative.InquirySufficiency.RevisingPort.profile_never_both
+#print axioms Generative.InquirySufficiency.RevisingPort.decision_rule_unique
+#print axioms Generative.InquirySufficiency.RevisingPort.portOrg_rule
+#print axioms Generative.InquirySufficiency.RevisingPort.one_output_cannot_decide
+#print axioms Generative.InquirySufficiency.RevisingPort.other_output_after_two_rotations
+#print axioms Generative.InquirySufficiency.RevisingPort.brokenPort
+#print axioms Generative.InquirySufficiency.RevisingPort.brokenInquiry
+#print axioms Generative.InquirySufficiency.RevisingPort.broken_readings_agree
+#print axioms Generative.InquirySufficiency.RevisingPort.broken_reset_cannot_decide
