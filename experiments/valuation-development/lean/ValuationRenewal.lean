@@ -114,8 +114,9 @@ theorem valuation_keeping_theorem [DecidableEq Kind] (U : List Kind) (complete :
     (∃ v, ValuationKeeps law K v) ↔ ∃ B, SelfRenewing law B ∧ ∃ k, k ∈ B ∧ K k := by
   constructor
   · intro ⟨v, c₀, within, keeps⟩
-    exact (renewal_keeping_theorem law U complete D spanBound positive K).1
-      ⟨valExecution law v c₀ within, keeps⟩
+    obtain ⟨B, renewing, k, kIn, kK, _⟩ := (renewal_keeping_theorem law U complete K).1
+      ⟨(valExecution law v c₀ within).toHistory, keeps⟩
+    exact ⟨B, renewing, k, kIn, kK⟩
   · intro ⟨B, ⟨nonempty, supported, balanced⟩, k, kIn, kK⟩
     have Dpos : 0 < D := Nat.lt_of_lt_of_le (positive k) (spanBound k)
     refine ⟨fun _ => B, ⟨0, steady law B D⟩, fun tok m => steady_within law B m, fun n => ?_⟩
@@ -133,7 +134,9 @@ theorem every_valuation_loses [DecidableEq Kind] (U : List Kind) (complete : ∀
     (within : ∀ tok, tok ∈ c₀.tokens → tok.remaining ≤ law.span tok.kind) :
     ∃ t, t ≤ (potential (valExecution law v c₀ within) ((U.length + 1) * D + 1) + 2) *
         ((U.length + 1) * D + 1) ∧ ¬ Keeps K (valRun law v c₀ t) :=
-  no_keeping_population_deadline law U complete D spanBound K none (valExecution law v c₀ within)
+  match renewal_dichotomy_keeping law U complete D spanBound K (valExecution law v c₀ within) with
+  | Or.inl ⟨B, renewing, k, kIn, kK, _⟩ => absurd ⟨B, renewing, k, kIn, kK⟩ none
+  | Or.inr dies => dies
 
 end ValuationRuns
 
@@ -152,14 +155,15 @@ theorem valuing_is_not_keeping :
   constructor
   · rw [valuation_keeping_theorem lapsingCorrection [false, true] complete 3
       (fun _ => Nat.le_refl 3) (fun _ => Nat.zero_lt_succ 2) (fun k => k = true)]
-    rw [← renewal_keeping_theorem lapsingCorrection [false, true] complete 3
-      (fun _ => Nat.le_refl 3) (fun _ => Nat.zero_lt_succ 2) (fun k => k = true)]
+    intro ⟨B, renewing, k, kIn, kK⟩
     exact lapsing_correction_cannot_be_kept
+      ((renewal_keeping_theorem lapsingCorrection [false, true] complete (fun k => k = true)).2
+        ⟨B, renewing, k, kIn, kK, Nat.zero_lt_succ 2⟩)
   · rw [valuation_keeping_theorem danglingSupport [false, true] complete 3
-      (fun k => by cases k <;> decide) (fun k => by cases k <;> decide) (fun k => k = false),
-      ← renewal_keeping_theorem danglingSupport [false, true] complete 3
       (fun k => by cases k <;> decide) (fun k => by cases k <;> decide) (fun k => k = false)]
-    exact attribution_is_by_population.1.2
+    obtain ⟨B, renewing, k, kIn, kK, _⟩ := (renewal_keeping_theorem danglingSupport
+      [false, true] complete (fun k => k = false)).1 attribution_is_by_population.1.2
+    exact ⟨B, renewing, k, kIn, kK⟩
 
 /-! ## The contraction hypothesis of C1 is necessary -/
 

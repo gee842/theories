@@ -1,6 +1,6 @@
 # 伦理自然主义的四条论证：生成论的对应、证明与未完成部分
 
-2026年10月6日。AI 撰写的研究说明，回应 [Ren 关于四条自然主义论证"都可以最终证明"的消息](../../../../sources/15-codex-theory-conversations/2026-10-06-ethical-naturalism-arguments.md)。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：评价、更新和纠正都作为展开内部的活动处理，不设外部裁判位置。形式部分在 [Lean 包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)中。按 Ren 的无公理规则改写后，整个包 110 条新声明全部审计，**全部不依赖任何公理**（包括 Lean 标准的 `propext` 与 `Quot.sound`）；无 `sorry`，继承模块的源码哈希与主收据一致。改写前的源码与收据保存在包内的 `verification-history/2026-10-06-before-axiom-removal/`。本文不是 Ren 原话，也不宣称伦理结论已经证明。
+2026年10月6日。AI 撰写的研究说明，回应 [Ren 关于四条自然主义论证"都可以最终证明"的消息](../../../../sources/15-codex-theory-conversations/2026-10-06-ethical-naturalism-arguments.md)。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：评价、更新和纠正都作为展开内部的活动处理，不设外部裁判位置。形式部分在 [Lean 包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)中。按 Ren 的无公理规则改写后，整个包 120 条新声明全部审计，**全部不依赖任何公理**（包括 Lean 标准的 `propext` 与 `Quot.sound`）；无 `sorry`，继承模块的源码哈希与主收据一致。改写前的源码与收据保存在包内的 `verification-history/2026-10-06-before-axiom-removal/`。本文不是 Ren 原话，也不宣称伦理结论已经证明。
 
 **审查状态。** 首版发表后，同日由一个独立 AI 审查者复核。审查确认证明全部成立，但指出四处阻断性的表述过度和若干应改之处。本版已按审查改写；第7节列出改正内容，首版保留在 git 历史中。新增的 `NaturalismReview.lean` 给出改正后的形式陈述，前两个模块未改动。
 
@@ -160,21 +160,24 @@ Ren 于同日要求：不许有假设，不许有公理；每个输入要么在 
 - 没改变：哪一种评价关系在某段历史中实际形成，并没有被证明；也没有证明它必须是延续条件序。首版的反例（阻止、承诺、恢复、逃离）和范围问题都仍然有效，因为它们讨论的是记录所用的关系 `E` 本身。
 - 下一步因此是一元的：在同一过程中研究评价关系怎样形成、怎样经后果被修正，以及哪些形成方式能维持其自身被修正的条件。这把伦理自然主义问题接到估值发展和选择者修订的主线，而不是另起一个"道德层"。
 
-## 10. 哪一种评价会延续：接到估值发展的更新–闭合定理
+## 10. 哪一种评价会延续：直接从生成核心证明
 
-第9节把取向问题改写为"哪一种评价关系在展开中形成并延续"。延续这一半，估值发展研究已在同一更新过程上回答（[§17–18](VALUATION-DEVELOPMENT-ARGUMENT.md#18-no-supplied-inputs-valuations-decide-what-the-process-forms)）：估值决定过程形成哪些种类；某个估值能让一个种类永远延续，当且仅当存在包含它的自我更新群体。这里不重做，只把它读到评价种类上。[`persistence/EvaluationPersistence.lean`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/persistence/EvaluationPersistence.lean) 有 3 条结果：
+第9节把取向问题改写为"哪一种评价关系在展开中形成并延续"。本节证明延续这一半，只用 `Process`/`Trace`，不引用任何其他模型，不预设种类、速率或支持关系，也不用任何公理。[`RegeneratingPersistence.lean`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/RegeneratingPersistence.lean) 有 10 条结果，全部不依赖公理。
 
-- **评价延续，当且仅当它属于自我更新的群体**（`evaluation_persists_iff_member`）。
-- **这样的群体生成自身后续形成的条件。** 它对支持封闭：包括评价在内的每个成员，在群体内都有一个能撑过一个时刻的支持者；全体成员打开的量不少于形成它们所需（`persisting_evaluation_renews_its_conditions`）。评价只能连同它自身后续形成的条件一起延续，而且这些条件由它所在的整体形成。
-- **只看重评价自身不够**：在 `lapsingCorrection` 中，无论怎样看重纠正种类，都没有估值能让它延续（`correction_cannot_persist_by_valuing_itself`）。
+**定义。** 评价本身是过程中的一个活动 `e`。若对每个长度，都有一条至少这么长的实际延续，终点处 `e` 仍然最终可实现，就说 `e` 从 `s` **延续**（`PersistsFrom`）。
 
-**意义。** 在同一过程内，延续下来的评价恰好是那些属于"生成其自身后续实现条件的整体"的评价。这与本理论的候选（整体展开生成其后续条件）在延续层面相合，而且不需要从过程外部输入"应当"。
+- **延续需要一个自我再生的整体。** 在状态有限的过程中，`e` 从 `s` 延续，当且仅当 `s` 能到达某个状态 `c`，过程沿一条非空的实际路径从 `c` 回到 `c`，并且 `e` 在 `c` 处最终可实现（`persists_iff_regenerating_return`）。反方向在任何过程中都成立（`regenerating_return_gives_persistence`）。证明是沿轨迹记录已访问状态的鸽笼论证，所需的有限列表引理都在本模块中自证，没有用库引理。
+- **这个整体不损失任何东西。** 沿回到 `c` 的路径，每个活动在每个访问状态的最终可实现性都与在 `c` 处相同（`return_preserves_realizability`）。所以在最终可实现性的层次上，评价赖以延续的整体不取消任何活动，包括评价自身。
 
-**未证。** 这没有证明延续下来的评价按延续条件序记录，也没有证明"延续"就是善的尺度；前者是下一步要接的形式问题，后者若作为前提引入，就要按第8节的规则证明其必要。
+**意义。** 能延续的评价，恰好是能到达"再生其自身后续实现条件的整体"的评价；而这个整体在最终可实现性层次上不造成损害。这把第9节"哪一种评价延续"的问题，在过程内部、不借外部"应当"地，连到本理论的候选：整体展开对其后续条件的生成。
 
-**公理（未能消除，提交 Ren 判断）。** 这3条结果依赖 `propext` 与 `Quot.sound`。它们全部来自所引用的估值研究模块（那里经 `simp` 和 `omega` 引入），本模块自身没有引入。要消除，需要改写估值研究和更新包中的相关证明；那属于那些线程的源码，估值线程已把它列为全项目层面的选择。因此这部分单独放在 `persistence/` 子目录，用单独的检查脚本，不混入前面全部无公理的包。
+**未证。** 哪段历史实际到达哪个再生整体；"延续"是否就是善的尺度（若作为前提引入，须按第8节的规则证明其必要）；以及在立即可行性（`ContinuationLe`）层次上，回路是否也不损失。后者一般不成立：`dip` 中从 2 到 1 再回到 2 是一个回路，却暂时失去了 `use` 的立即可行性。
+
+**与估值研究的关系。** 估值研究的 `valuation_keeping_theorem` 是在更新通道过程上的对应结果（某估值能让一个种类永远延续，当且仅当存在包含它的自我更新群体）。本节的结果在一般 `Process` 上陈述，可以被那里复用。首版曾直接引用那个定理，因而继承了 `propext` 与 `Quot.sound`；按 Ren 的要求已删除（保留在 git 历史中），改为这里的直接证明。待那边的无公理版本合并后，可以证明二者在通道过程上的对应，而不是保留两套平行陈述。
 
 ## 形式索引
+
+`RegeneratingPersistence.lean`：`PersistsFrom`、`trace_returns`、`regenerating_return_gives_persistence`、`persists_iff_regenerating_return`、`return_preserves_realizability`，以及自证的有限列表引理。
 
 `WholeQualityNaturalism.lean`：`supervenes_factors`、`Covaries`、`covaries_of_supervenes`、`chain_congr`、`base_defined_supervenes`、`supervenes_of_finer`、`Run`、`Along`、`along_iff_steps`、`along_iff_chain`、`along_supervenes_on_states`、`along_append`、`along_mono`、`chain_map`、`along_continuation_transport`、`preserved_throughout`、`witness_refutes_preservation`、`loss_localizes`、`loss_localizes_nn`、`located_loss_breaks_quality`、`quality_not_fixed_by_endpoints_and_word`、`quality_not_supervenient_on_word`、`availability_not_fixed_by_endpoints_and_word`。
 
