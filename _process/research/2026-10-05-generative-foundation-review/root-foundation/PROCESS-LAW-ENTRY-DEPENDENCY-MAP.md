@@ -1,0 +1,94 @@
+# Dependency map for the derived process-law entry
+
+6 October 2026 (UTC). AI-authored consolidation requested by Ren, who noted that the "consolidated derivation with a precise dependency map" proposed as the next deliverable did not yet exist. This document adds no proof, experiment or new claim. It classifies what the current Lean entry [GenerativeDerivedProcessLawModel.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeDerivedProcessLawModel.lean) relies on, using the [assumption-elimination audit](ASSUMPTION-ELIMINATION-AUDIT.md), the [mechanism-status reconciliation](MECHANISM-STATUS-RECONCILIATION.md), the [process-law derivation](PROCESS-LAW-DERIVATION.md), [conditional universality](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONDITIONAL-UNIVERSALITY.md) and the [cloud handoff](../../../CLOUD-HANDOFF-2026-10-07.md). Each row was checked against the Lean source, not only the prose. Those documents are unchanged.
+
+It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). A law supplied to this model is a **local input to this representation**, not thereby something outside generative reality or unexplained anywhere in the theory. Where another branch already explains the same capacity, the map says so and states whether the interface to this entry has been proved.
+
+## 1. Claim fixed before the audit
+
+The map concerns one claim: **the effective one-packet inquiry law, and the inquiry results built on it, follow from the native contact, source-conversion and receipt-acquisition activity of the reconstructed diagnosis port.** It does not concern the stronger claims that reliable understanding necessarily forms wherever systems form, that the native mechanism is a physical system, or that any appraisal is ethically warranted. Those stronger claims appear in §5 only to record that this entry does not settle them.
+
+## 2. Scope of the checked closure
+
+The [process-law receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/process-law-runs/1791291483950888000/receipt.json) records 32 modules and 599 audits, all with empty axiom reports. On 6 October 2026 (UTC), every one of the 32 recorded source hashes matched the current files. No Lean build was rerun for this map.
+
+**The conditional-universality package is not in this closure.** `conditional/ResourceContinuation.lean`, `SupportNecessity.lean` and `RenewalExamples.lean` import `GenerativeCore` but are built separately ([conditional README](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/README.md)). Of their 60 audits, 26 use Lean's standard `propext` and `Quot.sound`. No current theorem applies U1–U3 to the native packet process. The entry and the universal laws are therefore two verified results, not one composed result (§4, item 1).
+
+## 3. The map
+
+Status key:
+
+- **Derived:** proved in this closure from the stated inputs. The theorem is cited.
+- **Universal over a class:** proved for every process or state satisfying stated conditions. Whether a system belongs to that class is a separate question.
+- **Needs evidence:** the formal result holds, but applying it to an actual system requires correspondence or identification evidence.
+- **Supplied here:** used by this entry without derivation in this closure. The last column says whether another branch explains it and whether that interface to this entry is proved.
+
+### 3.1 Root interface
+
+| Ingredient | Status | Lean evidence | Note |
+|---|---|---|---|
+| Relational process (`Process.step : State → Action → State → Prop`) and finite traces | Universal over a class | `GenerativeCore`: `trace_append_iff`, `feasible_append_iff`, `projection_exact_iff`, `local_exact_iff_trace_exact`, `trace_faithful_iff` | Applies to every relational process. It derives closure properties from a supplied dynamics. It does not derive the dynamics. |
+| Which dynamics a carrier has | Supplied here (preserved counterexample) | `DynamicUnderdetermination.same_carrier_incompatible_laws`, `event_without_state_distinction`; `DynamicSymmetry.symmetric_dynamics_remain_underdetermined`; `DynamicClassification.symmetry_candidate_iff_descriptions` | Distinctions plus totality, determinism and renaming invariance do not select static versus toggle dynamics on Bool. This is a finite counterexample to one entailment. It does not show that no richer account could select a dynamics. |
+| Admitted finite-history language → exact realization | Universal over a class | `HistoryRealization.process_language_exact_history_realization` | The prefix-closed language is an input. |
+| Strict reserve decrease bounds continuation | Universal over a class | `Depletion.no_infinite_execution_under_depletion`, `trace_length_bound` | The condition is strict decrease on every step. Replenishment invalidates it. |
+| Consequence-triggered rule revision and external provision in the root witness | Supplied here | `RootRealization.consequential_internal_revision`, `restoration_requires_external_provision`, `same_law_admits_renewal_and_loss` | This is a satisfiability witness. The `revise` event and the `supplied` flag are stipulated. |
+| Organization, selectors and history residuals that do not by themselves yield learning or a self | Derived (non-implications) | `BoundaryModels.recurrent_process_with_fixed_selector`, `individual_feasibility_without_joint_feasibility`; `GeneratedSelf.exact_summary_exists_iff`, `no_profile_only_toggle_state_decoder` | These are limits, kept as counterexamples. |
+| Evaluative direction | Supplied here (non-entailment proved) | `EthicalOrientation.opposed_coherent_annotation_invariant_orders`, `coherence_and_annotation_invariance_do_not_select_growth` | Coherent, renaming-invariant orders rank the same histories oppositely. Settling the direction needs philosophical argument (§5). |
+
+### 3.2 Native port: the ingredients named in the request
+
+| Ingredient | Status | Lean evidence | Note |
+|---|---|---|---|
+| **Three-phase cycle** (`nextPhase`, `output` = 0,0,1) | Supplied here | Defined in `NativePacketProcess`. The port executes the learned machine saved by the [acquisition study](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/README.md). | The world's cycle is the acquisition study's supplied target law. The learner's three-state model of it is acquired there, by a Python learner with hand proofs. The correspondence checker reuses that saved machine and does not relearn it. Acquisition of the model is therefore derived elsewhere at executable scope, but it is not part of this Lean closure. |
+| **Contact gate** `arrival = (x xor τ) ∧ ¬blocked` | Supplied here | Defined in `NativePacketProcess.arrivalAt`. From it, `PacketLawDerivation.raw_profiles` and `profile_equal_iff_target_equal` **derive** the A/B/C classes. | The gate is inherited from the Python port. Contact formation already exists in [InquiryRevision.lean](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean) (`staged_actual_connection`, `actual_change_in_access`), under different laws, and is not composed with this port. **In progress:** another project thread is adding a contact-formation lemma as a new Lean module on its own branch. This map does not anticipate its result. |
+| **Tariffs** (16,384 + peak per charge, 655,360 credit per arrival, 10 source units per probe, 2 temporary cells) | Supplied here | Numerals in `bill`, `gain`, `convert`, `peak`. The theorems are not parametric in them. | The *form* of the completion guard is derived: `probeReady_exact`, `probe_complete_iff`, `alignment_guard_iff_native_guards`. The numbers are the Python port's default scale-one tariff. Whether the port belongs to the U1 class is not proved in Lean (§4, item 1). |
+| **Fixed fault settings** (τ, σ, broken reset, blocked, receipt inversion, plus live, workspace and capacity) | Derived as constant; universal over values | `execute_retains_parameters`, `completed_retains_parameters` | Every theorem quantifies over all settings, so results hold for all 32 fault combinations. That execution never changes the settings is proved. How faults form, drift or get repaired is not represented. |
+| Ordered completion law: interface charge, then source check, conversion, credit, then receipt charge | Derived | `probe_complete_iff`, `probeReady_exact`, `probe_final_effects`, `probe_source_stops`, `probe_receipt_funding_stops`, `receipt_capacity_unreachable` | This is the core gain of the process-law round. Failures after conversion are retained, not rolled back. |
+| A/B/C transfer-response classes and the probe table | Derived | `profile_equal_iff_target_equal`, `native_gate_is_macro_receipt`, `blocked_representatives_retained` | The macro table is no longer an independent premise. |
+| Macro probe step and its observation | Derived, conditional on three hypotheses | `completed_probe_projects`, `native_guard_realizes_macro_probe`, `aligned_probe_realizes_macro` | The hypotheses are the next three rows. |
+| Calibration (`receiptFlip = false`) | Supplied here (theorem hypothesis) | `native_receipt_calibrated_iff`, `inverted_receipt_differs` | Acquired calibration exists in [RecipeNative.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/recipe-grounding/formal/RecipeNative.lean) (`actual_binder_matches_selected_decoder`), but not for this port's receipt channel. Experimental access distinguishes some faults at executable scope. A compensated sensor/readiness change stays indistinguishable through the sensor alone. |
+| One-packet domain (`source = 10`) | Supplied here (scope restriction) | `projection_at_one_packet`; boundary: `two_packet_completion_retains_source`, `two_packet_state_outside_projection` | The projection is proved not to extend to larger stocks. |
+| Known common phase for the alignment schedule | Supplied here | `common_phase_same_schedule`, `alignment_reaches_requested_output` | The schedule is computed from a phase the learner is assumed to know. Phase acquisition is not derived in this closure. |
+| Permissive macro controls (`control o`) and denial after exhaustion | Supplied here, and shown to be more permissive than native execution | `OnePacketQuestions.all_actions_enabled`; `PacketLawDerivation.macro_denial_is_not_native_completion`, `exhausted_native_probe_cannot_complete` | This permissiveness strengthens the old negative results. It is not a native implementation of every control. |
+| Python port ↔ Lean reconstruction | Needs evidence (finite check done) | `NativePacketCases`: 93 closed certificates for 5,928 original-command cases | This is finite source correspondence over phases, faults, source 0–20 and funding boundaries. It is not a universal refinement proof, and not physical identification. |
+
+### 3.3 Inquiry layer
+
+| Ingredient | Status | Lean evidence | Note |
+|---|---|---|---|
+| Sufficient inquiry ↔ bounded sound policy | Universal over a class | `InquirySufficiency.sufficiency_iff_bounded_policy`, `sound_execution_meets_goal`, `empty_belief_not_sufficient` | Holds for any process with declared `safe` and `goal` contracts. |
+| `safe` and `goal` contracts | Supplied here, with one case derived | `OnePacketAdmissibility.probe_safe_iff_not_denied`, `attainable_iff_packet_safe` | For the packet case, `safe` is discharged by the native packet coordinate. Their meaning and authority in general stay declared. |
+| Branch classification | Derived for finite carriers | `FiniteInquiryClassification.classifiedThrough`, `boolean_model_iff_bounded_policy` | Applies only with a faithful `Fin` representation. |
+| Inquiry certificates (policy or refusal) | Derived | `DerivedInquiryCertificates.policyOption_certified`, `accepted_is_attainable`; `OnePacketInquirySynthesis.extracted_policy_native_certificate` | Computed rather than supplied. The transition and question relations remain model data. This does not install a physical planner. |
+| Attainable questions and their composition | Derived | `AttainableQuestions.attainable_join_iff_shared_policy`, `attainable_by_continuing_inquiry`; `ReachedInquiryComposition.attainable_from_reached_continuations`, `global_preservation_fails` | Includes the exact one-packet obstruction `OnePacketQuestions.joint_answer_unattainable`. |
+
+### 3.4 Conditional universal laws (separate build)
+
+| Ingredient | Status | Lean evidence | Note |
+|---|---|---|---|
+| U1 local account law | Universal over a class; membership is the condition | `ResourceContinuation.AccountLaw`, `account_law_pullback` | The law is permissive by design (all-zero quantities satisfy it). Its content comes from independent interpretation of reserve, demand and credit. |
+| U2 prefix bound and its consequences | Derived from U1 | `support_trace_balance`, `unbounded_demand_requires_unbounded_credit`, `infinite_unit_execution_credit_window`, `execution_interval_frequency_bound`, `repeat_accounted_cycle` | Uses `propext`/`Quot.sound` where reported. |
+| U3 support deadline: bounded lifetime, parent requirement, strict type rank | The conditions are a class definition (`EpisodeSystem` fields); the deadline is derived | `expiry_le_rank_deadline`, `no_alive_after_bounded_rank_deadline`; boundaries `renewing_has_no_strict_type_rank`, `infiniteChain_alive_at_every_time`, `external_arrivals_without_internal_parents` | Exceeding the deadline refutes the conjunction of conditions. It does not by itself identify a cycle. |
+| Application to an actual system | Needs evidence | — | Requires showing that the quantities mean what the law says, without the conditions already containing the capacity being explained. |
+| Application to the native port | Not yet proved | — | See §4, item 1. [FormationAccounts.lean](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationAccounts.lean) (`identified_account_laws`) shows such an interface proof has been done for the formed-variant process. |
+
+## 4. Dependencies that remain, ranked by what would remove them
+
+These are claim-specific missing interfaces in the sense of the reconciliation. They are not findings that the wider theory lacks the capacity.
+
+1. **Port ∈ U1 class.** The Python `Account.pay` asserts `fuel + spent = start + income`. In the Lean reconstruction, `debit` and `convert` appear to preserve `fuel + spent − income` on every executed call. If so, U1 holds with reserve = fuel, demand = Δspent and credit = Δincome, with equality. This has been read from the definitions and is not proved. Proving it requires a module importing both `NativePacketProcess` and `ResourceContinuation`, built together. That would make U2's consequences apply to the port independently of its particular tariff numerals. *Expected removal:* tariff accounting moves from "supplied here" to "member of the universal class, proved".
+2. **Contact formation → this gate.** The next bridge named in [PROCESS-LAW-DERIVATION.md](PROCESS-LAW-DERIVATION.md#the-remaining-foundation) is formation and revision of the contact, access and retained-evidence organization, leading to a changed effective inquiry law. The contact-formation lemma under way in another thread addresses its first step. Whether it composes with `arrivalAt`, or forms a different contact that yields its own effective law, should be read from that result when it lands.
+3. **Calibration and phase acquisition → theorem hypotheses.** `receiptFlip = false` and the known common phase are hypotheses of `aligned_probe_realizes_macro`. Acquired calibration (RecipeNative) and acquired state models (acquisition study) exist at other scopes. Composing either with this port would remove a hypothesis. A compensated fault stays a real limit and must remain one.
+4. **Three-phase cycle and fault settings.** The cycle is a supplied target law; the learner's model of it is acquired. Fault formation is not represented. For claims about this apparatus, these are legitimate local laws. Removing them requires an account of how such an apparatus forms and degrades, which is a different and larger claim.
+5. **Permissive controls.** The native port already shows that the old `control o` grants are too generous. Replacing them with costed native control commands would tighten the positive results. It would not change the negative results.
+
+## 5. What this entry does not settle
+
+- **Selection of dynamics from distinctions alone.** This is unsupported, and the counterexamples in §3.1 are preserved. The active universal target is conditional (∀P, A(P) ⇒ G(P)), which does not require it.
+- **The stronger no-assumptions directive.** This is unmet and has not been waived. Empty axiom reports certify proof terms, not interpretations. Lean's own logic stays a visible framework presupposition. It is not declared discharged, nor shown to be impossible to discharge.
+- **Physical identification.** This needs empirical evidence. No row in §3 supplies it.
+- **Ethical warrant.** This needs philosophical justification. `EthicalOrientation` proves only that coherence and invariance do not choose the direction. The handoff's current frontier is ethical warrant itself, not another mechanism.
+
+## 6. How to use and maintain this map
+
+A round on this entry is finished when each dependency of its chosen claim has one of the four statuses and its counterexamples are kept. When a round lands, update the affected row, cite the new theorem, and leave the old status visible in history. A row should not move to "derived" because an interface became more convenient. It moves only when a proof in a stated closure supplies it.
