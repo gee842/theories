@@ -21,11 +21,11 @@ What must be true of any organized process for its own history, rather than an a
 
 When an organization's own selection decides what it meets next, the question is whether its activity can amplify valuation differences that shared exposure would erase. Under retention that contracts per encounter, two organizations that select alike at every step stay under shared exposure, and their difference shrinks. Any amplification must therefore pass through a step at which they select differently. Variation set by what is presented, rather than by what is retained, turns the loop back into shared exposure. The 11 further Lean results in §12 of the argument include witnesses for these points:
 
-- Even the strongest per-encounter contraction amplifies a one-unit difference that straddles a selection boundary.
-- A greedy estimator that never tries the better option keeps a self-confirming underestimate, and the gap in what it meets grows without bound.
-- The same one-unit difference leads to exhaustion of one learner when only one option restores support. When both options do, it leads to sustained specialization of both.
+- Even the strongest per-encounter contraction does not prevent amplification of a one-unit difference that straddles a selection boundary.
+- A greedy estimator that never tries the better option keeps a self-confirming underestimate. The gap in what it meets grows without bound, while its estimate gap stays bounded.
+- The same one-unit difference leads to exhaustion of one learner when only one option restores support. Under a modified retention law in which support does not depend on selection, it leads to sustained specialization of both.
 
-Amplification is thus neither generative nor degenerative in itself. Which it becomes depends on how the signals each selection reaches relate to the support it restores. Exploration that depends on retained conditions remains open.
+Amplification is thus neither generative nor degenerative in itself. The witnesses show that which it becomes can depend on how the signals each selection reaches relate to the support it restores. Exploration that depends on retained conditions, and interacting organizations, remain open.
 
 ## What constrains the sign of a formed valuation
 
