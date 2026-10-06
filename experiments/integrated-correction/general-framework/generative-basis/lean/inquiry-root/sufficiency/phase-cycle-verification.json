@@ -1,0 +1,182 @@
+{
+  "checked_at_utc": "2026-10-06T19:34:57.592937+00:00",
+  "module": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
+  "module_sha256": "90ffb0bab5a2c8dc29aff88f187ae780f567515635594f131ad1d53d1647b830",
+  "checker_sha256": "bdbbd747fa714bf4b7b4a14622cae00e6e9cd42b571bc2aad042de542ba308d0",
+  "declared": 52,
+  "lint": "passed",
+  "enumeration": {
+    "admitted_by_bound": {
+      "1": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0
+      },
+      "2": {
+        "1": 0,
+        "2": 0,
+        "3": 6,
+        "4": 0,
+        "5": 10,
+        "6": 12,
+        "7": 28,
+        "8": 32,
+        "9": 72,
+        "10": 100,
+        "11": 198,
+        "12": 288,
+        "13": 520,
+        "14": 784
+      },
+      "3": {
+        "1": 0,
+        "2": 0,
+        "3": 6,
+        "4": 8,
+        "5": 20,
+        "6": 24,
+        "7": 70,
+        "8": 112,
+        "9": 234,
+        "10": 400,
+        "11": 814,
+        "12": 1416,
+        "13": 2756,
+        "14": 4928
+      }
+    },
+    "admitted_without_reach_bound": {
+      "1": 0,
+      "2": 0,
+      "3": 6,
+      "4": 8,
+      "5": 30,
+      "6": 48,
+      "7": 126,
+      "8": 224,
+      "9": 504,
+      "10": 960
+    },
+    "period_five_witness": [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "period_four_reach_failure": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "orbits": {
+      "1": {
+        "injective": 1,
+        "merging_all_with_transient": 0
+      },
+      "2": {
+        "injective": 2,
+        "merging_all_with_transient": 2
+      },
+      "3": {
+        "injective": 6,
+        "merging_all_with_transient": 21
+      },
+      "4": {
+        "injective": 24,
+        "merging_all_with_transient": 232
+      },
+      "5": {
+        "injective": 120,
+        "merging_all_with_transient": 3005
+      },
+      "6": {
+        "injective": 720,
+        "merging_all_with_transient": 45936
+      }
+    }
+  },
+  "source_binding": {
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/diagnosis.py": "a45e7cafa2b9f0568fdb2c593a17d56625d8e409dcc4f27c5b4fb755e2eec910",
+    "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/check.py": "1fd601c4036822940c7693d8114c1a05af91a0c17f80f54bbe146ae2f19363db"
+  },
+  "lean": {
+    "status": "passed",
+    "toolchain": "leanprover/lean4:v4.29.1",
+    "version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+    "modules": [
+      {
+        "module": "GenerativeCore",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+        "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "NativePacketProcess",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/NativePacketProcess.lean",
+        "source_sha256": "da9d06d9f0fca5cb1252105dccb473246ad66dbdb81a63b048d63b12c9da5d7b",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "InquirySufficiency",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+        "source_sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "AttainableQuestions",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/AttainableQuestions.lean",
+        "source_sha256": "84dfcab5064771a9aef59b9c8fd56e1b2384fcbbe94878feb3bc93208e2e18d8",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "OnePacketQuestions",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketQuestions.lean",
+        "source_sha256": "ed0f0579c8b872bf096fcfc55e6b3921ea2f1f82f2e42f2b35b45d61d02912dd",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "OnePacketAdmissibility",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/OnePacketAdmissibility.lean",
+        "source_sha256": "ad86c969e6b4d76a554bb4fea54f24cab553a99ab13e37759cc807a627a97730",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PacketLawDerivation",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PacketLawDerivation.lean",
+        "source_sha256": "a1593ef75c9c02a98fa7416130fe50c6c52d695e7cead10acc2c441d6ed04c70",
+        "exit_code": 0,
+        "clean": true
+      },
+      {
+        "module": "PhaseCycleDerivation",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
+        "source_sha256": "90ffb0bab5a2c8dc29aff88f187ae780f567515635594f131ad1d53d1647b830",
+        "exit_code": 0,
+        "clean": true
+      }
+    ],
+    "audits": 52,
+    "empty_audits": 52,
+    "nonempty": []
+  },
+  "scope": "Python enumeration is an independent finite reconstruction, not a kernel proof. Lean statements count as verified only when lean.status is passed."
+}

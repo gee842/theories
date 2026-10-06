@@ -81,7 +81,7 @@ Two boundary cases are already checked in `SupportNecessity.lean`, and the theor
 - **It answers Ren's question directly.** Provision as flow is always imported in an open system; U2 already shows unbounded demand needs unbounded arrival. What can be renewed internally is the **channel**, the organized conditions through which provision arrives. The theorem characterizes when that channel is renewed from within, rather than when flow is created from nothing.
 - **It is one theorem, not parallel results.** U2 supplies the necessity accounting. `SupportNecessity` becomes its acyclic special case. `NativePortContinuation` is the case where no channel kind is formed at all. `FormationClosure` supplies the notion of a constraint as a retained coordinate.
 - **It is exact.** It is an "if and only if" with explicit witnesses on both sides, not just a bound.
-- **It can be proved constructively.** Every step is either a finite pigeonhole over `Fin n` with decidable equality, a telescoping sum, or an explicit periodic schedule. The main theorems can therefore keep empty axiom reports. Statements in "born infinitely often" form need classical logic; they become separately labeled corollaries.
+- **It can be proved constructively.** Every step is either a finite pigeonhole with decidable equality, a telescoping sum, or an explicit periodic schedule, so `Classical.choice` is not needed. *Correction after Phase 1:* `omega`, `simp` and core list lemmas bring in `propext` and `Quot.sound`, so the package uses the conditional package's allowance; it does not keep fully empty reports. Statements in "born infinitely often" form would need classical logic; they become separately labeled corollaries.
 
 ## 4. Preliminary evidence (bounded horizon only)
 
@@ -196,4 +196,4 @@ Suggested allocation; the coordinator assigns.
 
 Before the next central connection is selected, each phase's result goes into this file's status line and into `RESEARCH.md`.
 
-**Status, 6 October 2026:** planned. Phase 0 not started. Revised the same day to serve the whole-unfolding center (§1.1, Phase 2b) after Ren's correction, and to add the phase-cycle and initiation baselines to §1.
+**Status, 6 October 2026:** Phases 0 and 1 done ([results](RENEWAL-CLOSURE-PHASE1.md); [Lean package](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md), 32 audits). Phase 2 (mixed case, sufficiency, linking the two models) is next. Revised the same day to serve the whole-unfolding center (§1.1, Phase 2b) after Ren's correction, and to add the phase-cycle and initiation baselines to §1.
