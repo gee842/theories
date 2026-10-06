@@ -1,11 +1,11 @@
-'ValuationDevelopment.agreement_contracts' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.amplification_needs_disagreement' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.agreement_contracts' does not depend on any axioms
+'ValuationDevelopment.amplification_needs_disagreement' does not depend on any axioms
 'ValuationDevelopment.schedule_agrees' does not depend on any axioms
-'ValuationDevelopment.schedule_contracts' depends on axioms: [propext, Quot.sound]
-'ValuationDevelopment.lastMet_contracts' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.schedule_contracts' does not depend on any axioms
+'ValuationDevelopment.lastMet_contracts' does not depend on any axioms
 'ValuationDevelopment.lastMet_amplifies' does not depend on any axioms
 'ValuationDevelopment.greedy_disagree_at_start' does not depend on any axioms
-'ValuationDevelopment.greedy_amplifies' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.greedy_amplifies' does not depend on any axioms
 'ValuationDevelopment.scheduled_variation_equalizes' does not depend on any axioms
 'ValuationDevelopment.one_unit_divergent_fates' does not depend on any axioms
 'ValuationDevelopment.one_unit_specialization_both_sustained' does not depend on any axioms
