@@ -223,6 +223,35 @@ Added 7 October 2026 after Ren asked to continue. This section addresses the bri
 
 The next bridges are a stochastic restatement covering retained-condition-dependent exploration, and formal witnesses for levels 5 and 6 of §3.
 
+## 13. Continuation: exploration driven by retained conditions
+
+Added 7 October 2026 after Ren asked to continue again. This section answers the first open question of §12: does variation that depends on retained conditions remove self-confirming valuation differences? Its [formal module](../../../../experiments/valuation-development/lean/ExplorationCoverage.lean) is additive. It adds 11 results with no custom axioms, proof holes or `native_decide`.
+
+**Setting.** The retained conditions include an estimate for each option, and selection may read anything retained. In this section an estimate plays both roles that U3 distinguishes. It predicts the consequence of an option, and the greedy selector scores options by it. Equal estimates therefore mean equal selections only where selection reads nothing but the estimates.
+
+**E1. Coverage, not its source, equalizes estimates (general).** The result holds under three hypotheses:
+- retention overwrites the estimate of the option taken with the consequence met;
+- retention leaves the other estimates unchanged;
+- each option's consequence does not change.
+
+Under these, every option an organization has reached is estimated at its actual consequence (`reached_estimate_exact`). Every option it has not reached keeps its initial estimate, however long the history (`unreached_estimate_kept`, `no_coverage_keeps_initial`). Reaching an option in a prefix of a history reaches it in every extension (`reaches_append`). So take any two organizations that meet these hypotheses in the same world, *with any selection laws at all*. Once each has reached every option, they hold identical estimates (`coverage_equalizes`). It does not matter what drove their variation: a schedule, a retained counter, retained optimism or anything else.
+
+**E2. Retained-condition variation can cover or fail (witnesses).**
+
+- *Failure.* The greedy estimator is itself retained-condition variation: what it tries depends on its estimates. Started low, it never reaches the better option for any length of history (`greedy_exact`, `greedy_low_never_covers`). E1 then fixes its underestimate permanently.
+- *Retained optimism covers.* The same greedy law started with both estimates high (9 and 9) tries both options within two steps. It then holds the same exact estimates as the high starter (`optimism_covers`). This is optimism in the face of uncertainty, the principle behind upper-confidence-bound methods, cited from general knowledge. It works only because the retained starting estimates exceed what the options actually yield. Where that optimism comes from is a further question.
+- *A retained curiosity counter covers.* An organization that tries the less favoured option every third step has a counter that is retained and changed by its own activity. Started low or high, it reaches both options within three steps (`curious_exact`, `curiosity_covers_in_three`). After that, for every longer history, the low and high starters hold identical, exact estimates (`curiosity_equalizes_forever`). The underestimate that `greedy_amplifies` kept for ever is corrected.
+
+**What this establishes.** §12 asked whether variation that depends on retained conditions suffices. Under E1's hypotheses, the answer turns on coverage, not on the source of the variation. Retained conditions can drive exploration that corrects self-confirming differences, as a counter or optimism does. They can also be exactly what prevents correction, as a low estimate does. In the language of U2, valuation differences that survive coverage cannot be differences in estimated consequences. They can only be differences in how options are scored or selected, or in what remains unreached. A difference that persists without coverage is a difference in what each organization's history has reached, not a difference of nature. Read through the nondual method, this gives a precise sense in which formed valuation differences are differences of history. Nothing here shows which explorations ought to be undertaken. For consequences borne by others, reaching them is what U2 already required, and whether to seek such access remains an ethical question.
+
+**Scope and open questions.**
+- Exact overwrite retention and an unchanging consequence law are strong hypotheses. If consequences change, an estimate equals the consequence met at the last reach, so coverage must recur. That case is not proved here.
+- Averaging or noisy retention needs a stochastic statement.
+- Equal estimates are not equal selections when selection also reads other retained conditions, such as counters in a different phase.
+- The organizations still do not interact.
+
+The next bridges are changing consequence laws with recurring coverage, a stochastic version, interaction between organizations, and levels 5 and 6.
+
 ## Verification
 
-From `experiments/valuation-development/lean/`, with Lean 4.29.1 core and no Lake project or Mathlib, follow the commands in the [companion README](../../../../experiments/valuation-development/README.md). The [first audit output](../../../../experiments/valuation-development/lean/audit-output.txt) lists all 33 `#print axioms` results for §§1–11, and the [closed-loop audit output](../../../../experiments/valuation-development/lean/closed-loop-audit-output.txt) lists the 11 results for §12. These are formal checks of the stated representations, not empirical evidence. Finite witnesses establish only that the stated countermodel exists.
+From `experiments/valuation-development/lean/`, with Lean 4.29.1 core and no Lake project or Mathlib, follow the commands in the [companion README](../../../../experiments/valuation-development/README.md). The [first audit output](../../../../experiments/valuation-development/lean/audit-output.txt) lists all 33 `#print axioms` results for §§1–11, the [closed-loop audit output](../../../../experiments/valuation-development/lean/closed-loop-audit-output.txt) lists the 11 results for §12, and the [exploration audit output](../../../../experiments/valuation-development/lean/exploration-audit-output.txt) lists the 11 results for §13. These are formal checks of the stated representations, not empirical evidence. Finite witnesses establish only that the stated countermodel exists.

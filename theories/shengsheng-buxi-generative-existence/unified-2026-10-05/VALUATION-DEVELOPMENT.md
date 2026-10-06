@@ -27,6 +27,10 @@ When an organization's own selection decides what it meets next, the question is
 
 Amplification is thus neither generative nor degenerative in itself. The witnesses show that which it becomes can depend on how the signals each selection reaches relate to the support it restores. Exploration that depends on retained conditions, and interacting organizations, remain open.
 
+## Exploration: coverage, not its source
+
+Consider retention that overwrites the estimate of the option taken and leaves the others alone, in a world whose consequences do not change. Every option an organization has reached is then estimated exactly. Every option it has not reached keeps its initial estimate for ever. Organizations with any selection laws that have each reached every option hold identical estimates. Exploration driven by retained conditions can supply that coverage: a retained curiosity counter corrects the self-confirming underestimate in three steps, and so do optimistic starting estimates. Retained conditions can also prevent coverage, as a low estimate does under greedy choice. Differences that persist without coverage are differences in what each history has reached. Changing consequence laws, noisy retention and interacting organizations remain open (§13 of the argument; 11 further Lean results).
+
 ## What constrains the sign of a formed valuation
 
 No analyst is needed. Within one history, the sign is constrained by the current coupling and the consequences actually reached. Across continuing histories, the [prefix bound](CONDITIONAL-UNIVERSALITY.md#3-the-universal-prefix-bound) gives a necessary condition at the level of the whole ledger. Where every event makes a positive demand on support, continuation needs provision recurring arbitrarily late. Attributing that provision to one coupling, or applying the bound across successors, needs further accounts that are not built here. Where support arrives independently, harmful or decoupled valuations continue just as well. Constraint on valuations needs no reward function, and it guarantees nothing favorable.
