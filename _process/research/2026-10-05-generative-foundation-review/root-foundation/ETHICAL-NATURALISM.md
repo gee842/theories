@@ -1,113 +1,135 @@
 # 伦理自然主义的四条论证：生成论的对应、证明与未完成部分
 
-2026年10月6日。AI 撰写的研究说明，回应 [Ren 关于四条自然主义论证"都可以最终证明"的消息](../../../../sources/15-codex-theory-conversations/2026-10-06-ethical-naturalism-arguments.md)。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：评价、更新和纠正都作为展开内部的活动处理，不设外部裁判位置。形式部分在新的 [Lean 包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)中，43 条声明全部审计，39 条不依赖任何公理，其余只依赖 Lean 标准的 `propext` 与 `Quot.sound`；无 `sorry`、无自定义公理，继承模块的源码哈希与主收据一致。本文不是 Ren 原话，也不宣称伦理结论已经证明。
+2026年10月6日。AI 撰写的研究说明，回应 [Ren 关于四条自然主义论证"都可以最终证明"的消息](../../../../sources/15-codex-theory-conversations/2026-10-06-ethical-naturalism-arguments.md)。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：评价、更新和纠正都作为展开内部的活动处理，不设外部裁判位置。形式部分在 [Lean 包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)中：三个模块共 53 条声明全部审计，45 条不依赖任何公理，其余只依赖 Lean 标准的 `propext` 与 `Quot.sound`；无 `sorry`、无自定义公理，继承模块的源码哈希与主收据一致。本文不是 Ren 原话，也不宣称伦理结论已经证明。
+
+**审查状态。** 首版发表后，同日由一个独立 AI 审查者复核。审查确认证明全部成立，但指出四处阻断性的表述过度和若干应改之处。本版已按审查改写；第7节列出改正内容，首版保留在 git 历史中。新增的 `NaturalismReview.lean` 给出改正后的形式陈述，前两个模块未改动。
 
 ## 0. 结论
 
-1. **四条论证的可形式化部分，生成论都能证明，本轮已证明。** 证明的内容是：如果有道德属性，它可以是生成历史的自然属性。它随附于历史，由过程本身定义，可以通过有限证据认识，并在跨实现的解释中起作用。
-2. **生成论使随附性更强、更具体。** 随附基础必须是**整段历史**，包括中间状态；终点加动作序列不够。这正是 Ren 所说"整体的积分"在随附性问题上的形式内容。
-3. **但四条论证对"等同于哪一个自然属性"是中立的。** 本轮严格证明：相反取向（以损失为上）同样满足全部这些条件，而且对同一次实际转换作出相反判断。所以单靠这四条，不能推出"善 = 整体展开生成其后续条件"。这就是开放问题论证和是/应当问题在本理论中的准确位置。
-4. **再加一项自反前提，就可以选出这个属性。** 评价、更新和纠正本身是展开中的活动；若不预先特权化任何活动（包括评价者自己的），一个取向就不得取消任何活动的可实现性。在这个前提下，可接受的取向**恰好**是延续条件序的子关系（定理）。功利主义的标量排序、Railton 的单一中心范围、Foot 的固定生命形式范围，都在有限例子中违反这个前提。
-5. **这项前提本身未证明，而且按现在的写法已有反例。** 把所有活动同等计入时，阻止伤害与伤害本身一样被记为条件损失，保留伤害的可能则不算损失（`restraint_registers_as_damage`）。所以它还不能直接充当伦理同一的最终表述。下一座桥是：从生成关系本身导出受保护活动的范围，区分维持他者条件的活动与取消他者条件的活动。这与项目记录一致：整体质量与伦理根据的无假设普遍证明尚未完成。
+1. **本轮证明的是一个候选自然属性的形式性质，不是四条论证本身。** Lean 中没有任何道德谓词。"道德属性随附于自然事实""道德事实解释我们的观察"这些前提都没有被证明。被证明的是：候选属性"整段历史没有取消任何活动的可实现性"（`Along (ContinuationLe P)`）具备四条论证所要求的若干形式特征。
+2. **这些形式特征几乎不限定属性。** 随附于访问状态、可组合，对**任意**步关系都成立（`credentials_hold_for_every_relation`），包括平凡关系。所以它们既不选出取向，也不选出这个候选属性。
+3. **生成论在随附性上的具体贡献是一个否定结果。** 一般而言，整体质量不能由起点、终点和动作序列决定，必须看中间状态。这是 Ren 所说"整体的积分"在随附性问题上的形式内容。
+4. **选出这个属性需要额外前提，而且这些前提是规范性的。** 一是"不取消任何活动的可实现性"这一非削弱前提；二是把受保护范围取为全部活动。"不预先特权化任何活动"并不能推出取全范围：空范围同样不偏向任何活动，而在空范围下任何取向都满足前提。两项都没有证明。
+5. **这个前提按现在的写法有系统性反例。** 阻止伤害、每一次排他性选择、每一次承诺都被记为损害（`restraint_registers_as_damage`、`every_exclusive_choice_registers_as_damage`）。中途下降后完全恢复，也与未恢复一样受谴责（`recovered_dip_still_condemned`）。所以它还不能充当伦理同一。下一座桥是从生成关系本身导出受保护活动的范围，并给出对生成（而不只是不损失）的正面度量。这与项目记录一致：整体质量与伦理根据的无假设普遍证明尚未完成。
 
-下表按 Ren 列出的四条依次给出对应关系。
+下表按 Ren 列出的四条，分列各自的对应、已有结果、本轮证明和未证部分。
 
-| 论证 | 生成论的对应 | 已有结果 | 本轮新证 | 仍属哲学 |
+| 论证 | 生成论的对应 | 已有结果 | 本轮证明了什么 | 未证 |
 |---|---|---|---|---|
-| 随附性（Jackson） | 整体质量随附于整段生成历史 | 中途下降不能由终点摘要恢复（[一体之仁 §7](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#7-形式化怎样保存同一历程)）；整体评价先于时间表达（[FUTURE-GOOD-INTEGRAL §7](FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression)） | 随附 ⇔ 经基础同一类分解；质量随附于访问状态序列，不随附于终点与动作序列；可组合、可迁移 | 从必然共外延到属性同一；"必然"的模态范围 |
-| 本体论简约（Mackie） | 质量由过程本身定义，不另立一层 | 核心语义只有可行转换（`GenerativeCore`） | 质量在精确重表示下不变 | 规范的"应被追求性"未被消解，只被归约为自反前提 |
-| 认识论 | 损失有有限见证，必定落在实际转换上 | 询问何时有用（`InquiryWarrant`）；估值经共同经历形成，正负皆可（[估值发展](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md)）；完全对称的起点不能由记录决定（[记录与竞争要求](RECORDED-CLAIMS-INTEGRATION.md)） | 有限见证否定保全；损失定位（可判定时构造性，一般情形双重否定）；只看终点不能认识 | 反思平衡是否收敛；直觉的证据地位 |
-| 解释作用（康奈尔） | 整体质量解释"某活动始终可实现"，且对任意过程成立 | 每类组织带来的少于其形成所需时，无论支持关系如何，更新必在期限内结束（`short_kinds_cannot_renew_forever`） | 无损历史保全一切初始可实现活动；被解释事实不由较粗描述决定 | 解释作用证明属性真实，不证明它就是善 |
+| 随附性（Jackson） | 候选质量是整段历史的函数 | 中途下降不能由终点摘要恢复（[一体之仁 §7](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#7-形式化怎样保存同一历程)）；整体评价先于时间表达（[FUTURE-GOOD-INTEGRAL §7](FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression)） | 随附与在商上分解等价（对任意性质成立的一般事实）；候选质量一般不随附于起点、终点加动作序列 | 道德属性随附于自然基础；必然共外延到属性同一 |
+| 怪异性（Mackie）／简约（Harman） | 候选质量只用过程本身定义 | 核心语义只有可行转换（`GenerativeCore`） | 保持动作词汇不变的精确重表示下不变 | 规范的"应被追求性"；对动作词汇选择的依赖 |
+| 认识论 | 损失有有限见证，并落在实际转换上 | 询问何时有用（`InquiryWarrant`）；估值经共同经历形成，正负皆可（[估值发展](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md)）；完全对称的起点不能由记录决定（[记录与竞争要求](RECORDED-CLAIMS-INTEGRATION.md)） | 有限见证否定保全；损失定位；只看终点认识不到 | 道德信念怎样经观察形成并得到辩护；反思平衡是否收敛 |
+| 解释作用（康奈尔） | 候选质量在一切过程中蕴含"活动始终可实现" | `short_kinds_cannot_renew_forever` | 一条跨过程成立的定律式推论 | Sturgeon/Harman 意义上对观察与信念的因果解释 |
 
 ## 1. 随附性与 Jackson 的论证
 
-**形式对应。** `Supervenes M N` 指：基础 `N` 相同则 `M` 相同。`supervenes_iff_factors` 证明：`M` 随附于 `N`，当且仅当 `M` 是 `N` 的同一类（商）上的函数。这正是 Jackson 第二步的形式内容：全局随附给出一个由基础定义、与道德属性在一切情形中共外延的性质。这里的"一切情形"是所讨论的历史全体；跨过程的必然性是范围声明，不是额外定理。
+**一般事实。** `Supervenes M N` 指：基础 `N` 相同则 `M` 相同。`supervenes_iff_factors` 证明：`M` 随附于 `N`，当且仅当 `M` 是 `N` 的同一类（商）上的函数。这对任意 `M`、`N` 都成立，是商的泛性质，不是关于道德的定理。它表明：**一旦**承认道德属性全局随附于自然基础，就有一个由基础定义的性质与之在一切所论情形中共外延。前件，即道德属性确实随附，本轮没有证明；Lean 里也没有模态量化。
 
-**生成论使基础更具体。** `Run` 把历史作为数据保存，包括每个中间状态。`Along R r` 表示关系 `R` 在 `r` 的每一次实际转换上成立。取 `R` 为延续条件序 `ContinuationLe`（后一状态能实现前一状态能实现的一切有限活动），`Along` 就是"整段展开没有取消任何活动的可实现性"。
+**生成论的具体内容。** `Run` 把历史作为数据保存，包括每个中间状态。`Along R r` 表示关系 `R` 在 `r` 的每一次实际转换上成立。取 `R` 为延续条件序 `ContinuationLe`（后一状态能实现前一状态能实现的一切有限动作序列），候选质量就是"整段展开没有取消任何活动的可实现性"。
 
 - `along_supervenes_on_states`：任意步质量都是访问状态序列的函数。
-- `quality_not_fixed_by_endpoints_and_word`、`quality_not_supervenient_on_word`：在 `dip` 过程中，两段历史起点、终点和动作序列完全相同，一段中途取消了 `use` 的可实现性，另一段没有。所以整体质量**不**随附于终点加动作序列，而随附于整段历史。
-- 对 McDowell"无形状"反驳的回应：Jackson 的对应自然属性可能只是一个无限析取，没有自然统一性。本轮证明这个质量有结构：经共享边界状态可组合（`along_append`），在精确重表示下不变（`along_continuation_transport`），损失可定位（第4节）。
+- `quality_not_fixed_by_endpoints_and_word`、`quality_not_supervenient_on_word`：在 `dip` 过程中，两段从 2 到 2 的历史，动作序列完全相同；一段中途取消了 `use` 的可实现性，另一段没有。这只是一个例子。在确定性过程中，起点加动作序列决定全部状态，质量就随附于它们。所以结论是"一般而言不随附于更粗的基础"。注意：随附于更细的基础是更弱的命题（`supervenes_of_finer`）；实质内容在于对较粗基础的失败。
 
-**未证部分。** 必然共外延是否等于属性同一，取决于属性的个体化方式。超内涵立场下，这一步不成立，也不是形式定理能决定的。本文把 Jackson 的结论读作"道德属性至少与一个结构化的自然属性必然共外延"，这一部分已证。
+**无形状反驳。** McDowell（1981）的无形状论证针对非认知主义的"剥离"策略：伦理概念的外延在自然层面可能没有统一性。对 Jackson 的"无限析取"质疑，则主要来自特殊主义论争（Dancy；Jackson、Pettit 与 Smith 2000）。首版声称"可组合、可迁移、可定位"回应了这一反驳。这不成立：可组合、随附于状态对任意 `R` 都成立，不能显示道德外延有自然统一性。
 
-## 2. 本体论简约与 Mackie
+**未证部分。** 道德属性是否随附；必然共外延是否等于属性同一（取决于属性的个体化方式）。
 
-质量 `Along (ContinuationLe P)` 只用过程 `P` 本身定义，不引入新的实体或层次。它在精确重表示下保持不变，所以不依赖观察者选择的描述方式。Mackie 怪异性论证的形而上部分在这个意义上被回应：所需的只是已有世界中的生成关系。
+## 2. Mackie 的怪异性与 Harman 的简约
 
-Mackie 还有两部分没有被消解。第一，**规范的"应被追求性"**：知道某段历史保全条件，并不使任何人必须追求它。本轮把这一点精确地移到自反前提上（第5节），而不是宣称它消失了。第二，**相对性论证**：第5节的取向中立定理说明，自然事实允许融贯的相反取向，所以分歧未必出于事实错误。这一点对 Mackie 有利，应当保留。
+作为支持自然主义的论证，"简约"更接近 Harman；Mackie 是错误论者，他的怪异性论证是反对客观价值的。
+
+候选质量只用过程 `P` 本身定义，不引入新的实体或层次。在保持动作词汇不变、可行动作序列完全对应的重表示下，它不变（`along_continuation_transport`、`converse_projection_iff`）。但细化或粗化动作词汇可以改变判断，所以它**依赖**于把哪些动作算作活动。首版说"不依赖观察者选择的描述方式"，过度了。
+
+Mackie 还有两部分没有被消解。第一，**规范的"应被追求性"**：知道某段历史保全条件，并不使任何人必须追求它。本轮只是把这一点移到第5节的前提上。第二，**相对性论证**：第5节的中立结果说明，自然事实允许融贯的相反取向，分歧未必出于事实错误。这一点对 Mackie 有利，应当保留。
 
 ## 3. 认识论
 
-- **损失有有限见证。** 一个活动在前一状态可实现、在后一状态不可实现，这一个有限事实就否定了保全（`witness_refutes_preservation`）。损害可以观察，也可以证伪。
-- **保全是全称命题。** 它涉及一切活动，只能得到可错的支持。这种不对称与经验科学中的普遍命题相同。
-- **损失必定发生在实际转换上。** 若活动的可实现性可判定（例如有限过程），起点可实现、终点不可实现的活动一定在历史中的某一次实际转换上失去（`loss_localizes`）。不假定可判定性时，"没有任何转换承担这次损失"也不可能成立（`loss_localizes_nn`）。所以认识整体质量可以靠逐步记录，不需要外部视角。
-- **只看终点不能认识。** `dip` 的两段历史终点相同。认识需要历史记录，这与[一体之仁 §7](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#7-形式化怎样保存同一历程)的中途下降结果一致。
+- **损失有有限见证。** 一个动作序列在前一状态可行、在后一状态不可行，这一个有限事实就否定了保全（`witness_refutes_preservation`）。
+- **保全是全称命题。** 它涉及一切动作序列，只能得到可错的支持。
+- **损失落在实际转换上。** 若可行性可判定（例如有限过程），起点可行、终点不可行的动作序列一定在某一次实际转换上失去（`loss_localizes`）。不假定可判定时，"没有任何转换承担这次损失"也不可能成立（`loss_localizes_nn`）。
+- **只看终点认识不到。** 这与[一体之仁 §7](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#7-形式化怎样保存同一历程)的中途下降结果一致。
 
-**复用的已有结果。** 自然主义说"像认识其他事物一样认识道德事实"。生成论的对应是：评价本身在展开中形成。[估值发展](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md)证明，对他者后果的看重经共同经历形成，好的共同事件形成正联结，坏的形成负联结。所以经验形成的评价需要纠正，这正是反思平衡在生成论中的位置。[延续范围](CONTINUATION-SCOPE-INTEGRATION.md)证明，评估若漏掉实际触及的延续，会在两个方向上失真。[记录与竞争要求](RECORDED-CLAIMS-INTEGRATION.md)证明，完全对称的起点不能由记录决定，这是经验认识的一个精确界限。
+这些是关于候选自然属性的认识论，不是关于道德知识的认识论。道德信念怎样经观察形成并得到辩护，可以接到[估值发展](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md)：对他者后果的看重经共同经历形成，正负联结都可能，所以经验形成的评价需要纠正。还可以接到[延续范围](CONTINUATION-SCOPE-INTEGRATION.md)和[记录与竞争要求](RECORDED-CLAIMS-INTEGRATION.md)。这些连接尚未做成定理。
 
-**未证部分。** 反思平衡是否收敛、直觉在其中算作什么证据，是哲学问题，也是今后可以做经验研究的问题。
+## 4. 解释作用
 
-## 4. 解释作用与康奈尔实在论
+`preserved_throughout` 证明：在任意过程中，一段无损历史使起点可实现的每个活动在每个访问状态都保持可实现。它由定义经传递性得到，是一条跨过程成立的定律式推论。`availability_not_fixed_by_endpoints_and_word` 说明这个被推出的事实一般不由起点、终点和动作序列决定。已有的 `short_kinds_cannot_renew_forever`（[更新包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md)）同样是一条跨实现成立的定律：每类组织带来的少于其形成所需时，无论支持关系如何，更新都必在期限内结束。
 
-**解释的定律对一切过程成立。** `preserved_throughout` 说：在任意过程中，一段无损历史使起点可实现的每个活动在每个访问状态都保持可实现。被解释的事实是"某活动在整段历程中始终可实现"。`availability_not_fixed_by_endpoints_and_word` 说明这个事实不由终点和动作序列决定：较粗的自然描述承担不了这项解释，整体历史质量可以。这个定律对任意过程成立，正是 Boyd 强调的多重实现。
-
-**已有的更新定律。** [`RenewalAccounting`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md) 的 `short_kinds_cannot_renew_forever` 证明：当每类组织带来的少于其形成所需，**无论支持关系如何**，更新都必在明确期限内结束。这是一条"展开损害自身后续条件"解释终结的定律，同样跨实现成立。这里只引用，不重复证明。
-
-**对 Harman 挑战的回应及其限度。** 若道德属性与这个自然属性同一，它的解释就是自然解释，不与物理解释竞争。但解释作用证明的是这个自然属性真实且有解释力。相反取向同样有解释作用（第5节）。所以解释作用不能单独证明这个属性就是善。
+这**还不是** Sturgeon 或 Harman 意义上的解释作用。Sturgeon 举的是道德性质参与对行动的因果解释，例如希特勒的堕落解释他的行为；Harman 问的是道德事实能否解释我们的观察与道德信念。本轮都没有触及。Boyd 的独特论点是稳态性质簇与因果调节，不只是多重实现。首版的"解释作用证明属性真实"属于过度表述。
 
 ## 5. 等同于哪一个自然属性
 
-**候选。** 整体展开对其自身后续实现、更新与纠正条件的生成或损害。形式上，它是沿整段历史的延续条件序 `Along (ContinuationLe P)`，连同其可组合、定位与不可比的结构。
+**候选。** 整体展开对其自身后续实现、更新与纠正条件的生成或损害。**本轮形式化的只是其中一半：** `Along (ContinuationLe P)` 是二值的"无损失"，没有对生成的正面度量。它还以可行性（是否存在一条路径）为准，而不是概率、实际发生或体验。
 
-### 5.1 开放问题与是/应当：严格的中立结果
+### 5.1 中立结果：这些条件不选出取向
 
-`naturalist_criteria_do_not_fix_orientation` 证明：延续条件序及其逆序都是预序，都随附于访问状态，都可组合，在精确重表示下都不变（`converse_projection_iff`）。但对 `dipped` 中从 2 到 1 的实际转换，一个判为损失，另一个判为可接受。这强化了已有的 `EthicalOrientation.coherence_and_annotation_invariance_do_not_select_growth`。
+`naturalist_criteria_do_not_fix_orientation` 证明：延续条件序及其逆序都是预序，都随附于访问状态。对 `dipped` 中从 2 到 1 的实际转换，一个判为损失，另一个判为可接受。可组合与重表示不变另由 `credentials_hold_for_every_relation` 和 `converse_projection_iff` 给出；前者对任意关系成立，所以中立性比"两个取向"更广。这强化了已有的 `EthicalOrientation.coherence_and_annotation_invariance_do_not_select_growth`。
 
-这是 Moore 开放问题论证在本理论中的准确形式，也是 Horgan 与 Timmons"道德孪生地球"的形式版本：两个共同体可以用同样的实践角色使用"善"，却追踪相反的自然属性。结论是：若同一成立，它是综合的、后验的（康奈尔实在论本来就这样主张，如"水 = H₂O"），由一项额外前提承担，而不是从中性事实中读出。
+这是一个欠决定或是/应当的结果，可以**类比** Moore 的开放问题论证。Moore 的论证本身是关于概念与分析性的语义论点，不由这个定理表达。若同一成立，它是综合的、后验的，并由额外前提承担。Horgan 与 Timmons 的"道德孪生地球"是对 Boyd 因果调节语义的语义反驳：直觉上两个共同体在真正地分歧，而那种语义预言它们意义不同。采用一项规范前提，只是把争议移到前提上，并没有回答这个语义论证，因为孪生共同体可以采用相反的前提。
 
-### 5.2 自反前提与最大可接受取向
+### 5.2 非削弱前提及其限度
 
-**前提（非削弱）。** 若沿取向 `R` 前进时从不取消范围 `W` 中任一活动的可实现性，就说 `R` 对 `W` 非削弱。
+**定义。** 若沿取向 `R` 前进时从不取消范围 `W` 中任一活动的可实现性，就说 `R` 对 `W` 非削弱。`NonUndermining` 约束所有状态对；`TransitionNonUndermining` 只约束实际转换。
 
-**为什么取全范围。** 评价、更新和纠正本身是展开中的活动。依非二元方法，没有站在展开之外的评价者，也没有哪个中心的活动可以预先特权化。`unprivileged_scope_is_whole_scope` 证明：对每一个单独活动都非削弱，恰好等于对全部活动非削弱。
+**已证内容（大多由定义展开得到）。**
 
-**定理。** `generation_order_greatest` 证明：延续条件序本身非削弱，而任何非削弱的取向都包含在它之中。`guided_history_preserves` 证明：按非削弱取向前进的历史，使评价者自己的活动在内，所有初始可实现的活动始终可实现。`converse_undermines_in_dip` 证明：逆序取向会取消评价与纠正赖以进行的活动。在这个前提下，孪生地球的对称被打破。
+- `generation_order_greatest`：对全范围，延续条件序非削弱，且是最大的非削弱取向。空关系同样非削弱，所以说"最大"，不说"选出"。
+- `unprivileged_scope_is_whole_scope`：对每个单独活动都非削弱，等于对全部活动非削弱。这只是一个记账引理。它**不**支持取全范围，因为空范围同样不偏向任何活动，而在空范围下逆序也满足前提。
+- `guided_history_preserves`、`converse_undermines_in_dip`：按非削弱取向前进的历史保持一切初始可实现的活动，逆序在 `dip` 中会取消一个活动。模型中没有评价者或纠正过程，`use` 只是任意动作。首版说"取消评价与纠正赖以进行的活动"，应改为：会取消任何活动，若模型中有评价与纠正，它们也在其中。
 
-**前提的地位。** 这是一项自反论证，形式上类似先验论证：一个取向若允许取消自身被行使和被修正的条件，就削弱了它自己。但这不是从中性事实推出的。不在乎自身能否继续、能否被纠正的评价者，可以融贯地拒绝它。项目记录中"无假设普遍证明未完成"的位置，现在精确地落在这项前提上。
+**前提的地位。** 支持它的是一项自反论证：评价、更新和纠正是展开中的活动，允许取消自身行使与被修正条件的取向会削弱它自己。这不是从中性事实推出的，而且即使接受，也只推出保护评价自身所需的活动，推不出保护全部活动。取全范围是又一项规范选择。
 
-### 5.3 与三种候选的比较
+### 5.3 与三种候选的比较（以前提为条件）
 
-- **功利主义（福祉或快乐）。** 任何完备排序，特别是任何标量福祉排序，在 `incomparable` 过程中都会取消某个可实现活动（`total_orders_undermine`、`scalar_ranking_undermines`）。延续条件序则让这一对保持不可比（`generation_leaves_pair_unranked`）。这是完备性与非削弱之间的取舍，不是对功利主义的反驳：功利主义者可以接受某些损失值得。代价在本候选一边同样存在：它在悲剧性选择上不给出裁决。另外，[FUTURE-GOOD-INTEGRAL §7](FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression) 已证明任何整体评价都有逐时表达，所以差别不在于是否可以按时间相加，而在于评价追踪的是什么。痛苦确实损害后续条件；福祉可以是本候选的重要组成部分，但不是它的定义。
-- **Railton（理想化的自身利益）。** 自身利益以一个中心为范围。`fixed_scope_permits_loss` 证明：对预先固定的范围非削弱的取向，可以取消范围外的活动。这与对齐线程的 `ContinuationScope.omitted_scope_admits_needless_foreclosure` 和 `InquiryWarrant.self_scoped_rule_ignores_others` 是同一结构的两层表达。Railton 的道德正确性取社会视角，比他的个人善更接近本候选；他的理想化（完全知情的反事实视角）在生成论中本身是在展开中形成的能力，不能预先给出。
-- **Foot（自然的善，生命形式）。** 这是最接近的近亲：好坏按生命继续的条件判断。区别在于，Foot 预先固定物种的生命形式；在生成论中，形式本身在形成和改变，范围也跨越物种。同一个 `fixed_scope_permits_loss` 适用：只保护既定形式所列的活动，可以取消新形成的活动。这对应 Ren 的研究中心："不可预先固定任何预期作为价值单位。"
+以下比较都以 5.2 的前提为条件；第 5.4 节表明该前提按现写法过强，所以它们不是对这些理论的反驳。
 
-### 5.4 保留的反例：阻止伤害被记为损害
+- **功利主义（福祉或快乐）。** 在 `switching` 过程中，两个状态之间确实可以转换，每个状态各有对方没有的活动。任何完备排序，特别是任何标量福祉排序，都会认可一次取消某个活动的实际转换（`total_orders_undermine_on_transitions`、`scalar_ranking_undermines_on_transitions`）。延续条件序只是通过两次转换都不认可才避免这一点（`generation_endorses_no_switch`）。首版的 `incomparable` 过程里没有状态间转换，那个结果只涉及假想的移动，现在由 `switching` 取代。这是完备性与非削弱之间的取舍；功利主义者完全可以回应说这个前提过强。另外，本候选还没有表示痛苦：不取消任何可行动作的痛苦在 `ContinuationLe` 中不留痕迹。首版的"痛苦确实损害后续条件"没有证明。
+- **Railton（理想化的自身利益）。** `fixed_scope_permits_loss` 证明：对预先固定范围非削弱的取向，可以取消范围外的活动。它只对应 Railton 的非道德个人善（以一个中心为范围），不对应他以社会视角刻画的道德正确性。同一结构见于 `ContinuationScope.omitted_scope_admits_needless_foreclosure` 和 `InquiryWarrant.self_scoped_rule_ignores_others`。
+- **Foot（自然的善，生命形式）。** 这是最接近的近亲。区别在于，Foot 预先固定物种的生命形式；在生成论中，形式本身在形成和改变。同一个 `fixed_scope_permits_loss` 适用：只保护既定形式所列的活动，可以取消新形成的活动。这对应 Ren 的研究中心："不可预先固定任何预期作为价值单位。"
 
-`restraint_registers_as_damage`：一个中心的活动 `live` 会被 `harm` 取消，`restrain` 取消 `harm` 的可能。按全部活动同等计入的延续条件序，阻止伤害（到 `restrained`）与伤害本身（到 `harmed`）都是条件损失，而保留伤害的可能不算损失。
+### 5.4 保留的反例：阻止、选择与恢复都被记为损害
 
-所以第 5.2 节的前提若按字面理解为"任何活动都不得取消"，就会谴责正当的阻止。这不是形式细节，而是伦理上的实质缺陷。它说明：
+- `restraint_registers_as_damage`：阻止伤害与伤害本身都是条件损失，保留伤害的可能则不算损失。
+- `every_exclusive_choice_registers_as_damage`：在两个互斥方向之间作出的任何承诺都是损失。消费、承诺、专门化、老化等一切不可逆进程同理。阻止伤害只是"选择即排除"这一一般事实的一个例子。
+- `recovered_dip_still_condemned`：中途下降后完全恢复，与未恢复一样受谴责。
+- 存在一条路径即算可行，所以风险暴露与安全无从区分。
 
-- 全范围非削弱还不能直接充当伦理同一；
-- 下一步要从生成关系本身导出**受保护活动的范围**，区分维持他者条件的活动与取消他者条件的活动；一个自然的候选是"其行使本身不取消其他受保护活动"这一条件的最大不动点；
-- 这项导出必须避免把"正当活动"预先写进范围参数，否则就是循环。
+这些说明，"不取消任何活动的可实现性"按字面不能充当伦理同一。所需的改进是：
+
+1. 从生成关系导出**受保护活动的范围**，区分维持他者条件的活动与取消他者条件的活动。一个候选是"其行使不取消其他受保护活动"的最大不动点。这一导出不能把"正当活动"预先写进参数。
+2. 给出对**生成**的正面度量，并允许修复抵消损失（接 [FUTURE-GOOD-INTEGRAL](FUTURE-GOOD-INTEGRAL.md) 的整体评价）。
+3. 把体验与概率纳入条件，而不只用可行性。
 
 ## 6. 对 Ren 的判断："以上我们都可以最终证明"
 
-- **随附性、简约、认识论、解释作用：** 它们的形式内容本轮已证明，而且生成论版本更强（基础是整段历史，解释跨实现成立）。
-- **等同于哪种自然属性：** 在明示的自反前提下，已证明延续条件序是唯一的最大可接受取向，并在有限例子中把三种候选区分开。
-- **未完成的部分有三项，都有精确位置：**
-  1. 从必然共外延到属性同一（属性个体化的哲学问题）；
-  2. 自反前提的地位（规范输入，不是中性事实的推论）；
-  3. 受保护活动范围的导出（第 5.4 节的反例要求修正）。
-  第3项是可以继续用数学推进的下一座桥，第1、2项需要哲学论证。
+- **本轮证明了：** 一个候选自然属性具有四条论证所要求的若干形式特征。最具体的结果是：整体质量一般不能由起点、终点和动作序列决定。在明示的前提下，延续条件序是最大的可接受取向，并能在形式例子中与三种候选对比。
+- **本轮没有证明：** 四条论证的前提（道德属性随附、道德事实参与解释）；同一；前提本身。中立结果还表明，这些形式特征不能选出属性。
+- **按现写法被否证的：** 以"不取消任何活动"作为伦理同一标准（第 5.4 节）。
+- **下一步：** 第 5.4 节的三项改进可以用数学推进。道德属性的随附、属性同一和规范前提的地位需要哲学论证。
 
-**会改变本结论的结果：** 若能从生成关系导出受保护范围，且该范围能区分阻止与伤害而不预设伦理参数，第 5.4 节的反例就被消除。若能证明任何不预设伦理参数的范围都无法区分二者，则本候选需要放弃"非削弱"作为同一标准的核心。
+**会改变本结论的结果。** 若能从生成关系导出受保护范围，并区分阻止与伤害、承诺与毁坏，而不预设伦理参数，第 5.4 节的反例就被消除。若能证明任何不预设伦理参数的范围都无法区分二者，则本候选需要放弃"非削弱"作为核心。
+
+## 7. 审查与改正记录
+
+独立 AI 审查（2026年10月6日）确认：全部证明重建通过；`dip`、`restraint_registers_as_damage`、`converse_projection_iff` 与审计计数表述正确。依审查所作改正：
+
+- **阻断 1：** "四条论证的可形式化部分已证明"改为"候选属性的形式性质"；删去"道德属性必然共外延已证"。
+- **阻断 2：** 补 `credentials_hold_for_every_relation`；撤回首版"可组合、可迁移即回应无形状反驳"的说法。
+- **阻断 3：** `incomparable` 中没有状态间转换。新增 `TransitionNonUndermining` 与 `switching` 过程，在实际转换上重证完备排序的结论。
+- **阻断 4：** `unprivileged_scope_is_whole_scope` 改述为记账引理，并指出空范围同样不偏向任何活动。
+- **应改：**
+  - 随附"更强"改为"对较粗基础一般失败"；
+  - 说明候选只是二值的"无损失"；
+  - 补上不可逆选择与恢复的反例，以及对动作词汇的依赖；
+  - 解释作用、Moore、孪生地球、Mackie/Harman、McDowell 的表述按审查改正；
+  - 候选比较改为以前提为条件。
 
 ## 形式索引
 
 `WholeQualityNaturalism.lean`：`supervenes_iff_factors`、`base_defined_supervenes`、`supervenes_of_finer`、`Run`、`Along`、`along_iff_steps`、`along_iff_chain`、`along_supervenes_on_states`、`along_append`、`along_mono`、`chain_map`、`along_continuation_transport`、`preserved_throughout`、`witness_refutes_preservation`、`loss_localizes`、`loss_localizes_nn`、`located_loss_breaks_quality`、`quality_not_fixed_by_endpoints_and_word`、`quality_not_supervenient_on_word`、`availability_not_fixed_by_endpoints_and_word`。
 
-`NaturalismIdentity.lean`：`converse_projection_iff`、`dip_two_dominates_one`、`naturalist_criteria_do_not_fix_orientation`、`NonUndermining`、`nonUndermining_whole_iff`、`generation_order_greatest`、`unprivileged_scope_is_whole_scope`、`guided_history_preserves`、`converse_undermines_in_dip`、`fixed_scope_permits_loss`、`generation_leaves_pair_unranked`、`total_orders_undermine`、`scalar_ranking_undermines`、`restraint_registers_as_damage`。
+`NaturalismIdentity.lean`：`converse_projection_iff`、`dip_two_dominates_one`、`naturalist_criteria_do_not_fix_orientation`、`NonUndermining`、`nonUndermining_whole_iff`、`generation_order_greatest`、`unprivileged_scope_is_whole_scope`、`guided_history_preserves`、`converse_undermines_in_dip`、`fixed_scope_permits_loss`、`generation_leaves_pair_unranked`、`total_orders_undermine`、`scalar_ranking_undermines`、`restraint_registers_as_damage`。其中 `total_orders_undermine`、`scalar_ranking_undermines` 只涉及状态对，由下一模块的实际转换版本取代。
 
-所有过程、范围与排序都是给定的局部模型输入。没有定理断言哪段历史会发生、前提为真，或在每个选项都有所取消时应如何选择。本轮未经独立 AI 审查。
+`NaturalismReview.lean`：`credentials_hold_for_every_relation`、`TransitionNonUndermining`、`switching`、`total_orders_undermine_on_transitions`、`scalar_ranking_undermines_on_transitions`、`generation_endorses_no_switch`、`committing`、`every_exclusive_choice_registers_as_damage`、`recovered_dip_still_condemned`。
+
+所有过程、范围与排序都是给定的局部模型输入。没有定理断言哪段历史会发生、前提为真，或在每个选项都有所取消时应如何选择。

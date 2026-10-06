@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-10-06T20:22:52.993742+00:00",
+  "checked_at_utc": "2026-10-06T20:30:37.545816+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "checker_sha256": "e88c80b11c5f16050f1a71a679704ff98958e0d473158ff109f6ca69ccc85b8b",
+  "checker_sha256": "7ed2178ecbb7262406fefad62f21b3d25c99f5ed0b772dde05984a99fcc808ae",
   "source_unchanged_during_check": true,
   "fresh_temporary_build": true,
   "allowed_standard_axioms": [
@@ -107,9 +107,24 @@
       "clean": true,
       "output": "verification/NaturalismIdentity.txt",
       "output_sha256": "3157ead6a346b0781ee40a7ac9b04eb92f32b0bccc6c8f54e7cc083eb7b1e1f2"
+    },
+    {
+      "module": "NaturalismReview",
+      "source": "NaturalismReview.lean",
+      "source_sha256": "6301940e1960a63e0ff3b8a4df7c679129205453d499208abf17fdd56287af36",
+      "exit_code": 0,
+      "new": true,
+      "dependency_audits": 10,
+      "axioms": [
+        "propext"
+      ],
+      "empty_axiom_audits": 6,
+      "clean": true,
+      "output": "verification/NaturalismReview.txt",
+      "output_sha256": "1f5a02cae0288a7ffba4e045f7785ea507b932a8e5a24d8d4537dd159fad760e"
     }
   ],
-  "new_audited_declarations": 43,
-  "new_empty_axiom_audits": 39,
-  "scope": "Supervenience is factorization through base-identity classes; a step quality along a history is a function of its visited states, composes through the shared boundary, is invariant under exact re-representation, and is not fixed by endpoints and action word; damage-free histories keep every initially realizable activity realizable throughout, and every loss is located at an actual transition. These credentials hold equally for the converse orientation. Under the stated non-undermining premise over the whole scope of activities, admissible orientations are exactly sub-relations of continuation inclusion; fixed scopes and complete (including scalar) rankings fail it in finite examples. The premise itself, property identity beyond coextension, and an ethical verdict are not asserted."
+  "new_audited_declarations": 53,
+  "new_empty_axiom_audits": 45,
+  "scope": "Supervenience is factorization through base-identity classes; a step quality along a history is a function of its visited states, composes through the shared boundary, is invariant under exact re-representation, and is not fixed by endpoints and action word; damage-free histories keep every initially realizable activity realizable throughout, and every loss is located at an actual transition. These credentials hold equally for the converse orientation. Under the stated non-undermining premise over the whole scope of activities, admissible orientations are exactly sub-relations of continuation inclusion; fixed scopes and complete (including scalar) rankings fail it in finite examples, including over actual transitions. The structural credentials hold for every step relation; continuation inclusion registers restraint, every exclusive choice and every recovered dip as damage. No moral predicate is formalized: the premise, the supervenience of moral properties, property identity and any ethical verdict are not asserted."
 }
