@@ -68,12 +68,23 @@ An `Execution` is a supplied sequence of `channelProcess` ticks. Its only extra 
 - `closed_open_short_has_no_self_renewing_population`: the single short kind of Phase 1 is decided by the law.
 - `dangling_support_renews_forever`, `dangling_kind_outside_every_closure`, `dangling_closure_falls_short`. A short self-supporting kind supports a second kind that supports nothing but brings in more than its demand. The second kind is in no closed set of the support relation, and the closure alone falls short, yet the law renews forever. **Renewal still needs a realized two-sided closure (`live_late_descends_from_realized_closure`). But the population that renews need only be closed under support. The kind that captures the flow can sit outside every two-sided closure of the support relation, and it is generative only through the provision it opens.**
 
+**`RenewalConfigurations.lean`: renewability of whole configurations.**
+
+A configuration (reserve plus every token with its remaining span) is `Renewable` when some execution that stays live forever starts from it.
+- `renewable_iff_step`: a configuration within span is renewable exactly when it is live and some step leads to a renewable configuration.
+- `renewability_not_generated`: along any execution, if the start is not renewable, no later configuration is. A history can keep or lose the possibility of renewal, but cannot create it from within.
+- `renewable_of_more`: adding reserve or tokens from outside keeps renewability. Possibility can be created only by what enters from outside.
+- `seeded_renewable`: a configuration that seeds every kind of a self-renewing population, with `D + 1` times its formation demand in reserve, reaches the steady configuration within `D + 1` ticks.
+- `renewability_not_function_of_reserve_and_kinds`, `renewability_not_function_of_tokens`: no goal projection decides renewability. Configurations that differ only in a token's age, or only in reserve, differ in renewability.
+- `keeping_and_losing_renewal`: from one renewable configuration, forming a token keeps renewability, while forming nothing loses it for good. The second successor holds more reserve.
+
 `RenewalClosure`'s window theorems now also state that the walk's occurrences come no later than the late occurrence (`s ≤ t`), and they cover the walk from the cycle as well as the cycle. The proofs build them that way, and the exact conditions need both.
 
 ## What is not yet proved
 
 - That the aggregate condition is equivalent to the roadmap's two named cases, a cycle of kinds that each bring in enough or an excess kind supported from a cycle, as a statement about the law alone. The necessity proof constructs one of the two, and sufficiency is proved for each, but the static cycle extraction is not stated.
-- Renewability of whole configurations, the rest of roadmap Phase 2b: which configurations can reach a standing renewal, and which histories damage that possibility.
+- An exact characterization of renewable configurations. `seeded_renewable` is sufficient but not necessary: phase-locked cycles can renew without ever having all kinds fresh at once.
+- **The premises listed in the [Phase 2b note](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RENEWAL-CLOSURE-PHASE2B.md#premises-under-rens-no-assumption-rule-6-october-2026).** Under Ren's no-assumption rule, each is to be derived (bounded spans and rates), removed (positive spans, initial tokens within span), or proved necessary (finitely many kinds, positive demand for the explicit deadline). The law itself stays a supplied input until Phase 4. Lean's `propext` and `Quot.sound` are to be removed after that.
 - The generalizations of Phase 3 (several required supporters, several flows) and the derivation of constraints inside the core (Phase 4).
 
 Kinds, edges, spans, demands and rates are supplied inputs. Nothing here says which history occurs, that a system reaches the steady configuration, or that continuation is favorable.
@@ -84,8 +95,8 @@ From this directory, with Lean 4.29.1 through elan or on `PATH`, run `python3 ch
 
 The checker:
 - requires the inherited `GenerativeCore`, `Depletion` and `SupportNecessity` to match the hashes in their own receipts;
-- builds all eight modules fresh in a temporary directory;
+- builds all nine modules fresh in a temporary directory;
 - rejects `sorry`, custom axioms and warnings;
 - requires every new theorem to be audited.
 
-The [receipt](verification.json) records **111 new audits**: 16 with empty axiom reports, and 95 that depend only on Lean's standard `propext` and `Quot.sound`. This is the same allowance as the conditional package. `Classical.choice` is avoided throughout; the note on `omega` in the Phase 2 note says how.
+The [receipt](verification.json) records **135 new audits**: 19 with empty axiom reports, and 116 that depend only on Lean's standard `propext` and `Quot.sound`. This is the same allowance as the conditional package. `Classical.choice` is avoided throughout; the note on `omega` in the Phase 2 note says how.

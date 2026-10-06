@@ -1,0 +1,16 @@
+import LineageInProcess
+open ValuationDevelopment
+#print axioms history_ledger_sustained
+#print axioms consecutive_segments_are_generations
+#print axioms lineage_account_law
+#print axioms lineLedger_heldEnd_congr
+#print axioms line_is_lineage_history
+#print axioms lineage_bound_is_prefix_bound
+#print axioms endless_demanding_line_needs_unbounded_arrivals
+#print axioms channel_account_law
+#print axioms generation_sustained
+#print axioms intervalTotal_split
+#print axioms generations_succeed
+#print axioms execution_lineage
+#print axioms lineage_renewal_theorem
+#print axioms attribution_is_by_population

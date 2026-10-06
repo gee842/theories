@@ -52,9 +52,13 @@ Section 16 of the argument adds 33 further Lean results: 15 stated results and 1
 
 The study is complete at its formal scope: 103 results across five modules. Empirical identification, material realization and the ethical question are handed on to other work. None of this completes the unified foundation.
 
+## On the shared process
+
+Section 17 of the argument adds 14 Lean results, which place the lineage account on the shared process law. The generation ledger is the per-event support law (U1) of a process whose events are generations. The lineage bound is that law's prefix bound (U2). Any history of any process obeying U1 splits into generations that inherit exactly. The renewal channel process obeys U1, so its executions are lineages, and the renewal–closure theorem decides which of them stay live forever. On that process, which kinds persist is decided by membership in a self-renewing population. It is not decided by each kind's own balance: a kind that falls short can be kept on another kind's arrivals, and a kind can lapse beside a closure that renews forever.
+
 ## What constrains the sign of a formed valuation
 
-No analyst is needed. Within one history, the sign is constrained by the current coupling and the consequences actually reached. Across continuing histories, the [prefix bound](CONDITIONAL-UNIVERSALITY.md#3-the-universal-prefix-bound) gives a necessary condition at the level of the whole ledger. Where every event makes a positive demand on support, continuation needs provision recurring arbitrarily late. The bound also applies across successors that inherit their support (§16). Attributing that provision to one coupling needs a further account, not built here. Where support arrives independently, harmful or decoupled valuations continue just as well. Constraint on valuations needs no reward function, and it guarantees nothing favorable.
+No analyst is needed. Within one history, the sign is constrained by the current coupling and the consequences actually reached. Across continuing histories, the [prefix bound](CONDITIONAL-UNIVERSALITY.md#3-the-universal-prefix-bound) gives a necessary condition at the level of the whole ledger. Where every event makes a positive demand on support, continuation needs provision recurring arbitrarily late. The bound also applies across successors that inherit their support (§16). On the renewal process, provision is attributed to populations of kinds, not to single kinds (§17). Where support arrives independently, harmful or decoupled valuations continue just as well. Constraint on valuations needs no reward function, and it guarantees nothing favorable.
 
 ## Supplied and open
 
