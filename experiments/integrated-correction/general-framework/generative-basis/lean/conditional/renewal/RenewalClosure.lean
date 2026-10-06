@@ -260,18 +260,18 @@ theorem duplicate_of_long [DecidableEq Kind] :
       exact ⟨y :: pre, x, mid, post, by rw [split]; rfl⟩
 
 /-- Backward chain: an occurrence later than `m * D` descends through a walk of
-`m` support steps, each visited kind occurring within the window. -/
+`m` support steps, each visited kind occurring within the window before it. -/
 theorem support_walk (S : OccurrenceSupport Kind) (D : Nat)
     (bound : ∀ j, S.reach j ≤ D) :
     ∀ (m t : Nat) (k : Kind), S.occurs k t → m * D < t →
       ∃ j vs, Walk S.edge j vs k ∧ vs.length = m + 1 ∧
-        ∀ v, v ∈ vs → ∃ s, S.occurs v s ∧ t ≤ s + m * D
+        ∀ v, v ∈ vs → ∃ s, S.occurs v s ∧ s ≤ t ∧ t ≤ s + m * D
   | 0, t, k, occ, _ => by
     refine ⟨k, [k], Walk.nil k, rfl, ?_⟩
     intro v member
     have same := List.mem_singleton.mp member
     subst v
-    exact ⟨t, occ, by omega⟩
+    exact ⟨t, occ, Nat.le_refl t, by omega⟩
   | m + 1, t, k, occ, late => by
     have positive : 0 < t := Nat.lt_of_le_of_lt (Nat.zero_le _) late
     have ⟨j, s, edgeJK, occJ, earlier, within⟩ := S.support k t occ positive
@@ -284,14 +284,14 @@ theorem support_walk (S : OccurrenceSupport Kind) (D : Nat)
     intro v member
     cases List.mem_append.mp member with
     | inl old =>
-      have ⟨r, occV, near⟩ := window v old
-      refine ⟨r, occV, ?_⟩
+      obtain ⟨r, occV, before, near⟩ := window v old
+      refine ⟨r, occV, Nat.le_trans before (Nat.le_of_lt earlier), ?_⟩
       rw [Nat.succ_mul]
       omega
     | inr new =>
       have same := List.mem_singleton.mp new
       subst v
-      exact ⟨t, occ, by omega⟩
+      exact ⟨t, occ, Nat.le_refl t, by omega⟩
 
 /-- **Late activity descends from a realized closure.** With every kind listed in
 `U` and support reach at most `D`, an occurrence after `U.length * D` descends
@@ -305,7 +305,7 @@ theorem late_occurrence_descends_from_realized_closure [DecidableEq Kind]
     ∃ j cycle rest,
       cycle ≠ [] ∧ Walk S.edge j (j :: cycle) j ∧ Walk S.edge j (j :: rest) k ∧
       DependenceClosed S.edge cycle ∧
-      ∀ v, v ∈ cycle → ∃ s, S.occurs v s ∧ t ≤ s + U.length * D := by
+      ∀ v, v ∈ cycle → ∃ s, S.occurs v s ∧ s ≤ t ∧ t ≤ s + U.length * D := by
   have ⟨i, vs, walk, length, window⟩ := support_walk S D bound U.length t k occ late
   have long : U.length < vs.length := by omega
   have ⟨pre, x, mid, post, split⟩ :=
@@ -408,7 +408,7 @@ theorem episode_late_life_descends_from_realized_closure [DecidableEq Kind]
       (k := S.kind e) ⟨e, rfl, rfl⟩ bornLate
   refine ⟨j, cycle, rest, nonempty, loop, tail, closed, ?_⟩
   intro v member
-  have ⟨s, ⟨p, kindP, birthP⟩, near⟩ := window v member
+  obtain ⟨s, ⟨p, kindP, birthP⟩, _, near⟩ := window v member
   exact ⟨p, kindP, by rw [birthP]; exact near⟩
 
 #print axioms Walk.snoc

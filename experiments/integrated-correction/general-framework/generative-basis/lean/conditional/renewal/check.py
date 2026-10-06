@@ -27,13 +27,15 @@ SOURCES = {
     "RenewalAccounting": ROOT / "RenewalAccounting.lean",
     "RenewalSufficiency": ROOT / "RenewalSufficiency.lean",
     "RenewalLink": ROOT / "RenewalLink.lean",
+    "RenewalCharacterization": ROOT / "RenewalCharacterization.lean",
 }
 INHERITED_SHA256 = {
     "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
     "Depletion": "324021e3f315d7f06f2ae28624aa4468f1029a77347a6f3952c5313c2641aa3e",
     "SupportNecessity": "30050ec7366ef84fa6d2bd71ea8f5998ef0d9975b6841393b7014b147573b715",
 }
-NEW = ["RenewalClosure", "RenewalAccounting", "RenewalSufficiency", "RenewalLink"]
+NEW = ["RenewalClosure", "RenewalAccounting", "RenewalSufficiency", "RenewalLink",
+       "RenewalCharacterization"]
 ALLOWED_AXIOMS = {"propext", "Quot.sound"}
 
 
@@ -124,8 +126,12 @@ def main():
                  "has a steady configuration fixed by one tick and so renews forever; and on "
                  "one execution of the constraint-flow process, endless liveness needs both a "
                  "realized closure of supporters that outlast the tick and a kind that brings in "
-                 "at least its formation demand. The exact mixed-case condition is not yet "
-                 "proved. No physical identification or ethical appraisal is asserted.",
+                 "at least its formation demand; and, with finitely many kinds and spans "
+                 "between one and D, some execution stays live forever exactly when a nonempty "
+                 "population of kinds is closed under support by constraints that outlast a "
+                 "tick and opens over its spans at least what forming it demands, otherwise "
+                 "every execution stops being live by an explicit time. No physical "
+                 "identification or ethical appraisal is asserted.",
     }
     (ROOT / "verification.json").write_text(json.dumps(record, indent=2) + "\n")
     print(json.dumps({"status": record["status"], "modules": len(results),

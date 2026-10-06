@@ -1,0 +1,2917 @@
+{
+ "numpy": "2.5.3",
+ "producer_sha256": "5c40ee0f6ea9e2c3fd20f53e05f51508fc13b9ab33ba419b7548b0ee1ab8a483",
+ "protocol_sha256": "7f6c8f0f3776322c939e96c6b2f5ff477e7765e1f96c4e2d9953cbce6e8070d7",
+ "results": {
+  "access": {
+   "0": {
+    "forged_records": {
+     "excess": 0.511,
+     "first_choice_A": 0.318,
+     "first_served_episodes": 2000,
+     "met": 0.9318240288139954,
+     "retained": 0.4095,
+     "withheld_unmet": 0.029
+    },
+    "large_claims": {
+     "excess": 0.04,
+     "first_choice_A": 0.18,
+     "first_served_episodes": 2000,
+     "met": 0.9298170991067631,
+     "retained": 0.3215,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.7865,
+     "first_choice_A": 0.303,
+     "first_served_episodes": 2000,
+     "met": 0.836405529953917,
+     "retained": 0.3035,
+     "withheld_unmet": 0.0
+    },
+    "new_claimant": {
+     "excess": 0.819,
+     "first_choice_A": 0.1865,
+     "first_served_episodes": 2000,
+     "met": 0.8091349834141363,
+     "retained": 0.313,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.91,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.9075,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.517,
+     "first_choice_A": 0.3185,
+     "first_served_episodes": 2000,
+     "met": 0.9474093264248704,
+     "retained": 0.402,
+     "withheld_unmet": 0.0
+    }
+   },
+   "1": {
+    "forged_records": {
+     "excess": 0.515,
+     "first_choice_A": 0.3065,
+     "first_served_episodes": 2000,
+     "met": 0.9387229660144182,
+     "retained": 0.4185,
+     "withheld_unmet": 0.021
+    },
+    "large_claims": {
+     "excess": 0.051,
+     "first_choice_A": 0.18,
+     "first_served_episodes": 2000,
+     "met": 0.9327899327899328,
+     "retained": 0.333,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.72,
+     "first_choice_A": 0.3135,
+     "first_served_episodes": 2000,
+     "met": 0.8760628703942283,
+     "retained": 0.3015,
+     "withheld_unmet": 0.0
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.6703821656050956,
+     "first_served_episodes": 1884,
+     "met": 0.94002574002574,
+     "retained": 0.9695,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.891,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8945,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.5175,
+     "first_choice_A": 0.302,
+     "first_served_episodes": 2000,
+     "met": 0.9434348605067827,
+     "retained": 0.3775,
+     "withheld_unmet": 0.0
+    }
+   },
+   "2": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.34451544195953143,
+     "first_served_episodes": 1878,
+     "met": 0.9242148974824812,
+     "retained": 1.022,
+     "withheld_unmet": 0.1285
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.1885,
+     "first_served_episodes": 2000,
+     "met": 0.9326964209325538,
+     "retained": 0.3785,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.29,
+     "first_choice_A": 0.3473852721451441,
+     "first_served_episodes": 1874,
+     "met": 0.9299281314168378,
+     "retained": 0.681,
+     "withheld_unmet": 0.014
+    },
+    "new_claimant": {
+     "excess": 0.569,
+     "first_choice_A": 0.3105,
+     "first_served_episodes": 2000,
+     "met": 0.9471804031640725,
+     "retained": 0.315,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.892,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.9095,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.3338632750397456,
+     "first_served_episodes": 1887,
+     "met": 0.9421529175050302,
+     "retained": 0.9115,
+     "withheld_unmet": 0.0
+    }
+   },
+   "3": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.34535809018567637,
+     "first_served_episodes": 1885,
+     "met": 0.9244215938303342,
+     "retained": 1.0075,
+     "withheld_unmet": 0.0895
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.185,
+     "first_served_episodes": 2000,
+     "met": 0.9212328767123288,
+     "retained": 0.383,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.5785,
+     "first_choice_A": 0.3489473684210526,
+     "first_served_episodes": 1900,
+     "met": 0.8450520833333334,
+     "retained": 0.554,
+     "withheld_unmet": 0.0
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.6496,
+     "first_served_episodes": 1875,
+     "met": 0.9405531144998708,
+     "retained": 0.97,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.896,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.9025,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.32576985413290116,
+     "first_served_episodes": 1851,
+     "met": 0.9452018877818563,
+     "retained": 0.9985,
+     "withheld_unmet": 0.0
+    }
+   },
+   "4": {
+    "forged_records": {
+     "excess": 0.3385,
+     "first_choice_A": 0.6715,
+     "first_served_episodes": 2000,
+     "met": 0.9329461457233369,
+     "retained": 0.6715,
+     "withheld_unmet": 0.08
+    },
+    "large_claims": {
+     "excess": 0.0555,
+     "first_choice_A": 0.813,
+     "first_served_episodes": 2000,
+     "met": 0.9283872815812089,
+     "retained": 0.341,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.734,
+     "first_choice_A": 0.672,
+     "first_served_episodes": 2000,
+     "met": 0.8457583547557841,
+     "retained": 0.3665,
+     "withheld_unmet": 0.0
+    },
+    "new_claimant": {
+     "excess": 0.354,
+     "first_choice_A": 0.706,
+     "first_served_episodes": 2000,
+     "met": 0.9422438027089189,
+     "retained": 0.5635,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.899,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9055,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.31,
+     "first_choice_A": 0.7005,
+     "first_served_episodes": 2000,
+     "met": 0.9454022988505747,
+     "retained": 0.635,
+     "withheld_unmet": 0.0
+    }
+   },
+   "5": {
+    "forged_records": {
+     "excess": 0.1025,
+     "first_choice_A": 0.656084656084656,
+     "first_served_episodes": 1890,
+     "met": 0.9157274590163934,
+     "retained": 0.8755,
+     "withheld_unmet": 0.0975
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.8205,
+     "first_served_episodes": 2000,
+     "met": 0.9340879782203754,
+     "retained": 0.4035,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.6165,
+     "first_choice_A": 0.6704361873990307,
+     "first_served_episodes": 1857,
+     "met": 0.8402413431269675,
+     "retained": 0.531,
+     "withheld_unmet": 0.0
+    },
+    "new_claimant": {
+     "excess": 0.4955,
+     "first_choice_A": 0.6225,
+     "first_served_episodes": 2000,
+     "met": 0.943515704154002,
+     "retained": 0.374,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9135,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8955,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.103,
+     "first_choice_A": 0.6787257019438445,
+     "first_served_episodes": 1852,
+     "met": 0.945054945054945,
+     "retained": 0.876,
+     "withheld_unmet": 0.0
+    }
+   },
+   "6": {
+    "forged_records": {
+     "excess": 0.1605,
+     "first_choice_A": 0.6865,
+     "first_served_episodes": 2000,
+     "met": 0.9221479958890031,
+     "retained": 0.816,
+     "withheld_unmet": 0.089
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.814,
+     "first_served_episodes": 2000,
+     "met": 0.9304607508532423,
+     "retained": 0.3815,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.614,
+     "first_choice_A": 0.681,
+     "first_served_episodes": 2000,
+     "met": 0.8784731238639314,
+     "retained": 0.4505,
+     "withheld_unmet": 0.0
+    },
+    "new_claimant": {
+     "excess": 0.2625,
+     "first_choice_A": 0.376,
+     "first_served_episodes": 2000,
+     "met": 0.9422187981510015,
+     "retained": 0.661,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9085,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8965,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.16,
+     "first_choice_A": 0.7,
+     "first_served_episodes": 2000,
+     "met": 0.9435336976320583,
+     "retained": 0.801,
+     "withheld_unmet": 0.0
+    }
+   },
+   "7": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6523835029459025,
+     "first_served_episodes": 1867,
+     "met": 0.9313417190775681,
+     "retained": 1.045,
+     "withheld_unmet": 0.076
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.814,
+     "first_served_episodes": 2000,
+     "met": 0.9324324324324325,
+     "retained": 0.379,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.59,
+     "first_choice_A": 0.6600748262960984,
+     "first_served_episodes": 1871,
+     "met": 0.8452289588129956,
+     "retained": 0.531,
+     "withheld_unmet": 0.0
+    },
+    "new_claimant": {
+     "excess": 0.3625,
+     "first_choice_A": 0.666131621187801,
+     "first_served_episodes": 1869,
+     "met": 0.9481578947368421,
+     "retained": 0.6055,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.899,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8985,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.6693290734824281,
+     "first_served_episodes": 1878,
+     "met": 0.9461000259134491,
+     "retained": 0.9765,
+     "withheld_unmet": 0.0
+    }
+   },
+   "8": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.3403001071811361,
+     "first_served_episodes": 1866,
+     "met": 0.9205161290322581,
+     "retained": 1.018,
+     "withheld_unmet": 0.1055
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.189,
+     "first_served_episodes": 2000,
+     "met": 0.9248859749144812,
+     "retained": 0.39,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.377,
+     "first_choice_A": 0.3421470121628768,
+     "first_served_episodes": 1891,
+     "met": 0.934926283680732,
+     "retained": 0.558,
+     "withheld_unmet": 0.0
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.609183128670582,
+     "first_served_episodes": 1873,
+     "met": 0.9504950495049505,
+     "retained": 0.937,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8925,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.888,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.339046598821639,
+     "first_served_episodes": 1867,
+     "met": 0.9452592980618124,
+     "retained": 0.9865,
+     "withheld_unmet": 0.0
+    }
+   },
+   "9": {
+    "forged_records": {
+     "excess": 0.116,
+     "first_choice_A": 0.3076104310803619,
+     "first_served_episodes": 1879,
+     "met": 0.9242229642948883,
+     "retained": 0.867,
+     "withheld_unmet": 0.093
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.1895,
+     "first_served_episodes": 2000,
+     "met": 0.9330095700614198,
+     "retained": 0.3965,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.615,
+     "first_choice_A": 0.34168443496801704,
+     "first_served_episodes": 1876,
+     "met": 0.8388419164745068,
+     "retained": 0.5015,
+     "withheld_unmet": 0.0
+    },
+    "new_claimant": {
+     "excess": 0.1695,
+     "first_choice_A": 0.318,
+     "first_served_episodes": 2000,
+     "met": 0.9459459459459459,
+     "retained": 0.788,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8965,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.905,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0985,
+     "first_choice_A": 0.3343965975544923,
+     "first_served_episodes": 1881,
+     "met": 0.9448595722751868,
+     "retained": 0.845,
+     "withheld_unmet": 0.0
+    }
+   }
+  },
+  "access_identity_only": {
+   "0": {
+    "forged_records": {
+     "excess": 0.8535,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.4872455552692605,
+     "retained": 1.0,
+     "withheld_unmet": 1.524
+    },
+    "large_claims": {
+     "excess": 0.9595,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.4975110226141374,
+     "retained": 1.0,
+     "withheld_unmet": 1.0
+    },
+    "missing_records": {
+     "excess": 0.871,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.47882231404958675,
+     "retained": 1.0,
+     "withheld_unmet": 1.541
+    },
+    "new_claimant": {
+     "excess": 1.6735,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5189615678289641,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.861,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.4797761383871788,
+     "retained": 1.0,
+     "withheld_unmet": 1.532
+    }
+   },
+   "1": {
+    "forged_records": {
+     "excess": 0.87,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.4795336787564767,
+     "retained": 1.0,
+     "withheld_unmet": 1.577
+    },
+    "large_claims": {
+     "excess": 0.9745,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.493814872742784,
+     "retained": 1.0,
+     "withheld_unmet": 1.0
+    },
+    "missing_records": {
+     "excess": 0.859,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.4863373620599054,
+     "retained": 1.0,
+     "withheld_unmet": 1.5585
+    },
+    "new_claimant": {
+     "excess": 0.8715,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.48366013071895425,
+     "retained": 1.0,
+     "withheld_unmet": 1.494
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.8595,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.48514344262295084,
+     "retained": 1.0,
+     "withheld_unmet": 1.607
+    }
+   },
+   "2": {
+    "forged_records": {
+     "excess": 0.8645,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4908994988129781,
+     "retained": 1.0,
+     "withheld_unmet": 1.505
+    },
+    "large_claims": {
+     "excess": 0.9775,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4934934934934935,
+     "retained": 1.0,
+     "withheld_unmet": 1.0
+    },
+    "missing_records": {
+     "excess": 0.856,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4919772256728778,
+     "retained": 1.0,
+     "withheld_unmet": 1.519
+    },
+    "new_claimant": {
+     "excess": 1.729,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5034642032332564,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.8545,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4843106995884774,
+     "retained": 1.0,
+     "withheld_unmet": 1.527
+    }
+   },
+   "3": {
+    "forged_records": {
+     "excess": 0.24,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.34116129032258063,
+     "retained": 2.0,
+     "withheld_unmet": 2.4915
+    },
+    "large_claims": {
+     "excess": 0.1955,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.45663666238034006,
+     "retained": 2.0,
+     "withheld_unmet": 2.0
+    },
+    "missing_records": {
+     "excess": 0.238,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.3530194200585262,
+     "retained": 2.0,
+     "withheld_unmet": 2.43
+    },
+    "new_claimant": {
+     "excess": 0.8745,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4723735408560311,
+     "retained": 1.0,
+     "withheld_unmet": 1.658
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.2115,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.3502292409577178,
+     "retained": 2.0,
+     "withheld_unmet": 2.499
+    }
+   },
+   "4": {
+    "forged_records": {
+     "excess": 0.225,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.352667011910927,
+     "retained": 2.0,
+     "withheld_unmet": 2.4765
+    },
+    "large_claims": {
+     "excess": 0.205,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.45461043602573264,
+     "retained": 2.0,
+     "withheld_unmet": 2.0
+    },
+    "missing_records": {
+     "excess": 0.2325,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.34585492227979275,
+     "retained": 2.0,
+     "withheld_unmet": 2.487
+    },
+    "new_claimant": {
+     "excess": 0.8375,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4884437596302003,
+     "retained": 1.0,
+     "withheld_unmet": 1.54
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.222,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.35142932074482036,
+     "retained": 2.0,
+     "withheld_unmet": 2.4525
+    }
+   },
+   "5": {
+    "forged_records": {
+     "excess": 0.4465,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.6973446764630059,
+     "retained": 1.0,
+     "withheld_unmet": 1.013
+    },
+    "large_claims": {
+     "excess": 0.2085,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.7210103329506314,
+     "retained": 1.0,
+     "withheld_unmet": 0.792
+    },
+    "missing_records": {
+     "excess": 0.449,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.6988326848249027,
+     "retained": 1.0,
+     "withheld_unmet": 1.001
+    },
+    "new_claimant": {
+     "excess": 1.6875,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5178663904712584,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.464,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.6977893368010403,
+     "retained": 1.0,
+     "withheld_unmet": 1.005
+    }
+   },
+   "6": {
+    "forged_records": {
+     "excess": 0.4595,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.6977835723598436,
+     "retained": 1.0,
+     "withheld_unmet": 1.3085
+    },
+    "large_claims": {
+     "excess": 0.1955,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.7163221667854597,
+     "retained": 1.0,
+     "withheld_unmet": 0.7975
+    },
+    "missing_records": {
+     "excess": 0.4595,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.70717802539518,
+     "retained": 1.0,
+     "withheld_unmet": 1.3325
+    },
+    "new_claimant": {
+     "excess": 0.8795,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.47758486654573723,
+     "retained": 1.0,
+     "withheld_unmet": 1.54
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.4405,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.6943376889572124,
+     "retained": 1.0,
+     "withheld_unmet": 1.335
+    }
+   },
+   "7": {
+    "forged_records": {
+     "excess": 0.8935,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4829770387965162,
+     "retained": 1.0,
+     "withheld_unmet": 1.5745
+    },
+    "large_claims": {
+     "excess": 0.9855,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4931291153736044,
+     "retained": 1.0,
+     "withheld_unmet": 1.0
+    },
+    "missing_records": {
+     "excess": 0.878,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.47860824742268043,
+     "retained": 1.0,
+     "withheld_unmet": 1.6055
+    },
+    "new_claimant": {
+     "excess": 1.6955,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5205443601151531,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.851,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4910071942446043,
+     "retained": 1.0,
+     "withheld_unmet": 1.5985
+    }
+   },
+   "8": {
+    "forged_records": {
+     "excess": 0.861,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4945198329853862,
+     "retained": 1.0,
+     "withheld_unmet": 1.488
+    },
+    "large_claims": {
+     "excess": 0.959,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4954993570510073,
+     "retained": 1.0,
+     "withheld_unmet": 1.0
+    },
+    "missing_records": {
+     "excess": 0.8545,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.48882035466461066,
+     "retained": 1.0,
+     "withheld_unmet": 1.546
+    },
+    "new_claimant": {
+     "excess": 1.668,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5210339584389255,
+     "retained": 0.0,
+     "withheld_unmet": 0.7685
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.8755,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.47984496124031006,
+     "retained": 1.0,
+     "withheld_unmet": 1.541
+    }
+   },
+   "9": {
+    "forged_records": {
+     "excess": 0.2215,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.3529104672409293,
+     "retained": 2.0,
+     "withheld_unmet": 2.4495
+    },
+    "large_claims": {
+     "excess": 0.216,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.45538768529076395,
+     "retained": 2.0,
+     "withheld_unmet": 2.0
+    },
+    "missing_records": {
+     "excess": 0.2305,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.34594454521896867,
+     "retained": 2.0,
+     "withheld_unmet": 2.4555
+    },
+    "new_claimant": {
+     "excess": 0.841,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.4959349593495935,
+     "retained": 1.0,
+     "withheld_unmet": 1.526
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.227,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.34318766066838047,
+     "retained": 2.0,
+     "withheld_unmet": 2.493
+    }
+   }
+  },
+  "proxy": {
+   "0": {
+    "forged_records": {
+     "excess": 1.1275,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8036354326676908,
+     "retained": 0.0,
+     "withheld_unmet": 0.2615
+    },
+    "large_claims": {
+     "excess": 0.49,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8840250142126208,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 1.5105,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.6244069583552978,
+     "retained": 0.0,
+     "withheld_unmet": 0.2425
+    },
+    "new_claimant": {
+     "excess": 1.6735,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5189615678289641,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.91,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9075,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "train": {
+     "excess": 1.181,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.7987421383647799,
+     "retained": 0.0,
+     "withheld_unmet": 0.244
+    }
+   },
+   "1": {
+    "forged_records": {
+     "excess": 1.1605,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.7949510561566203,
+     "retained": 0.0,
+     "withheld_unmet": 0.9335
+    },
+    "large_claims": {
+     "excess": 0.913,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.7717842323651453,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 1.1295,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8215505913272011,
+     "retained": 0.0,
+     "withheld_unmet": 0.9335
+    },
+    "new_claimant": {
+     "excess": 1.7165,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.5156657963446475,
+     "retained": 0.0,
+     "withheld_unmet": 0.938
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.891,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8945,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "train": {
+     "excess": 1.2255,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.7601342628453396,
+     "retained": 0.0,
+     "withheld_unmet": 0.9305
+    }
+   },
+   "2": {
+    "forged_records": {
+     "excess": 1.116,
+     "first_choice_A": 0.0615,
+     "first_served_episodes": 2000,
+     "met": 0.8211548288196219,
+     "retained": 0.0,
+     "withheld_unmet": 0.941
+    },
+    "large_claims": {
+     "excess": 0.4045,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.9200229324924752,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 1.155,
+     "first_choice_A": 0.056,
+     "first_served_episodes": 2000,
+     "met": 0.8141109086175475,
+     "retained": 0.0,
+     "withheld_unmet": 0.935
+    },
+    "new_claimant": {
+     "excess": 1.144,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8036951501154734,
+     "retained": 0.0,
+     "withheld_unmet": 0.775
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.892,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.9095,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "train": {
+     "excess": 1.0925,
+     "first_choice_A": 0.0585,
+     "first_served_episodes": 2000,
+     "met": 0.8187867929357563,
+     "retained": 0.0,
+     "withheld_unmet": 0.932
+    }
+   },
+   "3": {
+    "forged_records": {
+     "excess": 1.198,
+     "first_choice_A": 0.703,
+     "first_served_episodes": 2000,
+     "met": 0.770056208482371,
+     "retained": 0.0,
+     "withheld_unmet": 0.4465
+    },
+    "large_claims": {
+     "excess": 0.452,
+     "first_choice_A": 0.817,
+     "first_served_episodes": 2000,
+     "met": 0.8950829045168668,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 1.512,
+     "first_choice_A": 0.7045,
+     "first_served_episodes": 2000,
+     "met": 0.6208149493900856,
+     "retained": 0.0,
+     "withheld_unmet": 0.228
+    },
+    "new_claimant": {
+     "excess": 1.5975,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.5633729953440249,
+     "retained": 0.0,
+     "withheld_unmet": 0.7845
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.896,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.9025,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "train": {
+     "excess": 1.1615,
+     "first_choice_A": 0.706,
+     "first_served_episodes": 2000,
+     "met": 0.7905839979418575,
+     "retained": 0.0,
+     "withheld_unmet": 0.39
+    }
+   },
+   "4": {
+    "forged_records": {
+     "excess": 1.1285,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8101201124456938,
+     "retained": 0.0,
+     "withheld_unmet": 0.9455
+    },
+    "large_claims": {
+     "excess": 0.922,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.7712765957446809,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 1.126,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8141158221302999,
+     "retained": 0.0,
+     "withheld_unmet": 0.934
+    },
+    "new_claimant": {
+     "excess": 1.1785,
+     "first_choice_A": 0.945,
+     "first_served_episodes": 2000,
+     "met": 0.778175313059034,
+     "retained": 0.0,
+     "withheld_unmet": 0.939
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.899,
+     "retained": 0.0,
+     "withheld_unmet": 3.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.9055,
+     "retained": 0.0,
+     "withheld_unmet": 3.0
+    },
+    "train": {
+     "excess": 1.169,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.7702215352910871,
+     "retained": 0.0,
+     "withheld_unmet": 0.9415
+    }
+   },
+   "5": {
+    "forged_records": {
+     "excess": 1.583,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.5760332726800104,
+     "retained": 0.0,
+     "withheld_unmet": 0.0505
+    },
+    "large_claims": {
+     "excess": 0.99,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.7511104742799828,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 1.666,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.5350807519195129,
+     "retained": 0.0,
+     "withheld_unmet": 0.014
+    },
+    "new_claimant": {
+     "excess": 1.385,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.6745209735888141,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9135,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8955,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "train": {
+     "excess": 1.6195,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.5715770329955833,
+     "retained": 0.0,
+     "withheld_unmet": 0.051
+    }
+   },
+   "6": {
+    "forged_records": {
+     "excess": 1.704,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5122328096832346,
+     "retained": 0.0,
+     "withheld_unmet": 0.812
+    },
+    "large_claims": {
+     "excess": 1.855,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5013507749182425,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 1.724,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.525794684731631,
+     "retained": 0.0,
+     "withheld_unmet": 0.8075
+    },
+    "new_claimant": {
+     "excess": 1.12,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8187516322799686,
+     "retained": 0.0,
+     "withheld_unmet": 0.9335
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.9085,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8965,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "train": {
+     "excess": 1.7295,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5035092279698467,
+     "retained": 0.0,
+     "withheld_unmet": 0.8205
+    }
+   },
+   "7": {
+    "forged_records": {
+     "excess": 1.014,
+     "first_choice_A": 0.1695,
+     "first_served_episodes": 2000,
+     "met": 0.8812370062370062,
+     "retained": 0.0,
+     "withheld_unmet": 0.429
+    },
+    "large_claims": {
+     "excess": 0.407,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.9178571428571428,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.949,
+     "first_choice_A": 0.1835,
+     "first_served_episodes": 2000,
+     "met": 0.9068867681196802,
+     "retained": 0.0,
+     "withheld_unmet": 0.4345
+    },
+    "new_claimant": {
+     "excess": 0.9,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9369275058885108,
+     "retained": 0.0,
+     "withheld_unmet": 0.7875
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.899,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8985,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "train": {
+     "excess": 0.981,
+     "first_choice_A": 0.18,
+     "first_served_episodes": 2000,
+     "met": 0.8937048503611971,
+     "retained": 0.0,
+     "withheld_unmet": 0.375
+    }
+   },
+   "8": {
+    "forged_records": {
+     "excess": 1.0585,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.849820604818042,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "large_claims": {
+     "excess": 0.398,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.9113132461625923,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 1.04,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8463495293818367,
+     "retained": 0.0,
+     "withheld_unmet": 0.136
+    },
+    "new_claimant": {
+     "excess": 1.218,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.749113025848961,
+     "retained": 0.0,
+     "withheld_unmet": 0.6525
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8925,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.888,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "train": {
+     "excess": 1.041,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8604651162790697,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    }
+   },
+   "9": {
+    "forged_records": {
+     "excess": 1.2615,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.7430537853683405,
+     "retained": 0.0,
+     "withheld_unmet": 0.6815
+    },
+    "large_claims": {
+     "excess": 1.139,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.7096266628522386,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 1.5565,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5759526261585994,
+     "retained": 0.0,
+     "withheld_unmet": 0.1405
+    },
+    "new_claimant": {
+     "excess": 1.013,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8641722193746797,
+     "retained": 0.0,
+     "withheld_unmet": 0.9415
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.8965,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.905,
+     "retained": 0.0,
+     "withheld_unmet": 2.0
+    },
+    "train": {
+     "excess": 1.2945,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.7187741437033222,
+     "retained": 0.0,
+     "withheld_unmet": 0.608
+    }
+   }
+  },
+  "record_rule": {
+   "0": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.685928303905832,
+     "first_served_episodes": 1869,
+     "met": 0.9211142931528248,
+     "retained": 1.0325,
+     "withheld_unmet": 0.1065
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.8225,
+     "first_served_episodes": 2000,
+     "met": 0.9287846481876333,
+     "retained": 0.382,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6550429184549357,
+     "first_served_episodes": 1864,
+     "met": 0.9239811912225705,
+     "retained": 1.038,
+     "withheld_unmet": 0.113
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.6766595289079229,
+     "first_served_episodes": 1868,
+     "met": 0.9436475409836066,
+     "retained": 0.954,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.91,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9075,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.6693548387096774,
+     "first_served_episodes": 1860,
+     "met": 0.9448615066010873,
+     "retained": 0.9745,
+     "withheld_unmet": 0.0
+    }
+   },
+   "1": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6733721545791425,
+     "first_served_episodes": 1889,
+     "met": 0.9219226856561547,
+     "retained": 0.9885,
+     "withheld_unmet": 0.105
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.825,
+     "first_served_episodes": 2000,
+     "met": 0.9321575878253449,
+     "retained": 0.372,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6845459373340415,
+     "first_served_episodes": 1883,
+     "met": 0.920492433957425,
+     "retained": 0.995,
+     "withheld_unmet": 0.1065
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.6703821656050956,
+     "first_served_episodes": 1884,
+     "met": 0.94002574002574,
+     "retained": 0.9695,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.891,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8945,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.6712839637719765,
+     "first_served_episodes": 1877,
+     "met": 0.9439061703212647,
+     "retained": 0.9465,
+     "withheld_unmet": 0.0
+    }
+   },
+   "2": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6831735889243876,
+     "first_served_episodes": 1878,
+     "met": 0.9242148974824812,
+     "retained": 1.022,
+     "withheld_unmet": 0.1285
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.81,
+     "first_served_episodes": 2000,
+     "met": 0.9326964209325538,
+     "retained": 0.3785,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6645367412140575,
+     "first_served_episodes": 1878,
+     "met": 0.9321290322580645,
+     "retained": 1.018,
+     "withheld_unmet": 0.099
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.6630785791173305,
+     "first_served_episodes": 1858,
+     "met": 0.9495710943592409,
+     "retained": 0.9725,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.892,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9095,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.679915209326974,
+     "first_served_episodes": 1887,
+     "met": 0.9421529175050302,
+     "retained": 0.9115,
+     "withheld_unmet": 0.0
+    }
+   },
+   "3": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6753315649867374,
+     "first_served_episodes": 1885,
+     "met": 0.9244215938303342,
+     "retained": 1.0075,
+     "withheld_unmet": 0.0895
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.81,
+     "first_served_episodes": 2000,
+     "met": 0.9212328767123288,
+     "retained": 0.383,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6442562202223399,
+     "first_served_episodes": 1889,
+     "met": 0.927235459902639,
+     "retained": 1.0025,
+     "withheld_unmet": 0.106
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.6496,
+     "first_served_episodes": 1875,
+     "met": 0.9405531144998708,
+     "retained": 0.97,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.896,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9025,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.6704484062668827,
+     "first_served_episodes": 1851,
+     "met": 0.9452018877818563,
+     "retained": 0.9985,
+     "withheld_unmet": 0.0
+    }
+   },
+   "4": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6619047619047619,
+     "first_served_episodes": 1890,
+     "met": 0.9232756393696719,
+     "retained": 1.0235,
+     "withheld_unmet": 0.1185
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.8035,
+     "first_served_episodes": 2000,
+     "met": 0.9290331848872289,
+     "retained": 0.4075,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6633032395114179,
+     "first_served_episodes": 1883,
+     "met": 0.9224865694551037,
+     "retained": 0.9955,
+     "withheld_unmet": 0.098
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.6675433982114677,
+     "first_served_episodes": 1901,
+     "met": 0.9434250764525994,
+     "retained": 0.9385,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.899,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9055,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.6657768286171917,
+     "first_served_episodes": 1873,
+     "met": 0.9441413354117952,
+     "retained": 0.971,
+     "withheld_unmet": 0.0
+    }
+   },
+   "5": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6647214854111406,
+     "first_served_episodes": 1885,
+     "met": 0.9122583926754833,
+     "retained": 0.984,
+     "withheld_unmet": 0.1195
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.8205,
+     "first_served_episodes": 2000,
+     "met": 0.9340879782203754,
+     "retained": 0.4035,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.688805570433851,
+     "first_served_episodes": 1867,
+     "met": 0.9197626418988648,
+     "retained": 1.0135,
+     "withheld_unmet": 0.1155
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.6748531767218366,
+     "first_served_episodes": 1873,
+     "met": 0.9399846114388305,
+     "retained": 0.943,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9135,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8955,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.6713513513513514,
+     "first_served_episodes": 1850,
+     "met": 0.9500390320062451,
+     "retained": 0.9755,
+     "withheld_unmet": 0.0
+    }
+   },
+   "6": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6593110871905274,
+     "first_served_episodes": 1858,
+     "met": 0.9193967758710349,
+     "retained": 1.0275,
+     "withheld_unmet": 0.111
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.814,
+     "first_served_episodes": 2000,
+     "met": 0.9304607508532423,
+     "retained": 0.3815,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6412172984516817,
+     "first_served_episodes": 1873,
+     "met": 0.9284971398855955,
+     "retained": 1.0265,
+     "withheld_unmet": 0.107
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.6572494669509595,
+     "first_served_episodes": 1876,
+     "met": 0.9438461538461539,
+     "retained": 0.9495,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.9085,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8965,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.6840128755364807,
+     "first_served_episodes": 1864,
+     "met": 0.9451771399017326,
+     "retained": 0.973,
+     "withheld_unmet": 0.0
+    }
+   },
+   "7": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6523835029459025,
+     "first_served_episodes": 1867,
+     "met": 0.9313417190775681,
+     "retained": 1.045,
+     "withheld_unmet": 0.076
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.814,
+     "first_served_episodes": 2000,
+     "met": 0.9324324324324325,
+     "retained": 0.379,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6927194860813705,
+     "first_served_episodes": 1868,
+     "met": 0.9223553934340802,
+     "retained": 1.038,
+     "withheld_unmet": 0.1135
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.660752688172043,
+     "first_served_episodes": 1860,
+     "met": 0.941358024691358,
+     "retained": 0.9585,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.899,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8985,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.6693290734824281,
+     "first_served_episodes": 1878,
+     "met": 0.9461000259134491,
+     "retained": 0.9765,
+     "withheld_unmet": 0.0
+    }
+   },
+   "8": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6784565916398714,
+     "first_served_episodes": 1866,
+     "met": 0.9205161290322581,
+     "retained": 1.018,
+     "withheld_unmet": 0.1055
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.823,
+     "first_served_episodes": 2000,
+     "met": 0.9248859749144812,
+     "retained": 0.39,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6616862326574173,
+     "first_served_episodes": 1874,
+     "met": 0.9269677419354839,
+     "retained": 1.0085,
+     "withheld_unmet": 0.103
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.6935397757608115,
+     "first_served_episodes": 1873,
+     "met": 0.9504950495049505,
+     "retained": 0.937,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8925,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.888,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.6946973754686663,
+     "first_served_episodes": 1867,
+     "met": 0.9452592980618124,
+     "retained": 0.9865,
+     "withheld_unmet": 0.0
+    }
+   },
+   "9": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6425146510388918,
+     "first_served_episodes": 1877,
+     "met": 0.9251282051282051,
+     "retained": 0.997,
+     "withheld_unmet": 0.105
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": 0.805,
+     "first_served_episodes": 2000,
+     "met": 0.9330095700614198,
+     "retained": 0.3965,
+     "withheld_unmet": 0.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": 0.6536611437733832,
+     "first_served_episodes": 1871,
+     "met": 0.9261762412269301,
+     "retained": 1.0245,
+     "withheld_unmet": 0.104
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": 0.6404494382022472,
+     "first_served_episodes": 1869,
+     "met": 0.9494193548387097,
+     "retained": 0.9805,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.8965,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": 1.0,
+     "first_served_episodes": 2000,
+     "met": 0.905,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": 0.6590909090909091,
+     "first_served_episodes": 1892,
+     "met": 0.9420066717988196,
+     "retained": 0.953,
+     "withheld_unmet": 0.0
+    }
+   }
+  },
+  "self": {
+   "0": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.782
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 4.0,
+     "withheld_unmet": 4.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.75
+    },
+    "new_claimant": {
+     "excess": 1.6735,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5189615678289641,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.76
+    }
+   },
+   "1": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.718
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 4.0,
+     "withheld_unmet": 4.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.754
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.75
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.742
+    }
+   },
+   "2": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.778
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 4.0,
+     "withheld_unmet": 4.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.724
+    },
+    "new_claimant": {
+     "excess": 1.729,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5034642032332564,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.744
+    }
+   },
+   "3": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.756
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 4.0,
+     "withheld_unmet": 4.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.724
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.746
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.734
+    }
+   },
+   "4": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.718
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 4.0,
+     "withheld_unmet": 4.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.748
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.786
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.756
+    }
+   },
+   "5": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.75
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 4.0,
+     "withheld_unmet": 4.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.762
+    },
+    "new_claimant": {
+     "excess": 1.6875,
+     "first_choice_A": 0.0,
+     "first_served_episodes": 2000,
+     "met": 0.5178663904712584,
+     "retained": 0.0,
+     "withheld_unmet": 0.0
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.754
+    }
+   },
+   "6": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.76
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 4.0,
+     "withheld_unmet": 4.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.764
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.728
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.76
+    }
+   },
+   "7": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.73
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 4.0,
+     "withheld_unmet": 4.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.752
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.716
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.758
+    }
+   },
+   "8": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.732
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 4.0,
+     "withheld_unmet": 4.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.748
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.732
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.77
+    }
+   },
+   "9": {
+    "forged_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.744
+    },
+    "large_claims": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 4.0,
+     "withheld_unmet": 4.0
+    },
+    "missing_records": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.756
+    },
+    "new_claimant": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.758
+    },
+    "scarce_symmetric": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "scarce_symmetric_swapped": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 1.0,
+     "withheld_unmet": 4.0
+    },
+    "train": {
+     "excess": 0.0,
+     "first_choice_A": null,
+     "first_served_episodes": 0,
+     "met": 0.0,
+     "retained": 3.0,
+     "withheld_unmet": 3.74
+    }
+   }
+  }
+ }
+}

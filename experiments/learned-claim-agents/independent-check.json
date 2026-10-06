@@ -1,0 +1,411 @@
+{
+ "status": "independent_check_complete",
+ "checked_files_sha256": {
+  "PROTOCOL_md": "7f6c8f0f3776322c939e96c6b2f5ff477e7765e1f96c4e2d9953cbce6e8070d7",
+  "results_json": "616b08a575e70bb3cc2b2e8f9605f38226c471693b02cee086d49c873a632c52"
+ },
+ "step1_record_rule_reconstruction": {
+  "method": "Environment, metrics and record_rule written from PROTOCOL.md before reading model.py/check.py (independent_check.py); own RNG (numpy default_rng, seeds 900000+test index), 20000 episodes per test; compared with results.json record_rule averaged over 10 seeds x 2000 episodes. approx_se_diff combines two 20000-episode SEs.",
+  "agreement": "All metrics agree within sampling error on all seven tests: excess, withheld_unmet (where zero), retained in scarce tests and first_choice_A in scarce tests match exactly; largest |z| is 1.8 (train first_choice_A), others below 1.5.",
+  "comparisons": {
+   "train": {
+    "met": {
+     "mine": 0.9464419186061497,
+     "results_json": 0.9448845985303093,
+     "diff": 0.0015573200758404182,
+     "approx_se_diff": 0.001677746659360334,
+     "z": 0.9282212348044071
+    },
+    "excess": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "retained": {
+     "mine": 0.9612,
+     "results_json": 0.9666499999999999,
+     "diff": -0.005449999999999844,
+     "approx_se_diff": 0.009224625232795871,
+     "z": -0.5908099096127741
+    },
+    "withheld_unmet": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "first_choice_A": {
+     "mine": 0.6647152740819585,
+     "results_json": 0.6735260831622538,
+     "diff": -0.008810809080295301,
+     "approx_se_diff": 0.004870660718332271,
+     "z": -1.8089556201549897
+    },
+    "met_alt_mean_of_ratios": 0.9608568387440127,
+    "first_served_fraction": {
+     "mine": 0.9395,
+     "results_json": 0.9349500000000001
+    }
+   },
+   "new_claimant": {
+    "met": {
+     "mine": 0.9440874702041663,
+     "results_json": 0.9442325760641062,
+     "diff": -0.0001451058599398758,
+     "approx_se_diff": 0.001702373714732183,
+     "z": -0.08523737102149971
+    },
+    "excess": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "retained": {
+     "mine": 0.9704,
+     "results_json": 0.9572999999999998,
+     "diff": 0.013100000000000223,
+     "approx_se_diff": 0.009279907857004385,
+     "z": 1.4116519476120089
+    },
+    "withheld_unmet": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "first_choice_A": {
+     "mine": 0.6708246708246708,
+     "results_json": 0.6654108217649715,
+     "diff": 0.005413849059699327,
+     "approx_se_diff": 0.004852213306020522,
+     "z": 1.1157483643561052
+    },
+    "met_alt_mean_of_ratios": 0.9594328055866518,
+    "first_served_fraction": {
+     "mine": 0.93795,
+     "results_json": 0.9368500000000001
+    }
+   },
+   "large_claims": {
+    "met": {
+     "mine": 0.9296838198558276,
+     "results_json": 0.9298781425027041,
+     "diff": -0.00019432264687646583,
+     "approx_se_diff": 0.0014092880810739755,
+     "z": -0.13788710022182155
+    },
+    "excess": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "retained": {
+     "mine": 0.3805,
+     "results_json": 0.38734999999999997,
+     "diff": -0.006849999999999967,
+     "approx_se_diff": 0.005818390471890329,
+     "z": -1.1773015291932583
+    },
+    "withheld_unmet": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "first_choice_A": {
+     "mine": 0.81775,
+     "results_json": 0.8147499999999999,
+     "diff": 0.0030000000000001137,
+     "approx_se_diff": 0.0038606008550416213,
+     "z": 0.7770811105950943
+    },
+    "met_alt_mean_of_ratios": 0.9365125,
+    "first_served_fraction": {
+     "mine": 1.0,
+     "results_json": 1.0
+    }
+   },
+   "missing_records": {
+    "met": {
+     "mine": 0.924100580270793,
+     "results_json": 0.9250083845176758,
+     "diff": -0.0009078042468827485,
+     "approx_se_diff": 0.0019233244658310106,
+     "z": -0.47199745181347424
+    },
+    "excess": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "retained": {
+     "mine": 1.01425,
+     "results_json": 1.0159999999999998,
+     "diff": -0.0017499999999996962,
+     "approx_se_diff": 0.009187976637744287,
+     "z": -0.19046630928627759
+    },
+    "withheld_unmet": {
+     "mine": 0.103,
+     "results_json": 0.10655,
+     "diff": -0.0035500000000000115,
+     "approx_se_diff": 0.0047634267614528915,
+     "z": -0.745261799494368
+    },
+    "first_choice_A": {
+     "mine": 0.6571992952858897,
+     "results_json": 0.6649774788134495,
+     "diff": -0.007778183527559768,
+     "approx_se_diff": 0.004904734537381246,
+     "z": -1.585852092152723
+    },
+    "met_alt_mean_of_ratios": 0.9323314291815706,
+    "first_served_fraction": {
+     "mine": 0.93655,
+     "results_json": 0.9375
+    }
+   },
+   "forged_records": {
+    "met": {
+     "mine": 0.9234017353690878,
+     "results_json": 0.9223590331276016,
+     "diff": 0.0010427022414861709,
+     "approx_se_diff": 0.001913485457390865,
+     "z": 0.5449230029205179
+    },
+    "excess": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "retained": {
+     "mine": 1.00745,
+     "results_json": 1.01455,
+     "diff": -0.007100000000000106,
+     "approx_se_diff": 0.009118859985237822,
+     "z": -0.7786060989525038
+    },
+    "withheld_unmet": {
+     "mine": 0.10825,
+     "results_json": 0.10650000000000001,
+     "diff": 0.0017499999999999877,
+     "approx_se_diff": 0.004926906480782187,
+     "z": 0.3551924532819955
+    },
+    "first_choice_A": {
+     "mine": 0.6697042366107114,
+     "results_json": 0.6677097692527194,
+     "diff": 0.0019944673579920247,
+     "approx_se_diff": 0.004855626919077809,
+     "z": 0.4107538308093115
+    },
+    "met_alt_mean_of_ratios": 0.9301447730704324,
+    "first_served_fraction": {
+     "mine": 0.93825,
+     "results_json": 0.9382
+    }
+   },
+   "scarce_symmetric": {
+    "met": {
+     "mine": 0.9023,
+     "results_json": 0.8997999999999999,
+     "diff": 0.0025000000000000577,
+     "approx_se_diff": 0.002969160116192756,
+     "z": 0.8419889470985199
+    },
+    "excess": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "retained": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "withheld_unmet": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "first_choice_A": {
+     "mine": 1.0,
+     "results_json": 1.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "met_alt_mean_of_ratios": 0.9023,
+    "first_served_fraction": {
+     "mine": 1.0,
+     "results_json": 1.0
+    }
+   },
+   "scarce_symmetric_swapped": {
+    "met": {
+     "mine": 0.9023,
+     "results_json": 0.9003,
+     "diff": 0.0020000000000000018,
+     "approx_se_diff": 0.002969160116192756,
+     "z": 0.673591157678801
+    },
+    "excess": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "retained": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "withheld_unmet": {
+     "mine": 0.0,
+     "results_json": 0.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "first_choice_A": {
+     "mine": 1.0,
+     "results_json": 1.0,
+     "diff": 0.0,
+     "approx_se_diff": 0.0,
+     "z": 0.0
+    },
+    "met_alt_mean_of_ratios": 0.9023,
+    "first_served_fraction": {
+     "mine": 1.0,
+     "results_json": 1.0
+    }
+   }
+  }
+ },
+ "ambiguities_resolved": [
+  "met: read as ratio of sums over episodes (total met units / total min(claim, pool)). Mean of per-episode ratios (excluding zero-claim episodes) gives ~0.96 on train instead of ~0.945; results.json matches ratio of sums. Episodes with zero total claim contribute 0/0 under ratio of sums.",
+  "first_choice_A: denominator taken as episodes with at least one effective service (consistent with results.json first_served_episodes), not all episodes. Protocol says \"fraction of episodes\".",
+  "Missing records: a missing record is drawn for every served attempt, success or failure; a missing success gives no receipt.",
+  "Forged records: only failed deliveries can be forged (recorded as success with p=0.5); successes always recorded.",
+  "Serving with an empty pool leaves no record and is not a \"first service\"; record_rule serving vs withholding at pool 0 does not affect any metric (withheld_unmet requires pool>0).",
+  "new_claimant keeps training claim distribution and pool 3; large_claims draws each claim independently.",
+  "record_rule tie-break by identity index A<B<C regardless of slot; with tie at need<=0 it withholds.",
+  "withheld_unmet uses actual (not recorded) unmet status, evaluated before the step.",
+  "Prediction thresholds applied to seed means (protocol does not say per-seed vs mean for P1-P6)."
+ ],
+ "audit_findings": {
+  "observer_fact_leakage": "None found. Agent decisions use only Episode.observe (identity one-hot, k, records c and u, pool, step); identity_only zeroes k,c,u. record_rule reads k,c,u,pool,ids only. Learning signals: proxy reads receipt (record), access reads met_unit (actual met unit, the protocol-specified contact), all add 0.25*retained pool at terminal. Actual deliveries and excess are not in any signal or observation. Metrics read actual facts as the protocol requires.",
+  "metrics_match_protocol": "Yes, under the ambiguity resolutions above (met as ratio of sums with denom 0 -> 1.0; first_choice_A over served episodes; first service counted only when pool>0). check.py thresholds match P1-P7 as written: P2/P3 <=0.1, P3 |diff|<=0.05, P4 |diff|<=0.1 and >=0.2 gap, P5 strict >, P6 strict > and >= (\"does not fall\"), P7 >=7 extreme seeds and both directions.",
+  "verdict_changing_bugs": "None found. check.py verdicts reproduce exactly.",
+  "caveats": [
+   "P7 within-seed extremeness is structurally guaranteed: the scarce tests have a fixed initial state, greedy policy and no randomness before the first service, so each seed first_choice_A is exactly 0, 1 or None. The informative parts of P7 are the across-seed direction split (4 A / 6 B) and the swap test (identical values: identity, not slot, decides).",
+   "P6 proxy clause fails on a 0.014 point-estimate fall with paired SE 0.012 across seeds (each test uses a different RNG stream); the verdict is noise-dominated rather than evidence that forging reduces proxy excess.",
+   "P2 and P3 fail on the same quantity: access excess on train 0.171 (seeds 0 and 1 at ~0.52).",
+   "Mismatch with protocol wording: Agent.__init__ accepts identity_only but the network input still has 8 dims with zeros for k,c,u; equivalent to omission up to bias, not a leak."
+  ]
+ },
+ "recomputed_verdicts": {
+  "P1_self_only": {
+   "passed": true,
+   "self_train_met": 0.0
+  },
+  "P2_proxy_capture": {
+   "passed": false,
+   "proxy_train_excess": 1.2495,
+   "access_train_excess": 0.1706,
+   "access_excess_per_seed": [
+    0.517,
+    0.5175,
+    0.0,
+    0.0,
+    0.31,
+    0.103,
+    0.16,
+    0.0,
+    0.0,
+    0.0985
+   ],
+   "failing_clause": "access excess 0.171 > 0.1 (seeds 0,1,4,6 above 0.1)"
+  },
+  "P3_access": {
+   "passed": false,
+   "access_met": 0.9448408830006566,
+   "access_excess": 0.1706,
+   "rule_met": 0.9448845985303093,
+   "failing_clause": "excess 0.171 > 0.1; met clauses pass"
+  },
+  "P4_generalization": {
+   "passed": true,
+   "new_claimant_met": 0.9309471436305481,
+   "large_claims_met": 0.9299800317604738,
+   "identity_only_large_met": 0.5277415144707954
+  },
+  "P5_missing": {
+   "passed": true,
+   "missing_excess": 0.59215,
+   "train_excess": 0.1706
+  },
+  "P6_forged": {
+   "passed": false,
+   "access_withheld_forged": 0.0809,
+   "access_withheld_train": 0.0,
+   "proxy_excess_forged": 1.23515,
+   "proxy_excess_train": 1.2495,
+   "proxy_paired_diff_mean": -0.014349999999999984,
+   "proxy_paired_diff_se": 0.012027526299654846,
+   "failing_clause": "proxy excess falls by 0.014 (paired SE 0.012): fails as frozen on the point estimate, but the fall is within sampling noise; the access clause passes"
+  },
+  "P7_symmetric_tiebreak": {
+   "passed": true,
+   "first_choice_A": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "swapped_first_choice_A": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    0.0
+   ],
+   "extreme_seeds": 10,
+   "reading": "4 seeds choose A, 6 choose B; swapped values identical, so the choice follows identity, not slot"
+  }
+ },
+ "matches_check_json": true
+}
