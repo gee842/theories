@@ -1,5 +1,7 @@
 # Applying an acquired evaluator under partial evidence
 
+**Current source-status update, 6 October 2026:** [EVALUATIVE-UPTAKE](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md) is now independently accepted at its stated finite causal scope; the [integration receipt](EVALUATIVE-UPTAKE-INTEGRATION.json) binds that acceptance. It reports 29 cases, 261 mixtures, 3,306 histories and 77 new Lean audits, with numerical, formal and runtime-crosscheck scopes distinguished. Actual opposite-command parent histories and the unknown-fact control now support the bounded instrumental-recognition interface. The prospective wording in Sections 1–7 records their earlier assessment stages; it is superseded as a statement of the causal study's current status, not retrospectively presented as knowledge before execution. Patient-good interpretation, authority, priority and a ground for another episode remain independent premises. The accepted runtime checks current publication/scope and agreement with the retained recipient command; it does **not** add a separate old `last`/qualification guard. Section 8 below specifies a further application-revision contract, not an implemented extension. No new Lean build or simulation was performed for this update.
+
 6 October 2026. AI-authored elementary application audit for the prospective self-consequence evaluator. This note supplies a conditional interpretation and application contract; it does not implement that evaluator or claim a new decision-theory result. Its physical fields are prospective coordination inputs, not a frozen model or verified execution. The active mechanism owner retains the causal implementation.
 
 The existing [finite decision mathematics](../../2026-10-05-revisable-concern/settlement/normative/decision-math.md), especially N1, N2 and N5, establishes the order and information results used here. [慧根's full-theory audit §9](HUIGEN-FULL-THEORY-AUDIT.md#9-finite-interface-with-formed-understanding-and-action) already separates acquired influence, applicability, authority and comparative judgment, and proves the positive-weight underdetermination illustrated below. [Reason transport T13](HUIGEN-REASON-TRANSPORT.md#t13-exact-sufficiency-for-permission-and-for-choosing) gives the evidence-class permission intersection. [ClaimLedger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean) composes partial certificates with actual paid execution. No new Lean declarations, experiment or scientific rerun are claimed here.
@@ -213,3 +215,104 @@ The frozen evaluation phase does not itself reopen recipient learning or acquire
 The positive application concerns **one recipient episode**. Its first receipt may discharge the specified deficit or service claim. A later offered packet does not create another need, and retained \(n\), current command efficacy and a new port do not recognize the continuing applicability of \(K\). Warranting a second act requires an independently valid continuing or updated episode-ground, benefit interpretation and priority comparison. The physical second-use test must not be promoted to repeated warranted relief without those premises.
 
 Thus static, independently defended interpretive premises can combine with acquired efficacy and causally operative retained support to constitute **bounded functional recognition of a ground's instrumental application**. Static interpretation alone, a high coefficient alone, or a favorable act alone cannot. The narrower positive claim leaves intact the separate tasks of acquiring or revising the ground, identifying another center's condition, judging changing authority and conflicts, sustaining correction, and explaining why access to those considerations forms and persists.
+
+## 8. Correct command, withdrawn application
+
+**New bounded semantic interface, after acceptance of evaluative uptake.** The accepted process can use an effective command twice because a second opportunity is supplied. It does not establish a second need or recognize that the first packet discharged a particular claim. The smallest next application revision therefore concerns one independently admitted **one-performance claim**, rather than changing command efficacy, relearning \(n\), or installing a general moral classifier.
+
+### Keep the changing judgment typed
+
+Let \(k=(p,c,e,g,a)\) identify the patient, context, episode, ground and actor/addressee as in [ClaimLedger.AddressedClaim][episode-ledger]. Let \(K(k)\) mean that this bounded claim is independently admitted. Preserve its historical identity and the patient's standing. Distinguish:
+
+| Quantity | Meaning | What its loss does not by itself establish |
+|---|---|---|
+| \(E(c',t)\) | Command \(c'\) still produces the specified recipient receipt under its opportunity and law conditions | That the recipient has no standing or outstanding claim |
+| \(J(k,t)\) | This episode's specified service remains outstanding and applicable | That the command ceased to work, or that another claim cannot justify another delivery |
+| \(P(c',t)\) | Legitimate permission for this act, separately distinguished from the apparatus's technical permission bit | That the patient has no pro tanto reason for assistance |
+| \(\Pi(c',t)\) | The complete bounded comparison licenses this act against relevant alternatives | That an outweighed reason has vanished |
+| \(F(c',t)\) | The actual act can be executed with its material, source, timing and prefix-payment conditions | That the claim is fulfilled or no longer matters |
+
+The earlier \(J\) denoted the fixed recipient-good interpretation. In this section \(J(k,t)\) explicitly denotes **episode applicability**; write \(B_k(c',t)\) for the independently warranted relation between this command's receipt and the service/good specified by \(k\). This disambiguation prevents a newly supplied pending bit from silently replacing the recipient-good argument.
+
+A scoped contribution from this claim can consequently be represented as
+
+\[
+\rho_k(c',t)=K(k)\land J(k,t)\land E(c',t)\land B_k(c',t).
+\]
+
+This formula uses an independently defended derivative-reason premise; conjunction alone does not create moral force. Permission, comparative priority and execution feasibility are separate gates on a recommendation or performance based on \(\rho_k\). With these distinctions, losing permission, priority or funds does not set \(\rho_k\) to false merely to explain nonaction. Losing command efficacy can defeat this means while leaving the outstanding end; fulfillment can remove this episode's outstanding requirement while leaving the command effective.
+
+### Actual fulfillment and evidence of fulfillment
+
+Fix the episode's window \([s_k,u_k]\) and qualifying-service predicate \(Q_k(v)\) independently **before the relevant outcomes**. The predicate includes the same recipient and episode, required quantity and relevant delivery conditions. For this one-performance claim, define actual fulfillment over the whole history:
+
+\[
+\operatorname{Met}(k,h,t)
+\iff
+\exists v\in h:\quad s_k\leq\operatorname{time}(v)\leq\min(t,u_k)
+\quad\land\quad Q_k(v).
+\]
+
+Every qualifying delivery counts, whether its action label is inquiry/probe, valuation-selected help, an earlier action or another provider's service. This is a semantic history predicate, not a free runtime history reader. Neither changing an event's label nor moving the window after its outcome may preserve a claim as pending. A legitimately different later episode needs an independently justified specification. A packet is not automatically experienced relief, and a raw increase in an account is not automatically performance of every claim addressed to its owner.
+
+The issue already occurs in the accepted parent. In the saved [primary/variable histories][episode-parent-results], zero-based paths 4 and 11, each of mass \(9/128\), `runtime_trace[13]` is `probe1_ri_work`: the recipient rises from 30 to 40 before the evaluation entry at index 37, `publish_current_reason`. This is a read-only inspection of preserved results, not a new run. If the independently fixed episode includes that probe and its receipt qualifies, the claim is fulfilled **before the first evaluator-selected act**. The first evaluator act is then already a repeat service for this claim. An application interface must cover this prefulfilled entry as well as a first fulfillment during a later continuation; it cannot assume the new evaluator supplied the earliest qualifying receipt.
+
+The bounded application independently supplies two rules:
+
+\[
+\operatorname{Met}(k,h,t)\Longrightarrow\neg J(k,t),
+\qquad
+\operatorname{Met}(k,h,t)\Longrightarrow\operatorname{Met}(k,h',t')
+\]
+
+for the specified later extensions \(h'\) and assessment times \(t'\) of this **same historical one-performance claim**. The second rule preserves the fact that the specified service occurred; it does not say a recipient remains satiated, safe or adequately supported forever. Whether one delivery closes the obligation is part of the independently defended claim scope, not an ethical theorem about a ten-unit packet. If the claim instead requires continuous maintenance, the one-performance rule is inapplicable.
+
+Actual fulfillment changes the episode's outstanding status even when unobserved. Let \(Z\) denote evidence actually accessible to the actor, and let \(\operatorname{Cert}(Z,k)\) mean that its calibrated, episode-bound interpretation warrants \(\operatorname{Met}(k,h,t)\). The minimum application payload is **episode binding plus an evidence status**: pending-supported, fulfilled-certified, or unknown. These are semantic distinctions, not a demand for a new register. **No certificate does not mean pending.** A missing observation can leave an already fulfilled claim unknown to the actor; conversely, an attempted action or consumed opportunity can coexist with actual nonfulfillment. Supported pending requires separately sound current unmet evidence, or warranted initial nonfulfillment plus complete exclusion of other qualifying deliveries over the relevant interval, together with the claim's applicability conditions. A failed own delivery alone supplies no such completeness: a probe or another provider may already have fulfilled the claim. Positive qualifying evidence can certify historical fulfillment without this negative completeness premise. A policy for unknown status must be separately specified and assessed. Neither automatic repeat delivery nor automatic withdrawal is inferred here.
+
+### Conditional episode-withdrawal proposition
+
+Suppose:
+
+1. \(K(k)\) is a justified one-performance claim with the independently fixed window and declared fulfillment, closure and persistence rules. Its command-specific recommendation depends on the service still being outstanding, within the bounded comparison; any earlier pending warrant retains its historical scope.
+2. An actual qualifying event in the full episode history fulfills \(k\), and an existing or separately justified evidence route makes a sound \(\operatorname{Cert}(Z,k)\) accessible for the next assessment. Source, patient and episode binding, integrity, read access and any required retention are established. This event can precede entry into the application phase, including a qualifying acquisition probe.
+3. The application process actually uses that evidence to recognize fulfilled status, invalidate any dependent unconsumed pending recommendation, and refrain from reauthorizing a recommendation **on the basis of this outstanding claim**. This is a causal update obligation, not merely an analyst changing a label. Its read/write/retention costs and finite backing must be supplied wherever that physical realization is claimed.
+4. A distinct admitted state or history supplies sound pending evidence, not merely absence of a fulfillment certificate, and remains meaningfully distinguishable to that process. To claim behavioral restraint, both comparisons must offer an actually feasible, legitimately permitted later service and an available alternative, with operative command, \(n\), relevant resources and other action guards controlled. The policy's behavior under genuinely unknown evidence is stated separately.
+
+Then the process warrantedly withdraws any still-active recommendation, and withholds renewed recommendation, insofar as its basis is that \(k\) is still outstanding. \(K(k)\), patient standing, effective command correspondence \(q\) and retained \(n\) may remain unchanged.
+
+**Proof.** Sound accessible certification gives actual fulfillment. The defended episode rule gives \(\neg J(k,t)\), hence this claim no longer contributes \(\rho_k\) for an additional delivery. The causally operative update removes the recommendation's now-defeated application premise and its active authorization, rather than only annotating the analyst's history. No step changes \(E\), \(q\), \(n\), historical admission or standing. The conclusion removes this basis for recommendation; another independently applicable claim or ground can still favor delivery. It therefore does not entail universal abstention or a completed all-things verdict. ∎
+
+This proposition specifies a sufficient interpretation and causal contract. It does not derive the update mechanism from the fulfillment rule, nor derive the rule from the update's behavior. The nonvacuous contrast distinguishes application revision from an unconditional second-opportunity shutdown, a newly unaffordable action, or a disabled motor. A consumed one-use port alone is not restraint. A controller that stops after any attempt cannot claim to recognize fulfillment merely because its first selected example happened to succeed.
+
+The pending comparator must actually be possible under the claimed domain. If the fixed episode starts before acquisition and every qualified current command in an immutable parent class requires a positive probe that qualifies for this claim, then known efficacy in that class already entails fulfillment. There is no matched sound pending entrance in that class. The conditional proposition remains valid, but that class cannot witness its nonvacuous pending/fulfilled contrast. Neither a constructed case table nor an edited unmet flag fixes this limitation. A separately justified later episode or another lawful factual source could define a different test; neither is existing evidence, and a window cannot be moved retrospectively to manufacture it.
+
+### Exact existing evidence access and the unclosed map
+
+No new generic sensor is required by this contract. The accepted [recipient trial implementation][episode-uptake-model] already has a specific physical outcome sequence: work can credit the recipient; paid acquisition consumes one escrow unit and exposes `physical.acquired_record = captured`; the paid write consumes the remaining escrow and clears that acquisition field. Its observer-side `outcomes[first_capture]` entry is a reporting record, not an extra runtime observation. The formal [acquired-evaluation law][episode-uptake-law] reuses the inherited worked/acquired/write phases of the continuing recipient process.
+
+A future application-revision realization could consume the genuinely accessible acquired receipt before it is cleared, or retain it through a justified, episode-bound physical transfer. It must exhibit the actual path from that event to the later assessment, including its capacity, timing, overwrite discipline and any payment. If an already backed component can supply this access, no redundant new observer is demanded; the existing mapping must still be proved. **The accepted terminal state does not already contain the newly proposed episode-fulfillment variable.** A trace printed for an analyst, `first_closed`, a consumed port, or final \(q\)/`last` cannot be substituted for that path. Current efficacy/qualification can predate the episode, and closure can follow an unsuccessful attempt.
+
+An already archived probe receipt can also provide relevant evidence if its actual source, patient/context/episode binding and paid access warrant the same fulfillment inference. Such evidence must not be ignored because the new evaluator has not yet acted. The current publication's compatible-command proposition is narrower than a certificate of the whole admitted claim; any use of its underlying positive receipt to establish fulfillment needs the separate application relation and an actual access path.
+
+The ordinary current-command check remains the accepted one: current publication and scope, with its unique supported command agreeing with the retained recipient command. This addition imposes no extra `last` or old-qualification guard. The missing relation is from an actual episode outcome to renewed application judgment, not another test that the stored command is efficacious.
+
+### Reuse the established proof interfaces at their own scopes
+
+[ClaimLedger][episode-ledger] already provides `record_admitted`, `record_unresolved_exact`, `recorded_certificates_sound`, `partial_evidence_actual_execution` and `successive_execution_with_persistent_claims`. The last explicitly requires persistence of old certified effects at the new assessment horizon. These contracts allow a fulfilled historical claim to remain admitted and certified while no longer outstanding; `unresolved` means admitted but uncertified, not actually unfulfilled. They do not themselves store an episode fact in the accepted evaluator, implement the new recommendation update, or infer the one-performance closure premise.
+
+[ReasonReplay][episode-replay] already separates invalidation from destruction: `context_change_preserves_history_not_current_audit` preserves records and the installed historical value while resetting the active audit phase; `reset_withdraws_current_publication` proves that it is no longer a current publication. `delivery_cut_is_not_refutation` preserves recorded and installed grounds on delivery loss. These are exact existing examples of the needed semantic distinctions, not an implemented map from recipient fulfillment to a ReasonReplay event. Wiring such a map must preserve the recipient, episode and reason type; a command-bit publication cannot be reinterpreted as a fulfilled patient claim without that bridge.
+
+Four counterexamples fix the boundary:
+
+- A failed or blocked first attempt closes its opportunity but delivers nothing. Closing that opportunity cannot certify \(\operatorname{Met}\), and stopping for that reason would not recognize fulfillment. Failure also cannot certify pending status without excluding prior or other qualifying deliveries.
+- A successful delivery whose acquired receipt is cleared before any retained application use can leave the actor uncertain. The claim is actually discharged under the supplied rule, but a runtime revision has not been established.
+- One fulfilled historical service can coexist with a new episode \(k'\), a recurring maintenance duty or a different independently admitted need. A certificate bound to \(k\) cannot be silently reused to discharge \(k'\); conversely, \(k\)'s fulfillment does not erase that new ground.
+- Permission loss, an overriding competing claim or a funding shortage can block recommendation or action while \(J(k,t)\) remains true. Encoding any such obstruction as “fulfilled” erases an outstanding claim and fails this contract.
+
+The next connection is therefore precise: **actual paid recipient outcome → warranted, episode-bound evidence → causally used application revision → withdrawal of this now-completed claim's recommendation**. Efficacy learning, evaluator acquisition and general standing need not be repeated. The accepted two-use result supplies actual effects and an existing transient acquisition interface; the defended episode rule and its retained causal use remain the additional obligations. This section adds no apparatus, runtime ledger, simulation or Lean declaration.
+
+[episode-ledger]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/protection/claims/formal/ClaimLedger.lean
+[episode-replay]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean
+[episode-uptake-model]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model.py
+[episode-uptake-law]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/AcquiredEvaluation.lean
+[episode-parent-results]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/results.json.gz
