@@ -1,0 +1,62 @@
+{
+  "status": "saved_history_contrasts_passed",
+  "counts": {
+    "conventional_histories": 152,
+    "conventional_states": 3220,
+    "matched_histories": 266,
+    "matched_prefix_states": 4852,
+    "fixed_marginal_endpoints": 76,
+    "revision_histories": 38
+  },
+  "comparisons": [
+    {
+      "case": "aligned",
+      "control": "inert",
+      "variable_completed_training_mass": "1/4",
+      "variable_choice_difference_mass": "1/4"
+    },
+    {
+      "case": "aligned",
+      "control": "identity_gated",
+      "variable_completed_training_mass": "1/4",
+      "variable_choice_difference_mass": "1/4"
+    },
+    {
+      "case": "opposed",
+      "control": "inert",
+      "variable_completed_training_mass": "1/4",
+      "variable_choice_difference_mass": "0"
+    },
+    {
+      "case": "opposed",
+      "control": "identity_gated",
+      "variable_completed_training_mass": "1/4",
+      "variable_choice_difference_mass": "0"
+    },
+    {
+      "case": "mixed",
+      "control": "inert",
+      "variable_completed_training_mass": "1/4",
+      "variable_choice_difference_mass": "0"
+    },
+    {
+      "case": "mixed",
+      "control": "identity_gated",
+      "variable_completed_training_mass": "1/4",
+      "variable_choice_difference_mass": "0"
+    },
+    {
+      "case": "aligned_revision",
+      "control": "frozen_sign",
+      "variable_completed_training_mass": "1/4",
+      "variable_choice_difference_mass": "1/4"
+    }
+  ],
+  "scope": "Full matched pre-assessment histories differ only in declared recipe and link conductance. Conventional counterparts match every event/state/metric modulo implementation recipe tag. Across distinct X words, only listed endpoint quantities are equated; recipient paths and source-slot positions can differ.",
+  "source_sha256": {
+    "check_contrasts.py": "8ebb67bf12c896fe8de47cdf507372081877f5207b29b3be2629ae5f0b0f4bbd",
+    "results.json.gz": "b4ecc868292bc0eababc055b6ae2d2616a1310802b101f3f94c4be1c2b5ef920",
+    "model-verification.json": "4fadfe6ee460b7e5175a1ff3eac6bfaa64582c5abb49f3b65bf0b96ca3149138",
+    "cases.json": "0368eb97e64f9b30b2af73200721fc488fa58e931e81f7c912352137e5b2f561"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "exact_independent_physical_trace_and_metric_comparison_passed",
+  "counts": {
+    "catalog_entries": 38,
+    "preparations": 11,
+    "distributions": 66,
+    "paths": 836,
+    "producer_states": 15358,
+    "oracle_states": 15798,
+    "verified_noop_markers": 440,
+    "path_metrics": 26752,
+    "aggregate_metrics": 2112
+  },
+  "scope": "Fixed declared menu, inherited unconditional masses, every complete physical prefix and all reported metrics. No arbitrary-interleaving or whole-program formal refinement claim.",
+  "representation": "SCHEMA.json plus format-only compare_oracle.py; 440 anticipated unchanged oracle completion markers checked individually if present, never discarded unchecked.",
+  "source_sha256": {
+    "check_model.py": "b82d9a50ea0d067decaea61075393926ee493af6adf31bf86bceab790551f2e6",
+    "SCHEMA.json": "a3c6988ae7db4801ce074f90f045a0fa483e5171855024e663c43dc2744f9f64",
+    "ORACLE-AMENDMENTS.md": "8e71bb441f85f283731dc468811347c949c9e546c3dbf1ce66c800f663a15cbd",
+    "oracle-freeze.json": "ff9bd4228ff7232f99be6105b3ac5ae4e77da25cd633e78d37f36eb03e8ad30d",
+    "compare_oracle.py": "471816cee6804e18c16b08d8ea322000bde5af5ffeaa0cb685620bebb927c41a",
+    "independent-expectations.json.gz": "a29a8e8c280e8b26c52052f2d8af3d4a8c8b7008a3327f1a9095ea3e59d5ea4d",
+    "independent-expectations-receipt.json": "678974ad50128df67de2973ac9e31f3d83b296d7d6e82bce0f39737607840c32",
+    "model.py": "526de1c93c1ddeb2e51624e6ba54fafb0953e769d8de6378d00c9b90cc528134",
+    "results.json.gz": "b4ecc868292bc0eababc055b6ae2d2616a1310802b101f3f94c4be1c2b5ef920",
+    "result-files.json": "4d5c265cdfb882fe698869e833a9892c63c2dd5afb39418dc8989f4673697dc4",
+    "protocol-freeze.json": "f1e5aeac5a966aec04593a54f271e15feff0141a931f302d36dd3d4efe44e0d6",
+    "DRAFT-PROTOCOL.md": "65a4632842619a979fa78c79b4188886b672ce0a91641dfc1b23bc0cd5f006ff",
+    "INTERFACE.md": "1a83e314bb43a7385121d3a0921cc40fc93480a9b3e5aa5a944f421cc573b9ad",
+    "cases.json": "0368eb97e64f9b30b2af73200721fc488fa58e931e81f7c912352137e5b2f561"
+  },
+  "completed_utc": "2026-10-06T02:40:19.319377+00:00"
+}

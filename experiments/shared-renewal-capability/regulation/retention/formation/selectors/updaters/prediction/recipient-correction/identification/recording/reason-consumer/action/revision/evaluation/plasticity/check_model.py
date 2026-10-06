@@ -238,7 +238,7 @@ def initialize(ref, config, variant, prep, catalog):
     assert 0 <= config['primary_reserve'] <= 22 and 0 <= config['revision_reserve'] <= 12
     assert len(config['own_packets']) == len(config['recipient_packets']) == 6
     return dict(parent_ref=ref, parent=parent, n=0, count=0, phase='ready',
-        own_return=None, recipient_return=None, own_bit=None, recipient_bit=None,
+        latches={kind:dict(value=False,mode='empty') for kind in ('own','recipient')},
         links=[None,None], retired=[], primary_free=[True,True], replacement_free=True,
         inventory=dict(memory_cells=config['memory_cells'], adapter=config['adapter'],
             primary_access=list(config['primary_link_accessible']),
@@ -248,8 +248,9 @@ def initialize(ref, config, variant, prep, catalog):
             idle_common=34-config['primary_reserve']-config['revision_reserve'],
             idle_source=24-sum(config['own_packets'])-sum(config['recipient_packets']),
             saved_assembly=prep['saved_assembly']),
-        port=dict(built=config['initial_port'], mode='idle', command=None,
-            transmission=None, assessment=None), spent=dict.fromkeys(BILL_NAMES,0), waste=0,
+        port=dict(built=config['initial_port'], mode='idle', command=None, assessment=None),
+        diagnostics=dict(raw_transmission=None,transmission=None),
+        spent=dict.fromkeys(BILL_NAMES,0), waste=0,
         outcomes=dict(admitted=False, training_complete=False, revised=False, attempted=False,
             completed=False, captured=False, scope_lost=False),
         account=dict(parent_spent=411-before, extra_construction=prep['extra_construction_spent'],
@@ -263,6 +264,11 @@ def validate(s):
                b['primary'],b['revision'],b['idle_common'],b['idle_source'],b['saved_assembly'],
                *b['own_packets'],*b['recipient_packets'],*s['spent'].values(),s['waste']) >= 0
     assert len(s['links']) == 2
+    assert set(s['latches']) == {'own','recipient'}
+    assert all(type(latch['value']) is bool and latch['mode'] in
+               ('empty','return','shortfall','missing') for latch in s['latches'].values())
+    assert all(latch['value'] is False for latch in s['latches'].values()
+               if latch['mode'] in ('empty','missing'))
     held = [link for link in s['links'] if link is not None]+s['retired']
     assert len({x['id'] for x in held}) == len(held)
     assert all(x['sign'] in (-1,0,1) for x in held)
@@ -295,6 +301,7 @@ def transmission(s, filtered=False, table=False):
 def run_oracle(ref, config, variant, prep, catalog):
     """Execute only when explicitly called after protocol/source freeze."""
     s=initialize(ref,config,variant,prep,catalog)
+    target_count=6 if config['revision'] else 4
     trace=[]
     def emit(event):
         validate(s)
@@ -310,7 +317,7 @@ def run_oracle(ref, config, variant, prep, catalog):
         bank='primary' if k<4 else 'revision'
         cap=6 if k<4 else (7 if k==4 else 5)
         release=min(cap,b[bank])
-        if not (s['phase']=='ready' and k<len(config['own_shortfalls']) and admitted(s)
+        if not (s['phase']=='ready' and k<target_count and admitted(s)
                 and b['own_packets'][k]>=2 and b['recipient_packets'][k]>=2
                 and c['recipient']>=2 and c['fuel']+release>=2):
             emit('pair.start_blocked');return False
@@ -320,29 +327,34 @@ def run_oracle(ref, config, variant, prep, catalog):
         returned=config['own_shortfalls'][k]==0
         if returned:
             b['own_packets'][k]-=2;c['fuel']+=2
-        s['own_return']=returned;s['phase']='own_returned';emit('pair.own_return')
+        s['latches']['own']=dict(value=returned,mode='return')
+        s['phase']='own_returned';emit('pair.own_return')
         assert c['recipient']>=2
         c['recipient']-=2;s['spent']['recipient_operation']+=2
         s['phase']='recipient_paid';emit('pair.recipient_pay')
         returned=config['recipient_shortfalls'][k]==0
         if returned:
             b['recipient_packets'][k]-=2;c['recipient']+=2
-        s['recipient_return']=returned;s['phase']='recipient_returned';emit('pair.recipient_return')
+        s['latches']['recipient']=dict(value=returned,mode='return')
+        s['phase']='recipient_returned';emit('pair.recipient_return')
         for kind in ('own','recipient'):
             if not pay(1,kind+'_read'):
                 emit('pair.'+kind+'_read_blocked');return False
             mode=config[kind+'_meter'][k]
             assert mode in ('faithful','missing','inverted')
-            bit=None if mode=='missing' else int(not s[kind+'_return']) ^ int(mode=='inverted')
-            s[kind+'_bit']=bit;s['phase']=kind+'_read'
+            latch=s['latches'][kind]
+            assert latch['mode']=='return'
+            value=False if mode=='missing' else bool((not latch['value']) ^ (mode=='inverted'))
+            s['latches'][kind]=dict(value=value,mode='missing' if mode=='missing' else 'shortfall')
+            s['phase']=kind+'_read'
             emit('pair.'+kind+'_read')
-        if s['own_bit'] is None or s['recipient_bit'] is None:
+        if any(latch['mode']!='shortfall' for latch in s['latches'].values()):
             emit('pair.acquisition_missing');return False
-        if s['recipient_bit']==0:
+        if not s['latches']['recipient']['value']:
             s['phase']='settled';emit('pair.no_contact')
         else:
             free=next((j for j,link in enumerate(s['links']) if link is None),None)
-            learned=1 if s['own_bit'] else -1
+            learned=1 if s['latches']['own']['value'] else -1
             if free is not None:
                 if not (s['primary_free'][free] and s['inventory']['primary_access'][free]
                         and c['fuel']>=1):
@@ -365,9 +377,9 @@ def run_oracle(ref, config, variant, prep, catalog):
         if not pay(1,'native_write'):
             emit('pair.write_blocked');return False
         if config['native_updates']:
-            s['n']=s['n']//2+4*s['own_bit']
+            s['n']=s['n']//2+4*int(s['latches']['own']['value'])
         s['count']+=1;s['phase']='ready'
-        for key in ('own_return','recipient_return','own_bit','recipient_bit'):s[key]=None
+        s['latches']={kind:dict(value=False,mode='empty') for kind in ('own','recipient')}
         emit('pair.write')
         return True
     def action():
@@ -405,7 +417,7 @@ def run_oracle(ref, config, variant, prep, catalog):
         s['port']['mode']='consumed';s['outcomes']['completed']=True;emit('action.write')
     def assess():
         p=s['port'];c=cview(s['parent'])
-        if not (s['count']==len(config['own_shortfalls']) and s['phase']=='ready'
+        if not (s['count']==target_count and s['phase']=='ready'
                 and s['inventory']['memory_cells']==8 and p['built'] and p['mode']=='idle'
                 and pview(s['parent'])['core_phase']=='ready' and c['fuel']>=1):
             emit('evaluation.read_blocked');return
@@ -419,19 +431,22 @@ def run_oracle(ref, config, variant, prep, catalog):
         pay(1,'assessment')
         value=transmission(s,variant['recipient_filter'],
                            variant['assessment_implementation']=='finite_table')
-        p['transmission']=value;p['assessment']=10*value>64
+        # Audit outputs only: neither quantity is read by a later transition.
+        s['diagnostics']=dict(raw_transmission=transmission(s),transmission=value)
+        p['assessment']=10*value>64
         p['mode']='assessed_help' if p['assessment'] else 'assessed_abstain'
         emit('evaluation.assess')
         if p['assessment']:action()
         else:p['mode']='consumed';emit('action.abstain')
     emit('entry')
-    s['outcomes']['admitted']=admitted(s)
-    if not s['outcomes']['admitted']:
+    admission=admitted(s)
+    s['outcomes']['admitted']=admission
+    if not admission:
         emit('admission.blocked')
     else:
-        while s['count']<len(config['own_shortfalls']):
+        while s['count']<target_count:
             if not pair():break
-        if s['count']==len(config['own_shortfalls']):
+        if s['count']==target_count:
             s['outcomes']['training_complete']=True
             if config['scope_loss_before_read']:
                 s['parent']['parent']['scope']=False;s['outcomes']['scope_lost']=True
@@ -459,9 +474,66 @@ def metrics(s):
     return out
 
 
+def canonical_state(s):
+    """Lossless live projection plus explicit audit-only coordinates.
+
+    All immutable predecessor fields are recovered from parent_ref in the
+    independently extracted catalog. The comparison must also check that no
+    producer field outside this declared lens changed.
+    """
+    p=pview(s['parent'])
+    return dict(parent_ref=s['parent_ref'],core=deepcopy(cview(s['parent'])),
+        physical={k:deepcopy(p[k]) for k in BASE_FIELDS},
+        binding={k:s['parent']['parent'][k] for k in ('scope','permission','delivery')},
+        native=dict(n=s['n'],count=s['count'],phase=s['phase'],latches=deepcopy(s['latches'])),
+        links=deepcopy(s['links']),retired=deepcopy(s['retired']),
+        inventory=dict(**deepcopy(s['inventory']),primary_free=list(s['primary_free']),
+                       replacement_free=s['replacement_free']),
+        reserves={k:s['stocks'][k] for k in ('primary','revision','idle_common','idle_source','saved_assembly')},
+        packets=dict(own=list(s['stocks']['own_packets']),recipient=list(s['stocks']['recipient_packets'])),
+        port=deepcopy(s['port']),bills=dict(s['spent']),waste=s['waste'],
+        accounting=dict(s['account']),observer=dict(diagnostics=deepcopy(s['diagnostics']),
+                                                  outcomes=dict(s['outcomes'])))
+
+
+def build_oracle_output():
+    specs=load_json(HERE/'cases.json')
+    catalog,_old=read_ancestry(specs)
+    old_prep=load_json(REVISION/'fixtures.json')['preparations']['primary']
+    preparations={row['name']:preparation(row['config'],old_prep) for row in specs['cases']}
+    result=dict(schema=1,status='independent_expectations_not_yet_compared',
+                parent_catalog=catalog,preparations=preparations,cases={})
+    counters=dict(cases=0,case_variants=0,producer_distributions=0,paths=0,states=0)
+    for row in specs['cases']:
+        name=row['name'];cfg=row['config'];variants={};counters['cases']+=1
+        for vname in row['variants']:
+            producers={};counters['case_variants']+=1
+            for producer in specs['parent_producers']:
+                refs=[ref for ref,c in catalog.items() if c['parent_case']==cfg['parent_revision_case']
+                      and c['producer']==producer]
+                assert sum(Fraction(catalog[ref]['probability']) for ref in refs)==1
+                paths=[];aggregate={};counters['producer_distributions']+=1
+                for ref in refs:
+                    answer=run_oracle(ref,cfg,specs['variants'][vname],preparations[name],catalog)
+                    mass=Fraction(catalog[ref]['probability'])
+                    paths.append(dict(predecessor_ref=ref,probability=str(mass),
+                        state=canonical_state(answer['state']),metrics=answer['metrics'],
+                        runtime_trace=[dict(event=t['event'],state=canonical_state(t['state']))
+                                       for t in answer['trace']]))
+                    counters['paths']+=1;counters['states']+=len(answer['trace'])
+                    for key,value in answer['metrics'].items():
+                        aggregate[key]=aggregate.get(key,Fraction(0))+mass*value
+                producers[producer]=dict(paths=paths,metrics={k:str(v) for k,v in aggregate.items()})
+            variants[vname]=dict(producers=producers)
+        result['cases'][name]=dict(variants=variants)
+    result['counts']=counters
+    return result
+
+
 def freeze_record():
     """Metadata only: does not load histories, construct plants or run schedules."""
-    paths=[Path(__file__),HERE/'DRAFT-PROTOCOL.md',HERE/'cases.json',
+    paths=[Path(__file__),HERE/'DRAFT-PROTOCOL.md',HERE/'cases.json',HERE/'INTERFACE.md',HERE/'SCHEMA.json',
+           HERE/'ORACLE-AMENDMENTS.md',REVISION/'fixtures.json',
            REVISION/'model.py',REVISION/'check_model.py',REVISION/'result-files.json',
            HERE.parent/'model.py',HERE.parent/'check_model.py']
     process=REPO/'_process/research/2026-10-05-generative-foundation-review/root-foundation'
@@ -476,12 +548,36 @@ def freeze_record():
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--freeze-only',action='store_true')
+    parser.add_argument('--expectations',action='store_true')
+    parser.add_argument('--root-freeze',type=Path,
+                        help='Existing root authorization/freeze receipt; metadata only.')
     args=parser.parse_args()
     if args.freeze_only:
-        target=HERE/'oracle-preexecution.json'
+        assert args.root_freeze and args.root_freeze.is_file(), 'root freeze receipt required'
+        target=HERE/'oracle-freeze.json'
         assert not target.exists(), 'preserve prior freeze before replacing'
-        target.write_text(json.dumps(freeze_record(),sort_keys=True,indent=2)+'\n')
+        record=freeze_record()
+        record['root_freeze']={'path':str(args.root_freeze),'sha256':digest(args.root_freeze)}
+        target.write_text(json.dumps(record,sort_keys=True,indent=2)+'\n')
         print(json.dumps({'status':'source_frozen_without_execution','sha256':digest(Path(__file__))}))
+    elif args.expectations:
+        frozen=load_json(HERE/'oracle-freeze.json')
+        for path,want in frozen['source_sha256'].items():
+            assert digest(REPO/path)==want, ('changed frozen source',path)
+        target=HERE/'independent-expectations.json.gz'
+        assert not target.exists(), 'preserve first expectations before any rerun'
+        answer=build_oracle_output()
+        answer['oracle_freeze_sha256']=digest(HERE/'oracle-freeze.json')
+        raw=(json.dumps(answer,separators=(',',':'))+'\n').encode()
+        packed=gzip.compress(raw,mtime=0)
+        target.write_bytes(packed)
+        receipt=dict(status='independent_expectations_executed_not_yet_compared',
+            counts=answer['counts'],file=target.name,compressed_sha256=digest(target),
+            uncompressed_sha256=hashlib.sha256(raw).hexdigest(),
+            oracle_freeze_sha256=digest(HERE/'oracle-freeze.json'),
+            timestamp_utc=datetime.datetime.now(datetime.timezone.utc).isoformat())
+        (HERE/'independent-expectations-receipt.json').write_text(json.dumps(receipt,indent=2)+'\n')
+        print(json.dumps(receipt))
     else:
         parser.error('No schedule CLI before root freeze; this prospective module only defines the oracle.')
 

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "record_kind": "repository_checkpoint_status_only",
+  "date": "2026-10-06",
+  "status": "draft_unexecuted_not_frozen_not_scientifically_accepted",
+  "checker": "check_model.py",
+  "checker_sha256": "b9947d1fc0422cd11d6ff0cae603613183fff8087b9d90bfe8a7ee12f9a65923",
+  "authorship_boundary": {
+    "transition_code_drafted_before_root_protocol_freeze": true,
+    "independent_frozen_oracle_promised_by_contract": false,
+    "new_plasticity_producer_inspected": false,
+    "new_plasticity_producer_transitions_imported": false,
+    "basis": "Prospective DRAFT-PROTOCOL.md and cases.json, with read-only inspection of accepted revision/evaluation ancestor laws. New transitions, preparation and accounting were drafted independently."
+  },
+  "execution": {
+    "prospective_schedules_executed": false,
+    "new_numerical_outcomes_computed": false,
+    "producer_results_compared": false,
+    "scientific_acceptance": false,
+    "syntax_only": {
+      "status": "passed",
+      "method": "AST parse",
+      "performed_by": "root agent",
+      "evidence": "Root reported syntax-only AST parsing passed for the exact checker hash above; no numerical runs."
+    }
+  },
+  "pending": {
+    "producer_schema_adapter": "Not implemented or reviewed; complete physical-state, trace, metric and ancestry correspondence remains to be agreed and checked.",
+    "guard_clarifications": [
+      "Whether an otherwise affordable final factual read pays one unit before discovering unavailable scope/command and consuming the port, or is blocked before payment. The draft currently follows the accepted uptake pay-then-validate behavior.",
+      "Whether a selected final recipient trial with a ten-unit source packet but fuel below eight follows the inherited miss rule, wasting the packet and deactivating without service expenditure. The draft currently uses that inherited miss behavior."
+    ],
+    "protocol_and_source_freeze": "Root freeze and a separately preserved independent-oracle freeze remain pending. This checkpoint receipt is not either freeze.",
+    "scientific_checks": "Preparation, entry extraction, all fixed cases, full trace/account comparisons, conventional equality, matched-history controls and mutation checks remain unexecuted."
+  },
+  "scope_note_sha256": "b71cf1b269f997e7cf7769b3cba57abed01882b0cae7c623fef927e74e17a30d",
+  "oracle_contract_sha256": "f952615b4f7a52d2fc452db0989dab4388a84e84a5f539475735b3df6d1b15ef",
+  "checkpoint_instruction": "Preserve these drafts for the user-requested repository-wide checkpoint; stop further research execution and edits after saving this receipt."
+}

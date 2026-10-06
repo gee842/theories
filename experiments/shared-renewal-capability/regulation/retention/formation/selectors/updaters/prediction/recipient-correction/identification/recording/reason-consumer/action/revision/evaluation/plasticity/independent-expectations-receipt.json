@@ -1,0 +1,15 @@
+{
+  "status": "independent_expectations_executed_not_yet_compared",
+  "counts": {
+    "cases": 11,
+    "case_variants": 22,
+    "producer_distributions": 66,
+    "paths": 836,
+    "states": 15798
+  },
+  "file": "independent-expectations.json.gz",
+  "compressed_sha256": "a29a8e8c280e8b26c52052f2d8af3d4a8c8b7008a3327f1a9095ea3e59d5ea4d",
+  "uncompressed_sha256": "ed4210509a5c6f1123fd13fae624dd10d52f83339edbef6520c5402f721968bc",
+  "oracle_freeze_sha256": "ff9bd4228ff7232f99be6105b3ac5ae4e77da25cd633e78d37f36eb03e8ad30d",
+  "timestamp_utc": "2026-10-06T02:37:05.852352+00:00"
+}

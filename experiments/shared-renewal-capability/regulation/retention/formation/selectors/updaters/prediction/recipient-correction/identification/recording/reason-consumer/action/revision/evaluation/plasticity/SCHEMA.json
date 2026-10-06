@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "status": "prospective_independent_projection_before_outcomes",
+  "producer_format_contract": "INTERFACE.md",
+  "law_contract": "DRAFT-PROTOCOL.md",
+  "literal_schedule": "cases.json",
+  "root": {
+    "parent_catalog": "Full immutable accepted predecessor, exact mass, source indices, observer provenance and canonical state digest; not a second live actor.",
+    "preparations": "Every controlled formation event, every assembly and old adapter/projection, all material and resources.",
+    "cases": "case -> variants -> producers -> paths plus exact unconditional metric means."
+  },
+  "path": {
+    "predecessor_ref": "Key into independently reconstructed complete catalog.",
+    "probability": "Exact Fraction string, unchanged from the predecessor; sums to one for every case/variant/producer.",
+    "runtime_trace": "Ordered event and complete canonical state. Spelling adapters are allowed; paid/stopped events and physical values cannot be removed.",
+    "state": "Same canonical schema as every trace state.",
+    "metrics": "Every independent metric plus every advertised producer metric must be reconciled; no silent exclusions."
+  },
+  "state": {
+    "parent_ref": "Immutable predecessor key.",
+    "core": "All keys of the actual inherited RI core, without projection loss.",
+    "physical": [
+      "core_phase",
+      "core_target",
+      "core_action",
+      "acquired_record"
+    ],
+    "binding": [
+      "scope",
+      "permission",
+      "delivery"
+    ],
+    "native": {
+      "n": "integer 0..7",
+      "count": "integer 0..6",
+      "phase": "ready, own_paid, own_returned, recipient_paid, recipient_returned, own_read, recipient_read or settled",
+      "latches": {
+        "own": "single Boolean value and mode",
+        "recipient": "single Boolean value and mode",
+        "modes": [
+          "empty",
+          "return",
+          "shortfall",
+          "missing"
+        ],
+        "canonical_invalid_value": false,
+        "capacity": "Meters overwrite return bits. No concurrent return/shortfall runtime copy."
+      }
+    },
+    "links": "Two None or {id, sign} sockets; sign in -1,0,1; id 0/1 initially, 2 for replacement.",
+    "retired": "Actual retired {id,sign} parts, never refunded or reused.",
+    "inventory": [
+      "memory_cells",
+      "adapter",
+      "primary_access[2]",
+      "replacement_access",
+      "omitted_pairs",
+      "primary_free[2]",
+      "replacement_free"
+    ],
+    "reserves": [
+      "primary",
+      "revision",
+      "idle_common",
+      "idle_source",
+      "saved_assembly"
+    ],
+    "packets": {
+      "own": "six individually retained source amounts",
+      "recipient": "six individually retained source amounts"
+    },
+    "port": [
+      "built",
+      "mode",
+      "command",
+      "assessment"
+    ],
+    "bills": [
+      "own_operation",
+      "recipient_operation",
+      "own_read",
+      "recipient_read",
+      "coupling",
+      "native_write",
+      "evaluation_read",
+      "assessment",
+      "service"
+    ],
+    "waste": "Actual uncaptured final RI packet, if the miss/failure branch occurs.",
+    "accounting": [
+      "parent_spent",
+      "extra_construction",
+      "initial_retained"
+    ],
+    "observer": {
+      "diagnostics": [
+        "raw_transmission",
+        "transmission"
+      ],
+      "outcomes": [
+        "admitted",
+        "training_complete",
+        "revised",
+        "attempted",
+        "completed",
+        "captured",
+        "scope_lost"
+      ],
+      "restriction": "No observer coordinate may influence an operational guard or update. Transmission is computed combinationally for assessment; no future event reads its diagnostic copy."
+    }
+  },
+  "lossless_parent_lens": {
+    "base": "catalog[ref].state",
+    "replacement": "Replace parent.parent.producer.core, the four producer physical fields and parent binding scope/permission/delivery. Every other byte-equivalent JSON value remains inherited. Full embedded-parent oracle and lens producer are equivalent only if all untouched fields agree."
+  },
+  "representation_differences": [
+    "The oracle keeps a full parent during execution and emits a catalog-plus-live-lens canonical state; neither representation duplicates spendable accounts.",
+    "The oracle stores diagnostics/outcome markers with each saved state but labels them observer-only and never uses them as update input.",
+    "The literal controller stops at count4 or count6, fixed by the declared continuation configuration. It never reads outcome-word length to make a learning decision.",
+    "Training completion is a derived count/phase boundary in the oracle; an explicit producer close marker may be aligned only if it changes no operational field and creates no unbacked memory.",
+    "Different bill/event field names may be bijectively renamed after format inspection; no semantic transition repair may be hidden in an adapter."
+  ],
+  "exclusions": "No producer transition import, no new stochastic formation mass, no independent efficacy calibration, no indefinite learning claim, no Python-to-Lean refinement claim.",
+  "execution_gate": "Root protocol freeze plus separately hash-frozen independent source/schema; preserve checkpoint draft and every substantive failed first run."
+}

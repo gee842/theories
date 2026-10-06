@@ -1,0 +1,1 @@
+First saved-history contrast check passed. Before acceptance the projection was strengthened to retain all control fields except the explicitly varied recipe entries, and to preserve retired-link signs. No producer, oracle, protocol or outcome changed. This directory preserves the first checker and receipt.

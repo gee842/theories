@@ -1,0 +1,125 @@
+{
+  "status": "all_declared_artifact_mutations_rejected",
+  "count": 11,
+  "tests": [
+    {
+      "name": "unbacked_hidden_positive_route_flag",
+      "rejected": true,
+      "context": {
+        "location": "aligned/active/variable/primary/variable/0/1/0",
+        "event": "extension.at_actual_parent_prefix",
+        "mutated_state_sha256": "06a1bb107a1595c1f69f51865af43acdaeb13a0b224b3bd7fc1e02c89e936dd5"
+      },
+      "finding": "('corrupted complete physical state', 'key', 'positive_route')"
+    },
+    {
+      "name": "ignore_actual_positive_graph_while_preserving_assessment",
+      "rejected": true,
+      "context": {
+        "location": "aligned/active/variable/primary/variable/4/37/34",
+        "event": "evaluation.assess",
+        "mutated_state_sha256": "188e356f3ee8d1cc74e13c0cb01575dd34fdbd1281f082cc1b5605ef40e88b59"
+      },
+      "finding": "('corrupted complete physical state.links[0].sign', 0, 1)"
+    },
+    {
+      "name": "fabricated_acquired_own",
+      "rejected": true,
+      "context": {
+        "location": "aligned/active/variable/primary/variable/4/37/5",
+        "event": "own.read_shortfall",
+        "mutated_state_sha256": "7bcac27004eb1f6e46e3472125cbcbfbaf53b87ff9d5a844e0b6104a4ce45522"
+      },
+      "finding": "('corrupted complete physical state.native.latches.own.value', False, True)"
+    },
+    {
+      "name": "fabricated_acquired_recipient",
+      "rejected": true,
+      "context": {
+        "location": "aligned/active/variable/primary/variable/4/37/6",
+        "event": "recipient.read_shortfall",
+        "mutated_state_sha256": "c082081edfb390a65b4403af96c148384c3a14ab851f718ef105fdf7cabedc1e"
+      },
+      "finding": "('corrupted complete physical state.native.latches.recipient.value', False, True)"
+    },
+    {
+      "name": "ignore_inhibitory_link",
+      "rejected": true,
+      "context": {
+        "location": "opposed/active/variable/primary/variable/4/37/15",
+        "event": "coupling.bind",
+        "mutated_state_sha256": "3c592ae528a031962362ad393863a5c62bb28dfa1d75cfc8bac6151787b3fee6"
+      },
+      "finding": "('corrupted complete physical state.links[0].sign', 0, -1)"
+    },
+    {
+      "name": "reset_native_memory",
+      "rejected": true,
+      "context": {
+        "location": "aligned/active/variable/primary/variable/4/37/8",
+        "event": "native.write",
+        "mutated_state_sha256": "786f7bfbe94134773e27b68b1de5e8875fcfcc7862c664198bcf3f942541d7f5"
+      },
+      "finding": "('corrupted complete physical state.native.n', 0, 4)"
+    },
+    {
+      "name": "reset_actual_acquired_record",
+      "rejected": true,
+      "context": {
+        "location": "aligned/active/variable/primary/variable/4/37/40",
+        "event": "service.acquire",
+        "mutated_state_sha256": "339259fba5b80ef06eafcdbb3569873092d3d447c19ef64de9c6eaee460d08b1"
+      },
+      "finding": "('corrupted complete physical state.physical.acquired_record', None, True)"
+    },
+    {
+      "name": "recipient_capture_credited_to_actor",
+      "rejected": true,
+      "context": {
+        "location": "aligned/active/variable/primary/variable/4/37/39",
+        "event": "service.work",
+        "mutated_state_sha256": "4405c2db3a91ee5c4fae1b6f08b93b84f1848f1f3a9f5d47b856b963f75c69aa"
+      },
+      "finding": "('corrupted complete physical state.core.fuel', 14, 4)"
+    },
+    {
+      "name": "resource_creation",
+      "rejected": true,
+      "context": {
+        "location": "aligned/active/variable/primary/variable/0/1/0",
+        "event": "extension.at_actual_parent_prefix",
+        "mutated_state_sha256": "777089402b7bfa989fa5257ac52a73764d38e635ba7561f5ab2c39116873cd2f"
+      },
+      "finding": "('corrupted complete physical state.core.fuel', 6, 5)"
+    },
+    {
+      "name": "ancestor_probability_changed",
+      "rejected": true,
+      "context": {
+        "predecessor": "primary/variable/0/1"
+      },
+      "finding": "('ancestor mass', Fraction(1005, 7976), Fraction(1, 8))"
+    },
+    {
+      "name": "ancestor_state_changed",
+      "rejected": true,
+      "context": {
+        "predecessor": "primary/conventional/0/1",
+        "mutated_catalog_sha256": "e28dac46dab55079fb5b6a2392939a2ff574cc40c909aabec3017e23c4e309db"
+      },
+      "finding": "('entire catalog.primary/conventional/0/1.state.opened', True, False)"
+    }
+  ],
+  "scope": "Finite corruption fixtures through the actual exact comparison functions. No producer transitions imported, no new operational schedule, no arbitrary-program soundness claim.",
+  "source_sha256": {
+    "mutation_check.py": "02569fef7b42fffa3268c857a8f186ca970b54506abb645d1dc40985bfe207ce",
+    "compare_oracle.py": "471816cee6804e18c16b08d8ea322000bde5af5ffeaa0cb685620bebb927c41a",
+    "check_model.py": "b82d9a50ea0d067decaea61075393926ee493af6adf31bf86bceab790551f2e6",
+    "oracle-freeze.json": "ff9bd4228ff7232f99be6105b3ac5ae4e77da25cd633e78d37f36eb03e8ad30d",
+    "model-verification.json": "4fadfe6ee460b7e5175a1ff3eac6bfaa64582c5abb49f3b65bf0b96ca3149138",
+    "results.json.gz": "b4ecc868292bc0eababc055b6ae2d2616a1310802b101f3f94c4be1c2b5ef920",
+    "independent-expectations.json.gz": "a29a8e8c280e8b26c52052f2d8af3d4a8c8b7008a3327f1a9095ea3e59d5ea4d",
+    "cases.json": "0368eb97e64f9b30b2af73200721fc488fa58e931e81f7c912352137e5b2f561"
+  },
+  "completed_utc": "2026-10-06T02:41:22.096584+00:00"
+}

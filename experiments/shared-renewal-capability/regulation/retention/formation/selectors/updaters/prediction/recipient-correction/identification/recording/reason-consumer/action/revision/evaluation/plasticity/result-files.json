@@ -1,0 +1,8 @@
+{
+  "file": "results.json.gz",
+  "compressed_sha256": "b4ecc868292bc0eababc055b6ae2d2616a1310802b101f3f94c4be1c2b5ef920",
+  "uncompressed_sha256": "826144d59dec04e3bcf8ec45273354863a6b238abe8322e8243e8ff0ad3307fc",
+  "compressed_bytes": 570160,
+  "uncompressed_bytes": 29180085,
+  "format": "Lossless immutable ancestor catalog, full live overlays and full event traces"
+}

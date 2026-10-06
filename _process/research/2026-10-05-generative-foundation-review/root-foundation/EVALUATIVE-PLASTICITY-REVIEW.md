@@ -58,3 +58,27 @@ These byte identities record the reviewed drafts before implementation. A later 
 | Canonical prospective explanation | `b8805e42af6218c9f909cc742dceb63bdf850615b10cf55e9a0073e1e607fea2` |
 
 [protocol]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/DRAFT-PROTOCOL.md
+
+## Resumed pre-execution check after checkpoint 98fd104
+
+The earlier review and reviewed drafts are preserved in checkpoint `98fd104`. This section supersedes only the earlier statement that literal cases awaited review. It does not convert prospective design acceptance into a result.
+
+The [literal cases][cases] agree with the protocol: eleven named cases, twenty-two case/variant combinations, three inherited primary producer modes, and exactly the prescribed sequence, write, acquisition, access, funding, source and scope changes. The checks here parsed that specification and checked its counts, literal differences and account partition. They did not execute a schedule, generate outcomes or inspect producer results. The [serialization interface][interface] preserves a single live parent, exact archival ancestry, complete physical-state comparison, separate observer metadata and the same resource/material obligations.
+
+Two ambiguous sentences have now been resolved by explicit reference to the unchanged uptake service law:
+
+1. Once completed training, hardware, idle/ready phase and fuel1 enable the final read, the actor pays that unit **before** discovering unavailable scope, currentness or command agreement. An invalid read consumes the port, pays no assessment bill and issues no action. `scope_loss_before_read` therefore leaves truthful publication intact but still incurs the attempted read's expense. It does not provide free discovery of inapplicability.
+2. After a positive assessment, the permission/current-applicability/ready checks precede the source and funding branches. Source below10 consumes the port without packet loss. With the packet available, an inactive core or fuel below8 incurs the inherited miss: source10 becomes waste, the core becomes inactive, and the port is consumed without RI service spending or receipt. Adding a fuel-at-least8 preventive admission rule would change the inherited law and conceal that failure. Started work retains its inherited escrow-settlement semantics and cannot authorize a second initiation.
+
+The unexecuted oracle draft already used those two branches. Source review also found that its raw-return and acquired-bit fields coexisted after acquisition, and that a numeric transmission field persisted inside its port representation. Those fields must not become extra unbacked runtime memory. The interface now requires exactly two reusable physical signal cells: each acquired bit overwrites its own raw-return bit, with validity/type carried by the supplied adapter mode. Transmission is computed from actual links and n, with any saved numeric echo explicitly observer-only and never read by a later controller event. The independent oracle's corrected source freeze and eventual correspondence checks remain separate obligations; this design review does not certify that unfinished executable.
+
+**Prospective verdict:** the operational protocol, literal menu and serialization interface are ready for root freeze and implementation. The independent oracle must be separately preserved before new producer execution/comparison as promised. Construction feasibility, numerical histories, formal proofs and completed acceptance remain pending. No additional case, favorable result, empirical interpretation or completion condition has been introduced.
+
+| Resumed reviewed artifact | SHA-256 |
+|---|---|
+| Explicit-guard protocol | `65a4632842619a979fa78c79b4188886b672ce0a91641dfc1b23bc0cd5f006ff` |
+| Literal cases | `0368eb97e64f9b30b2af73200721fc488fa58e931e81f7c912352137e5b2f561` |
+| Serialization interface | `1a83e314bb43a7385121d3a0921cc40fc93480a9b3e5aa5a944f421cc573b9ad` |
+
+[cases]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/cases.json
+[interface]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/INTERFACE.md

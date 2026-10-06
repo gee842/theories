@@ -1,0 +1,9 @@
+{
+  "status": "initial_producer_source_before_execution",
+  "recorded_utc": "2026-10-06T02:35:45.945041+00:00",
+  "producer_sha256": "526de1c93c1ddeb2e51624e6ba54fafb0953e769d8de6378d00c9b90cc528134",
+  "protocol_freeze_sha256": "f1e5aeac5a966aec04593a54f271e15feff0141a931f302d36dd3d4efe44e0d6",
+  "source_snapshot": "development/producer-initial/model.py",
+  "independence": "Producer new transitions authored without inspecting new independent oracle transitions; accepted ancestor loading/extraction and laws reused as disclosed in INTERFACE.md.",
+  "execution": "No producer or independent-oracle outcomes inspected. Pending independent-oracle freeze and source review."
+}

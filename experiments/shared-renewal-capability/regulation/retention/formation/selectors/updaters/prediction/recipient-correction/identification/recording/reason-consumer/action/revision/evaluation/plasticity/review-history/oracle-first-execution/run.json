@@ -1,0 +1,14 @@
+{
+  "status": "first_independent_execution",
+  "started_utc": "2026-10-06T02:37:01.866917+00:00",
+  "exit_code": 0,
+  "completed_utc": "2026-10-06T02:37:05.876282+00:00",
+  "sources": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "oracle-freeze.json": "ff9bd4228ff7232f99be6105b3ac5ae4e77da25cd633e78d37f36eb03e8ad30d",
+    "stdout.log": "751676300c3d588ecc6297c8fa0a55bb2bbc61b639eb34a1d037f6e116c475ed",
+    "check_model.py": "b82d9a50ea0d067decaea61075393926ee493af6adf31bf86bceab790551f2e6",
+    "SCHEMA.json": "a3c6988ae7db4801ce074f90f045a0fa483e5171855024e663c43dc2744f9f64",
+    "ORACLE-AMENDMENTS.md": "8e71bb441f85f283731dc468811347c949c9e546c3dbf1ce66c800f663a15cbd"
+  }
+}

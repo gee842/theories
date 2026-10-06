@@ -1,0 +1,28 @@
+{
+  "ancestral_law_reference": "accepted revision/evaluation source; no runtime import",
+  "new_producer_imports": [],
+  "new_producer_inspected": false,
+  "root_freeze": {
+    "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/protocol-freeze.json",
+    "sha256": "f1e5aeac5a966aec04593a54f271e15feff0141a931f302d36dd3d4efe44e0d6"
+  },
+  "schedule_executed": false,
+  "source_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-ORACLE-CONTRACT.md": "f952615b4f7a52d2fc452db0989dab4388a84e84a5f539475735b3df6d1b15ef",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-PLASTICITY-SCOPE.md": "b71cf1b269f997e7cf7769b3cba57abed01882b0cae7c623fef927e74e17a30d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/check_model.py": "7a29e481ad98ae2ee3bff8d68059eb591c417705034410cef27dcb615290ca5a",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/check_model.py": "324a5bd055c7af93d182351c5fbe9af11bf9538c755f28f6d8a3e97ad9d3cd1d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/model.py": "69d52407a0ab5a81b01c3d535deda60eddc0c40289e7c2cfeca0e20e89879561",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/DRAFT-PROTOCOL.md": "65a4632842619a979fa78c79b4188886b672ce0a91641dfc1b23bc0cd5f006ff",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/INTERFACE.md": "1a83e314bb43a7385121d3a0921cc40fc93480a9b3e5aa5a944f421cc573b9ad",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/ORACLE-AMENDMENTS.md": "8e71bb441f85f283731dc468811347c949c9e546c3dbf1ce66c800f663a15cbd",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/SCHEMA.json": "a3c6988ae7db4801ce074f90f045a0fa483e5171855024e663c43dc2744f9f64",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/cases.json": "0368eb97e64f9b30b2af73200721fc488fa58e931e81f7c912352137e5b2f561",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/check_model.py": "b82d9a50ea0d067decaea61075393926ee493af6adf31bf86bceab790551f2e6",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/fixtures.json": "4bbc33b4b2e9793b8ff9c188f2f6d10c78557e95b6962afd6ec45a4b1680a5bc",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/model.py": "f57e7ed9ae9df7844926c1c857e233c350395a00484d53dd7d60333723ee7f40",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/result-files.json": "a48b3963f08e79efd72f697d5587945499f732237e383a1b53b32637a4e72328"
+  },
+  "status": "independent_transition_oracle_authored_not_executed",
+  "timestamp_utc": "2026-10-06T02:36:31.235684+00:00"
+}
