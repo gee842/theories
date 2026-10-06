@@ -369,8 +369,41 @@ The per-generation sustainment and inheritance that §16 supplied as hypotheses 
 
 So the §5 question has a precise answer at this scope. Support constrains which *populations* of formed kinds can continue. A kind, or the valuation that selects it, persists by belonging to such a population, whatever its own balance.
 
-**Scope.** This connects the valuation study's lineage account, not its selection-and-retention organizations, to the shared process. The study's organizations are embedded in the core by the separate `ValuationInCore` work. Two things are not built here: valuations selecting *which* kinds a channel process forms, and a theorem that a valuation forming only short kinds outside every self-renewing population loses them. The latter follows from `no_keeping_population_deadline` once the selection is expressed as a set of designated kinds. The study now has 117 core-Lean results across six modules, none with custom axioms. No empirical or ethical claim is made.
+**Scope.** This connects the valuation study's lineage account, not its selection-and-retention organizations, to the shared process. The study's organizations are embedded in the core by the separate `ValuationInCore` work. Valuations selecting *which* kinds a channel process forms are built in §18. The study now has 117 core-Lean results across six modules, none with custom axioms. No empirical or ethical claim is made.
+
+## 18. No supplied inputs: valuations decide what the process forms
+
+Ren's standing rule of 6 October 2026: no assumptions and no axioms. Every input a result relies on must be derived in Lean from the process, or proved necessary for the stated claim. §17 left one input supplied. In the renewal executions, the list of kinds formed on each tick came with the execution. The [valuation–renewal module](../../../../experiments/valuation-development/lean/ValuationRenewal.lean) derives it, adding 5 core-Lean results.
+
+**Construction.** A valuation reads the current configuration and selects which kinds to form. The process forms them when two conditions hold: what is held plus what arrives covers the formation demand, and each formed kind has a supporter that survives the tick. Otherwise it forms nothing. What is held afterwards is what was held, plus what arrived, minus what was formed. Every valuation, from every starting configuration within span, therefore determines one execution of the shared channel process (`valuation_step`, `valExecution`). Nothing about the formation sequence is supplied any more.
+
+**Results (general).**
+- `valuation_keeping_theorem`: with finitely many kinds and spans between one and `D`, some valuation keeps a designated kind alive forever exactly when some self-renewing population contains it. A constant valuation that forms that population on every tick suffices, and it needs no starting reserve (`constant_valuation_steady`).
+- `every_valuation_loses`: without such a population, every valuation, from every starting configuration, loses the designated kind by the explicit time of the renewal theorem.
+- `valuing_is_not_keeping` (on the renewal thread's witnesses): no valuation of `lapsingCorrection` keeps the correction kind, however it values it. In `danglingSupport`, a valuation keeps the short kind alive by also forming the kind whose arrivals sustain it.
+
+**Reading.** What the process keeps is a property of the valuation's whole population, not of the valued kind. A valuation that forms only what it values can lose it; a valuation that also forms what sustains the valued kind can keep it. This is the formal version, on the shared process, of the claim that constraint on valuations comes from support, without an analyst's reward.
+
+**Status of every input under the rule.**
+
+| Input | Status |
+|---|---|
+| Which kinds are formed | Derived from a valuation in the process (this section). |
+| Per-generation support balance (U1) and inheritance for the renewal process | Derived: U1 is part of the channel step (`channel_account_law`), and inheritance holds exactly along one history (§17). |
+| Per-generation balance for an arbitrary process | A hypothesis of the general theorem, quantified over every process. It is a premise only where a process does not itself satisfy it. |
+| Inheritance in the abstract lineage account (§16) | Proved necessary: `lineage_needs_inheritance`. |
+| Persistent exploration (`r < q`) in P2 | Proved necessary by the deterministic limit: greedy choice never covers (`greedy_low_never_covers`). |
+| Coverage in E1 | Proved necessary: `no_coverage_keeps_initial`, `greedy_stale_after_change`. |
+| Unchanging consequences in E1 | Proved necessary: `after_change_unreached_stale`. |
+| Contraction in C1 | Used only for the stated direction. A one-unit amplification witness shows what happens when selection differs. |
+| Finitely many kinds and a span bound in the renewal theorem | Hypotheses of the renewal thread's theorem. Its `infiniteChain` witness shows renewal without closure when kinds are unbounded. |
+| The numbers of a channel law (kinds, rates, spans, demands) | Quantified over: the theorems hold for every law. Deriving particular values from the native process belongs to the process-law work. |
+| Decidability of the support relation | A computability condition for running a valuation. Every finite law meets it. |
+| The particular organizations and worlds of the witnesses | Not premises: each witness proves an existence claim. |
+| `propext`, `Quot.sound` | Lean's standard logical axioms, reached through `simp` and `omega`. There are no custom axioms, no `sorry` and no `native_decide`. |
+
+The study now has 122 core-Lean results across seven modules. The remaining frontier under the rule is outside the valuation study. Kinds and rates are to be derived from the native process by the process-law work. Whether `simp` and `omega` should be replaced so that even the standard axioms are avoided is a choice about the whole project.
 
 ## Verification
 
-From `experiments/valuation-development/lean/`, with Lean 4.29.1 core and no Lake project or Mathlib, follow the commands in the [companion README](../../../../experiments/valuation-development/README.md). The [first audit output](../../../../experiments/valuation-development/lean/audit-output.txt) lists all 33 `#print axioms` results for §§1–11, the [closed-loop audit output](../../../../experiments/valuation-development/lean/closed-loop-audit-output.txt) lists the 11 results for §12, the [exploration audit output](../../../../experiments/valuation-development/lean/exploration-audit-output.txt) lists the 11 results for §13, the [completion audit output](../../../../experiments/valuation-development/lean/completion-audit-output.txt) lists the 15 results for §14, the [bridges audit output](../../../../experiments/valuation-development/lean/bridges-audit-output.txt) lists the 33 results for §16, and the [lineage audit output](../../../../experiments/valuation-development/lean/lineage-audit-output.txt) lists the 14 results for §17. These are formal checks of the stated representations, not empirical evidence. Finite witnesses establish only that the stated countermodel exists.
+From `experiments/valuation-development/lean/`, with Lean 4.29.1 core and no Lake project or Mathlib, follow the commands in the [companion README](../../../../experiments/valuation-development/README.md). The [first audit output](../../../../experiments/valuation-development/lean/audit-output.txt) lists all 33 `#print axioms` results for §§1–11, the [closed-loop audit output](../../../../experiments/valuation-development/lean/closed-loop-audit-output.txt) lists the 11 results for §12, the [exploration audit output](../../../../experiments/valuation-development/lean/exploration-audit-output.txt) lists the 11 results for §13, the [completion audit output](../../../../experiments/valuation-development/lean/completion-audit-output.txt) lists the 15 results for §14, the [bridges audit output](../../../../experiments/valuation-development/lean/bridges-audit-output.txt) lists the 33 results for §16, the [lineage audit output](../../../../experiments/valuation-development/lean/lineage-audit-output.txt) lists the 14 results for §17, and the [valuation–renewal audit output](../../../../experiments/valuation-development/lean/valuation-renewal-audit-output.txt) lists the 5 results for §18. These are formal checks of the stated representations, not empirical evidence. Finite witnesses establish only that the stated countermodel exists.
