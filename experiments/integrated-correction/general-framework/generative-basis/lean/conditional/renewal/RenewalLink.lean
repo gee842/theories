@@ -121,7 +121,7 @@ def executionSupport {law : ChannelLaw Kind} (X : Execution law) : OccurrenceSup
 theorem live_late_has_recent_formation {law : ChannelLaw Kind} (X : Execution law)
     (D : Nat) (spanBound : ∀ k, law.span k ≤ D) {t : Nat}
     (live : Live (X.states t)) (late : D < t) :
-    ∃ k s, (executionSupport X).occurs k s ∧ t < s + D := by
+    ∃ k s, (executionSupport X).occurs k s ∧ s ≤ t ∧ t < s + D := by
   obtain ⟨tok, member, alive⟩ : ∃ tok, tok ∈ (X.states t).tokens ∧ 1 ≤ tok.remaining := by
     unfold Live at live
     generalize (X.states t).tokens = l at live
@@ -142,7 +142,7 @@ theorem live_late_has_recent_formation {law : ChannelLaw Kind} (X : Execution la
   | inr formedEarlier =>
     obtain ⟨m, earlier, inTick, spanEq⟩ := formedEarlier
     have bound := spanBound tok.kind
-    exact ⟨tok.kind, m + 1, Or.inr ⟨m, rfl, inTick⟩, by omega⟩
+    exact ⟨tok.kind, m + 1, Or.inr ⟨m, rfl, inTick⟩, earlier, by omega⟩
 
 /-- **Renewal carries a realized closure.** In any execution with finitely many
 kinds and spans at most `D`, a live configuration after `(n + 1) · D` descends
@@ -156,13 +156,15 @@ theorem live_late_descends_from_realized_closure [DecidableEq Kind]
     ∃ j cycle, cycle ≠ [] ∧
       Walk (fun a b => law.edge a b ∧ 2 ≤ law.span a) j (j :: cycle) j ∧
       DependenceClosed (fun a b => law.edge a b ∧ 2 ≤ law.span a) cycle ∧
-      ∀ v, v ∈ cycle → ∃ s, (executionSupport X).occurs v s ∧ t < s + (U.length + 1) * D := by
+      ∀ v, v ∈ cycle → ∃ s, (executionSupport X).occurs v s ∧ s ≤ t ∧
+        t < s + (U.length + 1) * D := by
   have Dbound : D < t := by
     have : D ≤ (U.length + 1) * D := by
       rw [Nat.succ_mul]
       exact Nat.le_add_left _ _
     omega
-  obtain ⟨k, s, occ, recent⟩ := live_late_has_recent_formation X D spanBound live Dbound
+  obtain ⟨k, s, occ, sBefore, recent⟩ :=
+    live_late_has_recent_formation X D spanBound live Dbound
   have reachBound : ∀ j, (executionSupport X).reach j ≤ D := by
     intro j
     have := spanBound j
@@ -176,8 +178,8 @@ theorem live_late_descends_from_realized_closure [DecidableEq Kind]
       occ lateS
   refine ⟨j, cycle, nonempty, loop, closed, ?_⟩
   intro v member
-  obtain ⟨r, occV, near⟩ := window v member
-  refine ⟨r, occV, ?_⟩
+  obtain ⟨r, occV, before, near⟩ := window v member
+  refine ⟨r, occV, Nat.le_trans before sBefore, ?_⟩
   rw [Nat.succ_mul]
   omega
 
@@ -207,7 +209,7 @@ theorem endless_renewal_needs_closure_and_adequate_kind [DecidableEq Kind]
       ∃ j cycle, cycle ≠ [] ∧
         Walk (fun a b => law.edge a b ∧ 2 ≤ law.span a) j (j :: cycle) j ∧
         DependenceClosed (fun a b => law.edge a b ∧ 2 ≤ law.span a) cycle ∧
-        ∀ v, v ∈ cycle → ∃ s, (executionSupport X).occurs v s ∧
+        ∀ v, v ∈ cycle → ∃ s, (executionSupport X).occurs v s ∧ s ≤ t ∧
           t < s + (U.length + 1) * D := by
   refine ⟨?_, fun t late => live_late_descends_from_realized_closure X U complete D spanBound
     (alive t) late⟩
