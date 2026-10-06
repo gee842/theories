@@ -1,0 +1,457 @@
+{
+  "status": "accepted explanatory synthesis and scoped integration",
+  "scope": "Common causal argument and actual composition map, with separately accepted positive application synthesis credited; not whole-foundation acceptance, new scientific evidence or acceptance of the ongoing application-evidence proof.",
+  "scientific_runs_performed": false,
+  "review": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+  "current_sources_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md": "dddce1d9239397abf62a291825e70b0ffeb1d6964bb9b6a0c29584275ed6faf6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md": "044a55c5e82f4c38610820a86b2b1df4b1afee4f80ff3b3066e35f7b751f960b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md": "33f39c8385555ca8b270b2b68ada2dd6f3b503d67df1d07e1ed97aa81412bedf"
+  },
+  "reviewed_fragments_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md": "6326e285638c0b2ac5bb21950b2009d77fb347594cc13c882dbc7352e75b0aa4",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md": "594176a0895ee544094de31e968c95764f0fb5658f6aa34caa55c7e16a87b103",
+    "RESEARCH.md": "185419013f66e0db6c83aba6a6547f876a932e69345fafa5f332b4763851232c",
+    "theories/shengsheng-buxi-generative-existence/README.md": "d013973f72da7a7b494f9a8b6574b9bcae6140a1c9bc70dd822d4d6bc08d060a",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "e8c53876c71f82bf5d02b3465db76a4964a9bf691caacc08c401af2e76040465"
+  },
+  "historical_source_versions": [
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "commit": "98fd104",
+      "sha256": "2dc76db08e9e8748cfc7d4a2f3e605a02006397cc9e228df899faa5fc93e969f"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "commit": "dc4a16c",
+      "sha256": "ddecb8d63388cda33e0ad2ccdfcf7c7ffbd3779e8eac81abae3ea93754531874"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md",
+      "commit": "4211e08",
+      "sha256": "35ce73eb6c55ac1a424f85e7294b7823888fec63714b902a51380df496e6ba9d"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-LEARNING.md",
+      "commit": "f431c7c",
+      "sha256": "5304bfc0a960a24e0e8284252de1ecbf511959412e1b41a883b919ade2932c8d"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-PREDICTION-COMPOSITION.md",
+      "commit": "219a6e1",
+      "sha256": "04eae81a4229084879544e63c307db91cbfe0949fafacc8ba24a2c46bc75ad15"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-REVISION.md",
+      "commit": "0e704d6",
+      "sha256": "a5dc9b9dcb277332dbe4e9b56732ba1a5ae3411bd7a162c87624eca890cfceb3"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md",
+      "commit": "23148d6",
+      "sha256": "4e49a1a31fd9961e90d0c4add1c1bd32a15668c3ef23c7a62bdaf91efcfc54a3"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md",
+      "commit": "dc4a16c",
+      "sha256": "1303714069534bb60bef8d0eec07443481d8bc037cb085a5685215ee644d5a6e"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md",
+      "commit": "bfe42fa",
+      "sha256": "dba30849aaa362ad191cd91b44d69a3b4c3575de20230fba18194b03e706cf39"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REASON-PROTECTION.md",
+      "commit": "b2b3b38",
+      "sha256": "cc4e93cc518ee25309efaba1e41c9e43ac9a2009569359149f5317904268bd9f"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md",
+      "commit": "79f36bb",
+      "sha256": "63304e87d85fb196175f7c24651dfee0db69fbf045ca221d122640476c06a11a"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md",
+      "commit": "6e175eb",
+      "sha256": "7e20e0a0d875d4bfc820736c0775be3da93af54e9e45a065e449dbf0ba8909ba"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-WISDOM-INPUTS.md",
+      "commit": "dc4a16c",
+      "sha256": "3a1b6f7c1a7b70135f1516c80fd4cd99f3becf168e77f906b02c9eb88308e40b"
+    }
+  ],
+  "fixed_completion_conditions_unchanged_from": "23148d6",
+  "relative_links": [
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPLETION-AUDIT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "DEEPER-GENERATIVE-ROOT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "MATHEMATICAL-TRUTH-AND-THE-ROOT.md#resolution-of-the-remaining-bridges"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "DEEPER-GENERATIVE-ROOT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "GENERATIVE-CORE-LEAN.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "PROTOCOL-COMPOSITION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "PROTOCOL-COMPLETION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "CONDITIONAL-UNIVERSALITY.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "LEARNING-INTERFACE.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "MATERIAL-UPDATER-COMPOSITION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "../../../_process/research/2026-10-05-concern-theory/RECORDING-FIDELITY-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "PREDICTION-ACTION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "JOINT-OBSTRUCTIONS.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "REVISABLE-CONCERN-SETTLEMENT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "ETHICAL-FOUNDATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "FORMAL-CORE.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "LEARNING-ROUTE-REVISION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "RECIPIENT-REASON-REVISION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "EVALUATIVE-UPTAKE.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "EVALUATIVE-APPLICATION.md#an-existing-witness-of-correction-and-feasible-choice"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "EVALUATIVE-SUCCESSION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "RECIPIENT-RENEWAL.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "EVALUATIVE-APPLICATION.md#correct-command-withdrawn-application"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "CYBERNETICS.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "LEARNING-INTERFACE.md#5-joining-the-general-account-to-actual-formation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "../../../_process/research/2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "LEARNING-INTERFACE.md#3-indistinguishability-constrains-revision"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "PREDICTION-ACTION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "LEARNING-ROUTE-REVISION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "CONTROLLED-REFINEMENT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "PROTOCOL-COMPLETION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "EVALUATIVE-UPTAKE.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "EVALUATIVE-SUCCESSION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "EVALUATIVE-APPLICATION.md#when-the-application-is-functionally-recognized"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md",
+      "target": "EVALUATIVE-APPLICATION.md#an-existing-witness-of-correction-and-feasible-choice"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONDITIONAL-UNIVERSALITY.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/REGULATION-RETENTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-PREDICTION-COMPOSITION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-LEARNING.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-REVISION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-RENEWAL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REASON-PROTECTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "target": "CONCERN-WISDOM-INPUTS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md#7-the-connected-explanatory-argument"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "FOUNDATION-COMPOSITION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-INTERFACE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONTROLLED-REFINEMENT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/CONSEQUENCE-RETENTION-SELECTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-PREDICTION-COMPOSITION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-LEARNING.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/model.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REASON-PROTECTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md#connected-explanation-and-actual-composition-6-october-2026"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../RESEARCH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/README.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md",
+      "target": "FOUNDATION-PREMISES.md#7-the-connected-explanatory-argument"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/START-HERE.md",
+      "target": "EVALUATIVE-APPLICATION.md#from-acquired-understanding-to-warranted-revisable-choice"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md",
+      "target": "FOUNDATION-PREMISES.md#7-the-connected-explanatory-argument"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md",
+      "target": "EVALUATIVE-APPLICATION.md#from-acquired-understanding-to-warranted-revisable-choice"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYNTHESIS-RECORD.md",
+      "target": "EVALUATIVE-APPLICATION.md#what-wisdom-adds"
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md#7-the-connected-explanatory-argument"
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md"
+    },
+    {
+      "source": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/FOUNDATION-PREMISES.md#7-the-connected-explanatory-argument"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "FOUNDATION-PREMISES.md#7-the-connected-explanatory-argument"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-CONNECTION-REVIEW.md"
+    }
+  ],
+  "counts": {
+    "historical_source_versions": 13,
+    "checked_relative_links_including_anchors": 91
+  },
+  "remaining_connection": "Formation and justification of evaluative connections, warranted revisable practical use and evidence supporting the claimed common scope."
+}
