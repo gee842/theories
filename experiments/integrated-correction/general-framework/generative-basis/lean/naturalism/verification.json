@@ -1,16 +1,13 @@
 {
-  "checked_at_utc": "2026-10-06T20:42:31.661982+00:00",
+  "checked_at_utc": "2026-10-06T20:51:01.031611+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "checker_sha256": "7bbb30f7fac2839602f1b197485759445a4ae5568c4881996a095780b6ed17ca",
+  "checker_sha256": "37d84d678291e69f569ddb8316ff15569438714a76ec2210ef465468fca75599",
   "source_unchanged_during_check": true,
   "fresh_temporary_build": true,
-  "allowed_standard_axioms": [
-    "Quot.sound",
-    "propext"
-  ],
+  "allowed_standard_axioms": [],
   "modules": [
     {
       "module": "GenerativeCore",
@@ -80,63 +77,54 @@
     {
       "module": "WholeQualityNaturalism",
       "source": "WholeQualityNaturalism.lean",
-      "source_sha256": "cb96099235cc69567e9af9f85b5417c207b378536b9f03ee48fb58dfa3513994",
+      "source_sha256": "9dae9ddafed4abcd31be28211a3c6b3516dc527537f048821d5f804194bdc967",
       "exit_code": 0,
       "new": true,
-      "dependency_audits": 23,
-      "axioms": [
-        "Quot.sound",
-        "propext"
-      ],
-      "empty_axiom_audits": 20,
+      "dependency_audits": 25,
+      "axioms": [],
+      "empty_axiom_audits": 25,
       "clean": true,
       "output": "verification/WholeQualityNaturalism.txt",
-      "output_sha256": "93cf38aa26fc1cee11a927e71a81a97d8dd0e5540f6030d4d8d7f4130aee6b14"
+      "output_sha256": "8d731d10b991407aa6e93f2e40e6c1208f3d3c372476381d2e150fcf88641db8"
     },
     {
       "module": "NaturalismIdentity",
       "source": "NaturalismIdentity.lean",
-      "source_sha256": "7f52bb8c9a8e3aceeedeef6b1ff14c5dcf5d3c9bdc7622da1b64be2116736f91",
+      "source_sha256": "e3c975a4197755ba314bf327b8ed475495177534848e11380220893e86e5538b",
       "exit_code": 0,
       "new": true,
       "dependency_audits": 20,
-      "axioms": [
-        "propext"
-      ],
-      "empty_axiom_audits": 19,
+      "axioms": [],
+      "empty_axiom_audits": 20,
       "clean": true,
       "output": "verification/NaturalismIdentity.txt",
-      "output_sha256": "3157ead6a346b0781ee40a7ac9b04eb92f32b0bccc6c8f54e7cc083eb7b1e1f2"
+      "output_sha256": "aa10f711922cc89eee9593629aa51b93c7eba053b8741ad640fb1eb83b558930"
     },
     {
       "module": "NaturalismReview",
       "source": "NaturalismReview.lean",
-      "source_sha256": "6301940e1960a63e0ff3b8a4df7c679129205453d499208abf17fdd56287af36",
+      "source_sha256": "e9e0b6d56396e41750f5fd8d9f208666eef5373f19a1f13a804eafa2896d0053",
       "exit_code": 0,
       "new": true,
       "dependency_audits": 10,
-      "axioms": [
-        "propext"
-      ],
-      "empty_axiom_audits": 6,
+      "axioms": [],
+      "empty_axiom_audits": 10,
       "clean": true,
       "output": "verification/NaturalismReview.txt",
-      "output_sha256": "1f5a02cae0288a7ffba4e045f7785ea507b932a8e5a24d8d4537dd159fad760e"
+      "output_sha256": "50f4a4e29311dd373dd3cdbf9337fb3436ea11c43d7b2719ff213e40b20419a1"
     },
     {
       "module": "ProtectedScope",
       "source": "ProtectedScope.lean",
-      "source_sha256": "be6ef436c4008b06decb7c01fac6f8bdbf2772d32b3c1af4ec0d0fa91fd9fe8c",
+      "source_sha256": "6f6fb7ea3529465e97318348e9a3e62d85920f766e5b391f0bea142b14d8b26e",
       "exit_code": 0,
       "new": true,
-      "dependency_audits": 34,
-      "axioms": [
-        "propext"
-      ],
-      "empty_axiom_audits": 28,
+      "dependency_audits": 35,
+      "axioms": [],
+      "empty_axiom_audits": 35,
       "clean": true,
       "output": "verification/ProtectedScope.txt",
-      "output_sha256": "ce85f18ff86f621427b4d79a884562ee31f6cf00cf1005d04ef3a3ff4a8c7c86"
+      "output_sha256": "3fba9bbd085468f370aab51711047f1667273b893767866a99d770b470d73824"
     },
     {
       "module": "ProtectedScopeLimits",
@@ -150,9 +138,22 @@
       "clean": true,
       "output": "verification/ProtectedScopeLimits.txt",
       "output_sha256": "24ec9f119606a68ac6355df2099850dc71c5dd24e946ce5d99228ad39bf681e0"
+    },
+    {
+      "module": "PremiseNecessity",
+      "source": "PremiseNecessity.lean",
+      "source_sha256": "1ed08ac3223a9e126c1d6065053076974f2b2548f55881b25ffe28efb64688da",
+      "exit_code": 0,
+      "new": true,
+      "dependency_audits": 9,
+      "axioms": [],
+      "empty_axiom_audits": 9,
+      "clean": true,
+      "output": "verification/PremiseNecessity.txt",
+      "output_sha256": "aac159a0e4022bc72ca84686849fd83449f9abaaec5771c22374d8f3166223d1"
     }
   ],
-  "new_audited_declarations": 93,
-  "new_empty_axiom_audits": 79,
-  "scope": "Supervenience is factorization through base-identity classes; a step quality along a history is a function of its visited states, composes through the shared boundary, is invariant under exact re-representation, and is not fixed by endpoints and action word; damage-free histories keep every initially realizable activity realizable throughout, and every loss is located at an actual transition. These credentials hold equally for the converse orientation. Under the stated non-undermining premise over the whole scope of activities, admissible orientations are exactly sub-relations of continuation inclusion; fixed scopes and complete (including scalar) rankings fail it in finite examples, including over actual transitions. The structural credentials hold for every step relation; continuation inclusion registers restraint, every exclusive choice and every recovered dip as damage. A scope derived from the process (ongoing activities that remove no other ongoing activity, with eventual realizability) separates restraint from harm only with every activity in scope and only in a process where the victim removes nothing, and separates untaken from carried courses only with the exercised scope; no single scope does both, symmetric rivals stay unprotected, and unrecovered falls are not damage. No moral predicate is formalized: the premise, the supervenience of moral properties, property identity and any ethical verdict are not asserted."
+  "new_audited_declarations": 105,
+  "new_empty_axiom_audits": 105,
+  "scope": "Supervenience is factorization through base-identity classes; a step quality along a history is a function of its visited states, composes through the shared boundary, is invariant under exact re-representation, and is not fixed by endpoints and action word; damage-free histories keep every initially realizable activity realizable throughout, and every loss is located at an actual transition. These credentials hold equally for the converse orientation. Under the stated non-undermining premise over the whole scope of activities, admissible orientations are exactly sub-relations of continuation inclusion; fixed scopes and complete (including scalar) rankings fail it in finite examples, including over actual transitions. The structural credentials hold for every step relation; continuation inclusion registers restraint, every exclusive choice and every recovered dip as damage. A scope derived from the process (ongoing activities that remove no other ongoing activity, with eventual realizability) separates restraint from harm only with every activity in scope and only in a process where the victim removes nothing, and separates untaken from carried courses only with the exercised scope; no single scope does both, symmetric rivals stay unprotected, and unrecovered falls are not damage. The orientation input and the whole-scope input are proved necessary: the credentials do not determine the verdict, and unprivileged scopes include both the empty and the whole scope. No moral predicate is formalized: the premise, the supervenience of moral properties, property identity and any ethical verdict are not asserted."
 }

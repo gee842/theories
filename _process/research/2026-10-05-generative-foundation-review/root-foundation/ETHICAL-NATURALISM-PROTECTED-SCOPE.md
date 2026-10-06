@@ -1,6 +1,6 @@
 # 受保护活动的范围：从过程本身导出的一次尝试
 
-2026年10月6日。AI 撰写，接续[伦理自然主义研究](ETHICAL-NATURALISM.md)第 5.4 节，回应 Ren 的"请继续"。形式部分是 [`ProtectedScope.lean`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/ProtectedScope.lean) 和 [`ProtectedScopeLimits.lean`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/ProtectedScopeLimits.lean)。两者共 40 条新审计：34 条不依赖任何公理，6 条只依赖 `propext`；无 `sorry`、无自定义公理。整个包现为 93 条审计。
+2026年10月6日。AI 撰写，接续[伦理自然主义研究](ETHICAL-NATURALISM.md)第 5.4 节，回应 Ren 的"请继续"。形式部分是 [`ProtectedScope.lean`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/ProtectedScope.lean) 和 [`ProtectedScopeLimits.lean`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/ProtectedScopeLimits.lean)。两者共 41 条新审计，按 Ren 的无公理规则改写后全部不依赖任何公理；无 `sorry`。整个包现为 105 条审计，均不依赖公理（改写记录见[伦理自然主义研究第 8 节](ETHICAL-NATURALISM.md#8-剩余输入的处理ren-的无假设无公理规则)）。
 
 **审查状态。** 合并前经过一次独立 AI 审查。审查确认全部定理成立，但指出两处阻断性的表述过度，并给出四个反例，现都已证明并保留在 `ProtectedScopeLimits.lean` 中。本文按审查改写。**本轮的总体结果是否定性的：** 这个由过程导出的范围不能同时消除首轮的反例，而且它对伤害的判断依赖建模方式。
 
