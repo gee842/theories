@@ -6,11 +6,11 @@ AI-assisted rename at [Ren's direction](../../../../../../../sources/15-codex-th
 
 - `sources/`: the exact pre-rename bytes of every changed Lean and Python file and of the regenerated JSON data, at their paths below `experiments/`.
 - `receipts/`: the pre-rename receipts and compiler logs of the conditional, native-port and renewal packages, and the process-law, contact-formation and phase-cycle receipts.
-- [before-audits.json](before-audits.json): `#print axioms` for every declaration in the 48 affected modules, built from the preserved sources (`python3 check.py --record-before` rebuilds it).
+- [before-audits.json](before-audits.json): `#print axioms` for every declaration in the 49 affected modules, built from the preserved sources (`python3 check.py --record-before` rebuilds it).
 
 ## What the check shows
 
-[check.py](check.py) rebuilds the current sources of the 48 modules (all modules whose identifiers changed plus their import closures) in a fresh temporary directory, with Lean 4.29.1. Every audited declaration must report exactly the axioms it reported before, under the declared renames, and every build must be warning-free. The [receipt](receipt.json) records: 48 modules, 963 audits, 48 renamed declarations, no mismatches. Statements and proofs are unchanged; only names and comments changed.
+[check.py](check.py) rebuilds the current sources of the 49 modules (all modules whose identifiers changed plus their import closures) in a fresh temporary directory, with Lean 4.29.1. Every audited declaration must report exactly the axioms it reported before, under the declared renames, and every build must be warning-free. The [receipt](receipt.json) records: 49 modules, 971 audits, 48 renamed declarations, no mismatches. Statements and proofs are unchanged; only names and comments changed.
 
 `SupportedRevision.lean` needs Mathlib and is not built here. Its change is four imported-name substitutions, visible by comparing it with the preserved source.
 

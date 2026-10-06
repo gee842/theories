@@ -1,11 +1,11 @@
 {
-  "checked_at_utc": "2026-10-06T20:24:18.143862+00:00",
+  "checked_at_utc": "2026-10-06T20:31:51.782709+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler_sha256": "3e0d0d3d801675359f2d4cf9815bfdb417b20b92fdd9d48b3b14c95bbae28bbf",
-  "checker_sha256": "f36827c2cb3e28d3763da6487daf149ed5f1f60f4b25e1c554dbc0ae6a61bb0c",
-  "modules": 48,
-  "audits": 963,
+  "checker_sha256": "0a270e9e75d8e062b8ca1a70d9337cf167baf5c40f025d229705e69525f5d4e0",
+  "modules": 49,
+  "audits": 971,
   "renamed_declarations": 48,
   "mismatches": [],
   "rows": [
@@ -390,6 +390,14 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
       "source_sha256": "327cfcd02d8f7deaf4c4bc45a95c12888c6e1241362ed14806dc5781ce32f94d",
       "audits": 52,
+      "renamed": 0,
+      "matches_before_under_renames": true
+    },
+    {
+      "module": "ValuationInCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ValuationInCore.lean",
+      "source_sha256": "f611ad79a969d5d5f7237e2c114cde4778d7f074b7a606c4c8d5acdd8aaefeea",
+      "audits": 8,
       "renamed": 0,
       "matches_before_under_renames": true
     }

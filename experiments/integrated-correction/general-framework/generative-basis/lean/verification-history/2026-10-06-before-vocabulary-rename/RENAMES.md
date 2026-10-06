@@ -1,6 +1,6 @@
 # Vocabulary renames, 6 October 2026
 
-At [Ren's direction](../../../../../../../sources/15-codex-theory-conversations/2026-10-07-market-names-and-continuation.md), market and exchange names were replaced with names for what the activity does. Only names changed: every audited declaration reports the same axioms as before ([check.py](check.py), [receipt.json](receipt.json): 48 modules, 963 audits, 48 renamed declarations, no mismatch).
+At [Ren's direction](../../../../../../../sources/15-codex-theory-conversations/2026-10-07-market-names-and-continuation.md), market and exchange names were replaced with names for what the activity does. Only names changed: every audited declaration reports the same axioms as before ([check.py](check.py), [receipt.json](receipt.json): 49 modules, 971 audits, 48 renamed declarations, no mismatch).
 
 ## Core vocabulary
 

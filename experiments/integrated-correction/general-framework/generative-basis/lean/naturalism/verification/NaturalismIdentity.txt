@@ -1,0 +1,20 @@
+'Generative.Naturalism.converse_projection_iff' does not depend on any axioms
+'Generative.Naturalism.dip_two_dominates_one' does not depend on any axioms
+'Generative.Naturalism.naturalist_criteria_do_not_fix_orientation' depends on axioms: [propext]
+'Generative.Naturalism.nonUndermining_whole_iff' does not depend on any axioms
+'Generative.Naturalism.generation_order_greatest' does not depend on any axioms
+'Generative.Naturalism.unprivileged_scope_is_whole_scope' does not depend on any axioms
+'Generative.Naturalism.guided_history_preserves' does not depend on any axioms
+'Generative.Naturalism.converse_undermines_in_dip' does not depend on any axioms
+'Generative.Naturalism.novel_listed_feasible' does not depend on any axioms
+'Generative.Naturalism.novel_further_at_true' does not depend on any axioms
+'Generative.Naturalism.novel_no_further_at_false' does not depend on any axioms
+'Generative.Naturalism.fixed_scope_permits_loss' does not depend on any axioms
+'Generative.Naturalism.incomparable_own' does not depend on any axioms
+'Generative.Naturalism.incomparable_not_other' does not depend on any axioms
+'Generative.Naturalism.generation_leaves_pair_unranked' does not depend on any axioms
+'Generative.Naturalism.total_orders_undermine' does not depend on any axioms
+'Generative.Naturalism.scalar_ranking_undermines' does not depend on any axioms
+'Generative.Naturalism.restraint_live_words' does not depend on any axioms
+'Generative.Naturalism.restraint_only_live_from_restrained' does not depend on any axioms
+'Generative.Naturalism.restraint_registers_as_damage' does not depend on any axioms

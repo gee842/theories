@@ -21,7 +21,7 @@ SEARCH = ["experiments/integrated-correction/general-framework/generative-basis"
 ROOTS = ["GenerativeDerivedProcessLawModel", "RenewalExamples", "SupportNecessity",
          "NativePortContinuation", "PatientConcern", "ControllerRevision", "FormationSupport",
          # Modules that reached main while the rename was in progress, renamed on merge.
-         "PortValuation", "PhaseCycleDerivation"]
+         "PortValuation", "PhaseCycleDerivation", "ValuationInCore"]
 SKIP = re.compile(r"/(runs?|sources|verification[^/]*|legacy-replays|[^/]*-checks|[^/]*-runs|"
                   r"snapshots?|adaptive-verification|[^/]*-development)(/|$)")
 

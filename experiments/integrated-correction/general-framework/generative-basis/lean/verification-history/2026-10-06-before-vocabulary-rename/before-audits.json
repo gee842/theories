@@ -1593,5 +1593,18 @@
    "Generative.InquirySufficiency.PhaseCycleDerivation.rotations_never_restore_whole": [],
    "Generative.InquirySufficiency.PhaseCycleDerivation.phase_recurs_whole_does_not": []
   }
+ },
+ "ValuationInCore": {
+  "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/ValuationInCore.lean",
+  "audits": {
+   "Generative.ValuationInCore.orgProcess": [],
+   "Generative.ValuationInCore.orgProcess_total": [],
+   "Generative.ValuationInCore.trace_iff_run": [],
+   "Generative.ValuationInCore.run_is_trace": [],
+   "Generative.ValuationInCore.retained_disposition_constant": [],
+   "Generative.ValuationInCore.retained_disposition_not_history_dependent": [],
+   "Generative.ValuationInCore.history_dependence_needs_changed_coordinate": [],
+   "Generative.ValuationInCore.no_retention_is_retained_identity": []
+  }
  }
 }
