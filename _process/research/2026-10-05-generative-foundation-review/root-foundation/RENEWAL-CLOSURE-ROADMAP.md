@@ -16,8 +16,23 @@ The existing results bound continuation but do not characterize renewal.
 | `conditional/SupportNecessity.lean` | Bounded lifetimes plus a supplied strict type rank give a finite deadline; there are also checked examples of a renewing cycle, an infinite acyclic chain and external arrivals | The file states "No finite-graph cycle-extraction theorem is claimed here." The rank is supplied, not derived from acyclicity |
 | `NativePortContinuation.lean` (branch `claude/project-thread-x1q9hl`) | The native port obeys U1 with equality; on its own source a potential strictly falls, so it cannot continue indefinitely | The non-renewing baseline. Its contact and gate are fixed, so nothing in it is renewed |
 | `FormationClosure.lean` (branch `claude/project-thread-mlqbun`) | A coordinate retained by every step changes only through formation events (`law_constant`, `change_requires_formation`). A contact can form from the port's own recorded failures | Formation of one constraint from waste. The forming mechanism is not itself renewed, so there is no closure |
+| `PhaseCycleDerivation.lean` (branch `claude/ground-process-law-za6m9z`) | A change that keeps a finite configuration's distinctions closes into cycles. Three is the smallest period that supports diagnosis. The phase returns after three steps | The phase recurs but the configuration does not, because each step draws on sustaining capacity. **Recurrence is not renewal**, and this is the precise baseline for that distinction |
+| `AcquiredInitiationConstraint.lean`; `InitiationFixtures.same_protected_completion_different_generated_relation` ([NONINSTRUMENTAL-CONCERN §15](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#15-整体积分与局部启动的边界)) | One new start can remove a completion that was reachable (`one_unit_start_forecloses_B`). Two endpoints with the same protected completion and the same final support differ in what they generated: in one, a formed A can never continue | The local projection does not represent the whole. What is missing is a property of the whole configuration: which of its formed conditions can still continue or be renewed |
 
 The gap is exact. We can prove that continuation needs provision, and that an acyclic dependency structure dies. We cannot yet say what *suffices*, or what the precise boundary between renewing and non-renewing organization is.
+
+### 1.1 What this serves: the whole unfolding
+
+Ren has set the research center ([NONINSTRUMENTAL-CONCERN §15](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#15-整体积分与局部启动的边界); [the whole-integral correction](../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正)): **how the whole unfolding generates or damages the conditions of its later realization, renewal and correction.** The object of appraisal is the whole process. Purposes, understanding and evaluation form and change within it. No single expectation, and no sum of expectations, is fixed in advance as the whole's unit of value. An assumption-free universal account of this whole quality is not finished.
+
+研究中心：**整个展开怎样生成或损害其后续实现、更新与纠正的条件。** 评价对象是整个生成历程；目的、理解和评价本身也在其中形成和改变。
+
+The renewal theorem serves this center in a specific, limited way:
+
+- **It supplies a property of whole configurations, not of goals.** Phase 2b defines when a whole configuration (every formed constraint, reserve and stalled structure together) can still renew the conditions of its activity from within. The §15 counterexample shows that no goal-projection captures this. Two endpoints with the same protected completion differ exactly in what they leave able to continue.
+- **It covers the conditions of correction too.** Records, readers and other means of correction are constraints in this model: retained coordinates that enable a process and wear over a longer span. So whether correction can continue is decided by the same theorem. This connects the result to the formulation of 智慧 in [THEORY.md §1](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#1-the-foundation): sustaining the conditions under which discernment and correction can continue.
+- **It separates generation from damage.** A history step can move a configuration into the renewable region (a closure forms) or out of it (a closure breaks, or a reserve falls below threshold). That gives constructive and destructive regimes a precise, checkable form at this scope.
+- **It does not supply the whole quality.** §15.4 rejects maximizing continuation, activity counts or future branches as substitutes for the whole comparison. Renewability is a necessary structural ingredient of that comparison, not the appraisal itself. Proper ending, completion and rest are not failures of renewal. The theorem says which conditions remain possible, not which of them should be kept.
 
 ## 2. Closure of constraints, as the comparison point
 
@@ -121,6 +136,18 @@ New package `lean/conditional/renewal/`, importing `GenerativeCore`, `ResourceCo
 - **Exit:** the renewal–closure theorem proved, plus a short note mapping each hypothesis to the result that fails without it.
 - **Changes the plan if:** sufficiency needs extra hypotheses (for example, a limit on births per tick). Those then enter the statement explicitly.
 
+### Phase 2b — Renewability of whole configurations (P, C)
+
+This phase connects the theorem to the research center in §1.1.
+
+1. **Define `Renewable(s)`.** A configuration s is renewable when some renewing history starts from it, with no imported organization. Characterize this set using the main theorem plus reserve thresholds that depend on the configuration.
+2. **Projection is insufficient.** Two configurations can agree on any goal projection (protected completions, final support) and still differ in renewability. Do this first as a constructed instance in constraint–flow form. Then, as a separate interface to prove rather than assume, map the §15 pair from `AcquiredInitiationConstraint`/`InitiationFixtures` into it.
+3. **Generation and damage.** Classify transitions by whether they enter or leave `Renewable`, and prove the local conditions for each: a closure forms, a closure breaks, or a reserve crosses its threshold.
+4. **Conditions of correction.** Include record and reader kinds as constraints, and show when correction capacity is renewable along with the rest of the organization, and when it is not.
+
+- **Exit:** `Renewable` as a predicate on whole configurations, with a characterization, the projection-insufficiency instance and the transition classification. A written statement says it does not rank histories ethically.
+- **Changes the plan if:** the §15 model cannot be mapped into constraint–flow form without losing the relation that distinguishes its two endpoints. That loss would then be recorded as what the constraint–flow representation omits.
+
 ### Phase 3 — Generalize toward realistic organization (P, I)
 
 - **AND-dependence.** Forming a kind can require several constraints at once (hyperedges, like RAF reactions with multiple catalysts). The largest closed set becomes a greatest fixed point over hyperedges.
@@ -151,7 +178,7 @@ New package `lean/conditional/renewal/`, importing `GenerativeCore`, `ResourceCo
 | Demand and arrival quantities | Supplied numbers per kind | Identification evidence, Phase 5 |
 | Which history occurs | Not derived: the theorem is about possibility | Selection and learning are later bridges in the accepted sequence |
 
-The theorem does not say renewal is good, that systems choose to renew, or that any real organism satisfies the premises. It says exactly when renewal of the conditions of activity is possible under them.
+The theorem does not say renewal is good, that systems choose to renew, or that any real organism satisfies the premises. It says exactly when renewal of the conditions of activity is possible under them. Renewability of the whole configuration (Phase 2b) is one ingredient of the whole-unfolding appraisal Ren has set as the center. It is not that appraisal, and it is not an assumption-free universal proof of it.
 
 ## 8. What would change the account
 
@@ -169,4 +196,4 @@ Suggested allocation; the coordinator assigns.
 
 Before the next central connection is selected, each phase's result goes into this file's status line and into `RESEARCH.md`.
 
-**Status, 6 October 2026:** planned. Phase 0 not started.
+**Status, 6 October 2026:** planned. Phase 0 not started. Revised the same day to serve the whole-unfolding center (§1.1, Phase 2b) after Ren's correction, and to add the phase-cycle and initiation baselines to §1.
