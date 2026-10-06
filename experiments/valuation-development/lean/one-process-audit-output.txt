@@ -1,0 +1,6 @@
+'ValuationDevelopment.run_is_trace' does not depend on any axioms
+'ValuationDevelopment.trace_is_run' does not depend on any axioms
+'ValuationDevelopment.pair_is_one_process' does not depend on any axioms
+'ValuationDevelopment.cut_first' does not depend on any axioms
+'ValuationDevelopment.cut_second' does not depend on any axioms
+'ValuationDevelopment.both_cuts_one_history' does not depend on any axioms
