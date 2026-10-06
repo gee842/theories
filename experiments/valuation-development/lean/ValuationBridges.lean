@@ -14,15 +14,16 @@
   the `q^n` total. Applied to coverage it gives: persistent exploration reaches an
   option with probability at least `1 - (r/q)^n`, and where retention is exact for
   the option reached, the estimate is exact at least that often. Applied to lock-in
-  it gives: under noisy consequences a greedy learner is locked into the worse
-  option with probability at least `1 - (2/3)^n`, which tends to certainty.
+  it gives a witness: under noisy consequences a greedy learner is locked into the
+  worse option with probability at least `1 - (2/3)^n`, which tends to certainty.
 
   Part L (lineage). The per-history prefix bound of CONDITIONAL-UNIVERSALITY §3,
   `D + r(end) ≤ r(start) + C`, is read as a ledger. Ledgers that satisfy it are
   closed under succession (a successor starts with no more than its predecessor
   holds at the end) and under division (children together start with no more than
   the parent holds at the end). Any line or branching family built from sustained
-  generations by these two operations is therefore itself sustained. Where every
+  generations by these two operations is therefore itself sustained; this module
+  formalizes lines and one division step. Where every
   generation enacts a positive demand, a long line needs arrivals that keep coming
   late in the line. The ledger is silent about which coupling or valuation the
   arrivals belong to.
