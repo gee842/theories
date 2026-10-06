@@ -5,8 +5,11 @@
 'ValuationDevelopment.curious_exact_improved' depends on axioms: [propext, Quot.sound]
 'ValuationDevelopment.curiosity_tracks_change' does not depend on any axioms
 'ValuationDevelopment.noise_floor' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.noise_floor_stays' depends on axioms: [propext, Quot.sound]
 'ValuationDevelopment.noise_locks_greedy_curiosity_recovers' does not depend on any axioms
 'ValuationDevelopment.fixed_other_reduces' does not depend on any axioms
 'ValuationDevelopment.joint_coverage_needs_synchrony' does not depend on any axioms
 'ValuationDevelopment.route_revised_by_consequence' does not depend on any axioms
+'ValuationDevelopment.route_revision_changes_selection' does not depend on any axioms
 'ValuationDevelopment.other_valuation_formed_by_pairing' does not depend on any axioms
+'ValuationDevelopment.other_valuation_reaches_selection' does not depend on any axioms

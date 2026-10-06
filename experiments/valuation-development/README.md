@@ -13,7 +13,7 @@
 | [lean/ClosedLoopAudit.lean](lean/ClosedLoopAudit.lean), [lean/closed-loop-audit-output.txt](lean/closed-loop-audit-output.txt) | `#print axioms` for the closed-loop module and its saved result |
 | [lean/ExplorationCoverage.lean](lean/ExplorationCoverage.lean) | 11 theorems (§13): under retention exact for the option reached, in a world whose consequences do not change, coverage equalizes estimates whatever drives exploration; witnesses of retained curiosity and optimism covering and of a low estimate preventing coverage |
 | [lean/ExplorationAudit.lean](lean/ExplorationAudit.lean), [lean/exploration-audit-output.txt](lean/exploration-audit-output.txt) | `#print axioms` for the exploration module and its saved result |
-| [lean/ValuationCompletion.lean](lean/ValuationCompletion.lean) | 12 theorems (§14): stale estimates after a change, a noise floor and noise-induced lock-in, reduction of interaction with a fixed partner and a joint-coverage witness, level-5 route revision and level-6 valuation of others formed by pairing |
+| [lean/ValuationCompletion.lean](lean/ValuationCompletion.lean) | 15 theorems (§14): stale estimates after a change, a noise floor (reached and kept) and noise-induced lock-in, reduction of interaction with a fixed partner and a joint-coverage witness, level-5 route revision and level-6 valuation of others formed by pairing, each reaching selection |
 | [lean/CompletionAudit.lean](lean/CompletionAudit.lean), [lean/completion-audit-output.txt](lean/completion-audit-output.txt) | `#print axioms` for the completion module and its saved result |
 | [lean/lean-toolchain](lean/lean-toolchain) | `leanprover/lean4:v4.29.1` |
 
@@ -34,7 +34,7 @@ LEAN_PATH=. lean CompletionAudit.lean
 rm -f *.olean *.ilean
 ```
 
-Result on 7 October 2026: 27 theorems depend on no axioms. `coupled_signal_bounded`, `shared_exposure_contracts`, `shared_exposure_converges`, `shared_exposure_equalizes` and `multistable_divergence_forever` depend on `propext` and `Quot.sound`. `rounding_gap_forever` depends on `propext` only. These come through `omega` and `simp`. There are no custom axioms, no `sorry` and no `native_decide`. The closed-loop module adds 11 theorems: 5 depend on no axioms and 6 depend on `propext` and `Quot.sound` only. The exploration module adds 11 theorems and the completion module 12, all depending on no axioms or only on standard `propext` and `Quot.sound`. In total there are 67 theorems.
+Result on 7 October 2026: 27 theorems depend on no axioms. `coupled_signal_bounded`, `shared_exposure_contracts`, `shared_exposure_converges`, `shared_exposure_equalizes` and `multistable_divergence_forever` depend on `propext` and `Quot.sound`. `rounding_gap_forever` depends on `propext` only. These come through `omega` and `simp`. There are no custom axioms, no `sorry` and no `native_decide`. The closed-loop module adds 11 theorems: 5 depend on no axioms and 6 depend on `propext` and `Quot.sound` only. The exploration module adds 11 theorems and the completion module 15, all depending on no axioms or only on standard `propext` and `Quot.sound`. In total there are 70 theorems.
 
 ## Scope
 

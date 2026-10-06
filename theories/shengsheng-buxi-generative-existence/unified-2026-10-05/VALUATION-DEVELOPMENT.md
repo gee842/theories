@@ -33,15 +33,15 @@ Consider retention that overwrites the estimate of the option taken and leaves t
 
 ## Changing worlds, noise, interaction, and levels 5 and 6
 
-Section 14 of the argument adds 12 further Lean results.
+Section 14 of the argument adds 15 further Lean results.
 
 - **Changing worlds.** After a change, an option not re-reached keeps its old estimate, so coverage has to recur.
-- **Noise.** If each encounter halves error up to a noise allowance, error falls into a floor of twice that allowance and stays there. One unlucky observation can still lock a greedy learner into the worse option, and recurring curiosity recovers it.
-- **Interaction.** With the other's choice fixed, interaction reduces exactly to a single organization in an unchanging world. Otherwise each organization's world changes with the other's choices. In a coordination witness, curiosity out of phase never discovers the joint option, and a shared schedule does.
-- **Revising how one values (level 5).** A surprising consequence switches an organization's own update route, so its history changes how it learns, not only what it has learned.
-- **Coming to value others (level 6).** Another's consequences move the disposition only after paired experience has formed a coupling. Good shared events form positive concern and bad ones form negative concern.
+- **Noise.** If each encounter halves error up to a noise allowance, error reaches a floor of twice that allowance in finitely many steps and stays there. This bound is deterministic. One unlucky observation can still lock a greedy learner into the worse option, and recurring curiosity recovers it.
+- **Interaction.** With the other's choice fixed, interaction reduces exactly to a single organization in an unchanging world. Otherwise each organization's world changes with the other's choices. In a coordination witness, curiosity out of phase does not discover the joint option over the steps checked, and equal phases do.
+- **Revising how one values (level 5).** A surprising consequence switches an organization's own update route, and the change reaches what it selects. Its history changes how it learns, not only what it has learned.
+- **Coming to value others (level 6).** Another's consequences move the disposition to act for it only after paired experience has formed a coupling, and selection follows. Good shared events form a positive coupling and bad ones a negative coupling.
 
-With these, the study's first outcome is complete at its stated formal scope: 67 results across four modules. Empirical identification, probabilistic versions, material realization and the ethical question are handed on to other work.
+With these, the study's first outcome is complete at its deterministic formal scope: 70 results across four modules. Two named bridges remain open, a probabilistic restatement and a lineage support account. Empirical identification, material realization and the ethical question are handed on to other work. None of this completes the unified foundation.
 
 ## What constrains the sign of a formed valuation
 

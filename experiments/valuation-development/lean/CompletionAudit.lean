@@ -7,8 +7,11 @@ open ValuationDevelopment
 #print axioms curious_exact_improved
 #print axioms curiosity_tracks_change
 #print axioms noise_floor
+#print axioms noise_floor_stays
 #print axioms noise_locks_greedy_curiosity_recovers
 #print axioms fixed_other_reduces
 #print axioms joint_coverage_needs_synchrony
 #print axioms route_revised_by_consequence
+#print axioms route_revision_changes_selection
 #print axioms other_valuation_formed_by_pairing
+#print axioms other_valuation_reaches_selection

@@ -101,6 +101,18 @@ theorem noise_floor {M E : Type} (u : M → E → M) (err : M → Nat) (ε : Nat
       · left; omega
     · right; exact h1
 
+/-- Once within the noise floor, the error stays there for every later history. -/
+theorem noise_floor_stays {M E : Type} (u : M → E → M) (err : M → Nat) (ε : Nat)
+    (h : ∀ m e, 2 * err (u m e) ≤ err m + 2 * ε) :
+    ∀ (es : List E) (m : M), err m ≤ 2 * ε → err (runU u m es) ≤ 2 * ε := by
+  intro es
+  induction es with
+  | nil => intro m hm; exact hm
+  | cons e es ih =>
+    intro m hm
+    have hu := h m e
+    exact ih (u m e) (by omega)
+
 /-- Noise in the consequence met: on a noisy step the better option yields 1
 instead of 4. -/
 def noisyWorld : World Bool Bool Nat := fun x a => if a then (if x then 1 else 4) else 2
@@ -179,8 +191,9 @@ structure Route where
   est : Nat
 deriving DecidableEq, Repr
 
-def routeLearner : Org Route Unit Unit Nat where
-  select _ _ := ()
+def routeLearner : Org Route Unit Bool Nat where
+  -- valuation read by selection: act when the estimate is at least 5
+  select m _ := decide (m.est ≥ 5)
   retain m _ _ c :=
     if m.tracking then { tracking := true, est := c }
     else if c + 2 ≤ m.est ∨ m.est + 2 ≤ c then { tracking := true, est := m.est }
@@ -188,7 +201,7 @@ def routeLearner : Org Route Unit Unit Nat where
 
 /-- Whether the estimate formed at a retained condition depends on the consequence met. -/
 def estSensitiveAt (m : Route) : Prop :=
-  ∃ c c', (routeLearner.retain m () () c).est ≠ (routeLearner.retain m () () c').est
+  ∃ c c', (routeLearner.retain m () true c).est ≠ (routeLearner.retain m () true c').est
 
 def frozenStart : Route := { tracking := false, est := 5 }
 
@@ -197,10 +210,10 @@ consequence the same organization's estimate is sensitive to them. Its history h
 changed how it learns, not only what it has learned. -/
 theorem route_revised_by_consequence :
     ¬ estSensitiveAt frozenStart ∧
-    routeLearner.retain frozenStart () () 9 = { tracking := true, est := 5 } ∧
-    estSensitiveAt (routeLearner.retain frozenStart () () 9) := by
+    routeLearner.retain frozenStart () true 9 = { tracking := true, est := 5 } ∧
+    estSensitiveAt (routeLearner.retain frozenStart () true 9) := by
   refine ⟨?_, by decide, ⟨1, 2, by decide⟩⟩
-  have hconst : ∀ c, (routeLearner.retain frozenStart () () c).est = 5 := by
+  have hconst : ∀ c, (routeLearner.retain frozenStart () true c).est = 5 := by
     intro c
     simp only [routeLearner, frozenStart]
     split
@@ -208,6 +221,16 @@ theorem route_revised_by_consequence :
     · split <;> rfl
   rintro ⟨c, c', h⟩
   exact h (by rw [hconst c, hconst c'])
+
+/-- The revision reaches selection. The first poor consequence (1), met on the
+frozen route, only switches the route and leaves selection unchanged; the second,
+met on the tracking route, changes what the organization selects. -/
+def poorWorld : World Unit Bool Nat := fun _ _ => 1
+
+theorem route_revision_changes_selection :
+    routeLearner.select (routeLearner.run poorWorld { tracking := false, est := 5 } [()]) () = true ∧
+    routeLearner.select (routeLearner.run poorWorld { tracking := false, est := 5 } [(), ()]) () = false := by
+  decide
 
 /-! ## V5. Coming to value others (level 6), with its sign formed by pairing -/
 
@@ -223,8 +246,9 @@ structure Social where
   disposition : Int
 deriving DecidableEq, Repr
 
-def socialLearner : Org Social Bool Unit Nat where
-  select _ _ := ()
+def socialLearner : Org Social Bool Bool Nat where
+  -- valuation read by selection: act for the other center when the disposition is positive
+  select m _ := decide (m.disposition > 0)
   retain m x _ c :=
     let s : Int := if c > 2 then 1 else if c < 2 then -1 else 0
     if x then { m with coupling := s }
@@ -233,9 +257,9 @@ def socialLearner : Org Social Bool Unit Nat where
 def unformed : Social := { coupling := 0, disposition := 0 }
 
 /-- Paired history where the own consequence of a shared event was good. -/
-def alignedWorld : World Bool Unit Nat := fun _ _ => 3
+def alignedWorld : World Bool Bool Nat := fun _ _ => 3
 /-- Paired history where the own consequence was bad. -/
-def opposedWorld : World Bool Unit Nat := fun x _ => if x then 1 else 3
+def opposedWorld : World Bool Bool Nat := fun x _ => if x then 1 else 3
 
 /-- Before any pairing, the other's good consequences leave the disposition
 unchanged. After pairing in which a shared event was good for oneself, the
@@ -245,6 +269,14 @@ theorem other_valuation_formed_by_pairing :
     (socialLearner.run alignedWorld unformed [false, false]).disposition = 0 ∧
     (socialLearner.run alignedWorld unformed [true, false, false]).disposition = 2 ∧
     (socialLearner.run opposedWorld unformed [true, false, false]).disposition = -2 := by
+  decide
+
+/-- The formed coupling reaches selection: unformed, the learner does not act for
+the other; after aligned pairing it does; after opposed pairing it does not. -/
+theorem other_valuation_reaches_selection :
+    socialLearner.select (socialLearner.run alignedWorld unformed [false, false]) false = false ∧
+    socialLearner.select (socialLearner.run alignedWorld unformed [true, false, false]) false = true ∧
+    socialLearner.select (socialLearner.run opposedWorld unformed [true, false, false]) false = false := by
   decide
 
 end ValuationDevelopment
