@@ -1,6 +1,6 @@
 # 伦理自然主义的四条论证：生成论的对应、证明与未完成部分
 
-2026年10月6日。AI 撰写的研究说明，回应 [Ren 关于四条自然主义论证"都可以最终证明"的消息](../../../../sources/15-codex-theory-conversations/2026-10-06-ethical-naturalism-arguments.md)。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：评价、更新和纠正都作为展开内部的活动处理，不设外部裁判位置。形式部分在 [Lean 包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)中。按 Ren 的无公理规则改写后，整个包 102 条新声明全部审计，**全部不依赖任何公理**（包括 Lean 标准的 `propext` 与 `Quot.sound`）；无 `sorry`，继承模块的源码哈希与主收据一致。改写前的源码与收据保存在包内的 `verification-history/2026-10-06-before-axiom-removal/`。本文不是 Ren 原话，也不宣称伦理结论已经证明。
+2026年10月6日。AI 撰写的研究说明，回应 [Ren 关于四条自然主义论证"都可以最终证明"的消息](../../../../sources/15-codex-theory-conversations/2026-10-06-ethical-naturalism-arguments.md)。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：评价、更新和纠正都作为展开内部的活动处理，不设外部裁判位置。形式部分在 [Lean 包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)中。按 Ren 的无公理规则改写后，整个包 105 条新声明全部审计，**全部不依赖任何公理**（包括 Lean 标准的 `propext` 与 `Quot.sound`）；无 `sorry`，继承模块的源码哈希与主收据一致。改写前的源码与收据保存在包内的 `verification-history/2026-10-06-before-axiom-removal/`。本文不是 Ren 原话，也不宣称伦理结论已经证明。
 
 **审查状态。** 首版发表后，同日由一个独立 AI 审查者复核。审查确认证明全部成立，但指出四处阻断性的表述过度和若干应改之处。本版已按审查改写；第7节列出改正内容，首版保留在 git 历史中。新增的 `NaturalismReview.lean` 给出改正后的形式陈述，前两个模块未改动。
 
@@ -136,10 +136,11 @@ Ren 于同日要求：不许有假设，不许有公理；每个输入要么在 
 | 取向（以"不损失"为上，而非相反） | 已证必要：所有自然资格都相同的两个关系，对同一实际转换给出相反判断 | `credentials_do_not_determine_verdict` |
 | 受保护范围取全部活动 | 已证必要："不偏向任何活动"同时允许空范围与全范围，二者对逆向取向的判断不同 | `unprivileged_does_not_fix_scope` |
 | 各个示例过程（`dip`、`restraint` 等） | 不是假设：一般定理对任意过程成立，示例只作为存在性见证与反例 | 各模块 |
-| 活动词汇与"存在一条路径"的可行性 | **尚未处理**：判断依赖动作词汇，这一依赖既未消除也未证明必要。消除它是下一步 | — |
+| 活动的划分（动作词汇） | 已证必要：状态与可能的状态变化完全相同的两个过程，只在两个动作是否算作不同活动上不同，对同一转换的判断就相反 | `vocabulary_changes_verdict` |
+| 可行性取"存在一条路径" | 是候选属性的定义，不是隐含假设；概率与体验版本属于另一个候选，尚未研究 | — |
 | 道德属性随附、属性同一 | 不是 Lean 命题：Lean 中没有道德谓词，这两项属于哲学论证，不在形式范围内 | — |
 
-两项规范输入都已证明不可省去。它们只出现在定理的定义或前提里，没有被任何定理暗中使用。
+三项输入（取向、范围、活动划分）都已证明不可省去。它们只出现在定理的定义或前提里，没有被任何定理暗中使用。
 
 ## 形式索引
 

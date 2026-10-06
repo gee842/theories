@@ -22,7 +22,13 @@ ethical-naturalism study that are not derived.
   (`unprivileged_does_not_fix_scope`). So "no activity privileged" does not determine the
   protected scope; choosing the whole scope is a further input.
 
-Neither input is assumed by any theorem: each theorem that uses one states it as a
+* **A vocabulary input is necessary.** `dip` and `dipCoarse` have the same states and the
+  same possible state changes; they differ only in whether `go` and `use` count as distinct
+  activities. The transition from 2 to 1 is a loss in the first and not in the second
+  (`vocabulary_changes_verdict`). So the state dynamics do not fix which activities there
+  are; the individuation of activities is a further input.
+
+None of these inputs is assumed by any theorem: each theorem that uses one states it as a
 hypothesis or a definition. These results show the inputs cannot be dropped.
 -/
 
@@ -84,6 +90,41 @@ theorem unprivileged_does_not_fix_scope :
   ⟨empty_and_whole_unprivileged.1, empty_and_whole_unprivileged.2,
     empty_scope_admits_everything dip _, converse_undermines_in_dip⟩
 
+/-! ## The action vocabulary is a necessary input -/
+
+/-- The same state dynamics as `dip`, with `go` and `use` no longer told apart. -/
+def dipCoarse : Process Nat Unit where
+  step s _ t := dip.step s .go t ∨ dip.step s .use t
+
+theorem dipCoarse_from_two : (word : List Unit) → Feasible dipCoarse 2 word
+  | [] => ⟨2, .nil 2⟩
+  | _ :: rest => by
+    obtain ⟨t, ht⟩ := dipCoarse_from_two rest
+    exact ⟨t, .cons (Or.inr (show (2 : Nat) = 2 ∧ (2 : Nat) = 2 from ⟨rfl, rfl⟩)) ht⟩
+
+theorem dipCoarse_from_one : (word : List Unit) → Feasible dipCoarse 1 word
+  | [] => ⟨1, .nil 1⟩
+  | _ :: rest => by
+    obtain ⟨t, ht⟩ := dipCoarse_from_two rest
+    exact ⟨t, .cons (m := 2) (Or.inl (show (2 : Nat) ≤ 2 ∧ (1 : Nat) ≤ 2 + 1 by decide)) ht⟩
+
+/-- Same states and the same possible state changes: the transition 2 → 1 is a loss when
+`go` and `use` are distinct activities, and no loss when they are not. -/
+theorem vocabulary_changes_verdict :
+    (∀ s t, (∃ a, dip.step s a t) ↔ (∃ a, dipCoarse.step s a t)) ∧
+      ¬ ContinuationLe dip 2 1 ∧ ContinuationLe dipCoarse 2 1 := by
+  refine ⟨?_, witness_refutes_preservation ⟨dip_use_at_two, dip_no_use_at_one⟩,
+    fun word _ => dipCoarse_from_one word⟩
+  intro s t
+  constructor
+  · rintro ⟨a, h⟩
+    cases a with
+    | go => exact ⟨(), Or.inl h⟩
+    | use => exact ⟨(), Or.inr h⟩
+  · rintro ⟨_, h | h⟩
+    · exact ⟨.go, h⟩
+    · exact ⟨.use, h⟩
+
 end Generative.Naturalism
 
 #print axioms Generative.Naturalism.continuation_credentialed
@@ -92,3 +133,6 @@ end Generative.Naturalism
 #print axioms Generative.Naturalism.empty_and_whole_unprivileged
 #print axioms Generative.Naturalism.empty_scope_admits_everything
 #print axioms Generative.Naturalism.unprivileged_does_not_fix_scope
+#print axioms Generative.Naturalism.dipCoarse_from_two
+#print axioms Generative.Naturalism.dipCoarse_from_one
+#print axioms Generative.Naturalism.vocabulary_changes_verdict
