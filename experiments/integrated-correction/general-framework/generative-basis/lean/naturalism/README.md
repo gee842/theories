@@ -31,12 +31,14 @@
 
 **`PremiseNecessity.lean`: the two normative inputs cannot be dropped.** Under Ren's no-assumptions rule, every input must be derived or proved necessary. Two relations with every credential proved here give opposite verdicts on an actual transition (`credentials_do_not_determine_verdict`). Both the empty and the whole scope are invariant under every renaming of actions, and they disagree about the converse orientation (`unprivileged_does_not_fix_scope`). The action vocabulary is a necessary input too: with the same states and state changes, merging two actions reverses a verdict (`vocabulary_changes_verdict`).
 
+**`EmbeddedEvaluation.lean`: evaluation as a relation inside the same process.** Rather than relating a "moral property" to a "natural base", evaluation is a record carried in the state and changed only by the process's own transitions. The record equals the whole-history relation of the same history (`record_tracks_whole_history`), so supervenience and identity are derived. Recording shares the process's continuation (`recording_enabled_iff`, `recording_feasible_iff`, `guided_recording_keeps_continuation`). The same law admits recordings in both orientations (`law_admits_opposite_recordings`): which evaluation forms is a question about formation within the history.
+
 ## What is not proved
 
 That moral properties supervene or explain observations; the premise itself and the choice of the whole scope; property identity beyond necessary coextension; a principled derivation of the protected scope of activities; any verdict when every option removes something. Processes, scopes and rankings are supplied inputs. Nothing here says which history occurs or that any orientation is good.
 
 ## Verify
 
-From this directory, with Lean 4.29.1 through elan or on `PATH`, run `python3 check.py`. The checker requires the inherited `GenerativeCore`, `DynamicUnderdetermination`, `DynamicSymmetry`, `DynamicConsequences` and `EthicalOrientation` to match the source hashes in the main [generative-basis receipt](../verification.json). It builds all eleven modules fresh in a temporary directory, rejects `sorry`, every axiom in new declarations (including `propext` and `Quot.sound`) and warnings, and requires every new theorem to be audited.
+From this directory, with Lean 4.29.1 through elan or on `PATH`, run `python3 check.py`. The checker requires the inherited `GenerativeCore`, `DynamicUnderdetermination`, `DynamicSymmetry`, `DynamicConsequences` and `EthicalOrientation` to match the source hashes in the main [generative-basis receipt](../verification.json). It builds all twelve modules fresh in a temporary directory, rejects `sorry`, every axiom in new declarations (including `propext` and `Quot.sound`) and warnings, and requires every new theorem to be audited.
 
-The [receipt](verification.json) records **105 new audits, all with empty axiom reports**. The sources and receipt before the axiom removal are preserved in `verification-history/2026-10-06-before-axiom-removal/`.
+The [receipt](verification.json) records **110 new audits, all with empty axiom reports**. The sources and receipt before the axiom removal are preserved in `verification-history/2026-10-06-before-axiom-removal/`.
