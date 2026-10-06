@@ -1,0 +1,5 @@
+'Generative.Naturalism.record_tracks_whole_history' does not depend on any axioms
+'Generative.Naturalism.recording_enabled_iff' does not depend on any axioms
+'Generative.Naturalism.recording_feasible_iff' does not depend on any axioms
+'Generative.Naturalism.guided_recording_keeps_continuation' does not depend on any axioms
+'Generative.Naturalism.law_admits_opposite_recordings' does not depend on any axioms

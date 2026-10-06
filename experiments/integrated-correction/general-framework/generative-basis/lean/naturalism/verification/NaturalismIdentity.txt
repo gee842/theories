@@ -1,6 +1,6 @@
 'Generative.Naturalism.converse_projection_iff' does not depend on any axioms
 'Generative.Naturalism.dip_two_dominates_one' does not depend on any axioms
-'Generative.Naturalism.naturalist_criteria_do_not_fix_orientation' depends on axioms: [propext]
+'Generative.Naturalism.naturalist_criteria_do_not_fix_orientation' does not depend on any axioms
 'Generative.Naturalism.nonUndermining_whole_iff' does not depend on any axioms
 'Generative.Naturalism.generation_order_greatest' does not depend on any axioms
 'Generative.Naturalism.unprivileged_scope_is_whole_scope' does not depend on any axioms
