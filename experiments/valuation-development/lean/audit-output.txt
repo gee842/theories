@@ -1,0 +1,28 @@
+'ValuationDevelopment.same_retained_same_valuation' does not depend on any axioms
+'ValuationDevelopment.priority_change_needs_retained_difference' does not depend on any axioms
+'ValuationDevelopment.no_retention_no_history' does not depend on any axioms
+'ValuationDevelopment.trace_changes_choice_not_valuation' does not depend on any axioms
+'ValuationDevelopment.agree_on_encountered' does not depend on any axioms
+'ValuationDevelopment.extensions_agree_on_self_training' does not depend on any axioms
+'ValuationDevelopment.extensions_agree_on_any_self_history' does not depend on any axioms
+'ValuationDevelopment.extensions_diverge_on_other' does not depend on any axioms
+'ValuationDevelopment.prediction_valuation_tradeoff' does not depend on any axioms
+'ValuationDevelopment.same_prediction_different_choice' does not depend on any axioms
+'ValuationDevelopment.same_valuation_different_choice' does not depend on any axioms
+'ValuationDevelopment.coupled_signal_bounded' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.proxy_capture' does not depend on any axioms
+'ValuationDevelopment.coupled_recovery' does not depend on any axioms
+'ValuationDevelopment.coupled_without_variation_depletes' does not depend on any axioms
+'ValuationDevelopment.shared_exposure_contracts' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.shared_exposure_converges' depends on axioms: [propext, Quot.sound]
+'ValuationDevelopment.multistable_divergence' does not depend on any axioms
+'ValuationDevelopment.positional_divergence' does not depend on any axioms
+'ValuationDevelopment.halving_nonexpanding_on_sample' does not depend on any axioms
+'ValuationDevelopment.rounding_breaks_contraction' does not depend on any axioms
+'ValuationDevelopment.fixed_selectivity_no_history' does not depend on any axioms
+'ValuationDevelopment.habituation_history_dependent' does not depend on any axioms
+'ValuationDevelopment.habituation_not_consequence_dependent' does not depend on any axioms
+'ValuationDevelopment.stale_anticipation' does not depend on any axioms
+'ValuationDevelopment.stale_anticipation_not_history_dependent' does not depend on any axioms
+'ValuationDevelopment.reinforcer_consequence_dependent' does not depend on any axioms
+'ValuationDevelopment.reinforcer_history_dependent' does not depend on any axioms
